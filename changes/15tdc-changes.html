@@ -3,14 +3,20 @@
   <title>The Dark Crusade: Corrections</title>
   <script type="text/javascript" language="JavaScript">
    <!--
-    if( top.viewedOnline( ) && !top.bookPublished[ "15tdc" ] ) {
-      document.write( "<base href=\"" + top.baselocation + "sanctum/" + top.bookLocations[ "15tdc" ] + "/\" target=\"_parent\" />" );
+    if( top.location != this.location ) {
+      if( top.viewedOnline( ) && !top.bookPublished[ "15tdc" ] ) {
+        document.write( "<base href=\"" + top.baselocation + "sanctum/" + top.bookLocations[ "15tdc" ] + "/\" target=\"_parent\" />" );
+      }
+      else {
+        document.write( "<base href=\"" + top.baselocation + top.bookLocations[ "15tdc" ] + "/\" target=\"_parent\" />" );
+      }
+      document.write( "<link rel=\"stylesheet\" type=\"text/css\" href=\"" + top.baselocation + "editor/changes/style/" + top.changesStyle + "\" />" );
+      document.write( "<link rel=\"stylesheet\" type=\"text/css\" href=\"" + top.baselocation + "editor/changes/style/" + top.changesFilter + "\" />" );
     }
     else {
-      document.write( "<base href=\"" + top.baselocation + top.bookLocations[ "15tdc" ] + "/\" target=\"_parent\" />" );
+      document.write( "<link rel=\"stylesheet\" type=\"text/css\" href=\"../style/editor.css\" />" );
+      document.write( "<link rel=\"stylesheet\" type=\"text/css\" href=\"../style/all.css\" />" );
     }
-    document.write( "<link rel=\"stylesheet\" type=\"text/css\" href=\"" + top.baselocation + "editor/changes/style/" + top.changesStyle + "\" />" );
-    document.write( "<link rel=\"stylesheet\" type=\"text/css\" href=\"" + top.baselocation + "editor/changes/style/" + top.changesFilter + "\" />" );
    //-->
   </script>
  </head>
@@ -51,13 +57,14 @@
 <h2>Corrections</h2>
 
 <!--mergecorrhtml:BEGIN-->
+<div class="section"><a name="_unknown">_unknown</a></div>
 <div class="section"><a name="toc">toc</a></div>
 <div class="section"><a name="title">title</a></div>
 <div class="cn"><a href="title.htm">title</a> #1: Most everything needs to be updated, inluding the name of the license.</div>
 <div class="cn"><a href="title.htm">Title Page</a> #2: Warrlord -&gt; Warlord</div>
 <div class="section"><a name="dedicate">dedicate</a></div>
 <div class="cn"><a href="dedicate.htm">dedicate</a> #1: Insert real dedication. <div class="cm so">To the spirit of San Diego - America's Finest City</div></div>
-<div class="section"><a name="acknwlg">acknwlg</a></div>
+<div class="section"><a name="acknwldg">acknwldg</a></div>
 <div class="section"><a name="coming">coming</a></div>
 <div class="section"><a name="tssf">tssf</a></div>
 <div class="cf"><a href="tssf.htm" >The Story So Far . . .</a> #1: Footnote the Nyraz vs. Nyras discrepancy. <div class="cm so">In the Magnamund Companion, and in Newsletter Summer Special 1987 it is spelled Nyraz. In TDC it is consistently spelled Nyras.</div> <div class="cm jb">Perhaps we could include a footnote in "The Story So Far . . ." explaining the discrepancy. I don't think we should change it here, being later and presumably more thought-out, but if we ever finish XML versions of the Newsletters and MC, we could change it there.</div></div>
@@ -82,6 +89,12 @@
 <div class="ce"><a href="tssf.htm">The Story So Far . . .</a> #20: Right-Handed -&gt; Right-handed</div>
 <div class="ce"><a href="tssf.htm">The Story So Far . . .</a> #21: Left-Handed -&gt; Left-handed <div class="cm jb">(2x) Have we standardized on this?</div><div class="cm so">If we hadn't before we have now. 14tcok already conforms, but there are two incorrect instances in TPLOR.</div></div>
 <div class="cn"><a href="tssf.htm">The Story So Far . . .</a> #22: Darklands-- and -&gt; Darklands--and</div>
+<div class="e"><a href="tssf.htm">The Story So Far . . .</a> #23: the occupants will have long since brought about their own extinction. Elsewhere, throughout Northern Magnamund, peace reigns victorious <div class="cm ">Sasha Cooper: There's a paragraph break after 'their own extinction' in the other novels</div> <div class="cm so">This is Errata. I think it should be changed so 'Elsewhere, throughout Northern Magnamund...' is a separate paragraph because it is in the previous books, and it is in the following book, The Legacy of Vashna.</div></div>
+<div class="e"><a href="tssf.htm">The Story So Far . . .</a> #24: north-east -&gt; northeast</div>
+<div class="e"><a href="tssf.htm">The Story So Far . . .</a> #25: new-found -&gt; newfound</div>
+<div class="e"><a href="tssf.htm">The Story So Far . . .</a> #26: Left-Handed and Old Kingdom Magic -&gt; Left-handed and Old Kingdom magic</div>
+<div class="e"><a href="tssf.htm">The Story So Far . . .</a> #27: Right-Handed Magic -&gt; Right-handed magic</div>
+<div class="e"><a href="tssf.htm">The Story So Far . . .</a> #28: Left-Handed Magic -&gt; Left-handed magic</div>
 <div class="section"><a name="gamerulz">gamerulz</a></div>
 <div class="ce"><a href="gamerulz.htm" >gamerulz</a> #1: Remove ' that you will find in the front of this book. For           ease of use, and for further adventuring, it is recommended           that you photocopy these pages' from the first paragraph.</div>
 <div class="ce"><a href="gamerulz.htm">gamerulz</a> #2: Remove ' on the last page of this book' in the second         paragraph.</div>
@@ -104,6 +117,7 @@
 <div class="cn"><a href="discplnz.htm">. . . Disciplines</a> #12: place period outside of Action Chart link</div>
 <div class="cn"><a href="discplnz.htm">. . . Disciplines</a> #13: Note the following in the errata list: In description of "Deliverance", changed COMBAT SKILL to ENDURANCE, as in later editions, and also because it does not make sense - it is  not possible (or very, very unlikely) for your Combat Skill to fall to below 8.</div>
 <div class="cn"><a href="discplnz.htm">. . . Disciplines</a> #14: fortresses eases -&gt; fortresses increases</div>
+<div class="e"><a href="discplnz.htm">. . . Disciplines</a> #15: this, the first -&gt; this, the third <div class="cm jb">check to verify the original wording</div> <div class="cm so">the original wording is "set in Book 15 of the Lone Wolf Grand Master series"</div></div>
 <div class="section"><a name="powers">powers</a></div>
 <div class="section"><a name="equipmnt">equipmnt</a></div>
 <div class="ce"><a href="equipmnt.htm" >Equipment</a> #1: safe-keeping -> safekeeping (2x) (as in PAMoS)</div>
@@ -146,6 +160,9 @@
 <div class="cn"><a href="imprvdsc.htm">Improved . . . Disciplines</a> #15: &lt;spell&gt; Flameshaft</div>
 <div class="cn"><a href="imprvdsc.htm">Improved . . . Disciplines</a> #16: etc[.] -&gt; etc.</div>
 <div class="cn"><a href="imprvdsc.htm">Improved . . . Disciplines</a> #17: &lt;spell&gt; Splinter</div>
+<div class="n"><a href="imprvdsc.htm">Improved . . . Disciplines</a> #18: levels of Kai Grand Mastery you will -&gt; levels of Kai Grand Mastery, you will</div>
+<div class="n"><a href="imprvdsc.htm">Improved . . . Disciplines</a> #19: Guardian -&gt; Kai Grand Guardian</div>
+<div class="e"><a href="imprvdsc.htm">Improved . . . Disciplines</a> #20: Brotherhood spell -&gt; Brotherhood Spell</div>
 <div class="section"><a name="kaiwisdm">kaiwisdm</a></div>
 <div class="section"><a name="sage">sage</a></div>
 <div class="section"><a name="numbered">numbered</a></div>
@@ -193,6 +210,7 @@
 <div class="cn"><a href="sect17.htm">17</a> #3: renegrades -> renegades</div>
 <div class="ce"><a href="sect17.htm">17</a> #4: &lt;spell&gt; Halt Missle</div>
 <div class="cn"><a href="sect17.htm">17</a> #5: linkify "map"</div>
+<div class="e"><a href="sect17.htm">17</a> #6: Brotherhood spell -&gt; Brotherhood Spell</div>
 <div class="section"><a name="sect18">sect18</a></div>
 <div class="re"><a href="sect18.htm" >18</a> #1: sound; -> sound:</div>
 <div class="ce"><a href="sect18.htm">18</a> #2: tunnel stalker -> Tunnel Stalker</div>
@@ -296,6 +314,7 @@
 <div class="ce"><a href="sect50.htm">50</a> #3: and, judging -&gt; and judging</div>
 <div class="section"><a name="sect51">sect51</a></div>
 <div class="re"><a href="sect51.htm">51</a> #1: much-needed -&gt; much needed <div class="cm ik">as in the PAMoS</div><div class="cm jb">I've made some changes to the MoS</div></div>
+<div class="e"><a href="sect51.htm">51</a> #2: t'is -&gt; 'tis</div>
 <div class="section"><a name="sect52">sect52</a></div>
 <div class="section"><a name="sect53">sect53</a></div>
 <div class="section"><a name="sect54">sect54</a></div>
@@ -370,6 +389,7 @@
 <div class="ce"><a href="sect85.htm" >85</a> #1: Kai alchemy -> Kai-alchemy</div>
 <div class="section"><a name="sect86">sect86</a></div>
 <div class="ce"><a href="sect86.htm" >86</a> #1: spell: Invisible Shield</div>
+<div class="e"><a href="sect86.htm">86</a> #2: Brotherhood spell -&gt; Brotherhood Spell</div>
 <div class="section"><a name="sect87">sect87</a></div>
 <div class="ce"><a href="sect87.htm" >87</a> #1: trench but -> trench, but</div>
 <div class="ce"><a href="sect87.htm">87</a> #2: edge and -> edge, and</div>
@@ -406,6 +426,7 @@
 <div class="ce"><a href="sect104.htm" >104</a> #1: spell: Sense Evil</div>
 <div class="re"><a href="sect104.htm">104</a> #2: Sense -> Detect <div class="cm so">should Sense -> Detect as in LW14?</div> <div class="cm jb">The later books also seem to use Sense. We should change the one occurrence in 14TCoK.</div></div>
 <div class="ce"><a href="sect104.htm">104</a> #3: ahead and -> ahead, and</div>
+<div class="e"><a href="sect104.htm">104</a> #4: Brotherhood spell -&gt; Brotherhood Spell</div>
 <div class="section"><a name="sect105">sect105</a></div>
 <div class="section"><a name="sect106">sect106</a></div>
 <div class="ce"><a href="sect106.htm" >106</a> #1: pathsmanship -> Pathsmanship</div>
@@ -464,6 +485,7 @@
 <div class="ce"><a href="sect136.htm" >136</a> #1: remove dashes around Mind Charm</div>
 <div class="ce"><a href="sect136.htm">136</a> #2: &lt;spell&gt; Mind Charm</div>
 <div class="cn"><a href="sect136.htm">136</a> #3: Drakknr -> Drakkar</div>
+<div class="e"><a href="sect136.htm">136</a> #4: Brotherhood spell -&gt; Brotherhood Spell</div>
 <div class="section"><a name="sect137">sect137</a></div>
 <div class="section"><a name="sect138">sect138</a></div>
 <div class="ce"><a href="sect138.htm" >138</a> #1: semi-circular -> semicircular (as semicircles in PAMoS)</div>
@@ -504,6 +526,7 @@
 <div class="cn"><a href="sect151.htm">151</a> #1: it Is -&gt; it is</div>
 <div class="section"><a name="sect152">sect152</a></div>
 <div class="ce"><a href="sect152.htm" >152</a> #1:  Botherhood spell - 'Lightning Hand' - and -> Brotherhood spell Lightning Hand [italicised] and</div>
+<div class="e"><a href="sect152.htm">152</a> #2: Brotherhood spell -&gt; Brotherhood Spell</div>
 <div class="section"><a name="sect153">sect153</a></div>
 <div class="cn"><a href="sect153.htm" >153</a> #1: pfatform -> platform</div>
 <div class="section"><a name="sect154">sect154</a></div>
@@ -512,6 +535,7 @@
 <div class="section"><a name="sect155">sect155</a></div>
 <div class="ce"><a href="sect155.htm" >155</a> #1: hard-worn -&gt; hard-won</div>
 <div class="re"><a href="sect155.htm">155</a> #2: much-needed -&gt; much needed <div class="cm ik">as in the PAMoS</div></div>
+<div class="e"><a href="sect155.htm">155</a> #3: t'is -&gt; 'tis</div>
 <div class="section"><a name="sect156">sect156</a></div>
 <div class="cn"><a href="sect156.htm" >156</a> #1: breakthrough -> break through</div>
 <div class="cf"><a href="sect156.htm">156</a> #2: Maybe we should change the text put a note here that if your ENDURANCE is below 15, do nothing. Or is that too obvious?<div class="cm dd">Worth clarifying in my opinion.</div></div>
@@ -539,6 +563,7 @@
 <div class="cn"><a href="sect166.htm" >166</a> #1: Drakkarirn -> Drakkarim</div>
 <div class="ce"><a href="sect166.htm">166</a> #2: you swept -&gt; you are swept</div>
 <div class="section"><a name="sect167">sect167</a></div>
+<div class="e"><a href="sect167.htm">167</a> #1: Brotherhood spell -&gt; Brotherhood Spell</div>
 <div class="section"><a name="sect168">sect168</a></div>
 <div class="section"><a name="sect169">sect169</a></div>
 <div class="section"><a name="sect170">sect170</a></div>
@@ -612,6 +637,7 @@
 <div class="cn"><a href="sect206.htm">206</a> #1: &lt;foreign&gt; 'Gaz rekenarim! Gaz rekenarim!'</div>
 <div class="section"><a name="sect207">sect207</a></div>
 <div class="ce"><a href="sect207.htm" >207</a> #1: &lt;spell&gt; Lightning Hand</div>
+<div class="e"><a href="sect207.htm">207</a> #2: Brotherhood spell -&gt; Brotherhood Spell</div>
 <div class="section"><a name="sect208">sect208</a></div>
 <div class="ce"><a href="sect208.htm" >208</a> #1: pathsmanship -> Pathsmanship</div>
 <div class="section"><a name="sect209">sect209</a></div>
@@ -641,6 +667,7 @@
 <div class="rf"><a href="sect221.htm">221</a> #3: See 89.</div>
 <div class="cn"><a href="sect221.htm">221</a> #4: It is very hard to read the dragons' numbers. I thought the first one said 19, not 15, which caused me some confusion. Is it possible to do anything about the illustration?<div class="cm jb">I've made it as big as possible with the current format.</div></div>
 <div class="cn"><a href="sect221.htm">221</a> #5: have swore -&gt; have sworn</div>
+<div class="f"><a href="sect221.htm">221</a> #6: If you discover that your answer is wrong, or if you cannot solve the puzzle <div class="cm ">Sasha Cooper: The text this option leads to shows Lone Wolf giving up - it seems a bit strange not to allow more than one try.</div></div>
 <div class="section"><a name="sect222">sect222</a></div>
 <div class="cn"><a href="sect222.htm" >222</a> #1: hocklng -> shocking</div>
 <div class="section"><a name="sect223">sect223</a></div>
@@ -664,6 +691,7 @@
 <div class="section"><a name="sect231">sect231</a></div>
 <div class="ce"><a href="sect231.htm" >231</a> #1: ramshakle -> ramshackle</div>
 <div class="section"><a name="sect232">sect232</a></div>
+<div class="e"><a href="sect232.htm">232</a> #1: Brotherhood spell -&gt; Brotherhood Spell</div>
 <div class="section"><a name="sect233">sect233</a></div>
 <div class="section"><a name="sect234">sect234</a></div>
 <div class="ce"><a href="sect234.htm">234</a> #1: crusader's -&gt; crusaders'</div>
@@ -699,6 +727,7 @@
 <div class="section"><a name="sect255">sect255</a></div>
 <div class="section"><a name="sect256">sect256</a></div>
 <div class="ce"><a href="sect256.htm" >256</a> #1: &lt;spell&gt; Strength</div>
+<div class="e"><a href="sect256.htm">256</a> #2: Brotherhood spell -&gt; Brotherhood Spell</div>
 <div class="section"><a name="sect257">sect257</a></div>
 <div class="ce"><a href="sect257.htm" >257</a> #1: less-enchanting -> less enchanting (?)</div>
 <div class="section"><a name="sect258">sect258</a></div>
@@ -713,6 +742,7 @@
 <div class="section"><a name="sect263">sect263</a></div>
 <div class="section"><a name="sect264">sect264</a></div>
 <div class="re"><a href="sect264.htm" sect="sect264">264</a> #1: much-needed -&gt; much needed <div class="cm ik">as in the PAMoS</div><div class="cm jb">I've made some changes to the MoS</div></div>
+<div class="e"><a href="sect264.htm">264</a> #2: t'is -&gt; 'tis</div>
 <div class="section"><a name="sect265">sect265</a></div>
 <div class="cn"><a href="sect265.htm">265</a> #1: &lt;onomatopoeia&gt;bang&lt;/onomatopoeia&gt;</div>
 <div class="section"><a name="sect266">sect266</a></div>
@@ -755,6 +785,7 @@
 <div class="section"><a name="sect284">sect284</a></div>
 <div class="cn"><a href="sect284.htm" >284</a> #1:  Ellipsis missing space</div>
 <div class="re"><a href="sect284.htm">284</a> #2: much-needed -&gt; much needed <div class="cm ik">as in the PAMoS</div><div class="cm jb">I've made some changes to the MoS</div></div>
+<div class="e"><a href="sect284.htm">284</a> #3: t'is -&gt; 'tis</div>
 <div class="section"><a name="sect285">sect285</a></div>
 <div class="ce"><a href="sect285.htm" >285</a> #1: distented -> distended</div>
 <div class="section"><a name="sect286">sect286</a></div>
@@ -802,6 +833,7 @@
 <div class="section"><a name="sect308">sect308</a></div>
 <div class="cn"><a href="sect308.htm" >308</a> #1:  Ellipsis missing space</div>
 <div class="ce"><a href="sect308.htm">308</a> #2: --'Sense Evil'-- -> Sense Evil</div>
+<div class="e"><a href="sect308.htm">308</a> #3: Brotherhood spell -&gt; Brotherhood Spell</div>
 <div class="section"><a name="sect309">sect309</a></div>
 <div class="re"><a href="sect309.htm" >309</a> #1:  Should war-hog be capitalised? The Giak name is Nad-Jaguz<div class="cm jb">see 219</div></div>
 <div class="section"><a name="sect310">sect310</a></div>
@@ -853,6 +885,7 @@
 <div class="section"><a name="sect332">sect332</a></div>
 <div class="ce"><a href="sect332.htm" >332</a> #1: &lt;spell&gt; Lightning Hand</div>
 <div class="ce"><a href="sect332.htm">332</a> #2: but, as -&gt; but as</div>
+<div class="e"><a href="sect332.htm">332</a> #3: Brotherhood spell -&gt; Brotherhood Spell</div>
 <div class="section"><a name="sect333">sect333</a></div>
 <div class="re"><a href="sect333.htm" >333</a> #1: Mastery, and -> Mastery and<div class="cm jb">unable to locate</div></div>
 <div class="re"><a href="sect333.htm">333</a> #2:   'and' should be italicised in 1st option</div>
@@ -862,12 +895,15 @@
 <div class="section"><a name="sect337">sect337</a></div>
 <div class="section"><a name="sect338">sect338</a></div>
 <div class="ce"><a href="sect338.htm" >338</a> #1: &lt;spell&gt; Lightning Hand and remove dashes</div>
+<div class="e"><a href="sect338.htm">338</a> #2: Brotherhood spell -&gt; Brotherhood Spell</div>
 <div class="section"><a name="sect339">sect339</a></div>
 <div class="ce"><a href="sect339.htm" >339</a> #1: &lt;spell&gt; Lightning Hand</div>
 <div class="ce"><a href="sect339.htm">339</a> #2: blue-fire -> blue fire</div>
 <div class="cn"><a href="sect339.htm">339</a> #3: arcs.through -> arcs through (remove period)</div>
+<div class="e"><a href="sect339.htm">339</a> #4: Brotherhood spell -&gt; Brotherhood Spell</div>
 <div class="section"><a name="sect340">sect340</a></div>
 <div class="ce"><a href="sect340.htm" >340</a> #1: &lt;spell&gt; Levitation and remove dashes</div>
+<div class="e"><a href="sect340.htm">340</a> #2: Brotherhood spell -&gt; Brotherhood Spell</div>
 <div class="section"><a name="sect341">sect341</a></div>
 <div class="cn"><a href="sect341.htm" >341</a> #1: weaken centre -> weakened centre</div>
 <div class="section"><a name="sect342">sect342</a></div>
@@ -942,6 +978,27 @@
 <div class="section"><a name="sect398">sect398</a></div>
 <div class="section"><a name="sect399">sect399</a></div>
 <div class="section"><a name="sect400">sect400</a></div>
+<div class="section"><a name="ill1">ill1</a></div>
+<div class="section"><a name="ill2">ill2</a></div>
+<div class="section"><a name="ill3">ill3</a></div>
+<div class="section"><a name="ill4">ill4</a></div>
+<div class="section"><a name="ill5">ill5</a></div>
+<div class="section"><a name="ill6">ill6</a></div>
+<div class="section"><a name="ill7">ill7</a></div>
+<div class="section"><a name="ill8">ill8</a></div>
+<div class="section"><a name="ill9">ill9</a></div>
+<div class="section"><a name="ill10">ill10</a></div>
+<div class="section"><a name="ill11">ill11</a></div>
+<div class="section"><a name="ill12">ill12</a></div>
+<div class="section"><a name="ill13">ill13</a></div>
+<div class="section"><a name="ill14">ill14</a></div>
+<div class="section"><a name="ill15">ill15</a></div>
+<div class="section"><a name="ill16">ill16</a></div>
+<div class="section"><a name="ill17">ill17</a></div>
+<div class="section"><a name="ill18">ill18</a></div>
+<div class="section"><a name="ill19">ill19</a></div>
+<div class="section"><a name="ill20">ill20</a></div>
+<div class="section"><a name="passing">passing</a></div>
 <div class="section"><a name="map">map</a></div>
 <div class="cn"><a href="map.htm">Map</a> #1: fix map title</div>
 <div class="section"><a name="action">action</a></div>
