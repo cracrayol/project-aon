@@ -2,16 +2,16 @@
     <meta><title>Project Aon License</title></meta>
 
     <data>
-     <p>5 February 2004</p>
+     <p>2 February 2005</p>
 
      <section class="backmatter" id="lic-pre">
       <meta><title>0. Preamble</title></meta>
 
       <data>
-       <p>Joe Dever, author of the Lone Wolf game books, and Ian Page, author of the World of Lone Wolf books are providing certain of their works for free (gratis) download from the internet. Gary Chalk, Melvyn Grant, and Brian Williams are similarly offering the illustrations that they did for Joe Dever&apos;s books. This license is intended to protect the rights of the authors and the illustrators, the rights of his readers, and the quality of the distributions of the books.</p>
+       <p>Joe Dever, author of the Lone Wolf game books, and Ian Page, author of the World of Lone Wolf books are providing certain of their works for free (gratis) download from the internet. Rob Adams, Paul Bonner, Gary Chalk, Melvyn Grant, Peter Lyon, Graham Round, and Brian Williams are similarly offering the illustrations that they did for these books. This license is intended to protect the rights of the authors and the illustrators, grant rights to their readers, and preserve the quality of the books distributed in this way.</p>
        <p>By viewing or downloading the books or the illustrations, you agree to refrain from redistributing them in any format for any reason. This is intended to protect readers from getting poor quality, unofficial versions or from being asked for payment in exchange for the books by someone who is redistributing them unofficially.</p>
        <p>Anyone who wishes to simply view or download the Internet Editions for their own personal use need not worry about running afoul of the terms of this License. These activities are within acceptable behaviour as defined by this License.</p>
-       <p>This section does not contain the legally binding terms of this license. The precise terms and conditions of this license follow.</p>
+       <p>This section does not contain the legally binding terms of this license. Please read the precise terms and conditions of this license that follow.</p>
       </data>
      </section>
 
@@ -40,7 +40,7 @@
         <meta><title>1.2</title></meta>
 
         <data>
-         <p><quote>Illustrator</quote> shall hereafter refer to Gary Chalk, holder of the copyrights for the illustrations of Lone Wolf books one through eight counted inclusively, Melvyn Grant, holder of the copyrights for the illustrations of <cite>Freeway Warrior 1: Highway Holocaust</cite>, and Brian Williams, holder of the copyrights for the illustrations of Lone Wolf books nine through twenty-eight counted inclusively with the exception of the illustrations for book twenty-one, <cite>The Voyage of the Moonstone</cite> and holder of the copyrights for the illustrations of books two through four of the Freeway Warrior series. Where either Gary Chalk, Melvyn Grant, or Brian Williams are mentioned singly, they will be referred to by name.</p>
+         <p><quote>Illustrator</quote> shall hereafter refer to Rob Adams, copyright holder of portions of <cite>The Magnamund Companion</cite>; Paul Bonner, holder of the copyrights for the illustrations of the World of Lone Wolf books; Gary Chalk, holder of the copyrights for the illustrations of Lone Wolf books one through eight counted inclusively; Melvyn Grant, holder of the copyrights for the illustrations of <cite>Freeway Warrior 1: Highway Holocaust</cite>; Peter Lyon, copyright holder of portions of <cite>The Magnamund Companion</cite>; Graham Round, copyright holder of portions of <cite>The Magnamund Companion</cite>; and Brian Williams, holder of the copyrights for the illustrations of Lone Wolf books nine through twenty-eight counted inclusively with the exception of the illustrations for book twenty-one, <cite>The Voyage of the Moonstone</cite> and holder of the copyrights for the illustrations of books two through four of the Freeway Warrior series. Where either Paul Bonner, Gary Chalk, Melvyn Grant, Pete Lyon, Graham Round, or Brian Williams are mentioned singly, they will be referred to by name.</p>
         </data>
        </section>
 
@@ -96,6 +96,20 @@
           <li><cite>War of the Wizards</cite>; Copyright 1986 Ian Page.</li>
          </ul>
 
+         <p>The illustrations created by Rob Adams for the following book are part of the illustrations being offered under the terms of this License:</p>
+
+         <ul>
+          <li><cite>The Magnamund Companion</cite>; Some illustrations copyright 1986 Rob Adams.</li>
+         </ul>
+
+         <p>The illustrations created by Paul Bonner for the following books are part of the illustrations being offered under the terms of this License:</p>
+
+         <ul>
+          <li><cite>Grey Star the Wizard</cite>; Illustrations copyright 1985 Paul Bonner.</li>
+          <li><cite>The Forbidden City</cite>; Illustrations copyright 1986 Paul Bonner.</li>
+          <li><cite>Beyond the Nightmare Gate</cite>; Illustrations copyright 1986 Paul Bonner.</li>
+          <li><cite>War of the Wizards</cite>; Illustrations copyright 1986 Paul Bonner.</li>
+         </ul>
 
          <p>The illustrations created by Gary Chalk for the following books are part of the illustrations being offered under the terms of this License:</p>
 
@@ -110,10 +124,22 @@
           <li><cite>The Jungle of Horrors</cite>; Illustrations copyright 1987 Joe Dever and Gary Chalk.</li>
          </ul>
 
-         <p>The illustrations created by Melvyn Grant for the following books are part of the illustrations being offered under the terms of this License:</p>
+         <p>The illustrations created by Melvyn Grant for the following book are part of the illustrations being offered under the terms of this License:</p>
 
          <ul>
           <li><cite>Freeway Warrior 1: Highway Holocaust</cite>; Illustrations copyright 1988 Melvyn Grant.</li>
+         </ul>
+
+         <p>The illustrations created by Peter Lyon for the following book are part of the illustrations being offered under the terms of this License:</p>
+
+         <ul>
+          <li><cite>The Magnamund Companion</cite>; Some illustrations copyright 1986 Peter Lyon.</li>
+         </ul>
+
+         <p>The illustrations created by Graham Round for the following book are part of the illustrations being offered under the terms of this License:</p>
+
+         <ul>
+          <li><cite>The Magnamund Companion</cite>; Some illustrations copyright 1986 Graham Round.</li>
          </ul>
 
          <p>The illustrations created by Brian Williams for the following books are part of the illustrations being offered under the terms of this License:</p>
@@ -145,7 +171,7 @@
 
          <p>The works distributed under the collective title <cite>Lone Wolf Club Newsletters</cite>&emdash;which are composed of, in part, the above named works&emdash;will also be distributed under the terms of this License.</p>
 
-         <p><quote>Internet Editions</quote> shall not refer to any other works by the Authors nor any other illustrations by the Illustrators. <quote>Internet Editions</quote> shall refer solely to the text and illustrations of the above works when made available through the Internet.</p>
+         <p><quote>Internet Editions</quote> shall not refer to any other works by the Authors nor any other illustrations by the Illustrators unless the Authors or Illustrators amend this License. <quote>Internet Editions</quote> shall refer solely to the text and illustrations of the above works when made available through the Internet.</p>
         </data>
        </section>
 
@@ -153,7 +179,7 @@
         <meta><title>1.5</title></meta>
 
         <data>
-         <p><quote>Licensee</quote> shall hereafter refer to any person or electronic agent who receives some or all of the Internet Editions. The <quote>Licensee</quote> shall hereinafter be referred to as <quote>Licensee</quote> or <quote>you</quote>.</p>
+         <p><quote>Licensee</quote> shall hereafter refer to any person or electronic agent who receives some portion or all of the Internet Editions. The <quote>Licensee</quote> shall hereinafter be referred to as <quote>Licensee</quote> or <quote>you</quote>.</p>
         </data>
        </section>
 
@@ -194,6 +220,7 @@
 
         <data>
          <p>The Authors and Illustrators grant you the right to receive a copy or copies of the Internet Editions from the Distribution Point at no charge provided that you agree to all of the terms and obligations of this License. If you do not agree to all of the terms and obligations of this License, you are not granted any rights by this License.</p>
+         <p>You agree to be bound by the terms and obligations of this License by the act of receiving or viewing a copy any portion of the Internet Editions even though you have not signed a written document. Indeed you have no right to receive or view a copy or copies without first accepting this License as legally valid and binding and agreeing to the terms and obligations of this License.</p>
         </data>
        </section>
 
@@ -203,21 +230,13 @@
         <data>
          <p>You agree to refrain from redistributing the Internet Editions in any form, electronic or otherwise, to any other person or persons for any reason by any means. You are granted the right to receive a copy or copies only for your own personal use.</p>
          <p>This License does not collectively grant any rights to corporations or groups of individuals when regarded as one legal entity. This License exclusively grants rights to private individuals.</p>
-         <p>Redistribution includes but is not limited to displaying the Internet Editions within the graphical representation of an Internet site other than the Distribution Point. This prohibition includes but is not limited to HTML <quote>frames</quote>.</p>
-         <p>One exception to the restrictions on redistribution in this section is made in that you may send the Internet Editions or derivative works thereof to the Distribution Point by the consent of the Maintainer.</p>
-        </data>
-       </section>
-
-       <section class="backmatter" id="lic-2-3">
-        <meta><title>2.3</title></meta>
-
-        <data>
-         <p>You agree to be bound by the terms and obligations of this License by receiving or viewing a copy or copies of the Internet Editions even though you have not signed any written document. Indeed you have no right to receive or view a copy or copies without first agreeing to the terms and obligations of this License.</p>
+         <p>Redistribution includes but is not limited to displaying the Internet Editions within the graphical representation of an Internet site other than the Distribution Point. This prohibition includes but is not limited to the use of HTML <quote>frames</quote>.</p>
+         <p>An exception to the restrictions on redistribution in this section is made in that you may send the Internet Editions or derivative works thereof to the Distribution Point by the consent of the Maintainer.</p>
         </data>
        </section>
 
        <section class="backmatter" id="lic-2-4">
-        <meta><title>2.4</title></meta>
+        <meta><title>2.3</title></meta>
 
         <data>
          <p>The Authors and Illustrators retain all other rights to their respective portions of the Internet Editions not covered by this License. The Authors or Illustrators may, at any time, without notice and without need to show due cause, revoke the rights granted to you by this License to their respective portions of the Internet Editions.</p>
@@ -225,10 +244,10 @@
        </section>
 
        <section class="backmatter" id="lic-2-5">
-        <meta><title>2.5</title></meta>
+        <meta><title>2.4</title></meta>
 
         <data>
-         <p>If a person is under the legal age to be able to enter into a contractual relationship as defined by the laws of the area in which that person lives, they may have a parent or legal guardian agree to be bound by the terms and obligations of this license. That same parent or legal guardian may thereafter give a copy or copies of the Internet Editions to that child. That parent or legal guardian is thereafter legally responsible to ensure that that child behaves in accordance with all of the terms and obligations of this License.</p>
+         <p>If a person is under the legal age to be able to enter into a contractual relationship as defined by the laws of the area in which that person resides, they may have a parent or legal guardian agree to be bound by the terms and obligations of this License. On condition of entering agreeing to be bound by the terms of the License, that same parent or legal guardian may thereafter give a copy or copies of the Internet Editions to that child. That parent or legal guardian is thereafter legally responsible to ensure that that child behaves in accordance with all of the terms and obligations of this License.</p>
          <p>The authority of a parent or legal guardian to distribute the Internet Editions does not extend to the distribution of the Internet Editions to any other person or persons except his or her child or legal dependent.</p>
         </data>
        </section>
