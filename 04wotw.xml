@@ -20,6 +20,9 @@
 $Id$
 
 $Log$
+Revision 1.5  2005/04/02 19:25:59  angantyr
+Implemented a bunch of errata and footnotes.
+
 Revision 1.4  2005/03/10 18:21:51  jonathan.blake
 Removed link to old staff email address.
 
@@ -66,9 +69,9 @@ Initial revision
    &inclusion.paul.bonner.bio.gs;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2005</year><month>02</month><day>06</day></date>
+  <date class="publication"><year>2005</year><month>04</month><day>02</day></date>
   <description class="blurb">
-   <p>You are the Wizard Grey Star. You now face the tumultuous climax to your epic struggle to overthrow the evil Wytch-king Shasarak. His cruel empire is torn by war as the Freedom Fighters rebel against his corrupt dominion. Can you reach them in time to free mankind? Can you overcome the Wytch-king&apos;s ferocious soldiers and the supernatural hordes that are his to command? Your only hope lies in your Wizard&apos;s Staff. Guard it well&emdash;for it contains the might of the mystic Moonstone, the very essence of your Magical Powers.</p>
+   <p>You are the Wizard Grey Star. You now face the tumultuous <!--ERRTAG-RE-2167-->climax of your epic struggle<!--/ERRTAG-RE-2167--> to overthrow the evil Wytch-king Shasarak. His cruel empire is torn by war as the Freedom Fighters rebel against his corrupt dominion. Can you reach them in time to free mankind? Can you overcome the Wytch-king&apos;s ferocious soldiers and the supernatural hordes that are his to command? Your only hope lies in your Wizard&apos;s Staff. Guard it well&emdash;for it contains the might of the mystic Moonstone, the very essence of your Magical Powers.</p>
    <p><!--ERRTAG-RE-2248--><cite>The World of Lone Wolf</cite><!--/ERRTAG-RE-2248--> is an exciting adventure series in which you are the hero, you make the decisions, and you fight the combats using the unique systems included in the book.</p>
   </description>
   <description class="publication">
@@ -122,6 +125,8 @@ Initial revision
        <dl>
         <dt>Transcription</dt>
          <dd>Mike David</dd>
+        <dt>Illustration Transcription</dt>
+         <dd>Jonathan Blake<br />Simon Osborne</dd>
         <dt>XML</dt>
          <dd>Jonathan Blake<br />Thomas Wolmer</dd>
        <dt>Action Charts</dt>
@@ -135,7 +140,7 @@ Initial revision
         <dt>Coordination</dt>
          <dd>Jonathan Blake<br />Thomas Wolmer</dd>
        <dt>Special Thanks</dt>
-         <dd>[The guys who pointed us at Paul Bonner's address/website]</dd>
+         <dd>David Davis<br />Wolf Ewing<br />Xavier Mataillet<br />Justin Parks</dd>
        </dl>
       </data>
      </section>
@@ -191,15 +196,18 @@ Initial revision
     </meta>
 
     <footnotes>
-     <footnote id="gamerulz-1-foot" idref="gamerulz-1"><p>This section of the rules implies that you must re-pick your <typ class="attribute">COMBAT SKILL</typ> even though you may have already completed a previous adventure. This is without precedent in other books and therefore appears to be a mistake. In order to preserve rule consistency among the books, you may choose to retain your <typ class="attribute">COMBAT SKILL</typ> score.</p></footnote>
+     <footnote id="gamerulz-1-foot" idref="gamerulz-1"><p>It is implied that you must pick a new <typ class="attribute">COMBAT SKILL</typ> from the <a idref="random">Random Number Table</a> even if have already completed previous one or more <cite>Grey Star</cite> adventures. This conflicts with the rules for the <cite>Lone Wolf</cite> books where you carry over your score from a previous successfully completed adventure. For the sake of consistency, players may wish to carry over their existing score from the last <cite>Grey Star</cite> book they completed.</p></footnote>
+     <footnote id="gamerulz-2-foot" idref="gamerulz-2"><p>The original intent of the author was most likely that the player should add 50 to their final <typ class="attribute">WILLPOWER</typ> score from the end of their last successfully completed <cite>Grey Star</cite> adventure.</p></footnote>
+     <footnote id="gamerulz-3-foot" idref="gamerulz-3"><p>It is possible for your <typ class="attribute">WILLPOWER</typ> to fall below zero. For example, if you are the victim of an attack that drains your <typ class="attribute">WILLPOWER</typ>, your score may be forced below zero. If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to cast spells or use the magical properties of your Wizard&apos;s Staff until your score is again above zero. You can still use your Wizard&apos;s Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>.</p></footnote>
+     <footnote id="gamerulz-4-foot" idref="gamerulz-4"><p>The original intent of the author was most likely that the player should add 30 to their final <typ class="attribute">ENDURANCE</typ> score from the end of their last successfully completed <cite>Grey Star</cite> adventure. In the <cite>Lone Wolf</cite> series, it is standard practice to restore one&apos;s <typ class="attribute">ENDURANCE</typ> points to their original total when carrying them over from one adventure to the next, but the power of the Moonstone seems to change those rules in this case.</p></footnote>
     </footnotes>
 
     <data>
      <p>To keep a record of your adventure, use the <a idref="action">Action Chart</a><!--ERRTAG-DE-17373/-->.<!--ERRTAG-DE-17447/--></p>
      <p>Before you set off on your adventure, you must discover how well your Shianti masters have prepared you for your quest by determining your fighting prowess&emdash;<typ class="attribute">COMBAT SKILL</typ>&emdash;your state of mind&emdash;<typ class="attribute">WILLPOWER</typ>&emdash;and your physical stamina&emdash;<typ class="attribute">ENDURANCE</typ>. To do this take a pencil and, with eyes closed, point with the blunt end of it on to the <a idref="random">Random Number Table</a><!--ERRTAG-DE-17924/-->. If you pick 0 it counts as zero.</p>
      <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 10 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a>. (e.g., if your pencil fell on the number 4 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> of 14.) When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore very desirable.<a id="gamerulz-1" idref="gamerulz-1-foot" class="footnote" /></p>
-     <p>The second number that you need is one to represent your <typ class="attribute">WILLPOWER</typ>. Do not use the <a idref="random">Random Number Table</a>. You begin this adventure with a <typ class="attribute">WILLPOWER</typ> total of 50, as your first touch of the Moonstone of the Shianti regenerates your Magical Powers immediately. If you possess unused <typ class="attribute">WILLPOWER</typ> points from earlier Grey Star adventures, add them to the 50 <typ class="attribute">WILLPOWER</typ> points which possession of the Moonstone grants you. Write the total in the <typ class="attribute">WILLPOWER</typ> section of your <a idref="action">Action Chart</a>. If you decide to use a spell or the power of your Wizard&apos;s Staff, then you will lose <typ class="attribute">WILLPOWER</typ> points. If at any time your <typ class="attribute">WILLPOWER</typ> falls to zero, or below, you may not use any spells or any additional <typ class="attribute">WILLPOWER</typ> points in combat to increase the <typ class="attribute">ENDURANCE</typ> loss of an opponent. Lost <typ class="attribute">WILLPOWER</typ> points can be regained during the course of the adventure and it is possible for your <typ class="attribute">WILLPOWER</typ> score to rise above the total with which you start your adventure.</p>
-     <p>The third attribute is your power of <typ class="attribute">ENDURANCE</typ>. You start with a total of 30 <typ class="attribute">ENDURANCE</typ> points when your first touch of the Moonstone fills your body with energy and power. Add any <typ class="attribute">ENDURANCE</typ> points gained from playing previous Grey Star adventures to your initial score of 30 and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a>. If you are wounded in combat, you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> score falls to zero, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure but can never rise above the number with which you began the adventure.</p>
+     <p>The second number that you need is one to represent your <typ class="attribute">WILLPOWER</typ>. Do not use the <a idref="random">Random Number Table</a>. You begin this adventure with a <typ class="attribute">WILLPOWER</typ> total of 50, as your first touch of the Moonstone of the Shianti regenerates your Magical Powers immediately. If you possess unused <typ class="attribute">WILLPOWER</typ> points from earlier Grey Star adventures, add them to the 50 <typ class="attribute">WILLPOWER</typ> points which possession of the Moonstone grants you.<a id="gamerulz-2" idref="gamerulz-2-foot" class="footnote" /> Write the total in the <typ class="attribute">WILLPOWER</typ> section of your <a idref="action">Action Chart</a>. If you decide to use a spell or the power of your Wizard&apos;s Staff, then you will lose <typ class="attribute">WILLPOWER</typ> points. If at any time your <typ class="attribute">WILLPOWER</typ> falls to zero, or below, you may not use any spells or any additional <typ class="attribute">WILLPOWER</typ> points in combat to increase the <typ class="attribute">ENDURANCE</typ> loss of an opponent.<a id="gamerulz-3" idref="gamerulz-3-foot" class="footnote" /> Lost <typ class="attribute">WILLPOWER</typ> points can be regained during the course of the adventure and it is possible for your <typ class="attribute">WILLPOWER</typ> score to rise above the total with which you start your adventure.</p>
+     <p>The third attribute is your power of <typ class="attribute">ENDURANCE</typ>. You start with a total of 30 <typ class="attribute">ENDURANCE</typ> points when your first touch of the Moonstone fills your body with energy and power. Add any <typ class="attribute">ENDURANCE</typ> points gained from playing previous Grey Star adventures to your initial score of 30 and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a>.<a id="gamerulz-4" idref="gamerulz-4-foot" class="footnote" /> If you are wounded in combat, you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> score falls to zero, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure but can never rise above the number with which you began the adventure.</p>
 
      <section class="frontmatter-separate" id="powers">
       <meta>
@@ -208,9 +216,10 @@ Initial revision
        <link class="next" idref="equipmnt" />
       </meta>
 
-    <footnotes>
-     <footnote id="powers-1-foot" idref="powers-1"><p>The wording of this section of the rules seems to indicate&emdash;if read literally&emdash;that you may choose your set of Lesser Magicks again if you have completed a previous adventure. This is without precedent in other books. In order to preserve consistency with other books, you should not choose your Lesser Magicks again. If you have currently mastered five Lesser Magicks, you may choose one additional Lesser Magick from the list. If you have already mastered six Lesser Magicks, you keep these. If you choose Alchemy as a new Lesser Magick, or you have not mastered the Lesser Magick of Alchemy but you have selected the Higher Magick of Theurgy, you also receive a Herb Pouch with contents, as detailed in the Equipment section.</p></footnote>
-    </footnotes>
+      <footnotes>
+       <footnote id="powers-1-foot" idref="powers-1"><p>The wording of this section of the rules seems to indicate&emdash;if read literally&emdash;that you may choose your set of Lesser Magicks again if you have completed a previous adventure. This is without precedent in other books. In order to preserve consistency with other books, you should not choose your Lesser Magicks again. If you have currently mastered five Lesser Magicks, you may choose one additional Lesser Magick from the list. If you have already mastered six Lesser Magicks, you keep these. If you choose Alchemy as a new Lesser Magick, or you have not mastered the Lesser Magick of Alchemy but you have selected the Higher Magick of Theurgy, you also receive a Herb Pouch with contents, as detailed in the Equipment section.</p></footnote>
+       <footnote id="powers-2-foot" idref="powers-2"><p>If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to use the magical properties of your Wizard's Staff until your score is again above zero. You can still use your Wizard's Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>. </p></footnote>
+      </footnotes>
 
       <data>
        <p>There are thirteen Magical Powers, the first seven of which are called the <!--ERRTAG-RA-21665-->Lesser Magicks<!--/ERRTAG-RA-21665-->. Possession of the Moonstone reveals to you the secret of the <!--ERRTAG-RE-21787-->Magical Powers<!--/ERRTAG-RE-21787--> known as the <!--ERRTAG-RA-21860-->Higher Magicks<!--/ERRTAG-RA-21860-->, of which there are six. If this is your first Grey Star adventure, you may choose five <!--ERRTAG-RA-21665-->Lesser Magicks<!--/ERRTAG-RA-21665--> and four <!--ERRTAG-RA-21860-->Higher Magicks<!--/ERRTAG-RA-21860-->. If you have successfully completed any of the previous Grey Star adventures, you may choose six <!--ERRTAG-RA-21665-->Lesser Magicks<!--/ERRTAG-RA-21665--> and five <!--ERRTAG-RA-21860-->Higher Magicks<!--/ERRTAG-RA-21860-->.<a id="powers-1" idref="powers-1-foot" class="footnote" /></p>
@@ -451,7 +460,7 @@ Initial revision
 	  <instance class="html" src="staff.gif" width="112" height="141" />
 	 </illustration>
 
-         <p><a idref="staff-ill" class="accent-illustration" />Your Staff is your most valuable possession. It looks and feels like an ordinary quarterstaff, yet it is stronger than any known metal. This is your main combat weapon, for you are untrained in the use of any other form of armed combat. It contains a potent force that is unleashed at will by the power of your mind, and causes a beam of destructive power to hurtle from its tip. Every time you unleash this power you must deduct 1 <typ class="attribute">WILLPOWER</typ> point.</p>
+         <p><a idref="staff-ill" class="accent-illustration" />Your Staff is your most valuable possession. It looks and feels like an ordinary quarterstaff, yet it is stronger than any known metal. This is your main combat weapon, for you are untrained in the use of any other form of armed combat. It contains a potent force that is unleashed at will by the power of your mind, and causes a beam of destructive power to hurtle from its tip. Every time you unleash this power you must deduct 1 <typ class="attribute">WILLPOWER</typ> point.<a id="powers-2" idref="powers-2-foot" class="footnote" /></p>
          <p>In the event that your enemy survives such an attack or should you fall victim to a surprise attack, you will be forced to engage in close combat and must attempt to strike your enemy with the Staff. If your attack is successful, a bolt of energy will be released from the Staff that is capable of inflicting great physical harm. If you wish to increase the amount of damage that you inflict in this way, you must use more <typ class="attribute">WILLPOWER</typ> points and multiply the number of <typ class="attribute">ENDURANCE</typ> points lost by the enemy, accordingly. For example, if you chose to expend 3 <typ class="attribute">WILLPOWER</typ> points on your attack, all enemy <typ class="attribute">ENDURANCE</typ> point losses would be multiplied by three.</p>
          <p>If you enter combat without your Staff, deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ> If you have no weapon at all, you must deduct 8 points from your <typ class="attribute">COMBAT SKILL</typ>.</p>
         </data>
@@ -783,10 +792,10 @@ Initial revision
 
       <data>
        <p>You smash the fabric that binds the skeleton&apos;s body but you are fighting the creature with magic. Your fellow soldiers do not have the same advantage and the air is filled with their terrified cries. Many are being slain and, as they die, Shasarak&apos;s spell takes them, and they rise to fight once more as soldiers of the undead. Those that survive find themselves fighting their friends and comrades. The powers you possess protect only you from attack. You can save the Freedom guild only by destroying Shasarak. The time has come: you must go to him.</p>
-       <choice idref="sect39">If you are versed in the <!--ERRTAG-RE-71597-->Higher Magick<!--/ERRTAG-RE-71597--> of Thaumaturgy, deduct 2 <typ class="attribute">WILLPOWER</typ> points from your total to cast a teleportation spell, and <link-text>turn to 39</link-text>.</choice>
+       <choice idref="sect39">If you are versed in the <!--ERRTAG-RE-71597-->Higher Magick<!--/ERRTAG-RE-71597--> of <!--ERRTAG-RE-74444-->Thaumaturgy, you may deduct<!--/ERRTAG-RE-74444--> 2 <typ class="attribute">WILLPOWER</typ> points from your total to cast a teleportation spell, and <link-text>turn to 39</link-text>.</choice>
        <choice idref="sect39">If you have a Temeris potion, you may use it to teleport without using any <typ class="attribute">WILLPOWER</typ> points; <link-text>turn to 39</link-text>.</choice>
-       <choice idref="sect39">If you are using the power of the <!--ERRTAG-RE-72083-->Dimension Door<!--/ERRTAG-RE-72083--> locked in the Moonstone, deduct 4 <typ class="attribute">WILLPOWER</typ> points from your total to teleport, and <link-text>turn to 39</link-text>.</choice>
-       <p>If you are unable to teleport by any of these means, then you have failed in your quest and your adventure is over.</p>
+       <choice idref="sect39">If you are using the power of the <!--ERRTAG-RE-72083-->Dimension Door<!--/ERRTAG-RE-72083--> locked in the <!--ERRTAG-RE-74992-->Moonstone, you may deduct<!--/ERRTAG-RE-74992--> 4 <typ class="attribute">WILLPOWER</typ> points from your total to teleport, and <link-text>turn to 39</link-text>.</choice>
+       <choice>If you are unable to teleport by any of these means, then you have failed in your quest and your adventure is over.</choice>
       </data>
      </section>
 
@@ -817,7 +826,7 @@ Initial revision
 
       <data>
        <p>In the Lissan Plain the herbs and flowers that you need to mix a potion of invulnerability grow in abundance. Made from the leaves of the Zakutsk flower and the root of the Demeril bush, the potion is mixed with salt and spring water beneath the rays of the <!--ERRTAG-RE-74659-->midday<!--/ERRTAG-RE-74659--> sun. It will protect your body from physical harm for only a few hours, but might prove invaluable in your attempt to close the portal of Tilos should you be forced to face an attack by the demons of the Lissan Plain, either on your way to the portal, or afterwards, when you are trying to lure the demon horde against the Shadakine army marching towards the <!--ERRTAG-RE-75069-->bridge<!--/ERRTAG-RE-75069--> at Lanzi.</p>
-       <choice idref="sect34">If you wish to ask the Masbat&eacute; to gather the ingredients for the potion, <link-text>turn to 34</link-text>.</choice>
+       <choice idref="sect34">If you <!--ERRTAG-RE-78072-->wish to use the Power of Theurgy and ask<!--/ERRTAG-RE-78072--> the Masbat&eacute; to gather the ingredients for the potion, <link-text>turn to 34</link-text>.</choice>
        <choice idref="sect19">If you prefer to use the <!--ERRTAG-RA-75351-->Higher Magick<!--/ERRTAG-RA-75351--> of Thaumaturgy, <link-text>turn to 19</link-text>.</choice>
        <choice idref="sect24">If you prefer to use the <!--ERRTAG-RA-75351-->Higher Magick<!--/ERRTAG-RA-75351--> of Necromancy, <link-text>turn to 24</link-text>.</choice>
        <choice idref="sect29">If you prefer not to use the Magical Powers of Theurgy, Thaumaturgy, or Necromancy, <link-text>turn to 29</link-text>.</choice>
@@ -936,15 +945,20 @@ Initial revision
      <section class="numbered" id="sect25">
       <meta><title>25</title></meta>
 
+      <footnotes>
+       <footnote id="sect25-1-foot" idref="sect25-1"><p>If you wish to take the Sheath, record it as a Special Item on your <a idref="action">Action Chart</a>.</p></footnote>
+       <footnote id="sect25-2-foot" idref="sect25-2"><p>If you wish to take the Sheath, record it as a Special Item on your <a idref="action">Action Chart</a>.</p></footnote>
+      </footnotes>
+
       <data>
        <p>You both drink long and deep: the large bowl is almost empty before your thirst is sated. When you have finished you walk to the far end of the hall. Two flights of stairs lead up to a large platform. At the rear of the platform a vast and elaborate frieze has been carved from the wall. In the centre, a woman stands with arms outstretched in a gesture of welcome. She is wreathed in light and, standing all around her, are rows of men and women of proud bearing. This building must be the work of the Masbat&eacute;. The woman is a representation of the Great goddess Ishir, High Priestess of the Moon, mother of all men, and the building is some form of temple or shrine.</p>
        <p>Another flight of steps leads from the platform to one of the many galleries that line the temple&apos;s walls. Cautiously you both mount these steps, passing through a doorway that opens on to one of the galleries. The fading light from above does not illuminate the high archways that lead off the gallery, and, at the cost of 1 <typ class="attribute">WILLPOWER</typ> point, you cause a light to glow from the top of your Staff. You peer through an archway to see a large chamber, its high ceiling lost in shadow, its corners shrouded in cobwebs. In the middle of the chamber stands a long pallet of grime-encrusted marble. With a start, you realize that a human form rests upon the pallet, but your panic soon subsides, for it is a dead man, a giant, with a huge broadsword clutched to his chest with withered hands. A necklace of blue stones hangs around his neck; a circlet of silver crowns his head. The brown, shrunken flesh has been partly preserved by some process of mummification, but the garments the corpse wears have all but mouldered away.</p>
        <p>Inspection of the remaining chambers on this floor confirms that this is an ancient Masbat&eacute; tomb. Each chamber is a crypt, in which the Masbat&eacute; have laid their dead to rest with their weapons of war and personal effects. The tomb of the Masbat&eacute; was probably served by guardians before Shasarak summoned the plague of demons that eventually destroyed the Masbat&eacute; tribe. Tanith arms herself with a long dagger from one of the chambers. She also takes a sling and a number of stones. You may keep any of the following items that you find in the various chambers:</p>
        <ul>
         <li><!--ERRTAG-RE-88666-->Coil of Rope<!--/ERRTAG-RE-88666--> (Backpack Item)</li>
-        <li><!--ERRTAG-RE-88761-->Sword and Sheath<!--/ERRTAG-RE-88761--> (hung from the belt)</li>
+        <li><!--ERRTAG-RE-88761-->Sword and Sheath<!--/ERRTAG-RE-88761--> (hung from the belt)<a id="sect25-1" idref="sect25-1-foot" class="footnote" /></li>
         <li><!--ERRTAG-RE-88850-->Spear<!--/ERRTAG-RE-88850--> (held in the hand)</li>
-        <li><!--ERRTAG-RE-88949-->Dagger and Sheath<!--/ERRTAG-RE-88949--> (hung from the belt)</li>
+        <li><!--ERRTAG-RE-88949-->Dagger and Sheath<!--/ERRTAG-RE-88949--> (hung from the belt)<a id="sect25-2" idref="sect25-2-foot" class="footnote" /></li>
         <li><!--ERRTAG-RE-89045-->Water Bottle<!--/ERRTAG-RE-89045--> (hung over the shoulder by a strap)</li>
         <li>4 unlit Torches (1 Torch counts as 1 Backpack Item)</li>
         <li><!--ERRTAG-RE-89223-->Tinder box<!--/ERRTAG-RE-89223--> (Backpack Item)</li>
@@ -1077,7 +1091,7 @@ Initial revision
       <meta><title>36</title></meta>
 
       <data>
-       <p>As the evening draws in, the temperature begins to cool. You are tired and thirsty. You have been heading in the direction of Lake Dolani but neither you nor Tanith have ever been to the Lissan Plain before and you are not sure of the lake&apos;s exact location. You know only that it lies on the southern side of the plain. You are now unsure that you can reach it by nightfall. Looking to the west, you see a large building of square, tiered stone. It is approximately two miles away.</p>
+       <p>As the evening draws in, the temperature begins to cool. You are tired and thirsty. You have been heading in the direction of Lake Dolani but <!--ERRTAG-RE-103788-->neither you nor Tanith has<!--/ERRTAG-RE-103788--> ever been to the Lissan Plain before and you are not sure of the lake&apos;s exact location. You know only that it lies on the southern side of the plain. You are now unsure that you can reach it by nightfall. Looking to the west, you see a large building of square, tiered stone. It is approximately two miles away.</p>
        <choice idref="sect297">If you wish to investigate the building, <link-text>turn to 297</link-text>.</choice>
        <choice idref="sect234">If you prefer to continue, <link-text>turn to 234</link-text>.</choice>
       </data>
@@ -1209,9 +1223,13 @@ Initial revision
      <section class="numbered" id="sect47">
       <meta><title>47</title></meta>
 
+      <footnotes>
+       <footnote id="sect47-1-foot" idref="sect47-1"><p>Although the term <quote>Agarashi</quote> is not used anywhere else in the <cite>Grey Star</cite> books, it is used in other books as the collective term for the monstrous servants of Agarash the Damned.</p></footnote>
+      </footnotes>
+
       <data>
        <p>The miles roll by and eventually, the Simar steed adopts a more relaxed pace. You estimate that you are <!--ERRTAG-RE-117359-->halfway<!--/ERRTAG-RE-117359--> to the pass. Looking over your shoulder to the west, you see only the broad expanse of the plain and the distant hills of Tilos. Of the demon plague you can see nothing.</p>
-       <p>High in the afternoon sky you see two black specks wheeling above you. As you walk, one of them begins to spiral downwards. It is a long, snake-like creature with broad, feathery wings. Its talons are like small, clutching needles and it has a small set of forelimbs. The other creature follows and, to your surprise, you see that it is exactly the same as the first, only smaller. That these are plague demons is certain, but it is the first time you have ever seen two of the same kind. The Flying Snakes make no move towards you; they merely drift on the air currents. Evidently these are not affected by the <!--ERRTAG-RE-118216-->Agarashi&apos;s<!--/ERRTAG-RE-118216--> inspired state of crazed frenzy.</p>
+       <p>High in the afternoon sky you see two black specks wheeling above you. As you walk, one of them begins to spiral downwards. It is a long, snake-like creature with broad, feathery wings. Its talons are like small, clutching needles and it has a small set of forelimbs. The other creature follows and, to your surprise, you see that it is exactly the same as the first, only smaller. That these are plague demons is certain, but it is the first time you have ever seen two of the same kind. The Flying Snakes make no move towards you; they merely drift on the air currents. Evidently these are not affected by the <!--ERRTAG-RE-118216-->Agarashi&apos;s<!--/ERRTAG-RE-118216--><a id="sect47-1" idref="sect47-1-foot" class="footnote" /> inspired state of crazed frenzy.</p>
        <choice idref="sect88">If you wish to attack one of the Flying Snakes with your Staff at long range and you have 2 <typ class="attribute">WILLPOWER</typ> points, <link-text>turn to 88</link-text>.</choice>
        <choice idref="sect103">If you wish to ignore them, <link-text>turn to 103</link-text>.</choice>
       </data>
@@ -1337,7 +1355,7 @@ Initial revision
       <meta><title>60</title></meta>
 
       <data>
-       <p>You set a brisk pace for more than an hour but then the burning sun slows you down. Tanith, too, looks very weary. Your throat is parched. Neither you nor Tanith have seen a waterhole or anything that could yield nourishment or moisture and there has been no sign of any living creature. You are further disturbed by the sight of a lone figure heading towards you from the south. It is too distant for you to be able to distinguish any details, but it is moving at great speed. You peer into the shimmering heat and try to guess what it is that approaches.</p>
+       <p>You set a brisk pace for more than an hour but then the burning sun slows you down. Tanith, too, looks very weary. Your throat is parched. <!--ERRTAG-RE-131835-->Neither you nor Tanith has<!--/ERRTAG-RE-131835--> seen a waterhole or anything that could yield nourishment or moisture and there has been no sign of any living creature. You are further disturbed by the sight of a lone figure heading towards you from the south. It is too distant for you to be able to distinguish any details, but it is moving at great speed. You peer into the shimmering heat and try to guess what it is that approaches.</p>
        <choice idref="sect267">If you wish to stand your ground and wait for the figure to arrive, <link-text>turn to 267</link-text>.</choice>
        <choice idref="sect273">If you wish to advance against it, <link-text>turn to 273</link-text>.</choice>
        <choice idref="sect286">If you wish to try to evade it, <link-text>turn to 286</link-text>.</choice>
@@ -1615,6 +1633,7 @@ Initial revision
        <choice idref="sect314">If you have the Magical Power of Elementalism, and wish to use it, <link-text>turn to 314</link-text>.</choice>
        <choice idref="sect7">If you are versed in the <!--ERRTAG-RA-150455-->Higher Magick<!--/ERRTAG-RA-150455--> of Physiurgy, and wish to use it, <link-text>turn to 7</link-text>.</choice>
        <choice idref="sect26">If you are versed in the <!--ERRTAG-RA-150455-->Higher Magick<!--/ERRTAG-RA-150455--> of Thaumaturgy, and wish to use it, <link-text>turn to 26</link-text>.</choice>
+       <!--ERRTAG-AD-155987--><choice idref="sect175">If you do not possess any of the above Powers, you must attack the bridge with your Staff; <link-text>turn to 175</link-text>.</choice><!--/ERRTAG-AD-155987-->
       </data>
      </section>
 
@@ -1836,7 +1855,7 @@ Initial revision
       <meta><title>108</title></meta>
 
       <data>
-       <p>At the cost of 1 <typ class="attribute">WILLPOWER</typ> point, you weave a web of enchantment about yourself, creating the illusion that you are a Shadakine warrior. You stand and reveal yourself to the rider, waving and calling him to you.</p>
+       <p>At the cost of 1 <typ class="attribute">WILLPOWER</typ> point, you weave a web of <!--ERRTAG-RE-177379-->Enchantment<!--/ERRTAG-RE-177379--> about yourself, creating the illusion that you are a Shadakine warrior. You stand and reveal yourself to the rider, waving and calling him to you.</p>
        <choice idref="sect186"><link-text>Turn to 186</link-text>.</choice>
       </data>
      </section>
@@ -2170,7 +2189,7 @@ Initial revision
 
       <data>
        <p>Sitting astride the beautiful white stallion, you trot to the edge of the valley overlooking the flaming archway of the portal and draw out the Moonstone. You focus all the power of your will on to the stone and the closing of the portal. A chorus of inhuman moans ripples across the valley. You hold the Moonstone above your head as slowly it fills with power and light. The demons draw nearer and your horse paws the ground and stamps nervously.</p>
-       <p>Suddenly the flaming archway ignites. Its fire swirls and writhes with great intensity, spitting gouts of liquid orange flame in all directions. You have used 1 <typ class="attribute">WILLPOWER</typ> point in your attempt to close the portal but now it seems imbued with a new force, a power strong enough to resist even the ancient might of the Moonstone of the Shianti. Your Simar steed rears up on its hind legs and you are almost thrown. The horde stop as if paralysed, cowering and gibbering pitifully. Your heart misses a beat as a huge pair of monstrous eyes appears within the flames of the portal.</p>
+       <p>Suddenly the flaming archway ignites. Its fire swirls and writhes with great intensity, spitting gouts of liquid orange flame in all directions. You have used 1 <typ class="attribute">WILLPOWER</typ> point in your attempt to close the portal but now it seems imbued with a new force, a power strong enough to resist even the ancient might of the Moonstone of the Shianti. Your Simar steed rears up on its hind legs and you are almost thrown. <!--ERRTAG-RE-204438-->The horde stops<!--/ERRTAG-RE-204438--> as if paralysed, cowering and gibbering pitifully. Your heart misses a beat as a huge pair of monstrous eyes appears within the flames of the portal.</p>
        <choice idref="sect158"><link-text>Turn to 158</link-text>.</choice>
       </data>
      </section>
@@ -2980,7 +2999,7 @@ Initial revision
       <meta><title>216</title></meta>
 
       <data>
-       <p>You run through the shadowy darkness and emerge at the forest&apos;s edge, where Shadakine and Freedom Guild swordsmen are locked in bloody combat. The Shadakine have the advantage of greater numbers and are forcing the Guildsmen into the forest in a stumbling, disorderly line. They cannot hold for long. You suddenly realize that the strange, pupiless eyes of the Shadakine allow them to see in the dark. No wonder they have attacked in the middle of the night. Their advantage is considerable. A tall officer stands behind the Shadakine warriors, urging them on. Your sudden appearance at the edge of the forest has startled him but he quickly recovers. He bares his teeth and snarls before attacking.</p>
+       <p>You run through the shadowy darkness and emerge at the forest&apos;s edge, where Shadakine and Freedom Guild swordsmen are locked in bloody combat. The Shadakine have the advantage of greater numbers and are forcing the Guildsmen into the forest in a stumbling, disorderly line. They cannot hold for long. You suddenly realize that the strange, <!--ERRTAG-RE-277730-->pupilless<!--/ERRTAG-RE-277730--> eyes of the Shadakine allow them to see in the dark. No wonder they have attacked in the middle of the night. Their advantage is considerable. A tall officer stands behind the Shadakine warriors, urging them on. Your sudden appearance at the edge of the forest has startled him but he quickly recovers. He bares his teeth and snarls before attacking.</p>
        <illustration class="float">
         <meta>
          <creator>Paul Bonner</creator>
@@ -3831,7 +3850,7 @@ Initial revision
       <meta><title>293</title></meta>
 
       <data>
-       <p>With a fearsome <!--ERRTAG-RE-344687-->battle-cry<!--/ERRTAG-RE-344687--> you hurtle down the stairs and the pack scatters in all directions before you are able to inflict a single blow. The light from the Moonstone begins to fade as the power of the incantation wears off but it hardly matters now that you have cowed the hellish beasts into submission. Suddenly the horde begin to gloat unpleasantly and you halt. At the far end of the hall looms a tall shadow.</p>
+       <p>With a fearsome <!--ERRTAG-RE-344687-->battle-cry<!--/ERRTAG-RE-344687--> you hurtle down the stairs and the pack scatters in all directions before you are able to inflict a single blow. The light from the Moonstone begins to fade as the power of the incantation wears off but it hardly matters now that you have cowed the hellish beasts into submission. Suddenly <!--ERRTAG-RE-354727-->the horde begins<!--/ERRTAG-RE-354727--> to gloat unpleasantly and you halt. At the far end of the hall looms a tall shadow.</p>
        <choice idref="sect270"><link-text>Turn to 270</link-text>.</choice>
       </data>
      </section>
@@ -4209,6 +4228,10 @@ Heralding battle, to regain our hearts.</p>
      <section class="numbered" id="sect328">
       <meta><title>328</title></meta>
 
+      <footnotes>
+       <footnote id="sect328-1-foot" idref="sect328-1"><p>If you possess a Temeris Potion you can teleport without using any <typ class="attribute">WILLPOWER</typ> points. If you are versed in the Higher Magick of Thaumaturgy you can teleport by deducting 2 <typ class="attribute">WILLPOWER</typ> points from your total. To use the Dimension Door of the Moonstone to teleport, deduct 4 <typ class="attribute">WILLPOWER</typ> points. (Cf. <a idref="sect12">Section 12</a>.)</p></footnote>
+      </footnotes>
+
       <data>
        <p>You speak your mind to Sado and for once he does not argue. You mount and you and Samu ride either side of the grim-faced leader of the Freedom Guild. Sado gives the command and the entire army surges forward in pursuit of the ghostly figure of the Kazim as it heads purposefully into the night.</p>
        <illustration class="float">
@@ -4222,7 +4245,7 @@ Heralding battle, to regain our hearts.</p>
        <p>The battle that follows is long and terrible. The Freedom Guild almost fail but with Sado&apos;s iron leadership and your brave resolve they endure, although the number of casualties is high. The Kazim reclaims its heart of stone, slaying Mother Chowloon, the Shadakine Wytch who bore it. As she dies, much of the fighting fury and ferocity that filled the Shadakine, fades. The Army of the Freedom Guild senses the Shadakine&apos;s loss of morale and press home their advantage. Soon, they have beaten the much larger force into a full-scale retreat. The entire <!--ERRTAG-RE-380951-->Shadakine Army<!--/ERRTAG-RE-380951--> heads north. Sado leads his army in pursuit, turning the retreat into a rout. It is vital that the Shadakine Army does not reach Shadaki, for there they would find new leadership under Shasarak&apos;s hand. They are still a large army and with Shasarak to lead them they could turn the tables once again.</p>
        <p>The Army of the Freedom Guild pursues the fleeing Shadakine Army across much of the Shadakine Empire. The Shadakine find no place to hide, for all the cities of the Empire are in open revolt. Each Kazim has reclaimed its heart and slain the Shadakine Wytch that ruled each city. During the four days of the pursuit you are not required to exert any energy or use any of your Magical Powers and you regain 8 <typ class="attribute">ENDURANCE</typ> points and 9 <typ class="attribute">WILLPOWER</typ> points. Constantly harrying the ever-dwindling Shadakine force, the Army of the Freedom Guild crosses the great Kalamar River and approaches the Mountains of Lara.</p>
        <p>The Mountains of Lara contain the infamous Morn Pass. It was through this pass that the Shadakine first invaded the provinces of the south. It is the last barrier between you and the fortress city of Shadaki. With growing dread you realize that the time of your final battle with Shasarak is fast approaching. With his armies scattered or destroyed, it only remains for you to challenge him yourself and ensure that the land remains free. Your trepidation is coupled with suspicion. Shasarak has many powers at his disposal. Why then has he not used them to challenge Sado&apos;s tiny army, much reduced in numbers? Perhaps there is some other reason why he does not bring his full might to bear?</p>
-       <choice idref="sect191">If you are versed in the <!--ERRTAG-RE-382765-->Higher Magick<!--/ERRTAG-RE-382765--> of Thaumaturgy, possess a Temeris Potion, or wish to use the Dimension Door of the Moonstone to teleport into the city of Shadaki and challenge Shasarak now, <link-text>turn to 191</link-text>.</choice>
+       <choice idref="sect191">If you are versed in the <!--ERRTAG-RE-382765-->Higher Magick<!--/ERRTAG-RE-382765--> of Thaumaturgy, possess a Temeris Potion, or wish to use the Dimension Door of the Moonstone to teleport into the city of Shadaki and challenge Shasarak now, <link-text>turn to 191</link-text>.<a id="sect328-1" idref="sect328-1-foot" class="footnote" /></choice>
        <choice idref="sect342">If you wish to continue with the Army of the Freedom Guild through the Morn Pass, <link-text>turn to 342</link-text>.</choice>
       </data>
      </section>
@@ -4523,6 +4546,7 @@ Heralding battle, to regain our hearts.</p>
        <choice idref="sect314">If you have the Magical Power of Elementalism, and wish to use it, <link-text>turn to 314</link-text>.</choice>
        <choice idref="sect7">If you are versed in the <!--ERRTAG-RA-411499-->Higher Magick<!--/ERRTAG-RA-411499--> of Physiurgy, and wish to use it, <link-text>turn to 7</link-text>.</choice>
        <choice idref="sect26">If you are versed in the <!--ERRTAG-RA-411499-->Higher Magick<!--/ERRTAG-RA-411499--> of Thaumaturgy, and wish to use it, <link-text>turn to 26</link-text>.</choice>
+       <!--ERRTAG-AD-423745--><choice idref="sect175">If you do not possess any of the above Powers, you must attack the bridge with your Staff; <link-text>turn to 175</link-text>.</choice><!--/ERRTAG-AD-423745-->
       </data>
      </section>
 
@@ -4594,6 +4618,7 @@ Heralding battle, to regain our hearts.</p>
        <p>With a wild laugh you leap from the bed and hug Tanith with joy. You have saved your people. <quote>Come,</quote> she says, leading you to a doorway. It opens on to a balcony that overlooks a large square in the centre of the city of Shadaki. There you look upon a huge crowd. They let out a thunderous cheer as they see you.</p>
        <p>Later you retire to the chamber. Standing there are Sado of the Long Knife and Samu, the Masbat&eacute; King. You clasp their outstretched hands, eyes brimming with tears of happiness. You grin furiously, glad to see that they are alive. A wave of exultant relief runs through you as you receive their grateful thanks and congratulations. They tell you that the Shadakine have fled back to the Sadi Desert. All the cities of the land are free capitals as before. The long task of rebuilding has already begun and all sing your praise to the furthest comers of what was once the Shadakine Empire. They have proclaimed you their ruler, the Wizard Regent of the Free Peoples, for their faith and trust in your wisdom and courage is unshakable.</p>
        <p>Hail! Wizard Grey Star, Shianti Hero and Saviour.</p>
+       <p><a idref="passing">Passing of the Shianti</a></p>
       </data>
      </section>
     </data>
@@ -4607,7 +4632,7 @@ Heralding battle, to regain our hearts.</p>
     <data>
      <p>And so it was that the shame of the Shianti was absolved. With the defeat of the Wytch-king, Shasarak, the renegade Shianti Master, the Shadakine Empire he had built fell. The Shadakine people fled back to their former home in the Sadi Desert, and Grey Star&emdash;the champion of the Shianti cause&emdash;was proclaimed <quote>Wizard Regent</quote> of the free peoples of the old empire, to oversee a time of rebirth and liberty. The only Shadakine who did not return to the Sadi Desert was the Lady Tanith. She and Grey Star were soon married, as many foretold they would, to form the founding line of a magiocracy destined to rule the new confederation of free states formed from the ashes of the old empire. For the Shianti themselves a higher destiny dawned. The Goddess Ishir came to them on the Isle of Lorn and took them up to the Plane of Light. Their reward was to dwell as immortals by her side and in her service in peace and serenity.</p>
      <p>The Wizard Grey Star saw them once before they departed and many fond and sad farewells were exchanged. To Grey Star was bequeathed the nature of true Shianti wisdom, the last of their ancient magical secrets which only a lifetime&apos;s study would unlock from the hundreds of dusty volumes, scrolls, and magical artifacts. The Moonstone was given into the care of the Shianti and taken with them into the Plane of Light, for still its power was too great to remain on Magnamund.</p>
-     <p>Grey Star then returned to his people. Sado of the Long Knife was made general of the army, King Samu had his lands in the Lissan Plain restored to him, and Urik the Wise of the Kundi peoples was summoned to act as advisor to the Wizard Regent and Lady Tanith the Wytch-Queen. Despite his newfound responsibilities and duties, Grey Star looked forward to a time of hope and happiness. In this far corner of Magnamund, at least for now, peace reigned.</p>
+     <p>Grey Star then returned to his people. Sado of the Long Knife was made general of the army, King Samu had his lands in the Lissan Plain restored to him, and Urik the Wise of the Kundi peoples was summoned to act as advisor to the Wizard Regent and Lady Tanith the Wytch-queen. Despite his newfound responsibilities and duties, Grey Star looked forward to a time of hope and happiness. In this far corner of Magnamund, at least for now, peace reigned.</p>
      <p>And so ends the chronicle of the first quest of the Wizard <strong>Grey Star</strong>.</p>
     </data>
    </section>
@@ -4761,7 +4786,7 @@ Heralding battle, to regain our hearts.</p>
      <section class="backmatter" id="errerr">
       <meta><title>Errata List</title></meta>
       
-      <data><p>(<a idref="title">Title Page</a>)<!--ERRTAG-RE-2248-ITEM--> Replaced <quote>THE WORLD OF LONE WOLF</quote> with <quote><cite>The World of Lone Wolf</cite></quote>.<!--/ERRTAG-RE-2248-ITEM--></p>
+      <data><p>(<a idref="title">Title Page</a>)<!--ERRTAG-RE-2248-ITEM--> Replaced <quote>THE WORLD OF LONE WOLF</quote> with <quote><cite>The World of Lone Wolf</cite></quote>.<!--/ERRTAG-RE-2248-ITEM--><!--ERRTAG-RE-2167-ITEM--> Replaced <quote>climax to your epic struggle</quote> with <quote>climax of your epic struggle</quote>.<!--/ERRTAG-RE-2167-ITEM--></p>
 
        <p>(<a idref="gamerulz">The Game Rules</a>) Replaced all occurrences of <quote>eg</quote> with <quote>e.g.</quote>.<!--ERRTAG-DE-17373-ITEM--> Deleted <quote> at the front of this book</quote>.<!--/ERRTAG-DE-17373-ITEM--><!--ERRTAG-DE-17447-ITEM--> Deleted <quote> If you run out of space, you can copy out the chart or have it photocopied.</quote>.<!--/ERRTAG-DE-17447-ITEM--><!--ERRTAG-DE-17924-ITEM--> Deleted <quote> on the last page of this book</quote>.<!--/ERRTAG-DE-17924-ITEM--></p>
        <p>(<a idref="powers">Magical Powers</a>) Replaced <quote>ie</quote> with <quote>i.e.</quote>, all occurrences of <quote>eg</quote> with <quote>e.g.</quote> and <quote>quarterstaff yet</quote> with <quote>quarterstaff, yet</quote>.<!--ERRTAG-RA-21665-ITEM--> Replaced all occurrences of <quote>lesser magicks</quote> with <quote>Lesser Magicks</quote>.<!--/ERRTAG-RA-21665-ITEM--><!--ERRTAG-RE-21787-ITEM--> Replaced <quote>magical powers</quote> with <quote>Magical Powers</quote>.<!--/ERRTAG-RE-21787-ITEM--><!--ERRTAG-RA-21860-ITEM--> Replaced all occurrences of <quote>higher magicks</quote> with <quote>Higher Magicks</quote>.<!--/ERRTAG-RA-21860-ITEM--><!--ERRTAG-RA-31313-ITEM--> Replaced all occurrences of <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RA-31313-ITEM--><!--ERRTAG-RE-33577-ITEM--> Replaced <quote>physiurgy</quote> with <quote>Physiurgy</quote>.<!--/ERRTAG-RE-33577-ITEM--><!--ERRTAG-RE-23142-ITEM--> Replaced <quote>This power allows</quote> with <quote>This Power allows</quote>.<!--/ERRTAG-RE-23142-ITEM--><!--ERRTAG-RA-23590-ITEM--> Replaced all occurrences of <quote>choose this power</quote> with <quote>choose this Power</quote>.<!--/ERRTAG-RA-23590-ITEM--><!--ERRTAG-RE-24234-ITEM--> Replaced <quote>power of Enchantment</quote> with <quote>Power of Enchantment</quote>.<!--/ERRTAG-RE-24234-ITEM--><!--ERRTAG-RE-25345-ITEM--> Replaced <quote>power of elemental magic</quote> with <quote>Power of elemental magic</quote>.<!--/ERRTAG-RE-25345-ITEM--><!--ERRTAG-RE-26427-ITEM--> Replaced <quote>power of Alchemy</quote> with <quote>Power of Alchemy</quote>.<!--/ERRTAG-RE-26427-ITEM--><!--ERRTAG-RE-26820-ITEM--> Replaced <quote>use of alchemy</quote> with <quote>use of Alchemy</quote>.<!--/ERRTAG-RE-26820-ITEM--><!--ERRTAG-RE-27087-ITEM--> Replaced <quote>power of Alchemy</quote> with <quote>Power of Alchemy</quote>.<!--/ERRTAG-RE-27087-ITEM--><!--ERRTAG-RE-27855-ITEM--> Replaced <quote>power of prophecy</quote> with <quote>Power of Prophecy</quote>.<!--/ERRTAG-RE-27855-ITEM--><!--ERRTAG-RA-28331-ITEM--> Replaced all occurrences of <quote>power of divination</quote> with <quote>Power of Prophecy</quote>.<!--/ERRTAG-RA-28331-ITEM--><!--ERRTAG-RE-29050-ITEM--> Replaced <quote>This power bestows</quote> with <quote>This Power bestows</quote>.<!--/ERRTAG-RE-29050-ITEM--><!--ERRTAG-RE-30231-ITEM--> Replaced <quote>this power permits</quote> with <quote>this Power permits</quote>.<!--/ERRTAG-RE-30231-ITEM--><!--ERRTAG-RE-32304-ITEM--> Replaced <quote>power of Thaumaturgy</quote> with <quote>Power of Thaumaturgy</quote>.<!--/ERRTAG-RE-32304-ITEM--><!--ERRTAG-RE-33410-ITEM--> Replaced <quote>Telergy is the power</quote> with <quote>Telergy is the Power</quote>.<!--/ERRTAG-RE-33410-ITEM--><!--ERRTAG-RE-33690-ITEM--> Replaced <quote>resist this power</quote> with <quote>resist this Power</quote>.<!--/ERRTAG-RE-33690-ITEM--><!--ERRTAG-RE-35886-ITEM--> Replaced <quote>power of Theurgy</quote> with <quote>Power of Theurgy</quote>.<!--/ERRTAG-RE-35886-ITEM--><!--ERRTAG-RE-36868-ITEM--> Replaced <quote>power of a visionary</quote> with <quote>Power of a Visionary</quote>.<!--/ERRTAG-RE-36868-ITEM--></p>
@@ -4773,8 +4798,8 @@ Heralding battle, to regain our hearts.</p>
        <p>(<a idref="sect6">6</a>)<!--ERRTAG-RE-64078-ITEM--> Replaced <quote>satety</quote> with <quote>safety</quote>.<!--/ERRTAG-RE-64078-ITEM--></p>
        <p>(<a idref="sect9">9</a>)<!--ERRTAG-RA-68217-ITEM--> Replaced all occurrences of <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RA-68217-ITEM--><!--ERRTAG-RE-68510-ITEM--> Replaced <quote>have versed</quote> with <quote>are versed</quote>.<!--/ERRTAG-RE-68510-ITEM--></p>
        <p>(<a idref="sect10">10</a>)<!--ERRTAG-RA-69440-ITEM--> Replaced all occurrences of <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RA-69440-ITEM--><!--ERRTAG-RE-69497-ITEM--> Replaced <quote>Theurgey</quote> with <quote>Theurgy</quote>.<!--/ERRTAG-RE-69497-ITEM--><!--ERRTAG-RE-70005-ITEM--> Replaced <quote>these powers</quote> with <quote>these Powers</quote>.<!--/ERRTAG-RE-70005-ITEM--></p>
-       <p>(<a idref="sect12">12</a>)<!--ERRTAG-RE-71597-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-71597-ITEM--><!--ERRTAG-RE-72083-ITEM--> Replaced <quote>Dimension door</quote> with <quote>Dimension Door</quote>.<!--/ERRTAG-RE-72083-ITEM--></p>
-       <p>(<a idref="sect15">15</a>)<!--ERRTAG-RE-74659-ITEM--> Replaced <quote>mid-day</quote> with <quote>midday</quote>.<!--/ERRTAG-RE-74659-ITEM--><!--ERRTAG-RE-75069-ITEM--> Replaced <quote>birdge</quote> with <quote>bridge</quote>.<!--/ERRTAG-RE-75069-ITEM--><!--ERRTAG-RA-75351-ITEM--> Replaced all occurrences of <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RA-75351-ITEM--></p>
+       <p>(<a idref="sect12">12</a>)<!--ERRTAG-RE-71597-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-71597-ITEM--><!--ERRTAG-RE-72083-ITEM--> Replaced <quote>Dimension door</quote> with <quote>Dimension Door</quote>.<!--/ERRTAG-RE-72083-ITEM--><!--ERRTAG-RE-74444-ITEM--> Replaced <quote>Thaumaturgy, deduct</quote> with <quote>Thaumaturgy, you may deduct</quote>.<!--/ERRTAG-RE-74444-ITEM--><!--ERRTAG-RE-74992-ITEM--> Replaced <quote>Moonstone, deduct</quote> with <quote>Moonstone, you may deduct</quote>.<!--/ERRTAG-RE-74992-ITEM--></p>
+       <p>(<a idref="sect15">15</a>)<!--ERRTAG-RE-74659-ITEM--> Replaced <quote>mid-day</quote> with <quote>midday</quote>.<!--/ERRTAG-RE-74659-ITEM--><!--ERRTAG-RE-75069-ITEM--> Replaced <quote>birdge</quote> with <quote>bridge</quote>.<!--/ERRTAG-RE-75069-ITEM--><!--ERRTAG-RA-75351-ITEM--> Replaced all occurrences of <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RA-75351-ITEM--><!--ERRTAG-RE-78072-ITEM--> Replaced <quote>wish to ask</quote> with <quote>wish to use the Power of Theurgy and ask</quote>.<!--/ERRTAG-RE-78072-ITEM--></p>
        <p>(<a idref="sect18">18</a>)<!--ERRTAG-RE-78389-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-78389-ITEM--><!--ERRTAG-RE-78630-ITEM--> Replaced <quote>these powers</quote> with <quote>these Powers</quote>.<!--/ERRTAG-RE-78630-ITEM--></p>
        <p>(<a idref="sect19">19</a>)<!--ERRTAG-RE-79497-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-79497-ITEM--><!--ERRTAG-RE-79718-ITEM--> Replaced <quote>these powers</quote> with <quote>these Powers</quote>.<!--/ERRTAG-RE-79718-ITEM--></p>
        <p>(<a idref="sect20">20</a>)<!--ERRTAG-RE-80607-ITEM--> Replaced <quote>life-less</quote> with <quote>lifeless</quote>.<!--/ERRTAG-RE-80607-ITEM--></p>
@@ -4783,29 +4808,33 @@ Heralding battle, to regain our hearts.</p>
        <p>(<a idref="sect25">25</a>)<!--ERRTAG-RE-88666-ITEM--> Replaced <quote>1 coil of Rope</quote> with <quote>Coil of Rope</quote>.<!--/ERRTAG-RE-88666-ITEM--><!--ERRTAG-RE-88761-ITEM--> Replaced <quote>1 Sword and Sheath</quote> with <quote>Sword and Sheath</quote>.<!--/ERRTAG-RE-88761-ITEM--><!--ERRTAG-RE-88850-ITEM--> Replaced <quote>1 Spear</quote> with <quote>Spear</quote>.<!--/ERRTAG-RE-88850-ITEM--><!--ERRTAG-RE-88949-ITEM--> Replaced <quote>1 Dagger and Sheath</quote> with <quote>Dagger and Sheath</quote>.<!--/ERRTAG-RE-88949-ITEM--><!--ERRTAG-RE-89045-ITEM--> Replaced <quote>1 Water Bottle</quote> with <quote>Water Bottle</quote>.<!--/ERRTAG-RE-89045-ITEM--><!--ERRTAG-RE-89223-ITEM--> Replaced <quote>1 Tinder box</quote> with <quote>Tinder box</quote>.<!--/ERRTAG-RE-89223-ITEM--></p>
        <p>(<a idref="sect29">29</a>)<!--ERRTAG-RE-93131-ITEM--> Replaced <quote>1 Backpack</quote> with <quote>Backpack</quote>.<!--/ERRTAG-RE-93131-ITEM--><!--ERRTAG-RE-93206-ITEM--> Replaced <quote>1 Coil of Rope</quote> with <quote>Coil of Rope</quote>.<!--/ERRTAG-RE-93206-ITEM--><!--ERRTAG-RE-93297-ITEM--> Replaced <quote>1 Water Bottle</quote> with <quote>Water Bottle</quote>.<!--/ERRTAG-RE-93297-ITEM--><!--ERRTAG-RE-93434-ITEM--> Replaced <quote>1 Tinderbox</quote> with <quote>Tinderbox</quote>.<!--/ERRTAG-RE-93434-ITEM--><!--ERRTAG-RE-93518-ITEM--> Replaced <quote>1 Sword</quote> with <quote>Sword</quote>.<!--/ERRTAG-RE-93518-ITEM--><!--ERRTAG-RE-93616-ITEM--> Replaced <quote>1 Masbat&eacute; Battle Horn</quote> with <quote>Masbat&eacute; Battle Horn</quote>.<!--/ERRTAG-RE-93616-ITEM--></p>
        <p>(<a idref="sect34">34</a>)<!--ERRTAG-RE-97332-ITEM--> Replaced <quote>you. they</quote> with <quote>you. They</quote>.<!--/ERRTAG-RE-97332-ITEM--><!--ERRTAG-RE-97489-ITEM--> Replaced <quote>a pestle and mortar</quote> with <quote>a Pestle and Mortar</quote>.<!--/ERRTAG-RE-97489-ITEM--><!--ERRTAG-RE-97562-ITEM--> Replaced <quote>empty vial</quote> with <quote>empty Vial</quote>.<!--/ERRTAG-RE-97562-ITEM--><!--ERRTAG-RA-97811-ITEM--> Replaced all occurrences of <quote>saltpetre</quote> with <quote>Saltpetre</quote>.<!--/ERRTAG-RA-97811-ITEM--><!--ERRTAG-RA-97899-ITEM--> Replaced all occurrences of <quote>sulphur</quote> with <quote>Sulphur</quote>.<!--/ERRTAG-RA-97899-ITEM--><!--ERRTAG-RE-98139-ITEM--> Replaced <quote>The empty vials</quote> with <quote>The empty Vials</quote>.<!--/ERRTAG-RE-98139-ITEM--><!--ERRTAG-RE-98396-ITEM--> Replaced <quote>Zakutsk flower</quote> with <quote>Zakutsk Flower</quote>.<!--/ERRTAG-RE-98396-ITEM--><!--ERRTAG-RE-98460-ITEM--> Replaced <quote>Demeril root</quote> with <quote>Demeril Root</quote>.<!--/ERRTAG-RE-98460-ITEM--><!--ERRTAG-RE-98589-ITEM--> Replaced <quote>Pestle and Mortar are Backpack Items</quote> with <quote>Pestle and Mortar and the Tinderbox are Backpack Items,</quote>.<!--/ERRTAG-RE-98589-ITEM--><!--ERRTAG-RE-98667-ITEM--> Replaced <quote>the vials</quote> with <quote>the Vials</quote>.<!--/ERRTAG-RE-98667-ITEM--><!--ERRTAG-RE-97461-ITEM--> Replaced <quote>wil</quote> with <quote>will</quote>.<!--/ERRTAG-RE-97461-ITEM--></p>
+<p>(<a idref="sect36">36</a>)<!--ERRTAG-RE-103788-ITEM--> Replaced <quote>neither you nor Tanith have</quote> with <quote>neither you nor Tanith has</quote>.<!--/ERRTAG-RE-103788-ITEM--></p>
        <p>(<a idref="sect38">38</a>) Replaced <quote>feet away. The home</quote> with <quote>feet away. &lsquot;The home</quote>.<!--ERRTAG-RE-101957-ITEM--> Replaced <quote>persectuion</quote> with <quote>persecution</quote>.<!--/ERRTAG-RE-101957-ITEM--><!--ERRTAG-RE-102291-ITEM--> Replaced <quote>dematerilize</quote> with <quote>dematerialize</quote>.<!--/ERRTAG-RE-102291-ITEM--><!--ERRTAG-RE-104197-ITEM--> Replaced <quote>warior</quote> with <quote>warrior</quote>.<!--/ERRTAG-RE-104197-ITEM--><!--ERRTAG-RE-107112-ITEM--> Replaced <quote>mightly</quote> with <quote>mighty</quote>.<!--/ERRTAG-RE-107112-ITEM--></p>
        <p>(<a idref="sect42">42</a>)<!--ERRTAG-RE-111466-ITEM--> Replaced <quote>ceatures</quote> with <quote>creatures</quote>.<!--/ERRTAG-RE-111466-ITEM--><!--ERRTAG-RE-112181-ITEM--> Replaced <quote>despatching</quote> with <quote>dispatching</quote>.<!--/ERRTAG-RE-112181-ITEM--></p>
        <p>(<a idref="sect43">43</a>)<!--ERRTAG-RE-113025-ITEM--> Replaced <quote>surrrounds</quote> with <quote>surrounds</quote>.<!--/ERRTAG-RE-113025-ITEM--><!--ERRTAG-RE-114669-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-114669-ITEM--><!--ERRTAG-RE-114759-ITEM--> Replaced <quote>this power</quote> with <quote>this Power</quote>.<!--/ERRTAG-RE-114759-ITEM--><!--ERRTAG-RE-114926-ITEM--> Replaced <quote>these powers</quote> with <quote>these Powers</quote>.<!--/ERRTAG-RE-114926-ITEM--></p>
        <p>(<a idref="sect47">47</a>)<!--ERRTAG-RE-117359-ITEM--> Replaced <quote>half-way</quote> with <quote>halfway</quote>.<!--/ERRTAG-RE-117359-ITEM--><!--ERRTAG-RE-118216-ITEM--> Replaced <quote>Agarash&apos;s</quote> with <quote>Agarashi&apos;s</quote>.<!--/ERRTAG-RE-118216-ITEM--></p>
        <p>(<a idref="sect50">50</a>)<!--ERRTAG-RE-119885-ITEM--> Replaced <quote>Intinctively</quote> with <quote>Instinctively</quote>.<!--/ERRTAG-RE-119885-ITEM--><!--ERRTAG-RE-120749-ITEM--> Replaced <quote>this power</quote> with <quote>this Power</quote>.<!--/ERRTAG-RE-120749-ITEM--></p>
        <p>(<a idref="sect58">58</a>)<!--ERRTAG-RE-125607-ITEM--> Replaced <quote>your power</quote> with <quote>your Power</quote>.<!--/ERRTAG-RE-125607-ITEM--><!--ERRTAG-RE-126293-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-126293-ITEM--></p>
+       <p>(<a idref="sect60">60</a>)<!--ERRTAG-RE-131835-ITEM--> Replaced <quote>Neither you nor Tanith have</quote> with <quote>Neither you nor Tanith has</quote>.<!--/ERRTAG-RE-131835-ITEM--></p>
        <p>(<a idref="sect67">67</a>)<!--ERRTAG-RE-133240-ITEM--> Replaced <quote>stone. and</quote> with <quote>stone, and</quote>.<!--/ERRTAG-RE-133240-ITEM--><!--ERRTAG-RE-133533-ITEM--> Replaced <quote>wierd</quote> with <quote>weird</quote>.<!--/ERRTAG-RE-133533-ITEM--><!--ERRTAG-RE-133591-ITEM--> Replaced <quote>toadbeasts</quote> with <quote>toad beasts</quote>.<!--/ERRTAG-RE-133591-ITEM--><!--ERRTAG-RE-134307-ITEM--> Replaced <quote>this power</quote> with <quote>this Power</quote>.<!--/ERRTAG-RE-134307-ITEM--></p>
        <p>(<a idref="sect68">68</a>)<!--ERRTAG-RE-135531-ITEM--> Replaced <quote>jubliant</quote> with <quote>jubilant</quote>.<!--/ERRTAG-RE-135531-ITEM--></p>
        <p>(<a idref="sect69">69</a>)<!--ERRTAG-RE-136294-ITEM--> Replaced <quote>incandesence</quote> with <quote>incandescence</quote>.<!--/ERRTAG-RE-136294-ITEM--></p>
        <p>(<a idref="sect79">79</a>)<!--ERRTAG-RE-145050-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-145050-ITEM--></p>
        <p>(<a idref="sect82">82</a>)<!--ERRTAG-RE-146949-ITEM--> Replaced <quote>reptillian</quote> with <quote>reptilian</quote>.<!--/ERRTAG-RE-146949-ITEM--></p>
-       <p>(<a idref="sect86">86</a>)<!--ERRTAG-RA-150455-ITEM--> Replaced all occurrences of <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RA-150455-ITEM--></p>
+       <p>(<a idref="sect86">86</a>)<!--ERRTAG-RA-150455-ITEM--> Replaced all occurrences of <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RA-150455-ITEM--><!--ERRTAG-AD-155987-ITEM--> Added a fourth choice <quote>If you do not possess any of the above Powers, you must attack the bridge with your Staff; <!--link-text-->turn to 175<!--/link-text-->.</quote> (cf. <a idref="sect280">Section 280</a>).<!--/ERRTAG-AD-155987-ITEM--></p>
        <p>(<a idref="sect91">91</a>)<!--ERRTAG-RE-154803-ITEM--> Replaced <quote>strenghtening</quote> with <quote>strenghening</quote>.<!--/ERRTAG-RE-154803-ITEM--><!--ERRTAG-RE-154907-ITEM--> Replaced <quote>waves of sorcery</quote> with <quote>waves of Sorcery</quote>.<!--/ERRTAG-RE-154907-ITEM--><!--ERRTAG-RE-155226-ITEM--> Replaced <quote>it&apos;s clawed hand</quote> with <quote>its clawed hand</quote>.<!--/ERRTAG-RE-155226-ITEM--></p>
        <p>(<a idref="sect93">93</a>)<!--ERRTAG-RE-158247-ITEM--> Replaced <quote>materialzed</quote> with <quote>materialized</quote>.<!--/ERRTAG-RE-158247-ITEM--></p>
        <p>(<a idref="sect97">97</a>)<!--ERRTAG-RE-161378-ITEM--> Replaced <quote>semi-circle</quote> with <quote>semicircle</quote>.<!--/ERRTAG-RE-161378-ITEM--></p>
        <p>(<a idref="sect99">99</a>)<!--ERRTAG-RE-163353-ITEM--> Replaced <quote>fast flowing</quote> with <quote>fast-flowing</quote>.<!--/ERRTAG-RE-163353-ITEM--></p>
        <p>(<a idref="sect104">104</a>)<!--ERRTAG-RE-167746-ITEM--> Replaced <quote>crowd of demons are</quote> with <quote>crowd of demons is</quote>.<!--/ERRTAG-RE-167746-ITEM--></p>
+       <p>(<a idref="sect108">108</a>)<!--ERRTAG-RE-177379-ITEM--> Replaced <quote>enchantment</quote> with <quote>Enchantment</quote>.<!--/ERRTAG-RE-177379-ITEM--></p>
        <p>(<a idref="sect113">113</a>)<!--ERRTAG-RE-176416-ITEM--> Replaced <quote>magical Power</quote> with <quote>Magical Power</quote>.<!--/ERRTAG-RE-176416-ITEM--></p>
        <p>(<a idref="sect115">115</a>)<!--ERRTAG-RA-178015-ITEM--> Replaced all occurrences of <quote>powers</quote> with <quote>Powers</quote>.<!--/ERRTAG-RA-178015-ITEM--><!--ERRTAG-RE-178481-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-178481-ITEM--></p>
        <p>(<a idref="sect125">125</a>)<!--ERRTAG-RE-186552-ITEM--> Replaced <quote>life forces</quote> with <quote>life-forces</quote>.<!--/ERRTAG-RE-186552-ITEM--></p>
        <p>(<a idref="sect129">129</a>)<!--ERRTAG-RE-189663-ITEM--> Replaced <quote>life force</quote> with <quote>life-force</quote>.<!--/ERRTAG-RE-189663-ITEM--></p>
        <p>(<a idref="sect135">135</a>)<!--ERRTAG-RE-194076-ITEM--> Replaced <quote>balustraded gallerys</quote> with <quote>balustraded galleries</quote>.<!--/ERRTAG-RE-194076-ITEM--></p>
        <p>(<a idref="sect137">137</a>)<!--ERRTAG-RE-196102-ITEM--> Replaced <quote>group of demons are</quote> with <quote>group of demons is</quote>.<!--/ERRTAG-RE-196102-ITEM--></p>
+       <p>(<a idref="sect139">139</a>)<!--ERRTAG-RE-204438-ITEM--> Replaced <quote>The horde stop</quote> with <quote>The horde stops</quote>.<!--/ERRTAG-RE-204438-ITEM--></p>
        <p>(<a idref="sect141">141</a>)<!--ERRTAG-RE-198682-ITEM--> Replaced <quote>large, reptilian</quote> with <quote>large reptilian</quote>.<!--/ERRTAG-RE-198682-ITEM--></p>
        <p>(<a idref="sect142">142</a>)<!--ERRTAG-RE-199774-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-199774-ITEM--><!--ERRTAG-RE-200236-ITEM--> Replaced <quote>these powers</quote> with <quote>these Powers</quote>.<!--/ERRTAG-RE-200236-ITEM--></p>
        <p>(<a idref="sect147">147</a>)<!--ERRTAG-RE-203271-ITEM--> Replaced <quote>half-way</quote> with <quote>halfway</quote>.<!--/ERRTAG-RE-203271-ITEM--><!--ERRTAG-RE-203423-ITEM--> Replaced <quote>small, black</quote> with <quote>small black</quote>.<!--/ERRTAG-RE-203423-ITEM--></p>
@@ -4830,6 +4859,7 @@ Heralding battle, to regain our hearts.</p>
        <p>(<a idref="sect204">204</a>)<!--ERRTAG-RE-259357-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-259357-ITEM--></p>
        <p>(<a idref="sect208">208</a>)<!--ERRTAG-RE-262423-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-262423-ITEM--><!--ERRTAG-RE-262615-ITEM--> Replaced <quote>these powers</quote> with <quote>these Powers</quote>.<!--/ERRTAG-RE-262615-ITEM--></p>
        <p>(<a idref="sect213">213</a>)<!--ERRTAG-RE-266624-ITEM--> Replaced <quote>look-out</quote> with <quote>lookout</quote>.<!--/ERRTAG-RE-266624-ITEM--></p>
+       <p>(<a idref="sect216">216</a>)<!--ERRTAG-RE-277730-ITEM--> Replaced <quote>pupiless</quote> with <quote>pupilless</quote>.<!--/ERRTAG-RE-277730-ITEM--></p>
        <p>(<a idref="sect217">217</a>)<!--ERRTAG-RE-271241-ITEM--> Replaced <quote>power of Telergy</quote> with <quote>Power of Telergy</quote>.<!--/ERRTAG-RE-271241-ITEM--><!--ERRTAG-RE-271307-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-271307-ITEM--></p>
        <p>(<a idref="sect218">218</a>)<!--ERRTAG-RE-272303-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-272303-ITEM--></p>
        <p>(<a idref="sect220">220</a>)<!--ERRTAG-RE-273543-ITEM--> Replaced <quote>enery</quote> with <quote>energy</quote>.<!--/ERRTAG-RE-273543-ITEM--></p>
@@ -4847,7 +4877,7 @@ Heralding battle, to regain our hearts.</p>
        <p>(<a idref="sect287">287</a>)<!--ERRTAG-RE-340013-ITEM--> Replaced <quote>realise</quote> with <quote>realize</quote>.<!--/ERRTAG-RE-340013-ITEM--></p>
        <p>(<a idref="sect289">289</a>)<!--ERRTAG-RE-342660-ITEM--> Replaced <quote>this power</quote> with <quote>this Power</quote>.<!--/ERRTAG-RE-342660-ITEM--></p>
        <p>(<a idref="sect291">291</a>)<!--ERRTAG-RE-343601-ITEM--> Replaced <quote>shield of sorcery</quote> with <quote><spell>Shield of Sorcery</spell></quote>.<!--/ERRTAG-RE-343601-ITEM--></p>
-       <p>(<a idref="sect293">293</a>)<!--ERRTAG-RE-344687-ITEM--> Replaced <quote>battle cry</quote> with <quote>battle-cry</quote>.<!--/ERRTAG-RE-344687-ITEM--></p>
+       <p>(<a idref="sect293">293</a>)<!--ERRTAG-RE-344687-ITEM--> Replaced <quote>battle cry</quote> with <quote>battle-cry</quote>.<!--/ERRTAG-RE-344687-ITEM--><!--ERRTAG-RE-354727-ITEM--> Replaced <quote>the horde begin</quote> with <quote>the horde begins</quote>.<!--/ERRTAG-RE-354727-ITEM--></p>
        <p>(<a idref="sect294">294</a>)<!--ERRTAG-RE-345775-ITEM--> Replaced <quote>backpack</quote> with <quote>Backpack</quote>.<!--/ERRTAG-RE-345775-ITEM--></p>
        <p>(<a idref="sect298">298</a>)<!--ERRTAG-RE-353793-ITEM--> Replaced <quote>magical powers</quote> with <quote>Magical Powers</quote>.<!--/ERRTAG-RE-353793-ITEM--></p>
        <p>(<a idref="sect299">299</a>)<!--ERRTAG-RE-355155-ITEM--> Replaced <quote>feet lies</quote> with <quote>feet lie</quote>.<!--/ERRTAG-RE-355155-ITEM--></p>
@@ -4868,7 +4898,8 @@ Heralding battle, to regain our hearts.</p>
        <p>(<a idref="sect343">343</a>)<!--ERRTAG-RE-399152-ITEM--> Replaced <quote>superstitous</quote> with <quote>superstitious</quote>.<!--/ERRTAG-RE-399152-ITEM--></p>
        <p>(<a idref="sect347">347</a>)<!--ERRTAG-RE-401785-ITEM--> Replaced <quote>beleagured</quote> with <quote>beleaguered</quote>.<!--/ERRTAG-RE-401785-ITEM--><!--ERRTAG-RE-403110-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-403110-ITEM--></p>
        <p>(<a idref="sect352">352</a>)<!--ERRTAG-RE-409496-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-409496-ITEM--></p>
-       <p>(<a idref="sect353">353</a>)<!--ERRTAG-RA-411499-ITEM--> Replaced all occurrences of <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RA-411499-ITEM--></p>
+       <p>(<a idref="sect353">353</a>)<!--ERRTAG-RA-411499-ITEM--> Replaced all occurrences of <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RA-411499-ITEM--><!--ERRTAG-AD-423745-ITEM--> Added a fourth choice <quote>If you do not possess any of the above Powers, you must attack the bridge with your Staff; <!--link-text-->turn to 175<!--/link-text-->.</quote> (cf. <a idref="sect280">Section 280</a>).<!--/ERRTAG-AD-423745-ITEM--></p>
+       <p>(<a idref="sect360">360</a>) Added a link to the <cite>Passing of the Shianti</cite> epilogue.</p>
        <p>(<a idref="crsumary">Combat Rules Summary</a>) Added a fourth step <quote>Pick a number from the <a idref="random">Random Number Table</a>.</quote> in the first step list.<!--ERRTAG-RE-422772-ITEM--> Replaced <quote>Turn to <!--a idref="crtable"-->Combat Results Table<!--/a--></quote> with <quote>Turn to the <!--a idref="crtable"-->Combat Results Table<!--/a--></quote>.<!--/ERRTAG-RE-422772-ITEM--><!--ERRTAG-RE-422906-ITEM--> Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>.<!--/ERRTAG-RE-422906-ITEM--></p>
       </data>
      </section>
@@ -4879,10 +4910,18 @@ Heralding battle, to regain our hearts.</p>
    <section class="backmatter" id="footnotz">
     <meta><title>Footnotes</title></meta>
     <data>
-     <p>(<a idref="gamerulz">The Game Rules</a>) This section of the rules implies that you must re-pick your <typ class="attribute">COMBAT SKILL</typ> even though you may have already completed a previous adventure. This is without precedent in other books and therefore appears to be a mistake. In order to preserve rule consistency among the books, you may choose to retain your <typ class="attribute">COMBAT SKILL</typ> score.</p>
+     <p>(<a idref="gamerulz">The Game Rules</a>) It is implied that you must pick a new <typ class="attribute">COMBAT SKILL</typ> from the <a idref="random">Random Number Table</a> even if have already completed previous one or more <cite>Grey Star</cite> adventures. This conflicts with the rules for the <cite>Lone Wolf</cite> books where you carry over your score from a previous successfully completed adventure. For the sake of consistency, players may wish to carry over their existing score from the last <cite>Grey Star</cite> book they completed.</p>
+     <p>(<a idref="gamerulz">The Game Rules</a>) The original intent of the author was most likely that the player should add 50 to their final <typ class="attribute">WILLPOWER</typ> score from the end of their last successfully completed <cite>Grey Star</cite> adventure.</p>
+     <p>(<a idref="gamerulz">The Game Rules</a>) It is possible for your <typ class="attribute">WILLPOWER</typ> to fall below zero. For example, if you are the victim of an attack that drains your <typ class="attribute">WILLPOWER</typ>, your score may be forced below zero. If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to cast spells or use the magical properties of your Wizard&apos;s Staff until your score is again above zero. You can still use your Wizard&apos;s Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>.</p>
+     <p>(<a idref="gamerulz">The Game Rules</a>) The original intent of the author was most likely that the player should add 30 to their final <typ class="attribute">ENDURANCE</typ> score from the end of their last successfully completed <cite>Grey Star</cite> adventure. In the <cite>Lone Wolf</cite> series, it is standard practice to restore one&apos;s <typ class="attribute">ENDURANCE</typ> points to their original total when carrying them over from one adventure to the next, but the power of the Moonstone seems to change those rules in this case.</p>
      <p>(<a idref="powers">Magical Powers</a>) The wording of this section of the rules seems to indicate&emdash;if read literally&emdash;that you may choose your set of Lesser Magicks again if you have completed a previous adventure. This is without precedent in other books. In order to preserve consistency with other books, you should not choose your Lesser Magicks again. If you have currently mastered five Lesser Magicks, you may choose one additional Lesser Magick from the list. If you have already mastered six Lesser Magicks, you keep these. If you choose Alchemy as a new Lesser Magick, or you have not mastered the Lesser Magick of Alchemy but you have selected the Higher Magick of Theurgy, you also receive a Herb Pouch with contents, as detailed in the Equipment section.</p>
+     <p>(<a idref="powers">Magical Powers</a>) If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to use the magical properties of your Wizard's Staff until your score is again above zero. You can still use your Wizard's Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>. </p>
      <p>(<a idref="equipmnt">Equipment</a>) If you have completed a previous adventure, you keep all equipment you had at the end of that adventure. You do not receive any new equipment, unless you have just selected Alchemy as your sixth Lesser Magick, or if you have not mastered the Lesser Magick of Alchemy but you have selected the Higher Magick of Theurgy, in which case you receive a Herb Pouch with contents as indicated in this section.</p>
      <p>(<a idref="equipmnt">Equipment</a>) If you have mastered the Lesser Magick of Alchemy or the Higher Magick of Theurgy and therefore have a Herb Pouch, you may choose to keep potions, vials, or ingredients in either the Herb Pouch or your Backpack. All other Backpack Items must be kept in your Backpack.</p>
+     <p>(<a idref="sect25">Section 25</a>) If you wish to take the Sheath, record it as a Special Item on your <a idref="action">Action Chart</a>.</p>
+     <p>(<a idref="sect25">Section 25</a>) If you wish to take the Sheath, record it as a Special Item on your <a idref="action">Action Chart</a>.</p>
+     <p>(<a idref="sect47">Section 47</a>) Although the term <quote>Agarashi</quote> is not used anywhere else in the <cite>Grey Star</cite> books, it is used in other books as the collective term for the monstrous servants of Agarash the Damned.</p>
+     <p>(<a idref="sect328">Section 328</a>) If you possess a Temeris Potion you can teleport without using any <typ class="attribute">WILLPOWER</typ> points. If you are versed in the Higher Magick of Thaumaturgy you can teleport by deducting 2 <typ class="attribute">WILLPOWER</typ> points from your total. To use the Dimension Door of the Moonstone to teleport, deduct 4 <typ class="attribute">WILLPOWER</typ> points. (Cf. <a idref="sect12">Section 12</a>.)</p>
     </data>
    </section>
 
@@ -4923,6 +4962,7 @@ Heralding battle, to regain our hearts.</p>
       </data>
      </section>
 
+<!-- WOLM: removed until we actually have any title illustrations there
      <section class="backmatter" id="secill">
       <meta><title>Secondary Illustrations</title></meta>
 
@@ -4932,6 +4972,7 @@ Heralding battle, to regain our hearts.</p>
        </ul>
       </data>
      </section>
+-->
 
     </data>
    </section>
@@ -4942,3 +4983,20 @@ Heralding battle, to regain our hearts.</p>
  </section>
 
 </gamebook>
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: xml
+sgml-omittag:nil
+sgml-shorttag:nil
+sgml-namecase-general:nil
+sgml-general-insert-case:lower
+sgml-minimize-attributes:nil
+sgml-always-quote-attributes:t
+sgml-indent-step:1
+sgml-indent-data:nil
+sgml-parent-document:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->
