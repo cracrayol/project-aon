@@ -2,7 +2,7 @@
     <meta><title>Project Aon License</title></meta>
 
     <data>
-     <p>2 February 2005</p>
+     <p>5 February 2005</p>
 
      <section class="backmatter" id="lic-pre">
       <meta><title>0. Preamble</title></meta>
@@ -32,7 +32,7 @@
         <meta><title>1.1</title></meta>
 
         <data>
-         <p><quote>Authors</quote> shall hereafter refer to Joe Dever and Ian Page, copyright holders for the literary works covered by this license. Where either Joe Dever or Ian Page are mentioned singly, they will be referred to by name.</p>
+         <p><quote>Authors</quote> shall hereafter refer to Joe Dever, Ian Page, and Gary Chalk, copyright holders for the literary works covered by this license. Where Joe Dever, Ian Page, or Gary Chalk is mentioned singly, they will be referred to by name.</p>
         </data>
        </section>
 
@@ -40,7 +40,7 @@
         <meta><title>1.2</title></meta>
 
         <data>
-         <p><quote>Illustrator</quote> shall hereafter refer to Rob Adams, copyright holder of portions of <cite>The Magnamund Companion</cite>; Paul Bonner, holder of the copyrights for the illustrations of the World of Lone Wolf books; Gary Chalk, holder of the copyrights for the illustrations of Lone Wolf books one through eight counted inclusively; Melvyn Grant, holder of the copyrights for the illustrations of <cite>Freeway Warrior 1: Highway Holocaust</cite>; Peter Lyon, copyright holder of portions of <cite>The Magnamund Companion</cite>; Graham Round, copyright holder of portions of <cite>The Magnamund Companion</cite>; and Brian Williams, holder of the copyrights for the illustrations of Lone Wolf books nine through twenty-eight counted inclusively with the exception of the illustrations for book twenty-one, <cite>The Voyage of the Moonstone</cite> and holder of the copyrights for the illustrations of books two through four of the Freeway Warrior series. Where either Paul Bonner, Gary Chalk, Melvyn Grant, Pete Lyon, Graham Round, or Brian Williams are mentioned singly, they will be referred to by name.</p>
+         <p><quote>Illustrator</quote> shall hereafter refer to Rob Adams, copyright holder of portions of <cite>The Magnamund Companion</cite>; Paul Bonner, holder of the copyrights for the illustrations of the World of Lone Wolf books; Gary Chalk, holder of the copyrights for the illustrations of Lone Wolf books one through eight counted inclusively, holder of the copyrights of portions of <cite>The Magnamund Companion</cite>, and holder of the copyrights for <cite>The Lone Wolf Poster Painting Book</cite>; Melvyn Grant, holder of the copyrights for the illustrations of <cite>Freeway Warrior 1: Highway Holocaust</cite>; Peter Lyon, copyright holder of portions of <cite>The Magnamund Companion</cite>; Graham Round, copyright holder of portions of <cite>The Magnamund Companion</cite>; and Brian Williams, holder of the copyrights for the illustrations of Lone Wolf books nine through twenty-eight counted inclusively with the exception of the illustrations for book twenty-one, <cite>The Voyage of the Moonstone</cite> and holder of the copyrights for the illustrations of books two through four, counted inclusively, of the Freeway Warrior series. Where Paul Bonner, Gary Chalk, Melvyn Grant, Peter Lyon, Graham Round, or Brian Williams is mentioned singly, they will be referred to by name.</p>
         </data>
        </section>
 
@@ -48,7 +48,7 @@
         <meta><title>1.3</title></meta>
 
         <data>
-         <p><quote>Internet</quote> shall hereafter refer to any means of transferring information electronically between two or more <quote>Licensees</quote>. (the term <quote>Licensee</quote> is defined in Section 1.5 of the License)</p>
+         <p><quote>Internet</quote> shall hereafter refer to any means of transferring information electronically between two or more <quote>Licensees</quote>. (The term <quote>Licensee</quote> is defined in Section 1.5 of the License)</p>
         </data>
        </section>
 
@@ -122,6 +122,14 @@
           <li><cite>The Kingdoms of Terror</cite>; Illustrations copyright 1985 Joe Dever and Gary Chalk.</li>
           <li><cite>Castle Death</cite>; Illustrations copyright 1986 Joe Dever and Gary Chalk.</li>
           <li><cite>The Jungle of Horrors</cite>; Illustrations copyright 1987 Joe Dever and Gary Chalk.</li>
+          <li><cite>The Magnamund Companion</cite>; Some illustrations copyright 1986 Gary Chalk.</li>
+          <li><cite>The Lone Wolf Poster Painting Book</cite>; Copyright 1986 Gary Chalk.</li>
+         </ul>
+
+         <p>The text written by Gary Chalk for the following book is being offered under the terms of this License:</p>
+
+         <ul>
+          <li><cite>The Lone Wolf Poster Painting Book</cite>; Copyright 1986 Gary Chalk.</li>
          </ul>
 
          <p>The illustrations created by Melvyn Grant for the following book are part of the illustrations being offered under the terms of this License:</p>
@@ -171,7 +179,7 @@
 
          <p>The works distributed under the collective title <cite>Lone Wolf Club Newsletters</cite>&emdash;which are composed of, in part, the above named works&emdash;will also be distributed under the terms of this License.</p>
 
-         <p><quote>Internet Editions</quote> shall not refer to any other works by the Authors nor any other illustrations by the Illustrators unless the Authors or Illustrators amend this License. <quote>Internet Editions</quote> shall refer solely to the text and illustrations of the above works when made available through the Internet.</p>
+         <p><quote>Internet Editions</quote> shall not refer to any other works by the Authors, nor any other illustrations by the Illustrators unless the Authors or Illustrators amend this License. <quote>Internet Editions</quote> shall refer solely to the text and illustrations of the above works when made available through the Internet.</p>
         </data>
        </section>
 
@@ -220,7 +228,7 @@
 
         <data>
          <p>The Authors and Illustrators grant you the right to receive a copy or copies of the Internet Editions from the Distribution Point at no charge provided that you agree to all of the terms and obligations of this License. If you do not agree to all of the terms and obligations of this License, you are not granted any rights by this License.</p>
-         <p>You agree to be bound by the terms and obligations of this License by the act of receiving or viewing a copy any portion of the Internet Editions even though you have not signed a written document. Indeed you have no right to receive or view a copy or copies without first accepting this License as legally valid and binding and agreeing to the terms and obligations of this License.</p>
+         <p>You agree to be bound by the terms and obligations of this License by the act of receiving or viewing a copy of any portion of the Internet Editions even though you have not signed a written document. Indeed, you have no right to receive or view a copy or copies without first accepting this License as legally valid and binding and agreeing to the terms and obligations of this License.</p>
         </data>
        </section>
 
@@ -247,7 +255,7 @@
         <meta><title>2.4</title></meta>
 
         <data>
-         <p>If a person is under the legal age to be able to enter into a contractual relationship as defined by the laws of the area in which that person resides, they may have a parent or legal guardian agree to be bound by the terms and obligations of this License. On condition of entering agreeing to be bound by the terms of the License, that same parent or legal guardian may thereafter give a copy or copies of the Internet Editions to that child. That parent or legal guardian is thereafter legally responsible to ensure that that child behaves in accordance with all of the terms and obligations of this License.</p>
+         <p>If a person is under the legal age to be able to enter into a contractual relationship as defined by the laws of the area in which that person resides, they may have a parent or legal guardian agree to be bound by the terms and obligations of this License. On condition of agreeing to be bound by the terms of the License, that same parent or legal guardian may thereafter give a copy or copies of the Internet Editions to that child. That parent or legal guardian is thereafter legally responsible to ensure that that child behaves in accordance with all of the terms and obligations of this License.</p>
          <p>The authority of a parent or legal guardian to distribute the Internet Editions does not extend to the distribution of the Internet Editions to any other person or persons except his or her child or legal dependent.</p>
         </data>
        </section>
