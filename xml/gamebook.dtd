@@ -1,0 +1,1255 @@
+<!-- ============================================================= -->
+<!--             Gamebook Document Type Definition v0.10           -->
+<!-- ============================================================= -->
+<!--
+
+This DTD was designed around XML 1.0.
+
+This gamebook DTD is aimed primarily at the books under development by 
+Project Aon (http://www.projectaon.org/). Future versions may be of 
+more general utility.
+
+$Id$
+
+Change Log:
+
+18 April 2003 (version 0.11.1)
+ * Added the following inline elements: "onomatopoeia", "spell",
+   "item".
+
+27 January 2003 (version 0.11.0)
+ * Moved the optional "footnotes" element between the "meta" and 
+   "data" elements.
+
+10 January 2003 (version 0.10.4)
+ * Removed the "inline.content" entity from the declaration of the
+   contents of the "blockquote" element. This will break some existing
+   documents.
+
+7 January 2003 (version 0.10.3)
+ * Made the "src", "width", and "height" attributes of the "instance"
+   element IMPLIED.
+
+4 January 2003 (version 0.10.2)
+ * Moved the specialized character entity definitions into module
+   files.
+
+5 October 2002 (version 0.10.1)
+ * Added the "lellips" and "minus" entities and changed the definition
+   of the "emdash" entity.
+
+5 September 2002 (version 0.10.0)
+ * Added the "quote" element.
+
+31 August 2002 (version 0.9.1)
+ * Added the "xml:lang" attribute to the "core.attributes" entity.
+   Although this could be used for most elements, it is primarily
+   aimed at the "foreign" element.
+
+6 July 2002 (version 0.9)
+ * Replaced the "caption" element and the "illustrator" attribute with
+   the use of the "meta" element.
+ * Renamed the "illustration-instance" element to simply "instance".
+ * Removed the "character-attribute" element.
+ * Added the "typ" element for typographical markup.
+ * Removed the "shortname" attribute.
+
+1 June 2002 (version 0.8.3)
+ * Removed the "marker" attribute from the "footnote" element.
+
+29 April 2002 (vesion 0.8.2)
+ * Changed the content of the "enemy" element from "#PCDATA" to 
+   "%inline.content;".
+
+4 April 2002 (version 0.8.1)
+ * Added the "thinspace" entity
+
+3 April 2002 (version 0.8.0)
+ * Added the "thought" element.
+ * Added the "foreign" element.
+
+15 March 2002 (version 0.7.0)
+ * Changed the name of the "illustration-set" element to "illustration"
+   and changed the name of the "illustration" element to
+   "illustration-instance".
+ * Made many minor changes to bring the DTD up to current practice.
+
+11 May 2001 (version 0.6.0)
+ * Removed the "publication-date" element.
+
+5 May 2001 (version 0.5.0)
+ * Added facilities for transformation to LaTeX - mainly appropriate 
+   character escapes.
+ * Added the "marker" attribute to the "footnote" element.
+
+1 May 2001 (version 0.4.0)
+
+ * Added the "link" element to the set of allowable "meta" elements.
+   Although not a Dublin Core meta-data element, it's functionality
+   adds a lot to the document.
+
+30 April 2001 (version 0.3.0)
+
+ * Changed the basic orgranization of the sections by allowing them to
+   have their own meta section instead of a "section-title" element.
+ * Changed the name of the "section-data" element to simply "data".
+
+17 April 2001 (version 0.2.0)
+
+ * Changed some of the block and inline elements in order to make them 
+   more useful.
+
+14 April 2001 (version 0.1.0)
+
+ * First revision
+                                                                   -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                      Table of Contents                        -->
+<!-- ============================================================= -->
+
+<!--
+
+  I. Entities
+     A. General Entities
+     B. Character Entities
+ II. Hierarchical Elements
+III. Block Elements
+ IV. Inline Elements
+
+  V. Appendices
+     A. Valid Document Example
+
+-->
+
+<!-- ============================================================= -->
+<!--                           Entities                            -->
+<!-- ============================================================= -->
+
+<!-- ::::::::::::::::::::: General Entities :::::::::::::::::::::: -->
+
+<!ENTITY % block.content "p | ul | ol | dl | table | blockquote | illustration | combat | choice | signpost | hr">
+
+<!ENTITY % inline.content "#PCDATA | a | em | strong | thought | foreign | quote | cite | code | br | typ | onomatopoeia | spell | item">
+
+<!ENTITY % core.attributes "
+         class CDATA #IMPLIED
+         xml:lang CDATA #IMPLIED
+">
+
+<!ENTITY % link.attributes "
+         idref IDREF #IMPLIED
+         id    ID    #IMPLIED
+">
+
+<!ENTITY % cell.align.attributes "
+         align  ( left | center | right | justify | char ) #IMPLIED
+         char   CDATA                                      #IMPLIED
+         valign ( top | middle | bottom | baseline )       #IMPLIED
+">
+
+<!-- :::::::::::::::::::: Character Entities ::::::::::::::::::::: -->
+
+<!ENTITY lt     "&#38;#60;"><!-- left angle bracket -->
+<!ENTITY gt     "&#62;">    <!-- right angle bracket -->
+<!ENTITY amp    "&#38;#38;"><!-- ampersand -->
+<!ENTITY apos   "&#39;">    <!-- apostrophe = single quotation mark -->
+<!ENTITY quot   "&#34;">    <!-- double quotation mark -->
+
+
+<!--
+
+It is the responsibility of the document to define relevant character 
+entities in its internal subset.
+
+-->
+
+<!-- ============================================================= -->
+<!--                     Hierarchical Elements                     -->
+<!-- ============================================================= -->
+
+
+<!ELEMENT gamebook ( meta, section+ )>
+<!ATTLIST gamebook
+          version  CDATA #REQUIRED
+          xml:lang CDATA #IMPLIED
+>
+<!--
+
+The "version" attribute represents the revision number of the gamebook 
+DTD. This allows gamebook processors to make decisions about the 
+suitability of the data.
+
+The "xml:lang" attribute specifies the primary language of the 
+document. The data should conform to the IETF RFC1766.
+
+ http://www.ietf.org/rfc/rfc1766.txt
+
+Examples:
+
+ <gamebook version="0.11" xml:lang="en-UK">
+  <meta . . .> . . . </meta>
+  <section . . .> . . . </section>
+  . . .
+ </gamebook>
+
+ <gamebook version="0.11" > . . . </gamebook>
+
+-->
+
+<!-- :::::::::::::::::::::::: meta Element ::::::::::::::::::::::: -->
+<!--
+
+The children of the meta element are designed to directly translate to
+the Dublin Core Element Set v1.1. For a description of each Dublin
+Core element, visit the following URL:
+
+ (http://dublincore.org/documents/1999/07/02/dces/)
+
+Although many Dublin Core elements will probably never have any real 
+relevance to gamebooks, all are included for completeness's sake.
+
+[editor: add dc: namespace to isolate dublin core elements
+  http://dublincore.org/documents/2001/10/26/dcmi-namespace/ ]
+
+Note: The "link" element doesn't correspond directly to any Dublin
+Core element. It has been added here for required functionality.
+-->
+
+<!ELEMENT meta ( title | creator | subject | description | publisher | contributor | date | type | format | identifier | source | language | relation | coverage | rights | link)*>
+<!--
+
+The "meta" element represents underlying information about the 
+document. It should contain any number of the Dublin Core 1.1 
+elements.
+
+Example:
+
+ <meta>
+  <title . . .> . . . </title>
+  <creator . . .> . . . </creator>
+  . . .
+ </meta>
+
+-->
+
+<!ELEMENT title ( %inline.content; )*>
+<!ATTLIST title
+          %core.attributes;
+>
+
+<!ELEMENT creator ( %inline.content; | %block.content; )*>
+<!ATTLIST creator
+          %core.attributes;
+>
+
+<!ELEMENT subject ( %inline.content; | %block.content; )*>
+<!ATTLIST subject
+          %core.attributes;
+>
+
+<!ELEMENT description ( %inline.content; | %block.content; )*>
+<!ATTLIST description
+          %core.attributes;
+>
+
+<!ELEMENT publisher ( %inline.content; | %block.content; )*>
+<!ATTLIST publisher
+          %core.attributes;
+>
+
+<!ELEMENT contributor ( %inline.content; | %block.content; )*>
+<!ATTLIST contributor
+          %core.attributes;
+>
+
+<!ELEMENT date ( year, month, day )>
+<!ATTLIST date
+          %core.attributes;
+>
+<!--
+
+The "date" element has been extended beyond the specification made in 
+the Dublin Core. It should contain "year", "month" and "day" elements.
+
+Example:
+
+ <date>
+  <year . . .> . . . </year>
+  <month . . .> . . . </month>
+  <day . . .> . . . </day>
+ </date>
+
+-->
+
+<!ELEMENT year ( #PCDATA )>
+<!--
+
+The year should be specified in full digit numeric format.
+
+Example:
+
+ <year>2001</year>
+
+-->
+
+<!ELEMENT month ( #PCDATA )>
+<!--
+
+The month should be specified in numeric format with January as "1", 
+February as "2", etc.
+
+Example:
+
+ <month>4</month>
+
+-->
+
+<!ELEMENT day ( #PCDATA )>
+<!--
+
+The "day" element specifies the day of the month in numeric format.
+
+Example:
+
+ <day>14</day>
+
+-->
+
+<!ELEMENT type ( %inline.content; )*>
+<!ATTLIST type
+          %core.attributes;
+>
+
+<!ELEMENT format ( %inline.content; )*>
+<!ATTLIST format
+          %core.attributes;
+>
+
+<!ELEMENT identifier ( %inline.content; )*>
+<!ATTLIST identifier
+          %core.attributes;
+>
+
+<!ELEMENT source ( %inline.content; )*>
+<!ATTLIST source
+          %core.attributes;
+>
+
+<!ELEMENT language ( %inline.content; )*>
+<!ATTLIST language
+          %core.attributes;
+>
+
+<!ELEMENT relation ( %inline.content; )*>
+<!ATTLIST relation
+          %core.attributes;
+>
+
+<!ELEMENT coverage ( %inline.content; | %block.content; )*>
+<!ATTLIST coverage
+          %core.attributes;
+>
+
+<!ELEMENT rights ( %inline.content; | %block.content; )*>
+<!ATTLIST rights
+          %core.attributes;
+>
+
+<!ELEMENT link EMPTY>
+<!ATTLIST link
+          %core.attributes;
+          %link.attributes;
+          idrefs IDREFS #IMPLIED>
+<!--
+
+The "link" element has been added to the Dublin Core elements to 
+represent relationships to other parts of the document. The "idrefs" 
+attribute has been added to allow relationships that are held with 
+more than one part of the document.
+
+Examples:
+
+ <link class="next" idref="dedicate" />
+
+ <link class="friends" idrefs="dedicate cmbtrulz" />
+
+-->
+
+<!-- ::::::::::::::::::::: section Element ::::::::::::::::::::::: -->
+
+<!ELEMENT section ( meta, footnotes?, data )>
+<!ATTLIST section
+          %core.attributes;
+          %link.attributes;
+>
+<!--
+
+The "section" element represents one hierarchical level of data. 
+Section elements can be nested (inside the "data" element) in 
+order to create more complex data representations.
+
+A "section" element can used as a linking element. The most useful way 
+to utilize this is to make it a named anchor and thus the target of a 
+"choice" element.
+
+Examples:
+
+ <section>
+  <meta><title . . .> . . . </title></meta>
+  <data . . .> . . . </data>
+  <footnotes . . .> . . . </footnotes>
+ </section>
+
+ <section id="title">
+  <meta><title . . .> . . . </title></meta>
+  <data . . .>
+   . . .
+   <section id="dedication">
+    <meta><title . . .> . . . </title></meta>
+    <data . . .> . . . </data>
+   </section>
+   . . .
+  </data>
+ </section>
+
+-->
+
+<!ELEMENT data ( %block.content; | section )*>
+<!ATTLIST data
+          %core.attributes;
+>
+<!--
+
+The "data" element contains the main data contained within 
+a section. Note that a nested section structure can be created by 
+including a "section" element within the content of the "data" 
+element.
+
+Examples:
+
+ <data>
+  <p . . .> . . . </p>
+  <combat . . .> . . . </combat>
+  . . .
+ </data>
+
+ <data>
+  <section . . .> . . . </section>
+ </data>
+
+-->
+
+<!ELEMENT footnotes ( footnote )*>
+<!ATTLIST footnotes
+          %core.attributes;
+>
+<!--
+
+The "footnotes" element represents the collection of extra-textual 
+information contained within "footnote" elements.
+
+Example:
+
+ <footnotes>
+  <footnote . . .> . . . </footnote>
+  <footnote . . .> . . . </footnote>
+  . . .
+ </footnotes> 
+
+-->
+
+<!ELEMENT footnote ( %block.content; )*>
+<!ATTLIST footnote
+          %core.attributes;
+          %link.attributes;
+>
+<!--
+
+The "footnote" element contains extra-textual information. It can be 
+used as a linking element and can thus be used to refer back to a 
+named anchor within the document.
+
+Example:
+
+ <data . . .>
+  <p . . .>This paragraph requires an appropriate 
+   <a id="reference" idref="footnote-reference" . . .>footnote</a>.
+  </p>
+  . . .
+ </data>
+ <footnotes . . .>
+  <footnote id="footnote-reference" idref="reference">
+   <p . . .>This is the appropriate footnote.</p>
+  </footnote>
+  . . .
+ </footnotes>
+
+-->
+
+<!-- ============================================================= -->
+<!--                        Block Elements                         -->
+<!-- ============================================================= -->
+
+<!-- :::::::::::::::::::::::::: Lists :::::::::::::::::::::::::::: -->
+
+<!ELEMENT ul ( li )*>
+<!ATTLIST ul
+          %core.attributes;
+>
+<!--
+
+The "ul" represents an unordered list.
+
+Example:
+
+ <ul>
+  <li . . .> . . . </li>
+  <li . . .> . . . </li>
+  . . .
+ </ul>
+
+-->
+
+<!ELEMENT ol ( li )*>
+<!ATTLIST ol
+          %core.attributes;
+>
+<!--
+
+The "ol" element represents an ordered list.
+
+Example:
+
+ <ol>
+  <li . . .> . . . First Item . . . </li>
+  <li . . .> . . . Second Item . . . </li>
+  . . .
+ </ol>
+
+-->
+
+<!ELEMENT li ( %inline.content; | %block.content; )*>
+<!ATTLIST li
+          %core.attributes;
+>
+<!--
+
+The "li" element is a generic list item used within both ordered and 
+unordered lists (i.e. "ol" and "ul" elements).
+
+Examples:
+
+ <ul . . .>
+  . . .
+  <li>list item</li>
+  <li>another list item</li>
+  . . .
+ </ul>
+
+ <ol . . .>
+  <li>first list item</li>
+  <li>second list item</li>
+  . . .
+ </ol>
+
+-->
+
+<!ELEMENT dl ( dt, dd? )*>
+<!ATTLIST dl
+          %core.attributes;
+>
+<!--
+
+The "dl" element represents a list of terms and their definitions.
+
+Example:
+
+ <dl>
+  <dt . . .> . . . First Term . . . </dt>
+   <dd . . .> . . . First Term's Definition . . . </dd>
+   . . .
+  <dt . . .> . . . Second Term . . . </dt>
+   <dd . . .> . . . Second Term's Definition . . . </dd>
+  <dt . . .> . . . Third Term with No Definition . . . </dt>
+ </dl>
+
+-->
+
+<!ELEMENT dt ( %inline.content; )*>
+<!ATTLIST dt
+          %core.attributes;
+>
+<!--
+
+The "dt" element represents a definition term within a definition 
+list. It should be immediately followed by its definitions contained 
+within "dd" elements.
+
+Example:
+
+ <dl . . .>
+  . . .
+  <dt>Definition Term</dt>
+   <dd . . .> . . . Definition . . . </dd>
+  . . .
+ </dl>
+
+-->
+
+<!ELEMENT dd ( %inline.content; | %block.content; )*>
+<!ATTLIST dd
+          %core.attributes;
+>
+<!--
+
+The "dd" element contains a definition.
+
+Example:
+
+ <dt . . .> . . . Term to be defined . . . </dt>
+  <dd>Definition of the term.</dd>
+
+-->
+
+<!-- :::::::::::::::::::::::::: Tables ::::::::::::::::::::::::::: -->
+
+<!ELEMENT table ( tr )*>
+<!ATTLIST table
+          %core.attributes;
+>
+<!--
+
+The "table" element represents tabular data. It's data is organized 
+within rows.
+
+Example:
+
+ <table>
+  <tr . . .> . . . </tr>
+  <tr . . .> . . . </tr>
+  . . .
+ </table>
+
+-->
+
+<!ELEMENT tr ( th | td )*>
+<!ATTLIST tr
+          %core.attributes;
+>
+<!--
+
+The "tr" element contains a collection of "th" and "td" elements that 
+represent one row of a "table".
+
+Example:
+
+ <table . . .>
+  . . .
+  <tr>
+   <th . . .> . . . </th>
+   <td . . .> . . . </td>
+   . . .
+  </tr>
+  . . .
+ </table>
+
+-->
+
+<!ELEMENT th ( %inline.content; )*>
+<!ATTLIST th
+          %core.attributes;
+          %cell.align.attributes;
+>
+<!--
+
+The "th" contains a table header used to label a particular row or 
+column of tabular data.
+
+Example:
+
+ <tr . . .>
+  . . .
+  <th>Row Label</th>
+  <td . . .> . . . </td>
+  <td . . .> . . . </td>
+  . . .
+ </tr>
+
+-->
+
+<!ELEMENT td ( %inline.content; )*>
+<!ATTLIST td
+          %core.attributes;
+          %cell.align.attributes;
+>
+<!--
+
+The "td" element contains one cell of tabular data.
+
+Example:
+
+ <tr . . .>
+  . . .
+  <td>Cell data</td>
+  . . .
+ </tr>
+
+-->
+
+<!-- :::::::::::::::::::::: Miscellaneous :::::::::::::::::::::::: -->
+
+<!ELEMENT p ( %inline.content; )*>
+<!ATTLIST p
+          %core.attributes;
+>
+<!--
+
+The "p" element contains a paragraph.
+
+Example:
+
+ <p>This is a (short) paragraph.</p>
+
+-->
+
+<!ELEMENT blockquote ( %block.content; )*>
+<!ATTLIST blockquote
+          %core.attributes;
+>
+<!--
+
+The "blockquote" element contains a lengthy quotation which isn't 
+contained within a paragraph.
+
+Example:
+
+ <blockquote>
+  <p>There was once a Kai monk from Sommerlund . . .</p>
+ </blockquote>
+
+-->
+
+<!ELEMENT combat ( enemy, enemy-attribute+ )>
+<!ATTLIST combat
+          %core.attributes;
+>
+<!--
+
+The "combat" element contains one combat represented by the enemy's 
+name and attributes.
+
+Example:
+
+ <combat>
+  <enemy . . .> . . . </enemy>
+  <enemy-attribute . . .> . . . </enemy-attribute>
+  <enemy-attribute . . .> . . . </enemy-attribute>
+  . . .
+ </combat>
+
+-->
+
+<!ELEMENT enemy ( %inline.content; )*>
+<!ATTLIST enemy
+          %core.attributes;
+>
+<!--
+
+The "enemy" element contains an enemy's name.
+
+Example:
+
+ <combat . . .>
+  . . .
+  <enemy>12-foot Giak</enemy>
+  . . .
+ </combat>
+
+-->
+
+<!ELEMENT enemy-attribute ( #PCDATA )*>
+<!ATTLIST enemy-attribute
+          %core.attributes;
+>
+<!--
+
+The "enemy-attribute" element contains one particular attribute which 
+describes an enemy.
+
+Example:
+
+ <combat . . .>
+  . . .
+  <enemy-attribute>30</enemy-attribute>
+  . . .
+ </combat>
+
+-->
+
+<!ELEMENT choice ( %inline.content; | link-text )*>
+<!ATTLIST choice
+          %core.attributes;
+          %link.attributes;
+>
+<!--
+
+The "choice" element contains the text describing a choice presented 
+within a section. It's a linking element and therefore can link to 
+the place to which the choice leads.
+
+The choice element can contain "link-text" elements which suggest text 
+that should be used by the user agent to represent the hyperlink.
+
+Example:
+
+ <section id="section12" . . .> . . . </section>
+ . . .
+ <choice idref="section12">If you would like to fight the 12-foot Giak, 
+  <link-text . . .> . . . turn to 12. . . . </link-text>
+ </choice>
+
+-->
+
+<!ELEMENT link-text ( %inline.content; )*>
+<!ATTLIST link-text
+          %core.attributes;
+>
+<!--
+
+The "link-text" element contains text which is suggested for use by 
+hypertext user interfaces to represent one end of a hyperlink.
+
+Example:
+
+ <choice . . .>
+  . . .
+  <link-text>the unfortunately ubiquitous "Click Here!"</link-text>
+  . . .
+ </choice>
+
+-->
+
+<!ELEMENT illustration ( meta?, instance+ )>
+<!ATTLIST illustration
+          %core.attributes;
+          %link.attributes;
+>
+
+<!--
+
+The "illustration" element contains a set of alternate 
+representations of a particular illustration.
+
+Example:
+
+ <illustration>
+  <meta> . . . </meta>
+  <instance . . .> . . . </instance>
+  <instance . . .> . . . </instance>
+  . . .
+ </illustration>
+
+-->
+
+<!ELEMENT instance ( %inline.content; | %block.content; )*>
+<!ATTLIST instance
+          %core.attributes;
+          src         CDATA #IMPLIED
+          width       CDATA #IMPLIED
+          height      CDATA #IMPLIED
+          mime-type   CDATA #IMPLIED
+>
+<!--
+
+The "instance" element describes one instance of an illustration.
+
+The "src" attribute is a URL for the data file for the illustration.
+
+The "width" and "height" attributes contain the dimensions of the 
+illustration.
+
+The "mime-type" attribute can contain an appropriate label for the 
+format of the illustration file (e.g. "image/png" or "image/jpeg").
+
+The "instance" element can contain block or inline content that
+is intended to replace graphical illustrations.
+
+Example:
+
+ <illustration . . .>
+  . . .
+  <instance src="17.gif" width="386" height="532" type="image/gif" />
+  <instance src="" width="" height="" type="text" >
+   [content here]
+  </instance>
+  . . .
+ </illustration>
+
+-->
+
+<!ELEMENT signpost ( %inline.content; | %block.content; )*>
+<!ATTLIST signpost
+          %core.attributes;
+>
+<!--
+
+The "signpost" element contains the text of a sign or message that
+should be presented offset from surrounding text.
+
+Example:
+
+ <signpost>RENDALIM'S LABORATORY</signpost>
+
+-->
+
+<!ELEMENT hr EMPTY>
+<!ATTLIST hr
+          %core.attributes;
+>
+<!--
+
+The "hr" element designates a horizontal rule. Since this is a 
+presentational tag, it should be used sparingly in cases where new
+logical divisions of the text begin which aren't given a unique 
+title.
+
+Example:
+
+ <hr />
+
+--> 
+
+<!-- ============================================================= -->
+<!--                       Inline Elements                         -->
+<!-- ============================================================= -->
+
+<!ELEMENT a ( %inline.content; )*>
+<!ATTLIST a
+          %core.attributes;
+          %link.attributes;
+          href CDATA #IMPLIED
+>
+<!--
+
+The "a" element is used to contain inline content that should be a 
+hypertext anchor.
+
+The "href" attribute is added to allow a reference outside of the 
+document itself.
+
+Example:
+
+ <p . . .>
+  . . .
+  <a idref="section12" id="foo">Section 12</a>
+  . . .
+ </p>
+
+-->
+
+<!ELEMENT em ( %inline.content; )*>
+<!ATTLIST em
+          %core.attributes;
+>
+<!--
+
+The "em" element contains text that should be emphasized. Although not 
+part of the DTD and therefore not guaranteed or required to be so, the 
+text should be typeset with an italic font.
+
+ <p . . .>
+  . . .
+  <em>You are being attacked!</em>
+  . . .
+ </p>
+
+-->
+
+<!ELEMENT strong ( %inline.content; )*>
+<!ATTLIST strong
+          %core.attributes;
+>
+<!--
+
+The "strong" element contains text that should be emphasized. Although 
+not part of the DTD and therefore not guaranteed or required to be so, 
+the text should be typeset with a bold font weight.
+
+ <p . . .>
+  . . .
+  <strong>If</strong> you have the Talisman of Supreme Obscurity,
+  . . .
+ </p>
+
+-->
+
+<!ELEMENT thought ( %inline.content; )*>
+<!ATTLIST thought
+          %core.attributes;
+>
+<!--
+
+The "thought" element contains text that is the character's thoughts or is 
+an overheard thought. Although not part of the DTD and therefore not 
+guaranteed or required to be so, the text should be typeset with an italic
+font face.
+
+ <p . . .>
+  . . .
+  Lone Wolf heard the words <thought>Die Northlander!</strong> echo in
+  his mind,
+  . . .
+ </p>
+
+-->
+
+<!ELEMENT foreign ( %inline.content; )*>
+<!ATTLIST foreign
+          %core.attributes;
+>
+<!--
+
+The "foreign" element contains a phrase in a non-native language.
+Although not part of the DTD and therefore not guaranteed or required 
+to be so, the text should be typeset with an italic font face.
+
+ <p . . .>
+  . . .
+  The Giak horde attacked <foreign>en masse</foreign>.
+  . . .
+ </p>
+
+-->
+
+<!ELEMENT quote ( %inline.content; )*>
+<!ATTLIST quote
+          %core.attributes;
+>
+<!--
+
+The "quote" element contains an inline quotation.
+
+Example:
+
+ <p . . .>The Giak yelped <quote . . .>Oww!</quote></p>
+
+-->
+
+<!ELEMENT cite ( %inline.content; )*>
+<!ATTLIST cite
+          %core.attributes;
+>
+<!--
+
+The "cite" element contains the title of a sited resource.
+
+Example:
+
+ <p . . .>
+  . . .
+  <cite>Flight from the Dark</cite>
+  . . .
+ </p>
+
+-->
+
+<!ELEMENT code ( %inline.content; )*>
+<!ATTLIST code
+          %core.attributes;
+>
+<!--
+
+The "code" element contains data that should be interpreted as literal 
+input to a computer (e.g. email addresses and URIs).
+
+Example:
+
+ <code>staff@projectaon.org</code>
+
+-->
+
+<!ELEMENT br EMPTY>
+<!ATTLIST br
+          %core.attributes;
+>
+<!--
+
+The "br" indicates a required line break. Its use should be confined 
+to documents such as poems that require a particular line structure.
+
+Example:
+
+ <blockquote . . .>
+  . . .
+  There once was a Kai monk from Sommerlund<br />
+  Who always wore a cummerbund<br />
+  . . .
+ </blockquote>
+
+-->
+
+<!ELEMENT typ ( #PCDATA )>
+<!ATTLIST typ
+          %core.attributes;
+>
+<!--
+
+The "typ" element is used to denote purely typographical markup. For
+example, bold font face, italics, and smaller font are purely of
+typographical concern. Take care to not use this in place of logical
+markup such as the "em" element when it is more appropriate.
+
+Example:
+
+The <typ class="bold">Project Aon</a> volunteers.
+
+-->
+
+<!ELEMENT onomatopoeia ( #PCDATA )>
+<!ATTLIST onomatopoeia
+          %core.attributes;
+>
+<!--
+
+The "onomatopoeia" element is used to denote words that imitate a
+sound (e.g., "whoosh", "bang").
+
+Example:
+
+The <onomatopoeia>clang</onomatopoeia> of the bell is deafening.
+
+-->
+
+<!ELEMENT spell ( #PCDATA )>
+<!ATTLIST spell
+          %core.attributes;
+>
+<!--
+
+The "spell" element contains the name of a magic spell.
+
+Example:
+
+Having had no success with his female peers, the acolyte learned the
+forbidden <spell>Attract Opposite Gender</spell> spell.
+
+-->
+
+<!ELEMENT item ( #PCDATA )>
+<!ATTLIST item
+          %core.attributes;
+>
+<!--
+
+The "item" element contains the name of an item that the reader can
+pick up or interact with.
+
+Example:
+
+Her <item>Sword</a> lay just out of reach.
+
+-->
+
+<!-- ============================================================= -->
+<!--                          Appendices                           -->
+<!-- ============================================================= -->
+
+<!-- :::::::::::::: Valid Gamebook Document Example :::::::::::::: -->
+<!--
+This document is not intended to document current practice in Project
+Aon. It is merely here to demonstrate the concepts of the Gamebook 
+DTD. For current practice, please refer to published XML files.
+-->
+
+<!--
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE gamebook SYSTEM "gamebook.dtd">
+
+<gamebook version="0.11" xml:lang="en-UK">
+
+<meta>
+ <title>Flight from the Dark</title>
+ <creator>Joe Dever and Gary Chalk</creator>
+ <publisher>Project Aon</publisher>
+ <date><year>2001</year><month>10</month><day>24</day></date>
+ <rights>Copyright &copy; 1984 Joe Dever and Gary Chalk.</rights>
+</meta>
+
+<section id="section1">
+ <meta><title>1</title></meta>
+ <data>
+  <p>You must make haste for you sense it is not safe to linger by the smoking remains of the ruined monastery. The black-winged beasts could return at any moment. You must set out for the Sommerlund capital of Holmgard and tell the King the terrible news of the massacre: that the whole &eacute;lite of Kai warriors, save yourself, have been slaughtered. Without the Kai Lords to lead her armies, Sommerlund will be at the mercy of their ancient enemy, the Darklords.</p>
+  <p>Fighting back tears, you bid farewell to your dead kinsmen. Silently, you promise that their deaths will be avenged. You turn away from the ruins and carefully descend the steep track.</p>
+  <p>At the foot of the hill, the path splits into two directions, both leading into a large wood.</p>
+
+  <choice idref="section85">If you wish to take the right path into the wood, <link-text>turn to 85</link-text>.</choice>
+  <choice idref="section275">If you wish to follow the left track, <link-text>turn to 275</link-text>.</choice>
+  <choice idref="section141">If you wish to use your Kai Discipline of Sixth Sense, <link-text>turn to 141</link-text>.</choice>
+ </data>
+ <footnotes>
+  <footnote><p>Later books use <quote>Sommlending</quote> as the possessive adjective for Sommerlund, contrary to the use of the word <quote>Sommerlund</quote> in the third sentence. This is probably not a typo, but a reflection of Joe Dever&apos;s later expansion of the vocabulary of Magnamund.</p></footnote>
+ </footnotes>
+</section>
+
+<section id="section17">
+ <meta><title>17</title></meta>
+ <data>
+  <p>You raise your weapon to strike at the beast as its razor-fanged mouth snaps shut just inches from your head. Buffeted by the beating of its wings you find it difficult to stand.</p>
+
+  <illustration>
+   <instance src="1.gif" width="386" height="532" mime-type="image/gif" />
+  </illustration>
+
+  <p>Deduct 1 point from your <typ class="attribute">COMBAT SKILL</typ> and fight the Kraan.</p>
+
+  <combat>
+   <enemy>Kraan:</enemy>
+   <enemy-attribute>16</enemy-attribute>
+   <enemy-attribute>24</enemy-attribute>
+  </combat>
+
+  <p>If you kill the creature, you quickly descend the far side of the hill to avoid the Giaks.</p>
+  <p>Pick a number from the Random Number Table.</p>
+
+  <choice idref="section53">If you pick 0, <link-text>turn to 53</link-text>.</choice>
+  <choice idref="section274">If you pick 1&endash;2, <link-text>turn to 274</link-text>.</choice>
+  <choice idref="section316">If you pick 3&endash;9, <link-text>turn to 316</link-text>.</choice>
+ </data>
+</section>
+
+<section id="section53">
+ <meta><title>53</title></meta>
+ <data />
+</section>
+
+<section id="section85">
+ <meta><title>85</title></meta>
+ <data />
+</section>
+
+<section id="section141">
+ <meta><title>141</title></meta>
+ <data />
+</section>
+
+<section id="section274">
+ <meta><title>274</title></meta>
+ <data />
+</section>
+
+<section id="section275">
+ <meta><title>275</title></meta>
+ <data />
+</section>
+
+<section id="section316">
+ <meta><title>316</title></meta>
+ <data />
+</section>
+
+</gamebook>
+
+-->
