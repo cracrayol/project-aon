@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE gamebook SYSTEM "gamebook.dtd" [
+ <!ENTITY % xhtml.characters SYSTEM "htmlchar.mod">
+ <!ENTITY % latex.characters SYSTEM "ltexchar.mod">
+ %xhtml.characters;
+
+ <!ENTITY % general.links SYSTEM "genlink.mod">
+ %general.links;
+ <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
+ %xhtml.links;
+
+ <!ENTITY % general.inclusions SYSTEM "geninc.mod">
+ %general.inclusions;
+]>
+
+<gamebook xml:lang="en-UK" version="0.11">
+
+<!--
+
+$Id$
+$Log$
+Revision 1.1  2004/11/10 06:37:11  jonathan.blake
+Initial Freepository revision
+
+
+-->
+
+<meta>
+ <title>Michael Hahn's Maps</title>
+ <creator class="short">Michael Hahn</creator>
+ <creator class="medium">Michael Hahn</creator>
+ <creator class="long">
+  <p>Michael Hahn created these maps in an early period of Project Aon's history before Gary Chalk had given his consent to use his illustrations. They were used in the Project Aon editions, but their use was eventually discontinued. They are published here for your continued use and enjoyment.</p>
+ </creator>
+ <publisher>Project Aon</publisher>
+ <date class="publication"><year>2004</year><month>5</month><day>12</day></date>
+ <description class="publication">
+  <p>Published by <a href="&link.project.website;">Project Aon</a>.</p>
+ </description>
+ <rights class="copyrights">Maps copyright &copy; 2000&endash;2002 Michael Hahn.<br />Web publication copyright &copy; 2004 Project Aon Team.</rights>
+ <rights class="license-notification">
+  <p>Maps copyright &copy; 2000&endash;2002 Michael Hahn.<br />Web publication copyright &copy; 2004 Project Aon Team.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+ </rights>
+</meta>
+
+<section id="toc">
+ <meta />
+ <data />
+</section>
+
+<section id="title">
+ <meta>
+  <title>Title Page</title>
+  <link class="next" idref="acknwldg" />
+ </meta>
+
+ <data>
+
+  <section class="frontmatter" id="acknwldg">
+   <meta>
+    <title>Acknowledgements</title>
+    <link class="prev" idref="title" />
+    <link class="next" idref="maps" />
+   </meta>
+
+   <data>
+
+    <p>We would like to thank Michael Hahn for creating these maps even though we did not use them in the end for the Project Aon editions.</p>
+
+    <dl>
+     <dt>Map Illustrations</dt>
+      <dd>Michael Hahn</dd>
+     <dt>XML</dt>
+      <dd>Jonathan Blake</dd>
+    </dl>
+
+   </data>
+  </section>
+
+  <section class="mainmatter" id="maps">
+   <meta>
+    <title>Maps</title>
+    <link class="prev" idref="acknwldg" />
+   </meta>
+
+   <data>
+    <illustration class="float">
+     <meta>
+      <creator>Michael Hahn</creator>
+      <description>Map of the Lastlands</description>
+     </meta>
+     <instance src="01fftd.gif" width="998" height="766" class="html" />
+    </illustration>
+
+    <illustration class="float">
+     <meta>
+      <creator>Michael Hahn</creator>
+      <description>The Icy Wastes of Kalte</description>
+     </meta>
+     <instance src="03tcok.gif" width="946" height="752" class="html" />
+    </illustration>
+
+    <illustration class="float">
+     <meta>
+      <creator>Michael Hahn</creator>
+      <description>Southern Sommerlund</description>
+     </meta>
+     <instance src="04tcod.gif" width="798" height="633" class="html" />
+    </illustration>
+
+    <illustration class="float">
+     <meta>
+      <creator>Michael Hahn</creator>
+      <description>The Empire of Vassagonia</description>
+     </meta>
+     <instance src="05sots.gif" width="992" height="762" class="html" />
+    </illustration>
+
+    <illustration class="float">
+     <meta>
+      <creator>Michael Hahn</creator>
+      <description>The Stornlands</description>
+     </meta>
+     <instance src="06tkot.gif" width="1016" height="715" class="html" />
+    </illustration>
+
+    <illustration class="float">
+     <meta>
+      <creator>Michael Hahn</creator>
+      <description>The Magiocracy of Dessi</description>
+     </meta>
+     <instance src="07cd.gif" width="739" height="539" class="html" />
+    </illustration>
+
+    <illustration class="float">
+     <meta>
+      <creator>Michael Hahn</creator>
+      <description>The Danarg Swamp</description>
+     </meta>
+     <instance src="08tjoh.gif" width="629" height="561" class="html" />
+    </illustration>
+
+   </data>
+  </section>
+
+  &inclusion.project.aon.license;
+
+ </data>
+</section>
+
+</gamebook>
