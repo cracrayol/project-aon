@@ -20,6 +20,9 @@
 $Id$
 
 $Log$
+Revision 1.3  2005/04/01 22:31:03  jonathan.blake
+Illustration code added by jffdougan - still needs dimensions
+
 Revision 1.2  2005/03/10 18:21:51  jonathan.blake
 Removed link to old staff email address.
 
@@ -160,7 +163,7 @@ Initial revision
         <dt>Transcription</dt>
          <dd>Ryan Cross</dd>
         <dt>XML</dt>
-         <dd>Jonathan Blake<br />Thomas Wolmer</dd>
+         <dd>Jonathan Blake<br />Jeff Dougan <br />Thomas Wolmer</dd>
         <dt>Alternate Illustrations</dt>
          <dd>JC Alvarez (action charts)<br />Jonathan Blake (extramatter charts and tables)<br />Christopher Lundgren (map and small illustrations)</dd>
         <dt>Proofreading</dt>
@@ -577,6 +580,14 @@ Initial revision
        <p>Through the haze of a dream, your senses pass from sleep to waking. Opening your eyes, you see the wrinkled face of Urik, gazing intently into your own. <quote>How&ellips; how long?</quote> you falter.</p>
        <p><quote>Three days. Three nights. Deep sleep have healing ways&emdash;is true?</quote> Urik replies. You sit up in the hammock that has been your resting place these past three days and look around. Bright sunlight streams in through the window of the wooden chamber. The events of the past weeks rush through your mind. With some surprise, you note that your body is unmarked after the horrors of your ordeal. Even the Mantiz bite on your leg has disappeared.</p>
        <p><quote>Kundi magic,</quote> Urik explains, mysteriously. Your tattered, grey robes, washed and repaired, are laid out for you, and when you have breakfasted on fresh <!--ERRTAG-RE-45701-->rainwater<!--/ERRTAG-RE-45701--> and honey cakes, you are led out to meet King Okosa once more. You marvel at the breathtaking beauty of the cloud forest that is the home of the Kundi people. Urik leads, shambling along with his comical, bow-legged walk and toothless smile and you cross the wooden walkways that connect the tree houses of the Kundi. They nestle amongst the highest branches of giant Azawood trees, whose towering heights and leafy peaks draw moisture from the clouds themselves: the wooden turrets of a forest castle surrounded by an ocean of cloud.</p>
+        <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>The wooden turrets of a forest castle, surrounded by an ocean of cloud</description>
+        </meta>
+        <instance class="html" src="ill1.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill1.pdf" width="120" height="120"/>
+       </illustration>
        <p>You are brought before the Kundi king once more. He and his advisers are gathered in the largest of the tree houses and old Urik ushers you in. <quote>You are well?</quote> the king asks. You nod your head and thank him and his people for treating you with such kindness.</p>
        <p><quote>Long ago,</quote> the king continues, <quote>before Wytch-king, Shasarak, rose in the north, the Shianti and Kundi tribes&emdash;great friends. Shianti need magical sight of Kundi to look into other worlds, see other planes. Only Shianti can go there. Only Kundi can see there&ellips; We help each other. Learn many things. But when Shianti leave, Wytch-king lead Shadakine peoples against us, burning the forests of our home in Mountains of Lara. Now, Shianti send great wizard to destroy evil Wytch-king, throw down Shadakine. Kundi men give all their help, in honour of our friendship. How we aid you?</quote></p>
        <p><quote>I must travel to the Daziarn plane and reclaim the Moonstone of old,</quote> you reply. <quote>My masters tell me that I must seek out the Shadow Gate, the doorway that is invisible to all but the eyes of the noble Kundi. I ask you for a guide to take me there.</quote></p>
@@ -624,6 +635,14 @@ Initial revision
 
       <data>
        <p>A vast, amorphous mass of slime and mud, wreathed with vines and dead vegetation, rises up out of the quagmire you have just passed. It reaches out and grabs you while you remain entranced, and presses you against its filth-encrusted body in a crushing bear hug. (Lose 2 <typ class="attribute">ENDURANCE</typ> points.) You are being held by a Swamp Giant and it intends to squeeze the life out of you.</p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>A mass of slime and mud rises up out of the quagmire, it is a Swamp Giant</description>
+        </meta>
+        <instance class="html" src="ill2.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill2.pdf" width="120" height="120"/>
+       </illustration>
        <combat><enemy>Swamp Giant</enemy><enemy-attribute class="combatskill">16</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat>
        <choice idref="sect65">If you win the combat, <link-text>turn to 65</link-text>.</choice>
       </data>
@@ -832,6 +851,14 @@ Initial revision
 
       <data>
        <p>The passage eventually opens on to the Mountains of Morn. It is night and a full moon shines brightly in the sky. Below is the barren expanse of Desolation Valley: a vast wasteland of melted rock and craters. The plain is covered with pot-holes, and, as the wind blows across them, they sigh like a tortured soul moaning at the mountains. <quote>How long has the full moon shone?</quote> you ask Urik.</p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>The barren expanse of Desolation Valley. A vast wasteland of melted rock and craters</description>
+        </meta>
+        <instance class="html" src="ill3.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill3.pdf" width="120" height="120"/>
+       </illustration>
        <p><quote>I know not,</quote> he <!--ERRTAG-RE-69071-->says, <quote>but<!--/ERRTAG-RE-69071--> Shadow Gate very near. Down below ground.</quote> Without hesitation, you begin to sprint across the plain and Urik follows. Gone is all your weariness and fatigue now that you are near your goal. The pot-holes lead downwards but there are hundreds of them; which way should you go?</p>
        <p>Suddenly, a gruesome sight slithers from one of these holes. Its long, snaking body is bone white and skeletal; but its pale eyes, without pupils, reveal a deadly malice, a blind evil. It is a Scree Wyrm and it is slithering towards you.</p>
        <choice idref="sect273">If you wish to fight the Scree Wyrm, <link-text>turn to 273</link-text>.</choice>
@@ -914,6 +941,14 @@ Initial revision
 
       <data>
        <p>The Warward&apos;s mind is already weak with fear and it is a simple matter to exert your power over his brain and grip it with a murderous compulsion. Suddenly, the Warward walks towards the Shadakine Wytch, unable to resist the desire to slay that you have placed in his mind.</p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>The Warward walks towards the Shadakine Wytch, unable to resist the desire to slay</description>
+        </meta>
+        <instance class="html" src="ill4.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill4.pdf" width="120" height="120"/>
+       </illustration>
        <p>Before the Wytch can resist, the Warward strangles her to death. Immediately the light of the Kazim Stone is extinguished and the Shadakine warriors before the fortress falter. With a jubilant cry, the soldiers of the Freedom Guild charge forwards.</p>
        <choice idref="sect48"><link-text>Turn to 48</link-text>.</choice>
       </data>
@@ -1223,6 +1258,14 @@ Initial revision
 
       <data>
        <p>Samu enters the grove of trees. Held in a headlock, and gurgling pleas for release, is a scrawny-looking man, dressed in a leather jerkin and bright scarlet breeches immediately you recognize him as the thief who tried to steal your money in the cavern of the Freedom Guild. <quote>What are you doing here? State your <!--ERRTAG-RE-102536-->purpose!<!--/ERRTAG-RE-102536--></quote> you say, leaping to your feet. The thief lets out a long gurgle by way of reply.</p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>Held in a headlock is a scrawny man, the thief from the cavern of the Freedom Guild</description>
+        </meta>
+        <instance class="html" src="ill5.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill5.pdf" width="120" height="120"/>
+       </illustration>
        <p><quote>What are you doing here?</quote> you repeat, angrily. Samu tightens his grip on the thief&apos;s neck.</p>
        <p><quote>Being&ellips; strangled!</quote> he squawks, clawing desperately at the thick arm around his neck.</p>
        <p>You give Samu a nod and the brawny giant releases his grip. The thief collapses to the floor in an untidy heap, choking for breath and rubbing his bruised throat. Urik chortles with laughter. <quote>Get up!</quote> you command.</p>
@@ -1307,6 +1350,14 @@ Initial revision
        <p><quote>NO!</quote> you shout into the emptiness.</p>
        <p><quote>Turn aside, Grey Star. Turn aside. You dare not stand against me.</quote> The grim figure casts aside his hood and the shadow passes to a blood-red light, revealing a hideous face. Half of the face is missing and, in its place, a metal plate gives shape to the ruined visage of wasted flesh and scarred tissue. One eye is shrunken and sightless, while the other burns with the intensity of the sun. A gaze of unbearable malice focuses on your heart. <quote>Desist, Wizard&emdash;or I will rend the very soul from your body.</quote></p>
        <p><quote>I will not!</quote> you scream into the darkness. A look of rage contorts his twisted features and the single eye burns into you. You are looking upon the face of Shasarak, Wytch-king of Shadaki, who has come to taunt and torment you as you sleep.</p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>A gaze of unbreakable malice focuses on your heart: you look upon Shasarak, Wytch-king of Shadaki</description>
+        </meta>
+        <instance class="html" src="ill6.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill6.pdf" width="120" height="120"/>
+       </illustration>
        <p><quote>You fear me now, foolish child, and you think that you have mastered fear. I will teach you the true meaning of terror. I will make you yearn for death as if it were your true love!</quote> Shasarak raises his clawed, decaying hand and clutches his fingers in the air: 1 <typ class="attribute">WILLPOWER</typ> point is drawn effortlessly from your body.</p>
        <p>You wake up screaming.</p>
        <choice idref="sect291"><link-text>Turn to 291</link-text>.</choice>
@@ -1414,6 +1465,14 @@ Initial revision
 
       <data>
        <p>Urik gives you a look of bewilderment. You nod confidently, as if you know exactly what you are doing. The bizarre procession of madmen and mad women moves at a stately pace through the wide archway that leads from the throne room. Samu looks as solemn as ever but Hugi&apos;s face wears an expression of astonishment. You enter a dim, candlelit hall dominated by a long table. Rats scuttle across the table, running for their bolt holes as the assemblage enters the room. You sit down and wait to see what happens next. <quote>Dinner is served,</quote> announces a gaunt, grey-faced servant. A limping, squeaking, three-wheeled trolley is pushed into the room. At the far end <!--ERRTAG-RE-120711-->of the table<!--/ERRTAG-RE-120711-->, the deranged king moistens his lips with his coated tongue and tucks the table cloth into the top of his torn silk shirt. The tarnished silver dish is uncovered and a wave of revulsion churns your stomach: on the silver platter is a hideous array of human limbs.</p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>The deranged king prepares to dine</description>
+        </meta>
+        <instance class="html" src="ill7.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill7.pdf" width="120" height="120"/>
+       </illustration>       
        <p>The king stands up, brandishing a rusty carving knife. <quote>Would you like an arm or a leg?</quote> he enquires innocently.</p>
        <choice idref="sect108">If you wish to accept, <link-text>turn to 108</link-text>.</choice>
        <choice idref="sect220">If you wish to refuse, <link-text>turn to 220</link-text>.</choice>
@@ -1436,6 +1495,14 @@ Initial revision
       <data>
        <p>Hurriedly, you unfasten the knotted vine. Urik let out a yell as you both plummet towards the ground at frightening speed. Your fall is broken by the sucking ooze of the marshy ground <!--ERRTAG-RE-122318-->below, but<!--/ERRTAG-RE-122318--> you are still bruised and must lose 2 <typ class="attribute">ENDURANCE</typ> points.</p>
        <p>Nearby, you can hear the shouts of the Shadakine Warriors as they search for you. You are surrounded by tall reeds and rushes and, for the moment, you are out of sight. You keep very still. The Shadakine are beating at the marsh reeds with large sticks, trying to flush you out. Just as a booted foot passes inches from your face, you suddenly realize that you are sinking.</p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>You hide in the tall reeds as the Shadakine seek you out</description>
+        </meta>
+        <instance class="html" src="ill8.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill8.pdf" width="120" height="120"/>
+       </illustration>
        <choice idref="sect115">If you wish to struggle out of the quicksand into which you are being drawn, <link-text>turn to 115</link-text>.</choice>
        <choice idref="sect235">If you would prefer to keep still, at least until the Shadakine have passed, <link-text>turn to 235</link-text>.</choice>
       </data>
@@ -1919,6 +1986,14 @@ Initial revision
       <data>
        <p>You come to the remains of an elaborate archway carved into the city wall. The gate collapsed long ago and the street beyond is bleak and deserted. You take a deep breath and start <!--ERRTAG-RE-159939-->forward. You<!--/ERRTAG-RE-159939--> have taken one step when a voice cries out: <quote>Who goes there?</quote></p>
        <p>The head and shoulders of a bony old man pop through a window high above the shattered gate. He regards you suspiciously with wild, bloodshot eyes. His filthy, matted hair hangs down over his shoulders and he waves a broken, rusty sword. <quote>Speak now!</quote> he continues. <quote>I can&apos;t open the gate until you tell me.</quote></p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>A bony man regards you with wild eyes</description>
+        </meta>
+        <instance class="html" src="ill9.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill9.pdf" width="120" height="120"/>
+       </illustration>
        <p>Puzzled, you look at the archway and then up at the grime-encrusted man. You can see no gate.</p>
        <choice idref="sect212">If you wish to humour the Gatekeeper, <link-text>turn to 212</link-text>.</choice>
        <choice idref="sect254">If you wish to ignore the ravings of the old man, <link-text>turn to 254</link-text>.</choice>
@@ -1934,6 +2009,14 @@ Initial revision
        <p>The islet is located near the centre of the lake. Dense clumps of reeds surround its dull, green waters and beyond them, you can hear the shouts of the Shadakine as they seek you out. <quote>We must hide&emdash;get away from here. We&apos;re too exposed,</quote> you say urgently to Urik, making to step into the water. You feel Urik&apos;s restraining hand on your shoulder.</p>
        <p><quote>Wait!</quote> he says, pointing ahead. You follow the direction of his arm. A host of multi-coloured birds has taken off in alarm from the surface of the lake. The blur of colour draws your eye to something immediately below them that is moving straight towards you.</p>
        <p>Two pale eyes on slender stalks protrude above the water, cold and emotionless, their irises no more than red slashes. <quote>Eijalfish,</quote> says <!--ERRTAG-RE-162466-->Urik. <quote>Very<!--/ERRTAG-RE-162466--> big. Very poisonous. Very dangerous! And now, Shadakine come&ellips; is not good.</quote> Sure enough, you hear the sound of the Shadakine hunting party, beating at the dense foliage as they draw closer. In a few minutes, they are sure to discover you, stranded here in the middle of the lake.</p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>Two pale eyes protrude above the water, cold and emotionless</description>
+        </meta>
+        <instance class="html" src="ill10.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill10.pdf" width="120" height="120"/>
+       </illustration>
        <choice idref="sect181">If you have the Magical Power of Sorcery and wish to create a magical shield capable of deflecting missiles, <link-text>turn to 181</link-text>.</choice>
        <choice idref="sect230">If you have the Magical Power of Elementalism and wish to use it, <link-text>turn to 230</link-text>.</choice>
        <choice idref="sect274">If you wish to attack the Eijalfish with your Wizard&apos;s Staff, <link-text>turn to 274</link-text>.</choice>
@@ -2170,6 +2253,14 @@ Initial revision
 
       <data>
        <p>You mark your pentacle in the dust and begin to chant. The Deathgaunts come no further but remain outside the reach of the spell, whispering. The four of you stand huddled within the pentacle, each regarding the Deathgaunts with frightened eyes.</p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>The Deathgaunts come no further but remain outside the reach of the spell whispering</description>
+        </meta>
+        <instance class="html" src="ill11.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill11.pdf" width="120" height="120"/>
+       </illustration>
        <p><quote>Grey Star,</quote> says Samu in a hushed tone. <quote>They have not departed. We cannot remain here forever.</quote></p>
        <p><quote>They can,</quote> comments Urik.</p>
        <choice idref="sect120">If you possess some Azawood leaves, <link-text>turn to 120</link-text>.</choice>
@@ -2557,6 +2648,14 @@ Initial revision
 
       <data>
        <p>Samu appears at your side and attacks the writhing creature with his broadsword. Hugi and Urik grab you by your cloak and pull you away from the fight as Samu&apos;s sword cuts back and forth in wide sweeping arcs. <quote>He more danger to you than Scree Wyrm,</quote> shouts Urik, pointing at Samu, who is lost in a berserk fury.</p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>Samu, lost in a berserk fury, battles wit the Scree Wyrm</description>
+        </meta>
+        <instance class="html" src="ill12.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill12.pdf" width="120" height="120"/>
+       </illustration>
        <p>Suddenly, a loud cry makes you start. It is Hugi&emdash;he is struggling in the bony coils of another Scree Wyrm. You dare not attack the creature with a blast from your Staff for fear of hitting the struggling thief.</p>
        <choice idref="sect206">If you decide to engage the creature in close combat, <link-text>turn to 206</link-text>.</choice>
        <choice idref="sect255">If you do not wish to attack the Scree Wyrm, <link-text>turn to 255</link-text>.</choice>
@@ -2947,6 +3046,14 @@ Initial revision
 
       <data>
        <p>A flash of gleaming white light leaps from your Staff, tearing open the darkness of the night. The pallid glow of the Kazim light shrinks, curls, and is utterly consumed by the force of your challenge. The Shadakine panic and run, casting their weapons and armour aside as they scatter in all directions. The soldiers of the Freedom Guild give vent to a victorious cry as Sado of the Long Knife leads them into the fortress of stone.</p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>A flash of gleaming white light leaps from your staff, tearing open the darkness of the night</description>
+        </meta>
+        <instance class="html" src="ill13.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill13.pdf" width="120" height="120"/>
+       </illustration>
        <choice idref="sect48">If your current <typ class="attribute">WILLPOWER</typ> total is 15 or higher, <link-text>turn to 48</link-text>.</choice>
        <choice idref="sect189">If your current <typ class="attribute">WILLPOWER</typ> total is <!--ERRTAG-RE-253812-->12&endash;14<!--/ERRTAG-RE-253812-->, <link-text>turn to 189</link-text>.</choice>
        <choice idref="sect114">If your current <typ class="attribute">WILLPOWER</typ> total is 11 or lower, <link-text>turn to 114</link-text>.</choice>
@@ -3009,6 +3116,14 @@ Initial revision
 
       <data>
        <p>You enter a small clearing that is sheltered by a <!--ERRTAG-RE-258284-->toa tree<!--/ERRTAG-RE-258284-->. Curled in its shade, you see a strange, reptilian creature, four feet long, with large, soft eyes that look at you pleadingly with more than a hint of human intelligence. A large wound oozes blood from its side. Urik explains that it is a young Chaksu, a much sought after beast. The adult grows to as much as ten feet in height and Chaksu hide is an expensive commodity, much in demand due to its toughness and elasticity. It is said that the wealth of the city of Karnali that stands on the edge of the Gurlu Marshes was built upon its trade in Chaksu hides and hunters frequently come to the marshes in search of their fortune.</p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>A young Chaksu, a much sought after beast</description>
+        </meta>
+        <instance class="html" src="ill14.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill14.pdf" width="120" height="120"/>
+       </illustration>
        <p>Chaksu are capable of a primitive form of mind speech and you can clearly sense its distress. As Urik moves to tend its wound, the Shadakine break from cover and come running straight at you. It was these same Shadakine that injured the young Chaksu, leaving it for dead when they sighted you and Urik.</p>
        <choice idref="sect11">If you wish to make a stand in this clearing and protect the Chaksu from further harm, <link-text>turn to 11</link-text>.</choice>
        <choice idref="sect20">If you wish to flee, <link-text>turn to 20</link-text>.</choice>
@@ -3238,6 +3353,14 @@ Initial revision
 
       <data>
        <p>The Magdi crumples and falls lifelessly to the ground but still the Shadakine remain. They each wear a menacing grin, sensing victory. The tall Shadakine captain steps forward. <quote>Surrender yourself, Wizard. You cannot hope to win.</quote> As he speaks, the Chaksu utters a long trilling cry like a forlorn plea for help. The captain laughs scornfully, but his smug, self-satisfied expression changes to one of terrified disbelief as two large Chaksu burst out of the undergrowth, roaring with fury and searching for their lost offspring. The largest of the Chaksu, and mother of the young Chaksu you have protected, reaches out and grabs the Shadakine officer by the neck. With a deathly grip, she lifts him off the ground. His eyes bulge and his face turns <!--ERRTAG-RE-277805-->purple; he<!--/ERRTAG-RE-277805--> is asphyxiated before she hurls him to the ground breaking his body in several places. With a triumphant howl, the Chaksu rush towards the Shadakine, who are running in all directions. Those Shadakine who are too slow of foot are mercilessly broken underfoot; the carnage is terrible to behold.</p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>Two large Chaksu burst out of the undergrowth, roaring with fury in search of their lost offspring</description>
+        </meta>
+        <instance class="html" src="ill15.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill15.pdf" width="120" height="120"/>
+       </illustration>
        <p>When no Shadakine remain, the Chaksu turn and bow low before the mother sweeps her baby into her arms. Although they do not speak, their thanks echo in your mind. They give you a small set of wooden pipes. Should you need help, you have only to blow the pipes and they will come to your aid. Gratefully, you accept the Chaksu Pipes and place this Special Item in a pocket in your robe. (Remember to mark it on your <a idref="action">Action Chart</a>.) Then, the Chaksu are gone, trampling the thick foliage as if it were matchwood.</p>
        <p><quote>&thinspace;<quote>Great in might is the power of kindness</quote>,</quote> says Urik, quoting from <cite>The Way of the Shianti.</cite></p>
        <p><quote>&thinspace;<quote>Oft comes help when help is unlooked for</quote>,</quote> you reply, anxious not to be outdone. Urik chuckles.</p>
@@ -3358,6 +3481,14 @@ Initial revision
        <p>By mid-morning, you have reached the edge of the rain forest of the Azanam and are overlooking the Azagad Gorge. Far below, you can make out the sharp pinnacles of rock known as the <quote>Dragon&apos;s Teeth</quote> which cover the canyon floor. It was through this gorge that you came in search of the Azanam, and the lost Kundi tribe. There it was that your friend and guide, Shan Li the merchant, died so terribly, devoured by a poisonous Quoku, the flying amphibians that inhabit the desolate land. Your silent reverie is interrupted by the sound of Urik calling to you from above. <quote>Azagad hold sad memories for Grey Star?</quote> he enquires sympathetically. You nod your head, not thinking to ask how he knew what was on your mind. <quote>No time for sorrow now&ellips; time fly! Catch.</quote> He throws you a length of vine cut from the tree on which he stands. You take up the creeper and look at it in puzzlement. <quote>Make yourself a harness and tie it on&emdash;good and tight,</quote> he orders. You do as he suggests and before you can question his purpose, he produces a carved flute. He places it to his lips and begins to play a strange melody quite unlike any music you have ever heard before.</p>
        <p>The music lasts for some time. Eventually, Urik puts down his pipe and looks expectantly at the sky. <quote>What now?</quote> you ask, a hint of cynicism in your voice.</p>
        <p><quote>Look&ellips; see!</quote> he replies. Far away you can see a tiny speck on the skyline. <quote>Ooslo bird&ellips; love Kundi music.</quote> The dark speck grows larger and soon you are able to make out the awkward, disproportionate shape of an Ooslo bird. Long-necked and small bodied, the bird&apos;s great wings flap without rhythm or grace. It is a strange creature.</p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>You make out the awkward shape of an Ooslo bird, a strange creature</description>
+        </meta>
+        <instance class="html" src="ill16.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill16.pdf" width="120" height="120"/>
+       </illustration>
        <p>As the bird draws nearer, Urik takes up his pipe once more and plays. Eventually, the bird settles on a nearby branch, craning its neck and twisting its head, an expression of rapt fascination in its big, saucer-like eyes. Urik ties the other end of vine into a lasso. He stops playing and, with amazing accuracy, throws the lasso over the Ooslo&apos;s head. As the loop of the vine falls and tightens around the bird&apos;s neck, it gives a squawk of alarm. Only now does the nature of Urik&apos;s plan to <quote>cover many miles in just one <!--ERRTAG-RE-291628-->day</quote> dawn<!--/ERRTAG-RE-291628--> on you.</p>
        <p>Suddenly, you are dragged up into the air by the Ooslo bird. Urik gives an excited whoop of delight, leaping into the air and grabbing at your legs, dangling there as the bird flies higher. <quote>What do we do now?</quote> you shout, swinging wildly in the air, the old Kundi man clinging to your legs and grinning maniacally.</p>
        <p><quote>Ooslo bird fly home now&ellips; back to Gurlu Marshes. Ooslo&emdash;strong flier. Take us far&ellips; and good fun, eh?</quote> The Ooslo bird squawks loudly and Urik hoots back with a howl of wild laughter.</p>
@@ -3552,6 +3683,14 @@ Initial revision
 
       <data>
        <p>The following day, you, Urik and the fighters of the Freedom Guild are ensconced in the tall grass at the edge of the marsh. In the distance gleams the city of Karnali overlooking the Suhni and Belzar Rivers. Along the Great Suhn Road that leads east away from Karnali, you see a long line of men, women and children: slaves of the Shadakine. Warriors walk up and down the line, brandishing flails with needless ferocity. Suddenly, the charge is sounded and a wave of men pours out of the brush and runs towards the column of slaves.</p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>Suddenly, the charge is sounded and the fighters of the Freedom Guild fall upon the slave train</description>
+        </meta>
+        <instance class="html" src="ill17.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill17.pdf" width="120" height="120"/>
+       </illustration>
        <p>The Shadakine <!--ERRTAG-RE-307675-->guards fall<!--/ERRTAG-RE-307675--> into defensive positions along the road, but the stealth of the ambush outmanoeuvres them and they have no time to deploy effectively. <quote>Shall we?</quote> you ask Urik. He grins broadly and gives vent to a bellowing yell before shambling out of the brush towards the fray as fast as his old bones will allow. You follow behind.</p>
        <choice idref="sect144"><link-text>Turn to 144</link-text>.</choice>
       </data>
@@ -3797,6 +3936,14 @@ Initial revision
 
       <data>
        <p>It is a sleep that gives you no rest. Through a dark haze, the ghastly figure of Shasarak appears. <quote>And still you persist&emdash;fool!</quote> he spits. <quote>I see that my friends were unable to make you see the error of your ways,</quote> he says, scornfully. <quote>Perhaps this will better persuade you.</quote></p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>Through a dark haze the ghastly figure of Shasarak appears</description>
+        </meta>
+        <instance class="html" src="ill18.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill18.pdf" width="120" height="120"/>
+       </illustration>
        <p>With a gesture of his ruined hand, he shows you the vision of a young girl, sobbing, surrounded by a pool of darkness. With a dull ache in your heart you recognize the girl. It is Tanith, the Wytch girl who helped you escape from a Shadakine prison in the Port of Suhn and finally leapt to her death to save you. Now, trapped upon another plane, she weeps alone, her eyes wild with fear. <quote>Tanith!</quote> you call into the void of your dream.</p>
        <p>Shasarak laughs, savagely. <quote>She cannot hear you, Wizard. No one can hear her now. She is mine to torment as and when I wish. And my imagination knows no limit in the matter of torment&emdash;in that field I rule supreme.</quote> The Wytch-king begins to laugh with malicious glee, relishing Tanith&apos;s plight and your misery at witnessing it. <quote>Turn aside, Grey Star, or she is lost.</quote> With the howl of Shasarak&apos;s mocking laughter ringing in your ears, you wake with a start. You have lost 1 <typ class="attribute">ENDURANCE</typ> point and 1 <typ class="attribute">WILLPOWER</typ> point during the night.</p>
        <p>In the grey light of dawn you trudge towards the Forbidden City, your companions walking silently by your side. Soon, you are able to see the outline of the city in the distance. A few more hours and you will be standing before its gates. There is only one solution to the sinking of your heart and the mounting ache that racks your mind: you must complete your quest.</p>
@@ -3902,6 +4049,14 @@ Initial revision
        <p>You cause the tip of your <!--ERRTAG-RA-334885-->Staff<!--/ERRTAG-RA-334885--> to emit a dim glow that illuminates the interior of your prison. You are in a large, low-ceilinged chamber, littered with shards of fallen masonry. Urik and Hugi lie in a far corner. They both remain silent. What use are words now? (The cost of creating a light from your <!--ERRTAG-RA-334885-->Staff<!--/ERRTAG-RA-334885--> has been 1 <typ class="attribute">WILLPOWER</typ> point.)</p>
        <p>You curse your bad luck. You are sure that some wizardry is required to free you from this prison, but you are weak and still have to reach Desolation Valley. It is sure to hold other dangers for you. You are suddenly distracted from this moody introspection by the sound of shouting voices, and the noise of a struggle coming from above. Suddenly, the door of the chamber is thrown open. Looking down on you is the figure of Samu, smiling broadly, sword in hand. <quote>How?</quote> you cry in disbelief.</p>
        <p><quote>The river carried me downstream before I was able to resist its current,</quote> says <!--ERRTAG-RE-335965-->Samu. <quote>I&apos;ve<!--/ERRTAG-RE-335965--> been looking for you everywhere. Luckily for you, I was nearby when the wretches of this city caught you. I saw them bring you to this crypt. Wait a moment.</quote> Swiftly, he turns and slashes at a wretch who is trying to drag him away from the door. He swats his assailant like a fly then turns to face you once more. <quote>Come, we must hurry.</quote></p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>Samu turns and slashes at the wretches who try to drag him from the door</description>
+        </meta>
+        <instance class="html" src="ill19.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill19.pdf" width="120" height="120"/>
+       </illustration>
        <p>He pulls each of you out in turn, and stops to deliver a kick at two wretches blocking a doorway that leads from the crypt. <quote>This way,</quote> he says, indicating a narrow passage that leads upwards. <quote>These creatures seem reluctant to travel this passage. They will not follow, I think.</quote></p>
        <p>You run down the passage as fast as you can with Samu protecting the rear. At the end of the passage is a heavy door. Urik swings it open and you all dash through.</p>
        <choice idref="sect26"><link-text>Turn to 26</link-text>.</choice>
@@ -3934,6 +4089,14 @@ Initial revision
       <data>
 
        <p>Despite the soullessness of the being, the Kleas&aacute; emits a great howling yell of triumph and expands like a great black cloud of terror. With the Black Rod in its possession it is freed from the mastery of Shasarak&emdash;free to roam the universe at will.</p>
+       <illustration class="float">
+        <meta>
+         <creator>Paul Bonner</creator>
+         <description>The Kleas&aacute; emits a great howling yell of triumph</description>
+        </meta>
+        <instance class="html" src="ill20.gif" width="120" height="120"/>
+        <instance class="pdf" src="ill20.pdf" width="120" height="120"/>
+       </illustration>
        <p>As the Kleas&aacute; soars up into the air, its shape extended like a great bat&apos;s wing, the Shadow Gate truly appears before you: a great, grey arch, a window to other worlds filled with formless mists and nightmare glimpses. Tanith stands before you on the other side of the threshold and, without hesitation, you step through.</p>
        <p>Your further journeys in the Daziarn plane will be chronicled in book three of the Grey Star <!--ERRTAG-RE-339666-->series, entitled<!--/ERRTAG-RE-339666--></p>
        <p><cite><a href="&link.03btng;">Beyond the Nightmare Gate</a></cite></p>
@@ -4253,6 +4416,26 @@ Initial revision
        <ul class="unbulleted">
         <li><a idref="map">The Shadakine Empire</a></li>
         <li><a idref="action">Action Chart</a></li>
+        <li>Illustration I (<a idref="sect1">Section 1</a>)</li>
+        <li>Illustration II (<a idref="sect4">Section 4</a>)</li>
+        <li>Illustration III (<a idref="sect23">Section 23</a>)</li>
+        <li>Illustration IV (<a idref="sect31">Section 31</a>)</li>
+        <li>Illustration V (<a idref="sect60">Section 60</a>)</li>
+        <li>Illustration VI (<a idref="sect66">Section 66</a>)</li>
+        <li>Illustration VII (<a idref="sect76">Section 76</a>)</li>
+        <li>Illustration VIII (<a idref="sect78">Section 78</a>)</li>
+        <li>Illustration IX (<a idref="sect124">Section 124</a>)</li>
+        <li>Illustration X (<a idref="sect125">Section 125</a>)</li>
+        <li>Illustration XI (<a idref="sect145">Section 145</a>)</li>
+        <li>Illustration XII (<a idref="sect182">Section 182</a>)</li>
+        <li>Illustration XIII (<a idref="sect219">Section 219</a>)</li>
+        <li>Illustration XIV (<a idref="sect225">Section 225</a>)</li>
+        <li>Illustration XV (<a idref="sect247">Section 247</a>)</li>
+        <li>Illustration XVI (<a idref="sect257">Section 257</a>)</li>
+        <li>Illustration XVII (<a idref="sect275">Section 275</a>)</li>
+        <li>Illustration XVIII (<a idref="sect298">Section 298</a>)</li>
+        <li>Illustration XIX (<a idref="sect307">Section 307</a>)</li>
+        <li>Illustration XX (<a idref="sect310">Section 310</a>)</li>
        </ul>
       </data>
      </section>
