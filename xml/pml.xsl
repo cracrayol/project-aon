@@ -9,6 +9,9 @@
 $Id$
 
 $Log$
+Revision 1.2  2005/04/09 19:51:50  angantyr
+Added handling of open-ended quotes.
+
 Revision 1.1  2005/01/30 01:32:52  jonathan.blake
 Initial freepository revision of XML support documents.
 
@@ -696,13 +699,13 @@ Restarted work from base xhtml.xsl.
 <xsl:template match="quote">
  <xsl:text>&lsquot;</xsl:text>
   <xsl:apply-templates />
- <xsl:text>&rsquot;</xsl:text>
+ <xsl:if test="not(self::*[@class='open-ended'])"><xsl:text>&rsquot;</xsl:text></xsl:if>
 </xsl:template>
 
 <xsl:template match="quote//quote">
  <xsl:text>&ldquot;</xsl:text>
   <xsl:apply-templates />
- <xsl:text>&rdquot;</xsl:text>
+ <xsl:if test="not(self::*[@class='open-ended'])"><xsl:text>&rdquot;</xsl:text></xsl:if>
 </xsl:template>
 
 <xsl:template match="code">
