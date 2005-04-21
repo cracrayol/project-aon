@@ -20,8 +20,8 @@
 $Id$
 
 $Log$
-Revision 1.3  2005/04/01 22:31:03  jonathan.blake
-Illustration code added by jffdougan - still needs dimensions
+Revision 1.4  2005/04/21 15:53:05  jonathan.blake
+jffdougan said: Added illustrations, implemented minor approved fixes
 
 Revision 1.2  2005/03/10 18:21:51  jonathan.blake
 Removed link to old staff email address.
@@ -95,6 +95,19 @@ Revision 1.1  2002/10/21 21:36:12  jblake
 Initial revision
 
 -->
+<!--
+Secondary illustration summaries:
+small1: multiple glowing orbs
+small2: egg-shaped stone on a pedestal
+small3: plume of smoke (I think)
+small4: leaning tower
+small5: walled city on a hill
+small6: bubbling goo
+small7: shadowy hooded figure
+small8: wild-haired woman
+small9: fist rising out of fog
+small10: the ethetron
+-->
 
  <meta>
   <title>Beyond the Nightmare Gate</title>
@@ -162,6 +175,8 @@ Initial revision
        <dl>
         <dt>Transcription</dt>
          <dd>Mike David</dd>
+	<dt>Illustration Transcription</dt>
+	 <dd>Jonathan Blake<br />Simon Osborne</dd>
         <dt>XML</dt>
          <dd>Jonathan Blake<br />Jeff Dougan<br />Thomas Wolmer</dd>
         <dt>Action Charts</dt>
@@ -692,8 +707,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>Oz-na-Mun is sitting before his shack, staring at a mass of red clay</description>
         </meta>
-        <instance class="html" src="ill1.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill1.pdf" width="120" height="120"/>
+        <instance class="html" src="ill1.gif" width="386" height="643"/>
+        <instance class="pdf" src="ill1.pdf" width="386" height="643"/>
        </illustration>
        <p><quote>You knew I was coming?</quote> you reply, surprised.</p>
        <p><quote>He has been here; your shadow brother, your dark self. There was a girl with him also.</quote></p>
@@ -722,6 +737,13 @@ Initial revision
 
       <data>
        <p>You perceive that the realm you have entered harbours many illusions: the waters of a blue ocean, rippling with foam-crested waves, roll above your head where the sky should be; below, green hills undulate between mountains balanced upon their peaks; a huge fist rises up, poised to smash down upon you but you pass through it as if it were a phantom. All around is the sound of crazed laughter. A man who believed in the reality of these illusions would stand at the threshold of madness. With the strength of your will you challenge the illusions that surround you; instantly the nightmare vision disappears.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small9.gif" width="386" height="150"/>
+        <instance class="pdf" src="small9.pdf" width="386" height="150"/>
+       </illustration>
        <choice idref="sect187"><link-text>Turn to 187</link-text>.</choice>
       </data>
      </section>
@@ -926,6 +948,13 @@ Initial revision
 
       <data>
        <p>Above your head, where the sky should be, the blue waters of an ocean roll, rippling with foam-crested waves. Below, green hills and fields shift and move like water. The Ethetron rocks violently. You are no longer able to choose between up and down, left or right. Mountains stand upon their peaks; towns and cities drift past; night becomes day, and day becomes night in quick succession; a huge fist rears up, poised to strike, then passes through you like a phantom. All around you is the sound of crazed laughter.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small9.gif" width="386" height="150"/>
+        <instance class="pdf" src="small9.pdf" width="386" height="150"/>
+       </illustration>
        <choice idref="sect67">If your current <typ class="attribute">WILLPOWER</typ> score is 12 or more, <link-text>turn to 67</link-text>.</choice>
        <choice idref="sect104">If your <typ class="attribute">WILLPOWER</typ> score is less than 12, <link-text>turn to 104</link-text>.</choice>
       </data>
@@ -1062,8 +1091,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>The Singing City with its delicate spires and splendid ivory towers</description>
         </meta>
-        <instance class="html" src="ill2.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill2.pdf" width="120" height="120"/>
+        <instance class="html" src="ill2.gif" width="386" height="610"/>
+        <instance class="pdf" src="ill2.pdf" width="386" height="610"/>
        </illustration>
        <p>You pass through the arched gateway of the city and walk along a long avenue of crystal paving stones.</p>
        <choice idref="sect238"><link-text>Turn to 238</link-text>.</choice>
@@ -1089,8 +1118,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>You and Tanith find yourselves in a circular chamber filled with milky-white light</description>
         </meta>
-        <instance class="html" src="ill3.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill3.pdf" width="120" height="120"/>
+        <instance class="html" src="ill3.gif" width="386" height="644"/>
+        <instance class="pdf" src="ill3.pdf" width="386" height="644"/>
        </illustration>
        <choice idref="sect275"><link-text>Turn to 275</link-text>.</choice>
       </data>
@@ -1126,8 +1155,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>The Crystal Tower gleams faintly with a strange light</description>
         </meta>
-        <instance class="html" src="ill4.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill4.pdf" width="120" height="120"/>
+        <instance class="html" src="ill4.gif" width="386" height="638"/>
+        <instance class="pdf" src="ill4.pdf" width="386" height="638"/>
        </illustration>
        <choice idref="sect167"><link-text>Turn to 167</link-text>.</choice>
       </data>
@@ -1194,8 +1223,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>The iron-shod door is locked and five keys are hanging by it</description>
         </meta>
-        <instance class="html" src="ill5.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill5.pdf" width="120" height="120"/>
+        <instance class="html" src="ill5.gif" width="386" height="640"/>
+        <instance class="pdf" src="ill5.pdf" width="386" height="640"/>
        </illustration>
        <choice idref="sect240">If you wish to use the Serpent Key, <link-text>turn to 240</link-text>.</choice>
        <choice idref="sect227">If you wish to use the Eagle Key, <link-text>turn to 227</link-text>.</choice>
@@ -1250,8 +1279,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>The horizon of white light splits the darkness in two</description>
         </meta>
-        <instance class="html" src="ill6.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill6.pdf" width="120" height="120"/>
+        <instance class="html" src="ill6.gif" width="386" height="622"/>
+        <instance class="pdf" src="ill6.pdf" width="386" height="622"/>
        </illustration>
        <choice idref="sect74">If you wish to try to slow your pace, <link-text>turn to 74</link-text>.</choice>
        <choice idref="sect310">If you wish to continue at the same speed, <link-text>turn to 310</link-text>.</choice>
@@ -1330,6 +1359,13 @@ Initial revision
        <p><quote>I seek a girl; her name is Tanith,</quote> you cry, <quote>and one who is named Oz-na-Mun.</quote></p>
        <p><quote>So be it!</quote> replies the <!--ERRTAG-RA-104225-->Chaos-master<!--/ERRTAG-RA-104225-->. <quote>The bargain is struck. These things you shall have and then you must return to me and make payment.</quote></p>
        <p>Before you can ask the nature of this <!--ERRTAG-RE-100594--><quote>payment</quote>, you<!--/ERRTAG-RE-100594--> find yourself standing upon firm ground, looking out across a vast quarry of red soil. Your Ethetron lies close at hand. On the other side of the quarry you can see smoke rising from a rough wooden shack. You push the nightmare visions from your brain and head towards the shack.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small10.gif" width="386" height="150"/>
+        <instance class="pdf" src="small10.pdf" width="386" height="150"/>
+       </illustration>
        <choice idref="sect127"><link-text>Turn to 127</link-text>.</choice>
       </data>
      </section>
@@ -1424,8 +1460,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>The creatures have oily, purple-black skins with slickly matted feathers</description>
         </meta>
-        <instance class="html" src="ill7.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill7.pdf" width="120" height="120"/>
+        <instance class="html" src="ill7.gif" width="386" height="599"/>
+        <instance class="pdf" src="ill7.pdf" width="386" height="599"/>
        </illustration>
        <choice idref="sect64">If you wish to attack one of the Chaos-birds at long range with your Wizard&apos;s Staff, <link-text>turn to 64</link-text>.</choice>
        <choice idref="sect108">If you wish to wait for the Chaos-birds to draw nearer, <link-text>turn to 108</link-text>.</choice>
@@ -1447,6 +1483,13 @@ Initial revision
 
       <data>
        <p>As you regain control of the flying machine you begin to slow down. You make a rather bumpy landing in a field but both you and your craft survive it unharmed. You take out the Gyronome and its shrill call confirms that you are now in the Realm of the Singing City. Away to your left and in the distance the city glints beneath the warm sunlight. Suddenly you notice several figures heading in your direction, though they are still far off.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small5.gif" width="386" height="150"/>
+        <instance class="pdf" src="small5.pdf" width="386" height="150"/>
+       </illustration>
        <choice idref="sect85">If you wish to hide yourself and the Ethetron, <link-text>turn to 85</link-text>.</choice>
        <choice idref="sect214">If you wish to wait where you are, <link-text>turn to 214</link-text>.</choice>
       </data>
@@ -1621,8 +1664,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>The Chaos-master continually melts into new and hideous guises</description>
         </meta>
-        <instance class="html" src="ill8.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill8.pdf" width="120" height="120"/>
+        <instance class="html" src="ill8.gif" width="386" height="646"/>
+        <instance class="pdf" src="ill8.pdf" width="386" height="646"/>
        </illustration>
        <p><quote>Welcome to the Master&apos;s court!</quote> he bellows. <quote>Allow me to introduce my guests.</quote></p>
        <p>Slowly a dark-robed figure walks into the hall. He wears a hood and carries a black staff. Following immediately behind is Tanith. She gives you a brave smile.</p>
@@ -1758,8 +1801,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description><quote>Allow me to introduce Crabkey, one of our most ingenious inventors</quote></description>
         </meta>
-        <instance class="html" src="ill9.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill9.pdf" width="120" height="120"/>
+        <instance class="html" src="ill9.gif" width="386" height="644"/>
+        <instance class="pdf" src="ill9.pdf" width="386" height="644"/>
        </illustration>
        <p>You recognize the shabby man who turns to greet you; he was the man who sat in the armchair when you first entered the chamber of the Academicians. In the strange lurid glow of the laboratory his shadowed, bulging eyes make him appear even more sinister than before. <quote>We meet again,</quote> you say uncomfortably.</p>
        <p>Crabkey stares at you without speaking. Spittlethrift breaks the silence: <quote>Mr <!--ERRTAG-RE-130648-->Crabkey is<!--/ERRTAG-RE-130648--> the inventor of the machine that will enable you to journey to the Realm of the Singing City, <!--ERRTAG-RE-134180-->aren&apos;t you, Crabkey<!--/ERRTAG-RE-134180-->, old chap?</quote> Crabkey continues to stare at you insolently. With a slow blink of his huge eyes, he makes an unintelligible sound in the back of his throat and nods.</p>
@@ -1904,8 +1947,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>The Ethetron&apos;s tail is like a lizard&apos;s, its sails like bats&apos; wings</description>
         </meta>
-        <instance class="html" src="ill10.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill10.pdf" width="120" height="120"/>
+        <instance class="html" src="ill10.gif" width="386" height="628"/>
+        <instance class="pdf" src="ill10.pdf" width="386" height="628"/>
        </illustration>
        <p><quote>It is the raw stuff of the Daziarn, unformed power for the craft,</quote> explains Crabkey. <quote>Without it, the craft would fall from the sky. To steer,</quote> he continues, <quote>you must operate this lever&emdash;pull to climb, push to dive, left and right as normal. To draw more power from the glass dome you must press this metal bar at your feet; to slow down, release it. If you apply no pressure, the craft will remain where it is; if you push the lever to the left or right without power, the craft will spin on its axis. Beware, these controls are very sensitive. You need apply very little pressure to make the craft change its course.</quote></p>
        <p>When Crabkey is satisfied that you understand the controls, he introduces you to another Academician, Slypate, who hands you a shining sphere of red and yellow metal. <quote>This is a Gyronome. There is no north, east, west or south in the plane of the Daziarn, nor is there time as you perceive it,</quote> says Slypate. <quote>The only way of finding the Singing City is with the aid of this device. When you draw it out, it will emit a sound if you are heading for the Singing City. The louder the note, the surer your course. To return to the Crystal Tower, the Gyronome must be absolutely silent. It is very accurate: I invented it myself,</quote> he says with pride. You take the Special Item and place it in your pocket. (Remember to mark the Gyronome on your <a idref="action">Action Chart</a>.)</p>
@@ -1992,8 +2035,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>The hunched figure is dressed in grey rags and the flesh of his hands and face is almost transparent</description>
         </meta>
-        <instance class="html" src="ill11.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill11.pdf" width="120" height="120"/>
+        <instance class="html" src="ill11.gif" width="386" height="635"/>
+        <instance class="pdf" src="ill11.pdf" width="386" height="635"/>
        </illustration>
        <p><quote>No peace. No peace,</quote> he mutters to himself. <quote>So many interruptions&ellips; the passage of strangers, asking directions and breaking the silence.</quote> He gazes at you with a sad but steady stare. <quote>I am Drear, wanderer between worlds,</quote> he says, as if reciting a litany. <quote>Sailor upon pointless seas, traveller of timeless lands, born of a world grown old and tired. You are in the Neverness, my children, the unformed and unclaimed void of the Daziarn, where no one yet resides.</quote></p>
        <p><quote>What of yonder building?</quote> you ask.</p>
@@ -2194,8 +2237,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>You soon locate the cavern in the side of the Moaning Mountain</description>
         </meta>
-        <instance class="html" src="ill12.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill12.pdf" width="120" height="120"/>
+        <instance class="html" src="ill12.gif" width="386" height="643"/>
+        <instance class="pdf" src="ill12.pdf" width="386" height="643"/>
        </illustration>
        <choice idref="sect300"><link-text>Turn to 300</link-text>.</choice>
       </data>
@@ -2438,8 +2481,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>Everyone stares at a figure dancing maniacally on the roof of the house</description>
         </meta>
-        <instance class="html" src="ill13.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill13.pdf" width="120" height="120"/>
+        <instance class="html" src="ill13.gif" width="386" height="641"/>
+        <instance class="pdf" src="ill13.pdf" width="386" height="641"/>
        </illustration>
        <choice idref="sect154">If you wish to attack the Jahksa at long range, <link-text>turn <!--ERRTAG-RE-182908-->to 154<!--/ERRTAG-RE-182908--></link-text>.</choice>
        <choice idref="sect169">If you have the Magical Power of Elementalism and wish to use it, <link-text>turn to 169</link-text>.</choice>
@@ -2481,6 +2524,13 @@ Initial revision
        <p><quote>Yes, it&apos;s really me,</quote> you reply, with a warm smile.</p>
        <p><quote>I thought&ellips;</quote> she says with a dry sob. <quote>It was in my mind&ellips; the Black Wizard, he had your face. He took me from the Crystal Tower and brought me here. By the time I realized it wasn&apos;t you, the <!--ERRTAG-RA-192805-->Chaos-master<!--/ERRTAG-RA-192805--> had asked me what gift I desired. I asked for you, Grey Star, and the <!--ERRTAG-RA-192805-->Chaos-master<!--/ERRTAG-RA-192805--> told me that the Black Wizard was you. Then my mind was full of fear and loathing. I&emdash;</quote></p>
        <p><quote>You don&apos;t have to explain. It&apos;s all right. I understand.</quote></p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small7.gif" width="386" height="150"/>
+        <instance class="pdf" src="small7.pdf" width="386" height="150"/>
+       </illustration>
        <p>Outside, a strange, yet familiar voice sends a chill down your spine. <quote>How touching; how noble. Such understanding,</quote> it sneers. You rush outside to see a hooded figure dressed all in black. Slowly, deliberately, the hood is pulled aside to reveal your own face staring back at you. <quote>Greetings, brother,</quote> says your voice. <quote>We meet at last.</quote></p>
        <choice idref="sect291"><link-text>Turn to 291</link-text>.</choice>
       </data>
@@ -2600,8 +2650,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>Mountains stand on their peaks and cities float haphazardly in the air</description>
         </meta>
-        <instance class="html" src="ill14.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill14.pdf" width="120" height="120"/>
+        <instance class="html" src="ill14.gif" width="386" height="642"/>
+        <instance class="pdf" src="ill14.pdf" width="386" height="642"/>
        </illustration>
        <choice idref="sect156">If you have the Magical Power of Enchantment, <link-text>turn to 156</link-text>.</choice>
        <p>If you do not have this Magical Power, pick a number from the <a idref="random">Random Number Table</a> and add it to your <typ class="attribute">WILLPOWER</typ> score.</p>
@@ -2660,6 +2710,13 @@ Initial revision
 
       <data>
        <p><quote>Get out of my mind!</quote> she screams, desperation and pain in her voice. Quickly you extinguish the glow of the Gem for fear of damaging her mind. Outside, you hear a voice that sends an icy chill coursing through your body.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small7.gif" width="386" height="150"/>
+        <instance class="pdf" src="small7.pdf" width="386" height="150"/>
+       </illustration>
        <p><quote>How sad. Tragic. Such a waste of energy on a girl who despises you.</quote> You rush out of the room to see a hooded figure dressed in black. Slowly the hood is pulled away to reveal your own face looking back at you. <quote>Greetings brother,&apos; sneers a voice identical to your own. &apos;We meet at last.</quote></p>
        <choice idref="sect291"><link-text>Turn to 291</link-text>.</choice>
       </data>
@@ -2693,6 +2750,13 @@ Initial revision
 
       <data>
        <p>To the delighted cheers of the Elessin, the statue of the Screaming God is carried from the palace and away from the Singing City.<a id="sect182-1" idref="sect182-1-foot" class="footnote" /> It is taken to the grove of trees where your flying machine is hidden and loaded aboard. <thought>Many thanks, Grey Star,</thought> says the Guardian. <thought>Today you give us our freedom. Is there some way we can repay you?</thought></p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small10.gif" width="386" height="150"/>
+        <instance class="pdf" src="small10.pdf" width="386" height="150"/>
+       </illustration>
        <p><quote>I seek the Moonstone of the Shianti,</quote> you say. <quote>Long ago they hid it somewhere on the plane of the Daziarn, our name for the realms gathered here. Can you tell me exactly where it is hidden?</quote></p>
        <p>The Elessi shakes his head. <thought>I have never heard of such a thing but there is one who surely might. In the Realm of Paradox lives one called Oz-na-Mun, he of the mighty hand. He is wise and knowledgeable; perhaps he will know.</thought></p>
        <p><quote>How may I find this Realm of Paradox? My only guide is this.</quote> You show the Guardian the Gyronome. <quote>And it can only guide me between here and the Neverness.</quote></p>
@@ -3032,6 +3096,13 @@ Initial revision
 
       <data>
        <p>You ignore the man, who soon disappears from view. You continue across the cloud plane towards the building and soon you can make out the shape of a tall tower, gleaming faintly with a strange, brittle light. The tower appears to be constructed from great shards of black crystal, and its architecture possess an alien quality that is both puzzling and intriguing.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small4.gif" width="386" height="150"/>
+        <instance class="pdf" src="small4.pdf" width="386" height="150"/>
+       </illustration>
        <choice idref="sect167"><link-text>Turn to 167</link-text>.</choice>
       </data>
      </section>
@@ -3067,8 +3138,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>The Elessin have soft, flute-like voices and wear short togas</description>
         </meta>
-        <instance class="html" src="ill15.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill15.pdf" width="120" height="120"/>
+        <instance class="html" src="ill15.gif" width="386" height="611"/>
+        <instance class="pdf" src="ill15.pdf" width="386" height="611"/>
        </illustration>
        <choice idref="sect45">If you wish to go with the Elessin, <link-text>turn to 45</link-text>.</choice>
        <choice idref="sect6">If you wish to attack them with your Wizard&apos;s Staff, <link-text>turn to 6</link-text>.</choice>
@@ -3086,8 +3157,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>Seven eyeless heads on long, slender necks wave before you</description>
         </meta>
-        <instance class="html" src="ill16.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill16.pdf" width="120" height="120"/>
+        <instance class="html" src="ill16.gif" width="386" height="634"/>
+        <instance class="pdf" src="ill16.pdf" width="386" height="634"/>
        </illustration>
        <choice idref="sect194">If you wish to attack the creature with your Staff, <link-text>turn to 194</link-text>.</choice>
        <choice idref="sect171">If you wish to manoeuvre between the long-necked monsters, <link-text>turn to 171</link-text>.</choice>
@@ -3105,8 +3176,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>Everywhere is a growing, verdant splendour</description>
         </meta>
-        <instance class="html" src="ill17.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill17.pdf" width="120" height="120"/>
+        <instance class="html" src="ill17.gif" width="386" height="638"/>
+        <instance class="pdf" src="ill17.pdf" width="386" height="638"/>
        </illustration>
        <choice idref="sect177">If you have the Magical Power of Alchemy, <link-text>turn to 177</link-text>.</choice>
        <choice idref="sect293">If you do not have this Magical Power, <link-text>turn to 293</link-text>.</choice>
@@ -3239,6 +3310,13 @@ Initial revision
 
       <data>
        <p>You come to a main road that crosses your path into the valley. It leads into a village, which you can see in the distance, hugging a small wood of squat trees. Strangely, there is a lot of smoke rising from the village.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small3.gif" width="386" height="150"/>
+        <instance class="pdf" src="small3.pdf" width="386" height="150"/>
+       </illustration>
        <choice idref="sect201"><link-text>Turn to 201</link-text>.</choice>
       </data>
      </section>
@@ -3384,8 +3462,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>In the palace of the Screaming God there is a grotesque but life-like statue of a child</description>
         </meta>
-        <instance class="html" src="ill18.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill18.pdf" width="120" height="120"/>
+        <instance class="html" src="ill18.gif" width="386" height="610"/>
+        <instance class="pdf" src="ill18.pdf" width="386" height="610"/>
        </illustration>
        <choice idref="sect322">If you wish to attack the Guardian of the Threnogem, <link-text>turn to 322</link-text>.</choice>
        <choice idref="sect71">If you wish to snatch the Threnogem from the statue&apos;s mouth and try to break out of the Palace of the Screaming God, <link-text>turn to 71</link-text>.</choice>
@@ -3476,6 +3554,13 @@ Initial revision
 
       <data>
        <p>You are soaring through a starlit sky, myriad tiny <!--ERRTAG-RE-264401-->pinpoints<!--/ERRTAG-RE-264401--> of light shining above. Tanith clutches your arm and points below at a swirling gaseous incandescence, lit by sporadic bursts of violet lightning. Suddenly, a huge, webbed claw as tall as a house, with green, shining skin rises up out of the mists.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small11.gif" width="386" height="150"/>
+        <instance class="pdf" src="small11.pdf" width="386" height="150"/>
+       </illustration>
        <p>Add together your <typ class="attribute">COMBAT SKILL</typ> and current <typ class="attribute">WILLPOWER</typ> points.</p>
        <choice idref="sect215">If the total is 15 or more, <link-text>turn to 215</link-text>.</choice>
        <choice idref="sect233">If the total is less than 15, <link-text>turn to 233</link-text>.</choice>
@@ -3518,8 +3603,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>Spittlethrift claps his pudgy hands together and smiles happily</description>
         </meta>
-        <instance class="html" src="ill19.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill19.pdf" width="120" height="120"/>
+        <instance class="html" src="ill19.gif" width="386" height="638"/>
+        <instance class="pdf" src="ill19.pdf" width="386" height="638"/>
        </illustration>
        <p><quote>Who are you?</quote> you ask, still breathless.</p>
        <p><quote>I am Spittlethrift, scholar, professor and master of the Crystal Tower. Yes, yes&ellips; a tower of learning, a veritable pillar of wisdom and knowledge, ha, ha, indeed!</quote> He takes a pair of wire-framed spectacles and places them on the end of his smudge of a nose. <quote>You are not <!--ERRTAG-RE-264296-->alone, I<!--/ERRTAG-RE-264296--> see.</quote> He squints at Tanith. <quote>Most pleasing, enchanting&ellips; yes, yes, well done! You have passed the test; you will suffice.</quote> He turns towards the door and flutters his hands in an agitated manner. <quote>Come now, you must meet the rest of us. Oh yes, delightful, engaging, so wonderfully entertaining!</quote></p>
@@ -3598,6 +3683,13 @@ Initial revision
 
       <data>
        <p><quote>Looking for me?</quote> asks a contemptuous voice. You look up and see a hooded figure dressed in black, carrying a long, black staff. Slowly the hood is pulled away to reveal your own face staring back at you. <quote>Greetings, brother,</quote> your own voice laughs, coldly. <quote>We meet at last.</quote></p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small7.gif" width="386" height="150"/>
+        <instance class="pdf" src="small7.pdf" width="386" height="150"/>
+       </illustration>
        <choice idref="sect291"><link-text>Turn to 291</link-text>.</choice>
       </data>
      </section>
@@ -3699,6 +3791,13 @@ Initial revision
 
       <data>
        <p>You break the trance and breathe out through clenched teeth. Tanith is confused. She tries to make sense of the visions that you have placed in her mind and the magical compulsion that forces her to fear you. Outside, you hear a voice that sends an icy chill through your body.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small7.gif" width="386" height="150"/>
+        <instance class="pdf" src="small7.pdf" width="386" height="150"/>
+       </illustration>
        <p><quote>How sad. Tragic. Such a waste of energy on a girl who despises you.</quote> You rush out of the room to see a hooded figure dressed entirely in black and carrying a long, black staff. Slowly, deliberately; the hood is pulled away to reveal your own face looking back at you. <quote>Greetings, brother,</quote> sneers a voice identical to your own. <quote>We meet at last,</quote> it laughs, mockingly.</p>
        <choice idref="sect291"><link-text>Turn to 291</link-text>.</choice>
       </data>
@@ -3799,6 +3898,13 @@ Initial revision
 
       <data>
        <p><quote>I will take what is mine,</quote> he says. He reaches out to take the Moonstone, a greedy gleam in his eyes. You have seconds in which to act.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small2.gif" width="386" height="150"/>
+        <instance class="pdf" src="small2.pdf" width="386" height="150"/>
+       </illustration>
        <choice idref="sect243">If you wish to attack the Jahksa, <link-text>turn to 243</link-text>.</choice>
        <choice idref="sect218">If not, <link-text>turn to 218</link-text>.</choice>
       </data>
@@ -3812,6 +3918,13 @@ Initial revision
        <p><quote>It&apos;s me,</quote> you whisper.</p>
        <p><quote>Grey Star,</quote> she sobs. <quote>I thought&ellips; it was in my mind&ellips; the Black Wizard, he had your face. He took me from the Crystal Tower and brought me here. The <!--ERRTAG-RA-298227-->Chaos-master<!--/ERRTAG-RA-298227--> asked me what gift I desired and I asked for you, Grey Star. Then the <!--ERRTAG-RA-298227-->Chaos-master<!--/ERRTAG-RA-298227--> told me that the Black Wizard was you and then my mind was full of hate and loathing. <!--ERRTAG-RE-288977-->I&ellips;<!--/ERRTAG-RE-288977--></quote></p>
        <p><quote>You don&apos;t have to explain; it&apos;s all right, I understand,</quote> you say. From outside the shack, a sneering voice sends an unnatural chill through your body.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small7.gif" width="386" height="150"/>
+        <instance class="pdf" src="small7.pdf" width="386" height="150"/>
+       </illustration>
        <p><quote>How touching; how nice. Such understanding.</quote> The evil voice laughs, mockingly. You run outside to see a hooded figure in a black robe carrying a black staff. Slowly, deliberately, the hood is pulled aside to reveal your own face; your own eyes stare back at you as if you were looking into a mirror. <quote>Greetings, brother,</quote> says your voice, with a bitter laugh. <quote>We meet at last.</quote></p>
        <choice idref="sect291"><link-text>Turn to 291</link-text>.</choice>
       </data>
@@ -4167,8 +4280,8 @@ Initial revision
          <creator>Paul Bonner</creator>
          <description>The Vale people take you to the Silver Lake which lies high in the mountains</description>
         </meta>
-        <instance class="html" src="ill20.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill20.pdf" width="120" height="120"/>
+        <instance class="html" src="ill20.gif" width="386" height="641"/>
+        <instance class="pdf" src="ill20.pdf" width="386" height="641"/>
        </illustration>
        <p>You do exactly as they say and when you reach the surface you discover no water at all; merely the passing touch of something as light as gossamer.</p>
        <choice idref="sect247"><link-text>Turn to 247</link-text>.</choice>
@@ -4653,6 +4766,13 @@ Initial revision
 
       <data>
        <p>Triumphantly, the Jahksa deals a killing blow. You feel a searing pain tear through your body, but miraculously you are not slain. The Moonstone, instrument of judgement and truth, has made a reality of Shasarak&apos;s mockery of you. In killing you the Jahksa has killed itself. With a howl, the Jahksa dissolves into black shadows and returns to the spirit realm from whence it came.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small2.gif" width="386" height="150"/>
+        <instance class="pdf" src="small2.pdf" width="386" height="150"/>
+       </illustration>
        <p>With a thrill of <!--ERRTAG-RE-353877-->anticipation, you<!--/ERRTAG-RE-353877--> take up the Moonstone. It flares, as if in <!--ERRTAG-RE-353983-->recognition, at<!--/ERRTAG-RE-353983--> the touch of your hand. It glows with a warm, familiar feeling as it nestles in the palm of your hand. Tanith&apos;s eyes are wild and shining with triumph. You have fulfilled your pledge and completed the quest&ellips; almost. Armed with the might of the Moonstone, you now possess the only known power that could throw down the evil Wytch-king, Shasarak. But that is another story, and the day is yet to come.</p>
        <p>The final conflict in your fight against the Shadakine Empire is concluded in Book 4 of the Grey Star saga, <!--ERRTAG-RE-358789-->entitled<!--/ERRTAG-RE-358789-->:</p>
        <p><cite><a href="&link.04wotw;">War of the Wizards</a></cite></p>
@@ -5023,6 +5143,16 @@ Initial revision
       <data>
        <ul class="unbulleted">
         <li><a idref="powers">Magical Powers</a></li>
+        <li><a idref="sect247">247</a></li>
+        <li><a idref="sect275">275</a>, <a idref="sect350">350</a></li>
+        <li><a idref="sect228">228</a></li>
+        <li><a idref="sect211">211</a></li>
+        <li><a idref="sect77">77</a></li>
+        <li><!-- small6 placements --></li>
+        <li><a idref="sect163">163</a>, <a idref="sect179">179</a>, <a idref="sect255">255</a>, <a idref="sect265">265</a>, <a idref="sect276">276</a></li>
+        <li><!--small8 placements--></li>
+        <li><a idref="sect14">14</a>, <a idref="sect32">32</a></li>
+        <li><a idref="sect67">67</a>, <a idref="sect182">182</a></li>
        </ul>
       </data>
      </section>
