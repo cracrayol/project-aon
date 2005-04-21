@@ -20,8 +20,10 @@
 $Id$
 
 $Log$
-Revision 1.3  2005/04/01 22:31:02  jonathan.blake
-Illustration code added by jffdougan - still needs dimensions
+Revision 1.4  2005/04/21 15:52:00  jonathan.blake
+Secondary illustrations placed. Replacement illustration for section 264 commented out. Illustration Transcription credit needs placing.
+
+Completed primary illustration information. Added commented notes for secondary illustrations.
 
 Revision 1.2  2005/03/10 18:21:51  jonathan.blake
 Removed link to old staff email address.
@@ -144,7 +146,20 @@ Change Log:
 - Section 350: changed markup on <i>Kundi</i> magic to <em>
 
 -->
-
+<!--
+Secondary illustration summaries:
+small1: old man (jailer? he has keys)
+small2: portkeeper in Suhn (dude who buys your boat)
+small3: mantiz coming out of the ground
+small4: creepy-looking man in city
+small5: redeemer's medallion
+small6: Tanith on a ledge
+small7: something coming up from out of the ground
+small8: hand coming up from the ground
+small9: merchant in suhn
+small10: the azakawa plants
+small11: wheel breaking off a wagon?
+-->
  <meta>
   <title>Grey Star the Wizard</title>
   <creator class="short">Ian Page and Joe Dever</creator>
@@ -215,6 +230,8 @@ Change Log:
        <dl>
         <dt>Transcription</dt>
          <dd>Ryan Cross<br />Max Silvestri</dd>
+	<dt>Illustration Transcription</dt>
+	 <dd>Jonathan Blake<br />Simon Osborne</dd>
         <dt>XML</dt>
          <dd>Jonathan Blake<br />Jeff Dougan<br />Thomas Wolmer</dd>
        <dt>Alternate Illustrations</dt>
@@ -628,8 +645,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>With quaking heart you enter the sacred temple of Amida</description>
         </meta>
-        <instance class="html" src="ill1.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill1.pdf" width="120" height="120"/>
+        <instance class="html" src="ill1.gif" width="386" height="642"/>
+        <instance class="pdf" src="ill1.pdf" width="386" height="642"/>
        </illustration>
        <p><quote>Grey Star,</quote> he says, a warm smile lighting his serene face, <quote>the time has come for you to leave. Far will you travel and perilous is your course. Be not afraid, yet do not fear caution. Though you go with the teaching and blessing of the Shianti and carry the might of the Wizard&apos;s Staff, stealth and secrecy will be your allies. Let not courage defeat wisdom. Go now and seek the Kundi race that are called the Lost Tribe of Lara. You are the instrument of our will, bearer of our hope. Ever will your quest be in our minds and hearts.</quote></p>
        <p>Without a word, you turn and leave the temple, not looking back until you reach the shore, where a sail boat awaits you. With a gentle sigh, you bid farewell to the island of your youth and push the little craft into the cold waters of the Sea of Dreams. You jump into the boat and set sail, making a westward course for the distant mainland of the Shadakine Empire.</p>
@@ -763,6 +780,13 @@ Change Log:
 
       <data>
        <p>The forest is very near and it is a dark night. Fortunately, you have not been seen. Diving into the undergrowth at the forest&apos;s edge, you lie as still as possible as the Shadakine chariot rattles past at breakneck speed. The vicious blades on the wheel hubs flash as the chariot passes dangerously close to your hiding place.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small11.gif" width="386" height="150"/>
+        <instance class="pdf" src="small11.pdf" width="386" height="150"/>
+       </illustration>
        <p>You wait with bated breath for several minutes after it has passed, but the chariot does not return.</p>
        <choice idref="sect75"><link-text>Turn to 75</link-text>.</choice>
       </data>
@@ -825,8 +849,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>There is a pause while you all consider the problem</description>
         </meta>
-        <instance class="html" src="ill2.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill2.pdf" width="120" height="120"/>
+        <instance class="html" src="ill2.gif" width="386" height="644"/>
+        <instance class="pdf" src="ill2.pdf" width="386" height="644"/>
        </illustration>
        <p>There is a pause while you all consider the problem. Finally you ask if they have any suggestions. Shan&apos;s advice is to journey south to the Azanam, which he believes to be the most likely haunt of the lost tribe, and he offers to guide you there.</p>
        <p><quote>But if you are wrong,</quote> says Tanith, <quote>we will have journeyed far and into great danger unnecessarily. We need guidance. Three days&apos; travel to the north of here lives Jnana the Wise, a hermit sage, <quote>He Who Serves No Master</quote>. I can take you to him.</quote></p>
@@ -954,8 +978,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>Stagnant pools and swamps are overgrown with clumps of rope-like tendrils</description>
         </meta>
-        <instance class="html" src="ill3.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill3.pdf" width="120" height="120"/>
+        <instance class="html" src="ill3.gif" width="386" height="602"/>
+        <instance class="pdf" src="ill3.pdf" width="386" height="602"/>
        </illustration>
        <p>It becomes increasingly hard to remain close to the river&apos;s edge without clusters of Yaku tendrils blocking your path.</p>
        <choice idref="sect54">If you wish to move further away from the Azan River and the difficult ground that borders it, <link-text>turn to 54</link-text>.</choice>
@@ -1012,6 +1036,13 @@ Change Log:
        <p>The alley is deserted. Peering into the dark shadows, you step cautiously into the darkness. Suddenly you are grabbed from behind and a knife is held at your throat.</p>
        <p><quote>Turn around,</quote> a voice whispers, menacingly. <quote>Slowly, or I&apos;ll cut your throat. Then hand over your money.</quote></p>
        <p>Slowly you turn to face the shabby thief.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small4.gif" width="386" height="150"/>
+        <instance class="pdf" src="small4.pdf" width="386" height="150"/>
+       </illustration>
        <choice idref="sect76">If you do not have any money, or have money but do not wish to hand it over, <link-text>turn to 76</link-text>.</choice>
        <choice idref="sect133">If you prefer to hand over your money, <link-text>turn to 133</link-text>.</choice>
       </data>
@@ -1078,8 +1109,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>The knights are defending a heavily laden wagon</description>
         </meta>
-        <instance class="html" src="ill4.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill4.pdf" width="120" height="120"/>
+        <instance class="html" src="ill4.gif" width="386" height="622"/>
+        <instance class="pdf" src="ill4.pdf" width="386" height="622"/>
        </illustration>
        <p>Six armoured knights, clad in blue and red robes, are battling with twenty Shadakine warriors. The knights are defending a heavily laden wagon that stands in the middle of a wide stone bridge. Perched on the wagon sits an unarmed man, richly clothed, looking fearfully upon the battle. He and his knights are outnumbered. Though skilled swordsmen, as the many Shadakine dead attest, they are hard-pressed, and have little chance of holding the bridge.</p>
        <p><quote>They don&apos;t stand a chance,</quote> you murmur.</p>
@@ -1624,8 +1655,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>Shadow forms are flowing out of the walls and floor</description>
         </meta>
-        <instance class="html" src="ill5.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill5.pdf" width="120" height="120"/>
+        <instance class="html" src="ill5.gif" width="386" height="657"/>
+        <instance class="pdf" src="ill5.pdf" width="386" height="657"/>
        </illustration>
        <p><quote>Quickly,</quote> you hiss. <quote>Come with me.</quote> You run through the door and into the corridor outside. Shadow forms are flowing out of the walls and floor, and everywhere spirit shapes fly in all directions. You turn to your right and see the horribly mutilated corpse of the jailer. Still clenched in his mortifying fist is a small Dagger. You may take <!--ERRTAG-RE-132686-->this item<!--/ERRTAG-RE-132686--> if you wish. (Remember to mark it on your <a idref="action">Action Chart</a> under the Weapons section.)</p>
        <choice idref="sect125">If you wish to take the Jailer&apos;s Keys and free the other prisoners on this level, <link-text>turn to 125</link-text></choice>
@@ -1785,8 +1816,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>You unleash the power of the Wizard's Staff, killing one of the shrieking creatures in mid-air</description>
         </meta>
-        <instance class="html" src="ill6.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill6.pdf" width="120" height="120"/>
+        <instance class="html" src="ill6.gif" width="386" height="657"/>
+        <instance class="pdf" src="ill6.pdf" width="386" height="657"/>
        </illustration>
        <p><quote>No!</quote> screams Tanith, running off into the barren hills. The Najin rally and gather around you, hovering. Yammering wildly, the first of the little creatures attacks you.</p>
        <p>There are nine Najin and they attack one at a time, attempting to claw and bite you. If you have another weapon, you pass it to Shan who then adds 2 to your <typ class="attribute">COMBAT SKILL</typ>. (Remember to delete this weapon from your <a idref="action">Action Chart</a>.<a id="sect101-1" idref="sect101-1-foot" class="footnote"/>)</p>
@@ -1843,8 +1874,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>lso seated at the table are a tattooed sailor, a drunken merchant and a hooded character</description>
         </meta>
-        <instance class="html" src="ill7.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill7.pdf" width="120" height="120"/>
+        <instance class="html" src="ill7.gif" width="386" height="644"/>
+        <instance class="pdf" src="ill7.pdf" width="386" height="644"/>
        </illustration>
        <choice idref="sect313">If you have the <!--ERRTAG-RE-150498-->Power of Prophecy<!--/ERRTAG-RE-150498-->, and wish to use it, <link-text>turn to 313</link-text>.</choice>
        <choice idref="sect79">If you wish to speak to the tattooed sailor who sits snoring beside you, <link-text>turn to 79</link-text>.</choice>
@@ -2099,6 +2130,13 @@ Change Log:
 
       <data>
        <p>As the Shadakine warrior crumples and falls, the excited mob roar their approval. They hail you as a hero and crowd around you cheering. A new sound floats on the harbour wind and the uproar subsides. You can hear the clatter of pounding hooves and the rumble of thundering wheels. A wave of panic ripples through the crowd. <quote>The Wheels of Death!</quote> someone shouts.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small11.gif" width="386" height="150"/>
+        <instance class="pdf" src="small11.pdf" width="386" height="150"/>
+       </illustration>
        <p>Three war chariots, driven by whip-wielding Shadakine, hurtle into the harbour. The chariot wheels have blades protruding from their hubs, and as the Shadakine plough into the crowd, the blades scythe down anyone in their path.</p>
        <p>In the confused panic, you see a chance to escape into a dark, narrow street.</p>
        <choice idref="sect50">If you wish to run towards the main entrance, <link-text>turn to 50</link-text>.</choice>
@@ -2247,8 +2285,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>This is the Port of Suhn</description>
         </meta>
-        <instance class="html" src="ill8.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill8.pdf" width="120" height="120"/>
+        <instance class="html" src="ill8.gif" width="386" height="636"/>
+        <instance class="pdf" src="ill8.pdf" width="386" height="636"/>
        </illustration>
        <choice idref="sect112">If you wish to enter the port before nightfall, <link-text>turn to 112</link-text>.</choice>
        <choice idref="sect280">If you wish to wait for darkness to descend, <link-text>turn to 280</link-text>.</choice>
@@ -2314,6 +2352,13 @@ Change Log:
 
       <data>
        <p>Standing in the centre of the large clearing, hemmed in on all sides by giant Azawood trees and clumps of sprawling undergrowth, you stand and catch your breath. A look around the glade reveals a number of holes in the floor&emdash;entrances, no doubt, to similar shafts to the one you have left.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small3.gif" width="226" height="150"/>
+        <instance class="pdf" src="small3.pdf" width="226" height="150"/>
+       </illustration>
        <p>In a relentless tide, hundreds of Cave Mantiz pour out of these holes and stream towards you. Suddenly a pair of waving antennae appears in the entrance of a shaft close to where you stand.</p>
        <choice idref="sect158">If you wish to fire a bolt from your Wizard&apos;s Staff into the shaft by your feet, <link-text>turn to 158</link-text>.</choice>
        <choice idref="sect232">If you wish to dash straight into the undergrowth, <link-text>turn to 232</link-text>.</choice>
@@ -2353,8 +2398,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description><quote>A Kleas&aacute;!</quote> Tanith screams. <quote>A Soul-eater!</quote></description>
         </meta>
-        <instance class="html" src="ill9.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill9.pdf" width="120" height="120"/>
+        <instance class="html" src="ill9.gif" width="386" height="649"/>
+        <instance class="pdf" src="ill9.pdf" width="386" height="649"/>
        </illustration>
        <p>You must fight the Kleas&aacute; to the death. For every round of combat, subtract 1 <typ class="attribute">WILLPOWER</typ> point and 2 <typ class="attribute">ENDURANCE</typ> points from your total. If you have erected a magical shield of Sorcery, subtract 1 <typ class="attribute">WILLPOWER</typ> point and 1 <typ class="attribute">ENDURANCE</typ> point for every round of combat as the Kleas&aacute; tries to claw at your soul.</p>
        <combat><enemy>Kleas&aacute;</enemy><enemy-attribute class="combatskill">25</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat>
@@ -2494,6 +2539,13 @@ Change Log:
       <data>
        <p>The hopping, fluttering Najin lead you into the stark, featureless hills. Eventually you come to a small cave entrance perched on a narrow ridge, overlooking a steep fall to the outlying hills below.</p>
        <p>An old man sits cross-legged before the cave entrance, staring out across the heights with sightless eyes. Without lifting his head or looking in your direction, he speaks. <quote>Who comes? Who disturbs the solitude of Jnana?</quote></p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small6.gif" width="386" height="150"/>
+        <instance class="pdf" src="small6.pdf" width="386" height="150"/>
+       </illustration>
        <p><quote>It is I, Tanith,</quote> she says. <quote>I bring Grey Star, a great wizard who dares to oppose the evil Wytch-king. He is in need of counsel.</quote></p>
        <p><quote>I seek the Lost Tribe of Lara,</quote> you say, <quote>for I have a quest and need their aid.</quote></p>
        <p>The old man is silent for a while. <quote>You must go south to the great jungle of the Azanam. The way is fraught with danger, for you must pass through the great Azagad Gorge and the towers of stone known as the <quote>Dragon&apos;s Teeth</quote>.</quote></p>
@@ -2660,8 +2712,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description><quote>I sense some wizardry in you,</quote> murmurs Mother Magri</description>
         </meta>
-        <instance class="html" src="ill10.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill10.pdf" width="120" height="120"/>
+        <instance class="html" src="ill10.gif" width="386" height="639"/>
+        <instance class="pdf" src="ill10.pdf" width="386" height="639"/>
        </illustration>
        <p>If you do not resist the power of the Kazim Stone, your quest and its origin will be revealed to this servant of the Wytch-king.</p>
        <choice idref="sect191">If you have the <!--ERRTAG-RA-215009-->Power of Sorcery<!--/ERRTAG-RA-215009--> and wish to use it to destroy the Kazim Stone, <link-text>turn to 191</link-text>.</choice>
@@ -2706,6 +2758,13 @@ Change Log:
       <data>
        <p>Raising your Staff, you attack the Yaku. A fiery bolt burns into the heart of the plant and it releases its grip immediately. The attack has cost you 1 <typ class="attribute">WILLPOWER</typ> point.</p>
        <p>Suddenly Shan falls to the ground, emitting a startled cry; a snaking creeper is wrapped tightly around his legs.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small10.gif" width="386" height="150"/>
+        <instance class="pdf" src="small10.pdf" width="386" height="150"/>
+       </illustration>
        <choice idref="sect285">If you wish to loose a bolt at the Yaku as it drags Shan towards its centre, <link-text>turn to 285</link-text>.</choice>
        <choice idref="sect240">If you wish to rush to Shan&apos;s side, <link-text>turn to 240</link-text>.</choice>
       </data>
@@ -2752,6 +2811,13 @@ Change Log:
       <data>
        <p>One stall in particular catches your eye. A sign reads:</p>
        <signpost>MADAM TARLAS&emdash;HERBAL CURES &amp; REMEDIES<br />APOTHECARY TO NOBLEMEN &amp; KINGS</signpost>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small9.gif" width="386" height="150"/>
+        <instance class="pdf" src="small9.pdf" width="386" height="150"/>
+       </illustration>
        <p>The stall is full of potions and salves and the dried leaves and roots of many different plants, some of great power and others of no use at all. Your trained eye notices several items for sale that could be of great use to you as an alchemist. They are:</p>
        <ul>
         <li>1 Jar of Ezeran Crystals (which produce an acid capable of melting metal when combined with sulphur). Cost: <em>5 Nobles</em></li>
@@ -2933,8 +2999,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>The speed and ferocity of the soldier Mantiz is astonishing</description>
         </meta>
-        <instance class="html" src="ill11.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill11.pdf" width="120" height="120"/>
+        <instance class="html" src="ill11.gif" width="386" height="639"/>
+        <instance class="pdf" src="ill11.pdf" width="386" height="639"/>
        </illustration>
        <combat><enemy>Soldier Mantiz</enemy><enemy-attribute class="combatskill">15</enemy-attribute><enemy-attribute class="endurance">10</enemy-attribute></combat>
        <choice idref="sect213">If you win the combat, <link-text>turn to 213</link-text>.</choice>
@@ -3255,8 +3321,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>The Shadakine steps forward snarling his defiance</description>
         </meta>
-        <instance class="html" src="ill12.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill12.pdf" width="120" height="120"/>
+        <instance class="html" src="ill12.gif" width="386" height="640"/>
+        <instance class="pdf" src="ill12.pdf" width="386" height="640"/>
        </illustration>
        <p>You cannot avoid the combat owing to the circle of people around you and must fight the Shadakine to the death.</p>
        <combat><enemy>Shadakine Warrior</enemy><enemy-attribute class="combatskill">13</enemy-attribute><enemy-attribute class="endurance">20</enemy-attribute></combat>
@@ -3358,8 +3424,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>Shan is dragged towards the venomous mouth of the Quoku</description>
         </meta>
-        <instance class="html" src="ill13.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill13.pdf" width="120" height="120"/>
+        <instance class="html" src="ill13.gif" width="386" height="628"/>
+        <instance class="pdf" src="ill13.pdf" width="386" height="628"/>
        </illustration>
        <choice idref="sect337"><link-text>Turn to 337</link-text>.</choice>
       </data>
@@ -3446,8 +3512,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>Ahead stand three Shadakine warriors with weapons loaded</description>
         </meta>
-        <instance class="html" src="ill14.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill14.pdf" width="120" height="120"/>
+        <instance class="html" src="ill14.gif" width="386" height="637"/>
+        <instance class="pdf" src="ill14.pdf" width="386" height="637"/>
        </illustration>
        <p><quote>Halt, or you&apos;re dead!</quote> shouts the Shadakine officer, savagely.</p>
        <choice idref="sect300">If you wish to obey his order, <link-text>turn to 300</link-text>.</choice>
@@ -3473,6 +3539,13 @@ Change Log:
       <data>
        <p>Without warning you attack the jailer who, despite his frail appearance, responds to your attack with savage blows. Owing to Shan&apos;s assistance and the element of surprise, you may add 4 points to your <typ class="attribute">COMBAT SKILL</typ> for the duration of this fight. You cannot evade and must fight to the death.</p>
        <combat><enemy>Jailer</enemy><enemy-attribute class="combatskill">8</enemy-attribute><enemy-attribute class="endurance">14</enemy-attribute></combat>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small1.gif" width="386" height="150"/>
+        <instance class="pdf" src="small1.pdf" width="386" height="150"/>
+       </illustration>
        <p>If you win the fight you may keep the jailer&apos;s Dagger (mark it on your <a idref="action">Action Chart</a> as a Weapon).</p>
        <choice idref="sect125">If you wish to take the Jailer&apos;s Keys and free the other prisoners on this level, <link-text>turn to 125</link-text>.</choice>
        <choice idref="sect338">If you wish to head in the direction that the jailer came from, <link-text>turn to 338</link-text>.</choice>
@@ -3727,12 +3800,21 @@ Change Log:
       <data>
        <p>Suddenly you remember the Medallion given to you by the <quote>Redeemer</quote> in the Inn of the Laughing Moon. You take it out and stare intently at the rune inscribed upon it. Surely there is some clue here. You take out the pink potion that the <quote>Redeemer</quote> gave you and pull out the stopper of the vial. Sniffing the contents, you recognize the scent of Calacena: a mushroom whose spores induce visions much prized by magicians and illusionists. With some trepidation, you swallow the potion and discard the contaminated vial. (Delete this Backpack Item from your <a idref="action">Action Chart</a>.) You stare once again at the Medallion as the potion begins to take effect.</p>
        <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small5.gif" width="331" height="150"/>
+        <instance class="pdf" src="small5.pdf" width="331" height="150"/>
+       </illustration>
+       <!--
+       <illustration class="inline">
        <meta>
         <creator>Christopher Lundgren</creator>
        </meta>
        <instance class="html" src="sect264.gif" width="386" height="286"/>
        <instance class="pdf" src="sect264.pdf" width="386" height="286"/>
       </illustration>
+      -->
        <p>A close examination of the rune inscribed upon the Medallion will tell you which section number to turn to next.<a id="sect264-1" idref="sect264-1-foot" class="footnote"/></p>
        <choice idref="sect190">If you cannot solve the riddle of the rune and wish to take Shan&apos;s advice, <link-text>turn to 190</link-text>.</choice>
        <choice idref="sect134">If you cannot solve the riddle of the rune and wish to seek the counsel of Jnana the Wise, <link-text>turn to 134</link-text>.</choice>
@@ -3760,8 +3842,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>The Quoku hurtles towards you with astonishing speed</description>
         </meta>
-        <instance class="html" src="ill15.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill15.pdf" width="120" height="120"/>
+        <instance class="html" src="ill15.gif" width="386" height="644"/>
+        <instance class="pdf" src="ill15.pdf" width="386" height="644"/>
        </illustration>
        <p>More Quoku are leaping from their towers of stone, pushing high into the air with their powerful back legs and then gliding in circles around their columns, drifting with the warm air currents. The first of the creatures climbs gently, rolls to one side and then pulls into a steep dive. The Quoku hurtles towards you with astonishing speed: a hawk in pursuit of its prey.</p>
        <choice idref="sect330">If you wish to try to evade the diving Quoku, <link-text>turn to 330</link-text>.</choice>
@@ -3818,6 +3900,13 @@ Change Log:
       <data>
        <p>You decide to look for aid on the elemental plane. You drift into a trance and begin to chant, meditating on your need and hoping that the elemental spirits will understand the nature of your predicament. The chant over, you wait. At first, all is quiet and you fear that you have failed. Then a rumbling noise echoes below your feet, and a shuddering tremor makes you stumble.</p>
        <p><quote>Stand by the wall, away from the centre of the cell,</quote> you warn Shan. A large crack appears in the ground, widening to a great hole as the head and shoulders of an Earth Giant smash through the floor. You view the gnarled features of the elemental and his rough, mottled skin of clay with fear and apprehension. Earth Giants are the most stupid of elementals, and you doubt if this one will be able to understand fully your needs.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small7.gif" width="386" height="150"/>
+        <instance class="pdf" src="small7.pdf" width="386" height="150"/>
+       </illustration>
        <p><quote>Escape?</quote> says the Earth Giant, in a stony voice.</p>
        <p><quote>Yes&ellips; escape,</quote> you say eagerly.</p>
        <p><quote>Tunnel. Wizard follow&ellips; earth is safe&ellips; no danger&ellips; come.</quote> The vast head disappears, leaving a great chasm in the ground.</p>
@@ -3913,6 +4002,13 @@ Change Log:
       <data>
        <p>The harbour is full with ships of varying kinds, though there is little sign of life. Mooring the small boat, you step on to the stone quayside and survey the harbour area.</p>
        <p><quote>Psst!</quote> a voice hisses at you from out of the darkness. Startled, you spot the crouching form of a one-eyed Suhnese fisherman. <quote>Come far have we?</quote> he asks, patronizingly. <quote>And in such secrecy too! Got something to hide have we? Lurking out there at the edge of the bay till nightfall&ellips; tsk, tsk, very suspicious.</quote></p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small2.gif" width="386" height="150"/>
+        <instance class="pdf" src="small2.pdf" width="386" height="150"/>
+       </illustration>
        <p>In vain, you try to convince the one-eyed Suhnaman that you have nothing to hide. <quote>Saw your sail a long way off,</quote> he sneers. <quote>Perhaps you&apos;re a smuggler, or on the run, I&apos;ll be bound. Come now, young master. You can&apos;t fool me. What&apos;ll you offer to buy my silence?</quote></p>
        <p>With a helpless shrug, you tell him that you have no money. At first, the fisherman seems very angry, but eventually he offers to buy your boat for 20 Nobles, though you cannot be sure that this will keep him quiet.</p>
        <choice idref="sect53">If you have the Magical Power of Prophecy and wish to use it, <link-text>turn to 53</link-text>.</choice>
@@ -4049,8 +4145,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>The dark passage seems interminably long</description>
         </meta>
-        <instance class="html" src="ill16.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill16.pdf" width="120" height="120"/>
+        <instance class="html" src="ill16.gif" width="386" height="644"/>
+        <instance class="pdf" src="ill16.pdf" width="386" height="644"/>
        </illustration>
        <choice idref="sect346">If you have the Amulet of the Shianti priest, <link-text>turn to 346</link-text>.</choice>
        <choice idref="sect199">If you do not possess this Special Item, <link-text>turn to 199</link-text>.</choice>
@@ -4596,6 +4692,13 @@ Change Log:
 
       <data>
        <p><a id="sect342-1" idref="sect342-1-foot" class="footnote"/>With an immense effort of will, you haul yourself up and over the edge of the precipice, scraping your body over the razor-sharp rocks and tearing the flesh of your hands and arms, leaving bloody weals of pain. Blood courses freely down your limbs from these wounds, and you must lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small8.gif" width="386" height="150"/>
+        <instance class="pdf" src="small8.pdf" width="386" height="150"/>
+       </illustration>
        <choice idref="sect74"><link-text>Turn to 74</link-text>.</choice>
       </data>
      </section>
@@ -4620,8 +4723,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>You come to a wide basin below the Shenwu Falls and the Great Wall of Azakawa</description>
         </meta>
-        <instance class="html" src="ill17.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill17.pdf" width="120" height="120"/>
+        <instance class="html" src="ill17.gif" width="386" height="581"/>
+        <instance class="pdf" src="ill17.pdf" width="386" height="581"/>
        </illustration>
        <choice idref="sect43"><link-text>Turn to 43</link-text>.</choice>
       </data>
@@ -4689,8 +4792,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>The strange stunted men use their tails to swing from tree limb to branch with astonishing ability, and flush out the insect invaders with practised ease</description>
         </meta>
-        <instance class="html" src="ill18.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill18.pdf" width="120" height="120"/>
+        <instance class="html" src="ill18.gif" width="772" height="626"/>
+        <instance class="pdf" src="ill18.pdf" width="772" height="626"/>
        </illustration>
        <p>Through watering eyes, you watch the strange, stunted men using their tails to swing from tree limb to branch with astonishing agility, flushing out the insect invaders with practised ease. These are the Kundi. You have found the Lost Tribe of Lara.</p>
        <p>As you watch the one-sided battle draw to a close, two sets of hairy arms grab you and lift you bodily into the air. Your ape-like abductors carry you through the giddy heights, leaping and swinging from tree to tree, tossing you like a bale of hay. You are being carried through a fine mist of cloud, from which the Azawood tree draws much of its moisture. Up here, in the highest levels of the forest, is a complex of wooden houses and platforms. You are dumped unceremoniously outside the largest of these tree houses: the house of the Kundi king.</p>
@@ -4707,8 +4810,8 @@ Change Log:
          <creator>Paul Bonner</creator>
          <description>A wizened old Kundi covered in bird feathers and numerous small bells is led into the room</description>
         </meta>
-        <instance class="html" src="ill19.gif" width="120" height="120"/>
-        <instance class="pdf" src="ill19.pdf" width="120" height="120"/>
+        <instance class="html" src="ill19.gif" width="386" height="617"/>
+        <instance class="pdf" src="ill19.pdf" width="386" height="617"/>
        </illustration>
        <p><quote>You no look like Shianti,</quote> he says, looking you up and down with a theatrical gesture.</p>
        <p><quote>Shianti <em>wizard</em>,</quote> you correct, drawing no response.</p>
@@ -5181,7 +5284,17 @@ Change Log:
       <data>
        <ul class="unbulleted">
         <li><a idref="powers">Magical Powers</a></li>
+        <li><a idref="sect243">Section 243</a></li>
+        <li><a idref="sect280">Section 280</a></li>
+        <li><a idref="sect146">Section 146</a></li>
+        <li><a idref="sect34">Section 34</a></li>
         <li><a idref="sect264">Section 264</a></li>
+        <li><a idref="sect151">Section 161</a></li>
+        <li><a idref="sect271">Section 271</a></li>
+        <li><a idref="sect342">Section 342</a></li>
+        <li><a idref="sect183">Section 183</a></li>
+        <li><a idref="sect179">Section 179</a></li>
+        <li><a idref="sect13">Section 13</a>, <a idref="sect127">Section 127</a></li>
        </ul>
       </data>
      </section>
