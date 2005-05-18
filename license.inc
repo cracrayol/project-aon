@@ -8,7 +8,7 @@
       <meta><title>0. Preamble</title></meta>
 
       <data>
-       <p>Joe Dever, author of the Lone Wolf game books, and Ian Page, author of the World of Lone Wolf books are providing certain of their works for free (gratis) download from the internet. Rob Adams, Paul Bonner, Gary Chalk, Melvyn Grant, Peter Lyon, Graham Round, and Brian Williams are similarly offering the illustrations that they did for these books. This license is intended to protect the rights of the authors and the illustrators, grant rights to their readers, and preserve the quality of the books distributed in this way.</p>
+       <p>Joe Dever, author of the Lone Wolf game books, and Ian Page, author of the World of Lone Wolf books are providing certain of their works for free (gratis) download from the internet. Rob Adams, Paul Bonner, Gary Chalk, Melvyn Grant, Richard Hook, Peter Andrew Jones, Cyril Julien, Peter Lyon, Graham Round, and Brian Williams are similarly offering the illustrations that they did for these books. This license is intended to protect the rights of the authors and the illustrators, grant rights to their readers, and preserve the quality of the books distributed in this way.</p>
        <p>By viewing or downloading the books or the illustrations, you agree to refrain from redistributing them in any format for any reason. This is intended to protect readers from getting poor quality, unofficial versions or from being asked for payment in exchange for the books by someone who is redistributing them unofficially.</p>
        <p>Anyone who wishes to simply view or download the Internet Editions for their own personal use need not worry about running afoul of the terms of this License. These activities are within acceptable behaviour as defined by this License.</p>
        <p>This section does not contain the legally binding terms of this license. Please read the precise terms and conditions of this license that follow.</p>
@@ -42,7 +42,7 @@
         <meta><title>1.2</title></meta>
 
         <data>
-         <p><quote>Illustrators</quote> shall hereafter refer to Rob Adams, copyright holder of portions of <cite>The Magnamund Companion</cite>; Paul Bonner, holder of the copyrights for the illustrations of the World of Lone Wolf books; Gary Chalk, holder of the copyrights for the illustrations of Lone Wolf books one through eight counted inclusively, holder of the copyrights of portions of <cite>The Magnamund Companion</cite>, and holder of the copyrights for <cite>The Lone Wolf Poster Painting Book</cite>; Melvyn Grant, holder of the copyrights for the illustrations of <cite>Freeway Warrior 1: Highway Holocaust</cite>; Richard Hook, copyright holder of portions of <cite>The Magnamund Companion</cite>; Peter Andrew Jones, copyright holder for the illustrations used the <cite>Lone Wolf 10th Anniversary Calendar</cite>; Cyril Julien, copyright holder of <cite>The Skull of Agarash</cite>; Peter Lyon, copyright holder of portions of <cite>The Magnamund Companion</cite>; Graham Round, copyright holder of portions of <cite>The Magnamund Companion</cite>; and Brian Williams, holder of the copyrights for the illustrations of Lone Wolf books nine through twenty-eight counted inclusively with the exception of the illustrations for book twenty-one, <cite>The Voyage of the Moonstone</cite> and holder of the copyrights for the illustrations of books two through four, counted inclusively, of the Freeway Warrior series. Where Paul Bonner, Gary Chalk, Melvyn Grant, Richard Hook, Peter Andrew Jones, Cyril Julien, Peter Lyon, Graham Round, or Brian Williams is mentioned singly, they will be referred to by name.</p>
+         <p><quote>Illustrators</quote> shall hereafter refer to Rob Adams, copyright holder of portions of <cite>The Magnamund Companion</cite>; Paul Bonner, holder of the copyrights for the illustrations of the World of Lone Wolf books; Gary Chalk, holder of the copyrights for the illustrations of Lone Wolf books one through eight counted inclusively, holder of the copyrights of portions of <cite>The Magnamund Companion</cite>, and holder of the copyrights for <cite>The Lone Wolf Poster Painting Book</cite>; Melvyn Grant, holder of the copyrights for the illustrations of <cite>Freeway Warrior 1: Highway Holocaust</cite>; Richard Hook, copyright holder of portions of <cite>The Magnamund Companion</cite>; Peter Andrew Jones, copyright holder for the illustrations used in the <cite>Lone Wolf 10th Anniversary Calendar</cite>; Cyril Julien, copyright holder of portions of <cite>The Skull of Agarash</cite>; Peter Lyon, copyright holder of portions of <cite>The Magnamund Companion</cite>; Graham Round, copyright holder of portions of <cite>The Magnamund Companion</cite>; and Brian Williams, holder of the copyrights for the illustrations of Lone Wolf books nine through twenty-eight counted inclusively with the exception of the illustrations for book twenty-one, <cite>The Voyage of the Moonstone</cite>, holder of the copyrights of portions of <cite>The Skull of Agarash</cite>, and holder of the copyrights for the illustrations of books two through four, counted inclusively, of the Freeway Warrior series. Where Paul Bonner, Gary Chalk, Melvyn Grant, Richard Hook, Peter Andrew Jones, Cyril Julien, Peter Lyon, Graham Round, or Brian Williams is mentioned singly, they will be referred to by name.</p>
         </data>
        </section>
 
@@ -125,7 +125,7 @@
           <li><cite>Castle Death</cite>;<br/>Illustrations copyright 1986 Joe Dever and Gary Chalk.</li>
           <li><cite>The Jungle of Horrors</cite>;<br/>Illustrations copyright 1987 Joe Dever and Gary Chalk.</li>
           <li><cite>The Magnamund Companion</cite>;<br/>Some illustrations copyright 1986 Gary Chalk.</li>
-          <li><cite>The Lone Wolf Poster Painting Book</cite>;<br/>Copyright 1986 Gary Chalk.</li>
+          <li><cite>The Lone Wolf Poster Painting Book</cite>;<br/>Copyright 1987 Gary Chalk.</li>
          </ul>
 
          <p>The text written by Gary Chalk for the following book is being offered under the terms of this License:</p>
@@ -154,7 +154,7 @@
 
          <p>The illustrations created by Cyril Julien for the following book are part of the illustrations being offered under the terms of this License:</p>
          <ul>
-          <li><cite>The Skull of Agarash</cite>;<br/>Illustrations copyright 1994 Cyril Julien.</li>
+          <li><cite>The Skull of Agarash</cite>;<br/>Some illustrations copyright 1994 Cyril Julien.</li>
          </ul>
 
          <p>The illustrations created by Peter Lyon for the following book are part of the illustrations being offered under the terms of this License:</p>
@@ -191,6 +191,7 @@
           <li><cite>The Fall of Blood Mountain</cite>;<br/>Illustrations Copyright 1997 Brian Williams.</li>
           <li><cite>Vampirium</cite>;<br/>Illustrations Copyright 1998 Brian Williams.</li>
           <li><cite>The Hunger of Sejanoz</cite>;<br/>Illustrations Copyright 1998 Brian Williams.</li>
+          <li><cite>The Skull of Agarash</cite>;<br />Some illustrations copyright 1994 Brian Williams.</li>
           <li><cite>Freeway Warrior: Slaughter Mountain Run</cite>;<br/>Illustrations Copyright 1988 Brian Williams.</li>
           <li><cite>Freeway Warrior: The Omega Zone</cite>;<br/>Illustrations Copyright 1989 Brian Williams.</li>
           <li><cite>Freeway Warrior: California Countdown</cite>;<br/>Illustrations Copyright 1989 Brian Williams.</li>
