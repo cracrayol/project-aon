@@ -2,7 +2,7 @@
     <meta><title>Project Aon License</title></meta>
 
     <data>
-     <p>17 May 2005</p>
+     <p>18 May 2005</p>
 
      <section class="backmatter" id="lic-pre">
       <meta><title>0. Preamble</title></meta>
@@ -82,6 +82,14 @@
           <li><cite>Dawn of the Dragons</cite>;<br/>Copyright 1992 Joe Dever.</li>
           <li><cite>Wolf&apos;s Bane</cite>;<br/>Copyright 1993, 1995 Joe Dever.</li>
           <li><cite>The Curse of Naar</cite>;<br/>Copyright 1993, 1996 Joe Dever.</li>
+          <li><cite>Voyage of the Moonstone</cite>;<br/>Copyright 1994 Joe Dever.</li>
+          <li><cite>The Buccaneers of Shadaki</cite>;<br/>Copyright 1994 Joe Dever.</li>
+          <li><cite>Mydnight&apos;s Hero</cite>;<br/>Copyright 1995 Joe Dever.</li>
+          <li><cite>Rune War</cite>;<br/>Copyright 1995 Joe Dever.</li>
+          <li><cite>Trail of the Wolf</cite>;<br/>Copyright 1997 Joe Dever.</li>
+          <li><cite>The Fall of Blood Mountain</cite>;<br/>Copyright 1997 Joe Dever.</li>
+          <li><cite>Vampirium</cite>;<br/>Copyright 1998 Joe Dever.</li>
+          <li><cite>The Hunger of Sejanoz</cite>;<br/>Copyright 1998 Joe Dever.</li>
           <li><cite>The Magnamund Companion</cite>;<br/>Copyright 1986 Joe Dever.</li>
           <li><cite>Freeway Warrior 1: Highway Holocaust</cite>;<br/>Copyright 1988 Joe Dever.</li>
           <li><cite>Freeway Warrior 2: Slaughter Mountain Run</cite>;<br/>Copyright 1988 Joe Dever.</li>
