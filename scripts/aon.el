@@ -4,7 +4,7 @@
 
 ;; Author: Thomas Wolmer <thomas@powerpuff.org>
 ;; Created: 17 Aug 2003
-;; Version: 0.12
+;; Version: 0.13
 ;; Keywords: aon 
 
 ;;; Commentary:
@@ -42,6 +42,7 @@
 ;; 2005-02-05: 0.10: Added a function for inserting large illustrations
 ;; 2005-05-06: 0.11: Added a function for inserting inline illustrations
 ;; 2005-05-23: 0.12: Fixed bug in aon-re-get-errata-entry-id.
+;; 2005-05-29: 0.13: Introduced full footnote support.
 
 ;; A slight limitation: We can only handle one illustrator at a time.
 
@@ -90,9 +91,12 @@ used instead (unless it is also 'nonindexed').")
 (defconst aon-re-get-sect-id "<section.*id=\"\\(.+?\\)\".*>"
   "Regexp used to find the id of asection.")
 (defconst aon-re-get-errata-entry-id "<p>(<a idref=\"\\(.+?\\)\".*>)"
-  "Regexp used to find the id of an errata list entry.")
+  "Regexp used to find the id of an errata list entry.") ; and footnotes too!
 (defconst aon-re-get-title "<title>\\(.+?\\)</title>"
   "Regexp used to find the title of a section.")
+(defconst aon-re-get-footnote-num
+  "<footnote id=\".+?\" idref=\".+?-\\([0-9]+\\)\">"
+  "Regexp used to locate the sequence number of a footnote.")
 
 ;; The errata item texts (as templates to be fed to 'format')
 ;; These are only (hardcoded) reader-visible texts inserted by this hack!
@@ -444,7 +448,7 @@ The illustrations list is not updated (TBD)."
      (list xnum xheight xcaption)))
   (let ((startpos (point))
         (endpos (save-excursion
-                  (insert (format "<illustration class=\"float\">\n        <meta>\n         <creator>%s</creator>\n         <description>%s</description>\n        </meta>\n        <instance class=\"html\" src=\"ill%s.gif\" width=\"%s\" height=\"%s\"/>\n        <instance class=\"pdf\" src=\"ill%s.pdf\" width=\"%s\" height=\"%s\"/>\n       </illustration>"
+                  (insert (format "<illustration class=\"float\">\n<meta>\n<creator>%s</creator>\n<description>%s</description>\n</meta>\n<instance class=\"html\" src=\"ill%s.gif\" width=\"%s\" height=\"%s\"/>\n<instance class=\"pdf\" src=\"ill%s.pdf\" width=\"%s\" height=\"%s\"/>\n</illustration>"
                                   aon-illustrator-name caption number
                                   aon-large-illustration-width height number
                                   aon-large-illustration-width height))
@@ -466,12 +470,182 @@ The illustrations list is not updated (TBD)."
                   (point))))
     (aon-indent-block startpos endpos)))
 
+;; TODO: Create a method that takes a function which adds text, and then
+;; indents the added text. Now each caller of this function must add some
+;; codes to handle start and end positions.
+
 (defun aon-indent-block (startpos endpos)
   "Indents the text between startpos and endpos.
 The positions need not be start or end of lines. Leaves point at end of block."
   (dotimes (i (count-lines startpos endpos))
     (indent-according-to-mode)
     (forward-line 1)))
+
+;; TODO: Clean up the whole footnote code, it is a mess.
+
+(defun aon-footnote-add (pos text)
+  "Adds a footnote at the current position.
+Note that the footnote text must contain all <p>aragraph tags, and that line
+breaks are not allowed."
+  (interactive
+   (let ((xpos (point))
+         (xtext (read-string "Footnote text: ")))
+     (list xpos xtext)))
+  (if (string= text "")
+      (error "No footnote text!"))
+  (let ((tpos (string-match "<p>" text)))
+    (unless (and tpos (= 0 tpos))
+      (error "Footnotes must contain <p>aragraph start and end tags!")))
+  (save-excursion
+    (let*
+        ((sectid (aon-get-sect-id))
+         (fblockstart (aon-find-footnote-block sectid))
+         (fnum (if fblockstart
+                    (aon-get-next-footnote-num fblockstart)
+                 1))
+         (fid (format "%s-%s" sectid fnum))
+         (fentry
+          (format "\n<footnote id=\"%s-foot\" idref=\"%s\">%s</footnote>"
+                  fid fid text))
+         (fref
+          (format "<a id=\"%s\" idref=\"%s-foot\" class=\"footnote\" />" 
+                  fid fid))
+         (fnth (1+ (aon-count-previous-footnotes sectid)))
+         (flistref
+          (format "(<a idref=\"%s\">%s</a>)" sectid (aon-get-sect-title)))
+         (flistinsertpos
+          (aon-find-footnote-list-insert-pos sectid flistref fnth)))
+      ;; First insert errata list entry
+      (goto-char flistinsertpos)
+      (let ((startpos (point))
+            (endpos (save-excursion
+                      (insert "\n" text)
+                      (point))))
+        (aon-indent-block startpos endpos))
+      (goto-char flistinsertpos)
+      (search-forward "<p>") ; no line-end-position in xemacs
+      (insert flistref " ")
+      ;; Then errata ref
+      (goto-char pos)
+      (insert fref)
+      ;; And last errata entry in section errata block (which may be created)
+      (if fblockstart
+          (progn ; block exists, go to the right position in it 
+            (goto-char fblockstart)
+            (dotimes (i (1- fnth))
+              (search-forward "</footnote>"
+                              (save-excursion
+                                (goto-char fblockstart)
+                                (search-forward "</footnotes>")))))
+        (goto-char (aon-create-footnote-block sectid)))
+      (let ((startpos (point))
+            (endpos (save-excursion
+                      (insert fentry)
+                      (point))))
+        (aon-indent-block startpos endpos)))))
+
+(defun aon-create-footnote-block (sect)
+  "Creates a footnote block and returns insertion point."
+  (save-excursion
+    (goto-char (aon-get-sect-pos sect))
+    (search-forward "</meta>")
+    (save-excursion
+      (let ((spos (point))
+            (endpos (save-excursion
+                      (insert "\n\n<footnotes>\n</footnotes>")
+                      (point))))
+        (aon-indent-block spos endpos)))
+    (search-forward "<footnotes>")))
+
+(defun aon-find-footnote-block (sect)
+  "Returns the start of the footnote block of the current section, or nil."
+  (save-excursion
+    (goto-char (aon-get-sect-pos sect))
+    (search-forward "</meta>")
+    (let*
+        ((datastart (save-excursion
+                      (search-forward "<data>")))
+         (footstart (save-excursion
+                      (search-forward "<footnotes>" datastart t))))
+      footstart)))
+
+(defun aon-get-footnote-num (pos)
+  "Return the numerical sequence number of the footnote on the current line.
+If there are no more footnotes defined here, it returns nil."
+  (interactive "p")
+  (let ((fend (save-excursion
+                (search-forward "</footnotes>"))))
+    (save-excursion
+      (and
+       (re-search-forward aon-re-get-footnote-num fend t)
+       (string-to-number (match-string 1))))))
+
+(defun aon-get-next-footnote-num (pos)
+  "Returns the next footnote id number.
+This will always be the previously highest number plus one."
+  (let ((seq '()))
+    (save-excursion
+      (goto-char pos)
+      (while (setq x (aon-get-footnote-num (point)))
+        (setq seq (cons x seq))
+        (search-forward "</footnote>")
+        (forward-line 1)))
+    (if seq
+        (1+ (car (sort seq '>))) ; prior highest + 1
+      1))) ; the first
+
+(defun aon-count-previous-footnotes (sect)
+  "Based on the current position, counts the number of footnotes before..."
+  (save-excursion
+    (let ((sectstart (aon-get-sect-pos sect))
+          (count 0))
+      (while (re-search-backward
+              "<a.+?idref=\".+?-foot\".+?class=\"footnote\".*?/>" sectstart t)
+        (setq count (1+ count)))
+      count)))
+
+(defun aon-find-footnote-list-insert-pos (sect ref nth)
+  ""
+  (save-excursion
+    (let ((flistsectpos (aon-get-sect-pos "footnotz")))
+      (if (= nth 1)
+          (aon-find-new-footnote-list-entry-pos (aon-get-sect-pos sect))
+        (progn
+          (goto-char flistsectpos)
+          (dotimes (i (1- nth))
+            (search-forward ref))
+          (end-of-line)
+          (point))))))
+
+;; TODO: This code is mostly copied from the errata code. Merge them?
+
+(defun aon-find-new-footnote-list-entry-pos (sectpos)
+  "Return the position where a new footnote list entry shall be created."
+  (save-excursion
+    (goto-char (aon-get-sect-pos "footnotz"))
+    (search-forward "<data>")
+    (forward-line 1) ; pos is now on the line of the first <p> (if it exists)
+    (let ((endofflist
+           (save-excursion
+             (if (search-forward "</data>")
+                 (point)
+               (error "Could not find the end of the footnotes list!")))))
+      (while (let ((id (save-excursion
+                         (if (re-search-forward aon-re-get-errata-entry-id
+                                                endofflist
+                                                t)
+                             (match-string 1)
+                           "illstrat" ; hack warning! to avoid getting too far
+                           ))))
+               (unless (setq thissectpos (aon-get-sect-pos id))
+                 (error
+                  "Section %s has a footnote list entry, but does not exist!"
+                  id))
+               (< thissectpos sectpos))
+        (forward-line 1)))
+    (forward-line -1)
+    (end-of-line)
+    (point)))
 
 (global-set-key "\C-cr" 'aon-errata-replace)
 (global-set-key "\C-cd" 'aon-errata-delete)
@@ -483,7 +657,7 @@ The positions need not be start or end of lines. Leaves point at end of block."
 (global-set-key "\C-cl" 'aon-illustration-large)
 (global-set-key "\C-ci" 'aon-illustration-inline)
 
-
+(global-set-key "\C-cf" 'aon-footnote-add)
 
 ;; Errata examples
 ;; <!--ERRTAG-RE-123--> <!--/ERRTAG-RE-123-->
