@@ -20,6 +20,9 @@
 $Id$
 
 $Log$
+Revision 1.5  2005/06/25 23:45:08  jonathan.blake
+Added illustration markup in Powers section
+
 Revision 1.4  2005/04/21 15:52:00  jonathan.blake
 Secondary illustrations placed. Replacement illustration for section 264 commented out. Illustration Transcription credit needs placing.
 
@@ -169,7 +172,7 @@ small11: wheel breaking off a wagon?
    &inclusion.joe.dever.bio.gs;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2004</year><month>6</month><day>20</day></date>
+  <date class="publication"><year>2005</year><month>6</month><day>25</day></date>
   <description class="blurb">
    <p><strong>In the World of Lone Wolf a new hero has arisen&emdash;Grey Star the Wizard</strong></p>
    <p>You are Grey Star. From the core of a raging storm you appeared&emdash;a human child, ship-wrecked and orphaned, a gift of hope to the exiled Shianti sorcerers. Ever since that fateful night they have raised you as one of their own, teaching you the mysteries of their magic in preparation for an epic quest.</p>
@@ -325,6 +328,13 @@ small11: wheel breaking off a wagon?
         <meta><title>Sorcery</title></meta>
 
         <data>
+         <illustration class="inline">
+          <meta>
+           <creator>Paul Bonner</creator>
+          </meta>
+          <instance class="html" src="sorcery.gif" width="386" height="122" mime-type="image/gif" />
+         </illustration>
+
          <illustration class="accent" id="sorcery-ill">
           <meta>
            <creator>Christopher Lundgren</creator>
@@ -341,6 +351,13 @@ small11: wheel breaking off a wagon?
         <meta><title>Enchantment</title></meta>
 
         <data>
+         <illustration class="inline">
+          <meta>
+           <creator>Paul Bonner</creator>
+          </meta>
+          <instance class="html" src="enchant.gif" width="386" height="130" mime-type="image/gif" />
+         </illustration>
+
          <illustration class="accent" id="enchant-ill">
           <meta>
            <creator>Christopher Lundgren</creator>
@@ -357,6 +374,13 @@ small11: wheel breaking off a wagon?
         <meta><title>Elementalism</title></meta>
 
         <data>
+         <illustration class="inline">
+          <meta>
+           <creator>Paul Bonner</creator>
+          </meta>
+          <instance class="html" src="elementl.gif" width="386" height="118" mime-type="image/gif" />
+         </illustration>
+
          <illustration class="accent" id="elementl-ill">
           <meta>
            <creator>Christopher Lundgren</creator>
@@ -373,6 +397,13 @@ small11: wheel breaking off a wagon?
         <meta><title>Alchemy</title></meta>
 
         <data>
+         <illustration class="inline">
+          <meta>
+           <creator>Paul Bonner</creator>
+          </meta>
+          <instance class="html" src="alchemy.gif" width="386" height="121" mime-type="image/gif" />
+         </illustration>
+
          <illustration class="accent" id="alchemy-ill">
           <meta>
            <creator>Christopher Lundgren</creator>
@@ -389,6 +420,13 @@ small11: wheel breaking off a wagon?
         <meta><title>Prophecy</title></meta>
 
         <data>
+         <illustration class="inline">
+          <meta>
+           <creator>Paul Bonner</creator>
+          </meta>
+          <instance class="html" src="prophecy.gif" width="386" height="123" mime-type="image/gif" />
+         </illustration>
+
          <illustration class="accent" id="prophecy-ill">
           <meta>
            <creator>Christopher Lundgren</creator>
@@ -405,6 +443,13 @@ small11: wheel breaking off a wagon?
         <meta><title>Psychomancy</title></meta>
 
         <data>
+         <illustration class="inline">
+          <meta>
+           <creator>Paul Bonner</creator>
+          </meta>
+          <instance class="html" src="psycmncy.gif" width="386" height="126" mime-type="image/gif" />
+         </illustration>
+
          <illustration class="accent" id="psycmncy-ill">
           <meta>
            <creator>Christopher Lundgren</creator>
@@ -421,6 +466,13 @@ small11: wheel breaking off a wagon?
         <meta><title>Evocation</title></meta>
 
         <data>
+         <illustration class="inline">
+          <meta>
+           <creator>Paul Bonner</creator>
+          </meta>
+          <instance class="html" src="evcation.gif" width="386" height="131" mime-type="image/gif" />
+         </illustration>
+
          <illustration class="accent" id="evcation-ill">
           <meta>
            <creator>Christopher Lundgren</creator>
@@ -437,6 +489,13 @@ small11: wheel breaking off a wagon?
         <meta><title>Wizard&apos;s Staff</title></meta>
 
         <data>
+         <illustration class="inline">
+          <meta>
+           <creator>Paul Bonner</creator>
+          </meta>
+          <instance class="html" src="staff.gif" width="386" height="120" mime-type="image/gif" />
+         </illustration>
+
          <illustration class="accent" id="staff-ill">
           <meta>
            <creator>Christopher Lundgren</creator>
@@ -3806,15 +3865,14 @@ small11: wheel breaking off a wagon?
         <instance class="html" src="small5.gif" width="331" height="150"/>
         <instance class="pdf" src="small5.pdf" width="331" height="150"/>
        </illustration>
-       <!--
+
        <illustration class="inline">
-       <meta>
-        <creator>Christopher Lundgren</creator>
-       </meta>
-       <instance class="html" src="sect264.gif" width="386" height="286"/>
-       <instance class="pdf" src="sect264.pdf" width="386" height="286"/>
-      </illustration>
-      -->
+        <meta>
+         <creator>Christopher Lundgren</creator>
+        </meta>
+        <instance class="html" src="sect264.gif" width="386" height="286"/>
+        <instance class="pdf" src="sect264.pdf" width="386" height="286"/>
+       </illustration>
        <p>A close examination of the rune inscribed upon the Medallion will tell you which section number to turn to next.<a id="sect264-1" idref="sect264-1-foot" class="footnote"/></p>
        <choice idref="sect190">If you cannot solve the riddle of the rune and wish to take Shan&apos;s advice, <link-text>turn to 190</link-text>.</choice>
        <choice idref="sect134">If you cannot solve the riddle of the rune and wish to seek the counsel of Jnana the Wise, <link-text>turn to 134</link-text>.</choice>
@@ -4840,6 +4898,14 @@ small11: wheel breaking off a wagon?
     <data>
      <illustration>
       <meta>
+       <creator>Paul Bonner</creator>
+      </meta>
+      <instance src="map.jpg" width="1024" height="768" class="html" />
+      <instance src="map.pdf" width="1024" height="768" class="pdf" />
+     </illustration>
+
+     <illustration>
+      <meta>
        <creator>Christopher Lundgren</creator>
       </meta>
       <instance src="map.jpg" width="1024" height="768" class="html"/>
@@ -5253,27 +5319,27 @@ small11: wheel breaking off a wagon?
 
       <data>
        <ul class="unbulleted">
+        <li>Illustration I (<a idref="sect1">Section 1</a>)</li>
+        <li>Illustration II (<a idref="sect18">Section 18</a>)</li>
+        <li>Illustration III (<a idref="sect29">Section 29</a>)</li>
+        <li>Illustration IV (<a idref="sect39">Section 39</a>)</li>
+        <li>Illustration V (<a idref="sect87">Section 87</a>)</li>
+        <li>Illustration VI (<a idref="sect101">Section 101</a>)</li>
+        <li>Illustration VII (<a idref="sect105">Section 105</a>)</li>
+        <li>Illustration VIII (<a idref="sect140">Section 140</a>)</li>
+        <li>Illustration IX (<a idref="sect149">Section 149</a>)</li>
+        <li>Illustration X (<a idref="sect175">Section 175</a>)</li>
+        <li>Illustration XI (<a idref="sect197">Section 197</a>)</li>
+        <li>Illustration XII (<a idref="sect224">Section 224</a>)</li>
+        <li>Illustration XIII (<a idref="sect233">Section 233</a>)</li>
+        <li>Illustration XIV (<a idref="sect241">Section 241</a>)</li>
+        <li>Illustration XV (<a idref="sect266">Section 266</a>)</li>
+        <li>Illustration XVI (<a idref="sect292">Section 292</a>)</li>
+        <li>Illustration XVII (<a idref="sect344">Section 344</a>)</li>
+        <li>Illustration XVIII (<a idref="sect350">Section 350</a>)</li>
+        <li>Illustration XIX (<a idref="sect350">Section 350</a>)</li>
         <li><a idref="map">The Shadakine Empire</a></li>
         <li><a idref="action">Action Chart</a></li>
-        <li>Illustration I (<a idref="sect1">Section 1</>)</li>
-        <li>Illustration II (<a idref="sect18">Section 18</>)</li>
-        <li>Illustration III (<a idref="sect29">Section 29</>)</li>
-        <li>Illustration IV (<a idref="sect39">Section 39</>)</li>
-        <li>Illustration V (<a idref="sect87">Section 87</>)</li>
-        <li>Illustration VI (<a idref="sect101">Section 101</>)</li>
-        <li>Illustration VII (<a idref="sect105">Section 105</>)</li>
-        <li>Illustration VIII (<a idref="sect140">Section 140</>)</li>
-        <li>Illustration IX (<a idref="sect149">Section 149</>)</li>
-        <li>Illustration X (<a idref="sect175">Section 175</>)</li>
-        <li>Illustration XI (<a idref="sect1"97>Section 197</>)</li>
-        <li>Illustration XII (<a idref="sect224">Section 224</>)</li>
-        <li>Illustration XIII (<a idref="sect233">Section 233</>)</li>
-        <li>Illustration XIV (<a idref="sect241">Section 241</>)</li>
-        <li>Illustration XV (<a idref="sect266">Section 266</>)</li>
-        <li>Illustration XVI (<a idref="sect292">Section 292</>)</li>
-        <li>Illustration XVII (<a idref="sect344">Section 344</>)</li>
-        <li>Illustration XVIII (<a idref="sect350">Section 350</>)</li>
-        <li>Illustration XIX (<a idref="sect350">Section 350</>)</li>
        </ul>
       </data>
      </section>
