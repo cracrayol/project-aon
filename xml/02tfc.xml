@@ -20,6 +20,9 @@
 $Id$
 
 $Log$
+Revision 1.7  2005/07/14 17:36:39  jonathan.blake
+Fixed issues from Editor and Simon's reports about captions.
+
 Revision 1.6  2005/07/13 03:47:27  jonathan.blake
 Added illustrations for Powers section.
 
@@ -715,7 +718,7 @@ small11: sword, axe, & shield
        <illustration class="float">
         <meta>
          <creator>Paul Bonner</creator>
-         <description>A mass of slime and mud rises up out of the quagmire, it is a Swamp Giant</description>
+         <description>A mass of slime and mud rises up out of the <!--ERRTAG-RE-63316-->quagmire; it<!--/ERRTAG-RE-63316--> is a Swamp Giant</description>
         </meta>
         <instance class="html" src="ill2.gif" width="386" height="644"/>
         <instance class="pdf" src="ill2.pdf" width="386" height="644"/>
@@ -2252,7 +2255,7 @@ small11: sword, axe, & shield
        <p><quote>There is only one known pass,</quote> Sado continues, <quote>but it holds the greatest peril of all&emdash;Gyanima, the Forbidden City&ellips; the City of the Dead!</quote> He shakes his head solemnly. <quote>Will you not turn away from this reckless course?</quote></p>
        <p>You shrug. <quote>There is no other way. Urik&apos;s vision leads to Desolation Valley and my quest takes me there.</quote></p>
        <p>Sado falls silent and an uncomfortable quiet follows. Finally, you rise and bid Sado goodnight, for you intend to leave Karnali the following morning. <quote>I had hoped you would remain, Grey Star,</quote> he says. <quote>You are a powerful ally and I have great need of strength. Soon, the Wytch-king will seek to destroy our freedom. Without your help, our liberty may prove short-lived. Moreover, you choose a path of doom, heedless of my words of warning.</quote></p>
-       <p><quote>Fear not, Sado of the Long Knife,</quote> you reply. <quote>If l achieve my goal, there will be freedom for all ensnared by the cruel grasp of the Wytch-king. I do not intend to fail.</quote></p>
+       <p><quote>Fear not, Sado of the Long Knife,</quote> you reply. <quote>If I achieve my goal, there will be freedom for all ensnared by the cruel grasp of the Wytch-king. I do not intend to fail.</quote></p>
        <p>You leave the chamber, and close the door behind you. Despite your courageous words, a creeping uncertainty is stirring in your heart. <quote>Hmph!</quote> snorts Urik. <quote>Him brave man&ellips; but have small mind.</quote> He places a finger to his nose. <quote>Him see only this far. Young Wizard learn quickly&ellips; carry blessing of wise Shianti. You will not fail.</quote> You pray that the old Kundi man is right.</p>
        <p>You rise the following morning and prepare to leave. Your sleep has restored to you 1 <typ class="attribute">ENDURANCE</typ> point and 1 <typ class="attribute">WILLPOWER</typ> point. Sado enters your chamber to bid you farewell. <quote>I have come to apologize for my harsh words last night,</quote> he says. <quote>It is not for me to question the way of Wizards. I am but a simple soldier. I have brought gifts by way of recompense.</quote> He lays before you the following <!--ERRTAG-RA-179317-->items<!--/ERRTAG-RA-179317-->:</p>
 
@@ -2402,7 +2405,7 @@ small11: sword, axe, & shield
        <illustration class="float">
         <meta>
          <creator>Paul Bonner</creator>
-         <description>The Deathgaunts come no further but remain outside the reach of the spell whispering</description>
+         <description>The Deathgaunts come no further but remain outside the reach of the <!--ERRTAG-RE-202815-->spell, whispering<!--/ERRTAG-RE-202815--></description>
         </meta>
         <instance class="html" src="ill11.gif" width="386" height="646"/>
         <instance class="pdf" src="ill11.pdf" width="386" height="646"/>
@@ -2804,7 +2807,7 @@ small11: sword, axe, & shield
        <illustration class="float">
         <meta>
          <creator>Paul Bonner</creator>
-         <description>Samu, lost in a berserk fury, battles wit the Scree Wyrm</description>
+         <description>Samu, lost in a berserk fury, battles with the Scree Wyrm</description>
         </meta>
         <instance class="html" src="ill12.gif" width="386" height="640"/>
         <instance class="pdf" src="ill12.pdf" width="386" height="640"/>
@@ -4178,7 +4181,7 @@ small11: sword, axe, & shield
       <meta><title>299</title></meta>
 
       <footnotes>
-       <footnote id="sect299-1-foot" idref="sect299-1"><p>If you use a leaf from a Bundle of dried Azawood Leaves, the Bundle now has two leaves left.</p></footnote>
+       <footnote id="sect299-1-foot" idref="sect299-1"><p>If you use a leaf from a Bundle of dried Azawood Leaves, the Bundle now has three leaves left.</p></footnote>
       </footnotes>
 
       <data>
@@ -4487,6 +4490,7 @@ small11: sword, axe, & shield
        <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed <quote> on the inside back cover of the book</quote>. Replaced <quote>on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>.</p>
        <p>(<a idref="sage">Sage Advice</a>) Removed <quote> at the front of this book</quote>.</p>
        <p>(<a idref="sect1">1</a>) Replaced <quote>&lsquot; Stand back!</quote> with <quote>&lsquot;Stand back!</quote>.<!--ERRTAG-RE-45701-ITEM--> Replaced <quote>rain-water</quote> with <quote>rainwater</quote>.<!--/ERRTAG-RE-45701-ITEM--><!--ERRTAG-RE-51012-ITEM--> Replaced <quote>ahead, You</quote> with <quote>ahead. You</quote>.<!--/ERRTAG-RE-51012-ITEM--></p>
+<p>(<a idref="sect4">4</a>)<!--ERRTAG-RE-63316-ITEM--> Replaced <quote>quagmire, it</quote> with <quote>quagmire; it</quote> in the caption of the illustration.<!--/ERRTAG-RE-63316-ITEM--></p>
        <p>(<a idref="sect6">6</a>)<!--ERRTAG-RE-54835-ITEM--> Replaced <quote>special Item</quote> with <quote>Special Item</quote>.<!--/ERRTAG-RE-54835-ITEM--></p>
        <p>(<a idref="sect7">7</a>)<!--ERRTAG-RE-55869-ITEM--> Replaced <quote>elementals</quote> with <quote>Elementals</quote>.<!--/ERRTAG-RE-55869-ITEM--><!--ERRTAG-RE-56160-ITEM--> Replaced <quote>elemental</quote> with <quote>Elemental</quote>.<!--/ERRTAG-RE-56160-ITEM--></p>
        <p>(<a idref="sect11">11</a>)<!--ERRTAG-RE-59625-ITEM--> Replaced <quote>battle cry</quote> with <quote>battle-cry</quote>.<!--/ERRTAG-RE-59625-ITEM--></p>
@@ -4531,6 +4535,7 @@ small11: sword, axe, & shield
        <p>(<a idref="sect135">135</a>)<!--ERRTAG-RE-174093-ITEM--> Replaced <quote>exhausted you</quote> with <quote>exhausted, you</quote>.<!--/ERRTAG-RE-174093-ITEM--></p>
        <p>(<a idref="sect140">140</a>) Replaced <quote>asks</quote> with <quote>asks.</quote>.<!--ERRTAG-RE-180230-ITEM--> Replaced <quote>out-sized</quote> with <quote>outsized</quote>.<!--/ERRTAG-RE-180230-ITEM--></p>
        <p>(<a idref="sect141">141</a>) Switched the section numbers given for the two choices, to avoid unreasonable consequences of high <typ class="attribute">ENDURANCE</typ> and <typ class="attribute">WILLPOWER</typ> scores.</p>
+<p>(<a idref="sect145">145</a>)<!--ERRTAG-RE-202815-ITEM--> Replaced <quote>spell whispering</quote> with <quote>spell, whispering</quote>in the caption for the illustration.<!--/ERRTAG-RE-202815-ITEM--></p>
        <p>(<a idref="sect146">146</a>)<!--ERRTAG-RE-186211-ITEM--> Replaced <quote>7&endash;12</quote> with <quote>6&endash;12</quote>.<!--/ERRTAG-RE-186211-ITEM--></p>
        <p>(<a idref="sect149">149</a>)<!--ERRTAG-RE-189306-ITEM--> Replaced <quote>Kiro will</quote> with <quote>Kiro, will</quote>.<!--/ERRTAG-RE-189306-ITEM--><!--ERRTAG-RE-190011-ITEM--> Replaced <quote>eyebow</quote> with <quote>eyebrow</quote>.<!--/ERRTAG-RE-190011-ITEM--></p>
        <p>(<a idref="sect151">151</a>)<!--ERRTAG-RE-193971-ITEM--> Replaced <quote>and as</quote> with <quote>and, as</quote>.<!--/ERRTAG-RE-193971-ITEM--></p>
