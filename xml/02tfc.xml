@@ -20,6 +20,9 @@
 $Id$
 
 $Log$
+Revision 1.8  2005/08/10 20:04:22  jonathan.blake
+Fixed a number of issues centering on the Black Rod and also Section 103.
+
 Revision 1.7  2005/07/14 17:36:39  jonathan.blake
 Fixed issues from Editor and Simon's reports about captions.
 
@@ -1876,7 +1879,8 @@ small11: sword, axe, & shield
        <p>Disgruntled by the lack of treasure, Hugi ambles to the far side of the cavern and points to an outcrop of rough-hewn granite. <quote>Here is a door,</quote> he says, <quote>but it is magic-locked. A problem for you to solve, eh Wizard?</quote></p>
        <choice idref="sect170">If you possess the Power of Psychomancy and wish to use it, <link-text>turn to 170</link-text>.</choice>
        <choice idref="sect224">If you have the Magical Power of Prophecy and wish to use it, <link-text>turn to 224</link-text>.</choice>
-       <choice idref="sect279">If you have the Power of Sorcery and possess 3 or more <typ class="attribute">WILLPOWER</typ> points to use on the door, <link-text>turn to 279</link-text>.</choice>
+       <choice idref="sect279">If you have the Power of Sorcery and <!--ERRTAG-RE-156141-->possess 2 or more<!--/ERRTAG-RE-156141--> <typ class="attribute">WILLPOWER</typ> points to use on the door, <link-text>turn to 279</link-text>.</choice>
+       <choice idref="sect242"><!--ERRTAG-AD-156493-->If you do not have any of these powers or possess insufficient <typ class="attribute">WILLPOWER</typ> points to use them, <link-text>turn to 242</link-text>.<!--/ERRTAG-AD-156493--></choice>
       </data>
      </section>
 
@@ -1999,7 +2003,7 @@ small11: sword, axe, & shield
        <p>Tanith&apos;s expression changes to one of horror. <quote>Grey Star!</quote> you hear her cry, her voice muffled by the proximity of the other world. <quote>Stay your hand!</quote> The wild fire of your Staff tears towards the Kleas&aacute; and, as the bolt of energy hits the creature, it is Tanith who recoils in pain. Somehow, the Kleas&aacute; is making Tanith the victim of its pain. The Kleas&aacute; emits a chilling laugh full of scorn.</p>
        <choice idref="sect122"><!--ERRTAG-RE-151394-->If you have the Magical Power of Sorcery and with to use it to attack the Kleas&aacute;<!--/ERRTAG-RE-151394-->, <link-text>turn to 122</link-text>.</choice>
        <choice idref="sect143">If you have the Magical Power of Sorcery and possess the Mind Gem,<!--ERRTAG-AD-151599--> and wish to use them both against the Kleas&aacute;,<!--/ERRTAG-AD-151599--> <link-text>turn to 143</link-text>.</choice>
-       <choice idref="sect229">If you have the Black Rod of Shasarak and wish to use it, <link-text>turn to 229</link-text>.</choice>
+       <choice idref="sect229"><!--ERRTAG-RE-166812-->If you wish to use the Black Rod of Shasarak<!--/ERRTAG-RE-166812-->, <link-text>turn to 229</link-text>.</choice>
       </data>
      </section>
 
@@ -2095,7 +2099,7 @@ small11: sword, axe, & shield
       <data>
        <p>The Kleas&aacute; remains within the Shadow Gate, for its purpose is to guard it. Tanith gazes out at you with a tormented expression on her face. Using 2 <typ class="attribute">WILLPOWER</typ> points, you throw the Power of your Sorcery at the shadow creature. Tanith staggers with a mute cry. <quote>No, Grey Star!</quote> she screams. <quote>The Kleas&aacute; is using me as a shield.</quote> The Kleas&aacute; laughs maliciously.</p>
        <choice idref="sect143">If you have the Mind Gem and wish to use it, <link-text>turn to 143</link-text>.</choice>
-       <choice idref="sect229">If you have the Black Rod of Shasarak and wish to use it, <link-text>turn to 229</link-text>.</choice>
+       <choice idref="sect229"><!--ERRTAG-RE-174101-->If you wish to use the Black Rod of Shasarak<!--/ERRTAG-RE-174101-->, <link-text>turn to 229</link-text>.</choice>
       </data>
      </section>
 
@@ -2381,7 +2385,7 @@ small11: sword, axe, & shield
       <data>
        <p>You take out the red jewel. Drawing on the Power of Sorcery from the Astral plane, you project your will into the Gem and it begins to glow, shining with a blood-red light. You throw this power at the Kleas&aacute; and attempt to bend it to your will. Tanith&apos;s body becomes rigid and, stiffly, she turns her head towards you. The Kleas&aacute; remains unaffected and emits a chill laugh. You have used 2 <typ class="attribute">WILLPOWER</typ> points.</p>
        <choice idref="sect122">If you wish to use your Magical Power of Sorcery against the Kleas&aacute;, <link-text>turn to 122</link-text>.</choice>
-       <choice idref="sect229">If you have the Black Rod of Shasarak and wish to use it, <link-text>turn to 229</link-text>.</choice>
+       <choice idref="sect229"><!--ERRTAG-RE-200965-->If you wish to use the Black Rod of Shasarak<!--/ERRTAG-RE-200965-->, <link-text>turn to 229</link-text>.</choice>
       </data>
      </section>
 
@@ -2440,8 +2444,12 @@ small11: sword, axe, & shield
      <section class="numbered" id="sect148">
       <meta><title>148</title></meta>
 
+      <footnotes>
+       <footnote id="sect148-1-foot" idref="sect148-1"><p>You <em>must</em> take the Black Rod if you have not already done so (mark it as a Special Item on your <a idref="action">Action Chart</a>): the author assumes that you have done so later in the book.</p></footnote>
+      </footnotes>
+
       <data>
-       <p>You raise the Black Rod and point it towards the door. Willing the door to open, you notice a thin beam of yellow light strike the surface and silently it swings open to reveal another passage sloping upwards into the distance.</p>
+       <p>You raise the Black Rod and point it towards the door.<a id="sect148-1" idref="sect148-1-foot" class="footnote" /> Willing the door to open, you notice a thin beam of yellow light strike the surface and silently it swings open to reveal another passage sloping upwards into the distance.</p>
        <choice idref="sect267">If you wish to pass through the door, <link-text>turn to 267</link-text>.</choice>
        <choice idref="sect213">If you prefer to stay where you are, <link-text>turn to 213</link-text>.</choice>
       </data>
@@ -2686,10 +2694,10 @@ small11: sword, axe, & shield
       <meta><title>170</title></meta>
 
       <data>
-       <p>You place your hand upon the door and concentrate hard. The key that opens the door is the Black Rod that lies within the chest.</p>
+       <p>You place your hand upon the door and concentrate hard. The key that opens the door is the Black Rod<!--ERRTAG-DE-229487/-->.</p>
        <p>The use of this Magical Power has cost you 1 <typ class="attribute">WILLPOWER</typ> point.</p>
-       <choice idref="sect148">If you wish to take the Black Rod and use it to open the magic-locked door, <link-text>turn to 148</link-text>.</choice>
-       <choice idref="sect279">If you would rather use the Magical Power of Sorcery to open the door and possess 3 or more <typ class="attribute">WILLPOWER</typ> points, <link-text>turn to 279</link-text>.</choice>
+       <choice idref="sect148"><!--ERRTAG-RE-229727-->If you wish to use the Black Rod to open the magic-locked door<!--/ERRTAG-RE-229727-->, <link-text>turn to 148</link-text>.</choice>
+       <choice idref="sect279">If you would rather use the Magical Power of Sorcery to open the door and <!--ERRTAG-RE-230350-->possess 2 or more<!--/ERRTAG-RE-230350--> <typ class="attribute">WILLPOWER</typ> points, <link-text>turn to 279</link-text>.</choice>
       </data>
      </section>
 
@@ -3191,8 +3199,9 @@ small11: sword, axe, & shield
 
       <data>
        <p>Steeling yourself, you launch a massive bolt of mental energy at the magic-locked door. There is a deafening shriek as the bolt glances off the granite surface and explodes into the ceiling of the chamber. A shower of rock and dust rains down and a shock wave throws you to the floor. You realize that the door is held by a power far greater than your own.</p>
-       <choice idref="sect224">If you have the Magical Power of Psychomancy and wish to use it, <link-text>turn to 224</link-text>.</choice>
-       <choice idref="sect242">If you do not possess this skill,<!--ERRTAG-AD-250793--> or do not wish to use it,<!--/ERRTAG-AD-250793--> <link-text>turn to 242</link-text>.</choice>
+       <choice idref="sect170">If you have the Magical Power of Psychomancy and wish to use it, <link-text>turn to 170</link-text>.</choice>
+       <choice idref="sect224"><!--ERRTAG-AD-272010-->If you have the Magical Power of Prophecy and wish to use it, <link-text>turn to 224</link-text>.<!--/ERRTAG-AD-272010--></choice>
+       <choice idref="sect242"><!--ERRTAG-RE-272227-->If you do not possess either of these skills, or do not wish to use them<!--/ERRTAG-RE-272227-->, <link-text>turn to 242</link-text>.</choice>
       </data>
      </section>
 
@@ -3451,8 +3460,9 @@ small11: sword, axe, & shield
 
       <data>
        <p>You wield the Power of Sorcery against the door. In a flash of sparks, your energy bolt ricochets off the granite surface and slams into the cavern floor inches from Hugi&apos;s feet. You sense that the door is held by a power far greater than your own.</p>
-       <choice idref="sect224">If you have the Magical Power of Psychomancy and wish to use it, <link-text>turn to 224</link-text>.</choice>
-       <choice idref="sect242">If you do not possess this skill,<!--ERRTAG-AD-270939--> or do not wish to use it,<!--/ERRTAG-AD-270939--> <link-text>turn to 242</link-text>.</choice>
+       <choice idref="sect170">If you have the Magical Power of Psychomancy and wish to use it, <link-text>turn to 170</link-text>.</choice>
+       <choice idref="sect224"><!--ERRTAG-AD-293821-->If you have the Magical Power of Prophecy and wish to use it, <link-text>turn to 224</link-text>.<!--/ERRTAG-AD-293821--></choice>
+       <choice idref="sect242"><!--ERRTAG-RE-2940381-->If you do not possess either of these skills, or do not wish to use them<!--/ERRTAG-RE-2940381-->, <link-text>turn to 242</link-text>.</choice>
       </data>
      </section>
 
@@ -3879,7 +3889,7 @@ small11: sword, axe, & shield
        <choice idref="sect113">If you wish to fire a blast from your Staff at the creature, <link-text>turn to 113</link-text>.</choice>
        <choice idref="sect122">If you have the Magical Power of Sorcery and wish to use it, <link-text>turn to 122</link-text>.</choice>
        <choice idref="sect143">If you have the Magical Power of Sorcery and the Mind Gem and wish to use them both against the Kleas&aacute;, <link-text>turn to 143</link-text>.</choice>
-       <choice idref="sect229">If you have the Black Rod and wish to use it, <link-text>turn to 229</link-text>.</choice>
+       <choice idref="sect229"><!--ERRTAG-RE-330115-->If you wish to use the Black Rod<!--/ERRTAG-RE-330115-->, <link-text>turn to 229</link-text>.</choice>
       </data>
      </section>
 
@@ -4054,7 +4064,8 @@ small11: sword, axe, & shield
 
       <data>
        <p>You hurl the force of your will against the door. The rock trembles and a crackle of energy snakes across its surface, but to no avail. The door is held by a force far greater than your own.</p>
-       <choice idref="sect224">If you have the Magical Power of Psychomancy and wish to use it, <link-text>turn to 224</link-text>.</choice>
+       <choice idref="sect170">If you have the Magical Power of Psychomancy and wish to use it, <link-text>turn to 170</link-text>.</choice>
+       <choice idref="sect224"><!--ERRTAG-AD-345164-->If you have the Magical Power of Prophecy and wish to use it, <link-text>turn to 224</link-text>.<!--/ERRTAG-AD-345164--></choice>
        <choice idref="sect242">If you do not possess this skill, or do not wish to use it, <link-text>turn to 242</link-text>.</choice>
       </data>
      </section>
@@ -4337,6 +4348,14 @@ small11: sword, axe, & shield
     <data>
      <illustration>
       <meta>
+       <creator>Paul Bonner</creator>
+      </meta>
+      <instance src="map.jpg" width="1024" height="768" class="html" />
+      <instance src="map.pdf" width="1024" height="768" class="pdf" />
+     </illustration>
+
+     <illustration>
+      <meta>
        <creator>Christopher Lundgren</creator>
       </meta>
       <instance src="map.jpg" width="1024" height="768" class="html"/>
@@ -4521,10 +4540,12 @@ small11: sword, axe, & shield
        <p>(<a idref="sect95">95</a>)<!--ERRTAG-RE-135188-ITEM--> Replaced <quote>and as</quote> with <quote>and, as</quote>.<!--/ERRTAG-RE-135188-ITEM--><!--ERRTAG-RE-135747-ITEM--> Replaced <quote>under water</quote> with <quote>underwater</quote>.<!--/ERRTAG-RE-135747-ITEM--></p>
        <p>(<a idref="sect96">96</a>)<!--ERRTAG-RE-136036-ITEM--> Replaced <quote>robe you</quote> with <quote>robe, you</quote>.<!--/ERRTAG-RE-136036-ITEM--></p>
        <p>(<a idref="sect102">102</a>)<!--ERRTAG-RE-139751-ITEM--> Replaced <quote>Sadly you</quote> with <quote>Sadly, you</quote>.<!--/ERRTAG-RE-139751-ITEM--></p>
+       <p>(<a idref="sect103">103</a>)<!--ERRTAG-AD-156493-ITEM--> Added <quote>If you do not have any of these powers or possess insufficient <typ class="attribute">WILLPOWER</typ> points to use them, turn to 242.</quote>.<!--/ERRTAG-AD-156493-ITEM--><!--ERRTAG-RE-156141-ITEM--> Replaced <quote>possess 3 or more</quote> with <quote>possess 2 or more</quote>.<!--/ERRTAG-RE-156141-ITEM--></p>
        <p>(<a idref="sect108">108</a>)<!--ERRTAG-RE-144870-ITEM--> Replaced <quote>king.&lsquot;Either</quote> with <quote>king. &lsquot;Either</quote>.<!--/ERRTAG-RE-144870-ITEM--></p>
-       <p>(<a idref="sect113">113</a>)<!--ERRTAG-RE-151394-ITEM--> Replaced <quote>If you wish to attack the Kleas&aacute; with the Magical Power of Sorcery</quote> with <quote>If you have the Magical Power of Sorcery and with to use it to attack the Kleas&aacute;</quote> in the first choice.<!--/ERRTAG-RE-151394-ITEM--><!--ERRTAG-AD-151599-ITEM--> Added <quote> and wish to use them both against the Kleas&aacute;,</quote> in the second choice.<!--/ERRTAG-AD-151599-ITEM--></p>
+       <p>(<a idref="sect113">113</a>)<!--ERRTAG-RE-151394-ITEM--> Replaced <quote>If you wish to attack the Kleas&aacute; with the Magical Power of Sorcery</quote> with <quote>If you have the Magical Power of Sorcery and with to use it to attack the Kleas&aacute;</quote> in the first choice.<!--/ERRTAG-RE-151394-ITEM--><!--ERRTAG-AD-151599-ITEM--> Added <quote> and wish to use them both against the Kleas&aacute;,</quote> in the second choice.<!--/ERRTAG-AD-151599-ITEM--><!--ERRTAG-RE-166812-ITEM--> Replaced <quote>If you have the Black Rod of Shasarak and wish to use it</quote> with <quote>If you wish to use the Black Rod of Shasarak</quote>.<!--/ERRTAG-RE-166812-ITEM--></p>
        <p>(<a idref="sect116">116</a>)<!--ERRTAG-RE-154138-ITEM--> Replaced <quote>combat <!--link-text-->turn</quote> with <quote>combat, <!--link-text-->turn</quote>.<!--/ERRTAG-RE-154138-ITEM--></p>
        <p>(<a idref="sect121">121</a>)<!--ERRTAG-RE-157695-ITEM--> Replaced <quote>half light</quote> with <quote>half-light</quote>.<!--/ERRTAG-RE-157695-ITEM--></p>
+<p>(<a idref="sect122">122</a>)<!--ERRTAG-RE-174101-ITEM--> Replaced <quote>If you have the Black Rod of Shasarak and wish to use it</quote> with <quote>If you wish to use the Black Rod of Shasarak</quote>.<!--/ERRTAG-RE-174101-ITEM--></p>
        <p>(<a idref="sect124">124</a>)<!--ERRTAG-RE-159939-ITEM--> Replaced <quote>forward, you</quote> with <quote>forward. You</quote>.<!--/ERRTAG-RE-159939-ITEM--></p>
        <p>(<a idref="sect125">125</a>)<!--ERRTAG-RE-162466-ITEM--> Replaced <quote>Urik &lsquot;Very</quote> with <quote>Urik. &lsquot;Very</quote>.<!--/ERRTAG-RE-162466-ITEM--></p>
        <p>(<a idref="sect126">126</a>)<!--ERRTAG-RE-171243-ITEM--> Replaced <quote>this power</quote> with <quote>this Power</quote>.<!--/ERRTAG-RE-171243-ITEM--></p>
@@ -4535,6 +4556,7 @@ small11: sword, axe, & shield
        <p>(<a idref="sect135">135</a>)<!--ERRTAG-RE-174093-ITEM--> Replaced <quote>exhausted you</quote> with <quote>exhausted, you</quote>.<!--/ERRTAG-RE-174093-ITEM--></p>
        <p>(<a idref="sect140">140</a>) Replaced <quote>asks</quote> with <quote>asks.</quote>.<!--ERRTAG-RE-180230-ITEM--> Replaced <quote>out-sized</quote> with <quote>outsized</quote>.<!--/ERRTAG-RE-180230-ITEM--></p>
        <p>(<a idref="sect141">141</a>) Switched the section numbers given for the two choices, to avoid unreasonable consequences of high <typ class="attribute">ENDURANCE</typ> and <typ class="attribute">WILLPOWER</typ> scores.</p>
+<p>(<a idref="sect143">143</a>)<!--ERRTAG-RE-200965-ITEM--> Replaced <quote>If you have the Black Rod of Shasarak and wish to use it</quote> with <quote>If you wish to use the Black Rod of Shasarak</quote>.<!--/ERRTAG-RE-200965-ITEM--></p>
 <p>(<a idref="sect145">145</a>)<!--ERRTAG-RE-202815-ITEM--> Replaced <quote>spell whispering</quote> with <quote>spell, whispering</quote>in the caption for the illustration.<!--/ERRTAG-RE-202815-ITEM--></p>
        <p>(<a idref="sect146">146</a>)<!--ERRTAG-RE-186211-ITEM--> Replaced <quote>7&endash;12</quote> with <quote>6&endash;12</quote>.<!--/ERRTAG-RE-186211-ITEM--></p>
        <p>(<a idref="sect149">149</a>)<!--ERRTAG-RE-189306-ITEM--> Replaced <quote>Kiro will</quote> with <quote>Kiro, will</quote>.<!--/ERRTAG-RE-189306-ITEM--><!--ERRTAG-RE-190011-ITEM--> Replaced <quote>eyebow</quote> with <quote>eyebrow</quote>.<!--/ERRTAG-RE-190011-ITEM--></p>
@@ -4543,6 +4565,7 @@ small11: sword, axe, & shield
        <p>(<a idref="sect163">163</a>)<!--ERRTAG-RE-203800-ITEM--> Replaced <quote>swordman</quote> with <quote>swordsman</quote>.<!--/ERRTAG-RE-203800-ITEM--></p>
        <p>(<a idref="sect165">165</a>)<!--ERRTAG-RE-214623-ITEM--> Replaced <quote>this power</quote> with <quote>this Power</quote>.<!--/ERRTAG-RE-214623-ITEM--></p>
        <p>(<a idref="sect168">168</a>)<!--ERRTAG-RE-208862-ITEM--> Replaced <quote>magical Power</quote> with <quote>Magical Power</quote>.<!--/ERRTAG-RE-208862-ITEM--></p>
+<p>(<a idref="sect170">170</a>)<!--ERRTAG-DE-229487-ITEM--> Deleted <quote> that lies within the chest</quote>.<!--/ERRTAG-DE-229487-ITEM--><!--ERRTAG-RE-229727-ITEM--> Replaced <quote>If you wish to take the Black Rod and use it to open the magic-locked door</quote> with <quote>If you wish to use the Black Rod to open the magic-locked door</quote>.<!--/ERRTAG-RE-229727-ITEM--><!--ERRTAG-RE-230350-ITEM--> Replaced <quote>possess 3 or more</quote> with <quote>possess 2 or more</quote>.<!--/ERRTAG-RE-230350-ITEM--></p>
        <p>(<a idref="sect171">171</a>)<!--ERRTAG-RE-211489-ITEM--> Replaced <quote>your Current</quote> with <quote>your current</quote>.<!--/ERRTAG-RE-211489-ITEM--></p>
        <p>(<a idref="sect173">173</a>)<!--ERRTAG-RE-212763-ITEM--> Replaced <quote>backpack</quote> with <quote>Backpack</quote>.<!--/ERRTAG-RE-212763-ITEM--><!--ERRTAG-RE-220402-ITEM--> Replaced <quote>one Item</quote> with <quote>one item</quote>.<!--/ERRTAG-RE-220402-ITEM--></p>
        <p>(<a idref="sect174">174</a>)<!--ERRTAG-RE-213699-ITEM--> Replaced <quote>Magical power</quote> with <quote>Magical Power</quote>.<!--/ERRTAG-RE-213699-ITEM--></p>
@@ -4561,7 +4584,7 @@ small11: sword, axe, & shield
        <p>(<a idref="sect212">212</a>)<!--ERRTAG-RA-247640-ITEM--> Replaced all occurrences of <quote>luneday</quote> with <quote>Luneday</quote>.<!--/ERRTAG-RA-247640-ITEM--></p>
        <p>(<a idref="sect213">213</a>)<!--ERRTAG-RE-248793-ITEM--> Replaced <quote>menacingly as</quote> with <quote>menacingly, as</quote>.<!--/ERRTAG-RE-248793-ITEM--></p>
        <p>(<a idref="sect214">214</a>) Replaced <quote>mountains of Morn</quote> with <quote>Mountains of Morn</quote>.</p>
-       <p>(<a idref="sect215">215</a>)<!--ERRTAG-AD-250793-ITEM--> Added <quote> or do not wish to use it,</quote> in the second choice.<!--/ERRTAG-AD-250793-ITEM--></p>
+       <p>(<a idref="sect215">215</a>) Changed the choice to use Psychomancy to lead to <a idref="sect170">Section 170</a> rather than <a idref="sect224">Section 224</a>. <!--ERRTAG-AD-272010-ITEM--> Added <quote>If you have the Magical Power of Prophecy and wish to use it, turn to 224.</quote>.<!--/ERRTAG-AD-272010-ITEM--><!--ERRTAG-RE-272227-ITEM--> Replaced <quote>If you do not possess this skill</quote> with <quote>If you do not possess either of these skills, or do not wish to use them</quote>.<!--/ERRTAG-RE-272227-ITEM--></p>
        <p>(<a idref="sect216">216</a>)<!--ERRTAG-RE-251729-ITEM--> Replaced <quote>six</quote> with <quote>eight</quote>.<!--/ERRTAG-RE-251729-ITEM--><!--ERRTAG-RE-251871-ITEM--> Replaced <quote>257<!--/link-text--></quote> with <quote>257<!--/link-text-->.</quote>.<!--/ERRTAG-RE-251871-ITEM--><!--ERRTAG-RA-259336-ITEM--> Replaced all occurrences of <quote>Items</quote> with <quote>items</quote>.<!--/ERRTAG-RA-259336-ITEM--></p>
        <p>(<a idref="sect217">217</a>)<!--ERRTAG-RE-252419-ITEM--> Replaced <quote>the dead lands</quote> with <quote>&lsquot;the dead lands&rsquot;</quote>.<!--/ERRTAG-RE-252419-ITEM--></p>
        <p>(<a idref="sect219">219</a>)<!--ERRTAG-RE-253812-ITEM--> Replaced <quote>12 to 14</quote> with <quote>12&endash;14</quote>.<!--/ERRTAG-RE-253812-ITEM--></p>
@@ -4572,7 +4595,7 @@ small11: sword, axe, & shield
        <p>(<a idref="sect231">231</a>)<!--ERRTAG-RE-269658-ITEM--> Replaced <quote>side step</quote> with <quote>sidestep</quote>.<!--/ERRTAG-RE-269658-ITEM--></p>
        <p>(<a idref="sect234">234</a>) Changed the third choice which led to <a idref="sect289">Section 289</a> to lead to <a idref="sect146">Section 146</a> instead. This section fits better in the context of the story as it goes into particulars about how Enchantment is actually used.</p>
        <p>(<a idref="sect235">235</a>)<!--ERRTAG-RE-267769-ITEM--> Replaced <quote>Waist deep</quote> with <quote>Waist-deep</quote>.<!--/ERRTAG-RE-267769-ITEM--><!--ERRTAG-RE-268916-ITEM--> Replaced <quote>out-sized</quote> with <quote>outsized</quote>.<!--/ERRTAG-RE-268916-ITEM--><!--ERRTAG-RE-269838-ITEM--> Replaced <quote>wizard&apos;s Staff</quote> with <quote>Wizard&apos;s Staff</quote>.<!--/ERRTAG-RE-269838-ITEM--></p>
-       <p>(<a idref="sect237">237</a>)<!--ERRTAG-AD-270939-ITEM--> Added <quote> or do not wish to use it,</quote> in the second choice.<!--/ERRTAG-AD-270939-ITEM--></p>
+       <p>(<a idref="sect237">237</a>) Changed the choice to use Psychomancy to lead to <a idref="sect170">Section 170</a> rather than <a idref="sect224">Section 224</a>. <!--ERRTAG-AD-293821-ITEM--> Added <quote>If you have the Magical Power of Prophecy and wish to use it, turn to 224.</quote>.<!--/ERRTAG-AD-293821-ITEM--><!--ERRTAG-RE-2940381-ITEM--> Replaced <quote>If you do not possess this skill</quote> with <quote>If you do not possess either of these skills, or do not wish to use them</quote>.<!--/ERRTAG-RE-2940381-ITEM--></p>
        <p>(<a idref="sect247">247</a>)<!--ERRTAG-RE-277805-ITEM--> Replaced <quote>purple, he</quote> with <quote>purple; he</quote>.<!--/ERRTAG-RE-277805-ITEM--> Made Urik&apos;s quote from The Way of the Shianti a separate paragraph.</p>
        <p>(<a idref="sect249">249</a>)<!--ERRTAG-RE-280559-ITEM--> Replaced <quote>Toa tree</quote> with <quote>toa tree</quote>.<!--/ERRTAG-RE-280559-ITEM--></p>
        <p>(<a idref="sect250">250</a>)<!--ERRTAG-RE-282018-ITEM--> Replaced <quote> actions, prevents</quote> with <quote> actions prevents</quote>.<!--/ERRTAG-RE-282018-ITEM--><!--ERRTAG-RE-282421-ITEM--> Replaced <quote>&lsquot;You man!&rsquot; </quote> with <quote>&lsquot;You, man!&rsquot; </quote>.<!--/ERRTAG-RE-282421-ITEM--><!--ERRTAG-RE-282493-ITEM--> Replaced <quote>Sado, &lsquot;what</quote> with <quote>Sado, &lsquot;What</quote>.<!--/ERRTAG-RE-282493-ITEM--></p>
@@ -4587,13 +4610,14 @@ small11: sword, axe, & shield
        <p>(<a idref="sect267">267</a>)<!--ERRTAG-RE-299968-ITEM--> Replaced <quote>near.&rsquot; he</quote> with <quote>near,&rsquot; he</quote>.<!--/ERRTAG-RE-299968-ITEM--></p>
        <p>(<a idref="sect268">268</a>)<!--ERRTAG-RE-301021-ITEM--> Replaced <quote>Table<!--/a--></quote> with <quote>Table<!--/a-->.</quote>.<!--/ERRTAG-RE-301021-ITEM--></p>
        <p>(<a idref="sect269">269</a>)<!--ERRTAG-RE-301504-ITEM--> Replaced <quote>eyeless tormented</quote> with <quote>eyeless, tormented</quote>.<!--/ERRTAG-RE-301504-ITEM--><!--ERRTAG-RE-301884-ITEM--> Replaced <quote>magical Power</quote> with <quote>Magical Power</quote>.<!--/ERRTAG-RE-301884-ITEM--></p>
-       <p>(<a idref="sect272">272</a>)<!--ERRTAG-RE-304096-ITEM--> Replaced <quote>say &lsquot;I</quote> with <quote>say. &lsquot;I</quote>.<!--/ERRTAG-RE-304096-ITEM--></p>
+       <p>(<a idref="sect272">272</a>)<!--ERRTAG-RE-304096-ITEM--> Replaced <quote>say &lsquot;I</quote> with <quote>say. &lsquot;I</quote>.<!--/ERRTAG-RE-304096-ITEM--><!--ERRTAG-RE-330115-ITEM--> Replaced <quote>If you have the Black Rod and wish to use it</quote> with <quote>If you wish to use the Black Rod</quote>.<!--/ERRTAG-RE-330115-ITEM--></p>
        <p>(<a idref="sect275">275</a>)<!--ERRTAG-RE-307675-ITEM--> Replaced <quote>guards falls</quote> with <quote>guards fall</quote>.<!--/ERRTAG-RE-307675-ITEM--></p>
        <p>(<a idref="sect276">276</a>)<!--ERRTAG-RE-308601-ITEM--> Replaced <quote>&lsquot;Stranger&rsquot; he</quote> with <quote>&lsquot;Stranger,&rsquot; he</quote>.<!--/ERRTAG-RE-308601-ITEM--></p>
        <p>(<a idref="sect280">280</a>)<!--ERRTAG-RE-311936-ITEM--> Replaced <quote>Kazim stone</quote> with <quote>Kazim Stone</quote>.<!--/ERRTAG-RE-311936-ITEM--></p>
        <p>(<a idref="sect284">248</a>) Changed the choice which led to <a idref="sect300">Section 300</a> to lead to <a idref="sect302">Section 302</a> instead. This section was unreachable in the original and fits well in the context of the story here.</p>
        <p>(<a idref="sect286">286</a>)<!--ERRTAG-RE-315948-ITEM--> Replaced <quote>Sado, &lsquot;Charge</quote> with <quote>Sado. &lsquot;Charge</quote>.<!--/ERRTAG-RE-315948-ITEM--></p>
        <p>(<a idref="sect287">287</a>)<!--ERRTAG-RE-317448-ITEM--> Replaced <quote>counter-attack</quote> with <quote>counterattack</quote>.<!--/ERRTAG-RE-317448-ITEM--></p>
+       <p>(<a idref="sect288">288</a>) Changed the choice to use Psychomancy to lead to <a idref="sect170">Section 170</a> rather than <a idref="sect224">Section 224</a>.<!--ERRTAG-AD-345164-ITEM--> Added <quote>If you have the Magical Power of Prophecy and wish to use it, turn to 224.</quote>.<!--/ERRTAG-AD-345164-ITEM--></p>
        <p>(<a idref="sect289">289</a>)<!--ERRTAG-RE-328049-ITEM--> Replaced <quote>power of Enchantment</quote> with <quote>Power of Enchantment</quote>.<!--/ERRTAG-RE-328049-ITEM--></p>
        <p>(<a idref="sect290">290</a>)<!--ERRTAG-RE-319453-ITEM--> Replaced <quote>Huminoid</quote> with <quote>Humanoid</quote>.<!--/ERRTAG-RE-319453-ITEM--></p>
        <p>(<a idref="sect291">291</a>)<!--ERRTAG-RE-321049-ITEM--> Replaced <quote>Magical power</quote> with <quote>Magical Power</quote>.<!--/ERRTAG-RE-321049-ITEM--></p>
@@ -4625,6 +4649,7 @@ small11: sword, axe, & shield
      <p>(<a idref="sect112">Section 112</a>) Remember to deduct the total from your <typ class="attribute">WILLPOWER</typ> score before turning.</p>
      <p>(<a idref="sect133">Section 133</a>) If you wish to take the Sheath, record it as a Special Item on your <a idref="action">Action Chart</a>.</p>
      <p>(<a idref="sect136">Section 136</a>) Remember to deduct the total from your <typ class="attribute">WILLPOWER</typ> score before turning.</p>
+     <p>(<a idref="sect148">Section 148</a>) You <em>must</em> take the Black Rod if you have not already done so (mark it as a Special Item on your <a idref="action">Action Chart</a>): the author assumes that you have done so later in the book.</p>
      <p>(<a idref="sect162">Section 162</a>) As you have used your Power of Evocation against the Deathgaunts, you should deduct 3 <typ class="attribute">WILLPOWER</typ> points. (cf. <a idref="sect120">Section 120</a>)</p>
      <p>(<a idref="sect250">Section 250</a>) From this point in the story, this book suffers from a game design problem in that many sections give you options between using different forms of magic, but no option for what to do if your <typ class="attribute">WILLPOWER</typ> score has reached zero or below. If you encounter such a situation, you may choose one of the options anyway and continue subtracting <typ class="attribute">WILLPOWER</typ> points, or you may conclude that Grey Star has failed his mission and that the adventure is over.</p>
      <p>(<a idref="sect262">Section 262</a>) As you are using your Wizard&apos;s Staff against the Scree Wyrm, you should deduct 1 <typ class="attribute">WILLPOWER</typ> point.</p>
