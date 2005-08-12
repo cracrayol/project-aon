@@ -20,6 +20,9 @@
 $Id$
 
 $Log$
+Revision 1.11  2005/08/12 23:23:51  jonathan.blake
+Minor updates and illustration corrections.
+
 Revision 1.10  2005/07/14 17:42:59  jonathan.blake
 Removed spurious CR-CR line terminations
 
@@ -144,8 +147,8 @@ Initial revision
          <dd>Jonathan Blake<br />Simon Osborne</dd>
         <dt>XML</dt>
          <dd>Jonathan Blake<br />Thomas Wolmer</dd>
-        <dt>Action Charts</dt>
-         <dd>JC Alvarez<br />Jonathan Blake</dd>
+        <dt>Replacement Illustrations</dt>
+         <dd>JC Alvarez (action charts)<br />Jonathan Blake (extramatter charts and tables)<br />Christopher Lundgren (map and small illustrations)</dd>
         <dt>Proofreading</dt>
          <dd>Jeff Dougan (front matter)<br />David Harvey (Sections 1&endash;360)</dd>
         <dt>Editing</dt>
@@ -4523,7 +4526,7 @@ Heralding battle, to regain our hearts.</p>
       <meta><title>348</title></meta>
 
       <data>
-       <p><quote>We are only able to send you to the Lissan Plain, the north-western province of the Shadakine Empire (see the map at the beginning of the book). This was once the domain of the Masbat&eacute; tribe, warrior nomads of great prowess and strength. It was Shasarak who brought doom to these once-great people, when the Shadakine Empire was first won. In a terrible war, hordes of Shadakine warriors pursued the Masbat&eacute; across the plains in their great war chariots, led by the Wytch-king himself. The Masbat&eacute; were able to resist the Shadakine, despite overwhelming odds, until Shasarak summoned the demon plague. Faced with such an assault, the Masbat&eacute; were unable to resist and an entire race was wiped from the face of the world. The demons still roam the plains, and no one dares go there. The vast expanse of the Lissan Plain was once rich and fertile. Now, none may benefit from it, save for the scavenging packs of hell beasts that roam there.</quote></p>
+       <p><quote>We are only able to send you to the Lissan Plain, the north-western province of the Shadakine Empire (see the <a idref="map">map</a><!--ERRTAG-DE-424345/-->). This was once the domain of the Masbat&eacute; tribe, warrior nomads of great prowess and strength. It was Shasarak who brought doom to these once-great people, when the Shadakine Empire was first won. In a terrible war, hordes of Shadakine warriors pursued the Masbat&eacute; across the plains in their great war chariots, led by the Wytch-king himself. The Masbat&eacute; were able to resist the Shadakine, despite overwhelming odds, until Shasarak summoned the demon plague. Faced with such an assault, the Masbat&eacute; were unable to resist and an entire race was wiped from the face of the world. The demons still roam the plains, and no one dares go there. The vast expanse of the Lissan Plain was once rich and fertile. Now, none may benefit from it, save for the scavenging packs of hell beasts that roam there.</quote></p>
        <p>His voice has begun to grow very faint.</p>
        <choice idref="sect326"><link-text>Turn to 326</link-text>.</choice>
       </data>
@@ -4702,6 +4705,15 @@ Heralding battle, to regain our hearts.</p>
       <instance src="map.jpg" width="1024" height="768" class="html" />
       <instance src="map.pdf" width="1024" height="768" class="pdf" />
      </illustration>
+
+     <illustration>
+      <meta>
+       <creator>Christopher Lundgren</creator>
+      </meta>
+      <instance src="map.jpg" width="1024" height="768" class="html"/>
+      <instance src="map.pdf" width="1024" height="768" class="pdf"/>
+     </illustration>
+    </data>
     </data>
    </section>
 
@@ -4968,6 +4980,7 @@ Heralding battle, to regain our hearts.</p>
        <p>(<a idref="sect343">343</a>)<!--ERRTAG-RE-399152-ITEM--> Replaced <quote>superstitous</quote> with <quote>superstitious</quote>.<!--/ERRTAG-RE-399152-ITEM--></p>
        <p>(<a idref="sect345">345</a>)<!--ERRTAG-RE-415215-ITEM--> Replaced <quote>arch enemy</quote> with <quote>arch-enemy</quote>.<!--/ERRTAG-RE-415215-ITEM--></p>
        <p>(<a idref="sect347">347</a>)<!--ERRTAG-RE-401785-ITEM--> Replaced <quote>beleagured</quote> with <quote>beleaguered</quote>.<!--/ERRTAG-RE-401785-ITEM--><!--ERRTAG-RE-403110-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-403110-ITEM--></p>
+<p>(<a idref="sect348">348</a>)<!--ERRTAG-DE-424345-ITEM--> Deleted <quote> at the beginning of the book</quote>.<!--/ERRTAG-DE-424345-ITEM--></p>
        <p>(<a idref="sect350">350</a>)<!--ERRTAG-RE-420935-ITEM--> Replaced <quote>demon lord</quote> with <quote>Demonlord</quote>.<!--/ERRTAG-RE-420935-ITEM--></p>
        <p>(<a idref="sect352">352</a>)<!--ERRTAG-RE-409496-ITEM--> Replaced <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RE-409496-ITEM--></p>
        <p>(<a idref="sect353">353</a>)<!--ERRTAG-RA-411499-ITEM--> Replaced all occurrences of <quote>higher magick</quote> with <quote>Higher Magick</quote>.<!--/ERRTAG-RA-411499-ITEM--><!--ERRTAG-AD-423745-ITEM--> Added a fourth choice <quote>If you do not possess any of the above Powers, you must attack the bridge with your Staff; <!--link-text-->turn to 175<!--/link-text-->.</quote> (cf. <a idref="sect280">Section 280</a>).<!--/ERRTAG-AD-423745-ITEM--></p>
