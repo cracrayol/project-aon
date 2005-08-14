@@ -20,6 +20,9 @@
 $Id$
 
 $Log$
+Revision 1.10  2005/08/14 19:38:21  angantyr
+Corrected various *ne issues.
+
 Revision 1.9  2005/08/12 23:23:51  jonathan.blake
 Minor updates and illustration corrections.
 
@@ -165,14 +168,14 @@ Change Log:
  <meta>
   <title>Grey Star the Wizard</title>
   <creator class="short">Ian Page and Joe Dever</creator>
-  <creator class="medium">Ian Page<!-- WOLM: we are still waiting... <br />Illustrated by Paul Bonner --><br />Edited by Joe Dever</creator>
+  <creator class="medium">Ian Page<br />Illustrated by Paul Bonner<br />Edited by Joe Dever</creator>
   <creator class="long">
    &inclusion.ian.page.bio.gs;
    &inclusion.joe.dever.bio.gs;
    &inclusion.paul.bonner.bio.gs;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2005</year><month>7</month><day>2</day></date>
+  <date class="publication"><year>2005</year><month>08</month><day>14</day></date>
   <description class="blurb">
    <p><strong>In the World of Lone Wolf a new hero has arisen&emdash;Grey Star the Wizard</strong></p>
    <p>You are Grey Star. From the core of a raging storm you appeared&emdash;a human child, ship-wrecked and orphaned, a gift of hope to the exiled Shianti sorcerers. Ever since that fateful night they have raised you as one of their own, teaching you the mysteries of their magic in preparation for an epic quest.</p>
@@ -248,7 +251,7 @@ Change Log:
         <dt>Coordination</dt>
          <dd>Jonathan Blake<br />Thomas Wolmer</dd>
         <dt>Special Thanks</dt>
-         <dd>David Davis</dd>
+         <dd>David Davis<br />Patrick Kalinauskas</dd>
        </dl>
       </data>
      </section>
@@ -1976,8 +1979,7 @@ Change Log:
       <meta><title>109</title></meta>
 
       <data>
-       <p>You spend a great deal of time preparing yourself, pacing up and down the cell, while Shan looks on, mystified. When you feel you have reached the correct mental state, you focus your attention on the door. Your initial exertion of will has little effect and you gradually increase the strength of the spell. You have already used up 2 <typ class="attribute">WILLPOWER</typ> points when the door begins to creak on its hinges, the thick wood warping. With a surge of effort you throw enough power at the door to use up 3 <typ class="attribute">WILLPOWER</typ> points. The timbers snap and the joists squeal, but still the lock will not give. A last desperate attempt produces 4 <typ class="attribute">WILLPOWER</typ> points of energy that splinters the door. A mighty noise echoes down the corridor as the door crashes to the ground. You have used 4 <typ class="attribute">WILLPOWER</typ> points and lost 1 <typ class="attribute">ENDURANCE</typ> point due to the prolonged strain!
-.</p>
+       <p>You spend a great deal of time preparing yourself, pacing up and down the cell, while Shan looks on, mystified. When you feel you have reached the correct mental state, you focus your attention on the door. Your initial exertion of will has little effect and you gradually increase the strength of the spell. You have already used up 2 <typ class="attribute">WILLPOWER</typ> points when the door begins to creak on its hinges, the thick wood warping. With a surge of effort you throw enough power at the door to use up 3 <typ class="attribute">WILLPOWER</typ> points. The timbers snap and the joists squeal, but still the lock will not give. A last desperate attempt produces 4 <typ class="attribute">WILLPOWER</typ> points of energy that splinters the door. A mighty noise echoes down the corridor as the door crashes to the ground. You have used 4 <typ class="attribute">WILLPOWER</typ> points and lost 1 <typ class="attribute">ENDURANCE</typ> point due to the prolonged strain!</p>
        <p>You and Shan rush to the top of the steps and out into the corridor. Already, further down the passage to your right, you can hear someone shouting. You recognize the voice of the jailer and the sound of his clanking keys.</p>
        <choice idref="sect243">If you wish to confront the jailer, <link-text>turn to 243</link-text>.</choice>
        <choice idref="sect333">If you wish to go in the opposite direction, <link-text>turn to 333</link-text>.</choice>
@@ -2823,7 +2825,6 @@ Change Log:
 
       <data>
        <p>Raising your Staff, you attack the Yaku. A fiery bolt burns into the heart of the plant and it releases its grip immediately. The attack has cost you 1 <typ class="attribute">WILLPOWER</typ> point.</p>
-       <p>Suddenly Shan falls to the ground, emitting a startled cry; a snaking creeper is wrapped tightly around his legs.</p>
        <illustration class="inline">
         <meta>
          <creator>Paul Bonner</creator>
@@ -2831,6 +2832,7 @@ Change Log:
         <instance class="html" src="small10.gif" width="386" height="150"/>
         <instance class="pdf" src="small10.pdf" width="386" height="150"/>
        </illustration>
+       <p>Suddenly Shan falls to the ground, emitting a startled cry; a snaking creeper is wrapped tightly around his legs.</p>
        <choice idref="sect285">If you wish to loose a bolt at the Yaku as it drags Shan towards its centre, <link-text>turn to 285</link-text>.</choice>
        <choice idref="sect240">If you wish to rush to Shan&apos;s side, <link-text>turn to 240</link-text>.</choice>
       </data>
@@ -5360,7 +5362,7 @@ Change Log:
         <li><a idref="sect13">Section 13</a>, <a idref="sect127">Section 127</a></li>
         <li><a idref="sect34">Section 34</a></li>
         <li><a idref="sect146">Section 146</a></li>
-        <li><a idref="sect148">Section 148</a> <a idref="sect342">Section 342</a></li>
+        <li><a idref="sect148">Section 148</a>, <a idref="sect342">Section 342</a></li>
         <li><a idref="sect161">Section 161</a></li>
         <li><a idref="sect179">Section 179</a></li>
         <li><a idref="sect183">Section 183</a></li>
