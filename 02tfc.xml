@@ -20,6 +20,9 @@
 $Id$
 
 $Log$
+Revision 1.11  2005/08/15 16:42:39  jonathan.blake
+no message
+
 Revision 1.10  2005/08/14 19:44:15  angantyr
 Corrected various *ne issues.
 
@@ -1886,8 +1889,8 @@ small11: sword, axe, & shield
        <p>Disgruntled by the lack of treasure, Hugi ambles to the far side of the cavern and points to an outcrop of rough-hewn granite. <quote>Here is a door,</quote> he says, <quote>but it is magic-locked. A problem for you to solve, eh Wizard?</quote></p>
        <choice idref="sect170">If you possess the Power of Psychomancy and wish to use it, <link-text>turn to 170</link-text>.</choice>
        <choice idref="sect224">If you have the Magical Power of Prophecy and wish to use it, <link-text>turn to 224</link-text>.</choice>
-       <choice idref="sect279">If you have the Power of Sorcery and <!--ERRTAG-RE-156141-->possess 2 or more<!--/ERRTAG-RE-156141--> <typ class="attribute">WILLPOWER</typ> points to use on the door, <link-text>turn to 279</link-text>.</choice>
-       <choice idref="sect242"><!--ERRTAG-AD-156493-->If you do not have any of these powers or possess insufficient <typ class="attribute">WILLPOWER</typ> points to use them, <link-text>turn to 242</link-text>.<!--/ERRTAG-AD-156493--></choice>
+       <choice idref="sect279">If you have the Power of Sorcery and possess 3 or more <typ class="attribute">WILLPOWER</typ> points to use on the door, <link-text>turn to 279</link-text>.</choice>
+       <choice idref="sect242"><!--ERRTAG-AD-156493-->If you possess insufficient <typ class="attribute">WILLPOWER</typ> points to use any of these powers, <link-text>turn to 242</link-text>.<!--/ERRTAG-AD-156493--></choice>
       </data>
      </section>
 
@@ -2452,7 +2455,7 @@ small11: sword, axe, & shield
       <meta><title>148</title></meta>
 
       <footnotes>
-       <footnote id="sect148-1-foot" idref="sect148-1"><p>You <em>must</em> take the Black Rod if you have not already done so (mark it as a Special Item on your <a idref="action">Action Chart</a>): the author assumes that you have done so later in the book.</p></footnote>
+       <footnote id="sect148-1-foot" idref="sect148-1"><p>If you have not already done so, mark the Black Rod as a Special Item on your <a idref="action">Action Chart</a>.</p></footnote>
       </footnotes>
 
       <data>
@@ -2704,7 +2707,7 @@ small11: sword, axe, & shield
        <p>You place your hand upon the door and concentrate hard. The key that opens the door is the Black Rod<!--ERRTAG-DE-229487/-->.</p>
        <p>The use of this Magical Power has cost you 1 <typ class="attribute">WILLPOWER</typ> point.</p>
        <choice idref="sect148"><!--ERRTAG-RE-229727-->If you wish to use the Black Rod to open the magic-locked door<!--/ERRTAG-RE-229727-->, <link-text>turn to 148</link-text>.</choice>
-       <choice idref="sect279">If you would rather use the Magical Power of Sorcery to open the door and <!--ERRTAG-RE-230350-->possess 2 or more<!--/ERRTAG-RE-230350--> <typ class="attribute">WILLPOWER</typ> points, <link-text>turn to 279</link-text>.</choice>
+       <choice idref="sect279">If you would rather use the Magical Power of Sorcery to open the door and possess 3 or more <typ class="attribute">WILLPOWER</typ> points, <link-text>turn to 279</link-text>.</choice>
       </data>
      </section>
 
@@ -4547,7 +4550,7 @@ small11: sword, axe, & shield
        <p>(<a idref="sect95">95</a>)<!--ERRTAG-RE-135188-ITEM--> Replaced <quote>and as</quote> with <quote>and, as</quote>.<!--/ERRTAG-RE-135188-ITEM--><!--ERRTAG-RE-135747-ITEM--> Replaced <quote>under water</quote> with <quote>underwater</quote>.<!--/ERRTAG-RE-135747-ITEM--></p>
        <p>(<a idref="sect96">96</a>)<!--ERRTAG-RE-136036-ITEM--> Replaced <quote>robe you</quote> with <quote>robe, you</quote>.<!--/ERRTAG-RE-136036-ITEM--></p>
        <p>(<a idref="sect102">102</a>)<!--ERRTAG-RE-139751-ITEM--> Replaced <quote>Sadly you</quote> with <quote>Sadly, you</quote>.<!--/ERRTAG-RE-139751-ITEM--></p>
-       <p>(<a idref="sect103">103</a>)<!--ERRTAG-AD-156493-ITEM--> Added <quote>If you do not have any of these powers or possess insufficient <typ class="attribute">WILLPOWER</typ> points to use them, turn to 242.</quote>.<!--/ERRTAG-AD-156493-ITEM--><!--ERRTAG-RE-156141-ITEM--> Replaced <quote>possess 3 or more</quote> with <quote>possess 2 or more</quote>.<!--/ERRTAG-RE-156141-ITEM--></p>
+       <p>(<a idref="sect103">103</a>)<!--ERRTAG-AD-156493-ITEM--> Added <quote>If you possess insufficient <typ class="attribute">WILLPOWER</typ> points to use any of these powers, turn to 242.</quote>.<!--/ERRTAG-AD-156493-ITEM--></p>
        <p>(<a idref="sect108">108</a>)<!--ERRTAG-RE-144870-ITEM--> Replaced <quote>king.&lsquot;Either</quote> with <quote>king. &lsquot;Either</quote>.<!--/ERRTAG-RE-144870-ITEM--></p>
        <p>(<a idref="sect113">113</a>)<!--ERRTAG-RE-151394-ITEM--> Replaced <quote>If you wish to attack the Kleas&aacute; with the Magical Power of Sorcery</quote> with <quote>If you have the Magical Power of Sorcery and with to use it to attack the Kleas&aacute;</quote> in the first choice.<!--/ERRTAG-RE-151394-ITEM--><!--ERRTAG-AD-151599-ITEM--> Added <quote> and wish to use them both against the Kleas&aacute;,</quote> in the second choice.<!--/ERRTAG-AD-151599-ITEM--><!--ERRTAG-RE-166812-ITEM--> Replaced <quote>If you have the Black Rod of Shasarak and wish to use it</quote> with <quote>If you wish to use the Black Rod of Shasarak</quote>.<!--/ERRTAG-RE-166812-ITEM--></p>
        <p>(<a idref="sect116">116</a>)<!--ERRTAG-RE-154138-ITEM--> Replaced <quote>combat <!--link-text-->turn</quote> with <quote>combat, <!--link-text-->turn</quote>.<!--/ERRTAG-RE-154138-ITEM--></p>
@@ -4572,7 +4575,7 @@ small11: sword, axe, & shield
        <p>(<a idref="sect163">163</a>)<!--ERRTAG-RE-203800-ITEM--> Replaced <quote>swordman</quote> with <quote>swordsman</quote>.<!--/ERRTAG-RE-203800-ITEM--></p>
        <p>(<a idref="sect165">165</a>)<!--ERRTAG-RE-214623-ITEM--> Replaced <quote>this power</quote> with <quote>this Power</quote>.<!--/ERRTAG-RE-214623-ITEM--></p>
        <p>(<a idref="sect168">168</a>)<!--ERRTAG-RE-208862-ITEM--> Replaced <quote>magical Power</quote> with <quote>Magical Power</quote>.<!--/ERRTAG-RE-208862-ITEM--></p>
-<p>(<a idref="sect170">170</a>)<!--ERRTAG-DE-229487-ITEM--> Deleted <quote> that lies within the chest</quote>.<!--/ERRTAG-DE-229487-ITEM--><!--ERRTAG-RE-229727-ITEM--> Replaced <quote>If you wish to take the Black Rod and use it to open the magic-locked door</quote> with <quote>If you wish to use the Black Rod to open the magic-locked door</quote>.<!--/ERRTAG-RE-229727-ITEM--><!--ERRTAG-RE-230350-ITEM--> Replaced <quote>possess 3 or more</quote> with <quote>possess 2 or more</quote>.<!--/ERRTAG-RE-230350-ITEM--></p>
+<p>(<a idref="sect170">170</a>)<!--ERRTAG-DE-229487-ITEM--> Deleted <quote> that lies within the chest</quote>.<!--/ERRTAG-DE-229487-ITEM--><!--ERRTAG-RE-229727-ITEM--> Replaced <quote>If you wish to take the Black Rod and use it to open the magic-locked door</quote> with <quote>If you wish to use the Black Rod to open the magic-locked door</quote>.<!--/ERRTAG-RE-229727-ITEM--></p>
        <p>(<a idref="sect171">171</a>)<!--ERRTAG-RE-211489-ITEM--> Replaced <quote>your Current</quote> with <quote>your current</quote>.<!--/ERRTAG-RE-211489-ITEM--></p>
        <p>(<a idref="sect173">173</a>)<!--ERRTAG-RE-212763-ITEM--> Replaced <quote>backpack</quote> with <quote>Backpack</quote>.<!--/ERRTAG-RE-212763-ITEM--><!--ERRTAG-RE-220402-ITEM--> Replaced <quote>one Item</quote> with <quote>one item</quote>.<!--/ERRTAG-RE-220402-ITEM--></p>
        <p>(<a idref="sect174">174</a>)<!--ERRTAG-RE-213699-ITEM--> Replaced <quote>Magical power</quote> with <quote>Magical Power</quote>.<!--/ERRTAG-RE-213699-ITEM--></p>
@@ -4656,7 +4659,7 @@ small11: sword, axe, & shield
      <p>(<a idref="sect112">Section 112</a>) Remember to deduct the total from your <typ class="attribute">WILLPOWER</typ> score before turning.</p>
      <p>(<a idref="sect133">Section 133</a>) If you wish to take the Sheath, record it as a Special Item on your <a idref="action">Action Chart</a>.</p>
      <p>(<a idref="sect136">Section 136</a>) Remember to deduct the total from your <typ class="attribute">WILLPOWER</typ> score before turning.</p>
-     <p>(<a idref="sect148">Section 148</a>) You <em>must</em> take the Black Rod if you have not already done so (mark it as a Special Item on your <a idref="action">Action Chart</a>): the author assumes that you have done so later in the book.</p>
+     <p>(<a idref="sect148">Section 148</a>) If you have not already done so, mark the Black Rod as a Special Item on your <a idref="action">Action Chart</a>.</p>
      <p>(<a idref="sect162">Section 162</a>) As you have used your Power of Evocation against the Deathgaunts, you should deduct 3 <typ class="attribute">WILLPOWER</typ> points. (cf. <a idref="sect120">Section 120</a>)</p>
      <p>(<a idref="sect250">Section 250</a>) From this point in the story, this book suffers from a game design problem in that many sections give you options between using different forms of magic, but no option for what to do if your <typ class="attribute">WILLPOWER</typ> score has reached zero or below. If you encounter such a situation, you may choose one of the options anyway and continue subtracting <typ class="attribute">WILLPOWER</typ> points, or you may conclude that Grey Star has failed his mission and that the adventure is over.</p>
      <p>(<a idref="sect262">Section 262</a>) As you are using your Wizard&apos;s Staff against the Scree Wyrm, you should deduct 1 <typ class="attribute">WILLPOWER</typ> point.</p>
