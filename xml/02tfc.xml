@@ -20,6 +20,9 @@
 $Id$
 
 $Log$
+Revision 1.13  2005/08/21 20:46:13  angantyr
+Added/modified footnotes and modified small illustrations.
+
 Revision 1.12  2005/08/15 17:16:09  jonathan.blake
 Fixed the laughable "Isle of Loin" OCR error.
 
@@ -143,7 +146,7 @@ small11: sword, axe, & shield
    &inclusion.paul.bonner.bio.gs;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2005</year><month>08</month><day>14</day></date>
+  <date class="publication"><year>2005</year><month>08</month><day>21</day></date>
   <description class="blurb">
    <p>You are the Wizard Grey Star. Your quest is to retrieve the legendary Moonstone and with its power throw down the evil Wytch-king. You must find the Shadow Gate&emdash;doorway to the magic realm where it lies hidden. When the moon is full, the Shadow Gate appears&emdash;in Desolation Valley beyond the Mountains of Morn, where you must dare <!--ERRTAG-RE-6558--><strong>The Forbidden City</strong><!--/ERRTAG-RE-6558-->.</p>
    <p>The Wytch-king will try to track you down. His slaves will dog your every step&emdash;the cruel warriors of Shadaki, the phantom spirit of the Deathgaunt and the dark horror of the demon <!--ERRTAG-RE-6876-->Kleas&aacute;<!--/ERRTAG-RE-6876-->. Only your <!--ERRTAG-RE-6952-->Magical Powers<!--/ERRTAG-RE-6952--> and the might of your Wizard&apos;s Staff can protect you in a terrifying adventure of madness, magic and menace!</p>
@@ -281,7 +284,7 @@ small11: sword, axe, & shield
       <p>Alternatively, you may wish to use your original <typ class="attribute">WILLPOWER</typ> score from the beginning of <cite>Grey Star the Wizard</cite>, and add 10 bonus points to this.</p>
      </footnote>
      <footnote id="gamerulz-2-foot" idref="gamerulz-2"><p>If you choose Alchemy as your new Magical Power, you also receive a Herb Pouch with contents, as detailed in the <a idref="equipmnt">Equipment</a> section.</p></footnote>
-       <footnote id="gamerulz-3-foot" idref="gamerulz-3"><p>It is possible for your <typ class="attribute">WILLPOWER</typ> to fall below zero. For example, if you are the victim of an attack that drains your <typ class="attribute">WILLPOWER</typ>, your score may be forced below zero. If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to cast spells or use your Wizard&apos;s Staff until your score is again above zero.</p></footnote>
+       <footnote id="gamerulz-3-foot" idref="gamerulz-3"><p>It is possible for your <typ class="attribute">WILLPOWER</typ> to fall below zero. For example, if you are the victim of an attack that drains your <typ class="attribute">WILLPOWER</typ>, your score may be forced below zero. If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to cast spells or use the magical properties of your Wizard&apos;s Staff until your score is again above zero. You can still use your Wizard&apos;s Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>.</p></footnote>
       </footnotes>
 
     <data>
@@ -299,9 +302,12 @@ small11: sword, axe, & shield
        <link class="prev" idref="gamerulz" />
        <link class="next" idref="equipmnt" />
       </meta>
+            
+      <footnotes>
+       <footnote id="powers-1-foot" idref="powers-1"><p>If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to use the magical properties of your Wizard&apos;s Staff until your score is again above zero. You can still use your Wizard&apos;s Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>.</p></footnote>
+      </footnotes>
 
       <data>
-
        <p>When you start your adventure, your education in the ways of wizardry is incomplete. You have mastered only <em>five</em> of the seven <!--ERRTAG-RA-22355-->Magical Power<!--/ERRTAG-RA-22355-->s that the Shianti call the <typ class="ital"><!--ERRTAG-RA-23432-->Lesser Magicks<!--/ERRTAG-RA-23432--></typ>. The choice of which <!--ERRTAG-RA-24762-->five Powers<!--/ERRTAG-RA-24762--> these are, is up to you. All of the <!--ERRTAG-RA-23432-->Lesser Magicks<!--/ERRTAG-RA-23432--> will be of use to you at some point on your quest, so choose them with care. Your survival may depend on the correct use of a <!--ERRTAG-RA-22355-->Magical Power<!--/ERRTAG-RA-22355--> at the right time.</p>
        <p>The seven <!--ERRTAG-RA-22355-->Magical Power<!--/ERRTAG-RA-22355-->s available to you are listed below. When you have chosen your <!--ERRTAG-RA-24762-->five Powers<!--/ERRTAG-RA-24762-->, enter them in the <!--ERRTAG-RA-22355-->Magical Power<!--/ERRTAG-RA-22355-->s section of your <a idref="action">Action Chart</a>.</p>
 
@@ -484,7 +490,7 @@ small11: sword, axe, & shield
           <instance class="html" src="staff.gif" width="112" height="141" />
          </illustration>
 
-         <p><a idref="staff-ill" class="accent-illustration" />Your Staff is your most valuable possession. It looks and feels like an ordinary quarterstaff, yet it is stronger than any known metal. This is your main combat weapon, for you are untrained in the use of any other form of armed combat. It contains a potent force that is unleashed at will by the power of your mind, and causes a beam of destructive power to hurtle from its tip. Every time you unleash this power you must deduct 1 <typ class="attribute">WILLPOWER</typ> point.</p>
+         <p><a idref="staff-ill" class="accent-illustration" />Your Staff is your most valuable possession. It looks and feels like an ordinary quarterstaff, yet it is stronger than any known metal. This is your main combat weapon, for you are untrained in the use of any other form of armed combat. It contains a potent force that is unleashed at will by the power of your mind, and causes a beam of destructive power to hurtle from its tip. Every time you unleash this power you must deduct 1 <typ class="attribute">WILLPOWER</typ> point.<a id="powers-1" idref="powers-1-foot" class="footnote" /></p>
          <p>In the event that your enemy survives such an attack or should you fall victim to a surprise attack, you will be forced to engage in close combat and must attempt to strike your enemy with the Staff. If your attack is successful, a bolt of energy will be released from the Staff that is capable of inflicting great physical harm. If you wish to increase the amount of damage that you inflict in this way, you must use more <typ class="attribute">WILLPOWER</typ> points and multiply the number of <typ class="attribute">ENDURANCE</typ> points lost by the enemy, accordingly. For example, if you chose to expend 3 <typ class="attribute">WILLPOWER</typ> points on your attack, all enemy <typ class="attribute">ENDURANCE</typ> point losses would be multiplied by three.</p>
          <p>If you enter combat without your Staff, deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ> If you have no weapon at all, you must deduct 8 points from your <typ class="attribute">COMBAT SKILL</typ>.</p>
         </data>
@@ -1279,6 +1285,13 @@ small11: sword, axe, & shield
 
       <data>
        <p>Standing before a crumbling bridge that crosses the left-hand fork of the Belzar River, you gaze, awestruck, at the desolate city that rests beneath the shadow of the mountains. In your darkest dreams, you have never known a place so eerie and forbidding: the blackened shards of the city walls reach hauntingly into the sky; clumps of black weed grow between pieces of crumbling masonry, and the twisted heights of ancient spires and crippled towers point accusingly at the heavens; an awful gloom hangs in the air and an atmosphere of brooding menace emanates from the heart of the city.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small10.gif" width="386" height="150"/>
+        <instance class="pdf" src="small10.pdf" width="386" height="150"/>
+       </illustration>
        <p>You look at the faces of your brave companions; Urik&apos;s wrinkled face, so often creased with laughter, now set in a frown; the hard countenance of brave Samu, the sundered king; and the angular, hawkish features of Hugi, whose eyes gleam greedily. You notice how pale they look, almost sickly, and a vague disquiet stirs in the back of your mind.</p>
        <p>You approach the bridge and Hugi looks at it, his eyes full of doubt. <quote>Is it safe?</quote> you ask.</p>
        <p><quote>It&apos;s stood here for centuries,</quote> Hugi answers.</p>
@@ -1412,13 +1425,6 @@ small11: sword, axe, & shield
        <p>The water is poisonous and, as it affects your body, you panic and begin to sink. Hugi and Urik have already reached the other side but, as soon as Samu sees you struggling, he strikes out towards you. With strong hands he grabs your robe and pulls you to the surface. Panting and gasping for breath, he hurls you to the safety of the river bank and slowly you crawl up the bank. The water you have swallowed has cost you 2 <typ class="attribute">ENDURANCE</typ> points. Suddenly, Urik gives a <!--ERRTAG-RE-107695-->cry: <quote>Samu!</quote><!--/ERRTAG-RE-107695--></p>
        <p>You turn in time to see Samu&apos;s flailing arms disappear beneath the surface of the water. You are stunned and dismayed. He disappears completely from sight, swept away by the waters of the poisonous Belzar River.</p>
        <p>With tears in your eyes, you walk in silence towards the walls of the Forbidden City.</p>
-       <illustration class="inline">
-        <meta>
-         <creator>Paul Bonner</creator>
-        </meta>
-        <instance class="html" src="small10.gif" width="386" height="150"/>
-        <instance class="pdf" src="small10.pdf" width="386" height="150"/>
-       </illustration>
        <choice idref="sect124"><link-text>Turn to 124</link-text>.</choice>
       </data>
      </section>
@@ -1521,6 +1527,13 @@ small11: sword, axe, & shield
 
       <data>
        <p>The atmosphere is heavy and humid, and it is hard to breathe. The effort of walking causes you to lose 1 <typ class="attribute">ENDURANCE</typ> point as your lungs labour against the damp, cloying air. The sun begins to set and the exhausted state of your body requires that you stop to rest for the night even though you are still within the confines of the swamp. Urik locates a bare, dry hillock and you stop there for the night. The air is alive with nocturnal insects and among them, to your dismay, you notice the distinct vermilion bodies of winged Blood Nymphs.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small5.gif" width="386" height="150"/>
+        <instance class="pdf" src="small5.pdf" width="386" height="150"/>
+       </illustration>
        <choice idref="sect121">If you have the Magical Power of Alchemy, <link-text>turn to 121</link-text>.</choice>
        <choice idref="sect28">If you do not, <link-text>turn to 28</link-text>.</choice>
       </data>
@@ -1531,14 +1544,14 @@ small11: sword, axe, & shield
 
       <data>
        <p>The Deathgaunt looks on as you usher your three companions within the protection of the pentacle. You possess no Magical Power capable of damaging this creature, for its body is not of the real world; your <!--ERRTAG-RE-115985-->Wizard&apos;s Staff<!--/ERRTAG-RE-115985--> cannot help you here. You remain within the pentacle and continue to chant the warding words of Evocation. Eventually, with a whispered cry of frustration, the Deathgaunt dematerializes.</p>
-       <p>You press on through the barren wilderness, more anxious than ever to reach your goal. The Deathgaunt has given up its attack for now but it is not destroyed and could return at any time. That night, with the black Mountains of Morn looming above you, you stop to make camp.</p>
        <illustration class="inline">
         <meta>
          <creator>Paul Bonner</creator>
         </meta>
-        <instance class="html" src="small5.gif" width="386" height="150"/>
-        <instance class="pdf" src="small5.pdf" width="386" height="150"/>
+        <instance class="html" src="small6.gif" width="386" height="150"/>
+        <instance class="pdf" src="small6.pdf" width="386" height="150"/>
        </illustration>
+       <p>You press on through the barren wilderness, more anxious than ever to reach your goal. The Deathgaunt has given up its attack for now but it is not destroyed and could return at any time. That night, with the black Mountains of Morn looming above you, you stop to make camp.</p>
        <choice idref="sect299">If you possess the Magical Power of Alchemy and have some Azawood leaves in your Herb Pouch, <link-text>turn to 299</link-text>.</choice>
        <choice idref="sect265">If not, <link-text>turn to 265</link-text>.</choice>
       </data>
@@ -1976,13 +1989,6 @@ small11: sword, axe, & shield
        <p><quote>The land beyond the Mountains of Morn, the region that is called Desolation Valley, was once the heart of a great kingdom, a nation called Taklakot. One day, a mighty wizard came amongst them, and he bore a great gift, so they thought. It was a magical stone which harnessed the fire of the sun. The people of Taklakot grew in knowledge but it was a power gained without wisdom and a great calamity befell them. Somehow, the fire of the Sun stone was released and in a single day an entire race was wiped from the face of the Earth. The barren land you see around you is the result of that fateful day; its curse still lingers.</quote></p>
        <p><quote>But what of the Forbidden City? Why does it still stand?</quote> asks Samu.</p>
        <p><quote>The mountains that surround the valley held the blast. The Forbidden City, or Gyanima as it was called, stands beyond those mountains. It was built to guard the pass through the mountains and is the only remnant of a dead civilization.</quote> A greedy light gleams in Hugi&apos;s eyes. <quote>The value of its treasures is immeasurable,</quote> he breathes.</p>
-       <illustration class="inline">
-        <meta>
-         <creator>Paul Bonner</creator>
-        </meta>
-        <instance class="html" src="small5.gif" width="386" height="150"/>
-        <instance class="pdf" src="small5.pdf" width="386" height="150"/>
-       </illustration>
        <p>Your Shianti training and lifestyle have taught you to place no value on material wealth and you soon lose interest in Hugi&apos;s tales of hidden gold. Once more, you ponder the incredible bleakness of the place. You gaze across the Belzar River, and to the hills beyond, and an involuntary shiver runs down your spine. Drifting down from the hills, you see an eerie, chilling sight. A ghostly, pallid form floats across the river, its hands outstretched towards you; it whispers with a voice like grating stone.</p>
        <choice idref="sect132">If you wish to fire a bolt of magical energy from your Staff at the ghostly form, <link-text>turn to 132</link-text>.</choice>
        <choice idref="sect209">If you wish to wait for it to come closer, <link-text>turn to 209</link-text>.</choice>
@@ -2206,13 +2212,6 @@ small11: sword, axe, & shield
       <data>
        <p>Steeling yourself for the long march through the night, you strike out and pray that the Deathgaunts do not appear. You are already tired, and the chill fever that the Deathgaunts have inflicted on you is wearing down your resistance.</p>
        <p>Stumbling with fatigue through the inky black night, you lose 2 <typ class="attribute">ENDURANCE</typ> points through lack of <!--ERRTAG-RE-166547-->sleep, but<!--/ERRTAG-RE-166547--> your heart lifts when, with the coming of dawn, you see the shattered outline of a city couched in the hills at the foot of the mountains at the point where the Belzar River forks.</p>
-       <illustration class="inline">
-        <meta>
-         <creator>Paul Bonner</creator>
-        </meta>
-        <instance class="html" src="small10.gif" width="386" height="150"/>
-        <instance class="pdf" src="small10.pdf" width="386" height="150"/>
-       </illustration>
        <choice idref="sect52"><link-text>Turn to 52</link-text>.</choice>
       </data>
      </section>
@@ -2939,13 +2938,6 @@ small11: sword, axe, & shield
       <data>
        <p>You are wrenched towards the very edge of the falling bridge. Helplessly, Samu dangles at the end of the Rope, looking at the fast-moving waters of the Belzar. <quote>I&ellips; I can&apos;t hold it,</quote> you shout in a strained voice to Urik and Hugi. They start forward, but as they step on to the bridge, bricks and stones fail into the river at an alarming rate. <quote>Stop!</quote> you scream, <quote>or we&apos;re all doomed!</quote></p>
        <p>Before anyone can act; the strain on the Rope is suddenly released and you fall backwards. Samu, seeing your plight, has cut the Rope with his sword, allowing himself to fall into the running water. Horrified, you watch as Samu struggles against the current. Then he is gone; there is no trace. <quote>Grey Star!</quote> Urik shouts. <quote>Come away&ellips; the bridge!</quote> Eyes blurred with tears, you stagger away from the bridge. Too numb to speak, the three of you walk towards the gate of the Forbidden City.</p>
-       <illustration class="inline">
-        <meta>
-         <creator>Paul Bonner</creator>
-        </meta>
-        <instance class="html" src="small10.gif" width="386" height="150"/>
-        <instance class="pdf" src="small10.pdf" width="386" height="150"/>
-       </illustration>
        <choice idref="sect124"><link-text>Turn to 124</link-text>.</choice>
       </data>
      </section>
@@ -3192,6 +3184,13 @@ small11: sword, axe, & shield
 
       <data>
        <p>A minute passes and the door slides shut as silently as it opened. Gradually, you sense that the room is becoming colder. A chill wind rises from nowhere, sending a shiver down your spine. It is not ordinary cold air causing you to tremble, it is the familiar presence of a Deathgaunt. It materializes in the centre of the cavern, close to where you stand. <quote>Welcome,</quote> it hisses <!--ERRTAG-RE-248793-->menacingly, as<!--/ERRTAG-RE-248793--> it stretches out its wispy fingers to claw at your soul. You fight to hang on to life, but it is a fight that you cannot win. Here, in the chamber of Shasarak the Wytch-king, the Deathgaunt draws on a power that you cannot resist, and you are borne swiftly from the realm of the living.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small6.gif" width="386" height="150"/>
+        <instance class="pdf" src="small6.pdf" width="386" height="150"/>
+       </illustration>
        <p>Your life and your quest end here.</p>
       </data>
      </section>
@@ -3605,6 +3604,13 @@ small11: sword, axe, & shield
 
       <data>
        <p>The darkening sky blossoms like a vast purple flower as the sun sets. The chirping of cicadas fills the air and you both decide to stop and rest. Urik gathers up handfuls of berries and offers you a strange new food, a blue fungus that grows beneath the soil. Cautiously you bite into it then smile with surprise, for it is delicious and tastes remarkably like cured meat.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small5.gif" width="386" height="150"/>
+        <instance class="pdf" src="small5.pdf" width="386" height="150"/>
+       </illustration>
        <p><quote>It is called Lianor,</quote> says Urik. <quote>Grows everywhere, yet hard to find. The secret gift of the Earth. Urik sees the secret places below the ground. Is it good?</quote> You nod and hungrily finish the delicious fungi. The Lianor is packed with goodness and you may restore 1 <typ class="attribute">ENDURANCE</typ> point. You rest beneath a twisted <!--ERRTAG-RE-280559-->toa tree<!--/ERRTAG-RE-280559--> while Urik stands watch; eventually you drift off into a peaceful sleep.</p>
        <choice idref="sect194"><link-text>Turn to 194</link-text>.</choice>
       </data>
@@ -3689,7 +3695,6 @@ small11: sword, axe, & shield
 
       <data>
        <p>The creature floats towards you across the Belzar River, its tattered robe shimmering with a silvery light. You can see the dim outline of an eyeless face locked in torment.</p>
-       <p>You send your thoughts racing out to the Elemental plane in a desperate plea for help but the Elementals do not answer your plea, for this is a Deathgaunt, one of the undead raised by the Wytch-king <!--ERRTAG-RE-288431-->Shasarak<!--/ERRTAG-RE-288431-->, and against it the Elemental powers cannot prevail. The use of this Magical Power has cost you 2 <typ class="attribute">WILLPOWER</typ> points.</p>
        <illustration class="inline">
         <meta>
          <creator>Paul Bonner</creator>
@@ -3697,6 +3702,7 @@ small11: sword, axe, & shield
         <instance class="html" src="small6.gif" width="386" height="150"/>
         <instance class="pdf" src="small6.pdf" width="386" height="150"/>
        </illustration>
+       <p>You send your thoughts racing out to the Elemental plane in a desperate plea for help but the Elementals do not answer your plea, for this is a Deathgaunt, one of the undead raised by the Wytch-king <!--ERRTAG-RE-288431-->Shasarak<!--/ERRTAG-RE-288431-->, and against it the Elemental powers cannot prevail. The use of this Magical Power has cost you 2 <typ class="attribute">WILLPOWER</typ> points.</p>
        <choice idref="sect169"><link-text>Turn to 169</link-text>.</choice>
       </data>
      </section>
@@ -3866,6 +3872,13 @@ small11: sword, axe, & shield
 
       <data>
        <p>You can see the dim outline of an <!--ERRTAG-RE-301504-->eyeless, tormented<!--/ERRTAG-RE-301504--> face. The shimmering, silvery creature is a Deathgaunt, an undead spirit freed by Shasarak, the Wytch-king, to roam the world of the living.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small6.gif" width="386" height="150"/>
+        <instance class="pdf" src="small6.pdf" width="386" height="150"/>
+       </illustration>
        <p>You attempt to cast the illusion of a warrior moving to attack it but the Deathgaunt is not fooled. It passes through the illusion and dispels it. The use of this <!--ERRTAG-RE-301884-->Magical Power<!--/ERRTAG-RE-301884--> has cost you 2 <typ class="attribute">WILLPOWER</typ> points.</p>
        <choice idref="sect169"><link-text>Turn to 169</link-text>.</choice>
       </data>
@@ -4655,7 +4668,8 @@ small11: sword, axe, & shield
      <p>(<a idref="gamerulz">The Game Rules</a>) If you have completed <cite>Grey Star the Wizard</cite>, your <typ class="attribute">WILLPOWER</typ> score will be zero before you begin this book. It doesn&apos;t seem fair to start this book with only 10 <typ class="attribute">WILLPOWER</typ> points, so you may choose to create a new <typ class="attribute">WILLPOWER</typ> score by choosing a number from the <a idref="random">Random Number Table</a> and adding 20. You may also choose to add the 10 <typ class="attribute">WILLPOWER</typ> point bonus to this new score.</p>
      <p>Alternatively, you may wish to use your original <typ class="attribute">WILLPOWER</typ> score from the beginning of <cite>Grey Star the Wizard</cite>, and add 10 bonus points to this.</p>
      <p>(<a idref="gamerulz">The Game Rules</a>) If you choose Alchemy as your new Magical Power, you also receive a Herb Pouch with contents, as detailed in the <a idref="equipmnt">Equipment</a> section.</p>
-     <p>(<a idref="gamerulz">The Game Rules</a>) It is possible for your <typ class="attribute">WILLPOWER</typ> to fall below zero. For example, if you are the victim of an attack that drains your <typ class="attribute">WILLPOWER</typ>, your score may be forced below zero. If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to cast spells or use your Wizard&apos;s Staff until your score is again above zero.</p>
+          <p>(<a idref="gamerulz">The Game Rules</a>) It is possible for your <typ class="attribute">WILLPOWER</typ> to fall below zero. For example, if you are the victim of an attack that drains your <typ class="attribute">WILLPOWER</typ>, your score may be forced below zero. If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to cast spells or use the magical properties of your Wizard&apos;s Staff until your score is again above zero. You can still use your Wizard&apos;s Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>.</p>
+          <p>(<a idref="powers">Magical Powers</a>) If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to use the magical properties of your Wizard&apos;s Staff until your score is again above zero. You can still use your Wizard&apos;s Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>.</p>
      <p>(<a idref="equipmnt">Equipment</a>) If you have mastered the Lesser Magick of Alchemy and therefore have a Herb Pouch, you may choose to keep potions, vials, or ingredients in either the Herb Pouch or your Backpack. All other Backpack Items must be kept in your Backpack.</p>
      <p>(<a idref="sect20">Section 20</a>) Turn directly to <a idref="sect149">Section 149</a> if the Magdi is still alive after 4 rounds. Do not finish the combat.</p>
      <p>(<a idref="sect45">Section 45</a>) After taking the Karmo potion and fighting your opponent, halve your <typ class="attribute">ENDURANCE</typ> and <typ class="attribute">WILLPOWER</typ> scores. It is at your discretion whether you should apply the penalty to your <typ class="attribute">ENDURANCE</typ> from the <a idref="random">Random Number Table</a> before or after halving your score. The former option is the most beneficial.</p>
@@ -4714,13 +4728,13 @@ small11: sword, axe, & shield
        <ul class="unbulleted">
         <li><a idref="powers">Magical Powers</a></li>
         <li><a idref="sect50">50</a>, <a idref="sect81">81</a></li>
-        <li><a idref="sect62">62</a>, <a idref="sect129">129</a>, <a idref="sect191">191</a></li>
-        <li><a idref="sect72">72</a>, <a idref="sect111">111</a></li>
+        <li><a idref="sect52">52</a></li>
+        <li><a idref="sect71">71</a>, <a idref="sect249">249</a></li>
+        <li><a idref="sect72">72</a>, <a idref="sect209">209</a>, <a idref="sect213">213</a>, <a idref="sect256">256</a>, <a idref="sect269">269</a></li>
         <li><a idref="sect103">103</a></li>
         <li><a idref="sect117">117</a>, <a idref="sect132">132</a>, <a idref="sect163">163</a>, <a idref="sect188">188</a>, <a idref="sect223">223</a>, <a idref="sect258">258</a>, <a idref="sect261">261</a></li>
         <li><a idref="sect133">133</a></li>
         <li><a idref="sect200">200</a></li>
-        <li><a idref="sect209">209</a>, <a idref="sect256">256</a></li>
         <li><a idref="sect222">222</a></li>
         <li><a idref="sect262">262</a></li>
        </ul>

@@ -20,6 +20,9 @@
 $Id$
 
 $Log$
+Revision 1.11  2005/08/21 20:41:53  angantyr
+Added/modified footnotes and modified small illustrations.
+
 Revision 1.10  2005/08/14 19:38:21  angantyr
 Corrected various *ne issues.
 
@@ -175,7 +178,7 @@ Change Log:
    &inclusion.paul.bonner.bio.gs;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2005</year><month>08</month><day>14</day></date>
+  <date class="publication"><year>2005</year><month>08</month><day>21</day></date>
   <description class="blurb">
    <p><strong>In the World of Lone Wolf a new hero has arisen&emdash;Grey Star the Wizard</strong></p>
    <p>You are Grey Star. From the core of a raging storm you appeared&emdash;a human child, ship-wrecked and orphaned, a gift of hope to the exiled Shianti sorcerers. Ever since that fateful night they have raised you as one of their own, teaching you the mysteries of their magic in preparation for an epic quest.</p>
@@ -305,7 +308,7 @@ Change Log:
     </meta>
 
     <footnotes>
-     <footnote id="gamerulz-1-foot" idref="gamerulz-1"><p>It is possible for your <typ class="attribute">WILLPOWER</typ> to fall below zero. For example, if you are the victim of an attack that drains your <typ class="attribute">WILLPOWER</typ>, your score may be forced below zero. If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to cast spells or use your Wizard&apos;s Staff until your score is again above zero.</p></footnote>
+     <footnote id="gamerulz-1-foot" idref="gamerulz-1"><p>It is possible for your <typ class="attribute">WILLPOWER</typ> to fall below zero. For example, if you are the victim of an attack that drains your <typ class="attribute">WILLPOWER</typ>, your score may be forced below zero. If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to cast spells or use the magical properties of your Wizard&apos;s Staff until your score is again above zero. You can still use your Wizard&apos;s Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>.</p></footnote>
     </footnotes>
 
     <data>
@@ -321,9 +324,12 @@ Change Log:
        <link class="prev" idref="gamerulz" />
        <link class="next" idref="equipmnt" />
       </meta>
+            
+      <footnotes>
+       <footnote id="powers-1-foot" idref="powers-1"><p>If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to use the magical properties of your Wizard&apos;s Staff until your score is again above zero. You can still use your Wizard&apos;s Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>.</p></footnote>
+      </footnotes>
 
       <data>
-
        <p>When you start your adventure, your education in the ways of wizardry is incomplete. You have mastered only <em>five</em> of the seven <!--ERRTAG-RA-24101-->Magical Powers<!--/ERRTAG-RA-24101--> that the Shianti call the <typ class="ital"><!--ERRTAG-RA-24205-->Lesser Magicks<!--/ERRTAG-RA-24205--></typ>. The choice of which <!--ERRTAG-RA-24244-->five Powers<!--/ERRTAG-RA-24244--> these are, is up to you. All of the <!--ERRTAG-RA-24205-->Lesser Magicks<!--/ERRTAG-RA-24205--> will be of use to you at some point on your quest, so choose them with care. Your survival may depend on the correct use of a <!--ERRTAG-RE-24435-->Magical Power<!--/ERRTAG-RE-24435--> at the right time.</p>
        <p>The seven <!--ERRTAG-RA-24101-->Magical Powers<!--/ERRTAG-RA-24101--> available to you are listed below. When you have chosen your <!--ERRTAG-RA-24244-->five Powers<!--/ERRTAG-RA-24244-->, enter them in the Magical Powers section of your <a idref="action">Action Chart</a>.</p>
 
@@ -506,7 +512,7 @@ Change Log:
           <instance class="html" src="staff.gif" width="112" height="141" />
          </illustration>
 
-         <p><a idref="staff-ill" class="accent-illustration" />Your Staff is your most valuable possession. It looks and feels like an ordinary quarterstaff, yet it is stronger than any known metal. This is your main combat weapon, for you are untrained in the use of any other form of armed combat. It contains a potent force that is unleashed at will by the power of your mind, and causes a beam of destructive power to hurtle from its tip. Every time you unleash this power you must deduct 1 <typ class="attribute">WILLPOWER</typ> point.</p>
+         <p><a idref="staff-ill" class="accent-illustration" />Your Staff is your most valuable possession. It looks and feels like an ordinary quarterstaff, yet it is stronger than any known metal. This is your main combat weapon, for you are untrained in the use of any other form of armed combat. It contains a potent force that is unleashed at will by the power of your mind, and causes a beam of destructive power to hurtle from its tip. Every time you unleash this power you must deduct 1 <typ class="attribute">WILLPOWER</typ> point.<a id="powers-1" idref="powers-1-foot" class="footnote" /></p>
          <p>In the event that your enemy survives such an attack or should you fall victim to a surprise attack, you will be forced to engage in close combat and must attempt to strike your enemy with the Staff. If your attack is successful, a bolt of energy will be released from the Staff that is capable of inflicting great physical harm. If you wish to increase the amount of damage that you inflict in this way, you must use more <typ class="attribute">WILLPOWER</typ> points and multiply the number of <typ class="attribute">ENDURANCE</typ> points lost by the enemy, accordingly. For example, if you chose to expend 3 <typ class="attribute">WILLPOWER</typ> points on your attack, all enemy <typ class="attribute">ENDURANCE</typ> point losses would be multiplied by three.</p>
          <p>If you enter combat without your Staff, deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ> If you have no weapon at all, you must deduct 8 points from your <typ class="attribute">COMBAT SKILL</typ>.</p>
         </data>
@@ -755,6 +761,13 @@ Change Log:
 
       <data>
        <p>You hurl a bolt from your Staff at the plant that threatens Shan. It is quickly destroyed by the searing blue flame, but the effort has cost you 2 <typ class="attribute">WILLPOWER</typ> points.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small10.gif" width="386" height="150"/>
+        <instance class="pdf" src="small10.pdf" width="386" height="150"/>
+       </illustration>
        <p>Suddenly, you are aware that creepers are clutching at your legs. As you crash to the ground, a tendril coils around your throat and pulls you towards the poison barbs of another Yaku plant. You are being slowly strangled to death and must lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
        <choice idref="sect42"><link-text>Turn to 42</link-text>.</choice>
       </data>
@@ -1981,6 +1994,13 @@ Change Log:
       <data>
        <p>You spend a great deal of time preparing yourself, pacing up and down the cell, while Shan looks on, mystified. When you feel you have reached the correct mental state, you focus your attention on the door. Your initial exertion of will has little effect and you gradually increase the strength of the spell. You have already used up 2 <typ class="attribute">WILLPOWER</typ> points when the door begins to creak on its hinges, the thick wood warping. With a surge of effort you throw enough power at the door to use up 3 <typ class="attribute">WILLPOWER</typ> points. The timbers snap and the joists squeal, but still the lock will not give. A last desperate attempt produces 4 <typ class="attribute">WILLPOWER</typ> points of energy that splinters the door. A mighty noise echoes down the corridor as the door crashes to the ground. You have used 4 <typ class="attribute">WILLPOWER</typ> points and lost 1 <typ class="attribute">ENDURANCE</typ> point due to the prolonged strain!</p>
        <p>You and Shan rush to the top of the steps and out into the corridor. Already, further down the passage to your right, you can hear someone shouting. You recognize the voice of the jailer and the sound of his clanking keys.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small1.gif" width="386" height="150"/>
+        <instance class="pdf" src="small1.pdf" width="386" height="150"/>
+       </illustration>
        <choice idref="sect243">If you wish to confront the jailer, <link-text>turn to 243</link-text>.</choice>
        <choice idref="sect333">If you wish to go in the opposite direction, <link-text>turn to 333</link-text>.</choice>
       </data>
@@ -2156,6 +2176,13 @@ Change Log:
        <p>You decide on Enchantment as your mode of escape: perhaps the jailer could be persuaded to open your cell door? A plan forms and you sink into a deep trance, weaving an elaborate illusion in your mind.</p>
        <p><quote>Fire! Fire!</quote> you shout, pounding on the door of your cell. Shan looks at you strangely, for there is no sign of any smoke. <quote>Jailer, open up before the whole place burns down!</quote></p>
        <p>After a little encouragement, Shan is soon persuaded to join in the charade and begins rushing around madly, yelling and pounding his fists on the door.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small1.gif" width="386" height="150"/>
+        <instance class="pdf" src="small1.pdf" width="386" height="150"/>
+       </illustration>
        <p>Soon, the jailer comes limping down the corridor and stops outside your cell. <quote>I thought I could smell smoke,</quote> he comments. He can see great plumes of fire raging in the middle of the dungeon and billowing smoke escaping under the door. He is completely fooled by your illusion and his rattling keys are soon in the lock. The door is thrown open and you and Shan bound up the steps and out into the corridor. The puzzled jailer is left peering into the cell, wondering why the flames of the fire give off no heat.</p>
        <p>The use of this Magical Power has cost you 2 <typ class="attribute">WILLPOWER</typ> points.</p>
        <choice idref="sect243">If you wish to pounce on the jailer while he has his back to you, <link-text>turn to 243</link-text>.</choice>
@@ -2939,6 +2966,13 @@ Change Log:
       <data>
        <p>Senseless with exhaustion, you are dragged forcibly from the chamber, down long flights of stairs and into the darkness of the dungeons of the Hall of Correction. Your senses rail against the ominous and overpowering feeling of oppression that seems imbued into the walls of the place. A tortuous scream fills the air, followed by the sound of brutal laughter. <quote>What was that?</quote> you whisper, hoarsely.</p>
        <p><quote>You&apos;ll find out soon enough,</quote> one of the Shadakine replies. <quote>Jailer! Lock this one up!</quote> A tattered cripple lurches towards you, a large bunch of keys rattling at his side.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small1.gif" width="386" height="150"/>
+        <instance class="pdf" src="small1.pdf" width="386" height="150"/>
+       </illustration>
        <p><quote>Here, Master Turnkey. Lock him up nice and safe now.</quote></p>
        <p>The jailer limps forwards, a mad and joyous expression on his face. <quote>Marvellous, simply marvellous,</quote> he giggles. <quote>Another guest. How wonderful to meet you.</quote></p>
        <p>An iron-shod door is unlocked and you are thrown into a dark and foul-smelling pit. You fall headlong down a flight of steps and lose consciousness before coming to rest on the straw-covered floor.</p>
@@ -3607,13 +3641,6 @@ Change Log:
       <data>
        <p>Without warning you attack the jailer who, despite his frail appearance, responds to your attack with savage blows. Owing to Shan&apos;s assistance and the element of surprise, you may add 4 points to your <typ class="attribute">COMBAT SKILL</typ> for the duration of this fight. You cannot evade and must fight to the death.</p>
        <combat><enemy>Jailer</enemy><enemy-attribute class="combatskill">8</enemy-attribute><enemy-attribute class="endurance">14</enemy-attribute></combat>
-       <illustration class="inline">
-        <meta>
-         <creator>Paul Bonner</creator>
-        </meta>
-        <instance class="html" src="small1.gif" width="386" height="150"/>
-        <instance class="pdf" src="small1.pdf" width="386" height="150"/>
-       </illustration>
        <p>If you win the fight you may keep the jailer&apos;s Dagger (mark it on your <a idref="action">Action Chart</a> as a Weapon).</p>
        <choice idref="sect125">If you wish to take the Jailer&apos;s Keys and free the other prisoners on this level, <link-text>turn to 125</link-text>.</choice>
        <choice idref="sect338">If you wish to head in the direction that the jailer came from, <link-text>turn to 338</link-text>.</choice>
@@ -3747,6 +3774,13 @@ Change Log:
 
       <data>
        <p>With your eye, you trace the tendril that holds Shan back to the main stem. Taking careful aim, you fire at the heart of the plant, destroying it easily at the cost of 2 <typ class="attribute">WILLPOWER</typ> points. Immediately Shan is released and he scrambles over to your side as two more creepers wind themselves around your legs. The creepers belong to different Yaku plants, and you feel yourself being pulled in two directions at once. Again you drop to the ground and howl in agony as the two Yaku plants attempt to wrench your body apart.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small10.gif" width="386" height="150"/>
+        <instance class="pdf" src="small10.pdf" width="386" height="150"/>
+       </illustration>
        <choice idref="sect279"><link-text>Turn to 279</link-text>.</choice>
       </data>
      </section>
@@ -5288,7 +5322,8 @@ Change Log:
     <meta><title>Footnotes</title></meta>
 
     <data>
-     <p>(<a idref="gamerulz">The Game Rules</a>) It is possible for your <typ class="attribute">WILLPOWER</typ> to fall below zero. For example, if you are the victim of an attack that drains your <typ class="attribute">WILLPOWER</typ>, your score may be forced below zero. If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to cast spells or use your Wizard&apos;s Staff until your score is again above zero.</p>
+          <p>(<a idref="gamerulz">The Game Rules</a>) It is possible for your <typ class="attribute">WILLPOWER</typ> to fall below zero. For example, if you are the victim of an attack that drains your <typ class="attribute">WILLPOWER</typ>, your score may be forced below zero. If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to cast spells or use the magical properties of your Wizard&apos;s Staff until your score is again above zero. You can still use your Wizard&apos;s Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>.</p>
+          <p>(<a idref="powers">Magical Powers</a>) If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to use the magical properties of your Wizard&apos;s Staff until your score is again above zero. You can still use your Wizard&apos;s Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>.</p>
      <p>(<a idref="equipmnt">Equipment</a>) This Special Item can be used in combat as if it were a normal Weapon. The Jewelled Dagger&apos;s bonus to your <typ class="attribute">COMBAT SKILL</typ> should only be applied when the Jewelled Dagger is used in combat. You should not use your Wizard&apos;s Staff at the same time. This would incur the normal &minus;6 penalty to your <typ class="attribute">COMBAT SKILL</typ> for not using your Wizard&apos;s Staff.</p>
      <p>Alternatively, you may decide that the Jewelled Dagger may be wielded together with your Wizard&apos;s Staff, and thus confers its bonus in all close combats. This makes the Jewelled Dagger a much more useful item.</p>
      <p>(<a idref="equipmnt">Equipment</a>) The bonus to your <typ class="attribute">WILLPOWER</typ> score provided by the Magic Talisman is added to your <typ class="attribute">WILLPOWER</typ> score only once and does not prevent your score from falling to zero.</p>
@@ -5359,14 +5394,14 @@ Change Log:
       <data>
        <ul class="unbulleted">
         <li><a idref="powers">Magical Powers</a></li>
+        <li><a idref="sect5">Section 5</a>, <a idref="sect179">Section 179</a>, <a idref="sect254">Section 254</a></li>
         <li><a idref="sect13">Section 13</a>, <a idref="sect127">Section 127</a></li>
         <li><a idref="sect34">Section 34</a></li>
+        <li><a idref="sect109">Section 109</a>, <a idref="sect124">Section 124</a>, <a idref="sect187">Section 187</a></li>
         <li><a idref="sect146">Section 146</a></li>
         <li><a idref="sect148">Section 148</a>, <a idref="sect342">Section 342</a></li>
         <li><a idref="sect161">Section 161</a></li>
-        <li><a idref="sect179">Section 179</a></li>
         <li><a idref="sect183">Section 183</a></li>
-        <li><a idref="sect243">Section 243</a></li>
         <li><a idref="sect264">Section 264</a></li>
         <li><a idref="sect271">Section 271</a></li>
         <li><a idref="sect280">Section 280</a></li>
