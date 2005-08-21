@@ -20,6 +20,9 @@
 $Id$
 
 $Log$
+Revision 1.12  2005/08/21 21:01:13  angantyr
+Corrected small *ne and XML issues.
+
 Revision 1.11  2005/08/12 23:23:51  jonathan.blake
 Minor updates and illustration corrections.
 
@@ -87,7 +90,7 @@ Initial revision
    &inclusion.paul.bonner.bio.gs;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2005</year><month>05</month><day>30</day></date>
+  <date class="publication"><year>2005</year><month>08</month><day>21</day></date>
   <description class="blurb">
    <p>You are the Wizard Grey Star. You now face the tumultuous <!--ERRTAG-RE-2167-->climax of your epic struggle<!--/ERRTAG-RE-2167--> to overthrow the evil Wytch-king Shasarak. His cruel empire is torn by war as the Freedom Fighters rebel against his corrupt dominion. Can you reach them in time to free mankind? Can you overcome the Wytch-king&apos;s ferocious soldiers and the supernatural hordes that are his to command? Your only hope lies in your Wizard&apos;s Staff. Guard it well&emdash;for it contains the might of the mystic Moonstone, the very essence of your Magical Powers.</p>
    <p><!--ERRTAG-RE-2248--><cite>The World of Lone Wolf</cite><!--/ERRTAG-RE-2248--> is an exciting adventure series in which you are the hero, you make the decisions, and you fight the combats using the unique systems included in the book.</p>
@@ -158,7 +161,7 @@ Initial revision
         <dt>Coordination</dt>
          <dd>Jonathan Blake<br />Thomas Wolmer</dd>
         <dt>Special Thanks</dt>
-         <dd>David Davis<br />Wolf Ewing<br />Xavier Mataillet<br />Justin Parks<br />Jennifer Sigman</dd>
+         <dd>David Davis<br />Wolf Ewing<br />Xavier Mataillet<br />Justin Parks<br />Jennifer Sigman<br />Iain Smith</dd>
        </dl>
       </data>
      </section>
@@ -238,7 +241,7 @@ Initial revision
 
       <footnotes>
        <footnote id="powers-1-foot" idref="powers-1"><p>The wording of this section of the rules seems to indicate&emdash;if read literally&emdash;that you may choose your set of Lesser Magicks again if you have completed a previous adventure. This is without precedent in other books. In order to preserve consistency with other books, you should not choose your Lesser Magicks again. If you have currently mastered five Lesser Magicks, you may choose one additional Lesser Magick from the list. If you have already mastered six Lesser Magicks, you keep these. If you choose Alchemy as a new Lesser Magick, or you have not mastered the Lesser Magick of Alchemy but you have selected the Higher Magick of Theurgy, you also receive a Herb Pouch with contents, as detailed in the Equipment section.</p></footnote>
-       <footnote id="powers-2-foot" idref="powers-2"><p>If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to use the magical properties of your Wizard&apos;s Staff until your score is again above zero. You can still use your Wizard&apos;s Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>. </p></footnote>
+       <footnote id="powers-2-foot" idref="powers-2"><p>If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to use the magical properties of your Wizard&apos;s Staff until your score is again above zero. You can still use your Wizard&apos;s Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>.</p></footnote>
       </footnotes>
 
       <data>
@@ -686,7 +689,7 @@ Initial revision
        </illustration>
        <p><quote>Hail Wizard, son of man. You have succeeded. We, the Shianti, rejoice and praise you. That which you hold in your hand contains the power that will enable you to defeat the evil Wytch-king, Shasarak.</quote></p>
        <p>A crowd of excited voices fills your mind as each of the Shianti sends words of congratulations and admiration. The last of these voices is Maiteya, your old friend, the Shianti master who taught you all you know. <quote>And so, <quote>little one</quote>,</quote> he says, affectionately <quote class="open-ended">now you possess the Moonstone, Shasarak&apos;s bane. While you hold it, we, the Shianti, are able to speak with you but this communication cannot be maintained much longer. Because you have the Moonstone, we have sufficient power to return you to the world, but there is much you should know before we do so. Listen well, Grey Star, for I know not when we will speak again.</quote></p>
-       <p><quote>Though it seems to you but a short time since you arrived at the Daziarn, seven years have passed here in the material world. During your search for the Shadow Gate, you visited the city of Karnali. Your arrival there inspired a revolution, led by Sado of the Long Knife and his Army of the Freedom Guild. After your departure, the Freedom Guild withstood a great siege by Shadakine warriors, who eventually withdrew defeated, much to Shasarak&apos;s displeasure. Word spread of this victory and the strength of the Army of the Freedom Guild grew. Strategically, Karnali was too isolated to make a great impact against the Shadakine Empire, but, due to the surrounding Gurlu Marshes, it remained self sufficient. Soon, many were travelling to Karnali to escape the tyranny of Shasarak&apos;s rule. Pockets of resistance broke out in the townships of Wenat, Zhanis, Sena and the city of Forlu, and the Freedom Guild soon dominated the hills and the plains of the south. They raided Shadakine supply trains and succeeded in depriving the empire of much of its wealth, cutting off all land routes to the Port of Suhn, the wealthiest and most important trade centre of the empire. An army is now formed in Karnali and, in three days, it will march against the Shadakine Empire, hoping to take Port Suhn in the first of many conquests. But, unknown to Sado and the Army of the Freedom Guild, a vast Shadakine force has been mustered in the Sadi desert. Soon, it will march against them. The Army of the Freedom Guild number ten thousand to the Shadakine&apos;s thirty thousand. The Freedom Guild cannot hope to succeed against such overwhelming odds. You must save them. Take then to the Forest of Fernmost. It is most important that you go there. There is little time and much to do Grey Star&ellips;</quote></p>
+       <p><quote>Though it seems to you but a short time since you arrived at the Daziarn, seven years have passed here in the material world. During your search for the Shadow Gate, you visited the city of Karnali. Your arrival there inspired a revolution, led by Sado of the Long Knife and his Army of the Freedom Guild. After your departure, the Freedom Guild withstood a great siege by Shadakine warriors, who eventually withdrew defeated, much to Shasarak&apos;s displeasure. Word spread of this victory and the strength of the Army of the Freedom Guild grew. Strategically, Karnali was too isolated to make a great impact against the Shadakine Empire, but, due to the surrounding Gurlu Marshes, it remained self sufficient. Soon, many were travelling to Karnali to escape the tyranny of Shasarak&apos;s rule. Pockets of resistance broke out in the townships of Wenat, Zhanis, Sena and the city of Forlu, and the Freedom Guild soon dominated the hills and the plains of the south. They raided Shadakine supply trains and succeeded in depriving the empire of much of its wealth, cutting off all land routes to the Port of Suhn, the wealthiest and most important trade centre of the empire. An army is now formed in Karnali and, in three days, it will march against the Shadakine Empire, hoping to take Port Suhn in the first of many conquests. But, unknown to Sado and the Army of the Freedom Guild, a vast Shadakine force has been mustered in the Sadi desert. Soon, it will march against them. The Army of the Freedom Guild number ten thousand to the Shadakine&apos;s thirty thousand. The Freedom Guild cannot hope to succeed against such overwhelming odds. You must save them. Take them to the Forest of Fernmost. It is most important that you go there. There is little time and much to do Grey Star&ellips;</quote></p>
        <p>The voice grows faint and you realize that the Shianti will be unable to maintain contact for much longer. <quote>And now, Grey Star, the contact breaks and we must return you to the world to begin the last of your great labours. Are there any last words of advice we can offer you?</quote></p>
        <p>Your mind races as you think of all that you might need to know.</p>
        <choice idref="sect348">If you wish to know where the Shianti intend sending you, and where in the Shadakine Empire your quest will begin, <link-text>turn to 348</link-text>.</choice>
@@ -4713,7 +4716,6 @@ Heralding battle, to regain our hearts.</p>
       <instance src="map.jpg" width="1024" height="768" class="html"/>
       <instance src="map.pdf" width="1024" height="768" class="pdf"/>
      </illustration>
-    </data>
     </data>
    </section>
 
