@@ -68,7 +68,7 @@
    "mksumary" "wpnmstry" "anmlmstr" "deliver" "assimila" "hntmstry" "pthmnshp"
    "kaisurge" "kaiscrn" "nexus" "gnosis" "magi" "alchemy"
    ;; grandmaster improved disciplines
-   "guardian" "sunkght"
+   "guardian" "sunkght" "sunlord" "sunthane"
    ;; gs lesser magicks
    "lessmcks" "sorcery" "enchant" "elementl" "alchemy" "prophecy" "psycmncy"
    "evcation" "staff"
