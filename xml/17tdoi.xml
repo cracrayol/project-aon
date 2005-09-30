@@ -20,6 +20,9 @@
 $Id$
 
 $Log$
+Revision 1.7  2005/09/30 22:30:44  jonathan.blake
+Commitment of partial errata fixes. More to come.
+
 Revision 1.6  2005/05/18 18:27:19  jonathan.blake
 Commiting (ne) changes from jffdougan
 
@@ -40,519 +43,6 @@ Added dump of submitted frontmatter text
 Revision 1.1  2005/03/26 23:45:50  jonathan.blake
 Initial Freepository revision - freshly minted from the proofread text
 
--->
-
-<!-- Pending Changes:
-Frontmatter:
-(ne) 17tdoi title: blurb missing [jsd: Need blurb for title page]
-(ne) 17tdoi dedicate: dedication missing [jsd: need original dedication 
-& blurb]
-(ne) 17tdoi acknwldg: missing credits (transcription, illustration 
-transcription, proofreading) [jsd: didn't I add these?]
-(er) 17tdoi tssf: free-state -> Freeland
-(er) 17tdoi tssf: Kai lord -> Kai Lord
-(er) 17tdoi tssf: north-east -> northeast
-(er) 17tdoi tssf: new-found -> newfound [so: x2]
-(er) 17tdoi tssf: shadow gate -> Shadow Gate [so: x3]
-(ne) 17tdoi tssf: of his prison, and in possession [so: Italicise 'and'.]
-(er) 17tdoi tssf: freestate -> Freeland [x2]
-(er) 17tdoi tssf: doomed to fail -> doomed to failure [so: Unsure about this one.]
-(ne) 17tdoi tssf: skyrider [so: Italicise.]
-(ft) 17tdoi tssf:  [jsd: Somebody (can't remember who) has commented 
-that starting with either 15tdc or 16tlov, it's possible to create a 
-timeline accurate enough to monitor using the advanced Curing and 
-Deliverance restorations of large EP numbers. If we can put such a 
-timeline together, we ought to footnote the issue someplace -- with the 
-time reference, this seems like the best place to do it.]
-(??) 17tdoi tssf: domain--the Darklands and -> domain--the Darklands--and
-(??) 17tdoi tssf: Naar--the King of the Darkness, to destroy -> Naar, 
-the King of the Darkness, to destroy --or-- Naar -- the King of the 
-Darkness -- to destroy
-(er) 17tdoi tssf: elite -> &eacute;lite [IK: as in the PAMoS]
-(er) 17tdoi tssf: Kai lord -> Kai Lord [IK: as in the PAMoS]
-(ne) 17tdoi tssf: allout -> all-out [ik:as in exactly the same text in  lw13-lw16]
-
-(er) 17tdoi gamerulz: that you will find in the front of this book. For ease of use, and for further adventuring, it is recommended that you photocopy these pages [so: Remove this.]
-(er) 17tdoi gamerulz: on the last page of this book [so: Remove this.]
-(er) 17tdoi gamerulz: (ie, -> (i.e. [so: x2]
-(ft) 17tdoi gamerulz: The Discipline bonuses mentioned do not affect your permanent scores. If you have completed previous adventures, the Disciplines that you have mastered may still be beneficial. See the Grand Master Rules section of the Rules Handbook for details. [so: copied directly from TDC.]
-(ft) 17tdoi gamerulz: [so: New footnote required regarding restoration of Korlinium Scabbard and Silver Bracers to and removal of Helshezag and Dagger of Vashna from permissable Special Items list.]
-(ft) 17tdoi discplnz: The rules of the books in the Magnakai series (6-12) and the fact that the 'rank of Kai Grand Defender . . . means you are skilled in two . . . weapons' imply that for each book that you complete of the Grand Master series (13-20), you will gain mastery of an additional Kai weapon. E.g. if you complete The Plague Lords of Ruel and have the Grand Master Discipline of Grand Weaponmastery at the beginning of the next book, you can choose an additional Weapon from the list to have Mastery of. [so: copied directly from TDC.]
-(ft) 17tdoi gamerulz:  [jsd: footnote needed on the changing Special 
-Item list?]
-(??) 17tdoi gamerulz: points over to Book 16 -> points over to Book 18
-
-(er) 17tdoi discplnz: gods -> Gods
-(er) 17tdoi discplnz: Magi-Magic -> Magi-magic
-(er) 17tdoi discplnz: opposite and overleaf -> below
-(??) 17tdoi discplnz: add... to your Action Chart in Book 17 -> add... 
-to your Action Chart in Book 18
-
-(er) 17tdoi equipmnt: safe-keeping -> safekeeping
-(er) 17tdoi equipmnt: (see the inside front cover of this book [so: remove this.]
-(??) 17tdoi equipmnt: map [so: encode as link to map.]
-(er) 17tdoi equipmnt: (eg -> (e.g.
-(er) 17tdoi equipmnt: arrow -> Arrow [so: x5]
-(er) 17tdoi equipmnt: bow -> Bow [so: x8]
-(er) 17tdoi equipmnt: quiver -> Quiver
-(er) 17tdoi equipmnt: safe-keeping -> safekeeping [IK: as in the PAMoS]
-
-
-(er) 17tdoi cmbtrulz: on the inside back cover of this book [so: Remove this]
-(er) 17tdoi cmbtrulz: on the page after the Random Number Table -> in the back of this book
-(er) 17tdoi cmbtrulz: Lone Wolf (Combat Skill 32) -> Lone Wolf (Combat Skill 27)
-(er) 17tdoi cmbtrulz: adds 3 points to his -> adds 8 points to his
-
-(er) 17tdoi kaiwisdm: Incorrect order [so: In my UK copy of TDoI, Grand Master's Wisdom appears before Improved Grand Master Disciplines and Levels of Kai Grand Mastership. Books 16 and 18 also have this change in order, but books 19 and 20 have the normal order.]
-(er) 17tdoi kaiwisdm: value at all,. -> value at all.
-
-(er) 17tdoi imprvdsc: ie. lightning -> i.e. lightning
-(er) 17tdoi imprvdsc: 'Mindfort' -> Mindfort [so: perhaps italicise this first occurrence rather than have the quote marks.]
-(ne) 17tdoi imprvdsc: Slow Fall [so: Encode as Spell.]
-(ne) 17tdoi imprvdsc: Breathe Water [so: Encode as Spell.]
-(er) 17tdoi imprvdsc: 'Improved Grand Master Disciplines' -> Improved Grand Master Disciplines
-(??) 17tdoi guardian: infra-vision -> infravision [IK: as in the PAMoS]
-(ne) 17tdoi imprvdsc: Magi-Magic -> Magi-magic [ik:as in PAMoS]
-(ne) 17tdoi imprvdsc: Distipline -> Discipline
-(ne) 17tdoi imprvdsc: lncreases -> increases
-(ne) 17tdoi imprvdsc: Kai-Blast -> Kai-blast [ik:2x, this change is already listed in the Errata]
-(ne) 17tdoi imprvdsc: ofintense -> of intense
-(ne) 17tdoi imprvdsc: body-weight -> body weight [ik:as in lw16; this change is already listed in the Errata]
-(ne) 17tdoi imprvdsc: eg: -> e.g. [ik:this change is already listed in the Errata]
-
-Illustration Placements:
-Small Illustration 1: Icebergs [147, 224(?), 345, 291(?), 345, or 51 and 189]
-Small Illustration 2: Undead skull in Winged Helmet [243?]
-Small Illustration 3: Shadow Gate (?) [149? 200? 290? 300, 349?]
-Small Illustration 4: Crystal Spire of Xaagon Ext. [266?, 289, 338]
-Small Illustration 5: Glass dome, plinth & Onyx Key [180]
-Small Illustration 6: Puzzle - called Illustration V [69]
-Small Illustration 7: Ice-coated ship [162? 177?]
-Small Illustration 8: Skeleton rod machine [106]
-Small Illustration 9: Lightning over Mountains [44?]
-Small Illustration 10: Weapon roack scimitars & spears [141]
-Small Illustration 11: Deathstaff vs. Sommerswerd [214]
-Small Illustration 12: Sommerlund & Lencian shields [321?]
-
-Sections 1-50:
-(er) 17tdoi 1: Kai aspirants -> Kai Aspirants [so: As in "Kai Master".]
-(er) 17tdoi 1: urges Rimoah, 'Banedon -> urges Rimoah. 'Banedon
-(ne) 17tdoi 1: Skyrider [so: Italicise x3.]
-(er) 17tdoi 1: iceboat -> ice-boat [so: as per the two other ocurrences in this section.]
-(er) 17tdoi 1: seven days the pilot -> seven days, the pilot
-(er) 17tdoi 1: pack ice -> pack-ice [IK: as in the PAMoS]
-(??) 17tdoi 1: I will... hour [jsd: mark as <thought>]
-(er) 17tdoi 3: demonlord -> Demonlord (so: cf. deathlord.]
-(er) 17tdoi 3: down-draught -> down-draft [so: Dictionary.com says that 'draught' is chiefly British in usage, but personally, I would only ever use it to describe liquid rather than air current.]
-(er) 17tdoi 3: demonlord's -> Demonlord's (so: cf. deathlord.]
-(ne) 17tdoi 4: lock plate -> lockplate [IK: as in the PAMoS]
-(er) 17tdoi 6: Click -> click [so: and encode as onomatopoeia.]
-(er) 17tdoi 6: bow -> Bow
-(er) 17tdoi 7: yards beyond you -> yards beyond, you
-(er) 17tdoi 7: it as if -> it is as if
-(er) 17tdoi 8: bow -> Bow
-(er) 17tdoi 8: If you cannot -> If you do not [so: Strange phrasiology.]
-(er) 17tdoi 9: ultra-violet -> ultraviolet [so: as per Section 39 and 313.]
-(ft) 17tdoi 10: [so: This is the correct answer to the puzzle in Section 69 and Section 213.]
-(ne) 17tdoi 10: clunk [so: encode as onomatopoeia.]
-(er) 17tdoi 13: icy sea water -> icy seawater
-(er) 17tdoi 14: who were -> who are [so: LW is told in present tense.]
-(er) 17tdoi 15: rough hewn -> rough-hewn [so: or, roughly hewn]
-(er) 17tdoi 15: rough hewn -> rough-hewn [IK: as in the PAMoS, but might be correct as-is (predicate adjective?)]
-(er) 17tdoi 15: Backpack item -> Backpack Item
-(er) 17tdoi 18: Skark oil -> skark oil [so: not an item or combatable opponent.]
-(ne) 17tdoi 18: sadiy -> sadly
-(er) 17tdoi 18: 'Do not fear,' [so: New paragraph for speaker.]
-(er) 17tdoi 18: fear,' you reply, 'I -> fear, you reply. 'I
-(er) 17tdoi 19: Kai mastery -> Kai Mastery
-(er) 17tdoi 19: attained, above -> attained above
-(er) 17tdoi 20: now-open -> now open
-(ne) 17tdoi 20: lock plate -> lockplate [IK: as in the PAMoS]
-(ne) 17tdoi 22: Skyrider's [so: italicise.]
-(ne) 17tdoi 22: Skyrider [so: italicise.]
-(er) 17tdoi 22: silver-haired King -> silver-haired king.
-(er) 17tdoi 22: King's -> king's [x3]
-(er) 17tdoi 22: freestate -> Freeland
-(er) 17tdoi 22: in previous Lone Wolf adventures -> in any previous Lone Wolf adventure [so: or similar]
-(er) 17tdoi 22: If you have not -> If you did not
-
-(ne) 17tdoi 22: hub-bub -> hubbub [ik:as in lw08, lw14, lw16]  [so: hyphen occurs at line break]
-(er) 17tdoi 23: Ixian undead -> Ixian Undead
-(er) 17tdoi 24: your psi-screen -> your Psi-screen [so: as per tlov changes]
-(er) 17tdoi 24: spindly-limbed, black insectiods -> spindly-limbed black insectoids [so: I think this is an appropriate change?]
-(er) 17tdoi 24: head in which -> head from which
-(er) 17tdoi 24: bow -> Bow [so: x2]
-(er) 17tdoi 25: sixth sense -> Sixth Sense
-(er) 17tdoi 26: camouflage -> Camouflage
-(er) 17tdoi 26: Kai mastery -> Kai Mastery
-(er) 17tdoi 29: - Slow Fall - -> Slow Fall [so: and encode as Spell.]
-	jffdougan: encoded as spell
-(er) 17tdoi 30: camouflage -> Camouflage
-(ft) 17tdoi 31: [so: would this bonus include Kai-blast damage?]
-(ne) 17tdoi 32: coup de grace -> coup de grâce [so: and italicise]
-(er) 17tdoi 32: by a short -> by means of a short
-(er) 17tdoi 36: zigzaging -> zigzagging
-(ne) 17tdoi 36: yow -> your
-(er) 17tdoi 38: demonlord -> Demonlord
-(er) 17tdoi 39: kai mastery -> Kai Mastery
-(er) 17tdoi 39: splutters, 'it's -> splutters. 'It's
-(er) 17tdoi 40: Upon the instant -> At the instant
-(er) 17tdoi 40: demonlord's -> Demonlord's
-(er) 17tdoi 41: camouflage -> Camouflage
-(er) 17tdoi 42: Ixian undead -> Ixian Undead
-(ne) 17tdoi 43: to-all -> to all
-(ne) 17tdoi 46: Battlespell [so: encode as spell?]
-(er) 17tdoi 46: Battlespell -> battle-spell [ik:as in lw13 144 and 334 where the word is used in exactly the same context]
-(er) 17tdoi 46: - Gloar! - -> Gloar! [so: and encode as spell.]
-	jffdougan: I think I'd do Power Word and battle spell, based on 08tjoh. Gloar should definitely be spell-coded, though.
-	(ne) 17tdoi 46: Gloar! [tp: Encode as... something, no doubt.]
-(ne) 17tdoi 46: Battlespell [tp: Name of a spell?]
-(er) 17tdoi 48: battle cry - > battle-cry [so: as per PAMoS.]
-(ne) 17tdoi 48: flag-stoned -> flagstoned [ik:as in lw07, lw08, lw09, lw11, lw13, lw15, lw16]
-(er) 17tdoi 50: Ixian undead -> Ixian Undead
-
-Sections 51-100:
-(er) 17tdoi 52: bow -> Bow
-(er) 17tdoi 53: Brotherhood spell -> Brotherhood Spell
-(er) 17tdoi 53: - Strength - -> Strength [so: and encode as spell.]
-	jffdougan: encoded as spell
-(er) 17tdoi 53: new-found -> newfound
-(er) 17tdoi 53: demonlord -> Demonlord
-(er) 17tdoi 54: sixth sense -> Sixth Sense
-(er) 17tdoi 56: Crack! -> crack! [so: and encode as onomatopoeia.]
-(er) 17tdoi 57: his minions you -> his minions, you
-(ne) 17tdoi 57: power a -> power--a [tp: As for the other correction to this section.]
-(ne) 17tdoi 57: Xaagon the -> Xaagon--the [tp: Not errata, I'm sure, but I don't have the book to check. I assume it was an em dash.] [jsd: couldn't find this one]
-(er) 17tdoi 59: Sun Lord, or higher -> Sun Lord or higher
-(er) 17tdoi 59: [so: Move Telegnosis option to top.]
-(er) 17tdoi 61: - Sense Evil -  -> Sense Evil [so: and encode as Spell.]
-	jffdougan: encoded as spell.
-(er) 17tdoi 61: splutters, 'it's -> splutters. 'It's
-(ne) 17tdoi 61: bell we're -> bell--we're [tp: As for section 57. I think I remember this bit fairly clearly.]
-(er) 17tdoi 61: gods -> Gods [tp: As per PAMoS] [so: Not sure about this one as it isn't referring directly to any of Aon's 
-pantheon.]
-(er) 17tdoi 62: Kai mastery -> Kai Mastery
-(er) 17tdoi 63: Backpack items -> Backpack Items
-(er) 17tdoi 66: a-port -> a'port
-(ne) 17tdoi 66: of, Nexus -> of Nexus
-(er) 17tdoi 67: Chaos horde -> Chaos Horde
-(er) 17tdoi 68: Backpack items -> Backpack Items
-(ft) 17tdoi 68: [so: what if you only have 3 or fewer Backpack Items?]
-(ft) 17tdoi 69: [so: Add standard puzzle footnote.]
-(ne) 17tdoi 70: coup de grace -> coup de grâce [so: and italicise]
-(er) 17tdoi 72: demonlord -> Demonlord
-(er) 17tdoi 74: Bulkhead door -> Bulkhead Door
-(er) 17tdoi 75: demonlord -> Demonlord [so: x2]
-(er) 17tdoi 75: delete this weapon -> delete this Weapon
-(er) 17tdoi 76: their plan you -> their plan, you
-(er) 17tdoi 79: sixth sense -> Sixth Sense
-(er) 17tdoi 79: despatch -> dispatch [IK: as in the PAMoS]
-(er) 17tdoi 80: creamy-coloured -> cream-coloured [IK: as in the PAMoS]
-(er) 17tdoi 81: Bulkhead door -> Bulkhead Door
-(ne) 17tdoi 83: reach . . . return [so: both of these words should be italicised in the final paragraph.]
-(er) 17tdoi 86: Kai mastery -> Kai Mastery
-(er) 17tdoi 86: 2-8 -> 2-9 [so: Is there an option missing?]
-(er) 17tdoi 89: at its centre -> from its centre
-(er) 17tdoi 89: round, by -> round by
-(er) 17tdoi 90: a Deathstaff that hums -> the Deathstaff, which hums
-(er) 17tdoi 91: - Invisible Fist - -> Invisible Fist [so: and encode as spell.]
-(er) 17tdoi 95: Kai weapon skill -> Kai Weaponskill
-(ft) 17tdoi 100: [so: This is the correct answer to the puzzle in Section 322.]
-(ne) 17tdoi 96: turh -> turn
-(ne) 17tdoi 96: turh to 213. -> turn to 213. [tp: Also encode as link; I guess the typo made some script or transform miss this.]
-(ne) 17tdoi 92: Invisible Fist [tp: Encode as spell name?]
-
-Sections 101-150:
-(er) 17tdoi 101: korlinium scabbard -> Korlinium Scabbard
-(er) 17tdoi 103: Kai healing skills -> Kai Healing skills
-(er) 17tdoi 103: bow -> Bow
-(er) 17tdoi 104: still to be -> to still be [so: It may split the infinitive, but it sounds better IMHO.]
-(er) 17tdoi 105: demonlord -> Demonlord [so: x2]
-(ne) 17tdoi 105: Huntmasterv -> Huntmastery
-(er) 17tdoi 106: high galley -> high gallery
-(er) 17tdoi 106: Sun Lord, or higher -> Sun Lord or higher
-(er) 17tdoi 108: unnervering speed -> unnerving speed
-(er) 17tdoi 109: lightning swift blows -> lightning-swift blows
-(er) 17tdoi 110: at its centre -> from its centre
-(er) 17tdoi 110: bonuses to your COMBAT SKILL -> bonuses [so: the bonuses the Sommerswerd conveys vs. undead is double damage, not a CS bonus.]
-(er) 17tdoi 110: third round, by turning -> third round by turning
-(er) 17tdoi 111: simultaneously to -> to simultaneously [so: sounds better to me.]
-(er) 17tdoi 111: chaos-creatures -> Chaos-creatures [so: maybe?]
-(er) 17tdoi 112: Brotherhood spell -> Brotherhood Spell
-(ne) 17tdoi 112: Lightning Hand [so: encode as spell.]
-(er) 17tdoi 113: gutteral -> guttural
-(er) 17tdoi 113: attained, above -> attained above
-(er) 17tdoi 116: Kai sixth sense -> Kai Sixth Sense
-(er) 17tdoi 117: court martial -> court-martial [so: as per Dictionary.com]
-(er) 17tdoi 118: Kai mastery -> Kai Mastery
-(er) 17tdoi 120: bow -> Bow
-(er) 17tdoi 120: Brotherhood spell -> Brotherhood Spell
-(er) 17tdoi 121: - Lightning Hand - -> Lightning hand [so: and encode as spell.]
-(er) 17tdoi 123: demonlord -> Demonlord
-(er) 17tdoi 124: hurling -> hurtling
-(er) 17tdoi 124: both [so: italicise]
-(er) 17tdoi 127: high galley -> high gallery
-(er) 17tdoi 128: place it into -> stow it in [so: or similar]
-(er) 17tdoi 128: in Magnamund -> on Magnamund
-(er) 17tdoi 131: Kai mastery -> Kai Mastery
-(er) 17tdoi 131: 0 = 100 -> 0 = 10 [so: I bet a lot of frustrated Lone Wolf players died here!]
-(er) 17tdoi 132: Ixian undead -> Ixian Undead
-(er) 17tdoi 133: Brotherhood spell -> Brotherhood Spell
-(er) 17tdoi 133: - Breathe Water -> Breathe Water [so: and encode as spell.]
-	jffdougan: encoded as spell
-(er) 17tdoi 136: Brotherhood spell -> Brotherhood Spell
-(er) 17tdoi 136: - Levitation -> Levitation [so: and encode as spell.]
-(er) 17tdoi 137: chaos-creatures -> Chaos-creatures [so: maybe?]
-(er) 17tdoi 137: Chaos horde -> Chaos-horde [so: As per Section 111.]
-(er) 17tdoi 138: Backpack items -> Backpack Items [so: maybe?]
-(er) 17tdoi 139: disciplines -> Disciplines
-(ne) 17tdoi 140: Maycastle [so: italicise x2]
-(er) 17tdoi 145: Chaos horde -> Chaos-horde [so: As per Section 111.]
-(er) 17tdoi 146: infra-red -> infrared [so: cf ultraviolet.]
-(er) 17tdoi 149: Ghosts, in -> Ghosts in
-(er) 17tdoi 150: demonlord -> Demonlord
-
-Sections 151-200:
-(er) 17tdoi 152: Sun Lord, or higher -> Sun Lord or higher
-(er) 17tdoi 154: chaos-creatures -> Chaos-creatures [so: maybe?]
-(er) 17tdoi 155: shortlived -> short-lived [IK: as in the PAMoS]
-(er) 17tdoi 156: cavern; -> cavern:
-(er) 17tdoi 161: Thane, or higher -> Thane or higher
-(er) 17tdoi 163: Above you can -> Above, you can
-(er) 17tdoi 163: of rusty sword -> of a rusty sword
-(er) 17tdoi 164: in Magnamund -> on Magnamund
-(er) 17tdoi 165: Lord, or higher -> Lord or higher
-(er) 17tdoi 166: me my friend -> me, my friend
-(er) 17tdoi 167: bonuses to your COMBAT SKILL -> bonuses
-(er) 17tdoi 175: Kai mastery -> Kai Mastery
-(er) 17tdoi 176: Brotherhood spell -> Brotherhood Spell
-(er) 17tdoi 176: - Levitation - -> Levitation [so: and encode as spell.]
-(er) 17tdoi 176: chaos-creatures -> Chaos-creatures [so: maybe?]
-(er) 17tdoi 180: sixth sense -> Sixth Sense
-(er) 17tdoi 180: Special Item, do not -> Special Item, or do not
-(er) 17tdoi 183: from the enemy -> from your enemy [so: sounds better IMHO]
-(er) 17tdoi 184: destroyed (erase . . . list). -> destroyed. (Erase . . . list.)
-(er) 17tdoi 184: Pained but -> Pained, but
-(ne) 17tdoi 184: yout -> your
-(er) 17tdoi 185: demonlord -> Demonlord
-(er) 17tdoi 185: creamy-coloured -> cream-coloured [IK: as in the PAMoS]
-(er) 17tdoi 185: sky, beat -> sky beat
-(er) 17tdoi 185: down-draught -> down-draft
-(er) 17tdoi 185: demonlord's -> Demonlord's
-(er) 17tdoi 189: collison -> collision
-(er) 17tdoi 190: chaos-creatures -> Chaos-creatures [so: x3]
-(er) 17tdoi 190: grudgingly to -> to grudgingly
-(er) 17tdoi 190: feet-first -> feet first [so: maybe?]
-(er) 17tdoi 191: attack upon the -> attack the [so: for clarity]
-(er) 17tdoi 191: pre-empted -> preempted
-(er) 17tdoi 194: impregnated -> imbued [so: or similar]
-(er) 17tdoi 194: korlinium scabbard -> Korlinium Scabbard
-(??) 17tdoi 195: [so: The bow is the front of the ship; why would the crew flee to the front of the ship instead of the stern when the Ixian vessel is approaching from the north?]
-(er) 17tdoi 195: cry, 'Ishir -> cry. 'Ishir
-(er) 17tdoi 196: un-life -> undeath [so: possibly?]
-(er) 17tdoi 196: Fear your survival -> Fearing for your survival
-(er) 17tdoi 196: Thane, or higher -> Thane or higher
-(er) 17tdoi 196: Lord, or higher -> Lord or higher
-(ne) 17tdoi 197: Crack! -> crack! [so: and encode as onomatopoeia.]
-(ft) 17tdoi 197: [so: If you only possess Grand Nexus, you may still add 2.]
-(er) 17tdoi 198: porthole -> port-hole [so: did we decide this one before?]
-(er) 17tdoi 199: effect -> effects
-(er) 17tdoi 200: achieve your quest [so: this sounds odd to me.]
-(er) 17tdoi 200: noise behind you -> noise from behind you
-
-Sections 201-250:
-(er) 17tdoi 202: Kai mastery -> Kai Mastery
-(er) 17tdoi 202: by the stairs -> by means of the stairs
-(er) 17tdoi 203: Kai mastery -> Kai Mastery
-(er) 17tdoi 205: [Odd justification in last paragraph.]
-(ne) 17tdoi 205: demonlord -> Demonlord
-(ne) 17tdoi 205: Crack! -> crack [so: and encode as onomatopoeia]
-	jffdougan: I couldn't find this one.
-(ft) 17tdoi 205: [so: If you only possess Grand Nexus, you may still add 2.]
-(er) 17tdoi 208: camouflage -> Camouflage {so: Maybe?]
-(er) 17tdoi 209: falter and -> falter, and
-(er) 17tdoi 209: counter-attack -> counterattack [so, ik: as per PAMoS]
-(er) 17tdoi 211: an explosion white-hot -> an explosion of white-hot
-(er) 17tdoi 212: face-first -> face first [so: maybe?]
-(ne) 17tdoi 213: coup de grace -> coup de grâce [so: and italicise]
-(er) 17tdoi 213: chamber, is -> chamber is
-(ft) 17tdoi 213: [so: standard puzzle footnote.]
-(ne) 17tdoi 213: map [so: encode as link.]
-(er) 17tdoi 213: [so: indent puzzle instructions as choice.]
-(er) 17tdoi 216: demonlord -> Demonlord
-(er) 17tdoi 216: fight, you -> fight you
-(er) 17tdoi 217: Brotherhood spell -> Brotherhood Spell
-(er) 17tdoi 217: - Counterspell - -> Counterspell [so: and encode as spell]
-(er) 17tdoi 218: second wave . . . come -> second wave . . . comes
-(er) 17tdoi 218: demonlord -> Demonlord
-(er) 17tdoi 218: towards the Tagazin -> towards Tagazin
-(er) 17tdoi 218: demonlord's -> Demonlord's
-(ne) 17tdoi 219: [so: Italicise Banedon's words.]
-(er) 17tdoi 219: korlinium scabbard -> Korlinium Scabbard
-(er) 17tdoi 219: another weapon -> another Weapon [so: maybe?]
-(er) 17tdoi 223: Kai mastery -> Kai Mastery
-(ne) 17tdoi 224: saehsa [so: Italicise]
-(er) 17tdoi 224: [so: indent choices.]
-(er) 17tdoi 225: coiled -> oiled [so: as elsewhere]
-(er) 17tdoi 226: .. -> .
-(er) 17tdoi 227: demonlord -> Demonlord
-(er) 17tdoi 229: chaos-creatures -> Chaos-creatures [so: x2]
-(er) 17tdoi 230: Brotherhood spell -> Brotherhood Spell
-(er) 17tdoi 230: - Strength - -> Strength [so: and encode as spell]
-	jffdougan: encoded as spell
-(er) 17tdoi 230: new-found -> newfound
-(er) 17tdoi 230: demonlord -> Demonlord
-(er) 17tdoi 230: out-distance -> outdistance [so, ik: as per PAMoS]
-(er) 17tdoi 231: suprise -> surprise
-(er) 17tdoi 233: splutters, 'it's -> splutters. 'It's
-(er) 17tdoi 234: cover avoiding -> cover, avoiding
-(er) 17tdoi 235: chaos-creatures -> Chaos-creatures
-(er) 17tdoi 235: feet-first -> feet first [so: maybe?]
-(er) 17tdoi 239: Ixian undead -> Ixian Undead
-(er) 17tdoi 240: you 're -> you're
-(er) 17tdoi 241: see better -> better see
-(er) 17tdoi 241: Knight, or higher -> Knight or higher
-(er) 17tdoi 242: Ixian undead -> Ixian Undead
-(er) 17tdoi 243: camouflage -> Camouflage
-(er) 17tdoi 243: Drakkarim undead -> Drakkarim Undead
-(er) 17tdoi 244: arrow -> Arrow [so: x2]
-(er) 17tdoi 244: bow -> Bow
-(ft) 17tdoi 244: [so: You do not need to remove the Bow from your Action Chart.]
-(er) 17tdoi 246: rope -> Rope [so: in the first instance at least?]
-(er) 17tdoi 249: ante-chamber -> antechamber [ik:as in lw05, lw06, lw09, lw13, lw15]
-(er) 17tdoi 250: action they were committing -> action they were performing
-
-Sections 251-300:
-(er) 17tdoi 253: face-first -> face first
-(er) 17tdoi 253: Thane, or higher -> Thane or higher
-(er) 17tdoi 254: pre-empt -> preempt
-(er) 17tdoi 254: Lord, or higher -> Lord or higher
-(er) 17tdoi 254: Kai mastery -> Kai Mastery
-(er) 17tdoi 255: insticts -> instincts
-(er) 17tdoi 256: camouflage -> Camouflage
-(er) 17tdoi 257: demonlord -> Demonlord
-(er) 17tdoi 258: Click -> click [so: and encode as onomatopoeia]
-(er) 17tdoi 259: chaos-creatures -> Chaos-creatures [so: x2]
-(er) 17tdoi 259: feet-first -> feet first
-(er) 17tdoi 260: Drakkarim marines (undead) -> Drakkarim Marines (Undead)
-(er) 17tdoi 260: rounds, or less -> rounds or less
-(er) 17tdoi 260: rounds, or longer -> rounds or longer
-(??) 17tdoi 261: bow fire [so: Is this acceptable?]
-(er) 17tdoi 262: head-first -> head first [so: maybe?]
-(er) 17tdoi 265: bow -> Bow
-(er) 17tdoi 266: sixth sense -> Sixth Sense
-(er) 17tdoi 266: cross-winds -> crosswinds [ik:"crosswind" occurs once in lw11]
-(er) 17tdoi 267: Kai mastery -> Kai Mastery
-(er) 17tdoi 269: healing -> Healing
-(er) 17tdoi 272: Knight, or higher -> Knight or higher
-(er) 17tdoi 273: - Slow Fall - -> Slow Fall [so: and encode as spell.]
-	jffdougan: encoded as spell
-(er) 17tdoi 275: at its centre -> from its centre
-(er) 17tdoi 275: round, by -> round by
-(er) 17tdoi 278: chaos-creatures -> Chaos-creatures
-(er) 17tdoi 278: Chaos horde -> Chaos-horde
-(er) 17tdoi 278: rounds, by -> rounds by
-(ft) 17tdoi 279: [so: This x2 bonus applies to Kai-blast as well?]
-(er) 17tdoi 280: wall, more -> wall more
-(er) 17tdoi 281: bow -> Bow
-(er) 17tdoi 281: arrow -> Arrow
-(er) 17tdoi 283: spindly-limbed, black -> spindly-limbed black
-(er) 17tdoi 283 in which composite -> from which composite
-(er) 17tdoi 283: bow -> Bow [so: x2]
-(er) 17tdoi 285: rope -> Rope
-(er) 17tdoi 287: arrow -> Arrow
-(er) 17tdoi 287: bow -> Bow
-(ft) 17tdoi 287: [so: You do not need to remove the Bow from your Action Chart.]
-(er) 17tdoi 288: sixth sense -> Sixth Sense
-(er) 17tdoi 288: Ziog: -> Ziog
-(er) 17tdoi 288: damaged -> wounded [so: maybe?]
-(er) 17tdoi 289: this city had been -> this city was
-(er) 17tdoi 290: shattering remnants -> shattered remnants
-(er) 17tdoi 294: demonlord -> Demonlord
-(er) 17tdoi 296: gutteral -> guttural
-(ft) 17tdoi 296: [so: You do not need to possess either of the other Disciplines to use the +1 Grand Nexus bonus.]
-(er) 17tdoi 297: raidant -> radiant [ik:I guess]
-(er) 17tdoi 300: attention, it -> attention; it
-(er) 17tdoi 300: Ixian elder -> Ixian Elder (so: cf. Acolyte Elder]
-(er) 17tdoi 300: sixth sense -> Sixth Sense
-
-
-
-
-Sections 301-350:
-(er) 17tdoi 301: demonlord -> Demonlord
-(er) 17tdoi 301: demonlord's -> Demonlord's
-(er) 17tdoi 303: face-first -> face first [so: maybe?]
-(er) 17tdoi 310: but only to find -> only to find
-(er) 17tdoi 310: Ixian undead -> Ixian Undead
-(er) 17tdoi 312: Kai mastery -> Kai Mastery
-(er) 17tdoi 312: destroyed (erase . . . list). -> destroyed. (Erase . . . list.)
-(er) 17tdoi 313: Kai mastery -> Kai Mastery
-(er) 17tdoi 315: healing -> Healing
-(er) 17tdoi 317: despatch -> dispatch [so, ik: as per PAMoS]
-(er) 17tdoi 318: chaos horde -> Chaos-horde [so: as everywhere else.]
-(er) 17tdoi 319: face-first -> face first [so: maybe?]
-(ne) 17tdoi 321: Maycastle [so: Italicise x2.]
-(ft) 17tdoi 322: [so: standard puzzle fotnote.]
-(ne) 17tdoi 322: map [so: encode as link.]
-(er) 17tdoi 323: rope -> Rope
-(er) 17tdoi 324: sixth sense -> Sixth Sense
-(er) 17tdoi 326: landing you -> landing, you
-(er) 17tdoi 329: Ixian undead -> Ixian Undead [so: maybe?]
-(er) 17tdoi 330: bow -> Bow
-(er) 17tdoi 330: [so: Place the Kai-surge option first?]
-(er) 17tdoi 332: Thane, or higher -> Thane or higher
-(er) 17tdoi 336: Drakkarim undead -> Drakkarim Undead
-(er) 17tdoi 338: had been -> was
-(er) 17tdoi 101: korlinium scabbard -> Korlinium Scabbard
-(er) 17tdoi 341: demonlord's -> Demonlord's
-(er) 17tdoi 341: If, at -> If at
-(er) 17tdoi 343: by huge frozen -> by a huge frozen
-(er) 17tdoi 343: Lord, or higher -> Lord or higher
-(er) 17tdoi 346: Crack! -> crack! [so: and encode as onomatopoeia.]
-(ne) 17tdoi 346: Sommersword -> Sommerswerd [ik:]
-(er) 17tdoi 347: camouflage -> Camouflage
-(er) 17tdoi 347: demonlord -> Demonlord
-(er) 17tdoi 350: Ardan, 'Is -> Ardan. 'Is
-(er) 17tdoi 350: dragon-creatures -> Dragon-creatures [so: maybe?]
-(er) 17tdoi 350: my county -> my country
-(er) 17tdoi 350: Kai acolytes -> Kai Acolytes [so: cf. Acolytes of Vashna.]
-(er) 17tdoi 350: champions awaits -> champions, awaits
-
-QUESTIONS
-
-free-standing vs. freestanding (i.e. Section 32, 143 and others)?
-
-mainmast vs. main mast?
-
-Crystal Spire (Section 5, 269) vs. crystal spire (everywhere else)?
-
-(er) 17tdoi 17: crystal spire -> Crystal Spire [so: cf. Section 5.]
-(er) 17tdoi 55: crystal spire -> Crystal Spire [so: as elsewhere]
-(er) 17tdoi 62: crystal spire -> Crystal Spire
-(er) 17tdoi 84: crystal spire -> Crystal Spire
-(er) 17tdoi 152: crystal spire -> Crystal Spire
-(er) 17tdoi 165: crystal spire -> Crystal Spire [so: x2]
-(er) 17tdoi 173: crystal spire -> Crystal Spire
-(er) 17tdoi 178: crystal spire -> Crystal Spire
-(er) 17tdoi 193: crystal spire -> Crystal Spire
-(er) 17tdoi 200: crystal spire -> Crystal Spire [so: x2]
-(er) 17tdoi 245: crystal spire -> Crystal Spire
-(er) 17tdoi 266: crystal spire -> Crystal Spire
-(er) 17tdoi 270: crystal spire -> Crystal Spire [so: x2]
-(er) 17tdoi 290: crystal spire -> Crystal Spire
-(er) 17tdoi 299: crystal spire -> Crystal Spire
-(er) 17tdoi 300: crystal spire -> Crystal Spire [so: x2]
-(er) 17tdoi 325: crystal spire -> Crystal Spire
-(er) 17tdoi 328: crystal spire -> Crystal Spire
-(er) 17tdoi 330: crystal spire -> Crystal Spire
-(er) 17tdoi 333: crystal spire -> Crystal Spire
-(er) 17tdoi 343: crystal spire -> Crystal Spire
-
-or
-
-(er) 17tdoi 5: Crystal Spire -> crystal spire
-(er) 17tdoi 269: Crystal Spire -> crystal spire
 -->
 
  <meta>
@@ -620,21 +110,21 @@ or
       <data>
        <dl>
         <dt>Transcription</dt>
-         <dd></dd>
+         <dd>Peter Cook</dd>
         <dt>Illustration Transcription</dt>
-         <dd></dd>
+         <dd>Jonathan Blake</dd>
         <dt>XML</dt>
-         <dd></dd>
+         <dd>Jonathan Blake<br/>Jeff Dougan</dd>
         <dt>Action Charts</dt>
          <dd>JC Alvarez<br />Jonathan Blake</dd>
         <dt>Proofreading</dt>
-         <dd></dd>
+         <dd>Robert Hartley (Sections 211&endash;350)<br/>Timothy Pederick(Sections 141&endash;210)<br/>Martin Ryland (Frontmatter and Sections 1&endash;140)</dd>
         <dt>Editing</dt>
-          <dd></dd>
+         <dd>Jeff Dougan<br/>Ingo Kl&ouml;cker<br/>Simon Osborne<br/>Timothy Pederick<br/>Jennifer Sigman<br/></dd>
         <dt>Coordination</dt>
          <dd>Jonathan Blake</dd>
-       <dt>Special Thanks</dt>
-         <dd></dd>
+<!--       <dt>Special Thanks</dt>
+         <dd></dd>-->
        </dl>
       </data>
      </section>
@@ -650,30 +140,30 @@ or
     </meta>
 
     <data>
-     <p>You are Grand Master Lone Wolf, last of the Kai Lords of Sommerlund and sole survivor of a massacre that wiped out the First Order of your elite warrior caste.</p>
+     <p>You are Grand Master Lone Wolf, last of the Kai Lords of Sommerlund and sole survivor of a massacre that wiped out the First Order of your <!--ERRTAG-RE-5555-->&eacute;lite<!--/ERRTAG-RE-5555--> warrior caste.</p>
      <p>It is the year MS 5077, twenty-seven years since your brave kinsmen perished at the hands of the Darklords of Helgedad. These champions of evil, who were sent forth by Naar&emdash;the King of the Darkness, to destroy the fertile world of Magnamund, have themselves since been destroyed. You vowed to avenge the murder of the Kai and you kept your pledge, for it was you who brought about their downfall when alone you infiltrated their foul domain&emdash;the Darklands and caused the destruction of their leader and the seat of his power that was the infernal city of Helgedad.</p>
-     <p>In the wake of their destruction, chaos befell the Darkland armies who, until then, had been poised to conquer all of Magnamund. Some factions which comprised this huge army, most notably the barbaric Drakkarim, began to fight with the others for control. This disorder quickly escalated into an all-out civil war which allowed the freestate armies of Magnamund time in which to recover and launch a counter-offensive. Their commanders exploited the chaos skilfully and secured a swift and total victory over an enemy far superior in numbers.</p>
+     <p>In the wake of their destruction, chaos befell the Darkland armies who, until then, had been poised to conquer all of Magnamund. Some factions which comprised this huge army, most notably the barbaric Drakkarim, began to fight with the others for control. This disorder quickly escalated into an allout civil war which allowed the <!--ERRTAG-RA-6514-->Freeland<!--/ERRTAG-RA-6514--> armies of Magnamund time in which to recover and launch a counter-offensive. Their commanders exploited the chaos skilfully and secured a swift and total victory over an enemy far superior in numbers.</p>
      <p>For seven years now peace has reigned in Sommerlund. Under your direction the once-ruined monastery of the Kai has been thoroughly rebuilt and restored to its former glory, and the task of teaching a Second Order of Kai warriors the skills and proud traditions of your ancestors is also well established. The new generation of Kai recruits, all of whom were born during the era of war against the Darklords, possess latent Kai skills and show exceptional promise. These skills will be nurtured and honed to perfection during their time at the Monastery so that they may teach and inspire future generations, thereby ensuring the continued security of your homeland in future years.</p>
-     <p>Your attainment of the rank of Kai Grand Master brought with it great rewards. Some, such as the restoration of the Kai and the undying gratitude of your fellow Sommlending, could have been anticipated. Yet there have also been rewards which you could not possibly have foreseen. The discovery that within you lay the potential to develop Kai Disciplines beyond those of the Magnakai, which, until now, were thought to be the ultimate that a Kai Master could aspire to, was truly a revelation. Your discovery has inspired you to set out upon a new and previously unknown path in search of the wisdom and power that no Kai lord before you has ever possessed. In the name of your creator, the God Kai, and for the greater glory of Sommerlund and the Goddess Ishir, you have vowed to reach the very pinnacle of Kai perfection&emdash;to attain all of the Grand Master Disciplines and become the first Kai Supreme Master.</p>
-     <p>With diligence and determination you set about the restoration of the Kai Monastery and the training of the Second Order recruits. Your efforts were soon rewarded for within the space of two short years, the first raw recruits had graduated to become a cadre of gifted Kai Masters who, in turn, were able to commence the teaching of their skills to subsequent intakes of Kai novices. The Kai Masters rose to their new-found responsibilities readily, leaving you free to devote more of your time to the pursuit and perfection of the Grand Master Disciplines. During this period you also received expert tutelage in the ways of magic from two of your most trusted friends and advisors: Guildmaster Banedon, leader of the Brotherhood of the Crystal Star, and Lord Rimoah, speaker for the High Council of the Elder Magi.</p>
+     <p>Your attainment of the rank of Kai Grand Master brought with it great rewards. Some, such as the restoration of the Kai and the undying gratitude of your fellow Sommlending, could have been anticipated. Yet there have also been rewards which you could not possibly have foreseen. The discovery that within you lay the potential to develop Kai Disciplines beyond those of the Magnakai, which, until now, were thought to be the ultimate that a Kai Master could aspire to, was truly a revelation. Your discovery has inspired you to set out upon a new and previously unknown path in search of the wisdom and power that no Kai Lord before you has ever possessed. In the name of your creator, the God Kai, and for the greater glory of Sommerlund and the Goddess Ishir, you have vowed to reach the very pinnacle of Kai perfection&emdash;to attain all of the Grand Master Disciplines and become the first Kai Supreme Master.</p>
+     <p>With diligence and determination you set about the restoration of the Kai Monastery and the training of the Second Order recruits. Your efforts were soon rewarded for within the space of two short years, the first raw recruits had graduated to become a cadre of gifted Kai Masters who, in turn, were able to commence the teaching of their skills to subsequent intakes of Kai novices. The Kai Masters rose to their newfound responsibilities readily, leaving you free to devote more of your time to the pursuit and perfection of the Grand Master Disciplines. During this period you also received expert tutelage in the ways of magic from two of your most trusted friends and advisors: Guildmaster Banedon, leader of the Brotherhood of the Crystal Star, and Lord Rimoah, speaker for the High Council of the Elder Magi.</p>
      <p>In the deepest subterranean level of the Monastery, a hundred feet below the Tower of the Sun, you ordered the excavation and construction of a special vault. In this magnificent chamber wrought of granite and gold, you placed the seven Lorestones of Nyxator, the gems of Kai power which you had recovered during your quest for the Magnakai. It was here, bathed in the golden light of those radiant gems, that you spent countless hours in pursuit of perfection. Sometimes alone, sometimes in the company of your two able advisors&emdash;Banedon and Rimoah&emdash;you worked hard to develop your innate Grand Master Disciplines, and grasp the fundamental secrets of Left-handed and Old Kingdom magic. During this time you noticed many remarkable changes taking place within your body: you became physically and mentally stronger, your five primary senses sharpened beyond all that you had experienced before, and, perhaps most remarkably, your body began to age at a much slower rate. Now, for every five years that elapse you age but one year.</p>
-     <p>At this time many changes were occurring beyond the borders of Sommerlund. In the regions to the north-east of Magador and the Maakengorge, the Elder Magi of Dessi and the Herbwardens of Bautar were working together in an effort to restore the dusty volcanic wasteland to its former fertile state. It was the first tentative step towards the reclamation of all the Darklands. However, their progress was painfully slow, and both parties were resigned to the fact that their efforts to undo the damage caused by the Darklords would take centuries to complete.</p>
+     <p>At this time many changes were occurring beyond the borders of Sommerlund. In the regions to the northeast of Magador and the Maakengorge, the Elder Magi of Dessi and the Herbwardens of Bautar were working together in an effort to restore the dusty volcanic wasteland to its former fertile state. It was the first tentative step towards the reclamation of all the Darklands. However, their progress was painfully slow, and both parties were resigned to the fact that their efforts to undo the damage caused by the Darklords would take centuries to complete.</p>
      <p>Elsewhere, throughout Northern Magnamund, peace reigns victorious and the peoples of the Free Kingdoms rejoice in the knowledge that the age of the Darklords has finally come to an end. Readily men have exchanged their swords for hoes and their shields for ploughs, and now the only marching they do is along the ruts of their freshly furrowed fields. Few are the watchful eyes that scan the distant horizon in fear of what may appear, although there are still those who maintain their vigilance, for the agents of Naar come in many guises and there are those upon Magnamund who wait quietly in the shadows for the chance to do his evil bidding.</p>
-     <p>Already your new-found skills have been tested against Naar&apos;s agents and you have, on each occasion, acquitted yourself admirably. But your continuing victories against his minions have enraged the Dark God and inflamed his lust for vengeance. Earlier this year you thwarted Naar&apos;s plans to revive Vashna, the greatest of all the Darklords, whose spirit is trapped deep within the fathomless reaches of the Maakengorge&emdash;the chasm of doom. Vashna&apos;s spirit has remained there in uneasy entombment ever since the day, long ago, when he and his army were defeated in battle by King Ulnar I of Sommerlund. Your brave and courageous actions prevented Naar&apos;s agents from summoning to Magnamund a demoness named Shamath from the Plane of Darkness. This supernatural creature possessed the Deathstaff&emdash;an artefact of great evil forged by Naar himself&emdash;with which she could have resurrected Vashna and his army from the Maakengorge. Yet your timely intervention destroyed the shadow gate through which she was travelling, and by so doing, you imprisoned the demoness Shamath in the limbo which exists between your world and the Plane of Darkness.</p>
+     <p>Already your newfound skills have been tested against Naar&apos;s agents and you have, on each occasion, acquitted yourself admirably. But your continuing victories against his minions have enraged the Dark God and inflamed his lust for vengeance. Earlier this year you thwarted Naar&apos;s plans to revive Vashna, the greatest of all the Darklords, whose spirit is trapped deep within the fathomless reaches of the Maakengorge&emdash;the chasm of doom. Vashna&apos;s spirit has remained there in uneasy entombment ever since the day, long ago, when he and his army were defeated in battle by King Ulnar I of Sommerlund. Your brave and courageous actions prevented Naar&apos;s agents from summoning to Magnamund a demoness named Shamath from the Plane of Darkness. This supernatural creature possessed the Deathstaff&emdash;an artefact of great evil forged by Naar himself&emdash;with which she could have resurrected Vashna and his army from the Maakengorge. Yet your timely intervention destroyed the <!--ERRTAG-RA-12477-->Shadow Gate<!--/ERRTAG-RA-12477--> through which she was travelling, and by so doing, you imprisoned the demoness Shamath in the limbo which exists between your world and the Plane of Darkness.</p>
      <p>Confident in the belief that you had saved Magnamund from the demoness and the Deathstaff, you returned triumphantly to Sommerlund. Several months later, however, as the year was drawing to a close, Lord Rimoah came unexpectedly to the Kai Monastery seeking an urgent audience. With growing dismay you listened as he relayed ill news&emdash;the Deathstaff had reappeared in Magnamund. The threat to the peace of your fragile world was greater now than ever before.</p>
-     <p><quote>When you destroyed the shadow gate <!-- capitalize? --> at Maakengorge, Grand Master,</quote> said Lord Rimoah, as the two of you discussed the matter in the secure privacy of your vault below the Kai Monastery, <quote>you banished Shamath to the void, hopefully for all eternity. Yet, alas, the weapon she possessed did not go with her. Naar&apos;s accursed Deathstaff has since returned to this world through another shadow gate, one that lies far away to the west, on a remote and icy peninsula that is called Ixia.</quote></p>
+     <p><quote>When you destroyed the <!--ERRTAG-RA-12477-->Shadow Gate<!--/ERRTAG-RA-12477--> <!-- capitalize? --> at Maakengorge, Grand Master,</quote> said Lord Rimoah, as the two of you discussed the matter in the secure privacy of your vault below the Kai Monastery, <quote>you banished Shamath to the void, hopefully for all eternity. Yet, alas, the weapon she possessed did not go with her. Naar&apos;s accursed Deathstaff has since returned to this world through another <!--ERRTAG-RA-12477-->Shadow Gate<!--/ERRTAG-RA-12477-->, one that lies far away to the west, on a remote and icy peninsula that is called Ixia.</quote></p>
      <p><quote>My lord, do you wish me to go to Ixia&emdash;to find and destroy the Deathstaff before another of Naar&apos;s agents can use it against us? Is this why you have come seeking my help?</quote> you replied, expecting Rimoah to affirm your assumption.</p>
      <p><quote>Partly so, my lord,</quote> he said, holding you with his steel-grey eyes, <quote>but I fear that already it has fallen into the hands of an enemy&emdash;and one who is deadlier than even the demoness Shamath. What do you know of the Deathlord of Ixia?</quote></p>
      <p>You faintly remembered having heard this name before but were unable to recall any detail. Lord Rimoah, seeing that you were unable to give an answer, obliged with an impromptu history lesson:</p>
      <p><quote>The Deathlord of Ixia was once lieutenant to Agarash the Damned&emdash;the most powerful of all Naar&apos;s champions of evil,</quote> said Rimoah, his head bowed as he paced the granite floor of your vault. <quote>During the Age of Eternal Night he conquered much of Northern Magnamund, including the realm of Ixia which was once a rich and very fertile land. He destroyed the native Ixians, transforming them into a legion of undead servants under his command. Many centuries later, when my ancestors defeated Agarash during the Age of the Old Kingdoms, they magically imprisoned the weakened Deathlord in a secret tomb within the dread city of Xaagon, near to the southern coast of Ixia. For thousands of years his tomb lay undisturbed until the first of the Drakkarim appeared on Magnamund. They entered Xaagon and found the Deathlord&apos;s tomb&emdash;yet legend has it that none of them escaped Ixia alive. Perhaps they, too, serve him now. During the Age of the Black Moon, the Darklords conquered all of the territories surrounding Ixia yet they chose to avoid setting foot in the Deathlord&apos;s realm. Mindful of his origins, they feared that if he were released from his sorcerous prison he would seek to dominate and destroy them.</quote></p>
      <p><quote>My lord, are you telling me that the Deathlord of Ixia is now free of this prison <em>and</em> in possession of the Deathstaff?</quote> you asked, fearing Lord Rimoah&apos;s reply.</p>
      <p><quote>Yes, Grand Master. I&apos;m afraid that is exactly the situation which confronts us. Since the passing of the last moon, I and others of the High Council of the Elder Magi have detected a great imbalance between the forces of Good and Evil in our world. By ill chance or by Naar&apos;s design, the Deathstaff has fallen into the hands of Ixiataaga. Once again the Deathlord is free to indulge his unholy and insatiable appetite for living beings. Already we have heard reports from Lencian fishermen which tell of the destruction of remote Drakkarim settlements around the Gulf of Konkor, and there are even claims of a &apos;death fleet&apos; having been sighted in the waters of the Shakoz Bight. Yes, Grand Master, the Deathlord is free to roam the face of Magnamund once more, and I fear he will not stop until every living creature is enslaved to him in undeath.</quote></p>
-     <p>For hours, you and your trusted advisor deliberated over what could be done to prevent this unspeakable disaster from befalling Magnamund. You considered a muster of the freestate armies and an immediate attack upon Ixia, but such a plan simply could not be executed. The peninsula of Ixia is far too remote and desolate a territory to be reached by any freestate army on foot, and, with winter already so far advanced, any ship-borne invasion would be doomed to fail. Time was also against you. The Deathlord had to be stopped as quickly as possible before he could unleash an army of undead upon Magnamund, an unkillable army that would grow larger with every battle it fought against the living.</p>
+     <p>For hours, you and your trusted advisor deliberated over what could be done to prevent this unspeakable disaster from befalling Magnamund. You considered a muster of the <!--ERRTAG-RA-6514-->Freeland<!--/ERRTAG-RA-6514--> armies and an immediate attack upon Ixia, but such a plan simply could not be executed. The peninsula of Ixia is far too remote and desolate a territory to be reached by any <!--ERRTAG-RA-6514-->Freeland<!--/ERRTAG-RA-6514--> army on foot, and, with winter already so far advanced, any ship-borne invasion would be doomed to fail. Time was also against you. The Deathlord had to be stopped as quickly as possible before he could unleash an army of undead upon Magnamund, an unkillable army that would grow larger with every battle it fought against the living.</p>
      <p><quote>Only I can stop this,</quote> you said, voicing your thoughts.</p>
      <p><quote>Yes, Grand Master. Only you,</quote> replied Rimoah quietly.</p>
      <p>After a few moments&apos; silence, Rimoah continued, <quote>In expectation of your decision, preparations have already been made for your journey, Grand Master. I trust this doesn&apos;t offend you?</quote></p>
      <p>You smiled your consent.</p>
-     <p><quote>Good. Then I shall call upon Guildmaster Banedon&emdash;he knows of the Deathlord&apos;s rise and he has offered his ship <typ class="ital">Skyrider</typ> to hasten your journey westwards. He will tell you more about Ixia and how you will be conveyed there. Godspeed, Grand Master. I shall pray to Kai and Ishir to watch over you on this fateful mission.</quote></p>
+     <p><quote>Good. Then I shall call upon Guildmaster Banedon&emdash;he knows of the Deathlord&apos;s rise and he has offered his ship <cite>Skyrider</cite> to hasten your journey westwards. He will tell you more about Ixia and how you will be conveyed there. Godspeed, Grand Master. I shall pray to Kai and Ishir to watch over you on this fateful mission.</quote></p>
     </data>
    </section>
 
@@ -696,7 +186,7 @@ or
      <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 25 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a> (i.e., if your pencil fell on the number 6 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> of 31). When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore very desirable.</p>
      <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 30 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a> (i.e., if your pencil fell on the number 7 on the <a idref="random">Random Number Table</a> you would have 37 <typ class="attribute">ENDURANCE</typ> points).</p>
      <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never rise above the number you have when you start an adventure.</p>
-     <p>If you have successfully completed any of the previous adventures in the Lone Wolf series (Books 1&endash;15), you can carry your current scores of <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points over to Book 16. These scores may include Weaponmastery, Curing, and Psi-surge bonuses obtained upon completion of Lone Wolf Kai (Books 1&endash;5) or Magnakai (Books 6&endash;12) adventures.<a id="gamerulz-1" idref="gamerulz-1-foot" class="footnote" /> Only if you have completed these previous adventures will you benefit from the appropriate bonuses in the course of the Grand Master series. You may also carry over any Weapons and Backpack Items you had in your possession at the end of your last adventure, and these should be entered on your new Grand Master <a idref="action">Action Chart</a> (you are still limited to two Weapons, but you may now carry up to ten Backpack Items).</p>
+     <p>If you have successfully completed any of the previous adventures in the Lone Wolf series (Books 1&endash;15), you can carry your current scores of <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points over to Book 17. These scores may include Weaponmastery, Curing, and Psi-surge bonuses obtained upon completion of Lone Wolf Kai (Books 1&endash;5) or Magnakai (Books 6&endash;12) adventures.<a id="gamerulz-1" idref="gamerulz-1-foot" class="footnote" /> Only if you have completed these previous adventures will you benefit from the appropriate bonuses in the course of the Grand Master series. You may also carry over any Weapons and Backpack Items you had in your possession at the end of your last adventure, and these should be entered on your new Grand Master <a idref="action">Action Chart</a> (you are still limited to two Weapons, but you may now carry up to ten Backpack Items).</p>
      <p>However, only the following Special Items may be carried over from the Lone Wolf Kai (Books 1&endash;5) and Magnakai (Books 6&endash;12) series to the Lone Wolf Grand Master series (Books 13-onwards):</p>
      <ul>
       <li>Crystal Star Pendant</li>
@@ -756,7 +246,7 @@ or
         </data>
        </section>
 
-       <p>Now, through the pursuit of your new skills and the further development of your innate Kai abilities, you have set out upon a path of discovery that no other Kai Grand Master has ever attempted with success. Your determination to become the first Kai Supreme Master, by acquiring total proficiency in all twelve of the Grand Master Disciplines, is an awe-inspiring challenge. You will be venturing into the unknown, pushing back the boundaries of human limitation in the pursuit of greatness and the cause of Good. May the blessings of the Gods Kai and Ishir go with you as you begin your brave and noble quest.</p>
+       <p>Now, through the pursuit of your new skills and the further development of your innate Kai abilities, you have set out upon a path of discovery that no other Kai Grand Master has ever attempted with success. Your determination to become the first Kai Supreme Master, by acquiring total proficiency in all twelve of the Grand Master Disciplines, is an awe-inspiring challenge. You will be venturing into the unknown, pushing back the boundaries of human limitation in the pursuit of greatness and the cause of Good. May the blessings of the <!--ERRTAG-RE-27110-->Gods Kai and Ishir<!--/ERRTAG-RE-27110--> go with you as you begin your brave and noble quest.</p>
        <p>In the years following the demise of the Darklords you have reached the rank of Kai Grand Defender, which means that you have mastered <em>four</em> of the Grand Master Disciplines listed below. It is up to you to choose which four Disciplines these are. As all of the Grand Master Disciplines will be of use to you at some point during your adventure, pick your four skills with care. The correct use of a Grand Master Discipline at the right time could save your life.</p>
        <p>When you have chosen your four Disciplines, enter them in the Grand Master Disciplines section of your <a idref="action">Action Chart</a>.</p>
 
@@ -853,7 +343,7 @@ or
        </section>
 
        <section class="frontmatter" id="magi">
-        <meta><title>Magi-magic</title></meta>
+        <meta><title><!--ERRTAG-RE-33045-->Magi-magic<!--/ERRTAG-RE-33045--></title></meta>
         <data>
          <p>Under the tutelage of Lord Rimoah, you have been able to master the rudimentary skills of battle magic, as taught to the Vakeros&emdash;the native warriors of Dessi. As you advance in rank, so will your knowledge and mastery of Old Kingdom magic increase.</p>
         </data>
@@ -880,14 +370,14 @@ or
       </meta>
 
       <data>
-       <p>Before you set off on your long journey to Ixia you take with you a map of the area (see the inside front cover of this book) and a pouch of gold. To find out how much gold is in the pouch, pick a number from the <a idref="random">Random Number Table</a> and add 20 to the number you have picked. The total equals the number of Gold Crowns inside the pouch, and you should now enter this number in the <quote>Gold Crowns</quote> section of your <a idref="action">Action Chart</a>.</p>
-       <p>If you have successfully completed any of the previous Lone Wolf adventures (Books 1&endash;16), you may add this sum to the total sum of Crowns you already possess. Fifty Crowns is the maximum you can carry, but additional Crowns can be left in safe-keeping at your Monastery.</p>
+       <p>Before you set off on your long journey to Ixia you take with you a <a idref="map">map of the area</a> <!--ERRTAG-DE-35140/--> and a pouch of gold. To find out how much gold is in the pouch, pick a number from the <a idref="random">Random Number Table</a> and add 20 to the number you have picked. The total equals the number of Gold Crowns inside the pouch, and you should now enter this number in the <quote>Gold Crowns</quote> section of your <a idref="action">Action Chart</a>.</p>
+       <p>If you have successfully completed any of the previous Lone Wolf adventures (Books 1&endash;16), you may add this sum to the total sum of Crowns you already possess. Fifty Crowns is the maximum you can carry, but additional Crowns can be left in <!--ERRTAG-RE-35809-->safekeeping<!--/ERRTAG-RE-35809--> at your Monastery.</p>
        <p>You can take four items from the list below, again adding to these, if necessary, any you may already possess from previous adventures (remember, you are still limited to two Weapons, but you may now carry a maximum of ten Backpack Items).</p>
        <ul class="paragraphed">
         <li><p>BROADSWORD (Weapons)</p></li>
         <li><p>BOW (Weapons)</p></li>
         <li>
-         <p>QUIVER (Special Items) This contains six arrows, record them on your Weapons List.</p>
+         <p>QUIVER (Special Items) This contains six <!--ERRTAG-RE-36319-->Arrows<!--/ERRTAG-RE-36319-->, record them on your Weapons List.</p>
          <illustration class="inline">
           <meta>
            <creator>Brian Williams</creator>
@@ -954,13 +444,13 @@ or
           <dt>Bows and Arrows</dt>
            <dd>
             <p>During your adventure there will be opportunities to use a Bow and Arrow. If you equip yourself with this weapon, and you possess at least one Arrow, you may use it when the text of a particular section allows you to do so. The Bow is a useful weapon, for it enables you to hit an enemy at a distance. However, a Bow cannot be used in hand-to-hand combat, therefore it is strongly recommended that you also equip yourself with a close combat weapon, such as a sword or axe.</p>
-            <p>In order to use a Bow you must possess a quiver and at least one Arrow. Each time the Bow is used, erase an Arrow from your <a idref="action">Action Chart</a>. A Bow cannot, of course, be used if you exhaust your supply of Arrows, but the opportunity may arise during your adventure for you to replenish your stock of Arrows.</p>
+            <p>In order to use a Bow you must possess a <!--ERRTAG-RA-39864-->Quiver<!--/ERRTAG-RA-39864--> and at least one Arrow. Each time the Bow is used, erase an Arrow from your <a idref="action">Action Chart</a>. A Bow cannot, of course, be used if you exhaust your supply of Arrows, but the opportunity may arise during your adventure for you to replenish your stock of Arrows.</p>
             <p>If you have the Discipline of Grand Weaponmastery with a Bow, you may add 3 to any number that you pick from the <a idref="random">Random Number Table</a>, when using the Bow.</p>
            </dd>
           <dt>Backpack Items</dt>
            <dd>
             <p>These must be stored in your Backpack. Because space is limited, you may keep a maximum of ten articles, including Meals, in your Backpack at any one time. You may only carry one Backpack at a time. During your travels you will discover various useful items which you may decide to keep. You may exchange or discard them at any point when you are not involved in combat.</p>
-            <p>Any item that may be of use, and which can be picked up on your adventure and entered on your <a idref="action">Action Chart</a> is given either initial capitals (e.g. Gold Dagger, Magic Pendant), or is clearly labelled as a Backpack Item. Unless you are told that it is a Special Item, carry it in your Backpack.</p>
+            <p>Any item that may be of use, and which can be picked up on your adventure and entered on your <a idref="action">Action Chart</a> is given either initial capitals <!--ERRTAG-RE-40946-->(e.g. Gold Dagger<!--/ERRTAG-RE-40946-->, Magic Pendant), or is clearly labelled as a Backpack Item. Unless you are told that it is a Special Item, carry it in your Backpack.</p>
            </dd>
           <dt>Special Items</dt>
            <dd>
@@ -1085,7 +575,7 @@ or
             <p>Grand Masters who have reached the rank of Kai Grand Guardian are able to use the following battle-spells of the Elder Magi:</p>
             <ul>
              <li><spell>Splinter</spell>&emdash;This causes breakable items such as bottles, jugs, mirrors, windows, etc[.], to shatter to pieces. The range of this spell increases as a Grand Master rises in rank.</li>
-             <li><spell>Flameshaft</spell>&emdash;This causes the tip of any arrow, or arrow-like missile, to burn fiercely with a magical flame which cannot readily be extinguished by normal means.</li>
+             <li><spell>Flameshaft</spell>&emdash;This causes the tip of any Arrow or Arrow-like missile, to burn fiercely with a magical flame which cannot readily be extinguished by normal means.</li>
             </ul>
            </dd>
          </dl>
@@ -1110,7 +600,7 @@ or
            <dd><p>Sun Knights who possess this Discipline are able to communicate telepathically over great distances. Initially the range of this ability is approximately 100 miles, but this distance increases as a Grand Master rises in rank.</p></dd>
           <dt>Kai-alchemy</dt>
            <dd>
-            <p>Grand Masters who have reached the rank of Sun Knight are able to use the following Brotherhood spells:</p>
+            <p>Grand Masters who have reached the rank of Sun Knight are able to use the following <!--ERRTAG-RE-53768-->Brotherhood Spells<!--/ERRTAG-RE-53768-->:</p>
             <ul>
              <li><spell>Halt Missile</spell>&emdash;This causes any projected or hurled missile (i.e. arrows, axes, crossbow bolts, etc.) which may  pose an immediate threat to the life of a Sun Knight, to cease its flight and remain stationary in mid-air. The effect of the spell lasts for 2&endash;3 seconds, allowing the Sun Knight sufficient time to move away from its line of flight. Initially only one missile can be affected by  this spell, but the number increases as a Grand Master rises in rank.</li>
              <li><spell>Strength</spell>&emdash;By casting this spell, a Sun Knight is able to greatly increase his or her physical strength for a short duration. It can be used to lift or move heavy objects, or to effect a temporary increase in <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> scores whilst fighting an enemy in unarmed combat.<a id="imprvdsc-1" idref="imprvdsc-1-foot" class="footnote" /></li>
@@ -1133,15 +623,15 @@ or
           <dt>Grand Huntmastery</dt>
            <dd><p>Kai Sun Lords with this skill are able to see, with acute accuracy, light in the infrared spectrum, ie. they can see complex patterns generated by heat in near or total darkness. They can also see light in the ultraviolet spectrum.</p></dd>
           <dt>Kai-surge</dt>
-           <dd><p>Sun Lords who possess mastery of this Discipline are able to launch a Kai-blast&emdash;a pulse of intense psychic energy which is capable of affecting both psychically active and inactive enemies. This form of psychic attack is very effective, more so than a usual Kai-surge, Psi-surge or Mindblast. It can cause an enemy to lose between 2 and 18 <typ class="attribute">ENDURANCE</typ> points in one attack. However, use of a Kai-blast will reduce a Sun Lord&apos;s <typ class="attribute">ENDURANCE</typ> points total by 4. It cannot be used in conjunction with any other form of psychic attack.</p></dd>
+           <dd><p>Sun Lords who possess mastery of this Discipline are able to launch a Kai-blast&emdash;a pulse of intense psychic energy which is capable of affecting both psychically active and inactive enemies. This form of psychic attack is very effective, more so than a usual Kai-surge, Psi-surge or Mindblast. It can cause an enemy to lose between 2 and 18 <typ class="attribute">ENDURANCE</typ> points in one attack. A Kai Sun Lord using Kai-blast determines the damage inflicted on an enemy by picking two numbers from the <a idref="random">Random Number Table</a>. These numbers should be added together (a <quote>0</quote> = 1) and the resultant total equals the damage inflicted. However, use of a Kai-blast will reduce a Sun Lord&apos;s <typ class="attribute">ENDURANCE</typ> points total by 4. It cannot be used in conjunction with any other form of psychic attack.</p></dd>
           <dt>Telegnosis</dt>
-           <dd><p>Sun Lords who possess this Discipline are able to alter their body weight in order to walk successfully upon different kinds of surface, e.g.: water, mud, lava and quicksand. Time duration and degree of surface difficulty increases as a Grand Master rises in rank.</p></dd>
-          <dt>Magi-magic</dt>
+           <dd><p>Sun Lords who possess this Discipline are able to alter their body weight in order to walk successfully upon different kinds of surface, e.g. water, mud, lava and quicksand. Time duration and degree of surface difficulty increases as a Grand Master rises in rank.</p></dd>
+          <dt><!--ERRTAG-RE-57185-->Magi-magic<!--/ERRTAG-RE-57185--></dt>
            <dd>
             <p>Grand Masters who have reached the rank of Sun Lord are able to use the following battle-spells of the Elder Magi:</p>
             <ul>
-             <li><spell>Penetrate</spell>&emdash;This increases the penetrative energy of any arrow, or arrow-like missile, launched by a Sun Lord.</li>
-             <li><spell>Energy Grasp</spell>&emdash;This spell enables a Sun Lord to discharge a powerful electrical force into anything he or she touches. It is similar in effect to the Brotherhood spell <quote>Lightning Hand</quote>, but differs in that it is easier to control and channel the resulting energy. It also requires the actual touching of an object or an enemy to effect the spell.</li>
+             <li><spell>Penetrate</spell>&emdash;This increases the penetrative energy of any Arrow or Arrow-like missile, launched by a Sun Lord.</li>
+             <li><spell>Energy Grasp</spell>&emdash;This spell enables a Sun Lord to discharge a powerful electrical force into anything he or she touches. It is similar in effect to the <!--ERRTAG-RE-58099-->Brotherhood Spell <spell>Lightning Hand</spell><!--/ERRTAG-RE-58099-->, but differs in that it is easier to control and channel the resulting energy. It also requires the actual touching of an object or an enemy to effect the spell.</li>
             </ul>
            </dd>
          </dl>
@@ -1159,14 +649,14 @@ or
           <dt>Deliverance</dt>
            <dd><p>Sun Thanes who possess this skill are able to conduct a Kai Exorcism. This ritual will banish any evil supernatural force that has taken possession of any goodly creature or object.</p></dd>
           <dt>Grand Huntmastery</dt>
-           <dd><p>Kai Sun Thanes with this skill are able to protect themselves from the effects of being struck by natural electrical discharges, ie. <!-- JDOUGAN: I think that we want e.g. and not i.e. --> [i.e.] lightning.</p></dd>
+           <dd><p>Kai Sun Thanes with this skill are able to protect themselves from the effects of being struck by natural electrical discharges, <!--ERRTAG-RE-59140-->i.e. lightning<!--/ERRTAG-RE-59140-->.</p></dd>
           <dt>Grand Pathsmanship</dt>
            <dd><p>Sun Thanes who possess mastery of this Discipline are able to alter the temperature of water by touch. By using this skill they are able to transform water into ice and vice versa. The volume of water affected, and  the duration of effect, both increase as a Grand Master rises in rank.</p></dd>
           <dt>Kai-screen</dt>
            <dd><p>Sun Thanes who possess this Discipline are able to erect a special psychic defence called <quote>Mindfort</quote>. A Mindfort defence greatly reduces the effects of any psychic shock that would normally paralyse or weaken a lesser mortal.</p></dd>
           <dt>Kai-alchemy</dt>
            <dd>
-            <p>Grand Masters who have reached the rank of Sun Thane we able to use the following Brotherhood spells:</p>
+            <p>Grand Masters who have reached the rank of Sun Thane we able to use the following <!--ERRTAG-RE-60406-->Brotherhood Spells<!--/ERRTAG-RE-60406-->:</p>
             <ul>
              <li><spell>Slow Fall</spell>&emdash;By casting this spell, Kai Sun Thanes are able to slow their rate of free-falling to three feet per second, thereby avoiding damage upon landing while the spell is in effect. The duration of the spell is limited at first, but it steadily increases as a Grand Master rises in rank.</li>
              <li><spell>Breathe Water</spell>&emdash;Using this spell, a Kai Sun Thane is able to breathe underwater for ten minutes. The duration of effect increases as a Grand Master rises in rank.</li>
@@ -1175,7 +665,7 @@ or
          </dl>
         </data>
        </section>
-       <p>The nature of any additional improvements and how they affect your Grand Master Disciplines will be noted in the <quote>Improved Grand Master Disciplines</quote> section of future Lone Wolf books.</p>
+       <p>The nature of any additional improvements and how they affect your Grand Master Disciplines will be noted in the <!--ERRTAG-RE-60783--><cite>Improved Grand Master Disciplines</cite><!--/ERRTAG-RE-60783--> section of future Lone Wolf books.</p>
       </data>
      </section>
     </data>
@@ -1207,15 +697,15 @@ or
 
       <data>
        <p>Lord Rimoah removes a sphere of crystal from a pocket of his robe and holds it up to the lantern light. It is filled with a swirling grey mist. Softly he murmurs the words of an ancient spell and the mist clears to reveal the anxious face of your friend&emdash;Guildmaster Banedon. Rimoah speaks briefly to Banedon&apos;s image, requesting that he come to the Monastery at once.</p>
-       <p><quote>I will be with you within the hour,</quote> says the voice of Banedon, a whisper in your mind.</p>
-       <p>Your friend is in Toran, sixty miles to the north, yet he holds true to his word. In less than an hour he arrives at the Monastery aboard <typ class="ital">Skyrider</typ>&emdash;his sleek flying ship. Two excited young Kai aspirants bring word of his arrival to the vault and you respond by making your way swiftly to the surface. Banedon&apos;s <typ class="ital">Skyrider</typ> is hovering above the training park, the hum of its magical engine amplified by the surrounding walls and battlements. It is dusk on this wintry evening and a shower of feathery snow is illuminated by the craft&apos;s lanterns. A rope ladder hangs from the bow rail to the frost-hardened earth.</p>
-       <p><quote>Go aboard, Grand Master,</quote> urges Rimoah, <quote>Banedon will advise you and provide you with what you&apos;ll be needing. I shall stay here and pray for your safe return.</quote></p>
-       <p>You bid a hasty farewell to your mentor before climbing the dangling rope ladder with the legendary speed and grace that sets you apart from lesser warriors. Banedon is waiting as you haul yourself aboard. He greets you with a glad smile, yet his face cannot hide his deep concern for what may await you in Ixia. You wave a final farewell to Lord Rimoah, then you retreat to the warmth of Banedon&apos;s cabin as the <typ class="ital">Skyrider</typ> glides over the Monastery&apos;s southern wall and ascends into the leaden sky.</p>
+       <p><thought>I will be with you within the hour,</thought> says the voice of Banedon, a whisper in your mind.</p>
+       <p>Your friend is in Toran, sixty miles to the north, yet he holds true to his word. In less than an hour he arrives at the Monastery aboard <cite>Skyrider</cite>&emdash;his sleek flying ship. Two excited young <!--ERRTAG-RE-63440-->Kai Aspirants<!--/ERRTAG-RE-63440--> bring word of his arrival to the vault and you respond by making your way swiftly to the surface. Banedon&apos;s <cite>Skyrider</cite> is hovering above the training park, the hum of its magical engine amplified by the surrounding walls and battlements. It is dusk on this wintry evening and a shower of feathery snow is illuminated by the craft&apos;s lanterns. A rope ladder hangs from the bow rail to the frost-hardened earth.</p>
+       <p><quote>Go aboard, Grand Master,</quote> <!--ERRTAG-RE-63972-->urges Rimoah.<!--/ERRTAG-RE-63972--> <quote>Banedon will advise you and provide you with what you&apos;ll be needing. I shall stay here and pray for your safe return.</quote></p>
+       <p>You bid a hasty farewell to your mentor before climbing the dangling rope ladder with the legendary speed and grace that sets you apart from lesser warriors. Banedon is waiting as you haul yourself aboard. He greets you with a glad smile, yet his face cannot hide his deep concern for what may await you in Ixia. You wave a final farewell to Lord Rimoah, then you retreat to the warmth of Banedon&apos;s cabin as the <cite>Skyrider</cite> glides over the Monastery&apos;s southern wall and ascends into the leaden sky.</p>
        <p>Your friend Banedon has already set a course for Vadera, the principal city of Lencia, a destination which is more than a full day&apos;s flight west of Sommerlund. Were this not the first stage of a longer voyage to Ixia you would gladly welcome the chance to visit Vadera, for you have many friends there in the court of King Sarnac of Lencia.</p>
-       <p>During the flight, Banedon details the plans which have been made on your behalf. King Sarnac himself has promised his help; he will provide you with a boat and a pilot to sail you from Vadera to Azgad Island, a desolate Lencian outpost in the Tozaz Sea. On your arrival there you will be transferred to a Lencian ice-boat, a craft specially built to withstand the power of the treacherous pack ice which clings to the Ixian shoreline at this time of the year.</p>
+       <p>During the flight, Banedon details the plans which have been made on your behalf. King Sarnac himself has promised his help; he will provide you with a boat and a pilot to sail you from Vadera to Azgad Island, a desolate Lencian outpost in the Tozaz Sea. On your arrival there you will be transferred to a Lencian ice-boat, a craft specially built to withstand the power of the treacherous <!--ERRTAG-RE-65461-->pack-ice<!--/ERRTAG-RE-65461--> which clings to the Ixian shoreline at this time of the year.</p>
        <p><quote>The ice-boat will land you on the coast of Ixia, Lone Wolf,</quote> says Banedon, <quote>and then it will wait at anchor for you to return upon the completion of your mission.</quote></p>
-       <p><quote>How long will the iceboat wait for me?</quote> you ask, apprehensively.</p>
-       <p><quote>If you do not return within seven days the pilot has orders to set sail for Vadera without you. The Tozaz in winter is a cruel and terrible sea&emdash;no ordinary man could hope to survive there for much longer than a week, no matter how strong his ship or plentiful his supplies. Which reminds me&emdash;if you are to survive your visit to Deathlord Ixiataaga&apos;s frigid realm, you will be needing some special protection.</quote></p>
+       <p><quote>How long will the <!--ERRTAG-RE-65775-->ice-boat<!--/ERRTAG-RE-65775--> wait for me?</quote> you ask, apprehensively.</p>
+       <p><quote>If you do not return within <!--ERRTAG-RE-65937-->seven days, the pilot<!--/ERRTAG-RE-65937--> has orders to set sail for Vadera without you. The Tozaz in winter is a cruel and terrible sea&emdash;no ordinary man could hope to survive there for much longer than a week, no matter how strong his ship or plentiful his supplies. Which reminds me&emdash;if you are to survive your visit to Deathlord Ixiataaga&apos;s frigid realm, you will be needing some special protection.</quote></p>
        <choice idref="sect166">If you possess a Platinum Amulet, <link-text>turn to 166</link-text>.</choice>
        <choice idref="sect282">If you do not possess this Special Item, <link-text>turn to 282</link-text>.</choice>
       </data>
@@ -1235,8 +725,8 @@ or
       <meta><title>3</title></meta>
 
       <data>
-       <p>To your dismay, the descending wave of Lavas reach the demonlord before you and form up in a protective circle around his ice-sheened body. Those that remain in the sky beat the air with their mighty wings, causing a powerful down-draught which holds you at bay.</p>
-       <p>Shielding your eyes from the stinging dust-choked winds, you look up and see that the Lavas leader is cradling the curious spiked metal bowl in its horny hands. He descends towards Tagazin and inverts it, and suddenly you realize its true purpose and design. It is a helm of power, affixed on top with a crystal spike. The Lavas places the helm upon the demonlord&apos;s head and the spike begins to glow menacingly.</p>
+       <p>To your dismay, the descending wave of Lavas reach the <!--ERRTAG-RE-67530-->Demonlord<!--/ERRTAG-RE-67530--> before you and form up in a protective circle around his ice-sheened body. Those that remain in the sky beat the air with their mighty wings, causing a powerful <!--ERRTAG-RE-67737-->down-draft<!--/ERRTAG-RE-67737--> which holds you at bay.</p>
+       <p>Shielding your eyes from the stinging dust-choked winds, you look up and see that the Lavas leader is cradling the curious spiked metal bowl in its horny hands. He descends towards Tagazin and inverts it, and suddenly you realize its true purpose and design. It is a helm of power, affixed on top with a crystal spike. The Lavas places the helm upon the <!--ERRTAG-RE-68158-->Demonlord&apos;s<!--/ERRTAG-RE-68158--> head and the spike begins to glow menacingly.</p>
        <p>Now all of the Lavas ascend into the sky where they wait to view a confrontation which is about to commence. Suddenly Tagazin, revitalized by the power of the spiked helm, comes charging at you with his head lowered, snorting gruffly like a maddened bull.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. If you possess Grand Huntmastery or Grand Pathsmanship, add 3 to the number you have picked.</p>
        <choice idref="sect72">If your total is now 4 or less, <link-text>turn to 72</link-text>.</choice>
@@ -1269,9 +759,9 @@ or
       <meta><title>6</title></meta>
 
       <data>
-       <p>There is a faint Click and the door opens without a sound. You walk through and emerge into a chamber composed entirely of polished black crystal, where you see myriad images of yourself trailing away into infinity within the mirror-smooth walls. At first you see only your own reflections, but when you cast your gaze around this eerie chamber you realize that you are not alone. Standing guard at an open archway are a trio of undead creatures, the like of which you have never encountered before. They are armed with barbed tridents which they hold loosely in their corpse-green hands.</p>
+       <p>There is a faint <!--ERRTAG-RE-71213--><onomatopoeia>click</onomatopoeia><!--/ERRTAG-RE-71213--> and the door opens without a sound. You walk through and emerge into a chamber composed entirely of polished black crystal, where you see myriad images of yourself trailing away into infinity within the mirror-smooth walls. At first you see only your own reflections, but when you cast your gaze around this eerie chamber you realize that you are not alone. Standing guard at an open archway are a trio of undead creatures, the like of which you have never encountered before. They are armed with barbed tridents which they hold loosely in their corpse-green hands.</p>
        <p>Suddenly they become aware of your presence and come scurrying forwards, their tridents raised in readiness to pin you to the wall.</p>
-       <choice idref="sect287">If you possess a bow, and wish to use it, <link-text>turn to 287</link-text>.</choice>
+       <choice idref="sect287">If you possess a <!--ERRTAG-RE-72055-->Bow<!--/ERRTAG-RE-72055-->, and wish to use it, <link-text>turn to 287</link-text>.</choice>
        <choice idref="sect64">If you do not, <link-text>turn to 64</link-text>.</choice>
       </data>
      </section>
@@ -1280,8 +770,8 @@ or
       <meta><title>7</title></meta>
 
       <data>
-       <p>Drawing on your Magnakai skills of camouflage and psychic defence to shield your body and mind, you leave your hiding place and hurry through the open archway. Several hundred yards beyond you come to a wide stone staircase which ascends to a landing, positioned high above the underground lake and ice cavern. As you climb the steps, the sub-zero temperature plummets even further, making you shiver involuntarily, despite the combined protection of your Platinum Amulet and your Magnakai skills.</p>
-       <p>At length you reach the landing to be greeted by the sight of two undead Ixian warriors standing guard at the mouth of a cave. Instinctively, you sidestep into the shadows to avoid being seen, but the Ixians show no reactions; it as if they have both been cast in stone.</p>
+       <p>Drawing on your Magnakai skills of camouflage and psychic defence to shield your body and mind, you leave your hiding place and hurry through the open archway. Several hundred yards <!--ERRTAG-RE-72582-->beyond, you<!--/ERRTAG-RE-72582--> come to a wide stone staircase which ascends to a landing, positioned high above the underground lake and ice cavern. As you climb the steps, the sub-zero temperature plummets even further, making you shiver involuntarily, despite the combined protection of your Platinum Amulet and your Magnakai skills.</p>
+       <p>At length you reach the landing to be greeted by the sight of two undead Ixian warriors standing guard at the mouth of a cave. Instinctively, you sidestep into the shadows to avoid being seen, but the Ixians show no reactions; <!--ERRTAG-RE-73183-->it is as if<!--/ERRTAG-RE-73183--> they have both been cast in stone.</p>
        <p>Beyond the open cave mouth you see a bleak and desolate wasteland of rock and ice. A blizzard is raging, whipped up by a fierce electrical storm that blazes above a distant mountain range. The jagged peaks are illuminated by the flashes of the storm&apos;s ghostly, blue-white fire.</p>
        <p>Your Kai senses tell you that the evil sorcery which animates and controls the guards is temporarily dormant: these two skeletons currently pose no threat to your safety. However, the same cannot be said of the troop of undead Drakkarim warriors who, at this moment, are marching up the stairs behind you. Reluctantly, you leave the cave mouth and set off into the raging blizzard in search of the city of Xaagon.</p>
        <choice idref="sect44"><link-text>Turn to 44</link-text>.</choice>
@@ -1294,9 +784,9 @@ or
       <data>
        <p>The instant you step into the light, a wave of acute pain washes through your body as the curtain of shimmering radiance swallows you up. You writhe in agony as gravity releases its hold on your body, and you feel yourself begin to rise: lose 10 <typ class="attribute">ENDURANCE</typ> points.</p>
        <p>You are on the threshold of unconsciousness when suddenly the light fades and you find yourself kneeling on a floor of black crystal, staring at the reflection of your pain-wracked face in its highly-polished surface. Wearily you raise your aching head and see, to your horror, a trio of undead creatures scurrying towards you from an open archway. They have barbed tridents clasped in their corpse-green hands, held raised in readiness to pin you to the floor.</p>
-       <choice idref="sect287">If you possess a bow, and wish to use it, <link-text>turn to 287</link-text>.</choice>
+       <choice idref="sect287">If you possess a <!--ERRTAG-RE-75028-->Bow<!--/ERRTAG-RE-75028-->, and wish to use it, <link-text>turn to 287</link-text>.</choice>
        <choice idref="sect96">If you possess Kai-surge, and wish to use it, <link-text>turn to 96</link-text>.</choice>
-       <choice idref="sect64">If you cannot, or if you choose not to use either of the above, then <link-text>turn to 64</link-text>.</choice>
+       <choice idref="sect64"><!--ERRTAG-RE-75303-->If you do not<!--/ERRTAG-RE-75303-->, or if you choose not to use either of the above, then <link-text>turn to 64</link-text>.</choice>
       </data>
      </section>
 
@@ -1304,7 +794,7 @@ or
       <meta><title>9</title></meta>
 
       <data>
-       <p>As you stare upwards at the monstrous spire, you detect waves of pure evil radiating from its ice-sheathed surfaces. They seem to wax and wane in time with the crimson light pulsing from its tip. Your improved mastery also detects dangerously high concentrations of light in the ultra-violet spectrum. So strong is this light that it physically sickens you, yet you find it hard to look away; you are both fascinated and repulsed by it.</p>
+       <p>As you stare upwards at the monstrous spire, you detect waves of pure evil radiating from its ice-sheathed surfaces. They seem to wax and wane in time with the crimson light pulsing from its tip. Your improved mastery also detects dangerously high concentrations of light in the <!--ERRTAG-RE-75861-->ultraviolet<!--/ERRTAG-RE-75861--> spectrum. So strong is this light that it physically sickens you, yet you find it hard to look away; you are both fascinated and repulsed by it.</p>
        <p>Suddenly you realize what it is that you are seeing and feeling: it is the evil power of Deathlord Ixiataaga himself. He is present here, somewhere inside this dread spire.</p>
        <choice idref="sect325">If you possess Kai-screen, <link-text>turn to 325</link-text>.</choice>
        <choice idref="sect245">If you do not possess this Grand Master Discipline, <link-text>turn to 245</link-text>.</choice>
@@ -1349,7 +839,7 @@ or
       <meta><title>13</title></meta>
 
       <data>
-       <p>With difficulty you retrieve the Sabito from your Backpack and force it into your mouth. Your lungs feel as if they are on fire, and you are barely moments away from slipping into unconsciousness when the Sabito takes effect. Quickly the feelings of nausea subside and your strength returns. This prized herb enables your body to absorb oxygen from the icy sea water directly through the pores of your skin, negating the need to surface for air.</p>
+       <p>With difficulty you retrieve the Sabito from your Backpack and force it into your mouth. Your lungs feel as if they are on fire, and you are barely moments away from slipping into unconsciousness when the Sabito takes effect. Quickly the feelings of nausea subside and your strength returns. This prized herb enables your body to absorb oxygen from the icy <!--ERRTAG-RE-81799-->seawater<!--/ERRTAG-RE-81799--> directly through the pores of your skin, negating the need to surface for air.</p>
        <p>In just a few minutes you reach the distant shoreline and break through the surface alongside a shallow stone causeway. Atop this causeway is a track, a spur of which branches off towards the tunnel entrance. With only your head visible above the lake, you cling to the causeway stones and wait patiently for a patrol of undead warriors to march past.</p>
        <choice idref="sect169"><link-text>Turn to 169</link-text>.</choice>
       </data>
@@ -1361,7 +851,7 @@ or
       <data>
        <p>You race up the treacherously frosty steps which lead to the open watchtower roof. There you find Prarg hurriedly loading a pantard&emdash;a heavy iron crossbow which is mounted on a rotating platform.</p>
        <p>Once again the freezing air is filled with cries of fear and chaos. Drawn by these frightful sounds, you run to the stone parapet and look down to see the great black ship come shuddering to a halt beside the harbour wall. Instantly, a horde of undead warriors leap on to the quayside and rush off in pursuit of the routing Lencians. Their eyes burn with an unnatural fire and they howl like demons as mercilessly they hunt down their human prey.</p>
-       <p>Prarg has now loaded the pantard and he calls on you to act as gunner. You oblige by taking hold of the firing mechanism and swivelling the weapon around in search of your first target. Two spring readily to view: the mass of undead who were swarming ashore, and a glowing glassy sphere which is mounted on a plinth beside the ship&apos;s wheelhouse.</p>
+       <p>Prarg has now loaded the pantard and he calls on you to act as gunner. You oblige by taking hold of the firing mechanism and swivelling the weapon around in search of your first target. Two spring readily to view: the mass of <!--ERRTAG-RE-83432-->undead who are swarming<!--/ERRTAG-RE-83432--> ashore, and a glowing glassy sphere which is mounted on a plinth beside the ship&apos;s wheelhouse.</p>
        <illustration class="float">
          <meta>
           <creator>Brian Williams</creator>
@@ -1380,9 +870,9 @@ or
 
       <data>
        <p>Using your advanced mastery, you lighten your body weight to prevent yourself from sinking any deeper into the mire. Moments later, you feel something brush past your leg for a second time and the chilling sensation galvanizes you into action.</p>
-       <p>The walls of the shaft are mirror smooth for the first ten feet above the surface of the mire. But beyond this point you notice that they are rough hewn and studded with sharp spurs of rock. One such spur offers a tempting hand-hold&ellips; if only you could get to it. If you could reach it, it would be an easy task for a warrior of your agility to climb to the opening above.</p>
+       <p>The walls of the shaft are mirror smooth for the first ten feet above the surface of the mire. But beyond this point you notice that they are <!--ERRTAG-RE-84736-->rough-hewn<!--/ERRTAG-RE-84736--> and studded with sharp spurs of rock. One such spur offers a tempting hand-hold&ellips; if only you could get to it. If you could reach it, it would be an easy task for a warrior of your agility to climb to the opening above.</p>
        <choice idref="sect323">If you possess a Rope (oiled or otherwise), <link-text>turn to 323</link-text></choice>
-       <choice idref="sect210">If you do not possess this Backpack item, <link-text>turn to 210</link-text></choice>
+       <choice idref="sect210">If you do not possess this Backpack <!--ERRTAG-RE-85157-->Item<!--/ERRTAG-RE-85157-->, <link-text>turn to 210</link-text></choice>
       </data>
      </section>
 
@@ -1409,12 +899,13 @@ or
       <meta><title>18</title></meta>
 
       <data>
-       <p>You leave the Ixian ship and go in search of Captain Lanza. You find him with his men by the watchtower&emdash;they are building a bonfire out of rags and broken bones. A toothless sergeant empties a gallon of Skark oil on to the heap and a burning torch sets the whole thing ablaze.</p>
+       <p>You leave the Ixian ship and go in search of Captain Lanza. You find him with his men by the watchtower&emdash;they are building a bonfire out of rags and broken bones. A toothless sergeant empties a gallon of <!--ERRTAG-RE-87112-->skark oil<!--/ERRTAG-RE-87112--> on to the heap and a burning torch sets the whole thing ablaze.</p>
        <p>You stride over to Lanza and slap him heartily on the back. <quote>Well fought, Captain. You and your men have brought honour to Lencia this day.</quote></p>
        <p>Captain Lanza greets your compliment with a sombre face. <quote>Nay, sire,</quote> he says, sadly. <quote>Tis the enemy who&apos;ve won. The ice-boat is sunk and we cannot sail you to Ixia.</quote></p>
        <p><quote>We can use the enemy ship, Captain,</quote> you reply. <quote>It is perfect for the task. All I need of you are some provisions and a crew.</quote></p>
        <p>Lanza&apos;s face brightens. He orders his men to prepare the Ixian ship and within the hour you are ready to set sail.</p>
-       <p><quote>May the gods watch over you, Grand Master,</quote> says Prarg, as you bid him and Lanza farewell. <quote>Do not fear,</quote> you reply, <quote>I shall soon return.</quote></p>
+       <p><quote>May the gods watch over you, Grand Master,</quote> says Prarg, as you bid him and Lanza farewell.</p>
+       <p><quote>Do not fear,</quote> <!--ERRTAG-RE-88112-->you reply. <quote>I shall soon return.</quote><!--/ERRTAG-RE-88112--></p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
        <choice idref="sect332">If the number you have picked is 0&endash;4, <link-text>turn to 332</link-text>.</choice>
        <choice idref="sect224">If it is 5&endash;9, <link-text>turn to 224</link-text>.</choice>
@@ -1426,7 +917,7 @@ or
 
       <data>
        <p>Using the Magnakai Discipline of Nexus, you focus on the hole and attempt to will the lock to disengage itself.</p>
-       <p>Pick a number from the <a idref="random">Random Number Table</a>. For every level of Kai mastery you have attained, above that of Sun Knight, add 1 to the number you have picked.</p>
+       <p>Pick a number from the <a idref="random">Random Number Table</a>. For every level of <!--ERRTAG-RE-88807-->Kai Mastery<!--/ERRTAG-RE-88807--> you have <!--ERRTAG-RE-88888-->attained above<!--/ERRTAG-RE-88888--> that of Sun Knight, add 1 to the number you have picked.</p>
        <choice idref="sect65">If your total is now 7 or less, <link-text>turn to 65</link-text>.</choice>
        <choice idref="sect143">If it is 8 or more, <link-text>turn to 143</link-text>.</choice>
       </data>
@@ -1436,7 +927,7 @@ or
       <meta><title>20</title></meta>
 
       <data>
-       <p>The moment you project the correct number at the lockplate, the entire portal begins to shimmer and lose its solidity. It becomes transparent and then fades completely, as if evaporating into thin air. With a smile of satisfaction on your lips at having solved the riddle, you step through the now-open archway and into an adjoining hall.</p>
+       <p>The moment you project the correct number at the lockplate, the entire portal begins to shimmer and lose its solidity. It becomes transparent and then fades completely, as if evaporating into thin air. With a smile of satisfaction on your lips at having solved the riddle, you step through the <!--ERRTAG-RE-89634-->now open<!--/ERRTAG-RE-89634--> archway and into an adjoining hall.</p>
        <p>This vaulted, oblong-shaped hall is illuminated by flickerings of electrical fire which arc between two free-standing pillars at the far end of the chamber. Beyond the pillars you can make out the shadowy entrance to another chamber; it is the only other exit from this hall. You realize at once that to pass between the pillars could prove to be fatal: the power arcing between them is as great as any lightning storm raging in the skies above Xaagon. Yet there may be a way of avoiding contact with this raw power. You notice that the two free-standing pillars do not go all the way to the ceiling there is a gap, a little over two feet wide above them.</p>
        <choice idref="sect136">If you possess Kai-alchemy, and wish to use it, <link-text>turn to 136</link-text>.</choice>
        <choice idref="sect297">If you wish to attempt to climb one of the pillars and squeeze through the gap in order to reach the adjoining hall, <link-text>turn to 297</link-text>.</choice>
@@ -1460,15 +951,15 @@ or
       <meta><title>22</title></meta>
 
       <data>
-       <p>It is in the thirtieth hour of your air voyage that the <typ class="ital">Skyrider</typ>&apos;s eagle-eyed lookout catches his first glimpse of Vadera. Word spreads quickly and a hubbub of excitement grips the dwarven crew as the flying ship draws ever closer to the fortified walls and turrets of the Lencian capital.</p>
-       <p>Skilfully Bo&apos;sun Nolrim lands the <typ class="ital">Skyrider</typ> on the paved courtyard in front of the Vadera Citadel, which has been cleared of crowds in expectation of your arrival. Awaiting you is a party of stern-faced Vadera officials who, with a minimum of fuss, escort you and Banedon directly to the court of King Sarnac.</p>
+       <p>It is in the thirtieth hour of your air voyage that the <cite>Skyrider&apos;s</cite> eagle-eyed lookout catches his first glimpse of Vadera. Word spreads quickly and a hubbub of excitement grips the dwarven crew as the flying ship draws ever closer to the fortified walls and turrets of the Lencian capital.</p>
+       <p>Skilfully Bo&apos;sun Nolrim lands the <cite>Skyrider</cite> on the paved courtyard in front of the Vadera Citadel, which has been cleared of crowds in expectation of your arrival. Awaiting you is a party of stern-faced Vadera officials who, with a minimum of fuss, escort you and Banedon directly to the court of King Sarnac.</p>
        <p><quote>We are honoured to welcome you once again to our city, Grand Master,</quote> says the silver-haired King. <quote>My only regret is the reason for your visit. I&apos;d have hoped our meeting would have been in less ominous circumstances.</quote></p>
        <p>Formally you acknowledge the King&apos;s greeting, then you turn to face the elderly man who is standing beside the King&apos;s throne. You recognized him as soon as you entered the King&apos;s chamber&emdash;he is Lord Ardan, an Elder Magi from Dessi, one of Lord Rimoah&apos;s countrymen.</p>
-       <p><quote>Well met, my Lord,</quote> you say, and Ardan returns your greeting with a smile. Sadly, his smile soon fades when he says: <quote>No doubt your able companion, Guildmaster Banedon, has told you of the rise of evil in Ixia. Dire news indeed, Grand Master, for it threatens our very existence, most especially the existence of our Lencian friends. If the Deathlord&apos;s power is allowed to grow unchecked, Lencia will be the first freestate to suffer his wrath.</quote></p>
+       <p><quote>Well met, my Lord,</quote> you say, and Ardan returns your greeting with a smile. Sadly, his smile soon fades when he says: <quote>No doubt your able companion, Guildmaster Banedon, has told you of the rise of evil in Ixia. Dire news indeed, Grand Master, for it threatens our very existence, most especially the existence of our Lencian friends. If the Deathlord&apos;s power is allowed to grow unchecked, Lencia will be the first <!--ERRTAG-RE-93654-->Freeland state<!--/ERRTAG-RE-93654--> to suffer his wrath.</quote></p>
        <p><quote>I pledge to do all in my power to prevent such an outcome, my lord,</quote> you reply earnestly.</p>
        <p><quote>We have every faith in you, Lone Wolf,</quote> says King Sarnac, <quote>and we shall help you accomplish your mission in whatever way we can.</quote> He signals to one of his silver-armoured bodyguards and the soldier leaves the chamber. He returns shortly in the company of another man, clad in the court uniform of a Guard Captain.</p>
-       <choice idref="sect305">If you took part in the Battle of Cetza, or have visited the city of Darke in previous Lone Wolf adventures, <link-text>turn to 305</link-text>.</choice>
-       <choice idref="sect129">If you have not, <link-text>turn to 129</link-text>.</choice>
+       <choice idref="sect305">If you took part in the Battle of Cetza, or have visited the city of Darke <!--ERRTAG-RE-94349-->in any previous Lone Wolf adventures<!--/ERRTAG-RE-94349-->, <link-text>turn to 305</link-text>.</choice>
+       <choice idref="sect129"><!--ERRTAG-RE-94491-->If you did not<!--/ERRTAG-RE-94491-->, <link-text>turn to 129</link-text>.</choice>
       </data>
      </section>
 
@@ -1477,7 +968,7 @@ or
 
       <data>
        <p>You utter a prayer to the Goddess Ishir to watch over your soul as you get ready to engage the attacking skeletal warriors.</p>
-       <combat><enemy>Ixian undead</enemy><enemy-attribute class="combatskill">48</enemy-attribute><enemy-attribute class="endurance">55</enemy-attribute></combat>
+       <combat><enemy><!--ERRTAG-RE-94868-->Ixian Undead<!--/ERRTAG-RE-94868--></enemy><enemy-attribute class="combatskill">48</enemy-attribute><enemy-attribute class="endurance">55</enemy-attribute></combat>
        <p>You cannot evade this combat and must fight to the finish.</p>
        <choice idref="sect152">If you win the combat, <link-text>turn to 152</link-text>.</choice>
       </data>
@@ -1488,7 +979,7 @@ or
 
       <data>
        <p>You sense that the wisps of black smoke are a manifestation of several evil beings, each possessed of a strong psychic presence. Fearing attack, you quickly draw upon your Magnakai Discipline of Psi-screen to construct a defensive wall to protect yourself from the possibility of psychic assault. It is a wise precaution, but one that proves ineffective against these powerful entities.</p>
-       <p>Moments after your psychic wall is in place, the wisps streak across the chamber and encircle your body. They accelerate to a dizzying speed before launching a massive wave of psychic energy at your mind. This tidal wave batters your psi-screen and leaves you trembling with psychic shock: lose 8 <typ class="attribute">ENDURANCE</typ> points.</p>
+       <p>Moments after your psychic wall is in place, the wisps streak across the chamber and encircle your body. They accelerate to a dizzying speed before launching a massive wave of psychic energy at your mind. This tidal wave batters <!--ERRTAG-RE-96008-->your Psi-screen<!--/ERRTAG-RE-96008--> and leaves you trembling with psychic shock: lose 8 <typ class="attribute">ENDURANCE</typ> points.</p>
        <illustration class="float">
          <meta>
           <creator>Brian Williams</creator>
@@ -1497,10 +988,10 @@ or
          <instance class="html" src="ill2.gif" width="60" height="60"/>
          <instance class="pdf" src="ill2.pdf" width="60" height="60"/>
         </illustration>
-       <p>As your shocked senses slowly return to normal, you see that the wisps of smoke have now solidified into six bodily forms. They have taken the appearance of large, spindly-limbed, black insectoids, each with a ghoulish head in which composite eyes stare at you with evil intent. Chittering excitedly, the six creatures come stalking forwards, hungry for the kill.</p>
+       <p>As your shocked senses slowly return to normal, you see that the wisps of smoke have now solidified into six bodily forms. They have taken the appearance of large, spindly-limbed, black insectoids, each with a ghoulish <!--ERRTAG-RE-96797-->head from which<!--/ERRTAG-RE-96797--> composite eyes stare at you with evil intent. Chittering excitedly, the six creatures come stalking forwards, hungry for the kill.</p>
        <choice idref="sect98">If you wish to attempt to evade these hideous insectoids, <link-text>turn to 98</link-text>.</choice>
-       <choice idref="sect244">If you have a bow, and wish to use it, <link-text>turn to 244</link-text>.</choice>
-       <choice idref="sect115">If you choose not to evade them, or make use of a bow, <link-text>turn instead to 115</link-text>.</choice>
+       <choice idref="sect244">If you have a <!--ERRTAG-RA-97160-->Bow<!--/ERRTAG-RA-97160-->, and wish to use it, <link-text>turn to 244</link-text>.</choice>
+       <choice idref="sect115">If you choose not to evade them, or make use of a <!--ERRTAG-RA-97160-->Bow<!--/ERRTAG-RA-97160-->, <link-text>turn instead to 115</link-text>.</choice>
       </data>
      </section>
 
@@ -1508,7 +999,7 @@ or
       <meta><title>25</title></meta>
 
       <data>
-       <p>You shrug aside the warnings of your sixth sense, assuming incorrectly that they relate to the danger posed to your safety by the advancing skeletal warriors. Unfortunately, you make a costly mistake. As your hand closes around the silvery rod, it discharges a second blast of energy which hits you squarely in the stomach and lifts you bodily off the floor with the numbing force of its impact: lose 10 <typ class="attribute">ENDURANCE</typ> points.</p>
+       <p>You shrug aside the warnings of your <!--ERRTAG-RE-97640-->Sixth Sense<!--/ERRTAG-RE-97640-->, assuming incorrectly that they relate to the danger posed to your safety by the advancing skeletal warriors. Unfortunately, you make a costly mistake. As your hand closes around the silvery rod, it discharges a second blast of energy which hits you squarely in the stomach and lifts you bodily off the floor with the numbing force of its impact: lose 10 <typ class="attribute">ENDURANCE</typ> points.</p>
        <choice idref="sect306">If you survive this severe wounding, <link-text>turn to 306</link-text>.</choice>
       </data>
      </section>
@@ -1517,9 +1008,9 @@ or
       <meta><title>26</title></meta>
 
       <data>
-       <p>You crouch down amongst the foul-smelling debris which litters the floor of the hold, watching with bated breath as a dozen undead warriors enter by the stairs and begin a systematic search. Your Kai camouflage skills make you virtually invisible to the eye, but these undead Drakkarim no longer have eyes&emdash;they are using powerful psychic probes in an effort to locate you.</p>
+       <p>You crouch down amongst the foul-smelling debris which litters the floor of the hold, watching with bated breath as a dozen undead warriors enter by the stairs and begin a systematic search. Your Kai <!--ERRTAG-RE-98551-->Camouflage<!--/ERRTAG-RE-98551--> skills make you virtually invisible to the eye, but these undead Drakkarim no longer have eyes&emdash;they are using powerful psychic probes in an effort to locate you.</p>
        <choice idref="sect267">If you possess Kai-screen and have reached the rank of Kai Grand Guardian or higher, <link-text>turn to 267</link-text></choice>
-       <choice idref="sect2">If you do not possess this skill, or have yet to reach this level of Kai mastery, <link-text>turn to 2</link-text>.</choice>
+       <choice idref="sect2">If you do not possess this skill, or have yet to reach this level of <!--ERRTAG-RE-99039-->Kai Mastery<!--/ERRTAG-RE-99039-->, <link-text>turn to 2</link-text>.</choice>
       </data>
      </section>
 
@@ -1547,7 +1038,7 @@ or
       <meta><title>29</title></meta>
 
       <data>
-       <p>Using your advanced knowledge of Brotherhood magic, you recite the words of the spell&emdash;<spell>Slow Fall</spell>&emdash;and step into the gaping hole. Easily you glide down through the dust-choked air to land on the floor of the hall, fifty feet below.</p>
+       <p>Using your advanced knowledge of Brotherhood magic, you recite the words of the <!--ERRTAG-RE-100780-->spell <spell>Slow Fall</spell> and<!--/ERRTAG-RE-100780--> step into the gaping hole. Easily you glide down through the dust-choked air to land on the floor of the hall, fifty feet below.</p>
        <choice idref="sect62"><link-text>Turn to 62</link-text>.</choice>
       </data>
      </section>
@@ -1556,7 +1047,7 @@ or
       <meta><title>30</title></meta>
 
       <data>
-       <p>Using your Kai camouflage skills to minimize the risk of being seen, you climb down from the viewing platform and grab hold of a steel hawser which is securing the stern of the alien submarine to the jetty. Slowly you make your way along this great steel rope until you reach the jetty, where hurriedly you take cover among a stack of wooden crates and barrels. The jetty is teeming with undead soldiers who, under the direction of some spindly, black-clad creatures, are busily transferring materials to and from the open mouth of the submarine. Getting past them in order to reach the shore looks, at first sight, a near-impossible task. You are contemplating a swim to the shoreline, when suddenly you notice a means by which you could achieve your goal without getting wet.</p>
+       <p>Using your <!--ERRTAG-RE-101182-->Kai Camouflage<!--/ERRTAG-RE-101182--> skills to minimize the risk of being seen, you climb down from the viewing platform and grab hold of a steel hawser which is securing the stern of the alien submarine to the jetty. Slowly you make your way along this great steel rope until you reach the jetty, where hurriedly you take cover among a stack of wooden crates and barrels. The jetty is teeming with undead soldiers who, under the direction of some spindly, black-clad creatures, are busily transferring materials to and from the open mouth of the submarine. Getting past them in order to reach the shore looks, at first sight, a near-impossible task. You are contemplating a swim to the shoreline, when suddenly you notice a means by which you could achieve your goal without getting wet.</p>
        <choice idref="sect207"><link-text>Turn to 207</link-text>.</choice>
       </data>
      </section>
@@ -1620,7 +1111,7 @@ or
       <meta><title>36</title></meta>
 
       <data>
-       <p>Quickly you make your way across the hall, zigzaging to dodge pillars, chunks of stone, and the many bodies of Ixiataaga&apos;s former undead slave-warriors which are raining down from the shattered stairwell above. Assisted by your Kai Disciplines, eventually you reach the lowest level of the crystal spire where the entrance hall and grand arch open out into the city. You are racing through a torrent of crystal dust towards the grand arch, the main exit, when a massive shockwave shakes the entire edifice. You are within seconds of escaping when, to your horror, you see the walls buckle and the grand arch begin to collapse.</p>
+       <p>Quickly you make your way across the hall, <!--ERRTAG-RE-107138-->zigzagging<!--/ERRTAG-RE-107138--> to dodge pillars, chunks of stone, and the many bodies of Ixiataaga&apos;s former undead slave-warriors which are raining down from the shattered stairwell above. Assisted by your Kai Disciplines, eventually you reach the lowest level of the crystal spire where the entrance hall and grand arch open out into the city. You are racing through a torrent of crystal dust towards the grand arch, the main exit, when a massive shockwave shakes the entire edifice. You are within seconds of escaping when, to your horror, you see the walls buckle and the grand arch begin to collapse.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. If your current <typ class="attribute">ENDURANCE</typ> points score is 14 or less, deduct 1 from the number you have picked. If you <typ class="attribute">ENDURANCE</typ> score is 24 or higher, add 1.</p>
        <choice idref="sect316">If your total is now 3 or lower, <link-text>turn to 316</link-text>.</choice>
        <choice idref="sect193">If it is 4 or higher, <link-text>turn to 193</link-text>.</choice>
@@ -1642,7 +1133,7 @@ or
       <meta><title>38</title></meta>
 
       <data>
-       <p>You have taken only a few dozen steps in pursuit of the sickly demonlord and his golden-winged escorts, when your presence is betrayed by the aura of goodly light your body is radiating whilst on this plane of existence. A wave of alarm spreads through the escorts when they detect your aura, and many of them take to the sky. Directed by a vengeful Tagazin, they circle around you and come diving down to attack you with beak and claw.</p>
+       <p>You have taken only a few dozen steps in pursuit of the sickly <!--ERRTAG-RE-109561-->Demonlord<!--/ERRTAG-RE-109561--> and his golden-winged escorts, when your presence is betrayed by the aura of goodly light your body is radiating whilst on this plane of existence. A wave of alarm spreads through the escorts when they detect your aura, and many of them take to the sky. Directed by a vengeful Tagazin, they circle around you and come diving down to attack you with beak and claw.</p>
        <combat><enemy>Lavas</enemy><enemy-attribute class="combatskill">52</enemy-attribute><enemy-attribute class="endurance">52</enemy-attribute></combat>
        <choice idref="sect105">If you win this combat, <link-text>turn to 105</link-text>.</choice>
       </data>
@@ -1652,9 +1143,9 @@ or
       <meta><title>39</title></meta>
 
       <data>
-       <p>Drawing on your Kai mastery, you focus on the encroaching mist and detect strange movements in the ultraviolet spectrum of light. You cannot discern exactly what is moving out there, but you are certain of one thing: it is evil and it is drawing ever closer to Fort Azgad.</p>
+       <p>Drawing on your <!--ERRTAG-RE-110397-->Kai Mastery<!--/ERRTAG-RE-110397-->, you focus on the encroaching mist and detect strange movements in the ultraviolet spectrum of light. You cannot discern exactly what is moving out there, but you are certain of one thing: it is evil and it is drawing ever closer to Fort Azgad.</p>
        <p>You warn Captain Lanza and at first he does not believe you. He chuckles, saying that it is not uncommon for new arrivals to imagine they have seen all manner of spectres in the sea mists which swirl around the fort. But then a loud, discordant bell rings out from above, and Lanza&apos;s face is transfixed with shock.</p>
-       <p><quote>By the gods!</quote> he splutters, <quote>it&apos;s the alarm bell&emdash;we&apos;re under attack!</quote></p>
+       <p><quote>By the gods!</quote> he <!--ERRTAG-RE-111096-->splutters. <quote>It&apos;s<!--/ERRTAG-RE-111096--> the alarm bell&emdash;we&apos;re under attack!</quote></p>
        <choice idref="sect181"><link-text>Turn to 181</link-text>.</choice>
       </data>
      </section>
@@ -1663,7 +1154,7 @@ or
       <meta><title>40</title></meta>
 
       <data>
-       <p>Upon the instant you strike Tagazin the killing blow, his body shatters into a million frozen pieces which cascade to the ground. The spiked helm drops on top of his pile of smashed remains, crowning them, as if it were a marker fashioned for the demonlord&apos;s grave.</p>
+       <p><!--ERRTAG-RE-111431-->At the instant<!--/ERRTAG-RE-111431--> you strike Tagazin the killing blow, his body shatters into a million frozen pieces which cascade to the ground. The spiked helm drops on top of his pile of smashed remains, crowning them, as if it were a marker fashioned for the <!--ERRTAG-RE-111723-->Demonlord&apos;s<!--/ERRTAG-RE-111723--> grave.</p>
        <p>You look skywards to see the second wave of Lavas wheeling away in shocked disarray. They are visibly stunned by your unexpected victory and they flee to the safety of the clouds, fearful of tempting the fate that has befallen Tagazin.</p>
        <choice idref="sect164">If you possess the Sommerswerd, <link-text>turn to 164</link-text>.</choice>
        <choice idref="sect128">If you do not possess this Special Item, <link-text>turn to 128</link-text>.</choice>
@@ -1685,7 +1176,7 @@ or
       <data>
        <p>You leap over the gunwale, through a blinding wall of flame, and hit the sea feet first. The frigid water is shockingly cold, but your Magnakai Discipline of Nexus protects you from its numbing chill and you are able to surface quickly. Burning chunks of timber and sailcloth rain down all around as you strike out towards a flight of stone steps that rise out of the sea to the top of the quay.</p>
        <p>Unfortunately, your escape from the blazing ice-boat does not go unnoticed. Upon reaching the steps you are met by a dozen skeletal warriors who are determined to slay you before you can haul yourself out of the icy water.</p>
-       <combat><enemy>Ixian undead</enemy><enemy-attribute class="combatskill">41</enemy-attribute><enemy-attribute class="endurance">46</enemy-attribute></combat>
+       <combat><enemy><!--ERRTAG-RE-113672-->Ixian Undead<!--/ERRTAG-RE-113672--></enemy><enemy-attribute class="combatskill">41</enemy-attribute><enemy-attribute class="endurance">46</enemy-attribute></combat>
        <p>These beings are immune to all forms of psychic attack, except Kai-surge and Kai-blast. Also, because you are still in the icy water, you must reduce your <typ class="attribute">COMBAT SKILL</typ> by 5 for the duration of this combat.</p>
        <choice idref="sect109">If you win this fight, <link-text>turn to 109</link-text>.</choice>
       </data>
@@ -1738,7 +1229,7 @@ or
       <meta><title>46</title></meta>
 
       <data>
-       <p>The metal door of this cell is sheathed with ice and there is no visible means of opening it only a hexagonal-shaped keyhole. You crouch down, so that your face is level with the keyhole, then you form your lips into an O-shape in readiness to utter the power word Battlespell you once learned from Lord Rimoah. The instant the spell-thoughts focus in your mind, you project the power word&emdash;Gloar!&emdash;at the keyhole.</p>
+       <p>The metal door of this cell is sheathed with ice and there is no visible means of opening it only a hexagonal-shaped keyhole. You crouch down, so that your face is level with the keyhole, then you form your lips into an O-shape in readiness to utter the power word <!--ERRTAG-RE-118529-->battle-spell<!--/ERRTAG-RE-118529--> you once learned from Lord Rimoah. The instant the spell-thoughts focus in your mind, you project the <!--ERRTAG-RE-118714-->power word <spell>Gloar!</spell> at<!--/ERRTAG-RE-118714--> the keyhole.</p>
        <p>Use of this spell so soon after recovering consciousness costs you 2 <typ class="attribute">ENDURANCE</typ> points.</p>
        <choice idref="sect174">Adjust your <a idref="action">Action Chart</a> accordingly before <link-text>turning to 174</link-text>.</choice>
       </data>
@@ -1758,7 +1249,7 @@ or
       <meta><title>48</title></meta>
 
       <data>
-       <p>As you strike down the last of your skeletal foes, you hear Captain Lanza&apos;s stirring battle cry ring out above the noise of the fighting: <quote>For Lencia and the House of Sarnac!</quote> Despite the odds, he and his men have beaten back the enemy and are now within a stone&apos;s throw of the quay. You rush to the end of the street and join them at a small flagstoned square, close to the harbour wall.</p>
+       <p>As you strike down the last of your skeletal foes, you hear Captain Lanza&apos;s stirring <!--ERRTAG-RE-120076-->battle-cry<!--/ERRTAG-RE-120076--> ring out above the noise of the fighting: <quote>For Lencia and the House of Sarnac!</quote> Despite the odds, he and his men have beaten back the enemy and are now within a stone&apos;s throw of the quay. You rush to the end of the street and join them at a small flagstoned square, close to the harbour wall.</p>
        <p><quote>Captain&emdash;we must save the ice-boat!</quote> you shout, pointing to the ship which is being attacked by the skeleton horde. <quote>Indeed we must,</quote> he replies, dourly. He orders a handful of his men to form a protective wall around you and, the moment their shields lock together, you move with them towards the ice-boat.</p>
        <p>Twenty yards from the quayside, you break away from the wall and sprint towards the ship&apos;s gangplank. You are halfway along the plank when you find yourself confronted by a wedge of skeletal warriors, armed with crude axes and swords. You leap into their midst, striking them down with blurring speed and deadly accuracy. But as the last one falls, its corpse-like body almost severed at the waist, you hear a noise behind you which makes you spin around in fearful expectation.</p>
        <choice idref="sect78"><link-text>Turn to 78</link-text>.</choice>
@@ -1781,7 +1272,7 @@ or
       <data>
        <p>The instant you twist the key in the lock, a stunning jolt of raw electrical power runs up your arm and across your chest. The sudden pain makes you cry out in shocked surprise and desperately you attempt to let go of the key. But it is no use&emdash;the current holds you firmly in its agonizing grip: lose 4 <typ class="attribute">ENDURANCE</typ> points.</p>
        <p>Then you hear approaching footsteps and frantically you redouble your efforts to free your pain-numbed fingers from the electrified key. A troop of a dozen undead warriors appear on the landing and, upon seeing you, they come rushing forwards with swords drawn.</p>
-       <combat><enemy>Ixian undead</enemy><enemy-attribute class="combatskill">47</enemy-attribute><enemy-attribute class="endurance">50</enemy-attribute></combat>
+       <combat><enemy><!--ERRTAG-RE-122808-->Ixian Undead<!--/ERRTAG-RE-122808--></enemy><enemy-attribute class="combatskill">47</enemy-attribute><enemy-attribute class="endurance">50</enemy-attribute></combat>
        <p>Due to your painful predicament, you must reduce your <typ class="attribute">COMBAT SKILL</typ> by 8 points for the duration of this combat.</p>
        <choice idref="sect103">If you win the fight, <link-text>turn to 103</link-text>.</choice>
       </data>
@@ -1805,7 +1296,7 @@ or
       <data>
        <p>The moment you step into the light, a wave of acute pain washes through your body as the curtain of shimmering radiance swallows you up. You writhe in agony as gravity releases its hold on your body, and you feel yourself begin to rise: lose 10 <typ class="attribute">ENDURANCE</typ> points.</p>
        <p>You are on the threshold of unconsciousness when suddenly the light fades and you find yourself kneeling on a floor of black crystal, staring at the reflection of your pain-wracked face in its highly-polished surface. Wearily you raise your aching head and see, to your horror, a trio of undead creatures scurrying towards you from an open archway. They have barbed tridents clasped in their corpse-green hands, held raised in readiness to pin you to the floor.</p>
-       <choice idref="sect287">If you possess a bow, and wish to use it, <link-text>turn to 287</link-text>.</choice>
+       <choice idref="sect287">If you possess a <!--ERRTAG-RE-125276-->Bow<!--/ERRTAG-RE-125276-->, and wish to use it, <link-text>turn to 287</link-text>.</choice>
        <choice idref="sect96">If you possess Kai-surge, and wish to use it, <link-text>turn to 96</link-text>.</choice>
        <choice idref="sect64">If you cannot, or if you choose not to use either of the above, then <link-text>turn to 64</link-text>.</choice>
       </data>
@@ -1815,7 +1306,7 @@ or
       <meta><title>53</title></meta>
 
       <data>
-       <p>You cast the Brotherhood spell&emdash;<spell>Strength</spell>&emdash;upon yourself and, within seconds, your body surges with new-found energy. You increase your pace until you are running at three times your previous speed. Within a matter of seconds you close upon Tagazin, your weapon drawn in preparation to strike at him as you pass by, but the demonlord sees you gaining on him and he stops to block your path. He is weaker than before, but he has lost none of his devilish cunning.</p>
+       <p>You cast the <!--ERRTAG-RE-125862-->Brotherhood Spell <spell>Strength</spell> upon<!--/ERRTAG-RE-125862--> yourself and, within seconds, your body surges with <!--ERRTAG-RE-125957-->newfound<!--/ERRTAG-RE-125957--> energy. You increase your pace until you are running at three times your previous speed. Within a matter of seconds you close upon Tagazin, your weapon drawn in preparation to strike at him as you pass by, but the <!--ERRTAG-RE-126227-->Demonlord<!--/ERRTAG-RE-126227--> sees you gaining on him and he stops to block your path. He is weaker than before, but he has lost none of his devilish cunning.</p>
        <p>As you come to within striking distance, suddenly he leaps at your chest and brings you crashing to the loamy ground.</p>
        <combat><enemy>Demonlord Tagazin (injured)</enemy><enemy-attribute class="combatskill">45</enemy-attribute><enemy-attribute class="endurance">45</enemy-attribute></combat>
        <p>Conduct this combat for two rounds only.</p>
@@ -1828,7 +1319,7 @@ or
       <meta><title>54</title></meta>
 
       <data>
-       <p>As you reach out your hand towards the silvery rod, you suddenly hesitate your Kai sixth sense is warning you of imminent danger.</p>
+       <p>As you reach out your hand towards the silvery rod, you suddenly hesitate your Kai <!--ERRTAG-RE-127225-->Sixth Sense<!--/ERRTAG-RE-127225--> is warning you of imminent danger.</p>
        <choice idref="sect262">If you possess the Grand Master Discipline of Telegnosis, <link-text>turn to 262</link-text>.</choice>
        <choice idref="sect25">If you do not possess this Discipline, <link-text>turn to 25</link-text>.</choice>
       </data>
@@ -1848,7 +1339,7 @@ or
 
       <data>
        <p>As you hurry away from the cave mouth, you look back over your shoulder to see the Ixian Mhagani illuminated momentarily by a flash of lightning. It fills the entrance to the cave, and it is howling with glee at having successfully defended its evil-smelling lair.</p>
-       <p>Denied shelter in the cave, you return to the bottom of the pass and seek cover among the circle of rocks which lie embedded in the ice on the southern face. When you are within a few dozen yards of the circle, you hear a deafening Crack! which sets your pulse racing. With that split-second warning, a huge expanse of rock and ice breaks away from the slopes above and swiftly transforms itself into a thundering avalanche. Wide-eyed with horror, you watch as a million tons of ice, snow, and shale comes rumbling down the mountainside towards you.</p>
+       <p>Denied shelter in the cave, you return to the bottom of the pass and seek cover among the circle of rocks which lie embedded in the ice on the southern face. When you are within a few dozen yards of the circle, you hear a deafening <!--ERRTAG-RE-128759--><onomatopoeia>crack!</onomatopoeia><!--/ERRTAG-RE-128759--> which sets your pulse racing. With that split-second warning, a huge expanse of rock and ice breaks away from the slopes above and swiftly transforms itself into a thundering avalanche. Wide-eyed with horror, you watch as a million tons of ice, snow, and shale comes rumbling down the mountainside towards you.</p>
        <p>Galvanized into action, you turn and run from this deadly white wall of destruction. It is almost upon you when you see a low shelf of rock near the base of the pass, and desperately you dive for cover beneath it.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. If you possess Grand Huntmastery, add 2 to the number you have picked. If you possess Grand Nexus, you may add another 2.</p>
        <choice idref="sect99">If your total score is now 5 or lower, <link-text>turn to 99</link-text>.</choice>
@@ -1862,7 +1353,7 @@ or
 
       <data>
        <p>Banedon tosses the box back on to the cluttered shelf and continues with his briefing. Having satisfied himself that you have adequate protection, he turns his attention to your weapons.</p>
-       <p><quote>It concerns me greatly that so little is known of Xaagon the Deathlord&apos;s city. There is no way of knowing what unholy breed of creature awaits you there. It seems that you can be confident of only one thing, Lone Wolf: whoever or whatever inhabits that dreadful place will surely be hostile to your presence. If you are to defeat the Deathlord of Ixia and his minions you will need a weapon of exceptional power&emdash;a weapon capable of destroying that which is already dead.</quote></p>
+       <p><quote>It concerns me greatly that so little is known of Xaagon the Deathlord&apos;s city. There is no way of knowing what unholy breed of creature awaits you there. It seems that you can be confident of only one thing, Lone Wolf: whoever or whatever inhabits that dreadful place will surely be hostile to your presence. If you are to defeat the Deathlord of Ixia and his <!--ERRTAG-RE-130610-->minions, you<!--/ERRTAG-RE-130610--> will need a weapon of exceptional power&emdash;a weapon capable of destroying that which is already dead.</quote></p>
        <choice idref="sect339">If you possess the Sommerswerd, <link-text>turn to 339</link-text>.</choice>
        <choice idref="sect220">If you do not possess this Special Item, <link-text>turn to 220</link-text>.</choice>
       </data>
@@ -1886,8 +1377,8 @@ or
       <data>
        <p>With a jolt that leaves you gasping for breath, you hit the gluey surface of a stinking subterranean bog and sink in up to your neck. In the eerie half-light you can see the chaos horde above you, clustered around the edge of the square opening through which you fell. They are like excited spectators at a pit fight waiting for combat to begin.</p>
        <p>Suddenly you sense movement in the slime something is brushing past your left thigh. You struggle to move but, in doing so, you cause your body to sink deeper into the mire.</p>
+       <choice idref="sect15">If you possess Telegnosis, and have reached the rank of <!--ERRTAG-RE-133768-->Sun Lord or higher<!--/ERRTAG-RE-133768-->, <link-text>turn to 15</link-text>.</choice>
        <choice idref="sect176">If you possess Kai-alchemy, and wish to use it, <link-text>turn to 176</link-text>.</choice>
-       <choice idref="sect15">If you possess Telegnosis, and have reached the rank of Sun Lord, or higher, <link-text>turn to 15</link-text>.</choice>
        <choice idref="sect337">If you possess Animal Mastery, and wish to use it, <link-text>turn to 337</link-text>.</choice>
        <choice idref="sect27">If you cannot, or choose not to use any of the above Disciplines, <link-text>turn instead to 27</link-text>.</choice>
       </data>
@@ -1909,9 +1400,9 @@ or
       <meta><title>61</title></meta>
 
       <data>
-       <p>Using the Brotherhood spell&emdash;<spell>Sense Evil</spell>&emdash;you focus on the encroaching mist and detect a strange presence. You cannot discern exactly what is, moving out there, but you are certain of one thing: it is evil and it is drawing ever closer to Fort Azgad.</p>
+       <p>Using the <!--ERRTAG-RE-135239-->Brotherhood Spell <spell>Sense Evil</spell> you<!--/ERRTAG-RE-135239--> focus on the encroaching mist and detect a strange presence. You cannot discern exactly what is, moving out there, but you are certain of one thing: it is evil and it is drawing ever closer to Fort Azgad.</p>
        <p>You warn Captain Lanza and at first he does not believe you. He chuckles, saying that it is not uncommon for new arrivals to imagine they have seen all manner of spectres in the sea mists which swirl around the fort. But then a loud, discordant bell rings out from above, and Lanza&apos;s face is transfixed with shock.</p>
-       <p><quote>By the gods!</quote> he splutters, <quote>it&apos;s the alarm bell&emdash;we&apos;re under attack!</quote></p>
+       <p><quote>By the <!--ERRTAG-RE-135979-->Gods<!--/ERRTAG-RE-135979-->!</quote> <!--ERRTAG-RE-136066-->he splutters. <quote>It&apos;s<!--/ERRTAG-RE-136066--> the alarm bell&emdash;we&apos;re under attack!</quote></p>
        <choice idref="sect181"><link-text>Turn to 181</link-text>.</choice>
       </data>
      </section>
@@ -1920,7 +1411,7 @@ or
       <meta><title>62</title></meta>
 
       <data>
-       <p>You hurry across the chamber, zigzagging to dodge pillars, chunks of stone, and the many bodies of Ixiataaga&apos;s former undead slave-warriors which are raining down from the upper levels of the crystal spire. Aided by your Kai mastery, eventually you reach the lowest level of the spire where the entrance hall and grand arch open out into the city. You are racing through a torrent of crystal dust towards the grand arch, the main exit, when a massive shockwave runs through the entire building. You are within seconds of escaping when, to your horror, you see the walls buckle and the grand arch begin to collapse.</p>
+       <p>You hurry across the chamber, zigzagging to dodge pillars, chunks of stone, and the many bodies of Ixiataaga&apos;s former undead slave-warriors which are raining down from the upper levels of the crystal spire. Aided by your <!--ERRTAG-RE-136622-->Kai Mastery<!--/ERRTAG-RE-136622-->, eventually you reach the lowest level of the spire where the entrance hall and grand arch open out into the city. You are racing through a torrent of crystal dust towards the grand arch, the main exit, when a massive shockwave runs through the entire building. You are within seconds of escaping when, to your horror, you see the walls buckle and the grand arch begin to collapse.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. If your current <typ class="attribute">ENDURANCE</typ> points score is 10 or less, deduct 1 from the number you have picked. If your <typ class="attribute">ENDURANCE</typ> score is 20 or higher, add 1.</p>
        <choice idref="sect316">If your total is now 3 or lower, <link-text>turn to 316</link-text>.</choice>
        <choice idref="sect193">If it is 4 or higher, <link-text>turn to 193</link-text>.</choice>
@@ -1932,7 +1423,7 @@ or
 
       <data>
        <p>You leap over the broken bodies of the Drakkarim guards and rush to the door. To your relief you discover it to be unlocked, and when you push upon the surface of this great grey slab of metal, it creaks open to reveal your weapons and equipment stacked haphazardly upon a stone table in the middle of a small chamber.</p>
-       <p>Carefully you check your belongings and discover that they are mostly intact. However, all of your Gold Crowns, plus two items from your Backpack are missing. Erase all of the Gold Crowns from your <a idref="action">Action Chart</a>, and cross off the first two items recorded on your list of Backpack items.</p>
+       <p>Carefully you check your belongings and discover that they are mostly intact. However, all of your Gold Crowns, plus two items from your Backpack are missing. Erase all of the Gold Crowns from your <a idref="action">Action Chart</a>, and cross off the first two items recorded on your list of <!--ERRTAG-RE-138321-->Backpack Items<!--/ERRTAG-RE-138321-->.</p>
        <choice idref="sect204">If you wish to stay and search this chamber further, <link-text>turn to 204</link-text>.</choice>
        <choice idref="sect34">If you choose to leave the chamber, <link-text>turn to 34</link-text>.</choice>
       </data>
@@ -1963,7 +1454,7 @@ or
       <data>
        <p>You throw out your arms in a desperate attempt to arrest your fall, but it does you no good. You hit the sea face-first and slam your head and left shoulder against a ridge of solid ice that lies submerged just a few inches below the slushy surface: lose 6 <typ class="attribute">ENDURANCE</typ> points.</p>
        <p>The frigid water is shockingly cold but you are oblivious to its numbing chill. Your Magnakai skill of Nexus, and the concussion which you have sustained due to the fall, account for that. Stunned and helpless, it is only the speedy action of the crew which saves you from being crushed between the hull of the ship and the harsh, unyielding ice. With a noose of oiled rope, a couple of crewmen swiftly retrieve you from the sea and haul you back on to the deck. Dazed but undaunted, you free yourself from the rope and scramble back to the prow.</p>
-       <p><quote>Hard a-port!</quote> you yell, waving frantically to the helmsman. He responds immediately, and within a few minutes the ship is free of the ice-bank and safe in deep water.</p>
+       <p><quote><!--ERRTAG-RE-141180-->Hard aport!<!--/ERRTAG-RE-141180--></quote> you yell, waving frantically to the helmsman. He responds immediately, and within a few minutes the ship is free of the ice-bank and safe in deep water.</p>
        <p>Some of the crew, clearly terrified by the collision and the subsequent sight of you falling overboard, are cowering along the ship&apos;s rail like frightened puppies. They stare up at the encroaching walls of ice, their eyes full of fear as they pray feverishly to the Goddess Ishir to save their souls. Then, almost without any warning, the snowy wind abates and the ship emerges from the iceberg fjord into the open waters of the Tozaz Sea. As one, the crew give a hearty cheer, relieved that their ordeal has at last come to an end. One man pulls the cork from a bottle of black rum which he has been keeping for a special occasion. He takes a mighty swig, then hands the frosted bottle to you. Just as you are about to take a swallow, unexpectedly you hear the helmsman&apos;s voice echoing along the deck: <quote>Ship ahoy!</quote></p>
        <p>Fear returns to tie a knot in your stomach as you turn and focus your eagle eyes upon the distant vessel.</p>
        <choice idref="sect195"><link-text>Turn to 195</link-text>.</choice>
@@ -1983,7 +1474,7 @@ or
          <instance class="html" src="ill4.gif" width="60" height="60"/>
          <instance class="pdf" src="ill4.pdf" width="60" height="60"/>
         </illustration>
-       <combat><enemy>Chaos horde</enemy><enemy-attribute class="combatskill">50</enemy-attribute><enemy-attribute class="endurance">48</enemy-attribute></combat>
+       <combat><enemy><!--ERRTAG-RE-143354-->Chaos Horde<!--/ERRTAG-RE-143354--></enemy><enemy-attribute class="combatskill">50</enemy-attribute><enemy-attribute class="endurance">48</enemy-attribute></combat>
        <p>Unless you have attained the Kai rank of Sun Lord, you must reduce your <typ class="attribute">COMBAT SKILL</typ> by 4 for the duration of this combat, due to your disadvantageous position.</p>
        <choice idref="sect82">If you win the combat, <link-text>turn to 82</link-text>.</choice>
       </data>
@@ -1995,7 +1486,7 @@ or
       <data>
        <p>As you strike a killing blow deep into the Gybia&apos;s frightful maw, it gives vent to a deafening cry. For a few moments it thrashes wildly, then, amidst a cloud of its vile green blood, it sinks slowly to the bottom of the lake.</p>
        <p>Aching mentally and physically from the fatigue of your underwater combat, you swim towards the shallows and stagger out of the icy water. Some boulders, which lie embedded along the shore, offer you a hiding place while you recover your strength. As your vitality returns, you find to your dismay that during your fight with the Gybia you lost all but three items from your Backpack.</p>
-       <p>Erase all of your Backpack items with the exception of those which you have recorded in spaces 4, 5, and 6 on your Backpack Items list.</p>
+       <p>Erase <!--ERRTAG-RE-144645-->all of your Backpack Items<!--/ERRTAG-RE-144645--> with the exception of those which you have recorded in spaces 4, 5, and 6 on your Backpack Items list.</p>
        <choice idref="sect304">To continue, <link-text>turn to 304</link-text>.</choice>
       </data>
      </section>
@@ -2043,7 +1534,7 @@ or
       <meta><title>72</title></meta>
 
       <data>
-       <p>You dive aside from the onrushing demonlord but your reactions are too slow to avoid being hit. He catches you with the tip of his spiked helm and you feel an agonizing pain shoot through your body. Then an explosion of white-hot fire obliterates your senses and, in a terrifying instant, the light that is your life is snuffed out.</p>
+       <p>You dive aside from the onrushing <!--ERRTAG-RE-147920-->Demonlord<!--/ERRTAG-RE-147920--> but your reactions are too slow to avoid being hit. He catches you with the tip of his spiked helm and you feel an agonizing pain shoot through your body. Then an explosion of white-hot fire obliterates your senses and, in a terrifying instant, the light that is your life is snuffed out.</p>
        <p>Tragically, you have fallen victim to a helm of power, forged and fashioned by the Dark God Naar himself. Sadly your life and your quest end here on the Plane of Darkness.</p>
       </data>
      </section>
@@ -2065,7 +1556,7 @@ or
       <data>
        <p>You unsheathe your weapon and carefully work its tip under the lip of the lockplate in an attempt to prise it open. It is a difficult and delicate procedure, made all the more unnerving by the sound of marching footsteps in the dark distance behind you: lose 2 <typ class="attribute">ENDURANCE</typ> points.</p>
        <p>After several fretful minutes you succeed in lifting off the covering plate, but doing so does not release the lock: the door is still firmly shut. In order to open it you must manually disengage the locking mechanism.</p>
-       <combat><enemy>Bulkhead door</enemy><enemy-attribute class="combatskill">40</enemy-attribute><enemy-attribute class="endurance">50</enemy-attribute></combat>
+       <combat><enemy><!--ERRTAG-RE-150483-->Bulkhead Door<!--/ERRTAG-RE-150483--></enemy><enemy-attribute class="combatskill">40</enemy-attribute><enemy-attribute class="endurance">50</enemy-attribute></combat>
        <p>Conduct a combat in the usual manner. Any <typ class="attribute">ENDURANCE</typ> points lost by yourself result from fatigue at having to pick the lock with your bare hands.</p>
        <choice idref="sect327">When you have reduced the door&apos;s <typ class="attribute">ENDURANCE</typ> total to zero, <link-text>turn to 327</link-text>.</choice>
       </data>
@@ -2075,8 +1566,8 @@ or
       <meta><title>75</title></meta>
 
       <data>
-       <p>You raise your weapon and leap forward to strike a pre-emptive blow at the advancing demonlord. The force of your strike would have decapitated any normal creature made of flesh and blood, but Tagazin is no such creature. A splash of bluish-white sparks explode at the point of impact and, to your horror, your weapon disintegrates to dust in your hand (delete this weapon from your Weapons List).</p>
-       <p>Snickering evilly, the demonlord springs forward to rake you with his razor-sharp claws.</p>
+       <p>You raise your weapon and leap forward to strike a pre-emptive blow at the advancing <!--ERRTAG-RA-151246-->Demonlord<!--/ERRTAG-RA-151246-->. The force of your strike would have decapitated any normal creature made of flesh and blood, but Tagazin is no such creature. A splash of bluish-white sparks explode at the point of impact and, to your horror, your weapon disintegrates to dust in your hand (<!--ERRTAG-RE-151571-->delete this Weapon<!--/ERRTAG-RE-151571--> from your Weapons List).</p>
+       <p>Snickering evilly, the <!--ERRTAG-RA-151246-->Demonlord<!--/ERRTAG-RA-151246--> springs forward to rake you with his razor-sharp claws.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. Now, unless you possess the Discipline of Deliverance, double the number you have chosen (in this instance, 0 = 10). The resultant total equals the number of <typ class="attribute">ENDURANCE</typ> points lost by you in this deadly attack.</p>
        <choice idref="sect183">If you survive Tagazin&apos;s initial attack, make the appropriate changes to your <typ class="attribute">ENDURANCE</typ> points score and <link-text>turn to 183</link-text>.</choice>
       </data>
@@ -2087,7 +1578,7 @@ or
 
       <data>
        <p>Hurriedly you extricate yourself from the fighting and take cover in the doorway of a nearby hut. The heavy wooden door is hanging off its hinges, and you can tell from the number of sacks, barrels and boxes that are stacked inside that this hut is a food store. Through a window on the far side of the hut, you see the Lencian ice-boat. A score of undead have clambered aboard the vessel and it is clear by their actions that they intend to destroy and sink it.</p>
-       <p>Determined to put a stop to their plan you race into the hut, squeeze yourself through its solitary window, and then run headlong towards the stricken ship. You are halfway along the gangplank when you find yourself confronted by a wedge of skeletal warriors, each armed with a crude axe or sword. You leap into their midst, striking them down with blurring speed and deadly accuracy. But, as the last one falls, its corpse-like body almost severed at the waist, you hear a noise behind you which makes you spin around in fearful expectation.</p>
+       <p>Determined to put a stop to their <!--ERRTAG-RE-152987-->plan, you<!--/ERRTAG-RE-152987--> race into the hut, squeeze yourself through its solitary window, and then run headlong towards the stricken ship. You are halfway along the gangplank when you find yourself confronted by a wedge of skeletal warriors, each armed with a crude axe or sword. You leap into their midst, striking them down with blurring speed and deadly accuracy. But, as the last one falls, its corpse-like body almost severed at the waist, you hear a noise behind you which makes you spin around in fearful expectation.</p>
        <choice idref="sect78"><link-text>Turn to 78</link-text>.</choice>
       </data>
      </section>
@@ -2126,7 +1617,7 @@ or
       <meta><title>79</title></meta>
 
       <data>
-       <p>As you land your final blow and despatch the last of these mouldering foes, you make to leave by the stairs. But you are halted in your tracks when your sixth sense warns that more undead are about to descend into the hold at any moment. Cursing your luck, you turn and run towards the stern section where you hide behind the ship&apos;s rudder. More undead enter the hold, yet they ignore the broken bodies of those you have just fought and make only a cursory search. As you watch them climbing the stairs you breathe a silent sigh of relief.</p>
+       <p>As you land your final blow and <!--ERRTAG-RE-156436-->dispatch<!--/ERRTAG-RE-156436--> the last of these mouldering foes, you make to leave by the stairs. But you are halted in your tracks when your <!--ERRTAG-RE-156560-->Sixth Sense<!--/ERRTAG-RE-156560--> warns that more undead are about to descend into the hold at any moment. Cursing your luck, you turn and run towards the stern section where you hide behind the ship&apos;s rudder. More undead enter the hold, yet they ignore the broken bodies of those you have just fought and make only a cursory search. As you watch them climbing the stairs you breathe a silent sigh of relief.</p>
        <p>Soon the ship becomes deathly quiet and your mind is filled with concern for the Lencian crewmen&emdash;your Kai senses detect there are no living beings close by.</p>
        <choice idref="sect186">If you wish to investigate what is happening up on deck, <link-text>turn to 186</link-text>.</choice>
        <choice idref="sect314">If you choose to stay hidden here in the hold, <link-text>turn to 314</link-text>.</choice>
@@ -2137,7 +1628,7 @@ or
       <meta><title>80</title></meta>
 
       <data>
-       <p>Squatting upon a plinth of stone arising from out of the floor is a huge, sabre-toothed, jackal-like creature with creamy-coloured skin. Ice sheens on its muscular body and wisps of black smoke curl from its snuffling snout.</p>
+       <p>Squatting upon a plinth of stone arising from out of the floor is a huge, sabre-toothed, jackal-like creature with <!--ERRTAG-RE-157739-->cream-coloured<!--/ERRTAG-RE-157739--> skin. Ice sheens on its muscular body and wisps of black smoke curl from its snuffling snout.</p>
        <p><quote>Prepare for death, lowly mortal,</quote> growls this creature, as it steps from the risen plinth. <quote>I, Tagazin, am the deliverer of your destruction!</quote></p>
        <p>The unexpected sound of its voice sends a shiver of dread coursing down your spine. Your Kai instincts tell you that this supernatural creature is slave to Ixiataaga&emdash;he is the Deathlord&apos;s loyal companion. Venom drips from his bared fangs and murder glows darkly from the depths of his nightmarish eyes as slowly he stalks towards you.</p>
        <choice idref="sect254"><link-text>Turn to 254</link-text>.</choice>
@@ -2150,7 +1641,7 @@ or
       <data>
        <p>Drawing on your knowledge of Old Kingdom magic, you form your lips into an O-shape in readiness to utter a power word. The instant the spell-thoughts coalesce in your mind, you project the word at the door&apos;s triple combination lockplate.</p>
        <p>The concentrated force of the word at such short range twists and buckles the plate, but it does not release the lock: the door is still firmly shut. In order to open it you must prise away the twisted lockplate and manually disengage the locking mechanism.</p>
-       <combat><enemy>Bulkhead door</enemy><enemy-attribute class="combatskill">30</enemy-attribute><enemy-attribute class="endurance">40</enemy-attribute></combat>
+       <combat><enemy><!--ERRTAG-RE-159182-->Bulkhead Door<!--/ERRTAG-RE-159182--></enemy><enemy-attribute class="combatskill">30</enemy-attribute><enemy-attribute class="endurance">40</enemy-attribute></combat>
        <p>Conduct a combat in the usual manner. Any <typ class="attribute">ENDURANCE</typ> points lost by yourself result from fatigue at having to pull apart the damaged lock with your bare hands.</p>
        <choice idref="sect327">When you have reduced the door&apos;s <typ class="attribute">ENDURANCE</typ> total to zero, <link-text>turn to 327</link-text>.</choice>
       </data>
@@ -2201,7 +1692,7 @@ or
       <meta><title>86</title></meta>
 
       <data>
-       <p>Using your Kai mastery, you cause the glass dome to rise a few inches from the plinth. Quickly you snatch up the key, taking care not to touch either the plinth or the cover hovering above it, then you will the glass dome to descend slowly to its original position. (Record the Onyx Key on your <a idref="action">Action Chart</a> as a Special Item, which you carry in the pocket of your tunic.)</p>
+       <p>Using your <!--ERRTAG-RE-163827-->Kai Mastery<!--/ERRTAG-RE-163827-->, you cause the glass dome to rise a few inches from the plinth. Quickly you snatch up the key, taking care not to touch either the plinth or the cover hovering above it, then you will the glass dome to descend slowly to its original position. (Record the Onyx Key on your <a idref="action">Action Chart</a> as a Special Item, which you carry in the pocket of your tunic.)</p>
        <p>Having obtained the key, you now try it in the door and find that it fits perfectly. You give it a gentle twist, confident that it will unlock this door and allow you entry to whatever lies beyond.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
        <choice idref="sect50">If the number you have picked is 0 or 1, <link-text>turn to 50</link-text>.</choice>
@@ -2231,7 +1722,7 @@ or
       <meta><title>89</title></meta>
 
       <data>
-       <p>You unsheathe your weapon just in time to fend off the creature&apos;s initial attack. A flash of lightning briefly illuminates the cave and, for the first time, you see the face of this mysterious beast: the sight is truly chilling to behold. Its mouth is a mass of twisted fangs and from its huge, bear-like body there writhes a score of slimy tentacles, each tipped with a venomous claw. Its reptilian head is domed and at its centre there protrudes a twisted horn, longer than a broadsword.</p>
+       <p>You unsheathe your weapon just in time to fend off the creature&apos;s initial attack. A flash of lightning briefly illuminates the cave and, for the first time, you see the face of this mysterious beast: the sight is truly chilling to behold. Its mouth is a mass of twisted fangs and from its huge, bear-like body there writhes a score of slimy tentacles, each tipped with a venomous claw. Its reptilian head is domed and <!--ERRTAG-RE-166240-->from its centre<!--/ERRTAG-RE-166240--> there protrudes a twisted horn, longer than a broadsword.</p>
        <illustration class="float">
          <meta>
           <creator>Brian Williams</creator>
@@ -2242,7 +1733,7 @@ or
         </illustration>
        <p>The creature retreats a few paces and howls with anger as it prepares to make its second attack.</p>
        <combat><enemy>Ixian Mhagani</enemy><enemy-attribute class="combatskill">40</enemy-attribute><enemy-attribute class="endurance">60</enemy-attribute></combat>
-       <choice idref="sect56">You may evade the combat with this undead creature at any time after the third round, by <link-text>turning to 56</link-text>.</choice>
+       <choice idref="sect56">You may evade the combat with this undead creature at any time after the third <!--ERRTAG-RE-167148-->round by<!--/ERRTAG-RE-167148--> <link-text>turning to 56</link-text>.</choice>
        <choice idref="sect16">If you win the fight, <link-text>turn to 16</link-text>.</choice>
       </data>
      </section>
@@ -2252,7 +1743,7 @@ or
 
       <data>
        <p>You spin around to see a circular section of the floor disappearing. At the centre of this gaping hole there arises a plinth on which stands the awesome figure of Deathlord Ixiataaga. Jets of flame encircle his robed form, shooting up from the moat which now separates the plinth from the floor of the chamber.</p>
-       <p>The cloying stench of decay is overwhelming. As you reel backwards, you see the Deathlord raising a Deathstaff that hums with the terrible power held precariously within its haft. A ghastly laugh issues from his goat-skull face as he levels the evil weapon and directs its tip towards your heart.</p>
+       <p>The cloying stench of decay is overwhelming. As you reel backwards, you see the Deathlord <!--ERRTAG-RE-167909-->raising the Deathstaff<!--/ERRTAG-RE-167909--> that hums with the terrible power held precariously within its haft. A ghastly laugh issues from his goat-skull face as he levels the evil weapon and directs its tip towards your heart.</p>
        <choice idref="sect113">If you possess the Sommerswerd, <link-text>turn to 113</link-text>.</choice>
        <choice idref="sect296">If you possess the Power Spike, <link-text>turn to 296</link-text>.</choice>
        <choice idref="sect215">If you possess neither of these Special Items, <link-text>turn to 215</link-text>.</choice>
@@ -2368,7 +1859,7 @@ or
       <meta><title>101</title></meta>
 
       <data>
-       <p>You show Banedon your korlinium scabbard and tell him how you came by it. The seemingly plain belt and scabbard were given to you several years ago by Lord Rimoah, for a similar purpose&emdash;to conceal the power of the Sommerswerd from the Darklords of Helgedad.</p>
+       <p>You show Banedon your <!--ERRTAG-RE-178944-->Korlinium Scabbard<!--/ERRTAG-RE-178944--> and tell him how you came by it. The seemingly plain belt and scabbard were given to you several years ago by Lord Rimoah, for a similar purpose&emdash;to conceal the power of the Sommerswerd from the Darklords of Helgedad.</p>
        <p><quote>I trust it will serve you just as well in Ixia,</quote> says Banedon, nodding his approval.</p>
        <choice idref="sect22"><link-text>Turn to 22</link-text>.</choice>
       </data>
@@ -2391,7 +1882,7 @@ or
        <p>The moment you destroy the last undead warrior, the agonizing current which holds you captive suddenly disappears. You stagger away from the door, cradling your blistered hand which trails alarming wisps of blue smoke. Gritting your teeth against the pain, you draw on your Kai healing skills to repair the damage to your fingers and arm.</p>
        <p>When you have recovered sufficiently to go on, you return to the door to find that it is no longer closed. The lock has opened, although there is now no trace of the Onyx Key (erase this from your <a idref="action">Action Chart</a>).</p>
        <p>You push open the door carefully and enter a chamber composed entirely of polished black crystal, where you see myriad images of yourself trailing away into infinity within the mirror-smooth walls. At first you see only your own reflections, but when you cast your gaze around this eerie chamber you realize that you are not alone. Standing guard at an open archway are a trio of undead creatures, the like of which you have never encountered before. They are armed with barbed tridents which they hold loosely in their corpse-green hands. Suddenly they become aware of your presence and come scurrying forwards, their tridents raised in readiness to pin you to the wall.</p>
-       <choice idref="sect287">If you possess a bow, and wish to use it, <link-text>turn to 287</link-text>.</choice>
+       <choice idref="sect287">If you possess a <!--ERRTAG-RE-181803-->Bow<!--/ERRTAG-RE-181803-->, and wish to use it, <link-text>turn to 287</link-text>.</choice>
        <choice idref="sect64">If you do not, <link-text>turn to 64</link-text>.</choice>
       </data>
      </section>
@@ -2487,7 +1978,7 @@ or
       <meta><title>112</title></meta>
 
       <data>
-       <p>The metal door is sheathed with ice and there is no handle visible&emdash;only a hexagonal-shaped keyhole. You utter the words of the Brotherhood spell <spell>Lightning Hand</spell> and point your index finger at this keyhole. A tingling sensation runs along your arm, culminating in a burst of blue-white energy which arcs from your fingertip to the lock.</p>
+       <p>The metal door is sheathed with ice and there is no handle visible&emdash;only a hexagonal-shaped keyhole. You utter the words of the <!--ERRTAG-RE-188989-->Brotherhood Spell<!--/ERRTAG-RE-188989--> <spell>Lightning Hand</spell> and point your index finger at this keyhole. A tingling sensation runs along your arm, culminating in a burst of blue-white energy which arcs from your fingertip to the lock.</p>
        <p>Use of this spell so soon after recovering consciousness costs you 2 <typ class="attribute">ENDURANCE</typ> points.</p>
        <choice idref="sect174">Adjust your <a idref="action">Action Chart</a> accordingly before <link-text>turning to 174</link-text>.</choice>
       </data>
@@ -2584,7 +2075,7 @@ or
       <meta><title>121</title></meta>
 
       <data>
-       <p>You utter the words of the Brotherhood spell&emdash;Lightning Hand&emdash;and extend your right hand towards the approaching beast. You feel a surge of energy run down your arm and explode into life at the tip of your index finger. There is a flash and a gout of blue-white energy arcs towards the creature&apos;s chest, connecting with powerful effect.</p>
+       <p>You utter the words of the <!--ERRTAG-RE-197731-->Brotherhood Spell <spell>Lightning Hand</spell> and<!--/ERRTAG-RE-197731--> extend your right hand towards the approaching beast. You feel a surge of energy run down your arm and explode into life at the tip of your index finger. There is a flash and a gout of blue-white energy arcs towards the creature&apos;s chest, connecting with powerful effect.</p>
        <illustration class="float">
          <meta>
           <creator>Brian Williams</creator>
@@ -2724,7 +2215,7 @@ or
       <meta><title>133</title></meta>
 
       <data>
-       <p>During your underwater swim, your higher Kai rank and mastery enables you to use the Brotherhood spell&emdash;<spell>Breathe Water</spell>. This magical spell allows you to absorb oxygen from the icy sea water directly into your bloodstream through the pores of your skin, negating the need to surface repeatedly for air.</p>
+       <p>During your underwater swim, your higher Kai rank and mastery enables you to use the <!--ERRTAG-RE-209083-->Brotherhood Spell <spell>Breathe Water</spell><!--/ERRTAG-RE-209083-->. This magical spell allows you to absorb oxygen from the icy sea water directly into your bloodstream through the pores of your skin, negating the need to surface repeatedly for air.</p>
        <p>In just a few minutes you reach the distant shoreline and break through the surface alongside a shallow stone causeway. Atop this causeway is a track, a spur of which branches off towards the tunnel entrance. With only your head visible above the lake, you cling to the causeway stones and wait patiently for a nearby patrol to march past.</p>
        <choice idref="sect169"><link-text>Turn to 169</link-text>.</choice>
       </data>
@@ -2755,7 +2246,7 @@ or
       <meta><title>136</title></meta>
 
       <data>
-       <p>You stand at the base of the left-hand pillar and utter the words of the Brotherhood spell&emdash;Levitation. Immediately, you feel yourself rise from the floor and, using your hands to guide you and maintain a grip on the pillar, you inch your way effortlessly towards the narrow gap between it and the ceiling above.</p>
+       <p>You stand at the base of the left-hand pillar and utter the words of the <!--ERRTAG-RE-212449-->Brotherhood Spell <spell>Levitation</spell><!--/ERRTAG-RE-212449-->. Immediately, you feel yourself rise from the floor and, using your hands to guide you and maintain a grip on the pillar, you inch your way effortlessly towards the narrow gap between it and the ceiling above.</p>
        <p>The ascent is effortless but it is not entirely painless. The energy radiating from the electrical arcing blisters the exposed flesh on the right side of your face: lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
        <choice idref="sect273">If you have reached the Kai rank of Sun Thane, <link-text>turn to 273</link-text>.</choice>
        <choice idref="sect49">If you have yet to attain this level of Kai Mastery, <link-text>turn to 49</link-text>.</choice>
@@ -2799,9 +2290,9 @@ or
       <meta><title>140</title></meta>
 
       <data>
-       <p>With your briefing now concluded, King Sarnac ushers you all into his court chamber. There you bid him, Lord Ardan, and Guildmaster Banedon farewell, and they in turn wish you good luck and godspeed before Captain Prarg escorts you to the harbour. It is snowing heavily, and few of Vadera&apos;s inhabitants notice as the two of you are welcomed aboard the <typ class="ital">Maycastle</typ>, the square-rigged man-o&apos;-war which will carry you to Azgad Island.</p>
+       <p>With your briefing now concluded, King Sarnac ushers you all into his court chamber. There you bid him, Lord Ardan, and Guildmaster Banedon farewell, and they in turn wish you good luck and godspeed before Captain Prarg escorts you to the harbour. It is snowing heavily, and few of Vadera&apos;s inhabitants notice as the two of you are welcomed aboard the <cite>Maycastle</cite>, the square-rigged man-o&apos;-war which will carry you to Azgad Island.</p>
        <p>You leave Vadera within the hour and begin the long, cold voyage northwards. During the voyage, Captain Prarg tells you about the raids which have destroyed several small Drakkarim settlements along the Gulf of Konkor and the coast of the Shakoz Bight. On the twelfth day of your two-week sea journey, you catch a glimpse of one such settlement, near to the mouth of the River Lenag. All that remains is a wispy pall of smoke which hangs above the burnt-out hovels, darkening an already stormy sky.</p>
-       <p>For most of the voyage, a host of seabirds have accompanied the <typ class="ital">Maycastle</typ>, attracted by the scraps of food regularly thrown out by the ship&apos;s galley. But at dawn on the thirteenth day, as the ship enters the Gulf of Konkor, the usual flocks of shrieking gulls are nowhere to be seen. It is as if they have suddenly become aware of impending danger and have turned back, eager to stay out of harm&apos;s reach. Later in the day, a fierce squall arises from the east which whips the iron-grey waters of the gulf into a maelstrom. The crew fight desperately to control their ship as the storm rages all day and all night, not abating until dawn of the following day. As the wind gradually dies and the sea settles, the lookout is able to resume his post atop the mainmast.</p>
+       <p>For most of the voyage, a host of seabirds have accompanied the <cite>Maycastle</cite>, attracted by the scraps of food regularly thrown out by the ship&apos;s galley. But at dawn on the thirteenth day, as the ship enters the Gulf of Konkor, the usual flocks of shrieking gulls are nowhere to be seen. It is as if they have suddenly become aware of impending danger and have turned back, eager to stay out of harm&apos;s reach. Later in the day, a fierce squall arises from the east which whips the iron-grey waters of the gulf into a maelstrom. The crew fight desperately to control their ship as the storm rages all day and all night, not abating until dawn of the following day. As the wind gradually dies and the sea settles, the lookout is able to resume his post atop the mainmast.</p>
        <illustration class="float">
          <meta>
           <creator>Brian Williams</creator>
@@ -3226,7 +2717,7 @@ or
       <meta><title>176</title></meta>
 
       <data>
-       <p>You utter the words of the Brotherhood spell&emdash;Levitation&emdash;and immediately you feel yourself rising up out of the mire. You clear the scummy surface and continue to float up the shaft until you are face-to-face with the chaos-creatures who are crowded around the pit&apos;s edge. You draw your weapon and prepare to fight your way through them, but, as soon as you lash out at your first target, you falter and slip a few feet into the gaping shaft. You are finding it difficult to maintain your levitation spell and fight at the same time.</p>
+       <p>You utter the words of the <!--ERRTAG-RE-258103-->Brotherhood Spell <spell>Levitation</spell> and<!--/ERRTAG-RE-258103--> immediately you feel yourself rising up out of the mire. You clear the scummy surface and continue to float up the shaft until you are face-to-face with the chaos-creatures who are crowded around the pit&apos;s edge. You draw your weapon and prepare to fight your way through them, but, as soon as you lash out at your first target, you falter and slip a few feet into the gaping shaft. You are finding it difficult to maintain your levitation spell and fight at the same time.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. If your current <typ class="attribute">ENDURANCE</typ> points score is 15 or lower, deduct 2 from the number you have picked. If your <typ class="attribute">ENDURANCE</typ> points score is 36 or higher, add 1.</p>
        <choice idref="sect111">If your total is now 5 or less, <link-text>turn to 111</link-text>.</choice>
        <choice idref="sect154">If it is 6 or more, <link-text>turn to 154</link-text>.</choice>
@@ -3336,7 +2827,7 @@ or
       <meta><title>185</title></meta>
 
       <data>
-       <p>To your regret, the new wave of Lavas reach the demonlord before you and form a protective circle around his creamy-coloured body. Those that remain in the sky, beat the air with their mighty wings, causing a powerful down-draught which holds you at bay.</p>
+       <p>To your regret, the new wave of Lavas reach the demonlord before you and form a protective circle around his creamy-coloured body. Those that remain in the sky, beat the air with their mighty wings, causing a powerful <!--ERRTAG-RE-265861-->down-draft<!--/ERRTAG-RE-265861--> which holds you at bay.</p>
        <p>Shielding your eyes from the stinging dust-choked wind, you look up to see that one of the winged creatures is cradling a curious item in its horny hands, an item which radiates an intense aura of evil power. At first glance it resembles a large metal bowl with a sharp spear of crystal fixed to its underside, but when the Lavas descends towards Tagazin and inverts it, you suddenly realize its true purpose and design. It is a helm of power, affixed on top with a crystal spike. The Lavas places the helm upon the demonlord&apos;s head and the spike begins to glow menacingly.</p>
        <p>Now all of the Lavas ascend into the sky where they wait to view a confrontation which is about to commence. Suddenly Tagazin, revitalized by the power of the spiked helm, comes charging at you with his head lowered, snorting gruffly like a raging bull.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. If you possess Grand Huntmastery or Grand Pathsmanship, add 3 to the number you have picked.</p>
@@ -3710,7 +3201,7 @@ or
       <meta><title>217</title></meta>
 
       <data>
-       <p>You bring to mind the words of the Brotherhood spell&emdash;Counterspell&emdash;and focus on the lock as you quietly recite them under your breath. For a few moments the air crackles with static electricity, then you feel a calm descend: the sorcerous spell which once protected this door has suddenly evaporated.</p>
+       <p>You bring to mind the words of the <!--ERRTAG-RE-307042-->Brotherhood Spell <spell>Counterspell</spell> and<!--/ERRTAG-RE-307042--> focus on the lock as you quietly recite them under your breath. For a few moments the air crackles with static electricity, then you feel a calm descend: the sorcerous spell which once protected this door has suddenly evaporated.</p>
        <p>Confident that it is safe to proceed, you unsheathe your weapon and use its tip to prise open the three lockplates, revealing their internal mechanisms. With the lock exposed, you set about the now-simple task of opening the door.</p>
        <choice idref="sect10"><link-text>Turn to 10</link-text>.</choice>
       </data>
@@ -4160,7 +3651,7 @@ or
       <meta><title>258</title></meta>
 
       <data>
-       <p>Patiently you attempt to manipulate the lock mechanism using the power of your mind alone. Your patience is finally rewarded by a loud Click, and the ice-caked door creaks slowly open.</p>
+       <p>Patiently you attempt to manipulate the lock mechanism using the power of your mind alone. Your patience is finally rewarded by a loud <!--ERRTAG-RE-345610--><onomatopoeia>click</onomatopoeia><!--/ERRTAG-RE-345610-->, and the ice-caked door creaks slowly open.</p>
        <p>Beyond it you see a dark and empty corridor. Before leaving the cell you pause for a few moments to use your skill of Nexus once more, in an attempt to determine the location of your missing weapons and equipment. You sense they are distant but, guided by these feelings, you enter the corridor and go in search of them.</p>
        <p>The dingy corridor wends its way deeper into the bowels of this vast alien vessel. You explore a maze of empty holds, where the walls are braced with gleaming crystal girders, and pass through low-ceilinged chambers that, despite the biting chill, reek of death and decay. At length your search ends at a great grey door which is guarded by two undead Drakkarim warriors, armed with spears. The noises you heard earlier have now ceased, and so has the movement of the vessel; you sense that this craft is no longer at sea.</p>
        <p>From the cover of a curving crystal bulkhead, you spy upon the Drakkarim guards while you consider your next move.</p>
@@ -4880,8 +4371,8 @@ or
       <meta><title>321</title></meta>
 
       <data>
-       <p>As the <typ class="ital">Maycastle</typ> cuts through the icy waves towards the fort, a beacon flares into life, its guttering yellow flame marking the entrance to the outpost&apos;s slate-walled harbour. A Lencian flag is raised atop the watchtower and the crew give a cheer&emdash;for them it is a welcoming sight after two cold and difficult weeks at sea.</p>
-       <p>The <typ class="ital">Maycastle</typ> docks at the harbour wall, alongside the iron-bowed ice-boat which will take you to Ixia. The excited garrison have gathered to greet the crew; they have been looking forward to receiving fresh provisions and news from their homeland for several weeks. You disembark with Prarg and are met on the quay by a bearded sergeant clad in a fur-trimmed leather tunic. He escorts you to the watchtower, where you are welcomed in person by Captain Lanza, the garrison commander.</p>
+       <p>As the <cite>Maycastle</cite> cuts through the icy waves towards the fort, a beacon flares into life, its guttering yellow flame marking the entrance to the outpost&apos;s slate-walled harbour. A Lencian flag is raised atop the watchtower and the crew give a cheer&emdash;for them it is a welcoming sight after two cold and difficult weeks at sea.</p>
+       <p>The <cite>Maycastle</cite> docks at the harbour wall, alongside the iron-bowed ice-boat which will take you to Ixia. The excited garrison have gathered to greet the crew; they have been looking forward to receiving fresh provisions and news from their homeland for several weeks. You disembark with Prarg and are met on the quay by a bearded sergeant clad in a fur-trimmed leather tunic. He escorts you to the watchtower, where you are welcomed in person by Captain Lanza, the garrison commander.</p>
        <choice idref="sect117"><link-text>Turn to 117</link-text>.</choice>
       </data>
      </section>
@@ -5375,14 +4866,73 @@ or
       <meta><title>Errata</title></meta>
 
       <data>
-       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>elite</quote> with <quote>&eacute;lite</quote>, <quote>no Kai lord</quote> with <quote>no Kai Lord</quote>, <quote>strongholds fierce</quote> with <quote>strongholds, fierce</quote>, <quote>Right-Handed Magic</quote> with <quote>Right-handed magic</quote>, both occurrences of <quote>new-found</quote> with <quote>newfound</quote>, <quote>Dark God and</quote> with <quote>Dark God, and</quote>, <quote>vigilant for</quote> with <quote>vigilant, for</quote>, <quote>free-state</quote> with <quote>Freeland</quote>, <quote>body, and those</quote> with <quote>body, along with those</quote>, <quote>north-east</quote> with <quote>northeast</quote>, and <quote>quickly and</quote> with <quote>quickly, and</quote>.</p>
+       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>no Kai lord</quote> with <quote>no Kai Lord</quote>, <quote>strongholds fierce</quote> with <quote>strongholds, fierce</quote>, <quote>Right-Handed Magic</quote> with <quote>Right-handed magic</quote>, both occurrences of <quote>new-found</quote> with <quote>newfound</quote>, <quote>Dark God and</quote> with <quote>Dark God, and</quote>, <quote>vigilant for</quote> with <quote>vigilant, for</quote>, <quote>body, and those</quote> with <quote>body, along with those</quote>, <quote>north-east</quote> with <quote>northeast</quote>, and <quote>quickly and</quote> with <quote>quickly, and</quote>.<!--ERRTAG-RA-12477-ITEM--> Replaced all occurrences of <quote>shadow gate</quote> with <quote>Shadow Gate</quote>.<!--/ERRTAG-RA-12477-ITEM--><!--ERRTAG-RA-6514-ITEM--> Replaced all occurrences of <quote>freestate</quote> with <quote>Freeland</quote>.<!--/ERRTAG-RA-6514-ITEM--><!--ERRTAG-RE-5555-ITEM--> Replaced <quote>elite</quote> with <quote>&eacute;lite</quote>.<!--/ERRTAG-RE-5555-ITEM--></p>
        <p>(<a idref="gamerulz">The Game Rules</a>) Removed <quote>that you will find in the front of this book. For ease of use, and for further adventuring, it is recommended that you photocopy these pages</quote> and <quote>on the last page of this book</quote>. Changed <quote><typ class="attribute">COMBAT SKILL</typ></quote> to <quote><typ class="attribute">ENDURANCE</typ></quote> according to <cite>Lone Wolf Club Newsletter 24</cite>. Replaced <quote>Magi-Magic</quote> with <quote>Magi-magic</quote> and <quote>opposite and overleaf</quote> with <quote>below</quote>.</p>
-       <p>(<a idref="discplnz">Grand Master Disciplines</a>) Replaced <quote>smell and</quote> with <quote>smell, and</quote> and both occurrences of <quote>(ie,</quote> with <quote>(i.e.</quote>.</p>
-       <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>Magador you</quote> with <quote>Magador, you</quote>, <quote>eg Gold</quote> with <quote>e.g. Gold</quote>, <quote>map of the area</quote> with <quote>map of the the Maakengorge and surrounding territories</quote>, <quote>safe-keeping</quote> with <quote>safekeeping</quote>, all occurrences of <quote>arrow</quote> with <quote>Arrow</quote>, all occurrences of <quote>bow</quote> with <quote>Bow</quote>, and <quote>adds 3 points</quote> with <quote>adds 5 points</quote>. Removed <quote>(see the inside front cover of this book)</quote>. Added a section about Gold Crowns which reads <quote>The currency of Magador is the Gold Crown. These are always carried in the Belt Pouch. It will hold a maximum of fifty Crowns.</quote></p>
+       <p>(<a idref="discplnz">Grand Master Disciplines</a>) Replaced <quote>smell and</quote> with <quote>smell, and</quote> and both occurrences of <quote>(ie,</quote> with <quote>(i.e.</quote>.<!--ERRTAG-RE-27110-ITEM--> Replaced <quote>gods Kai and Ishir</quote> with <quote>Gods Kai and Ishir</quote>.<!--/ERRTAG-RE-27110-ITEM--><!--ERRTAG-RE-33045-ITEM--> Replaced <quote>Magi-Magic</quote> with <quote>Magi-magic</quote>.<!--/ERRTAG-RE-33045-ITEM--></p>
+       <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>Magador you</quote> with <quote>Magador, you</quote>, <quote>eg Gold</quote> with <quote>e.g. Gold</quote>, <quote>map of the area</quote> with <quote>map of the the Maakengorge and surrounding territories</quote>, all occurrences of <quote>arrow</quote> with <quote>Arrow</quote>, all occurrences of <quote>bow</quote> with <quote>Bow</quote>, and <quote>adds 3 points</quote> with <quote>adds 5 points</quote>. Added a section about Gold Crowns which reads <quote>The currency of Magador is the Gold Crown. These are always carried in the Belt Pouch. It will hold a maximum of fifty Crowns.</quote><!--ERRTAG-RE-35809-ITEM--> Replaced <quote>safe-keeping</quote> with <quote>safekeeping</quote>.<!--/ERRTAG-RE-35809-ITEM--><!--ERRTAG-DE-35140-ITEM--> Deleted <quote>(see the inside front cover of this book)</quote>.<!--/ERRTAG-DE-35140-ITEM--><!--ERRTAG-RE-40946-ITEM--> Replaced <quote>(eg Gold Dagger</quote> with <quote>(e.g. Gold Dagger</quote>.<!--/ERRTAG-RE-40946-ITEM--><!--ERRTAG-RE-36319-ITEM--> Replaced <quote>arrows</quote> with <quote>Arrows</quote>.<!--/ERRTAG-RE-36319-ITEM--><!--ERRTAG-RA-39864-ITEM--> Replaced all occurrences of <quote>quiver</quote> with <quote>Quiver</quote>.<!--/ERRTAG-RA-39864-ITEM--></p>
        <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed <quote>on the inside back cover of this book</quote>. Replaced <quote>on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>, <quote>Lone Wolf (<typ class="attribute">COMBAT SKILL</typ> 32)</quote> with <quote>Lone Wolf (<typ class="attribute">COMBAT SKILL</typ> 27)</quote>, and <quote>adds 3 points</quote> with <quote>adds 8 points</quote>.</p>
-       <p>(<a idref="imprvdsc">Improved Grand Master Disciplines</a>) Replaced both occurrences of <quote>Kai-Blast</quote> with <quote>Kai-blast</quote>. Replaced <quote>surface, eg:</quote> with <quote>surfaces, e.g.</quote>, <quote>ie.</quote> with <quote>i.e.</quote>, <quote>Kai Surge</quote> with <quote>Kai-surge</quote>, all occurrences of <quote>arrow</quote> with <quote>Arrow</quote>, both occurrences of <quote>arrow, or arrow-like</quote> with <quote>Arrow or Arrow-like</quote>, <quote>lava and</quote> with <quote>lava, and</quote>, and <quote>body-weight</quote> with <quote>body weight</quote>. Added <quote>(7 Disciplines)</quote> after <quote>Sun Lord</quote>. Removed the quotation marks around <quote>Improved Grand Master Disciplines</quote> and <quote>Lightning Hand</quote>.</p>
+       <p>(<a idref="imprvdsc">Improved Grand Master Disciplines</a>) Replaced both occurrences of <quote>Kai-Blast</quote> with <quote>Kai-blast</quote>. Replaced <quote>surface, eg:</quote> with <quote>surfaces, e.g.</quote>, <quote>Kai Surge</quote> with <quote>Kai-surge</quote>, all occurrences of <quote>arrow</quote> with <quote>Arrow</quote>, both occurrences of <quote>arrow, or arrow-like</quote> with <quote>Arrow or Arrow-like</quote>, <quote>lava and</quote> with <quote>lava, and</quote>, and <quote>body-weight</quote> with <quote>body weight</quote>. Added <quote>(7 Disciplines)</quote> after <quote>Sun Lord</quote>. Removed the quotation marks around <quote>Lightning Hand</quote>.<!--ERRTAG-RE-57185-ITEM--> Replaced <quote>Magi-Magic</quote> with <quote>Magi-magic</quote>.<!--/ERRTAG-RE-57185-ITEM--><!--ERRTAG-RE-59140-ITEM--> Replaced <quote>ie. lightning</quote> with <quote>i.e. lightning</quote>.<!--/ERRTAG-RE-59140-ITEM--><!--ERRTAG-RE-60783-ITEM--> Replaced <quote>&lsquot;Improved Grand Master Disciplines&rsquot;</quote> with <quote><cite>Improved Grand Master Disciplines</cite></quote>.<!--/ERRTAG-RE-60783-ITEM--><!--ERRTAG-RE-53768-ITEM--> Replaced <quote>Brotherhood spells</quote> with <quote>Brotherhood Spells</quote>.<!--/ERRTAG-RE-53768-ITEM--><!--ERRTAG-RE-58099-ITEM--> Replaced <quote>Brotherhood spell &lsquot;Lightning Hand&rsquot;</quote> with <quote>Brotherhood Spell <spell>Lightning Hand</spell></quote>.<!--/ERRTAG-RE-58099-ITEM--><!--ERRTAG-RE-60406-ITEM--> Replaced <quote>Brotherhood spells</quote> with <quote>Brotherhood Spells</quote>.<!--/ERRTAG-RE-60406-ITEM--></p>
        <p><cite>Lone Wolf Club Newsletter 24</cite> states: <quote>In Lone Wolf 16, the Improved Discipline of Kai-surge (at rank of Sun Lord) is not fully explained (a sentence is missing from the paragraph). A Kai Sun Lord using Kai Blast [sic] determines the damage inflicted on an enemy by picking two numbers from the <a idref="random">Random Number Table</a>. These numbers should be added together (a &apos;0&apos; = 1) and the resultant total equals the damage inflicted.</quote>. This missing information has been added to the text.</p>
        <p>(<a idref="kaiwisdm">Grand Master&apos;s Wisdom</a>) Moved this section of the book to its normal position after <a idref="imprvdsc">Improved Grand Master Disciplines</a>.</p>
+<p>(<a idref="sect1">1</a>)<!--ERRTAG-RE-63440-ITEM--> Replaced <quote>Kai aspirants</quote> with <quote>Kai Aspirants</quote>.<!--/ERRTAG-RE-63440-ITEM--><!--ERRTAG-RE-63972-ITEM--> Replaced <quote>urges Rimoah,</quote> with <quote>urges Rimoah.</quote>.<!--/ERRTAG-RE-63972-ITEM--><!--ERRTAG-RE-65775-ITEM--> Replaced <quote>iceboat</quote> with <quote>ice-boat</quote>.<!--/ERRTAG-RE-65775-ITEM--><!--ERRTAG-RE-65937-ITEM--> Replaced <quote>seven days the pilot</quote> with <quote>seven days, the pilot</quote>.<!--/ERRTAG-RE-65937-ITEM--><!--ERRTAG-RE-65461-ITEM--> Replaced <quote>pack ice</quote> with <quote>pack-ice</quote>.<!--/ERRTAG-RE-65461-ITEM--></p>
+<p>(<a idref="sect3">3</a>)<!--ERRTAG-RE-67530-ITEM--> Replaced <quote>demonlord</quote> with <quote>Demonlord</quote>.<!--/ERRTAG-RE-67530-ITEM--><!--ERRTAG-RE-68158-ITEM--> Replaced <quote>demonlord&apos;s</quote> with <quote>Demonlord&apos;s</quote>.<!--/ERRTAG-RE-68158-ITEM--><!--ERRTAG-RE-67737-ITEM--> Replaced <quote>down-draught</quote> with <quote>down-draft</quote>.<!--/ERRTAG-RE-67737-ITEM--></p>
+<p>(<a idref="sect6">6</a>)<!--ERRTAG-RE-71213-ITEM--> Replaced <quote>Click</quote> with <quote><onomatopoeia>click</onomatopoeia></quote>.<!--/ERRTAG-RE-71213-ITEM--><!--ERRTAG-RE-72055-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-72055-ITEM--></p>
+<p>(<a idref="sect7">7</a>)<!--ERRTAG-RE-72582-ITEM--> Replaced <quote>beyond you</quote> with <quote>beyond, you</quote>.<!--/ERRTAG-RE-72582-ITEM--><!--ERRTAG-RE-73183-ITEM--> Replaced <quote>it as if</quote> with <quote>it is as if</quote>.<!--/ERRTAG-RE-73183-ITEM--></p>
+<p>(<a idref="sect8">8</a>)<!--ERRTAG-RE-75028-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-75028-ITEM--><!--ERRTAG-RE-75303-ITEM--> Replaced <quote>If you cannot</quote> with <quote>If you do not</quote>.<!--/ERRTAG-RE-75303-ITEM--></p>
+<p>(<a idref="sect9">9</a>)<!--ERRTAG-RE-75861-ITEM--> Replaced <quote>ultra-violet</quote> with <quote>ultraviolet</quote>.<!--/ERRTAG-RE-75861-ITEM--></p>
+<p>(<a idref="sect13">13</a>)<!--ERRTAG-RE-81799-ITEM--> Replaced <quote>sea water</quote> with <quote>seawater</quote>.<!--/ERRTAG-RE-81799-ITEM--></p>
+<p>(<a idref="sect14">14</a>)<!--ERRTAG-RE-83432-ITEM--> Replaced <quote>undead who were swarming</quote> with <quote>undead who are swarming</quote>.<!--/ERRTAG-RE-83432-ITEM--></p>
+<p>(<a idref="sect15">15</a>)<!--ERRTAG-RE-85157-ITEM--> Replaced <quote>item</quote> with <quote>Item</quote>.<!--/ERRTAG-RE-85157-ITEM--><!--ERRTAG-RE-84736-ITEM--> Replaced <quote>rough hewn</quote> with <quote>rough-hewn</quote>.<!--/ERRTAG-RE-84736-ITEM--></p>
+<p>(<a idref="sect18">18</a>)<!--ERRTAG-RE-87112-ITEM--> Replaced <quote>Skark oil</quote> with <quote>skark oil</quote>.<!--/ERRTAG-RE-87112-ITEM--> Began a new paragraph before <quote>Do not fear,&ellips;</quote>.<!--ERRTAG-RE-88112-ITEM--> Replaced <quote>you reply, &lsquot;I shall soon return.&rsquot;</quote> with <quote>you reply. &lsquot;I shall soon return.&rsquot;</quote>.<!--/ERRTAG-RE-88112-ITEM--></p>
+<p>(<a idref="sect19">19</a>)<!--ERRTAG-RE-88807-ITEM--> Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.<!--/ERRTAG-RE-88807-ITEM--><!--ERRTAG-RE-88888-ITEM--> Replaced <quote>attained, above</quote> with <quote>attained above</quote>.<!--/ERRTAG-RE-88888-ITEM--></p>
+<p>(<a idref="sect20">20</a>)<!--ERRTAG-RE-89634-ITEM--> Replaced <quote>now-open</quote> with <quote>now open</quote>.<!--/ERRTAG-RE-89634-ITEM--></p>
+<p>(<a idref="sect22">22</a>)<!--ERRTAG-RE-93654-ITEM--> Replaced <quote>freestate</quote> with <quote>Freeland state</quote>.<!--/ERRTAG-RE-93654-ITEM--><!--ERRTAG-RE-94349-ITEM--> Replaced <quote>in previous Lone Wolf adventures</quote> with <quote>in any previous Lone Wolf adventures</quote>.<!--/ERRTAG-RE-94349-ITEM--><!--ERRTAG-RE-94491-ITEM--> Replaced <quote>If you have not</quote> with <quote>If you did not</quote>.<!--/ERRTAG-RE-94491-ITEM--></p>
+<p>(<a idref="sect23">23</a>)<!--ERRTAG-RE-94868-ITEM--> Replaced <quote>Ixian undead</quote> with <quote>Ixian Undead</quote>.<!--/ERRTAG-RE-94868-ITEM--></p>
+<p>(<a idref="sect24">24</a>)<!--ERRTAG-RE-96008-ITEM--> Replaced <quote>your psi-screen</quote> with <quote>your Psi-screen</quote>.<!--/ERRTAG-RE-96008-ITEM--><!--ERRTAG-RE-96797-ITEM--> Replaced <quote>head in which</quote> with <quote>head from which</quote>.<!--/ERRTAG-RE-96797-ITEM--></p>
+<p>(<a idref="sect25">25</a>)<!--ERRTAG-RE-97640-ITEM--> Replaced <quote>sixth sense</quote> with <quote>Sixth Sense</quote>.<!--/ERRTAG-RE-97640-ITEM--></p>
+<p>(<a idref="sect26">26</a>)<!--ERRTAG-RE-98551-ITEM--> Replaced <quote>camouflage</quote> with <quote>Camouflage</quote>.<!--/ERRTAG-RE-98551-ITEM--><!--ERRTAG-RE-99039-ITEM--> Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.<!--/ERRTAG-RE-99039-ITEM--></p>
+<p>(<a idref="sect29">29</a>)<!--ERRTAG-RE-100780-ITEM--> Replaced <quote>spell&emdash;<spell>Slow Fall</spell>&emdash;and</quote> with <quote>spell <spell>Slow Fall</spell> and</quote>.<!--/ERRTAG-RE-100780-ITEM--></p>
+<p>(<a idref="sect30">30</a>)<!--ERRTAG-RE-101182-ITEM--> Replaced <quote>Kai camouflage</quote> with <quote>Kai Camouflage</quote>.<!--/ERRTAG-RE-101182-ITEM--></p>
+<p>(<a idref="sect36">36</a>)<!--ERRTAG-RE-107138-ITEM--> Replaced <quote>zigzaging</quote> with <quote>zigzagging</quote>.<!--/ERRTAG-RE-107138-ITEM--></p>
+<p>(<a idref="sect38">38</a>)<!--ERRTAG-RE-109561-ITEM--> Replaced <quote>demonlord</quote> with <quote>Demonlord</quote>.<!--/ERRTAG-RE-109561-ITEM--></p>
+<p>(<a idref="sect39">39</a>)<!--ERRTAG-RE-110397-ITEM--> Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.<!--/ERRTAG-RE-110397-ITEM--><!--ERRTAG-RE-111096-ITEM--> Replaced <quote>splutters, &lsquot;it&apos;s</quote> with <quote>splutters. &lsquot;It&apos;s</quote>.<!--/ERRTAG-RE-111096-ITEM--></p>
+<p>(<a idref="sect40">40</a>)<!--ERRTAG-RE-111431-ITEM--> Replaced <quote>Upon the instant</quote> with <quote>At the instant</quote>.<!--/ERRTAG-RE-111431-ITEM--><!--ERRTAG-RE-111723-ITEM--> Replaced <quote>demonlord&apos;s</quote> with <quote>Demonlord&apos;s</quote>.<!--/ERRTAG-RE-111723-ITEM--></p>
+<p>(<a idref="sect42">42</a>)<!--ERRTAG-RE-113672-ITEM--> Replaced <quote>Ixian undead</quote> with <quote>Ixian Undead</quote>.<!--/ERRTAG-RE-113672-ITEM--></p>
+<p>(<a idref="sect46">46</a>)<!--ERRTAG-RE-118529-ITEM--> Replaced <quote>Battlespell</quote> with <quote>battle-spell</quote>.<!--/ERRTAG-RE-118529-ITEM--><!--ERRTAG-RE-118714-ITEM--> Replaced <quote>power word&emdash;Gloar!&emdash;at</quote> with <quote>power word <spell>Gloar!</spell> at</quote>.<!--/ERRTAG-RE-118714-ITEM--></p>
+<p>(<a idref="sect48">48</a>)<!--ERRTAG-RE-120076-ITEM--> Replaced <quote>battle cry</quote> with <quote>battle-cry</quote>.<!--/ERRTAG-RE-120076-ITEM--></p>
+<p>(<a idref="sect50">50</a>)<!--ERRTAG-RE-122808-ITEM--> Replaced <quote>Ixian undead</quote> with <quote>Ixian Undead</quote>.<!--/ERRTAG-RE-122808-ITEM--></p>
+<p>(<a idref="sect52">52</a>)<!--ERRTAG-RE-125276-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-125276-ITEM--></p>
+<p>(<a idref="sect53">53</a>)<!--ERRTAG-RE-125862-ITEM--> Replaced <quote>Brotherhood spell&emdash;<spell>Strength</spell>&emdash;upon</quote> with <quote>Brotherhood Spell <spell>Strength</spell> upon</quote>.<!--/ERRTAG-RE-125862-ITEM--><!--ERRTAG-RE-125957-ITEM--> Replaced <quote>new-found</quote> with <quote>newfound</quote>.<!--/ERRTAG-RE-125957-ITEM--><!--ERRTAG-RE-126227-ITEM--> Replaced <quote>demonlord</quote> with <quote>Demonlord</quote>.<!--/ERRTAG-RE-126227-ITEM--></p>
+<p>(<a idref="sect54">54</a>)<!--ERRTAG-RE-127225-ITEM--> Replaced <quote>sixth sense</quote> with <quote>Sixth Sense</quote>.<!--/ERRTAG-RE-127225-ITEM--></p>
+<p>(<a idref="sect56">56</a>)<!--ERRTAG-RE-128759-ITEM--> Replaced <quote>Crack!</quote> with <quote><onomatopoeia>crack!</onomatopoeia></quote>.<!--/ERRTAG-RE-128759-ITEM--></p>
+<p>(<a idref="sect57">57</a>)<!--ERRTAG-RE-130610-ITEM--> Replaced <quote>minions you</quote> with <quote>minions, you</quote>.<!--/ERRTAG-RE-130610-ITEM--></p>
+<p>(<a idref="sect59">59</a>) Moved the choice to use Telegnosis to the first position in the list. <!--ERRTAG-RE-133768-ITEM--> Replaced <quote>Sun Lord, or higher</quote> with <quote>Sun Lord or higher</quote>.<!--/ERRTAG-RE-133768-ITEM--></p>
+<p>(<a idref="sect61">61</a>) <!--ERRTAG-RE-135239-ITEM--> Replaced <quote>Brotherhood spell&emdash;<spell>Sense Evil</spell>&emdash;you</quote> with <quote>Brotherhood Spell <spell>Sense Evil</spell> you</quote>.<!--/ERRTAG-RE-135239-ITEM--><!--ERRTAG-RE-135979-ITEM--> Replaced <quote>gods</quote> with <quote>Gods</quote>.<!--/ERRTAG-RE-135979-ITEM--><!--ERRTAG-RE-136066-ITEM--> Replaced <quote>he splutters, &lsquot;it&apos;s</quote> with <quote>he splutters. &lsquot;It&apos;s</quote>.<!--/ERRTAG-RE-136066-ITEM--></p>
+<p>(<a idref="sect62">62</a>) <!--ERRTAG-RE-136622-ITEM--> Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.<!--/ERRTAG-RE-136622-ITEM--></p>
+<p>(<a idref="sect63">63</a>) <!--ERRTAG-RE-138321-ITEM--> Replaced <quote>Backpack items</quote> with <quote>Backpack Items</quote>.<!--/ERRTAG-RE-138321-ITEM--></p>
+<p>(<a idref="sect66">66</a>) <!--ERRTAG-RE-141180-ITEM--> Replaced <quote>Hard a-port!</quote> with <quote>Hard aport!</quote>.<!--/ERRTAG-RE-141180-ITEM--></p>
+<p>(<a idref="sect67">67</a>) <!--ERRTAG-RE-143354-ITEM--> Replaced <quote>Chaos horde</quote> with <quote>Chaos Horde</quote>.<!--/ERRTAG-RE-143354-ITEM--></p>
+<p>(<a idref="sect68">68</a>) <!--ERRTAG-RE-144645-ITEM--> Replaced <quote>all of your Backpack items</quote> with <quote>all of your Backpack Items</quote>.<!--/ERRTAG-RE-144645-ITEM--></p>
+<p>(<a idref="sect72">72</a>) <!--ERRTAG-RE-147920-ITEM--> Replaced <quote>demonlord</quote> with <quote>Demonlord</quote>.<!--/ERRTAG-RE-147920-ITEM--></p>
+<p>(<a idref="sect74">74</a>) <!--ERRTAG-RE-150483-ITEM--> Replaced <quote>Bulkhead door</quote> with <quote>Bulkhead Door</quote>.<!--/ERRTAG-RE-150483-ITEM--></p>
+<p>(<a idref="sect75">75</a>) <!--ERRTAG-RA-151246-ITEM--> Replaced all occurrences of <quote>demonlord</quote> with <quote>Demonlord</quote>.<!--/ERRTAG-RA-151246-ITEM--><!--ERRTAG-RE-151571-ITEM--> Replaced <quote>delete this weapon</quote> with <quote>delete this Weapon</quote>.<!--/ERRTAG-RE-151571-ITEM--></p>
+<p>(<a idref="sect76">76</a>) <!--ERRTAG-RE-152987-ITEM--> Replaced <quote>plan you</quote> with <quote>plan, you</quote>.<!--/ERRTAG-RE-152987-ITEM--></p>
+<p>(<a idref="sect79">79</a>) <!--ERRTAG-RE-156560-ITEM--> Replaced <quote>sixth sense</quote> with <quote>Sixth Sense</quote>.<!--/ERRTAG-RE-156560-ITEM--><!--ERRTAG-RE-156436-ITEM--> Replaced <quote>despatch</quote> with <quote>dispatch</quote>.<!--/ERRTAG-RE-156436-ITEM--></p>
+<p>(<a idref="sect80">80</a>) <!--ERRTAG-RE-157739-ITEM--> Replaced <quote>creamy-coloured</quote> with <quote>cream-coloured</quote>.<!--/ERRTAG-RE-157739-ITEM--></p>
+<p>(<a idref="sect81">81</a>) <!--ERRTAG-RE-159182-ITEM--> Replaced <quote>Bulkhead door</quote> with <quote>Bulkhead Door</quote>.<!--/ERRTAG-RE-159182-ITEM--></p>
+<p>(<a idref="sect86">86</a>) <!--ERRTAG-RE-163827-ITEM--> Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.<!--/ERRTAG-RE-163827-ITEM--></p>
+<p>(<a idref="sect89">89</a>) <!--ERRTAG-RE-166240-ITEM--> Replaced <quote>at its centre</quote> with <quote>from its centre</quote>.<!--/ERRTAG-RE-166240-ITEM--><!--ERRTAG-RE-167148-ITEM--> Replaced <quote>round, by</quote> with <quote>round by</quote>.<!--/ERRTAG-RE-167148-ITEM--></p>
+<p>(<a idref="sect90">90</a>) <!--ERRTAG-RE-167909-ITEM--> Replaced <quote>raising a Deathstaff</quote> with <quote>raising the Deathstaff</quote>.<!--/ERRTAG-RE-167909-ITEM--></p>
+<p>(<a idref="sect101">101</a>)<!--ERRTAG-RE-178944-ITEM--> Replaced <quote>korlinium scabbard</quote> with <quote>Korlinium Scabbard</quote>.<!--/ERRTAG-RE-178944-ITEM--></p>
+<p>(<a idref="sect103">103</a>)<!--ERRTAG-RE-181803-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-181803-ITEM--></p>
+<p>(<a idref="sect112">112</a>)<!--ERRTAG-RE-188989-ITEM--> Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>.<!--/ERRTAG-RE-188989-ITEM--></p>
+<p>(<a idref="sect121">121</a>)<!--ERRTAG-RE-197731-ITEM--> Replaced <quote>Brotherhood spell&emdash;Lightning Hand&emdash;and</quote> with <quote>Brotherhood Spell <spell>Lightning Hand</spell> and</quote>.<!--/ERRTAG-RE-197731-ITEM--></p>
+<p>(<a idref="sect133">133</a>)<!--ERRTAG-RE-209083-ITEM--> Replaced <quote>Brotherhood spell&emdash;<spell>Breathe Water</spell></quote> with <quote>Brotherhood Spell <spell>Breathe Water</spell></quote>.<!--/ERRTAG-RE-209083-ITEM--></p>
+<p>(<a idref="sect136">136</a>)<!--ERRTAG-RE-212449-ITEM--> Replaced <quote>Brotherhood spell&emdash;Levitation</quote> with <quote>Brotherhood Spell <spell>Levitation</spell></quote>.<!--/ERRTAG-RE-212449-ITEM--></p>
+<p>(<a idref="sect176">176</a>)<!--ERRTAG-RE-258103-ITEM--> Replaced <quote>Brotherhood spell&emdash;Levitation&emdash;and</quote> with <quote>Brotherhood Spell <spell>Levitation</spell> and</quote>.<!--/ERRTAG-RE-258103-ITEM--></p>
+<p>(<a idref="sect185">185</a>)<!--ERRTAG-RE-265861-ITEM--> Replaced <quote>down-draught</quote> with <quote>down-draft</quote>.<!--/ERRTAG-RE-265861-ITEM--></p>
+<p>(<a idref="sect217">217</a>)<!--ERRTAG-RE-307042-ITEM--> Replaced <quote>Brotherhood spell&emdash;Counterspell&emdash;and</quote> with <quote>Brotherhood Spell <spell>Counterspell</spell> and</quote>.<!--/ERRTAG-RE-307042-ITEM--></p>
+<p>(<a idref="sect258">258</a>)<!--ERRTAG-RE-345610-ITEM--> Replaced <quote>Click</quote> with <quote><onomatopoeia>click</onomatopoeia></quote>.<!--/ERRTAG-RE-345610-ITEM--></p>
       </data>
      </section>
     </data>
