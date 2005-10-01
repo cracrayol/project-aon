@@ -20,6 +20,10 @@
 $Id$
 
 $Log$
+Revision 1.14  2005/10/01 21:32:17  angantyr
+Fixed some recent errata and added/updated footnote entries having to do
+with insufficient WILLPOWER. Also made some small illustrations adjustments.
+
 Revision 1.13  2005/08/21 20:46:13  angantyr
 Added/modified footnotes and modified small illustrations.
 
@@ -146,7 +150,7 @@ small11: sword, axe, & shield
    &inclusion.paul.bonner.bio.gs;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2005</year><month>08</month><day>21</day></date>
+  <date class="publication"><year>2005</year><month>10</month><day>01</day></date>
   <description class="blurb">
    <p>You are the Wizard Grey Star. Your quest is to retrieve the legendary Moonstone and with its power throw down the evil Wytch-king. You must find the Shadow Gate&emdash;doorway to the magic realm where it lies hidden. When the moon is full, the Shadow Gate appears&emdash;in Desolation Valley beyond the Mountains of Morn, where you must dare <!--ERRTAG-RE-6558--><strong>The Forbidden City</strong><!--/ERRTAG-RE-6558-->.</p>
    <p>The Wytch-king will try to track you down. His slaves will dog your every step&emdash;the cruel warriors of Shadaki, the phantom spirit of the Deathgaunt and the dark horror of the demon <!--ERRTAG-RE-6876-->Kleas&aacute;<!--/ERRTAG-RE-6876-->. Only your <!--ERRTAG-RE-6952-->Magical Powers<!--/ERRTAG-RE-6952--> and the might of your Wizard&apos;s Staff can protect you in a terrifying adventure of madness, magic and menace!</p>
@@ -284,6 +288,9 @@ small11: sword, axe, & shield
       <p>Alternatively, you may wish to use your original <typ class="attribute">WILLPOWER</typ> score from the beginning of <cite>Grey Star the Wizard</cite>, and add 10 bonus points to this.</p>
      </footnote>
      <footnote id="gamerulz-2-foot" idref="gamerulz-2"><p>If you choose Alchemy as your new Magical Power, you also receive a Herb Pouch with contents, as detailed in the <a idref="equipmnt">Equipment</a> section.</p></footnote>
+     <footnote id="gamerulz-4-foot" idref="gamerulz-4"><p>There are sections of this book that describe how you use a Magical Power and how many <typ class="attribute">WILLPOWER</typ> points you spend, without giving you a choice and without taking into account that you may not have the required number of <typ class="attribute">WILLPOWER</typ> points left. You may choose to simply subtract the specified number of <typ class="attribute">WILLPOWER</typ> points. This may leave you with a negative <typ class="attribute">WILLPOWER</typ> score, or if it was already negative, it will make your score become even more negative.</p>
+      <p>Alternatively, you may may wish to use a method given in Section 175 of <cite><a href="&link.04wotw;">War of the Wizards</a></cite>, which contains one such case of mandated use of magic: If you do not have enough <typ class="attribute">WILLPOWER</typ> points, then you use <typ class="attribute">ENDURANCE</typ> points at a rate of 2 <typ class="attribute">ENDURANCE</typ> points for every 1 <typ class="attribute">WILLPOWER</typ> point you lack (i.e. 2 <typ class="attribute">ENDURANCE</typ> points = 1 <typ class="attribute">WILLPOWER</typ> point). If your <typ class="attribute">ENDURANCE</typ> score falls to zero, you are dead and the adventure is over.</p>
+      <p>Note that you may never <em>choose</em> to use a Magical Power or your Wizard&apos;s Staff if you do not have sufficient <typ class="attribute">WILLPOWER</typ> points. This method also cannot be used in cases where you lose <typ class="attribute">WILLPOWER</typ> points for a reason other than using magic, for instance as a result of mental or magical attacks. In these cases, you may end up with a negative <typ class="attribute">WILLPOWER</typ> score.</p></footnote>
        <footnote id="gamerulz-3-foot" idref="gamerulz-3"><p>It is possible for your <typ class="attribute">WILLPOWER</typ> to fall below zero. For example, if you are the victim of an attack that drains your <typ class="attribute">WILLPOWER</typ>, your score may be forced below zero. If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to cast spells or use the magical properties of your Wizard&apos;s Staff until your score is again above zero. You can still use your Wizard&apos;s Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>.</p></footnote>
       </footnotes>
 
@@ -293,7 +300,7 @@ small11: sword, axe, & shield
      <p>To keep a record of your adventure, use the <a idref="action">Action Chart</a>.</p>
      <p>Before you set off on your adventure, you must discover how well your Shianti masters have prepared you for your quest by determining your fighting prowess&emdash;<typ class="attribute">COMBAT SKILL</typ>&emdash;your state of mind&emdash;<typ class="attribute">WILLPOWER</typ>&emdash;and your physical stamina&emdash;<typ class="attribute">ENDURANCE</typ>. To do this take a pencil and, with eyes closed, point with the blunt end of it on to the <a idref="random">Random Number Table</a>. If you pick 0 it counts as zero.</p>
      <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 10 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a>. (e.g., if your pencil fell on the number 4 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> of 14.) When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore very desirable.</p>
-     <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your <typ class="attribute">WILLPOWER</typ>. Add 20 to this number and write the total in the <typ class="attribute">WILLPOWER</typ> section of your <a idref="action">Action Chart</a> (e.g., if your pencil fell on the number 6 in the <a idref="random">Random Number Table</a> you would have a <typ class="attribute">WILLPOWER</typ> of 26). If you decide to use a spell or utilize the power of your Wizard&apos;s Staff, then you will lose <typ class="attribute">WILLPOWER</typ> points. If at any time your <typ class="attribute">WILLPOWER</typ> falls to zero, you may not use any of your spells or your Wizard&apos;s Staff.<a id="gamerulz-3" idref="gamerulz-3-foot" class="footnote"/> Lost <typ class="attribute">WILLPOWER</typ> points can be regained during the course of the adventure, and it is possible for your <typ class="attribute">WILLPOWER</typ> points to rise above the total with which you start your adventure.</p>
+     <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your <typ class="attribute">WILLPOWER</typ>. Add 20 to this number and write the total in the <typ class="attribute">WILLPOWER</typ> section of your <a idref="action">Action Chart</a> (e.g., if your pencil fell on the number 6 in the <a idref="random">Random Number Table</a> you would have a <typ class="attribute">WILLPOWER</typ> of 26). If you decide to use a spell or utilize the power of your Wizard&apos;s Staff, then you will lose <typ class="attribute">WILLPOWER</typ> points. If at any time your <typ class="attribute">WILLPOWER</typ> falls to zero, you may not use any of your spells<a id="gamerulz-4" idref="gamerulz-4-foot" class="footnote" /> or your Wizard&apos;s Staff.<a id="gamerulz-3" idref="gamerulz-3-foot" class="footnote"/> Lost <typ class="attribute">WILLPOWER</typ> points can be regained during the course of the adventure, and it is possible for your <typ class="attribute">WILLPOWER</typ> points to rise above the total with which you start your adventure.</p>
      <p>The third number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 20 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a> (e.g., if your pencil fell on the number 6 on the <a idref="random">Random Number Table</a> you would have 26 <typ class="attribute">ENDURANCE</typ> points). If you are wounded in combat, you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure but can never rise above the number with which you start your adventure.</p>
 
      <section class="frontmatter-separate" id="powers">
@@ -1112,7 +1119,7 @@ small11: sword, axe, & shield
       <meta><title>37</title></meta>
 
       <data>
-       <p>You walk along the west passage. It rises steadily and eventually opens into a small cave. Beneath the light of the full moon you see miles and miles of contorted rock. It looks as if it has been melted in a furnace. You find the skeletal remains of several bodies but as you lift a skull to examine it, it crumbles to dust in your hand.</p>
+       <p>You walk along the west passage. It rises steadily and eventually opens into a small cave<!--ERRTAG-AD-93287--> with an opening that overlooks a large gorge<!--/ERRTAG-AD-93287-->. Beneath the light of the full moon you see miles and miles of contorted rock. It looks as if it has been melted in a furnace. You find the skeletal remains of several bodies but as you lift a skull to examine it, it crumbles to dust in your hand.</p>
        <p>You search the cave and find a Silver Knife. You may keep this Special Item, which can be worn on your belt. (Remember to mark it on your <a idref="action">Action Chart</a>.) You head back along the passage until you come to the circular cavern once more.</p>
        <choice idref="sect46">If you wish to take the passage leading east, <link-text>turn to 46</link-text>.</choice>
        <choice idref="sect23">If you wish to take the passage leading north, <link-text>turn to 23</link-text>.</choice>
@@ -1769,11 +1776,15 @@ small11: sword, axe, & shield
 
      <section class="numbered" id="sect91">
       <meta><title>91</title></meta>
+            
+      <footnotes>
+       <footnote id="sect91-1-foot" idref="sect91-1"><p>You are forced to choose to use a Magical Power, even though all the Powers that are available to you may require you to use more <typ class="attribute">WILLPOWER</typ> points than you currently possess. If you do not have sufficient <typ class="attribute">WILLPOWER</typ> points, you may choose to simply subtract the number of <typ class="attribute">WILLPOWER</typ> points required to use the Power you select. This may leave you with a negative <typ class="attribute">WILLPOWER</typ> score, or if it was already negative, it will make your score become even more negative. Alternatively, you may choose the method used in Section 175 of <cite><a href="&link.04wotw;">War of the Wizards</a></cite> for resolving this problem: For the <typ class="attribute">WILLPOWER</typ> points you lack, you use <typ class="attribute">ENDURANCE</typ> points at a rate of 2 <typ class="attribute">ENDURANCE</typ> points for every 1 <typ class="attribute">WILLPOWER</typ> point (i.e. 2 <typ class="attribute">ENDURANCE</typ> points = 1 <typ class="attribute">WILLPOWER</typ> point).</p></footnote>
+      </footnotes>
 
       <data>
        <p><quote>I have great need for haste, Sado,</quote> you say, <quote>but I will help you this night. What must I do?</quote></p>
        <p>A fire lights in Sado&apos;s eyes. <quote>I thank you, Grey Star, in the name of the people of Karnali.</quote></p>
-       <p>He tells you of his need for a diversion that will lure the bulk of the Shadakine force outside their walled <!--ERRTAG-RE-132032-->city-fortress<!--/ERRTAG-RE-132032-->. You consider your Magical Powers, trying to decide which would best accomplish this.</p>
+       <p>He tells you of his need for a diversion that will lure the bulk of the Shadakine force outside their walled <!--ERRTAG-RE-132032-->city-fortress<!--/ERRTAG-RE-132032-->. You consider your Magical Powers, trying to decide which would best accomplish this.<a id="sect91-1" idref="sect91-1-foot" class="footnote" /></p>
        <choice idref="sect139">If you have the Magical Power of Enchantment and wish to use it, <link-text>turn to 139</link-text>.</choice>
        <choice idref="sect290">If you have the Magical Power of Elementalism and wish to use it, <link-text>turn to 290</link-text>.</choice>
        <choice idref="sect208">If you have the Magical Power of Alchemy and wish to use it, <link-text>turn to 208</link-text>.</choice>
@@ -2241,13 +2252,6 @@ small11: sword, axe, & shield
 
       <data>
        <p>You release the might of your Wizard&apos;s Staff and its flame shoots towards the spectre on the water. To your surprise, <!--ERRTAG-RE-168225-->however, it<!--/ERRTAG-RE-168225--> passes straight through, inflicting no damage. This creature is a Deathgaunt, an undead being summoned to the world of the living by the Wytch-king himself. Your unsuccessful assault has cost you 2 <typ class="attribute">WILLPOWER</typ> points.</p>
-       <illustration class="inline">
-        <meta>
-         <creator>Paul Bonner</creator>
-        </meta>
-        <instance class="html" src="small1.gif" width="386" height="150"/>
-        <instance class="pdf" src="small1.pdf" width="386" height="150"/>
-       </illustration>
        <choice idref="sect169"><link-text>Turn to 169</link-text>.</choice>
       </data>
      </section>
@@ -3091,19 +3095,27 @@ small11: sword, axe, & shield
 
      <section class="numbered" id="sect206">
       <meta><title>206</title></meta>
+      
+      <footnotes>
+       <footnote id="sect206-1-foot" idref="sect206-1"><p>If you do not have sufficient <typ class="attribute">WILLPOWER</typ> points, you may choose to simply subtract the specified number of <typ class="attribute">WILLPOWER</typ> points. This may leave you with a negative <typ class="attribute">WILLPOWER</typ> score, or if it was already negative, it will make your score become even more negative. Alternatively, you may choose the method used in Section 175 of <cite><a href="&link.04wotw;">War of the Wizards</a></cite> for resolving this problem: For the <typ class="attribute">WILLPOWER</typ> points you lack, you use <typ class="attribute">ENDURANCE</typ> points at a rate of 2 <typ class="attribute">ENDURANCE</typ> points for every 1 <typ class="attribute">WILLPOWER</typ> point (i.e. 2 <typ class="attribute">ENDURANCE</typ> points = 1 <typ class="attribute">WILLPOWER</typ> point).</p></footnote>
+      </footnotes>
 
       <data>
-       <p>Wielding your Staff high above your head, you wait for your chance to strike. Hugi manages to wriggle free from the coils of the beast and, as he rolls clear, you bring your Staff down with a mighty blow. A crackle of energy rips through the creature as your Staff crushes its head. The Scree Wyrm contracts into a knot and flips over and over in the throes of death to disappear from sight into one of the many pot-holes that dot the plain. You have lost 1 <typ class="attribute">WILLPOWER</typ> point effecting this attack.</p>
+       <p>Wielding your Staff high above your head, you wait for your chance to strike. Hugi manages to wriggle free from the coils of the beast and, as he rolls clear, you bring your Staff down with a mighty blow. A crackle of energy rips through the creature as your Staff crushes its head. The Scree Wyrm contracts into a knot and flips over and over in the throes of death to disappear from sight into one of the many pot-holes that dot the plain. You have lost 1 <typ class="attribute">WILLPOWER</typ> point effecting this attack.<a id="sect206-1" idref="sect206-1-foot" class="footnote" /></p>
        <choice idref="sect85"><link-text>Turn to 85</link-text>.</choice>
       </data>
      </section>
 
      <section class="numbered" id="sect207">
       <meta><title>207</title></meta>
+      
+      <footnotes>
+       <footnote id="sect207-1-foot" idref="sect207-1"><p>You are forced to choose to use a Magical Power, even though all the Powers that are available to you may require you to use more <typ class="attribute">WILLPOWER</typ> points than you currently possess. If you do not have sufficient <typ class="attribute">WILLPOWER</typ> points, you may choose to simply subtract the number of <typ class="attribute">WILLPOWER</typ> points required to use the Power you select. This may leave you with a negative <typ class="attribute">WILLPOWER</typ> score, or if it was already negative, it will make your score become even more negative. Alternatively, you may choose the method used in Section 175 of <cite><a href="&link.04wotw;">War of the Wizards</a></cite> for resolving this problem: For the <typ class="attribute">WILLPOWER</typ> points you lack, you use <typ class="attribute">ENDURANCE</typ> points at a rate of 2 <typ class="attribute">ENDURANCE</typ> points for every 1 <typ class="attribute">WILLPOWER</typ> point (i.e. 2 <typ class="attribute">ENDURANCE</typ> points = 1 <typ class="attribute">WILLPOWER</typ> point).</p></footnote>
+      </footnotes>
 
       <data>
        <p>Sado prepares his men to charge. A familiar yellow light attracts your attention, shining from the highest turret of the fortress. It can only be the light of the Kazim Stone, a powerful instrument of pain in the hands of a Shadakine Wytch.</p>
-       <p>The yellow glow expands and then envelopes the flagging soldiers who stand before the fortress. You see their resolve tighten as the Kazim Stone robs them of their fear. <quote>Sorcery!</quote> breathes Sado in a desperate voice. You feel the gaze of Sado and his men burning into you like an accusation. Slowly, the Shadakine advance, tightening the ragged line of their defence in preparation for a <!--ERRTAG-RE-241378-->counterattack<!--/ERRTAG-RE-241378-->; they move like automatons as the Kazim Stone burns into their minds.</p>
+       <p>The yellow glow expands and then envelopes the flagging soldiers who stand before the fortress. You see their resolve tighten as the Kazim Stone robs them of their fear. <quote>Sorcery!</quote> breathes Sado in a desperate voice. You feel the gaze of Sado and his men burning into you like an accusation. Slowly, the Shadakine advance, tightening the ragged line of their defence in preparation for a <!--ERRTAG-RE-241378-->counterattack<!--/ERRTAG-RE-241378-->; they move like automatons as the Kazim Stone burns into their minds.<a id="sect207-1" idref="sect207-1-foot" class="footnote" /></p>
        <choice idref="sect6">If you have the Magical Power of Sorcery and wish to use it against the Kazim Stone, <link-text>turn to 6</link-text>.</choice>
        <choice idref="sect146">If you have the Magical Power of Enchantment and wish to use it against the Shadakine, <link-text>turn to 146</link-text>.</choice>
        <choice idref="sect234">If you wish to challenge the power of the Kazim Stone with your Staff, <link-text>turn to 234</link-text>.</choice>
@@ -3619,10 +3631,6 @@ small11: sword, axe, & shield
      <section class="numbered" id="sect250">
       <meta><title>250</title></meta>
 
-      <footnotes>
-       <footnote id="sect250-1-foot" idref="sect250-1"><p>From this point in the story, this book suffers from a game design problem in that many sections give you options between using different forms of magic, but no option for what to do if your <typ class="attribute">WILLPOWER</typ> score has reached zero or below. If you encounter such a situation, you may choose one of the options anyway and continue subtracting <typ class="attribute">WILLPOWER</typ> points, or you may conclude that Grey Star has failed his mission and that the adventure is over.</p></footnote>
-      </footnotes>
-
       <data>
        <p>A patch of brush and foliage is pulled aside to reveal a concealed entrance. Following Sado, you enter a wide tunnel lit with torches. <quote>This tunnel leads all the way to our secret headquarters beneath the city of Karnali,</quote> he says.</p>
        <p>The tunnel twists and turns for many miles before opening into a large cavern. You and Urik are given food and wine, and while you eat, he tells you of his army&emdash;the Freedom Guild, a rebel band resisting the rule of the Shadakine Empire.</p>
@@ -3631,7 +3639,7 @@ small11: sword, axe, & shield
        <p>He turns and apologizes to you, explaining that the bulk of his army is recruited from the criminal ranks of the city. You explain your quest and the land that you seek. Sado&apos;s eyes widen with astonishment. <quote>Then the legends are true?</quote> he gapes. <quote>The Shianti still exist!</quote></p>
        <p>You nod. <quote>If my quest should finally succeed and I retrieve the Moonstone, the full might of their wisdom and magic will be turned against Shasarak,</quote> you tell him.</p>
        <p><quote>How the people would rejoice to know that a Shianti walked among us once more,</quote> says Sado, <quote>though I understand the need for secrecy. Nevertheless,</quote> he continues, his eyes lighting up, <quote>I would ask a boon of you. Tonight, we attempt our most daring stratagem against the corrupt rule of the Shadakine. Stand with us in battle tonight, aid us if you will. With the might of a Shianti Wizard in our ranks, who knows what we could achieve! Help the Freedom Guild, Grey Star, in our struggle to free the people of Karnali.</quote></p>
-       <p>He looks, a searching gaze on his face, with an intensity that almost crackles with energy.<a id="sect250-1" idref="sect250-1-foot" class="footnote" /></p>
+       <p>He looks, a searching gaze on his face, with an intensity that almost crackles with energy.</p>
        <choice idref="sect101">If you have the Chaksu Pipes, <link-text>turn to 101</link-text>.</choice>
        <choice idref="sect53">If you do not have the Chaksu Pipes, or do not wish to use them, <link-text>turn to 53</link-text>.</choice>
       </data>
@@ -3790,7 +3798,7 @@ small11: sword, axe, & shield
       <meta><title>262</title></meta>
 
       <footnotes>
-       <footnote id="sect262-1-foot" idref="sect262-1"><p>As you are using your Wizard&apos;s Staff against the Scree Wyrm, you should deduct 1 <typ class="attribute">WILLPOWER</typ> point.</p></footnote>
+       <footnote id="sect262-1-foot" idref="sect262-1"><p>As you are using your Wizard&apos;s Staff against the Scree Wyrm, you should deduct 1 <typ class="attribute">WILLPOWER</typ> point.</p><p>If you do not have sufficient <typ class="attribute">WILLPOWER</typ> points, you may choose to simply subtract the specified number of <typ class="attribute">WILLPOWER</typ> points. This may leave you with a negative <typ class="attribute">WILLPOWER</typ> score, or if it was already negative, it will make your score become even more negative. Alternatively, you may choose the method used in Section 175 of <cite><a href="&link.04wotw;">War of the Wizards</a></cite> for resolving this problem: For the <typ class="attribute">WILLPOWER</typ> points you lack, you use <typ class="attribute">ENDURANCE</typ> points at a rate of 2 <typ class="attribute">ENDURANCE</typ> points for every 1 <typ class="attribute">WILLPOWER</typ> point (i.e. 2 <typ class="attribute">ENDURANCE</typ> points = 1 <typ class="attribute">WILLPOWER</typ> point).</p></footnote>
       </footnotes>
 
       <data>
@@ -4073,11 +4081,15 @@ small11: sword, axe, & shield
 
      <section class="numbered" id="sect287">
       <meta><title>287</title></meta>
+      
+      <footnotes>
+       <footnote id="sect287-1-foot" idref="sect287-1"><p>You may be forced to choose to use a Magical Power, even though all the Powers that are available to you may require you to use more <typ class="attribute">WILLPOWER</typ> points than you currently possess. If you do not have sufficient <typ class="attribute">WILLPOWER</typ> points, you may choose to simply subtract the number of <typ class="attribute">WILLPOWER</typ> points required to use the Power you select. This may leave you with a negative <typ class="attribute">WILLPOWER</typ> score, or if it was already negative, it will make your score become even more negative. Alternatively, you may choose the method used in Section 175 of <cite><a href="&link.04wotw;">War of the Wizards</a></cite> for resolving this problem: For the <typ class="attribute">WILLPOWER</typ> points you lack, you use <typ class="attribute">ENDURANCE</typ> points at a rate of 2 <typ class="attribute">ENDURANCE</typ> points for every 1 <typ class="attribute">WILLPOWER</typ> point (i.e. 2 <typ class="attribute">ENDURANCE</typ> points = 1 <typ class="attribute">WILLPOWER</typ> point).</p></footnote>
+      </footnotes>
 
       <data>
        <p><quote>Sado, I am sorry but I must refuse. My quest demands it.</quote></p>
        <p>A look of fury passes momentarily over Sado&apos;s face. <quote>Very well,</quote> he answers sadly. <quote>Then I will ensure your safe conduct from the city to aid you on your quest.</quote></p>
-       <p>A small escort of soldiers in disguise leads you and Urik through the city streets. Suddenly, you notice that you are passing the stone fortress of the Shadakine&emdash;you have been duped by Sado, he has gone ahead with his plan. A huge mob of Karnalese civilians armed with sticks and stones charges towards the fortress, and you are trapped between the enraged mob and the Shadakine who are leaving the fortress to <!--ERRTAG-RE-317448-->counterattack<!--/ERRTAG-RE-317448-->. Urik curses as you turn to face the Shadakine.</p>
+       <p>A small escort of soldiers in disguise leads you and Urik through the city streets. Suddenly, you notice that you are passing the stone fortress of the Shadakine&emdash;you have been duped by Sado, he has gone ahead with his plan. A huge mob of Karnalese civilians armed with sticks and stones charges towards the fortress, and you are trapped between the enraged mob and the Shadakine who are leaving the fortress to <!--ERRTAG-RE-317448-->counterattack<!--/ERRTAG-RE-317448-->. Urik curses as you turn to face the Shadakine.<a id="sect287-1" idref="sect287-1-foot" class="footnote" /></p>
        <choice idref="sect3">If you have the Chaksu Pipes and wish to use them, <link-text>turn to 3</link-text>.</choice>
        <choice idref="sect203">If you have the Power of Enchantment and wish to conceal your appearance, <link-text>turn to 203</link-text>.</choice>
        <choice idref="sect21">If you have the Magical Power of Elementalism and wish to use it, <link-text>turn to 21</link-text>.</choice>
@@ -4544,6 +4556,7 @@ small11: sword, axe, & shield
        <p>(<a idref="sect23">23</a>)<!--ERRTAG-RE-69071-ITEM--> Replaced <quote>says. &lsquot;but</quote> with <quote>says, &lsquot;but</quote>.<!--/ERRTAG-RE-69071-ITEM--></p>
        <p>(<a idref="sect29">29</a>)<!--ERRTAG-RE-73840-ITEM--> Replaced <quote>staff&apos;s</quote> with <quote>Staff&apos;s</quote>.<!--/ERRTAG-RE-73840-ITEM--></p>
        <p>(<a idref="sect34">34</a>)<!--ERRTAG-RE-78706-ITEM--> Replaced <quote>lake and immediately, the</quote> with <quote>lake, and immediately the</quote>.<!--/ERRTAG-RE-78706-ITEM--></p>
+       <p>(<a idref="sect37">37</a>)<!--ERRTAG-AD-93287-ITEM--> Added <quote> with an opening that overlooks a large gorge</quote> and added an extra paragraph break before the last sentence of the first paragraph, in order to make text make sense.<!--/ERRTAG-AD-93287-ITEM--></p>
        <p>(<a idref="sect39">39</a>)<!--ERRTAG-RE-82974-ITEM--> Replaced <quote>consumate</quote> with <quote>consummate</quote>.<!--/ERRTAG-RE-82974-ITEM--><!--ERRTAG-RE-83228-ITEM--> Replaced <quote>appearance, Suddenly</quote> with <quote>appearance. Suddenly</quote>.<!--/ERRTAG-RE-83228-ITEM--></p>
        <p>(<a idref="sect42">42</a>)<!--ERRTAG-RE-85433-ITEM--> Replaced <quote>hole on</quote> with <quote>hole in</quote>.<!--/ERRTAG-RE-85433-ITEM--></p>
        <p>(<a idref="sect43">43</a>)<!--ERRTAG-RE-91671-ITEM--> Replaced <quote>this power</quote> with <quote>this Power</quote>.<!--/ERRTAG-RE-91671-ITEM--></p>
@@ -4624,7 +4637,6 @@ small11: sword, axe, & shield
        <p>(<a idref="sect237">237</a>) Changed the choice to use Psychomancy to lead to <a idref="sect170">Section 170</a> rather than <a idref="sect224">Section 224</a>. <!--ERRTAG-AD-293821-ITEM--> Added <quote>If you have the Magical Power of Prophecy and wish to use it, turn to 224.</quote>.<!--/ERRTAG-AD-293821-ITEM--><!--ERRTAG-RE-2940381-ITEM--> Replaced <quote>If you do not possess this skill</quote> with <quote>If you do not possess either of these skills, or do not wish to use them</quote>.<!--/ERRTAG-RE-2940381-ITEM--></p>
        <p>(<a idref="sect247">247</a>)<!--ERRTAG-RE-277805-ITEM--> Replaced <quote>purple, he</quote> with <quote>purple; he</quote>.<!--/ERRTAG-RE-277805-ITEM--> Made Urik&apos;s quote from The Way of the Shianti a separate paragraph.</p>
        <p>(<a idref="sect249">249</a>)<!--ERRTAG-RE-280559-ITEM--> Replaced <quote>Toa tree</quote> with <quote>toa tree</quote>.<!--/ERRTAG-RE-280559-ITEM--></p>
-       <p>(<a idref="sect250">250</a>)<!--ERRTAG-RE-282018-ITEM--> Replaced <quote> actions, prevents</quote> with <quote> actions prevents</quote>.<!--/ERRTAG-RE-282018-ITEM--><!--ERRTAG-RE-282421-ITEM--> Replaced <quote>&lsquot;You man!&rsquot; </quote> with <quote>&lsquot;You, man!&rsquot; </quote>.<!--/ERRTAG-RE-282421-ITEM--><!--ERRTAG-RE-282493-ITEM--> Replaced <quote>Sado, &lsquot;what</quote> with <quote>Sado, &lsquot;What</quote>.<!--/ERRTAG-RE-282493-ITEM--></p>
        <p>(<a idref="sect253">253</a>)<!--ERRTAG-RE-285655-ITEM--> Replaced <quote>life force</quote> with <quote>life-force</quote>.<!--/ERRTAG-RE-285655-ITEM--><!--ERRTAG-RE-285769-ITEM--> Replaced <quote>staff</quote> with <quote>Staff</quote>.<!--/ERRTAG-RE-285769-ITEM--></p>
        <p>(<a idref="sect254">254</a>)<!--ERRTAG-RE-286603-ITEM--> Replaced <quote>fight you</quote> with <quote>fight, you</quote>.<!--/ERRTAG-RE-286603-ITEM--><!--ERRTAG-RE-286946-ITEM--> Replaced <quote>completely <!--link-text-->turn</quote> with <quote>completely, <!--link-text-->turn</quote>.<!--/ERRTAG-RE-286946-ITEM--></p>
        <p>(<a idref="sect255">255</a>)<!--ERRTAG-RE-287427-ITEM--> Replaced <quote>Scree Wrym</quote> with <quote>Scree Wyrm</quote>.<!--/ERRTAG-RE-287427-ITEM--><!--ERRTAG-RE-287616-ITEM--> Replaced <quote>death throes</quote> with <quote>death-throes</quote>.<!--/ERRTAG-RE-287616-ITEM--></p>
@@ -4668,19 +4680,27 @@ small11: sword, axe, & shield
      <p>(<a idref="gamerulz">The Game Rules</a>) If you have completed <cite>Grey Star the Wizard</cite>, your <typ class="attribute">WILLPOWER</typ> score will be zero before you begin this book. It doesn&apos;t seem fair to start this book with only 10 <typ class="attribute">WILLPOWER</typ> points, so you may choose to create a new <typ class="attribute">WILLPOWER</typ> score by choosing a number from the <a idref="random">Random Number Table</a> and adding 20. You may also choose to add the 10 <typ class="attribute">WILLPOWER</typ> point bonus to this new score.</p>
      <p>Alternatively, you may wish to use your original <typ class="attribute">WILLPOWER</typ> score from the beginning of <cite>Grey Star the Wizard</cite>, and add 10 bonus points to this.</p>
      <p>(<a idref="gamerulz">The Game Rules</a>) If you choose Alchemy as your new Magical Power, you also receive a Herb Pouch with contents, as detailed in the <a idref="equipmnt">Equipment</a> section.</p>
+     <p>(<a idref="gamerulz">The Game Rules</a>) There are sections of this book that describe how you use a Magical Power and how many <typ class="attribute">WILLPOWER</typ> points you spend, without giving you a choice and without taking into account that you may not have the required number of <typ class="attribute">WILLPOWER</typ> points left. You may choose to simply subtract the specified number of <typ class="attribute">WILLPOWER</typ> points. This may leave you with a negative <typ class="attribute">WILLPOWER</typ> score, or if it was already negative, it will make your score become even more negative.</p>
+     <p>Alternatively, you may may wish to use a method given in Section 175 of <cite><a href="&link.04wotw;">War of the Wizards</a></cite>, which contains one such case of mandated use of magic: If you do not have enough <typ class="attribute">WILLPOWER</typ> points, then you use <typ class="attribute">ENDURANCE</typ> points at a rate of 2 <typ class="attribute">ENDURANCE</typ> points for every 1 <typ class="attribute">WILLPOWER</typ> point you lack (i.e. 2 <typ class="attribute">ENDURANCE</typ> points = 1 <typ class="attribute">WILLPOWER</typ> point). If your <typ class="attribute">ENDURANCE</typ> score falls to zero, you are dead and the adventure is over.</p>
+     <p>Note that you may never <em>choose</em> to use a Magical Power or your Wizard&apos;s Staff if you do not have sufficient <typ class="attribute">WILLPOWER</typ> points. This method also cannot be used in cases where you lose <typ class="attribute">WILLPOWER</typ> points for a reason other than using magic, for instance as a result of mental or magical attacks. In these cases, you may end up with a negative <typ class="attribute">WILLPOWER</typ> score.</p>
           <p>(<a idref="gamerulz">The Game Rules</a>) It is possible for your <typ class="attribute">WILLPOWER</typ> to fall below zero. For example, if you are the victim of an attack that drains your <typ class="attribute">WILLPOWER</typ>, your score may be forced below zero. If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to cast spells or use the magical properties of your Wizard&apos;s Staff until your score is again above zero. You can still use your Wizard&apos;s Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>.</p>
           <p>(<a idref="powers">Magical Powers</a>) If your <typ class="attribute">WILLPOWER</typ> falls to zero or below, you will not be able to use the magical properties of your Wizard&apos;s Staff until your score is again above zero. You can still use your Wizard&apos;s Staff in combat as a normal weapon, but you must deduct 6 points from your <typ class="attribute">COMBAT SKILL</typ>.</p>
      <p>(<a idref="equipmnt">Equipment</a>) If you have mastered the Lesser Magick of Alchemy and therefore have a Herb Pouch, you may choose to keep potions, vials, or ingredients in either the Herb Pouch or your Backpack. All other Backpack Items must be kept in your Backpack.</p>
-     <p>(<a idref="sect20">Section 20</a>) Turn directly to <a idref="sect149">Section 149</a> if the Magdi is still alive after 4 rounds. Do not finish the combat.</p>
-     <p>(<a idref="sect45">Section 45</a>) After taking the Karmo potion and fighting your opponent, halve your <typ class="attribute">ENDURANCE</typ> and <typ class="attribute">WILLPOWER</typ> scores. It is at your discretion whether you should apply the penalty to your <typ class="attribute">ENDURANCE</typ> from the <a idref="random">Random Number Table</a> before or after halving your score. The former option is the most beneficial.</p>
-     <p>(<a idref="sect112">Section 112</a>) Remember to deduct the total from your <typ class="attribute">WILLPOWER</typ> score before turning.</p>
-     <p>(<a idref="sect133">Section 133</a>) If you wish to take the Sheath, record it as a Special Item on your <a idref="action">Action Chart</a>.</p>
-     <p>(<a idref="sect136">Section 136</a>) Remember to deduct the total from your <typ class="attribute">WILLPOWER</typ> score before turning.</p>
-     <p>(<a idref="sect148">Section 148</a>) If you have not already done so, mark the Black Rod as a Special Item on your <a idref="action">Action Chart</a>.</p>
-     <p>(<a idref="sect162">Section 162</a>) As you have used your Power of Evocation against the Deathgaunts, you should deduct 3 <typ class="attribute">WILLPOWER</typ> points. (cf. <a idref="sect120">Section 120</a>)</p>
-     <p>(<a idref="sect250">Section 250</a>) From this point in the story, this book suffers from a game design problem in that many sections give you options between using different forms of magic, but no option for what to do if your <typ class="attribute">WILLPOWER</typ> score has reached zero or below. If you encounter such a situation, you may choose one of the options anyway and continue subtracting <typ class="attribute">WILLPOWER</typ> points, or you may conclude that Grey Star has failed his mission and that the adventure is over.</p>
-     <p>(<a idref="sect262">Section 262</a>) As you are using your Wizard&apos;s Staff against the Scree Wyrm, you should deduct 1 <typ class="attribute">WILLPOWER</typ> point.</p>
-     <p>(<a idref="sect299">Section 299</a>) If you use a leaf from a Bundle of dried Azawood Leaves, the Bundle now has two leaves left.</p>
+     <p>(<a idref="sect20">20</a>) Turn directly to <a idref="sect149">Section 149</a> if the Magdi is still alive after 4 rounds. Do not finish the combat.</p>
+          <p>(<a idref="sect45">45</a>) After taking the Karmo potion and fighting your opponent, halve your <typ class="attribute">ENDURANCE</typ> and <typ class="attribute">WILLPOWER</typ> scores. It is at your discretion whether you should apply the penalty to your <typ class="attribute">ENDURANCE</typ> from the <a idref="random">Random Number Table</a> before or after halving your score. The former option is the most beneficial.</p>
+          <p>(<a idref="sect91">91</a>) You are forced to choose to use a Magical Power, even though all the Powers that are available to you may require you to use more <typ class="attribute">WILLPOWER</typ> points than you currently possess. If you do not have sufficient <typ class="attribute">WILLPOWER</typ> points, you may choose to simply subtract the number of <typ class="attribute">WILLPOWER</typ> points required to use the Power you select. This may leave you with a negative <typ class="attribute">WILLPOWER</typ> score, or if it was already negative, it will make your score become even more negative. Alternatively, you may choose the method used in Section 175 of <cite><a href="&link.04wotw;">War of the Wizards</a></cite> for resolving this problem: For the <typ class="attribute">WILLPOWER</typ> points you lack, you use <typ class="attribute">ENDURANCE</typ> points at a rate of 2 <typ class="attribute">ENDURANCE</typ> points for every 1 <typ class="attribute">WILLPOWER</typ> point (i.e. 2 <typ class="attribute">ENDURANCE</typ> points = 1 <typ class="attribute">WILLPOWER</typ> point).</p>
+     <p>(<a idref="sect112">112</a>) Remember to deduct the total from your <typ class="attribute">WILLPOWER</typ> score before turning.</p>
+     <p>(<a idref="sect133">133</a>) If you wish to take the Sheath, record it as a Special Item on your <a idref="action">Action Chart</a>.</p>
+     <p>(<a idref="sect136">136</a>) Remember to deduct the total from your <typ class="attribute">WILLPOWER</typ> score before turning.</p>
+     <p>(<a idref="sect148">148</a>) If you have not already done so, mark the Black Rod as a Special Item on your <a idref="action">Action Chart</a>.</p>
+     <p>(<a idref="sect162">162</a>) As you have used your Power of Evocation against the Deathgaunts, you should deduct 3 <typ class="attribute">WILLPOWER</typ> points. (cf. <a idref="sect120">Section 120</a>)</p>
+     <p>(<a idref="sect206">206</a>) If you do not have sufficient <typ class="attribute">WILLPOWER</typ> points, you may choose to simply subtract the specified number of <typ class="attribute">WILLPOWER</typ> points. This may leave you with a negative <typ class="attribute">WILLPOWER</typ> score, or if it was already negative, it will make your score become even more negative. Alternatively, you may choose the method used in Section 175 of <cite><a href="&link.04wotw;">War of the Wizards</a></cite> for resolving this problem: For the <typ class="attribute">WILLPOWER</typ> points you lack, you use <typ class="attribute">ENDURANCE</typ> points at a rate of 2 <typ class="attribute">ENDURANCE</typ> points for every 1 <typ class="attribute">WILLPOWER</typ> point (i.e. 2 <typ class="attribute">ENDURANCE</typ> points = 1 <typ class="attribute">WILLPOWER</typ> point).</p>
+     <p>(<a idref="sect207">207</a>) You are forced to choose to use a Magical Power, even though all the Powers that are available to you may require you to use more <typ class="attribute">WILLPOWER</typ> points than you currently possess. If you do not have sufficient <typ class="attribute">WILLPOWER</typ> points, you may choose to simply subtract the number of <typ class="attribute">WILLPOWER</typ> points required to use the Power you select. This may leave you with a negative <typ class="attribute">WILLPOWER</typ> score, or if it was already negative, it will make your score become even more negative. Alternatively, you may choose the method used in Section 175 of <cite><a href="&link.04wotw;">War of the Wizards</a></cite> for resolving this problem: For the <typ class="attribute">WILLPOWER</typ> points you lack, you use <typ class="attribute">ENDURANCE</typ> points at a rate of 2 <typ class="attribute">ENDURANCE</typ> points for every 1 <typ class="attribute">WILLPOWER</typ> point (i.e. 2 <typ class="attribute">ENDURANCE</typ> points = 1 <typ class="attribute">WILLPOWER</typ> point).</p>
+     <p>(<a idref="sect250">250</a>) From this point in the story, this book suffers from a game design problem in that many sections give you options between using different forms of magic, but no option for what to do if your <typ class="attribute">WILLPOWER</typ> score has reached zero or below. If you encounter such a situation, you may choose one of the options anyway and continue subtracting <typ class="attribute">WILLPOWER</typ> points, or you may conclude that Grey Star has failed his mission and that the adventure is over.</p>
+     <p>(<a idref="sect262">262</a>) As you are using your Wizard&apos;s Staff against the Scree Wyrm, you should deduct 1 <typ class="attribute">WILLPOWER</typ> point.</p>
+     <p>If you do not have sufficient <typ class="attribute">WILLPOWER</typ> points, you may choose to simply subtract the specified number of <typ class="attribute">WILLPOWER</typ> points. This may leave you with a negative <typ class="attribute">WILLPOWER</typ> score, or if it was already negative, it will make your score become even more negative. Alternatively, you may choose the method used in Section 175 of <cite><a href="&link.04wotw;">War of the Wizards</a></cite> for resolving this problem: For the <typ class="attribute">WILLPOWER</typ> points you lack, you use <typ class="attribute">ENDURANCE</typ> points at a rate of 2 <typ class="attribute">ENDURANCE</typ> points for every 1 <typ class="attribute">WILLPOWER</typ> point (i.e. 2 <typ class="attribute">ENDURANCE</typ> points = 1 <typ class="attribute">WILLPOWER</typ> point).</p>
+     <p>(<a idref="sect287">287</a>) You may be forced to choose to use a Magical Power, even though all the Powers that are available to you may require you to use more <typ class="attribute">WILLPOWER</typ> points than you currently possess. If you do not have sufficient <typ class="attribute">WILLPOWER</typ> points, you may choose to simply subtract the number of <typ class="attribute">WILLPOWER</typ> points required to use the Power you select. This may leave you with a negative <typ class="attribute">WILLPOWER</typ> score, or if it was already negative, it will make your score become even more negative. Alternatively, you may choose the method used in Section 175 of <cite><a href="&link.04wotw;">War of the Wizards</a></cite> for resolving this problem: For the <typ class="attribute">WILLPOWER</typ> points you lack, you use <typ class="attribute">ENDURANCE</typ> points at a rate of 2 <typ class="attribute">ENDURANCE</typ> points for every 1 <typ class="attribute">WILLPOWER</typ> point (i.e. 2 <typ class="attribute">ENDURANCE</typ> points = 1 <typ class="attribute">WILLPOWER</typ> point).</p>
+     <p>(<a idref="sect299">299</a>) If you use a leaf from a Bundle of dried Azawood Leaves, the Bundle now has three leaves left.</p>
     </data>
    </section>
 
@@ -4732,7 +4752,7 @@ small11: sword, axe, & shield
         <li><a idref="sect71">71</a>, <a idref="sect249">249</a></li>
         <li><a idref="sect72">72</a>, <a idref="sect209">209</a>, <a idref="sect213">213</a>, <a idref="sect256">256</a>, <a idref="sect269">269</a></li>
         <li><a idref="sect103">103</a></li>
-        <li><a idref="sect117">117</a>, <a idref="sect132">132</a>, <a idref="sect163">163</a>, <a idref="sect188">188</a>, <a idref="sect223">223</a>, <a idref="sect258">258</a>, <a idref="sect261">261</a></li>
+        <li><a idref="sect117">117</a>, <a idref="sect163">163</a>, <a idref="sect188">188</a>, <a idref="sect223">223</a>, <a idref="sect258">258</a>, <a idref="sect261">261</a></li>
         <li><a idref="sect133">133</a></li>
         <li><a idref="sect200">200</a></li>
         <li><a idref="sect222">222</a></li>
@@ -4749,3 +4769,20 @@ small11: sword, axe, & shield
   </data>
  </section>
 </gamebook>
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: xml
+sgml-omittag:nil
+sgml-shorttag:nil
+sgml-namecase-general:nil
+sgml-general-insert-case:lower
+sgml-minimize-attributes:nil
+sgml-always-quote-attributes:t
+sgml-indent-step:1
+sgml-indent-data:nil
+sgml-parent-document:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->
