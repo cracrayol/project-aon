@@ -3,25 +3,19 @@
   <title>The Deathlord of Ixia: Corrections</title>
   <script type="text/javascript" language="JavaScript">
    <!--
-    if( top.location != this.location ) {
-      if( top.viewedOnline( ) && !top.bookPublished[ "17tdoi" ] ) {
-        document.write( "<base href=\"" + top.baselocation + "sanctum/" + top.bookLocations[ "17tdoi" ] + "/\" target=\"_parent\" />" );
-      }
-      else {
-        document.write( "<base href=\"" + top.baselocation + top.bookLocations[ "17tdoi" ] + "/\" target=\"_parent\" />" );
-      }
-      document.write( "<link rel=\"stylesheet\" type=\"text/css\" href=\"" + top.baselocation + "editor/changes/style/" + top.changesStyle + "\" />" );
-      document.write( "<link rel=\"stylesheet\" type=\"text/css\" href=\"" + top.baselocation + "editor/changes/style/" + top.changesFilter + "\" />" );
+    if( top.viewedOnline( ) && !top.bookPublished[ "17tdoi" ] ) {
+      document.write( "<base href=\"" + top.baselocation + "sanctum/" + top.bookLocations[ "17tdoi" ] + "/\" target=\"_parent\" />" );
     }
     else {
-      document.write( "<link rel=\"stylesheet\" type=\"text/css\" href=\"../style/editor.css\" />" );
-      document.write( "<link rel=\"stylesheet\" type=\"text/css\" href=\"../style/all.css\" />" );
+      document.write( "<base href=\"" + top.baselocation + top.bookLocations[ "17tdoi" ] + "/\" target=\"_parent\" />" );
     }
+    document.write( "<link rel=\"stylesheet\" type=\"text/css\" href=\"" + top.baselocation + "editor/changes/style/" + top.changesStyle + "\" />" );
+    document.write( "<link rel=\"stylesheet\" type=\"text/css\" href=\"" + top.baselocation + "editor/changes/style/" + top.changesFilter + "\" />" );
    //-->
   </script>
  </head>
 
- <body>
+ <body onload="return setSelections( )">
   <h1>The Deathlord of Ixia: Corrections</h1>
   <script type="text/javascript" language="JavaScript">
    <!--
@@ -31,16 +25,16 @@
 
 <h2>Key</h2>
 <div class="e">Erratum (Uncorrected)</div>
-<div class="ce">Erratum (Corrected)</div>
 <div class="re">Erratum (Rejected)</div>
+<div class="ce">Erratum (Corrected)</div>
 <div class="e no-before">&nbsp;</div>
 <div class="n">Non-erratum (Uncorrected)</div>
-<div class="cn">Non-erratum (Corrected)</div>
 <div class="rn">Non-erratum (Rejected)</div>
+<div class="cn">Non-erratum (Corrected)</div>
 <div class="n no-before">&nbsp;</div>
-<div class="f">Footnote (Unimplemented)</div>
-<div class="cf">Footnote (Implemented)</div>
+<div class="f">Footnote (Unimplementted)</div>
 <div class="rf">Footnote (Rejected)</div>
+<div class="cf">Footnote (Implemented)</div>
 <div class="f no-before">&nbsp;</div>
 <div class="u">Unknown (erratum vs. non-erratum)</div>
 <div>&nbsp;</div>
@@ -55,194 +49,381 @@
 <div class="cm tw">Thomas Wolmer</div>
 
 <h2>Corrections</h2>
-
 <!--mergecorrhtml:BEGIN-->
-<div class="section"><a name="_unknown">_unknown</a></div>
 <div class="section"><a name="toc">toc</a></div>
 <div class="section"><a name="title">title</a></div>
 <div class="section"><a name="dedicate">dedicate</a></div>
 <div class="section"><a name="acknwldg">acknwldg</a></div>
 <div class="section"><a name="coming">coming</a></div>
 <div class="section"><a name="tssf">tssf</a></div>
+<div class="e"><a href="tssf.htm">The Story So Far . . .</a> #1: free-state -&gt; Freeland</div>
+<div class="e"><a href="tssf.htm">The Story So Far . . .</a> #2: Kai lord -&gt; Kai Lord</div>
+<div class="e"><a href="tssf.htm">The Story So Far . . .</a> #3: north-east -&gt; northeast</div>
+<div class="e"><a href="tssf.htm">The Story So Far . . .</a> #4: new-found -&gt; newfound <div class="cm so">x2</div></div>
+<div class="e"><a href="tssf.htm">The Story So Far . . .</a> #5: shadow gate -&gt; Shadow Gate <div class="cm so">x3</div></div>
+<div class="n"><a href="tssf.htm">The Story So Far . . .</a> #6: of his prison, and in possession <div class="cm so">Italicise 'and'.</div></div>
+<div class="e"><a href="tssf.htm">The Story So Far . . .</a> #7: freestate -&gt; Freeland <div class="cm ">x2</div></div>
+<div class="e"><a href="tssf.htm">The Story So Far . . .</a> #8: doomed to fail -&gt; doomed to failure <div class="cm so">Unsure about this one.</div></div>
+<div class="n"><a href="tssf.htm">The Story So Far . . .</a> #9: skyrider <div class="cm so">Italicise.</div></div>
+<div class="e"><a href="tssf.htm">The Story So Far . . .</a> #10: Kai lord -&gt; Kai Lord</div>
 <div class="section"><a name="gamerulz">gamerulz</a></div>
+<div class="e"><a href="gamerulz.htm">The Game Rules</a> #1: that you will find in the front of this book. For ease of use, and for further adventuring, it is recommended that you photocopy these pages <div class="cm so">Remove this.</div></div>
+<div class="e"><a href="gamerulz.htm">The Game Rules</a> #2: on the last page of this book <div class="cm so">Remove this.</div></div>
+<div class="e"><a href="gamerulz.htm">The Game Rules</a> #3: (ie, -&gt; (i.e. <div class="cm so">x2</div></div>
+<div class="f"><a href="gamerulz.htm">The Game Rules</a> #4: The Discipline bonuses mentioned do not affect your permanent scores. If you have completed previous adventures, the Disciplines that you have mastered may still be beneficial. See the Grand Master Rules section of the Rules Handbook for details. <div class="cm so">copied directly from TDC.</div></div>
+<div class="f"><a href="gamerulz.htm">The Game Rules</a> #5: <div class="cm so">New footnote required regarding restoration of Korlinium Scabbard and Silver Bracers to and removal of Helshezag and Dagger of Vashna from permissable Special Items list.</div></div>
 <div class="section"><a name="discplnz">discplnz</a></div>
+<div class="f"><a href="discplnz.htm">. . . Disciplines</a> #1: The rules of the books in the Magnakai series (6-12) and the fact that the 'rank of Kai Grand Defender . . . means you are skilled in two . . . weapons' imply that for each book that you complete of the Grand Master series (13-20), you will gain mastery of an additional Kai weapon. E.g. if you complete The Plague Lords of Ruel and have the Grand Master Discipline of Grand Weaponmastery at the beginning of the next book, you can choose an additional Weapon from the list to have Mastery of. <div class="cm so">copied directly from TDC.</div></div>
+<div class="e"><a href="discplnz.htm">. . . Disciplines</a> #2: gods -&gt; Gods</div>
+<div class="e"><a href="discplnz.htm">. . . Disciplines</a> #3: Magi-Magic -&gt; Magi-magic</div>
+<div class="e"><a href="discplnz.htm">. . . Disciplines</a> #4: opposite and overleaf -&gt; below</div>
 <div class="section"><a name="powers">powers</a></div>
 <div class="section"><a name="equipmnt">equipmnt</a></div>
+<div class="e"><a href="equipmnt.htm">Equipment</a> #1: safe-keeping -&gt; safekeeping</div>
+<div class="e"><a href="equipmnt.htm">Equipment</a> #2: (see the inside front cover of this book <div class="cm so">remove this.</div></div>
+<div class="u"><a href="equipmnt.htm">Equipment</a> #3: map <div class="cm so">encode as link to map.</div></div>
+<div class="e"><a href="equipmnt.htm">Equipment</a> #4: (eg -&gt; (e.g.</div>
+<div class="e"><a href="equipmnt.htm">Equipment</a> #5: arrow -&gt; Arrow <div class="cm so">x5</div></div>
+<div class="e"><a href="equipmnt.htm">Equipment</a> #6: bow -&gt; Bow <div class="cm so">x8</div></div>
+<div class="e"><a href="equipmnt.htm">Equipment</a> #7: quiver -&gt; Quiver</div>
 <div class="section"><a name="cmbtrulz">cmbtrulz</a></div>
+<div class="e"><a href="cmbtrulz.htm">Rules for Combat</a> #1: on the inside back cover of this book <div class="cm so">Remove this</div></div>
+<div class="e"><a href="cmbtrulz.htm">Rules for Combat</a> #2: on the page after the Random Number Table -&gt; in the back of this book</div>
+<div class="e"><a href="cmbtrulz.htm">Rules for Combat</a> #3: Lone Wolf (Combat Skill 32) -&gt; Lone Wolf (Combat Skill 27)</div>
+<div class="e"><a href="cmbtrulz.htm">Rules for Combat</a> #4: adds 3 points to his -&gt; adds 8 points to his</div>
 <div class="section"><a name="lorecrcl">lorecrcl</a></div>
 <div class="section"><a name="levels">levels</a></div>
 <div class="section"><a name="imprvdsc">imprvdsc</a></div>
+<div class="e"><a href="imprvdsc.htm">Improved . . . Disciplines</a> #1: ie. lightning -&gt; i.e. lightning</div>
+<div class="e"><a href="imprvdsc.htm">Improved . . . Disciplines</a> #2: 'Mindfort' -&gt; Mindfort <div class="cm so">perhaps italicise this first occurrence rather than have the quote marks.</div></div>
+<div class="n"><a href="imprvdsc.htm">Improved . . . Disciplines</a> #3: Slow Fall <div class="cm so">Encode as Spell.</div></div>
+<div class="n"><a href="imprvdsc.htm">Improved . . . Disciplines</a> #4: Breathe Water <div class="cm so">Encode as Spell.</div></div>
+<div class="e"><a href="imprvdsc.htm">Improved . . . Disciplines</a> #5: 'Improved Grand Master Disciplines' -&gt; Improved Grand Master Disciplines</div>
 <div class="section"><a name="kaiwisdm">kaiwisdm</a></div>
+<div class="e"><a href="kaiwisdm.htm">. . . Wisdom</a> #1: Incorrect order <div class="cm so">In my UK copy of TDoI, Grand Master's Wisdom appears before Improved Grand Master Disciplines and Levels of Kai Grand Mastership. Books 16 and 18 also have this change in order, but books 19 and 20 have the normal order.</div></div>
+<div class="e"><a href="kaiwisdm.htm">. . . Wisdom</a> #2: value at all,. -&gt; value at all.</div>
 <div class="section"><a name="sage">sage</a></div>
 <div class="section"><a name="numbered">numbered</a></div>
 <div class="section"><a name="part1">part1</a></div>
 <div class="section"><a name="sect1">sect1</a></div>
+<div class="e"><a href="sect1.htm">1</a> #1: Kai aspirants -&gt; Kai Aspirants <div class="cm so">As in "Kai Master".</div></div>
+<div class="e"><a href="sect1.htm">1</a> #2: urges Rimoah, 'Banedon -&gt; urges Rimoah. 'Banedon</div>
+<div class="n"><a href="sect1.htm">1</a> #3: Skyrider <div class="cm so">Italicise x3.</div></div>
+<div class="e"><a href="sect1.htm">1</a> #4: iceboat -&gt; ice-boat <div class="cm so">as per the two other ocurrences in this section.</div></div>
+<div class="e"><a href="sect1.htm">1</a> #5: seven days the pilot -&gt; seven days, the pilot</div>
 <div class="section"><a name="sect2">sect2</a></div>
 <div class="section"><a name="sect3">sect3</a></div>
+<div class="e"><a href="sect3.htm">3</a> #1: demonlord -&gt; Demonlord (so: cf. deathlord.]</div>
+<div class="e"><a href="sect3.htm">3</a> #2: down-draught -&gt; down-draft <div class="cm so">Dictionary.com says that 'draught' is chiefly British in usage, but personally, I would only ever use it to describe liquid rather than air current.</div></div>
+<div class="e"><a href="sect3.htm">3</a> #3: demonlord's -&gt; Demonlord's (so: cf. deathlord.]</div>
 <div class="section"><a name="sect4">sect4</a></div>
 <div class="section"><a name="sect5">sect5</a></div>
 <div class="section"><a name="sect6">sect6</a></div>
+<div class="e"><a href="sect6.htm">6</a> #1: Click -&gt; click <div class="cm so">and encode as onomatopoeia.</div></div>
+<div class="e"><a href="sect6.htm">6</a> #2: bow -&gt; Bow</div>
 <div class="section"><a name="sect7">sect7</a></div>
+<div class="e"><a href="sect7.htm">7</a> #1: yards beyond you -&gt; yards beyond, you</div>
+<div class="e"><a href="sect7.htm">7</a> #2: it as if -&gt; it is as if</div>
 <div class="section"><a name="sect8">sect8</a></div>
+<div class="e"><a href="sect8.htm">8</a> #1: bow -&gt; Bow</div>
+<div class="e"><a href="sect8.htm">8</a> #2: If you cannot -&gt; If you do not <div class="cm so">Strange phrasiology.</div></div>
 <div class="section"><a name="sect9">sect9</a></div>
+<div class="e"><a href="sect9.htm">9</a> #1: ultra-violet -&gt; ultraviolet <div class="cm so">as per Section 39 and 313.</div></div>
 <div class="section"><a name="sect10">sect10</a></div>
+<div class="f"><a href="sect10.htm">10</a> #1: <div class="cm so">This is the correct answer to the puzzle in Section 69 and Section 213.</div></div>
+<div class="n"><a href="sect10.htm">10</a> #2: clunk <div class="cm so">encode as onomatopoeia.</div></div>
 <div class="section"><a name="sect11">sect11</a></div>
 <div class="section"><a name="sect12">sect12</a></div>
 <div class="section"><a name="sect13">sect13</a></div>
+<div class="e"><a href="sect13.htm">13</a> #1: icy sea water -&gt; icy seawater</div>
 <div class="section"><a name="sect14">sect14</a></div>
+<div class="e"><a href="sect14.htm">14</a> #1: who were -&gt; who are <div class="cm so">LW is told in present tense.</div></div>
 <div class="section"><a name="sect15">sect15</a></div>
+<div class="e"><a href="sect15.htm">15</a> #1: rough hewn -&gt; rough-hewn <div class="cm so">or, roughly hewn</div></div>
+<div class="e"><a href="sect15.htm">15</a> #2: Backpack item -&gt; Backpack Item</div>
 <div class="section"><a name="sect16">sect16</a></div>
 <div class="section"><a name="sect17">sect17</a></div>
 <div class="section"><a name="sect18">sect18</a></div>
+<div class="e"><a href="sect18.htm">18</a> #1: Skark oil -&gt; skark oil <div class="cm so">not an item or combatable opponent.</div></div>
+<div class="e"><a href="sect18.htm">18</a> #2: 'Do not fear,' <div class="cm so">New paragraph for speaker.</div></div>
+<div class="e"><a href="sect18.htm">18</a> #3: fear,' you reply, 'I -&gt; fear, you reply. 'I</div>
 <div class="section"><a name="sect19">sect19</a></div>
+<div class="e"><a href="sect19.htm">19</a> #1: Kai mastery -&gt; Kai Mastery</div>
+<div class="e"><a href="sect19.htm">19</a> #2: attained, above -&gt; attained above</div>
 <div class="section"><a name="sect20">sect20</a></div>
+<div class="e"><a href="sect20.htm">20</a> #1: now-open -&gt; now open</div>
 <div class="section"><a name="sect21">sect21</a></div>
 <div class="section"><a name="sect22">sect22</a></div>
+<div class="n"><a href="sect22.htm">22</a> #1: Skyrider's <div class="cm so">italicise.</div></div>
+<div class="n"><a href="sect22.htm">22</a> #2: Skyrider <div class="cm so">italicise.</div></div>
+<div class="e"><a href="sect22.htm">22</a> #3: silver-haired King -&gt; silver-haired king.</div>
+<div class="e"><a href="sect22.htm">22</a> #4: King's -&gt; king's <div class="cm ">x3</div></div>
+<div class="e"><a href="sect22.htm">22</a> #5: freestate -&gt; Freeland</div>
+<div class="e"><a href="sect22.htm">22</a> #6: in previous Lone Wolf adventures -&gt; in any previous Lone Wolf adventure <div class="cm so">or similar</div></div>
+<div class="e"><a href="sect22.htm">22</a> #7: If you have not -&gt; If you did not</div>
 <div class="section"><a name="sect23">sect23</a></div>
+<div class="e"><a href="sect23.htm">23</a> #1: Ixian undead -&gt; Ixian Undead</div>
 <div class="section"><a name="sect24">sect24</a></div>
+<div class="e"><a href="sect24.htm">24</a> #1: your psi-screen -&gt; your Psi-screen <div class="cm so">as per tlov changes</div></div>
+<div class="e"><a href="sect24.htm">24</a> #2: spindly-limbed, black insectiods -&gt; spindly-limbed black insectoids <div class="cm so">I think this is an appropriate change?</div></div>
+<div class="e"><a href="sect24.htm">24</a> #3: head in which -&gt; head from which</div>
+<div class="e"><a href="sect24.htm">24</a> #4: bow -&gt; Bow <div class="cm so">x2</div></div>
 <div class="section"><a name="sect25">sect25</a></div>
+<div class="e"><a href="sect25.htm">25</a> #1: sixth sense -&gt; Sixth Sense</div>
 <div class="section"><a name="sect26">sect26</a></div>
+<div class="e"><a href="sect26.htm">26</a> #1: camouflage -&gt; Camouflage</div>
+<div class="e"><a href="sect26.htm">26</a> #2: Kai mastery -&gt; Kai Mastery</div>
 <div class="section"><a name="sect27">sect27</a></div>
 <div class="section"><a name="sect28">sect28</a></div>
 <div class="section"><a name="sect29">sect29</a></div>
+<div class="e"><a href="sect29.htm">29</a> #1: - Slow Fall - -&gt; Slow Fall <div class="cm so">and encode as Spell.</div></div>
 <div class="section"><a name="sect30">sect30</a></div>
+<div class="e"><a href="sect30.htm">30</a> #1: camouflage -&gt; Camouflage</div>
 <div class="section"><a name="sect31">sect31</a></div>
+<div class="f"><a href="sect31.htm">31</a> #1: <div class="cm so">would this bonus include Kai-blast damage?</div></div>
 <div class="section"><a name="sect32">sect32</a></div>
+<div class="n"><a href="sect32.htm">32</a> #1: coup de grace -&gt; coup de grâce <div class="cm so">and italicise</div></div>
+<div class="e"><a href="sect32.htm">32</a> #2: by a short -&gt; by means of a short</div>
 <div class="section"><a name="sect33">sect33</a></div>
 <div class="section"><a name="sect34">sect34</a></div>
 <div class="section"><a name="sect35">sect35</a></div>
 <div class="section"><a name="sect36">sect36</a></div>
 <div class="section"><a name="sect37">sect37</a></div>
 <div class="section"><a name="sect38">sect38</a></div>
+<div class="e"><a href="sect38.htm">38</a> #1: demonlord -&gt; Demonlord</div>
 <div class="section"><a name="sect39">sect39</a></div>
+<div class="e"><a href="sect39.htm">39</a> #1: kai mastery -&gt; Kai Mastery</div>
+<div class="e"><a href="sect39.htm">39</a> #2: splutters, 'it's -&gt; splutters. 'It's</div>
 <div class="section"><a name="sect40">sect40</a></div>
+<div class="e"><a href="sect40.htm">40</a> #1: Upon the instant -&gt; At the instant</div>
+<div class="e"><a href="sect40.htm">40</a> #2: demonlord's -&gt; Demonlord's</div>
 <div class="section"><a name="sect41">sect41</a></div>
+<div class="e"><a href="sect41.htm">41</a> #1: camouflage -&gt; Camouflage</div>
 <div class="section"><a name="sect42">sect42</a></div>
+<div class="e"><a href="sect42.htm">42</a> #1: Ixian undead -&gt; Ixian Undead</div>
 <div class="section"><a name="sect43">sect43</a></div>
 <div class="section"><a name="sect44">sect44</a></div>
 <div class="section"><a name="sect45">sect45</a></div>
 <div class="section"><a name="sect46">sect46</a></div>
+<div class="n"><a href="sect46.htm">46</a> #1: Battlespell <div class="cm so">encode as spell?</div></div>
+<div class="e"><a href="sect46.htm">46</a> #2: - Gloar! - -&gt; Gloar! <div class="cm so">and encode as spell.</div></div>
 <div class="section"><a name="sect47">sect47</a></div>
 <div class="section"><a name="sect48">sect48</a></div>
+<div class="e"><a href="sect48.htm">48</a> #1: battle cry - &gt; battle-cry <div class="cm so">as per PAMoS.</div></div>
 <div class="section"><a name="sect49">sect49</a></div>
 <div class="section"><a name="sect50">sect50</a></div>
+<div class="e"><a href="sect50.htm">50</a> #1: Ixian undead -&gt; Ixian Undead</div>
 <div class="section"><a name="sect51">sect51</a></div>
 <div class="section"><a name="sect52">sect52</a></div>
+<div class="e"><a href="sect52.htm">52</a> #1: bow -&gt; Bow</div>
 <div class="section"><a name="sect53">sect53</a></div>
+<div class="e"><a href="sect53.htm">53</a> #1: Brotherhood spell -&gt; Brotherhood Spell</div>
+<div class="e"><a href="sect53.htm">53</a> #2: - Strength - -&gt; Strength <div class="cm so">and encode as spell.</div></div>
+<div class="e"><a href="sect53.htm">53</a> #3: new-found -&gt; newfound</div>
+<div class="e"><a href="sect53.htm">53</a> #4: demonlord -&gt; Demonlord</div>
 <div class="section"><a name="sect54">sect54</a></div>
+<div class="e"><a href="sect54.htm">54</a> #1: sixth sense -&gt; Sixth Sense</div>
 <div class="section"><a name="sect55">sect55</a></div>
 <div class="section"><a name="sect56">sect56</a></div>
+<div class="e"><a href="sect56.htm">56</a> #1: Crack! -&gt; crack! <div class="cm so">and encode as onomatopoeia.</div></div>
 <div class="section"><a name="sect57">sect57</a></div>
+<div class="e"><a href="sect57.htm">57</a> #1: his minions you -&gt; his minions, you</div>
 <div class="section"><a name="sect58">sect58</a></div>
 <div class="section"><a name="sect59">sect59</a></div>
+<div class="e"><a href="sect59.htm">59</a> #1: Sun Lord, or higher -&gt; Sun Lord or higher</div>
+<div class="e"><a href="sect59.htm">59</a> #2: <div class="cm so">Move Telegnosis option to top.</div></div>
 <div class="section"><a name="sect60">sect60</a></div>
 <div class="section"><a name="sect61">sect61</a></div>
+<div class="e"><a href="sect61.htm">61</a> #1: - Sense Evil - -&gt; Sense Evil <div class="cm so">and encode as Spell.</div></div>
+<div class="e"><a href="sect61.htm">61</a> #2: splutters, 'it's -&gt; splutters. 'It's</div>
 <div class="section"><a name="sect62">sect62</a></div>
+<div class="e"><a href="sect62.htm">62</a> #1: Kai mastery -&gt; Kai Mastery</div>
 <div class="section"><a name="sect63">sect63</a></div>
+<div class="e"><a href="sect63.htm">63</a> #1: Backpack items -&gt; Backpack Items</div>
 <div class="section"><a name="sect64">sect64</a></div>
 <div class="section"><a name="sect65">sect65</a></div>
 <div class="section"><a name="sect66">sect66</a></div>
+<div class="e"><a href="sect66.htm">66</a> #1: a-port -&gt; a'port</div>
 <div class="section"><a name="sect67">sect67</a></div>
+<div class="e"><a href="sect67.htm">67</a> #1: Chaos horde -&gt; Chaos Horde</div>
 <div class="section"><a name="sect68">sect68</a></div>
+<div class="e"><a href="sect68.htm">68</a> #1: Backpack items -&gt; Backpack Items</div>
+<div class="f"><a href="sect68.htm">68</a> #2: <div class="cm so">what if you only have 3 or fewer Backpack Items?</div></div>
 <div class="section"><a name="sect69">sect69</a></div>
+<div class="f"><a href="sect69.htm">69</a> #1: <div class="cm so">Add standard puzzle footnote.</div></div>
 <div class="section"><a name="sect70">sect70</a></div>
+<div class="n"><a href="sect70.htm">70</a> #1: coup de grace -&gt; coup de grâce <div class="cm so">and italicise</div></div>
 <div class="section"><a name="sect71">sect71</a></div>
 <div class="section"><a name="sect72">sect72</a></div>
+<div class="e"><a href="sect72.htm">72</a> #1: demonlord -&gt; Demonlord</div>
 <div class="section"><a name="sect73">sect73</a></div>
 <div class="section"><a name="sect74">sect74</a></div>
+<div class="e"><a href="sect74.htm">74</a> #1: Bulkhead door -&gt; Bulkhead Door</div>
 <div class="section"><a name="sect75">sect75</a></div>
+<div class="e"><a href="sect75.htm">75</a> #1: demonlord -&gt; Demonlord <div class="cm so">x2</div></div>
+<div class="e"><a href="sect75.htm">75</a> #2: delete this weapon -&gt; delete this Weapon</div>
 <div class="section"><a name="sect76">sect76</a></div>
+<div class="e"><a href="sect76.htm">76</a> #1: their plan you -&gt; their plan, you</div>
 <div class="section"><a name="sect77">sect77</a></div>
 <div class="section"><a name="sect78">sect78</a></div>
 <div class="section"><a name="sect79">sect79</a></div>
+<div class="e"><a href="sect79.htm">79</a> #1: sixth sense -&gt; Sixth Sense</div>
 <div class="section"><a name="sect80">sect80</a></div>
 <div class="section"><a name="sect81">sect81</a></div>
+<div class="e"><a href="sect81.htm">81</a> #1: Bulkhead door -&gt; Bulkhead Door</div>
 <div class="section"><a name="sect82">sect82</a></div>
 <div class="section"><a name="sect83">sect83</a></div>
+<div class="n"><a href="sect83.htm">83</a> #1: reach . . . return <div class="cm so">both of these words should be italicised in the final paragraph.</div></div>
 <div class="section"><a name="sect84">sect84</a></div>
 <div class="section"><a name="sect85">sect85</a></div>
 <div class="section"><a name="sect86">sect86</a></div>
+<div class="e"><a href="sect86.htm">86</a> #1: Kai mastery -&gt; Kai Mastery</div>
+<div class="e"><a href="sect86.htm">86</a> #2: 2-8 -&gt; 2-9 <div class="cm so">Is there an option missing?</div></div>
 <div class="section"><a name="sect87">sect87</a></div>
 <div class="section"><a name="sect88">sect88</a></div>
 <div class="section"><a name="sect89">sect89</a></div>
+<div class="e"><a href="sect89.htm">89</a> #1: at its centre -&gt; from its centre</div>
+<div class="e"><a href="sect89.htm">89</a> #2: round, by -&gt; round by</div>
 <div class="section"><a name="sect90">sect90</a></div>
+<div class="e"><a href="sect90.htm">90</a> #1: a Deathstaff that hums -&gt; the Deathstaff, which hums</div>
 <div class="section"><a name="sect91">sect91</a></div>
+<div class="e"><a href="sect91.htm">91</a> #1: - Invisible Fist - -&gt; Invisible Fist <div class="cm so">and encode as spell.</div></div>
 <div class="section"><a name="sect92">sect92</a></div>
 <div class="section"><a name="sect93">sect93</a></div>
 <div class="section"><a name="sect94">sect94</a></div>
 <div class="section"><a name="sect95">sect95</a></div>
+<div class="e"><a href="sect95.htm">95</a> #1: Kai weapon skill -&gt; Kai Weaponskill</div>
 <div class="section"><a name="sect96">sect96</a></div>
 <div class="section"><a name="sect97">sect97</a></div>
 <div class="section"><a name="sect98">sect98</a></div>
 <div class="section"><a name="sect99">sect99</a></div>
 <div class="section"><a name="sect100">sect100</a></div>
+<div class="f"><a href="sect100.htm">100</a> #1: <div class="cm so">This is the correct answer to the puzzle in Section 322.</div></div>
 <div class="section"><a name="sect101">sect101</a></div>
+<div class="e"><a href="sect101.htm">101</a> #1: korlinium scabbard -&gt; Korlinium Scabbard</div>
+<div class="e"><a href="sect101.htm">101</a> #2: korlinium scabbard -&gt; Korlinium Scabbard</div>
 <div class="section"><a name="sect102">sect102</a></div>
 <div class="section"><a name="sect103">sect103</a></div>
+<div class="e"><a href="sect103.htm">103</a> #1: Kai healing skills -&gt; Kai Healing skills</div>
+<div class="e"><a href="sect103.htm">103</a> #2: bow -&gt; Bow</div>
 <div class="section"><a name="sect104">sect104</a></div>
+<div class="e"><a href="sect104.htm">104</a> #1: still to be -&gt; to still be <div class="cm so">It may split the infinitive, but it sounds better IMHO.</div></div>
 <div class="section"><a name="sect105">sect105</a></div>
+<div class="e"><a href="sect105.htm">105</a> #1: demonlord -&gt; Demonlord <div class="cm so">x2</div></div>
 <div class="section"><a name="sect106">sect106</a></div>
+<div class="e"><a href="sect106.htm">106</a> #1: high galley -&gt; high gallery</div>
+<div class="e"><a href="sect106.htm">106</a> #2: Sun Lord, or higher -&gt; Sun Lord or higher</div>
 <div class="section"><a name="sect107">sect107</a></div>
 <div class="section"><a name="sect108">sect108</a></div>
+<div class="e"><a href="sect108.htm">108</a> #1: unnervering speed -&gt; unnerving speed</div>
 <div class="section"><a name="sect109">sect109</a></div>
+<div class="e"><a href="sect109.htm">109</a> #1: lightning swift blows -&gt; lightning-swift blows</div>
 <div class="section"><a name="sect110">sect110</a></div>
+<div class="e"><a href="sect110.htm">110</a> #1: at its centre -&gt; from its centre</div>
+<div class="e"><a href="sect110.htm">110</a> #2: bonuses to your COMBAT SKILL -&gt; bonuses <div class="cm so">the bonuses the Sommerswerd conveys vs. undead is double damage, not a CS bonus.</div></div>
+<div class="e"><a href="sect110.htm">110</a> #3: third round, by turning -&gt; third round by turning</div>
 <div class="section"><a name="sect111">sect111</a></div>
+<div class="e"><a href="sect111.htm">111</a> #1: simultaneously to -&gt; to simultaneously <div class="cm so">sounds better to me.</div></div>
+<div class="e"><a href="sect111.htm">111</a> #2: chaos-creatures -&gt; Chaos-creatures <div class="cm so">maybe?</div></div>
 <div class="section"><a name="sect112">sect112</a></div>
+<div class="e"><a href="sect112.htm">112</a> #1: Brotherhood spell -&gt; Brotherhood Spell</div>
+<div class="n"><a href="sect112.htm">112</a> #2: Lightning Hand <div class="cm so">encode as spell.</div></div>
 <div class="section"><a name="sect113">sect113</a></div>
+<div class="e"><a href="sect113.htm">113</a> #1: gutteral -&gt; guttural</div>
+<div class="e"><a href="sect113.htm">113</a> #2: attained, above -&gt; attained above</div>
 <div class="section"><a name="sect114">sect114</a></div>
 <div class="section"><a name="sect115">sect115</a></div>
 <div class="section"><a name="sect116">sect116</a></div>
+<div class="e"><a href="sect116.htm">116</a> #1: Kai sixth sense -&gt; Kai Sixth Sense</div>
 <div class="section"><a name="sect117">sect117</a></div>
+<div class="e"><a href="sect117.htm">117</a> #1: court martial -&gt; court-martial <div class="cm so">as per Dictionary.com</div></div>
 <div class="section"><a name="sect118">sect118</a></div>
+<div class="e"><a href="sect118.htm">118</a> #1: Kai mastery -&gt; Kai Mastery</div>
 <div class="section"><a name="sect119">sect119</a></div>
 <div class="section"><a name="sect120">sect120</a></div>
+<div class="e"><a href="sect120.htm">120</a> #1: bow -&gt; Bow</div>
+<div class="e"><a href="sect120.htm">120</a> #2: Brotherhood spell -&gt; Brotherhood Spell</div>
 <div class="section"><a name="sect121">sect121</a></div>
+<div class="e"><a href="sect121.htm">121</a> #1: - Lightning Hand - -&gt; Lightning hand <div class="cm so">and encode as spell.</div></div>
 <div class="section"><a name="sect122">sect122</a></div>
 <div class="section"><a name="sect123">sect123</a></div>
+<div class="e"><a href="sect123.htm">123</a> #1: demonlord -&gt; Demonlord</div>
 <div class="section"><a name="sect124">sect124</a></div>
+<div class="e"><a href="sect124.htm">124</a> #1: hurling -&gt; hurtling</div>
+<div class="e"><a href="sect124.htm">124</a> #2: both <div class="cm so">italicise</div></div>
 <div class="section"><a name="sect125">sect125</a></div>
 <div class="section"><a name="sect126">sect126</a></div>
 <div class="section"><a name="sect127">sect127</a></div>
+<div class="e"><a href="sect127.htm">127</a> #1: high galley -&gt; high gallery</div>
 <div class="section"><a name="sect128">sect128</a></div>
+<div class="e"><a href="sect128.htm">128</a> #1: place it into -&gt; stow it in <div class="cm so">or similar</div></div>
+<div class="e"><a href="sect128.htm">128</a> #2: in Magnamund -&gt; on Magnamund</div>
 <div class="section"><a name="sect129">sect129</a></div>
 <div class="section"><a name="sect130">sect130</a></div>
 <div class="section"><a name="sect131">sect131</a></div>
+<div class="e"><a href="sect131.htm">131</a> #1: Kai mastery -&gt; Kai Mastery</div>
+<div class="e"><a href="sect131.htm">131</a> #2: 0 = 100 -&gt; 0 = 10 <div class="cm so">I bet a lot of frustrated Lone Wolf players died here!</div></div>
 <div class="section"><a name="sect132">sect132</a></div>
+<div class="e"><a href="sect132.htm">132</a> #1: Ixian undead -&gt; Ixian Undead</div>
 <div class="section"><a name="sect133">sect133</a></div>
+<div class="e"><a href="sect133.htm">133</a> #1: Brotherhood spell -&gt; Brotherhood Spell</div>
+<div class="e"><a href="sect133.htm">133</a> #2: - Breathe Water -&gt; Breathe Water <div class="cm so">and encode as spell.</div></div>
 <div class="section"><a name="sect134">sect134</a></div>
 <div class="section"><a name="sect135">sect135</a></div>
 <div class="section"><a name="sect136">sect136</a></div>
+<div class="e"><a href="sect136.htm">136</a> #1: Brotherhood spell -&gt; Brotherhood Spell</div>
+<div class="e"><a href="sect136.htm">136</a> #2: - Levitation -&gt; Levitation <div class="cm so">and encode as spell.</div></div>
 <div class="section"><a name="sect137">sect137</a></div>
+<div class="e"><a href="sect137.htm">137</a> #1: chaos-creatures -&gt; Chaos-creatures <div class="cm so">maybe?</div></div>
+<div class="e"><a href="sect137.htm">137</a> #2: Chaos horde -&gt; Chaos-horde <div class="cm so">As per Section 111.</div></div>
 <div class="section"><a name="sect138">sect138</a></div>
+<div class="e"><a href="sect138.htm">138</a> #1: Backpack items -&gt; Backpack Items <div class="cm so">maybe?</div></div>
 <div class="section"><a name="sect139">sect139</a></div>
+<div class="e"><a href="sect139.htm">139</a> #1: disciplines -&gt; Disciplines</div>
 <div class="section"><a name="sect140">sect140</a></div>
+<div class="n"><a href="sect140.htm">140</a> #1: Maycastle <div class="cm so">italicise x2</div></div>
 <div class="section"><a name="sect141">sect141</a></div>
 <div class="section"><a name="sect142">sect142</a></div>
 <div class="section"><a name="sect143">sect143</a></div>
 <div class="section"><a name="sect144">sect144</a></div>
 <div class="section"><a name="sect145">sect145</a></div>
+<div class="e"><a href="sect145.htm">145</a> #1: Chaos horde -&gt; Chaos-horde <div class="cm so">As per Section 111.</div></div>
 <div class="section"><a name="sect146">sect146</a></div>
+<div class="e"><a href="sect146.htm">146</a> #1: infra-red -&gt; infrared <div class="cm so">cf ultraviolet.</div></div>
 <div class="section"><a name="sect147">sect147</a></div>
 <div class="section"><a name="sect148">sect148</a></div>
 <div class="section"><a name="sect149">sect149</a></div>
+<div class="e"><a href="sect149.htm">149</a> #1: Ghosts, in -&gt; Ghosts in</div>
 <div class="section"><a name="sect150">sect150</a></div>
+<div class="e"><a href="sect150.htm">150</a> #1: demonlord -&gt; Demonlord</div>
 <div class="section"><a name="sect151">sect151</a></div>
 <div class="section"><a name="sect152">sect152</a></div>
+<div class="e"><a href="sect152.htm">152</a> #1: Sun Lord, or higher -&gt; Sun Lord or higher</div>
 <div class="section"><a name="sect153">sect153</a></div>
 <div class="section"><a name="sect154">sect154</a></div>
+<div class="e"><a href="sect154.htm">154</a> #1: chaos-creatures -&gt; Chaos-creatures <div class="cm so">maybe?</div></div>
 <div class="section"><a name="sect155">sect155</a></div>
+<div class="e"><a href="sect155.htm">155</a> #1: shortlived -&gt; short-lived</div>
 <div class="section"><a name="sect156">sect156</a></div>
+<div class="e"><a href="sect156.htm">156</a> #1: cavern; -&gt; cavern:</div>
 <div class="section"><a name="sect157">sect157</a></div>
 <div class="section"><a name="sect158">sect158</a></div>
 <div class="section"><a name="sect159">sect159</a></div>
 <div class="section"><a name="sect160">sect160</a></div>
 <div class="section"><a name="sect161">sect161</a></div>
+<div class="e"><a href="sect161.htm">161</a> #1: Thane, or higher -&gt; Thane or higher</div>
 <div class="section"><a name="sect162">sect162</a></div>
 <div class="section"><a name="sect163">sect163</a></div>
+<div class="e"><a href="sect163.htm">163</a> #1: Above you can -&gt; Above, you can</div>
+<div class="e"><a href="sect163.htm">163</a> #2: of rusty sword -&gt; of a rusty sword</div>
 <div class="section"><a name="sect164">sect164</a></div>
+<div class="e"><a href="sect164.htm">164</a> #1: in Magnamund -&gt; on Magnamund</div>
 <div class="section"><a name="sect165">sect165</a></div>
+<div class="e"><a href="sect165.htm">165</a> #1: Lord, or higher -&gt; Lord or higher</div>
 <div class="section"><a name="sect166">sect166</a></div>
+<div class="e"><a href="sect166.htm">166</a> #1: me my friend -&gt; me, my friend</div>
 <div class="section"><a name="sect167">sect167</a></div>
+<div class="e"><a href="sect167.htm">167</a> #1: bonuses to your COMBAT SKILL -&gt; bonuses</div>
 <div class="section"><a name="sect168">sect168</a></div>
 <div class="section"><a name="sect169">sect169</a></div>
 <div class="section"><a name="sect170">sect170</a></div>
@@ -251,135 +432,274 @@
 <div class="section"><a name="sect173">sect173</a></div>
 <div class="section"><a name="sect174">sect174</a></div>
 <div class="section"><a name="sect175">sect175</a></div>
+<div class="e"><a href="sect175.htm">175</a> #1: Kai mastery -&gt; Kai Mastery</div>
 <div class="section"><a name="sect176">sect176</a></div>
+<div class="e"><a href="sect176.htm">176</a> #1: Brotherhood spell -&gt; Brotherhood Spell</div>
+<div class="e"><a href="sect176.htm">176</a> #2: - Levitation - -&gt; Levitation <div class="cm so">and encode as spell.</div></div>
+<div class="e"><a href="sect176.htm">176</a> #3: chaos-creatures -&gt; Chaos-creatures <div class="cm so">maybe?</div></div>
 <div class="section"><a name="sect177">sect177</a></div>
 <div class="section"><a name="sect178">sect178</a></div>
 <div class="section"><a name="sect179">sect179</a></div>
 <div class="section"><a name="sect180">sect180</a></div>
+<div class="e"><a href="sect180.htm">180</a> #1: sixth sense -&gt; Sixth Sense</div>
+<div class="e"><a href="sect180.htm">180</a> #2: Special Item, do not -&gt; Special Item, or do not</div>
 <div class="section"><a name="sect181">sect181</a></div>
 <div class="section"><a name="sect182">sect182</a></div>
 <div class="section"><a name="sect183">sect183</a></div>
+<div class="e"><a href="sect183.htm">183</a> #1: from the enemy -&gt; from your enemy <div class="cm so">sounds better IMHO</div></div>
 <div class="section"><a name="sect184">sect184</a></div>
+<div class="e"><a href="sect184.htm">184</a> #1: destroyed (erase . . . list). -&gt; destroyed. (Erase . . . list.)</div>
+<div class="e"><a href="sect184.htm">184</a> #2: Pained but -&gt; Pained, but</div>
 <div class="section"><a name="sect185">sect185</a></div>
+<div class="e"><a href="sect185.htm">185</a> #1: demonlord -&gt; Demonlord</div>
+<div class="e"><a href="sect185.htm">185</a> #2: sky, beat -&gt; sky beat</div>
+<div class="e"><a href="sect185.htm">185</a> #3: down-draught -&gt; down-draft</div>
+<div class="e"><a href="sect185.htm">185</a> #4: demonlord's -&gt; Demonlord's</div>
 <div class="section"><a name="sect186">sect186</a></div>
 <div class="section"><a name="sect187">sect187</a></div>
 <div class="section"><a name="sect188">sect188</a></div>
 <div class="section"><a name="sect189">sect189</a></div>
 <div class="section"><a name="sect190">sect190</a></div>
+<div class="e"><a href="sect190.htm">190</a> #1: chaos-creatures -&gt; Chaos-creatures <div class="cm so">x3</div></div>
+<div class="e"><a href="sect190.htm">190</a> #2: grudgingly to -&gt; to grudgingly</div>
+<div class="e"><a href="sect190.htm">190</a> #3: feet-first -&gt; feet first <div class="cm so">maybe?</div></div>
 <div class="section"><a name="sect191">sect191</a></div>
+<div class="e"><a href="sect191.htm">191</a> #1: attack upon the -&gt; attack the <div class="cm so">for clarity</div></div>
+<div class="e"><a href="sect191.htm">191</a> #2: pre-empted -&gt; preempted</div>
 <div class="section"><a name="sect192">sect192</a></div>
 <div class="section"><a name="sect193">sect193</a></div>
 <div class="section"><a name="sect194">sect194</a></div>
+<div class="e"><a href="sect194.htm">194</a> #1: impregnated -&gt; imbued <div class="cm so">or similar</div></div>
+<div class="e"><a href="sect194.htm">194</a> #2: korlinium scabbard -&gt; Korlinium Scabbard</div>
 <div class="section"><a name="sect195">sect195</a></div>
+<div class="u"><a href="sect195.htm">195</a> #1: <div class="cm so">The bow is the front of the ship; why would the crew flee to the front of the ship instead of the stern when the Ixian vessel is approaching from the north?</div></div>
+<div class="e"><a href="sect195.htm">195</a> #2: cry, 'Ishir -&gt; cry. 'Ishir</div>
 <div class="section"><a name="sect196">sect196</a></div>
+<div class="e"><a href="sect196.htm">196</a> #1: un-life -&gt; undeath <div class="cm so">possibly?</div></div>
+<div class="e"><a href="sect196.htm">196</a> #2: Fear your survival -&gt; Fearing for your survival</div>
+<div class="e"><a href="sect196.htm">196</a> #3: Thane, or higher -&gt; Thane or higher</div>
+<div class="e"><a href="sect196.htm">196</a> #4: Lord, or higher -&gt; Lord or higher</div>
 <div class="section"><a name="sect197">sect197</a></div>
+<div class="n"><a href="sect197.htm">197</a> #1: Crack! -&gt; crack! <div class="cm so">and encode as onomatopoeia.</div></div>
+<div class="f"><a href="sect197.htm">197</a> #2: <div class="cm so">If you only possess Grand Nexus, you may still add 2.</div></div>
 <div class="section"><a name="sect198">sect198</a></div>
+<div class="e"><a href="sect198.htm">198</a> #1: porthole -&gt; port-hole <div class="cm so">did we decide this one before?</div></div>
 <div class="section"><a name="sect199">sect199</a></div>
+<div class="e"><a href="sect199.htm">199</a> #1: effect -&gt; effects</div>
 <div class="section"><a name="part2">part2</a></div>
 <div class="section"><a name="sect200">sect200</a></div>
+<div class="e"><a href="sect200.htm">200</a> #1: achieve your quest <div class="cm so">this sounds odd to me.</div></div>
+<div class="e"><a href="sect200.htm">200</a> #2: noise behind you -&gt; noise from behind you</div>
 <div class="section"><a name="sect201">sect201</a></div>
 <div class="section"><a name="sect202">sect202</a></div>
+<div class="e"><a href="sect202.htm">202</a> #1: Kai mastery -&gt; Kai Mastery</div>
+<div class="e"><a href="sect202.htm">202</a> #2: by the stairs -&gt; by means of the stairs</div>
 <div class="section"><a name="sect203">sect203</a></div>
+<div class="e"><a href="sect203.htm">203</a> #1: Kai mastery -&gt; Kai Mastery</div>
 <div class="section"><a name="sect204">sect204</a></div>
 <div class="section"><a name="sect205">sect205</a></div>
+<div class="e"><a href="sect205.htm">205</a> #1: <div class="cm ">Odd justification in last paragraph.</div></div>
+<div class="n"><a href="sect205.htm">205</a> #2: demonlord -&gt; Demonlord</div>
+<div class="n"><a href="sect205.htm">205</a> #3: Crack! -&gt; crack <div class="cm so">and encode as onomatopoeia</div></div>
+<div class="f"><a href="sect205.htm">205</a> #4: <div class="cm so">If you only possess Grand Nexus, you may still add 2.</div></div>
 <div class="section"><a name="sect206">sect206</a></div>
 <div class="section"><a name="sect207">sect207</a></div>
 <div class="section"><a name="sect208">sect208</a></div>
+<div class="e"><a href="sect208.htm">208</a> #1: camouflage -&gt; Camouflage {so: Maybe?]</div>
 <div class="section"><a name="sect209">sect209</a></div>
+<div class="e"><a href="sect209.htm">209</a> #1: falter and -&gt; falter, and</div>
+<div class="e"><a href="sect209.htm">209</a> #2: counter-attack -&gt; counterattack <div class="cm so">as per PAMoS</div></div>
 <div class="section"><a name="sect210">sect210</a></div>
 <div class="section"><a name="sect211">sect211</a></div>
+<div class="e"><a href="sect211.htm">211</a> #1: an explosion white-hot -&gt; an explosion of white-hot</div>
 <div class="section"><a name="sect212">sect212</a></div>
+<div class="e"><a href="sect212.htm">212</a> #1: face-first -&gt; face first <div class="cm so">maybe?</div></div>
 <div class="section"><a name="sect213">sect213</a></div>
+<div class="n"><a href="sect213.htm">213</a> #1: coup de grace -&gt; coup de grâce <div class="cm so">and italicise</div></div>
+<div class="e"><a href="sect213.htm">213</a> #2: chamber, is -&gt; chamber is</div>
+<div class="f"><a href="sect213.htm">213</a> #3: <div class="cm so">standard puzzle footnote.</div></div>
+<div class="n"><a href="sect213.htm">213</a> #4: map <div class="cm so">encode as link.</div></div>
+<div class="e"><a href="sect213.htm">213</a> #5: <div class="cm so">indent puzzle instructions as choice.</div></div>
 <div class="section"><a name="sect214">sect214</a></div>
 <div class="section"><a name="sect215">sect215</a></div>
 <div class="section"><a name="sect216">sect216</a></div>
+<div class="e"><a href="sect216.htm">216</a> #1: demonlord -&gt; Demonlord</div>
+<div class="e"><a href="sect216.htm">216</a> #2: fight, you -&gt; fight you</div>
 <div class="section"><a name="sect217">sect217</a></div>
+<div class="e"><a href="sect217.htm">217</a> #1: Brotherhood spell -&gt; Brotherhood Spell</div>
+<div class="e"><a href="sect217.htm">217</a> #2: - Counterspell - -&gt; Counterspell <div class="cm so">and encode as spell</div></div>
 <div class="section"><a name="sect218">sect218</a></div>
+<div class="e"><a href="sect218.htm">218</a> #1: second wave . . . come -&gt; second wave . . . comes</div>
+<div class="e"><a href="sect218.htm">218</a> #2: demonlord -&gt; Demonlord</div>
+<div class="e"><a href="sect218.htm">218</a> #3: towards the Tagazin -&gt; towards Tagazin</div>
+<div class="e"><a href="sect218.htm">218</a> #4: demonlord's -&gt; Demonlord's</div>
 <div class="section"><a name="sect219">sect219</a></div>
+<div class="n"><a href="sect219.htm">219</a> #1: <div class="cm so">Italicise Banedon's words.</div></div>
+<div class="e"><a href="sect219.htm">219</a> #2: korlinium scabbard -&gt; Korlinium Scabbard</div>
+<div class="e"><a href="sect219.htm">219</a> #3: another weapon -&gt; another Weapon <div class="cm so">maybe?</div></div>
 <div class="section"><a name="sect220">sect220</a></div>
 <div class="section"><a name="sect221">sect221</a></div>
 <div class="section"><a name="sect222">sect222</a></div>
 <div class="section"><a name="sect223">sect223</a></div>
+<div class="e"><a href="sect223.htm">223</a> #1: Kai mastery -&gt; Kai Mastery</div>
 <div class="section"><a name="sect224">sect224</a></div>
+<div class="n"><a href="sect224.htm">224</a> #1: saehsa <div class="cm so">Italicise</div></div>
+<div class="e"><a href="sect224.htm">224</a> #2: <div class="cm so">indent choices.</div></div>
 <div class="section"><a name="sect225">sect225</a></div>
+<div class="e"><a href="sect225.htm">225</a> #1: coiled -&gt; oiled <div class="cm so">as elsewhere</div></div>
 <div class="section"><a name="sect226">sect226</a></div>
+<div class="e"><a href="sect226.htm">226</a> #1: .. -&gt; .</div>
 <div class="section"><a name="sect227">sect227</a></div>
+<div class="e"><a href="sect227.htm">227</a> #1: demonlord -&gt; Demonlord</div>
 <div class="section"><a name="sect228">sect228</a></div>
 <div class="section"><a name="sect229">sect229</a></div>
+<div class="e"><a href="sect229.htm">229</a> #1: chaos-creatures -&gt; Chaos-creatures <div class="cm so">x2</div></div>
 <div class="section"><a name="sect230">sect230</a></div>
+<div class="e"><a href="sect230.htm">230</a> #1: Brotherhood spell -&gt; Brotherhood Spell</div>
+<div class="e"><a href="sect230.htm">230</a> #2: - Strength - -&gt; Strength <div class="cm so">and encode as spell</div></div>
+<div class="e"><a href="sect230.htm">230</a> #3: new-found -&gt; newfound</div>
+<div class="e"><a href="sect230.htm">230</a> #4: demonlord -&gt; Demonlord</div>
+<div class="e"><a href="sect230.htm">230</a> #5: out-distance -&gt; outdistance <div class="cm so">as per PAMoS</div></div>
 <div class="section"><a name="sect231">sect231</a></div>
 <div class="section"><a name="sect232">sect232</a></div>
 <div class="section"><a name="sect233">sect233</a></div>
+<div class="e"><a href="sect233.htm">233</a> #1: splutters, 'it's -&gt; splutters. 'It's</div>
 <div class="section"><a name="sect234">sect234</a></div>
+<div class="e"><a href="sect234.htm">234</a> #1: cover avoiding -&gt; cover, avoiding</div>
 <div class="section"><a name="sect235">sect235</a></div>
+<div class="e"><a href="sect235.htm">235</a> #1: chaos-creatures -&gt; Chaos-creatures</div>
+<div class="e"><a href="sect235.htm">235</a> #2: feet-first -&gt; feet first <div class="cm so">maybe?</div></div>
 <div class="section"><a name="sect236">sect236</a></div>
 <div class="section"><a name="sect237">sect237</a></div>
 <div class="section"><a name="sect238">sect238</a></div>
 <div class="section"><a name="sect239">sect239</a></div>
+<div class="e"><a href="sect239.htm">239</a> #1: Ixian undead -&gt; Ixian Undead</div>
 <div class="section"><a name="sect240">sect240</a></div>
+<div class="e"><a href="sect240.htm">240</a> #1: you 're -&gt; you're</div>
 <div class="section"><a name="sect241">sect241</a></div>
+<div class="e"><a href="sect241.htm">241</a> #1: see better -&gt; better see</div>
+<div class="e"><a href="sect241.htm">241</a> #2: Knight, or higher -&gt; Knight or higher</div>
 <div class="section"><a name="sect242">sect242</a></div>
+<div class="e"><a href="sect242.htm">242</a> #1: Ixian undead -&gt; Ixian Undead</div>
 <div class="section"><a name="sect243">sect243</a></div>
+<div class="e"><a href="sect243.htm">243</a> #1: camouflage -&gt; Camouflage</div>
+<div class="e"><a href="sect243.htm">243</a> #2: Drakkarim undead -&gt; Drakkarim Undead</div>
 <div class="section"><a name="sect244">sect244</a></div>
+<div class="e"><a href="sect244.htm">244</a> #1: arrow -&gt; Arrow <div class="cm so">x2</div></div>
+<div class="e"><a href="sect244.htm">244</a> #2: bow -&gt; Bow</div>
+<div class="f"><a href="sect244.htm">244</a> #3: <div class="cm so">You do not need to remove the Bow from your Acxtion Chart.</div></div>
 <div class="section"><a name="sect245">sect245</a></div>
 <div class="section"><a name="sect246">sect246</a></div>
+<div class="e"><a href="sect246.htm">246</a> #1: rope -&gt; Rope <div class="cm so">in the first instance at least?</div></div>
 <div class="section"><a name="sect247">sect247</a></div>
 <div class="section"><a name="sect248">sect248</a></div>
 <div class="section"><a name="sect249">sect249</a></div>
 <div class="section"><a name="sect250">sect250</a></div>
+<div class="e"><a href="sect250.htm">250</a> #1: action they were committing -&gt; action they were performing</div>
 <div class="section"><a name="sect251">sect251</a></div>
 <div class="section"><a name="sect252">sect252</a></div>
 <div class="section"><a name="sect253">sect253</a></div>
+<div class="e"><a href="sect253.htm">253</a> #1: face-first -&gt; face first</div>
+<div class="e"><a href="sect253.htm">253</a> #2: Thane, or higher -&gt; Thane or higher</div>
 <div class="section"><a name="sect254">sect254</a></div>
+<div class="e"><a href="sect254.htm">254</a> #1: pre-empt -&gt; preempt</div>
+<div class="e"><a href="sect254.htm">254</a> #2: Lord, or higher -&gt; Lord or higher</div>
+<div class="e"><a href="sect254.htm">254</a> #3: Kai mastery -&gt; Kai Mastery</div>
 <div class="section"><a name="sect255">sect255</a></div>
 <div class="section"><a name="sect256">sect256</a></div>
+<div class="e"><a href="sect256.htm">256</a> #1: camouflage -&gt; Camouflage</div>
 <div class="section"><a name="sect257">sect257</a></div>
+<div class="e"><a href="sect257.htm">257</a> #1: demonlord -&gt; Demonlord</div>
 <div class="section"><a name="sect258">sect258</a></div>
+<div class="e"><a href="sect258.htm">258</a> #1: Click -&gt; click <div class="cm so">and encode as onomatopoeia</div></div>
 <div class="section"><a name="sect259">sect259</a></div>
+<div class="e"><a href="sect259.htm">259</a> #1: chaos-creatures -&gt; Chaos-creatures <div class="cm so">x2</div></div>
+<div class="e"><a href="sect259.htm">259</a> #2: feet-first -&gt; feet first</div>
 <div class="section"><a name="sect260">sect260</a></div>
+<div class="e"><a href="sect260.htm">260</a> #1: Drakkarim marines (undead) -&gt; Drakkarim Marines (Undead)</div>
+<div class="e"><a href="sect260.htm">260</a> #2: rounds, or less -&gt; rounds or less</div>
+<div class="e"><a href="sect260.htm">260</a> #3: rounds, or longer -&gt; rounds or longer</div>
 <div class="section"><a name="sect261">sect261</a></div>
+<div class="u"><a href="sect261.htm">261</a> #1: bow fire <div class="cm so">Is this acceptable?</div></div>
 <div class="section"><a name="sect262">sect262</a></div>
+<div class="e"><a href="sect262.htm">262</a> #1: head-first -&gt; head first <div class="cm so">maybe?</div></div>
 <div class="section"><a name="sect263">sect263</a></div>
 <div class="section"><a name="sect264">sect264</a></div>
 <div class="section"><a name="sect265">sect265</a></div>
+<div class="e"><a href="sect265.htm">265</a> #1: bow -&gt; Bow</div>
 <div class="section"><a name="sect266">sect266</a></div>
+<div class="e"><a href="sect266.htm">266</a> #1: sixth sense -&gt; Sixth Sense</div>
 <div class="section"><a name="sect267">sect267</a></div>
+<div class="e"><a href="sect267.htm">267</a> #1: Kai mastery -&gt; Kai Mastery</div>
 <div class="section"><a name="sect268">sect268</a></div>
 <div class="section"><a name="sect269">sect269</a></div>
+<div class="e"><a href="sect269.htm">269</a> #1: healing -&gt; Healing</div>
 <div class="section"><a name="sect270">sect270</a></div>
 <div class="section"><a name="sect271">sect271</a></div>
 <div class="section"><a name="sect272">sect272</a></div>
+<div class="e"><a href="sect272.htm">272</a> #1: Knight, or higher -&gt; Knight or higher</div>
 <div class="section"><a name="sect273">sect273</a></div>
+<div class="e"><a href="sect273.htm">273</a> #1: - Slow Fall - -&gt; Slow Fall <div class="cm so">and encode as spell.</div></div>
 <div class="section"><a name="sect274">sect274</a></div>
 <div class="section"><a name="sect275">sect275</a></div>
+<div class="e"><a href="sect275.htm">275</a> #1: at its centre -&gt; from its centre</div>
+<div class="e"><a href="sect275.htm">275</a> #2: round, by -&gt; round by</div>
 <div class="section"><a name="sect276">sect276</a></div>
 <div class="section"><a name="sect277">sect277</a></div>
 <div class="section"><a name="sect278">sect278</a></div>
+<div class="e"><a href="sect278.htm">278</a> #1: chaos-creatures -&gt; Chaos-creatures</div>
+<div class="e"><a href="sect278.htm">278</a> #2: Chaos horde -&gt; Chaos-horde</div>
+<div class="e"><a href="sect278.htm">278</a> #3: rounds, by -&gt; rounds by</div>
 <div class="section"><a name="sect279">sect279</a></div>
+<div class="f"><a href="sect279.htm">279</a> #1: <div class="cm so">This x2 bonus applies to Kai-blast as well?</div></div>
 <div class="section"><a name="sect280">sect280</a></div>
+<div class="e"><a href="sect280.htm">280</a> #1: wall, more -&gt; wall more</div>
 <div class="section"><a name="sect281">sect281</a></div>
+<div class="e"><a href="sect281.htm">281</a> #1: bow -&gt; Bow</div>
+<div class="e"><a href="sect281.htm">281</a> #2: arrow -&gt; Arrow</div>
 <div class="section"><a name="sect282">sect282</a></div>
 <div class="section"><a name="sect283">sect283</a></div>
+<div class="e"><a href="sect283.htm">283</a> #1: spindly-limbed, black -&gt; spindly-limbed black</div>
+<div class="e"><a href="sect283.htm">283</a> #2: in which composite -&gt; from which composite</div>
+<div class="e"><a href="sect283.htm">283</a> #3: bow -&gt; Bow <div class="cm so">x2</div></div>
 <div class="section"><a name="sect284">sect284</a></div>
 <div class="section"><a name="sect285">sect285</a></div>
+<div class="e"><a href="sect285.htm">285</a> #1: rope -&gt; Rope</div>
 <div class="section"><a name="sect286">sect286</a></div>
 <div class="section"><a name="sect287">sect287</a></div>
+<div class="e"><a href="sect287.htm">287</a> #1: arrow -&gt; Arrow</div>
+<div class="e"><a href="sect287.htm">287</a> #2: bow -&gt; Bow</div>
+<div class="f"><a href="sect287.htm">287</a> #3: <div class="cm so">You do not need to remove the Bow from your Action Chart.</div></div>
 <div class="section"><a name="sect288">sect288</a></div>
+<div class="e"><a href="sect288.htm">288</a> #1: sixth sense -&gt; Sixth Sense</div>
+<div class="e"><a href="sect288.htm">288</a> #2: Ziog: -&gt; Ziog</div>
+<div class="e"><a href="sect288.htm">288</a> #3: damaged -&gt; wounded <div class="cm so">maybe?</div></div>
 <div class="section"><a name="sect289">sect289</a></div>
+<div class="e"><a href="sect289.htm">289</a> #1: this city had been -&gt; this city was</div>
 <div class="section"><a name="sect290">sect290</a></div>
+<div class="e"><a href="sect290.htm">290</a> #1: shattering remnants -&gt; shattered remnants</div>
 <div class="section"><a name="sect291">sect291</a></div>
 <div class="section"><a name="sect292">sect292</a></div>
 <div class="section"><a name="sect293">sect293</a></div>
 <div class="section"><a name="sect294">sect294</a></div>
+<div class="e"><a href="sect294.htm">294</a> #1: demonlord -&gt; Demonlord</div>
 <div class="section"><a name="sect295">sect295</a></div>
 <div class="section"><a name="sect296">sect296</a></div>
+<div class="e"><a href="sect296.htm">296</a> #1: gutteral -&gt; guttural</div>
+<div class="f"><a href="sect296.htm">296</a> #2: <div class="cm so">You do not need to possess either of the other Disciplines to use the +1 Grand Nexus bonus.</div></div>
 <div class="section"><a name="sect297">sect297</a></div>
 <div class="section"><a name="sect298">sect298</a></div>
 <div class="section"><a name="sect299">sect299</a></div>
 <div class="section"><a name="sect300">sect300</a></div>
+<div class="e"><a href="sect300.htm">300</a> #1: attention, it -&gt; attention; it</div>
+<div class="e"><a href="sect300.htm">300</a> #2: Ixian elder -&gt; Ixian Elder (so: cf. Acolyte Elder]</div>
+<div class="e"><a href="sect300.htm">300</a> #3: sixth sense -&gt; Sixth Sense</div>
 <div class="section"><a name="sect301">sect301</a></div>
+<div class="e"><a href="sect301.htm">301</a> #1: demonlord -&gt; Demonlord</div>
+<div class="e"><a href="sect301.htm">301</a> #2: demonlord's -&gt; Demonlord's</div>
 <div class="section"><a name="sect302">sect302</a></div>
 <div class="section"><a name="sect303">sect303</a></div>
+<div class="e"><a href="sect303.htm">303</a> #1: face-first -&gt; face first <div class="cm so">maybe?</div></div>
 <div class="section"><a name="sect304">sect304</a></div>
 <div class="section"><a name="sect305">sect305</a></div>
 <div class="section"><a name="sect306">sect306</a></div>
@@ -387,46 +707,79 @@
 <div class="section"><a name="sect308">sect308</a></div>
 <div class="section"><a name="sect309">sect309</a></div>
 <div class="section"><a name="sect310">sect310</a></div>
+<div class="e"><a href="sect310.htm">310</a> #1: but only to find -&gt; only to find</div>
+<div class="e"><a href="sect310.htm">310</a> #2: Ixian undead -&gt; Ixian Undead</div>
 <div class="section"><a name="sect311">sect311</a></div>
 <div class="section"><a name="sect312">sect312</a></div>
+<div class="e"><a href="sect312.htm">312</a> #1: Kai mastery -&gt; Kai Mastery</div>
+<div class="e"><a href="sect312.htm">312</a> #2: destroyed (erase . . . list). -&gt; destroyed. (Erase . . . list.)</div>
 <div class="section"><a name="sect313">sect313</a></div>
+<div class="e"><a href="sect313.htm">313</a> #1: Kai mastery -&gt; Kai Mastery</div>
 <div class="section"><a name="sect314">sect314</a></div>
 <div class="section"><a name="sect315">sect315</a></div>
+<div class="e"><a href="sect315.htm">315</a> #1: healing -&gt; Healing</div>
 <div class="section"><a name="sect316">sect316</a></div>
 <div class="section"><a name="sect317">sect317</a></div>
+<div class="e"><a href="sect317.htm">317</a> #1: despatch -&gt; dispatch <div class="cm so">as per PAMoS</div></div>
 <div class="section"><a name="sect318">sect318</a></div>
+<div class="e"><a href="sect318.htm">318</a> #1: chaos horde -&gt; Chaos-horde <div class="cm so">as everywhere else.</div></div>
 <div class="section"><a name="sect319">sect319</a></div>
+<div class="e"><a href="sect319.htm">319</a> #1: face-first -&gt; face first <div class="cm so">maybe?</div></div>
 <div class="section"><a name="sect320">sect320</a></div>
 <div class="section"><a name="sect321">sect321</a></div>
+<div class="n"><a href="sect321.htm">321</a> #1: Maycastle <div class="cm so">Italicise x2.</div></div>
 <div class="section"><a name="sect322">sect322</a></div>
+<div class="f"><a href="sect322.htm">322</a> #1: <div class="cm so">standard puzzle fotnote.</div></div>
+<div class="n"><a href="sect322.htm">322</a> #2: map <div class="cm so">encode as link.</div></div>
 <div class="section"><a name="sect323">sect323</a></div>
+<div class="e"><a href="sect323.htm">323</a> #1: rope -&gt; Rope</div>
 <div class="section"><a name="sect324">sect324</a></div>
+<div class="e"><a href="sect324.htm">324</a> #1: sixth sense -&gt; Sixth Sense</div>
 <div class="section"><a name="sect325">sect325</a></div>
 <div class="section"><a name="sect326">sect326</a></div>
+<div class="e"><a href="sect326.htm">326</a> #1: landing you -&gt; landing, you</div>
 <div class="section"><a name="sect327">sect327</a></div>
 <div class="section"><a name="sect328">sect328</a></div>
 <div class="section"><a name="sect329">sect329</a></div>
+<div class="e"><a href="sect329.htm">329</a> #1: Ixian undead -&gt; Ixian Undead <div class="cm so">maybe?</div></div>
 <div class="section"><a name="sect330">sect330</a></div>
+<div class="e"><a href="sect330.htm">330</a> #1: bow -&gt; Bow</div>
+<div class="e"><a href="sect330.htm">330</a> #2: <div class="cm so">Place the Kai-surge option first?</div></div>
 <div class="section"><a name="sect331">sect331</a></div>
 <div class="section"><a name="sect332">sect332</a></div>
+<div class="e"><a href="sect332.htm">332</a> #1: Thane, or higher -&gt; Thane or higher</div>
 <div class="section"><a name="sect333">sect333</a></div>
 <div class="section"><a name="sect334">sect334</a></div>
 <div class="section"><a name="sect335">sect335</a></div>
 <div class="section"><a name="sect336">sect336</a></div>
+<div class="e"><a href="sect336.htm">336</a> #1: Drakkarim undead -&gt; Drakkarim Undead</div>
 <div class="section"><a name="sect337">sect337</a></div>
 <div class="section"><a name="sect338">sect338</a></div>
+<div class="e"><a href="sect338.htm">338</a> #1: had been -&gt; was</div>
 <div class="section"><a name="sect339">sect339</a></div>
 <div class="section"><a name="sect340">sect340</a></div>
 <div class="section"><a name="sect341">sect341</a></div>
+<div class="e"><a href="sect341.htm">341</a> #1: demonlord's -&gt; Demonlord's</div>
+<div class="e"><a href="sect341.htm">341</a> #2: If, at -&gt; If at</div>
 <div class="section"><a name="sect342">sect342</a></div>
 <div class="section"><a name="sect343">sect343</a></div>
+<div class="e"><a href="sect343.htm">343</a> #1: by huge frozen -&gt; by a huge frozen</div>
+<div class="e"><a href="sect343.htm">343</a> #2: Lord, or higher -&gt; Lord or higher</div>
 <div class="section"><a name="sect344">sect344</a></div>
 <div class="section"><a name="sect345">sect345</a></div>
 <div class="section"><a name="sect346">sect346</a></div>
+<div class="e"><a href="sect346.htm">346</a> #1: Crack! -&gt; crack! <div class="cm so">and encode as onomatopoeia.</div></div>
 <div class="section"><a name="sect347">sect347</a></div>
+<div class="e"><a href="sect347.htm">347</a> #1: camouflage -&gt; Camouflage</div>
+<div class="e"><a href="sect347.htm">347</a> #2: demonlord -&gt; Demonlord</div>
 <div class="section"><a name="sect348">sect348</a></div>
 <div class="section"><a name="sect349">sect349</a></div>
 <div class="section"><a name="sect350">sect350</a></div>
+<div class="e"><a href="sect350.htm">350</a> #1: Ardan, 'Is -&gt; Ardan. 'Is</div>
+<div class="e"><a href="sect350.htm">350</a> #2: dragon-creatures -&gt; Dragon-creatures <div class="cm so">maybe?</div></div>
+<div class="e"><a href="sect350.htm">350</a> #3: my county -&gt; my country</div>
+<div class="e"><a href="sect350.htm">350</a> #4: Kai acolytes -&gt; Kai Acolytes <div class="cm so">cf. Acolytes of Vashna.</div></div>
+<div class="e"><a href="sect350.htm">350</a> #5: champions awaits -&gt; champions, awaits</div>
 <div class="section"><a name="sect351">sect351</a></div>
 <div class="section"><a name="sect352">sect352</a></div>
 <div class="section"><a name="sect353">sect353</a></div>
@@ -510,6 +863,12 @@
 <!--mergecorrhtml:END-->
 
 <h2>Questions</h2>
+
+<p>free-standing vs. freestanding (i.e. Section 32, 143 and others)?</p>
+
+<p>mainmast vs. main mast?</p>
+
+<p>Crystal Spire (Section 5, 269) vs. crystal spire (everywhere else)?</p>
 
  </body>
 </html>
