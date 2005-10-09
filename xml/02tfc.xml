@@ -20,6 +20,9 @@
 $Id$
 
 $Log$
+Revision 1.15  2005/10/09 14:26:23  angantyr
+Corrected the last oversights and issues found by Simon. Ready to publish!
+
 Revision 1.14  2005/10/01 21:32:17  angantyr
 Fixed some recent errata and added/updated footnote entries having to do
 with insufficient WILLPOWER. Also made some small illustrations adjustments.
@@ -150,7 +153,7 @@ small11: sword, axe, & shield
    &inclusion.paul.bonner.bio.gs;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2005</year><month>10</month><day>01</day></date>
+  <date class="publication"><year>2005</year><month>10</month><day>09</day></date>
   <description class="blurb">
    <p>You are the Wizard Grey Star. Your quest is to retrieve the legendary Moonstone and with its power throw down the evil Wytch-king. You must find the Shadow Gate&emdash;doorway to the magic realm where it lies hidden. When the moon is full, the Shadow Gate appears&emdash;in Desolation Valley beyond the Mountains of Morn, where you must dare <!--ERRTAG-RE-6558--><strong>The Forbidden City</strong><!--/ERRTAG-RE-6558-->.</p>
    <p>The Wytch-king will try to track you down. His slaves will dog your every step&emdash;the cruel warriors of Shadaki, the phantom spirit of the Deathgaunt and the dark horror of the demon <!--ERRTAG-RE-6876-->Kleas&aacute;<!--/ERRTAG-RE-6876-->. Only your <!--ERRTAG-RE-6952-->Magical Powers<!--/ERRTAG-RE-6952--> and the might of your Wizard&apos;s Staff can protect you in a terrifying adventure of madness, magic and menace!</p>
@@ -1119,7 +1122,15 @@ small11: sword, axe, & shield
       <meta><title>37</title></meta>
 
       <data>
-       <p>You walk along the west passage. It rises steadily and eventually opens into a small cave<!--ERRTAG-AD-93287--> with an opening that overlooks a large gorge<!--/ERRTAG-AD-93287-->. Beneath the light of the full moon you see miles and miles of contorted rock. It looks as if it has been melted in a furnace. You find the skeletal remains of several bodies but as you lift a skull to examine it, it crumbles to dust in your hand.</p>
+       <p>You walk along the west passage. It rises steadily and eventually opens into a small cave<!--ERRTAG-AD-93287--> with an opening that overlooks a large gorge<!--/ERRTAG-AD-93287-->. Beneath the light of the full moon you see miles and miles of contorted rock. It looks as if it has been melted in a furnace.</p>
+       <illustration class="inline">
+        <meta>
+         <creator>Paul Bonner</creator>
+        </meta>
+        <instance class="html" src="small7.gif" width="386" height="150"/>
+        <instance class="pdf" src="small7.pdf" width="386" height="150"/>
+       </illustration>
+       <p>You find the skeletal remains of several bodies but as you lift a skull to examine it, it crumbles to dust in your hand.</p>
        <p>You search the cave and find a Silver Knife. You may keep this Special Item, which can be worn on your belt. (Remember to mark it on your <a idref="action">Action Chart</a>.) You head back along the passage until you come to the circular cavern once more.</p>
        <choice idref="sect46">If you wish to take the passage leading east, <link-text>turn to 46</link-text>.</choice>
        <choice idref="sect23">If you wish to take the passage leading north, <link-text>turn to 23</link-text>.</choice>
@@ -3746,7 +3757,7 @@ small11: sword, axe, & shield
       <meta><title>258</title></meta>
 
       <data>
-       <p>Before you are able to fire your <!--ERRTAG-RE-293978-->Wizard&apos;s Staff<!--/ERRTAG-RE-293978-->, you must drop your <spell>Shield of Sorcery</spell>. Taking careful aim, you hurl the might of your Staff at the Eijalfish. Immediately, a sheet of flame blankets the water of the lake, throwing the charred body of the Eijalfish into the air atop a great waterspout. Radiant droplets of fire and water are flung in all directions across the boiling lake. The use of your Staff has cost you 2 <typ class="attribute">WILLPOWER</typ> points. <quote>Time to go?</quote> asks Urik.</p>
+       <p>Before you are able to fire your <!--ERRTAG-RE-293978-->Wizard&apos;s Staff<!--/ERRTAG-RE-293978-->, you must drop your <spell>Shield of Sorcery</spell>. Taking careful aim, you hurl the might of your Staff at the Eijalfish. Immediately, a sheet of flame blankets the water of the lake, throwing the charred body of the Eijalfish into the air atop a great waterspout. Radiant droplets of fire and water are flung in all directions across the boiling lake. The use of your Staff has cost you 2 <typ class="attribute">WILLPOWER</typ> points.</p>
        <illustration class="inline">
         <meta>
          <creator>Paul Bonner</creator>
@@ -3754,6 +3765,7 @@ small11: sword, axe, & shield
         <instance class="html" src="small1.gif" width="386" height="150"/>
         <instance class="pdf" src="small1.pdf" width="386" height="150"/>
        </illustration>
+       <p><quote>Time to go?</quote> asks Urik.</p>
        <choice idref="sect74">If you wish to swim away, <link-text>turn to 74</link-text>.</choice>
        <choice idref="sect263">If you prefer to recall your <spell>Shield of Sorcery</spell>, <link-text>turn to 263</link-text>.</choice>
       </data>
@@ -3803,13 +3815,6 @@ small11: sword, axe, & shield
 
       <data>
        <p>Staff raised above your head, you wait for your chance to strike. Samu&apos;s defence against the Scree Wyrm is a dizzying blur of sword strokes. The Wyrm&apos;s attack weakens and, as it does, you strike out with the might of your Staff. A bolt of power shudders through the fearful creature as its body tenses before flopping lifelessly to the ground.<a id="sect262-1" idref="sect262-1-foot" class="footnote" /> Disdainfully, Samu gives the carcass a kick and the creature disappears through one of the pot-holes that litter the desolate plain.</p>
-       <illustration class="inline">
-        <meta>
-         <creator>Paul Bonner</creator>
-        </meta>
-        <instance class="html" src="small7.gif" width="386" height="150"/>
-        <instance class="pdf" src="small7.pdf" width="386" height="150"/>
-       </illustration>
        <choice idref="sect85"><link-text>Turn to 85</link-text>.</choice>
       </data>
      </section>
@@ -4747,6 +4752,7 @@ small11: sword, axe, & shield
       <data>
        <ul class="unbulleted">
         <li><a idref="powers">Magical Powers</a></li>
+        <li><a idref="sect37">37</a></li>
         <li><a idref="sect50">50</a>, <a idref="sect81">81</a></li>
         <li><a idref="sect52">52</a></li>
         <li><a idref="sect71">71</a>, <a idref="sect249">249</a></li>
@@ -4756,7 +4762,6 @@ small11: sword, axe, & shield
         <li><a idref="sect133">133</a></li>
         <li><a idref="sect200">200</a></li>
         <li><a idref="sect222">222</a></li>
-        <li><a idref="sect262">262</a></li>
        </ul>
       </data>
      </section>
