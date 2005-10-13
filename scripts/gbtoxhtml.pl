@@ -7,8 +7,11 @@
 # $Id$
 #
 # $Log$
-# Revision 1.1  2005/04/26 04:47:33  jonathan.blake
-# Initial revision
+# Revision 1.2  2005/10/13 00:48:47  angantyr
+# Put Paul Bonner as illustrator of the GS books.
+#
+# Revision 1.1.1.1  2005/04/26 04:47:33  jonathan.blake
+# Imported scripts
 #
 # Revision 1.8  2003/07/14 17:20:09  jblake
 # Modified for Xalan 2.5.1, added support for AONPATH
@@ -219,7 +222,7 @@ elsif( $bookCode eq "01gstw" ) {
     $TEXT_COLOR        = "#330066";
     $LINK_COLOR        = "#9900ff";
     $HLINK_BACK_COLOR  = "#ebcce9";
-    $USE_ILLUSTRATORS  = ":Christopher Lundgren:JC Alvarez & Jonathan Blake:Jonathan Blake:";
+    $USE_ILLUSTRATORS  = ":Paul Bonner:JC Alvarez & Jonathan Blake:Jonathan Blake:";
 }
 elsif( $bookCode eq "02tfc" ) {
     $XML_SOURCE               = "02tfc.xml";
@@ -227,7 +230,7 @@ elsif( $bookCode eq "02tfc" ) {
     $TEXT_COLOR               = "#333300";
     $LINK_COLOR               = "#999966";
     $HLINK_BACK_COLOR         = "#ebebcb";
-    $USE_ILLUSTRATORS         = ":Christopher Lundgren:JC Alvarez & Jonathan Blake:Jonathan Blake:";
+    $USE_ILLUSTRATORS         = ":Paul Bonner:JC Alvarez & Jonathan Blake:Jonathan Blake:";
 }
 elsif( $bookCode eq "03btng" ) {
     $XML_SOURCE        = "03btng.xml";
@@ -235,7 +238,7 @@ elsif( $bookCode eq "03btng" ) {
     $TEXT_COLOR        = "#003333";
     $LINK_COLOR        = "#669999";
     $HLINK_BACK_COLOR  = "#e0ebd5";
-    $USE_ILLUSTRATORS  = ":Christopher Lundgren:JC Alvarez & Jonathan Blake:Jonathan Blake:";
+    $USE_ILLUSTRATORS  = ":Paul Bonner:JC Alvarez & Jonathan Blake:Jonathan Blake:";
 }
 elsif( $bookCode eq "04wotw" ) {
     $XML_SOURCE        = "04wotw.xml";
@@ -243,7 +246,7 @@ elsif( $bookCode eq "04wotw" ) {
     $TEXT_COLOR        = "#000033";
     $LINK_COLOR        = "#9999cc";
     $HLINK_BACK_COLOR  = "#ebebdf";
-    $USE_ILLUSTRATORS  = ":Christopher Lundgren:JC Alvarez & Jonathan Blake:Jonathan Blake:";
+    $USE_ILLUSTRATORS  = ":Paul Bonner:JC Alvarez & Jonathan Blake:Jonathan Blake:";
 }
 elsif( $bookCode eq "01hh" ) {
     $XML_SOURCE        = "01hh.xml";
@@ -251,7 +254,7 @@ elsif( $bookCode eq "01hh" ) {
     $TEXT_COLOR        = "#330066";
     $LINK_COLOR        = "#9900ff";
 #    $SCROLL_BASE_COLOR = "#330066";
-    $USE_ILLUSTRATORS  = ":Jonathan Blake:";
+    $USE_ILLUSTRATORS  = ":Melvyn Grant:Jonathan Blake:";
 }
 elsif( $bookCode eq "rh" ) {
     $XML_SOURCE        = "rh.xml";
