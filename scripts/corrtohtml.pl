@@ -421,7 +421,7 @@ sub validateBookCode {
         '04wotw' => 1,
         '01hh' => 1,
         '02smr' => 1,
-        '03oz' => 1,
+        '03toz' => 1,
         '04cc' => 1,
         'tmc' => 1,
         'rh' => 1

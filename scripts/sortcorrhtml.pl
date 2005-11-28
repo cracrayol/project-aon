@@ -162,7 +162,7 @@ sub getBookSortOrder {
     04wotw
     01hh
     02smr
-    03oz
+    03toz
     04cc
     tmc
     rh
