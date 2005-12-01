@@ -16,6 +16,9 @@
 
 $Id$
 $Log$
+Revision 1.2  2005/12/01 17:19:47  Wibbleboy
+Major update: added front/backmatter, corrected numbered references, added illustrations.
+
 Revision 1.1  2004/11/09 06:47:16  jonathan.blake
 Initial Freepository revision
 
@@ -29,23 +32,27 @@ Initial revision
 
 -->
 <meta>
- <title>[Insert Title]</title>
+ <title>Slaughter Mountain Run</title>
+  <creator class="short">Joe Dever and Brian Williams</creator>
+  <creator class="medium">Joe Dever<br />Illustrated by Brian Williams</creator>
+  <creator class="long">
+   &inclusion.joe.dever.bio.lw;
+   &inclusion.brian.williams.bio.lw;
+  </creator>
+  <publisher>Project Aon</publisher>
+  <date class="publication"><year>2005</year><month>11</month><day>25</day></date>
+  <description class="blurb">
+   <p>You are Cal Phoenix, the Freeway Warrior, champion and protector of Dallas Colony One.  From the sanctuary of Big Spring your convoy of survivors begins the next stage of its life-or-death exodus: a journey to the fortified border town of El Paso, a destination that lies hundreds of miles beyond the sun-scorched wasteland of West Texas.  In Slaughter Mountain Run your mission is to rescue Kate Norton from the clutches of your arch enemy - the H.A.V.O.C. leader Mad Dog Michigan.  You have just seven days to free her and to rendezvous with the colony before it runs the gauntlet of fire that protects the only mountain road to El Paso.</p>
+  </description>
+  <description class="publication">
+   <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
+  </description>
+  <rights class="copyrights">Text copyright &copy; 1988 Joe Dever.<br />Illustrations copyright &copy; 1988 Brian Williams.</rights>
+  <rights class="license-notification">
+   <p>Text copyright &copy; 1988 Joe Dever.<br />Illustrations copyright &copy; 1988 Melvyn Grant.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+  </rights>
 </meta>
 
-<section id="toc">
- <meta />
- <data />
-</section>
-
-<section id="title">
- <meta>
-  <title>Title Page</title>
-  <link class="next" idref="dedicate" />
- </meta>
-
- <data>
-
-  <!-- Frontmatter -->
 <!--
 
 Freeway Warrior 2:
@@ -71,343 +78,407 @@ Joe Dever was born in 1956 at Woodford Bridge in Essex. After he left college he
 
 Joe also writes for modelling journals and contributes to Britain's leading role-playing games magazines. He adapts the Lone Wolf adventures for computer play, is editor of the 'World of Lone Wolf' series and is noted for his model painting and photography.
 
-Slaughter Mountain Run
-Dedication
-
-For Mick, Michelle and Ryan
-
-Slaughter Mountain Run
-Dateline to Disaster
-
-1990-1998
-Rise of global terrorism on an unprecedented scale. Political violence funded by organized crime syndicate called HAVOC - the Hijack, Assassination and Violent Opposition Consortium.
-
-1998-2003
-The governments of many small and impoverished nations fall into the hands of HAVOC. International terrorists receive arms, training and shelter in these 'Badlands'.
-
-2003-2008
-Raids on oil and gas installations, assassinations, and the kidnapping of prominent world statesmen become commonplace as HAVOC attempt to terrorize the civilized world into submission. Despite public outrage and growing international tension, the major powers refuse steadfastly to give in to HAVOC's demands.
-
-2008
-President of the United States and General Secretary of Supreme Soviet both assassinated at emergency summit meeting. US, USSR and major European nations create the World Defence League and declare war on HAVOC. The Badlands are invaded, key HAVOC bases destroyed, and thousands of HAVOC agents are captured.
-
-2009
-HAVOC leaders imprisoned for life in 'Deep Pens' - maximum security gaols located deep underground - to prevent their escape or release by HAVOC agents still at large.
-
-2010
-New leadership emerges to unify the scattered remnants of HAVOC and plan revenge.
-
-2011
-A WDL train transporting seventeen 100-kiloton nuclear warheads, destined to be neutralized and dismantled, is attacked by HAVOC agents. The train is destroyed and its deadly cargo stolen.
-
-2012
-New Year's Day
-HAVOC hijack a WDL news satellite and broadcast a chilling ultimatum. They have planted the seventeen stolen warheads in major cities throughout the US, USSR and Europe. They call for the immediate release of all HAVOC agents held in Deep Pens, plus the payment of $2 trillion in gold bullion, or they will trigger the warheads one by one until their demands are met in full.
-
-A twenty-four hour deadline is set. WDL leaders declare emergency and request that the deadline be extended. HAVOC refuse.
-
-2nd January
-(2012)
-First warhead detonated at Brie Nuclear Energy Plant, ten miles south of Paris, France. Blast and radioactive fallout claim millions of lives. HAVOC repeat their demand and extend deadline by twenty-four hours.
-
-3rd January
-'The Day'
-(2012)
-World Defence League agents discover location of HAVOC command headquarters on an island in the South Pacific Ocean. Immediately orders are given to infiltrate and destroy the HQ and its occupants. The assault is swift and decisive; the complex is quickly overrun and its inhabitants are killed.
-
-Yet, ironically, as the news of this victory is being relayed around the world, HAVOC enact their ultimate revenge. A transmitter hidden on the island, fitted with a time-delay mechanism, clicks on, sending its high-frequency radio signal to a communications satellite orbiting the earth. This signal is amplified and returned to earth where, simultaneously, it triggers the remaining nuclear warheads.
-
-The initial explosions set off a disastrous chain reaction that feeds on civil and military nuclear installations all across the northern hemisphere. Hundreds of millions of people are killed within days, and many more perish during the years that follow, falling victim to the lingering radioactivity and the severe climatic changes that affect the earth.
-
-2012-2019
-Gale force winds sweep across the world, carrying enormous amounts of dust into the upper atmosphere and preventing much sunlight from reaching the earth's surface. Temperatures plummet, deterring survivors from remaining above ground. Communications are disrupted by gamma radiation, making all radio, cable and satellite contact impossible. Small colonies of survivors develop in total isolation from one another during these years of darkness.
-
-2019-2020
-Gradually, the dust storms die down and the sun penetrates the atmosphere, thawing the earth's frozen surface. Radiation has decayed to tolerable levels, and survivors emerge to reclaim what little remains of the world they once knew.
-
-Slaughter Mountain Run
-The Story So Far
-
-You are Cal Phoenix, a survivor, born in California on Thanksgiving Day in the year AD 2000. In 2012, whilst on winter vacation at your Uncle Jonas' and Aunt Betty-Ann's ranch in Texas, you were invited to visit a shale-oil mine near Austin, the first of its kind in Texas. As Chief of Construction, your uncle was proud to take you on a guided tour of the whole underground complex, which, for security reasons, was totally self-supporting. It was during this tour on 3 January 2012, that the unthinkable happened.
-
-You remember how the ground shuddered when the shock waves from the first distant explosions reached the mine. Immediately you assumed it was the start of an earthquake, which you had experienced many times at home in California. However, as the levels nearest the surface began to collapse and the central elevator shaft filled with rubble, you realized the awful truth: the holocaust. At first there was no way of telling the extent of the surface devastation. Below ground, the safety generators had switched into operation automatically when the main power supply failed, and the tremors had faded quickly, which encouraged your aunt and uncle to believe that the damage above was superficial. Uncle Jonas was confident that the military would mount a rescue operation and that you would be brought out within a few days, a week at the most. Aunt Betty-Ann, too, was optimishc. After all, there were emergency supplies - enough to feed 200 men for a whole month. Little did she know that the three of you would end up consuming all those supplies, or that the mine would become your home, your shelter and your prison for the next eight years of your lives.
-
-It was early September in the year 2019 when eventually you broke through to the surface. When first you set eyes on the landscape surrounding the mine, it was like looking at the surface of another planet. Few structures had survived the blizzards and intense cold that had swept around the world in the years following 'the Day', and now, after the dust had settled and the sun had returned, the once-fertile plains of Austin resembled little more than a desert of parched and broken rock, littered with the artefacts of an absent civilization.
-
-During the first few days, when you set out to explore this wilderness, it was easy to believe that you were the only survivors. But on the morning of the fifth day Uncle Jonas made chance radio contact with a family called Ewell who were living near the ruins of McKinney, thirty miles north of Dallas. They told him that they had been in touch with a handful of other groups who had managed somehow to survive the holocaust. Most were isolated and unable to move due to lack of fuel, food or water. They had urged those who could travel to join them in McKinney to start a new community there, and some people were already on their way. When your uncle and aunt accepted their invitation, the Ewells were enthusiastic, but they also warned you to be wary - not everyone who had survived wanted to establish a new community. The ruins of some large Texan cities, such as Dallas and Fort Worth, were controlled by gangs of criminals who fought with each other and terrorized anyone seeking to re-establish law and order. They urged you to avoid these gangs at all costs.
-
-It took more than a week to discover a vehicle that could transport you to McKinney. It was an old school bus, one that had been parked in an underground lot and had survived the years of sub-zero blizzards. With fuel and spares salvaged from the mine, you managed to coax it back to life, and then set off on your journey north.
-
-When you arrived at the town, it was easy to find where the Ewells lived - their ranch was the only place that was still standing. It looked more like an old frontier post than a ranch, with its fortified perimeter wall, lookout posts and stake-filled moat. However, after being ambushed and shot at by the city gangs of Fort Worth during the final stages of your journey, you fully appreciated the need for these defences.
-
-'Pop' Ewell, the seventy-year-old grandfather of the Ewell family, was the leader of this small colony of survivors, and it was he who had urged Uncle Jonas to join them when they had first made radio contact. The colony numbered less than a dozen at the time of your arrival, yet, as the airwaves became clearer and new contacts were made, soon this number had more than doubled to twenty-five. It was decided that a name was needed to identify the settlement. The name 'Dallas Colony One' was adopted, known as 'DC1' for short. From that day on, everyone worked hard to make DC1 a secure haven for those seeking refuge from the hostile wastelands and marauding city gangs.
-
-'Cutter' Jacks was one such refugee. Before 'the Day' he had been chief mechanic at the International Grand Prix Circuit near Lake Dallas, and his incredible skill with, and knowledge of, engines was soon to prove invaluable to the colony. He taught you how to drive, and from a pile of old wrecks that you helped him salvage from the circuit, he built you a powerful, customized car. You used it to patrol the highways north of the city, keeping a lookout for gangs of city punks who frequently mounted raids to steal or destroy DC1's supplies. Cutter also taught you to shoot. It was your natural prowess with a gun, and your skill behind the wheel, that was to earn you the begrudging respect of your enemies, who took to calling you 'the Freeway Warrior'.
-
-Six months after you arrived at DC1, the colony was faced with a major crisis. A heat wave was causing a drought that threatened to destroy the food supply. Crops were failing and the colony's artesian well, its only source of uncontaminated water, was beginning to dry up. The drought was also provoking more attacks from the city punks, who were desperate for food and water. Their common need had united them and now they posed a very real threat to the security of DC1.
-
-It was the last day of May, 2020, when Pop Ewell made radio contact with another colony who were based in the city of Big Spring, 300 miles west of McKinney. Their situation was completely the reverse of DC1's: they had food and water in plentiful supply but they were desperately short of fuel. They told of their contact with survivors in Tucson, Arizona, who were also without fuel. The Tucson colony reported that the territories west of the Sierra Nevada mountains had been spared the worst effects of the radioactive blizzards that had devastated the rest of the country and, miraculously, much of southern California was still widely populated. In fact, it had survived the last eight years virtually intact. When you heard the news you could hardly believe your ears. Perhaps your family was still alive. After all that had happened, there was now a real hope that one day you might be reunited with them.
-
-A meeting was held to decide how best to deal with the crisis facing DC1. Everyone agreed that to stay at McKinney would lead eventually to death, either slowly from starvation or suddenly at the hands of the murderous city gangs. The only choice open to DC1 was to try to reach California; only there lay real hope for the future of the colony. The decision was relayed to the survivors at Big Spring and a deal was struck to rendezvous with them as soon as possible. DC1 would refuel them in exchange for food and water, and together they would join up with the Tucson colony for the final stage of the journey to California.
-
-Careful preparations were made for the long trek, and three vehicles were chosen to make up the convoy: the school bus, your customized roadster, and a gasolene tanker laden with 5000 gallons of petroleum syphoned from underground storage tanks at the Ewell ranch. Supplies of food and water were adequate but the colony lacked sufficient firearms and ammunition with which to defend itself. So, on the day before the convoy was due to leave, one of the colonists was sent north to search the town of Sherman for weapons. He radioed back to say that he had found a cache of hunting rifles and ammunition, but that his truck had broken down and he was stranded in the town. He had also found a survivor - a beautiful teenage girl - and he requested that you be sent to Sherman to pick them up. As soon as you arrived you were ambushed by the scouts of a brutal gang of bikers known as the Detroit Lions and, in the ensuing gun battle, you killed Stinger - the scouts' leader.
-
-Later, you learned that the girl, Kate Norton, was the sole survivor of a Kansas City colony, which had been attacked and wiped out by the Detroit Lions. The Lions' leader, who calls himself 'Mad Dog Michigan', had taken a liking to her and spared her life. Mad Dog had once been a high-ranking HAVOC agent. He had escaped from Pontiac Deep Pen near Detroit, and he and his gang, most of whom were also HAVOC escapees, were heading for the Fort Hood Military Reserve near Killeen, Texas, the largest armoury in the whole of the United States. There he hoped to find enough weapons to equip the other HAVOC clans who were now in control of cities all along the eastern seaboard. Kate had managed to steal a motorcycle and escape from their camp, but Mad Dog had been determined to get her back. He sent his brother - Stinger and a handful of his best scouts to track her down. They had finally caught up with her at Sherman.
-
-When Mad Dog learned that you had killed his brother, he vowed to get even with you at any price. He abandoned his plans to loot Fort Hood and embarked instead on a relentless pursuit of your colony as it crossed the sun-scorched wastelands of central Texas. The journey to Big Spring was fraught with great danger. Yet, in spite of the many perils you faced, perhaps because of them, you felt yourself falling in love with Kate and you sensed that she, too, was becoming increasingly fond of you.
-
-Sadly, the convoy was only a few miles from Big Spring when disaster struck. The land surrounding the settlement was controlled by a gang of bikers, a renegade clan called 'the Mavericks' who had been the bane of the Big Spring colony for many months. As the convoy drew nearer to its destination, the Mavericks launched an attack, and, in the running battle that ensued, they captured and abducted Kate. The convoy entered the fortified gates of Big Spring to a rapturous welcome from the colonists of that settlement, but for you the mood of celebration was soured by the vivid memory of Kate's abduction. You vowed to rescue her, and, from that moment on, every waking minute of every day at Big Spring was spent thinking about little else.
-
-By chance it transpired that the leader of the Mavericks, a blond-haired murderer called Amex Gold, was a former HAVOC agent who had served under Mad Dog Michigan before 'the Day'. He offered to join forces with the Lions, and, as a token of his loyalty to his former commander, he returned Kate to him. Together, the Lions and the Mavericks launched a hasty attack on Big Spring. However, although they outnumbered the colony by more than three to one, they were unable to breach the settlement's fortified perimeter wall, and were repelled with heavy losses.
-
-On the day after the attack, Pop Ewell discovered the radio frequency that the clansmen were using and was able to eavesdrop on their communications. He learned that Mad Dog had ordered another HAVOC clan, based in New Orleans, to come and reinforce his command; they were expected to arrive within the week. He also overheard Mad Dog arrange a meeting with Mekong Mike, the leader of the Angelinos, a gang that controlled the city of San Angelo. He wanted him as an ally and was prepared to offer guns and ammunition in return for his help in destroying the Big Spring colony.
-
-Two days later, Mad Dog Michigan set off for San Angelo at the head of a motorcycle pack 200 riders strong. Those few clansmen who remained with Amex Gold tried myriad tricks to convince the colony that the Mavericks and the Lions still surrounded Big Spring in strength, but to no avail. The senior members of the newly enlarged colony convened a meeting at which it was decided that, with the clansmen now at their weakest, and with the appearance of the New Orleans gang expected at any time, a breakout had to be attempted without delay.
-
-There is only one way for the colony to reach Tucson overland and that is to follow the remains of Interstate Freeway 10 through the arid, mountainous territory of western Texas. Precisely half-way between Big Spring and Tucson is situated the city of El Paso, which is chosen as the colony's first destination. The city lies at the end of a long, steep and tortuous stretch of mountain highway, and few doubt that the journey to El Paso will prove the most exacting test of strength and endurance any of you are ever likely to face during your long journey to California.
-
-Slaughter Mountain Run
-The Game Rules
-
-Before embarking on your adventure, you must first determine your personal characteristics and the weapons and provisions with which you are equipped. On pages 6 and 7 you will find an Action Chart on which to record and amend these details as the adventure unfolds. For ease of use during play it is recommended that you photocopy these pages.
-
-Your personal characteristics comprise two basic attributes: CLOSE COMBAT SKILL and ENDURANCE. To discover your initial CLOSE COMBAT SKILL, take a pencil and, with your eyes closed, point the blunt end of it on to the Random Number Table at the back of this book. If you pick a 0 it counts as zero. Add 10 to the number you have picked and write the total in the CLOSE COMBAT SKILL section of your Action Chart (for example, if your pencil falls on the number 5 in the Random Number Table, you have a CLOSE COMBAT SKILL total of 15). When you fight an enemy in hand-to-hand combat, your CLOSE COMBAT SKILL will be measured against that of your enemy, so a high score in this section is desirable.
-
-To discover your ENDURANCE level, repeat the process, but this time add 20 to the number you have picked from the Random Number Table. Write the total in the ENDURANCE section of your Action Chart (for example, if your pencil falls on the number 8 on the Random Number Table, you have a total ENDURANCE score of 28). If you are wounded in combat, or injured at any other time during your adventure you will lose ENDURANCE points. If, at any time, your ENDURANCE points total falls to zero, you are dead and the adventure is over. You can regain lost ENDURANCE points during the course of the adventure, but your ENDURANCE level can never rise above your initial score.
-
-Slaughter Mountain Run
-The Game Rules - Survival Skills
-
-Ever since the day you returned to the surface, you have endeavoured to develop your skills and natural instincts fully in order to best defend yourself and your colony.
-
-Listed on your Action Chart are your five basic survival skills:
-
-Driving
-Your ability to control powered vehicles, such as cars, motorcycles and trucks.
-
-Shooting
-Your familiarity and experience in the use of missile weapons, such as pistols, machine pistols, shotguns and rifles.
-
-Field craft
-Your knowledge and experience of all aspects of outdoor survival.
-
-Stealth
-Your physical fitness, the speed of your reflexes and your dexterity.
-
-Perception
-Your intelligence, your ability to evaluate information, your education and your mental alertness.
-
-Your ability in each of these five individual skills is measured in skill points. You begin with 3 points per skill. Before starting the adventure, you may allocate an additional 4 skill points to your list of five survival skills. These 4 extra points can be used to improve one or more of your five skills. During your adventure, all five skills will be severely tested, therefore the higher the individual skill level, the better your chances of survival. You may allocate your 4 additional points entirely how you like.
-
-When you have decided where to allocate your 4 additional skill points, make a note of the totals in the Survival Skills section of your Action Chart.
-
-(If this is your first Freeway Warrior adventure, your total number of skill points should be 19: five skills x 3 points each = 15, plus 4 additional skill points = 19 points.)
-
-If you complete successfully the mission set in Book 2 of the Freeway Warrior series, you may add an additional 4 points to your Survival Skills in Book 3. These additional points, together with any equipment and provisions that you possess at the end of Book 2, may then be used in the next Freeway Warrior adventure, which is called The Omega Zone.
-
-Slaughter Mountain Run
-The Game Rules - Equipment
-
-Apart from your clothing, a number of useful items form your basic equipment. This comprises a Backpack, and a belt on which hangs your Ammo Pouch, Medi-kit, Water Canteen and Hunting Knife. In addition to these items, you possess a map of Western Texas (see the inside front cover of this book), which you carry tucked inside your leather jacket.
-
-Backpack
-Up to ten separate items may be stored and carried in your Backpack at any time. However, if more than three items are carried, your Stealth level will be reduced by 1 point. If more than six items are carried, your Stealth level will be reduced by 2 points; and if you carry a full Backpack (containing ten items) your Stealth level will be reduced by 3 points.
-
-In order to equip yourself for the task ahead, you may choose up to four items from the following list:
-
-* SOLAR TORCH
-* HE (High Explosive) GRENADE
-* BINOCULARS
-* COMPASS
-* CB RADIO
-* ROPE
-* THREE MEALS (each Meal takes up one space in your Backpack)
-* FLEXIBLE SAW
-* SIGNAL FLARE
-
-List the items you have chosen on your Action Chart. If you have picked four items, adjust your current Stealth level accordingly.
-
-Opportunities may arise during your adventure for you to pick up useful items. These items will appear in the text in bold print and, unless you are instructed otherwise, they can be stored and carried in your Backpack.
-
-You will need to eat regularly. If you do not possess any food when you are instructed to eat a Meal, you will lose 3 ENDURANCE points.
-
-Ammo Pouch
-Your Ammo Pouch is where you store any spare ammunition for firearms. It can hold a maximum of the following:
-
-* 40 rounds of 9mm calibre Pistol/Machine Pistol ammunition
-or
-* 20 rounds of 7.62mm calibre Rifle ammunition
-or
-* 10 rounds of 12-gauge calibre Shotgun ammunition
-
-When carrying mixed calibres of ammunition, use this equation to check how much space you have left in your Ammo Pouch:
-
-4 x 9mm rounds = 2 x 7.62mm rounds = 1 x 12-gauge round
-
-Additional ammunition can be carried in your Backpack. Ammunition occupies one space for each quantity that is equal to (or less than) the maximum that can be carried in one Ammo Pouch.
-
-Medi-kit
-A well-stocked Medi-kit can make all the difference to your chances of survival should you suffer injury in the field or as a result of combat. It contains useful first aid supplies, such as dressings, antiseptics, antibiotics, water purification tablets, sulphonamides, pain killers, potassium iodine tablets (to delay absorption of radioactivity) and sutures.
-
-For convenience, these medical supplies are grouped into units. To find how many units you have in your Medi-kit, pick a number from the Random Number Table (0 equals 10) and add 2. Your total score equals the number of units with which you begin your adventure. To keep a record of them, circle the appropriate number of unit symbols in the Medi-kit section of your Action Chart. The maximum number of units you can carry in your Medi-kit is twelve.
-
-You may use your Medi-kit units to restore lost ENDURANCE points; each unit used in this way restores 3 points. Units cannot be used to restore ENDURANCE points in lieu of a Meal or Water when instructed to eat or drink.
-
-Water Canteen
-Water is essential to life, and your life will depend on having a sufficient, uncontaminated supply. You will need to drink regularly during your adventure. One drink is equivalent to half a pint and your canteen holds exactly two pints of water: enough for one day's needs. When instructed to drink, be sure to tick off one box in the Water section of your Action Chart.
-
-If you do not have any Water when instructed to drink, you must lose 3 ENDURANCE points.
-
-Slaughter Mountain Run
-The Game Rules - Equipment
-
-Apart from your clothing, a number of useful items form your basic equipment. This comprises a Backpack, and a belt on which hangs your Ammo Pouch, Medi-kit, Water Canteen and Hunting Knife. In addition to these items, you possess a map of Western Texas (see the inside front cover of this book), which you carry tucked inside your leather jacket.
-
-Backpack
-Up to ten separate items may be stored and carried in your Backpack at any time. However, if more than three items are carried, your Stealth level will be reduced by 1 point. If more than six items are carried, your Stealth level will be reduced by 2 points; and if you carry a full Backpack (containing ten items) your Stealth level will be reduced by 3 points.
-
-In order to equip yourself for the task ahead, you may choose up to four items from the following list:
-
-* SOLAR TORCH
-* HE (High Explosive) GRENADE
-* BINOCULARS
-* COMPASS
-* CB RADIO
-* ROPE
-* THREE MEALS (each Meal takes up one space in your Backpack)
-* FLEXIBLE SAW
-* SIGNAL FLARE
-
-List the items you have chosen on your Action Chart. If you have picked four items, adjust your current Stealth level accordingly.
-
-Opportunities may arise during your adventure for you to pick up useful items. These items will appear in the text in bold print and, unless you are instructed otherwise, they can be stored and carried in your Backpack.
-
-You will need to eat regularly. If you do not possess any food when you are instructed to eat a Meal, you will lose 3 ENDURANCE points.
-
-Ammo Pouch
-Your Ammo Pouch is where you store any spare ammunition for firearms. It can hold a maximum of the following:
-
-* 40 rounds of 9mm calibre Pistol/Machine Pistol ammunition
-or
-* 20 rounds of 7.62mm calibre Rifle ammunition
-or
-* 10 rounds of 12-gauge calibre Shotgun ammunition
-
-When carrying mixed calibres of ammunition, use this equation to check how much space you have left in your Ammo Pouch:
-
-4 x 9mm rounds = 2 x 7.62mm rounds = 1 x 12-gauge round
-
-Additional ammunition can be carried in your Backpack. Ammunition occupies one space for each quantity that is equal to (or less than) the maximum that can be carried in one Ammo Pouch.
-
-Medi-kit
-A well-stocked Medi-kit can make all the difference to your chances of survival should you suffer injury in the field or as a result of combat. It contains useful first aid supplies, such as dressings, antiseptics, antibiotics, water purification tablets, sulphonamides, pain killers, potassium iodine tablets (to delay absorption of radioactivity) and sutures.
-
-For convenience, these medical supplies are grouped into units. To find how many units you have in your Medi-kit, pick a number from the Random Number Table (0 equals 10) and add 2. Your total score equals the number of units with which you begin your adventure. To keep a record of them, circle the appropriate number of unit symbols in the Medi-kit section of your Action Chart. The maximum number of units you can carry in your Medi-kit is twelve.
-
-You may use your Medi-kit units to restore lost ENDURANCE points; each unit used in this way restores 3 points. Units cannot be used to restore ENDURANCE points in lieu of a Meal or Water when instructed to eat or drink.
-
-Water Canteen
-Water is essential to life, and your life will depend on having a sufficient, uncontaminated supply. You will need to drink regularly during your adventure. One drink is equivalent to half a pint and your canteen holds exactly two pints of water: enough for one day's needs. When instructed to drink, be sure to tick off one box in the Water section of your Action Chart.
-
-If you do not have any Water when instructed to drink, you must lose 3 ENDURANCE points.
-
-Slaughter Mountain Run
-The Game Rules - Weapons
-
-Close Combat Weapons
-These weapons aid you in hand-to-hand fighting. You begin your adventure armed with a Hunting Knife which, when used in close combat, adds 2 points to your CLOSE COMBAT SKILL. Note this Hunting Knife in the Close Combat Weapons section of your Action Chart.
-
-If you find a close combat weapon during your adventure, you may pick it up and use it. Close combat weapons appear in the text with a close combat skill number, for example, Machete [3]. This number indicates how many points this weapon will add to your CLOSE COMBAT SKILL when used in a hand-to-hand fight.
-
-The maximum number of close combat weapons you may carry is two.
-
-Missile Weapons
-There are four types of missile weapon:
-
-* Pistol
-* Machine Pistol
-* Shotgun
-* Rifle
-
-Unless you are continuing to use weapons from a previous Freeway Warrior book, you begin your adventure armed with only one of these weapons. Make your choice and then record the weapon you have chosen, together with its calibre and rate of fire details, in the Missile Weapons section of your Action Chart.
-
-In order to be able to use a missile weapon, you must have sufficient ammunition of the correct calibre. The following list shows the calibre of each weapon, the amount that is used every time the weapon is fired, and the number of rounds that you possess at the start of your adventure:
-		 
+-->
+
+<section id="toc">
+ <meta />
+ <data />
+</section>
+
+<section id="title">
+ <meta>
+  <title>Title Page</title>
+  <link class="next" idref="dedicate" />
+ </meta>
+
+ <data>
+
+  <section class="frontmatter" id="dedicate">
+   <meta>
+    <title>Dedication</title>
+    <link class="prev" idref="title" />
+    <link class="next" idref="acknwldg" />
+   </meta>
+
+   <data>
+    <p class="dedication">For Mick, Michelle and Ryan</p>
+   </data>
+  </section>
+
+  <section class="frontmatter" id="acknwldg">
+   <meta>
+    <title>Acknowledgements</title>
+    <link class="prev" idref="dedicate" />
+    <link class="next" idref="dtd" />
+   </meta>
+
+   <data>
+    <p><quote>I would be especially pleased if my granting of the rights to distribute my books in this way was seen as my <quote>millennium gift</quote> to all those devoted readers who have kept the Kai flag flying high, through all the good times, and the not-so-good. It would make me very proud indeed if this enterprise laid the foundations of a lasting legacy, securing the longevity of Lone Wolf by making my creation freely and readily accessible to current and future online generations. For them, for us, for Sommerlund and the Kai.&ellips;</quote> <strong>Joe Dever</strong></p>
+    <p>Project Aon would first like to thank Joe Dever for making this generous offering of the books that we have all loved from the beginning. We would also like to acknowledge the following members of Project Aon for their diligent work:</p>
+
+    <section class="frontmatter" id="credits">
+     <meta><title>Credits</title></meta>
+
+     <data>
+      <dl>
+       <dt>Transcription</dt>
+        <dd>Ryan Landek</dd>
+       <dt>Illustration Transcription</dt>
+        <dd>Jonathan Blake<br />Simon Osborne</dd>
+       <dt>XML</dt>
+        <dd>Jonathan Blake<br />Jeff Dougan</dd>
+       <dt>Alternate Illustrations</dt>
+        <dd>JC Alvarez (text illustrations and action charts)<br />Jonathan Blake (extramatter charts and tables)<br />Michael Hahn (map)</dd>
+       <dt>Proofreading</dt>
+        <dd>Mark Laird (Sections 36&endash;70 and 281&endash;315)<br />Christian Leonhard (Sections 106&endash;140 and 211&endash;245)<br />Brad Phelps (Sections 176&endash;210)<br />Michael Richey (Sections 1&endash;35 and 316&endash;350)<br />Tyson Torres (Sections 71&endash;105, 141&endash;175 and 246&endash;280)</dd>
+       <dt>Editing</dt>
+        <dd>Mike Feldman<br />Ingo Kl&ouml;cker<br />Mark Laird<br />Simon Osborne<br />Thomas Wolmer</dd>
+       <dt>PDF Layout</dt>
+        <dd>Ingo Kl&ouml;cker</dd>
+       <dt>Coordination</dt>
+        <dd>Jonathan Blake</dd>
+       <dt>Special Thanks</dt>
+        <dd>Pedro Almeida</dd>
+      </dl>
+     </data>
+    </section>
+   </data>
+  </section>
+
+  <section class="frontmatter" id="dtd">
+   <meta>
+    <title>Dateline to Disaster</title>
+    <link class="prev" idref="acknwldg" />
+    <link class="next" idref="tssf" />
+   </meta>
+
+   <data>
+    <p><strong>1900-1998</strong><br />Rise of global terrorism on an unprecedented scale. Political violence funded by organized crime syndicate called HAVOC - The Hijack, Assassination and Violent Opposition Consortium.</p>
+    <p><strong>1998-2003</strong><br />The governments of many small and impoverished nations fall into the hands of HAVOC. International terrorists receive arms, training and shelter in these 'Badlands'.</p>
+    <p><strong>2003-2008</strong><br />Raids on oil and gas installations, assassinations, and the kidnapping of prominent world statesmen become commonplace as HAVOC attempt to terrorize the civilized world into submission. Despite public outrage and growing international tension, the major powers refuse steadfastly to give in to HAVOC's demands.</p>
+    <p><strong>2008</strong><br />President of the United States and General Secretary of Supreme Soviet both assassinated at emergency summit meeting. US, USSR and major European nations create the World Defence League and declare war on HAVOC. The Badlands are invaded, key HAVOC bases destroyed, and thousands of HAVOC agents are captured.</p>
+    <p><strong>2009</strong><br />HAVOC leaders imprisoned for life in 'Deep Pens' - maximum security gaols located deep underground - to prevent their escape or release by HAVOC agents still at large.</p>
+    <p><strong>2010</strong><br />New leadership emerges to unify the scattered remnants of HAVOC and plan revenge.</p>
+    <p><strong>2011</strong><br />A WDL train transporting seventeen 100-kiloton nuclear warheads, destined to be neutralized and dismantled, is attacked by HAVOC agents. The train is destroyed and its deadly cargo stolen.</p>
+    <p><strong>2012 New Years Day</strong><br />HAVOC hijack a WDL news satellite and broadcast a chilling ultimatum.  They have planted the seventeen stolen warheads in major cities throughout the US, USSR and Europe. They call for the immediate release of all HAVOC agents held in Deep Pens, plus the payment of $2 trillion in gold bullion, or they will trigger the warheads one by one until their demands are met in full.  A twenty-four hour deadline is set.  WDL leaders declare emergency and request that the deadline be extended.  HAVOC refuse.</p>
+    <p><strong>2nd January</strong><br />First warhead detonated at Brie Nuclear Energy Plant, ten miles south of Paris, France. Blast and radioactive fallout claim millions of lives. HAVOC repeat their demand and extend deadline by twenty-four hours.</p>
+    <p><strong>3rd January 'The Day'</strong><br />World Defence League agents discover location of HAVOC command headquarters on an island in the South Pacific Ocean.  Immediately orders are given to infiltrate and destroy the HQ and its occupants. The assault is swift and decisive; the complex is quickly overrun and its inhabitants are killed.  Yet, ironically, as the news of this victory is being relayed around the world, HAVOC enact their ultimate revenge. A transmitter hidden on the island, fitted with a time-delay mechanism, clicks on, sending its high-frequency radio signal to a communications satellite orbiting the earth. This signal is amplified and returned to earth where, simultaneously, it triggers the remaining nuclear warheads.  The initial explosions set off a disastrous chain reaction that feeds on civil and military nuclear installations all across the northern hemisphere.  Hundreds of millions of people are killed within days, and many more perish during the years that follow, falling victim to the lingering radioactivity and the severe climatic changes that affect the earth.</p>
+    <p><strong>2012-2019</strong><br />Gale force winds sweep across the world, carrying enormous amounts of dust into the upper atmosphere and preventing much sunlight from reaching the earth's surface.  Temperatures plummet, deterring survivors from remaining above ground. Communications are disrupted by gamma radiation, making all radio, cable and satellite contact impossible. Small colonies of survivors develop in total isolation from one another during these years of darkness.</p>
+    <p><strong>2019-2020</strong><br />Gradually, the dust storms die down and the sun penetrates the atmosphere, thawing the earths frozen surface. Radiation has decayed to tolerable levels, and survivors emerge to reclaim what little remains of the world they once knew.</p>
+   </data>    
+  </section>
+  <section class="frontmatter" id="tssf">
+   <meta>
+    <title>The Story So Far</title>
+    <link class="prev" idref="dtd" />
+    <link class="next" idref="gamerulz" />
+   </meta>
+   
+   <data>
+    <p>You are Cal Phoenix, a survivor, born in California on Thanksgiving Day in the year AD 2000. In 2012, whilst on winter vacation at your Uncle Jonas' and Aunt Betty-Ann's ranch in Texas, you were invited to visit a shale-oil mine near Austin, the first of its kind in Texas. As Chief of Construction, your uncle was proud to take you on a guided tour of the whole underground complex, which, for security reasons, was totally self-supporting. It was during this tour on 3 January 2012, that the unthinkable happened.</p>
+    <p>You remember how the ground shuddered when the shock waves from the first distant explosions reached the mine. Immediately you assumed it was the start of an earthquake, which you had experienced many times at home in California. However, as the levels nearest the surface began to collapse and the central elevator shaft filled with rubble, you realized the awful truth: the holocaust. At first there was no way of telling the extent of the surface devastation. Below ground, the safety generators had switched into operation automatically when the main power supply failed, and the tremors had faded quickly, which encouraged your aunt and uncle to believe that the damage above was superficial. Uncle Jonas was confident that the military would mount a rescue operation and that you would be brought out within a few days, a week at the most. Aunt Betty-Ann, too, was optimishc. After all, there were emergency supplies - enough to feed 200 men for a whole month. Little did she know that the three of you would end up consuming all those supplies, or that the mine would become your home, your shelter and your prison for the next eight years of your lives.</p>
+    <p>It was early September in the year 2019 when eventually you broke through to the surface. When first you set eyes on the landscape surrounding the mine, it was like looking at the surface of another planet. Few structures had survived the blizzards and intense cold that had swept around the world in the years following 'the Day', and now, after the dust had settled and the sun had returned, the once-fertile plains of Austin resembled little more than a desert of parched and broken rock, littered with the artefacts of an absent civilization.</p>
+    <p>During the first few days, when you set out to explore this wilderness, it was easy to believe that you were the only survivors. But on the morning of the fifth day Uncle Jonas made chance radio contact with a family called Ewell who were living near the ruins of McKinney, thirty miles north of Dallas. They told him that they had been in touch with a handful of other groups who had managed somehow to survive the holocaust. Most were isolated and unable to move due to lack of fuel, food or water. They had urged those who could travel to join them in McKinney to start a new community there, and some people were already on their way. When your uncle and aunt accepted their invitation, the Ewells were enthusiastic, but they also warned you to be wary - not everyone who had survived wanted to establish a new community. The ruins of some large Texan cities, such as Dallas and Fort Worth, were controlled by gangs of criminals who fought with each other and terrorized anyone seeking to reestablish law and order. They urged you to avoid these gangs at all costs.</p>
+    <p>It took more than a week to discover a vehicle that could transport you to McKinney. It was an old school bus, one that had been parked in an underground lot and had survived the years of sub-zero blizzards. With fuel and spares salvaged from the mine, you managed to coax it back to life, and then set off on your journey north.</p>
+    <p>When you arrived at the town, it was easy to find where the Ewells lived - their ranch was the only place that was still standing. It looked more like an old frontier post than a ranch, with its fortified perimeter wall, lookout posts and stake-filled moat. However, after being ambushed and shot at by the city gangs of Fort Worth during the final stages of your journey, you fully appreciated the need for these defences.</p>
+    <p>'Pop' Ewell, the seventy-year-old grandfather of the Ewell family, was the leader of this small colony of survivors, and it was he who had urged Uncle Jonas to join them when they had first made radio contact. The colony numbered less than a dozen at the time of your arrival, yet, as the airwaves became clearer and new contacts were made, soon this number had more than doubled to twenty-five. It was decided that a name was needed to identify the settlement. The name 'Dallas Colony One' was adopted, known as 'DC1' for short. From that day on, everyone worked hard to make DC1 a secure haven for those seeking refuge from the hostile wastelands and marauding city gangs.</p>
+    <p>'Cutter' Jacks was one such refugee. Before 'the Day' he had been chief mechanic at the International Grand Prix Circuit near Lake Dallas, and his incredible skill with, and knowledge of, engines was soon to prove invaluable to the colony. He taught you how to drive, and from a pile of old wrecks that you helped him salvage from the circuit, he built you a powerful, customized car. You used it to patrol the highways north of the city, keeping a lookout for gangs of city punks who frequently mounted raids to steal or destroy DC1's supplies. Cutter also taught you to shoot. It was your natural prowess with a gun, and your skill behind the wheel, that was to earn you the begrudging respect of your enemies, who took to calling you 'the Freeway Warrior'.</p>
+    
+    <p>Six months after you arrived at DC1, the colony was faced with a major crisis. A heat wave was causing a drought that threatened to destroy the food supply. Crops were failing and the colony's artesian well, its only source of uncontaminated water, was beginning to dry up. The drought was also provoking more attacks from the city punks, who were desperate for food and water. Their common need had united them and now they posed a very real threat to the security of DC1.</p>
+    <p>It was the last day of May, 2020, when Pop Ewell made radio contact with another colony who were based in the city of Big Spring, 300 miles west of McKinney. Their situation was completely the reverse of DC1's: they had food and water in plentiful supply but they were desperately short of fuel. They told of their contact with survivors in Tucson, Arizona, who were also without fuel. The Tucson colony reported that the territories west of the Sierra Nevada mountains had been spared the worst effects of the radioactive blizzards that had devastated the rest of the country and, miraculously, much of southern California was still widely populated. In fact, it had survived the last eight years virtually intact. When you heard the news you could hardly believe your ears. Perhaps your family was still alive. After all that had happened, there was now a real hope that one day you might be reunited with them.</p>
+    <p>A meeting was held to decide how best to deal with the crisis facing DC1. Everyone agreed that to stay at McKinney would lead eventually to death, either slowly from starvation or suddenly at the hands of the murderous city gangs. The only choice open to DC1 was to try to reach California; only there lay real hope for the future of the colony. The decision was relayed to the survivors at Big Spring and a deal was struck to rendezvous with them as soon as possible. DC1 would refuel them in exchange for food and water, and together they would join up with the Tucson colony for the final stage of the journey to California.</p>
+    <p>Careful preparations were made for the long trek, and three vehicles were chosen to make up the convoy: the school bus, your customized roadster, and a gasolene tanker laden with 5000 gallons of petroleum syphoned from underground storage tanks at the Ewell ranch. Supplies of food and water were adequate but the colony lacked sufficient firearms and ammunition with which to defend itself. So, on the day before the convoy was due to leave, one of the colonists was sent north to search the town of Sherman for weapons. He radioed back to say that he had found a cache of hunting rifles and ammunition, but that his truck had broken down and he was stranded in the town. He had also found a survivor - a beautiful teenage girl - and he requested that you be sent to Sherman to pick them up. As soon as you arrived you were ambushed by the scouts of a brutal gang of bikers known as the Detroit Lions and, in the ensuing gun battle, you killed Stinger - the scouts' leader.</p>
+    <p>Later, you learned that the girl, Kate Norton, was the sole survivor of a Kansas City colony, which had been attacked and wiped out by the Detroit Lions. The Lions' leader, who calls himself 'Mad Dog Michigan', had taken a liking to her and spared her life. Mad Dog had once been a high-ranking HAVOC agent. He had escaped from Pontiac Deep Pen near Detroit, and he and his gang, most of whom were also HAVOC escapees, were heading for the Fort Hood Military Reserve near Killeen, Texas, the largest armoury in the whole of the United States. There he hoped to find enough weapons to equip the other HAVOC clans who were now in control of cities all along the eastern seaboard. Kate had managed to steal a motorcycle and escape from their camp, but Mad Dog had been determined to get her back. He sent his brother - Stinger and a handful of his best scouts to track her down. They had finally caught up with her at Sherman.</p>
+
+    <p>When Mad Dog learned that you had killed his brother, he vowed to get even with you at any price. He abandoned his plans to loot Fort Hood and embarked instead on a relentless pursuit of your colony as it crossed the sun-scorched wastelands of central Texas. The journey to Big Spring was fraught with great danger. Yet, in spite of the many perils you faced, perhaps because of them, you felt yourself falling in love with Kate and you sensed that she, too, was becoming increasingly fond of you.</p>
+    <p>Sadly, the convoy was only a few miles from Big Spring when disaster struck. The land surrounding the settlement was controlled by a gang of bikers, a renegade clan called 'the Mavericks' who had been the bane of the Big Spring colony for many months. As the convoy drew nearer to its destination, the Mavericks launched an attack, and, in the running battle that ensued, they captured and abducted Kate. The convoy entered the fortified gates of Big Spring to a rapturous welcome from the colonists of that settlement, but for you the mood of celebration was soured by the vivid memory of Kate's abduction. You vowed to rescue her, and, from that moment on, every waking minute of every day at Big Spring was spent thinking about little else.</p>
+    <p>By chance it transpired that the leader of the Mavericks, a blond-haired murderer called Amex Gold, was a former HAVOC agent who had served under Mad Dog Michigan before 'the Day'. He offered to join forces with the Lions, and, as a token of his loyalty to his former commander, he returned Kate to him. Together, the Lions and the Mavericks launched a hasty attack on Big Spring. However, although they outnumbered the colony by more than three to one, they were unable to breach the settlement's fortified perimeter wall, and were repelled with heavy losses.</p>
+    <p>On the day after the attack, Pop Ewell discovered the radio frequency that the clansmen were using and was able to eavesdrop on their communications. He learned that Mad Dog had ordered another HAVOC clan, based in New Orleans, to come and reinforce his command; they were expected to arrive within the week. He also overheard Mad Dog arrange a meeting with Mekong Mike, the leader of the Angelinos, a gang that controlled the city of San Angelo. He wanted him as an ally and was prepared to offer guns and ammunition in return for his help in destroying the Big Spring colony.</p>
+    
+    <p>Two days later, Mad Dog Michigan set off for San Angelo at the head of a motorcycle pack 200 riders strong. Those few clansmen who remained with Amex Gold tried myriad tricks to convince the colony that the Mavericks and the Lions still surrounded Big Spring in strength, but to no avail. The senior members of the newly enlarged colony convened a meeting at which it was decided that, with the clansmen now at their weakest, and with the appearance of the New Orleans gang expected at any time, a breakout had to be attempted without delay.</p>
+    <p>There is only one way for the colony to reach Tucson overland and that is to follow the remains of Interstate Freeway 10 through the arid, mountainous territory of western Texas. Precisely half-way between Big Spring and Tucson is situated the city of El Paso, which is chosen as the colony's first destination. The city lies at the end of a long, steep and tortuous stretch of mountain highway, and few doubt that the journey to El Paso will prove the most exacting test of strength and endurance any of you are ever likely to face during your long journey to California.</p>
+
+   </data>    
+  </section>
+
+  <section class="frontmatter" id="gamerulz">
+   <meta>
+    <title>The Game Rules</title>
+    <link class="prev" idref="tssf" />
+    <link class="next" idref="sskills" />
+   </meta>
+   
+   <data>
+    <p>Before embarking on your adventure you must first determine your personal characteristics and the weapons and provisions with which you are equipped. On pages 6 and 7 you will find an <a idref='action'>Action Chart</a> on which to record and amend these details as the adventure unfolds. For ease of use during play it is recommended that you photocopy these pages.</p>
+    <p>Your personal characteristics comprise two basic attributes: <typ class='attribute'>CLOSE COMBAT SKILL</typ> and <typ class='attribute'>ENDURANCE</typ>. To discover your initial <typ class='attribute'>CLOSE COMBAT SKILL</typ>, take a pencil and, with your eyes closed, point the blunt end of it on to the <a idref='random'>Random Number Table</a> at the back of this book. If you pick a 0 it counts as zero. Add 10 to the number you have picked and write the total in the <typ class='attribute'>CLOSE COMBAT SKILL</typ> section of your Action Chart (for example, if your pencil falls on the number 5 in the <a idref='random'>Random Number Table</a>, you have a CLOSE <typ class='attribute'>COMBAT SKILL</typ> total of 15). When you fight an enemy in hand-to-hand combat, your <typ class='attribute'>CLOSE COMBAT SKILL</typ> will be measured against that of your enemy, so a high score in this section is desirable.</p>
+    <p>To discover your <typ class='attribute'>ENDURANCE</typ> level, repeat the process, but this time add 20 to the number you have picked from the <a idref='random'>Random Number Table</a>. Write the total in the <typ class='attribute'>ENDURANCE</typ> section of your <a idref='action'>Action Chart</a> (for example, if your pencil falls on the number 8 on the <a idref='random'>Random Number Table</a>, you have a total <typ class='attribute'>ENDURANCE</typ> score of 28). If you are wounded in combat, or injured at any other time during your adventure you will lose <typ class='attribute'>ENDURANCE</typ> points. If, at any time, your <typ class='attribute'>ENDURANCE</typ> points total falls to zero, you are dead and the adventure is over. You can regain lost <typ class='attribute'>ENDURANCE</typ> points during the course of the adventure, but your <typ class='attribute'>ENDURANCE</typ> level can never rise above your initial score.</p>
+
+<!--
+    <section class="frontmatter-separate" id="sskills1">
+     <meta>
+      <title>Survival Skills</title>
+      <link class="prev" idref="gamerulz" />
+      <link class="next" idref="equipmnt" />
+     </meta>
+
+     <data>
+      <p>Ever since the day you returned to the surface, you have endeavoured to develop your skills and natural instincts fully in order to best defend yourself and your colony.</p>
+      <p>Listed on your <a idref='action'>Action Chart</a> are your five basic survival skills:</p>
+      <dl>
+       <dt>Driving</dt>
+        <dd>Your ability to control powered vehicles, such as cars, motorcycles and trucks.</dd>
+      </dl>
+      <dl>
+       <dt>Shooting</dt>
+        <dd>Your familiarity and experience in the use of missile weapons, such as pistols, machine pistols, shotguns and rifles.</dd>
+      </dl>
+      <dl>
+       <dt>Field craft</dt>
+        <dd>Your knowledge and experience of all aspects of outdoor survival.</dd>
+      </dl>
+      <dl>
+       <dt>Stealth</dt>
+        <dd>Your physical fitness, the speed of your reflexes and your dexterity.</dd>
+      </dl>
+      <dl>
+       <dt>Perception</dt>
+        <dd>Your intelligence, your ability to evaluate information, your education and your mental alertness.</dd>
+      </dl>
+
+      <p>Your ability in each of these five individual skills is measured in skill points. You begin with 3 points per skill. Before starting the adventure, you may allocate an additional 4 skill points to your list of five survival skills. These 4 extra points can be used to improve one or more of your five skills. During your adventure, all five skills will be severely tested, therefore the higher the individual skill level, the better your chances of survival. You may allocate your 4 additional points entirely how you like.</p>
+      <p>When you have decided where to allocate your 4 additional skill points, make a note of the totals in the Survival Skills section of your <a idref='action'>Action Chart</a>. (In your first adventure, your total number of skill points should be 19: five skills x 3 points each = 15, plus 4 additional skill points = 19 points.)</p>
+      <p>If you complete successfully the mission set in Book 1 of the Freeway Warrior series, you may add an additional 4 points to your Survival Skills in Book 2. These additional points, together with any equipment and provisions that you possess at the end of Book 1, may then be used in the next Freeway Warrior adventure, which is called Slaughter Mountain Run.</p>
+     </data>
+    </section>
+-->
+    <section class="frontmatter-separate" id="sskills">
+     <meta>
+      <title>Survival Skills</title>
+      <link class="prev" idref="gamerulz" />
+      <link class="next" idref="equipmnt" />
+     </meta>
+
+     <data>
+
+      <section class="frontmatter" id="driving">
+       <meta><title>Driving</title></meta>
+
+       <data>
+        <p>Your ability to control powered vehicles, such as cars, motorcycles and trucks.</p>
+       </data>
+      </section>
+
+      <section class="frontmatter" id="shooting">
+       <meta><title>Shooting</title></meta>
+
+       <data>
+        <p>Your familiarity and experience in the use of missile weapons, such as pistols, machine pistols, shotguns and rifles.</p>
+       </data>
+      </section>
+      
+      <section class="frontmatter" id="fldcraft">
+       <meta><title>Field craft</title></meta>
+
+       <data>
+        <p>Your knowledge and experience of all aspects of outdoor survival.</p>
+       </data>
+      </section>
+
+      <section class="frontmatter" id="stealth">
+       <meta><title>Stealth</title></meta>
+
+       <data>
+        <p>Your physical fitness, the speed of your reflexes and your dexterity.</p>
+       </data>
+      </section>
+
+      <section class="frontmatter" id="perceptn">
+       <meta><title>Perception</title></meta>
+
+       <data>
+        <p>Your intelligence, your ability to evaluate information, your education and your mental alertness.</p>
+       </data>
+      </section>
+    
+      <p>Your ability in each of these five individual skills is measured in skill points. You begin with 3 points per skill. Before starting the adventure, you may allocate an additional 4 skill points to your list of five survival skills. These 4 extra points can be used to improve one or more of your five skills. During your adventure, all five skills will be severely tested, therefore the higher the individual skill level, the better your chances of survival. You may allocate your 4 additional points entirely how you like.</p>
+      <p>When you have decided where to allocate your 4 additional skill points, make a note of the totals in the Survival Skills section of your <a idref='action'>Action Chart</a>.</p>
+      <p>(If this is your first Freeway Warrior adventure, your total number of skill points should be 19: five skills x 3 points each = 15, plus 4 additional skill points = 19 points.)</p>
+      <p>If you complete successfully the mission set in Book 2 of the Freeway Warrior series, you may add an additional 4 points to your Survival Skills in Book 3. These additional points, together with any equipment and provisions that you possess at the end of Book 2, may then be used in the next Freeway Warrior adventure, which is called The Omega Zone.</p>
+     </data>
+    </section>
+    
+    <section class="frontmatter-separate" id="equipmnt">
+     <meta>
+      <title>Equipment</title>
+      <link class="prev" idref="sskills" />
+      <link class="next" idref="weapons" />
+     </meta>
+
+     <data>
+      <p>Apart from your clothing, a number of useful items form your basic equipment. This comprises a Backpack, and a belt on which hangs your Ammo Pouch, Medi-kit, Water Canteen and Hunting Knife. In addition to these items, you possess a <a idref="map">Map of Western Texas</a>, which you carry tucked inside your leather jacket.</p>
+
+      <section class="frontmatter" id="backpack">
+       <meta><title>Backpack</title></meta>
+       <data>
+        <p>Up to ten separate items may be stored and carried in your Backpack at any time. However, if more than three items are carried, your Stealth level will be reduced by 1 point.  If more than six items are carried, your Stealth level will be reduced by 2 points; and if you carry a full Backpack (containing ten items) your Stealth level will be reduced by 3 points.</p>
+        <p>In order to equip yourself for the task ahead, you may choose up to four items from the following list:</p>
+        <ul>
+         <li><typ class="item">SOLAR TORCH</typ></li>
+         <li><typ class="item">HE (High Explosive) GRENADE</typ></li>
+         <li><typ class="item">BINOCULARS</typ></li>
+         <li><typ class="item">COMPASS</typ></li>
+         <li><typ class="item">C.B. RADIO</typ></li>
+         <li><typ class="item">ROPE</typ></li>
+         <li><typ class="item">THREE MEALS</typ> (each Meal takes up one space in your Backpack)</li>
+         <li><typ class="item">FLEXIBLE SAW</typ></li>
+         <li><typ class="item">SIGNAL FLARE</typ></li>
+        </ul>
+        <p>List the items you have chosen on your <a idref='action'>Action Chart</a>.  If you have picked four items, adjust your current Stealth level accordingly.</p>
+        <p>Opportunities may arise during your adventure for you to pick up useful items. These items will appear in the text in bold print and, unless you are instructed otherwise, they can be stored and carried in your Backpack.</p>
+        <p>You will need to eat regularly. If you do not possess any food when you are instructed to eat a Meal, you will lose 3 <typ class='attribute'>ENDURANCE</typ> points.</p>
+       </data>
+      </section>
+
+      <section class="frontmatter" id="ammpouch">
+       <meta><title>Ammo Pouch</title></meta>
+       <data>
+        <p>Your Ammo Pouch is where you store any spare ammunition for firearms. It can hold a maximum of the following:</p>
+        <p>
+         40 rounds of 9mm calibre Pistol/Machine Pistol ammunition<br />
+         or<br />
+         20 rounds of 7.62mm calibre Rifle ammunition<br />
+         or<br />
+         10 rounds of 12-gauge calibre Shotgun ammunition
+        </p>
+        <p>When carrying mixed calibres of ammunition, use this equation to check how much space you have left in your Ammo Pouch:</p>
+        <p>4 x 9mm rounds = 2 x 7.62 rounds = 1 x 12 gauge round</p>
+        <p>Additional ammunition can be carried in your Backpack. Ammunition occupies one space for each quantity that is equal to (or less than) the maximum that can be carried in one Ammo Pouch.</p>
+       </data>
+      </section>
+       
+      <section class="frontmatter" id="medikit">
+       <meta><title>Medi-kit</title></meta>
+       <data>
+        <p>A well-stocked Medi-kit can make all the difference to your chances of survival should you suffer injury in the field or as a result of combat. It contains useful first aid supplies, such as dressings, antiseptics, antibiotics, water purification tablets, sulphonamides, pain killers, potassium iodine tablets (to delay absorption of radioactivity) and sutures.</p>
+        <p>For convenience, these medical supplies are grouped into units. To find how many units you have in your Medi-kit, pick a number from the <a idref='random'>Random Number Table</a> (0 equals 10) and add 2. Your total score equals the number of units with which you begin your adventure. To keep a record of them, circle the appropriate number of unit symbols in the Medi-kit section of your <a idref='action'>Action Chart</a>. The maximum number of units you can carry in your Medi-kit is twelve.</p>
+        <p>You may use your Medi-kit units to restore lost <typ class='attribute'>ENDURANCE</typ> points; each unit used in this way restores 3 points. Units cannot be used to restore <typ class='attribute'>ENDURANCE</typ> points in lieu of a Meal or Water when instructed to eat or drink.</p>
+       </data>
+      </section>
+
+      <section class="frontmatter" id="canteen">
+       <meta><title>Water Canteen</title></meta>
+       <data>
+        <p>Water is essential to life, and your life will depend on having a sufficient, uncontaminated supply. You will need to drink regularly during your adventure. One drink is equivalent to half a pint and your canteen holds exactly two pints of water: enough for one day's needs. When instructed to drink, be sure to tick off one box in the Water section of your <a idref='action'>Action Chart</a>.</p>
+        <p>If you do not have any Water when instructed to drink, you must lose 3 <typ class='attribute'>ENDURANCE</typ> points.</p>
+       </data>
+      </section>
+      
+     </data>
+    </section>
+
+    <section class="frontmatter-separate" id="weapons">
+     <meta>
+      <title>Weapons</title>
+      <link class="prev" idref="equipmnt" />
+      <link class="next" idref="cmbtrulz" />
+     </meta>
+
+     <data>
+
+      <section class="frontmatter" id="close">
+       <meta><title>Close Combat Weapons</title></meta>
+       <data>
+        <p>These weapons aid you in hand-to-hand fighting.  You begin your adventure armed with a Hunting Knife which, when used in close combat, adds 2 points to your <typ class='attribute'>CLOSE COMBAT SKILL</typ>. Note this Hunting Knife in the Close Combat Weapons section of your <a idref='action'>Action Chart</a>.</p>
+        <p>If you find a close combat weapon during your adventure, you may pick it up and use it. Close combat weapons will appear in the text with a close combat skill number, for example, Machete (3). This number indicates how many points this weapon will add to your <typ class='attribute'>CLOSE COMBAT SKILL</typ> when used in a hand-to-hand fight.</p> 
+        <p>The maximum number of close combat weapons you may carry is two.</p>
+       </data>
+      </section>
+
+
+      <section class="frontmatter" id="missile">
+       <meta><title>Missile Weapons</title></meta>
+       <data>
+        <p>There are four types of missile weapon:</p>
+        <ul>
+         <li>PISTOL</li>
+         <li>MACHINE PISTOL</li>
+         <li>SHOTGUN</li>
+         <li>RIFLE</li>
+        </ul>
+        <p>Unless you are continuing to use weapons from a previous Freeway Warrior book, you begin your adventure armed with only one of these weapons. Make your choice and then record the weapon you have chosen, together with its calibre and rate of fire details, in the Missile Weapons section of your <a idref='action'>Action Chart</a>.</p>    
+        <p>In order to be able to use a missile weapon, you must have sufficient ammunition of the correct calibre. The following list shows the calibre of each weapon, the amount that is used every time the weapon is fired, and the number of rounds that you possess at the start of your adventure:</p>
+
+<!--
 Weapon - Calibre - Rate of Fire - Initial No. of Rounds
 PISTOL - 9mm - 1 - 8
 MACHINE PISTOL - 9mm - 6 - 30
 SHOTGUN - 12-gauge - 1 - 4
 RIFLE - 7.62mm - 1 - 4
-
-The initial number of rounds should be noted in the Ammo Pouch section of your Action Chart. Missile weapons cannot be used if you run out of ammunition or possess rounds of the wrong calibre. However, the opportunity may arise for you to replenish your supply of ammunition and/or discover a weapon of the correct calibre.
-
-You may carry a maximum of three missile weapons. However, for every missile weapon that you carry (excluding your initial choice), you must reduce your Stealth level by 1 point.
-
-Slaughter Mountain Run
-The Game Rules - Rules for Close Combat
-
-There will be occasions when you will have to fight an enemy in hand-to-hand combat. The enemy's CLOSE COMBAT SKILL and ENDURANCE level will both be given in the text. Your aim in close combat is to kill the enemy by reducing his ENDURANCE points to zero while losing as few of your own ENDURANCE points as possible.
-
-At the start of a close combat, enter both your own and your enemy's ENDURANCE points in the appropriate boxes on the Close Combat Record section of your Action Chart. The sequence for close combat is as follows:
-
-1) Add any extra points gained through the use of close combat weapons to your current CLOSE COMBAT SKILL total.
-
-2) Subtract the CLOSE COMBAT SKILL of your enemy from this total. The result is your Combat Ratio. Enter it on the Action Chart.
-
-Example
-Cal Phoenix (CLOSE COMBAT SKILL 17) is attacked by a Renegade Clansman (CLOSE COMBAT SKILL 18). He is not given the opportunity to evade close combat, but must stand and fight his adversary. Cal Phoenix is armed with a Hunting Knife [2], so he adds 2 points to his CLOSE COMBAT SKILL, giving a total CLOSE COMBAT SKILL of 19.
-
-He subtracts the Renegade Clansman's CLOSE COMBAT SKILL from his own, giving a Combat Ratio of +1 (19 - 18 = +1). He notes this on his Action Chart as the Combat Ratio.
-
-3) After working out your Combat Ratio, pick a number from the Random Number Table.
-
-4) Turn to the Close Combat Results Table on the inside back cover of the book. Along the top of the chart are the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-refer it with the number that you have picked (the random numbers appear down the side of the chart). You now have the ENDURANCE points lost by both Cal Phoenix and his enemy in this round of close combat. (E represents points lost by the enemy; CP represents points lost by Cal Phoenix.)
-
-Example
-The Combat Ratio between Cal Phoenix and the Renegade Clansman has been established as +1. If the number picked from the Random Number Table is a 4, then the result of the first round of close combat is:
-
-Cal Phoenix loses 3 ENDURANCE points
-
-Renegade Clansman loses 4 ENDURANCE points.
-
-5) On the Action Chart, mark the changes in ENDURANCE points to the participants in the close combat.
-
-6) Unless otherwise instructed, or unless you have an option to evade, start the next round of close combat.
-
-7) Repeat the sequence from stage 3.
-
-This procedure continues until the ENDURANCE points of either the enemy or Cal Phoenix are reduced to zero, at which point the one whose score is zero is declared dead. If Cal Phoenix is dead, the adventure is over. If the enemy is dead, Cal Phoenix proceeds but with a reduced ENDURANCE point score.
-
-A summary of the close combat rules appears on the page after the Random Number Table
-
-Evasion of combat
-During your adventure you may be given the chance to evade close combat. If you have already engaged in a round of close combat and decide to evade, calculate the combat for that round in the usual manner. All ENDURANCE points lost by the enemy as a result of that round are ignored; only Cal Phoenix may lose ENDURANCE points during that round, but that is the risk of running away! You may evade combat only if the text of that particular section allows you to do so.
-
-Slaughter Mountain Run
-Close Combat Rules Summary
-
-1) Add to your CLOSE COMBAT SKILL any extra points gained through use of a close combat weapon.
-
-2) Subtract the CLOSE COMBAT SKILL score of your enemy from your total. The resulting number is the Combat Ratio.
-
-3) Pick a number from the Random Nuber Table.
-
-4) Turn to the Combat Results Table.
-
-5) Find your Combat Ratio along the top of the chart and cross-refer it with the random number you have picked. (E indicates enemy's loss of ENDURANCE points. CP indicates Cal Phoenix's loss of ENDURANCE points.)
-
-6) Continue the combat from stage 3 until one combatant has zero ENDURANCE points, this is when he is declared dead.
-
-To Evade Combat
-
-1) You may only evade combat when the text of the adventure offers you the opportunity.
-
-2) If the text offers the chance of taking evasive action instead of entering into combat, you may evade in the first round of combat or in any subsequent round.
-
-3) If you decide to evade after a round of combat, ignore all points lost by enemy in that round: only Cal Phoenix loses ENDURANCE points.
-
 -->
 
+        <p><strong>PISTOL</strong>  Calibre: 9mm, Rate of Fire: 1, Initial No. of Rounds: 8</p>
+        <p><strong>MACHINE PISTOL</strong> Calibre: 9mm, Rate of Fire: 6, Initial No. of Rounds: 30</p>
+        <p><strong>SHOTGUN</strong> Calibre: 12-gauge, Rate of Fire: 1, Initial No. of Rounds: 4</p>
+        <p><strong>RIFLE</strong> Calibre: 7.62mm, Rate of Fire: 1, Initial No. of Rounds: 4</p>
+        <p>The initial number of rounds should be noted in the Ammo Pouch section of your <a idref='action'>Action Chart</a>. Missile weapons cannot be used if you run out of ammunition or possess rounds of the wrong calibre. However, the opportunity may arise for you to replenish your supply of ammunition and/or discover a weapon of the correct calibre.</p>
+        <p>You may carry a maximum of three missile weapons.  However, for every missile weapon that you carry (excluding your initial choice), you must reduce your Stealth level by 1 point.</p>
+
+       </data>
+      </section>
+
+     </data>
+    </section>
+
+
+    <section class="frontmatter-separate" id="cmbtrulz">
+     <meta>
+      <title>Rules for Close Combat</title>
+      <link class="prev" idref="weapons" />
+      <link class="next" idref="numbered" />
+     </meta>
+
+     <data>
+      <p>There will be occasions when you will have to fight an enemy in hand-to-hand combat.  The enemy's <typ class='attribute'>CLOSE COMBAT SKILL</typ> and <typ class='attribute'>ENDURANCE</typ> level will both be given in the text. Your aim in close combat is to kill the enemy by reducing his <typ class='attribute'>ENDURANCE</typ> points to zero while losing as few of your own <typ class='attribute'>ENDURANCE</typ> points as possible.</p>
+      <p>At the start of a close combat, enter both your own and your enemy's <typ class='attribute'>ENDURANCE</typ> points in the appropriate boxes on the Close Combat Record section of your <a idref='action'>Action Chart</a>. The sequence for close combat is as follows:</p>
+      <ol class="paragraphed">
+       <li><p>Add any extra points gained through the use of close combat weapons to your current <typ class='attribute'>CLOSE COMBAT SKILL</typ> total.</p></li>
+       <li>
+        <p>Subtract the <typ class='attribute'>CLOSE COMBAT SKILL</typ> Of your enemy from this total. The result is your Combat Ratio.  Enter it on the <a idref='action'>Action Chart</a>.</p>
+        <p>Example</p>
+        <p>Cal Phoenix (<typ class='attribute'>CLOSE COMBAT SKILL</typ> 17) is attacked by a Renegade Clansman (<typ class='attribute'>CLOSE COMBAT SKILL</typ> 18). He is not given the opportunity to evade close combat, but must stand and fight his adversary. Cal Phoenix is armed with a Hunting Knife, so he adds 2 points to his <typ class='attribute'>CLOSE COMBAT SKILL</typ>, giving a total CLOSE COMBAT SKILL of 19.</p>
+        <p>He subtracts the Renegade Clansman's <typ class='attribute'>CLOSE COMBAT SKILL</typ> from his own, giving a Combat Ratio of &plus;1 (19 &minus; 18 = &plus;1).  He notes this &plus;1 on his <a idref='action'>Action Chart</a> as the Combat Ratio.</p>
+       </li>
+       <li><p>After working out your Combat Ratio, pick a number from the <a idref='random'>Random Number Table</a>.</p></li>
+       <li>
+        <p>Turn to the Close Combat Results Table on the inside back cover of the book. Along the top of the chart are the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the number that you have picked (the random numbers appear down the side of the chart). You now have the <typ class='attribute'>ENDURANCE</typ> points lost by both Cal Phoenix and his enemy in this round of close combat.  (E represents points lost by the enemy; CP represents points lost by Cal Phoenix.)</p>
+        <p>Example</p>
+        <p>The Combat Ratio between Cal Phoenix and the Renegade Clansman has been established as &plus;1.  If the number picked from the <a idref='random'>Random Number Table</a> is a 4, then the result of the first round of close combat is:
+         <ul>
+          <li>Cal Phoenix loses 3 <typ class='attribute'>ENDURANCE</typ> points.</li>
+          <li>Renegade Clansman loses 4 <typ class='attribute'>ENDURANCE</typ> points.</li>
+         </ul>
+        </p>
+       </li>
+       <li><p>On the <a idref='action'>Action Chart</a>, mark the changes in <typ class='attribute'>ENDURANCE</typ> points to the participants in the close combat.</p></li>
+       <li><p>Unless otherwise instructed, or unless you have an option to evade, start the next round of close combat.</p></li>
+       <li><p>Repeat the sequence from stage 3.</p></li>
+      </ol>
+      <p>This procedure continues until the <typ class='attribute'>ENDURANCE</typ> points of either the enemy or Cal Phoenix are reduced to zero, at which point the one whose score is zero is declared dead. If Cal Phoenix is dead, the adventure is over. If the enemy is dead, Cal Phoenix proceeds but with a reduced <typ class='attribute'>ENDURANCE</typ> point score.</p>
+      <p>A <a idref="crsumary">Summary of the Close Combat Rules</a> appears on the page after the <a idref='random'>Random Number Table</a>.</p>
+
+      <section class="frontmatter" id="evasion">
+       <meta><title>Evasion of Combat</title></meta>
+       <data>
+        <p>During your adventure you may be given the chance to evade close combat. If you have already engaged in a round of close combat and decide to evade, calculate the combat for that round in the usual manner. All ENDURANCE points lost by the enemy as a result of that round are ignored; only Cal Phoenix may lose <typ class='attribute'>ENDURANCE</typ> points during that round, but that is the risk of running away! You may evade combat only if the text of the particular section allows you to do so.</p>
+       </data>
+      </section>
+     </data>
+    </section>
+    
+   </data>
+  </section>    
+
+  
   <section class="numbered" id="numbered">
    <meta><title>Numbered Sections</title></meta>
 
@@ -615,9 +686,9 @@ To Evade Combat
       <ul>
        <li>Enough food for one Meal</li>
        <li>Enough sulphonamides for one Medi-kit unit</li>
-       <li>Flick Knife [2]</li>
-       <li>Compass</li>
-       <li>Binoculars</li>
+       <li>Flick Knife (2)</li>
+       <li><typ class="item">Compass</typ></li>
+       <li><typ class="item">Binoculars</typ></li>
       </ul>
       <p>If you keep any of these items, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
       <p>As soon as you are ready, you retrace your way along the defile and return to the surface.</p>
@@ -641,6 +712,16 @@ To Evade Combat
      <data>
       <p>The convoy is travelling at break-neck speed as it passes through the blazing ruins of Allamore and enters the pass beyond. Sweat trickles down your face as the ominous peak of Slaughter Mountain looms out of the smoke, and you witness the vicious battle taking place on its lower slopes. The bodies of slain Mavericks and Mexicans lie at the side of the freeway, tangled among the smoking remains of motorcycles and trucks once loaded with looted provisions. Small groups of desperate men are waging bitter hand-to-hand battles among this carnage, whilst others blaze away with automatic weapons, hiding in their foxholes dug by hand from the barren, stony soil.</p>
       <p>The arrival of the convoy brings a lull in the fighting. Some turn their guns on you and a hail of bullets begins to rake either side of the colony vehicles. The tow truck approaches a bend in the freeway, and, as it turns, you see a Maverick kneeling at the side of the road with a missile launcher perched on his shoulder. He tracks the truck, but a burst of Mexican fire makes him dive for cover. When he appears again he no longer has the truck in his sights: he has you in his sights!</p>
+      
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>A Maverick kneeling at the side of the road with a missile launcher perched on his shoulder.</description>
+       </meta>
+       <instance class="html" src="ill1.gif" width="386" height="621" />
+       <instance class="pdf" src="ill1.pdf" width="386" height="621" />
+      </illustration>
+
       <p>The only way you can hope to avoid being hit by the missile is by taking evasive action immediately.</p>
       <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Driving and Perception skill scores.</p>
       <choice idref="sect182">If your total score is 10 or less, <link-text>turn to 182</link-text>.</choice>
@@ -665,7 +746,7 @@ To Evade Combat
 
      <data>
       <p>Concealed beneath the piles of old documents, you discover a padlocked hatch. Three well-placed kicks remove the lock and, when you lift the hinged trapdoor, you find a large, hermetically sealed storage bin, which is filled with cigarettes, packed neatly in cartons of 200. Although you have no personal need for these cigarettes, you know that there are those who would willingly trade food or fuel for them.</p>
-      <p>If you decide to keep a Carton of Cigarettes, remember to adjust your <a idref='action'>Action Chart</a> accordingly. One carton counts as one Backpack item.</p>
+      <p>If you decide to keep a <typ class="item">Carton of Cigarettes</typ>, remember to adjust your <a idref='action'>Action Chart</a> accordingly. One carton counts as one Backpack item.</p>
       <p>Having satisfied yourself that there is little else of worth here, you leave the cabin and return to your roadster.</p>
       <choice idref="sect216"><link-text>Turn to 216</link-text>.</choice>
      </data>
@@ -678,17 +759,17 @@ To Evade Combat
       <p>The deadly bullets miss you by inches and you dive to the floor in case the unseen gunman decides to fire again. Then you hear running footsteps approaching, and as they get louder, you raise your weapon and unleash a round of fire at the door. There is a scream from inside the kitchen, and you hear a body fall heavily to the tiled floor amid a crash of broken glass and crockery.</p>
       <p>Just inside the door you discover the body of a clansman. Judging from the long-horned skull that you find painted on the back of his leather vest, you have just laid to rest your first Angelino. On the floor nearby you find his weapons and equipment: a Machine Pistol (containing eighteen rounds of 9mm ammunition) and a Backpack, which holds the following items:</p>
       <ul>
-       <li>Flexible Saw</li>
+       <li><typ class="item">Flexible Saw</typ></li>
        <li>HE Grenade</li>
        <li>Water Canteen (containing enough water for three Drinks)</li>
-       <li>Small blanket</li>
-       <li>Enough bandages, sulphonamides, and antiseptics for three Medi-kits units</li>
-       <li>Knife [2]</li>
+       <li><typ class="item">Small Blanket</typ></li>
+       <li>Enough bandages, sulphonamides, and antiseptics for three Medi-kit units</li>
+       <li>Knife (2)</li>
       </ul>
       <p>In addition to these items, a search of the kitchen also reveals the following:</p>
       <ul>
-       <li>Meat Cleaver [3]</li>
-       <li>Bread Knife [2]</li>
+       <li>Meat Cleaver (3)</li>
+       <li>Bread Knife (2)</li>
        <li>Enough canned food for five Meals</li>
       </ul>
       <p>If you choose to keep any of the items in either list, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
@@ -703,6 +784,15 @@ To Evade Combat
      <data>
       <p>The track leads to a cluster of log cabins and adobe huts that look as if they have only recently been constructed. Nearby, erected around the entrance to a cave, you see a palisade and, standing at the gate in this wall of logs, you notice a large group of men, women and children. They are dressed in animal skins, and their faces and hair are dyed with bright colours. At your approach they scurry inside the gate and take cover behind their log wall.</p>
       <p>The instant you bring your roadster to a halt you smell the strong, oily aroma of gasolene. With trepidation you inspect the bullet-riddled trunk and discover, to your horror, that gasolene is gushing from the spare fuel containers. They are so badly holed that an attempt at repairing them would be futile. The roar of your pursuer's motorcycle is growing louder, and Kate urges you to abandon the car and take cover with the others behind the wall of logs. You nod your agreement and run towards the gate but as you get nearer, a man steps forward to block your access. He is holding a loaded bow. A flint-tipped arrow is drawn taught to his lips and he is pointing it at your chest.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>A man steps forward to block your access. He is holding a loaded bow.</description>
+       </meta>
+       <instance class="html" src="ill2.gif" width="386" height="623" />
+       <instance class="pdf" src="ill2.pdf" width="386" height="623" />
+      </illustration>
+      
       <p>Pick a number from the <a idref='random'>Random Number Table</a>.</p>
       <choice idref="sect96">If the number you have picked is 0-3, <link-text>turn to 96</link-text>.</choice>
       <choice idref="sect145">If the number is 4-6, <link-text>turn to 145</link-text>.</choice>
@@ -757,7 +847,7 @@ To Evade Combat
      <data>
       <p>You awake shortly after dawn, your neck stiff and aching after an uncomfortable night's sleep. Little light is filtering from the surface of this underground lot, but there is sufficient for you to be able to take stock of your surroundings and make sure that you are alone. After checking your equipment, you leave your roadster and ascend to the surface, where you make a mental note of this location before beginning your trek towards the downtown stronghold of the Angelinos.</p>
       <p>The heat is bearable at this early hour and you encounter no sign of the city's occupants as stealthily you make your way through the shattered streets. An hour later you reach the southern section of their perimeter wall and stop to observe those who are guarding it. They look like a motley group of criminals armed with an assortment of weapons and equipment, much of which appears rusty and incapable of functioning. All that identifies them as Angelinos is the symbol they wear on their jackets and T-shirts: the skull of a long-horned steer.</p>
-      <p>After having studied the defences and watched the guards for the better part of an hour, you decide that the best place to gain entry to the stronghold is through an office block that interrupts the perimeter wall. The wooden planks that have been used to seat it are warped and split, and gaining entry to the building should not prove too difficult. Patiently you wait for the right moment before you break cover and sprint across the rubble-strewn street towards the main entrance.</p>
+      <p>After having studied the defences and watched the guards for the better part of an hour, you decide that the best place to gain entry to the stronghold is through an office block that interrupts the perimeter wall. The wooden planks that have been used to seal it are warped and split, and gaining entry to the building should not prove too difficult. Patiently you wait for the right moment before you break cover and sprint across the rubble-strewn street towards the main entrance.</p>
       <choice idref="sect189"><link-text>Turn to 189</link-text>.</choice>
      </data>
     </section>
@@ -767,7 +857,7 @@ To Evade Combat
 
      <data>
       <p>You radio back to the convoy that you have sighted something suspicious in the hills to the south. You bring your roadster to a halt, and, as the convoy draws closer, Cutter disembarks and comes running forward to find out more. You point out the place on the ridge where you saw the reflections, and he scans the area with his powerful binoculars.</p>
-      <p>'Whatever was up there has gone now, Cal,' he says. 'If it was clan scouts you saw then we'd better keep on movin' before they rustle up enough of their kin to bushwack us.'</p>
+      <p>'Whatever was up there has gone now, Cal,' he says. 'If it was clan scouts you saw then we'd better keep on movin' before they rustle up enough of their kin to bushwhack us.'</p>
       <p>You keep a watchful eye on the ridge as you lead the convoy along this section of the freeway. Anxiously you expect an ambush to take place at any time, but, despite your fears, an attack does not materialize. At length, the stores and houses of Van Horn appear on the road ahead. The town looks deserted but you decide to take no chances. You bring the convoy to a halt within a mile of the town limits and, accompanied by Sergeant Haskell, you leave your roadster and enter on foot to check that the place is safe for the convoy to pass through.</p>
       <p>The tumbledown buildings are deathly quiet as you walk along the main street of Van Horn, and you notice nothing out of the ordinary until you reach a bar near the centre of the town. A motorcycle is parked beside the entrance, its fuel tank emblazoned with the ace of spades emblem of the Mavericks clan. You decide to search the bar and, if possible, try to capture and question the bike's owner. Haskell suggests that it would be a good idea if one of you were to enter by the rear door and you nod your agreement.</p>
       <choice idref="sect131">If you wish to enter the bar from the rear, <link-text>turn to 131</link-text>.</choice>
@@ -839,9 +929,9 @@ To Evade Combat
       <ul>
        <li>Enough food for one Meal</li>
        <li>Enough sulphonamides for one Medi-kit unit</li>
-       <li>Flick Knife [2]</li>
-       <li>Compass</li>
-       <li>BinocuIars</li>
+       <li>Flick Knife (2)</li>
+       <li><typ class="item">Compass</typ></li>
+       <li><typ class="item">Binoculars</typ></li>
       </ul>
       <p>If you keep any of these items, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
       <p>As soon as you are ready, you retrace your way along the defile and return to the surface.</p>
@@ -942,8 +1032,18 @@ To Evade Combat
       <p>'Do I look dead?' you reply, half-jokingly.</p>
       <p>'No &ellips;' she laughs. 'You look just great.'</p>
       <p>Then the sound of running feet alerts you both to approaching danger. Before Kate knocked him out, Mad Dog radioed his men and reported your presence in the observation block. Now a dozen of his toughest clansmen are racing along the corridor in answer to his call.</p>
-      <p>'Let's get outta here, Cal!' says Kate, and starts to run towards a fire escape door. You follow her, pausing briefly to snatch the map that the two clan leaders were studying when you burst into the room. (Record this Mad Dog Map in the margin of your <a idref='action'>Action Chart</a>; you carry it tucked inside your jacket and therefore you need not record it as a Backpack item.)</p>
+      <p>'Let's get outta here, Cal!' says Kate, and starts to run towards a fire escape door. You follow her, pausing briefly to snatch the map that the two clan leaders were studying when you burst into the room. (Record this <typ class="item">Mad Dog Map</typ> in the margin of your <a idref='action'>Action Chart</a>; you carry it tucked inside your jacket and therefore you need not record it as a Backpack item.)</p>
       <p>You race to catch up with Kate as she runs along the gantry that lies on the other side of the door. A burst of machine pistol fire echoes in your wake as the first of Mad Dog's men enter the observation room. Bullets begin to scream past on either side of you. Twenty yards along the iron gantry you come under additional fire from clansmen in the stadium below.</p>
+
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>Kate runs along the gantry that lies on the other side of the door.</description>
+       </meta>
+       <instance class="html" src="ill3.gif" width="386" height="630" />
+       <instance class="pdf" src="ill3.pdf" width="386" height="630" />
+      </illustration>
+
       <p>Add your Stealth skill score to your current <typ class="attribute">ENDURANCE</typ> points score.</p>
       <choice idref="sect83">If your total score is 14 or less, <link-text>turn to 83</link-text>.</choice>
       <choice idref="sect185">If your total score is 15 or more, <link-text>turn to 185</link-text>.</choice>
@@ -976,10 +1076,10 @@ To Evade Combat
      <data>
       <p>Only heavy construction materials, such as steel girders and concrete panels, remain readily identifiable amongst the dust-covered debris that surrounds the roadster. However, after a brief search of the site, you discover a cache of tools and equipment stored in what was to have been the basement of an office block. After sifting through the cache, you separate the following items:</p>
       <ul>
-       <li>Welding Torch</li>
-       <li>Oxyacetylene</li>
-       <li>Bolt Cutters</li>
-       <li>Copper Rods</li>
+       <li><typ class="item">Welding Torch</typ></li>
+       <li><typ class="item">Oxyacetylene</typ></li>
+       <li><typ class="item">Bolt Cutters</typ></li>
+       <li><typ class="item">Copper Rods</typ></li>
       </ul>
       <p>If you wish to keep any of these Backpack items, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
       <p>Having satisfied yourself that nothing else of use has been overlooked, you return to your roadster and resume your journey to San Angelo.</p>
@@ -1018,6 +1118,12 @@ To Evade Combat
     <section class="numbered" id="sect52">
      <meta><title>52</title></meta>
 
+     <footnotes>
+      <footnote id="sect52-1-foot" idref="sect52-1">
+       <p>This is the correct answer to the security valve puzzle in <a idref="sect129">Section 129</a>.</p>
+      </footnote>
+     </footnotes>
+     
      <data>
       <p>The valve clicks open and the tell-tale aroma of gasolene rises from the tank to greet your nostrils. A fuel gauge on the inside edge of the valve shows you that the tank contains 125 gallons of premium unleaded gasolene, more than sufficient for your needs. When the others come to inspect your handiwork they congratulate you unstintingly.</p>
       <p>After filling the tank of your roadster, Sergeant Haskell and his men set about destroying the remainder of the fuel to prevent it from falling into the hands of Mad Dog Michigan's clansmen. Then, with a view of the station ablaze in your driving mirror, you set off west along Freeway 10 to keep your rendezvous with the convoy.</p>
@@ -1145,9 +1251,9 @@ To Evade Combat
      <data>
       <p>The Mexican clansman drops lifelessly to the ground, and quickly you step forward to search his body. He was the one crew member who escaped from the truck, and in his pockets you discover the following items:</p>
       <ul>
-       <li>HE Grenade</li>
+       <li><typ class="item">HE Grenade</typ></li>
        <li>Enough antiseptics and sutures for two Medi-kit units</li>
-       <li>Knife [2]</li>
+       <li>Knife (2)</li>
        <li>Twelve rounds of 9mm ammunition</li>
       </ul>
       <p>If you wish to keep any of these items, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
@@ -1206,6 +1312,14 @@ To Evade Combat
      <data>
       <p>You keep as still as you can and try not to breathe as a Detroit Lion clansman rummages through a tool box less than four feet from where you are hiding. Fortunately, he finds what he is looking for quickly, returns to the cab, and restarts the engine. Shortly the truck stops once again, but this time you notice that it has drawn up alongside three others in a section of the stadium that has been turned into a pits area. You slip away from the truck before the driver disembarks, and make your way through the crowds of clan mechanics and riders towards an empty section of the arena.</p>
       <p>From a position high among the tiers, you look down at the rows of empty seats that encircle the dusty arena and observe the preparations taking place around the perimeter track. This stadium once hosted international sporting events, many of which were televised and beamed live around the world. Now it plays host to a sporting event of a very different kind. The Angelinos have challenged the Lions to put forward four of their best riders for a twenty-lap motorcycle race around the arena. The track itself reminds you of an old film you saw when you were a child, a film about the wild chariot races that took place in Ancient Rome. Today's event is meant to be a friendly challenge to celebrate the signing of their alliance, but with clan honour at stake the race will undoubtedly be fought out in deadly earnest.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>This stadium once hosted international sporting events, now it plays host to a one of a very different kind</description>
+       </meta>
+       <instance class="html" src="ill4.gif" width="1024" height="786" />
+       <instance class="pdf" src="ill4.pdf" width="1024" height="786" />
+      </illustration>
       <p>Facing you, on the far side of the stadium, is the glass-fronted observation block that was once used by television and radio commentators. Your curiosity is aroused by it when you notice that the door to this block is heavily guarded. Fixedly you stare at its full-length windows and count five occupants: four clansmen and one blonde-haired girl. You cannot see her face clearly, but you know that the girl you are looking at is Kate Norton.</p>
       <choice idref="sect346"><link-text>Turn to 346</link-text>.</choice>
      </data>
@@ -1244,9 +1358,9 @@ To Evade Combat
       <ul>
        <li>Enough food for one Meal</li>
        <li>Enough sulphonamides for one Medi-kit unit</li>
-       <li>Flick Knife [2]</li>
-       <li>Compass</li>
-       <li>Binoculars</li>
+       <li>Flick Knife (2)</li>
+       <li><typ class="item">Compass</typ></li>
+       <li><typ class="item">Binoculars</typ></li>
       </ul>
       <p>If you keep any of these items, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
       <p>As soon as you are ready, you retrace your way along the defile and return to the surface.</p>
@@ -1470,6 +1584,14 @@ To Evade Combat
 
      <data>
       <p>The moment you strike your killing blow, a loud cheer fills the stadium. Ricky Riot, the top Angelinos rider, has just crossed the line and won the motorcycle race. Mekong Mike curses you with his dying breath and, as he falls to the floor, you suddenly realize that Mad Dog Michigan is watching you from the opposite side of the map table. He finishes speaking into a radio handset and then, with a cruel sneer, levels his pistol, taking deliberate aim at your head. He is about to squeeze the trigger when Kate appears behind him with a wooden stool clutched unsteadily in her hands. With one fell stroke she smashes it down upon his head, leaving him sprawled unconscious on the floor.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>With one fell stroke Kate smashes the stool down upon Mad Dog Michigan's head.</description>
+       </meta>
+       <instance class="html" src="ill5.gif" width="386" height="626" />
+       <instance class="pdf" src="ill5.pdf" width="386" height="626" />
+      </illustration>
       <choice idref="sect45"><link-text>Turn to 45</link-text>.</choice>
      </data>
     </section>
@@ -1500,8 +1622,8 @@ To Evade Combat
 
      <data>
       <p>You walk around the building and notice that it has no windows or other means of access. Nothing hints at what is stored inside, and the more you consider it, the more intrigued you become.</p>
-      <choice idref="sect221">If you possess a Flexible Saw, and wish to use it to try to cut through the padlock, <link-text>turn to 221</link-text>.</choice>
-      <choice idref="sect236">If you possess an H.E. Grenade, and wish to use it to blow open the doors, <link-text>turn to 236</link-text>.</choice>
+      <choice idref="sect221">If you possess a <typ class="item">Flexible Saw</typ>, and wish to use it to try to cut through the padlock, <link-text>turn to 221</link-text>.</choice>
+      <choice idref="sect236">If you possess an <typ class="item">H.E. Grenade</typ>, and wish to use it to blow open the doors, <link-text>turn to 236</link-text>.</choice>
       <choice idref="sect188">If you choose to ignore the building and its unknown contents and search elsewhere, <link-text>turn to 188</link-text>.</choice>
      </data>
     </section>
@@ -1580,8 +1702,8 @@ To Evade Combat
        <li>Enough antibiotics for one Medi-kit unit</li>
        <li>Water Canteen (containing enough water for two Drinks)</li>
        <li>Enough food for one Meal</li>
-       <li>Knife [2]</li>
-       <li>Goggles</li>
+       <li>Knife (2)</li>
+       <li><typ class="item">Goggles</typ></li>
       </ul>
       <p>Parked beside the entrance to the store, from where the Angelino first appeared, you discover his motorcycle. You use it to transport Kate and the welding equipment back to your roadster and immediately set to work on repairing the damage. It takes all night for you to dismantle, cut, re-align and weld the damaged chassis. It is a difficult task, made even more so by fatigue, but the lessons you learnt when you helped Cutter to build this roadster over six months ago prove invaluable.</p>
       <p>You work continuously, and it is not until an hour after dawn that the repairs are finally completed. In the clear light of early morning you can see for miles across the rocky plain that surrounds the highway south of Eldorado. It appears empty, although you remain on the alert every second of your drive to Sonora, the next town marked on your map, for it is in this direction that the Angelinos were heading when they passed you last night. You are less than a mile from the ruins of Sonora when you are greeted by the welcome sight of Interstate 10, stretching east-to-west across your path. This is the freeway you hope will take you all the way to your rendezvous with the colony at Kent, and then on through the mountains to El Paso.</p>
@@ -1653,8 +1775,8 @@ To Evade Combat
      </data>
     </section>
 
-    <section class="numbered" id="sect18">
-     <meta><title>18</title></meta>
+    <section class="numbered" id="sect108">
+     <meta><title>108</title></meta>
 
      <data>
       <p>You swerve and accelerate to avoid the missile, and it hits the ground a few feet behind the trunk of your roadster. The blast takes your breath away, but you recover quickly and bring your car under control with consummate skill. In your mirror you see the convoy coming under small-arms fire, but it is light and sporadic and it claims no victims. Soon you are all safely out of the battle zone and racing away from the Slaughter Mountain run towards Sierra Blanca.</p>
@@ -1687,7 +1809,7 @@ To Evade Combat
      <meta><title>111</title></meta>
 
      <data>
-      <p>The scorched bones of a coyote lie scattered around the ashes of the camp fire,the remnants of the meal that you watched the two clansmen share. Where their motorcycles were parked you discover a Leather Face Mask. If you decide to keep this item, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
+      <p>The scorched bones of a coyote lie scattered around the ashes of the camp fire, the remnants of the meal that you watched the two clansmen share. Where their motorcycles were parked you discover a <typ class="item">Leather Face Mask</typ>. If you decide to keep this item, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
       <p>Satisfied that nothing of importance has been missed, you return to your roadster and begin the next stage of your journey to San Angelo. Less than a mile beyond the bridge you see a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your map confirms your suspicions: you are approaching Sterling City.</p>
       <choice idref="sect100"><link-text>Turn to 100</link-text>.</choice>
      </data>
@@ -1724,7 +1846,7 @@ To Evade Combat
       <p>You start your car and steer it back on to the freeway towards Fabens. Ten minutes later, you see the town in the distance, and once more you hide your roadster in the yucca forest before going forward to scout the clan-held town.</p>
       <p>A formidable barricade has been thrown across the freeway approach. It consists of auto wrecks filled with earth and broken chunks of concrete, stacked three deep. It would be virtually impossible for the convoy to break through this barrier. On the perimeter of the town, the Mexicans have dug pits to entrap any vehicles attempting to bypass the barricade. It looks hopeless, but if you are to reach El Paso, you must find a way through this freeway defence.</p>
       <p>After observing the barricade at some length, Sergeant Haskell evolves a plan to blow a hole in it that is large enough to allow the convoy through in its entirety. You return to Fort Hancock and inform the colony of the plan. Then a message is sent to El Paso, requesting that they be ready and waiting to receive you once you break through.</p>
-      <choice idref="sect294">If you possess a Signal Flare, <link-text>turn to 294</link-text>.</choice>
+      <choice idref="sect294">If you possess a <typ class="item">Signal Flare</typ>, <link-text>turn to 294</link-text>.</choice>
       <choice idref="sect98">If you do not possess this item, <link-text>turn to 98</link-text>.</choice>
      </data>
     </section>
@@ -1737,7 +1859,7 @@ To Evade Combat
       <p>'What are you up to?' growls the scar-faced Detroit Lion, his stinking breath making you pull away in disgust. 'Sabotage, is it?' he spits, accusingly.</p>
       <p>'Nah &ellips; I ain't no saboteur,' you reply, stalling for time, as you let your hand drift slowly towards your close combat weapon. I'm an Angelino who jus' wants t'see the race. I'm supposed to be patrolling the south zone but ain't nothin' ever happens down there. Gimme a break, will ya?'</p>
       <p>As your fingers close around your weapon, you see something that makes you hesitate. At the rear of the truck you glimpse a large crowd of clansmen who are queueing to enter the stadium. The sight dissuades you from attacking your accuser, and instead you decide to try offering him a bribe.</p>
-      <choice idref="sect161">If you possess a Bottle of Bourbon, <link-text>turn to 161</link-text>.</choice>
+      <choice idref="sect161">If you possess a <typ class="item">Bottle of Bourbon</typ>, <link-text>turn to 161</link-text>.</choice>
       <choice idref="sect207">If you do not possess this item, <link-text>turn to 207</link-text>.</choice>
      </data>
     </section>
@@ -1819,13 +1941,21 @@ To Evade Combat
 
      <data>
       <p>The case-hardened steel padlock is difficult but not impossible to cut. Eventually it gives and you are able to gain access to the hangar-like building. Inside you discover an armoured truck, one of many that were once used by banks to transport cash and bullion around Texas. This one was hijacked shortly before 'the Day', and was brought here where its cargo was to have been shared out by the robbers. However they never had a chance to divide and spend their loot, and the vehicle still contains over thirty million dollars in cash, a sum now completely worthless.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>The armoured truck still contains over thirty million dollars in cash, a sum now completely worthless.</description>
+       </meta>
+       <instance class="html" src="ill6.gif" width="386" height="617" />
+       <instance class="pdf" src="ill6.pdf" width="386" height="617" />
+      </illustration>
       <p>The truck's fuel tank is a quarter full, but it is diesel oil and cannot be used in your roadster. Cursing your luck, you search the truck and the building for anything that may be of practical use and you discover the following items:</p>
       <ul>
-       <li>Tool Kit</li>
-       <li>Air Pump</li>
+       <li><typ class="item">Tool Kit</typ></li>
+       <li><typ class="item">Air Pump</typ></li>
        <li>Distilled Water (enough for three Drinks)</li>
-       <li>Engine Oil</li>
-       <li>Monkey Wrench</li>
+       <li><typ class="item">Engine Oil</typ></li>
+       <li><typ class="item">Monkey Wrench</typ></li>
       </ul>
       <p>Dusk is beginning to give way to darkness and you are anxious to return to the roadster before the evening light fades completely. Having satisfied yourself that you have overlooked nothing of value, you leave the building and return to your car.</p>
       <choice idref="sect216"><link-text>Turn to 216</link-text>.</choice>
@@ -1838,9 +1968,9 @@ To Evade Combat
      <data>
       <p>Very little of any practical use remains intact within the cars that are littered around the lot. However, a search of the service bay uncovers the following items that may be of help to you on the road ahead:</p>
       <ul>
-       <li>Tool Kit</li>
-       <li>Solar Torch</li>
-       <li>Engine Oil</li>
+       <li><typ class="item">Tool Kit</typ></li>
+       <li><typ class="item">Solar Torch</typ></li>
+       <li><typ class="item">Engine Oil</typ></li>
       </ul>
       <p>If you wish to keep any of these Backpack items, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
       <p>Having satisfied yourself that nothing else of use has been overlooked, you return to your roadster and resume your journey to San Angelo.</p>
@@ -1863,17 +1993,17 @@ To Evade Combat
      <data>
       <p>Judging from the long-horned skull that you find painted on the back of his leather vest, you have just laid to rest your first Angelino. On the floor, close to where you first spotted him, you find his weapons and equipment: a Machine Pistol (containing eighteen rounds of 9mm ammunition) and a Backpack, which holds the following items:</p>
       <ul>
-       <li>Flexible Saw</li>
-       <li>HE Grenade</li>
+       <li><typ class="item">Flexible Saw</typ></li>
+       <li><typ class="item">HE Grenade</typ></li>
        <li>Water Canteen (containing enough water for three Drinks)</li>
-       <li>Small Blanket</li>
+       <li><typ class="item">Small Blanket</typ></li>
        <li>Enough bandages, sulphonamides, and antiseptics for three Medi-kit units</li>
-       <li>Knife [2]</li>
+       <li>Knife (2)</li>
       </ul>
       <p>In addition to these items, a search of the kitchen also reveals the following:</p>
       <ul>
-       <li>Meat Cleaver [3]</li>
-       <li>Bread Knife [2]</li>
+       <li>Meat Cleaver (3)</li>
+       <li>Bread Knife (2)</li>
        <li>Enough canned food for five Meals</li>
       </ul>
       <p>If you choose to keep any of the items in either list, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
@@ -1906,9 +2036,22 @@ To Evade Combat
     <section class="numbered" id="sect129">
      <meta><title>129</title></meta>
 
+     <footnotes>
+      <footnote id="sect129-1-foot" idref="sect129-1">
+       <p>The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
+      </footnote>
+     </footnotes>
+
      <data>
       <p>You examine the three dials that are set into the top of the security valve. Each is divided into three segments, and each segment displays a number. One of the segments on the third dial has numbers which can be altered by hand. Carefully you consider the numbers and soon realize that they are part of a coded combination lock. By turning the adjustable numbers on the third dial to the correct total, you will release the lock and open the valve.</p>
       <p>Consider the following numbers carefully. When you think you know what the missing number is, turn to the entry which bears the same number as your answer.</p>
+      <illustration class="inline">
+       <meta>
+        <creator>Brian Williams</creator>
+       </meta>
+       <instance class="html" src="small9.gif" width="386" height="150" />
+       <instance class="pdf" src="small9.pdf" width="386" height="150" />
+      </illustration>
       <choice idref="sect226">If you cannot solve the security code, <link-text>turn to 226</link-text>.</choice>
      </data>
     </section>
@@ -1919,14 +2062,14 @@ To Evade Combat
      <data>
       <p>Despite pulling your T-shirt to your face to filter out the dust, the heat and the cloying air conspire to sap your strength: lose 2 <typ class="attribute">ENDURANCE</typ> points. Determinedly you continue your search and, after nearly half an hour of exhausting work, you uncover the following items:</p>
       <ul>
-       <li>Tool Kit</li>
-       <li>Siren</li>
+       <li><typ class="item">Tool Kit</typ></li>
+       <li><typ class="item">Siren</typ></li>
        <li>Six rounds of 7.62mm ammunition</li>
-       <li>Hunting Knife [2]</li>
-       <li>Tenon Saw</li>
+       <li>Hunting Knife (2)</li>
+       <li><typ class="item">Tenon Saw</typ></li>
        <li>Four rounds of 12-gauge Shotgun shells</li>
-       <li>Plastic tube</li>
-       <li>File</li>
+       <li><typ class="item">Plastic Tube</typ></li>
+       <li><typ class="item">File</typ></li>
       </ul>
       <p>Remember to make a note on your <a idref='action'>Action Chart</a> of any of the items that you decide to keep.</p>
       <choice idref="sect59">To continue, <link-text>turn to 59</link-text>.</choice>
@@ -1965,7 +2108,7 @@ To Evade Combat
       <p>It takes you an hour to dismantle, clean and replace the fuel filter, during which time you must take 2 Drinks or lose 6 <typ class="attribute">ENDURANCE</typ> points due to dehydration.</p>
       <p>The fault rectified, the engine starts sweetly the first time you touch the ignition. You accelerate away but within a few minutes you see something in the distance that makes you slow to a snail's pace.</p>
       <p>It is a girder bridge that carries the highway across the North Concho River. The bridge is intact and passable, but you are worried by the sight of a lazy plume of woodsmoke rising from a spot near its approach ramp.</p>
-      <choice idref="sect296">If you possess Binoculars, <link-text>turn to 296</link-text>.</choice>
+      <choice idref="sect296">If you possess <typ class="item">Binoculars</typ>, <link-text>turn to 296</link-text>.</choice>
       <choice idref="sect224">If you do not possess this item, <link-text>turn to 224</link-text>.</choice>
      </data>
     </section>
@@ -1997,7 +2140,7 @@ To Evade Combat
      <meta><title>136</title></meta>
 
      <data>
-      <p>In a desperate attempt to reach him before he can cock and fire his gun, you race towards your adversary and launch yourself at his chest. The shock of seeing you charging at him makes him hesitate for a few vital seconds, and when your fists connect with his body, the force of impact leaves him winded and stunned. Still he fights to free himself from your grip, and, as he wriggles free, he unsheathes a knife from his boot and lunges at your neck</p>
+      <p>In a desperate attempt to reach him before he can cock and fire his gun, you race towards your adversary and launch yourself at his chest. The shock of seeing you charging at him makes him hesitate for a few vital seconds, and when your fists connect with his body, the force of impact leaves him winded and stunned. Still he fights to free himself from your grip, and, as he wriggles free, he unsheathes a knife from his boot and lunges at your neck.</p>
       <combat><enemy>Rockblitz</enemy><enemy-attribute class="closecombatskill">15</enemy-attribute><enemy-attribute class="endurance">24</enemy-attribute></combat>
       <p>Owing to the speed of your attack, and your first strike, add 2 points to your <typ class="attribute">CLOSE COMBAT SKILL</typ> for the duration of the combat.</p>
       <choice idref="sect248">If you win the fight, <link-text>turn to 248</link-text>.</choice>
@@ -2022,13 +2165,13 @@ To Evade Combat
       <p>Before you bury these two Detroit Lions, you search their bodies and their bikes, and discover the following useful items:</p>
       <ul>
        <li>Pistol (containing three rounds of 9mm ammunition)</li>
-       <li>Dagger [2]</li>
+       <li>Dagger (2)</li>
        <li>Water Canteen (containing enough water for three Drinks)</li>
-       <li>Leather Face Mask</li>
-       <li>Rope</li>
+       <li><typ class="item">Leather Face Mask</typ></li>
+       <li><typ class="item">Rope</typ></li>
        <li>Machine Pistol (containing eighteen rounds of 9mm ammunition)</li>
-       <li>Cigarette Lighter</li>
-       <li>HE Grenade</li>
+       <li><typ class="item">Cigarette Lighter</typ></li>
+       <li><typ class="item">HE Grenade</typ></li>
        <li>Enough pain killers for one Medi-kit unit</li>
       </ul>
       <p>There remains no trace of the bikers or their machines when eventually you complete the grisly task of burial. Wearily you return to your roadster and begin the next stage of your journey to San Angelo. Less than a mile beyond the bridge you see a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your map confirms that you are approaching Sterling City.</p>
@@ -2080,7 +2223,7 @@ To Evade Combat
      <meta><title>143</title></meta>
 
      <data>
-      <p>You rush forward, pausing briefly at the bottom of the staircase to check that the two guards are no longer a threat. Lying across the blood-stained chest of one of the men is a machine pistol (if you wish to take this weapon, you discover that it contains twenty-four rounds of 9mm ammunition) and attached to the belt of the other is an HE Grenade.</p>
+      <p>You rush forward, pausing briefly at the bottom of the staircase to check that the two guards are no longer a threat. Lying across the blood-stained chest of one of the men is a machine pistol (if you wish to take this weapon, you discover that it contains twenty-four rounds of 9mm ammunition) and attached to the belt of the other is an <typ class="item">HE Grenade</typ>.</p>
       <p>Stepping over the bodies, you begin to ascend the stairs to the observation room, but you are only half-way up when you see the door start to open.</p>
       <choice idref="sect268"><link-text>Turn to 268</link-text>.</choice>
      </data>
@@ -2115,13 +2258,13 @@ To Evade Combat
       <p>Once you have fully recovered, you decide to bury your enemies. But first you search both bodies and the bikes, and discover the following useful items:</p>
       <ul>
        <li>Machine Pistol (containing twelve rounds of 9mm ammunition)</li>
-       <li>Cigarette Lighter</li>
-       <li>HE Grenade</li>
+       <li><typ class="item">Cigarette Lighter</typ></li>
+       <li><typ class="item">HE Grenade</typ></li>
        <li>Enough pain killers for one Medi-kit unit</li>
        <li>Pistol (containing four rounds of 9mm ammunition)</li>
-       <li>Dagger [2]</li>
-       <li>Leather Face Mask</li>
-       <li>Rope</li>
+       <li>Dagger (2)</li>
+       <li><typ class="item">Leather Face Mask</typ></li>
+       <li><typ class="item">Rope</typ></li>
       </ul>
       <p>There remains no trace of the bikers or their machines when eventually you complete the grisly task of burial. Then wearily you return to your roadster and begin the next stage of your journey to San Angelo. Less than a mile beyond the bridge you see a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your map confirms that you are approaching Sterling City.</p>
       <choice idref="sect100"><link-text>Turn to 100</link-text>.</choice>
@@ -2153,7 +2296,7 @@ To Evade Combat
 
      <data>
       <p>You bring your roadster to a halt beside the pick-up but leave the engine idling in case you have to make a fast getaway. After checking to make sure that it is not booby-trapped, you lift the hood and take a look at the truck's engine. The ground beneath it is stained black where oil has leaked from a shattered sump; the damage looks irreparable.</p>
-      <p>Inside the cab you find a CB Radio attached to the dashboard. It has its own self-contained power supply and the unit is still in good working order. Having satisfied your curiosity, you return to your car and continue on your way to San Angelo.</p>
+      <p>Inside the cab you find a <typ class="item">CB Radio</typ> attached to the dashboard. It has its own self-contained power supply and the unit is still in good working order. Having satisfied your curiosity, you return to your car and continue on your way to San Angelo.</p>
       <choice idref="sect303"><link-text>Turn to 303</link-text>.</choice>
      </data>
     </section>
@@ -2168,7 +2311,15 @@ To Evade Combat
       <p>The food and wine taste delicious (restore 3 <typ class="attribute">ENDURANCE</typ> points), and, after eating your fill, you both settle down to sleep in front of the glowing embers of the camp fire.</p>
       <p>It seems as though you have only just closed your eyes when you are stirred to consciousness by a loud crackling sound and the acrid smell of smoke. Horror fills your senses when you open your eyes to see yourself surrounded by a blazing wall of yellow flame. Lightning struck the library roof while you were asleep, starting a fire that has been fuelled by the shelves of dust-dry books, and which has now spread to the main hall where it threatens to consume you both.</p>
       <p>Quickly you wake Kate and together you fight your way towards the main door. You are within ten feet of the exit when a burning bookcase falls across your path.</p>
-      <choice idref="sect47">If you possess a Fire Extinguisher, <link-text>turn to 47</link-text>.</choice>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>You and Kate are within ten feet of the exit when a burning bookcase falls across your path.</description>
+       </meta>
+       <instance class="html" src="ill7.gif" width="386" height="622" />
+       <instance class="pdf" src="ill7.pdf" width="386" height="622" />
+      </illustration>
+      <choice idref="sect47">If you possess a <typ class="item">Fire Extinguisher</typ>, <link-text>turn to 47</link-text>.</choice>
       <choice idref="sect316">If you do not possess this item, <link-text>turn to 316</link-text>.</choice>
      </data>
     </section>
@@ -2242,7 +2393,7 @@ To Evade Combat
      <data>
       <p>Haskell despatches three of the four clansmen, and the survivor manages to escape into the yucca forest. You are about to give chase when he says, 'Let him go, Cal. He won't get far on his own. Let's see what they had on board the truck.'</p>
       <p>You discover several crates and lockers filled with munitions: mortars, anti-tank weapons, heavy machine guns and the like. However, you cannot find any ammunition for these weapons. You are about to set fire to the truck, to prevent them from falling into the hands of other clansmen, when you discover one item that could be of some use after all.</p>
-      <p>In a sealed locker at the bottom of the heap, you discover a portable Leviathan ground-to-air missile, a weapon with approximately eight times the destructive power of a bazooka. If you wish to keep this Leviathan Missile, you must reduce your Stealth score by 2 points due to its size and weight.</p>
+      <p>In a sealed locker at the bottom of the heap, you discover a portable Leviathan ground-to-air missile, a weapon with approximately eight times the destructive power of a bazooka. If you wish to keep this <typ class="item">Leviathan Missile</typ>, you must reduce your Stealth score by 2 points due to its size and weight.</p>
       <p>Having set fire to the truck, you return to your roadster. You are just about to climb in when you feel an arm snake around your neck and pull you backwards into the yucca forest.</p>
       <combat><enemy>Guerrero</enemy><enemy-attribute class="closecombatskill">15</enemy-attribute><enemy-attribute class="endurance">25</enemy-attribute></combat>
       <p>Owing to the surprise of his attack, do not erase any <typ class="attribute">ENDURANCE</typ> points your enemy may lose in the first two rounds of combat.</p>
@@ -2267,6 +2418,14 @@ To Evade Combat
 
      <data>
       <p>You push open the doors and enter the gloomy kitchen. Out of the corner of your eye you notice a movement. You turn around and see a clansman crouching in front of a food locker, trying to prise the door open with the edge of a meat cleaver. He sees you and his eyes open wide with shock. Before you can draw a weapon and fire, he draws the cleaver back and hurls it at your chest.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>The clansman draws the meat cleaver back and hurls it at your chest.</description>
+       </meta>
+       <instance class="html" src="ill8.gif" width="386" height="541" />
+       <instance class="pdf" src="ill8.pdf" width="386" height="541" />
+      </illustration>
       <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Stealth skill score.</p>
       <choice idref="sect186">If your total score is 7 or less, <link-text>turn to 186</link-text>.</choice>
       <choice idref="sect282">If it is 8 or more, <link-text>turn to 282</link-text>.</choice>
@@ -2445,7 +2604,7 @@ To Evade Combat
       <p>Using the cover afforded by the undercut banks of Lacy Creek you are able to creep to within twenty yards of the bridge unseen. The harsh, greasy smell of roasted coyote wafts over your hiding place as silently you watch the taller of the two clansmen fan the camp fire with his hat, while his partner kneels down and carves himself a large slice of the blackened meat. He chews it without enthusiasm before finally spitting it out in disgust.</p>
       <p>'Goddamn dogmeat!' he growls. 'I ain't never gonna git used to it.'</p>
       <p>He gulps a mouthful of water from his canteen as he rises to his feet. Your pulse quickens as he turns and starts to walk straight towards you.</p>
-      <p>If you have a missile weapon and wish to use it, turn 65</p>
+      <choice idref="sect65">If you have a missile weapon and wish to use it, <link-text>turn to 65</link-text>.</choice>
       <choice idref="sect240">If you do not possess a missile weapon, or do not wish to use it, <link-text>turn to 240</link-text>.</choice>
      </data>
     </section>
@@ -2474,7 +2633,16 @@ To Evade Combat
 
      <data>
       <p>With tyres screeching, you turn on to the bridge and gun your car across it at top speed. Beyond the span you find a secondary road that has barely survived the post-disaster years. A sign flashes past, identifying it as Road 1989, but you fail to see this number as you fight to avoid the boulders that lay strewn in your path.</p>
-      <p>Kate has drawn her pistol and is firing over her shoulder at a biker, who is closing fast. A pair of belt-fed machine guns are mounted atop the headlamp of his motorcycle, and he fires them in devastating bursts whenever the roadster fills his sights. So concerted is the fire that you are both forced to cower in your armour-backed seats to avoid being hit. Then another sign appears on the road ahead, pointing to a winding dirt track that leads away to the left. It reads:</p>
+      <p>Kate has drawn her pistol and is firing over her shoulder at a biker, who is closing fast. A pair of belt-fed machine guns are mounted atop the headlamp of his motorcycle, and he fires them in devastating bursts whenever the roadster fills his sights.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>A biker is closing fast.  A pair of belt-fed machine guns are mounted atop the headlamp of his motorcycle</description>
+       </meta>
+       <instance class="html" src="ill9.gif" width="386" height="626" />
+       <instance class="pdf" src="ill9.pdf" width="386" height="626" />
+      </illustration>
+      <p>So concerted is the fire that you are both forced to cower in your armour-backed seats to avoid being hit. Then another sign appears on the road ahead, pointing to a winding dirt track that leads away to the left. It reads:</p>
       <p>TO THE CAVERNS OF SONORA</p>
       <p>You are desperate to avoid the machine-gunning biker and so decide to take the track. At least its winding course will give him less opportunity to riddle the trunk with bullets.</p>
       <choice idref="sect24"><link-text>Turn to 24</link-text>.</choice>
@@ -2529,11 +2697,11 @@ To Evade Combat
      <data>
       <p>The derelict gas station shows signs of having been looted some time during the past few months. Its underground gasolene storage tank has been syphoned of fuel, and the contents of its workshop lie broken and scattered across the dusty floor. Carefully you sift through what little remains and uncover the following items:</p>
       <ul>
-       <li>Crowbar [2]</li>
-       <li>Solar Regulator</li>
-       <li>Box of Matches</li>
-       <li>Tow Chain (ten-feet length)</li>
-       <li>Hammer [2]</li>
+       <li>Crowbar (2)</li>
+       <li><typ class="item">Solar Regulator</typ></li>
+       <li><typ class="item">Box of Matches</typ></li>
+       <li><typ class="item">Tow Chain</typ> (ten-feet length)</li>
+       <li>Hammer (2)</li>
       </ul>
       <p>If you decide to keep any of these items, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
       <choice idref="sect59">To continue, <link-text>turn to 59</link-text>.</choice>
@@ -2545,7 +2713,7 @@ To Evade Combat
 
      <data>
       <p>You tell Kate to follow you as you dive for cover among the rocks that border this section of the highway. Your speedy reactions save you from being seen by the pack of Angelinos as they race along the highway, heading south. You stay hidden until their lights have disappeared, then you resume your long walk back to Eldorado.</p>
-      <p>Three hours later you reach the town and begin a systematic search of all the buildings. In the ruins of a repair shop you discover what you need: a Welding Torch and a cylinder of Oxyacetylene. You are dragging these items out of the building when suddenly, from the shadow of a doorway, a gruff voice barks an order: 'Stay where you are and put your hands up!'</p>
+      <p>Three hours later you reach the town and begin a systematic search of all the buildings. In the ruins of a repair shop you discover what you need: a <typ class="item">Welding Torch</typ> and a cylinder of <typ class="item">Oxyacetylene</typ>. You are dragging these items out of the building when suddenly, from the shadow of a doorway, a gruff voice barks an order: 'Stay where you are and put your hands up!'</p>
       <choice idref="sect339"><link-text>Turn to 339</link-text>.</choice>
      </data>
     </section>
@@ -2578,8 +2746,8 @@ To Evade Combat
       <p>You are in too much pain to try to attempt a burial and, mindful of the time you have lost already, you make only a brief search of the bodies. You discover the following items:</p>
       <ul>
        <li>Pistol (containing four rounds of 9mm ammunition)</li>
-       <li>Dagger [2]</li>
-       <li>Rope</li>
+       <li>Dagger (2)</li>
+       <li><typ class="item">Rope</typ></li>
        <li>Machine Pistol (containing twelve rounds of 9mm ammunition)</li>
        <li>Enough pain killers for one Medi-kit unit</li>
       </ul>
@@ -2718,6 +2886,14 @@ To Evade Combat
      <data>
       <p>Six black-clad bikers are riding along Interstate 10 towards the rest stop. Affixed to the rear of their saddles are long, whiplash aerials, which are topped with black pennons that bear a lion's head symbol. You stare at these small black flags and a tingle runs down your spine: it is the emblem of the Detroit Lions clan.</p>
       <p>The bikers catch sight of your roadster and bring their machines to a halt a hundred yards from the rest stop. Then all six spread out and, using the rocks and boulders that litter the landscape, they make their way forward slowly. Sergeant Haskell orders Gunter and Knott to take cover and open fire at the advancing clansmen; they must not be allowed to capture or destroy the fuel tank.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>The bikers spread out and make their way slowly towards you.</description>
+       </meta>
+       <instance class="html" src="ill10.gif" width="386" height="637" />
+       <instance class="pdf" src="ill10.pdf" width="386" height="637" />
+      </illustration>
       <p>From behind an old gas pump you watch as two of the Lions start to edge their way around the service area. They are trying to circle around the rest stop and launch an attack from the rear.</p>
       <choice idref="sect112">If you possess a missile weapon and wish to use it, <link-text>turn to 112</link-text>.</choice>
       <choice idref="sect264">If you do not possess a missile weapon, or have insufficient ammunition for one round of fire, <link-text>turn to 264</link-text>.</choice>
@@ -2730,7 +2906,7 @@ To Evade Combat
      <data>
       <p>On the other side of the hatch you discover an electrical cable duct that is just large enough to accommodate both of you in some discomfort. You enter first, then Kate squeezes in, closing the hatch behind her. It is now pitch black and very claustrophobic. Outside you can hear the angry screams and pounding feet of the clansmen as determinedly they try to track you down. The news of Mekong Mike's death has been broken to the Angelinos and you have heard more than one of them vow that they will kill you when they find you. The only escape route open to you now is to descend the rusty rungs of the iron service ladder on which you stand.</p>
       <p>Forty rungs later you reach the bottom of the shaft. You can feel the walls of a tunnel leading away to your right, but it is too dark for you to see where it leads or what it contains.</p>
-      <choice idref="sect109">If you possess a Box of Matches or a Solar Torch, <link-text>turn to 109</link-text>.</choice>
+      <choice idref="sect109">If you possess a <typ class="item">Box of Matches</typ> or a <typ class="item">Solar Torch</typ>, <link-text>turn to 109</link-text>.</choice>
       <choice idref="sect238">If you do not possess either of these items, <link-text>turn to 238</link-text>.</choice>
      </data>
     </section>
@@ -2762,11 +2938,11 @@ To Evade Combat
       <p>A long and laborious search of all the stores in the same block as the food mart yields the following items:</p>
       <ul>
        <li>Water Canteen (empty)</li>
-       <li>Camera</li>
+       <li><typ class="item">Camera</typ></li>
        <li>Enough antiseptic solution for one Medi-kit unit</li>
-       <li>Microscope</li>
-       <li>Scissors</li>
-       <li>Gold Wristwatch</li>
+       <li><typ class="item">Microscope</typ></li>
+       <li><typ class="item">Scissors</typ></li>
+       <li><typ class="item">Gold Wristwatch</typ></li>
       </ul>
       <p>If you choose to keep any of these items, remember to amend your <a idref='action'>Action Chart</a> accordingly.</p>
       <p>Dusk is beginning to give way to darkness and you are anxious to return to the roadster before the evening light fades completely. Having satisfied yourself that you have overlooked nothing of value, you leave the block and return to your car.</p>
@@ -2780,7 +2956,7 @@ To Evade Combat
      <data>
       <p>Beyond Sterling City the freeway follows a wide, dust-filled gully that was once the North Concho River. You are staring at this dead watercourse, trying to imagine what the river must have looked like before 'the Day', when a road sign flashes past. You stop the car and turn back to read it. It says:</p>
       <p>BROOME - 2 MILES</p>
-      <choice idref="sect220">If you possess a CB Radio, <link-text>turn to 220</link-text>.</choice>
+      <choice idref="sect220">If you possess a <typ class="item">CB Radio</typ>, <link-text>turn to 220</link-text>.</choice>
       <choice idref="sect46">If you do not possess this item, <link-text>turn to 46</link-text>.</choice>
      </data>
     </section>
@@ -2851,7 +3027,7 @@ To Evade Combat
 
      <data>
       <p>Expectantly you keep an eye on your rear-view mirror as you power your roadster along the rock-strewn asphalt of Highway 277. You are convinced that the Angelinos will soon be on your tail, yet you have covered fifteen miles and still there is nothing to indicate that you are being pursued. You are beginning to relax when Kate points to a small town in the distance. It is built around a bridge that crosses a stream of shallow black water that was once known as the South Concho River. Near the middle of this town, on the highway approach to the bridge, is a rising cloud of dust.</p>
-      <choice idref="sect33">If you possess Binoculars, <link-text>turn to 33</link-text>.</choice>
+      <choice idref="sect33">If you possess <typ class="item">Binoculars</typ>, <link-text>turn to 33</link-text>.</choice>
       <choice idref="sect169">If you do not possess this item, <link-text>turn to 169</link-text>.</choice>
      </data>
     </section>
@@ -2861,6 +3037,14 @@ To Evade Combat
 
      <data>
       <p>You crouch behind the rack and fumble for a close combat weapon as the clansman's bullets pepper your position. Then you see Kate running towards you with a machine pistol in her hands. She opens fire at the clansman, but he returns fire and one of his bullets smashes the barrel of Kate's gun, rendering it useless. In the next instant he leaps on to the rack but, before he brings his weapon to bear, you lash out and smash his knee with the edge of your hand. He drops his gun and falls forward, landing on top of you with a jolt that leaves you breathless.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>The clansman drops his gun and falls forward.</description>
+       </meta>
+       <instance class="html" src="ill11.gif" width="386" height="627" />
+       <instance class="pdf" src="ill11.pdf" width="386" height="627" />
+      </illustration>
       <combat><enemy>Kalashnikov</enemy><enemy-attribute class="closecombatskill">16</enemy-attribute><enemy-attribute class="endurance">25</enemy-attribute></combat>
       <p>You cannot evade combat and must fight the clansman to the death.</p>
       <choice idref="sect308">If you win the combat, <link-text>turn to 308</link-text>.</choice>
@@ -2967,7 +3151,7 @@ To Evade Combat
 
      <data>
       <p>You draw the thin saw-cord through the closed hasp of the padlock and work it back and forth. You have made barely a dozen strokes when the metal saw-cord snaps with a loud ping (erase this item from your <a idref='action'>Action Chart</a>).</p>
-      <choice idref="sect236">If you possess an HE Grenade and wish to use it to blow open the door, <link-text>turn to 236</link-text>.</choice>
+      <choice idref="sect236">If you possess an <typ class="item">HE Grenade</typ> and wish to use it to blow open the door, <link-text>turn to 236</link-text>.</choice>
       <choice idref="sect188">If you wish to abandon your attempt to gain entry to the building, <link-text>turn to 188</link-text>.</choice>
      </data>
     </section>
@@ -2999,6 +3183,14 @@ To Evade Combat
 
      <data>
       <p>Cautiously you drive towards the bridge, fearful yet curious to know what you may find there. You are less than 400 yards away when you see the source of the smoke: a camp fire, over which two clansmen are busily cooking the stringy torso of a coyote. They hear your engine noise and turn their bearded faces to stare in your direction. Suddenly, as if they had received an electric shock, they leap to their feet and start running towards their motorcycles, which are parked at the entrance to the bridge. One of them unsheathes an automatic rifle from the saddle of his bike, whilst the other tries frantically to kick his machine into life.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>One of the clansmen unsheathes an automatic rifle whilst the other tries frantically to kick his machine into life.</description>
+       </meta>
+       <instance class="html" src="ill12.gif" width="386" height="594" />
+       <instance class="pdf" src="ill12.pdf" width="386" height="594" />
+      </illustration>
       <p>You know that you must act immediately if you are to prevent them from getting away, so you point your vehicle directly at their position and stamp your foot down on the accelerator. Fifty yards from the bridge, with the hot wind screaming past your face, the armed clansman drops to one knee and takes aim at your windshield.</p>
       <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Driving and Perception skill scores.</p>
       <choice idref="sect97">If your total score is 13 or less, <link-text>turn to 97</link-text>.</choice>
@@ -3087,10 +3279,10 @@ To Evade Combat
       <p>With armed clansmen less than fifty yards away, you dare spend only a minute searching the truck for useful items. In the brief time that you allow yourself, you discover the following:</p>
       <ul>
        <li>Enough medical supplies for six Medi-kit units</li>
-       <li>Fire Axe [3]</li>
-       <li>CB Radio</li>
-       <li>Foil Blanket</li>
-       <li>Fire Extinguisher</li>
+       <li>Fire Axe (3)</li>
+       <li><typ class="item">CB Radio</typ></li>
+       <li><typ class="item">Foil Blanket</typ></li>
+       <li><typ class="item">Fire Extinguisher</typ></li>
       </ul>
       <p>If you decide to keep any of these items, remember to make the appropriate adjustments to your <a idref='action'>Action Chart</a>.</p>
       <choice idref="sect148">To leave the fire station, <link-text>turn to 148</link-text>.</choice>
@@ -3113,7 +3305,7 @@ To Evade Combat
      <data>
       <p>The crash brings the car to an abrupt halt and you are brought back to full consciousness when your chest is slammed by the hub of your steering wheel: lose 2 <typ class="attribute">ENDURANCE</typ> points. Kate is saved from serious injury by her seat belt harness, which she had fastened before she fell asleep. The bone-breaking jolt of the crash has awoken her and, disorientated and bleary-eyed, she asks why you have stopped.</p>
       <p>'We ran out of road,' you say, sheepishly, as you stagger out of the driving seat and go to inspect the damage. Your heart sinks when you discover that the front chassis, the frame on which the wheels and engine are mounted, is badly bent out of shape. To repair this damage you will need to cut and re-weld the buckled frame.</p>
-      <choice idref="sect90">If you possess a Welding Torch and Oxyacetylene, <link-text>turn to 90</link-text>.</choice>
+      <choice idref="sect90">If you possess a <typ class="item">Welding Torch</typ> and <typ class="item">Oxyacetylene</typ>, <link-text>turn to 90</link-text>.</choice>
       <choice idref="sect105">If you do not possess both these items, <link-text>turn to 105</link-text>.</choice>
      </data>
     </section>
@@ -3148,10 +3340,10 @@ To Evade Combat
       <ul>
        <li>Water Canteen (containing enough water for three Drinks)</li>
        <li>Bandages and Antiseptics (enough for two Medi-kit units)</li>
-       <li>Hunting Knife [2]</li>
-       <li>Flexible Saw</li>
+       <li>Hunting Knife (2)</li>
+       <li><typ class="item">Flexible Saw</typ></li>
        <li>Three rounds of 12-gauge ammunition</li>
-       <li>Bolt Cutters</li>
+       <li><typ class="item">Bolt Cutters</typ></li>
       </ul>
       <p>If you keep any of these items, be sure to amend your <a idref='action'>Action Chart</a> accordingly.</p>
       <p>As soon as you have hidden his body beneath a heap of blankets, you gather up your equipment and leave the workshop before his disappearance is noticed.</p>
@@ -3205,6 +3397,14 @@ To Evade Combat
       <p>'You too, honey,' says the disembodied voice, and Kate obeys, tossing her machine pistol out of the car so that it lands deliberately near your feet.</p>
       <p>'Don't even think about it,' says another voice, away to your right.</p>
       <p>From behind a wrecked auto steps a tall, muscular man, dressed in green army fatigues. His blond hair is cropped close to his head and his eyes are hidden behind a pair of dark sunglasses. Pistol in hand, he walks slowly towards you, then stops at the entrance to the pay booth. Two more men in uniform emerge from the doorway - the rifleman and one other - armed with a sawn-off shotgun.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>From behind a wrecked auto steps a tall, muscular man, dressed in green army fatigues. </description>
+       </meta>
+       <instance class="html" src="ill13.gif" width="386" height="628" />
+       <instance class="pdf" src="ill13.pdf" width="386" height="628" />
+      </illustration>
       <p>'They don't look like clan punks, Sarge,' says the rifleman.</p>
       <p>'We're not,' interrupts Kate. 'We're running from the clans.'</p>
       <p>Bemused, the blond-haired man scratches his chin and turns to say something quietly to his two companions. It is then that you notice the faded sergeant stripes and the circular globe-of-the-world emblem that adorn his sleeve. Instantly you recognize the latter: it is the emblem of the World Defence League. At length, he turns to face you once more and says, in a friendlier tone, 'I think you two had better tell us your story.'</p>
@@ -3276,18 +3476,18 @@ To Evade Combat
      <meta><title>248</title></meta>
 
      <data>
-      <p>The surly clansman clutches at his wounds, curses, then falls dead at your feet. Judging from the long-horned skull painted on the back of his leather vest, you have just laid to rest your first Angelino. On the floor close by, you find his weapons and equipment: a Machine Pistol (containing eighteen rounds of 9mm ammunition), a Knife [2], and a Backpack, which holds the following items:</p>
+      <p>The surly clansman clutches at his wounds, curses, then falls dead at your feet. Judging from the long-horned skull painted on the back of his leather vest, you have just laid to rest your first Angelino. On the floor close by, you find his weapons and equipment: a Machine Pistol (containing eighteen rounds of 9mm ammunition), a Knife (2), and a Backpack, which holds the following items:</p>
       <ul>
-       <li>Flexible Saw</li>
-       <li>HE Grenade</li>
+       <li><typ class="item">Flexible Saw</typ></li>
+       <li><typ class="item">HE Grenade</typ></li>
        <li>Water Canteen (containing enough water for three Drinks)</li>
-       <li>Small Blanket</li>
+       <li><typ class="item">Small Blanket</typ></li>
        <li>Enough bandages, sulphonamides, and antiseptics for three Medi-kit units</li>
       </ul>
       <p>In addition to these items, a search of the kitchen also reveals the following:</p>
       <ul>
-       <li>Meat Cleaver [3]</li>
-       <li>Bread Knife [2]</li>
+       <li>Meat Cleaver (3)</li>
+       <li>Bread Knife (2)</li>
        <li>Enough canned food for five Meals</li>
       </ul>
       <p>If you choose to keep any of the items in either list, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
@@ -3334,7 +3534,7 @@ To Evade Combat
      <data>
       <p>It takes an hour to refuel the convoy vehicles and prepare for the next stage of your journey. You are to take over as scout now that the colony is about to push deeper into the mountains. The increasing altitude and the unpredictable thermal air currents here make it too dangerous for Rickenbacker to continue in his role as air scout.</p>
       <p>Five miles out from Kent, you cross a dry watercourse once known as the Salt Draw and begin a slow climb into the Apache mountains. To your left you can see a high ridge, known locally as the Black Peak, and it is here that you sight something that makes you suspicious. A glint of sunlight is reflecting repeatedly at a point near the crest of this ridge.</p>
-      <choice idref="sect30">If you possess a CB Radio, <link-text>turn to 30</link-text>.</choice>
+      <choice idref="sect30">If you possess a <typ class="item">CB Radio</typ>, <link-text>turn to 30</link-text>.</choice>
       <choice idref="sect304">If you wish to stop your roadster and investigate these reflections, <link-text>turn to 304</link-text>.</choice>
       <choice idref="sect210">If you choose to ignore them and continue along the freeway, <link-text>turn to 210</link-text>.</choice>
      </data>
@@ -3420,6 +3620,14 @@ To Evade Combat
      <data>
       <p>You freeze, your stomach pinched tight with fear as you try to ignore the crawling sensation that is now moving rapidly up the sleeve of your jacket. Outside, you hear the clansman leaving the workshop and, as soon as you are sure he has gone, you push open the door and step out of the store room.</p>
       <p>By now the tickling sensation has reached your bicep. When Kate emerges from her hiding place, you tell her what is wrong and ask her to remove your jacket carefully. Gently she lifts it off your shoulders and gasps when she sees the spider that is perched on your arm.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>Kate gasps when she sees the spider that is perched on your arm.</description>
+       </meta>
+       <instance class="html" src="ill14.gif" width="386" height="574" />
+       <instance class="pdf" src="ill14.pdf" width="386" height="574" />
+      </illustration>
       <p>Add together your Field Craft and Perception skill scores.</p>
       <choice idref="sect37">If your total is 7 or less, <link-text>turn to 37</link-text>.</choice>
       <choice idref="sect311">If your total is 8 or more, <link-text>turn to 311</link-text>.</choice>
@@ -3471,7 +3679,7 @@ To Evade Combat
 
      <data>
       <p>You signal to Kate to come over to your position and immediately she obeys. You point to the two circling clansmen and she nods her silent understanding of the situation. Together you abandon your cover and shadow the two men as they circle around to the rear. An old tyre rack propped against the side of a derelict car wash offers you a good defensive position, and quickly you scurry towards it. Kate reaches the rack first, in time to see the Lions halt. For a moment they duck out of sight, but soon they reappear and come running, half-crouched, with guns at the ready, towards your new-found hiding place.</p>
-      <p>Kate cocks her machine pistol and takes aim as the first clansman scurries between the rocks that litter the edge of the service area. He is less than twenty yards away when she squeezes off a burst of fire, bringing him crashing to the ground. His partner hesitates, then abandons his stealthy approach and comes running towards you, screaming hysterically his own machine pistol blazing furiously at his hip. Bullets rip into the tyre rack and one smashes the barrel of Kate's gun, rendering it useless. In the next instant, he leaps on to the rack but, before he brings his weapon to bear, you lash out and smash his knee with the edge of your hand. He drops his weapon and falls forward, landing on top of you with a jolt that leaves you breathless.</p>
+      <p>Kate cocks her machine pistol and takes aim as the first clansman scurries between the rocks that litter the edge of the service area. He is less than twenty yards away when she squeezes off a burst of fire, bringing him crashing to the ground. His partner hesitates, then abandons his stealthy approach and comes running towards you, screaming hysterically, his own machine pistol blazing furiously at his hip. Bullets rip into the tyre rack and one smashes the barrel of Kate's gun, rendering it useless. In the next instant, he leaps on to the rack but, before he brings his weapon to bear, you lash out and smash his knee with the edge of your hand. He drops his weapon and falls forward, landing on top of you with a jolt that leaves you breathless.</p>
       <combat><enemy>Kalashnikov</enemy><enemy-attribute class="closecombatskill">16</enemy-attribute><enemy-attribute class="endurance">25</enemy-attribute></combat>
       <p>You cannot evade combat and must fight the clansman to the death.</p>
       <choice idref="sect308">If you win the combat, <link-text>turn to 308</link-text>.</choice>
@@ -3498,13 +3706,13 @@ To Evade Combat
       <p>Before you bury them you search both bodies and the bikes, and discover the following useful items:</p>
       <ul>
        <li>Pistol (containing four rounds of 9mm ammunition)</li>
-       <li>Dagger [2]</li>
+       <li>Dagger (2)</li>
        <li>Water Canteen (containing enough water for three Drinks)</li>
-       <li>Leather Face Mask</li>
-       <li>Rope</li>
+       <li><typ class="item">Leather Face Mask</typ></li>
+       <li><typ class="item">Rope</typ></li>
        <li>Machine Pistol (containing twelve rounds of 9mm ammunition)</li>
-       <li>Cigarette Lighter</li>
-       <li>HE Grenade</li>
+       <li><typ class="item">Cigarette Lighter</typ></li>
+       <li><typ class="item">HE Grenade</typ></li>
        <li>Enough pain killers for one Medi-kit unit</li>
       </ul>
       <p>There remains no trace of the bikers or their machines when eventually you complete your grisly task of burial. Wearily you return to your roadster and begin the next stage of your journey to San Angelo. Less than a mile beyond the bridge you see a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your map confirms that you are approaching Sterling City.</p>
@@ -3518,7 +3726,7 @@ To Evade Combat
      <data>
       <p>At the far end of a block of derelict stores is a blue, star-shaped sign that marks the site of a Lone Star gas station. You hurry along the dusty street, hopeful of finding some fuel, but you are met with disappointment. All the security caps have been sawn off the gasolene storage tanks and not a drop of their precious contents remains.</p>
       <p>The gas station itself has been ransacked and nothing of value remains, but at the rear of the building you discover something that stirs your curiosity. It is a large storage facility with heavy double doors, which are chained and padlocked.</p>
-      <choice idref="sect123">If you possess Bolt Cutters, <link-text>turn to 123</link-text>.</choice>
+      <choice idref="sect123">If you possess <typ class="item">Bolt Cutters</typ>, <link-text>turn to 123</link-text>.</choice>
       <choice idref="sect94">If you do not possess this item, <link-text>turn to 94</link-text>.</choice>
      </data>
     </section>
@@ -3528,7 +3736,16 @@ To Evade Combat
 
      <data>
       <p>Drawing on your reserves of nervous energy, you race up the last few steps and lash out at the door with the sole of your boot. The door flies wide open and slams against the wall, sending the red-headed clansman who was about to investigate the noise, sprawling flat on his back.</p>
-      <p>Inside the observation room you see two men - one dressed in a flamboyant mix of bright colours and the other attired in sombre black - seated at a table with a map of the United States spread before them. A muscular clansman, his chest criss-crossed with cartridge belts, stands behind the man in black and beyond him, huddled in the corner of the room, is Kate. Clearly she has suffered at the hands of Mad Dog Michigan and the sight of her bruised face and her pained, dispairing expression stirs you to a fit of rage. For a frozen moment the room is deathly quiet, then the man in black barks an order and the bullet-belted clansman rushes forward, drawing a wide-bladed bowie knife as he runs.</p>
+      <p>Inside the observation room you see two men - one dressed in a flamboyant mix of bright colours and the other attired in sombre black - seated at a table with a map of the United States spread before them. A muscular clansman, his chest criss-crossed with cartridge belts, stands behind the man in black and beyond him, huddled in the corner of the room, is Kate. Clearly she has suffered at the hands of Mad Dog Michigan and the sight of her bruised face and her pained, dispairing expression stirs you to a fit of rage.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>Inside the observation room.</description>
+       </meta>
+       <instance class="html" src="ill15.gif" width="386" height="621" />
+       <instance class="pdf" src="ill15.pdf" width="386" height="621" />
+      </illustration>
+      <p>For a frozen moment the room is deathly quiet, then the man in black barks an order and the bullet-belted clansman rushes forward, drawing a wide-bladed bowie knife as he runs.</p>
       <choice idref="sect222">If you possess a missile weapon and wish to use it, <link-text>turn to 222</link-text>.</choice>
       <choice idref="sect21">If you do not possess a missile weapon, or do not have sufficient ammunition to use it, <link-text>turn to 21</link-text>.</choice>
      </data>
@@ -3590,7 +3807,7 @@ To Evade Combat
 
      <data>
       <p>You have reached the place where the highway passes through the Finlay Mountains, and from this high point you have a commanding view over the valley and salt lakes beyond. You stop to survey the scene and, to your horror, you see a huge group of clansmen riding across the valley, heading towards Van Horn.</p>
-      <choice idref="sect208">If you possess Binoculars, <link-text>turn to 208</link-text>.</choice>
+      <choice idref="sect208">If you possess <typ class="item">Binoculars</typ>, <link-text>turn to 208</link-text>.</choice>
       <choice idref="sect41">If you do not possess this item, <link-text>turn to 41</link-text>.</choice>
      </data>
     </section>
@@ -3798,6 +4015,14 @@ To Evade Combat
       <p>The convoy leaves the sanctuary of Big Spring with its headlights blazing and its gas pedals pressed flat to the floor. The deafening motor noise rolls across the surrounding land like thunder, and the twisted auto wrecks that litter this section of Freeway 20 seem to flash past with ever-increasing speed as you accelerate your car into the slipstream of the school bus. Above, you see a smoky pinpoint of fire climb into the night sky, then explode with a brilliant flash. It is a signal flare, and it has been launched by the startled group of Maverick gang lookouts, who are manning a barricade less than half a mile ahead.</p>
       <p>The barricade comprises a line of old cars and other debris that has been dragged into a haphazard line across the freeway. As the tow truck screams towards its centre, you can just hear the crackle of automatic gunfire above the roar of the convoy's engines. Then, with a grinding crash, the truck slams into the barricade and ploughs straight through without slowing. Torn and buckled sheets of rusty metal are spun skywards, together with the bodies of those Mavericks too slow to jump clear. Still in line, the convoy follows Pecos Pete through the ragged gap carved by his truck. As you approach it, you grit your teeth and tighten your grip on the steering wheel.</p>
       <p>To your right you notice the steep embankment that borders this section of the freeway. An old panel truck is perched near the top of the slope, held there in defiance of gravity by blocks of concrete that are wedged in front of its wheels. Feverishly two Mavericks are trying to pull away these chocks and, as you reach the gap, they succeed. Your stomach churns as the panel truck comes careering down the embankment on a collision course with your car.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>The panel truck comes careering down the embankment on a collision course with your car.</description>
+       </meta>
+       <instance class="html" src="ill16.gif" width="386" height="626" />
+       <instance class="pdf" src="ill16.pdf" width="386" height="626" />
+      </illustration>
       <choice idref="sect209">If you wish to try to avoid the runaway panel truck by swerving to the left, <link-text>turn to 209</link-text>.</choice>
       <choice idref="sect118">If you wish to brake heavily in an attempt to avoid a collision, <link-text>turn to 118</link-text>.</choice>
       <choice idref="sect72">If you decide to accelerate in an attempt to get out of its path, <link-text>turn to 72</link-text>.</choice>
@@ -3890,6 +4115,14 @@ To Evade Combat
      <data>
       <p>Kate draws her pistol and fires at the approaching clansman, who flattens himself against the floor for cover. He returns fire and his bullets hack through the stalagmites behind which you are hiding, mowing them down as if they were sheaves of dry straw.</p>
       <p>Kate rises to fire again but her pistol jams. With a mocking laugh, the Angelino gets to his feet and advances, confident that she is no longer a threat. In desperation she throws her pistol at him, a move so sudden that it takes him aback. The pistol hits him in the face and he drops his weapon and clutches his hands to his bleeding nose. Instinctively, you snatch a broken stalagmite from the floor and rush forward to attack the clansman with it before he has a chance to retrieve his fallen machine pistol.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>You snatch a broken stalagmite from the floor and rush forward to attack the clansman with it.</description>
+       </meta>
+       <instance class="html" src="ill17.gif" width="386" height="620" />
+       <instance class="pdf" src="ill17.pdf" width="386" height="620" />
+      </illustration>
       <combat><enemy>Chinatown</enemy><enemy-attribute class="closecombatskill">12</enemy-attribute><enemy-attribute class="endurance">25</enemy-attribute></combat>
       <p>Owing to his wound, and the speed of your attack, ignore any <typ class="attribute">ENDURANCE</typ> point losses you may sustain in the first round of combat.</p>
       <choice idref="sect152">You can evade the fight at any time by <link-text>turning to 152</link-text>.</choice>
@@ -3904,7 +4137,7 @@ To Evade Combat
       <p>You complete your detour of Sterling city without incident and rejoin Freeway 87 a few miles south of the town. The hour you spent driving across the dusty plain has made you very thirsty, and you must now take a Drink or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <p>The freeway follows a wide, rock-strewn gully that was once the North Concho River. You are staring at this dead watercourse, trying to imagine what the river must have looked like before 'the Day', when a road sign flashes past. You stop the car and turn back to read it. It says:</p>
       <p>BROOME - 2 MILES</p>
-      <choice idref="sect220">If you possess a CB Radio, <link-text>turn to 220</link-text>.</choice>
+      <choice idref="sect220">If you possess a <typ class="item">CB Radio</typ>, <link-text>turn to 220</link-text>.</choice>
       <choice idref="sect46">If you do not possess this item, <link-text>turn to 46</link-text>.</choice>
      </data>
     </section>
@@ -3914,7 +4147,7 @@ To Evade Combat
 
      <data>
       <p>You bring your car to a halt at the side of the road and approach Black Peak on foot. However, you have not gone very far when the ground becomes too steep to continue without the use of climbing aids. Unless you can find a track you will be forced to abandon your investigation.</p>
-      <choice idref="sect82">If you possess Binoculars, <link-text>turn to 82</link-text>.</choice>
+      <choice idref="sect82">If you possess <typ class="item">Binoculars</typ>, <link-text>turn to 82</link-text>.</choice>
       <choice idref="sect125">If you do not possess this item, <link-text>turn to 125</link-text>.</choice>
      </data>
     </section>
@@ -3967,7 +4200,7 @@ To Evade Combat
        <li>Twelve rounds of 9mm ammunition</li>
        <li>Two rounds of 7.62mm ammunition</li>
        <li>Five rounds of 12-gauge ammunition</li>
-       <li>Knife [2]</li>
+       <li>Knife (2)</li>
       </ul>
       <p>While the sergeant and his men dispose of the bodies, you return to the gasolene storage tank and set to work on cracking its security code.</p>
       <choice idref="sect129"><link-text>Turn to 129</link-text>.</choice>
@@ -3991,6 +4224,14 @@ To Evade Combat
      <data>
       <p>With your foot holding the gas pedal flat to the floor you roar towards Christoval with a score of angry Angelinos hot on your heels. On entering the town, you see that the coyote on the road ahead are fighting each other in two separate packs. Each pack is being urged on by men who are conducting some sort of wager on the outcome of the fight. So engrossed are they in the dog fight that they seem oblivious of the fact that you are speeding straight towards them. It is not until you sound your horn and flash your headlamps that the men and dogs begin to scatter, but by then it is too late for some of them.</p>
       <p>The car shudders as you plough into a dozen of the fighting dogs, sending them spinning into the air. One tumbles over the windshield and lands between you and Kate. Maddened by the pain of its wounds, it lunges at you and closes its fangs around your right forearm. Desperately, Kate tries to pummel it unconscious with the butt of her pistol as you fight to maintain control of the speeding car.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>The coyote closes its fangs around your right forearm. Desperately, Kate tries to pummel it unconscious with the butt of her pistol.</description>
+       </meta>
+       <instance class="html" src="ill18.gif" width="386" height="619" />
+       <instance class="pdf" src="ill18.pdf" width="386" height="619" />
+      </illustration>
       <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Driving skill score.</p>
       <choice idref="sect140">If your total is 8 or less, <link-text>turn to 140</link-text>.</choice>
       <choice idref="sect28">If it is 9-12, <link-text>turn to 28</link-text>.</choice>
@@ -4055,8 +4296,8 @@ To Evade Combat
       <p>Stiffly you clamber to your feet and begin to brush away the thick layer of dust that covers you completely, until you realize that it is the dust that is concealing the fact that you are not an Angelino.</p>
       <p>'I'm an Angelino who jus' wants t'see the race. I'm supposed to be patrolling the south zone, but ain't nothin' ever happens down there. Gimme a break you guys, will ya?'</p>
       <p>A grin spreads slowly across the faces of the two Lions as they see a chance to make some easy pickings. They agree to get you into the stadium, but at a price; you will have to bribe them.</p>
-      <choice idref="sect161">If you possess a Bottle of Bourbon, <link-text>turn to 161</link-text>.</choice>
-      <choice idref="sect207">If you do not possess this item, <link-text>turn to 207</link-text>.</choice>
+      <choice idref="sect102">If you possess a <typ class="item">Bottle of Bourbon</typ>, <link-text>turn to 102</link-text>.</choice>
+      <choice idref="sect227">If you do not possess this item, <link-text>turn to 227</link-text>.</choice>
      </data>
     </section>
 
@@ -4198,7 +4439,15 @@ To Evade Combat
      <data>
       <p>Sergeant Haskell and yourself despatch the clansmen with a volley of well-aimed shots (erase two rounds from your Ammo Pouch) before taking a closer look at what they were transporting. You discover several crates and lockers filled with munitions: mortars, anti-tank weapons, heavy machine guns and the like. However, you cannot find any ammunition for these weapons. You are about to set fire to the truck, to prevent the weapons from falling into the hands of other clansmen, when you discover one item that could be of some use after all.</p>
       <p>In a sealed locker at the bottom of the heap, you discover a portable Leviathan ground-to-air missile, a weapon with approximately eight times the destructive power of a bazooka.</p>
-      <p>If you wish to keep this Leviathan Missile, you must reduce your Stealth score by 2 points due to its size and weight.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>You discover a portable Leviathan ground-to-air missile.</description>
+       </meta>
+       <instance class="html" src="ill19.gif" width="386" height="545" />
+       <instance class="pdf" src="ill19.pdf" width="386" height="545" />
+      </illustration>
+      <p>If you wish to keep this <typ class="item">Leviathan Missile</typ>, you must reduce your Stealth score by 2 points due to its size and weight.</p>
       <choice idref="sect114">To continue, <link-text>turn to 114</link-text>.</choice>
      </data>
     </section>
@@ -4230,11 +4479,11 @@ To Evade Combat
       <p>As the noise of the explosion fades and the smoke thins, you approach the door to discover that the padlock no longer exists. Firmly you push open the shrapnel-pitted door and enter the hangar-like interior. Inside you find an armoured truck, one of many that were once used by banks to transport cash and bullion around Texas. This one was hijacked shortly before 'the Day', and was brought here, where its cargo was to have been shared out by the robbers. However, they never had a chance to divide and spend their loot, and the vehicle still contains over thirty million dollars in cash, a sum now completely worthless.</p>
       <p>The truck's fuel tank is a quarter full, but it is diesel oil and cannot be used in your roadster. Cursing your luck, you search the truck and the building for anything that may be of practical use and you discover the following items:</p>
       <ul>
-       <li>Tool Kit</li>
-       <li>Air Pump</li>
+       <li><typ class="item">Tool Kit</typ></li>
+       <li><typ class="item">Air Pump</typ></li>
        <li>Distilled Water (enough for three Drinks)</li>
-       <li>Engine Oil</li>
-       <li>Monkey Wrench</li>
+       <li><typ class="item">Engine Oil</typ></li>
+       <li><typ class="item">Monkey Wrench</typ></li>
       </ul>
       <p>Dusk is beginning to give way to darkness and you are anxious to return to the roadster before the evening light fades completely. Having satisfied yourself that you have overlooked nothing of value, you leave the building and return to your car.</p>
       <choice idref="sect216"><link-text>Turn to 216</link-text>.</choice>
@@ -4314,7 +4563,7 @@ To Evade Combat
      <data>
       <p>A bullet passes close by your shoulder, yet you reach the drug store entrance unscathed. The rear of the station wagon occupies most of the doorway, it having been parked there with its tailgate open. Inside, the luggage compartment is stacked with items looted from the store.</p>
       <p>The store's interior is very dark and it takes a few seconds for your eyes to adjust. When they do, you see a staircase at the back and you approach it cautiously. You have reached the first floor landing when there is another shot, and at once you sense the sniper's location: a room at the far end of the corridor. Silently you creep to within inches of the open door and steel yourself for an attack.</p>
-      <choice idref="sect314">If you possess an HE Grenade, <link-text>turn to 314</link-text>.</choice>
+      <choice idref="sect314">If you possess an <typ class="item">HE Grenade</typ>, <link-text>turn to 314</link-text>.</choice>
       <choice idref="sect177">If you do not possess this item, <link-text>turn to 177</link-text>.</choice>
      </data>
     </section>
@@ -4324,6 +4573,14 @@ To Evade Combat
 
      <data>
       <p>Carefully, you drop the welding equipment and obey the command. Then a swarthy Angelino steps out of the shadows with a pistol in his hand. He sniggers with delight unable to hide his glee at having captured you both single-handedly and reaches into his pocket with his free hand. He removes a pair of handcuffs and tosses them casually at Kate's feet before ordering her to put them on your wrists.</p>
+      <illustration class="float">
+       <meta>
+        <creator>Brian Williams</creator>
+        <description>The Angelino tosses a pair of handcuffs casually at Kate's feet.</description>
+       </meta>
+       <instance class="html" src="ill20.gif" width="386" height="560" />
+       <instance class="pdf" src="ill20.pdf" width="386" height="560" />
+      </illustration>
       <p>Kate stoops to pick up the handcuffs. But the instant her hand closes on them she hurls them back at the grinning Angelino, hitting him squarely in the face. Immediately you take your cue and spring forward, grabbing his gun before he has a chance to recover his composure. You wrestle it from his grasp, but already he is reaching for a knife, which he carries concealed in his boot. He unsheathes it and lashes out, forcing you to dive aside to avoid its razor-sharp tip.</p>
       <combat><enemy>Yellow-Cab</enemy><enemy-attribute class="closecombatskill">15</enemy-attribute><enemy-attribute class="endurance">26</enemy-attribute></combat>
       <p>Owing to the help you receive from Kate in overcoming the enemy, you may add 2 points to your close combat skill for the duration of the fight.</p>
@@ -4377,7 +4634,7 @@ To Evade Combat
      <data>
       <p>Repeatedly you pump the gas pedal and, gradually, after a bout of coughing and popping, the engine clears and begins to pick up speed. Confident that the fault has rectified itself, you relax and accelerate away.</p>
       <p>You have driven ten miles when, on the horizon, you see a girder bridge appear. It carries the highway across the North Concho River, and, although it appears to be intact and passable, you are worried by the sight of a lazy plume of woodsmoke that is rising close to its approach ramp.</p>
-      <choice idref="sect296">If you possess Binoculars, <link-text>turn to 296</link-text>.</choice>
+      <choice idref="sect296">If you possess <typ class="item">Binoculars</typ>, <link-text>turn to 296</link-text>.</choice>
       <choice idref="sect224">If you do not possess this item, <link-text>turn to 224</link-text>.</choice>
      </data>
     </section>
@@ -4389,7 +4646,7 @@ To Evade Combat
       <p>Having briefed the convoy, you return to Sergeant Haskell on the freeway outside Fabens.</p>
       <p>'The convoy's ready to roll straight through here as soon as they see my signal flare,' you inform him.</p>
       <p>'That's great. Now all we need to do is open up the gate and let 'em go.'</p>
-      <choice idref="sect120">If you possess a Leviathan Missile, <link-text>turn to 120</link-text>.</choice>
+      <choice idref="sect120">If you possess a <typ class="item">Leviathan Missile</typ>, <link-text>turn to 120</link-text>.</choice>
       <choice idref="sect219">If you do not possess this weapon, <link-text>turn to 219</link-text>.</choice>
      </data>
     </section>
@@ -4400,9 +4657,9 @@ To Evade Combat
      <data>
       <p>The race is about to begin. Eight bikers are drawn up in a line at one end of the arena, each man standing astride his machine and revving its engine in response to the loud cheers of the clansmen watching. The riders have their eyes fixed on a pot-bellied Angelino who is perched atop a wooden tower in the centre of the track. Above his head he holds a checkered flag, and, as he brings his arm down, the crowd screams and the riders surge away from the line.</p>
       <p>Under cover of the noise and commotion of the race, you approach the observation block. An enclosed corridor leads to a flight of iron stairs where two burly clansmen - one an Angelino, the other a Detroit Lion - stand on guard with machine pistols at the ready. At the top of the stairs is the door to the block itself. The noise of the crowd and the roar of the motorcycles have helped you so far, but the race is now into its fourteenth lap, and you know that if you are to succeed in freeing Kate you must get past these guards and storm the observation block before the race ends.</p>
-      <choice idref="sect9">If you possess an H.E. Grenade, and wish to use it, <link-text>turn to 9</link-text>.</choice>
-      <p>If you possess a Signal Flare, and wish to use it, turn, to 89.</p>
-      <choice idref="sect163">If you possess a Siren, and wish to use it, <link-text>turn to 163</link-text>.</choice>
+      <choice idref="sect9">If you possess an <typ class="item">HE Grenade</typ>, and wish to use it, <link-text>turn to 9</link-text>.</choice>
+      <choice idref="sect89">If you possess a <typ class="item">Signal Flare</typ>, and wish to use it, <link-text>turn to 89</link-text>.</choice>
+      <choice idref="sect163">If you possess a <typ class="item">Siren</typ>, and wish to use it, <link-text>turn to 163</link-text>.</choice>
       <choice idref="sect225">If you possess none of these items, <link-text>turn to 225</link-text>.</choice>
      </data>
     </section>
@@ -4427,17 +4684,17 @@ To Evade Combat
       <p>You unshoulder your gun and take aim in one swift, fluid movement. The clansman is drawing back the bolt of his G-12 when you unleash a round, catching him full in the chest. The force of your gunfire lifts him off the kitchen floor and kills him instantly. Slowly you lower your smoking barrel and walk forward to search the body of your would-be killer.</p>
       <p>Judging from the long-horned skull painted on the back of his leather vest, you have just laid to rest your first Angelino. On the floor nearby you find his weapons and equipment: a Machine Pistol (containing eighteen rounds of 9mm ammunition) and a Backpack, which holds the following items:</p>
       <ul>
-       <li>Flexible Saw</li>
-       <li>HE Grenade</li>
+       <li><typ class="item">Flexible Saw</typ></li>
+       <li><typ class="item">HE Grenade</typ></li>
        <li>Water Canteen (containing enough water for three Drinks)</li>
-       <li>Small Blanket</li>
+       <li><typ class="item">Small Blanket</typ></li>
        <li>Enough bandages, sulphonamides, and antiseptics for three Medi-kit units</li>
-       <li>Knife [2]</li>
+       <li>Knife (2)</li>
       </ul>
       <p>In addition to these items, a search of the kitchen also reveals the following:</p>
       <ul>
-       <li>Meat Cleaver [3]</li>
-       <li>Bread Knife [2]</li>
+       <li>Meat Cleaver (3)</li>
+       <li>Bread Knife (2)</li>
        <li>Enough canned food for five Meals</li>
       </ul>
       <p>If you choose to keep any of the items in either list, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
@@ -4474,9 +4731,244 @@ To Evade Combat
    </data>
   </section>
 
-  <!-- Backmatter -->
+  <section class="backmatter" id="map">
+   <meta><title>Map of Western Texas</title></meta>
 
- </data>
-</section>
+   <data>
+    <illustration class="inline">
+     <meta>
+      <creator>Melvyn Grant</creator>
+     </meta>
+     <instance src="map.jpg" width="1024" height="768" class="html" />
+     <instance src="map.pdf" width="1024" height="768" class="pdf" />
+    </illustration>
+   </data>
+  </section>
+
+  <section class="backmatter" id="action">
+   <meta><title>Action Chart</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Iain Smith</creator>
+     </meta>
+     <instance src="acskills.gif" width="386" height="123" class="html" mime-type="image/gif" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Iain Smith</creator>
+     </meta>
+     <instance src="acitems.gif" width="386" height="308" class="html" mime-type="image/gif" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Iain Smith</creator>
+     </meta>
+     <instance src="accombat.gif" width="386" height="358" class="html" mime-type="image/gif" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Iain Smith</creator>
+     </meta>
+     <instance src="acammo.gif" width="386" height="363" class="html" mime-type="image/gif" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Iain Smith</creator>
+     </meta>
+     <instance src="acweapns.gif" width="386" height="383" class="html" mime-type="image/gif" />
+    </illustration>
+<!--
+     <illustration class="inline">
+      <meta>
+       <creator>Jonathan Blake</creator>
+      </meta>
+      <instance src="ac1.tex" width="400" height="500" class="tex" />
+     </illustration>
+
+     <illustration class="inline">
+      <meta>
+       <creator>Jonathan Blake</creator>
+      </meta>
+      <instance src="ac2.tex" width="400" height="500" class="tex" />
+     </illustration>
+
+     <illustration class="inline">
+      <meta>
+       <creator>Jonathan Blake</creator>
+      </meta>
+      <instance src="ac3.tex" width="400" height="500" class="tex" />
+     </illustration>
+-->
+   </data>
+  </section>
+
+  <section class="backmatter" id="crsumary">
+   <meta><title>Close Combat Rules Summary</title></meta>
+
+   <data>
+    <ol>
+     <li>Add to your <typ class="attribute">CLOSE COMBAT SKILL</typ> any extra points gained through use of a close combat weapon.</li>
+     <li>Subtract the <typ class="attribute">CLOSE COMBAT SKILL</typ> score of your enemy from your total. The resulting number is the Combat Ratio.</li>
+     <li>Pick a number from the <a idref="random">Random Number Table</a>.</li>
+     <li>Turn to the <a idref="crtable">Combat Results Table</a>.</li>
+     <li>Find your Combat Ratio along the top of the chart and cross-reference it with the random number you have picked. (E indicates enemy's loss of <typ class="attribute">ENDURANCE</typ> points. CP indicates Cal Phoenix's loss of <typ class="attribute">ENDURANCE</typ> points.)</li>
+     <li>Continue the combat from stage 3 until one combatant has zero <typ class="attribute">ENDURANCE</typ> points, this is when he is declared dead.</li>
+    </ol>
+
+    <section class="backmatter" id="smevazn">
+     <meta><title>To Evade Combat</title></meta>
+     <data>
+      <ol>
+       <li>You may only evade combat when the text of the adventure offers you the opportunity.</li>
+       <li>If the text offers the chance of taking evasive action instead of entering into combat, you may evade in the first round of combat or in any subsequent round.</li>
+       <li>If you decide to evade after a round of combat, ignore all points lost by the enemy in that round: only Cal Phoenix loses <typ class="attribute">ENDURANCE</typ> points.</li>
+      </ol>
+     </data>
+    </section>
+
+   </data>
+  </section>
+
+  <section class="backmatter" id="crtable">
+   <meta><title>Combat Results Table</title></meta>
+
+   <data>
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="crtneg.gif" width="386" height="472" class="html" mime-type="image/gif" />
+     <instance src="crtneg.tex" width="380" height="500" class="tex" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif" />
+     <instance src="crtpos.tex" width="380" height="500" class="tex" />
+    </illustration>
+
+   </data>
+  </section>
+
+  <section class="backmatter" id="random">
+   <meta><title>Random Number Table</title></meta>
+
+   <data>
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif" />
+    </illustration>
+
+   </data>
+  </section>
+
+  <section class="backmatter" id="errata">
+   <meta><title>Errata</title></meta>
+
+   <data>
+    <section class="backmatter" id="errintro">
+     <meta><title>Introduction</title></meta>
+     <data>
+      <p>We have taken our unique opportunity to correct errors and to enforce a standard of English usage. We list our changes here. If you see anything that needs correction, please <a href="&link.staff.contact;">contact</a> the Project Aon Staff.</p>
+     </data>
+    </section>
+
+    <section class="backmatter" id="errerr">
+     <meta><title>Errata</title></meta>
+     <data>
+      <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>re-established</quote> with <quote>reestablished</quote>.</p>
+      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>if you pick a O</quote> with <quote>if you pick a 0</quote>.</p>
+      <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
+      <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote>as &plus;1 If </quote> with <quote>as &plus;1.  If </quote>.</p>
+      <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>map of Western Texas</quote> with <quote>Map of Western Texas</quote>.</p>
+      <p>(<a idref="sect23">23</a>) Replaced <quote>Small blanket</quote> with <quote>Small Blanket</quote>.</p>
+      <p>(<a idref="sect23">23</a>) Replaced <quote>Medi-kits units</quote> with <quote>Medi-kit units</quote>.</p>
+      <p>(<a idref="sect30">30</a>) Replaced <quote>bushwack</quote> with <quote>bushwhack</quote>.</p>
+      <p>(<a idref="sect130">130</a>) Replaced <quote>Plastic tube</quote> with <quote>Plastic Tube</quote>.</p>
+      <p>(<a idref="sect232">232</a>) Applied bold style to <quote>Foil Blanket</quote>.</p>
+      <p>(<a idref="sect315">315</a>) Replaced section references.  The original text directed the reader to sections <a idref="sect161">161</a> and <a idref="sect207">207</a>, however those references are the result of being apprehended by a single clansman in section <a idref="sect115">115</a>.</p>
+      <p>(<a idref="sect18">18</a>,<a idref="sect23">23</a>,<a idref="sect36">36</a>,<a idref="sect63">63</a>,<a idref="sect71">71</a>,<a idref="sect101">101</a>,<a idref="sect126">126</a>,<a idref="sect138">138</a>,<a idref="sect146">146</a>,<a idref="sect183">183</a>,<a idref="sect187">187</a>,<a idref="sect232">232</a>,<a idref="sect248">248</a>,<a idref="sect266">266</a>,<a idref="sect308">308</a>,<a idref="sect348">348</a>) Replaced CCS Bonuses in <quote>[]</quote> with <quote>()</quote>.</p>
+      <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
+      </data>
+    </section>
+   </data>
+  </section>
+
+  <section class="backmatter" id="footnotz">
+   <meta><title>Footnotes</title></meta>
+
+   <data>
+     <p>(<a idref="sect52">52</a>) This is the correct answer to the security valve puzzle in <a idref="sect129">Section 129</a>.</p>
+     <p>(<a idref="sect129">129</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
+   </data>
+  </section>
+
+  <section class="backmatter" id="illstrat">
+   <meta><title>Table of Illustrations</title></meta>
+
+   <data>
+    <p>The following is a list of all Sections containing illustrations found in this book:</p>
+
+    <section class="backmatter" id="primill">
+     <meta><title>Primary Illustrations</title></meta>
+
+     <data>
+      <ul class="unbulleted">
+       <li>Illustration I (<a idref="sect20">Section 20</a>)</li>
+       <li>Illustration II (<a idref="sect24">Section 24</a>)</li>
+       <li>Illustration III (<a idref="sect45">Section 45</a>)</li>
+       <li>Illustration IV (<a idref="sect68">Section 68</a>)</li>
+       <li>Illustration V (<a idref="sect91">Section 91</a>)</li>
+       <li>Illustration VI (<a idref="sect123">Section 123</a>)</li>
+       <li>Illustration VII (<a idref="sect150">Section 150</a>)</li>
+       <li>Illustration VIII (<a idref="sect159">Section 159</a>)</li>
+       <li>Illustration IX (<a idref="sect178">Section 178</a>)</li>
+       <li>Illustration X (<a idref="sect200">Section 200</a>)</li>
+       <li>Illustration XI (<a idref="sect212">Section 212</a>)</li>
+       <li>Illustration XII (<a idref="sect224">Section 224</a>)</li>
+       <li>Illustration XIII (<a idref="sect241">Section 241</a>)</li>
+       <li>Illustration XIV (<a idref="sect259">Section 259</a>)</li>
+       <li>Illustration XV (<a idref="sect268">Section 268</a>)</li>
+       <li>Illustration XVI (<a idref="sect293">Section 293</a>)</li>
+       <li>Illustration XVII (<a idref="sect302">Section 302</a>)</li>
+       <li>Illustration XVIII (<a idref="sect310">Section 310</a>)</li>
+       <li>Illustration XIX (<a idref="sect328">Section 328</a>)</li>
+       <li>Illustration XX (<a idref="sect339">Section 339</a>)</li>
+       <li><a idref="map">Map Of Western Texas</a></li>
+       <li><a idref="action">Action Chart</a></li>
+      </ul>
+     </data>
+    </section>
+
+    <section class="backmatter" id="secill">
+     <meta><title>Secondary Illustrations</title></meta>
+
+     <data>
+      <ul class="unbulleted">
+<!--
+       <li><a idref="sect8">8</a>, <a idref="sect339">339</a></li>
+-->
+      </ul>
+     </data>
+    </section>
+
+   </data>
+  </section>
+
+  &inclusion.project.aon.license;
+
+  </data>
+ </section>
 
 </gamebook>
