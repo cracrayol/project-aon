@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE gamebook SYSTEM "gamebook.dtd" [
  <!ENTITY % xhtml.characters SYSTEM "htmlchar.mod">
- <!ENTITY % latex.characters SYSTEM "ltexchar.mod">
  %xhtml.characters;
-
  <!ENTITY % general.links SYSTEM "genlink.mod">
  %general.links;
  <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
@@ -16,6 +14,9 @@
 
 $Id$
 $Log$
+Revision 1.3  2005/12/07 12:43:22  Wibbleboy
+Applied misc formatting changes to match manual of style.
+
 Revision 1.2  2005/12/01 17:19:47  Wibbleboy
 Major update: added front/backmatter, corrected numbered references, added illustrations.
 
@@ -42,43 +43,16 @@ Initial revision
   <publisher>Project Aon</publisher>
   <date class="publication"><year>2005</year><month>11</month><day>25</day></date>
   <description class="blurb">
-   <p>You are Cal Phoenix, the Freeway Warrior, champion and protector of Dallas Colony One.  From the sanctuary of Big Spring your convoy of survivors begins the next stage of its life-or-death exodus: a journey to the fortified border town of El Paso, a destination that lies hundreds of miles beyond the sun-scorched wasteland of West Texas.  In Slaughter Mountain Run your mission is to rescue Kate Norton from the clutches of your arch enemy - the H.A.V.O.C. leader Mad Dog Michigan.  You have just seven days to free her and to rendezvous with the colony before it runs the gauntlet of fire that protects the only mountain road to El Paso.</p>
+   <p>You are Cal Phoenix, the Freeway Warrior, champion and protector of Dallas Colony One. From the sanctuary of Big Spring your convoy of survivors begins the next stage of its life-or-death exodus: a journey to the fortified border town of El Paso, a destination that lies hundreds of miles beyond the sun-scorched wasteland of West Texas. In Slaughter Mountain Run your mission is to rescue Kate Norton from the clutches of your arch enemy - the H.A.V.O.C. leader Mad Dog Michigan. You have just seven days to free her and to rendezvous with the colony before it runs the gauntlet of fire that protects the only mountain road to El Paso.</p>
   </description>
   <description class="publication">
    <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
   </description>
-  <rights class="copyrights">Text copyright &copy; 1988 Joe Dever.<br />Illustrations copyright &copy; 1988 Brian Williams.</rights>
+  <rights class="copyrights">Text copyright <ch.copy/> 1988 Joe Dever.<br />Illustrations copyright <ch.copy/> 1988 Brian Williams.</rights>
   <rights class="license-notification">
-   <p>Text copyright &copy; 1988 Joe Dever.<br />Illustrations copyright &copy; 1988 Melvyn Grant.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+   <p>Text copyright <ch.copy/> 1988 Joe Dever.<br />Illustrations copyright <ch.copy/> 1988 Brian Williams.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
   </rights>
 </meta>
-
-<!--
-
-Freeway Warrior 2:
-Slaughter Mountain Run
-Table of Content
-
-1. The Author
-2. Dedication
-3. Dateline to Disaster
-4. The Story So Far
-5. The Game Rules
-   * Survival Skills
-   * Equipment
-   * Weapons
-   * Rules for Close Combat
-6. Section 1-350
-7. Close Combat Rules Summary
-
-Slaughter Mountain Run
-The Author
-
-Joe Dever was born in 1956 at Woodford Bridge in Essex. After he left college he became a professional musician, working in studios in Europe and America. While working in Los Angeles in 1977, he discovered a game called 'Dungeons and Dragons' and was soon an enthusiastic player. Five years later he won the Advanced Dungeons and Dragons Championships in the US, where he was the only British competitor. Freeway Warrior is the follow up series to his award-winning Lone Wolf adventures, which are printed in several languages and sold all over the world.
-
-Joe also writes for modelling journals and contributes to Britain's leading role-playing games magazines. He adapts the Lone Wolf adventures for computer play, is editor of the 'World of Lone Wolf' series and is noted for his model painting and photography.
-
--->
 
 <section id="toc">
  <meta />
@@ -113,7 +87,7 @@ Joe also writes for modelling journals and contributes to Britain's leading role
    </meta>
 
    <data>
-    <p><quote>I would be especially pleased if my granting of the rights to distribute my books in this way was seen as my <quote>millennium gift</quote> to all those devoted readers who have kept the Kai flag flying high, through all the good times, and the not-so-good. It would make me very proud indeed if this enterprise laid the foundations of a lasting legacy, securing the longevity of Lone Wolf by making my creation freely and readily accessible to current and future online generations. For them, for us, for Sommerlund and the Kai.&ellips;</quote> <strong>Joe Dever</strong></p>
+    <p><quote>I would be especially pleased if my granting of the rights to distribute my books in this way was seen as my <quote>millennium gift</quote> to all those devoted readers who have kept the Kai flag flying high, through all the good times, and the not-so-good. It would make me very proud indeed if this enterprise laid the foundations of a lasting legacy, securing the longevity of Lone Wolf by making my creation freely and readily accessible to current and future online generations. For them, for us, for Sommerlund and the Kai.<ch.ellips/></quote> <strong>Joe Dever</strong></p>
     <p>Project Aon would first like to thank Joe Dever for making this generous offering of the books that we have all loved from the beginning. We would also like to acknowledge the following members of Project Aon for their diligent work:</p>
 
     <section class="frontmatter" id="credits">
@@ -130,11 +104,11 @@ Joe also writes for modelling journals and contributes to Britain's leading role
        <dt>Alternate Illustrations</dt>
         <dd>JC Alvarez (text illustrations and action charts)<br />Jonathan Blake (extramatter charts and tables)<br />Michael Hahn (map)</dd>
        <dt>Proofreading</dt>
-        <dd>Mark Laird (Sections 36&endash;70 and 281&endash;315)<br />Christian Leonhard (Sections 106&endash;140 and 211&endash;245)<br />Brad Phelps (Sections 176&endash;210)<br />Michael Richey (Sections 1&endash;35 and 316&endash;350)<br />Tyson Torres (Sections 71&endash;105, 141&endash;175 and 246&endash;280)</dd>
+        <dd>Mark Laird (Sections 36<ch.endash/>70 and 281<ch.endash/>315)<br />Christian Leonhard (Sections 106<ch.endash/>140 and 211<ch.endash/>245)<br />Brad Phelps (Sections 176<ch.endash/>210)<br />Michael Richey (Sections 1<ch.endash/>35 and 316<ch.endash/>350)<br />Tyson Torres (Sections 71<ch.endash/>105, 141<ch.endash/>175 and 246<ch.endash/>280)</dd>
        <dt>Editing</dt>
-        <dd>Mike Feldman<br />Ingo Kl&ouml;cker<br />Mark Laird<br />Simon Osborne<br />Thomas Wolmer</dd>
+        <dd>Mike Feldman<br />Ingo Kl<ch.ouml/>cker<br />Mark Laird<br />Simon Osborne<br />Thomas Wolmer</dd>
        <dt>PDF Layout</dt>
-        <dd>Ingo Kl&ouml;cker</dd>
+        <dd>Ingo Kl<ch.ouml/>cker</dd>
        <dt>Coordination</dt>
         <dd>Jonathan Blake</dd>
        <dt>Special Thanks</dt>
@@ -160,13 +134,14 @@ Joe also writes for modelling journals and contributes to Britain's leading role
     <p><strong>2009</strong><br />HAVOC leaders imprisoned for life in 'Deep Pens' - maximum security gaols located deep underground - to prevent their escape or release by HAVOC agents still at large.</p>
     <p><strong>2010</strong><br />New leadership emerges to unify the scattered remnants of HAVOC and plan revenge.</p>
     <p><strong>2011</strong><br />A WDL train transporting seventeen 100-kiloton nuclear warheads, destined to be neutralized and dismantled, is attacked by HAVOC agents. The train is destroyed and its deadly cargo stolen.</p>
-    <p><strong>2012 New Years Day</strong><br />HAVOC hijack a WDL news satellite and broadcast a chilling ultimatum.  They have planted the seventeen stolen warheads in major cities throughout the US, USSR and Europe. They call for the immediate release of all HAVOC agents held in Deep Pens, plus the payment of $2 trillion in gold bullion, or they will trigger the warheads one by one until their demands are met in full.  A twenty-four hour deadline is set.  WDL leaders declare emergency and request that the deadline be extended.  HAVOC refuse.</p>
+    <p><strong>2012 New Years Day</strong><br />HAVOC hijack a WDL news satellite and broadcast a chilling ultimatum. They have planted the seventeen stolen warheads in major cities throughout the US, USSR and Europe. They call for the immediate release of all HAVOC agents held in Deep Pens, plus the payment of $2 trillion in gold bullion, or they will trigger the warheads one by one until their demands are met in full. A twenty-four hour deadline is set. WDL leaders declare emergency and request that the deadline be extended. HAVOC refuse.</p>
     <p><strong>2nd January</strong><br />First warhead detonated at Brie Nuclear Energy Plant, ten miles south of Paris, France. Blast and radioactive fallout claim millions of lives. HAVOC repeat their demand and extend deadline by twenty-four hours.</p>
-    <p><strong>3rd January 'The Day'</strong><br />World Defence League agents discover location of HAVOC command headquarters on an island in the South Pacific Ocean.  Immediately orders are given to infiltrate and destroy the HQ and its occupants. The assault is swift and decisive; the complex is quickly overrun and its inhabitants are killed.  Yet, ironically, as the news of this victory is being relayed around the world, HAVOC enact their ultimate revenge. A transmitter hidden on the island, fitted with a time-delay mechanism, clicks on, sending its high-frequency radio signal to a communications satellite orbiting the earth. This signal is amplified and returned to earth where, simultaneously, it triggers the remaining nuclear warheads.  The initial explosions set off a disastrous chain reaction that feeds on civil and military nuclear installations all across the northern hemisphere.  Hundreds of millions of people are killed within days, and many more perish during the years that follow, falling victim to the lingering radioactivity and the severe climatic changes that affect the earth.</p>
-    <p><strong>2012-2019</strong><br />Gale force winds sweep across the world, carrying enormous amounts of dust into the upper atmosphere and preventing much sunlight from reaching the earth's surface.  Temperatures plummet, deterring survivors from remaining above ground. Communications are disrupted by gamma radiation, making all radio, cable and satellite contact impossible. Small colonies of survivors develop in total isolation from one another during these years of darkness.</p>
+    <p><strong>3rd January 'The Day'</strong><br />World Defence League agents discover location of HAVOC command headquarters on an island in the South Pacific Ocean. Immediately orders are given to infiltrate and destroy the HQ and its occupants. The assault is swift and decisive; the complex is quickly overrun and its inhabitants are killed. Yet, ironically, as the news of this victory is being relayed around the world, HAVOC enact their ultimate revenge. A transmitter hidden on the island, fitted with a time-delay mechanism, clicks on, sending its high-frequency radio signal to a communications satellite orbiting the earth. This signal is amplified and returned to earth where, simultaneously, it triggers the remaining nuclear warheads. The initial explosions set off a disastrous chain reaction that feeds on civil and military nuclear installations all across the northern hemisphere. Hundreds of millions of people are killed within days, and many more perish during the years that follow, falling victim to the lingering radioactivity and the severe climatic changes that affect the earth.</p>
+    <p><strong>2012-2019</strong><br />Gale force winds sweep across the world, carrying enormous amounts of dust into the upper atmosphere and preventing much sunlight from reaching the earth's surface. Temperatures plummet, deterring survivors from remaining above ground. Communications are disrupted by gamma radiation, making all radio, cable and satellite contact impossible. Small colonies of survivors develop in total isolation from one another during these years of darkness.</p>
     <p><strong>2019-2020</strong><br />Gradually, the dust storms die down and the sun penetrates the atmosphere, thawing the earths frozen surface. Radiation has decayed to tolerable levels, and survivors emerge to reclaim what little remains of the world they once knew.</p>
    </data>    
   </section>
+
   <section class="frontmatter" id="tssf">
    <meta>
     <title>The Story So Far</title>
@@ -176,7 +151,7 @@ Joe also writes for modelling journals and contributes to Britain's leading role
    
    <data>
     <p>You are Cal Phoenix, a survivor, born in California on Thanksgiving Day in the year AD 2000. In 2012, whilst on winter vacation at your Uncle Jonas' and Aunt Betty-Ann's ranch in Texas, you were invited to visit a shale-oil mine near Austin, the first of its kind in Texas. As Chief of Construction, your uncle was proud to take you on a guided tour of the whole underground complex, which, for security reasons, was totally self-supporting. It was during this tour on 3 January 2012, that the unthinkable happened.</p>
-    <p>You remember how the ground shuddered when the shock waves from the first distant explosions reached the mine. Immediately you assumed it was the start of an earthquake, which you had experienced many times at home in California. However, as the levels nearest the surface began to collapse and the central elevator shaft filled with rubble, you realized the awful truth: the holocaust. At first there was no way of telling the extent of the surface devastation. Below ground, the safety generators had switched into operation automatically when the main power supply failed, and the tremors had faded quickly, which encouraged your aunt and uncle to believe that the damage above was superficial. Uncle Jonas was confident that the military would mount a rescue operation and that you would be brought out within a few days, a week at the most. Aunt Betty-Ann, too, was optimishc. After all, there were emergency supplies - enough to feed 200 men for a whole month. Little did she know that the three of you would end up consuming all those supplies, or that the mine would become your home, your shelter and your prison for the next eight years of your lives.</p>
+    <p>You remember how the ground shuddered when the shock waves from the first distant explosions reached the mine. Immediately you assumed it was the start of an earthquake, which you had experienced many times at home in California. However, as the levels nearest the surface began to collapse and the central elevator shaft filled with rubble, you realized the awful truth: the holocaust. At first there was no way of telling the extent of the surface devastation. Below ground, the safety generators had switched into operation automatically when the main power supply failed, and the tremors had faded quickly, which encouraged your aunt and uncle to believe that the damage above was superficial. Uncle Jonas was confident that the military would mount a rescue operation and that you would be brought out within a few days, a week at the most. Aunt Betty-Ann, too, was optimistic. After all, there were emergency supplies - enough to feed 200 men for a whole month. Little did she know that the three of you would end up consuming all those supplies, or that the mine would become your home, your shelter and your prison for the next eight years of your lives.</p>
     <p>It was early September in the year 2019 when eventually you broke through to the surface. When first you set eyes on the landscape surrounding the mine, it was like looking at the surface of another planet. Few structures had survived the blizzards and intense cold that had swept around the world in the years following 'the Day', and now, after the dust had settled and the sun had returned, the once-fertile plains of Austin resembled little more than a desert of parched and broken rock, littered with the artefacts of an absent civilization.</p>
     <p>During the first few days, when you set out to explore this wilderness, it was easy to believe that you were the only survivors. But on the morning of the fifth day Uncle Jonas made chance radio contact with a family called Ewell who were living near the ruins of McKinney, thirty miles north of Dallas. They told him that they had been in touch with a handful of other groups who had managed somehow to survive the holocaust. Most were isolated and unable to move due to lack of fuel, food or water. They had urged those who could travel to join them in McKinney to start a new community there, and some people were already on their way. When your uncle and aunt accepted their invitation, the Ewells were enthusiastic, but they also warned you to be wary - not everyone who had survived wanted to establish a new community. The ruins of some large Texan cities, such as Dallas and Fort Worth, were controlled by gangs of criminals who fought with each other and terrorized anyone seeking to reestablish law and order. They urged you to avoid these gangs at all costs.</p>
     <p>It took more than a week to discover a vehicle that could transport you to McKinney. It was an old school bus, one that had been parked in an underground lot and had survived the years of sub-zero blizzards. With fuel and spares salvaged from the mine, you managed to coax it back to life, and then set off on your journey north.</p>
@@ -209,48 +184,10 @@ Joe also writes for modelling journals and contributes to Britain's leading role
    </meta>
    
    <data>
-    <p>Before embarking on your adventure you must first determine your personal characteristics and the weapons and provisions with which you are equipped. On pages 6 and 7 you will find an <a idref='action'>Action Chart</a> on which to record and amend these details as the adventure unfolds. For ease of use during play it is recommended that you photocopy these pages.</p>
-    <p>Your personal characteristics comprise two basic attributes: <typ class='attribute'>CLOSE COMBAT SKILL</typ> and <typ class='attribute'>ENDURANCE</typ>. To discover your initial <typ class='attribute'>CLOSE COMBAT SKILL</typ>, take a pencil and, with your eyes closed, point the blunt end of it on to the <a idref='random'>Random Number Table</a> at the back of this book. If you pick a 0 it counts as zero. Add 10 to the number you have picked and write the total in the <typ class='attribute'>CLOSE COMBAT SKILL</typ> section of your Action Chart (for example, if your pencil falls on the number 5 in the <a idref='random'>Random Number Table</a>, you have a CLOSE <typ class='attribute'>COMBAT SKILL</typ> total of 15). When you fight an enemy in hand-to-hand combat, your <typ class='attribute'>CLOSE COMBAT SKILL</typ> will be measured against that of your enemy, so a high score in this section is desirable.</p>
-    <p>To discover your <typ class='attribute'>ENDURANCE</typ> level, repeat the process, but this time add 20 to the number you have picked from the <a idref='random'>Random Number Table</a>. Write the total in the <typ class='attribute'>ENDURANCE</typ> section of your <a idref='action'>Action Chart</a> (for example, if your pencil falls on the number 8 on the <a idref='random'>Random Number Table</a>, you have a total <typ class='attribute'>ENDURANCE</typ> score of 28). If you are wounded in combat, or injured at any other time during your adventure you will lose <typ class='attribute'>ENDURANCE</typ> points. If, at any time, your <typ class='attribute'>ENDURANCE</typ> points total falls to zero, you are dead and the adventure is over. You can regain lost <typ class='attribute'>ENDURANCE</typ> points during the course of the adventure, but your <typ class='attribute'>ENDURANCE</typ> level can never rise above your initial score.</p>
+    <p>Before embarking on your adventure, you must first determine your personal characteristics and the weapons and provisions with which you are equipped. On pages 6 and 7 you will find an <a idref="action">Action Chart</a> on which to record and amend these details as the adventure unfolds. For ease of use during play it is recommended that you photocopy these pages.</p>
+    <p>Your personal characteristics comprise two basic attributes: <typ class="attribute">CLOSE COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ>. To discover your initial <typ class="attribute">CLOSE COMBAT SKILL</typ>, take a pencil and, with your eyes closed, point the blunt end of it on to the <a idref="random">Random Number Table</a> at the back of this book. If you pick a 0 it counts as zero. Add 10 to the number you have picked and write the total in the <typ class="attribute">CLOSE COMBAT SKILL</typ> section of your Action Chart (for example, if your pencil falls on the number 5 in the <a idref="random">Random Number Table</a>, you have a CLOSE <typ class="attribute">COMBAT SKILL</typ> total of 15). When you fight an enemy in hand-to-hand combat, your <typ class="attribute">CLOSE COMBAT SKILL</typ> will be measured against that of your enemy, so a high score in this section is desirable.</p>
+    <p>To discover your <typ class="attribute">ENDURANCE</typ> level, repeat the process, but this time add 20 to the number you have picked from the <a idref="random">Random Number Table</a>. Write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a> (for example, if your pencil falls on the number 8 on the <a idref="random">Random Number Table</a>, you have a total <typ class="attribute">ENDURANCE</typ> score of 28). If you are wounded in combat, or injured at any other time during your adventure you will lose <typ class="attribute">ENDURANCE</typ> points. If, at any time, your <typ class="attribute">ENDURANCE</typ> points total falls to zero, you are dead and the adventure is over. You can regain lost <typ class="attribute">ENDURANCE</typ> points during the course of the adventure, but your <typ class="attribute">ENDURANCE</typ> level can never rise above your initial score.</p>
 
-<!--
-    <section class="frontmatter-separate" id="sskills1">
-     <meta>
-      <title>Survival Skills</title>
-      <link class="prev" idref="gamerulz" />
-      <link class="next" idref="equipmnt" />
-     </meta>
-
-     <data>
-      <p>Ever since the day you returned to the surface, you have endeavoured to develop your skills and natural instincts fully in order to best defend yourself and your colony.</p>
-      <p>Listed on your <a idref='action'>Action Chart</a> are your five basic survival skills:</p>
-      <dl>
-       <dt>Driving</dt>
-        <dd>Your ability to control powered vehicles, such as cars, motorcycles and trucks.</dd>
-      </dl>
-      <dl>
-       <dt>Shooting</dt>
-        <dd>Your familiarity and experience in the use of missile weapons, such as pistols, machine pistols, shotguns and rifles.</dd>
-      </dl>
-      <dl>
-       <dt>Field craft</dt>
-        <dd>Your knowledge and experience of all aspects of outdoor survival.</dd>
-      </dl>
-      <dl>
-       <dt>Stealth</dt>
-        <dd>Your physical fitness, the speed of your reflexes and your dexterity.</dd>
-      </dl>
-      <dl>
-       <dt>Perception</dt>
-        <dd>Your intelligence, your ability to evaluate information, your education and your mental alertness.</dd>
-      </dl>
-
-      <p>Your ability in each of these five individual skills is measured in skill points. You begin with 3 points per skill. Before starting the adventure, you may allocate an additional 4 skill points to your list of five survival skills. These 4 extra points can be used to improve one or more of your five skills. During your adventure, all five skills will be severely tested, therefore the higher the individual skill level, the better your chances of survival. You may allocate your 4 additional points entirely how you like.</p>
-      <p>When you have decided where to allocate your 4 additional skill points, make a note of the totals in the Survival Skills section of your <a idref='action'>Action Chart</a>. (In your first adventure, your total number of skill points should be 19: five skills x 3 points each = 15, plus 4 additional skill points = 19 points.)</p>
-      <p>If you complete successfully the mission set in Book 1 of the Freeway Warrior series, you may add an additional 4 points to your Survival Skills in Book 2. These additional points, together with any equipment and provisions that you possess at the end of Book 1, may then be used in the next Freeway Warrior adventure, which is called Slaughter Mountain Run.</p>
-     </data>
-    </section>
--->
     <section class="frontmatter-separate" id="sskills">
      <meta>
       <title>Survival Skills</title>
@@ -259,6 +196,9 @@ Joe also writes for modelling journals and contributes to Britain's leading role
      </meta>
 
      <data>
+
+      <p>Ever since the day you returned to the surface, you have endeavoured to develop your skills and natural instincts fully in order to best defend yourself and your colony.</p>
+      <p>Listed on your <a idref="action">Action Chart</a> are your five basic survival skills:</p>
 
       <section class="frontmatter" id="driving">
        <meta><title>Driving</title></meta>
@@ -301,7 +241,7 @@ Joe also writes for modelling journals and contributes to Britain's leading role
       </section>
     
       <p>Your ability in each of these five individual skills is measured in skill points. You begin with 3 points per skill. Before starting the adventure, you may allocate an additional 4 skill points to your list of five survival skills. These 4 extra points can be used to improve one or more of your five skills. During your adventure, all five skills will be severely tested, therefore the higher the individual skill level, the better your chances of survival. You may allocate your 4 additional points entirely how you like.</p>
-      <p>When you have decided where to allocate your 4 additional skill points, make a note of the totals in the Survival Skills section of your <a idref='action'>Action Chart</a>.</p>
+      <p>When you have decided where to allocate your 4 additional skill points, make a note of the totals in the Survival Skills section of your <a idref="action">Action Chart</a>.</p>
       <p>(If this is your first Freeway Warrior adventure, your total number of skill points should be 19: five skills x 3 points each = 15, plus 4 additional skill points = 19 points.)</p>
       <p>If you complete successfully the mission set in Book 2 of the Freeway Warrior series, you may add an additional 4 points to your Survival Skills in Book 3. These additional points, together with any equipment and provisions that you possess at the end of Book 2, may then be used in the next Freeway Warrior adventure, which is called The Omega Zone.</p>
      </data>
@@ -320,7 +260,7 @@ Joe also writes for modelling journals and contributes to Britain's leading role
       <section class="frontmatter" id="backpack">
        <meta><title>Backpack</title></meta>
        <data>
-        <p>Up to ten separate items may be stored and carried in your Backpack at any time. However, if more than three items are carried, your Stealth level will be reduced by 1 point.  If more than six items are carried, your Stealth level will be reduced by 2 points; and if you carry a full Backpack (containing ten items) your Stealth level will be reduced by 3 points.</p>
+        <p>Up to ten separate items may be stored and carried in your Backpack at any time. However, if more than three items are carried, your Stealth level will be reduced by 1 point. If more than six items are carried, your Stealth level will be reduced by 2 points; and if you carry a full Backpack (containing ten items) your Stealth level will be reduced by 3 points.</p>
         <p>In order to equip yourself for the task ahead, you may choose up to four items from the following list:</p>
         <ul>
          <li><typ class="item">SOLAR TORCH</typ></li>
@@ -333,9 +273,9 @@ Joe also writes for modelling journals and contributes to Britain's leading role
          <li><typ class="item">FLEXIBLE SAW</typ></li>
          <li><typ class="item">SIGNAL FLARE</typ></li>
         </ul>
-        <p>List the items you have chosen on your <a idref='action'>Action Chart</a>.  If you have picked four items, adjust your current Stealth level accordingly.</p>
+        <p>List the items you have chosen on your <a idref="action">Action Chart</a>. If you have picked four items, adjust your current Stealth level accordingly.</p>
         <p>Opportunities may arise during your adventure for you to pick up useful items. These items will appear in the text in bold print and, unless you are instructed otherwise, they can be stored and carried in your Backpack.</p>
-        <p>You will need to eat regularly. If you do not possess any food when you are instructed to eat a Meal, you will lose 3 <typ class='attribute'>ENDURANCE</typ> points.</p>
+        <p>You will need to eat regularly. If you do not possess any food when you are instructed to eat a Meal, you will lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
        </data>
       </section>
 
@@ -360,16 +300,16 @@ Joe also writes for modelling journals and contributes to Britain's leading role
        <meta><title>Medi-kit</title></meta>
        <data>
         <p>A well-stocked Medi-kit can make all the difference to your chances of survival should you suffer injury in the field or as a result of combat. It contains useful first aid supplies, such as dressings, antiseptics, antibiotics, water purification tablets, sulphonamides, pain killers, potassium iodine tablets (to delay absorption of radioactivity) and sutures.</p>
-        <p>For convenience, these medical supplies are grouped into units. To find how many units you have in your Medi-kit, pick a number from the <a idref='random'>Random Number Table</a> (0 equals 10) and add 2. Your total score equals the number of units with which you begin your adventure. To keep a record of them, circle the appropriate number of unit symbols in the Medi-kit section of your <a idref='action'>Action Chart</a>. The maximum number of units you can carry in your Medi-kit is twelve.</p>
-        <p>You may use your Medi-kit units to restore lost <typ class='attribute'>ENDURANCE</typ> points; each unit used in this way restores 3 points. Units cannot be used to restore <typ class='attribute'>ENDURANCE</typ> points in lieu of a Meal or Water when instructed to eat or drink.</p>
+        <p>For convenience, these medical supplies are grouped into units. To find how many units you have in your Medi-kit, pick a number from the <a idref="random">Random Number Table</a> (0 equals 10) and add 2. Your total score equals the number of units with which you begin your adventure. To keep a record of them, circle the appropriate number of unit symbols in the Medi-kit section of your <a idref="action">Action Chart</a>. The maximum number of units you can carry in your Medi-kit is twelve.</p>
+        <p>You may use your Medi-kit units to restore lost <typ class="attribute">ENDURANCE</typ> points; each unit used in this way restores 3 points. Units cannot be used to restore <typ class="attribute">ENDURANCE</typ> points in lieu of a Meal or Water when instructed to eat or drink.</p>
        </data>
       </section>
 
       <section class="frontmatter" id="canteen">
        <meta><title>Water Canteen</title></meta>
        <data>
-        <p>Water is essential to life, and your life will depend on having a sufficient, uncontaminated supply. You will need to drink regularly during your adventure. One drink is equivalent to half a pint and your canteen holds exactly two pints of water: enough for one day's needs. When instructed to drink, be sure to tick off one box in the Water section of your <a idref='action'>Action Chart</a>.</p>
-        <p>If you do not have any Water when instructed to drink, you must lose 3 <typ class='attribute'>ENDURANCE</typ> points.</p>
+        <p>Water is essential to life, and your life will depend on having a sufficient, uncontaminated supply. You will need to drink regularly during your adventure. One drink is equivalent to half a pint and your canteen holds exactly two pints of water: enough for one day's needs. When instructed to drink, be sure to tick off one box in the Water section of your <a idref="action">Action Chart</a>.</p>
+        <p>If you do not have any Water when instructed to drink, you must lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
        </data>
       </section>
       
@@ -388,8 +328,8 @@ Joe also writes for modelling journals and contributes to Britain's leading role
       <section class="frontmatter" id="close">
        <meta><title>Close Combat Weapons</title></meta>
        <data>
-        <p>These weapons aid you in hand-to-hand fighting.  You begin your adventure armed with a Hunting Knife which, when used in close combat, adds 2 points to your <typ class='attribute'>CLOSE COMBAT SKILL</typ>. Note this Hunting Knife in the Close Combat Weapons section of your <a idref='action'>Action Chart</a>.</p>
-        <p>If you find a close combat weapon during your adventure, you may pick it up and use it. Close combat weapons will appear in the text with a close combat skill number, for example, Machete (3). This number indicates how many points this weapon will add to your <typ class='attribute'>CLOSE COMBAT SKILL</typ> when used in a hand-to-hand fight.</p> 
+        <p>These weapons aid you in hand-to-hand fighting. You begin your adventure armed with a Hunting Knife which, when used in close combat, adds 2 points to your <typ class="attribute">CLOSE COMBAT SKILL</typ>. Note this Hunting Knife in the Close Combat Weapons section of your <a idref="action">Action Chart</a>.</p>
+        <p>If you find a close combat weapon during your adventure, you may pick it up and use it. Close combat weapons will appear in the text with a close combat skill number, for example, Machete (3). This number indicates how many points this weapon will add to your <typ class="attribute">CLOSE COMBAT SKILL</typ> when used in a hand-to-hand fight.</p> 
         <p>The maximum number of close combat weapons you may carry is two.</p>
        </data>
       </section>
@@ -405,23 +345,44 @@ Joe also writes for modelling journals and contributes to Britain's leading role
          <li>SHOTGUN</li>
          <li>RIFLE</li>
         </ul>
-        <p>Unless you are continuing to use weapons from a previous Freeway Warrior book, you begin your adventure armed with only one of these weapons. Make your choice and then record the weapon you have chosen, together with its calibre and rate of fire details, in the Missile Weapons section of your <a idref='action'>Action Chart</a>.</p>    
+        <p>Unless you are continuing to use weapons from a previous Freeway Warrior book, you begin your adventure armed with only one of these weapons. Make your choice and then record the weapon you have chosen, together with its calibre and rate of fire details, in the Missile Weapons section of your <a idref="action">Action Chart</a>.</p>    
         <p>In order to be able to use a missile weapon, you must have sufficient ammunition of the correct calibre. The following list shows the calibre of each weapon, the amount that is used every time the weapon is fired, and the number of rounds that you possess at the start of your adventure:</p>
 
-<!--
-Weapon - Calibre - Rate of Fire - Initial No. of Rounds
-PISTOL - 9mm - 1 - 8
-MACHINE PISTOL - 9mm - 6 - 30
-SHOTGUN - 12-gauge - 1 - 4
-RIFLE - 7.62mm - 1 - 4
--->
+        <table>
+         <tr>
+          <th></th>
+          <th>Calibre</th>
+          <th>Rate of Fire</th>
+          <th>Initial No. of Rounds</th>
+         </tr>
+         <tr>
+          <td>PISTOL</td>
+          <td>9mm</td>
+          <td>1</td>
+          <td>8</td>
+         </tr>
+         <tr>
+          <td>MACHINE PISTOL</td>
+          <td>9mm</td>
+          <td>6</td>
+          <td>30</td>
+         </tr>
+         <tr>
+          <td>SHOTGUN</td>
+          <td>12-gauge</td>
+          <td>1</td>
+          <td>4</td>
+         </tr>
+         <tr>
+          <td>RIFLE</td>
+          <td>7.62mm</td>
+          <td>1</td>
+          <td>4</td>
+         </tr>
+        </table>
 
-        <p><strong>PISTOL</strong>  Calibre: 9mm, Rate of Fire: 1, Initial No. of Rounds: 8</p>
-        <p><strong>MACHINE PISTOL</strong> Calibre: 9mm, Rate of Fire: 6, Initial No. of Rounds: 30</p>
-        <p><strong>SHOTGUN</strong> Calibre: 12-gauge, Rate of Fire: 1, Initial No. of Rounds: 4</p>
-        <p><strong>RIFLE</strong> Calibre: 7.62mm, Rate of Fire: 1, Initial No. of Rounds: 4</p>
-        <p>The initial number of rounds should be noted in the Ammo Pouch section of your <a idref='action'>Action Chart</a>. Missile weapons cannot be used if you run out of ammunition or possess rounds of the wrong calibre. However, the opportunity may arise for you to replenish your supply of ammunition and/or discover a weapon of the correct calibre.</p>
-        <p>You may carry a maximum of three missile weapons.  However, for every missile weapon that you carry (excluding your initial choice), you must reduce your Stealth level by 1 point.</p>
+        <p>The initial number of rounds should be noted in the Ammo Pouch section of your <a idref="action">Action Chart</a>. Missile weapons cannot be used if you run out of ammunition or possess rounds of the wrong calibre. However, the opportunity may arise for you to replenish your supply of ammunition and/or discover a weapon of the correct calibre.</p>
+        <p>You may carry a maximum of three missile weapons. However, for every missile weapon that you carry (excluding your initial choice), you must reduce your Stealth level by 1 point.</p>
 
        </data>
       </section>
@@ -438,38 +399,36 @@ RIFLE - 7.62mm - 1 - 4
      </meta>
 
      <data>
-      <p>There will be occasions when you will have to fight an enemy in hand-to-hand combat.  The enemy's <typ class='attribute'>CLOSE COMBAT SKILL</typ> and <typ class='attribute'>ENDURANCE</typ> level will both be given in the text. Your aim in close combat is to kill the enemy by reducing his <typ class='attribute'>ENDURANCE</typ> points to zero while losing as few of your own <typ class='attribute'>ENDURANCE</typ> points as possible.</p>
-      <p>At the start of a close combat, enter both your own and your enemy's <typ class='attribute'>ENDURANCE</typ> points in the appropriate boxes on the Close Combat Record section of your <a idref='action'>Action Chart</a>. The sequence for close combat is as follows:</p>
+      <p>There will be occasions when you will have to fight an enemy in hand-to-hand combat. The enemy's <typ class="attribute">CLOSE COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> level will both be given in the text. Your aim in close combat is to kill the enemy by reducing his <typ class="attribute">ENDURANCE</typ> points to zero while losing as few of your own <typ class="attribute">ENDURANCE</typ> points as possible.</p>
+      <p>At the start of a close combat, enter both your own and your enemy's <typ class="attribute">ENDURANCE</typ> points in the appropriate boxes on the Close Combat Record section of your <a idref="action">Action Chart</a>. The sequence for close combat is as follows:</p>
       <ol class="paragraphed">
-       <li><p>Add any extra points gained through the use of close combat weapons to your current <typ class='attribute'>CLOSE COMBAT SKILL</typ> total.</p></li>
+       <li><p>Add any extra points gained through the use of close combat weapons to your current <typ class="attribute">CLOSE COMBAT SKILL</typ> total.</p></li>
        <li>
-        <p>Subtract the <typ class='attribute'>CLOSE COMBAT SKILL</typ> Of your enemy from this total. The result is your Combat Ratio.  Enter it on the <a idref='action'>Action Chart</a>.</p>
-        <p>Example</p>
-        <p>Cal Phoenix (<typ class='attribute'>CLOSE COMBAT SKILL</typ> 17) is attacked by a Renegade Clansman (<typ class='attribute'>CLOSE COMBAT SKILL</typ> 18). He is not given the opportunity to evade close combat, but must stand and fight his adversary. Cal Phoenix is armed with a Hunting Knife, so he adds 2 points to his <typ class='attribute'>CLOSE COMBAT SKILL</typ>, giving a total CLOSE COMBAT SKILL of 19.</p>
-        <p>He subtracts the Renegade Clansman's <typ class='attribute'>CLOSE COMBAT SKILL</typ> from his own, giving a Combat Ratio of &plus;1 (19 &minus; 18 = &plus;1).  He notes this &plus;1 on his <a idref='action'>Action Chart</a> as the Combat Ratio.</p>
+        <p>Subtract the <typ class="attribute">CLOSE COMBAT SKILL</typ> of your enemy from this total. The result is your Combat Ratio. Enter it on the <a idref="action">Action Chart</a>.</p>
+        <p>Example<br />Cal Phoenix (<typ class="attribute">CLOSE COMBAT SKILL</typ> 17) is attacked by a Renegade Clansman (<typ class="attribute">CLOSE COMBAT SKILL</typ> 18). He is not given the opportunity to evade close combat, but must stand and fight his adversary. Cal Phoenix is armed with a Hunting Knife, so he adds 2 points to his <typ class="attribute">CLOSE COMBAT SKILL</typ>, giving a total CLOSE COMBAT SKILL of 19.</p>
+        <p>He subtracts the Renegade Clansman's <typ class="attribute">CLOSE COMBAT SKILL</typ> from his own, giving a Combat Ratio of <ch.plus/>1 (19 <ch.minus/> 18 = <ch.plus/>1). He notes this <ch.plus/>1 on his <a idref="action">Action Chart</a> as the Combat Ratio.</p>
        </li>
-       <li><p>After working out your Combat Ratio, pick a number from the <a idref='random'>Random Number Table</a>.</p></li>
+       <li><p>After working out your Combat Ratio, pick a number from the <a idref="random">Random Number Table</a>.</p></li>
        <li>
-        <p>Turn to the Close Combat Results Table on the inside back cover of the book. Along the top of the chart are the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the number that you have picked (the random numbers appear down the side of the chart). You now have the <typ class='attribute'>ENDURANCE</typ> points lost by both Cal Phoenix and his enemy in this round of close combat.  (E represents points lost by the enemy; CP represents points lost by Cal Phoenix.)</p>
-        <p>Example</p>
-        <p>The Combat Ratio between Cal Phoenix and the Renegade Clansman has been established as &plus;1.  If the number picked from the <a idref='random'>Random Number Table</a> is a 4, then the result of the first round of close combat is:
+        <p>Turn to the Close Combat Results Table on the inside back cover of the book. Along the top of the chart are the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the number that you have picked (the random numbers appear down the side of the chart). You now have the <typ class="attribute">ENDURANCE</typ> points lost by both Cal Phoenix and his enemy in this round of close combat. (E represents points lost by the enemy; CP represents points lost by Cal Phoenix.)</p>
+        <p>Example<br />The Combat Ratio between Cal Phoenix and the Renegade Clansman has been established as <ch.plus/>1. If the number picked from the <a idref="random">Random Number Table</a> is a 4, then the result of the first round of close combat is:
          <ul>
-          <li>Cal Phoenix loses 3 <typ class='attribute'>ENDURANCE</typ> points.</li>
-          <li>Renegade Clansman loses 4 <typ class='attribute'>ENDURANCE</typ> points.</li>
+          <li>Cal Phoenix loses 3 <typ class="attribute">ENDURANCE</typ> points.</li>
+          <li>Renegade Clansman loses 4 <typ class="attribute">ENDURANCE</typ> points.</li>
          </ul>
         </p>
        </li>
-       <li><p>On the <a idref='action'>Action Chart</a>, mark the changes in <typ class='attribute'>ENDURANCE</typ> points to the participants in the close combat.</p></li>
+       <li><p>On the <a idref="action">Action Chart</a>, mark the changes in <typ class="attribute">ENDURANCE</typ> points to the participants in the close combat.</p></li>
        <li><p>Unless otherwise instructed, or unless you have an option to evade, start the next round of close combat.</p></li>
        <li><p>Repeat the sequence from stage 3.</p></li>
       </ol>
-      <p>This procedure continues until the <typ class='attribute'>ENDURANCE</typ> points of either the enemy or Cal Phoenix are reduced to zero, at which point the one whose score is zero is declared dead. If Cal Phoenix is dead, the adventure is over. If the enemy is dead, Cal Phoenix proceeds but with a reduced <typ class='attribute'>ENDURANCE</typ> point score.</p>
-      <p>A <a idref="crsumary">Summary of the Close Combat Rules</a> appears on the page after the <a idref='random'>Random Number Table</a>.</p>
+      <p>This procedure continues until the <typ class="attribute">ENDURANCE</typ> points of either the enemy or Cal Phoenix are reduced to zero, at which point the one whose score is zero is declared dead. If Cal Phoenix is dead, the adventure is over. If the enemy is dead, Cal Phoenix proceeds but with a reduced <typ class="attribute">ENDURANCE</typ> point score.</p>
+      <p>A <a idref="crsumary">Summary of the Close Combat Rules</a> appears on the page after the <a idref="random">Random Number Table</a>.</p>
 
       <section class="frontmatter" id="evasion">
        <meta><title>Evasion of Combat</title></meta>
        <data>
-        <p>During your adventure you may be given the chance to evade close combat. If you have already engaged in a round of close combat and decide to evade, calculate the combat for that round in the usual manner. All ENDURANCE points lost by the enemy as a result of that round are ignored; only Cal Phoenix may lose <typ class='attribute'>ENDURANCE</typ> points during that round, but that is the risk of running away! You may evade combat only if the text of the particular section allows you to do so.</p>
+        <p>During your adventure you may be given the chance to evade close combat. If you have already engaged in a round of close combat and decide to evade, calculate the combat for that round in the usual manner. All ENDURANCE points lost by the enemy as a result of that round are ignored; only Cal Phoenix may lose <typ class="attribute">ENDURANCE</typ> points during that round, but that is the risk of running away! You may evade combat only if the text of the particular section allows you to do so.</p>
        </data>
       </section>
      </data>
@@ -509,7 +468,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>You are about to push open the door when you notice a thin, almost transparent cord wrapped around the inside handle. It rises to a shelf above the door, where it is attached to a large glass storage jar. Carefully you ease open the door a few inches, take hold of the cord between your fingers and snap it before entering the kitchen. Having deactivated this primitive trap, you make your way silently towards the bar at the front of the building.</p>
       <p>As you enter, you search the darkened interior for some sign of Haskell, but you cannot see where he is. Rather than risk his mistaking you for a clansman, you whisper his name as you advance cautiously into the bar.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Perception and Stealth skill scores.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Perception and Stealth skill scores.</p>
       <choice idref="sect270">If the total score is 10 or less, <link-text>turn to 270</link-text>.</choice>
       <choice idref="sect190">If the total score is 11 or more, <link-text>turn to 190</link-text>.</choice>
      </data>
@@ -550,7 +509,7 @@ RIFLE - 7.62mm - 1 - 4
       <p>Having chosen to stop here and rest, you pull off the highway and search among the ruins for a safe shelter. You are looking for a place where you will be able to hide the roadster and observe the road; if the Angelinos appear during the night, you will need as much forewarning of their arrival as possible in order to make a successful getaway.</p>
       <p>Only one place meets your needs: a warehouse and factory complex near the middle of the town. The cracked and tarnished facia above its entrance tells you that this was once the Eldorado Woolen Mills. You park the roadster in a covered lot at the rear, then settle yourselves on the first floor in a workshop that has an unobstructed view of the highway. You must now eat a Meal (or lose 3 <typ class="attribute">ENDURANCE</typ> points), and take a Drink (or lose 3 <typ class="attribute">ENDURANCE</typ> points).</p>
       <p>Kate curls up beside you and falls asleep in your arms, while you, heavy with fatigue, force yourself to stay awake and watch the highway. Your vigilance pays off when, two hours later, you see a line of lights in the double doors leading to the kitchen and you head straight for them.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a>.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect99">If the number you have picked is 0-2, <link-text>turn to 99</link-text>.</choice>
       <choice idref="sect218">If the number is 3-9, <link-text>turn to 218</link-text>.</choice>
      </data>
@@ -562,7 +521,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>This corridor services a number of offices and conference rooms before it ends at a wide staircase leading downwards. You descend three floors and discover the remains of a large private restaurant which, along with the kitchen, occupies most of the sub-basement level. A small 'fire exit' sign hangs over the double doors leading to the kitchen and you head straight for them.</p>
       <p>As you are crossing the restaurant floor, your rumbling stomach reminds you that you have yet to eat anything today. Then the thought occurs to you that there could still be some canned food in the kitchen, and you decide to search it before you leave the building.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Perception skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Perception skill score.</p>
       <choice idref="sect159">If your total score is now 11 or less, <link-text>turn to 159</link-text>.</choice>
       <choice idref="sect233">If it is 12 or more, <link-text>turn to 233</link-text>.</choice>
      </data>
@@ -626,7 +585,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>You wait until Haskell has disappeared into an alley that runs alongside the bar, then you approach the front door cautiously and peek inside. Remnants of food lie scattered across the tables and, judging by the amount of fresh garbage strewn on the floor, a large group of clansmen were here not so long ago.</p>
       <p>Suddenly you hear the sound of breaking glass. It comes from the rear of the building and you sense that Haskell must have something to do with it. Fearing that he is involved in a fight, you enter the bar and call out his name.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Perception and Stealth skill scores.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Perception and Stealth skill scores.</p>
       <choice idref="sect270">If the total score is 12 or less, <link-text>turn to 270</link-text>.</choice>
       <choice idref="sect190">If the total score is 13 or more, <link-text>turn to 190</link-text>.</choice>
      </data>
@@ -690,7 +649,7 @@ RIFLE - 7.62mm - 1 - 4
        <li><typ class="item">Compass</typ></li>
        <li><typ class="item">Binoculars</typ></li>
       </ul>
-      <p>If you keep any of these items, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
+      <p>If you keep any of these items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>As soon as you are ready, you retrace your way along the defile and return to the surface.</p>
       <choice idref="sect168"><link-text>Turn to 168</link-text>.</choice>
      </data>
@@ -723,7 +682,7 @@ RIFLE - 7.62mm - 1 - 4
       </illustration>
 
       <p>The only way you can hope to avoid being hit by the missile is by taking evasive action immediately.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Driving and Perception skill scores.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Driving and Perception skill scores.</p>
       <choice idref="sect182">If your total score is 10 or less, <link-text>turn to 182</link-text>.</choice>
       <choice idref="sect326">If your total score is 11-15, <link-text>turn to 326</link-text>.</choice>
       <choice idref="sect108">If your total score is 16 or more, <link-text>turn to 108</link-text>.</choice>
@@ -746,7 +705,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>Concealed beneath the piles of old documents, you discover a padlocked hatch. Three well-placed kicks remove the lock and, when you lift the hinged trapdoor, you find a large, hermetically sealed storage bin, which is filled with cigarettes, packed neatly in cartons of 200. Although you have no personal need for these cigarettes, you know that there are those who would willingly trade food or fuel for them.</p>
-      <p>If you decide to keep a <typ class="item">Carton of Cigarettes</typ>, remember to adjust your <a idref='action'>Action Chart</a> accordingly. One carton counts as one Backpack item.</p>
+      <p>If you decide to keep a <typ class="item">Carton of Cigarettes</typ>, remember to adjust your <a idref="action">Action Chart</a> accordingly. One carton counts as one Backpack item.</p>
       <p>Having satisfied yourself that there is little else of worth here, you leave the cabin and return to your roadster.</p>
       <choice idref="sect216"><link-text>Turn to 216</link-text>.</choice>
      </data>
@@ -772,7 +731,7 @@ RIFLE - 7.62mm - 1 - 4
        <li>Bread Knife (2)</li>
        <li>Enough canned food for five Meals</li>
       </ul>
-      <p>If you choose to keep any of the items in either list, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
+      <p>If you choose to keep any of the items in either list, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Before leaving the kitchen, you hide the clansman's body in an empty refrigerator. Then you hurry through the fire escape door and make your way up a flight of rusty steps that leads to a service alley at the rear of the building.</p>
       <choice idref="sect269"><link-text>Turn to 269</link-text>.</choice>
      </data>
@@ -793,7 +752,7 @@ RIFLE - 7.62mm - 1 - 4
        <instance class="pdf" src="ill2.pdf" width="386" height="623" />
       </illustration>
       
-      <p>Pick a number from the <a idref='random'>Random Number Table</a>.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect96">If the number you have picked is 0-3, <link-text>turn to 96</link-text>.</choice>
       <choice idref="sect145">If the number is 4-6, <link-text>turn to 145</link-text>.</choice>
       <choice idref="sect287">If the number is 7-9, <link-text>turn to 287</link-text>.</choice>
@@ -933,7 +892,7 @@ RIFLE - 7.62mm - 1 - 4
        <li><typ class="item">Compass</typ></li>
        <li><typ class="item">Binoculars</typ></li>
       </ul>
-      <p>If you keep any of these items, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
+      <p>If you keep any of these items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>As soon as you are ready, you retrace your way along the defile and return to the surface.</p>
       <choice idref="sect168"><link-text>Turn to 168</link-text>.</choice>
      </data>
@@ -944,7 +903,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>You are almost relieved to see that the cause of your irritation is a small, brown, spindly legged spider. Casually you raise your right hand to slap it from your arm, but just as you bring your hand down, Kate's eyes widen with fear. 'No!' she says. 'It's a Fiddleback!'</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a>.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect202">If the number you have picked is 0-6, <link-text>turn to 202</link-text>.</choice>
       <choice idref="sect280">If it is 7-9, <link-text>turn to 280</link-text>.</choice>
      </data>
@@ -975,7 +934,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>On a count of three you step out into the corridor, raise your pistol, and fix your sights on the guard who is standing to the left of the stairs. You fire a body shot and see him twist backwards, clutching his chest. Then you swing across to his partner, knowing only too well that you must make your second shot count just as effectively. But his reactions prove razor-sharp, and when you do get him in your sights you are shocked to find that you are staring at the muzzle of a machine pistol.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Stealth skill score, and your current <typ class="attribute">ENDURANCE</typ> points score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth skill score, and your current <typ class="attribute">ENDURANCE</typ> points score.</p>
       <choice idref="sect297">If your total score is 18 or less, <link-text>turn to 297</link-text>.</choice>
       <choice idref="sect197">If your total score is 19 or more, <link-text>turn to 197</link-text>.</choice>
      </data>
@@ -1007,7 +966,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>Repeatedly you pump the gas pedal and work the ignition, but the engine refuses to start. Then a bullet smacks into the passenger door and another ricochets loudly off the hardened steel plates that protect the rear of your driving seat, making you duck your head involuntarily. Cursing your luck, you realize suddenly that your frantic efforts to restart the engine have caused it to flood with fuel.</p>
       <p>Running footsteps approach from all sides and angry voices scream abuse in your direction. You grab your weapon and, as you turn to face the moving shadows, you find yourself staring into the steely-blue eyes of a Maverick gunman. A Smith and Wesson model 459 pistol is clasped in his right hand, its nickel-plated barrel pointing straight at your face. As the Maverick begins to squeeze his trigger, you raise your gun and fire.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Shooting and Stealth skill scores.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Shooting and Stealth skill scores.</p>
       <choice idref="sect235">If your total score is now 8 or less, <link-text>turn to 235</link-text>.</choice>
       <choice idref="sect258">If your total score is 9-12, <link-text>turn to 258</link-text>.</choice>
       <choice idref="sect26">If your total score is 13 or more, <link-text>turn to 26</link-text>.</choice>
@@ -1018,7 +977,7 @@ RIFLE - 7.62mm - 1 - 4
      <meta><title>44</title></meta>
 
      <data>
-      <p>Kate discovers that you are carrying an anti-toxin in your Medi-kit that will neutralize the Fiddleback's bite. She breaks open the ampoule and forces the bitter liquid into your mouth, washing it down with a few drops of water from your canteen (remember to erase this Medi-kit unit from your <a idref='action'>Action Chart</a>).</p>
+      <p>Kate discovers that you are carrying an anti-toxin in your Medi-kit that will neutralize the Fiddleback's bite. She breaks open the ampoule and forces the bitter liquid into your mouth, washing it down with a few drops of water from your canteen (remember to erase this Medi-kit unit from your <a idref="action">Action Chart</a>).</p>
       <p>It is slow to work, but gradually you recover as the anti-toxin breaks down the poison circulating in your bloodstream: lose 2 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect291"><link-text>Turn to 291</link-text>.</choice>
      </data>
@@ -1030,9 +989,9 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>You rush forward to take Kate in your arms and she yields to your embrace with a kiss that is warm and passionate. 'I thought I'd never see you again, Cal,' she says, her voice trembling and her wide blue eyes brimful with tears of joy. 'They told me you were dead.'</p>
       <p>'Do I look dead?' you reply, half-jokingly.</p>
-      <p>'No &ellips;' she laughs. 'You look just great.'</p>
+      <p>'No <ch.ellips/>' she laughs. 'You look just great.'</p>
       <p>Then the sound of running feet alerts you both to approaching danger. Before Kate knocked him out, Mad Dog radioed his men and reported your presence in the observation block. Now a dozen of his toughest clansmen are racing along the corridor in answer to his call.</p>
-      <p>'Let's get outta here, Cal!' says Kate, and starts to run towards a fire escape door. You follow her, pausing briefly to snatch the map that the two clan leaders were studying when you burst into the room. (Record this <typ class="item">Mad Dog Map</typ> in the margin of your <a idref='action'>Action Chart</a>; you carry it tucked inside your jacket and therefore you need not record it as a Backpack item.)</p>
+      <p>'Let's get outta here, Cal!' says Kate, and starts to run towards a fire escape door. You follow her, pausing briefly to snatch the map that the two clan leaders were studying when you burst into the room. (Record this <typ class="item">Mad Dog Map</typ> in the margin of your <a idref="action">Action Chart</a>; you carry it tucked inside your jacket and therefore you need not record it as a Backpack item.)</p>
       <p>You race to catch up with Kate as she runs along the gantry that lies on the other side of the door. A burst of machine pistol fire echoes in your wake as the first of Mad Dog's men enter the observation room. Bullets begin to scream past on either side of you. Twenty yards along the iron gantry you come under additional fire from clansmen in the stadium below.</p>
 
       <illustration class="float">
@@ -1081,7 +1040,7 @@ RIFLE - 7.62mm - 1 - 4
        <li><typ class="item">Bolt Cutters</typ></li>
        <li><typ class="item">Copper Rods</typ></li>
       </ul>
-      <p>If you wish to keep any of these Backpack items, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
+      <p>If you wish to keep any of these Backpack items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Having satisfied yourself that nothing else of use has been overlooked, you return to your roadster and resume your journey to San Angelo.</p>
       <choice idref="sect230"><link-text>Turn to 230</link-text>.</choice>
      </data>
@@ -1160,7 +1119,7 @@ RIFLE - 7.62mm - 1 - 4
       <p>When eventually you regain consciousness, you feel as though you have broken every bone in your body (lose 6 <typ class="attribute">ENDURANCE</typ> points). Fortunately, your bones are still intact and, as your strength returns, you look around for some means of escaping from the shaft.</p>
       <p>Eventually you discover a service hatch in the roof of the elevator. The bolts undo with little resistance and you are able to lower yourself into the elevator compartment. Without power, the doors will not respond to the control buttons, but an emergency crank located in the floor allows you to wind them open by hand.</p>
       <p>Beyond the doors you discover the remains of a large private restaurant which, along with its kitchen, occupies most of the sub-basement level. A small 'fire exit' sign hangs over the double doors leading to the kitchen and you head straight towards them. As you are crossing the restaurant floor, your rumbling stomach reminds you that you have yet to eat anything today. Then the thought occurs to you that there could still be some canned food in the kitchen and you resolve to search it before you leave the building.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Perception skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Perception skill score.</p>
       <choice idref="sect159">If your total score is now 11 or less, <link-text>turn to 159</link-text>.</choice>
       <choice idref="sect233">If it is 12 or more, <link-text>turn to 233</link-text>.</choice>
      </data>
@@ -1256,7 +1215,7 @@ RIFLE - 7.62mm - 1 - 4
        <li>Knife (2)</li>
        <li>Twelve rounds of 9mm ammunition</li>
       </ul>
-      <p>If you wish to keep any of these items, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
+      <p>If you wish to keep any of these items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <choice idref="sect114"><link-text>Turn to 114</link-text>.</choice>
      </data>
     </section>
@@ -1277,10 +1236,10 @@ RIFLE - 7.62mm - 1 - 4
      <meta><title>65</title></meta>
 
      <data>
-      <p>Silently you draw your gun and slip off the safety catch. The clansman is less than six feet away when he sees you crouching on the dry river bed. His eyes widen and he opens his mouth to scream a warning to his partner, but it is a scream of pain that leaves his lips when you open fire at his chest. (Remember to erase the appropriate number of rounds from your <a idref='action'>Action Chart</a>.)</p>
+      <p>Silently you draw your gun and slip off the safety catch. The clansman is less than six feet away when he sees you crouching on the dry river bed. His eyes widen and he opens his mouth to scream a warning to his partner, but it is a scream of pain that leaves his lips when you open fire at his chest. (Remember to erase the appropriate number of rounds from your <a idref="action">Action Chart</a>.)</p>
       <p>As the clansman's body topples into the gully, you catch sight of his partner running head-down towards the bridge. He pauses to grab a machine pistol from his motorcycle before diving for cover behind one of the iron bridge supports. Seconds later he reappears and fires a stream of bullets at your position.</p>
       <p>You keep your head low and wait for a lull in the shooting before you break cover and return fire at the clansman.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your current Shooting skill score. For every round of fire that you wish to discharge at your opponent, add 1 point.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your current Shooting skill score. For every round of fire that you wish to discharge at your opponent, add 1 point.</p>
       <choice idref="sect246">If your total score is now 9 or less, <link-text>turn to 246</link-text>.</choice>
       <choice idref="sect266">If your total score is now 10 or more, <link-text>turn to 266</link-text>.</choice>
      </data>
@@ -1341,7 +1300,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>Placing your hand under the dashboard, you pull down a handful of cables and isolate two - a red one and a black one - that are connected to the ignition lock. Quickly you rip these out and touch the exposed copper braids together. There is a bright blue spark and immediately the engine growls into life. After twisting the wires together, you throw the jeep into low gear and take off towards an open section of the perimeter wall. A wheeled screen partially blocks this access point, which is guarded by two clansmen armed with automatic assault rifles.</p>
       <p>You are fifteen yards from the screen when suddenly they realize that you have no intention of stopping.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Driving skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Driving skill score.</p>
       <choice idref="sect14">If your total is 4 or less, <link-text>turn to 14</link-text>.</choice>
       <choice idref="sect275">If your total is 5-7, <link-text>turn to 275</link-text>.</choice>
       <choice idref="sect3">If your total is 8 or more, <link-text>turn to 3</link-text>.</choice>
@@ -1362,7 +1321,7 @@ RIFLE - 7.62mm - 1 - 4
        <li><typ class="item">Compass</typ></li>
        <li><typ class="item">Binoculars</typ></li>
       </ul>
-      <p>If you keep any of these items, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
+      <p>If you keep any of these items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>As soon as you are ready, you retrace your way along the defile and return to the surface.</p>
       <choice idref="sect168"><link-text>Turn to 168</link-text>.</choice>
      </data>
@@ -1374,7 +1333,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>The mighty V-8 engine growls like an angry tiger as a quart of fuel is force-fed into the cylinders. The effect is breathtaking and immediate: the roadster surges forward and you feel as if you are being sucked into your driving seat as it gathers speed rapidly.</p>
       <p>For a few vital seconds the thrill of the acceleration distracts your attention from the panel truck. By mischance the vehicle reaches the bottom of the embankment, glances off a heap of debris, and is sent spinning wildly across the freeway. Your heart leaps into your mouth the moment you see it appear directly in your way.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your current Driving skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your current Driving skill score.</p>
       <choice idref="sect273">If your total is now 4 or less, <link-text>turn to 273</link-text>.</choice>
       <choice idref="sect156">If it is 5 or more, <link-text>turn to 156</link-text>.</choice>
      </data>
@@ -1384,7 +1343,7 @@ RIFLE - 7.62mm - 1 - 4
      <meta><title>73</title></meta>
 
      <data>
-      <p>Haskell continues to question the clansman until finally he replies. A trickle of blood escapes from his lips as, with his dying breath, he says: 'Mad Dog'll make sure you never get through &ellips;'</p>
+      <p>Haskell continues to question the clansman until finally he replies. A trickle of blood escapes from his lips as, with his dying breath, he says: 'Mad Dog'll make sure you never get through <ch.ellips/>'</p>
       <choice idref="sect147"><link-text>Turn to 147</link-text>.</choice>
      </data>
     </section>
@@ -1404,7 +1363,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>A battered Chevrolet pick-up is parked with its hood raised at one of the station's four gasolene pumps. It looks far cleaner than any of the other auto wrecks that lie scattered around the town, and your suspicions are further aroused when you notice a large black pool of oil on the ground beneath the engine compartment. You stop your roadster alongside and step out to investigate it.</p>
-      <p>'Hey, this oil's still wet,' you say to Kate, as you dab your index finger in the pool. You are wiping it clean on the leg of your jeans when you hear an unexpected reply. 'Drop your weapons &ellips; or I'll drop you!'</p>
+      <p>'Hey, this oil's still wet,' you say to Kate, as you dab your index finger in the pool. You are wiping it clean on the leg of your jeans when you hear an unexpected reply. 'Drop your weapons <ch.ellips/> or I'll drop you!'</p>
       <p>It is a man's voice and it is coming from inside a derelict pay booth.</p>
       <choice idref="sect241">If you wish to obey the command, <link-text>turn to 241</link-text>.</choice>
       <choice idref="sect164">lf you decide to dive for cover, <link-text>turn to 164</link-text>.</choice>
@@ -1426,7 +1385,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>At your killing blow, your adversary drops in a limp and lifeless heap at your feet. Meanwhile, his confederate has run back to his motorcycle and armed himself with a machine pistol. You dive aside just in time to avoid his first burst of fire, and, as you scurry for cover, you retrieve the pistol that you had kicked from his dead partner's hand.</p>
       <p>With a vengeful scream, the clansman comes running at you, firing his machine pistol from the hip. Bullets tear up the ground where you lie, forcing you to stand up and meet this madman head on. Quickly you cock the pistol and take aim at his chest as he comes bounding across the rock-strewn highway, his teeth bared and his eyes blazing with hatred.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your current Shooting skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your current Shooting skill score.</p>
       <choice idref="sect151">If your total score is now 6 or less, <link-text>turn to 151</link-text>.</choice>
       <choice idref="sect138">If your total is now 7 or more, <link-text>turn to 138</link-text>.</choice>
      </data>
@@ -1447,7 +1406,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>You discover that the light is seeping into the tunnel from around the edges of a circular metal hatch in the ceiling. Carefully you press your shoulder to the heavy plate and lift it, hoping that it will lead to a way out of the stadium. However, the first thing you see as you push the cover from the hole are scores of running, booted feet.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Stealth skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth skill score.</p>
       <choice idref="sect263">If the total score is 7 or less, <link-text>turn to 263</link-text>.</choice>
       <choice idref="sect173">If the total score is 8 or more, <link-text>turn to 173</link-text>.</choice>
      </data>
@@ -1510,7 +1469,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>You force yourself to breathe slowly in an attempt to calm your racing heart. The clansman's footsteps seem unbearably loud as you wait for the right moment to launch your ambush. With sweating palms, you lift your rifle, then, as he comes to a halt, you rise up from your hiding place, aim and fire.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Shooting skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Shooting skill score.</p>
       <choice idref="sect292">If your total score is 7 or less, <link-text>turn to 292</link-text>.</choice>
       <choice idref="sect18">If your total score is 8 or more, <link-text>turn to 18</link-text>.</choice>
      </data>
@@ -1533,7 +1492,7 @@ RIFLE - 7.62mm - 1 - 4
       <p>You turn the handle and gently push open the door. You have taken but one step into the kitchen when a large glass storage jar falls from a shelf above your head and smashes down on your unprotected skull: lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <p>Wincing from the pain of your wound, you notice that the jar was attached by a thin cord to the inside handle of the door: it had been placed there deliberately. Not only have you lost some blood, but this primitive trap may have also lost you the element of surprise.</p>
       <p>With your nerves on edge, you advance through the kitchen and into the bar beyond. As you enter, you whisper Haskell's name in case, in the darkened interior, he mistakes you for a clansman.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Perception and Stealth skill scores.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Perception and Stealth skill scores.</p>
       <choice idref="sect270">If the total score is 13 or less, <link-text>turn to 270</link-text>.</choice>
       <choice idref="sect190">If the total score is 14 or more, <link-text>turn to 190</link-text>.</choice>
      </data>
@@ -1562,7 +1521,7 @@ RIFLE - 7.62mm - 1 - 4
      <meta><title>89</title></meta>
 
      <data>
-      <p>To avoid being seen by the two guards, you slip inside a doorway to your left and discover that it leads to an empty locker room. Having already removed the signal flare from your pack, you glance quickly into the corridor in order to establish where the guards are standing. Then you hold the flare out at arm's length, point it in their direction, and pull its ignition cord. (Remember to erase this item from your <a idref='action'>Action Chart</a>.)</p>
+      <p>To avoid being seen by the two guards, you slip inside a doorway to your left and discover that it leads to an empty locker room. Having already removed the signal flare from your pack, you glance quickly into the corridor in order to establish where the guards are standing. Then you hold the flare out at arm's length, point it in their direction, and pull its ignition cord. (Remember to erase this item from your <a idref="action">Action Chart</a>.)</p>
       <p>In the confines of the corridor the flare erupts with devastating effect, its crimson smoke and hissing flame blinding and choking the two clan bodyguards. You grab a towel, which is hanging behind the door, and use it to cover your mouth as you run down the smoke-filled corridor. When you reach the stairs, the clansmen are incapable of defending themselves and you silence them swiftly with a close combat weapon. You are half-way up the stairs when you see the door to the observation block start to open.</p>
       <choice idref="sect268"><link-text>Turn to 268</link-text>.</choice>
      </data>
@@ -1611,7 +1570,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>There is a loud cheer as the stadium gate opens, then the waiting bikers start up their machines and begin entering in single file. Amid all this activity you leave your hiding place and cross the wide avenue that encircles the stadium. None of the clansmen appears to notice as you walk boldly around to the east side of the arena, to a place where a large section of the wall has collapsed, leaving a heap of rubble that rises to within ten feet of the remaining wall. The coast is clear and so, with the blood pounding loudly in your ears, you clamber to the top of the heap and attempt to scale the wall.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Stealth skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth skill score.</p>
       <choice idref="sect315">If your total score is now 8 or less, <link-text>turn to 315</link-text>.</choice>
       <choice idref="sect261">If it is 9 or more, <link-text>turn to 261</link-text>.</choice>
      </data>
@@ -1633,7 +1592,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>Simultaneously you step into the corridor and raise your rifle to your shoulder. The guard to the left of the staircase sees you but has no time to shout a warning before your bullet finds its mark. He spins backwards and falls heavily at the foot of the stairs as you work another round into the breach. Then you swing the barrel towards his partner, knowing only too well that you must make your second shot count just as effectively, but by the time you have him in your sights you are shocked to find that you are staring into the muzzle of his machine pistol.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Stealth skill score and your current <typ class="attribute">ENDURANCE</typ> points score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth skill score and your current <typ class="attribute">ENDURANCE</typ> points score.</p>
       <choice idref="sect297">If your total score is 19 or less, <link-text>turn to 297</link-text>.</choice>
       <choice idref="sect197">If your total score is 20 or more, <link-text>turn to 197</link-text>.</choice>
      </data>
@@ -1809,7 +1768,7 @@ RIFLE - 7.62mm - 1 - 4
      <meta><title>111</title></meta>
 
      <data>
-      <p>The scorched bones of a coyote lie scattered around the ashes of the camp fire, the remnants of the meal that you watched the two clansmen share. Where their motorcycles were parked you discover a <typ class="item">Leather Face Mask</typ>. If you decide to keep this item, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
+      <p>The scorched bones of a coyote lie scattered around the ashes of the camp fire, the remnants of the meal that you watched the two clansmen share. Where their motorcycles were parked you discover a <typ class="item">Leather Face Mask</typ>. If you decide to keep this item, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Satisfied that nothing of importance has been missed, you return to your roadster and begin the next stage of your journey to San Angelo. Less than a mile beyond the bridge you see a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your map confirms your suspicions: you are approaching Sterling City.</p>
       <choice idref="sect100"><link-text>Turn to 100</link-text>.</choice>
      </data>
@@ -1832,7 +1791,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>Your shout is met by silence. You are about to repeat it when a burst of machine gun fire rings out and six ragged holes suddenly appear in the centre of the kitchen door.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a>.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect322">If the number you have picked is 0-1, <link-text>turn to 322</link-text>.</choice>
       <choice idref="sect256">If it is 2-5, <link-text>turn to 256</link-text>.</choice>
       <choice idref="sect23">If it is 6-9, <link-text>turn to 23</link-text>.</choice>
@@ -1857,7 +1816,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>You hold your breath and try not to move as the clansman rummages through a tool box less than four feet from where you are crouching. Unfortunately, the dust he is stirring up causes you to sneeze, betraying your presence. Suddenly, one of the gasolene drums is rolled aside and you feel two strong hands grab your jacket and drag you to your feet.</p>
       <p>'What are you up to?' growls the scar-faced Detroit Lion, his stinking breath making you pull away in disgust. 'Sabotage, is it?' he spits, accusingly.</p>
-      <p>'Nah &ellips; I ain't no saboteur,' you reply, stalling for time, as you let your hand drift slowly towards your close combat weapon. I'm an Angelino who jus' wants t'see the race. I'm supposed to be patrolling the south zone but ain't nothin' ever happens down there. Gimme a break, will ya?'</p>
+      <p>'Nah <ch.ellips/> I ain't no saboteur,' you reply, stalling for time, as you let your hand drift slowly towards your close combat weapon. I'm an Angelino who jus' wants t'see the race. I'm supposed to be patrolling the south zone but ain't nothin' ever happens down there. Gimme a break, will ya?'</p>
       <p>As your fingers close around your weapon, you see something that makes you hesitate. At the rear of the truck you glimpse a large crowd of clansmen who are queueing to enter the stadium. The sight dissuades you from attacking your accuser, and instead you decide to try offering him a bribe.</p>
       <choice idref="sect161">If you possess a <typ class="item">Bottle of Bourbon</typ>, <link-text>turn to 161</link-text>.</choice>
       <choice idref="sect207">If you do not possess this item, <link-text>turn to 207</link-text>.</choice>
@@ -1869,7 +1828,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>You press yourself against the damp stalagmites and gently flick your shotgun's safety catch to 'fire'. The clansman's footsteps seem unbearably loud as you wait for the moment to launch your ambush. As he comes to a halt, you rise up from your hiding place and open fire.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Shooting skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Shooting skill score.</p>
       <choice idref="sect292">If your total score is 3 or less, <link-text>turn to 292</link-text>.</choice>
       <choice idref="sect18">If your total score is 4 or more, <link-text>turn to 18</link-text>.</choice>
      </data>
@@ -1890,7 +1849,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>The tyres and brakes squeal like banshees as you fight to bring the roadster to a rapid halt. Moments later, the panel truck flashes past, missing the front fender by inches, and overturning on the wreckage-strewn highway. Your skill and keen reflexes have saved you from colliding with the truck, but the sight of the convoy fast disappearing along the freeway makes you feel very uncomfortable. You change into low gear and pump the gas pedal, but nothing happens. The engine has stalled. Frantically you reach for the ignition to bring the car back to life before the surviving Mavericks close in and attempt to put an end to yours.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your current Driving and Perception skill scores.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your current Driving and Perception skill scores.</p>
       <choice idref="sect43">If your total is now 13 or less, <link-text>turn to 43</link-text>.</choice>
       <choice idref="sect104">If it is 14 or more, <link-text>turn to 104</link-text>.</choice>
      </data>
@@ -1972,7 +1931,7 @@ RIFLE - 7.62mm - 1 - 4
        <li><typ class="item">Solar Torch</typ></li>
        <li><typ class="item">Engine Oil</typ></li>
       </ul>
-      <p>If you wish to keep any of these Backpack items, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
+      <p>If you wish to keep any of these Backpack items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Having satisfied yourself that nothing else of use has been overlooked, you return to your roadster and resume your journey to San Angelo.</p>
       <choice idref="sect342"><link-text>Turn to 342</link-text>.</choice>
      </data>
@@ -2006,7 +1965,7 @@ RIFLE - 7.62mm - 1 - 4
        <li>Bread Knife (2)</li>
        <li>Enough canned food for five Meals</li>
       </ul>
-      <p>If you choose to keep any of the items in either list, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
+      <p>If you choose to keep any of the items in either list, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Before leaving the kitchen, you hide the clansman's body in an empty refrigerator. Then you hurry through the fire escape door and make your way up a flight of rusty steps that lead to a service alley at the rear of the building.</p>
       <choice idref="sect269"><link-text>Turn to 269</link-text>.</choice>
      </data>
@@ -2071,7 +2030,7 @@ RIFLE - 7.62mm - 1 - 4
        <li><typ class="item">Plastic Tube</typ></li>
        <li><typ class="item">File</typ></li>
       </ul>
-      <p>Remember to make a note on your <a idref='action'>Action Chart</a> of any of the items that you decide to keep.</p>
+      <p>Remember to make a note on your <a idref="action">Action Chart</a> of any of the items that you decide to keep.</p>
       <choice idref="sect59">To continue, <link-text>turn to 59</link-text>.</choice>
      </data>
     </section>
@@ -2082,7 +2041,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>You enter an alley that runs alongside the bar, and make your way to the rear door. Through a cracked glass panel you can see the kitchens. They are empty, but remnants of food lie scattered across the tables and, judging by the amount of fresh garbage strewn on the floor, a large group of clansmen must have eaten here not so long ago.</p>
       <p>You test the handle and discover that the door is unlocked.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Perception skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Perception skill score.</p>
       <choice idref="sect86">If your total score is 8 or less, <link-text>turn to 86</link-text></choice>
       <choice idref="sect2">If your total score is 9 or more, <link-text>turn to 2</link-text>.</choice>
      </data>
@@ -2104,7 +2063,7 @@ RIFLE - 7.62mm - 1 - 4
      <meta><title>133</title></meta>
 
      <data>
-      <p>Coughing and popping, the roadster lurches to a halt in the middle of the highway. You try to restart the engine but it refuses to run smoothly for more than a few seconds at a time. You are running over all the possible faults that could have caused the breakdown when suddenly you remember the comp-aid digipad that Cutter fitted to the dashboard while you were in Big Spring. He had salvaged the unit from the wreck of a '99 Mercedes Malibu Coupe and modified it so that you could use it to run an automatic systems check on your roadster. Hurriedly you tap in your access code and immediately the unit's LCD identifies the fault : &ellips; FUEL FILTER &ellips;</p>
+      <p>Coughing and popping, the roadster lurches to a halt in the middle of the highway. You try to restart the engine but it refuses to run smoothly for more than a few seconds at a time. You are running over all the possible faults that could have caused the breakdown when suddenly you remember the comp-aid digipad that Cutter fitted to the dashboard while you were in Big Spring. He had salvaged the unit from the wreck of a '99 Mercedes Malibu Coupe and modified it so that you could use it to run an automatic systems check on your roadster. Hurriedly you tap in your access code and immediately the unit's LCD identifies the fault : <ch.ellips/> FUEL FILTER <ch.ellips/></p>
       <p>It takes you an hour to dismantle, clean and replace the fuel filter, during which time you must take 2 Drinks or lose 6 <typ class="attribute">ENDURANCE</typ> points due to dehydration.</p>
       <p>The fault rectified, the engine starts sweetly the first time you touch the ignition. You accelerate away but within a few minutes you see something in the distance that makes you slow to a snail's pace.</p>
       <p>It is a girder bridge that carries the highway across the North Concho River. The bridge is intact and passable, but you are worried by the sight of a lazy plume of woodsmoke rising from a spot near its approach ramp.</p>
@@ -2184,7 +2143,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>You are half-way through the door when your foot becomes caught among the burning shelves and you are sent sprawling to the ground. Quickly you recover and press on with your escape, but as a result of your fall, you sustain painful first-degree burns to your hands (lose 3 <typ class="attribute">ENDURANCE</typ> points) and lose one item from your Backpack (erase one item of your choice).</p>
-      <choice idref="sect110">Make the necessary amendments to your <a idref='action'>Action Chart</a>, and then <link-text>turn to 110</link-text>.</choice>
+      <choice idref="sect110">Make the necessary amendments to your <a idref="action">Action Chart</a>, and then <link-text>turn to 110</link-text>.</choice>
      </data>
     </section>
 
@@ -2363,7 +2322,7 @@ RIFLE - 7.62mm - 1 - 4
       <p>For a moment you are blinded by a deluge of stones and stinking water as you drive through the aftermath of the explosion. Then, as you catch sight of the opposite bank, there is another blast and you feel your steering wheel pulling sharply to the left.</p>
       <p>'We've lost a tyre,' you shout, as you battle to get the car on to dry land. You succeed in reaching the far bank and skid sideways to a halt. You both leap out quickly and take cover behind the engine compartment. The clansmen seem to have exhausted their supply of grenades, but they are all armed with machine pistols and they proceed to empty them in your direction.</p>
       <p>Kate draws her pistol and prepares to give covering fire while you inspect the damage. The front left tyre has been shredded by shrapnel and is beyond repair. You will have to replace it with the spare tyre you carry in the trunk. However, in order to retrieve it, you will have to expose yourself to bursts of machine pistol fire.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Stealth skill score. Now add the combined figure to your current <typ class="attribute">ENDURANCE</typ> points score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth skill score. Now add the combined figure to your current <typ class="attribute">ENDURANCE</typ> points score.</p>
       <choice idref="sect144">If the resulting total score is 28 or less, <link-text>turn to 144</link-text>.</choice>
       <choice idref="sect194">If the total score is 29 or more, <link-text>turn to 194</link-text>.</choice>
      </data>
@@ -2426,7 +2385,7 @@ RIFLE - 7.62mm - 1 - 4
        <instance class="html" src="ill8.gif" width="386" height="541" />
        <instance class="pdf" src="ill8.pdf" width="386" height="541" />
       </illustration>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Stealth skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth skill score.</p>
       <choice idref="sect186">If your total score is 7 or less, <link-text>turn to 186</link-text>.</choice>
       <choice idref="sect282">If it is 8 or more, <link-text>turn to 282</link-text>.</choice>
      </data>
@@ -2483,7 +2442,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>'Get down Kate!' you shout, as you dive to the ground and roll for cover behind the abandoned pick-up. But before you make it, two shots ring out almost simultaneously, one from a rifle and the other from a pistol.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Stealth skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth skill score.</p>
       <choice idref="sect278">If the total is 6 or less, <link-text>turn to 278</link-text>.</choice>
       <choice idref="sect16">If the total is 7 or more, <link-text>turn to 16</link-text>.</choice>
      </data>
@@ -2494,7 +2453,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>You gun your roadster towards the battered wooden gates of the site and smash your way through them. The ground beyond is covered with loose stones and, to your horror, you feel the nose of your car sliding away to the right. The steel skeleton of an office block looms before you as you fight to correct your front wheel skid.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Driving skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Driving skill score.</p>
       <choice idref="sect195">If your total is 8 or less, <link-text>turn to 195</link-text>.</choice>
       <choice idref="sect309">If your total is 9 or more, <link-text>turn to 309</link-text>.</choice>
      </data>
@@ -2637,13 +2596,13 @@ RIFLE - 7.62mm - 1 - 4
       <illustration class="float">
        <meta>
         <creator>Brian Williams</creator>
-        <description>A biker is closing fast.  A pair of belt-fed machine guns are mounted atop the headlamp of his motorcycle</description>
+        <description>A biker is closing fast. A pair of belt-fed machine guns are mounted atop the headlamp of his motorcycle</description>
        </meta>
        <instance class="html" src="ill9.gif" width="386" height="626" />
        <instance class="pdf" src="ill9.pdf" width="386" height="626" />
       </illustration>
       <p>So concerted is the fire that you are both forced to cower in your armour-backed seats to avoid being hit. Then another sign appears on the road ahead, pointing to a winding dirt track that leads away to the left. It reads:</p>
-      <p>TO THE CAVERNS OF SONORA</p>
+      <p><signpost>TO THE CAVERNS OF SONORA</signpost></p>
       <p>You are desperate to avoid the machine-gunning biker and so decide to take the track. At least its winding course will give him less opportunity to riddle the trunk with bullets.</p>
       <choice idref="sect24"><link-text>Turn to 24</link-text>.</choice>
      </data>
@@ -2665,7 +2624,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>'At this rate we'll reach Interstate 10 in an hour,' you say, but Kate does not reply: exhaustion has got the better of her and she has drifted off into a deep sleep. Without her conversation to stimulate you, fatigue eats away at your concentration and gradually you lose interest in the road ahead. You fall asleep at the wheel and reawaken only when the roadster veers off the highway and crashes into a rocky spur.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a>.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect234">If the number you have picked is 0-7, <link-text>turn to 234</link-text>.</choice>
       <choice idref="sect298">If it is 8-9, <link-text>turn to 298</link-text>.</choice>
      </data>
@@ -2676,7 +2635,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>You step sideways into the corridor with your shotgun held at waist level. The guard to the left of the staircase sees you and tries to shout a warning but his words are lost in the boom of your gunfire. The force of the shot flings him against the wall, and as you swing the barrel towards his partner, you know only too well that you must make your second shot count just as effectively. But his partner's reactions prove razor-sharp, and as you focus on him you are shocked to find yourself staring into the muzzle of his machine pistol.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Stealth skill score and your current <typ class="attribute">ENDURANCE</typ> points score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth skill score and your current <typ class="attribute">ENDURANCE</typ> points score.</p>
       <choice idref="sect297">If your total score is 15 or less, <link-text>turn to 297</link-text>.</choice>
       <choice idref="sect197">If your total score is 16 or more, <link-text>turn to 197</link-text>.</choice>
      </data>
@@ -2703,7 +2662,7 @@ RIFLE - 7.62mm - 1 - 4
        <li><typ class="item">Tow Chain</typ> (ten-feet length)</li>
        <li>Hammer (2)</li>
       </ul>
-      <p>If you decide to keep any of these items, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
+      <p>If you decide to keep any of these items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <choice idref="sect59">To continue, <link-text>turn to 59</link-text>.</choice>
      </data>
     </section>
@@ -2770,7 +2729,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>The rotten timbers are easily torn away from the front door and in minutes you have gained access to the building. In the middle of the lobby you discover a stainless steel replica of an oil derrick, standing twelve feet high, on which there is an inscription that reveals the former owners of the block:</p>
-      <p>THE LONE STAR OIL &amp; GAS COMPANY</p>
+      <p><signpost>THE LONE STAR OIL <ch.amp/> GAS COMPANY</signpost></p>
       <p>In order to emerge somewhere inside the perimeter wall, you must discover an exit on the north side of this building, so you set off immediately in that direction. Beyond the lobby area you can see a row of elevator doors, and two corridors disappearing to the left and right.</p>
       <choice idref="sect215">If you wish to explore the right-hand corridor, <link-text>turn to 215</link-text>.</choice>
       <choice idref="sect7">If you wish to search the left-hand corridor, <link-text>turn to 7</link-text>.</choice>
@@ -2916,7 +2875,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>Before the spider is brushed aside, it bites into your skin and injects its toxin. Almost immediately you are gripped by a terrible pain that courses up your arm and radiates across your chest. Frantically Kate searches through your Medi-kit for an anti-toxin, as the effects of the Fiddleback's bite drag you to your knees in agony.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it the number of Medi-kit units that you possess currently.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it the number of Medi-kit units that you possess currently.</p>
       <choice idref="sect155">If your total score is now 10 or less, <link-text>turn to 155</link-text>.</choice>
       <choice idref="sect44">If it is 11 or more, <link-text>turn to 44</link-text>.</choice>
      </data>
@@ -2926,7 +2885,7 @@ RIFLE - 7.62mm - 1 - 4
      <meta><title>203</title></meta>
 
      <data>
-      <p>You have fallen into the shaft of a private elevator that was once used to service the executive penthouse suites of the Lone Star Oil &amp; Gas Company. The elevator itself is located on the sub-basement level, three floors below where you have fallen in, and it is upon its roof that you finally crash to your doom.</p>
+      <p>You have fallen into the shaft of a private elevator that was once used to service the executive penthouse suites of the Lone Star Oil <ch.amp/> Gas Company. The elevator itself is located on the sub-basement level, three floors below where you have fallen in, and it is upon its roof that you finally crash to your doom.</p>
       <p>Tragically, your mission and your life end here in San Angelo.</p>
      </data>
     </section>
@@ -2944,7 +2903,7 @@ RIFLE - 7.62mm - 1 - 4
        <li><typ class="item">Scissors</typ></li>
        <li><typ class="item">Gold Wristwatch</typ></li>
       </ul>
-      <p>If you choose to keep any of these items, remember to amend your <a idref='action'>Action Chart</a> accordingly.</p>
+      <p>If you choose to keep any of these items, remember to amend your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Dusk is beginning to give way to darkness and you are anxious to return to the roadster before the evening light fades completely. Having satisfied yourself that you have overlooked nothing of value, you leave the block and return to your car.</p>
       <choice idref="sect216"><link-text>Turn to 216</link-text>.</choice>
      </data>
@@ -2955,7 +2914,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>Beyond Sterling City the freeway follows a wide, dust-filled gully that was once the North Concho River. You are staring at this dead watercourse, trying to imagine what the river must have looked like before 'the Day', when a road sign flashes past. You stop the car and turn back to read it. It says:</p>
-      <p>BROOME - 2 MILES</p>
+      <p><signpost>BROOME - 2 MILES</signpost></p>
       <choice idref="sect220">If you possess a <typ class="item">CB Radio</typ>, <link-text>turn to 220</link-text>.</choice>
       <choice idref="sect46">If you do not possess this item, <link-text>turn to 46</link-text>.</choice>
      </data>
@@ -2980,7 +2939,7 @@ RIFLE - 7.62mm - 1 - 4
       <p>'What exactly you offerin' in return for a free ride and a ringside seat, eh?' replies the clansman.</p>
       <p>Slowly you unshoulder your Backpack and flip open the buckles. 'Choose,' you say, inviting him to look at the items you are carrying. Roughly he pulls the pack from your hands and tips the contents on to the floor of the truck.</p>
       <p>'I'll take these two,' he says. 'You can keep the rest o' the junk.'</p>
-      <p>Erase from your <a idref='action'>Action Chart</a> those items which you have noted in the second and third sections of your Backpack items list. These are the items chosen by the clansman in return for free passage into the stadium. If you possess less than two Backpack items, you must erase either two Medi-kit units or one close combat weapon instead.</p>
+      <p>Erase from your <a idref="action">Action Chart</a> those items which you have noted in the second and third sections of your Backpack items list. These are the items chosen by the clansman in return for free passage into the stadium. If you possess less than two Backpack items, you must erase either two Medi-kit units or one close combat weapon instead.</p>
       <p>With a smile on his face, the clansman pockets your bribe and returns to the cab. He restarts the truck but shortly it stops once again. He has drawn up alongside three other trucks in a section of the stadium that has been turned into a pits area. You leave the truck and slip away through the crowds of clan mechanics and riders towards an empty section of the enclosure.</p>
       <p>From a position high among the tiers, you look down at the rows of empty seats that encircle the dusty arena and observe the preparations taking place around the perimeter track. This stadium once hosted international sporting events, many of which were televised and beamed live around the world. Now it plays host to a sporting event of a very different kind. The Angelinos have challenged the Lions to put forward four of their best riders for a twenty-lap motorcycle race around the arena. The track itself reminds you of an old film that you saw when you were a child, a film about the wild chariot races that took place in Ancient Rome. Today's event is meant to be a friendly challenge to celebrate the signing of their alliance, but with clan honour at stake the race will undoubtedly be fought out in deadly earnest.</p>
       <p>Facing you, on the far side of the stadium, is the glass-fronted observation block that was once used by television and radio commentators. Your curiosity is aroused by it when you notice that the door to the block is heavily guarded. Fixedly you stare at its full-length windows and count five occupants: four clansmen and one blonde-haired girl. You cannot see her face clearly, but you know that she is Kate Norton.</p>
@@ -3004,7 +2963,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>Frantically you spin the wheel to the left and brace yourself as the roadster slews sideways across the wreckage-strewn highway. Before it comes to a halt, there is a sudden and violent jolt that sets the car spinning like a top in the opposite direction. The panel truck has clipped the rear fender and the force of the impact leaves you dazed and gasping for breath: lose 2 <typ class="attribute">ENDURANCE</typ> points.</p>
       <p>The sight of the convoy fast disappearing along the freeway is all that is needed to bring you rapidly to your senses. You turn the wheel and pump the gas pedal, but the engine has stalled and the car does not respond. Instantly, you reach for the ignition to bring the car back to life before the Mavericks close in and put an end to yours.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your current Driving and Perception skill scores.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your current Driving and Perception skill scores.</p>
       <choice idref="sect43">If your total is now 13 or less, <link-text>turn to 43</link-text>.</choice>
       <choice idref="sect104">If it is 14 or more, <link-text>turn to 104</link-text>.</choice>
      </data>
@@ -3065,7 +3024,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>The clansman's footsteps seem unbearably loud as you wait for the moment to launch your ambush. You check that your G-12 is 'safety off' and set to burst fire then, as the footsteps halt, you rise up from your hiding place and open fire.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Shooting skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Shooting skill score.</p>
       <choice idref="sect292">If your total score is 4 or less, <link-text>turn to 292</link-text>.</choice>
       <choice idref="sect18">If your total score is 5 or more, <link-text>turn to 18</link-text>.</choice>
      </data>
@@ -3100,7 +3059,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>You reach down into the passenger foot-well and retrieve your rifle. Fortunately you know that the weapon is loaded and all you have to do is thumb back the safety catch to make it ready to fire. The moment the clansman sees you rest the barrel on the door, he veers across to the left lane of the highway as quickly as he can. You smile as you realize the purpose of this manoeuvre: he is trying to increase his chances of survival by making it as difficult as he can for you to shoot at him with your right hand.</p>
       <p>Keeping the roadster in a straight line, and the sheer force of the rushing wind whipping around the end of the rifle's barrel, make it impossible for you to take aim. You try to get as near to your enemy as you can before squeezing the trigger, but just as you are about to fire, you hit a pot-hole and lose your grip.</p>
-      <p>Add your Stealth skill score to your current <typ class="attribute">ENDURANCE</typ> score. Now pick a number from the <a idref='random'>Random Number Table</a> and add it to your total.</p>
+      <p>Add your Stealth skill score to your current <typ class="attribute">ENDURANCE</typ> score. Now pick a number from the <a idref="random">Random Number Table</a> and add it to your total.</p>
       <choice idref="sect251">If your total score is 32 or less, <link-text>turn to 251</link-text>.</choice>
       <choice idref="sect307">If your total score is 33 or more, <link-text>turn to 307</link-text>.</choice>
      </data>
@@ -3126,7 +3085,7 @@ RIFLE - 7.62mm - 1 - 4
       <p>The time Sergeant Haskell used to observe the barricade was well spent. He noticed that the Mexican clansmen have positioned an anti-tank weapon behind it, which doubtless they will bring into action if it is needed. Littered around it are several dozen boxes of shells. If one of those boxes were to explode, it would set off the others and destroy most of the central section of the barricade. Haskell has an incendiary grenade which would do the job, but in order to make sure that it landed in the correct place - in one of the boxes of ammunition - one of you would have to go to the barricade and place it there. Neither of you are keen to volunteer for this mission, so you decide to settle it on the toss of a coin. Sergeant Haskell calls and, unfortunately, you lose.</p>
       <p>Haskell gives you the incendiary grenade and you hand him your signal flare. Then, when the number of Mexican clansmen on guard are at their fewest, you leave the cover of the yucca forest and creep towards the barricade.</p>
       <p>Ten yards from the wall of cars you see an opportunity to throw your grenade into an open ammunition chest.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Stealth skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth skill score.</p>
       <choice idref="sect198">If your total score is 5 or less, <link-text>turn to 198</link-text>.</choice>
       <choice idref="sect272">If your total score is 6-7, <link-text>turn to 272</link-text>.</choice>
       <choice idref="sect244">If your total score is 8 or more, <link-text>turn to 244</link-text>.</choice>
@@ -3138,9 +3097,9 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>It occurs to you that the colony may still be close enough for radio contact. As it may be the last chance you will get to speak to them before your rendezvous at Kent one week from now, you decide to give it a try. You invert the handset of your CB and key in the frequency that Pop Ewell monitors aboard the school bus. But, for some unknown reason, the frequency is saturated with static and you are unable to transmit. You search for a clear channel and, by chance, you lock on to part of a two-way conversation:</p>
-      <p>'OK Gold&ellips; Sit tight and quit y'bellyaching&ellips; I'm sending some o' my men back to cover it. You just put a tail on 'em &ellips; keep 'em in sight. We'll let 'em run a while and then hit 'em when they reach the mountains. D'you copy&ellips; over?'</p>
+      <p>'OK Gold<ch.ellips/> Sit tight and quit y'bellyaching<ch.ellips/> I'm sending some o' my men back to cover it. You just put a tail on 'em <ch.ellips/> keep 'em in sight. We'll let 'em run a while and then hit 'em when they reach the mountains. D'you copy<ch.ellips/> over?'</p>
       <p>There is a loud burst of static, then a voice replies:</p>
-      <p>'I copy &ellips; Gold out.'</p>
+      <p>'I copy <ch.ellips/> Gold out.'</p>
       <p>The channel falls silent and you are left staring at the handset, trying to make some sense of what you have just overheard. Then you hear quite a different sound, a sound that sends a shiver of fear coursing down your spine.</p>
       <choice idref="sect276"><link-text>Turn to 276</link-text>.</choice>
      </data>
@@ -3150,7 +3109,7 @@ RIFLE - 7.62mm - 1 - 4
      <meta><title>221</title></meta>
 
      <data>
-      <p>You draw the thin saw-cord through the closed hasp of the padlock and work it back and forth. You have made barely a dozen strokes when the metal saw-cord snaps with a loud ping (erase this item from your <a idref='action'>Action Chart</a>).</p>
+      <p>You draw the thin saw-cord through the closed hasp of the padlock and work it back and forth. You have made barely a dozen strokes when the metal saw-cord snaps with a loud ping (erase this item from your <a idref="action">Action Chart</a>).</p>
       <choice idref="sect236">If you possess an <typ class="item">HE Grenade</typ> and wish to use it to blow open the door, <link-text>turn to 236</link-text>.</choice>
       <choice idref="sect188">If you wish to abandon your attempt to gain entry to the building, <link-text>turn to 188</link-text>.</choice>
      </data>
@@ -3192,7 +3151,7 @@ RIFLE - 7.62mm - 1 - 4
        <instance class="pdf" src="ill12.pdf" width="386" height="594" />
       </illustration>
       <p>You know that you must act immediately if you are to prevent them from getting away, so you point your vehicle directly at their position and stamp your foot down on the accelerator. Fifty yards from the bridge, with the hot wind screaming past your face, the armed clansman drops to one knee and takes aim at your windshield.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Driving and Perception skill scores.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Driving and Perception skill scores.</p>
       <choice idref="sect97">If your total score is 13 or less, <link-text>turn to 97</link-text>.</choice>
       <choice idref="sect32">If your total score is 14 or more, <link-text>turn to 32</link-text>.</choice>
      </data>
@@ -3225,7 +3184,7 @@ RIFLE - 7.62mm - 1 - 4
       <p>Slowly you take off your pack and flip open the buckles. 'What do you want?' you say, inviting them to look at the items you are carrying. Roughly, the clansman pulls the pack from your hands and tips the contents on to the ground.</p>
       <p>'I'll take these two,' he says.</p>
       <p>'And I'll have these,' says his partner. 'You can keep the rest o' the junk.'</p>
-      <p>Erase from your <a idref='action'>Action Chart</a> those items which you have noted in the first four sections of your Backpack items list. These are the items chosen by the two clansmen in return for their help in getting you into the stadium. If you possess less than four Backpack items, you must make up the difference by erasing Medi-kit units instead.</p>
+      <p>Erase from your <a idref="action">Action Chart</a> those items which you have noted in the first four sections of your Backpack items list. These are the items chosen by the two clansmen in return for their help in getting you into the stadium. If you possess less than four Backpack items, you must make up the difference by erasing Medi-kit units instead.</p>
       <p>With broad smiles on their faces the two clansmen pocket your bribe. 'You jus' bought yourself a grandstand seat, fella,' says the taller of the two as, once again, you climb the pile of rubble. This time you are accompanied by the two clansmen who help you over the wall and then return to the avenue, chuckling and congratulating each other on their good fortune.</p>
       <choice idref="sect15"><link-text>Turn to 15</link-text>.</choice>
      </data>
@@ -3236,7 +3195,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>Silently you draw a close combat weapon and steady yourself for the assault. Like a tiger you leap through the open door and scan the darkened room. A figure is crouched at the window, and, as he turns, you run forward, raising your hand to strike.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Stealth skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth skill score.</p>
       <choice idref="sect170">If your total is 5 or less, <link-text>turn to 170</link-text>.</choice>
       <choice idref="sect286">If your total is 6 or more, <link-text>turn to 286</link-text>.</choice>
      </data>
@@ -3247,7 +3206,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>You flick open your pouch and give Kate your last few remaining bullets before you start to change the damaged front wheel. Quickly she reloads her pistol as the clan scout leader, believing that you are both out of ammunition, comes riding across the river, howling curses and whirling a heavy motorcycle chain in his left hand. The moment her gun is ready, she takes aim and fires at the foul-mouthed Angelino.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a>.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect265">If the number you have picked is 0-4, <link-text>turn to 265</link-text>.</choice>
       <choice idref="sect122">If the number is 5-9, <link-text>turn to 122</link-text>.</choice>
      </data>
@@ -3267,7 +3226,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>While you do your best to staunch the bleeding, Haskell continues to question the Maverick. Finally, on the brink of death, the clansman changes his mind and begins to speak. He says that he is a Maverick outrider, a scout, one of a large group sent here to ambush the Big Spring colony. While drunk, he fell off his bike and broke his leg. Unable to ride, his fellow scouts left him here with the promise that he would be collected when they returned. His group are fighting a Mexican clan near Sierra Blanca. He says that the Mexicans are trying to steal their supplies.</p>
-      <p>Haskell asks him about Mad Dog Michigan, but he refuses to answer. A trickle of blood escapes from his lips and, with his dying breath, he says: 'Mad Dog'll make sure you never get through &ellips;'</p>
+      <p>Haskell asks him about Mad Dog Michigan, but he refuses to answer. A trickle of blood escapes from his lips and, with his dying breath, he says: 'Mad Dog'll make sure you never get through <ch.ellips/>'</p>
       <choice idref="sect147"><link-text>Turn to 147</link-text>.</choice>
      </data>
     </section>
@@ -3284,7 +3243,7 @@ RIFLE - 7.62mm - 1 - 4
        <li><typ class="item">Foil Blanket</typ></li>
        <li><typ class="item">Fire Extinguisher</typ></li>
       </ul>
-      <p>If you decide to keep any of these items, remember to make the appropriate adjustments to your <a idref='action'>Action Chart</a>.</p>
+      <p>If you decide to keep any of these items, remember to make the appropriate adjustments to your <a idref="action">Action Chart</a>.</p>
       <choice idref="sect148">To leave the fire station, <link-text>turn to 148</link-text>.</choice>
      </data>
     </section>
@@ -3326,7 +3285,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>You take the grenade from your Backpack and tie it to the padlock with strips of cloth torn from an oily rag that you find on the ground nearby. Then you set the timer for ten seconds, pull the pin and take cover inside the gas station.</p>
       <p>Precisely ten seconds later, the grenade explodes with a deafening bang.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a>.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect67">If the number you have picked is 0-5, <link-text>turn to 67</link-text>.</choice>
       <choice idref="sect331">If it is 6-9, <link-text>turn to 331</link-text>.</choice>
      </data>
@@ -3345,7 +3304,7 @@ RIFLE - 7.62mm - 1 - 4
        <li>Three rounds of 12-gauge ammunition</li>
        <li><typ class="item">Bolt Cutters</typ></li>
       </ul>
-      <p>If you keep any of these items, be sure to amend your <a idref='action'>Action Chart</a> accordingly.</p>
+      <p>If you keep any of these items, be sure to amend your <a idref="action">Action Chart</a> accordingly.</p>
       <p>As soon as you have hidden his body beneath a heap of blankets, you gather up your equipment and leave the workshop before his disappearance is noticed.</p>
       <choice idref="sect66"><link-text>Turn to 66</link-text>.</choice>
      </data>
@@ -3457,7 +3416,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>While he was firing, unbeknown to you, the clansman moved forward and he is now lying flat on his stomach behind the rear wheel of his motorcycle. So when you return fire it is aimed at the wrong place and it rattles harmlessly off the iron bridge support where you first saw him take cover. Before you realize your error, he opens up once again and sweeps the gully with a long burst of automatic fire. Pain lances your forearm and shoulder as you stop two of his twenty high-velocity bullets.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> (in this instance 0 equals 10) and add 1 point. The total is equivalent to the number of <typ class="attribute">ENDURANCE</typ> points you must lose as a result of your wounds.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> (in this instance 0 equals 10) and add 1 point. The total is equivalent to the number of <typ class="attribute">ENDURANCE</typ> points you must lose as a result of your wounds.</p>
       <choice idref="sect332">If you have survived the shooting, <link-text>turn to 332</link-text>.</choice>
      </data>
     </section>
@@ -3490,7 +3449,7 @@ RIFLE - 7.62mm - 1 - 4
        <li>Bread Knife (2)</li>
        <li>Enough canned food for five Meals</li>
       </ul>
-      <p>If you choose to keep any of the items in either list, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
+      <p>If you choose to keep any of the items in either list, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Before leaving the kitchen, you hide the clansman's body in an empty refrigerator. Then you hurry through the fire escape door and make your way up a flight of rusty steps that leads to a service alley at the rear of the building.</p>
       <choice idref="sect269"><link-text>Turn to 269</link-text>.</choice>
      </data>
@@ -3564,7 +3523,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>You pull the wheel hard over to the right and power your roadster towards the used car lot. A wrecked auto lies overturned with its trunk partially blocking the entrance, and, as you drive through the gap, you clip its rear fender. Immediately, the wreck flips around and slams into the side of your car, sending you skidding towards the steel doors of a service bay.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Driving skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Driving skill score.</p>
       <choice idref="sect81">If your total is 8 or less, <link-text>turn to 81</link-text>.</choice>
       <choice idref="sect243">If your total is 9 or more, <link-text>turn to 243</link-text>.</choice>
      </data>
@@ -3788,7 +3747,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>You hurl the grenade and it lands neatly in the centre of the ammunition chest. Unfortunately, as you are running from the barricade, a clansman catches sight of you and opens fire with his machine pistol.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> (in this instance 0 equals 10). The number you have picked is equal to the number of <typ class="attribute">ENDURANCE</typ> points that you lose as a result of being caught in the machine gun fire.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> (in this instance 0 equals 10). The number you have picked is equal to the number of <typ class="attribute">ENDURANCE</typ> points that you lose as a result of being caught in the machine gun fire.</p>
       <choice idref="sect350">If you survive your wounds, <link-text>turn to 350</link-text>.</choice>
      </data>
     </section>
@@ -3829,7 +3788,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>The unmistakable roar of motorcycle engines is coming from the direction of Broome, and, as you focus on that distant town, you see a tell-tale cloud of dust rising above its ruins. You know that it can only be a large pack of clansmen and that you must find somewhere to hide yourself and your roadster before they show up.</p>
       <p>The dried-out bed of the North Concho River offers the only feasible place to take cover from the approaching bikers. Quickly you pull off the freeway and search for a place to enter the river bed as the first of the bikers comes riding out of the town.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and to it your perception skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and to it your perception skill score.</p>
       <choice idref="sect74">If your total score is 4 or less, <link-text>turn to 74</link-text>.</choice>
       <choice idref="sect329">If it is 5 or more, <link-text>turn to 329</link-text>.</choice>
      </data>
@@ -3968,7 +3927,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>You retrace your steps all the way back to the front lobby, continue across it, and enter the other corridor. This services a number of offices and conference rooms before it ends at a wide staircase leading downwards. You descend three floors and discover the remains of a large private restaurant which, along with its kitchen, occupies most of the sub-basement level. A small 'fire exit' sign hangs over the double doors leading to the kitchen and you head straight for it.</p>
       <p>As you are crossing the restaurant floor, your rumbling stomach reminds you that you have yet to eat anything today. Then the thought occurs to you that there may still be some canned food in the kitchen, and you resolve to search it before you leave the building.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Perception skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Perception skill score.</p>
       <choice idref="sect159">If your total score is now 11 or less, <link-text>turn to 159</link-text>.</choice>
       <choice idref="sect233">If it is 12 or more, <link-text>turn to 233</link-text>.</choice>
      </data>
@@ -3980,7 +3939,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>On every side, a desolate plain of arid, lifeless earth stretches to the horizon. The highway meanders across this wasteland, following the gentle curve of a dry watercourse that the ranchers and oilmen of this county once knew as Lacy Creek.</p>
       <p>You have been driving for half an hour when you see a signpost, its blistered metal plate announcing your approach to the Sterling county line. As you cross this boundary, your engine begins to splutter and backfire.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a>.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect133">If the number you have picked is 0-4, <link-text>turn to 133</link-text>.</choice>
       <choice idref="sect344">If it is 5-9, <link-text>turn to 344</link-text>.</choice>
      </data>
@@ -4083,7 +4042,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>You wait until the stadium gate opens and the crowd of clansmen starts to enter before you make your move. Purposefully, you stride across the wide avenue that surrounds the stadium, trying not to look directly at any of the bikers or attract their attention. One of the trucks in particular has caught your eye and you head straight for it. It is towing a trailer that contains two powerful-looking motorcycles, and you are convinced that they are to be used in the races. If any of the trucks are to enter the stadium then this one surely will.</p>
       <p>There is nobody in the truck and its rear door is unlocked, so quickly you climb aboard and find yourself a hiding place behind two large drums of gasolene. After a few minutes, you hear someobody climb into the cab and start the engine. Then the truck moves away and you sense by its direction that it is approaching the stadium gate. You see the shadow of the arch fall across the trailer and then suddenly the vehicle halts. Your heart pounds in your chest as you hear the rear doors creak open and sense someone clambering aboard.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Stealth skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth skill score.</p>
       <choice idref="sect115">If your total score is now 6 or less, <link-text>turn to 115</link-text>.</choice>
       <choice idref="sect68">If your total score is 7 or more, <link-text>turn to 68</link-text>.</choice>
      </data>
@@ -4136,7 +4095,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>You complete your detour of Sterling city without incident and rejoin Freeway 87 a few miles south of the town. The hour you spent driving across the dusty plain has made you very thirsty, and you must now take a Drink or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <p>The freeway follows a wide, rock-strewn gully that was once the North Concho River. You are staring at this dead watercourse, trying to imagine what the river must have looked like before 'the Day', when a road sign flashes past. You stop the car and turn back to read it. It says:</p>
-      <p>BROOME - 2 MILES</p>
+      <p><signpost>BROOME - 2 MILES</signpost></p>
       <choice idref="sect220">If you possess a <typ class="item">CB Radio</typ>, <link-text>turn to 220</link-text>.</choice>
       <choice idref="sect46">If you do not possess this item, <link-text>turn to 46</link-text>.</choice>
      </data>
@@ -4171,7 +4130,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>Beneath a road bridge, a line of Angelinos is strung out across the freeway, each one sitting astride his bike with a rifle or a machine pistol resting across the handlebars. They are the clansmen whom you saw last night. Having realized that they must have passed you in the dark, they are waiting patiently for you to show up.</p>
       <p>To your right you see an exit ramp that ascends to the bridge itself and, as the clansmen open fire, you steer your car towards it to avoid the withering hail of bullets.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a>, and add to it your Driving and Perception skill scores.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a>, and add to it your Driving and Perception skill scores.</p>
       <choice idref="sect54">If your total score is now 9 or less, <link-text>turn to 54</link-text>.</choice>
       <choice idref="sect178">If your total score is 10 or more, <link-text>turn to 178</link-text>.</choice>
      </data>
@@ -4182,7 +4141,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>Violently the roadster swerves left and right, and you almost lose your rifle as you fight to regain control. As soon as you have the car back on a straight line, you bring the barrel to bear on your enemy and squeeze the trigger.</p>
-      <p>Add together your Driving and Shooting skill scores. Now pick a number from the <a idref='random'>Random Number Table</a> and add it to your total.</p>
+      <p>Add together your Driving and Shooting skill scores. Now pick a number from the <a idref="random">Random Number Table</a> and add it to your total.</p>
       <choice idref="sect318">If your total score is 12 or less, <link-text>turn to 318</link-text>.</choice>
       <choice idref="sect19">If your total score is 13 or more, <link-text>turn to 19</link-text>.</choice>
      </data>
@@ -4232,7 +4191,7 @@ RIFLE - 7.62mm - 1 - 4
        <instance class="html" src="ill18.gif" width="386" height="619" />
        <instance class="pdf" src="ill18.pdf" width="386" height="619" />
       </illustration>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Driving skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Driving skill score.</p>
       <choice idref="sect140">If your total is 8 or less, <link-text>turn to 140</link-text>.</choice>
       <choice idref="sect28">If it is 9-12, <link-text>turn to 28</link-text>.</choice>
       <choice idref="sect87">If it is 13 or more, <link-text>turn to 87</link-text>.</choice>
@@ -4245,7 +4204,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>At once you recognize the brown, thin-legged arachnid by the dark, violin-shaped marking on the back of its head. It is Loxoscees reclusa - a poisonous Fiddleback spider.</p>
       <p>Nervously you watch the spider while Kate salvages a scrap of stiff board from the rubbish-strewn floor. She tells you to keep absolutely still, for she intends to try to knock it off your arm with one quick flick of the card.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a>.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect202">If the number you have picked is 0-2, <link-text>turn to 202</link-text>.</choice>
       <choice idref="sect280">If it is 3-9, <link-text>turn to 280</link-text>.</choice>
      </data>
@@ -4271,7 +4230,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>In order to prise the dead dog from your arm, you are forced to stand up in your driving seat. Meanwhile, the pack handlers have gathered together the rest of their surviving coyote and now intend to set them on you. They yell an order, and the mountain dogs bound forward, snapping and howling. Kate replies by drawing her pistol and firing, bringing down three of the leading dogs in as many shots. She buys you the few precious seconds you need to free yourself from the dead coyote, but before you can lower yourself behind the wheel, the handlers return fire and you feel something thump you in the back. You feel no pain and, almost fearing to acknowledge that you have been hit at all, you reach for the ignition and bring the roadster back to life, Then, with a cloud of dust and burnt rubber, you say farewell to the coyote and take off along the main street towards the Christoval bridge.</p>
       <p>Kate heard the impact made by the bullet and, fearing the worst, she leans over to take a look at your back. You hear her breathe a sigh of relief as she discovers that the bullet has lodged itself in the bottom of your water canteen.</p>
-      <p>Erase from your <a idref='action'>Action Chart</a> any water that you may have been carrying in your canteen. You need not erase the canteen itself as it can be repaired and is still serviceable.</p>
+      <p>Erase from your <a idref="action">Action Chart</a> any water that you may have been carrying in your canteen. You need not erase the canteen itself as it can be repaired and is still serviceable.</p>
       <choice idref="sect324"><link-text>Turn to 324</link-text>.</choice>
      </data>
     </section>
@@ -4307,7 +4266,7 @@ RIFLE - 7.62mm - 1 - 4
      <data>
       <p>The heat and flames force you back from the entrance, and as you reach the centre of the hall, you look around desperately for another way out but every exit is now ablaze.</p>
       <p>Using a heavy rug from the floor, you cover Kate's head and tell her to make a dash for the main door. Bravely she obeys your command without hesitation, and she succeeds in escaping through the tunnel of flame and out into the street beyond. Heartened by her success, you raise your jacket over your head, take a deep breath and sprint after her.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Stealth skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth skill score.</p>
       <choice idref="sect139">If your total score is 7 or less, <link-text>turn to 139</link-text>.</choice>
       <choice idref="sect34">If your total score is 8 or more, <link-text>turn to 34</link-text>.</choice>
      </data>
@@ -4321,7 +4280,7 @@ RIFLE - 7.62mm - 1 - 4
       <p>Kate too senses the danger, and knows what must be done. She keeps her eyes peeled on the river, looking for somewhere suitable to cross, while you negotiate a way through the boulders that lie scattered in your path.</p>
       <p>'Over there, Cal!' she shouts, pointing to a shallow-sided section of the river bank. Immediately you steer towards it and power your car down the gentle slope towards the foul-smelling water. Here, the tainted river is less than a foot deep and the rocky bed provides a firm grip for your tyres.</p>
       <p>You are half-way across when you hear a dull thud. Suddenly there is a flash of orange-red flame and a column of splintered rocks and black water erupts from the river a few feet ahead. The clansmen are firing grenades!</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a>.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect42">If the number you have picked is 0-3, <link-text>turn to 42</link-text>.</choice>
       <choice idref="sect154">If the number you have picked is 4-9, <link-text>turn to 154</link-text>.</choice>
      </data>
@@ -4384,7 +4343,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>Your pulse is racing as you wait for the optimum moment to launch your ambush. The clansman's footsteps seem unbearably loud but still you hesitate. He stops and instinctively you spring to your feet, aim and fire.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Shooting skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Shooting skill score.</p>
       <choice idref="sect292">If your total score is 6 or less, <link-text>turn to 292</link-text>.</choice>
       <choice idref="sect18">If your total score is 7 or more, <link-text>turn to 18</link-text>.</choice>
      </data>
@@ -4415,7 +4374,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>You swerve to the right to avoid the speeding missile, and your swift reactions save you from receiving a direct hit. The armour-tipped projectile burrows into the ground close to your rear wheel, and the resultant explosion buffets your trunk and sends the roadster into a skid. Desperately you fight to regain control as you slide off the freeway and career towards a deep gully.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Driving skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Driving skill score.</p>
       <choice idref="sect39">If your total is 7 or less, <link-text>turn to 39</link-text>.</choice>
       <choice idref="sect283">If your total is 8 or more, <link-text>turn to 283</link-text>.</choice>
      </data>
@@ -4593,7 +4552,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>You back off a dozen paces to give yourself a good run at the door, then you charge forward and barge it with your shoulder. There is a tremendous crack, the door gives way, and you feel yourself falling head-first into a deep, dark hole.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a>.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect203">If the number you have picked is 0-6, <link-text>turn to 203</link-text>.</choice>
       <choice idref="sect171">If it is 7-9, <link-text>turn to 171</link-text>.</choice>
      </data>
@@ -4603,7 +4562,7 @@ RIFLE - 7.62mm - 1 - 4
      <meta><title>341</title></meta>
 
      <data>
-      <p>The chain sails within an inch of your scalp as you duck behind the wing of your roadster. An instant later you retaliate by hurling your brace at the scout leader's bike. The tool jams between the spokes of his front wheel, causing the machine to up-end and slam its rider face-first into the river bank. Then the heavy machine crashes down with a sickening crunch, crushing the Angelino to death under the weight of its lOOOcc engine.</p>
+      <p>The chain sails within an inch of your scalp as you duck behind the wing of your roadster. An instant later you retaliate by hurling your brace at the scout leader's bike. The tool jams between the spokes of his front wheel, causing the machine to up-end and slam its rider face-first into the river bank. Then the heavy machine crashes down with a sickening crunch, crushing the Angelino to death under the weight of its l000cc engine.</p>
       <choice idref="sect11"><link-text>Turn to 11</link-text>.</choice>
      </data>
     </section>
@@ -4671,7 +4630,7 @@ RIFLE - 7.62mm - 1 - 4
       <p>It is almost noon when you drive into Brogado. The storm-shattered ruins of this mountain town do not inspire much hope of finding fuel, and, after making a thorough search of its two gas stations, your initial fears are confirmed: one station has been looted and the other has been gutted by fire.</p>
       <p>It is beginning to look as though you will have to walk the last thirty miles to Kent when Marine Gunter sees a station wagon backed up to the entrance of a drug store, and he calls it to your attention. All five of you are walking along the main street towards the vehicle when a shot rings out from the first floor window of the store, and Gunter is brought to the ground, clutching his blood-stained chest.</p>
       <p>'Sniper!' shouts Sergeant Haskell. 'Hit the deck!'</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Stealth and Perception skill scores.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth and Perception skill scores.</p>
       <choice idref="sect257">If your total score is 10 or less, <link-text>turn to 257</link-text>.</choice>
       <choice idref="sect92">If your total score is 11 or more, <link-text>turn to 92</link-text>.</choice>
      </data>
@@ -4697,7 +4656,7 @@ RIFLE - 7.62mm - 1 - 4
        <li>Bread Knife (2)</li>
        <li>Enough canned food for five Meals</li>
       </ul>
-      <p>If you choose to keep any of the items in either list, remember to adjust your <a idref='action'>Action Chart</a> accordingly.</p>
+      <p>If you choose to keep any of the items in either list, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Before leaving the kitchen you hide the clansman's body in an empty refrigerator. Then you hurry through the fire escape door and make your way up a flight of rusty steps that leads to a service alley at the rear of the building.</p>
       <choice idref="sect269"><link-text>Turn to 269</link-text>.</choice>
      </data>
@@ -4708,7 +4667,7 @@ RIFLE - 7.62mm - 1 - 4
 
      <data>
       <p>You prime your weapon and spring into the room like a tiger. A man is crouched by an open window, and, as you move towards him, he turns to meet your attack with a rifle clutched firmly in his hands. Instinctively, you raise your gun and fire a snap shot from the hip.</p>
-      <p>Pick a number from the <a idref='random'>Random Number Table</a> and add to it your Shooting skill score.</p>
+      <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Shooting skill score.</p>
       <p>If the weapon you are using is a Shotgun or a Machine Pistol, add 2 points to your total. If the weapon you are using is a Pistol or a Rifle, subtract 1 point from your total.</p>
       <choice idref="sect31">If your total score is now 6 or less, <link-text>turn to 31</link-text>.</choice>
       <choice idref="sect103">If your total score is now 7 or more, <link-text>turn to 103</link-text>.</choice>
@@ -4737,7 +4696,7 @@ RIFLE - 7.62mm - 1 - 4
    <data>
     <illustration class="inline">
      <meta>
-      <creator>Melvyn Grant</creator>
+      <creator>???</creator>
      </meta>
      <instance src="map.jpg" width="1024" height="768" class="html" />
      <instance src="map.pdf" width="1024" height="768" class="pdf" />
@@ -4887,17 +4846,17 @@ RIFLE - 7.62mm - 1 - 4
     <section class="backmatter" id="errerr">
      <meta><title>Errata</title></meta>
      <data>
-      <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>re-established</quote> with <quote>reestablished</quote>.</p>
+      <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>re-establish</quote> with <quote>reestablish</quote>.</p>
       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>if you pick a O</quote> with <quote>if you pick a 0</quote>.</p>
       <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
-      <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote>as &plus;1 If </quote> with <quote>as &plus;1.  If </quote>.</p>
+      <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote>as <ch.plus/>1 If </quote> with <quote>as <ch.plus/>1. If </quote>.</p>
       <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>map of Western Texas</quote> with <quote>Map of Western Texas</quote>.</p>
       <p>(<a idref="sect23">23</a>) Replaced <quote>Small blanket</quote> with <quote>Small Blanket</quote>.</p>
       <p>(<a idref="sect23">23</a>) Replaced <quote>Medi-kits units</quote> with <quote>Medi-kit units</quote>.</p>
       <p>(<a idref="sect30">30</a>) Replaced <quote>bushwack</quote> with <quote>bushwhack</quote>.</p>
       <p>(<a idref="sect130">130</a>) Replaced <quote>Plastic tube</quote> with <quote>Plastic Tube</quote>.</p>
       <p>(<a idref="sect232">232</a>) Applied bold style to <quote>Foil Blanket</quote>.</p>
-      <p>(<a idref="sect315">315</a>) Replaced section references.  The original text directed the reader to sections <a idref="sect161">161</a> and <a idref="sect207">207</a>, however those references are the result of being apprehended by a single clansman in section <a idref="sect115">115</a>.</p>
+      <p>(<a idref="sect315">315</a>) Replaced section references. The original text directed the reader to sections <a idref="sect161">161</a> and <a idref="sect207">207</a>, however those references are the result of being apprehended by a single clansman in section <a idref="sect115">115</a>.</p>
       <p>(<a idref="sect18">18</a>,<a idref="sect23">23</a>,<a idref="sect36">36</a>,<a idref="sect63">63</a>,<a idref="sect71">71</a>,<a idref="sect101">101</a>,<a idref="sect126">126</a>,<a idref="sect138">138</a>,<a idref="sect146">146</a>,<a idref="sect183">183</a>,<a idref="sect187">187</a>,<a idref="sect232">232</a>,<a idref="sect248">248</a>,<a idref="sect266">266</a>,<a idref="sect308">308</a>,<a idref="sect348">348</a>) Replaced CCS Bonuses in <quote>[]</quote> with <quote>()</quote>.</p>
       <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
       </data>

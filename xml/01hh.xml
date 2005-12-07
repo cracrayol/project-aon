@@ -1,7 +1,6 @@
 <!DOCTYPE gamebook SYSTEM "gamebook.dtd" [
  <!ENTITY % xhtml.characters SYSTEM "htmlchar.mod">
  %xhtml.characters;
-
  <!ENTITY % general.links SYSTEM "genlink.mod">
  %general.links;
  <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
@@ -14,6 +13,9 @@
 
 $Id$
 $Log$
+Revision 1.4  2005/12/07 12:42:40  Wibbleboy
+Applied misc formatting changes to match manual of style.
+
 Revision 1.3  2005/12/05 21:27:42  jonathan.blake
 Fixed various issues including creating a table for weapon types and replacing character entities with character elements.
 
@@ -72,7 +74,7 @@ ERRATA 281-315
   <publisher>Project Aon</publisher>
   <date class="publication"><year>2005</year><month>11</month><day>25</day></date>
   <description class="blurb">
-   <p>You are Cal Phoenix, the freeway warrior, champion and protector of Dallas Colony One.  A murderous gang of H.A.V.O.C. clansmen, led by the psychotic Mad Dog Michigan, are bent on destroying your fragile colony as it crosses the wastelands of Texas on the first stage of a life-or-death exodus to the California coast.  These bike-riding clansmen are a formidable enemy: armed, cunning, and extremely dangerous, capable of launching a lightning raid at any time, day or night.  You will need all your wits about you if you are to defend your people and reach your destination intact!</p>
+   <p>You are Cal Phoenix, the freeway warrior, champion and protector of Dallas Colony One. A murderous gang of H.A.V.O.C. clansmen, led by the psychotic Mad Dog Michigan, are bent on destroying your fragile colony as it crosses the wastelands of Texas on the first stage of a life-or-death exodus to the California coast. These bike-riding clansmen are a formidable enemy: armed, cunning, and extremely dangerous, capable of launching a lightning raid at any time, day or night. You will need all your wits about you if you are to defend your people and reach your destination intact!</p>
   </description>
   <description class="publication">
    <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
@@ -163,10 +165,10 @@ ERRATA 281-315
     <p><strong>2009</strong><br />HAVOC leaders imprisoned for life in 'Deep Pens' - maximum security gaols located deep underground - to prevent their escape or release by HAVOC agents still at large.</p>
     <p><strong>2010</strong><br />New leadership emerges to unify the scattered remnants of HAVOC and plan revenge.</p>
     <p><strong>2011</strong><br />A WDL train transporting seventeen 100-kiloton nuclear warheads, destined to be neutralized and dismantled, is attacked by HAVOC agents. The train is destroyed and its deadly cargo stolen.</p>
-    <p><strong>2012 New Years Day</strong><br />HAVOC hijack a WDL news satellite and broadcast a chilling ultimatum.  They have planted the seventeen stolen warheads in major cities throughout the US, USSR and Europe. They call for the immediate release of all HAVOC agents held in Deep Pens, plus the payment of $2 trillion in gold bullion, or they will trigger the warheads one by one until their demands are met in full.  A twenty-four hour deadline is set.  WDL leaders declare emergency and request that the deadline be extended.  HAVOC refuse.</p>
+    <p><strong>2012 New Years Day</strong><br />HAVOC hijack a WDL news satellite and broadcast a chilling ultimatum. They have planted the seventeen stolen warheads in major cities throughout the US, USSR and Europe. They call for the immediate release of all HAVOC agents held in Deep Pens, plus the payment of $2 trillion in gold bullion, or they will trigger the warheads one by one until their demands are met in full. A twenty-four hour deadline is set. WDL leaders declare emergency and request that the deadline be extended. HAVOC refuse.</p>
     <p><strong>2nd January</strong><br />First warhead detonated at Brie Nuclear Energy Plant, ten miles south of Paris, France. Blast and radioactive fallout claim millions of lives. HAVOC repeat their demand and extend deadline by twenty-four hours.</p>
-    <p><strong>3rd January 'The Day'</strong><br />World Defence League agents discover location of HAVOC command headquarters on an island in the South Pacific Ocean.  Immediately orders are given to infiltrate and destroy the HQ and its occupants. The assault is swift and decisive; the complex is quickly overrun and its inhabitants are killed.  Yet, ironically, as the news of this victory is being relayed around the world, HAVOC enact their ultimate revenge. A transmitter hidden on the island, fitted with a time-delay mechanism, clicks on, sending its high-frequency radio signal to a communications satellite orbiting the earth. This signal is amplified and returned to earth where, simultaneously, it triggers the remaining nuclear warheads.  The initial explosions set off a disastrous chain reaction that feeds on civil and military nuclear installations all across the northern hemisphere.  Hundreds of millions of people are killed within days, and many more perish during the years that follow, falling victim to the lingering radioactivity and the severe climatic changes that affect the earth.</p>
-    <p><strong>2012-2019</strong><br />Gale force winds sweep across the world, carrying enormous amounts of dust into the upper atmosphere and preventing much sunlight from reaching the earth's surface.  Temperatures plummet, deterring survivors from remaining above ground. Communications are disrupted by gamma radiation, making all radio, cable and satellite contact impossible. Small colonies of survivors develop in total isolation from one another during these years of darkness.</p>
+    <p><strong>3rd January 'The Day'</strong><br />World Defence League agents discover location of HAVOC command headquarters on an island in the South Pacific Ocean. Immediately orders are given to infiltrate and destroy the HQ and its occupants. The assault is swift and decisive; the complex is quickly overrun and its inhabitants are killed. Yet, ironically, as the news of this victory is being relayed around the world, HAVOC enact their ultimate revenge. A transmitter hidden on the island, fitted with a time-delay mechanism, clicks on, sending its high-frequency radio signal to a communications satellite orbiting the earth. This signal is amplified and returned to earth where, simultaneously, it triggers the remaining nuclear warheads. The initial explosions set off a disastrous chain reaction that feeds on civil and military nuclear installations all across the northern hemisphere. Hundreds of millions of people are killed within days, and many more perish during the years that follow, falling victim to the lingering radioactivity and the severe climatic changes that affect the earth.</p>
+    <p><strong>2012-2019</strong><br />Gale force winds sweep across the world, carrying enormous amounts of dust into the upper atmosphere and preventing much sunlight from reaching the earth's surface. Temperatures plummet, deterring survivors from remaining above ground. Communications are disrupted by gamma radiation, making all radio, cable and satellite contact impossible. Small colonies of survivors develop in total isolation from one another during these years of darkness.</p>
     <p><strong>2019-2020</strong><br />Gradually, the dust storms die down and the sun penetrates the atmosphere, thawing the earths frozen surface. Radiation has decayed to tolerable levels, and survivors emerge to reclaim what little remains of the world they once knew.</p>
    </data>    
   </section>
@@ -180,7 +182,7 @@ ERRATA 281-315
 
    <data>
     <p>You are Cal Phoenix, a survivor, born on Thanksgiving in the year 2000 AD. When you cast your mind back to the time before 'Tthe Day', you recall your two brothers and your sister, your parents' house in California, and summer vacations spent cruising the blue Pacific off Catalina Island aboard your father's boat. They are your fondest memories, yet your most vivid recollections are of winter vacations, when the family would drive to Dallas to spend Christmas with Uncle Jonas and Aunt Betty-Ann. Of all your Texan Christmases, the 2011 visit was the most memorable. It was also the last time you saw your family alive.</p>
-    <p>Your parents had decided to cancel the trip to Dallas that year. The oil shortage had pushed up the price of gasolene to $30 a gallon, and only the rich could afford to drive long distances, even in cars equipped with solar-pacs. You were so disappointed when you heard the news that you decided to walk the 1300 miles to Dallas, and would have done so had your father not caught up with you three miles from home.  Then, when Uncle Jonas and Aunt Betty-Ann got to hear of it, they fixed it with your parents so that you at least could spend Christmas with them at their ranch near Denton.</p>  
+    <p>Your parents had decided to cancel the trip to Dallas that year. The oil shortage had pushed up the price of gasolene to $30 a gallon, and only the rich could afford to drive long distances, even in cars equipped with solar-pacs. You were so disappointed when you heard the news that you decided to walk the 1300 miles to Dallas, and would have done so had your father not caught up with you three miles from home. Then, when Uncle Jonas and Aunt Betty-Ann got to hear of it, they fixed it with your parents so that you at least could spend Christmas with them at their ranch near Denton.</p>  
     <p>From the moment they met your charter flight at Addison Airport you knew it was going to be a vacation to remember. Uncle Jonas was an oilman. He had been one ever since he graduated from the University of Texas in '95 with a degree in geology. Earlier that summer he had been put in charge of construction at a shale-oil mine near Austin, the very first of its kind in Texas, and as a special Christmas treat he promised to take you on a guided tour of the whole underground complex.</p>
 
     <illustration class="inline">
@@ -191,15 +193,15 @@ ERRATA 281-315
      <instance class="pdf" src="small1.pdf" width="386" height="150"/>
     </illustration>
 
-    <p>On New Year's Day 2012, the three of you started out early on the road to your uncle's mine, located on the Austin Chalk, over 200 miles south of Dallas.  The trip would take at least two days, with an overnight stop in Waco. For, in an effort to conserve energy, the Federal government had imposed a speed restriction of fifteen miles per hour on all state highways. It was a slow journey, and despite the sombre radio bulletins that gave news of HAVOC's latest threats, you can still remember your excitement at the thought of exploring those tunnels deep below the earth.</p>
-    <p>Your arrival at the mine was met by a military patrol, posted there by the World Defence League. The job of the patrol was to prevent sabotage; oil installations all over the world had become one of HAVOC's primary targets in their campaign of terror.  The mine was officially closed for the New Year's recess but Uncle Jonas had right of access at all times and, after checking his papers, the patrol allowed you in. It was a massive complex and, for security reasons, it was totally self-supporting. A central shaft serviced the many working levels to which there were attached laboratories, workshops and even refineries for processing the precious crude oil after it had been extracted from the rock. Uncle Jonas was explaining the function of these refineries, 300 feet below the surface, when it happened.</p>
+    <p>On New Year's Day 2012, the three of you started out early on the road to your uncle's mine, located on the Austin Chalk, over 200 miles south of Dallas. The trip would take at least two days, with an overnight stop in Waco. For, in an effort to conserve energy, the Federal government had imposed a speed restriction of fifteen miles per hour on all state highways. It was a slow journey, and despite the sombre radio bulletins that gave news of HAVOC's latest threats, you can still remember your excitement at the thought of exploring those tunnels deep below the earth.</p>
+    <p>Your arrival at the mine was met by a military patrol, posted there by the World Defence League. The job of the patrol was to prevent sabotage; oil installations all over the world had become one of HAVOC's primary targets in their campaign of terror. The mine was officially closed for the New Year's recess but Uncle Jonas had right of access at all times and, after checking his papers, the patrol allowed you in. It was a massive complex and, for security reasons, it was totally self-supporting. A central shaft serviced the many working levels to which there were attached laboratories, workshops and even refineries for processing the precious crude oil after it had been extracted from the rock. Uncle Jonas was explaining the function of these refineries, 300 feet below the surface, when it happened.</p>
     <p>The ground shuddered when the shock waves from the first distant explosions reached the mine, and you remember thinking that it must be the start of an earthquake, the like of which you had experienced many times at home in California. But as the levels nearest the surface began to collapse and the central shaft filled with falling rubble, you realized the awful truth. The unthinkable had happened. </p>
     <p>At first there was no way of telling the extent of the surface devastation. Below ground, the safety generators had automatically switched into operation when the main power supply failed, and the tremors faded quickly, encouraging your aunt and uncle to believe that the damage above was superficial. Uncle Jonas was confident that the military would mount a rescue operation and that you would be brought out within a few days - a week at the most. Aunt Betty-Ann was also optimistic. After all, there were emergency supplies, enough to feed 200 men for a whole month. Little did she know that the three of you would end up consuming all of those supplies, or that the mine would become your home, your shelter and your prison for the next eight years of your lives.</p>
     <p>It was a month after 'the Day' when the three of you accepted that there would never be a rescue operation. Many days had been spent in silence, hoping and praying for the sounds of excavation or a voice on the radio lint to the surface. But all that could be heard was the static crackle of the gamma radiation which was blanketing the earth. Uncle Jonas proposed that an attempt be made to reach the surface by tunnelling through the blocked central shaft. It was an awesomely dangerous feat, to dig vertically through 300 feet of compressed concrete rubble and twisted steel girders, but there was no other way you could ever hope to escape from the mine. Progress was painfully slow but the work gave you all a sense of purpose, a reason to go on, even though you feared what could be awaiting you on the surface.</p>
     <p>Those years spent in the mine taught you invaluable lessons in survival. Uncle Jonas showed you how to refine gasolene from crude oil to keep the generators alive; to coax fresh water from porous rock; to manufacture spare parts in order to maintain vital machinery. Aunt Betty-Ann, who had at one time been a nurse and a high school teacher in Denton county, attended to your education and made sure that you stayed fit and healthy. Their love and support enabled you to grow during those dark days underground despite the enormous sense of loss you felt for your parents, brothers and sister. You vowed then that one day you would repay their kindness by protecting and caring for them.</p>
     <p>It was early September in the year 2019 when finally you broke through to the surface. Aunt Betty-Ann was convinced that radiation levels would still be dangerously high, and at first she was against leaving the mine. But, during the last few months of your incarceration, the static that had always jammed the radio wavelengths had gradually cleared, and Uncle Jonas was able to persuade her that this meant it was now safe to live above ground.</p>
     <p>When you first emerged from the mine, you thought you were on the surface of another planet. Surely this could not be Earth? Few structures had survived the blizzards and intense cold that had swept around the world in the years following 'the Day', and now, after the dust had settled and the sun returned, the once-fertile plains of Austin resembled little more than a desert of parched and broken rock, littered with the artefacts of an absent civilization. During the first few days, when you set out to explore this wilderness, it was easy to believe that you were the only survivors. But on the morning of the fifth day, Uncle Jonas made a chance radio contact with a family called Ewell who were living near the ruins of McKinney, thirty miles north of Dallas. They told him that they had been in touch with a handful of other groups who had managed somehow to survive the holocaust. Most were isolated, unable to move due to lack of fuel, food or water. They had urged those who could travel to join them in McKinney, to start a new community, and some were already on their way. Your uncle and aunt also accepted their invitation. McKinney was not very far from Denton, and they were curious to see if anything remained of their ranch. They planned to return home, salvage whatever they could that might be of use, and then move on to McKinney. The Ewells were enthusiastic, but they warned that not everyone who had survived wanted to establish a new community. The ruins of Dallas and Fort Worth were controlled by gangs of criminals who fought with each other and terrorized anyone seeking to reestablish law and order. They advised you to avoid them at all costs when travelling north.</p>
-    <p>Interstate Freeway 35 was the only highway still intact amid the devastation that surrounded the mine.  It offered a direct route home to Denton, if only transportation could be found, for Uncle Jonas considered conditions far too dangerous to attempt such a long journey on foot. It took more than a week to discover a vehicle that was still serviceable. It was an old school bus, one that had been parked in an underground lot and had survived the years of subzero blizzards. With a few new parts, a tankful of gas and a lot of hard work it was eventually brought back to life.</p>
+    <p>Interstate Freeway 35 was the only highway still intact amid the devastation that surrounded the mine. It offered a direct route home to Denton, if only transportation could be found, for Uncle Jonas considered conditions far too dangerous to attempt such a long journey on foot. It took more than a week to discover a vehicle that was still serviceable. It was an old school bus, one that had been parked in an underground lot and had survived the years of subzero blizzards. With a few new parts, a tankful of gas and a lot of hard work it was eventually brought back to life.</p>
     <p>Provisions, including a small generator, were hoisted out of the mine and stowed aboard before you began the journey back to the ranch. The noisy old bus bumped along the rock-strewn freeway that stretched northward across an empty sea of dust. It was a harrowing sight. Hardly a trace remained of what were once thriving communities, and the once-populous cities of Temple and Waco had barely enough buildings still standing to qualify as small towns.</p>
     <p>It was not until you reached the outskirts of Fort Worth that you encountered signs of human habitation. The road ahead was blocked by a line of wrecked autos, and at your approach a group of hard faced men and women, clad in composite costumes of leather and rivetted steel, suddenly popped up from behind this barricade. Uncle Jonas was suspicious and slowed the bus almost to a halt. Suddenly they produced handguns and rifles and began to take aim at the windshield, and he knew it was not the time to stop to ask for directions! He told you and Aunt Betty-Ann to brace yourselves, thenstamped his foot on the gas and drove the bus straight through the wall of cars, scattering the punks like ten-pins in a strike. The bus was shot at many times as it sped through Fort Worth, but the street gangs had been caught out and you managed to escape from the ruined city before they could give chase.</p>
 
@@ -211,8 +213,8 @@ ERRATA 281-315
      <instance class="pdf" src="small4.pdf" width="386" height="150" />
     </illustration>
 
-    <p>When you got to Denton you discovered that the ranch, like all the other nearby dwellings, had been reduced to a heap of broken bricks and shattered timbers. The sight greatly upset your aunt, and Uncle Jonas felt it better not to stop but to continue overland to McKinney. It was easy to find where the Ewells lived, for their ranch was the only place in town that was still standing. It looked more like an old frontier post than a ranch, with its fortified perimeter wall, lookout posts and stake-filled moat.  But, after your brush with the citizens of Fort Worth, it was easy to understand the need for these defences.</p>
-    <p>'Pop' Ewell, the seventy-year-old grandfather of the Ewell family, was the leader of this small colony of survivors; it was he who had urged Uncle Jonas to join them when they had first made radio contact.  The colony numbered less than a dozen at the time of your arrival, yet as the airwaves became clearer, soon this number had more than doubled to twenty five. It was decided that a name was needed to identify the settlement.  The name 'Dallas Colony One' was adopted - 'DC1' for short - and from that day on everyone worked hard to make DC1 a secure haven for those seeking refuge from the hostile wastelands and marauding city gangs.</p>
+    <p>When you got to Denton you discovered that the ranch, like all the other nearby dwellings, had been reduced to a heap of broken bricks and shattered timbers. The sight greatly upset your aunt, and Uncle Jonas felt it better not to stop but to continue overland to McKinney. It was easy to find where the Ewells lived, for their ranch was the only place in town that was still standing. It looked more like an old frontier post than a ranch, with its fortified perimeter wall, lookout posts and stake-filled moat. But, after your brush with the citizens of Fort Worth, it was easy to understand the need for these defences.</p>
+    <p>'Pop' Ewell, the seventy-year-old grandfather of the Ewell family, was the leader of this small colony of survivors; it was he who had urged Uncle Jonas to join them when they had first made radio contact. The colony numbered less than a dozen at the time of your arrival, yet as the airwaves became clearer, soon this number had more than doubled to twenty five. It was decided that a name was needed to identify the settlement. The name 'Dallas Colony One' was adopted - 'DC1' for short - and from that day on everyone worked hard to make DC1 a secure haven for those seeking refuge from the hostile wastelands and marauding city gangs.</p>
     <p>'Cutter' Jacks was one such refugee. Before the holocaust he had been chief mechanic at the International Grand Prix Circuit near Lake Dallas, and his incredible skill and knowledge of engines was soon to prove invaluable to the colony. He taught you how to drive, and from a pile of old wrecks that you helped him salvage from the circuit he built you a powerful, customized car. You used it to patrol the highways north of the city, keeping a lookout for gangs of city punks who frequently mounted raids to steal or destroy DC1's supplies. 'Cutter' also taught you to shoot, and it was your prowess with a gun and your skill behind the wheel that was to earn you the begrudging respect of your enemies who took to calling you 'Freeway Warrior'.</p>
 
     <illustration class="inline">
@@ -224,7 +226,7 @@ ERRATA 281-315
     </illustration>
 
     <p>Six months after you arrived at DC1, the colony was faced with a major crisis. A heat wave was causing a drought that threatened to destroy the food supply. Crops were failing and the colony's artesian well - its only source of uncontaminated water - was beginning to dry up. The drought was also provoking more attacks from the city punks who were desperate for food and water. Their common need united them and they posed a very real threat to the security of DC1.</p>
-    <p>It was the last day of May 2020 when Pop Ewell made radio contact with another colony who were based in the city of Big Spring, 300 miles west of McKinney. It appeared that their situation was completely the reverse of DC1's: they had plenty of food and water but they were desperately short of fuel.  They told of their contact with survivors in Tucson, Arizona, who were also without fuel. The Tucson colony reported that the territories west of the Sierra Nevada mountains had been spared the worst effects of the radioactive blizzards that had devastated the rest of the country and, miraculously, much of southern California was still widely populated. It had survived the last eight years virtually intact. When you heard the news you could hardly believe your ears. Perhaps your family were alive. You might be reunited after all!</p>
+    <p>It was the last day of May 2020 when Pop Ewell made radio contact with another colony who were based in the city of Big Spring, 300 miles west of McKinney. It appeared that their situation was completely the reverse of DC1's: they had plenty of food and water but they were desperately short of fuel. They told of their contact with survivors in Tucson, Arizona, who were also without fuel. The Tucson colony reported that the territories west of the Sierra Nevada mountains had been spared the worst effects of the radioactive blizzards that had devastated the rest of the country and, miraculously, much of southern California was still widely populated. It had survived the last eight years virtually intact. When you heard the news you could hardly believe your ears. Perhaps your family were alive. You might be reunited after all!</p>
     <p>Pop Ewell called for a meeting to decide how best to deal with the crisis now facing DC1. Everyone agreed that to stay at McKinney would lead to eventual death, either slowly from starvation or suddenly at the hands of the murderous city gangs. The only option open to DC1 was to try to reach California; only there lay any real hope for the future of the colony. Your decision was relayed to the survivors at Big Spring and a deal was struck to rendezvous with them as soon as possible. DC1 would exchange fuel for food and water, and together they would join up with the Tuscon colony for the final journey to California.</p>
     <p>Preparations began almost immediately. Morale was so high that a heady sense of adventure and optimism enveloped everyone. Few guessed just how fraught with danger the journey would be.</p>
 
@@ -242,44 +244,7 @@ ERRATA 281-315
     <p>Before embarking on your adventure, you must first determine your personal characteristics and the weapons and provisions with which you are equipped. On pages 6 and 7 you will find an <a idref="action">Action Chart</a> on which to record and amend these details as the adventure unfolds. For ease of use during play it is recommended that you photocopy these pages.</p>
     <p>Your personal characteristics comprise two basic attributes: <typ class="attribute">CLOSE COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ>. To discover your initial <typ class="attribute">CLOSE COMBAT SKILL</typ>, take a pencil and, with your eyes closed, point the blunt end of it on to the <a idref="random">Random Number Table</a> at the back of this book. If you pick a 0 it counts as zero. Add 10 to the number you have picked and write the total in the <typ class="attribute">CLOSE COMBAT SKILL</typ> section of your Action Chart (for example, if your pencil falls on the number 5 in the <a idref="random">Random Number Table</a>, you have a CLOSE <typ class="attribute">COMBAT SKILL</typ> total of 15). When you fight an enemy in hand-to-hand combat, your <typ class="attribute">CLOSE COMBAT SKILL</typ> will be measured against that of your enemy, so a high score in this section is desirable.</p>
     <p>To discover your <typ class="attribute">ENDURANCE</typ> level, repeat the process, but this time add 20 to the number you have picked from the <a idref="random">Random Number Table</a>. Write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a> (for example, if your pencil falls on the number 8 on the <a idref="random">Random Number Table</a>, you have a total <typ class="attribute">ENDURANCE</typ> score of 28). If you are wounded in combat, or injured at any other time during your adventure you will lose <typ class="attribute">ENDURANCE</typ> points. If, at any time, your <typ class="attribute">ENDURANCE</typ> points total falls to zero, you are dead and the adventure is over. You can regain lost <typ class="attribute">ENDURANCE</typ> points during the course of the adventure, but your <typ class="attribute">ENDURANCE</typ> level can never rise above your initial score.</p>
-<!--
-    <section class="frontmatter-separate" id="sskills1">
-     <meta>
-      <title>Survival Skills</title>
-      <link class="prev" idref="gamerulz" />
-      <link class="next" idref="equipmnt" />
-     </meta>
 
-     <data>
-      <p>Ever since the day you returned to the surface, you have endeavoured to develop your skills and natural instincts fully in order to best defend yourself and your colony.</p>
-      <p>Listed on your <a idref="action">Action Chart</a> are your five basic survival skills:</p>
-      <dl>
-       <dt>Driving</dt>
-        <dd>Your ability to control powered vehicles, such as cars, motorcycles and trucks.</dd>
-      </dl>
-      <dl>
-       <dt>Shooting</dt>
-        <dd>Your familiarity and experience in the use of missile weapons, such as pistols, machine pistols, shotguns and rifles.</dd>
-      </dl>
-      <dl>
-       <dt>Field craft</dt>
-        <dd>Your knowledge and experience of all aspects of outdoor survival.</dd>
-      </dl>
-      <dl>
-       <dt>Stealth</dt>
-        <dd>Your physical fitness, the speed of your reflexes and your dexterity.</dd>
-      </dl>
-      <dl>
-       <dt>Perception</dt>
-        <dd>Your intelligence, your ability to evaluate information, your education and your mental alertness.</dd>
-      </dl>
-
-      <p>Your ability in each of these five individual skills is measured in skill points. You begin with 3 points per skill. Before starting the adventure, you may allocate an additional 4 skill points to your list of five survival skills. These 4 extra points can be used to improve one or more of your five skills. During your adventure, all five skills will be severely tested, therefore the higher the individual skill level, the better your chances of survival. You may allocate your 4 additional points entirely how you like.</p>
-      <p>When you have decided where to allocate your 4 additional skill points, make a note of the totals in the Survival Skills section of your <a idref="action">Action Chart</a>. (In your first adventure, your total number of skill points should be 19: five skills x 3 points each = 15, plus 4 additional skill points = 19 points.)</p>
-      <p>If you complete successfully the mission set in Book 1 of the Freeway Warrior series, you may add an additional 4 points to your Survival Skills in Book 2. These additional points, together with any equipment and provisions that you possess at the end of Book 1, may then be used in the next Freeway Warrior adventure, which is called Slaughter Mountain Run.</p>
-     </data>
-    </section>
--->
     <section class="frontmatter-separate" id="sskills">
      <meta>
       <title>Survival Skills</title>
@@ -288,6 +253,9 @@ ERRATA 281-315
      </meta>
 
      <data>
+
+      <p>Ever since the day you returned to the surface, you have endeavoured to develop your skills and natural instincts fully in order to best defend yourself and your colony.</p>
+      <p>Listed on your <a idref='action'>Action Chart</a> are your five basic survival skills:</p>
 
       <section class="frontmatter" id="driving">
        <meta><title>Driving</title></meta>
@@ -348,7 +316,7 @@ ERRATA 281-315
       <section class="frontmatter" id="backpack">
        <meta><title>Backpack</title></meta>
        <data>
-        <p>Up to ten separate items may be stored and carried in your Backpack at any time. However, if more than three items are carried, your Stealth level will be reduced by 1 point.  If more than six items are carried, your Stealth level will be reduced by 2 points; and if you carry a full Backpack (containing ten items) your Stealth level will be reduced by 3 points.</p>
+        <p>Up to ten separate items may be stored and carried in your Backpack at any time. However, if more than three items are carried, your Stealth level will be reduced by 1 point. If more than six items are carried, your Stealth level will be reduced by 2 points; and if you carry a full Backpack (containing ten items) your Stealth level will be reduced by 3 points.</p>
         <p>In order to equip yourself for the task ahead, you may choose up to four items from the following list:</p>
         <ul>
          <li><typ class="item">SOLAR TORCH</typ></li>
@@ -361,7 +329,7 @@ ERRATA 281-315
          <li><typ class="item">FLEXIBLE SAW</typ></li>
          <li><typ class="item">GEIGER COUNTER</typ></li>
         </ul>
-        <p>List the items you have chosen on your <a idref="action">Action Chart</a>.  If you have picked four items, adjust your current Stealth level accordingly.</p>
+        <p>List the items you have chosen on your <a idref="action">Action Chart</a>. If you have picked four items, adjust your current Stealth level accordingly.</p>
         <p>Opportunities may arise during your adventure for you to pick up useful items. These items will appear in the text in bold print and, unless you are instructed otherwise, they can be stored and carried in your Backpack.</p>
         <p>You will need to eat regularly. If you do not possess any food when you are instructed to eat a Meal, you will lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
        </data>
@@ -416,7 +384,7 @@ ERRATA 281-315
       <section class="frontmatter" id="close">
        <meta><title>Close Combat Weapons</title></meta>
        <data>
-        <p>These weapons aid you in hand-to-hand fighting.  You begin your adventure armed with a Hunting Knife which, when used in close combat, adds 2 points to your <typ class="attribute">CLOSE COMBAT SKILL</typ>. Note this Hunting Knife in the Close Combat Weapons section of your <a idref="action">Action Chart</a>.</p>
+        <p>These weapons aid you in hand-to-hand fighting. You begin your adventure armed with a Hunting Knife which, when used in close combat, adds 2 points to your <typ class="attribute">CLOSE COMBAT SKILL</typ>. Note this Hunting Knife in the Close Combat Weapons section of your <a idref="action">Action Chart</a>.</p>
         <p>If you find a close combat weapon during your adventure, you may pick it up and use it. Close combat weapons will appear in the text with a close combat skill number, for example, Machete (3). This number indicates how many points this weapon will add to your <typ class="attribute">CLOSE COMBAT SKILL</typ> when used in a hand-to-hand fight.</p> 
         <p>The maximum number of close combat weapons you may carry is two.</p>
        </data>
@@ -437,6 +405,7 @@ ERRATA 281-315
 
         <table>
          <tr>
+          <th></th>
           <th>Calibre</th>
           <th>Rate of Fire</th>
           <th>Initial No. of Rounds</th>
@@ -468,7 +437,7 @@ ERRATA 281-315
         </table>
 
         <p>The initial number of rounds should be noted in the Ammo Pouch section of your <a idref="action">Action Chart</a>. Missile weapons cannot be used if you run out of ammunition or possess rounds of the wrong calibre. However, the opportunity may arise for you to replenish your supply of ammunition and/or discover a weapon of the correct calibre.</p>
-        <p>You may carry a maximum of three missile weapons.  However, for every missile weapon that you carry (excluding your initial choice), you must reduce your Stealth level by 1 point.</p>
+        <p>You may carry a maximum of three missile weapons. However, for every missile weapon that you carry (excluding your initial choice), you must reduce your Stealth level by 1 point.</p>
 
        </data>
       </section>
@@ -485,21 +454,19 @@ ERRATA 281-315
      </meta>
 
      <data>
-      <p>There will be occasions when you will have to fight an enemy in hand-to-hand combat.  The enemy's <typ class="attribute">CLOSE COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> level will both be given in the text. Your aim in close combat is to kill the enemy by reducing his <typ class="attribute">ENDURANCE</typ> points to zero while losing as few of your own <typ class="attribute">ENDURANCE</typ> points as possible.</p>
+      <p>There will be occasions when you will have to fight an enemy in hand-to-hand combat. The enemy's <typ class="attribute">CLOSE COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> level will both be given in the text. Your aim in close combat is to kill the enemy by reducing his <typ class="attribute">ENDURANCE</typ> points to zero while losing as few of your own <typ class="attribute">ENDURANCE</typ> points as possible.</p>
       <p>At the start of a close combat, enter both your own and your enemy's <typ class="attribute">ENDURANCE</typ> points in the appropriate boxes on the Close Combat Record section of your <a idref="action">Action Chart</a>. The sequence for close combat is as follows:</p>
       <ol class="paragraphed">
        <li><p>Add any extra points gained through the use of close combat weapons to your current <typ class="attribute">CLOSE COMBAT SKILL</typ> total.</p></li>
        <li>
-        <p>Subtract the <typ class="attribute">CLOSE COMBAT SKILL</typ> of your enemy from this total. The result is your Combat Ratio.  Enter it on the <a idref="action">Action Chart</a>.</p>
-        <p>Example</p>
-        <p>Cal Phoenix (<typ class="attribute">CLOSE COMBAT SKILL</typ> 17) is attacked by a Renegade Clansman (<typ class="attribute">CLOSE COMBAT SKILL</typ> 18). He is not given the opportunity to evade close combat, but must stand and fight his adversary. Cal Phoenix is armed with a Hunting Knife, so he adds 2 points to his <typ class="attribute">CLOSE COMBAT SKILL</typ>, giving a total CLOSE COMBAT SKILL of 19.</p>
-        <p>He subtracts the Renegade Clansman's <typ class="attribute">CLOSE COMBAT SKILL</typ> from his own, giving a Combat Ratio of <ch.plus/>1 (19 <ch.minus/> 18 = <ch.plus/>1).  He notes this <ch.plus/>1 on his <a idref="action">Action Chart</a> as the Combat Ratio.</p>
+        <p>Subtract the <typ class="attribute">CLOSE COMBAT SKILL</typ> of your enemy from this total. The result is your Combat Ratio. Enter it on the <a idref="action">Action Chart</a>.</p>
+        <p>Example<br />Cal Phoenix (<typ class="attribute">CLOSE COMBAT SKILL</typ> 17) is attacked by a Renegade Clansman (<typ class="attribute">CLOSE COMBAT SKILL</typ> 18). He is not given the opportunity to evade close combat, but must stand and fight his adversary. Cal Phoenix is armed with a Hunting Knife, so he adds 2 points to his <typ class="attribute">CLOSE COMBAT SKILL</typ>, giving a total CLOSE COMBAT SKILL of 19.</p>
+        <p>He subtracts the Renegade Clansman's <typ class="attribute">CLOSE COMBAT SKILL</typ> from his own, giving a Combat Ratio of <ch.plus/>1 (19 <ch.minus/> 18 = <ch.plus/>1). He notes this <ch.plus/>1 on his <a idref="action">Action Chart</a> as the Combat Ratio.</p>
        </li>
        <li><p>After working out your Combat Ratio, pick a number from the <a idref="random">Random Number Table</a>.</p></li>
        <li>
-        <p>Turn to the Close Combat Results Table on the inside back cover of the book. Along the top of the chart are the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the number that you have picked (the random numbers appear down the side of the chart). You now have the <typ class="attribute">ENDURANCE</typ> points lost by both Cal Phoenix and his enemy in this round of close combat.  (E represents points lost by the enemy; CP represents points lost by Cal Phoenix.)</p>
-        <p>Example</p>
-        <p>The Combat Ratio between Cal Phoenix and the Renegade Clansman has been established as <ch.plus/>1.  If the number picked from the <a idref="random">Random Number Table</a> is a 4, then the result of the first round of close combat is:
+        <p>Turn to the Close Combat Results Table on the inside back cover of the book. Along the top of the chart are the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the number that you have picked (the random numbers appear down the side of the chart). You now have the <typ class="attribute">ENDURANCE</typ> points lost by both Cal Phoenix and his enemy in this round of close combat. (E represents points lost by the enemy; CP represents points lost by Cal Phoenix.)</p>
+        <p>Example<br />The Combat Ratio between Cal Phoenix and the Renegade Clansman has been established as <ch.plus/>1. If the number picked from the <a idref="random">Random Number Table</a> is a 4, then the result of the first round of close combat is:
          <ul>
           <li>Cal Phoenix loses 3 <typ class="attribute">ENDURANCE</typ> points.</li>
           <li>Renegade Clansman loses 4 <typ class="attribute">ENDURANCE</typ> points.</li>
@@ -1183,7 +1150,7 @@ ERRATA 281-315
       <p>We'll be here forever if we have to search the shelves,' you whisper.</p>
       <p>'I guess you're right,' replies Cutter, 'but I think I know a quicker way of finding what we need. Follow me.'</p>
       <p>Intrigued by Cutter's reply, you follow him out of the stores building, across a parking lot, and into another section of the depot that is marked:</p>
-      <p>ZONE 3: MUNICIPAL VEHICLE SERVICING</p>
+      <p><signpost>ZONE 3: MUNICIPAL VEHICLE SERVICING</signpost></p>
       <p>After searching four of the dozen service bays, finally he discovers what he is looking for: a school bus. 'Cal, you keep y'eyes open while I strip the linkage out o' this baby. Give me an hour an' we'll be on our way.'</p>
       <p>Nervously you stand guard at the door to the service bay while Cutter works. All is quiet until, forty minutes later, you see something moving among the vehicles on the far side of the parking lot: it is a drunken clansman. Slowly he staggers nearer, taking alternate gulps from bottles clutched in either hand. He is about to pass by when Cutter drops a spanner. The ringing noise pierces his drunken stupor and prompts him to investigate.</p>
       <p>'Trouble on its way!' you whisper to Cutter, but your warning is too late. The clansman comes lumbering through the open door, brandishing his bottles like clubs. He sees you and screams an oath as he gets ready to launch his attack.</p>
@@ -1923,7 +1890,7 @@ ERRATA 281-315
        <li>Rifle (with four rounds of 7.62mm ammunition)</li>
        <li>Water Canteen, containing enough water for three Drinks</li>
        <li>Serum, sulphonamides, and dressings, sufficient for three Medi-kit units.</li>
-       <li>Flick knife (2)</li>
+       <li>Flick Knife (2)</li>
        <li>Club (2)</li>
        <li><typ class="item">Binoculars</typ></li>
        <li><typ class="item">Rope</typ></li>
@@ -1942,7 +1909,7 @@ ERRATA 281-315
       <p>Once the convoy is clear of the bridge, Cutter pulls over to the side of the highway and you stop in line behind him and the tanker. Uncle Jonas jumps down from his cab and together you run forward to check the damage to the bus. The front and sides are riddled with bullet holes, many of which have penetrated the engine and passenger compartments, yet, miraculously, no one has been killed or seriously injured. Aunt Betty-Ann appears at a window and reports that four members of the colony have been hit. She says not to worry - they have minor wounds and she is sure they will pull through.</p>
       <p>The radiator is leaking coolant but Cutter is confident that he can have it fixed within an hour. 'It's a real shame we've got so few guns aboard,' grumbles Cutter, as he sets to work sealing the perforated radiator mesh. 'It ain't no fun being the target for them punks when you don't get a chance to shoot back.'</p>
       <p>A hundred yards along the highway you see a sign that points to a road leading off to the east. It says:</p>
-      <p>CARSWELL AIR FORCE BASE</p>
+      <p><signpost>CARSWELL AIR FORCE BASE</signpost></p>
       <choice idref="sect342">If you wish to investigate the base while Cutter finishes his repairs, <link-text>turn to 342</link-text>.</choice>
       <choice idref="sect295">If you decide to stay with the convoy, <link-text>turn to 295</link-text>.</choice>
      </data>
@@ -2322,9 +2289,27 @@ ERRATA 281-315
      <data>
       <p>The heavy steel door is held shut by an electronic lock. At first you suspect that the lock has jammed, its power having run down long ago, but as soon as you touch the keypad, a blue LED display glows into life above it.</p>
       <p>Eleven numbers appear, arranged in three rows. There are four numbers on the top row, four on the second, and three on the third:</p>
-      <p>2 12 5 9</p>
-      <p>4 20 7 17</p>
-      <p>12 12 4 -</p>
+
+      <table>
+       <tr>
+        <td>2</td>
+        <td>12</td>
+        <td>5</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td>20</td>
+        <td>7</td>
+        <td>17</td>
+       </tr>
+       <tr>
+        <td>12</td>
+        <td>12</td>
+        <td>4</td>
+        <td>-</td>
+       </tr>
+      </table>
       <p>You study the rows of numbers carefully, looking for a pattern. By tapping on the keypad the number that is missing from the last row, you will release the lock and open the door.</p>
       <p>When you think you know the missing number, turn to the entry that bears that number.</p>
       <choice idref="sect171">If you cannot work out the correct answer, <link-text>turn to 171</link-text>.</choice>
@@ -2951,7 +2936,7 @@ ERRATA 281-315
      <meta><title>205</title></meta>
 
      <data>
-      <p>The foul smell of their unwashed bodies dissuades you from searching through the pockets of your two attackers. However, their clubs lie on the ground nearby and you may keep one if you wish (record it on your Weapons list as a Club [2]).</p>
+      <p>The foul smell of their unwashed bodies dissuades you from searching through the pockets of your two attackers. However, their clubs lie on the ground nearby and you may keep one if you wish (record it on your Weapons list as a Club (2)).</p>
       <p>A search of the store reveals no trace of Maria, and you are about to leave to look elsewhere when your transceiver crackles into life. It is Kate, and she has good news: she has found Maria and she is on her way back to the school. You acknowledge her call, then tune your handset to Uncle Jonas' signal and use it to guide you back to base.</p>
       <choice idref="sect280"><link-text>Turn to 280</link-text>.</choice>
      </data>
@@ -3534,9 +3519,28 @@ ERRATA 281-315
      <data>
       <p>The steel door appears to be held shut by an electronic lock. You suspect it to be jammed, its power source run down long ago, but as soon as you run your fingers over the keypad, an LED display glows into life above it.</p>
       <p>Eleven numbers appear, arranged in three horizontal rows. There are four numbers on the top row, four on the second, and three on the third:</p>
-      <p>8 7 9 6</p>
-      <p>94 20 37 77</p>
-      <p>52 57 11 -</p>
+
+      <table>
+       <tr>
+        <td>8</td>
+        <td>7</td>
+        <td>9</td>
+        <td>6</td>
+       </tr>
+       <tr>
+        <td>94</td>
+        <td>20</td>
+        <td>37</td>
+        <td>77</td>
+       </tr>
+       <tr>
+        <td>52</td>
+        <td>57</td>
+        <td>11</td>
+        <td>-</td>
+       </tr>
+      </table>
+
       <p>You study the rows of numbers carefully, looking for a pattern. By tapping on the keypad the number that is missing from the last row, you will release the lock and open the door.</p>
       <p>When you think you know the missing number turn to the entry that bears that number.</p>
       <choice idref="sect194">If you cannot work out the correct answer, <link-text>turn to 194</link-text>.</choice>
@@ -3705,7 +3709,7 @@ ERRATA 281-315
      <meta><title>269</title></meta>
 
      <data>
-      <p>Unfortunately, the stores show signs of having been looted recently. Lockers, drums, and crates that were once full of spares and munitions lie discarded in heaps on the floor. You climb across the debris, searching among the empty ammunition lockers. After nearly an hour of painstaking work, you manage to find just three rounds of 7.62mm ammunition, and a Hammer [2].</p>
+      <p>Unfortunately, the stores show signs of having been looted recently. Lockers, drums, and crates that were once full of spares and munitions lie discarded in heaps on the floor. You climb across the debris, searching among the empty ammunition lockers. After nearly an hour of painstaking work, you manage to find just three rounds of 7.62mm ammunition, and a Hammer (2).</p>
       <p>If you wish to keep these items, amend your Weapons list and Ammo Pouch accordingly.</p>
       <choice idref="sect123">To leave the stores, <link-text>turn to 123</link-text>.</choice>
      </data>
@@ -3750,7 +3754,7 @@ ERRATA 281-315
       <p>You manage to avoid two more patrols before escaping from the mall and meeting up with Cutter at the truck depot. You are both relieved to discover the place empty and unguarded, and quickly you make your way to the stores building. You find the records office, but without electricity you cannot access the computer files to pinpoint the exact location of the spare you need. With mounting fear you realize that in order to find a new steering linkage you will have to search every one of the 1,600 storage bays that occupy the building.</p>
       <p>'We'll be here forever if we have to search the shelves,' you whisper. 'I guess you're right,' replies Cutter, 'but I think I know a quicker way of finding what we need. Follow me.'</p>
       <p>Intrigued by Cutter's reply, you follow him out of the stores building, across a parking lot and into another section of the depot that is marked:</p>
-      <p>ZONE 3: MUNICIPAL VEHICLE SERVICING</p>
+      <p><signpost>ZONE 3: MUNICIPAL VEHICLE SERVICING</signpost></p>
       <p>After searching four of the dozen service bays, finally he discovers what he is looking for: a school bus. 'Cal, you keep y'eyes open while I strip the linkage out o' this baby. Give me an hour an' we'll be on our way.</p>
       <p>Nervously you stand guard at the door to the service bay while Cutter works. All is quiet until, forty minutes later, you see something moving among the vehicles on the far side of the parking, lot: it is a drunken clansman. Slowly he staggers nearer, taking alternating gulps from the bottles clutched in either hand. He is about to pass on his way when Cutter drops a spanner. The ringing noise pierces his drunken stupor and prompts him to investigate.</p>
       <p>'Trouble on its way!' you whisper to Cutter, but your warning is too late. A moment later, the clansman comes lurching through the open door, brandishing his bottles like clubs. He sees you and screams an oath as he gets ready to launch his attack.</p>
@@ -3816,7 +3820,7 @@ ERRATA 281-315
 
      <data>
       <p>Two shots are fired almost simultaneously, filling the bar with a deafening explosion of noise. They rip open the front of the counter less than five feet from where you are crouching, bringing down most of the rickety shelves that line the back wall. Amid a cascade of bottles and glasses, you scurry towards the end of the counter, your eyes fixed on a door situated beneath the staircase. Above it, an unlit sign reads:</p>
-      <p>EXIT - FIRE ESCAPE USE IN CASE OF EMERGENCY</p>
+      <p><signpost>EXIT - FIRE ESCAPE USE IN CASE OF EMERGENCY</signpost></p>
       <p>'I reckon this constitutes an emergency,' you mutter, as you get ready to break cover and run towards the door. Just as you are about to leave your hand brushes against the stock of a sawn-off shotgun that is lying on a shelf beneath the counter. Both hammers are cocked and the chamber tags show that both barrels are loaded.</p>
       <choice idref="sect176">If you wish to take this weapon, <link-text>turn to 176</link-text>.</choice>
       <choice idref="sect84">If you decide to ignore it, <link-text>turn to 84</link-text>.</choice>
@@ -4252,7 +4256,7 @@ ERRATA 281-315
      <meta><title>314</title></meta>
 
      <data>
-      <p>The clansman collapses at your feet, his fingers clasping the fatal wound that you have dealt him. You pick up his Meat Hook [2], which lies nearby, swallowing uneasily as you inspect its razor-sharp tip (if you wish to keep this weapon, remember to record it on your Weapons list). You are about to search his body when you hear the mob approaching the warehouse door. Quickly you run to the far side of the building and escape through a door that leads to a deserted passage. At the end of the passage you discover a derelict timber yard where, behind a stack of rotten fencing posts, you crouch, waiting for the chance to slip out of Albany. While you are lying low, you must take a Drink or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
+      <p>The clansman collapses at your feet, his fingers clasping the fatal wound that you have dealt him. You pick up his Meat Hook (2), which lies nearby, swallowing uneasily as you inspect its razor-sharp tip (if you wish to keep this weapon, remember to record it on your Weapons list). You are about to search his body when you hear the mob approaching the warehouse door. Quickly you run to the far side of the building and escape through a door that leads to a deserted passage. At the end of the passage you discover a derelict timber yard where, behind a stack of rotten fencing posts, you crouch, waiting for the chance to slip out of Albany. While you are lying low, you must take a Drink or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect61">To continue, <link-text>turn to 61</link-text>.</choice>
      </data>
     </section>
@@ -4492,8 +4496,8 @@ ERRATA 281-315
      <data>
       <p>The evil-sounding laughter is cut short by a deafening roar as both barrels of a Browning Citori are discharged at the counter. The heavy loads rip through the front, bringing down most of the rickety shelves that line the back wall. A cascade of bottles and glasses rains down on your head, causing you further injury as you scurry towards the end of the counter: lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <p>Ahead, beneath the staircase, you see a door with an unlit sign above it that reads:</p>
-      <p>EXIT - FIRE ESCAPE</p>
-      <p>USE IN CASE OF EMERGENCY ONLY</p>
+      <p><signpost>EXIT - FIRE ESCAPE</signpost></p>
+      <p><signpost>USE IN CASE OF EMERGENCY ONLY</signpost></p>
       <p>'I reckon this constitutes an emergency,' you mutter, as you get ready to break cover and run towards the door. Just as you are about to leave your hand brushes against the stock of a sawn-off shotgun that is lying on a shelf beneath the counter. Both hammers are cocked and the chamber tags show that both barrels are loaded.</p>
       <choice idref="sect176">If you wish to take the weapon, <link-text>turn to 176</link-text>.</choice>
       <choice idref="sect84">If you decide to ignore it, <link-text>turn to 84</link-text>.</choice>
@@ -4651,7 +4655,7 @@ ERRATA 281-315
 
      <data>
       <p>In the distance you see the sun resting on the peak of Signal Mountain, and you estimate that no more than an hour of daylight remains. Then a freeway mileage sign looms into view, its paint blistered and barely legible. You slow down and read:</p>
-      <p>BIG SPRING 16 MLS</p>
+      <p><signpost>BIG SPRING 16 MLS</signpost></p>
       <p>The sign coaxes a cheer from those aboard the bus and renews your hopes of completing the first stage of your long journey west. A few miles further on you see another sign. This announces that you are approaching the town of Coahoma. With the memory of what happened at Westbrook still fresh in your mind, you decide to bring the convoy to a halt.</p>
       <choice idref="sect11">If you possess <typ class="item">Binoculars</typ> or a <typ class="item">Telescope</typ>, <link-text>turn to 11</link-text>.</choice>
       <choice idref="sect33">If you possess neither of these items, <link-text>turn to 33</link-text>.</choice>
@@ -4855,16 +4859,16 @@ ERRATA 281-315
        <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>map of Central Texas</quote> with <quote>Map of Central Texas</quote>.</p>
        <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>CLOSECOMBAT</quote> with <quote>CLOSE COMBAT</quote>.</p>
        <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
-       <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>as <ch.plus/>1 If </quote> with <quote>as <ch.plus/>1.  If </quote>.</p>
+       <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>as <ch.plus/>1 If </quote> with <quote>as <ch.plus/>1. If </quote>.</p>
        <p>(<a idref="calstory">Cal's Story</a>) Replaced <quote>re-establish</quote> with <quote>reestablish</quote>.</p>
-       <p>(<a idref="sect13">13</a>) Added missing period after <quote>Random Number Table</quote></p>.
-       <p>(<a idref="sect48">48</a>) Replaced <quote>dislodgng</quote> with <quote>dislodging</quote></p>.
-       <p>(<a idref="sect48">48</a>) Replaced <quote>Skull,'</quote> with <quote>Skull?'</quote></p>.
-       <p>(<a idref="sect55">55</a>) Replaced <quote>thunderbird</quote> with <quote>Thunderbird</quote></p>.
-       <p>(<a idref="sect94">94</a>) Replaced <quote>shouting :</quote> with <quote>shouting: </quote></p>.
-       <p>(<a idref="sect117">117</a>) Added missing period after <quote>(0 equals 10)</quote></p>.
-       <p>(<a idref="sect122">122</a>) Replaced <quote>gutteral</quote> with <quote>guttural</quote></p>.
-       <p>(<a idref="sect143">143</a>) Replaced <quote>( with</quote> with <quote>(with</quote></p>.
+       <p>(<a idref="sect13">13</a>) Added missing period after <quote>Random Number Table</quote>.</p>
+       <p>(<a idref="sect48">48</a>) Replaced <quote>dislodgng</quote> with <quote>dislodging</quote>.</p>
+       <p>(<a idref="sect48">48</a>) Replaced <quote>Skull,'</quote> with <quote>Skull?'</quote>.</p>
+       <p>(<a idref="sect55">55</a>) Replaced <quote>thunderbird</quote> with <quote>Thunderbird</quote>.</p>
+       <p>(<a idref="sect94">94</a>) Replaced <quote>shouting :</quote> with <quote>shouting: </quote>.</p>
+       <p>(<a idref="sect117">117</a>) Added missing period after <quote>(0 equals 10)</quote>.</p>
+       <p>(<a idref="sect122">122</a>) Replaced <quote>gutteral</quote> with <quote>guttural</quote>.</p>
+       <p>(<a idref="sect143">143</a>) Replaced <quote>( with</quote> with <quote>(with</quote>.</p>
        <p>(<a idref="sect149">149</a>) Replaced <quote>assess</quote> with <quote>assesses</quote>.</p>
        <p>(<a idref="sect156">156</a>) Replaced <quote>take its toll of those</quote> with <quote>take its toll on those</quote>.</p>
        <p>(<a idref="sect182">182</a>) Replaced <quote>Erath country</quote> with <quote>Erath County</quote>.</p>
@@ -4880,7 +4884,7 @@ ERRATA 281-315
        <p>(<a idref="sect338">338</a>) Replaced <quote>bushwacked</quote> with <quote>bushwhacked</quote>.</p>
        <p>(<a idref="sect338">338</a>) Replaced <quote>Rickenbaker</quote> with <quote>Rickenbacker</quote>.</p>
        <p>(<a idref="sect342">338</a>) Replaced <quote>fusilage</quote> with <quote>fuselage</quote>.</p>
-       <p>(<a idref="crsumary">Combat Rules Summary</a>) Added missing period after <quote>from your total</quote></p>.
+       <p>(<a idref="crsumary">Combat Rules Summary</a>) Added missing period after <quote>from your total</quote>.</p>
        <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
       </data>
      </section>
