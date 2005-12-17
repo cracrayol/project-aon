@@ -5,14 +5,22 @@
  %general.links;
  <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
  %xhtml.links;
+
+ <!ENTITY % general.inclusions SYSTEM "geninc.mod">
+ %general.inclusions;
 ]>
 
-<gamebook xml:lang="en-UK" version="0.10">
+<gamebook xml:lang="en-UK" version="0.11.3">
 
 <!--
 
 $Id$
 $Log$
+Revision 1.5  2005/12/17 21:36:37  angantyr
+- Fixed some DTD compliance (tiny structural stuff)
+- Updated herader, title and acknowledgement parts (incl. bios and links)
+- Added footnote positions (for well-formedness)
+
 Revision 1.4  2005/12/07 12:42:40  Wibbleboy
 Applied misc formatting changes to match manual of style.
 
@@ -65,19 +73,19 @@ ERRATA 281-315
 
 <meta>
  <title>Highway Holocaust</title>
-  <creator class="short">Joe Dever and Melvyn Grant</creator>
+  <creator class="short">Joe Dever</creator>
   <creator class="medium">Joe Dever<br />Illustrated by Melvyn Grant</creator>
   <creator class="long">
-   &inclusion.joe.dever.bio.lw;
-<!--   &inclusion.brian.williams.bio.lw;-->
+   &inclusion.joe.dever.bio.fw;
+   &inclusion.melvyn.grant.bio.fw;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2005</year><month>11</month><day>25</day></date>
+  <date class="publication"><year>2005</year><month>12</month><day>17</day></date>
   <description class="blurb">
    <p>You are Cal Phoenix, the freeway warrior, champion and protector of Dallas Colony One. A murderous gang of H.A.V.O.C. clansmen, led by the psychotic Mad Dog Michigan, are bent on destroying your fragile colony as it crosses the wastelands of Texas on the first stage of a life-or-death exodus to the California coast. These bike-riding clansmen are a formidable enemy: armed, cunning, and extremely dangerous, capable of launching a lightning raid at any time, day or night. You will need all your wits about you if you are to defend your people and reach your destination intact!</p>
   </description>
   <description class="publication">
-   <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
+   <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
   </description>
   <rights class="copyrights">Text copyright <ch.copy/> 1988 Joe Dever.<br />Illustrations copyright <ch.copy/> 1988 Melvyn Grant.</rights>
   <rights class="license-notification">
@@ -118,32 +126,32 @@ ERRATA 281-315
    </meta>
 
    <data>
-    <p><quote>I would be especially pleased if my granting of the rights to distribute my books in this way was seen as my <quote>millennium gift</quote> to all those devoted readers who have kept the Kai flag flying high, through all the good times, and the not-so-good. It would make me very proud indeed if this enterprise laid the foundations of a lasting legacy, securing the longevity of Lone Wolf by making my creation freely and readily accessible to current and future online generations. For them, for us, for Sommerlund and the Kai.<ch.ellips/></quote> <strong>Joe Dever</strong></p>
-    <p>Project Aon would first like to thank Joe Dever for making this generous offering of the books that we have all loved from the beginning. We would also like to acknowledge the following members of Project Aon for their diligent work:</p>
+
+     &inclusion.joe.dever.endowment;
 
     <section class="frontmatter" id="credits">
      <meta><title>Credits</title></meta>
 
      <data>
       <dl>
-       <dt>Transcription</dt>
-        <dd>Ryan Landek</dd>
-       <dt>Illustration Transcription</dt>
-        <dd>Jonathan Blake<br />Simon Osborne</dd>
-       <dt>XML</dt>
-        <dd>Jonathan Blake<br />Jeff Dougan</dd>
-       <dt>Alternate Illustrations</dt>
-        <dd>JC Alvarez (text illustrations and action charts)<br />Jonathan Blake (extramatter charts and tables)<br />Michael Hahn (map)</dd>
-       <dt>Proofreading</dt>
-        <dd>Mark Laird (Sections 36<ch.endash/>70 and 281<ch.endash/>315)<br />Christian Leonhard (Sections 106<ch.endash/>140 and 211<ch.endash/>245)<br />Brad Phelps (Sections 176<ch.endash/>210)<br />Michael Richey (Sections 1<ch.endash/>35 and 316<ch.endash/>350)<br />Tyson Torres (Sections 71<ch.endash/>105, 141<ch.endash/>175 and 246<ch.endash/>280)</dd>
-       <dt>Editing</dt>
-        <dd>Mike Feldman<br />Ingo Kl<ch.ouml/>cker<br />Mark Laird<br />Simon Osborne<br />Thomas Wolmer</dd>
-       <dt>PDF Layout</dt>
-        <dd>Ingo Kl<ch.ouml/>cker</dd>
-       <dt>Coordination</dt>
-        <dd>Jonathan Blake</dd>
-       <dt>Special Thanks</dt>
-        <dd>Pedro Almeida</dd>
+        <dt>Transcription</dt>
+         <dd>Matthew Reynolds</dd>
+	<dt>Illustration Transcription</dt>
+	 <dd></dd>
+        <dt>XML</dt>
+         <dd>Jonathan Blake<br />Iain Smith</dd>
+        <dt>Replacement Illustrations</dt>
+         <dd>Iain Smith</dd>
+        <dt>Proofreading</dt>
+         <dd>Iain Smith (frontmatter)<br />Matthew Reynolds (sections 1&endash;105, 246-280)<br />Simon Osborne (sections 106&endash;245, 281-350)</dd>
+        <dt>Editing</dt>
+         <dd>Simon Osborne</dd>
+        <!-- <dt>PDF Layout</dt>
+         <dd></dd> -->
+        <dt>Coordination</dt>
+         <dd>Jonathan Blake<br />Iain Smith</dd>
+        <dt>Special Thanks</dt>
+         <dd></dd>
       </dl>
      </data>
     </section>
@@ -466,12 +474,11 @@ ERRATA 281-315
        <li><p>After working out your Combat Ratio, pick a number from the <a idref="random">Random Number Table</a>.</p></li>
        <li>
         <p>Turn to the Close Combat Results Table on the inside back cover of the book. Along the top of the chart are the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the number that you have picked (the random numbers appear down the side of the chart). You now have the <typ class="attribute">ENDURANCE</typ> points lost by both Cal Phoenix and his enemy in this round of close combat. (E represents points lost by the enemy; CP represents points lost by Cal Phoenix.)</p>
-        <p>Example<br />The Combat Ratio between Cal Phoenix and the Renegade Clansman has been established as <ch.plus/>1. If the number picked from the <a idref="random">Random Number Table</a> is a 4, then the result of the first round of close combat is:
-         <ul>
+        <p>Example<br />The Combat Ratio between Cal Phoenix and the Renegade Clansman has been established as <ch.plus/>1. If the number picked from the <a idref="random">Random Number Table</a> is a 4, then the result of the first round of close combat is:</p>
+        <ul>
           <li>Cal Phoenix loses 3 <typ class="attribute">ENDURANCE</typ> points.</li>
           <li>Renegade Clansman loses 4 <typ class="attribute">ENDURANCE</typ> points.</li>
          </ul>
-        </p>
        </li>
        <li><p>On the <a idref="action">Action Chart</a>, mark the changes in <typ class="attribute">ENDURANCE</typ> points to the participants in the close combat.</p></li>
        <li><p>Unless otherwise instructed, or unless you have an option to evade, start the next round of close combat.</p></li>
@@ -639,7 +646,7 @@ ERRATA 281-315
      <data>
       <p>A gnawing pain, brought on by the exertion of opening your backpack, stiffens your right hand. You grit your teeth and persist until your aching fingers locate the tip of your survival flare. With care you remove it from the pack and position it between the ropes that bind your body in such a way as to avoid burning yourself when you set it off.</p>
       <p>Less than a dozen clanswomen and children are on the street when you decide to fire the flare. There is a flash of red light at your side as it erupts into life, then you are engulfed by a huge cloud of choking crimson smoke. The flare alerts the clanswomen who immediately raise the alarm while you struggle against your smouldering bonds.</p>
-      <p>Pick a number from the <a idref="random">Random Number Table</a></p>.
+      <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect91">If the number you have picked is 0-4, <link-text>turn to 91</link-text>.</choice>
       <choice idref="sect30">If the number is 5-9, <link-text>turn to 30</link-text>.</choice>
      </data>
@@ -725,7 +732,7 @@ ERRATA 281-315
      </footnotes>
 
      <data>
-      <p>The instant you tap the number 20 on the keypad, there is a sharp click and the steel door swings inwards to reveal the shelved walls of a strongroom beyond. You smile with satisfaction at having cracked the university's door code: the number in the last column of each row is the sum of the numbers in the first two columns, minus the number in the third column.</p>
+      <p>The instant you tap the number 20 on the keypad,<a id="sect20-1" idref="sect20-1-foot" class="footnote" /> there is a sharp click and the steel door swings inwards to reveal the shelved walls of a strongroom beyond. You smile with satisfaction at having cracked the university's door code: the number in the last column of each row is the sum of the numbers in the first two columns, minus the number in the third column.</p>
       <p>Curious as to what lies within, you enter the strongroom and inspect its dusty shelves. This concrete vault contains the documentation of experiments and small quantities of what were once considered precious metals - gold, platinum, silver and titanium. After a thorough search you find three items that you may be able to put to practical use:</p>
       <ul>
        <li><typ class="item">GEIGER COUNTER</typ></li>
@@ -1150,7 +1157,7 @@ ERRATA 281-315
       <p>We'll be here forever if we have to search the shelves,' you whisper.</p>
       <p>'I guess you're right,' replies Cutter, 'but I think I know a quicker way of finding what we need. Follow me.'</p>
       <p>Intrigued by Cutter's reply, you follow him out of the stores building, across a parking lot, and into another section of the depot that is marked:</p>
-      <p><signpost>ZONE 3: MUNICIPAL VEHICLE SERVICING</signpost></p>
+      <signpost>ZONE 3: MUNICIPAL VEHICLE SERVICING</signpost>
       <p>After searching four of the dozen service bays, finally he discovers what he is looking for: a school bus. 'Cal, you keep y'eyes open while I strip the linkage out o' this baby. Give me an hour an' we'll be on our way.'</p>
       <p>Nervously you stand guard at the door to the service bay while Cutter works. All is quiet until, forty minutes later, you see something moving among the vehicles on the far side of the parking lot: it is a drunken clansman. Slowly he staggers nearer, taking alternate gulps from bottles clutched in either hand. He is about to pass by when Cutter drops a spanner. The ringing noise pierces his drunken stupor and prompts him to investigate.</p>
       <p>'Trouble on its way!' you whisper to Cutter, but your warning is too late. The clansman comes lumbering through the open door, brandishing his bottles like clubs. He sees you and screams an oath as he gets ready to launch his attack.</p>
@@ -1639,7 +1646,7 @@ ERRATA 281-315
      </footnotes>
 
      <data>
-      <p>The moment you tap the correct number on the keypad, there is loud click and the steel door creaks inwards to reveal the shelved walls of a strongroom beyond. You smile with satisfaction at having cracked the university's door code: the number of the last column of each row is the sum of the number of the first two columns, minus the number in the third column.</p>
+      <p>The moment you tap the correct number on the keypad,<a id="sect98-1" idref="sect98-1-foot" class="footnote" /> there is loud click and the steel door creaks inwards to reveal the shelved walls of a strongroom beyond. You smile with satisfaction at having cracked the university's door code: the number of the last column of each row is the sum of the number of the first two columns, minus the number in the third column.</p>
       <p>Intrigued by what lies within, you enter the strongroom and peer along the dusty shelves. The vault contains the documentation of experiments and quantities of what were once considered precious metals - gold, platinum, silver and titanium. After a thorough search, you find three items that may be put to practical use:</p>
       <ul>
        <li><typ class="item">GEIGER COUNTER</typ></li>
@@ -1909,7 +1916,7 @@ ERRATA 281-315
       <p>Once the convoy is clear of the bridge, Cutter pulls over to the side of the highway and you stop in line behind him and the tanker. Uncle Jonas jumps down from his cab and together you run forward to check the damage to the bus. The front and sides are riddled with bullet holes, many of which have penetrated the engine and passenger compartments, yet, miraculously, no one has been killed or seriously injured. Aunt Betty-Ann appears at a window and reports that four members of the colony have been hit. She says not to worry - they have minor wounds and she is sure they will pull through.</p>
       <p>The radiator is leaking coolant but Cutter is confident that he can have it fixed within an hour. 'It's a real shame we've got so few guns aboard,' grumbles Cutter, as he sets to work sealing the perforated radiator mesh. 'It ain't no fun being the target for them punks when you don't get a chance to shoot back.'</p>
       <p>A hundred yards along the highway you see a sign that points to a road leading off to the east. It says:</p>
-      <p><signpost>CARSWELL AIR FORCE BASE</signpost></p>
+      <signpost>CARSWELL AIR FORCE BASE</signpost>
       <choice idref="sect342">If you wish to investigate the base while Cutter finishes his repairs, <link-text>turn to 342</link-text>.</choice>
       <choice idref="sect295">If you decide to stay with the convoy, <link-text>turn to 295</link-text>.</choice>
      </data>
@@ -2311,7 +2318,7 @@ ERRATA 281-315
        </tr>
       </table>
       <p>You study the rows of numbers carefully, looking for a pattern. By tapping on the keypad the number that is missing from the last row, you will release the lock and open the door.</p>
-      <p>When you think you know the missing number, turn to the entry that bears that number.</p>
+      <p>When you think you know the missing number, turn to the entry that bears that number.<a id="sect152-1" idref="sect152-1-foot" class="footnote" /></p>
       <choice idref="sect171">If you cannot work out the correct answer, <link-text>turn to 171</link-text>.</choice>
      </data>
     </section>
@@ -3542,7 +3549,7 @@ ERRATA 281-315
       </table>
 
       <p>You study the rows of numbers carefully, looking for a pattern. By tapping on the keypad the number that is missing from the last row, you will release the lock and open the door.</p>
-      <p>When you think you know the missing number turn to the entry that bears that number.</p>
+      <p>When you think you know the missing number turn to the entry that bears that number.<a id="sect255-1" idref="sect255-1-foot" class="footnote" /></p>
       <choice idref="sect194">If you cannot work out the correct answer, <link-text>turn to 194</link-text>.</choice>
      </data>
     </section>
@@ -3754,7 +3761,7 @@ ERRATA 281-315
       <p>You manage to avoid two more patrols before escaping from the mall and meeting up with Cutter at the truck depot. You are both relieved to discover the place empty and unguarded, and quickly you make your way to the stores building. You find the records office, but without electricity you cannot access the computer files to pinpoint the exact location of the spare you need. With mounting fear you realize that in order to find a new steering linkage you will have to search every one of the 1,600 storage bays that occupy the building.</p>
       <p>'We'll be here forever if we have to search the shelves,' you whisper. 'I guess you're right,' replies Cutter, 'but I think I know a quicker way of finding what we need. Follow me.'</p>
       <p>Intrigued by Cutter's reply, you follow him out of the stores building, across a parking lot and into another section of the depot that is marked:</p>
-      <p><signpost>ZONE 3: MUNICIPAL VEHICLE SERVICING</signpost></p>
+      <signpost>ZONE 3: MUNICIPAL VEHICLE SERVICING</signpost>
       <p>After searching four of the dozen service bays, finally he discovers what he is looking for: a school bus. 'Cal, you keep y'eyes open while I strip the linkage out o' this baby. Give me an hour an' we'll be on our way.</p>
       <p>Nervously you stand guard at the door to the service bay while Cutter works. All is quiet until, forty minutes later, you see something moving among the vehicles on the far side of the parking, lot: it is a drunken clansman. Slowly he staggers nearer, taking alternating gulps from the bottles clutched in either hand. He is about to pass on his way when Cutter drops a spanner. The ringing noise pierces his drunken stupor and prompts him to investigate.</p>
       <p>'Trouble on its way!' you whisper to Cutter, but your warning is too late. A moment later, the clansman comes lurching through the open door, brandishing his bottles like clubs. He sees you and screams an oath as he gets ready to launch his attack.</p>
@@ -3820,7 +3827,7 @@ ERRATA 281-315
 
      <data>
       <p>Two shots are fired almost simultaneously, filling the bar with a deafening explosion of noise. They rip open the front of the counter less than five feet from where you are crouching, bringing down most of the rickety shelves that line the back wall. Amid a cascade of bottles and glasses, you scurry towards the end of the counter, your eyes fixed on a door situated beneath the staircase. Above it, an unlit sign reads:</p>
-      <p><signpost>EXIT - FIRE ESCAPE USE IN CASE OF EMERGENCY</signpost></p>
+      <signpost>EXIT - FIRE ESCAPE USE IN CASE OF EMERGENCY</signpost>
       <p>'I reckon this constitutes an emergency,' you mutter, as you get ready to break cover and run towards the door. Just as you are about to leave your hand brushes against the stock of a sawn-off shotgun that is lying on a shelf beneath the counter. Both hammers are cocked and the chamber tags show that both barrels are loaded.</p>
       <choice idref="sect176">If you wish to take this weapon, <link-text>turn to 176</link-text>.</choice>
       <choice idref="sect84">If you decide to ignore it, <link-text>turn to 84</link-text>.</choice>
@@ -4496,8 +4503,8 @@ ERRATA 281-315
      <data>
       <p>The evil-sounding laughter is cut short by a deafening roar as both barrels of a Browning Citori are discharged at the counter. The heavy loads rip through the front, bringing down most of the rickety shelves that line the back wall. A cascade of bottles and glasses rains down on your head, causing you further injury as you scurry towards the end of the counter: lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <p>Ahead, beneath the staircase, you see a door with an unlit sign above it that reads:</p>
-      <p><signpost>EXIT - FIRE ESCAPE</signpost></p>
-      <p><signpost>USE IN CASE OF EMERGENCY ONLY</signpost></p>
+      <signpost>EXIT - FIRE ESCAPE</signpost>
+      <signpost>USE IN CASE OF EMERGENCY ONLY</signpost>
       <p>'I reckon this constitutes an emergency,' you mutter, as you get ready to break cover and run towards the door. Just as you are about to leave your hand brushes against the stock of a sawn-off shotgun that is lying on a shelf beneath the counter. Both hammers are cocked and the chamber tags show that both barrels are loaded.</p>
       <choice idref="sect176">If you wish to take the weapon, <link-text>turn to 176</link-text>.</choice>
       <choice idref="sect84">If you decide to ignore it, <link-text>turn to 84</link-text>.</choice>
@@ -4655,7 +4662,7 @@ ERRATA 281-315
 
      <data>
       <p>In the distance you see the sun resting on the peak of Signal Mountain, and you estimate that no more than an hour of daylight remains. Then a freeway mileage sign looms into view, its paint blistered and barely legible. You slow down and read:</p>
-      <p><signpost>BIG SPRING 16 MLS</signpost></p>
+      <signpost>BIG SPRING 16 MLS</signpost>
       <p>The sign coaxes a cheer from those aboard the bus and renews your hopes of completing the first stage of your long journey west. A few miles further on you see another sign. This announces that you are approaching the town of Coahoma. With the memory of what happened at Westbrook still fresh in your mind, you decide to bring the convoy to a halt.</p>
       <choice idref="sect11">If you possess <typ class="item">Binoculars</typ> or a <typ class="item">Telescope</typ>, <link-text>turn to 11</link-text>.</choice>
       <choice idref="sect33">If you possess neither of these items, <link-text>turn to 33</link-text>.</choice>
