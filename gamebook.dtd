@@ -13,6 +13,11 @@ $Id$
 
 Change Log:
 
+26 December 2005 (version 0.11.4)
+ * Added link.attributes and the optional "series" attribute to
+   "bookref", and fleshed out the "bookref" and "footref"
+   descriptions.
+
 5 December 2005 (version 0.11.3)
  * Corrected ATTLISTs of character elements
  * Added "ch.apos", "ch.frac116", and "ch.plus" elements
@@ -966,6 +971,8 @@ Example:
 <!ELEMENT bookref ( %inline.content; )*>
 <!ATTLIST bookref
           %core.attributes;
+          %link.attributes;
+          series  CDATA #IMPLIED
           book    CDATA #REQUIRED
           section CDATA #IMPLIED
 >
@@ -974,19 +981,30 @@ Example:
 The "bookref" element is used to contain inline content that should be a 
 hypertext anchor to another book.
 
+The "series" attribute is a tag that denotes the series of the book that
+the link points to. The attribute may be left out if the book is part of
+the same series as the one containing the link.
+
 The "book" attribute is a tag that denotes the book that the link points
 to. This is not necessarily a URL.
 
 The "section" attribute is a tag indicating which section to link to.
-This is not necessarily a URL.
+This is not necessarily a URL. The attribute may be left out if no
+particular section is referred to.
 
 Example:
 
  <p . . .>
   . . .
-  <bookref book="11tpot" id="sect33">
+  <bookref series="lw" book="11tpot" section="sect33">
    The Prisoners of Time: Section 33
   </bookref>
+  . . .
+ </p>
+
+ <p . . .>
+  . . .
+  <bookref book="04wotw">Book 4</bookref>
   . . .
  </p>
 
@@ -1000,7 +1018,7 @@ Example:
 <!--
 
 The "footref" element is used to indicate the position of a reference
-to a "footnote" element.
+to a "footnote" element. It should normally not contain any text.
 
 Example:
 
