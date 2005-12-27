@@ -9,6 +9,9 @@
 $Id$
 
 $Log$
+Revision 1.4  2005/12/27 01:51:29  angantyr
+Added templates for the "bookref" and "footref" elements.
+
 Revision 1.3  2005/12/05 21:29:04  jonathan.blake
 Added the facilities to properly handle character elements.
 
@@ -678,6 +681,7 @@ Todo:
  </xsl:choose>
 </xsl:template>
 
+<!-- This template is obsolete, the "footref" element should be used instead -->
 <xsl:template match="a[@class='footnote']">
  <xsl:apply-templates />
  <sup>
@@ -698,6 +702,48 @@ Todo:
    <img src="{$illustration-src}" class="accent" width="{$illustration-width}" height="{$illustration-height}" alt="" border="" align="left" />
   </xsl:if>
  </xsl:for-each>
+</xsl:template>
+
+<xsl:template match="bookref">
+ <a>
+  <xsl:attribute name="href">
+   <xsl:variable name="my-section">
+    <xsl:choose>
+     <xsl:when test="@section">
+      <xsl:value-of select="@section" />
+     </xsl:when>
+     <xsl:otherwise>
+      <xsl:text>title</xsl:text>
+     </xsl:otherwise>
+    </xsl:choose>
+   </xsl:variable>
+   <xsl:variable name="my-series">
+    <!-- If series is specified, go one directory back and then to series. Otherwise, add nothing. -->
+    <xsl:choose>
+     <xsl:when test="@series">
+      <xsl:text>/../</xsl:text><xsl:value-of select="@series" />
+     </xsl:when>
+     <xsl:otherwise>
+      <xsl:text></xsl:text>
+     </xsl:otherwise>
+    </xsl:choose>
+   </xsl:variable>
+   <xsl:text>..</xsl:text><xsl:value-of select="$my-series" /><xsl:text>/</xsl:text><xsl:value-of select="@book" /><xsl:text>/</xsl:text><xsl:value-of select="$my-section" /><xsl:text>.htm</xsl:text>
+  </xsl:attribute>
+  <xsl:if test="@id"><xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute></xsl:if>
+  <xsl:apply-templates />
+ </a>
+</xsl:template>
+
+<xsl:template match="footref">
+ <xsl:apply-templates />
+ <sup>
+  <a>
+   <xsl:attribute name="href"><xsl:text>#</xsl:text><xsl:value-of select="@idref" /></xsl:attribute>
+   <xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute>
+   <xsl:number count="footref" from="/" level="any" format="1" />
+  </a>
+ </sup>
 </xsl:template>
 
 <xsl:template match="em">
