@@ -7,6 +7,9 @@
 # $Id$
 #
 # $Log$
+# Revision 2.0  2006/02/28 23:50:54  jonathan.blake
+# Extensive overhaul and changed command line interface
+#
 # Revision 1.2  2005/10/13 00:48:47  angantyr
 # Put Paul Bonner as illustrator of the GS books.
 #
@@ -40,284 +43,147 @@
 # Revision 1.1  2002/10/18 15:38:41  jblake
 # Initial revision
 #
+# ///// To Do
+# * make the transformation more generic by using an xslt-params rule
+# 
 #####
 
 use strict;
 
-##
+delete @ENV{qw(PATH IFS CDPATH ENV BASH_ENV)}; # clean house for taint mode
 
-my $PROGRAM_NAME    = "gbtoxhtml";
-my $PATH_PREFIX     = "$ENV{'AONPATH'}/data";
-my $XML_PATH        = "xml";
-my $BOOK_PATH       = "xhtml";
-my $WEBSITE_PATH    = "website";
+my $PROGRAM_NAME    = 'gbtoxhtml';
+my $USAGE           = "$PROGRAM_NAME [options]\n\t--book=[book code]\n\t--meta=[metadata file]\n\t--xml=[book XML]\n\t--xsl=[XSL transformation]\n";
 
-##
+my $FILENAME_SEPARATOR = '/';
 
-my $CREATE_CSS = "$ENV{'HOME'}/aon/bin/create-css.pl";
-my $RXP        = "$ENV{'HOME'}/aon/bin/rxp";
-my $CP         = "/bin/cp";
-my $MV         = "/bin/mv";
-my $TAR        = "/bin/tar";
-my $ZIP        = "/usr/bin/zip";
-my $BZIP2      = "/usr/bin/bzip2";
-my $JAVA       = "/usr/lib/java/jre/bin/java";
-my $RM         = "/bin/rm";
-my $CHMOD      = "/bin/chmod";
+my $RXP        = '/home/projectaon/bin/rxp';
+my $CP         = '/bin/cp';
+my $MV         = '/bin/mv';
+my $TAR        = '/bin/tar';
+my $ZIP        = '/usr/bin/zip';
+my $BZIP2      = '/usr/bin/bzip2';
+my $JAVA       = '/usr/bin/java';
+my $XALAN_JAR  = '/home/projectaon/bin/xalan.jar';
+my $RM         = '/bin/rm';
+my $CHMOD      = '/bin/chmod';
 
-##
+###
 
-my $XML_SOURCE               = "";
-my $TEXT_COLOR               = "";
-my $LINK_COLOR               = "";
-my $HLINK_BACK_COLOR         = "";
-my $HLINK_LIGHT_BORDER_COLOR = "";
-my $HLINK_DARK_BORDER_COLOR  = "";
-my $USE_ILLUSTRATORS         = "";
+my $bookCode     = '';
+my $metaFile     = '';
+my $bookXML      = '';
+my $xhtmlXSL     = '';
 
-##
+my $verbose = 0;
 
-unless( $#ARGV == 0 ) { die "Usage:\n\t${PROGRAM_NAME} bookCode\n"; }
-my( $bookCode ) = @ARGV;
+while( $#ARGV > -1 ) {
+    my $cmdLineItem = shift @ARGV;
+    if( $cmdLineItem =~ /^--book=(.+)$/ ) {
+	$bookCode = $1;
+    }
+    elsif( $cmdLineItem =~ /^--meta=(.+)$/ ) {
+	$metaFile = $1;
+    }
+    elsif( $cmdLineItem =~ /^--xml=(.+)$/ ) {
+	$bookXML = $1;
+    }
+    elsif( $cmdLineItem =~ /^--xsl=(.+)$/ ) {
+	$xhtmlXSL = $1;
+    }
+    elsif( $cmdLineItem =~ /^--verbose/ ) {
+	$verbose = 1;
+    }
+    else { die $USAGE; }
+}
 
-if( $bookCode eq "01fftd" ) {
-    $XML_SOURCE        = "01fftd.xml";
-    $BOOK_PATH         .= "/lw/01fftd";
-    $TEXT_COLOR        = "#003300";
-    $LINK_COLOR        = "#006633";
-    $HLINK_BACK_COLOR  = "#cce0c1";
-    $USE_ILLUSTRATORS  = ":Gary Chalk:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "02fotw" ) {
-    $XML_SOURCE        = "02fotw.xml";
-    $BOOK_PATH         .= "/lw/02fotw";
-    $TEXT_COLOR        = "#003333";
-    $LINK_COLOR        = "#009999";
-    $HLINK_BACK_COLOR  = "#ccebd5";
-    $USE_ILLUSTRATORS  = ":Gary Chalk:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "03tcok" ) {
-    $XML_SOURCE        = "03tcok.xml";
-    $BOOK_PATH         .= "/lw/03tcok";
-    $TEXT_COLOR        = "#003366";
-    $LINK_COLOR        = "#0099cc";
-    $HLINK_BACK_COLOR  = "#ccebdf";
-    $USE_ILLUSTRATORS  = ":Gary Chalk:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "04tcod" ) {
-    $XML_SOURCE        = "04tcod.xml";
-    $BOOK_PATH         .= "/lw/04tcod";
-    $TEXT_COLOR        = "#000033";
-    $LINK_COLOR        = "#000099";
-    $HLINK_BACK_COLOR  = "#ccccd5";
-    $USE_ILLUSTRATORS  = ":Gary Chalk:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "05sots" ) {
-    $XML_SOURCE        = "05sots.xml";
-    $BOOK_PATH         .= "/lw/05sots";
-    $TEXT_COLOR        = "#330000";
-    $LINK_COLOR        = "#cc9900";
-    $HLINK_BACK_COLOR  = "#f5ebb6";
-    $USE_ILLUSTRATORS  = ":Gary Chalk:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "06tkot" ) {
-    $XML_SOURCE        = "06tkot.xml";
-    $BOOK_PATH         .= "/lw/06tkot";
-    $TEXT_COLOR        = "#404000";
-    $LINK_COLOR        = "#999900";
-    $HLINK_BACK_COLOR  = "#ebebb6";
-    $USE_ILLUSTRATORS  = ":Gary Chalk:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "07cd" ) {
-    $XML_SOURCE        = "07cd.xml";
-    $BOOK_PATH         .= "/lw/07cd";
-    $TEXT_COLOR        = "#003300";
-    $LINK_COLOR        = "#00cc66";
-    $HLINK_BACK_COLOR  = "#ccf5cb";
-    $USE_ILLUSTRATORS  = ":Gary Chalk:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "08tjoh" ) {
-    $XML_SOURCE        = "08tjoh.xml";
-    $BOOK_PATH         .= "/lw/08tjoh";
-    $TEXT_COLOR        = "#334033";
-    $LINK_COLOR        = "#669966";
-    $HLINK_BACK_COLOR  = "#e0ebcb";
-    $USE_ILLUSTRATORS  = ":Gary Chalk:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "09tcof" ) {
-    $XML_SOURCE        = "09tcof.xml";
-    $BOOK_PATH         .= "/lw/09tcof";
-    $TEXT_COLOR        = "#330000";
-    $LINK_COLOR        = "#ff9900";
-    $HLINK_BACK_COLOR  = "#ffebb6";
-    $USE_ILLUSTRATORS  = ":Brian Williams:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "10tdot" ) {
-    $XML_SOURCE        = "10tdot.xml";
-    $BOOK_PATH         .= "/lw/10tdot";
-    $TEXT_COLOR        = "#330000";
-    $LINK_COLOR        = "#ff0000";
-    $HLINK_BACK_COLOR  = "#ffccb6";
-    $USE_ILLUSTRATORS  = ":Brian Williams:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "11tpot" ) {
-    $XML_SOURCE        = "11tpot.xml";
-    $BOOK_PATH         .= "/lw/11tpot";
-    $TEXT_COLOR        = "#333300";
-    $LINK_COLOR        = "#808066";
-    $HLINK_BACK_COLOR  = "#e6e6cb";
-    $USE_ILLUSTRATORS  = ":Brian Williams:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "12tmod" ) {
-    $XML_SOURCE        = "12tmod.xml";
-    $BOOK_PATH         .= "/lw/12tmod";
-    $TEXT_COLOR        = "#330000";
-    $LINK_COLOR        = "#990000";
-    $HLINK_BACK_COLOR  = "#ebccb6";
-    $USE_ILLUSTRATORS  = ":Brian Williams:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "13tplor" ) {
-    $XML_SOURCE        = "13tplor.xml";
-    $BOOK_PATH         .= "/lw/13tplor";
-    $TEXT_COLOR        = "#333300";
-    $LINK_COLOR        = "#666633";
-    $HLINK_BACK_COLOR  = "#e0e0c1";
-    $USE_ILLUSTRATORS  = ":Brian Williams:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "14tcok" ) {
-    $XML_SOURCE        = "14tcok.xml";
-    $BOOK_PATH         .= "/lw/14tcok";
-    $TEXT_COLOR        = "#000033";
-    $LINK_COLOR        = "#660099";
-    $HLINK_BACK_COLOR  = "#e0ccd5";
-    $USE_ILLUSTRATORS  = ":Brian Williams:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "15tdc" ) {
-    $XML_SOURCE               = "15tdc.xml";
-    $BOOK_PATH                .= "/lw/15tdc";
-    $TEXT_COLOR               = "#000033";
-    $LINK_COLOR               = "#6699cc";
-    $HLINK_BACK_COLOR         = "#e0ebdf";
-    $USE_ILLUSTRATORS         = ":Brian Williams:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "16tlov" ) {
-    $XML_SOURCE               = "16tlov.xml";
-    $BOOK_PATH                .= "/lw/16tlov";
-    $TEXT_COLOR               = "#000033";
-    $LINK_COLOR               = "#0033cc";
-    $HLINK_BACK_COLOR         = "#d9e1e0";
-    $USE_ILLUSTRATORS         = ":Brian Williams:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "17tdoi" ) {
-    $XML_SOURCE               = "17tdoi.xml";
-    $BOOK_PATH                .= "/lw/17tdoi";
-    $TEXT_COLOR               = "#003366";
-    $LINK_COLOR               = "#6699ff";
-    $HLINK_BACK_COLOR         = "#e0eaea";
-    $USE_ILLUSTRATORS         = ":Brian Williams:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "01gstw" ) {
-    $XML_SOURCE        = "01gstw.xml";
-    $BOOK_PATH         .= "/gs/01gstw";
-    $TEXT_COLOR        = "#330066";
-    $LINK_COLOR        = "#9900ff";
-    $HLINK_BACK_COLOR  = "#ebcce9";
-    $USE_ILLUSTRATORS  = ":Paul Bonner:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "02tfc" ) {
-    $XML_SOURCE               = "02tfc.xml";
-    $BOOK_PATH                .= "/gs/02tfc";
-    $TEXT_COLOR               = "#333300";
-    $LINK_COLOR               = "#999966";
-    $HLINK_BACK_COLOR         = "#ebebcb";
-    $USE_ILLUSTRATORS         = ":Paul Bonner:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "03btng" ) {
-    $XML_SOURCE        = "03btng.xml";
-    $BOOK_PATH         .= "/gs/03btng";
-    $TEXT_COLOR        = "#003333";
-    $LINK_COLOR        = "#669999";
-    $HLINK_BACK_COLOR  = "#e0ebd5";
-    $USE_ILLUSTRATORS  = ":Paul Bonner:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "04wotw" ) {
-    $XML_SOURCE        = "04wotw.xml";
-    $BOOK_PATH         .= "/gs/04wotw";
-    $TEXT_COLOR        = "#000033";
-    $LINK_COLOR        = "#9999cc";
-    $HLINK_BACK_COLOR  = "#ebebdf";
-    $USE_ILLUSTRATORS  = ":Paul Bonner:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "01hh" ) {
-    $XML_SOURCE        = "01hh.xml";
-    $BOOK_PATH         .= "/fw/01hh";
-    $TEXT_COLOR        = "#330066";
-    $LINK_COLOR        = "#9900ff";
-#    $SCROLL_BASE_COLOR = "#330066";
-    $USE_ILLUSTRATORS  = ":Melvyn Grant:Jonathan Blake:";
-}
-elsif( $bookCode eq "rh" ) {
-    $XML_SOURCE        = "rh.xml";
-    $BOOK_PATH         .= "/misc/rh";
-    $TEXT_COLOR        = "#400000";
-    $LINK_COLOR        = "#339933";
-    $HLINK_BACK_COLOR  = "#e1f0ca";
-    $USE_ILLUSTRATORS  = ":Brian Williams:JC Alvarez & Jonathan Blake:Jonathan Blake:";
-}
-elsif( $bookCode eq "mhahn" ) {
-    $XML_SOURCE        = "mhahn.xml";
-    $BOOK_PATH         .= "/misc/mhahn";
-    $TEXT_COLOR        = "#400000";
-    $LINK_COLOR        = "#339933";
-    $HLINK_BACK_COLOR  = "#e1f0ca";
-    $USE_ILLUSTRATORS  = ":Michael Hahn:";
-}
-elsif( $bookCode eq "jcalvarez" ) {
-    $XML_SOURCE        = "jcalvarez.xml";
-    $BOOK_PATH         .= "/misc/jcalvarez";
-    $TEXT_COLOR        = "#400000";
-    $LINK_COLOR        = "#339933";
-    $HLINK_BACK_COLOR  = "#e1f0ca";
-    $USE_ILLUSTRATORS  = ":JC Alvarez:";
-}
-elsif( $bookCode eq "statskeeper" ) { }
-elsif( $bookCode eq "base" ) { }
-else{ die "Error:\n\tUnknown book code ($bookCode).\n"; }
+if( $bookCode eq '' ) { die "Unspecified book code\n$USAGE"; }
+if( $metaFile eq '' ) { die "Unspecified metadata file\n$USAGE"; }
+if( $bookXML eq '' ) { die "Unspecified book XML file\n$USAGE"; }
+if( $xhtmlXSL eq '' ) { die "Unspecified XSL transformation file\n$USAGE"; }
 
-if( $bookCode eq "statskeeper" ) {
-  chdir( "$PATH_PREFIX" ) or die( "Cannot open Project Aon data directory \"$PATH_PREFIX\": $!" );
-  chdir( "$WEBSITE_PATH/main" ) or die( "Error: unable to change to statskeeper directory ($!)\n" );
-  print qx{$RM statskeeper.zip statskeeper.tar.bz2 statskeeper.tar};
-  my $statskeeperFiles = "statskeeper/index.htm statskeeper/lw/*htm statskeeper/lw/*/* statskeeper/gs/*htm statskeeper/gs/*/*";
-  print qx{$ZIP -8 -q statskeeper.zip $statskeeperFiles};
-  print qx{$TAR cf statskeeper.tar $statskeeperFiles};
-  print qx{$BZIP2 -9 *tar};
+if( -e $metaFile && -f $metaFile && -r $metaFile ) {
+    open( META, '<', $metaFile ) or die qq{Unable to open metadata file ($metaFile): $!\n};
 }
-elsif( $bookCode eq "base" ) {
-  chdir( "$PATH_PREFIX" ) or die( "Cannot open Project Aon data directory \"$PATH_PREFIX\": $!" );
-  chdir( "$WEBSITE_PATH/athome" ) or die( "Unable to change directory to \"$WEBSITE_PATH/athome\": $!\n" );
-  print qx{$RM base.zip base.tar.bz2 base.tar};
-  print qx{$ZIP -8 -q base.zip *ico *htm images/* style/*};
-  print qx{$TAR cf base.tar *ico *htm images/* style/*};
-  print qx{$BZIP2 -9 *tar};
+else { die qq{Improper metadata file ($metaFile)\n}; }
+
+my $meta = '';
+while( my $line = <META> ) {
+    $meta .= $line if $line !~ /^[[:space:]]*#/;
+}
+close META;
+
+my $rulesString = '';
+if( $meta =~ /^[[:space:]]*$bookCode[[:space:]]*{([^}]*)}/sm ) {
+    $rulesString = $1;
 }
 else {
-  print "Reminder:\n\tDid you comment out the LaTeX special character\n\tdeclarations in the book's XML file?\n";
-
-  chdir( "$PATH_PREFIX" ) or die( "Cannot open Project Aon data directory \"$PATH_PREFIX\": $!" );
-  system( "$RXP", "-Vs", "$XML_PATH/$XML_SOURCE" ) == 0 or die( "XML validation failed\n" );
-  unless( -d "$BOOK_PATH" ) { mkdir $BOOK_PATH or die( "Unable to create directory \"$PATH_PREFIX/$BOOK_PATH\": $!\n" ); }
-  print qx{$RM $BOOK_PATH/*};
-  print qx{$JAVA org.apache.xalan.xslt.Process -IN $XML_PATH/$XML_SOURCE -XSL $XML_PATH/xhtml.xsl -OUT \"$BOOK_PATH/foo.xml\" -PARAM book-path \"$BOOK_PATH\" -PARAM text-color \"$TEXT_COLOR\" -PARAM link-color \"$LINK_COLOR\" -PARAM use-illustrators \"$USE_ILLUSTRATORS\"};
-  print qx{$RM $BOOK_PATH/foo.xml};
-  print qx{$CREATE_CSS $BOOK_PATH \"$TEXT_COLOR\" \"\#ffffe6\" \"$LINK_COLOR\" \"$LINK_COLOR\" \"$HLINK_BACK_COLOR\" \"$LINK_COLOR\"};
-
-  print qx{$CP images/$BOOK_PATH/*gif images/$BOOK_PATH/*jpg $BOOK_PATH};
-  print qx{$CHMOD 600 $BOOK_PATH/*};
-  print qx{$TAR cf $bookCode.tar $BOOK_PATH/*};
-  print qx{$ZIP -8 -q $bookCode.zip $BOOK_PATH/*};
-  print qx{$BZIP2 -9 $bookCode.tar};
-  print qx{$CHMOD 600 $bookCode.tar.bz2 $bookCode.zip};
-
-  print qx{$MV $bookCode* $PATH_PREFIX/$BOOK_PATH/};
+    die "Book code ($bookCode) not found in metadata file or invalid file syntax\n";
 }
+
+my @rules = split( /[[:space:]\n]*;[[:space:]\n]*/, $rulesString );
+my %rulesHash;
+foreach my $rule (@rules) {
+    if( $rule =~ /[[:space:]]*([^:]+)[[:space:]]*:[[:space:]]*(.+)$/s ) {
+	$rulesHash{ $1 } = $2;
+    }
+    else {
+	die "Unrecognized rule syntax:\n$rule\n";
+    }
+}
+
+if( $bookXML =~ m{^([-\w\@./]+)$} ) {
+    $bookXML = $1;
+    if( -e $bookXML && -f $bookXML && -r $bookXML ) {
+	system( $RXP, '-Vs', $bookXML ) == 0 or die( "XML validation failed\n" );
+    }
+    unless( defined $rulesHash{'book-path'} ) { die "Metadata file leaves output path unspecified\n"; }
+    unless( -e $rulesHash{'book-path'} && -d $rulesHash{'book-path'} ) {
+	my @dirs = split ( /$FILENAME_SEPARATOR/, $rulesHash{'book-path'} );
+	my $dirPath = '';
+	for( my $i = 0; $i <= $#dirs; ++$i ) {
+	    $dirPath .= $dirs[$i] . $FILENAME_SEPARATOR;
+	    if( -e $dirPath && ! -d $dirPath ) { die "Output directory name exists and is not a directory\n"; }
+	    unless( -e $dirPath ) {
+		mkdir $dirPath or die( "Unable to create output directory ($rulesHash{'book-path'}): $!\n" );
+	    }
+	}
+    }
+    unless( -e $rulesHash{'book-path'} && -d $rulesHash{'book-path'} ) {
+	die "Unknown error creating output directory\n";
+    }
+
+    print qx{$RM $rulesHash{'book-path'}$FILENAME_SEPARATOR*};
+    print qx{$JAVA -classpath "$XALAN_JAR" org.apache.xalan.xslt.Process -IN "$bookXML" -XSL "$xhtmlXSL" -OUT "$rulesHash{'book-path'}${FILENAME_SEPARATOR}foo.xml" -PARAM background-color "$rulesHash{'background-color'}" -PARAM text-color "$rulesHash{'text-color'}" -PARAM link-color "$rulesHash{'link-color'}" -PARAM use-illustrators "$rulesHash{'use-illustrators'}"};
+    print qx{$RM $rulesHash{'book-path'}${FILENAME_SEPARATOR}foo.xml};
+
+    foreach my $cssTemplate (split( /:/, $rulesHash{'csst'} )) {
+	$cssTemplate =~ m/([^${FILENAME_SEPARATOR}]+)t$/;
+	my $templateFilename = $1;
+	open( TEMPLATE, '<', $cssTemplate ) or die "Unable to open CSS template file ($cssTemplate): $!\n";
+	open( STYLESHEET, '>', "$rulesHash{'book-path'}${FILENAME_SEPARATOR}${templateFilename}" ) or die "Unable to open stylesheet file ($rulesHash{'book-path'}${FILENAME_SEPARATOR}${templateFilename}) for writing: $!\n";
+        while( my $templateLine = <TEMPLATE> ) {
+            while( $templateLine =~ /%%([^%[:space:]]+)%%/ ) {
+		my $name = $1;
+	        $templateLine =~ s/%%${name}%%/$rulesHash{$name}/g;
+            }
+            print STYLESHEET $templateLine;
+        }
+    }
+    close TEMPLATE;
+    close STYLESHEET;
+
+    foreach my $imagePath (split( /:/, $rulesHash{'images'} )) {
+        unless( -e $imagePath && -d $imagePath ) {
+	    die "Image path ($imagePath) does not exist or is not a directory\n";
+	}
+        print qx{$CP $imagePath${FILENAME_SEPARATOR}* $rulesHash{'book-path'}};
+    }
+
+    print qx{$TAR cf ${bookCode}.tar $rulesHash{'book-path'}${FILENAME_SEPARATOR}*};
+    print qx{$ZIP -8 -q ${bookCode}.zip $rulesHash{'book-path'}${FILENAME_SEPARATOR}*};
+    print qx{$BZIP2 -9 ${bookCode}.tar};
+    print qx{$MV ${bookCode}* $rulesHash{'book-path'}${FILENAME_SEPARATOR}};
+}
+
+print "Success\n" if $verbose;
