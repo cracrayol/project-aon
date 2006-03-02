@@ -9,6 +9,9 @@
 $Id$
 
 $Log$
+Revision 1.5  2006/03/02 00:33:32  jonathan.blake
+Removed the 'book-path' parameter to work with new gbtoxhtml.pl
+
 Revision 1.4  2005/12/27 01:51:29  angantyr
 Added templates for the "bookref" and "footref" elements.
 
@@ -94,7 +97,6 @@ Todo:
 
 <!-- ====================== parameters ========================== -->
 
-<xsl:param name="book-path"><xsl:text>undefined-book</xsl:text></xsl:param>
 <xsl:param name="use-illustrators" />
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ colors ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -939,7 +941,7 @@ is included in all copies.
  <xsl:param name="filename">undefined</xsl:param>
  <xsl:param name="glossary-id-prefix"></xsl:param>
 
-<!-- <redirect:write file="{$book-path}/{$filename}.htm">-->
+<!-- <redirect:write file="{$filename}.htm">-->
  <redirect:write file="{$filename}.htm">
   <xsl:fallback>
    <xsl:text>xhtml-wrapper: Cannot write to filename: "</xsl:text>
