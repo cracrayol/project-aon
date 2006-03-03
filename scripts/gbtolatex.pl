@@ -12,19 +12,40 @@ use strict;
 my $PROGRAM_NAME      = "gbtolatex";
 my $XML_PATH          = "xml";
 my $XML_SOURCE        = "";
-my $BOOK_PATH         = "latex";
+my $PWD               = `pwd`;
+chomp($PWD);
+my $BOOK_PATH         = $PWD."/latex";
 my $TITLE_COLOR       = "";
 my $USE_ILLUSTRATORS  = "";
 
-my $JAVA = "/cygdrive/c/WINDOWS/java.exe";
+# Programs
+#
+my $XMLPROC = "xalan";
+# my $XMLPROC = "/usr/local/bin/xmlto";
 
+# Check AONPATH
+my $DATADIR=$ENV{'AONDATA'} || $ENV{'AONPATH'}."/data";
+if ( ! -d "$DATADIR" ) {
+	if ( ! defined($ENV{'AONPATH'}) && ! defined ($ENV{'AONDATA'}) ) {
+		print STDERR "AONPATH environment variable not set, it should be defined to\n";
+		print STDERR "wherever the AON files are.\n";
+	} else {
+		print STDERR "Cannot find $DATADIR !\n";
+	}
+	exit 1;
+}
 ##
 
-unless( $ARGV[ 0 ] ) { die "Usage:\n\t${PROGRAM_NAME} book-code\n"; }
+unless( $ARGV[ 0 ] ) { die "Usage:\n\t${PROGRAM_NAME} book-code [LANGUAGE]\n"; }
 
 print "Reminder:\n\tDid you uncomment the LaTeX special character\n\tdeclarations in the book's XML file?\n";
 
 my $bookCode = $ARGV[ 0 ];
+my $language = $ARGV[ 1 ] || "";
+
+# TODO:
+# - convert the bookcode's if then else to a hash array
+# - allow usage of unknown book codes
 
 if( $bookCode eq "01fftd" ) {
     $XML_SOURCE        = "01fftd.xml";
@@ -100,5 +121,51 @@ elsif( $bookCode eq "12tmod" ) {
 }
 else{ die "Error:\n\tUknown book code.\n"; }
 
-chdir( "$ENV{'AONPATH'}/data" ) or die( "Cannot open Project Aon data directory \"$ENV{'AONPATH'}/data\": $!" );
-print qx{$JAVA org.apache.xalan.xslt.Process -IN $XML_PATH/$XML_SOURCE -XSL $XML_PATH/latex.xsl -OUT $BOOK_PATH/$bookCode.tex -PARAM title-color \"$TITLE_COLOR\" -PARAM use-illustrators \"$USE_ILLUSTRATORS\"};
+chdir( "$DATADIR" ) or die( "Cannot open Project Aon data directory \"$DATADIR\": $!" );
+
+# If there is a LANGUAGE set use it
+if ( $language ne "" ) {
+# Languages are prefixes to the booknames in the files
+	$XML_SOURCE =~ s/\.xml$/\.${language}.xml/;
+}
+
+# Check that the XML file is there
+if ( ! -r $DATADIR."/".$XML_SOURCE ) {
+	die "Could not find source file $XML_SOURCE in $DATADIR!";
+}
+if ( ! -r $DATADIR."/latex.xsl" ) {
+	die "Could not find LaTeX stylesheet (latex.xsl) in $DATADIR!";
+}
+
+
+# Create the output directory if it does not exist already
+print "Checking directory $BOOK_PATH...";
+if ( ! -d "$BOOK_PATH" ) {
+	print "...creating";
+	`mkdir -p "$BOOK_PATH"` || die "Could not create output directory $BOOK_PATH: $!";
+}
+print "..done.\n";
+
+my $OUTPUTFILE="$BOOK_PATH/$bookCode.tex";
+if ( $language ne "" ) {
+# Languages are prefixes to the booknames in the files
+	$OUTPUTFILE =~ s/\.tex$/\.${language}.tex/;
+}
+
+# Run the XML preprocessor
+# TODO: use system() properly here and check return value
+print "Processing book $bookCode and storing result in $OUTPUTFILE...";
+# For Xmlto, which uses xsltproc:
+# (Does not work)
+# `$XMLPROC -v -o $BOOK_PATH -x ${DATADIR}/latex.xsl dvi ${DATADIR}/${XML_SOURCE}`;
+# Apache's Xalan:
+`$XMLPROC  -xsl ${DATADIR}/latex.xsl -in  ${DATADIR}/${XML_SOURCE} -out $OUTPUTFILE`;
+# Apache Xalan, Java version:
+# print qx{$JAVA org.apache.xalan.xslt.Process -IN $XML_PATH/$XML_SOURCE -XSL $XML_PATH/latex.xsl -OUT $BOOK_PATH/$bookCode.tex -PARAM title-color \"$TITLE_COLOR\" -PARAM use-illustrators \"$USE_ILLUSTRATORS\"};
+#
+print "...done\n";
+
+
+# End of script
+exit 0;
+
