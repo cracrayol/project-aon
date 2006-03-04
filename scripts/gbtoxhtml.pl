@@ -7,6 +7,9 @@
 # $Id$
 #
 # $Log$
+# Revision 2.1  2006/03/04 01:07:43  jonathan.blake
+# Added parameter to pass the language of the document to the transformation.
+#
 # Revision 2.0  2006/02/28 23:50:54  jonathan.blake
 # Extensive overhaul and changed command line interface
 #
@@ -154,7 +157,7 @@ if( $bookXML =~ m{^([-\w\@./]+)$} ) {
     }
 
     print qx{$RM $rulesHash{'book-path'}$FILENAME_SEPARATOR*};
-    print qx{$JAVA -classpath "$XALAN_JAR" org.apache.xalan.xslt.Process -IN "$bookXML" -XSL "$xhtmlXSL" -OUT "$rulesHash{'book-path'}${FILENAME_SEPARATOR}foo.xml" -PARAM background-color "$rulesHash{'background-color'}" -PARAM text-color "$rulesHash{'text-color'}" -PARAM link-color "$rulesHash{'link-color'}" -PARAM use-illustrators "$rulesHash{'use-illustrators'}"};
+    print qx{$JAVA -classpath "$XALAN_JAR" org.apache.xalan.xslt.Process -IN "$bookXML" -XSL "$xhtmlXSL" -OUT "$rulesHash{'book-path'}${FILENAME_SEPARATOR}foo.xml" -PARAM background-color "$rulesHash{'background-color'}" -PARAM text-color "$rulesHash{'text-color'}" -PARAM link-color "$rulesHash{'link-color'}" -PARAM use-illustrators "$rulesHash{'use-illustrators'}" -PARAM language "$rulesHash{'language'}"};
     print qx{$RM $rulesHash{'book-path'}${FILENAME_SEPARATOR}foo.xml};
 
     foreach my $cssTemplate (split( /:/, $rulesHash{'csst'} )) {
