@@ -9,6 +9,9 @@
 $Id$
 
 $Log$
+Revision 1.6  2006/03/04 01:12:26  jonathan.blake
+Added parameter to bring in the language of the document
+
 Revision 1.5  2006/03/02 00:33:32  jonathan.blake
 Removed the 'book-path' parameter to work with new gbtoxhtml.pl
 
@@ -98,7 +101,8 @@ Todo:
 <!-- ====================== parameters ========================== -->
 
 <xsl:param name="use-illustrators" />
-
+ <xsl:param name="language"><xsl:text>en</xsl:text></xsl:param>
+ 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ colors ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 <xsl:param name="link-color"><xsl:text>#ff0000</xsl:text></xsl:param>
@@ -1016,40 +1020,76 @@ is included in all copies.
          <xsl:text> </xsl:text>
          <xsl:choose>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 1">
-           <xsl:text>January</xsl:text>
+           <xsl:choose>
+            <xsl:when test="$language='es'"><xsl:text>enero</xsl:text></xsl:when>
+            <xsl:otherwise><xsl:text>January</xsl:text></xsl:otherwise>
+           </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 2">
-           <xsl:text>February</xsl:text>
+           <xsl:choose>
+            <xsl:when test="$language='es'"><xsl:text>febrero</xsl:text></xsl:when>
+            <xsl:otherwise><xsl:text>February</xsl:text></xsl:otherwise>
+           </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 3">
-           <xsl:text>March</xsl:text>
+           <xsl:choose>
+            <xsl:when test="$language='es'"><xsl:text>marzo</xsl:text></xsl:when>
+            <xsl:otherwise><xsl:text>March</xsl:text></xsl:otherwise>
+           </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 4">
-           <xsl:text>April</xsl:text>
+           <xsl:choose>
+            <xsl:when test="$language='es'"><xsl:text>abril</xsl:text></xsl:when>
+            <xsl:otherwise><xsl:text>April</xsl:text></xsl:otherwise>
+           </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 5">
-           <xsl:text>May</xsl:text>
+           <xsl:choose>
+            <xsl:when test="$language='es'"><xsl:text>mayo</xsl:text></xsl:when>
+            <xsl:otherwise><xsl:text>May</xsl:text></xsl:otherwise>
+           </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 6">
-           <xsl:text>June</xsl:text>
+           <xsl:choose>
+            <xsl:when test="$language='es'"><xsl:text>junio</xsl:text></xsl:when>
+            <xsl:otherwise><xsl:text>June</xsl:text></xsl:otherwise>
+           </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 7">
-           <xsl:text>July</xsl:text>
+           <xsl:choose>
+            <xsl:when test="$language='es'"><xsl:text>julio</xsl:text></xsl:when>
+            <xsl:otherwise><xsl:text>July</xsl:text></xsl:otherwise>
+           </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 8">
-           <xsl:text>August</xsl:text>
+           <xsl:choose>
+            <xsl:when test="$language='es'"><xsl:text>agosto</xsl:text></xsl:when>
+            <xsl:otherwise><xsl:text>August</xsl:text></xsl:otherwise>
+           </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 9">
-           <xsl:text>September</xsl:text>
+           <xsl:choose>
+            <xsl:when test="$language='es'"><xsl:text>septiembre</xsl:text></xsl:when>
+            <xsl:otherwise><xsl:text>September</xsl:text></xsl:otherwise>
+           </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 10">
-           <xsl:text>October</xsl:text>
+           <xsl:choose>
+            <xsl:when test="$language='es'"><xsl:text>octubre</xsl:text></xsl:when>
+            <xsl:otherwise><xsl:text>October</xsl:text></xsl:otherwise>
+           </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 11">
-           <xsl:text>November</xsl:text>
+           <xsl:choose>
+            <xsl:when test="$language='es'"><xsl:text>noviembre</xsl:text></xsl:when>
+            <xsl:otherwise><xsl:text>November</xsl:text></xsl:otherwise>
+           </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 12">
-           <xsl:text>December</xsl:text>
+           <xsl:choose>
+            <xsl:when test="$language='es'"><xsl:text>diciembre</xsl:text></xsl:when>
+            <xsl:otherwise><xsl:text>December</xsl:text></xsl:otherwise>
+           </xsl:choose>
           </xsl:when>
           <xsl:otherwise>
            <xsl:text>Invalid Month</xsl:text>
