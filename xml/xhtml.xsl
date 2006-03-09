@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE xsl:transform [
- <!ENTITY % xhtml.characters SYSTEM "htmlchar.mod">
+ <!ENTITY % xhtml.characters SYSTEM "../../en/xml/htmlchar.mod">
  %xhtml.characters;
 ]>
 
@@ -9,8 +9,8 @@
 $Id$
 
 $Log$
-Revision 1.6  2006/03/04 01:12:26  jonathan.blake
-Added parameter to bring in the language of the document
+Revision 1.7  2006/03/09 18:56:33  jonathan.blake
+Added a language parameter and coding to switch between languages when the output is hard-coded into the transformation.
 
 Revision 1.5  2006/03/02 00:33:32  jonathan.blake
 Removed the 'book-path' parameter to work with new gbtoxhtml.pl
@@ -101,7 +101,7 @@ Todo:
 <!-- ====================== parameters ========================== -->
 
 <xsl:param name="use-illustrators" />
- <xsl:param name="language"><xsl:text>en</xsl:text></xsl:param>
+<xsl:param name="language"><xsl:text>en</xsl:text></xsl:param>
  
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ colors ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
@@ -350,6 +350,17 @@ Todo:
 </xsl:template>
 
 <xsl:template match="dl[@class='paragraphed']/dd/node() | ol[@class='paragraphed']/li/node() | ul[@class='paragraphed']/li/node()">
+ <xsl:variable name="illustration-alt-text">
+  <xsl:choose>
+   <xsl:when test="$language='es'">
+    <xsl:text>ilustraci&oacute;n</xsl:text>
+   </xsl:when>
+   <xsl:otherwise>
+    <xsl:text>illustration</xsl:text>
+   </xsl:otherwise>
+  </xsl:choose>
+ </xsl:variable>
+
  <xsl:choose>
   <xsl:when test="self::p">
    <xsl:apply-templates /><br /><br /><xsl:value-of select="$newline" />
@@ -391,7 +402,7 @@ Todo:
       </tr><xsl:value-of select="$newline" />
       <tr><xsl:value-of select="$newline" />
        <td><img src="brdrl.gif" width="32" height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-       <td><img src="{$illustration-src}" width="{$illustration-width}" height="{$illustration-height}" border="0" align="middle" alt="[illustration]" /></td><xsl:value-of select="$newline" />
+       <td><img src="{$illustration-src}" width="{$illustration-width}" height="{$illustration-height}" border="0" align="middle" alt="[{$illustration-alt-text}]" /></td><xsl:value-of select="$newline" />
        <td><img src="brdrr.gif" width="32" height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
       </tr><xsl:value-of select="$newline" />
       <tr><xsl:value-of select="$newline" />
@@ -481,31 +492,70 @@ Todo:
   <xsl:text>: </xsl:text>
   <xsl:choose>
    <xsl:when test="enemy-attribute[@class='combatskill']">
-    <span class="smallcaps">COMBAT<xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>SKILL</span>
-    <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+    <span class="smallcaps">
+     <xsl:choose>
+      <xsl:when test="$language='es'">
+       <xsl:text>DESTREZA&nbsp;EN&nbsp;EL&nbsp;COMBATE</xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+       <xsl:text>COMBAT&nbsp;SKILL</xsl:text>
+      </xsl:otherwise>
+     </xsl:choose>
+    </span>
+    <xsl:text>&nbsp;</xsl:text>
     <xsl:value-of select="enemy-attribute[@class='combatskill']" />
    </xsl:when>
    <xsl:when test="enemy-attribute[@class='closecombatskill']">
-    <span class="smallcaps">CLOSE<xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>COMBAT<xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>SKILL</span>
-    <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+    <span class="smallcaps">
+     <xsl:choose>
+      <xsl:when test="$language='es'">
+       <xsl:text>CLOSE&nbsp;COMBAT&nbsp;SKILL</xsl:text>
+      </xsl:when>
+      <xsl:otherwise>
+       <xsl:text>CLOSE&nbsp;COMBAT&nbsp;SKILL</xsl:text>
+      </xsl:otherwise>
+     </xsl:choose>
+    </span>
+    <xsl:text>&nbsp;</xsl:text>
     <xsl:value-of select="enemy-attribute[@class='closecombatskill']" />
    </xsl:when>
   </xsl:choose>
-  <xsl:text disable-output-escaping="yes"> &amp;nbsp;&amp;nbsp;</xsl:text>
-  <span class="smallcaps">ENDURANCE</span>
+  <xsl:text> &nbsp;&nbsp;</xsl:text>
+  <span class="smallcaps">
+    <xsl:choose>
+     <xsl:when test="$language='es'">
+      <xsl:text>RESISTENCIA</xsl:text>
+     </xsl:when>
+     <xsl:otherwise>
+      <xsl:text>ENDURANCE</xsl:text>
+    </xsl:otherwise>
+   </xsl:choose>
+  </span>
   <xsl:choose>
    <xsl:when test="enemy-attribute[@class='target']">
-    <xsl:text> (</xsl:text><span class="smallcaps">TARGET</span><xsl:text> points)</xsl:text>
-    <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+    <xsl:choose>
+     <xsl:when test="$language='es'">
+      <xsl:text> (o </xsl:text><span class="smallcaps">BLANCOS</span><xsl:text>)</xsl:text>
+     </xsl:when>
+     <xsl:otherwise>
+      <xsl:text> (</xsl:text><span class="smallcaps">TARGET</span><xsl:text> points)</xsl:text>
+     </xsl:otherwise>
+    </xsl:choose>
+    <xsl:text>&nbsp;</xsl:text>
     <xsl:value-of select="enemy-attribute[@class='target']" />
    </xsl:when>
    <xsl:when test="enemy-attribute[@class='resistance']">
-    <xsl:text> (</xsl:text><span class="smallcaps">RESISTANCE</span><xsl:text> points)</xsl:text>
-    <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+    <xsl:choose>
+     <xsl:when test="$language='es'"></xsl:when>
+     <xsl:otherwise>
+      <xsl:text> (</xsl:text><span class="smallcaps">RESISTANCE</span><xsl:text> points)</xsl:text>
+     </xsl:otherwise>
+    </xsl:choose>
+    <xsl:text>&nbsp;</xsl:text>
     <xsl:value-of select="enemy-attribute[@class='resistance']" />
    </xsl:when>
    <xsl:otherwise>
-    <xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text>
+    <xsl:text>&nbsp;</xsl:text>
     <xsl:value-of select="enemy-attribute[@class='endurance']" />
    </xsl:otherwise>
   </xsl:choose>
@@ -556,6 +606,17 @@ Todo:
  <xsl:variable name="illustration-width-adjusted"><xsl:number value="$illustration-width div 2" /></xsl:variable>
  <xsl:variable name="illustration-height-adjusted"><xsl:number value="$illustration-height div 2" /></xsl:variable>
 
+ <xsl:variable name="illustration-alt-text">
+  <xsl:choose>
+   <xsl:when test="$language='es'">
+    <xsl:text>ilustraci&oacute;n</xsl:text>
+   </xsl:when>
+   <xsl:otherwise>
+    <xsl:text>illustration</xsl:text>
+   </xsl:otherwise>
+  </xsl:choose>
+ </xsl:variable>
+
  <xsl:if test="instance[@class='html'] and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )">
   <xsl:choose>
    <xsl:when test="@class='float'">
@@ -571,7 +632,7 @@ Todo:
         <td>
         <a>
          <xsl:attribute name="href"><xsl:text>ill</xsl:text><xsl:number count="illustration[@class='float' and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )]" from="/" level="any" format="1" /><xsl:text>.htm</xsl:text></xsl:attribute>
-         <img src="{$illustration-src}" width="{$illustration-width-adjusted}" height="{$illustration-height-adjusted}" border="0" align="middle" alt="[illustration]" />
+         <img src="{$illustration-src}" width="{$illustration-width-adjusted}" height="{$illustration-height-adjusted}" border="0" align="middle" alt="[{$illustration-alt-text}]" />
         </a>
        </td><xsl:value-of select="$newline" />
        <td><img src="brdrr.gif" width="32" height="{$illustration-height-adjusted}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
@@ -602,7 +663,7 @@ Todo:
       </tr><xsl:value-of select="$newline" />
       <tr><xsl:value-of select="$newline" />
        <td><img src="brdrl.gif" width="32" height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-       <td><img src="{$illustration-src}" width="{$illustration-width}" height="{$illustration-height}" border="0" align="middle" alt="[illustration]" /></td><xsl:value-of select="$newline" />
+       <td><img src="{$illustration-src}" width="{$illustration-width}" height="{$illustration-height}" border="0" align="middle" alt="[{$illustration-alt-text}]" /></td><xsl:value-of select="$newline" />
        <td><img src="brdrr.gif" width="32" height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
       </tr><xsl:value-of select="$newline" />
       <tr><xsl:value-of select="$newline" />
@@ -963,7 +1024,14 @@ is included in all copies.
      <xsl:text>: </xsl:text>
      <xsl:choose>
       <xsl:when test="$document-type='illustration'">
-       <xsl:text>Illustration </xsl:text>
+       <xsl:choose>
+        <xsl:when test="$language='es'">
+         <xsl:text>Ilustraci&oacute;n </xsl:text>
+        </xsl:when>
+        <xsl:otherwise>
+         <xsl:text>Illustration </xsl:text>
+        </xsl:otherwise>
+       </xsl:choose>
        <xsl:number count="illustration[@class='float' and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )]" from="/" level="any" format="I" />
       </xsl:when>
       <xsl:otherwise><xsl:value-of select="meta/title[1]" /></xsl:otherwise>
@@ -980,7 +1048,14 @@ is included in all copies.
    <xsl:comment>
     <xsl:text> </xsl:text>
     <xsl:apply-templates select="/gamebook/meta/rights[@class='copyrights']" />
-    <xsl:text> Published by </xsl:text>
+    <xsl:choose>
+     <xsl:when test="$language='es'">
+      <xsl:text> Publicado por </xsl:text>
+     </xsl:when>
+     <xsl:otherwise>
+      <xsl:text> Published by </xsl:text>
+     </xsl:otherwise>
+    </xsl:choose>
     <xsl:apply-templates select="/gamebook/meta/publisher[1]" />
     <xsl:text>. </xsl:text>
    </xsl:comment>
@@ -1015,7 +1090,14 @@ is included in all copies.
         <xsl:apply-templates select="/gamebook/meta/description[@class='publication']" />
 
         <p>
-         <xsl:text>Publication Date: </xsl:text>
+         <xsl:choose>
+          <xsl:when test="$language='es'">
+           <xsl:text>Fecha de Publicaci&oacute;n: </xsl:text>
+          </xsl:when>
+          <xsl:otherwise>
+           <xsl:text>Publication Date: </xsl:text>
+          </xsl:otherwise>
+         </xsl:choose>
          <xsl:value-of select="/gamebook/meta/date[@class='publication']/day" />
          <xsl:text> </xsl:text>
          <xsl:choose>
@@ -1114,13 +1196,33 @@ is included in all copies.
 
       <xsl:when test="$document-type='toc'">
        <div class="frontmatter"><xsl:value-of select="$newline" />
-        <h2>Table of Contents</h2><xsl:value-of select="$newline" />
+        <h2>
+         <xsl:choose>
+          <xsl:when test="$language='es'">
+           <xsl:text>&Iacute;ndice de Contenidos</xsl:text>
+          </xsl:when>
+          <xsl:otherwise>
+           <xsl:text>Table of Contents</xsl:text>
+          </xsl:otherwise>
+         </xsl:choose>
+        </h2><xsl:value-of select="$newline" />
 
         <xsl:value-of select="$newline" />
         <xsl:value-of select="$newline" />
 
         <ul><xsl:value-of select="$newline" />
-         <li><a href="title.htm">Title Page</a></li><xsl:value-of select="$newline" />
+         <xsl:variable name="title-page">
+          <xsl:choose>
+           <xsl:when test="$language='es'">
+            <xsl:text>P&aacute;gina Principal</xsl:text>
+           </xsl:when>
+           <xsl:otherwise>
+            <xsl:text>Title Page</xsl:text>
+           </xsl:otherwise>
+          </xsl:choose>
+         </xsl:variable>
+
+         <li><a href="title.htm"><xsl:value-of select="$title-page"/></a></li><xsl:value-of select="$newline" />
          <xsl:for-each select="/gamebook/section/data/section">
           <li>
            <a><xsl:attribute name="href"><xsl:value-of select="@id" /><xsl:text>.htm</xsl:text></xsl:attribute>
@@ -1350,6 +1452,17 @@ title of each section be a simple number.
         <xsl:value-of select="$newline" />
 
         <xsl:for-each select="data/* | data/text()">
+         <xsl:variable name="map-illustration-alt-text">
+          <xsl:choose>
+           <xsl:when test="$language='es'">
+            <xsl:text>mapa</xsl:text>
+           </xsl:when>
+           <xsl:otherwise>
+            <xsl:text>map</xsl:text>
+           </xsl:otherwise>
+          </xsl:choose>
+         </xsl:variable>
+
          <xsl:choose>
           <xsl:when test="self::illustration and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )">
            <xsl:variable name="illustration-width" select="instance[@class='html']/@width" />
@@ -1368,7 +1481,7 @@ title of each section be a simple number.
              </tr><xsl:value-of select="$newline" />
              <tr><xsl:value-of select="$newline" />
               <td><img src="brdrl.gif" width="31" height="{$illustration-height-adjusted}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-              <td><a href="maplarge.htm"><img src="{$illustration-src}" width="{$illustration-width-adjusted}" height="{$illustration-height-adjusted}" align="middle" border="0" alt="[map]" /></a></td><xsl:value-of select="$newline" />
+              <td><a href="maplarge.htm"><img src="{$illustration-src}" width="{$illustration-width-adjusted}" height="{$illustration-height-adjusted}" align="middle" border="0" alt="[{$map-illustration-alt-text}]" /></a></td><xsl:value-of select="$newline" />
               <td><img src="brdrr.gif" width="33" height="{$illustration-height-adjusted}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
              </tr><xsl:value-of select="$newline" />
              <tr><xsl:value-of select="$newline" />
@@ -1403,6 +1516,17 @@ title of each section be a simple number.
         <xsl:value-of select="$newline" />
 
         <xsl:for-each select="data/* | data/text()">
+         <xsl:variable name="map-illustration-alt-text">
+          <xsl:choose>
+           <xsl:when test="$language='es'">
+            <xsl:text>mapa</xsl:text>
+           </xsl:when>
+           <xsl:otherwise>
+            <xsl:text>map</xsl:text>
+           </xsl:otherwise>
+          </xsl:choose>
+         </xsl:variable>
+
          <xsl:choose>
           <xsl:when test="self::illustration and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )">
            <xsl:variable name="illustration-width" select="instance[@class='html']/@width" />
@@ -1418,7 +1542,7 @@ title of each section be a simple number.
              </tr><xsl:value-of select="$newline" />
              <tr><xsl:value-of select="$newline" />
               <td><img src="brdrl.gif" width="31"  height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-              <td><a href="map.htm"><img src="{$illustration-src}" width="{$illustration-width}" height="{$illustration-height}" align="middle" border="0" alt="[map]" /></a></td><xsl:value-of select="$newline" />
+              <td><a href="map.htm"><img src="{$illustration-src}" width="{$illustration-width}" height="{$illustration-height}" align="middle" border="0" alt="[{$map-illustration-alt-text}]" /></a></td><xsl:value-of select="$newline" />
               <td><img src="brdrr.gif" width="33" height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
              </tr><xsl:value-of select="$newline" />
              <tr><xsl:value-of select="$newline" />
@@ -1449,8 +1573,26 @@ title of each section be a simple number.
        <xsl:variable name="illustration-height" select="instance[@class='html']/@height" />
        <xsl:variable name="illustration-src" select="instance[@class='html']/@src" />
 
+       <xsl:variable name="illustration-alt-text">
+        <xsl:choose>
+         <xsl:when test="$language='es'">
+          <xsl:text>ilustraci&oacute;n</xsl:text>
+         </xsl:when>
+         <xsl:otherwise>
+          <xsl:text>illustration</xsl:text>
+         </xsl:otherwise>
+        </xsl:choose>
+       </xsl:variable>
+
        <h3>
-        <xsl:text>Illustration </xsl:text>
+        <xsl:choose>
+         <xsl:when test="$language='es'">
+          <xsl:text>Ilustraci&oacute;n </xsl:text>
+         </xsl:when>
+         <xsl:otherwise>
+          <xsl:text>Illustration </xsl:text>
+         </xsl:otherwise>
+        </xsl:choose>
         <xsl:number count="illustration[@class='float' and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )]" from="/" level="any" format="I" />
        </h3><xsl:value-of select="$newline" />
 
@@ -1463,7 +1605,7 @@ title of each section be a simple number.
          </tr><xsl:value-of select="$newline" />
          <tr><xsl:value-of select="$newline" />
           <td><img src="brdrl.gif" width="31" height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-          <td><img src="{$illustration-src}" width="{$illustration-width}" height="{$illustration-height}" align="middle" border="0" alt="[illustration]" /></td><xsl:value-of select="$newline" />
+          <td><img src="{$illustration-src}" width="{$illustration-width}" height="{$illustration-height}" align="middle" border="0" alt="[{$illustration-alt-text}]" /></td><xsl:value-of select="$newline" />
           <td><img src="brdrr.gif" width="33" height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
          </tr><xsl:value-of select="$newline" />
          <tr><xsl:value-of select="$newline" />
@@ -1544,6 +1686,16 @@ title of each section be a simple number.
 </xsl:template>
 
 <xsl:template name="navigation-bar">
+ <xsl:variable name="table-of-contents">
+  <xsl:choose>
+   <xsl:when test="$language='es'">
+    <xsl:text>&Iacute;ndice de Contenidos</xsl:text>
+   </xsl:when>
+   <xsl:otherwise>
+    <xsl:text>Table of Contents</xsl:text>      
+   </xsl:otherwise>
+  </xsl:choose>
+ </xsl:variable>
  <div class="navigation">
   <table cellspacing="0" cellpadding="0" border="0">
    <tr>
@@ -1567,7 +1719,7 @@ title of each section be a simple number.
       </xsl:otherwise>
      </xsl:choose>
     </td>
-    <td><a href="toc.htm"><img src="toc.gif" width="150" height="30" border="0" alt="Table of Contents" /></a></td>
+    <td><a href="toc.htm"><img src="toc.gif" width="150" height="30" border="0" alt="{$table-of-contents}" /></a></td>
     <td>
      <xsl:choose>
       <xsl:when test="meta/link[@class='next']">
@@ -1580,7 +1732,14 @@ title of each section be a simple number.
          <xsl:attribute name="alt">
           <xsl:choose>
            <xsl:when test="meta/link[@class='next']/@idref = 'sect1'">
-            <xsl:text>Section 1</xsl:text>
+            <xsl:choose>
+             <xsl:when test="$language='es'">
+              <xsl:text>Secci&oacute;n 1</xsl:text>
+             </xsl:when>
+             <xsl:otherwise>
+              <xsl:text>Section 1</xsl:text>
+             </xsl:otherwise>
+            </xsl:choose>
            </xsl:when>
            <xsl:otherwise>
             <xsl:value-of select="id( meta/link[@class='next']/@idref )/meta/title" />
