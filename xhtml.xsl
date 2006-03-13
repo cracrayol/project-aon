@@ -9,6 +9,9 @@
 $Id$
 
 $Log$
+Revision 1.8  2006/03/13 18:38:49  jonathan.blake
+Fixed minor Spanish translation issue
+
 Revision 1.7  2006/03/09 18:56:33  jonathan.blake
 Added a language parameter and coding to switch between languages when the output is hard-coded into the transformation.
 
@@ -1103,73 +1106,73 @@ is included in all copies.
          <xsl:choose>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 1">
            <xsl:choose>
-            <xsl:when test="$language='es'"><xsl:text>enero</xsl:text></xsl:when>
+            <xsl:when test="$language='es'"><xsl:text>de enero de</xsl:text></xsl:when>
             <xsl:otherwise><xsl:text>January</xsl:text></xsl:otherwise>
            </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 2">
            <xsl:choose>
-            <xsl:when test="$language='es'"><xsl:text>febrero</xsl:text></xsl:when>
+            <xsl:when test="$language='es'"><xsl:text>de febrero de</xsl:text></xsl:when>
             <xsl:otherwise><xsl:text>February</xsl:text></xsl:otherwise>
            </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 3">
            <xsl:choose>
-            <xsl:when test="$language='es'"><xsl:text>marzo</xsl:text></xsl:when>
+            <xsl:when test="$language='es'"><xsl:text>de marzo de</xsl:text></xsl:when>
             <xsl:otherwise><xsl:text>March</xsl:text></xsl:otherwise>
            </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 4">
            <xsl:choose>
-            <xsl:when test="$language='es'"><xsl:text>abril</xsl:text></xsl:when>
+            <xsl:when test="$language='es'"><xsl:text>de abril de</xsl:text></xsl:when>
             <xsl:otherwise><xsl:text>April</xsl:text></xsl:otherwise>
            </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 5">
            <xsl:choose>
-            <xsl:when test="$language='es'"><xsl:text>mayo</xsl:text></xsl:when>
+            <xsl:when test="$language='es'"><xsl:text>de mayo de</xsl:text></xsl:when>
             <xsl:otherwise><xsl:text>May</xsl:text></xsl:otherwise>
            </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 6">
            <xsl:choose>
-            <xsl:when test="$language='es'"><xsl:text>junio</xsl:text></xsl:when>
+            <xsl:when test="$language='es'"><xsl:text>de junio de</xsl:text></xsl:when>
             <xsl:otherwise><xsl:text>June</xsl:text></xsl:otherwise>
            </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 7">
            <xsl:choose>
-            <xsl:when test="$language='es'"><xsl:text>julio</xsl:text></xsl:when>
+            <xsl:when test="$language='es'"><xsl:text>de julio de</xsl:text></xsl:when>
             <xsl:otherwise><xsl:text>July</xsl:text></xsl:otherwise>
            </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 8">
            <xsl:choose>
-            <xsl:when test="$language='es'"><xsl:text>agosto</xsl:text></xsl:when>
+            <xsl:when test="$language='es'"><xsl:text>de agosto de</xsl:text></xsl:when>
             <xsl:otherwise><xsl:text>August</xsl:text></xsl:otherwise>
            </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 9">
            <xsl:choose>
-            <xsl:when test="$language='es'"><xsl:text>septiembre</xsl:text></xsl:when>
+            <xsl:when test="$language='es'"><xsl:text>de septiembre de</xsl:text></xsl:when>
             <xsl:otherwise><xsl:text>September</xsl:text></xsl:otherwise>
            </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 10">
            <xsl:choose>
-            <xsl:when test="$language='es'"><xsl:text>octubre</xsl:text></xsl:when>
+            <xsl:when test="$language='es'"><xsl:text>de octubre de</xsl:text></xsl:when>
             <xsl:otherwise><xsl:text>October</xsl:text></xsl:otherwise>
            </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 11">
            <xsl:choose>
-            <xsl:when test="$language='es'"><xsl:text>noviembre</xsl:text></xsl:when>
+            <xsl:when test="$language='es'"><xsl:text>de noviembre de</xsl:text></xsl:when>
             <xsl:otherwise><xsl:text>November</xsl:text></xsl:otherwise>
            </xsl:choose>
           </xsl:when>
           <xsl:when test="/gamebook/meta/date[@class='publication']/month = 12">
            <xsl:choose>
-            <xsl:when test="$language='es'"><xsl:text>diciembre</xsl:text></xsl:when>
+            <xsl:when test="$language='es'"><xsl:text>de diciembre de</xsl:text></xsl:when>
             <xsl:otherwise><xsl:text>December</xsl:text></xsl:otherwise>
            </xsl:choose>
           </xsl:when>
