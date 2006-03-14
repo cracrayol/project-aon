@@ -9,6 +9,10 @@
 $Id$
 
 $Log$
+Revision 1.9  2006/03/14 21:04:03  angantyr
+Changed the illustration handling with the introduction of 'illref's.
+Backwards compatible.
+
 Revision 1.8  2006/03/13 18:38:49  jonathan.blake
 Fixed minor Spanish translation issue
 
@@ -353,17 +357,6 @@ Todo:
 </xsl:template>
 
 <xsl:template match="dl[@class='paragraphed']/dd/node() | ol[@class='paragraphed']/li/node() | ul[@class='paragraphed']/li/node()">
- <xsl:variable name="illustration-alt-text">
-  <xsl:choose>
-   <xsl:when test="$language='es'">
-    <xsl:text>ilustraci&oacute;n</xsl:text>
-   </xsl:when>
-   <xsl:otherwise>
-    <xsl:text>illustration</xsl:text>
-   </xsl:otherwise>
-  </xsl:choose>
- </xsl:variable>
-
  <xsl:choose>
   <xsl:when test="self::p">
    <xsl:apply-templates /><br /><br /><xsl:value-of select="$newline" />
@@ -396,24 +389,14 @@ Todo:
    <xsl:variable name="illustration-src" select="instance[@class='html']/@src" />
 
    <xsl:if test="instance[@class='html'] and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )">
-    <div class="illustration"><div align="center"><xsl:value-of select="$newline" />
-     <table border="0" cellpadding="0" cellspacing="0"><xsl:value-of select="$newline" />
-      <tr><xsl:value-of select="$newline" />
-       <td><img src="brdrtpl.gif" width="32" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-       <td><img src="brdrtp.gif" width="{$illustration-width}" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-       <td><img src="brdrtpr.gif" width="32" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-      </tr><xsl:value-of select="$newline" />
-      <tr><xsl:value-of select="$newline" />
-       <td><img src="brdrl.gif" width="32" height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-       <td><img src="{$illustration-src}" width="{$illustration-width}" height="{$illustration-height}" border="0" align="middle" alt="[{$illustration-alt-text}]" /></td><xsl:value-of select="$newline" />
-       <td><img src="brdrr.gif" width="32" height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-      </tr><xsl:value-of select="$newline" />
-      <tr><xsl:value-of select="$newline" />
-       <td><img src="brdrbtl.gif" width="32" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-       <td><img src="brdrbt.gif" width="{$illustration-width}" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-       <td><img src="brdrbtr.gif" width="32" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-      </tr><xsl:value-of select="$newline" />
-     </table><br /><xsl:value-of select="$newline" />
+    <div class="illustration">
+     <div align="center"><xsl:value-of select="$newline" />
+     <xsl:call-template name="illustration-framed">
+      <xsl:with-param name="illustration-width"><xsl:value-of select="$illustration-width" /></xsl:with-param>
+      <xsl:with-param name="illustration-height"><xsl:value-of select="$illustration-height" /></xsl:with-param>
+      <xsl:with-param name="illustration-src"><xsl:value-of select="$illustration-src" /></xsl:with-param>
+     </xsl:call-template>
+     <br /><xsl:value-of select="$newline" />
     </div></div><xsl:value-of select="$newline" />
    </xsl:if>
   </xsl:when>
@@ -601,6 +584,87 @@ Todo:
  </blockquote><xsl:value-of select="$newline" />
 </xsl:template>
 
+<xsl:template match="illref[@class='html']">
+ <xsl:for-each select="id( @idref )">
+  <!-- This creates unneccessary regeneration of float illustration pages, but it is easiest to keep things this way as long as we have to be backwards compatible... -->
+  <!-- When backwards compatibility can be dropped, most of (all?) the <illustration> processing can happen here -->
+  <xsl:apply-templates select="." />
+ </xsl:for-each>
+</xsl:template>
+
+<xsl:template match="illustrations">
+ <ul class="unbulleted">
+  <xsl:for-each select="illustration[contains( $use-illustrators, concat( ':', meta/creator, ':' ) )] | illgroup">
+   <xsl:choose>
+    <xsl:when test="self::illustration and @class='float'">
+     <!-- List item with illustration name as link -->
+     <li>
+      <a>
+       <xsl:attribute name="href"><xsl:text>ill</xsl:text><xsl:number count="illustration[@class='float' and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )]" from="/" level="any" format="1" /><xsl:text>.htm</xsl:text></xsl:attribute>
+       <xsl:choose>
+        <xsl:when test="$language='es'">
+         <xsl:text>Ilustraci&oacute;n </xsl:text>
+        </xsl:when>
+        <xsl:otherwise>
+         <xsl:text>Illustration </xsl:text>
+        </xsl:otherwise>
+       </xsl:choose>
+       <xsl:number count="illustration[@class='float' and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )]" from="/" level="any" format="I" />
+      </a>
+      <!-- List the sections that the illustration appears in -->
+      <xsl:text> (</xsl:text>
+      <xsl:for-each select="//illref[@class='html' and @idref=current()/@id]">
+       <!-- will the list always contain the closest ancestor first??? -->
+       <a>
+        <xsl:attribute name="href"><xsl:value-of select="ancestor::section[position()=1]/@id" /><xsl:text>.htm</xsl:text></xsl:attribute>
+        <xsl:value-of select="ancestor::section[position()=1]/meta/title[1]" />
+       </a>
+       <xsl:if test="position()!=last()">
+        <xsl:text>,  </xsl:text>        
+       </xsl:if>
+      </xsl:for-each>
+      <xsl:text>)</xsl:text><xsl:value-of select="$newline" />
+     </li>
+     <!-- Call the backwards compatible template for generating the illustration page -->
+     <xsl:call-template name="xhtml-wrapper">
+      <xsl:with-param name="document-type">illustration</xsl:with-param>
+      <xsl:with-param name="filename"><xsl:text>ill</xsl:text><xsl:number count="illustration[@class='float' and contains( $use-illustrators, concat( ':', meta/creator, ':' ) ) ]" from="/" level="any" format="1" /></xsl:with-param>
+     </xsl:call-template>
+    </xsl:when>
+
+    <xsl:when test="self::illustration"> <!-- inline and map -->
+     <!-- List the sections that the illustration appears in -->     
+     <li>
+      <xsl:for-each select="//illref[@class='html' and @idref=current()/@id]">
+       <!-- will the list always contain the closest ancestor first? -->
+       <a>
+        <!-- TODO: fix this so that sections that do not represent separate XHTML files are not linked to -->
+        <xsl:attribute name="href"><xsl:value-of select="ancestor::section[position()=1]/@id" /><xsl:text>.htm</xsl:text></xsl:attribute>
+        <xsl:value-of select="ancestor::section[position()=1]/meta/title[1]" />
+       </a>
+       <xsl:if test="position()!=last()">
+        <xsl:text>,  </xsl:text>        
+       </xsl:if>
+      </xsl:for-each>
+     </li>
+    </xsl:when>
+
+    <xsl:when test="self::illgroup and @class!='hidden'">
+     <!-- Check if the group contains any illustrations being used, before creating the list item -->
+      <xsl:if test="count( illustration[contains( $use-illustrators, concat( ':', meta/creator, ':' ) )] ) != 0">
+       <li>
+        <a>
+         <xsl:attribute name="href"><xsl:value-of select="@idref" /><xsl:text>.htm</xsl:text></xsl:attribute>
+         <xsl:value-of select="id(@idref)/meta/title[1]" />
+        </a>
+       </li>
+      </xsl:if>
+    </xsl:when>
+   </xsl:choose>
+  </xsl:for-each>
+ </ul><xsl:value-of select="$newline" />
+</xsl:template>
+
 <xsl:template match="illustration">
  <xsl:variable name="illustration-width" select="instance[@class='html']/@width" />
  <xsl:variable name="illustration-height" select="instance[@class='html']/@height" />
@@ -609,43 +673,20 @@ Todo:
  <xsl:variable name="illustration-width-adjusted"><xsl:number value="$illustration-width div 2" /></xsl:variable>
  <xsl:variable name="illustration-height-adjusted"><xsl:number value="$illustration-height div 2" /></xsl:variable>
 
- <xsl:variable name="illustration-alt-text">
-  <xsl:choose>
-   <xsl:when test="$language='es'">
-    <xsl:text>ilustraci&oacute;n</xsl:text>
-   </xsl:when>
-   <xsl:otherwise>
-    <xsl:text>illustration</xsl:text>
-   </xsl:otherwise>
-  </xsl:choose>
- </xsl:variable>
-
  <xsl:if test="instance[@class='html'] and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )">
   <xsl:choose>
    <xsl:when test="@class='float'">
-    <div class="illustration"><div align="center"><xsl:value-of select="$newline" />
-     <table border="0" cellpadding="0" cellspacing="0"><xsl:value-of select="$newline" />
-      <tr><xsl:value-of select="$newline" />
-       <td><img src="brdrtpl.gif" width="32" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-       <td><img src="brdrtp.gif" width="{$illustration-width-adjusted}" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-       <td><img src="brdrtpr.gif" width="32" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-      </tr><xsl:value-of select="$newline" />
-      <tr><xsl:value-of select="$newline" />
-       <td><img src="brdrl.gif" width="32" height="{$illustration-height-adjusted}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-        <td>
-        <a>
-         <xsl:attribute name="href"><xsl:text>ill</xsl:text><xsl:number count="illustration[@class='float' and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )]" from="/" level="any" format="1" /><xsl:text>.htm</xsl:text></xsl:attribute>
-         <img src="{$illustration-src}" width="{$illustration-width-adjusted}" height="{$illustration-height-adjusted}" border="0" align="middle" alt="[{$illustration-alt-text}]" />
-        </a>
-       </td><xsl:value-of select="$newline" />
-       <td><img src="brdrr.gif" width="32" height="{$illustration-height-adjusted}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-      </tr><xsl:value-of select="$newline" />
-      <tr><xsl:value-of select="$newline" />
-       <td><img src="brdrbtl.gif" width="32" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-       <td><img src="brdrbt.gif" width="{$illustration-width-adjusted}" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-       <td><img src="brdrbtr.gif" width="32" height="32" align="middle" alt=""/></td><xsl:value-of select="$newline" />
-      </tr><xsl:value-of select="$newline" />
-     </table><br /><xsl:value-of select="$newline" />
+    <div class="illustration">
+     <div align="center"><xsl:value-of select="$newline" />
+     <xsl:call-template name="illustration-framed">
+      <xsl:with-param name="illustration-width"><xsl:value-of select="$illustration-width-adjusted" /></xsl:with-param>
+      <xsl:with-param name="illustration-height"><xsl:value-of select="$illustration-height-adjusted" /></xsl:with-param>
+      <xsl:with-param name="illustration-src"><xsl:value-of select="$illustration-src" /></xsl:with-param>
+      <xsl:with-param name="illustration-href">
+       <xsl:text>ill</xsl:text><xsl:number count="illustration[@class='float' and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )]" from="/" level="any" format="1" /><xsl:text>.htm</xsl:text>
+      </xsl:with-param>
+     </xsl:call-template>
+     <br /><xsl:value-of select="$newline" />
     </div></div><xsl:value-of select="$newline" />
 
     <xsl:call-template name="xhtml-wrapper">
@@ -657,28 +698,17 @@ Todo:
    <xsl:when test="@class='accent'" />
 
    <xsl:otherwise>
-    <div class="illustration"><div align="center"><xsl:value-of select="$newline" />
-     <table border="0" cellpadding="0" cellspacing="0"><xsl:value-of select="$newline" />
-      <tr><xsl:value-of select="$newline" />
-       <td><img src="brdrtpl.gif" width="32" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-       <td><img src="brdrtp.gif" width="{$illustration-width}" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-       <td><img src="brdrtpr.gif" width="32" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-      </tr><xsl:value-of select="$newline" />
-      <tr><xsl:value-of select="$newline" />
-       <td><img src="brdrl.gif" width="32" height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-       <td><img src="{$illustration-src}" width="{$illustration-width}" height="{$illustration-height}" border="0" align="middle" alt="[{$illustration-alt-text}]" /></td><xsl:value-of select="$newline" />
-       <td><img src="brdrr.gif" width="32" height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-      </tr><xsl:value-of select="$newline" />
-      <tr><xsl:value-of select="$newline" />
-       <td><img src="brdrbtl.gif" width="32" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-       <td><img src="brdrbt.gif" width="{$illustration-width}" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-       <td><img src="brdrbtr.gif" width="32" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-      </tr><xsl:value-of select="$newline" />
-     </table><br /><xsl:value-of select="$newline" />
+    <div class="illustration">
+     <div align="center"><xsl:value-of select="$newline" />
+     <xsl:call-template name="illustration-framed">
+      <xsl:with-param name="illustration-width"><xsl:value-of select="$illustration-width" /></xsl:with-param>
+      <xsl:with-param name="illustration-height"><xsl:value-of select="$illustration-height" /></xsl:with-param>
+      <xsl:with-param name="illustration-src"><xsl:value-of select="$illustration-src" /></xsl:with-param>
+     </xsl:call-template>
+     <br /><xsl:value-of select="$newline" />
     </div></div><xsl:value-of select="$newline" />
    </xsl:otherwise>
   </xsl:choose>
-
  </xsl:if>
 </xsl:template>
 
@@ -763,6 +793,7 @@ Todo:
  </sup>
 </xsl:template>
 
+<!-- TODO: can this be made more uniform with illrefs? -->
 <xsl:template match="a[@class='accent-illustration']">
  <xsl:for-each select="id( @idref )">
   <xsl:variable name="illustration-src" select="instance[@class='html']/@src" />
@@ -1466,6 +1497,7 @@ title of each section be a simple number.
           </xsl:choose>
          </xsl:variable>
 
+         <!-- duplicated stuff here, no good way to avoid this while retaining backwards compatibility -->         
          <xsl:choose>
           <xsl:when test="self::illustration and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )">
            <xsl:variable name="illustration-width" select="instance[@class='html']/@width" />
@@ -1476,25 +1508,44 @@ title of each section be a simple number.
            <xsl:variable name="illustration-height-adjusted"><xsl:number value="$illustration-height * $illustration-width-adjusted div $illustration-width" /></xsl:variable>
 
            <div class="illustration"><div align="center"><xsl:value-of select="$newline" />
-            <table border="0" cellpadding="0" cellspacing="0"><xsl:value-of select="$newline" />
-             <tr><xsl:value-of select="$newline" />
-              <td><img src="brdrtpl.gif" width="31" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-              <td><img src="brdrtp.gif" width="{$illustration-width-adjusted}" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-              <td><img src="brdrtpr.gif" width="33" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-             </tr><xsl:value-of select="$newline" />
-             <tr><xsl:value-of select="$newline" />
-              <td><img src="brdrl.gif" width="31" height="{$illustration-height-adjusted}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-              <td><a href="maplarge.htm"><img src="{$illustration-src}" width="{$illustration-width-adjusted}" height="{$illustration-height-adjusted}" align="middle" border="0" alt="[{$map-illustration-alt-text}]" /></a></td><xsl:value-of select="$newline" />
-              <td><img src="brdrr.gif" width="33" height="{$illustration-height-adjusted}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-             </tr><xsl:value-of select="$newline" />
-             <tr><xsl:value-of select="$newline" />
-              <td><img src="brdrbtl.gif" width="31" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-              <td><img src="brdrbt.gif" width="{$illustration-width-adjusted}" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-              <td><img src="brdrbtr.gif" width="33" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-             </tr><xsl:value-of select="$newline" />
-            </table><xsl:value-of select="$newline" />
+            <xsl:call-template name="illustration-framed">
+             <xsl:with-param name="illustration-width"><xsl:value-of select="$illustration-width-adjusted" /></xsl:with-param>
+             <xsl:with-param name="illustration-height"><xsl:value-of select="$illustration-height-adjusted" /></xsl:with-param>
+             <xsl:with-param name="illustration-src"><xsl:value-of select="$illustration-src" /></xsl:with-param>
+             <xsl:with-param name="illustration-href">maplarge.htm</xsl:with-param>
+             <xsl:with-param name="brdrl-width">31</xsl:with-param>
+             <xsl:with-param name="brdrr-width">33</xsl:with-param>
+             <xsl:with-param name="illustration-alt-text">[{$map-illustration-alt-text}]</xsl:with-param>
+            </xsl:call-template>
             <br /><br />
            </div></div><xsl:value-of select="$newline" />
+          </xsl:when>
+
+          <xsl:when test="self::illref and @class='html'">
+           <xsl:for-each select="id( @idref )">
+            <xsl:if test="contains( $use-illustrators, concat( ':', meta/creator, ':' ) )">
+             <xsl:variable name="illustration-width" select="instance[@class='html']/@width" />
+             <xsl:variable name="illustration-height" select="instance[@class='html']/@height" />
+             <xsl:variable name="illustration-src" select="instance[@class='html']/@src" />
+
+             <xsl:variable name="illustration-width-adjusted"><xsl:number value="386" /></xsl:variable>
+             <xsl:variable name="illustration-height-adjusted"><xsl:number value="$illustration-height * $illustration-width-adjusted div $illustration-width" /></xsl:variable>
+
+             <div class="illustration">
+              <div align="center"><xsl:value-of select="$newline" />
+              <xsl:call-template name="illustration-framed">
+               <xsl:with-param name="illustration-width"><xsl:value-of select="$illustration-width-adjusted" /></xsl:with-param>
+               <xsl:with-param name="illustration-height"><xsl:value-of select="$illustration-height-adjusted" /></xsl:with-param>
+               <xsl:with-param name="illustration-src"><xsl:value-of select="$illustration-src" /></xsl:with-param>
+               <xsl:with-param name="illustration-href">maplarge.htm</xsl:with-param>
+               <xsl:with-param name="brdrl-width">31</xsl:with-param>
+               <xsl:with-param name="brdrr-width">33</xsl:with-param>
+               <xsl:with-param name="illustration-alt-text">[{$map-illustration-alt-text}]</xsl:with-param>
+              </xsl:call-template>
+              <br /><br />
+             </div></div><xsl:value-of select="$newline" />
+            </xsl:if>
+           </xsl:for-each>
           </xsl:when>
           <xsl:otherwise>
            <xsl:apply-templates select="." />
@@ -1530,6 +1581,7 @@ title of each section be a simple number.
           </xsl:choose>
          </xsl:variable>
 
+         <!-- duplicated stuff here, no good way to avoid this while retaining backwards compatibility -->
          <xsl:choose>
           <xsl:when test="self::illustration and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )">
            <xsl:variable name="illustration-width" select="instance[@class='html']/@width" />
@@ -1537,24 +1589,41 @@ title of each section be a simple number.
            <xsl:variable name="illustration-src" select="instance[@class='html']/@src" />
 
            <div class="illustration"><div align="center"><xsl:value-of select="$newline" />
-            <table border="0" cellpadding="0" cellspacing="0"><xsl:value-of select="$newline" />
-             <tr><xsl:value-of select="$newline" />
-              <td><img src="brdrtpl.gif" width="31" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-              <td><img src="brdrtp.gif" width="{$illustration-width}" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-              <td><img src="brdrtpr.gif" width="33" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-             </tr><xsl:value-of select="$newline" />
-             <tr><xsl:value-of select="$newline" />
-              <td><img src="brdrl.gif" width="31"  height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-              <td><a href="map.htm"><img src="{$illustration-src}" width="{$illustration-width}" height="{$illustration-height}" align="middle" border="0" alt="[{$map-illustration-alt-text}]" /></a></td><xsl:value-of select="$newline" />
-              <td><img src="brdrr.gif" width="33" height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-             </tr><xsl:value-of select="$newline" />
-             <tr><xsl:value-of select="$newline" />
-              <td><img src="brdrbtl.gif" width="31" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-              <td><img src="brdrbt.gif" width="{$illustration-width}" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-              <td><img src="brdrbtr.gif" width="33" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-             </tr><xsl:value-of select="$newline" />
-            </table><br /><xsl:value-of select="$newline" />
+            <xsl:call-template name="illustration-framed">
+             <xsl:with-param name="illustration-width"><xsl:value-of select="$illustration-width" /></xsl:with-param>
+             <xsl:with-param name="illustration-height"><xsl:value-of select="$illustration-height" /></xsl:with-param>
+             <xsl:with-param name="illustration-src"><xsl:value-of select="$illustration-src" /></xsl:with-param>
+             <xsl:with-param name="illustration-href">map.htm</xsl:with-param>
+             <xsl:with-param name="brdrl-width">31</xsl:with-param>
+             <xsl:with-param name="brdrr-width">33</xsl:with-param>
+             <xsl:with-param name="illustration-alt-text">[{$map-illustration-alt-text}]</xsl:with-param>
+            </xsl:call-template>
+            <br /><xsl:value-of select="$newline" />
            </div></div><xsl:value-of select="$newline" />
+          </xsl:when>
+
+          <xsl:when test="self::illref and @class='html'">
+           <xsl:for-each select="id( @idref )">
+            <xsl:if test="contains( $use-illustrators, concat( ':', meta/creator, ':' ) )">
+             <xsl:variable name="illustration-width" select="instance[@class='html']/@width" />
+             <xsl:variable name="illustration-height" select="instance[@class='html']/@height" />
+             <xsl:variable name="illustration-src" select="instance[@class='html']/@src" />
+
+             <div class="illustration">
+              <div align="center"><xsl:value-of select="$newline" />
+              <xsl:call-template name="illustration-framed">
+               <xsl:with-param name="illustration-width"><xsl:value-of select="$illustration-width" /></xsl:with-param>
+               <xsl:with-param name="illustration-height"><xsl:value-of select="$illustration-height" /></xsl:with-param>
+               <xsl:with-param name="illustration-src"><xsl:value-of select="$illustration-src" /></xsl:with-param>
+               <xsl:with-param name="illustration-href">map.htm</xsl:with-param>
+               <xsl:with-param name="brdrl-width">31</xsl:with-param>
+               <xsl:with-param name="brdrr-width">33</xsl:with-param>
+               <xsl:with-param name="illustration-alt-text">[{$map-illustration-alt-text}]</xsl:with-param>
+              </xsl:call-template>
+              <br /><xsl:value-of select="$newline" />
+             </div></div><xsl:value-of select="$newline" />
+            </xsl:if>
+           </xsl:for-each>
           </xsl:when>
           <xsl:otherwise>
            <xsl:apply-templates select="." />
@@ -1576,17 +1645,6 @@ title of each section be a simple number.
        <xsl:variable name="illustration-height" select="instance[@class='html']/@height" />
        <xsl:variable name="illustration-src" select="instance[@class='html']/@src" />
 
-       <xsl:variable name="illustration-alt-text">
-        <xsl:choose>
-         <xsl:when test="$language='es'">
-          <xsl:text>ilustraci&oacute;n</xsl:text>
-         </xsl:when>
-         <xsl:otherwise>
-          <xsl:text>illustration</xsl:text>
-         </xsl:otherwise>
-        </xsl:choose>
-       </xsl:variable>
-
        <h3>
         <xsl:choose>
          <xsl:when test="$language='es'">
@@ -1600,23 +1658,14 @@ title of each section be a simple number.
        </h3><xsl:value-of select="$newline" />
 
        <div class="illustration"><div align="center"><xsl:value-of select="$newline" />
-        <table border="0" cellpadding="0" cellspacing="0"><xsl:value-of select="$newline" />
-         <tr><xsl:value-of select="$newline" />
-          <td><img src="brdrtpl.gif" width="31" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-          <td><img src="brdrtp.gif" width="{$illustration-width}" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-          <td><img src="brdrtpr.gif" width="33" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-         </tr><xsl:value-of select="$newline" />
-         <tr><xsl:value-of select="$newline" />
-          <td><img src="brdrl.gif" width="31" height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-          <td><img src="{$illustration-src}" width="{$illustration-width}" height="{$illustration-height}" align="middle" border="0" alt="[{$illustration-alt-text}]" /></td><xsl:value-of select="$newline" />
-          <td><img src="brdrr.gif" width="33" height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-         </tr><xsl:value-of select="$newline" />
-         <tr><xsl:value-of select="$newline" />
-          <td><img src="brdrbtl.gif" width="31" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-          <td><img src="brdrbt.gif" width="{$illustration-width}" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-          <td><img src="brdrbtr.gif" width="33" height="32" align="middle" alt="" /></td><xsl:value-of select="$newline" />
-         </tr><xsl:value-of select="$newline" />
-        </table><br /><xsl:value-of select="$newline" />
+        <xsl:call-template name="illustration-framed">
+         <xsl:with-param name="illustration-width"><xsl:value-of select="$illustration-width" /></xsl:with-param>
+         <xsl:with-param name="illustration-height"><xsl:value-of select="$illustration-height" /></xsl:with-param>
+         <xsl:with-param name="illustration-src"><xsl:value-of select="$illustration-src" /></xsl:with-param>
+         <xsl:with-param name="brdrl-width">31</xsl:with-param>
+         <xsl:with-param name="brdrr-width">33</xsl:with-param>
+        </xsl:call-template>
+        <br /><xsl:value-of select="$newline" />
        </div></div><xsl:value-of select="$newline" />
        <p class="caption"><strong><xsl:apply-templates select="meta/description" /></strong></p><xsl:value-of select="$newline" />
       </xsl:when>
@@ -1767,6 +1816,60 @@ title of each section be a simple number.
 
   <p class="navigation">[<a href="{$alpha-bar-id-prefix}a.htm">A</a>&nbsp;<a href="{$alpha-bar-id-prefix}b.htm">B</a>&nbsp;<a href="{$alpha-bar-id-prefix}c.htm">C</a>&nbsp;<a href="{$alpha-bar-id-prefix}d.htm">D</a>&nbsp;<a href="{$alpha-bar-id-prefix}e.htm">E</a>&nbsp;<a href="{$alpha-bar-id-prefix}f.htm">F</a>&nbsp;<a href="{$alpha-bar-id-prefix}g.htm">G</a>&nbsp;<a href="{$alpha-bar-id-prefix}h.htm">H</a>&nbsp;<a href="{$alpha-bar-id-prefix}i.htm">I</a>&nbsp;<a href="{$alpha-bar-id-prefix}j.htm">J</a>&nbsp;<a href="{$alpha-bar-id-prefix}k.htm">K</a>&nbsp;<a href="{$alpha-bar-id-prefix}l.htm">L</a>&nbsp;<a href="{$alpha-bar-id-prefix}m.htm">M</a>&nbsp;<a href="{$alpha-bar-id-prefix}n.htm">N</a>&nbsp;<a href="{$alpha-bar-id-prefix}o.htm">O</a>&nbsp;<a href="{$alpha-bar-id-prefix}p.htm">P</a>&nbsp;<a href="{$alpha-bar-id-prefix}q.htm">Q</a>&nbsp;<a href="{$alpha-bar-id-prefix}r.htm">R</a>&nbsp;<a href="{$alpha-bar-id-prefix}s.htm">S</a>&nbsp;<a href="{$alpha-bar-id-prefix}t.htm">T</a>&nbsp;<a href="{$alpha-bar-id-prefix}u.htm">U</a>&nbsp;<a href="{$alpha-bar-id-prefix}v.htm">V</a>&nbsp;<a href="{$alpha-bar-id-prefix}w.htm">W</a>&nbsp;<a href="{$alpha-bar-id-prefix}x.htm">X</a>&nbsp;<a href="{$alpha-bar-id-prefix}y.htm">Y</a>&nbsp;<a href="{$alpha-bar-id-prefix}z.htm">Z</a>]</p><xsl:value-of select="$newline" />
 
+</xsl:template>
+
+<xsl:template name="illustration-framed">
+ <xsl:param name="brdrl-width">32</xsl:param>
+ <xsl:param name="brdr-height">32</xsl:param>
+ <xsl:param name="brdrr-width">32</xsl:param>
+ <xsl:param name="illustration-alt-text">
+  <xsl:choose>
+   <xsl:when test="$language='es'">
+    <xsl:text>ilustraci&oacute;n</xsl:text>
+   </xsl:when>
+   <xsl:otherwise>
+    <xsl:text>illustration</xsl:text>
+   </xsl:otherwise>
+  </xsl:choose>
+ </xsl:param>
+
+ <xsl:param name="illustration-width"></xsl:param>
+ <xsl:param name="illustration-height"></xsl:param>
+ <xsl:param name="illustration-src"></xsl:param>
+ <xsl:param name="illustration-href"></xsl:param>
+
+ <table border="0" cellpadding="0" cellspacing="0">
+  <xsl:value-of select="$newline" />
+  <tr>
+   <xsl:value-of select="$newline" />
+   <td><img src="brdrtpl.gif" width="{$brdrl-width}" height="{$brdr-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
+   <td><img src="brdrtp.gif" width="{$illustration-width}" height="{$brdr-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
+   <td><img src="brdrtpr.gif" width="{$brdrr-width}" height="{$brdr-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
+  </tr><xsl:value-of select="$newline" />
+  <tr>
+   <xsl:value-of select="$newline" />
+   <td><img src="brdrl.gif" width="{$brdrl-width}" height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
+   <td>
+    <xsl:choose>
+     <xsl:when test="$illustration-href">
+      <a href="{$illustration-href}">
+       <img src="{$illustration-src}" width="{$illustration-width}" height="{$illustration-height}" align="middle" border="0" alt="{$illustration-alt-text}" />
+      </a>
+     </xsl:when>
+     <xsl:otherwise>
+      <img src="{$illustration-src}" width="{$illustration-width}" height="{$illustration-height}" align="middle" border="0" alt="[{$illustration-alt-text}]" />
+     </xsl:otherwise>
+    </xsl:choose>
+   </td><xsl:value-of select="$newline" />
+   <td><img src="brdrr.gif" width="{$brdrr-width}" height="{$illustration-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
+  </tr><xsl:value-of select="$newline" />
+  <tr>
+   <xsl:value-of select="$newline" />
+   <td><img src="brdrbtl.gif" width="{$brdrl-width}" height="{$brdr-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
+   <td><img src="brdrbt.gif" width="{$illustration-width}" height="{$brdr-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
+   <td><img src="brdrbtr.gif" width="{$brdrr-width}" height="{$brdr-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
+  </tr><xsl:value-of select="$newline" />
+ </table><xsl:value-of select="$newline" />
 </xsl:template>
 
 </xsl:transform>
