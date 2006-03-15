@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE gamebook SYSTEM "gamebook.dtd" [
- <!ENTITY % xhtml.characters SYSTEM "htmlchar.mod">
- <!ENTITY % latex.characters SYSTEM "ltexchar.mod">
- <!ENTITY % pml.characters SYSTEM "pmlchar.mod">
- %xhtml.characters;
-
  <!ENTITY % general.links SYSTEM "genlink.mod">
  %general.links;
  <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
  %xhtml.links;
+
+ <!ENTITY % general.inclusions SYSTEM "geninc.mod">
+ %general.inclusions;
 ]>
 
 <gamebook xml:lang="en-UK" version="0.11">
@@ -18,6 +16,9 @@
 $Id$
 
 $Log$
+Revision 1.2  2006/03/15 22:06:47  jonathan.blake
+Changed all character entities to <ch.*/> although they should probably be written encoded characters
+
 Revision 1.1  2006/03/13 18:30:13  cvsuser
 Add new file
 
@@ -89,9 +90,8 @@ Todo:
  <creator class="short">Joe Dever y Gary Chalk</creator>
  <creator class="medium">Joe Dever<br />Ilustrado por Gary Chalk</creator>
  <creator class="long">
-  <p><strong>Joe Dever</strong> nació en el año 1956 en Woodford Bridge (Essex, Gran Bretaña). Al concluir sus estudios, trabajó como músico en unos importantes estudios de grabación de Londres. En un viaje de negocios a Los Ángeles en 1977 descubrió el juego de encarnar personajes titulado Dungeons and Dragons (Mazmorras y Dragones), que inmediatamente le entusiasmó. En 1982 ganó en los Estados Unidos el Advanced Dungeons and Dragons Championship, en el que era el único competidor británico. Desde entonces ha participado en numerosos programas de radio y televisión y su nombre ha aparecido muchas veces en la prensa en relación con este hobby. Las aventuras de Lobo Solitario son la culminación de muchos años de trabajo consagrados por el autor a crear y desarrollar el mundo fantástico de Magnamund. Joe Dever proyecta revelar en próximos libros nuevas maravillas de las Lastlands.</p>
-  <p><strong>Gary Chalk</strong>. Nacido en 1952, creció en el ambiente rural de Hertfordshire (Gran Bretaña). Su gran interés por la historia le llevó a tomar parte desde los quince años en juegos de guerra, un hobby que aún hoy cultiva. Después de obtener su licenciatura en Dibujo hizo prácticas durante tres años en un estudio y consiguió el titulo de profesor de Arte y Dibujo.
-Trabajando como ilustrador de libros infantiles empezó a interesarse por los juegos de aventuras, interés que le ha conducido a ilustrar varios juegos de gran éxito como Cry Havoc, Starship Captain y Battlecars (este último en colaboración con Ian Livingstone). Pero quizá la obra que le ha dado más fama sea el juego del Talismán, que ha obtenido un éxito enorme.</p>
+  &inclusion.joe.dever.bio.lw;
+  &inclusion.gary.chalk.bio.lw;
  </creator>
  <publisher>Proyecto Aon Español</publisher>
  <date class="publication"><year>2006</year><month>3</month><day>7</day></date>
@@ -104,9 +104,9 @@ Trabajando como ilustrador de libros infantiles empezó a interesarse por los jue
  <description class="publication">
   <p>Edición de Internet publicada por <a href="&link.project.website;">Proyecto Aon Español</a>. Esta edición trata de reflejar fielmente el texto completo de la versión original. Allí donde se han hecho mínimas correcciones, viene notificado en la <a idref="errata">Errata</a>.</p>
  </description>
- <rights class="copyrights">Copyright del texto &copy; 1984 Joe Dever.<br />Copyright de las ilustraciones &copy; 1984 Gary Chalk.</rights>
+ <rights class="copyrights">Copyright del texto <ch.copy/> 1984 Joe Dever.<br />Copyright de las ilustraciones <ch.copy/> 1984 Gary Chalk.</rights>
  <rights class="license-notification">
-  <p>Copyright del texto &copy; 1984 Joe Dever.<br />Copyright de las ilustraciones &copy; 1984 Gary Chalk.<br />La distribución de esta Edición de Internet está restringida bajo los términos de la <a idref="license">Licencia del Proyecto Aon</a>.</p>
+  <p>Copyright del texto <ch.copy/> 1984 Joe Dever.<br />Copyright de las ilustraciones <ch.copy/> 1984 Gary Chalk.<br />La distribución de esta Edición de Internet está restringida bajo los términos de la <a idref="license">Licencia del Proyecto Aon</a>.</p>
  </rights>
 </meta>
 
@@ -145,7 +145,7 @@ Trabajando como ilustrador de libros infantiles empezó a interesarse por los jue
    </meta>
 
    <data>
-    <p><quote>Estaría especialmente encantado si la cesión de los derechos para distribuir mis libros a través de este medio se entendiera como mi <quote>regalo del milenio</quote> para todos aquellos devotos lectores que han mantenido la bandera del Kai ondeando alto, a través de todos los buenos momentos, y también en los no tan buenos. Me haría sentir muy orgulloso si esta inciativa pusiera los cimientos de una herencia duradera, asegurando la longevidad de Lobo Solitario haciendo mi creación libre y accesible fácilmente en la red para las actuales y futuras genereaciones. Por ellos, por nosotros, por Sommerlund y el Kai&ellips;</quote> <strong>Joe Dever</strong></p>
+    <p><quote>Estaría especialmente encantado si la cesión de los derechos para distribuir mis libros a través de este medio se entendiera como mi <quote>regalo del milenio</quote> para todos aquellos devotos lectores que han mantenido la bandera del Kai ondeando alto, a través de todos los buenos momentos, y también en los no tan buenos. Me haría sentir muy orgulloso si esta inciativa pusiera los cimientos de una herencia duradera, asegurando la longevidad de Lobo Solitario haciendo mi creación libre y accesible fácilmente en la red para las actuales y futuras genereaciones. Por ellos, por nosotros, por Sommerlund y el Kai<ch.ellips/></quote> <strong>Joe Dever</strong></p>
     <p>Proyecto Aon quiere, en primer lugar, agradecer a Joe Dever el hecho de ofrecernos generosamente los libros que tanto hemos amado desde su comienzo. También queremos mostrar nuestro agradecimiento y reconocimiento a los siguientes miembros del Proyecto Aon por su exhaustivo trabajo:</p>
 
     <section class="frontmatter" id="credits">
@@ -163,7 +163,7 @@ Trabajando como ilustrador de libros infantiles empezó a interesarse por los jue
        <dt>Ilustraciones alternativas</dt>
         <dd>Alejandro Colucci (ilustraciones de la reedición de Timun Mas)<br />JC Álvarez (ilustraciones del texto y cartas de acción)<br />Jonathan Blake (extramatter charts and tables)<br />Michael Hahn (mapa)</dd>
        <dt>Lectores test</dt>
-        <dd>Juan Pablo Fernández (Lectura general del libro)<br />Christian Leonhard (Sections 106&endash;140 and 211&endash;245)<br />Brad Phelps (Sections 176&endash;210)<br />Michael Richey (Sections 1&endash;35 and 316&endash;350)<br />Tyson Torres (Sections 71&endash;105, 141&endash;175 and 246&endash;280)</dd>
+        <dd>Juan Pablo Fernández (Lectura general del libro)<br />Christian Leonhard (Sections 106<ch.endash/>140 and 211<ch.endash/>245)<br />Brad Phelps (Sections 176<ch.endash/>210)<br />Michael Richey (Sections 1<ch.endash/>35 and 316<ch.endash/>350)<br />Tyson Torres (Sections 71<ch.endash/>105, 141<ch.endash/>175 and 246<ch.endash/>280)</dd>
        <dt>Edición</dt>
         <dd>Raúl Moreno</dd>
        <dt>Composición PDF</dt>
@@ -661,7 +661,7 @@ cantidad suficiente para una dosis.</p>
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>Desde all&iacute; puedes contemplar una magn&iacute;fica vista de las torres y agujas de  Holmgard y las altas murallas de piedra de la ciudadela</description>
+        <description>Desde all<ch.iacute/> puedes contemplar una magn<ch.iacute/>fica vista de las torres y agujas de  Holmgard y las altas murallas de piedra de la ciudadela</description>
        </meta>
        <instance class="html" src="ill1.gif" width="386" height="673" />
        <instance class="pdf" src="ill1.pdf" width="386" height="673" />
@@ -3303,7 +3303,7 @@ cantidad suficiente para una dosis.</p>
        <instance class="html" src="sect217.gif" width="243" height="79" />
        <instance class="pdf" src="sect217.pdf" width="243" height="79" />
        <instance class="text">
-        <signpost>Kolanis&emdash;Mago y Herbolario</signpost>
+        <signpost>Kolanis<ch.emdash/>Mago y Herbolario</signpost>
        </instance>
       </illustration>
       <choice idref="sect91">Si deseas penetrar en la tienda, <link-text>pasa al número 91</link-text>.</choice>
@@ -3919,7 +3919,7 @@ cantidad suficiente para una dosis.</p>
        <instance class="pdf" src="ill15.pdf" width="386" height="644" />
        <instance class="text">
         <blockquote>
-         <p><foreign xml:lang="x-giak"><quote>Orgadak shada taag okak&emdash;orgadak ok&emdash;nara ek ash jek eg Helgedad.</quote></foreign></p>
+         <p><foreign xml:lang="x-giak"><quote>Orgadak shada taag okak<ch.emdash/>orgadak ok<ch.emdash/>nara ek ash jek eg Helgedad.</quote></foreign></p>
         </blockquote>
        </instance>
       </illustration>
@@ -4442,7 +4442,7 @@ cantidad suficiente para una dosis.</p>
        <instance class="html" src="sect310.gif" width="289" height="77" />
        <instance class="pdf" src="sect310.pdf" width="289" height="77" />
        <instance class="text">
-        <signpost>Corte Regia&emdash;1 Milla</signpost>
+        <signpost>Corte Regia<ch.emdash/>1 Milla</signpost>
        </instance>
       </illustration>
       <choice idref="sect37"><link-text>Pasa al número 37</link-text>.</choice>
@@ -4995,35 +4995,35 @@ cantidad suficiente para una dosis.</p>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez &amp; Jonathan Blake</creator>
+      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
      </meta>
      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez &amp; Jonathan Blake</creator>
+      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
      </meta>
      <instance src="acdscplz.gif" width="385" height="121" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez &amp; Jonathan Blake</creator>
+      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
      </meta>
      <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez &amp; Jonathan Blake</creator>
+      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
      </meta>
      <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez &amp; Jonathan Blake</creator>
+      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif" />
     </illustration>
@@ -5138,7 +5138,7 @@ cantidad suficiente para una dosis.</p>
      <meta><title>Introducción</title></meta>
 
      <data>
-      <p>Las publicaciones que se han hecho de la colección tienen ciertos errores. Podemos encontrar errores de traducción, en las secciones de destino de las opciones, etc. En la edición on-line están corregidos la mayoría de ellos, y se enumeran a continuación. Si aun así adviertes algo que necesite ser corregido, por favor contacta con el <a href="mailto:&link.staff.email;">Equipo de Proyecto Aon Español</a>.</p>
+      <p>Las publicaciones que se han hecho de la colección tienen ciertos errores. Podemos encontrar errores de traducción, en las secciones de destino de las opciones, etc. En la edición on-line están corregidos la mayoría de ellos, y se enumeran a continuación. Si aun así adviertes algo que necesite ser corregido, por favor contacta con el <a href="&link.staff.contact;">Equipo de Proyecto Aon Español</a>.</p>
      </data>
     </section>
 
@@ -5149,7 +5149,7 @@ cantidad suficiente para una dosis.</p>
       <p>(<a idref="gamerulz">Las Reglas del Juego</a>) Eliminado <quote>que figura al comienzo de este libro. Para sucesivas aventuras puedes copiar o fotocopiar esta carta</quote>. Eliminado <quote>, que aparece al final del libro</quote>.</p>
       <p>(<a idref="discplnz">Disciplinas del Kai</a>) Cambiados todos los símbolos de punto y coma (;) por dos puntos (:) en las descripciones de las disciplinas. Cambiados todos los puntos detrás de signo de cerrar paréntesis, en vez de antes.</p>
       <p>(<a idref="equipmnt">Equipo: Cómo utilizar tu equipo</a>) Cambiados todos los puntos detrás de signo de cerrar paréntesis, en vez de antes.</p>
-      <p>(<a idref="cmbtrulz.htm">Reglas para los Combates</a>) Eliminado <quote> en las páginas 222-223 del libro</quote>.</p>
+      <p>(<a idref="cmbtrulz">Reglas para los Combates</a>) Eliminado <quote> en las páginas 222-223 del libro</quote>.</p>
       <p>(<a idref="levels">Niveles de Entrenamiento Kai</a>) La sección de Niveles de Entrenamiento Kai no aparecía en el libro original, pero ha sido añadida para información del lector.</p>
       <p>(<a idref="kaiwisdm">La Sabiduría del Kai</a>) Eliminado <quote>reproducido al principio de este libro</quote>.</p>
       <p>(<a idref="sect1">1</a>) Movida la última opción (sobre Sexto sentido) a la primera posición.</p>
@@ -5292,7 +5292,7 @@ cantidad suficiente para una dosis.</p>
      </data>
     </section>
 
-<!-- JC Alvarez&apos;s illustrations: DO NOT DELETE
+<!-- JC Alvarez<ch.apos/>s illustrations: DO NOT DELETE
       <ul class="unbulleted">
        <li><a idref="tssf">The Story So Far</a></li>
        <li><a idref="sect17">Section 17</a></li>
@@ -5350,316 +5350,8 @@ cantidad suficiente para una dosis.</p>
    </data>
   </section>
 
-  <section class="backmatter" id="license">
-   <meta><title>Licencia del Proyecto Aon</title></meta>
+  &inclusion.project.aon.license;
 
-   <data>
-    <p>24 de Mayo de 2001</p>
-  
-    <section class="backmatter" id="lic-pre">
-     <meta><title>0. Preamble</title></meta>
-
-     <data>
-      <p>Joe Dever, author of the Lone Wolf game books, and Ian Page, author of the World of Lone Wolf books are providing certain of their works for free (gratis) download from the internet. Gary Chalk and Brian Williams are similarly offering the illustrations that they did for Joe Dever&apos;s books. This license is intended to protect the rights of the authors and the illustrators, the rights of his readers, and the quality of the distributions of the books.</p>
-      <p>Basically, by viewing or downloading the books or the illustrations, you agree to refrain from redistributing them in any format for any reason. This is intended to protect readers from getting poor quality, unofficial versions or from being asked for payment in exchange for the books by someone who is redistributing them unofficially.</p>
-      <p>Anyone who wishes to simply view or download the Internet Editions for their own personal use need not worry about running afoul of the terms of this License. These activities are within acceptable behaviour as defined by this License.</p>
-      <p>This section does not contain the legally binding terms of this license. The precise terms and conditions of this license follow.</p>
-     </data>
-    </section>
-
-    <section class="backmatter" id="lic-1">
-     <meta><title>1. Definitions</title></meta>
-
-     <data>
-
-      <section class="backmatter" id="lic-1-0">
-       <meta><title>1.0</title></meta>
-
-       <data>
-        <p><quote>License</quote> shall hereafter refer to this document.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-1-1">
-       <meta><title>1.1</title></meta>
-
-       <data>
-        <p><quote>Authors</quote> shall hereafter refer to Joe Dever and Ian Page, copyright holders for the literary works covered by this license. Where either Joe Dever or Ian Page are mentioned singly, they will be referred to by name.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-1-2">
-       <meta><title>1.2</title></meta>
-
-       <data>
-        <p><quote>Illustrator</quote> shall hereafter refer to Gary Chalk, holder of the copyrights for the illustrations of Lone Wolf books one through eight counted inclusively, and Brian Williams, holder of the copyrights for the illustrations of Lone Wolf books nine through twenty-eight counted inclusively with the exception of the illustrations for book twenty-one, <cite>The Voyage of the Moonstone</cite> and holder of the copyrights for the illustrations of books two through four of the Freeway Warrior series. Where either Gary Chalk or Brian Williams are mentioned singly, they will be referred to by name.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-1-3">
-       <meta><title>1.3</title></meta>
-
-       <data>
-        <p><quote>Internet</quote> shall hereafter refer to any means of transferring information electronically between two or more <quote>Licensees</quote>. (the term <quote>Licensee</quote> is defined in Section 1.5 of the License)</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-1-4">
-       <meta><title>1.4</title></meta>
-
-       <data>
-        <p><quote>Internet Editions</quote> shall hereafter refer to the document or documents, any parts thereof or derivative works thereof (including translations) made available to the public under the terms of this License via the Internet. The term <quote>Internet Editions</quote> is limited to the electronic transcription of certain text and illustrations by the Authors and Illustrators respectively as listed hereafter.</p>
-        <p>The following are the works written by Joe Dever which are being offered under the terms of this license:</p>
-
-        <ul>
-         <li><cite>Flight from the Dark</cite>; Copyright 1984 Joe Dever and Gary Chalk.</li>
-         <li><cite>Fire on the Water</cite>; Copyright 1984 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Caverns of Kalte</cite>; Copyright 1984 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Chasm of Doom</cite>; Copyright 1985 Joe Dever and Gary Chalk.</li>
-         <li><cite>Shadow on the Sand</cite>; Copyright 1985 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Kingdoms of Terror</cite>; Copyright 1985 Joe Dever and Gary Chalk.</li>
-         <li><cite>Castle Death</cite>; Copyright 1986 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Jungle of Horrors</cite>; Copyright 1987 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Cauldron of Fear</cite>; Copyright 1987 Joe Dever.</li>
-         <li><cite>The Dungeons of Torgar</cite>; Copyright 1987 Joe Dever.</li>
-         <li><cite>The Prisoners of Time</cite>; Copyright 1987 Joe Dever.</li>
-         <li><cite>The Masters of Darkness</cite>; Copyright 1988 Joe Dever.</li>
-         <li><cite>The Plague Lords of Ruel</cite>; Copyright 1990, 1992 Joe Dever.</li>
-         <li><cite>The Captives of Kaag</cite>; Copyright 1990, 1992 Joe Dever.</li>
-         <li><cite>The Darke Crusade</cite>; Copyright 1991, 1993 Joe Dever.</li>
-         <li><cite>The Legacy of Vashna</cite>; Copyright 1991, 1993 Joe Dever.</li>
-         <li><cite>The Deathlord of Ixia</cite>; Copyright 1992, 1994 Joe Dever.</li>
-         <li><cite>Dawn of the Dragons</cite>; Copyright 1992 Joe Dever.</li>
-         <li><cite>Wolf&apos;s Bane</cite>; Copyright 1993, 1995 Joe Dever.</li>
-         <li><cite>The Curse of Naar</cite>; Copyright 1993, 1996 Joe Dever.</li>
-         <li><cite>The Magnamund Companion</cite>; Copyright 1986 Joe Dever.</li>
-         <li><cite>Freeway Warrior: Highway Holocaust</cite>; Copyright 1988 Joe Dever.</li>
-         <li><cite>Freeway Warrior: Slaughter Mountain Run</cite>; Copyright 1988 Joe Dever.</li>
-         <li><cite>Freeway Warrior: The Omega Zone</cite>; Copyright 1989 Joe Dever.</li>
-         <li><cite>Freeway Warrior: California Countdown</cite>; Copyright 1989 Joe Dever.</li>
-        </ul>
-
-        <p>The following are the works written by Ian Page which are being offered under the terms of this license:</p>
-
-        <ul>
-         <li><cite>Grey Star the Wizard</cite>; Copyright 1985 Ian Page.</li>
-         <li><cite>The Forbidden City</cite>; Copyright 1986 Ian Page.</li>
-         <li><cite>Beyond the Nightmare Gate</cite>; Copyright 1986 Ian Page.</li>
-         <li><cite>War of the Wizards</cite>; Copyright 1986 Ian Page.</li>
-        </ul>
-
-
-        <p>The illustrations created by Gary Chalk of the following books are part of the illustrations being offered under the terms of this License:</p>
-
-        <ul>
-         <li><cite>Flight from the Dark</cite>; Illustrations copyright 1984 Joe Dever and Gary Chalk.</li>
-         <li><cite>Fire on the Water</cite>; Illustrations copyright 1984 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Caverns of Kalte</cite>; Illustrations copyright 1984 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Chasm of Doom</cite>; Illustrations copyright 1985 Joe Dever and Gary Chalk.</li>
-         <li><cite>Shadow on the Sand</cite>; Illustrations copyright 1985 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Kingdoms of Terror</cite>; Illustrations copyright 1985 Joe Dever and Gary Chalk.</li>
-         <li><cite>Castle Death</cite>; Illustrations copyright 1986 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Jungle of Horrors</cite>; Illustrations copyright 1987 Joe Dever and Gary Chalk.</li>
-        </ul>
-
-        <p>The illustrations created by Brian Williams of the following books are part of the illustrations being offered under the terms of this License:</p>
-
-        <ul>
-         <li><cite>The Cauldron of Fear</cite>; Illustrations Copyright 1987 Brian Williams.</li>
-         <li><cite>The Dungeons of Torgar</cite>; Illustrations Copyright 1987 Brian Williams.</li>
-         <li><cite>The Prisoners of Time</cite>; Illustrations Copyright 1987 Brian Williams.</li>
-         <li><cite>The Masters of Darkness</cite>; Illustrations Copyright 1988 Brian Williams.</li>
-         <li><cite>The Plague Lords of Ruel</cite>; Illustrations Copyright 1990, 1992 Brian Williams.</li>
-         <li><cite>The Captives of Kaag</cite>; Illustrations Copyright 1990, 1992 Brian Williams.</li>
-         <li><cite>The Darke Crusade</cite>; Illustrations Copyright 1991, 1993 Brian Williams.</li>
-         <li><cite>The Legacy of Vashna</cite>; Illustrations Copyright 1991, 1993 Brian Williams.</li>
-         <li><cite>The Deathlord of Ixia</cite>; Illustrations Copyright 1992 Brian Williams.</li>
-         <li><cite>Dawn of the Dragons</cite>; Illustrations Copyright 1992 Brian Williams.</li>
-         <li><cite>Wolf&apos;s Bane</cite>; Illustrations Copyright 1993 Brian Williams.</li>
-         <li><cite>The Curse of Naar</cite>; Illustrations Copyright 1993 Brian Williams.</li>
-         <li><cite>The Buccaneers of Shadaki</cite>; Illustrations Copyright 1994 Brian Williams.</li>
-         <li><cite>Mydnight&apos;s Hero</cite>; Illustrations Copyright 1995 Brian Williams.</li>
-         <li><cite>Rune War</cite>; Illustrations Copyright 1995 Brian Williams.</li>
-         <li><cite>Trail of the Wolf</cite>; Illustrations Copyright 1997 Brian Williams.</li>
-         <li><cite>The Fall of Blood Mountain</cite>; Illustrations Copyright 1997 Brian Williams.</li>
-         <li><cite>Vampirium</cite>; Illustrations Copyright 1998 Brian Williams.</li>
-         <li><cite>The Hunger of Sejanoz</cite>; Illustrations Copyright 1998 Brian Williams.</li>
-         <li><cite>Freeway Warrior: Slaughter Mountain Run</cite>; Illustrations Copyright 1988 Brian Williams.</li>
-         <li><cite>Freeway Warrior: The Omega Zone</cite>; Illustrations Copyright 1989 Brian Williams.</li>
-         <li><cite>Freeway Warrior: California Countdown</cite>; Illustrations Copyright 1989 Brian Williams.</li>
-        </ul>
-
-        <p><quote>Internet Editions</quote> shall not refer to any other works by the Authors nor any other illustrations by the Illustrators. <quote>Internet Editions</quote> shall refer solely to the text and illustrations of the above works when made available through the Internet.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-1-5">
-       <meta><title>1.5</title></meta>
-
-       <data>
-        <p><quote>Licensee</quote> shall hereafter refer to any person or electronic agent who receives some or all of the Internet Editions. The <quote>Licensee</quote> shall hereinafter be referred to as <quote>Licensee</quote> or <quote>you</quote>.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-1-6">
-       <meta><title>1.6</title></meta>
-
-       <data>
-        <p><quote>Distribution Point</quote> shall hereafter refer to the specific Internet site or sites to which the Authors and Illustrators have granted rights to distribute the Internet Editions.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-1-7">
-       <meta><title>1.7</title></meta>
-
-       <data>
-        <p><quote>Maintainer</quote> shall hereafter refer to the person or persons who are responsible for the maintenance of the Distribution Point.</p>
-       </data>
-      </section>
-
-     </data>
-    </section>
-
-    <section class="backmatter" id="lic-2">
-     <meta><title>2. Terms of Distribution</title></meta>
-
-     <data>
-
-      <section class="backmatter" id="lic-2-0">
-       <meta><title>2.0</title></meta>
-
-       <data>
-        <p>The terms of this License are limited to the distribution of the Internet Editions. No other form of distribution is covered under the terms of this License.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-2-1">
-       <meta><title>2.1</title></meta>
-
-       <data>
-        <p>The Authors and Illustrators grant you the right to receive a copy or copies of the Internet Editions from the Distribution Point at no charge provided that you agree to all of the terms and obligations of this License. If you do not agree to all of the terms and obligations of this License, you are not granted any rights by this License.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-2-2">
-       <meta><title>2.2</title></meta>
-
-       <data>
-        <p>You agree to refrain from redistributing the Internet Editions in any form, electronic or otherwise, to any other person or persons for any reason. You are granted the right to receive a copy or copies only for your own personal use.</p>
-        <p>This License does not collectively grant any rights to corporations or groups of individuals when regarded as one legal entity. This License exclusively grants rights to private individuals.</p>
-        <p>Redistribution includes but is not limited to displaying the Internet Editions within the graphical representation of an Internet site other than the Distribution Point. This prohibition includes but is not limited to HTML <quote>frames</quote>.</p>
-        <p>One exception to the restrictions on redistribution in this section is made in that you may send the Internet Editions or derivative works thereof to the Distribution Point by the consent of the Maintainer.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-2-3">
-       <meta><title>2.3</title></meta>
-
-       <data>
-        <p>You agree to be bound by the terms and obligations of this License by receiving or viewing a copy or copies of the Internet Editions even though you have not signed any written document. Indeed you have no right to receive or view a copy or copies without first agreeing to the terms and obligations of this License.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-2-4">
-       <meta><title>2.4</title></meta>
-
-       <data>
-        <p>The Authors and Illustrators retain all other rights to their respective portions of the Internet Editions not covered by this License. The Authors or Illustrators may, at any time, without notice and without need to show due cause, revoke the rights granted to you by this License to their respective portions of the Internet Editions.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-2-5">
-       <meta><title>2.5</title></meta>
-
-       <data>
-        <p>If a person is under the legal age to be able to enter into a contractual relationship as defined by the laws of the area in which that person lives, they may have a parent or legal guardian agree to be bound by the terms and obligations of this license. That same parent or legal guardian may thereafter give a copy or copies of the Internet Editions to that child. That parent or legal guardian is thereafter legally responsible to ensure that that child behaves in accordance with all of the terms and obligations of this License.</p>
-        <p>The authority of a parent or legal guardian to distribute the Internet Editions does not extend to the distribution of the Internet Editions to any other person or persons except his or her child or legal dependent.</p>
-       </data>
-      </section>
-
-     </data>
-    </section>
-
-    <section class="backmatter" id="lic-3">
-     <meta><title>3. Termination of the License</title></meta>
-
-     <data>
-
-      <section class="backmatter" id="lic-3-0">
-       <meta><title>3.0</title></meta>
-
-       <data>
-        <p>If for any reason you are unable to comply with any of the terms and obligations of this License, you agree to destroy all copies of the Internet Editions of which you have control within fourteen calendar days after the first violation.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-3-1">
-       <meta><title>3.1</title></meta>
-
-       <data>
-        <p>If any of the Authors or the Illustrators revokes your rights granted under this License, you agree to destroy all copies of the Authors&apos; or Illustrators&apos; work which is a part of the Internet Editions of which you have control within fourteen calendar days of receiving notification in any form.</p>
-       </data>
-      </section>
-
-     </data>
-    </section>
-
-    <section class="backmatter" id="lic-4">
-     <meta><title>4. Jurisdiction</title></meta>
-
-     <data>
-
-      <section class="backmatter" id="lic-4-0">
-       <meta><title>4.0</title></meta>
-
-       <data>
-        <p>If, in consequence of court judgement or the laws of a particular area, any portion of the License is held as invalid or unenforceable in any particular circumstance, you are no longer granted any rights under the terms of this License in that circumstance. You agree to act in accordance with section 3.0 for all copies of the Internet Editions for which the License is held as invalid or unenforceable as if you had violated the terms and obligations of the License. The License is intended to remain in force in all other circumstances.</p>
-       </data>
-      </section>
-
-     </data>
-    </section>
-
-    <section class="backmatter" id="lic-5">
-     <meta><title>5. Revision of the License</title></meta>
-
-     <data>
-
-      <section class="backmatter" id="lic-5-0">
-       <meta><title>5.0</title></meta>
-
-       <data>
-        <p>The Authors and the Illustrators may publish revisions of this License in the future to address new concerns. Any further revisions will be legally binding at the time that you receive notification in any form of the revision.</p>
-       </data>
-      </section>
-
-     </data>
-    </section>
-
-    <section class="backmatter" id="lic-6">
-     <meta><title>6. NO WARRANTY</title></meta>
-
-     <data>
-
-      <section class="backmatter" id="lic-6-0">
-       <meta><title>6.0</title></meta>
-
-       <data>
-        <p>BECAUSE THE INTERNET EDITIONS ARE LICENSED FREE OF CHARGE, THERE IS NO WARRANTY FOR THE INTERNET EDITIONS, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS OR OTHER PARTIES PROVIDE THE INTERNET EDITIONS "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE INTERNET EDITIONS IS WITH YOU. SHOULD THE INTERNET EDITIONS PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY REPAIRS.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-6-1">
-       <meta><title>6.1</title></meta>
-
-       <data>
-        <p>IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER OR MAINTAINER BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE INTERNET EDITIONS (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE INTERNET EDITIONS TO OPERATE WITH ANY PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
-       </data>
-      </section>
-     </data>
-    </section>
-   </data>
-  </section>
  </data>
 </section>
 
