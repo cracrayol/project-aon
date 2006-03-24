@@ -50,19 +50,19 @@ sub encodify {
   my $modified = $line;
   my $replacements = 0;
 
-  if( $modified =~ s{ ([[:space:]]) \& ([[:space:]]) }{$1\&ampersand;$2}xg ) { $replacements = 1; }
-  if( $modified =~ s{ [[:space:]]+ - [[:space:]]+ }{\&emdash;}xg ) { $replacements = 1; }
-  if( $modified =~ s{ (?<!\!) ([[:space:]])* -- ([[:space:]])* (?!>) }{$1\&emdash;$2}xg ) { $replacements = 1; }
-  if( $modified =~ s{ [[:space:]]* \227 [[:space:]]* }{\&emdash;}xg ) { $replacements = 1; }
-  if( $modified =~ s{ ([[:digit:]]) - ([[:digit:]]) }{$1\&endash;$2}xg ) { $replacements = 1; }
-  if( $modified =~ s{ [[:space:]]* \227 [[:space:]]* }{\&endash;}xg ) { $replacements = 1; }
-  if( $modified =~ s{ > [[:space:]]* \. [[:space:]]* \. ([[:space:]]* \.)? }{>\&lellips;}xg ) { $replacements = 1; }
-  if( $modified =~ s{ [[:space:]]* \. [[:space:]]* \. ([[:space:]]* \.)? }{\&ellips;}xg ) { $replacements = 1; }
-  if( $modified =~ s{ (</?quote>) \1 }{\&thinspace;}xg ) { $replacements = 1; }
-  if( $modified =~ s{ <quote> \&apos; }{<quote>\&thinspace;\&apos;}xg ) { $replacements = 1; }
-  if( $modified =~ s{ \&apos; </quote> }{\&apos;\&thinspace;</quote>}xg ) { $replacements = 1; }
-  if( $modified =~ s{ __+ }{\&blankline;}xg ) { $replacements = 1; }
-  if( $modified =~ s{\%}{\&percent;}xg ) { $replacements = 1; }
+  if( $modified =~ s{ ([[:space:]]) \& ([[:space:]]) }{$1<ch.ampersand/>$2}xg ) { $replacements = 1; }
+  if( $modified =~ s{ [[:space:]]+ - [[:space:]]+ }{<ch.emdash/>}xg ) { $replacements = 1; }
+  if( $modified =~ s{ (?<!\!) ([[:space:]])* -- ([[:space:]])* (?!>) }{$1<ch.emdash/>$2}xg ) { $replacements = 1; }
+  if( $modified =~ s{ [[:space:]]* \227 [[:space:]]* }{<ch.emdash/>}xg ) { $replacements = 1; }
+  if( $modified =~ s{ ([[:digit:]]) - ([[:digit:]]) }{$1<ch.endash/>$2}xg ) { $replacements = 1; }
+  if( $modified =~ s{ [[:space:]]* \227 [[:space:]]* }{<ch.endash/>}xg ) { $replacements = 1; }
+  if( $modified =~ s{ > [[:space:]]* \. [[:space:]]* \. ([[:space:]]* \.)? }{><ch.lellips/>}xg ) { $replacements = 1; }
+  if( $modified =~ s{ [[:space:]]* \. [[:space:]]* \. ([[:space:]]* \.)? }{<ch.ellips/>}xg ) { $replacements = 1; }
+  if( $modified =~ s{ (</?quote>) \1 }{<ch.thinspace/>}xg ) { $replacements = 1; }
+  if( $modified =~ s{ <quote> \&apos; }{<quote><ch.thinspace/><ch.apos/>}xg ) { $replacements = 1; }
+  if( $modified =~ s{ \&apos; </quote> }{<ch.apos/><ch.thinspace/></quote>}xg ) { $replacements = 1; }
+  if( $modified =~ s{ __+ }{<ch.blankline/>}xg ) { $replacements = 1; }
+  if( $modified =~ s{\%}{<ch.percent/>}xg ) { $replacements = 1; }
 
   if( $replacements ) {
     print "\033[2J";
@@ -96,26 +96,26 @@ sub highlight {
 
   $text =~ s{^[[:space:]]+}{}g;
   $text =~ s{ ([[:space:]]) \& ([[:space:]]) }{$1$start\&$stop$2}xg;
-  $text =~ s{(\&ampersand;)}{$encodedStart$1$stop}g;
-  $text =~ s{(\&emdash;)}{$encodedDashStart$1$stop}g;
+  $text =~ s{(<ch.ampersand/>)}{$encodedStart$1$stop}g;
+  $text =~ s{(<ch.emdash/>)}{$encodedDashStart$1$stop}g;
   $text =~ s{ [[:space:]] (\&) [[:space:]] }{$dashStart$1$stop}xg;
   $text =~ s{ ([[:space:]]+ - [[:space:]]+) }{$dashStart$1$stop}xg;
   $text =~ s{ (?<!\!) ([[:space:]]* -- [[:space:]]*) }{$dashStart$1$stop}xg;
   $text =~ s{ ([[:space:]]* \227 [[:space:]]*) }{$dashStart$1$stop}xg;
-  $text =~ s{(\&endash;)}{$encodedDashStart$1$stop}g;
+  $text =~ s{(<ch.endash/>)}{$encodedDashStart$1$stop}g;
   $text =~ s{ ([[:digit:]]) - ([[:digit:]]) }{$1$dashStart-$stop$2}xg;
   $text =~ s{ ([[:space:]]* \226 [[:space:]]*) }{$dashStart$1$stop}xg;
-  $text =~ s{(\&lellips;)}{$encodedStart$1$stop}g;
+  $text =~ s{(<ch.lellips/>)}{$encodedStart$1$stop}g;
   $text =~ s{ > ([[:space:]]* \. [[:space:]]* \. ([[:space:]]* \.)?) }{>$start$1$stop}xg;
-  $text =~ s{(\&ellips;)}{$encodedStart$1$stop}g;
+  $text =~ s{(<ch.ellips/>)}{$encodedStart$1$stop}g;
   $text =~ s{ ([[:space:]]* \. [[:space:]]* \. ([[:space:]]* \.)?) }{$start$1$stop}xg;
-  $text =~ s{(\&thinspace;)}{$encodedStart$1$stop}g;
+  $text =~ s{(<ch.thinspace/>)}{$encodedStart$1$stop}g;
   $text =~ s{ (</?quote> \1) }{$start$1$stop}xg;
-  $text =~ s{ (<quote> \&apos;) }{$start$1$stop}xg;
-  $text =~ s{ (\&apos; </quote>) }{$start$1$stop}xg;
-  $text =~ s{(\&blankline;)}{$encodedStart$1$stop}g;
+  $text =~ s{ (<quote> <ch.apos/>) }{$start$1$stop}xg;
+  $text =~ s{ (<ch.apos/> </quote>) }{$start$1$stop}xg;
+  $text =~ s{(<ch.blankline/>)}{$encodedStart$1$stop}g;
   $text =~ s{ (__+) }{$start$1$stop}xg;
-  $text =~ s{(\&percent;)}{$encodedStart$1$stop}g;
+  $text =~ s{(<ch.percent/>)}{$encodedStart$1$stop}g;
   $text =~ s{(\%)}{$start$1$stop}xg;
 
   return $text;
