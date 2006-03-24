@@ -139,6 +139,8 @@ my $maxErrorCount = 0;
 my $skipLines = 0;
 my $initials = "??";
 my $useCorr = 0;
+my $checkNonASCII = 1;
+my $language = 'en';
 
 while( $#ARGV > -1 && $ARGV[ 0 ] =~ /^-/ ) {
   if( $ARGV[ 0 ] eq "-e" && $#ARGV > 0 ) {
@@ -156,6 +158,14 @@ while( $#ARGV > -1 && $ARGV[ 0 ] =~ /^-/ ) {
   elsif( $ARGV[ 0 ] eq "--use-corr" ) {
     shift @ARGV;
     $useCorr = 1;
+  }
+  elsif( $ARGV[ 0 ] eq '--skip-ASCII-check' ) {
+    shift @ARGV;
+    $checkNonASCII = 0;
+  }
+  elsif( $ARGV[ 0 ] eq '--language' ) {
+    shift @ARGV;
+    $language = shift @ARGV;
   }
 }
 
@@ -187,8 +197,11 @@ while( my $line = <> ) {
     if( $line =~ /\224/ ) { &printError( "ne", $currentSection, $lineNumber, "unescaped right double quotation mark(s)", "\224", "<quote>...</quote>" ); }
     if( $line =~ /\226/ ) { &printError( "ne", $currentSection, $lineNumber, "unescaped endash(es)", "\226", "&endash;" ); }
     if( $line =~ /\227/ ) { &printError( "ne", $currentSection, $lineNumber, "unescaped emdash(es)", "\227", "&emdash;" ); }
-    if( $line =~ /([ \200-\220 \225 \230-\377 ])/gx ) {
-      &printError( "ne", $currentSection, $lineNumber, "unescaped non-ASCII character(s); first found only", "$1" );
+#    if( $checkNonASCII && $line =~ /(.{0,4}?)?([\x80-\xff])(.{0,4})?/ ) {
+#      &printError( "ne", $currentSection, $lineNumber, "unescaped non-ASCII character(s) in \"${1}[[HERE]]${3}\"; first found only", "$2" );
+#    }
+    if( $line =~ /(.{0,4}?)?([\x80-\x9f])(.{0,4})?/ ) {
+      &printError( "ne", $currentSection, $lineNumber, "unsafe non-ASCII character(s) in \"${1}[[HERE]]${3}\"; first found only", "$2" );
     }
 }
   if( $line =~ /'/ ) { &printError( "ne", $currentSection, $lineNumber, "unescaped apostrophe(s)", "'", "\&apos; or <quote>...</quote>" ); }
@@ -246,7 +259,7 @@ while( my $line = <> ) {
   if( $line =~ /(\&link.[^;]+;)/ ) { &printError( "ne", $currentSection, $lineNumber, "probable obsolete markup", "$1", "use <bookref.../> instead" ); }
   if( $line =~ /\&([^[:space:]]+);/ ) {
     unless( $1 =~ /^(?:link|inclusion)/ ) {
-      &printError( "ne", $currentSection, $lineNumber, "probable obsolete markup", "\&$1\;", "<ch.$1/>" );
+      &printError( "ne", $currentSection, $lineNumber, "possible obsolete markup", "\&$1\;", "<ch.$1/>" );
     }
   }
   if( $line =~ /(<a([^>]*) class="footnote"(.*?)>)/ )  { &printError( "ne", $currentSection, $lineNumber, "obsolete markup", "$1", "<footref$2$3>" ); }
@@ -273,15 +286,20 @@ while( my $line = <> ) {
   ##### Others
   if( $line =~ m{<!--(?!/?ERRTAG)} ) { &printError( "ne", $currentSection, $lineNumber, "XML comment found (check for editor comments)" ); }
   if( $line =~ /([[:upper:]]{5,})/ &&
-      $line !~ /<signpost>/ &&
-      $1 ne "ENDURANCE" &&
-      $1 ne "COMBAT" &&
-      $1 ne "WILLPOWER" &&
-      $1 ne "CLOSE" &&
-      $1 ne "XVIII" &&
-      $1 ne "DOCTYPE" &&
-      $1 ne "ENTITY" &&
-      $1 ne "ERRTAG" ) { &printError( "ne", $currentSection, $lineNumber, "possible <signpost> needed", "$1", "<signpost>$1</signpost>" ); }
+      $` !~ /<signpost>$/ &&
+      (($language eq 'en' && 
+        $1 ne "ENDURANCE" &&
+        $1 ne "COMBAT" &&
+        $1 ne "WILLPOWER" &&
+        $1 ne "CLOSE") ||
+       ($language eq 'es' &&
+        $1 ne 'DESTREZA' &&
+        $1 ne 'RESISTENCIA')) &&
+        $1 ne "DOCTYPE" &&
+        $1 ne "ENTITY" &&
+        $1 ne "XVIII" &&
+        $1 ne "ERRTAG" )
+      { &printError( "ne", $currentSection, $lineNumber, "possible <signpost> needed", "$1", "<signpost>$1</signpost>" ); }
 
   #####
   ++$lineNumber;
