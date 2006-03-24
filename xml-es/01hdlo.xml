@@ -16,6 +16,9 @@
 $Id$
 
 $Log$
+Revision 1.3  2006/03/24 00:24:49  jonathan.blake
+Corrected some XML usage issues and tidied it up for publication.
+
 Revision 1.2  2006/03/15 22:06:47  jonathan.blake
 Changed all character entities to <ch.*/> although they should probably be written encoded characters
 
@@ -94,7 +97,7 @@ Todo:
   &inclusion.gary.chalk.bio.lw;
  </creator>
  <publisher>Proyecto Aon Español</publisher>
- <date class="publication"><year>2006</year><month>3</month><day>7</day></date>
+ <date class="publication"><year>2006</year><month>3</month><day>26</day></date>
  <description class="blurb">
   <p>Eres Lobo Solitario. En un devastador ataque los señores de la Oscuridad han destruído el monasterio donde aprendías las disciplinas de los señores del Kai.</p>
   <p>Eres ahora el único superviviente.</p>
@@ -158,17 +161,15 @@ Todo:
         <dd>Raúl Moreno</dd>
        <dt>Edición de ilustraciones</dt>
         <dd>Jonathan Blake<br />Simon Osborne</dd>
-       <dt>XML</dt>
+       <dt>Edición XML</dt>
         <dd>Raúl Moreno</dd>
        <dt>Ilustraciones alternativas</dt>
-        <dd>Alejandro Colucci (ilustraciones de la reedición de Timun Mas)<br />JC Álvarez (ilustraciones del texto y cartas de acción)<br />Jonathan Blake (extramatter charts and tables)<br />Michael Hahn (mapa)</dd>
-       <dt>Lectores test</dt>
-        <dd>Juan Pablo Fernández (Lectura general del libro)<br />Christian Leonhard (Sections 106<ch.endash/>140 and 211<ch.endash/>245)<br />Brad Phelps (Sections 176<ch.endash/>210)<br />Michael Richey (Sections 1<ch.endash/>35 and 316<ch.endash/>350)<br />Tyson Torres (Sections 71<ch.endash/>105, 141<ch.endash/>175 and 246<ch.endash/>280)</dd>
-       <dt>Edición</dt>
-        <dd>Raúl Moreno</dd>
-       <dt>Composición PDF</dt>
-        <dd>Raúl Moreno</dd>
-       <dt>Coordinación</dt>
+        <dd>Alejandro Colucci (ilustraciones de la reedición de Timun Mas)<br />JC Álvarez (ilustraciones del texto y Carta de Acción)<br />Jonathan Blake (otros gráficos y tablas)<br />Michael Hahn (mapa)</dd>
+       <dt>Lectores de prueba</dt>
+        <dd>Juan Pablo Fernández (Lectura general del libro)<br />José Daniel Casado (Lectura general del libro)</dd>
+       <dt>Edición PDF</dt>
+        <dd>Javier Fernández-Sanguino</dd>
+       <dt>Coordinación general</dt>
         <dd>Raúl Moreno</dd>
        <dt>Agradecimientos especiales</dt>
         <dd>Jonathan Blake (y por extensión al resto de Proyecto Aon)</dd>
@@ -282,8 +283,8 @@ Todo:
          <meta>
           <creator>Gary Chalk</creator>
          </meta>
-         <instance class="html" src="weapons.gif" width="386" height="276" />
-         <instance class="pdf" src="weapons.pdf" width="386" height="276" />
+         <instance class="html" src="weapons.gif" width="386" height="278" />
+         <instance class="pdf" src="weapons.pdf" width="386" height="278" />
          <instance class="text">
           <ul class="unbulleted">
            <li>0 = DAGA</li>
@@ -299,7 +300,7 @@ Todo:
           </ul>
          </instance>
         </illustration>
-        <p>No puedes llevar más de 2 armas. Si eliges esta disciplina, escribe en tu <a idref="action">Carta de Acción</a>: <quote>Dominio en el manejo de...: +2 puntos de <typ class="attribute">DESTREZA EN EL COMBATE</typ> si se lleva este arma</quote>.</p>
+        <p>No puedes llevar más de 2 armas. Si eliges esta disciplina, escribe en tu <a idref="action">Carta de Acción</a>: <quote>Dominio en el manejo de<ch.ellips/>: +2 puntos de <typ class="attribute">DESTREZA EN EL COMBATE</typ> si se lleva este arma</quote>.</p>
        </data>
       </section>
 
@@ -339,7 +340,7 @@ Todo:
        </data>
       </section>
 
-      <p>Si llevas a cabo con éxito la misión propuesta a Lobo Solitario en este primer libro, puedes añadir en tu <a idref="action">Carta de Acción</a> del <a href="&link.02fotw;">libro segundo</a> otra disciplina del Kai que tú mismo elijas. Esta disciplina adicional, junto con tus otras cinco destrezas y otros objetos especiales que hayas obtenido en el primer libro puedes usarlos en la próxima aventura de Lobo Solitario, que se titula <cite><a href="&link.02fotw;">Fuego sobre el agua</a></cite>.</p>
+      <p>Si llevas a cabo con éxito la misión propuesta a Lobo Solitario en este primer libro, puedes añadir en tu <a idref="action">Carta de Acción</a> del <bookref series="ls" book="02fsea" section="title">libro segundo</bookref> otra disciplina del Kai que tú mismo elijas. Esta disciplina adicional, junto con tus otras cinco destrezas y otros objetos especiales que hayas obtenido en el primer libro puedes usarlos en la próxima aventura de Lobo Solitario, que se titula <cite><bookref series="ls" book="02fsea" section="title">Fuego sobre el agua</bookref></cite>.</p>
      </data>
     </section>
 
@@ -496,7 +497,7 @@ cantidad suficiente para una dosis.</p>
         <p>Resta de ese total la <typ class="attribute">DESTREZA EN EL COMBATE</typ> de tu enemigo. El resultado es tu puntuación en el combate. Anótala en la <a idref="action">Carta de Acción</a>.</p>
         <p>Ejemplo</p>
         <p>Lobo Solitario (<typ class="attribute">DESTREZA EN EL COMBATE</typ> 15) cae en una emboscada que le tiende Diablo Alado (<typ class="attribute">DESTREZA EN EL COMBATE</typ> 20). No existe la posibilidad de que Lobo Solitario eluda el combate. Por tanto debe resistir y luchar cuando la mencionada criatura se precipita sobre él. Lobo Solitario posee la disciplina del Kai de ataque psíquico, así que suma 2 puntos a su <typ class="attribute">DESTREZA EN EL COMBATE</typ>, cuyo total será por consiguiente 17.</p>
-        <p>De ese total resta la <typ class="attribute">DESTREZA EN EL COMBATE</typ> de Diablo Alado, con lo que resulta una puntuación de -3 (17-20 = -3), que es anotada en la <a idref="action">Carta de Acción</a>.</p>
+        <p>De ese total resta la <typ class="attribute">DESTREZA EN EL COMBATE</typ> de Diablo Alado, con lo que resulta una puntuación de -3 (17<ch.endash/>20 = -3), que es anotada en la <a idref="action">Carta de Acción</a>.</p>
        </li>
        <li><p><a id="stage3">Una vez que has obtenido tu puntuación en el combate</a>, elige al azar un número de la <a idref="random">Tabla de la Suerte</a>.</p></li>
        <li>
@@ -540,7 +541,7 @@ cantidad suficiente para una dosis.</p>
        <li>Novicio</li>
        <li>Aprendiz</li>
        <li>Discípulo</li>
-       <li>Iniciado - Es el rango con el que emprendiste por primera vez una aventura de Lobo Solitario</li>
+       <li>Iniciado<ch.emdash/>Es el rango con el que emprendiste por primera vez una aventura de Lobo Solitario</li>
        <li>Aspirante</li>
        <li>Guardián</li>
        <li>Guerrero o Viajero</li>
@@ -645,7 +646,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect81.gif" width="323" height="191" />
+       <instance class="html" src="small6.gif" width="386" height="150" />
+       <instance class="pdf" src="small6.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect183">Si deseas llamarles, <link-text>dirígete al número 183</link-text>.</choice>
       <choice idref="sect200">Si deseas dejarles pasar de largo y luego continuar tu camino a través del bosque, <link-text>dirígete al número 200</link-text>.</choice>
@@ -734,8 +736,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect13.gif" width="241" height="190" />
-       <instance class="pdf" src="sect13.pdf" width="241" height="190" />
+       <instance class="html" src="small1.gif" width="386" height="150" />
+       <instance class="pdf" src="small1.pdf" width="386" height="150" />
       </illustration>
       <p>Entre las frondosas ramas puedes ver una casita a una altura entre veinticinco y treinta pies. No hay ninguna escala para subir a ella, pero el tronco nudoso del árbol te ofrece muchos salientes donde apoyar los pies.</p>
       <choice idref="sect307">Si deseas trepar al árbol y explorar la casita, <link-text>pasa al número 307</link-text>.</choice>
@@ -772,7 +774,7 @@ cantidad suficiente para una dosis.</p>
      <data>
       <p>Consigues desatar un caballo de las correas que lo atan al carruaje. Está aterrado por el olor de los lobos fatídicos que se aproximan y por los gritos de sus malvados jinetes, los giaks.</p>
       <p>Preparando tu arma, espoleas al asustadizo caballo en dirección hacia las bestias. Los giaks están a menos de cincuenta yardas de distancia y, conforme se acercan, blanden sus lanzas contra ti.</p>
-	  <p>Tú cargas contra ellos.</p>
+      <p>Tú cargas contra ellos.</p>
       <choice idref="sect192"><link-text>Pasa al número 192</link-text>.</choice>
      </data>
     </section>
@@ -853,8 +855,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect205.gif" width="192" height="188" />
-       <instance class="pdf" src="sect205.pdf" width="192" height="188" />
+       <instance class="html" src="small20.gif" width="386" height="150" />
+       <instance class="pdf" src="small20.pdf" width="386" height="150" />
       </illustration>
       <p>Elige al azar un número de la <a idref="random">Tabla de la Suerte</a>.</p>
       <choice idref="sect181">Si sacas un número entre el 0 y el 4, <link-text>pasa al 181</link-text>.</choice>
@@ -887,7 +889,7 @@ cantidad suficiente para una dosis.</p>
 
      <data>
       <p>El mercader grita al cochero del carruaje que salte.</p>
-	  <p><quote>-¡Nos atacan!</quote> -exclama, desapareciendo por la ventana circular.</p>
+      <p><quote>-¡Nos atacan!</quote> -exclama, desapareciendo por la ventana circular.</p>
       <choice idref="sect234">Si decides saltar detrás de él, <link-text>pasa al número 234</link-text>.</choice>
       <choice idref="sect184">Si decides ocupar el puesto del cochero y tomar las riendas del tiro de caballos, <link-text>pasa al número 184</link-text>.</choice>
      </data>
@@ -952,7 +954,7 @@ cantidad suficiente para una dosis.</p>
      <data>
       <p>La gente está cansada y hambrienta. Han recorrido muchas millas desde que abandonaron su ciudad en llamas. De pronto oyes el batir de gigantescas alas. El sonido proviene del norte.</p>
       <p><quote>-¡Son kraans, kraans! Escondeos.</quote></p>
-	  <p>El clamor se extiende a lo largo del camino.</p>
+      <p>El clamor se extiende a lo largo del camino.</p>
       <p>Enfrente de ti, a un carro en el que van unos niños se le atasca una rueda en un surco del camino y se rompe. Los niños chillan aterrados.</p>
       <illustration class="inline">
        <meta>
@@ -964,8 +966,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect30.gif" width="311" height="196" />
-       <instance class="pdf" src="sect30.pdf" width="311" height="196" />
+       <instance class="html" src="small2.gif" width="386" height="150" />
+       <instance class="pdf" src="small2.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect194">Si deseas ayudar a los niños, <link-text>pasa al número 194</link-text>.</choice>
       <choice idref="sect261">Si quieres salir corriendo y refugiarte entre los árboles, <link-text>pasa al 261</link-text>.</choice>
@@ -1070,8 +1072,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect187.gif" width="316" height="145" />
-       <instance class="pdf" src="sect187.pdf" width="316" height="145" />
+       <instance class="html" src="small18.gif" width="386" height="150" />
+       <instance class="pdf" src="small18.pdf" width="386" height="150" />
       </illustration>
       <p>Das las gracias a los kakarmis y les dices adiós.</p>
       <choice idref="sect228"><link-text>Pasa al número 228</link-text>.</choice>
@@ -1288,8 +1290,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect57.gif" width="322" height="141" />
-       <instance class="pdf" src="sect57.pdf" width="322" height="141" />
+       <instance class="html" src="small3.gif" width="386" height="150" />
+       <instance class="pdf" src="small3.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect164">Si eliges examinar las botellas, <link-text>pasa al número 164</link-text>.</choice>
       <choice idref="sect109">Si prefieres levantar la alfombra, <link-text>pasa al 109</link-text>.</choice>
@@ -1443,8 +1445,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect70.gif" width="322" height="134" />
-       <instance class="pdf" src="sect70.pdf" width="322" height="134" />
+       <instance class="html" src="small4.gif" width="386" height="150" />
+       <instance class="pdf" src="small4.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect8">Si deseas utilizar la disciplina de Sexto sentido, <link-text>pasa al 8</link-text>.</choice>
       <choice idref="sect28">Si deseas ir hacia el este, <link-text>pasa al número 28</link-text>.</choice>
@@ -1521,14 +1523,14 @@ cantidad suficiente para una dosis.</p>
      </footnotes>
 
      <data>
-      <p>La Gema desprende un intenso calor y te quema la mano. Pierdes 2 puntos de <typ class="attribute">RESISTENCIA</typ>. Rápidamente la agarras con el borde de la capa y <a id="sect76-1" idref="sect76-1-foot" class="footnote">la introduces en el bolsillo de tu jubón.</a> ¡Una Gema de ese tamaño debe de valer cientos de Coronas!</p>
+      <p>La Gema desprende un intenso calor y te quema la mano. Pierdes 2 puntos de <typ class="attribute">RESISTENCIA</typ>. Rápidamente la agarras con el borde de la capa y <footref id="sect76-1" idref="sect76-1-foot">la introduces en el bolsillo de tu jubón.</footref> ¡Una Gema de ese tamaño debe de valer cientos de Coronas!</p>
       <p>Sonríes por tu buena fortuna, montas a caballo y partes por la senda del sur.</p>
       <illustration class="inline">
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect76.gif" width="321" height="142" />
-       <instance class="pdf" src="sect76.pdf" width="321" height="142" />
+       <instance class="html" src="small5.gif" width="386" height="150" />
+       <instance class="pdf" src="small5.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect118"><link-text>Pasa al número 118</link-text>.</choice>
      </data>
@@ -1589,8 +1591,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect81.gif" width="323" height="191" />
-       <instance class="pdf" src="sect81.pdf" width="323" height="191" />
+       <instance class="html" src="small6.gif" width="386" height="150" />
+       <instance class="pdf" src="small6.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect183">Si deseas llamarles, <link-text>pasa al número 183</link-text>.</choice>
       <choice idref="sect200">Si prefieres continuar tu marcha por la linde del bosque hacia el sur, <link-text>pasa al número 200</link-text>.</choice>
@@ -1719,8 +1721,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect91.gif" width="278" height="140" />
-       <instance class="pdf" src="sect91.pdf" width="278" height="140" />
+       <instance class="html" src="small7.gif" width="386" height="150" />
+       <instance class="pdf" src="small7.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect198">Si posees la disciplina de Sexto sentido, <link-text>pasa al 198</link-text>.</choice>
       <choice idref="sect152">Si deseas examinar esos artículos, <link-text>pasa al número 152</link-text>.</choice>
@@ -1892,8 +1894,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect105.gif" width="274" height="182" />
-       <instance class="pdf" src="sect105.pdf" width="274" height="182" />
+       <instance class="html" src="small8.gif" width="386" height="150" />
+       <instance class="pdf" src="small8.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect298">Si posees la disciplina de Afinidad animal puedes llamar a este pájaro y <link-text>pasa al número 298</link-text>.</choice>
       <choice idref="sect335">Si no posees esa destreza o no quieres utilizarla, <link-text>pasa al 335</link-text>.</choice>
@@ -1966,8 +1968,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect112.gif" width="323" height="190" />
-       <instance class="pdf" src="sect112.pdf" width="323" height="190" />
+       <instance class="html" src="small9.gif" width="386" height="150" />
+       <instance class="pdf" src="small9.pdf" width="386" height="150" />
       </illustration>
       <combat><enemy>Giak 1</enemy><enemy-attribute class="combatskill">13</enemy-attribute><enemy-attribute class="endurance">10</enemy-attribute></combat> 
       <combat><enemy>Giak 2</enemy><enemy-attribute class="combatskill">12</enemy-attribute><enemy-attribute class="endurance">10</enemy-attribute></combat> 
@@ -1993,7 +1995,7 @@ cantidad suficiente para una dosis.</p>
        </meta>
        <instance class="html" height="288" width="288" src="113.gif" />
       </illustration>
-      <p>Te arrodillas, arrancas un puñado de laumspur y lo guardas en la mochila. Puedes comer de esa hierba para recuperar puntos perdidos de <typ class="attribute">RESISTENCIA</typ>. Cada comida de laumspur te devuelve 3 puntos de <typ class="attribute">RESISTENCIA</typ> y has recogido hierba <a id="sect113-1" idref="sect113-1-foot" class="footnote">suficiente para 2 comidas.</a> Después de cerrar la mochila, continúas tu misión.</p>
+      <p>Te arrodillas, arrancas un puñado de laumspur y lo guardas en la mochila. Puedes comer de esa hierba para recuperar puntos perdidos de <typ class="attribute">RESISTENCIA</typ>. Cada comida de laumspur te devuelve 3 puntos de <typ class="attribute">RESISTENCIA</typ> y has recogido hierba <footref id="sect113-1" idref="sect113-1-foot">suficiente para 2 comidas.</footref> Después de cerrar la mochila, continúas tu misión.</p>
       <choice idref="sect347">Si deseas dirigirte al nordeste, <link-text>pasa al número 347</link-text>.</choice>
       <choice idref="sect295">Si deseas dirigirte al este, <link-text>pasa al 295</link-text>.</choice>
      </data>
@@ -2018,8 +2020,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect115.gif" width="250" height="188" />
-       <instance class="pdf" src="sect115.pdf" width="250" height="188" />
+       <instance class="html" src="small10.gif" width="386" height="150" />
+       <instance class="pdf" src="small10.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect150">Si decides tomar un rápido almuerzo, <link-text>pasa al número 150</link-text>.</choice>
       <choice idref="sect177">Si decides explorar la cabaña, <link-text>pasa al 177</link-text>.</choice>
@@ -2192,8 +2194,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect130.gif" width="321" height="133" />
-       <instance class="pdf" src="sect130.pdf" width="321" height="133" />
+       <instance class="html" src="small11.gif" width="386" height="150" />
+       <instance class="pdf" src="small11.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect28">Cuando hayas acabado, si decides abandonar el claro por el camino del sur, <link-text>pasa al número 28</link-text>.</choice>
       <choice idref="sect201">Si eliges el sendero más estrecho que conduce hacia el este, al interior del bosque, <link-text>pasa al 201</link-text>.</choice>
@@ -2270,8 +2272,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect135.gif" width="323" height="141" />
-       <instance class="pdf" src="sect135.pdf" width="323" height="141" />
+       <instance class="html" src="small12.gif" width="386" height="150" />
+       <instance class="pdf" src="small12.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect223">Si deseas servirte del tronco para flotar río abajo, <link-text>pasa al número 223</link-text>.</choice>
       <choice idref="sect4">Si quieres usar la barquilla, <link-text>pasa al número 4</link-text>.</choice>
@@ -2302,7 +2304,7 @@ cantidad suficiente para una dosis.</p>
      </footnotes>
 
      <data>
-      <p>Cuando la ú1tima de esas sucias criaturas muere, la luz verdosa empieza a extinguirse. Descubres que dentro de cada una de las calaveras rotas hay una Gema. Tomas <a id="sect137-1" idref="sect137-1-foot" class="footnote">20 de esas Gemas</a> antes de que la cámara se sumerja en la más completa oscuridad. Recuerda anotarlas en tu <a idref="action">Carta de Acción</a>.</p>
+      <p>Cuando la ú1tima de esas sucias criaturas muere, la luz verdosa empieza a extinguirse. Descubres que dentro de cada una de las calaveras rotas hay una Gema. Tomas <footref id="sect137-1" idref="sect137-1-foot">20 de esas Gemas</footref> antes de que la cámara se sumerja en la más completa oscuridad. Recuerda anotarlas en tu <a idref="action">Carta de Acción</a>.</p>
       <p>Rápidamente abandonas a los bichos muertos de la cripta y prosigues tu camino.</p>
       <choice idref="sect23"><link-text>Pasa al número 23</link-text>.</choice>
      </data>
@@ -2368,8 +2370,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect142.gif" width="282" height="140" />
-       <instance class="pdf" src="sect142.pdf" width="282" height="140" />
+       <instance class="html" src="small13.gif" width="386" height="150" />
+       <instance class="pdf" src="small13.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect58">Si quieres probar suerte por el camino real, <link-text>pasa al número 58</link-text>.</choice>
       <choice idref="sect135">Si consideras que tienes más probabilidades de llegar a la capital por el río, <link-text>pasa al número 135</link-text>.</choice>
@@ -2426,12 +2428,12 @@ cantidad suficiente para una dosis.</p>
 
      <footnotes>
       <footnote id="sect147-1-foot" idref="sect147-1">
-       <p>La formulación del texto de esta sección da por hecho que llegas a ella desde la <a idref="sect28">Sección 28</a>. Únicamente si has llegado a esta sección desde la <a idref="sect42">Sección 42</a>, lee la última frase y las opciones como sigue: <quote>' . . .Mientras comes, observas que el camino comienza a torcer hacie el norte. Si deseas seguirlo, <a idref="sect28">pasa al número 28</a>. Si quieres deshacer el camino andado, <a idref="sect42">pasa al número 42</a>.</quote></p>
+       <p>La formulación del texto de esta sección da por hecho que llegas a ella desde la <a idref="sect28">Sección 28</a>. Únicamente si has llegado a esta sección desde la <a idref="sect42">Sección 42</a>, lee la última frase y las opciones como sigue: <quote><ch.lellips/>Mientras comes, observas que el camino comienza a torcer hacie el norte. Si deseas seguirlo, <a idref="sect28">pasa al número 28</a>. Si quieres deshacer el camino andado, <a idref="sect42">pasa al número 42</a>.</quote></p>
       </footnote>
      </footnotes>
 
      <data>
-      <p>Llevas caminando unos pocos minutos cuando descubres una musgosa cabaña algo alejada del camino. Tienes hambre y debes tomar aquí una comida o perderás 3 puntos de <typ class="attribute">RESISTENCIA</typ>. Mientras comes, observas que el camino comienza a torcer hacia el este. <a id="sect147-1" idref="sect147-1-foot" class="footnote" /></p>
+      <p>Llevas caminando unos pocos minutos cuando descubres una musgosa cabaña algo alejada del camino. Tienes hambre y debes tomar aquí una comida o perderás 3 puntos de <typ class="attribute">RESISTENCIA</typ>. Mientras comes, observas que el camino comienza a torcer hacia el este. <footref id="sect147-1" idref="sect147-1-foot"/></p>
       <choice idref="sect42">Si deseas seguirlo, <link-text>pasa al número 42</link-text>.</choice>
       <choice idref="sect28">Si quieres deshacer el camino andado, <link-text>pasa al número 28</link-text>.</choice>
      </data>
@@ -2517,7 +2519,7 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect142.gif" width="282" height="140" />
+       <instance class="html" src="small13.gif" width="386" height="150" />
       </illustration>
       <p>Puedes ver a tu derecha el camino real que por la ondulada llanura conduce a Holmgard. Yendo por él al galope puedes alcanzar en menos de una hora las fortificaciones exteriores de las defensas de la ciudad, pero la mayor parte del tiempo estarías al descubierto y serías vulnerable al ataque de los kraans. Enfrente de ti, un ancho río fluye perezosamente hacia el Eledil. Si abandonas el caballo podrias nadar por ese afluente hasta las fortificaciones exteriores, amparándote en la vegetación de las orillas. A tu izquierda se halla el cementerio de los antepasados. Esas tumbas y monumentos en ruinas de una edad olvidada ocultarían tu avance, pero se trata de una zona prohibida. Horrores innumerables y sin nombre duermen impacientes en ese lugar esperando atacar al imprudente que se atreva a entrar en él.</p>
       <choice idref="sect202">Si quieres probar suerte por el camino real, <link-text>pasa al número 202</link-text>.</choice>
@@ -2557,8 +2559,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect156.gif" width="319" height="143" />
-       <instance class="pdf" src="sect156.pdf" width="319" height="143" />
+       <instance class="html" src="small14.gif" width="386" height="150" />
+       <instance class="pdf" src="small14.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect294">Si deseas tirarte al agua y nadar a favor de la corriente, <link-text>pasa al número 294</link-text>.</choice>
       <choice idref="sect245">Si quieres atravesar el río a nado para buscar refugio entre los árboles de la otra orilla, <link-text>pasa al 245</link-text>.</choice>
@@ -2588,8 +2590,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect158.gif" width="320" height="142" />
-       <instance class="pdf" src="sect158.pdf" width="320" height="142" />
+       <instance class="html" src="small15.gif" width="386" height="150" />
+       <instance class="pdf" src="small15.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect106"><link-text>Pasa al número 106</link-text>.</choice>
      </data>
@@ -2625,8 +2627,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect161.gif" width="310" height="144" />
-       <instance class="pdf" src="sect161.pdf" width="310" height="144" />
+       <instance class="html" src="small16.gif" width="386" height="150" />
+       <instance class="pdf" src="small16.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect209"><link-text>Pasa al número 209</link-text>.</choice>
      </data>
@@ -2804,8 +2806,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect176.gif" width="313" height="188" />
-       <instance class="pdf" src="sect176.pdf" width="313" height="188" />
+       <instance class="html" src="small17.gif" width="386" height="150" />
+       <instance class="pdf" src="small17.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect253">Si deseas atacar a los restantes lobos fatídicos y a sus jinetes, <link-text>pasa al número 253</link-text>.</choice>
       <choice idref="sect126">Si decides continuar internándote en el bosque, <link-text>pasa al 126</link-text>.</choice>
@@ -2866,7 +2868,7 @@ cantidad suficiente para una dosis.</p>
 
      <data>
       <p>Instintivamente te agachas y te tiras al suelo para esquivar la saeta de la ballesta. El bandido dispara y notas que la saeta te roza el brazo izquierdo desgarrándote la manga del jubón. Das gracias a los dioses por tu buena suerte y echas a correr con toda la rapidez que te permiten tus piernas.</p>
-      <p>Los otros bandidos no tienen ballestas y pronto desisten de darte caza. Después de correr un buen trecho, les dejas muy atrás. <a id="sect181-1" idref="sect181-1-foot" class="footnote">Has perdido las armas y el equipo,</a> pero no la vida.</p>
+      <p>Los otros bandidos no tienen ballestas y pronto desisten de darte caza. Después de correr un buen trecho, les dejas muy atrás. <footref id="sect181-1" idref="sect181-1-foot">Has perdido las armas y el equipo,</footref> pero no la vida.</p>
       <p>Te detienes lo suficiente para vendarte el brazo herido y luego continúas caminando hacia las defensas exteriores de la capital.</p>
       <choice idref="sect288"><link-text>Pasa al número 288</link-text>.</choice>
      </data>
@@ -2936,8 +2938,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect187.gif" width="316" height="145" />
-       <instance class="pdf" src="sect187.pdf" width="316" height="145" />
+       <instance class="html" src="small18.gif" width="386" height="150" />
+       <instance class="pdf" src="small18.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect186">Si deseas seguirlos, <link-text>pasa al número 186</link-text>.</choice>
       <choice idref="sect228">Si prefieres dejarlos en paz y continuar tu camino, <link-text>pasa al número 228</link-text>.</choice>
@@ -2975,8 +2977,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect190.gif" width="313" height="178" />
-       <instance class="pdf" src="sect190.pdf" width="313" height="178" />
+       <instance class="html" src="small19.gif" width="386" height="150" />
+       <instance class="pdf" src="small19.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect20">Si deseas explorar la barcaza, <link-text>pasa al número 20</link-text>.</choice>
       <choice idref="sect273">Si quieres proseguir tu camino, <link-text>pasa al 273</link-text>.</choice>
@@ -3117,9 +3119,9 @@ cantidad suficiente para una dosis.</p>
 
      <data>
       <p>De repente un punzante dolor te abrasa el pecho al estallar algo contra él en medio de una explosión de chispas rojas.</p>
-      <p>Pierdes 10 puntos de <typ class="attribute">RESlSTENCIA</typ>. A través del humo ves que el mago se dispone a arrojarte otro explosivo.</p>
-      <choice idref="sect80">Si aún te quedan 10 o más puntos de <typ class="attribute">RESlSTENCIA</typ>, <link-text>pasa al número 80</link-text>.</choice>
-      <choice idref="sect344">Si tienes menos de 10 puntos de <typ class="attribute">RESlSTENCIA</typ>, <link-text>pasa al 344</link-text>.</choice>
+      <p>Pierdes 10 puntos de <typ class="attribute">RESISTENCIA</typ>. A través del humo ves que el mago se dispone a arrojarte otro explosivo.</p>
+      <choice idref="sect80">Si aún te quedan 10 o más puntos de <typ class="attribute">RESISTENCIA</typ>, <link-text>pasa al número 80</link-text>.</choice>
+      <choice idref="sect344">Si tienes menos de 10 puntos de <typ class="attribute">RESISTENCIA</typ>, <link-text>pasa al 344</link-text>.</choice>
      </data>
     </section>
 
@@ -3143,14 +3145,14 @@ cantidad suficiente para una dosis.</p>
      </footnotes>
 
      <data>
-      <p>Su jefe recoge <a id="sect205-1" idref="sect205-1-foot" class="footnote">el equipo que tú has echado a un lado</a> y te indica que te adelantes por el camino. Muecas burlonas aparecen en los rostros de los otros dos hombres y de repente te das cuenta de que no son soldados. Tratas reparar tu error y escapar de ellos echando a correr hacia la lejana capital.</p>
+      <p>Su jefe recoge <footref id="sect205-1" idref="sect205-1-foot">el equipo que tú has echado a un lado</footref> y te indica que te adelantes por el camino. Muecas burlonas aparecen en los rostros de los otros dos hombres y de repente te das cuenta de que no son soldados. Tratas reparar tu error y escapar de ellos echando a correr hacia la lejana capital.</p>
       <p>Oyes detrás de ti el sonido fatídico de una ballesta al ser tensada y un escalofrío de terror te recorre la espina dorsal.</p>
       <illustration class="inline">
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect205.gif" width="192" height="188" />
-       <instance class="pdf" src="sect205.pdf" width="192" height="188" />
+       <instance class="html" src="small20.gif" width="386" height="150" />
+       <instance class="pdf" src="small20.pdf" width="386" height="150" />
       </illustration>
       <p>Elige al azar un número de la <a idref="random">Tabla de la Suerte</a>.</p>
       <choice idref="sect181">Si el número está entre el 0 y el 4, <link-text>pasa al número 181</link-text>.</choice>
@@ -3300,8 +3302,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect217.gif" width="243" height="79" />
-       <instance class="pdf" src="sect217.pdf" width="243" height="79" />
+       <instance class="html" src="small21.gif" width="386" height="125" />
+       <instance class="pdf" src="small21.pdf" width="386" height="125" />
        <instance class="text">
         <signpost>Kolanis<ch.emdash/>Mago y Herbolario</signpost>
        </instance>
@@ -3438,8 +3440,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect229.gif" width="327" height="191" />
-       <instance class="pdf" src="sect229.pdf" width="327" height="191" />
+       <instance class="html" src="small22.gif" width="386" height="150" />
+       <instance class="pdf" src="small22.pdf" width="386" height="150" />
       </illustration>
       <p>Debes pelear con ella a muerte. A causa del polvo, resta 1 punto de tu <typ class="attribute">DESTREZA EN EL COMBATE</typ>.</p>
       <combat><enemy>Kraan</enemy><enemy-attribute class="combatskill">16</enemy-attribute><enemy-attribute class="endurance">25</enemy-attribute></combat> 
@@ -3526,7 +3528,7 @@ cantidad suficiente para una dosis.</p>
      </footnotes>
 
      <data>
-      <p>La Gema flota en el aire sobre la boca del esqueleto del rey, brillando con un intenso fulgor rojo. De repente una ardiente llamarada carmesí hace explosión desde el sarcófago y <a id="sect236-1" idref="sect236-1-foot" class="footnote">destroza la Gema por completo.</a> La onda explosiva te arroja contra la pared opuesta y caes inconsciente.</p>
+      <p>La Gema flota en el aire sobre la boca del esqueleto del rey, brillando con un intenso fulgor rojo. De repente una ardiente llamarada carmesí hace explosión desde el sarcófago y <footref id="sect236-1" idref="sect236-1-foot">destroza la Gema por completo.</footref> La onda explosiva te arroja contra la pared opuesta y caes inconsciente.</p>
       <illustration class="inline">
        <meta>
         <creator>JC Alvarez</creator>
@@ -3537,8 +3539,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect236.gif" width="315" height="142" />
-       <instance class="pdf" src="sect236.pdf" width="315" height="142" />
+       <instance class="html" src="small23.gif" width="386" height="150" />
+       <instance class="pdf" src="small23.pdf" width="386" height="150" />
       </illustration>
       <p>Cuando despiertas, la cámara está totalmente vacía. El esqueleto del rey y el sarcófago han desaparecido. Tú pierdes 6 puntos de <typ class="attribute">RESISTENCIA</typ> y tu inicial <typ class="attribute">DESTREZA EN EL COMBATE</typ> queda reducida en 1 punto para el resto de tu vida.</p>
       <p>Te pones en pie con gran cuidado y te diriges tambaleándote hacia el túnel.</p>
@@ -3566,8 +3568,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect238.gif" width="159" height="142" />
-       <instance class="pdf" src="sect238.pdf" width="159" height="142" />
+       <instance class="html" src="small24.gif" width="386" height="150" />
+       <instance class="pdf" src="small24.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect42">Puedes partir en dirección sur <link-text>pasando al número 42</link-text>.</choice>
       <choice idref="sect68">O puedes dirigirte hacia el norte <link-text>pasando al número 68</link-text>.</choice>
@@ -3707,8 +3709,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect250.gif" width="201" height="189" />
-       <instance class="pdf" src="sect250.pdf" width="201" height="189" />
+       <instance class="html" src="small25.gif" width="386" height="150" />
+       <instance class="pdf" src="small25.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect186">Si deseas seguirlos, <link-text>pasa al número 186</link-text>.</choice>
       <choice idref="sect228">Si prefieres continuar tu camino, <link-text>pasa al número 228</link-text>.</choice>
@@ -3862,8 +3864,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect263.gif" width="325" height="141" />
-       <instance class="pdf" src="sect263.pdf" width="325" height="141" />
+       <instance class="html" src="small26.gif" width="386" height="150" />
+       <instance class="pdf" src="small26.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect70">Puedes continuar corriente abajo, <link-text>pasando al número 70</link-text>.</choice>
       <choice idref="sect157">O puedes apartarte de la corriente y seguir tu camino a pie a través de las arboledas de las colinas hacia el sur <link-text>pasando al número 157</link-text>.</choice>
@@ -3985,8 +3987,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect273.gif" width="324" height="140" />
-       <instance class="pdf" src="sect273.pdf" width="324" height="140" />
+       <instance class="html" src="small27.gif" width="386" height="150" />
+       <instance class="pdf" src="small27.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect179">Si deseas aproximarte a las barcazas, <link-text>pasa al número 179</link-text>.</choice>
       <choice idref="sect51">Si quieres refugiarte entre los árboles, <link-text>pasa al 51</link-text>.</choice>
@@ -4059,8 +4061,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect279.gif" width="218" height="189" />
-       <instance class="pdf" src="sect279.pdf" width="218" height="189" />
+       <instance class="html" src="small28.gif" width="386" height="150" />
+       <instance class="pdf" src="small28.pdf" width="386" height="150" />
       </illustration>
       <p>Elige al azar un número de la <a idref="random">Tabla de la Suerte</a>.</p>
       <choice idref="sect112">Si el número que te toca en suerte está entre el 0 y el 6, <link-text>pasa al 112</link-text>.</choice>
@@ -4094,7 +4096,7 @@ cantidad suficiente para una dosis.</p>
      <data>
       <p>Mirando por encima de las cabezas del gentío descubres que uno de los establecimientos que hay frente a la puerta principal es el consultorio de un médico. De repente se te ocurre un atrevido plan. Abriéndote paso a codazos entre la multitud, logras llegar al otro lado de la calle. Entras en el consultorio, pero dentro no hay señales de vida, aparte de un loro de brillantes colores encerrado en una jaula junto a la ventana.</p>
       <p>Te pones una bata blanca de médico y eliges unos cuantos frascos. Después vuelves con gran trabajo ante la puerta principal.</p>
-      <p>-¡Es una urgencia! -gritas tratando de engañar a los guardias que te dan el alto y preguntan qué quieres -. La mujer del cocinero real... va a tener un hijo.</p>
+      <p>-¡Es una urgencia! -gritas tratando de engañar a los guardias que te dan el alto y preguntan qué quieres -. La mujer del cocinero real<ch.ellips/> va a tener un hijo.</p>
       <p>Los guardias dudan un momento, pero tú les aseguras que se trata de un caso muy urgente y te dejan entrar. Uno de los portones se abre medio metro y un guardia te empuja bruscamente a través de la estrecha abertura y te introduce en el patio interior.</p>
       <choice idref="sect11"><link-text>Pasa al número 11</link-text>.</choice>
      </data>
@@ -4195,8 +4197,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect290.gif" width="314" height="141" />
-       <instance class="pdf" src="sect290.pdf" width="314" height="141" />
+       <instance class="html" src="small29.gif" width="386" height="150" />
+       <instance class="pdf" src="small29.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect140"><link-text>Pasa al número 140</link-text>.</choice>
      </data>
@@ -4288,8 +4290,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect298.gif" width="209" height="137" />
-       <instance class="pdf" src="sect298.pdf" width="209" height="137" />
+       <instance class="html" src="small30.gif" width="386" height="150" />
+       <instance class="pdf" src="small30.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect121">Si deseas continuar tu marcha por el camino, <link-text>pasa al número 121</link-text>.</choice>
       <choice idref="sect38">Si decides dejar el camino y seguir a través del bosque, <link-text>pasa al 38</link-text>.</choice>
@@ -4355,7 +4357,7 @@ cantidad suficiente para una dosis.</p>
 
      <data>
       <p>La Gema despide un calor increíble y te quema la mano. Pierdes 2 puntos de <typ class="attribute">RESISTENCIA</typ>.</p>
-      <p>En seguida la agarras con el borde de la capa y <a id="sect304-1" idref="sect304-1-foot" class="footnote">la introduces en la mochila.</a> Una Gema de ese tamaño debe de valer cientos de Coronas. Pero los giaks están muy cerca y sus flechas pasan rozándote la cabeza, por lo que te das media vuelta y corres a refugiarte en el bosque.</p>
+      <p>En seguida la agarras con el borde de la capa y <footref id="sect304-1" idref="sect304-1-foot">la introduces en la mochila.</footref> Una Gema de ese tamaño debe de valer cientos de Coronas. Pero los giaks están muy cerca y sus flechas pasan rozándote la cabeza, por lo que te das media vuelta y corres a refugiarte en el bosque.</p>
       <choice idref="sect2"><link-text>Pasa al número 2</link-text>.</choice>
      </data>
     </section>
@@ -4402,7 +4404,7 @@ cantidad suficiente para una dosis.</p>
        <instance class="pdf" src="ill17.pdf" width="386" height="672" />
       </illustration>
       <p>El anciano se acerca a un aparador y vuelve con una bandeja llena de fruta fresca. Le das las gracias y guardas la fruta en tu mochila. Hay suficiente para una comida. El ermitaño saca también un magnífico Martillo de guerra y lo coloca sobre la mesa que hay junto a la puerta.</p>
-      <p>-A ti te hace más falta que a mí --dice-. Por favor, toma este fiel Martillo de guerra.</p>
+      <p>-A ti te hace más falta que a mí<ch.emdash/>dice-. Por favor, toma este fiel Martillo de guerra.</p>
       <p>Puedes quedarte con el arma, pero sólo si la cambias por otra de las que tú tengas, pues es el único medio con que cuenta el ermitaño para defenderse del enemigo.</p>
       <p>De nuevo das las gracias al anciano y bajas con cuidado del árbol para proseguir tu misión.</p>
       <choice idref="sect213"><link-text>Pasa al número 213</link-text>.</choice>
@@ -4439,8 +4441,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect310.gif" width="289" height="77" />
-       <instance class="pdf" src="sect310.pdf" width="289" height="77" />
+       <instance class="html" src="small31.gif" width="386" height="102" />
+       <instance class="pdf" src="small31.pdf" width="386" height="102" />
        <instance class="text">
         <signpost>Corte Regia<ch.emdash/>1 Milla</signpost>
        </instance>
@@ -4500,8 +4502,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect315.gif" width="286" height="144" />
-       <instance class="pdf" src="sect315.pdf" width="286" height="144" />
+       <instance class="html" src="small32.gif" width="386" height="150" />
+       <instance class="pdf" src="small32.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect213"><link-text>Pasa al número 213</link-text>.</choice>
      </data>
@@ -4600,8 +4602,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect323.gif" width="292" height="140" />
-       <instance class="pdf" src="sect323.pdf" width="292" height="140" />
+       <instance class="html" src="small33.gif" width="386" height="150" />
+       <instance class="pdf" src="small33.pdf" width="386" height="150" />
       </illustration>
       <p>En el suelo de la atalaya hay una caja alargada.</p>
       <choice idref="sect290">Si deseas abrir la caja, <link-text>pasa al número 290</link-text>.</choice>
@@ -4618,8 +4620,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect279.gif" width="218" height="189" />
-       <instance class="pdf" src="sect279.pdf" width="218" height="189" />
+       <instance class="html" src="small28.gif" width="386" height="150" />
+       <instance class="pdf" src="small28.pdf" width="386" height="150" />
       </illustration>
       <p>Después, maldiciendo en su extraña lengua, se alejan del saliente y siguen ascendiendo hacia la cumbre de la colina. En silencio agradeces a tus viejos maestros del Kai el haberte enseñado la disciplina de Camuflaje que probablemente te ha salvado la vida en esta ocasión.</p>
       <choice idref="sect33">Si deseas explorar la cueva, <link-text>pasa al número 33</link-text>.</choice>
@@ -4700,8 +4702,8 @@ cantidad suficiente para una dosis.</p>
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="sect331.gif" width="252" height="143" />
-       <instance class="pdf" src="sect331.pdf" width="252" height="143" />
+       <instance class="html" src="small34.gif" width="386" height="150" />
+       <instance class="pdf" src="small34.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect170">Si deseas entrar en el túnel, <link-text>pasa al número 170</link-text>.</choice>
       <choice idref="sect280">Si prefieres escalar la colina, <link-text>pasa al 280</link-text>.</choice>
@@ -4930,7 +4932,7 @@ cantidad suficiente para una dosis.</p>
       <p>-Me temo que hemos sido traicionados -sigue Banedon, con la cabeza agachada en actitud pesarosa-. Un miembro de mi hermandad, un hermano llamado Vonatar, había investigado los misterios prohibidos de la magia negra. Hace diez días denunció a la hermandad y mató a uno de nuestros jefes. Desde entonces ha desaparecido. Corre el rumor de que ahora ayuda a los señores de la Oscuridad.</p>
       <p>Le cuentas a Banedon lo que ha sucedido en el monasterio del Kai y tu propósito de avisar al Rey. En silencio Banedon se quita del cuello una cadena de oro y te la entrega. De la cadena cuelga un pequeño medallón de la Estrella de Cristal.</p>
       <p>-Es el símbolo de nuestra hermandad y en esta hora aciaga tú y yo somos verdaderos hermanos. Es también un talismán de la buena suerte. Ojalá te proteja en lo que te queda de camino.</p>
-      <p>Le das las gracias, te pones la cadena alrededor del cuello y tapas el medallón de la <a id="sect349-1" idref="sect349-1-foot" class="footnote">Estrella de Cristal</a> con el borde de tu jubón. (Recuerda anotarlo en tu <a idref="action">Carta de Acción</a>.)</p>
+      <p>Le das las gracias, te pones la cadena alrededor del cuello y tapas el medallón de la <footref id="sect349-1" idref="sect349-1-foot">Estrella de Cristal</footref> con el borde de tu jubón. (Recuerda anotarlo en tu <a idref="action">Carta de Acción</a>.)</p>
       <p>Banedon se despide de ti.</p>
       <p>-Debemos alejarnos de este lugar, no sea que los giaks vuelvan con refuerzos y acaben con nosotros. Que la buena suerte y los dioses te acompañen.</p>
       <choice idref="sect293"><link-text>Pasa al número 293</link-text>.</choice>
@@ -4960,7 +4962,7 @@ cantidad suficiente para una dosis.</p>
       <p>Recibes las alabanzas y el agradecimiento cordial de todos los consejeros, honores que hacen que un cierto rubor aparezca en tu rostro juvenil. El Rey levanta la mano y todas las voces se callan.</p>
       <p>-Has hecho todo lo que Sommerlund puede exigir a un hijo leal, pero el país aún te necesita. Los señores de la Oscuridad son de nuevo poderosos y su ambición no conoce límites. Nuestra única esperanza reside en Durenor, en el poder que ya una vez derrotó a los señores de la Oscuridad hace siglos. Lobo Solitario, eres el último de los señores del Kai y posees las destrezas requeridas. ¿ Quieres ir a Durenor y traer la Espada del Sol ? Sólo con ese don de los dioses podemos aplastar este mal y salvar a nuestro país.</p>
       <p>Si aceptas ir en busca de la Espada del Sol, comienza tu aventura en el libro segundo de la serie de Lobo Solitario titulado:</p>
-      <p><cite><a href="&link.02fotw;">Fuego sobre el agua</a></cite></p>
+      <p><cite><bookref series="ls" book="02fsea" section="title">Fuego sobre el agua</bookref></cite></p>
      </data>
     </section>
    </data>
@@ -4995,35 +4997,35 @@ cantidad suficiente para una dosis.</p>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez/Jonathan Blake</creator>
      </meta>
      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez/Jonathan Blake</creator>
      </meta>
-     <instance src="acdscplz.gif" width="385" height="121" class="html" mime-type="image/gif" />
+     <instance src="acdscplz.gif" width="386" height="121" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez/Jonathan Blake</creator>
      </meta>
      <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez/Jonathan Blake</creator>
      </meta>
      <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez/Jonathan Blake</creator>
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif" />
     </illustration>
@@ -5130,7 +5132,7 @@ cantidad suficiente para una dosis.</p>
   </section>
 
   <section class="backmatter" id="errata">
-   <meta><title>Errata</title></meta>
+   <meta><title>Erratas</title></meta>
 
    <data>
 
@@ -5149,7 +5151,7 @@ cantidad suficiente para una dosis.</p>
       <p>(<a idref="gamerulz">Las Reglas del Juego</a>) Eliminado <quote>que figura al comienzo de este libro. Para sucesivas aventuras puedes copiar o fotocopiar esta carta</quote>. Eliminado <quote>, que aparece al final del libro</quote>.</p>
       <p>(<a idref="discplnz">Disciplinas del Kai</a>) Cambiados todos los símbolos de punto y coma (;) por dos puntos (:) en las descripciones de las disciplinas. Cambiados todos los puntos detrás de signo de cerrar paréntesis, en vez de antes.</p>
       <p>(<a idref="equipmnt">Equipo: Cómo utilizar tu equipo</a>) Cambiados todos los puntos detrás de signo de cerrar paréntesis, en vez de antes.</p>
-      <p>(<a idref="cmbtrulz">Reglas para los Combates</a>) Eliminado <quote> en las páginas 222-223 del libro</quote>.</p>
+      <p>(<a idref="cmbtrulz">Reglas para los Combates</a>) Eliminado <quote> en las páginas 222<ch.endash/>223 del libro</quote>.</p>
       <p>(<a idref="levels">Niveles de Entrenamiento Kai</a>) La sección de Niveles de Entrenamiento Kai no aparecía en el libro original, pero ha sido añadida para información del lector.</p>
       <p>(<a idref="kaiwisdm">La Sabiduría del Kai</a>) Eliminado <quote>reproducido al principio de este libro</quote>.</p>
       <p>(<a idref="sect1">1</a>) Movida la última opción (sobre Sexto sentido) a la primera posición.</p>
@@ -5201,7 +5203,7 @@ cantidad suficiente para una dosis.</p>
     <p>(<a idref="sect76">76</a>) Guarda este objeto como una Gema Vordak. Aunque en principio el texto dice que la guardas en tu jubón, eso lo haces de forma temporal hasta que la echas más tarde en tu mochila. No es un Objeto Especial. (cf. <a idref="sect304">Sección 304</a>)</p>
     <p>(<a idref="sect113">113</a>) Cada Comida de Laumspur puede ser consumida cuando se te pida hacer una comida, en cuyo caso debes realizar una comida o perder 3 puntos de <typ class="attribute">RESISTENCIA</typ>. El Laumspur también puede ser consumido en cualquier otro momento para restaurar <typ class="attribute">RESISTENCIA</typ> sin tener el significado de hacer una comida.</p>
     <p>(<a idref="sect137">137</a>) Cuenta las 20 Gemas como un Objeto Especial.</p>
-    <p>(<a idref="sect147">147</a>) La formulación del texto de esta sección da por hecho que llegas a ella desde la <a idref="sect28">Sección 28</a>. Únicamente si has llegado a esta sección desde la <a idref="sect42">Sección 42</a>, lee la última frase y las opciones como sigue: <quote>' . . .Mientras comes, observas que el camino comienza a torcer hacie el norte. Si deseas seguirlo, <a idref="sect28">pasa al número 28</a>. Si quieres deshacer el camino andado, <a idref="sect42">pasa al número 42</a>.</quote></p>
+    <p>(<a idref="sect147">147</a>) La formulación del texto de esta sección da por hecho que llegas a ella desde la <a idref="sect28">Sección 28</a>. Únicamente si has llegado a esta sección desde la <a idref="sect42">Sección 42</a>, lee la última frase y las opciones como sigue: <quote><ch.lellips/>Mientras comes, observas que el camino comienza a torcer hacie el norte. Si deseas seguirlo, <a idref="sect28">pasa al número 28</a>. Si quieres deshacer el camino andado, <a idref="sect42">pasa al número 42</a>.</quote></p>
     <p>(<a idref="sect181">181</a>) Al final del segundo párrafo dice: <quote>Has perdido las armas y el equipo.</quote> Puedes ignorar esta información a no ser que te hayas rendido a los bandidos (esto es, si has llegado a esta sección procedente de la <a idref="sect205">Sección 205</a>). No hagas cambios en tu <a idref="action">Carta de Acción</a>. La orden se refiere a lo que ocurre en la <a idref="sect205">Sección 205</a>, pero también se puede llegar a esta sección desde la <a idref="sect22">Sección 22</a>.</p>
      <p>(<a idref="sect205">205</a>) Asegúrate de borrar todos los objetos y contenedores de tu <a idref="action">Carta de Acción</a> (por ejemplo Armas, Mochila, Objetos especiales y bolsillos del cinturón).</p>
      <p>El autor puede no haberse dado cuenta de que el Colgante de la Estrella de Cristal y el <a idref="map">Mapa de Sommerlund</a> pueden encontrarse entre los objetos perdidos. Simplemente puedes decidir quedarte con esos objetos si es que los tienes. No obstante, si prefieres llevar a cabo una interpretación estricta del texto, lo justo sería que no mires el <a idref="map">mapa</a> si no tienes el <a idref="map">Mapa de Sommerlund</a> como objeto en la mochila.</p>
