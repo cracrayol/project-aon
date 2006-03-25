@@ -1,5 +1,5 @@
 <!-- ============================================================= -->
-<!--             Gamebook Document Type Definition v0.11           -->
+<!--             Gamebook Document Type Definition v0.12           -->
 <!-- ============================================================= -->
 <!--
 
@@ -12,6 +12,10 @@ more general utility.
 $Id$
 
 Change Log:
+
+25 March 2006 (version 0.12.0)
+ * Added "illref", "illustrations" and "illgroup". Still backwards
+   compatible.
 
 26 December 2005 (version 0.11.4)
  * Added link.attributes and the optional "series" attribute to
@@ -49,7 +53,7 @@ Change Log:
 4 January 2003 (version 0.10.2)
  * Moved the specialized character entity definitions into module
    files.
-
+x
 5 October 2002 (version 0.10.1)
  * Added the "lellips" and "minus" entities and changed the definition
    of the "emdash" entity.
@@ -150,7 +154,7 @@ III. Block Elements
 
 <!ENTITY % inline.content "#PCDATA | a | bookref | footref | em | strong | thought | foreign | quote | cite | code | br | typ | onomatopoeia | spell | item | %character.content;">
 
-<!ENTITY % block.content "p | ul | ol | dl | table | blockquote | illustration | combat | choice | signpost | hr">
+<!ENTITY % block.content "p | ul | ol | dl | table | blockquote | illustration | combat | choice | signpost | hr | illref">
 
 <!ENTITY % core.attributes "
          class CDATA #IMPLIED
@@ -206,13 +210,13 @@ document. The data should conform to the IETF RFC1766.
 
 Examples:
 
- <gamebook version="0.11" xml:lang="en-UK">
+ <gamebook version="0.12" xml:lang="en-UK">
   <meta . . .> . . . </meta>
   <section . . .> . . . </section>
   . . .
  </gamebook>
 
- <gamebook version="0.11" > . . . </gamebook>
+ <gamebook version="0.12" > . . . </gamebook>
 
 -->
 
@@ -397,7 +401,7 @@ Examples:
 
 <!-- ::::::::::::::::::::: section Element ::::::::::::::::::::::: -->
 
-<!ELEMENT section ( meta, footnotes?, data )>
+<!ELEMENT section ( meta, footnotes?, illustrations?, data )>
 <!ATTLIST section
           %core.attributes;
           %link.attributes;
@@ -459,6 +463,54 @@ Examples:
 
 -->
 
+<!ELEMENT illustrations ( illustration | illgroup )*>
+<!ATTLIST illustrations
+          %core.attributes;
+>
+<!--
+
+The "illustrations" element represents a collection of illustrations.
+The illustrations, or illustration groups, should be listed in the
+order they appear in the book.
+
+Example:
+
+ <illustrations>
+  <illustration . . . />
+  <illgroup . . .>. . .</illgroup>
+  . . .
+ </illustrations>
+
+-->
+
+<!ELEMENT illgroup ( illustration )*>
+<!ATTLIST illgroup
+          %core.attributes;
+          %link.attributes;
+>
+
+<!--
+
+The "illgroup" element represents a group of illustrations contained
+within one section. It is used when individual links to the each
+illustration from the illustrations index are not wanted.
+
+Example:
+
+ <illgroup idref=". . .">
+  <illustration . . . />
+  <illustration . . . />
+  . . . 
+ </illgroup>
+
+ <illgroup idref=". . ." class="hidden">
+  <illustration . . . />
+  <illustration . . . />
+  . . . 
+ </illgroup>
+
+-->
+
 <!ELEMENT footnotes ( footnote )*>
 <!ATTLIST footnotes
           %core.attributes;
@@ -492,8 +544,8 @@ named anchor within the document.
 Example:
 
  <data . . .>
-  <p . . .>This paragraph requires an appropriate 
-   <a id="reference" idref="footnote-reference" . . .>footnote</a>.
+  <p . . .>This paragraph requires an appropriate footnote
+   <a id="reference" idref="footnote-reference" . . ./>.
   </p>
   . . .
  </data>
@@ -904,6 +956,27 @@ Example:
   </instance>
   . . .
  </illustration>
+
+-->
+
+<!ELEMENT illref EMPTY>
+<!ATTLIST illref
+          %core.attributes;
+          %link.attributes;
+>
+
+<!--
+
+The "illref" element is used to mark the location of an illustration.
+The actual illustration is declared elsewhere.
+
+Since the placement of a particular illustration may depend on the
+output format, one "illref" is required for each format.
+
+Example:
+
+  <illref idref="ill2" class="html"/>
+  <illref idref="ill2" class="pdf"/>
 
 -->
 
@@ -1605,7 +1678,7 @@ DTD. For current practice, please refer to published XML files.
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE gamebook SYSTEM "gamebook.dtd">
 
-<gamebook version="0.11" xml:lang="en-UK">
+<gamebook version="0.12" xml:lang="en-UK">
 
 <meta>
  <title>Flight from the Dark</title>
