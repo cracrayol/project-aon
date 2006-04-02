@@ -9,6 +9,11 @@
 $Id$
 
 $Log$
+Revision 1.10  2006/04/02 19:14:37  angantyr
+Introduced automatic footnotes list generation and changed the illustrations
+list generation so that links to numbered sections are titled "Section ...".
+Backwards compatible with old XML files.
+
 Revision 1.9  2006/03/14 21:04:03  angantyr
 Changed the illustration handling with the introduction of 'illref's.
 Backwards compatible.
@@ -344,6 +349,27 @@ Todo:
  </xsl:call-template>
 </xsl:template>
 
+<!-- ::::::::::::::::::::: footnotes template ::::::::::::::::::::::::: -->
+
+<xsl:template match="id( 'footnotz' )">
+ <xsl:choose>
+  <!-- Backwards compatibility measure - if there is data content, use that, otherwise generate footnotes list -->
+  <xsl:when test="count( data/p ) = 0">
+   <xsl:call-template name="xhtml-wrapper">
+    <xsl:with-param name="document-type">footnotz</xsl:with-param>
+    <xsl:with-param name="filename"><xsl:value-of select="@id" /></xsl:with-param>
+   </xsl:call-template>
+  </xsl:when>
+  <xsl:otherwise>
+   <xsl:call-template name="xhtml-wrapper">
+    <xsl:with-param name="document-type">second-level-backmatter</xsl:with-param>
+    <xsl:with-param name="filename"><xsl:value-of select="@id" /></xsl:with-param>
+   </xsl:call-template>
+  </xsl:otherwise>
+ </xsl:choose>
+ <xsl:apply-templates />
+</xsl:template>
+
 <!-- ==================== block elements ======================== -->
 
 <xsl:template match="p">
@@ -614,13 +640,9 @@ Todo:
       <!-- List the sections that the illustration appears in -->
       <xsl:text> (</xsl:text>
       <xsl:for-each select="//illref[@class='html' and @idref=current()/@id]">
-       <!-- will the list always contain the closest ancestor first??? -->
-       <a>
-        <xsl:attribute name="href"><xsl:value-of select="ancestor::section[position()=1]/@id" /><xsl:text>.htm</xsl:text></xsl:attribute>
-        <xsl:value-of select="ancestor::section[position()=1]/meta/title[1]" />
-       </a>
+       <xsl:call-template name="section-title-link" />
        <xsl:if test="position()!=last()">
-        <xsl:text>,  </xsl:text>        
+        <xsl:text>, </xsl:text>        
        </xsl:if>
       </xsl:for-each>
       <xsl:text>)</xsl:text><xsl:value-of select="$newline" />
@@ -635,15 +657,11 @@ Todo:
     <xsl:when test="self::illustration"> <!-- inline and map -->
      <!-- List the sections that the illustration appears in -->     
      <li>
+      <!-- TODO: fix this so that sections that do not represent separate XHTML files are not linked to? -->
       <xsl:for-each select="//illref[@class='html' and @idref=current()/@id]">
-       <!-- will the list always contain the closest ancestor first? -->
-       <a>
-        <!-- TODO: fix this so that sections that do not represent separate XHTML files are not linked to -->
-        <xsl:attribute name="href"><xsl:value-of select="ancestor::section[position()=1]/@id" /><xsl:text>.htm</xsl:text></xsl:attribute>
-        <xsl:value-of select="ancestor::section[position()=1]/meta/title[1]" />
-       </a>
+       <xsl:call-template name="section-title-link" />
        <xsl:if test="position()!=last()">
-        <xsl:text>,  </xsl:text>        
+        <xsl:text>, </xsl:text>        
        </xsl:if>
       </xsl:for-each>
      </li>
@@ -783,6 +801,7 @@ Todo:
 
 <!-- This template is obsolete, the "footref" element should be used instead -->
 <xsl:template match="a[@class='footnote']">
+ <!-- <xsl:message><xsl:text>WARNING: Obsolete &lt;a idref='...' class='footnote' /&gt; usage</xsl:text></xsl:message> -->
  <xsl:apply-templates />
  <sup>
   <a>
@@ -1458,6 +1477,58 @@ title of each section be a simple number.
        </div>
       </xsl:when>
 
+<!-- ~~~~~~~~~~~~~~~~~ footnotes ~~~~~~~~~~~~~~~~~~~ -->
+
+      <xsl:when test="$document-type='footnotz'">
+       <div class="backmatter">
+        <xsl:value-of select="$newline" />
+        <!-- No particular reason to code title here -->
+        <h2><xsl:value-of select="meta/title" /></h2><xsl:value-of select="$newline" />
+        <xsl:value-of select="$newline" />
+        <xsl:value-of select="$newline" />
+        
+        <!-- Generate list of footnotes -->
+        <xsl:for-each select="//footnotes/footnote">
+         <div class="footnote">
+          <!-- will the list always contain the closest ancestor first? -->
+          <xsl:variable name="footnote-section"><xsl:value-of select="ancestor::section[position()=1]/@id" /></xsl:variable>
+          <xsl:variable name="footnote-marker"><xsl:number count="footnotes/footnote" from="/" level="any" format="1" /></xsl:variable>
+          <xsl:variable name="footnote-idref"><xsl:value-of select="@idref" /></xsl:variable>
+          
+          <xsl:for-each select="*[1]">
+           <p>
+            <xsl:text>[</xsl:text>
+            <a>
+             <xsl:attribute name="href"><xsl:value-of select="$footnote-section" /><xsl:text>.htm#</xsl:text><xsl:value-of select="$footnote-idref" /></xsl:attribute>
+             <xsl:value-of select="$footnote-marker" />
+            </a>
+            <xsl:text>] </xsl:text>
+
+            <xsl:text> (</xsl:text>
+            <xsl:call-template name="section-title-link" />
+            <xsl:text>) </xsl:text>
+
+            <xsl:apply-templates select="child::* | child::text()" />
+           </p>
+          </xsl:for-each>
+          
+          <xsl:for-each select="*[position() != 1]">
+           <xsl:apply-templates select="." />
+          </xsl:for-each>
+          
+         </div>
+        </xsl:for-each>
+        
+        <!-- Backwards compatibility... needed? Probably not. -->
+        <xsl:apply-templates />
+        
+        <xsl:value-of select="$newline" />
+       
+        <xsl:call-template name="navigation-bar" />
+        <xsl:value-of select="$newline" />
+       </div><xsl:value-of select="$newline" /><xsl:value-of select="$newline" />
+      </xsl:when>
+
 <!-- ~~~~~~~~~~~~~~~~~ second-level-backmatter ~~~~~~~~~~~~~~~~~~~ -->
 
       <xsl:when test="$document-type='second-level-backmatter'">
@@ -1870,6 +1941,32 @@ title of each section be a simple number.
    <td><img src="brdrbtr.gif" width="{$brdrr-width}" height="{$brdr-height}" align="middle" alt="" /></td><xsl:value-of select="$newline" />
   </tr><xsl:value-of select="$newline" />
  </table><xsl:value-of select="$newline" />
+</xsl:template>
+
+<!--
+ A "subroutine" to generate a link to the current section, with the section title (expanded with "Section " in case of a numbered section) as link text.
+-->
+<xsl:template name="section-title-link">
+ <!-- will the list always contain the closest ancestor first? -->
+ <xsl:variable name="section-title">
+  <!-- numbered or not? -->
+  <xsl:if test="ancestor::section[position()=1]/@class='numbered'">
+   <xsl:choose>
+    <xsl:when test="$language='es'">
+     <xsl:text>Secci&oacute;n </xsl:text>
+    </xsl:when>
+    <xsl:otherwise>
+     <xsl:text>Section </xsl:text>
+    </xsl:otherwise>
+   </xsl:choose>
+  </xsl:if>
+  <xsl:value-of select="ancestor::section[position()=1]/meta/title[1]" />
+ </xsl:variable>
+ 
+ <a>
+  <xsl:attribute name="href"><xsl:value-of select="ancestor::section[position()=1]/@id" /><xsl:text>.htm</xsl:text></xsl:attribute>
+  <xsl:value-of select="$section-title" />
+ </a>
 </xsl:template>
 
 </xsl:transform>
