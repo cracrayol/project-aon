@@ -9,6 +9,9 @@
 $Id$
 
 $Log$
+Revision 1.11  2006/04/04 18:48:52  angantyr
+Fixed paragraphed list and illref template bug.
+
 Revision 1.10  2006/04/02 19:14:37  angantyr
 Introduced automatic footnotes list generation and changed the illustrations
 list generation so that links to numbered sections are titled "Section ...".
@@ -410,6 +413,7 @@ Todo:
    </blockquote><xsl:value-of select="$newline" />
   </xsl:when>
   <xsl:when test="self::illustration">
+   <!-- Backwards compatibility code -->
    <xsl:variable name="illustration-width" select="instance[@class='html']/@width" />
    <xsl:variable name="illustration-height" select="instance[@class='html']/@height" />
    <xsl:variable name="illustration-src" select="instance[@class='html']/@src" />
@@ -426,8 +430,16 @@ Todo:
     </div></div><xsl:value-of select="$newline" />
    </xsl:if>
   </xsl:when>
+  <xsl:when test="self::illref">
+   <xsl:if test="@class='html'">
+    <xsl:for-each select="id( @idref )">
+     <xsl:apply-templates select="." />
+    </xsl:for-each>
+   </xsl:if>
+  </xsl:when>
   <xsl:otherwise>
    <xsl:text>[error: paragraphed list template]</xsl:text>
+   <xsl:message><xsl:text>error: paragraphed list template</xsl:text></xsl:message>
   </xsl:otherwise>
  </xsl:choose>
 </xsl:template>
@@ -610,12 +622,15 @@ Todo:
  </blockquote><xsl:value-of select="$newline" />
 </xsl:template>
 
-<xsl:template match="illref[@class='html']">
- <xsl:for-each select="id( @idref )">
-  <!-- This creates unneccessary regeneration of float illustration pages, but it is easiest to keep things this way as long as we have to be backwards compatible... -->
-  <!-- When backwards compatibility can be dropped, most of (all?) the <illustration> processing can happen here -->
-  <xsl:apply-templates select="." />
- </xsl:for-each>
+<xsl:template match="illref">
+ <!-- It is important that the class is not checked right in the template - that would make this template match with higher priority, which will turn a few things upside down --> 
+ <xsl:if test="@class='html'">
+  <xsl:for-each select="id( @idref )">
+   <!-- This creates unneccessary regeneration of float illustration pages, but it is easiest to keep things this way as long as we have to be backwards compatible... -->
+   <!-- When backwards compatibility can be dropped, most of (all?) the <illustration> processing can happen here -->
+   <xsl:apply-templates select="." />
+  </xsl:for-each>
+ </xsl:if>
 </xsl:template>
 
 <xsl:template match="illustrations">
@@ -788,6 +803,7 @@ Todo:
        </xsl:when>
        <xsl:otherwise>
         <xsl:text>[error: a template]</xsl:text>
+        <xsl:message><xsl:text>error: a template</xsl:text></xsl:message>
        </xsl:otherwise>
       </xsl:choose>
      </xsl:attribute>
