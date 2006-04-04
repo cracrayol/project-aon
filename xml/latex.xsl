@@ -17,6 +17,9 @@
 $Id$
 
 $Log$
+Revision 1.3  2006/04/04 22:02:14  cvsuser
+Fix two bugs (one } too much and a missing line break)
+
 Revision 1.2  2005/04/09 19:51:50  angantyr
 Added handling of open-ended quotes.
 
@@ -101,7 +104,7 @@ The implementation of tables is incomplete and kludgy.
  {%% One-sided %%
   %\fancyhead[C]{\iffloatpage{}{\bfseries{</xsl:text><xsl:value-of select="/gamebook/meta/title[1]" /><xsl:text>:} \normalfont{</xsl:text><xsl:value-of select="/gamebook/meta/creator[@class='short']" /><xsl:text>}}}
   %\fancyhead[R]{\iffloatpage{}{\thepage}}}
- \renewcommand{\headrulewidth}{\iffloatpage{0pt}{0.4pt}}
+ \renewcommand{\headrulewidth}{\iffloatpage{0pt}{0.4pt}}}
 
  \fancypagestyle{plain}{
   \fancyhf{}
@@ -471,7 +474,8 @@ The implementation of tables is incomplete and kludgy.
     \fancyhead[LO,RE]{\iffloatpage{}{\thepage}}}
    {%% One-sided %%
     %\fancyhead[R]{\iffloatpage{}{\large{\bfseries \aonmarks}}}
-    %\fancyhead[L]{\iffloatpage{}{\thepage}}}</xsl:text> <xsl:value-of select="$newparagraph" />
+    %\fancyhead[L]{\iffloatpage{}{\thepage}}%
+   }</xsl:text> <xsl:value-of select="$newparagraph" />
  </xsl:if>
 
  <xsl:if test="not( self::node()[@id='numbered'] )">
