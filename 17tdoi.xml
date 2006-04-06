@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE gamebook SYSTEM "gamebook.dtd" [
- <!ENTITY % xhtml.characters SYSTEM "htmlchar.mod">
- <!ENTITY % latex.characters SYSTEM "ltexchar.mod">
- %xhtml.characters;
-
  <!ENTITY % general.links SYSTEM "genlink.mod">
  %general.links;
  <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
@@ -20,6 +16,9 @@
 $Id$
 
 $Log$
+Revision 1.11  2006/04/06 19:32:25  jonathan.blake
+Removed the character module files from the internal DTD subset.
+
 Revision 1.10  2006/03/15 20:50:09  jonathan.blake
 Changed all character entities to <ch.*/>
 
