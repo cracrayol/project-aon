@@ -16,6 +16,9 @@
 $Id$
 
 $Log$
+Revision 1.12  2006/04/07 23:33:17  jonathan.blake
+Corrected illustration dimensions and converted to the new "illref" mechanism (apparently not correctly)
+
 Revision 1.11  2006/04/06 19:32:25  jonathan.blake
 Removed the character module files from the internal DTD subset.
 
@@ -860,14 +863,8 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>You race up the treacherously frosty steps which lead to the open watchtower roof. There you find Prarg hurriedly loading a pantard<ch.emdash/>a heavy iron crossbow which is mounted on a rotating platform.</p>
        <p>Once again the freezing air is filled with cries of fear and chaos. Drawn by these frightful sounds, you run to the stone parapet and look down to see the great black ship come shuddering to a halt beside the harbour wall. Instantly, a horde of undead warriors leap on to the quayside and rush off in pursuit of the routing Lencians. Their eyes burn with an unnatural fire and they howl like demons as mercilessly they hunt down their human prey.</p>
        <p>Prarg has now loaded the pantard and he calls on you to act as gunner. You oblige by taking hold of the firing mechanism and swivelling the weapon around in search of your first target. Two spring readily to view: the mass of <!--ERRTAG-RE-83432-->undead who are swarming<!--/ERRTAG-RE-83432--> ashore, and a glowing glassy sphere which is mounted on a plinth beside the ship<ch.apos/>s wheelhouse.</p>
-       <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>A horde of undead warriors leap on to the quayside.</description>
-         </meta>
-         <instance class="html" src="ill1.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill1.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill1" class="html"/>
+       <illref idref="bw-ill1" class="pdf"/>
        <choice idref="sect114">If you choose to fire at the undead horde, <link-text>turn to 114</link-text>.</choice>
        <choice idref="sect251">If you decide to fire at the glowing sphere, <link-text>turn to 251</link-text>.</choice>
       </data>
@@ -988,14 +985,8 @@ Initial Freepository revision - freshly minted from the proofread text
       <data>
        <p>You sense that the wisps of black smoke are a manifestation of several evil beings, each possessed of a strong psychic presence. Fearing attack, you quickly draw upon your Magnakai Discipline of Psi-screen to construct a defensive wall to protect yourself from the possibility of psychic assault. It is a wise precaution, but one that proves ineffective against these powerful entities.</p>
        <p>Moments after your psychic wall is in place, the wisps streak across the chamber and encircle your body. They accelerate to a dizzying speed before launching a massive wave of psychic energy at your mind. This tidal wave batters <!--ERRTAG-RE-96008-->your Psi-screen<!--/ERRTAG-RE-96008--> and leaves you trembling with psychic shock: lose 8 <typ class="attribute">ENDURANCE</typ> points.</p>
-       <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>Six large, spindly-limbed black insectoids, each with a <br /> ghoulish head ...</description>
-         </meta>
-         <instance class="html" src="ill2.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill2.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill2" class="html"/>
+       <illref idref="bw-ill2" class="pdf"/>
        <p>As your shocked senses slowly return to normal, you see that the wisps of smoke have now solidified into six bodily forms. They have taken the appearance of large, spindly-limbed, black insectoids, each with a ghoulish <!--ERRTAG-RE-96797-->head from which<!--/ERRTAG-RE-96797--> composite eyes stare at you with evil intent. Chittering excitedly, the six creatures come stalking forwards, hungry for the kill.</p>
        <choice idref="sect98">If you wish to attempt to evade these hideous insectoids, <link-text>turn to 98</link-text>.</choice>
        <choice idref="sect244">If you have a <!--ERRTAG-RA-97160-->Bow<!--/ERRTAG-RA-97160-->, and wish to use it, <link-text>turn to 244</link-text>.</choice>
@@ -1219,14 +1210,8 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <data>
        <p>Tagazin quickly recovers from your psychic attack and launches himself through the air at you, his clawed paws outstretched in readiness to tear your flesh.</p>
-       <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>Tagazin launches himself through the air, clawed paws <br /> outstretched.</description>
-         </meta>
-         <instance class="html" src="ill3.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill3.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill3" class="html"/>
+       <illref idref="bw-ill3" class="pdf"/>
        <combat><enemy>Demonlord Tagazin</enemy><enemy-attribute class="combatskill">55</enemy-attribute><enemy-attribute class="endurance">60</enemy-attribute></combat>
        <p>Before commencing the combat procedure, reduce your enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> points score by the number you have noted in the margin of your <a idref="action">Action Chart</a>. You may use Kai-surge again to aid you during this combat.</p>
        <choice idref="sect168">If, at any time during this fight, you reduce Tagazin<ch.apos/>s <typ class="attribute">ENDURANCE</typ> points score to 25 or less, do not continue. <link-text>Turn instead to 168</link-text>.</choice>
@@ -1474,14 +1459,8 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <data>
        <p>Trusting solely to your natural climbing ability, you use what little purchase you can find in the wall of the pit to assist your difficult climb back to the top. The snickering horde of chaos-creatures watch your ascent with eager anticipation. When you are within a few feet of the top, you unsheathe your weapon and get ready to fight your way out of the shaft one-handed.</p>
-       <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>The chaos creatures watch your ascent eagerly.</description>
-         </meta>
-         <instance class="html" src="ill4.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill4.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill4" class="html"/>
+       <illref idref="bw-ill4" class="pdf"/>
        <combat><enemy><!--ERRTAG-RE-143354-->Chaos-horde<!--/ERRTAG-RE-143354--></enemy><enemy-attribute class="combatskill">50</enemy-attribute><enemy-attribute class="endurance">48</enemy-attribute></combat>
        <p>Unless you have attained the Kai rank of Sun Lord, you must reduce your <typ class="attribute">COMBAT SKILL</typ> by 4 for the duration of this combat, due to your disadvantageous position.</p>
        <choice idref="sect82">If you win the combat, <link-text>turn to 82</link-text>.</choice>
@@ -1506,14 +1485,8 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>At the end of the hallway you arrive at a flight of metal stairs which ascend to a heavy, bronze-banded door. This sealed door appears to be a recent addition to the vessel; it is secured by a curious combination lock which you recognize to be Drakkarim in design.</p>
        <p>The lock comprises three raised blocks, each of which is divided into four equal squares. In each square, except one, there is a number. You have encountered this type of lock before and are aware that by tapping the empty square a correct number of times, you will cause the lock to disengage and the door to open.</p>
        <p>Consider the following grid of numbers. When you think you have determined the missing number, turn to the entry that is the same number as your answer.</p>
-       <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>Three raised blocks, divided into equal squares and <br /> numbered except for one ...</description>
-         </meta>
-         <instance class="html" src="ill5.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill5.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill5" class="html"/>
+       <illref idref="bw-ill5" class="pdf"/>
        <choice idref="sect139">If your answer is incorrect, or if you cannot solve this lock puzzle, <link-text>turn to 139</link-text>.</choice>
       </data>
      </section>
@@ -1597,14 +1570,8 @@ Initial Freepository revision - freshly minted from the proofread text
       <data>
        <p>You raise the Power Spike and a halo of silvery flame engulfs the tip, flaring with such brilliance that Deathlord Ixiataaga is momentarily blinded by its intensity. He shrieks, and raises the Deathstaff defensively to ward off your first blow. As the tip of the Power Spike bites deep into the haft of Ixiataaga<ch.apos/>s fell weapon, a hissing mass of crimson and white sparks explode into the air. These fiery motes are immediately sucked into the vortex of the Shadow Gate, which has now begun to whirl with alarming intensity.</p>
        <p>The Deathlord reels from the force of the impact, but he recovers swiftly and slashes with the sharp tip of the Deathstaff at your face. You duck the blow, but you sense that this is only the opening exchange in what will surely be a titanic fight to the finish.</p>
-       <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>The Deathlord Ixiataaga slashes at your face with the <br /> Deathstaff.</description>
-         </meta>
-         <instance class="html" src="ill6.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill6.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill6" class="html"/>
+       <illref idref="bw-ill6" class="pdf"/>
        <combat><enemy>Deathlord Ixiataaga (with Deathstaff<ch.emdash/>uncharged)</enemy><enemy-attribute class="combatskill">60</enemy-attribute><enemy-attribute class="endurance">39</enemy-attribute></combat>
        <p>This supernatural being is immune to all forms of psychic attack, except Kai-surge and Kai-blast.</p>
        <choice idref="sect290">If you win the combat, <link-text>turn to 290</link-text>.</choice>
@@ -1731,14 +1698,8 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <data>
        <p>You unsheathe your weapon just in time to fend off the creature<ch.apos/>s initial attack. A flash of lightning briefly illuminates the cave and, for the first time, you see the face of this mysterious beast: the sight is truly chilling to behold. Its mouth is a mass of twisted fangs and from its huge, bear-like body there writhes a score of slimy tentacles, each tipped with a venomous claw. Its reptilian head is domed and <!--ERRTAG-RE-166240-->from its centre<!--/ERRTAG-RE-166240--> there protrudes a twisted horn, longer than a broadsword.</p>
-       <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>The creature's body is a mass of slimy tentacles, tipped <br /> with venomous claws.</description>
-         </meta>
-         <instance class="html" src="ill7.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill7.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill7" class="html"/>
+       <illref idref="bw-ill7" class="pdf"/>
        <p>The creature retreats a few paces and howls with anger as it prepares to make its second attack.</p>
        <combat><enemy>Ixian Mhagani</enemy><enemy-attribute class="combatskill">40</enemy-attribute><enemy-attribute class="endurance">60</enemy-attribute></combat>
        <choice idref="sect56">You may evade the combat with this undead creature at any time after the third <!--ERRTAG-RE-167148-->round by<!--/ERRTAG-RE-167148--> <link-text>turning to 56</link-text>.</choice>
@@ -2084,14 +2045,8 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <data>
        <p>You utter the words of the <!--ERRTAG-RE-197731-->Brotherhood Spell <spell>Lightning Hand</spell> and<!--/ERRTAG-RE-197731--> extend your right hand towards the approaching beast. You feel a surge of energy run down your arm and explode into life at the tip of your index finger. There is a flash and a gout of blue-white energy arcs towards the creature<ch.apos/>s chest, connecting with powerful effect.</p>
-       <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>The ghastly creature comes leaping at you from the <br /> gangplank.</description>
-         </meta>
-         <instance class="html" src="ill8.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill8.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill8" class="html"/>
+       <illref idref="bw-ill8" class="pdf"/>
        <p>At first the ghastly creature shrieks in alarm and reels backwards, but to your horror it quickly recovers and comes leaping at you from the gangplank. It has absorbed the energy of your spell and it is now even stronger than before.</p>
        <combat><enemy>Ziog</enemy><enemy-attribute class="combatskill">52</enemy-attribute><enemy-attribute class="endurance">44</enemy-attribute></combat>
        <p>This undead creature is immune to all forms of psychic attack, except Kai-surge and Kai-blast.</p>
@@ -2301,14 +2256,8 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>With your briefing now concluded, King Sarnac ushers you all into his court chamber. There you bid him, Lord Ardan, and Guildmaster Banedon farewell, and they in turn wish you good luck and godspeed before Captain Prarg escorts you to the harbour. It is snowing heavily, and few of Vadera<ch.apos/>s inhabitants notice as the two of you are welcomed aboard the <cite>Maycastle</cite>, the square-rigged man-o<ch.apos/>-war which will carry you to Azgad Island.</p>
        <p>You leave Vadera within the hour and begin the long, cold voyage northwards. During the voyage, Captain Prarg tells you about the raids which have destroyed several small Drakkarim settlements along the Gulf of Konkor and the coast of the Shakoz Bight. On the twelfth day of your two-week sea journey, you catch a glimpse of one such settlement, near to the mouth of the River Lenag. All that remains is a wispy pall of smoke which hangs above the burnt-out hovels, darkening an already stormy sky.</p>
        <p>For most of the voyage, a host of seabirds have accompanied the <cite>Maycastle</cite>, attracted by the scraps of food regularly thrown out by the ship<ch.apos/>s galley. But at dawn on the thirteenth day, as the ship enters the Gulf of Konkor, the usual flocks of shrieking gulls are nowhere to be seen. It is as if they have suddenly become aware of impending danger and have turned back, eager to stay out of harm<ch.apos/>s reach. Later in the day, a fierce squall arises from the east which whips the iron-grey waters of the gulf into a maelstrom. The crew fight desperately to control their ship as the storm rages all day and all night, not abating until dawn of the following day. As the wind gradually dies and the sea settles, the lookout is able to resume his post atop the mainmast.</p>
-       <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>You see a few stone buildings around a fortified stone <br /> tower.</description>
-         </meta>
-         <instance class="html" src="ill9.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill9.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill9" class="html"/>
+       <illref idref="bw-ill9" class="pdf"/>
        <p><quote>Land ahoy!</quote> he cries, and all eyes scan the northern vista. There, perched on the wintry horizon, is a grey strip of barren, frost-covered rock. You magnify your vision and see, on the western side of this island, a few slate buildings clustered around a fortified stone tower.</p>
        <p><quote>That<ch.apos/>s Fort Azgad,</quote> says Captain Prarg, with relief in his voice. <quote>At last we<ch.apos/>ve arrived.</quote></p>
        <choice idref="sect321"><link-text>Turn to 321</link-text>.</choice>
@@ -2462,14 +2411,8 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <data>
        <p>Silently you climb the stairs and peer over the lip of the hatch; you are just in time to witness a scene which shocks you to the core. You see that the undead Drakkarim warriors have slain all of the Lencian crewmen and have heaped their bodies around the base of the <!--ERRTAG-RE-236097-->mainmast<!--/ERRTAG-RE-236097-->. One of the undead, clad in a filthy grey cloak embroidered with alien symbols, utters a chilling liturgy over the corpses of the slain. You sense something is very wrong. The chill air crackles with power and sparks of evil energy whirl around their bodies. When at last the liturgy ends, you see to your horror the slain Lencians rise up and take their places alongside the Drakkarim undead.</p>
-       <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>One of the undead warriors utters a chilling liturgy over <br /> the corpses of the slain.</description>
-         </meta>
-         <instance class="html" src="ill10.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill10.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill10" class="html"/>
+       <illref idref="bw-ill10" class="pdf"/>
        <p>Revolted and angered by what you have witnessed, you vow to avenge the souls of the crew and draw your weapon in readiness to attack the host of Drakkarim undead. But before you can act, you feel a shudder run through the deck. The great vessel which has swallowed your ship is lurching to a halt. There is a dull boom, then several portals open in the surrounding walls of the host vessel, spilling beams of white light across the deck of your captive ship. Scores of Drakkarim undead emerge from these portals and descend upon the ship like a host of hungry ghouls. You are forced to abandon your plan for vengeance<ch.emdash/>there are now far too many of the enemy. Yet all is not lost. In the milling confusion, you seize an opportunity to get away from the ship and escape into one of the light-filled portals.</p>
        <choice idref="sect320"><link-text>Turn to 320</link-text>.</choice>
       </data>
@@ -2594,14 +2537,8 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <data>
        <p>Leaning at a slant to make headway into the blizzard, you trek determinedly through deep snow that is heaped in drifts around the breached city wall. As you pass through the gap, you catch brief glimpses of ruined buildings through the sleeting gale. You also become aware of a noise<ch.emdash/>a low hum<ch.emdash/>which is reverberating beneath the howl of the wind. You stop to listen and at once you determine that this strange noise is coming from the <!--ERRTAG-RA-250051-->Crystal Spire<!--/ERRTAG-RA-250051-->.</p>
-        <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>A troop of skeletal warriors marches stiffly towards the <br /> plaza.</description>
-         </meta>
-         <instance class="html" src="ill11.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill11.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill11" class="html"/>
+       <illref idref="bw-ill11" class="pdf"/>
        <p>Wearily you press on through the awesome ruins of this age-old city, where once a proud and mighty race of the Old Kingdom reigned supreme, until you are forced to halt and take cover from a passing troop of skeletal warriors. You watch them march stiffly along an ice-choked avenue towards a plaza which is dominated by a frozen fountain. Beyond the fountain<ch.apos/>s solid plume of water you see a broad ramp which ascends to a grand archway at the base of the <!--ERRTAG-RA-250051-->Crystal Spire<!--/ERRTAG-RA-250051-->.</p>
        <choice idref="sect9">If you possess Grand Huntmastery and have attained the Kai rank of Sun <!--ERRTAG-RE-249397-->Lord or higher<!--/ERRTAG-RE-249397-->, <link-text>turn to 9</link-text>.</choice>
        <choice idref="sect122">If you do not possess this skill, or if you have yet to reach this level of Kai Mastery, <link-text>turn to 122</link-text>.</choice>
@@ -2783,14 +2720,8 @@ Initial Freepository revision - freshly minted from the proofread text
       <data>
        <p>From out of the eerie mist there looms a high-prowed ship, wrought of age-blackened timbers which glisten with ice and frost. It speeds into the harbour and a morbid terror grips the hearts of the Lencian garrison when they see that it is crewed by a cadaverous host of skeletal warriors. A ghastly wail arises from the invading ship, an unholy shriek that shatters the garrison<ch.apos/>s will to resist. As one, the shocked Lencians turn and flee from the quayside, dropping and discarding their supplies and weapons in their hurry to get away.</p>
        <p><quote>Ishir preserve us!</quote> cries Lanza, as he takes up his sword belt and hurries towards the door. <quote>My men are routing. I must rally them to the defence before all is lost!</quote></p>
-        <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>A high prowed ship glistening with ice and frost looms <br /> out of the eerie mist.</description>
-         </meta>
-         <instance class="html" src="ill12.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill12.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill12" class="html"/>
+       <illref idref="bw-ill12" class="pdf"/>
        <p>Prarg unsheathes his sword and rushes after Lanza. Outside the door you see a circular stone staircase which leads up to the roof, or down to the base of the watchtower. Lanza descends the stairs but Prarg does not follow. Instead, he begins to climb the steps to the roof.</p>
        <choice idref="sect264">If you wish to follow Captain Lanza, <link-text>turn to 264</link-text>.</choice>
        <choice idref="sect14">If you decide to go after Captain Prarg, <link-text>turn to 14</link-text>.</choice>
@@ -2946,14 +2877,8 @@ Initial Freepository revision - freshly minted from the proofread text
       <data>
        <p>Less than a mile to the north, like some nightmare apparition surfacing from the deep, you see a broad-prowed vessel of prodigious size breaking low in the stormy water. You magnify your vision and see that its main deck is completely enclosed by a canopy of overlapping green-grey timbers, affording it the appearance of some gigantic fish. Two glassy portholes and a jagged line which stretches around its prow complete this chilling illusion.</p>
        <p>For its shape and size it moves towards your ship at an unnatural speed. You call the crew to arms, fearing it to be an enemy vessel closing to attack, and you sense a shudder run through them when, for the first time, they clearly discern its alien design. You focus your Kai senses upon the oncoming craft and suddenly you realize its purpose. It is an Ixian vessel, come to rendezvous with your ship, believing it still to be manned by the undead horde which attacked Fort Azgad.</p>
-        <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>It is as if you are looking into the ghastly maw of a <br /> hungry sea predator.</description>
-         </meta>
-         <instance class="html" src="ill13.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill13.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill13" class="html"/>
+       <illref idref="bw-ill13" class="pdf"/>
        <p><quote>Stand firm!</quote> you shout, attempting to rally the nervous Lencians as the craft speeds ever nearer. When less than a hundred leagues distant, its great prow begins to creak open. It is as if you are looking into the ghastly maw of a hungry sea predator. The fearful sight alarms the Lencian crew and they flee towards the bow of the ship in panic: <quote>Save us!</quote> they <!--ERRTAG-RE-285121-->cry. <quote>Ishir<!--/ERRTAG-RE-285121--> save us! It<ch.apos/>s going to eat us alive!</quote></p>
        <choice idref="sect236"><link-text>Turn to 236</link-text>.</choice>
       </data>
@@ -3096,14 +3021,8 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>Less than fifty yards away you see a shaggy, grey-furred beast of burden which is harnessed to a wooden wagon. A troop of undead soldiers are unloading shiny metallic containers from the back of this wagon which they then carry, cradled in their bony arms, into the open mouth of the submarine.</p>
        <p>Stealthily, you make your way closer to the wagon and await the chance to climb aboard as soon as the final container has been off-loaded. At last the opportunity arrives; you leap aboard and hide yourself from sight beneath a greasy, foul-smelling tarpaulin.</p>
        <p>After a few minutes you feel a jolt as the wagon moves off. Through a crack in its ancient wooden planks, you watch with trepidation as the wagon trundles along a causeway towards the distant tunnel entrance. It enters the tunnel, unchallenged by the skeletal warriors who stand guard here, and ascends a gentle gradient to another ice-walled cavern. Several passages connect here from all directions, like the spokes of a giant wheel converging at the hub.</p>
-        <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>The undead soldiers unload metallic containers into <br /> the open mouth of the submarine.</description>
-         </meta>
-         <instance class="html" src="ill14.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill14.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill14" class="html"/>
+       <illref idref="bw-ill14" class="pdf"/>
        <p>An undead Drakkarim soldier steps forward, takes hold of the shaggy beast<ch.apos/>s harness, and leads the wagon towards a stockpile of metallic containers. Clearly he intends to load these on to the wagon for transportation back to the submarine. Fearing discovery, you leap from the rear of the moving wagon and hide yourself among a stack of empty wooden crates. From here you observe two possible ways by which you could leave this busy cavern; by an unguarded staircase in the north wall, or through an open archway in the east wall.</p>
        <choice idref="sect141">If you wish to leave this cavern by the staircase, <link-text>turn to 141</link-text>.</choice>
        <choice idref="sect7">If you choose to leave through the open archway, <link-text>turn to 7</link-text>.</choice>
@@ -3339,14 +3258,8 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <data>
        <p>When you reach the stone roof, you notice an opening at its centre, partially overgrown with barbed creepers. A closer look reveals a flight of steps, thick with slime, which descend into the darkness of the building which now lies trapped below the surface of the swamp. You are peering into this hellish gloom when suddenly your Kai senses alert you to an approaching threat.</p>
-        <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>A horde of bloated corpse-things, humanoid horrors <br /> and skeletal warriors approach you.</description>
-         </meta>
-         <instance class="html" src="ill15.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill15.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill15" class="html"/>
+       <illref idref="bw-ill15" class="pdf"/>
        <p>You spin around to see a horde of monstrous shapes come streaming along the mossy ridge which you have just travelled. Bloated corpse-things jostle with humanoid horrors and skeletal warriors whose bones are gnawed with decay. It is a ghastly sight<ch.emdash/>a regiment of <!--ERRTAG-RA-325620-->Chaos-creatures<!--/ERRTAG-RA-325620-->, drawn here by the scent of human prey. You shiver with dread, for clearly you are the prey they seek.</p>
        <choice idref="sect259">If you wish to evade these approaching <!--ERRTAG-RA-325620-->Chaos-creatures<!--/ERRTAG-RA-325620--> by descending the steps inside the sunken stone building, <link-text>turn to 259</link-text>.</choice>
        <choice idref="sect145">If you choose to stand and fight the advancing horde, <link-text>turn to 145</link-text>.</choice>
@@ -3498,14 +3411,8 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <data>
        <p>Using your <!--ERRTAG-RE-339798-->Kai Camouflage<!--/ERRTAG-RE-339798--> skills, you inch your way closer and closer to the two undead guards. You are less than ten feet from the great grey door when suddenly they react to your presence. They spring into animation and come rushing towards you with their spears levelled at your chest.</p>
-       <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>The two undead soldiers rush towards you.</description>
-         </meta>
-         <instance class="html" src="ill16.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill16.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill16" class="html"/>
+       <illref idref="bw-ill16" class="pdf"/>
        <combat><enemy><!--ERRTAG-RE-340512-->Drakkarim Undead<!--/ERRTAG-RE-340512--></enemy><enemy-attribute class="combatskill">40</enemy-attribute><enemy-attribute class="endurance">42</enemy-attribute></combat>
        <p>Without weapons or equipment you have no choice but to fight this enemy unarmed. (Remember to make the appropriate adjustments to your <typ class="attribute">COMBAT SKILL</typ>.)</p>
        <choice idref="sect63">If you win the combat, <link-text>turn to 63</link-text>.</choice>
@@ -3731,14 +3638,8 @@ Initial Freepository revision - freshly minted from the proofread text
       <data>
        <p>You follow Captain Lanza as he races down to the base of the watchtower and hurries off along the slate-cobbled avenue which leads directly to the harbour. As he runs he curses and barks orders at the garrison soldiers who are fleeing from the quay, but they are wide-eyed with terror and all appear deaf to his commands. As you reach a bend in the road, you see the great black ship shuddering to a halt alongside the harbour wall. Instantly, a horde of undead warriors leap on to the quay and come rushing in pursuit of the routing Lencians. Their eyes burn with an unnatural fire and they howl like unchained demons as they mercilessly hunt their human prey.</p>
        <p>Lanza manages to rally a dozen of his best men to form a defensive line across the narrow avenue. With their shields overlapping and their swords poised ready to thrust, they brace themselves to receive the first wave of undead. The pugnacious Captain shouts words of encouragement to stave off their fear but it is clear to you that every single one of them is terrified. Their faces are drenched with sweat despite the biting cold.</p>
-       <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>The Lencian's sword is corroded by the creature's <br /> foul blood.</description>
-         </meta>
-         <instance class="html" src="ill17.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill17.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill17" class="html"/>
+       <illref idref="bw-ill17" class="pdf"/>
        <p>With a hideous howl, the advancing mass of undead fall upon their line, hacking and stabbing at their shield-wall with their rust-dulled blades. The Lencians fight back furiously, shattering bones and cleaving skulls, but they are forced to give ground before the pressing onslaught.</p>
        <p>Then, from the midst of the enemy ranks, a grisly creature clad in mouldering black robes comes bursting through the shield-wall. A Lencian turns to thrust his sword into the creature<ch.apos/>s wormy flesh. His attack releases a gout of venom and instantly his sword crumples<ch.emdash/>corroded by the foul blood. The venom splashes him and he falls screaming to the ground, clutching at the smouldering stump that was once his hand. The creature howls with malicious glee as it leaps over his writhing body. It rushes towards you, its eye sockets blazing and its black claws extended to rake your flesh.</p>
        <combat><enemy>Cabalah</enemy><enemy-attribute class="combatskill">48</enemy-attribute><enemy-attribute class="endurance">45</enemy-attribute></combat>
@@ -4141,14 +4042,8 @@ Initial Freepository revision - freshly minted from the proofread text
       <data>
        <p>A sense of unease makes you slow your hurried pace as you approach the shadowy opening. The low humming noise, which has been a constant presence ever since you first entered the <!--ERRTAG-RA-406231-->Crystal Spire<!--/ERRTAG-RA-406231-->, is almost unbearable now. Were it not for your natural Kai defences, your hearing would have suffered permanent damage the moment you passed beyond the two pillars.</p>
        <p>Beyond the opening lies a grand yet sinister chamber. Peering into its gloomy recesses, you observe that this chamber was constructed with great skill and care in some distant age. But it is not the rich decorations which hold your <!--ERRTAG-RE-405126-->attention; it<!--/ERRTAG-RE-405126--> is the whirling circular vortex which hangs on the far wall like some nightmarish, living mural. Your pulse quickens when you look into its spinning core for you recognize immediately that it is a Shadow Gate<ch.emdash/>an astral doorway to another plane of existence.</p>
-       <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>Freed from the magical prison, Deathlord Ixiataaga <br /> takes the Deathstaff in glee.</description>
-         </meta>
-         <instance class="html" src="ill18.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill18.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill18" class="html"/>
+       <illref idref="bw-ill18" class="pdf"/>
        <p>Your Kai senses quickly become attuned to the powerful psychic residues which linger in this chamber. You notice that several empty coffins lie scattered about the floor and, when you focus upon them, chilling dream-like images form in your mind<ch.apos/>s eye. You see the accursed Deathstaff emerging from the Shadow Gate. It spins end-over-end and impacts against the heavy stone lid of a coffin, breaking it in two. Its evil power feeds un-life into the mouldering remains of the <!--ERRTAG-RE-406351-->Ixian Elder<!--/ERRTAG-RE-406351--> lying within and, driven by this ungodly energy, the remains rise up from their stony tomb. The resurrected Ixian bears the Deathstaff to the highest chamber of the <!--ERRTAG-RA-406231-->Crystal Spire<!--/ERRTAG-RA-406231--> where, imprisoned in a cage of light fashioned by the Elder Magi, stands Deathlord Ixiataaga. The Ixian pushes the Deathstaff through the wall of this shimmering prison and, with a crackling flash, the cage of light vanishes. Freed from the magical prison which has kept him secure for thousands of years, Deathlord Ixiataaga takes the Deathstaff and howls with manic glee as he rejoices in his fateful escape.</p>
        <p>The disturbing images fade from your mind, driven away by your <!--ERRTAG-RE-407081-->Kai Sixth Sense<!--/ERRTAG-RE-407081--> which is warning you of imminent danger. A wispy black vapour is leaking from the circular stone edging which abuts the whirling Shadow Gate. You focus upon these smoky black trails and sense at once that they are alive and that they radiate an aura of evil.</p>
        <choice idref="sect223">If you possess Kai-screen, and have attained the Kai rank of Sun Thane, <link-text>turn to 223</link-text>.</choice>
@@ -4260,14 +4155,8 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <data>
        <p>You hurry down the steps to the base of the watchtower and sprint along a slate-cobbled avenue which leads directly to the harbour. As you run, you see Captain Lanza with some of his garrison troops engaging in fierce hand-to-hand combat against a maniacal horde of skeletal warriors. The fighting is blocking the road which leads down to the quay, so you slip into an adjoining alley in the hope of finding another route to the ice-boat. You emerge from the alley and turn towards the harbour, <!--ERRTAG-RE-419334-->only to find<!--/ERRTAG-RE-419334--> yourself confronted by a howling mass of fiery-eyed skeletons. You barely manage to unsheathe your weapon in time to defend yourself from their crazed attack.</p>
-       <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>Captain Lanza fights the maniacal horde of skeletal <br /> warriors.</description>
-         </meta>
-         <instance class="html" src="ill19.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill19.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill19" class="html"/>
+       <illref idref="bw-ill19" class="pdf"/>
        <combat><enemy><!--ERRTAG-RE-419963-->Ixian Undead<!--/ERRTAG-RE-419963--></enemy><enemy-attribute class="combatskill">45</enemy-attribute><enemy-attribute class="endurance">52</enemy-attribute></combat>
        <p>These beings are immune to all forms of psychic attack, except Kai-surge and Kai-blast.</p>
        <choice idref="sect295">You may evade combat after three rounds by <link-text>turning to 295</link-text>.</choice>
@@ -4581,14 +4470,8 @@ Initial Freepository revision - freshly minted from the proofread text
        <p><quote>Normally my men use these to break up harbour ice in the dead of winter,</quote> he says, as together you help to distribute the heavy two-handed hammers among the garrison, <quote>but now they can be put to good use smashing up the bones of our foes!</quote></p>
        <p>Freshly equipped and fired by the taste of victory, Lanza and his men set about hammering the remnants of the attacking enemy. They drive them all the way back to their ship, literally shattering all who dare stand in their way. Within the hour the outpost is secured<ch.emdash/>the enemy have been destroyed.</p>
        <p>You survey the aftermath of the battle with mixed emotions. You feel elated at having helped Lanza to win, but the ice-boat, which was to have conveyed you to Ixia, is now a burned wreck lying at the bottom of the harbour. All that can be seen of it is a few feet of its <!--ERRTAG-RE-449135-->mainmast<!--/ERRTAG-RE-449135--> protruding at an angle above the surface of the sea. As you stare at this blackened masthead, you are joined by Captain Prarg.</p>
-       <illustration class="float">
-         <meta>
-          <creator>Brian Williams</creator>
-          <description>The ice-boat is now a burned wreck lying at the <br /> bottom of the harbour.</description>
-         </meta>
-         <instance class="html" src="ill20.gif" width="60" height="60"/>
-         <instance class="pdf" src="ill20.pdf" width="60" height="60"/>
-        </illustration>
+       <illref idref="bw-ill20" class="html"/>
+       <illref idref="bw-ill20" class="pdf"/>
        <p><quote>What in Ishir<ch.apos/>s name can we do, Grand Master?</quote> he says, staring dejectedly at the icy water which is swirling in eddies around the submerged wreck. <quote>That ice-boat was the only vessel capable of transporting you to Ixia.</quote></p>
        <p><quote>Never fear, Prarg,</quote> you reply, confidently. <quote>I<ch.apos/>ve just had an idea that could be the answer to our problem.</quote></p>
        <choice idref="sect177"><link-text>Turn to 177</link-text>.</choice>
@@ -4716,13 +4599,8 @@ Initial Freepository revision - freshly minted from the proofread text
     <meta><title></title></meta>
 
     <data>
-     <illustration>
-      <meta>
-       <creator>Brian Williams</creator>
-      </meta>
-      <instance src="map.jpg" width="1024" height="768" class="html" />
-      <instance src="map.pdf" width="1024" height="768" class="pdf" />
-     </illustration>
+     <illref idref="bw-map" class="html"/>
+     <illref idref="bw-map" class="pdf"/>
     </data>
    </section>
 
@@ -4730,63 +4608,14 @@ Initial Freepository revision - freshly minted from the proofread text
     <meta><title>Action Chart</title></meta>
 
     <data>
-
-     <illustration class="inline">
-      <meta>
-       <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
-      </meta>
-      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif" />
-     </illustration>
-
-     <illustration class="inline">
-      <meta>
-       <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
-      </meta>
-      <instance src="acdscplz.gif" width="386" height="207" class="html" mime-type="image/gif" />
-     </illustration>
-
-     <illustration class="inline">
-      <meta>
-       <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
-      </meta>
-      <instance src="acitems.gif" width="386" height="161" class="html" mime-type="image/gif" />
-     </illustration>
-
-     <illustration class="inline">
-      <meta>
-       <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
-      </meta>
-      <instance src="acbckpck.gif" width="386" height="137" class="html" mime-type="image/gif" />
-     </illustration>
-
-     <illustration class="inline">
-      <meta>
-       <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
-      </meta>
-      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif" />
-     </illustration>
-
-     <illustration class="inline">
-      <meta>
-       <creator>Jonathan Blake</creator>
-      </meta>
-      <instance src="ac1.tex" width="400" height="500" class="tex" />
-     </illustration>
-
-     <illustration class="inline">
-      <meta>
-       <creator>Jonathan Blake</creator>
-      </meta>
-      <instance src="ac2.tex" width="400" height="500" class="tex" />
-     </illustration>
-
-     <illustration class="inline">
-      <meta>
-       <creator>Jonathan Blake</creator>
-      </meta>
-      <instance src="ac3.tex" width="400" height="500" class="tex" />
-     </illustration>
-
+     <illref class="html" idref="acstats" />
+     <illref class="html" idref="acdscplz" />
+     <illref class="html" idref="acitems" />
+     <illref class="html" idref="acbckpck" />
+     <illref class="html" idref="acspcl" />
+     <illref idref="ac1" class="html"/>
+     <illref idref="ac2" class="html"/>
+     <illref idref="ac3" class="html"/>
     </data>
    </section>
 
@@ -4822,23 +4651,10 @@ Initial Freepository revision - freshly minted from the proofread text
     <meta><title>Combat Results Table</title></meta>
 
     <data>
-
-     <illustration class="inline">
-      <meta>
-       <creator>Jonathan Blake</creator>
-      </meta>
-      <instance src="crtneg.gif" width="386" height="472" class="html" mime-type="image/gif" />
-      <instance src="crtneg.tex" width="380" height="500" class="tex" />
-     </illustration>
-
-     <illustration class="inline">
-      <meta>
-       <creator>Jonathan Blake</creator>
-      </meta>
-      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif" />
-      <instance src="crtpos.tex" width="380" height="500" class="tex" />
-     </illustration>
-
+     <illref idref="crtneg" class="html" />
+     <illref idref="crtneg" class="tex" />
+     <illref idref="crtpos" class="html" />
+     <illref idref="crtpos" class="tex" />
     </data>
    </section>
 
@@ -4846,15 +4662,8 @@ Initial Freepository revision - freshly minted from the proofread text
     <meta><title>Random Number Table</title></meta>
 
     <data>
-
-     <illustration class="inline">
-      <meta>
-       <creator>Jonathan Blake</creator>
-      </meta>
-      <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif" />
-      <instance src="random.tex" width="380" height="500" class="tex" />
-     </illustration>
-
+     <illref idref="rnt" class="html"/>
+     <illref idref="rnt" class="tex"/>
     </data>
    </section>
 
@@ -5103,42 +4912,290 @@ Initial Freepository revision - freshly minted from the proofread text
      <section class="backmatter" id="primill">
       <meta><title>Primary Illustrations</title></meta>
 
-      <data>
-       <ul class="unbulleted">
-        <li>Illustration I (<a idref="sect14">Section 14</a>)</li>
-        <li>Illustration II (<a idref="sect24">Section 24</a>)</li>
-        <li>Illustration III (<a idref="sect45">Section 45</a>)</li>
-        <li>Illustration IV (<a idref="sect67">Section 67</a>)</li>
-        <li>Illustration V (<a idref="sect69">Section 69</a>)</li>
-        <li>Illustration VI (<a idref="sect77">Section 77</a>)</li>
-        <li>Illustration VII (<a idref="sect89">Section 89</a>)</li>
-        <li>Illustration VIII (<a idref="sect121">Section 121</a>)</li>
-        <li>Illustration IX (<a idref="sect140">Section 140</a>)</li>
-        <li>Illustration X (<a idref="sect153">Section 153</a>)</li>
-        <li>Illustration XI (<a idref="sect165">Section 165</a>)</li>
-        <li>Illustration XII (<a idref="sect181">Section 181</a>)</li>
-        <li>Illustration XIII (<a idref="sect195">Section 195</a>)</li>
-        <li>Illustration XIV (<a idref="sect207">Section 207</a>)</li>
-        <li>Illustration XV (<a idref="sect229">Section 229</a>)</li>
-        <li>Illustration XVI (<a idref="sect243">Section 243</a>)</li>
-        <li>Illustration XVII (<a idref="sect264">Section 264</a>)</li>
-        <li>Illustration XVIII (<a idref="sect300">Section 300</a>)</li>
-        <li>Illustration XIX (<a idref="sect310">Section 310</a>)</li>
-        <li>Illustration XX (<a idref="sect340">Section 340</a>)</li>
-        <li>Map</li>
-        <li><a idref="action">Action Chart</a></li>
-       </ul>
-      </data>
+      <illustrations>
+       <illustration id="bw-ill1" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>A horde of undead warriors leap on to the quayside.</description>
+        </meta>
+        <instance class="html" src="ill1.gif" width="386" height="637"/>
+        <instance class="pdf" src="ill1.pdf" width="386" height="637"/>
+       </illustration>
+
+       <illustration id="bw-ill2" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>Six large, spindly-limbed black insectoids, each with a <br /> ghoulish head ...</description>
+        </meta>
+        <instance class="html" src="ill2.gif" width="386" height="571"/>
+        <instance class="pdf" src="ill2.pdf" width="386" height="571"/>
+       </illustration>
+      
+       <illustration id="bw-ill3" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>Tagazin launches himself through the air, clawed paws <br /> outstretched.</description>
+        </meta>
+        <instance class="html" src="ill3.gif" width="386" height="608"/>
+        <instance class="pdf" src="ill3.pdf" width="386" height="608"/>
+       </illustration>
+
+       <illustration id="bw-ill4" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>The chaos creatures watch your ascent eagerly.</description>
+        </meta>
+        <instance class="html" src="ill4.gif" width="386" height="634"/>
+        <instance class="pdf" src="ill4.pdf" width="386" height="634"/>
+       </illustration>
+
+       <illustration id="bw-ill5" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>Three raised blocks, divided into equal squares and <br /> numbered except for one ...</description>
+        </meta>
+        <instance class="html" src="ill5.gif" width="386" height="573"/>
+        <instance class="pdf" src="ill5.pdf" width="386" height="573"/>
+       </illustration>
+
+       <illustration id="bw-ill6" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>The Deathlord Ixiataaga slashes at your face with the <br /> Deathstaff.</description>
+        </meta>
+        <instance class="html" src="ill6.gif" width="386" height="585"/>
+        <instance class="pdf" src="ill6.pdf" width="386" height="585"/>
+       </illustration>
+
+       <illustration id="bw-ill7" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>The creature's body is a mass of slimy tentacles, tipped <br /> with venomous claws.</description>
+        </meta>
+        <instance class="html" src="ill7.gif" width="386" height="610"/>
+        <instance class="pdf" src="ill7.pdf" width="386" height="610"/>
+       </illustration>
+
+       <illustration id="bw-ill8" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>The ghastly creature comes leaping at you from the <br /> gangplank.</description>
+        </meta>
+        <instance class="html" src="ill8.gif" width="386" height="635"/>
+        <instance class="pdf" src="ill8.pdf" width="386" height="635"/>
+       </illustration>
+
+       <illustration id="bw-ill9" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>You see a few stone buildings around a fortified stone <br /> tower.</description>
+        </meta>
+        <instance class="html" src="ill9.gif" width="386" height="595"/>
+        <instance class="pdf" src="ill9.pdf" width="386" height="595"/>
+       </illustration>
+
+       <illustration id="bw-ill10" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>One of the undead warriors utters a chilling liturgy over <br /> the corpses of the slain.</description>
+        </meta>
+        <instance class="html" src="ill10.gif" width="386" height="587"/>
+        <instance class="pdf" src="ill10.pdf" width="386" height="587"/>
+       </illustration>
+
+       <illustration id="bw-ill11" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>A troop of skeletal warriors marches stiffly towards the <br /> plaza.</description>
+        </meta>
+        <instance class="html" src="ill11.gif" width="386" height="638"/>
+        <instance class="pdf" src="ill11.pdf" width="386" height="638"/>
+       </illustration>
+
+       <illustration id="bw-ill12" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>A high prowed ship glistening with ice and frost looms <br /> out of the eerie mist.</description>
+        </meta>
+        <instance class="html" src="ill12.gif" width="386" height="579"/>
+        <instance class="pdf" src="ill12.pdf" width="386" height="579"/>
+       </illustration>
+
+       <illustration id="bw-ill13" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>It is as if you are looking into the ghastly maw of a <br /> hungry sea predator.</description>
+        </meta>
+        <instance class="html" src="ill13.gif" width="386" height="632"/>
+        <instance class="pdf" src="ill13.pdf" width="386" height="632"/>
+       </illustration>
+
+       <illustration id="bw-ill14" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>The undead soldiers unload metallic containers into <br /> the open mouth of the submarine.</description>
+        </meta>
+        <instance class="html" src="ill14.gif" width="386" height="603"/>
+        <instance class="pdf" src="ill14.pdf" width="386" height="603"/>
+       </illustration>
+
+       <illustration id="bw-ill15" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>A horde of bloated corpse-things, humanoid horrors <br /> and skeletal warriors approach you.</description>
+        </meta>
+        <instance class="html" src="ill15.gif" width="386" height="577"/>
+        <instance class="pdf" src="ill15.pdf" width="386" height="577"/>
+       </illustration>
+
+       <illustration id="bw-ill16" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>The two undead soldiers rush towards you.</description>
+        </meta>
+        <instance class="html" src="ill16.gif" width="386" height="585"/>
+        <instance class="pdf" src="ill16.pdf" width="386" height="585"/>
+       </illustration>
+
+       <illustration id="bw-ill17" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>The Lencian's sword is corroded by the creature's <br /> foul blood.</description>
+        </meta>
+        <instance class="html" src="ill17.gif" width="772" height="565"/>
+        <instance class="pdf" src="ill17.pdf" width="772" height="565"/>
+       </illustration>
+
+       <illustration id="bw-ill18" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>Freed from the magical prison, Deathlord Ixiataaga <br /> takes the Deathstaff in glee.</description>
+        </meta>
+        <instance class="html" src="ill18.gif" width="386" height="583"/>
+        <instance class="pdf" src="ill18.pdf" width="386" height="583"/>
+       </illustration>
+
+       <illustration id="bw-ill19" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>Captain Lanza fights the maniacal horde of skeletal <br /> warriors.</description>
+        </meta>
+        <instance class="html" src="ill19.gif" width="386" height="610"/>
+        <instance class="pdf" src="ill19.pdf" width="386" height="610"/>
+       </illustration>
+
+       <illustration id="bw-ill20" class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>The ice-boat is now a burned wreck lying at the <br /> bottom of the harbour.</description>
+        </meta>
+        <instance class="html" src="ill20.gif" width="386" height="510"/>
+        <instance class="pdf" src="ill20.pdf" width="386" height="510"/>
+       </illustration>
+
+       <illustration id="bw-map">
+        <meta>
+         <creator>Brian Williams</creator>
+        </meta>
+        <instance src="map.jpg" width="1024" height="768" class="html" />
+        <instance src="map.pdf" width="1024" height="768" class="pdf" />
+       </illustration>
+
+       <illgroup idref="action" class="visible">
+        <illustration id="acstats" class="inline">
+         <meta>
+          <creator>JC Alvarez/Jonathan Blake</creator>
+         </meta>
+         <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif" />
+        </illustration>
+
+        <illustration id="acdscplz" class="inline">
+         <meta>
+          <creator>JC Alvarez/Jonathan Blake</creator>
+         </meta>
+         <instance src="acdscplz.gif" width="386" height="207" class="html" mime-type="image/gif" />
+        </illustration>
+
+        <illustration id="acitems" class="inline">
+         <meta>
+          <creator>JC Alvarez/Jonathan Blake</creator>
+         </meta>
+         <instance src="acitems.gif" width="386" height="161" class="html" mime-type="image/gif" />
+        </illustration>
+
+        <illustration id="acbckpck" class="inline">
+         <meta>
+          <creator>JC Alvarez/Jonathan Blake</creator>
+         </meta>
+         <instance src="acbckpck.gif" width="386" height="137" class="html" mime-type="image/gif" />
+        </illustration>
+
+        <illustration id="acspcl" class="inline">
+         <meta>
+          <creator>JC Alvarez/Jonathan Blake</creator>
+         </meta>
+         <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif" />
+        </illustration>
+
+        <illustration id="ac1" class="inline">
+         <meta>
+          <creator>Jonathan Blake</creator>
+         </meta>
+         <instance src="ac1.tex" width="400" height="500" class="tex" />
+        </illustration>
+
+        <illustration id="ac2" class="inline">
+         <meta>
+          <creator>Jonathan Blake</creator>
+         </meta>
+         <instance src="ac2.tex" width="400" height="500" class="tex" />
+        </illustration>
+
+        <illustration id="ac3" class="inline">
+         <meta>
+          <creator>Jonathan Blake</creator>
+         </meta>
+         <instance src="ac3.tex" width="400" height="500" class="tex" />
+        </illustration>
+       </illgroup>
+
+       <illgroup idref="crtable" class="hidden">
+        <illustration id="crtneg" class="inline">
+         <meta>
+          <creator>Jonathan Blake</creator>
+         </meta>
+        <instance src="crtneg.gif" width="386" height="472" class="html" mime-type="image/gif" />
+        <instance src="crtneg.tex" width="380" height="500" class="tex" />
+        </illustration>
+
+        <illustration id="crtpos" class="inline">
+         <meta>
+          <creator>Jonathan Blake</creator>
+         </meta>
+         <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif" />
+         <instance src="crtpos.tex" width="380" height="500" class="tex" />
+        </illustration>
+       </illgroup>
+
+       <illgroup class="hidden">
+        <illustration id="rnt" class="inline">
+         <meta>
+          <creator>Jonathan Blake</creator>
+         </meta>
+         <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif" />
+         <instance src="random.tex" width="380" height="500" class="tex" />
+        </illustration>
+       </illgroup>
+      </illustrations>
+
+      <data/>
      </section>
 
      <section class="backmatter" id="secill">
       <meta><title>Secondary Illustrations</title></meta>
 
-      <data>
-       <ul class="unbulleted">
-        
-       </ul>
-      </data>
+      <illustrations/>
+      <data/>
      </section>
     </data>
    </section>
