@@ -80,11 +80,11 @@
           <li><cite>The Legacy of Vashna</cite>;<br/>Copyright 1991, 1993 Joe Dever.</li>
           <li><cite>The Deathlord of Ixia</cite>;<br/>Copyright 1992, 1994 Joe Dever.</li>
           <li><cite>Dawn of the Dragons</cite>;<br/>Copyright 1992 Joe Dever.</li>
-          <li><cite>Wolf&apos;s Bane</cite>;<br/>Copyright 1993, 1995 Joe Dever.</li>
+          <li><cite>Wolf<ch.apos/>s Bane</cite>;<br/>Copyright 1993, 1995 Joe Dever.</li>
           <li><cite>The Curse of Naar</cite>;<br/>Copyright 1993, 1996 Joe Dever.</li>
           <li><cite>Voyage of the Moonstone</cite>;<br/>Copyright 1994 Joe Dever.</li>
           <li><cite>The Buccaneers of Shadaki</cite>;<br/>Copyright 1994 Joe Dever.</li>
-          <li><cite>Mydnight&apos;s Hero</cite>;<br/>Copyright 1995 Joe Dever.</li>
+          <li><cite>Mydnight<ch.apos/>s Hero</cite>;<br/>Copyright 1995 Joe Dever.</li>
           <li><cite>Rune War</cite>;<br/>Copyright 1995 Joe Dever.</li>
           <li><cite>Trail of the Wolf</cite>;<br/>Copyright 1997 Joe Dever.</li>
           <li><cite>The Fall of Blood Mountain</cite>;<br/>Copyright 1997 Joe Dever.</li>
@@ -190,10 +190,10 @@
           <li><cite>The Legacy of Vashna</cite>;<br/>Illustrations Copyright 1991, 1993 Brian Williams.</li>
           <li><cite>The Deathlord of Ixia</cite>;<br/>Illustrations Copyright 1992 Brian Williams.</li>
           <li><cite>Dawn of the Dragons</cite>;<br/>Illustrations Copyright 1992 Brian Williams.</li>
-          <li><cite>Wolf&apos;s Bane</cite>;<br/>Illustrations Copyright 1993 Brian Williams.</li>
+          <li><cite>Wolf<ch.apos/>s Bane</cite>;<br/>Illustrations Copyright 1993 Brian Williams.</li>
           <li><cite>The Curse of Naar</cite>;<br/>Illustrations Copyright 1993 Brian Williams.</li>
           <li><cite>The Buccaneers of Shadaki</cite>;<br/>Illustrations Copyright 1994 Brian Williams.</li>
-          <li><cite>Mydnight&apos;s Hero</cite>;<br/>Illustrations Copyright 1995 Brian Williams.</li>
+          <li><cite>Mydnight<ch.apos/>s Hero</cite>;<br/>Illustrations Copyright 1995 Brian Williams.</li>
           <li><cite>Rune War</cite>;<br/>Illustrations Copyright 1995 Brian Williams.</li>
           <li><cite>Trail of the Wolf</cite>;<br/>Illustrations Copyright 1997 Brian Williams.</li>
           <li><cite>The Fall of Blood Mountain</cite>;<br/>Illustrations Copyright 1997 Brian Williams.</li>
@@ -205,7 +205,7 @@
           <li><cite>Freeway Warrior: California Countdown</cite>;<br/>Illustrations Copyright 1989 Brian Williams.</li>
          </ul>
 
-         <p>The works distributed under the collective title <cite>Lone Wolf Club Newsletters</cite>&emdash;which are composed of, in part, the above named works&emdash;will also be distributed under the terms of this License.</p>
+         <p>The works distributed under the collective title <cite>Lone Wolf Club Newsletters</cite><ch.emdash/>which are composed of, in part, the above named works<ch.emdash/>will also be distributed under the terms of this License.</p>
 
          <p><quote>Internet Editions</quote> shall not refer to any other works by the Authors, nor any other illustrations by the Illustrators unless the Authors or Illustrators amend this License. <quote>Internet Editions</quote> shall refer solely to the text and illustrations of the above works when made available through the Internet.</p>
         </data>
@@ -308,7 +308,7 @@
         <meta><title>3.1</title></meta>
 
         <data>
-         <p>If any of the Authors or the Illustrators revokes your rights granted under this License, you agree to destroy all copies of the Authors&apos; or Illustrators&apos; work which is a part of the Internet Editions of which you have control within fourteen calendar days of receiving notification in any form.</p>
+         <p>If any of the Authors or the Illustrators revokes your rights granted under this License, you agree to destroy all copies of the Authors<ch.apos/> or Illustrators<ch.apos/> work which is a part of the Internet Editions of which you have control within fourteen calendar days of receiving notification in any form.</p>
         </data>
        </section>
 
