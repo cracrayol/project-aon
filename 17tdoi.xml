@@ -16,6 +16,9 @@
 $Id$
 
 $Log$
+Revision 1.15  2006/05/20 00:04:07  jonathan.blake
+lots of little miscellaneous fixes
+
 Revision 1.14  2006/05/16 23:03:29  jonathan.blake
 More fixes to illustrations and unresolved issues.
 
@@ -71,9 +74,10 @@ Initial Freepository revision - freshly minted from the proofread text
    &inclusion.brian.williams.bio.lw;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2005</year><month>10</month><day>25</day></date>
+  <date class="publication"><year>2006</year><month>5</month><day>19</day></date>
   <description class="blurb">
-    
+   <p>You are Lone Wolf<ch.emdash/>Kai Grand Master of Sommerlund. Far away to the west lies the peninsula of Ixia. It is an icy, desolate wasteland that for 10,000 years has been the domain of Lord Ixiataaga<ch.emdash/>Masterlord of the Dead. Here he reigns supreme over a horde of lost souls, an undead populace who are condemned to an eternity in his service.</p>
+   <p>In <cite>The Deathlord of Ixia</cite>, you must journey to the forbidden city of Xaagon<ch.emdash/>the seat of Lord Ixiataaga<ch.apos/>s dark power<ch.emdash/>and confront him in a life-or-death battle which will test your Grand Master abilities to the limit. Will you overcome and defeat this terrifying entity? Or will you fall victim to his undead legions and the terrible new power they wield?</p>
   </description>
   <description class="publication">
    <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
@@ -105,7 +109,7 @@ Initial Freepository revision - freshly minted from the proofread text
     </meta>
 
     <data>
-     <p class="dedication"></p>
+     <p class="dedication">For Chris Smith</p>
     </data>
    </section>
 
@@ -168,7 +172,7 @@ Initial Freepository revision - freshly minted from the proofread text
      <p>Elsewhere, throughout Northern Magnamund, peace reigns victorious and the peoples of the Free Kingdoms rejoice in the knowledge that the age of the Darklords has finally come to an end. Readily men have exchanged their swords for hoes and their shields for ploughs, and now the only marching they do is along the ruts of their freshly furrowed fields. Few are the watchful eyes that scan the distant horizon in fear of what may appear, although there are still those who maintain their vigilance, for the agents of Naar come in many guises and there are those upon Magnamund who wait quietly in the shadows for the chance to do his evil bidding.</p>
      <p>Already your newfound skills have been tested against Naar<ch.apos/>s agents and you have, on each occasion, acquitted yourself admirably. But your continuing victories against his minions have enraged the Dark God and inflamed his lust for vengeance. Earlier this year you thwarted Naar<ch.apos/>s plans to revive Vashna, the greatest of all the Darklords, whose spirit is trapped deep within the fathomless reaches of the Maakengorge<ch.emdash/>the chasm of doom. Vashna<ch.apos/>s spirit has remained there in uneasy entombment ever since the day, long ago, when he and his army were defeated in battle by King Ulnar I of Sommerlund. Your brave and courageous actions prevented Naar<ch.apos/>s agents from summoning to Magnamund a demoness named Shamath from the Plane of Darkness. This supernatural creature possessed the Deathstaff<ch.emdash/>an artefact of great evil forged by Naar himself<ch.emdash/>with which she could have resurrected Vashna and his army from the Maakengorge. Yet your timely intervention destroyed the <!--ERRTAG-RA-12477-->Shadow Gate<!--/ERRTAG-RA-12477--> through which she was travelling, and by so doing, you imprisoned the demoness Shamath in the limbo which exists between your world and the Plane of Darkness.</p>
      <p>Confident in the belief that you had saved Magnamund from the demoness and the Deathstaff, you returned triumphantly to Sommerlund. Several months later, however, as the year was drawing to a close, Lord Rimoah came unexpectedly to the Kai Monastery seeking an urgent audience. With growing dismay you listened as he relayed ill news<ch.emdash/>the Deathstaff had reappeared in Magnamund. The threat to the peace of your fragile world was greater now than ever before.</p>
-     <p><quote>When you destroyed the <!--ERRTAG-RA-12477-->Shadow Gate<!--/ERRTAG-RA-12477--> <!-- capitalize? --> at Maakengorge, Grand Master,</quote> said Lord Rimoah, as the two of you discussed the matter in the secure privacy of your vault below the Kai Monastery, <quote>you banished Shamath to the void, hopefully for all eternity. Yet, alas, the weapon she possessed did not go with her. Naar<ch.apos/>s accursed Deathstaff has since returned to this world through another <!--ERRTAG-RA-12477-->Shadow Gate<!--/ERRTAG-RA-12477-->, one that lies far away to the west, on a remote and icy peninsula that is called Ixia.</quote></p>
+     <p><quote>When you destroyed the <!--ERRTAG-RA-12477-->Shadow Gate<!--/ERRTAG-RA-12477--> at Maakengorge, Grand Master,</quote> said Lord Rimoah, as the two of you discussed the matter in the secure privacy of your vault below the Kai Monastery, <quote>you banished Shamath to the void, hopefully for all eternity. Yet, alas, the weapon she possessed did not go with her. Naar<ch.apos/>s accursed Deathstaff has since returned to this world through another <!--ERRTAG-RA-12477-->Shadow Gate<!--/ERRTAG-RA-12477-->, one that lies far away to the west, on a remote and icy peninsula that is called Ixia.</quote></p>
      <p><quote>My lord, do you wish me to go to Ixia<ch.emdash/>to find and destroy the Deathstaff before another of Naar<ch.apos/>s agents can use it against us? Is this why you have come seeking my help?</quote> you replied, expecting Rimoah to affirm your assumption.</p>
      <p><quote>Partly so, my lord,</quote> he said, holding you with his steel-grey eyes, <quote>but I fear that already it has fallen into the hands of an enemy<ch.emdash/>and one who is deadlier than even the demoness Shamath. What do you know of the Deathlord of Ixia?</quote></p>
      <p>You faintly remembered having heard this name before but were unable to recall any detail. Lord Rimoah, seeing that you were unable to give an answer, obliged with an impromptu history lesson:</p>
@@ -195,6 +199,9 @@ Initial Freepository revision - freshly minted from the proofread text
      <footnote id="gamerulz-1-foot" idref="gamerulz-1">
       <p>The Discipline bonuses mentioned do not affect your permanent scores. If you have completed previous adventures, the Disciplines that you have mastered may still be beneficial. See the Grand Master Rules section of the <a href="&link.rh;">Rules Handbook</a> for details.</p>
      </footnote>
+     <footnote id="gamerulz-2-foot" idref="gamerulz-2">
+      <p>Note that this list now includes the Silver Bracers and Korlinium Scabbard. These items are restored to the list of permissible items from the Kai and Magnakai series again in this book after being omitted beginning in <bookref book="14tcok" section="gamerulz">The Captives of Kaag</bookref>. Presumably, therefore, it should be permissible to leave the Silver Bracers and Korlinium Scabbard in safekeeping at the monastery during the previous books and retrieve them at the outset of this adventure.</p>
+     </footnote>
     </footnotes>
 
     <data>
@@ -204,7 +211,7 @@ Initial Freepository revision - freshly minted from the proofread text
      <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 30 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a> (i.e., if your pencil fell on the number 7 on the <a idref="random">Random Number Table</a> you would have 37 <typ class="attribute">ENDURANCE</typ> points).</p>
      <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never rise above the number you have when you start an adventure.</p>
      <p>If you have successfully completed any of the previous adventures in the Lone Wolf series (Books 1<ch.endash/>15), you can carry your current scores of <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points over to Book 17. These scores may include Weaponmastery, Curing, and Psi-surge bonuses obtained upon completion of Lone Wolf Kai (Books 1<ch.endash/>5) or Magnakai (Books 6<ch.endash/>12) adventures.<footref id="gamerulz-1" idref="gamerulz-1-foot"/> Only if you have completed these previous adventures will you benefit from the appropriate bonuses in the course of the Grand Master series. You may also carry over any Weapons and Backpack Items you had in your possession at the end of your last adventure, and these should be entered on your new Grand Master <a idref="action">Action Chart</a> (you are still limited to two Weapons, but you may now carry up to ten Backpack Items).</p>
-     <p>However, only the following Special Items may be carried over from the Lone Wolf Kai (Books 1<ch.endash/>5) and Magnakai (Books 6<ch.endash/>12) series to the Lone Wolf Grand Master series (Books 13-onwards):</p>
+     <p>However, only the following Special Items may be carried over from the Lone Wolf Kai (Books 1<ch.endash/>5) and Magnakai (Books 6<ch.endash/>12) series to the Lone Wolf Grand Master series (Books 13-onwards):<footref id="gamerulz-2" idref="gamerulz-2-foot"/></p>
      <ul>
       <li>Crystal Star Pendant</li>
       <li>Sommerswerd</li>
@@ -373,9 +380,9 @@ Initial Freepository revision - freshly minted from the proofread text
         </data>
        </section>
 
-       <p>If you successfully complete the mission as set in this, the fifth of the Lone Wolf Grand Master series, you may add a further Grand Master Discipline of your choice to your <a idref="action">Action Chart</a> in <a href="&link.18dotd;">Book 17</a>.</p>
+       <p>If you successfully complete the mission as set in this, the fifth of the Lone Wolf Grand Master series, you may add a further Grand Master Discipline of your choice to your <a idref="action">Action Chart</a> in <bookref book="18dotd">Book 18</bookref>.</p>
 
-       <p>For every Grand Master Discipline you possess, in excess of the original four Disciplines you begin with, you may add 1 point to your basic <typ class="attribute">COMBAT SKILL</typ> score and 2 points to your basic <typ class="attribute">ENDURANCE</typ> points score. These bonus points, together with your extra Grand Master Discipline(s), your original four Grand Master Disciplines, and any Special Items that you have found and been able to keep during your adventures, may then be carried over and used in the next Grand Master adventure, which is called <a href="&link.18dotd;"><cite>Dawn of the Dragons</cite>.</a></p>
+       <p>For every Grand Master Discipline you possess, in excess of the original four Disciplines you begin with, you may add 1 point to your basic <typ class="attribute">COMBAT SKILL</typ> score and 2 points to your basic <typ class="attribute">ENDURANCE</typ> points score. These bonus points, together with your extra Grand Master Discipline(s), your original four Grand Master Disciplines, and any Special Items that you have found and been able to keep during your adventures, may then be carried over and used in the next Grand Master adventure, which is called <bookref book="18dotd"><cite>Dawn of the Dragons</cite>.</bookref></p>
       </data>
      </section>
 
@@ -638,7 +645,7 @@ Initial Freepository revision - freshly minted from the proofread text
           <dt>Assimilance</dt>
            <dd><p>Sun Lords who possess this skill are able to cause the outline of their bodies to become blurred and indistinct. By so doing, they can greatly increase their chances of avoiding magical and/or non-magical missiles directed at them.</p></dd>
           <dt>Grand Huntmastery</dt>
-           <dd><p>Kai Sun Lords with this skill are able to see, with acute accuracy, light in the infrared spectrum, ie. they can see complex patterns generated by heat in near or total darkness. They can also see light in the ultraviolet spectrum.</p></dd>
+           <dd><p>Kai Sun Lords with this skill are able to see, with acute accuracy, light in the infrared spectrum, <!--ERRTAG-RE-58448-->i.e. they<!--/ERRTAG-RE-58448--> can see complex patterns generated by heat in near or total darkness. They can also see light in the ultraviolet spectrum.</p></dd>
           <dt>Kai-surge</dt>
            <dd><p>Sun Lords who possess mastery of this Discipline are able to launch a Kai-blast<ch.emdash/>a pulse of intense psychic energy which is capable of affecting both psychically active and inactive enemies. This form of psychic attack is very effective, more so than a usual Kai-surge, Psi-surge or Mindblast. It can cause an enemy to lose between 2 and 18 <typ class="attribute">ENDURANCE</typ> points in one attack. A Kai Sun Lord using Kai-blast determines the damage inflicted on an enemy by picking two numbers from the <a idref="random">Random Number Table</a>. These numbers should be added together (a <quote>0</quote> = 1) and the resultant total equals the damage inflicted. However, use of a Kai-blast will reduce a Sun Lord<ch.apos/>s <typ class="attribute">ENDURANCE</typ> points total by 4. It cannot be used in conjunction with any other form of psychic attack.</p></dd>
           <dt>Telegnosis</dt>
@@ -1108,7 +1115,7 @@ Initial Freepository revision - freshly minted from the proofread text
       <meta><title>34</title></meta>
 
       <data>
-       <p>You drag the bony bodies of the two undead Drakkarim guards into the chamber and close the door before continuing your exploration. You proceed warily, moving like a shadow through a series of dingy, ice-caked corridors that wend their way deeper into the bowels of this vast alien vessel. You encounter a confusing maze of empty holds where the walls are braced with gleaming crystal girders, and pass through countless low-ceilinged chambers that despite the biting chill, reek of death and decay. Eventually you come to a junction where the narrow corridor splits in two directions</p>
+       <p>You drag the bony bodies of the two undead Drakkarim guards into the chamber and close the door before continuing your exploration. You proceed warily, moving like a shadow through a series of dingy, ice-caked corridors that wend their way deeper into the bowels of this vast alien vessel. You encounter a confusing maze of empty holds where the walls are braced with gleaming crystal girders, and pass through countless low-ceilinged chambers that despite the biting chill, reek of death and decay. Eventually you come to a junction where the narrow corridor splits in <!--ERRTAG-RE-109630-->two directions.<!--/ERRTAG-RE-109630--></p>
        <choice idref="sect106">If you wish to take the left branch of this corridor, <link-text>turn to 106</link-text>.</choice>
        <choice idref="sect292">If you decide to take the right branch, <link-text>turn to 292</link-text>.</choice>
       </data>
@@ -1920,6 +1927,8 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <data>
        <p>The corridor gradually ascends to a high <!--ERRTAG-RE-184244-->gallery<!--/ERRTAG-RE-184244--> which overlooks a chamber two storeys deep. A dozen undead slaves clad in silvery robes are busy attending to a vast machine constructed of quartz-like crystal and black metal. Through holes in its side they probe and manipulate long glassy rods which reach into the machine<ch.apos/>s core. From these holes there radiates a brilliant, ghostly light.</p>
+       <illref idref="bw-small6" class="html"/>
+       <illref idref="bw-small6" class="pdf"/>
        <choice idref="sect313">If you possess Grand Huntmastery, and have attained the Kai rank of <!--ERRTAG-RE-184763-->Sun Lord or higher<!--/ERRTAG-RE-184763-->, <link-text>turn to 313</link-text>.</choice>
        <choice idref="sect127">If you do not possess this skill, or if you have yet to attain this level of Kai Mastery, <link-text>turn to 127</link-text>.</choice>
       </data>
@@ -2190,7 +2199,7 @@ Initial Freepository revision - freshly minted from the proofread text
       <data>
        <p>The ghoulish creatures shriek with glee as they fall upon you, like starving vultures upon a corpse.</p>
        <combat><enemy>3 Cabalah</enemy><enemy-attribute class="combatskill">56</enemy-attribute><enemy-attribute class="endurance">54</enemy-attribute></combat>
-       <p>These undead creatures are Immune to <!--ERRTAG-RE-210163-->Mindblast, Psi-surge, and Kai-surge<!--/ERRTAG-RE-210163-->.</p>
+       <p>These undead creatures are immune to <!--ERRTAG-RE-210163-->Mindblast, Psi-surge, and Kai-surge<!--/ERRTAG-RE-210163-->.</p>
        <choice idref="sect41">You may evade this combat after four rounds by <link-text>turning to 41</link-text>.</choice>
        <choice idref="sect293">If you win the fight, <link-text>turn to 293</link-text>.</choice>
       </data>
@@ -2704,7 +2713,7 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <data>
        <p>Using your mastery of the Kai mind Discipline of Grand Nexus, you focus on the hole and attempt to will the lock open.</p>
-       <p>Pick a number from the <a idref="random">Random Number Table</a>. For every level of <!--ERRTAG-RE-260752-->Kai Mastery<!--/ERRTAG-RE-260752--> you have attained, above that of Kai Grand Guardian, add 1 to the number you have picked</p>
+       <p>Pick a number from the <a idref="random">Random Number Table</a>. For every level of <!--ERRTAG-RE-260752-->Kai Mastery<!--/ERRTAG-RE-260752--> you have attained, above that of Kai Grand Guardian, add 1 to the number you <!--ERRTAG-RE-264501-->have picked.<!--/ERRTAG-RE-264501--></p>
        <choice idref="sect328">If your total is now 7 or less, <link-text>turn to 328</link-text>.</choice>
        <choice idref="sect203">If it is 8 or more, <link-text>turn to 203</link-text>.</choice>
       </data>
@@ -2748,9 +2757,15 @@ Initial Freepository revision - freshly minted from the proofread text
      <section class="numbered" id="sect179">
       <meta><title>179</title></meta>
 
+      <footnotes>
+       <footnote id="sect179-1-foot" idref="sect179-1">
+        <p>It is unclear whether Grand Huntmastery<ch.emdash/>or the Magnakai Discipline of Huntmastery<ch.emdash/>should help you find food in this situation.</p>
+     </footnote>
+      </footnotes>
+
       <data>
        <p>After an hour spent burrowing with your bare hands through the snow and ice, you eventually break through to the surface. To your disappointment you discover that the blizzard is still raging, and much of the pass has now been filled by the avalanche. No trace remains of the circle of rocks that had offered you hope of protection from the cruel elements.</p>
-       <p>With the storm showing no sign of abating, you dig a hollow in the snow and curl up in it with your back to the howling wind. While you wait out the storm in this makeshift shelter, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
+       <p>With the storm showing no sign of abating, you dig a hollow in the snow and curl up in it with your back to the howling wind. While you wait out the storm in this makeshift shelter, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.<footref id="sect179-1" idref="sect179-1-foot"/></p>
        <choice idref="sect338">To continue, <link-text>turn to 338</link-text>.</choice>
       </data>
      </section>
@@ -4671,13 +4686,12 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>The others nod in silent agreement. <quote>We will do all we can,</quote> replies Lord Ardan, <quote>to speed your passage home.</quote></p>
        <p>The news of your country<ch.apos/>s plight comes as a terrible shock. In Ixia, you have won a great and lasting victory against the forces of Evil, but could the cost be too great? You fear, also, for the lives of your young Kai acolytes. The Second Order are worthy Kai warriors but they are young, their mettle yet to be tested in the furnace-heat of battle. You pray to Kai himself that they be strong enough to resist Naar<ch.apos/>s newest champions, at least until you return.</p>
        <p>The challenge of the long journey <!--ERRTAG-RE-461256-->home and<!--/ERRTAG-RE-461256--> the quest to save the Second Order of the Kai from the deadly wrath of Naar<ch.apos/>s newest champions awaits you in the next Grand Master adventure, entitled:</p>
-       <p>DAWN OF THE DRAGONS</p>
+       <p><bookref book="18dotd"><!--ERRTAG-RE-465248-->Dawn of the Dragons<!--/ERRTAG-RE-465248--></bookref></p>
       </data>
      </section>
     </data>
    </section>
 
-   <!-- Backmatter -->
    <section class="backmatter" id="map">
     <meta><title></title></meta>
 
@@ -4771,7 +4785,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>(<a idref="discplnz">Grand Master Disciplines</a>) Replaced <quote>smell and</quote> with <quote>smell, and</quote> and both occurrences of <quote>(ie,</quote> with <quote>(i.e.</quote>.<!--ERRTAG-RE-27110-ITEM--> Replaced <quote>gods Kai and Ishir</quote> with <quote>Gods Kai and Ishir</quote>.<!--/ERRTAG-RE-27110-ITEM--><!--ERRTAG-RE-33045-ITEM--> Replaced <quote>Magi-Magic</quote> with <quote>Magi-magic</quote>.<!--/ERRTAG-RE-33045-ITEM--><!--ERRTAG-RE-34720-ITEM--> Replaced <quote>artifacts</quote> with <quote>artefacts</quote>.<!--/ERRTAG-RE-34720-ITEM--></p>
        <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>Magador you</quote> with <quote>Magador, you</quote>, <quote>eg Gold</quote> with <quote>e.g. Gold</quote>, <quote>map of the area</quote> with <quote>map of the the Maakengorge and surrounding territories</quote>, all occurrences of <quote>arrow</quote> with <quote>Arrow</quote>, all occurrences of <quote>bow</quote> with <quote>Bow</quote>, and <quote>adds 3 points</quote> with <quote>adds 5 points</quote>. Added a section about Gold Crowns which reads <quote>The currency of Magador is the Gold Crown. These are always carried in the Belt Pouch. It will hold a maximum of fifty Crowns.</quote><!--ERRTAG-RE-35809-ITEM--> Replaced <quote>safe-keeping</quote> with <quote>safekeeping</quote>.<!--/ERRTAG-RE-35809-ITEM--><!--ERRTAG-DE-35140-ITEM--> Deleted <quote>(see the inside front cover of this book)</quote>.<!--/ERRTAG-DE-35140-ITEM--><!--ERRTAG-RE-40946-ITEM--> Replaced <quote>(eg Gold Dagger</quote> with <quote>(e.g. Gold Dagger</quote>.<!--/ERRTAG-RE-40946-ITEM--><!--ERRTAG-RE-36319-ITEM--> Replaced <quote>arrows</quote> with <quote>Arrows</quote>.<!--/ERRTAG-RE-36319-ITEM--><!--ERRTAG-RA-39864-ITEM--> Replaced all occurrences of <quote>quiver</quote> with <quote>Quiver</quote>.<!--/ERRTAG-RA-39864-ITEM--><!--ERRTAG-RE-37113-ITEM--> Replaced <quote>BROADSWORD</quote> with <quote>Broadsword</quote>.<!--/ERRTAG-RE-37113-ITEM--><!--ERRTAG-RE-37196-ITEM--> Replaced <quote>BOW</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-37196-ITEM--><!--ERRTAG-RE-37292-ITEM--> Replaced <quote>QUIVER</quote> with <quote>Quiver</quote>.<!--/ERRTAG-RE-37292-ITEM--><!--ERRTAG-RE-37805-ITEM--> Replaced <quote>DAGGER</quote> with <quote>Dagger</quote>.<!--/ERRTAG-RE-37805-ITEM--><!--ERRTAG-RE-38196-ITEM--> Replaced <quote>SWORD</quote> with <quote>Sword</quote>.<!--/ERRTAG-RE-38196-ITEM--><!--ERRTAG-RE-38293-ITEM--> Replaced <quote>MEALS</quote> with <quote>Meals</quote>.<!--/ERRTAG-RE-38293-ITEM--><!--ERRTAG-RE-38729-ITEM--> Replaced <quote>ROPE</quote> with <quote>Rope</quote>.<!--/ERRTAG-RE-38729-ITEM--><!--ERRTAG-RE-39131-ITEM--> Replaced <quote>POTION OF LAUMSPUR</quote> with <quote>Potion of Laumspur</quote>.<!--/ERRTAG-RE-39131-ITEM--><!--ERRTAG-RE-39691-ITEM--> Replaced <quote>AXE</quote> with <quote>Axe</quote>.<!--/ERRTAG-RE-39691-ITEM--></p>
        <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed <quote>on the inside back cover of this book</quote>. Replaced <quote>on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>, <quote>Lone Wolf (<typ class="attribute">COMBAT SKILL</typ> 32)</quote> with <quote>Lone Wolf (<typ class="attribute">COMBAT SKILL</typ> 27)</quote>, and <quote>adds 3 points</quote> with <quote>adds 8 points</quote>.</p>
-       <p>(<a idref="imprvdsc">Improved Grand Master Disciplines</a>) Replaced both occurrences of <quote>Kai-Blast</quote> with <quote>Kai-blast</quote>. Replaced <quote>surface, eg:</quote> with <quote>surfaces, e.g.</quote>, <quote>Kai Surge</quote> with <quote>Kai-surge</quote>, all occurrences of <quote>arrow</quote> with <quote>Arrow</quote>, both occurrences of <quote>arrow, or arrow-like</quote> with <quote>Arrow or Arrow-like</quote>, <quote>lava and</quote> with <quote>lava, and</quote>, and <quote>body-weight</quote> with <quote>body weight</quote>. Added <quote>(7 Disciplines)</quote> after <quote>Sun Lord</quote>. Removed the quotation marks around <quote>Lightning Hand</quote>.<!--ERRTAG-RE-57185-ITEM--> Replaced <quote>Magi-Magic</quote> with <quote>Magi-magic</quote>.<!--/ERRTAG-RE-57185-ITEM--><!--ERRTAG-RE-59140-ITEM--> Replaced <quote>ie. lightning</quote> with <quote>i.e. lightning</quote>.<!--/ERRTAG-RE-59140-ITEM--><!--ERRTAG-RE-60783-ITEM--> Replaced <quote><ch.lsquot/>Improved Grand Master Disciplines<ch.rsquot/></quote> with <quote><cite>Improved Grand Master Disciplines</cite></quote>.<!--/ERRTAG-RE-60783-ITEM--><!--ERRTAG-RE-53768-ITEM--> Replaced <quote>Brotherhood spells</quote> with <quote>Brotherhood Spells</quote>.<!--/ERRTAG-RE-53768-ITEM--><!--ERRTAG-RE-58099-ITEM--> Replaced <quote>Brotherhood spell <ch.lsquot/>Lightning Hand<ch.rsquot/></quote> with <quote>Brotherhood Spell <spell>Lightning Hand</spell></quote>.<!--/ERRTAG-RE-58099-ITEM--><!--ERRTAG-RE-60406-ITEM--> Replaced <quote>Brotherhood spells</quote> with <quote>Brotherhood Spells</quote>.<!--/ERRTAG-RE-60406-ITEM--></p>
+       <p>(<a idref="imprvdsc">Improved Grand Master Disciplines</a>) Replaced both occurrences of <quote>Kai-Blast</quote> with <quote>Kai-blast</quote>. Replaced <quote>surface, eg:</quote> with <quote>surfaces, e.g.</quote>, <quote>Kai Surge</quote> with <quote>Kai-surge</quote>, all occurrences of <quote>arrow</quote> with <quote>Arrow</quote>, both occurrences of <quote>arrow, or arrow-like</quote> with <quote>Arrow or Arrow-like</quote>, <quote>lava and</quote> with <quote>lava, and</quote>, and <quote>body-weight</quote> with <quote>body weight</quote>. Added <quote>(7 Disciplines)</quote> after <quote>Sun Lord</quote>. Removed the quotation marks around <quote>Lightning Hand</quote>.<!--ERRTAG-RE-57185-ITEM--> Replaced <quote>Magi-Magic</quote> with <quote>Magi-magic</quote>.<!--/ERRTAG-RE-57185-ITEM--><!--ERRTAG-RE-59140-ITEM--> Replaced <quote>ie. lightning</quote> with <quote>i.e. lightning</quote>.<!--/ERRTAG-RE-59140-ITEM--><!--ERRTAG-RE-60783-ITEM--> Replaced <quote><ch.lsquot/>Improved Grand Master Disciplines<ch.rsquot/></quote> with <quote><cite>Improved Grand Master Disciplines</cite></quote>.<!--/ERRTAG-RE-60783-ITEM--><!--ERRTAG-RE-53768-ITEM--> Replaced <quote>Brotherhood spells</quote> with <quote>Brotherhood Spells</quote>.<!--/ERRTAG-RE-53768-ITEM--><!--ERRTAG-RE-58099-ITEM--> Replaced <quote>Brotherhood spell <ch.lsquot/>Lightning Hand<ch.rsquot/></quote> with <quote>Brotherhood Spell <spell>Lightning Hand</spell></quote>.<!--/ERRTAG-RE-58099-ITEM--><!--ERRTAG-RE-60406-ITEM--> Replaced <quote>Brotherhood spells</quote> with <quote>Brotherhood Spells</quote>.<!--/ERRTAG-RE-60406-ITEM--><!--ERRTAG-RE-58448-ITEM--> Replaced <quote>ie. they</quote> with <quote>i.e. they</quote>.<!--/ERRTAG-RE-58448-ITEM--></p>
        <p><cite>Lone Wolf Club Newsletter 24</cite> states: <quote>In Lone Wolf 16, the Improved Discipline of Kai-surge (at rank of Sun Lord) is not fully explained (a sentence is missing from the paragraph). A Kai Sun Lord using Kai Blast [sic] determines the damage inflicted on an enemy by picking two numbers from the <a idref="random">Random Number Table</a>. These numbers should be added together (a <ch.apos/>0<ch.apos/> = 1) and the resultant total equals the damage inflicted.</quote>. This missing information has been added to the text.</p>
        <p>(<a idref="kaiwisdm">Grand Master<ch.apos/>s Wisdom</a>) Moved this section of the book to its normal position after <a idref="imprvdsc">Improved Grand Master Disciplines</a>.</p>
        <p>(<a idref="sect1">1</a>)<!--ERRTAG-RE-63440-ITEM--> Replaced <quote>Kai aspirants</quote> with <quote>Kai Aspirants</quote>.<!--/ERRTAG-RE-63440-ITEM--><!--ERRTAG-RE-63972-ITEM--> Replaced <quote>urges Rimoah,</quote> with <quote>urges Rimoah.</quote>.<!--/ERRTAG-RE-63972-ITEM--><!--ERRTAG-RE-65775-ITEM--> Replaced <quote>iceboat</quote> with <quote>ice-boat</quote>.<!--/ERRTAG-RE-65775-ITEM--><!--ERRTAG-RE-65937-ITEM--> Replaced <quote>seven days the pilot</quote> with <quote>seven days, the pilot</quote>.<!--/ERRTAG-RE-65937-ITEM--><!--ERRTAG-RE-65461-ITEM--> Replaced <quote>pack ice</quote> with <quote>pack-ice</quote>.<!--/ERRTAG-RE-65461-ITEM--></p>
@@ -4795,6 +4809,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>(<a idref="sect29">29</a>)<!--ERRTAG-RE-100780-ITEM--> Replaced <quote>spell<ch.emdash/><spell>Slow Fall</spell><ch.emdash/>and</quote> with <quote>spell <spell>Slow Fall</spell> and</quote>.<!--/ERRTAG-RE-100780-ITEM--></p>
        <p>(<a idref="sect30">30</a>)<!--ERRTAG-RE-101182-ITEM--> Replaced <quote>Kai camouflage</quote> with <quote>Kai Camouflage</quote>.<!--/ERRTAG-RE-101182-ITEM--></p>
        <p>(<a idref="sect32">32</a>)<!--ERRTAG-RA-103910-ITEM--> Replaced all occurrences of <quote>free-standing</quote> with <quote>freestanding</quote>.<!--/ERRTAG-RA-103910-ITEM--></p>
+<p>(<a idref="sect34">34</a>)<!--ERRTAG-RE-109630-ITEM--> Replaced <quote>two directions</quote> with <quote>two directions.</quote>.<!--/ERRTAG-RE-109630-ITEM--></p>
        <p>(<a idref="sect36">36</a>)<!--ERRTAG-RE-107138-ITEM--> Replaced <quote>zigzaging</quote> with <quote>zigzagging</quote>.<!--/ERRTAG-RE-107138-ITEM--><!--ERRTAG-RE-108002-ITEM--> Replaced <quote>crystal spire</quote> with <quote>Crystal Spire</quote>.<!--/ERRTAG-RE-108002-ITEM--></p>
        <p>(<a idref="sect38">38</a>)<!--ERRTAG-RE-109561-ITEM--> Replaced <quote>demonlord</quote> with <quote>Demonlord</quote>.<!--/ERRTAG-RE-109561-ITEM--></p>
        <p>(<a idref="sect39">39</a>)<!--ERRTAG-RE-110397-ITEM--> Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.<!--/ERRTAG-RE-110397-ITEM--><!--ERRTAG-RE-111096-ITEM--> Replaced <quote>splutters, <ch.lsquot/>it<ch.apos/>s</quote> with <quote>splutters. <ch.lsquot/>It<ch.apos/>s</quote>.<!--/ERRTAG-RE-111096-ITEM--></p>
@@ -4877,7 +4892,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>(<a idref="sect166">166</a>)<!--ERRTAG-RE-250332-ITEM--> Replaced <quote>me my</quote> with <quote>me, my</quote>.<!--/ERRTAG-RE-250332-ITEM--></p>
        <p>(<a idref="sect167">167</a>)<!--ERRTAG-RE-251910-ITEM--> Replaced <quote>bonuses to your <typ class="attribute">COMBAT SKILL</typ></quote> with <quote>bonuses</quote>.<!--/ERRTAG-RE-251910-ITEM--><!--ERRTAG-RE-253493-ITEM--> Replaced <quote>Mindblast and Kai-surge</quote> with <quote>Mindblast, Psi-surge, and Kai-surge</quote>.<!--/ERRTAG-RE-253493-ITEM--></p>
        <p>(<a idref="sect173">173</a>)<!--ERRTAG-RE-259049-ITEM--> Replaced <quote>crystal spire</quote> with <quote>Crystal Spire</quote>.<!--/ERRTAG-RE-259049-ITEM--></p>
-       <p>(<a idref="sect175">175</a>)<!--ERRTAG-RE-260752-ITEM--> Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.<!--/ERRTAG-RE-260752-ITEM--></p>
+       <p>(<a idref="sect175">175</a>)<!--ERRTAG-RE-260752-ITEM--> Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.<!--/ERRTAG-RE-260752-ITEM--><!--ERRTAG-RE-264501-ITEM--> Replaced <quote>have picked</quote> with <quote>have picked.</quote>.<!--/ERRTAG-RE-264501-ITEM--></p>
        <p>(<a idref="sect176">176</a>)<!--ERRTAG-RE-258103-ITEM--> Replaced <quote>Brotherhood spell<ch.emdash/>Levitation<ch.emdash/>and</quote> with <quote>Brotherhood Spell <spell>Levitation</spell> and</quote>.<!--/ERRTAG-RE-258103-ITEM--><!--ERRTAG-RE-261529-ITEM--> Replaced <quote>chaos-creatures</quote> with <quote>Chaos-creatures</quote>.<!--/ERRTAG-RE-261529-ITEM--></p>
        <p>(<a idref="sect178">178</a>)<!--ERRTAG-RE-265009-ITEM--> Replaced <quote>crystal spire</quote> with <quote>Crystal Spire</quote>.<!--/ERRTAG-RE-265009-ITEM--></p>
        <p>(<a idref="sect180">180</a>)<!--ERRTAG-RE-265312-ITEM--> Replaced <quote>sixth sense</quote> with <quote>Sixth Sense</quote>.<!--/ERRTAG-RE-265312-ITEM--><!--ERRTAG-RE-265801-ITEM--> Replaced <quote>Special Item, do not</quote> with <quote>Special Item, or do not</quote>.<!--/ERRTAG-RE-265801-ITEM--></p>
@@ -4973,9 +4988,9 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>(<a idref="sect340">340</a>)<!--ERRTAG-RE-449135-ITEM--> Replaced <quote>main mast</quote> with <quote>mainmast</quote>.<!--/ERRTAG-RE-449135-ITEM--> Reduced the illustration number from XX to XIX. (see erratum for <a idref="sect69">Section 69</a>)</p>
        <p>(<a idref="sect341">341</a>)<!--ERRTAG-RE-449754-ITEM--> Replaced <quote>demonlord<ch.apos/>s</quote> with <quote>Demonlord<ch.apos/>s</quote>.<!--/ERRTAG-RE-449754-ITEM--><!--ERRTAG-RE-450504-ITEM--> Replaced <quote>If, at any time during this fight, you reduce Tagazin<ch.apos/>s <typ class="attribute">ENDURANCE</typ> points score to 25 or less</quote> with <quote>If you reduce Tagazin<ch.apos/>s <typ class="attribute">ENDURANCE</typ> points score to 25 or less at any time during this fight</quote>.<!--/ERRTAG-RE-450504-ITEM--></p>
        <p>(<a idref="sect343">343</a>)<!--ERRTAG-RE-452103-ITEM--> Replaced <quote>by huge frozen fountain</quote> with <quote>by a huge frozen fountain</quote>.<!--/ERRTAG-RE-452103-ITEM--><!--ERRTAG-RE-452409-ITEM--> Replaced <quote>Lord, or higher</quote> with <quote>Lord or higher</quote>.<!--/ERRTAG-RE-452409-ITEM--><!--ERRTAG-RE-454134-ITEM--> Replaced <quote>crystal spire</quote> with <quote>Crystal Spire</quote>.<!--/ERRTAG-RE-454134-ITEM--></p>
-       <p>(<a idref="sect346">346</a>)<!--ERRTAG-RE-454756-ITEM--> Replaced <quote>Crack!</quote> with <quote>crack!</quote>.<!--/ERRTAG-RE-454756-ITEM--></p>
+       <p>(<a idref="sect346">346</a>)<!--ERRTAG-RE-454756-ITEM--> Replaced <quote>Crack!</quote> with <quote><onomatopoeia>crack!</onomatopoeia></quote>.<!--/ERRTAG-RE-454756-ITEM--></p>
        <p>(<a idref="sect347">347</a>)<!--ERRTAG-RE-455826-ITEM--> Replaced <quote>demonlord</quote> with <quote>Demonlord</quote>.<!--/ERRTAG-RE-455826-ITEM--> Reduced the illustration number from XXI to XX. (see erratum for <a idref="sect69">Section 69</a>)</p>
-       <p>(<a idref="sect350">350</a>)<!--ERRTAG-RE-459748-ITEM--> Replaced <quote>Ardan, <ch.lsquot/>Is</quote> with <quote>Ardan. <ch.lsquot/>Is</quote>.<!--/ERRTAG-RE-459748-ITEM--><!--ERRTAG-RE-460493-ITEM--> Replaced <quote>county</quote> with <quote>country</quote>.<!--/ERRTAG-RE-460493-ITEM--><!--ERRTAG-RE-461256-ITEM--> Replaced <quote>home, and</quote> with <quote>home and</quote>.<!--/ERRTAG-RE-461256-ITEM--></p>
+       <p>(<a idref="sect350">350</a>)<!--ERRTAG-RE-459748-ITEM--> Replaced <quote>Ardan, <ch.lsquot/>Is</quote> with <quote>Ardan. <ch.lsquot/>Is</quote>.<!--/ERRTAG-RE-459748-ITEM--><!--ERRTAG-RE-460493-ITEM--> Replaced <quote>county</quote> with <quote>country</quote>.<!--/ERRTAG-RE-460493-ITEM--><!--ERRTAG-RE-461256-ITEM--> Replaced <quote>home, and</quote> with <quote>home and</quote>.<!--/ERRTAG-RE-461256-ITEM--><!--ERRTAG-RE-465248-ITEM--> Replaced <quote>DAWN OF THE DRAGONS</quote> with <quote>Dawn of the Dragons</quote>.<!--/ERRTAG-RE-465248-ITEM--></p>
       </data>
      </section>
     </data>
@@ -4986,12 +5001,13 @@ Initial Freepository revision - freshly minted from the proofread text
 
     <data>
      <p>(<a idref="gamerulz">The Game Rules</a>) The Discipline bonuses mentioned do not affect your permanent scores. If you have completed previous adventures, the Disciplines that you have mastered may still be beneficial. See the Grand Master Rules section of the <a href="&link.rh;">Rules Handbook</a> for details.</p>
-     <p>(<a idref="gamerulz">The Game Rules</a>) Note that this list is not identical to the one used in <cite><a href="&link.13tplor;">The Plague Lords of Ruel</a></cite>: this list is missing the Silver Bracers and Korlinium Scabbard. These items are restored to the list of permissible items from the Kai and Magnakai series again in <cite><a href="&link.17tdoi;">The Deathlord of Ixia</a></cite>. Presumably, therefore, it should be permissible to leave the Silver Bracers and Korlinium Scabbard in safekeeping at the monastery during the intervening books and retrieve them at the outset of <cite><a href="&link.17tdoi;">The Deathlord of Ixia</a></cite>.</p>
+     <p>(<a idref="gamerulz">The Game Rules</a>) Note that this list now includes the Silver Bracers and Korlinium Scabbard. These items are restored to the list of permissible items from the Kai and Magnakai series again in this book after being omitted beginning in <bookref book="14tcok" section="gamerulz">The Captives of Kaag</bookref>. Presumably, therefore, it should be permissible to leave the Silver Bracers and Korlinium Scabbard in safekeeping at the monastery during the previous books and retrieve them at the outset of this adventure.</p>
      <p>(<a idref="discplnz">Grand Master Disciplines</a>) The rules of the books in the Magnakai series (6<ch.endash/>12) and the fact that the <quote>rank of Kai Grand Defender<ch.ellips/> means you are skilled in two<ch.ellips/> weapons</quote> imply that for each book that you complete of the Grand Master series (13<ch.endash/>20), you will gain mastery of an additional Kai weapon. For example, if you complete <cite>The Plague Lords of Ruel</cite> and have the Grand Master Discipline of Grand Weaponmastery at the beginning of the next book, you can choose an additional Weapon from the list to have Mastery of.</p>
      <p>(<a idref="imprvdsc">Improved Grand Master Disciplines</a>) The <spell>Strength</spell> spell is, in practice, also used in armed combat contrary to what is indicated here.</p>
      <p>(<a idref="sect10">10</a>) This is the correct answer to the crystal dais grid in <a idref="sect69">Section 69</a>.</p>
      <p>(<a idref="sect96">96</a>) Kajarda may be undead.</p>
      <p>(<a idref="sect125">125</a>) Kajarda may be undead.</p>
+     <p>(<a idref="sect179">179</a>) It is unclear whether Grand Huntmastery<ch.emdash/>or the Magnakai Discipline of Huntmastery<ch.emdash/>should help you find food in this situation.</p>
      <p>(<a idref="sect287">287</a>) Kajarda may be undead.</p>
     </data>
    </section>
@@ -5018,7 +5034,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <illustration id="bw-ill2" class="float">
         <meta>
          <creator>Brian Williams</creator>
-         <description>Six large, spindly-limbed black insectoids, each with a ghoulish head ...</description>
+         <description>Six large, spindly-limbed black insectoids, each with a ghoulish head<ch.ellips/></description>
         </meta>
         <instance class="html" src="ill2.gif" width="386" height="571"/>
         <instance class="pdf" src="ill2.pdf" width="386" height="571"/>
@@ -5054,7 +5070,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <illustration id="bw-ill6" class="float">
         <meta>
          <creator>Brian Williams</creator>
-         <description>The creature's body is a mass of slimy tentacles, tipped with venomous claws.</description>
+         <description>The creature<ch.apos/>s body is a mass of slimy tentacles, tipped with venomous claws.</description>
         </meta>
         <instance class="html" src="ill6.gif" width="386" height="585"/>
         <instance class="pdf" src="ill6.pdf" width="386" height="585"/>
@@ -5144,7 +5160,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <illustration id="bw-ill16" class="float">
         <meta>
          <creator>Brian Williams</creator>
-         <description>The Lencian's sword is corroded by the creature's foul blood.</description>
+         <description>The Lencian<ch.apos/>s sword is corroded by the creature<ch.apos/>s foul blood.</description>
         </meta>
         <instance class="html" src="ill16.gif" width="386" height="585"/>
         <instance class="pdf" src="ill16.pdf" width="386" height="585"/>
@@ -5206,7 +5222,7 @@ Initial Freepository revision - freshly minted from the proofread text
          <meta>
           <creator>JC Alvarez/Jonathan Blake</creator>
          </meta>
-         <instance src="acdscplz.gif" width="386" height="207" class="html" mime-type="image/gif" />
+         <instance src="acdscplz.gif" width="386" height="234" class="html" mime-type="image/gif" />
         </illustration>
 
         <illustration id="acitems" class="inline">
@@ -5328,6 +5344,14 @@ Initial Freepository revision - freshly minted from the proofread text
         <instance class="pdf" src="small13.pdf" width="386" height="109"/>
        </illustration>
 
+       <illustration id="bw-small6" class="inline">
+        <meta>
+         <creator>Brian Williams</creator>
+        </meta>
+        <instance class="html" src="small6.gif" width="386" height="150"/>
+        <instance class="pdf" src="small6.pdf" width="386" height="150"/>
+       </illustration>
+
        <illustration id="bw-small11" class="inline">
         <meta>
          <creator>Brian Williams</creator>
@@ -5366,14 +5390,6 @@ Initial Freepository revision - freshly minted from the proofread text
         </meta>
         <instance class="html" src="small5.gif" width="386" height="150"/>
         <instance class="pdf" src="small5.pdf" width="386" height="150"/>
-       </illustration>
-
-       <illustration id="bw-small6" class="inline">
-        <meta>
-         <creator>Brian Williams</creator>
-        </meta>
-        <instance class="html" src="small6.gif" width="386" height="150"/>
-        <instance class="pdf" src="small6.pdf" width="386" height="150"/>
        </illustration>
 
        <illustration id="bw-small1" class="inline">
