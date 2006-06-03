@@ -16,6 +16,9 @@
 $Id$
 
 $Log$
+Revision 1.17  2006/06/03 00:07:07  jonathan.blake
+Check in of various changes.
+
 Revision 1.16  2006/05/23 23:38:31  jonathan.blake
 More miscellaneous fixes
 
@@ -165,7 +168,7 @@ Initial Freepository revision - freshly minted from the proofread text
 
     <data>
      <p>You are Grand Master Lone Wolf, last of the Kai Lords of Sommerlund and sole survivor of a massacre that wiped out the First Order of your <!--ERRTAG-RE-5555--><ch.eacute/>lite<!--/ERRTAG-RE-5555--> warrior caste.</p>
-     <p>It is the year MS 5077, twenty-seven years since your brave kinsmen perished at the hands of the Darklords of Helgedad. These champions of evil, who were sent forth by <!--ERRTAG-RE-6583-->Naar, the King<!--/ERRTAG-RE-6583--> of the Darkness, to destroy the fertile world of Magnamund, have themselves since been destroyed. You vowed to avenge the murder of the Kai and you kept your pledge, for it was you who brought about their downfall when alone you infiltrated their foul domain<ch.emdash/>the Darklands<ch.emdash/>and caused the destruction of their leader and the seat of his power that was the infernal city of Helgedad.</p>
+     <p>It is the year MS 5077, twenty-seven years since your brave kinsmen perished at the hands of the Darklords of Helgedad. These <!--ERRTAG-RE-7590-->champions of evil who<!--/ERRTAG-RE-7590--> were sent forth by <!--ERRTAG-RE-6583-->Naar, the King<!--/ERRTAG-RE-6583--> of the Darkness, to destroy the fertile world of <!--ERRTAG-RE-7774-->Magnamund have<!--/ERRTAG-RE-7774--> themselves since been destroyed. You vowed to avenge the murder of the Kai and you kept your pledge, for it was you who brought about their downfall when alone you infiltrated their foul domain<ch.emdash/>the Darklands<ch.emdash/>and caused the destruction of their leader and the seat of his power that was the infernal city of Helgedad.</p>
      <p>In the wake of their destruction, chaos befell the Darkland armies who, until then, had been poised to conquer all of Magnamund. Some factions which comprised this huge army, most notably the barbaric Drakkarim, began to fight with the others for control. This disorder quickly escalated into an all-out civil war which allowed the <!--ERRTAG-RA-6514-->Freeland<!--/ERRTAG-RA-6514--> armies of Magnamund time in which to recover and launch a counter-offensive. Their commanders exploited the chaos skilfully and secured a swift and total victory over an enemy far superior in numbers.</p>
      <p>For seven years now peace has reigned in Sommerlund. Under your direction the once-ruined monastery of the Kai has been thoroughly rebuilt and restored to its former glory, and the task of teaching a Second Order of Kai warriors the skills and proud traditions of your ancestors is also well established. The new generation of Kai recruits, all of whom were born during the era of war against the Darklords, possess latent Kai skills and show exceptional promise. These skills will be nurtured and honed to perfection during their time at the Monastery so that they may teach and inspire future generations, thereby ensuring the continued security of your homeland in future years.</p>
      <p>Your attainment of the rank of Kai Grand Master brought with it great rewards. Some, such as the restoration of the Kai and the undying gratitude of your fellow Sommlending, could have been anticipated. Yet there have also been rewards which you could not possibly have foreseen. The discovery that within you lay the potential to develop Kai Disciplines beyond those of the Magnakai, which, until now, were thought to be the ultimate that a Kai Master could aspire to, was truly a revelation. Your discovery has inspired you to set out upon a new and previously unknown path in search of the wisdom and power that no Kai Lord before you has ever possessed. In the name of your creator, the God Kai, and for the greater glory of Sommerlund and the Goddess Ishir, you have vowed to reach the very pinnacle of Kai perfection<ch.emdash/>to attain all of the Grand Master Disciplines and become the first Kai Supreme Master.</p>
@@ -404,7 +407,7 @@ Initial Freepository revision - freshly minted from the proofread text
         <li><p><!--ERRTAG-RE-37113-->Broadsword<!--/ERRTAG-RE-37113--> (Weapons)</p></li>
         <li><p><!--ERRTAG-RE-37196-->Bow<!--/ERRTAG-RE-37196--> (Weapons)</p></li>
         <li>
-         <p><!--ERRTAG-RE-37292-->Quiver<!--/ERRTAG-RE-37292--> (Special Items) This contains six <!--ERRTAG-RE-36319-->Arrows<!--/ERRTAG-RE-36319-->, record them on your Weapons List.</p>
+         <p><!--ERRTAG-RE-37292-->Quiver<!--/ERRTAG-RE-37292--> (Special Items) This contains six <!--ERRTAG-RE-36319-->Arrows<!--/ERRTAG-RE-36319-->, record them on your <a idref="action">Weapons List</a>.</p>
          <illustration class="inline">
           <meta>
            <creator>Brian Williams</creator>
@@ -680,7 +683,7 @@ Initial Freepository revision - freshly minted from the proofread text
           <dt>Grand Pathsmanship</dt>
            <dd><p>Sun Thanes who possess mastery of this Discipline are able to alter the temperature of water by touch. By using this skill they are able to transform water into ice and vice versa. The volume of water affected, and  the duration of effect, both increase as a Grand Master rises in rank.</p></dd>
           <dt>Kai-screen</dt>
-           <dd><p>Sun Thanes who possess this Discipline are able to erect a special psychic defence called <quote>Mindfort</quote>. A Mindfort defence greatly reduces the effects of any psychic shock that would normally paralyse or weaken a lesser mortal.</p></dd>
+           <dd><p>Sun Thanes who possess this Discipline are able to erect a special psychic defence called <spell>Mindfort</spell>. A <spell>Mindfort</spell> defence greatly reduces the effects of any psychic shock that would normally paralyse or weaken a lesser mortal.</p></dd>
           <dt>Kai-alchemy</dt>
            <dd>
             <p>Grand Masters who have reached the rank of Sun Thane are able to use the following <!--ERRTAG-RE-60406-->Brotherhood Spells<!--/ERRTAG-RE-60406-->:</p>
@@ -886,7 +889,7 @@ Initial Freepository revision - freshly minted from the proofread text
       <data>
        <p>You race up the treacherously frosty steps which lead to the open watchtower roof. There you find Prarg hurriedly loading a pantard<ch.emdash/>a heavy iron crossbow which is mounted on a rotating platform.</p>
        <p>Once again the freezing air is filled with cries of fear and chaos. Drawn by these frightful sounds, you run to the stone parapet and look down to see the great black ship come shuddering to a halt beside the harbour wall. Instantly, a horde of undead warriors leap on to the quayside and rush off in pursuit of the routing Lencians. Their eyes burn with an unnatural fire and they howl like demons as mercilessly they hunt down their human prey.</p>
-       <p>Prarg has now loaded the pantard and he calls on you to act as gunner. You oblige by taking hold of the firing mechanism and swivelling the weapon around in search of your first target. Two spring readily to view: the mass of <!--ERRTAG-RE-83432-->undead who are swarming<!--/ERRTAG-RE-83432--> ashore, and a glowing glassy sphere which is mounted on a plinth beside the ship<ch.apos/>s wheelhouse.</p>
+       <p>Prarg has now loaded the pantard and he calls on you to act as gunner. You oblige by taking hold of the firing mechanism and swivelling the weapon around in search of your first target. Two spring readily to view: the mass of <!--ERRTAG-RE-83432-->undead that are swarming<!--/ERRTAG-RE-83432--> ashore, and a glowing glassy sphere which is mounted on a plinth beside the ship<ch.apos/>s wheelhouse.</p>
        <illref idref="bw-ill1" class="html"/>
        <illref idref="bw-ill1" class="pdf"/>
        <choice idref="sect114">If you choose to fire at the undead horde, <link-text>turn to 114</link-text>.</choice>
@@ -930,7 +933,7 @@ Initial Freepository revision - freshly minted from the proofread text
       <data>
        <p>You leave the Ixian ship and go in search of Captain Lanza. You find him with his men by the watchtower<ch.emdash/>they are building a bonfire out of rags and broken bones. A toothless sergeant empties a gallon of <!--ERRTAG-RE-87112-->skark oil<!--/ERRTAG-RE-87112--> on to the heap and a burning torch sets the whole thing ablaze.</p>
        <p>You stride over to Lanza and slap him heartily on the back. <quote>Well fought, Captain. You and your men have brought honour to Lencia this day.</quote></p>
-       <p>Captain Lanza greets your compliment with a sombre face. <quote>Nay, sire,</quote> he says, sadly. <quote>Tis the enemy who<ch.apos/>ve won. The ice-boat is sunk and we cannot sail you to Ixia.</quote></p>
+       <p>Captain Lanza greets your compliment with a sombre face. <quote>Nay, sire,</quote> he says, sadly. <quote><ch.thinspace/><ch.apos/>Tis the enemy who<ch.apos/>ve won. The ice-boat is sunk and we cannot sail you to Ixia.</quote></p>
        <p><quote>We can use the enemy ship, Captain,</quote> you reply. <quote>It is perfect for the task. All I need of you are some provisions and a crew.</quote></p>
        <p>Lanza<ch.apos/>s face brightens. He orders his men to prepare the Ixian ship and within the hour you are ready to set sail.</p>
        <p><quote>May the gods watch over you, Grand Master,</quote> says Prarg, as you bid him and Lanza farewell.</p>
@@ -1386,7 +1389,7 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <data>
        <p>Banedon tosses the box back on to the cluttered shelf and continues with his briefing. Having satisfied himself that you have adequate protection, he turns his attention to your weapons.</p>
-       <p><quote>It concerns me greatly that so little is known of Xaagon the Deathlord<ch.apos/>s city. There is no way of knowing what unholy breed of creature awaits you there. It seems that you can be confident of only one thing, Lone Wolf: whoever or whatever inhabits that dreadful place will surely be hostile to your presence. If you are to defeat the Deathlord of Ixia and his <!--ERRTAG-RE-130610-->minions, you<!--/ERRTAG-RE-130610--> will need a weapon of exceptional power<ch.emdash/>a weapon capable of destroying that which is already dead.</quote></p>
+       <p><quote>It concerns me greatly that so little is known of Xaagon<ch.emdash/>the Deathlord<ch.apos/>s city. There is no way of knowing what unholy breed of creature awaits you there. It seems that you can be confident of only one thing, Lone Wolf: whoever or whatever inhabits that dreadful place will surely be hostile to your presence. If you are to defeat the Deathlord of Ixia and his <!--ERRTAG-RE-130610-->minions, you<!--/ERRTAG-RE-130610--> will need a weapon of exceptional power<ch.emdash/>a weapon capable of destroying that which is already dead.</quote></p>
        <choice idref="sect339">If you possess the Sommerswerd, <link-text>turn to 339</link-text>.</choice>
        <choice idref="sect220">If you do not possess this Special Item, <link-text>turn to 220</link-text>.</choice>
       </data>
@@ -1433,7 +1436,7 @@ Initial Freepository revision - freshly minted from the proofread text
       <meta><title>61</title></meta>
 
       <data>
-       <p>Using the <!--ERRTAG-RE-135239-->Brotherhood Spell <spell>Sense Evil</spell> you<!--/ERRTAG-RE-135239--> focus on the encroaching mist and detect a strange presence. You cannot discern exactly what is, moving out there, but you are certain of one thing: it is evil and it is drawing ever closer to Fort Azgad.</p>
+       <p>Using the <!--ERRTAG-RE-135239-->Brotherhood Spell <spell>Sense Evil</spell> you<!--/ERRTAG-RE-135239--> focus on the encroaching mist and detect a strange presence. You cannot discern exactly what is moving out there, but you are certain of one thing: it is evil and it is drawing ever closer to Fort Azgad.</p>
        <p>You warn Captain Lanza and at first he does not believe you. He chuckles, saying that it is not uncommon for new arrivals to imagine they have seen all manner of spectres in the sea mists which swirl around the fort. But then a loud, discordant bell rings out from above, and Lanza<ch.apos/>s face is transfixed with shock.</p>
        <p><quote>By the <!--ERRTAG-RE-135979-->Gods<!--/ERRTAG-RE-135979-->!</quote> <!--ERRTAG-RE-136066-->he splutters. <quote>It<ch.apos/>s<!--/ERRTAG-RE-136066--> the alarm bell<ch.emdash/>we<ch.apos/>re under attack!</quote></p>
        <choice idref="sect181"><link-text>Turn to 181</link-text>.</choice>
@@ -1465,8 +1468,14 @@ Initial Freepository revision - freshly minted from the proofread text
      <section class="numbered" id="sect64">
       <meta><title>64</title></meta>
 
+      <footnotes>
+       <footnote id="sect64-1-foot" idref="sect64-1">
+        <p>You may not have passed through the curtain of light on your way here.</p>
+       </footnote>
+      </footnotes>
+
       <data>
-       <p>The trio of ghastly creatures press home their attack with fearful speed and purpose. You look around for some means of evading them, but there appears to be only one way: the shimmering curtain of light by which you arrived here. The painful memory of your passage through it makes you abandon this idea at once.</p>
+       <p>The trio of ghastly creatures press home their attack with fearful speed and purpose. You look around for some means of evading them, but there appears to be only one way: the shimmering curtain of light by which you arrived here.<footref id="sect64-1" idref="sect64-1-foot"/> The painful memory of your passage through it makes you abandon this idea at once.</p>
        <choice idref="sect238">If you possess the Sommerswerd, and wish to use it, <link-text>turn to 238</link-text>.</choice>
        <choice idref="sect125">If you do not possess this Special Item, or choose not to use it, <link-text>turn instead to 125</link-text>.</choice>
       </data>
@@ -1593,7 +1602,7 @@ Initial Freepository revision - freshly minted from the proofread text
       <meta><title>75</title></meta>
 
       <data>
-       <p>You raise your weapon and leap forward to strike a pre-emptive blow at the advancing <!--ERRTAG-RA-151246-->Demonlord<!--/ERRTAG-RA-151246-->. The force of your strike would have decapitated any normal creature made of flesh and blood, but Tagazin is no such creature. A splash of bluish-white sparks explode at the point of impact and, to your horror, your weapon disintegrates to dust in your hand (<!--ERRTAG-RE-151571-->delete this Weapon<!--/ERRTAG-RE-151571--> from your Weapons List).</p>
+       <p>You raise your weapon and leap forward to strike a pre-emptive blow at the advancing <!--ERRTAG-RA-151246-->Demonlord<!--/ERRTAG-RA-151246-->. The force of your strike would have decapitated any normal creature made of flesh and blood, but Tagazin is no such creature. A splash of bluish-white sparks explode at the point of impact and, to your horror, your weapon disintegrates to dust in your hand (<!--ERRTAG-RE-151571-->delete this Weapon<!--/ERRTAG-RE-151571--> from your <a idref="action">Weapons List</a>).</p>
        <p>Snickering evilly, the <!--ERRTAG-RA-151246-->Demonlord<!--/ERRTAG-RA-151246--> springs forward to rake you with his razor-sharp claws.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. Now, unless you possess the Discipline of Deliverance, double the number you have chosen (in this instance, 0 = 10). The resultant total equals the number of <typ class="attribute">ENDURANCE</typ> points lost by you in this deadly attack.</p>
        <choice idref="sect183">If you survive Tagazin<ch.apos/>s initial attack, make the appropriate changes to your <typ class="attribute">ENDURANCE</typ> points score and <link-text>turn to 183</link-text>.</choice>
@@ -1824,7 +1833,7 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <footnotes>
        <footnote id="sect96-1-foot" idref="sect96-1">
-        <p>Kajarda may be undead.</p>
+        <p>Kajarda are undead. (See Section <a idref="sect8">8</a>, <a idref="sect52">52</a>, or <a idref="sect265">265</a>.)</p>
        </footnote>
       </footnotes>
 
@@ -2132,9 +2141,15 @@ Initial Freepository revision - freshly minted from the proofread text
      <section class="numbered" id="sect123">
       <meta><title>123</title></meta>
 
+      <footnotes>
+       <footnote id="sect123-1-foot" idref="sect123-1">
+        <p>It is unclear whether a 0 picked on the <a idref="random">Random Number Table</a> should count as exactly 0. Since the procedure described here is similar to the procedure for Kai-blast, and you are required to be a Sun Lord who has mastered Kai-surge, it would be reasonable to count 0 as a 1 in the same way as for Kai-blast.</p>
+       </footnote>
+      </footnotes>
+
       <data>
        <p>You look into the eyes of the approaching <!--ERRTAG-RE-202090-->Demonlord<!--/ERRTAG-RE-202090--> and muster all your strength to summon a pulse of psychic energy. The pulse forms a radiant ball of power which speeds across the chamber and slams into Tagazin<ch.apos/>s mind, making him flinch and falter.</p>
-       <p>Pick a number from the <a idref="random">Random Number Table</a>. Now double the number you have chosen and make a note of the total in the margin of your <a idref="action">Action Chart</a>.</p>
+       <p>Pick a number from the <a idref="random">Random Number Table</a>. Now double the number you have chosen and make a note of the total in the margin of your <a idref="action">Action Chart</a>.<footref id="sect123-1" idref="sect123-1-foot"/></p>
        <choice idref="sect45">To continue, <link-text>turn to 45</link-text>.</choice>
       </data>
      </section>
@@ -2155,7 +2170,7 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <footnotes>
        <footnote id="sect125-1-foot" idref="sect125-1">
-        <p>Kajarda may be undead.</p>
+        <p>Kajarda are undead. (See Section <a idref="sect6">6</a>, <a idref="sect8">8</a>, <a idref="sect52">52</a>, <a idref="sect103">103</a>, <a idref="sect120">120</a>, or <a idref="sect265">265</a>.)</p>
        </footnote>
       </footnotes>
 
@@ -2967,7 +2982,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>For its shape and size it moves towards your ship at an unnatural speed. You call the crew to arms, fearing it to be an enemy vessel closing to attack, and you sense a shudder run through them when, for the first time, they clearly discern its alien design. You focus your Kai senses upon the oncoming craft and suddenly you realize its purpose. It is an Ixian vessel, come to rendezvous with your ship, believing it still to be manned by the undead horde which attacked Fort Azgad.</p>
        <illref idref="bw-ill12" class="html"/>
        <illref idref="bw-ill12" class="pdf"/>
-       <p><quote>Stand firm!</quote> you shout, attempting to rally the nervous Lencians as the craft speeds ever nearer. When less than a hundred leagues distant, its great prow begins to creak open. It is as if you are looking into the ghastly maw of a hungry sea predator. The fearful sight alarms the Lencian crew and they flee towards the bow of the ship in panic: <quote>Save us!</quote> they <!--ERRTAG-RE-285121-->cry. <quote>Ishir<!--/ERRTAG-RE-285121--> save us! It<ch.apos/>s going to eat us alive!</quote></p>
+       <p><quote>Stand firm!</quote> you shout, attempting to rally the nervous Lencians as the craft speeds ever nearer. When less than a <!--ERRTAG-RE-290089-->hundred yards<!--/ERRTAG-RE-290089--> distant, its great prow begins to creak open. It is as if you are looking into the ghastly maw of a hungry sea predator. The fearful sight alarms the Lencian crew and they flee towards the bow of the ship in panic: <quote>Save us!</quote> they <!--ERRTAG-RE-285121-->cry. <quote>Ishir<!--/ERRTAG-RE-285121--> save us! It<ch.apos/>s going to eat us alive!</quote></p>
        <choice idref="sect236"><link-text>Turn to 236</link-text>.</choice>
       </data>
      </section>
@@ -3114,7 +3129,7 @@ Initial Freepository revision - freshly minted from the proofread text
       <meta><title>207</title></meta>
 
       <data>
-       <p>Less than fifty yards away you see a shaggy, grey-furred beast of burden which is harnessed to a wooden wagon. A troop of undead soldiers are unloading shiny metallic containers from the back of this wagon which they then carry, cradled in their bony arms, into the open mouth of the submarine.</p>
+       <p>Less than fifty yards away you see a shaggy, grey-furred beast of burden which is harnessed to a wooden wagon. A <!--ERRTAG-RE-305784-->troop of undead soldiers is<!--/ERRTAG-RE-305784--> unloading shiny metallic containers from the back of this wagon which they then carry, cradled in their bony arms, into the open mouth of the submarine.</p>
        <p>Stealthily, you make your way closer to the wagon and await the chance to climb aboard as soon as the final container has been off-loaded. At last the opportunity arrives; you leap aboard and hide yourself from sight beneath a greasy, foul-smelling tarpaulin.</p>
        <p>After a few minutes you feel a jolt as the wagon moves off. Through a crack in its ancient wooden planks, you watch with trepidation as the wagon trundles along a causeway towards the distant tunnel entrance. It enters the tunnel, unchallenged by the skeletal warriors who stand guard here, and ascends a gentle gradient to another ice-walled cavern. Several passages connect here from all directions, like the spokes of a giant wheel converging at the hub.</p>
        <illref idref="bw-ill13" class="html"/>
@@ -3264,10 +3279,16 @@ Initial Freepository revision - freshly minted from the proofread text
      <section class="numbered" id="sect220">
       <meta><title>220</title></meta>
 
+      <footnotes>
+       <footnote id="sect220-1-foot" idref="sect220-1">
+        <p>This is a permanent enhancement to this Weapon.</p>
+       </footnote>
+      </footnotes>
+
       <data>
-       <p><quote>Give me your weapon, Grand Master,</quote> says Banedon, holding out his hand expectantly. You unsheathe your hand-weapon and pass it to him hilt-first. From a pocket he takes out a dull red gem, no bigger than a fig stone, and presses it gently against the hilt of your weapon. To your surprise, you see the gem sink into the hilt as easily as if Banedon were pressing it into a pat of warm butter.</p>
-       <p><quote>The gem is a Dessi Stone,</quote> says Banedon, in answer to your unspoken question. <quote>Lord Rimoah gave it to me. Now, I give it to you. Whenever you use this weapon in combat against a non-living foe, the power of the Dessi Stone will help you achieve swift victory.</quote> Banedon returns your weapon and you examine the Dessi Stone carefully for a few moments before sheathing it in your belt.</p>
-       <p>With the Dessi stone fitted into its hilt, your weapon now inflicts double <typ class="attribute">ENDURANCE</typ> point losses against an undead opponent in combat. Be sure to record this modification on your Weapons List.</p>
+       <p><quote>Give me your <!--ERRTAG-RA-322174-->Weapon<!--/ERRTAG-RA-322174-->, Grand Master,</quote> says Banedon, holding out his hand expectantly. You unsheathe your hand-weapon and pass it to him hilt-first. From a pocket he takes out a dull red gem, no bigger than a fig stone, and presses it gently against the hilt of your <!--ERRTAG-RA-322174-->Weapon<!--/ERRTAG-RA-322174-->. To your surprise, you see the gem sink into the hilt as easily as if Banedon were pressing it into a pat of warm butter.</p>
+       <p><quote>The gem is a Dessi Stone,</quote> says Banedon, in answer to your unspoken question. <quote>Lord Rimoah gave it to me. Now, I give it to you. Whenever you use this <!--ERRTAG-RA-322174-->Weapon<!--/ERRTAG-RA-322174--> in combat against a non-living foe, the power of the Dessi Stone will help you achieve swift victory.</quote> Banedon returns your <!--ERRTAG-RA-322174-->Weapon<!--/ERRTAG-RA-322174--> and you examine the Dessi Stone carefully for a few moments before sheathing it in your belt.</p>
+       <p>With the <!--ERRTAG-RE-322048-->Dessi Stone<!--/ERRTAG-RE-322048--> fitted into its hilt, your <!--ERRTAG-RA-322174-->Weapon<!--/ERRTAG-RA-322174--> now inflicts double <typ class="attribute">ENDURANCE</typ> point losses against an undead opponent in combat. Be sure to record this modification on your <a idref="action">Weapons List</a>.<footref id="sect220-1" idref="sect220-1-foot"/></p>
        <choice idref="sect22">To continue, <link-text>turn to 22</link-text>.</choice>
       </data>
      </section>
@@ -3299,7 +3320,7 @@ Initial Freepository revision - freshly minted from the proofread text
       <meta><title>223</title></meta>
 
       <data>
-       <p>You sense that the wisps of black smoke are a manifestation of several evil beings, each possessed of a strong psychic presence. Fearing attack, you quickly draw upon your <!--ERRTAG-RE-318810-->Kai Mastery<!--/ERRTAG-RE-318810--> to construct a Mindfort to protect yourself from psychic assault. It is a wise precaution. Moments after the Mindfort is in place, the wisps streak across the chamber and encircle your body. They accelerate to a dizzying speed before launching a massive wave of psychic energy at your mind. Fortunately for you, this tidal wave crashes against the walls of your Mindfort and dissipates harmlessly into a thousand motes of light.</p>
+       <p>You sense that the wisps of black smoke are a manifestation of several evil beings, each possessed of a strong psychic presence. Fearing attack, you quickly draw upon your <!--ERRTAG-RE-318810-->Kai Mastery<!--/ERRTAG-RE-318810--> to construct a <spell>Mindfort</spell> to protect yourself from psychic assault. It is a wise precaution. Moments after the <spell>Mindfort</spell> is in place, the wisps streak across the chamber and encircle your body. They accelerate to a dizzying speed before launching a massive wave of psychic energy at your mind. Fortunately for you, this tidal wave crashes against the walls of your <spell>Mindfort</spell> and dissipates harmlessly into a thousand motes of light.</p>
        <choice idref="sect283"><link-text>Turn to 283</link-text>.</choice>
       </data>
      </section>
@@ -3309,7 +3330,7 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <data>
        <p>You take the ship<ch.apos/>s wheel and turn this alien vessel out of the narrow harbour, into the roiling waters of the Tozaz Sea. It is less than an hour past noon and yet the winter night has already closed in. You share the icy darkness with a crew of six Lencian outposters, all of whom have volunteered for this perilous mission. Lanza has ordered them to land you on the coast of Ixia and wait at anchor for seven days for you to return; they must wait no longer.</p>
-       <p>With ten miles of sea behind you, you hand over the wheel to one of the crew and settle down on the wheelhouse floor to sleep. But you have barely closed your eyes when the deck begins to buck like a stallion. The ship has sailed directly into a <foreign>saesha</foreign><ch.emdash/>a sudden and violent sea-storm from which the Tozaz is infamous. Thunder roars and sleet blows with blinding ferocity as the ship dips and rolls in the waves.</p>
+       <p>With ten miles of sea behind you, you hand over the wheel to one of the crew and settle down on the wheelhouse floor to sleep. But you have barely closed your eyes when the deck begins to buck like a stallion. The ship has sailed directly into a <foreign>saesha</foreign><ch.emdash/>a sudden and violent sea-storm <!--ERRTAG-RE-327201-->for which the Tozaz is infamous<!--/ERRTAG-RE-327201-->. Thunder roars and sleet blows with blinding ferocity as the ship dips and rolls in the waves.</p>
        <p>After what seems like an eternity, the ship emerges from the storm<ch.emdash/>a storm against which few craft other than this could have sailed. The darkness gives way to an eerie dawn which casts its watery light upon a new danger. In the grey half-light you see thousands of icebergs ahead, stretching across the horizon as far as the eye can see. Your heart sinks<ch.emdash/>navigating a course through this icy maze could well prove impossible.</p>
        <choice idref="sect51">If you wish to take control of the ship<ch.apos/>s wheel as you approach the field of icebergs, <link-text>turn to 51</link-text>.</choice>
        <choice idref="sect189">If you wish to go forward to the prow and act as ship<ch.apos/>s pilot, <link-text>turn to 189</link-text>.</choice>
@@ -4010,7 +4031,7 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <footnotes>
        <footnote id="sect287-1-foot" idref="sect287-1">
-        <p>Kajarda may be undead.</p>
+        <p>Kajarda are undead. (See Section <a idref="sect6">6</a>, <a idref="sect8">8</a>, <a idref="sect52">52</a>, <a idref="sect103">103</a>, <a idref="sect120">120</a>, or <a idref="sect265">265</a>.)</p>
        </footnote>
       </footnotes>
 
@@ -4714,7 +4735,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>Two days out from the Tozaz ice-field, you catch sight of Fort Azgad. After the ordeal of Ixia, the sight of this spartan little outpost is one of the most welcoming you have ever seen. The garrison salutes you as you bring your ship to the quayside where Lord Ardan, Captain Lanza, and Prarg are all waiting to welcome you back.</p>
        <p>Warmly they congratulate you, praising your inspired act of courage and bravery but you sense that all is not well. The feeling of unease which haunted you upon leaving the ice-caverns of Ixia has returned.</p>
        <p><quote>Where<ch.apos/>s Banedon?</quote> you ask of Lord <!--ERRTAG-RE-459748-->Ardan. <quote>Is<!--/ERRTAG-RE-459748--> something wrong?</quote></p>
-       <p>Ardan<ch.apos/>s face grows as sombre as his reply. <quote>King Ulnar sent word to Sarnac<ch.apos/>s court, summoning the Guildmaster to return urgently to Sommerlund. It is grave news I<ch.apos/>m afraid, Grand Master. In your absence, your country has been attacked. The Dark God, Naar, has sent forth a host of dragon-creatures to destroy the Second Order of the Kai and lay waste to your homeland. It is said his new minions are confident of swift victory for they are sure you will never defeat the Deathlord of Ixia.</quote></p>
+       <p>Ardan<ch.apos/>s face grows as sombre as his reply. <quote>King Ulnar sent word to Sarnac<ch.apos/>s court, summoning the Guildmaster to return urgently to Sommerlund. It is <!--ERRTAG-RE-467312-->grave news, I<ch.apos/>m afraid<!--/ERRTAG-RE-467312-->, Grand Master. In your absence, your country has been attacked. The Dark God, Naar, has sent forth a host of dragon-creatures to destroy the Second Order of the Kai and lay waste to your homeland. It is said his new minions are confident of swift victory for they are sure you will never defeat the Deathlord of Ixia.</quote></p>
        <p><quote>I must leave for Sommerlund at once,</quote> you say, looking to the eastern horizon. <quote>My brethren and my <!--ERRTAG-RE-460493-->country<!--/ERRTAG-RE-460493--> need me.</quote></p>
        <p>The others nod in silent agreement. <quote>We will do all we can,</quote> replies Lord Ardan, <quote>to speed your passage home.</quote></p>
        <p>The news of your country<ch.apos/>s plight comes as a terrible shock. In Ixia, you have won a great and lasting victory against the forces of Evil, but could the cost be too great? You fear, also, for the lives of your young Kai acolytes. The Second Order are worthy Kai warriors but they are young, their mettle yet to be tested in the furnace-heat of battle. You pray to Kai himself that they be strong enough to resist Naar<ch.apos/>s newest champions, at least until you return.</p>
@@ -4813,7 +4834,7 @@ Initial Freepository revision - freshly minted from the proofread text
       <meta><title>Errata</title></meta>
 
       <data>
-       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>no Kai lord</quote> with <quote>no Kai Lord</quote>, both occurrences of <quote>new-found</quote> with <quote>newfound</quote>, and <quote>north-east</quote> with <quote>northeast</quote>.<!--ERRTAG-RA-12477-ITEM--> Replaced all occurrences of <quote>shadow gate</quote> with <quote>Shadow Gate</quote>.<!--/ERRTAG-RA-12477-ITEM--><!--ERRTAG-RA-6514-ITEM--> Replaced all occurrences of <quote>freestate</quote> with <quote>Freeland</quote>.<!--/ERRTAG-RA-6514-ITEM--><!--ERRTAG-RE-5555-ITEM--> Replaced <quote>elite</quote> with <quote><ch.eacute/>lite</quote>.<!--/ERRTAG-RE-5555-ITEM--><!--ERRTAG-RE-6583-ITEM--> Replaced <quote>Naar<ch.emdash/>the King</quote> with <quote>Naar, the King</quote>.<!--/ERRTAG-RE-6583-ITEM--></p>
+       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>no Kai lord</quote> with <quote>no Kai Lord</quote>, both occurrences of <quote>new-found</quote> with <quote>newfound</quote>, and <quote>north-east</quote> with <quote>northeast</quote>.<!--ERRTAG-RA-12477-ITEM--> Replaced all occurrences of <quote>shadow gate</quote> with <quote>Shadow Gate</quote>.<!--/ERRTAG-RA-12477-ITEM--><!--ERRTAG-RA-6514-ITEM--> Replaced all occurrences of <quote>freestate</quote> with <quote>Freeland</quote>.<!--/ERRTAG-RA-6514-ITEM--><!--ERRTAG-RE-5555-ITEM--> Replaced <quote>elite</quote> with <quote><ch.eacute/>lite</quote>.<!--/ERRTAG-RE-5555-ITEM--><!--ERRTAG-RE-6583-ITEM--> Replaced <quote>Naar<ch.emdash/>the King</quote> with <quote>Naar, the King</quote>.<!--/ERRTAG-RE-6583-ITEM--><!--ERRTAG-RE-7590-ITEM--> Replaced <quote>champions of evil, who</quote> with <quote>champions of evil who</quote>.<!--/ERRTAG-RE-7590-ITEM--><!--ERRTAG-RE-7774-ITEM--> Replaced <quote>Magnamund, have</quote> with <quote>Magnamund have</quote>.<!--/ERRTAG-RE-7774-ITEM--></p>
        <p>(<a idref="gamerulz">The Game Rules</a>) Removed <quote>that you will find in the front of this book. For ease of use, and for further adventuring, it is recommended that you photocopy these pages</quote> and <quote>on the last page of this book</quote>. Changed <quote><typ class="attribute">COMBAT SKILL</typ></quote> to <quote><typ class="attribute">ENDURANCE</typ></quote> according to <cite>Lone Wolf Club Newsletter 24</cite>. Replaced <quote>Magi-Magic</quote> with <quote>Magi-magic</quote> and <quote>opposite and overleaf</quote> with <quote>below</quote>.</p>
        <p>(<a idref="discplnz">Grand Master Disciplines</a>) Replaced <quote>smell and</quote> with <quote>smell, and</quote> and both occurrences of <quote>(ie,</quote> with <quote>(i.e.</quote>.<!--ERRTAG-RE-27110-ITEM--> Replaced <quote>gods Kai and Ishir</quote> with <quote>Gods Kai and Ishir</quote>.<!--/ERRTAG-RE-27110-ITEM--><!--ERRTAG-RE-33045-ITEM--> Replaced <quote>Magi-Magic</quote> with <quote>Magi-magic</quote>.<!--/ERRTAG-RE-33045-ITEM--><!--ERRTAG-RE-34720-ITEM--> Replaced <quote>artifacts</quote> with <quote>artefacts</quote>.<!--/ERRTAG-RE-34720-ITEM--></p>
        <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>Magador you</quote> with <quote>Magador, you</quote>, <quote>eg Gold</quote> with <quote>e.g. Gold</quote>, <quote>map of the area</quote> with <quote>map of the the Maakengorge and surrounding territories</quote>, all occurrences of <quote>arrow</quote> with <quote>Arrow</quote>, all occurrences of <quote>bow</quote> with <quote>Bow</quote>, and <quote>adds 3 points</quote> with <quote>adds 5 points</quote>. Added a section about Gold Crowns which reads <quote>The currency of Magador is the Gold Crown. These are always carried in the Belt Pouch. It will hold a maximum of fifty Crowns.</quote><!--ERRTAG-RE-35809-ITEM--> Replaced <quote>safe-keeping</quote> with <quote>safekeeping</quote>.<!--/ERRTAG-RE-35809-ITEM--><!--ERRTAG-DE-35140-ITEM--> Deleted <quote>(see the inside front cover of this book)</quote>.<!--/ERRTAG-DE-35140-ITEM--><!--ERRTAG-RE-40946-ITEM--> Replaced <quote>(eg Gold Dagger</quote> with <quote>(e.g. Gold Dagger</quote>.<!--/ERRTAG-RE-40946-ITEM--><!--ERRTAG-RE-36319-ITEM--> Replaced <quote>arrows</quote> with <quote>Arrows</quote>.<!--/ERRTAG-RE-36319-ITEM--><!--ERRTAG-RA-39864-ITEM--> Replaced all occurrences of <quote>quiver</quote> with <quote>Quiver</quote>.<!--/ERRTAG-RA-39864-ITEM--><!--ERRTAG-RE-37113-ITEM--> Replaced <quote>BROADSWORD</quote> with <quote>Broadsword</quote>.<!--/ERRTAG-RE-37113-ITEM--><!--ERRTAG-RE-37196-ITEM--> Replaced <quote>BOW</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-37196-ITEM--><!--ERRTAG-RE-37292-ITEM--> Replaced <quote>QUIVER</quote> with <quote>Quiver</quote>.<!--/ERRTAG-RE-37292-ITEM--><!--ERRTAG-RE-37805-ITEM--> Replaced <quote>DAGGER</quote> with <quote>Dagger</quote>.<!--/ERRTAG-RE-37805-ITEM--><!--ERRTAG-RE-38196-ITEM--> Replaced <quote>SWORD</quote> with <quote>Sword</quote>.<!--/ERRTAG-RE-38196-ITEM--><!--ERRTAG-RE-38293-ITEM--> Replaced <quote>MEALS</quote> with <quote>Meals</quote>.<!--/ERRTAG-RE-38293-ITEM--><!--ERRTAG-RE-38729-ITEM--> Replaced <quote>ROPE</quote> with <quote>Rope</quote>.<!--/ERRTAG-RE-38729-ITEM--><!--ERRTAG-RE-39131-ITEM--> Replaced <quote>POTION OF LAUMSPUR</quote> with <quote>Potion of Laumspur</quote>.<!--/ERRTAG-RE-39131-ITEM--><!--ERRTAG-RE-39691-ITEM--> Replaced <quote>AXE</quote> with <quote>Axe</quote>.<!--/ERRTAG-RE-39691-ITEM--></p>
@@ -4828,7 +4849,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>(<a idref="sect8">8</a>)<!--ERRTAG-RE-75028-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-75028-ITEM--><!--ERRTAG-RE-75303-ITEM--> Replaced <quote>If you cannot</quote> with <quote>If you do not</quote>.<!--/ERRTAG-RE-75303-ITEM--></p>
        <p>(<a idref="sect9">9</a>)<!--ERRTAG-RE-75861-ITEM--> Replaced <quote>ultra-violet</quote> with <quote>ultraviolet</quote>.<!--/ERRTAG-RE-75861-ITEM--></p>
        <p>(<a idref="sect13">13</a>)<!--ERRTAG-RE-81799-ITEM--> Replaced <quote>sea water</quote> with <quote>seawater</quote>.<!--/ERRTAG-RE-81799-ITEM--></p>
-       <p>(<a idref="sect14">14</a>)<!--ERRTAG-RE-83432-ITEM--> Replaced <quote>undead who were swarming</quote> with <quote>undead who are swarming</quote>.<!--/ERRTAG-RE-83432-ITEM--></p>
+       <p>(<a idref="sect14">14</a>)<!--ERRTAG-RE-83432-ITEM--> Replaced <quote>undead who were swarming</quote> with <quote>undead that are swarming</quote>.<!--/ERRTAG-RE-83432-ITEM--></p>
        <p>(<a idref="sect15">15</a>)<!--ERRTAG-RE-85157-ITEM--> Replaced <quote>item</quote> with <quote>Item</quote>.<!--/ERRTAG-RE-85157-ITEM--><!--ERRTAG-RE-84736-ITEM--> Replaced <quote>rough hewn</quote> with <quote>rough-hewn</quote>.<!--/ERRTAG-RE-84736-ITEM--></p>
        <p>(<a idref="sect17">17</a>)<!--ERRTAG-RE-87045-ITEM--> Replaced <quote>crystal spire</quote> with <quote>Crystal Spire</quote>.<!--/ERRTAG-RE-87045-ITEM--></p>
        <p>(<a idref="sect18">18</a>)<!--ERRTAG-RE-87112-ITEM--> Replaced <quote>Skark oil</quote> with <quote>skark oil</quote>.<!--/ERRTAG-RE-87112-ITEM--> Began a new paragraph before <quote>Do not fear,<ch.ellips/></quote>.<!--ERRTAG-RE-88112-ITEM--> Replaced <quote>you reply, <ch.lsquot/>I shall soon return.<ch.rsquot/></quote> with <quote>you reply. <ch.lsquot/>I shall soon return.<ch.rsquot/></quote>.<!--/ERRTAG-RE-88112-ITEM--></p>
@@ -4938,14 +4959,14 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>(<a idref="sect192">192</a>)<!--ERRTAG-RA-280795-ITEM--> Replaced all occurrences of <quote>free-standing</quote> with <quote>freestanding</quote>.<!--/ERRTAG-RA-280795-ITEM--></p>
        <p>(<a idref="sect193">193</a>)<!--ERRTAG-RE-282679-ITEM--> Replaced <quote>crystal spire</quote> with <quote>Crystal Spire</quote>.<!--/ERRTAG-RE-282679-ITEM--></p>
        <p>(<a idref="sect194">194</a>)<!--ERRTAG-RE-282913-ITEM--> Replaced <quote>korlinium scabbard</quote> with <quote>Korlinium Scabbard</quote>.<!--/ERRTAG-RE-282913-ITEM--></p>
-       <p>(<a idref="sect195">195</a>)<!--ERRTAG-RE-285121-ITEM--> Replaced <quote>cry, <ch.lsquot/>Ishir</quote> with <quote>cry. <ch.lsquot/>Ishir</quote>.<!--/ERRTAG-RE-285121-ITEM--> Reduced the illustration number from XIII to XII. (see erratum for <a idref="sect69">Section 69</a>)</p>
+       <p>(<a idref="sect195">195</a>)<!--ERRTAG-RE-285121-ITEM--> Replaced <quote>cry, <ch.lsquot/>Ishir</quote> with <quote>cry. <ch.lsquot/>Ishir</quote>.<!--/ERRTAG-RE-285121-ITEM--> Reduced the illustration number from XIII to XII. (see erratum for <a idref="sect69">Section 69</a>)<!--ERRTAG-RE-290089-ITEM--> Replaced <quote>hundred leagues</quote> with <quote>hundred yards</quote>. The ship surfaces only one mile away, and now is somehow approaching from a much greater distance?.<!--/ERRTAG-RE-290089-ITEM--></p>
        <p>(<a idref="sect196">196</a>)<!--ERRTAG-RE-285729-ITEM--> Replaced <quote>Fearing your survival</quote> with <quote>Fearing for your survival</quote>.<!--/ERRTAG-RE-285729-ITEM--><!--ERRTAG-RE-286336-ITEM--> Replaced <quote>Thane, or higher</quote> with <quote>Thane or higher</quote>.<!--/ERRTAG-RE-286336-ITEM--><!--ERRTAG-RE-286539-ITEM--> Replaced <quote>Lord, or higher</quote> with <quote>Lord or higher</quote>.<!--/ERRTAG-RE-286539-ITEM--></p>
        <p>(<a idref="sect200">200</a>)<!--ERRTAG-RA-292181-ITEM--> Replaced all occurrences of <quote>crystal spire</quote> with <quote>Crystal Spire</quote>.<!--/ERRTAG-RA-292181-ITEM--></p>
        <p>(<a idref="sect201">201</a>)<!--ERRTAG-RE-292595-ITEM--> Replaced <quote>main mast</quote> with <quote>mainmast</quote>.<!--/ERRTAG-RE-292595-ITEM--></p>
        <p>(<a idref="sect202">202</a>)<!--ERRTAG-RE-292820-ITEM--> Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.<!--/ERRTAG-RE-292820-ITEM--></p>
        <p>(<a idref="sect203">203</a>)<!--ERRTAG-RE-293855-ITEM--> Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.<!--/ERRTAG-RE-293855-ITEM--><!--ERRTAG-RA-295051-ITEM--> Replaced all occurrences of <quote>free-standing</quote> with <quote>freestanding</quote>.<!--/ERRTAG-RA-295051-ITEM--></p>
        <p>(<a idref="sect206">206</a>)<!--ERRTAG-RE-298425-ITEM--> Replaced <quote>Crack!</quote> with <quote><onomatopoeia>crack!</onomatopoeia></quote>.<!--/ERRTAG-RE-298425-ITEM--></p>
-       <p>(<a idref="sect207">207</a>) Reduced the illustration number from XIV to XIII. (see erratum for <a idref="sect69">Section 69</a>)</p>
+       <p>(<a idref="sect207">207</a>) Reduced the illustration number from XIV to XIII. (see erratum for <a idref="sect69">Section 69</a>)<!--ERRTAG-RE-305784-ITEM--> Replaced <quote>troop of undead soldiers are</quote> with <quote>troop of undead soldiers is</quote>.<!--/ERRTAG-RE-305784-ITEM--></p>
        <p>(<a idref="sect209">209</a>)<!--ERRTAG-RE-303096-ITEM--> Replaced <quote>falter and</quote> with <quote>falter, and</quote>.<!--/ERRTAG-RE-303096-ITEM--><!--ERRTAG-RE-303201-ITEM--> Replaced <quote>counter-attack</quote> with <quote>counterattack</quote>.<!--/ERRTAG-RE-303201-ITEM--></p>
        <p>(<a idref="sect211">211</a>)<!--ERRTAG-RE-305179-ITEM--> Replaced <quote>explosion white-hot</quote> with <quote>explosion of white-hot</quote>.<!--/ERRTAG-RE-305179-ITEM--></p>
        <p>(<a idref="sect213">213</a>)<!--ERRTAG-RE-306850-ITEM--> Replaced <quote>chamber, is</quote> with <quote>chamber is</quote>.<!--/ERRTAG-RE-306850-ITEM--></p>
@@ -4953,7 +4974,9 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>(<a idref="sect217">217</a>)<!--ERRTAG-RE-307042-ITEM--> Replaced <quote>Brotherhood spell<ch.emdash/>Counterspell<ch.emdash/>and</quote> with <quote>Brotherhood Spell <spell>Counterspell</spell> and</quote>.<!--/ERRTAG-RE-307042-ITEM--></p>
        <p>(<a idref="sect218">218</a>)<!--ERRTAG-RE-312220-ITEM--> Replaced <quote>Lavas come swooping down</quote> with <quote>Lavas comes swooping down</quote>.<!--/ERRTAG-RE-312220-ITEM--><!--ERRTAG-RE-312378-ITEM--> Replaced <quote>demonlord</quote> with <quote>Demonlord</quote>.<!--/ERRTAG-RE-312378-ITEM--><!--ERRTAG-RE-312735-ITEM--> Replaced <quote>towards the Tagazin</quote> with <quote>towards Tagazin</quote>.<!--/ERRTAG-RE-312735-ITEM--><!--ERRTAG-RE-312948-ITEM--> Replaced <quote>demonlord<ch.apos/>s</quote> with <quote>Demonlord<ch.apos/>s</quote>.<!--/ERRTAG-RE-312948-ITEM--></p>
        <p>(<a idref="sect219">219</a>) Removed the quotation marks around Banedon's warning. <!--ERRTAG-RE-314228-ITEM--> Replaced <quote>korlinium scabbard</quote> with <quote>Korlinium Scabbard</quote>.<!--/ERRTAG-RE-314228-ITEM--><!--ERRTAG-RE-314696-ITEM--> Replaced <quote>another weapon</quote> with <quote>another Weapon</quote>.<!--/ERRTAG-RE-314696-ITEM--></p>
+<p>(<a idref="sect220">220</a>)<!--ERRTAG-RE-322048-ITEM--> Replaced <quote>Dessi stone</quote> with <quote>Dessi Stone</quote>.<!--/ERRTAG-RE-322048-ITEM--><!--ERRTAG-RA-322174-ITEM--> Replaced all occurrences of <quote>weapon</quote> with <quote>Weapon</quote>.<!--/ERRTAG-RA-322174-ITEM--></p>
        <p>(<a idref="sect223">223</a>) <!--ERRTAG-RE-318810-ITEM--> Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.<!--/ERRTAG-RE-318810-ITEM--></p>
+<p>(<a idref="sect224">224</a>)<!--ERRTAG-RE-327201-ITEM--> Replaced <quote>from which the Tozaz is infamous</quote> with <quote>for which the Tozaz is infamous</quote>.<!--/ERRTAG-RE-327201-ITEM--></p>
        <p>(<a idref="sect225">225</a>) <!--ERRTAG-RE-321679-ITEM--> Replaced <quote>coiled or otherwise</quote> with <quote>oiled or otherwise</quote>.<!--/ERRTAG-RE-321679-ITEM--></p>
        <p>(<a idref="sect227">227</a>) <!--ERRTAG-RE-323154-ITEM--> Replaced <quote>demonlord</quote> with <quote>Demonlord</quote>.<!--/ERRTAG-RE-323154-ITEM--></p>
        <p>(<a idref="sect229">229</a>) <!--ERRTAG-RA-325620-ITEM--> Replaced all occurrences of <quote>chaos-creatures</quote> with <quote>Chaos-creatures</quote>.<!--/ERRTAG-RA-325620-ITEM--> Reduced the illustration number from XV to XIV. (see erratum for <a idref="sect69">Section 69</a>)</p>
@@ -5023,7 +5046,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>(<a idref="sect343">343</a>)<!--ERRTAG-RE-452103-ITEM--> Replaced <quote>by huge frozen fountain</quote> with <quote>by a huge frozen fountain</quote>.<!--/ERRTAG-RE-452103-ITEM--><!--ERRTAG-RE-452409-ITEM--> Replaced <quote>Lord, or higher</quote> with <quote>Lord or higher</quote>.<!--/ERRTAG-RE-452409-ITEM--><!--ERRTAG-RE-454134-ITEM--> Replaced <quote>crystal spire</quote> with <quote>Crystal Spire</quote>.<!--/ERRTAG-RE-454134-ITEM--></p>
        <p>(<a idref="sect346">346</a>)<!--ERRTAG-RE-454756-ITEM--> Replaced <quote>Crack!</quote> with <quote><onomatopoeia>crack!</onomatopoeia></quote>.<!--/ERRTAG-RE-454756-ITEM--></p>
        <p>(<a idref="sect347">347</a>)<!--ERRTAG-RE-455826-ITEM--> Replaced <quote>demonlord</quote> with <quote>Demonlord</quote>.<!--/ERRTAG-RE-455826-ITEM--> Reduced the illustration number from XXI to XX. (see erratum for <a idref="sect69">Section 69</a>)</p>
-       <p>(<a idref="sect350">350</a>)<!--ERRTAG-RE-459748-ITEM--> Replaced <quote>Ardan, <ch.lsquot/>Is</quote> with <quote>Ardan. <ch.lsquot/>Is</quote>.<!--/ERRTAG-RE-459748-ITEM--><!--ERRTAG-RE-460493-ITEM--> Replaced <quote>county</quote> with <quote>country</quote>.<!--/ERRTAG-RE-460493-ITEM--><!--ERRTAG-RE-461256-ITEM--> Replaced <quote>home, and</quote> with <quote>home and</quote>.<!--/ERRTAG-RE-461256-ITEM--><!--ERRTAG-RE-465248-ITEM--> Replaced <quote>DAWN OF THE DRAGONS</quote> with <quote>Dawn of the Dragons</quote>.<!--/ERRTAG-RE-465248-ITEM--></p>
+       <p>(<a idref="sect350">350</a>)<!--ERRTAG-RE-459748-ITEM--> Replaced <quote>Ardan, <ch.lsquot/>Is</quote> with <quote>Ardan. <ch.lsquot/>Is</quote>.<!--/ERRTAG-RE-459748-ITEM--><!--ERRTAG-RE-460493-ITEM--> Replaced <quote>county</quote> with <quote>country</quote>.<!--/ERRTAG-RE-460493-ITEM--><!--ERRTAG-RE-461256-ITEM--> Replaced <quote>home, and</quote> with <quote>home and</quote>.<!--/ERRTAG-RE-461256-ITEM--><!--ERRTAG-RE-465248-ITEM--> Replaced <quote>DAWN OF THE DRAGONS</quote> with <quote>Dawn of the Dragons</quote>.<!--/ERRTAG-RE-465248-ITEM--><!--ERRTAG-RE-467312-ITEM--> Replaced <quote>grave news I<ch.apos/>m afraid</quote> with <quote>grave news, I<ch.apos/>m afraid</quote>.<!--/ERRTAG-RE-467312-ITEM--></p>
       </data>
      </section>
     </data>
@@ -5039,14 +5062,17 @@ Initial Freepository revision - freshly minted from the proofread text
      <p>(<a idref="imprvdsc">Improved Grand Master Disciplines</a>) The <spell>Strength</spell> spell is, in practice, also used in armed combat contrary to what is indicated here.</p>
      <p>(<a idref="sect10">10</a>) This is the correct answer to the crystal dais grid in <a idref="sect69">Section 69</a>.</p>
      <p>(<a idref="sect20">20</a>) This is the correct answer to the ancient, green crystal lock in <a idref="sect213">Section 213</a>.</p>
+     <p>(<a idref="sect64">64</a>) You may not have passed through the curtain of light on your way here.</p>
      <p>(<a idref="sect69">69</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct. You have only one chance to guess at the correct answer. If you guess incorrectly, <a idref="sect139">turn immediately to 139</a>.</p>
-     <p>(<a idref="sect96">96</a>) Kajarda may be undead.</p>
+     <p>(<a idref="sect96">96</a>) Kajarda are undead. (See Section <a idref="sect8">8</a>, <a idref="sect52">52</a>, or <a idref="sect265">265</a>.)</p>
      <p>(<a idref="sect100">100</a>) This is the correct answer to the intricate lockplate in the center of the green crystal door in <a idref="sect322">Section 322</a>.</p>
-     <p>(<a idref="sect125">125</a>) Kajarda may be undead.</p>
+     <p>(<a idref="sect123">123</a>) It is unclear whether a 0 picked on the <a idref="random">Random Number Table</a> should count as exactly 0. Since the procedure described here is similar to the procedure for Kai-blast, and you are required to be a Sun Lord who has mastered Kai-surge, it would be reasonable to count 0 as a 1 in the same way as for Kai-blast.</p>
+     <p>(<a idref="sect125">125</a>) Kajarda are undead. (See Section <a idref="sect6">6</a>, <a idref="sect8">8</a>, <a idref="sect52">52</a>, <a idref="sect103">103</a>, <a idref="sect120">120</a>, or <a idref="sect265">265</a>.)</p>
      <p>(<a idref="sect179">179</a>) It is unclear whether Grand Huntmastery<ch.emdash/>or the Magnakai Discipline of Huntmastery<ch.emdash/>should help you find food in this situation.</p>
      <p>(<a idref="sect213">213</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct. You have only one chance to guess at the correct answer. If you guess incorrectly, <a idref="sect199">turn immediately to 199</a>.</p>
+     <p>(<a idref="sect220">220</a>) This is a permanent enhancement to this Weapon.</p>
      <p>(<a idref="sect239">239</a>) There is no path which leads to this section of the book. It is functionally identical to <a idref="sect23">Section 23</a> and <a idref="sect242">Section 242</a>, and therefore its isolation does not affect the gameplay of the book.</p>
-     <p>(<a idref="sect287">287</a>) Kajarda may be undead.</p>
+     <p>(<a idref="sect287">287</a>) Kajarda are undead. (See Section <a idref="sect6">6</a>, <a idref="sect8">8</a>, <a idref="sect52">52</a>, <a idref="sect103">103</a>, <a idref="sect120">120</a>, or <a idref="sect265">265</a>.)</p>
      <p>(<a idref="sect322">322</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct. You have only one chance to guess at the correct answer. If you guess incorrectly, <a idref="sect84">turn immediately to 84</a>.</p>
     </data>
    </section>
@@ -5100,7 +5126,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <illustration id="bw-ill5" class="float">
         <meta>
          <creator>Brian Williams</creator>
-         <description>The Deathlord Ixiataaga slashes at your face with the Deathstaff.</description>
+         <description>Deathlord Ixiataaga slashes at your face with the Deathstaff.</description>
         </meta>
         <instance class="html" src="ill5.gif" width="386" height="573"/>
         <instance class="pdf" src="ill5.pdf" width="386" height="573"/>
@@ -5181,7 +5207,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <illustration id="bw-ill14" class="float">
         <meta>
          <creator>Brian Williams</creator>
-         <description>A horde of bloated corpse-things, humanoid horrors and skeletal warriors approach you.</description>
+         <description>A horde of bloated corpse-things, humanoid horrors and skeletal warriors approaches you.</description>
         </meta>
         <instance class="html" src="ill14.gif" width="386" height="603"/>
         <instance class="pdf" src="ill14.pdf" width="386" height="603"/>
