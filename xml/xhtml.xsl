@@ -9,6 +9,9 @@
 $Id$
 
 $Log$
+Revision 1.12  2006/06/05 23:46:46  jonathan.blake
+Fixing the handling of titles when <ch.*/> elements are used.
+
 Revision 1.11  2006/04/04 18:48:52  angantyr
 Fixed paragraphed list and illref template bug.
 
@@ -173,7 +176,7 @@ Todo:
 <!-- :::::::::::: third-level front matter sections ::::::::::::: -->
 
 <xsl:template match="/gamebook/section/data/section/data/section[@class='frontmatter']">
- <h3><xsl:value-of select="meta/title[1]" /></h3>
+ <h3><xsl:apply-templates select="meta/title[1]" /></h3>
 
  <xsl:value-of select="$newline" />
  <xsl:value-of select="$newline" />
@@ -191,7 +194,7 @@ Todo:
 <!-- :::::::::::: fourth-level front matter sections :::::::::::: -->
 
 <xsl:template match="/gamebook/section/data/section/data/section/data/section[@class='frontmatter']">
- <h4><xsl:value-of select="meta/title[1]" /></h4>
+ <h4><xsl:apply-templates select="meta/title[1]" /></h4>
 
  <xsl:value-of select="$newline" />
  <xsl:value-of select="$newline" />
@@ -202,7 +205,7 @@ Todo:
 <!-- ::::::::::::: fifth-level front matter sections :::::::::::: -->
 
 <xsl:template match="/gamebook/section/data/section/data/section/data/section/data/section[@class='frontmatter']">
- <h5><xsl:value-of select="meta/title[1]" /></h5>
+ <h5><xsl:apply-templates select="meta/title[1]" /></h5>
 
  <xsl:value-of select="$newline" />
  <xsl:value-of select="$newline" />
@@ -222,7 +225,7 @@ Todo:
 <!-- :::::::::::: third-level main matter sections ::::::::::::: -->
 
 <xsl:template match="/gamebook/section/data/section/data/section[@class='mainmatter']">
- <h3><xsl:value-of select="meta/title[1]" /></h3>
+ <h3><xsl:apply-templates select="meta/title[1]" /></h3>
 
  <xsl:value-of select="$newline" />
  <xsl:value-of select="$newline" />
@@ -240,7 +243,7 @@ Todo:
 <!-- :::::::::::: fourth-level main matter sections :::::::::::: -->
 
 <xsl:template match="/gamebook/section/data/section/data/section/data/section[@class='mainmatter']">
- <h4><xsl:value-of select="meta/title[1]" /></h4>
+ <h4><xsl:apply-templates select="meta/title[1]" /></h4>
 
  <xsl:value-of select="$newline" />
  <xsl:value-of select="$newline" />
@@ -251,7 +254,7 @@ Todo:
 <!-- ::::::::::::: fifth-level main matter sections :::::::::::: -->
 
 <xsl:template match="/gamebook/section/data/section/data/section/data/section/data/section[@class='mainmatter']">
- <h5><xsl:value-of select="meta/title[1]" /></h5>
+ <h5><xsl:apply-templates select="meta/title[1]" /></h5>
 
  <xsl:value-of select="$newline" />
  <xsl:value-of select="$newline" />
@@ -273,7 +276,7 @@ Todo:
 <!-- glossary sections should be enclosed in a second level glossary section -->
 
 <xsl:template match="/gamebook/section/data/section/data/section[@class='glossary']">
- <h3><xsl:value-of select="meta/title[1]" /></h3>
+ <h3><xsl:apply-templates select="meta/title[1]" /></h3>
 
  <xsl:value-of select="$newline" />
  <xsl:value-of select="$newline" />
@@ -319,7 +322,7 @@ Todo:
 <!-- ::::::::::::: third-level back matter sections ::::::::::::: -->
 
 <xsl:template match="/gamebook/section/data/section/data/section[@class='backmatter']">
- <h3><xsl:value-of select="meta/title[1]" /></h3>
+ <h3><xsl:apply-templates select="meta/title[1]" /></h3>
 
  <xsl:value-of select="$newline" />
  <xsl:value-of select="$newline" />
@@ -330,7 +333,7 @@ Todo:
 <!-- ::::::::::::: fourth-level back matter sections ::::::::::::: -->
 
 <xsl:template match="/gamebook/section/data/section/data/section/data/section[@class='backmatter']">
- <h4><xsl:value-of select="meta/title[1]" /></h4>
+ <h4><xsl:apply-templates select="meta/title[1]" /></h4>
 
  <xsl:value-of select="$newline" />
  <xsl:value-of select="$newline" />
@@ -676,7 +679,7 @@ Todo:
       <xsl:for-each select="//illref[@class='html' and @idref=current()/@id]">
        <xsl:call-template name="section-title-link" />
        <xsl:if test="position()!=last()">
-        <xsl:text>, </xsl:text>        
+        <xsl:text>, </xsl:text>     
        </xsl:if>
       </xsl:for-each>
      </li>
@@ -1089,7 +1092,7 @@ is included in all copies.
 
    <head><xsl:value-of select="$newline" />
     <title>
-     <xsl:value-of select="/gamebook/meta/title[1]" />
+     <xsl:apply-templates select="/gamebook/meta/title[1]" />
      <xsl:text>: </xsl:text>
      <xsl:choose>
       <xsl:when test="$document-type='illustration'">
@@ -1103,7 +1106,7 @@ is included in all copies.
        </xsl:choose>
        <xsl:number count="illustration[@class='float' and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )]" from="/" level="any" format="I" />
       </xsl:when>
-      <xsl:otherwise><xsl:value-of select="meta/title[1]" /></xsl:otherwise>
+      <xsl:otherwise><xsl:apply-templates select="meta/title[1]" /></xsl:otherwise>
      </xsl:choose>
     </title><xsl:value-of select="$newline" />
     <meta http-equiv="Content-type" content="text/html; charset=ISO-8859-1" /><xsl:value-of select="$newline" />
@@ -1141,7 +1144,7 @@ is included in all copies.
     <xsl:attribute name="vlink"><xsl:value-of select="$vlink-color" /></xsl:attribute>
 
     <xsl:value-of select="$newline" />
-    <div id="title"><img src="title.gif" width="550" height="100" border="0" align="middle" usemap="#imagemap"><xsl:attribute name="alt"><xsl:value-of select="/gamebook/meta/title[1]" /></xsl:attribute></img></div><xsl:value-of select="$newline" />
+    <div id="title"><img src="title.gif" width="550" height="100" border="0" align="middle" usemap="#imagemap"><xsl:attribute name="alt"><xsl:apply-templates select="/gamebook/meta/title[1]" /></xsl:attribute></img></div><xsl:value-of select="$newline" />
     <div id="body"><xsl:value-of select="$newline" />
 
      <xsl:choose>
@@ -1295,7 +1298,7 @@ is included in all copies.
          <xsl:for-each select="/gamebook/section/data/section">
           <li>
            <a><xsl:attribute name="href"><xsl:value-of select="@id" /><xsl:text>.htm</xsl:text></xsl:attribute>
-            <xsl:value-of select="meta/title[1]" />
+            <xsl:apply-templates select="meta/title[1]" />
            </a>
            <xsl:if test="data/section[@class='frontmatter-separate' or @class='mainmatter-separate']">
             <xsl:value-of select="$newline" />
@@ -1323,7 +1326,7 @@ is included in all copies.
 
       <xsl:when test="$document-type='second-level-frontmatter'">
        <div class="frontmatter"><xsl:value-of select="$newline" />
-        <h2><xsl:value-of select="meta/title" /></h2><xsl:value-of select="$newline" />
+        <h2><xsl:apply-templates select="meta/title" /></h2><xsl:value-of select="$newline" />
 
         <xsl:value-of select="$newline" />
 
@@ -1340,7 +1343,7 @@ is included in all copies.
 
       <xsl:when test="$document-type='third-level-frontmatter-separate'">
        <div class="frontmatter"><xsl:value-of select="$newline" />
-        <h3><xsl:value-of select="meta/title" /></h3><xsl:value-of select="$newline" />
+        <h3><xsl:apply-templates select="meta/title" /></h3><xsl:value-of select="$newline" />
         <xsl:value-of select="$newline" />
 
         <xsl:apply-templates />
@@ -1356,7 +1359,7 @@ is included in all copies.
 
       <xsl:when test="$document-type='second-level-mainmatter'">
        <div class="mainmatter"><xsl:value-of select="$newline" />
-        <h2><xsl:value-of select="meta/title" /></h2><xsl:value-of select="$newline" />
+        <h2><xsl:apply-templates select="meta/title" /></h2><xsl:value-of select="$newline" />
         <xsl:value-of select="$newline" />
 
         <xsl:apply-templates />
@@ -1372,7 +1375,7 @@ is included in all copies.
 
       <xsl:when test="$document-type='third-level-mainmatter-separate'">
        <div class="mainmatter"><xsl:value-of select="$newline" />
-        <h3><xsl:value-of select="meta/title" /></h3><xsl:value-of select="$newline" />
+        <h3><xsl:apply-templates select="meta/title" /></h3><xsl:value-of select="$newline" />
         <xsl:value-of select="$newline" />
 
         <xsl:apply-templates />
@@ -1388,7 +1391,7 @@ is included in all copies.
 
       <xsl:when test="$document-type='second-level-glossary'">
        <div class="mainmatter"><xsl:value-of select="$newline" />
-        <h2><xsl:value-of select="meta/title" /></h2><xsl:value-of select="$newline" />
+        <h2><xsl:apply-templates select="meta/title" /></h2><xsl:value-of select="$newline" />
         <xsl:value-of select="$newline" />
 
         <xsl:apply-templates />
@@ -1408,7 +1411,7 @@ is included in all copies.
 
       <xsl:when test="$document-type='third-level-glossary-separate'">
        <div class="glossary"><xsl:value-of select="$newline" />
-        <h3><xsl:value-of select="meta/title" /></h3><xsl:value-of select="$newline" />
+        <h3><xsl:apply-templates select="meta/title" /></h3><xsl:value-of select="$newline" />
         <xsl:call-template name="alpha-bar">
          <xsl:with-param name="alpha-bar-id-prefix"><xsl:value-of select="$glossary-id-prefix" /></xsl:with-param>
         </xsl:call-template>
@@ -1433,7 +1436,7 @@ title of each section be a simple number.
 -->
       <xsl:when test="$document-type='second-level-numbered'">
        <div class="numbered"><xsl:value-of select="$newline" />
-        <h2><xsl:value-of select="meta/title" /></h2><xsl:value-of select="$newline" />
+        <h2><xsl:apply-templates select="meta/title" /></h2><xsl:value-of select="$newline" />
         <xsl:value-of select="$newline" />
 
         <xsl:variable name="base-section-number" select="number( data/section[1]/meta/title ) - 1" />
@@ -1457,7 +1460,7 @@ title of each section be a simple number.
           </xsl:if>
           <a>
            <xsl:attribute name="href"><xsl:value-of select="@id" /><xsl:text>.htm</xsl:text></xsl:attribute>
-           <xsl:value-of select="meta/title" />
+           <xsl:apply-templates select="meta/title" />
           </a>
           <xsl:choose>
            <xsl:when test="position( ) mod 10 = 0">
@@ -1482,7 +1485,7 @@ title of each section be a simple number.
 
       <xsl:when test="$document-type='third-level-numbered'">
        <div class="numbered"><xsl:value-of select="$newline" />
-        <h3><xsl:value-of select="meta/title" /></h3><xsl:value-of select="$newline" />
+        <h3><xsl:apply-templates select="meta/title" /></h3><xsl:value-of select="$newline" />
         <xsl:value-of select="$newline" />
 
         <xsl:apply-templates />
@@ -1499,7 +1502,7 @@ title of each section be a simple number.
        <div class="backmatter">
         <xsl:value-of select="$newline" />
         <!-- No particular reason to code title here -->
-        <h2><xsl:value-of select="meta/title" /></h2><xsl:value-of select="$newline" />
+        <h2><xsl:apply-templates select="meta/title" /></h2><xsl:value-of select="$newline" />
         <xsl:value-of select="$newline" />
         <xsl:value-of select="$newline" />
         
@@ -1549,7 +1552,7 @@ title of each section be a simple number.
 
       <xsl:when test="$document-type='second-level-backmatter'">
        <div class="frontmatter"><xsl:value-of select="$newline" />
-        <h2><xsl:value-of select="meta/title" /></h2><xsl:value-of select="$newline" />
+        <h2><xsl:apply-templates select="meta/title" /></h2><xsl:value-of select="$newline" />
 
         <xsl:value-of select="$newline" />
         <xsl:value-of select="$newline" />
@@ -1567,7 +1570,7 @@ title of each section be a simple number.
 
       <xsl:when test="$document-type='map-adjusted'">
        <div class="frontmatter"><xsl:value-of select="$newline" />
-        <h2><xsl:value-of select="meta/title" /></h2><xsl:value-of select="$newline" />
+        <h2><xsl:apply-templates select="meta/title" /></h2><xsl:value-of select="$newline" />
 
         <xsl:value-of select="$newline" />
         <xsl:value-of select="$newline" />
@@ -1651,7 +1654,7 @@ title of each section be a simple number.
 
       <xsl:when test="$document-type='map'">
        <div class="frontmatter"><xsl:value-of select="$newline" />
-        <h2><xsl:value-of select="meta/title" /></h2><xsl:value-of select="$newline" />
+        <h2><xsl:apply-templates select="meta/title" /></h2><xsl:value-of select="$newline" />
 
         <xsl:value-of select="$newline" />
         <xsl:value-of select="$newline" />
@@ -1785,7 +1788,7 @@ title of each section be a simple number.
     <map name="imagemap" id="imagemap">
      <area shape="rect" coords="0,0,99,99" href="http://www.projectaon.org/" alt="Project Aon" target="_top" />
      <area shape="default" href="title.htm">
-      <xsl:attribute name="alt"><xsl:value-of select="/gamebook/meta/title[1]" /></xsl:attribute>
+      <xsl:attribute name="alt"><xsl:apply-templates select="/gamebook/meta/title[1]" /></xsl:attribute>
      </area>
     </map>
 
@@ -1843,7 +1846,7 @@ title of each section be a simple number.
       <xsl:when test="meta/link[@class='prev']">
        <a>
         <xsl:attribute name="href">
-         <xsl:value-of select="meta/link[@class='prev']/@idref" />
+         <xsl:apply-templates select="meta/link[@class='prev']/@idref" />
          <xsl:text>.htm</xsl:text>
         </xsl:attribute>
         <img src="back.gif" width="150" height="30" border="0">
@@ -1976,7 +1979,7 @@ title of each section be a simple number.
     </xsl:otherwise>
    </xsl:choose>
   </xsl:if>
-  <xsl:value-of select="ancestor::section[position()=1]/meta/title[1]" />
+  <xsl:apply-templates select="ancestor::section[position()=1]/meta/title[1]" />
  </xsl:variable>
  
  <a>
