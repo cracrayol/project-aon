@@ -16,6 +16,9 @@
 $Id$
 
 $Log$
+Revision 1.18  2006/06/05 23:45:21  jonathan.blake
+Miscellaneous fixes for the day.
+
 Revision 1.17  2006/06/03 00:07:07  jonathan.blake
 Check in of various changes.
 
@@ -182,7 +185,7 @@ Initial Freepository revision - freshly minted from the proofread text
      <p><quote>My lord, do you wish me to go to Ixia<ch.emdash/>to find and destroy the Deathstaff before another of Naar<ch.apos/>s agents can use it against us? Is this why you have come seeking my help?</quote> you replied, expecting Rimoah to affirm your assumption.</p>
      <p><quote>Partly so, my lord,</quote> he said, holding you with his steel-grey eyes, <quote>but I fear that already it has fallen into the hands of an enemy<ch.emdash/>and one who is deadlier than even the demoness Shamath. What do you know of the Deathlord of Ixia?</quote></p>
      <p>You faintly remembered having heard this name before but were unable to recall any detail. Lord Rimoah, seeing that you were unable to give an answer, obliged with an impromptu history lesson:</p>
-     <p><quote>The Deathlord of Ixia was once lieutenant to Agarash the Damned<ch.emdash/>the most powerful of all Naar<ch.apos/>s champions of evil,</quote> said Rimoah, his head bowed as he paced the granite floor of your vault. <quote>During the Age of Eternal Night he conquered much of Northern Magnamund, including the realm of Ixia which was once a rich and very fertile land. He destroyed the native Ixians, transforming them into a legion of undead servants under his command. Many centuries later, when my ancestors defeated Agarash during the Age of the Old Kingdoms, they magically imprisoned the weakened Deathlord in a secret tomb within the dread city of Xaagon, near to the southern coast of Ixia. For thousands of years his tomb lay undisturbed until the first of the Drakkarim appeared on Magnamund. They entered Xaagon and found the Deathlord<ch.apos/>s tomb<ch.emdash/>yet legend has it that none of them escaped Ixia alive. Perhaps they, too, serve him now. During the Age of the Black Moon, the Darklords conquered all of the territories surrounding Ixia yet they chose to avoid setting foot in the Deathlord<ch.apos/>s realm. Mindful of his origins, they feared that if he were released from his sorcerous prison he would seek to dominate and destroy them.</quote></p>
+     <p><quote>The Deathlord of Ixia was once lieutenant to Agarash the Damned<ch.emdash/>the most powerful of all Naar<ch.apos/>s champions of evil,</quote> said Rimoah, his head bowed as he paced the granite floor of your vault. <quote>During the Age of Eternal Night he conquered much of Northern Magnamund, including the realm of Ixia which was once a rich and very fertile land. He destroyed the native Ixians, transforming them into a legion of undead servants under his command. Many centuries later, when my ancestors defeated Agarash during the <!--ERRTAG-RE-17262-->Age of War<!--/ERRTAG-RE-17262-->, they magically imprisoned the weakened Deathlord in a secret tomb within the dread city of Xaagon, near to the southern coast of Ixia. For thousands of years his tomb lay undisturbed until the first of the Drakkarim appeared on Magnamund. They entered Xaagon and found the Deathlord<ch.apos/>s tomb<ch.emdash/>yet legend has it that none of them escaped Ixia alive. Perhaps they, too, serve him now. During the Age of the Black Moon, the Darklords conquered all of the territories surrounding Ixia yet they chose to avoid setting foot in the Deathlord<ch.apos/>s realm. Mindful of his origins, they feared that if he were released from his sorcerous prison he would seek to dominate and destroy them.</quote></p>
      <p><quote>My lord, are you telling me that the Deathlord of Ixia is now free of this prison <em>and</em> in possession of the Deathstaff?</quote> you asked, fearing Lord Rimoah<ch.apos/>s reply.</p>
      <p><quote>Yes, Grand Master. I<ch.apos/>m afraid that is exactly the situation which confronts us. Since the passing of the last moon, I and others of the High Council of the Elder Magi have detected a great imbalance between the forces of Good and Evil in our world. By ill chance or by Naar<ch.apos/>s design, the Deathstaff has fallen into the hands of Ixiataaga. Once again the Deathlord is free to indulge his unholy and insatiable appetite for living beings. Already we have heard reports from Lencian fishermen which tell of the destruction of remote Drakkarim settlements around the Gulf of Konkor, and there are even claims of a <ch.apos/>death fleet<ch.apos/> having been sighted in the waters of the Shakoz Bight. Yes, Grand Master, the Deathlord is free to roam the face of Magnamund once more, and I fear he will not stop until every living creature is enslaved to him in undeath.</quote></p>
      <p>For hours, you and your trusted advisor deliberated over what could be done to prevent this unspeakable disaster from befalling Magnamund. You considered a muster of the <!--ERRTAG-RA-6514-->Freeland<!--/ERRTAG-RA-6514--> armies and an immediate attack upon Ixia, but such a plan simply could not be executed. The peninsula of Ixia is far too remote and desolate a territory to be reached by any <!--ERRTAG-RA-6514-->Freeland<!--/ERRTAG-RA-6514--> army on foot, and, with winter already so far advanced, any ship-borne invasion would be doomed to fail. Time was also against you. The Deathlord had to be stopped as quickly as possible before he could unleash an army of undead upon Magnamund, an unkillable army that would grow larger with every battle it fought against the living.</p>
@@ -604,7 +607,7 @@ Initial Freepository revision - freshly minted from the proofread text
            <dd>
             <p>Grand Masters who have reached the rank of Kai Grand Guardian are able to use the following battle-spells of the Elder Magi:</p>
             <ul>
-             <li><spell>Splinter</spell><ch.emdash/>This causes breakable items such as bottles, jugs, mirrors, windows, etc[.], to shatter to pieces. The range of this spell increases as a Grand Master rises in rank.</li>
+             <li><spell>Splinter</spell><ch.emdash/>This causes breakable items such as bottles, jugs, mirrors, windows, etc., to shatter to pieces. The range of this spell increases as a Grand Master rises in rank.</li>
              <li><spell>Flameshaft</spell><ch.emdash/>This causes the tip of any Arrow or Arrow-like missile, to burn fiercely with a magical flame which cannot readily be extinguished by normal means.</li>
             </ul>
            </dd>
@@ -619,7 +622,7 @@ Initial Freepository revision - freshly minted from the proofread text
          <p>If you are a Grand Master who has reached the rank of Sun Knight (6 Disciplines), you will now benefit from improvements to the following Grand Master Disciplines:</p>
          <dl class="paragraphed">  
           <dt>Grand Weaponmastery</dt>
-           <dd><p>Sun Knights with this Discipline are able to wield two-handed weapons (e.g. Broadsword, Quarterstaff, Spear, etc.) with full effect, using only one hand.</p></dd>
+           <dd><p>Sun Knights with this Discipline are able to wield two-handed weapons (i.e. Broadsword, Quarterstaff, and Spear) with full effect, using only one hand.</p></dd>
           <dt>Deliverance</dt>
            <dd><p>Sun Knights who possess this skill are able to repair serious wounds sustained by creatures other than themselves. By the laying of hands upon the affected creature<ch.apos/>s body, a Sun Knight can cause an open wound (or other serious injury) to mend itself. The speed at which this healing takes place increases as a Grand Master rises in rank.</p></dd>
           <dt>Grand Pathsmanship</dt>
@@ -1139,7 +1142,7 @@ Initial Freepository revision - freshly minted from the proofread text
       <data>
        <p>The hideous creatures howl with glee as they fall upon you, like starving vultures descending upon a corpse.</p>
        <combat><enemy>3 Cabalah</enemy><enemy-attribute class="combatskill">56</enemy-attribute><enemy-attribute class="endurance">54</enemy-attribute></combat>
-       <p>These undead creatures are immune to Mindblast and Kai-surge.</p>
+       <p>These undead creatures are immune to <!--ERRTAG-RE-111090-->Mindblast, Psi-surge, and Kai-surge<!--/ERRTAG-RE-111090-->.</p>
        <choice idref="sect41">You may evade this combat after four rounds by <link-text>turning to 41</link-text>.</choice>
        <choice idref="sect293">If you win the fight, <link-text>turn to 293</link-text>.</choice>
       </data>
@@ -1470,7 +1473,7 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <footnotes>
        <footnote id="sect64-1-foot" idref="sect64-1">
-        <p>You may not have passed through the curtain of light on your way here.</p>
+        <p>The wording of this section ignores the fact that you may arrive here without passing through the curtain of light.</p>
        </footnote>
       </footnotes>
 
@@ -1506,8 +1509,14 @@ Initial Freepository revision - freshly minted from the proofread text
      <section class="numbered" id="sect67">
       <meta><title>67</title></meta>
 
+      <footnotes>
+       <footnote id="sect67-1-foot" idref="sect67-1">
+        <p>Unless you have Grand Weaponmastery and are a Sun Knight or higher, you may not use a two-handed weapon (i.e. Broadsword, Quarterstaff, and Spear) for this combat.</p>
+       </footnote>
+      </footnotes>
+
       <data>
-       <p>Trusting solely to your natural climbing ability, you use what little purchase you can find in the wall of the pit to assist your difficult climb back to the top. The snickering horde of chaos-creatures watch your ascent with eager anticipation. When you are within a few feet of the top, you unsheathe your weapon and get ready to fight your way out of the shaft one-handed.</p>
+       <p>Trusting solely to your natural climbing ability, you use what little purchase you can find in the wall of the pit to assist your difficult climb back to the top. The snickering horde of chaos-creatures watch your ascent with eager anticipation. When you are within a few feet of the top, you unsheathe your weapon and get ready to fight your way out of the shaft one-handed.<footref id="sect67-1" idref="sect67-1-foot"/></p>
        <illref idref="bw-ill4" class="html"/>
        <illref idref="bw-ill4" class="pdf"/>
        <combat><enemy><!--ERRTAG-RE-143354-->Chaos-horde<!--/ERRTAG-RE-143354--></enemy><enemy-attribute class="combatskill">50</enemy-attribute><enemy-attribute class="endurance">48</enemy-attribute></combat>
@@ -2304,9 +2313,15 @@ Initial Freepository revision - freshly minted from the proofread text
      <section class="numbered" id="sect137">
       <meta><title>137</title></meta>
 
+      <footnotes>
+       <footnote id="sect137-1-foot" idref="sect137-1">
+        <p>Unless you have Grand Weaponmastery and are a Sun Knight or higher, you may not use a two-handed weapon (i.e. Broadsword, Quarterstaff, and Spear) for this combat.</p>
+       </footnote>
+      </footnotes>
+
       <data>
        <p>You lasso the spur of rock on your first attempt and pull yourself out of the cloying mire barely seconds before the unseen creature, which is circling below the surface, moves in to attack your legs. On reaching the spur, you retrieve your rope and set out to climb the wall of this shaft.</p>
-       <p>Above, the snickering horde of <!--ERRTAG-RE-216006-->Chaos-creatures<!--/ERRTAG-RE-216006--> watch your ascent with eager anticipation. When you are within a few feet of the top, you unsheathe your weapon and get ready to fight your way out of the shaft one-handedly.</p>
+       <p>Above, the snickering horde of <!--ERRTAG-RE-216006-->Chaos-creatures<!--/ERRTAG-RE-216006--> watch your ascent with eager anticipation. When you are within a few feet of the top, you unsheathe your weapon and get ready to fight your way out of the shaft one-handedly.<footref id="sect137-1" idref="sect137-1-foot"/></p>
        <combat><enemy><!--ERRTAG-RE-216266-->Chaos-horde<!--/ERRTAG-RE-216266--></enemy><enemy-attribute class="combatskill">50</enemy-attribute><enemy-attribute class="endurance">48</enemy-attribute></combat>
        <p>Unless you have attained the Kai rank of Sun Lord, you must reduce your <typ class="attribute">COMBAT SKILL</typ> by 4 for the duration of this combat, due to your disadvantageous position.</p>
        <choice idref="sect82">If you win the combat, <link-text>turn to 82</link-text>.</choice>
@@ -2588,7 +2603,7 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <data>
        <p>You descend from the submarine<ch.apos/>s viewing platform and slip unseen into the frigid lake, thankful that the Platinum Amulet you are wearing is powerful enough to protect your body from the ill-effects of such devastatingly cold water. Rather than risk being seen by a patrolling group of undead warriors, you gulp a lungful of air, dive below the surface, and strike out for the distant shoreline.</p>
-       <choice idref="sect133">If you possess Kai-alchemy, and have reached the Kai rank of Sun <!--ERRTAG-RE-244423-->Thane or higher<!--/ERRTAG-RE-244423-->, <link-text>turn to 133</link-text>.</choice>
+       <choice idref="sect133">If you possess Kai-alchemy, and have reached the Kai rank of <!--ERRTAG-RE-250149-->Sun Thane<!--/ERRTAG-RE-250149-->, <link-text>turn to 133</link-text>.</choice>
        <choice idref="sect309">If you do not possess this skill, or if you have yet to attain this level of Kai Mastery, <link-text>turn to 309</link-text>.</choice>
       </data>
      </section>
@@ -2789,8 +2804,8 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <footnotes>
        <footnote id="sect179-1-foot" idref="sect179-1">
-        <p>It is unclear whether Grand Huntmastery<ch.emdash/>or the Magnakai Discipline of Huntmastery<ch.emdash/>should help you find food in this situation.</p>
-     </footnote>
+        <p>It is unclear whether Grand Huntmastery should help you find food in this situation. Note that this appears to be the only section within the Grand Master books where Huntmastery is not mentioned in when you are required to eat a Meal. This either means that the current omission is intentional because the author is otherwise so consistent, or it means that Huntmastery was intended to be applied in all situations and this is a simple omission.</p>
+       </footnote>
       </footnotes>
 
       <data>
@@ -2993,7 +3008,7 @@ Initial Freepository revision - freshly minted from the proofread text
       <data>
        <p>You flee the chamber, escaping past many Ixian and Drakkarim guards who stand rigidly immobile, fixed in the poses and attitudes they were in the very moment you vanquished the Deathlord. It was his power which gave them un-life; now that power is no more.</p>
        <p><!--ERRTAG-RE-285729-->Fearing for your survival<!--/ERRTAG-RE-285729-->, you sprint across heaving, buckling slabs of broken stone that were once smooth tiled floors, and rush down staircases that crack and twist beneath your feet. You are racing down one such stairwell when suddenly an entire section collapses, leaving a gaping hole more than fifty feet deep. Above you, a row of pillars topple like storm-shaken trees, blocking the stairs completely, and making it impossible for you to retrace your steps.</p>
-       <choice idref="sect29">If you possess Kai-alchemy, and have attained the Kai rank of Sun <!--ERRTAG-RE-286336-->Thane or higher<!--/ERRTAG-RE-286336-->, <link-text>turn to 29</link-text>.</choice>
+       <choice idref="sect29">If you possess Kai-alchemy, and have attained the Kai rank of <!--ERRTAG-RE-292491-->Sun Thane<!--/ERRTAG-RE-292491-->, <link-text>turn to 29</link-text>.</choice>
        <choice idref="sect326">If you possess Telegnosis, and have attained the Kai rank of Sun <!--ERRTAG-RE-286539-->Lord or higher<!--/ERRTAG-RE-286539-->, <link-text>turn to 326</link-text>.</choice>
        <choice idref="sect225">If you do not possess either of these Disciplines, or if you have yet to attain the relevant levels of Kai Mastery, <link-text>turn instead to 225</link-text>.</choice>
       </data>
@@ -3649,7 +3664,7 @@ Initial Freepository revision - freshly minted from the proofread text
 
       <data>
        <p>You lower your head and tug your cloak closer about your shoulders as you climb stoically towards the distant cave. You are within a few dozen yards of its inviting entrance when suddenly a crackling arc of lightning streaks down and hits you between the shoulder blades. The impact burns a hole clean through your Backpack and hurls you face-first into the snow and ice.</p>
-       <choice idref="sect312">If you possess the Discipline of Grand Huntmastery, and have reached the Kai rank of <!--ERRTAG-RE-350473-->Sun Thane or higher<!--/ERRTAG-RE-350473-->, <link-text>turn to 312</link-text>.</choice>
+       <choice idref="sect312">If you possess the Discipline of Grand Huntmastery, and have reached the Kai rank of <!--ERRTAG-RE-358087-->Sun Thane<!--/ERRTAG-RE-358087-->, <link-text>turn to 312</link-text>.</choice>
        <choice idref="sect184">If you do not possess this skill, or if you have yet to attain this level of Kai Mastery, <link-text>turn to 184</link-text>.</choice>
       </data>
      </section>
@@ -3769,9 +3784,9 @@ Initial Freepository revision - freshly minted from the proofread text
       <data>
        <p>You follow Captain Lanza as he races down to the base of the watchtower and hurries off along the slate-cobbled avenue which leads directly to the harbour. As he runs he curses and barks orders at the garrison soldiers who are fleeing from the quay, but they are wide-eyed with terror and all appear deaf to his commands. As you reach a bend in the road, you see the great black ship shuddering to a halt alongside the harbour wall. Instantly, a horde of undead warriors leap on to the quay and come rushing in pursuit of the routing Lencians. Their eyes burn with an unnatural fire and they howl like unchained demons as they mercilessly hunt their human prey.</p>
        <p>Lanza manages to rally a dozen of his best men to form a defensive line across the narrow avenue. With their shields overlapping and their swords poised ready to thrust, they brace themselves to receive the first wave of undead. The pugnacious Captain shouts words of encouragement to stave off their fear but it is clear to you that every single one of them is terrified. Their faces are drenched with sweat despite the biting cold.</p>
+       <p>With a hideous howl, the advancing mass of undead fall upon their line, hacking and stabbing at their shield-wall with their rust-dulled blades. The Lencians fight back furiously, shattering bones and cleaving skulls, but they are forced to give ground before the pressing onslaught.</p>
        <illref idref="bw-ill16" class="html"/>
        <illref idref="bw-ill16" class="pdf"/>
-       <p>With a hideous howl, the advancing mass of undead fall upon their line, hacking and stabbing at their shield-wall with their rust-dulled blades. The Lencians fight back furiously, shattering bones and cleaving skulls, but they are forced to give ground before the pressing onslaught.</p>
        <p>Then, from the midst of the enemy ranks, a grisly creature clad in mouldering black robes comes bursting through the shield-wall. A Lencian turns to thrust his sword into the creature<ch.apos/>s wormy flesh. His attack releases a gout of venom and instantly his sword crumples<ch.emdash/>corroded by the foul blood. The venom splashes him and he falls screaming to the ground, clutching at the smouldering stump that was once his hand. The creature howls with malicious glee as it leaps over his writhing body. It rushes towards you, its eye sockets blazing and its black claws extended to rake your flesh.</p>
        <combat><enemy>Cabalah</enemy><enemy-attribute class="combatskill">48</enemy-attribute><enemy-attribute class="endurance">45</enemy-attribute></combat>
        <p>This undead creature is immune to <!--ERRTAG-RE-366705-->Mindblast, Psi-surge, and Kai-surge<!--/ERRTAG-RE-366705-->.</p>
@@ -4533,7 +4548,7 @@ Initial Freepository revision - freshly minted from the proofread text
       <data>
        <p>You leave the harbour and set a northerly course to Ixia. It is less than an hour past noon and yet the winter night has already closed in. You share this icy darkness with a crew of six Lencian outposters, all of whom volunteered for this perilous mission. Lanza has ordered them to land you on the coast of Ixia and wait at anchor for seven days for you to return; they must wait no longer.</p>
        <p>The blackness is lit only by the throbbing green glow which radiates from the sphere. You stare at this mesmerizing light and you are gripped by a feeling of unease. Your Kai senses warn you that there is a lingering aura of evil aboard this ship.</p>
-       <choice idref="sect155">If you possess Deliverance and have reached the rank of Sun <!--ERRTAG-RE-440661-->Thane or higher<!--/ERRTAG-RE-440661-->, <link-text>turn to 155</link-text>.</choice>
+       <choice idref="sect155">If you possess Deliverance and have reached the rank of Sun <!--ERRTAG-RE-440661-->Thane<!--/ERRTAG-RE-440661-->, <link-text>turn to 155</link-text>.</choice>
        <choice idref="sect291">If you do not possess this skill, or if you have yet to attain this level of Kai Mastery, <link-text>turn to 291</link-text>.</choice>
       </data>
      </section>
@@ -4834,7 +4849,7 @@ Initial Freepository revision - freshly minted from the proofread text
       <meta><title>Errata</title></meta>
 
       <data>
-       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>no Kai lord</quote> with <quote>no Kai Lord</quote>, both occurrences of <quote>new-found</quote> with <quote>newfound</quote>, and <quote>north-east</quote> with <quote>northeast</quote>.<!--ERRTAG-RA-12477-ITEM--> Replaced all occurrences of <quote>shadow gate</quote> with <quote>Shadow Gate</quote>.<!--/ERRTAG-RA-12477-ITEM--><!--ERRTAG-RA-6514-ITEM--> Replaced all occurrences of <quote>freestate</quote> with <quote>Freeland</quote>.<!--/ERRTAG-RA-6514-ITEM--><!--ERRTAG-RE-5555-ITEM--> Replaced <quote>elite</quote> with <quote><ch.eacute/>lite</quote>.<!--/ERRTAG-RE-5555-ITEM--><!--ERRTAG-RE-6583-ITEM--> Replaced <quote>Naar<ch.emdash/>the King</quote> with <quote>Naar, the King</quote>.<!--/ERRTAG-RE-6583-ITEM--><!--ERRTAG-RE-7590-ITEM--> Replaced <quote>champions of evil, who</quote> with <quote>champions of evil who</quote>.<!--/ERRTAG-RE-7590-ITEM--><!--ERRTAG-RE-7774-ITEM--> Replaced <quote>Magnamund, have</quote> with <quote>Magnamund have</quote>.<!--/ERRTAG-RE-7774-ITEM--></p>
+       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>no Kai lord</quote> with <quote>no Kai Lord</quote>, both occurrences of <quote>new-found</quote> with <quote>newfound</quote>, and <quote>north-east</quote> with <quote>northeast</quote>.<!--ERRTAG-RA-12477-ITEM--> Replaced all occurrences of <quote>shadow gate</quote> with <quote>Shadow Gate</quote>.<!--/ERRTAG-RA-12477-ITEM--><!--ERRTAG-RA-6514-ITEM--> Replaced all occurrences of <quote>freestate</quote> with <quote>Freeland</quote>.<!--/ERRTAG-RA-6514-ITEM--><!--ERRTAG-RE-5555-ITEM--> Replaced <quote>elite</quote> with <quote><ch.eacute/>lite</quote>.<!--/ERRTAG-RE-5555-ITEM--><!--ERRTAG-RE-6583-ITEM--> Replaced <quote>Naar<ch.emdash/>the King</quote> with <quote>Naar, the King</quote>.<!--/ERRTAG-RE-6583-ITEM--><!--ERRTAG-RE-7590-ITEM--> Replaced <quote>champions of evil, who</quote> with <quote>champions of evil who</quote>.<!--/ERRTAG-RE-7590-ITEM--><!--ERRTAG-RE-7774-ITEM--> Replaced <quote>Magnamund, have</quote> with <quote>Magnamund have</quote>.<!--/ERRTAG-RE-7774-ITEM--><!--ERRTAG-RE-17262-ITEM--> Replaced <quote>Age of the Old Kingdoms</quote> with <quote>Age of War</quote>.<!--/ERRTAG-RE-17262-ITEM--></p>
        <p>(<a idref="gamerulz">The Game Rules</a>) Removed <quote>that you will find in the front of this book. For ease of use, and for further adventuring, it is recommended that you photocopy these pages</quote> and <quote>on the last page of this book</quote>. Changed <quote><typ class="attribute">COMBAT SKILL</typ></quote> to <quote><typ class="attribute">ENDURANCE</typ></quote> according to <cite>Lone Wolf Club Newsletter 24</cite>. Replaced <quote>Magi-Magic</quote> with <quote>Magi-magic</quote> and <quote>opposite and overleaf</quote> with <quote>below</quote>.</p>
        <p>(<a idref="discplnz">Grand Master Disciplines</a>) Replaced <quote>smell and</quote> with <quote>smell, and</quote> and both occurrences of <quote>(ie,</quote> with <quote>(i.e.</quote>.<!--ERRTAG-RE-27110-ITEM--> Replaced <quote>gods Kai and Ishir</quote> with <quote>Gods Kai and Ishir</quote>.<!--/ERRTAG-RE-27110-ITEM--><!--ERRTAG-RE-33045-ITEM--> Replaced <quote>Magi-Magic</quote> with <quote>Magi-magic</quote>.<!--/ERRTAG-RE-33045-ITEM--><!--ERRTAG-RE-34720-ITEM--> Replaced <quote>artifacts</quote> with <quote>artefacts</quote>.<!--/ERRTAG-RE-34720-ITEM--></p>
        <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>Magador you</quote> with <quote>Magador, you</quote>, <quote>eg Gold</quote> with <quote>e.g. Gold</quote>, <quote>map of the area</quote> with <quote>map of the the Maakengorge and surrounding territories</quote>, all occurrences of <quote>arrow</quote> with <quote>Arrow</quote>, all occurrences of <quote>bow</quote> with <quote>Bow</quote>, and <quote>adds 3 points</quote> with <quote>adds 5 points</quote>. Added a section about Gold Crowns which reads <quote>The currency of Magador is the Gold Crown. These are always carried in the Belt Pouch. It will hold a maximum of fifty Crowns.</quote><!--ERRTAG-RE-35809-ITEM--> Replaced <quote>safe-keeping</quote> with <quote>safekeeping</quote>.<!--/ERRTAG-RE-35809-ITEM--><!--ERRTAG-DE-35140-ITEM--> Deleted <quote>(see the inside front cover of this book)</quote>.<!--/ERRTAG-DE-35140-ITEM--><!--ERRTAG-RE-40946-ITEM--> Replaced <quote>(eg Gold Dagger</quote> with <quote>(e.g. Gold Dagger</quote>.<!--/ERRTAG-RE-40946-ITEM--><!--ERRTAG-RE-36319-ITEM--> Replaced <quote>arrows</quote> with <quote>Arrows</quote>.<!--/ERRTAG-RE-36319-ITEM--><!--ERRTAG-RA-39864-ITEM--> Replaced all occurrences of <quote>quiver</quote> with <quote>Quiver</quote>.<!--/ERRTAG-RA-39864-ITEM--><!--ERRTAG-RE-37113-ITEM--> Replaced <quote>BROADSWORD</quote> with <quote>Broadsword</quote>.<!--/ERRTAG-RE-37113-ITEM--><!--ERRTAG-RE-37196-ITEM--> Replaced <quote>BOW</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-37196-ITEM--><!--ERRTAG-RE-37292-ITEM--> Replaced <quote>QUIVER</quote> with <quote>Quiver</quote>.<!--/ERRTAG-RE-37292-ITEM--><!--ERRTAG-RE-37805-ITEM--> Replaced <quote>DAGGER</quote> with <quote>Dagger</quote>.<!--/ERRTAG-RE-37805-ITEM--><!--ERRTAG-RE-38196-ITEM--> Replaced <quote>SWORD</quote> with <quote>Sword</quote>.<!--/ERRTAG-RE-38196-ITEM--><!--ERRTAG-RE-38293-ITEM--> Replaced <quote>MEALS</quote> with <quote>Meals</quote>.<!--/ERRTAG-RE-38293-ITEM--><!--ERRTAG-RE-38729-ITEM--> Replaced <quote>ROPE</quote> with <quote>Rope</quote>.<!--/ERRTAG-RE-38729-ITEM--><!--ERRTAG-RE-39131-ITEM--> Replaced <quote>POTION OF LAUMSPUR</quote> with <quote>Potion of Laumspur</quote>.<!--/ERRTAG-RE-39131-ITEM--><!--ERRTAG-RE-39691-ITEM--> Replaced <quote>AXE</quote> with <quote>Axe</quote>.<!--/ERRTAG-RE-39691-ITEM--></p>
@@ -4864,6 +4879,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>(<a idref="sect30">30</a>)<!--ERRTAG-RE-101182-ITEM--> Replaced <quote>Kai camouflage</quote> with <quote>Kai Camouflage</quote>.<!--/ERRTAG-RE-101182-ITEM--></p>
        <p>(<a idref="sect32">32</a>)<!--ERRTAG-RA-103910-ITEM--> Replaced all occurrences of <quote>free-standing</quote> with <quote>freestanding</quote>.<!--/ERRTAG-RA-103910-ITEM--></p>
 <p>(<a idref="sect34">34</a>)<!--ERRTAG-RE-109630-ITEM--> Replaced <quote>two directions</quote> with <quote>two directions.</quote>.<!--/ERRTAG-RE-109630-ITEM--></p>
+<p>(<a idref="sect35">35</a>)<!--ERRTAG-RE-111090-ITEM--> Replaced <quote>Mindblast and Kai-surge</quote> with <quote>Mindblast, Psi-surge, and Kai-surge</quote>.<!--/ERRTAG-RE-111090-ITEM--></p>
        <p>(<a idref="sect36">36</a>)<!--ERRTAG-RE-107138-ITEM--> Replaced <quote>zigzaging</quote> with <quote>zigzagging</quote>.<!--/ERRTAG-RE-107138-ITEM--><!--ERRTAG-RE-108002-ITEM--> Replaced <quote>crystal spire</quote> with <quote>Crystal Spire</quote>.<!--/ERRTAG-RE-108002-ITEM--></p>
        <p>(<a idref="sect38">38</a>)<!--ERRTAG-RE-109561-ITEM--> Replaced <quote>demonlord</quote> with <quote>Demonlord</quote>.<!--/ERRTAG-RE-109561-ITEM--></p>
        <p>(<a idref="sect39">39</a>)<!--ERRTAG-RE-110397-ITEM--> Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.<!--/ERRTAG-RE-110397-ITEM--><!--ERRTAG-RE-111096-ITEM--> Replaced <quote>splutters, <ch.lsquot/>it<ch.apos/>s</quote> with <quote>splutters. <ch.lsquot/>It<ch.apos/>s</quote>.<!--/ERRTAG-RE-111096-ITEM--></p>
@@ -4939,7 +4955,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>(<a idref="sect154">154</a>)<!--ERRTAG-RE-237766-ITEM--> Replaced <quote>chaos-creatures</quote> with <quote>Chaos-creatures</quote>.<!--/ERRTAG-RE-237766-ITEM--></p>
        <p>(<a idref="sect155">155</a>)<!--ERRTAG-RE-238772-ITEM--> Replaced <quote>shortlived</quote> with <quote>short-lived</quote>.<!--/ERRTAG-RE-238772-ITEM--></p>
        <p>(<a idref="sect156">156</a>)<!--ERRTAG-RE-239673-ITEM--> Replaced <quote>cavern; by</quote> with <quote>cavern: by</quote>.<!--/ERRTAG-RE-239673-ITEM--></p>
-       <p>(<a idref="sect161">161</a>)<!--ERRTAG-RE-244423-ITEM--> Replaced <quote>Thane, or higher</quote> with <quote>Thane or higher</quote>.<!--/ERRTAG-RE-244423-ITEM--></p>
+       <p>(<a idref="sect161">161</a>)<!--ERRTAG-RE-250149-ITEM--> Replaced <quote>Sun Thane, or higher</quote> with <quote>Sun Thane</quote> (Sun Thane is the highest possible rank).<!--/ERRTAG-RE-250149-ITEM--></p>
        <p>(<a idref="sect163">163</a>)<!--ERRTAG-RE-246098-ITEM--> Replaced <quote>Above you</quote> with <quote>Above, you</quote>.<!--/ERRTAG-RE-246098-ITEM--><!--ERRTAG-RE-246396-ITEM--> Replaced <quote>hilt of rusty sword</quote> with <quote>hilt of a rusty sword</quote>.<!--/ERRTAG-RE-246396-ITEM--><!--ERRTAG-RE-246496-ITEM--> Replaced <quote>turn to 126</quote> with <quote>turn to 26</quote> (cf. Sections <a idref="sect37">37</a>, <a idref="sect58">58</a>, and <a idref="sect247">247</a>.<!--/ERRTAG-RE-246496-ITEM--></p>
        <p>(<a idref="sect164">164</a>)<!--ERRTAG-RE-247617-ITEM--> Replaced <quote>in Magnamund</quote> with <quote>on Magnamund</quote>.<!--/ERRTAG-RE-247617-ITEM--></p>
        <p>(<a idref="sect165">165</a>)<!--ERRTAG-RE-249397-ITEM--> Replaced <quote>Lord, or higher</quote> with <quote>Lord or higher</quote>.<!--/ERRTAG-RE-249397-ITEM--><!--ERRTAG-RA-250051-ITEM--> Replaced all occurrences of <quote>crystal spire</quote> with <quote>Crystal Spire</quote>.<!--/ERRTAG-RA-250051-ITEM--> Reduced the illustration number from XI to X. (see erratum for <a idref="sect69">Section 69</a>)</p>
@@ -4960,7 +4976,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>(<a idref="sect193">193</a>)<!--ERRTAG-RE-282679-ITEM--> Replaced <quote>crystal spire</quote> with <quote>Crystal Spire</quote>.<!--/ERRTAG-RE-282679-ITEM--></p>
        <p>(<a idref="sect194">194</a>)<!--ERRTAG-RE-282913-ITEM--> Replaced <quote>korlinium scabbard</quote> with <quote>Korlinium Scabbard</quote>.<!--/ERRTAG-RE-282913-ITEM--></p>
        <p>(<a idref="sect195">195</a>)<!--ERRTAG-RE-285121-ITEM--> Replaced <quote>cry, <ch.lsquot/>Ishir</quote> with <quote>cry. <ch.lsquot/>Ishir</quote>.<!--/ERRTAG-RE-285121-ITEM--> Reduced the illustration number from XIII to XII. (see erratum for <a idref="sect69">Section 69</a>)<!--ERRTAG-RE-290089-ITEM--> Replaced <quote>hundred leagues</quote> with <quote>hundred yards</quote>. The ship surfaces only one mile away, and now is somehow approaching from a much greater distance?.<!--/ERRTAG-RE-290089-ITEM--></p>
-       <p>(<a idref="sect196">196</a>)<!--ERRTAG-RE-285729-ITEM--> Replaced <quote>Fearing your survival</quote> with <quote>Fearing for your survival</quote>.<!--/ERRTAG-RE-285729-ITEM--><!--ERRTAG-RE-286336-ITEM--> Replaced <quote>Thane, or higher</quote> with <quote>Thane or higher</quote>.<!--/ERRTAG-RE-286336-ITEM--><!--ERRTAG-RE-286539-ITEM--> Replaced <quote>Lord, or higher</quote> with <quote>Lord or higher</quote>.<!--/ERRTAG-RE-286539-ITEM--></p>
+       <p>(<a idref="sect196">196</a>)<!--ERRTAG-RE-285729-ITEM--> Replaced <quote>Fearing your survival</quote> with <quote>Fearing for your survival</quote>.<!--/ERRTAG-RE-285729-ITEM--><!--ERRTAG-RE-286539-ITEM--> Replaced <quote>Lord, or higher</quote> with <quote>Lord or higher</quote>.<!--/ERRTAG-RE-286539-ITEM--><!--ERRTAG-RE-292491-ITEM--> Replaced <quote>Sun Thane, or higher</quote> with <quote>Sun Thane</quote> (Sun Thane is the highest possible rank).<!--/ERRTAG-RE-292491-ITEM--></p>
        <p>(<a idref="sect200">200</a>)<!--ERRTAG-RA-292181-ITEM--> Replaced all occurrences of <quote>crystal spire</quote> with <quote>Crystal Spire</quote>.<!--/ERRTAG-RA-292181-ITEM--></p>
        <p>(<a idref="sect201">201</a>)<!--ERRTAG-RE-292595-ITEM--> Replaced <quote>main mast</quote> with <quote>mainmast</quote>.<!--/ERRTAG-RE-292595-ITEM--></p>
        <p>(<a idref="sect202">202</a>)<!--ERRTAG-RE-292820-ITEM--> Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.<!--/ERRTAG-RE-292820-ITEM--></p>
@@ -4994,7 +5010,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>(<a idref="sect246">246</a>) <!--ERRTAG-RA-342470-ITEM--> Replaced all occurrences of <quote>rope</quote> with <quote>Rope</quote>.<!--/ERRTAG-RA-342470-ITEM--></p>
        <p>(<a idref="sect249">249</a>) <!--ERRTAG-RE-345839-ITEM--> Replaced <quote>ante-chamber</quote> with <quote>antechamber</quote>.<!--/ERRTAG-RE-345839-ITEM--></p>
        <p>(<a idref="sect250">250</a>) <!--ERRTAG-RE-347418-ITEM--> Replaced <quote>action they were committing</quote> with <quote>action they were performing</quote>.<!--/ERRTAG-RE-347418-ITEM--></p>
-       <p>(<a idref="sect253">253</a>) <!--ERRTAG-RE-350473-ITEM--> Replaced <quote>Sun Thane, or higher</quote> with <quote>Sun Thane or higher</quote>.<!--/ERRTAG-RE-350473-ITEM--></p>
+       <p>(<a idref="sect253">253</a>)<!--ERRTAG-RE-358087-ITEM--> Replaced <quote>Sun Thane, or higher</quote> with <quote>Sun Thane</quote> (Sun Thane is the highest possible rank).<!--/ERRTAG-RE-358087-ITEM--></p>
        <p>(<a idref="sect254">254</a>) <!--ERRTAG-RE-351282-ITEM--> Replaced <quote>pre-empt</quote> with <quote>preempt</quote>.<!--/ERRTAG-RE-351282-ITEM--><!--ERRTAG-RE-351460-ITEM--> Replaced <quote>Sun Lord, or higher</quote> with <quote>Sun Lord or higher</quote>.<!--/ERRTAG-RE-351460-ITEM--><!--ERRTAG-RE-351657-ITEM--> Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.<!--/ERRTAG-RE-351657-ITEM--></p>
        <p>(<a idref="sect255">255</a>) <!--ERRTAG-RE-352660-ITEM--> Replaced <quote>insticts</quote> with <quote>instincts</quote>.<!--/ERRTAG-RE-352660-ITEM--></p>
        <p>(<a idref="sect257">257</a>) <!--ERRTAG-RE-353910-ITEM--> Replaced <quote>demonlord</quote> with <quote>Demonlord</quote>.<!--/ERRTAG-RE-353910-ITEM--></p>
@@ -5036,7 +5052,7 @@ Initial Freepository revision - freshly minted from the proofread text
        <p>(<a idref="sect325">325</a>)<!--ERRTAG-RE-435199-ITEM--> Replaced <quote>crystal spire</quote> with <quote>Crystal Spire</quote>.<!--/ERRTAG-RE-435199-ITEM--></p>
        <p>(<a idref="sect328">328</a>)<!--ERRTAG-RE-438469-ITEM--> Replaced <quote>crystal spire</quote> with <quote>Crystal Spire</quote>.<!--/ERRTAG-RE-438469-ITEM--></p>
        <p>(<a idref="sect330">330</a>)<!--ERRTAG-RE-438501-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-438501-ITEM--><!--ERRTAG-RE-439820-ITEM--> Replaced <quote>crystal spire</quote> with <quote>Crystal Spire</quote>.<!--/ERRTAG-RE-439820-ITEM--></p>
-       <p>(<a idref="sect332">332</a>)<!--ERRTAG-RE-440661-ITEM--> Replaced <quote>Thane, or higher</quote> with <quote>Thane or higher</quote>.<!--/ERRTAG-RE-440661-ITEM--></p>
+       <p>(<a idref="sect332">332</a>)<!--ERRTAG-RE-440661-ITEM--> Replaced <quote>Thane, or higher</quote> with <quote>Thane</quote> (Sun Thane is the highest possible rank).<!--/ERRTAG-RE-440661-ITEM--></p>
        <p>(<a idref="sect333">333</a>)<!--ERRTAG-RE-443359-ITEM--> Replaced <quote>crystal spire</quote> with <quote>Crystal Spire</quote>.<!--/ERRTAG-RE-443359-ITEM--></p>
        <p>(<a idref="sect336">336</a>)<!--ERRTAG-RE-443372-ITEM--> Replaced <quote>Drakkarim undead</quote> with <quote>Drakkarim Undead</quote>.<!--/ERRTAG-RE-443372-ITEM--></p>
        <p>(<a idref="sect338">338</a>)<!--ERRTAG-RE-444244-ITEM--> Replaced <quote>millenniums</quote> with <quote>millennia</quote>.<!--/ERRTAG-RE-444244-ITEM--></p>
@@ -5062,13 +5078,15 @@ Initial Freepository revision - freshly minted from the proofread text
      <p>(<a idref="imprvdsc">Improved Grand Master Disciplines</a>) The <spell>Strength</spell> spell is, in practice, also used in armed combat contrary to what is indicated here.</p>
      <p>(<a idref="sect10">10</a>) This is the correct answer to the crystal dais grid in <a idref="sect69">Section 69</a>.</p>
      <p>(<a idref="sect20">20</a>) This is the correct answer to the ancient, green crystal lock in <a idref="sect213">Section 213</a>.</p>
-     <p>(<a idref="sect64">64</a>) You may not have passed through the curtain of light on your way here.</p>
+     <p>(<a idref="sect64">64</a>) The wording of this section ignores the fact that you may arrive here without passing through the curtain of light.</p>
+     <p>(<a idref="sect67">67</a>) Unless you have Grand Weaponmastery and are a Sun Knight or higher, you may not use a two-handed weapon (i.e. Broadsword, Quarterstaff, and Spear) for this combat.</p>
      <p>(<a idref="sect69">69</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct. You have only one chance to guess at the correct answer. If you guess incorrectly, <a idref="sect139">turn immediately to 139</a>.</p>
      <p>(<a idref="sect96">96</a>) Kajarda are undead. (See Section <a idref="sect8">8</a>, <a idref="sect52">52</a>, or <a idref="sect265">265</a>.)</p>
      <p>(<a idref="sect100">100</a>) This is the correct answer to the intricate lockplate in the center of the green crystal door in <a idref="sect322">Section 322</a>.</p>
      <p>(<a idref="sect123">123</a>) It is unclear whether a 0 picked on the <a idref="random">Random Number Table</a> should count as exactly 0. Since the procedure described here is similar to the procedure for Kai-blast, and you are required to be a Sun Lord who has mastered Kai-surge, it would be reasonable to count 0 as a 1 in the same way as for Kai-blast.</p>
      <p>(<a idref="sect125">125</a>) Kajarda are undead. (See Section <a idref="sect6">6</a>, <a idref="sect8">8</a>, <a idref="sect52">52</a>, <a idref="sect103">103</a>, <a idref="sect120">120</a>, or <a idref="sect265">265</a>.)</p>
-     <p>(<a idref="sect179">179</a>) It is unclear whether Grand Huntmastery<ch.emdash/>or the Magnakai Discipline of Huntmastery<ch.emdash/>should help you find food in this situation.</p>
+     <p>(<a idref="sect137">137</a>) Unless you have Grand Weaponmastery and are a Sun Knight or higher, you may not use a two-handed weapon (i.e. Broadsword, Quarterstaff, and Spear) for this combat.</p>
+     <p>(<a idref="sect179">179</a>) It is unclear whether Grand Huntmastery should help you find food in this situation. Note that this appears to be the only section within the Grand Master books where Huntmastery is not mentioned in when you are required to eat a Meal. This either means that the current omission is intentional because the author is otherwise so consistent, or it means that Huntmastery was intended to be applied in all situations and this is a simple omission.</p>
      <p>(<a idref="sect213">213</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct. You have only one chance to guess at the correct answer. If you guess incorrectly, <a idref="sect199">turn immediately to 199</a>.</p>
      <p>(<a idref="sect220">220</a>) This is a permanent enhancement to this Weapon.</p>
      <p>(<a idref="sect239">239</a>) There is no path which leads to this section of the book. It is functionally identical to <a idref="sect23">Section 23</a> and <a idref="sect242">Section 242</a>, and therefore its isolation does not affect the gameplay of the book.</p>
