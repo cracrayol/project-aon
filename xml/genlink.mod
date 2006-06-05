@@ -14,3 +14,5 @@ These entities define URLs of general utility.
 <!ENTITY link.the.affair.website   "http://www.theaffair.co.uk/">
 <!ENTITY link.paul.bonner.website  "http://www.paulbonnerart.com/">
 <!ENTITY link.melvyn.grant.website "http://www.melgrant.com/">
+
+<!ENTITY link.rh "http://www.projectaon.org/en/ReadersHandbook/Home">
