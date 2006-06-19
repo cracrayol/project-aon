@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE gamebook SYSTEM "gamebook.dtd" [
  <!ENTITY % xhtml.characters SYSTEM "htmlchar.mod">
  %xhtml.characters;
@@ -6,14 +5,19 @@
  %general.links;
  <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
  %xhtml.links;
+ <!ENTITY % general.inclusions SYSTEM "geninc.mod">
+ %general.inclusions;
 ]>
 
-<gamebook xml:lang="en-UK" version="0.10">
+<gamebook xml:lang="en-UK" version="0.11.3">
 
 <!--
 
 $Id$
 $Log$
+Revision 1.4  2006/06/19 08:22:53  cvsuser
+Made errata changes for consistency with other books in series.
+
 Revision 1.3  2005/12/07 12:44:23  Wibbleboy
 Applied misc formatting changes to match manual of style.
 
@@ -42,19 +46,19 @@ Initial revision
 -->
 <meta>
  <title>The Omega Zone</title>
-  <creator class="short">Joe Dever and Brian Williams</creator>
+  <creator class="short">Joe Dever</creator>
   <creator class="medium">Joe Dever<br />Illustrated by Brian Williams</creator>
   <creator class="long">
-   &inclusion.joe.dever.bio.lw;
-   &inclusion.brian.williams.bio.lw;
+   &inclusion.joe.dever.bio.fw;
+   &inclusion.brian.williams.bio.fw;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2005</year><month>11</month><day>25</day></date>
+  <date class="publication"><year>2005</year><month>12</month><day>17</day></date>
   <description class="blurb">
    <p>You are Cal Phoenix, the Freeway Warrior, champion and protector of Dallas Colony One. The third stage of your life-or-death exodus to the California coast takes your colony of survivors across the wastelands of New Mexico and Arizona, a region still blighted by lethal radioactivity.  Can you find the safe route through to the sanctuary of Tuscon, or will you and your people perish in the desolation of The Omega Zone?"</p> 
   </description>
   <description class="publication">
-   <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
+   <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
   </description>
   <rights class="copyrights">Text copyright <ch.copy/> 1988 Joe Dever.<br />Illustrations copyright <ch.copy/> 1988 Brian Williams.</rights>
   <rights class="license-notification">
@@ -95,8 +99,8 @@ Initial revision
    </meta>
 
    <data>
-    <p><quote>I would be especially pleased if my granting of the rights to distribute my books in this way was seen as my <quote>millennium gift</quote> to all those devoted readers who have kept the Kai flag flying high, through all the good times, and the not-so-good. It would make me very proud indeed if this enterprise laid the foundations of a lasting legacy, securing the longevity of Lone Wolf by making my creation freely and readily accessible to current and future online generations. For them, for us, for Sommerlund and the Kai.<ch.ellips/></quote> <strong>Joe Dever</strong></p>
-    <p>Project Aon would first like to thank Joe Dever for making this generous offering of the books that we have all loved from the beginning. We would also like to acknowledge the following members of Project Aon for their diligent work:</p>
+
+     &inclusion.joe.dever.endowment;
 
     <section class="frontmatter" id="credits">
      <meta><title>Credits</title></meta>
@@ -104,23 +108,23 @@ Initial revision
      <data>
       <dl>
        <dt>Transcription</dt>
-        <dd>Ryan Landek</dd>
+        <dd>Philip Baccus</dd>
        <dt>Illustration Transcription</dt>
-        <dd>Jonathan Blake<br />Simon Osborne</dd>
+        <dd></dd>
        <dt>XML</dt>
-        <dd>Jonathan Blake<br />Jeff Dougan</dd>
+        <dd>Jonathan Blake<br />Iain Smith</dd>
        <dt>Alternate Illustrations</dt>
-        <dd>JC Alvarez (text illustrations and action charts)<br />Jonathan Blake (extramatter charts and tables)<br />Michael Hahn (map)</dd>
+         <dd></dd>
        <dt>Proofreading</dt>
-        <dd>Mark Laird (Sections 36<ch.endash/>70 and 281<ch.endash/>315)<br />Christian Leonhard (Sections 106<ch.endash/>140 and 211<ch.endash/>245)<br />Brad Phelps (Sections 176<ch.endash/>210)<br />Michael Richey (Sections 1<ch.endash/>35 and 316<ch.endash/>350)<br />Tyson Torres (Sections 71<ch.endash/>105, 141<ch.endash/>175 and 246<ch.endash/>280)</dd>
+         <dd>Jeff Dougan (frontmatter)<br />Frank Prather (sections 1&endash;350)</dd>
        <dt>Editing</dt>
-        <dd>Mike Feldman<br />Ingo Kl<ch.ouml/>cker<br />Mark Laird<br />Simon Osborne<br />Thomas Wolmer</dd>
-       <dt>PDF Layout</dt>
-        <dd>Ingo Kl<ch.ouml/>cker</dd>
+        <dd></dd>
+        <!-- <dt>PDF Layout</dt>
+         <dd></dd> -->
        <dt>Coordination</dt>
         <dd>Jonathan Blake</dd>
        <dt>Special Thanks</dt>
-        <dd>Pedro Almeida</dd>
+        <dd></dd>
       </dl>
      </data>
     </section>
@@ -167,7 +171,7 @@ Initial revision
 
     <p>Six months after you arrived at DC1, the colony was faced with a major crisis. A heat wave was causing a drought that threatened to destroy the food supply. Crops were failing and the colony's artesian well, its only source of uncontaminated water, was beginning to dry up. The drought was also provoking more attacks from the city punks, who were desperate for food and water. Their common need had united them and now they posed a very real threat to the security of DC1. It was the last day of May, 2020, when Pop Ewell made radio contact with another colony, who were based in the city of Big Spring, 300 miles west of McKinney. Their situation was completely the reverse of DC1'S: they had food and water in plentiful supply but they were desperately short of fuel. They told of their contact with survivors in Tucson, Arizona, who were also without fuel. The Tucson colony reported that the territories west of the Sierra Nevada mountains had been spared the worst effects of the radioactive blizzards that had devastated the rest of the country and, miraculously, much of southern California was still widely populated: it had survived the last eight years virtually intact. When you heard the news you could hardly believe your ears. Perhaps your family were still alive. After all that had happened, there was now a real hope that one day you might be reunited with them.</p>
     <p>A meeting was held to decide how best to deal with the crisis facing DC1. Everyone agreed that to stay at McKinney would lead to eventual death, either slowly from starvation or suddenly at the hands of the murderous city gangs. The only choice open to DC1 was to try to reach California; only there lay real hope for the future of the colony. The decision was relayed to the survivors at Big Spring and a deal was struck to rendezvous with them as soon as possible. DC1 would give them fuel in exchange for food and water, and together they would join up with the Tucson colony for the final stage of the journey to California.</p>
-    <p>Careful preparations were made for the long trek, and three vehicles were chosen to make up the convoy: the school bus, your customized roadster, and a gasolene tanker laden with 5000 gallons of petroleum syphoned from underground storage tanks at the Ewell ranch. Supplies of food and water were adequate but the colony lacked sufficient firearms and ammunition with which to defend itself. On the day before the convoy was due to leave, one of the colonists was sent north to search the town of Sherman for weapons. He radioed back to say that he had found a cache of hunting rifles and ammunition, but that his truck had broken down and he was stranded in the town. He had also found a survivor - a beautiful teenage girl - and he requested that you go to Sherman to pick them up. As soon as you arrived you were ambushed by the scouts of a brutal gang of bikers known as the Detroit Lions and, in the ensuing gun battle, you killed Stinger - the scouts' leader.</p>
+    <p>Careful preparations were made for the long trek, and three vehicles were chosen to make up the convoy: the school bus, your customized roadster, and a gasolene tanker laden with 5000 gallons of petroleum siphoned from underground storage tanks at the Ewell ranch. Supplies of food and water were adequate but the colony lacked sufficient firearms and ammunition with which to defend itself. On the day before the convoy was due to leave, one of the colonists was sent north to search the town of Sherman for weapons. He radioed back to say that he had found a cache of hunting rifles and ammunition, but that his truck had broken down and he was stranded in the town. He had also found a survivor - a beautiful teenage girl - and he requested that you go to Sherman to pick them up. As soon as you arrived you were ambushed by the scouts of a brutal gang of bikers known as the Detroit Lions and, in the ensuing gun battle, you killed Stinger - the scouts' leader.</p>
     <p>Later you learned that the girl - Kate Norton - was the sole survivor of a Kansas City colony, which had been attacked and wiped out by the Detroit Lions. The Lions' leader, who calls himself 'Mad Dog Michigan', had taken a liking to her and spared her life. Mad Dog was once a high-ranking HAVOC agent who had escaped from Pontiac Deep Pen near Detroit, and he and his gang, most of whom were also HAVOC escapees, were heading for the Fort Hood Military Reserve near Killeen, Texas, the largest armoury in the whole of the United States. There he hoped to find enough weapons to equip the other HAVOC clans who were now in control of cities all along the eastern seaboard. Kate had managed to steal a motorcycle and escape from their camp, but Mad Dog was determined to get her back. He sent his brother - Stinger - and a handful of his best scouts to track her down, and they had finally caught up with her at Sherman.</p>
 
     <p>When Mad Dog learned that you had killed his brother, he vowed to get even with you at any price. He abandoned his plans to loot Fort Hood and embarked instead on a relentless pursuit of your colony as it crossed the sun-scorched wastelands of Texas. The journey to Big Spring was fraught with great danger, and yet, in spite of the many perils you faced - perhaps because of them - you felt yourself falling in love with Kate. Moreover you sensed that she was becoming increasingly fond of you. Sadly, the convoy was only a few miles from Big Spring when disaster struck. The land surrounding the settlement was controlled by a gang of bikers, a renegade clan called 'the Mavericks' who had been the bane of the Big Spring colony for many months. As the convoy drew nearer to its destination, the Mavericks launched an attack, and, in the running battle that ensued, they captured and abducted Kate. The convoy entered the fortified gates of Big Spring to a rapturous welcome from the colonists of that settlement, but for you the mood of celebration was soured by the vivid memory of Kate's abduction. You vowed to rescue her, and from that moment on every waking minute of every day at Big Spring was spent thinking about little else.</p>
@@ -885,9 +889,9 @@ Initial revision
      <meta><title>36</title></meta>
 
      <data>
-      <p>Nervously you wipe your palms then pump a shot-shell into the breach of your Remington Brushmaster. A quick glance confirms that the safety catch is off. Then you tense yourself in preparation for this dangerous run.</p>
+      <p>Nervously you wipe your palms then pump a shell into the breach of your Remington Brushmaster. A quick glance confirms that the safety catch is off. Then you tense yourself in preparation for this dangerous run.</p>
       <p>Slowly you count down from five and, the moment your count is complete, you leap to your feet and race up the steps. As you clear the crater you mark your destination and sprint towards it, whilst simultaneously covering yourself by firing your shotgun at the sniper's position.</p>
-      <p>Add together your Stealth Skill total and your current <typ class="attribute">ENDURANCE</typ> points score. To this total add 1 point for every round you choose to fire from your shotgun (minimum equals one round; maximum equals five rounds).</p>
+      <p>Add together your Stealth Skill total and your current <typ class="attribute">ENDURANCE</typ> points score. To this total add 1 point for every round you choose to fire from your shotgun (minimum: one round; maximum: five rounds).</p>
       <choice idref="sect249">If your total score is now 11 or less, <link-text>turn to 249</link-text>.</choice>
       <choice idref="sect210">If your total score is 12 or more, <link-text>turn to 210</link-text>.</choice>
      </data>
@@ -919,7 +923,7 @@ Initial revision
      <meta><title>39</title></meta>
 
      <data>
-      <p>Within a minute he has made a hole large enough to of the truck, there is another sharp crack, followed by the trailing sound of a rifle shot echoing across the surrounding mountains.</p>
+      <p>On the other side of the truck, there is another sharp crack, followed by the trailing sound of a rifle shot echoing across the surrounding mountains.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth and Perception skill totals.</p>
       <choice idref="sect347">If your total score is 12 or less, <link-text>turn to 347</link-text>.</choice>
       <choice idref="sect10">If your total is 13-16, <link-text>turn to 10</link-text>.</choice>
@@ -1240,7 +1244,7 @@ Initial revision
      <meta><title>66</title></meta>
 
      <data>
-      <p>The gas station's three storage tanks have been emptied of fuel recently, but a little still remains at the bottom of each. It takes an hour to syphon this residual gasolene - less than two gallons - from the tanks, by which time Sergeant Haskell has been able to seal the three bullet holes.</p>
+      <p>The gas station's three storage tanks have been emptied of fuel recently, but a little still remains at the bottom of each. It takes an hour to siphon this residual gasolene - less than two gallons - from the tanks, by which time Sergeant Haskell has been able to seal the three bullet holes.</p>
       <p>While Haskell is pouring the precious gasolene into the truck, you help Knott to make a quick search of the gas station for useful spares. Your search uncovers the following items:</p>
       <ul>
        <li><typ class="item">Electrolyte</typ></li>
@@ -1554,7 +1558,7 @@ Initial revision
      <meta><title>92</title></meta>
 
      <data>
-      <p>The only way you know of retrieving gasolene from a fuel tank is by syphoning, and to do this you need a length of tubing. You search the parking lot, but can find nothing that remotely resembles a length of flexible pipe. Then you remember something that Cutter taught you when you were learning to drive, and the recollection of it spreads a smile across your face. Using a braided fuel line cut from the carburettor, you are able to syphon more than a gallon of gasolene from the truck's fuel tank. Once you are sure that you have retrieved as much fuel as possible, you seal the fuel can and call for Marine Knott to join you in the parking lot.</p>
+      <p>The only way you know of retrieving gasolene from a fuel tank is by siphoning, and to do this you need a length of tubing. You search the parking lot, but can find nothing that remotely resembles a length of flexible pipe. Then you remember something that Cutter taught you when you were learning to drive, and the recollection of it spreads a smile across your face. Using a braided fuel line cut from the carburettor, you are able to siphon more than a gallon of gasolene from the truck's fuel tank. Once you are sure that you have retrieved as much fuel as possible, you seal the fuel can and call for Marine Knott to join you in the parking lot.</p>
       <p>If you wish to keep the braided fuel line, mark it as a <typ class="item">Plastic Tube</typ> on your list of Backpack items.</p>
       <choice idref="sect47"><link-text>Turn to 47</link-text>.</choice>
      </data>
@@ -1775,7 +1779,7 @@ Initial revision
       <p>After ten hours' deep, uninterrupted sleep, you wake feeling thoroughly refreshed: restore 4 <typ class="attribute">ENDURANCE</typ> points. The barricade is still intact and, once it is dismantled, you arm yourself before investigating the six other buildings that comprise the town. All of them are empty and show no signs of having been entered during the night, prompting you to believe that you may, at least for the time being , have given the assassin the slip.</p>
       <p>In a shack behind the diner you discover a motorcycle that is in a serviceable condition. The tyres are sound and the gas tank is over half full with gasolene, but its oil level is very low. As you kick start the engine you can only hope that it will get you as far as Tucson before breaking down.</p>
       <p>After studying the map you mount your new vehicle and set off, heading north along Highway 666. You have ridden only seven miles when a collapsed bridge forces you to change direction and travel west along an unmarked mountain road. You enjoy the cool breeze whipping through your hair as you ride at speed along this empty trail, and you cover more than twenty miles before coming to a small town where a sign proclaims:</p>
-      <p><signpost>GLEESON WELCOMES CAREFUL DRIVERS</signpost></p>
+      <signpost>GLEESON WELCOMES CAREFUL DRIVERS</signpost>
       <choice idref="sect64">If you wish to stop at this mountain town, <link-text>turn to 64</link-text>.</choice>
       <choice idref="sect50">If you decide to ride through without stopping, <link-text>turn to 50</link-text>.</choice>
      </data>
@@ -1950,7 +1954,7 @@ Initial revision
      <data>
       <p>Nervously you wipe your sweaty palms on the front of your T-shirt before checking to see that there is a live round in the breach of your rifle. Then, once you are sure that your equipment is secure, you tense yourself to begin this dangerous run.</p>
       <p>Slowly you count down from five and, the moment your count is complete, you leap to your feet and race up the steps. As you clear the crater, you mark your destination and sprint towards it, whilst simultaneously covering yourself by firing your rifle at the sniper's position.</p>
-      <p>Add together your Stealth skill total and your current <typ class="attribute">ENDURANCE</typ> points score. To this total add 1 point for every round you choose to fire from your gun (minimum equals one round; maximum equals three rounds).</p>
+      <p>Add together your Stealth skill total and your current <typ class="attribute">ENDURANCE</typ> points score. To this total add 1 point for every round you choose to fire from your gun (minimum: one round; maximum: three rounds).</p>
       <choice idref="sect249">If your total score is now 13 or less, <link-text>turn to 249</link-text>.</choice>
       <choice idref="sect210">If your total score is 14 or more, <link-text>turn to 210</link-text>.</choice>
      </data>
@@ -1993,7 +1997,7 @@ Initial revision
      <meta><title>129</title></meta>
 
      <data>
-      <p>You leave the office by a rear door that opens on to a parking lot. Here you find Marine Knott. He has discovered a wrecked US mail truck, and although the engine and tyres are beyond repair, he has been able to syphon more than a gallon of gasolene from its fuel tank. You congratulate him on his find, and together you return to the furniture store to meet up with Frankland and Haskell.</p>
+      <p>You leave the office by a rear door that opens on to a parking lot. Here you find Marine Knott. He has discovered a wrecked US mail truck, and although the engine and tyres are beyond repair, he has been able to siphon more than a gallon of gasolene from its fuel tank. You congratulate him on his find, and together you return to the furniture store to meet up with Frankland and Haskell.</p>
       <choice idref="sect218"><link-text>Turn to 218</link-text>.</choice>
      </data>
     </section>
@@ -2215,7 +2219,7 @@ Initial revision
      <data>
       <p>You pull back the slide of your Beretta just far enough to check that there is a bullet in the breach, then you tense yourself in preparation for this dangerous run.</p>
       <p>Slowly you count down from five and, the moment your count is complete, you leap to your feet and race up the steps. As you clear the crater, you mark your destination and sprint towards it, whilst simultaneously covering yourself by firing your pistol at the sniper's position.</p>
-      <p>Add together your Stealth skill total and your current <typ class="attribute">ENDURANCE</typ> points score. To this total add 1 point for every round you choose to fire from your pistol (minimum equals one round; maximum equals eight rounds).</p>
+      <p>Add together your Stealth skill total and your current <typ class="attribute">ENDURANCE</typ> points score. To this total add 1 point for every round you choose to fire from your pistol (minimum: one round; maximum: eight rounds).</p>
       <choice idref="sect249">If your total score is now 13 or less, <link-text>turn to 249</link-text>.</choice>
       <choice idref="sect210">If your total score is 14 or more, <link-text>turn to 210</link-text>.</choice>
      </data>
@@ -2241,7 +2245,7 @@ Initial revision
      <meta><title>150</title></meta>
 
      <data>
-      <p>For a few seconds you stand entranced, not knowing for sure whether you are dead or alive. Then, as the warm breeze clears the lingering gunsmoke, you see the body of the assassin lying motionless beside the courthouse wall. You are filled with a great sense of relief, as if a huge weight has been lifted from your shoulders. Then the shock of your encounter takes hold of your body and you begin to shiver uncontrollably. You must now take a Drink or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
+      <p>For a few seconds you stand entranced, not knowing for sure whether you are dead or alive. Then, as the warm breeze clears the lingering gun smoke, you see the body of the assassin lying motionless beside the courthouse wall. You are filled with a great sense of relief, as if a huge weight has been lifted from your shoulders. Then the shock of your encounter takes hold of your body and you begin to shiver uncontrollably. You must now take a Drink or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <p>With grim curiosity you move forward to search the body. You pull off his helmet and stare at the face of this killer. At once you recognize the cruel, angular features: he is Helmut Varken, a top HAVOC assassin who achieved infamy on 1 May, 2008 when he assassinated both the President of the United States, and the General Secretary of the Supreme Soviet at an emergency summit meeting in Rome. HAVOC were proud of his ignoble feat, and when by chance they leaked his identity, his photograph appeared on every television screen and on the front page of every newspaper around the world. You were only eight years old at the time, but the image of his face became synonymous with the evil that HAVOC represented, and it etched itself indelibly upon your mind.</p>
       <p>As your pulse returns to normal, you begin to search his blood-stained body. You are disappointed to find that his air-con suit has been irreparably damaged, but you discover more than enough useful items to compensate for the loss:</p>
       <ul>
@@ -2832,7 +2836,7 @@ Initial revision
      <meta><title>195</title></meta>
 
      <data>
-      <p>Using rubber sealant, insulation tape, and strips of metal cut from an old oil can, you help the sergeant to patch up the three bullet holes. Meanwhile, the others are able to syphon nearly two gallons of gasolene from the station's storage tanks, which is then carefully transferred to the truck's newly repaired fuel tank. Captain Frankland is disappointed at having found so little fuel, but Knott assures him that it should be sufficient to enable you to reach Lordsburg and rendezvous with the colony.</p>
+      <p>Using rubber sealant, insulation tape, and strips of metal cut from an old oil can, you help the sergeant to patch up the three bullet holes. Meanwhile, the others are able to siphon nearly two gallons of gasolene from the station's storage tanks, which is then carefully transferred to the truck's newly repaired fuel tank. Captain Frankland is disappointed at having found so little fuel, but Knott assures him that it should be sufficient to enable you to reach Lordsburg and rendezvous with the colony.</p>
       <p>Once the refuelling is completed, you climb aboard and set off in a new direction - north, towards a junction with Interstate Freeway 10.</p>
       <choice idref="sect183"><link-text>Turn to 183</link-text>.</choice>
      </data>
@@ -3491,7 +3495,7 @@ Initial revision
        <instance class="html" src="ill15.gif" width="386" height="572" />
        <instance class="pdf" src="ill15.pdf" width="386" height="572" />
       </illustration>
-      <p>Kate draws her pistol, but before she can take aim, you hear a burst of heavy machine gunfire and see muzzle flashes erupting from the front of Mad Dog's speedster. The heavy-calibre rounds slam into your trunk, and the force of their impact at high speed sends your roadster careering into a skid.</p>
+      <p>Kate draws her pistol, but before she can take aim, you hear a burst of heavy machine gun fire and see muzzle flashes erupting from the front of Mad Dog's speedster. The heavy-calibre rounds slam into your trunk, and the force of their impact at high speed sends your roadster careering into a skid.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Driving skill total.</p>
       <choice idref="sect41">If your total score is now 6 or less, <link-text>turn to 41</link-text>.</choice>
       <choice idref="sect161">If it is 7-10, <link-text>turn to 161</link-text>.</choice>
@@ -3538,7 +3542,7 @@ Initial revision
       <p>You wake shortly after dawn feeling thoroughly refreshed after ten hours' uninterrupted sleep: restore 4 <typ class="attribute">ENDURANCE</typ> points. The barricade is still intact and, once it is dismantled, you arm yourself and investigate the cabin above. Nothing has been touched during the night, prompting you to believe that you may, at least for the time being, have given the assassin the slip.</p>
       <p>After eating breakfast, you set about unpacking and constructing the motorcycle. There is sufficient gasolene stored in the cellar to fill its tank, but you can find no engine oil. The motorcycle's oil level is very low and you can only hope that it will get you as far as Tucson before breaking down.</p>
       <p>After studying the map, you mount your new vehicle and set off along the road, heading west through the Swisshelm Mountains. You enjoy the cool breeze whipping through your hair as you ride at speed along the empty highway, and you cover more than twenty miles before you come to a small town with a sign that proclaims:</p>
-      <p><signpost>GLEESON WELCOMES CAREFUL DRIVERS</signpost></p>
+      <signpost>GLEESON WELCOMES CAREFUL DRIVERS</signpost>
       <choice idref="sect64">If you wish to stop at this mountain town, <link-text>turn to 64</link-text>.</choice>
       <choice idref="sect50">If you decide to ride through without stopping, <link-text>turn to 50</link-text>.</choice>
      </data>
@@ -3695,7 +3699,7 @@ Initial revision
      <meta><title>269</title></meta>
 
      <data>
-      <p>Using the length of plastic tubing, you are able to syphon more than a gallon of gasolene from the truck's fuel tank. Once you are sure that you have retrieved as much fuel as possible, you seal the fuel can and call for Marine Knott to join you in the parking lot.</p>
+      <p>Using the length of plastic tubing, you are able to siphon more than a gallon of gasolene from the truck's fuel tank. Once you are sure that you have retrieved as much fuel as possible, you seal the fuel can and call for Marine Knott to join you in the parking lot.</p>
       <choice idref="sect47"><link-text>Turn to 47</link-text>.</choice>
      </data>
     </section>
@@ -3778,7 +3782,7 @@ Initial revision
      <meta><title>276</title></meta>
 
      <data>
-      <p>The three other members of the sabotage team are waiting for you at an earth rampart that forms part of the southern perimeter wall. In a hushed voice, Captain Frankland gives a final briefing, while you join with the others in applying camouflage blacking to your face, and taping your weapons and equipment to muffle any noise. Five hundred yards away, across a rubble-strewn no-man's-land, clan snipers are entrenched behind a makeshift barricade of old cars and other debris. Their rifles are trained on Fort Bliss and, in the past, they have been all too eager to use them whenever a target has presented itself. Crossing this zone will be perilous in the extreme and, in order to minimize the risks of the mission failing here, the captain proposes that the team split into pairs and cross the zone at two separate locations. Each pair is to make its way through the enemy cordon and the city beyond, and then regroup at the Stanton Street Toll Bridge at one a.m. precisely. You synchronize watches before joining with your chosen partner, Marine Knott, in getting ready to go.</p>
+      <p>The three other members of the sabotage team are waiting for you at an earth rampart that forms part of the southern perimeter wall. In a hushed voice, Captain Frankland gives a final briefing, while you join with the others in applying camouflage blacking to your face, and taping your weapons and equipment to muffle any noise. Five hundred yards away, across a rubble-strewn no-man's-land, clan snipers are entrenched behind a makeshift barricade of old cars and other debris. Their rifles are trained on Fort Bliss and, in the past, they have been all too eager to use them whenever a target has presented itself. Crossing this zone will be perilous in the extreme and, in order to minimize the risks of the mission failing here, the captain proposes that the team split into pairs and cross the zone at two separate locations. Each pair is to make its way through the enemy cordon and the city beyond, and then regroup at the Stanton Street Toll Bridge at 1 a.m. precisely. You synchronize watches before joining with your chosen partner, Marine Knott, in getting ready to go.</p>
       <p>There are two routes open to you. The most direct path will take you south, through the heart of El Paso where the enemy are most numerous. Or you can attempt a detour around the northern edge of the city before you try to reach the bridge, a longer but possibly less dangerous route.</p>
       <choice idref="sect190">If you wish to cross the zone heading south, directly towards the city, <link-text>turn to 190</link-text>.</choice>
       <choice idref="sect44">If you decide to cross the zone heading west, on a detour around the city, <link-text>turn to 44</link-text>.</choice>
@@ -3993,7 +3997,7 @@ Initial revision
 
      <data>
       <p>You decide to make a dash for the clump of foliage before the sniper circles around the crater and picks you off at his leisure. With sweat-slick hands you raise your gun and get ready to fire as you run for cover.</p>
-      <signpost>Note: If Your <typ class="attribute">ENDURANCE</typ> points score is low and you are heavily encumbered, it may be advisable to discard some of your Backpack items now, in order to increase your Stealth skill score before you attempt your run.</signpost>
+      <p>Note: If Your <typ class="attribute">ENDURANCE</typ> points score is low and you are heavily encumbered, it may be advisable to discard some of your Backpack items now, in order to increase your Stealth skill score before you attempt your run.</p>
       <choice idref="sect148">If you are holding a Pistol, <link-text>turn to 148</link-text>.</choice>
       <choice idref="sect323">If it is a Machine Pistol, <link-text>turn to 323</link-text>.</choice>
       <choice idref="sect36">If it is a Shotgun, <link-text>turn to 36</link-text>.</choice>
@@ -4326,7 +4330,7 @@ Initial revision
      <data>
       <p>You draw back the bolt of your G-12 and make a quick check of the magazine to ensure that you have sufficient bullets to cover yourself. Then, with your pulse pounding loudly in your ears, you get ready to run to the forest.</p>
       <p>Slowly you count down from five and, the moment your count is complete, you leap to your feet and scramble up the steps. As you clear the crater, you fix your destination and sprint towards it, your machine pistol blazing at your hip.</p>
-      <p>Add together your Stealth skill total and your current <typ class="attribute">ENDURANCE</typ> points score. To this total add 1 point for every burst you choose to fire from your machine pistol (minimum equals one round; maximum equals five rounds).</p>
+      <p>Add together your Stealth skill total and your current <typ class="attribute">ENDURANCE</typ> points score. To this total add 1 point for every burst you choose to fire from your machine pistol (minimum: one burst; maximum: five bursts).</p>
       <choice idref="sect249">If your total score is now 12 or less, <link-text>turn to 249</link-text>.</choice>
       <choice idref="sect210">If your total score is 13 or more, <link-text>turn to 210</link-text>.</choice>
      </data>
@@ -4813,25 +4817,40 @@ Initial revision
      <meta><title>Errata</title></meta>
      <data>
       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>re-establish</quote> with <quote>reestablish</quote>.</p>
+      <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>syphoned</quote> with <quote>siphoned</quote>.</p>
       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>if you pick a O</quote> with <quote>if you pick a 0</quote>.</p>
       <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
       <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote><ch.plus/> 1) He</quote> with <quote><ch.plus/>1). He</quote>.</p>
       <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>map of New Mexico/Arizona</quote> with <quote>Map of New Mexico/Arizona</quote>.</p>
       <p>(<a idref="sect8">8</a>) Replaced <quote>head over heals</quote> with <quote>head over heels</quote>.</p>
       <p>(<a idref="sect11">11</a>) Replaced <quote>antispetics</quote> with <quote>antiseptics</quote>.</p>
+      <p>(<a idref="sect36">36</a>) Replaced <quote>shot-shell</quote> with <quote>shell</quote>.</p>
+      <p>(<a idref="sect36">36</a>) Replaced <quote>(minimum equals one round; maximum equals five rounds)</quote> with <quote>(minimum: one round; maximum: five rounds)</quote>.</p>
+      <p>(<a idref="sect39">39</a>) Replaced <quote>Within a minute he has made a hole large enough to of the truck, there is another sharp crack</quote> with <quote>On the other side of the truck, there is another sharp crack</quote>.</p>
       <p>(<a idref="sect55">55</a>) Replaced <quote>Tennon Saw</quote> with <quote>Tenon Saw</quote>.</p>
+      <p>(<a idref="sect66">66</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
+      <p>(<a idref="sect92">92</a>) Replaced <quote>syphoning</quote> with <quote>siphoning</quote> and <quote>syphon</quote> with <quote>siphon</quote>.</p>
       <p>(<a idref="sect98">98</a>) Replaced <quote>If is is 11 or more</quote> with <quote>If it is 11 or more</quote>.</p>
       <p>(<a idref="sect104">104</a>) Replaced <quote>reassurringly</quote> with <quote>reassuringly</quote>.</p>
+      <p>(<a idref="sect125">125</a>) Replaced <quote>(minimum equals one round; maximum equals three rounds)</quote> with <quote>(minimum: one round; maximum: three rounds)</quote>.</p>
+      <p>(<a idref="sect129">129</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
       <p>(<a idref="sect136">136</a>) Replaced <quote>turn 235</quote> with <quote>turn to 235</quote>.</p>
+      <p>(<a idref="sect148">148</a>) Replaced <quote>(minimum equals one round; maximum equals eight rounds)</quote> with <quote>(minimum: one round; maximum: eight rounds)</quote>.</p>
+      <p>(<a idref="sect150">150</a>) Replaced <quote>gunsmoke</quote> with <quote>gun smoke</quote>.</p>
       <p>(<a idref="sect167">167</a>) Replaced <quote>straigthening</quote> with <quote>straightening</quote>.</p>
       <p>(<a idref="sect171">171</a>) Replaced <quote>expodes</quote> with <quote>explodes</quote> and <quote>turn 304</quote> with <quote>turn to 304</quote>.</p>
       <p>(<a idref="sect174">174</a>) Replaced <quote>Tool kit</quote> with <quote>Tool Kit</quote>.</p>
+      <p>(<a idref="sect195">195</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
       <p>(<a idref="sect220">220</a>) Replaced <quote>landcruiser</quote> with <quote>Landcruiser</quote>.</p>
       <p>(<a idref="sect223">223</a>) Replaced <quote>you Action Chart</quote> with <quote>your Action Chart</quote>.</p>
       <p>(<a idref="sect226">226</a>) Replaced <quote>motorcyle</quote> with <quote>motorcycle</quote>.</p>
       <p>(<a idref="sect241">241</a>) Replaced <quote>binouclars</quote> with <quote>binoculars</quote>.</p>
+      <p>(<a idref="sect252">252</a>) Replaced <quote>machine gunfire</quote> with <quote>machine gun fire</quote>.</p>
       <p>(<a idref="sect264">264</a>) Replaced <quote>encumberance</quote> with <quote>encumbrance</quote>.</p>
+      <p>(<a idref="sect269">269</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
+      <p>(<a idref="sect276">276</a>) Replaced <quote>one a.m.</quote> with <quote>1 a.m.</quote>.</p>
       <p>(<a idref="sect291">291</a>) Replaced <quote>turn to, 83</quote> with <quote>turn to 83</quote>.</p>
+      <p>(<a idref="sect323">323</a>) Replaced <quote>(minimum equals one round; maximum equals five rounds)</quote> with <quote>(minimum: one burst; maximum: five bursts)</quote>.</p>
       <p>(<a idref="sect11">11</a>,<a idref="sect63">63</a>,<a idref="sect82">82</a>,<a idref="sect150">150</a>,<a idref="sect152">152</a>,<a idref="sect192">192</a>,<a idref="sect310">310</a>,<a idref="sect320">320</a> Replaced CCS Bonuses in <quote>[]</quote> with <quote>()</quote>.</p>
       <p>(<a idref="crsumary">Combat Rules Summary</a>) Added missing period after <quote>total</quote>.</p>
       <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>

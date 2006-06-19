@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE gamebook SYSTEM "gamebook.dtd" [
  <!ENTITY % xhtml.characters SYSTEM "htmlchar.mod">
  %xhtml.characters;
@@ -6,25 +5,27 @@
  %general.links;
  <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
  %xhtml.links;
+ <!ENTITY % general.inclusions SYSTEM "geninc.mod">
+ %general.inclusions;
 ]>
 
-<gamebook xml:lang="en-UK" version="0.10">
+<gamebook xml:lang="en-UK" version="0.11.3">
 
 <meta>
  <title>California Countdown</title>
-  <creator class="short">Joe Dever and Brian Williams</creator>
+  <creator class="short">Joe Dever</creator>
   <creator class="medium">Joe Dever<br />Illustrated by Brian Williams</creator>
   <creator class="long">
-   &inclusion.joe.dever.bio.lw;
-   &inclusion.brian.williams.bio.lw;
+   &inclusion.joe.dever.bio.fw;
+   &inclusion.brian.williams.bio.fw;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2005</year><month>12</month><day>5</day></date>
+  <date class="publication"><year>2005</year><month>12</month><day>17</day></date>
   <description class="blurb">
    <p>You are Cal Phoenix, the Freeway Warrior, champion and protector of Dallas Colony One.  The final stage of your life-or-death exodus to the California coast is fraught with extraordinary dangers - breakdowns, rockfalls and unexplained deaths.  Can you unravel the mystery that surrounds your journey, or will you perish without trace in the wastelands of Arizona?</p>
   </description>
   <description class="publication">
-   <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
+   <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
   </description>
   <rights class="copyrights">Text copyright <ch.copy/> 1989 Joe Dever.<br />Illustrations copyright <ch.copy/> 1989 Brian Williams.</rights>
   <rights class="license-notification">
@@ -65,8 +66,8 @@
    </meta>
 
    <data>
-    <p><quote>I would be especially pleased if my granting of the rights to distribute my books in this way was seen as my <quote>millennium gift</quote> to all those devoted readers who have kept the Kai flag flying high, through all the good times, and the not-so-good. It would make me very proud indeed if this enterprise laid the foundations of a lasting legacy, securing the longevity of Lone Wolf by making my creation freely and readily accessible to current and future online generations. For them, for us, for Sommerlund and the Kai.<ch.ellips/></quote> <strong>Joe Dever</strong></p>
-    <p>Project Aon would first like to thank Joe Dever for making this generous offering of the books that we have all loved from the beginning. We would also like to acknowledge the following members of Project Aon for their diligent work:</p>
+
+     &inclusion.joe.dever.endowment;
 
     <section class="frontmatter" id="credits">
      <meta><title>Credits</title></meta>
@@ -74,23 +75,23 @@
      <data>
       <dl>
        <dt>Transcription</dt>
-        <dd>Ryan Landek</dd>
+        <dd>Bryan White</dd>
        <dt>Illustration Transcription</dt>
-        <dd>Jonathan Blake<br />Simon Osborne</dd>
+        <dd></dd>
        <dt>XML</dt>
         <dd>Jonathan Blake<br />Jeff Dougan</dd>
        <dt>Alternate Illustrations</dt>
-        <dd>JC Alvarez (text illustrations and action charts)<br />Jonathan Blake (extramatter charts and tables)<br />Michael Hahn (map)</dd>
+        <dd></dd>
        <dt>Proofreading</dt>
-        <dd>Mark Laird (Sections 36<ch.endash/>70 and 281<ch.endash/>315)<br />Christian Leonhard (Sections 106<ch.endash/>140 and 211<ch.endash/>245)<br />Brad Phelps (Sections 176<ch.endash/>210)<br />Michael Richey (Sections 1<ch.endash/>35 and 316<ch.endash/>350)<br />Tyson Torres (Sections 71<ch.endash/>105, 141<ch.endash/>175 and 246<ch.endash/>280)</dd>
+        <dd>Jennifer Sigman, Iain Smith</dd>
        <dt>Editing</dt>
-        <dd>Mike Feldman<br />Ingo Kl<ch.ouml/>cker<br />Mark Laird<br />Simon Osborne<br />Thomas Wolmer</dd>
-       <dt>PDF Layout</dt>
-        <dd>Ingo Kl<ch.ouml/>cker</dd>
+        <dd></dd>
+        <!-- <dt>PDF Layout</dt>
+         <dd></dd> -->
        <dt>Coordination</dt>
         <dd>Jonathan Blake</dd>
        <dt>Special Thanks</dt>
-        <dd>Pedro Almeida</dd>
+        <dd></dd>
       </dl>
      </data>
     </section>
@@ -142,7 +143,7 @@
     <p>It was early September in the year 2019 when eventually you broke through to the surface. The landscape surrounding the mine looked like the surface of another planet. Few structures had survived the blizzards and intense cold that had swept around the world in the years following 'The Day', and now, after the dust had settled and the sun returned, the once-fertile plains of Austin resembled little more than a desert of parched and broken rock, littered with the artefacts of an absent civilization.  During the first few days, when you set out to explore this wilderness, it was easy to believe that you were the only survivors. But on the morning of the fifth day Uncle Jonas made chance radio contact with a family called Ewell, who were living near the ruins of McKinney, thirty miles north of Dallas.  They told him that they had been in touch with a handful of other groups, who had managed somehow to survive the holocaust. Most were isolated, unable to move due to lack of fuel, food or water. They had urged those who could travel to join them in McKinney, to start a new community there, and some were already on their way. When your uncle and aunt accepted their invitation, the Ewells were enthusiastic but they also warned you to be wary - not everyone who had survived wanted to establish a new community. The ruins of some large Texan cities, such as Dallas and Fort Worth, were controlled by gangs of criminals who fought with each other and terrorized anyone seeking to re-establish law and order. They urged you to avoid these gangs at all costs.</p>
     <p>It took more than a week to discover a vehicle capable of transporting you to McKinney. It was an old school bus parked in an underground lot where it had survived the years of subzero blizzards. With fuel and spares salvaged from the mine, you managed to coax it back to life, whereupon you set off on your journey north. When you arrived at the town, it was easy to find where the Ewells lived, for their ranch was the only place that was still standing. It looked more like an old frontier post than a ranch, with its fortified perimeter wall, lookout posts and stake-filled moat. However, after being ambushed and shot at by the city gangs of Fort Worth during the final stages of your journey, you could readily understand the need for these defences.</p>
     <p>'Pop' Ewell, the seventy-year-old grandfather of the Ewell family, was the leader of this small colony of survivors, and it was he who had urged Uncle Jonas to join them when your uncle had first made radio contact. The colony numbered less than a dozen at the time of your arrival, yet as the airwaves became clearer and new contacts were made, the number had soon more than doubled to twenty-five. It was decided that a name was needed to identify the settlement. The name 'Dallas Colony One' was adopted - 'DC1' for short - and from that day on, everyone worked hard to make DC1 a secure haven for those seeking refuge from the hostile wastelands and marauding city gangs.</p>
-    <p>'Cutter' Jacks was one such refugee. Before 'the Day' he had been chief mechanic at the International Grand Prix Circuit near Lake Dallas, and his incredible skill and knowledge of engines was soon to prove invaluable to the colony. He taught you how to drive, and from a pile of old wrecks that you helped him salvage from the circuit, he built you a powerful, customized car. You used it to patrol the highways north of the city, keeping a lookout for gangs of city punks who frequently mounted raids to steal or destroy DC1's supplies. Cutter also taught you to shoot, and it was your natural prowess with a gun, and your skill behind the wheel, that was to earn you the begrudging respect of your enemies, who took to calling you the 'Freeway Warrior'.</p>
+    <p>'Cutter' Jacks was one such refugee. Before 'The Day' he had been chief mechanic at the International Grand Prix Circuit near Lake Dallas, and his incredible skill and knowledge of engines was soon to prove invaluable to the colony. He taught you how to drive, and from a pile of old wrecks that you helped him salvage from the circuit, he built you a powerful, customized car. You used it to patrol the highways north of the city, keeping a lookout for gangs of city punks who frequently mounted raids to steal or destroy DC1's supplies. Cutter also taught you to shoot, and it was your natural prowess with a gun, and your skill behind the wheel, that was to earn you the begrudging respect of your enemies, who took to calling you the 'Freeway Warrior'.</p>
     <p>Six months after your arrival at DC1, the colony was faced with a major crisis. A heat wave caused a drought that threatened to destroy the food supply.  Crops were failing and the colony's artesian well - its only source of uncontaminated water - was beginning to dry up. The drought was also provoking more attacks from the city punks who were desperate for food and water. Their common need had united them and now they posed a very real threat to the security of DC1. It was the last day of May, 2020, when Pop Ewell made radio contact with another colony, who were based in the city of Big Spring, 300 miles west of McKinney. Their situation was completely the reverse of DC1's: they had food and water in plentiful supply but they were desperately short of fuel. They told of their contact with survivors in Tucson, Arizona, who also were without fuel. The Tucson colony reported that the territories west of the Sierra Nevada Mountains had been spared the worst effects of the radioactive blizzards that had devastated the rest of the country and, miraculously, much of southern California was still widely populated: it had survived the last eight years virtually intact. When you heard the news, you could hardly believe your ears. Perhaps your family as still alive; perhaps there was still a chance that one day you would be reunited.</p>
 
     <illustration class="inline">
@@ -166,7 +167,7 @@
      <instance class="pdf" src="small3.pdf" width="386" height="150"/>
     </illustration>
     
-    <p>By chance it transpired that the leader of the Mavericks, a blond-haired murderer called Amex Gold, was a former HAVOC agent, who had served under Mad Dog Michigan before 'the Day'. He offered to join forces with the Lions and, as a gesture of his loyalty to his former commander, he returned Kate to him. Together the Lions and the Mavericks launched a hasty attack on Big Spring, yet, although they outnumbered the colony by more than three to one, they were unable to breach the settlement's fortified perimeter wall and were repelled with heavy losses. On the day after the attack, Pop Ewell discovered the radio frequency that the clansmen were using and was able to eavesdrop on their communications. He learned that Mad Dog had ordered another HAVOC clan, the Saints, who were based in New Orleans, to come to reinforce his command; they were expected to arrive within the week. He also overheard Mad Dog arrange a meeting with Mekong Mike, the leader of the Angelinos, a gang who controlled the city of San Angelo. He wanted him as an ally and was prepared to offer guns and ammunition in return for his help in destroying the Big Spring colony. Two days later, Mad Dog Michigan set off for San Angelo at the head of a motorcycle pack 200 riders strong. Those few clansmen who remained with Amex Gold tried all manner of tricks to convince the colony that the Mavericks and the Lions still surrounded Big Spring in strength, but to no avail. The senior members of the newly enlarged colony convened a meeting, at which it was decided that, with the clansmen now at their weakest, and with the appearance of the New Orleans gang expected at any time, a breakout had to be attempted without delay. There was only one way for the colony to reach Tucson overland and that was to follow the remains of Interstate Freeway 10 through the arid, mountainous territory of western Texas. Precisely halfway between Big Spring and Tucson lies the city of El Paso. To reach this city in one piece became the convoy's goal. It lay at the end of a long and tortuous stretch of mountain highway, undoubtedly one of the toughest you would have to face on your journey to California.</p>
+    <p>By chance it transpired that the leader of the Mavericks, a blond-haired murderer called Amex Gold, was a former HAVOC agent, who had served under Mad Dog Michigan before 'The Day'. He offered to join forces with the Lions and, as a gesture of his loyalty to his former commander, he returned Kate to him. Together the Lions and the Mavericks launched a hasty attack on Big Spring, yet, although they outnumbered the colony by more than three to one, they were unable to breach the settlement's fortified perimeter wall and were repelled with heavy losses. On the day after the attack, Pop Ewell discovered the radio frequency that the clansmen were using and was able to eavesdrop on their communications. He learned that Mad Dog had ordered another HAVOC clan, the Saints, who were based in New Orleans, to come to reinforce his command; they were expected to arrive within the week. He also overheard Mad Dog arrange a meeting with Mekong Mike, the leader of the Angelinos, a gang who controlled the city of San Angelo. He wanted him as an ally and was prepared to offer guns and ammunition in return for his help in destroying the Big Spring colony. Two days later, Mad Dog Michigan set off for San Angelo at the head of a motorcycle pack 200 riders strong. Those few clansmen who remained with Amex Gold tried all manner of tricks to convince the colony that the Mavericks and the Lions still surrounded Big Spring in strength, but to no avail. The senior members of the newly enlarged colony convened a meeting, at which it was decided that, with the clansmen now at their weakest, and with the appearance of the New Orleans gang expected at any time, a breakout had to be attempted without delay. There was only one way for the colony to reach Tucson overland and that was to follow the remains of Interstate Freeway 10 through the arid, mountainous territory of western Texas. Precisely halfway between Big Spring and Tucson lies the city of El Paso. To reach this city in one piece became the convoy's goal. It lay at the end of a long and tortuous stretch of mountain highway, undoubtedly one of the toughest you would have to face on your journey to California.</p>
     <p>Under cover of darkness, the convoy escaped from Big Spring and sped westwards. Now your vow to rescue Kate could at last be realized and, at the first opportunity, you told the colony of your plans.  Reluctantly they let you leave the convoy and go to San Angelo, where you intended to infiltrate the meeting between the Lions and the Angelinos in the hope of finding Kate there. Your skill and daring were rewarded, for you were able to locate and rescue Kate from under the very noses of the clan leaders. During your escape from their city, you killed Mekong Mike, the Angelinos' leader, and stole a map from Mad Dog Michigan. Later you discovered that this map contained vital details of a HAVOC operation to take over the whole of the United States.</p>
     <p>As you escaped westwards from San Angelo, you encountered three soldiers, survivors from a world Defence League outpost in southern Texas, who were also heading for El Paso, where the remnants of their command group were stationed. You joined them and together you rendezvoused with the convoy at the entrance to the only passable road through the Apache Mountains. A fierce battle was raging along this pass between the Mavericks and a clan of Mexicans who had crossed the border in search of food and supplies. The convoy was forced to run the gauntlet of their gunfire before finally reaching its goal. Upon entering the city, you received a warm welcome from the WDL command group who were defending the military reserve of Fort Bliss. They celebrated your arrival for several days until the appearance of Mad Dog Michigan and an army of clansmen numbering over 1000 strong brought an abrupt end to the festivities. He had persuaded the Mexicans to join with the Lions, the Mavericks and the Saints, all of whom were now united to his cause. The situation was desperate. Faced with overwhelming odds, the WDL command tried to negotiate with Mad Dog but he rejected their overtures with disdain. He sent a reply to the command leader, Captain Frankland, in which he reaffirmed his vow to avenge his brother's death. His aims were brutally simple: he promised that neither you nor any of the colony would ever leave EL Paso alive. He set up headquarters in Ciudad Juarez, on the Mexican side of the Rio Grande, where he directed his clan army to encircle and lay siege to the colony.</p>
     <p>For two weeks, he launched repeated attacks, calculated to weaken your defences. The colony withstood the assaults, but the constant attrition began to erode your hopes of ever being able to break out of El Paso and reach Tucson in one piece. Then a radio message was intercepted that was to turn this desperate situation into a crisis. A clan convoy of trucks was bound for Mad Dog's headquarters in Ciudad Juarez. On board were enough high explosives to blow Fort Bliss, and everyone in it, to sightless atoms. Something had to be done to prevent Mad Dog from using these explosives. Out of desperation was born a daring plan. The explosives had to be destroyed as soon as they reached Ciudad Juarez. It was a dangerous and potentially suicidal mission, too difficult for one man alone, therefore Captain Frankland chose to lead the mission himself and he called for three volunteers to accompany him. Two WDL soldiers, Haskell and Knott, readily accepted the challenge and, mindful that the future of the colony was dependent on the success of this mission, you summoned up enough courage to volunteer as the fourth member of his team.</p>
@@ -458,7 +459,7 @@
      <data>
       <p>The day after your arrival sees the withdrawal of Mad Dog Michigan's clan army from the vicinity of the Davis-Monthan air force base, stronghold of the Tucson colony. Scouts are sent to shadow the enemy and, later in the day, they return to report that the clansmen have pulled back to Nogales, a frontier town on the Mexican border. This hurried retreat reinforces the belief that Mad Dog perished when his speedster crashed into the Pantona Wash.</p>
       <p>Boosted by the arrival of your convoy, the Tucson colony now numbers over 130 men, women and children. Supplies of food and water are adequate and, with the arrival of DC1's gasolene tanker, there is more than enough fuel to get you to California. Mike Gorgas, a former district attorney who is now the appointed leader of the Tucson colony, urges the other colony leaders to make preparations to leave the stronghold and head west without delay. The clan army may have suffered a setback but, sooner or later, prompted by a lack of supplies or a desire for revenge, they are sure to leave Nogales and attack the stronghold in force.</p>
-      <p>There is also the threat of an attack by the Outlaws, an exceptionally vicious clan that controls the city of Phoenix. Among their number are many criminals who have been expelled from California since 'the Day'. Their leader, Shiloh, is one such outcast. He has been exiled into the Omega Zone (the name Californians have given to the ravaged territories east of their state line), for murder, looting and other, lesser, crimes he and his gang perpetrated in Los Angeles. During the past few months he has often crossed swords with the Tucson colony, resulting in deaths on both sides.</p>
+      <p>There is also the threat of an attack by the Outlaws, an exceptionally vicious clan that controls the city of Phoenix. Among their number are many criminals who have been expelled from California since 'The Day'. Their leader, Shiloh, is one such outcast. He has been exiled into the Omega Zone (the name Californians have given to the ravaged territories east of their state line), for murder, looting and other, lesser, crimes he and his gang perpetrated in Los Angeles. During the past few months he has often crossed swords with the Tucson colony, resulting in deaths on both sides.</p>
       <p>When the time comes to plan the route to California, the colony agrees that they should try at all costs to avoid contact with Shiloh's clan. Interstate 10 is the only highway out of Tucson capable of carrying the convoy at reasonable speed, yet it passes straight through the centre of Phoenix. The only alternative is to follow this highway as far as Arizona City and then switch to Interstate 8. The colony could then follow the freeway across southern Arizona to Yuma, traverse the Colorado river at this point, and continue, through the desert and mountains of south-west California, until finally reaching its goal - the city of San Diego.</p>
       <p>Much of the territory south of Phoenix is patrolled and controlled by the Outlaws. To avoid the risk of running headlong into a clan patrol, the colony appoints you, and three others, as scouts. Whilst the colonists complete their final preparations to leave the stronghold, you and the other scouts set off along Interstate 10 to check that the road ahead is clear.</p>
       <choice idref="sect235"><link-text>Turn to 235</link-text>.</choice>
@@ -471,7 +472,7 @@
      <data>
       <p>Ahead you see a tall observation tower that rises high above the surrounding hills. It once provided sightseers with a magnificent view of the Anza-Borrego Desert Park; now it offers the perfect location for a radio transmission, clear of the surrounding peaks.</p>
       <p>You leave the freeway and lead the convoy along an access road that is marked with signs pointing to the Desert View Tower. The electric elevator that once serviced the observation platform is beyond repair, so the powerful DC1 radio transmitter has to be carried all the way to the top up a flight of stairs. Once in position, Pop at last makes contact with Pine Valley.</p>
-      <p>At first they believe that the call is an elaborate clan trick, but confidential WDL call codes are given by a handful of Tucson colonists who were league operatives before 'the Day'. When these call codes are checked and discovered to be genuine, the Pine Valley outpost receives special authorization from army control in LA to allow the convoy into Fortress California. But this permission is coupled with certain conditions. A zero hour is given. The colony must reach Pine Valley at 11.00am, exactly one hour from now, if it is to be allowed to pass through the checkpoint. The army also insists that radio silence be maintained until your arrival, for the frequency you have been using is known to the Chargers and is often monitored. Pop agrees to the terms on behalf of the colony and signs off.</p>
+      <p>At first they believe that the call is an elaborate clan trick, but confidential WDL call codes are given by a handful of Tucson colonists who were league operatives before 'The Day'. When these call codes are checked and discovered to be genuine, the Pine Valley outpost receives special authorization from army control in LA to allow the convoy into Fortress California. But this permission is coupled with certain conditions. A zero hour is given. The colony must reach Pine Valley at 11.00am, exactly one hour from now, if it is to be allowed to pass through the checkpoint. The army also insists that radio silence be maintained until your arrival, for the frequency you have been using is known to the Chargers and is often monitored. Pop agrees to the terms on behalf of the colony and signs off.</p>
       <p>Excited and eager to leave, the colonists return to their vehicles for the final journey to Pine Valley. You are one of the last to leave the tower and, when you are half-way down the ladder, you suddenly hear Rickenbacker shout a warning from the platform above: 'My God! There's a clan convoy on the freeway!'</p>
       <choice idref="sect320"><link-text>Turn to 320</link-text>.</choice>
      </data>
@@ -584,7 +585,7 @@
      <meta><title>11</title></meta>
 
      <data>
-      <p>You reach the front door and pull it shut behind you to prevent the hornets from following you out into the street. The stings you have sustained to your face, neck and hands throb painfully. If you possess at least three Medi-kit units, you are able to soothe the inflamations with some ointment: restore 1 <typ class="attribute">ENDURANCE</typ> point. (If you wish to do this, remember to erase one Medi-kit unit from your list.)</p>
+      <p>You reach the front door and pull it shut behind you to prevent the hornets from following you out into the street. The stings you have sustained to your face, neck and hands throb painfully. If you possess at least three Medi-kit units, you are able to soothe the inflammation with some ointment: restore 1 <typ class="attribute">ENDURANCE</typ> point. (If you wish to do this, remember to erase one Medi-kit unit from your list.)</p>
       <p>When you have fully recovered from your encounter with the hornets, you check your equipment and return to Rickenbacker.</p>
       <choice idref="sect300"><link-text>Turn to 300</link-text>.</choice>
      </data>
@@ -739,7 +740,7 @@
       <p>'By the majority decision of this tribunal, we find John Barlow guilty of the murder of Micheal Gorgas in the first degree. This crime is a capital offence punishable by death by firing squad. The sentence is to be carried out immediately.'</p>
       <p>Upon hearing the verdict, the surrounding colonists utter a sound that is full of shocked disbelief. Barlow's face contorts into a mask of hatred and he reaches, like a striking cobra, for the pistol he has tucked into his belt. However, the Tucson escorts are already moving forward to grab his arms, and swiftly they wrestle the gun from his hand. A lone voice in the crowd demands a re-trial, but it is ignored. Then another voice rings out, but this time it captures everyone's attention. It is Macy, the convoy's lookout, and he is screaming words that make your blood run cold.</p>
       <p>'The Outlaws are attacking!'</p>
-      <p>Without warning, two grenades explode simultaneously in the town square and the chatter of machine gunfire echoes along the empty side-streets. Screams of panic mingle with the dull booms of more explosions as the colonists rush to the vehicles to try to retrieve their weapons before it is too late. A burst of gunfire from a rooftop stitches a line of holes across the table and sends you, and the other judges, diving for cover. Suddenly everything is chaos; it's every man for himself. You grab your gun and scurry towards a garbage cart that lies overturned on the plaza. As you skid to a halt behind the cart, you find yourself face to face with Barlow, the man you have just sentenced to death. The confrontation is shocking, but it is the sight of the screwdriver that he is holding poised in his hand that really strikes terror in your heart.</p>
+      <p>Without warning, two grenades explode simultaneously in the town square and the chatter of machine gun fire echoes along the empty side-streets. Screams of panic mingle with the dull booms of more explosions as the colonists rush to the vehicles to try to retrieve their weapons before it is too late. A burst of gunfire from a rooftop stitches a line of holes across the table and sends you, and the other judges, diving for cover. Suddenly everything is chaos; it's every man for himself. You grab your gun and scurry towards a garbage cart that lies overturned on the plaza. As you skid to a halt behind the cart, you find yourself face to face with Barlow, the man you have just sentenced to death. The confrontation is shocking, but it is the sight of the screwdriver that he is holding poised in his hand that really strikes terror in your heart.</p>
       <p>With a cry of pure hatred he lunges with the screwdriver and tries to drive it into your chest.</p>
       <illustration class="float">
        <meta>
@@ -862,7 +863,7 @@
      <data>
       <p>The first you see of Ajo is a battered city-limits sign looming out of the dusty darkness. Night has now fallen, although visibility was already so poor that you hardly notice the transition from day to night. Buildings appear as grey silhouettes, featureless and indistinguishable from one another. Suddenly the fear strikes you that you may never find the Ajo hospital, and therefore the vital Atropine, in time to save Kate's life.</p>
       <p>You have no idea where the hospital is located, so you decide to try to find a town map. You bring your car around and point it at the nearest building so that the headlights illuminate a sign that is fixed to the wall. It reads:</p>
-      <p><signpost>AJO RANGER STATION</signpost></p>
+      <signpost>AJO RANGER STATION</signpost>
       <choice idref="sect228">If you wish to enter this building, <link-text>turn to 228</link-text>.</choice>
       <choice idref="sect327">If you decide to continue along the highway, <link-text>turn to 327</link-text>.</choice>
      </data>
@@ -1166,9 +1167,9 @@
      <data>
       <p>The route Jaeger took yesterday, when he hiked from the well in the moutains to Interstate 8, followed the course of the San Christobal Wash. For him it was a difficult trail to follow on foot, and you soon discover that it is an even harder one to negotiate in a pick-up truck. The broken ground is deeply rutted and littered with boulders, and it takes more than an hour to make the fifteen-mile climb to the well.</p>
       <p>The well itself is located at the bottom of a bowl-shaped gully, shaded from the sun by two peaks of the Mohawk mountains. A pump house stands beside the bore-hole, to which is affixed a sign that reads:</p>
-      <p><signpost>LUKE AIR FORGE RANGE</signpost></p>
-      <p><signpost>GARCIA WELL</signpost></p>
-      <p><signpost>US. GOVT. PROPERTY - KEEP OUT!</signpost></p>
+      <signpost>LUKE AIR FORGE RANGE</signpost>
+      <signpost>GARCIA WELL</signpost>
+      <signpost>US. GOVT. PROPERTY - KEEP OUT!</signpost>
       <p>You park the pick-up beside the pump house and Jaeger helps you unload the containers. 'I had to draw the water up by hand yesterday,' he says, nodding towards the bore-hole, "cause I couldn't get the pump to work. I reckon it's OK - jus' needs some gasolene that's all. Maybe if we could syphon some fuel from the truck we could get its engine running. It'd save us a whole lotta hard work.'</p>
       <choice idref="sect211">If you possess some Plastic Tube, <link-text>turn to 211</link-text>.</choice>
       <choice idref="sect76">If you do not possess this item, <link-text>turn to 76</link-text>.</choice>
@@ -1534,7 +1535,7 @@
        <instance class="pdf" src="ill5.pdf" width="386" height="618" />
       </illustration>
       <p>With a roar, the drums start to explode, showering the warehouse with liquid fire that triggers yet more explosions. With terror in your heart you look for a way to escape from the raging inferno. All you can see, through the billowing smoke and flame, is a staircase leading to an office on the first floor and a corridor marked by a sign that says:</p>
-      <p><signpost>TEST LABORATORIES THIS WAY</signpost></p>
+      <signpost>TEST LABORATORIES THIS WAY</signpost>
       <choice idref="sect343">If you wish to climb the stairs to the office, <link-text>turn to 343</link-text>.</choice>
       <choice idref="sect111">If you wish to follow the corridor to the test laboratories, <link-text>turn to 111</link-text>.</choice>
      </data>
@@ -1998,7 +1999,7 @@
       <p>'By the majority decision of this tribunal, we find Paul Avenal guilty of the murder of Micheal Gorgas in the first degree. This crime is a capital offence punishable by death by firing squad. The sentence is to be carried out immediately.'</p>
       <p>Upon hearing the verdict, the surrounding colonists utter a sound that is full of shocked disbelief. Avenal's face turns white and limply he staggers back into the arms of the Tucson escorts. A lone voice in the crowd demands a re-trial, but it is ignored. Then another voice rings out, but this time it captures everyone's attention. It is Macy, the convoy's lookout, and he is screaming words that make your blood run cold.</p>
       <p>'The Outlaws are attacking!'</p>
-      <p>Without further warning, two grenades explode simultaneously in the town square and the chatter of machine gunfire echoes along the empty side streets. Screams of panic mingle with the dull booms of more explosions as the colonists rush to the vehicles to try to retrieve their weapons before it is too late. A burst of gunfire from a rooftop stitches a line of holes across the table and sends you, and the other judges, diving for cover. Suddenly everything is chaos; it's every man for himself. You grab your gun and scurry towards a garbage cart that lies overturned on the plaza. As you skid to a halt behind the cart, you find yourself face to face with Avenal, the man you have just sentenced to death. The confrontation is shocking, but it is the sight of the pistol that he is holding in his hand that really strikes terror in your heart.</p>
+      <p>Without further warning, two grenades explode simultaneously in the town square and the chatter of machine gun fire echoes along the empty side streets. Screams of panic mingle with the dull booms of more explosions as the colonists rush to the vehicles to try to retrieve their weapons before it is too late. A burst of gunfire from a rooftop stitches a line of holes across the table and sends you, and the other judges, diving for cover. Suddenly everything is chaos; it's every man for himself. You grab your gun and scurry towards a garbage cart that lies overturned on the plaza. As you skid to a halt behind the cart, you find yourself face to face with Avenal, the man you have just sentenced to death. The confrontation is shocking, but it is the sight of the pistol that he is holding in his hand that really strikes terror in your heart.</p>
       <p>With a determined look in his eyes he raises the gun towards your head.</p>
       <p>'No! <ch.ellips/>' you scream, and you close your eyes as his finger snatches repeatedly at the trigger.</p>
       <choice idref="sect282"><link-text>Turn to 282</link-text>.</choice>
@@ -2047,7 +2048,7 @@
      <meta><title>125</title></meta>
 
      <data>
-      <p>'It's no good,' you say, frustratedly. 'I can't see a thing, I s'pose we'll have to go down there and check it out the hard way.'</p>
+      <p>'It's no good,' you say in frustration. 'I can't see a thing, I s'pose we'll have to go down there and check it out the hard way.'</p>
       <p>Rickenbacker agrees, then he radios the convoy to inform them of your decision and they request that you call in every five minutes. If you fail to call, they will assume you are in trouble and send a group to come to your rescue.</p>
       <p>'Ten-four,' replies your partner. 'Over and out.'</p>
       <choice idref="sect278"><link-text>Turn to 278</link-text>.</choice>
@@ -2662,7 +2663,7 @@
      <meta><title>171</title></meta>
 
      <data>
-      <p>The firefight ends as rapidly as it began, and when the gunsmoke clears, you see that not one of the Lions' raiding party has survived the encounter. However, the battle has been costly for both sides. When you call for a name check among your group, you discover that neither Cleaver nor Zay survived the fight, and that your fellow convoy scout, Macy, has been badly wounded in the wrist and thigh.</p>
+      <p>The firefight ends as rapidly as it began, and when the gun smoke clears, you see that not one of the Lions' raiding party has survived the encounter. However, the battle has been costly for both sides. When you call for a name check among your group, you discover that neither Cleaver nor Zay survived the fight, and that your fellow convoy scout, Macy, has been badly wounded in the wrist and thigh.</p>
       <p>Carefully you help Macy to climb the slope that leads back to the hollow, where Kate is waiting anxiously for you to return.</p>
       <choice idref="sect207"><link-text>Turn to 207</link-text>.</choice>
      </data>
@@ -3021,8 +3022,8 @@
      <data>
       <p>While you are waiting for the convoy to arrive, you busy yourselves by putting out the flames that are feeding on the wreckage of the clan truck: the oily smoke could attract unwanted attention. Shortly after the fire has been extinguished, the convoy arrives and several of the colonists help with the burial of the clansmen and the removal of the smouldering wreckage to somewhere less exposed. Everyone is aware of the need for increased vigilance after your encounter with the Puma bridge patrol. Sooner or later the Yuma clan base will notice their disappearance and send more scouts to investigate.</p>
       <p>Once the clean-up is complete, Cookie is transferred to the Landcruiser and you take delivery of your roadster from Rex Tyler, who has driven it the short distance from Ligurta. Then, with your partner, Rickenbacker, you take up your familiar position at the front of the convoy and head off along the dirt road. Soon you reach the firmer surface of Highway 95 and follow it north, across a flat and featureless desert that was once the Yuma Proving Ground. A sign appears in the distance, just a dot on the horizon at first, but gradually growing larger until you can make out the directions painted on its sun-blistered surface:</p>
-      <p><signpost>LAGUNA <ch.amp/> IMPERIAL RESERVOIRS 7 MILES</signpost></p>
-      <p>You follow the sign, taking the smaller road that branches away to the west. The name 'Laguna' stirs memories of your childhood before 'the Day', for it was at Laguna Beach, California, that you were born and raised. You are still thinking about your old home, wondering if it is still the same, when the reservoir and dam appear in the distance. The two features make an impressive sight, enhanced by the rugged backdrop of the Cargo Muchacho Mountains and the knowledge that the land on the other side of the reservoir is California state territory.</p>
+      <signpost>LAGUNA <ch.amp/> IMPERIAL RESERVOIRS 7 MILES</signpost>
+      <p>You follow the sign, taking the smaller road that branches away to the west. The name 'Laguna' stirs memories of your childhood before 'The Day', for it was at Laguna Beach, California, that you were born and raised. You are still thinking about your old home, wondering if it is still the same, when the reservoir and dam appear in the distance. The two features make an impressive sight, enhanced by the rugged backdrop of the Cargo Muchacho Mountains and the knowledge that the land on the other side of the reservoir is California state territory.</p>
       <p>You bring the convoy to a halt at a point overlooking the wide service road that runs across the top of the dam. Cutter goes forward to check its cracked surface and after walking its entire length, returns to declare that it is passable.</p>
       <p>You must now take a Drink or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect48"><link-text>Turn to 48</link-text>.</choice>
@@ -3557,9 +3558,9 @@
       <p>The route Jaeger took yesterday, when he hiked from the well in the mountains to Interstate 8, followed the dry watercourse of the San Christobal Wash. For him it was a difficult trail to follow on foot, and you soon discover that it is even harder to negotiate in a pick-up truck. The broken ground is deeply rutted and littered with boulders, and progress is painfully slow.</p>
       <p>Rather than continue in this direction, you decide to try a more indirect route that takes you west, away from the Wash, across an expanse of desert. By chance you happen upon the remains of a dirt road that winds southwards into the mountains. You stay with this track and, although its surface is far from perfect, you make good time.</p>
       <p>At length you reach a ridge that overlooks the well. The site itself is located at the bottom of a bowl-shaped gully, shaded from the sun by two of the Mohawk's highest peaks. A pump house stands beside the bore-hole, to which is affixed a sign that reads:</p>
-      <p><signpost>LUKE AIR FORCE RANGE</signpost></p>
-      <p><signpost>GARCIA WELL</signpost></p>
-      <p><signpost>US GOVT. PROPERTY - KEEP OUT!</signpost></p>
+      <signpost>LUKE AIR FORCE RANGE</signpost>
+      <signpost>GARCIA WELL</signpost>
+      <signpost>US GOVT. PROPERTY - KEEP OUT!</signpost>
       <p>Carefully you descend, following the dirt road as it zig-zags towards the site. You are within a few hundred yards of your destination when you are faced by an unexpected hazard. You take a sharp right bend to find that a section of the road beyond has collapsed. You brake, but the wheels skid on the loose stones and the rear of the truck starts to slide out towards the edge. Frantically you fight to correct the skid as the truck slides nearer and nearer to the edge of the steep ravine.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Driving skill score. Add to this total your current <typ class="attribute">ENDURANCE</typ> points score.</p>
       <choice idref="sect87">If your total score is 27 or less, <link-text>turn to 87</link-text>.</choice>
@@ -4124,7 +4125,7 @@
       <p>At such close range the shots are deafening. You shake as each one explodes in your ears, scarcely daring to hope that you will survive being hit at point-blank range. So resigned are you to your doom that it takes you several seconds to realize that you have not been shot at all.</p>
       <p>Tentatively you open your eyes to see Avenal kneeling in front of you, still holding the pistol, a coil of smoke rising lazily from its barrel. You pat your chest to confirm that you have not been drilled full of holes, then glance over your shoulder to see where the bullets have gone. A leather-jacketed clansman lies face-up on the plaza, unmoving, his chest and stomach stained bright red. A bowie knife is clenched in one of his bony hands, and a grenade, its pin undrawn, is gripped tightly in the other.</p>
       <p>'Despite what you think o' me, Phoenix,' shouts Avenal, 'I ain't no traitor. There's your traitor.' He points towards the street bordering the plaza. There you see John Barlow running half-crouched towards a clan scout who is sitting astride a motorcycle.</p>
-      <p>The clansman is shouting encouragement, and, as Barlow scurries nearer, he shuffles forward to make room for the traitor on the back of his riding seat. seat.</p>
+      <p>The clansman is shouting encouragement, and, as Barlow scurries nearer, he shuffles forward to make room for the traitor on the back of his riding seat.</p>
       <choice idref="sect14">If you possess a missile weapon and wish to fire it at Barlow, <link-text>turn to 14</link-text>.</choice>
       <choice idref="sect217">If you do not possess a missile weapon, or choose not to fire it at Barlow, <link-text>turn to 217</link-text>.</choice>
      </data>
@@ -4489,7 +4490,7 @@
       <p>'By the majority decision of this tribunal, we find Rex Tyler guilty of the murder of Michael Gorges in the first degree. This crime is a capital offence, punishable by death by firing squad. The sentence is to be carried out immediately.'</p>
       <p>Upon hearing the verdict, the surrounding colonists utter a sound that is full of shocked disbelief. Tyler's face turns green and he staggers back into the arms of the Tucson escorts. A lone voice in the crowd demands a re-trial, but it is ignored. Then another voice rings out, but this time it captures everyone's attention. It is Macy, the convoy's lookout, and he is screaming words that make the blood run cold.</p>
       <p>'The Outlaws are attacking!'</p>
-      <p>Without warning, two grenades explode simultaneously in the town square and the chatter of machine gunfire echoes along the empty side streets. Screams of panic mingle with the dull booms of more explosions as the colonists rush to the vehicles to try to retrieve their weapons before it is too late. A burst of gunfire from a rooftop stitches a line of holes across the table and sends you and the other judges diving for cover. Suddenly everything is chaos; it's every man for himself. You grab your gun and scurry towards a garbage cart that lies overturned on the plaza. As you skid to a halt behind the cart, you find yourself face to face with Rex Tyler, the friend you have just sentenced to death. The confrontation is shocking, but it is the sight of the pistol that he is holding that really strikes terror in your heart.</p>
+      <p>Without warning, two grenades explode simultaneously in the town square and the chatter of machine gun fire echoes along the empty side streets. Screams of panic mingle with the dull booms of more explosions as the colonists rush to the vehicles to try to retrieve their weapons before it is too late. A burst of gunfire from a rooftop stitches a line of holes across the table and sends you and the other judges diving for cover. Suddenly everything is chaos; it's every man for himself. You grab your gun and scurry towards a garbage cart that lies overturned on the plaza. As you skid to a halt behind the cart, you find yourself face to face with Rex Tyler, the friend you have just sentenced to death. The confrontation is shocking, but it is the sight of the pistol that he is holding that really strikes terror in your heart.</p>
       <p>With a determined look in his eyes he raises the gun towards your head.</p>
       <p>'No, Rex, no!' you scream, and close your eyes as his finger snatches repeatedly at the trigger.</p>
       <choice idref="sect59"><link-text>Turn to 59</link-text>.</choice>
@@ -4790,8 +4791,8 @@
 
      <data>
       <p>You follow the highway for a quarter of a mile until you come to a junction. Directly ahead you see a large building with a sign that says:</p>
-      <p><signpost>AJO FIRE STATION</signpost></p>
-      <p><signpost>PIMA COUNTY</signpost></p>
+      <signpost>AJO FIRE STATION</signpost>
+      <signpost>PIMA COUNTY</signpost>
       <p>You feel sure that the local fire department would have a map of the local area, so you drive on to the forecourt and park near the main door. Covering your face against the stinging wind, you leave your roadster and run towards the building. Inside the lobby, bathed in the light from your vehicle's headlamps, you find a laminated town map fixed to the counter. You grab a pen lying nearby and hurriedly note directions to the hospital on the back of your left hand.</p>
       <p>As you turn to leave you notice an open door off to your left.</p>
       <choice idref="sect60">If you wish to search the room beyond the door, <link-text>turn to 60</link-text>.</choice>
@@ -4955,12 +4956,12 @@
      <meta><title>339</title></meta>
 
      <data>
-      <p>You need to follow the course of the Santa Rosa Wash for only half a mile before you find an ideal place to cross. It is close to the town of Cucklebur, a settlement that was home to the Papago Indians before 'the Day'. As you drive through the town, the beginnings of a hot, north-westerly wind sweeps across the land, and you notice a dark storm cloud streaking the sky. You pray that it is the prelude to a rainstorm, for it has not rained in these parts for more than a year, but your experience and your senses tell you otherwise.</p>
+      <p>You need to follow the course of the Santa Rosa Wash for only half a mile before you find an ideal place to cross. It is close to the town of Cucklebur, a settlement that was home to the Papago Indians before 'The Day'. As you drive through the town, the beginnings of a hot, north-westerly wind sweeps across the land, and you notice a dark storm cloud streaking the sky. You pray that it is the prelude to a rainstorm, for it has not rained in these parts for more than a year, but your experience and your senses tell you otherwise.</p>
       <p>'There's a dust storm brewin', dare say it's blowin' down from the Nevada desert,' you say, motioning to the north.</p>
       <p>'Looks like it could be a mean 'un,' replies Rickenbacker, as he stares thoughtfully at the gathering cloud. 'A real mean 'un.'</p>
       <p>By the time you rejoin Interstate 8, the weather has greatly deteriorated. Carried on a high wind come swirling, stinging eddies of rust-red sand, some as tall as five-storey buildings. They move across the landscape like spinning tops, sucking in and spewing out tons of dust, rock and debris every second of their short but violent lives. So great has the dust saturation become that even though it is still only late afternoon, you are forced to switch on your headlights in order to make out the road ahead.</p>
       <p>Out of this wall of dust a mileage sign appears, which says:</p>
-      <p><signpost>GILA BEND - 44 miles</signpost></p>
+      <signpost>GILA BEND - 44 miles</signpost>
       <p>It is nearly an hour before you see another sign. This one announces a rest stop one mile ahead on the freeway.</p>
       <choice idref="sect56">If you wish to stop at this freeway service area, <link-text>turn to 56</link-text>.</choice>
       <choice idref="sect13">If you decide to continue driving through the dust storm towards Gila Bend, <link-text>turn to 13</link-text>.</choice>
@@ -5309,21 +5310,34 @@
        <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
        <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>as <ch.plus/>1 If </quote> with <quote>as <ch.plus/>1. If </quote>.</p>
        <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>re-establish</quote> with <quote>reestablish</quote>.</p>
+       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
+       <p>(<a idref="sect11">11</a>) Replaced <quote>inflamations</quote> with <quote>inflammation</quote>.</p>
        <p>(<a idref="sect24">24</a>) Replaced <quote>swifty</quote> with <quote>swiftly</quote>.</p>
+       <p>(<a idref="sect24">24</a>) Replaced <quote>machine gunfire</quote> with <quote>machine gun fire</quote>.</p>
+       <p>(<a idref="sect55">55</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
        <p>(<a idref="sect51">51</a>) Replaced <quote>1 Pistol</quote> with <quote>One Pistol</quote>.</p>
        <p>(<a idref="sect57">57</a>) Replaced <quote>Swifty</quote> with <quote>Swiftly</quote>.</p>
        <p>(<a idref="sect74">74</a>) Replaced <quote>youself</quote> with <quote>yourself</quote>.</p>
+       <p>(<a idref="sect76">76</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
        <p>(<a idref="sect99">99</a>) Replaced <quote>ammuntion</quote> with <quote>ammunition</quote>.</p>
        <p>(<a idref="sect112">112</a>) Added missing period after <quote>turn to 295</quote>.</p>
+       <p>(<a idref="sect121">121</a>) Replaced <quote>machine gunfire</quote> with <quote>machine gun fire</quote>.</p>
+       <p>(<a idref="sect125">125</a>) Replaced <quote>you say, frustratedly.</quote> with <quote>you say in frustration.</quote>.</p>
        <p>(<a idref="sect145">145</a>) Replaced <quote>examing</quote> with <quote>examining</quote>.</p>
+       <p>(<a idref="sect171">171</a>) Replaced <quote>gunsmoke</quote> with <quote>gun smoke</quote>.</p>
+       <p>(<a idref="sect174">174</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
        <p>(<a idref="sect193">193</a>) Replaced <quote>suddeness</quote> with <quote>suddenness</quote>.</p>
+       <p>(<a idref="sect211">211</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
        <p>(<a idref="sect213">213</a>) Replaced <quote>insepction</quote> with <quote>inspection</quote> and <quote>Landcrusier</quote> with <quote>Landcruiser</quote>.</p>
        <p>(<a idref="sect244">244</a>) Replaced <quote>iginitng</quote> with <quote>igniting</quote>.</p>
+       <p>(<a idref="sect282">282</a>) Removed duplicate <quote>seat.</quote>.</p>
        <p>(<a idref="sect304">304</a>) Replaced <quote>HE Granade</quote> with <quote>HE Grenade</quote>.</p>
        <p>(<a idref="sect305">305</a>) Added bold formatting <quote>Solar Torch</quote>, <quote>Binoculars</quote> and <quote>Rope</quote>.</p>
        <p>(<a idref="sect305">312</a>) Removed bold formatting <quote>Water Canteen</quote>.</p>
+       <p>(<a idref="sect308">308</a>) Replaced <quote>machine gunfire</quote> with <quote>machine gun fire</quote>.</p>
        <p>(<a idref="sect322">322</a>) Replaced <quote>accorindly</quote> with <quote>accordingly</quote>.</p>
        <p>(<a idref="sect323">323</a>) Replaced <quote>turn 281</quote> with <quote>turn to 281</quote>.</p>
+       <p>(<a idref="tssf">The Story So Far</a>,<a idref="sect1">1</a>,<a idref="sect2">2</a>,<a idref="sect200">200</a>,<a idref="sect339">339</a> Replaced <quote>'the Day'</quote> with <quote>'The Day'</quote>.</p>
        <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
       </data>
      </section>
