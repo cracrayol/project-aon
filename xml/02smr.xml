@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE gamebook SYSTEM "gamebook.dtd" [
  <!ENTITY % xhtml.characters SYSTEM "htmlchar.mod">
  %xhtml.characters;
@@ -6,14 +5,19 @@
  %general.links;
  <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
  %xhtml.links;
+ <!ENTITY % general.inclusions SYSTEM "geninc.mod">
+ %general.inclusions;
 ]>
 
-<gamebook xml:lang="en-UK" version="0.10">
+<gamebook xml:lang="en-UK" version="0.11.3">
 
 <!--
 
 $Id$
 $Log$
+Revision 1.4  2006/06/19 08:21:47  cvsuser
+Made errata changes for consistency with other books in series.
+
 Revision 1.3  2005/12/07 12:43:22  Wibbleboy
 Applied misc formatting changes to match manual of style.
 
@@ -34,19 +38,19 @@ Initial revision
 -->
 <meta>
  <title>Slaughter Mountain Run</title>
-  <creator class="short">Joe Dever and Brian Williams</creator>
+  <creator class="short">Joe Dever</creator>
   <creator class="medium">Joe Dever<br />Illustrated by Brian Williams</creator>
   <creator class="long">
-   &inclusion.joe.dever.bio.lw;
-   &inclusion.brian.williams.bio.lw;
+   &inclusion.joe.dever.bio.fw;
+   &inclusion.brian.williams.bio.fw;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2005</year><month>11</month><day>25</day></date>
+  <date class="publication"><year>2005</year><month>12</month><day>17</day></date>
   <description class="blurb">
    <p>You are Cal Phoenix, the Freeway Warrior, champion and protector of Dallas Colony One. From the sanctuary of Big Spring your convoy of survivors begins the next stage of its life-or-death exodus: a journey to the fortified border town of El Paso, a destination that lies hundreds of miles beyond the sun-scorched wasteland of West Texas. In Slaughter Mountain Run your mission is to rescue Kate Norton from the clutches of your arch enemy - the H.A.V.O.C. leader Mad Dog Michigan. You have just seven days to free her and to rendezvous with the colony before it runs the gauntlet of fire that protects the only mountain road to El Paso.</p>
   </description>
   <description class="publication">
-   <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
+   <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
   </description>
   <rights class="copyrights">Text copyright <ch.copy/> 1988 Joe Dever.<br />Illustrations copyright <ch.copy/> 1988 Brian Williams.</rights>
   <rights class="license-notification">
@@ -87,8 +91,8 @@ Initial revision
    </meta>
 
    <data>
-    <p><quote>I would be especially pleased if my granting of the rights to distribute my books in this way was seen as my <quote>millennium gift</quote> to all those devoted readers who have kept the Kai flag flying high, through all the good times, and the not-so-good. It would make me very proud indeed if this enterprise laid the foundations of a lasting legacy, securing the longevity of Lone Wolf by making my creation freely and readily accessible to current and future online generations. For them, for us, for Sommerlund and the Kai.<ch.ellips/></quote> <strong>Joe Dever</strong></p>
-    <p>Project Aon would first like to thank Joe Dever for making this generous offering of the books that we have all loved from the beginning. We would also like to acknowledge the following members of Project Aon for their diligent work:</p>
+
+     &inclusion.joe.dever.endowment;
 
     <section class="frontmatter" id="credits">
      <meta><title>Credits</title></meta>
@@ -96,23 +100,23 @@ Initial revision
      <data>
       <dl>
        <dt>Transcription</dt>
-        <dd>Ryan Landek</dd>
+        <dd>Mohamed Sha'Aidil</dd>
        <dt>Illustration Transcription</dt>
-        <dd>Jonathan Blake<br />Simon Osborne</dd>
+	 <dd></dd>
        <dt>XML</dt>
-        <dd>Jonathan Blake<br />Jeff Dougan</dd>
+        <dd>Jonathan Blake<br />Iain Smith</dd>
        <dt>Alternate Illustrations</dt>
-        <dd>JC Alvarez (text illustrations and action charts)<br />Jonathan Blake (extramatter charts and tables)<br />Michael Hahn (map)</dd>
+        <dd></dd>
        <dt>Proofreading</dt>
-        <dd>Mark Laird (Sections 36<ch.endash/>70 and 281<ch.endash/>315)<br />Christian Leonhard (Sections 106<ch.endash/>140 and 211<ch.endash/>245)<br />Brad Phelps (Sections 176<ch.endash/>210)<br />Michael Richey (Sections 1<ch.endash/>35 and 316<ch.endash/>350)<br />Tyson Torres (Sections 71<ch.endash/>105, 141<ch.endash/>175 and 246<ch.endash/>280)</dd>
+        <dd>Mohamed Sha'Aidil, Iain Smith</dd>
        <dt>Editing</dt>
-        <dd>Mike Feldman<br />Ingo Kl<ch.ouml/>cker<br />Mark Laird<br />Simon Osborne<br />Thomas Wolmer</dd>
-       <dt>PDF Layout</dt>
-        <dd>Ingo Kl<ch.ouml/>cker</dd>
+         <dd>Simon Osborne, Iain Smith</dd>
+        <!-- <dt>PDF Layout</dt>
+         <dd></dd> -->
        <dt>Coordination</dt>
         <dd>Jonathan Blake</dd>
        <dt>Special Thanks</dt>
-        <dd>Pedro Almeida</dd>
+         <dd></dd>
       </dl>
      </data>
     </section>
@@ -152,22 +156,22 @@ Initial revision
    <data>
     <p>You are Cal Phoenix, a survivor, born in California on Thanksgiving Day in the year AD 2000. In 2012, whilst on winter vacation at your Uncle Jonas' and Aunt Betty-Ann's ranch in Texas, you were invited to visit a shale-oil mine near Austin, the first of its kind in Texas. As Chief of Construction, your uncle was proud to take you on a guided tour of the whole underground complex, which, for security reasons, was totally self-supporting. It was during this tour on 3 January 2012, that the unthinkable happened.</p>
     <p>You remember how the ground shuddered when the shock waves from the first distant explosions reached the mine. Immediately you assumed it was the start of an earthquake, which you had experienced many times at home in California. However, as the levels nearest the surface began to collapse and the central elevator shaft filled with rubble, you realized the awful truth: the holocaust. At first there was no way of telling the extent of the surface devastation. Below ground, the safety generators had switched into operation automatically when the main power supply failed, and the tremors had faded quickly, which encouraged your aunt and uncle to believe that the damage above was superficial. Uncle Jonas was confident that the military would mount a rescue operation and that you would be brought out within a few days, a week at the most. Aunt Betty-Ann, too, was optimistic. After all, there were emergency supplies - enough to feed 200 men for a whole month. Little did she know that the three of you would end up consuming all those supplies, or that the mine would become your home, your shelter and your prison for the next eight years of your lives.</p>
-    <p>It was early September in the year 2019 when eventually you broke through to the surface. When first you set eyes on the landscape surrounding the mine, it was like looking at the surface of another planet. Few structures had survived the blizzards and intense cold that had swept around the world in the years following 'the Day', and now, after the dust had settled and the sun had returned, the once-fertile plains of Austin resembled little more than a desert of parched and broken rock, littered with the artefacts of an absent civilization.</p>
+    <p>It was early September in the year 2019 when eventually you broke through to the surface. When first you set eyes on the landscape surrounding the mine, it was like looking at the surface of another planet. Few structures had survived the blizzards and intense cold that had swept around the world in the years following 'The Day', and now, after the dust had settled and the sun had returned, the once-fertile plains of Austin resembled little more than a desert of parched and broken rock, littered with the artefacts of an absent civilization.</p>
     <p>During the first few days, when you set out to explore this wilderness, it was easy to believe that you were the only survivors. But on the morning of the fifth day Uncle Jonas made chance radio contact with a family called Ewell who were living near the ruins of McKinney, thirty miles north of Dallas. They told him that they had been in touch with a handful of other groups who had managed somehow to survive the holocaust. Most were isolated and unable to move due to lack of fuel, food or water. They had urged those who could travel to join them in McKinney to start a new community there, and some people were already on their way. When your uncle and aunt accepted their invitation, the Ewells were enthusiastic, but they also warned you to be wary - not everyone who had survived wanted to establish a new community. The ruins of some large Texan cities, such as Dallas and Fort Worth, were controlled by gangs of criminals who fought with each other and terrorized anyone seeking to reestablish law and order. They urged you to avoid these gangs at all costs.</p>
     <p>It took more than a week to discover a vehicle that could transport you to McKinney. It was an old school bus, one that had been parked in an underground lot and had survived the years of sub-zero blizzards. With fuel and spares salvaged from the mine, you managed to coax it back to life, and then set off on your journey north.</p>
     <p>When you arrived at the town, it was easy to find where the Ewells lived - their ranch was the only place that was still standing. It looked more like an old frontier post than a ranch, with its fortified perimeter wall, lookout posts and stake-filled moat. However, after being ambushed and shot at by the city gangs of Fort Worth during the final stages of your journey, you fully appreciated the need for these defences.</p>
     <p>'Pop' Ewell, the seventy-year-old grandfather of the Ewell family, was the leader of this small colony of survivors, and it was he who had urged Uncle Jonas to join them when they had first made radio contact. The colony numbered less than a dozen at the time of your arrival, yet, as the airwaves became clearer and new contacts were made, soon this number had more than doubled to twenty-five. It was decided that a name was needed to identify the settlement. The name 'Dallas Colony One' was adopted, known as 'DC1' for short. From that day on, everyone worked hard to make DC1 a secure haven for those seeking refuge from the hostile wastelands and marauding city gangs.</p>
-    <p>'Cutter' Jacks was one such refugee. Before 'the Day' he had been chief mechanic at the International Grand Prix Circuit near Lake Dallas, and his incredible skill with, and knowledge of, engines was soon to prove invaluable to the colony. He taught you how to drive, and from a pile of old wrecks that you helped him salvage from the circuit, he built you a powerful, customized car. You used it to patrol the highways north of the city, keeping a lookout for gangs of city punks who frequently mounted raids to steal or destroy DC1's supplies. Cutter also taught you to shoot. It was your natural prowess with a gun, and your skill behind the wheel, that was to earn you the begrudging respect of your enemies, who took to calling you 'the Freeway Warrior'.</p>
+    <p>'Cutter' Jacks was one such refugee. Before 'The Day' he had been chief mechanic at the International Grand Prix Circuit near Lake Dallas, and his incredible skill with, and knowledge of, engines was soon to prove invaluable to the colony. He taught you how to drive, and from a pile of old wrecks that you helped him salvage from the circuit, he built you a powerful, customized car. You used it to patrol the highways north of the city, keeping a lookout for gangs of city punks who frequently mounted raids to steal or destroy DC1's supplies. Cutter also taught you to shoot. It was your natural prowess with a gun, and your skill behind the wheel, that was to earn you the begrudging respect of your enemies, who took to calling you 'the Freeway Warrior'.</p>
     
     <p>Six months after you arrived at DC1, the colony was faced with a major crisis. A heat wave was causing a drought that threatened to destroy the food supply. Crops were failing and the colony's artesian well, its only source of uncontaminated water, was beginning to dry up. The drought was also provoking more attacks from the city punks, who were desperate for food and water. Their common need had united them and now they posed a very real threat to the security of DC1.</p>
     <p>It was the last day of May, 2020, when Pop Ewell made radio contact with another colony who were based in the city of Big Spring, 300 miles west of McKinney. Their situation was completely the reverse of DC1's: they had food and water in plentiful supply but they were desperately short of fuel. They told of their contact with survivors in Tucson, Arizona, who were also without fuel. The Tucson colony reported that the territories west of the Sierra Nevada mountains had been spared the worst effects of the radioactive blizzards that had devastated the rest of the country and, miraculously, much of southern California was still widely populated. In fact, it had survived the last eight years virtually intact. When you heard the news you could hardly believe your ears. Perhaps your family was still alive. After all that had happened, there was now a real hope that one day you might be reunited with them.</p>
     <p>A meeting was held to decide how best to deal with the crisis facing DC1. Everyone agreed that to stay at McKinney would lead eventually to death, either slowly from starvation or suddenly at the hands of the murderous city gangs. The only choice open to DC1 was to try to reach California; only there lay real hope for the future of the colony. The decision was relayed to the survivors at Big Spring and a deal was struck to rendezvous with them as soon as possible. DC1 would refuel them in exchange for food and water, and together they would join up with the Tucson colony for the final stage of the journey to California.</p>
-    <p>Careful preparations were made for the long trek, and three vehicles were chosen to make up the convoy: the school bus, your customized roadster, and a gasolene tanker laden with 5000 gallons of petroleum syphoned from underground storage tanks at the Ewell ranch. Supplies of food and water were adequate but the colony lacked sufficient firearms and ammunition with which to defend itself. So, on the day before the convoy was due to leave, one of the colonists was sent north to search the town of Sherman for weapons. He radioed back to say that he had found a cache of hunting rifles and ammunition, but that his truck had broken down and he was stranded in the town. He had also found a survivor - a beautiful teenage girl - and he requested that you be sent to Sherman to pick them up. As soon as you arrived you were ambushed by the scouts of a brutal gang of bikers known as the Detroit Lions and, in the ensuing gun battle, you killed Stinger - the scouts' leader.</p>
+    <p>Careful preparations were made for the long trek, and three vehicles were chosen to make up the convoy: the school bus, your customized roadster, and a gasolene tanker laden with 5000 gallons of petroleum siphoned from underground storage tanks at the Ewell ranch. Supplies of food and water were adequate but the colony lacked sufficient firearms and ammunition with which to defend itself. So, on the day before the convoy was due to leave, one of the colonists was sent north to search the town of Sherman for weapons. He radioed back to say that he had found a cache of hunting rifles and ammunition, but that his truck had broken down and he was stranded in the town. He had also found a survivor - a beautiful teenage girl - and he requested that you be sent to Sherman to pick them up. As soon as you arrived you were ambushed by the scouts of a brutal gang of bikers known as the Detroit Lions and, in the ensuing gun battle, you killed Stinger - the scouts' leader.</p>
     <p>Later, you learned that the girl, Kate Norton, was the sole survivor of a Kansas City colony, which had been attacked and wiped out by the Detroit Lions. The Lions' leader, who calls himself 'Mad Dog Michigan', had taken a liking to her and spared her life. Mad Dog had once been a high-ranking HAVOC agent. He had escaped from Pontiac Deep Pen near Detroit, and he and his gang, most of whom were also HAVOC escapees, were heading for the Fort Hood Military Reserve near Killeen, Texas, the largest armoury in the whole of the United States. There he hoped to find enough weapons to equip the other HAVOC clans who were now in control of cities all along the eastern seaboard. Kate had managed to steal a motorcycle and escape from their camp, but Mad Dog had been determined to get her back. He sent his brother - Stinger and a handful of his best scouts to track her down. They had finally caught up with her at Sherman.</p>
 
     <p>When Mad Dog learned that you had killed his brother, he vowed to get even with you at any price. He abandoned his plans to loot Fort Hood and embarked instead on a relentless pursuit of your colony as it crossed the sun-scorched wastelands of central Texas. The journey to Big Spring was fraught with great danger. Yet, in spite of the many perils you faced, perhaps because of them, you felt yourself falling in love with Kate and you sensed that she, too, was becoming increasingly fond of you.</p>
     <p>Sadly, the convoy was only a few miles from Big Spring when disaster struck. The land surrounding the settlement was controlled by a gang of bikers, a renegade clan called 'the Mavericks' who had been the bane of the Big Spring colony for many months. As the convoy drew nearer to its destination, the Mavericks launched an attack, and, in the running battle that ensued, they captured and abducted Kate. The convoy entered the fortified gates of Big Spring to a rapturous welcome from the colonists of that settlement, but for you the mood of celebration was soured by the vivid memory of Kate's abduction. You vowed to rescue her, and, from that moment on, every waking minute of every day at Big Spring was spent thinking about little else.</p>
-    <p>By chance it transpired that the leader of the Mavericks, a blond-haired murderer called Amex Gold, was a former HAVOC agent who had served under Mad Dog Michigan before 'the Day'. He offered to join forces with the Lions, and, as a token of his loyalty to his former commander, he returned Kate to him. Together, the Lions and the Mavericks launched a hasty attack on Big Spring. However, although they outnumbered the colony by more than three to one, they were unable to breach the settlement's fortified perimeter wall, and were repelled with heavy losses.</p>
+    <p>By chance it transpired that the leader of the Mavericks, a blond-haired murderer called Amex Gold, was a former HAVOC agent who had served under Mad Dog Michigan before 'The Day'. He offered to join forces with the Lions, and, as a token of his loyalty to his former commander, he returned Kate to him. Together, the Lions and the Mavericks launched a hasty attack on Big Spring. However, although they outnumbered the colony by more than three to one, they were unable to breach the settlement's fortified perimeter wall, and were repelled with heavy losses.</p>
     <p>On the day after the attack, Pop Ewell discovered the radio frequency that the clansmen were using and was able to eavesdrop on their communications. He learned that Mad Dog had ordered another HAVOC clan, based in New Orleans, to come and reinforce his command; they were expected to arrive within the week. He also overheard Mad Dog arrange a meeting with Mekong Mike, the leader of the Angelinos, a gang that controlled the city of San Angelo. He wanted him as an ally and was prepared to offer guns and ammunition in return for his help in destroying the Big Spring colony.</p>
     
     <p>Two days later, Mad Dog Michigan set off for San Angelo at the head of a motorcycle pack 200 riders strong. Those few clansmen who remained with Amex Gold tried myriad tricks to convince the colony that the Mavericks and the Lions still surrounded Big Spring in strength, but to no avail. The senior members of the newly enlarged colony convened a meeting at which it was decided that, with the clansmen now at their weakest, and with the appearance of the New Orleans gang expected at any time, a breakout had to be attempted without delay.</p>
@@ -411,12 +415,11 @@ Initial revision
        <li><p>After working out your Combat Ratio, pick a number from the <a idref="random">Random Number Table</a>.</p></li>
        <li>
         <p>Turn to the Close Combat Results Table on the inside back cover of the book. Along the top of the chart are the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the number that you have picked (the random numbers appear down the side of the chart). You now have the <typ class="attribute">ENDURANCE</typ> points lost by both Cal Phoenix and his enemy in this round of close combat. (E represents points lost by the enemy; CP represents points lost by Cal Phoenix.)</p>
-        <p>Example<br />The Combat Ratio between Cal Phoenix and the Renegade Clansman has been established as <ch.plus/>1. If the number picked from the <a idref="random">Random Number Table</a> is a 4, then the result of the first round of close combat is:
-         <ul>
-          <li>Cal Phoenix loses 3 <typ class="attribute">ENDURANCE</typ> points.</li>
-          <li>Renegade Clansman loses 4 <typ class="attribute">ENDURANCE</typ> points.</li>
-         </ul>
-        </p>
+        <p>Example<br />The Combat Ratio between Cal Phoenix and the Renegade Clansman has been established as <ch.plus/>1. If the number picked from the <a idref="random">Random Number Table</a> is a 4, then the result of the first round of close combat is:</p>
+        <ul>
+         <li>Cal Phoenix loses 3 <typ class="attribute">ENDURANCE</typ> points.</li>
+         <li>Renegade Clansman loses 4 <typ class="attribute">ENDURANCE</typ> points.</li>
+        </ul>
        </li>
        <li><p>On the <a idref="action">Action Chart</a>, mark the changes in <typ class="attribute">ENDURANCE</typ> points to the participants in the close combat.</p></li>
        <li><p>Unless otherwise instructed, or unless you have an option to evade, start the next round of close combat.</p></li>
@@ -532,7 +535,7 @@ Initial revision
 
      <data>
       <p>Kate grips your hand tightly as you descend with a group of the cave people into the depths of the Sonora caverns. An astounding speleological feast greets your eyes as you follow them through a series of monumentous caves that have been eroded over millions of years by subterranean rivers and streams. The group stops frequently at specially prepared defensive hides, which are virtually impossible to see. One or two of their number, armed with rocks, spears and slings, occupy each of these positions. At once you see that it is their intention to lure the clansmen into the caverns and fight them here, where, despite their lack of firearms, the odds are in their favour.</p>
-      <p>Soon the sound of gun fire begins to penetrate the caverns, announcing the arrival of the clansmen. You stop with Kate and crouch behind a clump of stalagmites, while the three remaining cave people arm themselves with rocks and take up a position on a ledge directly above a narrow defile. For several minutes the sound of gun fire and the screams of the wounded fill the caves with clamouring echoes. Then two of the Angelinos appear at the entrance to the defile and come running towards you. The cave people hurl their rocks and bring an Angelino crashing to the ground with a broken skull, but his partner avenges his death by sweeping them from the ledge with one long burst of automatic fire.</p>
+      <p>Soon the sound of gunfire begins to penetrate the caverns, announcing the arrival of the clansmen. You stop with Kate and crouch behind a clump of stalagmites, while the three remaining cave people arm themselves with rocks and take up a position on a ledge directly above a narrow defile. For several minutes the sound of gunfire and the screams of the wounded fill the caves with clamouring echoes. Then two of the Angelinos appear at the entrance to the defile and come running towards you. The cave people hurl their rocks and bring an Angelino crashing to the ground with a broken skull, but his partner avenges his death by sweeping them from the ledge with one long burst of automatic fire.</p>
       <choice idref="sect61">If you have a missile weapon, and wish to use it, <link-text>turn to 61</link-text>.</choice>
       <choice idref="sect302">If you do not have one, or have exhausted your ammunition, <link-text>turn to 302</link-text>.</choice>
      </data>
@@ -640,7 +643,7 @@ Initial revision
      <meta><title>18</title></meta>
 
      <data>
-      <p>The clansman is no more than ten feet away when you spring up from your hiding place and bring your barrel to bear. Your gun fire catches him in the side and spins him backwards to the slippery floor. For a moment he shudders, then falls still as his last breath escapes from between his blood-flecked lips.</p>
+      <p>The clansman is no more than ten feet away when you spring up from your hiding place and bring your barrel to bear. Your gunfire catches him in the side and spins him backwards to the slippery floor. For a moment he shudders, then falls still as his last breath escapes from between his blood-flecked lips.</p>
       <p>Kate moves forward to check that he is dead and to search his body. She keeps what she needs: his machine pistol, a quantity of ammunition and his water canteen, and offers the rest of his possessions to you:</p>
       <ul>
        <li>Enough food for one Meal</li>
@@ -914,7 +917,7 @@ Initial revision
 
      <data>
       <p>Reaching over your head, you grasp the rounded handle of your shotgun and unsheathe it from its storage place behind your seat. It is loaded, and a glance at the breach tells you that the safety catch is set to fire. The moment the clansman sees you resting the twelve-gauge barrel on the door, he veers across to the left lane of the highway as quickly as he can. You smile when you realize the purpose of this manouevre: he is trying to increase his chances of survival by making it as difficult as he can for you to shoot at him with your right hand.</p>
-      <p>Add together your Driving and Shooting skill scores. Now decide how many rounds you wish to fire at the clansman (minimum equals one; maximum equals four), and add the number of rounds to your skills total.</p>
+      <p>Add together your Driving and Shooting skill scores. Now decide how many rounds you wish to fire at the clansman (minimum: one round; maximum: four rounds), and add the number of rounds to your skills total.</p>
       <choice idref="sect318">If your total score is 5 or less, <link-text>turn to 318</link-text>.</choice>
       <choice idref="sect19">If your total score is 6 or more, <link-text>turn to 19</link-text>.</choice>
      </data>
@@ -1084,7 +1087,7 @@ Initial revision
      </footnotes>
      
      <data>
-      <p>The valve clicks open and the tell-tale aroma of gasolene rises from the tank to greet your nostrils. A fuel gauge on the inside edge of the valve shows you that the tank contains 125 gallons of premium unleaded gasolene, more than sufficient for your needs. When the others come to inspect your handiwork they congratulate you unstintingly.</p>
+      <p>The valve clicks open<a id="sect52-1" idref="sect52-1-foot" class="footnote" /> and the tell-tale aroma of gasolene rises from the tank to greet your nostrils. A fuel gauge on the inside edge of the valve shows you that the tank contains 125 gallons of premium unleaded gasolene, more than sufficient for your needs. When the others come to inspect your handiwork they congratulate you unstintingly.</p>
       <p>After filling the tank of your roadster, Sergeant Haskell and his men set about destroying the remainder of the fuel to prevent it from falling into the hands of Mad Dog Michigan's clansmen. Then, with a view of the station ablaze in your driving mirror, you set off west along Freeway 10 to keep your rendezvous with the convoy.</p>
       <choice idref="sect300"><link-text>Turn to 300</link-text>.</choice>
      </data>
@@ -1187,7 +1190,7 @@ Initial revision
      <meta><title>61</title></meta>
 
      <data>
-      <p>The gun fire stops and you hear the unmistakable sound of the Angelino reloading his machine pistol. Finally, he draws back its firing bolt and starts walking slowly towards your position.</p>
+      <p>The gunfire stops and you hear the unmistakable sound of the Angelino reloading his machine pistol. Finally, he draws back its firing bolt and starts walking slowly towards your position.</p>
       <choice idref="sect323">If you are holding a Pistol, <link-text>turn to 323</link-text>.</choice>
       <choice idref="sect214">If you are holding a Machine Pistol, <link-text>turn to 214</link-text>.</choice>
       <choice idref="sect116">If you are holding a Shotgun, <link-text>turn to 116</link-text>.</choice>
@@ -1582,7 +1585,7 @@ Initial revision
      <data>
       <p>You walk around the building and notice that it has no windows or other means of access. Nothing hints at what is stored inside, and the more you consider it, the more intrigued you become.</p>
       <choice idref="sect221">If you possess a <typ class="item">Flexible Saw</typ>, and wish to use it to try to cut through the padlock, <link-text>turn to 221</link-text>.</choice>
-      <choice idref="sect236">If you possess an <typ class="item">H.E. Grenade</typ>, and wish to use it to blow open the doors, <link-text>turn to 236</link-text>.</choice>
+      <choice idref="sect236">If you possess an <typ class="item">HE Grenade</typ>, and wish to use it to blow open the doors, <link-text>turn to 236</link-text>.</choice>
       <choice idref="sect188">If you choose to ignore the building and its unknown contents and search elsewhere, <link-text>turn to 188</link-text>.</choice>
      </data>
     </section>
@@ -1899,7 +1902,7 @@ Initial revision
      <meta><title>123</title></meta>
 
      <data>
-      <p>The case-hardened steel padlock is difficult but not impossible to cut. Eventually it gives and you are able to gain access to the hangar-like building. Inside you discover an armoured truck, one of many that were once used by banks to transport cash and bullion around Texas. This one was hijacked shortly before 'the Day', and was brought here where its cargo was to have been shared out by the robbers. However they never had a chance to divide and spend their loot, and the vehicle still contains over thirty million dollars in cash, a sum now completely worthless.</p>
+      <p>The case-hardened steel padlock is difficult but not impossible to cut. Eventually it gives and you are able to gain access to the hangar-like building. Inside you discover an armoured truck, one of many that were once used by banks to transport cash and bullion around Texas. This one was hijacked shortly before 'The Day', and was brought here where its cargo was to have been shared out by the robbers. However they never had a chance to divide and spend their loot, and the vehicle still contains over thirty million dollars in cash, a sum now completely worthless.</p>
       <illustration class="float">
        <meta>
         <creator>Brian Williams</creator>
@@ -1975,7 +1978,7 @@ Initial revision
      <meta><title>127</title></meta>
 
      <data>
-      <p>The first two clansmen to enter the workshop fall victim to your gun fire. The others duck back and crouch either side of the doorway as their leader, a wiry biker with a badly broken nose, offers you the chance to give yourselves up. Defiantly you both refuse.</p>
+      <p>The first two clansmen to enter the workshop fall victim to your gunfire. The others duck back and crouch either side of the doorway as their leader, a wiry biker with a badly broken nose, offers you the chance to give yourselves up. Defiantly you both refuse.</p>
       <p>Seconds later a clutch of grenades are thrown into the workshop and they explode with a thunderous flash. You are both mortally wounded in the blast, and when the Angelinos finally summon enough courage to storm into the room, they find you dead in each other's arms.</p>
       <p>Your journey and your life end here in Eldorado.</p>
      </data>
@@ -2003,7 +2006,7 @@ Initial revision
 
      <data>
       <p>You examine the three dials that are set into the top of the security valve. Each is divided into three segments, and each segment displays a number. One of the segments on the third dial has numbers which can be altered by hand. Carefully you consider the numbers and soon realize that they are part of a coded combination lock. By turning the adjustable numbers on the third dial to the correct total, you will release the lock and open the valve.</p>
-      <p>Consider the following numbers carefully. When you think you know what the missing number is, turn to the entry which bears the same number as your answer.</p>
+      <p>Consider the following numbers carefully. When you think you know what the missing number is, turn to the entry which bears the same number as your answer.<a id="sect129-1" idref="sect129-1-foot" class="footnote" /></p>
       <illustration class="inline">
        <meta>
         <creator>Brian Williams</creator>
@@ -2026,7 +2029,7 @@ Initial revision
        <li>Six rounds of 7.62mm ammunition</li>
        <li>Hunting Knife (2)</li>
        <li><typ class="item">Tenon Saw</typ></li>
-       <li>Four rounds of 12-gauge Shotgun shells</li>
+       <li>Four rounds of 12-gauge ammunition</li>
        <li><typ class="item">Plastic Tube</typ></li>
        <li><typ class="item">File</typ></li>
       </ul>
@@ -2306,7 +2309,7 @@ Initial revision
 
      <data>
       <p>You pass between the shattered stores and houses of Broome with your nerves on edge, half-expecting to run into a clan patrol or fall prey to an ambush. Yet your visit passes without incident and soon you find yourself back on the open freeway, heading south-east to San Angelo. You are hungry, and during your drive you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
-      <p>When you first see San Angelo, the sun is a quarter hidden below the skyline, its soft red glow reflecting upon a cluster of tall buildings that stand at the city's centre. They are the ravaged shells of banks and state offices that were the pride of this once-prosperous city before 'the Day'. Surrounding them, for many miles, is a sea of dust and rubble. Your skin prickles when you realize that this is all that remains of the city's suburbs, an area that once was home to more than a million Texans.</p>
+      <p>When you first see San Angelo, the sun is a quarter hidden below the skyline, its soft red glow reflecting upon a cluster of tall buildings that stand at the city's centre. They are the ravaged shells of banks and state offices that were the pride of this once-prosperous city before 'The Day'. Surrounding them, for many miles, is a sea of dust and rubble. Your skin prickles when you realize that this is all that remains of the city's suburbs, an area that once was home to more than a million Texans.</p>
       <p>You are about to drive towards the centre when you notice that a fortified wall has been erected around the tall buildings of the downtown area, and the northern freeway approaches are controlled by roadblocks. It would be near-suicidal to approach any closer, so you make a wide detour around the city limits and try an approach from the south.</p>
       <p>It takes nearly two hours to reach the south side of San Angelo, by which time night has fallen. Fortunately, your decision to go south has paid off: this section of the city is virtually uninhabited by the Angelinos and your approach goes undetected.</p>
       <p>Hidden by the darkness, you are able to get within a mile of the downtown area before you encounter any sign of clan activity. You know that if your rescue of Kate is to be successful you must not allow your roadster to fall into enemy hands, and with this thought in mind, you search for somewhere safe to leave it while you venture into the downtown area on foot.</p>
@@ -2486,7 +2489,7 @@ Initial revision
 
      <data>
       <p>When you emerge from the caverns you are astounded to see that the Angelinos have been completely overwhelmed by this colony of cave dwellers. The few clansmen to have survived the ambush have been trussed up like turkeys and are being guarded by a circle of spear-wielding women. The rest of the colony are so busy stripping and searching the bodies of those they have killed that they fail to notice you and Kate, as you leave the entrance quietly and make your way back to the roadster. You admire their bravery but there is something about these people, something about their appearance and their silence, that unsettles you.</p>
-      <p>You inspect the damage to the truck. Your fears are confirmed: you no longer have sufficient fuel to reach Kent. You syphon the tanks of the clansmen's bikes, and save what you can from the bottom of the two perforated fuel canisters, but you estimate that in total you have only enough to take you 120 miles.</p>
+      <p>You inspect the damage to the truck. Your fears are confirmed: you no longer have sufficient fuel to reach Kent. You siphon the tanks of the clansmen's bikes, and save what you can from the bottom of the two perforated fuel canisters, but you estimate that in total you have only enough to take you 120 miles.</p>
       <p>As you are leaving, you notice that the cave people are preparing a funeral pyre for those who were killed in the fighting. It strikes you as a very sensible and civilized way to dispose of the dead, and makes you think that perhaps your suspicions about these people were groundless after all. Your illusions about the cave people are soon shattered, however, when Kate points out that they are not burning the dead at all: they are cooking them.</p>
       <choice idref="sect56"><link-text>Turn to 56</link-text>.</choice>
      </data>
@@ -2602,8 +2605,8 @@ Initial revision
        <instance class="pdf" src="ill9.pdf" width="386" height="626" />
       </illustration>
       <p>So concerted is the fire that you are both forced to cower in your armour-backed seats to avoid being hit. Then another sign appears on the road ahead, pointing to a winding dirt track that leads away to the left. It reads:</p>
-      <p><signpost>TO THE CAVERNS OF SONORA</signpost></p>
-      <p>You are desperate to avoid the machine-gunning biker and so decide to take the track. At least its winding course will give him less opportunity to riddle the trunk with bullets.</p>
+      <signpost>TO THE CAVERNS OF SONORA</signpost>
+      <p>You are desperate to avoid the machine gunning biker and so decide to take the track. At least its winding course will give him less opportunity to riddle the trunk with bullets.</p>
       <choice idref="sect24"><link-text>Turn to 24</link-text>.</choice>
      </data>
     </section>
@@ -2613,7 +2616,7 @@ Initial revision
 
      <data>
       <p>The moment the clansman sees you draw your pistol he veers across to the left lane of the highway. You smile when you realize the purpose of his manoeuvre: he is trying to make it as difficult as he can for you to shoot at him with your right hand.</p>
-      <p>Add together your Driving and Shooting skill scores. Now decide how many rounds you wish to fire at the clansman (minimum equals one; maximum equals four), and add the number of rounds to your skills total.</p>
+      <p>Add together your Driving and Shooting skill scores. Now decide how many rounds you wish to fire at the clansman (minimum: one round; maximum: four rounds), and add the number of rounds to your skills total.</p>
       <choice idref="sect318">If your total score is 8 or less, <link-text>turn to 318</link-text>.</choice>
       <choice idref="sect19">If your total score is 9 or more, <link-text>turn to 19</link-text>.</choice>
      </data>
@@ -2654,7 +2657,7 @@ Initial revision
      <meta><title>183</title></meta>
 
      <data>
-      <p>The derelict gas station shows signs of having been looted some time during the past few months. Its underground gasolene storage tank has been syphoned of fuel, and the contents of its workshop lie broken and scattered across the dusty floor. Carefully you sift through what little remains and uncover the following items:</p>
+      <p>The derelict gas station shows signs of having been looted some time during the past few months. Its underground gasolene storage tank has been siphoned of fuel, and the contents of its workshop lie broken and scattered across the dusty floor. Carefully you sift through what little remains and uncover the following items:</p>
       <ul>
        <li>Crowbar (2)</li>
        <li><typ class="item">Solar Regulator</typ></li>
@@ -2729,7 +2732,7 @@ Initial revision
 
      <data>
       <p>The rotten timbers are easily torn away from the front door and in minutes you have gained access to the building. In the middle of the lobby you discover a stainless steel replica of an oil derrick, standing twelve feet high, on which there is an inscription that reveals the former owners of the block:</p>
-      <p><signpost>THE LONE STAR OIL <ch.amp/> GAS COMPANY</signpost></p>
+      <signpost>THE LONE STAR OIL <ch.amp/> GAS COMPANY</signpost>
       <p>In order to emerge somewhere inside the perimeter wall, you must discover an exit on the north side of this building, so you set off immediately in that direction. Beyond the lobby area you can see a row of elevator doors, and two corridors disappearing to the left and right.</p>
       <choice idref="sect215">If you wish to explore the right-hand corridor, <link-text>turn to 215</link-text>.</choice>
       <choice idref="sect7">If you wish to search the left-hand corridor, <link-text>turn to 7</link-text>.</choice>
@@ -2913,8 +2916,8 @@ Initial revision
      <meta><title>205</title></meta>
 
      <data>
-      <p>Beyond Sterling City the freeway follows a wide, dust-filled gully that was once the North Concho River. You are staring at this dead watercourse, trying to imagine what the river must have looked like before 'the Day', when a road sign flashes past. You stop the car and turn back to read it. It says:</p>
-      <p><signpost>BROOME - 2 MILES</signpost></p>
+      <p>Beyond Sterling City the freeway follows a wide, dust-filled gully that was once the North Concho River. You are staring at this dead watercourse, trying to imagine what the river must have looked like before 'The Day', when a road sign flashes past. You stop the car and turn back to read it. It says:</p>
+      <signpost>BROOME - 2 MILES</signpost>
       <choice idref="sect220">If you possess a <typ class="item">CB Radio</typ>, <link-text>turn to 220</link-text>.</choice>
       <choice idref="sect46">If you do not possess this item, <link-text>turn to 46</link-text>.</choice>
      </data>
@@ -2951,7 +2954,7 @@ Initial revision
      <meta><title>208</title></meta>
 
      <data>
-      <p>With your pulse racing, you raise the binoculars to your eyes and focus on the approaching bikers. They ride machines bedecked with a strange symbol: a priest or some other holy man, dressed in flowing white robes, with a halo above his head. It looks a curiously pious symbol for a clan to adopt, until you remember that before 'the Day', the name of the professional football team based in New Orleans was 'the Saints'. Suddenly you realize that this pack of riders, some 400-500 strong, are the New Orleans clan that Mad Dog Michigan sent for. It would be disastrous for the convoy to run head-on into a group of this size, and you hurry back to the colony as quickly as you can to break the bad news.</p>
+      <p>With your pulse racing, you raise the binoculars to your eyes and focus on the approaching bikers. They ride machines bedecked with a strange symbol: a priest or some other holy man, dressed in flowing white robes, with a halo above his head. It looks a curiously pious symbol for a clan to adopt, until you remember that before 'The Day', the name of the professional football team based in New Orleans was 'the Saints'. Suddenly you realize that this pack of riders, some 400-500 strong, are the New Orleans clan that Mad Dog Michigan sent for. It would be disastrous for the convoy to run head-on into a group of this size, and you hurry back to the colony as quickly as you can to break the bad news.</p>
       <p>With the New Orleans clan approaching from the north, a large Mexican clan crossing the border to the south, and the threat of a Maverick ambush to the west, the prospects of reaching El Paso unscathed now look decidedly unpromising. With no time to discuss the situation at length, the convoy reverts to the original plan: to stay on Interstate 10 and approach El Paso from the west. It is the shortest, most direct route, even though there is a very real chance of falling prey to a Maverick ambush.</p>
       <choice idref="sect250"><link-text>Turn to 250</link-text>.</choice>
      </data>
@@ -3171,7 +3174,7 @@ Initial revision
      <meta><title>226</title></meta>
 
      <data>
-      <p>Unable to crack the code, reluctantly you abandon the storage tank and content yourself with syphoning what you can from the fuel tanks of the dead clansmen's motorcycles. Unfortunately, your efforts net you barely enough gasolene to reach Brogado - the next town on the freeway. As you pull away slowly from the service area you are not the only one who is praying that you will find some fuel in Brogado.</p>
+      <p>Unable to crack the code, reluctantly you abandon the storage tank and content yourself with siphoning what you can from the fuel tanks of the dead clansmen's motorcycles. Unfortunately, your efforts net you barely enough gasolene to reach Brogado - the next town on the freeway. As you pull away slowly from the service area you are not the only one who is praying that you will find some fuel in Brogado.</p>
       <choice idref="sect347"><link-text>Turn to 347</link-text>.</choice>
      </data>
     </section>
@@ -3331,7 +3334,7 @@ Initial revision
        <li>Enough tinned food for eight Meals</li>
        <li>Enough water for three Drinks</li>
       </ul>
-      <p>You are able to syphon two gallons of fuel from the gas tank, enough to propel your roadster across the remaining thirty miles to Kent. As soon as the two marines return from their sad duty, you load up and take off along the freeway, heading west.</p>
+      <p>You are able to siphon two gallons of fuel from the gas tank, enough to propel your roadster across the remaining thirty miles to Kent. As soon as the two marines return from their sad duty, you load up and take off along the freeway, heading west.</p>
       <choice idref="sect69"><link-text>Turn to 69</link-text>.</choice>
      </data>
     </section>
@@ -3470,7 +3473,7 @@ Initial revision
 
      <data>
       <p>A cloud of fearful anticipation hangs over the convoy as it passes through Van Horn and begins the journey to Sierra Blanca. You feel especially vulnerable as the freeway approaches the narrow mountain pass between Devil Ridge and Slaughter Mountain. Even the names of these landmarks serve to increase your dread of what could happen there.</p>
-      <p>You are a little over five miles from Van Horn when you hear gun fire in the distance, and see a pall of black smoke rising into the cloudless sky. At its base, the buildings of a tiny town called Allamore are feeding the flames, and in the pass beyond this burning town, a gun battle is raging between the Mavericks and a group of invading Mexican clansmen. You assess the situation and decide that the best hope for the convoy lies in speed and surprise. If you can drive straight through this battle zone while both sides are busy shooting at each other, the convoy will be long gone before either side can redirect all its firepower.</p>
+      <p>You are a little over five miles from Van Horn when you hear gunfire in the distance, and see a pall of black smoke rising into the cloudless sky. At its base, the buildings of a tiny town called Allamore are feeding the flames, and in the pass beyond this burning town, a gun battle is raging between the Mavericks and a group of invading Mexican clansmen. You assess the situation and decide that the best hope for the convoy lies in speed and surprise. If you can drive straight through this battle zone while both sides are busy shooting at each other, the convoy will be long gone before either side can redirect all its firepower.</p>
       <p>With trepidation, the colony agrees to your plan and the convoy is drawn up into its break-out formation, with Pete Tyler's tow truck leading the way.</p>
       <choice idref="sect20"><link-text>Turn to 20</link-text>.</choice>
      </data>
@@ -3818,7 +3821,7 @@ Initial revision
 
      <data>
       <p>You grab the pistol grip of your G-12 and glance down at the breach to make sure that the cocking lever is set ready to fire. The moment the clansman sees you resting the barrel on the door, he veers across to the left lane of the highway as quickly as he can. You smile when you realize the purpose of his manoeuvre: he is trying to increase his chances by making it as difficult as he can for you to shoot at him with your right hand.</p>
-      <p>Add together your Driving and Shooting skill scores. Now decide how many bursts of fire you wish to unleash at the clansman (minimum equals one; maximum equals four), and add the number to your skills total.</p>
+      <p>Add together your Driving and Shooting skill scores. Now decide how many bursts of fire you wish to unleash at the clansman (minimum: one burst; maximum: four bursts), and add the number to your skills total.</p>
       <choice idref="sect318">If your total score is 6 or less, <link-text>turn to 318</link-text>.</choice>
       <choice idref="sect19">If your total score is 7 or more, <link-text>turn to 19</link-text>.</choice>
      </data>
@@ -3913,7 +3916,7 @@ Initial revision
      <meta><title>288</title></meta>
 
      <data>
-      <p>When you first see San Angelo, the sun is a quarter hidden below the skyline, its soft red glow reflecting upon a cluster of tall buildings that stand at the city's centre. They are the ravaged shells of banks and state offices that were the pride of this once-prosperous city before 'the Day'. Surrounding them, for many miles, is a sea of dust and rubble. Your skin prickles when you realize that this is all that remains of the city's suburbs, an area that was once home to more than a million Texans.</p>
+      <p>When you first see San Angelo, the sun is a quarter hidden below the skyline, its soft red glow reflecting upon a cluster of tall buildings that stand at the city's centre. They are the ravaged shells of banks and state offices that were the pride of this once-prosperous city before 'The Day'. Surrounding them, for many miles, is a sea of dust and rubble. Your skin prickles when you realize that this is all that remains of the city's suburbs, an area that was once home to more than a million Texans.</p>
       <p>You are about to drive towards the centre when you notice that a fortified wall has been erected around the tall buildings of the downtown area, and that the northern freeway approaches are controlled by roadblocks. It would be near-suicidal to approach any closer, so you decide to make a wide detour around the city limits and try to approach from the south.</p>
       <p>It takes you nearly two hours to reach the south side of San Angelo, by which time night has fallen. Fortunately, your decision to go south pays off; this section of the city is virtually uninhabited by the Angelinos and your approach goes undetected. Hidden by the darkness, you are able to get within a mile of the downtown area before you encounter any sign of clan activity. You know that if your rescue of Kate is to be successful you must not allow your roadster to fall into enemy hands, and with this in mind, you search for somewhere safe to leave it while you venture into the downtown area on foot.</p>
       <p>An underground parking lot situated below the looted ruins of a Sears megamarket provides just such a safe haven, and it is here that you hide your car. You are tired after the rigours of your journey, so you decide to get a few hours' sleep and attempt your rescue at first light.</p>
@@ -3960,7 +3963,7 @@ Initial revision
      <meta><title>292</title></meta>
 
      <data>
-      <p>Your ambush catches the clansman by surprise. But your aim is poor, and although your gun fire wings him and makes him cry out in pain, it does not prevent him from returning a burst of fire at your position.</p>
+      <p>Your ambush catches the clansman by surprise. But your aim is poor, and although your gunfire wings him and makes him cry out in pain, it does not prevent him from returning a burst of fire at your position.</p>
       <p>Add your current <typ class="attribute">ENDURANCE</typ> points score to your Stealth skill score.</p>
       <choice idref="sect247">If your total score is 17 or less, <link-text>turn to 247</link-text>.</choice>
       <choice idref="sect71">If your total score is 18 or more, <link-text>turn to 71</link-text>.</choice>
@@ -4094,8 +4097,8 @@ Initial revision
 
      <data>
       <p>You complete your detour of Sterling city without incident and rejoin Freeway 87 a few miles south of the town. The hour you spent driving across the dusty plain has made you very thirsty, and you must now take a Drink or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
-      <p>The freeway follows a wide, rock-strewn gully that was once the North Concho River. You are staring at this dead watercourse, trying to imagine what the river must have looked like before 'the Day', when a road sign flashes past. You stop the car and turn back to read it. It says:</p>
-      <p><signpost>BROOME - 2 MILES</signpost></p>
+      <p>The freeway follows a wide, rock-strewn gully that was once the North Concho River. You are staring at this dead watercourse, trying to imagine what the river must have looked like before 'The Day', when a road sign flashes past. You stop the car and turn back to read it. It says:</p>
+      <signpost>BROOME - 2 MILES</signpost>
       <choice idref="sect220">If you possess a <typ class="item">CB Radio</typ>, <link-text>turn to 220</link-text>.</choice>
       <choice idref="sect46">If you do not possess this item, <link-text>turn to 46</link-text>.</choice>
      </data>
@@ -4322,7 +4325,7 @@ Initial revision
 
      <data>
       <p>You tell the soldiers who you are and how you came to be here in Fort Stockton. At first, they listen to your fantastic account with cool scepticism. They cross-examine you both in an attempt to find a flaw in your story, but when they are unable to find any, their attitude begins to change. By the time they have finished their interrogation, you have managed to win their respect and admiration.</p>
-      <p>Once they are convinced that you are genuine colonists they recount their own tale. They are WDF marines who, before 'the Day', were stationed at an underground tracking facility in Brownsville, Texas. Twelve of their unit survived the post-holocaust years, but soon after their return to the surface they were the victims of a clan attack. They were the only survivors of the attack and were forced to flee Brownsville on foot. Eventually they managed to find a vehicle that worked - the pick-up truck - and had got this far when the fuel ran out and the engine broke down. They are trying to reach their command headquarters at Fort Bliss, located just north of El Paso, where they hope to rejoin remnants of their unit. They arrived in Fort Stockton three days ago and have been prevented from continuing their journey on foot by the blistering day temperatures and the fierce night storms that have swept down from the Barrilla Mountains.</p>
+      <p>Once they are convinced that you are genuine colonists they recount their own tale. They are WDF marines who, before 'The Day', were stationed at an underground tracking facility in Brownsville, Texas. Twelve of their unit survived the post-holocaust years, but soon after their return to the surface they were the victims of a clan attack. They were the only survivors of the attack and were forced to flee Brownsville on foot. Eventually they managed to find a vehicle that worked - the pick-up truck - and had got this far when the fuel ran out and the engine broke down. They are trying to reach their command headquarters at Fort Bliss, located just north of El Paso, where they hope to rejoin remnants of their unit. They arrived in Fort Stockton three days ago and have been prevented from continuing their journey on foot by the blistering day temperatures and the fierce night storms that have swept down from the Barrilla Mountains.</p>
       <p>They have set up camp in the ruins of a nearby motel and they invite you there to share their food and drink, and to formulate a plan to find some fuel for your roadster. Their provisions are basic but you receive them gratefully: restore 2 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect58"><link-text>Turn to 58</link-text>.</choice>
      </data>
@@ -4435,7 +4438,7 @@ Initial revision
      <meta><title>331</title></meta>
 
      <data>
-      <p>As the noise of the explosion fades and the smoke thins, you approach the door to discover that the padlock no longer exists. Firmly you push open the shrapnel-pitted door and enter the hangar-like interior. Inside you find an armoured truck, one of many that were once used by banks to transport cash and bullion around Texas. This one was hijacked shortly before 'the Day', and was brought here, where its cargo was to have been shared out by the robbers. However, they never had a chance to divide and spend their loot, and the vehicle still contains over thirty million dollars in cash, a sum now completely worthless.</p>
+      <p>As the noise of the explosion fades and the smoke thins, you approach the door to discover that the padlock no longer exists. Firmly you push open the shrapnel-pitted door and enter the hangar-like interior. Inside you find an armoured truck, one of many that were once used by banks to transport cash and bullion around Texas. This one was hijacked shortly before 'The Day', and was brought here, where its cargo was to have been shared out by the robbers. However, they never had a chance to divide and spend their loot, and the vehicle still contains over thirty million dollars in cash, a sum now completely worthless.</p>
       <p>The truck's fuel tank is a quarter full, but it is diesel oil and cannot be used in your roadster. Cursing your luck, you search the truck and the building for anything that may be of practical use and you discover the following items:</p>
       <ul>
        <li><typ class="item">Tool Kit</typ></li>
@@ -4846,18 +4849,36 @@ Initial revision
     <section class="backmatter" id="errerr">
      <meta><title>Errata</title></meta>
      <data>
-      <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>re-establish</quote> with <quote>reestablish</quote>.</p>
+      <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>re-establish</quote> with <quote>reestablish</quote>, replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>if you pick a O</quote> with <quote>if you pick a 0</quote>.</p>
       <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
       <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote>as <ch.plus/>1 If </quote> with <quote>as <ch.plus/>1. If </quote>.</p>
       <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>map of Western Texas</quote> with <quote>Map of Western Texas</quote>.</p>
+      <p>(<a idref="sect8">8</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote>.</p>
+      <p>(<a idref="sect18">18</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote>.</p>
       <p>(<a idref="sect23">23</a>) Replaced <quote>Small blanket</quote> with <quote>Small Blanket</quote>.</p>
       <p>(<a idref="sect23">23</a>) Replaced <quote>Medi-kits units</quote> with <quote>Medi-kit units</quote>.</p>
       <p>(<a idref="sect30">30</a>) Replaced <quote>bushwack</quote> with <quote>bushwhack</quote>.</p>
+      <p>(<a idref="sect38">38</a>) Replaced <quote>(minimum equals one; maximum equals four)</quote> with <quote>(minimum: one round; maximum: four rounds)</quote>.</p>
+      <p>(<a idref="sect61">61</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote>.</p>
+      <p>(<a idref="sect94">94</a>) Replaced <quote>H.E. Grenade</quote> with <quote>HE Grenade</quote>.</p>
+      <p>(<a idref="sect127">127</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote>.</p>
       <p>(<a idref="sect130">130</a>) Replaced <quote>Plastic tube</quote> with <quote>Plastic Tube</quote>.</p>
+      <p>(<a idref="sect130">130</a>) Replaced <quote>Four rounds of 12-gauge Shotgun shells</quote> with <quote>Four rounds of 12-gauge ammunition</quote>.</p>
+      <p>(<a idref="sect168">168</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
+      <p>(<a idref="sect178">178</a>) Replaced <quote>machine-gunning</quote> with <quote>machine gunning</quote>.</p>
+      <p>(<a idref="sect179">179</a>) Replaced <quote>(minimum equals one; maximum equals four)</quote> with <quote>(minimum: one round; maximum: four rounds)</quote>.</p>
+      <p>(<a idref="sect183">183</a>) Replaced <quote>syphoned</quote> with <quote>siphoned</quote>.</p>
+      <p>(<a idref="sect226">226</a>) Replaced <quote>syphoning</quote> with <quote>siphoning</quote>.</p>
       <p>(<a idref="sect232">232</a>) Applied bold style to <quote>Foil Blanket</quote>.</p>
+      <p>(<a idref="sect239">239</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
+      <p>(<a idref="sect250">250</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote>.</p>
+      <p>(<a idref="sect279">279</a>) Replaced <quote>(minimum equals one; maximum equals four)</quote> with <quote>(minimum: one burst; maximum: four bursts)</quote>.</p>
+      <p>(<a idref="sect292">292</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote>.</p>
       <p>(<a idref="sect315">315</a>) Replaced section references. The original text directed the reader to sections <a idref="sect161">161</a> and <a idref="sect207">207</a>, however those references are the result of being apprehended by a single clansman in section <a idref="sect115">115</a>.</p>
+      <p>(<a idref="sect346">346</a>) Replaced <quote>H.E. Grenade</quote> with <quote>HE Grenade</quote>.</p>
       <p>(<a idref="sect18">18</a>,<a idref="sect23">23</a>,<a idref="sect36">36</a>,<a idref="sect63">63</a>,<a idref="sect71">71</a>,<a idref="sect101">101</a>,<a idref="sect126">126</a>,<a idref="sect138">138</a>,<a idref="sect146">146</a>,<a idref="sect183">183</a>,<a idref="sect187">187</a>,<a idref="sect232">232</a>,<a idref="sect248">248</a>,<a idref="sect266">266</a>,<a idref="sect308">308</a>,<a idref="sect348">348</a>) Replaced CCS Bonuses in <quote>[]</quote> with <quote>()</quote>.</p>
+      <p>(<a idref="tssf">The Story So Far</a>,<a idref="sect123">123</a>,<a idref="sect153">153</a>,<a idref="sect205">205</a>,<a idref="sect208">208</a>,<a idref="sect288">288</a>,<a idref="sect303">303</a>,<a idref="sect321">321</a>,<a idref="sect331">331</a>) Replaced <quote>'the Day'</quote> with <quote>'The Day'</quote>.</p>
       <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
       </data>
     </section>
