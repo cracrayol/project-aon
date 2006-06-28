@@ -2,13 +2,13 @@
     <meta><title>Project Aon License</title></meta>
 
     <data>
-     <p>18 May 2005</p>
+     <p>28 June 2006</p>
 
      <section class="backmatter" id="lic-pre">
       <meta><title>0. Preamble</title></meta>
 
       <data>
-       <p>Joe Dever, author of the Lone Wolf game books, and Ian Page, author of the World of Lone Wolf books are providing certain of their works for free (gratis) download from the internet. Rob Adams, Paul Bonner, Gary Chalk, Melvyn Grant, Richard Hook, Peter Andrew Jones, Cyril Julien, Peter Lyon, Graham Round, and Brian Williams are similarly offering the illustrations that they did for these books. This license is intended to protect the rights of the authors and the illustrators, grant rights to their readers, and preserve the quality of the books distributed in this way.</p>
+       <p>Joe Dever, author of the Lone Wolf game books, and Ian Page, author of the World of Lone Wolf books are providing certain of their works for free (gratis) download from the internet. Rob Adams, Paul Bonner, Gary Chalk, Melvyn Grant, Richard Hook, Peter Andrew Jones, Cyril Julien, Peter Lyon, Peter Parr, Graham Round, and Brian Williams are similarly offering the illustrations that they did for these books. This license is intended to protect the rights of the authors and the illustrators, grant rights to their readers, and preserve the quality of the books distributed in this way.</p>
        <p>By viewing or downloading the books or the illustrations, you agree to refrain from redistributing them in any format for any reason. This is intended to protect readers from getting poor quality, unofficial versions or from being asked for payment in exchange for the books by someone who is redistributing them unofficially.</p>
        <p>Anyone who wishes to simply view or download the Internet Editions for their own personal use need not worry about running afoul of the terms of this License. These activities are within acceptable behaviour as defined by this License.</p>
        <p>This section does not contain the legally binding terms of this license. Please read the precise terms and conditions of this license that follow.</p>
@@ -42,7 +42,7 @@
         <meta><title>1.2</title></meta>
 
         <data>
-         <p><quote>Illustrators</quote> shall hereafter refer to Rob Adams, copyright holder of portions of <cite>The Magnamund Companion</cite>; Paul Bonner, holder of the copyrights for the illustrations of the World of Lone Wolf books; Gary Chalk, holder of the copyrights for the illustrations of Lone Wolf books one through eight counted inclusively, holder of the copyrights of portions of <cite>The Magnamund Companion</cite>, and holder of the copyrights for <cite>The Lone Wolf Poster Painting Book</cite>; Melvyn Grant, holder of the copyrights for the illustrations of <cite>Freeway Warrior 1: Highway Holocaust</cite>; Richard Hook, copyright holder of portions of <cite>The Magnamund Companion</cite>; Peter Andrew Jones, copyright holder for the illustrations used in the <cite>Lone Wolf 10th Anniversary Calendar</cite>; Cyril Julien, copyright holder of portions of <cite>The Skull of Agarash</cite>; Peter Lyon, copyright holder of portions of <cite>The Magnamund Companion</cite>; Graham Round, copyright holder of portions of <cite>The Magnamund Companion</cite>; and Brian Williams, holder of the copyrights for the illustrations of Lone Wolf books nine through twenty-eight counted inclusively with the exception of the illustrations for book twenty-one, <cite>The Voyage of the Moonstone</cite>, holder of the copyrights of portions of <cite>The Skull of Agarash</cite>, and holder of the copyrights for the illustrations of books two through four, counted inclusively, of the Freeway Warrior series. Where Paul Bonner, Gary Chalk, Melvyn Grant, Richard Hook, Peter Andrew Jones, Cyril Julien, Peter Lyon, Graham Round, or Brian Williams is mentioned singly, they will be referred to by name.</p>
+         <p><quote>Illustrators</quote> shall hereafter refer to Rob Adams, copyright holder of portions of <cite>The Magnamund Companion</cite>; Paul Bonner, holder of the copyrights for the illustrations of the World of Lone Wolf books; Gary Chalk, holder of the copyrights for the illustrations of Lone Wolf books one through eight counted inclusively, holder of the copyrights of portions of <cite>The Magnamund Companion</cite>, and holder of the copyrights for <cite>The Lone Wolf Poster Painting Book</cite>; Melvyn Grant, holder of the copyrights for the illustrations of <cite>Freeway Warrior 1: Highway Holocaust</cite>; Richard Hook, copyright holder of portions of <cite>The Magnamund Companion</cite>; Peter Andrew Jones, copyright holder for the illustrations used in the <cite>Lone Wolf 10th Anniversary Calendar</cite>; Cyril Julien, copyright holder of portions of <cite>The Skull of Agarash</cite>; Peter Lyon, copyright holder of portions of <cite>The Magnamund Companion</cite>; Peter Parr, copyright holder of the illustrations of <cite>Emerald Enchanter</cite> and <cite>Scarlet Sorcerer</cite>; Graham Round, copyright holder of portions of <cite>The Magnamund Companion</cite>; and Brian Williams, holder of the copyrights for the illustrations of Lone Wolf books nine through twenty-eight counted inclusively with the exception of the illustrations for book twenty-one, <cite>The Voyage of the Moonstone</cite>, holder of the copyrights of portions of <cite>The Skull of Agarash</cite>, and holder of the copyrights for the illustrations of books two through four, counted inclusively, of the Freeway Warrior series. Where Paul Bonner, Gary Chalk, Melvyn Grant, Richard Hook, Peter Andrew Jones, Cyril Julien, Peter Lyon, Peter Parr Graham Round, or Brian Williams is mentioned singly, they will be referred to by name.</p>
         </data>
        </section>
 
@@ -95,6 +95,8 @@
           <li><cite>Freeway Warrior 2: Slaughter Mountain Run</cite>;<br/>Copyright 1988 Joe Dever.</li>
           <li><cite>Freeway Warrior 3: The Omega Zone</cite>;<br/>Copyright 1989 Joe Dever.</li>
           <li><cite>Freeway Warrior 4: California Countdown</cite>;<br/>Copyright 1989 Joe Dever.</li>
+          <li><cite>Emerald Enchanter</cite>;<br/>Titles copyright 1986 Joe Dever.</li>
+          <li><cite>Scarlet Sorcerer</cite>;<br/>Illustrations copyright 1986 Joe Dever.</li>
          </ul>
 
          <p>The following are the works written by Ian Page which are being offered under the terms of this license:</p>
@@ -171,6 +173,13 @@
           <li><cite>The Magnamund Companion</cite>;<br/>Some illustrations copyright 1986 Peter Lyon.</li>
          </ul>
 
+         <p>The illustrations created by Peter Parr for the following books are part of the illustrations being offered under the terms of this License:</p>
+
+         <ul>
+          <li><cite>Emerald Enchanter</cite>;<br/>Illustrations copyright 1986 Peter Parr.</li>
+          <li><cite>Scarlet Sorcerer</cite>;<br/>Illustrations copyright 1986 Peter Parr.</li>
+         </ul>
+
          <p>The illustrations created by Graham Round for the following book are part of the illustrations being offered under the terms of this License:</p>
 
          <ul>
@@ -205,7 +214,7 @@
           <li><cite>Freeway Warrior: California Countdown</cite>;<br/>Illustrations Copyright 1989 Brian Williams.</li>
          </ul>
 
-         <p>The works distributed under the collective title <cite>Lone Wolf Club Newsletters</cite><ch.emdash/>which are composed of, in part, the above named works<ch.emdash/>will also be distributed under the terms of this License.</p>
+         <p>The works distributed under the collective title <cite>Lone Wolf Club Newsletters</cite><ch.emdash/>which are composed of, in part, portions of the above named works<ch.emdash/>will also be distributed under the terms of this License.</p>
 
          <p><quote>Internet Editions</quote> shall not refer to any other works by the Authors, nor any other illustrations by the Illustrators unless the Authors or Illustrators amend this License. <quote>Internet Editions</quote> shall refer solely to the text and illustrations of the above works when made available through the Internet.</p>
         </data>
