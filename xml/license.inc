@@ -95,10 +95,10 @@
           <li><cite>Freeway Warrior 2: Slaughter Mountain Run</cite>;<br/><ch.copy/> 1988 Joe Dever.</li>
           <li><cite>Freeway Warrior 3: The Omega Zone</cite>;<br/><ch.copy/> 1989 Joe Dever.</li>
           <li><cite>Freeway Warrior 4: California Countdown</cite>;<br/><ch.copy/> 1989 Joe Dever.</li>
-          <li><cite>Black Baron</cite>;<br/>Titles <ch.copy/> 1986 Joe Dever.</li>
-          <li><cite>White Warlord</cite>;<br/>Titles <ch.copy/> 1986 Joe Dever.</li>
-          <li><cite>Emerald Enchanter</cite>;<br/>Titles <ch.copy/> 1986 Joe Dever.</li>
-          <li><cite>Scarlet Sorcerer</cite>;<br/>Illustrations <ch.copy/> 1986 Joe Dever.</li>
+          <li><cite>Black Baron</cite>;<br/><ch.copy/> 1986 Joe Dever.</li>
+          <li><cite>White Warlord</cite>;<br/><ch.copy/> 1986 Joe Dever.</li>
+          <li><cite>Emerald Enchanter</cite>;<br/><ch.copy/> 1986 Joe Dever.</li>
+          <li><cite>Scarlet Sorcerer</cite>;<br/><ch.copy/> 1986 Joe Dever.</li>
          </ul>
 
          <p>The following are the works written by Ian Page which are being offered under the terms of this license:</p>
