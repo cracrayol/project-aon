@@ -2,7 +2,7 @@
     <meta><title>Project Aon License</title></meta>
 
     <data>
-     <p>28 June 2006</p>
+     <p>29 June 2006</p>
 
      <section class="backmatter" id="lic-pre">
       <meta><title>0. Preamble</title></meta>
@@ -42,7 +42,7 @@
         <meta><title>1.2</title></meta>
 
         <data>
-         <p><quote>Illustrators</quote> shall hereafter refer to Rob Adams, copyright holder of portions of <cite>The Magnamund Companion</cite>; Paul Bonner, holder of the copyrights for the illustrations of the World of Lone Wolf books; Gary Chalk, holder of the copyrights for the illustrations of Lone Wolf books one through eight counted inclusively, holder of the copyrights of portions of <cite>The Magnamund Companion</cite>, and holder of the copyrights for <cite>The Lone Wolf Poster Painting Book</cite>; Melvyn Grant, holder of the copyrights for the illustrations of <cite>Freeway Warrior 1: Highway Holocaust</cite>; Richard Hook, copyright holder of portions of <cite>The Magnamund Companion</cite>; Peter Andrew Jones, copyright holder for the illustrations used in the <cite>Lone Wolf 10th Anniversary Calendar</cite>; Cyril Julien, copyright holder of portions of <cite>The Skull of Agarash</cite>; Peter Lyon, copyright holder of portions of <cite>The Magnamund Companion</cite>; Peter Parr, copyright holder of the illustrations of <cite>Emerald Enchanter</cite> and <cite>Scarlet Sorcerer</cite>; Graham Round, copyright holder of portions of <cite>The Magnamund Companion</cite>; and Brian Williams, holder of the copyrights for the illustrations of Lone Wolf books nine through twenty-eight counted inclusively with the exception of the illustrations for book twenty-one, <cite>The Voyage of the Moonstone</cite>, holder of the copyrights of portions of <cite>The Skull of Agarash</cite>, and holder of the copyrights for the illustrations of books two through four, counted inclusively, of the Freeway Warrior series. Where Paul Bonner, Gary Chalk, Melvyn Grant, Richard Hook, Peter Andrew Jones, Cyril Julien, Peter Lyon, Peter Parr Graham Round, or Brian Williams is mentioned singly, they will be referred to by name.</p>
+         <p><quote>Illustrators</quote> shall hereafter refer to Rob Adams, copyright holder of portions of <cite>The Magnamund Companion</cite>; Paul Bonner, holder of the copyrights for the illustrations of the World of Lone Wolf books; Gary Chalk, holder of the copyrights for the illustrations of Lone Wolf books one through eight counted inclusively, holder of the copyrights of portions of <cite>The Magnamund Companion</cite>, and holder of the copyrights for <cite>The Lone Wolf Poster Painting Book</cite>; Melvyn Grant, holder of the copyrights for the illustrations of <cite>Freeway Warrior 1: Highway Holocaust</cite>; Richard Hook, copyright holder of portions of <cite>The Magnamund Companion</cite>; Peter Andrew Jones, copyright holder for the illustrations used in the <cite>Lone Wolf 10th Anniversary Calendar</cite>; Cyril Julien, copyright holder of portions of <cite>The Skull of Agarash</cite>; Peter Lyon, copyright holder of portions of <cite>The Magnamund Companion</cite>; Peter Parr, copyright holder of the illustrations of <cite>Black Baron</cite> and <cite>White Warlord</cite>, <cite>Emerald Enchanter</cite> and <cite>Scarlet Sorcerer</cite>; Graham Round, copyright holder of portions of <cite>The Magnamund Companion</cite>; and Brian Williams, holder of the copyrights for the illustrations of Lone Wolf books nine through twenty-eight counted inclusively with the exception of the illustrations for book twenty-one, <cite>The Voyage of the Moonstone</cite>, holder of the copyrights of portions of <cite>The Skull of Agarash</cite>, and holder of the copyrights for the illustrations of books two through four, counted inclusively, of the Freeway Warrior series. Where Paul Bonner, Gary Chalk, Melvyn Grant, Richard Hook, Peter Andrew Jones, Cyril Julien, Peter Lyon, Peter Parr Graham Round, or Brian Williams is mentioned singly, they will be referred to by name.</p>
         </data>
        </section>
 
@@ -62,156 +62,160 @@
          <p>The following are the works written by Joe Dever which are being offered under the terms of this license:</p>
 
          <ul>
-          <li><cite>Flight from the Dark</cite>;<br/>Copyright 1984 Joe Dever and Gary Chalk.</li>
-          <li><cite>Fire on the Water</cite>;<br/>Copyright 1984 Joe Dever and Gary Chalk.</li>
-          <li><cite>The Caverns of Kalte</cite>;<br/>Copyright 1984 Joe Dever and Gary Chalk.</li>
-          <li><cite>The Chasm of Doom</cite>;<br/>Copyright 1985 Joe Dever and Gary Chalk.</li>
-          <li><cite>Shadow on the Sand</cite>;<br/>Copyright 1985 Joe Dever and Gary Chalk.</li>
-          <li><cite>The Kingdoms of Terror</cite>;<br/>Copyright 1985 Joe Dever and Gary Chalk.</li>
-          <li><cite>Castle Death</cite>;<br/>Copyright 1986 Joe Dever and Gary Chalk.</li>
-          <li><cite>The Jungle of Horrors</cite>;<br/>Copyright 1987 Joe Dever and Gary Chalk.</li>
-          <li><cite>The Cauldron of Fear</cite>;<br/>Copyright 1987 Joe Dever.</li>
-          <li><cite>The Dungeons of Torgar</cite>;<br/>Copyright 1987 Joe Dever.</li>
-          <li><cite>The Prisoners of Time</cite>;<br/>Copyright 1987 Joe Dever.</li>
-          <li><cite>The Masters of Darkness</cite>;<br/>Copyright 1988 Joe Dever.</li>
-          <li><cite>The Plague Lords of Ruel</cite>;<br/>Copyright 1990, 1992 Joe Dever.</li>
-          <li><cite>The Captives of Kaag</cite>;<br/>Copyright 1991 Joe Dever.</li>
-          <li><cite>The Darke Crusade</cite>;<br/>Copyright 1991, 1993 Joe Dever.</li>
-          <li><cite>The Legacy of Vashna</cite>;<br/>Copyright 1991, 1993 Joe Dever.</li>
-          <li><cite>The Deathlord of Ixia</cite>;<br/>Copyright 1992, 1994 Joe Dever.</li>
-          <li><cite>Dawn of the Dragons</cite>;<br/>Copyright 1992 Joe Dever.</li>
-          <li><cite>Wolf<ch.apos/>s Bane</cite>;<br/>Copyright 1993, 1995 Joe Dever.</li>
-          <li><cite>The Curse of Naar</cite>;<br/>Copyright 1993, 1996 Joe Dever.</li>
-          <li><cite>Voyage of the Moonstone</cite>;<br/>Copyright 1994 Joe Dever.</li>
-          <li><cite>The Buccaneers of Shadaki</cite>;<br/>Copyright 1994 Joe Dever.</li>
-          <li><cite>Mydnight<ch.apos/>s Hero</cite>;<br/>Copyright 1995 Joe Dever.</li>
-          <li><cite>Rune War</cite>;<br/>Copyright 1995 Joe Dever.</li>
-          <li><cite>Trail of the Wolf</cite>;<br/>Copyright 1997 Joe Dever.</li>
-          <li><cite>The Fall of Blood Mountain</cite>;<br/>Copyright 1997 Joe Dever.</li>
-          <li><cite>Vampirium</cite>;<br/>Copyright 1998 Joe Dever.</li>
-          <li><cite>The Hunger of Sejanoz</cite>;<br/>Copyright 1998 Joe Dever.</li>
-          <li><cite>The Magnamund Companion</cite>;<br/>Copyright 1986 Joe Dever.</li>
-          <li><cite>Freeway Warrior 1: Highway Holocaust</cite>;<br/>Copyright 1988 Joe Dever.</li>
-          <li><cite>Freeway Warrior 2: Slaughter Mountain Run</cite>;<br/>Copyright 1988 Joe Dever.</li>
-          <li><cite>Freeway Warrior 3: The Omega Zone</cite>;<br/>Copyright 1989 Joe Dever.</li>
-          <li><cite>Freeway Warrior 4: California Countdown</cite>;<br/>Copyright 1989 Joe Dever.</li>
-          <li><cite>Emerald Enchanter</cite>;<br/>Titles copyright 1986 Joe Dever.</li>
-          <li><cite>Scarlet Sorcerer</cite>;<br/>Illustrations copyright 1986 Joe Dever.</li>
+          <li><cite>Flight from the Dark</cite>;<br/><ch.copy/> 1984 Joe Dever and Gary Chalk.</li>
+          <li><cite>Fire on the Water</cite>;<br/><ch.copy/> 1984 Joe Dever and Gary Chalk.</li>
+          <li><cite>The Caverns of Kalte</cite>;<br/><ch.copy/> 1984 Joe Dever and Gary Chalk.</li>
+          <li><cite>The Chasm of Doom</cite>;<br/><ch.copy/> 1985 Joe Dever and Gary Chalk.</li>
+          <li><cite>Shadow on the Sand</cite>;<br/><ch.copy/> 1985 Joe Dever and Gary Chalk.</li>
+          <li><cite>The Kingdoms of Terror</cite>;<br/><ch.copy/> 1985 Joe Dever and Gary Chalk.</li>
+          <li><cite>Castle Death</cite>;<br/><ch.copy/> 1986 Joe Dever and Gary Chalk.</li>
+          <li><cite>The Jungle of Horrors</cite>;<br/><ch.copy/> 1987 Joe Dever and Gary Chalk.</li>
+          <li><cite>The Cauldron of Fear</cite>;<br/><ch.copy/> 1987 Joe Dever.</li>
+          <li><cite>The Dungeons of Torgar</cite>;<br/><ch.copy/> 1987 Joe Dever.</li>
+          <li><cite>The Prisoners of Time</cite>;<br/><ch.copy/> 1987 Joe Dever.</li>
+          <li><cite>The Masters of Darkness</cite>;<br/><ch.copy/> 1988 Joe Dever.</li>
+          <li><cite>The Plague Lords of Ruel</cite>;<br/><ch.copy/> 1990, 1992 Joe Dever.</li>
+          <li><cite>The Captives of Kaag</cite>;<br/><ch.copy/> 1991 Joe Dever.</li>
+          <li><cite>The Darke Crusade</cite>;<br/><ch.copy/> 1991, 1993 Joe Dever.</li>
+          <li><cite>The Legacy of Vashna</cite>;<br/><ch.copy/> 1991, 1993 Joe Dever.</li>
+          <li><cite>The Deathlord of Ixia</cite>;<br/><ch.copy/> 1992, 1994 Joe Dever.</li>
+          <li><cite>Dawn of the Dragons</cite>;<br/><ch.copy/> 1992 Joe Dever.</li>
+          <li><cite>Wolf<ch.apos/>s Bane</cite>;<br/><ch.copy/> 1993, 1995 Joe Dever.</li>
+          <li><cite>The Curse of Naar</cite>;<br/><ch.copy/> 1993, 1996 Joe Dever.</li>
+          <li><cite>Voyage of the Moonstone</cite>;<br/><ch.copy/> 1994 Joe Dever.</li>
+          <li><cite>The Buccaneers of Shadaki</cite>;<br/><ch.copy/> 1994 Joe Dever.</li>
+          <li><cite>Mydnight<ch.apos/>s Hero</cite>;<br/><ch.copy/> 1995 Joe Dever.</li>
+          <li><cite>Rune War</cite>;<br/><ch.copy/> 1995 Joe Dever.</li>
+          <li><cite>Trail of the Wolf</cite>;<br/><ch.copy/> 1997 Joe Dever.</li>
+          <li><cite>The Fall of Blood Mountain</cite>;<br/><ch.copy/> 1997 Joe Dever.</li>
+          <li><cite>Vampirium</cite>;<br/><ch.copy/> 1998 Joe Dever.</li>
+          <li><cite>The Hunger of Sejanoz</cite>;<br/><ch.copy/> 1998 Joe Dever.</li>
+          <li><cite>The Magnamund Companion</cite>;<br/><ch.copy/> 1986 Joe Dever.</li>
+          <li><cite>Freeway Warrior 1: Highway Holocaust</cite>;<br/><ch.copy/> 1988 Joe Dever.</li>
+          <li><cite>Freeway Warrior 2: Slaughter Mountain Run</cite>;<br/><ch.copy/> 1988 Joe Dever.</li>
+          <li><cite>Freeway Warrior 3: The Omega Zone</cite>;<br/><ch.copy/> 1989 Joe Dever.</li>
+          <li><cite>Freeway Warrior 4: California Countdown</cite>;<br/><ch.copy/> 1989 Joe Dever.</li>
+          <li><cite>Black Baron</cite>;<br/>Titles <ch.copy/> 1986 Joe Dever.</li>
+          <li><cite>White Warlord</cite>;<br/>Titles <ch.copy/> 1986 Joe Dever.</li>
+          <li><cite>Emerald Enchanter</cite>;<br/>Titles <ch.copy/> 1986 Joe Dever.</li>
+          <li><cite>Scarlet Sorcerer</cite>;<br/>Illustrations <ch.copy/> 1986 Joe Dever.</li>
          </ul>
 
          <p>The following are the works written by Ian Page which are being offered under the terms of this license:</p>
 
          <ul>
-          <li><cite>Grey Star the Wizard</cite>;<br/>Copyright 1985 Ian Page.</li>
-          <li><cite>The Forbidden City</cite>;<br/>Copyright 1986 Ian Page.</li>
-          <li><cite>Beyond the Nightmare Gate</cite>;<br/>Copyright 1986 Ian Page.</li>
-          <li><cite>War of the Wizards</cite>;<br/>Copyright 1986 Ian Page.</li>
+          <li><cite>Grey Star the Wizard</cite>;<br/><ch.copy/> 1985 Ian Page.</li>
+          <li><cite>The Forbidden City</cite>;<br/><ch.copy/> 1986 Ian Page.</li>
+          <li><cite>Beyond the Nightmare Gate</cite>;<br/><ch.copy/> 1986 Ian Page.</li>
+          <li><cite>War of the Wizards</cite>;<br/><ch.copy/> 1986 Ian Page.</li>
          </ul>
 
          <p>The illustrations created by Rob Adams for the following book are part of the illustrations being offered under the terms of this License:</p>
 
          <ul>
-          <li><cite>The Magnamund Companion</cite>;<br/>Some illustrations copyright 1986 Rob Adams.</li>
+          <li><cite>The Magnamund Companion</cite>;<br/>Some illustrations <ch.copy/> 1986 Rob Adams.</li>
          </ul>
 
          <p>The illustrations created by Paul Bonner for the following books are part of the illustrations being offered under the terms of this License:</p>
 
          <ul>
-          <li><cite>Grey Star the Wizard</cite>;<br/>Illustrations copyright 1985 Paul Bonner.</li>
-          <li><cite>The Forbidden City</cite>;<br/>Illustrations copyright 1986 Paul Bonner.</li>
-          <li><cite>Beyond the Nightmare Gate</cite>;<br/>Illustrations copyright 1986 Paul Bonner.</li>
-          <li><cite>War of the Wizards</cite>;<br/>Illustrations copyright 1986 Paul Bonner.</li>
+          <li><cite>Grey Star the Wizard</cite>;<br/>Illustrations <ch.copy/> 1985 Paul Bonner.</li>
+          <li><cite>The Forbidden City</cite>;<br/>Illustrations <ch.copy/> 1986 Paul Bonner.</li>
+          <li><cite>Beyond the Nightmare Gate</cite>;<br/>Illustrations <ch.copy/> 1986 Paul Bonner.</li>
+          <li><cite>War of the Wizards</cite>;<br/>Illustrations <ch.copy/> 1986 Paul Bonner.</li>
          </ul>
 
          <p>The illustrations created by Gary Chalk for the following books are part of the illustrations being offered under the terms of this License:</p>
 
          <ul>
-          <li><cite>Flight from the Dark</cite>;<br/>Illustrations copyright 1984 Joe Dever and Gary Chalk.</li>
-          <li><cite>Fire on the Water</cite>;<br/>Illustrations copyright 1984 Joe Dever and Gary Chalk.</li>
-          <li><cite>The Caverns of Kalte</cite>;<br/>Illustrations copyright 1984 Joe Dever and Gary Chalk.</li>
-          <li><cite>The Chasm of Doom</cite>;<br/>Illustrations copyright 1985 Joe Dever and Gary Chalk.</li>
-          <li><cite>Shadow on the Sand</cite>;<br/>Illustrations copyright 1985 Joe Dever and Gary Chalk.</li>
-          <li><cite>The Kingdoms of Terror</cite>;<br/>Illustrations copyright 1985 Joe Dever and Gary Chalk.</li>
-          <li><cite>Castle Death</cite>;<br/>Illustrations copyright 1986 Joe Dever and Gary Chalk.</li>
-          <li><cite>The Jungle of Horrors</cite>;<br/>Illustrations copyright 1987 Joe Dever and Gary Chalk.</li>
-          <li><cite>The Magnamund Companion</cite>;<br/>Some illustrations copyright 1986 Gary Chalk.</li>
-          <li><cite>The Lone Wolf Poster Painting Book</cite>;<br/>Copyright 1987 Gary Chalk.</li>
+          <li><cite>Flight from the Dark</cite>;<br/>Illustrations <ch.copy/> 1984 Joe Dever and Gary Chalk.</li>
+          <li><cite>Fire on the Water</cite>;<br/>Illustrations <ch.copy/> 1984 Joe Dever and Gary Chalk.</li>
+          <li><cite>The Caverns of Kalte</cite>;<br/>Illustrations <ch.copy/> 1984 Joe Dever and Gary Chalk.</li>
+          <li><cite>The Chasm of Doom</cite>;<br/>Illustrations <ch.copy/> 1985 Joe Dever and Gary Chalk.</li>
+          <li><cite>Shadow on the Sand</cite>;<br/>Illustrations <ch.copy/> 1985 Joe Dever and Gary Chalk.</li>
+          <li><cite>The Kingdoms of Terror</cite>;<br/>Illustrations <ch.copy/> 1985 Joe Dever and Gary Chalk.</li>
+          <li><cite>Castle Death</cite>;<br/>Illustrations <ch.copy/> 1986 Joe Dever and Gary Chalk.</li>
+          <li><cite>The Jungle of Horrors</cite>;<br/>Illustrations <ch.copy/> 1987 Joe Dever and Gary Chalk.</li>
+          <li><cite>The Magnamund Companion</cite>;<br/>Some illustrations <ch.copy/> 1986 Gary Chalk.</li>
+          <li><cite>The Lone Wolf Poster Painting Book</cite>;<br/><ch.copy/> 1987 Gary Chalk.</li>
          </ul>
 
          <p>The text written by Gary Chalk for the following book is being offered under the terms of this License:</p>
 
          <ul>
-          <li><cite>The Lone Wolf Poster Painting Book</cite>;<br/>Copyright 1986 Gary Chalk.</li>
+          <li><cite>The Lone Wolf Poster Painting Book</cite>;<br/><ch.copy/> 1986 Gary Chalk.</li>
          </ul>
 
          <p>The illustrations created by Melvyn Grant for the following book are part of the illustrations being offered under the terms of this License:</p>
 
          <ul>
-          <li><cite>Freeway Warrior 1: Highway Holocaust</cite>;<br/>Illustrations copyright 1988 Melvyn Grant.</li>
+          <li><cite>Freeway Warrior 1: Highway Holocaust</cite>;<br/>Illustrations <ch.copy/> 1988 Melvyn Grant.</li>
          </ul>
 
          <p>The illustrations created by Richard Hook for the following book are part of the illustrations being offered under the terms of this License:</p>
 
          <ul>
-          <li><cite>The Magnamund Companion</cite>;<br/>Some illustrations copyright 1986 Richard Hook.</li>
+          <li><cite>The Magnamund Companion</cite>;<br/>Some illustrations <ch.copy/> 1986 Richard Hook.</li>
          </ul>
 
          <p>The illustrations created by Peter Andrew Jones for the following book are part of the illustrations being offered under the terms of this License:</p>
 
          <ul>
-          <li><cite>Lone Wolf 10th Anniversary Calendar</cite>;<br/>Illustrations copyright 1994 Peter Andrew Jones.</li>
+          <li><cite>Lone Wolf 10th Anniversary Calendar</cite>;<br/>Illustrations <ch.copy/> 1994 Peter Andrew Jones.</li>
          </ul>
 
          <p>The illustrations created by Cyril Julien for the following book are part of the illustrations being offered under the terms of this License:</p>
          <ul>
-          <li><cite>The Skull of Agarash</cite>;<br/>Some illustrations copyright 1994 Cyril Julien.</li>
+          <li><cite>The Skull of Agarash</cite>;<br/>Some illustrations <ch.copy/> 1994 Cyril Julien.</li>
          </ul>
 
          <p>The illustrations created by Peter Lyon for the following book are part of the illustrations being offered under the terms of this License:</p>
 
          <ul>
-          <li><cite>The Magnamund Companion</cite>;<br/>Some illustrations copyright 1986 Peter Lyon.</li>
+          <li><cite>The Magnamund Companion</cite>;<br/>Some illustrations <ch.copy/> 1986 Peter Lyon.</li>
          </ul>
 
          <p>The illustrations created by Peter Parr for the following books are part of the illustrations being offered under the terms of this License:</p>
 
          <ul>
-          <li><cite>Emerald Enchanter</cite>;<br/>Illustrations copyright 1986 Peter Parr.</li>
-          <li><cite>Scarlet Sorcerer</cite>;<br/>Illustrations copyright 1986 Peter Parr.</li>
+          <li><cite>Black Baron</cite>;<br/>Illustrations <ch.copy/> 1986 Peter Parr.</li>
+          <li><cite>White Warlord</cite>;<br/>Illustrations <ch.copy/> 1986 Peter Parr.</li>
+          <li><cite>Emerald Enchanter</cite>;<br/>Illustrations <ch.copy/> 1986 Peter Parr.</li>
+          <li><cite>Scarlet Sorcerer</cite>;<br/>Illustrations <ch.copy/> 1986 Peter Parr.</li>
          </ul>
 
          <p>The illustrations created by Graham Round for the following book are part of the illustrations being offered under the terms of this License:</p>
 
          <ul>
-          <li><cite>The Magnamund Companion</cite>;<br/>Some illustrations copyright 1986 Graham Round.</li>
+          <li><cite>The Magnamund Companion</cite>;<br/>Some illustrations <ch.copy/> 1986 Graham Round.</li>
          </ul>
 
          <p>The illustrations created by Brian Williams for the following books are part of the illustrations being offered under the terms of this License:</p>
 
          <ul>
-          <li><cite>The Cauldron of Fear</cite>;<br/>Illustrations Copyright 1987 Brian Williams.</li>
-          <li><cite>The Dungeons of Torgar</cite>;<br/>Illustrations Copyright 1987 Brian Williams.</li>
-          <li><cite>The Prisoners of Time</cite>;<br/>Illustrations Copyright 1987 Brian Williams.</li>
-          <li><cite>The Masters of Darkness</cite>;<br/>Illustrations Copyright 1988 Brian Williams.</li>
-          <li><cite>The Plague Lords of Ruel</cite>;<br/>Illustrations Copyright 1990, 1992 Brian Williams.</li>
-          <li><cite>The Captives of Kaag</cite>;<br/>Illustrations Copyright 1990, 1992 Brian Williams.</li>
-          <li><cite>The Darke Crusade</cite>;<br/>Illustrations Copyright 1991, 1993 Brian Williams.</li>
-          <li><cite>The Legacy of Vashna</cite>;<br/>Illustrations Copyright 1991, 1993 Brian Williams.</li>
-          <li><cite>The Deathlord of Ixia</cite>;<br/>Illustrations Copyright 1992 Brian Williams.</li>
-          <li><cite>Dawn of the Dragons</cite>;<br/>Illustrations Copyright 1992 Brian Williams.</li>
-          <li><cite>Wolf<ch.apos/>s Bane</cite>;<br/>Illustrations Copyright 1993 Brian Williams.</li>
-          <li><cite>The Curse of Naar</cite>;<br/>Illustrations Copyright 1993 Brian Williams.</li>
-          <li><cite>The Buccaneers of Shadaki</cite>;<br/>Illustrations Copyright 1994 Brian Williams.</li>
-          <li><cite>Mydnight<ch.apos/>s Hero</cite>;<br/>Illustrations Copyright 1995 Brian Williams.</li>
-          <li><cite>Rune War</cite>;<br/>Illustrations Copyright 1995 Brian Williams.</li>
-          <li><cite>Trail of the Wolf</cite>;<br/>Illustrations Copyright 1997 Brian Williams.</li>
-          <li><cite>The Fall of Blood Mountain</cite>;<br/>Illustrations Copyright 1997 Brian Williams.</li>
-          <li><cite>Vampirium</cite>;<br/>Illustrations Copyright 1998 Brian Williams.</li>
-          <li><cite>The Hunger of Sejanoz</cite>;<br/>Illustrations Copyright 1998 Brian Williams.</li>
-          <li><cite>The Skull of Agarash</cite>;<br />Some illustrations copyright 1994 Brian Williams.</li>
-          <li><cite>Freeway Warrior: Slaughter Mountain Run</cite>;<br/>Illustrations Copyright 1988 Brian Williams.</li>
-          <li><cite>Freeway Warrior: The Omega Zone</cite>;<br/>Illustrations Copyright 1989 Brian Williams.</li>
-          <li><cite>Freeway Warrior: California Countdown</cite>;<br/>Illustrations Copyright 1989 Brian Williams.</li>
+          <li><cite>The Cauldron of Fear</cite>;<br/>Illustrations <ch.copy/> 1987 Brian Williams.</li>
+          <li><cite>The Dungeons of Torgar</cite>;<br/>Illustrations <ch.copy/> 1987 Brian Williams.</li>
+          <li><cite>The Prisoners of Time</cite>;<br/>Illustrations <ch.copy/> 1987 Brian Williams.</li>
+          <li><cite>The Masters of Darkness</cite>;<br/>Illustrations <ch.copy/> 1988 Brian Williams.</li>
+          <li><cite>The Plague Lords of Ruel</cite>;<br/>Illustrations <ch.copy/> 1990, 1992 Brian Williams.</li>
+          <li><cite>The Captives of Kaag</cite>;<br/>Illustrations <ch.copy/> 1990, 1992 Brian Williams.</li>
+          <li><cite>The Darke Crusade</cite>;<br/>Illustrations <ch.copy/> 1991, 1993 Brian Williams.</li>
+          <li><cite>The Legacy of Vashna</cite>;<br/>Illustrations <ch.copy/> 1991, 1993 Brian Williams.</li>
+          <li><cite>The Deathlord of Ixia</cite>;<br/>Illustrations <ch.copy/> 1992 Brian Williams.</li>
+          <li><cite>Dawn of the Dragons</cite>;<br/>Illustrations <ch.copy/> 1992 Brian Williams.</li>
+          <li><cite>Wolf<ch.apos/>s Bane</cite>;<br/>Illustrations <ch.copy/> 1993 Brian Williams.</li>
+          <li><cite>The Curse of Naar</cite>;<br/>Illustrations <ch.copy/> 1993 Brian Williams.</li>
+          <li><cite>The Buccaneers of Shadaki</cite>;<br/>Illustrations <ch.copy/> 1994 Brian Williams.</li>
+          <li><cite>Mydnight<ch.apos/>s Hero</cite>;<br/>Illustrations <ch.copy/> 1995 Brian Williams.</li>
+          <li><cite>Rune War</cite>;<br/>Illustrations <ch.copy/> 1995 Brian Williams.</li>
+          <li><cite>Trail of the Wolf</cite>;<br/>Illustrations <ch.copy/> 1997 Brian Williams.</li>
+          <li><cite>The Fall of Blood Mountain</cite>;<br/>Illustrations <ch.copy/> 1997 Brian Williams.</li>
+          <li><cite>Vampirium</cite>;<br/>Illustrations <ch.copy/> 1998 Brian Williams.</li>
+          <li><cite>The Hunger of Sejanoz</cite>;<br/>Illustrations <ch.copy/> 1998 Brian Williams.</li>
+          <li><cite>The Skull of Agarash</cite>;<br />Some illustrations <ch.copy/> 1994 Brian Williams.</li>
+          <li><cite>Freeway Warrior: Slaughter Mountain Run</cite>;<br/>Illustrations <ch.copy/> 1988 Brian Williams.</li>
+          <li><cite>Freeway Warrior: The Omega Zone</cite>;<br/>Illustrations <ch.copy/> 1989 Brian Williams.</li>
+          <li><cite>Freeway Warrior: California Countdown</cite>;<br/>Illustrations <ch.copy/> 1989 Brian Williams.</li>
          </ul>
 
          <p>The works distributed under the collective title <cite>Lone Wolf Club Newsletters</cite><ch.emdash/>which are composed of, in part, portions of the above named works<ch.emdash/>will also be distributed under the terms of this License.</p>
