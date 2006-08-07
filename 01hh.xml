@@ -15,6 +15,12 @@
 
 $Id$
 $Log$
+Revision 1.10  2006/08/07 15:26:33  Wibbleboy
+o Fixed a few minor non-errata typos.
+o Added footnotes regarding ammo deductions
+o Updated errata and footnote lists.
+o Began adding small illustrations
+
 Revision 1.9  2006/07/31 11:09:25  Wibbleboy
 o Fixed a few minor non-errata typos.
 o Added link to book 2
@@ -159,15 +165,15 @@ ERRATA 281-315
         <dt>Illustration Transcription</dt>
          <dd></dd>
         <dt>XML</dt>
-         <dd>Jonathan Blake<br />Iain Smith</dd>
+         <dd>Iain Smith<br />Jonathan Blake</dd>
         <dt>Proofreading</dt>
          <dd>Iain Smith (frontmatter)<br />Matthew Reynolds (sections 1&endash;105, 246&endash;280)<br />Simon Osborne (sections 106&endash;245, 281&endash;350)</dd>
         <dt>Editing</dt>
-         <dd>Simon Osborne</dd>
+         <dd>Iain Smith<br />Jonathan Blake<br />Simon Osborne<br />Ingo Kl&ouml;cker<br />Neil McGrory<br />Mark Baumann</dd>
         <!-- <dt>PDF Layout</dt>
          <dd></dd> -->
         <dt>Coordination</dt>
-         <dd>Jonathan Blake</dd>
+         <dd>Iain Smith</dd>
         <dt>Special Thanks</dt>
          <dd></dd>
       </dl>
@@ -231,6 +237,8 @@ ERRATA 281-315
     <p>Provisions, including a small generator, were hoisted out of the mine and stowed aboard before you began the journey back to the ranch. The noisy old bus bumped along the rock-strewn freeway that stretched northward across an empty sea of dust. It was a harrowing sight. Hardly a trace remained of what were once thriving communities, and the once-populous cities of Temple and Waco had barely enough buildings still standing to qualify as small towns.</p>
     <p>It was not until you reached the outskirts of Fort Worth that you encountered signs of human habitation. The road ahead was blocked by a line of wrecked autos, and at your approach a group of hard faced men and women, clad in composite costumes of leather and rivetted steel, suddenly popped up from behind this barricade. Uncle Jonas was suspicious and slowed the bus almost to a halt. Suddenly they produced handguns and rifles and began to take aim at the windshield, and he knew it was not the time to stop to ask for directions! He told you and Aunt Betty-Ann to brace yourselves, then stamped his foot on the gas and drove the bus straight through the wall of cars, scattering the punks like ten-pins in a strike. The bus was shot at many times as it sped through Fort Worth, but the street gangs had been caught out and you managed to escape from the ruined city before they could give chase.</p>
 
+    <p>When you got to Denton you discovered that the ranch, like all the other nearby dwellings, had been reduced to a heap of broken bricks and shattered timbers. The sight greatly upset your aunt, and Uncle Jonas felt it better not to stop but to continue overland to McKinney. It was easy to find where the Ewells lived, for their ranch was the only place in town that was still standing. It looked more like an old frontier post than a ranch, with its fortified perimeter wall, lookout posts and stake-filled moat. But, after your brush with the citizens of Fort Worth, it was easy to understand the need for these defences.</p>
+
     <illustration class="inline">
      <meta>
       <creator>Melvyn Grant</creator>
@@ -239,7 +247,6 @@ ERRATA 281-315
      <instance class="pdf" src="small4.pdf" width="386" height="150" />
     </illustration>
 
-    <p>When you got to Denton you discovered that the ranch, like all the other nearby dwellings, had been reduced to a heap of broken bricks and shattered timbers. The sight greatly upset your aunt, and Uncle Jonas felt it better not to stop but to continue overland to McKinney. It was easy to find where the Ewells lived, for their ranch was the only place in town that was still standing. It looked more like an old frontier post than a ranch, with its fortified perimeter wall, lookout posts and stake-filled moat. But, after your brush with the citizens of Fort Worth, it was easy to understand the need for these defences.</p>
     <p>'Pop' Ewell, the seventy-year-old grandfather of the Ewell family, was the leader of this small colony of survivors; it was he who had urged Uncle Jonas to join them when they had first made radio contact. The colony numbered less than a dozen at the time of your arrival, yet as the airwaves became clearer, soon this number had more than doubled to twenty five. It was decided that a name was needed to identify the settlement. The name 'Dallas Colony One' was adopted - 'DC1' for short - and from that day on everyone worked hard to make DC1 a secure haven for those seeking refuge from the hostile wastelands and marauding city gangs.</p>
     <p>'Cutter' Jacks was one such refugee. Before the holocaust he had been chief mechanic at the International Grand Prix Circuit near Lake Dallas, and his incredible skill and knowledge of engines was soon to prove invaluable to the colony. He taught you how to drive, and from a pile of old wrecks that you helped him salvage from the circuit he built you a powerful, customized car. You used it to patrol the highways north of the city, keeping a lookout for gangs of city punks who frequently mounted raids to steal or destroy DC1's supplies. 'Cutter' also taught you to shoot, and it was your prowess with a gun and your skill behind the wheel that was to earn you the begrudging respect of your enemies who took to calling you 'Freeway Warrior'.</p>
 
@@ -267,8 +274,8 @@ ERRATA 281-315
    </meta>
    
    <data>
-    <p>Before embarking on your adventure, you must first determine your personal characteristics and the weapons and provisions with which you are equipped. An <a idref="action">Action Chart</a> has been supplied on which to record and amend these details as the adventure unfolds. For ease of use during play it is recommended that you photocopy these pages.</p>
-    <p>Your personal characteristics comprise two basic attributes: <typ class="attribute">CLOSE COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ>. To discover your initial <typ class="attribute">CLOSE COMBAT SKILL</typ>, take a pencil and, with your eyes closed, point the blunt end of it on to the <a idref="random">Random Number Table</a> at the back of this book. If you pick a 0 it counts as zero. Add 10 to the number you have picked and write the total in the <typ class="attribute">CLOSE COMBAT SKILL</typ> section of your Action Chart (for example, if your pencil falls on the number 5 in the <a idref="random">Random Number Table</a>, you have a <typ class="attribute">CLOSE COMBAT SKILL</typ> total of 15). When you fight an enemy in hand-to-hand combat, your <typ class="attribute">CLOSE COMBAT SKILL</typ> will be measured against that of your enemy, so a high score in this section is desirable.</p>
+    <p>Before embarking on your adventure, you must first determine your personal characteristics and the weapons and provisions with which you are equipped. An <a idref="action">Action Chart</a> has been supplied on which to record and amend these details as the adventure unfolds.</p>
+    <p>Your personal characteristics comprise two basic attributes: <typ class="attribute">CLOSE COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ>. To discover your initial <typ class="attribute">CLOSE COMBAT SKILL</typ>, take a pencil and, with your eyes closed, point the blunt end of it on to the <a idref="random">Random Number Table</a>. If you pick a 0 it counts as zero. Add 10 to the number you have picked and write the total in the <typ class="attribute">CLOSE COMBAT SKILL</typ> section of your Action Chart (for example, if your pencil falls on the number 5 in the <a idref="random">Random Number Table</a>, you have a <typ class="attribute">CLOSE COMBAT SKILL</typ> total of 15). When you fight an enemy in hand-to-hand combat, your <typ class="attribute">CLOSE COMBAT SKILL</typ> will be measured against that of your enemy, so a high score in this section is desirable.</p>
     <p>To discover your <typ class="attribute">ENDURANCE</typ> level, repeat the process, but this time add 20 to the number you have picked from the <a idref="random">Random Number Table</a>. Write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a> (for example, if your pencil falls on the number 8 on the <a idref="random">Random Number Table</a>, you have a total <typ class="attribute">ENDURANCE</typ> score of 28). If you are wounded in combat, or injured at any other time during your adventure you will lose <typ class="attribute">ENDURANCE</typ> points. If, at any time, your <typ class="attribute">ENDURANCE</typ> points total falls to zero, you are dead and the adventure is over. You can regain lost <typ class="attribute">ENDURANCE</typ> points during the course of the adventure, but your <typ class="attribute">ENDURANCE</typ> level can never rise above your initial score.</p>
 
     <section class="frontmatter-separate" id="sskills">
@@ -491,7 +498,7 @@ ERRATA 281-315
        </li>
        <li><p>After working out your Combat Ratio, pick a number from the <a idref="random">Random Number Table</a>.</p></li>
        <li>
-        <p>Turn to the Close Combat Results Table on the inside back cover of the book. Along the top of the chart are the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the number that you have picked (the random numbers appear down the side of the chart). You now have the <typ class="attribute">ENDURANCE</typ> points lost by both Cal Phoenix and his enemy in this round of close combat. (E represents points lost by the enemy; CP represents points lost by Cal Phoenix.)</p>
+        <p>Turn to the <a idref="crtable">Close Combat Results Table</a>. Along the top of the chart are the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the number that you have picked (the random numbers appear down the side of the chart). You now have the <typ class="attribute">ENDURANCE</typ> points lost by both Cal Phoenix and his enemy in this round of close combat. (E represents points lost by the enemy; CP represents points lost by Cal Phoenix.)</p>
         <p>Example<br />The Combat Ratio between Cal Phoenix and the Renegade Clansman has been established as <ch.plus/>1. If the number picked from the <a idref="random">Random Number Table</a> is a 4, then the result of the first round of close combat is:</p>
         <ul>
          <li>Cal Phoenix loses 3 <typ class="attribute">ENDURANCE</typ> points.</li>
@@ -530,14 +537,6 @@ ERRATA 281-315
       <p>After a week of careful preparation, the colony is ready to begin the long trek to Big Spring. Three vehicles have been picked to make up the convoy: the school bus, your customized roadster, and a gasolene tanker that was salvaged from an old drilling site at nearby Greenville. Cutter and your uncle have rigged up a square canvas canopy to hide the tanker's tell-tale cylindrical body, which now holds over 5,000 gallons of petroleum, siphoned from the underground storage tanks at the Ewell ranch. In this fuel-starved world, gasolene is the most valuable of all commodities. If the city gangs were to discover that DC1 were transporting such a precious load they would stop at nothing to capture it.</p>
       <p>Most of the colony will be travelling aboard the bus, which will be driven by your uncle. Cutter will drive the tanker and you, acting as scout, will drive your roadster at the head of the convoy. With the bus full of passengers, luggage is limited to essential supplies only; everything else will be destroyed before leaving McKinney. At dawn, on the day before the convoy is to set off, a thorough check is made of the vehicles and provisions. There is enough food and water to reach your destination but, apart from your personal weapons, the colony has very few firearms with which to defend itself.</p>
       <p>Long Jake Bannerman, a former roustabout from Gainsville, has volunteered to drive north and search for weapons and ammunition. His brother once owned a hardware store in Sherman and kept his stock of sporting guns locked in the basement. Although they may have to be dug out there is a good chance that they have survived intact. Everyone agrees that it is worth a try, and so Jake, equipped with a C.B. radio, a shovel, and a rusty revolver, sets out for Sherman in his beat-up old truck.</p>
-<!--
-      <illustration class="inline">
-       <meta>
-        <creator>Melvyn Grant</creator>
-       </meta>
-       <instance class="html" src="small3.gif" width="386" height="150" />
-      </illustration>
--->
       <p>Two hours later he radios a message from Sherman. He has found rifles and ammunition, but his truck has broken down and he is now stranded in the town. He has also found a survivor - a teenage girl - and he requests that you come to pick them up as soon as possible. Uncle Jonas agrees. He tells him to sit tight and wait for you to arrive.</p>
       <p>'Trust Jake to go an' maroon hi'self with a gal!' grumbles Uncle Jonas, wryly. 'Cal, you better git your body up to Sherman and haul 'em back here. An' no messin' with street punks on the way, y'hear!'</p>
       <p>'We'll be back in time for breakfast!' you reply, cheerily, as you slide behind the wheel of your roadster and fire up its throaty V-8 engine. Then, with a farewell wave, you power the car out of McKinney and speed northwards to Sherman along what remains of Highway 75.</p>
@@ -756,7 +755,7 @@ ERRATA 281-315
      </footnotes>
 
      <data>
-      <p>The instant you tap the number 20 on the keypad,<a id="sect20-1" idref="sect20-1-foot" class="footnote" /> there is a sharp click and the steel door swings inwards to reveal the shelved walls of a strongroom beyond. You smile with satisfaction at having cracked the university's door code: the number in the last column of each row is the sum of the numbers in the first two columns, minus the number in the third column.</p>
+      <p>The instant you tap the number 20 on the keypad,<a id="sect20-1" idref="sect20-1-foot" class="footnote" /> there is a sharp <onomatopoeia>click</onomatopoeia> and the steel door swings inwards to reveal the shelved walls of a strongroom beyond. You smile with satisfaction at having cracked the university's door code: the number in the last column of each row is the sum of the numbers in the first two columns, minus the number in the third column.</p>
       <p>Curious as to what lies within, you enter the strongroom and inspect its dusty shelves. This concrete vault contains the documentation of experiments and small quantities of what were once considered precious metals - gold, platinum, silver and titanium. After a thorough search you find three items that you may be able to put to practical use:</p>
       <ul>
        <li><typ class="item">Geiger Counter</typ></li>
@@ -1216,8 +1215,14 @@ ERRATA 281-315
     <section class="numbered" id="sect58">
      <meta><title>58</title></meta>
 
+     <footnotes>
+      <footnote id="sect58-1-foot" idref="sect58-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>As the rumbling sound of your gunfire rolls out across the lake bed, the figure throws his hands to his face, staggers drunkenly and then falls heavily to the ground. His body remains still, convincing you that your shooting has proved deadly accurate.</p>
+      <p>As the rumbling sound of your gunfire rolls out across the lake bed, the figure throws his hands to his face, staggers drunkenly and then falls heavily to the ground.<a id="sect58-1" idref="sect58-1-foot" class="footnote" /> His body remains still, convincing you that your shooting has proved deadly accurate.</p>
       <choice idref="sect303">If you wish to search the body, <link-text>turn to 303</link-text>.</choice>
       <choice idref="sect160">If you decide to press on with the crossing, <link-text>turn to 160</link-text>.</choice>
      </data>
@@ -1706,7 +1711,7 @@ ERRATA 281-315
      </footnotes>
 
      <data>
-      <p>The moment you tap the correct number on the keypad,<a id="sect98-1" idref="sect98-1-foot" class="footnote" /> there is loud click and the steel door creaks inwards to reveal the shelved walls of a strongroom beyond. You smile with satisfaction at having cracked the university's door code: the number of the last column of each row is the sum of the number of the first two columns, minus the number in the third column.</p>
+      <p>The moment you tap the correct number on the keypad,<a id="sect98-1" idref="sect98-1-foot" class="footnote" /> there is loud <onomatopoeia>click</onomatopoeia> and the steel door creaks inwards to reveal the shelved walls of a strongroom beyond. You smile with satisfaction at having cracked the university's door code: the number of the last column of each row is the sum of the number of the first two columns, minus the number in the third column.</p>
       <p>Intrigued by what lies within, you enter the strongroom and peer along the dusty shelves. The vault contains the documentation of experiments and quantities of what were once considered precious metals - gold, platinum, silver and titanium. After a thorough search, you find three items that may be put to practical use:</p>
       <ul>
        <li><typ class="item">Geiger Counter</typ></li>
@@ -2544,8 +2549,14 @@ ERRATA 281-315
     <section class="numbered" id="sect164">
      <meta><title>164</title></meta>
 
+     <footnotes>
+      <footnote id="sect164-1-foot" idref="sect164-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>The hollow sound of your gunfire echoes across the dry lake bed and for a moment your target is obscured by smoke. As the cloud thins, you see that your efforts were in vain. The black figure is now running away from the tree towards a motorcycle that is lying on its side. Frantically he pulls the machine upright, kicks it into life, and makes a speedy escape.</p>
+      <p>The hollow sound of your gunfire echoes across the dry lake bed and for a moment your target is obscured by smoke.<a id="sect164-1" idref="sect164-1-foot" class="footnote" /> As the cloud thins, you see that your efforts were in vain. The black figure is now running away from the tree towards a motorcycle that is lying on its side. Frantically he pulls the machine upright, kicks it into life, and makes a speedy escape.</p>
       <p>Helpless to prevent him from getting away, you signal once more to the others to restart their engines and continue with the difficult crossing.</p>
       <choice idref="sect271"><link-text>Turn to 271</link-text>.</choice>
      </data>
@@ -2670,8 +2681,14 @@ ERRATA 281-315
     <section class="numbered" id="sect174">
      <meta><title>174</title></meta>
 
+     <footnotes>
+      <footnote id="sect174-1-foot" idref="sect174-1">
+       <p>Remember to deduct a round of 9mm ammunition from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+     
      <data>
-      <p>You hear your enemy scream and catch a brief glimpse of him in your rear-view mirror when his body hits the dusty ground behind your speeding car. The other bikers lose interest and soon give up the chase. They peel away, cursing and firing ill-aimed shots at your back as you make your escape from Denton.</p>
+      <p>You hear your enemy scream and catch a brief glimpse of him in your rear-view mirror when his body hits the dusty ground behind your speeding car.<a id="sect174-1" idref="sect174-1-foot" class="footnote" /> The other bikers lose interest and soon give up the chase. They peel away, cursing and firing ill-aimed shots at your back as you make your escape from Denton.</p>
       <choice idref="sect198"><link-text>Turn to 198</link-text>.</choice>
      </data>
     </section>
@@ -2759,7 +2776,7 @@ ERRATA 281-315
      <meta><title>181</title></meta>
 
      <data>
-      <p>Quickly you tear open your Backpack and remove the rope. You slide down the slope, riding the shale feet first, and, as you near the bottom, get ready to throw Kate your line. Twice you cast it across the water to no avail. Then, on the third attempt, she manages to grab it and you are able to pull her, breathless and bedraggled, on to the muddy shore.</p>
+      <p>Quickly you tear open your Backpack and remove the Rope. You slide down the slope, riding the shale feet first, and, as you near the bottom, get ready to throw Kate your line. Twice you cast it across the water to no avail. Then, on the third attempt, she manages to grab it and you are able to pull her, breathless and bedraggled, on to the muddy shore.</p>
       <choice idref="sect335"><link-text>Turn to 335</link-text>.</choice>
      </data>
     </section>
@@ -3094,7 +3111,7 @@ ERRATA 281-315
 
      <data>
       <p>You check your rear-view mirror and see both Cutter and Uncle Jonas giving you a thumbs up. 'Hold on tight,' you shout to Kate, your voice almost lost as you rev your engine. 'Here we go!'</p>
-      <p>You move away, keeping an eye on your mirror to make sure that you do not out-distance the rest of the convoy. Then, as you approach the outskirts of the town, Kate raises her shotgun and gets ready to greet the Maverick clansmen who are brave, or foolish, enough to stand in your way. Gunfire erupts from the windows of the nearby buildings and bullets whistle past, fired from all directions. Kate opens up in reply, empty cartridge cases spewing from her gun as she picks off the renegade bikers with chilling accuracy. Then the first of the obstacles appears and you stamp your foot to the floor. The force of your car's acceleration hits you like a kick in the back. The car screams through the town, scattering motorcycles and riders, its rear wheels trailing a blue haze of friction-burnt rubber.</p>
+      <p>You move away, keeping an eye on your mirror to make sure that you do not outdistance the rest of the convoy. Then, as you approach the outskirts of the town, Kate raises her shotgun and gets ready to greet the Maverick clansmen who are brave, or foolish, enough to stand in your way. Gunfire erupts from the windows of the nearby buildings and bullets whistle past, fired from all directions. Kate opens up in reply, empty cartridge cases spewing from her gun as she picks off the renegade bikers with chilling accuracy. Then the first of the obstacles appears and you stamp your foot to the floor. The force of your car's acceleration hits you like a kick in the back. The car screams through the town, scattering motorcycles and riders, its rear wheels trailing a blue haze of friction-burnt rubber.</p>
       <p>The last few buildings are flashing past on either side when you see a solitary figure standing in the middle of the highway ahead. As you scream towards him, coolly he raises a rifle and takes aim at your windshield.</p>
       <illustration class="float">
        <meta>
@@ -3223,7 +3240,7 @@ ERRATA 281-315
 
      <data>
       <p>'We gotta get out <ch.ellips/>' you say, turning towards Long Jake. But your words of warning stick in your throat when you catch sight of him lying on the floor, unmoving, his chest wet with blood. You reach for a Medi-kit and rush to his side, but it is too late; he caught the worst of the shotgun blast and nothing can be done to help him now.</p>
-      <p>'Watch the street,' shouts the girl, as she moves forward to search the body of Long Jake's killer. 'This dude you've wasted has some real mean kin. They'll soon get to wonderin' what's hap'ning in here and 'll come to check us out.' She pockets some cartridges, snatches up the killer's shotgun, and hurriedly reloads it as she moves towards the door. From out of the ruins opposite step three punks armed with pistols. Slowly they advance, their movements stiff with caution.</p>
+      <p>'Watch the street,' shouts the girl, as she moves forward to search the body of Long Jake's killer. 'This dude you've wasted has some real mean kin. They'll soon get to wonderin' what's hap'ning in here and'll come to check us out.' She pockets some cartridges, snatches up the killer's shotgun, and hurriedly reloads it as she moves towards the door. From out of the ruins opposite step three punks armed with pistols. Slowly they advance, their movements stiff with caution.</p>
       <p>'Make a run for the car,' she says. 'I'll cover you.' You nod in agreement and take a deep breath before launching yourself out of the doorway. The punks stop and shoot wildly at your moving form, but their nerve deserts them when the girl opens fire, and they soon melt away into the ruins. You reach your roadster, start the engine, then beckon to the girl to follow. The moment she is safely aboard, you drop the clutch and stamp your foot on the gas pedal. The engine roars and the back wheels spin, sending up great clouds of dust and loose stones, but the car does not move forwards. Panic knots your stomach as you feel the rear end snaking sideways - you are losing control. Then the tyres grip the road and you are thrown back in your seat as you screech away, accelerating like a rocket along the main street that leads out of Sherman.</p>
       <choice idref="sect318"><link-text>Turn to 318</link-text>.</choice>
      </data>
@@ -3327,8 +3344,14 @@ ERRATA 281-315
     <section class="numbered" id="sect229">
      <meta><title>229</title></meta>
 
+     <footnotes>
+      <footnote id="sect229-1-foot" idref="sect229-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>You fire and immediately the sniper clutches his chest. He gives a loud scream and then tumbles over the parapet, landing with a thud on the sidewalk below. With grim satisfaction you stare at his body, but your gaze is distracted when a column of motor cycles - the main body of the clan - rides into view. They are now less than a mile from the bridge. 'C'mon you two!' shouts Cutter. 'It's time to go.'</p>
+      <p>You fire and immediately the sniper clutches his chest.<a id="sect229-1" idref="sect229-1-foot" class="footnote" /> He gives a loud scream and then tumbles over the parapet, landing with a thud on the sidewalk below. With grim satisfaction you stare at his body, but your gaze is distracted when a column of motor cycles - the main body of the clan - rides into view. They are now less than a mile from the bridge. 'C'mon you two!' shouts Cutter. 'It's time to go.'</p>
       <p>The tanker has made it across the platform and is no parked with the other vehicles on the far side of the river. You leave the factory and run back towards the bridge. When you reach the position that Kate is defending, you say breathlessly: 'Set the bomb <ch.ellips/> I'll stay here and cover you!'</p>
       <p>Tensely you watch the clansmen as they gun their bikes along the freeway, and you glance repeatedly over your shoulder, praying for Kate to signal that the bomb is ready. Then the front line of bikers open fire with their machine pistols, and suddenly the air is filled with the whine and whistle of bullets. 'It's ready!' shouts Kate, and takes off across the bridge. at a run.</p>
       <p>Add together your current <typ class="attribute">ENDURANCE</typ> POINTS score and your Stealth skill total. (Note: If your <typ class="attribute">ENDURANCE</typ> score is low and you are heavily encumbered, it may be advisable to discard some of your Backpack items in order to increase your Stealth skill level).</p>
@@ -3887,8 +3910,14 @@ ERRATA 281-315
     <section class="numbered" id="sect275">
      <meta><title>275</title></meta>
 
+     <footnotes>
+      <footnote id="sect275-1-foot" idref="sect275-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>Your enemy's reactions are lightning fast. He throws himself down behind the window and your gunfire passes harmlessly through the now empty frame. An instant later, the unexpected sound of running feet makes you spin on your heel. A leather-clad punk, his skull shaved and sprayed with rings of metallic brown paint, is charging at you from the ruins with a knife held high in his hand. You raise your weapon, but before you can squeeze the trigger, he dives full length and catches you in the chest with the crown of his head. His attack slams you backwards to the ground and, gasping for breath, you struggle to grab hold of his wrist before he can make use of his deadly blade.</p>
+      <p>Your enemy's reactions are lightning fast. He throws himself down behind the window and your gunfire passes harmlessly through the now empty frame.<a id="sect275-1" idref="sect275-1-foot" class="footnote" /> An instant later, the unexpected sound of running feet makes you spin on your heel. A leather-clad punk, his skull shaved and sprayed with rings of metallic brown paint, is charging at you from the ruins with a knife held high in his hand. You raise your weapon, but before you can squeeze the trigger, he dives full length and catches you in the chest with the crown of his head. His attack slams you backwards to the ground and, gasping for breath, you struggle to grab hold of his wrist before he can make use of his deadly blade.</p>
       <combat><enemy>Copperhead</enemy><enemy-attribute class="closecombatskill">14</enemy-attribute><enemy-attribute class="endurance">24</enemy-attribute></combat>
       <p>Owing to the suddenness of his attack, you must fight the first two rounds of combat unarmed and with your <typ class="attribute">CLOSE COMBAT SKILL</typ> reduced by 2 points. If you are still alive at the start of the third combat round, you will then be able to draw your Hunting Knife.</p>
       <choice idref="sect63">If you win the fight, <link-text>turn to 63</link-text>.</choice>
@@ -4062,7 +4091,7 @@ ERRATA 281-315
      <meta><title>290</title></meta>
 
      <data>
-      <p>You throw yourself forward and your swift reflexes save you from being cut in half by a swathe of bullets. As you rise to your feet once more, the shooting stops with a dull click, a sound that tells you that the gun is now empty.</p>
+      <p>You throw yourself forward and your swift reflexes save you from being cut in half by a swathe of bullets. As you rise to your feet once more, the shooting stops with a dull <onomatopoeia>click</onomatopoeia>, a sound that tells you that the gun is now empty.</p>
       <choice idref="sect132">If you have a missile weapon, and wish to use it, <link-text>turn to 132</link-text>.</choice>
       <choice idref="sect250">If you do not have a missile weapon, or do not have sufficient ammunition to use it, <link-text>turn to 250</link-text>.</choice>
      </data>
@@ -4748,7 +4777,7 @@ ERRATA 281-315
 
      <data>
       <p>The drive to Albany takes you across a rolling plain that once fed a million head of longhorn cattle. Now the once-lush grassland is a vast desert of parched and blistered earth, completely devoid of life. The town stands at the centre of this bald prairie, its battered wooden houses and stores clustered haphazardly in groups on either side of a single main street. You stop your car half a mile from the town and park it in the shade of an old farm building, before venturing into Albany on foot.</p>
-      <p>The first building that you see is the ruins of the Shackelford county sheriff's office. Spent cartridge cases litter the ground around its entrance, marking the site of a recent gunfight.</p>
+      <p>The first building that you see is the ruins of the Shackelford County Sheriff's office. Spent cartridge cases litter the ground around its entrance, marking the site of a recent gunfight.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>, and add to it your current Stealth and Perception skill totals.</p>
       <choice idref="sect31">If your total score is now 12 or less, <link-text>turn to 31</link-text>.</choice>
       <choice idref="sect277">If your total score is now 13 or more, <link-text>turn to 277</link-text>.</choice>
@@ -4805,8 +4834,14 @@ ERRATA 281-315
     <section class="numbered" id="sect348">
      <meta><title>348</title></meta>
 
+     <footnotes>
+      <footnote id="sect348-1-foot" idref="sect348-1">
+       <p>Remember to deduct a round of 12-gauge ammunition from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>You raise your arm and fire your shotgun without aiming. The speed of your reflexes and the spread of the Double-A target load guarantee that your enemy will never point his pistol at anyone again.</p>
+      <p>You raise your arm and fire your shotgun without aiming.<a id="sect348-1" idref="sect348-1-foot" class="footnote" /> The speed of your reflexes and the spread of the Double-A target load guarantee that your enemy will never point his pistol at anyone again.</p>
       <p>As the smoke clears, you see Cutter approach the gully and reload his gun as he stares over the edge at the lifeless bodies of your ambushers. You are soon joined by the others and together you search their bodies for useful items.</p>
       <choice idref="sect216"><link-text>Turn to 216</link-text>.</choice>
      </data>
@@ -4815,8 +4850,14 @@ ERRATA 281-315
     <section class="numbered" id="sect349">
      <meta><title>349</title></meta>
 
+     <footnotes>
+      <footnote id="sect349-1-foot" idref="sect349-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>You have aimed too low: your gunfire hits the stone parapet of the roof, alerting the sniper to your position. Quickly he lifts his assault rifle, swings the barrel around towards the factory, and focuses on your window. You glimpse a muzzle flash a split-second before the ledge and frame are blown to pieces by a dozen high-velocity bullets.</p>
+      <p>You have aimed too low: your gunfire hits the stone parapet of the roof, alerting the sniper to your position.<a id="sect349-1" idref="sect349-1-foot" class="footnote" /> Quickly he lifts his assault rifle, swings the barrel around towards the factory, and focuses on your window. You glimpse a muzzle flash a split-second before the ledge and frame are blown to pieces by a dozen high-velocity bullets.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your current Stealth skill total.</p>
       <choice idref="sect151">If your total score is now 7 or less, <link-text>turn to 151</link-text>.</choice>
       <choice idref="sect260">If your total score is now 8 or more, <link-text>turn to 260</link-text>.</choice>
@@ -4922,7 +4963,7 @@ ERRATA 281-315
      <li>Add to your <typ class="attribute">CLOSE COMBAT SKILL</typ> any extra points gained through use of a close combat weapon.</li>
      <li>Subtract the <typ class="attribute">CLOSE COMBAT SKILL</typ> score of your enemy from your total. The resulting number is the Combat Ratio.</li>
      <li>Pick a number from the <a idref="random">Random Number Table</a>.</li>
-     <li>Turn to the <a idref="crtable">Combat Results Table</a>.</li>
+     <li>Turn to the <a idref="crtable">Close Combat Results Table</a>.</li>
      <li>Find your Combat Ratio along the top of the chart and cross-reference it with the random number you have picked. (E indicates enemy's loss of <typ class="attribute">ENDURANCE</typ> points. CP indicates Cal Phoenix's loss of <typ class="attribute">ENDURANCE</typ> points.)</li>
      <li>Continue the combat from stage 3 until one combatant has zero <typ class="attribute">ENDURANCE</typ> points, this is when he is declared dead.</li>
     </ol>
@@ -4996,12 +5037,15 @@ ERRATA 281-315
      <data>
       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>if you pick a O</quote> with <quote>if you pick a 0</quote>.</p>
       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>On pages 6 and 7 you will find an Action Chart</quote> with <quote>An Action Chart has been supplied</quote>.</p>
+      <p>(<a idref="gamerulz">The Game Rules</a>) Removed <quote>For ease of use during play it is recommended that you photocopy these pages</quote>.</p>
+      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>the Random Number Table at the back of this book</quote> with <quote>the Random Number Table</quote>.</p>
       <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>map of Central Texas</quote> with <quote>Map of Central Texas</quote>.</p>
       <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>potassium iodine</quote> with <quote>potassium iodide</quote>.</p>
       <p>(<a idref="backpack">Backpack</a>) Replaced <quote>H.E. (High Explosive) GRENADE</quote> with <quote>HE (High Explosive) GRENADE</quote>.</p>
       <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>CLOSECOMBAT</quote> with <quote>CLOSE COMBAT</quote>.</p>
       <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
       <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>as <ch.plus/>1 If </quote> with <quote>as <ch.plus/>1. If </quote>.</p>
+      <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>the Close Combat Results Table on the inside back cover of the book</quote> with <quote>the Close Combat Results Table</quote>.</p>
       <p>(<a idref="calstory">Cal's Story</a>) Replaced <quote>re-establish</quote> with <quote>reestablish</quote> and <quote>Denton county</quote> with <quote>Denton County</quote>.</p>
       <p>(<a idref="sect1">1</a>) Replaced <quote>syphoned</quote> with <quote>siphoned</quote>.</p>
       <p>(<a idref="sect13">13</a>) Added missing period after <quote>Random Number Table</quote>.</p>
@@ -5027,12 +5071,15 @@ ERRATA 281-315
       <p>(<a idref="sect156">156</a>) Replaced <quote>take its toll of those</quote> with <quote>take its toll on those</quote>.</p>
       <p>(<a idref="sect171">171</a>) Replaced <quote>de-activates</quote> with <quote>deactivates</quote>.</p>
       <p>(<a idref="sect175">175</a>) Replaced <quote>anti-biotics</quote> with <quote>antibiotics</quote> and <quote>H.E. Grenade</quote> with <quote>HE Grenade</quote>.</p>
+      <p>(<a idref="sect181">181</a>) Replaced <quote>rope</quote> with <quote>Rope</quote>.</p>
       <p>(<a idref="sect182">182</a>) Replaced <quote>Erath country</quote> with <quote>Erath County</quote>.</p>
       <p>(<a idref="sect189">189</a>) Replaced <quote>womped</quote> with <quote>whomped</quote> and <quote>come 'an pay</quote> with <quote>come an' pay</quote>.</p>
       <p>(<a idref="sect194">194</a>) Replaced <quote>de-activates</quote> with <quote>deactivates</quote>.</p>
       <p>(<a idref="sect195">195</a>) Replaced <quote>machine-gunner</quote> with <quote>machine gunner</quote>.</p>
       <p>(<a idref="sect204">194</a>) Replaced <quote>machine-gun fire</quote> with <quote>machine gun fire</quote>.</p>
+      <p>(<a idref="sect210">210</a>) Replaced <quote>out-distance</quote> with <quote>outdistance</quote>.</p>
       <p>(<a idref="sect216">216</a>) Replaced <quote>Three rounds of 12-gauge shotgun ammunition</quote> with <quote>Three rounds of 12-gauge ammunition</quote>.</p>
+      <p>(<a idref="sect220">220</a>) Replaced <quote>and 'll</quote> with <quote>and'll</quote>.</p>
       <p>(<a idref="sect229">229</a>) Replaced <quote>breathlessly:'Set </quote> with <quote>breathlessly: 'Set </quote>.</p>
       <p>(<a idref="sect233">233</a>) Replaced <quote>(minimum - one round; maximum - four rounds)</quote> with <quote>(minimum: one round; maximum: four rounds)</quote></p>
       <p>(<a idref="sect248">248</a>) Replaced <quote>C.B. radio</quote> with <quote>C.B. Radio</quote>.</p>
@@ -5043,10 +5090,12 @@ ERRATA 281-315
       <p>(<a idref="sect305">305</a>) Replaced <quote>fininshed</quote> with <quote>finished</quote>.</p>
       <p>(<a idref="sect336">336</a>) Replaced <quote>letters,</quote> with <quote>letters:</quote>.</p>
       <p>(<a idref="sect338">338</a>) Replaced <quote>bushwacked</quote> with <quote>bushwhacked</quote>, <quote>Rickenbaker</quote> with <quote>Rickenbacker</quote> and <quote>fusilage</quote> with <quote>fuselage</quote>.</p>
+      <p>(<a idref="sect343">343</a>) Replaced <quote>Shackelford county sheriff's office</quote> with <quote>Shackelford County Sheriff's office</quote>.</p>
       <p>(<a idref="sect12">12</a>,<a idref="sect24">24</a>,<a idref="sect80">80</a>,<a idref="sect105">105</a>,<a idref="sect117">117</a>,<a idref="sect177">177</a>,<a idref="sect222">222</a>,<a idref="sect242">242</a>,<a idref="sect296">296</a>,<a idref="sect348">348</a>) Replaced <quote>gulley</quote> with <quote>gully</quote>.</p>
       <p>(<a idref="calstory">Cal's Story</a>,<a idref="sect105">105</a>,<a idref="sect160">160</a>,<a idref="sect257">257</a>) Replaced <quote>'the Day'</quote> with <quote>'The Day'</quote>.</p>
       <p>(<a idref="crsumary">Combat Rules Summary</a>) Added missing period after <quote>from your total</quote>.</p>
       <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
+      <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>Combat Results Table</quote> with <quote>Close Combat Results Table</quote>.</p>
      </data>
     </section>
    </data>
@@ -5060,6 +5109,7 @@ ERRATA 281-315
     <p>(<a idref="sect20">20</a>) This is the correct answer to the keypad puzzle in <a idref="sect152">Section 152</a>.</p>
     <p>(<a idref="sect23">23</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
     <p>(<a idref="sect28">28</a>) Remember to deduct a round of 7.62mm ammunition from your Ammo Pouch.</p>
+    <p>(<a idref="sect58">58</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
     <p>(<a idref="sect62">62</a>) Remember to deduct a round of 12-gauge ammunition from your Ammo Pouch.</p>
     <p>(<a idref="sect64">64</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch (if any).</p>
     <p>(<a idref="sect77">77</a>) Remember to deduct a round of 7.62mm ammunition from your Ammo Pouch.</p>
@@ -5068,17 +5118,22 @@ ERRATA 281-315
     <p>(<a idref="sect132">132</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
     <p>(<a idref="sect152">152</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
     <p>(<a idref="sect153">153</a>) Remember to deduct six rounds of 9mm ammunition from your Ammo Pouch.</p>
+    <p>(<a idref="sect164">164</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
     <p>(<a idref="sect168">168</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
     <p>(<a idref="sect172">172</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect174">174</a>) Remember to deduct a round of 9mm ammunition from your Ammo Pouch.</p>
     <p>(<a idref="sect190">190</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
     <p>(<a idref="sect191">191</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect229">229</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
     <p>(<a idref="sect255">255</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
     <p>(<a idref="sect261">261</a>) Remember to deduct a round of 9mm ammunition from your Ammo Pouch.</p>
+    <p>(<a idref="sect275">275</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
     <p>(<a idref="sect293">293</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
     <p>(<a idref="sect302">302</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
     <p>(<a idref="sect320">320</a>) Remember to deduct a round of 12-gauge ammunition from your Ammo Pouch.</p>
     <p>(<a idref="sect340">340</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
     <p>(<a idref="sect344">344</a>) Remember to deduct a round of 9mm ammunition from your Ammo Pouch.</p>
+    <p>(<a idref="sect349">349</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
    </data>
   </section>
 
@@ -5119,23 +5174,28 @@ ERRATA 281-315
    </section>
 
    <section class="backmatter" id="secill">
-    <meta><title>Secondary Illustrations</title></meta>
-
-    <data>
-     <ul class="unbulleted">
-<!--
-      <li><a idref="sect8">8</a>, <a idref="sect339">339</a></li>
--->
-     </ul>
-    </data>
+      <meta><title>Secondary Illustrations</title></meta>
+      <data>
+         <ul class="unbulleted">
+            <li><a idref="calstory">Cal's Story</a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+      </data>
    </section>
-
-  </data>
- </section>
 
   &inclusion.project.aon.license;
 
- </data>
+  </data>
 </section>
 
 </gamebook>
