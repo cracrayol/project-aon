@@ -15,7 +15,11 @@
 
 $Id$
 $Log$
-Revision 1.4  2006/06/19 08:22:53  cvsuser
+Revision 1.5  2006/09/06 09:01:34  Wibbleboy
+o Fixed a few formatting errors
+o Implemented series-wide consistency changes
+
+Revision 1.4  2006/06/19 08:22:53  Wibbleboy
 Made errata changes for consistency with other books in series.
 
 Revision 1.3  2005/12/07 12:44:23  Wibbleboy
@@ -113,8 +117,6 @@ Initial revision
         <dd></dd>
        <dt>XML</dt>
         <dd>Jonathan Blake<br />Iain Smith</dd>
-       <dt>Alternate Illustrations</dt>
-         <dd></dd>
        <dt>Proofreading</dt>
          <dd>Jeff Dougan (frontmatter)<br />Frank Prather (sections 1&endash;350)</dd>
        <dt>Editing</dt>
@@ -139,18 +141,18 @@ Initial revision
    </meta>
 
    <data>
-    <p><strong>1900-1998</strong><br />Rise of global terrorism on an unprecedented scale. Political violence funded by organized crime syndicate called HAVOC - The Hijack, Assassination and Violent Opposition Consortium.</p>
+    <p><strong>1990-1998</strong><br />Rise of global terrorism on an unprecedented scale. Political violence funded by organized crime syndicate called HAVOC - The Hijack, Assassination and Violent Opposition Consortium.</p>
     <p><strong>1998-2003</strong><br />The governments of many small and impoverished nations fall into the hands of HAVOC. International terrorists receive arms, training and shelter in these 'Badlands'.</p>
     <p><strong>2003-2008</strong><br />Raids on oil and gas installations, assassinations, and the kidnapping of prominent world statesmen become commonplace as HAVOC attempt to terrorize the civilized world into submission. Despite public outrage and growing international tension, the major powers steadfastly refuse to give in to HAVOC's demands.</p>
     <p><strong>2008</strong><br />President of the United States and General Secretary of Supreme Soviet both assassinated at emergency summit meeting. US, USSR and major European nations create the World Defence League and declare war on HAVOC. The Badlands are invaded, key HAVOC bases destroyed, and thousands of HAVOC agents are captured.</p>
     <p><strong>2009</strong><br />HAVOC leaders imprisoned for life in 'Deep Pens' - maximum security gaols located deep underground - to prevent their escape or release by HAVOC agents still at large.</p>
     <p><strong>2010</strong><br />New leadership emerges to unify the scattered remnants of HAVOC and plan revenge.</p>
     <p><strong>2011</strong><br />A WDL train transporting seventeen 100-kiloton nuclear warheads, destined to be neutralized and dismantled, is attacked by HAVOC agents. The train is destroyed and its deadly cargo stolen.</p>
-    <p><strong>2012 New Years Day</strong><br />HAVOC hijack a WDL news satellite and broadcast a chilling ultimatum. They have planted the seventeen stolen warheads in major cities throughout the US, USSR and Europe. They call for the immediate release of all HAVOC agents held in Deep Pens, plus the payment of $2 trillion in gold bullion, or they will trigger the warheads one by one until their demands are met in full. A twenty-four hour deadline is set. WDL leaders declare emergency and request that the deadline be extended. HAVOC refuse.</p>
+    <p><strong>2012 New Year's Day</strong><br />HAVOC hijack a WDL news satellite and broadcast a chilling ultimatum. They have planted the seventeen stolen warheads in major cities throughout the US, USSR and Europe. They call for the immediate release of all HAVOC agents held in Deep Pens, plus the payment of $2 trillion in gold bullion, or they will trigger the warheads one by one until their demands are met in full. A twenty-four hour deadline is set. WDL leaders declare emergency and request that the deadline be extended. HAVOC refuse.</p>
     <p><strong>2nd January</strong><br />First warhead detonated at Brie Nuclear Energy Plant, ten miles south of Paris, France. Blast and radioactive fallout claim millions of lives. HAVOC repeat their demand and extend deadline by twenty-four hours.</p>
     <p><strong>3rd January 'The Day'</strong><br />World Defence League agents discover location of HAVOC command headquarters on an island in the South Pacific Ocean. Immediately orders are given to infiltrate and destroy the HQ and its occupants. The assault is swift and decisive; the complex is quickly overrun and its inhabitants are killed. Yet, ironically, as the news of this victory is being relayed around the world, HAVOC enact their ultimate revenge. A transmitter hidden on the island, fitted with a time-delay mechanism, clicks on, sending its high-frequency radio signal to a communications satellite orbiting the earth. This signal is amplified and returned to earth where, simultaneously, it triggers the remaining nuclear warheads. The initial explosions set off a disastrous chain reaction that feeds on civil and military nuclear installations all across the northern hemisphere. Hundreds of millions of people are killed within days, and many more perish during the years that follow, falling victim to the lingering radioactivity and the severe climatic changes that affect the earth.</p>
     <p><strong>2012-2019</strong><br />Gale force winds sweep across the world, carrying enormous amounts of dust into the upper atmosphere and preventing much sunlight from reaching the earth's surface. Temperatures plummet, deterring survivors from remaining above ground. Communications are disrupted by gamma radiation, making all radio, cable and satellite contact impossible. Small colonies of survivors develop in total isolation from one another during these years of darkness.</p>
-    <p><strong>2019-2020</strong><br />Gradually, the dust storms die down and the sun penetrates the atmosphere, thawing the earths frozen surface. Radiation decays to tolerable levels, and survivors emerge to reclaim what little remains of the world they once knew.</p>
+    <p><strong>2019-2020</strong><br />Gradually, the dust storms die down and the sun penetrates the atmosphere, thawing the earth's frozen surface. Radiation decays to tolerable levels, and survivors emerge to reclaim what little remains of the world they once knew.</p>
    </data>    
   </section>
 
@@ -193,8 +195,8 @@ Initial revision
    </meta>
    
    <data>
-    <p>Before embarking on your adventure, you must first determine your personal characteristics and the weapons and provisions with which you are equipped. On pages 6 and 7 you will find an <a idref="action">Action Chart</a> on which to record and amend these details as the adventure unfolds. For ease of use during play it is recommended that you photocopy these pages.</p>
-    <p>Your personal characteristics comprise two basic attributes: <typ class="attribute">CLOSE COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ>. To discover your initial <typ class="attribute">CLOSE COMBAT SKILL</typ>, take a pencil and, with your eyes closed, point the blunt end of it on to the <a idref="random">Random Number Table</a> at the back of this book. If you pick a 0 it counts as zero. Add 10 to the number you have picked and write the total in the <typ class="attribute">CLOSE COMBAT SKILL</typ> section of your Action Chart (for example, if your pencil falls on the number 5 in the <a idref="random">Random Number Table</a>, you have a CLOSE <typ class="attribute">COMBAT SKILL</typ> total of 15). When you fight an enemy in hand-to-hand combat, your <typ class="attribute">CLOSE COMBAT SKILL</typ> will be measured against that of your enemy, so a high score in this section is desirable.</p>
+    <p>Before embarking on your adventure, you must first determine your personal characteristics and the weapons and provisions with which you are equipped. An <a idref="action">Action Chart</a> has been supplied on which to record and amend these details as the adventure unfolds.</p>
+    <p>Your personal characteristics comprise two basic attributes: <typ class="attribute">CLOSE COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ>. To discover your initial <typ class="attribute">CLOSE COMBAT SKILL</typ>, take a pencil and, with your eyes closed, point the blunt end of it on to the <a idref="random">Random Number Table</a>. If you pick a 0 it counts as zero. Add 10 to the number you have picked and write the total in the <typ class="attribute">CLOSE COMBAT SKILL</typ> section of your Action Chart (for example, if your pencil falls on the number 5 in the <a idref="random">Random Number Table</a>, you have a CLOSE <typ class="attribute">COMBAT SKILL</typ> total of 15). When you fight an enemy in hand-to-hand combat, your <typ class="attribute">CLOSE COMBAT SKILL</typ> will be measured against that of your enemy, so a high score in this section is desirable.</p>
     <p>To discover your <typ class="attribute">ENDURANCE</typ> level, repeat the process, but this time add 20 to the number you have picked from the <a idref="random">Random Number Table</a>. Write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a> (for example, if your pencil falls on the number 8 on the <a idref="random">Random Number Table</a>, you have a total <typ class="attribute">ENDURANCE</typ> score of 28). If you are wounded in combat, or injured at any other time during your adventure you will lose <typ class="attribute">ENDURANCE</typ> points. If, at any time, your <typ class="attribute">ENDURANCE</typ> points total falls to zero, you are dead and the adventure is over. You can regain lost <typ class="attribute">ENDURANCE</typ> points during the course of the adventure, but your <typ class="attribute">ENDURANCE</typ> level can never rise above your initial score.</p>
 
     <section class="frontmatter-separate" id="sskills">
@@ -207,7 +209,7 @@ Initial revision
      <data>
 
       <p>Ever since the day you returned to the surface, you have endeavoured to develop your skills and natural instincts fully in order to best defend yourself and your colony.</p>
-      <p>Listed on your <a idref="action">Action Chart</a> are your five basic survival skills:</p>
+      <p>Listed on your <a idref="action">Action Chart</a> are your five basic Survival Skills:</p>
      
       <section class="frontmatter" id="driving">
        <meta><title>Driving</title></meta>
@@ -249,7 +251,7 @@ Initial revision
        </data>
       </section>
     
-      <p>Your ability in each of these five individual skills is measured in skill points. You begin with 3 points per skill. Before starting the adventure, you may allocate an additional 4 skill points to your list of five survival skills. These 4 extra points can be used to improve one or more of your five skills. During your adventure, all five skills will be severely tested, therefore the higher the individual skill level, the better your chances of survival. You may allocate your 4 additional points entirely how you like.</p>
+      <p>Your ability in each of these five individual skills is measured in skill points. You begin with 3 points per skill. Before starting the adventure, you may allocate an additional 4 skill points to your list of five Survival Skills. These 4 extra points can be used to improve one or more of your five skills. During your adventure, all five skills will be severely tested, therefore the higher the individual skill level, the better your chances of survival. You may allocate your 4 additional points entirely how you like.</p>
       <p>When you have decided where to allocate your 4 additional skill points, make a note of the totals in the Survival Skills section of your <a idref="action">Action Chart</a>.</p>
       <p>(If this is your first Freeway Warrior adventure, your total number of skill points should be 19: five skills x 3 points each = 15, plus 4 additional skill points = 19 points.)</p>
       <p>If you complete successfully the mission set in Book 3 of the Freeway Warrior series, you may add an additional 4 points to your Survival Skills in Book 4. These additional points, together with any equipment and provisions that you possess at the end of Book 3, may then be used in the next Freeway Warrior adventure, which is called:</p>
@@ -309,7 +311,7 @@ Initial revision
       <section class="frontmatter" id="medikit">
        <meta><title>Medi-kit</title></meta>
        <data>
-        <p>A well-stocked Medi-kit can make all the difference to your chances of survival should you suffer injury in the field or as a result of combat. It contains useful first aid supplies, such as dressings, antiseptics, antibiotics, water purification tablets, sulphonamides, pain killers, potassium iodine tablets (to delay absorption of radioactivity) and sutures.</p>
+        <p>A well-stocked Medi-kit can make all the difference to your chances of survival should you suffer injury in the field or as a result of combat. It contains useful first aid supplies, such as dressings, antiseptics, antibiotics, water purification tablets, sulphonamides, pain killers, potassium iodide tablets (to delay absorption of radioactivity) and sutures.</p>
         <p>For convenience, these medical supplies are grouped into units. To find how many units you have in your Medi-kit, pick a number from the <a idref="random">Random Number Table</a> (0 equals 10) and add 2. Your total score equals the number of units with which you begin your adventure. To keep a record of them, circle the appropriate number of unit symbols in the Medi-kit section of your <a idref="action">Action Chart</a>. The maximum number of units you can carry in your Medi-kit is twelve.</p>
         <p>You may use your Medi-kit units to restore lost <typ class="attribute">ENDURANCE</typ> points; each unit used in this way restores 3 points. Units cannot be used to restore <typ class="attribute">ENDURANCE</typ> points in lieu of a Meal or Water when instructed to eat or drink.</p>
        </data>
@@ -420,7 +422,7 @@ Initial revision
        </li>
        <li><p>After working out your Combat Ratio, pick a number from the <a idref="random">Random Number Table</a>.</p></li>
        <li>
-        <p>Turn to the Close Combat Results Table on the inside back cover of the book. Along the top of the chart are the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the number that you have picked (the random numbers appear down the side of the chart). You now have the <typ class="attribute">ENDURANCE</typ> points lost by both Cal Phoenix and his enemy in this round of close combat. (E represents points lost by the enemy; CP represents points lost by Cal Phoenix.)</p>
+        <p>Turn to the <a idref="crtable">Close Combat Results Table</a>. Along the top of the chart are the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the number that you have picked (the random numbers appear down the side of the chart). You now have the <typ class="attribute">ENDURANCE</typ> points lost by both Cal Phoenix and his enemy in this round of close combat. (E represents points lost by the enemy; CP represents points lost by Cal Phoenix.)</p>
         <p>Example<br />The Combat Ratio between Cal Phoenix and the Renegade Clansman has been established as <ch.plus/>1. If the number picked from the <a idref="random">Random Number Table</a> is a 4, then the result of the first round of close combat is:
          <ul>
           <li>Cal Phoenix loses 3 <typ class="attribute">ENDURANCE</typ> points.</li>
@@ -438,7 +440,7 @@ Initial revision
       <section class="frontmatter" id="evasion">
        <meta><title>Evasion of Combat</title></meta>
        <data>
-        <p>During your adventure you may be given the chance to evade close combat. If you have already engaged in a round of close combat and decide to evade, calculate the combat for that round in the usual manner. All ENDURANCE points lost by the enemy as a result of that round are ignored; only Cal Phoenix may lose <typ class="attribute">ENDURANCE</typ> points during that round, but that is the risk of running away! You may evade combat only if the text of the particular section allows you to do so.</p>
+        <p>During your adventure you may be given the chance to evade close combat. If you have already engaged in a round of close combat and decide to evade, calculate the combat for that round in the usual manner. All <typ class="attribute">ENDURANCE</typ> points lost by the enemy as a result of that round are ignored; only Cal Phoenix may lose <typ class="attribute">ENDURANCE</typ> points during that round, but that is the risk of running away! You may evade combat only if the text of the particular section allows you to do so.</p>
        </data>
       </section>
      </data>
@@ -579,7 +581,7 @@ Initial revision
       <p>You nod in uneasy agreement and get ready to glance around the tailgate the instant the captain opens fire. 'Let's do it!' he says, as he rises above the cover of the truck and squeezes off a burst of automatic fire. The noise of his gun drowns out the sniper's shot, but within a second of his breaking cover, Frankland is hit. With the machine pistol still chattering in his hands, he falls backwards and crashes to the ground, the assassin's bullet lodged deep in his skull.</p>
       <p>The shock of Frankland's death, following so closely after Sergeant Haskell's and so nearly after your own, hits you like an icy shower. You cower behind the truck, shivering with fear and convinced that you will be next. For a terrible moment, the fear wells up and consumes you, and all you want to do is run as far away and as fast as you can. Despite Knott's pleas to stay where you are, you scramble to your feet and stumble blindly towards the woods. In your haste you trip and fall, grazing your hands and knees on the flint-sharp shale: lose 1 <typ class="attribute">ENDURANCE</typ> point.</p>
       <p>Inadvertently, your fall saves your life. Another shot passes over your head barely a second after you stumble, missing you by a hand's breadth. The imminent danger clears your mind and you race towards the trees with a determination to survive. Knott encourages you to increase your speed and you pray that you will reach cover before the sniper has a chance to slip another round into the breech of his rifle.</p>
-      <p>Add together your Stealth skill total and your current <typ class="attribute">ENDURANCE</typ> points score. [Note: If your <typ class="attribute">ENDURANCE</typ> score is low and you are heavily encumbered, it may be advisable to discard some of your Backpack items in order to increase your Stealth skill level.]</p>
+      <p>Add together your Stealth skill total and your current <typ class="attribute">ENDURANCE</typ> points score. [Note: If your <typ class="attribute">ENDURANCE</typ> score is low and you are heavily encumbered, it may be advisable to discard some of your Backpack Items in order to increase your Stealth skill level.]</p>
       <choice idref="sect57">If your total score is 15 or less, <link-text>turn to 57</link-text>.</choice>
       <choice idref="sect83">If it is 16-19, <link-text>turn to 83</link-text>.</choice>
       <choice idref="sect254">If it is 20 or more, <link-text>turn to 254</link-text>.</choice>
@@ -605,7 +607,7 @@ Initial revision
        <li>Enough water for four Drinks</li>
        <li>Enough water purification tablets, bandages, pain killers, and antiseptics for four Medi-kit units.</li>
       </ul>
-      <p>If you wish to keep any of these weapons, ammunition, Medi-kit units or Backpack items, remember to adjust your <a idref="action">Action Chart</a> accordingly. You hide the bodies before entering the gas station to took for the spare ignition unit.</p>
+      <p>If you wish to keep any of these weapons, ammunition, Medi-kit units or Backpack Items, remember to adjust your <a idref="action">Action Chart</a> accordingly. You hide the bodies before entering the gas station to took for the spare ignition unit.</p>
       <choice idref="sect273"><link-text>Turn to 273</link-text>.</choice>
      </data>
     </section>
@@ -1251,7 +1253,7 @@ Initial revision
        <li><typ class="item">Wire Cutters</typ></li>
        <li><typ class="item">Screwdriver</typ></li>
       </ul>
-      <p>If you wish to keep any of these Backpack items, adjust your <a idref="action">Action Chart</a> accordingly.</p>
+      <p>If you wish to keep any of these Backpack Items, adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Captain Frankland is disappointed at having found so little fuel, but Knott assures him that it should be sufficient to enable you to reach Lordsburg and rendezvous with the colony. Once the refuelling has been completed, you climb aboard and set off in a new direction - north, towards a junction with Interstate Freeway 10.</p>
       <choice idref="sect183"><link-text>Turn to 183</link-text>.</choice>
      </data>
@@ -1559,7 +1561,7 @@ Initial revision
 
      <data>
       <p>The only way you know of retrieving gasolene from a fuel tank is by siphoning, and to do this you need a length of tubing. You search the parking lot, but can find nothing that remotely resembles a length of flexible pipe. Then you remember something that Cutter taught you when you were learning to drive, and the recollection of it spreads a smile across your face. Using a braided fuel line cut from the carburettor, you are able to siphon more than a gallon of gasolene from the truck's fuel tank. Once you are sure that you have retrieved as much fuel as possible, you seal the fuel can and call for Marine Knott to join you in the parking lot.</p>
-      <p>If you wish to keep the braided fuel line, mark it as a <typ class="item">Plastic Tube</typ> on your list of Backpack items.</p>
+      <p>If you wish to keep the braided fuel line, mark it as a <typ class="item">Plastic Tube</typ> on your list of Backpack Items.</p>
       <choice idref="sect47"><link-text>Turn to 47</link-text>.</choice>
      </data>
     </section>
@@ -1654,7 +1656,7 @@ Initial revision
       <p>'Very well then. If we can't ambush 'em on the outside, we'll have to get inside the track and destroy 'em there. It'll make our chances of escape a whole lot shorter, but I agree with you - I reckon we have no choice.'</p>
       <p>Having decided on a plan of action, Sergeant Haskell distributes the mines, one to each man. 'Set the timers to five minutes,' he says, and demonstrates how to do this using his own charge. 'They're magnetic, so try to fix them to the fuel tank if possible. Failing that, place them as near to the explosives as you can get.'</p>
       <p>You examine the heavy, saucer-like device and then carefully set its clockwork timer, according to Haskell's instructions. Finally, you flick across the safety cover so that it protects the detonator button, and slip the mine inside your Backpack.</p>
-      <p>Record the <typ class="item">Contact Mine</typ> on your <a idref="action">Action Chart</a> as a Backpack item. If you already possess the maximum quota of Backpack items, you must discard one article in its favour.</p>
+      <p>Record the <typ class="item">Contact Mine</typ> on your <a idref="action">Action Chart</a> as a Backpack item. If you already possess the maximum quota of Backpack Items, you must discard one article in its favour.</p>
       <choice idref="sect124">To continue, <link-text>turn to 124</link-text>.</choice>
      </data>
     </section>
@@ -1734,7 +1736,7 @@ Initial revision
       <p>'I think I might have the answer to our problem,' you say, as you fish in your Backpack for the solar regulator. The unit is not designed to fit this vehicle, but you plan to attach it to the battery's terminals and then short circuit the unit to provide a surge of power, sufficient to recharge the battery and spark the engine.</p>
       <p>It takes nearly an hour to rewire the regulator, by which time the sun is beating down directly on to the exposed, unregulated solar core. The cells at the core convert the solar power unchecked, and within a few minutes the unit is humming and giving off wisps of pungent blue smoke.</p>
       <p>'Try starting it now,' you call out to Knott, who is sitting in the driver's seat, looking as anxious as if he were sitting on a ticking time bomb. He hot-wires the ignition switch and immediately the engine coughs and splutters into life. As soon as it is running smoothly, you cover your hands with your leather jacket, disconnect the red-hot regulator from the battery, and throw it away.</p>
-      <p>This item is now beyond repair: remember to erase it from your list of Backpack items before you continue.</p>
+      <p>This item is now beyond repair: remember to erase it from your list of Backpack Items before you continue.</p>
       <choice idref="sect329"><link-text>Turn to 329</link-text>.</choice>
      </data>
     </section>
@@ -2055,7 +2057,7 @@ Initial revision
       <p>'Let's do it!' he says, as he rises above the cover of the truck and squeezes off a burst of automatic fire. The noise of his gun drowns out the sniper's shot, but within a second of him breaking cover, Frankland is hit. With the machine pistol still chattering in his hands, he falls backwards and crashes to the ground, the assassin's bullet lodged deep in his skull.</p>
       <p>The shock of Frankland's death, following so closely after Sergeant Haskell's, hits you like an icy shower. You cower behind the truck, shivering with fear, afraid that you will be next. For a terrible moment, the fear consumes you, and all you want to do is run as far away and as fast as you can. Despite Knott's pleas to stay where you are, you scramble to your feet and stumble towards the woods. In your haste, you trip and fall, grazing your hands and knees on the flint-sharp shale: lose 1 <typ class="attribute">ENDURANCE</typ> point.</p>
       <p>Inadvertently, your fall saves your life. A shot passes over your head a second after you stumble, missing you by a hand's breadth. The imminent danger clears your mind and you race towards the trees with a determination to survive. Knott encourages you to increase your speed and you pray that you will reach cover before the sniper has a chance to slip another round into the breech of his rifle.</p>
-      <p>Add together your Stealth skill total and your current <typ class="attribute">ENDURANCE</typ> points score. [Note: If Your <typ class="attribute">ENDURANCE</typ> score is low and you are heavily encumbered, it may be advisable to discard some of your Backpack items in order to increase your Stealth skill total.]</p>
+      <p>Add together your Stealth skill total and your current <typ class="attribute">ENDURANCE</typ> points score. [Note: If Your <typ class="attribute">ENDURANCE</typ> score is low and you are heavily encumbered, it may be advisable to discard some of your Backpack Items in order to increase your Stealth skill total.]</p>
       <choice idref="sect57">If your total score is 15 or less, <link-text>turn to 57</link-text>.</choice>
       <choice idref="sect83">If it is 16-19, <link-text>turn to 83</link-text>.</choice>
       <choice idref="sect254">If it is 20 or more, <link-text>turn to 254</link-text>.</choice>
@@ -2807,7 +2809,7 @@ Initial revision
        <li><typ class="item">Compass</typ></li>
        <li><typ class="item">Signal Flare</typ></li>
       </ul>
-      <p>If you wish to keep any of these weapons, ammunition, Medi-kit units or Backpack items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
+      <p>If you wish to keep any of these weapons, ammunition, Medi-kit units or Backpack Items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>You hide the bodies before entering the gas station to look for the spare ignition unit.</p>
       <choice idref="sect273"><link-text>Turn to 273</link-text>.</choice>
      </data>
@@ -3160,7 +3162,7 @@ Initial revision
 
      <data>
       <p>Suddenly something hits you in the back. The impact knocks you flat on your face, and you gash your hands and cheek on the jagged rubble: lose 2 <typ class="attribute">ENDURANCE</typ> points.</p>
-      <p>Although you have been hit by a bullet, you are not seriously wounded. Your Backpack has saved you from fatal injury: the bullet has lodged itself in one of your Medi-kits. (Erase one Medi-kit from you <a idref="action">Action Chart</a>. If you have no Medi-kits, erase the first item you have recorded on your list of Backpack items.)</p>
+      <p>Although you have been hit by a bullet, you are not seriously wounded. Your Backpack has saved you from fatal injury: the bullet has lodged itself in one of your Medi-kits. (Erase one Medi-kit from you <a idref="action">Action Chart</a>. If you have no Medi-kits, erase the first item you have recorded on your list of Backpack Items.)</p>
       <p>Breathlessly, you drag your aching body towards the front of the truck and start to help Frankland and Knott clear away the debris that is blocking your escape. A thick, wooden pole, which once supported overhead electricity cables in this part of town, is jammed between the wheel and the truck's front fender. With your help, they are at last able to dislodge it, and Knott braves the gunfire to climb into the cab. The engine starts first time and, as he brings the truck over the mound, you and the captain leap on to the tailgate and pull yourselves aboard.</p>
       <p>The street ends at a piece of wasteland, but a few hundred yards beyond lies a highway running east to west. The captain peers through the cabs partition window and gives a harsh laugh when he sees the highway.</p>
       <p>'Make for that road and head west,' he commands, and Knott obeys. Then he turns to the sergeant and says, 'It looks like you're finally outvoted, Haskell. We're on our way to Mimbres.'</p>
@@ -3639,7 +3641,7 @@ Initial revision
        <instance class="pdf" src="ill16.pdf" width="386" height="627" />
       </illustration>
       <p>The fire escape offers no solution: its ladder descends to the main street. There is only one way off the roof and that is to jump to the neighbouring building fifteen feet away. After jamming the roof door to delay the clansmen for as long as possible, the captain leads the escape. The others throw their guns and equipment across and then make the jump safely. You are making the run-up to your jump when you hear a loud burst of gunfire and see the roof door collapse, shot off its hinges.</p>
-      <p>Add together your Stealth skill total and your current <typ class="attribute">ENDURANCE</typ> points score (ignoring any encumbrance penalties you have due to the number of Backpack items you possess). Now pick a number from the <a idref="random">Random Number Table</a> and add this figure to your score.</p>
+      <p>Add together your Stealth skill total and your current <typ class="attribute">ENDURANCE</typ> points score (ignoring any encumbrance penalties you have due to the number of Backpack Items you possess). Now pick a number from the <a idref="random">Random Number Table</a> and add this figure to your score.</p>
       <choice idref="sect45">If your total score is 18 or less, <link-text>turn to 45</link-text>.</choice>
       <choice idref="sect349">If your total is 19-22, <link-text>turn to 349</link-text>.</choice>
       <choice idref="sect130">If it is 23 or more, <link-text>turn to 130</link-text>.</choice>
@@ -3849,7 +3851,7 @@ Initial revision
 
      <data>
       <p>As you reach the bottom of the steps you hear an angry voice shouting from the first floor window: your adversary is attempting to warn his partner that you have escaped. His shouting spurs you to greater effort and, despite your injuries, you run from the building through a maze of dark alleyways. Not until you are sure that you have not been followed do you stop to catch your breath and dress your wounds. It is then you discover that, during your fall through the window, you lost one piece of equipment from your Backpack.</p>
-      <p>Erase the article noted second on your list of Backpack items. If you have less than two Backpack items, erase two Medi-kit units instead.</p>
+      <p>Erase the article noted second on your list of Backpack Items. If you have less than two Backpack Items, erase two Medi-kit units instead.</p>
       <choice idref="sect158">To continue, <link-text>turn to 158</link-text>.</choice>
      </data>
     </section>
@@ -3949,7 +3951,7 @@ Initial revision
       <p>You nod in uneasy agreement and get ready to glance around the tailgate the instant the captain opens fire. 'Let's do it!' he says, as he rises above the cover of the truck and squeezes off a burst of automatic fire. The noise of his gun drowns out the sniper's shot, but within a second of breaking cover, Frankland is hit. With the machine pistol still chattering in his hands, he falls backwards and crashes to the ground, the assassin's bullet lodged deep in his skull.</p>
       <p>The shock of Frankland's death, following so closely after Sergeant Haskell's and so nearly after your own, hits you like an icy shower. You cower behind the truck, shivering with fear, afraid that you will be next. For a terrible moment, the fear wells up and consumes you, and all you want to do is run as far away and as fast as you can. Despite Knott's pleas to stay where you are, you scramble to your feet and stumble blindly towards the woods. In your haste, you trip and fall, grazing your hands and knees on the flint-sharp shale: lose 1 <typ class="attribute">ENDURANCE</typ> point.</p>
       <p>Inadvertently, your fall saves your life. A shot passes over your head a second after you stumble, missing you by a hand's breadth. The imminent danger clears your mind and you race towards the trees with a determination to survive. Knott encourages you to increase your speed and you pray that you will reach cover before the sniper has a chance to slip another round into the breech of his rifle.</p>
-      <p>Add together your Stealth skill total and your current <typ class="attribute">ENDURANCE</typ> points score. [Note: If your <typ class="attribute">ENDURANCE</typ> score is low and you are heavily encumbered, it may be advisable to discard some of your Backpack items in order to increase your Stealth skill total.]</p>
+      <p>Add together your Stealth skill total and your current <typ class="attribute">ENDURANCE</typ> points score. [Note: If your <typ class="attribute">ENDURANCE</typ> score is low and you are heavily encumbered, it may be advisable to discard some of your Backpack Items in order to increase your Stealth skill total.]</p>
       <choice idref="sect57">If your total scores is 15 or less, <link-text>turn to 57</link-text>.</choice>
       <choice idref="sect83">If it is 16-19, <link-text>turn to 83</link-text>.</choice>
       <choice idref="sect254">If it is 20 or more, <link-text>turn to 254</link-text>.</choice>
@@ -3997,7 +3999,7 @@ Initial revision
 
      <data>
       <p>You decide to make a dash for the clump of foliage before the sniper circles around the crater and picks you off at his leisure. With sweat-slick hands you raise your gun and get ready to fire as you run for cover.</p>
-      <p>Note: If Your <typ class="attribute">ENDURANCE</typ> points score is low and you are heavily encumbered, it may be advisable to discard some of your Backpack items now, in order to increase your Stealth skill score before you attempt your run.</p>
+      <p>Note: If Your <typ class="attribute">ENDURANCE</typ> points score is low and you are heavily encumbered, it may be advisable to discard some of your Backpack Items now, in order to increase your Stealth skill score before you attempt your run.</p>
       <choice idref="sect148">If you are holding a Pistol, <link-text>turn to 148</link-text>.</choice>
       <choice idref="sect323">If it is a Machine Pistol, <link-text>turn to 323</link-text>.</choice>
       <choice idref="sect36">If it is a Shotgun, <link-text>turn to 36</link-text>.</choice>
@@ -4533,7 +4535,7 @@ Initial revision
       <p>The captain screams and throws his hands to his face: he has been hit. Blood oozes thickly through his fingers as he crumples slowly to the ground, the assassin's bullet lodged deeply in his skull.</p>
       <p>The shock of Frankland's death, following so closely after Sergeant Haskell's, hits you like an icy shower. You cower behind the truck, shivering with fear, afraid that you will be next. For a terrible moment the fear consumes you, and all you want to do is run as far and as fast as you can. Knott has taken cover among the pines and he pleads with you to stay where you are. But you cannot think clearly; panic has overwhelmed your senses. Blindly, you scramble to your feet and stumble towards the woods and, in your haste, you trip and fall, skinning your hands and knees on the flint-sharp shale: lose 1 <typ class="attribute">ENDURANCE</typ> point.</p>
       <p>Inadvertently, your fall saves your life. A shot passes over your head a second after you stumble, missing you by a hand's breadth. The imminent danger clears your mind and you race towards the trees with renewed determination to survive. Knott encourages you to increase your speed and you pray that you will reach cover before the sniper has a chance to work another round into the breech of his rifle.</p>
-      <p>Add together your Stealth skill total and your current <typ class="attribute">ENDURANCE</typ> points score. (Note. If Your <typ class="attribute">ENDURANCE</typ> is low and you are heavily encumbered, it may be advisable to discard some of your Backpack items in order to increase your Stealth skill total.</p>
+      <p>Add together your Stealth skill total and your current <typ class="attribute">ENDURANCE</typ> points score. (Note. If Your <typ class="attribute">ENDURANCE</typ> is low and you are heavily encumbered, it may be advisable to discard some of your Backpack Items in order to increase your Stealth skill total.</p>
       <choice idref="sect57">If your total score is 15 or less, <link-text>turn to 57</link-text>.</choice>
       <choice idref="sect83">If it is 16 - 19, <link-text>turn to 83</link-text>.</choice>
       <choice idref="sect254">If it is 20 or more, <link-text>turn to 254</link-text>.</choice>
@@ -4654,7 +4656,7 @@ Initial revision
       <p>You and Kate enter the Tucson stronghold to receive a hero's welcome. The colony are overjoyed; they feared they would never see either of you alive again. They are saddened to hear your account of how Captain Frankland, Sergeant Haskell and Marine Knott met their deaths, yet they draw comfort from the knowledge that their memory will live on in the hearts of the colonists. If it were not for their ultimate sacrifice, the colony would never have reached Tucson intact.</p>
       <p>After celebrating your successful return, the colony leaders set about planning the last stage of the journey to California, confident that now Mad Dog Michigan is no longer around, his army will be disinclined to continue the pursuit of the convoy. But a nagging doubt remains in your mind. Did Mad Dog Michigan really meet his doom at the Pantona Bridge?</p>
       <p>For you, Cal Phoenix, the answer to that question, and the final part of your exodus to California, await you in book four of the Freeway Warrior series, entitled:</p>
-      <p>CALIFORNIA COUNTDOWN</p>
+      <p><cite><a href="&link.04cc;">CALIFORNIA COUNTDOWN</a></cite></p>
      </data>
     </section>
    </data>
@@ -4819,9 +4821,15 @@ Initial revision
       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>re-establish</quote> with <quote>reestablish</quote>.</p>
       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>syphoned</quote> with <quote>siphoned</quote>.</p>
       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>if you pick a O</quote> with <quote>if you pick a 0</quote>.</p>
+      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>On pages 6 and 7 you will find an Action Chart</quote> with <quote>An Action Chart has been supplied</quote>.</p>
+      <p>(<a idref="gamerulz">The Game Rules</a>) Removed <quote>For ease of use during play it is recommended that you photocopy these pages</quote>.</p>
+      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>the Random Number Table at the back of this book</quote> with <quote>the Random Number Table</quote>.</p>
+      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>survival skills</quote> with <quote>Survival Skills</quote>.</p>
       <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
       <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote><ch.plus/> 1) He</quote> with <quote><ch.plus/>1). He</quote>.</p>
+      <p>(<a idref="cmbtrulz">Combat Rules</a>) Removed <quote>on the inside back cover of the book</quote>.</p>
       <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>map of New Mexico/Arizona</quote> with <quote>Map of New Mexico/Arizona</quote>.</p>
+      <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>potassium iodine</quote> with <quote>potassium iodide</quote>.</p>
       <p>(<a idref="sect8">8</a>) Replaced <quote>head over heals</quote> with <quote>head over heels</quote>.</p>
       <p>(<a idref="sect11">11</a>) Replaced <quote>antispetics</quote> with <quote>antiseptics</quote>.</p>
       <p>(<a idref="sect36">36</a>) Replaced <quote>shot-shell</quote> with <quote>shell</quote>.</p>
@@ -4852,6 +4860,7 @@ Initial revision
       <p>(<a idref="sect291">291</a>) Replaced <quote>turn to, 83</quote> with <quote>turn to 83</quote>.</p>
       <p>(<a idref="sect323">323</a>) Replaced <quote>(minimum equals one round; maximum equals five rounds)</quote> with <quote>(minimum: one burst; maximum: five bursts)</quote>.</p>
       <p>(<a idref="sect11">11</a>,<a idref="sect63">63</a>,<a idref="sect82">82</a>,<a idref="sect150">150</a>,<a idref="sect152">152</a>,<a idref="sect192">192</a>,<a idref="sect310">310</a>,<a idref="sect320">320</a> Replaced CCS Bonuses in <quote>[]</quote> with <quote>()</quote>.</p>
+      <p>(<a idref="sect10">10</a>,<a idref="sect11">11</a>,<a idref="sect66">66</a>,<a idref="sect92">92</a>,<a idref="sect100">100</a>,<a idref="sect106">106</a>,<a idref="sect134">134</a>,<a idref="sect192">192</a>,<a idref="sect223">223</a>,<a idref="sect264">264</a>,<a idref="sect282">282</a>,<a idref="sect291">291</a>,<a idref="sect295">295</a>,<a idref="sect340">340</a>) Replaced <quote>Backpack items</quote> with <quote>Backpack Items</quote>.</p>
       <p>(<a idref="crsumary">Combat Rules Summary</a>) Added missing period after <quote>total</quote>.</p>
       <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
       </data>
