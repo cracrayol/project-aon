@@ -15,6 +15,10 @@
 
 $Id$
 $Log$
+Revision 1.6  2006/09/07 14:05:53  Wibbleboy
+o Added ammo usage footnotes
+o Corrected various errata and non-errate errors.
+
 Revision 1.5  2006/09/06 09:01:34  Wibbleboy
 o Fixed a few formatting errors
 o Implemented series-wide consistency changes
@@ -491,8 +495,14 @@ Initial revision
     <section class="numbered" id="sect4">
      <meta><title>4</title></meta>
 
+     <footnotes>
+      <footnote id="sect4-1-foot" idref="sect4-1">
+       <p>Remember to deduct a round of 9mm ammunition from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+     
      <data>
-      <p>The crack of your pistol shot is echoed by the clansman's shocked scream. He drops the knife and clutches his hands to his wound before crashing lifelessly to the floor. With fear in their eyes, the other two reach for their pistols as they back away hastily from the guard's blood-stained body.</p>
+      <p>The crack of your pistol shot is echoed by the clansman's shocked scream.<a id="sect4-1" idref="sect4-1-foot" class="footnote" /> He drops the knife and clutches his hands to his wound before crashing lifelessly to the floor. With fear in their eyes, the other two reach for their pistols as they back away hastily from the guard's blood-stained body.</p>
       <choice idref="sect335"><link-text>Turn to 335</link-text>.</choice>
      </data>
     </section>
@@ -556,8 +566,14 @@ Initial revision
     <section class="numbered" id="sect10">
      <meta><title>10</title></meta>
 
+     <footnotes>
+      <footnote id="sect10-1-foot" idref="sect10-1">
+       <p>Remember to deduct a round of 7.62mm ammunition from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+     
      <data>
-      <p>You chamber a round and take aim at the first clansman as he scurries between the rocks that litter the edge of the service area. He is less than thirty yards away when you squeeze off your first shot and bring him crashing to the ground. His partner hesitates, then abandons his stealthy approach and comes running towards you, screaming hysterically, his machine pistol blazing at his hip.</p>
+      <p>You chamber a round and take aim at the first clansman as he scurries between the rocks that litter the edge of the service area. He is less than thirty yards away when you squeeze off your first shot and bring him crashing to the ground.<a id="sect10-1" idref="sect10-1-foot" class="footnote" /> His partner hesitates, then abandons his stealthy approach and comes running towards you, screaming hysterically, his machine pistol blazing at his hip.</p>
       <choice idref="sect176">If you have sufficient ammunition and wish to fire again, <link-text>turn to 176</link-text>.</choice>
       <choice idref="sect212">If you do not have sufficient ammunition to fire a second time, or choose not to fire, <link-text>turn to 212</link-text>.</choice>
      </data>
@@ -644,8 +660,14 @@ Initial revision
     <section class="numbered" id="sect18">
      <meta><title>18</title></meta>
 
+     <footnotes>
+      <footnote id="sect18-1-foot" idref="sect18-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>The clansman is no more than ten feet away when you spring up from your hiding place and bring your barrel to bear. Your gunfire catches him in the side and spins him backwards to the slippery floor. For a moment he shudders, then falls still as his last breath escapes from between his blood-flecked lips.</p>
+      <p>The clansman is no more than ten feet away when you spring up from your hiding place and bring your barrel to bear. Your gunfire catches him in the side and spins him backwards to the slippery floor.<a id="sect18-1" idref="sect18-1-foot" class="footnote" /> For a moment he shudders, then falls still as his last breath escapes from between his blood-flecked lips.</p>
       <p>Kate moves forward to check that he is dead and to search his body. She keeps what she needs: his machine pistol, a quantity of ammunition and his water canteen, and offers the rest of his possessions to you:</p>
       <ul>
        <li>Enough food for one Meal</li>
@@ -663,9 +685,15 @@ Initial revision
     <section class="numbered" id="sect19">
      <meta><title>19</title></meta>
 
+     <footnotes>
+      <footnote id="sect19-1-foot" idref="sect19-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>Your gunfire catches the fleeing clansman in the neck and lifts him clean out of the saddle. In your rear-view mirror you see him bounce off the highway, roll over, and then disappear from view amongst a tangle of dead sagebrush at the side of the road. His bike continues in a straight line for almost a minute until, with a loud crash, it finally flips end-over-end and bursts into flames.</p>
-      <p>Less than a mile along the highway you happen upon a deserted stretch of Freeway 87, running directly across your path. You join it, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your map confirms your suspicions: you are approaching the outskirts of Sterling City.</p>
+      <p>Your gunfire catches the fleeing clansman in the neck and lifts him clean out of the saddle.<a id="sect19-1" idref="sect19-1-foot" class="footnote" /> In your rear-view mirror you see him bounce off the highway, roll over, and then disappear from view amongst a tangle of dead sagebrush at the side of the road. His bike continues in a straight line for almost a minute until, with a loud crash, it finally flips end-over-end and bursts into flames.</p>
+      <p>Less than a mile along the highway you happen upon a deserted stretch of Freeway 87, running directly across your path. You join it, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your <a idref="map">map</a> confirms your suspicions: you are approaching the outskirts of Sterling City.</p>
       <choice idref="sect100"><link-text>Turn to 100</link-text>.</choice>
      </data>
     </section>
@@ -719,8 +747,14 @@ Initial revision
     <section class="numbered" id="sect23">
      <meta><title>23</title></meta>
 
+     <footnotes>
+      <footnote id="sect23-1-foot" idref="sect23-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>The deadly bullets miss you by inches and you dive to the floor in case the unseen gunman decides to fire again. Then you hear running footsteps approaching, and as they get louder, you raise your weapon and unleash a round of fire at the door. There is a scream from inside the kitchen, and you hear a body fall heavily to the tiled floor amid a crash of broken glass and crockery.</p>
+      <p>The deadly bullets miss you by inches and you dive to the floor in case the unseen gunman decides to fire again. Then you hear running footsteps approaching, and as they get louder, you raise your weapon and unleash a round of fire at the door.<a id="sect23-1" idref="sect23-1-foot" class="footnote" /> There is a scream from inside the kitchen, and you hear a body fall heavily to the tiled floor amid a crash of broken glass and crockery.</p>
       <p>Just inside the door you discover the body of a clansman. Judging from the long-horned skull that you find painted on the back of his leather vest, you have just laid to rest your first Angelino. On the floor nearby you find his weapons and equipment: a Machine Pistol (containing eighteen rounds of 9mm ammunition) and a Backpack, which holds the following items:</p>
       <ul>
        <li><typ class="item">Flexible Saw</typ></li>
@@ -777,8 +811,14 @@ Initial revision
     <section class="numbered" id="sect26">
      <meta><title>26</title></meta>
 
+     <footnotes>
+      <footnote id="sect26-1-foot" idref="sect26-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>You pull the trigger and immediately duck your head behind the roadster's reinforced steel door. The speed of your reflexes saves you from being hit by the Maverick's gunfire as, in the throes of death, he empties his pistol into the side of your car.</p>
+      <p>You pull the trigger and immediately duck your head behind the roadster's reinforced steel door.<a id="sect26-1" idref="sect26-1-foot" class="footnote" /> The speed of your reflexes saves you from being hit by the Maverick's gunfire as, in the throes of death, he empties his pistol into the side of your car.</p>
       <p>With the screams of the other clansmen ringing in your ears, you force yourself to concentrate on restarting your roadster. This time, despite an almost overwhelming urge to stamp the pedal straight through the floor, you take your foot off the gas as you turn the ignition switch. The move works - the engine roars back to life - and within seconds you are accelerating away from the Mavericks with your eyes glued firmly on the convoy's tail lights, glowing red in the distance. A few poorly aimed bullets chase your escape but you soon catch up with the school bus and pass beyond range of the clansmen's guns.</p>
       <choice idref="sect312"><link-text>Turn to 312</link-text>.</choice>
      </data>
@@ -787,8 +827,14 @@ Initial revision
     <section class="numbered" id="sect27">
      <meta><title>27</title></meta>
 
+     <footnotes>
+      <footnote id="sect27-1-foot" idref="sect27-1">
+       <p>Remember to deduct a round of 9mm ammunition from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>You pull back and release the slide of your pistol, feeding a bullet into the breach, then take careful aim at the first clansman as he scurries between the rocks that litter the edge of the service area. He is less than twenty yards away when you squeeze off your first shot and bring him crashing to the ground. His partner hesitates, then abandons his stealthy approach and comes running towards you, screaming hysterically, his machine pistol blazing at his hip.</p>
+      <p>You pull back and release the slide of your pistol, feeding a bullet into the breach, then take careful aim at the first clansman as he scurries between the rocks that litter the edge of the service area. He is less than twenty yards away when you squeeze off your first shot and bring him crashing to the ground.<a id="sect27-1" idref="sect27-1-foot" class="footnote" /> His partner hesitates, then abandons his stealthy approach and comes running towards you, screaming hysterically, his machine pistol blazing at his hip.</p>
       <choice idref="sect176">If you have sufficient ammunition and wish to fire again, <link-text>turn to 176</link-text>.</choice>
       <choice idref="sect212">If you do not have sufficient ammunition to fire a second time, or choose not to fire, <link-text>turn to 212</link-text>.</choice>
      </data>
@@ -876,11 +922,17 @@ Initial revision
     <section class="numbered" id="sect35">
      <meta><title>35</title></meta>
 
+     <footnotes>
+      <footnote id="sect35-1-foot" idref="sect35-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
       <p>Bellowing like an angry bull, you burst through the kitchen doors with your gun held before you, ready to fire. To your left you sense a movement and you turn to face it. A clansman is crouching in front of a food locker, trying to prise the door open with the edge of a meat cleaver. When he sees you his eyes open wide with shock.</p>
       <p>'I'd drop it!' you shout.</p>
       <p>'I'll drop you!' he screams in reply, and draws the cleaver back in preparation to throw it at your chest.</p>
-      <p>You shoot once and hit the clansman in the head, the force of your gunfire spinning his body across the kitchen floor and killing him instantly. Slowly you lower your smoking barrel and walk forward to search the body of your would-be attacker.</p>
+      <p>You shoot once and hit the clansman in the head, the force of your gunfire spinning his body across the kitchen floor and killing him instantly.<a id="sect35-1" idref="sect35-1-foot" class="footnote" /> Slowly you lower your smoking barrel and walk forward to search the body of your would-be attacker.</p>
       <choice idref="sect126"><link-text>Turn to 126</link-text>.</choice>
      </data>
     </section>
@@ -937,8 +989,14 @@ Initial revision
     <section class="numbered" id="sect40">
      <meta><title>40</title></meta>
 
+     <footnotes>
+      <footnote id="sect40-1-foot" idref="sect40-1">
+       <p>Remember to deduct a round of 9mm ammunition from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>On a count of three you step out into the corridor, raise your pistol, and fix your sights on the guard who is standing to the left of the stairs. You fire a body shot and see him twist backwards, clutching his chest. Then you swing across to his partner, knowing only too well that you must make your second shot count just as effectively. But his reactions prove razor-sharp, and when you do get him in your sights you are shocked to find that you are staring at the muzzle of a machine pistol.</p>
+      <p>On a count of three you step out into the corridor, raise your pistol, and fix your sights on the guard who is standing to the left of the stairs. You fire a body shot and see him twist backwards, clutching his chest.<a id="sect40-1" idref="sect40-1-foot" class="footnote" /> Then you swing across to his partner, knowing only too well that you must make your second shot count just as effectively. But his reactions prove razor-sharp, and when you do get him in your sights you are shocked to find that you are staring at the muzzle of a machine pistol.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth skill score, and your current <typ class="attribute">ENDURANCE</typ> points score.</p>
       <choice idref="sect297">If your total score is 18 or less, <link-text>turn to 297</link-text>.</choice>
       <choice idref="sect197">If your total score is 19 or more, <link-text>turn to 197</link-text>.</choice>
@@ -1054,8 +1112,14 @@ Initial revision
     <section class="numbered" id="sect49">
      <meta><title>49</title></meta>
 
+     <footnotes>
+      <footnote id="sect49-1-foot" idref="sect49-1">
+       <p>Remember to deduct a round of 7.62mm ammunition from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>The sharp report of your rifle is echoed by the clansman's shocked scream as your bullet passes straight through his body and punches a hole in the observation window behind. He drops his knife and clutches his hands to his wound before crashing lifelessly to the floor. With fear in their eyes, the other two reach for their holstered pistols as hurriedly they back away from the guard's blood-stained body.</p>
+      <p>The sharp report of your rifle is echoed by the clansman's shocked scream as your bullet passes straight through his body and punches a hole in the observation window behind.<a id="sect49-1" idref="sect49-1-foot" class="footnote" /> He drops his knife and clutches his hands to his wound before crashing lifelessly to the floor. With fear in their eyes, the other two reach for their holstered pistols as hurriedly they back away from the guard's blood-stained body.</p>
       <choice idref="sect335"><link-text>Turn to 335</link-text>.</choice>
      </data>
     </section>
@@ -1074,7 +1138,7 @@ Initial revision
 
      <data>
       <p>As you steer away from the pump house, you look in your mirror to see the biker speeding towards the apex of the roof. He is within a few inches of the top when it suddenly caves in beneath his front wheel and he is flung head-first over the handlebars. With a scream of terror he cartwheels through the air and lands heavily on his back at the edge of the freeway. Winded by the fall, he cannot summon enough strength to roll away as his bike comes crashing down upon him.</p>
-      <p>Certain in the knowledge that he could not possibly have survived such a terrible crash, you return to the highway and begin the next stage of your journey to San Angelo. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your map confirms your suspicions: you are approaching Sterling City.</p>
+      <p>Certain in the knowledge that he could not possibly have survived such a terrible crash, you return to the highway and begin the next stage of your journey to San Angelo. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your <a idref="map">map</a> confirms your suspicions: you are approaching Sterling City.</p>
       <choice idref="sect100"><link-text>Turn to 100</link-text>.</choice>
      </data>
     </section>
@@ -1171,7 +1235,7 @@ Initial revision
      <meta><title>59</title></meta>
 
      <data>
-      <p>The heat of the sun hits you like a blazing hammer as you walk back to your roadster. Slowly you ease yourself into the driving seat and pause for a few moments to look at your map. You estimate that Sterling City is a little over thirty miles away, less than an hour's drive if the highway and your luck hold out.</p>
+      <p>The heat of the sun hits you like a blazing hammer as you walk back to your roadster. Slowly you ease yourself into the driving seat and pause for a few moments to look at your <a idref="map">map</a>. You estimate that Sterling City is a little over thirty miles away, less than an hour's drive if the highway and your luck hold out.</p>
       <p>You must now take a Drink or lose 3 <typ class="attribute">ENDURANCE</typ> points before you leave this ruined town, a place once known as Garden City.</p>
       <choice idref="sect290"><link-text>Turn to 290</link-text>.</choice>
      </data>
@@ -1203,8 +1267,14 @@ Initial revision
     <section class="numbered" id="sect62">
      <meta><title>62</title></meta>
 
+     <footnotes>
+      <footnote id="sect62-1-foot" idref="sect62-1">
+       <p>Remember to deduct a round of 12-gauge ammunition from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>At such close range, the blast from your shotgun virtually rips the clansman in two. With a gurgling scream he crashes down in the middle of the table before rolling lifelessly to the floor. Hurriedly the other two reach for their pistols as, with fear in their eyes, they back away from the clansman's torn and blood-stained body.</p>
+      <p>At such close range, the blast from your shotgun virtually rips the clansman in two.<a id="sect62-1" idref="sect62-1-foot" class="footnote" /> With a gurgling scream he crashes down in the middle of the table before rolling lifelessly to the floor. Hurriedly the other two reach for their pistols as, with fear in their eyes, they back away from the clansman's torn and blood-stained body.</p>
       <choice idref="sect335"><link-text>Turn to 335</link-text>.</choice>
      </data>
     </section>
@@ -1255,7 +1325,7 @@ Initial revision
 
      <data>
       <p>You manage to find your way back to the roadster without running into the clansmen and waste no time in making a hasty escape from Eldorado. The enemy are slow to react to your getaway and you are more than ten miles from the town before you see their headlights in your driving mirror. Your speedy escape may have wrong-footed them, but they have caught up quickly. Fearing that you will not be able to out-run them, you leave the highway and hide your roadster behind a rocky ridge that runs parallel to the road. The sound of their engines grows louder as they approach, then fades quickly as the pack roars past, oblivious to your presence. With the immediate threat now gone, you decide to remain where you are and get a few hours sleep before continuing your journey at dawn.</p>
-      <p>In the clear light of early morning you can see for miles across the rocky plain that surrounds the highway south of Eldorado. It appears empty, although you remain on the alert every second of your drive to Sonora, the next town marked on your map, for it is in this direction that the Angelinos were heading when they passed you last night. You are less than a mile from the ruins of Sonora when you are greeted by the welcome sight of Interstate 10, stretching east-to-west across your path. This is the freeway you hope will take you all the way to your rendezvous with the colony at Kent, and then on through the mountains to El Paso.</p>
+      <p>In the clear light of early morning you can see for miles across the rocky plain that surrounds the highway south of Eldorado. It appears empty, although you remain on the alert every second of your drive to Sonora, the next town marked on your <a idref="map">map</a>, for it is in this direction that the Angelinos were heading when they passed you last night. You are less than a mile from the ruins of Sonora when you are greeted by the welcome sight of Interstate 10, stretching east-to-west across your path. This is the freeway you hope will take you all the way to your rendezvous with the colony at Kent, and then on through the mountains to El Paso.</p>
       <p>You join the freeway and enjoy the feel of a firmer, clearer road surface beneath your wheels as you begin the long drive west. Still you can see no sign of the Angelinos, and Kate voices her hope that they have decided to search Sonora, thinking you may have hidden there last night. You want to agree with her, but suddenly, in the distance, you see something that proves her wrong.</p>
       <choice idref="sect306"><link-text>Turn to 306</link-text>.</choice>
      </data>
@@ -1537,7 +1607,7 @@ Initial revision
 
      <data>
       <p>It takes all night for you to dismantle, cut, re-align and weld the damaged chassis. It is a difficult task, made even more so by fatigue, but the lessons you learnt when you helped Cutter to build this roadster over six months ago now prove invaluable. You work continuously, taking a break only when Kate sights a pack of Angelinos to the north. You turn off your torch and watch from the cover of the rocks as they pass along the highway heading south. Then, once they have disappeared, you resume the daunting task of repairing the crash damage.</p>
-      <p>It is an hour after dawn when the repairs are finally completed. In the clear light of early morning you can see for miles across the rocky plain that surrounds the highway south of Eldorado. It appears empty, although you remain on the alert every second of your drive to Sonora, the next town marked on your map, for it is in this direction that the Angelinos were heading when they passed you last night. You are less than a mile from the ruins of Sonora when you are greeted by the welcome sight of Interstate 10, stretching east-to-west across your path. This is the freeway you hope will take you all the way to your rendezvous with the colony at Kent, and then on through the mountains to El Paso.</p>
+      <p>It is an hour after dawn when the repairs are finally completed. In the clear light of early morning you can see for miles across the rocky plain that surrounds the highway south of Eldorado. It appears empty, although you remain on the alert every second of your drive to Sonora, the next town marked on your <a idref="map">map</a>, for it is in this direction that the Angelinos were heading when they passed you last night. You are less than a mile from the ruins of Sonora when you are greeted by the welcome sight of Interstate 10, stretching east-to-west across your path. This is the freeway you hope will take you all the way to your rendezvous with the colony at Kent, and then on through the mountains to El Paso.</p>
       <p>You join the freeway and enjoy the feel of a firmer, clearer road surface beneath your wheels as you begin the long drive west. Still you can see no sign of the Angelinos, and Kate voices her hope that they have decided to search Sonora, thinking you may have hidden there last night. You want to agree with her, but suddenly, in the distance, you see something that proves her wrong.</p>
       <choice idref="sect306"><link-text>Turn to 306</link-text>.</choice>
      </data>
@@ -1595,8 +1665,14 @@ Initial revision
     <section class="numbered" id="sect95">
      <meta><title>95</title></meta>
 
+     <footnotes>
+      <footnote id="sect95-1-foot" idref="sect95-1">
+       <p>Remember to deduct a round of 7.62mm ammunition from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>Simultaneously you step into the corridor and raise your rifle to your shoulder. The guard to the left of the staircase sees you but has no time to shout a warning before your bullet finds its mark. He spins backwards and falls heavily at the foot of the stairs as you work another round into the breach. Then you swing the barrel towards his partner, knowing only too well that you must make your second shot count just as effectively, but by the time you have him in your sights you are shocked to find that you are staring into the muzzle of his machine pistol.</p>
+      <p>Simultaneously you step into the corridor and raise your rifle to your shoulder. The guard to the left of the staircase sees you but has no time to shout a warning before your bullet finds its mark.<a id="sect95-1" idref="sect95-1-foot" class="footnote" /> He spins backwards and falls heavily at the foot of the stairs as you work another round into the breach. Then you swing the barrel towards his partner, knowing only too well that you must make your second shot count just as effectively, but by the time you have him in your sights you are shocked to find that you are staring into the muzzle of his machine pistol.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth skill score and your current <typ class="attribute">ENDURANCE</typ> points score.</p>
       <choice idref="sect297">If your total score is 19 or less, <link-text>turn to 297</link-text>.</choice>
       <choice idref="sect197">If your total score is 20 or more, <link-text>turn to 197</link-text>.</choice>
@@ -1638,7 +1714,7 @@ Initial revision
 
      <data>
       <p>You watch tensely as the bikers ride into the town. You give a silent prayer that they will pass through Eldorado without stopping, and, to your relief, your prayer is answered. With the immediate threat gone, you decide to remain where you are and get a few hours' sleep before waking Kate and continuing your journey at dawn.</p>
-      <p>In the clear light of early morning you can see for miles across the rocky plain that surrounds the highway south of Eldorado. Although it appears empty, you remain on the alert every second of your drive to Sonora, the next town marked on your map, for it is in this direction that the Angelinos were heading when they rode through Eldorado last night. You are less than a mile from the ruins of Sonora when you are greeted by the welcome sight of Interstate 10, stretching east-to-west across your path. This is the freeway you hope will take you all the way to your rendezvous with the colony at Kent, and then on through the mountains to El Paso.</p>
+      <p>In the clear light of early morning you can see for miles across the rocky plain that surrounds the highway south of Eldorado. Although it appears empty, you remain on the alert every second of your drive to Sonora, the next town marked on your <a idref="map">map</a>, for it is in this direction that the Angelinos were heading when they rode through Eldorado last night. You are less than a mile from the ruins of Sonora when you are greeted by the welcome sight of Interstate 10, stretching east-to-west across your path. This is the freeway you hope will take you all the way to your rendezvous with the colony at Kent, and then on through the mountains to El Paso.</p>
       <p>You join the freeway and enjoy the feel of a firmer, clearer road surface beneath your wheels as you begin the long drive west. Still you can see no sign of the Angelinos, and Kate voices her hope that they have decided to search Sonora, thinking you may have hidden there last night. You want to agree with her, but suddenly, in the distance, you see something that proves her wrong.</p>
       <choice idref="sect306"><link-text>Turn to 306</link-text>.</choice>
      </data>
@@ -1670,7 +1746,7 @@ Initial revision
        <li><typ class="item">Goggles</typ></li>
       </ul>
       <p>Parked beside the entrance to the store, from where the Angelino first appeared, you discover his motorcycle. You use it to transport Kate and the welding equipment back to your roadster and immediately set to work on repairing the damage. It takes all night for you to dismantle, cut, re-align and weld the damaged chassis. It is a difficult task, made even more so by fatigue, but the lessons you learnt when you helped Cutter to build this roadster over six months ago prove invaluable.</p>
-      <p>You work continuously, and it is not until an hour after dawn that the repairs are finally completed. In the clear light of early morning you can see for miles across the rocky plain that surrounds the highway south of Eldorado. It appears empty, although you remain on the alert every second of your drive to Sonora, the next town marked on your map, for it is in this direction that the Angelinos were heading when they passed you last night. You are less than a mile from the ruins of Sonora when you are greeted by the welcome sight of Interstate 10, stretching east-to-west across your path. This is the freeway you hope will take you all the way to your rendezvous with the colony at Kent, and then on through the mountains to El Paso.</p>
+      <p>You work continuously, and it is not until an hour after dawn that the repairs are finally completed. In the clear light of early morning you can see for miles across the rocky plain that surrounds the highway south of Eldorado. It appears empty, although you remain on the alert every second of your drive to Sonora, the next town marked on your <a idref="map">map</a>, for it is in this direction that the Angelinos were heading when they passed you last night. You are less than a mile from the ruins of Sonora when you are greeted by the welcome sight of Interstate 10, stretching east-to-west across your path. This is the freeway you hope will take you all the way to your rendezvous with the colony at Kent, and then on through the mountains to El Paso.</p>
       <p>You join the freeway and enjoy the feel of a firmer, clearer road surface beneath your wheels as you begin the long drive west. Still you can see no sign of the Angelinos, and Kate voices her hope that they have decided to search Sonora, thinking you may have hidden there last night. You want to agree with her, but suddenly, in the distance, you see something that proves her wrong.</p>
       <choice idref="sect306"><link-text>Turn to 306</link-text>.</choice>
      </data>
@@ -1691,8 +1767,14 @@ Initial revision
     <section class="numbered" id="sect103">
      <meta><title>103</title></meta>
 
+     <footnotes>
+      <footnote id="sect103-1-foot" idref="sect103-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>Your gunfire hits the sniper in the chest and flings him against the wall. With a gurgling groan, he slides to the floor and rolls over on to his crimson-stained stomach, his rifle still clutched in his hands. (If you wish to keep this weapon, you discover that it contains eight rounds of 7.62mm ammunition.)</p>
+      <p>Your gunfire hits the sniper in the chest and flings him against the wall.<a id="sect103-1" idref="sect103-1-foot" class="footnote" /> With a gurgling groan, he slides to the floor and rolls over on to his crimson-stained stomach, his rifle still clutched in his hands. (If you wish to keep this weapon, you discover that it contains eight rounds of 7.62mm ammunition.)</p>
       <p>You shout an 'all clear' to the others in the street below and then turn to leave.</p>
       <choice idref="sect239"><link-text>Turn to 239</link-text>.</choice>
      </data>
@@ -1733,8 +1815,14 @@ Initial revision
     <section class="numbered" id="sect107">
      <meta><title>107</title></meta>
 
+     <footnotes>
+      <footnote id="sect107-1-foot" idref="sect107-1">
+       <p>Remember to deduct six rounds of 9mm ammunition from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>At such close range, your burst of automatic fire lifts the heavy clansman clean off his feet. He screams, and with a crash he lands on his back in the middle of the table, before rolling lifelessly to the floor. The other two reach for their pistols as hurriedly they back away from the clansman's blood-stained body.</p>
+      <p>At such close range, your burst of automatic fire lifts the heavy clansman clean off his feet.<a id="sect107-1" idref="sect107-1-foot" class="footnote" /> He screams, and with a crash he lands on his back in the middle of the table, before rolling lifelessly to the floor. The other two reach for their pistols as hurriedly they back away from the clansman's blood-stained body.</p>
       <choice idref="sect335"><link-text>Turn to 335</link-text>.</choice>
      </data>
     </section>
@@ -1774,7 +1862,7 @@ Initial revision
 
      <data>
       <p>The scorched bones of a coyote lie scattered around the ashes of the camp fire, the remnants of the meal that you watched the two clansmen share. Where their motorcycles were parked you discover a <typ class="item">Leather Face Mask</typ>. If you decide to keep this item, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
-      <p>Satisfied that nothing of importance has been missed, you return to your roadster and begin the next stage of your journey to San Angelo. Less than a mile beyond the bridge you see a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your map confirms your suspicions: you are approaching Sterling City.</p>
+      <p>Satisfied that nothing of importance has been missed, you return to your roadster and begin the next stage of your journey to San Angelo. Less than a mile beyond the bridge you see a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your <a idref="map">map</a> confirms your suspicions: you are approaching Sterling City.</p>
       <choice idref="sect100"><link-text>Turn to 100</link-text>.</choice>
      </data>
     </section>
@@ -2124,8 +2212,14 @@ Initial revision
     <section class="numbered" id="sect138">
      <meta><title>138</title></meta>
 
+     <footnotes>
+      <footnote id="sect138-1-foot" idref="sect138-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>You try to ignore the hail of bullets whistling past on all sides as coolly you crouch down and adopt a two-handed combat stance in order to steady your aim. The clansman is wild with fury, but a single shot to the head, delivered with chilling precision, is all it takes to stop him dead in his tracks.</p>
+      <p>You try to ignore the hail of bullets whistling past on all sides as coolly you crouch down and adopt a two-handed combat stance in order to steady your aim. The clansman is wild with fury, but a single shot to the head, delivered with chilling precision, is all it takes to stop him dead in his tracks.<a id="sect138-1" idref="sect138-1-foot" class="footnote" /></p>
       <p>Before you bury these two Detroit Lions, you search their bodies and their bikes, and discover the following useful items:</p>
       <ul>
        <li>Pistol (containing three rounds of 9mm ammunition)</li>
@@ -2138,7 +2232,7 @@ Initial revision
        <li><typ class="item">HE Grenade</typ></li>
        <li>Enough pain killers for one Medi-kit unit</li>
       </ul>
-      <p>There remains no trace of the bikers or their machines when eventually you complete the grisly task of burial. Wearily you return to your roadster and begin the next stage of your journey to San Angelo. Less than a mile beyond the bridge you see a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your map confirms that you are approaching Sterling City.</p>
+      <p>There remains no trace of the bikers or their machines when eventually you complete the grisly task of burial. Wearily you return to your roadster and begin the next stage of your journey to San Angelo. Less than a mile beyond the bridge you see a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your <a idref="map">map</a> confirms that you are approaching Sterling City.</p>
       <choice idref="sect100"><link-text>Turn to 100</link-text>.</choice>
      </data>
     </section>
@@ -2176,8 +2270,14 @@ Initial revision
     <section class="numbered" id="sect142">
      <meta><title>142</title></meta>
 
+     <footnotes>
+      <footnote id="sect142-1-foot" idref="sect142-1">
+       <p>Remember to deduct six rounds of 9mm ammunition from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>Quickly you check your magazine and cock the firing bolt as the first clansman scurries between the rocks that litter the edge of the service area. He is less than twenty-five yards away when you squeeze off your first burst of fire and bring him crashing to the ground. His partner hesitates, then abandons his stealthy approach and comes running towards you, screaming hysterically, his own machine pistol blazing furiously at his hip.</p>
+      <p>Quickly you check your magazine and cock the firing bolt as the first clansman scurries between the rocks that litter the edge of the service area. He is less than twenty-five yards away when you squeeze off your first burst of fire and bring him crashing to the ground.<a id="sect142-1" idref="sect142-1-foot" class="footnote" /> His partner hesitates, then abandons his stealthy approach and comes running towards you, screaming hysterically, his own machine pistol blazing furiously at his hip.</p>
       <choice idref="sect176">If you have sufficient ammunition and wish to fire again, <link-text>turn to 176</link-text>.</choice>
       <choice idref="sect212">If you do not have sufficient ammunition to fire a second time, or choose not to fire, <link-text>turn to 212</link-text>.</choice>
      </data>
@@ -2230,7 +2330,7 @@ Initial revision
        <li><typ class="item">Leather Face Mask</typ></li>
        <li><typ class="item">Rope</typ></li>
       </ul>
-      <p>There remains no trace of the bikers or their machines when eventually you complete the grisly task of burial. Then wearily you return to your roadster and begin the next stage of your journey to San Angelo. Less than a mile beyond the bridge you see a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your map confirms that you are approaching Sterling City.</p>
+      <p>There remains no trace of the bikers or their machines when eventually you complete the grisly task of burial. Then wearily you return to your roadster and begin the next stage of your journey to San Angelo. Less than a mile beyond the bridge you see a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your <a idref="map">map</a> confirms that you are approaching Sterling City.</p>
       <choice idref="sect100"><link-text>Turn to 100</link-text>.</choice>
      </data>
     </section>
@@ -2434,9 +2534,15 @@ Initial revision
     <section class="numbered" id="sect163">
      <meta><title>163</title></meta>
 
+     <footnotes>
+      <footnote id="sect163-1-foot" idref="sect163-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
       <p>You plan to use the siren to lure the guards away from the stairs to a place where you can ambush them. To your left is an open doorway and quickly you slip inside to avoid being seen. You find that it leads to an empty locker room, and here you remove the siren from your pack and set its volume switch to maximum before pushing it outside into the corridor. Then you take your missile weapon and use its barrel to reach out and trigger the siren.</p>
-      <p>In the confines of the corridor the sound is deafening. Immediately the two guards come rushing forward to investigate, and, as they appear outside the locker room, you raise your gun and fire. The Detroit Lion opens his mouth but his dying scream is lost in the siren's blare. The Angelino survives your gunfire and leaps through the doorway to kick your weapon from your hands. Instinctively you reach for a close combat weapon as the burly Angelino unsheathes his hunting knife and attacks.</p>
+      <p>In the confines of the corridor the sound is deafening. Immediately the two guards come rushing forward to investigate, and, as they appear outside the locker room, you raise your gun and fire.<a id="sect163-1" idref="sect163-1-foot" class="footnote" /> The Detroit Lion opens his mouth but his dying scream is lost in the siren's blare. The Angelino survives your gunfire and leaps through the doorway to kick your weapon from your hands. Instinctively you reach for a close combat weapon as the burly Angelino unsheathes his hunting knife and attacks.</p>
       <combat><enemy>Purple Haze</enemy><enemy-attribute class="closecombatskill">18</enemy-attribute><enemy-attribute class="endurance">27</enemy-attribute></combat>
       <choice idref="sect121">If you win the combat, <link-text>turn to 121</link-text>.</choice>
      </data>
@@ -2576,8 +2682,14 @@ Initial revision
     <section class="numbered" id="sect176">
      <meta><title>176</title></meta>
 
+     <footnotes>
+      <footnote id="sect176-1-foot" idref="sect176-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>Bullets rip into the tyre rack and whistle past you on all sides as the clansman rushes your position. Calmly you stay hidden until you hear his gun stop in midburst, then you spring to your feet and fire at point-blank range, hitting him in the chest. He doubles up, falls forward and lands in a lifeless heap at your feet.</p>
+      <p>Bullets rip into the tyre rack and whistle past you on all sides as the clansman rushes your position. Calmly you stay hidden until you hear his gun stop in midburst, then you spring to your feet and fire at point-blank range, hitting him in the chest.<a id="sect176-1" idref="sect176-1-foot" class="footnote" /> He doubles up, falls forward and lands in a lifeless heap at your feet.</p>
       <choice idref="sect308"><link-text>Turn to 308</link-text>.</choice>
      </data>
     </section>
@@ -2638,8 +2750,14 @@ Initial revision
     <section class="numbered" id="sect181">
      <meta><title>181</title></meta>
 
+     <footnotes>
+      <footnote id="sect181-1-foot" idref="sect181-1">
+       <p>Remember to deduct a round of 12-gauge ammunition from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>You step sideways into the corridor with your shotgun held at waist level. The guard to the left of the staircase sees you and tries to shout a warning but his words are lost in the boom of your gunfire. The force of the shot flings him against the wall, and as you swing the barrel towards his partner, you know only too well that you must make your second shot count just as effectively. But his partner's reactions prove razor-sharp, and as you focus on him you are shocked to find yourself staring into the muzzle of his machine pistol.</p>
+      <p>You step sideways into the corridor with your shotgun held at waist level. The guard to the left of the staircase sees you and tries to shout a warning but his words are lost in the boom of your gunfire.<a id="sect181-1" idref="sect181-1-foot" class="footnote" /> The force of the shot flings him against the wall, and as you swing the barrel towards his partner, you know only too well that you must make your second shot count just as effectively. But his partner's reactions prove razor-sharp, and as you focus on him you are shocked to find yourself staring into the muzzle of his machine pistol.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your Stealth skill score and your current <typ class="attribute">ENDURANCE</typ> points score.</p>
       <choice idref="sect297">If your total score is 15 or less, <link-text>turn to 297</link-text>.</choice>
       <choice idref="sect197">If your total score is 16 or more, <link-text>turn to 197</link-text>.</choice>
@@ -2715,7 +2833,7 @@ Initial revision
        <li>Machine Pistol (containing twelve rounds of 9mm ammunition)</li>
        <li>Enough pain killers for one Medi-kit unit</li>
       </ul>
-      <p>Wearily you return to your roadster and begin the next stage of your journey to San Angelo. Less than a mile beyond the bridge you see a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your map confirms that you are approaching Sterling City.</p>
+      <p>Wearily you return to your roadster and begin the next stage of your journey to San Angelo. Less than a mile beyond the bridge you see a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your <a idref="map">map</a> confirms that you are approaching Sterling City.</p>
       <choice idref="sect100"><link-text>Turn to 100</link-text>.</choice>
      </data>
     </section>
@@ -2755,7 +2873,7 @@ Initial revision
      <meta><title>191</title></meta>
 
      <data>
-      <p>Stepping back from the dead Angelino, you inadvertently trip over the barrel of his machine pistol. (lf you decide to keep this weapon, you discover that its magazine contains twenty-four rounds of 9mm ammunition.)</p>
+      <p>Stepping back from the dead Angelino, you inadvertently trip over the barrel of his machine pistol. (If you decide to keep this weapon, you discover that its magazine contains twenty-four rounds of 9mm ammunition.)</p>
       <p>Quickly you regain your balance and start to run towards the iron staircase, but you are only half-way up it when you see the door to the observation block begin to open.</p>
       <choice idref="sect268"><link-text>Turn to 268</link-text>.</choice>
      </data>
@@ -2818,8 +2936,14 @@ Initial revision
     <section class="numbered" id="sect197">
      <meta><title>197</title></meta>
 
+     <footnotes>
+      <footnote id="sect197-1-foot" idref="sect197-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>In what is a split-second reaction, you throw yourself to the ground as the guard opens fire: it is a move that saves your life. Soft-nosed bullets whistle past your head and ricochet off the walls as you struggle to bring your gun to bear once more. You squeeze off a snap shot and immediately the machine gun fire ceases as the guard, mortally wounded, keels over backwards and slumps to the ground. Now you are back on your feet and rushing forwards, but as you reach the iron staircase and begin to climb, you see the observation room door start to swing open.</p>
+      <p>In what is a split-second reaction, you throw yourself to the ground as the guard opens fire: it is a move that saves your life. Soft-nosed bullets whistle past your head and ricochet off the walls as you struggle to bring your gun to bear once more. You squeeze off a snap shot and immediately the machine gun fire ceases as the guard, mortally wounded, keels over backwards and slumps to the ground.<a id="sect197-1" idref="sect197-1-foot" class="footnote" /> Now you are back on your feet and rushing forwards, but as you reach the iron staircase and begin to climb, you see the observation room door start to swing open.</p>
       <choice idref="sect268"><link-text>Turn to 268</link-text>.</choice>
      </data>
     </section>
@@ -3019,7 +3143,7 @@ Initial revision
      <meta><title>213</title></meta>
 
      <data>
-      <p>Once across the North Concho River you begin your journey to San Angelo in earnest. Less than a mile beyond the bridge you reach a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your map confirms your suspicions: you are approaching Sterling City.</p>
+      <p>Once across the North Concho River you begin your journey to San Angelo in earnest. Less than a mile beyond the bridge you reach a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your <a idref="map">map</a> confirms your suspicions: you are approaching Sterling City.</p>
       <choice idref="sect100"><link-text>Turn to 100</link-text>.</choice>
      </data>
     </section>
@@ -3135,8 +3259,14 @@ Initial revision
     <section class="numbered" id="sect223">
      <meta><title>223</title></meta>
 
+     <footnotes>
+      <footnote id="sect223-1-foot" idref="sect223-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>Slowly you raise your gun and press the muzzle against the centre of the door as the muffled footsteps come closer and closer. They stop, and for a few agonizing seconds all you can hear is the relentless pounding of your heart. You are very tense and, when you see the handle start to turn, you snatch the trigger and blast a hole clean through the door.</p>
+      <p>Slowly you raise your gun and press the muzzle against the centre of the door as the muffled footsteps come closer and closer. They stop, and for a few agonizing seconds all you can hear is the relentless pounding of your heart. You are very tense and, when you see the handle start to turn, you snatch the trigger and blast a hole clean through the door.<a id="sect223-1" idref="sect223-1-foot" class="footnote" /></p>
       <p>In the cramped confines of the store room your gunfire is deafening. Yet above its roar you hear the scream of a clansman as he catches the blast full in the chest. You get ready to fire again, in case he was not searching alone, but when you kick open the door and spring out, you find only one Angelino, and he is lying dead in the middle of the workshop floor.</p>
       <choice idref="sect336"><link-text>Turn to 336</link-text>.</choice>
      </data>
@@ -3410,8 +3540,14 @@ Initial revision
     <section class="numbered" id="sect245">
      <meta><title>245</title></meta>
 
+     <footnotes>
+      <footnote id="sect245-1-foot" idref="sect245-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>You jab the barrel of your gun into the clansman's ribs and squeeze the trigger. At point blank range the effect is awesome; he is torn away from Kate and spun around like a top. His whirling dance of death finally comes to a halt when he hits the wall of the alley in which you are standing.</p>
+      <p>You jab the barrel of your gun into the clansman's ribs and squeeze the trigger. At point blank range the effect is awesome; he is torn away from Kate and spun around like a top.<a id="sect245-1" idref="sect245-1-foot" class="footnote" /> His whirling dance of death finally comes to a halt when he hits the wall of the alley in which you are standing.</p>
       <choice idref="sect76"><link-text>Turn to 76</link-text>.</choice>
      </data>
     </section>
@@ -3419,8 +3555,14 @@ Initial revision
     <section class="numbered" id="sect246">
      <meta><title>246</title></meta>
 
+     <footnotes>
+      <footnote id="sect246-1-foot" idref="sect246-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>While he was firing, unbeknown to you, the clansman moved forward and he is now lying flat on his stomach behind the rear wheel of his motorcycle. So when you return fire it is aimed at the wrong place and it rattles harmlessly off the iron bridge support where you first saw him take cover. Before you realize your error, he opens up once again and sweeps the gully with a long burst of automatic fire. Pain lances your forearm and shoulder as you stop two of his twenty high-velocity bullets.</p>
+      <p>While he was firing, unbeknown to you, the clansman moved forward and he is now lying flat on his stomach behind the rear wheel of his motorcycle. So when you return fire it is aimed at the wrong place and it rattles harmlessly off the iron bridge support where you first saw him take cover.<a id="sect246-1" idref="sect246-1-foot" class="footnote" /> Before you realize your error, he opens up once again and sweeps the gully with a long burst of automatic fire. Pain lances your forearm and shoulder as you stop two of his twenty high-velocity bullets.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a> (in this instance 0 equals 10) and add 1 point. The total is equivalent to the number of <typ class="attribute">ENDURANCE</typ> points you must lose as a result of your wounds.</p>
       <choice idref="sect332">If you have survived the shooting, <link-text>turn to 332</link-text>.</choice>
      </data>
@@ -3571,8 +3713,14 @@ Initial revision
     <section class="numbered" id="sect258">
      <meta><title>258</title></meta>
 
+     <footnotes>
+      <footnote id="sect258-1-foot" idref="sect258-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>You shoot less than a second before the Maverick discharges his pistol, yet your aim is deadly accurate. You deal him a fatal wound to the head that spins him sideways with the force of its impact. Unfortunately, the pistol in his hand is not a standard factory model: it is a weapon he has customized to fire in fully-automatic mode. The selector is set to auto and, as he falls to the ground, he squeezes the trigger and empties the fourteen-round magazine in a line across your car.</p>
+      <p>You shoot less than a second before the Maverick discharges his pistol, yet your aim is deadly accurate. You deal him a fatal wound to the head that spins him sideways with the force of its impact.<a id="sect258-1" idref="sect258-1-foot" class="footnote" /> Unfortunately, the pistol in his hand is not a standard factory model: it is a weapon he has customized to fire in fully-automatic mode. The selector is set to auto and, as he falls to the ground, he squeezes the trigger and empties the fourteen-round magazine in a line across your car.</p>
       <p>A sharp, stinging core of pain erupts in your left arm as one of the 9mm bullets finds its mark: lose 4 <typ class="attribute">ENDURANCE</typ> points. With determination, you force yourself to ignore the agonizing pain and concentrate instead on escaping from the clutches of the other Maverick clansmen. Again, you attempt to start the car, but this time you take your foot off the gas as you turn the ignition switch, despite an almost overwhelming urge to stamp the pedal straight through the floor. The move works - the engine roars back to life - and within seconds you are accelerating away from the barricade, your eyes glued firmly to the convoy's tail lights. A few poorly aimed bullets chase your escape but you soon catch up with the school bus and pass beyond range of the Maverick's guns.</p>
       <choice idref="sect312"><link-text>Turn to 312</link-text>.</choice>
      </data>
@@ -3665,8 +3813,14 @@ Initial revision
     <section class="numbered" id="sect266">
      <meta><title>266</title></meta>
 
+     <footnotes>
+      <footnote id="sect266-1-foot" idref="sect266-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>You raise your head and take aim at the bridge, but before you squeeze the trigger you notice that the clansman is no longer there: he has changed his position. He is now lying flat on his stomach behind the rear wheel of his motorcycle. Swiftly you swing around and open fire at the bike. Your gunfire rips into the rear tyre and catches the clansman full in the face, killing him instantly.</p>
+      <p>You raise your head and take aim at the bridge, but before you squeeze the trigger you notice that the clansman is no longer there: he has changed his position. He is now lying flat on his stomach behind the rear wheel of his motorcycle. Swiftly you swing around and open fire at the bike. Your gunfire rips into the rear tyre and catches the clansman full in the face, killing him instantly.<a id="sect266-1" idref="sect266-1-foot" class="footnote" /></p>
       <p>Before you bury them you search both bodies and the bikes, and discover the following useful items:</p>
       <ul>
        <li>Pistol (containing four rounds of 9mm ammunition)</li>
@@ -3679,7 +3833,7 @@ Initial revision
        <li><typ class="item">HE Grenade</typ></li>
        <li>Enough pain killers for one Medi-kit unit</li>
       </ul>
-      <p>There remains no trace of the bikers or their machines when eventually you complete your grisly task of burial. Wearily you return to your roadster and begin the next stage of your journey to San Angelo. Less than a mile beyond the bridge you see a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your map confirms that you are approaching Sterling City.</p>
+      <p>There remains no trace of the bikers or their machines when eventually you complete your grisly task of burial. Wearily you return to your roadster and begin the next stage of your journey to San Angelo. Less than a mile beyond the bridge you see a deserted stretch of Freeway 87. You join the freeway, heading south, and within a few minutes you catch sight of a town on the road ahead. A glance at your <a idref="map">map</a> confirms that you are approaching Sterling City.</p>
       <choice idref="sect100"><link-text>Turn to 100</link-text>.</choice>
      </data>
     </section>
@@ -3741,8 +3895,14 @@ Initial revision
     <section class="numbered" id="sect271">
      <meta><title>271</title></meta>
 
+     <footnotes>
+      <footnote id="sect271-1-foot" idref="sect271-1">
+       <p>Remember to deduct six rounds of 9mm ammunition from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>You move out into the corridor, your G-12 machine pistol held chest high, ready to fire. Your finger grazes the trigger and a burst of automatic fire sweeps the guards in a deadly figure-of-eight pattern, dropping them in a tangled heap at the foot of the stairs.</p>
+      <p>You move out into the corridor, your G-12 machine pistol held chest high, ready to fire. Your finger grazes the trigger and a burst of automatic fire sweeps the guards in a deadly figure-of-eight pattern, dropping them in a tangled heap at the foot of the stairs.<a id="sect271-1" idref="sect271-1-foot" class="footnote" /></p>
       <choice idref="sect143"><link-text>Turn to 143</link-text>.</choice>
      </data>
     </section>
@@ -3955,7 +4115,7 @@ Initial revision
 
      <data>
       <p>Eventually, the clansmen return to their motorcycles and ride out of Eldorado, heading south. With the immediate threat now gone, you decide to remain where you are and snatch a few hours' sleep before continuing your journey at dawn.</p>
-      <p>In the clear light of early morning you can see for miles across the rocky plain that surrounds the highway south of Eldorado. It appears empty, although you remain on the alert every second of your drive to Sonora, the next town marked on your map, for it is in this direction that the Angelinos came when they left Eldorado last night. You are less than a mile from the ruins of Sonora when you are greeted by the welcome sight of Interstate 10, stretching east-to-west across your path. This is the freeway that you hope will take you all the way to your rendezvous with the colony at Kent, and then on through the mountains to El Paso.</p>
+      <p>In the clear light of early morning you can see for miles across the rocky plain that surrounds the highway south of Eldorado. It appears empty, although you remain on the alert every second of your drive to Sonora, the next town marked on your <a idref="map">map</a>, for it is in this direction that the Angelinos came when they left Eldorado last night. You are less than a mile from the ruins of Sonora when you are greeted by the welcome sight of Interstate 10, stretching east-to-west across your path. This is the freeway that you hope will take you all the way to your rendezvous with the colony at Kent, and then on through the mountains to El Paso.</p>
       <p>You join the freeway and enjoy the feel of a firmer, clearer road surface beneath your wheels as you begin the long drive west. Still you can see no sign of the Angelinos, and Kate voices her hope that they have decided to search Sonora, thinking you may have hidden there last night. You want to agree with her, but suddenly, in the distance, you see something that proves her wrong.</p>
       <choice idref="sect306"><link-text>Turn to 306</link-text>.</choice>
      </data>
@@ -3964,8 +4124,14 @@ Initial revision
     <section class="numbered" id="sect292">
      <meta><title>292</title></meta>
 
+     <footnotes>
+      <footnote id="sect292-1-foot" idref="sect292-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>Your ambush catches the clansman by surprise. But your aim is poor, and although your gunfire wings him and makes him cry out in pain, it does not prevent him from returning a burst of fire at your position.</p>
+      <p>Your ambush catches the clansman by surprise. But your aim is poor, and although your gunfire wings him and makes him cry out in pain, it does not prevent him from returning a burst of fire at your position.<a id="sect292-1" idref="sect292-1-foot" class="footnote" /></p>
       <p>Add your current <typ class="attribute">ENDURANCE</typ> points score to your Stealth skill score.</p>
       <choice idref="sect247">If your total score is 17 or less, <link-text>turn to 247</link-text>.</choice>
       <choice idref="sect71">If your total score is 18 or more, <link-text>turn to 71</link-text>.</choice>
@@ -4294,8 +4460,14 @@ Initial revision
     <section class="numbered" id="sect318">
      <meta><title>318</title></meta>
 
+     <footnotes>
+      <footnote id="sect318-1-foot" idref="sect318-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>Your gunfire misses the clansman by a wide mark, causing him to throw back his head and laugh. Then he veers off the highway and takes to the open ground. You discard your weapon, but you are as determined as ever not to let the clansman escape, so you pull the steering wheel hard over to the left and pursue him as he guns his bike cross-country towards Freeway 87.</p>
+      <p>Your gunfire misses the clansman by a wide mark, causing him to throw back his head and laugh.<a id="sect318-1" idref="sect318-1-foot" class="footnote" /> Then he veers off the highway and takes to the open ground. You discard your weapon, but you are as determined as ever not to let the clansman escape, so you pull the steering wheel hard over to the left and pursue him as he guns his bike cross-country towards Freeway 87.</p>
       <p>An empty concrete drainage ditch runs parallel to the freeway, wide enough to deter the biker from attempting to ride straight across. At the last minute he veers away and you chase him along its edge for nearly half a mile before finally he plucks up enough courage to try to get across. Ahead, a derelict pump house looms, straddling the ditch, its angular roof offering itself as a ramp that could be used to launch a jump on to the freeway. The clansman takes one last look at you over his shoulder and then, with a scream of fearful exhilaration, he winds back the throttle and points his bike at the pump house roof.</p>
       <choice idref="sect192">If you wish to attempt to follow the clansman across the ditch, <link-text>turn to 192</link-text>.</choice>
       <choice idref="sect51">If you decide to steer your roadster away from the pump house, <link-text>turn to 51</link-text>.</choice>
@@ -4305,8 +4477,14 @@ Initial revision
     <section class="numbered" id="sect319">
      <meta><title>319</title></meta>
 
+     <footnotes>
+      <footnote id="sect319-1-foot" idref="sect319-1">
+       <p>Remember to deduct a round of 12-gauge ammunition from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>Swiftly you pump a cartridge into the breach of your shotgun and level the barrel at the first clansman as he scurries between the rocks that litter the edge of the service area. He is less than fifteen yards away when you fire your first shot, bringing him tumbling to the ground. His partner hesitates, then abandons his stalking approach and comes running towards you, screaming hysterically, his machine pistol blazing at his hip.</p>
+      <p>Swiftly you pump a cartridge into the breach of your shotgun and level the barrel at the first clansman as he scurries between the rocks that litter the edge of the service area. He is less than fifteen yards away when you fire your first shot, bringing him tumbling to the ground.<a id="sect319-1" idref="sect319-1-foot" class="footnote" /> His partner hesitates, then abandons his stalking approach and comes running towards you, screaming hysterically, his machine pistol blazing at his hip.</p>
       <choice idref="sect176">If you have sufficient ammunition and wish to fire again, <link-text>turn to 176</link-text>.</choice>
       <choice idref="sect212">If you do not have sufficient ammunition to fire a second time, or choose not to fire, <link-text>turn to 212</link-text>.</choice>
      </data>
@@ -4458,7 +4636,7 @@ Initial revision
      <meta><title>332</title></meta>
 
      <data>
-      <p>The force of the bullets throws you flat on your back, knocking your weapon clean out of your hands. You lie there winded for a few seconds, then you grit your teeth and try to rise, but a wave of pain robs you of your strength and you slip and fall heavily against the body of the dead clansman at the botton of the gully.</p>
+      <p>The force of the bullets throws you flat on your back, knocking your weapon clean out of your hands. You lie there winded for a few seconds, then you grit your teeth and try to rise, but a wave of pain robs you of your strength and you slip and fall heavily against the body of the dead clansman at the bottom of the gully.</p>
       <p>Then you hear a sound that chills your blood: the running footfalls of the biker as he rushes forward to finish you off. Desperately you look around for a weapon and notice a pistol tucked into the waistband of the dead clansman. The biker's face appears above the edge of the gully at precisely the same moment that your fingers close around the pistol grip. Simultaneously you curse each other, then take aim and fire at each other's head.</p>
       <p>Add your current <typ class="attribute">ENDURANCE</typ> points score to your Shooting skill score.</p>
       <choice idref="sect151">If your total is now 22 or less, <link-text>turn to 151</link-text>.</choice>
@@ -4492,7 +4670,7 @@ Initial revision
      <meta><title>335</title></meta>
 
      <data>
-      <p>You identify the brightly dressed clansman as Mekong Mike, for his tanned and moustached face bears a long-horned steer skull tattooed across the forehead. The other man, who is dressed in a black, wide-shouldered leather jacket, can be none other than Mad Dog Michigan himself. He looks older than you had imagined him, his receding hair greying slighty at the temples, yet despite his age there is no doubting the unmistakable aura of power that surrounds him. For a moment you stare into his cold grey eyes and glimpse the vengeful evil that lurks there. Then you remember the danger of your situation.</p>
+      <p>You identify the brightly dressed clansman as Mekong Mike, for his tanned and moustached face bears a long-horned steer skull tattooed across the forehead. The other man, who is dressed in a black, wide-shouldered leather jacket, can be none other than Mad Dog Michigan himself. He looks older than you had imagined him, his receding hair greying slightly at the temples, yet despite his age there is no doubting the unmistakable aura of power that surrounds him. For a moment you stare into his cold grey eyes and glimpse the vengeful evil that lurks there. Then you remember the danger of your situation.</p>
       <p>Mekong Mike has drawn his pistol, but before he can fire, you rush forward and whip his wrist with the barrel of your gun. He yelps in pain and drops the Beretta auto to the floor, but there is a blade in his other hand and it is flashing towards your chest. Desperately you turn it aside. You have lost the advantage of surprise, however, and Mekong Mike seizes the initiative.</p>
       <combat><enemy>Mekong Mike</enemy><enemy-attribute class="closecombatskill">19</enemy-attribute><enemy-attribute class="endurance">26</enemy-attribute></combat>
       <choice idref="sect91">If you win and the combat lasts seven rounds or less, <link-text>turn to 91</link-text>.</choice>
@@ -4644,8 +4822,14 @@ Initial revision
     <section class="numbered" id="sect348">
      <meta><title>348</title></meta>
 
+     <footnotes>
+      <footnote id="sect348-1-foot" idref="sect348-1">
+       <p>Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>You unshoulder your gun and take aim in one swift, fluid movement. The clansman is drawing back the bolt of his G-12 when you unleash a round, catching him full in the chest. The force of your gunfire lifts him off the kitchen floor and kills him instantly. Slowly you lower your smoking barrel and walk forward to search the body of your would-be killer.</p>
+      <p>You unshoulder your gun and take aim in one swift, fluid movement. The clansman is drawing back the bolt of his G-12 when you unleash a round, catching him full in the chest. The force of your gunfire lifts him off the kitchen floor and kills him instantly.<a id="sect348-1" idref="sect348-1-foot" class="footnote" /> Slowly you lower your smoking barrel and walk forward to search the body of your would-be killer.</p>
       <p>Judging from the long-horned skull painted on the back of his leather vest, you have just laid to rest your first Angelino. On the floor nearby you find his weapons and equipment: a Machine Pistol (containing eighteen rounds of 9mm ammunition) and a Backpack, which holds the following items:</p>
       <ul>
        <li><typ class="item">Flexible Saw</typ></li>
@@ -4867,9 +5051,11 @@ Initial revision
       <p>(<a idref="sect23">23</a>) Replaced <quote>Small blanket</quote> with <quote>Small Blanket</quote>.</p>
       <p>(<a idref="sect23">23</a>) Replaced <quote>Medi-kits units</quote> with <quote>Medi-kit units</quote>.</p>
       <p>(<a idref="sect30">30</a>) Replaced <quote>bushwack</quote> with <quote>bushwhack</quote>.</p>
+      <p>(<a idref="sect38">38</a>) Replaced <quote>manouevre</quote> with <quote>manoeuvre</quote>.</p>
       <p>(<a idref="sect38">38</a>) Replaced <quote>(minimum equals one; maximum equals four)</quote> with <quote>(minimum: one round; maximum: four rounds)</quote>.</p>
       <p>(<a idref="sect61">61</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote>.</p>
       <p>(<a idref="sect94">94</a>) Replaced <quote>H.E. Grenade</quote> with <quote>HE Grenade</quote>.</p>
+      <p>(<a idref="sect115">115</a>) Replaced <quote>queueing</quote> with <quote>queuing</quote>.</p>
       <p>(<a idref="sect127">127</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote>.</p>
       <p>(<a idref="sect130">130</a>) Replaced <quote>Plastic tube</quote> with <quote>Plastic Tube</quote>.</p>
       <p>(<a idref="sect130">130</a>) Replaced <quote>Four rounds of 12-gauge Shotgun shells</quote> with <quote>Four rounds of 12-gauge ammunition</quote>.</p>
@@ -4882,9 +5068,13 @@ Initial revision
       <p>(<a idref="sect239">239</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
       <p>(<a idref="sect250">250</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote>.</p>
       <p>(<a idref="sect251">251</a>) Replaced <quote>weapons list</quote> with <quote>Weapons List</quote>.</p>
+      <p>(<a idref="sect268">268</a>) Replaced <quote>dispairing</quote> with <quote>despairing</quote>.</p>
       <p>(<a idref="sect279">279</a>) Replaced <quote>(minimum equals one; maximum equals four)</quote> with <quote>(minimum: one burst; maximum: four bursts)</quote>.</p>
       <p>(<a idref="sect292">292</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote>.</p>
+      <p>(<a idref="sect299">299</a>) Replaced <quote>someobody</quote> with <quote>somebody</quote>.</p>
+      <p>(<a idref="sect311">311</a>) Replaced <quote>Loxoscees reclusa</quote> with <quote>Loxosceles reclusa</quote>.</p>
       <p>(<a idref="sect315">315</a>) Replaced section references. The original text directed the reader to sections <a idref="sect161">161</a> and <a idref="sect207">207</a>, however those references are the result of being apprehended by a single clansman in section <a idref="sect115">115</a>.</p>
+      <p>(<a idref="sect332">332</a>) Replaced <quote>botton</quote> with <quote>bottom</quote>.</p>
       <p>(<a idref="sect346">346</a>) Replaced <quote>H.E. Grenade</quote> with <quote>HE Grenade</quote>.</p>
       <p>(<a idref="sect18">18</a>,<a idref="sect23">23</a>,<a idref="sect36">36</a>,<a idref="sect63">63</a>,<a idref="sect71">71</a>,<a idref="sect101">101</a>,<a idref="sect126">126</a>,<a idref="sect138">138</a>,<a idref="sect146">146</a>,<a idref="sect183">183</a>,<a idref="sect187">187</a>,<a idref="sect232">232</a>,<a idref="sect248">248</a>,<a idref="sect266">266</a>,<a idref="sect308">308</a>,<a idref="sect348">348</a>) Replaced CCS Bonuses in <quote>[]</quote> with <quote>()</quote>.</p>
       <p>(<a idref="sect48">48</a>,<a idref="sect64">64</a>,<a idref="sect124">124</a>,<a idref="sect207">207</a>,<a idref="sect227">227</a>,<a idref="sect253">253</a>) Replaced <quote>Backpack items</quote> with <quote>Backpack Items</quote>.</p>
@@ -4899,8 +5089,38 @@ Initial revision
    <meta><title>Footnotes</title></meta>
 
    <data>
-     <p>(<a idref="sect52">52</a>) This is the correct answer to the security valve puzzle in <a idref="sect129">Section 129</a>.</p>
-     <p>(<a idref="sect129">129</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
+    <p>(<a idref="sect4">4</a>) Remember to deduct a round of 9mm ammunition from your Ammo Pouch.</p>
+    <p>(<a idref="sect10">10</a>) Remember to deduct a round of 7.62mm ammunition from your Ammo Pouch.</p>
+    <p>(<a idref="sect18">18</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect19">19</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect23">23</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect26">26</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect27">27</a>) Remember to deduct a round of 9mm ammunition from your Ammo Pouch.</p>
+    <p>(<a idref="sect35">35</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect40">40</a>) Remember to deduct a round of 9mm ammunition from your Ammo Pouch.</p>
+    <p>(<a idref="sect49">49</a>) Remember to deduct a round of 7.62mm ammunition from your Ammo Pouch.</p>
+    <p>(<a idref="sect52">52</a>) This is the correct answer to the security valve puzzle in <a idref="sect129">Section 129</a>.</p>
+    <p>(<a idref="sect62">62</a>) Remember to deduct a round of 12-gauge ammunition from your Ammo Pouch.</p>
+    <p>(<a idref="sect95">95</a>) Remember to deduct a round of 7.62mm ammunition from your Ammo Pouch.</p>
+    <p>(<a idref="sect103">103</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect107">107</a>) Remember to deduct six rounds of 9mm ammunition from your Ammo Pouch.</p>
+    <p>(<a idref="sect129">129</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
+    <p>(<a idref="sect138">138</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect142">142</a>) Remember to deduct six rounds of 9mm ammunition from your Ammo Pouch.</p>
+    <p>(<a idref="sect163">163</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect176">176</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect181">181</a>) Remember to deduct a round of 12-gauge ammunition from your Ammo Pouch.</p>
+    <p>(<a idref="sect197">197</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect223">223</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect245">245</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect246">246</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect258">258</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect266">266</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect271">271</a>) Remember to deduct six rounds of 9mm ammunition from your Ammo Pouch.</p>
+    <p>(<a idref="sect292">292</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect318">318</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
+    <p>(<a idref="sect319">319</a>) Remember to deduct a round of 12-gauge ammunition from your Ammo Pouch.</p>
+    <p>(<a idref="sect348">348</a>) Remember to deduct the relevant number of rounds from your Ammo Pouch.</p>
    </data>
   </section>
 
