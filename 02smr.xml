@@ -15,6 +15,10 @@
 
 $Id$
 $Log$
+Revision 1.8  2006/09/14 14:48:00  Wibbleboy
+o Made various errata/non errata changes.
+o Updated errata section to combine all changes for a given page in a single entry.
+
 Revision 1.7  2006/09/12 08:49:08  Wibbleboy
 o Made several changes in response to suggestions in Wiki.
 
@@ -312,7 +316,7 @@ Initial revision
       <section class="frontmatter" id="medikit">
        <meta><title>Medi-kit</title></meta>
        <data>
-        <p>A well-stocked Medi-kit can make all the difference to your chances of survival should you suffer injury in the field or as a result of combat. It contains useful first aid supplies, such as dressings, antiseptics, antibiotics, water purification tablets, sulphonamides, pain killers, potassium iodide tablets (to delay absorption of radioactivity) and sutures.</p>
+        <p>A well-stocked Medi-kit can make all the difference to your chances of survival should you suffer injury in the field or as a result of combat. It contains useful first aid supplies, such as dressings, antiseptics, antibiotics, water purification tablets, sulfonamides, pain killers, potassium iodide tablets (to delay absorption of radioactivity) and sutures.</p>
         <p>For convenience, these medical supplies are grouped into units. To find how many units you have in your Medi-kit, pick a number from the <a idref="random">Random Number Table</a> (0 equals 10) and add 2. Your total score equals the number of units with which you begin your adventure. To keep a record of them, circle the appropriate number of unit symbols in the Medi-kit section of your <a idref="action">Action Chart</a>. The maximum number of units you can carry in your Medi-kit is twelve.</p>
         <p>You may use your Medi-kit units to restore lost <typ class="attribute">ENDURANCE</typ> points; each unit used in this way restores 3 points. Units cannot be used to restore <typ class="attribute">ENDURANCE</typ> points in lieu of a Meal or Water when instructed to eat or drink.</p>
        </data>
@@ -343,7 +347,7 @@ Initial revision
        <data>
         <p>These weapons aid you in hand-to-hand fighting. You begin your adventure armed with a Hunting Knife which, when used in close combat, adds 2 points to your <typ class="attribute">CLOSE COMBAT SKILL</typ>. Note this Hunting Knife in the Close Combat Weapons section of your <a idref="action">Action Chart</a>.</p>
         <p>If you find a close combat weapon during your adventure, you may pick it up and use it. Close combat weapons will appear in the text with a close combat skill number, for example, Machete (3). This number indicates how many points this weapon will add to your <typ class="attribute">CLOSE COMBAT SKILL</typ> when used in a hand-to-hand fight.</p> 
-        <p>The maximum number of close combat weapons you may carry is two.</p>
+        <p>The maximum number of close combat weapons you may carry is <em>two</em>.</p>
        </data>
       </section>
 
@@ -549,7 +553,7 @@ Initial revision
      <meta><title>8</title></meta>
 
      <data>
-      <p>Kate grips your hand tightly as you descend with a group of the cave people into the depths of the Sonora caverns. An astounding speleological feast greets your eyes as you follow them through a series of monumentous caves that have been eroded over millions of years by subterranean rivers and streams. The group stops frequently at specially prepared defensive hides, which are virtually impossible to see. One or two of their number, armed with rocks, spears and slings, occupy each of these positions. At once you see that it is their intention to lure the clansmen into the caverns and fight them here, where, despite their lack of firearms, the odds are in their favour.</p>
+      <p>Kate grips your hand tightly as you descend with a group of the cave people into the depths of the Sonora caverns. An astounding speleological feast greets your eyes as you follow them through a series of monumental caves that have been eroded over millions of years by subterranean rivers and streams. The group stops frequently at specially prepared defensive hides, which are virtually impossible to see. One or two of their number, armed with rocks, spears and slings, occupy each of these positions. At once you see that it is their intention to lure the clansmen into the caverns and fight them here, where, despite their lack of firearms, the odds are in their favour.</p>
       <p>Soon the sound of gunfire begins to penetrate the caverns, announcing the arrival of the clansmen. You stop with Kate and crouch behind a clump of stalagmites, while the three remaining cave people arm themselves with rocks and take up a position on a ledge directly above a narrow defile. For several minutes the sound of gunfire and the screams of the wounded fill the caves with clamouring echoes. Then two of the Angelinos appear at the entrance to the defile and come running towards you. The cave people hurl their rocks and bring an Angelino crashing to the ground with a broken skull, but his partner avenges his death by sweeping them from the ledge with one long burst of automatic fire.</p>
       <choice idref="sect61">If you have a missile weapon, and wish to use it, <link-text>turn to 61</link-text>.</choice>
       <choice idref="sect302">If you do not have one, or have exhausted your ammunition, <link-text>turn to 302</link-text>.</choice>
@@ -674,7 +678,7 @@ Initial revision
       <p>Kate moves forward to check that he is dead and to search his body. She keeps what she needs: his machine pistol, a quantity of ammunition and his water canteen, and offers the rest of his possessions to you:</p>
       <ul>
        <li>Enough food for one Meal</li>
-       <li>Enough sulphonamides for one Medi-kit unit</li>
+       <li>Enough sulfonamides for one Medi-kit unit</li>
        <li>Flick Knife (2)</li>
        <li><typ class="item">Compass</typ></li>
        <li><typ class="item">Binoculars</typ></li>
@@ -757,14 +761,14 @@ Initial revision
      </footnotes>
 
      <data>
-      <p>The deadly bullets miss you by inches and you dive to the floor in case the unseen gunman decides to fire again. Then you hear running footsteps approaching, and as they get louder, you raise your weapon and unleash a round of fire at the door.<a id="sect23-1" idref="sect23-1-foot" class="footnote" /> There is a scream from inside the kitchen, and you hear a body fall heavily to the tiled floor amid a crash of broken glass and crockery.</p>
+      <p>The deadly bullets miss you by inches and you dive to the floor in case the unseen gunman decides to fire again. Then you hear running footsteps approaching, and as they get louder, you raise your weapon and fire at the door.<a id="sect23-1" idref="sect23-1-foot" class="footnote" /> There is a scream from inside the kitchen, and you hear a body fall heavily to the tiled floor amid a crash of broken glass and crockery.</p>
       <p>Just inside the door you discover the body of a clansman. Judging from the long-horned skull that you find painted on the back of his leather vest, you have just laid to rest your first Angelino. On the floor nearby you find his weapons and equipment: a Machine Pistol (containing eighteen rounds of 9mm ammunition) and a Backpack, which holds the following items:</p>
       <ul>
        <li><typ class="item">Flexible Saw</typ></li>
        <li>HE Grenade</li>
        <li>Water Canteen (containing enough water for three Drinks)</li>
        <li><typ class="item">Small Blanket</typ></li>
-       <li>Enough bandages, sulphonamides, and antiseptics for three Medi-kit units</li>
+       <li>Enough bandages, sulfonamides, and antiseptics for three Medi-kit units</li>
        <li>Knife (2)</li>
       </ul>
       <p>In addition to these items, a search of the kitchen also reveals the following:</p>
@@ -947,7 +951,7 @@ Initial revision
       <p>For a moment the clansman shudders at your feet as his last breath escapes from between his blood-flecked lips. Then his eyes glaze over and he succumbs to the endless sleep of death. Kate moves forward to check that he is no longer a threat and to search his body. She keeps what she needs: his machine pistol, a quantity of ammunition, and his water canteen, and offers the rest of his possessions to you:</p>
       <ul>
        <li>Enough food for one Meal</li>
-       <li>Enough sulphonamides for one Medi-kit unit</li>
+       <li>Enough sulfonamides for one Medi-kit unit</li>
        <li>Flick Knife (2)</li>
        <li><typ class="item">Compass</typ></li>
        <li><typ class="item">Binoculars</typ></li>
@@ -1394,7 +1398,7 @@ Initial revision
       <p>Kate moves forward to check that the clansman is dead and to search his body. She keeps what she needs: his machine pistol, a quantity of ammunition and his water canteen, and offers the rest of his possessions to you:</p>
       <ul>
        <li>Enough food for one Meal</li>
-       <li>Enough sulphonamides for one Medi-kit unit</li>
+       <li>Enough sulfonamides for one Medi-kit unit</li>
        <li>Flick Knife (2)</li>
        <li><typ class="item">Compass</typ></li>
        <li><typ class="item">Binoculars</typ></li>
@@ -2052,7 +2056,7 @@ Initial revision
        <li><typ class="item">HE Grenade</typ></li>
        <li>Water Canteen (containing enough water for three Drinks)</li>
        <li><typ class="item">Small Blanket</typ></li>
-       <li>Enough bandages, sulphonamides, and antiseptics for three Medi-kit units</li>
+       <li>Enough bandages, sulfonamides, and antiseptics for three Medi-kit units</li>
        <li>Knife (2)</li>
       </ul>
       <p>In addition to these items, a search of the kitchen also reveals the following:</p>
@@ -2413,7 +2417,7 @@ Initial revision
      <meta><title>153</title></meta>
 
      <data>
-      <p>You pass between the shattered stores and houses of Broome with your nerves on edge, half-expecting to run into a clan patrol or fall prey to an ambush. Yet your visit passes without incident and soon you find yourself back on the open freeway, heading south-east to San Angelo. You are hungry, and during your drive you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
+      <p>You pass between the shattered stores and houses of Broome with your nerves on edge, half-expecting to run into a clan patrol or fall prey to an ambush. Yet your visit passes without incident and soon you find yourself back on the open freeway, heading southeast to San Angelo. You are hungry, and during your drive you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <p>When you first see San Angelo, the sun is a quarter hidden below the skyline, its soft red glow reflecting upon a cluster of tall buildings that stand at the city's centre. They are the ravaged shells of banks and state offices that were the pride of this once-prosperous city before 'The Day'. Surrounding them, for many miles, is a sea of dust and rubble. Your skin prickles when you realize that this is all that remains of the city's suburbs, an area that once was home to more than a million Texans.</p>
       <p>You are about to drive towards the centre when you notice that a fortified wall has been erected around the tall buildings of the downtown area, and the northern freeway approaches are controlled by roadblocks. It would be near-suicidal to approach any closer, so you make a wide detour around the city limits and try an approach from the south.</p>
       <p>It takes nearly two hours to reach the south side of San Angelo, by which time night has fallen. Fortunately, your decision to go south has paid off: this section of the city is virtually uninhabited by the Angelinos and your approach goes undetected.</p>
@@ -2644,7 +2648,7 @@ Initial revision
      <meta><title>172</title></meta>
 
      <data>
-      <p>You rise at dawn and spend the morning servicing the engine of your roadster, while Sergeant Haskell and Marine Knott take it in turns to act as lookout from the roof of a Baptist church, the tallest building still standing in Kent. It is two hours before noon when you hear a faint buzzing noise, high in the sky towards the north-west. You search the cloudless expanse and your hopes soar as you see Rickenbacker's motorized hang glider circling above the town. He comes down and makes a low pass, waving his arms excitedly as he flies directly over the roadster. Then he is gone, rising above the surrounding peaks and returning the way he came.</p>
+      <p>You rise at dawn and spend the morning servicing the engine of your roadster, while Sergeant Haskell and Marine Knott take it in turns to act as lookout from the roof of a Baptist church, the tallest building still standing in Kent. It is two hours before noon when you hear a faint buzzing noise, high in the sky towards the northwest. You search the cloudless expanse and your hopes soar as you see Rickenbacker's motorized hang glider circling above the town. He comes down and makes a low pass, waving his arms excitedly as he flies directly over the roadster. Then he is gone, rising above the surrounding peaks and returning the way he came.</p>
       <p>An hour passes before Knott sights a cloud of dust on the eastern horizon. You are all gathered in the town, waiting expectantly for the convoy to arrive, but he cannot be sure that it is the convoy that is coming. At such a distance it could be a gang of marauding clansmen.</p>
       <choice idref="sect160"><link-text>Turn to 160</link-text>.</choice>
      </data>
@@ -3354,7 +3358,7 @@ Initial revision
      <meta><title>230</title></meta>
 
      <data>
-      <p>You drive away from the construction site and pass between the shattered stores and houses of Broome with your nerves on edge, half-expecting to run into a clan patrol or fall prey to an ambush. Yet your departure passes without incident and soon you find yourself back on the open freeway heading south-east to San Angelo. You are hungry, and during your drive you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
+      <p>You drive away from the construction site and pass between the shattered stores and houses of Broome with your nerves on edge, half-expecting to run into a clan patrol or fall prey to an ambush. Yet your departure passes without incident and soon you find yourself back on the open freeway heading southeast to San Angelo. You are hungry, and during your drive you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect288"><link-text>Turn to 288</link-text>.</choice>
      </data>
     </section>
@@ -3591,7 +3595,7 @@ Initial revision
        <li><typ class="item">HE Grenade</typ></li>
        <li>Water Canteen (containing enough water for three Drinks)</li>
        <li><typ class="item">Small Blanket</typ></li>
-       <li>Enough bandages, sulphonamides, and antiseptics for three Medi-kit units</li>
+       <li>Enough bandages, sulfonamides, and antiseptics for three Medi-kit units</li>
       </ul>
       <p>In addition to these items, a search of the kitchen also reveals the following:</p>
       <ul>
@@ -3890,7 +3894,7 @@ Initial revision
 
      <data>
       <p>Suddenly there is a bang and a muzzle flash illuminates the far corner of the bar. You throw yourself at the floor immediately, but you are not swift enough to avoid being clipped in the thigh by a 9mm bullet: lose 4 <typ class="attribute">ENDURANCE</typ> points.</p>
-      <p>Seconds later Haskell bursts into the bar and fires three shots into the corner. There is a loud groan followed almost immediately by the sound of a heavy body falling off a chair. He rushes to your side and, using his own Medi-kit, staunches your wound with a sulphonamide pad and a bandage. Once he is sure you are not seriously injured, he goes to take a look at who he has shot.</p>
+      <p>Seconds later Haskell bursts into the bar and fires three shots into the corner. There is a loud groan followed almost immediately by the sound of a heavy body falling off a chair. He rushes to your side and, using his own Medi-kit, staunches your wound with a sulfonamide pad and a bandage. Once he is sure you are not seriously injured, he goes to take a look at who he has shot.</p>
       <choice idref="sect333"><link-text>Turn to 333</link-text>.</choice>
      </data>
     </section>
@@ -4497,7 +4501,7 @@ Initial revision
      <meta><title>320</title></meta>
 
      <data>
-      <p>Using bandages and a sulphonamide pad, Kate dresses your leg as quickly as she can. Her speedy attention to your leg restores 1 <typ class="attribute">ENDURANCE</typ> point. (This is in addition to the 1 point you gain automatically through the use of a Medi-kit unit.)</p>
+      <p>Using bandages and a sulfonamide pad, Kate dresses your leg as quickly as she can. Her speedy attention to your leg restores 1 <typ class="attribute">ENDURANCE</typ> point. (This is in addition to the 1 point you gain automatically through the use of a Medi-kit unit.)</p>
       <p>The wide corridor into which you have emerged is empty at present, but the sound of running footsteps is growing louder with each passing second, and it will not be very long before the area is teeming with clansmen. Kate points to a service hatch, almost invisible against the dirt-encrusted wall, and suggests that you hide there. You nod you agreement and help her to prise open the rusty hatch door.</p>
       <choice idref="sect201"><link-text>Turn to 201</link-text>.</choice>
      </data>
@@ -4757,7 +4761,7 @@ Initial revision
      <meta><title>342</title></meta>
 
      <data>
-      <p>Hurriedly you leave the car lot and return to the freeway. You pass between the shattered stores and houses of Broome with your nerves on edge, half-expecting to run into a clan patrol or fall prey to an ambush. Yet your departure passes without incident and soon you find yourself back on the open freeway heading south-east to San Angelo. You are hungry, and during your drive you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
+      <p>Hurriedly you leave the car lot and return to the freeway. You pass between the shattered stores and houses of Broome with your nerves on edge, half-expecting to run into a clan patrol or fall prey to an ambush. Yet your departure passes without incident and soon you find yourself back on the open freeway heading southeast to San Angelo. You are hungry, and during your drive you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect288"><link-text>Turn to 288</link-text>.</choice>
      </data>
     </section>
@@ -4800,7 +4804,7 @@ Initial revision
      <meta><title>346</title></meta>
 
      <data>
-      <p>The race is about to begin. Eight bikers are drawn up in a line at one end of the arena, each man standing astride his machine and revving its engine in response to the loud cheers of the clansmen watching. The riders have their eyes fixed on a pot-bellied Angelino who is perched atop a wooden tower in the centre of the track. Above his head he holds a checkered flag, and, as he brings his arm down, the crowd screams and the riders surge away from the line.</p>
+      <p>The race is about to begin. Eight bikers are drawn up in a line at one end of the arena, each man standing astride his machine and revving its engine in response to the loud cheers of the clansmen watching. The riders have their eyes fixed on a pot-bellied Angelino who is perched atop a wooden tower in the centre of the track. Above his head he holds a chequered flag, and, as he brings his arm down, the crowd screams and the riders surge away from the line.</p>
       <p>Under cover of the noise and commotion of the race, you approach the observation block. An enclosed corridor leads to a flight of iron stairs where two burly clansmen<ch.emdash/>one an Angelino, the other a Detroit Lion<ch.emdash/>stand on guard with machine pistols at the ready. At the top of the stairs is the door to the block itself. The noise of the crowd and the roar of the motorcycles have helped you so far, but the race is now into its fourteenth lap, and you know that if you are to succeed in freeing Kate you must get past these guards and storm the observation block before the race ends.</p>
       <choice idref="sect9">If you possess an <typ class="item">HE Grenade</typ>, and wish to use it, <link-text>turn to 9</link-text>.</choice>
       <choice idref="sect89">If you possess a <typ class="item">Signal Flare</typ>, and wish to use it, <link-text>turn to 89</link-text>.</choice>
@@ -4839,7 +4843,7 @@ Initial revision
        <li><typ class="item">HE Grenade</typ></li>
        <li>Water Canteen (containing enough water for three Drinks)</li>
        <li><typ class="item">Small Blanket</typ></li>
-       <li>Enough bandages, sulphonamides, and antiseptics for three Medi-kit units</li>
+       <li>Enough bandages, sulfonamides, and antiseptics for three Medi-kit units</li>
        <li>Knife (2)</li>
       </ul>
       <p>In addition to these items, a search of the kitchen also reveals the following:</p>
@@ -5039,49 +5043,49 @@ Initial revision
      <meta><title>Errata</title></meta>
      <data>
       <p>(<a idref="dtd">Dateline to Disaster</a>) Replaced <quote>training and</quote> with <quote>training, and</quote>.</p>
-      <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>re-establish</quote> with <quote>reestablish</quote>, <quote>syphon</quote> with <quote>siphon</quote>, and <quote>'the Freeway Warrior'.</quote> with <quote>the 'Freeway Warrior'.</quote>.</p>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>if you pick a O</quote> with <quote>if you pick a 0</quote>.</p>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>On pages 6 and 7 you will find an Action Chart</quote> with <quote>An Action Chart has been supplied</quote>.</p>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Removed <quote>For ease of use during play it is recommended that you photocopy these pages</quote>.</p>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>the Random Number Table at the back of this book</quote> with <quote>the Random Number Table</quote>.</p>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>survival skills</quote> with <quote>Survival Skills</quote>.</p>
-      <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
-      <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote>as <ch.plus/>1 If </quote> with <quote>as <ch.plus/>1. If </quote>.</p>
+      <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>re-establish</quote> with <quote>reestablish</quote>, <quote>syphon</quote> with <quote>siphon</quote>, and <quote>'the Freeway Warrior'.</quote> with <quote>the 'Freeway Warrior'.</quote>, <quote>if you pick a O</quote> with <quote>if you pick a 0</quote>, <quote>On pages 6 and 7 you will find an Action Chart</quote> with <quote>An Action Chart has been supplied</quote>, <quote>the Random Number Table at the back of this book</quote> with <quote>the Random Number Table</quote>, and <quote>survival skills</quote> with <quote>Survival Skills</quote>. Removed <quote>For ease of use during play it is recommended that you photocopy these pages</quote>.</p>
+      <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote> and <quote>as <ch.plus/>1 If </quote> with <quote>as <ch.plus/>1. If </quote>.</p>
       <p>(<a idref="cmbtrulz">Combat Rules</a>) Removed <quote>on the inside back cover of the book</quote>.</p>
-      <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>map of Western Texas</quote> with <quote>Map of Western Texas</quote>.</p>
-      <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>potassium iodine</quote> with <quote>potassium iodide</quote>.</p>
-      <p>(<a idref="backpack">Backpack</a>) Replaced <quote>C.B. RADIO</quote> with <quote>CB RADIO</quote>.</p>
+      <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>map of Western Texas</quote> with <quote>Map of Western Texas</quote>, <quote>potassium iodine</quote> with <quote>potassium iodide</quote>, <quote>C.B. RADIO</quote> with <quote>CB RADIO</quote>, and <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>fuel, food or water</quote> with <quote>fuel, food, or water</quote>, and <quote>'the Mavericks'</quote> with <quote>the 'Mavericks'</quote>.</p>
-      <p>(<a idref="sect8">8</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote>.</p>
-      <p>(<a idref="sect18">18</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote>.</p>
-      <p>(<a idref="sect23">23</a>) Replaced <quote>Small blanket</quote> with <quote>Small Blanket</quote>.</p>
-      <p>(<a idref="sect23">23</a>) Replaced <quote>Medi-kits units</quote> with <quote>Medi-kit units</quote>.</p>
+      <p>(<a idref="sect8">8</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote> and <quote>monumentous</quote> with <quote>monumental</quote>.</p>
+      <p>(<a idref="sect18">18</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote> and <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
+      <p>(<a idref="sect23">23</a>) Replaced <quote>Small blanket</quote> with <quote>Small Blanket</quote>, <quote>Medi-kits units</quote> with <quote>Medi-kit units</quote>, <quote>sulphonamides</quote> with <quote>sulfonamides</quote>, and <quote>unleash a round of fire at the door</quote> with <quote>fire at the door</quote>.</p>
       <p>(<a idref="sect30">30</a>) Replaced <quote>bushwack</quote> with <quote>bushwhack</quote>.</p>
-      <p>(<a idref="sect38">38</a>) Replaced <quote>manouevre</quote> with <quote>manoeuvre</quote>.</p>
-      <p>(<a idref="sect38">38</a>) Replaced <quote>(minimum equals one; maximum equals four)</quote> with <quote>(minimum: one round; maximum: four rounds)</quote>.</p>
+      <p>(<a idref="sect36">36</a>) Replaced <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
+      <p>(<a idref="sect38">38</a>) Replaced <quote>manouevre</quote> with <quote>manoeuvre</quote> and <quote>(minimum equals one; maximum equals four)</quote> with <quote>(minimum: one round; maximum: four rounds)</quote>.</p>
       <p>(<a idref="sect61">61</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote>.</p>
+      <p>(<a idref="sect71">71</a>) Replaced <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
       <p>(<a idref="sect94">94</a>) Replaced <quote>H.E. Grenade</quote> with <quote>HE Grenade</quote>.</p>
       <p>(<a idref="sect115">115</a>) Replaced <quote>queueing</quote> with <quote>queuing</quote>.</p>
+      <p>(<a idref="sect126">126</a>) Replaced <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
       <p>(<a idref="sect127">127</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote>.</p>
-      <p>(<a idref="sect130">130</a>) Replaced <quote>Plastic tube</quote> with <quote>Plastic Tube</quote>.</p>
-      <p>(<a idref="sect130">130</a>) Replaced <quote>Four rounds of 12-gauge Shotgun shells</quote> with <quote>Four rounds of 12-gauge ammunition</quote>.</p>
+      <p>(<a idref="sect130">130</a>) Replaced <quote>Plastic tube</quote> with <quote>Plastic Tube</quote> and <quote>Four rounds of 12-gauge Shotgun shells</quote> with <quote>Four rounds of 12-gauge ammunition</quote>.</p>
+      <p>(<a idref="sect153">153</a>) Replaced <quote>south-east</quote> with <quote>southeast</quote>.</p>
       <p>(<a idref="sect168">168</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
+      <p>(<a idref="sect172">172</a>) Replaced <quote>north-west</quote> with <quote>northwest</quote>.</p>
       <p>(<a idref="sect178">178</a>) Replaced <quote>machine-gunning</quote> with <quote>machine gunning</quote>.</p>
       <p>(<a idref="sect179">179</a>) Replaced <quote>(minimum equals one; maximum equals four)</quote> with <quote>(minimum: one round; maximum: four rounds)</quote>.</p>
       <p>(<a idref="sect183">183</a>) Replaced <quote>syphoned</quote> with <quote>siphoned</quote>.</p>
       <p>(<a idref="sect226">226</a>) Replaced <quote>syphoning</quote> with <quote>siphoning</quote>.</p>
+      <p>(<a idref="sect230">230</a>) Replaced <quote>south-east</quote> with <quote>southeast</quote>.</p>
       <p>(<a idref="sect232">232</a>) Applied bold style to <quote>Foil Blanket</quote>.</p>
       <p>(<a idref="sect239">239</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
+      <p>(<a idref="sect248">248</a>) Replaced <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
       <p>(<a idref="sect250">250</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote>.</p>
       <p>(<a idref="sect251">251</a>) Replaced <quote>weapons list</quote> with <quote>Weapons List</quote>.</p>
       <p>(<a idref="sect268">268</a>) Replaced <quote>dispairing</quote> with <quote>despairing</quote>.</p>
+      <p>(<a idref="sect270">270</a>) Replaced <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
       <p>(<a idref="sect279">279</a>) Replaced <quote>(minimum equals one; maximum equals four)</quote> with <quote>(minimum: one burst; maximum: four bursts)</quote>.</p>
       <p>(<a idref="sect292">292</a>) Replaced <quote>gun fire</quote> with <quote>gunfire</quote>.</p>
       <p>(<a idref="sect299">299</a>) Replaced <quote>someobody</quote> with <quote>somebody</quote>.</p>
       <p>(<a idref="sect311">311</a>) Replaced <quote>Loxoscees reclusa</quote> with <quote>Loxosceles reclusa</quote>.</p>
       <p>(<a idref="sect315">315</a>) Replaced section references. The original text directed the reader to sections <a idref="sect161">161</a> and <a idref="sect207">207</a>, however those references are the result of being apprehended by a single clansman in section <a idref="sect115">115</a>.</p>
+      <p>(<a idref="sect320">320</a>) Replaced <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
       <p>(<a idref="sect332">332</a>) Replaced <quote>botton</quote> with <quote>bottom</quote>.</p>
-      <p>(<a idref="sect346">346</a>) Replaced <quote>H.E. Grenade</quote> with <quote>HE Grenade</quote>.</p>
+      <p>(<a idref="sect342">342</a>) Replaced <quote>south-east</quote> with <quote>southeast</quote>.</p>
+      <p>(<a idref="sect346">346</a>) Replaced <quote>H.E. Grenade</quote> with <quote>HE Grenade</quote> and <quote>checkered</quote> with <quote>chequered</quote>.</p>
+      <p>(<a idref="sect348">348</a>) Replaced <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
       <p>(<a idref="sect18">18</a>,<a idref="sect23">23</a>,<a idref="sect36">36</a>,<a idref="sect63">63</a>,<a idref="sect71">71</a>,<a idref="sect101">101</a>,<a idref="sect126">126</a>,<a idref="sect138">138</a>,<a idref="sect146">146</a>,<a idref="sect183">183</a>,<a idref="sect187">187</a>,<a idref="sect232">232</a>,<a idref="sect248">248</a>,<a idref="sect266">266</a>,<a idref="sect308">308</a>,<a idref="sect348">348</a>) Replaced CCS Bonuses in <quote>[]</quote> with <quote>()</quote>.</p>
       <p>(<a idref="sect48">48</a>,<a idref="sect64">64</a>,<a idref="sect124">124</a>,<a idref="sect207">207</a>,<a idref="sect227">227</a>,<a idref="sect253">253</a>) Replaced <quote>Backpack items</quote> with <quote>Backpack Items</quote>.</p>
       <p>(<a idref="tssf">The Story So Far</a>,<a idref="sect123">123</a>,<a idref="sect153">153</a>,<a idref="sect205">205</a>,<a idref="sect208">208</a>,<a idref="sect288">288</a>,<a idref="sect303">303</a>,<a idref="sect321">321</a>,<a idref="sect331">331</a>) Replaced <quote>'the Day'</quote> with <quote>'The Day'</quote>.</p>

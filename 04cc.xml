@@ -15,6 +15,10 @@
 
 $Id$
 $Log$
+Revision 1.6  2006/09/14 14:48:40  Wibbleboy
+o Made various errata/non errata changes.
+o Updated errata section to combine all changes for a given page in a single entry.
+
 Revision 1.5  2006/09/12 08:50:09  Wibbleboy
 o Added ammo usage footnotes
 o Made several changes in response to suggestions in Wiki.
@@ -330,7 +334,7 @@ Initial Freepository revision
       <section class="frontmatter" id="medikit">
        <meta><title>Medi-kit</title></meta>
        <data>
-        <p>A well-stocked Medi-kit can make all the difference to your chances of survival should you suffer injury in the field or as a result of combat. It contains useful first aid supplies, such as dressings, antiseptics, antibiotics, water purification tablets, sulphonamides, pain killers, potassium iodide tablets (to delay absorption of radioactivity) and sutures.</p>
+        <p>A well-stocked Medi-kit can make all the difference to your chances of survival should you suffer injury in the field or as a result of combat. It contains useful first aid supplies, such as dressings, antiseptics, antibiotics, water purification tablets, sulfonamides, pain killers, potassium iodide tablets (to delay absorption of radioactivity) and sutures.</p>
         <p>For convenience, these medical supplies are grouped into units. To find how many units you have in your Medi-kit, pick a number from the <a idref="random">Random Number Table</a> (0 equals 10) and add 2. Your total score equals the number of units with which you begin your adventure. To keep a record of them, circle the appropriate number of unit symbols in the Medi-kit section of your <a idref="action">Action Chart</a>. The maximum number of units you can carry in your Medi-kit is twelve.</p>
         <p>You may use your Medi-kit units to restore lost <typ class="attribute">ENDURANCE</typ> points; each unit used in this way restores 3 points. Units cannot be used to restore <typ class="attribute">ENDURANCE</typ> points in lieu of a Meal or Water when instructed to eat or drink.</p>
        </data>
@@ -361,7 +365,7 @@ Initial Freepository revision
        <data>
         <p>These weapons aid you in hand-to-hand fighting. You begin your adventure armed with a Hunting Knife which, when used in close combat, adds 2 points to your <typ class="attribute">CLOSE COMBAT SKILL</typ>. Note this Hunting Knife in the Close Combat Weapons section of your <a idref="action">Action Chart</a>.</p>
         <p>If you find a close combat weapon during your adventure, you may pick it up and use it. Close combat weapons appear in the text with a close combat skill number: for example, Machete (3). This number indicates how many points this weapon will add to your <typ class="attribute">CLOSE COMBAT SKILL</typ> when used in a hand-to-hand fight.</p> 
-        <p>The maximum number of close combat weapons you may carry is two.</p>
+        <p>The maximum number of close combat weapons you may carry is <em>two</em>.</p>
        </data>
       </section>
 
@@ -480,7 +484,7 @@ Initial Freepository revision
       <p>The day after your arrival sees the withdrawal of Mad Dog Michigan's clan army from the vicinity of the Davis-Monthan air force base, stronghold of the Tucson colony. Scouts are sent to shadow the enemy and, later in the day, they return to report that the clansmen have pulled back to Nogales, a frontier town on the Mexican border. This hurried retreat reinforces the belief that Mad Dog perished when his speedster crashed into the Pantona Wash.</p>
       <p>Boosted by the arrival of your convoy, the Tucson colony now numbers over 130 men, women and children. Supplies of food and water are adequate and, with the arrival of DC1's gasolene tanker, there is more than enough fuel to get you to California. Mike Gorgas, a former district attorney who is now the appointed leader of the Tucson colony, urges the other colony leaders to make preparations to leave the stronghold and head west without delay. The clan army may have suffered a setback but, sooner or later, prompted by a lack of supplies or a desire for revenge, they are sure to leave Nogales and attack the stronghold in force.</p>
       <p>There is also the threat of an attack by the Outlaws, an exceptionally vicious clan that controls the city of Phoenix. Among their number are many criminals who have been expelled from California since 'The Day'. Their leader, Shiloh, is one such outcast. He has been exiled into the Omega Zone (the name Californians have given to the ravaged territories east of their state line), for murder, looting and other, lesser, crimes he and his gang perpetrated in Los Angeles. During the past few months he has often crossed swords with the Tucson colony, resulting in deaths on both sides.</p>
-      <p>When the time comes to plan the route to California, the colony agrees that they should try at all costs to avoid contact with Shiloh's clan. Interstate 10 is the only highway out of Tucson capable of carrying the convoy at reasonable speed, yet it passes straight through the centre of Phoenix. The only alternative is to follow this highway as far as Arizona City and then switch to Interstate 8. The colony could then follow the freeway across southern Arizona to Yuma, traverse the Colorado river at this point, and continue, through the desert and mountains of south-west California, until finally reaching its goal<ch.emdash/>the city of San Diego.</p>
+      <p>When the time comes to plan the route to California, the colony agrees that they should try at all costs to avoid contact with Shiloh's clan. Interstate 10 is the only highway out of Tucson capable of carrying the convoy at reasonable speed, yet it passes straight through the centre of Phoenix. The only alternative is to follow this highway as far as Arizona City and then switch to Interstate 8. The colony could then follow the freeway across southern Arizona to Yuma, traverse the Colorado river at this point, and continue, through the desert and mountains of southwest California, until finally reaching its goal<ch.emdash/>the city of San Diego.</p>
       <p>Much of the territory south of Phoenix is patrolled and controlled by the Outlaws. To avoid the risk of running headlong into a clan patrol, the colony appoints you, and three others, as scouts. Whilst the colonists complete their final preparations to leave the stronghold, you and the other scouts set off along Interstate 10 to check that the road ahead is clear.</p>
       <choice idref="sect235"><link-text>Turn to 235</link-text>.</choice>
      </data>
@@ -999,7 +1003,7 @@ Initial Freepository revision
      <meta><title>40</title></meta>
 
      <data>
-      <p>Cookie informs you that the convoy could make a successful crossing at the Imperial Reservoir, located on the Colorado River ten miles to the north-east of Dome. Your <a idref="map">map</a> confirms its location, but no highways are shown and you doubt that the convoy's heavy vehicles would be able to cross there safely, if at all.</p>
+      <p>Cookie informs you that the convoy could make a successful crossing at the Imperial Reservoir, located on the Colorado River ten miles to the northeast of Dome. Your <a idref="map">map</a> confirms its location, but no highways are shown and you doubt that the convoy's heavy vehicles would be able to cross there safely, if at all.</p>
       <p>Cookie is insistent that it is possible, and, after much deliberation, the colony leaders agree to try. The convoy sets off immediately for Ligurta, a town on Interstate 8 that you checked thoroughly on your return from Yuma earlier this morning. The town is still empty, so the convoy halts here. Driving the clan pick-up truck that you discovered parked behind the cinema last night, Rickenbacker, Cookie and yourself leave Ligurta to scout the tiny town of Dome. It is empty, but two miles beyond it you find that the bridge across the Gila River is guarded by a Puma patrol.</p>
       <choice idref="sect109"><link-text>Turn to 109</link-text>.</choice>
      </data>
@@ -1312,7 +1316,7 @@ Initial Freepository revision
      <meta><title>62</title></meta>
 
      <data>
-      <p>Jaeger is talking to Rickenbacker when he mentions that, only the previous day, he found a fresh-water well in the mountains, approximately fifteen miles south-east of the town of Mohawk. He offers to lead the convoy scouts to it, and assures everyone that the source is pure and uncontaminated. 'An' the best part is that the clansmen don't know about it, either,' he says, enthusiastically.</p>
+      <p>Jaeger is talking to Rickenbacker when he mentions that, only the previous day, he found a fresh-water well in the mountains, approximately fifteen miles southeast of the town of Mohawk. He offers to lead the convoy scouts to it, and assures everyone that the source is pure and uncontaminated. 'An' the best part is that the clansmen don't know about it, either,' he says, enthusiastically.</p>
       <p>The promise of fresh, clean water lifts the convoy's flagging spirits and renews their hopes of completing the long exodus to California. You set off at once and soon cover the twenty miles of open road that lead to the derelict town of Mohawk. Once there, you and Jaeger are chosen to go and find the well. A dozen empty, five-gallon water containers are loaded on to the back of a pick-up, enough for sixty gallons of water, the minimum the colony will need in order to reach California alive.</p>
       <p>The thought of driving a pick-up truck into the mountains without roads or four-wheel drive fills you with dread. But you know that it is the only way you have of transporting such a weighty load. Once preparations are complete, you climb aboard and head out into the desert towards the Mohawk Mountains.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
@@ -2351,7 +2355,7 @@ Initial Freepository revision
       <p>The retreat is only a short reprieve in the concerted clan attack. Almost immediately, several more trucks packed with Detroit Lions and supported by groups of Chargers come pouring through the gap in the barricade and deploy themselves on the freeway.</p>
       <p>Cutter appears on the slopes below. He is waving and calling for you to pull back along the freeway before it is too late. Opposite, your fellow defenders are taking the brunt of the attack, and you know that it will not be too long before some of that clan attention is transferred to your side of the freeway.</p>
       <p>'We're outta here!' you cry, and lead your tiny group down the slope towards a gully where Cutter is waiting. Without looking back, you run with the others until you reach a ranger's lodge, partially hidden by pines, less than a mile from the freeway. There you stop to catch your breath and, as you look around at the faces of your companions<ch.emdash/>Rickenbacker, Cutter, Kate, and Langdon<ch.emdash/>you wonder if this is all that now remains of the convoy's rearguard.</p> 
-      <p>Cutter looks at his wristwatch and says: 'It's 11:05. The Convoy should have made it by now. I'm gonna try and Contact them by radio.'</p>
+      <p>Cutter looks at his wristwatch and says: 'It's 11:05. The convoy should have made it by now. I'm gonna try and contact them by radio.'</p>
       <choice idref="sect15"><link-text>Turn to 15</link-text>.</choice>
      </data>
     </section>
@@ -5180,7 +5184,7 @@ Initial Freepository revision
      <meta><title>339</title></meta>
 
      <data>
-      <p>You need to follow the course of the Santa Rosa Wash for only half a mile before you find an ideal place to cross. It is close to the town of Cucklebur, a settlement that was home to the Papago Indians before 'The Day'. As you drive through the town, the beginnings of a hot, north-westerly wind sweeps across the land, and you notice a dark storm cloud streaking the sky. You pray that it is the prelude to a rainstorm, for it has not rained in these parts for more than a year, but your experience and your senses tell you otherwise.</p>
+      <p>You need to follow the course of the Santa Rosa Wash for only half a mile before you find an ideal place to cross. It is close to the town of Cucklebur, a settlement that was home to the Papago Indians before 'The Day'. As you drive through the town, the beginnings of a hot, northwesterly wind sweeps across the land, and you notice a dark storm cloud streaking the sky. You pray that it is the prelude to a rainstorm, for it has not rained in these parts for more than a year, but your experience and your senses tell you otherwise.</p>
       <p>'There's a dust storm brewin', dare say it's blowin' down from the Nevada desert,' you say, motioning to the north.</p>
       <p>'Looks like it could be a mean 'un,' replies Rickenbacker, as he stares thoughtfully at the gathering cloud. 'A real mean 'un.'</p>
       <p>By the time you rejoin Interstate 8, the weather has greatly deteriorated. Carried on a high wind come swirling, stinging eddies of rust-red sand, some as tall as five-storey buildings. They move across the landscape like spinning tops, sucking in and spewing out tons of dust, rock and debris every second of their short but violent lives. So great has the dust saturation become that even though it is still only late afternoon, you are forced to switch on your headlights in order to make out the road ahead.</p>
@@ -5537,23 +5541,18 @@ Initial Freepository revision
       <meta><title>Errata</title></meta>
       <data>
        <p>(<a idref="dtd">Dateline to Disaster</a>) Replaced <quote>training and</quote> with <quote>training, and</quote>.</p>
-       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>if you pick a O</quote> with <quote>if you pick a 0</quote>.</p>
-       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>On pages 6 and 7 you will find an Action Chart</quote> with <quote>An Action Chart has been supplied</quote>.</p>
-       <p>(<a idref="gamerulz">The Game Rules</a>) Removed <quote>For ease of use during play it is recommended that you photocopy these pages</quote>.</p>
-       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>the Random Number Table at the back of this book</quote> with <quote>the Random Number Table</quote>.</p>
-       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>survival skills</quote> with <quote>Survival Skills</quote>.</p>
-       <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
-       <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>as <ch.plus/>1 If </quote> with <quote>as <ch.plus/>1. If </quote>.</p>
-       <p>(<a idref="cmbtrulz">Combat Rules</a>) Removed <quote>on the inside back cover of the book</quote>.</p>
-       <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>potassium iodine</quote> with <quote>potassium iodide</quote>.</p>
-       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>re-establish</quote> with <quote>reestablish</quote>.</p>
-       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
-       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>fuel, food or water</quote> with <quote>fuel, food, or water</quote>, and <quote>the Mavericks</quote> with <quote>the 'Mavericks'</quote>.</p>
+       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>if you pick a O</quote> with <quote>if you pick a 0</quote>, <quote>On pages 6 and 7 you will find an Action Chart</quote> with <quote>An Action Chart has been supplied</quote>, <quote>the Random Number Table at the back of this book</quote> with <quote>the Random Number Table</quote>, and <quote>survival skills</quote> with <quote>Survival Skills</quote>. Removed <quote>For ease of use during play it is recommended that you photocopy these pages</quote>.</p>
+       <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>, <quote>as <ch.plus/>1 If </quote> with <quote>as <ch.plus/>1. If </quote>, and <quote>on the inside back cover of the book</quote>.</p>
+       <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>potassium iodine</quote> with <quote>potassium iodide</quote> and <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
+       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>re-establish</quote> with <quote>reestablish</quote>, <quote>syphon</quote> with <quote>siphon</quote>, <quote>fuel, food or water</quote> with <quote>fuel, food, or water</quote>, and <quote>the Mavericks</quote> with <quote>the 'Mavericks'</quote>.</p>
+       <p>(<a idref="sect1">1</a>) Replaced <quote>south-west</quote> with <quote>southwest</quote>.</p>
        <p>(<a idref="sect11">11</a>) Replaced <quote>inflamations</quote> with <quote>inflammation</quote>.</p>
        <p>(<a idref="sect24">24</a>) Replaced <quote>Micheal</quote> with <quote>Michael</quote>, <quote>swifty</quote> with <quote>swiftly</quote> and <quote>machine gunfire</quote> with <quote>machine gun fire</quote>.</p>
+       <p>(<a idref="sect40">40</a>) Replaced <quote>north-east</quote> with <quote>northeast</quote>.</p>
        <p>(<a idref="sect51">51</a>) Replaced <quote>1 Pistol</quote> with <quote>One Pistol</quote>.</p>
        <p>(<a idref="sect55">55</a>) Replaced <quote>moutains </quote> with <quote>mountains</quote> and <quote>syphon</quote> with <quote>siphon</quote>.</p>
        <p>(<a idref="sect57">57</a>) Replaced <quote>Swifty</quote> with <quote>Swiftly</quote>.</p>
+       <p>(<a idref="sect62">62</a>) Replaced <quote>south-east</quote> with <quote>southeast</quote>.</p>
        <p>(<a idref="sect74">74</a>) Replaced <quote>youself</quote> with <quote>yourself</quote>.</p>
        <p>(<a idref="sect76">76</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
        <p>(<a idref="sect99">99</a>) Replaced <quote>ammuntion</quote> with <quote>ammunition</quote>.</p>
@@ -5575,11 +5574,11 @@ Initial Freepository revision
        <p>(<a idref="sect282">282</a>) Removed duplicate <quote>seat.</quote>.</p>
        <p>(<a idref="sect282">290</a>) Replaced <quote>distant poppings</quote> with <quote>distant popping</quote>.</p>
        <p>(<a idref="sect304">304</a>) Replaced <quote>HE Granade</quote> with <quote>HE Grenade</quote>.</p>
-       <p>(<a idref="sect305">305</a>) Added bold formatting <quote>Solar Torch</quote>, <quote>Binoculars</quote> and <quote>Rope</quote>.</p>
-       <p>(<a idref="sect305">312</a>) Removed bold formatting <quote>Water Canteen</quote>.</p>
+       <p>(<a idref="sect305">305</a>) Added bold formatting <quote>Solar Torch</quote>, <quote>Binoculars</quote> and <quote>Rope</quote>. Removed bold formatting <quote>Water Canteen</quote>.</p>
        <p>(<a idref="sect308">308</a>) Replaced <quote>machine gunfire</quote> with <quote>machine gun fire</quote>.</p>
        <p>(<a idref="sect322">322</a>) Replaced <quote>accorindly</quote> with <quote>accordingly</quote>.</p>
        <p>(<a idref="sect323">323</a>) Replaced <quote>turn 281</quote> with <quote>turn to 281</quote>.</p>
+       <p>(<a idref="sect339">339</a>) Replaced <quote>north-westerly</quote> with <quote>northwesterly</quote>.</p>
        <p>(<a idref="tssf">The Story So Far</a>,<a idref="sect1">1</a>,<a idref="sect2">2</a>,<a idref="sect200">200</a>,<a idref="sect339">339</a> Replaced <quote>'the Day'</quote> with <quote>'The Day'</quote>.</p>
       <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>, and <quote>zero ENDURANCE</quote> with <quote>zero or fewer ENDURANCE</quote>.</p>
       </data>
