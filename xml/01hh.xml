@@ -15,6 +15,10 @@
 
 $Id$
 $Log$
+Revision 1.15  2006/09/14 14:47:40  Wibbleboy
+o Made various errata/non errata changes.
+o Updated errata section to combine all changes for a given page in a single entry.
+
 Revision 1.14  2006/09/12 08:48:28  Wibbleboy
 o Made several changes in response to suggestions in Wiki.
 
@@ -61,7 +65,7 @@ o Updated errata list, adding missed and new entries as required.
 
 Revision 1.5  2005/12/17 21:36:37  angantyr
 - Fixed some DTD compliance (tiny structural stuff)
-- Updated herader, title and acknowledgement parts (incl. bios and links)
+- Updated header, title and acknowledgement parts (incl. bios and links)
 - Added footnote positions (for well-formedness)
 
 Revision 1.4  2005/12/07 12:42:40  Wibbleboy
@@ -398,7 +402,7 @@ Initial revision
       <section class="frontmatter" id="medikit">
        <meta><title>Medi-kit</title></meta>
        <data>
-        <p>A well-stocked Medi-kit can make all the difference to your chances of survival should you suffer injury in the field or as a result of combat. It contains useful first aid supplies, such as dressings, antiseptics, antibiotics, water purification tablets, sulphonamides, pain killers, potassium iodide tablets (to delay absorption of radioactivity) and sutures.</p>
+        <p>A well-stocked Medi-kit can make all the difference to your chances of survival should you suffer injury in the field or as a result of combat. It contains useful first aid supplies, such as dressings, antiseptics, antibiotics, water purification tablets, sulfonamides, pain killers, potassium iodide tablets (to delay absorption of radioactivity) and sutures.</p>
         <p>For convenience, these medical supplies are grouped into units. To find how many units you have in your Medi-kit, pick a number from the <a idref="random">Random Number Table</a> (0 equals 10) and add 2. Your total score equals the number of units with which you begin your adventure. To keep a record of them, circle the appropriate number of unit symbols in the Medi-kit section of your <a idref="action">Action Chart</a>. The maximum number of units you can carry in your Medi-kit is twelve.</p>
         <p>You may use your Medi-kit units to restore lost <typ class="attribute">ENDURANCE</typ> points; each unit used in this way restores 3 points. Units cannot be used to restore <typ class="attribute">ENDURANCE</typ> points in lieu of a Meal or Water when instructed to eat or drink.</p>
        </data>
@@ -429,7 +433,7 @@ Initial revision
        <data>
         <p>These weapons aid you in hand-to-hand fighting. You begin your adventure armed with a Hunting Knife which, when used in close combat, adds 2 points to your <typ class="attribute">CLOSE COMBAT SKILL</typ>. Note this Hunting Knife in the Close Combat Weapons section of your <a idref="action">Action Chart</a>.</p>
         <p>If you find a close combat weapon during your adventure, you may pick it up and use it. Close combat weapons will appear in the text with a close combat skill number, for example, Machete (3). This number indicates how many points this weapon will add to your <typ class="attribute">CLOSE COMBAT SKILL</typ> when used in a hand-to-hand fight.</p> 
-        <p>The maximum number of close combat weapons you may carry is two.</p>
+        <p>The maximum number of close combat weapons you may carry is <em>two</em>.</p>
        </data>
       </section>
 
@@ -1092,7 +1096,7 @@ Initial revision
 
      <data>
       <p>You take hold of the crate, ready to wrench it open but, to your surprise, the wood is infested with dry rot and crumbles to dust under the slightest pressure. You strip away the flaky timbers to discover hundreds of square plastic tubs, held together by a sheet of clear polythene<ch.emdash/>just what your uncle wanted! Using your hunting knife, carefully you lay open the sheet, peeling it away from the tubs, and rolling it up for future use.</p>
-      <p>On the tubs themselves are blue and white labels that display the letters: N a C 1.</p>
+      <p>On the tubs themselves are blue and white labels that display the letters: NaCl.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your current Perception skill total.</p>
       <choice idref="sect240">If the total is now 7 or less, <link-text>turn to 240</link-text>.</choice>
       <choice idref="sect4">If it is 8 or more, <link-text>turn to 4</link-text>.</choice>
@@ -1311,7 +1315,7 @@ Initial revision
      <data>
       <p>It is dusk before you are able to escape from Albany under cover of the failing light. With relief you discover that your roadster is still parked at the farm where you left it, and quickly you climb in and accelerate away.</p>
       <p>When you reach Moran you find that the convoy is awaiting your return with trepidation. Because you are so long overdue, they feared that you had fallen foul of Mad Dog Michigan and his bikers. You tell them what happened to you in Albany, and everyone agrees that, with darkness less than an hour away, it is too dangerous to continue.</p>
-      <p>The night in Moran passes uneventfully and at first light the convoy sets off cross-country towards Abilene. The arid, stony bed of Hubbard Creek leads the convoy south-west, back towards Freeway 20. Shortly after midday you reach the freeway from which you can see the outskirts of Abilene less than five miles distant.</p>
+      <p>The night in Moran passes uneventfully and at first light the convoy sets off cross-country towards Abilene. The arid, stony bed of Hubbard Creek leads the convoy southwest, back towards Freeway 20. Shortly after midday you reach the freeway from which you can see the outskirts of Abilene less than five miles distant.</p>
       <choice idref="sect100"><link-text>Turn to 100</link-text>.</choice>
      </data>
     </section>
@@ -1619,7 +1623,7 @@ Initial revision
      <data>
       <p>From the window of a room on the second floor you watch as the mob floods out of the alley and into the street below. They divide into two groups and begin searching the adjoining streets, seemingly convinced that you are still out in the open. Silently you crouch by the window, awaiting the chance to slip out of Cross Plains unseen. While you are lying low, you must take a drink or lose 3 <typ class="attribute">ENDURANCE</typ> points. It is dusk before you are able to escape from the town. With relief you discover that your roadster is still parked at the gas station, and quickly you climb in and accelerate away.</p>
       <p>When you reach Rising Star you find that the convoy is awaiting your return with trepidation. Because you are so long overdue, they feared that you had fallen foul of Mad Dog Michigan and his bikers. You tell them what happened to you in Cross Plains and everyone agrees that, with darkness almost upon you, it is too dangerous to continue.</p>
-      <p>The night at Rising Star passes uneventfully and at first light the convoy sets off cross-country towards Abilene. The arid, stony bed of Pecan Bayou provides excellent cover from the surrounding high ground and leads the convoy north-west, back towards Freeway 20. Shortly after midday you reach the freeway, from which you can see the outskirts of Abilene less than five miles distant.</p>
+      <p>The night at Rising Star passes uneventfully and at first light the convoy sets off cross-country towards Abilene. The arid, stony bed of Pecan Bayou provides excellent cover from the surrounding high ground and leads the convoy northwest, back towards Freeway 20. Shortly after midday you reach the freeway, from which you can see the outskirts of Abilene less than five miles distant.</p>
       <choice idref="sect100"><link-text>Turn to 100</link-text>.</choice>
      </data>
     </section>
@@ -1703,7 +1707,7 @@ Initial revision
      <data>
       <p>You grab a blanket and rush forward to fight the blaze. Several of the colony follow your example and, although you suffer from burns and toxic smoke, you manage eventually to quash the flames.</p>
       <p>To find out the extent of the injuries you suffered whilst fighting the fire, pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <p>If the number you have picked is 0-3, lose 2 <typ class="attribute">ENDURANCE</typ> points. If it is 4-6, lose 3 <typ class="attribute">ENDURANCE</typ> points. It it is 7-9, lose 4 <typ class="attribute">ENDURANCE</typ> points. Make the necessary adjustments to your <a idref="action">Action Chart</a>.</p>
+      <p>If the number you have picked is 0-3, lose 2 <typ class="attribute">ENDURANCE</typ> points. If it is 4-6, lose 3 <typ class="attribute">ENDURANCE</typ> points. If it is 7-9, lose 4 <typ class="attribute">ENDURANCE</typ> points. Make the necessary adjustments to your <a idref="action">Action Chart</a>.</p>
       <choice idref="sect188">To continue, <link-text>turn to 188</link-text>.</choice>
      </data>
     </section>
@@ -1940,7 +1944,7 @@ Initial revision
      <meta><title>109</title></meta>
 
      <data>
-      <p>You vault over the trunk and land feet first in the driving seat, your hand poised to switch on the ignition. The engine growls, but before you can shift gear and speed away, there is another burst of gunfire. It shatters the windshield and forces you to throw yourself across the passenger seat to avoid being caught in a deadly crossfire. Then a savage voice screams a command and the firing ceases. You chance a glance over the dashboard and see, to your astonishment, a leather-clad punk come running towards you from out of the ruins. Long Jake takes aim. He fires, missing by a hand's breadth. Undeterred, the grim-faced renegade leaps into the car beside you, cackling like a maniac as he lunges for your throat with his flick knife.</p>
+      <p>You vault over the trunk and land feet-first in the driving seat, your hand poised to switch on the ignition. The engine growls, but before you can shift gear and speed away, there is another burst of gunfire. It shatters the windshield and forces you to throw yourself across the passenger seat to avoid being caught in a deadly crossfire. Then a savage voice screams a command and the firing ceases. You chance a glance over the dashboard and see, to your astonishment, a leather-clad punk come running towards you from out of the ruins. Long Jake takes aim. He fires, missing by a hand's breadth. Undeterred, the grim-faced renegade leaps into the car beside you, cackling like a maniac as he lunges for your throat with his flick knife.</p>
       <combat><enemy>Copperhead</enemy><enemy-attribute class="closecombatskill">14</enemy-attribute><enemy-attribute class="endurance">24</enemy-attribute></combat>
       <p>Owing to the surprise of the attack, you must fight the first round of combat unarmed.</p>
       <choice idref="sect63">If you win, <link-text>turn to 63</link-text>.</choice>
@@ -2063,7 +2067,7 @@ Initial revision
        <li>Pistol (with four rounds of 9mm ammunition)</li>
        <li>Rifle (with four rounds of 7.62mm ammunition)</li>
        <li>Water Canteen containing enough water for three Drinks</li>
-       <li>Serum, sulphonamides, and dressings, sufficient for three Medi-kit units.</li>
+       <li>Serum, sulfonamides, and dressings, sufficient for three Medi-kit units.</li>
        <li>Flick Knife (2)</li>
        <li>Club (2)</li>
        <li><typ class="item">Binoculars</typ></li>
@@ -2235,7 +2239,7 @@ Initial revision
      <meta><title>133</title></meta>
 
      <data>
-      <p>You take the food out of your Backpack and hurl it down into the trench. As soon as the dogs scent the aroma of the food, they switch their attention to the hollow and leap in feet first. Then the two men appear. They shamble to the edge of the trench and stare at you with vacant eyes. The skilful way in which you distracted their dogs does not seem to have antagonized them in the slightest, nor do they appear unduly concerned for their own safety. You stand your ground, challenging them to attack if they dare. They laugh. It is a pitiful, thin sound that makes your flesh crawl. You return their empty stares, noting with disgust the ulcer-like sores that cover their pale, greyish skins; their almost complete lack of hair; and their teeth, black with decay. Your disgust turns to pity, however, when suddenly you realize why they show no fear: they are both afflicted with terminal radiation sickness. Death is already their companion.</p>
+      <p>You take the food out of your Backpack and hurl it down into the trench. As soon as the dogs scent the aroma of the food, they switch their attention to the hollow and leap in feet-first. Then the two men appear. They shamble to the edge of the trench and stare at you with vacant eyes. The skilful way in which you distracted their dogs does not seem to have antagonized them in the slightest, nor do they appear unduly concerned for their own safety. You stand your ground, challenging them to attack if they dare. They laugh. It is a pitiful, thin sound that makes your flesh crawl. You return their empty stares, noting with disgust the ulcer-like sores that cover their pale, greyish skins; their almost complete lack of hair; and their teeth, black with decay. Your disgust turns to pity, however, when suddenly you realize why they show no fear: they are both afflicted with terminal radiation sickness. Death is already their companion.</p>
       <illustration class="float">
        <meta>
         <creator>Melvyn Grant</creator>
@@ -2287,7 +2291,7 @@ Initial revision
      <data>
       <p>The dying screams of their chief dispels the trance into which the clansmen have fallen, but before they can act, you jump into the Thunderbird and twist the ignition key. The moment the antique engine growls into life, you stamp on the gas pedal and accelerate away from the crowd. In a cloud of dust and blue smoke you leave Cross Plains and return to the gas station where you parked your roadster. Before ditching the Thunderbird you search it thoroughly and discover that the trunk contains a Pistol and three rounds of 9mm ammunition. Then, with night drawing in, you climb into your own car and drive away at top speed.</p>
       <p>When you reach Rising Star you find that the convoy is awaiting your return with trepidation. Because you are so long overdue, they feared that you had fallen foul of Mad Dog Michigan and his bikers. You tell them what happened to you in Cross Plains and everyone agrees that, with darkness almost upon you, it is too dangerous to continue.</p>
-      <p>The night at Rising Star passes uneventfully and at first light the convoy sets off cross-country towards Abilene. The arid, stony bed of Pecan Bayou provides excellent cover from the surrounding high ground and leads the convoy north-west, back towards Freeway 20. It is shortly after midday when you reach the freeway, from which you can see the outskirts of Abilene less than five miles distant.</p>
+      <p>The night at Rising Star passes uneventfully and at first light the convoy sets off cross-country towards Abilene. The arid, stony bed of Pecan Bayou provides excellent cover from the surrounding high ground and leads the convoy northwest, back towards Freeway 20. It is shortly after midday when you reach the freeway, from which you can see the outskirts of Abilene less than five miles distant.</p>
       <choice idref="sect100"><link-text>Turn to 100</link-text>.</choice>
      </data>
     </section>
@@ -2296,7 +2300,7 @@ Initial revision
      <meta><title>137</title></meta>
 
      <data>
-      <p>The journey south-west to Lake Lewisville is a slow and arduous trek across rough terrain, but one that cannot be avoided as you skirt around Denton. When finally you sight the dry lake, it is clear that crossing it will be a dangerous business as the convoy will make an easy target to anyone occupying the surrounding high ground. You must get the convoy across in the shortest time possible.</p>
+      <p>The journey southwest to Lake Lewisville is a slow and arduous trek across rough terrain, but one that cannot be avoided as you skirt around Denton. When finally you sight the dry lake, it is clear that crossing it will be a dangerous business as the convoy will make an easy target to anyone occupying the surrounding high ground. You must get the convoy across in the shortest time possible.</p>
       <p>The bed of the lake is littered with rusted car wrecks and old household machinery. Between these heaps of twisted scrap are avenues covered with slabs of broken earth that jut upwards at all angles, their sharp edges baked hard by months in the furnace-like heat. The bus and the tanker, both heavily laden, are soon reduced to a snail's pace for fear of shredding their tyres, and you are forced to stay close in case they break down or fall victim to an ambush.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect281">If the number you have picked is 0-6, <link-text>turn to 281</link-text>.</choice>
@@ -2353,7 +2357,7 @@ Initial revision
      <meta><title>142</title></meta>
 
      <data>
-      <p>Grabbing the rollbar that protects the driving compartment, you pull yourself feet first into the driving seat and reach out for the ignition. The engine growls responsively, but its powerful roar is all but drowned by a sudden eruption of gunfire. Bullets shatter the windshield, forcing you to throw yourself across the passenger seat to avoid being caught in a deadly crossfire. Then a savage voice screams a command and the shooting ceases. You stay down and make a grab for the gear shift, but before you can speed away, a leather-clad punk leaps into the car beside you, cackling like a maniac as he draws his knife.</p>
+      <p>Grabbing the rollbar that protects the driving compartment, you pull yourself feet-first into the driving seat and reach out for the ignition. The engine growls responsively, but its powerful roar is all but drowned by a sudden eruption of gunfire. Bullets shatter the windshield, forcing you to throw yourself across the passenger seat to avoid being caught in a deadly crossfire. Then a savage voice screams a command and the shooting ceases. You stay down and make a grab for the gear shift, but before you can speed away, a leather-clad punk leaps into the car beside you, cackling like a maniac as he draws his knife.</p>
       <combat><enemy>Copperhead</enemy><enemy-attribute class="closecombatskill">14</enemy-attribute><enemy-attribute class="endurance">24</enemy-attribute></combat>
       <p>Owing to the speed of his attack, reduce your <typ class="attribute">CLOSE COMBAT SKILL</typ> by 2 for the first round of this combat.</p>
       <choice idref="sect63">If you win the combat, <link-text>turn to 63</link-text>.</choice>
@@ -2371,7 +2375,7 @@ Initial revision
        <li>Pistol (with two rounds of 9mm ammunition)</li>
        <li>Rifle (with two rounds of 7.62mm ammunition)</li>
        <li>Water Canteen containing enough water for three Drinks</li>
-       <li>Serum, sulphonamides, and dressings, sufficient for three Medi-kit units.</li>
+       <li>Serum, sulfonamides, and dressings, sufficient for three Medi-kit units.</li>
        <li>Flick knife (2)</li>
        <li>Club (2)</li>
        <li><typ class="item">Binoculars</typ></li>
@@ -2944,7 +2948,7 @@ Initial revision
      <meta><title>181</title></meta>
 
      <data>
-      <p>Quickly you tear open your Backpack and remove the Rope. You slide down the slope, riding the shale feet first, and, as you near the bottom, get ready to throw Kate your line. Twice you cast it across the water to no avail. Then, on the third attempt, she manages to grab it and you are able to pull her, breathless and bedraggled, on to the muddy shore.</p>
+      <p>Quickly you tear open your Backpack and remove the Rope. You slide down the slope, riding the shale feet-first, and, as you near the bottom, get ready to throw Kate your line. Twice you cast it across the water to no avail. Then, on the third attempt, she manages to grab it and you are able to pull her, breathless and bedraggled, on to the muddy shore.</p>
       <choice idref="sect335"><link-text>Turn to 335</link-text>.</choice>
      </data>
     </section>
@@ -3171,8 +3175,8 @@ Initial revision
      <meta><title>198</title></meta>
 
      <data>
-      <p>On your speedy return to the convoy, Uncle Jonas tells you that a moving cloud of dust was sighted to the north soon after you left to scout Denton. Judging by the short time it took to cross the horizon, he suspects that it could only have been made by a large gang of bikers on the move. 'We'd best swing aroun' Denton by the south-west,' he says, squinting at a tattered old route map that he has spread across the hood of your roadster, 'just in case it was some o' them Yankees you tumped in Sherman.'</p>
-      <p>You gaze at the now-empty horizon and nod in agreement. 'You take point, Cal,' he says, as he folds his map and goes off to pass word of the detour to Cutter and the others. You see fear and uncertainty in their eyes as Uncle Jonas explains the sudden change of plan. As soon as he is back behind the wheel of the bus, you start your engine and lead the convoy away to the south-west, towards a parched bowl of cracked and barren land that was once the bed of Lake Lewisville.</p>
+      <p>On your speedy return to the convoy, Uncle Jonas tells you that a moving cloud of dust was sighted to the north soon after you left to scout Denton. Judging by the short time it took to cross the horizon, he suspects that it could only have been made by a large gang of bikers on the move. 'We'd best swing aroun' Denton by the southwest,' he says, squinting at a tattered old route map that he has spread across the hood of your roadster, 'just in case it was some o' them Yankees you tumped in Sherman.'</p>
+      <p>You gaze at the now-empty horizon and nod in agreement. 'You take point, Cal,' he says, as he folds his map and goes off to pass word of the detour to Cutter and the others. You see fear and uncertainty in their eyes as Uncle Jonas explains the sudden change of plan. As soon as he is back behind the wheel of the bus, you start your engine and lead the convoy away to the southwest, towards a parched bowl of cracked and barren land that was once the bed of Lake Lewisville.</p>
       <p>You must now take a Drink or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect137">To continue, <link-text>turn to 137</link-text>.</choice>
      </data>
@@ -3791,7 +3795,7 @@ Initial revision
      <meta><title>246</title></meta>
 
      <data>
-      <p>You drop your containers and slide down the slope, riding the loose shale feet first. As you near the bottom you dig in your heels, using the speed of your descent to lever you forwards into a perfect dive. You reach Kate in a matter of seconds, but she is struggling so fiercely that it takes many minutes before you are able to get hold of her and swim towards the shallows. Eventually, breathless and bedraggled, you crawl out of the water and collapse side by side on the muddy shore.</p>
+      <p>You drop your containers and slide down the slope, riding the loose shale feet-first. As you near the bottom you dig in your heels, using the speed of your descent to lever you forwards into a perfect dive. You reach Kate in a matter of seconds, but she is struggling so fiercely that it takes many minutes before you are able to get hold of her and swim towards the shallows. Eventually, breathless and bedraggled, you crawl out of the water and collapse side by side on the muddy shore.</p>
       <choice idref="sect335"><link-text>Turn to 335</link-text>.</choice>
      </data>
     </section>
@@ -4419,7 +4423,7 @@ Initial revision
 
       <p>An hour later you catch sight of Weatherford and signal the convoy to stop. You are hungry and must now eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points. Despite the delays, the convoy is making better time than expected, and with at least an hour of light still remaining, it is decided that it would be best to press on to the next town and make camp there overnight.</p>
       <p>You are finishing your food when suddenly Pop Ewell calls to everyone to hurry to the bus. He has located a broadcast on his CB radio set, and he is as excited as a youngster on Christmas morning. 'Listen to this,' he says, holding up the earphones. A faint call sign can be heard above the crackle of static, broadcasting the same message repeatedly: 'Radio K.L.F.M. Mineral Wells <ch.ellips/> Radio K.L.F.M. Mineral Wells <ch.ellips/>'</p>
-      <p>'That's a town about twenty-five miles north-west o' here,' says Cutter, scratching his scalp. 'It's not where we're planned on headin' but it would be worth checking out.'</p>
+      <p>'That's a town about twenty-five miles northwest o' here,' says Cutter, scratching his scalp. 'It's not where we're planned on headin' but it would be worth checking out.'</p>
       <choice idref="sect74">If you wish to volunteer to go to Mineral Wells and investigate the source of the radio broadcast, <link-text>turn to 74</link-text>.</choice>
       <choice idref="sect93">If you choose to ignore the broadcast and insist that the convoy continues along its chosen route, <link-text>turn to 93</link-text>.</choice>
      </data>
@@ -4783,7 +4787,7 @@ Initial revision
       <p>From a window on the first floor, you watch as a large group of Indian clansmen pour out of an alley opposite. They divide into two groups and begin searching the adjoining street, seemingly convinced that you are still out in the open. Silently you crouch by the window, awaiting the chance to slip out of Cross Plains unseen. While you are lying low, you must take a Drink or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <p>It is dusk before you are able to escape from the town. With relief you discover that your roadster is still parked at the gas station where you left it, and quickly you climb in and accelerate away.</p>
       <p>When you reach Rising Star you find that the convoy is awaiting your return with trepidation. Because you are so long overdue, they feared that you had fallen foul of Mad Dog Michigan and his bikers. You tell them what happened to you in Cross Plains and everyone agrees that, with darkness almost upon you, it is too dangerous to continue.</p>
-      <p>The night at Rising Star passes uneventfully, and at first light the convoy sets off cross-country towards Abilene. The arid, stony bed of Pecan Bayou provides excellent cover from the surrounding high ground and leads the convoy north-west, back towards Freeway 20. It is shortly after midday when you reach the freeway, from which you can see the outskirts of Abilene less than five miles distant.</p>
+      <p>The night at Rising Star passes uneventfully, and at first light the convoy sets off cross-country towards Abilene. The arid, stony bed of Pecan Bayou provides excellent cover from the surrounding high ground and leads the convoy northwest, back towards Freeway 20. It is shortly after midday when you reach the freeway, from which you can see the outskirts of Abilene less than five miles distant.</p>
       <choice idref="sect100"><link-text>Turn to 100</link-text>.</choice>
      </data>
     </section>
@@ -4860,12 +4864,12 @@ Initial revision
        <instance class="pdf" src="small11.pdf" width="386" height="150"/>
       </illustration>
 
-      <p>As you bring your roadster to a halt alongside the bus, you see Cutter standing on the roof, a pair of battered binoculars pressed to his eyes. 'Looks like we're goin' to have company real soon,' he says, staring at a large cloud of dust that is advancing towards Eastland from the north-east. 'I reckon there's over 100 bikes out there on the prairie, and they're all headin' this way. Looks like that Mad Dog Michigan decided not to go to Killeen after all!'</p>
+      <p>As you bring your roadster to a halt alongside the bus, you see Cutter standing on the roof, a pair of battered binoculars pressed to his eyes. 'Looks like we're goin' to have company real soon,' he says, staring at a large cloud of dust that is advancing towards Eastland from the northeast. 'I reckon there's over 100 bikes out there on the prairie, and they're all headin' this way. Looks like that Mad Dog Michigan decided not to go to Killeen after all!'</p>
       <p>'I think we should head for Cisco and lay low until they pass,' says Uncle Jonas, but he soon changes his mind when you tell him about your encounter at the trench.</p>
       <p>'Abilene would be safer,' says Kate, leaning out of a window of the bus. 'But we'll have to pass wide of Cisco to get there.'</p>
-      <p>Cutter convenes a hasty conference to decide the best way to reach Abilene. The terrain in this area is too rocky to attempt a cross-country detour at speed, so you must use what little remains of the secondary highways in order to reach your goal. After studying the <a idref="map">map</a> and staring at the surrounding plain from the roof of the bus, you determine two possible routes: north-west via the town of Albany, or south-west via the town of Cross Plains. The colony is undecided as to which route would be best, and so, as convoy scout, the decision is left to you.</p>
-      <choice idref="sect156">If you decide to take the highway north-west to Albany, <link-text>turn to 156</link-text>.</choice>
-      <choice idref="sect270">If you choose to take the south-west route through Cross Plains, <link-text>turn to 270</link-text>.</choice>
+      <p>Cutter convenes a hasty conference to decide the best way to reach Abilene. The terrain in this area is too rocky to attempt a cross-country detour at speed, so you must use what little remains of the secondary highways in order to reach your goal. After studying the <a idref="map">map</a> and staring at the surrounding plain from the roof of the bus, you determine two possible routes: northwest via the town of Albany, or southwest via the town of Cross Plains. The colony is undecided as to which route would be best, and so, as convoy scout, the decision is left to you.</p>
+      <choice idref="sect156">If you decide to take the highway northwest to Albany, <link-text>turn to 156</link-text>.</choice>
+      <choice idref="sect270">If you choose to take the southwest route through Cross Plains, <link-text>turn to 270</link-text>.</choice>
      </data>
     </section>
 
@@ -5359,29 +5363,24 @@ Initial revision
     <section class="backmatter" id="errerr">
      <meta><title>Errata</title></meta>
      <data>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>if you pick a O</quote> with <quote>if you pick a 0</quote>.</p>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>On pages 6 and 7 you will find an Action Chart</quote> with <quote>An Action Chart has been supplied</quote>.</p>
+      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>if you pick a O</quote> with <quote>if you pick a 0</quote>, <quote>On pages 6 and 7 you will find an Action Chart</quote> with <quote>An Action Chart has been supplied</quote>, <quote>the Random Number Table at the back of this book</quote> with <quote>the Random Number Table</quote>, and <quote>survival skills</quote> with <quote>Survival Skills</quote>.</p>
       <p>(<a idref="gamerulz">The Game Rules</a>) Removed <quote>For ease of use during play it is recommended that you photocopy these pages</quote>.</p>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>the Random Number Table at the back of this book</quote> with <quote>the Random Number Table</quote>.</p>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>survival skills</quote> with <quote>Survival Skills</quote>.</p>
-      <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>map of Central Texas</quote> with <quote>Map of Central Texas</quote>.</p>
-      <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>potassium iodine</quote> with <quote>potassium iodide</quote>.</p>
-      <p>(<a idref="backpack">Backpack</a>) Replaced <quote>H.E. (High Explosive) GRENADE</quote> with <quote>HE (High Explosive) GRENADE</quote>, and <quote>C.B. RADIO</quote> with <quote>CB RADIO</quote>.</p>
-      <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>CLOSECOMBAT</quote> with <quote>CLOSE COMBAT</quote>.</p>
-      <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
-      <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>as <ch.plus/>1 If </quote> with <quote>as <ch.plus/>1. If </quote>.</p>
+      <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>map of Central Texas</quote> with <quote>Map of Central Texas</quote>, <quote>potassium iodine</quote> with <quote>potassium iodide</quote>, <quote>H.E. (High Explosive) GRENADE</quote> with <quote>HE (High Explosive) GRENADE</quote>, <quote>C.B. RADIO</quote> with <quote>CB RADIO</quote>, and <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
+      <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>CLOSECOMBAT</quote> with <quote>CLOSE COMBAT</quote>, <quote>cross-refer</quote> with <quote>cross-reference</quote>, and <quote>as <ch.plus/>1 If </quote> with <quote>as <ch.plus/>1. If </quote>.</p>
       <p>(<a idref="cmbtrulz">Combat Rules</a>) Removed <quote>on the inside back cover of the book</quote>.</p>
       <p>(<a idref="dtd">Dateline to Disaster</a>) Replaced <quote>training and</quote> with <quote>training, and</quote>.</p>
       <p>(<a idref="calstory">Cal's Story</a>) Replaced <quote>re-establish</quote> with <quote>reestablish</quote>, <quote>Denton county</quote> with <quote>Denton County</quote>, and <quote>fuel, food or water</quote> with <quote>fuel, food, or water</quote>.</p>
       <p>(<a idref="sect1">1</a>) Replaced <quote>syphoned</quote> with <quote>siphoned</quote>, and <quote>C.B. radio</quote> with <quote>CB radio</quote>.</p>
       <p>(<a idref="sect13">13</a>) Added missing period after <quote>Random Number Table</quote>.</p>
-      <p>(<a idref="sect26">26</a>) Replaced <quote>machine-gunner</quote> with <quote>machine gunner</quote>.</p>
       <p>(<a idref="sect20">20</a>) Replaced <quote>GEIGER COUNTER</quote>, <quote>ALTIMETER</quote> and <quote>RADIATION SUIT</quote> with initial capitals.</p>
+      <p>(<a idref="sect26">26</a>) Replaced <quote>machine-gunner</quote> with <quote>machine gunner</quote>.</p>
       <p>(<a idref="sect30">30</a>) Replaced <quote>indian</quote> with <quote>Indian</quote>.</p>
       <p>(<a idref="sect36">36</a>) Replaced <quote>under way</quote> with <quote>underway</quote>.</p>
       <p>(<a idref="sect38">38</a>) Replaced <quote>indian</quote> with <quote>Indian</quote>.</p>
+      <p>(<a idref="sect43">43</a>) Replaced <quote>N a C l</quote> with <quote>NaCl</quote>.</p>
       <p>(<a idref="sect48">48</a>) Replaced <quote>dislodgng</quote> with <quote>dislodging</quote>, <quote>Skull,'</quote> with <quote>Skull?'</quote>, and <quote>'the Kickers'</quote> with <quote>the 'Kickers'</quote>.</p>
       <p>(<a idref="sect55">55</a>) Replaced <quote>thunderbird</quote> with <quote>Thunderbird</quote>.</p>
+      <p>(<a idref="sect61">61</a>) Replaced <quote>south-west</quote> with <quote>southwest</quote>.</p>
       <p>(<a idref="sect65">65</a>) Replaced <quote>C.B. Radio</quote> with <quote>CB Radio</quote>.</p>
       <p>(<a idref="sect66">66</a>) Replaced <quote>First Aid Box</quote> with <quote>first aid box</quote>.</p>
       <p>(<a idref="sect68">68</a>) Replaced <quote>'the Mavericks'</quote> with <quote>the 'Mavericks'</quote>.</p>
@@ -5390,20 +5389,26 @@ Initial revision
       <p>(<a idref="sect74">74</a>) Replaced <quote>C.B. Radio</quote> with <quote>CB Radio</quote>.</p>
       <p>(<a idref="sect82">82</a>) Replaced <quote>needin</quote> with <quote>needin'</quote>.</p>
       <p>(<a idref="sect85">85</a>) Replaced <quote>DISTRIBUTOR CAP</quote>, <quote>CONDENSER</quote>, <quote>GAS MODIFIER</quote>, <quote>OIL PLUG</quote>, <quote>FAN BELT</quote> with initial capitals.</p>
+      <p>(<a idref="sect86">86</a>) Replaced <quote>north-west</quote> with <quote>northwest</quote>.</p>
+      <p>(<a idref="sect92">92</a>) Replaced <quote>It it is 7-9</quote> with <quote> If it is 7-9</quote>.</p>
       <p>(<a idref="sect94">94</a>) Replaced <quote>shouting :</quote> with <quote>shouting: </quote>.</p>
       <p>(<a idref="sect96">96</a>) Replaced <quote>machine-gunner</quote> with <quote>machine gunner</quote>.</p>
       <p>(<a idref="sect98">98</a>) Replaced <quote>GEIGER COUNTER</quote>, <quote>ALTIMETER</quote> and <quote>RADIATION SUIT</quote> with initial capitals.</p>
       <p>(<a idref="sect99">99</a>) Replaced <quote>H.E. Grenade</quote> with <quote>HE Grenade</quote>.</p>
       <p>(<a idref="sect100">100</a>) Replaced <quote>C.B. Radio</quote> with <quote>CB Radio</quote>.</p>
       <p>(<a idref="sect101">101</a>) Replaced <quote>(minimum - one round; maximum - six rounds)</quote> with <quote>(minimum: one round; maximum: six rounds)</quote></p>
+      <p>(<a idref="sect109">109</a>) Replaced <quote>feet first</quote> with <quote>feet-first</quote>.</p>
       <p>(<a idref="sect116">116</a>) Replaced <quote>key-in</quote> with <quote>key in</quote>.</p>
       <p>(<a idref="sect117">117</a>) Added missing period after <quote>(0 equals 10)</quote>.</p>
-      <p>(<a idref="sect119">119</a>) Replaced <quote>Water Canteen, containing</quote> with <quote>Water Canteen containing</quote>.</p>
+      <p>(<a idref="sect119">119</a>) Replaced <quote>Water Canteen, containing</quote> with <quote>Water Canteen containing</quote> and <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
       <p>(<a idref="sect122">122</a>) Replaced <quote>gutteral</quote> with <quote>guttural</quote>.</p>
       <p>(<a idref="sect131">131</a>) Replaced <quote>(minimum - one round; maximum - five rounds)</quote> with <quote>(minimum: one burst; maximum: five bursts)</quote></p> 
       <p>(<a idref="sect132">132</a>) Replaced <quote>machine-gunner</quote> with <quote>machine gunner</quote>.</p>
-      <p>(<a idref="sect143">143</a>) Replaced <quote>( with</quote> with <quote>(with</quote>.</p>
-      <p>(<a idref="sect143">143</a>) Replaced <quote>Water Canteen, containing</quote> with <quote>Water Canteen containing</quote>.</p>
+      <p>(<a idref="sect133">133</a>) Replaced <quote>feet first</quote> with <quote>feet-first</quote>.</p>
+      <p>(<a idref="sect136">136</a>) Replaced <quote>north-west</quote> with <quote>northwest</quote>.</p>
+      <p>(<a idref="sect137">137</a>) Replaced <quote>south-west</quote> with <quote>southwest</quote>.</p>
+      <p>(<a idref="sect142">142</a>) Replaced <quote>feet first</quote> with <quote>feet-first</quote>.</p>
+      <p>(<a idref="sect143">143</a>) Replaced <quote>( with</quote> with <quote>(with</quote>, <quote>Water Canteen, containing</quote> with <quote>Water Canteen containing</quote>, and <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
       <p>(<a idref="sect149">149</a>) Replaced <quote>assess</quote> with <quote>assesses</quote>.</p>
       <p>(<a idref="sect155">155</a>) Replaced <quote>red indian</quote> with <quote>Red Indian</quote>.</p>
       <p>(<a idref="sect156">156</a>) Replaced <quote>take its toll of those</quote> with <quote>take its toll on those</quote>.</p>
@@ -5411,11 +5416,12 @@ Initial revision
       <p>(<a idref="sect162">162</a>) Replaced <quote>Ammo pouch</quote> with <quote>Ammo Pouch</quote>.</p>
       <p>(<a idref="sect171">171</a>) Replaced <quote>de-activates</quote> with <quote>deactivates</quote>.</p>
       <p>(<a idref="sect175">175</a>) Replaced <quote>anti-biotics</quote> with <quote>antibiotics</quote> and <quote>H.E. Grenade</quote> with <quote>HE Grenade</quote>.</p>
-      <p>(<a idref="sect181">181</a>) Replaced <quote>rope</quote> with <quote>Rope</quote>.</p>
+      <p>(<a idref="sect181">181</a>) Replaced <quote>rope</quote> with <quote>Rope</quote> and <quote>feet first</quote> with <quote>feet-first</quote>.</p>
       <p>(<a idref="sect182">182</a>) Replaced <quote>Erath country</quote> with <quote>Erath County</quote>.</p>
       <p>(<a idref="sect189">189</a>) Replaced <quote>womped</quote> with <quote>whomped</quote> and <quote>come 'an pay</quote> with <quote>come an' pay</quote>.</p>
       <p>(<a idref="sect194">194</a>) Replaced <quote>de-activates</quote> with <quote>deactivates</quote>.</p>
       <p>(<a idref="sect195">195</a>) Replaced <quote>machine-gunner</quote> with <quote>machine gunner</quote>.</p>
+      <p>(<a idref="sect198">198</a>) Replaced <quote>south-west</quote> with <quote>southwest</quote> (x2).</p>
       <p>(<a idref="sect204">204</a>) Replaced <quote>machine-gun fire</quote> with <quote>machine gun fire</quote>.</p>
       <p>(<a idref="sect209">209</a>) Replaced <quote>red indian</quote> with <quote>Red Indian</quote>.</p>
       <p>(<a idref="sect210">210</a>) Replaced <quote>out-distance</quote> with <quote>outdistance</quote>.</p>
@@ -5425,19 +5431,21 @@ Initial revision
       <p>(<a idref="sect229">229</a>) Replaced <quote>across the bridge. at a run.</quote> with <quote>across the bridge at a run.</quote></p>
       <p>(<a idref="sect233">233</a>) Replaced <quote>(minimum - one round; maximum - four rounds)</quote> with <quote>(minimum: one round; maximum: four rounds)</quote></p>
       <p>(<a idref="sect242">242</a>) Replaced <quote>C.B. Radio</quote> with <quote>CB Radio</quote>.</p>
+      <p>(<a idref="sect246">246</a>) Replaced <quote>feet first</quote> with <quote>feet-first</quote>.</p>
       <p>(<a idref="sect248">248</a>) Replaced <quote>C.B. radio</quote> with <quote>CB Radio</quote>.</p>
       <p>(<a idref="sect250">250</a>) Replaced <quote>machine-gunner</quote> with <quote>machine gunner</quote>.</p>
       <p>(<a idref="sect253">253</a>) Started a new paragraph for Cutter's speech.</p>
       <p>(<a idref="sect260">260</a>) Replaced <quote>Cmon</quote> with <quote>C'mon</quote> and <quote>Comanche county</quote> with <quote>Comanche County</quote>.</p>
       <p>(<a idref="sect288">288</a>) Replaced <quote>auto-wreck</quote> with <quote>auto wreck</quote>.</p>
       <p>(<a idref="sect294">294</a>) Replaced <quote>'the Kickers'</quote> with <quote>the 'Kickers'</quote>.</p>
-      <p>(<a idref="sect295">295</a>) Replaced <quote>C.B. radio</quote> with <quote>CB radio</quote>.</p>
+      <p>(<a idref="sect295">295</a>) Replaced <quote>C.B. radio</quote> with <quote>CB radio</quote> and <quote>north-west</quote> with <quote>northwest</quote>.</p>
       <p>(<a idref="sect298">298</a>) Replaced <quote>red indian</quote> with <quote>Red Indian</quote>.</p>
       <p>(<a idref="sect300">300</a>) Replaced <quote>red indian</quote> with <quote>Red Indian</quote>.</p>
       <p>(<a idref="sect305">305</a>) Replaced <quote>fininshed</quote> with <quote>finished</quote>.</p>
       <p>(<a idref="sect305">305</a>) Replaced <quote>ain't you' boy?'</quote> with <quote>ain't you boy?'</quote>.</p>
-      <p>(<a idref="sect321">321</a>) Replaced <quote>indian</quote> with <quote>Indian</quote>.</p>
+      <p>(<a idref="sect321">321</a>) Replaced <quote>indian</quote> with <quote>Indian</quote> and <quote>north-west</quote> with <quote>northwest</quote>.</p>
       <p>(<a idref="sect325">325</a>) Replaced <quote>C.B.</quote> with <quote>CB radio</quote>.</p>
+      <p>(<a idref="sect327">327</a>) Replaced <quote>north-east</quote> with <quote>northeast</quote>, <quote>north-west</quote> with <quote>northwest</quote> (x2), and <quote>south-west</quote> with <quote>southwest</quote>.</p>
       <p>(<a idref="sect329">329</a>) Replaced <quote>set in cruel sneer.</quote> with <quote>set in a cruel sneer.</quote>.</p>
       <p>(<a idref="sect336">336</a>) Replaced <quote>letters,</quote> with <quote>letters:</quote>.</p>
       <p>(<a idref="sect338">338</a>) Replaced <quote>bushwacked</quote> with <quote>bushwhacked</quote>, <quote>Rickenbaker</quote> with <quote>Rickenbacker</quote> and <quote>fusilage</quote> with <quote>fuselage</quote>.</p>
@@ -5446,10 +5454,7 @@ Initial revision
       <p>(<a idref="sect23">23</a>,<a idref="sect73">73</a>,<a idref="sect85">85</a>,<a idref="sect138">138</a>,<a idref="sect163">163</a>,<a idref="sect229">229</a>,<a idref="sect260">260</a>) Replaced <quote>Backpack items</quote> with <quote>Backpack Items</quote>.</p>
       <p>(<a idref="sect63">63</a>,<a idref="sect162">162</a>,<a idref="sect205">205</a>,<a idref="sect218">218</a>,<a idref="sect269">269</a>,<a idref="sect314">314</a>) Replaced <quote>Weapons list</quote> with <quote>Weapons List</quote>.</p>
       <p>(<a idref="calstory">Cal's Story</a>,<a idref="sect105">105</a>,<a idref="sect160">160</a>,<a idref="sect257">257</a>) Replaced <quote>'the Day'</quote> with <quote>'The Day'</quote>.</p>
-      <p>(<a idref="crsumary">Combat Rules Summary</a>) Added missing period after <quote>from your total</quote>.</p>
-      <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
-      <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>Combat Results Table</quote> with <quote>Close Combat Results Table</quote>.</p>
-      <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>zero ENDURANCE</quote> with <quote>zero or fewer ENDURANCE</quote>.</p>
+      <p>(<a idref="crsumary">Combat Rules Summary</a>) Added missing period after <quote>from your total</quote>. Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>, <quote>Combat Results Table</quote> with <quote>Close Combat Results Table</quote>, and <quote>zero ENDURANCE</quote> with <quote>zero or fewer ENDURANCE</quote>.</p>
      </data>
     </section>
    </data>

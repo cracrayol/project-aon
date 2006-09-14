@@ -15,6 +15,10 @@
 
 $Id$
 $Log$
+Revision 1.7  2006/09/14 14:48:20  Wibbleboy
+o Made various errata/non errata changes.
+o Updated errata section to combine all changes for a given page in a single entry.
+
 Revision 1.6  2006/09/12 08:49:44  Wibbleboy
 o Added ammo usage footnotes
 o Made several changes in response to suggestions in Wiki.
@@ -314,7 +318,7 @@ Initial revision
       <section class="frontmatter" id="medikit">
        <meta><title>Medi-kit</title></meta>
        <data>
-        <p>A well-stocked Medi-kit can make all the difference to your chances of survival should you suffer injury in the field or as a result of combat. It contains useful first aid supplies, such as dressings, antiseptics, antibiotics, water purification tablets, sulphonamides, pain killers, potassium iodide tablets (to delay absorption of radioactivity) and sutures.</p>
+        <p>A well-stocked Medi-kit can make all the difference to your chances of survival should you suffer injury in the field or as a result of combat. It contains useful first aid supplies, such as dressings, antiseptics, antibiotics, water purification tablets, sulfonamides, pain killers, potassium iodide tablets (to delay absorption of radioactivity) and sutures.</p>
         <p>For convenience, these medical supplies are grouped into units. To find how many units you have in your Medi-kit, pick a number from the <a idref="random">Random Number Table</a> (0 equals 10) and add 2. Your total score equals the number of units with which you begin your adventure. To keep a record of them, circle the appropriate number of unit symbols in the Medi-kit section of your <a idref="action">Action Chart</a>. The maximum number of units you can carry in your Medi-kit is twelve.</p>
         <p>You may use your Medi-kit units to restore lost <typ class="attribute">ENDURANCE</typ> points; each unit used in this way restores 3 points. Units cannot be used to restore <typ class="attribute">ENDURANCE</typ> points in lieu of a Meal or Water when instructed to eat or drink.</p>
        </data>
@@ -345,7 +349,7 @@ Initial revision
        <data>
         <p>These weapons aid you in hand-to-hand fighting. You begin your adventure armed with a Hunting Knife which, when used in close combat, adds 2 points to your <typ class="attribute">CLOSE COMBAT SKILL</typ>. Note this Hunting Knife in the Close Combat Weapons section of your <a idref="action">Action Chart</a>.</p>
         <p>If you find a close combat weapon during your adventure, you may pick it up and use it. Close combat weapons appear in the text with a close combat skill number; for example, Machete (3). This number indicates how many points this weapon will add to your <typ class="attribute">CLOSE COMBAT SKILL</typ> when used in a hand-to-hand fight.</p> 
-        <p>The maximum number of close combat weapons you may carry is two.</p>
+        <p>The maximum number of close combat weapons you may carry is <em>two</em>.</p>
        </data>
       </section>
 
@@ -464,7 +468,7 @@ Initial revision
       <p>Your decision to join Captain Frankland's group provokes a mixed reaction among the original members of Dallas Colony One. They put on a brave face and applaud your courage, outwardly proud that one of their number will be part of his team, but they cannot mask their fear for you, not knowing what awaits you beyond the perimeter wall of the Fort Bliss stronghold.</p>
       <p>Using maps and equipment salvaged from the military reservation and adjoining airport, Captain Frankland and Sergeant Haskell formulate a plan of action. At midnight, the team will leave the stronghold and attempt to slip unseen through the surrounding enemy cordon. After that the El Paso city ruins should provide enough cover for you to avoid the clan patrols as you make you way south towards the Rio Grande, where only one bridge across the river still stands<ch.emdash/>the Stanton Street Toll Bridge. The approaches are known to be guarded but the bridge itself is rarely occupied. The plan is to cross the river by this bridge, using a service walkway that runs directly beneath its central span.</p>
       <p>On the Mexican side of the bridge lies Ciudad Juarez, the sprawling, derelict shanty town where Mad Dog Michigan (in deference to Santiago<ch.emdash/>the Mexican clan leader) has based his operations. The convoy of explosives is due to arrive there at two o'clock tomorrow morning. The team must locate and destroy the trucks and their deadly cargoes as quickly as possible, using contact mines. The resulting explosions are sure to cause panic among the clansmen surrounding Fort Bliss. They will also provide a clear signal to the colony, who will, by then, be ready to exploit the confusion and break through the cordon. Once clear, they are to follow Interstate 10, firstly north towards Las Cruces, then west towards your intended destination<ch.emdash/>the city of Tucson.</p>
-      <p>For you, the real danger begins as soon as the mission is accomplished. Once the explosives have been destroyed, the team must hijack a clan vehicle and escape from Ciudad Juarez as best it can. If all goes to plan, you will rejoin the colony at the New Mexican town of Deming, 100 miles north-west of El Paso, at noon the following day. If the team fails to make this rendezvous the colony will continue regardless.</p>
+      <p>For you, the real danger begins as soon as the mission is accomplished. Once the explosives have been destroyed, the team must hijack a clan vehicle and escape from Ciudad Juarez as best it can. If all goes to plan, you will rejoin the colony at the New Mexican town of Deming, 100 miles northwest of El Paso, at noon the following day. If the team fails to make this rendezvous the colony will continue regardless.</p>
       <p>The few hours before midnight pass quickly. The colony uses the cover of darkness to prepare their vehicles for the breakout. Kate will be driving your roadster, and you use this as an excuse to spend what little time there is left before the mission with her, supposedly briefing her on the quirks and idiosyncrasies of the car. Everyone is aware that she already knows everything there is to know about your car but no one is insensitive enough to make any comment.</p>
       <p>At five minutes to midnight, Captain Frankland calls you to join the team. 'You take good care of my car, y'hear,' you whisper, as reluctantly you free yourself from Kate's tender embrace.</p>
       <p>'Only if you promise to take good care of yourself,' she replies, her voice wavering as she tries to control the fear that is simultaneously tightening her throat and churning her stomach.</p>
@@ -4936,22 +4940,15 @@ Initial revision
      <data>
       <p>(<a idref="dtd">Dateline to Disaster</a>) Replaced <quote>training and</quote> with <quote>training, and</quote>.</p>
       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>re-establish</quote> with <quote>reestablish</quote>, <quote>syphoned</quote> with <quote>siphoned</quote>, and and <quote>'The Freeway Warrior'.</quote> with <quote>the 'Freeway Warrior'.</quote>.</p>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>if you pick a O</quote> with <quote>if you pick a 0</quote>.</p>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>On pages 6 and 7 you will find an Action Chart</quote> with <quote>An Action Chart has been supplied</quote>.</p>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Removed <quote>For ease of use during play it is recommended that you photocopy these pages</quote>.</p>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>the Random Number Table at the back of this book</quote> with <quote>the Random Number Table</quote>.</p>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>survival skills</quote> with <quote>Survival Skills</quote>.</p>
-      <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>.</p>
-      <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote><ch.plus/> 1) He</quote> with <quote><ch.plus/>1). He</quote>.</p>
-      <p>(<a idref="cmbtrulz">Combat Rules</a>) Removed <quote>on the inside back cover of the book</quote>.</p>
-      <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>map of New Mexico/Arizona</quote> with <quote>Map of New Mexico/Arizona</quote>.</p>
-      <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>potassium iodine</quote> with <quote>potassium iodide</quote>.</p>
+      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>if you pick a O</quote> with <quote>if you pick a 0</quote>, <quote>On pages 6 and 7 you will find an Action Chart</quote> with <quote>An Action Chart has been supplied</quote>, <quote>the Random Number Table at the back of this book</quote> with <quote>the Random Number Table</quote>, and <quote>survival skills</quote> with <quote>Survival Skills</quote>. Removed <quote>For ease of use during play it is recommended that you photocopy these pages</quote>.</p>
+      <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote> and <quote><ch.plus/> 1) He</quote> with <quote><ch.plus/>1). He</quote>. Removed <quote>on the inside back cover of the book</quote>.</p>
+      <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>map of New Mexico/Arizona</quote> with <quote>Map of New Mexico/Arizona</quote>, <quote>potassium iodine</quote> with <quote>potassium iodide</quote>, and <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>fuel, food or water</quote> with <quote>fuel, food, or water</quote>, and <quote>'the Mavericks'</quote> with <quote>the 'Mavericks'</quote>.</p>
+      <p>(<a idref="sect8">1</a>) Replaced <quote>north-west</quote> with <quote>northwest</quote>.</p>
       <p>(<a idref="sect8">8</a>) Replaced <quote>head over heals</quote> with <quote>head over heels</quote>.</p>
       <p>(<a idref="sect11">11</a>) Replaced <quote>antispetics</quote> with <quote>antiseptics</quote>.</p>
       <p>(<a idref="sect34">36</a>) Replaced <quote>motorcyle</quote> with <quote>motorcycle</quote>.</p>
-      <p>(<a idref="sect36">36</a>) Replaced <quote>shot-shell</quote> with <quote>shell</quote>.</p>
-      <p>(<a idref="sect36">36</a>) Replaced <quote>(minimum equals one round; maximum equals five rounds)</quote> with <quote>(minimum: one round; maximum: five rounds)</quote>.</p>
+      <p>(<a idref="sect36">36</a>) Replaced <quote>shot-shell</quote> with <quote>shell</quote> and <quote>(minimum equals one round; maximum equals five rounds)</quote> with <quote>(minimum: one round; maximum: five rounds)</quote>.</p>
       <p>(<a idref="sect39">39</a>) Replaced <quote>Within a minute he has made a hole large enough to of the truck, there is another sharp crack</quote> with <quote>On the other side of the truck, there is another sharp crack</quote>.</p>
       <p>(<a idref="sect55">55</a>) Replaced <quote>Tennon Saw</quote> with <quote>Tenon Saw</quote>.</p>
       <p>(<a idref="sect66">66</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>.</p>
@@ -4981,8 +4978,7 @@ Initial revision
       <p>(<a idref="sect323">323</a>) Replaced <quote>(minimum equals one round; maximum equals five rounds)</quote> with <quote>(minimum: one burst; maximum: five bursts)</quote>.</p>
       <p>(<a idref="sect11">11</a>,<a idref="sect63">63</a>,<a idref="sect82">82</a>,<a idref="sect150">150</a>,<a idref="sect152">152</a>,<a idref="sect192">192</a>,<a idref="sect310">310</a>,<a idref="sect320">320</a> Replaced CCS Bonuses in <quote>[]</quote> with <quote>()</quote>.</p>
       <p>(<a idref="sect10">10</a>,<a idref="sect11">11</a>,<a idref="sect66">66</a>,<a idref="sect92">92</a>,<a idref="sect100">100</a>,<a idref="sect106">106</a>,<a idref="sect134">134</a>,<a idref="sect192">192</a>,<a idref="sect223">223</a>,<a idref="sect264">264</a>,<a idref="sect282">282</a>,<a idref="sect291">291</a>,<a idref="sect295">295</a>,<a idref="sect340">340</a>) Replaced <quote>Backpack items</quote> with <quote>Backpack Items</quote>.</p>
-      <p>(<a idref="crsumary">Combat Rules Summary</a>) Added missing period after <quote>total</quote>.</p>
-      <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>, and <quote>zero ENDURANCE</quote> with <quote>zero or fewer ENDURANCE</quote>.</p>
+      <p>(<a idref="crsumary">Combat Rules Summary</a>) Added missing period after <quote>total</quote>. Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>, and <quote>zero ENDURANCE</quote> with <quote>zero or fewer ENDURANCE</quote>.</p>
       </data>
     </section>
    </data>
