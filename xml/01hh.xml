@@ -15,9 +15,10 @@
 
 $Id$
 $Log$
-Revision 1.15  2006/09/14 14:47:40  Wibbleboy
-o Made various errata/non errata changes.
-o Updated errata section to combine all changes for a given page in a single entry.
+Revision 1.16  2006/10/27 14:22:32  Wibbleboy
+o Added small illustrations for puzzles
+o Corrected image heights to match updated images.
+o Made changes in response to suggestions in Wiki.
 
 Revision 1.14  2006/09/12 08:48:28  Wibbleboy
 o Made several changes in response to suggestions in Wiki.
@@ -161,7 +162,7 @@ Initial revision
         <dt>Illustration Transcription</dt>
          <dd></dd>
         <dt>XML</dt>
-         <dd>Iain Smith<br />Jonathan Blake</dd>
+         <dd>Iain Smith<br />Jonathan Blake<br />Thomas Wolmer</dd>
         <dt>Proofreading</dt>
          <dd>Iain Smith (frontmatter)<br />Matthew Reynolds (sections 1&endash;105, 246&endash;280)<br />Simon Osborne (sections 106&endash;245, 281&endash;350)</dd>
         <dt>Editing</dt>
@@ -171,7 +172,7 @@ Initial revision
         <dt>Coordination</dt>
          <dd>Iain Smith</dd>
         <dt>Special Thanks</dt>
-         <dd></dd>
+         <dd>Nicholas Matzen</dd>
       </dl>
      </data>
     </section>
@@ -922,8 +923,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>An Indian clansman is running at you, holding a wide-bladed machete above his head.</description>
        </meta>
-       <instance class="html" src="ill2.gif" width="386" height="591" />
-       <instance class="pdf" src="ill2.pdf" width="386" height="591" />
+       <instance class="html" src="ill2.gif" width="386" height="589" />
+       <instance class="pdf" src="ill2.pdf" width="386" height="589" />
       </illustration>
       <combat><enemy>Choctaw</enemy><enemy-attribute class="closecombatskill">17</enemy-attribute><enemy-attribute class="endurance">28</enemy-attribute></combat>
       <choice idref="sect228">If you win the combat, <link-text>turn to 228</link-text>.</choice>
@@ -1155,8 +1156,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>The cell door swings back to reveal a barrel-chested clansman.</description>
        </meta>
-       <instance class="html" src="ill3.gif" width="386" height="591" />
-       <instance class="pdf" src="ill3.pdf" width="386" height="591" />
+       <instance class="html" src="ill3.gif" width="386" height="590" />
+       <instance class="pdf" src="ill3.pdf" width="386" height="590" />
       </illustration>
       <p>'You scoutin' for the Skulls, ain't you boy?' he says, his hand caressing the butt of a pistol that is holstered on his hip. 'That 'roach Alcatraz sent you here t'check us out, didn't he?' Resentful mutterings fill the corridor outside, urging the beady-eyed clansman to settle the matter by shooting you.</p>
       <p>'Do I look like a Skull?' you ask defensively.</p>
@@ -1406,8 +1407,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>'The name's Rickenbacker,' he says, removing his goggles and shaking Uncle Jonas by the hand.</description>
        </meta>
-       <instance class="html" src="ill4.gif" width="386" height="595" />
-       <instance class="pdf" src="ill4.pdf" width="386" height="595" />
+       <instance class="html" src="ill4.gif" width="386" height="588" />
+       <instance class="pdf" src="ill4.pdf" width="386" height="588" />
       </illustration>
       <p>'The name's Rickenbacker,' he says, removing his goggles and shaking Uncle Jonas by the hand. 'I'm from Big Spring. I saw y'all while I was scoutin' the freeway and thought I'd drop by. Shame about the radio: 'fraid my set's seen better days.'</p>
       <p>Rickenbacker warns the colony that a large group of clansmen is riding towards the town from the east. They are less than five miles distant and closing fast. He also tells you about another gang of bikers, a clan called the 'Mavericks', who have been the bane of the Big Spring colony for the last six months. They control the city of Lubbock, 100 miles to the north, and their raiding parties are in the area foraging for food. 'I know the next thirty miles ain't gonna be easy for you folks, but there's a big welcome waitin' for y'all at Big Spring,' he says, as he gets ready to take to the air once more. 'Don't delay now. We're countin' on you to make it through.'</p>
@@ -1669,8 +1670,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>The pillion riders risk their lives to jump aboard the bus.</description>
        </meta>
-       <instance class="html" src="ill5.gif" width="386" height="590" />
-       <instance class="pdf" src="ill5.pdf" width="386" height="590" />
+       <instance class="html" src="ill5.gif" width="386" height="587" />
+       <instance class="pdf" src="ill5.pdf" width="386" height="587" />
       </illustration>
       <p>Suddenly the bus loses speed. You sense that something is seriously amiss and you go back to find out what is wrong. You wave the tanker on, then slow almost to a standstill in order to allow Cutter to catch up. As he draws nearer you see that a running battle is taking place on board. You accelerate, bringing your roadster alongside the boarding door, then you tell Kate to move over into the driving seat and take the wheel. As soon as she has control of the car, you coil yourself like a spring and leap towards the door of the bus.</p>
       <p>Add your current <typ class="attribute">ENDURANCE</typ> points score to your Stealth skill level, and make a note of the total in the margin of your <a idref="action">Action Chart</a>. Now, pick a number from the <a idref="random">Random Number Table</a> and add it to your total.</p>
@@ -1868,8 +1869,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>A patrol of four clansmen appears.</description>
        </meta>
-       <instance class="html" src="ill6.gif" width="386" height="583" />
-       <instance class="pdf" src="ill6.pdf" width="386" height="583" />
+       <instance class="html" src="ill6.gif" width="386" height="588" />
+       <instance class="pdf" src="ill6.pdf" width="386" height="588" />
       </illustration>
       <p>Instantly you dive through the doorway of a store to your right and crouch in the shadows. The patrol swaggers past the store without noticing you, and soon their footfalls have passed out of earshot.</p>
       <choice idref="sect7">If you wish to search the store, <link-text>turn to 7</link-text>.</choice>
@@ -2245,8 +2246,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>They are both afflicted with terminal radiation sickness. Death is already their companion.</description>
        </meta>
-       <instance class="html" src="ill7.gif" width="386" height="614" />
-       <instance class="pdf" src="ill7.pdf" width="386" height="614" />
+       <instance class="html" src="ill7.gif" width="386" height="698" />
+       <instance class="pdf" src="ill7.pdf" width="386" height="698" />
       </illustration>
       <p>'Where are you from?' you call, anxious to discover if there is a hot spot<ch.emdash/>a zone of radioactivity<ch.emdash/>nearby.</p>
       <p>'Cisco,' comes the reply.</p>
@@ -2469,8 +2470,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>You hear the sound of two motorcycles and glimpse the ugly faces of their riders.</description>
        </meta>
-       <instance class="html" src="ill8.gif" width="386" height="593" />
-       <instance class="pdf" src="ill8.pdf" width="386" height="593" />
+       <instance class="html" src="ill8.gif" width="386" height="584" />
+       <instance class="pdf" src="ill8.pdf" width="386" height="584" />
       </illustration>
       <p>The clansman to your right shouts something but the rush of wind steals his words. You sense something land in the car, and when you turn to look, you are horrified to see a live grenade lying on the passenger seat beside you.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>, and add to it your Driving and Stealth skill totals.</p>
@@ -2501,11 +2502,21 @@ Initial revision
       <p>The heavy steel door is held shut by an electronic lock. At first you suspect that the lock has jammed, its power having run down long ago, but as soon as you touch the keypad, a blue LED display glows into life above it.</p>
       <p>Eleven numbers appear, arranged in three rows. There are four numbers on the top row, four on the second, and three on the third:</p>
 
+      <illustration class="inline">
+       <meta>
+        <creator>Iain Smith</creator>
+       </meta>
+       <instance class="html" src="small13.gif" width="386" height="200" />
+       <instance class="pdf" src="small13.pdf" width="386" height="200"/>
+      </illustration>
+      
+<!--
       <table>
        <tr><td>2</td><td>12</td><td>5</td><td>9</td></tr>
        <tr><td>4</td><td>20</td><td>7</td><td>17</td></tr>
        <tr><td>12</td><td>12</td><td>4</td><td>-</td></tr>
       </table>
+-->
       <p>You study the rows of numbers carefully, looking for a pattern. By tapping on the keypad the number that is missing from the last row, you will release the lock and open the door.</p>
       <p>When you think you know the missing number, turn to the entry that bears that number.<a id="sect152-1" idref="sect152-1-foot" class="footnote" /></p>
       <choice idref="sect171">If you cannot work out the correct answer, <link-text>turn to 171</link-text>.</choice>
@@ -2659,14 +2670,14 @@ Initial revision
      <meta><title>162</title></meta>
 
      <data>
-      <p>You park beside the control tower, switch off the engine, then wait. Only when you are sure that the area is deserted do you leave your vehicle and enter the derelict building. A spiral staircase leads to the main control room where once sophisticated technology now lies scorched and twisted beyond recognition. You open a service hatch to find yourself staring at the skeletal remains of an air force sergeant.</p> 
+      <p>You park beside the control tower, switch off the engine, then wait. Only when you are sure that the area is deserted do you leave your vehicle and enter the derelict building. A spiral staircase leads to the main control room where once-sophisticated technology now lies scorched and twisted beyond recognition. You open a service hatch to find yourself staring at the skeletal remains of an air force sergeant.</p> 
       <illustration class="float">
        <meta>
         <creator>Melvyn Grant</creator>
         <description>You open a service hatch to find yourself staring at the skeletal remains of an air force sergeant.</description>
        </meta>
-       <instance class="html" src="ill9.gif" width="386" height="590" />
-       <instance class="pdf" src="ill9.pdf" width="386" height="590" />
+       <instance class="html" src="ill9.gif" width="386" height="587" />
+       <instance class="pdf" src="ill9.pdf" width="386" height="587" />
       </illustration>
       <p>You regain your composure quickly and move to close the hatch. Then you notice that a holster and ammunition pouch are still attached to the dead soldier's belt, and your scavenger's instincts get the better of you.</p>
       <p>The holster contains a Pistol and the pouch holds twelve rounds of 9mm ammunition. If you decide to keep either of these items, amend your <a idref="action">Weapons List</a> and Ammo Pouch accordingly.</p>
@@ -2720,7 +2731,7 @@ Initial revision
      <meta><title>165</title></meta>
 
      <data>
-      <p>With terror gnawing at your insides you reach down and take hold of the grenade. In the next instant you hurl it out of the car and slam your foot down on the gas pedal. Seconds later there is a dull thud, and in your rear view mirror you see the biker to your left disappear in a ball of orange flame as the grenade explodes underneath his motorcycle and ignites the fuel tank.</p>
+      <p>With terror gnawing at your insides you reach down and take hold of the grenade. In the next instant you hurl it out of the car and slam your foot down on the gas pedal. Seconds later there is a dull thud, and in your rear-view mirror you see the biker to your left disappear in a ball of orange flame as the grenade explodes underneath his motorcycle and ignites the fuel tank.</p>
       <p>Cutter sounds the bus's horn to alert you to the position of the remaining clansman. He is coming up fast on your blind side and, as he draws level, he jerks a machine pistol from his saddle-bag, cocks the bolt with his teeth, and opens fire</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect17">If the number you have picked is 0-1, <link-text>turn to 17</link-text>.</choice>
@@ -3045,8 +3056,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>The Mavericks try to bundle Kate, kicking and punching, into a sidecar.</description>
        </meta>
-       <instance class="html" src="ill10.gif" width="386" height="589" />
-       <instance class="pdf" src="ill10.pdf" width="386" height="589" />
+       <instance class="html" src="ill10.gif" width="386" height="581" />
+       <instance class="pdf" src="ill10.pdf" width="386" height="581" />
       </illustration>
       <p>Add your current <typ class="attribute">ENDURANCE</typ> points score to your Stealth skill total.</p>
       <choice idref="sect221">If you total is 8 or less, <link-text>turn to 221</link-text>.</choice>
@@ -3317,8 +3328,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>Coolly the figure raises a rifle and takes aim at your windshield.</description>
        </meta>
-       <instance class="html" src="ill11.gif" width="386" height="593" />
-       <instance class="pdf" src="ill11.pdf" width="386" height="593" />
+       <instance class="html" src="ill11.gif" width="386" height="589" />
+       <instance class="pdf" src="ill11.pdf" width="386" height="589" />
       </illustration>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect27">If the number you have picked is 0-2, <link-text>turn to 27</link-text>.</choice>
@@ -3546,8 +3557,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>The tanker catches and spins the torn wreckage directly into your path.</description>
        </meta>
-       <instance class="html" src="ill12.gif" width="386" height="597" />
-       <instance class="pdf" src="ill12.pdf" width="386" height="597" />
+       <instance class="html" src="ill12.gif" width="386" height="586" />
+       <instance class="pdf" src="ill12.pdf" width="386" height="586" />
       </illustration>
       <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your current Driving and Perception skill totals.</p>
       <choice idref="sect323">If your total is now 0-10, <link-text>turn to 323</link-text>.</choice>
@@ -3763,8 +3774,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>Your gaze is distracted by something moving across the roof of the building opposite. It is a clansman.</description>
        </meta>
-       <instance class="html" src="ill13.gif" width="386" height="596" />
-       <instance class="pdf" src="ill13.pdf" width="386" height="596" />
+       <instance class="html" src="ill13.gif" width="386" height="589" />
+       <instance class="pdf" src="ill13.pdf" width="386" height="589" />
       </illustration>
       <choice idref="sect124">If the gun you are holding is a Pistol, <link-text>turn to 124</link-text>.</choice>
       <choice idref="sect2">If it is a Machine Pistol, <link-text>turn to 2</link-text>.</choice>
@@ -3900,11 +3911,21 @@ Initial revision
       <p>The steel door appears to be held shut by an electronic lock. You suspect it to be jammed, its power source run down long ago, but as soon as you run your fingers over the keypad, an LED display glows into life above it.</p>
       <p>Eleven numbers appear, arranged in three horizontal rows. There are four numbers on the top row, four on the second, and three on the third:</p>
 
+      <illustration class="inline">
+       <meta>
+        <creator>Iain Smith</creator>
+       </meta>
+       <instance class="html" src="small14.gif" width="386" height="200" />
+       <instance class="pdf" src="small14.pdf" width="386" height="200"/>
+      </illustration>
+
+<!--
       <table>
        <tr><td>8</td><td>7</td><td>9</td><td>6</td></tr>
        <tr><td>94</td><td>20</td><td>37</td><td>77</td></tr>
        <tr><td>52</td><td>57</td><td>11</td><td>-</td></tr>
       </table>
+-->
 
       <p>You study the rows of numbers carefully, looking for a pattern. By tapping on the keypad the number that is missing from the last row, you will release the lock and open the door.</p>
       <p>When you think you know the missing number turn to the entry that bears that number.<a id="sect255-1" idref="sect255-1-foot" class="footnote" /></p>
@@ -3923,8 +3944,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>'Heng will be appeased!' screams the chief, and lunges once more at your heart.</description>
        </meta>
-       <instance class="html" src="ill14.gif" width="386" height="584" />
-       <instance class="pdf" src="ill14.pdf" width="386" height="584" />
+       <instance class="html" src="ill14.gif" width="386" height="582" />
+       <instance class="pdf" src="ill14.pdf" width="386" height="582" />
       </illustration>
       <combat><enemy>Chief Drawoher</enemy><enemy-attribute class="closecombatskill">17</enemy-attribute><enemy-attribute class="endurance">28</enemy-attribute></combat>
       <choice idref="sect136">If you win the combat, <link-text>turn to 136</link-text>.</choice>
@@ -3959,7 +3980,7 @@ Initial revision
      <meta><title>259</title></meta>
 
      <data>
-      <p>Suddenly your fingers go numb as the biker lashes out at your hand with the heel of his boot, sending your pistol spinning high into the air. You curse the loss of a good weapon (remember to delete this pistol from your list of missile weapons), and fumble for your Hunting Knife as your attacker gets ready to leap into the seat beside you.</p>
+      <p>Suddenly your fingers go numb as the biker lashes out at your hand with the heel of his boot, sending your pistol spinning high into the air. You curse the loss of a good weapon (remember to delete this Pistol from your list of missile weapons), and fumble for your Hunting Knife as your attacker gets ready to leap into the seat beside you.</p>
       <combat><enemy>Bronx</enemy><enemy-attribute class="closecombatskill">15</enemy-attribute><enemy-attribute class="endurance">26</enemy-attribute></combat>
       <p>Because of your numb hand and your need to remain in control of the roadster throughout this combat, reduce your <typ class="attribute">CLOSE COMBAT SKILL</typ> by 4 points for the duration of the fight.</p>
       <choice idref="sect187">If you win and the fight lasts four rounds or less, <link-text>turn to 187</link-text>.</choice>
@@ -4099,7 +4120,7 @@ Initial revision
      <meta><title>270</title></meta>
 
      <data>
-      <p>You lead the convoy along the split and cratered surface of State Highway 571, across a wasteland of bleached hills and scorched scrub. In the distance you see mountains<ch.emdash/>the twin summits of Caddo Peaks and the craggy outline of Spring Mesa<ch.emdash/>standing sharp and clear against the backdrop of a cloudless sky. By mid-afternoon the temperature has climbed to 110<ch.deg/> Fahrenheit, and the combined effects of the heat and poor road surface begin to take their toll. Two miles inside Comanche County, the tanker is forced to halt with an overheated engine. Luckily, the breakdown occurs within sight of the Sabanna River, now little more than a torpid stream, and enough water is soon collected to enable the tanker to continue. (If you wish, you can refill your water canteen at the river at the cost of one Medi-kit unit).</p>
+      <p>You lead the convoy along the split and cratered surface of State Highway 571, across a wasteland of bleached hills and scorched scrub. In the distance you see mountains<ch.emdash/>the twin summits of Caddo Peaks and the craggy outline of Spring Mesa<ch.emdash/>standing sharp and clear against the backdrop of a cloudless sky. By mid-afternoon the temperature has climbed to 110<ch.deg/> Fahrenheit, and the combined effects of the heat and poor road surface begin to take their toll. Two miles inside Comanche County, the tanker is forced to halt with an overheated engine. Luckily, the breakdown occurs within sight of the Sabanna River, now little more than a torpid stream, and enough water is soon collected to enable the tanker to continue. (If you wish, you can refill your Water Canteen at the river at the cost of one Medi-kit unit).</p>
       <p>Gradually the road turns westwards and climbs towards high plains country. Then, as you approach the outskirts of a town called Rising Star, Cutter signals to you to stop. 'We've got six people down with heat exhaustion, and four more on the brink,' he says, his face awash with sweat. 'We've got to get 'em out of this travelling oven and let 'em rest awhile in the shade.'</p>
       <p>You suggest that the convoy waits in Rising Star while you go on ahead to make sure that Cross Plains is safe to enter. By the time you have checked it out and returned, the worst of the afternoon heat will have passed and the colony will be in better shape to continue. Before you leave for Cross Plains you must take a drink or lose 3 <typ class="attribute">ENDURANCE</typ> points. Unless you possess a tub of <typ class="item">Salt</typ>, you must reduce your current <typ class="attribute">ENDURANCE</typ> total by 4 points, due to excessive salt loss.</p>
       <choice idref="sect42"><link-text>Turn to 42</link-text>.</choice>
@@ -4289,8 +4310,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>Two savage-looking women, both armed with knives.</description>
        </meta>
-       <instance class="html" src="ill15.gif" width="386" height="586" />
-       <instance class="pdf" src="ill15.pdf" width="386" height="586" />
+       <instance class="html" src="ill15.gif" width="386" height="580" />
+       <instance class="pdf" src="ill15.pdf" width="386" height="580" />
       </illustration>
       <combat><enemy>Lipsync</enemy><enemy-attribute class="closecombatskill">12</enemy-attribute><enemy-attribute class="endurance">18</enemy-attribute></combat>
       <combat><enemy>Catsup</enemy><enemy-attribute class="closecombatskill">11</enemy-attribute><enemy-attribute class="endurance">20</enemy-attribute></combat>
@@ -4559,8 +4580,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>A scrawny old man, dressed in an assortment of evil-smelling rags.</description>
        </meta>
-       <instance class="html" src="ill16.gif" width="386" height="580" />
-       <instance class="pdf" src="ill16.pdf" width="386" height="580" />
+       <instance class="html" src="ill16.gif" width="386" height="581" />
+       <instance class="pdf" src="ill16.pdf" width="386" height="581" />
       </illustration>
       <p>'Saw your lights on the road,' he croaks, a toothy smile cracking several layers of dirt that have built up around his nose and mouth. 'Said to m'self, those folks will come a' callin'. Best whup up a real larrupin' meal to make 'em feel right welcome.' He jabs his metal rod into the fire and spears the blackened remains of a large rat. Proudly he holds it up and nods enthusiastically, as if he were about to serve you a prime T-bone steak. Your stomach turns when he offers you the charred carcass. You refuse politely.</p>
       <p>'You gone an' broked down, ain't you boy?' he says, pointing at the convoy on the highway below. 'What exactly's the problem? You never know, maybe I kin help you out. You'd not be the first folks that ol' Mountain Goat'd set right.'</p>
@@ -4669,8 +4690,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>The Maverick spins around and tries to grab you by the throat.</description>
        </meta>
-       <instance class="html" src="ill17.gif" width="386" height="591" />
-       <instance class="pdf" src="ill17.pdf" width="386" height="591" />
+       <instance class="html" src="ill17.gif" width="386" height="587" />
+       <instance class="pdf" src="ill17.pdf" width="386" height="587" />
       </illustration>
       <combat><enemy>Emteevee:</enemy><enemy-attribute class="closecombatskill">17</enemy-attribute><enemy-attribute class="endurance">25</enemy-attribute></combat>
       <choice idref="sect70">If you win the combat, <link-text>turn to 70</link-text>.</choice>
@@ -4727,7 +4748,7 @@ Initial revision
      <meta><title>318</title></meta>
 
      <data>
-      <p>As you watch the town shrinking in your rear view mirror, the shock of your encounter, especially the death of Long Jake, makes you shiver despite the burning midday heat. 'D'you know those guys?' you ask, anxious to make some sense of the situation.</p>
+      <p>As you watch the town shrinking in your rear-view mirror, the shock of your encounter, especially the death of Long Jake, makes you shiver despite the burning midday heat. 'D'you know those guys?' you ask, anxious to make some sense of the situation.</p>
       <p>'Yeah,' replies the girl, her voice shaky, 'though not by choice.'</p>
       <p>As you race back along the highway to McKinney, the girl, whose name is Kate Norton, tells you about the events leading up to your meeting. She comes from Kansas City and is one of the lucky few who have managed to survive there since the holocaust. A month ago her colony was attacked and wiped out by a gang of motorcycle renegades called 'the Lions'. Their leader, who calls himself Mad Dog Michigan, took a liking to her and spared her life. He was once a high-ranking HAVOC agent who had escaped from Pontiac Deep Pen near Detroit, and he and his gang, most of whom were also HAVOC escapees, were heading for the Fort Hood Military Reserve near Killeen, the largest armoury in the whole of the United States.</p>
       <p>'He hopes to find enough weapons and ammunition there to equip the other HAVOC clans who are in control of cities all along the eastern seaboard. Once he's armed his army he'll take over the rest of the country,' she says, her blue eyes brimming with tears. 'Three days ago the Lions reached Oklahoma City. They were desperate for food, so Mad Dog decided to camp there and forage the surrounding area. Until then they'd always been kept closely guarded, but while most of them were away I managed to steal a bike and escape. I was beginning to think I'd made it. I was wrong. I ran out of fuel just north of Sherman and had to ditch the bike. I met up with your friend this morning when he walked into town. Soon after he'd told me all about you and your colony and your plans to head west, those guys back there arrived. Mad Dog sent them to find me.' She pauses to wipe her tears and brush the tangle of windswept blonde hair away from her beautiful face.</p>
@@ -4832,8 +4853,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>Slumped over a control panel is the body of Doctor Drool, former ace DJ.</description>
        </meta>
-       <instance class="html" src="ill18.gif" width="386" height="589" />
-       <instance class="pdf" src="ill18.pdf" width="386" height="589" />
+       <instance class="html" src="ill18.gif" width="386" height="587" />
+       <instance class="pdf" src="ill18.pdf" width="386" height="587" />
       </illustration>
       <p>You use your CB radio to call the convoy and tell them what you have found. Then you cut the power to the control panel, pausing briefly to sign-off for the last time on behalf of the Doctor.</p>
       <choice idref="sect66">If you wish to search the radio station, <link-text>turn to 66</link-text>.</choice>
@@ -5010,8 +5031,8 @@ Initial revision
         <creator>Melvyn Grant</creator>
         <description>The combat is to the death; you both launch yourself towards the centre of the corral.</description>
        </meta>
-       <instance class="html" src="ill19.gif" width="386" height="588" />
-       <instance class="pdf" src="ill19.pdf" width="386" height="588" />
+       <instance class="html" src="ill19.gif" width="386" height="586" />
+       <instance class="pdf" src="ill19.pdf" width="386" height="586" />
       </illustration>
       <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your current Stealth skill total.</p>
       <choice idref="sect122">If your total score is 7 or less, <link-text>turn to 122</link-text>.</choice>
@@ -5410,10 +5431,12 @@ Initial revision
       <p>(<a idref="sect142">142</a>) Replaced <quote>feet first</quote> with <quote>feet-first</quote>.</p>
       <p>(<a idref="sect143">143</a>) Replaced <quote>( with</quote> with <quote>(with</quote>, <quote>Water Canteen, containing</quote> with <quote>Water Canteen containing</quote>, and <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
       <p>(<a idref="sect149">149</a>) Replaced <quote>assess</quote> with <quote>assesses</quote>.</p>
+      <p>(<a idref="sect152">152</a>) Replaced text based number puzzle with illustration.</p>
       <p>(<a idref="sect155">155</a>) Replaced <quote>red indian</quote> with <quote>Red Indian</quote>.</p>
       <p>(<a idref="sect156">156</a>) Replaced <quote>take its toll of those</quote> with <quote>take its toll on those</quote>.</p>
       <p>(<a idref="sect158">158</a>) Replaced <quote>C.B. Radio</quote> with <quote>CB Radio</quote>.</p>
-      <p>(<a idref="sect162">162</a>) Replaced <quote>Ammo pouch</quote> with <quote>Ammo Pouch</quote>.</p>
+      <p>(<a idref="sect162">162</a>) Replaced <quote>Ammo pouch</quote> with <quote>Ammo Pouch</quote> and <quote>once sophisticated</quote> with <quote>once-sophisticated</quote>.</p>
+      <p>(<a idref="sect165">165</a>) Replaced <quote>rear view mirror</quote> with <quote>rear-view mirror</quote>.</p>
       <p>(<a idref="sect171">171</a>) Replaced <quote>de-activates</quote> with <quote>deactivates</quote>.</p>
       <p>(<a idref="sect175">175</a>) Replaced <quote>anti-biotics</quote> with <quote>antibiotics</quote> and <quote>H.E. Grenade</quote> with <quote>HE Grenade</quote>.</p>
       <p>(<a idref="sect181">181</a>) Replaced <quote>rope</quote> with <quote>Rope</quote> and <quote>feet first</quote> with <quote>feet-first</quote>.</p>
@@ -5435,7 +5458,10 @@ Initial revision
       <p>(<a idref="sect248">248</a>) Replaced <quote>C.B. radio</quote> with <quote>CB Radio</quote>.</p>
       <p>(<a idref="sect250">250</a>) Replaced <quote>machine-gunner</quote> with <quote>machine gunner</quote>.</p>
       <p>(<a idref="sect253">253</a>) Started a new paragraph for Cutter's speech.</p>
+      <p>(<a idref="sect255">255</a>) Replaced text based number puzzle with illustration.</p>
+      <p>(<a idref="sect259">259</a>) Replaced <quote>pistol</quote> with <quote>Pistol</quote>.</p>
       <p>(<a idref="sect260">260</a>) Replaced <quote>Cmon</quote> with <quote>C'mon</quote> and <quote>Comanche county</quote> with <quote>Comanche County</quote>.</p>
+      <p>(<a idref="sect270">270</a>) Replaced <quote>water canteen</quote> with <quote>Water Canteen</quote>.</p>
       <p>(<a idref="sect288">288</a>) Replaced <quote>auto-wreck</quote> with <quote>auto wreck</quote>.</p>
       <p>(<a idref="sect294">294</a>) Replaced <quote>'the Kickers'</quote> with <quote>the 'Kickers'</quote>.</p>
       <p>(<a idref="sect295">295</a>) Replaced <quote>C.B. radio</quote> with <quote>CB radio</quote> and <quote>north-west</quote> with <quote>northwest</quote>.</p>
@@ -5443,6 +5469,7 @@ Initial revision
       <p>(<a idref="sect300">300</a>) Replaced <quote>red indian</quote> with <quote>Red Indian</quote>.</p>
       <p>(<a idref="sect305">305</a>) Replaced <quote>fininshed</quote> with <quote>finished</quote>.</p>
       <p>(<a idref="sect305">305</a>) Replaced <quote>ain't you' boy?'</quote> with <quote>ain't you boy?'</quote>.</p>
+      <p>(<a idref="sect318">318</a>) Replaced <quote>rear view mirror</quote> with <quote>rear-view mirror</quote>.</p>
       <p>(<a idref="sect321">321</a>) Replaced <quote>indian</quote> with <quote>Indian</quote> and <quote>north-west</quote> with <quote>northwest</quote>.</p>
       <p>(<a idref="sect325">325</a>) Replaced <quote>C.B.</quote> with <quote>CB radio</quote>.</p>
       <p>(<a idref="sect327">327</a>) Replaced <quote>north-east</quote> with <quote>northeast</quote>, <quote>north-west</quote> with <quote>northwest</quote> (x2), and <quote>south-west</quote> with <quote>southwest</quote>.</p>
@@ -5549,6 +5576,8 @@ Initial revision
       <li><a idref="sect343">Section 343</a></li>
       <li><a idref="sect17">Section 17</a></li>
       <li><a idref="sect2">Section 2</a></li>
+      <li><a idref="sect152">Section 152</a></li>
+      <li><a idref="sect255">Section 255</a></li>
      </ul>
     </data>
    </section>
