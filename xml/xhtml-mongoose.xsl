@@ -9,6 +9,9 @@
 $Id$
 
 $Log$
+Revision 1.2  2006/11/25 18:57:16  jonathan.blake
+Fixed links to footnotes
+
 Revision 1.1  2006/11/25 04:48:52  jonathan.blake
 Modified to generate a single unstyled, UTF-8, HTML file which lacks any illustrations
 
@@ -539,12 +542,14 @@ Todo:
     <!-- will the list always contain the closest ancestor first? -->
     <xsl:variable name="footnote-section"><xsl:value-of select="ancestor::section[position()=1]/@id" /></xsl:variable>
     <xsl:variable name="footnote-marker"><xsl:number count="footnotes/footnote" from="/" level="any" format="1" /></xsl:variable>
+    <xsl:variable name="footnote-id"><xsl:value-of select="@id" /></xsl:variable>
     <xsl:variable name="footnote-idref"><xsl:text>#</xsl:text><xsl:value-of select="@idref" /></xsl:variable>
      
     <xsl:for-each select="*[1]">
      <p>
       <xsl:text>[</xsl:text>
       <a>
+       <xsl:attribute name="name"><xsl:value-of select="$footnote-id" /></xsl:attribute>
        <xsl:attribute name="href"><xsl:value-of select="$footnote-idref" /></xsl:attribute>
        <xsl:value-of select="$footnote-marker" />
       </a>
