@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE gamebook SYSTEM "gamebook.dtd" [
- <!ENTITY % xhtml.characters SYSTEM "htmlchar.mod">
- <!ENTITY % latex.characters SYSTEM "ltexchar.mod">
- <!ENTITY % pml.characters SYSTEM "pmlchar.mod">
- %xhtml.characters;
-
  <!ENTITY % general.links SYSTEM "genlink.mod">
  %general.links;
  <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
  %xhtml.links;
+
+ <!ENTITY % general.inclusions SYSTEM "geninc.mod">
+ %general.inclusions;
 ]>
 
 <gamebook xml:lang="en-UK" version="0.11">
@@ -18,6 +16,9 @@
 $Id$
 
 $Log$
+Revision 1.4  2006/11/25 04:45:51  jonathan.blake
+Corrections for most pending errors, and modernization of markup.
+
 Revision 1.3  2006/01/05 18:04:07  jonathan.blake
 Adding Paul Haskell as an Illustration Transcriptionist
 
@@ -95,17 +96,8 @@ Todo:
  <creator class="short">Joe Dever and Gary Chalk</creator>
  <creator class="medium">Joe Dever<br />Illustrated by Gary Chalk</creator>
  <creator class="long">
-  <p><strong>Joe Dever</strong>, the creator of the bestselling Lone Wolf adventure books and novels, has achieved world-wide recognition in three creative fields&emdash;as an award-winning author of international renown, as an acclaimed musician and composer, and as a games designer specialising in role-playing games.</p>
-  <p>On graduating from college in 1974, Joe Dever became a professional musician, and for several years, he worked in the music industry in Europe and the United States.</p>
-  <p>While working in Los Angeles in 1977 he discovered a then little-known game called <quote>Dungeons &ampersand; Dragons</quote>. Although the game was in its infancy, Joe at once realised its huge potential and began designing his own role-playing games along similar conceptual lines. These first games were to form the basis of a fantasy world called Magnamund, which later became the setting for the Lone Wolf books.</p>
-  <p>Five years later, in 1982, Joe won the Advanced Dungeons &ampersand; Dragons World Championships in Baltimore, an event held before 16,000 people. Inspired and encouraged by his success at Origins, Joe decided to quit the music business and devote his time to writing and games design.</p>
-  <p>In 1983, after a brief spell at Games Workshop in London, he wrote <cite>Flight from the Dark</cite>&emdash;the first Lone Wolf interactive gamebook. His manuscript immediately attracted a frenzy of interest from three major London publishing companies, all of whom bid for world rights. Joe accepted an offer of publication from Hutchinson's (later to become Century Hutchinson Ltd; now Random House UK) and <cite>Flight from the Dark</cite> was first published in 1984.</p>
-  <p>This first book sold more than 100,000 copies within its first month of publication, and overseas rights were snapped up by twelve countries (including the United States, France, Germany, Japan, Italy and Sweden). The success of Joe's first book laid the foundations for the future of the Lone Wolf series, which has sold millions of copies around the world.</p>
-  <p>The Lone Wolf series ended after 28 books and 14 years. Joe has continued to work in the games industry as script writer and games design consultant.</p>
-  <p><strong>Gary Chalk</strong>, the illustrator of the early Lone Wolf series, was born in 1952, grew up in Hertfordshire, England. Being interested in history, he began playing war games at the age of fifteen. When he graduated from college with a Bachelor of Arts in design, Gary spent three years training in a studio before becoming a teacher in art and design.</p>
-  <p>Gary was working as a children&apos;s book illustrator when he became involved in adventure gaming, an interest which eventually led to the creation of several successful games. He is the inventor/illustrator of some of Britain&apos;s biggest-selling fantasy games including Cry Havoc, Starship Captain and Battlecars (co-designed with Ian Livingstone). He is also known for his work on the very successful game, Talisman.</p>
-  <p>Gary was working at Games Workshop when Joe Dever asked him to illustrate some of his manuscript of Flight from the Dark. The two teamed up after that and, they continued to work together until the eighth book in the series, <cite>The Jungle of Horrors</cite>.</p>
-  <p>Gary has also drawn the illustrations in <cite>Redwall</cite> and related books, <cite>The Prince of Shadows</cite> gamebook series, and several books which he also authored. Gary continues to enjoy war gaming and works as an illustrator and model maker. He maintains a <a href="&link.gary.chalk.website;">website</a> with examples of his work.</p>
+   &inclusion.joe.dever.bio.lw;
+   &inclusion.gary.chalk.bio.lw;
  </creator>
  <publisher>Project Aon</publisher>
  <date class="publication"><year>2003</year><month>3</month><day>29</day></date>
@@ -115,9 +107,9 @@ Todo:
  <description class="publication">
   <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
  </description>
- <rights class="copyrights">Text copyright &copy; 1984 Joe Dever.<br />Illustrations copyright &copy; 1984 Gary Chalk.</rights>
+ <rights class="copyrights">Text copyright <ch.copy/> 1984 Joe Dever.<br />Illustrations copyright <ch.copy/> 1984 Gary Chalk.</rights>
  <rights class="license-notification">
-  <p>Text copyright &copy; 1984 Joe Dever.<br />Illustrations copyright &copy; 1984 Gary Chalk.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+  <p>Text copyright <ch.copy/> 1984 Joe Dever.<br />Illustrations copyright <ch.copy/> 1984 Gary Chalk.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
  </rights>
 </meta>
 
@@ -156,7 +148,7 @@ Todo:
    </meta>
 
    <data>
-    <p><quote>I would be especially pleased if my granting of the rights to distribute my books in this way was seen as my <quote>millennium gift</quote> to all those devoted readers who have kept the Kai flag flying high, through all the good times, and the not-so-good. It would make me very proud indeed if this enterprise laid the foundations of a lasting legacy, securing the longevity of Lone Wolf by making my creation freely and readily accessible to current and future online generations. For them, for us, for Sommerlund and the Kai.&ellips;</quote> <strong>Joe Dever</strong></p>
+    <p><quote>I would be especially pleased if my granting of the rights to distribute my books in this way was seen as my <quote>millennium gift</quote> to all those devoted readers who have kept the Kai flag flying high, through all the good times, and the not-so-good. It would make me very proud indeed if this enterprise laid the foundations of a lasting legacy, securing the longevity of Lone Wolf by making my creation freely and readily accessible to current and future online generations. For them, for us, for Sommerlund and the Kai.<ch.ellips/></quote> <strong>Joe Dever</strong></p>
     <p>Project Aon would first like to thank Joe Dever for making this generous offering of the books that we have all loved from the beginning. We would also like to acknowledge the following members of Project Aon for their diligent work:</p>
 
     <section class="frontmatter" id="credits">
@@ -174,11 +166,11 @@ Todo:
        <dt>Alternate Illustrations</dt>
         <dd>JC Alvarez (text illustrations and action charts)<br />Jonathan Blake (extramatter charts and tables)<br />Michael Hahn (map)</dd>
        <dt>Proofreading</dt>
-        <dd>Mark Laird (Sections 36&endash;70 and 281&endash;315)<br />Christian Leonhard (Sections 106&endash;140 and 211&endash;245)<br />Brad Phelps (Sections 176&endash;210)<br />Michael Richey (Sections 1&endash;35 and 316&endash;350)<br />Tyson Torres (Sections 71&endash;105, 141&endash;175 and 246&endash;280)</dd>
+        <dd>Mark Laird (Sections 36<ch.endash/>70 and 281<ch.endash/>315)<br />Christian Leonhard (Sections 106<ch.endash/>140 and 211<ch.endash/>245)<br />Brad Phelps (Sections 176<ch.endash/>210)<br />Michael Richey (Sections 1<ch.endash/>35 and 316<ch.endash/>350)<br />Tyson Torres (Sections 71<ch.endash/>105, 141<ch.endash/>175 and 246<ch.endash/>280)</dd>
        <dt>Editing</dt>
-        <dd>Mike Feldman<br />Ingo Kl&ouml;cker<br />Mark Laird<br />Simon Osborne<br />Thomas Wolmer</dd>
+        <dd>Mike Feldman<br />Ingo Kl<ch.ouml/>cker<br />Mark Laird<br />Simon Osborne<br />Thomas Wolmer</dd>
        <dt>PDF Layout</dt>
-        <dd>Ingo Kl&ouml;cker</dd>
+        <dd>Ingo Kl<ch.ouml/>cker</dd>
        <dt>Coordination</dt>
         <dd>Jonathan Blake</dd>
        <dt>Special Thanks</dt>
@@ -191,7 +183,7 @@ Todo:
 
   <section class="frontmatter" id="tssf">
    <meta>
-    <title>The Story So Far&ellips;</title>
+    <title>The Story So Far<ch.ellips/></title>
     <link class="prev" idref="acknwldg" />
     <link class="next" idref="gamerulz" />
    </meta>
@@ -203,7 +195,7 @@ Todo:
     <p>Now it is in the morning of the feast of Fehmarn, when all of the Kai Lords are present at the monastery for the celebrations. Suddenly a great black cloud comes from out of the western skies. So many are the numbers of the black-winged beasts that fill the sky, that the sun is completely hidden. The Darklords, ancient enemy of the Sommlending are attacking. War has begun.</p>
     <p>On this fateful morning, you, Silent Wolf (the name given to you by the Kai) have been sent to collect firewood in the forest as a punishment for your inattention in class. As you are preparing to return, you see to your horror a vast cloud of black leathery creatures swoop down and engulf the monastery.</p>
     <p>Dropping the wood, you race to the battle that has already begun. But in the unnatural dark, you stumble and strike your head on a low tree branch. As you lose consciousness, the last thing that you see in the poor light are the walls of the monastery crashing to the ground.</p>
-    <p>Many hours pass before you awake. With tears in your eyes you now survey the scene of destruction. Raising your face to the clear sky, you swear vengeance on the Darklords for the massacre of the Kai warriors, and with a sudden flash of realization you know what you must do. You must set off on a perilous journey to the capital city to warn the King of the terrible threat that now faces his people. For you are now the last of the Kai&emdash;you are now the Lone Wolf.</p>
+    <p>Many hours pass before you awake. With tears in your eyes you now survey the scene of destruction. Raising your face to the clear sky, you swear vengeance on the Darklords for the massacre of the Kai warriors, and with a sudden flash of realization you know what you must do. You must set off on a perilous journey to the capital city to warn the King of the terrible threat that now faces his people. For you are now the last of the Kai<ch.emdash/>you are now the Lone Wolf.</p>
     <illustration class="float">
      <meta>
       <creator>JC Alvarez</creator>
@@ -222,7 +214,7 @@ Todo:
 
    <data>
     <p>You keep a record of your adventure on the <a idref="action">Action Chart</a>.</p>
-    <p>During your training as a Kai Lord you have developed fighting prowess&emdash;<typ class="attribute">COMBAT SKILL</typ> and physical stamina&emdash;<typ class="attribute">ENDURANCE</typ>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it on to the <a idref="random">Random Number Table</a>. If you pick 0 it counts as zero.</p>
+    <p>During your training as a Kai Lord you have developed fighting prowess<ch.emdash/><typ class="attribute">COMBAT SKILL</typ> and physical stamina<ch.emdash/><typ class="attribute">ENDURANCE</typ>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it on to the <a idref="random">Random Number Table</a>. If you pick 0 it counts as zero.</p>
     <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 10 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a>. (i.e. if your pencil fell on the number 4 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> Of 14.) When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore very desirable.</p>
     <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 20 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a>. (i.e. if your pencil fell on the number 6 on the <a idref="random">Random Number Table</a> you would have 26 <typ class="attribute">ENDURANCE</typ> points.)</p>
     <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never go above the number with which you start your adventure.</p>
@@ -310,7 +302,7 @@ Todo:
           </ul>
          </instance>
         </illustration>
-        <p>You cannot carry more than 2 weapons. If you choose this skill, write <quote>Weaponskill in &blankline; +2 <typ class="attribute">COMBAT SKILL</typ> points if this weapon carried</quote> on your <a idref="action">Action Chart</a>.</p>
+        <p>You cannot carry more than 2 weapons. If you choose this skill, write <quote>Weaponskill in <ch.blankline/> +2 <typ class="attribute">COMBAT SKILL</typ> points if this weapon carried</quote> on your <a idref="action">Action Chart</a>.</p>
        </data>
       </section>
 
@@ -429,18 +421,18 @@ Todo:
        <meta><title>How to Carry Equipment</title></meta>
 
        <data>
-        <p>Now that you have your equipment, the following list shows you how it is carried. You don&apos;t need to make notes but you can refer back to this list in the course of your adventure.</p>
+        <p>Now that you have your equipment, the following list shows you how it is carried. You don<ch.apos/>t need to make notes but you can refer back to this list in the course of your adventure.</p>
         <ul>
-         <li>1 = Sword&emdash;carried in the hand.</li>
-         <li>2 = Helmet&emdash;worn on the head.</li>
-         <li>3 = Food&emdash;placed in the Backpack.</li>
-         <li>4 = Chainmail Waistcoat&emdash;worn on the body.</li>
-         <li>5 = Mace&emdash;carried in the hand.</li>
-         <li>6 = Healing Potion&emdash;carried in the Backpack.</li>
-         <li>7 = Quarterstaff&emdash;carried in the hand.</li>
-         <li>8 = Spear&emdash;carried in the hand.</li>
-         <li>9 = Gold Crowns&emdash;carried in the Belt Pouch.</li>
-         <li>0 = Broadsword&emdash;carried in the hand.</li>
+         <li>1 = Sword<ch.emdash/>carried in the hand.</li>
+         <li>2 = Helmet<ch.emdash/>worn on the head.</li>
+         <li>3 = Food<ch.emdash/>placed in the Backpack.</li>
+         <li>4 = Chainmail Waistcoat<ch.emdash/>worn on the body.</li>
+         <li>5 = Mace<ch.emdash/>carried in the hand.</li>
+         <li>6 = Healing Potion<ch.emdash/>carried in the Backpack.</li>
+         <li>7 = Quarterstaff<ch.emdash/>carried in the hand.</li>
+         <li>8 = Spear<ch.emdash/>carried in the hand.</li>
+         <li>9 = Gold Crowns<ch.emdash/>carried in the Belt Pouch.</li>
+         <li>0 = Broadsword<ch.emdash/>carried in the hand.</li>
         </ul>
        </data>
       </section>
@@ -496,8 +488,8 @@ Todo:
      </meta>
 
      <data>
-      <p>There will be occasions on your adventure when you have to fight an enemy. The enemy&apos;s <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points are given in the text. Lone Wolf&apos;s aim in the combat is to kill the enemy by reducing his <typ class="attribute">ENDURANCE</typ> points to zero while losing as few <typ class="attribute">ENDURANCE</typ> points as possible himself.</p>
-      <p>At the start of a combat, enter Lone Wolf&apos;s and the enemy&apos;s <typ class="attribute">ENDURANCE</typ> points in the appropriate boxes on the Combat Record section of your <a idref="action">Action Chart</a>.</p>
+      <p>There will be occasions on your adventure when you have to fight an enemy. The enemy<ch.apos/>s <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points are given in the text. Lone Wolf<ch.apos/>s aim in the combat is to kill the enemy by reducing his <typ class="attribute">ENDURANCE</typ> points to zero while losing as few <typ class="attribute">ENDURANCE</typ> points as possible himself.</p>
+      <p>At the start of a combat, enter Lone Wolf<ch.apos/>s and the enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> points in the appropriate boxes on the Combat Record section of your <a idref="action">Action Chart</a>.</p>
       <p>The sequence for combat is as follows.</p>
       <ol class="paragraphed">
        <li><p>Add any extra points gained through your Kai Disciplines to your current <typ class="attribute">COMBAT SKILL</typ> total.</p></li>
@@ -505,7 +497,7 @@ Todo:
         <p>Subtract the <typ class="attribute">COMBAT SKILL</typ> of your enemy from this total. The result is your Combat Ratio. Enter it on the <a idref="action">Action Chart</a>.</p>
         <p>Example</p>
         <p>Lone Wolf (<typ class="attribute">COMBAT SKILL</typ> 15) is ambushed by a Winged Devil (<typ class="attribute">COMBAT SKILL</typ> 20). He is not given the opportunity to evade combat, but must stand and fight as the creature swoops down on him. Lone Wolf has the Kai Discipline of Mindblast, so he adds 2 points to his <typ class="attribute">COMBAT SKILL</typ>, giving a total <typ class="attribute">COMBAT SKILL</typ> of 17.</p>
-        <p>He subtracts the Winged Devil&apos;s <typ class="attribute">COMBAT SKILL</typ> from his own, giving a Combat Ratio of &minus;3 (17 &minus; 20 = &minus;3). &minus;3 is noted on the <a idref="action">Action Chart</a> as the Combat Ratio.</p>
+        <p>He subtracts the Winged Devil<ch.apos/>s <typ class="attribute">COMBAT SKILL</typ> from his own, giving a Combat Ratio of <ch.minus/>3 (17 <ch.minus/> 20 = <ch.minus/>3). <ch.minus/>3 is noted on the <a idref="action">Action Chart</a> as the Combat Ratio.</p>
        </li>
        <li><p><a id="stage3">When you have your Combat Ratio</a>, pick a number from the <a idref="random">Random Number Table</a>.</p></li>
        <li>
@@ -548,7 +540,7 @@ Todo:
        <li>Intuite</li>
        <li>Doan</li>
        <li>Acolyte</li>
-       <li>Initiate&emdash;You begin the  Lone Wolf adventures with this level of Kai training</li>
+       <li>Initiate<ch.emdash/>You begin the  Lone Wolf adventures with this level of Kai training</li>
        <li>Aspirant</li>
        <li>Guardian</li>
        <li>Warmarn or Journeyman</li>
@@ -586,7 +578,7 @@ Todo:
      <meta><title>1</title></meta>
 
      <data>
-      <p>You must make haste for you sense it is not safe to linger by the smoking remains of the ruined monastery. The black-winged beasts could return at any moment. You must set out for the Sommlending capital of Holmgard and tell the King the terrible news of the massacre: that the whole &eacute;lite of Kai warriors, save yourself, have been slaughtered. Without the Kai Lords to lead her armies, Sommerlund will be at the mercy of their ancient enemy, the Darklords.</p>
+      <p>You must make haste for you sense it is not safe to linger by the smoking remains of the ruined monastery. The black-winged beasts could return at any moment. You must set out for the Sommlending capital of Holmgard and tell the King the terrible news of the massacre: that the whole <ch.eacute/>lite of Kai warriors, save yourself, have been slaughtered. Without the Kai Lords to lead her armies, Sommerlund will be at the mercy of their ancient enemy, the Darklords.</p>
       <p>Fighting back tears, you bid farewell to your dead kinsmen. Silently, you promise that their deaths will be avenged. You turn away from the ruins and carefully descend the steep track.</p>
       <p>At the foot of the hill, the path splits into two directions, both leading into a large wood.</p>
       <choice idref="sect141">If you wish to use your Kai Discipline of Sixth Sense, <link-text>turn to 141</link-text>.</choice>
@@ -601,8 +593,8 @@ Todo:
      <data>
       <p>As you dash through the thickening trees, the shouts of the Giaks begin to fade behind you. You have nearly outdistanced them completely, when you crash headlong into a tangle of low branches.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <choice idref="sect343">If you have picked a number 0&endash;4, <link-text>turn to 343</link-text>.</choice>
-      <choice idref="sect276">If you have picked a number 5&endash;9, <link-text>turn to 276</link-text>.</choice>
+      <choice idref="sect343">If you have picked a number 0<ch.endash/>4, <link-text>turn to 343</link-text>.</choice>
+      <choice idref="sect276">If you have picked a number 5<ch.endash/>9, <link-text>turn to 276</link-text>.</choice>
      </data>
     </section>
 
@@ -611,7 +603,7 @@ Todo:
 
      <data>
       <p>Staying close to the officer, you follow him through an arched portal and up a short flight of stairs to a long hall. Soldiers run back and forth bearing orders on ornate scrolls to officers stationed around the city wall.</p>
-      <p>A haggard and scar-faced man dressed in the white and purple robes of the King&apos;s court approaches you and bids you follow him to the citadel.</p>
+      <p>A haggard and scar-faced man dressed in the white and purple robes of the King<ch.apos/>s court approaches you and bids you follow him to the citadel.</p>
       <choice idref="sect196">If you wish to follow this man, <link-text>turn to 196</link-text>.</choice>
       <choice idref="sect144">If you wish to decline his offer and return to the crowded streets, <link-text>turn to 144</link-text>.</choice>
      </data>
@@ -642,7 +634,7 @@ Todo:
      <meta><title>6</title></meta>
 
      <data>
-      <p>In the distance you can hear the sound of horses galloping nearer. You crouch behind a tree and wait as the riders come closer. They are the cavalry of the King&apos;s Guard wearing the white uniforms of His Majesty&apos;s army.</p>
+      <p>In the distance you can hear the sound of horses galloping nearer. You crouch behind a tree and wait as the riders come closer. They are the cavalry of the King<ch.apos/>s Guard wearing the white uniforms of His Majesty<ch.apos/>s army.</p>
       <illustration class="inline">
        <meta>
         <creator>JC Alvarez</creator>
@@ -678,8 +670,8 @@ Todo:
       <p>After careful thought, you decide to use the <quote>Roofways</quote>, as they are your only chance of reaching the King. You have hopped, skipped and jumped across several streets and you are only one street away from the citadel when you come to the end of a row of rooftops.</p>
       <p>The jump to the next row is much further than anything you have tried before, and your stomach begins to feel as if it were full of butterflies. Determined to reach the citadel, you turn and take a long run-up to the jump. With blood pounding in your ears, you sprint to the edge of the roof and leap into space, your eyes fixed on the opposite rooftop.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <choice idref="sect108">If you have picked a number that is 0&endash;2, <link-text>turn to 108</link-text>.</choice>
-      <choice idref="sect25">If the number if 3&endash;9, <link-text>turn to 25</link-text>.</choice>
+      <choice idref="sect108">If you have picked a number that is 0<ch.endash/>2, <link-text>turn to 108</link-text>.</choice>
+      <choice idref="sect25">If the number if 3<ch.endash/>9, <link-text>turn to 25</link-text>.</choice>
      </data>
     </section>
 
@@ -716,7 +708,7 @@ Todo:
      <meta><title>11</title></meta>
 
      <data>
-      <p>You quickly dodge into the doorway of a stable and hide your surgeon&apos;s cloak in the straw, for it would be better to be seen as a Kai Lord than as a charlatan.</p>
+      <p>You quickly dodge into the doorway of a stable and hide your surgeon<ch.apos/>s cloak in the straw, for it would be better to be seen as a Kai Lord than as a charlatan.</p>
       <p>Without wasting a second, you set off towards the Great Hall on the other side of the courtyard.</p>
       <choice idref="sect139"><link-text>Turn to 139</link-text>.</choice>
      </data>
@@ -778,7 +770,7 @@ Todo:
      <meta><title>16</title></meta>
 
      <data>
-      <p>You manage to free a horse from the straps securing it to the caravan. It is frightened by the scent of the approaching Doomwolves, and the cries of their evil riders&emdash;the Giaks.</p>
+      <p>You manage to free a horse from the straps securing it to the caravan. It is frightened by the scent of the approaching Doomwolves, and the cries of their evil riders<ch.emdash/>the Giaks.</p>
       <p>Preparing your weapon, you spur your skittish horse towards the oncoming beasts. They are less than fifty yards away and they are lowering their lances at you as they get nearer and nearer.</p>
       <choice idref="sect192">You are charging head-on towards each other.  <link-text>Turn to 192</link-text>.</choice>
      </data>
@@ -800,8 +792,8 @@ Todo:
       <p>If you kill the creature, you quickly descend the far side of the hill to avoid the Giaks.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect53">If you pick 0, <link-text>turn to 53</link-text>.</choice>
-      <choice idref="sect274">If you pick 1&endash;2, <link-text>turn to 274</link-text>.</choice>
-      <choice idref="sect316">If you pick 3&endash;9, <link-text>turn to 316</link-text>.</choice>
+      <choice idref="sect274">If you pick 1<ch.endash/>2, <link-text>turn to 274</link-text>.</choice>
+      <choice idref="sect316">If you pick 3<ch.endash/>9, <link-text>turn to 316</link-text>.</choice>
      </data>
     </section>
 
@@ -832,7 +824,7 @@ Todo:
      <meta><title>20</title></meta>
 
      <data>
-      <p>It seems that whoever lived here left in a great hurry&emdash;and they must have left quite recently. A half-eaten meal still remains on the table, and a mug of dark jala is still warm to the touch.</p>
+      <p>It seems that whoever lived here left in a great hurry<ch.emdash/>and they must have left quite recently. A half-eaten meal still remains on the table, and a mug of dark jala is still warm to the touch.</p>
       <p>Searching a chest and small wardrobe, you find a Backpack, food (enough for two Meals), and a Dagger.</p>
       <p>If you wish to take these items, remember to mark them on your <a idref="action">Action Chart</a>. You continue your mission.</p>
       <choice idref="sect273"><link-text>Turn to 273</link-text>.</choice>
@@ -864,8 +856,8 @@ Todo:
        <instance class="pdf" src="sect205.pdf" width="192" height="188" />
       </illustration>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <choice idref="sect181">If you have picked a number 0&endash;4, <link-text>turn to 181</link-text>.</choice>
-      <choice idref="sect145">If you have picked a number 5&endash;9, <link-text>turn to 145</link-text>.</choice>
+      <choice idref="sect181">If you have picked a number 0<ch.endash/>4, <link-text>turn to 181</link-text>.</choice>
+      <choice idref="sect145">If you have picked a number 5<ch.endash/>9, <link-text>turn to 145</link-text>.</choice>
      </data>
     </section>
 
@@ -893,7 +885,7 @@ Todo:
      <meta><title>24</title></meta>
 
      <data>
-      <p>The merchant shouts to the driver of the caravan to jump. <quote>We&apos;re under attack!</quote> he cries, disappearing through a circular window.</p>
+      <p>The merchant shouts to the driver of the caravan to jump. <quote>We<ch.apos/>re under attack!</quote> he cries, disappearing through a circular window.</p>
       <choice idref="sect234">If you decide to jump after him, <link-text>turn to 234</link-text>.</choice>
       <choice idref="sect184">If you decide to run through the caravan and grab the reins of the horse team, <link-text>turn to 184</link-text>.</choice>
      </data>
@@ -904,7 +896,7 @@ Todo:
 
      <data>
       <p>You land with such a crash on the opposite roof, that the wind is knocked out of you and you lie flat on your back with your head in a spin.</p>
-      <p>It takes a minute or so for you to realize that you&apos;ve made it and are perfectly safe. When you are sure you are all right, you jump up and let out a shout for joy at your skill and daring.</p>
+      <p>It takes a minute or so for you to realize that you<ch.apos/>ve made it and are perfectly safe. When you are sure you are all right, you jump up and let out a shout for joy at your skill and daring.</p>
       <p>Quickly you find a way across the roof and climb down a long drainpipe to the street below. You see the large iron doors of the citadel open, and a wagon drawn by two large horses tries to leave. The horses are frightened by the noisy crowd and they both rear up, causing the wagon to smash a front wheel against the door. In the confusion, you see a chance to enter and quickly slip inside just as the guards slam the doors shut.</p>
       <choice idref="sect139"><link-text>Turn to 139</link-text>.</choice>
      </data>
@@ -944,7 +936,7 @@ Todo:
      <meta><title>29</title></meta>
 
      <data>
-      <p>You stride out to the water&apos;s edge and prepare yourself for combat. The Kraan and its rider spot you and begin to speed across the lake barely inches above the surface.</p>
+      <p>You stride out to the water<ch.apos/>s edge and prepare yourself for combat. The Kraan and its rider spot you and begin to speed across the lake barely inches above the surface.</p>
       <p>The rider lets out a scream that freezes your blood. He is a Vordak, a fierce lieutenant of the Darklords.</p>
       <p>He is upon you and you must fight him. Deduct 2 points from your <typ class="attribute">COMBAT SKILL</typ> unless you have the Kai Discipline of Mindshield, for the creature is attacking you with its Mindforce as well as with a huge black mace.</p>
       <combat><enemy>Vordak</enemy><enemy-attribute class="combatskill">17</enemy-attribute><enemy-attribute class="endurance">25</enemy-attribute></combat> 
@@ -973,7 +965,7 @@ Todo:
        <instance class="pdf" src="sect30.pdf" width="311" height="196" />
       </illustration>
       <choice idref="sect194">If you wish to help the children, <link-text>turn to 194</link-text>.</choice>
-      <choice idref="sect261">If you&apos;d rather run for the cover of the trees, <link-text>turn to 261</link-text>.</choice>
+      <choice idref="sect261">If you<ch.apos/>d rather run for the cover of the trees, <link-text>turn to 261</link-text>.</choice>
      </data>
     </section>
 
@@ -1070,7 +1062,7 @@ Todo:
      <meta><title>39</title></meta>
 
      <data>
-      <p>After a few seconds, two small furry faces nervously appear over the top of the trunk. They say they are Kakarmi and tell you that the Kraan are everywhere. To the west lie the remains of their village but little is left of it now. They are trying to find the rest of their tribe who took to the forest when the <quote>Black-wings</quote> attacked. They point behind them&emdash;east along the path&emdash;and tell you that the trail appears to be a dead end, but that if you continue through the undergrowth for a few yards more, you will find a watchtower where the path splits into three directions. Take the east path. This leads to the King&apos;s highway between the capital city&emdash;Holmgard&emdash;and the northern port of Toran.</p>
+      <p>After a few seconds, two small furry faces nervously appear over the top of the trunk. They say they are Kakarmi and tell you that the Kraan are everywhere. To the west lie the remains of their village but little is left of it now. They are trying to find the rest of their tribe who took to the forest when the <quote>Black-wings</quote> attacked. They point behind them<ch.emdash/>east along the path<ch.emdash/>and tell you that the trail appears to be a dead end, but that if you continue through the undergrowth for a few yards more, you will find a watchtower where the path splits into three directions. Take the east path. This leads to the King<ch.apos/>s highway between the capital city<ch.emdash/>Holmgard<ch.emdash/>and the northern port of Toran.</p>
       <illustration class="inline">
        <meta>
         <creator>Gary Chalk</creator>
@@ -1147,8 +1139,8 @@ Todo:
      <data>
       <p>Without warning, the old track ends abruptly at the edge of a steep slope. The ground here is very loose and unstable. You lose your footing and fall headlong over the edge.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <choice idref="sect277">If you have picked a number that is 0&endash;4, <link-text>turn to 277</link-text>.</choice>
-      <choice idref="sect338">If the number is 5&endash;9, <link-text>turn to 338</link-text>.</choice>
+      <choice idref="sect277">If you have picked a number that is 0<ch.endash/>4, <link-text>turn to 277</link-text>.</choice>
+      <choice idref="sect338">If the number is 5<ch.endash/>9, <link-text>turn to 338</link-text>.</choice>
      </data>
     </section>
 
@@ -1198,8 +1190,8 @@ Todo:
      <data>
       <p>As you begin to read the inscription, you notice a shadow moving towards you from behind the screen.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <choice idref="sect339">If you have chosen a number that is 0&endash;4, <link-text>turn to 339</link-text>.</choice>
-      <choice idref="sect60">If the number is 5&endash;9, <link-text>turn to 60</link-text>.</choice>
+      <choice idref="sect339">If you have chosen a number that is 0<ch.endash/>4, <link-text>turn to 339</link-text>.</choice>
+      <choice idref="sect60">If the number is 5<ch.endash/>9, <link-text>turn to 60</link-text>.</choice>
      </data>
     </section>
 
@@ -1268,7 +1260,7 @@ Todo:
      <meta><title>55</title></meta>
 
      <data>
-      <p>Just as the Giak makes his leap, you race forward and strike out with your weapon&emdash;knocking the creature away from the young wizard&apos;s back.</p>
+      <p>Just as the Giak makes his leap, you race forward and strike out with your weapon<ch.emdash/>knocking the creature away from the young wizard<ch.apos/>s back.</p>
       <p>You jump onto the struggling Giak and strike again. Due to the surprise of your attack, add 4 points to your <typ class="attribute">COMBAT SKILL</typ> for the duration of this fight but remember to deduct it again as soon as the fight is over.</p>
       <combat><enemy>Giak</enemy><enemy-attribute class="combatskill">9</enemy-attribute><enemy-attribute class="endurance">9</enemy-attribute></combat> 
       <choice idref="sect325">If you win, <link-text>turn to 325</link-text>.</choice>
@@ -1329,7 +1321,7 @@ Todo:
      <meta><title>60</title></meta>
 
      <data>
-      <p>The last thing you remember before darkness engulfs you is the flash of a long curved steel knife. You have become yet another victim of the Sage and his robber son&emdash;the very one who has just slit your throat!</p>
+      <p>The last thing you remember before darkness engulfs you is the flash of a long curved steel knife. You have become yet another victim of the Sage and his robber son<ch.emdash/>the very one who has just slit your throat!</p>
       <p>Your quest ends here.</p>
      </data>
     </section>
@@ -1404,7 +1396,7 @@ Todo:
      <data>
       <p>Startled, you turn around to see a burly sergeant and two soldiers running towards you, their swords drawn as if to strike.</p>
       <p>You prepare to defend yourself for it looks as if they are about to attack first and ask questions later; but suddenly the sergeant calls his men to a halt. He has recognized your cloak. They put away their weapons and apologize many times for their mistake. The sergeant orders one of the men to fetch the captain of the Guard as he leads you to the doors of the Great Hall.</p>
-      <p>You are greeted by a tall and handsome warrior who listens intently to your story. When you have finished the account of your perilous journey to the capital, you notice a tear in the brave man&apos;s eye as he bids you to follow him. You walk through the splendid halls and corridors of the inner Palace. The richness and grandeur are a wonder to behold. You eventually arrive at a large carved door, guarded by two soldiers wearing silver armour.</p>
+      <p>You are greeted by a tall and handsome warrior who listens intently to your story. When you have finished the account of your perilous journey to the capital, you notice a tear in the brave man<ch.apos/>s eye as he bids you to follow him. You walk through the splendid halls and corridors of the inner Palace. The richness and grandeur are a wonder to behold. You eventually arrive at a large carved door, guarded by two soldiers wearing silver armour.</p>
       <p>You are about to meet the King.</p>
       <choice idref="sect350"><link-text>Turn to 350</link-text>.</choice>
      </data>
@@ -1482,7 +1474,7 @@ Todo:
      <meta><title>73</title></meta>
 
      <data>
-      <p>Pulling your green cloak about you, you blend into the foliage and rocks. Peering carefully up at the track, you are shocked to see that they are not the King&apos;s men at all.</p>
+      <p>Pulling your green cloak about you, you blend into the foliage and rocks. Peering carefully up at the track, you are shocked to see that they are not the King<ch.apos/>s men at all.</p>
       <p>They are Drakkarim, some of the Darklords cruellest troops. They must have disguised themselves as soldiers of the King in order to get this far into the forest. Thanking your Kai training for saving your life, you silently slip away from the stream and push on into the forest.</p>
       <choice idref="sect243"><link-text>Turn to 243</link-text>.</choice>
      </data>
@@ -1509,7 +1501,7 @@ Todo:
      <meta><title>75</title></meta>
 
      <data>
-      <p>Peering out carefully, you can see three green-clad men on horses racing along the bank. You recognize them as border rangers, the regiment of the King&apos;s Army that police the western borders. One of them is wounded and is slumped over the neck of his horse.</p>
+      <p>Peering out carefully, you can see three green-clad men on horses racing along the bank. You recognize them as <!--ERRTAG-RE-93708-->Border Rangers<!--/ERRTAG-RE-93708-->, the regiment of the King<ch.apos/>s Army that police the western borders. One of them is wounded and is slumped over the neck of his horse.</p>
       <p>Close behind follow a pack of twenty Doomwolves. Their Giak riders are firing arrows at the rangers which fall all around them. One ranger drops from his horse and rolls down the river bank, a black arrow deeply embedded in his right leg.</p>
       <choice idref="sect260">If you wish to help the ranger, <link-text>turn to 260</link-text>.</choice>
       <choice idref="sect163">If you wish to stay hidden and drift downstream, <link-text>turn to 163</link-text>.</choice>
@@ -1572,7 +1564,7 @@ Todo:
      <meta><title>80</title></meta>
 
      <data>
-      <p>You stumble backwards through the front door, clutching your burnt chest with both hands. Smoke is billowing from the shop and you must run&emdash;before the Sage or his robber son catch you.</p>
+      <p>You stumble backwards through the front door, clutching your burnt chest with both hands. Smoke is billowing from the shop and you must run<ch.emdash/>before the Sage or his robber son catch you.</p>
       <p>You make it back to the main street and lose yourself in the rush of the crowds.</p>
       <choice idref="sect7"><link-text>Turn to 7</link-text>.</choice>
      </data>
@@ -1582,7 +1574,7 @@ Todo:
      <meta><title>81</title></meta>
 
      <data>
-      <p>After nearly an hour, the Kraan and their cruel riders vanish towards the west. As the shocked refugees start to emerge from the woods, you can hear the sound of horses in the distance galloping nearer. You stay hidden and wait as the riders come closer. They are the cavalry of the King&apos;s Guard wearing the white uniforms of His Majesty&apos;s army.</p>
+      <p>After nearly an hour, the Kraan and their cruel riders vanish towards the west. As the shocked refugees start to emerge from the woods, you can hear the sound of horses in the distance galloping nearer. You stay hidden and wait as the riders come closer. They are the cavalry of the King<ch.apos/>s Guard wearing the white uniforms of His Majesty<ch.apos/>s army.</p>
       <illustration class="inline">
        <meta>
         <creator>JC Alvarez</creator>
@@ -1605,7 +1597,7 @@ Todo:
      <meta><title>82</title></meta>
 
      <data>
-      <p>The giant Gourgaz lies dead at your feet. His evil followers hiss at you and then fall back from the bridge. The Prince&apos;s soldiers form a protective wall around you and their dying leader with their shields. Black arrows whistle past your head.</p>
+      <p>The giant Gourgaz lies dead at your feet. His evil followers hiss at you and then fall back from the bridge. The Prince<ch.apos/>s soldiers form a protective wall around you and their dying leader with their shields. Black arrows whistle past your head.</p>
       <p>The dying Prince looks up into your eyes and says, <quote>Kai Lord, you must take a message to my father. The enemy is too strong, we cannot hold him. The King must seek that which is in Durenor or all is lost. Take my horse and ride for the capital. May the luck of the gods ride with you.</quote></p>
       <illustration class="inline">
        <meta>
@@ -1613,7 +1605,7 @@ Todo:
        </meta>
        <instance class="html" height="288" width="288" src="82.gif" />
       </illustration>
-      <p>You bid a sad farewell to the Prince, mount his white steed and head south along the forest path. The battle still rages behind you as the Prince&apos;s men fight off another assault on the bridge.</p>
+      <p>You bid a sad farewell to the Prince, mount his white steed and head south along the forest path. The battle still rages behind you as the Prince<ch.apos/>s men fight off another assault on the bridge.</p>
       <choice idref="sect235"><link-text>Turn to 235</link-text>.</choice>
      </data>
     </section>
@@ -1635,8 +1627,8 @@ Todo:
      <meta><title>84</title></meta>
 
      <data>
-      <p>Just as you feel the air beating on your back, you slip free of your horse and roll over&emdash;landing with a splash in a muddy ditch by the side of the highway.</p>
-      <p>You are uninjured, and you quickly scramble to your feet and make a dash for the cover of the trees&emdash;but with thirty yards left to run, you see the Kraan circling above for another dive.</p>
+      <p>Just as you feel the air beating on your back, you slip free of your horse and roll over<ch.emdash/>landing with a splash in a muddy ditch by the side of the highway.</p>
+      <p>You are uninjured, and you quickly scramble to your feet and make a dash for the cover of the trees<ch.emdash/>but with thirty yards left to run, you see the Kraan circling above for another dive.</p>
       <choice idref="sect188"><link-text>Turn to 188</link-text>.</choice>
      </data>
     </section>
@@ -1667,7 +1659,7 @@ Todo:
      <meta><title>87</title></meta>
 
      <data>
-      <p>Focusing your powers on the lock, you try to visualize the inner mechanism. Gradually its image appears in your mind&apos;s eye. It is old and corroded but it still functions. You are in danger of losing your concentration when a subtle click confirms that your effort has not been in vain.</p>
+      <p>Focusing your powers on the lock, you try to visualize the inner mechanism. Gradually its image appears in your mind<ch.apos/>s eye. It is old and corroded but it still functions. You are in danger of losing your concentration when a subtle click confirms that your effort has not been in vain.</p>
       <p>The pin is an easier task. Slowly it rises out of the lock and falls to the floor. The granite door swings towards you on hidden hinges and the grey half-light of the Graveyard floods into the tomb. The exit is overgrown with graveweed and you suffer many small cuts to your face and hands as you fight your way through to the surface. You are startled by a sudden noise. You turn to see the disembodied head of a corpse laughing at you.</p>
       <p>In blind panic, you race through the eerie necropolis towards the southern gate.</p>
       <choice idref="sect61"><link-text>Turn to 61</link-text>.</choice>
@@ -1678,7 +1670,7 @@ Todo:
      <meta><title>88</title></meta>
 
      <data>
-      <p>You cautiously peer around the rock to see a soldier lying on his back. By his side is a Spear and shield. On the shield is the painting of a white pegasus&emdash;the Prince of Sommerlund&apos;s emblem. He is one of the Prince&apos;s soldiers, and he is only just conscious. His uniform is badly torn, and you can see that he has a deep wound in his left arm. As you move nearer, his eyes flicker open. <quote>Heal me, my Lord,</quote> he begs. <quote>I can barely feel my arm.</quote></p>
+      <p>You cautiously peer around the rock to see a soldier lying on his back. By his side is a Spear and shield. On the shield is the painting of a white pegasus<ch.emdash/>the Prince of Sommerlund<ch.apos/>s emblem. He is one of the Prince<ch.apos/>s soldiers, and he is only just conscious. His uniform is badly torn, and you can see that he has a deep wound in his left arm. As you move nearer, his eyes flicker open. <quote>Heal me, my Lord,</quote> he begs. <quote>I can barely feel my arm.</quote></p>
       <choice idref="sect216">If you possess and wish to use the Kai Discipline of Healing on this man, <link-text>turn to 216</link-text>.</choice>
       <choice idref="sect31">If you do not possess the skill, or do not want to use it, then <link-text>turn to 31</link-text>.</choice>
      </data>
@@ -1690,9 +1682,9 @@ Todo:
      <data>
       <p>In a cloud of dust and loose rocks you career down the steep hillside. The Kraan is still circling above as if waiting to direct the Giaks after you.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <choice idref="sect53">If you have picked 0&endash;1, <link-text>turn to 53</link-text>.</choice>
-      <choice idref="sect274">If it is 2&endash;4, <link-text>turn to 274</link-text>.</choice>
-      <choice idref="sect316">If it is 5&endash;9, <link-text>turn to 316</link-text>.</choice>
+      <choice idref="sect53">If you have picked 0<ch.endash/>1, <link-text>turn to 53</link-text>.</choice>
+      <choice idref="sect274">If it is 2<ch.endash/>4, <link-text>turn to 274</link-text>.</choice>
+      <choice idref="sect316">If it is 5<ch.endash/>9, <link-text>turn to 316</link-text>.</choice>
      </data>
     </section>
 
@@ -1752,7 +1744,7 @@ Todo:
 
      <data>
       <p>The Sage, seeing that you have killed his son, turns and runs from the shop by a back door.</p>
-      <p>You find 12 Gold Crowns in the robber&apos;s purse and another 4 Gold Crowns in a wooden box under the counter. Carefully examining the potions and the wand you soon realize that they are all cheap counterfeits. In fact the entire shop is full of imitations. You shake your head and return to the main street.</p>
+      <p>You find 12 Gold Crowns in the robber<ch.apos/>s purse and another 4 Gold Crowns in a wooden box under the counter. Carefully examining the potions and the wand you soon realize that they are all cheap counterfeits. In fact the entire shop is full of imitations. You shake your head and return to the main street.</p>
       <choice idref="sect7"><link-text>Turn to 7</link-text>.</choice>
      </data>
     </section>
@@ -1771,7 +1763,7 @@ Todo:
      <meta><title>96</title></meta>
 
      <data>
-      <p>Holding your breath, you tighten your grip on your weapon and prepare to strike. The tension is unbearable&emdash;the Giaks are so close that the foul stench of their unwashed bodies fills your nostrils. You hear them curse in their strange alien tongue and then leave the ledge and start to scramble towards the peak. When you are sure they have gone, you finally exhale and wipe the sweat from your eyes.</p>
+      <p>Holding your breath, you tighten your grip on your weapon and prepare to strike. The tension is unbearable<ch.emdash/>the Giaks are so close that the foul stench of their unwashed bodies fills your nostrils. You hear them curse in their strange alien tongue and then leave the ledge and start to scramble towards the peak. When you are sure they have gone, you finally exhale and wipe the sweat from your eyes.</p>
       <choice idref="sect33">If you wish to explore the cave further, <link-text>turn to 33</link-text>.</choice>
       <choice idref="sect248">If you wish to leave the cave and descend the hill in case the Giaks return, <link-text>turn to 248</link-text>.</choice>
      </data>
@@ -1781,7 +1773,7 @@ Todo:
      <meta><title>97</title></meta>
 
      <data>
-      <p>Ahead of you, you can see a fierce battle raging across a stone bridge. The clash of steel and the cries of men and beasts echo through the forest. In the midst of the fighting, you see Prince Pelathar, the King&apos;s son. He is in combat with a large grey Gourgaz who is wielding a black axe above his scaly head. Suddenly, the Prince falls wounded&emdash;a black arrow in his side.</p>
+      <p>Ahead of you, you can see a fierce battle raging across a stone bridge. The clash of steel and the cries of men and beasts echo through the forest. In the midst of the fighting, you see Prince Pelathar, the King<ch.apos/>s son. He is in combat with a large grey Gourgaz who is wielding a black axe above his scaly head. Suddenly, the Prince falls wounded<ch.emdash/>a black arrow in his side.</p>
       <illustration class="float">
        <meta>
         <creator>JC Alvarez</creator>
@@ -1842,7 +1834,7 @@ Todo:
 
      <data>
       <p>The noise of battle soon fades behind you but the ensuing silence is broken by a voice in your head that accuses you of being a coward, and deserting a fellow human in danger. You try to rid yourself of your nagging conscience by telling yourself that your mission is far more important, and that not only is the life of the young magician in peril but the lives of all your countrymen depend on you reaching the capital alive.</p>
-      <p>Suddenly, the sight of a Giak war party in the distance makes you quickly take cover and hide. But it is too late&emdash;they have spotted you and you must run as fast as you can.</p>
+      <p>Suddenly, the sight of a Giak war party in the distance makes you quickly take cover and hide. But it is too late<ch.emdash/>they have spotted you and you must run as fast as you can.</p>
       <choice idref="sect281"><link-text>Turn to 281</link-text>.</choice>
      </data>
     </section>
@@ -1943,7 +1935,7 @@ Todo:
      <meta><title>110</title></meta>
 
      <data>
-      <p>You quickly take aim and hurl the rock at the Giak&apos;s head as hard as you can, but to your horror the creature ducks and the rock arcs harmlessly over its back. You must act immediately to save the wizard.</p>
+      <p>You quickly take aim and hurl the rock at the Giak<ch.apos/>s head as hard as you can, but to your horror the creature ducks and the rock arcs harmlessly over its back. You must act immediately to save the wizard.</p>
       <choice idref="sect55"><link-text>Turn to 55</link-text>.</choice>
      </data>
     </section>
@@ -2168,9 +2160,9 @@ Todo:
      <meta><title>128</title></meta>
 
      <data>
-      <p>Carefully parting the dense foliage, you are horrified by the sight that meets you. In a small clearing ahead, three Giaks have tied a man to a wooden stake and are setting fire to a mass of brushwood bundled at his feet. You recognize his tunic as that of a border ranger, one of the King&apos;s men who police the kingdom near the Durncrag mountains of the west. He has been badly beaten and is nearly unconscious.</p>
+      <p>Carefully parting the dense foliage, you are horrified by the sight that meets you. In a small clearing ahead, three Giaks have tied a man to a wooden stake and are setting fire to a mass of brushwood bundled at his feet. You recognize his tunic as that of a <!--ERRTAG-RE-134226-->Border Ranger<!--/ERRTAG-RE-134226-->, one of the King<ch.apos/>s men who police the kingdom near the Durncrag mountains of the west. He has been badly beaten and is nearly unconscious.</p>
       <choice idref="sect297">If you have the Kai Discipline of Hunting, <link-text>turn to 297</link-text>.</choice>
-      <choice idref="sect336">If you do not, you must attack the Giaks now in order to save the ranger&apos;s life. <link-text>Turn to 336</link-text>.</choice>
+      <choice idref="sect336">If you do not, you must attack the Giaks now in order to save the ranger<ch.apos/>s life. <link-text>Turn to 336</link-text>.</choice>
      </data>
     </section>
 
@@ -2178,9 +2170,9 @@ Todo:
      <meta><title>129</title></meta>
 
      <data>
-      <p>You reach the main gates of the capital, and stare in awe at the height of the city&apos;s walls. Two hundred feet high, the walls of Holmgard have withstood the ravages of both time and the Darklords. You and the officer race through the tunnel of the inner gatehouse, one hundred yards in length, and finally halt outside the doorway of the main watchtower. Great crowds of soldiers and civilians are running to and fro.</p>
+      <p>You reach the main gates of the capital, and stare in awe at the height of the city<ch.apos/>s walls. Two hundred feet high, the walls of Holmgard have withstood the ravages of both time and the Darklords. You and the officer race through the tunnel of the inner gatehouse, one hundred yards in length, and finally halt outside the doorway of the main watchtower. Great crowds of soldiers and civilians are running to and fro.</p>
       <choice idref="sect3">If you wish to continue following the officer, <link-text>turn to 3</link-text>.</choice>
-      <choice idref="sect144">If you feel that you stand a better chance of making your way to the King&apos;s citadel on your own, <link-text>turn to 144</link-text>.</choice>
+      <choice idref="sect144">If you feel that you stand a better chance of making your way to the King<ch.apos/>s citadel on your own, <link-text>turn to 144</link-text>.</choice>
      </data>
     </section>
 
@@ -2207,7 +2199,7 @@ Todo:
      <data>
       <p>You have covered about a quarter of a mile when you hear shouting and a noise like thunderclaps ahead. Edging nearer, you soon make out a clearing that you recognize to be the site of the ruins of Raumas, an ancient forest temple.</p>
       <p>A war party of Giaks, some twenty-five to thirty strong, are attacking the ruins from all sides. Many more of the Giaks are dead or dying among the broken pillars of marble, but still they assault whatever is hidden inside. Suddenly, a bolt of blue lightning rips through the front rank of Giaks sending the armour-clad creatures tumbling in all directions. A Giak, taller than the others and dressed from head to foot in black chainmail, curses at his troops as he whips them forward with a barbed flail.</p>
-      <p>With weapon ready, you move to the edge of the clearing, under cover of the thick foliage, and try to catch a glimpse of the defenders. To your amazement, the ruins are being defended by a young man no older than yourself. You recognize his sky-blue robes, embroidered with stars. He is a young theurgist of the Magicians Guild of Toran: an apprentice in magic.</p>
+      <p>With weapon ready, you move to the edge of the clearing, under cover of the thick foliage, and try to catch a glimpse of the defenders. To your amazement, the ruins are being defended by a young man no older than yourself. You recognize his sky-blue robes, embroidered with stars. He is a young theurgist of the <!--ERRTAG-RE-137630-->Magicians<ch.apos/> Guild of Toran<!--/ERRTAG-RE-137630-->: an apprentice in magic.</p>
       <illustration class="float">
        <meta>
         <creator>JC Alvarez</creator>
@@ -2217,7 +2209,7 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>A young theurgist of the Magicians&apos; Guild of Toran</description>
+        <description>A young theurgist of the Magicians<ch.apos/> Guild of Toran</description>
        </meta>
        <instance class="html" src="ill9.gif" width="386" height="674" />
        <instance class="pdf" src="ill9.pdf" width="386" height="674" />
@@ -2225,7 +2217,7 @@ Todo:
       <p>Five Giaks charge forward, their spears raised to stab the apprentice as he hurriedly retreats deeper into the ruins. You see him turn and raise his left hand just before a bolt of blue flame shoots from his fingertips into the snarling Giak soldiers. Close to where you are hidden, you see a Giak scuttle past and climb one of the pillars of the temple. He has a long curved dagger in his mouth and he is about to jump on the young wizard standing below.</p>
       <choice idref="sect241">If you wish to shout a warning to the wizard, <link-text>turn to 241</link-text>.</choice>
       <choice idref="sect55">If you wish to run forward and attack the Giak when he jumps, <link-text>turn to 55</link-text>.</choice>
-      <choice idref="sect302">If you wish to pick up a chunk of temple marble and throw it at the Giak&apos;s head, <link-text>turn to 302</link-text>.</choice>
+      <choice idref="sect302">If you wish to pick up a chunk of temple marble and throw it at the Giak<ch.apos/>s head, <link-text>turn to 302</link-text>.</choice>
       <choice idref="sect101">Or if you would rather turn and leave the battle area, and run back into the woods, <link-text>turn to 101</link-text>.</choice>
      </data>
     </section>
@@ -2234,7 +2226,7 @@ Todo:
      <meta><title>132</title></meta>
 
      <data>
-      <p>The bodyguard looks at you with great suspicion and slams the door. You can hear voices chattering inside the caravan. Suddenly the door swings open and the face of a wealthy merchant appears. He recognizes your Kai cloak and apologizes for his servant&apos;s behaviour.</p>
+      <p>The bodyguard looks at you with great suspicion and slams the door. You can hear voices chattering inside the caravan. Suddenly the door swings open and the face of a wealthy merchant appears. He recognizes your Kai cloak and apologizes for his servant<ch.apos/>s behaviour.</p>
       <p>He says that they have been attacked several times since they left Toran: by Kraan, by bandits, and by robbers. They thought you may have been a bandit. Inside, the caravan is full of silks and spices. The merchant offers you food which you gratefully accept. After your sumptuous Meal, the fatigue of your ordeal finally overcomes you and you slip into a deep sleep.</p>
       <choice idref="sect64"><link-text>Turn to 64</link-text>.</choice>
      </data>
@@ -2266,7 +2258,7 @@ Todo:
      <meta><title>135</title></meta>
 
      <data>
-      <p>Peering over the steep undercut of the river bank, you can see a tangle of driftwood along the water&apos;s edge. A large tree trunk has grounded on the clay bank next to a small canoe.</p>
+      <p>Peering over the steep undercut of the river bank, you can see a tangle of driftwood along the water<ch.apos/>s edge. A large tree trunk has grounded on the clay bank next to a small canoe.</p>
       <illustration class="inline">
        <meta>
         <creator>Gary Chalk</creator>
@@ -2389,7 +2381,7 @@ Todo:
 
      <data>
       <p>You fight your way through the press of bodies along the main street towards the citadel in the distance. City folk are rushing to and fro in the grip of panic, as the cries of Kraan are heard circling high above.</p>
-      <p>In the crush, one Item is stolen from your Backpack. If you no longer have a Backpack or if you have no Backpack Items, you lose a Weapon. Remember to take this off your <a idref="action">Action Chart</a>.</p>
+      <p>In the crush, <!--ERRTAG-RE-149741-->one item is stolen<!--/ERRTAG-RE-149741--> from your Backpack. If you no longer have a Backpack or if you have no Backpack Items, you lose a Weapon. Remember to take this off your <a idref="action">Action Chart</a>.</p>
       <p>A runaway horse and cart career past and knock you into a doorway. You are stunned and you lose 2 <typ class="attribute">ENDURANCE</typ> points. As you stagger to your feet, the door bursts open and a decrepit old man attacks you with a meat cleaver. He is quite insane and you must fight him or take evasive action.</p>
       <choice idref="sect63">If you choose to fight, <link-text>turn to 63</link-text>.</choice>
       <choice idref="sect217">If you wish to evade a fight, <link-text>turn to 217</link-text>.</choice>
@@ -2424,7 +2416,7 @@ Todo:
 
      <footnotes>
       <footnote id="sect147-1-foot" idref="sect147-1">
-       <p>The wording of this section assumes that you have come from <a idref="sect28">Section 28</a>. If you have just reached this section for the first time from <a idref="sect42">Section 42</a>, read the last sentence and two choices as follows: <quote>&ellips;As you eat you notice that the path starts to curve towards the north. If you wish to follow it, <a idref="sect28">turn to 28</a>. If you wish to return the way you have come, <a idref="sect42">turn to 42</a>.</quote></p>
+       <p>The wording of this section assumes that you have come from <a idref="sect28">Section 28</a>. If you have just reached this section for the first time from <a idref="sect42">Section 42</a>, read the last sentence and two choices as follows: <quote><ch.ellips/>As you eat you notice that the path starts to curve towards the north. If you wish to follow it, <a idref="sect28">turn to 28</a>. If you wish to return the way you have come, <a idref="sect42">turn to 42</a>.</quote></p>
       </footnote>
      </footnotes>
 
@@ -2453,7 +2445,7 @@ Todo:
      <meta><title>149</title></meta>
 
      <data>
-      <p>As you ride along the highway, you notice that light is getting worse. It will soon be completely dark&emdash;and impossible to see any dangers that may lurk ahead. You decide to hide and rest at the wood&apos;s edge until morning.</p>
+      <p>As you ride along the highway, you notice that light is getting worse. It will soon be completely dark<ch.emdash/>and impossible to see any dangers that may lurk ahead. You decide to hide and rest at the wood<ch.apos/>s edge until morning.</p>
       <p>When you are satisfied that no one can see you, you pull your warm green cloak about you and drift off into an uneasy sleep.</p>
       <choice idref="sect256"><link-text>Turn to 256</link-text>.</choice>
 
@@ -2504,7 +2496,7 @@ Todo:
      <meta><title>153</title></meta>
 
      <data>
-      <p>Before you are the tall grey-white walls and glimmering spires of Holmgard, the city&apos;s banners fluttering from the battlements in the fresh morning breeze. Stretching out towards the west, the River Eledil traces its course from the mountains of the Durncrag range to the Holmgulf. But below the mountain peaks you can see a vast black army marching relentlessly on towards the capital.</p>
+      <p>Before you are the tall grey-white walls and glimmering spires of Holmgard, the city<ch.apos/>s banners fluttering from the battlements in the fresh morning breeze. Stretching out towards the west, the River Eledil traces its course from the mountains of the Durncrag range to the Holmgulf. But below the mountain peaks you can see a vast black army marching relentlessly on towards the capital.</p>
       <illustration class="float">
        <meta>
         <creator>JC Alvarez</creator>
@@ -2517,7 +2509,7 @@ Todo:
        </meta>
        <instance class="html" src="sect142.gif" width="282" height="140" />
       </illustration>
-      <p>To your right you can see the highway heading off over the rolling plain towards Holmgard. At a gallop you could make the outer fieldworks of the city&apos;s defences in less than an hour, but you would be in the open for most of the time and vulnerable to attack by Kraan. Directly ahead of you, a wide river drifts sluggishly towards the Eledil. If you abandoned your horse, you could swim towards the outer defences under cover of the river banks. Or there is a final alternative. To your left lies the Graveyard of the Ancients. These tombs and crumbling monuments to a forgotten age would conceal your approach but it is a forbidden area. Many are the unnamed horrors that lie there in restless sleep, waiting to consume the unwary trespasser.</p>
+      <p>To your right you can see the highway heading off over the rolling plain towards Holmgard. At a gallop you could make the outer fieldworks of the city<ch.apos/>s defences in less than an hour, but you would be in the open for most of the time and vulnerable to attack by Kraan. Directly ahead of you, a wide river drifts sluggishly towards the Eledil. If you abandoned your horse, you could swim towards the outer defences under cover of the river banks. Or there is a final alternative. To your left lies the Graveyard of the Ancients. These tombs and crumbling monuments to a forgotten age would conceal your approach but it is a forbidden area. Many are the unnamed horrors that lie there in restless sleep, waiting to consume the unwary trespasser.</p>
       <choice idref="sect202">If you will try your luck by the highway, <link-text>turn to 202</link-text>.</choice>
       <choice idref="sect135">If you feel that you stand a better chance of reaching the capital via the river then <link-text>turn to 135</link-text>.</choice>
       <choice idref="sect329">Or if you are brave enough to risk the unknown perils of the Graveyard of the Ancients, <link-text>turn to 329</link-text>.</choice>
@@ -2539,7 +2531,7 @@ Todo:
 
      <data>
       <p>As you approach, the group of people stop talking. You can see by their expressions that they recognize your green Kai cloak. Slowly, one of the men extends his hand in friendship and says, <quote>My Lord, we had heard a rumour that the Kai were destroyed. Heaven be praised that it is not so. We feared all was lost.</quote></p>
-      <p>You do not tell them of the destruction of the monastery, for they are refugees from Toran and have lost everything they owned. Their only hope now is that the Kai Lords will lead an army to victory. You learn that the northern port was attacked from both air and sea, and that the forces of the Darklords far outnumbered the King&apos;s brave garrison. You reassure them that Sommerlund will not fall and wish them luck on their journey ahead.</p>
+      <p>You do not tell them of the destruction of the monastery, for they are refugees from Toran and have lost everything they owned. Their only hope now is that the Kai Lords will lead an army to victory. You learn that the northern port was attacked from both air and sea, and that the forces of the Darklords far outnumbered the King<ch.apos/>s brave garrison. You reassure them that Sommerlund will not fall and wish them luck on their journey ahead.</p>
       <choice idref="sect70"><link-text>Turn to 70</link-text>.</choice>
      </data>
     </section>
@@ -2577,8 +2569,8 @@ Todo:
      <data>
       <p>The Key fits and the lock opens. You pull back the door to find yourself face to face with a strange old man. In his right hand is a staff. Suddenly a bolt of lightning shoots from the staff and hits you square in the chest. You lose 6 <typ class="attribute">ENDURANCE</typ> points. Gasping with pain, you knock the old man aside and run up the steep staircase towards daylight. You are halfway up the stairs when he fires another bolt at you.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <p>If the number is 0&endash;5, the bolt misses you and shatters part of the wall.</p>
-      <p>If the number is 6&endash;9, then you have been hit in the back and lose a further 4 <typ class="attribute">ENDURANCE</typ> points.</p>
+      <p>If the number is 0<ch.endash/>5, the bolt misses you and shatters part of the wall.</p>
+      <p>If the number is 6<ch.endash/>9, then you have been hit in the back and lose a further 4 <typ class="attribute">ENDURANCE</typ> points.</p>
       <p>If you survive, you stagger out into the daylight and curse your bad luck. It was only by an unlucky chance you discovered the secret temple of a sect of evil druids. You are very lucky to have escaped with your life. You quickly rejoin the path which now disappears over the hill.</p>
       <illustration class="inline">
        <meta>
@@ -2606,8 +2598,8 @@ Todo:
 
      <data>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <choice idref="sect286">If it is 0&endash;4, you have been seen. <link-text>Turn to 286</link-text>.</choice>
-      <choice idref="sect10">If it is 5&endash;9, they do not spot you and they slowly file away along the far side of the ridge. <link-text>Turn to 10</link-text>.</choice>
+      <choice idref="sect286">If it is 0<ch.endash/>4, you have been seen. <link-text>Turn to 286</link-text>.</choice>
+      <choice idref="sect10">If it is 5<ch.endash/>9, they do not spot you and they slowly file away along the far side of the ridge. <link-text>Turn to 10</link-text>.</choice>
      </data>
     </section>
 
@@ -2738,7 +2730,7 @@ Todo:
      <meta><title>171</title></meta>
 
      <data>
-      <p>You are at the very edge of the wood when your horse rears up in agony. The Kraan has sunk its claws deep into the horse&apos;s hind legs and is trying to knock you to the ground with its wings. The ghoulish Giak rider squeals with delight as he stabs at you with his spear. You jump to the ground and dash for the trees, leaving the poor dying horse in the clutches of the Kraan.</p>
+      <p>You are at the very edge of the wood when your horse rears up in agony. The Kraan has sunk its claws deep into the horse<ch.apos/>s hind legs and is trying to knock you to the ground with its wings. The ghoulish Giak rider squeals with delight as he stabs at you with his spear. You jump to the ground and dash for the trees, leaving the poor dying horse in the clutches of the Kraan.</p>
       <choice idref="sect303"><link-text>Turn to 303</link-text>.</choice>
      </data>
     </section>
@@ -2784,7 +2776,7 @@ Todo:
      <meta><title>175</title></meta>
 
      <data>
-      <p>Waving your arms at the approaching cavalry, you recognize them to be border rangers of the King&apos;s army, tough woodsmen who police the troubled western frontier of the kingdom. Your relief at seeing them soon fades when you realize that they are fleeing from a pack of Doomwolves with snarling Giak riders. Black arrows are dropping all around the rangers, as the vicious Doomwolves get nearer and nearer.</p>
+      <p>Waving your arms at the approaching cavalry, you recognize them to be <!--ERRTAG-RE-176294-->Border Rangers<!--/ERRTAG-RE-176294--> of the King<ch.apos/>s army, tough woodsmen who police the troubled western frontier of the kingdom. Your relief at seeing them soon fades when you realize that they are fleeing from a pack of Doomwolves with snarling Giak riders. Black arrows are dropping all around the rangers, as the vicious Doomwolves get nearer and nearer.</p>
       <choice idref="sect182">If you possess the Kai Discipline of Camouflage, <link-text>turn to 182</link-text>.</choice>
       <choice idref="sect41">If you wish to take cover and hide, <link-text>turn to 41</link-text>.</choice>
       <choice idref="sect116">If you wish to make for the other bank, <link-text>turn to 116</link-text>.</choice>
@@ -2795,7 +2787,7 @@ Todo:
      <meta><title>176</title></meta>
 
      <data>
-      <p>You hide behind some thick bushes so that the Doomwolf and its rider will not see your white horse. Luckily it works&emdash;the beast lopes past and vanishes down the track that you have just come along.</p>
+      <p>You hide behind some thick bushes so that the Doomwolf and its rider will not see your white horse. Luckily it works<ch.emdash/>the beast lopes past and vanishes down the track that you have just come along.</p>
       <illustration class="inline">
        <meta>
         <creator>Gary Chalk</creator>
@@ -2821,7 +2813,7 @@ Todo:
      <meta><title>178</title></meta>
 
      <data>
-      <p>Your skill enables you to recognize the boots and leggings of a King&apos;s soldier. You can sense that the man is wounded and in need of help.</p>
+      <p>Your skill enables you to recognize the boots and leggings of a King<ch.apos/>s soldier. You can sense that the man is wounded and in need of help.</p>
       <choice idref="sect88">If you wish to aid him, <link-text>turn to 88</link-text>.</choice>
       <choice idref="sect264">If you would rather leave him here, <link-text>turn to 264</link-text>.</choice>
      </data>
@@ -2856,7 +2848,8 @@ Todo:
 
      <footnotes>
       <footnote id="sect181-1-foot" idref="sect181-1">
-       <p>At the end of the second paragraph, it says that <quote>You have lost your Weapons and Equipment.</quote> You may ignore this statement unless you have surrendered to the bandits (that is, if you have turned to this section from <a idref="sect205">Section 205</a>). Do not adjust your <a idref="action">Action Chart</a>. The statement was referring to what happens in <a idref="sect205">Section 205</a>, but you can arrive at this section from <a idref="sect22">Section 22</a> as well.</p>
+       <p>According to the <cite>Summer Special 1985</cite> issue of the <cite>Lone Wolf Club Newsletter</cite>, <quote>the bandits took everything you had, including your Helmet and crowns.</quote></p>
+       <p>If you have turned to this section from <a idref="sect205">Section 205</a>, you may ignore this statement. Do not adjust your <a idref="action">Action Chart</a>. The statement was referring to what happens in <a idref="sect205">Section 205</a>, but you can arrive at this section from <a idref="sect22">Section 22</a> were you would have surrendered to the bandits.</p>
       </footnote>
      </footnotes>
 
@@ -2872,7 +2865,7 @@ Todo:
      <meta><title>182</title></meta>
 
      <data>
-      <p>Three rangers gallop past the river bank, closely followed by the Giaks on their snarling mounts&emdash;the  Doomwolves. But your Camouflage skill has saved you from being spotted. The pack of evil Giaks continue on their chase without even glancing at the river.</p>
+      <p>Three rangers gallop past the river bank, closely followed by the Giaks on their snarling mounts<ch.emdash/>the  Doomwolves. But your Camouflage skill has saved you from being spotted. The pack of evil Giaks continue on their chase without even glancing at the river.</p>
       <choice idref="sect174"><link-text>Turn to 174</link-text>.</choice>
      </data>
     </section>
@@ -2881,7 +2874,7 @@ Todo:
      <meta><title>183</title></meta>
 
      <data>
-      <p>The officer orders his men to halt and asks you your business. You tell him who you are, and how the monastery has been destroyed. He is deeply saddened to hear your news. He offers you a horse and asks you to accompany him to Prince Pelathar, the King&apos;s son.</p>
+      <p>The officer orders his men to halt and asks you your business. You tell him who you are, and how the monastery has been destroyed. He is deeply saddened to hear your news. He offers you a horse and asks you to accompany him to Prince Pelathar, the King<ch.apos/>s son.</p>
       <choice idref="sect97">If you accept, <link-text>turn to 97</link-text>.</choice>
       <choice idref="sect200">If you decide to decline his offer, <link-text>turn to 200</link-text>.</choice>
      </data>
@@ -2946,8 +2939,8 @@ Todo:
      <data>
       <p>You can see the shadow of the Kraan getting larger all around you. It suddenly strikes, pitching you forward onto your face with the power of its attack.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <p>If the number you have picked is 0&endash;6, the Kraan has ripped away your Backpack.You have lost the Pack and all the Equipment that was inside it.</p>
-      <p>If the number picked is 7&endash;9, your Backpack is intact but you have been wounded in both arms. Lose 3 <typ class="attribute">ENDURANCE</typ> points and run to the trees.</p>
+      <p>If the number you have picked is 0<ch.endash/>6, the Kraan has ripped away your Backpack.You have lost the Pack and all the Equipment that was inside it.</p>
+      <p>If the number picked is 7<ch.endash/>9, your Backpack is intact but you have been wounded in both arms. Lose 3 <typ class="attribute">ENDURANCE</typ> points and run to the trees.</p>
       <choice idref="sect303">Now <link-text>turn to 303</link-text>.</choice>
      </data>
     </section>
@@ -2966,7 +2959,7 @@ Todo:
      <meta><title>190</title></meta>
 
      <data>
-      <p>You walk for three miles along the water&apos;s edge until you chance upon a wrecked river barge. It appears to have served as shelter for someone, as you can see a bed and some cooking utensils through a hole in the deck.</p>
+      <p>You walk for three miles along the water<ch.apos/>s edge until you chance upon a wrecked river barge. It appears to have served as shelter for someone, as you can see a bed and some cooking utensils through a hole in the deck.</p>
       <illustration class="inline">
        <meta>
         <creator>Gary Chalk</creator>
@@ -2994,7 +2987,7 @@ Todo:
      <meta><title>192</title></meta>
 
      <data>
-      <p>You see the razor-fanged mouth of a Doomwolf and hear the hideous cries of the Giaks. Two of them are coming straight for you. You are saved from certain death when your horse jumps at the approaching beasts, knocking them both to the ground. You lash out at the Giak and open a large wound in his head.&ellips; and then suddenly, as if by a miracle, you&apos;re through and racing on down the highway, clear of the rest of the pack.</p>
+      <p>You see the razor-fanged mouth of a Doomwolf and hear the hideous cries of the Giaks. Two of them are coming straight for you. You are saved from certain death when your horse jumps at the approaching beasts, knocking them both to the ground. You lash out at the Giak and open a large wound in his head.<ch.ellips/> and then suddenly, as if by a miracle, you<ch.apos/>re through and racing on down the highway, clear of the rest of the pack.</p>
       <p>But a shadow follows you. It is a Kraan and it has started to dive. Its target is you.</p>
       <choice idref="sect171">If you veer off the highway towards the cover of the trees, <link-text>turn to 171</link-text>.</choice>
       <choice idref="sect120">If you press on regardless of the Kraan, and gallop flat out down the highway, <link-text>turn to 120</link-text>.</choice>
@@ -3005,7 +2998,7 @@ Todo:
      <meta><title>193</title></meta>
 
      <data>
-      <p>The beast and its rider lie dead. You notice a Scroll tucked into the Giak&apos;s belt. You may take this if you wish, but remember to mark it on your <a idref="action">Action Chart</a>. The other Doomwolves are charging along the path towards you.</p>
+      <p>The beast and its rider lie dead. You notice a Scroll tucked into the Giak<ch.apos/>s belt. You may take this if you wish, but remember to mark it on your <a idref="action">Action Chart</a>. The other Doomwolves are charging along the path towards you.</p>
       <choice idref="sect253">If you wish to fight them, <link-text>turn to 253</link-text>.</choice>
       <choice idref="sect126">If you wish to escape into the woods, <link-text>turn to 126</link-text>.</choice>
      </data>
@@ -3025,7 +3018,7 @@ Todo:
      <meta><title>195</title></meta>
 
      <data>
-      <p>Wiping the bear&apos;s blood from your weapon, you notice the mouth of a cave hidden behind the rock from which the bear attacked.</p>
+      <p>Wiping the bear<ch.apos/>s blood from your weapon, you notice the mouth of a cave hidden behind the rock from which the bear attacked.</p>
       <choice idref="sect59">If you wish to investigate this cave further, <link-text>turn to 59</link-text>.</choice>
       <choice idref="sect106">If you wish to press on, <link-text>turn to 106</link-text>.</choice>
      </data>
@@ -3055,7 +3048,7 @@ Todo:
      <meta><title>198</title></meta>
 
      <data>
-      <p>You can sense that there is someone else behind the screen. There is a lingering aura of wickedness around this shop. Be on your guard&emdash;something is wrong here.</p>
+      <p>You can sense that there is someone else behind the screen. There is a lingering aura of wickedness around this shop. Be on your guard<ch.emdash/>something is wrong here.</p>
       <choice idref="sect7">If you wish to return to the street, <link-text>turn to 7</link-text>.</choice>
       <choice idref="sect152">If you wish to examine the goods in the glass counter, <link-text>turn to 152</link-text>.</choice>
      </data>
@@ -3074,11 +3067,11 @@ Todo:
      <meta><title>200</title></meta>
 
      <data>
-      <p>Night is starting to close in. The shadows of the forest are growing longer and darker. Just as you are about to stop and rest, you see through the trees a line of people moving south along a wide highway. Moving closer, you notice a large merchant&apos;s caravan in the centre of the dusty turnpike. It is drawn by six large horses and is moving much faster than any of the other traffic. This could be your chance to reach the capital as quickly as possible.</p>
+      <p>Night is starting to close in. The shadows of the forest are growing longer and darker. Just as you are about to stop and rest, you see through the trees a line of people moving south along a wide highway. Moving closer, you notice a large merchant<ch.apos/>s caravan in the centre of the dusty turnpike. It is drawn by six large horses and is moving much faster than any of the other traffic. This could be your chance to reach the capital as quickly as possible.</p>
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>You notice a large merchant&apos;s caravan<br />in the centre of the dusty turnpike</description>
+        <description>You notice a large merchant<ch.apos/>s caravan<br />in the centre of the dusty turnpike</description>
        </meta>
        <instance class="html" src="ill12.gif" width="386" height="692" />
        <instance class="pdf" src="ill12.pdf" width="386" height="692" />
@@ -3134,7 +3127,7 @@ Todo:
      <footnotes>
       <footnote id="sect205-1-foot" idref="sect205-1">
        <p>Make sure to erase all items and item containers from your <a idref="action">Action Chart</a> (i.e. Weapons, Backpack, Special Items, and Belt Pouch).</p>
-       <p>The author may not have realized that the Crystal Star Pendant and <a idref="map">Map of Sommerlund</a> might be among the items lost. You may decide to simply keep these items if you have them. If you do choose a strict interpretation of the text, however, then it&apos;s only fair that you shouldn&apos;t look at the <a idref="map">map</a> if you are without the <a idref="map">Map of Sommerlund</a> item.</p>
+       <p>The author may not have realized that the Crystal Star Pendant and <a idref="map">Map of Sommerlund</a> might be among the items lost. You may decide to simply keep these items if you have them. If you do choose a strict interpretation of the text, however, then it<ch.apos/>s only fair that you shouldn<ch.apos/>t look at the <a idref="map">map</a> if you are without the <a idref="map">Map of Sommerlund</a> item.</p>
       </footnote>
      </footnotes>
 
@@ -3149,8 +3142,8 @@ Todo:
        <instance class="pdf" src="sect205.pdf" width="192" height="188" />
       </illustration>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <choice idref="sect181">If the number you have picked is 0&endash;4, <link-text>turn to 181</link-text>.</choice>
-      <choice idref="sect145">If the number is 5&endash;9, <link-text>turn to 145</link-text>.</choice>
+      <choice idref="sect181">If the number you have picked is 0<ch.endash/>4, <link-text>turn to 181</link-text>.</choice>
+      <choice idref="sect145">If the number is 5<ch.endash/>9, <link-text>turn to 145</link-text>.</choice>
      </data>
     </section>
 
@@ -3203,7 +3196,7 @@ Todo:
      <meta><title>210</title></meta>
 
      <data>
-      <p>Just inside the door, you are stopped by a journeyman of the Guildhall and asked to explain your intrusion. You calmly inform him of your urgent message for the King, and he hurries you into the Guildmaster&apos;s chambers.</p>
+      <p>Just inside the door, you are stopped by a journeyman of the Guildhall and asked to explain your intrusion. You calmly inform him of your urgent message for the King, and he hurries you into the Guildmaster<ch.apos/>s chambers.</p>
       <p>A distinguished old man in deep purple robes turns to greet you and listens to your story. Taking you by the arm, he leads you into an adjoining library and closes the door. Pressing one of the many thousands of books, he releases a secret panel in the wall and beckons you to follow him.</p>
       <choice idref="sect332">If you wish to follow him into the dark passage, <link-text>turn to 332</link-text>.</choice>
       <choice idref="sect37">If you are not completely happy about this man and wish to leave the Guildhall, <link-text>turn to 37</link-text>.</choice>
@@ -3235,7 +3228,7 @@ Todo:
        <instance class="pdf" src="ill13.pdf" width="386" height="675" />
       </illustration>
       <p><quote>You have passed close to death and have seen his face, Kai Lord, but the Grey One has not claimed you for his flock. You are healed in body but I sense that you are wounded in spirit. What is it that troubles you so?</quote></p>
-      <p>You recognize the man to be one of the King&apos;s senior physicians, for the gold embroidered emblem of a dove upon his sleeve is the sign of his respected vocation. You tell the aged cleric of the events at the monastery and of your perilous journey to the King.</p>
+      <p>You recognize the man to be one of the King<ch.apos/>s senior physicians, for the gold embroidered emblem of a dove upon his sleeve is the sign of his respected vocation. You tell the aged cleric of the events at the monastery and of your perilous journey to the King.</p>
       <p>Raising you gently from the bed by your arm, he bids you follow him. You notice that you are in a lavishly decorated room which leads out through a long corridor lined with tapestries. It slowly dawns on you just where you are.</p>
       <p>This is the citadel of Holmgard and you are about to meet the King.</p>
       <choice idref="sect350"><link-text>Turn to 350</link-text>.</choice>
@@ -3281,7 +3274,7 @@ Todo:
 
      <data>
       <p>Placing one hand on his forehead and the other on his wounded arm, you feel the warmth of your healing powers leave your body and give strength to the injured man.</p>
-      <p>He tells you his name is Trimis and he is a soldier in Prince Pelathar&apos;s army. The Prince and his troops are engaged in battle to the south, where a large force of the Darklords&apos; creatures are attacking the bridge of Alema. During the fight, he had been snatched into the air by a Kraan, and dropped into the forest.</p>
+      <p>He tells you his name is Trimis and he is a soldier in Prince Pelathar<ch.apos/>s army. The Prince and his troops are engaged in battle to the south, where a large force of the Darklords<ch.apos/> creatures are attacking the bridge of Alema. During the fight, he had been snatched into the air by a Kraan, and dropped into the forest.</p>
       <p>You make the soldier as comfortable as possible before continuing on your mission.</p>
       <choice idref="sect264"><link-text>Turn to 264</link-text>.</choice>
      </data>
@@ -3299,7 +3292,7 @@ Todo:
        <instance class="html" src="sect217.gif" width="243" height="79" />
        <instance class="pdf" src="sect217.pdf" width="243" height="79" />
        <instance class="text">
-        <signpost>Kolanis&emdash;Sage &amp; Herbalist</signpost>
+        <signpost>Kolanis<ch.emdash/>Sage &amp; Herbalist</signpost>
        </instance>
       </illustration>
       <choice idref="sect91">If you wish to enter, <link-text>turn to 91</link-text>.</choice>
@@ -3369,7 +3362,7 @@ Todo:
       <p>After quite a struggle, you manage to free the heavy trunk from the river bank. Gathering your equipment in a bundle, you stow it on top of the log and then slowly wade out into the river. The current soon takes you and you drift slowly downstream.</p>
       <p>After twenty minutes you hear the sound of horses along the left bank.</p>
       <choice idref="sect75">If you wish to hide behind the log, <link-text>turn to 75</link-text>.</choice>
-      <choice idref="sect175">If you wish to climb onto the log and prepare to catch the riders&apos; attention, then <link-text>turn to 175</link-text>.</choice>
+      <choice idref="sect175">If you wish to climb onto the log and prepare to catch the riders<ch.apos/> attention, then <link-text>turn to 175</link-text>.</choice>
      </data>
     </section>
 
@@ -3378,7 +3371,7 @@ Todo:
 
      <data>
       <p>You have ridden several miles and have seen no sign of refugees or of the enemy. You race on towards a high ridge in the middle distance. You should be able to see the capital from there.</p>
-      <p>As you reach the peak, the sight that meets you on the far side is one of hope&emdash;but there is still one challenge you know you have to face.</p>
+      <p>As you reach the peak, the sight that meets you on the far side is one of hope<ch.emdash/>but there is still one challenge you know you have to face.</p>
       <choice idref="sect153"><link-text>Turn to 153</link-text>.</choice>
      </data>
     </section>
@@ -3399,8 +3392,8 @@ Todo:
      <data>
       <p>At first the descent is quite easy, but you soon find it difficult to see clearly and your legs feel very weak. The <quote>Sleeptooth</quote> scratches are affecting you, and suddenly you pitch forward and slip head-first into darkness.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <choice idref="sect277">If the number you have picked is 0&endash;4, <link-text>turn to 277</link-text>.</choice>
-      <choice idref="sect338">If the number is 5&endash;9, <link-text>turn to 338</link-text>.</choice>
+      <choice idref="sect277">If the number you have picked is 0<ch.endash/>4, <link-text>turn to 277</link-text>.</choice>
+      <choice idref="sect338">If the number is 5<ch.endash/>9, <link-text>turn to 338</link-text>.</choice>
      </data>
     </section>
 
@@ -3502,7 +3495,7 @@ Todo:
      <meta><title>235</title></meta>
 
      <data>
-      <p>The Prince&apos;s horse is indeed a magnificent animal, fast and sure of foot. You gallop along the twisting track as if it were a straight highway, until the noise of battle has disappeared far behind you.</p>
+      <p>The Prince<ch.apos/>s horse is indeed a magnificent animal, fast and sure of foot. You gallop along the twisting track as if it were a straight highway, until the noise of battle has disappeared far behind you.</p>
       <p>You are hungry and must eat a Meal during your ride.</p>
       <p>After several miles, the path stops abruptly at a junction. There is a signpost, but it has been hacked down.</p>
       <choice idref="sect254">If you wish to use your Kai Discipline of Tracking, <link-text>turn to 254</link-text>.</choice>
@@ -3547,8 +3540,8 @@ Todo:
      <data>
       <p>You make full use of your Kai Discipline and quickly burrow deep into the loose earth of the wooded hillside. Covering yourself with your cloak, you pull a loose branch across your hastily dug shelter.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <choice idref="sect265">If you have picked a number 0&endash;4, then you have passed undetected. <link-text>Turn to 265</link-text>.</choice>
-      <choice idref="sect72">If you have picked a number 5&endash;9, then you are not so lucky! <link-text>Turn to 72</link-text>.</choice>
+      <choice idref="sect265">If you have picked a number 0<ch.endash/>4, then you have passed undetected. <link-text>Turn to 265</link-text>.</choice>
+      <choice idref="sect72">If you have picked a number 5<ch.endash/>9, then you are not so lucky! <link-text>Turn to 72</link-text>.</choice>
      </data>
     </section>
 
@@ -3592,7 +3585,7 @@ Todo:
      <meta><title>241</title></meta>
 
      <data>
-      <p>The wizard heeds your cry and spins around just in time to loose a searing bolt of energy at the Giak. The creature&apos;s head disintegrates in flames and its twitching body falls in a heap at the foot of the pillar. The Giak officer sees you and shouts, <foreign xml:lang="x-giak"><quote>Ogot&ellips; Ogot!</quote></foreign> to his cowering troops, who quickly run away from the ruins to the safety of the forest beyond.</p>
+      <p>The wizard heeds your cry and spins around just in time to loose a searing bolt of energy at the Giak. The creature<ch.apos/>s head disintegrates in flames and its twitching body falls in a heap at the foot of the pillar. The Giak officer sees you and shouts, <foreign xml:lang="x-giak"><quote>Ogot<ch.ellips/> Ogot!</quote></foreign> to his cowering troops, who quickly run away from the ruins to the safety of the forest beyond.</p>
       <p>The young wizard wipes his brow, and walks towards you, his hand extended in gratitude and friendship.</p>
       <choice idref="sect349"><link-text>Turn to 349</link-text>.</choice>
      </data>
@@ -3760,7 +3753,7 @@ Todo:
 
      <data>
       <p>The creature that you now face is a Gourgaz, one of a race of cold-blooded reptilian creatures that dwell deep in the treacherous Maakenmire swamps. Their favourite food is human flesh!</p>
-      <p>The Prince&apos;s Sword lies at your feet. You may pick up and use this weapon if you wish. The Gourgaz is about to strike at you&emdash;you must fight him to the death.</p>
+      <p>The Prince<ch.apos/>s Sword lies at your feet. You may pick up and use this weapon if you wish. The Gourgaz is about to strike at you<ch.emdash/>you must fight him to the death.</p>
       <combat><enemy>Gourgaz</enemy><enemy-attribute class="combatskill">20</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat> 
       <p>This creature is immune to Mindblast.</p>
       <choice idref="sect82">If you win, <link-text>turn to 82</link-text>.</choice>
@@ -3772,7 +3765,7 @@ Todo:
 
      <data>
       <p>You are awoken by the cries of Kraan high above you in the clear morning sky. Rubbing your eyes, you peer upwards through the canopy of branches to see three of the loathsome creatures fly off towards the north.</p>
-      <p>You are sure you have not been spotted, but perhaps it would be best to leave now&emdash;just in case. You mount your horse and ride south along the highway.</p>
+      <p>You are sure you have not been spotted, but perhaps it would be best to leave now<ch.emdash/>just in case. You mount your horse and ride south along the highway.</p>
       <choice idref="sect224"><link-text>Turn to 224</link-text>.</choice>
      </data>
     </section>
@@ -3810,7 +3803,7 @@ Todo:
      <meta><title>260</title></meta>
 
      <data>
-      <p>Swimming towards the bank, you can see the ranger spread-eagled at the water&apos;s edge. You reach him but only to find that he has broken his neck in the fall and is dead.</p>
+      <p>Swimming towards the bank, you can see the ranger spread-eagled at the water<ch.apos/>s edge. You reach him but only to find that he has broken his neck in the fall and is dead.</p>
       <p>Suddenly, two Giaks jump on you from above and you must fight them. You are unarmed and must fight the Giaks with your bare hands. Deduct 4 points from your <typ class="attribute">COMBAT SKILL</typ> and fight them one at a time.</p>
       <combat><enemy>Giak 1</enemy><enemy-attribute class="combatskill">11</enemy-attribute><enemy-attribute class="endurance">18</enemy-attribute></combat> 
       <combat><enemy>Giak 2</enemy><enemy-attribute class="combatskill">12</enemy-attribute><enemy-attribute class="endurance">17</enemy-attribute></combat> 
@@ -3843,7 +3836,7 @@ Todo:
 
      <data>
       <p>Carefully, you follow the stream as it makes its way towards the east. Suddenly you notice something in the distance that brings you to a halt.</p>
-      <p>Lying in the rushing water like a great black dam is a dead Kraan. You creep nearer, under cover of the foliage, until you see three arrows deep in the beast&apos;s chest. Trapped beneath the beast is the body of its rider. It is a Giak, a spiteful and malicious servant of the Darklords. Many centuries ago, their ancestors were used by the Darklords to build the infernal city of Helgedad, which lies in the volcanic wastelands beyond the Durncrag range of mountains. The construction of the city was a long and torturous nightmare, and only the strongest Giaks survived the heat and poisonous atmospheres of Helgedad. This creature is a descendant of these Giak slaves. It seems that this one must have drowned. The Giak&apos;s pouch contains 3 Gold Crowns. (You may take these if you wish.)</p>
+      <p>Lying in the rushing water like a great black dam is a dead Kraan. You creep nearer, under cover of the foliage, until you see three arrows deep in the beast<ch.apos/>s chest. Trapped beneath the beast is the body of its rider. It is a Giak, a spiteful and malicious servant of the Darklords. Many centuries ago, their ancestors were used by the Darklords to build the infernal city of Helgedad, which lies in the volcanic wastelands beyond the Durncrag range of mountains. The construction of the city was a long and torturous nightmare, and only the strongest Giaks survived the heat and poisonous atmospheres of Helgedad. This creature is a descendant of these Giak slaves. It seems that this one must have drowned. The Giak<ch.apos/>s pouch contains 3 Gold Crowns. (You may take these if you wish.)</p>
       <illustration class="float">
        <meta>
         <creator>JC Alvarez</creator>
@@ -3911,7 +3904,7 @@ Todo:
        <instance class="pdf" src="ill15.pdf" width="386" height="644" />
        <instance class="text">
         <blockquote>
-         <p><foreign xml:lang="x-giak"><quote>Orgadak shada taag okak&emdash;orgadak ok&emdash;nara ek ash jek eg Helgedad.</quote></foreign></p>
+         <p><foreign xml:lang="x-giak"><quote>Orgadak shada taag okak<ch.emdash/>orgadak ok<ch.emdash/>nara ek ash jek eg Helgedad.</quote></foreign></p>
         </blockquote>
        </instance>
       </illustration>
@@ -3925,7 +3918,7 @@ Todo:
      <meta><title>268</title></meta>
 
      <data>
-      <p>You black out for only a few minutes before you are revived with a measure of strong spirit. Feeling weary but thankful to be alive, you lean on the shoulders of the King&apos;s men and you stagger towards the outer defences.</p>
+      <p>You black out for only a few minutes before you are revived with a measure of strong spirit. Feeling weary but thankful to be alive, you lean on the shoulders of the King<ch.apos/>s men and you stagger towards the outer defences.</p>
       <choice idref="sect288"><link-text>Turn to 288</link-text>.</choice>
      </data>
     </section>
@@ -3999,11 +3992,11 @@ Todo:
 
      <data>
       <p>You have followed this twisting track for about twenty minutes when you hear the beating of wings high above the trees. Looking up you see a large Kraan approaching from the north, its huge black wings casting a gigantic shadow on the trees below.</p>
-      <p>On its back are two creatures armed with long spears. They are Mountain Giaks&emdash;small ugly creatures full of hatred and malice. Many centuries ago, their ancestors were used by the Darklords to build the infernal city of Helgedad, which lies in the volcanic wastelands beyond the Durncrag mountain range. The construction of the city was long and tortuous, and only the strongest of the creatures survived the heat and poisonous atmosphere of Helgedad.</p>
+      <p>On its back are two creatures armed with long spears. They are Mountain Giaks<ch.emdash/>small ugly creatures full of hatred and malice. Many centuries ago, their ancestors were used by the Darklords to build the infernal city of Helgedad, which lies in the volcanic wastelands beyond the Durncrag mountain range. The construction of the city was long and tortuous, and only the strongest of the creatures survived the heat and poisonous atmosphere of Helgedad.</p>
       <p>Quickly you dive for the shelter of a large fern tree as the Kraan passes overhead. With heart pounding, you pray that your quick reactions have saved you from being spotted.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <choice idref="sect345">If the number you have picked is 0&endash;4, <link-text>turn to 345</link-text>.</choice>
-      <choice idref="sect74">If the number is 5&endash;9, <link-text>turn to 74</link-text>.</choice>
+      <choice idref="sect345">If the number you have picked is 0<ch.endash/>4, <link-text>turn to 345</link-text>.</choice>
+      <choice idref="sect74">If the number is 5<ch.endash/>9, <link-text>turn to 74</link-text>.</choice>
      </data>
     </section>
 
@@ -4027,7 +4020,7 @@ Todo:
 
      <data>
       <p>When you awake, you find yourself lying at the foot of a steep slope in a tangle of tall grasses. Your Backpack and Weapon are missing and your head aches. You cannot tell how long you have been unconscious, but you realize that you must not delay in pressing on with your mission.</p>
-      <p>Standing up, you see your Backpack is intact but the Weapon is broken in two and is now useless. Remember to cross it off your <a idref="action">Action Chart</a>. (If you have more than one weapon, only one of them is broken&emdash;you may choose which one it is.) You quickly pick up your Backpack and move off into the trees ahead.</p>
+      <p>Standing up, you see your Backpack is intact but the Weapon is broken in two and is now useless. Remember to cross it off your <a idref="action">Action Chart</a>. (If you have more than one weapon, only one of them is broken<ch.emdash/>you may choose which one it is.) You quickly pick up your Backpack and move off into the trees ahead.</p>
       <choice idref="sect113"><link-text>Turn to 113</link-text>.</choice>
      </data>
     </section>
@@ -4055,8 +4048,8 @@ Todo:
        <instance class="pdf" src="sect279.pdf" width="218" height="189" />
       </illustration>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <choice idref="sect112">If the number you have picked is 0&endash;6, <link-text>turn to 112</link-text>.</choice>
-      <choice idref="sect96">If the number is 7&endash;9, <link-text>turn to 96</link-text>.</choice>
+      <choice idref="sect112">If the number you have picked is 0<ch.endash/>6, <link-text>turn to 112</link-text>.</choice>
+      <choice idref="sect96">If the number is 7<ch.endash/>9, <link-text>turn to 96</link-text>.</choice>
      </data>
     </section>
 
@@ -4085,7 +4078,7 @@ Todo:
 
      <data>
       <p>Looking above the heads of the crowd, you notice that one of the shops opposite the main gate is the timbered surgery of a city physician. Suddenly, a bold plan springs to mind. Bracing yourself against the tide of bodies, you struggle across to the other side of the street. You quickly enter to find that there is no sign of life, apart from a brightly coloured parrot in its cage by the window.</p>
-      <p>Taking a selection of small bottles you slip on a white surgeon&apos;s cloak, and fight your way back to the main gate. <quote>An emergency!</quote> you bluff, as guards stop and question you. <quote>It&apos;s the royal cook&apos;s wife&ellips; she&apos;s having a baby.</quote></p>
+      <p>Taking a selection of small bottles you slip on a white surgeon<ch.apos/>s cloak, and fight your way back to the main gate. <quote>An emergency!</quote> you bluff, as guards stop and question you. <quote>It<ch.apos/>s the royal cook<ch.apos/>s wife<ch.ellips/> she<ch.apos/>s having a baby.</quote></p>
       <p>The guards hesitate for a moment, but you assure them that the matter is most urgent and they decide to let you in. One of the great doors swings open about two feet, and you are roughly pushed through the narrow gap into the courtyard beyond.</p>
       <choice idref="sect11"><link-text>Turn to 11</link-text>.</choice>
      </data>
@@ -4125,7 +4118,7 @@ Todo:
      <meta><title>285</title></meta>
 
      <data>
-      <p>With a sickening thud, the chunk of marble cracks open the back of the Giak&apos;s head. The creature drops to its knees and slowly falls forward, down to the ruins below. Elated by your skill, you race forward to aid the young wizard.</p>
+      <p>With a sickening thud, the chunk of marble cracks open the back of the Giak<ch.apos/>s head. The creature drops to its knees and slowly falls forward, down to the ruins below. Elated by your skill, you race forward to aid the young wizard.</p>
       <choice idref="sect325"><link-text>Turn to 325</link-text>.</choice>
      </data>
     </section>
@@ -4134,8 +4127,8 @@ Todo:
      <meta><title>286</title></meta>
 
      <data>
-      <p>Messengers of death&emdash;and ones eager to deliver their news&emdash;the Doomwolves surround and then attack you. Valiantly you fight, but it is to no avail for there are too many of them.</p>
-      <p>As your life&apos;s blood seeps away and eternal dark approaches, the last sight you remember is the glint of sunlight on the spires of Holmgard.</p>
+      <p>Messengers of death<ch.emdash/>and ones eager to deliver their news<ch.emdash/>the Doomwolves surround and then attack you. Valiantly you fight, but it is to no avail for there are too many of them.</p>
+      <p>As your life<ch.apos/>s blood seeps away and eternal dark approaches, the last sight you remember is the glint of sunlight on the spires of Holmgard.</p>
       <p>You have failed in your mission.</p>
      </data>
     </section>
@@ -4156,7 +4149,7 @@ Todo:
      <data>
       <p>As you reach the walls of the fieldworks, the large oak gates open and you are quickly hurried inside. A sergeant, bloodstained and battle-weary, calls to an officer who turns and recognizes your cloak.</p>
       <p><quote>My Lord,</quote> he says. <quote>Where are the other Kai Masters? We are in desperate need of their wisdom. The Darklords press us most cruelly and casualties are high.</quote></p>
-      <p>You inform the brave officer of the terrible fate of your kinsmen, and the urgency of your mission to seek the King&apos;s council. Without saying a word, he motions to a soldier to bring forward two horses. You both mount and gallop off towards the high city wall of Holmgard.</p>
+      <p>You inform the brave officer of the terrible fate of your kinsmen, and the urgency of your mission to seek the King<ch.apos/>s council. Without saying a word, he motions to a soldier to bring forward two horses. You both mount and gallop off towards the high city wall of Holmgard.</p>
       <choice idref="sect129"><link-text>Turn to 129</link-text>.</choice>
      </data>
     </section>
@@ -4229,9 +4222,9 @@ Todo:
       <p>Staying underwater for as long as you can, you finally surface to see the Giaks far behind you. You have lost your Weapon(s) and Backpack but at least you are still alive.</p>
       <p>You wade out of the muddy water and continue your journey under cover of the trees that line the right-hand bank.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <choice idref="sect230">If the number you pick is 0&endash;2, <link-text>turn to 230</link-text>.</choice>
-      <choice idref="sect190">If the number is 3&endash;6, <link-text>turn to 190</link-text>.</choice>
-      <choice idref="sect321">If the number is 7&endash;9, <link-text>turn to 321</link-text>.</choice>
+      <choice idref="sect230">If the number you pick is 0<ch.endash/>2, <link-text>turn to 230</link-text>.</choice>
+      <choice idref="sect190">If the number is 3<ch.endash/>6, <link-text>turn to 190</link-text>.</choice>
+      <choice idref="sect321">If the number is 7<ch.endash/>9, <link-text>turn to 321</link-text>.</choice>
      </data>
     </section>
 
@@ -4319,8 +4312,8 @@ Todo:
 
      <data>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <choice idref="sect110">If the number you have picked is 0&endash;2, <link-text>turn to 110</link-text>.</choice>
-      <choice idref="sect285">If the number is 3&endash;9, <link-text>turn to 285</link-text>.</choice>
+      <choice idref="sect110">If the number you have picked is 0<ch.endash/>2, <link-text>turn to 110</link-text>.</choice>
+      <choice idref="sect285">If the number is 3<ch.endash/>9, <link-text>turn to 285</link-text>.</choice>
      </data>
     </section>
 
@@ -4361,7 +4354,7 @@ Todo:
        </meta>
        <instance class="html" height="288" width="373" src="305.gif" />
       </illustration>
-      <p>This is the evil handiwork of Giaks without any doubt, for they delight in the destruction of all things. A quick check of the other huts reveals a similar story of murder and wreckage. In the last hut that you search, you discover a Giak Spear&emdash;proof of your suspicions. You may keep this Weapon if you wish.</p>
+      <p>This is the evil handiwork of Giaks without any doubt, for they delight in the destruction of all things. A quick check of the other huts reveals a similar story of murder and wreckage. In the last hut that you search, you discover a Giak Spear<ch.emdash/>proof of your suspicions. You may keep this Weapon if you wish.</p>
       <p>More determined than ever now to succeed in your mission, you continue along the track.</p>
       <choice idref="sect105"><link-text>Turn to 105</link-text>.</choice>
      </data>
@@ -4413,7 +4406,7 @@ Todo:
 
      <data>
       <p>You have taken less than ten paces when the raven squawks a warning to the stranger. Turning to face you, the robed creature utters a piercing screech that freezes your blood and grips your stomach with fear and panic. It is a Vordak, a lieutenant of the Darklords and one of the undead. Within seconds, a host of Giaks appear at its side and attack you. You fight bravely but you are greatly outnumbered.</p>
-      <p>The last thing you remember is the icy grasp of the Vordak&apos;s skeletal fingers as they close around your throat.</p>
+      <p>The last thing you remember is the icy grasp of the Vordak<ch.apos/>s skeletal fingers as they close around your throat.</p>
       <choice>Your life and your mission end here.</choice>
      </data>
     </section>
@@ -4431,7 +4424,7 @@ Todo:
        <instance class="html" src="sect310.gif" width="289" height="77" />
        <instance class="pdf" src="sect310.pdf" width="289" height="77" />
        <instance class="text">
-        <signpost>Royal Court&emdash;1 Mile</signpost>
+        <signpost>Royal Court<ch.emdash/>1 Mile</signpost>
        </instance>
       </illustration>
       <choice idref="sect37"><link-text>Turn to 37</link-text>.</choice>
@@ -4475,8 +4468,8 @@ Todo:
      <data>
       <p>It takes you nearly an hour to reach the citadel. When you arrive you find that the citizens of Holmgard are in panic and confusion. Your escort approaches the armoured guards at the main entrance and tells them of your urgent message for the King.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <choice idref="sect341">If you have picked a number that is 0&endash;6, <link-text>turn to 341</link-text>.</choice>
-      <choice idref="sect98">If the number is 7&endash;9, <link-text>turn to 98</link-text>.</choice>
+      <choice idref="sect341">If you have picked a number that is 0<ch.endash/>6, <link-text>turn to 341</link-text>.</choice>
+      <choice idref="sect98">If the number is 7<ch.endash/>9, <link-text>turn to 98</link-text>.</choice>
      </data>
     </section>
 
@@ -4484,7 +4477,7 @@ Todo:
      <meta><title>315</title></meta>
 
      <data>
-      <p>Wrapped in a bundle of women&apos;s clothing is a small velvet purse containing 6 Gold Crowns and a Tablet of Perfumed Soap. You may take these items and continue your journey.</p>
+      <p>Wrapped in a bundle of women<ch.apos/>s clothing is a small velvet purse containing 6 Gold Crowns and a Tablet of Perfumed Soap. You may take these items and continue your journey.</p>
       <illustration class="inline">
        <meta>
         <creator>Gary Chalk</creator>
@@ -4517,7 +4510,7 @@ Todo:
        </meta>
        <instance class="html" height="287" width="372" src="317.gif" />
       </illustration>
-      <p>Shaken but still in one piece, you get to your feet. A shaft of dull grey light is seeping into the chamber from above, where the stone block was. Through a hole in the ceiling you can see a tangle of graveweed and the cloudy sky above. You clamber out of the tomb and head for the arched south gate of the necropolis as fast as possible. The pointed log walls of the city&apos;s outer defence works are now visible.</p>
+      <p>Shaken but still in one piece, you get to your feet. A shaft of dull grey light is seeping into the chamber from above, where the stone block was. Through a hole in the ceiling you can see a tangle of graveweed and the cloudy sky above. You clamber out of the tomb and head for the arched south gate of the necropolis as fast as possible. The pointed log walls of the city<ch.apos/>s outer defence works are now visible.</p>
       <choice idref="sect61"><link-text>Turn to 61</link-text>.</choice>
      </data>
     </section>
@@ -4538,7 +4531,7 @@ Todo:
 
      <data>
       <p>The slimy creature lets out a long, ghastly death-cry and collapses. You are near to panic and scramble to your feet, grabbing what you think to be your belt from the jaws of the dead beast. You can see light in the far distance, and you sprint for it as fast as you can. When you finally emerge into the daylight, you fall onto the leafy ground and fight for breath in painful gasps.</p>
-      <p>Slowly sitting upright, you notice that you are still wearing your belt&emdash;you had not lost it after all. What you grabbed from the jaw of the Burrowcrawler was a leather strap with a small pouch and a sheathed Dagger halfway along it. You break open the clasp to find it contains 20 Gold Crowns. You may take both the Dagger and the Crowns if you are able to.</p>
+      <p>Slowly sitting upright, you notice that you are still wearing your belt<ch.emdash/>you had not lost it after all. What you grabbed from the jaw of the Burrowcrawler was a leather strap with a small pouch and a sheathed Dagger halfway along it. You break open the clasp to find it contains 20 Gold Crowns. You may take both the Dagger and the Crowns if you are able to.</p>
       <p>Feeling a little better now, you gather your Equipment together and push on eastwards into the forest.</p>
       <choice idref="sect157"><link-text>Turn to 157</link-text>.</choice>
      </data>
@@ -4558,7 +4551,7 @@ Todo:
      <meta><title>321</title></meta>
 
      <data>
-      <p>You walk for nearly an hour along the twisting river&apos;s edge. Beyond the next turn you can hear the faint noise of battle. You carefully climb a steep hillock to get a better view of the area.</p>
+      <p>You walk for nearly an hour along the twisting river<ch.apos/>s edge. Beyond the next turn you can hear the faint noise of battle. You carefully climb a steep hillock to get a better view of the area.</p>
       <choice idref="sect273"><link-text>Turn to 273</link-text>.</choice>
      </data>
     </section>
@@ -4610,7 +4603,7 @@ Todo:
        <instance class="html" src="sect279.gif" width="218" height="189" />
        <instance class="pdf" src="sect279.pdf" width="218" height="189" />
       </illustration>
-      <p>Then cursing in their strange tongue, they leave the ledge and start to climb towards the peak. You silently thank your old Masters for teaching you the Kai Discipline of Camouflage&emdash;it has probably saved your life on this occasion.</p>
+      <p>Then cursing in their strange tongue, they leave the ledge and start to climb towards the peak. You silently thank your old Masters for teaching you the Kai Discipline of Camouflage<ch.emdash/>it has probably saved your life on this occasion.</p>
       <choice idref="sect33">If you wish to explore the cave, <link-text>turn to 33</link-text>.</choice>
       <choice idref="sect248">If you wish to leave and descend the hill in case the Giaks return, <link-text>turn to 248</link-text>.</choice>
      </data>
@@ -4621,7 +4614,7 @@ Todo:
 
      <data>
       <p>Upon seeing you emerge from the woods, the Giak officer shouts <quote>Ogot! Ogot!</quote> to his cowering troops, who flee the ruins and run to the safety of the forest.</p>
-      <p>Shaking his mailed fist at you, the black-clad Giak screams, <quote>RANEG ROGAG OK&emdash;ORGADAKA OKAK ROGAG GAJ!</quote> before leaving. Surveying the scene of battle, you count over fifteen Giak dead lying among the broken pillars of Raumas.</p>
+      <p>Shaking his mailed fist at you, the black-clad Giak screams, <quote>RANEG ROGAG OK<ch.emdash/>ORGADAKA OKAK ROGAG GAJ!</quote> before leaving. Surveying the scene of battle, you count over fifteen Giak dead lying among the broken pillars of Raumas.</p>
       <p>The young wizard wipes his brow and walks towards you, his hand extended in friendship.</p>
       <choice idref="sect349"><link-text>Turn to 349</link-text>.</choice>
      </data>
@@ -4631,7 +4624,7 @@ Todo:
      <meta><title>326</title></meta>
 
      <data>
-      <p>You carefully insert the Key and turn it clockwise. You hear a dull click&emdash;the Key works. You lift out the pin, and the large granite door slowly swings towards you on hidden hinges. The grey half-light of the Graveyard floods into the tomb. The exit is overgrown with graveweed and you suffer many cuts to your face and arms as you fight your way through to the surface.</p>
+      <p>You carefully insert the Key and turn it clockwise. You hear a dull click<ch.emdash/>the Key works. You lift out the pin, and the large granite door slowly swings towards you on hidden hinges. The grey half-light of the Graveyard floods into the tomb. The exit is overgrown with graveweed and you suffer many cuts to your face and arms as you fight your way through to the surface.</p>
       <p>Looking back, you see the tomb door slowly close and a cruel inhuman laugh seems to rise out of the very ground on which you stand. In blind panic, you race through the eerie necropolis towards the south gate.</p>
       <choice idref="sect61"><link-text>Turn to 61</link-text>.</choice>
      </data>
@@ -4642,7 +4635,7 @@ Todo:
 
      <data>
       <p>Within a few minutes, you can see the Kraan hovering over a hilltop behind you. At a quick count you can make out at least sixteen of these horrible creatures, each of which has at least two Giaks riding upon its back. They are armed with long spears and wear tall pointed helmets of dull bronze. You hear the excited grunts of the Giaks. They have spotted you.</p>
-      <p>You jump for the entrance of the tunnel some twenty-five feet below, but your boot gets caught in a thorny briar and you hang helplessly upside down&emdash;weaponless and vulnerable. Fortunately for you the end is swift: As the first Giak lance pierces your heart, death is instantaneous.</p>
+      <p>You jump for the entrance of the tunnel some twenty-five feet below, but your boot gets caught in a thorny briar and you hang helplessly upside down<ch.emdash/>weaponless and vulnerable. Fortunately for you the end is swift: As the first Giak lance pierces your heart, death is instantaneous.</p>
       <choice>Your life and your mission end here.</choice>
      </data>
     </section>
@@ -4698,7 +4691,7 @@ Todo:
      <meta><title>332</title></meta>
 
      <data>
-      <p>You walk for nearly ten minutes along a dark and winding corridor, and then start to climb a steep staircase to a small wooden door. The man presses a secret catch and the door opens. You enter a large, plushly decorated bedroom with a huge marble bath that takes up one comer of the room. The man suggests that you refresh yourself here whilst he seeks an audience with the King.</p>
+      <p>You walk for nearly ten minutes along a dark and winding corridor, and then start to climb a steep staircase to a small wooden door. The man presses a secret catch and the door opens. You enter a large, plushly decorated bedroom with a huge marble bath that takes up one corner of the room. The man suggests that you refresh yourself here whilst he seeks an audience with the King.</p>
       <p>You quickly bathe and change into some white robes that have been left out on a large marble table. Shortly, the man returns and leads you through a long corridor lined with exquisite tapestries. You finally arrive at a large door guarded by two soldiers wearing silver armour.</p>
       <p>You are about to meet the King.</p>
       <choice idref="sect350"><link-text>Turn to 350</link-text>.</choice>
@@ -4710,7 +4703,7 @@ Todo:
 
      <data>
       <p>You have cut your way through the thick undergrowth for nearly half an hour when you hear the beat of wings high above the trees. Looking up you can just make out the shape of a Kraan approaching from the north. It is one of the monsters that attacked the monastery and on its back are two grey-skinned creatures armed with long spears.</p>
-      <p>These are Mountain Giaks&emdash;evil servants of the Darklords, full of hatred and malice. Many centuries ago, their ancestors were used by the Darklords to build the infernal city of Helgedad, which lies in the volcanic wastelands beyond the Durncrag range of mountains. The construction of the city was long and tortuous and only the strongest of the Giaks survived the heat and poisonous atmosphere of Helgedad.</p>
+      <p>These are Mountain Giaks<ch.emdash/>evil servants of the Darklords, full of hatred and malice. Many centuries ago, their ancestors were used by the Darklords to build the infernal city of Helgedad, which lies in the volcanic wastelands beyond the Durncrag range of mountains. The construction of the city was long and <!--ERRTAG-RE-294191-->torturous<!--/ERRTAG-RE-294191--> and only the strongest of the Giaks survived the heat and poisonous atmosphere of Helgedad.</p>
       <p>Hidden by the trees, you freeze, keeping absolutely still as the Kraan passes overhead and disappears towards the south. When you are sure that it has gone, you move off once again into the forest.</p>
       <choice idref="sect131"><link-text>Turn to 131</link-text>.</choice>
      </data>
@@ -4720,11 +4713,11 @@ Todo:
      <meta><title>334</title></meta>
 
      <data>
-      <p>As the stream vanishes up into the rocky hillside, you can see on the track above four soldiers and their officer. They wear the uniform of the King&apos;s army.</p>
+      <p>As the stream vanishes up into the rocky hillside, you can see on the track above four soldiers and their officer. They wear the uniform of the King<ch.apos/>s army.</p>
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>You can see on the track above four soldiers and their<br />officer wearing the uniform of the King&apos;s army</description>
+        <description>You can see on the track above four soldiers and their<br />officer wearing the uniform of the King<ch.apos/>s army</description>
        </meta>
        <instance class="html" src="ill18.gif" width="386" height="679" />
        <instance class="pdf" src="ill18.pdf" width="386" height="679" />
@@ -4754,7 +4747,7 @@ Todo:
      <meta><title>336</title></meta>
 
      <data>
-      <p>You rush into the clearing and take the Giaks completely by surprise. Without a moment&apos;s hesitation, you strike out at the one nearest to you. He is dead before his body hits the ground. The other Giaks unsheath their curved swords and attack you. You must fight them one at a time.</p>
+      <p>You rush into the clearing and take the Giaks completely by surprise. Without a moment<ch.apos/>s hesitation, you strike out at the one nearest to you. He is dead before his body hits the ground. The other Giaks <!--ERRTAG-RE-296725-->unsheathe<!--/ERRTAG-RE-296725--> their curved swords and attack you. You must fight them one at a time.</p>
       <combat><enemy>Giak 1</enemy><enemy-attribute class="combatskill">14</enemy-attribute><enemy-attribute class="endurance">11</enemy-attribute></combat> 
       <combat><enemy>Giak 2</enemy><enemy-attribute class="combatskill">13</enemy-attribute><enemy-attribute class="endurance">11</enemy-attribute></combat> 
       <choice idref="sect117">If you win, you free the ranger and <link-text>turn to 117</link-text>.</choice>
@@ -4767,8 +4760,8 @@ Todo:
      <data>
       <p>Just as you remove the ornate pin, a loud crack deafens you.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
-      <choice idref="sect219">If the number picked is 0&endash;4, <link-text>turn to 219</link-text>.</choice>
-      <choice idref="sect317">If the number is 5&endash;9, <link-text>turn to 317</link-text>.</choice>
+      <choice idref="sect219">If the number picked is 0<ch.endash/>4, <link-text>turn to 219</link-text>.</choice>
+      <choice idref="sect317">If the number is 5<ch.endash/>9, <link-text>turn to 317</link-text>.</choice>
      </data>
     </section>
 
@@ -4901,19 +4894,19 @@ Todo:
 
      <footnotes>
       <footnote id="sect349-1-foot" idref="sect349-1">
-       <p>Later books assume that you keep the Crystal Star Pendant and ask you if you possess it to see if you&apos;ve ever met Banedon. It also may or may not be useful in other situations. You may decide whether or not to keep the Pendant.</p>
+       <p>Later books assume that you keep the Crystal Star Pendant and ask you if you possess it to see if you<ch.apos/>ve ever met Banedon. It also may or may not be useful in other situations. You may decide whether or not to keep the Pendant.</p>
       </footnote>
      </footnotes>
 
      <data>
       <p>He is a young blond-haired youth with deep brooding eyes. His face is lined with exhaustion and the grime of battle, and his long sky-blue robes bear evidence of living rough in the wilds. He shakes your hand and bows. <quote>My eternal thanks, Kai Lord. My powers are nearly drained. Had you not come to my aid, I fear I would have ended my days atop a Giak lance.</quote></p>
       <p>He is weak and unsteady on his feet. You take his arm and sit him down upon a fallen pillar where you listen intently to what he has to say.</p>
-      <p><quote>My name is Banedon. I am journeyman to the Brotherhood of the Crystal Star, which is the magician&apos;s guild of Toran. My Guildmaster has sent me to your monastery with this urgent message.</quote> He removes a vellum envelope from inside his robes and hands it to you.</p>
+      <p><quote>My name is Banedon. I am journeyman to the Brotherhood of the Crystal Star, which is the <!--ERRTAG-RE-306915-->Magicians<ch.apos/> Guild of Toran<!--/ERRTAG-RE-306915-->. My Guildmaster has sent me to your monastery with this urgent message.</quote> He removes a vellum envelope from inside his robes and hands it to you.</p>
       <p><quote>As you see, I have opened the letter and read its contents. When the war started, I was on the highway with two travelling companions. The Kraan attacked us and we lost each other in the forest during our escape.</quote></p>
       <p>The letter is a warning to the Kai Lords that the Darklords have mustered a vast army beyond the Durncrag range. The Guildmaster urges the Kai to cancel the celebrations of Fehmarn and prepare for war.</p>
       <p><quote>I fear we were betrayed,</quote> says Banedon, his head bowed in sorrow.</p>
       <p><quote>One of my order, a brother called Vonotar, had explored the forbidden mysteries of the Black Art. Ten days ago he denounced the Brotherhood and killed one of our Elders. He has since disappeared. It is rumoured that he now aids the Darklords.</quote></p>
-      <p>You tell Banedon what has happened at the monastery, and of your mission to warn the King. Silently, he removes a gold chain from around his neck and hands it to you. On the chain is a small Crystal Star Pendant. <quote>It is the symbol of my Brotherhood, and we are both truly brothers in this hour of darkness. It is a talisman of good fortune&emdash;may it protect you on your road ahead.</quote></p>
+      <p>You tell Banedon what has happened at the monastery, and of your mission to warn the King. Silently, he removes a gold chain from around his neck and hands it to you. On the chain is a small Crystal Star Pendant. <quote>It is the symbol of my Brotherhood, and we are both truly brothers in this hour of darkness. It is a talisman of good fortune<ch.emdash/>may it protect you on your road ahead.</quote></p>
       <p>You thank him, place the chain around your neck and slip the <a id="sect349-1" idref="sect349-1-foot" class="footnote">Crystal Star</a> inside your shirt. (Remember to mark this on your <a idref="action">Action Chart</a>.)</p>
       <p>Banedon bids you farewell. <quote>We must leave this place lest the Giaks return with more of their loathsome kind to put an end to us. I must return to my Guild. I bid you farewell, my brother. May the luck of the gods go with you.</quote></p>
       <choice idref="sect293"><link-text>Turn to 293</link-text>.</choice>
@@ -4940,8 +4933,8 @@ Todo:
        <instance class="pdf" src="ill20.pdf" width="386" height="672" />
       </illustration>
       <p><quote>Lone Wolf, you have selfless courage: the quality of a true Kai Lord. Your journey here has been one of great peril and although your news comes as a grievous blow, the spirit of your determination is like a beacon of hope to us all in this dark hour. You have brought great honour to the memory of your Masters, and for that we praise you.</quote></p>
-      <p>You receive the praise and heartfelt thanks of the entire hall&emdash;an honour that brings a certain redness to your young face. The King raises his hand and all the voices cease.</p>
-      <p><quote>You have done all that Sommerlund could have asked of a loyal son, but she is greatly in need of you still. The Darklords are powerful once more and their ambition knows no bounds. Our only hope lies within Durenor with the power that once defeated the Darklords an age ago. Lone Wolf, you are the last of the Kai&emdash;you have the skills. Will you journey to Durenor and return with the Sommerswerd, the sword of the sun? Only with that gift of the gods may we crush this evil and save our land.</quote></p>
+      <p>You receive the praise and heartfelt thanks of the entire hall<ch.emdash/>an honour that brings a certain redness to your young face. The King raises his hand and all the voices cease.</p>
+      <p><quote>You have done all that Sommerlund could have asked of a loyal son, but she is greatly in need of you still. The Darklords are powerful once more and their ambition knows no bounds. Our only hope lies within Durenor with the power that once defeated the Darklords an age ago. Lone Wolf, you are the last of the Kai<ch.emdash/>you have the skills. Will you journey to Durenor and return with the Sommerswerd, the sword of the sun? Only with that gift of the gods may we crush this evil and save our land.</quote></p>
       <p>If you wish to accept the quest of the Sommerswerd, begin your adventure with Book 2 of the Lone Wolf adventures:</p>
       <p><cite><a href="&link.02fotw;">Fire on the Water</a></cite></p>
      </data>
@@ -5138,12 +5131,12 @@ Todo:
       <p>(<a idref="kaiwisdm">Kai Wisdom</a>) Removed <quote>on the back cover of the book </quote>.</p>
       <p>(<a idref="sect1">1</a>) Replaced <quote>Sommerlund</quote> with <quote>Sommlending</quote> and made the last choice (about using Sixth Sense) the first.</p>
       <p>(<a idref="sect4">4</a>) Moved the last choice (about the Tracking Discipline) into the first position.</p>
-      <p>(<a idref="sect17">17</a>) Changed the last choice that led to <a idref="sect331">Section 331</a> to lead to <a idref="sect316">Section 316</a> instead in order to parallel <a idref="sect89">Section 89</a>. It doesn&apos;t make sense to skip the section describing the tumble downhill.</p>
+      <p>(<a idref="sect17">17</a>) Changed the last choice that led to <a idref="sect331">Section 331</a> to lead to <a idref="sect316">Section 316</a> instead in order to parallel <a idref="sect89">Section 89</a>. It doesn<ch.apos/>t make sense to skip the section describing the tumble downhill.</p>
       <p>(<a idref="sect18">18</a>) Moved the choice about the Camouflage Discipline into the first position.</p>
       <p>(<a idref="sect19">19</a>) Moved the choice about the Tracking Discipline into the first position and replaced <quote>Gallowbrush</quote> with <quote>gallowbrush</quote>: you can't pick it up.</p>
       <p>(<a idref="sect20">20</a>) Replaced <quote>Jala</quote> with <quote>jala</quote> and <quote>dagger</quote> with <quote>Dagger</quote>. The original versions of this book had this section lead to <a idref="sect272">Section 272</a>, which is incorrect. We are using the correct section, <a idref="sect273">273</a>, as used in more recent editions.</p>
       <p>(<a idref="sect21">21</a>) The text is unchanged but we have concatenated some of the paragraphs for the dice rolls for clarification.</p>
-      <p>(<a idref="sect22">22</a>) Added a comma after <quote>0&endash;4</quote> in the first choice.</p>
+      <p>(<a idref="sect22">22</a>) Added a comma after <quote>0<ch.endash/>4</quote> in the first choice.</p>
       <p>(<a idref="sect23">23</a>) Reordered the choices. The choice that was originally first (about removing the pin) is now last. The choice about the Golden Key was originally last and is now first. Also added <quote>and wish to use it</quote> after <quote>Golden Key</quote>.</p>
       <p>(<a idref="sect32">32</a>) Replaced <quote>unmistakeable</quote> with <quote>unmistakable</quote>.</p>
       <p>(<a idref="sect36">36</a>) Added a comma after <quote>4 or lower</quote> in the first choice.</p>
@@ -5152,10 +5145,11 @@ Todo:
       <p>(<a idref="sect46">46</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
       <p>(<a idref="sect58">58</a>) Made the choice that led to <a idref="sect286">Section 286</a> to lead to <a idref="sect251">Section 251</a> instead. Many readers have realized that there was an error here but assumed that the original numbers for the choices should simply be reversed, giving Lone Wolf a chance at survival for hiding and certain death for riding on. Actually, there is no certain death possibility here. Hiding is supposed to grant you certain survival. The proof of this correction is that there is no other path to <a idref="sect251">Section 251</a>, and it works perfectly.</p>
       <p>(<a idref="sect62">62</a>) Replaced <quote>crossbow had</quote> with <quote>crossbow has</quote>.</p>
-      <p>(<a idref="sect67">67</a>) Made the choice that led to <a idref="sect140">Section 140</a> to lead to <a idref="sect252">Section 252</a> instead. If you read <a idref="sect222">Section 222</a>, you&apos;ll notice that the choice leading to <a idref="sect252">Section 252</a> is the east track. Indeed, only <a idref="sect140">Section 140</a> may lead you to the bear of which Tracking is supposed to warn you in this section.</p>
+      <p>(<a idref="sect67">67</a>) Made the choice that led to <a idref="sect140">Section 140</a> to lead to <a idref="sect252">Section 252</a> instead. If you read <a idref="sect222">Section 222</a>, you<ch.apos/>ll notice that the choice leading to <a idref="sect252">Section 252</a> is the east track. Indeed, only <a idref="sect140">Section 140</a> may lead you to the bear of which Tracking is supposed to warn you in this section.</p>
       <p>(<a idref="sect69">69</a>) Replaced <quote>Gallowbrush</quote> with <quote>gallowbrush</quote>: you can't pick it up.</p>
       <p>(<a idref="sect70">70</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
       <p>(<a idref="sect71">71</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
+<p>(<a idref="sect75">75</a>)<!--ERRTAG-RE-93708-ITEM--> Replaced <quote>border rangers</quote> with <quote>Border Rangers</quote>.<!--/ERRTAG-RE-93708-ITEM--></p>
       <p>(<a idref="sect83">83</a>) Added another <quote>s</quote> after <quote>posses</quote> in the last choice and moved that choice into the first position.</p>
       <p>(<a idref="sect87">87</a>) Replaced <quote>Graveweed</quote> with <quote>graveweed</quote>.</p>
       <p>(<a idref="sect91">91</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
@@ -5164,12 +5158,14 @@ Todo:
       <p>(<a idref="sect119">119</a>) Replaced <quote>Gallowbrush</quote> with <quote>gallowbrush</quote>: you can't pick it up.</p>
       <p>(<a idref="sect122">122</a>) Split the first sentence which was actually two independent clauses into two sentences to fix it.</p>
       <p>(<a idref="sect125">125</a>) Moved the last choice (about the Tracking Discipline) into the first position.</p>
-      <p>(<a idref="sect144">144</a>) Added <quote> or if you have no Backpack Items</quote> to the second paragraph.</p>
+<p>(<a idref="sect128">128</a>)<!--ERRTAG-RE-134226-ITEM--> Replaced <quote>border ranger</quote> with <quote>Border Ranger</quote>.<!--/ERRTAG-RE-134226-ITEM--></p>
+<p>(<a idref="sect131">131</a>)<!--ERRTAG-RE-137630-ITEM--> Replaced <quote>Magicians Guild of Toran</quote> with <quote>Magicians<ch.apos/> Guild of Toran</quote>.<!--/ERRTAG-RE-137630-ITEM--></p>
+      <p>(<a idref="sect144">144</a>) Added <quote> or if you have no Backpack Items</quote> to the second paragraph.<!--ERRTAG-RE-149741-ITEM--> Replaced <quote>one Item is stolen</quote> with <quote>one item is stolen</quote>.<!--/ERRTAG-RE-149741-ITEM--></p>
       <p>(<a idref="sect151">151</a>) Added <quote>If you wish to remove the pin, turn to 337.</quote> This is the only other possible choice for what is a strangely one-sided option in the original text. More flavourful language might make more sense, such as <quote>If you still wish to remove the pin with your hands,</quote> but to best preserve the integrity of the text, we simply copied the choice from <a idref="sect23">Section 23</a>.</p>
       <p>(<a idref="sect154">154</a>) Replaced <quote>head first</quote> with <quote>head-first</quote>.</p>
       <p>(<a idref="sect167">167</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
       <p>(<a idref="sect172">172</a>) Moved the second choice (about the Camouflage Discipline) into the first position.</p>
-      <p>(<a idref="sect175">175</a>) Moved the last choice (about the Camouflage Discipline) into the first position.</p>
+      <p>(<a idref="sect175">175</a>) Moved the last choice (about the Camouflage Discipline) into the first position.<!--ERRTAG-RE-176294-ITEM--> Replaced <quote>border rangers</quote> with <quote>Border Rangers</quote>.<!--/ERRTAG-RE-176294-ITEM--></p>
       <p>(<a idref="sect197">197</a>) Deleted a superfluous space after the word <quote>wish</quote> at the very end of the second sentence.</p>
       <p>(<a idref="sect200">200</a>) Reversed the order of the choices.</p>
       <p>(<a idref="sect201">201</a>) Changed the choice that led to <a idref="sect215">Section 215</a> to lead to <a idref="sect15">Section 15</a> instead. The original choice appears to make sense, but does not work out in a map. The indication that the correct section is really <a idref="sect15">15</a> is the fact that it is not otherwise accessible (though <a idref="sect215">Section 215</a> is) and <a idref="sect15">15</a> leads back to <a idref="sect201">Section 201</a> when taking the opposite direction.</p>
@@ -5181,7 +5177,7 @@ Todo:
       <p>(<a idref="sect235">235</a>) Moved the last choice (about Tracking) into the first position.</p>
       <p>(<a idref="sect260">260</a>) Replaced <quote>spreadeagled</quote> with <quote>spread-eagled</quote>.</p>
       <p>(<a idref="sect267">267</a>) Capitalized <quote>message</quote> in the second sentence of the second paragraph, since that is how retrievable items are supposed to be represented, and to be consistent with the first time the item is mentioned in this section.</p>
-      <p>(<a idref="sect268">268</a>) Replaced <quote>wary</quote> with <quote>weary</quote>. We hardly think Lone Wolf would be wary among the King&apos;s soldiers.</p>
+      <p>(<a idref="sect268">268</a>) Replaced <quote>wary</quote> with <quote>weary</quote>. We hardly think Lone Wolf would be wary among the King<ch.apos/>s soldiers.</p>
       <p>(<a idref="sect272">272</a>) Replaced <quote>wood-smoke</quote> with <quote>wood smoke</quote>.</p>
       <p>(<a idref="sect277">277</a>) Replaced <quote><a idref="sect113">Turn 113</a></quote> to <quote><a idref="sect113">Turn to 113</a>.</quote></p>
       <p>(<a idref="sect284">284</a>) Replaced both occurrences of <quote>Graveweed</quote> with <quote>graveweed</quote>.</p>
@@ -5191,9 +5187,11 @@ Todo:
       <p>(<a idref="sect322">322</a>) Replaced <quote>jet black</quote> with <quote>jet-black</quote>.</p>
       <p>(<a idref="sect323">323</a>) Replaced <quote>jet black</quote> with <quote>jet-black</quote>.</p>
       <p>(<a idref="sect326">326</a>) Replaced <quote>Graveweed</quote> with <quote>graveweed</quote>.</p>
+<p>(<a idref="sect333">333</a>)<!--ERRTAG-RE-294191-ITEM--> Replaced <quote>tortuous</quote> with <quote>torturous</quote>.<!--/ERRTAG-RE-294191-ITEM--></p>
       <p>(<a idref="sect334">334</a>) Moved the last choice (about Sixth Sense) into the first position, and move the first choice (that leads to <a idref="sect162">Section 162</a>) into the last position.</p>
+<p>(<a idref="sect336">336</a>)<!--ERRTAG-RE-296725-ITEM--> Replaced <quote>unsheath</quote> with <quote>unsheathe</quote>.<!--/ERRTAG-RE-296725-ITEM--></p>
       <p>(<a idref="sect341">341</a>) Moved the last choice (about Tracking) into the first position.</p>
-      <p>(<a idref="sect349">349</a>) <quote>Vonatar,</quote> from the seventh paragraph, is spelled <quote>Vonotar</quote> in later Lone Wolf books.</p>
+      <p>(<a idref="sect349">349</a>) <quote>Vonatar,</quote> from the seventh paragraph, is spelled <quote>Vonotar</quote> in later Lone Wolf books.<!--ERRTAG-RE-306915-ITEM--> Replaced <quote>magician<ch.apos/>s guild of Toran</quote> with <quote>Magicians<ch.apos/> Guild of Toran</quote>.<!--/ERRTAG-RE-306915-ITEM--></p>
       <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>.</p>
      </data>
     </section>
@@ -5203,18 +5201,7 @@ Todo:
   <section class="backmatter" id="footnotz">
    <meta><title>Footnotes</title></meta>
 
-   <data>
-    <p>(<a idref="sect76">76</a>) Record this Item as a Vordak Gem. Though the text says you originally keep it in your jacket pocket, this is a temporary place to keep it before stowing it in your Backpack. It is not a Special Item. (cf. <a idref="sect304">Section 304</a>)</p>
-    <p>(<a idref="sect113">113</a>) Each Meal of Laumspur may be consumed when prompted for a Meal in which case it fulfils the Meal requirement in addition to restoring 3 <typ class="attribute">ENDURANCE</typ> points. Laumspur may also be consumed at any other time to restore <typ class="attribute">ENDURANCE</typ> without having any significance as a meal.</p>
-    <p>(<a idref="sect137">137</a>) Count the 20 Gems as one Special Item.</p>
-    <p>(<a idref="sect147">147</a>) The wording of this section assumes that you have come from <a idref="sect28">Section 28</a>.  If you have just reached this section for the first time from <a idref="sect42">Section 42</a>, read the last sentence and two choices as follows: <quote>&ellips;As you eat you notice that the path starts to curve towards the north. If you wish to follow it, <a idref="sect28">turn to 28</a>. If you wish to return the way you have come, <a idref="sect42">turn to 42</a>.</quote></p>
-    <p>(<a idref="sect181">181</a>) At the end of the second paragraph, it says that <quote>You have lost your Weapons and Equipment.</quote> You may ignore this statement unless you have surrendered to the bandits (that is, if you have turned to this section from <a idref="sect205">Section 205</a>). Do not adjust your <a idref="action">Action Chart</a>. The statement was referring to what happens in <a idref="sect205">Section 205</a>, but you can arrive at this section from <a idref="sect22">Section 22</a> as well.</p>
-     <p>(<a idref="sect205">205</a>) Make sure to erase all items and item containers from your <a idref="action">Action Chart</a> (i.e. Weapons, Backpack, Special Items, and Belt Pouch).</p>
-     <p>The author may not have realized that the Crystal Star Pendant and <a idref="map">Map of Sommerlund</a> might be among the items lost. You may decide to simply keep these items if you have them. If you do choose a strict interpretation of the text, however, then it&apos;s only fair that you shouldn&apos;t look at the <a idref="map">map</a> if you are without the <a idref="map">Map of Sommerlund</a> item.</p>
-    <p>(<a idref="sect236">236</a>) Remember to erase the Vordak Gem from your <a idref="action">Action Chart</a>. If you had two Gems, you need erase only one. The <typ class="attribute">COMBAT SKILL</typ> loss is indeed permanent.</p>
-    <p>(<a idref="sect304">304</a>) Record this Backpack Item as a Vordak Gem.</p>
-    <p>(<a idref="sect349">349</a>) Later books assume that you keep the Crystal Star Pendant and ask you if you possess it to see if you&apos;ve ever met Banedon. It also may or may not be useful in other situations. You may decide whether or not to keep the Pendant.</p>
-   </data>
+   <data />
   </section>
 
   <section class="backmatter" id="illstrat">
@@ -5298,7 +5285,7 @@ Todo:
      </data>
     </section>
 
-<!-- JC Alvarez&apos;s illustrations: DO NOT DELETE
+<!-- JC Alvarez<ch.apos/>s illustrations: DO NOT DELETE
       <ul class="unbulleted">
        <li><a idref="tssf">The Story So Far</a></li>
        <li><a idref="sect17">Section 17</a></li>
@@ -5356,316 +5343,8 @@ Todo:
    </data>
   </section>
 
-  <section class="backmatter" id="license">
-   <meta><title>Project Aon License</title></meta>
+  &inclusion.project.aon.license;
 
-   <data>
-    <p>24 May 2001</p>
-  
-    <section class="backmatter" id="lic-pre">
-     <meta><title>0. Preamble</title></meta>
-
-     <data>
-      <p>Joe Dever, author of the Lone Wolf game books, and Ian Page, author of the World of Lone Wolf books are providing certain of their works for free (gratis) download from the internet. Gary Chalk and Brian Williams are similarly offering the illustrations that they did for Joe Dever&apos;s books. This license is intended to protect the rights of the authors and the illustrators, the rights of his readers, and the quality of the distributions of the books.</p>
-      <p>Basically, by viewing or downloading the books or the illustrations, you agree to refrain from redistributing them in any format for any reason. This is intended to protect readers from getting poor quality, unofficial versions or from being asked for payment in exchange for the books by someone who is redistributing them unofficially.</p>
-      <p>Anyone who wishes to simply view or download the Internet Editions for their own personal use need not worry about running afoul of the terms of this License. These activities are within acceptable behaviour as defined by this License.</p>
-      <p>This section does not contain the legally binding terms of this license. The precise terms and conditions of this license follow.</p>
-     </data>
-    </section>
-
-    <section class="backmatter" id="lic-1">
-     <meta><title>1. Definitions</title></meta>
-
-     <data>
-
-      <section class="backmatter" id="lic-1-0">
-       <meta><title>1.0</title></meta>
-
-       <data>
-        <p><quote>License</quote> shall hereafter refer to this document.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-1-1">
-       <meta><title>1.1</title></meta>
-
-       <data>
-        <p><quote>Authors</quote> shall hereafter refer to Joe Dever and Ian Page, copyright holders for the literary works covered by this license. Where either Joe Dever or Ian Page are mentioned singly, they will be referred to by name.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-1-2">
-       <meta><title>1.2</title></meta>
-
-       <data>
-        <p><quote>Illustrator</quote> shall hereafter refer to Gary Chalk, holder of the copyrights for the illustrations of Lone Wolf books one through eight counted inclusively, and Brian Williams, holder of the copyrights for the illustrations of Lone Wolf books nine through twenty-eight counted inclusively with the exception of the illustrations for book twenty-one, <cite>The Voyage of the Moonstone</cite> and holder of the copyrights for the illustrations of books two through four of the Freeway Warrior series. Where either Gary Chalk or Brian Williams are mentioned singly, they will be referred to by name.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-1-3">
-       <meta><title>1.3</title></meta>
-
-       <data>
-        <p><quote>Internet</quote> shall hereafter refer to any means of transferring information electronically between two or more <quote>Licensees</quote>. (the term <quote>Licensee</quote> is defined in Section 1.5 of the License)</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-1-4">
-       <meta><title>1.4</title></meta>
-
-       <data>
-        <p><quote>Internet Editions</quote> shall hereafter refer to the document or documents, any parts thereof or derivative works thereof (including translations) made available to the public under the terms of this License via the Internet. The term <quote>Internet Editions</quote> is limited to the electronic transcription of certain text and illustrations by the Authors and Illustrators respectively as listed hereafter.</p>
-        <p>The following are the works written by Joe Dever which are being offered under the terms of this license:</p>
-
-        <ul>
-         <li><cite>Flight from the Dark</cite>; Copyright 1984 Joe Dever and Gary Chalk.</li>
-         <li><cite>Fire on the Water</cite>; Copyright 1984 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Caverns of Kalte</cite>; Copyright 1984 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Chasm of Doom</cite>; Copyright 1985 Joe Dever and Gary Chalk.</li>
-         <li><cite>Shadow on the Sand</cite>; Copyright 1985 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Kingdoms of Terror</cite>; Copyright 1985 Joe Dever and Gary Chalk.</li>
-         <li><cite>Castle Death</cite>; Copyright 1986 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Jungle of Horrors</cite>; Copyright 1987 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Cauldron of Fear</cite>; Copyright 1987 Joe Dever.</li>
-         <li><cite>The Dungeons of Torgar</cite>; Copyright 1987 Joe Dever.</li>
-         <li><cite>The Prisoners of Time</cite>; Copyright 1987 Joe Dever.</li>
-         <li><cite>The Masters of Darkness</cite>; Copyright 1988 Joe Dever.</li>
-         <li><cite>The Plague Lords of Ruel</cite>; Copyright 1990, 1992 Joe Dever.</li>
-         <li><cite>The Captives of Kaag</cite>; Copyright 1990, 1992 Joe Dever.</li>
-         <li><cite>The Darke Crusade</cite>; Copyright 1991, 1993 Joe Dever.</li>
-         <li><cite>The Legacy of Vashna</cite>; Copyright 1991, 1993 Joe Dever.</li>
-         <li><cite>The Deathlord of Ixia</cite>; Copyright 1992, 1994 Joe Dever.</li>
-         <li><cite>Dawn of the Dragons</cite>; Copyright 1992 Joe Dever.</li>
-         <li><cite>Wolf&apos;s Bane</cite>; Copyright 1993, 1995 Joe Dever.</li>
-         <li><cite>The Curse of Naar</cite>; Copyright 1993, 1996 Joe Dever.</li>
-         <li><cite>The Magnamund Companion</cite>; Copyright 1986 Joe Dever.</li>
-         <li><cite>Freeway Warrior: Highway Holocaust</cite>; Copyright 1988 Joe Dever.</li>
-         <li><cite>Freeway Warrior: Slaughter Mountain Run</cite>; Copyright 1988 Joe Dever.</li>
-         <li><cite>Freeway Warrior: The Omega Zone</cite>; Copyright 1989 Joe Dever.</li>
-         <li><cite>Freeway Warrior: California Countdown</cite>; Copyright 1989 Joe Dever.</li>
-        </ul>
-
-        <p>The following are the works written by Ian Page which are being offered under the terms of this license:</p>
-
-        <ul>
-         <li><cite>Grey Star the Wizard</cite>; Copyright 1985 Ian Page.</li>
-         <li><cite>The Forbidden City</cite>; Copyright 1986 Ian Page.</li>
-         <li><cite>Beyond the Nightmare Gate</cite>; Copyright 1986 Ian Page.</li>
-         <li><cite>War of the Wizards</cite>; Copyright 1986 Ian Page.</li>
-        </ul>
-
-
-        <p>The illustrations created by Gary Chalk of the following books are part of the illustrations being offered under the terms of this License:</p>
-
-        <ul>
-         <li><cite>Flight from the Dark</cite>; Illustrations copyright 1984 Joe Dever and Gary Chalk.</li>
-         <li><cite>Fire on the Water</cite>; Illustrations copyright 1984 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Caverns of Kalte</cite>; Illustrations copyright 1984 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Chasm of Doom</cite>; Illustrations copyright 1985 Joe Dever and Gary Chalk.</li>
-         <li><cite>Shadow on the Sand</cite>; Illustrations copyright 1985 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Kingdoms of Terror</cite>; Illustrations copyright 1985 Joe Dever and Gary Chalk.</li>
-         <li><cite>Castle Death</cite>; Illustrations copyright 1986 Joe Dever and Gary Chalk.</li>
-         <li><cite>The Jungle of Horrors</cite>; Illustrations copyright 1987 Joe Dever and Gary Chalk.</li>
-        </ul>
-
-        <p>The illustrations created by Brian Williams of the following books are part of the illustrations being offered under the terms of this License:</p>
-
-        <ul>
-         <li><cite>The Cauldron of Fear</cite>; Illustrations Copyright 1987 Brian Williams.</li>
-         <li><cite>The Dungeons of Torgar</cite>; Illustrations Copyright 1987 Brian Williams.</li>
-         <li><cite>The Prisoners of Time</cite>; Illustrations Copyright 1987 Brian Williams.</li>
-         <li><cite>The Masters of Darkness</cite>; Illustrations Copyright 1988 Brian Williams.</li>
-         <li><cite>The Plague Lords of Ruel</cite>; Illustrations Copyright 1990, 1992 Brian Williams.</li>
-         <li><cite>The Captives of Kaag</cite>; Illustrations Copyright 1990, 1992 Brian Williams.</li>
-         <li><cite>The Darke Crusade</cite>; Illustrations Copyright 1991, 1993 Brian Williams.</li>
-         <li><cite>The Legacy of Vashna</cite>; Illustrations Copyright 1991, 1993 Brian Williams.</li>
-         <li><cite>The Deathlord of Ixia</cite>; Illustrations Copyright 1992 Brian Williams.</li>
-         <li><cite>Dawn of the Dragons</cite>; Illustrations Copyright 1992 Brian Williams.</li>
-         <li><cite>Wolf&apos;s Bane</cite>; Illustrations Copyright 1993 Brian Williams.</li>
-         <li><cite>The Curse of Naar</cite>; Illustrations Copyright 1993 Brian Williams.</li>
-         <li><cite>The Buccaneers of Shadaki</cite>; Illustrations Copyright 1994 Brian Williams.</li>
-         <li><cite>Mydnight&apos;s Hero</cite>; Illustrations Copyright 1995 Brian Williams.</li>
-         <li><cite>Rune War</cite>; Illustrations Copyright 1995 Brian Williams.</li>
-         <li><cite>Trail of the Wolf</cite>; Illustrations Copyright 1997 Brian Williams.</li>
-         <li><cite>The Fall of Blood Mountain</cite>; Illustrations Copyright 1997 Brian Williams.</li>
-         <li><cite>Vampirium</cite>; Illustrations Copyright 1998 Brian Williams.</li>
-         <li><cite>The Hunger of Sejanoz</cite>; Illustrations Copyright 1998 Brian Williams.</li>
-         <li><cite>Freeway Warrior: Slaughter Mountain Run</cite>; Illustrations Copyright 1988 Brian Williams.</li>
-         <li><cite>Freeway Warrior: The Omega Zone</cite>; Illustrations Copyright 1989 Brian Williams.</li>
-         <li><cite>Freeway Warrior: California Countdown</cite>; Illustrations Copyright 1989 Brian Williams.</li>
-        </ul>
-
-        <p><quote>Internet Editions</quote> shall not refer to any other works by the Authors nor any other illustrations by the Illustrators. <quote>Internet Editions</quote> shall refer solely to the text and illustrations of the above works when made available through the Internet.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-1-5">
-       <meta><title>1.5</title></meta>
-
-       <data>
-        <p><quote>Licensee</quote> shall hereafter refer to any person or electronic agent who receives some or all of the Internet Editions. The <quote>Licensee</quote> shall hereinafter be referred to as <quote>Licensee</quote> or <quote>you</quote>.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-1-6">
-       <meta><title>1.6</title></meta>
-
-       <data>
-        <p><quote>Distribution Point</quote> shall hereafter refer to the specific Internet site or sites to which the Authors and Illustrators have granted rights to distribute the Internet Editions.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-1-7">
-       <meta><title>1.7</title></meta>
-
-       <data>
-        <p><quote>Maintainer</quote> shall hereafter refer to the person or persons who are responsible for the maintenance of the Distribution Point.</p>
-       </data>
-      </section>
-
-     </data>
-    </section>
-
-    <section class="backmatter" id="lic-2">
-     <meta><title>2. Terms of Distribution</title></meta>
-
-     <data>
-
-      <section class="backmatter" id="lic-2-0">
-       <meta><title>2.0</title></meta>
-
-       <data>
-        <p>The terms of this License are limited to the distribution of the Internet Editions. No other form of distribution is covered under the terms of this License.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-2-1">
-       <meta><title>2.1</title></meta>
-
-       <data>
-        <p>The Authors and Illustrators grant you the right to receive a copy or copies of the Internet Editions from the Distribution Point at no charge provided that you agree to all of the terms and obligations of this License. If you do not agree to all of the terms and obligations of this License, you are not granted any rights by this License.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-2-2">
-       <meta><title>2.2</title></meta>
-
-       <data>
-        <p>You agree to refrain from redistributing the Internet Editions in any form, electronic or otherwise, to any other person or persons for any reason. You are granted the right to receive a copy or copies only for your own personal use.</p>
-        <p>This License does not collectively grant any rights to corporations or groups of individuals when regarded as one legal entity. This License exclusively grants rights to private individuals.</p>
-        <p>Redistribution includes but is not limited to displaying the Internet Editions within the graphical representation of an Internet site other than the Distribution Point. This prohibition includes but is not limited to HTML <quote>frames</quote>.</p>
-        <p>One exception to the restrictions on redistribution in this section is made in that you may send the Internet Editions or derivative works thereof to the Distribution Point by the consent of the Maintainer.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-2-3">
-       <meta><title>2.3</title></meta>
-
-       <data>
-        <p>You agree to be bound by the terms and obligations of this License by receiving or viewing a copy or copies of the Internet Editions even though you have not signed any written document. Indeed you have no right to receive or view a copy or copies without first agreeing to the terms and obligations of this License.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-2-4">
-       <meta><title>2.4</title></meta>
-
-       <data>
-        <p>The Authors and Illustrators retain all other rights to their respective portions of the Internet Editions not covered by this License. The Authors or Illustrators may, at any time, without notice and without need to show due cause, revoke the rights granted to you by this License to their respective portions of the Internet Editions.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-2-5">
-       <meta><title>2.5</title></meta>
-
-       <data>
-        <p>If a person is under the legal age to be able to enter into a contractual relationship as defined by the laws of the area in which that person lives, they may have a parent or legal guardian agree to be bound by the terms and obligations of this license. That same parent or legal guardian may thereafter give a copy or copies of the Internet Editions to that child. That parent or legal guardian is thereafter legally responsible to ensure that that child behaves in accordance with all of the terms and obligations of this License.</p>
-        <p>The authority of a parent or legal guardian to distribute the Internet Editions does not extend to the distribution of the Internet Editions to any other person or persons except his or her child or legal dependent.</p>
-       </data>
-      </section>
-
-     </data>
-    </section>
-
-    <section class="backmatter" id="lic-3">
-     <meta><title>3. Termination of the License</title></meta>
-
-     <data>
-
-      <section class="backmatter" id="lic-3-0">
-       <meta><title>3.0</title></meta>
-
-       <data>
-        <p>If for any reason you are unable to comply with any of the terms and obligations of this License, you agree to destroy all copies of the Internet Editions of which you have control within fourteen calendar days after the first violation.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-3-1">
-       <meta><title>3.1</title></meta>
-
-       <data>
-        <p>If any of the Authors or the Illustrators revokes your rights granted under this License, you agree to destroy all copies of the Authors&apos; or Illustrators&apos; work which is a part of the Internet Editions of which you have control within fourteen calendar days of receiving notification in any form.</p>
-       </data>
-      </section>
-
-     </data>
-    </section>
-
-    <section class="backmatter" id="lic-4">
-     <meta><title>4. Jurisdiction</title></meta>
-
-     <data>
-
-      <section class="backmatter" id="lic-4-0">
-       <meta><title>4.0</title></meta>
-
-       <data>
-        <p>If, in consequence of court judgement or the laws of a particular area, any portion of the License is held as invalid or unenforceable in any particular circumstance, you are no longer granted any rights under the terms of this License in that circumstance. You agree to act in accordance with section 3.0 for all copies of the Internet Editions for which the License is held as invalid or unenforceable as if you had violated the terms and obligations of the License. The License is intended to remain in force in all other circumstances.</p>
-       </data>
-      </section>
-
-     </data>
-    </section>
-
-    <section class="backmatter" id="lic-5">
-     <meta><title>5. Revision of the License</title></meta>
-
-     <data>
-
-      <section class="backmatter" id="lic-5-0">
-       <meta><title>5.0</title></meta>
-
-       <data>
-        <p>The Authors and the Illustrators may publish revisions of this License in the future to address new concerns. Any further revisions will be legally binding at the time that you receive notification in any form of the revision.</p>
-       </data>
-      </section>
-
-     </data>
-    </section>
-
-    <section class="backmatter" id="lic-6">
-     <meta><title>6. NO WARRANTY</title></meta>
-
-     <data>
-
-      <section class="backmatter" id="lic-6-0">
-       <meta><title>6.0</title></meta>
-
-       <data>
-        <p>BECAUSE THE INTERNET EDITIONS ARE LICENSED FREE OF CHARGE, THERE IS NO WARRANTY FOR THE INTERNET EDITIONS, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS OR OTHER PARTIES PROVIDE THE INTERNET EDITIONS "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY OF THE INTERNET EDITIONS IS WITH YOU. SHOULD THE INTERNET EDITIONS PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY REPAIRS.</p>
-       </data>
-      </section>
-
-      <section class="backmatter" id="lic-6-1">
-       <meta><title>6.1</title></meta>
-
-       <data>
-        <p>IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER OR MAINTAINER BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE INTERNET EDITIONS (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE INTERNET EDITIONS TO OPERATE WITH ANY PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
-       </data>
-      </section>
-     </data>
-    </section>
-   </data>
-  </section>
  </data>
 </section>
 
