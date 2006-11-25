@@ -9,6 +9,9 @@
 $Id$
 
 $Log$
+Revision 1.13  2006/11/25 04:47:00  jonathan.blake
+Removal of obsolete apache namespace.
+
 Revision 1.12  2006/06/05 23:46:46  jonathan.blake
 Fixing the handling of titles when <ch.*/> elements are used.
 
@@ -103,7 +106,6 @@ Todo:
 <xsl:transform version="1.0"
   xmlns="http://www.w3.org/1999/xhtml"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:lxslt="http://xml.apache.org/xslt"
   xmlns:redirect="org.apache.xalan.lib.Redirect"
   extension-element-prefixes="redirect">
 
