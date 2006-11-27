@@ -2,7 +2,7 @@
     <meta><title>Project Aon License</title></meta>
 
     <data>
-     <p>29 June 2006</p>
+     <p>30 June 2006</p>
 
      <section class="backmatter" id="lic-pre">
       <meta><title>0. Preamble</title></meta>
@@ -143,7 +143,7 @@
          <p>The text written by Gary Chalk for the following book is being offered under the terms of this License:</p>
 
          <ul>
-          <li><cite>The Lone Wolf Poster Painting Book</cite>;<br/><ch.copy/> 1986 Gary Chalk.</li>
+          <li><cite>The Lone Wolf Poster Painting Book</cite>;<br/><ch.copy/> 1987 Gary Chalk.</li>
          </ul>
 
          <p>The illustrations created by Melvyn Grant for the following book are part of the illustrations being offered under the terms of this License:</p>
