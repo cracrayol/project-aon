@@ -15,4 +15,5 @@ These entities define URLs of general utility.
 <!ENTITY link.paul.bonner.website  "http://www.paulbonnerart.com/">
 <!ENTITY link.melvyn.grant.website "http://www.melgrant.com/">
 
-<!ENTITY link.rh "http://www.projectaon.org/en/ReadersHandbook/Home">
+<!ENTITY link.rh  "http://www.projectaon.org/en/ReadersHandbook/Home">
+<!ENTITY link.tmc "http://www.projectaon.org/en/Main/TheMagnamundCompanion">
