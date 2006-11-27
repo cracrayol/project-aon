@@ -47,6 +47,3 @@ although it would be trivial to do so.
 <!ENTITY link.02smr   "../../fw/02smr/title.htm">
 <!ENTITY link.03oz    "../../fw/03oz/title.htm">
 <!ENTITY link.04cc    "../../fw/04cc/title.htm">
-
-<!ENTITY link.tmc     "../../misc/tmc/title.htm">
-
