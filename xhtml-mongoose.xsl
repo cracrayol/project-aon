@@ -9,6 +9,9 @@
 $Id$
 
 $Log$
+Revision 1.3  2006/12/07 01:42:28  jonathan.blake
+Text illustrations need inclusion
+
 Revision 1.2  2006/11/25 18:57:16  jonathan.blake
 Fixed links to footnotes
 
@@ -852,19 +855,24 @@ Todo:
 </xsl:template>
 
 <xsl:template match="illustration">
- <xsl:if test="instance[@class='html'] and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )">
-  <xsl:choose>
-   <xsl:when test="@class='float'">
-    <div class="illustration">
-     <xsl:text>[[Illustration </xsl:text>
-     <xsl:number count="illustration[@class='float' and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )]" from="/" level="any" format="I" />
-     <xsl:text>]]</xsl:text>
-    </div><xsl:value-of select="$newline" />
-   </xsl:when>
-
-   <xsl:otherwise></xsl:otherwise>
-  </xsl:choose>
- </xsl:if>
+ <xsl:choose>
+  <xsl:when test="instance[@class='text'] and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )">
+   <xsl:apply-templates select="instance[@class='text']/*"/>
+  </xsl:when>
+  <xsl:when test="instance[@class='html'] and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )">
+   <xsl:choose>
+    <xsl:when test="@class='float'">
+     <div class="illustration">
+      <xsl:text>[[Illustration </xsl:text>
+      <xsl:number count="illustration[@class='float' and contains( $use-illustrators, concat( ':', meta/creator, ':' ) )]" from="/" level="any" format="I" />
+      <xsl:text>]]</xsl:text>
+     </div><xsl:value-of select="$newline" />
+    </xsl:when>
+    <xsl:otherwise></xsl:otherwise>
+   </xsl:choose>
+  </xsl:when>
+  <xsl:otherwise></xsl:otherwise>
+ </xsl:choose>
 </xsl:template>
 
 <xsl:template match="instance" />
