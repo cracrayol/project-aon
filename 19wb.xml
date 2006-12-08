@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE gamebook SYSTEM "gamebook.dtd" [
- <!ENTITY % xhtml.characters SYSTEM "htmlchar.mod">
- <!ENTITY % latex.characters SYSTEM "ltexchar.mod">
- %xhtml.characters;
-
  <!ENTITY % general.links SYSTEM "genlink.mod">
  %general.links;
  <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
  %xhtml.links;
+
+ <!ENTITY % general.inclusions SYSTEM "geninc.mod">
+ %general.inclusions;
 ]>
 
 <gamebook xml:lang="en-UK" version="0.10">
@@ -16,6 +15,9 @@
 
 $Id$
 $Log$
+Revision 1.4  2006/12/08 20:51:24  jonathan.blake
+Making it validate and tidying the indentation
+
 Revision 1.3  2006/12/07 01:41:54  jonathan.blake
 Simon's updates
 
@@ -85,8 +87,6 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
 
  <data>
 
- <data>
-
    <section class="frontmatter" id="dedicate">
     <meta>
      <title>Dedication</title>
@@ -137,7 +137,6 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
     </data>
    </section>
 
-  <!-- Frontmatter -->
    <section class="frontmatter" id="tssf">
     <meta>
      <title>The Story So Far<ch.ellips/></title>
@@ -146,36 +145,36 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
     </meta>
 
     <data>
-	 <p>You are Grand Master Lone Wolf, the sole survivor of a massacre that wiped out the First Order of the Kai<ch.emdash/>the warrior elite of Sommerlund.</p>
+     <p>You are Grand Master Lone Wolf, the sole survivor of a massacre that wiped out the First Order of the Kai<ch.emdash/>the warrior elite of Sommerlund.</p>
 
-	 <p>It is the year MS 5080, thirty years since your brave kinsmen perished at the hands of the Darklords of Helgedad. These champions of evil, who were sent forth by Naar<ch.emdash/>the King of the darkness<ch.emdash/>to destroy the fertile world of Magnamund, have them-selves since been destroyed. You vowed to avenge the murder of the Kai and you kept your pledge, for it was you who brought about their downfall when alone you infiltrated their foul domain<ch.emdash/>the Darklands<ch.emdash/> and caused the destruction of their leader and the base of his power that was the infernal city of Helgedad.</p>
+     <p>It is the year MS 5080, thirty years since your brave kinsmen perished at the hands of the Darklords of Helgedad. These champions of evil, who were sent forth by Naar<ch.emdash/>the King of the darkness<ch.emdash/>to destroy the fertile world of Magnamund, have them-selves since been destroyed. You vowed to avenge the murder of the Kai and you kept your pledge, for it was you who brought about their downfall when alone you infiltrated their foul domain<ch.emdash/>the Darklands<ch.emdash/> and caused the destruction of their leader and the base of his power that was the infernal city of Helgedad.</p>
 
-	 <p>In the wake of their destruction, chaos befell the Darkland armies who had been poised to conquer all of Magnamund. This disorder escalated into a mutinous civil war, which allowed the freestate armies of Magnamund time in which to recover and launch a counter-offensive. Against the odds, a swift and total victory was secured over the feuding Darklands armies.</p>
+     <p>In the wake of their destruction, chaos befell the Darkland armies who had been poised to conquer all of Magnamund. This disorder escalated into a mutinous civil war, which allowed the freestate armies of Magnamund time in which to recover and launch a counter-offensive. Against the odds, a swift and total victory was secured over the feuding Darklands armies.</p>
 
-	 <p>For ten unbroken years peace has reigned in Sommerlund. Under your direction, the once-ruined monastery of the Kai has been rebuilt and restored to its former glory, and the task of teaching a New Order of Kai warriors the skills and proud traditions of your ancestors is also well established. The new generation of Kai recruits, all of whom were born during the era of war against the Darklords, possess strong latent Kai skills and all show exceptional promise. These skills will be nurtured and honed to perfection during their time at the monastery so that they may teach and inspire future generations, thereby ensuring the continued security of your homeland in future years.</p>
+     <p>For ten unbroken years peace has reigned in Sommerlund. Under your direction, the once-ruined monastery of the Kai has been rebuilt and restored to its former glory, and the task of teaching a New Order of Kai warriors the skills and proud traditions of your ancestors is also well established. The new generation of Kai recruits, all of whom were born during the era of war against the Darklords, possess strong latent Kai skills and all show exceptional promise. These skills will be nurtured and honed to perfection during their time at the monastery so that they may teach and inspire future generations, thereby ensuring the continued security of your homeland in future years.</p>
 
-	 <p>Your attainment of the rank of Kai Grand Master brought with it great rewards. Some, such as the restoration of the Kai and the undying gratitude of your fellow Sommlending, could have been anticipated. Yet there have also been rewards which you could not possibly have foreseen. The discovery that within you lay the potential to develop Kai Disciplines beyond those of the Magnakai (which were thought to be the ultimate that a Kai Master could aspire to) was truly a revelation. Your discovery, has inspired you to search for the wisdom and power that no Kai lord before you has ever possessed. In the name of your creator, the God Kai, and for the greater glory of Sommerlund and the Goddess Ishir, you have vowed to reach the very pinnacle of Kai perfection<ch.emdash/>to attain all of the Grand Master Disciplines and become the first Kai Supreme Master.</p>
+     <p>Your attainment of the rank of Kai Grand Master brought with it great rewards. Some, such as the restoration of the Kai and the undying gratitude of your fellow Sommlending, could have been anticipated. Yet there have also been rewards which you could not possibly have foreseen. The discovery that within you lay the potential to develop Kai Disciplines beyond those of the Magnakai (which were thought to be the ultimate that a Kai Master could aspire to) was truly a revelation. Your discovery, has inspired you to search for the wisdom and power that no Kai lord before you has ever possessed. In the name of your creator, the God Kai, and for the greater glory of Sommerlund and the Goddess Ishir, you have vowed to reach the very pinnacle of Kai perfection<ch.emdash/>to attain all of the Grand Master Disciplines and become the first Kai Supreme Master.</p>
 
-	 <p>With diligence and determination you set about the restoration of the Kai monastery and the training of the New Order recruits. Your efforts were soon rewarded and, within the space of two short years, the first raw recruits had graduated to become a cadre of gifted Kai Masters who, in turn, were able to commence the teaching of their skills to subsequent intakes of Kai novices. Readily the Kai Masters rose readily to their new-found responsibilities, leaving you free to devote more of your time to the pursuit and perfection of the Grand Master Disciplines. During this period you also received expert tutelage in the ways of magic from two of your most trusted friends and advisors: Guildmaster Banedon, leader of the Brotherhood of the Crystal Star, and Lord Rimoah, speaker for the High Council of the Elder Magi.</p>
+     <p>With diligence and determination you set about the restoration of the Kai monastery and the training of the New Order recruits. Your efforts were soon rewarded and, within the space of two short years, the first raw recruits had graduated to become a cadre of gifted Kai Masters who, in turn, were able to commence the teaching of their skills to subsequent intakes of Kai novices. Readily the Kai Masters rose readily to their new-found responsibilities, leaving you free to devote more of your time to the pursuit and perfection of the Grand Master Disciplines. During this period you also received expert tutelage in the ways of magic from two of your most trusted friends and advisors: Guildmaster Banedon, leader of the Brotherhood of the Crystal Star, and Lord Rimoah, speaker for the High Council of the Elder Magi.</p>
 
-	 <p>In the deepest subterranean level of the monastery, one hundred feet below the Tower of the Sun, you ordered the excavation and construction of a special vault. In this magnificent chamber wrought of granite and gold, you placed the seven Lorestones of Nyxator<ch.emdash/>gems of Kai power which you had recovered during your quest for Kai knowledge. In this vault, bathed in the golden light of those radiant gems, you spent countless hours in pursuit of perfection. Sometimes alone, sometimes in the company of your two able advisors<ch.emdash/>Banedon and Rimoah<ch.emdash/>you worked hard to develop your innate Grand Master disciplines, and grasp the fundamental secrets of Brotherhood and Old Kingdom Magic. During this time you noticed many remarkable changes taking place within your body; you became physically and mentally stronger, your five primary senses sharpened beyond all that you had experienced before, and, perhaps most remarkably, your body began to age at a much slower rate. Now for every five years that elapse you age but one year.</p>
+     <p>In the deepest subterranean level of the monastery, one hundred feet below the Tower of the Sun, you ordered the excavation and construction of a special vault. In this magnificent chamber wrought of granite and gold, you placed the seven Lorestones of Nyxator<ch.emdash/>gems of Kai power which you had recovered during your quest for Kai knowledge. In this vault, bathed in the golden light of those radiant gems, you spent countless hours in pursuit of perfection. Sometimes alone, sometimes in the company of your two able advisors<ch.emdash/>Banedon and Rimoah<ch.emdash/>you worked hard to develop your innate Grand Master disciplines, and grasp the fundamental secrets of Brotherhood and Old Kingdom Magic. During this time you noticed many remarkable changes taking place within your body; you became physically and mentally stronger, your five primary senses sharpened beyond all that you had experienced before, and, perhaps most remarkably, your body began to age at a much slower rate. Now for every five years that elapse you age but one year.</p>
 
-	 <p>In the years since your victory over the Darklords, peace has reigned victorious and the peoples of the Free Kingdoms have rejoiced in the knowledge that the evil which once threatened to destroy them has been banished from the face of Magnamund. Men have readily exchanged their swords for hoes and their shields for ploughs, and now the only marching they do is along the ruts of their freshly furrowed fields. Few are the watchful eyes that scan the distant horizon in fear of what may appear, although there are still some who maintain their vigilance, for the agents of the Dark God Naar come in many guises and there are those upon Magnamund who wait quietly in the shadows for the chance to do his evil bidding.</p>
+     <p>In the years since your victory over the Darklords, peace has reigned victorious and the peoples of the Free Kingdoms have rejoiced in the knowledge that the evil which once threatened to destroy them has been banished from the face of Magnamund. Men have readily exchanged their swords for hoes and their shields for ploughs, and now the only marching they do is along the ruts of their freshly furrowed fields. Few are the watchful eyes that scan the distant horizon in fear of what may appear, although there are still some who maintain their vigilance, for the agents of the Dark God Naar come in many guises and there are those upon Magnamund who wait quietly in the shadows for the chance to do his evil bidding.</p>
 
-	 <p>Already your new-found skills have been tested against Naar<ch.apos/>s agents and you have, on each occasion, acquitted yourself admirably. Yet your continuing victories have enraged the Dark God and inflamed his lust for vengeance. Three years earlier, you and your new Kai kinsmen achieved a glorious victory over a host of deadly Lavas. These dragon-like horrors were sent by Naar to destroy the Kai Monastery and lay waste to Sommerlund, and yet, despite their supernatural strength, they were defeated in battle by the sheer courage and skill of the New Order Kai who fought magnificently under your leadership.</p>
+     <p>Already your new-found skills have been tested against Naar<ch.apos/>s agents and you have, on each occasion, acquitted yourself admirably. Yet your continuing victories have enraged the Dark God and inflamed his lust for vengeance. Three years earlier, you and your new Kai kinsmen achieved a glorious victory over a host of deadly Lavas. These dragon-like horrors were sent by Naar to destroy the Kai Monastery and lay waste to Sommerlund, and yet, despite their supernatural strength, they were defeated in battle by the sheer courage and skill of the New Order Kai who fought magnificently under your leadership.</p>
 
-	 <p>After the ignominious defeat of his minions, Naar retreated to the Plane of Darkness to plot and scheme anew. Victory at the monastery had won for you a respite in the Dark God<ch.apos/>s war against Sommerlund and the Kai. The following three years were peaceful for your homeland, yet elsewhere on Magnamund the agents of Naar continued their insidious work. On several occasions your special skills were sought by envoys from foreign realms whose leaders were desperate to rid themselves of Naar<ch.apos/>s minions. Courageously you undertook many of these dangerous missions and,by succeeding where no other mortal could, you brought fresh glories upon yourself and your fellow Kai.</p>
+     <p>After the ignominious defeat of his minions, Naar retreated to the Plane of Darkness to plot and scheme anew. Victory at the monastery had won for you a respite in the Dark God<ch.apos/>s war against Sommerlund and the Kai. The following three years were peaceful for your homeland, yet elsewhere on Magnamund the agents of Naar continued their insidious work. On several occasions your special skills were sought by envoys from foreign realms whose leaders were desperate to rid themselves of Naar<ch.apos/>s minions. Courageously you undertook many of these dangerous missions and,by succeeding where no other mortal could, you brought fresh glories upon yourself and your fellow Kai.</p>
 
-	 <p>In the summer of MS 5080, during a return voyage by sea from a successful quest to distant Dessi, an act of sabotage very nearly wrecked the sailing ship that was transporting you home. Only fair weather and skilful repairs by the Sommlending crew saved the ship from being lost in the Gulf of Durenor. When the damaged craft limped into its home port of Anskaven, more than two weeks late, the reception you received was far from welcoming. The normally cheerful seafaring folk of this busy port were in a strangely sullen mood. Clearly they all recognized you, yet none cheered as you disembarked on Anskaven quay. The crowd were quietly hostile. Before you could determine their reasons, the uneasy silence was shattered by a troop of heavily-armoured cavalrymen who came galloping along the quayside, their gleaming swords drawn. The crowd scattered as the horsemen drew up in a circle around you. Their leader, a nervous young lieutenant whose coat bore the black eagle and three hearts motif of Avan Caldar, Baron of Anskaven, curtly ordered you to lay down your weapons. Not wishing to provoke these city troopers, you obeyed the command and allowed them to escort you to Baron Caldar<ch.apos/>s castle where you felt sure their inglorious mistake would be swiftly punished.</p>
+     <p>In the summer of MS 5080, during a return voyage by sea from a successful quest to distant Dessi, an act of sabotage very nearly wrecked the sailing ship that was transporting you home. Only fair weather and skilful repairs by the Sommlending crew saved the ship from being lost in the Gulf of Durenor. When the damaged craft limped into its home port of Anskaven, more than two weeks late, the reception you received was far from welcoming. The normally cheerful seafaring folk of this busy port were in a strangely sullen mood. Clearly they all recognized you, yet none cheered as you disembarked on Anskaven quay. The crowd were quietly hostile. Before you could determine their reasons, the uneasy silence was shattered by a troop of heavily-armoured cavalrymen who came galloping along the quayside, their gleaming swords drawn. The crowd scattered as the horsemen drew up in a circle around you. Their leader, a nervous young lieutenant whose coat bore the black eagle and three hearts motif of Avan Caldar, Baron of Anskaven, curtly ordered you to lay down your weapons. Not wishing to provoke these city troopers, you obeyed the command and allowed them to escort you to Baron Caldar<ch.apos/>s castle where you felt sure their inglorious mistake would be swiftly punished.</p>
 
-	 <p>Baron Caldar formally received you in the Great Hall of his castle. You had met previously on many state occasions at King Ulnar<ch.apos/>s court in Holmgard and had always held each other in high esteem. Yet Caldar, flanked by more than a dozen armed bodyguards, could barely bring himself to conceal his contempt. He spoke to you as if you were a hated criminal. You asked why you were being treated in such a manner, but your pleas fell on deaf ears. Without further explanation, he ordered that you be taken immediately to the dungeons and placed in irons.</p>
+     <p>Baron Caldar formally received you in the Great Hall of his castle. You had met previously on many state occasions at King Ulnar<ch.apos/>s court in Holmgard and had always held each other in high esteem. Yet Caldar, flanked by more than a dozen armed bodyguards, could barely bring himself to conceal his contempt. He spoke to you as if you were a hated criminal. You asked why you were being treated in such a manner, but your pleas fell on deaf ears. Without further explanation, he ordered that you be taken immediately to the dungeons and placed in irons.</p>
 
-	 <p>Later that evening, using your mental Kai Disciplines to help loosen the tight-lipped resolve of a dungeon guard, you learned the reasons for your apparent fall from grace.</p>
+     <p>Later that evening, using your mental Kai Disciplines to help loosen the tight-lipped resolve of a dungeon guard, you learned the reasons for your apparent fall from grace.</p>
 
-	 <p><quote>You first arrived in Anskaven by ship eighteen days ago, as expected,</quote> said the gaoler, in response to your psychic commands. <quote>Baron Caldar met you personally at the quayside and gave you a horse and six of his best troopers to escort you to Toran. During your ride to that city, they say you murdered his men and burnt their bodies. On arriving at Toran, you tried to assassinate Banedon<ch.emdash/>the Guildmaster of the Brotherhood of the Crystal Star. He survived, yet much of the Guildmaster<ch.apos/>s Hall was destroyed by your doing. To cover your escape from the city, you poisoned the wells causing hundreds of deaths. At first it was said that a Helghast had adopted your likeness to gain entry to the Guildhall, but Guildmaster Banedon refuted these claims. He is convinced that you are possessed by the spirit of Naar. The Guildmaster dispatched the Toran militia to spread this message across Sommerlund. A few days later at the forest village of Durnfallow, near Tyso, the Fryearl of Durnfallow was murdered and his manor house was torched to the ground. The villagers say they saw you riding away from the blazing ruins, howling like a crazed wolf. The people are terrified by the thought that Naar has corrupted you<ch.emdash/>their greatest hero<ch.emdash/>and turned you against your own. They are scared and they are demanding swift justice. King Ulnar has bowed to their will; he has sent all of his Border Rangers to Tyso with orders to find and kill you on sight.</quote></p>
+     <p><quote>You first arrived in Anskaven by ship eighteen days ago, as expected,</quote> said the gaoler, in response to your psychic commands. <quote>Baron Caldar met you personally at the quayside and gave you a horse and six of his best troopers to escort you to Toran. During your ride to that city, they say you murdered his men and burnt their bodies. On arriving at Toran, you tried to assassinate Banedon<ch.emdash/>the Guildmaster of the Brotherhood of the Crystal Star. He survived, yet much of the Guildmaster<ch.apos/>s Hall was destroyed by your doing. To cover your escape from the city, you poisoned the wells causing hundreds of deaths. At first it was said that a Helghast had adopted your likeness to gain entry to the Guildhall, but Guildmaster Banedon refuted these claims. He is convinced that you are possessed by the spirit of Naar. The Guildmaster dispatched the Toran militia to spread this message across Sommerlund. A few days later at the forest village of Durnfallow, near Tyso, the Fryearl of Durnfallow was murdered and his manor house was torched to the ground. The villagers say they saw you riding away from the blazing ruins, howling like a crazed wolf. The people are terrified by the thought that Naar has corrupted you<ch.emdash/>their greatest hero<ch.emdash/>and turned you against your own. They are scared and they are demanding swift justice. King Ulnar has bowed to their will; he has sent all of his Border Rangers to Tyso with orders to find and kill you on sight.</quote></p>
 
-	 <p>The news of your alleged crimes comes as a bitter blow. You are sure that it is all the handiwork of an agent of Naar, and you resolve to find and vanquish this impostor at the first opportunity. However, as you cast your eyes around the damp walls of the castle dungeon, you can only pray to Ishir and Kai that the Baron and his guards will believe your story and allow you a chance to reclaim your honour.</p>
-	</data>
+     <p>The news of your alleged crimes comes as a bitter blow. You are sure that it is all the handiwork of an agent of Naar, and you resolve to find and vanquish this impostor at the first opportunity. However, as you cast your eyes around the damp walls of the castle dungeon, you can only pray to Ishir and Kai that the Baron and his guards will believe your story and allow you a chance to reclaim your honour.</p>
+    </data>
    </section>
 
    <section class="frontmatter" id="gamerulz">
@@ -185,13 +184,22 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
      <link class="next" idref="discplnz" />
     </meta>
 
-	<data>
+    <footnotes>
+     <footnote id="gamerulz-1-foot" idref="gamerulz-1">
+      <p>The Discipline bonuses mentioned do not affect your permanent scores. If you have completed previous adventures, the Disciplines that you have mastered may still be beneficial. See the Grand Master Rules section of the <a href="&link.rh;">Rules Handbook</a> for details.</p>
+     </footnote>
+     <footnote id="gamerulz-2-foot" idref="gamerulz-2">
+      <p>Note that this list now includes the Silver Bracers and Korlinium Scabbard. These items are restored to the list of permissible items from the Kai and Magnakai series again in this book after being omitted beginning in <bookref book="14tcok" section="gamerulz">The Captives of Kaag</bookref>. Presumably, therefore, it should be permissible to leave the Silver Bracers and Korlinium Scabbard in safekeeping at the monastery during the previous books and retrieve them at the outset of this adventure.</p>
+     </footnote>
+    </footnotes>
+
+    <data>
      <p>You keep a record of your adventure on the <a idref="action">Action Chart</a>.</p>
-     <p>For more than six years, ever since the demise of the Darklords of Helgedad, you have devoted yourself to developing further your fighting prowess<ch.emdash/><typ class="attribute>COMBAT SKILL</typ><ch.emdash/>and physical stamina<ch.emdash/><typ class="attribute>ENDURANCE</typ>. Before you begin your first Grand Master adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it on to the <a idref="random">Random Number Table</a>. If you pick a 0 it counts as zero.</p>
-     <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute>COMBAT SKILL</typ>. Add 25 to the number you picked and write the total in the <typ class="attribute>COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a> (i.e., if your pencil fell on the number 6 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute>COMBAT SKILL</typ> of 31). When you fight, your <typ class="attribute>COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore very desirable.</p>
-     <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute>ENDURANCE</typ>. Add 30 to this number and write the total in the <typ class="attribute>ENDURANCE</typ> section of your <a idref="action">Action Chart</a> (i.e., if your pencil fell on the number 7 on the <a idref="random">Random Number Table</a> you would have 37 <typ class="attribute>ENDURANCE</typ> points).</p>
-     <p>If you are wounded in combat you will lose <typ class="attribute>ENDURANCE</typ> points. If at any time your <typ class="attribute>ENDURANCE</typ> points fall to zero, you are dead and the adventure is over. Lost <typ class="attribute>ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute>ENDURANCE</typ> points can never rise above the number you have when you start an adventure.</p>
-     <p>If you have successfully completed any of the previous adventures in the Lone Wolf series (Books 1<ch.endash/>18), you can carry your current scores of <typ class="attribute>COMBAT SKILL</typ> and <typ class="attribute>ENDURANCE</typ> points over to Book 17. These scores may include Weaponmastery, Curing, and Psi-surge bonuses obtained upon completion of Lone Wolf Kai (Books 1<ch.endash/>5) or Magnakai (Books 6<ch.endash/>12) adventures.<footref id="gamerulz-1" idref="gamerulz-1-foot"/> Only if you have completed these previous adventures will you benefit from the appropriate bonuses in the course of the Grand Master series. You may also carry over any Weapons and Backpack Items you had in your possession at the end of your last adventure, and these should be entered on your new Grand Master <a idref="action">Action Chart</a> (you are still limited to two Weapons, but you may now carry up to ten Backpack Items).</p>
+     <p>For more than six years, ever since the demise of the Darklords of Helgedad, you have devoted yourself to developing further your fighting prowess<ch.emdash/><typ class="attribute">COMBAT SKILL</typ><ch.emdash/>and physical stamina<ch.emdash/><typ class="attribute">ENDURANCE</typ>. Before you begin your first Grand Master adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it on to the <a idref="random">Random Number Table</a>. If you pick a 0 it counts as zero.</p>
+     <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 25 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a> (i.e., if your pencil fell on the number 6 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> of 31). When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore very desirable.</p>
+     <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 30 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a> (i.e., if your pencil fell on the number 7 on the <a idref="random">Random Number Table</a> you would have 37 <typ class="attribute">ENDURANCE</typ> points).</p>
+     <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never rise above the number you have when you start an adventure.</p>
+     <p>If you have successfully completed any of the previous adventures in the Lone Wolf series (Books 1<ch.endash/>18), you can carry your current scores of <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points over to Book 17. These scores may include Weaponmastery, Curing, and Psi-surge bonuses obtained upon completion of Lone Wolf Kai (Books 1<ch.endash/>5) or Magnakai (Books 6<ch.endash/>12) adventures.<footref id="gamerulz-1" idref="gamerulz-1-foot"/> Only if you have completed these previous adventures will you benefit from the appropriate bonuses in the course of the Grand Master series. You may also carry over any Weapons and Backpack Items you had in your possession at the end of your last adventure, and these should be entered on your new Grand Master <a idref="action">Action Chart</a> (you are still limited to two Weapons, but you may now carry up to ten Backpack Items).</p>
      <p>However, only the following Special Items may be carried over from the Lone Wolf Kai (Books 1<ch.endash/>5) and Magnakai (Books 6<ch.endash/>12) series to the Lone Wolf Grand Master series (Books 13<ch.endash/>onwards):<footref id="gamerulz-2" idref="gamerulz-2-foot"/></p>
      <ul>
       <li>Crystal Star Pendant</li>
@@ -228,11 +236,11 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
 
          <dl>
           <dt>Weaponmastery</dt>
-           <dd>Proficiency with all close combat and missile weapons. Master of unarmed combat; no <typ class="attribute>COMBAT SKILL</typ> loss when fighting bare-handed.</dd>
+           <dd>Proficiency with all close combat and missile weapons. Master of unarmed combat; no <typ class="attribute">COMBAT SKILL</typ> loss when fighting bare-handed.</dd>
           <dt>Animal Control</dt>
            <dd>Communication with most animals; limited control over hostile creatures. Can use woodland animals as guides and can block a non-sentient creature<ch.apos/>s sense of taste and smell.</dd>
           <dt>Curing</dt>
-           <dd>Steady restoration of lost <typ class="attribute>ENDURANCE</typ> points (to self and others) as a result of combat wounds. Neutralization of poisons, venoms and toxins. Repair of serious battle wounds.</dd>
+           <dd>Steady restoration of lost <typ class="attribute">ENDURANCE</typ> points (to self and others) as a result of combat wounds. Neutralization of poisons, venoms and toxins. Repair of serious battle wounds.</dd>
           <dt>Invisibility</dt>
            <dd>Mask body heat and scent; hide effectively; mask sounds during movement; minor alterations of physical appearance.</dd>
           <dt>Huntmastery</dt>
@@ -258,7 +266,7 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
        <section class="frontmatter" id="wpnmstry">
         <meta><title>Grand Weaponmastery</title></meta>
         <data>
-         <p>This Discipline enables a Grand Master to become supremely efficient in the use of all weapons. When you enter combat with one of your Grand Master weapons, you add 5 points to your <typ class="attribute>COMBAT SKILL</typ>. The rank of Kai Grand Defender, with which you begin the Grand Master series, means you are skilled in <em>two</em> of the weapons listed below.<footref id="discplnz-1" idref="discplnz-1-foot"/></p>
+         <p>This Discipline enables a Grand Master to become supremely efficient in the use of all weapons. When you enter combat with one of your Grand Master weapons, you add 5 points to your <typ class="attribute">COMBAT SKILL</typ>. The rank of Kai Grand Defender, with which you begin the Grand Master series, means you are skilled in <em>two</em> of the weapons listed below.<footref id="discplnz-1" idref="discplnz-1-foot"/></p>
          <illustration class="inline">
           <meta>
            <creator>Brian Williams</creator>
@@ -293,7 +301,7 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
        <section class="frontmatter" id="deliver">
         <meta><title>Deliverance (Advanced Curing)</title></meta>
         <data>
-         <p>Grand Masters are able to use their healing power to repair serious battle wounds. If, whilst in combat, their <typ class="attribute>ENDURANCE</typ> is reduced to 8 points or less, they can draw upon their mastery to restore 20 <typ class="attribute>ENDURANCE</typ> points. This ability can only be used once every 20 days.</p>
+         <p>Grand Masters are able to use their healing power to repair serious battle wounds. If, whilst in combat, their <typ class="attribute">ENDURANCE</typ> is reduced to 8 points or less, they can draw upon their mastery to restore 20 <typ class="attribute">ENDURANCE</typ> points. This ability can only be used once every 20 days.</p>
         </data>
        </section>
 
@@ -321,8 +329,8 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
        <section class="frontmatter" id="kaisurge">
         <meta><title>Kai-surge</title></meta>
         <data>
-         <p>When using their psychic ability to attack an enemy, Grand Masters may add 8 points to their <typ class="attribute>COMBAT SKILL</typ>. For every round in which Kai-surge is used, Grand Masters need only deduct 1 <typ class="attribute>ENDURANCE</typ> point. When using the weaker psychic attack<ch.emdash/>Mindblast<ch.emdash/>they may add 4 points without loss of <typ class="attribute>ENDURANCE</typ> points. (Kai-surge, Psi-surge, and Mindblast cannot be used simultaneously.)</p>
-         <p>Grand Masters cannot use Kai-surge if their <typ class="attribute>ENDURANCE</typ> score falls to 6 points or below.</p>
+         <p>When using their psychic ability to attack an enemy, Grand Masters may add 8 points to their <typ class="attribute">COMBAT SKILL</typ>. For every round in which Kai-surge is used, Grand Masters need only deduct 1 <typ class="attribute">ENDURANCE</typ> point. When using the weaker psychic attack<ch.emdash/>Mindblast<ch.emdash/>they may add 4 points without loss of <typ class="attribute">ENDURANCE</typ> points. (Kai-surge, Psi-surge, and Mindblast cannot be used simultaneously.)</p>
+         <p>Grand Masters cannot use Kai-surge if their <typ class="attribute">ENDURANCE</typ> score falls to 6 points or below.</p>
         </data>
        </section>
 
@@ -361,11 +369,11 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
         </data>
        </section>
 
-	   <p>If you successfully complete the mission as set in Book 19 of the Lone Wolf Grand Master series, you may add a further Grand Master Discipline of your choice to your Action Chart in Book 20. For every Grand Master Discipline you possess, in excess of the original four Disciplines you begin with, you may add 1 point to your basic COMBAT SKILL score and 2 points to your basic ENDURANCE points score. These bonus points, together with your extra Grand Master Discipline(s), your original four Grand Master Disciplines, and any Special Items that you have found and been able to keep during your adventures, may then be carried over and used in the next Grand Master adventure, which is called: <bookref book="20tcon"><cite>The Curse of Naar</cite>.</bookref></p>
-	  </data>
-	 </section>
+       <p>If you successfully complete the mission as set in Book 19 of the Lone Wolf Grand Master series, you may add a further Grand Master Discipline of your choice to your Action Chart in Book 20. For every Grand Master Discipline you possess, in excess of the original four Disciplines you begin with, you may add 1 point to your basic COMBAT SKILL score and 2 points to your basic ENDURANCE points score. These bonus points, together with your extra Grand Master Discipline(s), your original four Grand Master Disciplines, and any Special Items that you have found and been able to keep during your adventures, may then be carried over and used in the next Grand Master adventure, which is called: <bookref book="20tcon"><cite>The Curse of Naar</cite>.</bookref></p>
+      </data>
+     </section>
 
-    <section class="frontmatter-separate" id="equipmnt">
+     <section class="frontmatter-separate" id="equipmnt">
       <meta>
        <title>Equipment</title>
        <link class="prev" idref="discplnz"/>
@@ -373,23 +381,23 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
       </meta>
 
       <data>
-	   <p>Before you set off on your long journey home to Sommerlund you took with you a <a idref="map">map of Northern Magnamund</a> (see the inside front cover of this book) and a pouch of gold. To find out how much gold is in the pouch, pick a number from the <a idref="random">Random Number Table</a> and add 20 to the number you have picked. The total equals the number of Gold Crowns inside the pouch, and you should now enter this number in the <quote>Gold Crowns</quote> section of your <a idref="action">Action Chart</a>.</p>
-	   <p>If you have successfully completed any of the previous Lone Wolf adventures (Books 1<ch.endash/>18), you may add this sum to the total sum of crowns you already possess. Fifty Crowns is the maximum you can carry, but additional Crowns can be left in safe-keeping at your monastery.</p>
-	   <p>You can take four items from, the list below, again adding to these, if necessary, any you may already possess from previous adventures (remember, you are still limited to two weapons, but you may now carry a maximum of ten Backpack items).</p>
-	   <ul class="paragraphed">
-		<li><p>Broadsword (Weapons)</p></li>
-		<li><p>Bow (Weapons)</p></li>
-		<li><p>Quiver (Special Items) This contains six arrows; record them on your <a idref="action">Weapons List</a>.</p>
-				 <illustration class="inline">
+       <p>Before you set off on your long journey home to Sommerlund you took with you a <a idref="map">map of Northern Magnamund</a> (see the inside front cover of this book) and a pouch of gold. To find out how much gold is in the pouch, pick a number from the <a idref="random">Random Number Table</a> and add 20 to the number you have picked. The total equals the number of Gold Crowns inside the pouch, and you should now enter this number in the <quote>Gold Crowns</quote> section of your <a idref="action">Action Chart</a>.</p>
+       <p>If you have successfully completed any of the previous Lone Wolf adventures (Books 1<ch.endash/>18), you may add this sum to the total sum of crowns you already possess. Fifty Crowns is the maximum you can carry, but additional Crowns can be left in safe-keeping at your monastery.</p>
+       <p>You can take four items from, the list below, again adding to these, if necessary, any you may already possess from previous adventures (remember, you are still limited to two weapons, but you may now carry a maximum of ten Backpack items).</p>
+       <ul class="paragraphed">
+        <li><p>Broadsword (Weapons)</p></li>
+        <li><p>Bow (Weapons)</p></li>
+        <li><p>Quiver (Special Items) This contains six arrows; record them on your <a idref="action">Weapons List</a>.</p>
+         <illustration class="inline">
           <meta>
            <creator>Brian Williams</creator>
           </meta>
           <instance class="html" src="quiver.gif" width="386" height="127"/>
           <instance class="pdf" src="quiver.pdf" width="386" height="127"/>
-          </illustration>
-         </li>
-		<li><p>Dagger (Weapons)</p>
-		 <illustration class="inline">
+         </illustration>
+        </li>
+        <li><p>Dagger (Weapons)</p>
+         <illustration class="inline">
           <meta>
            <creator>Brian Williams</creator>
           </meta>
@@ -397,9 +405,9 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
           <instance class="pdf" src="dagger.pdf" width="386" height="103"/>
          </illustration>
         </li>
-		<li><p>Sword (Weapons)</p></li>
-		<li><p>2 MEALS Each Meal takes up one space in your Backpack.</p>
-		          <illustration class="inline">
+        <li><p>Sword (Weapons)</p></li>
+        <li><p>2 MEALS Each Meal takes up one space in your Backpack.</p>
+         <illustration class="inline">
           <meta>
            <creator>Brian Williams</creator>
           </meta>
@@ -407,10 +415,10 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
           <instance class="pdf" src="food.pdf" width="386" height="91"/>
          </illustration>
         </li>
-		<li><p>ROPE (Backpack tern)</p></li>
-		<li><p>POTION OF LAUMSPUR (Backpack Item) This potion restores 4 <typ class="attribute">ENDURANCE</typ> points to your total when swallowed after combat. There is enough for only one dose.</p></li>
-		<li><p>AXE (Weapons)</p>
-		 <illustration class="inline">
+        <li><p>ROPE (Backpack tern)</p></li>
+        <li><p>POTION OF LAUMSPUR (Backpack Item) This potion restores 4 <typ class="attribute">ENDURANCE</typ> points to your total when swallowed after combat. There is enough for only one dose.</p></li>
+        <li><p>AXE (Weapons)</p>
+         <illustration class="inline">
           <meta>
            <creator>Brian Williams</creator>
           </meta>
@@ -418,9 +426,9 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
           <instance class="pdf" src="potion.pdf" width="386" height="127"/>
          </illustration>
         </li>
-	   </ul>
+       </ul>
 
-	   <p>List the four items that you choose on your <a idref="action">Action Chart</a>, under the appropriate headings, and make a note of any effect that may have on your <typ class="attribute">ENDURANCE</typ> points or <typ class="attribute">COMBAT SKILL</typ>.</p>
+       <p>List the four items that you choose on your <a idref="action">Action Chart</a>, under the appropriate headings, and make a note of any effect that may have on your <typ class="attribute">ENDURANCE</typ> points or <typ class="attribute">COMBAT SKILL</typ>.</p>
 
        <section class="frontmatter" id="howuse">
         <meta>
@@ -655,63 +663,68 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
             </ul>
            </dd>
          </dl>
+        </data>
        </section>
+
        <section class="frontmatter" id="grandthane">
         <meta><title>Grand Thane</title></meta>
-         <p>If you are a Kai Grand Master who has reached the rank of Grand Thane (9 Disciplines), you will now benefit from improvements to the following Grand Master Disciplines:</p>
-        <dl class="paragraphed">
-		 <dt>Deliverance</dt>
-		  <dd><p>Grand Thanes with this Discipline are able to call upon the God Kai for divine assistance should a situation warrant it. Kai cannot intervene to save a Grand Thane from physical danger, but he can give signs which may help a Grand Thane chose the best course of action. A Grand Thane can call upon the God Kai for assistance no more than once every month. The frequency of divine audiences will increase as a Grand Master rises in rank.</p></dd>
-		 <dt>Assimilance</dt>
-		  <dd><p>Grand Thanes who possess this skill are able to protect themselves from detection by creatures using infravision (the ability to see the heat radiating from a person or thing), or ultra-vision (the ability to detect objects or movement in the ultra-violet spectrum of light).</p></dd>
-		 <dt>Grand Kai-surge</dt>
-		  <dd><p>Grand Thanes with this skill are able to focus their mind-power upon inanimate breakable objects, eg, bottles, windows, all ceramics, urns, jugs etc, and cause them to explode violently. Any person or creature in close proximity to such an explosion risks injury from flying shrapnel.</p></dd>
-		 <dt>Grand Nexus</dt>
-		  <dd><p>Grand Thanes who possess mastery of this Discipline can pass freely through the Shadow Gates. These phenomena are special portals which enable one to access other dimensions and planes of existence outside of Magnamund. Kai Grand Thanes are able to detect the location of Shadow Gates and pass through them without suffering any physical ill effects. The range of their detection increases as a Kai Grand Master rises in rank.</p></dd>
-		 <dt>Telegnosis</dt>
-		  <dd><p>Grand Thanes who possess this Discipline are able to detect the exact location of precious gems, and valuable metals such as gold, platinum and silver. These minerals and metals may occur naturally in the ground or they could be part of a hidden treasure hoard. The range of this ability is limited at first, but increases steadily as a Kai Grand Master rises in rank.</p></dd>
-		 <dt>Magi-magic</dt>
-		  <dd>
-		   <p>Grand Masters who have reached the rank of Grand Thane are able to use the following Old Kingdom battle-spells:</p>
-		   <ul>
-		    <li><spell>Power Glyph</spell><ch.emdash/>By inscribing this ancient glyph (a secret magical symbol) upon a door, an archway, or even upon the lid of a closed box, a Kai Grand Thane is able to protect items or portals from being opened. Any creature attempting to open a portal protected in such a way will release the power of the glyph and suffer its deadly effects.</li>
-		    <li><spell>Hold Enemy</spell><ch.emdash/>Using this spell, a Kai Grand Thane is able to immobilize a single hostile creature anywhere within twenty feet of themselves. The duration of the spell is dependent upon the size and strength of the targetted creature. The range and duration of effect of this spell increases as a Grand Master rises in rank.</li>
-		   </ul>
-		  </dd>
-		 </dl>
-		</data>
-	   </section>
 
-	   <section class="frontmatter" id="grandcrown">
-	   	<meta><title>Grand Crown</title></meta>
-	   	<data>
-		 <p>If you are a Grand Master who has reached the rank of Grand Crown, you will now benefit from improvements to the following Grand Master Disciplines: </p>
-		 <dl class="paragraphed">
-		  <dt>Grand Weaponmastery</dt>
-		   <dd><p>Kai Grand Crowns with this discipline are consummate masters of unarmed combat. When fighting bare-handed ie, without any weapons, they may add 3 points to their COMBAT SKILL.</p></dd>
-		  <dt>Animal Mastery</dt>
-		   <dd><p>Grand Crowns with this ability are able to plant in the mind of any animal the image of their most-feared predator or adversary. Under the influence of this illusion the animal will believe, with all of its senses, that it is being confronted by such a creature instead of a Kai Grand Crown.</p></dd>
-		  <dt>Grand Pathsmanship</dt>
-		   <dd><p>Grand Crowns with this skill are able to create a clear passageway through dense undergrowth, forest, or jungle. Once having passed through this passageway, the plant material will revert to its normal state. This skill can also be employed by a Kai Grand Crown against magical foliage, or to counter any plant material ranged against him by an enemy.</p></dd>
-		  <dt>Kai-screen</dt>
-		   <dd><p>Grand Crowns who possess mastery of this Discipline are able to mask the goodly aura which radiates naturally from their minds and bodies. Additionally, Grand Crowns can deliberately alter these auras to give a false impression of themselves to creatures who are sensitive to such psychic auras.</p></dd>
-		  <dt>Grand Nexus</dt>
-		   <dd><p>Grand Crowns who possess this Discipline are able to speak a Kai Power Word<ch.emdash/>a holy utterance which will cause physical and psychic damage to any single creature within a radius of thirty feet. The degree of damage so caused, and the resultant drain upon a Grand Crown<ch.apos/>s reserves of ENDURANCE, are dependent upon individual circumstances. The power and range of this skill increases as a Grand Master rises in rank.</p></dd>
-		  <dt>Kai-alchemy</dt>
-		   <dd><p>Grand Masters who have reached the rank of Grand Crown are able to use the following Brotherhood spells:</p>
-		   <ul>
-		   	<li>Teleport<ch.emdash/>By casting this spell, Kai Grand Crowns can transport themselves physically to any place which they can see with their own eyes. The spell will carry the caster, his equipment and clothing to his chosen sighted destination. It cannot be used on any other living creature and it will not transport any other living creature along with the caster. Use of this spell will cost the caster between 1 and 5 ENDURANCE points every time it is used. This cost reduces as a Kai Grand Master increases in rank.</li>
-		   	<li>See Illusion<ch.emdash/>Using this spell, a Kai Grand Crown is able to detect an illusion and know immediately its true identity or purpose.</li>
-		   </ul>
-		  </dd>
-		 </dl>
-		</data>
-	   </section>
-	  <p>The nature of any additional improvements and how they affect your Grand Master Disciplines will be noted in the <ch.apos/>Improved Grand Master Disciplines<ch.apos/> section of future Lone Wolf books.</p>
-		</data>
-	   </section>
-	  </data>
-	 </section>
+        <data>
+         <p>If you are a Kai Grand Master who has reached the rank of Grand Thane (9 Disciplines), you will now benefit from improvements to the following Grand Master Disciplines:</p>
+         <dl class="paragraphed">
+          <dt>Deliverance</dt>
+           <dd><p>Grand Thanes with this Discipline are able to call upon the God Kai for divine assistance should a situation warrant it. Kai cannot intervene to save a Grand Thane from physical danger, but he can give signs which may help a Grand Thane chose the best course of action. A Grand Thane can call upon the God Kai for assistance no more than once every month. The frequency of divine audiences will increase as a Grand Master rises in rank.</p></dd>
+          <dt>Assimilance</dt>
+           <dd><p>Grand Thanes who possess this skill are able to protect themselves from detection by creatures using infravision (the ability to see the heat radiating from a person or thing), or ultra-vision (the ability to detect objects or movement in the ultra-violet spectrum of light).</p></dd>
+          <dt>Grand Kai-surge</dt>
+           <dd><p>Grand Thanes with this skill are able to focus their mind-power upon inanimate breakable objects, eg, bottles, windows, all ceramics, urns, jugs etc, and cause them to explode violently. Any person or creature in close proximity to such an explosion risks injury from flying shrapnel.</p></dd>
+          <dt>Grand Nexus</dt>
+           <dd><p>Grand Thanes who possess mastery of this Discipline can pass freely through the Shadow Gates. These phenomena are special portals which enable one to access other dimensions and planes of existence outside of Magnamund. Kai Grand Thanes are able to detect the location of Shadow Gates and pass through them without suffering any physical ill effects. The range of their detection increases as a Kai Grand Master rises in rank.</p></dd>
+          <dt>Telegnosis</dt>
+           <dd><p>Grand Thanes who possess this Discipline are able to detect the exact location of precious gems, and valuable metals such as gold, platinum and silver. These minerals and metals may occur naturally in the ground or they could be part of a hidden treasure hoard. The range of this ability is limited at first, but increases steadily as a Kai Grand Master rises in rank.</p></dd>
+          <dt>Magi-magic</dt>
+           <dd>
+            <p>Grand Masters who have reached the rank of Grand Thane are able to use the following Old Kingdom battle-spells:</p>
+            <ul>
+             <li><spell>Power Glyph</spell><ch.emdash/>By inscribing this ancient glyph (a secret magical symbol) upon a door, an archway, or even upon the lid of a closed box, a Kai Grand Thane is able to protect items or portals from being opened. Any creature attempting to open a portal protected in such a way will release the power of the glyph and suffer its deadly effects.</li>
+             <li><spell>Hold Enemy</spell><ch.emdash/>Using this spell, a Kai Grand Thane is able to immobilize a single hostile creature anywhere within twenty feet of themselves. The duration of the spell is dependent upon the size and strength of the targetted creature. The range and duration of effect of this spell increases as a Grand Master rises in rank.</li>
+            </ul>
+           </dd>
+         </dl>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="grandcrown">
+        <meta><title>Grand Crown</title></meta>
+        <data>
+         <p>If you are a Grand Master who has reached the rank of Grand Crown, you will now benefit from improvements to the following Grand Master Disciplines: </p>
+         <dl class="paragraphed">
+          <dt>Grand Weaponmastery</dt>
+           <dd><p>Kai Grand Crowns with this discipline are consummate masters of unarmed combat. When fighting bare-handed ie, without any weapons, they may add 3 points to their COMBAT SKILL.</p></dd>
+           <dt>Animal Mastery</dt>
+            <dd><p>Grand Crowns with this ability are able to plant in the mind of any animal the image of their most-feared predator or adversary. Under the influence of this illusion the animal will believe, with all of its senses, that it is being confronted by such a creature instead of a Kai Grand Crown.</p></dd>
+           <dt>Grand Pathsmanship</dt>
+            <dd><p>Grand Crowns with this skill are able to create a clear passageway through dense undergrowth, forest, or jungle. Once having passed through this passageway, the plant material will revert to its normal state. This skill can also be employed by a Kai Grand Crown against magical foliage, or to counter any plant material ranged against him by an enemy.</p></dd>
+           <dt>Kai-screen</dt>
+            <dd><p>Grand Crowns who possess mastery of this Discipline are able to mask the goodly aura which radiates naturally from their minds and bodies. Additionally, Grand Crowns can deliberately alter these auras to give a false impression of themselves to creatures who are sensitive to such psychic auras.</p></dd>
+           <dt>Grand Nexus</dt>
+            <dd><p>Grand Crowns who possess this Discipline are able to speak a Kai Power Word<ch.emdash/>a holy utterance which will cause physical and psychic damage to any single creature within a radius of thirty feet. The degree of damage so caused, and the resultant drain upon a Grand Crown<ch.apos/>s reserves of ENDURANCE, are dependent upon individual circumstances. The power and range of this skill increases as a Grand Master rises in rank.</p></dd>
+           <dt>Kai-alchemy</dt>
+           <dd><p>Grand Masters who have reached the rank of Grand Crown are able to use the following Brotherhood spells:</p>
+            <ul>
+             <li>Teleport<ch.emdash/>By casting this spell, Kai Grand Crowns can transport themselves physically to any place which they can see with their own eyes. The spell will carry the caster, his equipment and clothing to his chosen sighted destination. It cannot be used on any other living creature and it will not transport any other living creature along with the caster. Use of this spell will cost the caster between 1 and 5 ENDURANCE points every time it is used. This cost reduces as a Kai Grand Master increases in rank.</li>
+             <li>See Illusion<ch.emdash/>Using this spell, a Kai Grand Crown is able to detect an illusion and know immediately its true identity or purpose.</li>
+            </ul>
+           </dd>
+         </dl>
+        </data>
+       </section>
+
+       <p>The nature of any additional improvements and how they affect your Grand Master Disciplines will be noted in the <ch.apos/>Improved Grand Master Disciplines<ch.apos/> section of future Lone Wolf books.</p>
+      </data>
+     </section>
+    </data>
+   </section>
 
    <section class="frontmatter" id="kaiwisdm">
     <meta>
@@ -728,8 +741,6 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
      <p>For Sommerlund and the Kai!</p>
     </data>
    </section>
-
--->
 
   <section class="numbered" id="numbered">
    <meta><title>Numbered Sections</title></meta>
@@ -1019,7 +1030,7 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
      <meta><title>26</title></meta>
 
      <data>
-      <p>You summon your Kai skills to mask your body prior to uttering the words of the advanced Brotherhood spell <spell>Teleport>/spell>. You focus on the distant balcony and feel yourself leave the ground and surge towards it. As you come close to passing over the fountain, you pray that your camouflage skills will keep you hidden from the eyes of the creatures gathered there.</p>
+      <p>You summon your Kai skills to mask your body prior to uttering the words of the advanced Brotherhood spell <spell>Teleport</spell>. You focus on the distant balcony and feel yourself leave the ground and surge towards it. As you come close to passing over the fountain, you pray that your camouflage skills will keep you hidden from the eyes of the creatures gathered there.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>. If you possess Assimilance, add 4 to the number you have picked.</p>
       <choice idref="sect179">If your total score is 5 or lower, <link-text>turn to 179</link-text>.</choice>
       <choice idref="sect245">If it is 6 or higher, <link-text>turn to 245</link-text>.</choice>
@@ -1169,7 +1180,7 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
      <meta><title>39</title></meta>
 
      <data>
-      <p>You utter the words of the Brotherhood Spell <spell>Lightning Hand<spell> and loose a power beam of your own at the back of the running warrior. It tears open the canister that is strapped between his shoulder blades and, with a sudden eruption of blue-white light, he is hurled upon the cylinders that cover his slain comrade. For a few seconds a spidery net of pulsating light enshrouds the two lifeless warriors, then it crackles and disappears, leaving behind an acrid stench of scorched metal and roasted meat.</p>
+      <p>You utter the words of the Brotherhood Spell <spell>Lightning Hand</spell> and loose a power beam of your own at the back of the running warrior. It tears open the canister that is strapped between his shoulder blades and, with a sudden eruption of blue-white light, he is hurled upon the cylinders that cover his slain comrade. For a few seconds a spidery net of pulsating light enshrouds the two lifeless warriors, then it crackles and disappears, leaving behind an acrid stench of scorched metal and roasted meat.</p>
       <choice idref="sect21"><link-text>Turn to 21</link-text>.</choice>
      </data>
     </section>
@@ -2935,7 +2946,7 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
      <meta><title>198</title></meta>
 
      <data>
-	      <p>You extend your right arm and point your hand at the trough below. Then you utter the words of the Brotherhood spell <spell>Lightning Hand</spell> and a familiar tingle rushes along your arm to explode into life at the tip of your index finger. A bolt of blue fire arcs downwards to the oily surface and, with a deafening wumph!, it ignites the liquid to create a blazing fireball. Greedily, this guttering ball of flame consumes the creatures who are gathered around the lip of the trough, sparing none. The heat from the blast buffets you and singes your tunic and cloak, but your body survives unscathed.</p>
+      <p>You extend your right arm and point your hand at the trough below. Then you utter the words of the Brotherhood spell <spell>Lightning Hand</spell> and a familiar tingle rushes along your arm to explode into life at the tip of your index finger. A bolt of blue fire arcs downwards to the oily surface and, with a deafening wumph!, it ignites the liquid to create a blazing fireball. Greedily, this guttering ball of flame consumes the creatures who are gathered around the lip of the trough, sparing none. The heat from the blast buffets you and singes your tunic and cloak, but your body survives unscathed.</p>
       <p>On reaching the balcony you speak the words which negate the effects of the Teleport spell, and the moment your feet touch the ground you hurry into the archway beyond.</p>
       <p>Use of the Teleport spell has cost you 4 <typ class="attribute">ENDURANCE</typ> points. Remember to make the necessary adjustment to your <a idref="action">Action Chart</a>.</p>
       <choice idref="sect50">To continue, <link-text>turn to 50</link-text>.</choice>
@@ -4642,12 +4653,12 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
 
     <data>
      <ol>
-      <li>Add your <typ class="attribute>COMBAT SKILL</typ> to any extra points given to you by your Kai Disciplines.</li>
-      <li>Subtract the <typ class="attribute>COMBAT SKILL</typ> of your enemy from this total. This number = Combat Ratio.</li>
+      <li>Add your <typ class="attribute">COMBAT SKILL</typ> to any extra points given to you by your Kai Disciplines.</li>
+      <li>Subtract the <typ class="attribute">COMBAT SKILL</typ> of your enemy from this total. This number = Combat Ratio.</li>
       <li>Pick number from <a idref="random">Random Number Table</a>.</li>
       <li>Turn to the <a idref="crtable">Combat Results Table</a>.</li>
-      <li>Find your Combat Ratio on the top of the chart and cross-reference to the random number you have picked. (E indicates loss of <typ class="attribute>ENDURANCE</typ> points to Enemy. LW indicates loss of <typ class="attribute>ENDURANCE</typ> points to Lone Wolf.)</li>
-      <li>Continue the combat from Stage 3 until one character is dead. This is when <typ class="attribute>ENDURANCE</typ> points of either character fall to 0 or below.</li>
+      <li>Find your Combat Ratio on the top of the chart and cross-reference to the random number you have picked. (E indicates loss of <typ class="attribute">ENDURANCE</typ> points to Enemy. LW indicates loss of <typ class="attribute">ENDURANCE</typ> points to Lone Wolf.)</li>
+      <li>Continue the combat from Stage 3 until one character is dead. This is when <typ class="attribute">ENDURANCE</typ> points of either character fall to 0 or below.</li>
      </ol>
 
      <section class="backmatter" id="smevazn">
@@ -4656,7 +4667,7 @@ Suggestions for Wolf<ch.apos/>s Bane, sections 141-210:
       <data>
        <ol>
         <li>You may only do this when the text of the adventure offers you the opportunity.</li>
-        <li>You undertake one round of combat in the usual way. All points lost by the enemy are ignored, only Lone Wolf loses the <typ class="attribute>ENDURANCE</typ> points.</li>
+        <li>You undertake one round of combat in the usual way. All points lost by the enemy are ignored, only Lone Wolf loses the <typ class="attribute">ENDURANCE</typ> points.</li>
         <li>If the book offers the chance of taking evasive action in place of combat, it can be taken in the first round of combat or any subsequent round.</li>
        </ol>
       </data>
