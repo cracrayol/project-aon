@@ -9,6 +9,9 @@
 $Id$
 
 $Log$
+Revision 1.4  2006/12/20 00:15:04  jonathan.blake
+Updated to handle the new capabilities in version 0.12.1 of the Gamebook DTD.
+
 Revision 1.3  2006/12/07 01:42:28  jonathan.blake
 Text illustrations need inclusion
 
@@ -666,9 +669,40 @@ Todo:
 
 <xsl:template match="table">
  <table border="1" cellspacing="0" cellpadding="2">
+  <xsl:if test="@summary"><xsl:attribute name="summary"><xsl:value-of select="@summary" /></xsl:attribute></xsl:if>
   <xsl:apply-templates />
  </table>
  <xsl:value-of select="$newline" />
+</xsl:template>
+
+<xsl:template match="caption">
+ <caption>
+  <xsl:apply-templates />
+ </caption>
+</xsl:template>
+
+<xsl:template match="colgroup[@scope]">
+ <colgroup>
+  <xsl:attribute name="scope"><xsl:value-of select="@scope" /></xsl:attribute>
+ </colgroup>
+</xsl:template>
+
+<xsl:template match="thead">
+ <thead>
+  <xsl:apply-templates />
+ </thead>
+</xsl:template>
+
+<xsl:template match="tfoot">
+ <tfoot>
+  <xsl:apply-templates />
+ </tfoot>
+</xsl:template>
+
+<xsl:template match="tbody">
+ <tbody>
+  <xsl:apply-templates />
+ </tbody>
 </xsl:template>
 
 <xsl:template match="tr">
@@ -682,6 +716,10 @@ Todo:
   <xsl:if test="@align"><xsl:attribute name="align"><xsl:value-of select="@align" /></xsl:attribute></xsl:if>
   <xsl:if test="@valign"><xsl:attribute name="valign"><xsl:value-of select="@valign" /></xsl:attribute></xsl:if>
   <xsl:if test="@char"><xsl:attribute name="char"><xsl:value-of select="@char" /></xsl:attribute></xsl:if>
+  <xsl:if test="@rowspan"><xsl:attribute name="rowspan"><xsl:value-of select="@rowspan" /></xsl:attribute></xsl:if>
+  <xsl:if test="@colspan"><xsl:attribute name="colspan"><xsl:value-of select="@colspan" /></xsl:attribute></xsl:if>
+  <xsl:if test="@axis"><xsl:attribute name="axis"><xsl:value-of select="@axis" /></xsl:attribute></xsl:if>
+  <xsl:if test="@scope"><xsl:attribute name="scope"><xsl:value-of select="@scope" /></xsl:attribute></xsl:if>
   <xsl:apply-templates />
  </th>
 </xsl:template>
@@ -691,6 +729,10 @@ Todo:
   <xsl:if test="@align"><xsl:attribute name="align"><xsl:value-of select="@align" /></xsl:attribute></xsl:if>
   <xsl:if test="@valign"><xsl:attribute name="valign"><xsl:value-of select="@valign" /></xsl:attribute></xsl:if>
   <xsl:if test="@char"><xsl:attribute name="char"><xsl:value-of select="@char" /></xsl:attribute></xsl:if>
+  <xsl:if test="@rowspan"><xsl:attribute name="rowspan"><xsl:value-of select="@rowspan" /></xsl:attribute></xsl:if>
+  <xsl:if test="@colspan"><xsl:attribute name="colspan"><xsl:value-of select="@colspan" /></xsl:attribute></xsl:if>
+  <xsl:if test="@axis"><xsl:attribute name="axis"><xsl:value-of select="@axis" /></xsl:attribute></xsl:if>
+  <xsl:if test="@scope"><xsl:attribute name="scope"><xsl:value-of select="@scope" /></xsl:attribute></xsl:if>
   <xsl:apply-templates />
  </td>
 </xsl:template>
@@ -1015,6 +1057,10 @@ Todo:
 
 <xsl:template match="code">
  <tt><xsl:apply-templates /></tt>
+</xsl:template>
+
+<xsl:template match="line">
+ <xsl:apply-templates /><br />
 </xsl:template>
 
 <xsl:template match="br">
