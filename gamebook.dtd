@@ -13,6 +13,9 @@ $Id$
 
 Change Log:
 
+19 December 2006 (version 0.12.2)
+ * Added the "line" element to the inline elements list.
+
 19 December 2006 (version 0.12.1)
  * Upgraded the table model to included "caption", "colgroup", "thead",
    "tfoot", and "tbdoy" elements and the cell scoping attributes
@@ -158,7 +161,7 @@ III. Block Elements
 
 <!ENTITY % character.content "ch.apos | ch.nbsp | ch.iexcl | ch.cent | ch.pound | ch.curren | ch.yen | ch.brvbar | ch.sect | ch.uml | ch.copy | ch.ordf | ch.laquo | ch.not | ch.shy | ch.reg | ch.macr | ch.deg | ch.plusmn | ch.sup2 | ch.sup3 | ch.acute | ch.micro | ch.para | ch.middot | ch.cedil | ch.sup1 | ch.ordm | ch.raquo | ch.frac14 | ch.frac12 | ch.frac34 | ch.iquest | ch.Agrave | ch.Aacute | ch.Acirc | ch.Atilde | ch.Auml | ch.Aring | ch.AElig | ch.Ccedil | ch.Egrave | ch.Eacute | ch.Ecirc | ch.Euml | ch.Igrave | ch.Iacute | ch.Icirc | ch.Iuml | ch.ETH | ch.Ntilde | ch.Ograve | ch.Oacute | ch.Ocirc | ch.Otilde | ch.Ouml | ch.times | ch.Oslash | ch.Ugrave | ch.Uacute | ch.Ucirc | ch.Uuml | ch.Yacute | ch.THORN | ch.szlig | ch.agrave | ch.aacute | ch.acirc | ch.atilde | ch.auml | ch.aring | ch.aelig | ch.ccedil | ch.egrave | ch.eacute | ch.ecirc | ch.euml | ch.igrave | ch.iacute | ch.icirc | ch.iuml | ch.eth | ch.ntilde | ch.ograve | ch.oacute | ch.ocirc | ch.otilde | ch.ouml | ch.divide | ch.oslash | ch.ugrave | ch.uacute | ch.ucirc | ch.uuml | ch.yacute | ch.thorn | ch.yuml | ch.ampersand | ch.lsquot | ch.rsquot | ch.ldquot | ch.rdquot | ch.minus | ch.endash | ch.emdash | ch.ellips | ch.lellips | ch.blankline | ch.percent | ch.thinspace | ch.frac116 | ch.plus">
 
-<!ENTITY % inline.content "#PCDATA | a | bookref | footref | em | strong | thought | foreign | quote | cite | code | br | typ | onomatopoeia | spell | item | %character.content;">
+<!ENTITY % inline.content "#PCDATA | a | bookref | footref | em | strong | thought | foreign | quote | cite | code | line | br | typ | onomatopoeia | spell | item | %character.content;">
 
 <!ENTITY % block.content "p | ul | ol | dl | table | blockquote | illustration | combat | choice | signpost | hr | illref">
 
