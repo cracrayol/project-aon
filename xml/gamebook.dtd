@@ -13,6 +13,12 @@ $Id$
 
 Change Log:
 
+19 December 2006 (version 0.12.1)
+ * Upgraded the table model to included "caption", "colgroup", "thead",
+   "tfoot", and "tbdoy" elements and the cell scoping attributes
+   "rowspan", "colspan", "axis", and "scope".
+ * Deprecated the "br" element in favor of the "line" element.
+
 25 March 2006 (version 0.12.0)
  * Added "illref", "illustrations" and "illgroup". Still backwards
    compatible.
@@ -170,6 +176,13 @@ III. Block Elements
          align  ( left | center | right | justify | char ) #IMPLIED
          char   CDATA                                      #IMPLIED
          valign ( top | middle | bottom | baseline )       #IMPLIED
+">
+
+<!ENTITY % cell.scope.attributes "
+         rowspan CDATA                               #IMPLIED
+         colspan CDATA                               #IMPLIED
+         axis    CDATA                               #IMPLIED
+         scope   ( row | col | rowgroup | colgroup ) #IMPLIED
 ">
 
 <!-- :::::::::::::::::::: Character Entities ::::::::::::::::::::: -->
@@ -685,8 +698,9 @@ Example:
 
 <!-- :::::::::::::::::::::::::: Tables ::::::::::::::::::::::::::: -->
 
-<!ELEMENT table ( tr )*>
+<!ELEMENT table ( caption?, colgroup*, thead?, tfoot?, ( tr+ | tbody+ ))>
 <!ATTLIST table
+          summary CDATA #IMPLIED
           %core.attributes;
 >
 <!--
@@ -699,6 +713,115 @@ Example:
  <table>
   <tr . . .> . . . </tr>
   <tr . . .> . . . </tr>
+  . . .
+ </table>
+
+-->
+
+<!ELEMENT caption ( %inline.content; )*>
+<!ATTLIST caption
+          %core.attributes;
+>
+<!--
+
+The "caption" element contains a brief description of the data
+contained in the table and the structure of the table.
+
+Example:
+
+ <table>
+  <caption>Random Number Table</caption>
+  . . .
+ </table>
+
+-->
+
+<!ELEMENT colgroup EMPTY>
+<!ATTLIST colgroup
+          span CDATA #REQUIRED
+>
+<!--
+
+The "colgroup" element explicitly groups several columns of tabular data
+together. The "span" attribute specifies the number of columns to be
+grouped. This is primarily useful for non-visual user agents.
+
+Example:
+
+ <table>
+  . . .
+  <colgroup span="1"/>
+  <colgroup span="13"/>
+  . . .
+ </table>
+
+-->
+
+<!ELEMENT thead ( tr+ )>
+<!ATTLIST thead
+          %core.attributes;
+>
+<!--
+
+The "thead" element contains rows of data designated as the table
+header. It creates a rowgroup for the purposes of the "scope"
+attribute in the "th" and "td" elements.
+
+Example:
+
+ <table>
+  . . .
+  <thead>
+   <tr . . .> . . . </tr>
+   . . .
+  </thead>
+  . . .
+ </table>
+
+-->
+
+<!ELEMENT tfoot ( tr+ )>
+<!ATTLIST tfoot
+          %core.attributes;
+>
+<!--
+
+The "tfoot" element contains rows of data designated as the table
+footer. It creates a rowgroup for the purposes of the "scope"
+attribute in the "th" and "td" elements.
+
+Example:
+
+ <table>
+  . . .
+  <tfoot>
+   <tr . . .> . . . </tr>
+   . . .
+  </tfoot>
+  . . .
+ </table>
+
+-->
+
+<!ELEMENT tbody ( tr+ )>
+<!ATTLIST tbody
+          %core.attributes;
+>
+<!--
+
+The "tbody" element contains rows of data designated as the part
+of the main table data. More than one "tbody" element is allowed per
+"table" element. It creates a rowgroup for the purposes of the "scope"
+attribute in the "th" and "td" elements.
+
+Example:
+
+ <table>
+  . . .
+  <tfoot>
+   <tr . . .> . . . </tr>
+   . . .
+  </tfoot>
   . . .
  </table>
 
@@ -731,11 +854,16 @@ Example:
 <!ATTLIST th
           %core.attributes;
           %cell.align.attributes;
+          %cell.scope.attributes;
 >
 <!--
 
 The "th" contains a table header used to label a particular row or 
 column of tabular data.
+
+The "scope" attribute specifies to what extent the data of this header
+applies. The "axis" attribute is a comma-separated list of categories
+to which the element belongs.
 
 Example:
 
@@ -753,10 +881,16 @@ Example:
 <!ATTLIST td
           %core.attributes;
           %cell.align.attributes;
+          %cell.scope.attributes;
 >
 <!--
 
 The "td" element contains one cell of tabular data.
+
+The "scope" attribute may be used in conjunction with a "td" element to
+specify that though its data isn't considered header data, it functions
+as a label for the data. For example, a character's name is a label for a row
+of the character's statistics, but it is not a header.
 
 Example:
 
@@ -1224,21 +1358,39 @@ Example:
 
 -->
 
+<!ELEMENT line ( %inline.content; )*>
+<!ATTLIST line
+          %core.attributes;
+>
+<!--
+
+The "line" element contains one logical line of data in, for example,
+a poem. Its use should be confined to documents such as poems that
+require a particular line structure.
+
+Example:
+
+ <line>When the full moon rises o'er the temple deep,</line>
+ <line>A sacrifice will stir from sleep</line>
+ <line>The legions of a long forgotten lord.</line>
+
+-->
+
 <!ELEMENT br EMPTY>
 <!ATTLIST br
           %core.attributes;
 >
 <!--
 
-The "br" indicates a required line break. Its use should be confined 
-to documents such as poems that require a particular line structure.
+The "br" indicates a required line break. Its use is deprecated in favor
+of the "line" element.
 
 Example:
 
  <blockquote . . .>
   . . .
   There once was a Kai monk from Sommerlund<br />
-  Who always wore a cummerbund<br />
+  Who always wore a pink cummerbund<br />
   . . .
  </blockquote>
 
