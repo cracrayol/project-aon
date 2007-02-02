@@ -16,6 +16,9 @@
 $Id$
 
 $Log$
+Revision 1.11  2007/02/02 20:13:38  jonathan.blake
+Fixing a few more br elements
+
 Revision 1.10  2007/02/02 20:02:19  jonathan.blake
 Corrections for all pending errata, further updates to latest DTD
 
@@ -168,15 +171,36 @@ To do:
        <dt>Transcription</dt>
         <dd>Jason Gaerke</dd>
        <dt>Illustration Transcription</dt>
-        <dd>Jonathan Blake<br />Paul Haskell<br/>Simon Osborne</dd>
+        <dd>
+         <line>Jonathan Blake</line>
+         <line>Paul Haskell</line>
+         <line>Simon Osborne</line>
+        </dd>
        <dt>XML</dt>
-        <dd>Jonathan Blake<br />Jeff Dougan</dd>
+        <dd>
+         <line>Jonathan Blake</line>
+         <line>Jeff Dougan</line>
+        </dd>
        <dt>Alternate Illustrations</dt>
-        <dd>JC Alvarez (action charts)<br />Jonathan Blake (extramatter charts and tables)<br />Michael Hahn (map)</dd>
+        <dd>
+         <line>JC Alvarez (action charts)</line>
+         <line>Jonathan Blake (extramatter charts and tables)</line>
+         <line>Michael Hahn (map)</line>
+        </dd>
        <dt>Proofreading</dt>
-        <dd>Simon Osborne (Sections 1<ch.endash/>210 and 246<ch.endash/>350)<br />Tony Wrigley (Sections 211<ch.endash/>245)</dd>
+        <dd>
+         <line>Simon Osborne (Sections 1<ch.endash/>210 and 246<ch.endash/>350)</line>
+         <line>Tony Wrigley (Sections 211<ch.endash/>245)</line>
+        </dd>
        <dt>Editing</dt>
-        <dd>Mike Feldman<br />Ingo Kl<ch.ouml/>cker<br />Mark Laird<br />LeRoy McSwain<br />Simon Osborne<br />Thomas Wolmer</dd>
+        <dd>
+         <line>Mike Feldman</line>
+         <line>Ingo Kl<ch.ouml/>cker</line>
+         <line>Mark Laird</line>
+         <line>LeRoy McSwain</line>
+         <line>Simon Osborne</line>
+         <line>Thomas Wolmer</line>
+        </dd>
        <dt>Coordination</dt>
         <dd>Jonathan Blake</dd>
        <dt>Special Thanks</dt>
@@ -691,7 +715,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>The King<ch.apos/>s Tower, a magnificent<br />structure of glass and stone</description>
+        <description>
+         <line>The King<ch.apos/>s Tower, a magnificent</line>
+         <line>structure of glass and stone</line>
+        </description>
        </meta>
        <instance class="html" src="ill1.gif" width="386" height="690" />
        <instance class="pdf" src="ill1.pdf" width="386" height="690" />
@@ -906,7 +933,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>Twisted and disfigured though he is,<br />you recognize Captain Kelman</description>
+        <description>
+         <line>Twisted and disfigured though he is,</line>
+         <line>you recognize Captain Kelman</line>
+        </description>
        </meta>
        <instance class="html" src="ill2.gif" width="386" height="669" />
        <instance class="pdf" src="ill2.pdf" width="386" height="669" />
@@ -1426,7 +1456,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>One of the cloaked strangers holds aloft a black staff<br />and a blue flame ignites at the twisted iron tip</description>
+        <description>
+         <line>One of the cloaked strangers holds aloft a black staff</line>
+         <line>and a blue flame ignites at the twisted iron tip</line>
+        </description>
        </meta>
        <instance class="html" src="ill4.gif" width="386" height="655" />
        <instance class="pdf" src="ill4.pdf" width="386" height="655" />
@@ -1571,7 +1604,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>At that moment the true power of the<br />Sommerswerd is revealed to you</description>
+        <description>
+         <line>At that moment the true power of the</line>
+         <line>Sommerswerd is revealed to you</line>
+        </description>
        </meta>
        <instance class="html" src="ill5.gif" width="386" height="689" />
        <instance class="pdf" src="ill5.pdf" width="386" height="689" />
@@ -1839,7 +1875,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>Their sinister flagship swiftly sails towards you,<br />a huge ram protruding from its black prow</description>
+        <description>
+         <line>Their sinister flagship swiftly sails towards you,</line>
+         <line>a huge ram protruding from its black prow</line>
+        </description>
        </meta>
        <instance class="html" src="ill6.gif" width="386" height="695" />
        <instance class="pdf" src="ill6.pdf" width="386" height="695" />
@@ -2079,7 +2118,11 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>The strange creature is wearing a splendid<br />jacket of patched leather and carrying<br />what appears to be a spear</description>
+        <description>
+         <line>The strange creature is wearing a splendid</line>
+         <line>jacket of patched leather and carrying</line>
+         <line>what appears to be a spear</line>
+        </description>
        </meta>
        <instance class="html" src="ill7.gif" width="386" height="586" />
        <instance class="pdf" src="ill7.pdf" width="386" height="586" />
@@ -2268,7 +2311,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>You find yourself staring into the<br />glowing eyes of a Helghast</description>
+        <description>
+         <line>You find yourself staring into the</line>
+         <line>glowing eyes of a Helghast</line>
+        </description>
        </meta>
        <instance class="html" src="ill8.gif" width="386" height="681" />
        <instance class="pdf" src="ill8.pdf" width="386" height="681" />
@@ -2390,7 +2436,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>The large Noodnic, wearing a brightly coloured<br />cloak of patchwork silks, addresses you</description>
+        <description>
+         <line>The large Noodnic, wearing a brightly coloured</line>
+         <line>cloak of patchwork silks, addresses you</line>
+        </description>
        </meta>
        <instance class="html" src="ill9.gif" width="386" height="676" />
        <instance class="pdf" src="ill9.pdf" width="386" height="676" />
@@ -2682,7 +2731,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>Soldiers leap from the deck, their<br />clothes and hair in flames</description>
+        <description>
+         <line>Soldiers leap from the deck, their</line>
+         <line>clothes and hair in flames</line>
+        </description>
        </meta>
        <instance class="html" src="ill10.gif" width="386" height="666" />
        <instance class="pdf" src="ill10.pdf" width="386" height="666" />
@@ -2814,7 +2866,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>Lord-lieutenant Rhygar demands that they<br />let you pass as you bear a royal dispatch</description>
+        <description>
+         <line>Lord-lieutenant Rhygar demands that they</line>
+         <line>let you pass as you bear a royal dispatch</line>
+        </description>
        </meta>
        <instance class="html" src="ill11.gif" width="386" height="684" />
        <instance class="pdf" src="ill11.pdf" width="386" height="684" />
@@ -3131,7 +3186,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>The others are all seated at a large table<br />awaiting your appearance</description>
+        <description>
+         <line>The others are all seated at a large table</line>
+         <line>awaiting your appearance</line>
+        </description>
        </meta>
        <instance class="html" src="ill12.gif" width="679" height="550" />
        <instance class="pdf" src="ill12.pdf" width="679" height="550" />
@@ -3394,7 +3452,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>Captain Kelman opens the mysterious bundle and<br />a large charred earthenware jug drops out</description>
+        <description>
+         <line>Captain Kelman opens the mysterious bundle and</line>
+         <line>a large charred earthenware jug drops out</line>
+        </description>
        </meta>
        <instance class="html" src="ill13.gif" width="386" height="603" />
        <instance class="pdf" src="ill13.pdf" width="386" height="603" />
@@ -3613,7 +3674,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>An attractive young woman spins a black dish<br />divided into ten sections marked 0<ch.endash/>9</description>
+        <description>
+         <line>An attractive young woman spins a black dish</line>
+         <line>divided into ten sections marked 0<ch.endash/>9</line>
+        </description>
        </meta>
        <instance class="html" src="ill14.gif" width="386" height="691" />
        <instance class="pdf" src="ill14.pdf" width="386" height="691" />
@@ -3763,7 +3827,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>You chat with your fellow travellers<br />and learn about their backgrounds</description>
+        <description>
+         <line>You chat with your fellow travellers</line>
+         <line>and learn about their backgrounds</line>
+        </description>
        </meta>
        <instance class="html" src="ill15.gif" width="386" height="691" />
        <instance class="pdf" src="ill15.pdf" width="386" height="691" />
@@ -4012,7 +4079,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>You turn to see three harbour thugs<br />advancing towards you</description>
+        <description>
+         <line>You turn to see three harbour thugs</line>
+         <line>advancing towards you</line>
+        </description>
        </meta>
        <instance class="html" src="ill16.gif" width="386" height="674" />
        <instance class="pdf" src="ill16.pdf" width="386" height="674" />
@@ -4217,7 +4287,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>The knight is Lord Axim of Ryme, commander<br />of King Alin<ch.apos/>s personal bodyguard</description>
+        <description>
+         <line>The knight is Lord Axim of Ryme, commander</line>
+         <line>of King Alin<ch.apos/>s personal bodyguard</line>
+        </description>
        </meta>
        <instance class="html" src="ill17.gif" width="386" height="663" />
        <instance class="pdf" src="ill17.pdf" width="386" height="663" />
@@ -4606,7 +4679,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>The innkeeper, a thin old man with only<br />one eye, is carrying a tray of hot food</description>
+        <description>
+         <line>The innkeeper, a thin old man with only</line>
+         <line>one eye, is carrying a tray of hot food</line>
+        </description>
        </meta>
        <instance class="html" src="ill18.gif" width="386" height="661" />
        <instance class="pdf" src="ill18.pdf" width="386" height="661" />
@@ -4745,7 +4821,11 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>The black-clad shape of a Drakkarim warrior<br />is advancing towards you, a large<br />broadsword raised</description>
+        <description>
+         <line>The black-clad shape of a Drakkarim warrior</line>
+         <line>is advancing towards you, a large</line>
+         <line>broadsword raised</line>
+        </description>
        </meta>
        <instance class="html" src="ill19.gif" width="386" height="627" />
        <instance class="pdf" src="ill19.pdf" width="386" height="627" />
@@ -5056,7 +5136,10 @@ To do:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>There is a mighty roar as the power of the sun-sword<br />is unleashed in a searing white beam</description>
+        <description>
+         <line>There is a mighty roar as the power of the sun-sword</line>
+         <line>is unleashed in a searing white beam</line>
+        </description>
        </meta>
        <instance class="html" src="ill20.gif" width="705" height="555" />
        <instance class="pdf" src="ill20.pdf" width="705" height="555" />
