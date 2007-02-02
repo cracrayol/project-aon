@@ -9,13 +9,16 @@
  %general.inclusions;
 ]>
 
-<gamebook xml:lang="en-UK" version="0.11">
+<gamebook xml:lang="en-UK" version="0.12">
 
 <!--
 
 $Id$
 
 $Log$
+Revision 1.10  2007/02/02 20:02:19  jonathan.blake
+Corrections for all pending errata, further updates to latest DTD
+
 Revision 1.9  2006/12/07 01:38:13  jonathan.blake
 Removing superfluous footnote data
 
@@ -73,10 +76,6 @@ Revision 1.1  2002/10/15 23:33:16  jblake
 Initial revision
 //////////////////////////
 
--->
-
-<!--
-
 Change log:
 - Updated publication date to 2002/10/24
 - Inserted information for Gary Chalk primary illustrations
@@ -93,22 +92,32 @@ To do:
 <meta>
  <title>Fire on the Water</title>
  <creator class="short">Joe Dever and Gary Chalk</creator>
- <creator class="medium">Joe Dever<br />Illustrated by Gary Chalk</creator>
+ <creator class="medium">
+  <line>Joe Dever</line>
+  <line>Illustrated by Gary Chalk</line>
+ </creator>
  <creator class="long">
    &inclusion.joe.dever.bio.lw;
    &inclusion.gary.chalk.bio.lw;
  </creator>
  <publisher>Project Aon</publisher>
- <date class="publication"><year>2006</year><month>12</month><day>6</day></date>
+ <date class="publication"><year>2007</year><month>2</month><day>2</day></date>
  <description class="blurb">
   <p>You are Lone Wolf<ch.emdash/>Last of the Kai Lords. Bitter war rages through your homeland as the evil Darklords of the west lay siege to the capital. The King has sent you on a desperate journey to retrieve the only power in Magnamund that can save your people: the Sommerswerd, the sword of the sun. Ahead of you lie terrible dangers<ch.emdash/>ferocious sea-storms, the tunnel of Tarnalin, and the ghostly death-hulks of Vonotar the Traitor. But only you can save your land from the devestation of the Darklords.</p>
  </description>
  <description class="publication">
   <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
  </description>
- <rights class="copyrights">Text copyright <ch.copy/> 1984 Joe Dever.<br />Illustrations copyright <ch.copy/> 1984 Gary Chalk.</rights>
+ <rights class="copyrights">
+  <line>Text copyright <ch.copy/> 1984 Joe Dever.</line>
+  <line>Illustrations copyright <ch.copy/> 1984 Gary Chalk.</line>
+ </rights>
  <rights class="license-notification">
-  <p>Text copyright <ch.copy/> 1984 Joe Dever.<br />Illustrations copyright <ch.copy/> 1984 Gary Chalk.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+  <p>
+   <line>Text copyright <ch.copy/> 1984 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1984 Gary Chalk.</line>
+   <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+  </p>
  </rights>
 </meta>
 
@@ -167,7 +176,7 @@ To do:
        <dt>Proofreading</dt>
         <dd>Simon Osborne (Sections 1<ch.endash/>210 and 246<ch.endash/>350)<br />Tony Wrigley (Sections 211<ch.endash/>245)</dd>
        <dt>Editing</dt>
-        <dd>Mike Feldman<br />Ingo Kl<ch.ouml/>cker<br />Mark Laird<br />Simon Osborne<br />Thomas Wolmer</dd>
+        <dd>Mike Feldman<br />Ingo Kl<ch.ouml/>cker<br />Mark Laird<br />LeRoy McSwain<br />Simon Osborne<br />Thomas Wolmer</dd>
        <dt>Coordination</dt>
         <dd>Jonathan Blake</dd>
        <dt>Special Thanks</dt>
@@ -207,12 +216,12 @@ To do:
 
    <data>
     <p>You keep a record of your adventure on the <a idref="action">Action Chart</a>.</p>
-    <p>During your training as a Kai Lord you have developed fighting prowess<ch.emdash/><typ class="attribute">COMBAT SKILL</typ> and physical stamina<ch.emdash/><typ class="attribute">ENDURANCE</typ>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it on to the <a idref="random">Random Number Table</a>. If you pick 0 it counts as zero.</p>
+    <p>During your training as a Kai Lord you have developed fighting prowess<ch.emdash/><typ class="attribute">COMBAT SKILL</typ> and physical stamina<ch.emdash/><typ class="attribute">ENDURANCE</typ>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it <!--ERRTAG-RE-10688-->onto<!--/ERRTAG-RE-10688--> the <a idref="random">Random Number Table</a>. If you pick 0 it counts as zero.</p>
     <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 10 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a>. (i.e. if your pencil fell on 4 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> Of 14.) When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore very desirable.</p>
     <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 20 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a>. (i.e. if your pencil fell on the number 6 on the <a idref="random">Random Number Table</a> you would have 26 <typ class="attribute">ENDURANCE</typ> points.)</p>
     <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never go above the number with which you start your adventure.</p>
     <p><strong>If you have successfully completed Book 1 of the Lone Wolf series</strong>, you will already have your <typ class="attribute">COMBAT SKILL</typ>, <typ class="attribute">ENDURANCE</typ> points and <a idref="discplnz">Kai Disciplines</a> which you can now carry over with you to Book 2. You may also carry over any Weapons and Special Items that you held at the end of Book 1 and these should be entered on your new <a idref="action">Action Chart</a> (you are still limited to two weapons and eight Backpack Items).</p>
-    <p>Through your experiences in <a href="&link.01fftd;">Book 1</a> you have learned new skills, and you may choose one extra <a idref="discplnz">Kai Discipline</a> to add to your <a idref="action">Action Chart</a>. Now read the <a idref="equipmnt">section on equipment</a> for Book 2 carefully.</p>
+    <p>Through your experiences in <bookref series="lw" book="01fftd">Book 1</bookref> you have learned new skills, and you may choose one extra <a idref="discplnz">Kai Discipline</a> to add to your <a idref="action">Action Chart</a>. Now read the <a idref="equipmnt">section on equipment</a> for Book 2 carefully.</p>
 
     <section class="frontmatter-separate" id="discplnz">
      <meta>
@@ -338,7 +347,7 @@ To do:
        </data>
       </section>
 
-      <p>If you successfully complete the mission as set in Book 2 of Lone Wolf, you may add a further Kai Discipline of your choice to your <a idref="action">Action Chart</a> in <a href="&link.03tcok;">Book 3</a>. This additional skill, together with your five or six other skills and any Special Items that you have picked up in Books 1 and 2, may then be used in the next adventure of the Lone Wolf series which is called <cite><a href="&link.03tcok;">The Caverns of Kalte</a></cite>.</p>
+      <p>If you successfully complete the mission as set in Book 2 of Lone Wolf, you may add a further Kai Discipline of your choice to your <a idref="action">Action Chart</a> in <bookref series="lw" book="03tcok">Book 3</bookref>. This additional skill, together with your five or six other skills and any Special Items that you have picked up in Books 1 and 2, may then be used in the next adventure of the Lone Wolf series which is called <cite><bookref series="lw" book="03tcok">The Caverns of Kalte</bookref></cite>.</p>
      </data>
     </section>
 
@@ -350,7 +359,7 @@ To do:
      </meta>
 
      <data>
-      <p>Guard Captain D<ch.apos/>Val leads you to the Royal Armoury where your green tunic and Kai cloak are taken from you to be repaired and cleaned. While you await their return, Captain D<ch.apos/>Val hands you a pouch of Gold for your journey. To find out how much gold is in the pouch, pick a number from the <a idref="random">Random Number Table</a>. Now add 10 to the number you have picked. The total equals the number of Gold Crowns inside the pouch, and you may enter this number in the <quote>Gold Crowns</quote> section of your <a idref="action">Action Chart</a>. (If you successfully completed <a href="&link.01fftd;">Book 1</a>, you may add this sum to the total of any Crowns you may already possess.)</p>
+      <p>Guard Captain D<ch.apos/>Val leads you to the Royal Armoury where your green tunic and Kai cloak are taken from you to be repaired and cleaned. While you await their return, Captain D<ch.apos/>Val hands you a pouch of Gold for your journey. To find out how much gold is in the pouch, pick a number from the <a idref="random">Random Number Table</a>. Now add 10 to the number you have picked. The total equals the number of Gold Crowns inside the pouch, and you may enter this number in the <quote>Gold Crowns</quote> section of your <a idref="action">Action Chart</a>. (If you successfully completed <bookref series="lw" book="01fftd">Book 1</bookref>, you may add this sum to the total of any Crowns you may already possess.)</p>
       <p>On a large table in the centre of the armoury, a number of items have been laid out for your choice. You may take any two of the following:</p>
       <ul class="paragraphed">
        <li><p>Sword (Weapons)</p></li>
@@ -400,7 +409,7 @@ To do:
        </li>
        <li><p>Broadsword (Weapons)</p></li>
       </ul>
-      <p>If you are already carrying Weapons from <a href="&link.01fftd;">Book 1</a>, you can take this opportunity to exchange one or both of them.</p>
+      <p>If you are already carrying Weapons from <bookref series="lw" book="01fftd">Book 1</bookref>, you can take this opportunity to exchange one or both of them.</p>
       <p>List the two items you choose on your <a idref="action">Action Chart</a>, under the heading given in brackets, and make a note of any effect it may have on your <typ class="attribute">ENDURANCE</typ> points or <typ class="attribute">COMBAT SKILL</typ>.</p>
 
       <section class="frontmatter" id="howcarry">
@@ -727,7 +736,7 @@ To do:
        <instance class="html" src="sect12.gif" width="176" height="173" />
        <instance class="pdf" src="sect12.pdf" width="176" height="173" />
       </illustration>
-      <p>After somewhat reluctantly agreeing a wager of 10 Gold Crowns, you begin the game.</p>
+      <p>After somewhat reluctantly <!--ERRTAG-RE-48175-->agreeing to a wager<!--/ERRTAG-RE-48175--> of 10 Gold Crowns, you begin the game.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>. If you have the Kai Discipline of Sixth Sense, you may add 2 to this number.</p>
       <choice idref="sect58">If your total score is now 0<ch.endash/>3, <link-text>turn to 58</link-text>.</choice>
       <choice idref="sect167">If your total score is now 4<ch.endash/>6, <link-text>turn to 167</link-text>.</choice>
@@ -964,7 +973,7 @@ To do:
      <data>
       <p>Your first meeting with the Lord-lieutenant comes as something of a shock. You had perhaps half expected him to be a servile old man, as are the envoys of the southern lands that plague your King<ch.apos/>s court with their delegations. The man clad in heavy chainmail standing before you is neither old nor servile. You are soon to learn that Lord-lieutenant Rhygar is an exceptional man.</p>
       <p>Born of a Sommlending father and a Durenese mother, he has become something of a legend in this city. In the last decade, he has led an alliance of the nations to victory against the invading Ice Barbarians of Kalte. Wise in peace, fierce in war, you could not have wished for better company on your quest for the Sommerswerd.</p>
-      <p>Rhygar orders that a sumptuous meal be served. It is by far the best food you have tasted since the war began. During the feast, you recall the events that have brought you to Port Bax, and reflect on the daunting challenge that still lies before you. After the meal, Rhygar sends for his physician who attends to your wounds. His potions restore 6 <typ class="attribute">ENDURANCE</typ> points. Then he advises you to sleep, for you are to leave with the Lord-lieutenant for Hammerdal in the morning.<a id="sect31-1" idref="sect31-1-foot" class="footnote" /></p>
+      <p>Rhygar orders that a sumptuous meal be served. It is by far the best food you have tasted since the war began. During the feast, you recall the events that have brought you to Port Bax, and reflect on the daunting challenge that still lies before you. After the meal, Rhygar sends for his physician who attends to your wounds. His potions restore 6 <typ class="attribute">ENDURANCE</typ> points. Then he advises you to sleep, for you are to leave with the Lord-lieutenant for Hammerdal in the morning.<footref id="sect31-1" idref="sect31-1-foot"/></p>
       <illustration class="inline">
        <meta>
         <creator>Gary Chalk</creator>
@@ -1005,7 +1014,7 @@ To do:
      <meta><title>34</title></meta>
 
      <data>
-      <p>As you close the door of your cabin, you hear the frantic shouts of the crew as they prepare to fight off the attackers. Suddenly you hear the dull thud of something hitting the rear deck followed by the shrieks of creatures you know only too well<ch.emdash/>Giaks! The Zlanbeast are dropping nets of Giaks on to the ship. The door of your cabin bursts open and you are faced by three of the hideous grey-skinned creatures. Their jagged swords are covered in blood. You cannot evade and you must fight them as one enemy.</p>
+      <p>As you close the door of your cabin, you hear the frantic shouts of the crew as they prepare to fight off the attackers. Suddenly you hear the dull thud of something hitting the rear deck followed by the shrieks of creatures you know only too well<ch.emdash/>Giaks! The Zlanbeast are dropping nets of Giaks <!--ERRTAG-RE-68919-->onto<!--/ERRTAG-RE-68919--> the ship. The door of your cabin bursts open and you are faced by three of the hideous grey-skinned creatures. Their jagged swords are covered in blood. You cannot evade and you must fight them as one enemy.</p>
       <combat><enemy>Giaks</enemy><enemy-attribute class="combatskill">16</enemy-attribute><enemy-attribute class="endurance">14</enemy-attribute></combat>
       <choice idref="sect345">If you win the combat, <link-text>turn to 345</link-text>.</choice>
      </data>
@@ -1165,7 +1174,7 @@ To do:
      </footnotes>
 
      <data>
-      <p>The soldiers quickly descend from the roof of the hut and grab their spears. They advance towards you and one of them shouts, <quote>Password, stranger!</quote><a id="sect47-1" idref="sect47-1-foot" class="footnote" /></p>
+      <p>The soldiers quickly descend from the roof of the hut and grab their spears. They advance towards you and one of them shouts, <quote>Password, stranger!</quote><footref id="sect47-1" idref="sect47-1-foot"/></p>
       <choice idref="sect111">If you know the correct password for this bridge, <link-text>turn to 111</link-text>.</choice>
       <choice idref="sect307">If you do not, <link-text>turn to 307</link-text>.</choice>
      </data>
@@ -1341,7 +1350,7 @@ To do:
        <instance class="html" src="sect62.gif" width="311" height="151" />
        <instance class="pdf" src="sect62.pdf" width="311" height="151" />
       </illustration>
-      <choice idref="sect126">If you have collected the necessary documents on your quest, <link-text>turn to 126</link-text>.<a id="sect62-1" idref="sect62-1-foot" class="footnote" /></choice>
+      <choice idref="sect126">If you have collected the necessary documents on your quest, <link-text>turn to 126</link-text>.<footref id="sect62-1" idref="sect62-1-foot"/></choice>
       <choice idref="sect263">If you do not have the documents he requires, or do not wish to show them to him, you will have to risk showing him the Seal of Hammerdal. <link-text>Turn to 263</link-text>.</choice>
       <choice idref="sect318">If you do not have either the Seal or the documents, leave the room and return to the outer hall by <link-text>turning to 318</link-text>.</choice>
      </data>
@@ -1497,7 +1506,7 @@ To do:
 
      <data>
       <p>You enter a musty office where two men sit hunched over desks bowed beneath the weight of books and papers.</p>
-      <p><quote>Good evening, sir,</quote> says one of the men, his long waxed moustache twitching as he speaks. <quote>Sir, requires a merchant<ch.apos/>s pass?</quote></p>
+      <p><quote>Good evening, sir,</quote> says one of the men, his long waxed moustache twitching as he speaks. <quote><!--ERRTAG-RE-102954-->Sir requires<!--/ERRTAG-RE-102954--> a merchant<ch.apos/>s pass?</quote></p>
       <p>Before you can reply, the man passes to you a fistful of complicated forms. <quote>If sir would care to sign these, I can issue sir<ch.apos/>s pass immediately. The fee is 10 Gold Crowns.</quote></p>
       <choice idref="sect142">If you wish to sign the forms and purchase a white pass, mark it on your <a idref="action">Action Chart</a> and <link-text>turn to 142</link-text>.</choice>
       <choice idref="sect318">If you do not have enough money or do not wish to purchase the pass, leave this office and return to the hall by <link-text>turning to 318</link-text>.</choice>
@@ -1535,7 +1544,7 @@ To do:
      <data>
       <p>You dive backwards, but only just in time to avoid the falling mast as it smashes straight through the deck. You stagger upright and peer into the mass of shattered timbers. Pinned beneath the broken mast is the lifeless body of Captain Kelman.</p>
       <p>As you stare in horror, a loud crack fills the air as the storm breaks open the already damaged hull of the Green Sceptre. As the ship breaks up you are hurled over the side and into the raging sea.</p>
-      <p>Gasping for air, you claw your way up to the surface but strike your head on a hatch cover. Lose 1 <typ class="attribute">ENDURANCE</typ> point and pull yourself on to this makeshift raft. If you are wearing a Chainmail Waistcoat, you must discard this now or risk drowning.<a id="sect78-1" idref="sect78-1-foot" class="footnote" /> In the grey light of the storm, you watch as the broken ship sinks beneath the heaving sea. You are feeling dizzy and very sick. Hanging on to the cover with all your strength, you gradually slip into unconsciousness.</p>
+      <p>Gasping for air, you claw your way up to the surface but strike your head on a hatch cover. Lose 1 <typ class="attribute">ENDURANCE</typ> point and pull yourself <!--ERRTAG-RE-106008-->onto<!--/ERRTAG-RE-106008--> this makeshift raft. If you are wearing a Chainmail Waistcoat, you must discard this now or risk drowning.<footref id="sect78-1" idref="sect78-1-foot"/> In the grey light of the storm, you watch as the broken ship sinks beneath the heaving sea. You are feeling dizzy and very sick. Hanging on to the cover with all your strength, you gradually slip into unconsciousness.</p>
       <p>When you eventually awake, the storm has passed. The only trace of the Green Sceptre is the hatch cover on which you lie. By the position of the sun you suppose it to be late afternoon. In the distance, you can see a small fishing boat and beyond it, the coastline stretches out along the horizon.</p>
       <choice idref="sect278">If you wish to use your cloak to try to signal to the fishing boat, <link-text>turn to 278</link-text>.</choice>
       <choice idref="sect337">If you want to ignore the boat and paddle towards the shore instead, <link-text>turn to 337</link-text>.</choice>
@@ -1558,7 +1567,7 @@ To do:
       <p>You now realize you hold the only power in Magnamund that can save your people. Slowly the light starts to fade and you become aware of Lord Axim<ch.apos/>s hand upon your shoulder.</p>
       <p><quote>Come, Lone Wolf, there is much preparation for your return to Sommerlund.</quote></p>
       <p>You sheathe the Sommerswerd in its jewelled scabbard and follow Lord Axim as he leaves the King<ch.apos/>s chamber.</p>
-      <p>Make the necessary adjustments to your <typ class="attribute">COMBAT SKILL</typ> total now that you possess the Sommerswerd.<a id="sect79-1" idref="sect79-1-foot" class="footnote" /> Note the powers of the sword under the Special Items section of your <a idref="action">Action Chart</a>.</p>
+      <p>Make the necessary adjustments to your <typ class="attribute">COMBAT SKILL</typ> total now that you possess the Sommerswerd.<footref id="sect79-1" idref="sect79-1-foot"/> Note the powers of the sword under the Special Items section of your <a idref="action">Action Chart</a>.</p>
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
@@ -1718,11 +1727,11 @@ To do:
      </footnotes>
 
      <data>
-      <p>The boy is thrown out of the trading post by two black-clad guards. The merchant thanks you and offers you the choice of any two Items of his cargo:<a id="sect91-1" idref="sect91-1-foot" class="footnote" /></p>
+      <p>The boy is thrown out of the trading post by two black-clad guards. The merchant thanks you and offers you the choice of any two Items of his cargo:<footref id="sect91-1" idref="sect91-1-foot"/></p>
       <ul>
        <li>Quarterstaff</li>
        <li>Blanket</li>
-       <li>Enough Food for 2 Meals<a id="sect91-2" idref="sect91-2-foot" class="footnote" /></li>
+       <li>Enough Food for 2 Meals<footref id="sect91-2" idref="sect91-2-foot"/></li>
        <li>Backpack</li>
        <li>Dagger</li>
        <li>30 Feet of Rope</li>
@@ -1837,7 +1846,7 @@ To do:
       </illustration>
       <p><quote>Abandon ship!</quote></p>
       <p>You are now in the thick of the enemy fleet and the Durenor is sinking fast.</p>
-      <choice idref="sect30">If you wish to jump on to the deck of the death-hulk flagship, <link-text>turn to 30</link-text>.</choice>
+      <choice idref="sect30">If you wish to jump <!--ERRTAG-RE-126686-->onto<!--/ERRTAG-RE-126686--> the deck of the death-hulk flagship, <link-text>turn to 30</link-text>.</choice>
       <choice idref="sect267">If you wish to dive into the sea and try to swim to another Durenese ship, <link-text>turn to 267</link-text>.</choice>
      </data>
     </section>
@@ -1877,7 +1886,7 @@ To do:
      </footnotes>
 
      <data>
-      <p>Laumspur is a delicious herb, much sought after in the Lastlands for its healing properties. You have picked enough for one Meal. Eating this meal will restore 3 <typ class="attribute">ENDURANCE</typ> points to your total.<a id="sect103-1" idref="sect103-1-foot" class="footnote" /> (Remember to add this to your <a idref="action">Action Chart</a>.) You wrap the herb up, and return to the coach with the other passengers.</p>
+      <p>Laumspur is a delicious herb, much sought after in the Lastlands for its healing properties. You have picked enough for one Meal. Eating this meal will restore 3 <typ class="attribute">ENDURANCE</typ> points to your total.<footref id="sect103-1" idref="sect103-1-foot"/> (Remember to add this to your <a idref="action">Action Chart</a>.) You wrap the herb up, and return to the coach with the other passengers.</p>
       <choice idref="sect249"><link-text>Turn to 249</link-text>.</choice>
      </data>
     </section>
@@ -1914,7 +1923,7 @@ To do:
 
      <data>
       <p>The carved spear is made of metal, yet it feels as light as if it were made of wood. You notice the shaft is covered in runes and magic emblems. As you carefully pull it from the man<ch.apos/>s chest, he gives a long sigh of relief. You are about to examine his wound, when you feel a searing pain shoot through your head. It is so strong and painful that you collapse to the ground. You lose 2 <typ class="attribute">ENDURANCE</typ> points.</p>
-      <p>You are amazed to see the man jump to his feet, and then horrified to see the dreadful change that comes over him. The skin of his face appears to writhe and change colour, growing darker and shrinking as it decays on his skull. His eyes burn with a bright red glow and long fangs protrude from his bottom jaw. You choke with fear as you realize it is a Helghast, a nightmarish agent of the Darklords. It is attacking you with its powerful Mindforce. If you do not have the Kai Discipline of Mindshield, you will lose 2 <typ class="attribute">ENDURANCE</typ> points for every round of combat that you fight with this creature. Normal weapons cannot harm it and it is immune to Mindblast. You can only wound it in combat with the Magical Spear.<a id="sect106-1" idref="sect106-1-foot" class="footnote" /></p>
+      <p>You are amazed to see the man jump to his feet, and then horrified to see the dreadful change that comes over him. The skin of his face appears to writhe and change colour, growing darker and shrinking as it decays on his skull. His eyes burn with a bright red glow and long fangs protrude from his bottom jaw. You choke with fear as you realize it is a Helghast, a nightmarish agent of the Darklords. It is attacking you with its powerful Mindforce. If you do not have the Kai Discipline of Mindshield, you will lose 2 <typ class="attribute">ENDURANCE</typ> points for every round of combat that you fight with this creature. Normal weapons cannot harm it and it is immune to Mindblast. You can only wound it in combat with the Magical Spear.<footref id="sect106-1" idref="sect106-1-foot"/></p>
       <combat><enemy>Helghast</enemy><enemy-attribute class="combatskill">22</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat>
       <p>You cannot evade this creature and you must fight it to the death.</p>
       <p>If you win the combat, you can keep the Spear. Mark it on your <a idref="action">Action Chart</a> under the Special Items section as a <quote>Magic Spear.</quote></p>
@@ -2003,7 +2012,7 @@ To do:
      </footnotes>
 
      <data>
-      <p>He is Vonotar the Traitor, renegade wizard from the Magicians<ch.apos/> Guild of Toran. He is a master of the black arts and now possesses great power which the Darklords themselves have given him. It was his agents who tried to assassinate you during your quest, and it is he who commands the death-hulk fleet. Destroy Vonotar and you will destroy the evil force that gives power to the death-hulks and their crews.<a id="sect113-1" idref="sect113-1-foot" class="footnote" /></p>
+      <p>He is Vonotar the Traitor, renegade wizard from the Magicians<ch.apos/> Guild of Toran. He is a master of the black arts and now possesses great power which the Darklords themselves have given him. It was his agents who tried to assassinate you during your quest, and it is he who commands the death-hulk fleet. Destroy Vonotar and you will destroy the evil force that gives power to the death-hulks and their crews.<footref id="sect113-1" idref="sect113-1-foot"/></p>
       <choice idref="sect73">You may climb the tower and attack Vonotar by <link-text>turning to 73</link-text>.</choice>
       <choice idref="sect267">If you do not wish to risk your life against this powerful magician, escape from this ship by jumping overboard, and <link-text>turning to 267</link-text>.</choice>
      </data>
@@ -2043,7 +2052,7 @@ To do:
      </footnotes>
 
      <data>
-      <p>Using your Kai Discipline, you can tell which cup hides the marble, for to you, the clay is as transparent as glass itself.<a id="sect116-1" idref="sect116-1-foot" class="footnote" /></p>
+      <p>Using your Kai Discipline, you can tell which cup hides the marble, for to you, the clay is as transparent as glass itself.<footref id="sect116-1" idref="sect116-1-foot"/></p>
       <p>Pick a number from the <a idref="random">Random Number Table</a> and add 5 to it. This equals the number of Gold Crowns that you win before the rogue suspects something is wrong and ends the game.</p>
       <p>With gold in your purse once more, you return to the bar and hand over 1 Gold Crown for a room.</p>
       <choice idref="sect314"><link-text>Turn to 314</link-text>.</choice>
@@ -2055,7 +2064,7 @@ To do:
 
      <data>
       <p>It is a large passenger wagon similar to those used by highway travellers of Sommerlund. The driver pulls the horses to a halt and stares at you from under the wide brim of his hat. You ask where he<ch.apos/>s bound for.</p>
-      <p><quote>We<ch.apos/>re bound for Ragadorn<ch.emdash/>due there by noon today. A seat will cost you 3 Gold Crowns, but you can ride on, the roof for only one.</quote></p>
+      <p><quote>We<ch.apos/>re bound for Ragadorn<ch.emdash/>due there by noon today. A seat will cost you 3 Gold Crowns, but you can ride on the roof for only one.</quote></p>
       <choice idref="sect37">If you wish to ride inside, pay the driver 3 Gold Crowns and <link-text>turn to 37</link-text>.</choice>
       <choice idref="sect148">If you would prefer to ride on the roof, pay him 1 Gold Crown and <link-text>turn to 148</link-text>.</choice>
       <choice idref="sect292">If you cannot pay the fare, you must let the coach continue and begin your journey on foot. <link-text>Turn to 292</link-text>.</choice>
@@ -2345,7 +2354,7 @@ To do:
 
      <data>
       <p>As the mast smashes into the deck, a splintered beam hits your head and you are knocked overboard. Gasping for air, you fight your way to the surface and catch hold of a hatch cover. You are half-stunned. You lose 2 <typ class="attribute">ENDURANCE</typ> points.</p>
-      <p>You pull yourself on to this makeshift raft and cling to it with all your strength. If you are wearing a Chainmail Waistcoat, you must discard it now or otherwise you will be drowned for sure.</p>
+      <p>You pull yourself <!--ERRTAG-RE-165537-->onto<!--/ERRTAG-RE-165537--> this makeshift raft and cling to it with all your strength. If you are wearing a Chainmail Waistcoat, you must discard it now or otherwise you will be drowned for sure.</p>
       <p>You feel dizzy and sick. As the heaving sea buffets you relentlessly, you gradually slip into unconsciousness. When you awake many hours later, the storm has passed. By the position of the sun, you judge it to be late afternoon. In the distance you can see a small fishing boat and beyond it, on the horizon, land. The only trace of the Green Sceptre is the hatch cover on which you now sit.</p>
       <choice idref="sect278">If you wish to use your cloak to try to signal to the fishing boat, <link-text>turn to 278</link-text>.</choice>
       <choice idref="sect337">If you wish to ignore the boat and paddle towards the shore, <link-text>turn to 337</link-text>.</choice>
@@ -2406,7 +2415,7 @@ To do:
 
      <data>
       <p>You are becoming weaker and weaker. After what seems an eternity of painful struggle you find the Laumspur and force yourself to swallow the dry leaves. Within seconds you are violently sick, after which you drift off into a restless sleep.</p>
-      <p>It is nearly an hour before you awake and you still feel dreadfully ill. Deduct 5 <typ class="attribute">ENDURANCE</typ> points.<a id="sect145-1" idref="sect145-1-foot" class="footnote" /></p>
+      <p>It is nearly an hour before you awake and you still feel dreadfully ill. Deduct 5 <typ class="attribute">ENDURANCE</typ> points.<footref id="sect145-1" idref="sect145-1-foot"/></p>
       <p>As you slowly regain your strength, the shock of what has happened soon turns to anger. You grab your equipment and stagger out of the room, intent on confronting your would-be assassin.</p>
       <choice idref="sect200"><link-text>Turn to 200</link-text>.</choice>
      </data>
@@ -2416,7 +2425,7 @@ To do:
      <meta><title>146</title></meta>
 
      <data>
-      <p>You were right. The cloud is made of huge Zlanbeast and many Kraan, a smaller species but one that is just as deadly. Hanging below their black bellies are nets full of Giaks. As the Zlanbeast descend on the Green Sceptre, a net of shrieking Giaks crashes on to the deck behind you. Some are crushed in the fall, but many more have survived and waste no time attacking you. You must fight them as one enemy.</p>
+      <p>You were right. The cloud is made of huge Zlanbeast and many Kraan, a smaller species but one that is just as deadly. Hanging below their black bellies are nets full of Giaks. As the Zlanbeast descend on the Green Sceptre, a net of shrieking Giaks crashes <!--ERRTAG-RE-172186-->onto<!--/ERRTAG-RE-172186--> the deck behind you. Some are crushed in the fall, but many more have survived and waste no time attacking you. You must fight them as one enemy.</p>
       <illustration class="inline">
        <meta>
         <creator>Gary Chalk</creator>
@@ -2485,7 +2494,7 @@ To do:
         <signpost>Port Bax<ch.emdash/>50 Mls</signpost>
        </instance>
       </illustration>
-      <p>You ride all night without sleep. As the dawn breaks, you are greeted by a startling change of landscape. The barren Wildlands have given way to moors and waterlogged fens. And a dark shadow runs the length of the eastern horizon for as far as the eye can see. This is the Durenor forest, the natural frontier of the mountain kingdom where it borders the untamed Wildlands. It is indeed a welcome sight.<a id="sect150-1" idref="sect150-1-foot" class="footnote" /></p>
+      <p>You ride all night without sleep. As the dawn breaks, you are greeted by a startling change of landscape. The barren Wildlands have given way to moors and waterlogged fens. And a dark shadow runs the length of the eastern horizon for as far as the eye can see. This is the Durenor forest, the natural frontier of the mountain kingdom where it borders the untamed Wildlands. It is indeed a welcome sight.<footref id="sect150-1" idref="sect150-1-foot"/></p>
       <p>You are no more than a day<ch.apos/>s ride from Port Bax, but you are tired after your night ride and you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> Points. If you have the Kai Discipline of Hunting, you may use this skill to trap a wild moor-rat or marsh-bird for your breakfast.</p>
       <p>After an hour<ch.apos/>s ride you come to a fork in the road. There is no signpost.</p>
       <choice idref="sect261">If you wish to take the left fork, <link-text>turn to 261</link-text>.</choice>
@@ -2669,7 +2678,7 @@ To do:
      <meta><title>166</title></meta>
 
      <data>
-      <p>You make your way up a flight of stairs and on to the crowded deck. Fierce battle rages all around you as the Durenese fleet is engulfed by the rush of ghostly death-hulks. Suddenly a flash of searing flame shoots from a tower at the rear of the death-hulk you are on, and explodes into the side of a Durenese warship less than fifty yards away. You watch with horror as soldiers leap from the deck, their clothes and hair in flames.</p>
+      <p>You make your way up a flight of stairs and <!--ERRTAG-RE-190168-->onto<!--/ERRTAG-RE-190168--> the crowded deck. Fierce battle rages all around you as the Durenese fleet is engulfed by the rush of ghostly death-hulks. Suddenly a flash of searing flame shoots from a tower at the rear of the death-hulk you are on, and explodes into the side of a Durenese warship less than fifty yards away. You watch with horror as soldiers leap from the deck, their clothes and hair in flames.</p>
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
@@ -3040,8 +3049,8 @@ To do:
      </footnotes>
 
      <data>
-      <p>When you awake, you are shocked to find yourself lying beneath a wooden jetty, and the shallow water surrounding you fills your nostrils with a foul stench. As you stand, your head throbs violently as if you had been knocked unconscious. This is exactly what has happened to you, and your Gold, your Backpack, your Weapons and all your Special Items (including the Seal of Hammerdal) have been stolen by the fishermen.<a id="sect194-1" idref="sect194-1-foot" class="footnote" /></p>
-      <p>With a groan of despair, you climb out of the slimy water and pull yourself on to the jetty. Looking up you see a faded sign.</p>
+      <p>When you awake, you are shocked to find yourself lying beneath a wooden jetty, and the shallow water surrounding you fills your nostrils with a foul stench. As you stand, your head throbs violently as if you had been knocked unconscious. This is exactly what has happened to you, and your Gold, your Backpack, your Weapons and all your Special Items (including the Seal of Hammerdal) have been stolen by the fishermen.<footref id="sect194-1" idref="sect194-1-foot"/></p>
+      <p>With a groan of despair, you climb out of the slimy water and pull yourself <!--ERRTAG-RE-216376-->onto<!--/ERRTAG-RE-216376--> the jetty. Looking up you see a faded sign.</p>
       <signpost>Welcome to Ragadorn</signpost>
       <p>You fear the rumours about this place are true. It is nearly dark and it has started to rain. You must find the Seal if you are to persuade the Durenese to give you the Sommerswerd. Looking round, you see a large market square with a stone signpost in the centre, indicating the various roads that lead off the square.</p>
       <choice idref="sect215">If you wish to go east along Barnacle Street <link-text>turn to 215</link-text>.</choice>
@@ -3073,7 +3082,7 @@ To do:
      </footnotes>
 
      <data>
-      <p>King Alin IV sits alone in his domed tower, viewing his mountain domain through one of the many portals of tinted glass. You and Lord Axim are formally announced as you enter the chamber, and you respectfully bow to his Majesty. Then, Lord Axim removes the Seal of Hammerdal from your finger and walks over to the King<ch.apos/>s side.<a id="sect196-1" idref="sect196-1-foot" class="footnote" /> For nearly an hour they talk, their sombre faces reflecting the seriousness of the situation. There is a short pause of silent meditation, and King Alin suddenly rises from his throne and addresses you for the first time.</p>
+      <p>King Alin IV sits alone in his domed tower, viewing his mountain domain through one of the many portals of tinted glass. You and Lord Axim are formally announced as you enter the chamber, and you respectfully bow to his Majesty. Then, Lord Axim removes the Seal of Hammerdal from your finger and walks over to the King<ch.apos/>s side.<footref id="sect196-1" idref="sect196-1-foot"/> For nearly an hour they talk, their sombre faces reflecting the seriousness of the situation. There is a short pause of silent meditation, and King Alin suddenly rises from his throne and addresses you for the first time.</p>
       <p><quote>Alas, the Darklords have woken once more, and once more does Sommerlund come in search of our aid. I had prayed that my reign would be remembered as a time of peace and fulfilment, but in my heart I knew it was to be otherwise.</quote></p>
       <p>The King removes a golden key from the pocket of his white robe and inserts it in a marble dais standing in the centre of the chamber. A gentle humming fills the room, as the stone cover slides back to reveal the hilt of a golden sword.</p>
       <p><quote>Take the sword, Lone Wolf. It is foretold that only a true son of Sommerlund can release the powers that lie within its blade.</quote></p>
@@ -3381,7 +3390,7 @@ To do:
      <meta><title>222</title></meta>
 
      <data>
-      <p>After taking care to close his door, the captain opens the mysterious bundle and tips the contents on to his cabin table. A large charred earthenware jug and several blackened rags drop in a heap. They give off a strange oily smell.</p>
+      <p>After taking care to close his door, the captain opens the mysterious bundle and tips the contents <!--ERRTAG-RE-242228-->onto<!--/ERRTAG-RE-242228--> his cabin table. A large charred earthenware jug and several blackened rags drop in a heap. They give off a strange oily smell.</p>
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
@@ -3469,7 +3478,7 @@ To do:
 
      <data>
       <p>They are Larnuma trees and their fruit is very nutritious as well as being sweet and juicy. After your Meal you feel much stronger. You pick enough fruit for 2 Meals and store it in your Backpack.</p>
-      <p>Looking behind the trees, you see a wide coast road that stretches into the distance to left and right.<a id="sect228-1" idref="sect228-1-foot" class="footnote" /> There are no signposts.</p>
+      <p>Looking behind the trees, you see a wide coast road that stretches into the <!--ERRTAG-RE-250221-->distance to the left<!--/ERRTAG-RE-250221--> and right.<footref id="sect228-1" idref="sect228-1-foot"/> There are no signposts.</p>
       <choice idref="sect27">If you wish to go left, <link-text>turn to 27</link-text>.</choice>
       <choice idref="sect114">If you wish to go right <link-text>turn to 114</link-text>.</choice>
      </data>
@@ -3508,7 +3517,7 @@ To do:
      <meta><title>231</title></meta>
 
      <data>
-      <p>The back door opens on to a small square, in the centre of which is a large tomb. The fishermen have disappeared into the gloomy streets; all that is except one who has slipped on the wet cobblestones and knocked himself out. He is lying in the gutter with his face submerged in a puddle.</p>
+      <p>The back door opens <!--ERRTAG-RE-252737-->onto<!--/ERRTAG-RE-252737--> a small square, in the centre of which is a large tomb. The fishermen have disappeared into the gloomy streets; all that is except one who has slipped on the wet cobblestones and knocked himself out. He is lying in the gutter with his face submerged in a puddle.</p>
       <p>You roll him over with your foot and search him. You discover 5 Gold Crowns, a Dagger, and to your great relief the Seal of Hammerdal on his finger. Mark on your <a idref="action">Action Chart</a> those items you take with you and continue.</p>
       <choice idref="sect182">If you have the Kai Discipline of Tracking, <link-text>turn to 182</link-text>.</choice>
       <choice idref="sect177">If you wish to return to the tavern, <link-text>turn to 177</link-text>.</choice>
@@ -3545,7 +3554,7 @@ To do:
      <meta><title>234</title></meta>
 
      <data>
-      <p>Before you can defend yourself, the Helghast has smashed into you and you both fall on to the highway below.</p>
+      <p>Before you can defend yourself, the Helghast has smashed into you and you both fall <!--ERRTAG-RE-255863-->onto<!--/ERRTAG-RE-255863--> the highway below.</p>
       <p>It may be some comfort to learn that your death was swift and painless. Your neck was instantly broken and you were spared the agony of the Helghast<ch.apos/>s black fingers tearing and burning their way through your throat. The Seal of Hammerdal is now on its way to Holmgard, which will now fall to the Darklords.</p>
       <choice>Your life and your quest end here.</choice>
      </data>
@@ -3577,7 +3586,7 @@ To do:
      <meta><title>237</title></meta>
 
      <data>
-      <p>The dead zombies lie around your feet. By now, the soldiers<ch.apos/> fear of the undead has turned to sheer hatred. A chorus of Durenese battle-cries resounds along the deck. You lead the charge along a boarding plank and on to the deck of the death-hulk, cleaving the zombie crew aside like a scythe through wheat. Then suddenly a black-cloaked figure blocks your path, a twisted sword held in its shrunken black hand. It is a Helghast, and you must fight it to the death.</p>
+      <p>The dead zombies lie around your feet. By now, the soldiers<ch.apos/> fear of the undead has turned to sheer hatred. A chorus of Durenese battle-cries resounds along the deck. You lead the charge along a boarding plank and <!--ERRTAG-RE-258314-->onto<!--/ERRTAG-RE-258314--> the deck of the death-hulk, cleaving the zombie crew aside like a scythe through wheat. Then suddenly a black-cloaked figure blocks your path, a twisted sword held in its shrunken black hand. It is a Helghast, and you must fight it to the death.</p>
       <combat><enemy>Helghast</enemy><enemy-attribute class="combatskill">23</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat>
       <p>It is an undead creature, so remember to double all <typ class="attribute">ENDURANCE</typ> points that it loses as a result of your possessing the Sommerswerd. It is immune to Mindblast.</p>
       <choice idref="sect309">If you win the combat, <link-text>turn to 309</link-text>.</choice>
@@ -3599,7 +3608,7 @@ To do:
      <data>
       <p>Opposite the coach station is a narrow street leading to a gaming-house with a sign outside.</p>
       <signpost>No Weapons Allowed Inside</signpost>
-      <p>You are excited by the chance of being able to win some gold and you quickly enter. Any Weapons you may have must be left with a guard at the door. You can recover your Weapons when you decide to leave. You are given a silver token worth 1 Gold Crown, that can only be used in this gaming-house.<a id="sect238-1" idref="sect238-1-foot" class="footnote" /></p>
+      <p>You are excited by the chance of being able to win some gold and you quickly enter. Any Weapons you may have must be left with a guard at the door. You can recover your Weapons when you decide to leave. You are given a silver token worth 1 Gold Crown, that can only be used in this gaming-house.<footref id="sect238-1" idref="sect238-1-foot"/></p>
       <p>The entrance hall opens out into a huge room where many gambling games are in progress. One that catches your eye is called <quote>Cartwheel</quote>. At one end of a long table, an attractive young woman spins a black dish divided into ten sections marked 0<ch.endash/>9. As the dish spins, she drops a small silver ball into it which eventually comes to rest in one of the numbered sections. Several merchants are seated around the table and they are betting heavily on the fall of the silver ball.</p>
       <illustration class="float">
        <meta>
@@ -3609,7 +3618,7 @@ To do:
        <instance class="html" src="ill14.gif" width="386" height="691" />
        <instance class="pdf" src="ill14.pdf" width="386" height="691" />
       </illustration>
-      <p>To play <quote>Cartwheel</quote>, you must first decide the number you would like to bet on and just how many Gold Crowns you would like to stake. Make a note of these numbers and then pick a number from the <a idref="random">Random Number Table</a>. If you pick exactly the same number, you win 8 Gold Crowns for every 1 Gold Crown that you gamble. If the number you pick is immediately before or after the correct choice,<a id="sect238-2" idref="sect238-2-foot" class="footnote" /> you win 5 Gold Crowns for every 1 Gold Crown that you stake. There is a limit to how much you can win on this table: 40 Gold Crowns.</p>
+      <p>To play <quote>Cartwheel</quote>, you must first decide the number you would like to bet on and just how many Gold Crowns you would like to stake. Make a note of these numbers and then pick a number from the <a idref="random">Random Number Table</a>. If you pick exactly the same number, you win 8 Gold Crowns for every 1 Gold Crown that you gamble. If the number you pick is immediately before or after the correct choice,<footref id="sect238-2" idref="sect238-2-foot"/> you win 5 Gold Crowns for every 1 Gold Crown that you stake. There is a limit to how much you can win on this table: 40 Gold Crowns.</p>
       <p>You may play as many rounds of <quote>Cartwheel</quote> as you wish until either you lose all your Gold Crowns or you decide to pick up your winnings (maximum of 40 Gold Crowns).</p>
       <choice idref="sect169">If you have lost all your Gold Crowns, <link-text>turn to 169</link-text>.</choice>
       <choice idref="sect186">If you have winnings to collect, or if you wish to withdraw with what money you have left, leave the building and <link-text>turn to 186</link-text>.</choice>
@@ -3667,7 +3676,7 @@ To do:
 
      <data>
       <p>Much of your time at Hammerdal is taken up by training with the Sommerswerd. Day by day your skill with the wondrous blade improves, and as you progress, so you learn more of its marvellous properties.</p>
-      <p>When you use the sword in combat it will add 8 points to your <typ class="attribute">COMBAT SKILL</typ> total (10 points if you possess the Kai Discipline of Weaponskill with any sword). It has the ability to absorb any magic used against you and doubles the total of all <typ class="attribute">ENDURANCE</typ> points lost by undead enemies (e.g. Helghast) during combat.<a id="sect242-1" idref="sect242-1-foot" class="footnote" /></p>
+      <p>When you use the sword in combat it will add 8 points to your <typ class="attribute">COMBAT SKILL</typ> total (10 points if you possess the Kai Discipline of Weaponskill with any sword). It has the ability to absorb any magic used against you and doubles the total of all <typ class="attribute">ENDURANCE</typ> points lost by undead enemies (e.g. Helghast) during combat.<footref id="sect242-1" idref="sect242-1-foot"/></p>
       <p>You also come to realise that it is the only weapon in all of Magnamund that can kill a Darklord, and for this reason above all others they are determined to destroy you before you reach Durenor.</p>
       <choice idref="sect152"><link-text>Turn to 152</link-text>.</choice>
      </data>
@@ -3894,7 +3903,7 @@ To do:
       <p>The road follows a course along a high, grassy ridge for many miles before turning northwards to the coast. You pass a village where the houses curve in a circle around a large pond of stagnant water. As you ride through, a gaggle of Szall children come running towards you, shouting and throwing stones.</p>
       <p>You descend into the deep valley beyond and gradually the moor gives way to richer land that has been cleared and ploughed. The hillside opposite is heavily wooded. You are not far from the coast and you can see the tall cliffs with their multicoloured bands of rock jutting out into the ocean.</p>
       <p>Then just as you are passing through a small copse, you hear desperate cries for help off to your right.</p>
-      <choice idref="sect95">If you wish to aid the person in trouble, <link-text>turn to 95</link-text>.</choice>
+      <choice idref="sect95">If you wish to aid the <!--ERRTAG-RE-281741-->people<!--/ERRTAG-RE-281741--> in trouble, <link-text>turn to 95</link-text>.</choice>
       <choice idref="sect198">If you wish to ignore their desperate pleas, continue riding along the road by <link-text>turning to 198</link-text>.</choice>
      </data>
     </section>
@@ -3919,9 +3928,9 @@ To do:
        <li>Quarterstaff</li>
        <li>Enough Food for 1 Meal</li>
        <li>6 Gold Crowns</li>
-       <li>Potion of Orange Liquid<a id="sect262-1" idref="sect262-1-foot" class="footnote" /></li>
+       <li>Potion of Orange Liquid<footref id="sect262-1" idref="sect262-1-foot"/></li>
       </ul>
-      <p>If you wish to take any of these items,<a id="sect262-2" idref="sect262-2-foot" class="footnote" /> mark them on your <a idref="action">Action Chart</a>.</p>
+      <p>If you wish to take any of these items,<footref id="sect262-2" idref="sect262-2-foot"/> mark them on your <a idref="action">Action Chart</a>.</p>
       <p>As you are leaving, you collide with another guard and you both tumble down the stairs, but before he can gather his senses, you have sprinted off into the night.</p>
       <choice idref="sect65"><link-text>Turn to 65</link-text>.</choice>
      </data>
@@ -3969,7 +3978,7 @@ To do:
       <p>As you enter, a bell rings and a small man in a padded leather jerkin bids you welcome. He is busy polishing a rusty suit of armour with a wire brush. The price of his weapons are displayed on a wooden board above the counter:</p>
       <ul>
        <li>Swords 4 Gold Crowns each</li>
-       <li>Daggers 2 Gold Crown each</li>
+       <li>Daggers 2 Gold Crowns each</li>
        <li>Broadswords 7 Gold Crowns each</li>
        <li>Short Swords 3 Gold Crowns each</li>
        <li>Warhammers 6 Gold Crowns each</li>
@@ -3990,7 +3999,7 @@ To do:
      <data>
       <p>As you surface, you see that battle now rages all around you and the sea is choked with the bodies of the dead and drowning. You manage to swim thirty yards and scramble over the rail of a Durenese warship. Here, a bitter struggle is being waged against a long death-hulk that has grappled alongside. The zombies have clambered aboard and are slaughtering the terror-struck Durenese soldiers.</p>
       <choice idref="sect128">If you wish to draw the Sommerswerd and charge into battle, <link-text>turn to 128</link-text>.</choice>
-      <choice idref="sect309">If you wish to jump on to the long death-hulk, <link-text>turn to 309</link-text>.</choice>
+      <choice idref="sect309">If you wish to jump <!--ERRTAG-RE-288964-->onto<!--/ERRTAG-RE-288964--> the long death-hulk, <link-text>turn to 309</link-text>.</choice>
      </data>
     </section>
 
@@ -4203,7 +4212,7 @@ To do:
      </footnotes>
 
      <data>
-      <p>Cautiously, the soldiers surround you and take your Weapons and Backpack.<a id="sect284-1" idref="sect284-1-foot" class="footnote" /> The knight steps forward and raises the visor of his helm.</p>
+      <p>Cautiously, the soldiers surround you and take your Weapons and Backpack.<footref id="sect284-1" idref="sect284-1-foot"/> The knight steps forward and raises the visor of his helm.</p>
       <p><quote>Who are you? What is your purpose in Tarnalin?</quote> he demands in a gruff voice.</p>
       <illustration class="float">
        <meta>
@@ -4262,7 +4271,7 @@ To do:
      <meta><title>289</title></meta>
 
      <data>
-      <p>You are welcomed by an old woman dressed from head to toe in white. She smiles and offers you a delicious cup of jala. Your experience of Ragadorn so far makes you suspicious of the dark liquid and you politely refuse her offer. As you push the steaming mug away, she notices the seal on your finger.</p>
+      <p>You are welcomed by an old woman dressed from head to toe in white. She smiles and offers you a delicious cup of jala. Your experience of Ragadorn so far makes you suspicious of the dark liquid and you politely refuse her offer. As you push the steaming mug away, she notices the <!--ERRTAG-RE-306625-->Seal<!--/ERRTAG-RE-306625--> on your finger.</p>
       <p><quote>What a magnificent ring! Is it for sale?</quote> she asks, her eyes lighting up with excitement. You tell her firmly that it is not but she will not accept your refusal. She offers you any choice of the hundreds of potions that fill the glass cabinets behind her counter. As you turn to leave, she offers you 40 Gold Crowns.</p>
       <choice idref="sect165">If you wish to accept her offer, <link-text>turn to 165</link-text>.</choice>
       <choice idref="sect186">If you wish to leave the shop, <link-text>turn to 186</link-text>.</choice>
@@ -4378,7 +4387,7 @@ To do:
       <p>For six hours you run without rest. The Helghast are on the highway and you are forced to make your way through the steep and wooded foothills to avoid the risk of capture. Many times you feel that you just cannot go on, that the pain and the fatigue are too much to bear. But each time you falter, you are spurred on by Rhygar. You marvel at his endurance, for he is not a young man and he is clothed in the heavy armour of a Sommlending knight.</p>
       <p>By nightfall, you have reached the entrance to Tarnalin, the western tunnel through the Hammerdal Mountains. The three tunnels of Durenor were excavated during the age of the Black Moon, and each tunnel is over forty miles long and passes through the huge circle of the Hammerdal range to the capital. The tunnels provide the only access to the city.</p>
       <p>Rhygar sits beside you and takes some bread and meat from his pack. <quote>Eat this, Lone Wolf. You must sustain your strength for the journey to Hammerdal, for from here you must venture alone through the Tarnalin. I shall remain here and hold the enemy back for as long as I have the strength to fight. Do not argue<ch.emdash/>that your mission should succeed is the only thing that matters.</quote></p>
-      <p>If Rhygar is to hold off the Helghast, he will need a magic weapon as his own sword is of no use against the creatures.<a id="sect299-1" idref="sect299-1-foot" class="footnote" /></p>
+      <p>If Rhygar is to hold off the Helghast, he will need a magic weapon as his own sword is of no use against the creatures.<footref id="sect299-1" idref="sect299-1-foot"/></p>
       <choice idref="sect118">If you wish to give him your Magic Spear, so that he can defend the tunnel entrance, or if you do not possess a Magic Spear, <link-text>turn to 118</link-text>.</choice>
       <choice idref="sect102">If you possess a Magic Spear but do not wish to give it to Rhygar, <link-text>turn to 102</link-text>.</choice>
      </data>
@@ -4428,7 +4437,7 @@ To do:
      </footnotes>
 
      <data>
-      <p>Stepping over the body, you climb the watchtower stairs and<a idref="sect302-1-foot" id="sect302-1" class="footnote" /> quickly search the living quarters. You find:</p>
+      <p>Stepping over the body, you climb the watchtower stairs and<footref idref="sect302-1-foot" id="sect302-1"/> quickly search the living quarters. You find:</p>
       <ul>
        <li>Mace</li>
        <li>Broadsword</li>
@@ -4448,7 +4457,7 @@ To do:
      <meta><title>303</title></meta>
 
      <data>
-      <p>Piles of rotting garbage fitter this stretch of the waterfront, giving off such an evil smell that you are forced to cover your mouth and nose with your cloak. Ahead to your left, you notice the glow of torchlight streaming from an open door. Above the door is a sign.</p>
+      <p>Piles of rotting garbage litter this stretch of the waterfront, giving off such an evil smell that you are forced to cover your mouth and nose with your cloak. Ahead to your left, you notice the glow of torchlight streaming from an open door. Above the door is a sign.</p>
       <illustration class="inline">
        <meta>
         <creator>Gary Chalk</creator>
@@ -4477,7 +4486,7 @@ To do:
      <meta><title>305</title></meta>
 
      <data>
-      <p>There is a shocked silence as you scoop up the 5 Gold Crowns from the table and turn to leave, but as you reach the tavern door, an ugly thug draws his sword and blocks your exit. Just as you are wondering what to do, there is a loud thud, and the man keels over on to the floor. Behind him, to your surprise stands the serving girl with a large wooden club in her hand. You thank her politely and race out of the door into the darkened street beyond.</p>
+      <p>There is a shocked silence as you scoop up the 5 Gold Crowns from the table and turn to leave, but as you reach the tavern door, an ugly thug draws his sword and blocks your exit. Just as you are wondering what to do, there is a loud thud, and the man keels over <!--ERRTAG-RE-323352-->onto<!--/ERRTAG-RE-323352--> the floor. Behind him, to your surprise stands the serving girl with a large wooden club in her hand. You thank her politely and race out of the door into the darkened street beyond.</p>
       <p>After running for ten minutes in the dark, you spot a large stable and coach station through the gloom ahead. With the shouts of angry sailors still ringing in your ears, you quickly enter the building and spend the night safely hidden in the hay-loft.</p>
       <choice idref="sect32"><link-text>Turn to 32</link-text>.</choice>
      </data>
@@ -4509,7 +4518,7 @@ To do:
      <meta><title>308</title></meta>
 
      <data>
-      <p>A sailor called Sprogg sits beside you and explains the rules of the game <quote>Portholes</quote>. First he shows you two diamond-shaped dice made of red glass. Each dice has ten sides and they are numbered 0<ch.endash/>9. Each player rolls both dice and adds the numbers together (0 = zero). If anyone throws two 0<ch.apos/>s, they shout <quote>portholes</quote> and automatically win.</p>
+      <p>A sailor called Sprogg sits beside you and explains the rules of the game <quote>Portholes</quote>. First he shows you two diamond-shaped dice made of red glass. <!--ERRTAG-RE-325241-->Each die<!--/ERRTAG-RE-325241--> has ten sides and they are numbered 0<ch.endash/>9. Each player rolls both dice and adds the numbers together (0 = zero). If anyone throws two 0<ch.apos/>s, they shout <quote>portholes</quote> and automatically win.</p>
       <p>Each player stakes 3 Gold Crowns per throw. There are two other players in the game and they all place their stake money into a hat before the dice are rolled.</p>
       <p>Pick two numbers from the <a idref="random">Random Number Table</a> for each of the other two players, and note these scores down. Now pick two numbers from the <a idref="random">Random Number Table</a> for yourself. If your total is higher than the other players, you win 6 Gold Crowns. If either of the other players beat your score, you lose 3 Gold Crowns. You may leave the game at any time, but you must stop playing if you lose all your Crowns (bad luck!).</p>
       <choice idref="sect197">When you finally decide to leave, you may return to your cabin by <link-text>turning to 197</link-text>.</choice>
@@ -4548,7 +4557,7 @@ To do:
 
      <data>
       <p>You come to rest face downwards in a tangle of thick bracken. The ringing of steel and the horrible cries of the Helghast echo through the trees around you. You are stunned and cannot move until a hand grabs your arm and pulls you upright. It is Rhygar. His face is bloodied and his armour is battered and charred.</p>
-      <p><quote>We must flee these demons, Lone Wolf.<a id="sect311-1" idref="sect311-1-foot" class="footnote" /> Strength and steel will not avail us here.</quote></p>
+      <p><quote>We must flee these demons, Lone Wolf.<footref id="sect311-1" idref="sect311-1-foot"/> Strength and steel will not avail us here.</quote></p>
       <p>You glimpse the silhouette of six Helghast on the forest road above. Their minds bent on the slaughter of Rhygar<ch.apos/>s men, they fail to see you both slip away under cover of the wooded hillside.</p>
       <choice idref="sect299"><link-text>Turn to 299</link-text>.</choice>
      </data>
@@ -4560,7 +4569,7 @@ To do:
      <data>
       <p>Although you awake to a cold and rain-swept dawn, the branches of the tree and your Kai cloak have kept you warm and dry during the night. Looking along the coast road, in the distance you can see a wagon heading towards you.</p>
       <choice idref="sect117">If you wish to get down from the tree and flag it down, <link-text>turn to 117</link-text>.</choice>
-      <choice idref="sect89">If you wish to try to jump on to it as it passes beneath your branch, <link-text>turn to 89</link-text>.</choice>
+      <choice idref="sect89">If you wish to try to jump <!--ERRTAG-RE-330010-->onto<!--/ERRTAG-RE-330010--> it as it passes beneath your branch, <link-text>turn to 89</link-text>.</choice>
      </data>
     </section>
 
@@ -4574,7 +4583,7 @@ To do:
      </footnotes>
 
      <data>
-      <p>The gruesome death-cries of the Helghast finally fade and you risk stopping for a few seconds to catch your breath. You wince as you discover that the creature<ch.apos/>s fingers have burnt into your neck. The wounds are very sore and painful and you must lose 4 <typ class="attribute">ENDURANCE</typ> points. Tearing the edge of your tunic, you make a bandage before continuing on your journey through the Tarnalin tunnel.<a id="sect313-1" idref="sect313-1-foot" class="footnote" /></p>
+      <p>The gruesome death-cries of the Helghast finally fade and you risk stopping for a few seconds to catch your breath. You wince as you discover that the creature<ch.apos/>s fingers have burnt into your neck. The wounds are very sore and painful and you must lose 4 <typ class="attribute">ENDURANCE</typ> points. Tearing the edge of your tunic, you make a bandage before continuing on your journey through the Tarnalin tunnel.<footref id="sect313-1" idref="sect313-1-foot"/></p>
       <choice idref="sect349"><link-text>Turn to 349</link-text>.</choice>
      </data>
     </section>
@@ -4605,7 +4614,7 @@ To do:
       <p><quote>With the compliments of one of your friends,</quote> he says, and leaves before you can ask which one. The food smells most appetizing. You have not eaten today and now you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect290">If you have the Kai Discipline of Hunting, <link-text>turn to 290</link-text>.</choice>
       <choice idref="sect36">If you wish to eat the hot food put before you, <link-text>turn to 36</link-text>.</choice>
-      <choice idref="sect178">If you do not want to eat this food, <link-text>turn to 178</link-text>.<a id="sect314-1" idref="sect314-1-foot" class="footnote" /></choice>
+      <choice idref="sect178">If you do not want to eat this food, <link-text>turn to 178</link-text>.<footref id="sect314-1" idref="sect314-1-foot"/></choice>
      </data>
     </section>
 
@@ -4758,7 +4767,7 @@ To do:
 
      <data>
       <p>You are slowly walking back along the cobbled street, trying to think of the best course of action, when a young boy approaches you. <quote>I can get you into the harbour, mister,</quote> he says, <quote>but it<ch.apos/>ll cost you.</quote></p>
-      <p>He produces an envelope containing a sheaf of official-looking papers. <quote>These<ch.apos/>ll get you a red pass at the port watchtower. All yours for only 6 Gold Crowns.</quote><a id="sect327-1" idref="sect327-1-foot" class="footnote" /></p>
+      <p>He produces an envelope containing a sheaf of official-looking papers. <quote>These<ch.apos/>ll get you a red pass at the port watchtower. All yours for only 6 Gold Crowns.</quote><footref id="sect327-1" idref="sect327-1-foot"/></p>
       <p>If you wish to buy the documents, pay the boy 6 Gold Crowns. If you refuse them, he will soon lose interest in you and will disappear. When you have made your decision, you return to the port watchtower.</p>
       <choice idref="sect318">If you wish to enter, <link-text>turn to 318</link-text>.</choice>
       <choice idref="sect84">If you would rather walk back along the tree-lined avenue to the city hall and enquire how you can reach the consulate of Sommerlund, <link-text>turn to 84</link-text>.</choice>
@@ -4776,7 +4785,7 @@ To do:
 
      <data>
       <p>Two zombies try to block your passage but you cleave them in half with one sweep of the Sommerswerd. You are at the foot of the tower and you can now see a hunchbacked man in crimson robes above you. He wears a tall, curved tokmor, a magician<ch.apos/>s head-dress. It bears the emblem of a serpent. In his right hand is a black staff.</p>
-      <choice idref="sect113">If you possess a Crystal Star Pendant, <link-text>turn to 113</link-text>.<a id="sect328-1" idref="sect328-1-foot" class="footnote" /></choice>
+      <choice idref="sect113">If you possess a Crystal Star Pendant, <link-text>turn to 113</link-text>.<footref id="sect328-1" idref="sect328-1-foot"/></choice>
       <choice idref="sect204">If you have the Kai Discipline of Tracking, <link-text>turn to 204</link-text>.</choice>
       <choice idref="sect73">If you wish to climb the tower and attack the hunchback, <link-text>turn to 73</link-text>.</choice>
       <choice idref="sect267">If you wish to escape from this ship by jumping overboard, <link-text>turn to 267</link-text>.</choice>
@@ -4888,7 +4897,7 @@ To do:
      </footnotes>
 
      <data>
-      <p>When you are only fifty yards offshore, you slip into the waves and swim towards land. When you finally reach the beach, you sink your fingers deep into the wet sand and slowly claw your way up the beach to the shelter of some dunes. You are exhausted and very hungry. The only possessions that you have saved are your Gold Crowns, your Backpack and any Special Items that you did not discard in the storm. Any weapons that you possessed before the storm have been lost.<a id="sect337-1" idref="sect337-1-foot" class="footnote" /> Make the necessary adjustment to your <a idref="action">Action Chart</a>. However, a few hundred yards away, you notice clumps of small twisted trees laden with purple fruit.</p>
+      <p>When you are only fifty yards offshore, you slip into the waves and swim towards land. When you finally reach the beach, you sink your fingers deep into the wet sand and slowly claw your way up the beach to the shelter of some dunes. You are exhausted and very hungry. The only possessions that you have saved are your Gold Crowns, your Backpack and any Special Items that you did not discard in the storm. Any weapons that you possessed before the storm have been lost.<footref id="sect337-1" idref="sect337-1-foot"/> Make the necessary adjustment to your <a idref="action">Action Chart</a>. However, a few hundred yards away, you notice clumps of small twisted trees laden with purple fruit.</p>
       <choice idref="sect139">If you have the Kai Discipline of Hunting, <link-text>turn to 139</link-text>.</choice>
       <choice idref="sect228">If you wish to eat this fruit, <link-text>turn to 228</link-text>.</choice>
       <choice idref="sect171">If you do not wish to eat this fruit, lose 3 <typ class="attribute">ENDURANCE</typ> points and <link-text>turn to 171</link-text>.</choice>
@@ -4907,7 +4916,7 @@ To do:
      <data>
       <p>You grasp the haft of the spear and level it at the approaching Helghast. It shrieks a desperate cry for it knows that it cannot avoid being impaled on the sharp tip of your spear. The shock of impact knocks you backwards and you crash to the highway below, losing 2 <typ class="attribute">ENDURANCE</typ> points. The Helghast hits the ground barely seconds later, driving the spear through its black heart, and dying instantly.</p>
       <choice idref="sect269">If you wish to remove the spear, <link-text>turn to 269</link-text>.</choice>
-      <choice idref="sect349">If you would rather leave the spear where it is and run away from here as quickly as possible, <link-text>turn to 349</link-text>.<a id="sect338-1" idref="sect338-1-foot" class="footnote" /></choice>
+      <choice idref="sect349">If you would rather leave the spear where it is and run away from here as quickly as possible, <link-text>turn to 349</link-text>.<footref id="sect338-1" idref="sect338-1-foot"/></choice>
      </data>
     </section>
 
@@ -4999,7 +5008,7 @@ To do:
 
      <data>
       <p>The driver nods and hands back the ticket. The inn is warm but poorly furnished. You must eat a Meal here which will cost you 1 Gold Crown unless you have a Meal in your Backpack.</p>
-      <p>The Kai Discipline of Hunting cannot be used on your journey through the Wildlands, as it is a barren wasteland inhabited only by creatures called Szalls, a weak and cowardly breed of Giak.<a id="sect346-1" idref="sect346-1-foot" class="footnote" /></p>
+      <p>The Kai Discipline of Hunting cannot be used on your journey through the Wildlands, as it is a barren wasteland inhabited only by creatures called Szalls, a weak and cowardly breed of Giak.<footref id="sect346-1" idref="sect346-1-foot"/></p>
       <choice idref="sect280">If you can afford the 1 Gold Crown for the room, <link-text>turn to 280</link-text>.</choice>
       <choice idref="sect205">If you have no money, <link-text>turn to 205</link-text>.</choice>
      </data>
@@ -5041,7 +5050,7 @@ To do:
      <meta><title>350</title></meta>
 
      <data>
-      <p>Holmgard has suffered much since your departure. Many of the shops and houses you remember passing on your way to the quay, are little more now than heaps of ashes. The Darklords<ch.apos/> army with their evil engines of war surround the walls, and the flaming arcs of fireballs shooting through the air, continually light the night sky as they rain down on the streets below. The people fight the fire as best they can, but they are hungry and exhausted and close to surrender. At first, as it enters the harbour, the fleet is mistaken for the enemy and cries of despair can be heard all along the quay. But as the first of the soldiers set foot in the city and unfurl the royal arms of Durenor, the news of your return spreads quickly. The cries of despair have changed to a chorus of cheers: <quote>The Kai Lord has returned.</quote></p>
+      <p>Holmgard has suffered much since your departure. Many of the shops and houses you remember passing on your way to the quay, are little more now than heaps of ashes. The Darklords<ch.apos/> army with their evil engines of war surround the walls, and the flaming arcs of fireballs shooting through the <!--ERRTAG-RE-364171-->air continually<!--/ERRTAG-RE-364171--> light the night sky as they rain down on the streets below. The people fight the fire as best they can, but they are hungry and exhausted and close to surrender. At first, as it enters the harbour, the fleet is mistaken for the enemy and cries of despair can be heard all along the quay. But as the first of the soldiers set foot in the city and unfurl the royal arms of Durenor, the news of your return spreads quickly. The cries of despair have changed to a chorus of cheers: <quote>The Kai Lord has returned.</quote></p>
       <p>You are standing at the top of the great watchtower, high above the main gate of the city, when the first light of dawn creeps slowly over the horizon. Thousand upon thousand of the black-clad enemy are massed around the city wall, huddled like beetles in the trenches that cover the plain. In the midst of this horde, a great red tent has been erected bearing the symbol of a broken skull. It is the mark of Zagarna, Lord of Kaag, a Darklord of Helgedad. His great ambition is the destruction of Holmgard; his fiercest desire to lead his army to victory over the House of Ulnar and claim Sommerlund for his own.</p>
       <p>But victory is not to be his this day. Raising the Sommerswerd high above your head, a shaft of dawn sunlight catches upon the tip of the golden sword and a brilliant flash of blinding white flame runs the entire length of the blade. The power of the Sommerswerd electrifies you. Your senses reel and now your body reacts instinctively. You lower the Sommerswerd and point the blade towards the tent of Lord Zagarna. There is a mighty roar as the power of the sun-sword is unleashed in a searing white beam. The tent explodes and a brilliant fireball of white flame mushrooms skyward. A long and terrible cry rends the air. It is Lord Zagarna. The leader of the evil army is no more.</p>
       <illustration class="float">
@@ -5054,7 +5063,7 @@ To do:
       </illustration>
       <p>Gripped with fear and panic, the vast black army rise up and run in chaos from the city wall. The impossible has happened, their invincible master is slain. Again the Sommerswerd has returned to defeat them. The army and the allies of Durenor ride out of the city gates in pursuit of the panic-stricken enemy as they run blindly towards the Durncrag Mountains. The victory is yours. Holmgard is saved and the murder of the Kai has finally been avenged.</p>
       <p>But for you, Lone Wolf, a life of high adventure has only just begun. A new challenge awaits you and the Sommerswerd in Book Three of the Lone Wolf series:</p>
-      <p><cite><a href="&link.03tcok;">The Caverns of Kalte</a></cite></p>
+      <p><cite><bookref series="lw" book="03tcok">The Caverns of Kalte</bookref></cite></p>
      </data>
     </section>
 
@@ -5120,6 +5129,64 @@ To do:
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif" />
     </illustration>
+
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance class="text">
+      <p>
+       <line><typ class="attribute">COMBAT SKILL</typ>: <ch.blankline/></line>
+       <line><typ class="attribute">ENDURANCE</typ>: <ch.blankline/></line>
+      </p>
+      <p>Kai Disciplines:</p>
+       <ol>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+       </ol>
+      <p>Bonus Disciplines:</p>
+       <ol>
+        <li><ch.blankline/>: 6th Discipline if you've completed one Lone Wolf Adventure successfully</li>
+       </ol>
+      <p>Weapons:</p>
+       <ol>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+       </ol>
+      <p>Belt Pouch: <ch.blankline/></p>
+      <p>Meals: <ch.blankline/></p>
+      <p>Backpack Items:</p>
+       <ol>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+       </ol>
+      <p>Special Items:</p>
+       <ol>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+       </ol>
+     </instance>
+    </illustration>
+
    </data>
   </section>
 
@@ -5171,6 +5238,209 @@ To do:
      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif" />
      <instance src="crtpos.tex" width="380" height="500" class="tex" />
     </illustration>
+
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance class="text">
+      <table summary="This table provides the endurance losses sustained by the hero and enemy as a result of combat.">
+       <caption>Combat Results with combined hero and enemy endurance losses</caption>
+
+       <colgroup span="1" />
+       <colgroup span="13" />
+
+       <tfoot>
+        <tr>
+         <td colspan="14">Combat results are given enemy's endurance loss first followed by the hero's endurance loss. For example, "12/0" means that the enemy loses 12 endurance points while the hero loses 0 endurance points. A combat result of "k" means that the combatant is killed. For example, "0/k" means that the enemy loses 0 endurance points while the hero is killed.</td>
+        </tr>
+       </tfoot>
+
+       <tbody>
+        <tr>
+         <th rowspan="2" scope="col">Random Number</th>
+         <th colspan="13" scope="colgroup">Combat Ratio</th>
+        </tr>
+
+        <tr>
+         <th scope="col" axis="combat_ratio">-11 or lower</th>
+         <th scope="col" axis="combat_ratio">-10/ -9</th>
+         <th scope="col" axis="combat_ratio">-8/ -7</th>
+         <th scope="col" axis="combat_ratio">-6/ -5</th>
+         <th scope="col" axis="combat_ratio">-4/ -3</th>
+         <th scope="col" axis="combat_ratio">-2/ -1</th>
+         <th scope="col" axis="combat_ratio">0</th>
+         <th scope="col" axis="combat_ratio">1/ 2</th>
+         <th scope="col" axis="combat_ratio">3/ 4</th>
+         <th scope="col" axis="combat_ratio">5/ 6</th>
+         <th scope="col" axis="combat_ratio">7/ 8</th>
+         <th scope="col" axis="combat_ratio">9/ 10</th>
+         <th scope="col" axis="combat_ratio">11 or higher</th>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">1</th>
+         <td>0/k</td>
+         <td>0/k</td>
+         <td>0/8</td>
+         <td>0/6</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/4</td>
+         <td>7/4</td>
+         <td>8/3</td>
+         <td>9/3</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">2</th>
+         <td>0/k</td>
+         <td>0/8</td>
+         <td>0/7</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/3</td>
+         <td>9/3</td>
+         <td>10/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">3</th>
+         <td>0/8</td>
+         <td>0/7</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/3</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">4</th>
+         <td>0/8</td>
+         <td>1/7</td>
+         <td>2/6</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+         <td>12/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">5</th>
+         <td>1/7</td>
+         <td>2/6</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+         <td>12/2</td>
+         <td>14/1</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">6</th>
+         <td>2/6</td>
+         <td>3/6</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/1</td>
+         <td>12/1</td>
+         <td>14/1</td>
+         <td>16/1</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">7</th>
+         <td>3/5</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/1</td>
+         <td>10/1</td>
+         <td>11/1</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">8</th>
+         <td>4/4</td>
+         <td>8/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/1</td>
+         <td>9/1</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">9</th>
+         <td>5/3</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/0</td>
+         <td>9/0</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">0</th>
+         <td>6/0</td>
+         <td>7/0</td>
+         <td>8/0</td>
+         <td>9/0</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+        </tr>
+       </tbody>
+      </table>
+     </instance>
+    </illustration>
    </data>
   </section>
 
@@ -5184,6 +5454,130 @@ To do:
       <creator>Jonathan Blake</creator>
      </meta>
      <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif" />
+     <instance class="text">
+      <table>
+       <tr>
+        <td>7</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1</td>
+        <td>5</td>
+        <td>1</td>
+        <td>5</td>
+        <td>7</td>
+        <td>3</td>
+        <td>6</td>
+       </tr>
+       <tr>
+        <td>3</td>
+        <td>6</td>
+        <td>4</td>
+        <td>3</td>
+        <td>9</td>
+        <td>3</td>
+        <td>9</td>
+        <td>2</td>
+        <td>8</td>
+        <td>1</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>1</td>
+        <td>4</td>
+        <td>2</td>
+        <td>6</td>
+        <td>1</td>
+        <td>0</td>
+        <td>7</td>
+        <td>3</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>7</td>
+        <td>2</td>
+        <td>5</td>
+        <td>0</td>
+        <td>2</td>
+        <td>8</td>
+        <td>9</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>6</td>
+        <td>2</td>
+        <td>4</td>
+        <td>8</td>
+        <td>1</td>
+        <td>5</td>
+        <td>9</td>
+        <td>6</td>
+        <td>4</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>0</td>
+        <td>1</td>
+        <td>7</td>
+        <td>9</td>
+        <td>0</td>
+        <td>3</td>
+        <td>1</td>
+        <td>3</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>7</td>
+        <td>4</td>
+        <td>9</td>
+        <td>7</td>
+        <td>8</td>
+        <td>5</td>
+        <td>8</td>
+        <td>2</td>
+        <td>5</td>
+        <td>1</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>5</td>
+        <td>4</td>
+        <td>6</td>
+        <td>7</td>
+        <td>7</td>
+        <td>0</td>
+        <td>4</td>
+        <td>8</td>
+        <td>6</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>6</td>
+        <td>0</td>
+        <td>2</td>
+        <td>4</td>
+        <td>4</td>
+        <td>6</td>
+        <td>8</td>
+        <td>3</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>8</td>
+        <td>5</td>
+        <td>6</td>
+        <td>3</td>
+        <td>8</td>
+        <td>3</td>
+        <td>7</td>
+        <td>0</td>
+        <td>9</td>
+       </tr>
+      </table>
+     </instance>
     </illustration>
    </data>
   </section>
@@ -5206,18 +5600,20 @@ To do:
 
      <data>
       <p>(<a idref="title">Title Page</a>) Replaced <quote>seastorms</quote> with <quote>sea-storms</quote>.</p>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced all occurrences of  <quote>ie</quote> with <quote>i.e.</quote>. Removed <quote> that you will find in the front of this book. For further adventuring you can copy out the chart yourself or get it photocopied.</quote> Split the last paragraph into two starting with <quote>Through your experiences</quote>.</p>
+      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced all occurrences of  <quote>ie</quote> with <quote>i.e.</quote>. Removed <quote> that you will find in the front of this book. For further adventuring you can copy out the chart yourself or get it photocopied.</quote> Split the last paragraph into two starting with <quote>Through your experiences</quote>.<!--ERRTAG-RE-10688-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-10688-ITEM--></p>
       <p>(<a idref="discplnz">Kai Disciplines</a>) Replaced <quote>Kai Discipline section</quote> with <quote>Kai Disciplines section</quote>. Capitalized all occurrences of <quote>discipline</quote>.</p>
-      <p>(<a idref="equipmnt">Equipment</a>) Removed the <quote>1=, 2=,<ch.ellips/></quote> in the <quote>How to carry your equipment</quote> section. These were obviously carried over from <a href="&link.01fftd;">Flight from the Dark</a><ch.apos/>s random number equipment assignment, which is now obsolete.</p>
+      <p>(<a idref="equipmnt">Equipment</a>) Removed the <quote>1=, 2=,<ch.ellips/></quote> in the <quote>How to carry your equipment</quote> section. These were obviously carried over from <bookref series="lw" book="01fftd">Flight from the Dark</bookref><ch.apos/>s random number equipment assignment, which is now obsolete.</p>
       <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed <quote> on the inside back cover of the book</quote>. Removed <quote> on the last page of the book</quote>. Replaced <quote>on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>.</p>
       <p>(<a idref="levels">Levels of Kai Training</a>) The Levels of Kai Training section did not originally appear in this book, but has been added for the reader<ch.apos/>s information.</p>
       <p>(<a idref="kaiwisdm">Kai Wisdom</a>) Removed <quote> on the back cover of the book</quote> and replaced <quote>LONE WOLF</quote> with <quote>Lone Wolf</quote>.</p>
       <p>(<a idref="sect4">4</a>) Replaced <quote>Sandsnake</quote> with <quote>sandsnake</quote>.</p>
+<p>(<a idref="sect12">12</a>)<!--ERRTAG-RE-48175-ITEM--> Replaced <quote>agreeing a wager</quote> with <quote>agreeing to a wager</quote>.<!--/ERRTAG-RE-48175-ITEM--></p>
       <p>(<a idref="sect16">16</a>) Replaced <quote>razor sharp</quote> with <quote>razor-sharp</quote>.</p>
       <p>(<a idref="sect23">23</a>) Replaced <quote>torch-lit</quote> with <quote>torchlit</quote>.</p>
       <p>(<a idref="sect24">24</a>) Replaced <quote>Fox He</quote> with <quote>Fox. He</quote>.</p>
       <p>(<a idref="sect27">27</a>) Capitalized <quote>wildlands</quote>.</p>
       <p>(<a idref="sect31">31</a>) Replaced both occurrences of <quote>Lord-Lieutenant</quote> with <quote>Lord-lieutenant</quote>. Replaced <quote>lord-lieutenant</quote> with <quote>Lord-lieutenant</quote>.</p>
+<p>(<a idref="sect34">34</a>)<!--ERRTAG-RE-68919-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-68919-ITEM--></p>
       <p>(<a idref="sect35">35</a>) Moved the Tracking choice into the first position.</p>
       <p>(<a idref="sect38">38</a>) Replaced <quote>rib-cage</quote> with <quote>rib cage</quote>.</p>
       <p>(<a idref="sect40">40</a>) Replaced <quote>Lord-Lieutenant</quote> with <quote>Lord-lieutenant</quote>.</p>
@@ -5225,10 +5621,13 @@ To do:
       <p>(<a idref="sect63">63</a>) Moved the Animal Kinship choice into the first position.</p>
       <p>(<a idref="sect64">64</a>) Replaced <quote>it, their</quote> with <quote>it. Their</quote>. Moved the Sixth Sense choice into the first position.</p>
       <p>(<a idref="sect69">69</a>) Replaced <quote>staffbearer</quote> with <quote>staff-bearer</quote> and <quote>Lord-Lieutenant</quote> with <quote>Lord-lieutenant</quote>.</p>
+<p>(<a idref="sect75">75</a>)<!--ERRTAG-RE-102954-ITEM--> Replaced <quote>Sir, requires</quote> with <quote>Sir requires</quote>.<!--/ERRTAG-RE-102954-ITEM--></p>
+<p>(<a idref="sect78">78</a>)<!--ERRTAG-RE-106008-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-106008-ITEM--></p>
       <p>(<a idref="sect79">79</a>) Replaced both occurrences of <quote>Kai lord</quote> with <quote>Kai Lord</quote>, and <quote>enemies, eg Helghasts, in</quote> with <quote>enemies  (e.g. Helghast) in</quote>.</p>
       <p>(<a idref="sect84">84</a>) Replaced <quote>leatherbound</quote> with <quote>leather-bound</quote>.</p>
       <p>(<a idref="sect88">88</a>) Moved the Camouflage choice into the first position.</p>
       <p>(<a idref="sect95">95</a>) Moved the choice to heal the wounded man into the first position.</p>
+<p>(<a idref="sect100">100</a>)<!--ERRTAG-RE-126686-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-126686-ITEM--></p>
       <p>(<a idref="sect102">102</a>) Moved the Tracking choice into the first position.</p>
       <p>(<a idref="sect113">113</a>) Replaced <quote>magician<ch.apos/>s guild</quote> with <quote>Magicians<ch.apos/> Guild</quote>.</p>
       <p>(<a idref="sect118">118</a>) Moved the Animal Kinship choice into the first position.</p>
@@ -5238,16 +5637,20 @@ To do:
       <p>(<a idref="sect131">131</a>) Replaced <quote>If you have no Weapon, deduct</quote> with <quote>Deduct</quote> since Lone Wolf has had no opportunity to acquire Weapons.</p>
       <p>(<a idref="sect132">132</a>) Moved the paragraph about keeping the Magic Spear before the choices.</p>
       <p>(<a idref="sect140">140</a>) Replaced <quote>well-known</quote> with <quote>well known</quote>.</p>
+<p>(<a idref="sect141">141</a>)<!--ERRTAG-RE-165537-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-165537-ITEM--></p>
+<p>(<a idref="sect146">146</a>)<!--ERRTAG-RE-172186-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-172186-ITEM--></p>
       <p>(<a idref="sect150">150</a>) Replaced <quote>marshbird</quote> with <quote>marsh-bird</quote>.</p>
       <p>(<a idref="sect151">151</a>) Replaced <quote>succesful</quote> with <quote>successful</quote>.</p>
       <p>(<a idref="sect152">152</a>) Replaced <quote>warfleet</quote> with <quote>war fleet</quote>.</p>
       <p>(<a idref="sect164">164</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>. Moved the Sixth Sense choice into the first position.</p>
+<p>(<a idref="sect166">166</a>)<!--ERRTAG-RE-190168-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-190168-ITEM--></p>
       <p>(<a idref="sect169">169</a>) Replaced <quote>gaming house</quote> with <quote>gaming-house</quote>.</p>
       <p>(<a idref="sect176">176</a>) Moved the Sixth Sense choice into the first position. Replaced <quote>despatch</quote> with <quote>dispatch</quote> in the illustration<ch.apos/>s caption. Replaced <quote>Hammerdal mountains</quote> with <quote>Hammerdal Mountains</quote>, and <quote>king<ch.apos/>s</quote> with <quote>King<ch.apos/>s</quote>.</p>
       <p>(<a idref="sect181">181</a>) <quote>Useful</quote> in the last sentence of the first paragraph didn<ch.apos/>t need to be capitalized.</p>
       <p>(<a idref="sect184">184</a>) Replaced <quote>Kai lord</quote> with <quote>Kai Lord</quote>.</p>
       <p>(<a idref="sect192">192</a>) Replaced <quote>sommersaults</quote> with <quote>somersaults</quote>.</p>
       <p>(<a idref="sect193">193</a>) Replaced <quote>ill-omen</quote> with <quote>ill omen</quote>.</p>
+<p>(<a idref="sect194">194</a>)<!--ERRTAG-RE-216376-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-216376-ITEM--></p>
       <p>(<a idref="sect195">195</a>) Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.</p>
       <p>(<a idref="sect202">202</a>) Replaced <quote>Lord-Lieutenant</quote> with <quote>Lord-lieutenant</quote>.</p>
       <p>(<a idref="sect203">203</a>) Replaced <quote>housemice</quote> with <quote>house mice</quote>.</p>
@@ -5255,9 +5658,13 @@ To do:
       <p>(<a idref="sect209">209</a>) Replaced <quote>king<ch.apos/>s</quote> with <quote>King<ch.apos/>s</quote> and <quote>Lord-Lieutenant</quote> with <quote>Lord-lieutenant</quote>.</p>
       <p>(<a idref="sect213">213</a>) Replaced <quote>assasinates</quote> with <quote>assassinates</quote>.</p>
       <p>(<a idref="sect217">217</a>) Replaced <quote>says in a cynical voice.</quote> with <quote>says in a cynical voice:</quote>.</p>
+<p>(<a idref="sect222">222</a>)<!--ERRTAG-RE-242228-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-242228-ITEM--></p>
       <p>(<a idref="sect223">223</a>) There was a superfluous comma between <quote>dreadful</quote> and <quote>significance</quote> in the first paragraph.</p>
-      <p>(<a idref="sect231">231</a>) Moved the Tracking choice into the first position.</p>
+<p>(<a idref="sect228">228</a>)<!--ERRTAG-RE-250221-ITEM--> Replaced <quote>distance to left</quote> with <quote>distance to the left</quote>.<!--/ERRTAG-RE-250221-ITEM--></p>
+      <p>(<a idref="sect231">231</a>) Moved the Tracking choice into the first position.<!--ERRTAG-RE-252737-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-252737-ITEM--></p>
       <p>(<a idref="sect232">232</a>) Moved the Sixth Sense choice into the first position.</p>
+<p>(<a idref="sect234">234</a>)<!--ERRTAG-RE-255863-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-255863-ITEM--></p>
+<p>(<a idref="sect237">237</a>)<!--ERRTAG-RE-258314-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-258314-ITEM--></p>
       <p>(<a idref="sect241">241</a>) <quote>he</quote> has now been capitalized.</p>
       <p>(<a idref="sect242">242</a>) Replaced <quote>(eg</quote> with <quote>(e.g.</quote>.</p>
       <p>(<a idref="sect243">243</a>) Replaced <quote>Kai lord</quote> with <quote>Kai Lord</quote>.</p>
@@ -5265,8 +5672,9 @@ To do:
       <p>(<a idref="sect254">254</a>) Moved the Sixth Sense choice into the first position.</p>
       <p>(<a idref="sect255">255</a>) Replaced <quote>weaponskill</quote> with <quote>Weaponskill</quote>.</p>
       <p>(<a idref="sect258">258</a>) Moved the Sixth Sense choice into the first position.</p>
+<p>(<a idref="sect261">261</a>)<!--ERRTAG-RE-281741-ITEM--> Replaced <quote>person</quote> with <quote>people</quote> to agree in number to the second choice.<!--/ERRTAG-RE-281741-ITEM--></p>
       <p>(<a idref="sect265">265</a>) Replaced <quote>warfleet</quote> with <quote>war fleet</quote>. Moved the Tracking choice into the first position.</p>
-      <p>(<a idref="sect267">267</a>) Replaced <quote>Kai lord</quote> with <quote>Kai Lord</quote>.</p>
+      <p>(<a idref="sect267">267</a>) Replaced <quote>Kai lord</quote> with <quote>Kai Lord</quote>.<!--ERRTAG-RE-288964-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-288964-ITEM--></p>
       <p>(<a idref="sect274">274</a>) Replaced <quote>first floor</quote> with <quote>first-floor</quote>.</p>
       <p>(<a idref="sect276">276</a>) It makes sense to restore your <typ class="attribute">ENDURANCE</typ> points to the total you had before the match regardless of whether you win or lose. We changed this to be more clear. The original read:</p>
       <blockquote>
@@ -5274,7 +5682,7 @@ To do:
       </blockquote>
       <p>(<a idref="sect277">277</a>) Replaced <quote>staffbearer</quote> with <quote>staff-bearer</quote>.</p>
       <p>(<a idref="sect279">279</a>) Replaced <quote>Hammerdal mountains</quote> with <quote>Hammerdal Mountains</quote>.</p>
-      <p>(<a idref="sect289">289</a>) Replaced <quote>Jala</quote> with <quote>jala</quote>.</p>
+      <p>(<a idref="sect289">289</a>) Replaced <quote>Jala</quote> with <quote>jala</quote>.<!--ERRTAG-RE-306625-ITEM--> Replaced <quote>seal</quote> with <quote>Seal</quote>.<!--/ERRTAG-RE-306625-ITEM--></p>
       <p>(<a idref="sect298">298</a>) Replaced <quote>If you do not have a Weapon, you</quote> with <quote>You</quote> since Lone Wolf has had no opportunity to acquire Weapons.</p>
       <p>(<a idref="sect299">Section 299</a>) The original edition of this book reads: <quote>If you wish to give him your Magic Spear, so that he can defend the tunnel entrance, <a idref="sect102">turn to 102</a>. If you do not possess a Magic Spear, or do not wish to give it to Rhygar, <a idref="sect118">turn to 118</a>.</quote> Later editions came out reversing these two choices (i.e. the first choice leads to <a idref="sect118">Section 118</a>, the second choice to <a idref="sect102">Section 102</a>). Both of these versions are very problematic to game flow and inspired a controversy among the members of Project Aon. The version that you see in our text is a mixed scenario intended to most closely match the author<ch.apos/>s surmised original intention, even though it does not appear in either previously published version.</p>
       <p>If you wish to use either of the previously published versions, then refer to the appropriate choice as listed here. Discussion of the different versions follows:</p>
@@ -5283,7 +5691,9 @@ To do:
       <p>Project Aon version: Although never previously published, this scenario allows Lone Wolf to succeed despite giving the Magic Spear to Rhygar.</p>
       <p>Replaced <quote>Hammerdal mountains</quote> with <quote>Hammerdal Mountains</quote>.</p>
       <p>(<a idref="sect300">300</a>) Replaced <quote>Wanlo</quote> with <quote>wanlo</quote>.</p>
-      <p>(<a idref="sect312">312</a>) Replaced <quote>rainswept</quote> with <quote>rain-swept</quote>.</p>
+<p>(<a idref="sect305">305</a>)<!--ERRTAG-RE-323352-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-323352-ITEM--></p>
+<p>(<a idref="sect308">308</a>)<!--ERRTAG-RE-325241-ITEM--> Replaced <quote>Each dice</quote> with <quote>Each die</quote>.<!--/ERRTAG-RE-325241-ITEM--></p>
+      <p>(<a idref="sect312">312</a>) Replaced <quote>rainswept</quote> with <quote>rain-swept</quote>.<!--ERRTAG-RE-330010-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-330010-ITEM--></p>
       <p>(<a idref="sect314">314</a>) Moved the Hunting choice into the first position.</p>
       <p>(<a idref="sect315">315</a>) Moved the Mind Over Matter choice into the first position.</p>
       <p>(<a idref="sect321">321</a>) Replaced <quote>Kai lord</quote> with <quote>Kai Lord</quote>.</p>
@@ -5292,7 +5702,7 @@ To do:
       <p>(<a idref="sect334">334</a>) Moved the Tracking choice into the first position. Replaced <quote>pot-holes</quote> with <quote>potholes</quote></p>
       <p>(<a idref="sect337">337</a>) Moved the Hunting choice into the first position.</p>
 <p>(<a idref="sect345">345</a>)<!--ERRTAG-RE-358734-ITEM--> Replaced <quote>jet black</quote> with <quote>jet-black</quote>.<!--/ERRTAG-RE-358734-ITEM--></p>
-      <p>(<a idref="sect350">350</a>) Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.</p>
+      <p>(<a idref="sect350">350</a>) Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.<!--ERRTAG-RE-364171-ITEM--> Replaced <quote>air, continually</quote> with <quote>air continually</quote>.<!--/ERRTAG-RE-364171-ITEM--></p>
       <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>.</p>
      </data>
     </section>
