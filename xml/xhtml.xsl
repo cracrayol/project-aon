@@ -9,6 +9,9 @@
 $Id$
 
 $Log$
+Revision 1.15  2007/02/02 20:04:28  jonathan.blake
+Correction to handling line elements
+
 Revision 1.14  2006/12/20 00:15:21  jonathan.blake
 Updated to handle the new capabilities in version 0.12.1 of the Gamebook DTD.
 
@@ -978,7 +981,8 @@ Todo:
 </xsl:template>
 
 <xsl:template match="line">
- <xsl:apply-templates /><br />
+ <xsl:apply-templates />
+ <xsl:if test="position( ) != last( )"><br /></xsl:if>
 </xsl:template>
 
 <xsl:template match="br">
