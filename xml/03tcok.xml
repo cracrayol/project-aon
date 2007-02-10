@@ -9,12 +9,15 @@
  %general.inclusions;
 ]>
 
-<gamebook xml:lang="en-UK" version="0.11">
+<gamebook xml:lang="en-UK" version="0.12">
 
 <!--
 
 $Id$
 $Log$
+Revision 1.5  2007/02/10 01:27:25  jonathan.blake
+Fixes from online Errata page
+
 Revision 1.4  2006/12/07 01:38:44  jonathan.blake
 Modernizing
 
@@ -69,22 +72,32 @@ fix illustration captions
  <meta>
   <title>The Caverns of Kalte</title>
   <creator class="short">Joe Dever and Gary Chalk</creator>
-  <creator class="medium">Joe Dever<br />Illustrated by Gary Chalk</creator>
+  <creator class="medium">
+   <line>Joe Dever</line>
+   <line>Illustrated by Gary Chalk</line>
+  </creator>
   <creator class="long">
    &inclusion.joe.dever.bio.lw;
    &inclusion.gary.chalk.bio.lw;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2003</year><month>1</month><day>3</day></date>
+  <date class="publication"><year>2007</year><month>2</month><day>9</day></date>
   <description class="blurb">
    <p>You are Lone Wolf<ch.emdash/>last of the Kai Lords. You have defeated the Darklords and saved your land from their devastation. But Vonotar the Traitor has escaped to the frozen wastes of Kalte and now rules over the Ice Barbarians. Your people demand that Vonotar be made to pay for his treachery. So great is the outcry that the King is obliged to promise that the evil traitor will be brought back to Holmgard, and made to stand trial for his crimes. For you, Lone Wolf, the King<ch.apos/>s promise is the start of a quest that will pit you against a hated foe, deep within the dangerous Caverns of Kalte.</p>
   </description>
   <description class="publication">
    <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
   </description>
-  <rights class="copyrights">Text copyright <ch.copy/> 1984 Joe Dever.<br />Illustrations copyright <ch.copy/> 1984 Gary Chalk.</rights>
+  <rights class="copyrights">
+   <line>Text copyright <ch.copy/> 1984 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1984 Gary Chalk.</line>
+  </rights>
   <rights class="license-notification">
-   <p>Text copyright <ch.copy/> 1984 Joe Dever.<br />Illustrations copyright <ch.copy/> 1984 Gary Chalk.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+   <p>
+    <line>Text copyright <ch.copy/> 1984 Joe Dever.</line>
+    <line>Illustrations copyright <ch.copy/> 1984 Gary Chalk.</line>
+    <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+   </p>
   </rights>
  </meta>
 
@@ -133,19 +146,42 @@ fix illustration captions
         <dt>Transcription</dt>
          <dd>Daniel Nash</dd>
         <dt>Illustration Transcription</dt>
-         <dd>Jonathan Blake<br />Paul Haskell<br/>Simon Osborne</dd>
+         <dd>
+          <line>Jonathan Blake</line>
+          <line>Paul Haskell</line>
+          <line>Simon Osborne</line>
+         </dd>
         <dt>XML</dt>
-         <dd>Jonathan Blake<br />Jeff Dougan<br />Oblio Leitch</dd>
+         <dd>
+          <line>Jonathan Blake</line>
+          <line>Jeff Dougan</line>
+          <line>Oblio Leitch</line>
+         </dd>
         <dt>Alternate Illustrations</dt>
-         <dd>JC Alvarez (action charts)<br />Jonathan Blake (extramatter charts and tables)<br />Michael Hahn (map)</dd>
+         <dd>
+          <line>JC Alvarez (action charts)</line>
+          <line>Jonathan Blake (extramatter charts and tables)</line>
+          <line>Michael Hahn (map)</line>
+         </dd>
         <dt>Proofreading</dt>
-         <dd>Simon Osborne (Sections 1<ch.endash/>70 and 281<ch.endash/>315)<br />Vito Trifilo (sections 71<ch.endash/>105, 141<ch.endash/>280, and 316<ch.endash/>350<br />Tony Wrigley (Sections 106<ch.endash/>140)</dd>
+         <dd>
+          <line>Simon Osborne (Sections 1<ch.endash/>70 and 281<ch.endash/>315)</line>
+          <line>Vito Trifilo (sections 71<ch.endash/>105, 141<ch.endash/>280, and 316<ch.endash/>350</line>
+          <line>Tony Wrigley (Sections 106<ch.endash/>140)</line>
+         </dd>
         <dt>Editing</dt>
-         <dd>Mike Feldman<br />Ingo Kl<ch.ouml/>cker<br />Mark Laird<br />Simon Osborne<br />Thomas Wolmer</dd>
+         <dd>
+          <line>Mike Feldman</line>
+          <line>Ingo Kl<ch.ouml/>cker</line>
+          <line>Mark Laird</line>
+          <line>LeRoy McSwain</line>
+          <line>Simon Osborne</line>
+          <line>Thomas Wolmer</line>
+         </dd>
         <dt>Coordination</dt>
          <dd>Jonathan Blake</dd>
         <dt>Special Thanks</dt>
-         <dd>James Marshall<br />Peter Smyth</dd>
+         <dd>James Marshall, Peter Smyth</dd>
        </dl>
       </data>
      </section>
@@ -182,7 +218,7 @@ fix illustration captions
 
     <data>
      <p>You keep a record of your adventure on the <a idref="action">Action Chart</a>.</p>
-     <p>During your training as a Kai Lord you have developed fighting prowess<ch.emdash/><typ class="attribute">COMBAT SKILL</typ> and physical stamina<ch.emdash/><typ class="attribute">ENDURANCE</typ>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it on to the <a idref="random">Random Number Table</a>. If you pick 0 it counts as zero.</p>
+     <p>During your training as a Kai Lord you have developed fighting prowess<ch.emdash/><typ class="attribute">COMBAT SKILL</typ> and physical stamina<ch.emdash/><typ class="attribute">ENDURANCE</typ>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it <!--ERRTAG-RE-10410-->onto<!--/ERRTAG-RE-10410--> the <a idref="random">Random Number Table</a>. If you pick 0 it counts as zero.</p>
      <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 10 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a>. (i.e. if your pencil fell on 4 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> Of 14.) When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore very desirable.</p>
      <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 20 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a>. (i.e. if your pencil fell on the number 6 on the <a idref="random">Random Number Table</a> you would have 26 <typ class="attribute">ENDURANCE</typ> points.)</p>
      <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never go above the number with which you start your adventure.</p>
@@ -313,7 +349,7 @@ fix illustration captions
         </data>
        </section>
 
-       <p>If you successfully complete the mission as set in Book 3 of Lone Wolf, you may add a further Kai Discipline of your choice to your <a idref="action">Action Chart</a> in <a href="&link.04tcod;">Book 4</a>. This additional skill, together with your six or seven other skills and any Special Items that you have picked up in Books <a href="&link.01fftd;">1</a>, <a href="&link.02fotw;">2</a> and 3, may then be used in the next adventure of the Lone Wolf series which is called <a href="&link.04tcod;"><cite>The Chasm of Doom</cite></a>.</p>
+       <p>If you successfully complete the mission as set in Book 3 of Lone Wolf, you may add a further Kai Discipline of your choice to your <a idref="action">Action Chart</a> in <bookref series="lw" book="04tcod">Book 4</bookref>. This additional skill, together with your six or seven other skills and any Special Items that you have picked up in Books <bookref series="lw" book="01fftd">1</bookref>, <bookref series="lw" book="02fotw">2</bookref> and <bookref series="lw" book="03tcok">3</bookref>, may then be used in the next adventure of the Lone Wolf series which is called <bookref series="lw" book="04tcod"><cite>The Chasm of Doom</cite></bookref>.</p>
       </data>
      </section>
 
@@ -540,9 +576,9 @@ fix illustration captions
 
 
       <data>
-       <p>Even before you accepted the task of bringing Vonotar to justice, preparations were being made for your voyage to Kalte. The captain of the Sommlending warship Cardonal, having returned from a long Kaltersee patrol, was ordered to await your arrival at Anskavern.<a id="sect1-1" idref="sect1-1-foot" class="footnote" /> During the night, food, ice equipment and Kanu-dog teams were taken on board. The mission was highly secret<ch.emdash/>only senior members of the crew were told the true nature of the voyage that lay ahead.</p>
+       <p>Even before you accepted the task of bringing Vonotar to justice, preparations were being made for your voyage to Kalte. The captain of the Sommlending warship <cite>Cardonal</cite>, having returned from a long Kaltersee patrol, was ordered to await your arrival at Anskavern.<footref id="sect1-1" idref="sect1-1-foot"/> During the night, food, ice equipment and Kanu-dog teams were taken on board. The mission was highly secret<ch.emdash/>only senior members of the crew were told the true nature of the voyage that lay ahead.</p>
        <p>The plan is to set you ashore at Halle Bluff, drop anchor and await your return. An <ch.eacute/>lite team of trusted guides will lead you from the bluff to Ikaya. Once inside the ice fortress, you are to hunt down and capture Vonotar, and then return with your guides to the ship. Your mission must be accomplished within thirty days at most, for winter is closing in and no ship can withstand the grip of the Kalte pack-ice. If you do not return in time, the captain will be forced to set sail without you.</p>
-       <p>For six days, the Cardonal sails across the stormy Kaltersee without running into a storm; but every day the temperature steadily drops until a layer of ice covers the decks. On the morning of the seventh day, the snow-capped island of Tola is sighted on the horizon. Soon after, a light wind rises from the west.</p>
+       <p>For six days, the <cite>Cardonal</cite> sails across the stormy Kaltersee without running into a storm; but every day the temperature steadily drops until a layer of ice covers the decks. On the morning of the seventh day, the snow-capped island of Tola is sighted on the horizon. Soon after, a light wind rises from the west.</p>
        <p>At first, there appears to be little danger, but within half an hour a furious blizzard is blowing, and all sight of land quickly vanishes in the scudding drift. All day the furious gale rages. Tremendous winds slice the tops of the huge grey waves and water crashes over the decks, masts and rigging of the ship, freezing almost immediately into solid ice. The sides of the ship become several feet thick with sea water. It is not until early evening that the weather clears, and although the wind still blows strongly, the force of the gale is spent.</p>
        <illustration class="inline">
         <meta>
@@ -588,7 +624,7 @@ fix illustration captions
       </footnotes>
 
       <data>
-       <p>You hide the body under the staircase and quickly search it. You discover a Bone Sword and a Blue Stone Disc. If you wish to keep either or both of these items, mark them on your <a idref="action">Action Chart</a> as Special Items<a id="sect4-1" idref="sect4-1-foot" class="footnote" />. You leave the body and run quickly up the stairs.</p>
+       <p>You hide the body under the staircase and quickly search it. You discover a Bone Sword and a Blue Stone Disc. If you wish to keep either or both of these items, mark them on your <a idref="action">Action Chart</a> as Special Items<footref id="sect4-1" idref="sect4-1-foot"/>. You leave the body and run quickly up the stairs.</p>
        <choice idref="sect332"><link-text>Turn to 332</link-text>.</choice>
       </data>
      </section>
@@ -644,7 +680,7 @@ fix illustration captions
       </footnotes>
 
       <data>
-       <p>The smell is revolting, and you try desperately to hold your breath as you smear handfuls of the slimy grease inside your jacket. As the oil penetrates your skin, you feel a warm glow as if you were near a fire: the more grease you apply, the warmer you become. You also notice that the awful smell is gradually fading.<a id="sect8-1" idref="sect8-1-foot" class="footnote" /></p>
+       <p>The smell is revolting, and you try desperately to hold your breath as you smear handfuls of the slimy grease inside your jacket. As the oil penetrates your skin, you feel a warm glow as if you were near a fire: the more grease you apply, the warmer you become. You also notice that the awful smell is gradually fading.<footref id="sect8-1" idref="sect8-1-foot"/></p>
        <p><quote>When it soaks into your skin, you lose your sense of smell,</quote> says Fenor.</p>
        <p><quote>Just as well,</quote> replies Dyce. <quote>I don<ch.apos/>t think I could stand living with myself otherwise!</quote></p>
        <p>Baknar oil gives excellent insulation from the bitter cold of Kalte, and it may save you valuable <typ class="attribute">ENDURANCE</typ> points in the near future.</p>
@@ -673,7 +709,7 @@ fix illustration captions
 
       <data>
        <p>The pack contains four ornate glass vials. They hold red, orange, green and black liquids.</p>
-       <p>Which one do you wish to examine?<a id="sect10-1" idref="sect10-1-foot" class="footnote" /></p>
+       <p>Which one do you wish to examine?<footref id="sect10-1" idref="sect10-1-foot"/></p>
        <choice idref="sect90">Red? If so, <link-text>turn to 90</link-text>.</choice>
        <choice idref="sect171">Orange? If so, <link-text>turn to 171</link-text>.</choice>
        <choice idref="sect289">Green? If so, <link-text>turn to 289</link-text>.</choice>
@@ -757,7 +793,7 @@ fix illustration captions
       </footnotes>
 
       <data>
-       <p>You only just manage to slip through the gap as the stone door slams shut. Unfortunately, if you are wearing a Backpack, two separate Items have been crushed and must be discarded here.<a id="sect16-1" idref="sect16-1-foot" class="footnote" /> Make the necessary adjustments to your <a idref="action">Action Chart</a>, and continue along the passage.</p>
+       <p>You only just manage to slip through the gap as the stone door slams shut. Unfortunately, if you are wearing a Backpack, two separate Items have been crushed and must be discarded here.<footref id="sect16-1" idref="sect16-1-foot"/> Make the necessary adjustments to your <a idref="action">Action Chart</a>, and continue along the passage.</p>
        <choice idref="sect63"><link-text>Turn to 63</link-text>.</choice>
       </data>
      </section>
@@ -782,7 +818,7 @@ fix illustration captions
       </footnotes>
 
       <data>
-       <p>As your weapon sinks into the swirling wind, an agonizing blast of intense cold runs through the full length of your arm. You lose 3 <typ class="attribute">ENDURANCE</typ> points and stagger back, clutching your frostbitten arm to your chest. You have lost your weapon and the cyclone is growing stronger and stronger, forcing you to retreat towards a corner of the temple.<a id="sect18-1" idref="sect18-1-foot" class="footnote" /></p>
+       <p>As your weapon sinks into the swirling wind, an agonizing blast of intense cold runs through the full length of your arm. You lose 3 <typ class="attribute">ENDURANCE</typ> points and stagger back, clutching your frostbitten arm to your chest. You have lost your weapon and the cyclone is growing stronger and stronger, forcing you to retreat towards a corner of the temple.<footref id="sect18-1" idref="sect18-1-foot"/></p>
        <choice idref="sect211">If you wish to try to escape towards the darkened archway beyond, <link-text>turn to 211</link-text>.</choice>
        <choice idref="sect95">If you wish to continue retreating into the corner of the temple, <link-text>turn to 95</link-text>.</choice>
       </data>
@@ -823,7 +859,7 @@ fix illustration captions
       <meta><title>21</title></meta>
 
       <data>
-       <p>The chill air whistles past, and then you suddenly crash on to a ledge of ice, over thirty feet below. You are winded and badly shaken, but still conscious. The cries of your guides soon change to shouts of joy and amazement when they see you stagger to your feet. You look upwards to see Fenor leap safely across the crevasse. Seconds later, a rope is thrown down and you are pulled to safety.</p>
+       <p>The chill air whistles past, and then you suddenly crash <!--ERRTAG-RE-59623-->onto<!--/ERRTAG-RE-59623--> a ledge of ice, over thirty feet below. You are winded and badly shaken, but still conscious. The cries of your guides soon change to shouts of joy and amazement when they see you stagger to your feet. You look upwards to see Fenor leap safely across the crevasse. Seconds later, a rope is thrown down and you are pulled to safety.</p>
        <p>You have lost your Kanu-dogs, your sledge with its provisions, and 2 <typ class="attribute">ENDURANCE</typ> points. After an anxious discussion, your guides agree to continue the mission, although they know that the hardships will now be doubly severe. Then in the distance, Irian spots a narrow passage at the edge of the ice shelf at a point where it meets the Hrod Basin. You continue your journey, and by nightfall you have reached the shelter of this pass and decide to set up camp.</p>
        <p>Checking the remaining food stores, you realize that rations will have to be cut by half if all of you are to reach Ikaya. You lose another 1 <typ class="attribute">ENDURANCE</typ> point due to the scant evening Meal.</p>
        <choice idref="sect325"><link-text>Turn to 325</link-text>.</choice>
@@ -878,7 +914,7 @@ fix illustration captions
       </footnotes>
 
       <data>
-       <p>Apart from the Bone Swords, you also find a Dagger and a Mace: both carved from solid bone.<a id="sect26-1" idref="sect26-1-foot" class="footnote" /> The Ice Barbarians also have curious Bracelets attached to their left wrists. They are plain, without mark or inscription, and appear to be made of solid gold.</p>
+       <p>Apart from the Bone Swords, you also find a Dagger and a Mace: both carved from solid bone.<footref id="sect26-1" idref="sect26-1-foot"/> The Ice Barbarians also have curious Bracelets attached to their left wrists. They are plain, without mark or inscription, and appear to be made of solid gold.</p>
        <illustration class="inline">
         <meta>
          <creator>Gary Chalk</creator>
@@ -920,8 +956,8 @@ fix illustration captions
        <choice idref="sect43">If you possess the Sommerswerd, <link-text>turn to 43</link-text>.</choice>
        <choice idref="sect121">If you have the Kai Discipline of Mind Over Matter, <link-text>turn to 121</link-text>.</choice>
        <p>If you have neither of the above, pick a number from the <a idref="random">Random Number Table</a>.</p>
-       <choice idref="sect226">If the number you have picked is 1-4, <link-text>turn to 226</link-text>.</choice>
-       <choice idref="sect266">If the number you have picked is 5-9, <link-text>turn to 266</link-text>.</choice>
+       <choice idref="sect226">If the number you have picked is 1<ch.endash/>4, <link-text>turn to 226</link-text>.</choice>
+       <choice idref="sect266">If the number you have picked is 5<ch.endash/>9, <link-text>turn to 266</link-text>.</choice>
        <choice idref="sect312">If the number you have picked is 0, <link-text>turn to 312</link-text>.</choice>
       </data>
      </section>
@@ -965,7 +1001,7 @@ towards you</description>
       </footnotes>
 
       <data>
-       <p>As the creatures leap at you from beneath the waterfall, you must fight them one at a time.<a id="sect32-1" idref="sect32-1-foot" class="footnote" /></p>
+       <p>As the creatures leap at you from beneath the waterfall, you must fight them one at a time.<footref id="sect32-1" idref="sect32-1-foot"/></p>
        <combat><enemy>Kalkoth 1</enemy><enemy-attribute class="combatskill">11</enemy-attribute><enemy-attribute class="endurance">35</enemy-attribute></combat>
        <combat><enemy>Kalkoth 2</enemy><enemy-attribute class="combatskill">10</enemy-attribute><enemy-attribute class="endurance">32</enemy-attribute></combat>
        <combat><enemy>Kalkoth 3</enemy><enemy-attribute class="combatskill">8</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat>
@@ -978,7 +1014,7 @@ towards you</description>
       <meta><title>33</title></meta>
 
       <data>
-       <p>Throwing the boy on to the sledge, you grab the whip and lash the Kanu-dogs, driving them for everything they are worth. The Ice Barbarian scouts immediately give chase, shouting to the boy in their strange Kalte language.</p>
+       <p>Throwing the boy <!--ERRTAG-RE-70145-->onto<!--/ERRTAG-RE-70145--> the sledge, you grab the whip and lash the Kanu-dogs, driving them for everything they are worth. The Ice Barbarian scouts immediately give chase, shouting to the boy in their strange Kalte language.</p>
        <p>You have covered less than a hundred yards when the boy leaps from the sledge into a deep snowdrift. At the same time, a volley of bone-tipped arrows whistle past your head, and one grazes your shoulder. You lose 1 <typ class="attribute">ENDURANCE</typ> point. Although the boy is free, two scouts continue to pursue you; but your dog team is fast, and you have soon outdistanced them and their arrows.</p>
        <p>By nightfall, you reach the very edge of the Viad Mountains. These awesome granite mountains rise vertically out of the ice and snow; they will be impossible to cross on this cold and moonless night. A wind rising in the west heralds a night blizzard. You must find shelter or you will die of exposure.</p>
        <choice idref="sect348">If you have the Kai Discipline either of Tracking or of Sixth Sense, <link-text>turn to 348</link-text>.</choice>
@@ -996,7 +1032,7 @@ towards you</description>
        <p>You will the monster to capture and hold Vonotar and it instantly obeys your command. The traitor shrieks with terror and faints as the slimy tentacles close around him. You notice Loi-Kymar hurl a handful of powdered herbs into the moat. Within seconds, a mass of vines and creepers coil upwards, forming a bridge across the moat to the Brumalmarc Throne. Once safely across, you will the creature to release Vonotar and return to the moat. Obediently it slithers into the darkness and the crystal blocks slowly rise.</p>
        <p><quote>Tie him, Lone Wolf,</quote> shouts Loi-Kymar, as he searches for his Guildstaff. <quote>And be sure to strip him of his rings and amulets<ch.emdash/>he is a master of trickery. We would not want him to miss his special homecoming to Sommerlund.</quote></p>
        <p>You follow Loi-Kymar<ch.apos/>s instructions and make sure that Vonotar is securely tied.</p>
-       <p><quote>Ah! Here she is!</quote> the old magician eventually cries triumphantly, discovering his Guildstaff amongst the tangle of vines at the base of the throne. He is anxious to leave so you thank him for his help and pass him your map of Kalte, pointing out the position of the ship Cardonal.</p>
+       <p><quote>Ah! Here she is!</quote> the old magician eventually cries triumphantly, discovering his Guildstaff amongst the tangle of vines at the base of the throne. He is anxious to leave so you thank him for his help and pass him your map of Kalte, pointing out the position of the ship <cite>Cardonal</cite>.</p>
        <p><quote>I<ch.apos/>ll not be needing that,</quote> he replies. <quote>Maps are invariably wrong; I prefer to rely on my own sense of direction.</quote></p>
        <p>Loi-Kymar raises his Guildstaff and a dazzling beam of light flows from its tip. He makes three wide sweeps of the air and the Hall of the Brumalmarc is transformed into an umbrella of colour.</p>
        <choice idref="sect350"><link-text>Turn to 350</link-text>.</choice>
@@ -1063,7 +1099,7 @@ towards you</description>
 
       <data>
        <p>You have fallen over thirty feet but have landed safely in a deep snow drift. Clawing the cold snow from your eyes, you are astounded by the sight that greets you. A vast cavern spreads out as far as your eyes can see: huge stalactites of crystal hang from the icy ceiling and the constant dripping of melted snow fills the air with a strangely musical sound.</p>
-       <p>You are looking upon an uncharted world that few Sommlending have ever seen, for you are stating upon the caverns of Kalte. This massive underground labyrinth was built by the Ancients many ages before the Sommlending, or even the Darklords, set foot in Magnamund. Its wide avenues, temples and halls once echoed to the sounds of a race of creatures for whom the ice was a natural home. M<ch.apos/>lare bowls still hang from the roof, shedding an eerie, eternal light.</p>
+       <p>You are looking upon an uncharted world that few Sommlending have ever seen, for you are staring upon the caverns of Kalte. This massive underground labyrinth was built by the Ancients many ages before the Sommlending, or even the Darklords, set foot in Magnamund. Its wide avenues, temples and halls once echoed to the sounds of a race of creatures for whom the ice was a natural home. M<ch.apos/>lare bowls still hang from the roof, shedding an eerie, eternal light.</p>
        <p>You follow a wide melt-water channel for over two miles until it disappears beneath a wall of shimmering ice. An ice bridge leads to a tunnel that soon splits in two.</p>
        <choice idref="sect255">If you have the Kai Discipline of Tracking, <link-text>turn to 255</link-text>.</choice>
        <choice idref="sect125">If you wish to take the left tunnel, <link-text>turn to 125</link-text>.</choice>
@@ -1082,7 +1118,7 @@ towards you</description>
 
       <data>
        <p>Removing the Blue Stone Triangle from around your neck, you press it into the granite wall. It is a perfect fit. You immediately feel a tremor running through the ledge on which you are standing, followed by the grinding noise of stone upon stone. The door opens, but after it has opened less than three feet, it begins to close.</p>
-       <p>Without a moment<ch.apos/>s hesitation, you dive into the fortress and the door crashes shut behind you.<a id="sect41-1" idref="sect41-1-foot" class="footnote" /></p>
+       <p>Without a moment<ch.apos/>s hesitation, you dive into the fortress and the door crashes shut behind you.<footref id="sect41-1" idref="sect41-1-foot"/></p>
        <choice idref="sect221"><link-text>Turn to 221</link-text>.</choice>
       </data>
      </section>
@@ -1112,7 +1148,7 @@ towards you</description>
       <meta><title>44</title></meta>
 
       <data>
-       <p><quote>Follow me,</quote> says Loi-Kymar. <quote>I<ch.apos/>ve listened to the sounds of Ikaya for over a year, and the secret sliding doors and the hidden routes here are no mystery to me, I have learnt more about these corridors and passages from the confines of my cell than Vonotar has discovered with all of his cunning.</quote></p>
+       <p><quote>Follow me,</quote> says Loi-Kymar. <quote>I<ch.apos/>ve listened to the sounds of Ikaya for over a year, and the secret sliding doors and the hidden routes here are no <!--ERRTAG-RE-81998-->mystery to me. I have<!--/ERRTAG-RE-81998--> learnt more about these corridors and passages from the confines of my cell than Vonotar has discovered with all of his cunning.</quote></p>
        <p>You follow the old magician through a network of secret passages and tunnels, up long flights of stairs and into chambers dark and cold. At the top of one very steep staircase, you come to a stone door. A strange, sickly smell is seeping from a small spy-hole. <quote>The kitchens,</quote> whispers Loi-Kymar, showing his distaste for Ikaya cuisine by sticking out his tongue and grimacing.</p>
        <p>You can see that this secret door opens next to a fireplace in which burns a roaring fire. Hanging over the fire is a large stone cauldron of gruel. Two Ice Barbarians sit at a table nearby with empty bowls in front of them.</p>
        <choice idref="sect79">If you possess a Potion of Black Graveweed, <link-text>turn to 79</link-text>.</choice>
@@ -1139,7 +1175,7 @@ towards you</description>
         <instance class="html" src="sect45.gif" width="180" height="179" />
         <instance class="pdf" src="sect45.pdf" width="180" height="179" />
        </illustration>
-       <choice idref="sect303">If you possess a Silver Key,<a id="sect45-1" idref="sect45-1-foot" class="footnote" /> <link-text>turn to 303</link-text>.</choice>
+       <choice idref="sect303">If you possess a Silver Key,<footref id="sect45-1" idref="sect45-1-foot"/> <link-text>turn to 303</link-text>.</choice>
        <choice idref="sect15">If you do not possess this Special Item, <link-text>turn to 15</link-text>.</choice>
       </data>
      </section>
@@ -1246,7 +1282,7 @@ towards you</description>
 
       <data>
        <p>You are less than a hundred feet from the top when the pain begins to fade. Eventually, you no longer feel anything with your hands: all sensation below your forearms is totally numbed by frostbite.</p>
-       <p>With one last effort, you reach a narrow ice shelf where you can kneel and rest. But you soon discover to your dismay that it is impossible to climb any further<ch.emdash/>you are faced by sheer walls of ice that offer no hand holds in their smooth surfaces. You will have to return the way you came. It is over four hours before the feeling returns to your hands. The frostbite is serious and you lose 5 <typ class="attribute">ENDURANCE</typ> points. In addition to this, you also lose 2 points from your initial <typ class="attribute">COMBAT SKILL</typ>. This loss is permanent and will affect you for the rest of your life.<a id="sect55-1" idref="sect55-1-foot" class="footnote" /></p>
+       <p>With one last effort, you reach a narrow ice shelf where you can kneel and rest. But you soon discover to your dismay that it is impossible to climb any further<ch.emdash/>you are faced by sheer walls of ice that offer no hand holds in their smooth surfaces. You will have to return the way you came. It is over four hours before the feeling returns to your hands. The frostbite is serious and you lose 5 <typ class="attribute">ENDURANCE</typ> points. In addition to this, you also lose 2 points from your initial <typ class="attribute">COMBAT SKILL</typ>. This loss is permanent and will affect you for the rest of your life.<footref id="sect55-1" idref="sect55-1-foot"/></p>
        <p>It takes a further five hours to reach the bottom in safety. Exhausted and in great pain, you steel yourself to find another exit from this icy hell-hole.</p>
        <choice idref="sect182"><link-text>Turn to 182</link-text>.</choice>
       </data>
@@ -1258,16 +1294,16 @@ towards you</description>
       <data>
        <p><quote>Upon my soul, a Kai Lord!</quote> he exclaims, his eyes now wide with astonishment.</p>
        <p><quote>How I<ch.apos/>ve prayed for freedom, for deliverance from this infernal place. And although hope never deserted me, I never expected such an illustrious rescuer.</quote></p>
-       <p>In the middle of his excitement, the old man is suddenly disturbed by a fit of coughing that leaves him pale and exhausted. It is a few minutes before he can speak again. <quote>My name is Loi-Kymar. I am an elder of the Magician<ch.apos/>s Guild of Toran,</quote> he says, slowly removing a small crystal star pendant, the symbol of the guild, from beneath his tattered robes. The guild is known as the Brotherhood of the Crystal Star, and the magician shows his pendant as proof of his identity. You ask him how he came to be imprisoned here in Ikaya, many hundreds of miles from his native Toran.</p>
+       <p>In the middle of his excitement, the old man is suddenly disturbed by a fit of coughing that leaves him pale and exhausted. It is a few minutes before he can speak again. <quote>My name is Loi-Kymar. I am an elder of the <!--ERRTAG-RE-93667-->Magicians<ch.apos/> Guild<!--/ERRTAG-RE-93667--> of Toran,</quote> he says, slowly removing a small crystal star pendant, the symbol of the guild, from beneath his tattered robes. The guild is known as the Brotherhood of the Crystal Star, and the magician shows his pendant as proof of his identity. You ask him how he came to be imprisoned here in Ikaya, many hundreds of miles from his native Toran.</p>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description><quote>My name is Loi-Kymar. I am an elder of the Magician<ch.apos/>s Guild of Toran,</quote></description>
+         <description><quote>My name is Loi-Kymar. I am an elder of the Magicians<ch.apos/> Guild of Toran,</quote></description>
         </meta>
         <instance class="html" src="ill4.gif" width="386" height="674" />
         <instance class="pdf" src="ill4.pdf" width="386" height="674" />
        </illustration>
-       <p><quote>Vonotar, that unspeakable wretch is responsible for my plight. Days before the Darklord invasion of Sommerlund, he betrayed your Kai masters to win power<ch.emdash/>the black power of death and darkness. However, he failed to play his part in the war plans his evil masters had laid. The Darklords do not tolerate such weakness<ch.emdash/>mercy has no place in their brutal minds. In the bitterness of defeat, they sought to destroy Vonotar for his crime of failure. Vonotar knew that I possessed the only means to effect an escape from their vengeance, for my Guildstaff has the power of teleportation. He tried to steal it and flee to the safety of Ikaya by himself, but he learnt that its power is not for all men to share; only I am blessed with its secret. He was angry and would have murdered my kinspeople had I not agreed to bring him here, so I had no choice but to do so.</quote></p>
+       <p><quote>Vonotar, that unspeakable <!--ERRTAG-RE-94585-->wretch, is responsible<!--/ERRTAG-RE-94585--> for my plight. Days before the Darklord invasion of Sommerlund, he betrayed your Kai masters to win power<ch.emdash/>the black power of death and darkness. However, he failed to play his part in the war plans his evil masters had laid. The Darklords do not tolerate such weakness<ch.emdash/>mercy has no place in their brutal minds. In the bitterness of defeat, they sought to destroy Vonotar for his crime of failure. Vonotar knew that I possessed the only means to effect an escape from their vengeance, for my Guildstaff has the power of teleportation. He tried to steal it and flee to the safety of Ikaya by himself, but he learnt that its power is not for all men to share; only I am blessed with its secret. He was angry and would have murdered my kinspeople had I not agreed to bring him here, so I had no choice but to do so.</quote></p>
        <p><quote>Ever since, I have been a prisoner in this cell. Vonotar has tortured my body and my mind, but I have not divulged the secret of my Guildstaff, which he now keeps in the Hall of the Brumalmarc. For if I were to tell him, my life would no longer be of any value.</quote></p>
        <p>You tell Loi-Kymar of your mission and of the events that have led to your meeting. He offers to show you a route through Ikaya to the Hall of the Brumalmarc where Vonotar now resides as ruler, and if you can retrieve his Guildstaff, he promises to teleport you to the coast in time to rendezvous with your ship.</p>
        <p>For the first time since you fell into the caverns of Kalte, you feel confident that your mission can now succeed.</p>
@@ -1290,7 +1326,7 @@ towards you</description>
       <meta><title>58</title></meta>
 
       <data>
-       <p>The cone of frost rips into the vines and freezes them in an instant. They become brittle and collapse under your weight. Without hesitation, you sprint across the falling bridge and dive on to the far platform just as the vines completely disintegrate.</p>
+       <p>The cone of frost rips into the vines and freezes them in an instant. They become brittle and collapse under your weight. Without hesitation, you sprint across the falling bridge and dive <!--ERRTAG-RE-97798-->onto<!--/ERRTAG-RE-97798--> the far platform just as the vines completely disintegrate.</p>
        <p>You have made it safely across the moat, but you are now lying at Vonotar<ch.apos/>s feet. He sneers at you and points his crystal rod at your head.</p>
        <choice idref="sect252"><link-text>Turn to 252</link-text>.</choice>
       </data>
@@ -1300,7 +1336,7 @@ towards you</description>
       <meta><title>59</title></meta>
 
       <data>
-       <p>The Kalkoth charges on to the lake and immediately falls through the ice. Beneath the frozen surface, a shadow speeds towards the helpless creature as it thrashes wildly in the icy water, snatching it suddenly into the depths. An unnatural stillness descends and all that remains now is a large patch of red water, spreading slowly beneath the ice.</p>
+       <p>The Kalkoth charges <!--ERRTAG-RE-98307-->onto<!--/ERRTAG-RE-98307--> the lake and immediately falls through the ice. Beneath the frozen surface, a shadow speeds towards the helpless creature as it thrashes wildly in the icy water, snatching it suddenly into the depths. An unnatural stillness descends and all that remains now is a large patch of red water, spreading slowly beneath the ice.</p>
        <p>You quickly scramble towards the jagged outline of the tunnel on the far side of this lake. As you reach the solid ice of the bank, you notice something strange lying there. It is a small triangle of blue stone on a neck chain. If you wish to keep this Blue Stone Triangle, slip the chain over your head and mark it on your <a idref="action">Action Chart</a> as a Special Item.</p>
        <choice idref="sect235">Enter the tunnel by <link-text>turning to 235</link-text>.</choice>
       </data>
@@ -1336,7 +1372,7 @@ towards you</description>
         <instance class="html" src="sect61.gif" width="292" height="169" />
         <instance class="pdf" src="sect61.pdf" width="292" height="169" />
        </illustration>
-       <choice>Ten days from now, you will reach your ship the Cardonal and regretfully report that you have failed your mission.<a id="sect61-1" idref="sect61-1-foot" class="footnote" /></choice>
+       <choice>Ten days from now, you will reach your ship the <cite>Cardonal</cite> and regretfully report that you have failed your mission.<footref id="sect61-1" idref="sect61-1-foot"/></choice>
       </data>
      </section>
 
@@ -1604,7 +1640,7 @@ towards you</description>
       </footnotes>
 
       <data>
-       <p>You notice that the Kalkoth has a blue triangle of stone on a chain around its neck. Suddenly you realize the significance of this strange amulet. Grabbing the blue stone, you race back to the fortress door and press it into the wall recess.<a id="sect84-1" idref="sect84-1-foot" class="footnote" /> It is a perfect fit.</p>
+       <p>You notice that the Kalkoth has a blue triangle of stone on a chain around its neck. Suddenly you realize the significance of this strange amulet. Grabbing the blue stone, you race back to the fortress door and press it into the wall recess.<footref id="sect84-1" idref="sect84-1-foot"/> It is a perfect fit.</p>
        <p>You become aware of a faint tremor running through the ledge on which you are standing, followed by the grinding noise of stone upon stone. The door opens, but it has only opened three feet when there is a loud crack, and it starts to close. Without a second<ch.apos/>s hesitation, you dive into the fortress and hear the massive door crash shut behind you.</p>
        <choice idref="sect221"><link-text>Turn to 221</link-text>.</choice>
       </data>
@@ -1665,7 +1701,7 @@ towards you</description>
        </illustration>
        <combat><enemy>Javek</enemy><enemy-attribute class="combatskill">15</enemy-attribute><enemy-attribute class="endurance">15</enemy-attribute></combat>
        <p>If you lose any <typ class="attribute">ENDURANCE</typ> points during this combat, do not subtract them from your <typ class="attribute">ENDURANCE</typ> point total. Instead, pick a number from the <a idref="random">Random Number Table</a>. If the number you pick is 0<ch.endash/>8, the Javek has sunk its fangs harmlessly into your padded arm, and you may continue the combat without losing any <typ class="attribute">ENDURANCE</typ> points.</p>
-       <p>However, if you pick a 9 at any time, the fangs have punctured your arm.<a id="sect88-1" idref="sect88-1-foot" class="footnote" /> The venom of a Javek is the most powerful natural poison in all of Magnamund. In a few seconds your heart stops, and your paralysed body falls into the abyss. Your mission ends here.</p>
+       <p>However, if you pick a 9 at any time, the fangs have punctured your arm.<footref id="sect88-1" idref="sect88-1-foot"/> The venom of a Javek is the most powerful natural poison in all of Magnamund. In a few seconds your heart stops, and your paralysed body falls into the abyss. Your mission ends here.</p>
        <choice idref="sect269">If you win the combat, <link-text>turn to 269</link-text>.</choice>
       </data>
      </section>
@@ -1702,7 +1738,7 @@ towards you</description>
       </footnotes>
 
       <data>
-       <p>You hold your breath as you wipe handfuls of the slimy grease inside your jacket. But as the oil penetrates your skin, you feel a warm glow, as if you were near an open fire. The more grease that you apply, the warmer you become. You also notice that the terrible smell is gradually fading away.<a id="sect91-1" idref="sect91-1-foot" class="footnote" /></p>
+       <p>You hold your breath as you wipe handfuls of the slimy grease inside your jacket. But as the oil penetrates your skin, you feel a warm glow, as if you were near an open fire. The more grease that you apply, the warmer you become. You also notice that the terrible smell is gradually fading away.<footref id="sect91-1" idref="sect91-1-foot"/></p>
        <p><quote>Once it<ch.apos/>s in your skin, you can<ch.apos/>t smell a thing,</quote> says Irian, calling the others to take some Baknar oil. This oil is excellent insulation against the freezing temperatures of Kalte, and may well help you in the near future. As you return to your tent, only the Kanu-dogs seem to object to the smell. They whine and bury their noses in the snow as you walk past.</p>
        <illustration class="inline">
         <meta>
@@ -1873,7 +1909,7 @@ crash on the sledges</description>
 
       <data>
        <p>You have fallen over a hundred-and-fifty feet into a massive snow drift. You are shaken and winded but otherwise unharmed. It takes nearly half an hour to tunnel your way clear and when you finally stagger out of the powdery snow, you are astounded by the sight that greets you. A huge underground cavern spreads into the distance. Stalactites of crystal hang from the icy ceiling and the constant dripping of melting snow fills this ice world with an eerie, musical sound. You are looking at an uncharted world that few Sommlending have ever seen, for you have fallen into the caverns of Kalte. This chamber is a tiny part of a massive underground labyrinth built by the Ancients, many ages before the Sommlending or even the Darklords set foot in Magnamund. Its wide avenues, temple and halls once echoed with the sound of a race of creatures for whom the ice was a natural home. M<ch.apos/>lare bowls still hang from the roof, bathing the chamber with their eternal light.</p>
-       <p>You shout towards the opening high above, but there is no reply. Irian and Fenor have given you up for dead, and they are now trying to make their way back to the Cardonal.</p>
+       <p>You shout towards the opening high above, but there is no reply. Irian and Fenor have given you up for dead, and they are now trying to make their way back to the <cite>Cardonal</cite>.</p>
        <p>The sides of the cave are steep and sheer. To climb up to the surface from here would be impossible. In the distance, to the north, you notice a rough-hewn tunnel. There is also a similar tunnel to the west.</p>
        <choice idref="sect64">If you have the Kai Discipline of Sixth Sense, <link-text>turn to 64</link-text>.</choice>
        <choice idref="sect321">If you wish to explore the north tunnel, <link-text>turn to 321</link-text>.</choice>
@@ -1997,7 +2033,7 @@ crash on the sledges</description>
       <meta><title>116</title></meta>
 
       <data>
-       <p>You pour the healing Potion on to your sore and broken skin. Immediately, you feel the soothing effects of the fluid. The pain fades and the swelling begins to subside. The Glowing Gem is a cursed Doomstone, and the power it contains is deadly to all living creatures. Had you not possessed a Laumspur Potion, the effects of the Doomstone would certainly have killed you. You discard the deadly Gem and the now empty Vial of Laumspur.</p>
+       <p>You pour the healing Potion <!--ERRTAG-RE-149114-->onto<!--/ERRTAG-RE-149114--> your sore and broken skin. Immediately, you feel the soothing effects of the fluid. The pain fades and the swelling begins to subside. The Glowing Gem is a cursed Doomstone, and the power it contains is deadly to all living creatures. Had you not possessed a Laumspur Potion, the effects of the Doomstone would certainly have killed you. You discard the deadly Gem and the now empty <!--ERRTAG-RE-149229-->vial of Laumspur<!--/ERRTAG-RE-149229-->.</p>
        <choice idref="sect97">Make the necessary adjustments to your <a idref="action">Action Chart</a> and continue along the corridor by <link-text>turning to 97</link-text>.</choice>
       </data>
      </section>
@@ -2200,7 +2236,7 @@ surface of the ice</description>
       </footnotes>
 
       <data>
-       <p>Unless you have just eaten a Meal, you lose 3 <typ class="attribute">ENDURANCE</typ> points from hunger.<a id="sect132-1" idref="sect132-1-foot" class="footnote" /> You continue along the tunnel for over a mile, but you soon become tired and stop to sleep. You awake feeling refreshed, but have no idea just how long you have been sleeping<ch.emdash/>the light of these caverns never changes, be it day or night.</p>
+       <p>Unless you have just eaten a Meal, you lose 3 <typ class="attribute">ENDURANCE</typ> points from hunger.<footref id="sect132-1" idref="sect132-1-foot"/> You continue along the tunnel for over a mile, but you soon become tired and stop to sleep. You awake feeling refreshed, but have no idea just how long you have been sleeping<ch.emdash/>the light of these caverns never changes, be it day or night.</p>
        <p>You continue onwards, mile after mile, passing through a series of huge ice halls containing towering pillars of crystal. In one vast chamber, you are mesmerized by the beautiful sight of a shimmering crystal ceiling. But beyond this chamber lies an even greater spectacle. A narrow passage leads on to a ledge running around the brink of a huge chasm, over half a mile wide. As you edge your way around this awesome void, you try not to look down into its wind swept depths, many miles below.</p>
        <p>You have been on the ledge for only a few minutes when a noise behind you makes you glance back. To your horror, you see you are being followed by a monstrous, two-headed serpent.</p>
        <choice idref="sect229">If you have the Kai Discipline of either Tracking or Animal Kinship, <link-text>turn to 229</link-text>.</choice>
@@ -2229,7 +2265,7 @@ surface of the ice</description>
       <meta><title>134</title></meta>
 
       <data>
-       <p>The following morning, you awake at dawn to the welcome sight of Fenor preparing a hot breakfast. He passes you a steaming bowl, and you gratefully eat its contents. Then you begin loading the equipment on to the sledges for today<ch.apos/>s journey.</p>
+       <p>The following morning, you awake at dawn to the welcome sight of Fenor preparing a hot breakfast. He passes you a steaming bowl, and you gratefully eat its contents. Then you begin loading the equipment <!--ERRTAG-RE-168665-->onto<!--/ERRTAG-RE-168665--> the sledges for today<ch.apos/>s journey.</p>
        <p>It is a beautiful morning. The wind has dropped and the air is fresh and clear. The Kanu-dogs are strong and eager to be off, and for most of the day the ice is smooth and the running easy. By nightfall, you have reached Syem Island, a pinnacle of granite rising through the ice shelf to a height of four hundred feet. You make camp to the leeward side of the island in order to avoid the worst of the night winds.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
        <choice idref="sect57">If the number you have picked is 0<ch.endash/>3, <link-text>turn to 57</link-text>.</choice>
@@ -2282,7 +2318,7 @@ surface of the ice</description>
        <combat><enemy>Kalkoth 2</enemy><enemy-attribute class="combatskill">10</enemy-attribute><enemy-attribute class="endurance">32</enemy-attribute></combat>
        <choice idref="sect66">If you lose any <typ class="attribute">ENDURANCE</typ> points during this combat, <link-text>turn immediately to 66</link-text>.</choice>
        <choice idref="sect25">If you win the combat without losing any <typ class="attribute">ENDURANCE</typ> points, <link-text>turn to 25</link-text>.</choice>
-       <choice idref="sect277">You may evade the fight by <link-text>turning to 277</link-text>.<a id="sect138-1" idref="sect138-1-foot" class="footnote" /></choice>
+       <choice idref="sect277">You may evade the fight by <link-text>turning to 277</link-text>.<footref id="sect138-1" idref="sect138-1-foot"/></choice>
       </data>
      </section>
 
@@ -2297,7 +2333,7 @@ surface of the ice</description>
 
       <data>
        <p>You are suddenly aware of a dull throbbing pain in your side. The skin beneath the pocket in which you placed the Glowing Gem is now raw and swollen. You feel dizzy and nauseous, and you are having great difficulty in standing.</p>
-       <choice idref="sect116">If you possess a Red Potion of Laumspur<a id="sect139-1" idref="sect139-1-foot" class="footnote" />, <link-text>turn to 116</link-text>.</choice>
+       <choice idref="sect116">If you possess a Red Potion of Laumspur<footref id="sect139-1" idref="sect139-1-foot"/>, <link-text>turn to 116</link-text>.</choice>
        <choice idref="sect239">If you do not possess this Potion, <link-text>turn to 239</link-text>.</choice>
       </data>
      </section>
@@ -2373,13 +2409,13 @@ are the skeletal remains of an ancient tomb keeper</description>
       <meta><title>146</title></meta>
 
       <data>
-       <p>You gingerly inch your way back to the rear of sledge<ch.emdash/>but you hear the cracking of ice as crevasse opens wider and wider. <quote>Jump!</quote> shouts Fenor, as the sledge topples into the widening void.</p>
+       <p>You gingerly inch your way back to the rear of the sledge<ch.emdash/>but you hear the cracking of ice <!--ERRTAG-RE-178113-->as the crevasse<!--/ERRTAG-RE-178113--> opens wider and wider. <quote>Jump!</quote> shouts Fenor, as the sledge topples into the widening void.</p>
        <p>You steady yourself to try to leap to safety but your left foot becomes entangled in the ropes and equipment.</p>
        <choice idref="sect43">If you possess the Sommerswerd, <link-text>turn to 43</link-text>.</choice>
        <choice idref="sect121">If you have the Kai Discipline of Mind Over Matter, <link-text>turn to 121</link-text>.</choice>
        <p>If you possess neither of the above, pick a number from the <a idref="random">Random Number Table</a>.</p>
-       <choice idref="sect226">If the number you have picked is 1-4, <link-text>turn to 226</link-text>.</choice>
-       <choice idref="sect266">If the number is 5-9, <link-text>turn to 266</link-text>.</choice>
+       <choice idref="sect226">If the number you have picked is 1<ch.endash/>4, <link-text>turn to 226</link-text>.</choice>
+       <choice idref="sect266">If the number is 5<ch.endash/>9, <link-text>turn to 266</link-text>.</choice>
        <choice idref="sect312">If the number is 0, <link-text>turn to 312</link-text>.</choice>
       </data>
      </section>
@@ -2495,8 +2531,8 @@ destruction</description>
        <p>The dawn mists are quickly cleared by the icy mountain wind. Tired, shocked and frozen to the bone, you claw your way up the cruel rock-face until you finally reach the safety of a wide ridge. You are very hungry and must eat a Meal here before you continue or lose 3 <typ class="attribute">ENDURANCE</typ> points. Remember to subtract the Meal from your <a idref="action">Action Chart</a>.</p>
        <p>The ridge joins another which you struggle across, only to find yourself at the top of a terrifying descent. To reach the narrow mountain pass one thousand feet below, you must go down a steep and perilous ice staircase.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. If your current <typ class="attribute">ENDURANCE</typ> point total is less than 10, deduct 2 from the number that you have picked. If your current <typ class="attribute">ENDURANCE</typ> point total is greater than 20, add 1 to the number that you have picked.</p>
-       <choice idref="sect248">If your total is now -2-2, <link-text>turn to 248</link-text>.</choice>
-       <choice idref="sect191">If your total is now 3-10, <link-text>turn to 191</link-text>.</choice>
+       <choice idref="sect248">If your total is now -2<ch.endash/>2, <link-text>turn to 248</link-text>.</choice>
+       <choice idref="sect191">If your total is now 3<ch.endash/>10, <link-text>turn to 191</link-text>.</choice>
       </data>
      </section>
 
@@ -2512,8 +2548,14 @@ destruction</description>
      <section class="numbered" id="sect157">
       <meta><title>157</title></meta>
 
+      <footnotes>
+       <footnote id="sect157-1-foot" idref="sect157-1">
+        <p>Remember to erase this potion from your <a idref="action">Action Chart</a>.</p>
+       </footnote>
+      </footnotes>
+
       <data>
-       <p>You take the Potion from your Backpack and carefully open the door just wide enough to be able to empty the contents of the vial into the bubbling cauldron. You do not have to wait long for the Ice Barbarians to fall asleep after their meal.</p>
+       <p>You take the Potion from your Backpack and carefully open the door just wide enough to be able to empty the contents of the vial into the bubbling cauldron.<footref id="sect157-1" idref="sect157-1-foot"/> You do not have to wait long for the Ice Barbarians to fall asleep after their meal.</p>
        <illustration class="inline">
         <meta>
          <creator>Gary Chalk</creator>
@@ -2521,7 +2563,7 @@ destruction</description>
         <instance class="html" src="sect157.gif" width="181" height="177" />
         <instance class="pdf" src="sect157.pdf" width="181" height="177" />
        </illustration>
-       <p>The kitchen is small and surprisingly well stocked with herbs. <quote>These are from the Trading Post at Ljuk</quote> says Loi-Kymar, peering closely at the labelled jars, several of which he crams into his pockets. Opening two herb jars, he mixes the contents, and offers them to you. <quote>It will give you strength, Lone Wolf,</quote> he says. You eat the dry leaves and feel a warm glow radiating throughout your body.</p>
+       <p>The kitchen is small and surprisingly well stocked with herbs. <quote>These are from the Trading Post at Ljuk,</quote> says Loi-Kymar, peering closely at the labelled jars, several of which he crams into his pockets. Opening two herb jars, he mixes the contents, and offers them to you. <quote>It will give you strength, Lone Wolf,</quote> he says. You eat the dry leaves and feel a warm glow radiating throughout your body.</p>
        <choice idref="sect301">Restore 6 <typ class="attribute">ENDURANCE</typ> points to your current total, and <link-text>turn to 301</link-text>.</choice>
 
 
@@ -2555,7 +2597,7 @@ destruction</description>
       <meta><title>160</title></meta>
 
       <data>
-       <p>Your transport to Ikaya consists of two sledges, each drawn by a team of six Kanu-dogs. This sturdy breed are native to Kalte and make ideal sledge dogs. Their thick tawny coats and powerful chests, as well as their vigour and enthusiasm even in the coldest climates, make them well suited to the work ahead.</p>
+       <p>Your transport to Ikaya consists of two sledges, each drawn by a team of six Kanu-dogs. This sturdy <!--ERRTAG-RE-191812-->breed is<!--/ERRTAG-RE-191812--> native to Kalte and make ideal sledge dogs. Their thick tawny coats and powerful chests, as well as their vigour and enthusiasm even in the coldest climates, make them well suited to the work ahead.</p>
        <p>On board each sledge is enough food and equipment for the mission. Your three guides, Irian, Fenor and Dyce, are all experienced trappers. They are skilled at survival in the icy desert, and know of the many unseen dangers.</p>
        <p>Once the dogs are harnessed, you and Dyce climb aboard your sledge and signal to the others to lead the way. As you stare across the frozen expanse of the Ljuk ice shelf, you can see a white glare on the distant horizon. This is the Viad Glacier wall, the point where the flow of ice meets the frozen sea. Through the crisp, clear air of Kalte it looks no more than six miles away at most, but in reality it is nearer sixty miles away.</p>
        <p>You make good progress on the first day and as darkness approaches, you decide to set up camp for the night. You halt inside a circle of ice pillars that have been forced upwards by the constantly moving ice shelf. The sledges are drawn together and the tent is erected beside them. Once the canvas is secured and the Kanu-dogs have been settled for the night, you begin to prepare your evening meal. Suddenly, a terrifying roar is heard outside the tent.</p>
@@ -2642,7 +2684,7 @@ destruction</description>
       <meta><title>167</title></meta>
 
       <data>
-       <p>The gale gradually drops, the air clears, and the Viad Glacier is revealed in all its splendour. The even surface of ice crystals look like a carpet of snow glittering with gems of every hue<ch.emdash/>yellow, violet, blue, green, orange and crimson; yet the crystals are of such brilliance, they would put any jewel in the shade. The ice wall rises over eight hundred feet and for the main part it is a smooth but very steep climb. Although the weather is fine, it takes the best part of a day to climb the glacier<ch.apos/>s edge. All of the equipment has to be unloaded and taken to the top of the glacier where it is repacked on to the sledges. The Kanu-dogs do hardly anything but fight, and your food is so shaken up in the climb that a gruesome mush is all that remains of it.</p>
+       <p>The gale gradually drops, the air clears, and the Viad Glacier is revealed in all its splendour. The even surface of ice crystals look like a carpet of snow glittering with gems of every hue<ch.emdash/>yellow, violet, blue, green, orange and crimson; yet the crystals are of such brilliance, they would put any jewel in the shade. The ice wall rises over eight hundred feet and for the main part it is a smooth but very steep climb. Although the weather is fine, it takes the best part of a day to climb the glacier<ch.apos/>s edge. All of the equipment has to be unloaded and taken to the top of the glacier where it is repacked <!--ERRTAG-RE-200050-->onto<!--/ERRTAG-RE-200050--> the sledges. The Kanu-dogs do hardly anything but fight, and your food is so shaken up in the climb that a gruesome mush is all that remains of it.</p>
        <p>By the end you are exhausted. With daylight fading fast, you decide to pitch camp in the shelter of a natural ice bowl, and settle down to a much deserved night<ch.apos/>s rest.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
        <choice idref="sect85">If the number you have picked is 0<ch.endash/>6, <link-text>turn to 85</link-text>.</choice>
@@ -2655,7 +2697,7 @@ destruction</description>
       <meta><title>168</title></meta>
 
       <data>
-       <p>As you step on to the quartz, you sense a vibration that runs up your leg to your knee. You see that, within the flagstone, a dull light pulsates and a humming sound can be heard emanating from the altar.</p>
+       <p>As you step <!--ERRTAG-RE-200920-->onto<!--/ERRTAG-RE-200920--> the quartz, you sense a vibration that runs up your leg to your knee. You see that, within the flagstone, a dull light pulsates and a humming sound can be heard emanating from the altar.</p>
        <p>With your heart pounding, you prepare yourself for an attack and slowly advance.</p>
        <choice idref="sect60"><link-text>Turn to 60</link-text>.</choice>
       </data>
@@ -2676,7 +2718,7 @@ destruction</description>
 
       <data>
        <p>Using the edge of your cloak, you wipe away a section of the pentagram that is wide enough to let the man escape. You notice that he is painfully thin and unsteady on his feet.</p>
-       <p><quote>My thanks Kai Lord. I shall endeavour to repay your kindness some day, if we ever escape from this fortress</quote> he says. <quote>You had best lead, for my eyes ail me. I have suffered snow-blindness and the pain still lingers on.</quote></p>
+       <p><quote><!--ERRTAG-RE-201948-->My thanks, Kai Lord<!--/ERRTAG-RE-201948-->. I shall endeavour to repay your kindness some day, if we ever escape from this fortress</quote> he says. <quote>You had best lead, for my eyes ail me. I have suffered snow-blindness and the pain still lingers on.</quote></p>
        <p>You lead the way into the passage and are about to turn north into the main corridor, when a pair of steely-fingered hands suddenly close around your throat from behind. A hideous cry betrays the merchant<ch.apos/>s true identity: he is a Helghast, a deadly shape-changing servant of the Darklords. He has tricked you into releasing him from the pentagram, and he now intends to murder you.</p>
        <p>You desperately fight for air as his skeletal fingers burn and tear at your throat. You lose 6 <typ class="attribute">ENDURANCE</typ> points. If you are still alive, you manage to break free of his grip, but you must now fight this creature to the death. Due to the surprise of its attack, you cannot swallow any potions before the combat.</p>
        <choice idref="sect304">If you possess the Sommerswerd, <link-text>turn to 304</link-text>.</choice>
@@ -3105,7 +3147,7 @@ monster over which Vonotar has control</description>
       <meta><title>207</title></meta>
 
       <data>
-       <p>You can see the shadowy outline of the hideous creature as it charges towards you along the tunnel. It is blind with rage and hungry for blood. You suddenly realize that if you dive aside as the creature leaps from the tunnel, it may just miss you and plunge headlong on to the thin ice of the lake.</p>
+       <p>You can see the shadowy outline of the hideous creature as it charges towards you along the tunnel. It is blind with rage and hungry for blood. You suddenly realize that if you dive aside as the creature leaps from the tunnel, it may just miss you and plunge headlong <!--ERRTAG-RE-234861-->onto<!--/ERRTAG-RE-234861--> the thin ice of the lake.</p>
        <choice idref="sect80">If you wish to try to dive aside when the Kalkoth charges from out of the tunnel, <link-text>turn to 80</link-text>.</choice>
        <choice idref="sect253">If you wish to stand and fight it when it appears, <link-text>turn to 253</link-text>.</choice>
       </data>
@@ -3148,8 +3190,8 @@ monster over which Vonotar has control</description>
       <data>
        <p>The cyclone is tearing at your clothes and bombarding you with chunks of ice and rock. You grit your teeth and try to run but the cold saps your strength, and you are forced to claw your way along the wall to avoid being sucked into the swirling vortex.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. If your current <typ class="attribute">ENDURANCE</typ> point total is less than 10, deduct 3 from the number you have picked.</p>
-       <choice idref="sect95">If your number is now -3 to 3, <link-text>turn to 95</link-text>.</choice>
-       <choice idref="sect196">If your number is now 4-9, <link-text>turn to 196</link-text>.</choice>
+       <choice idref="sect95">If your number is now <!--ERRTAG-RE-237434-->-3<ch.endash/>3<!--/ERRTAG-RE-237434-->, <link-text>turn to 95</link-text>.</choice>
+       <choice idref="sect196">If your number is now 4<ch.endash/>9, <link-text>turn to 196</link-text>.</choice>
       </data>
      </section>
 
@@ -3248,7 +3290,7 @@ containing a child armed with a bone bow</description>
        <p>The next day is bitterly cold. A strong wind from the west blows relentlessly as you steer your sledge towards the Hrod Basin. The snow clogs your eyes and your lips crack and bleed, but by midday you reach the edge of the basin. Irian and Dyce<ch.apos/>s sledge arrives at the ice wall first and they eagerly encourage you onwards.</p>
        <p>Without any warning, a great crack appears between the two sledges, opening with a tremendous roar, until you are faced by a huge dark crevasse. Frantically you pull on the reins but it is too late to prevent your Kanu-dog team from disappearing into the void. Your sledge is left balancing on the edge of the crevasse, while the team of howling Kanu-dogs dangle helplessly in their harnesses below you. Very carefully, you risk a glance into the chasm. You see that the first two dogs have broken free and dropped over one-hundred-and-fifty feet to a ledge below. One of them appears to be dead. The other is badly injured and whimpers beside the still body of its comrade. Suddenly, a shudder jolts the sledge and you gasp with fright.</p>
        <choice idref="sect146">If you wish to crawl with Fenor to the rear of the sledge, <link-text>turn to 146</link-text>.</choice>
-       <choice idref="sect29">If you decide to try to leap clear of the sledge on to the cracked ice, <link-text>turn to 29</link-text>.</choice>
+       <choice idref="sect29">If you decide to try to leap clear of the sledge <!--ERRTAG-RE-246372-->onto<!--/ERRTAG-RE-246372--> the cracked ice, <link-text>turn to 29</link-text>.</choice>
       </data>
      </section>
 
@@ -3287,12 +3329,12 @@ containing a child armed with a bone bow</description>
       <data>
        <p>The sledge contains the following equipment. You may take any of the following Items and store them in your Backpack, but remember that your Pack can only hold a maximum of 8 Items:</p>
        <ul>
-        <li>Enough Food for 1-5 Meals (each Meal counts as 1 Item)</li>
+        <li>Enough Food for 1<ch.endash/>5 Meals (each Meal counts as 1 Item)</li>
         <li>Tent (counts as 3 items)</li>
         <li>Sleeping Furs (counts as 2 items)</li>
         <li>Long Rope (counts as 2 items)</li>
        </ul>
-       <p>Dyce volunteers to return to the Cardonal with the Kanu-dog teams and the sledge, while the rest of you push on towards Ikaya, the ice fortress.</p>
+       <p>Dyce volunteers to return to the <cite>Cardonal</cite> with the Kanu-dog teams and the sledge, while the rest of you push on towards Ikaya, the ice fortress.</p>
        <p>Ikaya was carved out of the Hrod Range many ages ago, by a race of creatures that have long since disappeared. Thousands of years passed before the Ice Barbarians migrated here from the Uncharted Void, claiming Ikaya for themselves. Their leaders, the <ch.apos/>Brumalmarc<ch.apos/> as they are called, have ruled over Kalte from the safe shelter of this fortress ever since.</p>
        <p>You have covered nearly five miles when Irian suddenly points to the west. <quote>There<ch.ellips/> over there. I<ch.apos/>m sure I saw something.</quote></p>
        <p>You halt and strain your eyes to try to identify something unusual in the monotonous landscape of ice and snow.</p>
@@ -3446,7 +3488,7 @@ stalagmites and stalactites</description>
         <instance class="html" src="ill13.gif" width="386" height="685" />
         <instance class="pdf" src="ill13.pdf" width="386" height="685" />
        </illustration>
-       <p>Partially obscured by a large mound of crystals, you can just make out a ramp leading up to a massive stone door in the fortress wall. Your discovery brings renewed hope. If you can gain entry to Ikaya and quickly capture Vonotar, there is still time to reach your ship, the Cardonal, before the pack-ice starts to freeze.</p>
+       <p>Partially obscured by a large mound of crystals, you can just make out a ramp leading up to a massive stone door in the fortress wall. Your discovery brings renewed hope. If you can gain entry to Ikaya and quickly capture Vonotar, there is still time to reach your ship, the <cite>Cardonal</cite>, before the pack-ice starts to freeze.</p>
        <choice idref="sect52">If you wish to cross the icy hall and examine the stone door, <link-text>turn to 52</link-text>.</choice>
        <choice idref="sect115">If you decide to stop and search the bone-littered floor, <link-text>turn to 115</link-text>.</choice>
       </data>
@@ -3607,7 +3649,7 @@ stalagmites and stalactites</description>
 
       <data>
        <p>The glass shatters in your hand, and the black liquid splashes over the stone table. Cursing your misfortune, you carefully sniff the few remaining drops lying in a curve of jagged glass.</p>
-       <choice idref="sect77">If you have ever visited the Graveyard of the Ancients, <link-text>turn to 77</link-text>.</choice>
+       <choice idref="sect77">If you have ever <!--ERRTAG-RE-272490-->visited the Graveyard of the Ancients and survived<!--/ERRTAG-RE-272490-->, <link-text>turn to 77</link-text>.</choice>
        <choice idref="sect10">If you have not, you are suspicious of this pungent liquid, and quickly discard the broken glass. <link-text>Return to 10</link-text> and choose your next course of action.</choice>
       </data>
      </section>
@@ -3639,7 +3681,7 @@ tangle of vines</description>
        </illustration>
        <p><quote>Be sure to remove his rings and amulets,</quote> he says, as he busily searches for his Guildstaff. <quote>He is a master of trickery. We would not want him to miss the special homecoming that awaits him in Sommerlund.</quote></p>
        <p>You marvel at the old man<ch.apos/>s composure. After such a desperate fight, he seems completely unruffled. <quote>Ah! Here she is,</quote> he announces triumphantly as he withdraws his Guildstaff from beneath the Brumalmarc throne.</p>
-       <p>You pass him your map of Kalte and point out the location of the Cardonal <quote>I<ch.apos/>ll not be needing that,</quote> he replies, a little contemptuously. <quote>Maps are invariably wrong<ch.emdash/>I prefer to rely on my own sense of direction.</quote> The old magician raises his staff and a dazzling beam of light shoots from its tip. He makes three wide sweeps of the air and the Hall of the Brumalmarc is transformed into an umbrella of colour.</p>
+       <p>You pass him your map of Kalte and point out the location of the <cite>Cardonal</cite> <quote>I<ch.apos/>ll not be needing that,</quote> he replies, a little contemptuously. <quote>Maps are invariably wrong<ch.emdash/>I prefer to rely on my own sense of direction.</quote> The old magician raises his staff and a dazzling beam of light shoots from its tip. He makes three wide sweeps of the air and the Hall of the Brumalmarc is transformed into an umbrella of colour.</p>
        <choice idref="sect350"><link-text>Turn to 350</link-text>.</choice>
       </data>
      </section>
@@ -3765,7 +3807,7 @@ tangle of vines</description>
        <combat><enemy>Kalkoth 2</enemy><enemy-attribute class="combatskill">10</enemy-attribute><enemy-attribute class="endurance">32</enemy-attribute></combat> 
        <combat><enemy>Kalkoth 3</enemy><enemy-attribute class="combatskill">8</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat> 
        <choice idref="sect66">If you lose any <typ class="attribute">ENDURANCE</typ> points during the combat, <link-text>turn immediately to 66</link-text>.</choice>
-       <choice idref="sect277">You can evade the fight at any time by <link-text>turning to 277</link-text>.<a id="sect263-1" idref="sect263-1-foot" class="footnote" /></choice>
+       <choice idref="sect277">You can evade the fight at any time by <link-text>turning to 277</link-text>.<footref id="sect263-1" idref="sect263-1-foot"/></choice>
        <choice idref="sect25">If you win the combat without losing any <typ class="attribute">ENDURANCE</typ> points, <link-text>turn to 25</link-text>.</choice>
       </data>
      </section>
@@ -3866,7 +3908,7 @@ fight it to the death</description>
 
       <data>
        <p>As the vile Akraa<ch.apos/>Neonor quivers and dies, Vonotar breaks off mind combat and runs back towards the Brumalmarc throne.</p>
-       <p>Loi-Kymar is badly shaken but he has survived the ordeal. He quickly joins you at the edge of the moat and casts a handful of herbs down into the darkness. Within seconds, a mass of vines and creepers coil upwards to form a bridge. You are halfway across the bridge when Vonotar suddenly reappears, a crystal rod held high in his hand. He takes aim at the mass of creepers and a chilling cone of frost hurtles from its tip.</p>
+       <p>Loi-Kymar is badly shaken but he has survived the ordeal. He quickly joins you at the edge of the moat and casts a handful of herbs down into the darkness. Within seconds, a mass of vines and creepers coil upwards to form a bridge. You are halfway across the bridge when Vonotar suddenly reappears, a crystal rod held high in his hand. He takes aim at the mass of creepers and a chilling cone of frost hurtles from <!--ERRTAG-RE-292685-->the rod<ch.apos/>s tip<!--/ERRTAG-RE-292685-->.</p>
        <illustration class="inline">
         <meta>
          <creator>Gary Chalk</creator>
@@ -3885,9 +3927,9 @@ fight it to the death</description>
       <meta><title>273</title></meta>
 
       <data>
-       <p>You are to travel to Ikaya by sledge. Two sledges have been loaded with enough food, and equipment for the mission, each drawn by a team of six Kanu-dogs. This sturdy breed are native to Kalte and make ideal sledge dogs. Their thick tawny coats and powerful chests, as well as their renowned vigour and enthusiasm make them well suited to the harsh work ahead.</p>
+       <p>You are to travel to Ikaya by sledge. Two sledges have been loaded with enough food, and equipment for the mission, each drawn by a team of six Kanu-dogs. This sturdy <!--ERRTAG-RE-293810-->breed is<!--/ERRTAG-RE-293810--> native to Kalte and make ideal sledge dogs. Their thick tawny coats and powerful chests, as well as their renowned vigour and enthusiasm make them well suited to the harsh work ahead.</p>
        <p>Your three guides, Irian, Fenor and Dyce, are all experienced trappers. They are skilled at survival in this icy desert, and have experienced its many unseen dangers. Once the dogs are in harness, you and Irian climb aboard your sledge and signal to the others to lead the way.</p>
-       <p>Staring across the frozen expanse of the Ljuk ice shelf, you see the white glare of the Hrod Basin edge. <quote><quote>Ice-Blink</quote> they call it,</quote> says Irian, his eyes glinting from deep inside the hood of his fur jacket. <quote>It<ch.apos/>s the reflection of the ice shelf. It looks no more than four miles away at most, but it<ch.apos/>s nearer forty than four. The air of Kalte can be very deceptive.</quote></p>
+       <p>Staring across the frozen expanse of the Ljuk ice shelf, you see the white glare of the Hrod Basin edge. <quote><ch.thinspace/><quote>Ice-Blink</quote> they call it,</quote> says Irian, his eyes glinting from deep inside the hood of his fur jacket. <quote>It<ch.apos/>s the reflection of the ice shelf. It looks no more than four miles away at most, but it<ch.apos/>s nearer forty than four. The air of Kalte can be very deceptive.</quote></p>
        <p>The weather is bright and windless and you make excellent progress on the first day. As darkness sets in, you decide to set up camp for the night. The sledges are drawn together, and the tent is erected in the salient away from the wind.</p>
        <choice idref="sect35">If you have the Kai Discipline of Sixth Sense, <link-text>turn to 35</link-text>.</choice>
        <choice idref="sect112">If you do not possess this skill, <link-text>turn to 112</link-text>.</choice>
@@ -4210,7 +4252,7 @@ laboratory</description>
 
       <data>
        <p><quote>We<ch.apos/>re on the same level as the Hall of the Brumalmarc,</quote> whispers Loi-Kymar, peering through a crack in the kitchen door. <quote>It<ch.apos/>s at the end of this corridor.</quote></p>
-       <p>Two Ice Barbarians stand beside the jewel-encrusted doors that lead to the great hall. They are covered from head to toe in strange bone armour, and armed with crystal swords. The old wizard steps back from the door and says: <quote>We must deal with them silently and swiftly.</quote> He takes three jars from his pockets and mutters a strange incantation as he mixes the contents together in a stone bowl. There is a pitcher of water on the table. He splashes a few drops on to the herbs, and wisps of blue smoke arise. <quote>This will silence the guards if we can move it close enough to them.</quote></p>
+       <p>Two Ice Barbarians stand beside the jewel-encrusted doors that lead to the great hall. They are covered from head to toe in strange bone armour, and armed with crystal swords. The old wizard steps back from the door and says: <quote>We must deal with them silently and swiftly.</quote> He takes three jars from his pockets and mutters a strange incantation as he mixes the contents together in a stone bowl. There is a pitcher of water on the table. He splashes a few drops <!--ERRTAG-RE-320442-->onto<!--/ERRTAG-RE-320442--> the herbs, and wisps of blue smoke arise. <quote>This will silence the guards if we can move it close enough to them.</quote></p>
        <choice idref="sect122">If you have the Kai Discipline of Camouflage, <link-text>turn to 122</link-text>.</choice>
        <choice idref="sect228">If you have the Kai Discipline of Mind Over Matter, <link-text>turn to 228</link-text>.</choice>
        <choice idref="sect347">If you have the Kai Discipline of Hunting, <link-text>turn to 347</link-text>.</choice>
@@ -4240,7 +4282,7 @@ laboratory</description>
       </footnotes>
 
       <data>
-       <p>You insert the Key and turn it clockwise. A click confirms that it works. Slowly the shank of the Key slips from your grip and disappears into the lock<a id="sect303-1" idref="sect303-1-foot" class="footnote" /> and the great stone lid opens to reveal a magnificent Silver Helmet.</p>
+       <p>You insert the Key and turn it clockwise. A click confirms that it works. Slowly the shank of the Key slips from your grip and disappears into the lock<footref id="sect303-1" idref="sect303-1-foot"/> and the great stone lid opens to reveal a magnificent Silver Helmet.</p>
        <illustration class="inline">
         <meta>
          <creator>Gary Chalk</creator>
@@ -4320,7 +4362,7 @@ laboratory</description>
       </footnotes>
 
       <data>
-       <p>Despite its size, the Helmet feels light and comfortable. Mark it on your <a idref="action">Action Chart</a> as a Special Item.<a id="sect308-1" idref="sect308-1-foot" class="footnote" /> If worn during combat, it will increase your <typ class="attribute">COMBAT SKILL</typ> by 2 points. The lid of the chest slowly closes and you leave the chamber, elated by your magnificent discovery. You continue along the corridor and explore the staircase ahead.</p>
+       <p>Despite its size, the Helmet feels light and comfortable. Mark it on your <a idref="action">Action Chart</a> as a Special Item.<footref id="sect308-1" idref="sect308-1-foot"/> If worn during combat, it will increase your <typ class="attribute">COMBAT SKILL</typ> by 2 points. The lid of the chest slowly closes and you leave the chamber, elated by your magnificent discovery. You continue along the corridor and explore the staircase ahead.</p>
        <choice idref="sect323"><link-text>Turn to 323</link-text>.</choice>
       </data>
      </section>
@@ -4407,7 +4449,7 @@ laboratory</description>
       <meta><title>317</title></meta>
 
       <data>
-       <p>The stone portal creaks open but grinds to an abrupt halt halfway across. The gap is a little over two feet wide and you are only just able to squeeze through to the chamber beyond. The air in the room is cold and stale; this chamber has obviously lain undisturbed for many thousands of years. Stone shelves are stacked high with bottles and flasks. On a table in the centre a beautiful pack full of different coloured potions.</p>
+       <p>The stone portal creaks open but grinds to an abrupt halt halfway across. The gap is a little over two feet wide and you are only just able to squeeze through to the chamber beyond. The air in the room is cold and stale; this chamber has obviously lain undisturbed for many thousands of years. Stone shelves are stacked high with bottles and flasks. On a table in the centre lies a beautiful pack full of different coloured potions.</p>
        <illustration class="inline">
         <meta>
          <creator>Gary Chalk</creator>
@@ -4505,7 +4547,7 @@ attack while you hold one of their children as hostage</description>
       <meta><title>325</title></meta>
 
       <data>
-       <p>The next morning arrives bright and windless. The sun pierces the thin layer of cloud, bathing the east in a soft pink glow. This beautiful vision reminds you that your Kai masters once told you that the light of Kalte is unlike anywhere else in Magnamund. With tent and equipment packed, you leave the pass and venture out on to the Hrod Basin; one hundred miles of open ice now lie between you and Storm Giant Pass.</p>
+       <p>The next morning arrives bright and windless. The sun pierces the thin layer of cloud, bathing the east in a soft pink glow. This beautiful vision reminds you that your Kai masters once told you that the light of Kalte is unlike anywhere else in Magnamund. With tent and equipment packed, you leave the pass and venture out <!--ERRTAG-RE-343205-->onto<!--/ERRTAG-RE-343205--> the Hrod Basin; one hundred miles of open ice now lie between you and Storm Giant Pass.</p>
        <p>At first, the journey is easy. The Basin has been worn smooth by the wind and no crevasses lurk unseen beneath the hard, dense snow. But at dawn on the third day, events take a turn for the worse. You are awoken from a deep sleep by Dyce shaking your shoulder. He is frightened. <ch.apos/>What<ch.apos/>s wrong?<ch.apos/> you ask, still bleary-eyed and sleepy.</p>
        <p><quote>Ice Barbarians<ch.ellips/> on the horizon. Twenty, maybe more. Five wind sledges and a warrior escort. I think they<ch.apos/>ve seen us.</quote></p>
        <p>In an instant, you have all climbed out of your sleeping furs and begun to pack away the tent. Dyce is correct, they are Ice Barbarians and they are heading towards you from the west. <quote>If they catch us, we<ch.apos/>re as good as dead,</quote> says Fenor, as he ties the last of the equipment to the sledge.</p>
@@ -4752,7 +4794,7 @@ beautiful glowing crystal</description>
        <p>Dyce makes it across to the opposite ledge safely, although Irian slips and has to be hauled out of the glacier by his waist rope. You and Fenor are still on this side of the crevasse. It is your turn to jump.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. If you have the Kai Discipline of Hunting, you may add 2 to the number you have picked.</p>
        <choice idref="sect195">If your total is now 0<ch.endash/>3, <link-text>turn to 195</link-text>.</choice>
-       <choice idref="sect232">If your total is now 4-11, <link-text>turn to 232</link-text>.</choice>
+       <choice idref="sect232">If your total is now 4<ch.endash/>11, <link-text>turn to 232</link-text>.</choice>
       </data>
      </section>
 
@@ -4796,12 +4838,12 @@ beautiful glowing crystal</description>
       </footnotes>
 
       <data>
-       <p>As the colours fade, you become aware of a sudden drop in temperature. You now stand upon the Ljuk ice shelf at a point less than half a mile from where the Cardonal lies at anchor. Loi-Kymar and Vonotar are close by, both shivering in the chill morning air. Within minutes you are sighted by the ship<ch.apos/>s lookout and a longboat is despatched. As a wriggling Vonotar is hoisted unceremoniously aboard the Cardonal and deposited in the brig the captain is the first to congratulate you on your skill and daring.</p>
+       <p>As the colours fade, you become aware of a sudden drop in temperature. You now stand upon the Ljuk ice shelf at a point less than half a mile from where the <cite>Cardonal</cite> lies at anchor. Loi-Kymar and Vonotar are close by, both shivering in the chill morning air. Within minutes you are sighted by the ship<ch.apos/>s lookout and a longboat is despatched. As a wriggling Vonotar is hoisted unceremoniously aboard the <cite>Cardonal</cite> and deposited in the brig the captain is the first to congratulate you on your skill and daring.</p>
        <p><quote>But how did you manage to return so quickly?</quote> he asks incredulously. <quote>We were not expecting you for another ten days.</quote></p>
-       <p><quote>Let us say,</quote> interrupts Loi-Kymar, <quote>that the wisdom of the Kai and the lore of the Magician<ch.apos/>s Guild can surpass the limitations of even time itself.</quote></p>
+       <p><quote>Let us say,</quote> interrupts Loi-Kymar, <quote>that the wisdom of the Kai and the lore of the <!--ERRTAG-RE-365765-->Magicians<ch.apos/> Guild<!--/ERRTAG-RE-365765--> can surpass the limitations of even time itself.</quote></p>
        <p>A puzzled expression crosses the captain<ch.apos/>s face, but it is gradually replaced by a smile as he begins to understand the magician<ch.apos/>s curious answer.</p>
        <p>Your journey to Anskavern is swift, but you are saddened by your memories of the brave guides that were left behind. Your arrival in the port is greeted by an anxious crowd. They fear that your early return is a sign of your mission<ch.apos/>s failure. When the news of Vonotar<ch.apos/>s capture becomes known, your warrior skills are required once again; this time in the defence of your enemy against the seething mob of outraged Sommlending that assault Anskavern gaol. Safe passage is eventually secured to Toran, where trial awaits the traitor.</p>
-       <p>Upon the dawn of the feast of Maesmarn, in the depths of the Guildhall of the Crystal Star, Vonotar the traitor is tried by his brotherhood and found guilty of his terrible crimes. He is led away in silence to the deepest chamber of the Guildhall, wherein lies the Daziarn: a portal of total darkness, the door of an eternal prison from which there can be no escape.<a id="sect350-1" idref="sect350-1-foot" class="footnote" /></p>
+       <p>Upon the dawn of the feast of Maesmarn, in the depths of the Guildhall of the Crystal Star, <!--ERRTAG-RE-366739-->Vonotar the Traitor<!--/ERRTAG-RE-366739--> is tried by his brotherhood and found guilty of his terrible crimes. He is led away in silence to the deepest chamber of the Guildhall, wherein lies the Daziarn: a portal of total darkness, the door of an eternal prison from which there can be no escape.<footref id="sect350-1" idref="sect350-1-foot"/></p>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
@@ -4810,9 +4852,9 @@ beautiful glowing crystal</description>
         <instance class="html" src="ill20.gif" width="772" height="602" />
         <instance class="pdf" src="ill20.pdf" width="772" height="602" />
        </illustration>
-       <p>You are the avenger of his crimes and it is you who cast the wretched traitor into the limbo of Daziarn. Your mission is now completed. You have survived the caverns of Kalte and freed Sommerlund from the menace of Vonotar.</p>
+       <p>You are the avenger of <!--ERRTAG-RE-367580-->his crimes, and it is you<!--/ERRTAG-RE-367580--> who cast the wretched traitor into the limbo of Daziarn. Your mission is now completed. You have survived the caverns of Kalte and freed Sommerlund from the menace of Vonotar.</p>
        <p>But the heat of battle and the challenge of a new and desperate quest awaits you in Book Four of the Lone Wolf series entitled:</p>
-       <p><a href="&link.04tcod;"><cite>The Chasm of Doom</cite></a></p>
+       <p><bookref series="lw" book="04tcod"><cite>The Chasm of Doom</cite></bookref></p>
       </data>
      </section>
     </data>
@@ -4877,6 +4919,64 @@ beautiful glowing crystal</description>
       </meta>
       <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif" />
      </illustration>
+
+     <illustration>
+      <meta>
+       <creator>Jonathan Blake</creator>
+      </meta>
+      <instance class="text">
+       <p>
+        <line><typ class="attribute">COMBAT SKILL</typ>: <ch.blankline/></line>
+        <line><typ class="attribute">ENDURANCE</typ>: <ch.blankline/></line>
+       </p>
+       <p>Kai Disciplines:</p>
+        <ol>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+        </ol>
+       <p>Bonus Disciplines:</p>
+        <ol>
+         <li><ch.blankline/>: 6th Discipline if you've completed one Lone Wolf Adventure successfully</li>
+         <li><ch.blankline/>: 7th Discipline if you've completed two Lone Wolf Adventures successfully</li>
+        </ol>
+       <p>Weapons:</p>
+        <ol>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+        </ol>
+       <p>Belt Pouch: <ch.blankline/></p>
+       <p>Meals: <ch.blankline/></p>
+       <p>Backpack Items:</p>
+        <ol>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+        </ol>
+       <p>Special Items:</p>
+        <ol>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+         <li><ch.blankline/></li>
+        </ol>
+      </instance>
+     </illustration>
     </data>
    </section>
 
@@ -4913,21 +5013,224 @@ beautiful glowing crystal</description>
     <meta><title>Combat Results Table</title></meta>
 
     <data>
-    <illustration>
-     <meta>
-      <creator>Jonathan Blake</creator>
-     </meta>
-     <instance src="crtneg.gif" width="386" height="472" class="html" mime-type="image/gif" />
-     <instance src="crtneg.tex" width="380" height="500" class="tex" />
-    </illustration>
+     <illustration>
+      <meta>
+       <creator>Jonathan Blake</creator>
+      </meta>
+      <instance src="crtneg.gif" width="386" height="472" class="html" mime-type="image/gif" />
+      <instance src="crtneg.tex" width="380" height="500" class="tex" />
+     </illustration>
 
-    <illustration>
-     <meta>
-      <creator>Jonathan Blake</creator>
-     </meta>
-     <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif" />
-     <instance src="crtpos.tex" width="380" height="500" class="tex" />
-    </illustration>
+     <illustration>
+      <meta>
+       <creator>Jonathan Blake</creator>
+      </meta>
+      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif" />
+      <instance src="crtpos.tex" width="380" height="500" class="tex" />
+     </illustration>
+
+     <illustration>
+      <meta>
+       <creator>Jonathan Blake</creator>
+      </meta>
+      <instance class="text">
+       <table summary="This table provides the endurance losses sustained by the hero and enemy as a result of combat.">
+        <caption>Combat Results with combined hero and enemy endurance losses</caption>
+
+        <colgroup span="1" />
+        <colgroup span="13" />
+
+        <tfoot>
+         <tr>
+          <td colspan="14">Combat results are given enemy's endurance loss first followed by the hero's endurance loss. For example, "12/0" means that the enemy loses 12 endurance points while the hero loses 0 endurance points. A combat result of "k" means that the combatant is killed. For example, "0/k" means that the enemy loses 0 endurance points while the hero is killed.</td>
+         </tr>
+        </tfoot>
+
+        <tbody>
+         <tr>
+          <th rowspan="2" scope="col">Random Number</th>
+          <th colspan="13" scope="colgroup">Combat Ratio</th>
+         </tr>
+
+         <tr>
+          <th scope="col" axis="combat_ratio">-11 or lower</th>
+          <th scope="col" axis="combat_ratio">-10/ -9</th>
+          <th scope="col" axis="combat_ratio">-8/ -7</th>
+          <th scope="col" axis="combat_ratio">-6/ -5</th>
+          <th scope="col" axis="combat_ratio">-4/ -3</th>
+          <th scope="col" axis="combat_ratio">-2/ -1</th>
+          <th scope="col" axis="combat_ratio">0</th>
+          <th scope="col" axis="combat_ratio">1/ 2</th>
+          <th scope="col" axis="combat_ratio">3/ 4</th>
+          <th scope="col" axis="combat_ratio">5/ 6</th>
+          <th scope="col" axis="combat_ratio">7/ 8</th>
+          <th scope="col" axis="combat_ratio">9/ 10</th>
+          <th scope="col" axis="combat_ratio">11 or higher</th>
+         </tr>
+         <tr>
+          <th scope="row" axis="random_number">1</th>
+          <td>0/k</td>
+          <td>0/k</td>
+          <td>0/8</td>
+          <td>0/6</td>
+          <td>1/6</td>
+          <td>2/5</td>
+          <td>3/5</td>
+          <td>4/5</td>
+          <td>5/4</td>
+          <td>6/4</td>
+          <td>7/4</td>
+          <td>8/3</td>
+          <td>9/3</td>
+         </tr>
+         <tr>
+          <th scope="row" axis="random_number">2</th>
+          <td>0/k</td>
+          <td>0/8</td>
+          <td>0/7</td>
+          <td>1/6</td>
+          <td>2/5</td>
+          <td>3/5</td>
+          <td>4/4</td>
+          <td>5/4</td>
+          <td>6/3</td>
+          <td>7/3</td>
+          <td>8/3</td>
+          <td>9/3</td>
+          <td>10/2</td>
+         </tr>
+         <tr>
+          <th scope="row" axis="random_number">3</th>
+          <td>0/8</td>
+          <td>0/7</td>
+          <td>1/6</td>
+          <td>2/5</td>
+          <td>3/5</td>
+          <td>4/4</td>
+          <td>5/4</td>
+          <td>6/3</td>
+          <td>7/3</td>
+          <td>8/3</td>
+          <td>9/2</td>
+          <td>10/2</td>
+          <td>11/2</td>
+         </tr>
+         <tr>
+          <th scope="row" axis="random_number">4</th>
+          <td>0/8</td>
+          <td>1/7</td>
+          <td>2/6</td>
+          <td>3/5</td>
+          <td>4/4</td>
+          <td>5/4</td>
+          <td>6/3</td>
+          <td>7/3</td>
+          <td>8/2</td>
+          <td>9/2</td>
+          <td>10/2</td>
+          <td>11/2</td>
+          <td>12/2</td>
+         </tr>
+         <tr>
+          <th scope="row" axis="random_number">5</th>
+          <td>1/7</td>
+          <td>2/6</td>
+          <td>3/5</td>
+          <td>4/4</td>
+          <td>5/4</td>
+          <td>6/3</td>
+          <td>7/2</td>
+          <td>8/2</td>
+          <td>9/2</td>
+          <td>10/2</td>
+          <td>11/2</td>
+          <td>12/2</td>
+          <td>14/1</td>
+         </tr>
+         <tr>
+          <th scope="row" axis="random_number">6</th>
+          <td>2/6</td>
+          <td>3/6</td>
+          <td>4/5</td>
+          <td>5/4</td>
+          <td>6/3</td>
+          <td>7/2</td>
+          <td>8/2</td>
+          <td>9/2</td>
+          <td>10/2</td>
+          <td>11/1</td>
+          <td>12/1</td>
+          <td>14/1</td>
+          <td>16/1</td>
+         </tr>
+         <tr>
+          <th scope="row" axis="random_number">7</th>
+          <td>3/5</td>
+          <td>4/5</td>
+          <td>5/4</td>
+          <td>6/3</td>
+          <td>7/2</td>
+          <td>8/2</td>
+          <td>9/1</td>
+          <td>10/1</td>
+          <td>11/1</td>
+          <td>12/0</td>
+          <td>14/0</td>
+          <td>16/0</td>
+          <td>18/0</td>
+         </tr>
+         <tr>
+          <th scope="row" axis="random_number">8</th>
+          <td>4/4</td>
+          <td>8/4</td>
+          <td>6/3</td>
+          <td>7/2</td>
+          <td>8/1</td>
+          <td>9/1</td>
+          <td>10/0</td>
+          <td>11/0</td>
+          <td>12/0</td>
+          <td>14/0</td>
+          <td>16/0</td>
+          <td>18/0</td>
+          <td>k/0</td>
+         </tr>
+         <tr>
+          <th scope="row" axis="random_number">9</th>
+          <td>5/3</td>
+          <td>6/3</td>
+          <td>7/2</td>
+          <td>8/0</td>
+          <td>9/0</td>
+          <td>10/0</td>
+          <td>11/0</td>
+          <td>12/0</td>
+          <td>14/0</td>
+          <td>16/0</td>
+          <td>18/0</td>
+          <td>k/0</td>
+          <td>k/0</td>
+         </tr>
+         <tr>
+          <th scope="row" axis="random_number">0</th>
+          <td>6/0</td>
+          <td>7/0</td>
+          <td>8/0</td>
+          <td>9/0</td>
+          <td>10/0</td>
+          <td>11/0</td>
+          <td>12/0</td>
+          <td>14/0</td>
+          <td>16/0</td>
+          <td>18/0</td>
+          <td>k/0</td>
+          <td>k/0</td>
+          <td>k/0</td>
+         </tr>
+        </tbody>
+       </table>
+      </instance>
+     </illustration>
     </data>
    </section>
 
@@ -4941,6 +5244,137 @@ beautiful glowing crystal</description>
        <creator>Jonathan Blake</creator>
       </meta>
       <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif" />
+     </illustration>
+
+     <illustration>
+      <meta>
+       <creator>Jonathan Blake</creator>
+      </meta>
+      <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif" />
+      <instance class="text">
+       <table>
+        <tr>
+         <td>0</td>
+         <td>3</td>
+         <td>1</td>
+         <td>3</td>
+         <td>9</td>
+         <td>7</td>
+         <td>5</td>
+         <td>0</td>
+         <td>1</td>
+         <td>5</td>
+        </tr>
+        <tr>
+         <td>5</td>
+         <td>8</td>
+         <td>2</td>
+         <td>5</td>
+         <td>1</td>
+         <td>3</td>
+         <td>6</td>
+         <td>4</td>
+         <td>3</td>
+         <td>9</td>
+        </tr>
+        <tr>
+         <td>7</td>
+         <td>0</td>
+         <td>4</td>
+         <td>8</td>
+         <td>6</td>
+         <td>4</td>
+         <td>5</td>
+         <td>1</td>
+         <td>4</td>
+         <td>2</td>
+        </tr>
+        <tr>
+         <td>4</td>
+         <td>6</td>
+         <td>8</td>
+         <td>3</td>
+         <td>2</td>
+         <td>0</td>
+         <td>1</td>
+         <td>7</td>
+         <td>2</td>
+         <td>5</td>
+        </tr>
+        <tr>
+         <td>8</td>
+         <td>3</td>
+         <td>7</td>
+         <td>0</td>
+         <td>9</td>
+         <td>6</td>
+         <td>2</td>
+         <td>4</td>
+         <td>8</td>
+         <td>1</td>
+        </tr>
+        <tr>
+         <td>1</td>
+         <td>5</td>
+         <td>7</td>
+         <td>3</td>
+         <td>6</td>
+         <td>9</td>
+         <td>0</td>
+         <td>1</td>
+         <td>7</td>
+         <td>9</td>
+        </tr>
+        <tr>
+         <td>3</td>
+         <td>9</td>
+         <td>2</td>
+         <td>8</td>
+         <td>1</td>
+         <td>7</td>
+         <td>4</td>
+         <td>9</td>
+         <td>7</td>
+         <td>8</td>
+        </tr>
+        <tr>
+         <td>6</td>
+         <td>1</td>
+         <td>0</td>
+         <td>7</td>
+         <td>3</td>
+         <td>0</td>
+         <td>5</td>
+         <td>4</td>
+         <td>6</td>
+         <td>7</td>
+        </tr>
+        <tr>
+         <td>0</td>
+         <td>2</td>
+         <td>8</td>
+         <td>9</td>
+         <td>2</td>
+         <td>9</td>
+         <td>6</td>
+         <td>0</td>
+         <td>2</td>
+         <td>4</td>
+        </tr>
+        <tr>
+         <td>5</td>
+         <td>9</td>
+         <td>6</td>
+         <td>4</td>
+         <td>8</td>
+         <td>2</td>
+         <td>8</td>
+         <td>5</td>
+         <td>6</td>
+         <td>3</td>
+        </tr>
+       </table>
+      </instance>
      </illustration>
     </data>
    </section>
@@ -4963,7 +5397,7 @@ beautiful glowing crystal</description>
 
       <data>
        <p>(<a idref="tssf">The Story So Far<ch.ellips/></a>) Replaced <quote>hunch-backed</quote> with <quote>hunchbacked</quote>.</p>
-       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced all occurrences of the abbreviation <quote>ie</quote> with <quote>i.e.</quote>. Replaced <quote>Combat Skill, Endurance Points</quote> with <quote><typ class="attribute">COMBAT SKILL</typ>, <typ class="attribute">ENDURANCE</typ> points</quote>. Removed <quote> that you will find in the front of this book. For further adventuring you can copy out the chart yourself or get it photocopied</quote>.</p>
+       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced all occurrences of the abbreviation <quote>ie</quote> with <quote>i.e.</quote>. Replaced <quote>Combat Skill, Endurance Points</quote> with <quote><typ class="attribute">COMBAT SKILL</typ>, <typ class="attribute">ENDURANCE</typ> points</quote>. Removed <quote> that you will find in the front of this book. For further adventuring you can copy out the chart yourself or get it photocopied</quote>.<!--ERRTAG-RE-10410-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-10410-ITEM--></p>
        <p>(<a idref="discplnz">Kai Disciplines</a>) Replaced <quote>Kai Discipline section</quote> with <quote>Kai Disciplines section</quote>. Capitalized all occurrences of <quote>discipline</quote>.</p>
        <p>(<a idref="equipmnt">Equipment</a>) Removed <quote> (see the front of this book)</quote> and capitalized <quote>map</quote>. Replaced <quote>come in useful</quote> with <quote>be useful</quote>, <quote><a idref="discplnz">Kai Discipline</a> section</quote> with <quote><a idref="discplnz">Kai Disciplines</a> section</quote>, and <quote>ice-sledge along</quote> with <quote>ice-sledge, along</quote>. Replaced <quote><quote>Food</quote> on page 22</quote> with <quote><quote>How to Use Your Equipment</quote></quote>.</p>
        <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed <quote> on the inside back cover of the book</quote>. Replaced <quote>appears on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>.</p>
@@ -4971,15 +5405,18 @@ beautiful glowing crystal</description>
        <p>(<a idref="kaiwisdm">Kai Wisdom</a>) Removed <quote> at the front of the book</quote>. Replaced <quote>ice-fortress</quote> with <quote>ice fortress</quote>.</p>
        <p>(<a idref="sect1">1</a>) Replaced <quote>pack ice</quote> with <quote>pack-ice</quote>. Replaced the word <quote>becoming</quote> with <quote>become</quote> in the fourth paragraph. Removed <quote> at the front of the book</quote>.</p>
        <p>(<a idref="sect13">13</a>) Replaced both occurrences of <quote>spyhole</quote> with <quote>spy-hole</quote>.</p>
+<p>(<a idref="sect21">21</a>)<!--ERRTAG-RE-59623-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-59623-ITEM--></p>
        <p>(<a idref="sect26">26</a>) Moved the Sixth Sense choice into the first position.</p>
        <p>(<a idref="sect27">27</a>) Replaced <quote>rock face</quote> with <quote>rock-face</quote>.</p>
-       <p>(<a idref="sect33">33</a>) Moved the Tracking or Sixth Sense choice into the first position.</p>
+       <p>(<a idref="sect33">33</a>) Moved the Tracking or Sixth Sense choice into the first position.<!--ERRTAG-RE-70145-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-70145-ITEM--></p>
        <p>(<a idref="sect34">34</a>) Replaced <quote>cretaure</quote> with <quote>creature</quote> and <quote>home-coming</quote> with <quote>homecoming</quote>.</p>
        <p>(<a idref="sect40">40</a>) Moved the Tracking choice into the first position.</p>
-       <p>(<a idref="sect44">44</a>) Replaced <quote>spyhole</quote> with <quote>spy-hole</quote>.</p>
+       <p>(<a idref="sect44">44</a>) Replaced <quote>spyhole</quote> with <quote>spy-hole</quote>.<!--ERRTAG-RE-81998-ITEM--> Replaced <quote>mystery to me, I have</quote> with <quote>mystery to me. I have</quote>.<!--/ERRTAG-RE-81998-ITEM--></p>
        <p>(<a idref="sect49">49</a>) Moved the Tracking choice into the first position.</p>
        <p>(<a idref="sect52">52</a>) Replaced <quote>ice-creature</quote> with <quote>ice creature</quote>.</p>
-       <p>(<a idref="sect56">56</a>) Added a quotation mark at the end of the fourth paragraph due to technical limitations in our XML.</p>
+       <p>(<a idref="sect56">56</a>) Added a quotation mark at the end of the fourth paragraph due to technical limitations in our XML.<!--ERRTAG-RE-93667-ITEM--> Replaced <quote>Magician<ch.apos/>s Guild</quote> with <quote>Magicians<ch.apos/> Guild</quote>.<!--/ERRTAG-RE-93667-ITEM--><!--ERRTAG-RE-94585-ITEM--> Replaced <quote>wretch is responsible</quote> with <quote>wretch, is responsible</quote>.<!--/ERRTAG-RE-94585-ITEM--></p>
+<p>(<a idref="sect58">58</a>)<!--ERRTAG-RE-97798-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-97798-ITEM--></p>
+<p>(<a idref="sect59">59</a>)<!--ERRTAG-RE-98307-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-98307-ITEM--></p>
        <p>(<a idref="sect62">62</a>) Made the last sentence its own paragraph to better fit our format for the choices.</p>
        <p>(<a idref="sect64">64</a>) Made the north tunnel choice lead to <a idref="sect321">Section 321</a> instead of directly to <a idref="sect235">Section 235</a>. This section is reacted from <a idref="sect105">Section 105</a> where that is indeed the section for the north tunnel. This prevents penalizing the reader for using Sixth Sense by not being able to obtain the Blue Stone Triangle.</p>
        <p>(<a idref="sect69">69</a>) Moved the Camouflage choice into the first position.</p>
@@ -4991,36 +5428,48 @@ beautiful glowing crystal</description>
        <p>(<a idref="sect105">105</a>) Moved the Sixth Sense choice into the first position.</p>
        <p>(<a idref="sect110">110</a>) Replaced <quote>dimly-lit</quote> with <quote>dimly lit</quote>.</p>
        <p>(<a idref="sect114">114</a>) Moved the Hunting choice into the first position.</p>
+<p>(<a idref="sect116">116</a>)<!--ERRTAG-RE-149229-ITEM--> Replaced <quote>Vial of Laumspur</quote> with <quote>vial of Laumspur</quote>.<!--/ERRTAG-RE-149229-ITEM--><!--ERRTAG-RE-149114-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-149114-ITEM--></p>
        <p>(<a idref="sect125">125</a>) Moved the Camouflage choice into the first position.</p>
+<p>(<a idref="sect134">134</a>)<!--ERRTAG-RE-168665-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-168665-ITEM--></p>
        <p>(<a idref="sect137">137</a>) Replaced <quote>discipline</quote> with <quote>Discipline</quote>.</p>
+<p>(<a idref="sect146">146</a>)<!--ERRTAG-RE-178113-ITEM--> Replaced <quote>as crevasse</quote> with <quote>as the crevasse</quote>.<!--/ERRTAG-RE-178113-ITEM--></p>
        <p>(<a idref="sect148">148</a>) Replaced <quote>death blow</quote> with <quote>death-blow</quote>.</p>
        <p>(<a idref="sect150">150</a>) Moved the Firesphere choice into the second position.</p>
        <p>(<a idref="sect151">151</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>.</p>
        <p>(<a idref="sect155">155</a>) Replaced <quote>rock face</quote> with <quote>rock-face</quote>.</p>
-       <p>(<a idref="sect160">160</a>) Moved the choice regarding leaving the tent into the last position.</p>
+       <p>(<a idref="sect160">160</a>) Moved the choice regarding leaving the tent into the last position.<!--ERRTAG-RE-191812-ITEM--> Replaced <quote>breed are</quote> with <quote>breed is</quote>.<!--/ERRTAG-RE-191812-ITEM--></p>
+<p>(<a idref="sect167">167</a>)<!--ERRTAG-RE-200050-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-200050-ITEM--></p>
+<p>(<a idref="sect168">168</a>)<!--ERRTAG-RE-200920-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-200920-ITEM--></p>
+<p>(<a idref="sect170">170</a>)<!--ERRTAG-RE-201948-ITEM--> Replaced <quote>My thanks Kai Lord</quote> with <quote>My thanks, Kai Lord</quote>.<!--/ERRTAG-RE-201948-ITEM--></p>
        <p>(<a idref="sect171">171</a>) Replaced <quote>discipline</quote> with <quote>Discipline</quote>.</p>
        <p>(<a idref="sect180">180</a>) Switched the order of the choices.</p>
        <p>(<a idref="sect182">182</a>) Replaced <quote>ice-wall</quote> with <quote>ice wall</quote>.</p>
        <p>(<a idref="sect190">190</a>) Replaced <quote>out distance</quote> with <quote>outdistance</quote>.</p>
        <p>(<a idref="sect194">194</a>) Added the choice <quote>If you have the Kai Discipline of Sixth Sense, <a idref="sect127">turn to 127</a>,</quote> to parallel the same situation in <a idref="sect326">Section 326</a>.</p>
        <p>(<a idref="sect203">203</a>) Replaced <quote>spyhole</quote> with <quote>spy-hole</quote>.</p>
+<p>(<a idref="sect207">207</a>)<!--ERRTAG-RE-234861-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-234861-ITEM--></p>
        <p>(<a idref="sect209">209</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>.</p>
        <p>(<a idref="sect210">210</a>) Added <quote>the</quote> before <quote>Kai Discipline</quote> in the first link.</p>
+<p>(<a idref="sect211">211</a>)<!--ERRTAG-RE-237434-ITEM--> Replaced <quote>-3 to 3</quote> with <quote>-3<ch.endash/>3</quote>.<!--/ERRTAG-RE-237434-ITEM--></p>
+<p>(<a idref="sect220">220</a>)<!--ERRTAG-RE-246372-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-246372-ITEM--></p>
        <p>(<a idref="sect232">232</a>) Replaced <quote>much-deserved</quote> with <quote>much deserved</quote>.</p>
        <p>(<a idref="sect235">235</a>) Replaced <quote>pack ice</quote> with <quote>pack-ice</quote>.</p>
        <p>(<a idref="sect247">247</a>) Replaced <quote>matts</quote> with <quote>mats</quote>.</p>
        <p>(<a idref="sect248">248</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>.</p>
+<p>(<a idref="sect250">250</a>)<!--ERRTAG-RE-272490-ITEM--> Replaced <quote>visited the Graveyard of the Ancients</quote> with <quote>visited the Graveyard of the Ancients and survived</quote>.<!--/ERRTAG-RE-272490-ITEM--></p>
        <p>(<a idref="sect254">254</a>) Replaced <quote>spyhole</quote> with <quote>spy-hole</quote>.</p>
        <p>(<a idref="sect262">262</a>) Split the first paragraph into two paragraphs and moved the Sixth Sense choice between the two. Replaced <quote>posses</quote> with <quote>possess</quote> and <quote>Pick</quote> with <quote>Otherwise, pick</quote>.</p>
        <p>(<a idref="sect263">263</a>) Moved the choice regarding lost <typ class="attribute">ENDURANCE</typ> points into the first position.</p>
-       <p>(<a idref="sect273">273</a>) Replaced <quote>well-suited</quote> with <quote>well suited</quote>.</p>
+<p>(<a idref="sect272">272</a>)<!--ERRTAG-RE-292685-ITEM--> Replaced <quote>its tip</quote> with <quote>the rod<ch.apos/>s tip</quote>.<!--/ERRTAG-RE-292685-ITEM--></p>
+       <p>(<a idref="sect273">273</a>) Replaced <quote>well-suited</quote> with <quote>well suited</quote>.<!--ERRTAG-RE-293810-ITEM--> Replaced <quote>breed are</quote> with <quote>breed is</quote>.<!--/ERRTAG-RE-293810-ITEM--></p>
        <p>(<a idref="sect276">276</a>) Moved the Hunting or Tracking choice into the first position.</p>
        <p>(<a idref="sect284">284</a>) Replaced <quote>fast flowing</quote> with <quote>fast-flowing</quote>.</p>
        <p>(<a idref="sect298">298</a>) Replaced <quote>fingerbones</quote> with <quote>finger-bones</quote>.</p>
+<p>(<a idref="sect301">301</a>)<!--ERRTAG-RE-320442-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-320442-ITEM--></p>
        <p>(<a idref="sect303">303</a>) Added the choice <quote>If you have the Kai Discipline of Sixth Sense, <a idref="sect127">turn to 127</a>,</quote> to parallel the same situation in <a idref="sect326">Section 326</a>.</p>
        <p>(<a idref="sect314">314</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>.</p>
        <p>(<a idref="sect320">320</a>) Replaced <quote>something- </quote> with <quote>something<ch.emdash/></quote>.</p>
-       <p>(<a idref="sect325">325</a>) Replaced <quote>warlike</quote> with <quote>war-like</quote>.</p>
+       <p>(<a idref="sect325">325</a>) Replaced <quote>warlike</quote> with <quote>war-like</quote>.<!--ERRTAG-RE-343205-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-343205-ITEM--></p>
        <p>(<a idref="sect326">326</a>) Moved the Sixth Sense choice into the first position.</p>
        <p>(<a idref="sect332">332</a>) Moved the Sixth Sense or Hunting choice into the first position.</p>
        <p>(<a idref="sect335">335</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>.</p>
@@ -5028,7 +5477,7 @@ beautiful glowing crystal</description>
        <p>(<a idref="sect337">337</a>) Replaced <quote>vicious looking</quote> with <quote>vicious-looking</quote>.</p>
        <p>(<a idref="sect339">339</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>.</p>
        <p>(<a idref="sect342">342</a>) Removed <quote> at the front of the book</quote>.</p>
-       <p>(<a idref="sect350">350</a>) Replaced <quote>LONE WOLF</quote> of the last paragraph with <quote>Lone Wolf</quote> and replaced both occurrences of <quote>Captain</quote> with <quote>captain</quote>.</p>
+       <p>(<a idref="sect350">350</a>) Replaced <quote>LONE WOLF</quote> of the last paragraph with <quote>Lone Wolf</quote> and replaced both occurrences of <quote>Captain</quote> with <quote>captain</quote>.<!--ERRTAG-RE-365765-ITEM--> Replaced <quote>Magician<ch.apos/>s Guild</quote> with <quote>Magicians<ch.apos/> Guild</quote>.<!--/ERRTAG-RE-365765-ITEM--><!--ERRTAG-RE-367580-ITEM--> Replaced <quote>his crimes and it is you</quote> with <quote>his crimes, and it is you</quote>.<!--/ERRTAG-RE-367580-ITEM--><!--ERRTAG-RE-366739-ITEM--> Replaced <quote>Vonotar the traitor</quote> with <quote>Vonotar the Traitor</quote>.<!--/ERRTAG-RE-366739-ITEM--></p>
        <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>.</p>
       </data>
      </section>
