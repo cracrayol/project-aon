@@ -16,6 +16,9 @@
 $Id$
 
 $Log$
+Revision 1.7  2007/03/17 00:08:34  jonathan.blake
+Updating footnote markup
+
 Revision 1.6  2006/12/20 00:13:05  jonathan.blake
 Added text-only illustrations for RNT and CRT. Refined the text-only illustration for Action Chart.
 
@@ -1524,7 +1527,7 @@ Todo:
      </footnotes>
 
      <data>
-      <p>The Gem feels very hot and burns your hand. Lose 2 <typ class="attribute">ENDURANCE</typ> points. You quickly grab it with the edge of your cloak and <a id="sect76-1" idref="sect76-1-foot" class="footnote">slip it into the pocket of your jacket.</a> A Gem that size must be worth hundreds of Crowns! You smile at your good fortune, mount your horse and ride off along the south track.</p>
+      <p>The Gem feels very hot and burns your hand. Lose 2 <typ class="attribute">ENDURANCE</typ> points. You quickly grab it with the edge of your cloak and slip it into the pocket of your jacket.<footref id="sect76-1" idref="sect76-1-foot"/> A Gem that size must be worth hundreds of Crowns! You smile at your good fortune, mount your horse and ride off along the south track.</p>
       <illustration class="inline">
        <meta>
         <creator>Gary Chalk</creator>
@@ -1992,7 +1995,7 @@ Todo:
        </meta>
        <instance class="html" height="288" width="288" src="113.gif" />
       </illustration>
-      <p>Kneeling down, you pick a handful of Laumspur and place it in your Backpack. You may eat this herb to regain lost <typ class="attribute">ENDURANCE</typ> points. Each Meal of Laumspur will restore 3 <typ class="attribute">ENDURANCE</typ> points, and you have gathered enough for <a id="sect113-1" idref="sect113-1-foot" class="footnote">two such Meals.</a> Closing your pack, you continue your mission.</p>
+      <p>Kneeling down, you pick a handful of Laumspur and place it in your Backpack. You may eat this herb to regain lost <typ class="attribute">ENDURANCE</typ> points. Each Meal of Laumspur will restore 3 <typ class="attribute">ENDURANCE</typ> points, and you have gathered enough for two such Meals.<footref id="sect113-1" idref="sect113-1-foot"/> Closing your pack, you continue your mission.</p>
       <choice idref="sect347">If you wish to head northeast, <link-text>turn to 347</link-text>.</choice>
       <choice idref="sect295">If you wish to head east, <link-text>turn to 295</link-text>.</choice>
      </data>
@@ -2299,7 +2302,7 @@ Todo:
      </footnotes>
 
      <data>
-      <p>As the last of the foul creatures die, so the greenish light starts to fade. You notice that in each of the broken skulls lies a Gem. You take these <a id="sect137-1" idref="sect137-1-foot" class="footnote">20 Gems</a> before darkness engulfs the chamber. Remember to mark these on your <a idref="action">Action Chart</a>.</p>
+      <p>As the last of the foul creatures die, so the greenish light starts to fade. You notice that in each of the broken skulls lies a Gem. You take these 20 Gems<footref id="sect137-1" idref="sect137-1-foot"/> before darkness engulfs the chamber. Remember to mark these on your <a idref="action">Action Chart</a>.</p>
       <p>You quickly leave the dead Crypt spawn and press on.</p>
       <choice idref="sect23"><link-text>Turn to 23</link-text>.</choice>
      </data>
@@ -2427,7 +2430,7 @@ Todo:
      </footnotes>
 
      <data>
-      <p>After a few minutes walking, you find a mossy hut set back from the path. You are hungry and must eat a Meal here or lose 3 <typ class="attribute">ENDURANCE</typ> points. As you eat you notice that the path starts to curve towards the east. <a id="sect147-1" idref="sect147-1-foot" class="footnote" /></p>
+      <p>After a few minutes walking, you find a mossy hut set back from the path. You are hungry and must eat a Meal here or lose 3 <typ class="attribute">ENDURANCE</typ> points. As you eat you notice that the path starts to curve towards the east. <footref id="sect147-1" idref="sect147-1-foot"/></p>
       <choice idref="sect42">If you wish to follow it, <link-text>turn to 42</link-text>.</choice>
       <choice idref="sect28">If you wish to return the way you have come, <link-text>turn to 28</link-text>.</choice>
      </data>
@@ -2861,7 +2864,7 @@ Todo:
 
      <data>
       <p>Instinctively you duck, and dive to avoid the crossbow bolt. The bandit fires and you feel the sleeve of your jacket tear as the missile grazes past your left arm. You thank the gods for your good fortune and sprint on.</p>
-      <p>None of the other bandits have bows and they soon give up the chase. As you sprint off into the distance, you leave them all far behind. You have <a id="sect181-1" idref="sect181-1-foot" class="footnote">lost your Weapons and Equipment,</a> but not your life.</p>
+      <p>None of the other bandits have bows and they soon give up the chase. As you sprint off into the distance, you leave them all far behind. You have lost your Weapons and Equipment,<footref id="sect181-1" idref="sect181-1-foot"/> but not your life.</p>
       <p>You stop just long enough to strap up your wounded arm and then continue along the road towards the outer defences of the capital.</p>
       <choice idref="sect288"><link-text>Turn to 288</link-text>.</choice>
      </data>
@@ -3138,7 +3141,7 @@ Todo:
      </footnotes>
 
      <data>
-      <p>Their leader picks up your <a id="sect205-1" idref="sect205-1-foot" class="footnote">discarded Equipment</a> and ushers you along the road ahead. An evil grin spreads across the face of the other two men, and you suddenly realize that they are not soldiers after all. You make a break for it and run away from there, sprinting towards the distant capital.</p>
+      <p>Their leader picks up your discarded Equipment<footref id="sect205-1" idref="sect205-1-foot"/> and ushers you along the road ahead. An evil grin spreads across the face of the other two men, and you suddenly realize that they are not soldiers after all. You make a break for it and run away from there, sprinting towards the distant capital.</p>
       <p>Behind you, the ominous click of a crossbow being primed sends a shiver down your spine.</p>
       <illustration class="inline">
        <meta>
@@ -3520,7 +3523,7 @@ Todo:
      </footnotes>
 
      <data>
-      <p>The Gem hovers above the mouth of the skeleton king, glowing a fierce red. Suddenly, an explosion of searing crimson flame lashes upwards from the sarcophagus, <a id="sect236-1" idref="sect236-1-foot" class="footnote">destroying the Gem completely.</a> You are thrown against the far wall and knocked unconscious.</p>
+      <p>The Gem hovers above the mouth of the skeleton king, glowing a fierce red. Suddenly, an explosion of searing crimson flame lashes upwards from the sarcophagus, destroying the Gem completely.<footref id="sect236-1" idref="sect236-1-foot"/> You are thrown against the far wall and knocked unconscious.</p>
       <illustration class="inline">
        <meta>
         <creator>JC Alvarez</creator>
@@ -4344,7 +4347,7 @@ Todo:
 
      <data>
       <p>The Gem feels incredibly hot and burns your hand. Lose 2 <typ class="attribute">ENDURANCE</typ> points.</p>
-      <p>You quickly pick it up with the edge of your Kai cloak and <a id="sect304-1" idref="sect304-1-foot" class="footnote">slip it into your Backpack.</a> A Gem that size must be worth hundreds of Crowns. But the Giaks are very close and their arrows whistle past your head as you turn and run for the safety of the forest.</p>
+      <p>You quickly pick it up with the edge of your Kai cloak and slip it into your Backpack.<footref id="sect304-1" idref="sect304-1-foot"/> A Gem that size must be worth hundreds of Crowns. But the Giaks are very close and their arrows whistle past your head as you turn and run for the safety of the forest.</p>
       <choice idref="sect2"><link-text>Turn to 2</link-text>.</choice>
      </data>
     </section>
@@ -4913,7 +4916,7 @@ Todo:
       <p><quote>I fear we were betrayed,</quote> says Banedon, his head bowed in sorrow.</p>
       <p><quote>One of my order, a brother called Vonotar, had explored the forbidden mysteries of the Black Art. Ten days ago he denounced the Brotherhood and killed one of our Elders. He has since disappeared. It is rumoured that he now aids the Darklords.</quote></p>
       <p>You tell Banedon what has happened at the monastery, and of your mission to warn the King. Silently, he removes a gold chain from around his neck and hands it to you. On the chain is a small Crystal Star Pendant. <quote>It is the symbol of my Brotherhood, and we are both truly brothers in this hour of darkness. It is a talisman of good fortune<ch.emdash/>may it protect you on your road ahead.</quote></p>
-      <p>You thank him, place the chain around your neck and slip the <a id="sect349-1" idref="sect349-1-foot" class="footnote">Crystal Star</a> inside your shirt. (Remember to mark this on your <a idref="action">Action Chart</a>.)</p>
+      <p>You thank him, place the chain around your neck and slip the Crystal Star<footref id="sect349-1" idref="sect349-1-foot"/> inside your shirt. (Remember to mark this on your <a idref="action">Action Chart</a>.)</p>
       <p>Banedon bids you farewell. <quote>We must leave this place lest the Giaks return with more of their loathsome kind to put an end to us. I must return to my Guild. I bid you farewell, my brother. May the luck of the gods go with you.</quote></p>
       <choice idref="sect293"><link-text>Turn to 293</link-text>.</choice>
      </data>
