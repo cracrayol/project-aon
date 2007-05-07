@@ -16,6 +16,9 @@
 $Id$
 
 $Log$
+Revision 1.8  2007/05/07 22:53:23  jonathan.blake
+special thanks, errata fixes, and fixing illustration dimensions
+
 Revision 1.7  2007/03/17 00:08:34  jonathan.blake
 Updating footnote markup
 
@@ -109,7 +112,7 @@ Todo:
    &inclusion.gary.chalk.bio.lw;
  </creator>
  <publisher>Project Aon</publisher>
- <date class="publication"><year>2006</year><month>12</month><day>6</day></date>
+ <date class="publication"><year>2007</year><month>5</month><day>7</day></date>
  <description class="blurb">
   <p>You are the sole survivor of a devastating attack on the monastery where you were learning the skills of the Kai Lords. You swear vengeance on the Darklords for the massacre of the Kai warriors, and with a sudden flash of insight you know what you must do. You must set off on a perilous journey to the capital city to warn the King of the terrible threat that faces his people: For you are now the last of the Kai you are now <strong>Lone Wolf</strong>.</p>
  </description>
@@ -183,7 +186,7 @@ Todo:
        <dt>Coordination</dt>
         <dd>Jonathan Blake</dd>
        <dt>Special Thanks</dt>
-        <dd>Pedro Almeida, Laurence O<ch.apos/>Toole</dd>
+        <dd>Pedro Almeida, Tony Lenzo, Laurence O<ch.apos/>Toole</dd>
       </dl>
      </data>
     </section>
@@ -294,8 +297,8 @@ Todo:
          <meta>
           <creator>Gary Chalk</creator>
          </meta>
-         <instance class="html" src="weapons.gif" width="386" height="276" />
-         <instance class="pdf" src="weapons.pdf" width="386" height="276" />
+         <instance class="html" src="weapons.gif" width="386" height="278" />
+         <instance class="pdf" src="weapons.pdf" width="386" height="278" />
          <instance class="text">
           <ul class="unbulleted">
            <li>0 = Dagger</li>
@@ -375,8 +378,8 @@ Todo:
          <meta>
           <creator>Gary Chalk</creator>
          </meta>
-         <instance class="html" src="helmet.gif" width="150" height="46" />
-         <instance class="pdf" src="helmet.pdf" width="150" height="46" />
+         <instance class="html" src="helmet.gif" width="386" height="150" />
+         <instance class="pdf" src="helmet.pdf" width="386" height="150" />
         </illustration>
        </li>
        <li>
@@ -385,8 +388,8 @@ Todo:
          <meta>
           <creator>Gary Chalk</creator>
          </meta>
-         <instance class="html" src="food.gif" width="178" height="41" />
-         <instance class="pdf" src="food.pdf" width="178" height="41" />
+         <instance class="html" src="food.gif" width="386" height="150" />
+         <instance class="pdf" src="food.pdf" width="386" height="150" />
         </illustration>
        </li>
        <li>
@@ -406,8 +409,8 @@ Todo:
          <meta>
           <creator>Gary Chalk</creator>
          </meta>
-         <instance class="html" src="potion.gif" width="150" height="62" />
-         <instance class="pdf" src="potion.pdf" width="150" height="62" />
+         <instance class="html" src="potion.gif" width="386" height="150" />
+         <instance class="pdf" src="potion.pdf" width="386" height="150" />
         </illustration>
        </li>
        <li><p>7 = Quarterstaff (Weapons)</p></li>
@@ -418,8 +421,8 @@ Todo:
          <meta>
           <creator>Gary Chalk</creator>
          </meta>
-         <instance class="html" src="pouch.gif" width="150" height="38" />
-         <instance class="pdf" src="pouch.pdf" width="150" height="38" />
+         <instance class="html" src="pouch.gif" width="386" height="150" />
+         <instance class="pdf" src="pouch.pdf" width="386" height="150" />
         </illustration>
        </li>
        <li><p>0 = Broadsword (Weapons)</p></li>
@@ -2671,7 +2674,7 @@ Todo:
      <meta><title>166</title></meta>
 
      <data>
-      <p>You are in the presence of a great evil. Your mind is being probed by a powerful and timeless being and you must shield yourself. The struggle has begun and your sanity is at stake. It is a long and tortuous ordeal, during which you experience many fantastic and terrible apparitions that tempt and appal you. After this you must lose 4 <typ class="attribute">ENDURANCE</typ> points and stagger towards the tunnel.</p>
+      <p>You are in the presence of a great evil. Your mind is being probed by a powerful and timeless being and you must shield yourself. The struggle has begun and your sanity is at stake. It is a long and <!--ERRTAG-RE-169126-->torturous<!--/ERRTAG-RE-169126--> ordeal, during which you experience many fantastic and terrible apparitions that tempt and appal you. After this you must lose 4 <typ class="attribute">ENDURANCE</typ> points and stagger towards the tunnel.</p>
       <choice idref="sect104"><link-text>Turn to 104</link-text>.</choice>
      </data>
     </section>
@@ -4001,7 +4004,7 @@ Todo:
 
      <data>
       <p>You have followed this twisting track for about twenty minutes when you hear the beating of wings high above the trees. Looking up you see a large Kraan approaching from the north, its huge black wings casting a gigantic shadow on the trees below.</p>
-      <p>On its back are two creatures armed with long spears. They are Mountain Giaks<ch.emdash/>small ugly creatures full of hatred and malice. Many centuries ago, their ancestors were used by the Darklords to build the infernal city of Helgedad, which lies in the volcanic wastelands beyond the Durncrag mountain range. The construction of the city was long and tortuous, and only the strongest of the creatures survived the heat and poisonous atmosphere of Helgedad.</p>
+      <p>On its back are two creatures armed with long spears. They are Mountain Giaks<ch.emdash/>small ugly creatures full of hatred and malice. Many centuries ago, their ancestors were used by the Darklords to build the infernal city of Helgedad, which lies in the volcanic wastelands beyond the Durncrag mountain range. The construction of the city was long and <!--ERRTAG-RE-249381-->torturous<!--/ERRTAG-RE-249381-->, and only the strongest of the creatures survived the heat and poisonous atmosphere of Helgedad.</p>
       <p>Quickly you dive for the shelter of a large fern tree as the Kraan passes overhead. With heart pounding, you pray that your quick reactions have saved you from being spotted.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect345">If the number you have picked is 0<ch.endash/>4, <link-text>turn to 345</link-text>.</choice>
@@ -4829,7 +4832,7 @@ Todo:
      <meta><title>342</title></meta>
 
      <data>
-      <p>As your voice echoes through the trees, the stranger slowly turns to face you. Your heart pounds and your bloods freezes as you realize that the stranger is not human. It is a Vordak, a hideous lieutenant of the Darklords and one of the undead. A piercing scream fills your ears, and the creature raises a huge black mace above its head and charges at you. Frozen with horror, you can also feel the Vordak attacking you with the force of its mind.</p>
+      <p>As your voice echoes through the trees, the stranger slowly turns to face you. Your heart pounds and your <!--ERRTAG-RE-301862-->blood<!--/ERRTAG-RE-301862--> freezes as you realize that the stranger is not human. It is a Vordak, a hideous lieutenant of the Darklords and one of the undead. A piercing scream fills your ears, and the creature raises a huge black mace above its head and charges at you. Frozen with horror, you can also feel the Vordak attacking you with the force of its mind.</p>
       <illustration class="float">
        <meta>
         <creator>JC Alvarez</creator>
@@ -5533,6 +5536,7 @@ Todo:
       <p>(<a idref="sect144">144</a>) Added <quote> or if you have no Backpack Items</quote> to the second paragraph.<!--ERRTAG-RE-149741-ITEM--> Replaced <quote>one Item is stolen</quote> with <quote>one item is stolen</quote>.<!--/ERRTAG-RE-149741-ITEM--></p>
       <p>(<a idref="sect151">151</a>) Added <quote>If you wish to remove the pin, turn to 337.</quote> This is the only other possible choice for what is a strangely one-sided option in the original text. More flavourful language might make more sense, such as <quote>If you still wish to remove the pin with your hands,</quote> but to best preserve the integrity of the text, we simply copied the choice from <a idref="sect23">Section 23</a>.</p>
       <p>(<a idref="sect154">154</a>) Replaced <quote>head first</quote> with <quote>head-first</quote>.</p>
+<p>(<a idref="sect166">166</a>)<!--ERRTAG-RE-169126-ITEM--> Replaced <quote>tortuous</quote> with <quote>torturous</quote>.<!--/ERRTAG-RE-169126-ITEM--></p>
       <p>(<a idref="sect167">167</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
       <p>(<a idref="sect172">172</a>) Moved the second choice (about the Camouflage Discipline) into the first position.</p>
       <p>(<a idref="sect175">175</a>) Moved the last choice (about the Camouflage Discipline) into the first position.<!--ERRTAG-RE-176294-ITEM--> Replaced <quote>border rangers</quote> with <quote>Border Rangers</quote>.<!--/ERRTAG-RE-176294-ITEM--></p>
@@ -5549,6 +5553,7 @@ Todo:
       <p>(<a idref="sect267">267</a>) Capitalized <quote>message</quote> in the second sentence of the second paragraph, since that is how retrievable items are supposed to be represented, and to be consistent with the first time the item is mentioned in this section.</p>
       <p>(<a idref="sect268">268</a>) Replaced <quote>wary</quote> with <quote>weary</quote>. We hardly think Lone Wolf would be wary among the King<ch.apos/>s soldiers.</p>
       <p>(<a idref="sect272">272</a>) Replaced <quote>wood-smoke</quote> with <quote>wood smoke</quote>.</p>
+<p>(<a idref="sect275">275</a>)<!--ERRTAG-RE-249381-ITEM--> Replaced <quote>tortuous</quote> with <quote>torturous</quote>.<!--/ERRTAG-RE-249381-ITEM--></p>
       <p>(<a idref="sect277">277</a>) Replaced <quote><a idref="sect113">Turn 113</a></quote> to <quote><a idref="sect113">Turn to 113</a>.</quote></p>
       <p>(<a idref="sect284">284</a>) Replaced both occurrences of <quote>Graveweed</quote> with <quote>graveweed</quote>.</p>
       <p>(<a idref="sect311">311</a>) Moved the last choice (about Camouflage) into the first position.</p>
@@ -5561,6 +5566,7 @@ Todo:
       <p>(<a idref="sect334">334</a>) Moved the last choice (about Sixth Sense) into the first position, and move the first choice (that leads to <a idref="sect162">Section 162</a>) into the last position.</p>
 <p>(<a idref="sect336">336</a>)<!--ERRTAG-RE-296725-ITEM--> Replaced <quote>unsheath</quote> with <quote>unsheathe</quote>.<!--/ERRTAG-RE-296725-ITEM--></p>
       <p>(<a idref="sect341">341</a>) Moved the last choice (about Tracking) into the first position.</p>
+<p>(<a idref="sect342">342</a>)<!--ERRTAG-RE-301862-ITEM--> Replaced <quote>bloods</quote> with <quote>blood</quote>.<!--/ERRTAG-RE-301862-ITEM--></p>
       <p>(<a idref="sect349">349</a>) <quote>Vonatar,</quote> from the seventh paragraph, is spelled <quote>Vonotar</quote> in later Lone Wolf books.<!--ERRTAG-RE-306915-ITEM--> Replaced <quote>magician<ch.apos/>s guild of Toran</quote> with <quote>Magicians<ch.apos/> Guild of Toran</quote>.<!--/ERRTAG-RE-306915-ITEM--></p>
       <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>.</p>
      </data>
@@ -5617,6 +5623,8 @@ Todo:
      <data>
       <p>Only the first occurrence of each secondary illustration is cited.</p>
       <ul class="unbulleted">
+       <li><a idref="equipmnt">Equipment</a></li>
+       <li><a idref="discplnz">Kai Disciplines</a></li>
        <li><a idref="sect13">Section 13</a></li>
        <li><a idref="sect30">Section 30</a></li>
        <li><a idref="sect57">Section 57</a></li>
