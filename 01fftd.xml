@@ -16,6 +16,9 @@
 $Id$
 
 $Log$
+Revision 1.10  2007/05/10 23:24:50  jonathan.blake
+Final (I mean it this time) changes prior to republication
+
 Revision 1.9  2007/05/07 23:34:55  jonathan.blake
 minor illustration dimension fix
 
@@ -115,7 +118,7 @@ Todo:
    &inclusion.gary.chalk.bio.lw;
  </creator>
  <publisher>Project Aon</publisher>
- <date class="publication"><year>2007</year><month>5</month><day>7</day></date>
+ <date class="publication"><year>2007</year><month>5</month><day>10</day></date>
  <description class="blurb">
   <p>You are the sole survivor of a devastating attack on the monastery where you were learning the skills of the Kai Lords. You swear vengeance on the Darklords for the massacre of the Kai warriors, and with a sudden flash of insight you know what you must do. You must set off on a perilous journey to the capital city to warn the King of the terrible threat that faces his people: For you are now the last of the Kai you are now <strong>Lone Wolf</strong>.</p>
  </description>
@@ -232,7 +235,7 @@ Todo:
     <p>During your training as a Kai Lord you have developed fighting prowess<ch.emdash/><typ class="attribute">COMBAT SKILL</typ> and physical stamina<ch.emdash/><typ class="attribute">ENDURANCE</typ>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it on to the <a idref="random">Random Number Table</a>. If you pick 0 it counts as zero.</p>
     <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 10 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a>. (i.e. if your pencil fell on the number 4 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> Of 14.) When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore very desirable.</p>
     <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 20 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a>. (i.e. if your pencil fell on the number 6 on the <a idref="random">Random Number Table</a> you would have 26 <typ class="attribute">ENDURANCE</typ> points.)</p>
-    <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never go above the number with which you start your adventure.</p>
+    <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points <!--ERRTAG-RE-12598-->fall to zero or below<!--/ERRTAG-RE-12598-->, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never go above the number with which you start your adventure.</p>
 
     <section class="frontmatter-separate" id="discplnz">
      <meta>
@@ -5100,7 +5103,7 @@ Todo:
      <li>Pick number from <a idref="random">Random Number Table</a>.</li>
      <li>Turn to <a idref="crtable">Combat Results Table</a>.</li>
      <li>Find your Combat Ratio on the top of chart and cross-reference to random number you have picked. (E indicates loss of <typ class="attribute">ENDURANCE</typ> points to Enemy. LW indicates loss of <typ class="attribute">ENDURANCE</typ> points to Lone Wolf.)</li>
-     <li>Continue the combat from Stage 3 until one character is dead. This is when <typ class="attribute">ENDURANCE</typ> points of either character fall to 0.</li>
+     <li>Continue the combat from Stage 3 until one character is dead. This is when <typ class="attribute">ENDURANCE</typ> points of either character <!--ERRTAG-RE-316950-->fall to 0 or below<!--/ERRTAG-RE-316950-->.</li>
     </ol>
 
     <section class="backmatter" id="smevazn">
@@ -5498,7 +5501,7 @@ Todo:
      <meta><title>Errata List</title></meta>
 
      <data>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced all occurrences of <quote>ie</quote> with <quote>i.e.</quote> Removed <quote>that you will find in the front of this book. For further adventuring you can copy out the chart yourself or get it photocopied</quote>. Replaced <quote>on 4</quote> with <quote>on the number 4</quote>. Removed <quote> on the last page of this book</quote>.</p>
+      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced all occurrences of <quote>ie</quote> with <quote>i.e.</quote> Removed <quote>that you will find in the front of this book. For further adventuring you can copy out the chart yourself or get it photocopied</quote>. Replaced <quote>on 4</quote> with <quote>on the number 4</quote>. Removed <quote> on the last page of this book</quote>.<!--ERRTAG-RE-12598-ITEM--> Replaced <quote>fall to zero</quote> with <quote>fall to zero or below</quote>.<!--/ERRTAG-RE-12598-ITEM--></p>
       <p>(<a idref="discplnz">Kai Disciplines</a>) Replaced <quote>Kai Discipline section</quote> with <quote>Kai Disciplines section</quote>, removed <quote> on the last page of the book</quote>, and capitalized all occurrences of <quote>discipline</quote>. Replaced <quote>fully in <a idref="equipmnt">Equipment section</a></quote> with <quote>fully in the <a idref="equipmnt">Equipment section</a></quote>.</p>
       <p>(<a idref="equipmnt">Equipment</a>) Added periods to the sentences describing the Helmet and Chainmail Waistcoat.</p>
       <p>(<a idref="equipmnt">Equipment: How to use your equipment</a>) Added a period to the second from last sentence in the Weapons subsection.</p>
@@ -5571,7 +5574,7 @@ Todo:
       <p>(<a idref="sect341">341</a>) Moved the last choice (about Tracking) into the first position.</p>
 <p>(<a idref="sect342">342</a>)<!--ERRTAG-RE-301862-ITEM--> Replaced <quote>bloods</quote> with <quote>blood</quote>.<!--/ERRTAG-RE-301862-ITEM--></p>
       <p>(<a idref="sect349">349</a>) <quote>Vonatar,</quote> from the seventh paragraph, is spelled <quote>Vonotar</quote> in later Lone Wolf books.<!--ERRTAG-RE-306915-ITEM--> Replaced <quote>magician<ch.apos/>s guild of Toran</quote> with <quote>Magicians<ch.apos/> Guild of Toran</quote>.<!--/ERRTAG-RE-306915-ITEM--></p>
-      <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>.</p>
+      <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>.<!--ERRTAG-RE-316950-ITEM--> Replaced <quote>fall to 0</quote> with <quote>fall to 0 or below</quote>.<!--/ERRTAG-RE-316950-ITEM--></p>
      </data>
     </section>
    </data>
