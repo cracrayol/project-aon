@@ -15,6 +15,9 @@
 
 $Id$
 $Log$
+Revision 1.19  2007/05/20 22:00:17  Wibbleboy
+o Made several changes in response to suggestions in Wiki.
+
 Revision 1.18  2007/05/01 19:04:01  Wibbleboy
 o Further changes in response to suggestions in Wiki, plus changes regarding zero endurance.
 
@@ -300,7 +303,7 @@ Initial revision
      <data>
 
       <p>Ever since the day you returned to the surface, you have endeavoured to develop your skills and natural instincts fully in order to best defend yourself and your colony.</p>
-      <p>Listed on your <a idref='action'>Action Chart</a> are your five basic Survival Skills:</p>
+      <p>Listed on your <a idref="action">Action Chart</a> are your five basic Survival Skills:</p>
 
       <section class="frontmatter" id="driving">
        <meta><title>Driving</title></meta>
@@ -505,7 +508,7 @@ Initial revision
        <li><p>Unless otherwise instructed, or unless you have an option to evade, start the next round of close combat.</p></li>
        <li><p>Repeat the sequence from stage 3.</p></li>
       </ol>
-      <p>This procedure continues until the <typ class="attribute">ENDURANCE</typ> points of either the enemy or Cal Phoenix are reduced to zero or below, at which point that combatant is declared dead. If Cal Phoenix is dead, the adventure is over. If the enemy is dead, Cal Phoenix proceeds but with a reduced <typ class="attribute">ENDURANCE</typ> point score.</p>
+      <p>This procedure continues until the <typ class="attribute">ENDURANCE</typ> points of either the enemy or Cal Phoenix are reduced to zero or below, at which point that combatant is declared dead. If Cal Phoenix is dead, the adventure is over. If the enemy is dead, Cal Phoenix proceeds but with his <typ class="attribute">ENDURANCE</typ> points possibly reduced.</p>
       <p>A <a idref="crsumary">Summary of the Close Combat Rules</a> appears on the page after the <a idref="random">Random Number Table</a>.</p>
 
       <section class="frontmatter" id="evasion">
@@ -5341,7 +5344,6 @@ Initial revision
    <meta><title>Combat Results Table</title></meta>
 
    <data>
-
     <illustration class="inline">
      <meta>
       <creator>Jonathan Blake</creator>
@@ -5357,7 +5359,6 @@ Initial revision
      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif" />
      <instance src="crtpos.tex" width="380" height="500" class="tex" />
     </illustration>
-
    </data>
   </section>
 
@@ -5379,7 +5380,6 @@ Initial revision
    <meta><title>Errata</title></meta>
 
    <data>
-
     <section class="backmatter" id="errintro">
      <meta><title>Introduction</title></meta>
      <data>
@@ -5390,14 +5390,14 @@ Initial revision
     <section class="backmatter" id="errerr">
      <meta><title>Errata</title></meta>
      <data>
+      <p>(<a idref="dtd">Dateline to Disaster</a>) Replaced <quote>training and</quote> with <quote>training, and</quote>.</p>
+      <p>(<a idref="calstory">Cal's Story</a>) Replaced <quote>re-establish</quote> with <quote>reestablish</quote>, <quote>Denton county</quote> with <quote>Denton County</quote>, <quote>fuel, food or water</quote> with <quote>fuel, food, or water</quote>, and <quote>Tuscon colony</quote> with <quote>Tucson colony</quote>.</p>
       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>if you pick a O</quote> with <quote>if you pick a 0</quote>, <quote>On pages 6 and 7 you will find an Action Chart</quote> with <quote>An Action Chart has been supplied</quote>, <quote>the Random Number Table at the back of this book</quote> with <quote>the Random Number Table</quote>, <quote>zero</quote> with <quote>zero or below</quote>, and <quote>survival skills</quote> with <quote>Survival Skills</quote>.</p>
       <p>(<a idref="gamerulz">The Game Rules</a>) Removed <quote>For ease of use during play it is recommended that you photocopy these pages</quote>.</p>
       <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>map of Central Texas</quote> with <quote>Map of Central Texas</quote>, <quote>potassium iodine</quote> with <quote>potassium iodide</quote>, <quote>H.E. (High Explosive) GRENADE</quote> with <quote>HE (High Explosive) GRENADE</quote>, <quote>C.B. RADIO</quote> with <quote>CB RADIO</quote>, and <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
-      <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>CLOSECOMBAT</quote> with <quote>CLOSE COMBAT</quote>, <quote>cross-refer</quote> with <quote>cross-reference</quote>, <quote>zero</quote> with <quote>zero or below</quote>, and <quote>as <ch.plus/>1 If </quote> with <quote>as <ch.plus/>1. If </quote>.</p>
-      <p>(<a idref="cmbtrulz">Combat Rules</a>) Replaced <quote>are reduced to zero, at which point the one whose score is zero is declared dead.</quote> with <quote>are reduced to zero or below, at which point that combatant is declared dead.</quote>.</p>
-      <p>(<a idref="cmbtrulz">Combat Rules</a>) Removed <quote>on the inside back cover of the book</quote>.</p>
-      <p>(<a idref="dtd">Dateline to Disaster</a>) Replaced <quote>training and</quote> with <quote>training, and</quote>.</p>
-      <p>(<a idref="calstory">Cal's Story</a>) Replaced <quote>re-establish</quote> with <quote>reestablish</quote>, <quote>Denton county</quote> with <quote>Denton County</quote>, <quote>fuel, food or water</quote> with <quote>fuel, food, or water</quote>, and <quote>Tuscon colony</quote> with <quote>Tucson colony</quote>.</p>
+      <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote>cross-refer</quote> with <quote>cross-reference</quote>, <quote>zero</quote> with <quote>zero or below</quote>, and <quote>as <ch.plus/>1 If </quote> with <quote>as <ch.plus/>1. If </quote>.</p>
+      <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Replaced <quote>are reduced to zero, at which point the one whose score is zero is declared dead.</quote> with <quote>are reduced to zero or below, at which point that combatant is declared dead.</quote> and <quote>with a reduced ENDURANCE point score</quote> with <quote>with his ENDURANCE points possibly reduced</quote>.</p>
+      <p>(<a idref="cmbtrulz">Close Combat Rules</a>) Removed <quote>on the inside back cover of the book</quote>.</p>
       <p>(<a idref="sect1">1</a>) Replaced <quote>syphoned</quote> with <quote>siphoned</quote>, and <quote>C.B. radio</quote> with <quote>CB radio</quote>.</p>
       <p>(<a idref="sect13">13</a>) Added missing period after <quote>Random Number Table</quote>.</p>
       <p>(<a idref="sect20">20</a>) Replaced <quote>GEIGER COUNTER</quote>, <quote>ALTIMETER</quote> and <quote>RADIATION SUIT</quote> with initial capitals.</p>
