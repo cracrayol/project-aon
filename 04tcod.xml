@@ -14,22 +14,7 @@
 <!--
 
 $Id$
-$Log$
-Revision 1.11  2007/05/12 18:00:47  jonathan.blake
-minor errata list issue
-
-Revision 1.10  2007/05/11 23:28:05  jonathan.blake
-Fixed illustration dimensions
-
-Revision 1.9  2007/05/10 23:24:50  jonathan.blake
-Final (I mean it this time) changes prior to republication
-
-Revision 1.8  2007/05/07 23:34:55  jonathan.blake
-minor illustration dimension fix
-
-Revision 1.7  2007/05/07 22:54:18  jonathan.blake
-special thanks and fixing illustration dimensions
-
+$Log: 04tcod.xml,v $
 Revision 1.6  2007/04/26 17:34:28  jonathan.blake
 Last of errata from website
 
@@ -85,7 +70,7 @@ Initial Revision.
   &inclusion.gary.chalk.bio.lw;
  </creator>
  <publisher>Project Aon</publisher>
- <date class="publication"><year>2007</year><month>5</month><day>11</day></date>
+ <date class="publication"><year>2007</year><month>4</month><day>26</day></date>
  <description class="blurb">
    <p>The King has summoned you, Lone Wolf, last of the Kai Lords, to his citadel at Holmgard. Your quest is to recover a missing shipment of gold and locate the patrol which has disappeared while investigating the suspected theft. As you and your men equip yourselves for the long ride ahead, you glimpse a crow perched on a window ledge high above. As it flies away a shiver runs down your spine<ch.emdash/>in Holmgard the crow is a symbol of impending danger.</p>
  </description>
@@ -135,9 +120,7 @@ Initial Revision.
 
    <data>
 
-    <p><quote>I would be especially pleased if my granting of the rights to distribute my books in this way was seen as my <quote>millennium gift</quote> to all those devoted readers who have kept the Kai flag flying high, through all the good times, and the not-so-good. It would make me very proud indeed if this enterprise laid the foundations of a lasting legacy, securing the longevity of Lone Wolf by making my creation freely and readily accessible to current and future online generations. For them, for us, for Sommerlund and the Kai.<ch.ellips/></quote> <strong>Joe Dever</strong></p>
-
-    <p>Project Aon would first like to thank Joe Dever for making this generous offering of the books that we have all loved from the beginning. We would also like to acknowledge the following members of Project Aon for their diligent work:</p>
+   &inclusion.joe.dever.endowment;
 
    <section class="frontmatter" id="credits">
      <meta><title>Credits</title></meta>
@@ -158,8 +141,6 @@ Initial Revision.
         <dd>Mike Feldman<br />Ingo Kl<ch.ouml/>cker<br />Mark Laird<br />Simon Osborne<br />Matthew Reynolds<br />Thomas Wolmer</dd>
        <dt>Coordination</dt>
         <dd>Jonathan Blake</dd>
-       <dt>Special Thanks</dt>
-        <dd>Dan Boulton, Kayvohn Kazemi, Ryan Marshall</dd>
       </dl>
      </data>
     </section>
@@ -195,9 +176,9 @@ Initial Revision.
     <p>During your training as a Kai Lord you have developed fighting prowess<ch.emdash/><typ class="attribute">COMBAT SKILL</typ> and physical stamina<ch.emdash/><typ class="attribute">ENDURANCE</typ>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it <!--ERRTAG-RE-8413-->onto<!--/ERRTAG-RE-8413--> the <a idref="random">Random Number Table</a> on the last page of this book. If you pick 0 it counts as zero.</p>
     <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 10 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a>. (i.e. if your pencil fell on the number 4 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> of 14.) When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore very desirable.</p>
     <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 20 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a>. (i.e. if your pencil fell on the number 6 on the <a idref="random">Random Number Table</a> you would have 26 <typ class="attribute">ENDURANCE</typ> points.)</p>
-    <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points <!--ERRTAG-RE-10187-->fall to zero or below<!--/ERRTAG-RE-10187-->, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never rise above the number you started with.</p>
-    <p><strong>If you have successfully completed any of the previous adventures in the Lone Wolf series</strong>, you will already have your <typ class="attribute">COMBAT SKILL</typ>, <typ class="attribute">ENDURANCE</typ> points and Kai Disciplines which you can now carry over with you to Book 4. You may also carry over any Weapons and Special Items that you held at the end of your last adventure, and these should be entered on your new <a idref="action">Action Chart</a> (you are still limited to two Weapons and eight Backpack Items).</p>
-    <p>You may choose one bonus <a idref="discplnz">Kai Discipline</a> to add to your <a idref="action">Action Chart</a> for every Lone Wolf adventure you have successfully completed; then read the <a idref="equipmnt">section on equipment</a> for Book 4 carefully.</p>
+    <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never rise above the number you started with.</p>
+    <p><strong>If you have successfully completed any of the previous adventures in the <cite>Lone Wolf</cite> series</strong>, you will already have your <typ class="attribute">COMBAT SKILL</typ>, <typ class="attribute">ENDURANCE</typ> points and Kai Disciplines which you can now carry over with you to Book 4. You may also carry over any Weapons and Special Items that you held at the end of your last adventure, and these should be entered on your new <a idref="action">Action Chart</a> (you are still limited to two Weapons and eight Backpack Items).</p>
+    <p>You may choose one bonus <a idref="discplnz">Kai Discipline</a> to add to your <a idref="action">Action Chart</a> for every <cite>Lone Wolf</cite> adventure you have successfully completed; then read the <a idref="equipmnt">section on equipment</a> for Book 4 carefully.</p>
 
     <section class="frontmatter-separate" id="discplnz">
      <meta>
@@ -253,7 +234,7 @@ Initial Revision.
       <section class="frontmatter" id="wepnskll">
        <meta><title>Weaponskill</title></meta>
        <data>
-        <p>Upon entering the Kai monastery, each initiate was taught to master one type of weapon. If Weaponskill is to be one of your Kai Disciplines, pick a number in the usual way from the <a idref="random">Random Number Table</a> on the last page of the book, and then find the corresponding weapon from the list below. This is the weapon in which you have skill. When you enter combat carrying this weapon, you add 2 points to your <typ class="attribute">COMBAT SKILL</typ>.</p>
+        <p>Upon entering the Kai Monastery, each initiate was taught to master one type of weapon. If Weaponskill is to be one of your Kai Disciplines, pick a number in the usual way from the <a idref="random">Random Number Table</a> on the last page of the book, and then find the corresponding weapon from the list below. This is the weapon in which you have skill. When you enter combat carrying this weapon, you add 2 points to your <typ class="attribute">COMBAT SKILL</typ>.</p>
         <illustration class="inline">
          <meta>
           <creator>Gary Chalk</creator>
@@ -313,7 +294,7 @@ Initial Revision.
        </data>
       </section>
 
-      <p>If you successfully complete the mission as set in Book 4 of Lone Wolf, you may add a further Kai Discipline of your choice to your <a idref="action">Action Chart</a> in <bookref series="lw" book="05sots">Book 5</bookref>. This additional skill, together with your other skills and any Special Items that you have found, may then be used in the next adventure in the Lone Wolf series which is called <bookref series="lw" book="05sots"><cite>Shadow on the Sand</cite></bookref>.</p>
+      <p>If you successfully complete the mission as set in Book 4 of Lone Wolf, you may add a further Kai Discipline of your choice to your <a idref="action">Action Chart</a> in <bookref series="lw" book="05sots">Book 5</bookref>. This additional skill, together with your other skills and any Special Items that you have found, may then be used in the next adventure in the <cite>Lone Wolf</cite> series which is called <bookref series="lw" book="05sots"><cite>Shadow on the Sand</cite></bookref>.</p>
 
      </data>
     </section>
@@ -326,7 +307,7 @@ Initial Revision.
      </meta>
 
      <data>
-      <p>Before leaving Holmgard on your ride south, you are given a <a idref="map">Map of the Southlands</a>, a badge of rank that you wear upon the sleeve of your tunic and a pouch of gold. To find out how much gold is in the pouch, pick a number from the <a idref="random">Random Number Table</a>. Now add 10 to the number you have picked. The total equals the number of Gold Crowns inside the pouch, and you may now enter this number in the <quote>Gold Crowns</quote> section of your <a idref="action">Action Chart</a>. (If you have successfully completed previous Lone Wolf adventures, you may add this sum to the total of any Crowns you may already possess. Remember you can only carry a maximum of fifty Crowns.)</p>
+      <p>Before leaving Holmgard on your ride south, you are given a <a idref="map">Map of the Southlands</a>, a badge of rank that you wear upon the sleeve of your tunic and a pouch of gold. To find out how much gold is in the pouch, pick a number from the <a idref="random">Random Number Table</a>. Now add 10 to the number you have picked. The total equals the number of Gold Crowns inside the pouch, and you may now enter this number in the <quote>Gold Crowns</quote> section of your <a idref="action">Action Chart</a>. (If you have successfully completed previous <cite>Lone Wolf</cite> adventures, you may add this sum to the total of any Crowns you may already possess. Remember you can only carry a maximum of fifty Crowns.)</p>
       <p>You may take your pick of the following items (in addition to those you already possess, but remember you may only carry two weapons). You may take up to six of the following:</p>
       <ul class="paragraphed">
        <li><p>Warhammer (Weapons)</p></li>
@@ -337,8 +318,8 @@ Initial Revision.
          <meta>
           <creator>Gary Chalk</creator>
          </meta>
-         <instance class="html" src="potion.gif" width="386" height="150" />
-         <instance class="pdf" src="potion.pdf" width="386" height="150" />
+         <instance class="html" src="potion.gif" width="190" height="73" />
+         <instance class="pdf" src="potion.pdf" width="190" height="73" />
         </illustration>
        </li>
        <li><p>Sword (Weapons)</p></li>
@@ -349,8 +330,8 @@ Initial Revision.
          <meta>
           <creator>Gary Chalk</creator>
          </meta>
-         <instance class="html" src="food.gif" width="386" height="150" />
-         <instance class="pdf" src="food.pdf" width="386" height="150" />
+         <instance class="html" src="food.gif" width="178" height="41" />
+         <instance class="pdf" src="food.pdf" width="178" height="41" />
         </illustration>
        </li>
        <li><p>Mace (Weapons)</p></li>
@@ -360,8 +341,8 @@ Initial Revision.
          <meta>
           <creator>Gary Chalk</creator>
          </meta>
-         <instance class="html" src="mail.gif" width="386" height="150" />
-         <instance class="pdf" src="mail.pdf" width="386" height="150" />
+         <instance class="html" src="mail.gif" width="190" height="154" />
+         <instance class="pdf" src="mail.pdf" width="190" height="154" />
         </illustration>
        </li>
        <li>
@@ -370,8 +351,8 @@ Initial Revision.
          <meta>
           <creator>Gary Chalk</creator>
          </meta>
-         <instance class="html" src="shield.gif" width="386" height="150" />
-         <instance class="pdf" src="shield.pdf" width="386" height="150" />
+         <instance class="html" src="shield.gif" width="158" height="85" />
+         <instance class="pdf" src="shield.pdf" width="158" height="85" />
         </illustration>
        </li>
       </ul>
@@ -495,13 +476,13 @@ Initial Revision.
      </meta>
 
      <data>
-      <p>The following table is a guide to the rank and titles that are bestowed upon Kai Lords at each stage of their training. As you successfully complete each adventure in the Lone Wolf series, you will gain an additional Kai Discipline and gradually progress towards mastery of the ten basic Kai Disciplines.</p>
+      <p>The following table is a guide to the rank and titles that are bestowed upon Kai Lords at each stage of their training. As you successfully complete each adventure in the <cite>Lone Wolf</cite> series, you will gain an additional Kai Discipline and gradually progress towards mastery of the ten basic Kai Disciplines.</p>
       <ol>
        <li>Novice</li>
        <li>Intuite</li>
        <li>Doan</li>
        <li>Acolyte</li>
-       <li>Initiate<ch.emdash/>You begin the  Lone Wolf adventures with this level of Kai training</li>
+       <li>Initiate<ch.emdash/>You begin the <cite>Lone Wolf</cite> adventures with this level of Kai training</li>
        <li>Aspirant</li>
        <li>Guardian</li>
        <li>Warmarn or Journeyman</li>
@@ -523,8 +504,8 @@ Initial Revision.
 
    <data>
     <p>Your mission will be fraught with danger, for you are  about to venture into the bleak and hostile Wildlands of the south. Use the <a idref="map">map</a> to help you plot your course to Ruanon. Make notes as you progress through the story, for they will be of great help in future adventures.</p>
-    <p>Many things that you find will aid you during your adventure. Some Special Items will be of use in future Lone Wolf adventures and others may be red herrings of no real use at all, so be selective in what you decide to keep.</p>
-    <p>There are several routes to Ruanon, but only one will enable you to reach the mining town and find Captain D<ch.apos/>Val with the minimum of danger. A wise choice of Kai Disciplines and a great deal of courage should enable any player to complete the mission, no matter how weak his initial <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points score. Successful completion of previous Lone Wolf adventures is not essential for the success of this quest.</p>
+    <p>Many things that you find will aid you during your adventure. Some Special Items will be of use in future <cite>Lone Wolf</cite> adventures and others may be red herrings of no real use at all, so be selective in what you decide to keep.</p>
+    <p>There are several routes to Ruanon, but only one will enable you to reach the mining town and find Captain D<ch.apos/>Val with the minimum of danger. A wise choice of Kai Disciplines and a great deal of courage should enable any player to complete the mission, no matter how weak his initial <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points score. Successful completion of previous <cite>Lone Wolf</cite> adventures is not essential for the success of this quest.</p>
 
     <p>Good Luck!</p>
 
@@ -550,8 +531,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small1.gif" width="386" height="150" />
-       <instance class="pdf" src="small1.pdf" width="386" height="150" />
+       <instance class="html" src="sect1.gif" width="204" height="204" />
+       <instance class="pdf" src="sect1.pdf" width="204" height="204" />
       </illustration>
       <choice idref="sect160">If you wish to investigate the hut, <link-text>turn to 160</link-text>.</choice>
       <choice idref="sect273">If you wish to ignore the hut and continue on your ride along the Ruanon Pike, <link-text>turn to 273</link-text>.</choice>
@@ -637,8 +618,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small2.gif" width="386" height="150" />
-       <instance class="pdf" src="small2.pdf" width="386" height="150" />
+       <instance class="html" src="sect7.gif" width="188" height="174" />
+       <instance class="pdf" src="sect7.pdf" width="188" height="174" />
       </illustration>
       <p>You wheel your steed towards the south and spur the blood-spattered animal to the gallop. The remnants of your company are close at your heels, the victory cries of your foe resounding in their ears.</p>
       <choice idref="sect154"><link-text>Turn to 154</link-text>.</choice>
@@ -675,8 +656,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small3.gif" width="386" height="150" />
-       <instance class="pdf" src="small3.pdf" width="386" height="150" />
+       <instance class="html" src="sect10.gif" width="243" height="174" />
+       <instance class="pdf" src="sect10.pdf" width="243" height="174" />
       </illustration>
       <choice idref="sect59">Leave the watchtower by <link-text>turning to 59</link-text>.</choice>
      </data>
@@ -733,8 +714,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description>Your target is a formidable Bandit Warrior</description>
        </meta>
-       <instance class="html" src="ill1.gif" width="386" height="703" />
-       <instance class="pdf" src="ill1.pdf" width="386" height="703" />
+       <instance class="html" src="ill1.gif" width="386" height="706" />
+       <instance class="pdf" src="ill1.pdf" width="386" height="706" />
       </illustration>
       <combat><enemy>Bandit Warrior</enemy><enemy-attribute class="combatskill">17</enemy-attribute><enemy-attribute class="endurance">28</enemy-attribute></combat>
       <choice idref="sect31">If you wish to evade combat at any time, you can dive into the River Xane by <link-text>turning to 31</link-text>.</choice>
@@ -802,8 +783,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small4.gif" width="386" height="150" />
-       <instance class="pdf" src="small4.pdf" width="386" height="150" />
+       <instance class="html" src="sect20.gif" width="294" height="166" />
+       <instance class="pdf" src="sect20.pdf" width="294" height="166" />
       </illustration>
       <p>The captain grabs you by the arm and, swinging you over his shoulder in one swift motion, carries you back towards the barricade. Others run forward to help you, but the bandit archers are now in range and your men are forced back by a hail of arrows. The red shafts of the enemy whistle past on all sides. You reach the barricade, a wagon is pulled aside, and you are carried in through the gap. Captain D<ch.apos/>Val is close to exhaustion; he staggers, and his men rush to catch him before he drops to the ground.</p>
       <choice idref="sect341"><link-text>Turn to 341</link-text>.</choice>
@@ -886,8 +867,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><line>The Stoneworm slithers towards you</line><line>at a terrifying pace</line></description>
        </meta>
-       <instance class="html" src="ill2.gif" width="386" height="674" />
-       <instance class="pdf" src="ill2.pdf" width="386" height="674" />
+       <instance class="html" src="ill2.gif" width="386" height="679" />
+       <instance class="pdf" src="ill2.pdf" width="386" height="679" />
 
       </illustration>
       <combat><enemy>Stoneworm</enemy><enemy-attribute class="combatskill">15</enemy-attribute><enemy-attribute class="endurance">38</enemy-attribute></combat>
@@ -951,8 +932,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small5.gif" width="386" height="150" />
-       <instance class="pdf" src="small5.pdf" width="386" height="150" />
+       <instance class="html" src="sect31.gif" width="188" height="145" />
+       <instance class="pdf" src="sect31.pdf" width="188" height="145" />
       </illustration>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect272">If the number you have picked is 0<ch.endash/>4, <link-text>turn to 272</link-text>.</choice>
@@ -1029,8 +1010,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><line>The little fat man spins around</line><line> and tumbles to the ground</line></description>
        </meta>
-       <instance class="html" src="ill3.gif" width="386" height="620" />
-       <instance class="pdf" src="ill3.pdf" width="386" height="620" />
+       <instance class="html" src="ill3.gif" width="386" height="629" />
+       <instance class="pdf" src="ill3.pdf" width="386" height="629" />
       </illustration>
       <p><quote>You must forgive Yesu,</quote> says the old woman. <quote>He means you no harm. <quote>Raider<ch.apos/>s Road</quote> has made him a nervous wreck.</quote></p>
       <p>You question the old woman, asking her where they have come from and their destination. You learn that they are a troupe of players and have journeyed many miles from their native land of Cloeasia in the east. They last played for the people of Eshnar, but it was a disappointing show. It seems that the town was as quiet as the grave; those who did come to see them were a sad and sorry crowd. They are now bound for Holmgard, and hopefully a more appreciative audience.</p>
@@ -1112,8 +1093,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small6.gif" width="386" height="150" />
-       <instance class="pdf" src="small6.pdf" width="386" height="150" />
+       <instance class="html" src="sect44.gif" width="291" height="130" />
+       <instance class="pdf" src="sect44.pdf" width="291" height="130" />
       </illustration>
       <choice idref="sect149">If you have the Kai Discipline of Healing, <link-text>turn to 149</link-text>.</choice>
       <choice idref="sect188">If you do not possess this skill, <link-text>turn to 188</link-text>.</choice>
@@ -1236,8 +1217,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small7.gif" width="386" height="150" />
-       <instance class="pdf" src="small7.pdf" width="386" height="150" />
+       <instance class="html" src="sect55.gif" width="213" height="192" />
+       <instance class="pdf" src="sect55.pdf" width="213" height="192" />
       </illustration>
       <choice idref="sect161">If you wish to dive into one of the empty ore wagons, <link-text>turn to 161</link-text>.</choice>
       <choice idref="sect286">If you wish to hide in the shadows of the rough tunnel wall, <link-text>turn to 286</link-text>.</choice>
@@ -1389,8 +1370,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><line>Razor-sharp discs of steel whistle</line><line> down to claim their victims</line></description>
        </meta>
-       <instance class="html" src="ill4.gif" width="386" height="622" />
-       <instance class="pdf" src="ill4.pdf" width="386" height="622" />
+       <instance class="html" src="ill4.gif" width="386" height="628" />
+       <instance class="pdf" src="ill4.pdf" width="386" height="628" />
       </illustration>
       <p>Staggering to your feet, you run, half-crouched, to the shelter of a wagon. Two of your men lie dead upon the road, but the others have escaped the ambush and are galloping away from the town, hidden by the rising clouds of dust.</p>
       <p>You turn to see a bandit warrior standing at a nearby balcony. He is dark-skinned, with oily black hair and beard. He flicks his hand and a deadly disc whistles towards your face.</p>
@@ -1449,8 +1430,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small8.gif" width="386" height="150" />
-       <instance class="pdf" src="small8.pdf" width="386" height="150" />
+       <instance class="html" src="sect71.gif" width="214" height="208" />
+       <instance class="pdf" src="sect71.pdf" width="214" height="208" />
       </illustration>
       <p>No sooner have his words echoed through the hall than a sword blade pierces his heart. You turn and run towards a distant door where a tunnel disappears towards the north. Slamming the door you draw its bolt. As you race along the dusty tunnel you pray that the door will hold and keep your pursuers at bay.</p>
       <choice idref="sect348"><link-text>Turn to 348</link-text>.</choice>
@@ -1538,8 +1519,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small6.gif" width="386" height="150" />
-       <instance class="pdf" src="small6.pdf" width="386" height="150" />
+       <instance class="html" src="sect44.gif" width="291" height="130" />
+       <instance class="pdf" src="sect44.pdf" width="291" height="130" />
       </illustration>
       <p>One of the pilgrims hands you a small earthenware Flask that contains a potion of Holy Water. If you wish to keep this Flask, mark it on your <a idref="action">Action Chart</a> as a Backpack Item.</p>
       <p>Your men pitch camp beneath the marble canopy and preparations are made to get some sleep. You are hungry and must now eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
@@ -1567,8 +1548,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small9.gif" width="386" height="150" />
-       <instance class="pdf" src="small9.pdf" width="386" height="150" />
+       <instance class="html" src="sect80.gif" width="177" height="145" />
+       <instance class="pdf" src="sect80.pdf" width="177" height="145" />
       </illustration>
       <choice idref="sect175"><link-text>Turn to 175</link-text>.</choice>
      </data>
@@ -1627,8 +1608,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><line>The stars foretold our meeting</line><line> long ago, Lone Wolf</line></description>
        </meta>
-       <instance class="html" src="ill5.gif" width="386" height="650" />
-       <instance class="pdf" src="ill5.pdf" width="386" height="650" />
+       <instance class="html" src="ill5.gif" width="386" height="657" />
+       <instance class="pdf" src="ill5.pdf" width="386" height="657" />
       </illustration>
       <p>You ask the meaning of the strange verse, but the old man does not answer you. He seems to have fallen into a deep trance. You lean across the cluttered table to awaken him and are shocked to see your hand pass straight through his body. Gradually his image begins to fade. Within seconds he has disappeared completely.</p>
       <p>You place the Scroll in your pocket. (Mark this as a Special Item on your <a idref="action">Action Chart</a>.) You quickly leave the hut, pausing only to wipe the cold sweat from your brow.</p>
@@ -1728,8 +1709,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small10.gif" width="386" height="150" />
-       <instance class="pdf" src="small10.pdf" width="386" height="150" />
+       <instance class="html" src="sect93.gif" width="217" height="147" />
+       <instance class="pdf" src="sect93.pdf" width="217" height="147" />
       </illustration>
       <combat><enemy>Bandit Warrior</enemy><enemy-attribute class="combatskill">15</enemy-attribute><enemy-attribute class="endurance">26</enemy-attribute></combat>
       <choice idref="sect2">If you win the combat, <link-text>turn to 2</link-text>.</choice>
@@ -1809,8 +1790,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><line>A procession of red-cloaked priests</line><line>enter the temple</line></description>
        </meta>
-       <instance class="html" src="ill6.gif" width="386" height="696" />
-       <instance class="pdf" src="ill6.pdf" width="386" height="696" />
+       <instance class="html" src="ill6.gif" width="386" height="691" />
+       <instance class="pdf" src="ill6.pdf" width="386" height="691" />
       </illustration>
       <choice idref="sect215"><link-text>Turn to 215</link-text>.</choice>
      </data>
@@ -1835,8 +1816,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small6.gif" width="386" height="150" />
-       <instance class="pdf" src="small6.pdf" width="386" height="150" />
+       <instance class="html" src="sect44.gif" width="291" height="130" />
+       <instance class="pdf" src="sect44.pdf" width="291" height="130" />
       </illustration>
       <choice idref="sect19">If you possess the Kai Discipline of Healing, <link-text>turn to 19</link-text>.</choice>
       <choice idref="sect339">If you do not have this skill, <link-text>turn to 339</link-text>.</choice>
@@ -1893,8 +1874,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small11.gif" width="386" height="150" />
-       <instance class="pdf" src="small11.pdf" width="386" height="150" />
+       <instance class="html" src="sect107.gif" width="310" height="194" />
+       <instance class="pdf" src="sect107.pdf" width="310" height="194" />
       </illustration>
       <choice idref="sect59">If you wish to follow him, <link-text>turn to 59</link-text>.</choice>
       <choice idref="sect310">If you wish to continue towards the watchtower, <link-text>turn to 310</link-text>.</choice>
@@ -1985,8 +1966,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small12.gif" width="386" height="150" />
-       <instance class="pdf" src="small12.pdf" width="386" height="150" />
+       <instance class="html" src="sect114.gif" width="319" height="193" />
+       <instance class="pdf" src="sect114.pdf" width="319" height="193" />
       </illustration>
       <p>A tall warrior in bright scarlet armour suddenly breaks clear of the shield-wall and runs at you. His sword is raised to stab.</p>
       <combat><enemy>Bandit Warrior</enemy><enemy-attribute class="combatskill">16</enemy-attribute><enemy-attribute class="endurance">25</enemy-attribute></combat>
@@ -2119,8 +2100,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><line>A mantlet is being pushed across the</line><line> battleground towards the barricade</line></description>
        </meta>
-       <instance class="html" src="ill7.gif" width="386" height="611" />
-       <instance class="pdf" src="ill7.pdf" width="386" height="611" />
+       <instance class="html" src="ill7.gif" width="386" height="625" />
+       <instance class="pdf" src="ill7.pdf" width="386" height="625" />
       </illustration>
       <p>Suddenly a robed figure darts from behind the mantlet and levels a black staff at the barricade. He is cut down by an arrow, but not before he has let loose from his staff a guttering ball of flame. It cartwheels across the plain and explodes with a tremendous roar, hurling the bodies of defenders and shattered barricade high into the air. Through the cloud of dust and debris, you can see a line of enemy cavalry charging across the plain. They wear tall plumed helmets of polished steel and breastplates of deepest crimson. In the wake of the fireball they pour through the remains of the barricade and attack<ch.emdash/>they give no quarter. A horseman spurs his horse towards you, his lance levelled at your chest.</p>
       <choice idref="sect333">If you wish to stand and fight the horseman, <link-text>turn to 333</link-text>.</choice>
@@ -2227,8 +2208,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small13.gif" width="386" height="150" />
-       <instance class="pdf" src="small13.pdf" width="386" height="150" />
+       <instance class="html" src="sect132.gif" width="207" height="148" />
+       <instance class="pdf" src="sect132.pdf" width="207" height="148" />
       </illustration>
       <choice idref="sect67">If you feel uneasy about the tavern, <link-text>turn to 67</link-text>.</choice>
       <choice idref="sect287">If you wish to question the old woman, <link-text>turn to 287</link-text>.</choice>
@@ -2358,8 +2339,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><line>The crypt door is guarded by</line><line> two Vassagonian warriors</line></description>
        </meta>
-       <instance class="html" src="ill8.gif" width="386" height="648" />
-       <instance class="pdf" src="ill8.pdf" width="386" height="648" />
+       <instance class="html" src="ill8.gif" width="386" height="654" />
+       <instance class="pdf" src="ill8.pdf" width="386" height="654" />
       </illustration>
 
       <choice idref="sect183">If you wish to try to enter the temple through the guarded crypt door, <link-text>turn to 183</link-text>.</choice>
@@ -2399,8 +2380,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small14.gif" width="386" height="150" />
-       <instance class="pdf" src="small14.pdf" width="386" height="150" />
+       <instance class="html" src="sect145.gif" width="179" height="180" />
+       <instance class="pdf" src="sect145.pdf" width="179" height="180" />
       </illustration>
       <p>You eventually reach a chamber where a small wooden hut has been built against the wall. You are now desperately tired and in need of sleep.</p>
       <choice idref="sect322">If you wish to rest in the hut, <link-text>turn to 322</link-text>.</choice>
@@ -2440,8 +2421,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><line>A Vassagonian herald breaks free from</line><line> the battle and sounds the retreat</line></description>
        </meta>
-       <instance class="html" src="ill9.gif" width="386" height="650" />
-       <instance class="pdf" src="ill9.pdf" width="386" height="650" />
+       <instance class="html" src="ill9.gif" width="386" height="661" />
+       <instance class="pdf" src="ill9.pdf" width="386" height="661" />
       </illustration>
       <p>Captain D<ch.apos/>Val leads his men to the barricade and directs a lethal volley of arrows into the shattered infantry. It is the last straw. They throw down their weapons and flee from the clouds of arrows raining down on them from out of the smoke-filled sky.</p>
       <p>A battle-cry, proud and strident pursues them across the plain: <quote>For Sommerlund, for Sommerlund!</quote></p>
@@ -2579,8 +2560,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small15.gif" width="386" height="150" />
-       <instance class="pdf" src="small15.pdf" width="386" height="150" />
+       <instance class="html" src="sect159.gif" width="181" height="181" />
+       <instance class="pdf" src="sect159.pdf" width="181" height="181" />
       </illustration>
       <p>The bandits amble past barely inches from where you hide, totally oblivious to your presence. When you are sure they are no longer on the track, you jump up and frantically scratch at your itching skin. To your horror, you discover that your legs are covered with crawling insects feasting on your blood. Ripping your clothes off, you empty them from your boots and scrape them from your skin before hurrying off along the track. The blood-sucking insects have robbed you of 2 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect204"><link-text>Turn to 204</link-text>.</choice>
@@ -2687,8 +2668,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description>Dull, satanic eyes follow your every move </description>
        </meta>
-       <instance class="html" src="ill10.gif" width="386" height="704" />
-       <instance class="pdf" src="ill10.pdf" width="386" height="704" />
+       <instance class="html" src="ill10.gif" width="386" height="706" />
+       <instance class="pdf" src="ill10.pdf" width="386" height="706" />
       </illustration>
       <choice idref="sect34">If you possess the Sommerswerd, <link-text>turn to 34</link-text>.</choice>
       <choice idref="sect85">If you do not possess this Special Item, <link-text>turn to 85</link-text>.</choice>
@@ -2731,8 +2712,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small23.gif" width="386" height="150" />
-       <instance class="pdf" src="small23.pdf" width="386" height="150" />
+       <instance class="html" src="sect266.gif" width="167" height="209" />
+       <instance class="pdf" src="sect266.pdf" width="167" height="209" />
       </illustration>
       <p>It is late afternoon when your scouts sight a coaching tavern on the highway ahead. It is a large stone building that has been fortified.</p>
       <choice idref="sect63">If you wish to stop at the tavern for the night, <link-text>turn to 63</link-text>.</choice>
@@ -2772,8 +2753,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small16.gif" width="386" height="150" />
-       <instance class="pdf" src="small16.pdf" width="386" height="150" />
+       <instance class="html" src="sect174.gif" width="250" height="144" />
+       <instance class="pdf" src="sect174.pdf" width="250" height="144" />
       </illustration>
       <p><quote>Shoot the leader!</quote> you command, pointing towards the enemy officer. The sergeant aims and fires his bow with one swift and fluid movement. The arrow arcs through the smoke-blackened sky and pierces the officer<ch.apos/>s shiny breastplate. Slowly his cruel eyes flicker and close, and he slips from his saddle with the arrow lodged deep in his heart.</p>
       <choice idref="sect148"><link-text>Turn to 148</link-text>.</choice>
@@ -2873,8 +2854,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small17.gif" width="386" height="150" />
-       <instance class="pdf" src="small17.pdf" width="386" height="150" />
+       <instance class="html" src="sect183.gif" width="257" height="177" />
+       <instance class="pdf" src="sect183.pdf" width="257" height="177" />
       </illustration>
       <p><quote>Password!</quote> shout the crypt guards.</p>
       <p><quote>Lohn,</quote> reply the soldiers. The door opens and they are allowed to enter.</p>
@@ -2895,8 +2876,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small8.gif" width="386" height="150" />
-       <instance class="pdf" src="small8.pdf" width="386" height="150" />
+       <instance class="html" src="sect71.gif" width="214" height="208" />
+       <instance class="pdf" src="sect71.pdf" width="214" height="208" />
       </illustration>
       <choice idref="sect202">If you wish to fight them, <link-text>turn to 202</link-text>.</choice>
       <choice idref="sect342">If you wish to dive over the parapet of the bridge to avoid them, <link-text>turn to 342</link-text>.</choice>
@@ -2998,8 +2979,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description>The snarling Warhounds bound towards the barricade </description>
        </meta>
-       <instance class="html" src="ill11.gif" width="386" height="605" />
-       <instance class="pdf" src="ill11.pdf" width="386" height="605" />
+       <instance class="html" src="ill11.gif" width="386" height="628" />
+       <instance class="pdf" src="ill11.pdf" width="386" height="628" />
       </illustration>
       <combat><enemy>Vassagonian Warhounds</enemy><enemy-attribute class="combatskill">17</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat>
 
@@ -3028,8 +3009,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small18.gif" width="386" height="150" />
-       <instance class="pdf" src="small18.pdf" width="386" height="150" />
+       <instance class="html" src="sect195.gif" width="198" height="197" />
+       <instance class="pdf" src="sect195.pdf" width="198" height="197" />
       </illustration>
       <p>You signal to your men to stable their horses, and you follow the innkeeper into his tavern. The bar looks more like an armoury than a drinking hall. Quivers of arrows stand beside each of the iron-studded window shutters, and racks of spears line the far wall. The place is deserted except for three young men who all bear a strong resemblance to the tavern-keeper. One of them has his head swathed in bandages.</p>
       <p>You ask the tavern-keeper how much he will charge for your men to billet here tonight and are quite surprised to hear his reply. <quote>Nothing,</quote> he says, moving tables aside so that your rangers can sleep upon the tavern floor. <quote>Your presence here tonight will be worth more than gold to us. We<ch.apos/>ve been attacked by bandits every night since the last full moon.</quote></p>
@@ -3095,8 +3076,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small19.gif" width="386" height="150" />
-       <instance class="pdf" src="small19.pdf" width="386" height="150" />
+       <instance class="html" src="sect200.gif" width="244" height="226" />
+       <instance class="pdf" src="sect200.pdf" width="244" height="226" />
       </illustration>
       <p>The sudden crack of a twig makes you freeze. You glance behind to see three bandits creeping through the trees towards you. The wide steel tips of their spears glint. They seem to be coated with a clear, sticky fluid.</p>
       <choice idref="sect45">If you possess the Kai Discipline of Hunting or if you have ever visited Gorn Cove, <link-text>turn to 45</link-text>.</choice>
@@ -3207,8 +3188,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><line>He spits out his battle-cry and</line><line> spurs his horse towards you once more</line></description>
        </meta>
-       <instance class="html" src="ill12.gif" width="386" height="651" />
-       <instance class="pdf" src="ill12.pdf" width="386" height="651" />
+       <instance class="html" src="ill12.gif" width="386" height="653" />
+       <instance class="pdf" src="ill12.pdf" width="386" height="653" />
       </illustration>
       <choice idref="sect111">If you have reached the Kai rank of Aspirant or higher, <link-text>turn to 111</link-text>.</choice>
       <choice idref="sect43">If you have yet to reach this level of Kai training, <link-text>turn to 43</link-text>.</choice>
@@ -3290,8 +3271,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small20.gif" width="386" height="150" />
-       <instance class="pdf" src="small20.pdf" width="386" height="150" />
+       <instance class="html" src="sect215.gif" width="169" height="168" />
+       <instance class="pdf" src="sect215.pdf" width="169" height="168" />
       </illustration>
       <choice idref="sect296">If you wish to draw your weapon and attack Barraka, <link-text>turn to 296</link-text>.</choice>
 
@@ -3392,8 +3373,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><line>Astride the creature sits a warrior</line><line> wreathed in iron and steel</line></description>
        </meta>
-       <instance class="html" src="ill13.gif" width="386" height="657" />
-       <instance class="pdf" src="ill13.pdf" width="386" height="657" />
+       <instance class="html" src="ill13.gif" width="386" height="663" />
+       <instance class="pdf" src="ill13.pdf" width="386" height="663" />
       </illustration>
       <choice idref="sect77">If you wish to fight the warrior, <link-text>turn to 77</link-text>.</choice>
       <choice idref="sect128">If you wish to evade combat, <link-text>turn to 128</link-text>.</choice>
@@ -3511,8 +3492,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small21.gif" width="386" height="150" />
-       <instance class="pdf" src="small21.pdf" width="386" height="150" />
+       <instance class="html" src="sect232.gif" width="217" height="159" />
+       <instance class="pdf" src="sect232.pdf" width="217" height="159" />
       </illustration>
       <choice idref="sect68">If you wish to investigate the boathouse, <link-text>turn to 68</link-text>.</choice>
       <choice idref="sect130">If you wish to continue downstream and look for some other way to cross the river, <link-text>turn to 130</link-text>.</choice>
@@ -3712,8 +3693,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><line>You have spotted the leader of</line><line> the bandit cavalry</line></description>
        </meta>
-       <instance class="html" src="ill14.gif" width="386" height="678" />
-       <instance class="pdf" src="ill14.pdf" width="386" height="678" />
+       <instance class="html" src="ill14.gif" width="386" height="674" />
+       <instance class="pdf" src="ill14.pdf" width="386" height="674" />
       </illustration>
       <p>You notch an arrow and draw back the bowstring. The straining cord bites into your fingers as you take aim.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
@@ -3754,8 +3735,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small21.gif" width="386" height="150" />
-       <instance class="pdf" src="small21.pdf" width="386" height="150" />
+       <instance class="html" src="sect232.gif" width="217" height="159" />
+       <instance class="pdf" src="sect232.pdf" width="217" height="159" />
       </illustration>
       <choice idref="sect68">If you wish to investigate the boathouse, <link-text>turn to 68</link-text>.</choice>
       <choice idref="sect130">If you wish to continue downstream and look for some other way of crossing the river, <link-text>turn to 130</link-text>.</choice>
@@ -3813,8 +3794,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small22.gif" width="386" height="150" />
-       <instance class="pdf" src="small22.pdf" width="386" height="150" />
+       <instance class="html" src="sect257.gif" width="248" height="143" />
+       <instance class="pdf" src="sect257.pdf" width="248" height="143" />
       </illustration>
       <choice idref="sect302">If you wish to examine the chest, <link-text>turn to 302</link-text>.</choice>
       <choice idref="sect131">If you wish to ignore it and investigate the door, <link-text>turn to 131</link-text>.</choice>
@@ -3833,8 +3814,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><line>The bandits are wandering idly up</line><line> the track towards you</line></description>
        </meta>
-       <instance class="html" src="ill15.gif" width="386" height="677" />
-       <instance class="pdf" src="ill15.pdf" width="386" height="677" />
+       <instance class="html" src="ill15.gif" width="386" height="675" />
+       <instance class="pdf" src="ill15.pdf" width="386" height="675" />
       </illustration>
       <choice idref="sect305">If you possess an Onyx Medallion, <link-text>turn to 305</link-text>.</choice>
       <choice idref="sect49">If you have the Kai Discipline of Camouflage and you have reached the Kai Rank of Guardian or higher, <link-text>turn to 49</link-text>.</choice>
@@ -3923,8 +3904,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small23.gif" width="386" height="150" />
-       <instance class="pdf" src="small23.pdf" width="386" height="150" />
+       <instance class="html" src="sect266.gif" width="167" height="209" />
+       <instance class="pdf" src="sect266.pdf" width="167" height="209" />
       </illustration>
       <p>The tavern-keeper<ch.apos/>s sons each take it in turn to sit watch at the arrow slits, so that you and your men can get some sleep.</p>
       <choice idref="sect324"><link-text>Turn to 324</link-text>.</choice>
@@ -4031,8 +4012,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><line>You see a group of wagons on</line><line> the highway ahead</line></description>
        </meta>
-       <instance class="html" src="ill16.gif" width="386" height="575" />
-       <instance class="pdf" src="ill16.pdf" width="386" height="575" />
+       <instance class="html" src="ill16.gif" width="386" height="579" />
+       <instance class="pdf" src="ill16.pdf" width="386" height="579" />
       </illustration>
       <choice idref="sect37">If you wish to stop to question these travelling minstrels, <link-text>turn to 37</link-text>.</choice>
       <choice idref="sect126">If you wish to ignore them and let them pass, <link-text>turn to 126</link-text>.</choice>
@@ -4161,8 +4142,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small24.gif" width="386" height="150" />
-       <instance class="pdf" src="small24.pdf" width="386" height="150" />
+       <instance class="html" src="sect283.gif" width="137" height="149" />
+       <instance class="pdf" src="sect283.pdf" width="137" height="149" />
       </illustration>
       <choice idref="sect350"><link-text>Turn to 350</link-text>.</choice>
      </data>
@@ -4236,8 +4217,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><line>You stare in horror as a deluge</line><line> of blazing oil rains down</line></description>
        </meta>
-       <instance class="html" src="ill17.gif" width="386" height="677" />
-       <instance class="pdf" src="ill17.pdf" width="386" height="677" />
+       <instance class="html" src="ill17.gif" width="386" height="678" />
+       <instance class="pdf" src="ill17.pdf" width="386" height="678" />
       </illustration>
       <p>The blazing oil has scattered D<ch.apos/>Val<ch.apos/>s men, and the barricade is poorly defended. You hear D<ch.apos/>Val shout your name. His cloak and tunic are ablaze, and he is screaming for your help.</p>
       <choice idref="sect255">If you have reached the Kai rank of Warmarn (you possess 8 Kai Disciplines), <link-text>turn to 255</link-text>.</choice>
@@ -4256,8 +4237,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small25.gif" width="386" height="150" />
-       <instance class="pdf" src="small25.pdf" width="386" height="150" />
+       <instance class="html" src="sect290.gif" width="238" height="194" />
+       <instance class="pdf" src="sect290.pdf" width="238" height="194" />
       </illustration>
       <choice idref="sect44">If you wish to signal your men to attack the robed strangers, <link-text>turn to 44</link-text>.</choice>
       <choice idref="sect102">If you wish to try to capture them alive, <link-text>turn to 102</link-text>.</choice>
@@ -4362,8 +4343,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small26.gif" width="386" height="150" />
-       <instance class="pdf" src="small26.pdf" width="171" height="142" />
+       <instance class="html" src="sect299.gif" width="171" height="142" />
+       <instance class="pdf" src="sect299.pdf" width="171" height="142" />
       </illustration>
       <combat><enemy>Bandit Leader</enemy><enemy-attribute class="combatskill">19</enemy-attribute><enemy-attribute class="endurance">29</enemy-attribute></combat>
       <choice idref="sect121">If you win the fight, <link-text>turn to 121</link-text>.</choice>
@@ -4379,8 +4360,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small4.gif" width="386" height="150" />
-       <instance class="pdf" src="small4.pdf" width="386" height="150" />
+       <instance class="html" src="sect20.gif" width="294" height="166" />
+       <instance class="pdf" src="sect20.pdf" width="294" height="166" />
       </illustration>
       <p>He reaches you, breathless from his run, and draws an arrow from his quiver. The Warhounds, tired of their victim, are in search of fresh sport and are turning their attentions on you. D<ch.apos/>Val aims and fires, drawing another arrow as soon as his bow is empty. Warhounds tumble and crash to the ground around you, felled by D<ch.apos/>Val<ch.apos/>s deadly shafts. The captain grabs you by the arm and swings you over his shoulder in one swift movement, before carrying you back to the barricade. Others run forward to help him, but the bandit archers are now in range and the men are forced back by a hail of arrows. The red shafts whistle past on all sides. Finally you reach the barricade; a wagon is pulled aside and you are carried through the open gap. Captain D<ch.apos/>Val is close to exhaustion; he staggers and his men rush to catch him before he drops you to the ground.</p>
       <choice idref="sect341"><link-text>Turn to 341</link-text>.</choice>
@@ -4474,8 +4455,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><line>A loud hissing fills your ears,</line><line>like steam escaping from a geyser</line></description>
        </meta>
-       <instance class="html" src="ill18.gif" width="386" height="725" />
-       <instance class="pdf" src="ill18.pdf" width="386" height="725" />
+       <instance class="html" src="ill18.gif" width="386" height="731" />
+       <instance class="pdf" src="ill18.pdf" width="386" height="731" />
       </illustration>
       <combat><enemy>Elix</enemy><enemy-attribute class="combatskill">17</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat>
       <choice idref="sect127">If you win the combat, <link-text>turn to 127</link-text>.</choice>
@@ -4552,8 +4533,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small27.gif" width="386" height="150" />
-       <instance class="pdf" src="small27.pdf" width="386" height="150" />
+       <instance class="html" src="sect314.gif" width="186" height="186" />
+       <instance class="pdf" src="sect314.pdf" width="186" height="186" />
       </illustration>
       <choice idref="sect53">If you wish to enter the hut, <link-text>turn to 53</link-text>.</choice>
       <choice idref="sect258">If you do not wish to enter the hut, continue your mission by <link-text>turning to 258</link-text>.</choice>
@@ -4601,8 +4582,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><quote>He has lost everything<ch.ellips/>his castle, his land, his town and his family...</quote> </description>
        </meta>
-       <instance class="html" src="ill19.gif" width="386" height="590" />
-       <instance class="pdf" src="ill19.pdf" width="386" height="590" />
+       <instance class="html" src="ill19.gif" width="386" height="586" />
+       <instance class="pdf" src="ill19.pdf" width="386" height="586" />
       </illustration>
       <p>The pathetic man raises his tear-stained face, and with feeble voice mutters a curious rhyme, over and over again.</p>
       <blockquote>
@@ -4672,8 +4653,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small16.gif" width="386" height="150" />
-       <instance class="pdf" src="small16.pdf" width="386" height="150" />
+       <instance class="html" src="sect174.gif" width="250" height="144" />
+       <instance class="pdf" src="sect174.pdf" width="250" height="144" />
       </illustration>
       <p><quote>Shoot the leader!</quote> you command, pointing towards the enemy officer. The sergeant aims and fires his bow with one swift and fluid movement. The arrow arcs through the battle-smoke and pierces the officer<ch.apos/>s shiny breastplate. Slowly his cruel eyes flicker and close as he slips from the saddle, the shaft lodged deep in his heart.</p>
       <choice idref="sect148"><link-text>Turn to 148</link-text>.</choice>
@@ -4738,8 +4719,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small28.gif" width="386" height="150" />
-       <instance class="pdf" src="small28.pdf" width="386" height="150" />
+       <instance class="html" src="sect328.gif" width="205" height="161" />
+       <instance class="pdf" src="sect328.pdf" width="205" height="161" />
       </illustration>
       <choice idref="sect120"><link-text>Turn to 120</link-text>.</choice>
      </data>
@@ -4820,8 +4801,8 @@ Initial Revision.
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small29.gif" width="386" height="150" />
-       <instance class="pdf" src="small29.pdf" width="386" height="150" />
+       <instance class="html" src="sect335.gif" width="155" height="128" />
+       <instance class="pdf" src="sect335.pdf" width="155" height="128" />
       </illustration>
       <choice idref="sect35">If you possess the Kai Discipline of Camouflage, <link-text>turn to 35</link-text>.</choice>
       <choice idref="sect317">If you have the Kai Discipline of Mind Over Matter, <link-text>turn to 317</link-text>.</choice>
@@ -4906,8 +4887,8 @@ Initial Revision.
         <creator>Gary Chalk</creator>
         <description><line>The rangers are dragged down</line><line> into the bubbling depths</line></description>
        </meta>
-       <instance class="html" src="ill20.gif" width="386" height="676" />
-       <instance class="pdf" src="ill20.pdf" width="386" height="676" />
+       <instance class="html" src="ill20.gif" width="386" height="681" />
+       <instance class="pdf" src="ill20.pdf" width="386" height="681" />
       </illustration>
       <p>Pick a number from the <a idref="random">Random Number Table</a>. If your current <typ class="attribute">ENDURANCE</typ> point total is 20 or more, add 3 to the number that you have picked. If your current <typ class="attribute">ENDURANCE</typ> point total is 12 or less, deduct 2 from the number you have picked.</p>
       <choice idref="sect194">If your total is now -2<ch.endash/>6, <link-text>turn to 194</link-text>.</choice>
@@ -4981,15 +4962,15 @@ Initial Revision.
      <data>
       <p>As Barraka dies, the wind suddenly rises in pitch and intensity, filling the temple with a mournful cry of despair. You feel the chill, malevolent spirit of Darklord Vashna engulfing you in an icy embrace, but you sense that he is powerless to harm you. The sacrifice has been foiled; he is doomed to lament for a victory that might have been.</p>
       <p>Lying on the black temple floor is the Dagger of Vashna. As you pick it up and tuck it into your belt (mark this on your <a idref="action">Action Chart</a> as a Special Item), the evil blue flame flickers and dies. As long as you possess this evil blade, Darklord Vashna and his legion of dead warriors will remain imprisoned in the chasm of doom.</p>
-      <p>You free fair Madelon from the altar and carry her through the corridors of the temple that lead up to the surface. As you emerge into the moonlit ruins, an astounding sight greets your eyes. Barraka<ch.apos/>s warriors are running from the ghost city in all directions, closely pursued by an army of cavalrymen. The light of the full moon and the guttering torches that these horsemen carry, illuminates the sun-crest that bedecks their tunics. Word must have reached Holmgard for they are the Sommlending army, led by King Ulnar himself. Your countrymen praise your courage and daring, their strident cheers drowning the cry of Maakengorge, for once again you have proved yourself a true hero of Sommerlund. As you deliver Madelon into the waiting arms of her father, his overwhelming joy fills you with a sense of great achievement. You are indeed worthy of the title <quote>Kai Lord</quote>. You have succeeded in your perilous quest, but the epic saga of Lone Wolf<ch.emdash/>last of the Kai Lords<ch.emdash/>is far from complete. A new and deadly challenge awaits you in Book 5 of the Lone Wolf series entitled:</p>
+      <p>You free fair Madelon from the altar and carry her through the corridors of the temple that lead up to the surface. As you emerge into the moonlit ruins, an astounding sight greets your eyes. Barraka<ch.apos/>s warriors are running from the ghost city in all directions, closely pursued by an army of cavalrymen. The light of the full moon and the guttering torches that these horsemen carry, illuminates the sun-crest that bedecks their tunics. Word must have reached Holmgard for they are the Sommlending army, led by King Ulnar himself. Your countrymen praise your courage and daring, their strident cheers drowning the cry of Maakengorge, for once again you have proved yourself a true hero of Sommerlund. As you deliver Madelon into the waiting arms of her father, his overwhelming joy fills you with a sense of great achievement. You are indeed worthy of the title <quote>Kai Lord</quote>. You have succeeded in your perilous quest, but the epic saga of Lone Wolf<ch.emdash/>last of the Kai Lords<ch.emdash/>is far from complete. A new and deadly challenge awaits you in Book 5 of the <cite>Lone Wolf</cite> series entitled:</p>
       <p><bookref series="lw" book="05sots"><cite>Shadow on the Sand</cite></bookref></p>
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
         <description>Barraka<ch.apos/>s men flee from King Ulnar and the army of Sommerlund </description>
        </meta>
-       <instance class="html" src="ill21.gif" width="772" height="582" />
-       <instance class="pdf" src="ill21.pdf" width="772" height="582" />
+       <instance class="html" src="ill21.gif" width="772" height="588" />
+       <instance class="pdf" src="ill21.pdf" width="772" height="588" />
       </illustration>
      </data>
     </section>
@@ -5122,8 +5103,8 @@ Initial Revision.
      <li>Subtract the <typ class="attribute">COMBAT SKILL</typ> of your enemy from this total. This number = Combat Ratio.</li>
      <li>Pick number from <a idref="random">Random Number Table</a>.</li>
      <li>Turn to <a idref="crtable">Combat Results Table</a>.</li>
-     <li>Find your Combat Ratio on the top of chart and cross-reference to random number you have picked. (E indicates loss of <typ class="attribute">ENDURANCE</typ> points to Enemy. LW indicates loss of <typ class="attribute">ENDURANCE</typ> points to Lone Wolf.)</li>
-     <li>Continue the combat from Stage 3 until one character is dead. This is when <typ class="attribute">ENDURANCE</typ> points of either character fall to 0.</li>
+     <li>Find your Combat Ratio on the top of the chart and cross-reference to random number you have picked. (E indicates loss of <typ class="attribute">ENDURANCE</typ> points to Enemy. LW indicates loss of <typ class="attribute">ENDURANCE</typ> points to Lone Wolf.)</li>
+     <li>Continue the combat from Stage 3 until one character is dead. This is when <typ class="attribute">ENDURANCE</typ> points of either character fall to 0 or below.</li>
     </ol>
 
     <section class="backmatter" id="smevazn">
@@ -5525,24 +5506,31 @@ Initial Revision.
 
      <data>
       <p>(<a idref="tssf">The Story So Far<ch.ellips/></a>) Replaced <quote>heavily-guarded</quote> with <quote>heavily guarded</quote>.</p>
-      <p>(<a idref="gamerulz">The Game Rules</a>) Removed <quote> that you will find in the front of this book, For further adventuring you can copy out the chart yourself or get it photocopied</quote>. Replaced both occurrences of <quote>ie,</quote> with <quote>i.e.</quote>.<!--ERRTAG-RE-8413-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-8413-ITEM--><!--ERRTAG-RE-10187-ITEM--> Replaced <quote>fall to zero</quote> with <quote>fall to zero or below</quote>.<!--/ERRTAG-RE-10187-ITEM--></p>
-      <p>(<a idref="discplnz">Kai Disciplines</a>) Capitalized all occurrences of <quote>discipline(s)</quote>. Set the Weapons list in initial capital letters instead of all capitals.</p>
-      <p>(<a idref="equipmnt">Equipment</a>) Removed <quote> (see front of this book)</quote>. Capitalized the items in the list rather than setting them in all capitals.</p>
+
+      <p>(<a idref="gamerulz">The Game Rules</a>) Removed <quote> that you will find in the front of this book, For further adventuring you can copy out the chart yourself or get it photocopied</quote>. Replaced both occurrences of <quote>ie,</quote> with <quote>i.e.</quote>.<!--ERRTAG-RE-8413-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-8413-ITEM--></p>
+
+      <p>(<a idref="discplnz">Kai Disciplines</a>) Capitalized all occurrences of <quote>discipline(s)</quote>. Set the Weapons list in initial capital letters instead of all capitals. Replaced <quote>Kai monastery</quote> with <quote>Kai Monastery</quote>. Replaced all occurrences of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+
+      <p>(<a idref="equipmnt">Equipment</a>) Removed <quote> (see front of this book)</quote>. Capitalized the items in the list rather than setting them in all capitals. Replaced all occurrences of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+
       <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed <quote> on the inside back cover of the book</quote>. Replaced <quote>on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>.</p>
-      <p>(<a idref="levels">Levels of Kai Training</a>) Replaced <quote>LONE WOLF</quote> with <quote>Lone Wolf</quote>.</p>
-      <p>(<a idref="kaiwisdm">Kai Wisdom</a>) Removed <quote> at the front of the book</quote>. Replaced <quote>LONE WOLF</quote> with <quote>Lone Wolf</quote>.</p>
+
+      <p>(<a idref="levels">Levels of Kai Training</a>) Replaced <quote>LONE WOLF</quote> with <quote>Lone Wolf</quote>. Replaced all occurrences of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+
+      <p>(<a idref="kaiwisdm">Kai Wisdom</a>) Removed <quote> at the front of the book</quote>. Replaced <quote>LONE WOLF</quote> with <quote>Lone Wolf</quote>. Replaced all occurrences of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+
       <p>(<a idref="sect1">1</a>) Replaced <quote>pass of Moytura</quote> with <quote>Pass of Moytura</quote>, <quote>flat treeless</quote> with <quote>flat, treeless</quote>, <quote>rest neither</quote> with <quote>rest, neither</quote> and <quote>burden nor</quote> with <quote>burden, nor</quote>.<!--ERRTAG-RE-35263-ITEM--> Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.<!--/ERRTAG-RE-35263-ITEM--></p>
       <p>(<a idref="sect2">2</a>) Replaced <quote>Maaken mines, and</quote> with <quote>Maaken mines and</quote>.</p>
       <p>(<a idref="sect5">5</a>) Replaced <quote>Captain<ch.apos/>s</quote> with <quote>captain<ch.apos/>s</quote> and <quote>Captain</quote> with <quote>captain</quote>.<!--ERRTAG-RE-41411-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-41411-ITEM--></p>
       <p>(<a idref="sect7">7</a>) Replaced <quote>saddle and</quote> with <quote>saddle, and</quote>.</p>
-<p>(<a idref="sect8">8</a>)<!--ERRTAG-RE-43687-ITEM--> Replaced <quote>brings</quote> with <quote>bring</quote>.<!--/ERRTAG-RE-43687-ITEM--></p>
+      <p>(<a idref="sect8">8</a>)<!--ERRTAG-RE-43687-ITEM--> Replaced <quote>brings</quote> with <quote>bring</quote>.<!--/ERRTAG-RE-43687-ITEM--></p>
       <p>(<a idref="sect11">11</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote> and <quote>saddle and</quote> with <quote>saddle, and</quote>.</p>
       <p>(<a idref="sect12">12</a>) Replaced <quote>mission for</quote> with <quote>mission, for</quote>.</p>
       <p>(<a idref="sect13">13</a>) Replaced <quote>end and</quote> with <quote>end, and</quote>.</p>
       <p>(<a idref="sect18">18</a>) Replaced <quote>tracks and</quote> with <quote>tracks, and</quote>.</p>
       <p>(<a idref="sect20">20</a>) Replaced <quote>You reach the barricade and a wagon is pulled aside and you are carried in through the gap.<ch.ellips/></quote> with <quote>You reach the barricade, a wagon is pulled aside, and you are carried in through the gap.<ch.ellips/></quote> and  <quote>Captain</quote> with <quote>captain</quote>.</p>
       <p>(<a idref="sect21">21</a>) Moved the Tracking choice into the first position.</p>
-<p>(<a idref="sect25">25</a>)<!--ERRTAG-RE-58349-ITEM--> Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.<!--/ERRTAG-RE-58349-ITEM--></p>
+      <p>(<a idref="sect25">25</a>)<!--ERRTAG-RE-58349-ITEM--> Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.<!--/ERRTAG-RE-58349-ITEM--></p>
       <p>(<a idref="sect26">26</a>) Replaced <quote>feet away, and</quote> with <quote>feet away and</quote>.</p>
       <p>(<a idref="sect27">27</a>) Added a period to the end of the first paragraph.</p>
       <p>(<a idref="sect32">32</a>) Replaced <quote>river, is</quote> with <quote>river is</quote>.<!--ERRTAG-RE-64952-ITEM--> Replaced <quote>now your brave company</quote> with <quote>now that your brave company</quote>.<!--/ERRTAG-RE-64952-ITEM--></p>
@@ -5563,8 +5551,8 @@ Initial Revision.
       <p>(<a idref="sect66">66</a>) Replaced <quote>counter-charge</quote> with <quote>countercharge</quote> and <quote>mid-air and</quote> with <quote>mid-air, and</quote>.</p>
       <p>(<a idref="sect67">67</a>) Replaced <quote>razor sharp</quote> with <quote>razor-sharp</quote>.</p>
       <p>(<a idref="sect69">69</a>) Replaced <quote>away and</quote> with <quote>away, and</quote>.</p>
-      <p>(<a idref="sect70">70</a>) Replaced the middle choice <quote>If you wish to dive into the tall crops and hide,</quote> with <quote>If you do not have this Special Item or this Discipline and Kai Rank, dive into the tall crops and hide by <a idref="sect159">turning to 159</a>.</quote> and moved it to the bottom. Also replaced <quote>duties and</quote> with <quote>duties, and</quote> and <quote>tracks and</quote> with <quote>tracks, and</quote>.</p>
-<p>(<a idref="sect71">71</a>)<!--ERRTAG-RE-100596-ITEM--> Replaced <quote>spreadeagled</quote> with <quote>spread-eagled</quote>.<!--/ERRTAG-RE-100596-ITEM--></p>
+      <p>(<a idref="sect70">70</a>) Replaced the middle choice <quote>If you wish to dive into the tall crops and hide,</quote> with <quote>If you do not have this Special Item or this Discipline and Kai Rank, dive into the tall crops and hide by <a idref="sect159">turning to 159</a>.</quote> and moved it to the bottom. Also changed <quote>duties and</quote> with <quote>duties, and</quote> and <quote>tracks and</quote> <quote>tracks, and</quote>.</p>
+      <p>(<a idref="sect71">71</a>)<!--ERRTAG-RE-100596-ITEM--> Replaced <quote>spreadeagled</quote> with <quote>spread-eagled</quote>.<!--/ERRTAG-RE-100596-ITEM--></p>
       <p>(<a idref="sect72">72</a>) Replaced <quote>enemy, which</quote> with <quote>enemy which</quote> and <quote>you, and</quote> with <quote>you and</quote>.<!--ERRTAG-RE-102151-ITEM--> Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.<!--/ERRTAG-RE-102151-ITEM--></p>
       <p>(<a idref="sect74">74</a>) Replaced <quote>incident and</quote> with <quote>incident, and</quote> and <quote>burnt out</quote> with <quote>burnt-out</quote>.</p>
       <p>(<a idref="sect76">76</a>) Replaced <quote>him, than</quote> with <quote>him than</quote>.</p>
@@ -5608,7 +5596,7 @@ Initial Revision.
       <p>(<a idref="sect154">154</a>) Replaced <quote>battle, the</quote> with <quote>battle; the</quote>.</p>
       <p>(<a idref="sect157">157</a>) Replaced <quote>awake totally</quote> with <quote>awake, totally</quote>.</p>
       <p>(<a idref="sect158">158</a>) Replaced <quote>by</quote> with <quote>before</quote> in the last sentence for syntax clarity and consistency with <a idref="sect94">section 94</a>. Made the last sentence of the last paragraph its own paragraph for the sake of automatic formatting.</p>
-<p>(<a idref="sect161">161</a>)<!--ERRTAG-RE-184995-ITEM--> Replaced <quote>feet a sudden jolt</quote> with <quote>feel a sudden jolt</quote>.<!--/ERRTAG-RE-184995-ITEM--><!--ERRTAG-RE-185667-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-185667-ITEM--></p>
+      <p>(<a idref="sect161">161</a>)<!--ERRTAG-RE-184995-ITEM--> Replaced <quote>feet a sudden jolt</quote> with <quote>feel a sudden jolt</quote>.<!--/ERRTAG-RE-184995-ITEM--><!--ERRTAG-RE-185667-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-185667-ITEM--></p>
       <p>(<a idref="sect163">163</a>) Replaced <quote>Vassagonian, but</quote> with <quote>Vassagonian but</quote>.</p>
       <p>(<a idref="sect166">166</a>) Replaced <quote>here, and</quote> with <quote>here and</quote> and <quote>hard pressed</quote> with <quote>hard-pressed</quote>.</p>
       <p>(<a idref="sect167">167</a>) Made the last paragraph its own sentence for the sake of automatic formatting.</p>
@@ -5619,14 +5607,14 @@ Initial Revision.
       <p>(<a idref="sect175">175</a>) Replaced <quote>ambush and</quote> with <quote>ambush, and</quote> and <quote>razor sharp</quote> with <quote>razor-sharp</quote>.</p>
       <p>(<a idref="sect177">177</a>) Replaced <quote>guards who</quote> with <quote>guards, who</quote> and <quote>men who</quote> with <quote>men, who</quote>.</p>
       <p>(<a idref="sect180">180</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>, <quote>cavern and</quote> with <quote>cavern, and</quote>, and <quote>darkness you</quote> with <quote>darkness, you</quote>.</p>
-<p>(<a idref="sect182">182</a>)<!--ERRTAG-RE-202189-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-202189-ITEM--></p>
+      <p>(<a idref="sect182">182</a>)<!--ERRTAG-RE-202189-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-202189-ITEM--></p>
       <p>(<a idref="sect184">184</a>) Replaced <quote>hit but</quote> with <quote>hit, but</quote> and <quote>fight; a</quote> with <quote>fight<ch.emdash/>a</quote>.</p>
       <p>(<a idref="sect186">186</a>) Replaced <quote>back and</quote> with <quote>back, and</quote>, <quote>oily black</quote> with <quote>oily, black</quote> and <quote>head, leaps</quote> with <quote>head leaps</quote>.<!--ERRTAG-RE-207197-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-207197-ITEM--></p>
       <p>(<a idref="sect189">189</a>) Replaced <quote>the ranger</quote> with <quote>a ranger</quote> in the second sentence. At this point, there are still several rangers left in the company. Also replaced <quote>air and</quote> with <quote>air, and</quote>.</p>
       <p>(<a idref="sect192">192</a>) Replaced <quote>serated</quote> with <quote>serrated</quote> and <quote>chest and</quote> with <quote>chest, and</quote>.</p>
       <p>(<a idref="sect193">193</a>) Added <quote>or if you have won in the first two rounds, </quote> to the choice. Also replaced <quote>risen you</quote> with <quote>risen, you</quote>.</p>
       <p>(<a idref="sect195">195</a>) Replaced <quote>back and</quote> with <quote>back, and</quote>, <quote>horses and</quote> with <quote>horses, and</quote>, <quote>shutters and</quote> with <quote>shutters, and</quote> and <quote>tonight, and</quote> with <quote>tonight and</quote>.</p>
-<p>(<a idref="sect196">196</a>)<!--ERRTAG-RE-216359-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-216359-ITEM--></p>
+      <p>(<a idref="sect196">196</a>)<!--ERRTAG-RE-216359-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-216359-ITEM--></p>
       <p>(<a idref="sect197">197</a>) Replaced <quote>gasp and</quote> with <quote>gasp, and</quote>.</p>
       <p>(<a idref="sect200">200</a>) Replaced <quote>woodsmoke</quote> with <quote>wood smoke</quote> and <quote>tower a tattered</quote> with <quote>tower, a tattered</quote>.</p>
       <p>(<a idref="sect201">201</a>) Replaced <quote>dry and</quote> with <quote>dry, and</quote>.<!--ERRTAG-RE-220912-ITEM--> Replaced <quote>fungi absorbs</quote> with <quote>fungi absorb</quote>.<!--/ERRTAG-RE-220912-ITEM--></p>
@@ -5636,12 +5624,12 @@ Initial Revision.
       <p>(<a idref="sect207">207</a>) Replaced <quote>wall, and</quote> with <quote>wall and</quote>.</p>
       <p>(<a idref="sect208">208</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>, <quote>dead-end</quote> with <quote>dead end</quote>, <quote>tunnel; a</quote> with <quote>tunnel<ch.emdash/>a</quote> and <quote>excavated and</quote> with <quote>excavated, and</quote>.</p>
       <p>(<a idref="sect209">209</a>) Replaced <quote>battle cry</quote> with <quote>battle-cry</quote> in the illustration caption.<!--ERRTAG-RE-228193-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-228193-ITEM--></p>
-<p>(<a idref="sect211">211</a>)<!--ERRTAG-RE-229695-ITEM--> Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.<!--/ERRTAG-RE-229695-ITEM--></p>
+      <p>(<a idref="sect211">211</a>)<!--ERRTAG-RE-229695-ITEM--> Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.<!--/ERRTAG-RE-229695-ITEM--></p>
       <p>(<a idref="sect212">212</a>) Replaced <quote>well for</quote> with <quote>well, for</quote>.</p>
       <p>(<a idref="sect214">214</a>) Replaced <quote>lights, make</quote> with <quote>lights make</quote>.</p>
       <p>(<a idref="sect219">219</a>) Replaced <quote>effort, do</quote> with <quote>effort do</quote>.<!--ERRTAG-RE-236493-ITEM--> Replaced <quote>shute</quote> with <quote>chute</quote>.<!--/ERRTAG-RE-236493-ITEM--></p>
       <p>(<a idref="sect221">221</a>) Replaced <quote>here and</quote> with <quote>here, and</quote> and <quote>stairs, by</quote> with <quote>stairs by</quote>.</p>
-<p>(<a idref="sect223">223</a>)<!--ERRTAG-RE-240849-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-240849-ITEM--></p>
+      <p>(<a idref="sect223">223</a>)<!--ERRTAG-RE-240849-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-240849-ITEM--></p>
       <p>(<a idref="sect224">224</a>) Moved the Tracking or Sixth Sense choice into the first position.</p>
       <p>(<a idref="sect225">225</a>) Replaced <quote>burst but</quote> with <quote>burst, but</quote>, <quote>sweat and</quote> with <quote>sweat, and</quote>, <quote>small pink</quote> with <quote>small pink</quote> and <quote>leg and</quote> with <quote>leg, and</quote>.</p>
       <p>(<a idref="sect226">226</a>) Replaced <quote>tree-trunks</quote> with <quote>tree trunks</quote>.</p>
@@ -5689,7 +5677,7 @@ Initial Revision.
       <p>(<a idref="sect298">298</a>) Replaced <quote>blows, fade</quote> with <quote>blows fade</quote> and <quote>mind, and</quote> with <quote>mind and</quote>.</p>
       <p>(<a idref="sect299">299</a>) Replaced <quote>fall but</quote> with <quote>fall, but</quote>.<!--ERRTAG-RE-311346-ITEM--> Replaced <quote>rain</quote> with <quote>rains</quote>.<!--/ERRTAG-RE-311346-ITEM--></p>
       <p>(<a idref="sect300">300</a>) Replaced <quote>screams and</quote> with <quote>screams, and</quote> and <quote>Captain</quote> with <quote>captain</quote>.</p>
-<p>(<a idref="sect301">301</a>)<!--ERRTAG-RE-314597-ITEM--> Replaced <quote>posses</quote> with <quote>possess</quote>.<!--/ERRTAG-RE-314597-ITEM--></p>
+      <p>(<a idref="sect301">301</a>)<!--ERRTAG-RE-314597-ITEM--> Replaced <quote>posses</quote> with <quote>possess</quote>.<!--/ERRTAG-RE-314597-ITEM--></p>
       <p>(<a idref="sect303">303</a>) Replaced <quote>ladder and</quote> with <quote>ladder, and</quote>.</p>
       <p>(<a idref="sect304">304</a>) Replaced <quote>air and</quote> with <quote>air, and</quote>.</p>
       <p>(<a idref="sect305">305</a>) Replaced <quote>slovenlinesss</quote> with <quote>slovenliness</quote>.</p>
@@ -5716,9 +5704,9 @@ Initial Revision.
       <p>(<a idref="sect342">342</a>) Replaced <quote>teeth you</quote> with <quote>teeth, you</quote>, <quote>hard unyielding</quote> with <quote>hard, unyielding</quote>, <quote>floor you</quote> with <quote>floor, you</quote>, and <quote>discard it or</quote> with <quote>discard it, or</quote>. Made the last sentence its own paragraph for the sake of automatic formatting.</p>
       <p>(<a idref="sect346">346</a>) Replaced <quote>left hand</quote> with <quote>left-hand</quote>.</p>
       <p>(<a idref="sect347">347</a>) Replaced <quote>escape but</quote> with <quote>escape, but</quote>, <quote>trapdoor, desperately</quote> with <quote>trapdoor desperately</quote> and <quote>back; but</quote> with <quote>back, but</quote>..</p>
-<p>(<a idref="sect348">348</a>)<!--ERRTAG-RE-356709-ITEM--> Replaced <quote>the the</quote> with <quote>the</quote>.<!--/ERRTAG-RE-356709-ITEM--></p>
-      <p>(<a idref="sect350">350</a>) Replaced <quote>Maakengorge; for</quote> with <quote>Maakengorge, for</quote>.</p>
-      <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>.</p>
+      <p>(<a idref="sect348">348</a>)<!--ERRTAG-RE-356709-ITEM--> Replaced <quote>the the</quote> with <quote>the</quote>.<!--/ERRTAG-RE-356709-ITEM--></p>
+      <p>(<a idref="sect350">350</a>) Replaced <quote>Maakengorge; for</quote> with <quote>Maakengorge, for</quote>. Replaced <quote>Lone Wolf series </quote> with <quote><cite>Lone Wolf</cite> series</quote>.</p>
+      <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>, <quote>top of chart</quote> with <quote>top of the chart</quote> and <quote>fall to 0</quote> with <quote>falls to 0 or below</quote>.</p>
      </data>
     </section>
 
@@ -5774,8 +5762,6 @@ Initial Revision.
      <data>
       <p>Only the first occurrence of each secondary illustration is cited.</p>
       <ul class="unbulleted">
-       <li><a idref="equipmnt">Equipment</a></li>
-       <li><a idref="discplnz">Kai Disciplines</a></li>
        <li><a idref="sect1">Section 1</a></li>
        <li><a idref="sect7">Section 7</a></li>
        <li><a idref="sect10">Section 10</a></li>
@@ -5815,8 +5801,6 @@ Initial Revision.
 
   &inclusion.project.aon.license;
 
- </data>
-</section>
+  </data>
+ </section>
 </gamebook>
-
-
