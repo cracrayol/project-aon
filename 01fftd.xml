@@ -16,6 +16,9 @@
 $Id$
 
 $Log$
+Revision 1.14  2007/01/07 19:11:00  Simon Osborne
+A couple of minor Errata fixed.
+
 Revision 1.13  2007/05/12 17:51:33  jonathan.blake
 minor footnote issues
 
@@ -540,7 +543,7 @@ Todo:
        <li><p>Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.</p></li>
        <li><p>Repeat the sequence from <a idref="stage3">Stage 3</a>.</p></li>
       </ol>
-      <p>This process of combat continues until the <typ class="attribute">ENDURANCE</typ> points of either the enemy or Lone Wolf are reduced to zero, at which point the one with the zero score is declared dead. If Lone Wolf is dead, the adventure is over. If the enemy is dead, Lone Wolf proceeds but with his <typ class="attribute">ENDURANCE</typ> points reduced.</p>
+      <p>This process of combat continues until the <typ class="attribute">ENDURANCE</typ> points of either the enemy or Lone Wolf are reduced to zero or below, at which point the one with the zero score is declared dead. If Lone Wolf is dead, the adventure is over. If the enemy is dead, Lone Wolf proceeds but with his <typ class="attribute">ENDURANCE</typ> points possibly reduced.</p>
       <p>A <a idref="crsumary">summary of Combat Rules</a> appears in the back of this book.</p>
 
       <section class="frontmatter" id="evasion">
@@ -5514,7 +5517,7 @@ Todo:
       <p>(<a idref="discplnz">Kai Disciplines</a>) Replaced <quote>Kai Discipline section</quote> with <quote>Kai Disciplines section</quote>, removed <quote> on the last page of the book</quote>, and capitalized all occurrences of <quote>discipline</quote>. Replaced <quote>fully in <a idref="equipmnt">Equipment section</a></quote> with <quote>fully in the <a idref="equipmnt">Equipment section</a></quote>.</p>
       <p>(<a idref="equipmnt">Equipment</a>) Added periods to the sentences describing the Helmet and Chainmail Waistcoat.</p>
       <p>(<a idref="equipmnt">Equipment: How to use your equipment</a>) Added a period to the second from last sentence in the Weapons subsection.</p>
-      <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed a superfluous period in the second paragraph of the first example. Removed <quote> on the inside back cover of the book</quote> and replaced <quote>on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>.</p>
+      <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed a superfluous period in the second paragraph of the first example. Removed <quote> on the inside back cover of the book</quote> and replaced <quote>on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>. Replaced <quote>reduced to zero</quote> with <quote>reduced to zero or below</quote>. Replaced <quote>points reduced</quote> with <quote>points possibly reduced</quote>.</p>
       <p>(<a idref="levels">Levels of Kai Training</a>) The Levels of Kai Training section did not originally appear in this book, but has been added for the reader's information.</p>
       <p>(<a idref="kaiwisdm">Kai Wisdom</a>) Removed <quote>on the back cover of the book </quote>.</p>
       <p>(<a idref="sect1">1</a>) Replaced <quote>Sommerlund</quote> with <quote>Sommlending</quote> and made the last choice (about using Sixth Sense) the first.</p>
@@ -5537,7 +5540,7 @@ Todo:
       <p>(<a idref="sect69">69</a>) Replaced <quote>Gallowbrush</quote> with <quote>gallowbrush</quote>: you can't pick it up.</p>
       <p>(<a idref="sect70">70</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
       <p>(<a idref="sect71">71</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
-<p>(<a idref="sect75">75</a>)<!--ERRTAG-RE-93708-ITEM--> Replaced <quote>border rangers</quote> with <quote>Border Rangers</quote>.<!--/ERRTAG-RE-93708-ITEM--></p>
+      <p>(<a idref="sect75">75</a>)<!--ERRTAG-RE-93708-ITEM--> Replaced <quote>border rangers</quote> with <quote>Border Rangers</quote>.<!--/ERRTAG-RE-93708-ITEM--></p>
       <p>(<a idref="sect83">83</a>) Added another <quote>s</quote> after <quote>posses</quote> in the last choice and moved that choice into the first position.</p>
       <p>(<a idref="sect87">87</a>) Replaced <quote>Graveweed</quote> with <quote>graveweed</quote>.</p>
       <p>(<a idref="sect91">91</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
@@ -5546,12 +5549,12 @@ Todo:
       <p>(<a idref="sect119">119</a>) Replaced <quote>Gallowbrush</quote> with <quote>gallowbrush</quote>: you can't pick it up.</p>
       <p>(<a idref="sect122">122</a>) Split the first sentence which was actually two independent clauses into two sentences to fix it.</p>
       <p>(<a idref="sect125">125</a>) Moved the last choice (about the Tracking Discipline) into the first position.</p>
-<p>(<a idref="sect128">128</a>)<!--ERRTAG-RE-134226-ITEM--> Replaced <quote>border ranger</quote> with <quote>Border Ranger</quote>.<!--/ERRTAG-RE-134226-ITEM--></p>
-<p>(<a idref="sect131">131</a>)<!--ERRTAG-RE-137630-ITEM--> Replaced <quote>Magicians Guild of Toran</quote> with <quote>Magicians<ch.apos/> Guild of Toran</quote>.<!--/ERRTAG-RE-137630-ITEM--></p>
+      <p>(<a idref="sect128">128</a>)<!--ERRTAG-RE-134226-ITEM--> Replaced <quote>border ranger</quote> with <quote>Border Ranger</quote>.<!--/ERRTAG-RE-134226-ITEM--></p>
+      <p>(<a idref="sect131">131</a>)<!--ERRTAG-RE-137630-ITEM--> Replaced <quote>Magicians Guild of Toran</quote> with <quote>Magicians<ch.apos/> Guild of Toran</quote>.<!--/ERRTAG-RE-137630-ITEM--></p>
       <p>(<a idref="sect144">144</a>) Added <quote> or if you have no Backpack Items</quote> to the second paragraph.<!--ERRTAG-RE-149741-ITEM--> Replaced <quote>one Item is stolen</quote> with <quote>one item is stolen</quote>.<!--/ERRTAG-RE-149741-ITEM--></p>
       <p>(<a idref="sect151">151</a>) Added <quote>If you wish to remove the pin, turn to 337.</quote> This is the only other possible choice for what is a strangely one-sided option in the original text. More flavourful language might make more sense, such as <quote>If you still wish to remove the pin with your hands,</quote> but to best preserve the integrity of the text, we simply copied the choice from <a idref="sect23">Section 23</a>.</p>
       <p>(<a idref="sect154">154</a>) Replaced <quote>head first</quote> with <quote>head-first</quote>.</p>
-<p>(<a idref="sect166">166</a>)<!--ERRTAG-RE-169126-ITEM--> Replaced <quote>tortuous</quote> with <quote>torturous</quote>.<!--/ERRTAG-RE-169126-ITEM--></p>
+      <p>(<a idref="sect166">166</a>)<!--ERRTAG-RE-169126-ITEM--> Replaced <quote>tortuous</quote> with <quote>torturous</quote>.<!--/ERRTAG-RE-169126-ITEM--></p>
       <p>(<a idref="sect167">167</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
       <p>(<a idref="sect172">172</a>) Moved the second choice (about the Camouflage Discipline) into the first position.</p>
       <p>(<a idref="sect175">175</a>) Moved the last choice (about the Camouflage Discipline) into the first position.<!--ERRTAG-RE-176294-ITEM--> Replaced <quote>border rangers</quote> with <quote>Border Rangers</quote>.<!--/ERRTAG-RE-176294-ITEM--></p>
@@ -5568,7 +5571,7 @@ Todo:
       <p>(<a idref="sect267">267</a>) Capitalized <quote>message</quote> in the second sentence of the second paragraph, since that is how retrievable items are supposed to be represented, and to be consistent with the first time the item is mentioned in this section.</p>
       <p>(<a idref="sect268">268</a>) Replaced <quote>wary</quote> with <quote>weary</quote>. We hardly think Lone Wolf would be wary among the King<ch.apos/>s soldiers.</p>
       <p>(<a idref="sect272">272</a>) Replaced <quote>wood-smoke</quote> with <quote>wood smoke</quote>.</p>
-<p>(<a idref="sect275">275</a>)<!--ERRTAG-RE-249381-ITEM--> Replaced <quote>tortuous</quote> with <quote>torturous</quote>.<!--/ERRTAG-RE-249381-ITEM--></p>
+      <p>(<a idref="sect275">275</a>)<!--ERRTAG-RE-249381-ITEM--> Replaced <quote>tortuous</quote> with <quote>torturous</quote>.<!--/ERRTAG-RE-249381-ITEM--></p>
       <p>(<a idref="sect277">277</a>) Replaced <quote><a idref="sect113">Turn 113</a></quote> to <quote><a idref="sect113">Turn to 113</a>.</quote></p>
       <p>(<a idref="sect284">284</a>) Replaced both occurrences of <quote>Graveweed</quote> with <quote>graveweed</quote>.</p>
       <p>(<a idref="sect311">311</a>) Moved the last choice (about Camouflage) into the first position.</p>
@@ -5577,11 +5580,11 @@ Todo:
       <p>(<a idref="sect322">322</a>) Replaced <quote>jet black</quote> with <quote>jet-black</quote>.</p>
       <p>(<a idref="sect323">323</a>) Replaced <quote>jet black</quote> with <quote>jet-black</quote>.</p>
       <p>(<a idref="sect326">326</a>) Replaced <quote>Graveweed</quote> with <quote>graveweed</quote>.</p>
-<p>(<a idref="sect333">333</a>)<!--ERRTAG-RE-294191-ITEM--> Replaced <quote>tortuous</quote> with <quote>torturous</quote>.<!--/ERRTAG-RE-294191-ITEM--></p>
+      <p>(<a idref="sect333">333</a>)<!--ERRTAG-RE-294191-ITEM--> Replaced <quote>tortuous</quote> with <quote>torturous</quote>.<!--/ERRTAG-RE-294191-ITEM--></p>
       <p>(<a idref="sect334">334</a>) Moved the last choice (about Sixth Sense) into the first position, and move the first choice (that leads to <a idref="sect162">Section 162</a>) into the last position.</p>
-<p>(<a idref="sect336">336</a>)<!--ERRTAG-RE-296725-ITEM--> Replaced <quote>unsheath</quote> with <quote>unsheathe</quote>.<!--/ERRTAG-RE-296725-ITEM--></p>
+      <p>(<a idref="sect336">336</a>)<!--ERRTAG-RE-296725-ITEM--> Replaced <quote>unsheath</quote> with <quote>unsheathe</quote>.<!--/ERRTAG-RE-296725-ITEM--></p>
       <p>(<a idref="sect341">341</a>) Moved the last choice (about Tracking) into the first position.</p>
-<p>(<a idref="sect342">342</a>)<!--ERRTAG-RE-301862-ITEM--> Replaced <quote>bloods</quote> with <quote>blood</quote>.<!--/ERRTAG-RE-301862-ITEM--></p>
+      <p>(<a idref="sect342">342</a>)<!--ERRTAG-RE-301862-ITEM--> Replaced <quote>bloods</quote> with <quote>blood</quote>.<!--/ERRTAG-RE-301862-ITEM--></p>
       <p>(<a idref="sect349">349</a>) <quote>Vonatar,</quote> from the seventh paragraph, is spelled <quote>Vonotar</quote> in later Lone Wolf books.<!--ERRTAG-RE-306915-ITEM--> Replaced <quote>magician<ch.apos/>s guild of Toran</quote> with <quote>Magicians<ch.apos/> Guild of Toran</quote>.<!--/ERRTAG-RE-306915-ITEM--></p>
       <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>.<!--ERRTAG-RE-316950-ITEM--> Replaced <quote>fall to 0</quote> with <quote>fall to 0 or below</quote>.<!--/ERRTAG-RE-316950-ITEM--></p>
      </data>

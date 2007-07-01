@@ -16,6 +16,9 @@
 $Id$
 
 $Log$
+Revision 1.51  2007/01/07 19:11:00  Simon Osborne
+A couple of minor Errata fixed.
+
 Revision 1.15  2007/05/12 17:56:56  jonathan.blake
 minor footnote issue
 
@@ -548,7 +551,7 @@ To do:
        <li><p>Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.</p></li>
        <li><p>Repeat the sequence from <a idref="stage3">Stage 3</a>.</p></li>
       </ol>
-      <p>This process of combat continues until the <typ class="attribute">ENDURANCE</typ> points of either the enemy or Lone Wolf are reduced to zero, at which point the one with the zero score is declared dead. If Lone Wolf is dead, the adventure is over. If the enemy is dead, Lone Wolf proceeds but with his <typ class="attribute">ENDURANCE</typ> points reduced.</p>
+      <p>This process of combat continues until the <typ class="attribute">ENDURANCE</typ> points of either the enemy or Lone Wolf are reduced to zero or below, at which point the one with the zero score is declared dead. If Lone Wolf is dead, the adventure is over. If the enemy is dead, Lone Wolf proceeds but with his <typ class="attribute">ENDURANCE</typ> points possibly reduced.</p>
       <p>A <a idref="crsumary">summary of Combat Rules</a> appears in the back of this book.</p>
 
       <section class="frontmatter" id="evasion">
@@ -5698,17 +5701,17 @@ To do:
       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced all occurrences of  <quote>ie</quote> with <quote>i.e.</quote>. Removed <quote> that you will find in the front of this book. For further adventuring you can copy out the chart yourself or get it photocopied.</quote> Split the last paragraph into two starting with <quote>Through your experiences</quote>.<!--ERRTAG-RE-10688-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-10688-ITEM--><!--ERRTAG-RE-12811-ITEM--> Replaced <quote>fall to zero</quote> with <quote>fall to zero or below</quote>.<!--/ERRTAG-RE-12811-ITEM--></p>
       <p>(<a idref="discplnz">Kai Disciplines</a>) Replaced <quote>Kai Discipline section</quote> with <quote>Kai Disciplines section</quote>. Capitalized all occurrences of <quote>discipline</quote>.</p>
       <p>(<a idref="equipmnt">Equipment</a>) Removed the <quote>1=, 2=,<ch.ellips/></quote> in the <quote>How to carry your equipment</quote> section. These were obviously carried over from <bookref series="lw" book="01fftd">Flight from the Dark</bookref><ch.apos/>s random number equipment assignment, which is now obsolete.</p>
-      <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed <quote> on the inside back cover of the book</quote>. Removed <quote> on the last page of the book</quote>. Replaced <quote>on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>.</p>
+      <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed <quote> on the inside back cover of the book</quote>. Removed <quote> on the last page of the book</quote>. Replaced <quote>on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>. Replaced <quote>reduced to zero</quote> with <quote>reduced to zero or below</quote>. Replaced <quote>points reduced</quote> with <quote>points possibly reduced</quote>.</p>
       <p>(<a idref="levels">Levels of Kai Training</a>) The Levels of Kai Training section did not originally appear in this book, but has been added for the reader<ch.apos/>s information.</p>
       <p>(<a idref="kaiwisdm">Kai Wisdom</a>) Removed <quote> on the back cover of the book</quote> and replaced <quote>LONE WOLF</quote> with <quote>Lone Wolf</quote>.</p>
       <p>(<a idref="sect4">4</a>) Replaced <quote>Sandsnake</quote> with <quote>sandsnake</quote>.</p>
-<p>(<a idref="sect12">12</a>)<!--ERRTAG-RE-48175-ITEM--> Replaced <quote>agreeing a wager</quote> with <quote>agreeing to a wager</quote>.<!--/ERRTAG-RE-48175-ITEM--></p>
+      <p>(<a idref="sect12">12</a>)<!--ERRTAG-RE-48175-ITEM--> Replaced <quote>agreeing a wager</quote> with <quote>agreeing to a wager</quote>.<!--/ERRTAG-RE-48175-ITEM--></p>
       <p>(<a idref="sect16">16</a>) Replaced <quote>razor sharp</quote> with <quote>razor-sharp</quote>.</p>
       <p>(<a idref="sect23">23</a>) Replaced <quote>torch-lit</quote> with <quote>torchlit</quote>.</p>
       <p>(<a idref="sect24">24</a>) Replaced <quote>Fox He</quote> with <quote>Fox. He</quote>.</p>
       <p>(<a idref="sect27">27</a>) Capitalized <quote>wildlands</quote>.</p>
       <p>(<a idref="sect31">31</a>) Replaced both occurrences of <quote>Lord-Lieutenant</quote> with <quote>Lord-lieutenant</quote>. Replaced <quote>lord-lieutenant</quote> with <quote>Lord-lieutenant</quote>.</p>
-<p>(<a idref="sect34">34</a>)<!--ERRTAG-RE-68919-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-68919-ITEM--></p>
+      <p>(<a idref="sect34">34</a>)<!--ERRTAG-RE-68919-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-68919-ITEM--></p>
       <p>(<a idref="sect35">35</a>) Moved the Tracking choice into the first position.</p>
       <p>(<a idref="sect38">38</a>) Replaced <quote>rib-cage</quote> with <quote>rib cage</quote>.</p>
       <p>(<a idref="sect40">40</a>) Replaced <quote>Lord-Lieutenant</quote> with <quote>Lord-lieutenant</quote>.</p>
@@ -5716,36 +5719,36 @@ To do:
       <p>(<a idref="sect63">63</a>) Moved the Animal Kinship choice into the first position.</p>
       <p>(<a idref="sect64">64</a>) Replaced <quote>it, their</quote> with <quote>it. Their</quote>. Moved the Sixth Sense choice into the first position.</p>
       <p>(<a idref="sect69">69</a>) Replaced <quote>staffbearer</quote> with <quote>staff-bearer</quote> and <quote>Lord-Lieutenant</quote> with <quote>Lord-lieutenant</quote>.</p>
-<p>(<a idref="sect75">75</a>)<!--ERRTAG-RE-102954-ITEM--> Replaced <quote>Sir, requires</quote> with <quote>Sir requires</quote>.<!--/ERRTAG-RE-102954-ITEM--></p>
-<p>(<a idref="sect78">78</a>)<!--ERRTAG-RE-106008-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-106008-ITEM--></p>
+      <p>(<a idref="sect75">75</a>)<!--ERRTAG-RE-102954-ITEM--> Replaced <quote>Sir, requires</quote> with <quote>Sir requires</quote>.<!--/ERRTAG-RE-102954-ITEM--></p>
+      <p>(<a idref="sect78">78</a>)<!--ERRTAG-RE-106008-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-106008-ITEM--></p>
       <p>(<a idref="sect79">79</a>) Replaced both occurrences of <quote>Kai lord</quote> with <quote>Kai Lord</quote>, and <quote>enemies, eg Helghasts, in</quote> with <quote>enemies  (e.g. Helghast) in</quote>.</p>
       <p>(<a idref="sect84">84</a>) Replaced <quote>leatherbound</quote> with <quote>leather-bound</quote>.</p>
       <p>(<a idref="sect88">88</a>) Moved the Camouflage choice into the first position.</p>
       <p>(<a idref="sect95">95</a>) Moved the choice to heal the wounded man into the first position.</p>
-<p>(<a idref="sect100">100</a>)<!--ERRTAG-RE-126686-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-126686-ITEM--></p>
+      <p>(<a idref="sect100">100</a>)<!--ERRTAG-RE-126686-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-126686-ITEM--></p>
       <p>(<a idref="sect102">102</a>) Moved the Tracking choice into the first position.</p>
       <p>(<a idref="sect113">113</a>) Replaced <quote>magician<ch.apos/>s guild</quote> with <quote>Magicians<ch.apos/> Guild</quote>.</p>
       <p>(<a idref="sect118">118</a>) Moved the Animal Kinship choice into the first position.</p>
       <p>(<a idref="sect122">122</a>) Replaced <quote>Kai lord</quote> with <quote>Kai Lord</quote>. Moved the Sixth Sense choice into the first position and replaced <quote>Pick</quote> with <quote>If not, pick</quote>.</p>
       <p>(<a idref="sect123">123</a>) Replaced <quote>king<ch.apos/>s</quote> with <quote>King<ch.apos/>s</quote>.</p>
-      <p>(<a idref="sect126">126</a>) Replaced <quote>Vonatar</quote> with <quote>Vonotar</quote>, and <quote>jail</quote> with <quote>goal</quote>.</p>
+      <p>(<a idref="sect126">126</a>) Replaced <quote>Vonatar</quote> with <quote>Vonotar</quote>, and <quote>jail</quote> with <quote>gaol</quote>.</p>
       <p>(<a idref="sect131">131</a>) Replaced <quote>If you have no Weapon, deduct</quote> with <quote>Deduct</quote> since Lone Wolf has had no opportunity to acquire Weapons.</p>
       <p>(<a idref="sect132">132</a>) Moved the paragraph about keeping the Magic Spear before the choices.</p>
       <p>(<a idref="sect140">140</a>) Replaced <quote>well-known</quote> with <quote>well known</quote>.</p>
-<p>(<a idref="sect141">141</a>)<!--ERRTAG-RE-165537-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-165537-ITEM--></p>
-<p>(<a idref="sect146">146</a>)<!--ERRTAG-RE-172186-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-172186-ITEM--></p>
+      <p>(<a idref="sect141">141</a>)<!--ERRTAG-RE-165537-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-165537-ITEM--></p>
+      <p>(<a idref="sect146">146</a>)<!--ERRTAG-RE-172186-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-172186-ITEM--></p>
       <p>(<a idref="sect150">150</a>) Replaced <quote>marshbird</quote> with <quote>marsh-bird</quote>.</p>
       <p>(<a idref="sect151">151</a>) Replaced <quote>succesful</quote> with <quote>successful</quote>.</p>
       <p>(<a idref="sect152">152</a>) Replaced <quote>warfleet</quote> with <quote>war fleet</quote>.</p>
       <p>(<a idref="sect164">164</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>. Moved the Sixth Sense choice into the first position.</p>
-<p>(<a idref="sect166">166</a>)<!--ERRTAG-RE-190168-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-190168-ITEM--></p>
+      <p>(<a idref="sect166">166</a>)<!--ERRTAG-RE-190168-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-190168-ITEM--></p>
       <p>(<a idref="sect169">169</a>) Replaced <quote>gaming house</quote> with <quote>gaming-house</quote>.</p>
       <p>(<a idref="sect176">176</a>) Moved the Sixth Sense choice into the first position. Replaced <quote>despatch</quote> with <quote>dispatch</quote> in the illustration<ch.apos/>s caption. Replaced <quote>Hammerdal mountains</quote> with <quote>Hammerdal Mountains</quote>, and <quote>king<ch.apos/>s</quote> with <quote>King<ch.apos/>s</quote>.</p>
       <p>(<a idref="sect181">181</a>) <quote>Useful</quote> in the last sentence of the first paragraph didn<ch.apos/>t need to be capitalized.</p>
       <p>(<a idref="sect184">184</a>) Replaced <quote>Kai lord</quote> with <quote>Kai Lord</quote>.</p>
       <p>(<a idref="sect192">192</a>) Replaced <quote>sommersaults</quote> with <quote>somersaults</quote>.</p>
       <p>(<a idref="sect193">193</a>) Replaced <quote>ill-omen</quote> with <quote>ill omen</quote>.</p>
-<p>(<a idref="sect194">194</a>)<!--ERRTAG-RE-216376-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-216376-ITEM--></p>
+      <p>(<a idref="sect194">194</a>)<!--ERRTAG-RE-216376-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-216376-ITEM--></p>
       <p>(<a idref="sect195">195</a>) Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.</p>
       <p>(<a idref="sect202">202</a>) Replaced <quote>Lord-Lieutenant</quote> with <quote>Lord-lieutenant</quote>.</p>
       <p>(<a idref="sect203">203</a>) Replaced <quote>housemice</quote> with <quote>house mice</quote>.</p>
@@ -5753,13 +5756,13 @@ To do:
       <p>(<a idref="sect209">209</a>) Replaced <quote>king<ch.apos/>s</quote> with <quote>King<ch.apos/>s</quote> and <quote>Lord-Lieutenant</quote> with <quote>Lord-lieutenant</quote>.</p>
       <p>(<a idref="sect213">213</a>) Replaced <quote>assasinates</quote> with <quote>assassinates</quote>.</p>
       <p>(<a idref="sect217">217</a>) Replaced <quote>says in a cynical voice.</quote> with <quote>says in a cynical voice:</quote>.</p>
-<p>(<a idref="sect222">222</a>)<!--ERRTAG-RE-242228-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-242228-ITEM--></p>
+      <p>(<a idref="sect222">222</a>)<!--ERRTAG-RE-242228-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-242228-ITEM--></p>
       <p>(<a idref="sect223">223</a>) There was a superfluous comma between <quote>dreadful</quote> and <quote>significance</quote> in the first paragraph.</p>
-<p>(<a idref="sect228">228</a>)<!--ERRTAG-RE-250221-ITEM--> Replaced <quote>distance to left</quote> with <quote>distance to the left</quote>.<!--/ERRTAG-RE-250221-ITEM--></p>
+      <p>(<a idref="sect228">228</a>)<!--ERRTAG-RE-250221-ITEM--> Replaced <quote>distance to left</quote> with <quote>distance to the left</quote>.<!--/ERRTAG-RE-250221-ITEM--></p>
       <p>(<a idref="sect231">231</a>) Moved the Tracking choice into the first position.<!--ERRTAG-RE-252737-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-252737-ITEM--></p>
       <p>(<a idref="sect232">232</a>) Moved the Sixth Sense choice into the first position.</p>
-<p>(<a idref="sect234">234</a>)<!--ERRTAG-RE-255863-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-255863-ITEM--></p>
-<p>(<a idref="sect237">237</a>)<!--ERRTAG-RE-258314-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-258314-ITEM--></p>
+      <p>(<a idref="sect234">234</a>)<!--ERRTAG-RE-255863-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-255863-ITEM--></p>
+      <p>(<a idref="sect237">237</a>)<!--ERRTAG-RE-258314-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-258314-ITEM--></p>
       <p>(<a idref="sect241">241</a>) <quote>he</quote> has now been capitalized.</p>
       <p>(<a idref="sect242">242</a>) Replaced <quote>(eg</quote> with <quote>(e.g.</quote>.</p>
       <p>(<a idref="sect243">243</a>) Replaced <quote>Kai lord</quote> with <quote>Kai Lord</quote>.</p>
@@ -5767,7 +5770,7 @@ To do:
       <p>(<a idref="sect254">254</a>) Moved the Sixth Sense choice into the first position.</p>
       <p>(<a idref="sect255">255</a>) Replaced <quote>weaponskill</quote> with <quote>Weaponskill</quote>.</p>
       <p>(<a idref="sect258">258</a>) Moved the Sixth Sense choice into the first position.</p>
-<p>(<a idref="sect261">261</a>)<!--ERRTAG-RE-281741-ITEM--> Replaced <quote>person</quote> with <quote>people</quote> to agree in number to the second choice.<!--/ERRTAG-RE-281741-ITEM--></p>
+      <p>(<a idref="sect261">261</a>)<!--ERRTAG-RE-281741-ITEM--> Replaced <quote>person</quote> with <quote>people</quote> to agree in number to the second choice.<!--/ERRTAG-RE-281741-ITEM--></p>
       <p>(<a idref="sect265">265</a>) Replaced <quote>warfleet</quote> with <quote>war fleet</quote>. Moved the Tracking choice into the first position.</p>
       <p>(<a idref="sect267">267</a>) Replaced <quote>Kai lord</quote> with <quote>Kai Lord</quote>.<!--ERRTAG-RE-288964-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-288964-ITEM--></p>
       <p>(<a idref="sect274">274</a>) Replaced <quote>first floor</quote> with <quote>first-floor</quote>.</p>
@@ -5786,9 +5789,9 @@ To do:
       <p>Project Aon version: Although never previously published, this scenario allows Lone Wolf to succeed despite giving the Magic Spear to Rhygar.</p>
       <p>Replaced <quote>Hammerdal mountains</quote> with <quote>Hammerdal Mountains</quote>.</p>
       <p>(<a idref="sect300">300</a>) Replaced <quote>Wanlo</quote> with <quote>wanlo</quote>.</p>
-<p>(<a idref="sect305">305</a>)<!--ERRTAG-RE-323352-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-323352-ITEM--></p>
-<p>(<a idref="sect306">306</a>)<!--ERRTAG-RE-325953-ITEM--> Replaced <quote>score reaches zero</quote> with <quote>score reaches zero or below</quote>.<!--/ERRTAG-RE-325953-ITEM--><!--ERRTAG-RE-326475-ITEM--> Replaced <quote>points to zero</quote> with <quote>points to zero or below</quote>.<!--/ERRTAG-RE-326475-ITEM--></p>
-<p>(<a idref="sect308">308</a>)<!--ERRTAG-RE-325241-ITEM--> Replaced <quote>Each dice</quote> with <quote>Each die</quote>.<!--/ERRTAG-RE-325241-ITEM--></p>
+      <p>(<a idref="sect305">305</a>)<!--ERRTAG-RE-323352-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-323352-ITEM--></p>
+      <p>(<a idref="sect306">306</a>)<!--ERRTAG-RE-325953-ITEM--> Replaced <quote>score reaches zero</quote> with <quote>score reaches zero or below</quote>.<!--/ERRTAG-RE-325953-ITEM--><!--ERRTAG-RE-326475-ITEM--> Replaced <quote>points to zero</quote> with <quote>points to zero or below</quote>.<!--/ERRTAG-RE-326475-ITEM--></p>
+      <p>(<a idref="sect308">308</a>)<!--ERRTAG-RE-325241-ITEM--> Replaced <quote>Each dice</quote> with <quote>Each die</quote>.<!--/ERRTAG-RE-325241-ITEM--></p>
       <p>(<a idref="sect312">312</a>) Replaced <quote>rainswept</quote> with <quote>rain-swept</quote>.<!--ERRTAG-RE-330010-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-330010-ITEM--></p>
       <p>(<a idref="sect314">314</a>) Moved the Hunting choice into the first position.</p>
       <p>(<a idref="sect315">315</a>) Moved the Mind Over Matter choice into the first position.</p>
@@ -5797,7 +5800,7 @@ To do:
       <p>(<a idref="sect333">333</a>) Replaced <quote>blood-stained</quote> with <quote>bloodstained</quote>.</p>
       <p>(<a idref="sect334">334</a>) Moved the Tracking choice into the first position. Replaced <quote>pot-holes</quote> with <quote>potholes</quote></p>
       <p>(<a idref="sect337">337</a>) Moved the Hunting choice into the first position.</p>
-<p>(<a idref="sect345">345</a>)<!--ERRTAG-RE-358734-ITEM--> Replaced <quote>jet black</quote> with <quote>jet-black</quote>.<!--/ERRTAG-RE-358734-ITEM--></p>
+      <p>(<a idref="sect345">345</a>)<!--ERRTAG-RE-358734-ITEM--> Replaced <quote>jet black</quote> with <quote>jet-black</quote>.<!--/ERRTAG-RE-358734-ITEM--></p>
       <p>(<a idref="sect350">350</a>) Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.<!--ERRTAG-RE-364171-ITEM--> Replaced <quote>air, continually</quote> with <quote>air continually</quote>.<!--/ERRTAG-RE-364171-ITEM--></p>
       <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>.<!--ERRTAG-RE-373801-ITEM--> Replaced <quote>fall to 0</quote> with <quote>fall to 0 or below</quote>.<!--/ERRTAG-RE-373801-ITEM--></p>
      </data>
@@ -5893,9 +5896,8 @@ To do:
    </data>
   </section>
 
- &inclusion.project.aon.license;
+  &inclusion.project.aon.license;
 
- </data>
-</section>
-
+  </data>
+ </section>
 </gamebook>

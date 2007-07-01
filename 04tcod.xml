@@ -15,6 +15,9 @@
 
 $Id$
 $Log: 04tcod.xml,v $
+Revision 1.61  2007/01/07 19:11:00  Simon Osborne
+A couple of minor Errata fixed.
+
 Revision 1.6  2007/04/26 17:34:28  jonathan.blake
 Last of errata from website
 
@@ -176,7 +179,7 @@ Initial Revision.
     <p>During your training as a Kai Lord you have developed fighting prowess<ch.emdash/><typ class="attribute">COMBAT SKILL</typ> and physical stamina<ch.emdash/><typ class="attribute">ENDURANCE</typ>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it <!--ERRTAG-RE-8413-->onto<!--/ERRTAG-RE-8413--> the <a idref="random">Random Number Table</a> on the last page of this book. If you pick 0 it counts as zero.</p>
     <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 10 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a>. (i.e. if your pencil fell on the number 4 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> of 14.) When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore very desirable.</p>
     <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 20 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a>. (i.e. if your pencil fell on the number 6 on the <a idref="random">Random Number Table</a> you would have 26 <typ class="attribute">ENDURANCE</typ> points.)</p>
-    <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never rise above the number you started with.</p>
+    <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero or below, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never rise above the number you started with.</p>
     <p><strong>If you have successfully completed any of the previous adventures in the <cite>Lone Wolf</cite> series</strong>, you will already have your <typ class="attribute">COMBAT SKILL</typ>, <typ class="attribute">ENDURANCE</typ> points and Kai Disciplines which you can now carry over with you to Book 4. You may also carry over any Weapons and Special Items that you held at the end of your last adventure, and these should be entered on your new <a idref="action">Action Chart</a> (you are still limited to two Weapons and eight Backpack Items).</p>
     <p>You may choose one bonus <a idref="discplnz">Kai Discipline</a> to add to your <a idref="action">Action Chart</a> for every <cite>Lone Wolf</cite> adventure you have successfully completed; then read the <a idref="equipmnt">section on equipment</a> for Book 4 carefully.</p>
 
@@ -455,7 +458,7 @@ Initial Revision.
        <li><p>Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.</p></li>
        <li><p>Repeat the sequence from <a idref="stage3">Stage 3</a>.</p></li>
       </ol>
-      <p>This process of combat continues until the <typ class="attribute">ENDURANCE</typ> points of either the enemy or Lone Wolf are reduced to zero, at which point the one with the zero score is declared dead. If Lone Wolf is dead, the adventure is over. If the enemy is dead, Lone Wolf proceeds but with his <typ class="attribute">ENDURANCE</typ> points reduced.</p>
+      <p>This process of combat continues until the <typ class="attribute">ENDURANCE</typ> points of either the enemy or Lone Wolf are reduced to zero or below, at which point the one with the zero score is declared dead. If Lone Wolf is dead, the adventure is over. If the enemy is dead, Lone Wolf proceeds but with his <typ class="attribute">ENDURANCE</typ> points reduced.</p>
       <p>A <a idref="crsumary">summary of Combat Rules</a> appears in the back of this book.</p>
 
       <section class="frontmatter" id="evasion">
@@ -5507,13 +5510,13 @@ Initial Revision.
      <data>
       <p>(<a idref="tssf">The Story So Far<ch.ellips/></a>) Replaced <quote>heavily-guarded</quote> with <quote>heavily guarded</quote>.</p>
 
-      <p>(<a idref="gamerulz">The Game Rules</a>) Removed <quote> that you will find in the front of this book, For further adventuring you can copy out the chart yourself or get it photocopied</quote>. Replaced both occurrences of <quote>ie,</quote> with <quote>i.e.</quote>.<!--ERRTAG-RE-8413-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-8413-ITEM--></p>
+      <p>(<a idref="gamerulz">The Game Rules</a>) Removed <quote> that you will find in the front of this book, For further adventuring you can copy out the chart yourself or get it photocopied</quote>. Replaced both occurrences of <quote>ie,</quote> with <quote>i.e.</quote>.<!--ERRTAG-RE-8413-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-8413-ITEM--> Placed <quote>or below</quote> after <quote>fall to zero</quote>.</p>
 
       <p>(<a idref="discplnz">Kai Disciplines</a>) Capitalized all occurrences of <quote>discipline(s)</quote>. Set the Weapons list in initial capital letters instead of all capitals. Replaced <quote>Kai monastery</quote> with <quote>Kai Monastery</quote>. Replaced all occurrences of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
 
       <p>(<a idref="equipmnt">Equipment</a>) Removed <quote> (see front of this book)</quote>. Capitalized the items in the list rather than setting them in all capitals. Replaced all occurrences of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
 
-      <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed <quote> on the inside back cover of the book</quote>. Replaced <quote>on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>.</p>
+      <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed <quote> on the inside back cover of the book</quote>. Replaced <quote>on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>. Replaced <quote>reduced to zero</quote> with <quote>reduced to zero or below</quote>. Replaced <quote>points reduced</quote> with <quote>points possibly reduced</quote>.</p>
 
       <p>(<a idref="levels">Levels of Kai Training</a>) Replaced <quote>LONE WOLF</quote> with <quote>Lone Wolf</quote>. Replaced all occurrences of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
 
