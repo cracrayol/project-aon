@@ -16,6 +16,9 @@
 $Id$
 
 $Log$
+Revision 1.15  2007/02/07 17:40:00  Simon Osborne
+Periods added to Illustration captions.
+
 Revision 1.14  2007/01/07 19:11:00  Simon Osborne
 A couple of minor Errata fixed.
 
@@ -178,8 +181,8 @@ Todo:
    </meta>
 
    <data>
-    <p><quote>I would be especially pleased if my granting of the rights to distribute my books in this way was seen as my <quote>millennium gift</quote> to all those devoted readers who have kept the Kai flag flying high, through all the good times, and the not-so-good. It would make me very proud indeed if this enterprise laid the foundations of a lasting legacy, securing the longevity of Lone Wolf by making my creation freely and readily accessible to current and future online generations. For them, for us, for Sommerlund and the Kai.<ch.ellips/></quote> <strong>Joe Dever</strong></p>
-    <p>Project Aon would first like to thank Joe Dever for making this generous offering of the books that we have all loved from the beginning. We would also like to acknowledge the following members of Project Aon for their diligent work:</p>
+
+   &inclusion.joe.dever.endowment;
 
     <section class="frontmatter" id="credits">
      <meta><title>Credits</title></meta>
@@ -232,7 +235,7 @@ Todo:
      </meta>
      <instance class="html" src="tssf.gif" width="386" height="300" />
     </illustration>
-   </data>    
+   </data>
   </section>
 
   <section class="frontmatter" id="gamerulz">
@@ -691,7 +694,10 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>From here you can see the magnificent view<br />of the rooftops and spires of Holmgard</description>
+        <description>
+	 <line>From here you can see the magnificent view</line>
+	 <line>of the rooftops and spires of Holmgard.</line>
+	</description>
        </meta>
        <instance class="html" src="ill1.gif" width="386" height="676" />
        <instance class="pdf" src="ill1.pdf" width="386" height="676" />
@@ -899,7 +905,10 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>An ornate pin appears to lock the door, but<br />there is also a keyhole in the lockplate</description>
+        <description>
+	 <line>An ornate pin appears to lock the door, but</line>
+	 <line>there is also a keyhole in the lockplate.</line>
+	</description>
        </meta>
        <instance class="html" src="ill2.gif" width="386" height="714" />
        <instance class="pdf" src="ill2.pdf" width="386" height="714" />
@@ -1036,7 +1045,10 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>A terrible apparition in red robes swoops down<br />from the sky on the back of a Kraan</description>
+        <description>
+	 <line>A terrible apparition in red robes swoops down</line>
+	 <line>from the sky on the back of a Kraan.</line>
+	</description>
        </meta>
        <instance class="html" src="ill3.gif" width="386" height="691" />
        <instance class="pdf" src="ill3.pdf" width="386" height="691" />
@@ -1128,7 +1140,10 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>The Giak leader orders five of his troops<br />to open fire at you with their bows</description>
+        <description>
+	 <line>The Giak leader orders five of his troops</line>
+	 <line>to open fire at you with their bows.</line>
+	</description>
        </meta>
        <instance class="html" src="ill4.gif" width="386" height="694" />
        <instance class="pdf" src="ill4.pdf" width="386" height="694" />
@@ -1243,7 +1258,10 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>The log wall has collapsed in several places<br />where the Darklords are attacking</description>
+        <description>
+	 <line>The log wall has collapsed in several places</line>
+	 <line>where the Darklords are attacking.</line>
+	</description>
        </meta>
        <instance class="html" src="ill5.gif" width="386" height="673" />
        <instance class="pdf" src="ill5.pdf" width="386" height="673" />
@@ -1391,7 +1409,7 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>The wild old man is screaming at you</description>
+        <description><line>The wild old man is screaming at you.</line></description>
        </meta>
        <instance class="html" src="ill6.gif" width="386" height="681" />
        <instance class="pdf" src="ill6.pdf" width="386" height="681" />
@@ -1813,7 +1831,10 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>The clash of steel and the cries of men<br />and beasts echo through the forest</description>
+        <description>
+	 <line>The clash of steel and the cries of men</line>
+	 <line>and beasts echo through the forest.</line>
+	</description>
        </meta>
        <instance class="html" src="ill7.gif" width="386" height="692" />
        <instance class="pdf" src="ill7.pdf" width="386" height="692" />
@@ -2114,7 +2135,10 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>Perched on his outstretched arm is the<br />black raven that you saw earlier</description>
+        <description>
+	 <line>Perched on his outstretched arm is the</line>
+	 <line>black raven that you saw earlier.</line>
+	</description>
        </meta>
        <instance class="html" src="ill8.gif" width="386" height="678" />
        <instance class="pdf" src="ill8.pdf" width="386" height="678" />
@@ -2239,7 +2263,9 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>A young theurgist of the Magicians<ch.apos/> Guild of Toran</description>
+        <description>
+	 <line>A young theurgist of the Magicians<ch.apos/> Guild of Toran.</line>
+	</description>
        </meta>
        <instance class="html" src="ill9.gif" width="386" height="676" />
        <instance class="pdf" src="ill9.pdf" width="386" height="676" />
@@ -2512,7 +2538,9 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>The herbalist offers you a selection of special potions</description>
+        <description>
+	 <line>The herbalist offers you a selection of special potions.</line>
+	</description>
        </meta>
        <instance class="html" src="ill10.gif" width="386" height="647" />
        <instance class="pdf" src="ill10.pdf" width="386" height="647" />
@@ -2745,7 +2773,9 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>It is a Burrowcrawler and it is trying to strangle you</description>
+        <description>
+	 <line>It is a Burrowcrawler and it is trying to strangle you.</line>
+	</description>
        </meta>
        <instance class="html" src="ill11.gif" width="386" height="666" />
        <instance class="pdf" src="ill11.pdf" width="386" height="666" />
@@ -3101,7 +3131,10 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>You notice a large merchant<ch.apos/>s caravan<br />in the centre of the dusty turnpike</description>
+        <description>
+	 <line>You notice a large merchant<ch.apos/>s caravan</line>
+	 <line>in the centre of the dusty turnpike.</line>
+	</description>
        </meta>
        <instance class="html" src="ill12.gif" width="386" height="694" />
        <instance class="pdf" src="ill12.pdf" width="386" height="694" />
@@ -3252,7 +3285,10 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>A tall man dressed in white robes stands<br />before you, a bowl of herbs in his hands</description>
+        <description>
+	 <line>A tall man dressed in white robes stands</line>
+	 <line>before you, a bowl of herbs in his hands.</line>
+	</description>
        </meta>
        <instance class="html" src="ill13.gif" width="386" height="673" />
        <instance class="pdf" src="ill13.pdf" width="386" height="673" />
@@ -3673,7 +3709,11 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>He laughs menacingly and pulls<br />back the hood of his cloak. He is<br />a Drakkar and you must fight him</description>
+        <description>
+	 <line>He laughs menacingly and pulls</line>
+	 <line>back the hood of his cloak. He is</line>
+	 <line>a Drakkar and you must fight him.</line>
+	</description>
        </meta>
        <instance class="html" src="ill14.gif" width="386" height="684" />
        <instance class="pdf" src="ill14.pdf" width="386" height="684" />
@@ -3928,7 +3968,9 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>Opening the bag, you find a message</description>
+        <description>
+	 <line>Opening the bag, you find a message.</line>
+	</description>
        </meta>
        <instance class="html" src="ill15.gif" width="386" height="648" />
        <instance class="pdf" src="ill15.pdf" width="386" height="648" />
@@ -4134,7 +4176,11 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>Your passage through the Graveyard is not<br />easy, the ground is broken and<br />covered with thorny graveweed.</description>
+        <description>
+	 <line>Your passage through the Graveyard is not</line>
+	 <line>easy, the ground is broken and</line>
+	 <line>covered with thorny graveweed.</line>
+	</description>
        </meta>
        <instance class="html" src="ill16.gif" width="386" height="676" />
        <instance class="pdf" src="ill16.pdf" width="386" height="676" />
@@ -4409,7 +4455,11 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>Pushing open the treehouse door,<br />you see an old hermit huddled in<br />the corner of the small cabin</description>
+        <description>
+	 <line>Pushing open the treehouse door,</line>
+	 <line>you see an old hermit huddled in</line>
+	 <line>the corner of the small cabin.</line>
+	</description>
        </meta>
        <instance class="html" src="ill17.gif" width="386" height="676" />
        <instance class="pdf" src="ill17.pdf" width="386" height="676" />
@@ -4747,7 +4797,10 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>You can see on the track above four soldiers and their<br />officer wearing the uniform of the King<ch.apos/>s army</description>
+        <description>
+	 <line>You can see on the track above four soldiers and their</line>
+	 <line>officer wearing the uniform of the King<ch.apos/>s army.</line>
+	</description>
        </meta>
        <instance class="html" src="ill18.gif" width="386" height="676" />
        <instance class="pdf" src="ill18.pdf" width="386" height="676" />
@@ -4834,7 +4887,10 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>The guards do not believe your story<br />and refuse to let you enter</description>
+        <description>
+	 <line>The guards do not believe your story</line>
+	 <line>and refuse to let you enter.</line>
+	</description>
        </meta>
        <instance class="html" src="ill19.gif" width="386" height="672" />
        <instance class="pdf" src="ill19.pdf" width="386" height="672" />
@@ -4957,7 +5013,10 @@ Todo:
       <illustration class="float">
        <meta>
         <creator>Gary Chalk</creator>
-        <description>The faces of the King and his closest advisers<br />are lined with worry and concentration</description>
+        <description>
+	 <line>The faces of the King and his closest advisers</line>
+	 <line>are lined with worry and concentration.</line>
+	</description>
        </meta>
        <instance class="html" src="ill20.gif" width="386" height="674" />
        <instance class="pdf" src="ill20.pdf" width="386" height="674" />
@@ -5522,20 +5581,25 @@ Todo:
       <p>(<a idref="kaiwisdm">Kai Wisdom</a>) Removed <quote>on the back cover of the book </quote>.</p>
       <p>(<a idref="sect1">1</a>) Replaced <quote>Sommerlund</quote> with <quote>Sommlending</quote> and made the last choice (about using Sixth Sense) the first.</p>
       <p>(<a idref="sect4">4</a>) Moved the last choice (about the Tracking Discipline) into the first position.</p>
+      <p>(<a idref="sect7">7</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect17">17</a>) Changed the last choice that led to <a idref="sect331">Section 331</a> to lead to <a idref="sect316">Section 316</a> instead in order to parallel <a idref="sect89">Section 89</a>. It doesn<ch.apos/>t make sense to skip the section describing the tumble downhill.</p>
       <p>(<a idref="sect18">18</a>) Moved the choice about the Camouflage Discipline into the first position.</p>
       <p>(<a idref="sect19">19</a>) Moved the choice about the Tracking Discipline into the first position and replaced <quote>Gallowbrush</quote> with <quote>gallowbrush</quote>: you can't pick it up.</p>
       <p>(<a idref="sect20">20</a>) Replaced <quote>Jala</quote> with <quote>jala</quote> and <quote>dagger</quote> with <quote>Dagger</quote>. The original versions of this book had this section lead to <a idref="sect272">Section 272</a>, which is incorrect. We are using the correct section, <a idref="sect273">273</a>, as used in more recent editions.</p>
       <p>(<a idref="sect21">21</a>) The text is unchanged but we have concatenated some of the paragraphs for the dice rolls for clarification.</p>
       <p>(<a idref="sect22">22</a>) Added a comma after <quote>0<ch.endash/>4</quote> in the first choice.</p>
-      <p>(<a idref="sect23">23</a>) Reordered the choices. The choice that was originally first (about removing the pin) is now last. The choice about the Golden Key was originally last and is now first. Also added <quote>and wish to use it</quote> after <quote>Golden Key</quote>.</p>
+      <p>(<a idref="sect23">23</a>) Reordered the choices. The choice that was originally first (about removing the pin) is now last. The choice about the Golden Key was originally last and is now first. Also added <quote>and wish to use it</quote> after <quote>Golden Key</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect32">32</a>) Replaced <quote>unmistakeable</quote> with <quote>unmistakable</quote>.</p>
+      <p>(<a idref="sect34">34</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect36">36</a>) Added a comma after <quote>4 or lower</quote> in the first choice.</p>
       <p>(<a idref="sect37">37</a>) Added a blank line before the decisions and reversed their order.</p>
       <p>(<a idref="sect38">38</a>) Replaced both occurrences of <quote>woodsmoke</quote> with <quote>wood smoke</quote>.</p>
+      <p>(<a idref="sect41">41</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect46">46</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
+      <p>(<a idref="sect51">51</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect58">58</a>) Made the choice that led to <a idref="sect286">Section 286</a> to lead to <a idref="sect251">Section 251</a> instead. Many readers have realized that there was an error here but assumed that the original numbers for the choices should simply be reversed, giving Lone Wolf a chance at survival for hiding and certain death for riding on. Actually, there is no certain death possibility here. Hiding is supposed to grant you certain survival. The proof of this correction is that there is no other path to <a idref="sect251">Section 251</a>, and it works perfectly.</p>
       <p>(<a idref="sect62">62</a>) Replaced <quote>crossbow had</quote> with <quote>crossbow has</quote>.</p>
+      <p>(<a idref="sect63">63</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect67">67</a>) Made the choice that led to <a idref="sect140">Section 140</a> to lead to <a idref="sect252">Section 252</a> instead. If you read <a idref="sect222">Section 222</a>, you<ch.apos/>ll notice that the choice leading to <a idref="sect252">Section 252</a> is the east track. Indeed, only <a idref="sect140">Section 140</a> may lead you to the bear of which Tracking is supposed to warn you in this section.</p>
       <p>(<a idref="sect69">69</a>) Replaced <quote>Gallowbrush</quote> with <quote>gallowbrush</quote>: you can't pick it up.</p>
       <p>(<a idref="sect70">70</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
@@ -5544,36 +5608,43 @@ Todo:
       <p>(<a idref="sect83">83</a>) Added another <quote>s</quote> after <quote>posses</quote> in the last choice and moved that choice into the first position.</p>
       <p>(<a idref="sect87">87</a>) Replaced <quote>Graveweed</quote> with <quote>graveweed</quote>.</p>
       <p>(<a idref="sect91">91</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
+      <p>(<a idref="sect97">97</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect105">105</a>) Replaced <quote>jet black</quote> with <quote>jet-black</quote> and <quote>skill,</quote> with <quote>skill or do not wish to use it,</quote>.</p>
       <p>(<a idref="sect112">112</a>) Replaced <quote>cavemouth</quote> with <quote>cave mouth</quote>.</p>
       <p>(<a idref="sect119">119</a>) Replaced <quote>Gallowbrush</quote> with <quote>gallowbrush</quote>: you can't pick it up.</p>
+      <p>(<a idref="sect121">121</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect122">122</a>) Split the first sentence which was actually two independent clauses into two sentences to fix it.</p>
       <p>(<a idref="sect125">125</a>) Moved the last choice (about the Tracking Discipline) into the first position.</p>
       <p>(<a idref="sect128">128</a>)<!--ERRTAG-RE-134226-ITEM--> Replaced <quote>border ranger</quote> with <quote>Border Ranger</quote>.<!--/ERRTAG-RE-134226-ITEM--></p>
       <p>(<a idref="sect131">131</a>)<!--ERRTAG-RE-137630-ITEM--> Replaced <quote>Magicians Guild of Toran</quote> with <quote>Magicians<ch.apos/> Guild of Toran</quote>.<!--/ERRTAG-RE-137630-ITEM--></p>
-      <p>(<a idref="sect144">144</a>) Added <quote> or if you have no Backpack Items</quote> to the second paragraph.<!--ERRTAG-RE-149741-ITEM--> Replaced <quote>one Item is stolen</quote> with <quote>one item is stolen</quote>.<!--/ERRTAG-RE-149741-ITEM--></p>
+      <p>(<a idref="sect144">144</a>) Added <quote> or if you have no Backpack Items</quote> to the second paragraph.<!--ERRTAG-RE-149741-ITEM--> Replaced <quote>one Item is stolen</quote> with <quote>one item is stolen</quote>.<!--/ERRTAG-RE-149741-ITEM--> Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect151">151</a>) Added <quote>If you wish to remove the pin, turn to 337.</quote> This is the only other possible choice for what is a strangely one-sided option in the original text. More flavourful language might make more sense, such as <quote>If you still wish to remove the pin with your hands,</quote> but to best preserve the integrity of the text, we simply copied the choice from <a idref="sect23">Section 23</a>.</p>
+      <p>(<a idref="sect152">152</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect154">154</a>) Replaced <quote>head first</quote> with <quote>head-first</quote>.</p>
       <p>(<a idref="sect166">166</a>)<!--ERRTAG-RE-169126-ITEM--> Replaced <quote>tortuous</quote> with <quote>torturous</quote>.<!--/ERRTAG-RE-169126-ITEM--></p>
       <p>(<a idref="sect167">167</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
+      <p>(<a idref="sect170">170</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect172">172</a>) Moved the second choice (about the Camouflage Discipline) into the first position.</p>
       <p>(<a idref="sect175">175</a>) Moved the last choice (about the Camouflage Discipline) into the first position.<!--ERRTAG-RE-176294-ITEM--> Replaced <quote>border rangers</quote> with <quote>Border Rangers</quote>.<!--/ERRTAG-RE-176294-ITEM--></p>
       <p>(<a idref="sect197">197</a>) Deleted a superfluous space after the word <quote>wish</quote> at the very end of the second sentence.</p>
-      <p>(<a idref="sect200">200</a>) Reversed the order of the choices.</p>
+      <p>(<a idref="sect200">200</a>) Reversed the order of the choices. Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect201">201</a>) Changed the choice that led to <a idref="sect215">Section 215</a> to lead to <a idref="sect15">Section 15</a> instead. The original choice appears to make sense, but does not work out in a map. The indication that the correct section is really <a idref="sect15">15</a> is the fact that it is not otherwise accessible (though <a idref="sect215">Section 215</a> is) and <a idref="sect15">15</a> leads back to <a idref="sect201">Section 201</a> when taking the opposite direction.</p>
       <p>(<a idref="sect211">211</a>) Moved the second choice (about Sixth Sense) into the first position.</p>
+      <p>(<a idref="sect212">212</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect218">218</a>) Replaced <quote>war cries</quote> with <quote>war-cries</quote>.</p>
       <p>(<a idref="sect221">221</a>) Replaced <quote>rough hewn</quote> with <quote>rough-hewn</quote>.</p>
       <p>(<a idref="sect222">222</a>) Moved the last choice (about Tracking) into the first position.</p>
       <p>(<a idref="sect226">226</a>) Replaced <quote>head first</quote> with <quote>head-first</quote>.</p>
       <p>(<a idref="sect235">235</a>) Moved the last choice (about Tracking) into the first position.</p>
+      <p>(<a idref="sect246">246</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect260">260</a>) Replaced <quote>spreadeagled</quote> with <quote>spread-eagled</quote>.</p>
-      <p>(<a idref="sect267">267</a>) Capitalized <quote>message</quote> in the second sentence of the second paragraph, since that is how retrievable items are supposed to be represented, and to be consistent with the first time the item is mentioned in this section.</p>
+      <p>(<a idref="sect267">267</a>) Capitalized <quote>message</quote> in the second sentence of the second paragraph, since that is how retrievable items are supposed to be represented, and to be consistent with the first time the item is mentioned in this section. Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect268">268</a>) Replaced <quote>wary</quote> with <quote>weary</quote>. We hardly think Lone Wolf would be wary among the King<ch.apos/>s soldiers.</p>
       <p>(<a idref="sect272">272</a>) Replaced <quote>wood-smoke</quote> with <quote>wood smoke</quote>.</p>
       <p>(<a idref="sect275">275</a>)<!--ERRTAG-RE-249381-ITEM--> Replaced <quote>tortuous</quote> with <quote>torturous</quote>.<!--/ERRTAG-RE-249381-ITEM--></p>
       <p>(<a idref="sect277">277</a>) Replaced <quote><a idref="sect113">Turn 113</a></quote> to <quote><a idref="sect113">Turn to 113</a>.</quote></p>
-      <p>(<a idref="sect284">284</a>) Replaced both occurrences of <quote>Graveweed</quote> with <quote>graveweed</quote>.</p>
+      <p>(<a idref="sect284">284</a>) Replaced both occurrences of <quote>Graveweed</quote> with <quote>graveweed</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
+      <p>(<a idref="sect307">307</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect311">311</a>) Moved the last choice (about Camouflage) into the first position.</p>
       <p>(<a idref="sect315">315</a>) Replaced <quote>Items</quote> with <quote>items</quote>.</p>
       <p>(<a idref="sect319">319</a>) Replaced <quote>death cry</quote> with <quote>death-cry</quote>, <quote>fnd</quote> with <quote>find</quote>, and <quote>half way</quote> with <quote>halfway</quote>.</p>
@@ -5581,11 +5652,12 @@ Todo:
       <p>(<a idref="sect323">323</a>) Replaced <quote>jet black</quote> with <quote>jet-black</quote>.</p>
       <p>(<a idref="sect326">326</a>) Replaced <quote>Graveweed</quote> with <quote>graveweed</quote>.</p>
       <p>(<a idref="sect333">333</a>)<!--ERRTAG-RE-294191-ITEM--> Replaced <quote>tortuous</quote> with <quote>torturous</quote>.<!--/ERRTAG-RE-294191-ITEM--></p>
-      <p>(<a idref="sect334">334</a>) Moved the last choice (about Sixth Sense) into the first position, and move the first choice (that leads to <a idref="sect162">Section 162</a>) into the last position.</p>
+      <p>(<a idref="sect334">334</a>) Moved the last choice (about Sixth Sense) into the first position, and move the first choice (that leads to <a idref="sect162">Section 162</a>) into the last position. Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect336">336</a>)<!--ERRTAG-RE-296725-ITEM--> Replaced <quote>unsheath</quote> with <quote>unsheathe</quote>.<!--/ERRTAG-RE-296725-ITEM--></p>
-      <p>(<a idref="sect341">341</a>) Moved the last choice (about Tracking) into the first position.</p>
+      <p>(<a idref="sect341">341</a>) Moved the last choice (about Tracking) into the first position. Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect342">342</a>)<!--ERRTAG-RE-301862-ITEM--> Replaced <quote>bloods</quote> with <quote>blood</quote>.<!--/ERRTAG-RE-301862-ITEM--></p>
       <p>(<a idref="sect349">349</a>) <quote>Vonatar,</quote> from the seventh paragraph, is spelled <quote>Vonotar</quote> in later Lone Wolf books.<!--ERRTAG-RE-306915-ITEM--> Replaced <quote>magician<ch.apos/>s guild of Toran</quote> with <quote>Magicians<ch.apos/> Guild of Toran</quote>.<!--/ERRTAG-RE-306915-ITEM--></p>
+      <p>(<a idref="sect350">350</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>.<!--ERRTAG-RE-316950-ITEM--> Replaced <quote>fall to 0</quote> with <quote>fall to 0 or below</quote>.<!--/ERRTAG-RE-316950-ITEM--></p>
      </data>
     </section>

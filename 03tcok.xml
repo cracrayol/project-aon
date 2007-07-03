@@ -15,6 +15,9 @@
 
 $Id$
 $Log$
+Revision 1.12  2007/02/07 17:40:00  Simon Osborne
+Periods added to Illustration captions.
+
 Revision 1.11  2007/01/07 19:11:00  Simon Osborne
 A couple of minor Errata fixed.
 
@@ -648,7 +651,7 @@ fix illustration captions
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>Two men in ragged clothes are huddled together beside a small fire</description>
+         <description><line>Two men in ragged clothes are huddled</line><line>together beside a small fire.</line></description>
         </meta>
         <instance class="html" src="ill1.gif" width="386" height="654" />
         <instance class="pdf" src="ill1.pdf" width="386" height="654" />
@@ -843,7 +846,7 @@ fix illustration captions
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>His grip falters and he plummets backwards into the gaping void</description>
+         <description><line>His grip falters and he plummets</line><line>backwards into the gaping void.</line></description>
         </meta>
         <instance class="html" src="ill2.gif" width="386" height="684" />
         <instance class="pdf" src="ill2.pdf" width="386" height="684" />
@@ -991,8 +994,7 @@ fix illustration captions
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>The statue rises slowly from the altar and advances
-towards you</description>
+         <description><line>The statue rises slowly from the</line><line>altar and advances towards you.</line></description>
         </meta>
         <instance class="html" src="ill3.gif" width="386" height="709" />
         <instance class="pdf" src="ill3.pdf" width="386" height="709" />
@@ -1309,7 +1311,7 @@ towards you</description>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description><quote>My name is Loi-Kymar. I am an elder of the Magicians<ch.apos/> Guild of Toran,</quote></description>
+         <description><line><ch.lsquot/>My name is Loi-Kymar. I am an elder</line><line>of the Magicians<ch.apos/> Guild of Toran.<ch.rsquot/></line></description>
         </meta>
         <instance class="html" src="ill4.gif" width="386" height="662" />
         <instance class="pdf" src="ill4.pdf" width="386" height="662" />
@@ -1562,8 +1564,7 @@ towards you</description>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>A shadow to your right betrays the Baknar as it lopes
-towards you</description>
+         <description><line>A shadow to your right betrays the</line><line>Baknar as it lopes towards you.</line></description>
         </meta>
         <instance class="html" src="ill5.gif" width="386" height="660" />
         <instance class="pdf" src="ill5.pdf" width="386" height="660" />
@@ -1705,7 +1706,7 @@ towards you</description>
          <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>The two-headed serpent slithers along the ledge</description>
+         <description><line>The two-headed serpent</line><line>slithers along the ledge.</line></description>
         </meta>
         <instance class="html" src="ill6.gif" width="386" height="657" />
         <instance class="pdf" src="ill6.pdf" width="386" height="657" />
@@ -1893,8 +1894,7 @@ towards you</description>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>The three Baknar jump from the ice wall and land with a
-crash on the sledges</description>
+         <description><line>The three Baknar jump from the</line><line>ice wall and land with a</line><line>crash on the sledges.</line></description>
         </meta>
         <instance class="html" src="ill7.gif" width="386" height="654" />
         <instance class="pdf" src="ill7.pdf" width="386" height="654" />
@@ -2055,7 +2055,7 @@ crash on the sledges</description>
       <data>
        <p>The gale dies away during the night and dawn arrives calm and still. On the horizon to the far north, you can see Ikaya, the ice fortress. The huge crystal-towered stronghold is a wondrous sight, made all the more marvellous because it appears to hover upside down upon a large cloud. <quote>Kalte mirage,</quote> says Dyce. <quote>There<ch.apos/>s no dust in the air here<ch.emdash/>the land is reflected in the clouds. That<ch.apos/>s Ikaya, but the real fortress is over the horizon. It cannot be more than forty miles away now.</quote> Dyce grabs a spade and starts to dig out the Kanu-dogs that have been buried by snow. You wake the others and eat a Meal before setting off once more.</p>
        <p>It is midday when you reach the edge of a deep gorge. It is over forty feet wide, and there appears to be no way of crossing it. You are forced to travel along the gorge to the east. Eventually, after three miles, you discover a narrow ice bridge. However, the centre of the bridge is frighteningly thin and narrow: it looks incapable of supporting the weight of a loaded sledge.</p>
-         <illustration class="inline">
+       <illustration class="inline">
         <meta>
          <creator>Gary Chalk</creator>
         </meta>
@@ -2161,8 +2161,7 @@ crash on the sledges</description>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>Suddenly you see a large black shape pass close to the
-surface of the ice</description>
+         <description><line>Suddenly you see a large black</line><line>shape pass close to the</line><line>surface of the ice.</line></description>
         </meta>
         <instance class="html" src="ill8.gif" width="386" height="654" />
         <instance class="pdf" src="ill8.pdf" width="386" height="654" />
@@ -2405,8 +2404,7 @@ surface of the ice</description>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>At the foot of the stairs, still upright and in armour,
-are the skeletal remains of an ancient tomb keeper</description>
+         <description><line>At the foot of the stairs, still</line><line>upright and in armour, are the skeletal</line><line>remains of an ancient tomb keeper.</line></description>
         </meta>
         <instance class="html" src="ill9.gif" width="386" height="704" />
         <instance class="pdf" src="ill9.pdf" width="386" height="704" />
@@ -2478,8 +2476,7 @@ are the skeletal remains of an ancient tomb keeper</description>
          <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>You have released an  Ice Demon and it is intent on your
-destruction</description>
+         <description><line>You have released an Ice Demon and</line><line>it is intent on your destruction.</line></description>
         </meta>
         <instance class="html" src="ill10.gif" width="386" height="643" />
         <instance class="pdf" src="ill10.pdf" width="386" height="643" />
@@ -2769,8 +2766,7 @@ destruction</description>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>From out of the dark slithers a huge ghoulish green
-monster over which Vonotar has control</description>
+         <description><line>From out of the dark slithers a huge</line><line>ghoulish green monster over</line><line>which Vonotar has control.</line></description>
         </meta>
         <instance class="html" src="ill11.gif" width="386" height="663" />
         <instance class="pdf" src="ill11.pdf" width="386" height="663" />
@@ -3254,8 +3250,7 @@ monster over which Vonotar has control</description>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>Each Ice Barbarian scout is carrying a backpack
-containing a child armed with a bone bow</description>
+         <description><line>Each Ice Barbarian scout is</line><line>carrying a backpack containing a</line><line>child armed with a bone bow.</line></description>
         </meta>
         <instance class="html" src="ill12.gif" width="386" height="640" />
         <instance class="pdf" src="ill12.pdf" width="386" height="640" />
@@ -3493,8 +3488,7 @@ containing a child armed with a bone bow</description>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>You arrive at a massive ice hall full of crystal
-stalagmites and stalactites</description>
+         <description><line>You arrive at a massive ice</line><line>hall full of crystal stalagmites</line><line>and stalactites.</line></description>
         </meta>
         <instance class="html" src="ill13.gif" width="386" height="683" />
         <instance class="pdf" src="ill13.pdf" width="386" height="683" />
@@ -3684,8 +3678,7 @@ stalagmites and stalactites</description>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>In an instant, the hunchback wizard is engulfed in a
-tangle of vines</description>
+         <description><line>In an instant, the hunchback</line><line>wizard is engulfed in a tangle</line><line>of vines.</line></description>
         </meta>
         <instance class="html" src="ill14.gif" width="386" height="685" />
         <instance class="pdf" src="ill14.pdf" width="386" height="685" />
@@ -3843,8 +3836,7 @@ tangle of vines</description>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>This strange creature is a Crystal Frostwyrm and you must
-fight it to the death</description>
+         <description><line>This strange creature is a</line><line>Crystal Frostwyrm and you must fight</line><line>it to the death.</line></description>
         </meta>
         <instance class="html" src="ill15.gif" width="386" height="616" />
         <instance class="pdf" src="ill15.pdf" width="386" height="616" />
@@ -4154,8 +4146,7 @@ fight it to the death</description>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>This hall is a place of great evil, a nightmare
-laboratory</description>
+         <description><line>This hall is a place of great evil,</line><line>a nightmare laboratory.</line></description>
         </meta>
         <instance class="html" src="ill16.gif" width="386" height="675" />
         <instance class="pdf" src="ill16.pdf" width="386" height="675" />
@@ -4325,7 +4316,7 @@ laboratory</description>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>They have already started to skin the dead Baknar</description>
+         <description><line>They have already started to</line><line>skin the dead Baknar.</line></description>
         </meta>
         <instance class="html" src="ill17.gif" width="386" height="719" />
         <instance class="pdf" src="ill17.pdf" width="386" height="719" />
@@ -4501,8 +4492,7 @@ laboratory</description>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>The Ice Barbarians circle around you but they dare not
-attack while you hold one of their children as hostage</description>
+         <description><line>The Ice Barbarians circle around you</line><line>but they dare not attack while you</line><line>hold one of their children as hostage.</line></description>
         </meta>
         <instance class="html" src="ill18.gif" width="386" height="636" />
         <instance class="pdf" src="ill18.pdf" width="386" height="636" />
@@ -4670,8 +4660,7 @@ attack while you hold one of their children as hostage</description>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>A hidden panel opens near the right stave and inside is a
-beautiful glowing crystal</description>
+         <description><line>A hidden panel opens near the</line><line>right stave and inside is a</line><line>beautiful glowing crystal.</line></description>
         </meta>
         <instance class="html" src="ill19.gif" width="386" height="663" />
         <instance class="pdf" src="ill19.pdf" width="386" height="663" />
@@ -4858,7 +4847,7 @@ beautiful glowing crystal</description>
        <illustration class="float">
         <meta>
          <creator>Gary Chalk</creator>
-         <description>Vonotar is led away to the deepest chamber of the Guildhall wherein lies the Daziarn: the door of an eternal prison from which there can be no escape</description>
+         <description><line>Vonotar is led away to the deepest chamber</line><line>of the Guildhall wherein lies the Daziarn:</line><line>the door of an eternal prison from which</line><line>there can be no escape.</line></description>
         </meta>
         <instance class="html" src="ill20.gif" width="772" height="588" />
         <instance class="pdf" src="ill20.pdf" width="772" height="588" />
@@ -5415,17 +5404,20 @@ beautiful glowing crystal</description>
        <p>(<a idref="levels">Levels of Kai Training</a>) Replaced <quote>LONE WOLF</quote> with <quote>Lone Wolf</quote>.</p>
        <p>(<a idref="kaiwisdm">Kai Wisdom</a>) Removed <quote> at the front of the book</quote>. Replaced <quote>ice-fortress</quote> with <quote>ice fortress</quote>.</p>
        <p>(<a idref="sect1">1</a>) Replaced <quote>pack ice</quote> with <quote>pack-ice</quote>. Replaced the word <quote>becoming</quote> with <quote>become</quote> in the fourth paragraph. Removed <quote> at the front of the book</quote>.<!--ERRTAG-RE-38180-ITEM--> Replaced <quote>Anskavern</quote> with <quote>Anskaven</quote>.<!--/ERRTAG-RE-38180-ITEM--></p>
+       <p>(<a idref="sect5">5</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect13">13</a>) Replaced both occurrences of <quote>spyhole</quote> with <quote>spy-hole</quote>.</p>
+       <p>(<a idref="sect19">19</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect21">21</a>)<!--ERRTAG-RE-59623-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-59623-ITEM--></p>
        <p>(<a idref="sect26">26</a>) Moved the Sixth Sense choice into the first position.</p>
        <p>(<a idref="sect27">27</a>) Replaced <quote>rock face</quote> with <quote>rock-face</quote>.</p>
+       <p>(<a idref="sect31">31</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect33">33</a>) Moved the Tracking or Sixth Sense choice into the first position.<!--ERRTAG-RE-70145-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-70145-ITEM--></p>
        <p>(<a idref="sect34">34</a>) Replaced <quote>cretaure</quote> with <quote>creature</quote> and <quote>home-coming</quote> with <quote>homecoming</quote>.</p>
        <p>(<a idref="sect40">40</a>) Moved the Tracking choice into the first position.</p>
        <p>(<a idref="sect44">44</a>) Replaced <quote>spyhole</quote> with <quote>spy-hole</quote>.<!--ERRTAG-RE-81998-ITEM--> Replaced <quote>mystery to me, I have</quote> with <quote>mystery to me. I have</quote>.<!--/ERRTAG-RE-81998-ITEM--></p>
        <p>(<a idref="sect49">49</a>) Moved the Tracking choice into the first position.</p>
        <p>(<a idref="sect52">52</a>) Replaced <quote>ice-creature</quote> with <quote>ice creature</quote>.</p>
-       <p>(<a idref="sect56">56</a>) Added a quotation mark at the end of the fourth paragraph due to technical limitations in our XML.<!--ERRTAG-RE-93667-ITEM--> Replaced <quote>Magician<ch.apos/>s Guild</quote> with <quote>Magicians<ch.apos/> Guild</quote>.<!--/ERRTAG-RE-93667-ITEM--><!--ERRTAG-RE-94585-ITEM--> Replaced <quote>wretch is responsible</quote> with <quote>wretch, is responsible</quote>.<!--/ERRTAG-RE-94585-ITEM--></p>
+       <p>(<a idref="sect56">56</a>) Added a quotation mark at the end of the fourth paragraph due to technical limitations in our XML.<!--ERRTAG-RE-93667-ITEM--> Replaced <quote>Magician<ch.apos/>s Guild</quote> with <quote>Magicians<ch.apos/> Guild</quote>.<!--/ERRTAG-RE-93667-ITEM--><!--ERRTAG-RE-94585-ITEM--> Replaced <quote>wretch is responsible</quote> with <quote>wretch, is responsible</quote>.<!--/ERRTAG-RE-94585-ITEM--> Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect58">58</a>)<!--ERRTAG-RE-97798-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-97798-ITEM--></p>
        <p>(<a idref="sect59">59</a>)<!--ERRTAG-RE-98307-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-98307-ITEM--></p>
        <p>(<a idref="sect62">62</a>) Made the last sentence its own paragraph to better fit our format for the choices.</p>
@@ -5434,18 +5426,21 @@ beautiful glowing crystal</description>
        <p>(<a idref="sect70">70</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>.</p>
        <p>(<a idref="sect72">72</a>) Replaced <quote>firesphere</quote> with <quote>Firesphere</quote>.</p>
        <p>(<a idref="sect76">76</a>) Replaced <quote>spyhole</quote> with <quote>spy-hole</quote>.</p>
+       <p>(<a idref="sect78">78</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect85">85</a>) Moved the Sixth Sense choice into the first position.</p>
-       <p>(<a idref="sect88">88</a>) Split the word <quote>anytime</quote> into <quote>any time</quote> in the fourth paragraph.</p>
+       <p>(<a idref="sect88">88</a>) Split the word <quote>anytime</quote> into <quote>any time</quote> in the fourth paragraph. Added a period to the end of the illustration<ch.apos/>s caption.</p>
+       <p>(<a idref="sect103">103</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect105">105</a>) Moved the Sixth Sense choice into the first position.</p>
        <p>(<a idref="sect110">110</a>) Replaced <quote>dimly-lit</quote> with <quote>dimly lit</quote>.</p>
        <p>(<a idref="sect114">114</a>) Moved the Hunting choice into the first position.</p>
        <p>(<a idref="sect116">116</a>)<!--ERRTAG-RE-149229-ITEM--> Replaced <quote>Vial of Laumspur</quote> with <quote>vial of Laumspur</quote>.<!--/ERRTAG-RE-149229-ITEM--><!--ERRTAG-RE-149114-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-149114-ITEM--></p>
-       <p>(<a idref="sect125">125</a>) Moved the Camouflage choice into the first position.</p>
+       <p>(<a idref="sect125">125</a>) Moved the Camouflage choice into the first position. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect134">134</a>)<!--ERRTAG-RE-168665-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-168665-ITEM--></p>
        <p>(<a idref="sect137">137</a>) Replaced <quote>discipline</quote> with <quote>Discipline</quote>.</p>
+       <p>(<a idref="sect145">145</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect146">146</a>)<!--ERRTAG-RE-178113-ITEM--> Replaced <quote>as crevasse</quote> with <quote>as the crevasse</quote>.<!--/ERRTAG-RE-178113-ITEM--></p>
        <p>(<a idref="sect148">148</a>) Replaced <quote>death blow</quote> with <quote>death-blow</quote>.</p>
-       <p>(<a idref="sect150">150</a>) Moved the Firesphere choice into the second position.</p>
+       <p>(<a idref="sect150">150</a>) Moved the Firesphere choice into the second position. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect151">151</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>.</p>
        <p>(<a idref="sect155">155</a>) Replaced <quote>rock face</quote> with <quote>rock-face</quote>.</p>
        <p>(<a idref="sect160">160</a>) Moved the choice regarding leaving the tent into the last position.<!--ERRTAG-RE-191812-ITEM--> Replaced <quote>breed are</quote> with <quote>breed is</quote>.<!--/ERRTAG-RE-191812-ITEM--></p>
@@ -5453,6 +5448,7 @@ beautiful glowing crystal</description>
        <p>(<a idref="sect168">168</a>)<!--ERRTAG-RE-200920-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-200920-ITEM--></p>
        <p>(<a idref="sect170">170</a>)<!--ERRTAG-RE-201948-ITEM--> Replaced <quote>My thanks Kai Lord</quote> with <quote>My thanks, Kai Lord</quote>.<!--/ERRTAG-RE-201948-ITEM--></p>
        <p>(<a idref="sect171">171</a>) Replaced <quote>discipline</quote> with <quote>Discipline</quote>.</p>
+       <p>(<a idref="sect173">173</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect180">180</a>) Switched the order of the choices.</p>
        <p>(<a idref="sect182">182</a>) Replaced <quote>ice-wall</quote> with <quote>ice wall</quote>.</p>
        <p>(<a idref="sect190">190</a>) Replaced <quote>out distance</quote> with <quote>outdistance</quote>.</p>
@@ -5462,33 +5458,39 @@ beautiful glowing crystal</description>
        <p>(<a idref="sect209">209</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>.</p>
        <p>(<a idref="sect210">210</a>) Added <quote>the</quote> before <quote>Kai Discipline</quote> in the first link.</p>
        <p>(<a idref="sect211">211</a>)<!--ERRTAG-RE-237434-ITEM--> Replaced <quote>-3 to 3</quote> with <quote>-3<ch.endash/>3</quote>.<!--/ERRTAG-RE-237434-ITEM--></p>
+       <p>(<a idref="sect216">216</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect220">220</a>)<!--ERRTAG-RE-246372-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-246372-ITEM--></p>
        <p>(<a idref="sect232">232</a>) Replaced <quote>much-deserved</quote> with <quote>much deserved</quote>.</p>
-       <p>(<a idref="sect235">235</a>) Replaced <quote>pack ice</quote> with <quote>pack-ice</quote>.</p>
+       <p>(<a idref="sect235">235</a>) Replaced <quote>pack ice</quote> with <quote>pack-ice</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect247">247</a>) Replaced <quote>matts</quote> with <quote>mats</quote>.</p>
        <p>(<a idref="sect248">248</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>.</p>
        <p>(<a idref="sect250">250</a>)<!--ERRTAG-RE-272490-ITEM--> Replaced <quote>visited the Graveyard of the Ancients</quote> with <quote>visited the Graveyard of the Ancients and survived</quote>.<!--/ERRTAG-RE-272490-ITEM--></p>
+       <p>(<a idref="sect252">252</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect254">254</a>) Replaced <quote>spyhole</quote> with <quote>spy-hole</quote>.</p>
        <p>(<a idref="sect262">262</a>) Split the first paragraph into two paragraphs and moved the Sixth Sense choice between the two. Replaced <quote>posses</quote> with <quote>possess</quote> and <quote>Pick</quote> with <quote>Otherwise, pick</quote>.</p>
        <p>(<a idref="sect263">263</a>) Moved the choice regarding lost <typ class="attribute">ENDURANCE</typ> points into the first position.</p>
+       <p>(<a idref="sect265">265</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect272">272</a>)<!--ERRTAG-RE-292685-ITEM--> Replaced <quote>its tip</quote> with <quote>the rod<ch.apos/>s tip</quote>.<!--/ERRTAG-RE-292685-ITEM--></p>
        <p>(<a idref="sect273">273</a>) Replaced <quote>well-suited</quote> with <quote>well suited</quote>.<!--ERRTAG-RE-293810-ITEM--> Replaced <quote>breed are</quote> with <quote>breed is</quote>.<!--/ERRTAG-RE-293810-ITEM--></p>
        <p>(<a idref="sect276">276</a>) Moved the Hunting or Tracking choice into the first position.</p>
        <p>(<a idref="sect284">284</a>) Replaced <quote>fast flowing</quote> with <quote>fast-flowing</quote>.</p>
+       <p>(<a idref="sect292">292</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect298">298</a>) Replaced <quote>fingerbones</quote> with <quote>finger-bones</quote>.</p>
        <p>(<a idref="sect301">301</a>)<!--ERRTAG-RE-320442-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-320442-ITEM--></p>
-       <p>(<a idref="sect303">303</a>) Added the choice <quote>If you have the Kai Discipline of Sixth Sense, <a idref="sect127">turn to 127</a>,</quote> to parallel the same situation in <a idref="sect326">Section 326</a>.</p>
+       <p>(<a idref="sect303">303</a>) Added the choice <quote>If you have the Kai Discipline of Sixth Sense, <a idref="sect127">turn to 127</a></quote>, to parallel the same situation in <a idref="sect326">Section 326</a>.</p>
+       <p>(<a idref="sect305">305</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect314">314</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>.</p>
-       <p>(<a idref="sect320">320</a>) Replaced <quote>something- </quote> with <quote>something<ch.emdash/></quote>.</p>
+       <p>(<a idref="sect320">320</a>) Replaced <quote>something- </quote> with <quote>something<ch.emdash/></quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect325">325</a>) Replaced <quote>warlike</quote> with <quote>war-like</quote>.<!--ERRTAG-RE-343205-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-343205-ITEM--></p>
        <p>(<a idref="sect326">326</a>) Moved the Sixth Sense choice into the first position.</p>
        <p>(<a idref="sect332">332</a>) Moved the Sixth Sense or Hunting choice into the first position.</p>
+       <p>(<a idref="sect334">334</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect335">335</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>.</p>
        <p>(<a idref="sect336">336</a>) Replaced <quote>dirt encrusted</quote> with <quote>dirt-encrusted</quote>.</p>
        <p>(<a idref="sect337">337</a>) Replaced <quote>vicious looking</quote> with <quote>vicious-looking</quote>.</p>
        <p>(<a idref="sect339">339</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>.</p>
        <p>(<a idref="sect342">342</a>) Removed <quote> at the front of the book</quote>.</p>
-       <p>(<a idref="sect350">350</a>) Replaced <quote>LONE WOLF</quote> of the last paragraph with <quote>Lone Wolf</quote> and replaced both occurrences of <quote>Captain</quote> with <quote>captain</quote>.<!--ERRTAG-RE-365765-ITEM--> Replaced <quote>Magician<ch.apos/>s Guild</quote> with <quote>Magicians<ch.apos/> Guild</quote>.<!--/ERRTAG-RE-365765-ITEM--><!--ERRTAG-RE-367580-ITEM--> Replaced <quote>his crimes and it is you</quote> with <quote>his crimes, and it is you</quote>.<!--/ERRTAG-RE-367580-ITEM--><!--ERRTAG-RE-366739-ITEM--> Replaced <quote>Vonotar the traitor</quote> with <quote>Vonotar the Traitor</quote>.<!--/ERRTAG-RE-366739-ITEM--><!--ERRTAG-RE-367210-ITEM--> Replaced <quote>Anskavern</quote> with <quote>Anskaven</quote>.<!--/ERRTAG-RE-367210-ITEM--><!--ERRTAG-RE-367698-ITEM--> Replaced <quote>Anskavern</quote> with <quote>Anskaven</quote>.<!--/ERRTAG-RE-367698-ITEM--></p>
+       <p>(<a idref="sect350">350</a>) Replaced <quote>LONE WOLF</quote> of the last paragraph with <quote>Lone Wolf</quote> and replaced both occurrences of <quote>Captain</quote> with <quote>captain</quote>.<!--ERRTAG-RE-365765-ITEM--> Replaced <quote>Magician<ch.apos/>s Guild</quote> with <quote>Magicians<ch.apos/> Guild</quote>.<!--/ERRTAG-RE-365765-ITEM--><!--ERRTAG-RE-367580-ITEM--> Replaced <quote>his crimes and it is you</quote> with <quote>his crimes, and it is you</quote>.<!--/ERRTAG-RE-367580-ITEM--><!--ERRTAG-RE-366739-ITEM--> Replaced <quote>Vonotar the traitor</quote> with <quote>Vonotar the Traitor</quote>.<!--/ERRTAG-RE-366739-ITEM--><!--ERRTAG-RE-367210-ITEM--> Replaced <quote>Anskavern</quote> with <quote>Anskaven</quote>.<!--/ERRTAG-RE-367210-ITEM--><!--ERRTAG-RE-367698-ITEM--> Replaced <quote>Anskavern</quote> with <quote>Anskaven</quote>.<!--/ERRTAG-RE-367698-ITEM--> Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>.<!--ERRTAG-RE-373958-ITEM--> Replaced <quote>fall to 0</quote> with <quote>fall to 0 or below</quote>.<!--/ERRTAG-RE-373958-ITEM--></p>
       </data>
      </section>
