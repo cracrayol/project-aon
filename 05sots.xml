@@ -11,75 +11,13 @@
 
 <gamebook xml:lang="en-UK" version="0.12">
 
-<!--
-
-$Id$
-$Log$
-Revision 1.51  2007/07/02 15:30:00  Simon Osborne
-Minor rewording of a repeated Erratum for consistency.
-
-Revision 1.5  2007/06/30 16:30:03  Simon Osborne
-Updated to 0.12. Fixed many Errata and Non-errata issues.
-
-Revision 1.4  2007/05/07 22:54:34  jonathan.blake
-fixing illustration dimensions
-
-Revision 1.3  2006/01/05 18:04:07  jonathan.blake
-Adding Paul Haskell as an Illustration Transcriptionist
-
-Revision 1.2  2005/03/10 18:21:51  jonathan.blake
-Removed link to old staff email address.
-
-Revision 1.1  2004/11/08 01:29:12  jonathan.blake
-Initial Freepository revision
-
-
-//// RCS Revision Log ////
-
-Revision 1.9  2003/01/27 22:11:39  jblake
-Checkin prior to global footnote change
-
-Revision 1.8  2003/01/04 17:15:05  jblake
-Published
-
-Revision 1.7  2002/12/04 19:16:39  jblake
-XML check. Still needs footnotes and editorial changes.
-
-Revision 1.6  2002/11/15 00:16:43  jblake
-Fixed minor XMLization issues.
-
-Revision 1.5  2002/11/12 18:49:50  jblake
-Fix of interbook links.
-
-Revision 1.4  2002/11/10 06:10:08  jblake
-Fixed illustration issues.
-
-Revision 1.3  2002/10/30 15:00:00 jdougan
-inserted secondary illustrations and table of secondary illustrations, except small9 (currently orphaned)
-
-Revision 1.2  2002/10/30 05:04:05  jblake
-Fixed formatting and validity errors.
-
-Revision 1.1  2002/10/29 22:50:16 jdougan
-Initial revision
-
-2002/10/28
-added footnotes
-corrected typographical error in section 154 does -> dose
-
-2002/10/29
-Inserted frontmatter and primary illustrations
-finished escape sequence replacements (I think)
-added a few instances of the <foreign> tag
-
-//////////////////////////
-
--->
-
 <meta>
  <title>Shadow on the Sand</title>
  <creator class="short">Joe Dever and Gary Chalk</creator>
- <creator class="medium">Joe Dever<br />Illustrated by Gary Chalk</creator>
+ <creator class="medium">
+  <line>Joe Dever</line>
+  <line>Illustrated by Gary Chalk</line>
+ </creator>
  <creator class="long">
   &inclusion.joe.dever.bio.lw;
   &inclusion.gary.chalk.bio.lw;
@@ -94,9 +32,16 @@ added a few instances of the <foreign> tag
  <description class="publication">
   <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
  </description>
- <rights class="copyrights">Text copyright <ch.copy/> 1985 Joe Dever.<br />Illustrations copyright <ch.copy/> 1985 Gary Chalk.</rights>
+ <rights class="copyrights">
+  <line>Text copyright <ch.copy/> 1985 Joe Dever.</line>
+  <line>Illustrations copyright <ch.copy/> 1985 Gary Chalk.</line>
+ </rights>
  <rights class="license-notification">
-  <p>Text copyright <ch.copy/> 1985 Joe Dever.<br />Illustrations copyright <ch.copy/> 1985 Gary Chalk.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+  <p>
+   <line>Text copyright <ch.copy/> 1985 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1985 Gary Chalk.</line>
+   <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+  </p>
  </rights>
 </meta>
 
@@ -122,7 +67,10 @@ added a few instances of the <foreign> tag
 
    <data>
 
-    <p class="dedication">For Robert Alfred Dever (1917<ch.endash/>1965)<br />and William Roland Chalk</p>
+    <p class="dedication">
+     <line>For Robert Alfred Dever (1917<ch.endash/>1965)</line>
+     <line>and William Roland Chalk</line>
+    </p>
 
    </data>
   </section>
@@ -145,17 +93,45 @@ added a few instances of the <foreign> tag
 
       <dl>
        <dt>Transcription</dt>
-        <dd>Julian Egelstaff (mainmatter)<br />Matthew Reynolds (extramatter)</dd>
+        <dd>
+	 <line>Julian Egelstaff (mainmatter)</line>
+	 <line>Matthew Reynolds (extramatter)</line>
+	</dd>
        <dt>Illustration Transcription</dt>
-        <dd>Jonathan Blake<br />Paul Haskell<br/>Simon Osborne</dd>
+        <dd>
+	 <line>Jonathan Blake</line>
+	 <line>Paul Haskell</line>
+	 <line>Simon Osborne</line>
+	</dd>
        <dt>XML</dt>
-        <dd>Jonathan Blake<br />Jeff Dougan<br/>Simon Osborne</dd>
+        <dd>
+	 <line>Jonathan Blake</line>
+	 <line>Jeff Dougan</line>
+	 <line>Simon Osborne</line>
+	</dd>
        <dt>Alternate Illustrations</dt>
-        <dd>JC Alvarez (action charts)<br />Jonathan Blake (extramatter charts and tables)<br />Michael Hahn (map)</dd>
+        <dd>
+	 <line>JC Alvarez (action charts)</line>
+	 <line>Jonathan Blake (extramatter charts and tables)</line>
+	 <line>Michael Hahn (map)</line>
+	</dd>
        <dt>Proofreading</dt>
-        <dd>Julian Egelstaff (sections 1<ch.endash/>400)<br />Matthew Reynolds (front matter)</dd>
+        <dd>
+	 <line>Julian Egelstaff (sections 1<ch.endash/>400)</line>
+	 <line>Matthew Reynolds (front matter)</line>
+	</dd>
        <dt>Editing</dt>
-        <dd>Robert Ekblad<br />Mike Feldman<br />Scott Ferguson<br/>Ingo Kl<ch.ouml/>cker<br />Mark Laird<br />LeRoy McSwain<br/>Simon Osborne<br />Matthew Reynolds<br />Thomas Wolmer</dd>
+        <dd>
+	 <line>Robert Ekblad</line>
+	 <line>Mike Feldman</line>
+	 <line>Scott Ferguson</line>
+	 <line>Ingo Kl<ch.ouml/>cker</line>
+	 <line>Mark Laird</line>
+	 <line>LeRoy McSwain</line>
+	 <line>Simon Osborne</line>
+	 <line>Matthew Reynolds</line>
+	 <line>Thomas Wolmer</line>
+	</dd>
        <dt>Coordination</dt>
         <dd>Jonathan Blake</dd>
        <dt>Special Thanks</dt>
@@ -272,7 +248,7 @@ added a few instances of the <foreign> tag
           <creator>Gary Chalk</creator>
          </meta>
          <instance class="html" src="weapons.gif" width="386" height="278" />
-         <instance class="pdf" src="weapons.gif" width="386" height="278" />
+         <instance class="pdf" src="weapons.pdf" width="386" height="278" />
          <instance class="text" src="none" width="none" height="none" >
           <ul class="unbulleted">
            <li>0 = Dagger</li>
@@ -354,7 +330,7 @@ added a few instances of the <foreign> tag
           <creator>Gary Chalk</creator>
          </meta>
          <instance class="html" src="laumspur.gif" width="156" height="66" />
-         <instance class="pdf" src="laumspur.gif" width="156" height="66" />
+         <instance class="pdf" src="laumspur.pdf" width="156" height="66" />
         </illustration>
        </li>
        <li><p>Sword (Weapons)</p></li>
@@ -366,7 +342,7 @@ added a few instances of the <foreign> tag
           <creator>Gary Chalk</creator>
          </meta>
          <instance class="html" src="food.gif" width="386" height="150" />
-         <instance class="pdf" src="food.gif" width="386" height="150" />
+         <instance class="pdf" src="food.pdf" width="386" height="150" />
         </illustration>
        </li>
        <li><p>Mace (Weapons)</p></li>
@@ -376,8 +352,8 @@ added a few instances of the <foreign> tag
          <meta>
           <creator>Gary Chalk</creator>
          </meta>
-         <instance class="html" src="shield.gif" width="158" height="85" />
-         <instance class="pdf" src="shield.gif" width="158" height="85" />
+         <instance class="html" src="shield.gif" width="386" height="150" />
+         <instance class="pdf" src="shield.pdf" width="386" height="150" />
         </illustration>
        </li>
       </ul>
@@ -551,8 +527,8 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small1.gif" width="209" height="192" />
-       <instance class="pdf" src="small1.pdf" width="209" height="192" />
+       <instance class="html" src="small1.gif" width="386" height="150" />
+       <instance class="pdf" src="small1.pdf" width="386" height="150" />
       </illustration>
 
       <p>It is early afternoon when the ramparts of the desert capital are first sighted on the horizon. You push your way through the cheering crew, and join the envoy at the prow of the ship. Beaming with pride, he hands you a telescope and invites you to view the land of his birth. The site is indeed breathtaking. You stare in fascination at the golden domes, minarets and green-tiled roofs shimmering beneath the desert sun, and marvel at the splendour of the Grand Palace, which dominates this magnificent city. Then you notice that from every golden turret of the palace flutters a long, black pennant. You ask the envoy of the meaning of the black flags. Horror floods across his face as he snatches the telescope from your hands. <quote>By the spirit of the Majhan! He is dead <ch.ellips/> The Zakhan is dead!</quote></p>
@@ -611,7 +587,7 @@ added a few instances of the <foreign> tag
       <combat><enemy>Palace Gaoler</enemy><enemy-attribute class="combatskill">14</enemy-attribute><enemy-attribute class="endurance">21</enemy-attribute></combat>
       <p>Ignore all <typ class="attribute">ENDURANCE</typ> points lost by the enemy in the first round of combat, for you can only attempt to parry his blow.</p>
       <choice idref="sect165">If you win and the fight lasts for 4 rounds of combat or less, <link-text>turn to 165</link-text>.</choice>
-      <choice idref="sect180">If the fight lasts longer than 4 rounds of combat, <link-text>turn to 180</link-text>.<a id="sect4-1" idref="sect4-1-foot" class="footnote" /></choice>
+      <choice idref="sect180">If the fight lasts longer than 4 rounds of combat, <link-text>turn to 180</link-text>.<footref id="sect4-1" idref="sect4-1-foot" /></choice>
      </data>
     </section>
 
@@ -673,7 +649,7 @@ added a few instances of the <foreign> tag
      </footnotes>
 
      <data>
-      <p>The Sharnazim surround you and drag you to your feet. They take your Backpack, your Weapons, your Gold Crowns and all your Special Items.<a id="sect10-1" idref="sect10-1-foot" class="footnote" /> (Make all the necessary adjustments to your <a idref="action">Action Chart</a>.) Your hands are tied with wire, and you are frogmarched back to the plaza. A carriage is waiting. As you are thrown in head first, Maouk climbs aboard and, gloating with triumph, gives the command: <quote>Back to the Grand Palace. The Zakhan awaits his prize.</quote></p>
+      <p>The Sharnazim surround you and drag you to your feet. They take your Backpack, your Weapons, your Gold Crowns and all your Special Items.<footref id="sect10-1" idref="sect10-1-foot" /> (Make all the necessary adjustments to your <a idref="action">Action Chart</a>.) Your hands are tied with wire, and you are frogmarched back to the plaza. A carriage is waiting. As you are thrown in head first, Maouk climbs aboard and, gloating with triumph, gives the command: <quote>Back to the Grand Palace. The Zakhan awaits his prize.</quote></p>
       <p>You struggle to free yourself from the wire that cuts into your wrists, but Maouk is quick to see the danger. He grabs your arm and forces a dart into your skin. As sleep numbs all your senses, the last sound you hear is Maouk<ch.apos/>s wicked laughter.</p>
       <choice idref="sect69"><link-text>Turn to 69</link-text>.</choice>
      </data>
@@ -706,8 +682,8 @@ added a few instances of the <foreign> tag
 	 <line>a deadly salt water scavenger.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill1.gif" width="386" height="659" />
-       <instance class="pdf" src="ill1.pdf" width="386" height="659" />
+       <instance class="html" src="ill1.gif" width="386" height="649" />
+       <instance class="pdf" src="ill1.pdf" width="386" height="649" />
       </illustration>
 
       <choice idref="sect95">If you win the fight, <link-text>turn to 95</link-text>.</choice>
@@ -810,15 +786,15 @@ added a few instances of the <foreign> tag
 	 <line>the hooves of his startled horse.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill2.gif" width="386" height="673" />
-       <instance class="pdf" src="ill2.pdf" width="386" height="673" />
+       <instance class="html" src="ill2.gif" width="386" height="675" />
+       <instance class="pdf" src="ill2.pdf" width="386" height="675" />
       </illustration>
 
       <choice idref="sect142">If you wish to evade combat at any time by jumping into the sea, <link-text>turn to 142</link-text>.</choice>
       <choice idref="sect176">If you wish to evade combat by surrendering, <link-text>turn to 176</link-text>.</choice>
       <choice idref="sect125">If you win the combat in three rounds or less, <link-text>turn to 125</link-text>.</choice>
       <choice idref="sect82">If the fight lasts longer than three rounds, <link-text>turn to 82</link-text>.</choice>
-      <choice idref="sect161">If you lose the combat, <link-text>turn to 161</link-text>.<a id="sect20-1" idref="sect20-1-foot" class="footnote" /></choice>
+      <choice idref="sect161">If you lose the combat, <link-text>turn to 161</link-text>.<footref id="sect20-1" idref="sect20-1-foot" /></choice>
      </data>
     </section>
 
@@ -864,8 +840,8 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small1.gif" width="209" height="192" />
-       <instance class="pdf" src="small1.pdf" width="209" height="192" />
+       <instance class="html" src="small1.gif" width="386" height="150" />
+       <instance class="pdf" src="small1.pdf" width="386" height="150" />
       </illustration>
 
       <choice idref="sect147">If you have the Kai Discipline of Sixth Sense, <link-text>turn to 147</link-text>.</choice>
@@ -909,8 +885,8 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small4.gif" width="320" height="105" />
-       <instance class="pdf" src="small4.pdf" width="320" height="105" />
+       <instance class="html" src="small4.gif" width="386" height="150" />
+       <instance class="pdf" src="small4.pdf" width="386" height="150" />
       </illustration>
 
       <p>As you leave, she offers a word of advice. <quote>The guards at the north gate of the Grand Palace can be bribed.</quote> You thank her and enter the alley running along the side of her shop.</p>
@@ -961,7 +937,7 @@ added a few instances of the <foreign> tag
      <data>
       <p>As you start to climb, two Sharnazim warriors suddenly emerge from the insect-choked tunnel. They lunge at you, their hands outstretched, their fingers hooked to claw at your legs and drag you down. You kick out and strike one of the cruel-faced men beneath the jaw. He clutches at his throat and gives a gurgling cry as he falls backwards into the slimy water.</p>
       <p>You reach the stone trapdoor, but the other warrior has unsheathed his scimitar and has begun to climb the ladder; he no longer intends to capture you alive. Pressing your shoulder to the cobwebbed trapdoor, you push up the heavy stone and scramble out to find yourself in a noisy alley, crowded with people and market stalls. The sewer hole itself is close to a wicker table stacked high with bundles of torches.</p>
-      <choice idref="sect143">If you possess a Kalte Firesphere or a Tinderbox, <link-text>turn to 143</link-text>.<a id="sect31-1" idref="sect31-1-foot" class="footnote" /></choice>
+      <choice idref="sect143">If you possess a Kalte Firesphere or a Tinderbox, <link-text>turn to 143</link-text>.<footref id="sect31-1" idref="sect31-1-foot" /></choice>
       <choice idref="sect183">If you do not have either of these Items, <link-text>turn to 183</link-text>.</choice>
      </data>
     </section>
@@ -1008,7 +984,7 @@ added a few instances of the <foreign> tag
 
      <data>
       <p>The great snake shudders and convulses in the throes of death. The smell of its thick brown blood is disgusting, and you have to hold your breath and grit your teeth as you lift the dead Yas away from the chest and peer inside.</p>
-      <p>You discover six silver-handled maces, each beautifully carved and encrusted with rubies, emeralds and pearls. In the Northlands these weapons would fetch thousands of Crowns. At the bottom of the chest, you also discover a small Copper Key. If you wish to take either a Jewelled Mace or the Copper Key, or both, mark them on your <a idref="action">Action Chart</a> as Special Items.<a id="sect35-1" idref="sect35-1-foot" class="footnote" /> You carry the Copper Key in the pocket of your tunic and the Jewelled Mace tucked into your belt.</p>
+      <p>You discover six silver-handled maces, each beautifully carved and encrusted with rubies, emeralds and pearls. In the Northlands these weapons would fetch thousands of Crowns. At the bottom of the chest, you also discover a small Copper Key. If you wish to take either a Jewelled Mace or the Copper Key, or both, mark them on your <footref idref="action">Action Chart</a> as Special Items.<a id="sect35-1" idref="sect35-1-foot" /> You carry the Copper Key in the pocket of your tunic and the Jewelled Mace tucked into your belt.</p>
       <p>The acidic smell of the snake blood is beginning to make you retch. Quickly, you climb the stone steps and leave the armoury by the north door.</p>
       <choice idref="sect14"><link-text>Turn to 14</link-text>.</choice>
      </data>
@@ -1101,8 +1077,8 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small7.gif" width="254" height="106" />
-       <instance class="pdf" src="small7.pdf" width="254" height="106" />
+       <instance class="html" src="small7.gif" width="386" height="150" />
+       <instance class="pdf" src="small7.pdf" width="386" height="150" />
       </illustration>
 
       <p>At the end of the corridor lies a hall full of weapons. Racks of spears and swords line the chamber walls, and a massive workbench covers the floor. It is the palace armoury. In the midst of the tools which litter the workbench, there is a large, black, leather-bound book.</p>
@@ -1232,8 +1208,8 @@ added a few instances of the <foreign> tag
 	 <line>the head of the Vassagonian envoy.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill3.gif" width="386" height="636" />
-       <instance class="pdf" src="ill3.pdf" width="386" height="636" />
+       <instance class="html" src="ill3.gif" width="386" height="626" />
+       <instance class="pdf" src="ill3.pdf" width="386" height="626" />
       </illustration>
 
       <p>Impaled upon the sharp iron pole is the head of the Vassagonian envoy. To either side are the heads of all the galley crew. On each of their foreheads is freshly branded one word<ch.emdash/>TRAITOR. Fear wells up inside you; turning your face away from the sightless eyes, you run into the crowded streets of the Mikarum, the district where the spice and herb merchants live.</p>
@@ -1267,14 +1243,14 @@ added a few instances of the <foreign> tag
      </footnotes>
 
      <data>
-      <p>A search of the baskets crowding the little boat uncovers a beautifully hand-tooled leather case. You flick open the brass catch and discover that the case contains a Jakan<ch.emdash/>a hunting bow used by the coastal fishermen of Vassagonia.<a id="sect56-1" idref="sect56-1-foot" class="footnote" /> You are elated by your find but disappointed to discover that the case contains only one arrow.</p>
+      <p>A search of the baskets crowding the little boat uncovers a beautifully hand-tooled leather case. You flick open the brass catch and discover that the case contains a Jakan<ch.emdash/>a hunting bow used by the coastal fishermen of Vassagonia.<footref id="sect56-1" idref="sect56-1-foot" /> You are elated by your find but disappointed to discover that the case contains only one arrow.</p>
 
       <illustration class="inline">
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small11.gif" width="319" height="139" />
-       <instance class="pdf" src="small11.pdf" width="319" height="139" />
+       <instance class="html" src="small11.gif" width="386" height="150" />
+       <instance class="pdf" src="small11.pdf" width="386" height="150" />
       </illustration>
 
       <p>Across the harbour square, close to Maouk<ch.apos/>s carriage, you notice a small, white-walled shop where a row of green glass flagons line a balcony on the first floor. You draw the bowstring to your lips and take careful aim; it is a difficult shot, and you have only one chance.</p>
@@ -1307,7 +1283,7 @@ added a few instances of the <foreign> tag
 
      <data>
       <p>You follow a straight passage of pale, rose-coloured stone, which soon ends at an empty vestibule. In its north wall is set a great wooden door, covered with engraved bronze plaques and studded with bronze nails. There is a curious lock set into the middle of this door, encircled by a beautiful carving of a long-tailed scorpion. A closer look at the lock reveals a series of Vassagonian numerals, numbered 1 to 200, engraved in the lock. You recognize the design: it is a Cloeasian combination lock.</p>
-      <p>If you know the correct number that will open the bronze door, turn to that section number.<a id="sect58-1" idref="sect58-1-foot" class="footnote" /></p>
+      <p>If you know the correct number that will open the bronze door, turn to that section number.<footref id="sect58-1" idref="sect58-1-foot" /></p>
       <choice idref="sect156">If you do not know the number that will open the door, <link-text>turn to 156</link-text>.</choice>
      </data>
     </section>
@@ -1377,8 +1353,8 @@ added a few instances of the <foreign> tag
 	 <line>from out of the dark.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill4.gif" width="386" height="667" />
-       <instance class="pdf" src="ill4.pdf" width="386" height="667" />
+       <instance class="html" src="ill4.gif" width="386" height="653" />
+       <instance class="pdf" src="ill4.pdf" width="386" height="653" />
       </illustration>
 
       <choice idref="sect177">If you win the combat, <link-text>turn to 177</link-text>.</choice>
@@ -1415,7 +1391,7 @@ added a few instances of the <foreign> tag
      </footnotes>
 
      <data>
-      <p>You hear a faint click followed by a soft whirring sound; the bronze door slides open. As you hurry through, the door clicks shut behind your back, as softly as it had opened.<a id="sect67-1" idref="sect67-1-foot" class="footnote" /></p>
+      <p>You hear a faint click followed by a soft whirring sound; the bronze door slides open. As you hurry through, the door clicks shut behind your back, as softly as it had opened.<footref id="sect67-1" idref="sect67-1-foot" /></p>
       <p>Instinct tells you that you have entered the chambers of the upper palace, the sumptuous private enclave of the Zakhan. You walk upon glistening tiles of opal and platinum, past sculptures and statues of pure gold. The door of solid amethyst ahead seems plain in comparison to the breathtaking splendour of this private world. Beyond the door lies another unique and startlingly beautiful world: the arboretum. A circular, cathedral-like arena spreads out below you, the green velvet canopy alive with the sound of bird song. Trees of every colour, shape and size flourish in the deep, dark soil of the floor. The Zakhan<ch.apos/>s arboretum houses a specimen of every tree that grows in Magnamund, and many species that are now extinct. As you walk the wrought iron balcony which encircles the arboretum, you recognize the leaves of a Sommlending oak. You feel a sudden wave of homesickness, but it does not make you despair; rather it renews your determination to escape from this hostile, sun-bleached land.</p>
       <p>At one of the exits from the arboretum, you discover a Quarterstaff propped against the wall. (If you wish to take this, remember to mark it on your <a idref="action">Action Chart</a>.) The desire to escape urges you on as you leave the arboretum and hurry through a network of lavish corridors and empty, deserted vestibules. You reach a landing where a broad staircase descends to a massive room that occupies most of the lower palace.</p>
       <p>From the top of the staircase, hidden by the shadow of a pilaster, you stare down on a sight that freezes your blood with terror.</p>
@@ -1448,7 +1424,7 @@ added a few instances of the <foreign> tag
      </footnotes>
 
      <data>
-      <p>You wake up in great discomfort;<a id="sect69-1" idref="sect69-1-foot" class="footnote" /> every muscle of your body feels knotted and bruised. You force open eyelids clogged with dried sweat, and look with dread at your wretched surroundings. You are lying on the hard stone floor of a prison cell. Over by the far wall, beneath a window criss-crossed with iron bars, is a low wooden bunk covered in filthy rags. Cockroaches, some the size of field mice, scuttle along a foul-smelling gutter that disappears into a grating in the floor.</p>
+      <p>You wake up in great discomfort;<footref id="sect69-1" idref="sect69-1-foot" /> every muscle of your body feels knotted and bruised. You force open eyelids clogged with dried sweat, and look with dread at your wretched surroundings. You are lying on the hard stone floor of a prison cell. Over by the far wall, beneath a window criss-crossed with iron bars, is a low wooden bunk covered in filthy rags. Cockroaches, some the size of field mice, scuttle along a foul-smelling gutter that disappears into a grating in the floor.</p>
       <p>You discover that your hands are free and slowly pull yourself upright into a sitting position, resting your back against the cell door. A faint draught from the corridor outside provides the only relief from the stifling heat and bad air of the cell. In the distance you can hear footsteps approaching. Then there is a jangle of keys and the creak of hinges. A door closes with a dull thud. More footsteps; they are getting louder. They come to halt outside the cell door and a loud voice bellows out: <quote>Sleeping on duty, Sefrou? You<ch.apos/>ll wake up on the other side of this door if the captain catches you!</quote></p>
       <p>The chair scrapes along the ground, and a startled voice, full of indignation, replies: <quote>Curse you, Hadj! The Zakhan doesn<ch.apos/>t want the Northlander taken to the Grand Hall until sunset. You<ch.apos/>ve cheated me of two hours sleep.</quote></p>
       <p><quote>Shut up, Sefrou,</quote> snarls the first voice, <quote>and listen hard. I<ch.apos/>ve just come from the armoury. Some interesting trinkets were found on the Northlander, worth a great deal of gold I<ch.apos/>d say. Seems a pity to let them go to waste, eh?</quote></p>
@@ -1602,8 +1578,8 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small6.gif" width="334" height="128" />
-       <instance class="pdf" src="small6.pdf" width="334" height="128" />
+       <instance class="html" src="small6.gif" width="386" height="150" />
+       <instance class="pdf" src="small6.pdf" width="386" height="150" />
       </illustration>
 
       <p>You are about to discard the log when you notice a folded piece of parchment tucked into the spine. It is a list of dates and numbers with a heading in bold print: <quote><strong>The Bronze Door</strong></quote>. You scan the page and locate today<ch.apos/>s date. The number listed next to it is <quote>67</quote>. Make a note of this number in the margin of your <a idref="action">Action Chart</a><ch.emdash/>it could be of use at a later stage of your adventure.</p>
@@ -1668,8 +1644,8 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small9.gif" width="176" height="146" />
-       <instance class="pdf" src="small9.pdf" width="176" height="146" />
+       <instance class="html" src="small9.gif" width="386" height="150" />
+       <instance class="pdf" src="small9.pdf" width="386" height="150" />
       </illustration>
 
       <p>You turn and run, splashing through the shallow drainage channel running the length of the foul passage.</p>
@@ -1701,8 +1677,8 @@ added a few instances of the <foreign> tag
 	 <line>in  the far wall, reading a scroll.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill5.gif" width="386" height="633" />
-       <instance class="pdf" src="ill5.pdf" width="386" height="633" />
+       <instance class="html" src="ill5.gif" width="386" height="626" />
+       <instance class="pdf" src="ill5.pdf" width="386" height="626" />
       </illustration>
 
       <p><quote>By the Majhan!</quote> he cries. <quote>You smell worse than a Baknar!</quote> He hurls a towel at you and points to the door. <quote>Take my advice,</quote> he whines, his fingers pinching shut his nostrils. <quote>Don<ch.apos/>t get undressed<ch.emdash/>your clothes need the bath as much as you.</quote></p>
@@ -1729,7 +1705,7 @@ added a few instances of the <foreign> tag
       <combat><enemy>Palace Gaoler</enemy><enemy-attribute class="combatskill">14</enemy-attribute><enemy-attribute class="endurance">21</enemy-attribute></combat>
       <p>You must deduct 4 points from your <typ class="attribute">COMBAT SKILL</typ> for the duration of this combat, as you are without a weapon.</p>
       <choice idref="sect65">If you win and the fight lasts 4 rounds of combat or less, <link-text>turn to 65</link-text>.</choice>
-      <choice idref="sect180">If the fight lasts longer than 4 rounds of combat, <link-text>turn to 180</link-text>.<a id="sect91-1" idref="sect91-1-foot" class="footnote" /></choice>
+      <choice idref="sect180">If the fight lasts longer than 4 rounds of combat, <link-text>turn to 180</link-text>.<footref id="sect91-1" idref="sect91-1-foot" /></choice>
      </data>
     </section>
 
@@ -1813,8 +1789,8 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small5.gif" width="310" height="95" />
-       <instance class="pdf" src="small5.pdf" width="310" height="95" />
+       <instance class="html" src="small5.gif" width="386" height="127" />
+       <instance class="pdf" src="small5.pdf" width="386" height="127" />
       </illustration>
 
       <choice idref="sect36">If you wish to fight, <link-text>turn to 36</link-text>.</choice>
@@ -1916,8 +1892,8 @@ added a few instances of the <foreign> tag
 	 <line>before you have a chance to stand up.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill6.gif" width="386" height="663" />
-       <instance class="pdf" src="ill6.pdf" width="386" height="663" />
+       <instance class="html" src="ill6.gif" width="386" height="655" />
+       <instance class="pdf" src="ill6.pdf" width="386" height="655" />
       </illustration>
 
       <choice idref="sect189">If you win the combat, <link-text>turn to 189</link-text>.</choice>
@@ -2083,8 +2059,8 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small2.gif" width="208" height="189" />
-       <instance class="pdf" src="small2.pdf" width="208" height="189" />
+       <instance class="html" src="small2.gif" width="386" height="117" />
+       <instance class="pdf" src="small2.pdf" width="386" height="117" />
       </illustration>
 
       <choice idref="sect60">If you wish to attack the warriors, <link-text>turn to 60</link-text>.</choice>
@@ -2120,8 +2096,8 @@ added a few instances of the <foreign> tag
 	 <line>others aside and attacks.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill7.gif" width="386" height="676" />
-       <instance class="pdf" src="ill7.pdf" width="386" height="676" />
+       <instance class="html" src="ill7.gif" width="386" height="673" />
+       <instance class="pdf" src="ill7.pdf" width="386" height="673" />
       </illustration>
 
       <choice idref="sect51">You can evade the combat at any stage by escaping through the trapdoor. <link-text>Turn to 51</link-text>.</choice>
@@ -2275,12 +2251,12 @@ added a few instances of the <foreign> tag
 	 <line>his face covered by a pad of herbs.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill8.gif" width="386" height="664" />
-       <instance class="pdf" src="ill8.pdf" width="386" height="664" />
+       <instance class="html" src="ill8.gif" width="386" height="650" />
+       <instance class="pdf" src="ill8.pdf" width="386" height="650" />
       </illustration>
 
       <choice idref="sect161">If you lose this combat, <link-text>turn to 161</link-text>.</choice>
-      <choice idref="sect130">If you win the combat, <link-text>turn to 130</link-text>.<a id="sect135-1" idref="sect135-1-foot" class="footnote" /></choice>
+      <choice idref="sect130">If you win the combat, <link-text>turn to 130</link-text>.<footref id="sect135-1" idref="sect135-1-foot" /></choice>
      </data>
     </section>
 
@@ -2337,8 +2313,8 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small7.gif" width="254" height="106" />
-       <instance class="pdf" src="small7.pdf" width="254" height="106" />
+       <instance class="html" src="small7.gif" width="386" height="150" />
+       <instance class="pdf" src="small7.pdf" width="386" height="150" />
       </illustration>
 
       <p>Inside, at the end of a long aisle, is a workbench, littered with spearheads, sword hilts and all manner of armourer<ch.apos/>s tools. In the midst of this tangled mess is a large, black, leather-bound book.</p>
@@ -2385,8 +2361,8 @@ added a few instances of the <foreign> tag
 	 <line>the deluge of burning filth.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill9.gif" width="386" height="624" />
-       <instance class="pdf" src="ill9.pdf" width="386" height="624" />
+       <instance class="html" src="ill9.gif" width="386" height="619" />
+       <instance class="pdf" src="ill9.pdf" width="386" height="619" />
       </illustration>
 
       <p>You run with the crowd through the sewage-stained alleys until you reach a busy market square, unpolluted by the blast. Your eye is caught by a sign hanging above the side door of a large hall:</p>
@@ -2458,8 +2434,8 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small6.gif" width="334" height="128" />
-       <instance class="pdf" src="small6.pdf" width="334" height="128" />
+       <instance class="html" src="small6.gif" width="386" height="150" />
+       <instance class="pdf" src="small6.pdf" width="386" height="150" />
       </illustration>
 
       <choice idref="sect57">If you wish to investigate the east door, <link-text>turn to 57</link-text>.</choice>
@@ -2530,8 +2506,8 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small4.gif" width="320" height="105" />
-       <instance class="pdf" src="small4.pdf" width="320" height="105" />
+       <instance class="html" src="small4.gif" width="386" height="150" />
+       <instance class="pdf" src="small4.pdf" width="386" height="150" />
       </illustration>
 
       <p><quote>Welcome, Northlander. I sense you are a warrior<ch.emdash/>or am I mistaken?</quote> As you hesitate to answer, she shrugs her shoulders and searches through a pile of parchments stacked on top of a wine casket. She blows away the dust before handing you a yellowed sheet. It is a list of merchandise, written in Sommlending:</p>
@@ -2543,7 +2519,7 @@ added a few instances of the <foreign> tag
        <li>Tincture of Graveweed (causes sickness and loss of 2 <typ class="attribute">ENDURANCE</typ> points per dose)<ch.emdash/>1 Gold Crown</li>
        <li>Tincture of Calacena (causes terrifying hallucinations for 1-2 hours per dose)<ch.emdash/>2 Gold Crowns</li>
       </ul>
-      <p>You may purchase any of the above;<a id="sect154-1" idref="sect154-1-foot" class="footnote" /> all potions, vials and tinctures are Backpack Items. You then leave the shop and continue along the street.</p>
+      <p>You may purchase any of the above;<footref id="sect154-1" idref="sect154-1-foot" /> all potions, vials and tinctures are Backpack Items. You then leave the shop and continue along the street.</p>
       <choice idref="sect179"><link-text>Turn to 179</link-text>.</choice>
      </data>
     </section>
@@ -2642,8 +2618,8 @@ added a few instances of the <foreign> tag
 	 <line>something crawls up your forearm.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill10.gif" width="386" height="567" />
-       <instance class="pdf" src="ill10.pdf" width="386" height="567" />
+       <instance class="html" src="ill10.gif" width="386" height="559" />
+       <instance class="pdf" src="ill10.pdf" width="386" height="559" />
       </illustration>
 
       <choice idref="sect114">If you are still alive after climbing past the nest, or if you fight the Steamspiders and win, <link-text>turn to 114</link-text>.</choice>
@@ -2718,7 +2694,7 @@ added a few instances of the <foreign> tag
       <p>With a tiger-like bound you are among the startled guards. The blowpipe firer raises his weapon, but a well-aimed kick to the forehead counters his move. He somersaults backwards, cracking his head against the wall with a sickening thud. A trident flashes towards your ribs; you sidestep and grab the haft with your free hand, pulling the guard off balance. He stumbles forward and falls flat on his face. You turn just in time to face the third guard<ch.emdash/>his trident is poised to stab you.</p>
       <combat><enemy>Vestibule Guard</enemy><enemy-attribute class="combatskill">15</enemy-attribute><enemy-attribute class="endurance">23</enemy-attribute></combat>
       <choice idref="sect101">If you win the combat and the fight lasts 3 rounds or less, <link-text>turn to 101</link-text>.</choice>
-      <choice idref="sect46">If the fight lasts longer than 3 rounds, <link-text>turn to 46</link-text>.<a id="sect168-1" idref="sect168-1-foot" class="footnote" /></choice>
+      <choice idref="sect46">If the fight lasts longer than 3 rounds, <link-text>turn to 46</link-text>.<footref id="sect168-1" idref="sect168-1-foot" /></choice>
      </data>
     </section>
 
@@ -2805,7 +2781,7 @@ added a few instances of the <foreign> tag
      </footnotes>
 
      <data>
-      <p>You are stripped of your Backpack, your Weapons, your Gold and all of your Special Items.<a id="sect176-1" idref="sect176-1-foot" class="footnote" /> Your hands are tied behind your back and you are pushed head first into the waiting carriage. <quote>Back to the palace!</quote> commands Maouk as he climbs aboard and slams the door. <quote>The Zakhan awaits his prize.</quote></p>
+      <p>You are stripped of your Backpack, your Weapons, your Gold and all of your Special Items.<footref id="sect176-1" idref="sect176-1-foot" /> Your hands are tied behind your back and you are pushed head first into the waiting carriage. <quote>Back to the palace!</quote> commands Maouk as he climbs aboard and slams the door. <quote>The Zakhan awaits his prize.</quote></p>
       <p>You fight to free the cords that bind you, but Maouk is quick to see the danger. He grabs your arm and forces a dart into your skin. As sleep engulfs your senses, you hear Maouk<ch.apos/>s wicked laughter fading into the silence.</p>
       <p>Make a necessary adjustments to your <a idref="action">Action Chart</a>, and list all the items that you have had confiscated on a separate piece of paper, for reference in case you should discover them later in your adventure.</p>
       <choice idref="sect69"><link-text>Turn to 69</link-text>.</choice>
@@ -2826,8 +2802,8 @@ added a few instances of the <foreign> tag
 	 <line>sewer, naked to the waist.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill11.gif" width="386" height="628" />
-       <instance class="pdf" src="ill11.pdf" width="386" height="628" />
+       <instance class="html" src="ill11.gif" width="386" height="623" />
+       <instance class="pdf" src="ill11.pdf" width="386" height="623" />
       </illustration>
 
       <choice idref="sect60">If you wish to attack the Sharnazim, <link-text>turn to 60</link-text>.</choice>
@@ -2976,8 +2952,8 @@ added a few instances of the <foreign> tag
 	 <line>hammer and strides forward.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill12.gif" width="386" height="644" />
-       <instance class="pdf" src="ill12.pdf" width="386" height="644" />
+       <instance class="html" src="ill12.gif" width="386" height="635" />
+       <instance class="pdf" src="ill12.pdf" width="386" height="635" />
       </illustration>
 
       <p>The armourer bellows a war-cry and you react just in time. The hammer tears a chunk of stone from the wall, less than an inch above your scalp.</p>
@@ -3178,8 +3154,8 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small6.gif" width="334" height="128" />
-       <instance class="pdf" src="small6.pdf" width="334" height="128" />
+       <instance class="html" src="small6.gif" width="386" height="150" />
+       <instance class="pdf" src="small6.pdf" width="386" height="150" />
       </illustration>
 
       <choice idref="sect331"><link-text>Turn to 331</link-text>.</choice>
@@ -3296,8 +3272,8 @@ added a few instances of the <foreign> tag
 	 <line>crowd to fever pitch.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill13.gif" width="386" height="645" />
-       <instance class="pdf" src="ill13.pdf" width="386" height="645" />
+       <instance class="html" src="ill13.gif" width="386" height="637" />
+       <instance class="pdf" src="ill13.pdf" width="386" height="637" />
       </illustration>
 
       <choice idref="sect284">If you want to try to reason with the crowd of screaming fanatics that are now running towards you with their swords drawn, <link-text>turn to 284</link-text>.</choice>
@@ -3356,7 +3332,7 @@ added a few instances of the <foreign> tag
 
      <data>
       <p>Emerging from a bank of cloud on the skyline is a flying ship. It is a small craft, no bigger than an Unoram river barge, with two triangular sails swept back either side of its curving prow. In the fading twilight you can make out a long pennant that flutters from its mast. A faint humming reaches your ears. Your first reaction is disbelief; what you are seeing must be a trick of the light or some fiendish illusion created by the Darklords. However as the ship floats nearer, your senses tell you that it is indeed quite real.</p>
-      <choice idref="sect336">If you possess a Crystal Star Pendant, <link-text>turn to 336</link-text>.<a id="sect221-1" idref="sect221-1-foot" class="footnote" /></choice>
+      <choice idref="sect336">If you possess a Crystal Star Pendant, <link-text>turn to 336</link-text>.<footref id="sect221-1" idref="sect221-1-foot" /></choice>
       <choice idref="sect275">If you do not have this Special Item, <link-text>turn to 275</link-text>.</choice>
      </data>
     </section>
@@ -3385,8 +3361,8 @@ added a few instances of the <foreign> tag
 	 <line>A deadly flood of horror hurtles from his hand.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill14.gif" width="386" height="609" />
-       <instance class="pdf" src="ill14.pdf" width="386" height="609" />
+       <instance class="html" src="ill14.gif" width="386" height="602" />
+       <instance class="pdf" src="ill14.pdf" width="386" height="602" />
       </illustration>
 
       <combat><enemy>Crypt Spawn</enemy><enemy-attribute class="combatskill">24</enemy-attribute><enemy-attribute class="endurance">40</enemy-attribute></combat>
@@ -3572,7 +3548,7 @@ added a few instances of the <foreign> tag
 
      <data>
       <p>If you are to get inside the tomb, you must either distract or silence the Drakkar sentry.</p>
-      <choice idref="sect260">If you possess a Tincture of Graveweed, <link-text>turn to 260</link-text>.<a id="sect239-1" idref="sect239-1-foot" class="footnote" /></choice>
+      <choice idref="sect260">If you possess a Tincture of Graveweed, <link-text>turn to 260</link-text>.<footref id="sect239-1" idref="sect239-1-foot" /></choice>
       <p>If you do not possess this item, you will have to creep up and overpower him as quickly and silently as you can. Pick a number from the <a idref="random">Random Number Table</a>. If you possess the Kai Disciplines of Hunting, Tracking and Camouflage, add 2 to the number you have picked. If you have reached the Kai rank of Guardian, add 3 to the number.</p>
       <choice idref="sect324">If your total is now 0<ch.endash/>4, <link-text>turn to 324</link-text>.</choice>
       <choice idref="sect303">If it is 5 or more, <link-text>turn to 303</link-text>.</choice>
@@ -3600,8 +3576,8 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small8.gif" width="329" height="122" />
-       <instance class="pdf" src="small8.pdf" width="329" height="122" />
+       <instance class="html" src="small8.gif" width="386" height="142" />
+       <instance class="pdf" src="small8.pdf" width="386" height="142" />
       </illustration>
 
       <choice idref="sect365">If you have the Kai Discipline of Sixth Sense, <link-text>turn to 365</link-text>.</choice>
@@ -3678,8 +3654,8 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small10.gif" width="273" height="190" />
-       <instance class="pdf" src="small10.pdf" width="273" height="190" />
+       <instance class="html" src="small10.gif" width="386" height="150" />
+       <instance class="pdf" src="small10.pdf" width="386" height="150" />
       </illustration>
 
       <p><quote>Ikaresh,</quote> says Banedon pensively. <quote><quote>The Eagle<ch.apos/>s Lair</quote>. That is where we will find Tipasa the Wanderer. It is the place of his birth and the home of his family. He roams the Dry Main, but he always returns to Ikaresh.</quote></p>
@@ -3761,8 +3737,8 @@ added a few instances of the <foreign> tag
 	 <line>serpent-like monster.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill15.gif" width="386" height="613" />
-       <instance class="pdf" src="ill15.pdf" width="386" height="613" />
+       <instance class="html" src="ill15.gif" width="386" height="610" />
+       <instance class="pdf" src="ill15.pdf" width="386" height="610" />
       </illustration>
 
       <choice idref="sect335">If you win the combat, <link-text>turn to 335</link-text>.</choice>
@@ -3884,8 +3860,8 @@ added a few instances of the <foreign> tag
 	 <line>mount<ch.apos/>s feathered flesh.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill16.gif" width="386" height="617" />
-       <instance class="pdf" src="ill16.pdf" width="386" height="617" />
+       <instance class="html" src="ill16.gif" width="386" height="610" />
+       <instance class="pdf" src="ill16.pdf" width="386" height="610" />
       </illustration>
 
       <choice idref="sect315">If you possess the Sommerswerd, <link-text>turn to 315</link-text>.</choice>
@@ -4055,8 +4031,8 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small1.gif" width="209" height="192" />
-       <instance class="pdf" src="small1.pdf" width="209" height="192" />
+       <instance class="html" src="small1.gif" width="386" height="150" />
+       <instance class="pdf" src="small1.pdf" width="386" height="150" />
       </illustration>
 
       <choice idref="sect396">If you wish to descend to the bridge and enter the marble tower, <link-text>turn to 396</link-text>.</choice>
@@ -4134,8 +4110,8 @@ added a few instances of the <foreign> tag
 	 <line>In a flash of light the Drakkar is gone.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill17.gif" width="386" height="670" />
-       <instance class="pdf" src="ill17.pdf" width="386" height="670" />
+       <instance class="html" src="ill17.gif" width="386" height="662" />
+       <instance class="pdf" src="ill17.pdf" width="386" height="662" />
       </illustration>
 
       <p>At the end of the balcony is another arch and a staircase.</p>
@@ -4177,7 +4153,7 @@ added a few instances of the <foreign> tag
 
      <data>
       <p>The Drakkar curses you with his dying breath, his cry fading as he falls from the platform. You rush to aid your wounded countryman, but the battle is not yet over. A Kraan-rider is swooping towards you, a crossbow levelled at your head; he fires and the bolt shoots towards your face. Then a shrill, metallic whine rings in your ears as the bolt miraculously ricochets away, deflected by an invisible shield.</p>
-      <choice idref="sect399">If you possess a Crystal Star Pendant, <link-text>turn to 399</link-text>.<a id="sect288-1" idref="sect288-1-foot" class="footnote" /></choice>
+      <choice idref="sect399">If you possess a Crystal Star Pendant, <link-text>turn to 399</link-text>.<footref id="sect288-1" idref="sect288-1-foot" /></choice>
       <choice idref="sect294">If you do not have this Special Item, <link-text>turn to 294</link-text>.</choice>
      </data>
     </section>
@@ -4380,8 +4356,8 @@ added a few instances of the <foreign> tag
 	 <line>to the fighting dwarves.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill18.gif" width="386" height="645" />
-       <instance class="pdf" src="ill18.pdf" width="386" height="645" />
+       <instance class="html" src="ill18.gif" width="386" height="640" />
+       <instance class="pdf" src="ill18.pdf" width="386" height="640" />
       </illustration>
 
       <p><quote>Pirate roll!</quote> he shouts to his fighting dwarves, and jerks the helm to the left. The <cite>Skyrider</cite> responds to his touch, swerving violently as the deck swings from a horizontal to a near-vertical angle. The dwarves heed his cry and throw themselves to the deck, clutching the boards like limpets to a galleon<ch.apos/>s keel.</p>
@@ -4551,14 +4527,14 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small3.gif" width="304" height="178" />
-       <instance class="pdf" src="small3.pdf" width="304" height="178" />
+       <instance class="html" src="small3.gif" width="386" height="150" />
+       <instance class="pdf" src="small3.pdf" width="386" height="150" />
       </illustration>
 
       <p>You and Banedon set off before the dawn, anxious not to waste either time or the protective cover of darkness. Now, as the great golden disc of the sun rises in the sky, for the first time you can see your goal. A massive excavation has exposed the heart of this scorched land, delving deep around the tombs of its forgotten ancestors. Thousands of Giaks, spiteful and malicious servants of the Darklords, labour unceasingly to remove rock and sand from this quarry, forced by Drakkarim to drag their backbreaking loads up ramps to the rim of the crater.</p>
       <p>Close to the edge of the crater, an encampment of black tents surrounds a large domed canopy. Lying in the shade of this construction is a huge flying creature<ch.emdash/>an Imperial Zlanbeast. Its presence here can only mean one thing: Darklord Haakon has arrived. The thought chills your blood, but you draw comfort from the labour of his slaves. That they continue to labour is a sign that their mission has yet to be completed: the <cite>Book of the Magnakai</cite> has yet to be found.</p>
       <p>It is impossible to approach the crater unseen; you will have to wait for darkness before you attempt to enter the Tomb. During the long wait, it is agreed that Banedon should attempt to find Tipasa. It is likely that he is being held captive inside the encampment<ch.emdash/>the Darklords would be unlikely to kill him before discovering the treasure they seek.</p>
-      <p>During the day, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points. Make the necessary adjustments to your <a idref="action">Action Chart</a>.<a id="sect320-1" idref="sect320-1-foot" class="footnote" /></p>
+      <p>During the day, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points. Make the necessary adjustments to your <footref idref="action">Action Chart</a>.<a id="sect320-1" idref="sect320-1-foot" /></p>
       <choice idref="sect286"><link-text>Turn to 286</link-text>.</choice>
      </data>
     </section>
@@ -4598,8 +4574,8 @@ added a few instances of the <foreign> tag
 	 <line>face of a dwarf at the cabin window.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill19.gif" width="386" height="661" />
-       <instance class="pdf" src="ill19.pdf" width="386" height="661" />
+       <instance class="html" src="ill19.gif" width="386" height="659" />
+       <instance class="pdf" src="ill19.pdf" width="386" height="659" />
       </illustration>
 
       <p>The smoke clears to reveal the grinning face of a dwarf at the cabin window. A smear of soot blackens his rosy cheeks and exaggerates the whiteness of his crooked teeth. He is holding a tube of smoking steel that you assume to be a magic staff, until you notice that each of the dwarf crew carry identical staves. As they point them at the swooping Kraan, gouts of smoke and flame bellow from their tips. Suddenly you recognize the weapons and their wielders<ch.emdash/>they are dwarves from the mountain kingdom of Bor, armed with one of the inventions for which these ingenious artisans are justly famous throughout Magnamund.</p>
@@ -4705,7 +4681,7 @@ added a few instances of the <foreign> tag
       <p>As you peer at the pages of Tipasa<ch.apos/>s diary, suddenly you realize that they are written in code. What Banedon had assumed to be positions of stars is a code to three numbers that give the precise location of the Tomb.</p>
       <p>Consult the <a idref="map">map</a> to help you discover the location of the Tomb of the Majhan.</p>
       <p>The first of the three numbers is equal to the number of oases on the trail between Ikaresh and Bir Rabalou. The second number is equal to the number of cities in Vassagonia. The third number is equal to the number of islands off the coast of Cape Kabar.</p>
-      <p>When you have broken the code, write the numbers in order and turn to the entry number that they indicate.<a id="sect331-1" idref="sect331-1-foot" class="footnote" /></p>
+      <p>When you have broken the code, write the numbers in order and turn to the entry number that they indicate.<footref id="sect331-1" idref="sect331-1-foot" /></p>
      </data>
     </section>
 
@@ -4775,8 +4751,8 @@ added a few instances of the <foreign> tag
        <meta>
         <creator>Gary Chalk</creator>
        </meta>
-       <instance class="html" src="small8.gif" width="329" height="122" />
-       <instance class="pdf" src="small8.pdf" width="329" height="122" />
+       <instance class="html" src="small8.gif" width="386" height="142" />
+       <instance class="pdf" src="small8.pdf" width="386" height="142" />
       </illustration>
 
       <choice idref="sect365">If you have the Kai Discipline of Sixth Sense, <link-text>turn to 365</link-text>.</choice>
@@ -4854,8 +4830,8 @@ added a few instances of the <foreign> tag
 	 <line>from the landing platform.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill20.gif" width="386" height="695" />
-       <instance class="pdf" src="ill20.pdf" width="386" height="695" />
+       <instance class="html" src="ill20.gif" width="386" height="694" />
+       <instance class="pdf" src="ill20.pdf" width="386" height="694" />
       </illustration>
 
       <p>The golden domes of the Grand Palace grow smaller as the Itikar gathers speed. Soon, you have passed over the city wall and are heading out towards the shimmering salt-flats of Lake Inrahim. The land below is bathed in beautiful orange twilight, as the sun slowly sinks behind the Dahir Mountains to the west. Elated by your escape, you throw back your head and give voice to a triumphant yell that is carried away on the chill evening wind.</p>
@@ -4941,7 +4917,7 @@ added a few instances of the <foreign> tag
      </footnotes>
 
      <data>
-      <p>As you break cover, another burst of energy leaps from the Darklord<ch.apos/>s fist. It explodes into the base of the pillar, severing it from the floor, and the roof above caves in with a tremendous roar.<a id="sect350-1" idref="sect350-1-foot" class="footnote" /> The shock wave throws you to the floor, flattening you against the cold marble flagstones. You lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
+      <p>As you break cover, another burst of energy leaps from the Darklord<ch.apos/>s fist. It explodes into the base of the pillar, severing it from the floor, and the roof above caves in with a tremendous roar.<footref id="sect350-1" idref="sect350-1-foot" /> The shock wave throws you to the floor, flattening you against the cold marble flagstones. You lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <p>Haakon<ch.apos/>s laugh can still be heard above the crash of falling stone. In rises in pitch until it fills your head with agonizing pain.</p>
       <choice idref="sect253">If you have the Kai Discipline of Mindshield, <link-text>turn to 253</link-text>.</choice>
       <choice idref="sect369">If you do not possess this Kai Discipline, <link-text>turn to 369</link-text>.</choice>
@@ -4986,8 +4962,8 @@ added a few instances of the <foreign> tag
 	 <line>to discharge a bolt of power at Haakon.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill21.gif" width="386" height="680" />
-       <instance class="pdf" src="ill21.pdf" width="386" height="680" />
+       <instance class="html" src="ill21.gif" width="386" height="675" />
+       <instance class="pdf" src="ill21.pdf" width="386" height="675" />
       </illustration>
 
       <p>Haakon utters a terrible laugh that shakes the floor. A beam of blue flame is growing from the stone in his hand, forming a fiery blade that crackles and spits as it cuts through the dust-choked air. The stench of death and decay fills your nostrils as the Darklord prepares to attack.</p>
@@ -5217,7 +5193,7 @@ added a few instances of the <foreign> tag
      </footnotes>
 
      <data>
-      <p><quote>That<ch.apos/>s it!</quote> exclaims Banedon, stabbing his finger at a map of the Dry Main that covers his chart table. <quote>One hundred and fifteen miles due west of Bir Rabalou; one hundred and fifteen miles due south of the oasis of Bal-loftan.</quote> He picks up a quill pen and marks the spot. <quote>The Tomb of the Majhan.</quote><a id="sect373-1" idref="sect373-1-foot" class="footnote" /></p>
+      <p><quote>That<ch.apos/>s it!</quote> exclaims Banedon, stabbing his finger at a map of the Dry Main that covers his chart table. <quote>One hundred and fifteen miles due west of Bir Rabalou; one hundred and fifteen miles due south of the oasis of Bal-loftan.</quote> He picks up a quill pen and marks the spot. <quote>The Tomb of the Majhan.</quote><footref id="sect373-1" idref="sect373-1-foot" /></p>
       <p>You study the map and ponder the miles of desolation separating you from your goal. Banedon notices your look of dismay and quickly tries to put your mind at ease.</p>
       <p><quote>Fear not, Lone Wolf<ch.emdash/>we<ch.apos/>ll be there before the dawn.</quote></p>
       <p>You smile at his confidence, but it is not the actual journey that worries you<ch.emdash/>your concern is what you may or may not find upon your arrival.</p>
@@ -5255,8 +5231,8 @@ added a few instances of the <foreign> tag
 	 <line>in his dark eyes.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill22.gif" width="386" height="592" />
-       <instance class="pdf" src="ill22.pdf" width="386" height="592" />
+       <instance class="html" src="ill22.gif" width="386" height="587" />
+       <instance class="pdf" src="ill22.pdf" width="386" height="587" />
       </illustration>
 
       <choice idref="sect396">If you win the combat, you enter the tower. <link-text>Turn to 396</link-text>.</choice>
@@ -5320,8 +5296,8 @@ added a few instances of the <foreign> tag
 	 <line>valley with telescopes.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill23.gif" width="386" height="675" />
-       <instance class="pdf" src="ill23.pdf" width="386" height="675" />
+       <instance class="html" src="ill23.gif" width="386" height="672" />
+       <instance class="pdf" src="ill23.pdf" width="386" height="672" />
       </illustration>
 
       <choice idref="sect229">If you possess a Black Crystal Cube, <link-text>turn to 229</link-text>.</choice>
@@ -5352,7 +5328,7 @@ added a few instances of the <foreign> tag
      <data>
       <p>Suddenly the Drakkar screams, his limbs outstretched, his gloved hands clawing the air. He is in the grip of some invisible power which is crushing him to death inside his armour.</p>
       <p>You step back as the ghastly sound of cracking bones rises above the screech of the swooping Kraan-riders. The Drakkar crumples to the deck and topples over the edge of the platform.</p>
-      <choice idref="sect399">If you possess a Crystal Star Pendant, <link-text>turn to 399</link-text>.<a id="sect382-1" idref="sect382-1-foot" class="footnote" /></choice>
+      <choice idref="sect399">If you possess a Crystal Star Pendant, <link-text>turn to 399</link-text>.<footref id="sect382-1" idref="sect382-1-foot" /></choice>
       <choice idref="sect294">If you do not have this Special Item, <link-text>turn to 294</link-text>.</choice>
      </data>
     </section>
@@ -5562,8 +5538,8 @@ added a few instances of the <foreign> tag
 	 <line>secrets revealed to your eyes alone.</line>
 	</description>
        </meta>
-       <instance class="html" src="ill24.gif" width="386" height="572" />
-       <instance class="pdf" src="ill24.pdf" width="386" height="572" />
+       <instance class="html" src="ill24.gif" width="386" height="564" />
+       <instance class="pdf" src="ill24.pdf" width="386" height="564" />
       </illustration>
 
       <p>Silently the portal slides back to reveal your destiny<ch.emdash/>the <cite>Book of the Magnakai</cite>. Set on a pedestal, the book lies open, its secrets revealed to your eyes alone. As you lift the sacred book, the very air throbs with the vibration of the force locked within its sun-gold cover. With a pounding heart you close the book and hurry from the chamber.</p>
@@ -5599,7 +5575,7 @@ added a few instances of the <foreign> tag
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif" />
     </illustration>
@@ -5608,26 +5584,26 @@ added a few instances of the <foreign> tag
      <meta>
       <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
      </meta>
-     <instance src="acdscplz.gif" width="385" height="246" class="html" mime-type="image/gif" />
+     <instance src="acdscplz.gif" width="385" height="278" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif" />
     </illustration>
@@ -5742,6 +5718,209 @@ added a few instances of the <foreign> tag
      </meta>
      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif" />
      <instance src="crtpos.tex" width="380" height="500" class="tex" />
+    </illustration>
+
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance class="text">
+      <table summary="This table provides the endurance losses sustained by the hero and enemy as a result of combat.">
+       <caption>Combat Results with combined hero and enemy endurance losses</caption>
+
+       <colgroup span="1" />
+       <colgroup span="13" />
+
+       <tfoot>
+        <tr>
+         <td colspan="14">Combat results are given enemy's endurance loss first followed by the hero's endurance loss. For example, "12/0" means that the enemy loses 12 endurance points while the hero loses 0 endurance points. A combat result of "k" means that the combatant is killed. For example, "0/k" means that the enemy loses 0 endurance points while the hero is killed.</td>
+        </tr>
+       </tfoot>
+
+       <tbody>
+        <tr>
+         <th rowspan="2" scope="col">Random Number</th>
+         <th colspan="13" scope="colgroup">Combat Ratio</th>
+        </tr>
+
+        <tr>
+         <th scope="col" axis="combat_ratio">-11 or lower</th>
+         <th scope="col" axis="combat_ratio">-10/ -9</th>
+         <th scope="col" axis="combat_ratio">-8/ -7</th>
+         <th scope="col" axis="combat_ratio">-6/ -5</th>
+         <th scope="col" axis="combat_ratio">-4/ -3</th>
+         <th scope="col" axis="combat_ratio">-2/ -1</th>
+         <th scope="col" axis="combat_ratio">0</th>
+         <th scope="col" axis="combat_ratio">1/ 2</th>
+         <th scope="col" axis="combat_ratio">3/ 4</th>
+         <th scope="col" axis="combat_ratio">5/ 6</th>
+         <th scope="col" axis="combat_ratio">7/ 8</th>
+         <th scope="col" axis="combat_ratio">9/ 10</th>
+         <th scope="col" axis="combat_ratio">11 or higher</th>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">1</th>
+         <td>0/k</td>
+         <td>0/k</td>
+         <td>0/8</td>
+         <td>0/6</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/4</td>
+         <td>7/4</td>
+         <td>8/3</td>
+         <td>9/3</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">2</th>
+         <td>0/k</td>
+         <td>0/8</td>
+         <td>0/7</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/3</td>
+         <td>9/3</td>
+         <td>10/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">3</th>
+         <td>0/8</td>
+         <td>0/7</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/3</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">4</th>
+         <td>0/8</td>
+         <td>1/7</td>
+         <td>2/6</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+         <td>12/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">5</th>
+         <td>1/7</td>
+         <td>2/6</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+         <td>12/2</td>
+         <td>14/1</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">6</th>
+         <td>2/6</td>
+         <td>3/6</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/1</td>
+         <td>12/1</td>
+         <td>14/1</td>
+         <td>16/1</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">7</th>
+         <td>3/5</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/1</td>
+         <td>10/1</td>
+         <td>11/1</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">8</th>
+         <td>4/4</td>
+         <td>8/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/1</td>
+         <td>9/1</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">9</th>
+         <td>5/3</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/0</td>
+         <td>9/0</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">0</th>
+         <td>6/0</td>
+         <td>7/0</td>
+         <td>8/0</td>
+         <td>9/0</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+        </tr>
+       </tbody>
+      </table>
+     </instance>
     </illustration>
    </data>
   </section>
@@ -6331,30 +6510,7 @@ added a few instances of the <foreign> tag
   <section class="backmatter" id="footnotz">
    <meta><title>Footnotes</title></meta>
 
-   <data>
-    <p>(<a idref="sect4">4</a>) If the fight lasts longer than 4 rounds, you must still win before turning to <a idref="sect180">Section 180</a>.</p>
-    <p>(<a idref="sect10">10</a>) Make sure you note your possessions elsewhere in case you should find them later.</p>
-    <p>(<a idref="sect20">20</a>) It may be reasonable to restore half the <typ class="attribute">ENDURANCE</typ> points that you lose in this combat if you win (note what happens if you lose).</p>
-    <p>(<a idref="sect31">31</a>) Note that you do not need any of your own Torches to use the Tinderbox in this case.</p>
-    <p>(<a idref="sect35">35</a>) The Jewelled Mace is a weapon-like Special Item.</p>
-    <p>(<a idref="sect56">56</a>) You may record the Jakan on your <a idref="action">Action Chart</a> as a Weapon. Although you may not use it in this adventure, it may be of use to you in the future.</p>
-    <p>(<a idref="sect58">58</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct. If you choose the wrong section, then turn to <a idref="sect156">Section 156</a> as indicated above.  You do not get a second guess.</p>
-    <p>(<a idref="sect67">67</a>) This section is the correct answer for the Cloeasian combination lock from <a idref="sect58">Section 58</a>.</p>
-    <p>(<a idref="sect69">69</a>) Erase from your <a idref="action">Action Chart</a> all Weapons, Special Items, Gold Crowns, and your Backpack but note them elsewhere in case you should find them later.</p>
-    <p>(<a idref="sect91">91</a>) If the fight lasts longer than 4 rounds, you must still win before turning to <a idref="sect180">Section 180</a>.</p>
-    <p>(<a idref="sect135">135</a>) It may be reasonable to restore half the <typ class="attribute">ENDURANCE</typ> points you lose if you win the combat (note what happens if you lose).</p>
-    <p>(<a idref="sect154">154</a>) Though you may purchase any of the above, it is likely that you are limited to one of each potion.</p>
-    <p>(<a idref="sect168">168</a>) If the fight lasts longer than 3 rounds, you must still win before turning to <a idref="sect46">Section 46</a>.</p>
-    <p>(<a idref="sect176">176</a>) Erase from your <a idref="action">Action Chart</a> all Weapons, Special Items, Gold Crowns, and your Backpack but note them elsewhere, in case you should find them later.</p>
-    <p>(<a idref="sect221">221</a>) Turn to <a idref="sect336">Section 336</a> if you have ever received the Crystal Star Pendant, regardless of whether or not you possess it now.</p>
-    <p>(<a idref="sect239">239</a>) You may only use Graveweed in its Tincture form, in this case (you may not use a concentrated potion if you have one).</p>
-    <p>(<a idref="sect288">288</a>) Turn to <a idref="sect399">Section 399</a> if you have ever received the Crystal Star Pendant, regardless of whether or not you possess it now.</p>
-    <p>(<a idref="sect320">320</a>) Since you are in the middle of a wasteland, you may not use Hunting to get out of the Meal requirement here.</p>
-    <p>(<a idref="sect331">331</a>) To solve this puzzle you will need to use the <a idref="map">Map of the Empire of Vassagonia</a> with the code instructions in mind before coming back to this section. The section corresponding to the correct answer will have a footnote confirming that it is indeed correct. If you do not see this footnote at the bottom, you have chosen the wrong section. Come back to this section, reconsider the code and make your selection again, repeating the process until you turn to the correct section. There is no alternate way to proceed through the adventure.</p>
-    <p>(<a idref="sect350">350</a>) Erase the Sommerswerd from your <a idref="action">Action Chart</a>. You may restore it to your inventory once the adventure is over.</p>
-    <p>(<a idref="sect373">373</a>) This section is the correct answer to the code in <a idref="sect331">Section 331</a>.</p>
-    <p>(<a idref="sect382">382</a>) Turn to <a idref="sect399">Section 399</a> if you have ever received the Crystal Star Pendant, regardless of whether or not you possess it now.</p>
-   </data>
+   <data/>
   </section>
 
   <section class="backmatter" id="illstrat">
@@ -6402,21 +6558,27 @@ added a few instances of the <foreign> tag
      <meta><title>Secondary Illustrations</title></meta>
 
      <data>
-      <p>Only the first occurrence of each secondary illustration is cited.</p>
-
       <ul class="unbulleted">
        <li><a idref="equipmnt">Equipment</a></li>
        <li><a idref="discplnz">Kai Disciplines</a></li>
        <li><a idref="sect1">Section 1</a></li>
+       <li><a idref="sect24">Section 24</a></li>
        <li><a idref="sect27">Section 27</a></li>
        <li><a idref="sect44">Section 44</a></li>
+       <li><a idref="sect56">Section 56</a></li>
        <li><a idref="sect83">Section 83</a></li>
        <li><a idref="sect88">Section 88</a></li>
        <li><a idref="sect99">Section 99</a></li>
        <li><a idref="sect121">Section 121</a></li>
+       <li><a idref="sect140">Section 140</a></li>
+       <li><a idref="sect149">Section 149</a></li>
+       <li><a idref="sect154">Section 154</a></li>
+       <li><a idref="sect206">Section 206</a></li>
        <li><a idref="sect241">Section 241</a></li>
        <li><a idref="sect247">Section 247</a></li>
+       <li><a idref="sect279">Section 279</a></li>
        <li><a idref="sect320">Section 320</a></li>
+       <li><a idref="sect337">Section 337</a></li>
       </ul>
      </data>
     </section>
