@@ -11,85 +11,6 @@
 
 <gamebook xml:lang="en-UK" version="0.12">
 
-<!--
-
-$Id$
-$Log$
-Revision 1.12  2007/02/07 17:40:00  Simon Osborne
-Periods added to Illustration captions.
-
-Revision 1.11  2007/01/07 19:11:00  Simon Osborne
-A couple of minor Errata fixed.
-
-Revision 1.10  2007/05/12 18:20:22  jonathan.blake
-fixed validation error
-
-Revision 1.9  2007/05/12 17:59:51  jonathan.blake
-converted Anskavern to Anskaven and minor footnote issues
-
-Revision 1.8  2007/05/11 23:28:05  jonathan.blake
-Fixed illustration dimensions
-
-Revision 1.7  2007/05/10 23:24:50  jonathan.blake
-Final (I mean it this time) changes prior to republication
-
-Revision 1.6  2007/05/07 22:53:56  jonathan.blake
-special thanks and fixing illustration dimensions
-
-Revision 1.5  2007/02/10 01:27:25  jonathan.blake
-Fixes from online Errata page
-
-Revision 1.4  2006/12/07 01:38:44  jonathan.blake
-Modernizing
-
-Revision 1.3  2006/01/05 18:04:07  jonathan.blake
-Adding Paul Haskell as an Illustration Transcriptionist
-
-Revision 1.2  2005/03/10 18:21:51  jonathan.blake
-Removed link to old staff email address.
-
-Revision 1.1  2004/11/08 01:29:11  jonathan.blake
-Initial Freepository revision
-
-
-//// RCS Revision Log ////
-
-Revision 1.7  2003/01/27 22:11:39  jblake
-Checkin prior to global footnote change
-
-Revision 1.6  2003/01/04 17:15:05  jblake
-Published
-
-Revision 1.5  2002/12/04 06:22:19  jblake
-Cleanup.
-
-Revision 1.4  2002/12/03 15:25:00   jdougan
-Added tables of illustrations - captions need line breaks, and then ready for XHTML 
-
-Revision 1.3  2002/12/02 17:01:55  jblake
-General clean up.
-
-Revision 1.2  2002/11/30 02:11:59  jblake
-Fixed validity errors. Needs to be checked for editorial issues.
-
-Revision 1.1  2002/11/30 01:00:00  jdougan
-Fix of interbook links.
-Change log:
-- Pasted front matter from FotW (contents to be revised at a later date)
-- pasted back matter from FotW and deleted to blank errata and illustration lists.
-- corrected front matter text (i.e. it now reads properly for LW03:TCoK)
-- inserted entity sequences
-- inserted footnotes
-- inserted placeholder codes for all illustrations (sizes, captions, and file names not all currently correct)
-- updated sizes, captions, and file names in illustration placeholder code.
-
-//////////////////////////
-
-todo:
-
-fix illustration captions
--->
-
  <meta>
   <title>The Caverns of Kalte</title>
   <creator class="short">Joe Dever and Gary Chalk</creator>
@@ -102,7 +23,7 @@ fix illustration captions
    &inclusion.gary.chalk.bio.lw;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2007</year><month>5</month><day>11</day></date>
+  <date class="publication"><year>2007</year><month>7</month><day>22</day></date>
   <description class="blurb">
    <p>You are Lone Wolf<ch.emdash/>last of the Kai Lords. You have defeated the Darklords and saved your land from their devastation. But Vonotar the Traitor has escaped to the frozen wastes of Kalte and now rules over the Ice Barbarians. Your people demand that Vonotar be made to pay for his treachery. So great is the outcry that the King is obliged to promise that the evil traitor will be brought back to Holmgard, and made to stand trial for his crimes. For you, Lone Wolf, the King<ch.apos/>s promise is the start of a quest that will pit you against a hated foe, deep within the dangerous Caverns of Kalte.</p>
   </description>
@@ -144,7 +65,9 @@ fix illustration captions
 
     <data>
 
-     <p class="dedication">For Caroline Sheldon</p>
+     <p class="dedication">
+      <line>For Caroline Sheldon</line>
+     </p>
 
     </data>
    </section>
@@ -157,8 +80,8 @@ fix illustration captions
     </meta>
 
     <data>
-     <p><quote>I would be especially pleased if my granting of the rights to distribute my books in this way was seen as my <quote>millennium gift</quote> to all those devoted readers who have kept the Kai flag flying high, through all the good times, and the not-so-good. It would make me very proud indeed if this enterprise laid the foundations of a lasting legacy, securing the longevity of Lone Wolf by making my creation freely and readily accessible to current and future online generations. For them, for us, for Sommerlund and the Kai.<ch.ellips/></quote> <strong>Joe Dever</strong></p>
-     <p>Project Aon would first like to thank Joe Dever for making this generous offering of the books that we have all loved from the beginning. We would also like to acknowledge the following members of Project Aon for their diligent work:</p>
+
+    &inclusion.joe.dever.endowment;
 
      <section class="frontmatter" id="credits">
       <meta><title>Credits</title></meta>
@@ -243,8 +166,8 @@ fix illustration captions
      <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 10 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a>. (i.e. if your pencil fell on 4 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> Of 14.) When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore very desirable.</p>
      <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 20 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a>. (i.e. if your pencil fell on the number 6 on the <a idref="random">Random Number Table</a> you would have 26 <typ class="attribute">ENDURANCE</typ> points.)</p>
      <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points <!--ERRTAG-RE-12477-->fall to zero or below<!--/ERRTAG-RE-12477-->, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never go above the number with which you start your adventure.</p>
-     <p><strong>If you have successfully completed any of the previous adventures in the Lone Wolf series</strong>, you will already have your <typ class="attribute">COMBAT SKILL</typ>, <typ class="attribute">ENDURANCE</typ> points and Kai Disciplines which you can now carry over with you to Book 3. You may also carry over any Weapons and Special Items that you held at the end of your last adventure, and these should be entered on your new <a idref="action">Action Chart</a> (you are still limited to two Weapons and eight Backpack Items).</p>
-     <p>You may choose one bonus <a idref="discplnz">Kai Discipline</a> to add to your <a idref="action">Action Chart</a> for every Lone Wolf adventure you have successfully completed; then read the <a idref="equipmnt">section on equipment</a> for Book 3 carefully.</p>
+     <p><strong>If you have successfully completed any of the previous adventures in the <cite>Lone Wolf</cite> series</strong>, you will already have your <typ class="attribute">COMBAT SKILL</typ>, <typ class="attribute">ENDURANCE</typ> points and Kai Disciplines which you can now carry over with you to Book 3. You may also carry over any Weapons and Special Items that you held at the end of your last adventure, and these should be entered on your new <a idref="action">Action Chart</a> (you are still limited to two Weapons and eight Backpack Items).</p>
+     <p>You may choose one bonus <a idref="discplnz">Kai Discipline</a> to add to your <a idref="action">Action Chart</a> for every <cite>Lone Wolf</cite> adventure you have successfully completed; then read the <a idref="equipmnt">section on equipment</a> for Book 3 carefully.</p>
 
      <section class="frontmatter-separate" id="discplnz">
       <meta>
@@ -370,7 +293,7 @@ fix illustration captions
         </data>
        </section>
 
-       <p>If you successfully complete the mission as set in Book 3 of Lone Wolf, you may add a further Kai Discipline of your choice to your <a idref="action">Action Chart</a> in <bookref series="lw" book="04tcod">Book 4</bookref>. This additional skill, together with your six or seven other skills and any Special Items that you have picked up in Books <bookref series="lw" book="01fftd">1</bookref>, <bookref series="lw" book="02fotw">2</bookref> and <bookref series="lw" book="03tcok">3</bookref>, may then be used in the next adventure of the Lone Wolf series which is called <bookref series="lw" book="04tcod"><cite>The Chasm of Doom</cite></bookref>.</p>
+       <p>If you successfully complete the mission as set in Book 3 of Lone Wolf, you may add a further Kai Discipline of your choice to your <a idref="action">Action Chart</a> in <bookref series="lw" book="04tcod">Book 4</bookref>. This additional skill, together with your six or seven other skills and any Special Items that you have picked up in Books <bookref series="lw" book="01fftd">1</bookref>, <bookref series="lw" book="02fotw">2</bookref> and <bookref series="lw" book="03tcok">3</bookref>, may then be used in the next adventure of the <cite>Lone Wolf</cite> series which is called <bookref series="lw" book="04tcod"><cite>The Chasm of Doom</cite></bookref>.</p>
       </data>
      </section>
 
@@ -382,7 +305,7 @@ fix illustration captions
       </meta>
 
       <data>
-       <p>Before leaving the northern port of <!--ERRTAG-RE-22585-->Anskaven<!--/ERRTAG-RE-22585-->, you are escorted to the City Hall and equipped with special winter boots, a tunic, a fur-lined cloak and mittens. You are given a <a idref="map">Map of Kalte</a> and a pouch of gold. To find out how much gold is in the pouch, pick a number from the <a idref="random">Random Number Table</a>. Now add 10 to the number you have picked. The total equals the number of Gold Crowns inside the pouch, and you may now enter this number in the <ch.apos/>Gold Crowns<ch.apos/> section of your <a idref="action">Action Chart</a>. (If you have successfully completed previous Lone Wolf adventures, you may add this sum to the total of any Crowns you may already possess. Remember you can only carry fifty Crowns.)</p>
+       <p>Before leaving the northern port of <!--ERRTAG-RE-22585-->Anskaven<!--/ERRTAG-RE-22585-->, you are escorted to the City Hall and equipped with special winter boots, a tunic, a fur-lined cloak and mittens. You are given a <a idref="map">Map of Kalte</a> and a pouch of gold. To find out how much gold is in the pouch, pick a number from the <a idref="random">Random Number Table</a>. Now add 10 to the number you have picked. The total equals the number of Gold Crowns inside the pouch, and you may now enter this number in the <ch.apos/>Gold Crowns<ch.apos/> section of your <a idref="action">Action Chart</a>. (If you have successfully completed previous <cite>Lone Wolf</cite> adventures, you may add this sum to the total of any Crowns you may already possess. Remember you can only carry fifty Crowns.)</p>
        <p>Before you set sail, you are given the choice of the  following items (in addition to those you already possess, but remember you may only carry two weapons). You may take any two of the following:</p>
        <ul class="paragraphed">
         <li><p>Sword (Weapons)</p></li>
@@ -526,7 +449,7 @@ fix illustration captions
         <li><p>Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.</p></li>
         <li><p>Repeat the sequence from <a idref="stage3">Stage 3</a>.</p></li>
        </ol>
-       <p>This process of combat continues until the <typ class="attribute">ENDURANCE</typ> points of either the enemy or Lone Wolf are reduced to zero or below, at which point the one with the zero score is declared dead. If Lone Wolf is dead, the adventure is over. If the enemy is dead, Lone Wolf proceeds but with his <typ class="attribute">ENDURANCE</typ> points possibly reduced.</p>
+       <p>This process of combat continues until the <typ class="attribute">ENDURANCE</typ> points of either the enemy or Lone Wolf are reduced to zero or below,at which point that combatant is declared dead. If Lone Wolf is dead, the adventure is over. If the enemy is dead, Lone Wolf proceeds but with his <typ class="attribute">ENDURANCE</typ> points possibly reduced.</p>
        <p>A <a idref="crsumary">summary of Combat Rules</a> in the back of this book.</p>
 
        <section class="frontmatter" id="evasion">
@@ -547,13 +470,13 @@ fix illustration captions
       </meta>
 
       <data>
-       <p>The following table is a guide to the rank and titles that are bestowed upon Kai Lords at each stage of their training. As you successfully complete each adventure in the Lone Wolf series, you will gain an additional Kai Discipline and gradually progress towards mastery of the ten basic Kai Disciplines.</p>
+       <p>The following table is a guide to the rank and titles that are bestowed upon Kai Lords at each stage of their training. As you successfully complete each adventure in the <cite>Lone Wolf</cite> series, you will gain an additional Kai Discipline and gradually progress towards mastery of the ten basic Kai Disciplines.</p>
        <ol>
         <li>Novice</li>
         <li>Intuite</li>
         <li>Doan</li>
         <li>Acolyte</li>
-        <li>Initiate<ch.emdash/>You begin the  Lone Wolf adventures with this level of Kai training</li>
+        <li>Initiate<ch.emdash/>You begin the  <cite>Lone Wolf</cite> adventures with this level of Kai training</li>
         <li>Aspirant</li>
         <li>Guardian</li>
         <li>Warmarn or Journeyman</li>
@@ -574,8 +497,8 @@ fix illustration captions
     </meta>
 
     <data>
-     <p>Your mission will be fraught with great danger, for Kalte is a bleak and hostile land and your foe is a master of cunning. Use the <a idref="map">map</a> to help you plot your course to the ice fortress of Ikaya. Make notes as you progress through the story, for they will be of great help in future adventures. Many things that you find will aid you during your adventure. Some Special Items will be of use in future Lone Wolf adventures and others may be red herrings of no real use at all, so be selective in what you decide to keep.</p>
-     <p>There are many routes to the ice fortress of Ikaya, but only one will enable you to capture Vonotar and return to Sommerlund with the minimum of danger. A wise choice of Kai Disciplines and a great deal of courage should enable any player to complete the mission, no matter how weak his initial <typ class="attribute">COMBAT SKILL</typ> or <typ class="attribute">ENDURANCE</typ> points score. Successful completion of previous Lone Wolf adventures is not essential for the success of this quest.</p>
+     <p>Your mission will be fraught with great danger, for Kalte is a bleak and hostile land and your foe is a master of cunning. Use the <a idref="map">map</a> to help you plot your course to the ice fortress of Ikaya. Make notes as you progress through the story, for they will be of great help in future adventures. Many things that you find will aid you during your adventure. Some Special Items will be of use in future <cite>Lone Wolf</cite> adventures and others may be red herrings of no real use at all, so be selective in what you decide to keep.</p>
+     <p>There are many routes to the ice fortress of Ikaya, but only one will enable you to capture Vonotar and return to Sommerlund with the minimum of danger. A wise choice of Kai Disciplines and a great deal of courage should enable any player to complete the mission, no matter how weak his initial <typ class="attribute">COMBAT SKILL</typ> or <typ class="attribute">ENDURANCE</typ> points score. Successful completion of previous <cite>Lone Wolf</cite> adventures is not essential for the success of this quest.</p>
      <p>The betrayal of your country can be avenged by bringing the traitor to justice.</p>
      <p>Good Luck!</p>
     </data>
@@ -1371,7 +1294,7 @@ fix illustration captions
 
       <footnotes>
        <footnote id="sect61-1-foot" idref="sect61-1">
-        <p>This peculiar ending is the only time in the entire Lone Wolf series where you can fail your mission without actually dying. Despite the fact that it may take quite a bit of effort to get here, it does not count as a completion for this adventure. You still may not use your character in future adventures.</p>
+        <p>This peculiar ending is the only time in the entire <cite>Lone Wolf</cite> series where you can fail your mission without actually dying. Despite the fact that it may take quite a bit of effort to get here, it does not count as a completion for this adventure. You still may not use your character in future adventures.</p>
        </footnote>
       </footnotes>
 
@@ -4853,7 +4776,7 @@ fix illustration captions
         <instance class="pdf" src="ill20.pdf" width="772" height="588" />
        </illustration>
        <p>You are the avenger of <!--ERRTAG-RE-367580-->his crimes, and it is you<!--/ERRTAG-RE-367580--> who cast the wretched traitor into the limbo of Daziarn. Your mission is now completed. You have survived the caverns of Kalte and freed Sommerlund from the menace of Vonotar.</p>
-       <p>But the heat of battle and the challenge of a new and desperate quest awaits you in Book Four of the Lone Wolf series entitled:</p>
+       <p>But the heat of battle and the challenge of a new and desperate quest awaits you in Book Four of the <cite>Lone Wolf</cite> series entitled:</p>
        <p><bookref series="lw" book="04tcod"><cite>The Chasm of Doom</cite></bookref></p>
       </data>
      </section>
@@ -4887,35 +4810,35 @@ fix illustration captions
 
      <illustration class="inline">
       <meta>
-       <creator>JC Alvarez &amp; Jonathan Blake</creator>
+       <creator>JC Alvarez / Jonathan Blake</creator>
       </meta>
       <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif" />
      </illustration>
 
      <illustration class="inline">
       <meta>
-       <creator>JC Alvarez &amp; Jonathan Blake</creator>
+       <creator>JC Alvarez / Jonathan Blake</creator>
       </meta>
       <instance src="acdscplz.gif" width="385" height="214" class="html" mime-type="image/gif" />
      </illustration>
 
      <illustration class="inline">
       <meta>
-       <creator>JC Alvarez &amp; Jonathan Blake</creator>
+       <creator>JC Alvarez / Jonathan Blake</creator>
       </meta>
       <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif" />
      </illustration>
 
      <illustration class="inline">
       <meta>
-       <creator>JC Alvarez &amp; Jonathan Blake</creator>
+       <creator>JC Alvarez / Jonathan Blake</creator>
       </meta>
       <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif" />
      </illustration>
 
      <illustration class="inline">
       <meta>
-       <creator>JC Alvarez &amp; Jonathan Blake</creator>
+       <creator>JC Alvarez / Jonathan Blake</creator>
       </meta>
       <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif" />
      </illustration>
@@ -5397,12 +5320,19 @@ fix illustration captions
 
       <data>
        <p>(<a idref="tssf">The Story So Far<ch.ellips/></a>) Replaced <quote>hunch-backed</quote> with <quote>hunchbacked</quote>.</p>
+
        <p>(<a idref="gamerulz">The Game Rules</a>) Replaced all occurrences of the abbreviation <quote>ie</quote> with <quote>i.e.</quote>. Replaced <quote>Combat Skill, Endurance Points</quote> with <quote><typ class="attribute">COMBAT SKILL</typ>, <typ class="attribute">ENDURANCE</typ> points</quote>. Removed <quote> that you will find in the front of this book. For further adventuring you can copy out the chart yourself or get it photocopied</quote>.<!--ERRTAG-RE-10410-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-10410-ITEM--><!--ERRTAG-RE-12477-ITEM--> Replaced <quote>fall to zero</quote> with <quote>fall to zero or below</quote>.<!--/ERRTAG-RE-12477-ITEM--></p>
-       <p>(<a idref="discplnz">Kai Disciplines</a>) Replaced <quote>Kai Discipline section</quote> with <quote>Kai Disciplines section</quote>. Capitalized all occurrences of <quote>discipline</quote>.</p>
-       <p>(<a idref="equipmnt">Equipment</a>) Removed <quote> (see the front of this book)</quote> and capitalized <quote>map</quote>. Replaced <quote>come in useful</quote> with <quote>be useful</quote>, <quote><a idref="discplnz">Kai Discipline</a> section</quote> with <quote><a idref="discplnz">Kai Disciplines</a> section</quote>, and <quote>ice-sledge along</quote> with <quote>ice-sledge, along</quote>. Replaced <quote><quote>Food</quote> on page 22</quote> with <quote><quote>How to Use Your Equipment</quote></quote>.<!--ERRTAG-RE-22585-ITEM--> Replaced <quote>Anskavern</quote> with <quote>Anskaven</quote>.<!--/ERRTAG-RE-22585-ITEM--></p>
-       <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed <quote> on the inside back cover of the book</quote>. Replaced <quote>appears on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>. Replaced <quote>reduced to zero</quote> with <quote>reduced to zero or below</quote>. Replaced <quote>points reduced</quote> with <quote>points possibly reduced</quote>.</p>
-       <p>(<a idref="levels">Levels of Kai Training</a>) Replaced <quote>LONE WOLF</quote> with <quote>Lone Wolf</quote>.</p>
-       <p>(<a idref="kaiwisdm">Kai Wisdom</a>) Removed <quote> at the front of the book</quote>. Replaced <quote>ice-fortress</quote> with <quote>ice fortress</quote>.</p>
+
+       <p>(<a idref="discplnz">Kai Disciplines</a>) Replaced <quote>Kai Discipline section</quote> with <quote>Kai Disciplines section</quote>. Capitalized all occurrences of <quote>discipline</quote>. Replaced all occurrences of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+
+       <p>(<a idref="equipmnt">Equipment</a>) Removed <quote> (see the front of this book)</quote> and capitalized <quote>map</quote>. Replaced <quote>come in useful</quote> with <quote>be useful</quote>, <quote><a idref="discplnz">Kai Discipline</a> section</quote> with <quote><a idref="discplnz">Kai Disciplines</a> section</quote>, and <quote>ice-sledge along</quote> with <quote>ice-sledge, along</quote>. Replaced <quote><quote>Food</quote> on page 22</quote> with <quote><quote>How to Use Your Equipment</quote></quote>.<!--ERRTAG-RE-22585-ITEM--> Replaced <quote>Anskavern</quote> with <quote>Anskaven</quote>.<!--/ERRTAG-RE-22585-ITEM--> Replaced all occurrences of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+
+       <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed <quote> on the inside back cover of the book</quote>. Replaced <quote>appears on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>. Replaced <quote>reduced to zero</quote> with <quote>reduced to zero or below</quote>. Replaced <quote>points reduced</quote> with <quote>points possibly reduced</quote>. Replaced <quote>at which point the one with the zero score is declared dead.</quote> with <quote>at which point that combatant is declared dead.</quote>.</p>
+
+       <p>(<a idref="levels">Levels of Kai Training</a>) Replaced <quote>LONE WOLF</quote> with <quote><cite>Lone Wolf</cite></quote>.</p>
+
+       <p>(<a idref="kaiwisdm">Kai Wisdom</a>) Removed <quote> at the front of the book</quote>. Replaced <quote>ice-fortress</quote> with <quote>ice fortress</quote>. Replaced all occurrences of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+
        <p>(<a idref="sect1">1</a>) Replaced <quote>pack ice</quote> with <quote>pack-ice</quote>. Replaced the word <quote>becoming</quote> with <quote>become</quote> in the fourth paragraph. Removed <quote> at the front of the book</quote>.<!--ERRTAG-RE-38180-ITEM--> Replaced <quote>Anskavern</quote> with <quote>Anskaven</quote>.<!--/ERRTAG-RE-38180-ITEM--></p>
        <p>(<a idref="sect5">5</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect13">13</a>) Replaced both occurrences of <quote>spyhole</quote> with <quote>spy-hole</quote>.</p>
@@ -5491,7 +5421,7 @@ fix illustration captions
        <p>(<a idref="sect337">337</a>) Replaced <quote>vicious looking</quote> with <quote>vicious-looking</quote>.</p>
        <p>(<a idref="sect339">339</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>.</p>
        <p>(<a idref="sect342">342</a>) Removed <quote> at the front of the book</quote>.</p>
-       <p>(<a idref="sect350">350</a>) Replaced <quote>LONE WOLF</quote> of the last paragraph with <quote>Lone Wolf</quote> and replaced both occurrences of <quote>Captain</quote> with <quote>captain</quote>.<!--ERRTAG-RE-365765-ITEM--> Replaced <quote>Magician<ch.apos/>s Guild</quote> with <quote>Magicians<ch.apos/> Guild</quote>.<!--/ERRTAG-RE-365765-ITEM--><!--ERRTAG-RE-367580-ITEM--> Replaced <quote>his crimes and it is you</quote> with <quote>his crimes, and it is you</quote>.<!--/ERRTAG-RE-367580-ITEM--><!--ERRTAG-RE-366739-ITEM--> Replaced <quote>Vonotar the traitor</quote> with <quote>Vonotar the Traitor</quote>.<!--/ERRTAG-RE-366739-ITEM--><!--ERRTAG-RE-367210-ITEM--> Replaced <quote>Anskavern</quote> with <quote>Anskaven</quote>.<!--/ERRTAG-RE-367210-ITEM--><!--ERRTAG-RE-367698-ITEM--> Replaced <quote>Anskavern</quote> with <quote>Anskaven</quote>.<!--/ERRTAG-RE-367698-ITEM--> Added a period to the end of the illustration<ch.apos/>s caption.</p>
+       <p>(<a idref="sect350">350</a>) Replaced <quote>LONE WOLF</quote> of the last paragraph with <quote>Lone Wolf</quote> and replaced both occurrences of <quote>Captain</quote> with <quote>captain</quote>.<!--ERRTAG-RE-365765-ITEM--> Replaced <quote>Magician<ch.apos/>s Guild</quote> with <quote>Magicians<ch.apos/> Guild</quote>.<!--/ERRTAG-RE-365765-ITEM--><!--ERRTAG-RE-367580-ITEM--> Replaced <quote>his crimes and it is you</quote> with <quote>his crimes, and it is you</quote>.<!--/ERRTAG-RE-367580-ITEM--><!--ERRTAG-RE-366739-ITEM--> Replaced <quote>Vonotar the traitor</quote> with <quote>Vonotar the Traitor</quote>.<!--/ERRTAG-RE-366739-ITEM--><!--ERRTAG-RE-367210-ITEM--> Replaced <quote>Anskavern</quote> with <quote>Anskaven</quote>.<!--/ERRTAG-RE-367210-ITEM--><!--ERRTAG-RE-367698-ITEM--> Replaced <quote>Anskavern</quote> with <quote>Anskaven</quote>.<!--/ERRTAG-RE-367698-ITEM--> Added a period to the end of the illustration<ch.apos/>s caption. Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
        <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>.<!--ERRTAG-RE-373958-ITEM--> Replaced <quote>fall to 0</quote> with <quote>fall to 0 or below</quote>.<!--/ERRTAG-RE-373958-ITEM--></p>
       </data>
      </section>
@@ -5502,6 +5432,7 @@ fix illustration captions
     <meta><title>Footnotes</title></meta>
 
     <data/>
+
    </section>
 
    <section class="backmatter" id="illstrat">
@@ -5545,7 +5476,6 @@ fix illustration captions
       <meta><title>Secondary Illustrations</title></meta>
 
       <data>
-       <p>Only the first occurrence of each secondary illustration is cited.</p>
        <ul class="unbulleted">
         <li><a idref="equipmnt">Equipment</a></li>
         <li><a idref="discplnz">Kai Disciplines</a></li>
@@ -5555,8 +5485,8 @@ fix illustration captions
         <li><a idref="sect36">Section 36</a></li>
         <li><a idref="sect45">Section 45</a></li>
         <li><a idref="sect61">Section 61</a></li>
-        <li><a idref="sect79">Section 79</a></li>
         <li><a idref="sect72">Section 72</a></li>
+        <li><a idref="sect79">Section 79</a></li>
         <li><a idref="sect83">Section 83</a></li>
         <li><a idref="sect91">Section 91</a></li>
         <li><a idref="sect102">Section 102</a></li>
@@ -5565,20 +5495,24 @@ fix illustration captions
         <li><a idref="sect119">Section 119</a></li>
         <li><a idref="sect133">Section 133</a></li>
         <li><a idref="sect147">Section 147</a></li>
+        <li><a idref="sect157">Section 157</a></li>
+        <li><a idref="sect162">Section 162</a></li>
         <li><a idref="sect184">Section 184</a></li>
         <li><a idref="sect191">Section 191</a></li>
         <li><a idref="sect201">Section 201</a></li>
         <li><a idref="sect221">Section 221</a></li>
+        <li><a idref="sect224">Section 224</a></li>
         <li><a idref="sect225">Section 225</a></li>
         <li><a idref="sect245">Section 245</a></li>
         <li><a idref="sect272">Section 272</a></li>
         <li><a idref="sect285">Section 285</a></li>
+        <li><a idref="sect290">Section 290</a></li>
         <li><a idref="sect298">Section 298</a></li>
         <li><a idref="sect303">Section 303</a></li>
         <li><a idref="sect307">Section 307</a></li>
         <li><a idref="sect317">Section 317</a></li>
         <li><a idref="sect330">Section 330</a></li>
-        <li><a idref="sect340">Section 340</a></li>      
+        <li><a idref="sect340">Section 340</a></li>
        </ul>
       </data>
      </section>
