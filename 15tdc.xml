@@ -11,138 +11,19 @@
 
 <gamebook xml:lang="en-UK" version="0.12">
 
-<!--
-
-$Id$
-$Log: 15tdc.xml,v $
-Revision 1.63 2007/07/04 13:45:00  Simon Osborne
-Fixed illustration captions.
-
-Revision 1.62 2007/06/27 11:28:24  Simon Osborne
-Changed Kai Disciplines -> Grand Master Disciplines on the
-Combat Rules Summary
-
-Revision 1.61  2007/06/26 13:06:12  Simon Osborne
-Fixed relevant Errata entries to use <ch.lsquot/> and <ch.rsquot/>.
-
-Revision 1.6  2007/06/25 15:07:15  Simon Osborne
-Many errata issues, non-errata issues, and xml structural issues fixed.
-XML now conforms to 0.12
-
-Revision 1.5  2006/11/21 17:40:42  jonathan.blake
-Various changes
-
-Revision 1.4  2005/03/26 16:22:12  jonathan.blake
-Adding Illustrator Transcription credits that went missing since
-The Masters of Darkness
-
-Revision 1.3  2005/03/10 18:21:51  jonathan.blake
-Removed link to old staff email address.
-
-Revision 1.2  2005/03/10 06:41:19  jonathan.blake
-*** empty log message ***
-
-Revision 1.1  2004/11/09 06:47:16  jonathan.blake
-Initial Freepository revision
-
-
-//// RCS Revision Log ////
-
-Revision 1.4  2003/01/27 22:11:39  jblake
-Checkin prior to global footnote change
-
-Revision 1.3  2002/11/07 17:00:33  jblake
-Fixed a couple validity errors and tweaked formatting.
-
-Revision 1.2 2002/11/07 16:46:00 jdougan
-- Inserted title into the proper place
-- Copied front matter to separate file; pasted formatted front matter from PLoR; then re-pasted appropriate paragraphs (TSSF, Equipment, Improved Disciplines, Wisdom)
-- re-altered all occurrences of "ie" to "i.e."
-- corrected credits
-- Game Rules: left unaltered from PLoR the list of Special Items that can be carried over from Kai/Magnakai adventures
-- Deliverance: re-altered COMBAT SKILL to ENDURANCE
-- Fixed hard breaks leftover from OCR
-- Inserted <ch.endash/> where necessary
-- inserted 46 occurrences of <ch.emdash/>
-- Fixed OCR character recognition flaws (for right-side smart quote, equivalent for left-side smart quote)
-- Corrected miscellaneous hyphenations that reflect the original page typesetting.
-- <quote></quote> and <ch.apos/> both dealt with
-- Inserted Backmatter template
-- fixed non-listed available items
-
-Revision 1.1  2002/10/20 17:06:07  jblake
-Initial revision
-
-//////////////////////////
-
-All occurrences of "ie" in the Frontmatter were changed to "i.e."
-
-In description of "Deliverance", changed COMBAT SKILL to ENDURANCE, as in later editions, and also because it does not make sense - it is  not possible (or very, very unlikely) for your Combat Skill to fall to below 8.
-
-In "Equipment - How to use it", under "Weapons", changed the bonus for combat skill from "3" to "5", once again as in later editions and due to the description of Grand Weaponmastery at the beginning.
-
-In the example for the rules of combat, the bonus for using Kai-surge is changed from "3" to "8", for consistency with the rules in the Grand Master disciplines section. Therefore I changed all the numbers in the example further on where appropriate.
-==>JDOUGAN: I believe this might have been undone in the front-matter paste.
-
-Section 23
-The word "raised" should be changed to "razed"
-
-Section 31
-The word "of" should be added to the sentence "They comprise a line..." (so it reads: <ch.apos/>They comprise of a line..)
-
-section 36 3rd paragraph, 
-the words "first you" should be swapped around
-
-Section 51 last line
-the hyphen between "much" and "needed" is not needed
-
-section 65 2nd paragraph
-the hyphen between "recently" and "cleared" is not needed 
-
-section 108, second last line
-"themsleves" should be spelt "themselves"
-
-section 126, second last line
-"Its" should be "It"
-
-section 149, second last line
-"is" should be inserted between "second" and "a"
-
-section 150, paragraph 9, first line
-"weapons enough" should either be "weapons, enough" or "enough weapons"
-
-section 156
-What if your endurance score is below 15? I reckon that in this case, game over!
-
-section 158
-The links for the Kai alchemy should be swapped - you learn "halt missile" at the rank of Sun Knight
-
-section 241, not really errata, more of a clarification
-of course you can only choose to fire again if you have another arrow
-
-section 257, 6th line of 2nd paragraph
-the hyphen in "less-enchanting" is not needed
-
-section 264, 3rd line of 3rd paragraph
-"I've heard tell..." does not make sense, perhaps "I've heard tale(s)"  section 
-JDOUGAN: stet. Acceptable informalism (particularly common in the American South)
-
-299, paragraph after list, 5th line
-there is no need for the "s" in "Action Charts" section 343
-note: you need at 3 arrows to follow the link to 180
-
--->
-
 <meta>
  <title>The Darke Crusade</title>
  <creator class="short">Joe Dever and Brian Williams</creator>
- <creator class="medium">Joe Dever<br />Illustrated by Brian Williams</creator>
+ <creator class="medium">
+  <line>Joe Dever</line>
+  <line>Illustrated by Brian Williams</line>
+ </creator>
  <creator class="long">
    &inclusion.joe.dever.bio.lw;
    &inclusion.brian.williams.bio.lw;
  </creator>
  <publisher>Project Aon</publisher>
- <date class="publication"><year>2004</year><month>1</month><day>14</day></date>
+ <date class="publication"><year>2007</year><month>7</month><day>22</day></date>
  <description class="blurb">
   <p>You are the warrior Lone Wolf<ch.emdash/>Kai Grand Master of Sommerlund. In the distant realm of Nyras a bitter war is waging between the brave knights of Lencia and the evil Drakkarim. The Lencians have won many battles, but now the Drakkarim leader<ch.emdash/>Warlord Magnaarn<ch.emdash/>is near to finding the Doomstone of Darke. If he should succeed he will be capable of destroying the Lencians once and for all.</p>
   <p>In <cite>The Darke Crusade</cite>, you must journey through the infernal Hellswamp, trek deep into the forests of northern Nyras and brave the heat of battle. Will you succeed and save your allies? Or will you fall victim to Warlord Magnaarn?</p>
@@ -150,9 +31,16 @@ note: you need at 3 arrows to follow the link to 180
  <description class="publication">
   <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
  </description>
- <rights class="copyrights">Text copyright <ch.copy/> 1991 Joe Dever.<br />Illustrations copyright <ch.copy/> 1991 Brian Williams.</rights>
+ <rights class="copyrights">
+  <line>Text copyright <ch.copy/> 1991 Joe Dever.</line>
+  <line>Illustrations copyright <ch.copy/> 1991 Brian Williams.</line>
+ </rights>
  <rights class="license-notification">
-  <p>Text copyright <ch.copy/> 1991 Joe Dever.<br />Illustrations copyright <ch.copy/> 1991 Brian Williams.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+  <p>
+   <line>Text copyright <ch.copy/> 1991 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1991 Brian Williams.</line>
+   <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+  </p>
  </rights>
 </meta>
 
@@ -178,7 +66,9 @@ note: you need at 3 arrows to follow the link to 180
 
    <data>
 
-    <p class="dedication">To the spirit of San Diego<ch.emdash/>America<ch.apos/>s Finest City.</p>
+    <p class="dedication">
+     <line>To the spirit of San Diego<ch.emdash/>America<ch.apos/>s Finest City.</line>
+    </p>
 
    </data>
   </section>
@@ -204,13 +94,26 @@ note: you need at 3 arrows to follow the link to 180
        <dt>Illustration Transcription</dt>
         <dd>Jonathan Blake</dd>
        <dt>XML</dt>
-        <dd>Jonathan Blake<br />Jeff Dougan<br/>Simon Osborne</dd>
+        <dd>
+	 <line>Jonathan Blake</line>
+	 <line>Jeff Dougan</line>
+	 <line>Simon Osborne</line>
+	</dd>
        <dt>Action Charts</dt>
-        <dd>JC Alvarez<br />Jonathan Blake</dd>
+        <dd>
+	 <line>JC Alvarez</line>
+	 <line>Jonathan Blake</line>
+	</dd>
        <dt>Proofreading</dt>
         <dd>Kenny Wong</dd>
        <dt>Editing</dt>
-         <dd>Ingo Kl<ch.ouml/>cker<br />Christopher Lundgren<br />Simon Osborne<br />Thomas Wolmer<br />Jody Williams</dd>
+        <dd>
+	 <line>Ingo Kl<ch.ouml/>cker</line>
+	 <line>Christopher Lundgren</line>
+	 <line>Simon Osborne</line>
+	 <line>Thomas Wolmer</line>
+	 <line>Jody Williams</line>
+	</dd>
 <!--       <dt>PDF Layout</dt>
         <dd></dd>-->
        <dt>Coordination</dt>
@@ -3863,7 +3766,7 @@ note: you need at 3 arrows to follow the link to 180
 
      <footnotes>
       <footnote id="sect238-1-foot" idref="sect238-1">
-       <p>The weapon bonuses are cumulative (e.g. the Dagger of Vashna which is a Dagger and a Special Item confers a bonus of +1: 2 - 1).</p>
+       <p>The weapon bonuses are cumulative (e.g. the Dagger of Vashna which is a Dagger and a Special Item confers a bonus of +1: 2 <ch.minus/> 1).</p>
       </footnote>
      </footnotes>
 
@@ -5317,42 +5220,42 @@ note: you need at 3 arrows to follow the link to 180
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acdscplz.gif" width="385" height="246" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acchklst.gif" width="385" height="128" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif"></instance>
     </illustration>
@@ -5468,145 +5371,6 @@ note: you need at 3 arrows to follow the link to 180
      </meta>
      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif"></instance>
      <instance src="crtpos.tex" width="380" height="500" class="tex"></instance>
-    </illustration>
-   </data>
-  </section>
-
-  <section class="backmatter" id="random">
-   <meta><title>Random Number Table</title></meta>
-
-   <data>
-
-    <illustration class="inline">
-     <meta>
-      <creator>Jonathan Blake</creator>
-     </meta>
-     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
-     <instance src="random.tex" width="380" height="500" class="tex"></instance>
-     <instance class="text">
-      <table>
-       <tr>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>1</td>
-        <td>3</td>
-        <td>5</td>
-        <td>6</td>
-        <td>8</td>
-        <td>6</td>
-        <td>2</td>
-       </tr>
-       <tr>
-        <td>0</td>
-        <td>3</td>
-        <td>8</td>
-        <td>5</td>
-        <td>0</td>
-        <td>5</td>
-        <td>8</td>
-        <td>7</td>
-        <td>4</td>
-        <td>1</td>
-       </tr>
-       <tr>
-        <td>9</td>
-        <td>5</td>
-        <td>1</td>
-        <td>2</td>
-        <td>5</td>
-        <td>7</td>
-        <td>4</td>
-        <td>6</td>
-        <td>1</td>
-        <td>8</td>
-       </tr>
-       <tr>
-        <td>5</td>
-        <td>8</td>
-        <td>4</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>8</td>
-        <td>6</td>
-        <td>0</td>
-        <td>9</td>
-       </tr>
-       <tr>
-        <td>0</td>
-        <td>1</td>
-        <td>9</td>
-        <td>4</td>
-        <td>2</td>
-        <td>9</td>
-        <td>0</td>
-        <td>3</td>
-        <td>1</td>
-        <td>4</td>
-       </tr>
-       <tr>
-        <td>5</td>
-        <td>8</td>
-        <td>1</td>
-        <td>4</td>
-        <td>3</td>
-        <td>2</td>
-        <td>7</td>
-        <td>0</td>
-        <td>8</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>1</td>
-        <td>8</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>0</td>
-        <td>2</td>
-        <td>3</td>
-        <td>5</td>
-        <td>0</td>
-       </tr>
-       <tr>
-        <td>6</td>
-        <td>2</td>
-        <td>0</td>
-        <td>3</td>
-        <td>4</td>
-        <td>9</td>
-        <td>8</td>
-        <td>6</td>
-        <td>2</td>
-        <td>9</td>
-       </tr>
-       <tr>
-        <td>2</td>
-        <td>8</td>
-        <td>4</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>2</td>
-        <td>1</td>
-        <td>0</td>
-        <td>6</td>
-       </tr>
-       <tr>
-        <td>4</td>
-        <td>6</td>
-        <td>5</td>
-        <td>2</td>
-        <td>9</td>
-        <td>0</td>
-        <td>1</td>
-        <td>4</td>
-        <td>8</td>
-        <td>7</td>
-       </tr>
-      </table>
-     </instance>
     </illustration>
 
     <illustration>
@@ -5808,6 +5572,145 @@ note: you need at 3 arrows to follow the link to 180
          <td>k/0</td>
         </tr>
        </tbody>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
+  <section class="backmatter" id="random">
+   <meta><title>Random Number Table</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
+     <instance src="random.tex" width="380" height="500" class="tex"></instance>
+     <instance class="text">
+      <table>
+       <tr>
+        <td>8</td>
+        <td>7</td>
+        <td>6</td>
+        <td>1</td>
+        <td>3</td>
+        <td>5</td>
+        <td>6</td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>3</td>
+        <td>8</td>
+        <td>5</td>
+        <td>0</td>
+        <td>5</td>
+        <td>8</td>
+        <td>7</td>
+        <td>4</td>
+        <td>1</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>5</td>
+        <td>1</td>
+        <td>2</td>
+        <td>5</td>
+        <td>7</td>
+        <td>4</td>
+        <td>6</td>
+        <td>1</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>8</td>
+        <td>4</td>
+        <td>7</td>
+        <td>6</td>
+        <td>5</td>
+        <td>8</td>
+        <td>6</td>
+        <td>0</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>9</td>
+        <td>4</td>
+        <td>2</td>
+        <td>9</td>
+        <td>0</td>
+        <td>3</td>
+        <td>1</td>
+        <td>4</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>8</td>
+        <td>1</td>
+        <td>4</td>
+        <td>3</td>
+        <td>2</td>
+        <td>7</td>
+        <td>0</td>
+        <td>8</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>1</td>
+        <td>8</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>0</td>
+        <td>2</td>
+        <td>3</td>
+        <td>5</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>6</td>
+        <td>2</td>
+        <td>0</td>
+        <td>3</td>
+        <td>4</td>
+        <td>9</td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>8</td>
+        <td>4</td>
+        <td>7</td>
+        <td>6</td>
+        <td>5</td>
+        <td>2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>6</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td>6</td>
+        <td>5</td>
+        <td>2</td>
+        <td>9</td>
+        <td>0</td>
+        <td>1</td>
+        <td>4</td>
+        <td>8</td>
+        <td>7</td>
+       </tr>
       </table>
      </instance>
     </illustration>
@@ -6034,28 +5937,8 @@ note: you need at 3 arrows to follow the link to 180
   <section class="backmatter" id="footnotz">
    <meta><title>Footnotes</title></meta>
 
-   <data>
-    <p>(<a idref="tssf">The Story So Far<ch.ellips/></a>) The Drakkarim land of Nyras has been referred to as <quote>Nyraz</quote> in previous publications. We have left it as it stands in this book due to its consistent use here and under the assumption that the author intended this name change.</p>
-    <p>(<a idref="gamerulz">The Game Rules</a>) The Discipline bonuses mentioned do not affect your permanent scores. If you have completed previous adventures, the Disciplines that you have mastered may still be beneficial. See the Grand Master Rules section of the <a href="&link.rh;">Readers<ch.apos/> Handbook</a> for details.</p>
-    <p>(<a idref="gamerulz">The Game Rules</a>) Note that this list is not identical to the one used in <bookref series="lw" book="13tplor"><cite>The Plague Lords of Ruel</cite></bookref>: this list is missing the Silver Bracers and Korlinium Scabbard. These items are restored to the list of permissible items from the Kai and Magnakai series again in <bookref series="lw" book="17tdoi"><cite>The Deathlord of Ixia</cite></bookref>. Presumably, therefore, it should be permissible to leave the Silver Bracers and Korlinium Scabbard in safekeeping at the monastery during the intervening books and retrieve them at the outset of <bookref series="lw" book="17tdoi"><cite>The Deathlord of Ixia</cite></bookref>.</p>
-    <p>(<a idref="discplnz">Grand Master Disciplines</a>) The rules of the books in the Magnakai series (6-12) and the fact that the <quote>rank of Kai Grand Defender<ch.ellips/> means you are skilled in two<ch.ellips/> weapons</quote> imply that for each book that you complete of the Grand Master series (13<ch.endash/>20), you will gain mastery of an additional Weapon. E.g. if you complete <cite>The Plague Lords of Ruel</cite> and have the Grand Master Discipline of Grand Weaponmastery at the beginning of the next book, you can choose an additional Weapon from the list to have mastery of.</p>
-    <p>(<a idref="imprvdsc">Improved Grand Master Disciplines</a>) The <spell>Strength</spell> spell is, in practice, also used in armed combat contrary to what is indicated here.</p>
-    <p>(<a idref="sect5">5</a>) This section represents the correct answer to the dragon door lock in <a idref="sect221">Section 221</a>.</p>
-    <p>(<a idref="sect33">33</a>) You may take <em>one</em> handful of the Floroa Fungi.</p>
-    <p>(<a idref="sect40">40</a>) This section represents the correct answer to the octagonal door lock in <a idref="sect89">Section 89</a>.</p>
-    <p>(<a idref="sect59">59</a>) It is at your discretion whether or not to apply these bonuses cumulatively. It seems that the bonuses are used non-cumulatively (i.e. a Sun Knight would add 2, not 3).</p>
-    <p>(<a idref="sect72">72</a>) This section is unreachable and superfluous since it is equivalent to <a idref="sect349">Section 349</a> and <a idref="sect185">Section 185</a>.</p>
-    <p>(<a idref="sect89">89</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
-    <p>(<a idref="sect121">121</a>) The most reasonable way to treat the temporary <typ class="attribute">ENDURANCE</typ> gain is reduce your score at the end of combat <em>only</em> if it is above your original score. Another choice would be to reduce your score at the end of combat unless it would cause your score to fall to zero or below. The only other option would be to reduce your score regardless which would make the spell pointless.</p>
-    <p>(<a idref="sect156">156</a>) Reduce your <typ class="attribute">ENDURANCE</typ> points score to 15 only if it is currently above that level.</p>
-    <p>(<a idref="sect190">190</a>) It seems logical that you should deduct 1 <typ class="attribute">ENDURANCE</typ> point due to this use of Kai-surge.</p>
-    <p>(<a idref="sect194">194</a>) This section is unreachable and superfluous since it is equivalent to <a idref="sect19">Section 19</a> but less complete.</p>
-    <p>(<a idref="sect221">221</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
-    <p>(<a idref="sect238">238</a>) The weapon bonuses are cumulative (e.g. the Dagger of Vashna which is a Dagger and a Special Item confers a bonus of +1: 2 <ch.minus/> 1).</p>
-    <p>(<a idref="sect297">297</a>) The most reasonable way to treat the temporary <typ class="attribute">ENDURANCE</typ> gain is reduce your score at the end of combat <em>only</em> if it is above your original score. Another choice would be to reduce your score at the end of combat unless it would cause your score to fall to zero or below. The only other option would be to reduce your score regardless which would make the spell pointless.</p>
-    <p>(<a idref="sect312">312</a>) It seems logical that you should deduct 1 <typ class="attribute">ENDURANCE</typ> point due to this use of Kai-surge.</p>
-    <p>(<a idref="sect323">323</a>) This bonus is applicable when the missiles are aimed at you<ch.emdash/>not when you<ch.apos/>re aiming them at someone or something else. Note the word <quote>against</quote> and that the list includes bolts and darts which are not normally used by Lone Wolf.</p>
-   </data>
+   <data/>
+
   </section>
 
   <section class="backmatter" id="illstrat">
@@ -6099,22 +5982,33 @@ note: you need at 3 arrows to follow the link to 180
      <meta><title>Secondary Illustrations</title></meta>
 
      <data>
-      <p>Only the first occurrence of each secondary illustration is cited.</p>
       <ul class="unbulleted">
-       <li><a idref="sect89">Small 1</a></li>
-       <li><a idref="sect221">Small 2</a></li>
-       <li><a idref="sect85">Small 3</a></li>
-       <li><a idref="sect119">Small 4</a></li>
-       <li><a idref="sect25">Small 5</a></li>
-       <li><a idref="sect140">Small 6</a></li>
-       <li><a idref="sect53">Small 7</a></li>
-       <li><a idref="sect100">Small 8</a></li>
-       <li><a idref="sect2">Small 9</a></li>
-       <li><a idref="sect1">Small 10</a></li>
-       <li><a idref="sect45">Small 11</a></li>
-       <li><a idref="sect125">Small 12</a></li>
-       <li><a idref="sect23">Small 14</a></li>
-       <li><a idref="sect36">Small 13</a></li>
+       <li><a idref="equipmnt">Equipment</a></li>
+       <li><a idref="discplnz">Kai Disciplines</a></li>
+       <li><a idref="sect1">Section 1</a></li>
+       <li><a idref="sect2">Section 2</a></li>
+       <li><a idref="sect23">Section 23</a></li>
+       <li><a idref="sect25">Section 25</a></li>
+       <li><a idref="sect36">Section 36</a></li>
+       <li><a idref="sect45">Section 45</a></li>
+       <li><a idref="sect53">Section 53</a></li>
+       <li><a idref="sect71">Section 71</a></li>
+       <li><a idref="sect85">Section 85</a></li>
+       <li><a idref="sect89">Section 89</a></li>
+       <li><a idref="sect100">Section 100</a></li>
+       <li><a idref="sect105">Section 105</a></li>
+       <li><a idref="sect119">Section 119</a></li>
+       <li><a idref="sect124">Section 124</a></li>
+       <li><a idref="sect125">Section 125</a></li>
+       <li><a idref="sect140">Section 140</a></li>
+       <li><a idref="sect149">Section 149</a></li>
+       <li><a idref="sect156">Section 156</a></li>
+       <li><a idref="sect161">Section 161</a></li>
+       <li><a idref="sect162">Section 162</a></li>
+       <li><a idref="sect221">Section 221</a></li>
+       <li><a idref="sect238">Section 238</a></li>
+       <li><a idref="sect265">Section 265</a></li>
+       <li><a idref="sect270">Section 270</a></li>
       </ul>
      </data>
     </section>
