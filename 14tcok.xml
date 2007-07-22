@@ -11,96 +11,19 @@
 
 <gamebook xml:lang="en-UK" version="0.12">
 
-<!--
-
-$Id$
-$Log: 14tcok.xml,v $
-Revision 1.53 2007/07/04 13:45:00  Simon Osborne
-Fixed illustration captions.
-
-Revision 1.52 2007/06/27 11:26:48  Simon Osborne
-Changed Kai Disciplines -> Grand Master Disciplines on the
-Combat Rules Summary
-
-Revision 1.51  2007/06/26 13:09:02  Simon Osborne
-Fixed incorrect use of <cite> tags in one instance.
-
-Revision 1.5  2007/06/25 15:09:15  Simon Osborne
-Many errata issues, non-errata issues, and xml structural issues fixed.
-XML now conforms to 0.12
-
-Revision 1.4  2005/03/26 16:22:12  jonathan.blake
-Adding Illustrator Transcription credits that went missing since
-The Masters of Darkness
-
-Revision 1.3  2005/03/10 18:21:51  jonathan.blake
-Removed link to old staff email address.
-
-Revision 1.2  2005/03/10 06:41:19  jonathan.blake
-*** empty log message ***
-
-Revision 1.1  2004/11/09 06:47:16  jonathan.blake
-Initial Freepository revision
-
-
-//// RCS Revision Log ////
-
-Revision 1.7  2003/03/05 23:51:16  jblake
-Fixes to the Table of Illustrations, illustrations placement
-and markup.
-
-Revision 1.6  2003/03/05 22:01:56  jblake
-Moved small illustration placeholders into chosen sections
-and implemented the Table of Illustrations.
-
-Revision 1.5  2003/03/03 17:00:00 jdougan
-Added illustrations and placeholder markup for the small illustrations.
-
-Revision 1.4  2003/02/24 15:33:46  jblake
-Inserted missing backmatter and fixed validity.
-
-Revision 1.3  2003/02/24 15:00:00  jdougan
-Coded special characters and added backmatter.
-
-Revision 1.2  2003/02/20 17:47:00  jblake
-Added numbered sections and validated.
-
-Revision 1.1  2003/02/20 17:21:09  jdougan
-Initial progress on front matter
-
-Change log:
-- TSSF: Changed Oarklands to Darklands as a presumed OCR error.
-Game Rules: retained original list of acceptable Special Items from 13tplor
-As the XML editions of the front matter from 13TPLoR and the Rules Handbook were used to speed the processing of the existing front matter, all remaining errata in the front matter from 13TPLoR apply here, as well. this also means that the Combat Rules example is the one from the Rules Handbook. (it was this editor's opinion that a Combat Ratio of +10 was unrealistic for a first-time player.)
-
-- Inserted coding for <ch.emdash/> and <ch.endash/>
-- Added coding for <quote>, and <thought> markup to appropriate speeches.
-- Pasted blank backmatter
-- Replaced all remaining ' with <ch.apos/>
-- Fixed markup of a few lists of found items
-- Added placeholder code for primary illustrations; full code for combination lock illustrations
-- Fixed dimensions and references on primary illustrations; added formatted placeholder code for secondary illustrations in following commented section
-- Fixed captions in primary illustrations
-
-//////////////////////////
-
-TO DO:
-
-- do the Statuettes of Zagarna and Slutar occupy a Backpack space in addition to a Special Item slot?
-- Footnotes for combination lock answers
-- add "foreign" tags to Giak
--->
-
  <meta>
   <title>The Captives of Kaag</title>
   <creator class="short">Joe Dever and Brian Williams</creator>
-  <creator class="medium">Joe Dever<br />Illustrated by Brian Williams</creator>
+  <creator class="medium">
+   <line>Joe Dever</line>
+   <line>Illustrated by Brian Williams</line>
+  </creator>
   <creator class="long">
    &inclusion.joe.dever.bio.lw;
    &inclusion.brian.williams.bio.lw;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2007</year><month>6</month><day>22</day></date>
+  <date class="publication"><year>2007</year><month>7</month><day>22</day></date>
   <description class="blurb">
    <p>You are the Lone Wolf<ch.emdash/>Kai Grand Master of Sommerlund. After the demise of the Darklords of Helgedad, the fearsome city-fortress of Kaag became a refuge for the remains of their broken armies. Defeated and powerless, these minions seemed doomed to live in bitter isolation from the rest of Magnamund. But now a new evil is stirring deep within the dungeons of Kaag.<ch.ellips/></p>
    <p>In <cite>The Captives of Kaag</cite>, you must venture alone into the black heart of Kaag, to free your friend from the forces which imprison him against his will. Will you succeed? Or will you and Banedon fall victim to the evil power which commands this fortress of nightmares?</p>
@@ -108,9 +31,16 @@ TO DO:
   <description class="publication">
    <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
   </description>
-  <rights class="copyrights">Text copyright <ch.copy/> 1991 Joe Dever.<br />Illustrations copyright <ch.copy/> 1991 Brian Williams.</rights>
+  <rights class="copyrights">
+   <line>Text copyright <ch.copy/> 1991 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1991 Brian Williams.</line>
+  </rights>
   <rights class="license-notification">
-   <p>Text copyright <ch.copy/> 1991 Joe Dever.<br />Illustrations copyright <ch.copy/> 1991 Brian Williams.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+   <p>
+    <line>Text copyright <ch.copy/> 1991 Joe Dever.</line>
+    <line>Illustrations copyright <ch.copy/> 1991 Brian Williams.</line>
+    <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+   </p>
   </rights>
  </meta>
 
@@ -158,23 +88,45 @@ TO DO:
       <data>
        <dl>
         <dt>Transcription</dt>
-         <dd>Rob Hataway<br />Tim Pederick</dd>
+         <dd>
+	  <line>Rob Hataway</line>
+	  <line>Tim Pederick</line>
+	 </dd>
         <dt>Illustration Transcription</dt>
          <dd>Jonathan Blake</dd>
         <dt>XML</dt>
-         <dd>Jonathan Blake<br />Jeff Dougan<br />Simon Osborne</dd>
+         <dd>
+	  <line>Jonathan Blake</line>
+	  <line>Jeff Dougan</line>
+	  <line>Simon Osborne</line>
+	 </dd>
         <dt>Action Charts</dt>
-         <dd>JC Alvarez<br />Jonathan Blake</dd>
+         <dd>
+	  <line>JC Alvarez</line>
+	  <line>Jonathan Blake></line>
+	 </dd>
         <dt>Proofreading</dt>
-         <dd>Rob Hartley (Sections 141<ch.endash/>210)<br />Tim Pederick (Sections 71<ch.endash/>140)<br />Martin Ryland (Frontmatter, Sections 1<ch.endash/>70 and 211<ch.endash/>350)</dd>
+         <dd>
+	  <line>Rob Hartley (Sections 141<ch.endash/>210)</line>
+	  <line>Tim Pederick (Sections 71<ch.endash/>140)</line>
+	  <line>Martin Ryland (Frontmatter, Sections 1<ch.endash/>70 and 211<ch.endash/>350)</line>
+	 </dd>
         <dt>Editing</dt>
-         <dd>David Davis<br />Jeff Dougan<br />Nick Jankowski<br />Kl<ch.ouml/>cker<br />Christopher Lundgren<br />LeRoy McSwain<br />Simon Osborne</dd>
+         <dd>
+	  <line>David Davis</line>
+	  <line>Jeff Dougan</line>
+	  <line>Nick Jankowski</line>
+	  <line>Kl<ch.ouml/>cker</line>
+	  <line>Christopher Lundgren</line>
+	  <line>LeRoy McSwain</line>
+	  <line>Simon Osborne</line>
+	 </dd>
 <!--       <dt>PDF Layout</dt>
          <dd></dd>-->
         <dt>Coordination</dt>
          <dd>Jonathan Blake</dd>
         <dt>Special Thanks</dt>
-         <dd>Neil McGrory<br />Peter Smyth<br />Simon Williams</dd>
+         <dd>Neil McGrory, Peter Smyth, and Simon Williams</dd>
        </dl>
       </data>
      </section>
@@ -5058,42 +5010,42 @@ TO DO:
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acdscplz.gif" width="385" height="246" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acchklst.gif" width="385" height="128" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif"></instance>
     </illustration>
@@ -5208,145 +5160,6 @@ TO DO:
      </meta>
      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif"></instance>
      <instance src="crtpos.tex" width="380" height="500" class="tex"></instance>
-    </illustration>
-   </data>
-  </section>
-
-  <section class="backmatter" id="random">
-   <meta><title>Random Number Table</title></meta>
-
-   <data>
-
-    <illustration class="inline">
-     <meta>
-      <creator>Jonathan Blake</creator>
-     </meta>
-     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
-     <instance src="random.tex" width="380" height="500" class="tex"></instance>
-     <instance class="text">
-      <table>
-       <tr>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>1</td>
-        <td>3</td>
-        <td>1</td>
-        <td>6</td>
-        <td>8</td>
-        <td>6</td>
-        <td>2</td>
-       </tr>
-       <tr>
-        <td>0</td>
-        <td>8</td>
-        <td>6</td>
-        <td>5</td>
-        <td>0</td>
-        <td>5</td>
-        <td>8</td>
-        <td>7</td>
-        <td>4</td>
-        <td>1</td>
-       </tr>
-       <tr>
-        <td>9</td>
-        <td>5</td>
-        <td>1</td>
-        <td>2</td>
-        <td>5</td>
-        <td>7</td>
-        <td>4</td>
-        <td>3</td>
-        <td>1</td>
-        <td>8</td>
-       </tr>
-       <tr>
-        <td>5</td>
-        <td>2</td>
-        <td>4</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>8</td>
-        <td>6</td>
-        <td>0</td>
-        <td>9</td>
-       </tr>
-       <tr>
-        <td>0</td>
-        <td>1</td>
-        <td>9</td>
-        <td>5</td>
-        <td>4</td>
-        <td>9</td>
-        <td>0</td>
-        <td>3</td>
-        <td>1</td>
-        <td>4</td>
-       </tr>
-       <tr>
-        <td>5</td>
-        <td>8</td>
-        <td>1</td>
-        <td>4</td>
-        <td>3</td>
-        <td>6</td>
-        <td>7</td>
-        <td>2</td>
-        <td>8</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>9</td>
-        <td>8</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>0</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-        <td>0</td>
-       </tr>
-       <tr>
-        <td>6</td>
-        <td>2</td>
-        <td>0</td>
-        <td>3</td>
-        <td>4</td>
-        <td>1</td>
-        <td>8</td>
-        <td>6</td>
-        <td>2</td>
-        <td>9</td>
-       </tr>
-       <tr>
-        <td>8</td>
-        <td>4</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>2</td>
-        <td>1</td>
-        <td>0</td>
-        <td>6</td>
-       </tr>
-       <tr>
-        <td>4</td>
-        <td>2</td>
-        <td>5</td>
-        <td>2</td>
-        <td>9</td>
-        <td>0</td>
-        <td>5</td>
-        <td>4</td>
-        <td>8</td>
-        <td>7</td>
-       </tr>
-      </table>
-     </instance>
     </illustration>
 
     <illustration>
@@ -5554,6 +5367,145 @@ TO DO:
    </data>
   </section>
 
+  <section class="backmatter" id="random">
+   <meta><title>Random Number Table</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
+     <instance src="random.tex" width="380" height="500" class="tex"></instance>
+     <instance class="text">
+      <table>
+       <tr>
+        <td>8</td>
+        <td>7</td>
+        <td>6</td>
+        <td>1</td>
+        <td>3</td>
+        <td>1</td>
+        <td>6</td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>8</td>
+        <td>6</td>
+        <td>5</td>
+        <td>0</td>
+        <td>5</td>
+        <td>8</td>
+        <td>7</td>
+        <td>4</td>
+        <td>1</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>5</td>
+        <td>1</td>
+        <td>2</td>
+        <td>5</td>
+        <td>7</td>
+        <td>4</td>
+        <td>3</td>
+        <td>1</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>2</td>
+        <td>4</td>
+        <td>7</td>
+        <td>6</td>
+        <td>5</td>
+        <td>8</td>
+        <td>6</td>
+        <td>0</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>9</td>
+        <td>5</td>
+        <td>4</td>
+        <td>9</td>
+        <td>0</td>
+        <td>3</td>
+        <td>1</td>
+        <td>4</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>8</td>
+        <td>1</td>
+        <td>4</td>
+        <td>3</td>
+        <td>6</td>
+        <td>7</td>
+        <td>2</td>
+        <td>8</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>8</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>0</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>6</td>
+        <td>2</td>
+        <td>0</td>
+        <td>3</td>
+        <td>4</td>
+        <td>1</td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>4</td>
+        <td>8</td>
+        <td>7</td>
+        <td>6</td>
+        <td>5</td>
+        <td>2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>6</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td>2</td>
+        <td>5</td>
+        <td>2</td>
+        <td>9</td>
+        <td>0</td>
+        <td>5</td>
+        <td>4</td>
+        <td>8</td>
+        <td>7</td>
+       </tr>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
   <section class="backmatter" id="errata">
    <meta><title>Errata</title></meta>
 
@@ -5742,21 +5694,8 @@ TO DO:
    <section class="backmatter" id="footnotz">
     <meta><title>Footnotes</title></meta>
 
-    <data>
-     <p>(<a idref="gamerulz">The Game Rules</a>) The Discipline bonuses mentioned do not affect your permanent scores. If you have completed previous adventures, the Disciplines that you have mastered may still be beneficial. See the Grand Master Rules section of the <a href="&link.rh;">Readers<ch.apos/> Handbook</a> for details.</p>
-     <p>(<a idref="gamerulz">The Game Rules</a>) Note that this list is not identical to the one used in <bookref series="lw" book="13tplor"><cite>The Plague Lords of Ruel</cite></bookref>: this list is missing the Silver Bracers and Korlinium Scabbard. These items are restored to the list of permissible items from the Kai and Magnakai series again in <bookref series="lw" book="17tdoi"><cite>The Deathlord of Ixia</cite></bookref>. Presumably, therefore, it should be permissible to leave the Silver Bracers and Korlinium Scabbard in safekeeping at the monastery during the intervening books and retrieve them at the outset of <bookref series="lw" book="17tdoi"><cite>The Deathlord of Ixia</cite></bookref>.</p>
-     <p>(<a idref="discplnz">Grand Master Disciplines</a>) The rules of the books in the Magnakai series (6-12) and the fact that the <quote>rank of Kai Grand Defender<ch.ellips/> means you are skilled in two<ch.ellips/> weapons</quote> imply that for each book that you complete of the Grand Master series (13-20), you will gain mastery of an additional Weapon. E.g. if you complete <cite>The Plague Lords of Ruel</cite> and have the Grand Master Discipline of Grand Weaponmastery at the beginning of the next book, you can choose an additional Weapon from the list to have mastery of.</p>
-     <p>(<a idref="sect3">3</a>) This section corresponds to the correct answer to the Kagonite door lock in <a idref="sect127">Section 127</a> and <a idref="sect319">Section 319</a>.</p>
-     <p>(<a idref="sect8">8</a>) This section corresponds to the correct answer to the lock on the exit from the torture chamber of the Nadziranim in <a idref="sect220">Section 220</a>.</p>
-     <p>(<a idref="sect20">20</a>) This section corresponds to the correct answer to the lock on the <quote>stout steel-sheathed doors</quote> in <a idref="sect181">Section 181</a>.</p>
-     <p>(<a idref="sect62">62</a>) Presumably by <quote>double all bonuses it bestows upon you</quote> you are meant to receive a 16 point bonus to your <typ class="attribute">COMBAT SKILL</typ>.</p>
-     <p>(<a idref="sect127">127</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
-     <p>(<a idref="sect181">181</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
-     <p>(<a idref="sect220">220</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
-     <p>(<a idref="sect230">230</a>) Kika are one-tenth of the value of a Gold Crown and also take up one-tenth of the space of a Gold Crown.</p>
-     <p>(<a idref="sect263">263</a>) Presumably by <quote>double all bonuses it bestows upon you</quote> you are meant to receive a 16 point bonus to your <typ class="attribute">COMBAT SKILL</typ>.</p>
-     <p>(<a idref="sect319">319</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
-    </data>
+    <data/>
+
    </section>
 
    <section class="backmatter" id="illstrat">
@@ -5800,23 +5739,26 @@ TO DO:
       <meta><title>Secondary Illustrations</title></meta>
 
       <data>
-       <p>Only the first occurrence of each secondary illustration is cited.</p>
        <ul class="unbulleted">
-        <li><a idref="sect309">Small 1</a></li>
-        <li><a idref="sect250">Small 2</a></li>
-        <li><a idref="sect240">Small 3</a></li>
-        <li><a idref="sect82">Small 4</a></li>
-        <li><a idref="sect1">Small 5</a></li>
-        <li><a idref="sect88">Small 6</a></li>
-        <li><a idref="sect200">Small 7</a></li>
-        <li><a idref="sect85">Small 8</a></li>
-        <li><a idref="sect224">Small 9</a></li>
-        <li><a idref="sect227">Small 10</a></li>
-        <li><a idref="sect248">Small 11</a></li>
-        <li><a idref="sect279">Small 12</a></li>
+        <li><a idref="equipmnt">Equipment</a></li>
+        <li><a idref="discplnz">Kai Disciplines</a></li>
+        <li><a idref="sect1">Section 1</a></li>
+        <li><a idref="sect82">Section 82</a></li>
+        <li><a idref="sect85">Section 85</a></li>
+        <li><a idref="sect88">Section 88</a></li>
         <li><a idref="sect127">Section 127</a></li>
         <li><a idref="sect181">Section 181</a></li>
+        <li><a idref="sect200">Section 200</a></li>
         <li><a idref="sect220">Section 220</a></li>
+        <li><a idref="sect224">Section 224</a></li>
+        <li><a idref="sect227">Section 227</a></li>
+        <li><a idref="sect235">Section 235</a></li>
+        <li><a idref="sect240">Section 240</a></li>
+        <li><a idref="sect248">Section 248</a></li>
+        <li><a idref="sect250">Section 250</a></li>
+        <li><a idref="sect279">Section 279</a></li>
+        <li><a idref="sect303">Section 303</a></li>
+        <li><a idref="sect309">Section 309</a></li>
         <li><a idref="sect319">Section 319</a></li>
        </ul>
       </data>
