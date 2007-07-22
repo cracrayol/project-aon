@@ -11,91 +11,36 @@
 
 <gamebook xml:lang="en-UK" version="0.12">
 
-
-<!--
-
-$Id$
-$Log: 16tlov.xml,v $
-Revision 2.12 2007/07/04 13:45:00  Simon Osborne
-Fixed illustration captions.
-
-Revision 2.11 2007/06/27 11:23:52  Simon Osborne
-Changed Kai Disciplines -> Grand Master Disciplines on the
-Combat Rules Summary
-
-Revision 2.1  2007/06/26 13:03:25  Simon Osborne
-Used <ch.lsquot/> and <ch.rsquot/> in relevant Errata entries.
-
-Revision 2.0  2007/06/25 19:51:15  Simon Osborne
-Many errata issues, non-errata issues, and xml structural issues fixed.
-XML now conforms to 0.12
-
-Revision 1.8  2006/11/21 17:41:26  jonathan.blake
-Various changes
-
-Revision 1.7  2005/03/26 16:37:14  jonathan.blake
-Added Illustration Transcription credits that went missing since
-The Masters of Darkness
-
-Revision 1.6  2005/03/11 19:24:30  jonathan.blake
-Expanded footnote for 189 - other small changes.
-
-Revision 1.5  2005/03/10 18:32:33  jonathan.blake
-Corrected the dimensions for the Action Chart Disciplines illustration.
-
-Revision 1.4  2005/03/10 18:25:02  jonathan.blake
-Made revisions according to change reports to date.
-
-Revision 1.3  2005/03/10 06:33:00  jonathan.blake
-*** empty log message ***
-
-Revision 1.2  2005/03/05 15:16:24  jonathan.blake
-Implementing requested changes to date.
-
-Revision 1.1  2004/11/08 00:25:27  cvsuser
-Initial Freepository revision
-
-
-//// RCS Revision Log ////
-
-Revision 1.4  2004/10/19 05:35:50  jon
-Corrections from editors.
-
-Revision 1.3  2004/05/17 17:51:45  Jon
-Filtered through the gbfix* and gblint scripts.
-
-Revision 1.2  2004/05/13 18:59:33  Jon
-Marked up extra matter and other minor changes.
-
-Revision 1.1  2002/10/20 17:06:39  jblake
-Initial revision
-
-//////////////////////////
-
-////// To Do //////
-
--->
-
  <meta>
   <title>The Legacy of Vashna</title>
   <creator class="short">Joe Dever and Brian Williams</creator>
-  <creator class="medium">Joe Dever<br />Illustrated by Brian Williams</creator>
+  <creator class="medium">
+   <line>Joe Dever</line>
+   <line>Illustrated by Brian Williams</line>
+  </creator>
   <creator class="long">
    &inclusion.joe.dever.bio.lw;
    &inclusion.brian.williams.bio.lw;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2005</year><month>3</month><day>12</day></date>
+  <date class="publication"><year>2007</year><month>7</month><day>22</day></date>
   <description class="blurb">
    <p>You are Lone Wolf<ch.emdash/>Kai Grand Master of Sommerlund. The spirit of Vashna, greatest of all the Darklords, is imprisoned deep within the fathomless reaches of the Maakengorge. For centuries, servants of darkness have tried to summon him to do their bidding but always they have failed<ch.ellips/> until now!</p>
    <p>In <cite>The Legacy of Vashna</cite>, you must locate and defeat the Darklord<ch.apos/>s minions before they can complete the resurrection of their master<ch.emdash/>the most powerful Lord of Evil your world has ever known. Will you succeed in your quest? Or will you and your fragile world perish in the wrath of Vashna?</p>
   </description>
   <description class="publication">
-   <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
+   <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
   </description>
-  <rights class="copyrights">Text copyright <ch.copy/> 1991 Joe Dever.<br />Illustrations copyright <ch.copy/> 1991 Brian Williams.</rights>
+  <rights class="copyrights">
+   <line>Text copyright <ch.copy/> 1991 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1991 Brian Williams.</line>
+  </rights>
   <rights class="license-notification">
-   <p>Text copyright <ch.copy/> 1991 Joe Dever.<br />Illustrations copyright <ch.copy/> 1991 Brian Williams.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+   <p>
+    <line>Text copyright <ch.copy/> 1991 Joe Dever.</line>
+    <line>Illustrations copyright <ch.copy/> 1991 Brian Williams.</line>
+    <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+   </p>
   </rights>
  </meta>
 
@@ -147,17 +92,37 @@ Initial revision
         <dt>Illustration Transcription</dt>
          <dd>Jonathan Blake</dd>
         <dt>XML</dt>
-         <dd>Jonathan Blake<br/>Simon Osborne</dd>
+         <dd>
+	  <line>Jonathan Blake</line>
+	  <line>Simon Osborne</line>
+	 </dd>
         <dt>Action Charts</dt>
-         <dd>JC Alvarez<br />Jonathan Blake</dd>
+         <dd>
+	  <line>JC Alvarez</line>
+	  <line>Jonathan Blake</line>
+	 </dd>
         <dt>Proofreading</dt>
-         <dd>Michael Davies (Sections 71<ch.endash/>140)<br/>Jeff Dougan (Frontmatter)<br/>Markus Eisensehr (Sections 141<ch.endash/>210)<br/>Brett Taylor (Sections 1<ch.endash/>70, 211<ch.endash/>350)</dd>
+         <dd>
+	  <line>Michael Davies (Sections 71<ch.endash/>140)</line>
+	  <line>Jeff Dougan (Frontmatter)</line>
+	  <line>Markus Eisensehr (Sections 141<ch.endash/>210)</line>
+	  <line>Brett Taylor (Sections 1<ch.endash/>70, 211<ch.endash/>350)</line>
+	 </dd>
         <dt>Editing</dt>
-          <dd>David Davis<br/>Ingo Kl<ch.ouml/>cker<br/>Chris Lundgren<br/>Neil McGrory<br/>Timothy Pederick<br/>Simon Osborne<br/>Keith Sheldon<br/>Jennifer Sigman</dd>
+         <dd>
+	  <line>David Davis</line>
+	  <line>Ingo Kl<ch.ouml/>cker</line>
+	  <line>Chris Lundgren</line>
+	  <line>Neil McGrory</line>
+	  <line>Timothy Pederick</line>
+	  <line>Simon Osborne</line>
+	  <line>Keith Sheldon</line>
+	  <line>Jennifer Sigman</line>
+	 </dd>
         <dt>Coordination</dt>
          <dd>Jonathan Blake</dd>
        <dt>Special Thanks</dt>
-         <dd>Laurence Leach<br/>Jeremy Welker</dd>
+         <dd>Laurence Leach and Jeremy Welker</dd>
        </dl>
       </data>
      </section>
@@ -5220,42 +5185,42 @@ Initial revision
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acdscplz.gif" width="385" height="246" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acchklst.gif" width="385" height="128" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif"></instance>
     </illustration>
@@ -5372,145 +5337,6 @@ Initial revision
      </meta>
      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif"></instance>
      <instance src="crtpos.tex" width="380" height="500" class="tex"></instance>
-    </illustration>
-   </data>
-  </section>
-
-  <section class="backmatter" id="random">
-   <meta><title>Random Number Table</title></meta>
-
-   <data>
-
-    <illustration class="inline">
-     <meta>
-      <creator>Jonathan Blake</creator>
-     </meta>
-     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
-     <instance src="random.tex" width="380" height="500" class="tex"></instance>
-     <instance class="text">
-      <table>
-       <tr>
-        <td>8</td>
-        <td>4</td>
-        <td>6</td>
-        <td>1</td>
-        <td>0</td>
-        <td>5</td>
-        <td>6</td>
-        <td>8</td>
-        <td>3</td>
-        <td>2</td>
-       </tr>
-       <tr>
-        <td>0</td>
-        <td>6</td>
-        <td>3</td>
-        <td>6</td>
-        <td>0</td>
-        <td>5</td>
-        <td>8</td>
-        <td>7</td>
-        <td>4</td>
-        <td>9</td>
-       </tr>
-       <tr>
-        <td>7</td>
-        <td>5</td>
-        <td>6</td>
-        <td>2</td>
-        <td>5</td>
-        <td>8</td>
-        <td>4</td>
-        <td>8</td>
-        <td>1</td>
-        <td>6</td>
-       </tr>
-       <tr>
-        <td>5</td>
-        <td>3</td>
-        <td>4</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>8</td>
-        <td>5</td>
-        <td>0</td>
-        <td>9</td>
-       </tr>
-       <tr>
-        <td>0</td>
-        <td>1</td>
-        <td>9</td>
-        <td>6</td>
-        <td>2</td>
-        <td>9</td>
-        <td>8</td>
-        <td>3</td>
-        <td>1</td>
-        <td>8</td>
-       </tr>
-       <tr>
-        <td>2</td>
-        <td>7</td>
-        <td>1</td>
-        <td>4</td>
-        <td>1</td>
-        <td>2</td>
-        <td>7</td>
-        <td>4</td>
-        <td>8</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>1</td>
-        <td>0</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>0</td>
-        <td>2</td>
-        <td>3</td>
-        <td>1</td>
-        <td>0</td>
-       </tr>
-       <tr>
-        <td>6</td>
-        <td>8</td>
-        <td>0</td>
-        <td>2</td>
-        <td>4</td>
-        <td>9</td>
-        <td>5</td>
-        <td>6</td>
-        <td>2</td>
-        <td>9</td>
-       </tr>
-       <tr>
-        <td>5</td>
-        <td>4</td>
-        <td>8</td>
-        <td>7</td>
-        <td>8</td>
-        <td>5</td>
-        <td>2</td>
-        <td>7</td>
-        <td>0</td>
-        <td>8</td>
-       </tr>
-       <tr>
-        <td>1</td>
-        <td>6</td>
-        <td>3</td>
-        <td>2</td>
-        <td>9</td>
-        <td>4</td>
-        <td>1</td>
-        <td>4</td>
-        <td>5</td>
-        <td>7</td>
-       </tr>
-      </table>
-     </instance>
     </illustration>
 
     <illustration>
@@ -5712,6 +5538,145 @@ Initial revision
          <td>k/0</td>
         </tr>
        </tbody>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
+  <section class="backmatter" id="random">
+   <meta><title>Random Number Table</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
+     <instance src="random.tex" width="380" height="500" class="tex"></instance>
+     <instance class="text">
+      <table>
+       <tr>
+        <td>8</td>
+        <td>4</td>
+        <td>6</td>
+        <td>1</td>
+        <td>0</td>
+        <td>5</td>
+        <td>6</td>
+        <td>8</td>
+        <td>3</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>6</td>
+        <td>3</td>
+        <td>6</td>
+        <td>0</td>
+        <td>5</td>
+        <td>8</td>
+        <td>7</td>
+        <td>4</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>7</td>
+        <td>5</td>
+        <td>6</td>
+        <td>2</td>
+        <td>5</td>
+        <td>8</td>
+        <td>4</td>
+        <td>8</td>
+        <td>1</td>
+        <td>6</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>3</td>
+        <td>4</td>
+        <td>7</td>
+        <td>6</td>
+        <td>5</td>
+        <td>8</td>
+        <td>5</td>
+        <td>0</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>9</td>
+        <td>6</td>
+        <td>2</td>
+        <td>9</td>
+        <td>8</td>
+        <td>3</td>
+        <td>1</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>7</td>
+        <td>1</td>
+        <td>4</td>
+        <td>1</td>
+        <td>2</td>
+        <td>7</td>
+        <td>4</td>
+        <td>8</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>1</td>
+        <td>0</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>0</td>
+        <td>2</td>
+        <td>3</td>
+        <td>1</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>6</td>
+        <td>8</td>
+        <td>0</td>
+        <td>2</td>
+        <td>4</td>
+        <td>9</td>
+        <td>5</td>
+        <td>6</td>
+        <td>2</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>4</td>
+        <td>8</td>
+        <td>7</td>
+        <td>8</td>
+        <td>5</td>
+        <td>2</td>
+        <td>7</td>
+        <td>0</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>1</td>
+        <td>6</td>
+        <td>3</td>
+        <td>2</td>
+        <td>9</td>
+        <td>4</td>
+        <td>1</td>
+        <td>4</td>
+        <td>5</td>
+        <td>7</td>
+       </tr>
       </table>
      </instance>
     </illustration>
@@ -6000,37 +5965,8 @@ Initial revision
    <section class="backmatter" id="footnotz">
     <meta><title>Footnotes</title></meta>
 
-    <data>
-     <p>(<a idref="gamerulz">The Game Rules</a>) The Discipline bonuses mentioned do not affect your permanent scores. If you have completed previous adventures, the Disciplines that you have mastered may still be beneficial. See the Grand Master Rules section of the <a href="&link.rh;">Readers<ch.apos/> Handbook</a> for details.</p>
-     <p>(<a idref="gamerulz">The Game Rules</a>) Note that this list is not identical to the one used in <bookref series="lw" book="13tplor"><cite>The Plague Lords of Ruel</cite></bookref>: this list is missing the Silver Bracers and Korlinium Scabbard. These items are restored to the list of permissible items from the Kai and Magnakai series again in <bookref series="lw" book="17tdoi"><cite>The Deathlord of Ixia</cite></bookref>. Presumably, therefore, it should be permissible to leave the Silver Bracers and Korlinium Scabbard in safekeeping at the monastery during the intervening books and retrieve them at the outset of <bookref series="lw" book="17tdoi"><cite>The Deathlord of Ixia</cite></bookref>.</p>
-     <p>(<a idref="discplnz">Grand Master Disciplines</a>) The rules of the books in the Magnakai series (6<ch.endash/>12) and the fact that the <quote>rank of Kai Grand Defender<ch.ellips/> means you are skilled in two<ch.ellips/> weapons</quote> imply that for each book that you complete of the Grand Master series (13<ch.endash/>20), you will gain mastery of an additional Weapon. E.g. if you complete <cite>The Plague Lords of Ruel</cite> and have the Grand Master Discipline of Grand Weaponmastery at the beginning of the next book, you can choose an additional Weapon from the list to have mastery of.</p>
-     <p>(<a idref="imprvdsc">Improved Grand Master Disciplines</a>) The <spell>Strength</spell> spell is, in practice, also used in armed combat contrary to what is indicated here.</p>
-     <p>(<a idref="sect1">1</a>) Note this Scroll as a Special Item that doesn<ch.apos/>t take up any space on your <a idref="action">Action Chart</a>.</p>
-     <p>(<a idref="sect6">6</a>) This is the correct answer to the crystal dais grid in <a idref="sect164">Section 164</a>.</p>
-     <p>(<a idref="sect10">10</a>) This is the correct answer to Shamath<ch.apos/>s riddle in <a idref="sect189">Section 189</a>.</p>
-     <p>(<a idref="sect21">21</a>) If you have already spent all of your money, you have a choice: you may either give her an item of comparable or greater value, or you may simply disregard this cost.</p>
-     <p>(<a idref="sect36">36</a>) The originally published edition of this book instructed you to add 5 points to your <typ class="attribute">ENDURANCE</typ> score. We believe that our alteration to specify restoration instead of addition is closer to the intent of the author. The original led to several questions. Would this additional score be a permanent increase of your maximum <typ class="attribute">ENDURANCE</typ>? Permanent alterations of basic scores in the middle of an adventure are rare making this option unlikely. Nor does the context support this conclusion. Then would this addition only be for the duration of the combat similar to the bonus to <typ class="attribute">COMBAT SKILL</typ>? This makes the bonus useless. If you were to complete the combat with fewer than 5 <typ class="attribute">ENDURANCE</typ> points remaining and then removed the bonus after the combat was over, you would be just as dead as without the bonus. Another proposal was that you should remove the bonus from your score only if it leaves your score above the normal maximum after the combat. Although reasonable, this probably wasn<ch.apos/>t the intent of the author since he did not specify this procedure. We have opted for the simplest, most straightforward choice: that this is just a restorative effect.</p>
-     <p>(<a idref="sect54">54</a>) There are strong indications that Arch Druid Cadak should be immune to both Mindblast and Psi-surge, but not Kai-surge. The Cener High Priest fought in <bookref series="lw" book="13tplor"><cite>The Plague Lords of Ruel</cite></bookref> Sections <bookref series="lw" book="13tplor" section="sect156">156</bookref> and <bookref series="lw" book="13tplor" section="sect212">212</bookref> is immune to these lesser psychic Disciplines, and <a idref="sect267">Section 267</a> of this book describes Arch Druid Cadak<ch.apos/>s inner mind as <quote>well-shielded</quote>.</p>
-     <p>(<a idref="sect62">62</a>) If you have already spent all of your money, you have a choice: you may either give him an item of comparable or greater value, or you may simply disregard this cost.</p>
-     <p>(<a idref="sect103">103</a>) The originally published edition of this book instructed you to add 5 points to your <typ class="attribute">ENDURANCE</typ> score. We believe that our alteration to specify restoration instead of addition is closer to the intent of the author. The original led to several questions. Would this additional score be a permanent increase of your maximum <typ class="attribute">ENDURANCE</typ>? Permanent alterations of basic scores in the middle of an adventure are rare making this option unlikely. Nor does the context support this conclusion. Then would this addition only be for the duration of the combat similar to the bonus to <typ class="attribute">COMBAT SKILL</typ>? This makes the bonus useless. If you were to complete the combat with fewer than 5 <typ class="attribute">ENDURANCE</typ> points remaining and then removed the bonus after the combat was over, you would be just as dead as without the bonus. Another proposal was that you should remove the bonus from your score only if it leaves your score above the normal maximum after the combat. Although reasonable, this probably wasn<ch.apos/>t the intent of the author since he did not specify this procedure. We have opted for the simplest, most straightforward choice: that this is just a restorative effect.</p>
-     <p>(<a idref="sect110">110</a>) This is the correct answer to the second sequence of numbers on the crystal dais grid in <a idref="sect235">Section 235</a>.</p>
-     <p>(<a idref="sect112">112</a>) You may also eat a single Meal and only lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
-     <p>(<a idref="sect118">118</a>) The originally published edition of this book instructed you to add 5 points to your <typ class="attribute">ENDURANCE</typ> score. We believe that our alteration to specify restoration instead of addition is closer to the intent of the author. The original led to several questions. Would this additional score be a permanent increase of your maximum <typ class="attribute">ENDURANCE</typ>? Permanent alterations of basic scores in the middle of an adventure are rare making this option unlikely. Nor does the context support this conclusion. Then would this addition only be for the duration of the combat similar to the bonus to <typ class="attribute">COMBAT SKILL</typ>? This makes the bonus useless. If you were to complete the combat with fewer than 5 <typ class="attribute">ENDURANCE</typ> points remaining and then removed the bonus after the combat was over, you would be just as dead as without the bonus. Another proposal was that you should remove the bonus from your score only if it leaves your score above the normal maximum after the combat. Although reasonable, this probably wasn<ch.apos/>t the intent of the author since he did not specify this procedure. We have opted for the simplest, most straightforward choice: that this is just a restorative effect.</p>
-     <p>(<a idref="sect123">123</a>) There are strong indications that Arch Druid Cadak should be immune to both Mindblast and Psi-surge, but not Kai-surge. The Cener High Priest fought in <bookref series="lw" book="13tplor"><cite>The Plague Lords of Ruel</cite></bookref> Sections <bookref series="lw" book="13tplor" section="sect156">156</bookref> and <bookref series="lw" book="13tplor" section="sect212">212</bookref> is immune to these lesser psychic Disciplines, and <a idref="sect267">Section 267</a> of this book describes Arch Druid Cadak<ch.apos/>s inner mind as <quote>well-shielded</quote>.</p>
-     <p>(<a idref="sect135">135</a>) There are strong indications that Arch Druid Cadak should be immune to both Mindblast and Psi-surge, but not Kai-surge. The Cener High Priest fought in <bookref series="lw" book="13tplor"><cite>The Plague Lords of Ruel</cite></bookref> Sections <bookref series="lw" book="13tplor" section="sect156">156</bookref> and <bookref series="lw" book="13tplor" section="sect212">212</bookref> is immune to these lesser psychic Disciplines, and <a idref="sect267">Section 267</a> of this book describes Arch Druid Cadak<ch.apos/>s inner mind as <quote>well-shielded</quote>.</p>
-     <p>(<a idref="sect142">142</a>) The originally published edition of this book instructed you to add 5 points to your <typ class="attribute">ENDURANCE</typ> score. We believe that our alteration to specify restoration instead of addition is closer to the intent of the author. The original led to several questions. Would this additional score be a permanent increase of your maximum <typ class="attribute">ENDURANCE</typ>? Permanent alterations of basic scores in the middle of an adventure are rare making this option unlikely. Nor does the context support this conclusion. Then would this addition only be for the duration of the combat similar to the bonus to <typ class="attribute">COMBAT SKILL</typ>? This makes the bonus useless. If you were to complete the combat with fewer than 5 <typ class="attribute">ENDURANCE</typ> points remaining and then removed the bonus after the combat was over, you would be just as dead as without the bonus. Another proposal was that you should remove the bonus from your score only if it leaves your score above the normal maximum after the combat. Although reasonable, this probably wasn<ch.apos/>t the intent of the author since he did not specify this procedure. We have opted for the simplest, most straightforward choice: that this is just a restorative effect.</p>
-     <p>(<a idref="sect143">143</a>) It is most likely that these Discipline bonuses are not intended to be cumulative.</p>
-     <p>(<a idref="sect150">150</a>) It is most likely that these Discipline bonuses are not intended to be cumulative.</p>
-     <p>(<a idref="sect155">155</a>) There is no indication whether or not the extra meals that you gather as you ride should also have a curative effect. If you decide that they do, record each on your <a idref="action">Action Chart</a> as <quote>Meal +3 <typ class="attribute">EP</typ></quote>.</p>
-     <p>(<a idref="sect164">164</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct. You have only one chance to guess at the correct answer. If you guess incorrectly, <a idref="sect235">turn immediately to 235</a>.</p>
-     <p>(<a idref="sect189">189</a>) The correct method for finding the solution of this riddle has eluded readers ever since <cite>The Legacy of Vashna</cite> was published (as befits a riddle posed by an immortal demoness). If you can find the correct solution, please <a href="&link.staff.contact;">contact</a> the Project Aon volunteers. The section corresponding to the correct answer will have a footnote confirming that it is indeed correct. You have only one chance to guess at the correct answer. If you guess incorrectly, <a idref="sect216">turn immediately to 216</a>.</p>
-     <p>(<a idref="sect229">229</a>) Since this attack is described as a <quote>Kai-blast</quote>, you should deduct 4 <typ class="attribute">ENDURANCE</typ> points from your current score.</p>
-     <p>(<a idref="sect229">229</a>) The originally published edition of this book instructed you to add 5 points to your <typ class="attribute">ENDURANCE</typ> score. We believe that our alteration to specify restoration instead of addition is closer to the intent of the author. The original led to several questions. Would this additional score be a permanent increase of your maximum <typ class="attribute">ENDURANCE</typ>? Permanent alterations of basic scores in the middle of an adventure are rare making this option unlikely. Nor does the context support this conclusion. Then would this addition only be for the duration of the combat similar to the bonus to <typ class="attribute">COMBAT SKILL</typ>? This makes the bonus useless. If you were to complete the combat with fewer than 5 <typ class="attribute">ENDURANCE</typ> points remaining and then removed the bonus after the combat was over, you would be just as dead as without the bonus. Another proposal was that you should remove the bonus from your score only if it leaves your score above the normal maximum after the combat. Although reasonable, this probably wasn<ch.apos/>t the intent of the author since he did not specify this procedure. We have opted for the simplest, most straightforward choice: that this is just a restorative effect.</p>
-     <p>(<a idref="sect235">235</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct. You have only one chance to guess at the correct answer. If you guess incorrectly, <a idref="sect141">turn immediately to 141</a>.</p>
-     <p>(<a idref="sect267">267</a>) There are strong indications that Arch Druid Cadak should be immune to both Mindblast and Psi-surge, but not Kai-surge. The Cener High Priest fought in <bookref series="lw" book="13tplor"><cite>The Plague Lords of Ruel</cite></bookref> Sections <bookref series="lw" book="13tplor" section="sect156">156</bookref> and <bookref series="lw" book="13tplor" section="sect212">212</bookref> is immune to these lesser psychic Disciplines, and this Section describes Arch Druid Cadak<ch.apos/>s inner mind as <quote>well-shielded</quote>.</p>
-     <p>(<a idref="sect293">293</a>) There is no indication whether or not the extra meals that you gather as you ride should also have a curative effect. If you decide that they do, record each on your <a idref="action">Action Chart</a> as <quote>Meal +3 <typ class="attribute">EP</typ></quote>.</p>
-     <p>(<a idref="sect332">332</a>) If you have already spent all of your money, you have a choice: you may either give her an item of comparable or greater value, or you may simply disregard this cost.</p>
-    </data>
+    <data/>
+
    </section>
 
    <section class="backmatter" id="illstrat">
@@ -6074,22 +6010,33 @@ Initial revision
       <meta><title>Secondary Illustrations</title></meta>
 
       <data>
-       <p>Only the first occurrence of each secondary illustration is cited.</p>
        <ul class="unbulleted">
-       <li><a idref="sect133">Small 1</a></li>
-       <li><a idref="sect62">Small 2</a></li>
-       <li><a idref="sect188">Small 3</a></li>
-       <li><a idref="sect137">Small 4</a></li>
-       <li><a idref="sect87">Small 5</a></li>
-       <li><a idref="sect6">Small 6</a></li>
-       <li><a idref="sect218">Small 7</a></li>
-       <li><a idref="sect194">Small 8</a></li>
-       <li><a idref="sect12">Small 9</a></li>
-       <li><a idref="sect8">Small 10</a></li>
-       <li><a idref="sect53">Small 11</a></li>
-       <li><a idref="sect105">Small 12</a></li>
-       <li><a idref="sect164">Small 13</a></li>
-       <li><a idref="sect235">Small 14</a></li>
+       <li><a idref="equipmnt">Equipment</a></li>
+       <li><a idref="discplnz">Kai Disciplines</a></li>
+       <li><a idref="sect6">Section 6</a></li>
+       <li><a idref="sect8">Section 8</a></li>
+       <li><a idref="sect12">Section 12</a></li>
+       <li><a idref="sect53">Section 53</a></li>
+       <li><a idref="sect62">Section 62</a></li>
+       <li><a idref="sect63">Section 63</a></li>
+       <li><a idref="sect87">Section 87</a></li>
+       <li><a idref="sect94">Section 94</a></li>
+       <li><a idref="sect105">Section 105</a></li>
+       <li><a idref="sect110">Section 110</a></li>
+       <li><a idref="sect133">Section 133</a></li>
+       <li><a idref="sect137">Section 137</a></li>
+       <li><a idref="sect157">Section 157</a></li>
+       <li><a idref="sect162">Section 162</a></li>
+       <li><a idref="sect164">Section 164</a></li>
+       <li><a idref="sect188">Section 188</a></li>
+       <li><a idref="sect194">Section 194</a></li>
+       <li><a idref="sect218">Section 218</a></li>
+       <li><a idref="sect220">Section 220</a></li>
+       <li><a idref="sect235">Section 235</a></li>
+       <li><a idref="sect247">Section 247</a></li>
+       <li><a idref="sect279">Section 279</a></li>
+       <li><a idref="sect332">Section 332</a></li>
+       <li><a idref="sect339">Section 339</a></li>
       </ul>
      </data>
     </section>
