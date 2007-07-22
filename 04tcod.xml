@@ -11,81 +11,35 @@
 
 <gamebook xml:lang="en-UK" version="0.12">
 
-<!--
-
-$Id$
-$Log: 04tcod.xml,v $
-Revision 1.62  2007/02/07 17:40:00  Simon Osborne
-Periods added to Illustration captions.
-
-Revision 1.61  2007/01/07 19:11:00  Simon Osborne
-A couple of minor Errata fixed.
-
-Revision 1.6  2007/04/26 17:34:28  jonathan.blake
-Last of errata from website
-
-Revision 1.5  2007/04/24 00:07:49  jonathan.blake
-making most of errata corrections listed on website
-
-Revision 1.4  2007/03/17 00:07:04  jonathan.blake
-Upgrading XML
-
-Revision 1.3  2006/01/05 18:04:07  jonathan.blake
-Adding Paul Haskell as an Illustration Transcriptionist
-
-Revision 1.2  2005/03/10 18:21:51  jonathan.blake
-Removed link to old staff email address.
-
-Revision 1.1  2004/11/08 01:29:11  jonathan.blake
-Initial Freepository revision
-
-
-//// RCS Revision Log ////
-
-Revision 1.8  2003/01/27 22:11:39  jblake
-Checkin prior to global footnote change
-
-Revision 1.7  2003/01/04 17:45:26  jblake
-Footnotes.
-
-Revision 1.5  2002/12/08 01:37:53  jblake
-Fixed errata and fixed new validity errors.
-
-Revision 1.4  2002/12/08 01:29:40  jblake
-Added footnotes. Who worked on this XML?
-
-Revision 1.3  2002/12/04 06:23:01  jblake
-Cleanup. Still needs work on footnotes and errata.
-
-Revision 1.2  2002/11/30 02:12:27  jblake
-Fixed validity errors. Needs to be checked for editorial issues.
-
-Revision 1.1 2002/11/26 17:00:00 cporter
-Initial Revision.
-
-//////////////////////////
-
--->
-
 <meta>
  <title>The Chasm of Doom</title>
  <creator class="short">Joe Dever and Gary Chalk</creator>
- <creator class="medium">Joe Dever<br />Illustrated by Gary Chalk</creator>
+ <creator class="medium">
+  <line>Joe Dever</line>
+  <line>Illustrated by Gary Chalk</line>
+ </creator>
  <creator class="long">
   &inclusion.joe.dever.bio.lw;
   &inclusion.gary.chalk.bio.lw;
  </creator>
  <publisher>Project Aon</publisher>
- <date class="publication"><year>2007</year><month>4</month><day>26</day></date>
+ <date class="publication"><year>2007</year><month>7</month><day>22</day></date>
  <description class="blurb">
    <p>The King has summoned you, Lone Wolf, last of the Kai Lords, to his citadel at Holmgard. Your quest is to recover a missing shipment of gold and locate the patrol which has disappeared while investigating the suspected theft. As you and your men equip yourselves for the long ride ahead, you glimpse a crow perched on a window ledge high above. As it flies away a shiver runs down your spine<ch.emdash/>in Holmgard the crow is a symbol of impending danger.</p>
  </description>
  <description class="publication">
   <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
  </description>
- <rights class="copyrights">Text copyright <ch.copy/> 1985 Joe Dever.<br />Illustrations copyright <ch.copy/> 1985 Gary Chalk.</rights>
+ <rights class="copyrights">
+  <line>Text copyright <ch.copy/> 1985 Joe Dever.</line>
+  <line>Illustrations copyright <ch.copy/> 1985 Gary Chalk.</line>
+ </rights>
  <rights class="license-notification">
-  <p>Text copyright <ch.copy/> 1985 Joe Dever. Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+  <p>
+   <line>Text copyright <ch.copy/> 1985 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1985 Gary Chalk.</line>
+   <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+  </p>
  </rights>
 </meta>
 
@@ -112,7 +66,9 @@ Initial Revision.
 
    <data>
 
-     <p class="dedication">For Bryan Ansell, Rick Priestley and Richard Halliwell</p>
+     <p class="dedication">
+      <line>For Bryan Ansell, Rick Priestley and Richard Halliwell</line>
+     </p>
 
    </data>
   </section>
@@ -134,19 +90,45 @@ Initial Revision.
      <data>
       <dl>
        <dt>Transcription</dt>
-        <dd>Daniel Nash</dd>
+        <dd>
+	 <line>Daniel Nash</line>
+	</dd>
        <dt>Illustration Transcription</dt>
-        <dd>Jonathan Blake<br />Paul Haskell<br/>Simon Osborne</dd>
+        <dd>
+	 <line>Jonathan Blake</line>
+	 <line>Paul Haskell</line>
+	 <line>Simon Osborne</line>
+	</dd>
        <dt>XML</dt>
-        <dd>Jonathan Blake<br />Charles Porter</dd>
+        <dd>
+	 <line>Jonathan Blake</line>
+	 <line>Charles Porter</line>
+	</dd>
        <dt>Alternate Illustrations</dt>
-        <dd>JC Alvarez (action charts)<br />Jonathan Blake (extramatter charts and tables)<br />Michael Hahn (map)</dd>
+        <dd>
+	 <line>JC Alvarez (action charts)</line>
+	 <line>Jonathan Blake (extramatter charts and tables)</line>
+	 <line>Michael Hahn (map)</line>
+	</dd>
        <dt>Proofreading</dt>
-        <dd>Simon Osborne (Sections 1<ch.endash/>105, 176<ch.endash/>210, 281<ch.endash/>350)<br />Vito Trifilo (Sections 106<ch.endash/>175, 246<ch.endash/>280)<br />Tony Wrigley (Sections 211<ch.endash/>245)</dd>
+        <dd>
+	 <line>Simon Osborne (Sections 1<ch.endash/>105, 176<ch.endash/>210, 281<ch.endash/>350)</line>
+	 <line>Vito Trifilo (Sections 106<ch.endash/>175, 246<ch.endash/>280)</line>
+	 <line>Tony Wrigley (Sections 211<ch.endash/>245)</line>
+	</dd>
        <dt>Editing</dt>
-        <dd>Mike Feldman<br />Ingo Kl<ch.ouml/>cker<br />Mark Laird<br />Simon Osborne<br />Matthew Reynolds<br />Thomas Wolmer</dd>
+        <dd>
+	 <line>Mike Feldman</line>
+	 <line>Ingo Kl<ch.ouml/>cker</line>
+	 <line>Mark Laird</line>
+	 <line>Simon Osborne</line>
+	 <line>Matthew Reynolds</line>
+	 <line>Thomas Wolmer</line>
+	</dd>
        <dt>Coordination</dt>
-        <dd>Jonathan Blake</dd>
+        <dd>
+	 <line>Jonathan Blake</line>
+	</dd>
       </dl>
      </data>
     </section>
@@ -5006,35 +4988,35 @@ Initial Revision.
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acdscplz.gif" width="385" height="246" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif" />
     </illustration>
@@ -5931,6 +5913,7 @@ Initial Revision.
    <meta><title>Footnotes</title></meta>
 
    <data/>
+
   </section>
 
   <section class="backmatter" id="illstrat">
