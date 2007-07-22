@@ -11,162 +11,19 @@
 
 <gamebook xml:lang="en-UK" version="0.12">
 
-<!--
-
-$Id$
-$Log: 13tplor.xml,v $
-Revision 1.35 2007/07/04 13:45:00  Simon Osborne
-Fixed illustration captions.
-
-Revision 1.34 2007/06/27 11:24:52  Simon Osborne
-Changed Kai Disciplines -> Grand Master Disciplines on the
-Combat Rules Summary
-
-Revision 1.33  2007/06/26 17:27:35  Simon Osborne
-Added footnote to Section 239 and 286 regarding the Backpack
-Item status of the Copper Key
-
-Revision 1.32  2007/06/26 17:27:35  Simon Osborne
-A couple of minor corrections.
-
-Revision 1.31  2007/06/25 15:10:45  Simon Osborne
-Many errata issues, non-errata issues, and xml structural issues fixed.
-XML now conforms to 0.12
-
-Revision 1.3  2007/06/20 22:32:12  Simon Osborne
-A great many issues fixed, errata and non-errata.
-
-Revision 1.3  2005/03/26 16:22:12  jonathan.blake
-Adding Illustrator Transcription credits that went missing since
-The Masters of Darkness
-
-Revision 1.2  2005/03/10 18:21:51  jonathan.blake
-Removed link to old staff email address.
-
-Revision 1.1  2004/11/09 06:47:15  jonathan.blake
-Initial Freepository revision
-
-
-//// RCS Revision Log ////
-
-Revision 1.12  2003/01/27 22:11:39  jblake
-Checkin prior to global footnote change
-
-Revision 1.11  2003/01/27 21:53:41  jblake
-Checkin prior to making global change to footnote structure.
-
-Revision 1.10  2003/01/09 20:41:40  jblake
-Added small12 and minor validity corrections.
-
-Revision 1.9 2003/01/08 16:30:00 jdougan
-- Added Peter Smyth to "Special Thanks" (for providing primary illustration captions)
-- Cross-check against posted //non-errata// mistakes (trying to ensure that nothing was missed)
-- inserted code for large illustrations
-- placed all small illustrations except for small12 (which, per SOSBORNE, does not appear to have a good place to go)
-- updated tables of illustrations
-- added footnote to Section 15 for riddle solution. (The other correct riddle explanation provides a correct answer, and the obvious incorrect answer makes it obvious that the solution is incorrect.)
-
-Revision 1.8  2003/01/07 00:30:28  jblake
-Errata corrections and general cleanup.
-
-Revision 1.7  2002/11/12 18:53:00  jblake
-Fixed validity errors.
-
-Revision 1.6 2002/11/06 01:14:00 jdougan
-- attempted reasonable link for 14TCoK in front matter and section 350.
-- dougan note to jblake: should we renumber the versions in which validity errors have been corrected and no other changes made to, e.g. 1.4.1? Or is that possible with your version control tools?
-- created section structure (without prev/next links) for Combat Rules, ranks, and improved disciplines
-- replaced all relevant ' with &apos;
-- corrected proofreader errata as noted.
-
-Revision 1.5  2002/10/31 18:21:36  jblake
-Corrected validity errors.
-
-Revision 1.4  2002/10/31 18:10:00  jdougan
-- Inserted escape sequences for emdash (48 occurrences) and endash (18 sections)
-- Pasted backmatter from TPoT; removed data from errata, lists, etc.
-- put in <quote></quote> where appropriate
-
-Revision 1.3  2002/10/31 16:49:23  jblake
-Corrected validity errors.
-
-Revision 1.2 2002/10/30 20:36:07 jdougan
-- Inserted paragraph delimiters throughout front matter
-- linked all front matter occurrences of Action Chart
-- Marked all front matter occurrences of COMBAT SKILL and ENDURANCE with <typ></typ> markup
-- Began to insert <section><data></data></section> structure into front matter. (incomplete)
-- Linked all front matter occurrences of the random number table
-- Noticed that none of the Grand Master Disciplines have the usual "if you choose this skill..." paragraph. Should we add these?
-- Entered the credits (transcription, XML, Proofreading)
-- front matter is missing the "how to carry" section - something seems a little wonky in general. closing out the currently open data and sections, then sending it back to Jon.
-
-Revision 1.1  2002/10/20 06:49:07  jblake
-Initial revision
-
-//////////////////////////
-
-Pending errata - TPLOR
-
-(3) Under Bows and Arrows, page 33, do we add 3 or 5 to numbers we pick from the RNT? 
-
-==>JDOUGAN: I can make the case both ways, but suspect that it should probably be +3.
-
-(4) {JDOUGAN} The example combat has a major mistake, adding +3 CS for using Kai-surge - this gives a wrong Combat Ratio, with consequently wrong EP losses for both participants. What's the best way to fix it?
-
-Section 127: First sentence doesn't make sense grammatically.
-
-Secction 133: pathsmanship > Pathsmanship ?
-
-Changes made:
-<li>The Story So Far: Changed <quote>Ragador</quote> to <quote>Ragadorn</quote></li>
-<li>How to Use Your Equipment/Weapons: Amended the text to correctly reflect the +5 <typ class="attribute">COMBAT SKILL</typ> bonus for Grand Weaponmastery</li>
-<li>Section 2: Changed <quote>Extermius</quote> to <quote>Exterminus</quote></li>
-<li>Section 7: Changed <quote>crease</quote> to <quote>cease</quote></li>
-<li>Section 7: Changed <quote>fowards</quote> to <quote>forwards</quote></li>
-<li>Section 24: Changed <quote>agarashi</quote> to <quote>Agarashi</quote></li>
-<li>Section 24: Changed <quote>it red eyes</quote> to <quote>its red eyes</quote></li>
-<li>Section 31: Changed <quote>agarashi</quote> to <quote>Agarashi</quote></li>
-<li>Section 35: Changed <quote>as it they were</quote> to <quote>as if they were</quote></li>
-<li>Section 41: Changed <quote>suface</quote> to <quote>surface</quote></li>
-<li>Section 41: Changed <quote>aproaches</quote> to <quote>approaches</quote></li>
-<li>Section 47: Changed <quote>eg</quote> to <quote>i.e.</quote></li>
-
-==>jdougan: in context, this is the proper abbreviation - we want "that is", not "for the sake of an example", because the list provided is complete
-
-<li>Section 50: Changed <quote>seeth</quote> to <quote>seethe</quote></li>
-<li>Section 106: Changed <quote>youself</quote> to <quote>yourself</quote></li>
-<li>Section 108: Changed <quote>imposter</quote> to <quote>impostor</quote></li>
-<li>Section 110: Changed <quote>agarashi</quote> to <quote>Agarashi</quote></li>
-<li>Section 121: Changed <quote>agarashi&apos;s</quote> to <quote>Agarashi&apos;s</quote></li>
-<li>Section 127: Changed <quote>gong echoes n some</quote> to <quote>gong echoes in some</quote></li>
-<li>Section 127: Changed <quote>begining</quote> to <quote>beginning</quote></li>
-<li>Section 131: Changed <quote>foward</quote> to <quote>forward</quote></li>
-<li>Section 131: Changed <quote>agarashi</quote> to <quote>Agarashi</quote> in two places</li>
-<li>Section 186: Changed <quote>suface</quote> to <quote>surface</quote></li>
-<li>Section 188: Changed <quote>Grand Mastery</quote> to <quote>Grand Nexus</quote></li>
-
-==>JDOUGAN: Based on the text of section 203, this is probably what was intended
-
-<li>Section 220: Changed <quote>0<ch.endash/>2 turn</quote> to <quote>0<ch.endash/>2, turn</quote></li>
-<li>Section 223: Changed <quote>Unforturnately</quote> to <quote>Unfortunately</quote></li>
-<li>Section 256: Changed <quote>creatures snarls</quote> to <quote>creature snarls</quote></li>
-<li>Section 266: Changed <quote>flame, Two</quote> to <quote>flame. Two</quote></li>
-<li>Section 277: Changed <quote>stength</quote> to <quote>strength</quote></li>
-<li>Section 310: Changed <quote>lifiting</quote> to <quote>lifting</quote></li>
-<li>Section 320: Changed <quote>suddeness</quote> to <quote>suddenness</quote></li>
-
--->
-
 <meta>
  <title>The Plague Lords of Ruel</title>
   <creator class="short">Joe Dever and Brian Williams</creator>
-  <creator class="medium">Joe Dever<br></br>Illustrated by Brian Williams</creator>
+  <creator class="medium">
+   <line>Joe Dever</line>
+   <line>Illustrated by Brian Williams</line>
+  </creator>
   <creator class="long">
    &inclusion.joe.dever.bio.lw;
    &inclusion.brian.williams.bio.lw;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2007</year><month>6</month><day>18</day></date>
+  <date class="publication"><year>2007</year><month>7</month><day>22</day></date>
   <description class="blurb">
    <p>You are the warrior Lone Wolf<ch.emdash/>Kai Grand Master of Sommerlund. You have defeated the Darklords of Helgedad and avenged your murdered ancestors, but now you are challenged by a sinister evil which threatens to destroy all life on your home world of Magnamund.</p>
    <p>In <cite>The Plague Lords of Ruel</cite> your mission is to prevent the malevolent Cener Druids of Ruel from releasing a deadly plague virus that will destroy all but their own kind. Of all the warriors of Magnamund only you can thwart their wicked plans<ch.emdash/>for only you possess the disciplines of a Kai Grand Master.</p>
@@ -174,9 +31,16 @@ Changes made:
   <description class="publication">
    <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
   </description>
-  <rights class="copyrights">Text copyright <ch.copy></ch.copy> 1990 Joe Dever.<br></br>Illustrations copyright <ch.copy></ch.copy> 1990 Brian Williams.</rights>
+  <rights class="copyrights">
+   <line>Text copyright <ch.copy></ch.copy> 1990 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy></ch.copy> 1990 Brian Williams.</line>
+  </rights>
   <rights class="license-notification">
-   <p>Text copyright <ch.copy></ch.copy>  Joe Dever.<br></br>Illustrations copyright <ch.copy></ch.copy>  Brian Williams.<br></br>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+   <p>
+    <line>Text copyright <ch.copy/> Joe Dever.</line>
+    <line>Illustrations copyright <ch.copy/> Brian Williams.</line>
+    <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+   </p>
   </rights>
  </meta>
 
@@ -228,19 +92,37 @@ Changes made:
        <dt>Illustration Transcription</dt>
         <dd>Jonathan Blake</dd>
        <dt>XML</dt>
-        <dd>Jonathan Blake<br />Jeff Dougan<br />Simon Osborne</dd>
+        <dd>
+	 <line>Jonathan Blake</line>
+	 <line>Jeff Dougan</line>
+	 <line>Simon Osborne</line>
+	</dd>
        <dt>Action Charts</dt>
-        <dd>JC Alvarez<br />Jonathan Blake</dd>
+        <dd>
+	 <line>JC Alvarez</line>
+	 <line>Jonathan Blake</line>
+	</dd>
        <dt>Proofreading</dt>
-        <dd>Daniel Nash (Sections 71<ch.endash/>105) <br />Simon Osborne (Frontmatter, Sections 1<ch.endash/>70, 106<ch.endash/>140, 176<ch.endash/>350) <br />Tony Wrigley (Sections 141<ch.endash/>175)</dd>
+        <dd>
+	 <line>Daniel Nash (Sections 71<ch.endash/>105)</line>
+	 <line>Simon Osborne (Frontmatter, Sections 1<ch.endash/>70, 106<ch.endash/>140, 176<ch.endash/>350)</line>
+	 <line>Tony Wrigley (Sections 141<ch.endash/>175)</line>
+	</dd>
        <dt>Editing</dt>
-         <dd>Jeff Dougan<br/>Christopher Lundgren<br />Ingo Kl<ch.ouml/>cker<br/>LeRoy McSwain<br/>Simon Osborne<br/>Thomas Wolmer</dd>
+         <dd>
+	  <line>Jeff Dougan</line>
+	  <line>Christopher Lundgren</line>
+	  <line>Ingo Kl<ch.ouml/>cker</line>
+	  <line>LeRoy McSwain</line>
+	  <line>Simon Osborne</line>
+	  <line>Thomas Wolmer</line>
+	 </dd>
 <!--       <dt>PDF Layout</dt>
         <dd></dd>-->
        <dt>Coordination</dt>
         <dd>Jonathan Blake</dd>
        <dt>Special Thanks</dt>
-        <dd>Boris Basic<br />Neil McGrory<br />Martin Ryland<br />Peter Smyth<br />Jason Thomas<br />Arthur Yin</dd>
+        <dd>Boris Basic, Neil McGrory, Martin Ryland, Peter Smyth, Jason Thomas, and Arthur Yin</dd>
       </dl>
      </data>
     </section>
@@ -5460,42 +5342,42 @@ Changes made:
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acdscplz.gif" width="385" height="246" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acchklst.gif" width="385" height="128" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif"></instance>
     </illustration>
@@ -5605,145 +5487,6 @@ Changes made:
      </meta>
      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif"></instance>
      <instance src="crtpos.tex" width="380" height="500" class="tex"></instance>
-    </illustration>
-   </data>
-  </section>
-
-  <section class="backmatter" id="random">
-   <meta><title>Random Number Table</title></meta>
-
-   <data>
-
-    <illustration class="inline">
-     <meta>
-      <creator>Jonathan Blake</creator>
-     </meta>
-     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
-     <instance src="random.tex" width="380" height="500" class="tex"></instance>
-     <instance class="text">
-      <table>
-       <tr>
-        <td>8</td>
-        <td>2</td>
-        <td>6</td>
-        <td>1</td>
-        <td>3</td>
-        <td>1</td>
-        <td>7</td>
-        <td>8</td>
-        <td>6</td>
-        <td>2</td>
-       </tr>
-       <tr>
-        <td>3</td>
-        <td>8</td>
-        <td>6</td>
-        <td>5</td>
-        <td>0</td>
-        <td>3</td>
-        <td>8</td>
-        <td>7</td>
-        <td>8</td>
-        <td>1</td>
-       </tr>
-       <tr>
-        <td>9</td>
-        <td>5</td>
-        <td>1</td>
-        <td>6</td>
-        <td>5</td>
-        <td>7</td>
-        <td>4</td>
-        <td>3</td>
-        <td>1</td>
-        <td>7</td>
-       </tr>
-       <tr>
-        <td>5</td>
-        <td>2</td>
-        <td>4</td>
-        <td>7</td>
-        <td>6</td>
-        <td>8</td>
-        <td>8</td>
-        <td>6</td>
-        <td>3</td>
-        <td>9</td>
-       </tr>
-       <tr>
-        <td>0</td>
-        <td>6</td>
-        <td>9</td>
-        <td>5</td>
-        <td>4</td>
-        <td>9</td>
-        <td>0</td>
-        <td>4</td>
-        <td>1</td>
-        <td>4</td>
-       </tr>
-       <tr>
-        <td>2</td>
-        <td>8</td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>6</td>
-        <td>7</td>
-        <td>2</td>
-        <td>8</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>9</td>
-        <td>8</td>
-        <td>0</td>
-        <td>7</td>
-        <td>8</td>
-        <td>0</td>
-        <td>1</td>
-        <td>3</td>
-        <td>4</td>
-        <td>0</td>
-       </tr>
-       <tr>
-        <td>6</td>
-        <td>2</td>
-        <td>0</td>
-        <td>4</td>
-        <td>4</td>
-        <td>1</td>
-        <td>8</td>
-        <td>1</td>
-        <td>2</td>
-        <td>9</td>
-       </tr>
-       <tr>
-        <td>8</td>
-        <td>4</td>
-        <td>1</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>3</td>
-        <td>1</td>
-        <td>0</td>
-        <td>6</td>
-       </tr>
-       <tr>
-        <td>4</td>
-        <td>2</td>
-        <td>5</td>
-        <td>0</td>
-        <td>9</td>
-        <td>0</td>
-        <td>5</td>
-        <td>4</td>
-        <td>5</td>
-        <td>7</td>
-       </tr>
-      </table>
-     </instance>
     </illustration>
 
     <illustration>
@@ -5951,6 +5694,145 @@ Changes made:
    </data>
   </section>
 
+  <section class="backmatter" id="random">
+   <meta><title>Random Number Table</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
+     <instance src="random.tex" width="380" height="500" class="tex"></instance>
+     <instance class="text">
+      <table>
+       <tr>
+        <td>8</td>
+        <td>2</td>
+        <td>6</td>
+        <td>1</td>
+        <td>3</td>
+        <td>1</td>
+        <td>7</td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>3</td>
+        <td>8</td>
+        <td>6</td>
+        <td>5</td>
+        <td>0</td>
+        <td>3</td>
+        <td>8</td>
+        <td>7</td>
+        <td>8</td>
+        <td>1</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>5</td>
+        <td>1</td>
+        <td>6</td>
+        <td>5</td>
+        <td>7</td>
+        <td>4</td>
+        <td>3</td>
+        <td>1</td>
+        <td>7</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>2</td>
+        <td>4</td>
+        <td>7</td>
+        <td>6</td>
+        <td>8</td>
+        <td>8</td>
+        <td>6</td>
+        <td>3</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>6</td>
+        <td>9</td>
+        <td>5</td>
+        <td>4</td>
+        <td>9</td>
+        <td>0</td>
+        <td>4</td>
+        <td>1</td>
+        <td>4</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>8</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>6</td>
+        <td>7</td>
+        <td>2</td>
+        <td>8</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>8</td>
+        <td>0</td>
+        <td>7</td>
+        <td>8</td>
+        <td>0</td>
+        <td>1</td>
+        <td>3</td>
+        <td>4</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>6</td>
+        <td>2</td>
+        <td>0</td>
+        <td>4</td>
+        <td>4</td>
+        <td>1</td>
+        <td>8</td>
+        <td>1</td>
+        <td>2</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>4</td>
+        <td>1</td>
+        <td>7</td>
+        <td>6</td>
+        <td>5</td>
+        <td>3</td>
+        <td>1</td>
+        <td>0</td>
+        <td>6</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td>2</td>
+        <td>5</td>
+        <td>0</td>
+        <td>9</td>
+        <td>0</td>
+        <td>5</td>
+        <td>4</td>
+        <td>5</td>
+        <td>7</td>
+       </tr>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
   <section class="backmatter" id="errata">
    <meta><title>Errata</title></meta>
 
@@ -6136,28 +6018,8 @@ Changes made:
   <section class="backmatter" id="footnotz">
    <meta><title>Footnotes</title></meta>
 
-    <data>
-     <p>(<a idref="gamerulz">The Game Rules</a>) The Discipline bonuses mentioned do not affect your permanent scores. If you have completed previous adventures, the Disciplines that you have mastered may still be beneficial. See the Grand Master Rules section of the <a href="&link.rh;">Readers<ch.apos/> Handbook</a> for details.</p>
-     <p>(<a idref="discplnz">Grand Master Disciplines</a>) The rules of the books in the Magnakai series (6-12) and the fact that the <quote>rank of Kai Grand Defender<ch.ellips/> means you are skilled in two<ch.ellips/> weapons</quote> imply that for each book that you complete of the Grand Master series (13-20), you will gain mastery of an additional Kai weapon. E.g. if you complete <cite>The Plague Lords of Ruel</cite> and have the Grand Master Discipline of Grand Weaponmastery at the beginning of the next book, you can choose an additional Weapon from the list to have Mastery of.</p>
-     <p>(<a idref="sect15">15</a>) This is the correct answer to the combination lock riddle in Sections <a idref="sect158">158</a> and <a idref="sect227">227</a>.</p>
-     <p>(<a idref="sect26">26</a>) This section corresponds to an incorrect answer to the riddle in <a idref="sect48">Section 48</a>.</p>
-     <p>(<a idref="sect48">48</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
-     <p>(<a idref="sect91">91</a>) Although adding <quote>a further 2</quote> to your random number implies that you must have Kai-surge to get this bonus, it is also reasonable to apply this bonus whether or not you have this Discipline.</p>    <p>(<a idref="sect100">100</a>) You must defeat all of the Ruel War-dogs before turning to <a idref="sect37">Section 37</a>.</p>
-     <p>(<a idref="sect131">131</a>) If you possess the Sommerswerd, you should double the Undead Plague Agarashi<ch.apos/>s <typ class="attribute">ENDURANCE</typ> point loss.</p>
-     <p>(<a idref="sect146">146</a>) This section corresponds to the correct answer to the riddle in <a idref="sect48">Section 48</a>.</p>
-     <p>(<a idref="sect158">158</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
-     <p>(<a idref="sect184">184</a>) You must have at least one Arrow in order to <em>be able to use</em> a Bow.</p>
-     <p>(<a idref="sect221">221</a>) You must defeat the Plague Hound before turning to <a idref="sect114">Section 114</a>.</p>
-     <p>(<a idref="sect227">227</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
-     <p>(<a idref="sect234">234</a>) According to <bookref series="lw" book="05sots"><cite>Shadow on the Sand</cite></bookref> <bookref series="lw" book="05sots" section="sect2">Section 2</bookref>, one dose of the Oede herb can heal 10 <typ class="attribute">ENDURANCE</typ> points of damage.</p>
-     <p>Since you <quote>take down half a dozen jars</quote> and there are exactly six types of herbs in the list, it may safely be assumed that one jar contains all of a given herb or potion (e.g. one jar contains all five doses of Laumspur). If each jar is one Backpack Item, then the Cener have created some <em>extremely</em> concentrated potions which take up very little space.</p>
-     <p>(<a idref="sect239">239</a>) Record this Copper Key as a Backpack Item.</p>
-     <p>(<a idref="sect286">286</a>) Record this Copper Key as a Backpack Item.</p>
-     <p>(<a idref="sect314">314</a>) You must have at least one Arrow in order to <em>be able to use</em> a Bow.</p>
-     <p>(<a idref="sect325">325</a>) You must defeat the Plague Hound before turning to <a idref="sect114">Section 114</a>.</p>
-     <p>(<a idref="sect341">341</a>) According to <bookref series="lw" book="05sots"><cite>Shadow on the Sand</cite></bookref> <bookref series="lw" book="05sots" section="sect2">Section 2</bookref>, one dose of the Oede herb can heal 10 <typ class="attribute">ENDURANCE</typ> points of damage.</p>
-     <p>Since you <quote>take down half a dozen jars</quote> and there are exactly six types of herbs in the list, it may safely be assumed that one jar contains all of a given herb or potion (e.g. one jar contains all five doses of Laumspur). If each jar is one Backpack Item, then the Cener have created some <em>extremely</em> concentrated potions which take up very little space.</p>
-    </data>
+    <data/>
+
    </section>
 
   <section class="backmatter" id="illstrat">
@@ -6201,22 +6063,32 @@ Changes made:
      <meta><title>Secondary Illustrations</title></meta>
 
      <data>
-      <p>Only the first occurrence of each secondary illustration is cited.</p>
       <ul class="unbulleted">
-       <li><a idref="sect265">Small 1</a></li>
-       <li><a idref="sect113">Small 2</a></li>
-       <li><a idref="sect115">Small 3</a></li>
-       <li><a idref="sect242">Small 4</a></li>
-       <li><a idref="sect240">Small 5</a></li>
-       <li><a idref="sect48">Small 6</a></li>
-       <li><a idref="sect103">Small 7</a></li>
-       <li><a idref="sect285">Small 8</a></li>
-       <li><a idref="sect81">Small 9</a></li>
-       <li><a idref="sect208">Small 10</a></li>
-       <li><a idref="sect61">Small 11</a></li>
-       <li><a idref="tssf">Small 12</a></li>
-       <li><a idref="sect98">Small 13</a></li>
-       <li><a idref="sect158">Small 14</a></li>
+       <li><a idref="tssf">The Story So Far<ch.ellips/></a></li>
+       <li><a idref="equipmnt">Equipment</a></li>
+       <li><a idref="discplnz">Kai Disciplines</a></li>
+       <li><a idref="sect48">Section 48</a></li>
+       <li><a idref="sect61">Section 61</a></li>
+       <li><a idref="sect81">Section 81</a></li>
+       <li><a idref="sect98">Section 98</a></li>
+       <li><a idref="sect103">Section 103</a></li>
+       <li><a idref="sect113">Section 113</a></li>
+       <li><a idref="sect115">Section 115</a></li>
+       <li><a idref="sect158">Section 158</a></li>
+       <li><a idref="sect199">Section 199</a></li>
+       <li><a idref="sect208">Section 208</a></li>
+       <li><a idref="sect218">Section 218</a></li>
+       <li><a idref="sect226">Section 226</a></li>
+       <li><a idref="sect227">Section 227</a></li>
+       <li><a idref="sect240">Section 240</a></li>
+       <li><a idref="sect242">Section 242</a></li>
+       <li><a idref="sect265">Section 265</a></li>
+       <li><a idref="sect285">Section 285</a></li>
+       <li><a idref="sect307">Section 307</a></li>
+       <li><a idref="sect322">Section 322</a></li>
+       <li><a idref="sect340">Section 340</a></li>
+       <li><a idref="sect341">Section 341</a></li>
+       <li><a idref="sect350">Section 350</a></li>
       </ul>
      </data>
     </section>
