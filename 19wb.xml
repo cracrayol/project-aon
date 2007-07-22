@@ -10,78 +10,36 @@
 
 <gamebook xml:lang="en-UK" version="0.12">
 
-<!--
-
-$Id$
-
-$Log: 19wb.xml,v $
-Revision 1.33 2007/07/04 13:45:00  Simon Osborne
-Fixed illustration captions.
-
-Revision 1.32 2007/06/27 11:21:12  Simon Osborne
-Changed Kai Disciplines -> Grand Master Disciplines on the
-Combat Rules Summary
-
-Revision 1.31 2007/06/26 13:18:12  Simon Osborne
-Enfoced use of <ch.lsquot/> and <ch.rsquot> in relevant Errata entries and Captions.
-
-Revision 1.3 2007/06/22 15:03:12  Simon Osborne
-Many errata, non-errata and other issues fixed.
-
-***NOTE: sizes for all illustrations are currently incorrect
-as they haven't been scanned yet. They will require changing.***
-
-Revision 1.24 2007/06/19 21:40:34  Simon Osborne
-More Errata fixed. Some minor typos fixed.
-
-Revision 1.23 2007/06/18 18:05:30  Simon Osborne
-Fixed <ch.apos></ch.apos> to <ch.apos/>. Ditto for <ch.endash/> and <ch.emdash/>.
-
-Revision 1.22  2007/06/13 16:04:20  Simon Osborne
-Updated layout for backmatter and illustration tags.
-
-Revision 1.21  2007/06/13 16:04:20  Simon Osborne
-Fixed many pending issues with the text.
-
-Revision 1.2  2006/07/31 15:12:39  cvsuser
-basic markup; line-break hyphenations fixed in tssf
-
-Revision 1.1  2004/11/09 06:47:16  jonathan.blake
-Initial Freepository revision
-
-Revision 1.2 2006/07/31      jffdougan
-basic markup; line-break hyphenations fixed in tssf
-
-
-//// RCS Revision Log ////
-
-Revision 1.1  2002/10/21 19:27:04  jblake
-Initial revision
-
-//////////////////////////
-
--->
-
 <meta>
  <title>Wolf<ch.apos/>s Bane</title>
   <creator class="short">Joe Dever and Brian Williams</creator>
-  <creator class="medium">Joe Dever<br></br>Illustrated by Brian Williams</creator>
+  <creator class="medium">
+   <line>Joe Dever</line>
+   <line>Illustrated by Brian Williams</line>
+  </creator>
   <creator class="long">
    &inclusion.joe.dever.bio.lw;
    &inclusion.brian.williams.bio.lw;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2007</year><month>6</month><day>18</day></date>
+  <date class="publication"><year>2007</year><month>7</month><day>22</day></date>
   <description class="blurb">
    <p>Frustrated by your defeat of his minions, the Dark God Naar plots a bitter revenge. From the depths of his lair upon the Plane of Darkness he creates and sends forth an evil champion who is the very image of yourself.</p>
    <p>In <cite>Wolf<ch.apos/>s Bane</cite> you must hunt down and destroy your evil alter-ego before it lays waste to your proud reputation and your homeland of Sommerlund. Will you find and defeat this evil mirror-image in time? Or will you fall foul of the Dark God<ch.apos/>s plans and be destroyed by your likeness?</p>
   </description>
   <description class="publication">
-   <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
+   <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
   </description>
-  <rights class="copyrights">Text copyright <ch.copy></ch.copy> 1993 Joe Dever.<br></br>Illustrations copyright <ch.copy></ch.copy> 1993 Brian Williams.</rights>
+  <rights class="copyrights">
+   <line>Text copyright <ch.copy/> 1993 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1993 Brian Williams.</line>
+  </rights>
   <rights class="license-notification">
-   <p>Text copyright <ch.copy></ch.copy>  Joe Dever.<br></br>Illustrations copyright <ch.copy></ch.copy>  Brian Williams.<br></br>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+   <p>
+    <line>Text copyright <ch.copy/> 1993 Joe Dever.</line>
+    <line>Illustrations copyright <ch.copy/> 1993 Brian Williams.</line>
+    <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+   </p>
   </rights>
  </meta>
 
@@ -106,7 +64,9 @@ Initial revision
     </meta>
 
     <data>
-     <p class="dedication">For Caroline Thomas, Margaret Coonroy <ch.ampersand></ch.ampersand> Sue Mongredien</p>
+     <p class="dedication">
+      <line>For Caroline Thomas, Margaret Coonroy <ch.ampersand/> Sue Mongredien</line>
+     </p>
     </data>
    </section>
 
@@ -131,13 +91,29 @@ Initial revision
         <dt>Illustration Transcription</dt>
          <dd></dd>
         <dt>XML</dt>
-         <dd>Jonathan Blake<br></br>Jeff Dougan<br></br>Simon Osborne</dd>
+         <dd>
+	  <line>Jonathan Blake</line>
+	  <line>Jeff Dougan</line>
+	  <line>Simon Osborne</line>
+	 </dd>
         <dt><a idref="action">Action Chart</a>s</dt>
-         <dd>JC Alvarez<br></br>Jonathan Blake</dd>
+         <dd>
+	  <line>JC Alvarez</line>
+	  <line>Jonathan Blake</line>
+	 </dd>
         <dt>Proofreading</dt>
-         <dd>Robert Hartley (Sections 141<ch.endash/>350)<br></br>Brett Taylor (Sections 106<ch.endash/>140)<br></br>Kenny Wong (Frontmatter and Sections 1<ch.endash/>105)</dd>
+         <dd>
+	  <line>Robert Hartley (Sections 141<ch.endash/>350)</line>
+	  <line>Brett Taylor (Sections 106<ch.endash/>140)</line>
+	  <line>Kenny Wong (Frontmatter and Sections 1<ch.endash/>105)</line>
+	 </dd>
         <dt>Editing</dt>
-         <dd>Robert Hartley<br/>LeRoy McSwain<br/>Simon Osborne<br/>Keith Sheldon</dd>
+         <dd>
+	  <line>Robert Hartley</line>
+	  <line>LeRoy McSwain</line>
+	  <line>Simon Osborne</line>
+	  <line>Keith Sheldon</line>
+	 </dd>
         <dt>Coordination</dt>
          <dd>Jonathan Blake</dd>
        </dl>
@@ -5144,42 +5120,42 @@ Initial revision
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acdscplz.gif" width="385" height="246" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acchklst.gif" width="385" height="128" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif"></instance>
     </illustration>
@@ -5298,145 +5274,6 @@ Initial revision
      </meta>
      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif"></instance>
      <instance src="crtpos.tex" width="380" height="500" class="tex"></instance>
-    </illustration>
-   </data>
-  </section>
-
-  <section class="backmatter" id="random">
-   <meta><title>Random Number Table</title></meta>
-
-   <data>
-
-    <illustration class="inline">
-     <meta>
-      <creator>Jonathan Blake</creator>
-     </meta>
-     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
-     <instance src="random.tex" width="380" height="500" class="tex"></instance>
-     <instance class="text">
-      <table>
-       <tr>
-        <td>8</td>
-        <td>5</td>
-        <td>3</td>
-        <td>1</td>
-        <td>6</td>
-        <td>2</td>
-        <td>9</td>
-        <td>7</td>
-        <td>3</td>
-        <td>1</td>
-       </tr>
-       <tr>
-        <td>0</td>
-        <td>3</td>
-        <td>6</td>
-        <td>1</td>
-        <td>7</td>
-        <td>4</td>
-        <td>8</td>
-        <td>0</td>
-        <td>6</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>7</td>
-        <td>8</td>
-        <td>6</td>
-        <td>4</td>
-        <td>5</td>
-        <td>0</td>
-        <td>4</td>
-        <td>2</td>
-        <td>1</td>
-        <td>4</td>
-       </tr>
-       <tr>
-        <td>4</td>
-        <td>3</td>
-        <td>7</td>
-        <td>6</td>
-        <td>1</td>
-        <td>5</td>
-        <td>8</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1</td>
-       </tr>
-       <tr>
-        <td>8</td>
-        <td>7</td>
-        <td>9</td>
-        <td>4</td>
-        <td>2</td>
-        <td>6</td>
-        <td>0</td>
-        <td>3</td>
-        <td>9</td>
-        <td>0</td>
-       </tr>
-       <tr>
-        <td>2</td>
-        <td>9</td>
-        <td>4</td>
-        <td>7</td>
-        <td>8</td>
-        <td>0</td>
-        <td>7</td>
-        <td>5</td>
-        <td>8</td>
-        <td>6</td>
-       </tr>
-       <tr>
-        <td>9</td>
-        <td>3</td>
-        <td>1</td>
-        <td>0</td>
-        <td>5</td>
-        <td>8</td>
-        <td>2</td>
-        <td>6</td>
-        <td>9</td>
-        <td>7</td>
-       </tr>
-       <tr>
-        <td>7</td>
-        <td>4</td>
-        <td>6</td>
-        <td>2</td>
-        <td>8</td>
-        <td>5</td>
-        <td>9</td>
-        <td>8</td>
-        <td>2</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>5</td>
-        <td>0</td>
-        <td>2</td>
-        <td>8</td>
-        <td>2</td>
-        <td>5</td>
-        <td>4</td>
-        <td>6</td>
-        <td>1</td>
-        <td>8</td>
-       </tr>
-       <tr>
-        <td>8</td>
-        <td>6</td>
-        <td>2</td>
-        <td>6</td>
-        <td>5</td>
-        <td>4</td>
-        <td>1</td>
-        <td>8</td>
-        <td>5</td>
-        <td>0</td>
-       </tr>
-      </table>
-     </instance>
     </illustration>
 
     <illustration>
@@ -5641,6 +5478,146 @@ Initial revision
       </table>
      </instance>
     </illustration>
+
+    </data>
+  </section>
+
+  <section class="backmatter" id="random">
+   <meta><title>Random Number Table</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
+     <instance src="random.tex" width="380" height="500" class="tex"></instance>
+     <instance class="text">
+      <table>
+       <tr>
+        <td>8</td>
+        <td>5</td>
+        <td>3</td>
+        <td>1</td>
+        <td>6</td>
+        <td>2</td>
+        <td>9</td>
+        <td>7</td>
+        <td>3</td>
+        <td>1</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>3</td>
+        <td>6</td>
+        <td>1</td>
+        <td>7</td>
+        <td>4</td>
+        <td>8</td>
+        <td>0</td>
+        <td>6</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>6</td>
+        <td>4</td>
+        <td>5</td>
+        <td>0</td>
+        <td>4</td>
+        <td>2</td>
+        <td>1</td>
+        <td>4</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td>3</td>
+        <td>7</td>
+        <td>6</td>
+        <td>1</td>
+        <td>5</td>
+        <td>8</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>7</td>
+        <td>9</td>
+        <td>4</td>
+        <td>2</td>
+        <td>6</td>
+        <td>0</td>
+        <td>3</td>
+        <td>9</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>9</td>
+        <td>4</td>
+        <td>7</td>
+        <td>8</td>
+        <td>0</td>
+        <td>7</td>
+        <td>5</td>
+        <td>8</td>
+        <td>6</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>3</td>
+        <td>1</td>
+        <td>0</td>
+        <td>5</td>
+        <td>8</td>
+        <td>2</td>
+        <td>6</td>
+        <td>9</td>
+        <td>7</td>
+       </tr>
+       <tr>
+        <td>7</td>
+        <td>4</td>
+        <td>6</td>
+        <td>2</td>
+        <td>8</td>
+        <td>5</td>
+        <td>9</td>
+        <td>8</td>
+        <td>2</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>0</td>
+        <td>2</td>
+        <td>8</td>
+        <td>2</td>
+        <td>5</td>
+        <td>4</td>
+        <td>6</td>
+        <td>1</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>6</td>
+        <td>5</td>
+        <td>4</td>
+        <td>1</td>
+        <td>8</td>
+        <td>5</td>
+        <td>0</td>
+       </tr>
+      </table>
+     </instance>
+    </illustration>
    </data>
   </section>
 
@@ -5805,17 +5782,8 @@ Initial revision
    <section class="backmatter" id="footnotz">
     <meta><title>Footnotes</title></meta>
 
-    <data>
-     <p>(<a idref="gamerulz">The Game Rules</a>) The Discipline bonuses mentioned do not affect your permanent scores. If you have completed previous adventures, the Disciplines that you have mastered may still be beneficial. See the Grand Master Rules section of the <a href="&link.rh;">Readers<ch.apos/> Handbook</a> for details.</p>
-     <p>(<a idref="gamerulz">The Game Rules</a>) Note that this list now includes the Silver Bracers and Korlinium Scabbard. These items are restored to the list of permissible items from the Kai and Magnakai series again in this book after being omitted beginning in <bookref series="lw" book="14tcok" section="gamerulz">The Captives of Kaag</bookref>. Presumably, therefore, it should be permissible to leave the Silver Bracers and Korlinium Scabbard in safekeeping at the monastery during the previous books and retrieve them at the outset of this adventure.</p>
-     <p>(<a idref="discplnz">Grand Master Disciplines</a>) The rules of the books in the Magnakai series (6<ch.endash/>12) and the fact that the <quote>rank of Kai Grand Defender<ch.ellips></ch.ellips> means you are skilled in two<ch.ellips></ch.ellips> weapons</quote> imply that for each book that you complete of the Grand Master series (13<ch.endash/>20), you will gain mastery of an additional Kai weapon. For example, if you complete <cite>The Plague Lords of Ruel</cite> and have the Grand Master Discipline of Grand Weaponmastery at the beginning of the next book, you can choose an additional Weapon from the list to have Mastery of.</p>
-     <p>(<a idref="imprvdsc">Improved Grand Master Disciplines</a>) The <spell>Strength</spell> spell is, in practice, also used in armed combat contrary to what is indicated here.</p>
-     <p>(<a idref="sect10">Section 10</a>) This is the correct answer to the gemstone lock in <a idref="sect210">Section 210</a>.</p>
-     <p>(<a idref="sect23">Section 23</a>) This is the correct answer to the portal lock in <a idref="sect18">Section 18</a>.</p>
-     <p>(<a idref="sect60">Section 60</a>) This is the correct answer to the combination lock in <a idref="sect252">Section 252</a>.</p>
-     <p>(<a idref="sect64">Section 64</a>) This is the correct answer to the portal lock in <a idref="sect251">Section 251</a>.</p>
-     <p>(<a idref="sect130">Section 130</a>) This is the correct answer to the time bomb puzzle in <a idref="sect177">Section 177</a>.</p>
-    </data>
+     <data/>
+
    </section>
 
   <section class="backmatter" id="illstrat">
@@ -5859,22 +5827,31 @@ Initial revision
      <meta><title>Secondary Illustrations</title></meta>
 
      <data>
-      <p>Only the first occurrence of each secondary illustration is cited.</p>
       <ul class="unbulleted">
-       <li><a idref="sect21">Small 1</a></li>
-       <li><a idref="sect28">Small 2</a></li>
-       <li><a idref="sect31">Small 3</a></li>
-       <li><a idref="sect46">Small 4</a></li>
-       <li><a idref="sect109">Small 5</a></li>
-       <li><a idref="sect112">Small 6</a></li>
-       <li><a idref="sect120">Small 7</a></li>
-       <li><a idref="sect177">Small 8</a></li>
-       <li><a idref="sect230">Small 9</a></li>
-       <li><a idref="sect239">Small 10</a></li>
-       <li><a idref="sect252">Small 11</a></li>
-       <li><a idref="sect215">Small 12</a></li>
-       <li><a idref="sect304">Small 13</a></li>
-       <li><a idref="sect334">Small 14</a></li>
+       <li><a idref="equipmnt">Equipment</a></li>
+       <li><a idref="discplnz">Kai Disciplines</a></li>
+       <li><a idref="sect21">Section 21</a></li>
+       <li><a idref="sect28">Section 28</a></li>
+       <li><a idref="sect31">Section 31</a></li>
+       <li><a idref="sect46">Section 46</a></li>
+       <li><a idref="sect109">Section 109</a></li>
+       <li><a idref="sect112">Section 112</a></li>
+       <li><a idref="sect120">Section 120</a></li>
+       <li><a idref="sect140">Section 140</a></li>
+       <li><a idref="sect173">Section 173</a></li>
+       <li><a idref="sect174">Section 174</a></li>
+       <li><a idref="sect177">Section 177</a></li>
+       <li><a idref="sect215">Section 215</a></li>
+       <li><a idref="sect230">Section 230</a></li>
+       <li><a idref="sect239">Section 239</a></li>
+       <li><a idref="sect252">Section 252</a></li>
+       <li><a idref="sect256">Section 256</a></li>
+       <li><a idref="sect285">Section 285</a></li>
+       <li><a idref="sect297">Section 297</a></li>
+       <li><a idref="sect304">Section 304</a></li>
+       <li><a idref="sect312">Section 312</a></li>
+       <li><a idref="sect334">Section 334</a></li>
+       <li><a idref="sect344">Section 344</a></li>
       </ul>
      </data>
     </section>
