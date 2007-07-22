@@ -10,93 +10,19 @@
 
 <gamebook xml:lang="en-UK" version="0.12">
 
-<!--
-
-$Id$
-
-$Log: 17tdoi.xml,v $
-Revision 1.32 2007/07/04 13:45:00  Simon Osborne
-Fixed illustration captions.
-
-Revision 1.31 2007/06/27 11:22:32  Simon Osborne
-Changed Kai Disciplines -> Grand Master Disciplines on the
-Combat Rules Summary
-
-Revision 1.3  2007/06/25 15:05:45  Simon Osborne
-Many errata issues, non-errata issues, and xml structural issues fixed.
-XML now conforms to 0.12
-
-Revision 1.19  2006/06/08 19:30:45  jonathan.blake
-To be published today.
-
-Revision 1.18  2006/06/05 23:45:21  jonathan.blake
-Miscellaneous fixes for the day.
-'
-Revision 1.17  2006/06/03 00:07:07  jonathan.blake
-Check in of various changes.
-
-Revision 1.16  2006/05/23 23:38:31  jonathan.blake
-More miscellaneous fixes
-
-Revision 1.15  2006/05/20 00:04:07  jonathan.blake
-lots of little miscellaneous fixes
-
-Revision 1.14  2006/05/16 23:03:29  jonathan.blake
-More fixes to illustrations and unresolved issues.
-
-Revision 1.13  2006/05/11 23:33:30  jonathan.blake
-Added small illustrations
-
-Revision 1.12  2006/04/07 23:33:17  jonathan.blake
-Corrected illustration dimensions and converted to the new "illref" mechanism (apparently not correctly)
-
-Revision 1.11  2006/04/06 19:32:25  jonathan.blake
-Removed the character module files from the internal DTD subset.
-
-Revision 1.10  2006/03/15 20:50:09  jonathan.blake
-Changed all character entities to <ch.*/>
-
-Revision 1.9  2005/10/25 22:42:08  jonathan.blake
-Finished the first run through of the corrections list. Still some issues to address when I have a printed copy of the book in my hands.
-
-Revision 1.8  2005/10/17 18:33:01  jonathan.blake
-Still more incremental updates. More to follow.
-
-Revision 1.7  2005/09/30 22:30:44  jonathan.blake
-Commitment of partial errata fixes. More to come.
-
-Revision 1.6  2005/05/18 18:27:19  jonathan.blake
-Commiting (ne) changes from jffdougan
-
-Revision 1.5  2005/03/30 16:48:34  jonathan.blake
-jffdougan said: "Implemented reported (ne) fixes, except as noted. Included pending fixes as comments prior to frontmatter. Encoded proper spell names where they occur."
-
-Revision 1.4  2005/03/29 18:58:44  jonathan.blake
-jffdougan said: "Finished formatting frontmatter; inserted blank endmatter template from 16tlov. Copied relevant errata & footnotes. Need blurb, dedication & original copyright date. Added primary illustration placements & captions, with placeholder size of 60x60. Updated table of primary illustrations."
-
-I also made it validate.
-
-Revision 1.3  2005/03/27 15:43:45  jonathan.blake
-Fixed internal DTD subset, quotes, encoding, some gblint issues
-
-Revision 1.2  2005/03/27 04:20:26  jonathan.blake
-Added dump of submitted frontmatter text
-
-Revision 1.1  2005/03/26 23:45:50  jonathan.blake
-Initial Freepository revision - freshly minted from the proofread text
-
--->
-
  <meta>
   <title>The Deathlord of Ixia</title>
   <creator class="short">Joe Dever and Brian Williams</creator>
-  <creator class="medium">Joe Dever<br />Illustrated by Brian Williams</creator>
+  <creator class="medium">
+   <line>Joe Dever</line>
+   <line>Illustrated by Brian Williams</line>
+  </creator>
   <creator class="long">
    &inclusion.joe.dever.bio.lw;
    &inclusion.brian.williams.bio.lw;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2006</year><month>6</month><day>8</day></date>
+  <date class="publication"><year>2007</year><month>7</month><day>22</day></date>
   <description class="blurb">
    <p>You are Lone Wolf<ch.emdash/>Kai Grand Master of Sommerlund. Far away to the west lies the peninsula of Ixia. It is an icy, desolate wasteland that for 10,000 years has been the domain of Lord Ixiataaga<ch.emdash/>Masterlord of the Dead. Here he reigns supreme over a horde of lost souls, an undead populace who are condemned to an eternity in his service.</p>
    <p>In <cite>The Deathlord of Ixia</cite>, you must journey to the forbidden city of Xaagon<ch.emdash/>the seat of Lord Ixiataaga<ch.apos/>s dark power<ch.emdash/>and confront him in a life-or-death battle which will test your Grand Master abilities to the limit. Will you overcome and defeat this terrifying entity? Or will you fall victim to his undead legions and the terrible new power they wield?</p>
@@ -104,9 +30,16 @@ Initial Freepository revision - freshly minted from the proofread text
   <description class="publication">
    <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
   </description>
-  <rights class="copyrights">Text copyright <ch.copy/> 1991 Joe Dever.<br />Illustrations copyright <ch.copy/> 1991 Brian Williams.</rights>
+  <rights class="copyrights">
+   <line>Text copyright <ch.copy/> 1991 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1991 Brian Williams.</line>
+  </rights>
   <rights class="license-notification">
-   <p>Text copyright <ch.copy/>  Joe Dever.<br />Illustrations copyright <ch.copy/>  Brian Williams.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+   <p>
+    <line>Text copyright <ch.copy/>  Joe Dever.</line>
+    <line>Illustrations copyright <ch.copy/>  Brian Williams.</line>
+    <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+   </p>
   </rights>
  </meta>
 
@@ -156,17 +89,36 @@ Initial Freepository revision - freshly minted from the proofread text
         <dt>Illustration Transcription</dt>
          <dd>Jonathan Blake</dd>
         <dt>XML</dt>
-         <dd>Jonathan Blake<br/>Jeff Dougan<br/>Simon Osborne</dd>
+         <dd>
+	  <line>Jonathan Blake</line>
+	  <line>Jeff Dougan</line>
+	  <line>Simon Osborne</line>
+	 </dd>
         <dt>Action Charts</dt>
-         <dd>JC Alvarez<br />Jonathan Blake</dd>
+         <dd>
+	  <line>JC Alvarez</line>
+	  <line>Jonathan Blake</line>
+	 </dd>
         <dt>Proofreading</dt>
-         <dd>Robert Hartley (Sections 211<ch.endash/>350)<br/>Timothy Pederick(Sections 141<ch.endash/>210)<br/>Martin Ryland (Frontmatter and Sections 1<ch.endash/>140)</dd>
+         <dd>
+	  <line>Robert Hartley (Sections 211<ch.endash/>350)</line>
+	  <line>Timothy Pederick(Sections 141<ch.endash/>210)</line>
+	  <line>Martin Ryland (Frontmatter and Sections 1<ch.endash/>140)</line>
+	 </dd>
         <dt>Editing</dt>
-         <dd>Jeff Dougan<br/>Jacob Humphrey<br/>Ingo Kl<ch.ouml/>cker<br/>LeRoy McSwain<br/>Simon Osborne<br/>Timothy Pederick<br/>Jennifer Sigman<br/></dd>
+         <dd>
+	  <line>Jeff Dougan</line>
+	  <line>Jacob Humphrey</line>
+	  <line>Ingo Kl<ch.ouml/>cker</line>
+	  <line>LeRoy McSwain</line>
+	  <line>Simon Osborne</line>
+	  <line>Timothy Pederick</line>
+	  <line>Jennifer Sigman</line>
+	 </dd>
         <dt>Coordination</dt>
          <dd>Jonathan Blake</dd>
         <dt>Special Thanks</dt>
-         <dd>Andre Davidson</dd>
+         <dd>Andr<ch.eacute/> Davidson</dd>
        </dl>
       </data>
      </section>
@@ -5226,42 +5178,42 @@ Initial Freepository revision - freshly minted from the proofread text
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acdscplz.gif" width="385" height="246" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acchklst.gif" width="385" height="128" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif"></instance>
     </illustration>
@@ -5378,145 +5330,6 @@ Initial Freepository revision - freshly minted from the proofread text
      </meta>
      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif"></instance>
      <instance src="crtpos.tex" width="380" height="500" class="tex"></instance>
-    </illustration>
-   </data>
-  </section>
-
-  <section class="backmatter" id="random">
-   <meta><title>Random Number Table</title></meta>
-
-   <data>
-
-    <illustration class="inline">
-     <meta>
-      <creator>Jonathan Blake</creator>
-     </meta>
-     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
-     <instance src="random.tex" width="380" height="500" class="tex"></instance>
-     <instance class="text">
-      <table>
-       <tr>
-        <td>8</td>
-        <td>4</td>
-        <td>3</td>
-        <td>1</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>4</td>
-        <td>3</td>
-        <td>2</td>
-       </tr>
-       <tr>
-        <td>0</td>
-        <td>6</td>
-        <td>3</td>
-        <td>1</td>
-        <td>7</td>
-        <td>5</td>
-        <td>8</td>
-        <td>7</td>
-        <td>4</td>
-        <td>7</td>
-       </tr>
-       <tr>
-        <td>7</td>
-        <td>8</td>
-        <td>6</td>
-        <td>4</td>
-        <td>5</td>
-        <td>0</td>
-        <td>4</td>
-        <td>9</td>
-        <td>1</td>
-        <td>6</td>
-       </tr>
-       <tr>
-        <td>9</td>
-        <td>3</td>
-        <td>6</td>
-        <td>7</td>
-        <td>6</td>
-        <td>2</td>
-        <td>8</td>
-        <td>5</td>
-        <td>0</td>
-        <td>1</td>
-       </tr>
-       <tr>
-        <td>0</td>
-        <td>8</td>
-        <td>9</td>
-        <td>4</td>
-        <td>2</td>
-        <td>9</td>
-        <td>0</td>
-        <td>3</td>
-        <td>1</td>
-        <td>8</td>
-       </tr>
-       <tr>
-        <td>2</td>
-        <td>9</td>
-        <td>1</td>
-        <td>4</td>
-        <td>8</td>
-        <td>2</td>
-        <td>7</td>
-        <td>5</td>
-        <td>8</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>1</td>
-        <td>4</td>
-        <td>6</td>
-        <td>7</td>
-        <td>5</td>
-        <td>1</td>
-        <td>2</td>
-        <td>6</td>
-        <td>1</td>
-        <td>0</td>
-       </tr>
-       <tr>
-        <td>2</td>
-        <td>8</td>
-        <td>0</td>
-        <td>2</td>
-        <td>8</td>
-        <td>9</td>
-        <td>5</td>
-        <td>8</td>
-        <td>2</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>5</td>
-        <td>0</td>
-        <td>8</td>
-        <td>7</td>
-        <td>6</td>
-        <td>5</td>
-        <td>4</td>
-        <td>7</td>
-        <td>0</td>
-        <td>8</td>
-       </tr>
-       <tr>
-        <td>8</td>
-        <td>6</td>
-        <td>3</td>
-        <td>6</td>
-        <td>9</td>
-        <td>4</td>
-        <td>1</td>
-        <td>2</td>
-        <td>5</td>
-        <td>0</td>
-       </tr>
-      </table>
-     </instance>
     </illustration>
 
     <illustration>
@@ -5718,6 +5531,145 @@ Initial Freepository revision - freshly minted from the proofread text
          <td>k/0</td>
         </tr>
        </tbody>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
+  <section class="backmatter" id="random">
+   <meta><title>Random Number Table</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
+     <instance src="random.tex" width="380" height="500" class="tex"></instance>
+     <instance class="text">
+      <table>
+       <tr>
+        <td>8</td>
+        <td>4</td>
+        <td>3</td>
+        <td>1</td>
+        <td>6</td>
+        <td>5</td>
+        <td>6</td>
+        <td>4</td>
+        <td>3</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>6</td>
+        <td>3</td>
+        <td>1</td>
+        <td>7</td>
+        <td>5</td>
+        <td>8</td>
+        <td>7</td>
+        <td>4</td>
+        <td>7</td>
+       </tr>
+       <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>6</td>
+        <td>4</td>
+        <td>5</td>
+        <td>0</td>
+        <td>4</td>
+        <td>9</td>
+        <td>1</td>
+        <td>6</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>3</td>
+        <td>6</td>
+        <td>7</td>
+        <td>6</td>
+        <td>2</td>
+        <td>8</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>8</td>
+        <td>9</td>
+        <td>4</td>
+        <td>2</td>
+        <td>9</td>
+        <td>0</td>
+        <td>3</td>
+        <td>1</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>9</td>
+        <td>1</td>
+        <td>4</td>
+        <td>8</td>
+        <td>2</td>
+        <td>7</td>
+        <td>5</td>
+        <td>8</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>1</td>
+        <td>4</td>
+        <td>6</td>
+        <td>7</td>
+        <td>5</td>
+        <td>1</td>
+        <td>2</td>
+        <td>6</td>
+        <td>1</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>8</td>
+        <td>0</td>
+        <td>2</td>
+        <td>8</td>
+        <td>9</td>
+        <td>5</td>
+        <td>8</td>
+        <td>2</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>0</td>
+        <td>8</td>
+        <td>7</td>
+        <td>6</td>
+        <td>5</td>
+        <td>4</td>
+        <td>7</td>
+        <td>0</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>6</td>
+        <td>3</td>
+        <td>6</td>
+        <td>9</td>
+        <td>4</td>
+        <td>1</td>
+        <td>2</td>
+        <td>5</td>
+        <td>0</td>
+       </tr>
       </table>
      </instance>
     </illustration>
@@ -5983,36 +5935,8 @@ Initial Freepository revision - freshly minted from the proofread text
    <section class="backmatter" id="footnotz">
     <meta><title>Footnotes</title></meta>
 
-    <data>
-     <p>(<a idref="tssf">The Story So Far<ch.ellips/></a>) There is some confusion around the use of the term <quote>Old Kingdom</quote> in this book. Although the native Ixians are often described as belonging to the <quote>time of the Old Kingdoms</quote> (<a idref="sect152">Section 152</a>), it is clear from the fact that the Deathlord destroyed them during the Age of Eternal Night that they could not have existed during the Age of the Old Kingdoms which began more than 1000 years after the Age of Eternal Night ended. (See <cite><a href="&link.tmc;">The Magnamund Companion</a></cite>, <quote>Magnamund Then and Now</quote>.) The author may have used the term <quote>Old Kingdom</quote> to refer to any humanoid nation prior to the appearance of the Shianti.</p>
-     <p>(<a idref="gamerulz">The Game Rules</a>) The Discipline bonuses mentioned do not affect your permanent scores. If you have completed previous adventures, the Disciplines that you have mastered may still be beneficial. See the Grand Master Rules section of the <a href="&link.rh;">Readers<ch.apos/> Handbook</a> for details.</p>
-     <p>(<a idref="gamerulz">The Game Rules</a>) Note that this list now includes the Silver Bracers and Korlinium Scabbard. These items are restored to the list of permissible items from the Kai and Magnakai series again in this book after being omitted beginning in <bookref series="lw" book="14tcok" section="gamerulz">The Captives of Kaag</bookref>. Presumably, therefore, it should be permissible to leave the Silver Bracers and Korlinium Scabbard in safekeeping at the monastery during the previous books and retrieve them at the outset of this adventure.</p>
-     <p>(<a idref="discplnz">Grand Master Disciplines</a>) The rules of the books in the Magnakai series (6<ch.endash/>12) and the fact that the <quote>rank of Kai Grand Defender<ch.ellips/> means you are skilled in two<ch.ellips/> weapons</quote> imply that for each book that you complete of the Grand Master series (13<ch.endash/>20), you will gain mastery of an additional Weapon. For example, if you complete <cite>The Plague Lords of Ruel</cite> and have the Grand Master Discipline of Grand Weaponmastery at the beginning of the next book, you can choose an additional Weapon from the list to have mastery of.</p>
-     <p>(<a idref="imprvdsc">Improved Grand Master Disciplines</a>) The <spell>Strength</spell> spell is, in practice, also used in armed combat contrary to what is indicated here.</p>
-     <p>(<a idref="sect10">10</a>) This is the correct answer to the crystal dais grid in <a idref="sect69">Section 69</a>.</p>
-     <p>(<a idref="sect20">20</a>) This is the correct answer to the ancient, green crystal lock in <a idref="sect213">Section 213</a>.</p>
-     <p>(<a idref="sect64">64</a>) The wording of this section ignores the fact that you may arrive here without passing through the curtain of light.</p>
-     <p>(<a idref="sect67">67</a>) Unless you have Grand Weaponmastery and are a Sun Knight or higher, you may not use a two-handed weapon (i.e. Broadsword, Quarterstaff, or Spear) for this combat.</p>
-     <p>(<a idref="sect69">69</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct. You have only one chance to guess at the correct answer. If you guess incorrectly, <a idref="sect139">turn immediately to 139</a>.</p>
-     <p>(<a idref="sect77">77</a>) There is no mention of what type of Weapon the Power Spike is. If you choose to consider it one of the close combat Weapons used by the Kai (i.e. Spear, Dagger, Mace, Short Sword, Warhammer, Quarterstaff, Broadsword, Axe, and Sword), you may add all appropriate bonuses to your Combat Skill. If you decide that the Power Spike is not any of those Weapons, you may still decide that your Weaponmastery bonuses, if any, apply since Grand Masters are proficient with <quote>all close combat and missile weapons</quote> due to their knowledge of Magnakai Weaponmastery. (<a idref="discplnz">Grand Master Disciplines</a>)</p>
-     <p>(<a idref="sect96">96</a>) Kajarda are undead. (See Section <a idref="sect8">8</a>, <a idref="sect52">52</a>, or <a idref="sect265">265</a>.)</p>
-     <p>(<a idref="sect100">100</a>) This is the correct answer to the intricate lockplate in the centre of the green crystal door in <a idref="sect322">Section 322</a>.</p>
-     <p>(<a idref="sect123">123</a>) It is unclear whether a 0 picked on the <a idref="random">Random Number Table</a> should count as exactly 0. Since the procedure described here is similar to the procedure for Kai-blast, and you are required to be a Sun Lord who has mastered Kai-surge, it would be reasonable to count 0 as a 1 in the same way as for Kai-blast. Remember that a Kai-blast reduces your <typ class="attribute">ENDURANCE</typ> total by 4.</p>
-     <p>(<a idref="sect125">125</a>) Kajarda are undead. (See Section <a idref="sect6">6</a>, <a idref="sect8">8</a>, <a idref="sect52">52</a>, <a idref="sect103">103</a>, <a idref="sect120">120</a>, or <a idref="sect265">265</a>.)</p>
-     <p>(<a idref="sect137">137</a>) Unless you have Grand Weaponmastery and are a Sun Knight or higher, you may not use a two-handed weapon (i.e. Broadsword, Quarterstaff, and Spear) for this combat.</p>
-     <p>(<a idref="sect141">141</a>) Assuming that this weaponry was created by native Ixians prior to their destruction at the hands of the Deathlord since no other nation has occupied Ixia since that time, it is impossible to reconcile calling them <quote>Old Kingdom armourers</quote> with the timeline presented in <cite><a href="&link.tmc;">The Magnamund Companion</a></cite>, <quote>Magnamund Then and Now</quote>. According to that book, the Ixians must have been destroyed long before the Age of the Old Kingdoms.</p>
-     <p>(<a idref="sect152">152</a>) It is impossible to reconcile the statement that the native Ixians reigned <quote>in the time of the Old Kingdoms</quote> with the timeline presented in <cite><a href="&link.tmc;">The Magnamund Companion</a></cite>, <quote>Magnamund Then and Now</quote>. According to that book, the Ixians must have been destroyed long before the Age of the Old Kingdoms.</p>
-     <p>(<a idref="sect162">162</a>) It is impossible to reconcile the statement that Old Kingdom magic is <quote>older<ch.ellips/> than the Deathlord<ch.apos/>s vile necromancy</quote> with the timeline presented in <cite><a href="&link.tmc;">The Magnamund Companion</a></cite>, <quote>Magnamund Then and Now</quote> and the statements about the origin of magical power in <quote>The Realms of Northern Magnamund: The Birth of Magnamund</quote> and <quote>The Realms of Southern Magnamund: Man, Magic and the Moonstone</quote> in that same book. According to <cite><a href="&link.tmc;">The Magnamund Companion</a></cite>, magic entered Magnamund with the Elder Magi long after Agarash and his minion, the Deathlord.</p>
-     <p>(<a idref="sect165">165</a>) It is impossible to reconcile the statement that the native Ixians were a <quote>race of the Old Kingdoms</quote> with the timeline presented in <cite><a href="&link.tmc;">The Magnamund Companion</a></cite>, <quote>Magnamund Then and Now</quote>. According to that book, the Ixians must have been destroyed long before the Age of the Old Kingdoms.</p>
-     <p>(<a idref="sect179">179</a>) It is unclear whether Grand Huntmastery should help you find food in this situation. Note that this appears to be the only section within the Grand Master books where Huntmastery is not mentioned in when you are required to eat a Meal. This either means that the current omission is intentional because the author is otherwise so consistent, or it means that Huntmastery was intended to be applied in all situations and this is a unintentional omission.</p>
-     <p>(<a idref="sect213">213</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct. You have only one chance to guess at the correct answer. If you guess incorrectly, <a idref="sect199">turn immediately to 199</a>.</p>
-     <p>(<a idref="sect220">220</a>) This is a permanent enhancement to this Weapon.</p>
-     <p>(<a idref="sect234">234</a>) It seems logical that you should deduct 1 <typ class="attribute">ENDURANCE</typ> point due to this use of Kai-surge.</p>
-     <p>(<a idref="sect239">239</a>) There is no path which leads to this section of the book. It is functionally identical to <a idref="sect23">Section 23</a> and <a idref="sect242">Section 242</a>, and therefore its isolation does not affect the gameplay of the book.</p>
-     <p>(<a idref="sect287">287</a>) Kajarda are undead. (See Section <a idref="sect6">6</a>, <a idref="sect8">8</a>, <a idref="sect52">52</a>, <a idref="sect103">103</a>, <a idref="sect120">120</a>, or <a idref="sect265">265</a>.)</p>
-     <p>(<a idref="sect322">322</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct. You have only one chance to guess at the correct answer. If you guess incorrectly, <a idref="sect84">turn immediately to 84</a>.</p>
-     <p>(<a idref="sect343">343</a>) It is impossible to reconcile the statement that the native Ixians reigned <quote>in the time of the Old Kingdoms</quote> with the timeline presented in <cite><a href="&link.tmc;">The Magnamund Companion</a></cite>, <quote>Magnamund Then and Now</quote>. According to that book, the Ixians must have been destroyed long before the Age of the Old Kingdoms.</p>
-    </data>
+    <data/>
+
    </section>
 
    <section class="backmatter" id="illstrat">
@@ -6056,21 +5980,33 @@ Initial Freepository revision - freshly minted from the proofread text
       <meta><title>Secondary Illustrations</title></meta>
 
       <data>
-       <p>Only the first occurrence of each secondary illustration is cited.</p>
        <ul class="unbulleted">
-        <li><a idref="sect">Small 3</a></li>
-        <li><a idref="sect">Small 10</a></li>
-        <li><a idref="sect">Small 2</a></li>
-        <li><a idref="sect">Small 12</a></li>
-        <li><a idref="sect">Small 13</a></li>
-        <li><a idref="sect">Small 6</a></li>
-        <li><a idref="sect">Small 11</a></li>
-        <li><a idref="sect">Small 4</a></li>
-        <li><a idref="sect">Small 9</a></li>
-        <li><a idref="sect">Small 8</a></li>
-        <li><a idref="sect">Small 5</a></li>
-        <li><a idref="sect">Small 1</a></li>
-        <li><a idref="sect">Small 7</a></li>
+        <li><a idref="equipmnt">Equipment</a></li>
+        <li><a idref="discplnz">Kai Disciplines</a></li>
+        <li><a idref="sect7">Section 7</a></li>
+        <li><a idref="sect20">Section 20</a></li>
+        <li><a idref="sect22">Section 22</a></li>
+        <li><a idref="sect32">Section 32</a></li>
+        <li><a idref="sect48">Section 48</a></li>
+        <li><a idref="sect56">Section 56</a></li>
+        <li><a idref="sect69">Section 69</a></li>
+        <li><a idref="sect94">Section 94</a></li>
+        <li><a idref="sect106">Section 106</a></li>
+        <li><a idref="sect107">Section 107</a></li>
+        <li><a idref="sect141">Section 141</a></li>
+        <li><a idref="sect143">Section 143</a></li>
+        <li><a idref="sect150">Section 150</a></li>
+        <li><a idref="sect180">Section 180</a></li>
+        <li><a idref="sect181">Section 181</a></li>
+        <li><a idref="sect192">Section 192</a></li>
+        <li><a idref="sect197">Section 197</a></li>
+        <li><a idref="sect202">Section 202</a></li>
+        <li><a idref="sect203">Section 203</a></li>
+        <li><a idref="sect206">Section 206</a></li>
+        <li><a idref="sect214">Section 214</a></li>
+        <li><a idref="sect289">Section 289</a></li>
+        <li><a idref="sect295">Section 295</a></li>
+        <li><a idref="sect338">Section 338</a></li>
        </ul>
       </data>
      </section>
