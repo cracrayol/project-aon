@@ -11,84 +11,35 @@
 
 <gamebook xml:lang="en-UK" version="0.12">
 
-<!--
-
-$Id$
-$Log: 12tmod.xml,v $
-Revision 1.52  2007/07/02 15:30:00  Simon Osborne
-Minor rewording of a repeated Erratum for consistency.
-
-Revision 1.51  2007/07/01 22:50:07  Simon Osborne
-A minor Erratum fixed.
-
-Revision 1.5  2007/06/27 16:02:23  Simon Osborne
-Fixed many Errata and Non-errata issues.
-
-Revision 1.3  2005/03/28 21:35:23  jonathan.blake
-Fixed the "Section 200 chestnut" 7eacute;
-
-Revision 1.2  2005/03/10 18:21:51  jonathan.blake
-Removed link to old staff email address.
-
-Revision 1.1  2004/11/08 01:29:12  jonathan.blake
-Initial Freepository revision
-
-
-//// RCS Revision Log ////
-
-Revision 1.10  2003/01/27 22:11:39  jblake
-Checkin prior to global footnote change
-
-Revision 1.9  2003/01/04 17:15:05  jblake
-Published
-
-Revision 1.8  2002/12/06 21:19:13  jblake
-XML cleanup.
-
-Revision 1.7  2002/11/12 18:49:50  jblake
-Fix of interbook links.
-
-Revision 1.6  2002/11/10 07:53:10  jblake
-Updated publication date.
-
-Revision 1.5 2002/11/04 21:00:00 jdougan
-Inserted "Archmaster" into introductory text of Improved Disciplines
-
-Revision 1.4  2002/10/30 06:45:29  jblake
-Fixed some non-empty "br" nodes and other validity issues.
-
-Revision 1.3  2002/10/27 03:59:18  jblake
-Corrected formatting.
-
-Revision 1.2  2002/10/26 01:12:32  twolmer
-Inserted the large illustrations and cleaned up markup.
-
-Revision 1.1  2002/10/15 23:11:37  jblake
-Initial revision
-
-//////////////////////////
-
--->
-
  <meta>
   <title>The Masters of Darkness</title>
   <creator class="short">Joe Dever and Brian Williams</creator>
-  <creator class="medium">Joe Dever<br/>Illustrated by Brian Williams</creator>
+  <creator class="medium">
+   <line>Joe Dever</line>
+   <line>Illustrated by Brian Williams</line>
+  </creator>
   <creator class="long">
    &inclusion.joe.dever.bio.lw;
    &inclusion.brian.williams.bio.lw;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2003</year><month>1</month><day>3</day></date>
+  <date class="publication"><year>2007</year><month>7</month><day>22</day></date>
   <description class="blurb">
    <p>The moment you draw the dagger from your belt, a blue flame courses the length of its twisted blade and the squealing flood of Crypt Spawn soar upward towards the roof in order to avoid you. They and their creator, Darklord Kraagensk<ch.ucirc/>l, recognize the power you wield and both are in awe and terror of it. Freed from the threat of his loathsome summonations, you now advance upon Kraagensk<ch.ucirc/>l with the dagger before you. He screams in anger and lunges at your head, his sword ablaze with tongues of black fire. You catch the blow on the tip of the dagger and both blades spark furiously as their terrible powers collide.<ch.ellips/></p>
   </description>
   <description class="publication">
    <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
   </description>
-  <rights class="copyrights">Text copyright <ch.copy/> 1988 Joe Dever.<br/>Illustrations copyright <ch.copy/> 1988 Brian Williams.</rights>
+  <rights class="copyrights">
+   <line>Text copyright <ch.copy/> 1988 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1988 Brian Williams.</line>
+  </rights>
   <rights class="license-notification">
-   <p>Text copyright <ch.copy/> 1988 Joe Dever.<br/>Illustrations copyright <ch.copy/> 1988 Brian Williams.<br/>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+   <p>
+    <line>Text copyright <ch.copy/> 1988 Joe Dever.</line>
+    <line>Illustrations copyright <ch.copy/> 1988 Brian Williams.</line>
+    <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+   </p>
   </rights>
  </meta>
 
@@ -112,8 +63,11 @@ Initial revision
     </meta>
 
     <data>
-     <p class="dedication">For Sophie and Ben</p>
-     <p class="dedication">With special thanks to<br/>Adrian Orr<ch.emdash/>creator of the <quote>Mind Reaper</quote>.</p>
+     <p class="dedication">
+      <line>For Sophie and Ben</line>
+      <line>With special thanks to</line>
+      <line>Adrian Orr<ch.emdash/>creator of the <quote>Mind Reaper</quote>.
+     </p>
     </data>
    </section>
 
@@ -139,19 +93,38 @@ Initial revision
         <dt>Illustration Transcription</dt>
          <dd>Jonathan Blake</dd>
         <dt>XML</dt>
-         <dd>Jonathan Blake<br/>Jeff Dougan<br/>Simon Osborne<br/>Thomas Wolmer</dd>
+         <dd>
+	  <line>Jonathan Blake</line>
+	  <line>Jeff Dougan</line>
+	  <line>Simon Osborne</line>
+	  <line>Thomas Wolmer</line>
+	 </dd>
         <dt>Alternate Illustrations</dt>
-         <dd>JC Alvarez (action charts)<br />Jonathan Blake (extramatter charts and tables)</dd>
+         <dd>
+	  <line>JC Alvarez (action charts)</line>
+	  <line>Jonathan Blake (extramatter charts and tables)</line>
+	 </dd>
         <dt>Proofreading</dt>
-         <dd>Simon Osborne (front matter, Sections 36<ch.endash/>70, 106<ch.endash/>210, 246<ch.endash/>350)<br/>Matthew Reynolds (Sections 1<ch.endash/>35, 71<ch.endash/>105, 211<ch.endash/>245, 281<ch.endash/>350)</dd>
+         <dd>
+	  <line>Simon Osborne (front matter, Sections 36<ch.endash/>70, 106<ch.endash/>210, 246<ch.endash/>350)</line>
+	  <line>Matthew Reynolds (Sections 1<ch.endash/>35, 71<ch.endash/>105, 211<ch.endash/>245, 281<ch.endash/>350)</line>
+	 </dd>
         <dt>Editing</dt>
-         <dd>Jeff Dougan<br/>Ingo Kl<ch.ouml/>cker<br/>Simon Osborne<br/>Thomas Wolmer</dd>
+         <dd>
+	  <line>Jeff Dougan</line>
+	  <line>Ingo Kl<ch.ouml/>cker</line>
+	  <line>Simon Osborne</line>
+	  <line>Thomas Wolmer</line>
+	 </dd>
         <dt>PDF Layout</dt>
-         <dd>Jonathan Blake<br/>Ingo Kl<ch.ouml/>cker</dd>
+         <dd>
+	  <line>Jonathan Blake</line>
+	  <line>Ingo Kl<ch.ouml/>cker</line>
+	 </dd>
         <dt>Coordination</dt>
          <dd>Jonathan Blake</dd>
         <dt>Special Thanks</dt>
-         <dd>Richard Chalk<br />Peter Smyth</dd>
+         <dd>Richard Chalk and Peter Smyth</dd>
        </dl>
       </data>
      </section>
@@ -6084,42 +6057,42 @@ Initial revision
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acdscplz.gif" width="385" height="246" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acchklst.gif" width="385" height="128" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif"></instance>
     </illustration>
@@ -6235,145 +6208,6 @@ Initial revision
      </meta>
      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif"></instance>
      <instance src="crtpos.tex" width="380" height="500" class="tex"></instance>
-    </illustration>
-   </data>
-  </section>
-
-  <section class="backmatter" id="random">
-   <meta><title>Random Number Table</title></meta>
-
-   <data>
-
-    <illustration class="inline">
-     <meta>
-      <creator>Jonathan Blake</creator>
-     </meta>
-     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
-     <instance src="random.tex" width="380" height="500" class="tex"></instance>
-     <instance class="text">
-      <table>
-       <tr>
-        <td>8</td>
-        <td>2</td>
-        <td>4</td>
-        <td>1</td>
-        <td>3</td>
-        <td>1</td>
-        <td>7</td>
-        <td>9</td>
-        <td>6</td>
-        <td>2</td>
-       </tr>
-       <tr>
-        <td>6</td>
-        <td>8</td>
-        <td>6</td>
-        <td>5</td>
-        <td>4</td>
-        <td>3</td>
-        <td>8</td>
-        <td>7</td>
-        <td>8</td>
-        <td>1</td>
-       </tr>
-       <tr>
-        <td>9</td>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-        <td>5</td>
-        <td>7</td>
-        <td>6</td>
-        <td>3</td>
-        <td>1</td>
-        <td>7</td>
-       </tr>
-       <tr>
-        <td>5</td>
-        <td>2</td>
-        <td>4</td>
-        <td>0</td>
-        <td>6</td>
-        <td>8</td>
-        <td>8</td>
-        <td>6</td>
-        <td>3</td>
-        <td>2</td>
-       </tr>
-       <tr>
-        <td>0</td>
-        <td>5</td>
-        <td>9</td>
-        <td>5</td>
-        <td>7</td>
-        <td>9</td>
-        <td>0</td>
-        <td>4</td>
-        <td>1</td>
-        <td>4</td>
-       </tr>
-       <tr>
-        <td>2</td>
-        <td>8</td>
-        <td>5</td>
-        <td>2</td>
-        <td>3</td>
-        <td>6</td>
-        <td>7</td>
-        <td>2</td>
-        <td>6</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>4</td>
-        <td>8</td>
-        <td>0</td>
-        <td>4</td>
-        <td>8</td>
-        <td>7</td>
-        <td>1</td>
-        <td>3</td>
-        <td>4</td>
-        <td>0</td>
-       </tr>
-       <tr>
-        <td>6</td>
-        <td>2</td>
-        <td>0</td>
-        <td>4</td>
-        <td>4</td>
-        <td>1</td>
-        <td>6</td>
-        <td>1</td>
-        <td>2</td>
-        <td>0</td>
-       </tr>
-       <tr>
-        <td>8</td>
-        <td>4</td>
-        <td>1</td>
-        <td>2</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>1</td>
-        <td>0</td>
-        <td>6</td>
-       </tr>
-       <tr>
-        <td>4</td>
-        <td>6</td>
-        <td>5</td>
-        <td>0</td>
-        <td>9</td>
-        <td>0</td>
-        <td>5</td>
-        <td>9</td>
-        <td>5</td>
-        <td>7</td>
-       </tr>
-      </table>
-     </instance>
     </illustration>
 
     <illustration>
@@ -6581,6 +6415,145 @@ Initial revision
    </data>
   </section>
 
+  <section class="backmatter" id="random">
+   <meta><title>Random Number Table</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
+     <instance src="random.tex" width="380" height="500" class="tex"></instance>
+     <instance class="text">
+      <table>
+       <tr>
+        <td>8</td>
+        <td>2</td>
+        <td>4</td>
+        <td>1</td>
+        <td>3</td>
+        <td>1</td>
+        <td>7</td>
+        <td>9</td>
+        <td>6</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>6</td>
+        <td>8</td>
+        <td>6</td>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>8</td>
+        <td>7</td>
+        <td>8</td>
+        <td>1</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>5</td>
+        <td>6</td>
+        <td>6</td>
+        <td>5</td>
+        <td>7</td>
+        <td>6</td>
+        <td>3</td>
+        <td>1</td>
+        <td>7</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>2</td>
+        <td>4</td>
+        <td>0</td>
+        <td>6</td>
+        <td>8</td>
+        <td>8</td>
+        <td>6</td>
+        <td>3</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>5</td>
+        <td>9</td>
+        <td>5</td>
+        <td>7</td>
+        <td>9</td>
+        <td>0</td>
+        <td>4</td>
+        <td>1</td>
+        <td>4</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>8</td>
+        <td>5</td>
+        <td>2</td>
+        <td>3</td>
+        <td>6</td>
+        <td>7</td>
+        <td>2</td>
+        <td>6</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td>8</td>
+        <td>0</td>
+        <td>4</td>
+        <td>8</td>
+        <td>7</td>
+        <td>1</td>
+        <td>3</td>
+        <td>4</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>6</td>
+        <td>2</td>
+        <td>0</td>
+        <td>4</td>
+        <td>4</td>
+        <td>1</td>
+        <td>6</td>
+        <td>1</td>
+        <td>2</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>4</td>
+        <td>1</td>
+        <td>2</td>
+        <td>6</td>
+        <td>5</td>
+        <td>6</td>
+        <td>1</td>
+        <td>0</td>
+        <td>6</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td>6</td>
+        <td>5</td>
+        <td>0</td>
+        <td>9</td>
+        <td>0</td>
+        <td>5</td>
+        <td>9</td>
+        <td>5</td>
+        <td>7</td>
+       </tr>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
    <section class="backmatter" id="errata">
     <meta>
      <title>Errata</title>
@@ -6752,22 +6725,8 @@ Initial revision
      <title>Footnotes</title>
     </meta>
 
-    <data>
-     <p>(<a idref="sect5">Section 5</a>) Be aware that these choices originally read <quote>three rounds or less<ch.ellips/></quote> and <quote>longer than four rounds<ch.ellips/></quote>. We<ch.apos/>ve arbitrarily changed the first choice to read <quote>four rounds or less<ch.ellips/></quote>, erring in the reader<ch.apos/>s favour.</p>
-     <p>(<a idref="sect61">Section 61</a>) Crowns or Lune may not be used in lieu of Kika in this instance.</p>
-     <p>(<a idref="sect75">Section 75</a>) <cite>Lone Wolf Club Newsletter</cite> clarifies: <quote>Although the Sommerswerd has been drawn and used within the Darklands, you were able to use it to destroy Kraagensk<ch.ucirc/>l before he could make use of the communicator to inform Gnaag of your presence. The port of Argazad is on the fringe of the Darklands and, because of its remote location, your unsheathing of the Sommerswerd did not directly alert Gnaag in Helgedad. The Sommerswerd combat with Kraagensk<ch.ucirc/>l was true to Rimoah<ch.apos/>s warning (<a idref="sect282">Section 282</a>); it did alert him to your presence and betrayed your true identity.</quote></p>
-     <p>(<a idref="sect145">Section 145</a>)This loss of <typ class="attribute">ENDURANCE</typ> is permanent (cf. <bookref series="lw" book="07cd"><cite>Castle Death</cite></bookref> <bookref series="lw" book="07cd" section="sect129">Section 129</bookref>).</p>
-     <p>(<a idref="sect159">Section 159</a>) The Bronin Vest may be worn with a Padded Leather Waistcoat, but not with a Chainmail Waistcoat.</p>
-     <p>(<a idref="sect162">Section 162</a>) Crowns or Lune may not be used in lieu of Kika in this instance.</p>
-     <p>(<a idref="sect179">Section 179</a>) You may still risk taking the Black Cube if you wish.</p>
-     <p>(<a idref="sect184">Section 184</a>) Crowns or Lune may not be used in lieu of Kika in this instance.</p>
-     <p>(<a idref="sect187">Section 187</a>) The Zejar-dulaga occupies the same space in your Quiver as a normal Arrow. If you have 6 Arrows, you may discard one in favour of the Zejar-dulaga.</p>
-     <p>(<a idref="sect200">Section 200</a>) If you only possess the Kai Discipline of Hunting<ch.emdash/>not Huntmastery<ch.emdash/>you may no longer hunt for food as you venture deeper into the Darklands.</p>
-     <p>(<a idref="sect221">Section 221</a>) Crowns or Lune may not be used in lieu of Kika in this instance.</p>
-     <p>(<a idref="sect268">Section 268</a>) It is possible that your permanent <typ class="attribute">ENDURANCE</typ> score might fall to zero or below due to the Sea-scavenger<ch.apos/>s attack, but you may be wearing a piece of armour that gives you an <typ class="attribute">ENDURANCE</typ> point bonus. This would leave you with a permanent <typ class="attribute">ENDURANCE</typ> score of 0 with a current <typ class="attribute">ENDURANCE</typ> score still above zero. If your basic <typ class="attribute">ENDURANCE</typ> score is reduced to zero or below, you are dead and your adventure is over.</p>
-     <p>(<a idref="sect350">Section 350</a>) The next book in the <cite>Lone Wolf</cite> series is entitled <bookref series="lw" book="13tplor"><cite>The Plague Lords of Ruel</cite></bookref>.</p>
-     <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>, <quote>top of chart</quote> with <quote>top of the chart</quote> and <quote>fall to 0</quote> with <quote>falls to 0 or below</quote>. Replaced <quote>Kai Disciplines</quote> with <quote>Magnakai Disciplines</quote>.</p>
-    </data>
+    <data/>
+
    </section>
 
    <section class="backmatter" id="illstrat">
@@ -6816,20 +6775,30 @@ Initial revision
       </meta>
 
       <data>
-       <p>Only the first occurrence of each secondary illustration is cited.</p>
        <ul class="unbulleted">
-        <li><a idref="sect326">Small 1</a></li>
-        <li><a idref="sect305">Small 2</a></li>
-        <li><a idref="sect196">Small 3</a></li>
-        <li><a idref="sect57">Small 4</a></li>
-        <li><a idref="sect101">Small 5</a></li>
-        <li><a idref="sect187">Small 6</a></li>
-        <li><a idref="sect100">Small 7</a></li>
-        <li><a idref="sect36">Small 8</a></li>
-        <li><a idref="sect74">Small 9</a></li>
-        <li><a idref="sect6">Small 10</a></li>
-        <li><a idref="sect150">Small 11</a></li>
-        <li><a idref="sect113">Small 12</a></li>
+        <li><a idref="equipmnt">Equipment</a></li>
+        <li><a idref="discplnz">Kai Disciplines</a></li>
+        <li><a idref="sect6">Section 6</a></li>
+        <li><a idref="sect36">Section 36</a></li>
+        <li><a idref="sect57">Section 57</a></li>
+        <li><a idref="sect74">Section 74</a></li>
+        <li><a idref="sect100">Section 100</a></li>
+        <li><a idref="sect101">Section 101</a></li>
+        <li><a idref="sect113">Section 113</a></li>
+        <li><a idref="sect121">Section 121</a></li>
+        <li><a idref="sect128">Section 128</a></li>
+        <li><a idref="sect150">Section 150</a></li>
+        <li><a idref="sect187">Section 187</a></li>
+        <li><a idref="sect195">Section 195</a></li>
+        <li><a idref="sect196">Section 196</a></li>
+        <li><a idref="sect200">Section 200</a></li>
+        <li><a idref="sect208">Section 208</a></li>
+        <li><a idref="sect214">Section 214</a></li>
+        <li><a idref="sect229">Section 229</a></li>
+        <li><a idref="sect275">Section 275</a></li>
+        <li><a idref="sect305">Section 305</a></li>
+        <li><a idref="sect306">Section 306</a></li>
+        <li><a idref="sect326">Section 326</a></li>
        </ul>
       </data>
      </section>
