@@ -11,65 +11,19 @@
 
 <gamebook xml:lang="en-UK" version="0.12">
 
-<!--
-
-$Id$
-$Log$
-Revision 1.42  2007/07/02 15:30:00  Simon Osborne
-Minor rewording of a repeated Erratum for consistency.
-
-Revision 1.41  2007/02/07 15:18:00  Simon Osborne
-Correctly credited Gary Chalk as the map illustrator (copy/paste error).
-
-Revision 1.4  2007/07/01 22:50:07  Simon Osborne
-Fixed Many Errata and non-errata issues. Updated to version 0.12.
-
-Revision 1.3  2006/01/05 18:04:07  jonathan.blake
-Adding Paul Haskell as an Illustration Transcriptionist
-
-Revision 1.2  2005/03/10 18:21:51  jonathan.blake
-Removed link to old staff email address.
-
-Revision 1.1  2004/11/08 01:29:12  jonathan.blake
-Initial Freepository revision
-
-
-//// RCS Revision Log ////
-
-Revision 1.4  2003/01/27 22:11:39  jblake
-Checkin prior to global footnote change
-
-Revision 1.3  2003/01/04 17:15:05  jblake
-Published
-
-Revision 1.2  2002/12/04 20:34:24  jblake
-XMl cleanup. Still needs errata list.
-
-Revision 1.1  2002/12/03 20:47:34  twolmer
-
-WOLM continously: fix XML transformation errors, note errata
-WOLM action 1: replaces apostrophes with <quote>s and <ch.apos/>s
-WOLM action 2: inserted footnotes
-WOLM action 3: fixed character attributes, replaced various dashes with character entities, removed shortname
-WOLM action 4: inserted large illustrations
-WOLM action 5: inserted most of the extramatter
-WOLM action 6: validate and correct the faults
-WOLM what still missing: errata in the backmatter, the secondary illustrations, the list of secondary illustrations
-
-//////////////////////////
-
--->
-
  <meta>
   <title>Castle Death</title>
   <creator class="short">Joe Dever and Gary Chalk</creator>
-  <creator class="medium">Joe Dever<br/>Illustrated by Gary Chalk</creator>
+  <creator class="medium">
+   <line>Joe Dever</line>
+   <line>Illustrated by Gary Chalk</line>
+  </creator>
   <creator class="long">
    &inclusion.joe.dever.bio.lw;
    &inclusion.gary.chalk.bio.lw;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2003</year><month>1</month><day>3</day></date>
+  <date class="publication"><year>2007</year><month>7</month><day>23</day></date>
   <description class="blurb">
    <p>You are the warrior, Lone Wolf, last of the Kai Masters of Sommerlund and sole survivor of the massacre that destroyed your kinsmen during a bitter war with your age-old enemies the Darklords of Helgedad. You have given your solemn pledge to restore the Kai to their former glory, ensuring the security of your land in the years to come.</p>
    <p>Diligent study of the tome called <cite>The Book of the Magnakai</cite> has enabled you to master only three of the ten Magnakai Disciplines. Now, you must fulfil your pledge by completing the quest first undertaken by <cite>Sun Eagle</cite> over one thousand years ago.</p>
@@ -78,7 +32,17 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
   <description class="publication">
    <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
   </description>
-  <rights class="copyrights">Text copyright <ch.copy/> 1986 Joe Dever.<br />Illustrations copyright <ch.copy/> 1986 Gary Chalk.</rights>
+  <rights class="copyrights">
+   <line>Text copyright <ch.copy/> 1986 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1986 Gary Chalk.</line>
+  </rights>
+  <rights class="license-notification">
+   <p>
+    <line>Text copyright <ch.copy/> 1986 Joe Dever.</line>
+    <line>Illustrations copyright <ch.copy/> 1986 Gary Chalk.</line>
+    <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+   </p>
+  </rights>
  </meta>
 
  <section id="toc">
@@ -101,7 +65,10 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
     </meta>
 
     <data>
-     <p class="dedication">To all the members of the Lone Wolf Club<ch.emdash/><br />may their endurance never run out!</p>
+     <p class="dedication">
+      <line>To all the members of the Lone Wolf Club<ch.emdash/></line>
+      <line>may their endurance never run out!</line>
+     </p>
     </data>
    </section>
 
@@ -126,19 +93,44 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
         <dt>Transcription</dt>
          <dd>Matthew Reynolds</dd>
         <dt>Illustration Transcription</dt>
-         <dd>Jonathan Blake<br />Paul Haskell<br/>Simon Osborne</dd>
+         <dd>
+	  <line>Jonathan Blake</line>
+	  <line>Paul Haskell</line>
+	  <line>Simon Osborne</line>
+	 </dd>
         <dt>XML</dt>
-         <dd>Jonathan Blake<br/>Simon Osborne<br />Thomas Wolmer</dd>
+         <dd>
+	  <line>Jonathan Blake</line>
+	  <line>Simon Osborne</line>
+	  <line>Thomas Wolmer</line>
+	 </dd>
         <dt>Alternate Illustrations</dt>
-         <dd>JC Alvarez (action charts)<br />Jonathan Blake (extramatter charts and tables)<br />Michael Hahn (map)</dd>
+         <dd>
+	  <line>JC Alvarez (action charts)</line>
+	  <line>Jonathan Blake (extramatter charts and tables)</line>
+	  <line>Michael Hahn (map)</line>
+	 </dd>
         <dt>Proofreading</dt>
-         <dd>Michael Norton (sections 176<ch.endash/>210)<br />Simon Osborne (sections 71<ch.endash/>105, 246<ch.endash/>280 and 316<ch.endash/>350)<br />Matthew Reynolds (sections 1<ch.endash/>70, 141<ch.endash/>175, 211<ch.endash/>245 and 281<ch.endash/>315)<br />Tony Wrigley (sections 106<ch.endash/>140)</dd>
+         <dd>
+	  <line>Michael Norton (sections 176<ch.endash/>210)</line>
+	  <line>Simon Osborne (sections 71<ch.endash/>105, 246<ch.endash/>280 and 316<ch.endash/>350)</line>
+	  <line>Matthew Reynolds (sections 1<ch.endash/>70, 141<ch.endash/>175, 211<ch.endash/>245 and 281<ch.endash/>315)</line>
+	  <line>Tony Wrigley (sections 106<ch.endash/>140)</line>
+	 </dd>
         <dt>Editing</dt>
-         <dd>Mike Feldman<br />Ingo Kl<ch.ouml/>cker<br />Mark Laird<br />LeRoy McSwain<br/>Simon Osborne<br/>Matthew Reynolds<br />Thomas Wolmer</dd>
+         <dd>
+	  <line>Mike Feldman</line>
+	  <line>Ingo Kl<ch.ouml/>cker</line>
+	  <line>Mark Laird</line>
+	  <line>LeRoy McSwain</line>
+	  <line>Simon Osborne</line>
+	  <line>Matthew Reynolds</line>
+	  <line>Thomas Wolmer</line>
+	 </dd>
         <dt>Coordination</dt>
          <dd>Jonathan Blake</dd>
         <dt>Special Thanks</dt>
-         <dd>Alfred Hailey<br/>Keith Sheldon<br/>Wayne Stubbs<br/>Arthur Yin</dd>
+         <dd>Alfred Hailey, Keith Sheldon, Wayne Stubbs, and Arthur Yin</dd>
        </dl>
       </data>
      </section>
@@ -153,7 +145,6 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
     </meta>
 
     <data>
-     <!-- WOLM: There were some obviously missing quote signs in our first published text. I inserted them -->
      <p>You are the warrior, Lone Wolf, last of the Kai Masters of Sommerlund and sole survivor of the massacre that destroyed your kinsmen during a bitter war with your age-old enemies, the Darklords of Helgedad.</p>
      <p>Many centuries have passed since Sun Eagle, the first of your kind, established the Order of the Kai. Aided by the magicians of Dessi, he completed a perilous quest to find seven crystals of power known as the Lorestones of Nyxator. With their discovery he unlocked a wisdom and strength that lay within both the Lorestones and himself. He recorded the nature of his discoveries and his experiences in a great tome called <cite>The Book of the Magnakai</cite>. You have discovered this lost Kai treasure and have given a solemn pledge to restore the Kai to their former glory, ensuring the security of your land in the years to come. However, your diligent study of this ancient book has enabled you to master only three of the ten Magnakai Disciplines. To fulfil your pledge, you must complete the quest first undertaken by Sun Eagle over one thousand years ago. By doing so successfully, you too, will acquire the power and wisdom of the Magnakai that is held within the Lorestones<ch.apos/> crystal forms.</p>
      <p>Much of Sun Eagle<ch.apos/>s script had faded with the passing years and little remained to help you find the seven Lorestones of Nyxator. Guided by the few words that could still be deciphered, you set out upon a journey that took you to the war-torn city of Tekaro in the hostile land of Slovia. There, hidden deep in the crypt of the city<ch.apos/>s cathedral, you found the first Lorestone of Varetta. As you held the crystal triumphantly in your hand, its power was transfused into your being, and the location of the second stone formed slowly in your mind<ch.emdash/>Herdos.</p>
@@ -4905,42 +4896,42 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acdscplz.gif" width="385" height="246" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acchklst.gif" width="385" height="128" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif"></instance>
     </illustration>
@@ -5051,145 +5042,6 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
      </meta>
      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif"></instance>
      <instance src="crtpos.tex" width="380" height="500" class="tex"></instance>
-    </illustration>
-   </data>
-  </section>
-
-  <section class="backmatter" id="random">
-   <meta><title>Random Number Table</title></meta>
-
-   <data>
-
-    <illustration class="inline">
-     <meta>
-      <creator>Jonathan Blake</creator>
-     </meta>
-     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
-     <instance src="random.tex" width="380" height="500" class="tex"></instance>
-     <instance class="text">
-      <table>
-       <tr>
-        <td>4</td>
-        <td>6</td>
-        <td>5</td>
-        <td>2</td>
-        <td>8</td>
-        <td>6</td>
-        <td>4</td>
-        <td>0</td>
-        <td>7</td>
-        <td>2</td>
-       </tr>
-       <tr>
-        <td>5</td>
-        <td>3</td>
-        <td>9</td>
-        <td>8</td>
-        <td>8</td>
-        <td>0</td>
-        <td>4</td>
-        <td>7</td>
-        <td>7</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>2</td>
-        <td>0</td>
-        <td>5</td>
-        <td>6</td>
-        <td>6</td>
-        <td>9</td>
-        <td>6</td>
-        <td>3</td>
-        <td>6</td>
-        <td>7</td>
-       </tr>
-       <tr>
-        <td>2</td>
-        <td>2</td>
-        <td>4</td>
-        <td>8</td>
-        <td>8</td>
-        <td>6</td>
-        <td>6</td>
-        <td>9</td>
-        <td>8</td>
-        <td>2</td>
-       </tr>
-       <tr>
-        <td>4</td>
-        <td>5</td>
-        <td>9</td>
-        <td>0</td>
-        <td>7</td>
-        <td>4</td>
-        <td>8</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0</td>
-       </tr>
-       <tr>
-        <td>4</td>
-        <td>8</td>
-        <td>2</td>
-        <td>2</td>
-        <td>8</td>
-        <td>7</td>
-        <td>3</td>
-        <td>9</td>
-        <td>5</td>
-        <td>2</td>
-       </tr>
-       <tr>
-        <td>9</td>
-        <td>4</td>
-        <td>5</td>
-        <td>7</td>
-        <td>7</td>
-        <td>1</td>
-        <td>3</td>
-        <td>8</td>
-        <td>2</td>
-        <td>0</td>
-       </tr>
-       <tr>
-        <td>6</td>
-        <td>9</td>
-        <td>3</td>
-        <td>5</td>
-        <td>6</td>
-        <td>1</td>
-        <td>8</td>
-        <td>4</td>
-        <td>3</td>
-        <td>0</td>
-       </tr>
-       <tr>
-        <td>3</td>
-        <td>9</td>
-        <td>6</td>
-        <td>6</td>
-        <td>6</td>
-        <td>1</td>
-        <td>8</td>
-        <td>8</td>
-        <td>1</td>
-        <td>2</td>
-       </tr>
-       <tr>
-        <td>8</td>
-        <td>6</td>
-        <td>4</td>
-        <td>6</td>
-        <td>0</td>
-        <td>5</td>
-        <td>5</td>
-        <td>0</td>
-        <td>1</td>
-        <td>8</td>
-       </tr>
-      </table>
-     </instance>
     </illustration>
 
     <illustration>
@@ -5391,6 +5243,145 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
          <td>k/0</td>
         </tr>
        </tbody>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
+  <section class="backmatter" id="random">
+   <meta><title>Random Number Table</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
+     <instance src="random.tex" width="380" height="500" class="tex"></instance>
+     <instance class="text">
+      <table>
+       <tr>
+        <td>4</td>
+        <td>6</td>
+        <td>5</td>
+        <td>2</td>
+        <td>8</td>
+        <td>6</td>
+        <td>4</td>
+        <td>0</td>
+        <td>7</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>3</td>
+        <td>9</td>
+        <td>8</td>
+        <td>8</td>
+        <td>0</td>
+        <td>4</td>
+        <td>7</td>
+        <td>7</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>0</td>
+        <td>5</td>
+        <td>6</td>
+        <td>6</td>
+        <td>9</td>
+        <td>6</td>
+        <td>3</td>
+        <td>6</td>
+        <td>7</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>4</td>
+        <td>8</td>
+        <td>8</td>
+        <td>6</td>
+        <td>6</td>
+        <td>9</td>
+        <td>8</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>9</td>
+        <td>0</td>
+        <td>7</td>
+        <td>4</td>
+        <td>8</td>
+        <td>4</td>
+        <td>4</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td>8</td>
+        <td>2</td>
+        <td>2</td>
+        <td>8</td>
+        <td>7</td>
+        <td>3</td>
+        <td>9</td>
+        <td>5</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>4</td>
+        <td>5</td>
+        <td>7</td>
+        <td>7</td>
+        <td>1</td>
+        <td>3</td>
+        <td>8</td>
+        <td>2</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>6</td>
+        <td>9</td>
+        <td>3</td>
+        <td>5</td>
+        <td>6</td>
+        <td>1</td>
+        <td>8</td>
+        <td>4</td>
+        <td>3</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>3</td>
+        <td>9</td>
+        <td>6</td>
+        <td>6</td>
+        <td>6</td>
+        <td>1</td>
+        <td>8</td>
+        <td>8</td>
+        <td>1</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>6</td>
+        <td>4</td>
+        <td>6</td>
+        <td>0</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1</td>
+        <td>8</td>
+       </tr>
       </table>
      </instance>
     </illustration>
@@ -5635,19 +5626,8 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
      <title>Footnotes</title>
     </meta>
 
-    <data>
-     <p>(<a idref="sect13">13</a>) This section is the correct answer to the dial problem from <a idref="sect306">section 306</a>.</p>
-     <p>(<a idref="sect34">34</a>) This section is the correct answer to the Zakhan<ch.apos/>s riddle from <a idref="sect100">section 100</a>.</p>
-     <p>(<a idref="sect76">76</a>) According to later books (cf. <bookref series="lw" book="10tdot"><cite>The Dungeons of Torgar</cite></bookref> <bookref series="lw" book="10tdot" section="sect304">Section 304</bookref>), you would also be unable to use any two-handed weapon (i.e. Broadsword, Spear, Quarterstaff) in this combat.</p>
-     <p>(<a idref="sect100">100</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
-     <p>(<a idref="sect137">137</a>) If you have any Arrows in your Quiver, they have fallen out in your fall, and you must erase them from your <a idref="action">Action Chart</a>. (cf. <a idref="sect7">Section 7</a>).</p>
-     <p>(<a idref="sect142">142</a>) You must win the fight before turning to either section.</p>
-     <p>(<a idref="sect148">148</a>) You may not carry the Helmet at the same time as the Silver Helmet, if you have it.</p>
-     <p>(<a idref="sect280">280</a>) You must reduce the enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> score to zero or below before turning to either section.</p>
-     <p>(<a idref="sect301">301</a>) If you still have any Arrows in your Quiver, they have fallen out in your fall, and you must erase them from your <a idref="action">Action Chart</a>. (cf. <a idref="sect7">Section 7</a>).</p>
-     <p>(<a idref="sect306">306</a>) The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
-     <p>(<a idref="sect335">335</a>) <cite>Lone Wolf Club Newsletter No. 6</cite> clarifies: <quote>In <bookref series="lw" book="07cd" section="sect79">Book 2 [Section] 79</bookref>, it states that in order to release the power of the Sommerswerd, only a Kai Lord should wield it. Should it be used in combat by anyone who is not a Kai Lord, its power will fade and be lost forever. The Dwarf in <cite>Castle Death</cite> did not use the Sommerswerd in combat, and therefore its power has not been diminished as a result.</quote></p>
-    </data>
+    <data/>
+
    </section>
 
    <section class="backmatter" id="illstrat">
@@ -5696,16 +5676,23 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
       </meta>
 
       <data>
-       <p>Only the first occurrence of each secondary illustration is cited.</p>
        <ul class="unbulleted">
-        <li><a idref="sect11">Small 1</a></li>
-        <li><a idref="sect145">Small 2</a></li>
-        <li><a idref="sect178">Small 3</a></li>
-        <li><a idref="sect127">Small 4</a></li>
-        <li><a idref="sect3">Small 5</a></li>
-        <li><a idref="sect131">Small 6</a></li>
-        <li><a idref="sect336">Small 7</a></li>
-        <li><a idref="sect220">Small 8</a></li>
+        <li><a idref="equipmnt">Equipment</a></li>
+        <li><a idref="discplnz">Kai Disciplines</a></li>
+        <li><a idref="sect3">Section 3</a></li>
+        <li><a idref="sect9">Section 9</a></li>
+        <li><a idref="sect11">Section 11</a></li>
+        <li><a idref="sect33">Section 33</a></li>
+        <li><a idref="sect127">Section 127</a></li>
+        <li><a idref="sect131">Section 131</a></li>
+        <li><a idref="sect145">Section 145</a></li>
+        <li><a idref="sect151">Section 151</a></li>
+        <li><a idref="sect178">Section 178</a></li>
+        <li><a idref="sect220">Section 220</a></li>
+        <li><a idref="sect224">Section 224</a></li>
+        <li><a idref="sect286">Section 286</a></li>
+        <li><a idref="sect336">Section 336</a></li>
+        <li><a idref="sect349">Section 349</a></li>
        </ul>
       </data>
      </section>
