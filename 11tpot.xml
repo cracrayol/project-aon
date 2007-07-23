@@ -11,67 +11,35 @@
 
 <gamebook xml:lang="en-UK" version="0.12">
 
-<!--
-
-$Id$
-$Log: 11tpot.xml,v $
-Revision 1.51  2007/07/02 15:30:00  Simon Osborne
-Minor rewording of a repeated Erratum for consistency.
-
-Revision 1.5  2007/06/27 18:18:51  Simon Osborne
-Fixed many Errata and Non-Errata issues. Updated to version 0.12.
-
-Revision 1.2  2005/03/10 18:21:51  jonathan.blake
-Removed link to old staff email address.
-
-Revision 1.1  2004/11/08 01:29:12  jonathan.blake
-Initial Freepository revision
-
-
-//// RCS Revision Log ////
-
-Revision 1.5  2003/01/27 22:11:39  jblake
-Checkin prior to global footnote change
-
-Revision 1.4  2003/01/04 17:15:05  jblake
-Published
-
-Revision 1.3  2002/12/06 20:28:11  jblake
-XML cleanup.
-
-Revision 1.2  2002/11/12 18:49:50  jblake
-Fix of interbook links.
-
-Revision 1.1  2002/10/15 23:16:25  jblake
-Initial revision
-
-//////////////////////////
-
-todo:
-
-label language of foreign tags
-
--->
-
 <meta>
  <title>The Prisoners of Time</title>
  <creator class="short">Joe Dever and Brian Williams</creator>
- <creator class="medium">Joe Dever<br />Illustrated by Brian Williams</creator>
+ <creator class="medium">
+  <line>Joe Dever</line>
+  <line>Illustrated by Brian Williams</line>
+ </creator>
  <creator class="long">
    &inclusion.joe.dever.bio.lw;
    &inclusion.brian.williams.bio.lw;
  </creator>
  <publisher>Project Aon</publisher>
- <date class="publication"><year>2003</year><month>1</month><day>3</day></date>
+ <date class="publication"><year>2007</year><month>7</month><day>23</day></date>
  <description class="blurb">
   <p>Swiftly you draw the broadsword over your head and take aim at the Chaos-master<ch.apos/>s heart, yet even as you make your lunge he catches sight of you and twists to avoid your thrust. The sharp blade opens a fearful gash in his side but it misses its vital target. With a roar of agony the evil god staggers back, dropping his club as he clasps his side. Pain swiftly turns to a rage that fills him with a lust for vengeance and, with a hideous scream, he lunges at you with his gore-stained hands.<ch.ellips/></p>
  </description>
  <description class="publication">
   <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
  </description>
- <rights class="copyrights">Text copyright <ch.copy/> 1987 Joe Dever.<br />Illustrations copyright <ch.copy/> 1987 Brian Williams.</rights>
+ <rights class="copyrights">
+  <line>Text copyright <ch.copy/> 1987 Joe Dever.</line>
+  <line>Illustrations copyright <ch.copy/> 1987 Brian Williams.</line>
+ </rights>
  <rights class="license-notification">
-  <p>Text copyright <ch.copy/> 1987 Joe Dever.<br />Illustrations copyright <ch.copy/> 1987 Brian Williams.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+  <p>
+   <line>Text copyright <ch.copy/> 1987 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1987 Brian Williams.</line>
+   <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+  </p>
  </rights>
 </meta>
 
@@ -123,19 +91,40 @@ label language of foreign tags
        <dt>Illustration Transcription</dt>
         <dd>Jonathan Blake</dd>
        <dt>XML</dt>
-        <dd>Jonathan Blake<br />Jeff Dougan<br/>Simon Osborne</dd>
+        <dd>
+	 <line>Jonathan Blake</line>
+	 <line>Jeff Dougan</line>
+	 <line>Simon Osborne</line>
+	</dd>
        <dt>Alternate Illustrations</dt>
-        <dd>JC Alvarez (action charts)<br />Jonathan Blake (extramatter charts and tables)</dd>
+        <dd>
+	 <line>JC Alvarez (action charts)</line>
+	 <line>Jonathan Blake (extramatter charts and tables)</line>
+	</dd>
        <dt>Proofreading</dt>
-        <dd>Andrew Gable (Sections 36<ch.endash/>70)<br />Simon Osborne (front matter, Sections 1<ch.endash/>35, 141<ch.endash/>210, 246<ch.endash/>350)<br />Matthew Reynolds (Sections 106<ch.endash/>140, 211<ch.endash/>245)<br />Tony Wrigley (Sections 71<ch.endash/>105)</dd>
+        <dd>
+	 <line>Andrew Gable (Sections 36<ch.endash/>70)</line>
+	 <line>Simon Osborne (front matter, Sections 1<ch.endash/>35, 141<ch.endash/>210, 246<ch.endash/>350)</line>
+	 <line>Matthew Reynolds (Sections 106<ch.endash/>140, 211<ch.endash/>245)</line>
+	 <line>Tony Wrigley (Sections 71<ch.endash/>105)</line>
+	</dd>
        <dt>Editing</dt>
-        <dd>Jeff Dougan<br />Ingo Kl<ch.ouml/>cker<br />LeRoy McSwain<br />Simon Osborne<br />Thomas Wolmer</dd>
+        <dd>
+	 <line>Jeff Dougan</line>
+	 <line>Ingo Kl<ch.ouml/>cker</line>
+	 <line>LeRoy McSwain</line>
+	 <line>Simon Osborne</line>
+	 <line>Thomas Wolmer</line>
+	</dd>
        <dt>PDF Layout</dt>
-        <dd>Jonathan Blake<br />Ingo Kl<ch.ouml/>cker</dd>
+        <dd>
+	 <line>Jonathan Blake</line>
+	 <line>Ingo Kl<ch.ouml/>cker</line>
+	</dd>
        <dt>Coordination</dt>
         <dd>Jonathan Blake</dd>
        <dt>Special Thanks</dt>
-        <dd>David Davis<br/>Christopher Lundgren<br/>Peter Smyth</dd>
+        <dd>David Davis, Christopher Lundgren, and Peter Smyth</dd>
       </dl>
      </data>
     </section>
@@ -4843,42 +4832,42 @@ safe do you stop to catch your breath and check your equipment. To your dismay y
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acdscplz.gif" width="385" height="246" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acchklst.gif" width="385" height="128" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif"></instance>
     </illustration>
@@ -4993,145 +4982,6 @@ safe do you stop to catch your breath and check your equipment. To your dismay y
      </meta>
      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif"></instance>
      <instance src="crtpos.tex" width="380" height="500" class="tex"></instance>
-    </illustration>
-   </data>
-  </section>
-
-  <section class="backmatter" id="random">
-   <meta><title>Random Number Table</title></meta>
-
-   <data>
-
-    <illustration class="inline">
-     <meta>
-      <creator>Jonathan Blake</creator>
-     </meta>
-     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
-     <instance src="random.tex" width="380" height="500" class="tex"></instance>
-     <instance class="text">
-      <table>
-       <tr>
-        <td>4</td>
-        <td>0</td>
-        <td>9</td>
-        <td>7</td>
-        <td>5</td>
-        <td>8</td>
-        <td>2</td>
-        <td>6</td>
-        <td>8</td>
-        <td>6</td>
-       </tr>
-       <tr>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>0</td>
-        <td>2</td>
-        <td>3</td>
-        <td>0</td>
-        <td>8</td>
-        <td>4</td>
-        <td>6</td>
-       </tr>
-       <tr>
-        <td>0</td>
-        <td>4</td>
-        <td>7</td>
-        <td>4</td>
-        <td>5</td>
-        <td>8</td>
-        <td>0</td>
-        <td>2</td>
-        <td>7</td>
-        <td>3</td>
-       </tr>
-       <tr>
-        <td>8</td>
-        <td>2</td>
-        <td>5</td>
-        <td>6</td>
-        <td>4</td>
-        <td>3</td>
-        <td>8</td>
-        <td>6</td>
-        <td>5</td>
-        <td>8</td>
-       </tr>
-       <tr>
-        <td>3</td>
-        <td>8</td>
-        <td>2</td>
-        <td>9</td>
-        <td>5</td>
-        <td>0</td>
-        <td>8</td>
-        <td>4</td>
-        <td>6</td>
-        <td>1</td>
-       </tr>
-       <tr>
-        <td>7</td>
-        <td>9</td>
-        <td>8</td>
-        <td>2</td>
-        <td>8</td>
-        <td>4</td>
-        <td>0</td>
-        <td>4</td>
-        <td>8</td>
-        <td>7</td>
-       </tr>
-       <tr>
-        <td>1</td>
-        <td>3</td>
-        <td>5</td>
-        <td>6</td>
-        <td>9</td>
-        <td>7</td>
-        <td>6</td>
-        <td>3</td>
-        <td>6</td>
-        <td>9</td>
-       </tr>
-       <tr>
-        <td>5</td>
-        <td>1</td>
-        <td>7</td>
-        <td>9</td>
-        <td>4</td>
-        <td>5</td>
-        <td>8</td>
-        <td>9</td>
-        <td>3</td>
-        <td>8</td>
-       </tr>
-       <tr>
-        <td>1</td>
-        <td>6</td>
-        <td>8</td>
-        <td>2</td>
-        <td>6</td>
-        <td>2</td>
-        <td>7</td>
-        <td>0</td>
-        <td>4</td>
-        <td>6</td>
-       </tr>
-       <tr>
-        <td>0</td>
-        <td>1</td>
-        <td>6</td>
-        <td>9</td>
-        <td>5</td>
-        <td>4</td>
-        <td>8</td>
-        <td>2</td>
-        <td>4</td>
-        <td>2</td>
-       </tr>
-      </table>
-     </instance>
     </illustration>
 
     <illustration>
@@ -5339,6 +5189,145 @@ safe do you stop to catch your breath and check your equipment. To your dismay y
    </data>
   </section>
 
+  <section class="backmatter" id="random">
+   <meta><title>Random Number Table</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
+     <instance src="random.tex" width="380" height="500" class="tex"></instance>
+     <instance class="text">
+      <table>
+       <tr>
+        <td>4</td>
+        <td>0</td>
+        <td>9</td>
+        <td>7</td>
+        <td>5</td>
+        <td>8</td>
+        <td>2</td>
+        <td>6</td>
+        <td>8</td>
+        <td>6</td>
+       </tr>
+       <tr>
+        <td>6</td>
+        <td>5</td>
+        <td>6</td>
+        <td>0</td>
+        <td>2</td>
+        <td>3</td>
+        <td>0</td>
+        <td>8</td>
+        <td>4</td>
+        <td>6</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>4</td>
+        <td>7</td>
+        <td>4</td>
+        <td>5</td>
+        <td>8</td>
+        <td>0</td>
+        <td>2</td>
+        <td>7</td>
+        <td>3</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>2</td>
+        <td>5</td>
+        <td>6</td>
+        <td>4</td>
+        <td>3</td>
+        <td>8</td>
+        <td>6</td>
+        <td>5</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>3</td>
+        <td>8</td>
+        <td>2</td>
+        <td>9</td>
+        <td>5</td>
+        <td>0</td>
+        <td>8</td>
+        <td>4</td>
+        <td>6</td>
+        <td>1</td>
+       </tr>
+       <tr>
+        <td>7</td>
+        <td>9</td>
+        <td>8</td>
+        <td>2</td>
+        <td>8</td>
+        <td>4</td>
+        <td>0</td>
+        <td>4</td>
+        <td>8</td>
+        <td>7</td>
+       </tr>
+       <tr>
+        <td>1</td>
+        <td>3</td>
+        <td>5</td>
+        <td>6</td>
+        <td>9</td>
+        <td>7</td>
+        <td>6</td>
+        <td>3</td>
+        <td>6</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>1</td>
+        <td>7</td>
+        <td>9</td>
+        <td>4</td>
+        <td>5</td>
+        <td>8</td>
+        <td>9</td>
+        <td>3</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>1</td>
+        <td>6</td>
+        <td>8</td>
+        <td>2</td>
+        <td>6</td>
+        <td>2</td>
+        <td>7</td>
+        <td>0</td>
+        <td>4</td>
+        <td>6</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>6</td>
+        <td>9</td>
+        <td>5</td>
+        <td>4</td>
+        <td>8</td>
+        <td>2</td>
+        <td>4</td>
+        <td>2</td>
+       </tr>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
   <section class="backmatter" id="errata">
    <meta><title>Errata</title></meta>
 
@@ -5493,22 +5482,8 @@ safe do you stop to catch your breath and check your equipment. To your dismay y
   <section class="backmatter" id="footnotz">
    <meta><title>Footnotes</title></meta>
 
-   <data>
-    <p>(<a idref="equipmnt">Equipment</a>) You have no opportunity to use safekeeping at the Monastery or Dessi at the beginning of this adventure. It is therefore inappropriate for you to store surplus items in safekeeping or likewise to retrieve any. Items that may already be stored there will be safe, but you may not add any more at the beginning of this adventure.</p>
-    <p>(<a idref="equipmnt">Equipment</a>) You have no opportunity to use safekeeping at the Monastery or Dessi at the beginning of this adventure. It is therefore inappropriate for you to store surplus items in safekeeping or likewise to retrieve any. Items that may already be stored there will be safe, but you may not add any more at the beginning of this adventure.</p>
-    <p>(<a idref="kaiwisdm">Magnakai Wisdom</a>) Due to several unavoidable, difficult combats in this book, it is practically impossible for a new or average character to complete this adventure successfully. Even a character with optimal choices of equipment and Disciplines and the highest possible scores for <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> will have a difficult time with this adventure.</p>
-    <p>(<a idref="sect5">5</a>) You do not need to erase a Meal from your <a idref="action">Action Chart</a> when sharing with Arke.</p>
-    <p>(<a idref="sect34">34</a>) Unless you possess the Magnakai Discipline of Curing and have reached the Kai rank of Mentora or higher, add 2 to any <typ class="attribute">ENDURANCE</typ> point losses you sustain during this combat, owing to the poisonous lash of their tentacles. (cf. <a idref="sect298">Section 298</a>)</p>
-    <p>(<a idref="sect62">62</a>) If you possess both Disciplines, add only 4 to your number from the <a idref="random">Random Number Table</a>.</p>
-    <p>(<a idref="sect95">95</a>) If you possess both Disciplines, add only 4 to your number from the <a idref="random">Random Number Table</a>.</p>
-    <p>(<a idref="sect198">198</a>) Delete your Backpack as well as its contents. You may not acquire any Backpack Items until your Backpack has been replaced.</p>
-    <p>(<a idref="sect201">201</a>) Depending on your interpretation of the rules, you may not be able to benefit from the use of a Shield during this combat.</p>
-    <p>(<a idref="sect210">210</a>) If you already possess the maximum number of Special Items, you must discard one in favour of the Obsidian Seal.</p>
-    <p>(<a idref="sect261">261</a>) Restore 4 <typ class="attribute">ENDURANCE</typ> points to reflect the effects of the draught you have just drunk.</p>
-    <p>(<a idref="sect270">270</a>) The <typ class="attribute">COMBAT SKILL</typ> bonus for using a Shield does not apply here, nor do those for using Alether or weapon-like Special Items such as the Sommerswerd. Depending on your interpretation of the rules, the bonus granted by the Silver Helm may still be applicable, as it appears to be magical in nature. Also, any bonuses to <typ class="attribute">ENDURANCE</typ> due to armour should not be applied during this combat.</p>
-    <p>(<a idref="sect298">298</a>) You may not evade combat if you have already visited Baylon<ch.apos/>s Tomb. If so, you must stay and fight.</p>
-    <p>(<a idref="sect349">349</a>) These bonuses are not cumulative<ch.emdash/>if you possess both Disciplines, you may only add 4 to the number you pick from the <a idref="random">Random Number Table</a>.</p>
-   </data>
+   <data/>
+
   </section>
 
   <section class="backmatter" id="illstrat">
@@ -5552,20 +5527,23 @@ safe do you stop to catch your breath and check your equipment. To your dismay y
      <meta><title>Secondary Illustrations</title></meta>
 
      <data>
-      <p>Only the first occurrence of each secondary illustration is cited.</p>
       <ul class="unbulleted">
-       <li><a idref="sect4">Small 1</a></li>
-       <li><a idref="sect41">Small 2</a></li>
-       <li><a idref="sect51">Small 3</a></li>
-       <li><a idref="sect345">Small 4</a></li>
-       <li><a idref="sect285">Small 5</a></li>
-       <li><a idref="sect188">Small 6</a></li>
-       <li><a idref="sect1">Small 7</a></li>
-       <li><a idref="sect202">Small 8</a></li>
-       <li><a idref="sect131">Small 9</a></li>
-       <li><a idref="sect166">Small 10</a></li>
-       <li><a idref="sect25">Small 11</a></li>
-       <li><a idref="sect315">Small 12</a></li>
+       <li><a idref="equipmnt">Equipment</a></li>
+       <li><a idref="discplnz">Kai Disciplines</a></li>
+       <li><a idref="sect1">Section 1</a></li>
+       <li><a idref="sect4">Section 4</a></li>
+       <li><a idref="sect25">Section 25</a></li>
+       <li><a idref="sect41">Section 41</a></li>
+       <li><a idref="sect51">Section 51</a></li>
+       <li><a idref="sect131">Section 131</a></li>
+       <li><a idref="sect166">Section 166</a></li>
+       <li><a idref="sect188">Section 188</a></li>
+       <li><a idref="sect202">Section 202</a></li>
+       <li><a idref="sect262">Section 262</a></li>
+       <li><a idref="sect285">Section 285</a></li>
+       <li><a idref="sect315">Section 315</a></li>
+       <li><a idref="sect345">Section 345</a></li>
+       <li><a idref="sect350">Section 350</a></li>
       </ul>
      </data>
     </section>
