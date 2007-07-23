@@ -11,67 +11,19 @@
 
 <gamebook xml:lang="en-UK" version="0.12">
 
-<!--
-
-$Id$
-$Log: 09tcof.xml,v $
-Revision 1.51  2007/07/02 15:30:00  Simon Osborne
-Minor rewording of a repeated Erratum for consistency.
-
-Revision 1.5  2007/06/28 14:12:03  Simon Osborne
-Updated to 0.12. Fixed many Errata and Non-errata issues.
-
-Revision 1.4  2006/08/22 19:54:03  jonathan.blake
-Clarified the wording of Section 38's footnote.
-
-Revision 1.3  2006/01/05 18:04:07  jonathan.blake
-Adding Paul Haskell as an Illustration Transcriptionist
-
-Revision 1.2  2005/03/10 18:21:51  jonathan.blake
-Removed link to old staff email address.
-
-Revision 1.1  2004/11/08 01:29:12  jonathan.blake
-Initial Freepository revision
-
-
-//// RCS Revision Log ////
-
-Revision 1.6  2003/01/27 22:11:39  jblake
-Checkin prior to global footnote change
-
-Revision 1.5  2003/01/04 17:15:05  jblake
-Published
-
-Revision 1.4  2002/12/05 16:42:52  jblake
-XML cleanup.
-
-Revision 1.3  2002/11/12 18:49:50  jblake
-Fix of interbook links.
-
-Revision 1.2  2002/11/10 06:58:03  jblake
-Updated date.
-
-Revision 1.1  2002/10/15 23:17:31  jblake
-Initial revision
-
-//////////////////////////
-
-Todo:
-
-Remove section and rule clarifications
-
--->
-
 <meta>
  <title>The Cauldron of Fear</title>
  <creator class="short">Joe Dever and Brian Williams</creator>
- <creator class="medium">Joe Dever<br />Illustrated by Brian Williams</creator>
+ <creator class="medium">
+  <line>Joe Dever</line>
+  <line>Illustrated by Brian Williams</line>
+ </creator>
  <creator class="long">
    &inclusion.joe.dever.bio.lw;
    &inclusion.brian.williams.bio.lw;
  </creator>
  <publisher>Project Aon</publisher>
- <date class="publication"><year>2003</year><month>1</month><day>3</day></date>
+ <date class="publication"><year>2007</year><month>7</month><day>23</day></date>
  <description class="blurb">
   <p>While on your quest, word has reached you that Sommerlund has suffered a great defeat at the city of Ruanon, but morale among your people remains high. Boldly, your homeland continues its valiant fight against the evil forces of the Darklords.</p>
   <p>The messenger who has delivered this news also informs you that the King himself has ordered a skyship placed in your command and has awarded you the rank of Warmarshall of the Royal Estates. You proudly accept the use of the skyship as well as the two platinum badges that signify your new rank. You are now the youngest general in the Sommerlund army.</p>
@@ -80,9 +32,16 @@ Remove section and rule clarifications
  <description class="publication">
   <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
  </description>
- <rights class="copyrights">Text copyright <ch.copy/> 1987 Joe Dever.<br />Illustrations copyright <ch.copy/> 1987 Brian Williams.</rights>
+ <rights class="copyrights">
+  <line>Text copyright <ch.copy/> 1987 Joe Dever.</line>
+  <line>Illustrations copyright <ch.copy/> 1987 Brian Williams.</line>
+ </rights>
  <rights class="license-notification">
-  <p>Text copyright <ch.copy/> 1987 Joe Dever.<br />Illustrations copyright <ch.copy/> 1987 Brian Williams.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+  <p>
+   <line>Text copyright <ch.copy/> 1987 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1987 Brian Williams.</line>
+   <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+  </p>
  </rights>
 </meta>
 
@@ -132,21 +91,44 @@ Remove section and rule clarifications
        <dt>Transcription</dt>
         <dd>Matthew Reynolds</dd>
        <dt>Illustration Transcription</dt>
-        <dd>Jonathan Blake<br/>Paul Haskell</dd>
+        <dd>
+	 <line>Jonathan Blake</line>
+	 <line>Paul Haskell</line>
+	</dd>
        <dt>XML</dt>
-        <dd>Jonathan Blake<br/>Simon Osborne</dd>
+        <dd>
+	 <line>Jonathan Blake</line>
+	 <line>Simon Osborne</line>
+	</dd>
        <dt>Alternate Illustrations</dt>
-        <dd>JC Alvarez (action charts)<br />Jonathan Blake (extramatter charts and tables)</dd>
+        <dd>
+	 <line>JC Alvarez (action charts)</line>
+	 <line>Jonathan Blake (extramatter charts and tables)</line>
+	</dd>
        <dt>Proofreading</dt>
-        <dd>Andrew Gable (Sections 71<ch.endash/>105, 141<ch.endash/>175, and 246<ch.endash/>280)<br />Simon Osborne (front matter and Sections 176<ch.endash/>210)<br />Matthew Reynolds (Sections 1<ch.endash/>70, 106<ch.endash/>140, 211<ch.endash/>245 and 281<ch.endash/>350)</dd>
+        <dd>
+	 <line>Andrew Gable (Sections 71<ch.endash/>105, 141<ch.endash/>175, and 246<ch.endash/>280)</line>
+	 <line>Simon Osborne (front matter and Sections 176<ch.endash/>210)</line>
+	 <line>Matthew Reynolds (Sections 1<ch.endash/>70, 106<ch.endash/>140, 211<ch.endash/>245 and 281<ch.endash/>350)</line>
+	</dd>
        <dt>Editing</dt>
-        <dd>Mike Feldman<br />Ingo Kl<ch.ouml/>cker<br />Mark Laird<br />LeRoy McSwain<br/>Simon Osborne<br />Thomas Wolmer</dd>
+        <dd>
+	 <line>Mike Feldman</line>
+	 <line>Ingo Kl<ch.ouml/>cker</line>
+	 <line>Mark Laird</line>
+	 <line>LeRoy McSwain</line>
+	 <line>Simon Osborne</line>
+	 <line>Thomas Wolmer</line>
+	</dd>
        <dt>PDF Layout</dt>
-        <dd>Jonathan Blake<br />Ingo Kl<ch.ouml/>cker</dd>
+        <dd>
+	 <line>Jonathan Blake</line>
+	 <line>Ingo Kl<ch.ouml/>cker</line>
+	</dd>
        <dt>Coordination</dt>
         <dd>Jonathan Blake</dd>
        <dt>Special Thanks</dt>
-        <dd>Jan Charv<ch.aacute/>t<br/>Neil McGrory<br/>Brian Thompson</dd>
+        <dd>Jan Charv<ch.aacute/>t, Neil McGrory, and Brian Thompson</dd>
       </dl>
      </data>
     </section>
@@ -5154,42 +5136,42 @@ Remove section and rule clarifications
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acdscplz.gif" width="385" height="246" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acchklst.gif" width="385" height="128" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif"></instance>
     </illustration>
@@ -5302,145 +5284,6 @@ Remove section and rule clarifications
      </meta>
      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif"></instance>
      <instance src="crtpos.tex" width="380" height="500" class="tex"></instance>
-    </illustration>
-   </data>
-  </section>
-
-  <section class="backmatter" id="random">
-   <meta><title>Random Number Table</title></meta>
-
-   <data>
-
-    <illustration class="inline">
-     <meta>
-      <creator>Jonathan Blake</creator>
-     </meta>
-     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
-     <instance src="random.tex" width="380" height="500" class="tex"></instance>
-     <instance class="text">
-      <table>
-       <tr>
-        <td>4</td>
-        <td>0</td>
-        <td>4</td>
-        <td>8</td>
-        <td>7</td>
-        <td>4</td>
-        <td>0</td>
-        <td>9</td>
-        <td>7</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>7</td>
-        <td>6</td>
-        <td>3</td>
-        <td>6</td>
-        <td>9</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>0</td>
-        <td>2</td>
-       </tr>
-       <tr>
-        <td>5</td>
-        <td>8</td>
-        <td>9</td>
-        <td>3</td>
-        <td>8</td>
-        <td>0</td>
-        <td>4</td>
-        <td>7</td>
-        <td>4</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>2</td>
-        <td>7</td>
-        <td>0</td>
-        <td>4</td>
-        <td>6</td>
-        <td>8</td>
-        <td>2</td>
-        <td>5</td>
-        <td>6</td>
-        <td>4</td>
-       </tr>
-       <tr>
-        <td>4</td>
-        <td>8</td>
-        <td>2</td>
-        <td>4</td>
-        <td>2</td>
-        <td>3</td>
-        <td>8</td>
-        <td>2</td>
-        <td>9</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>8</td>
-        <td>2</td>
-        <td>6</td>
-        <td>8</td>
-        <td>6</td>
-        <td>7</td>
-        <td>9</td>
-        <td>8</td>
-        <td>2</td>
-        <td>8</td>
-       </tr>
-       <tr>
-        <td>3</td>
-        <td>0</td>
-        <td>8</td>
-        <td>4</td>
-        <td>6</td>
-        <td>1</td>
-        <td>3</td>
-        <td>5</td>
-        <td>6</td>
-        <td>9</td>
-       </tr>
-       <tr>
-        <td>8</td>
-        <td>0</td>
-        <td>2</td>
-        <td>7</td>
-        <td>3</td>
-        <td>5</td>
-        <td>1</td>
-        <td>7</td>
-        <td>9</td>
-        <td>4</td>
-       </tr>
-       <tr>
-        <td>3</td>
-        <td>8</td>
-        <td>6</td>
-        <td>5</td>
-        <td>8</td>
-        <td>1</td>
-        <td>6</td>
-        <td>8</td>
-        <td>2</td>
-        <td>6</td>
-       </tr>
-       <tr>
-        <td>0</td>
-        <td>8</td>
-        <td>4</td>
-        <td>6</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1</td>
-        <td>6</td>
-        <td>9</td>
-        <td>5</td>
-       </tr>
-      </table>
-     </instance>
     </illustration>
 
     <illustration>
@@ -5642,6 +5485,145 @@ Remove section and rule clarifications
          <td>k/0</td>
         </tr>
        </tbody>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
+  <section class="backmatter" id="random">
+   <meta><title>Random Number Table</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
+     <instance src="random.tex" width="380" height="500" class="tex"></instance>
+     <instance class="text">
+      <table>
+       <tr>
+        <td>4</td>
+        <td>0</td>
+        <td>4</td>
+        <td>8</td>
+        <td>7</td>
+        <td>4</td>
+        <td>0</td>
+        <td>9</td>
+        <td>7</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>7</td>
+        <td>6</td>
+        <td>3</td>
+        <td>6</td>
+        <td>9</td>
+        <td>6</td>
+        <td>5</td>
+        <td>6</td>
+        <td>0</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>8</td>
+        <td>9</td>
+        <td>3</td>
+        <td>8</td>
+        <td>0</td>
+        <td>4</td>
+        <td>7</td>
+        <td>4</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>7</td>
+        <td>0</td>
+        <td>4</td>
+        <td>6</td>
+        <td>8</td>
+        <td>2</td>
+        <td>5</td>
+        <td>6</td>
+        <td>4</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td>8</td>
+        <td>2</td>
+        <td>4</td>
+        <td>2</td>
+        <td>3</td>
+        <td>8</td>
+        <td>2</td>
+        <td>9</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>2</td>
+        <td>6</td>
+        <td>8</td>
+        <td>6</td>
+        <td>7</td>
+        <td>9</td>
+        <td>8</td>
+        <td>2</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>3</td>
+        <td>0</td>
+        <td>8</td>
+        <td>4</td>
+        <td>6</td>
+        <td>1</td>
+        <td>3</td>
+        <td>5</td>
+        <td>6</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>0</td>
+        <td>2</td>
+        <td>7</td>
+        <td>3</td>
+        <td>5</td>
+        <td>1</td>
+        <td>7</td>
+        <td>9</td>
+        <td>4</td>
+       </tr>
+       <tr>
+        <td>3</td>
+        <td>8</td>
+        <td>6</td>
+        <td>5</td>
+        <td>8</td>
+        <td>1</td>
+        <td>6</td>
+        <td>8</td>
+        <td>2</td>
+        <td>6</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>8</td>
+        <td>4</td>
+        <td>6</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>6</td>
+        <td>9</td>
+        <td>5</td>
+       </tr>
       </table>
      </instance>
     </illustration>
@@ -5858,46 +5840,8 @@ Remove section and rule clarifications
   <section class="backmatter" id="footnotz">
    <meta><title>Footnotes</title></meta>
 
-   <data>
-    <p>(<a idref="sect5">Section 5</a>) This is the correct answer to Khmar<ch.apos/>s dagger riddle.</p>
-    <p>(<a idref="sect6">Section 6</a>) This section corresponds to a partially correct combination for the pyramid lock.</p>
-    <p>(<a idref="sect7">Section 7</a>) Remember to delete the Rope from your <a idref="action">Action Chart</a>.</p>
-    <p>(<a idref="sect11">Section 11</a>) Although this book gives no explicit restriction, it may be appropriate to consider the ruins of Zaaryx a wasteland in regard to fulfilling Meal requirements with Hunting and Huntmastery.</p>
-    <p>(<a idref="sect12">Section 12</a>) You must possess at least one Arrow in order to fire your Bow again.</p>
-    <p>(<a idref="sect25">Section 25</a>) Remember to mark off one dose of Sabito on your <a idref="action">Action Chart</a>.</p>
-    <p>(<a idref="sect29">Section 29</a>) Remember to note both doses of Sabito on your <a idref="action">Action Chart</a>.</p>
-    <p>(<a idref="sect38">Section 38</a>) You may only add 3 to the number picked even if you possess both Magnakai Disciplines.</p>
-    <p>(<a idref="sect50">Section 50</a>) This is the correct answer to Khmar<ch.apos/>s riddle about his youngest son.</p>
-    <p>(<a idref="sect54">Section 54</a>) <em>All</em> Weapons, Backpack Items, and Special Items are returned to you.</p>
-    <p>(<a idref="sect72">Section 72</a>) In this case, a 0 picked from the <a idref="random">Random Number Table</a> counts as 10.</p>
-    <p>(<a idref="sect94">Section 94</a>) Remember to remove the used Torch from your <a idref="action">Action Chart</a> if you choose to use it.</p>
-    <p>(<a idref="sect97">Section 97</a>) If you possess the Sommerswerd, you may double this undead creature<ch.apos/>s <typ class="attribute">ENDURANCE</typ> point loss.</p>
-    <p>(<a idref="sect104">Section 104</a>) If you possess the Sommerswerd, you may double this undead creature<ch.apos/>s <typ class="attribute">ENDURANCE</typ> point loss.</p>
-    <p>Regardless of how many rounds the combat lasts, you must defeat the ghoul before continuing.</p>
-    <p>(<a idref="sect115">Section 115</a>)The section corresponding to the correct answer to Khmar<ch.apos/>s riddle will have a footnote confirming that it is indeed correct.</p>
-    <p>(<a idref="sect166">Section 166</a>) If you possess the Sommerswerd, you may double this undead creature<ch.apos/>s <typ class="attribute">ENDURANCE</typ> point loss.</p>
-    <p>(<a idref="sect171">Section 171</a>) Remember to remove the used Torch from your <a idref="action">Action Chart</a> if you choose to use it.</p>
-    <p>(<a idref="sect175">Section 175</a>) Although this book gives no explicit restriction, it may be appropriate to consider the ruins of Zaaryx a wasteland in regard to fulfilling Meal requirements with Hunting and Huntmastery.</p>
-    <p>(<a idref="sect177">Section 177</a>) You do not find any weapon-like Special Items. Keep them marked with an <quote>x</quote> on your <a idref="action">Action Chart</a> since you may still be able to retrieve them.</p>
-    <p>(<a idref="sect191">Section 191</a>) If you possess the Sommerswerd, you may double this undead creature<ch.apos/>s <typ class="attribute">ENDURANCE</typ> point loss.</p>
-    <p>(<a idref="sect197">Section 197</a>) Remember to remove the used Torch from your <a idref="action">Action Chart</a> if you choose to use it.</p>
-    <p>(<a idref="sect204">Section 204</a>) The section corresponding to the correct answer to Khmar<ch.apos/>s riddle will have a footnote confirming that it is indeed correct.</p>
-    <p>(<a idref="sect218">Section 218</a>) Although this book gives no explicit restriction, it may be appropriate to consider this subterranean area a wasteland in regard to fulfilling Meal requirements with Hunting and Huntmastery.</p>
-    <p>(<a idref="sect241">Section 241</a>) To turn to the section of your choice, there are several methods. One is to turn to the <a idref="numbered">Numbered Sections</a> list and choose the appropriate section from the list.</p>
-    <p>If you have chosen the correct combination or one of the partial combinations, the footnotes for those sections will tell you so.</p>
-    <p>(<a idref="sect253">Section 253</a>) Gold Crowns may not be paid in lieu of Lune in this instance.</p>
-    <p>(<a idref="sect254">Section 254</a>) If you possess the Sommerswerd, you may double these undead creatures<ch.apos/> <typ class="attribute">ENDURANCE</typ> point loss.</p>
-    <p>(<a idref="sect282">Section 282</a>) Remember to remove the used Torch from your <a idref="action">Action Chart</a> if you choose to use it.</p>
-    <p>(<a idref="sect301">Section 301</a>) If you possess the Sommerswerd, you may double this undead creature<ch.apos/>s <typ class="attribute">ENDURANCE</typ> point loss.</p>
-    <p>(<a idref="sect309">Section 309</a>) To clarify, Sogh joins in the combat if you defeat the first two Tower Guards.</p>
-    <p>(<a idref="sect313">Section 313</a>) Remember to remove the used Torch from your <a idref="action">Action Chart</a> if you choose to use it.</p>
-    <p>(<a idref="sect316">Section 316</a>) The normal penalty for entering a combat without a weapon is -4 <typ class="attribute">COMBAT SKILL</typ> points. Remember that Tutelaries (Kai Lords with mastery of five Magnakai Disciplines) only suffer a penalty of -2 <typ class="attribute">COMBAT SKILL</typ> points for entering combat unarmed.</p>
-    <p>(<a idref="sect320">Section 320</a>) This section corresponds to a partially correct combination for the pyramid lock.</p>
-    <p>(<a idref="sect322">Section 322</a>) If you possess the Sommerswerd, you may double these undead creatures<ch.apos/> <typ class="attribute">ENDURANCE</typ> point loss.</p>
-    <p>(<a idref="sect326">Section 326</a>) This section corresponds to the correct combination for the pyramid lock.</p>
-    <p>(<a idref="sect349">Section 349</a>) Remember to remove the used Torch from your <a idref="action">Action Chart</a> if you choose to use it.</p>
-    <p>(<a idref="sect350">Section 350</a>) According to the <cite>Lone Wolf Club Newsletter: Summer Special 1987</cite>, if your weapons and weapon-like Special Items were confiscated by the South Gate Guard, they are now gratefully returned to you.</p>
-   </data>
+   <data/>
+
   </section>
 
   <section class="backmatter" id="illstrat">
@@ -5941,20 +5885,29 @@ Remove section and rule clarifications
      <meta><title>Secondary Illustrations</title></meta>
 
      <data>
-      <p>Only the first occurrence of each secondary illustration is cited.</p>
       <ul class="unbulleted">
-       <li><a idref="sect2">Small 1</a></li>
-       <li><a idref="sect350">Small 2</a></li>
-       <li><a idref="sect61">Small 3</a></li>
-       <li><a idref="sect58">Small 4</a></li>
-       <li><a idref="sect150">Small 5</a></li>
-       <li><a idref="sect1">Small 6</a></li>
-       <li><a idref="sect27">Small 7</a></li>
-       <li><a idref="sect80">Small 8</a></li>
-       <li><a idref="sect179">Small 9</a></li>
-       <li><a idref="sect87">Small 10</a></li>
-       <li><a idref="sect124">Small 11</a></li>
-       <li><a idref="sect69">Small 12</a></li>
+       <li><a idref="equipmnt">Equipment</a></li>
+       <li><a idref="discplnz">Kai Disciplines</a></li>
+       <li><a idref="sect1">Section 1</a></li>
+       <li><a idref="sect2">Section 2</a></li>
+       <li><a idref="sect27">Section 27</a></li>
+       <li><a idref="sect58">Section 58</a></li>
+       <li><a idref="sect61">Section 61</a></li>
+       <li><a idref="sect69">Section 69</a></li>
+       <li><a idref="sect80">Section 80</a></li>
+       <li><a idref="sect87">Section 87</a></li>
+       <li><a idref="sect88">Section 88</a></li>
+       <li><a idref="sect122">Section 122</a></li>
+       <li><a idref="sect124">Section 124</a></li>
+       <li><a idref="sect126">Section 126</a></li>
+       <li><a idref="sect137">Section 137</a></li>
+       <li><a idref="sect150">Section 150</a></li>
+       <li><a idref="sect179">Section 179</a></li>
+       <li><a idref="sect188">Section 188</a></li>
+       <li><a idref="sect214">Section 214</a></li>
+       <li><a idref="sect240">Section 240</a></li>
+       <li><a idref="sect250">Section 250</a></li>
+       <li><a idref="sect350">Section 350</a></li>
       </ul>
      </data>
     </section>
