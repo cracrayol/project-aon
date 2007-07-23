@@ -11,64 +11,19 @@
 
 <gamebook xml:lang="en-UK" version="0.12">
 
-<!--
-
-$Id$
-$Log$
-Revision 1.4  2007/07/02 15:27:00  Simon Osborne
-Many Errata and Non-errata issues fixed. Updated to version 0.12.
-
-Revision 1.3  2006/01/05 18:04:07  jonathan.blake
-Adding Paul Haskell as an Illustration Transcriptionist
-
-Revision 1.2  2005/03/10 18:21:51  jonathan.blake
-Removed link to old staff email address.
-
-Revision 1.1  2004/11/08 01:29:12  jonathan.blake
-Initial Freepository revision
-
-
-//// RCS Revision Log ////
-
-Revision 1.6  2003/01/27 22:11:39  jblake
-Checkin prior to global footnote change
-
-Revision 1.5  2003/01/04 17:15:05  jblake
-Published
-
-Revision 1.4  2002/12/05 16:08:46  jblake
-XML cleanup.
-
-Revision 1.3  2002/11/12 18:49:50  jblake
-Fix of interbook links.
-
-Revision 1.2  2002/11/10 06:42:59  jblake
-Fixed validity errors.
-
-Revision 1.1  2002/10/15 23:18:32  jblake
-Initial revision
-
-//////////////////////////
-
--->
-
-<!--
-
-todo:
-
-add foreign tags
-
--->
-
 <meta>
  <title>The Jungle of Horrors</title>
  <creator class="short">Joe Dever and Gary Chalk</creator>
+ <creator class="medium">
+  <line>Joe Dever</line>
+  <line>Illustrated by Gary Chalk</line>
+ </creator>
  <creator class="long">
    &inclusion.joe.dever.bio.lw;
    &inclusion.gary.chalk.bio.lw;
  </creator>
  <publisher>Project Aon</publisher>
- <date class="publication"><year>2003</year><month>1</month><day>4</day></date>
+ <date class="publication"><year>2007</year><month>7</month><day>23</day></date>
  <description class="blurb">
   <p>You are Lone Wolf. Sworn to avenge your forefathers, the Kai Lords, you must now venture into the dreaded jungle-swamps of the Danarg.</p>
   <p>Guided by Lord Paido, warrior-magician of Dessi, you begin your trek across the violent and war-torn lands of Talestria on your secret mission to capture the prized Lorestone of Ohrido.</p>
@@ -78,9 +33,16 @@ add foreign tags
  <description class="publication">
   <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
  </description>
- <rights class="copyrights">Text copyright <ch.copy/> 1987 Joe Dever.<br />Illustrations copyright <ch.copy/> 1987 Gary Chalk.</rights>
+ <rights class="copyrights">
+  <line>Text copyright <ch.copy/> 1987 Joe Dever.</line>
+  <line>Illustrations copyright <ch.copy/> 1987 Gary Chalk.</line>
+ </rights>
  <rights class="license-notification">
-  <p>Text copyright <ch.copy/> 1987 Joe Dever.<br />Illustrations copyright <ch.copy/> 1987 Gary Chalk.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+  <p>
+   <line>Text copyright <ch.copy/> 1987 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1987 Gary Chalk.</line>
+   <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+  </p>
  </rights>
 </meta>
 
@@ -130,19 +92,42 @@ add foreign tags
        <dt>Transcription</dt>
         <dd>Matthew Reynolds</dd>
        <dt>Illustration Transcription</dt>
-        <dd>Jonathan Blake<br />Paul Haskell<br/>Simon Osborne</dd>
+        <dd>
+	 <line>Jonathan Blake</line>
+	 <line>Paul Haskell</line>
+	 <line>Simon Osborne</line>
+	</dd>
        <dt>XML</dt>
-        <dd>Jonathan Blake<br/>Simon Osborne</dd>
+        <dd>
+	 <line>Jonathan Blake</line>
+	 <line>Simon Osborne</line>
+	</dd>
        <dt>Alternate Illustrations</dt>
-        <dd>JC Alvarez (action charts)<br />Jonathan Blake (extramatter charts and tables)<br />Michael Hahn (map)</dd>
+        <dd>
+	 <line>JC Alvarez (action charts)</line>
+	 <line>Jonathan Blake (extramatter charts and tables)</line>
+	 <line>Michael Hahn (map)</line>
+	</dd>
        <dt>Proofreading</dt>
-         <dd>Simon Osborne (front matter, Sections 1<ch.endash/>70 and 106<ch.endash/>140)<br />Matthew Reynolds (front matter, Sections 71<ch.endash/>105 and 141<ch.endash/>280)<br />Vito Trifilo (Sections 281<ch.endash/>350)</dd>
+        <dd>
+	 <line>Simon Osborne (front matter, Sections 1<ch.endash/>70 and 106<ch.endash/>140)</line>
+	 <line>Matthew Reynolds (front matter, Sections 71<ch.endash/>105 and 141<ch.endash/>280)</line>
+	 <line>Vito Trifilo (Sections 281<ch.endash/>350)</line>
+	</dd>
        <dt>Editing</dt>
-        <dd>Mike Feldman<br />Ingo Kl<ch.ouml/>cker<br />Mark Laird<br />LeRoy McSwain<br/>Simon Osborne<br />Matthew Reynolds<br />Thomas Wolmer</dd>
+        <dd>
+	 <line>Mike Feldman</line>
+	 <line>Ingo Kl<ch.ouml/>cker</line>
+	 <line>Mark Laird</line>
+	 <line>LeRoy McSwain</line>
+	 <line>Simon Osborne</line>
+	 <line>Matthew Reynolds</line>
+	 <line>Thomas Wolmer</line>
+	</dd>
        <dt>Coordination</dt>
         <dd>Jonathan Blake</dd>
        <dt>Special Thanks</dt>
-        <dd>Boris Basic<br />Erik Forsell<br/>Javier Fern<ch.aacute/>ndez-Sanguino Pe<ch.ntilde/>a</dd>
+        <dd>Boris Basic, Erik Forsell, and Javier Fern<ch.aacute/>ndez-Sanguino Pe<ch.ntilde/>a</dd>
       </dl>
      </data>
     </section>
@@ -4954,42 +4939,42 @@ add foreign tags
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acdscplz.gif" width="385" height="246" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acchklst.gif" width="385" height="128" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif"></instance>
     </illustration>
@@ -5101,145 +5086,6 @@ add foreign tags
      </meta>
      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif"></instance>
      <instance src="crtpos.tex" width="380" height="500" class="tex"></instance>
-    </illustration>
-   </data>
-  </section>
-
-  <section class="backmatter" id="random">
-   <meta><title>Random Number Table</title></meta>
-
-   <data>
-
-    <illustration class="inline">
-     <meta>
-      <creator>Jonathan Blake</creator>
-     </meta>
-     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
-     <instance src="random.tex" width="380" height="500" class="tex"></instance>
-     <instance class="text">
-      <table>
-       <tr>
-        <td>3</td>
-        <td>5</td>
-        <td>8</td>
-        <td>9</td>
-        <td>0</td>
-        <td>8</td>
-        <td>7</td>
-        <td>4</td>
-        <td>5</td>
-        <td>7</td>
-       </tr>
-       <tr>
-        <td>2</td>
-        <td>7</td>
-        <td>0</td>
-        <td>4</td>
-        <td>6</td>
-        <td>8</td>
-        <td>2</td>
-        <td>5</td>
-        <td>6</td>
-        <td>4</td>
-       </tr>
-       <tr>
-        <td>0</td>
-        <td>4</td>
-        <td>8</td>
-        <td>4</td>
-        <td>4</td>
-        <td>7</td>
-        <td>9</td>
-        <td>0</td>
-        <td>5</td>
-        <td>4</td>
-       </tr>
-       <tr>
-        <td>7</td>
-        <td>6</td>
-        <td>3</td>
-        <td>6</td>
-        <td>9</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>0</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>2</td>
-        <td>2</td>
-        <td>8</td>
-        <td>4</td>
-        <td>6</td>
-        <td>8</td>
-        <td>9</td>
-        <td>6</td>
-        <td>2</td>
-        <td>8</td>
-       </tr>
-       <tr>
-        <td>8</td>
-        <td>4</td>
-        <td>2</td>
-        <td>8</td>
-        <td>2</td>
-        <td>3</td>
-        <td>7</td>
-        <td>2</td>
-        <td>9</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>4</td>
-        <td>9</td>
-        <td>7</td>
-        <td>5</td>
-        <td>1</td>
-        <td>3</td>
-        <td>7</td>
-        <td>2</td>
-        <td>0</td>
-        <td>8</td>
-       </tr>
-       <tr>
-        <td>9</td>
-        <td>6</td>
-        <td>5</td>
-        <td>3</td>
-        <td>1</td>
-        <td>6</td>
-        <td>4</td>
-        <td>8</td>
-        <td>0</td>
-        <td>3</td>
-       </tr>
-       <tr>
-        <td>6</td>
-        <td>3</td>
-        <td>9</td>
-        <td>1</td>
-        <td>6</td>
-        <td>6</td>
-        <td>1</td>
-        <td>2</td>
-        <td>8</td>
-        <td>8</td>
-       </tr>
-       <tr>
-        <td>6</td>
-        <td>4</td>
-        <td>8</td>
-        <td>0</td>
-        <td>5</td>
-        <td>6</td>
-        <td>5</td>
-        <td>0</td>
-        <td>8</td>
-        <td>1</td>
-       </tr>
-      </table>
-     </instance>
     </illustration>
 
     <illustration>
@@ -5441,6 +5287,145 @@ add foreign tags
          <td>k/0</td>
         </tr>
        </tbody>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
+  <section class="backmatter" id="random">
+   <meta><title>Random Number Table</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
+     <instance src="random.tex" width="380" height="500" class="tex"></instance>
+     <instance class="text">
+      <table>
+       <tr>
+        <td>3</td>
+        <td>5</td>
+        <td>8</td>
+        <td>9</td>
+        <td>0</td>
+        <td>8</td>
+        <td>7</td>
+        <td>4</td>
+        <td>5</td>
+        <td>7</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>7</td>
+        <td>0</td>
+        <td>4</td>
+        <td>6</td>
+        <td>8</td>
+        <td>2</td>
+        <td>5</td>
+        <td>6</td>
+        <td>4</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>4</td>
+        <td>8</td>
+        <td>4</td>
+        <td>4</td>
+        <td>7</td>
+        <td>9</td>
+        <td>0</td>
+        <td>5</td>
+        <td>4</td>
+       </tr>
+       <tr>
+        <td>7</td>
+        <td>6</td>
+        <td>3</td>
+        <td>6</td>
+        <td>9</td>
+        <td>6</td>
+        <td>5</td>
+        <td>6</td>
+        <td>0</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>8</td>
+        <td>4</td>
+        <td>6</td>
+        <td>8</td>
+        <td>9</td>
+        <td>6</td>
+        <td>2</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>4</td>
+        <td>2</td>
+        <td>8</td>
+        <td>2</td>
+        <td>3</td>
+        <td>7</td>
+        <td>2</td>
+        <td>9</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td>9</td>
+        <td>7</td>
+        <td>5</td>
+        <td>1</td>
+        <td>3</td>
+        <td>7</td>
+        <td>2</td>
+        <td>0</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>6</td>
+        <td>5</td>
+        <td>3</td>
+        <td>1</td>
+        <td>6</td>
+        <td>4</td>
+        <td>8</td>
+        <td>0</td>
+        <td>3</td>
+       </tr>
+       <tr>
+        <td>6</td>
+        <td>3</td>
+        <td>9</td>
+        <td>1</td>
+        <td>6</td>
+        <td>6</td>
+        <td>1</td>
+        <td>2</td>
+        <td>8</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>6</td>
+        <td>4</td>
+        <td>8</td>
+        <td>0</td>
+        <td>5</td>
+        <td>6</td>
+        <td>5</td>
+        <td>0</td>
+        <td>8</td>
+        <td>1</td>
+       </tr>
       </table>
      </instance>
     </illustration>
@@ -5694,46 +5679,8 @@ add foreign tags
   <section class="backmatter" id="footnotz">
    <meta><title>Footnotes</title></meta>
 
-   <data>
-    <p>(<a idref="sect1">Section 1</a>) Many sections in the book assume that you haven<ch.apos/>t discarded the Pass. It is advisable that you don't discard it during this adventure.</p>
-    <p>(<a idref="sect13">Section 13</a>) Note that in this combat, you are meant to go to <a idref="sect158">Section 158</a> immediately when the fight reaches the specified number of rounds: do not finish the combat first.</p>
-    <p>The original text reads <quote>If the combat lasts more than five rounds<ch.ellips/></quote> This would leave you no option if the fight lasts exactly five rounds. We reasoned that the most likely interpretation is that the author intended the second choice to be taken if the combat last five rounds or more. However, it is also possible that he intended for it to read "If you win the combat in five rounds or less<ch.ellips/> If the combat lasts more than five rounds," in which case would you get one more round to fight before going to <a idref="sect158">Section 158</a>.</p>
-    <p>This section is very problematic for a player just starting their adventures from this book. It is actually impossible to kill both Vordaks in time if your <typ class="attribute">COMBAT SKILL</typ> is too low. According to a strict interpretation of the text, this combat must be won in four rounds or less. To find the probability of success in this combat, we counted the number of four digit combinations of numbers picked from the <a idref="random">Random Number Table</a> that kill both Vordaks, divided by 10,000 (the total number of four digit possibilities). For example, a 0.03<ch.percent/> chance of success for an initial <typ class="attribute">COMBAT SKILL</typ> of 14, reflects that only 3 combinations of random number picks (in this case, 0-0-0-0, 0-0-0-9, and 0-0-9-0) out of a possible 10,000 are capable of defeating both Vordaks in time. <typ class="attribute">ENDURANCE</typ> points are a non-issue in this case since no combination which destroys both creatures in time will also deduct 20 or more <typ class="attribute">ENDURANCE</typ> points from Lone Wolf. All of the probabilities given assume that Lone Wolf has chosen Disciplines most advantageous to his <typ class="attribute">COMBAT SKILL</typ> for this battle<ch.emdash/>Weaponmastery with an appropriate Weapon in his possession, Psi-surge, and Psi-screen<ch.emdash/>as well as saved the one potion of Alether found in this adventure for this battle, for a total of 9 points above the initial <typ class="attribute">COMBAT SKILL</typ> score.</p>
-    <table>
-     <tr>
-      <th>Initial <typ class="attribute">CS</typ></th>
-      <th>Probability of Survival</th>
-     </tr>
-     <tr><td align="center">10</td><td align="right">0.00<ch.percent/></td></tr>
-     <tr><td align="center">11</td><td align="right">0.00<ch.percent/></td></tr>
-     <tr><td align="center">12</td><td align="right">0.00<ch.percent/></td></tr>
-     <tr><td align="center">13</td><td align="right">0.00<ch.percent/></td></tr>
-     <tr><td align="center">14</td><td align="right">0.03<ch.percent/></td></tr>
-     <tr><td align="center">15</td><td align="right">0.12<ch.percent/></td></tr>
-     <tr><td align="center">16</td><td align="right">0.72<ch.percent/></td></tr>
-     <tr><td align="center">17</td><td align="right">1.62<ch.percent/></td></tr>
-     <tr><td align="center">18</td><td align="right">4.59<ch.percent/></td></tr>
-     <tr><td align="center">19</td><td align="right">14.08<ch.percent/></td></tr>
-    </table>
-    <p>A player starting from this adventure with 10-13 as her or his initial <typ class="attribute">COMBAT SKILL</typ> cannot survive this battle and thus cannot complete the adventure. New players with a higher initial <typ class="attribute">COMBAT SKILL</typ> still have a slim chance of completing this adventure.</p>
-    <p>(<a idref="sect28">Section 28</a>) The original text didn<ch.apos/>t allow for any bonuses to be added to the randomly picked number. We switched the choices to allow for this. If you<ch.apos/>d rather play without bonuses, <a idref="sect125">go to 125</a> if you pick 0<ch.endash/>4 and <a idref="sect38">go to 38</a> otherwise.</p>
-    <p>(<a idref="sect30">Section 30</a>) It seems peculiar that you are instructed to reduce <typ class="attribute">COMBAT SKILL</typ> at the beginning of every round if you do not have Psi-screen. This loss would be cumulative so that during the first round you fight with 2 fewer <typ class="attribute">COMBAT SKILL</typ> points, the second round with 4 fewer points, the third with 6 fewer, etc. This loss is certainly intended to be for the duration of this Combat only<ch.emdash/>not permanently<ch.emdash/>since Joe Dever always makes special note of instances where you permanently lose <typ class="attribute">COMBAT SKILL</typ>. It is possible that this penalty is an error, and that you are meant to lose 2 <typ class="attribute">ENDURANCE</typ> points rather than <typ class="attribute">COMBAT SKILL</typ> points at the beginning of every round.</p>
-    <p>(<a idref="sect42">Section 42</a>) If you are infected with the korovax bacillus, you may now use the Tincture of Oxydine to cure yourself.</p>
-    <p>(<a idref="sect47">Section 47</a>) It seems peculiar that you are instructed to reduce <typ class="attribute">COMBAT SKILL</typ> at the beginning of every round if you do not have Psi-screen. This loss would be cumulative so that during the first round you fight with 2 fewer <typ class="attribute">COMBAT SKILL</typ> points, the second round with 4 fewer points, the third with 6 fewer, etc. This loss is certainly intended to be for the duration of this Combat only<ch.emdash/>not permanently<ch.emdash/>since Joe Dever always makes special note of instances where you permanently lose <typ class="attribute">COMBAT SKILL</typ>. It is possible that this penalty is an error, and that you are meant to lose 2 <typ class="attribute">ENDURANCE</typ> points rather than <typ class="attribute">COMBAT SKILL</typ> points at the beginning of every round.</p>
-    <p>(<a idref="sect60">Section 60</a>) You should also turn to this number if you possess a magical weapon such as the Dagger of Vashna, the Jewelled Mace, or the Magic Spear. (See <bookref series="lw" book="14tcok"><cite>The Captives of Kaag</cite></bookref> <bookref series="lw" book="14tcok" section="sect12">Section 12</bookref>.)</p>
-    <p>(<a idref="sect76">Section 76</a>) <a idref="sect221">Section 221</a> gives you further information about these monks. It is most likely the author<ch.apos/>s mistake that you miss this information in lieu of the discovery you make by using Divination in this section. At your discretion <a idref="sect221">go to 221</a> before making your choice in this section.</p>
-    <p>(<a idref="sect86">Section 86</a>) It seems unreasonable to lose zero <typ class="attribute">ENDURANCE</typ> points after getting hit by a sword. You may choose to interpret picking <quote>0</quote> as indicating a 10 <typ class="attribute">ENDURANCE</typ> point loss. Other adventures sometimes instruct you to interpret a <quote>0</quote> this way in similar situations.</p>
-    <p>(<a idref="sect112">Section 112</a>) If you decide to make a guess, the section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
-    <p>(<a idref="sect126">Section 126</a>) If you decide to make a guess, the section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
-    <p>(<a idref="sect141">Section 141</a>) If you decide to make a guess, the section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
-    <p>(<a idref="sect156">Section 156</a>) If you possess either herb, you may now use it to cure the korovax infection.</p>
-    <p>(<a idref="sect169">Section 169</a>) <cite>Lone Wolf Club Newsletter Summer Special 1987</cite> clarifies: <quote>If you win the combat against the Vordak you are able to retrieve the Weapon and keep it noted on your <a idref="action">Action Chart</a>.</quote></p>
-    <p>(<a idref="sect183">Section 183</a>) It seems peculiar that you are instructed to reduce <typ class="attribute">COMBAT SKILL</typ> at the beginning of every round if you do not have Psi-screen. This loss would be cumulative so that during the first round you fight with 2 fewer <typ class="attribute">COMBAT SKILL</typ> points, the second round with 4 fewer points, the third with 6 fewer, etc. This loss is certainly intended to be for the duration of this Combat only<ch.emdash/>not permanently<ch.emdash/>since Joe Dever always makes special note of instances where you permanently lose <typ class="attribute">COMBAT SKILL</typ>. It is possible that this penalty is an error, and that you are meant to lose 2 <typ class="attribute">ENDURANCE</typ> points rather than <typ class="attribute">COMBAT SKILL</typ> points at the beginning of every round.</p>
-    <p>(<a idref="sect202">Section 202</a>) Don<ch.apos/>t discard the Lodestone during this adventure unless you are forced to do so or given an explicit opportunity. Some passages in the book assume you you still possess it.</p>
-    <p>(<a idref="sect308">Section 308</a>) It seems peculiar that you are instructed to reduce <typ class="attribute">COMBAT SKILL</typ> at the beginning of every round if you do not have Psi-screen. This loss would be cumulative so that during the first round you fight with 2 fewer <typ class="attribute">COMBAT SKILL</typ> points, the second round with 4 fewer points, the third with 6 fewer, etc. This loss is certainly intended to be for the duration of this Combat only<ch.emdash/>not permanently<ch.emdash/>since Joe Dever always makes special note of instances where you permanently lose <typ class="attribute">COMBAT SKILL</typ>. It is possible that this penalty is an error, and that you are meant to lose 2 <typ class="attribute">ENDURANCE</typ> points rather than <typ class="attribute">COMBAT SKILL</typ> points at the beginning of every round. Replaced <quote>Lone Wolf series</quote> with <quote> <cite>Lone Wolf</cite> series</quote>.</p>
-    <p>(<a idref="sect308">Section 308</a>) You should not double any <typ class="attribute">ENDURANCE</typ> point losses inflicted upon the Helghast if you are wielding the Dagger of Vashna, the Jewelled Mace, or the Magic Spear.</p>
-    <p>(<a idref="sect338">Section 338</a>) If you decide to make a guess, the section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
-   </data>
+   <data/>
+
   </section>
 
   <section class="backmatter" id="illstrat">
@@ -5778,8 +5725,9 @@ add foreign tags
      <meta><title>Secondary Illustrations</title></meta>
 
      <data>
-      <p>Only the primary occurrence of each secondary illustration is cited.</p>
       <ul class="unbulleted">
+       <li><a idref="equipmnt">Equipment</a></li>
+       <li><a idref="discplnz">Kai Disciplines</a></li>
        <li><a idref="sect1">Section 1</a></li>
        <li><a idref="sect29">Section 29</a></li>
        <li><a idref="sect36">Section 36</a></li>
@@ -5789,7 +5737,9 @@ add foreign tags
        <li><a idref="sect127">Section 127</a></li>
        <li><a idref="sect136">Section 136</a></li>
        <li><a idref="sect138">Section 138</a></li>
+       <li><a idref="sect197">Section 197</a></li>
        <li><a idref="sect264">Section 264</a></li>
+       <li><a idref="sect311">Section 311</a></li>
        <li><a idref="sect312">Section 312</a></li>
       </ul>
 
