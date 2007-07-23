@@ -11,61 +11,19 @@
 
 <gamebook xml:lang="en-UK" version="0.12">
 
-<!--
-
-$Id$
-
-$Log: 10tdot.xml,v $
-Revision 1.51  2007/07/02 15:30:00  Simon Osborne
-Minor rewording of a repeated Erratum for consistency.
-
-Revision 1.5  2007/06/28 10:51:28  Simon Osborne
-Fixed many Errata and Non-errata issues. Updated to version 0.12.
-
-Revision 1.3  2006/01/20 19:51:28  jonathan.blake
-moral -> morale in blurb
-
-Revision 1.2  2005/03/10 18:21:51  jonathan.blake
-Removed link to old staff email address.
-
-Revision 1.1  2004/11/08 01:29:12  jonathan.blake
-Initial Freepository revision
-
-
-//// RCS Revision Log ////
-
-Revision 1.6  2003/01/27 22:11:39  jblake
-Checkin prior to global footnote change
-
-Revision 1.5  2003/01/04 17:15:05  jblake
-Published
-
-Revision 1.4  2002/12/06 00:06:35  jblake
-XML cleanup.
-
-Revision 1.3  2002/11/12 18:49:50  jblake
-Fix of interbook links.
-
-Revision 1.2  2002/11/10 07:47:07  jblake
-Updated the publication date.
-
-Revision 1.1  2002/10/15 23:16:55  jblake
-Initial revision
-
-//////////////////////////
-
--->
-
 <meta>
  <title>The Dungeons of Torgar</title>
  <creator class="short">Joe Dever and Brian Williams</creator>
- <creator class="medium">Joe Dever<br />Illustrated by Brian Williams</creator>
+ <creator class="medium">
+  <line>Joe Dever</line>
+  <line>Illustrated by Brian Williams</line>
+ </creator>
  <creator class="long">
    &inclusion.joe.dever.bio.lw;
    &inclusion.brian.williams.bio.lw;
  </creator>
  <publisher>Project Aon</publisher>
- <date class="publication"><year>2003</year><month>1</month><day>3</day></date>
+ <date class="publication"><year>2007</year><month>7</month><day>23</day></date>
  <description class="blurb">
   <p>Trumpets announce the advance and you set off across the body-strewn battlefield with a force 900 strong. Pikemen lead the column with archers close behind, and bringing up the rear are a levy of militia, many of whom lived in Cetza before Drakkarim invaded. Their morale is high for this is their chance to recover their homes and their land.</p>
   <p>Tensely you watch as the enemy attack. The Palace Guard link shields but, as the Hammerlanders slam into their line, they buckle and waver beneath the crushing onslaught. As your force crosses the ditch, you pray that the Prince and his men have strength enough to hold for just a few minutes more.<ch.ellips/></p>
@@ -73,9 +31,16 @@ Initial revision
  <description class="publication">
   <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
  </description>
- <rights class="copyrights">Text copyright <ch.copy/> 1987 Joe Dever.<br />Illustrations copyright <ch.copy/> 1987 Brian Williams.</rights>
+ <rights class="copyrights">
+  <line>Text copyright <ch.copy/> 1987 Joe Dever.</line>
+  <line>Illustrations copyright <ch.copy/> 1987 Brian Williams.</line>
+ </rights>
  <rights class="license-notification">
-  <p>Text copyright <ch.copy/> 1987 Joe Dever.<br />Illustrations copyright <ch.copy/> 1987 Brian Williams.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+  <p>
+   <line>Text copyright <ch.copy/> 1987 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1987 Brian Williams.</line>
+   <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+  </p>
  </rights>
 </meta>
 
@@ -127,19 +92,38 @@ Initial revision
        <dt>Illustration Transcription</dt>
         <dd>Jonathan Blake</dd>
        <dt>XML</dt>
-        <dd>Jonathan Blake<br/>Simon Osborne</dd>
+        <dd>
+	 <line>Jonathan Blake</line>
+	 <line>Simon Osborne</line>
+	</dd>
        <dt>Alternate Illustrations</dt>
-        <dd>JC Alvarez (action charts)<br />Jonathan Blake (extramatter charts and tables)</dd>
+        <dd>
+	 <line>JC Alvarez (action charts)</line>
+	 <line>Jonathan Blake (extramatter charts and tables)</line>
+	</dd>
        <dt>Proofreading</dt>
-        <dd>Simon Osborne (front matter)<br />Matthew Reynolds (numbered sections)</dd>
+        <dd>
+	 <line>Simon Osborne (front matter)</line>
+	 <line>Matthew Reynolds (numbered sections)</line>
+	</dd>
        <dt>Editing</dt>
-        <dd>Jeff Dougan<br />Ingo Kl<ch.ouml/>cker<br />LeRoy McSwain<br/>Simon Osborne<br />Lawrence Ritchie<br />Thomas Wolmer</dd>
+        <dd>
+	 <line>Jeff Dougan</line>
+	 <line>Ingo Kl<ch.ouml/>cker</line>
+	 <line>LeRoy McSwain</line>
+	 <line>Simon Osborne</line>
+	 <line>Lawrence Ritchie</line>
+	 <line>Thomas Wolmer</line>
+	</dd>
        <dt>PDF Layout</dt>
-        <dd>Jonathan Blake<br />Ingo Kl<ch.ouml/>cker</dd>
+        <dd>
+	 <line>Jonathan Blake</line>
+	 <line>Ingo Kl<ch.ouml/>cker</line>
+	</dd>
        <dt>Coordination</dt>
         <dd>Jonathan Blake</dd>
        <dt>Special Thanks</dt>
-        <dd>Peter Smyth<br />Brian Thompson</dd>
+        <dd>Peter Smyth and Brian Thompson</dd>
       </dl>
      </data>
     </section>
@@ -4865,42 +4849,42 @@ Initial revision
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acdscplz.gif" width="385" height="246" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand/> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acchklst.gif" width="385" height="128" class="html" mime-type="image/gif" />
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif"></instance>
     </illustration>
 
     <illustration class="inline">
      <meta>
-      <creator>JC Alvarez <ch.ampersand></ch.ampersand> Jonathan Blake</creator>
+      <creator>JC Alvarez / Jonathan Blake</creator>
      </meta>
      <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif"></instance>
     </illustration>
@@ -5014,145 +4998,6 @@ Initial revision
      </meta>
      <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif"></instance>
      <instance src="crtpos.tex" width="380" height="500" class="tex"></instance>
-    </illustration>
-   </data>
-  </section>
-
-  <section class="backmatter" id="random">
-   <meta><title>Random Number Table</title></meta>
-
-   <data>
-
-    <illustration class="inline">
-     <meta>
-      <creator>Jonathan Blake</creator>
-     </meta>
-     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
-     <instance src="random.tex" width="380" height="500" class="tex"></instance>
-     <instance class="text">
-      <table>
-       <tr>
-        <td>4</td>
-        <td>0</td>
-        <td>4</td>
-        <td>8</td>
-        <td>7</td>
-        <td>4</td>
-        <td>0</td>
-        <td>9</td>
-        <td>7</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>7</td>
-        <td>6</td>
-        <td>3</td>
-        <td>6</td>
-        <td>9</td>
-        <td>6</td>
-        <td>5</td>
-        <td>6</td>
-        <td>0</td>
-        <td>2</td>
-       </tr>
-       <tr>
-        <td>5</td>
-        <td>8</td>
-        <td>9</td>
-        <td>3</td>
-        <td>8</td>
-        <td>0</td>
-        <td>4</td>
-        <td>7</td>
-        <td>4</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>2</td>
-        <td>7</td>
-        <td>0</td>
-        <td>4</td>
-        <td>6</td>
-        <td>8</td>
-        <td>2</td>
-        <td>5</td>
-        <td>6</td>
-        <td>4</td>
-       </tr>
-       <tr>
-        <td>4</td>
-        <td>8</td>
-        <td>2</td>
-        <td>4</td>
-        <td>2</td>
-        <td>3</td>
-        <td>8</td>
-        <td>2</td>
-        <td>9</td>
-        <td>5</td>
-       </tr>
-       <tr>
-        <td>8</td>
-        <td>2</td>
-        <td>6</td>
-        <td>8</td>
-        <td>6</td>
-        <td>7</td>
-        <td>9</td>
-        <td>8</td>
-        <td>2</td>
-        <td>8</td>
-       </tr>
-       <tr>
-        <td>3</td>
-        <td>0</td>
-        <td>8</td>
-        <td>4</td>
-        <td>6</td>
-        <td>1</td>
-        <td>3</td>
-        <td>5</td>
-        <td>6</td>
-        <td>9</td>
-       </tr>
-       <tr>
-        <td>8</td>
-        <td>0</td>
-        <td>2</td>
-        <td>7</td>
-        <td>3</td>
-        <td>5</td>
-        <td>1</td>
-        <td>7</td>
-        <td>9</td>
-        <td>4</td>
-       </tr>
-       <tr>
-        <td>3</td>
-        <td>8</td>
-        <td>6</td>
-        <td>5</td>
-        <td>8</td>
-        <td>1</td>
-        <td>6</td>
-        <td>8</td>
-        <td>2</td>
-        <td>6</td>
-       </tr>
-       <tr>
-        <td>0</td>
-        <td>8</td>
-        <td>4</td>
-        <td>6</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1</td>
-        <td>6</td>
-        <td>9</td>
-        <td>5</td>
-       </tr>
-      </table>
-     </instance>
     </illustration>
 
     <illustration>
@@ -5360,6 +5205,145 @@ Initial revision
    </data>
   </section>
 
+  <section class="backmatter" id="random">
+   <meta><title>Random Number Table</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
+     <instance src="random.tex" width="380" height="500" class="tex"></instance>
+     <instance class="text">
+      <table>
+       <tr>
+        <td>4</td>
+        <td>0</td>
+        <td>4</td>
+        <td>8</td>
+        <td>7</td>
+        <td>4</td>
+        <td>0</td>
+        <td>9</td>
+        <td>7</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>7</td>
+        <td>6</td>
+        <td>3</td>
+        <td>6</td>
+        <td>9</td>
+        <td>6</td>
+        <td>5</td>
+        <td>6</td>
+        <td>0</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>8</td>
+        <td>9</td>
+        <td>3</td>
+        <td>8</td>
+        <td>0</td>
+        <td>4</td>
+        <td>7</td>
+        <td>4</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>7</td>
+        <td>0</td>
+        <td>4</td>
+        <td>6</td>
+        <td>8</td>
+        <td>2</td>
+        <td>5</td>
+        <td>6</td>
+        <td>4</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td>8</td>
+        <td>2</td>
+        <td>4</td>
+        <td>2</td>
+        <td>3</td>
+        <td>8</td>
+        <td>2</td>
+        <td>9</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>2</td>
+        <td>6</td>
+        <td>8</td>
+        <td>6</td>
+        <td>7</td>
+        <td>9</td>
+        <td>8</td>
+        <td>2</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>3</td>
+        <td>0</td>
+        <td>8</td>
+        <td>4</td>
+        <td>6</td>
+        <td>1</td>
+        <td>3</td>
+        <td>5</td>
+        <td>6</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>0</td>
+        <td>2</td>
+        <td>7</td>
+        <td>3</td>
+        <td>5</td>
+        <td>1</td>
+        <td>7</td>
+        <td>9</td>
+        <td>4</td>
+       </tr>
+       <tr>
+        <td>3</td>
+        <td>8</td>
+        <td>6</td>
+        <td>5</td>
+        <td>8</td>
+        <td>1</td>
+        <td>6</td>
+        <td>8</td>
+        <td>2</td>
+        <td>6</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>8</td>
+        <td>4</td>
+        <td>6</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td>6</td>
+        <td>9</td>
+        <td>5</td>
+       </tr>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
   <section class="backmatter" id="errata">
    <meta><title>Errata</title></meta>
 
@@ -5493,15 +5477,8 @@ Initial revision
   <section class="backmatter" id="footnotz">
    <meta><title>Footnotes</title></meta>
 
-   <data>
-    <p>(<a idref="sect30">30</a>) There is no choice that leads to this section of the book. It is exactly the same as <a idref="sect299">Section 299</a> and therefore superfluous.</p>
-    <p>(<a idref="sect54">54</a>) You may not use the Silver Bow of Duadon in this combat. If you have reached the rank of Tutelary and possess the Discipline of Weaponmastery, you only need to deduct 2 points from your <typ class="attribute">COMBAT SKILL</typ> if you are unarmed.</p>
-    <p>(<a idref="sect126">126</a>) You must win the combat before continuing.</p>
-    <p>(<a idref="sect177">177</a>) Kika are a form of currency used in the Darklands and the Drakkarim nations. Each coin is worth one-tenth of a Gold Crown and ten Kika take up the same space as one Gold Crown in your Belt Pouch.</p>
-    <p>(<a idref="sect245">245</a>) You must win the combat before continuing.</p>
-    <p>(<a idref="sect286">286</a>) If you automatically kill Tagazin, he doesn<ch.apos/>t die but is severely weakened. You should still turn to <a idref="sect20">Section 20</a>.</p>
-    <p>(<a idref="sect304">304</a>) Depending on your interpretation of the rules, you may decide to forgo the use of a shield for the duration of this combat. All weapon-like Special Items should be treated just as normal weapons for determination of whether or not you may use them in this combat (e.g. you cannot use the Silver Bow of Duadon but you may use the Sommerswerd).</p>
-   </data>
+   <data/>
+
   </section>
 
   <section class="backmatter" id="illstrat">
@@ -5545,19 +5522,33 @@ Initial revision
      <meta><title>Secondary Illustrations</title></meta>
 
      <data>
-      <p>Only the first occurrence of each secondary illustration is cited.</p>
       <ul class="unbulleted">
-       <li><a idref="sect163">Small 1</a></li>
-       <li><a idref="sect141">Small 2</a></li>
-       <li><a idref="sect273">Small 3</a></li>
-       <li><a idref="sect85">Small 4</a></li>
-       <li><a idref="sect231">Small 5</a></li>
-       <li><a idref="sect94">Small 6</a></li>
-       <li><a idref="sect168">Small 7</a></li>
-       <li><a idref="sect160">Small 8</a></li>
-       <li><a idref="sect78">Small 9</a></li>
-       <li><a idref="sect300">Small 10</a></li>
-       <li><a idref="sect93">Small 11</a></li>
+       <li><a idref="equipmnt">Equipment</a></li>
+       <li><a idref="discplnz">Kai Disciplines</a></li>
+       <li><a idref="sect78">Section 78</a></li>
+       <li><a idref="sect85">Section 85</a></li>
+       <li><a idref="sect93">Section 93</a></li>
+       <li><a idref="sect94">Section 94</a></li>
+       <li><a idref="sect141">Section 141</a></li>
+       <li><a idref="sect160">Section 160</a></li>
+       <li><a idref="sect163">Section 163</a></li>
+       <li><a idref="sect168">Section 168</a></li>
+       <li><a idref="sect176">Section 176</a></li>
+       <li><a idref="sect186">Section 186</a></li>
+       <li><a idref="sect201">Section 201</a></li>
+       <li><a idref="sect211">Section 211</a></li>
+       <li><a idref="sect228">Section 228</a></li>
+       <li><a idref="sect231">Section 231</a></li>
+       <li><a idref="sect232">Section 232</a></li>
+       <li><a idref="sect249">Section 249</a></li>
+       <li><a idref="sect266">Section 266</a></li>
+       <li><a idref="sect270">Section 270</a></li>
+       <li><a idref="sect273">Section 273</a></li>
+       <li><a idref="sect284">Section 284</a></li>
+       <li><a idref="sect300">Section 300</a></li>
+       <li><a idref="sect308">Section 308</a></li>
+       <li><a idref="sect332">Section 332</a></li>
+       <li><a idref="sect335">Section 335</a></li>
       </ul>
      </data>
     </section>
