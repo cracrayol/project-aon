@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE gamebook SYSTEM "gamebook.dtd" [
- <!ENTITY % xhtml.characters SYSTEM "htmlchar.mod">
- <!ENTITY % latex.characters SYSTEM "ltexchar.mod">
- %xhtml.characters;
-
  <!ENTITY % general.links SYSTEM "genlink.mod">
  %general.links;
  <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
  %xhtml.links;
+
  <!ENTITY % general.inclusions SYSTEM "geninc.mod">
  %general.inclusions;
 ]>
 
-<gamebook xml:lang="en-UK" version="0.10">
+<gamebook xml:lang="en-UK" version="0.12">
 
 <!--
 
@@ -21,45 +18,37 @@ $Log$
 Revision 1.4  2007/01/17 23:20:57  jonathan.blake
 Validated update - removed inline incorrect signpost elements - should we make this possible?
 
-Revision 1.3  2007/01/17 22:58:04  jonathan.blake
-Simon's updates
-
-Revision 1.2  2006/07/09 23:54:43  cvsuser
-Add new file
-
-Revision 1.1  2004/11/09 06:47:16  jonathan.blake
-Initial Freepository revision
-
-Revision 1.2 2006/07/09
-Basic XML mark-up
-
-//// RCS Revision Log ////
-
-Revision 1.1  2002/10/20 05:59:12  jblake
-Initial revision
-
-//////////////////////////
-
 -->
+
 <meta>
  <title>Dawn of the Dragons</title>
  <creator class="short">Joe Dever and Brian Williams</creator>
-  <creator class="medium">Joe Dever<br />Illustrated by Brian Williams</creator>
+  <creator class="medium">
+   <line>Joe Dever</line>
+   <line>Illustrated by Brian Williams</line>
+  </creator>
   <creator class="long">
    &inclusion.joe.dever.bio.lw;
    &inclusion.brian.williams.bio.lw;
   </creator>
   <publisher>Project Aon</publisher>
-  <date class="publication"><year>2006</year><month>6</month><day>8</day></date>
+  <date class="publication"><year>2007</year><month>7</month><day>23</day></date>
   <description class="blurb">
-   [Insert blurb here]
+   <p>You are Lone Wolf<ch.emdash/>Kai Grand Master of Sommerlund. During your long voyage home from a successful quest you discover the Dark God Naar is poised to unleash a horde of fire-breathing dragons upon the Kai Monastery. Will his agents assassinate you <foreign xml:lang="fr">en route</foreign>? Or will you manage to arrive at your monastery in time to take command of the new order of young Kai warriors in what could be their first and final battle against Naar<ch.apos/>s champions of evil?</p>
   </description>
   <description class="publication">
    <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
   </description>
-  <rights class="copyrights">Text copyright <ch.copy/> [Insert year] Joe Dever.<br />Illustrations copyright <ch.copy/> [Insert year] Brian Williams.</rights>
+  <rights class="copyrights">
+   <line>Text copyright <ch.copy/> 1992 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1993 Brian Williams.</line>
+  </rights>
   <rights class="license-notification">
-   <p>Text copyright <ch.copy/>  Joe Dever.<br />Illustrations copyright <ch.copy/>  Brian Williams.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+   <p>
+    <line>Text copyright <ch.copy/> Joe Dever.</line>
+    <line>Illustrations copyright <ch.copy/> Brian Williams.</line>
+    <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+   </p>
   </rights>
 </meta>
 
@@ -84,7 +73,7 @@ Initial revision
     </meta>
 
     <data>
-     <p class="dedication">[Insert Dedication]</p>
+     <p class="dedication">To Rick, Nancy <ch.ampersand/> Amy (Ca.)</p>
     </data>
    </section>
 
@@ -97,8 +86,7 @@ Initial revision
 
     <data>
 
-     <p><quote>I would be especially pleased if my granting of the rights to distribute my books in this way was seen as my <quote>millennium gift</quote> to all those devoted readers who have kept the Kai flag flying high, through all the good times, and the not-so-good. It would make me very proud indeed if this enterprise laid the foundations of a lasting legacy, securing the longevity of Lone Wolf by making my creation freely and readily accessible to current and future online generations. For them, for us, for Sommerlund and the Kai.<ch.ellips/></quote> <strong>Joe Dever</strong></p>
-     <p>Project Aon would first like to thank Joe Dever for making this generous offering of the books that we have all loved from the beginning. We would also like to acknowledge the following members of Project Aon for their diligent work:</p>
+    &inclusion.joe.dever.endowment;
 
      <section class="frontmatter" id="credits">
       <meta><title>Credits</title></meta>
@@ -110,13 +98,24 @@ Initial revision
         <dt>Illustration Transcription</dt>
          <dd>Jonathan Blake</dd>
         <dt>XML</dt>
-         <dd>Jonathan Blake<br/>Jeff Dougan</dd>
+         <dd>
+	  <line>Jonathan Blake</line>
+	  <line>Jeff Dougan</line>
+	  <line>Melvin Mah</line>
+	  <line>Simon Osborne</line>
+	 </dd>
         <dt><a idref="action">Action Chart</a>s</dt>
-         <dd>JC Alvarez<br />Jonathan Blake</dd>
+         <dd>
+	  <line>JC Alvarez</line>
+	  <line>Jonathan Blake</line>
+	 </dd>
         <dt>Proofreading</dt>
          <dd></dd>
         <dt>Editing</dt>
-         <dd><br/></dd>
+         <dd>
+	  <line>LeRoy McSwain</line>
+	  <line>Simon Osborne</line>
+	 </dd>
         <dt>Coordination</dt>
          <dd>Jonathan Blake</dd>
        </dl>
@@ -180,8 +179,8 @@ Initial revision
      <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 25 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a> (i.e., if your pencil fell on the number 6 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> of 31). When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore very desirable.</p>
      <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 30 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a> (i.e., if your pencil fell on the number 7 on the <a idref="random">Random Number Table</a> you would have 37 <typ class="attribute">ENDURANCE</typ> points).</p>
      <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never rise above the number you have when you start an adventure.</p>
-     <p>If you have successfully completed any of the previous adventures in the Lone Wolf series (Books 1<ch.endash/>17), you can carry your current scores of <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points over to Book 17. These scores may include Weaponmastery, Curing, and Psi-surge bonuses obtained upon completion of Lone Wolf Kai (Books 1<ch.endash/>5) or Magnakai (Books 6<ch.endash/>12) adventures.<footref id="gamerulz-1" idref="gamerulz-1-foot"/> Only if you have completed these previous adventures will you benefit from the appropriate bonuses in the course of the Grand Master series. You may also carry over any Weapons and Backpack Items you had in your possession at the end of your last adventure, and these should be entered on your new Grand Master <a idref="action">Action Chart</a> (you are still limited to two Weapons, but you may now carry up to ten Backpack Items).</p>
-     <p>However, only the following Special Items may be carried over from the Lone Wolf Kai (Books 1<ch.endash/>5) and Magnakai (Books 6<ch.endash/>12) series to the Lone Wolf Grand Master series (Books 13-onwards):<footref id="gamerulz-2" idref="gamerulz-2-foot"/></p>
+     <p>If you have successfully completed any of the previous adventures in the <cite>Lone Wolf</cite> series (Books 1<ch.endash/>17), you can carry your current scores of <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points over to Book 17. These scores may include Weaponmastery, Curing, and Psi-surge bonuses obtained upon completion of <cite>Lone Wolf</cite> Kai (Books 1<ch.endash/>5) or Magnakai (Books 6<ch.endash/>12) adventures.<footref id="gamerulz-1" idref="gamerulz-1-foot"/> Only if you have completed these previous adventures will you benefit from the appropriate bonuses in the course of the Grand Master series. You may also carry over any Weapons and Backpack Items you had in your possession at the end of your last adventure, and these should be entered on your new Grand Master <a idref="action">Action Chart</a> (you are still limited to two Weapons, but you may now carry up to ten Backpack Items).</p>
+     <p>However, only the following Special Items may be carried over from the <cite>Lone Wolf</cite> Kai (Books 1<ch.endash/>5) and Magnakai (Books 6<ch.endash/>12) series to the <cite>Lone Wolf</cite> Grand Master series (Books 13<ch.endash/>onwards):<footref id="gamerulz-2" idref="gamerulz-2-foot"/></p>
      <ul>
       <li>Crystal Star Pendant</li>
       <li>Sommerswerd</li>
@@ -350,7 +349,7 @@ Initial revision
         </data>
        </section>
 
-       <p>If you successfully complete the mission as set in this, the sixth of the Lone Wolf Grand Master series, you may add a further Grand Master Discipline of your choice to your <a idref="action">Action Chart</a> in <bookref book="19wb">Book 19</bookref>.</p>
+       <p>If you successfully complete the mission as set in this, the sixth of the <cite>Lone Wolf</cite> Grand Master series, you may add a further Grand Master Discipline of your choice to your <a idref="action">Action Chart</a> in <bookref book="19wb">Book 19</bookref>.</p>
 
        <p>For every Grand Master Discipline you possess, in excess of the original four Disciplines you begin with, you may add 1 point to your basic <typ class="attribute">COMBAT SKILL</typ> score and 2 points to your basic <typ class="attribute">ENDURANCE</typ> points score. These bonus points, together with your extra Grand Master Discipline(s), your original four Grand Master Disciplines, and any Special Items that you have found and been able to keep during your adventures, may then be carried over and used in the next Grand Master adventure, which is called <bookref book="19wb"><cite>Wolf<ch.apos/>s Bane</cite>.</bookref></p>
       </data>
@@ -365,7 +364,7 @@ Initial revision
 
       <data>
        <p>Before you set off on your long journey to Sommerlund you take with you a <a idref="map">map of Northern Magnamund</a> (see the inside front cover of this book) and a pouch of gold. To find out how much gold is in the pouch, pick a number from the <a idref="random">Random Number Table</a> and add 20 to the number you have picked. The total equals the number of Gold Crowns inside the pouch, and you should now enter this number in the <quote>Gold Crowns</quote> section of your <a idref="action">Action Chart</a>.</p>
-       <p>If you have successfully completed any of the previous Lone Wolf adventures (Books 1<ch.endash/>17), you may add this sum to the total sum of crowns you already possess. Fifty Crowns is the maximum you can carry, but additional Crowns can be left in safe-keeping at your monastery.</p>
+       <p>If you have successfully completed any of the previous <cite>Lone Wolf</cite> adventures (Books 1<ch.endash/>17), you may add this sum to the total sum of crowns you already possess. Fifty Crowns is the maximum you can carry, but additional Crowns can be left in safe-keeping at your monastery.</p>
        <p>You can take four items from, the list below, again adding to these, if necessary, any you may already possess from previous adventures (remember, you are still limited to two weapons, but you may now carry a maximum of ten Backpack items).</p>
        <ul class="paragraphed">
         <li><p>Quarterstaff (Weapons)</p></li>
@@ -480,7 +479,7 @@ Initial revision
         <li><p>Repeat the sequence from <a idref="stage3">Stage 3.</a></p></li>
        </ol>
 
-       <p>This process of combat continues until <typ class="attribute">ENDURANCE</typ> points of either the enemy or Lone Wolf are reduced to zero, at which point the one with the zero score is declared dead. If Lone Wolf is dead, the adventure is over. If the enemy is dead, Lone Wolf proceeds but with his <typ class="attribute">ENDURANCE</typ> points reduced.</p>
+       <p>This process of combat continues until <typ class="attribute">ENDURANCE</typ> points of either the enemy or Lone Wolf are reduced to zero or below, at which point that combatant is declared dead. If Lone Wolf is dead, the adventure is over. If the enemy is dead, Lone Wolf proceeds but with his <typ class="attribute">ENDURANCE</typ> points possibly reduced.</p>
        <p>A <a idref="crsumary">summary of Combat Rules</a> appears in the back of this book.</p>
 
        <section class="frontmatter" id="evasion">
@@ -501,13 +500,13 @@ Initial revision
       </meta>
       <data>
 
-       <p>The following table is a guide to the rank and titles you can achieve at each stage of your journey along the road of Kai Grand Mastership. As you successfully complete each adventure in the Lone Wolf Grand Master series, you will gain an additional Grand Master Discipline and progress towards the pinnacle of Kai perfection<ch.emdash/>to become a Kai Supreme Master.</p>
+       <p>The following table is a guide to the rank and titles you can achieve at each stage of your journey along the road of Kai Grand Mastership. As you successfully complete each adventure in the <cite>Lone Wolf</cite> Grand Master series, you will gain an additional Grand Master Discipline and progress towards the pinnacle of Kai perfection<ch.emdash/>to become a Kai Supreme Master.</p>
 
        <ol>
         <li>Kai Grand Master Senior</li>
         <li>Kai Grand Master Superior</li>
         <li>Kai Grand Sentinel</li>
-        <li>Kai Grand Defender<ch.emdash/><em>You begin the Lone Wolf Grand Master adventures at this level of Mastery</em></li>
+        <li>Kai Grand Defender<ch.emdash/><em>You begin the <cite>Lone Wolf</cite> Grand Master adventures at this level of Mastery</em></li>
         <li>Kai Grand Guardian</li>
         <li>Sun Knight</li>
         <li>Sun Lord</li>
@@ -676,7 +675,7 @@ Initial revision
         </data>
        </section>
 
-       <p>The nature of any additional improvements and how they affect your Grand Master Disciplines will be noted in the <ch.apos/>Improved Grand Master Disciplines<ch.apos/> section of future Lone Wolf books.</p>
+       <p>The nature of any additional improvements and how they affect your Grand Master Disciplines will be noted in the <ch.apos/>Improved Grand Master Disciplines<ch.apos/> section of future <cite>Lone Wolf</cite> books.</p>
       </data>
      </section>
     </data>
@@ -692,8 +691,8 @@ Initial revision
 
     <data>
      <p>In order to find the quickest route from Vadera to your Kai Monastery you nay well have to pass through several wild and dangerous regions of Magnamund. Be wary and on your guard at all times, for the agents of the Dark God Naar are abroad and they will do everything in their power to thwart your safe return.</p>
-     <p>Some of the things that you will find or encounter during your mission will be of use to you in this and future Lone Wolf books, while others may be red herrings of no real value at all,. If you discover items, be selective in what you choose to keep.</p>
-     <p>Pick your four Grand Master Disciplines with care for a wise choice will enable any player to complete the quest, no matter how weak their initial <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> scores may be. Successful completion of previous Lone Wolf adventures, although an advantage, is not essential for the completion of this Grand Master adventure.</p>
+     <p>Some of the things that you will find or encounter during your mission will be of use to you in this and future <cite>Lone Wolf</cite> books, while others may be red herrings of no real value at all,. If you discover items, be selective in what you choose to keep.</p>
+     <p>Pick your four Grand Master Disciplines with care for a wise choice will enable any player to complete the quest, no matter how weak their initial <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> scores may be. Successful completion of previous <cite>Lone Wolf</cite> adventures, although an advantage, is not essential for the completion of this Grand Master adventure.</p>
      <p>May the light of the Gods Kai and Ishir make swift your return to your endangered homeland.</p>
      <p>For Sommerlund and the Kai!</p>
     </data>
@@ -2317,7 +2316,7 @@ Initial revision
 
      <data>
       <p>The first spatterings of rain are dampening your shoulders as you approach the forest town<ch.apos/>s solitary inn. The smell and soft noises of horses waft from an adjoining stable, and the flickering orange light of an open fire can be seen shimmering through the bulls-eye glass of the inn<ch.apos/>s leaded windows. You halt outside the main door and stoop to read a weather-faded board that is fixed to the wall:</p>
-      <p>The Towering Pine Inn Room &amp; Stabling<ch.emdash/>2 Cold Crowns per night</p>
+      <p>The Towering Pine Inn Room <ch.ampersand/> Stabling<ch.emdash/>2 Cold Crowns per night</p>
       <choice idref="sect103">If you possess sufficient Gold Crowns to stay here for the night, <link-text>turn to 103</link-text>.</choice>
       <choice idref="sect302">If you do not, <link-text>turn to 302</link-text>.</choice>
      </data>
@@ -4639,7 +4638,7 @@ Initial revision
 
      <data>
       <p>The owner of this emporium is a grizzled old veteran of many wars. As you enter, you see him and his son busy at a workbench, shaping and flattening squares of rusty iron into poor-quality breastplates. A sign fixed to their bench reads:</p>
-      <p>Armour &amp; Weapons<ch.emdash/>we buy we sell</p>
+      <p>Armour <ch.ampersand/> Weapons<ch.emdash/>we buy we sell</p>
       <p>Swords 2GC 4GC</p>
       <p>Spears 3GC 6GC</p>
       <p>Axes 1GC 2GC</p>
@@ -4791,74 +4790,524 @@ Initial revision
   </section>
 
    <section class="backmatter" id="map">
-    <meta></meta>
+    <meta><title>The Lands and Territories of Central Northern Magnamund</title></meta>
 
-    <data>
-    </data>
-   </section>
+   <data>
+    <illustration>
+     <meta>
+      <creator>Brian Williams</creator>
+     </meta>
+     <instance src="map.jpg" width="1024" height="768" class="html"></instance>
+     <instance src="map.pdf" width="1024" height="768" class="pdf"></instance>
+    </illustration>
+   </data>
+  </section>
 
-   <section class="backmatter" id="action">
-    <meta><title><a idref="action">Action Chart</a></title></meta>
+  <section class="backmatter" id="action">
+   <meta><title>Action Chart</title></meta>
 
-    <data>
-     <illref class="html" idref="acstats" />
-     <illref class="html" idref="acdscplz" />
-     <illref class="html" idref="acitems" />
-     <illref class="html" idref="acbckpck" />
-     <illref class="html" idref="acspcl" />
-     <illref idref="ac1" class="html"/>
-     <illref idref="ac2" class="html"/>
-     <illref idref="ac3" class="html"/>
-    </data>
-   </section>
+   <data>
 
-   <section class="backmatter" id="crsumary">
-    <meta><title>Combat Rules Summary</title></meta>
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif"></instance>
+    </illustration>
 
-    <data>
-     <ol>
-      <li>Add your <typ class="attribute">COMBAT SKILL</typ> to any extra points given to you by your Kai Disciplines.</li>
-      <li>Subtract the <typ class="attribute">COMBAT SKILL</typ> of your enemy from this total. This number = Combat Ratio.</li>
-      <li>Pick number from <a idref="random">Random Number Table</a>.</li>
-      <li>Turn to the <a idref="crtable">Combat Results Table</a>.</li>
-      <li>Find your Combat Ratio on the top of the chart and cross-reference to the random number you have picked. (E indicates loss of <typ class="attribute">ENDURANCE</typ> points to Enemy. LW indicates loss of <typ class="attribute">ENDURANCE</typ> points to Lone Wolf.)</li>
-      <li>Continue the combat from Stage 3 until one character is dead. This is when <typ class="attribute">ENDURANCE</typ> points of either character fall to 0 or below.</li>
-     </ol>
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acdscplz.gif" width="385" height="246" class="html" mime-type="image/gif"></instance>
+    </illustration>
 
-     <section class="backmatter" id="smevazn">
-      <meta><title>To Evade Combat</title></meta>
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acchklst.gif" width="385" height="128" class="html" mime-type="image/gif" />
+    </illustration>
 
-      <data>
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acitems.gif" width="386" height="192" class="html" mime-type="image/gif"></instance>
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acbckpck.gif" width="386" height="113" class="html" mime-type="image/gif"></instance>
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif"></instance>
+    </illustration>
+
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance class="text">
+      <p>
+       <line><typ class="attribute">COMBAT SKILL</typ>: <ch.blankline></ch.blankline></line>
+       <line><typ class="attribute">ENDURANCE</typ>: <ch.blankline></ch.blankline></line>
+      </p>
+      <p>Grand Master Disciplines:</p>
        <ol>
-        <li>You may only do this when the text of the adventure offers you the opportunity.</li>
-        <li>You undertake one round of combat in the usual way. All points lost by the enemy are ignored, only Lone Wolf loses the <typ class="attribute">ENDURANCE</typ> points.</li>
-        <li>If the book offers the chance of taking evasive action in place of combat, it can be taken in the first round of combat or any subsequent round.</li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
        </ol>
-      </data>
-     </section>
+      <p>Bonus Disciplines:</p>
+       <ol>
+        <li><ch.blankline></ch.blankline>: 5th Discipline if you've completed one Lone Wolf Grand Master Adventure successfully</li>
+        <li><ch.blankline></ch.blankline>: 6th Discipline if you've completed two Lone Wolf Grand Master Adventures successfully</li>
+        <li><ch.blankline></ch.blankline>: 7th Discipline if you've completed three Lone Wolf Grand Master Adventures successfully</li>
+        <li><ch.blankline></ch.blankline>: 8th Discipline if you've completed four Lone Wolf Grand Master Adventures successfully</li>
+        <li><ch.blankline></ch.blankline>: 9th Discipline if you've completed five Lone Wolf Grand Master Adventures successfully</li>
+       </ol>
+      <p>Weapons:</p>
+       <ol>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+       </ol>
+      <p>Belt Pouch: <ch.blankline></ch.blankline></p>
+      <p>Meals: <ch.blankline></ch.blankline></p>
+      <p>Backpack Items:</p>
+       <ol>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+       </ol>
+      <p>Special Items:</p>
+       <ol>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+       </ol>
+     </instance>
+    </illustration>
+   </data>
+  </section>
 
-    </data>
-   </section>
+  <section class="backmatter" id="crsumary">
+   <meta><title>Combat Rules Summary</title></meta>
 
-   <section class="backmatter" id="crtable">
-    <meta><title>Combat Results Table</title></meta>
+   <data>
+    <ol>
+     <li>Add your <typ class="attribute">COMBAT SKILL</typ> to any extra points given to you by your Grand Master Disciplines.</li>
+     <li>Subtract the <typ class="attribute">COMBAT SKILL</typ> of your enemy from this total. This number = Combat Ratio.</li>
+     <li>Pick number from <a idref="random">Random Number Table</a>.</li>
+     <li>Turn to <a idref="crtable">Combat Results Table</a>.</li>
+     <li>Find your Combat Ratio on the top of the chart and cross-reference to random number you have picked. (E indicates loss of <typ class="attribute">ENDURANCE</typ> points to Enemy. LW indicates loss of <typ class="attribute">ENDURANCE</typ> points to Lone Wolf.)</li>
+     <li>Continue the combat from Stage 3 until one character is dead. This is when <typ class="attribute">ENDURANCE</typ> points of either character falls to 0 or below.</li>
+    </ol>
 
-    <data>
-     <illref idref="crtneg" class="html" />
-     <illref idref="crtneg" class="tex" />
-     <illref idref="crtpos" class="html" />
-     <illref idref="crtpos" class="tex" />
-    </data>
-   </section>
+    <section class="backmatter" id="smevazn">
+     <meta><title>To Evade Combat</title></meta>
 
-   <section class="backmatter" id="random">
-    <meta><title>Random Number Table</title></meta>
+     <data>
 
-    <data>
-     <illref idref="rnt" class="html"/>
-     <illref idref="rnt" class="tex"/>
-    </data>
-   </section>
+      <ol>
+       <li>You may only do this when the text of the adventure offers you the opportunity.</li>
+       <li>You undertake one round of combat in the usual way. All points lost by the enemy are ignored, only Lone Wolf loses the <typ class="attribute">ENDURANCE</typ> points.</li>
+       <li>If the book offers the chance of taking evasive action in place of combat, it can be taken in the first round of combat or any subsequent round.</li>
+      </ol>
+
+     </data>
+    </section>
+
+   </data>
+  </section>
+
+  <section class="backmatter" id="crtable">
+   <meta><title>Combat Results Table</title></meta>
+
+   <data>
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="crtneg.gif" width="386" height="472" class="html" mime-type="image/gif"></instance>
+     <instance src="crtneg.tex" width="380" height="500" class="tex"></instance>
+    </illustration>
+
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif"></instance>
+     <instance src="crtpos.tex" width="380" height="500" class="tex"></instance>
+    </illustration>
+
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance class="text">
+      <table summary="This table provides the endurance losses sustained by the hero and enemy as a result of combat.">
+       <caption>Combat Results with combined hero and enemy endurance losses</caption>
+
+       <colgroup span="1"></colgroup>
+       <colgroup span="13"></colgroup>
+
+       <tfoot>
+        <tr>
+         <td colspan="14">Combat results are given enemy's endurance loss first followed by the hero's endurance loss. For example, "12/0" means that the enemy loses 12 endurance points while the hero loses 0 endurance points. A combat result of "k" means that the combatant is killed. For example, "0/k" means that the enemy loses 0 endurance points while the hero is killed.</td>
+        </tr>
+       </tfoot>
+
+       <tbody>
+        <tr>
+         <th rowspan="2" scope="col">Random Number</th>
+         <th colspan="13" scope="colgroup">Combat Ratio</th>
+        </tr>
+
+        <tr>
+         <th scope="col" axis="combat_ratio">-11 or lower</th>
+         <th scope="col" axis="combat_ratio">-10/ -9</th>
+         <th scope="col" axis="combat_ratio">-8/ -7</th>
+         <th scope="col" axis="combat_ratio">-6/ -5</th>
+         <th scope="col" axis="combat_ratio">-4/ -3</th>
+         <th scope="col" axis="combat_ratio">-2/ -1</th>
+         <th scope="col" axis="combat_ratio">0</th>
+         <th scope="col" axis="combat_ratio">1/ 2</th>
+         <th scope="col" axis="combat_ratio">3/ 4</th>
+         <th scope="col" axis="combat_ratio">5/ 6</th>
+         <th scope="col" axis="combat_ratio">7/ 8</th>
+         <th scope="col" axis="combat_ratio">9/ 10</th>
+         <th scope="col" axis="combat_ratio">11 or higher</th>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">1</th>
+         <td>0/k</td>
+         <td>0/k</td>
+         <td>0/8</td>
+         <td>0/6</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/4</td>
+         <td>7/4</td>
+         <td>8/3</td>
+         <td>9/3</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">2</th>
+         <td>0/k</td>
+         <td>0/8</td>
+         <td>0/7</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/3</td>
+         <td>9/3</td>
+         <td>10/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">3</th>
+         <td>0/8</td>
+         <td>0/7</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/3</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">4</th>
+         <td>0/8</td>
+         <td>1/7</td>
+         <td>2/6</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+         <td>12/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">5</th>
+         <td>1/7</td>
+         <td>2/6</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+         <td>12/2</td>
+         <td>14/1</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">6</th>
+         <td>2/6</td>
+         <td>3/6</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/1</td>
+         <td>12/1</td>
+         <td>14/1</td>
+         <td>16/1</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">7</th>
+         <td>3/5</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/1</td>
+         <td>10/1</td>
+         <td>11/1</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">8</th>
+         <td>4/4</td>
+         <td>8/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/1</td>
+         <td>9/1</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">9</th>
+         <td>5/3</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/0</td>
+         <td>9/0</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">0</th>
+         <td>6/0</td>
+         <td>7/0</td>
+         <td>8/0</td>
+         <td>9/0</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+        </tr>
+       </tbody>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
+  <section class="backmatter" id="random">
+   <meta><title>Random Number Table</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
+     <instance src="random.tex" width="380" height="500" class="tex"></instance>
+     <instance class="text">
+      <table>
+       <tr>
+        <td>5</td>
+        <td>4</td>
+        <td>3</td>
+        <td>1</td>
+        <td>6</td>
+        <td>5</td>
+        <td>3</td>
+        <td>4</td>
+        <td>3</td>
+        <td>1</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>8</td>
+        <td>6</td>
+        <td>1</td>
+        <td>7</td>
+        <td>4</td>
+        <td>8</td>
+        <td>0</td>
+        <td>6</td>
+        <td>7</td>
+       </tr>
+       <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>6</td>
+        <td>4</td>
+        <td>5</td>
+        <td>0</td>
+        <td>4</td>
+        <td>9</td>
+        <td>1</td>
+        <td>4</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>3</td>
+        <td>8</td>
+        <td>6</td>
+        <td>1</td>
+        <td>2</td>
+        <td>8</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>7</td>
+        <td>9</td>
+        <td>4</td>
+        <td>2</td>
+        <td>6</td>
+        <td>0</td>
+        <td>2</td>
+        <td>9</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>9</td>
+        <td>5</td>
+        <td>7</td>
+        <td>8</td>
+        <td>5</td>
+        <td>7</td>
+        <td>5</td>
+        <td>8</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>4</td>
+        <td>6</td>
+        <td>0</td>
+        <td>5</td>
+        <td>1</td>
+        <td>2</td>
+        <td>6</td>
+        <td>3</td>
+        <td>7</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>8</td>
+        <td>2</td>
+        <td>5</td>
+        <td>8</td>
+        <td>2</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>3</td>
+        <td>0</td>
+        <td>9</td>
+        <td>8</td>
+        <td>6</td>
+        <td>5</td>
+        <td>4</td>
+        <td>7</td>
+        <td>1</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>6</td>
+        <td>0</td>
+        <td>6</td>
+        <td>7</td>
+        <td>4</td>
+        <td>1</td>
+        <td>2</td>
+        <td>5</td>
+        <td>0</td>
+       </tr>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
 
    <section class="backmatter" id="errata">
     <meta><title>Errata</title></meta>
@@ -4877,8 +5326,24 @@ Initial revision
 
       <data>
 
-       <p>(<a idref="sect164">164</a>) Replaced <quote>nadziranim</quote> with <quote>Nadziranim</quote>.</p>
+       <p>(<a idref="title">Blurb</a>) Replaced <quote>fire-eating</quote> with <quote>fire-breathing</quote>. Replaced <quote>en route</quote> with <quote><foreign xml:lang="fr">en route</foreign></quote>.</p>
 
+       <p>(<a idref="gamerulz">The Game Rules</a>) Removed <quote>that you will find in the front of this book. For ease of use, and for further adventuring, it is recommended that you photocopy these pages</quote> and <quote>on the last page of this book</quote>. Replaced both occurrences of <quote>ie</quote> with <quote>i.e.</quote>. Replaced <quote>fall to zero</quote> with <quote>fall to zero or below</quote>. Replaced each occurrence of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+
+       <p>(<a idref="discplnz">Grand Master Disciplines</a>) Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+
+       <p>(<a idref="equipmnt">Equipment</a>) Replaced each occurrence of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+
+       <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed <quote>on the inside back cover of this book</quote>. Replaced <quote>on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>, <quote>Lone Wolf (<typ class="attribute">COMBAT SKILL</typ> 32)</quote> with <quote>Lone Wolf (<typ class="attribute">COMBAT SKILL</typ> 27)</quote>, and <quote>adds 3 points</quote> with <quote>adds 8 points</quote>. Replaced <quote>points reduced</quote> with <quote>points possibly reduced</quote>. Replaced <quote>to zero</quote> with <quote>to zero or below</quote>. Replaced <quote>at which point the one with the zero score is declared dead.</quote> with <quote>at which point that combatant is declared dead.</quote>.</p>
+
+       <p>(<a idref="levels">Levels of Kai Grand Mastership</a>) Replaced each occurrence of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+
+       <p>(<a idref="imprvdsc">Improved Grand Master Disciplines</a>) Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+
+       <p>(<a idref="kaiwisdm">Grand Master<ch.apos/>s Wisdom</a>) Replaced each occurrence of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+
+       <p>(<a idref="sect164">164</a>) Replaced <quote>nadziranim</quote> with <quote>Nadziranim</quote>.</p>
+       <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>, <quote>top of chart</quote> with <quote>top of the chart</quote> and <quote>fall to 0</quote> with <quote>falls to 0 or below</quote>. Replaced <quote>Kai Disciplines</quote> with <quote>Grand Master Disciplines</quote>.</p>
       </data>
      </section>
     </data>
@@ -4887,9 +5352,8 @@ Initial revision
    <section class="backmatter" id="footnotz">
     <meta><title>Footnotes</title></meta>
 
-    <data>
+    <data/>
 
-    </data>
    </section>
 
    <section class="backmatter" id="illstrat">
@@ -4901,112 +5365,63 @@ Initial revision
      <section class="backmatter" id="primill">
       <meta><title>Primary Illustrations</title></meta>
 
-      <illustrations>
-
-       <illgroup idref="action" class="visible">
-        <illustration id="acstats" class="inline">
-         <meta>
-          <creator>JC Alvarez/Jonathan Blake</creator>
-         </meta>
-         <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif" />
-        </illustration>
-
-        <illustration id="acdscplz" class="inline">
-         <meta>
-          <creator>JC Alvarez/Jonathan Blake</creator>
-         </meta>
-         <instance src="acdscplz.gif" width="386" height="234" class="html" mime-type="image/gif" />
-        </illustration>
-
-        <illustration id="acitems" class="inline">
-         <meta>
-          <creator>JC Alvarez/Jonathan Blake</creator>
-         </meta>
-         <instance src="acitems.gif" width="386" height="161" class="html" mime-type="image/gif" />
-        </illustration>
-
-        <illustration id="acbckpck" class="inline">
-         <meta>
-          <creator>JC Alvarez/Jonathan Blake</creator>
-         </meta>
-         <instance src="acbckpck.gif" width="386" height="137" class="html" mime-type="image/gif" />
-        </illustration>
-
-        <illustration id="acspcl" class="inline">
-         <meta>
-          <creator>JC Alvarez/Jonathan Blake</creator>
-         </meta>
-         <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif" />
-        </illustration>
-
-        <illustration id="ac1" class="inline">
-         <meta>
-          <creator>Jonathan Blake</creator>
-         </meta>
-         <instance src="ac1.tex" width="400" height="500" class="tex" />
-        </illustration>
-
-        <illustration id="ac2" class="inline">
-         <meta>
-          <creator>Jonathan Blake</creator>
-         </meta>
-         <instance src="ac2.tex" width="400" height="500" class="tex" />
-        </illustration>
-
-        <illustration id="ac3" class="inline">
-         <meta>
-          <creator>Jonathan Blake</creator>
-         </meta>
-         <instance src="ac3.tex" width="400" height="500" class="tex" />
-        </illustration>
-       </illgroup>
-
-       <illgroup idref="crtable" class="hidden">
-        <illustration id="crtneg" class="inline">
-         <meta>
-          <creator>Jonathan Blake</creator>
-         </meta>
-        <instance src="crtneg.gif" width="386" height="472" class="html" mime-type="image/gif" />
-        <instance src="crtneg.tex" width="380" height="500" class="tex" />
-        </illustration>
-
-        <illustration id="crtpos" class="inline">
-         <meta>
-          <creator>Jonathan Blake</creator>
-         </meta>
-         <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif" />
-         <instance src="crtpos.tex" width="380" height="500" class="tex" />
-        </illustration>
-       </illgroup>
-
-       <illgroup class="hidden">
-        <illustration id="rnt" class="inline">
-         <meta>
-          <creator>Jonathan Blake</creator>
-         </meta>
-         <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif" />
-         <instance src="random.tex" width="380" height="500" class="tex" />
-        </illustration>
-       </illgroup>
-      </illustrations>
-
-      <data/>
+      <data>
+       <ul class="unbulleted">
+        <li>Illustration I (<a idref="sect26">Section 26</a>)</li>
+        <li>Illustration II (<a idref="sect31">Section 31</a>)</li>
+        <li>Illustration III (<a idref="sect50">Section 50</a>)</li>
+        <li>Illustration IV (<a idref="sect72">Section 72</a>)</li>
+        <li>Illustration V (<a idref="sect80">Section 80</a>)</li>
+        <li>Illustration VI (<a idref="sect100">Section 100</a>)</li>
+        <li>Illustration VII (<a idref="sect135">Section 135</a>)</li>
+        <li>Illustration VIII (<a idref="sect144">Section 144</a>)</li>
+        <li>Illustration IX (<a idref="sect157">Section 157</a>)</li>
+        <li>Illustration X (<a idref="sect172">Section 172</a>)</li>
+        <li>Illustration XI (<a idref="sect190">Section 190</a>)</li>
+        <li>Illustration XII (<a idref="sect200">Section 200</a>)</li>
+        <li>Illustration XIII (<a idref="sect219">Section 219</a>)</li>
+        <li>Illustration XIV (<a idref="sect240">Section 240</a>)</li>
+        <li>Illustration XV (<a idref="sect250">Section 250</a>)</li>
+        <li>Illustration XVI (<a idref="sect270">Section 270</a>)</li>
+        <li>Illustration XVII (<a idref="sect289">Section 289</a>)</li>
+        <li>Illustration XVIII (<a idref="sect318">Section 318</a>)</li>
+        <li>Illustration XIX (<a idref="sect333">Section 333</a>)</li>
+        <li>Illustration XX (<a idref="sect346">Section 346</a>)</li>
+        <li><a idref="map">The Lands and Territories of Central Northern Magnamund</a></li>
+        <li><a idref="action">Action Chart</a></li>
+       </ul>
+      </data>
      </section>
 
      <section class="backmatter" id="secill">
       <meta><title>Secondary Illustrations</title></meta>
 
-      <illustrations>
-
-      </illustrations>
-      <data/>
+      <data>
+       <ul class="unbulleted">
+        <li><a idref="equipmnt">Equipment</a></li>
+        <li><a idref="discplnz">Kai Disciplines</a></li>
+        <li><a idref="sect1">Section 1</a></li>
+        <li><a idref="sect36">Section 36</a></li>
+        <li><a idref="sect40">Section 40</a></li>
+        <li><a idref="sect60">Section 60</a></li>
+        <li><a idref="sect75">Section 75</a></li>
+        <li><a idref="sect101">Section 101</a></li>
+        <li><a idref="sect133">Section 133</a></li>
+        <li><a idref="sect140">Section 140</a></li>
+        <li><a idref="sect154">Section 154</a></li>
+        <li><a idref="sect178">Section 178</a></li>
+        <li><a idref="sect188">Section 188</a></li>
+        <li><a idref="sect192">Section 192</a></li>
+        <li><a idref="sect238">Section 238</a></li>
+        <li><a idref="sect317">Section 317</a></li>
+        <li><a idref="sect323">Section 323</a></li>
+        <li><a idref="sect350">Section 350</a></li>
+       </ul>
+      </data>
      </section>
-    </data>
-   </section>
 
    &inclusion.project.aon.license;
 
  </data>
 </section>
-
 </gamebook>
