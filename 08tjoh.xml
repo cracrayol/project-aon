@@ -1354,7 +1354,10 @@
       <p>Shafts of sunlight break through the slate-grey cloud, and the rain eases off and finally stops. You ride across the rolling valley floor towards the River Phoen until the track stops at a ramshackle house perched precariously on the river bank. An old wooden jetty juts out from the side of the house, its platform almost submerged in the rain-swollen river. A notice board standing in front of the house reads:</p>
       <signpost>
        <p>FERRY HOUSE LANDING</p>
-       <p>Passenger barges to Tharro<ch.emdash/>embark from this jetty.<br />Barges to Phoena<ch.emdash/>embark from opposite bank.</p>
+       <p>
+        <line>Passenger barges to Tharro<ch.emdash/>embark from this jetty.</line>
+	<line>Barges to Phoena<ch.emdash/>embark from opposite bank.</line>
+       </p>
        <p>NO CATTLE, WAGONS, CARAVANS OR HERD ANIMALS UNLESS BY SPECIAL ARRANGEMENT</p>
       </signpost>
       <choice idref="sect299">If you wish to wait here for a barge to Tharro, <link-text>turn to 299</link-text>.</choice>
@@ -2714,9 +2717,15 @@
       <blockquote>
        <p><strong>Notice of Death</strong></p>
        <p>Kezoor the Necromancer</p>
-       <p>Renegade Shaman of Mogaruith.<br />Leader of the forbidden sect of Dazudskul.</p>
+       <p>
+        <line>Renegade Shaman of Mogaruith.</line>
+	<line>Leader of the forbidden sect of Dazudskul.</line>
+       </p>
        <p>It is hereby proclaimed by lawful authority that in just retribution for vile acts of black sorcery perpetrated throughout the Freelands of Talestria, a bounty of TEN THOUSAND LUNE is offered for the head of Kezoor the Necromancer.</p>
-       <p class="right">By order of Queen Evaine of Talestria<br />MS 5060</p>
+       <p class="right">
+        <line>By order of Queen Evaine of Talestria</line>
+	<line>MS 5060</line>
+      </p>
       </blockquote>
       <p><quote>This could be our chance to make a fortune,</quote> whispers Trost. <quote>Help me take him and we<ch.apos/>ll split the reward. Agreed?</quote></p>
       <choice idref="sect65">If you wish to help Trost attack the necromancer, <link-text>turn to 65</link-text>.</choice>
