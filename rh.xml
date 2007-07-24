@@ -1,75 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE gamebook SYSTEM "gamebook.dtd" [
- <!ENTITY % xhtml.characters SYSTEM "htmlchar.mod">
- <!ENTITY % latex.characters SYSTEM "ltexchar.mod">
- %xhtml.characters;
-
  <!ENTITY % general.links SYSTEM "genlink.mod">
  %general.links;
  <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
  %xhtml.links;
+
+ <!ENTITY % general.inclusions SYSTEM "geninc.mod">
+ %general.inclusions;
 ]>
 
-<gamebook xml:lang="en-UK" version="0.11">
-
-<!--
-
-$Id$
-$Log$
-Revision 1.2  2005/03/10 18:21:51  jonathan.blake
-Removed link to old staff email address.
-
-Revision 1.1  2004/11/10 06:37:11  jonathan.blake
-Initial Freepository revision
-
-
-//// RCS Revision Log ////
-
-Revision 1.7  2003/01/27 22:11:39  jblake
-Checkin prior to global footnote change
-
-Revision 1.6  2003/01/15 16:50:00  jdougan
-Checkin of Jeff Dougan's work.
-
-Revision 1.5  2003/01/15 16:43:50  jblake
-Small changes.
-
-Revision 1.4  2003/01/12 19:25:04  jblake
-Back to a working copy.
-
-Revision 1.3  2003/01/12 19:17:39  jblake
-This checkin is meant to fake the published release of
-the Rules Handbook made on 3 Jan 2003.
-
-Revision 1.2  2003/01/12 19:12:54  jblake
-Lots of changes. Should have checked in much earlier.
-
-Revision 1.1  2002/10/15 23:31:08  jblake
-Initial revision
-
-//////////////////////////
-
-To Do:
-
-* Add entries for:
-  - Willpower
-  - Wizard's Staff
-  - Nobles
-
-* make links more ubiquitous including
-
-combatskill
-endurance
-*willpower
-weapons
-backpack
-currency
-*noble
-specialitems
-*herb pouch
-*wizardsstaff
-
--->
+<gamebook xml:lang="en-UK" version="0.12">
 
 <meta>
  <title>Rules Handbook</title>
@@ -83,9 +23,12 @@ specialitems
  <description class="publication">
   <p>Published by <a href="&link.project.website;">Project Aon</a>.</p>
  </description>
- <rights class="copyrights">Copyright &copy; 2002-2003 The Project Aon Team.</rights>
+ <rights class="copyrights">Copyright <ch.copy/> 2002<ch.endash/>2003 The Project Aon Team.</rights>
  <rights class="license-notification">
-  <p>Copyright &copy; 2002-2003 Project Aon.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+  <p>
+   <line>Copyright <ch.copy/> 2002<ch.endash/>2003 Project Aon.</line>
+   <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+  </p>
  </rights>
 </meta>
 
@@ -129,7 +72,13 @@ specialitems
 
     <dl>
      <dt>Contributors</dt>
-      <dd>Jonathan Blake<br />Jeff Dougan<br />Joe Grocott-James<br />Simon Osborne<br />Thomas Wolmer</dd>
+      <dd>
+       <line>Jonathan Blake</line>
+       <line>Jeff Dougan</line>
+       <line>Joe Grocott-James</line>
+       <line>Simon Osborne</line>
+       <line>Thomas Wolmer</line>
+      </dd>
     </dl>
 
    </data>
@@ -144,20 +93,20 @@ specialitems
 
    <data>
     <p>In writing the Lone Wolf series, Joe Dever created a system of rules that is both simple and satisfying in its completeness. The rules seek to find a balance between being simple enough to learn in one sitting and being able to deal with situations encountered by the player in a reasonable, realistic and predictable way.</p>
-    <p>However, the rules for the Lone Wolf books are not perfect, nor are they perfectly understandable to the first time reader. Many new readers are intimidated by the rules&apos; level of complexity, skip over them and try to forget they ever existed. Although the Lone Wolf books can be enjoyed without following the rules, the reader will find greater enjoyment if the rules are understood and applied. For readers who understand the basic rules, there are inconsistencies and situations not covered by the rules. These inconsistencies and omissions can be frustrating for the conscientious.</p>
+    <p>However, the rules for the Lone Wolf books are not perfect, nor are they perfectly understandable to the first time reader. Many new readers are intimidated by the rules<ch.apos/> level of complexity, skip over them and try to forget they ever existed. Although the Lone Wolf books can be enjoyed without following the rules, the reader will find greater enjoyment if the rules are understood and applied. For readers who understand the basic rules, there are inconsistencies and situations not covered by the rules. These inconsistencies and omissions can be frustrating for the conscientious.</p>
     <p>This Rule Handbook is intended to help both groups: new readers encountering the rules for the first time, and experienced readers encountering confusion about how to apply the rules in a particular situation. It is organized with the intention of helping you find the information you need when you need it.</p>
-    <p>This booklet is divided up into sections based on the different series of gamebooks written and edited by Joe Dever: the <a idref="kairulz">Lone Wolf Kai series</a> (books 1&endash;5), the <a idref="mkrulz">Lone Wolf Magnakai series</a> (books 6&endash;12), the <a idref="gmrulz">Lone Wolf Grand Master series</a> (books 13&endash;20), the <a idref="norulz">Lone Wolf New Order series</a> (books 21&endash;28), the <a idref="wrldrulz">World of Lone Wolf series</a> and the <a idref="fwrulz">Freeway Warrior series</a>. Each section goes through the rules sequentially as presented in the books.</p>
+    <p>This booklet is divided up into sections based on the different series of gamebooks written and edited by Joe Dever: the <a idref="kairulz">Lone Wolf Kai series</a> (books 1<ch.endash/>5), the <a idref="mkrulz">Lone Wolf Magnakai series</a> (books 6<ch.endash/>12), the <a idref="gmrulz">Lone Wolf Grand Master series</a> (books 13<ch.endash/>20), the <a idref="norulz">Lone Wolf New Order series</a> (books 21<ch.endash/>28), the <a idref="wrldrulz">World of Lone Wolf series</a> and the <a idref="fwrulz">Freeway Warrior series</a>. Each section goes through the rules sequentially as presented in the books.</p>
     <p>A composite version of the rules for each series is written from beginning to end in its section. This composite appears without indentation. Where comment is necessary, it is inserted in indented text and <em>italic typeface</em>. For example:</p>
     <hr />
     <p>You keep a record of your adventure on the <a idref="topics-actionchart">Action Chart</a>.</p>
     <blockquote>
-     <p><em> The <a idref="topics-actionchart">Action Chart</a> is a set of tables which contain all information about your character such as items carried, skills possessed, etc. The <a idref="topics-actionchart">Action Chart</a> can take many forms. You may use a specialized program like StatsKeeper to help you keep track of character statistics. You may use a spreadsheet document. You may print out the <a idref="topics-actionchart">Action Chart</a> that appears in the Internet Editions of the books and fill in the blanks. As you become familiar with the rules, you may want to create your own by hand on paper. The method you choose doesn&apos;t matter as long as you&apos;re comfortable with it.</em></p>
+     <p><em> The <a idref="topics-actionchart">Action Chart</a> is a set of tables which contain all information about your character such as items carried, skills possessed, etc. The <a idref="topics-actionchart">Action Chart</a> can take many forms. You may use a specialized program like StatsKeeper to help you keep track of character statistics. You may use a spreadsheet document. You may print out the <a idref="topics-actionchart">Action Chart</a> that appears in the Internet Editions of the books and fill in the blanks. As you become familiar with the rules, you may want to create your own by hand on paper. The method you choose doesn<ch.apos/>t matter as long as you<ch.apos/>re comfortable with it.</em></p>
     </blockquote>
     <hr />
     <p>Links are also provided to helpful information in the <a idref="topics">Topical Guide</a>. For the first time reader, as you read through the rules, you can refer to this booklet to find explanations of the things you read in the order which you read them.</p>
     <p>In areas where there is more than one reasonable way to interpret rules, we will present justifications for the most reasonable interpretations and let you decide for yourself. The Rules Handbook is not here to dictate the One True Way. Find what you are comfortable with and follow it.</p>
     <p>The <a idref="topics">Topical Guide</a> which follows the several rules composites is an alphabetical listing of topics in need of clarification.</p>
-    <p>We hope that you find this booklet helpful in better understanding the rules and finding greater enjoyment in Joe Dever&apos;s gamebooks. If this booklet doesn&apos;t answer all your questions, please <a href="&link.staff.contact;">contact us</a> with your question.</p>
+    <p>We hope that you find this booklet helpful in better understanding the rules and finding greater enjoyment in Joe Dever<ch.apos/>s gamebooks. If this booklet doesn<ch.apos/>t answer all your questions, please <a href="&link.staff.contact;">contact us</a> with your question.</p>
     <p><strong>The Project Aon Team</strong></p>
     <ul>
      <li><a idref="kairulz">The [Kai] Game Rules</a></li>
@@ -180,10 +129,10 @@ specialitems
 
    <data>
     <blockquote>
-     <p><em>Theses rules do not come from any particular book. They are a generic set of rules designed to help new readers familiarize themselves with the rules&emdash;not walk the reader through a particular book. The details of the rules in each book will differ from what you find here.</em></p>
+     <p><em>Theses rules do not come from any particular book. They are a generic set of rules designed to help new readers familiarize themselves with the rules<ch.emdash/>not walk the reader through a particular book. The details of the rules in each book will differ from what you find here.</em></p>
     </blockquote>
     <p>You keep a record of your adventure on the <a idref="topics-actionchart">Action Chart</a>.</p>
-    <p>During your training as a Kai Lord you have developed fighting prowess&emdash;<a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and physical stamina&emdash;<a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it on to the <a idref="topics-randomnumbertable">Random Number Table</a>. If you pick 0 it counts as zero.</p>
+    <p>During your training as a Kai Lord you have developed fighting prowess<ch.emdash/><a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and physical stamina<ch.emdash/><a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it on to the <a idref="topics-randomnumbertable">Random Number Table</a>. If you pick 0 it counts as zero.</p>
     <blockquote>
      <p><em>If you have already completed an adventure with your character, you should not pick his <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> again. You should use those scores already picked.</em></p>
     </blockquote>
@@ -295,10 +244,10 @@ specialitems
         </ul>
         <p>The fact that you are skilled with a <a idref="topics-weapons">Weapon</a> does not mean you set out on the adventure carrying that particular <a idref="topics-weapons">Weapon</a>. However, you will have opportunities to acquire <a idref="topics-weapons">Weapons</a> in the course of your adventures. You cannot carry more than 2 <a idref="topics-weapons">Weapons</a>.</p>
         <blockquote>
-         <p><em>Possessing Weaponskill doesn&apos;t <strong>necessarily</strong> mean that you start out with that <a idref="topics-weapons">Weapon</a>, but you might.</em></p>
+         <p><em>Possessing Weaponskill doesn<ch.apos/>t <strong>necessarily</strong> mean that you start out with that <a idref="topics-weapons">Weapon</a>, but you might.</em></p>
         </blockquote>
 
-        <p>You cannot carry more than 2 <a idref="topics-weapons">Weapons</a>. If you choose this skill, write <quote>Weaponskill in &blankline; + 2 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points if this <a idref="topics-weapons">Weapon</a> carried</quote> on your <a idref="topics-actionchart">Action Chart</a>.</p>
+        <p>You cannot carry more than 2 <a idref="topics-weapons">Weapons</a>. If you choose this skill, write <quote>Weaponskill in <ch.blankline/> + 2 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points if this <a idref="topics-weapons">Weapon</a> carried</quote> on your <a idref="topics-actionchart">Action Chart</a>.</p>
        </data>
       </section>
 
@@ -373,7 +322,7 @@ specialitems
        </meta>
 
        <data>
-        <p>Now that you have your equipment, the following list shows you how it is carried. You don&apos;t need to make notes but you can refer back to this list in the course of your adventure.</p>
+        <p>Now that you have your equipment, the following list shows you how it is carried. You don<ch.apos/>t need to make notes but you can refer back to this list in the course of your adventure.</p>
        <blockquote>
         <p><em>(see <a idref="topics">Topical Guide</a> for details about a particular item)</em></p>
        </blockquote>
@@ -441,21 +390,21 @@ specialitems
      </meta>
 
      <data>
-      <p>There will be occasions on your adventure when you have to fight an enemy. The enemy&apos;s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points are given in the text. Lone Wolf&apos;s aim in the combat is to kill the enemy by reducing his <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points to zero while losing as few <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points as possible himself.</p>
-      <p>At the start of a combat, enter Lone Wolf&apos;s and the enemy&apos;s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points in the appropriate boxes on the Combat Record section of your <a idref="topics-actionchart">Action Chart</a>.</p>
+      <p>There will be occasions on your adventure when you have to fight an enemy. The enemy<ch.apos/>s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points are given in the text. Lone Wolf<ch.apos/>s aim in the combat is to kill the enemy by reducing his <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points to zero while losing as few <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points as possible himself.</p>
+      <p>At the start of a combat, enter Lone Wolf<ch.apos/>s and the enemy<ch.apos/>s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points in the appropriate boxes on the Combat Record section of your <a idref="topics-actionchart">Action Chart</a>.</p>
       <ol class="paragraphed">
        <li><p>Add any extra points gained through your Kai Disciplines to your current <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> total.</p></li>
        <li>
         <p>Subtract the <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> of your enemy from this total. The result is your <a idref="topics-combatratio">Combat Ratio</a>. Enter it on the <a idref="topics-actionchart">Action Chart</a>.</p>
         <p>Example</p>
         <p>Lone Wolf (<a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> 15) is ambushed by a Winged Devil (<a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> 20). He is not given the opportunity to evade combat, but must stand and fight as the creature swoops down on him. Lone Wolf has the Kai Discipline of Mindblast, so he adds 2 points to his <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a>, giving a total <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> of 17.</p>
-        <p>He subtracts the Winged Devil&apos;s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> from his own, giving a <a idref="topics-combatratio">Combat Ratio</a> of -3 (17 - 20 = -3). -3 is noted on the <a idref="topics-actionchart">Action Chart</a> as the <a idref="topics-combatratio">Combat Ratio</a>.</p>
+        <p>He subtracts the Winged Devil<ch.apos/>s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> from his own, giving a <a idref="topics-combatratio">Combat Ratio</a> of <ch.minus/>3 (17 <ch.minus/> 20 = <ch.minus/>3). <ch.minus/>3 is noted on the <a idref="topics-actionchart">Action Chart</a> as the <a idref="topics-combatratio">Combat Ratio</a>.</p>
        </li>
        <li><p>When you have your <a idref="topics-combatratio">Combat Ratio</a>, pick a number from the <a idref="topics-randomnumbertable">Random Number Table</a>.</p></li>
        <li>
         <p>Turn to the <a idref="topics-combatresultstable">Combat Results Table</a>. Along the top of the chart are shown the <a idref="topics-combatratio">Combat Ratio</a> numbers. Find the number that is the same as your <a idref="topics-combatratio">Combat Ratio</a> and cross-reference it with the random number that you have picked (the random numbers appear on the side of the chart). You now have the number of <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points lost by both Lone Wolf and his enemy in this round of combat. (E represents points lost by the enemy; LW represents points lost by Lone Wolf.)</p>
         <p>Example</p>
-        <p>The <a idref="topics-combatratio">Combat Ratio</a> between Lone Wolf and Winged Devil has been established as -3. If the number taken from the <a idref="topics-randomnumbertable">Random Number Table</a> is a 6, then the result of the first round of combat is:</p>
+        <p>The <a idref="topics-combatratio">Combat Ratio</a> between Lone Wolf and Winged Devil has been established as <ch.minus/>3. If the number taken from the <a idref="topics-randomnumbertable">Random Number Table</a> is a 6, then the result of the first round of combat is:</p>
         <ul>
          <li>Lone Wolf loses 3 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points</li>
          <li>Winged Devil loses 6 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points</li>
@@ -494,10 +443,10 @@ specialitems
 
    <data>
     <blockquote>
-     <p><em>Theses rules do not come from any particular book. They are a generic set of rules designed to help new readers familiarize themselves with the rules&emdash;not walk the reader through a particular book. The details of the rules in each book will differ from what you find here.</em></p>
+     <p><em>Theses rules do not come from any particular book. They are a generic set of rules designed to help new readers familiarize themselves with the rules<ch.emdash/>not walk the reader through a particular book. The details of the rules in each book will differ from what you find here.</em></p>
     </blockquote>
     <p>You keep a record of your adventure on the <a idref="topics-actionchart">Action Chart</a>.</p>
-    <p>During your training as a Kai Master you have developed fighting prowess&emdash;<a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and physical stamina&emdash;<a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it on to the <a idref="topics-randomnumbertable">Random Number Table</a>. If you pick 0 it counts as zero.</p>
+    <p>During your training as a Kai Master you have developed fighting prowess<ch.emdash/><a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and physical stamina<ch.emdash/><a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it on to the <a idref="topics-randomnumbertable">Random Number Table</a>. If you pick 0 it counts as zero.</p>
     <blockquote>
      <p><em>If you have already completed an adventure with your character, you should not pick his <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> again. You should use those scores already picked.</em></p>
     </blockquote>
@@ -508,7 +457,7 @@ specialitems
     <blockquote>
      <p><em>You may also carry over any <a idref="topics-backpack">Backpack Items</a> and <a idref="topics-goldcrown">Gold Crowns</a> that you possessed at the end of the last adventure. Some readers feel that you should not carry over Meals since they are perishable, but this is not hinted at in the rules so this is optional.</em></p>
     </blockquote>
-    <p>You many choose one bonus Magnakai Discipline to add to your <a idref="topics-actionchart">Action Chart</a> for every Lone Wolf Magnakai adventure you successfully complete (Books 6&endash;12).</p>
+    <p>You many choose one bonus Magnakai Discipline to add to your <a idref="topics-actionchart">Action Chart</a> for every Lone Wolf Magnakai adventure you successfully complete (Books 6<ch.endash/>12).</p>
     <blockquote>
      <p><em>You may add <em>one</em> Magnakai Discipline if you have completed a previous Magnakai adventure successfully. In other words, you earn one new Magnakai Discipline each time you complete a Magnakai adventure successfully.</em></p>
     </blockquote>
@@ -523,15 +472,15 @@ specialitems
      <data>
       <p>During your training as a Kai Lord, and in the course of the adventures that led to the discovery of <cite>The Book of the Magnakai</cite>, you have mastered all ten of the basic warrior skills known as the Kai Disciplines.</p>
       <blockquote>
-       <p><em>If you have completed the first five books of the Lone Wolf series, you can continue to use the Kai Disciplines acquired in those books. (see the following Lone Wolf Club Newsletters: <a idref="lwcn1987summer">Summer Special 1987</a>, <a idref="lwcn10">No. 10</a> and <a idref="lwcn28">No. 28</a>) If you have not completed all of the first five books, use your personal judgement whether or not you should benefit from Kai Disciplines which you didn&apos;t choose in the books you did complete. If you have completed all five books of the Kai series, remember that you now possess all ten Kai Disciplines including the last one that you hadn&apos;t chosen previously. If that left over Discipline was Weaponskill, remember to chose a <a idref="topics-weapons">Weapon</a> with which you are skilled as detailed in the Kai series books.</em></p>
-       <p><em>Some Kai Disciplines have measureable bonuses that are useful to you in the Magnakai series. Other Kai Disciplines have less tangible effects and are assumed by the book (e.g. the Kai Discipline of Camouflage doesn&apos;t have a measureable bonus and the books assume you have this skill). The Kai Disciplines that are useful in the Magnakai series are:</em></p>
+       <p><em>If you have completed the first five books of the Lone Wolf series, you can continue to use the Kai Disciplines acquired in those books. (see the following Lone Wolf Club Newsletters: <a idref="lwcn1987summer">Summer Special 1987</a>, <a idref="lwcn10">No. 10</a> and <a idref="lwcn28">No. 28</a>) If you have not completed all of the first five books, use your personal judgement whether or not you should benefit from Kai Disciplines which you didn<ch.apos/>t choose in the books you did complete. If you have completed all five books of the Kai series, remember that you now possess all ten Kai Disciplines including the last one that you hadn<ch.apos/>t chosen previously. If that left over Discipline was Weaponskill, remember to chose a <a idref="topics-weapons">Weapon</a> with which you are skilled as detailed in the Kai series books.</em></p>
+       <p><em>Some Kai Disciplines have measureable bonuses that are useful to you in the Magnakai series. Other Kai Disciplines have less tangible effects and are assumed by the book (e.g. the Kai Discipline of Camouflage doesn<ch.apos/>t have a measureable bonus and the books assume you have this skill). The Kai Disciplines that are useful in the Magnakai series are:</em></p>
        <ul>
-        <li><em>Hunting&emdash;may be used to automatically find food in fertile areas, but still doesn&apos;t function in areas of wasteland or desert.</em></li>
-        <li><em><a idref="topics-healing">Healing</a>&emdash;may be used to heal 1 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point while not in combat.</em></li>
-        <li><em>Weaponskill&emdash;adds 2 points to your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> if using the <a idref="topics-weapons">Weapon</a> with which you are skilled.</em></li>
-        <li><em>Mindblast&emdash;adds 2 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points to your total when used against an opponent who isn&apos;t immune.</em></li>
+        <li><em>Hunting<ch.emdash/>may be used to automatically find food in fertile areas, but still doesn<ch.apos/>t function in areas of wasteland or desert.</em></li>
+        <li><em><a idref="topics-healing">Healing</a><ch.emdash/>may be used to heal 1 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point while not in combat.</em></li>
+        <li><em>Weaponskill<ch.emdash/>adds 2 points to your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> if using the <a idref="topics-weapons">Weapon</a> with which you are skilled.</em></li>
+        <li><em>Mindblast<ch.emdash/>adds 2 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points to your total when used against an opponent who isn<ch.apos/>t immune.</em></li>
        </ul>
-       <p><em>These bonuses are replaced by their Magnakai Discipline equivalent (e.g. acquiring Weaponmastery in your Weaponskill <a idref="topics-weapons">Weapon</a> gives you a +3 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> bonus&emdash;not +5).</em></p>
+       <p><em>These bonuses are replaced by their Magnakai Discipline equivalent (e.g. acquiring Weaponmastery in your Weaponskill <a idref="topics-weapons">Weapon</a> gives you a +3 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> bonus<ch.emdash/>not +5).</em></p>
       </blockquote>
       <p>After studying <cite>The Book of the Magnakai</cite>, you have also reached the rank of Kai Master Superior, which means that you have learnt <em>three</em> of the Magnakai Disciplines listed below. It is up to you to choose which three skills these are. As all of the Magnakai Disciplines will be of use to you at some point on your adventure, pick your three with care. The correct use of a Magnakai Discipline at the right time can save your life.</p>
       <blockquote>
@@ -561,7 +510,7 @@ specialitems
         </blockquote>
         <p>The fact that you are skilled with three <a idref="topics-weapons">Weapons</a> does not mean that you begin the adventure carrying any of them. However, you will have opportunities to acquire <a idref="topics-weapons">Weapons</a> during your adventure. For every Lone Wolf book that you complete in the Magnakai series, you may add an additional <a idref="topics-weapons">Weapon</a> to your list.</p>
         <blockquote>
-         <p><em>Possessing Weaponmastery doesn&apos;t <strong>necessarily</strong> mean that you start out with that <a idref="topics-weapons">Weapon</a>, but you might.</em></p>
+         <p><em>Possessing Weaponmastery doesn<ch.apos/>t <strong>necessarily</strong> mean that you start out with that <a idref="topics-weapons">Weapon</a>, but you might.</em></p>
         </blockquote>
         <p>If you choose this skill, write <quote>Weaponmastery: + 3 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points</quote> on your <a idref="topics-actionchart">Action Chart</a>, and tick your chosen <a idref="topics-weapons">Weapons</a> on the <a idref="topics-weapons">Weapons</a> list. You cannot carry more than two <a idref="topics-weapons">Weapons</a>.</p>
         <blockquote>
@@ -626,7 +575,7 @@ specialitems
          <p><em>Improvements: (see <a idref="mkimprv">Improved Magnakai Disciplines</a> and <a idref="mklevels">Levels of Magnakai Training</a>)</em></p>
          <dl class="paragraphed">
           <dt><em>Tutelary (5 Disciplines)</em></dt>
-           <dd><p><em>Tutelaries are able to increase the effectiveness of their skill when hiding from an enemy by drawing the enemy&apos;s attention to a place other than that in which they are hiding. The effectiveness of this ability increases as a Kai Master rises in rank.</em></p></dd>
+           <dd><p><em>Tutelaries are able to increase the effectiveness of their skill when hiding from an enemy by drawing the enemy<ch.apos/>s attention to a place other than that in which they are hiding. The effectiveness of this ability increases as a Kai Master rises in rank.</em></p></dd>
           <dt><em>Principalin (6 Disciplines)</em></dt>
            <dd><p><em>Principalins are able to mask any sounds made by their movements while using this skill.</em></p></dd>
           <dt><em>Scion-kai (8 Disciplines)</em></dt>
@@ -679,7 +628,7 @@ specialitems
        <data>
         <p>This psychic skill enables a Kai Master to attack an enemy using the force of his mind. It can be used as well as normal combat <a idref="topics-weapons">Weapons</a> and adds 4 extra points to your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a>.</p>
         <p>It is a powerful Discipline, but it is also a costly one. For every round of combat in which you use Psi-surge, you must deduct 2 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points. A weaker form of Psi-surge called Mindblast can be used against an enemy without losing any <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points, but it will add only 2 extra points to your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a>. Psi-surge cannot be used if your <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> falls to 6 points or below, and not all of the creatures encountered on your adventure will be affected by it; you will be told if a creature is immune.</p>
-        <p>If you choose this skill, write <quote>Psi-surge: +4 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points but -2 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points per round</quote> and <quote>Mindblast: +2 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points</quote> on your <a idref="topics-actionchart">Action Chart</a>.</p>
+        <p>If you choose this skill, write <quote>Psi-surge: +4 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points but <ch.minus/>2 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points per round</quote> and <quote>Mindblast: +2 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points</quote> on your <a idref="topics-actionchart">Action Chart</a>.</p>
         <blockquote>
          <p><em>Improvements: (see <a idref="mkimprv">Improved Magnakai Disciplines</a> and <a idref="mklevels">Levels of Magnakai Training</a>)</em></p>
          <dl class="paragraphed">
@@ -688,7 +637,7 @@ specialitems
           <dt><em>Principalin (6 Disciplines)</em></dt>
            <dd><p><em>Principalins using this skill in combat are able to confuse an enemy by planting seeds of doubt in its mind. The effectiveness of this ability increases as a Kai Master rises in rank.</em></p></dd>
           <dt><em>Archmaster (9 Disciplines)</em></dt>
-           <dd><p><em>When using their psychic ability to attack an enemy, Archmasters may add 6 points to their <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> instead of the usual 4 points. For every round in which Psi-surge is used, Archmasters need only deduct 1 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point. When using the weaker psychic attack&emdash;Mindblast&emdash;they may add 3 points without loss of <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points. Archmasters cannot use Psi-surge if their <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score falls to 4 points or below.</em></p></dd>
+           <dd><p><em>When using their psychic ability to attack an enemy, Archmasters may add 6 points to their <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> instead of the usual 4 points. For every round in which Psi-surge is used, Archmasters need only deduct 1 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point. When using the weaker psychic attack<ch.emdash/>Mindblast<ch.emdash/>they may add 3 points without loss of <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points. Archmasters cannot use Psi-surge if their <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score falls to 4 points or below.</em></p></dd>
          </dl>
         </blockquote>
        </data>
@@ -745,7 +694,7 @@ specialitems
           <dt><em>Mentora (7 Disciplines)</em></dt>
            <dd><p><em>Mentoras who possess this skill are able to detect psychic residues lingering in a place where a dramatic event, such as a battle, a murder, a ritual sacrifice or a ritual ceremony, has taken place. By meditating at the scene of the incident, a Kai Mentora is able to visualize the event, even though it may have occurred in the distant past.</em></p></dd>
           <dt><em>Scion-kai (8 Disciplines)</em></dt>
-           <dd><p><em>Scion-kai are able to leave their body in a state of suspended animation and, in spirit form, explore their immediate surroundings unhindered by physical limitations. This ability is called <quote>spirit walking</quote>. The length of time a Kai Master can spirit walk increases as he rises in rank. When the spirit is separated from the body in this fashion, the body remains inanimate and vulnerable to attack. If a Kai Master&apos;s body is killed whilst he is spirit walking, his spiritual self will also cease to exist, and vice versa.</em></p></dd>
+           <dd><p><em>Scion-kai are able to leave their body in a state of suspended animation and, in spirit form, explore their immediate surroundings unhindered by physical limitations. This ability is called <quote>spirit walking</quote>. The length of time a Kai Master can spirit walk increases as he rises in rank. When the spirit is separated from the body in this fashion, the body remains inanimate and vulnerable to attack. If a Kai Master<ch.apos/>s body is killed whilst he is spirit walking, his spiritual self will also cease to exist, and vice versa.</em></p></dd>
          </dl>
         </blockquote>
        </data>
@@ -854,8 +803,8 @@ specialitems
      </meta>
 
      <data>
-      <p>There will be occasions during your adventure when you have to fight an enemy. The enemy&apos;s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points are given in the text. Lone Wolf&apos;s aim in the combat is to kill the enemy by reducing his <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points to zero while losing as few <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points as possible himself.</p>
-      <p>At the start of a combat, enter Lone Wolf&apos;s and the enemy&apos;s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points in the appropriate boxes on the Combat Record section of your <a idref="topics-actionchart">Action Chart</a>.</p>
+      <p>There will be occasions during your adventure when you have to fight an enemy. The enemy<ch.apos/>s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points are given in the text. Lone Wolf<ch.apos/>s aim in the combat is to kill the enemy by reducing his <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points to zero while losing as few <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points as possible himself.</p>
+      <p>At the start of a combat, enter Lone Wolf<ch.apos/>s and the enemy<ch.apos/>s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points in the appropriate boxes on the Combat Record section of your <a idref="topics-actionchart">Action Chart</a>.</p>
       <p>The sequence for combat is as follows:</p>
       <ol class="paragraphed">
        <li><p>Add any extra points gained through your Magnakai Disciplines and <a idref="topics-specialitems">Special Items</a> to your current <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> total.</p></li>
@@ -863,13 +812,13 @@ specialitems
         <p>Subtract the <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> of your enemy from this total. The result is your <a idref="topics-combatratio">Combat Ratio</a>. Enter it on the <a idref="topics-actionchart">Action Chart</a>.</p>
         <p>Example</p>
         <p>Lone Wolf (<a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> 15) is attacked by a Nightstalker (<a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> 22). He is not given the opportunity to evade combat but must stand and fight as the creature leaps on him. Lone Wolf has the Magnakai Discipline of Psi-surge to which the Nightstalker is not immune, so Lone Wolf adds 4 points to his <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a>, giving a total <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> of 19.</p>
-        <p>He subtracts the Nightstalker&apos;s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> from his own, giving a <a idref="topics-combatratio">Combat Ratio</a> of -3. (19 - 22 = -3). -3 is noted on the <a idref="topics-actionchart">Action Chart</a> as the <a idref="topics-combatratio">Combat Ratio</a>.</p>
+        <p>He subtracts the Nightstalker<ch.apos/>s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> from his own, giving a <a idref="topics-combatratio">Combat Ratio</a> of <ch.minus/>3. (19 <ch.minus/> 22 = <ch.minus/>3). <ch.minus/>3 is noted on the <a idref="topics-actionchart">Action Chart</a> as the <a idref="topics-combatratio">Combat Ratio</a>.</p>
        </li>
        <li><p>When you have your <a idref="topics-combatratio">Combat Ratio</a>, pick a number from the <a idref="topics-randomnumbertable">Random Number Table</a>.</p></li>
        <li>
         <p>Turn to the <a idref="topics-combatresultstable">Combat Results Table</a> on the inside back cover of the book. Along the top of the chart are shown the <a idref="topics-combatratio">Combat Ratio</a> numbers. Find the number that is the same as your <a idref="topics-combatratio">Combat Ratio</a> and cross-reference it with the random number that you have picked (the random numbers appear on the side of the chart). You now have the number of <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points lost by both Lone Wolf and his enemy in this round of combat. (E represents points lost by the enemy; LW represents points lost by Lone Wolf.)</p>
         <p>Example</p>
-        <p>The <a idref="topics-combatratio">Combat Ratio</a> between Lone Wolf and the Nightstalker has been established as -3. If the number taken from the <a idref="topics-randomnumbertable">Random Number Table</a> is a 6, then the result of the first round of combat is:</p>
+        <p>The <a idref="topics-combatratio">Combat Ratio</a> between Lone Wolf and the Nightstalker has been established as <ch.minus/>3. If the number taken from the <a idref="topics-randomnumbertable">Random Number Table</a> is a 6, then the result of the first round of combat is:</p>
         <ul>
          <li>Lone Wolf loses 3 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points (plus an additional 2 points for using Psi-surge)</li>
          <li>Nightstalker loses 6 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points</li>
@@ -903,11 +852,11 @@ specialitems
      </meta>
 
      <data>
-      <p>The following table is a guide to the rank and titles that are achieved by Kai Masters at each stage of their training. As you successfully complete each adventure in the Lone Wolf Magnakai series, you will gain an additional Magnakai Discipline and progress towards the ultimate distinction of a Kai Warrior&emdash;Kai Grand Mastership.</p>
+      <p>The following table is a guide to the rank and titles that are achieved by Kai Masters at each stage of their training. As you successfully complete each adventure in the Lone Wolf Magnakai series, you will gain an additional Magnakai Discipline and progress towards the ultimate distinction of a Kai Warrior<ch.emdash/>Kai Grand Mastership.</p>
       <ol>
        <li>Kai Master</li>
        <li>Kai Master Senior</li>
-       <li>Kai Master Superior&emdash;<em>You begin the Lone Wolf Magnakai adventures with this level of training</em>.</li>
+       <li>Kai Master Superior<ch.emdash/><em>You begin the Lone Wolf Magnakai adventures with this level of training</em>.</li>
        <li>Primate</li>
        <li>Tutelary</li>
        <li>Principalin</li>
@@ -931,13 +880,13 @@ specialitems
       <p>Listed below are the four <a idref="topics-lorecircles">Lore-circles</a> of the Magnakai and the skills that must be mastered in order to complete them.</p>
       <dl>
       <dt>Circle of Fire</dt>
-       <dd>Weaponmastery &ampersand; Huntmastery</dd>
+       <dd>Weaponmastery <ch.ampersand/> Huntmastery</dd>
       <dt>Circle of Light</dt>
-       <dd>Animal Control &ampersand; Curing</dd>
+       <dd>Animal Control <ch.ampersand/> Curing</dd>
       <dt>Circle of Solaris</dt>
-       <dd>Invisibility, Huntmastery &ampersand; Pathsmanship</dd>
+       <dd>Invisibility, Huntmastery <ch.ampersand/> Pathsmanship</dd>
       <dt>Circle of the Spirit</dt>
-       <dd>Psi-surge, Psi-screen, Nexus &ampersand; Divination</dd>
+       <dd>Psi-surge, Psi-screen, Nexus <ch.ampersand/> Divination</dd>
       </dl>
       <p>By completing a <a idref="topics-lorecircles">Lore-circle</a>, you may add to your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> the extra bonus points that are shown below.</p>
 
@@ -999,7 +948,7 @@ specialitems
          <dt>Weaponmastery</dt>
           <dd><p>Tutelaries are able to use defensive combat skills to great effect when fighting unarmed. When entering combat without a <a idref="topics-weapons">Weapon</a>, Tutelaries lose only 2 points from your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a>, instead of the usual 4 points.</p></dd>
          <dt>Invisibility</dt>
-          <dd><p>Tutelaries are able to increase the effectiveness of their skill when hiding from an enemy by drawing the enemy&apos;s attention to a place other than that in which they are hiding. The effectiveness of this ability increases as a Kai Master rises in rank.</p></dd>
+          <dd><p>Tutelaries are able to increase the effectiveness of their skill when hiding from an enemy by drawing the enemy<ch.apos/>s attention to a place other than that in which they are hiding. The effectiveness of this ability increases as a Kai Master rises in rank.</p></dd>
          <dt>Pathsmanship</dt>
           <dd><p>Tutelaries with this skill can detect an enemy ambush within 500 yards of their position unless their <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score is low due to wounds sustained or lack of food.</p></dd>
          <dt>Psi-screen</dt>
@@ -1062,7 +1011,7 @@ specialitems
          <dt>Psi-screen</dt>
           <dd><p>When engaging in psychic combat Scion-kai are able to absorb and control some of the energies directed at them. By deflecting or inducing the hostile energy they can either reduce the damage they sustain, or increase the power of their own psychic attacks.</p></dd>
          <dt>Divination</dt>
-          <dd><p>Scion-kai are able to leave their body in a state of suspended animation and, in spirit form, explore their immediate surroundings unhindered by physical limitations. This ability is called <quote>spirit walking</quote>. The length of time a Kai Master can spirit walk increases as he rises in rank. When the spirit is separated from the body in this fashion, the body remains inanimate and vulnerable to attack. If a Kai Master&apos;s body is killed whilst he is spirit walking, his spiritual self will also cease to exist, and vice versa.</p></dd>
+          <dd><p>Scion-kai are able to leave their body in a state of suspended animation and, in spirit form, explore their immediate surroundings unhindered by physical limitations. This ability is called <quote>spirit walking</quote>. The length of time a Kai Master can spirit walk increases as he rises in rank. When the spirit is separated from the body in this fashion, the body remains inanimate and vulnerable to attack. If a Kai Master<ch.apos/>s body is killed whilst he is spirit walking, his spiritual self will also cease to exist, and vice versa.</p></dd>
         </dl>
        </data>
       </section>
@@ -1079,7 +1028,7 @@ specialitems
          <dt>Huntmastery</dt>
           <dd><p>Archmasters who possess this ability benefit from greatly increased senses of hearing, smell, and night vision. These senses become even more acute upon attaining the rank of Kai Grand Master.</p></dd>
          <dt>Psi-surge</dt>
-          <dd><p>When using their psychic ability to attack an enemy, Archmasters may add 6 points to their <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> instead of the usual 4 points. For every round in which Psi-surge is used, Archmasters need only deduct 1 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point. When using the weaker psychic attack&emdash;Mindblast&emdash;they may add 3 points without loss of <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points. Archmasters cannot use Psi-surge if their <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score falls to 4 points or below.</p></dd>
+          <dd><p>When using their psychic ability to attack an enemy, Archmasters may add 6 points to their <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> instead of the usual 4 points. For every round in which Psi-surge is used, Archmasters need only deduct 1 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point. When using the weaker psychic attack<ch.emdash/>Mindblast<ch.emdash/>they may add 3 points without loss of <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points. Archmasters cannot use Psi-surge if their <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score falls to 4 points or below.</p></dd>
          <dt>Nexus</dt>
           <dd><p>Archmasters with the skill of Nexus are able to withstand extremes of heat and cold, and possess limited immunity to harmful elements, such as flames, toxic gases, and corrosive liquids. The duration of this immunity increases greatly upon attaining Grand Mastership.</p></dd>
         </dl>
@@ -1101,10 +1050,10 @@ specialitems
 
    <data>
     <blockquote>
-     <p><em>Theses rules do not come from any particular book. They are a generic set of rules designed to help new readers familiarize themselves with the rules&emdash;not walk the reader through a particular book. The details of the rules in each book will differ from what you find here.</em></p>
+     <p><em>Theses rules do not come from any particular book. They are a generic set of rules designed to help new readers familiarize themselves with the rules<ch.emdash/>not walk the reader through a particular book. The details of the rules in each book will differ from what you find here.</em></p>
     </blockquote>
     <p>You keep a record of your adventure on the <a idref="topics-actionchart">Action Chart</a>.</p>
-    <p>During your training as a Kai Master you have developed fighting prowess&emdash;<a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and physical stamina&emdash;<a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it on to the <a idref="topics-randomnumbertable">Random Number Table</a>. If you pick 0 it counts as zero.</p>
+    <p>During your training as a Kai Master you have developed fighting prowess<ch.emdash/><a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and physical stamina<ch.emdash/><a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it on to the <a idref="topics-randomnumbertable">Random Number Table</a>. If you pick 0 it counts as zero.</p>
     <blockquote>
      <p><em>If you have already completed an adventure with your character, you should not pick his <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> again. You should use those scores already picked.</em></p>
     </blockquote>
@@ -1131,7 +1080,7 @@ specialitems
     <blockquote>
      <p><em>Late in the Grand Master series, this list undergoes some alterations to reflect events of the stories. If you begin the Grand Master series with Book 13, use this list throughout. If you begin later in the Grand Master series, then use the list as published in the appropriate book.</em></p>
 	</blockquote>
-    <p>You many choose one bonus Grand Master Discipline to add to your <a idref="topics-actionchart">Action Chart</a> for every Lone Wolf Grand Master adventure you successfully complete (Books 13&endash;20).</p>
+    <p>You many choose one bonus Grand Master Discipline to add to your <a idref="topics-actionchart">Action Chart</a> for every Lone Wolf Grand Master adventure you successfully complete (Books 13<ch.endash/>20).</p>
     <blockquote>
      <p><em>You may add <em>one</em> Grand Master Discipline if you have completed a previous Grand Master adventure successfully. In other words, you earn one new Grand Master Discipline each time you complete a Grand Master adventure successfully.</em></p>
     </blockquote>
@@ -1156,7 +1105,7 @@ specialitems
          <dt><a idref="wpnmstry">Weaponmastery</a></dt>
           <dd>Proficiency with all close combat and missile weapons. Master of unarmed combat; no <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> loss when fighting bare-handed.</dd>
          <dt><a idref="anmlctrl">Animal Control</a></dt>
-          <dd>Communication with most animals; limited control over hostile creatures. Can use woodland animals as guides and can block a non-sentient creature&apos;s sense of taste and smell.</dd>
+          <dd>Communication with most animals; limited control over hostile creatures. Can use woodland animals as guides and can block a non-sentient creature<ch.apos/>s sense of taste and smell.</dd>
          <dt><a idref="curing">Curing</a></dt>
           <dd>Steady restoration of lost <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points (to self and others) as a result of combat wounds. Neutralization of poisons, venoms and toxins. Repair of serious battle wounds.</dd>
          <dt><a idref="invsblty">Invisibility</a></dt>
@@ -1178,15 +1127,15 @@ specialitems
       </section>
 
       <blockquote>
-       <p><em>If you have completed the first twelve books of the Lone Wolf series, you can continue to use the Magnakai Disciplines acquired in those books. (see the following Lone Wolf Club Newsletters: <a idref="lwcn1987summer">Summer Special 1987</a>, <a idref="lwcn10">No. 10</a> and <a idref="lwcn28">No. 28</a>) <!-- JDOUGAN: Jon, do these references need updating? (probably) --> If you have not completed all of the first twelve books, use your personal judgement whether or not you should benefit from Magnakai Disciplines that you didn&apos;t choose in the books you did complete. If you have completed all twelve books of the Kai series, remember that you now possess all ten Magnakai Disciplines, including the last one that you hadn&apos;t chosen previously. Be certain to adjust your <a idref="topics-actionchart">Action Chart</a> to reflect the bonuses of the last Lore-Circle.</em></p>
-       <p><em>At times, the text will explicitly give you the option of using a Magnakai Discipline. At other times, some Magnakai Disciplines may have measureable bonuses that are useful to you in the Grand Master series but which are not explicitly prompted by the text. Other Magnakai Disciplines have less tangible effects and are assumed by the book (e.g. the Magnakai Discipline of Invisibility doesn&apos;t have a measureable bonus and the books assume you have this skill). The Magnakai Disciplines that can provide "tangible" bonuses in the Grand Master series are:</em></p>
+       <p><em>If you have completed the first twelve books of the Lone Wolf series, you can continue to use the Magnakai Disciplines acquired in those books. (see the following Lone Wolf Club Newsletters: <a idref="lwcn1987summer">Summer Special 1987</a>, <a idref="lwcn10">No. 10</a> and <a idref="lwcn28">No. 28</a>) <!-- JDOUGAN: Jon, do these references need updating? (probably) --> If you have not completed all of the first twelve books, use your personal judgement whether or not you should benefit from Magnakai Disciplines that you didn<ch.apos/>t choose in the books you did complete. If you have completed all twelve books of the Kai series, remember that you now possess all ten Magnakai Disciplines, including the last one that you hadn<ch.apos/>t chosen previously. Be certain to adjust your <a idref="topics-actionchart">Action Chart</a> to reflect the bonuses of the last Lore-Circle.</em></p>
+       <p><em>At times, the text will explicitly give you the option of using a Magnakai Discipline. At other times, some Magnakai Disciplines may have measureable bonuses that are useful to you in the Grand Master series but which are not explicitly prompted by the text. Other Magnakai Disciplines have less tangible effects and are assumed by the book (e.g. the Magnakai Discipline of Invisibility doesn<ch.apos/>t have a measureable bonus and the books assume you have this skill). The Magnakai Disciplines that can provide "tangible" bonuses in the Grand Master series are:</em></p>
        <ul>
-        <li><em><a idref="hntmstry">Huntmastery</a>&emdash;may be used to automatically find food (unless the text explicitly notes otherwise)</em></li>
-        <li><em><a idref="topics-healing">Curing</a>&emdash;may be used to heal 1 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point (per numbered section of the book) while not in combat.</em></li>
-        <li><em><a idref="wpnmstry">Weaponmastery</a>&emdash;adds 3 points to your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> (4 if you reached the Magnakai rank of <a idref="scion">Scion-Kai</a>) if using the <a idref="topics-weapons">Weapon</a> with which you are skilled.</em></li>
-        <li><em><a idref="psisurge">Psi-surge</a>&emdash;adds 4 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points to your total when used against an opponent who isn&apos;t immune, at the cost of 2 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points per round of combat. Mindblast can still be used to add two points to your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> without loss of endurance points. (If you reached the Magnakai rank of Archmaster, Psi-surge will add 6 points to <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> at the cost of 1 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point per round of combat and Mindblast will add 3 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points at no <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> penalty.)</em></li>
+        <li><em><a idref="hntmstry">Huntmastery</a><ch.emdash/>may be used to automatically find food (unless the text explicitly notes otherwise)</em></li>
+        <li><em><a idref="topics-healing">Curing</a><ch.emdash/>may be used to heal 1 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point (per numbered section of the book) while not in combat.</em></li>
+        <li><em><a idref="wpnmstry">Weaponmastery</a><ch.emdash/>adds 3 points to your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> (4 if you reached the Magnakai rank of <a idref="scion">Scion-Kai</a>) if using the <a idref="topics-weapons">Weapon</a> with which you are skilled.</em></li>
+        <li><em><a idref="psisurge">Psi-surge</a><ch.emdash/>adds 4 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points to your total when used against an opponent who isn<ch.apos/>t immune, at the cost of 2 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points per round of combat. Mindblast can still be used to add two points to your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> without loss of endurance points. (If you reached the Magnakai rank of Archmaster, Psi-surge will add 6 points to <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> at the cost of 1 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point per round of combat and Mindblast will add 3 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points at no <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> penalty.)</em></li>
        </ul>
-       <p><em>These bonuses are replaced by their Grand Master Discipline equivalent (e.g. acquiring <a idref="gwpnmtry">Grand Weaponmastery</a> in a <a idref="topics-weapons">Weapon</a> with which you have <a idref="wpnmstry">Weaponmastery</a> gives you a +5 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> bonus&emdash;not +8).</em></p>
+       <p><em>These bonuses are replaced by their Grand Master Discipline equivalent (e.g. acquiring <a idref="gwpnmtry">Grand Weaponmastery</a> in a <a idref="topics-weapons">Weapon</a> with which you have <a idref="wpnmstry">Weaponmastery</a> gives you a +5 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> bonus<ch.emdash/>not +8).</em></p>
       </blockquote>
       <p>Now, through the pursuit of your new skills and the further development of your innate Kai abilities, you have set out upon a path of discovery that no other Kai Grand Master has ever attempted with success. Your determination to become the first Kai Supreme Master, by acquiring total proficiency in all twelve of the Grand Master Disciplines, is an awe-inspiring challenge. You will be venturing into the unknown, pushing back the boundaries of human limitation in the pursuit of greatness and the cause of Good. May the blessings of the gods Kai and Ishir go with you as you begin your brave and noble quest.</p>
       <p>In the years following the demise of the Darklords you have reached the rank of Kai Grand Defender, which means that you have mastered four of the Grand Master Disciplines listed below. It is up to you to choose which four Disciplines these are. As all of the Grand Master Disciplines will be of use to you at some point during your adventure, pick your four skills with care. The correct use of a Grand Master Discipline at the right time could save your life.</p>
@@ -1226,7 +1175,7 @@ specialitems
         </blockquote>
         <p>The fact that you are skilled with two <a idref="topics-weapons">Weapons</a> does not mean that you begin the adventure carrying any of them. However, you will have opportunities to acquire <a idref="topics-weapons">Weapons</a> during your adventure. For every Lone Wolf book that you complete in the Grand Master series, you may add an additional <a idref="topics-weapons">Weapon</a> to your list.</p>
         <blockquote>
-         <p><em>Possessing Grand Weaponmastery doesn&apos;t <strong>necessarily</strong> mean that you start out with that <a idref="topics-weapons">Weapon</a>, but you might.</em></p>
+         <p><em>Possessing Grand Weaponmastery doesn<ch.apos/>t <strong>necessarily</strong> mean that you start out with that <a idref="topics-weapons">Weapon</a>, but you might.</em></p>
         </blockquote>
 
         <blockquote>
@@ -1251,7 +1200,7 @@ specialitems
          <p><em>Improvements: (see <a idref="gmimprv">Improved Grand Master Disciplines</a> and <a idref="gmlevels">Levels of Grand Mastership</a>)</em></p>
          <dl class="paragraphed">
           <dt><em>Kai Grand Guardian (5 Disciplines)</em></dt>
-           <dd><p><em>Kai Grand Guardians with this discipline are able to  summon a limited number of forest animals to their location. The creatures so summoned will become loyal and willing allies, willing to do the Kai Grand Guardian&apos;s bidding. This ability can only be used in an outdoor setting.</em></p></dd>
+           <dd><p><em>Kai Grand Guardians with this discipline are able to  summon a limited number of forest animals to their location. The creatures so summoned will become loyal and willing allies, willing to do the Kai Grand Guardian<ch.apos/>s bidding. This ability can only be used in an outdoor setting.</em></p></dd>
           <dt><em>Sun Thane (8 Disciplines)</em></dt>
            <dd><p><em>Sun Thanes with this Discipline are able to command an animal to fall asleep at will. Some hostile animals may be able to resist this command, but most will be affected by it in some way. The duration of effect and the number of animals which can be affected at one time will increase as a Grand Master rises in rank.</em></p></dd>
           <dt><em>Grand Crown (10 Disciplines)</em></dt>
@@ -1272,13 +1221,13 @@ specialitems
          <p><em>Improvements: (see <a idref="gmimprv">Improved Grand Master Disciplines</a> and <a idref="gmlevels">Levels of Grand Mastership</a>)</em></p>
          <dl class="paragraphed">
           <dt><em>Sun Knight (6 Disciplines)</em></dt>
-           <dd><p><em>Sun Knights who possess this skill are able to repair serious wounds sustained by creatures other than themselves. By the laying of hands upon the affected creature&apos;s body, a Sun Knight can cause an open wound (or other serious injury) to mend itself. The speed at which this healing takes place increases as a Grand Master rises in rank.</em></p></dd>
+           <dd><p><em>Sun Knights who possess this skill are able to repair serious wounds sustained by creatures other than themselves. By the laying of hands upon the affected creature<ch.apos/>s body, a Sun Knight can cause an open wound (or other serious injury) to mend itself. The speed at which this healing takes place increases as a Grand Master rises in rank.</em></p></dd>
           <dt><em>Sun Thane (8 Disciplines)</em></dt>
            <dd><p><em>Sun Thanes who possess this skill are able to conduct a Kai Exorcism. This ritual will banish any evil supernatural force that has taken possession of any goodly creature or object.</em></p></dd>
           <dt><em>Grand Thane (9 Disciplines)</em></dt>
            <dd><p><em>Grand Thanes with this Discipline are able to call upon the God Kai for divine assistance should a situation warrant it. Kai cannot intervene to save a Grand Thane from physical danger, but he can give signs which may help a Grand Thane chose the best course of action. A Grand Thane can call upon the God Kai for assistance no more than once every month. The frequency of divine audiences will increase as a Grand Master rises in rank.</em></p></dd>
           <dt><em>Sun Prince (11 Disciplines)</em></dt>
-           <dd><p><em>Sun Princes with this ability are able to cause the regeneration of lost body parts, i.e. hands, feet, arms, legs, bones and internal organs.  This improved Discipline can be used to repair a Sun Prince&apos;s own body, or that of another person or creature. The time required to effect regeneration depends on the size and relative importance of the body part affected.</em></p></dd>
+           <dd><p><em>Sun Princes with this ability are able to cause the regeneration of lost body parts, i.e. hands, feet, arms, legs, bones and internal organs.  This improved Discipline can be used to repair a Sun Prince<ch.apos/>s own body, or that of another person or creature. The time required to effect regeneration depends on the size and relative importance of the body part affected.</em></p></dd>
          </dl>
         </blockquote>
        </data>
@@ -1345,7 +1294,7 @@ specialitems
       <section class="mainmatter" id="kaisurge">
        <meta><title>Kai-surge</title></meta>
        <data>
-        <p>When using their psychic ability to attack an enemy, Grand Masters may add 8 points to their <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a>. For every round in which Kai-surge is used, Grand Masters need only deduct 1 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point. When using the weaker psychic attack&emdash;<a idref="kaidiscl">Mindblast</a>&emdash;they may add 4 points without loss of <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points. (Kai-surge, <a idref="psisurge">Psi-surge</a>, and <a idref="kaidiscl">Mindblast</a> cannot be used simultaneously.)</p>
+        <p>When using their psychic ability to attack an enemy, Grand Masters may add 8 points to their <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a>. For every round in which Kai-surge is used, Grand Masters need only deduct 1 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point. When using the weaker psychic attack<ch.emdash/><a idref="kaidiscl">Mindblast</a><ch.emdash/>they may add 4 points without loss of <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points. (Kai-surge, <a idref="psisurge">Psi-surge</a>, and <a idref="kaidiscl">Mindblast</a> cannot be used simultaneously.)</p>
         <p>Grand Masters cannot use Kai-surge if their <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score falls to 6 points or below.</p>
         <blockquote>
          <p><em>Improvements: (see <a idref="gmimprv">Improved Grand Master Disciplines</a> and <a idref="gmlevels">Levels of Grand Mastership</a>)</em></p>
@@ -1353,11 +1302,11 @@ specialitems
           <dt><em>Kai Grand Guardian (5 Disciplines)</em></dt>
            <dd><p><em>Kai Grand Guardians who possess mastery of this Discipline are able to attack up to three enemies in psychic combat simultaneously.</em></p></dd>
           <dt><em>Sun Lord (7 Disciplines)</em></dt>
-           <dd><p><em>Sun Lords who possess mastery of this Discipline are able to launch a Kai-Blast&emdash;a pulse ofintense psychic energy which is capable of affecting both psychically active and inactive enemies. This form of psychic attack is very effective, more so than a usual Kai-surge, Psi-surge or Mindblast. It can cause an enemy to lose between 2 and 18 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points in one attack. However, use of a Kai-Blast will reduce a Sun Lord&apos;s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points total by 4. It cannot be used in conjunction with any other form of psychic attack.</em></p></dd>
+           <dd><p><em>Sun Lords who possess mastery of this Discipline are able to launch a Kai-Blast<ch.emdash/>a pulse ofintense psychic energy which is capable of affecting both psychically active and inactive enemies. This form of psychic attack is very effective, more so than a usual Kai-surge, Psi-surge or Mindblast. It can cause an enemy to lose between 2 and 18 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points in one attack. However, use of a Kai-Blast will reduce a Sun Lord<ch.apos/>s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points total by 4. It cannot be used in conjunction with any other form of psychic attack.</em></p></dd>
           <dt><em>Grand Thane (9 Disciplines)</em></dt>
            <dd><p><em>Grand Thanes with this skill are able to focus their mind-power upon inanimate breakable objects, e.g., bottles, windows, all ceramics, urns, jugs etc, and cause them to explode violently. Any person or creature in close proximity to such an explosion risks injury from flying shrapnel.</em></p></dd>
           <dt><em>Sun Prince (11 Disciplines)</em></dt>
-           <dd><p><em>Sun Princes who possess mastery of this Discipline are able to focus their psychic power into a Kai-Ray: a laser-like beam of mental energy capable of penetrating the strongest of psychic defences. This ability can be used once during a combat to reduce an enemy&apos;s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score by 15 points. However, use of this Kai-Ray will also reduce a Sun Prince&apos;s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score by 4  points. It cannot be used if a Sun Prince&apos;s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score is 10 or less and it cannot be used in conjunction with any other form of psychic attack.</em></p></dd>
+           <dd><p><em>Sun Princes who possess mastery of this Discipline are able to focus their psychic power into a Kai-Ray: a laser-like beam of mental energy capable of penetrating the strongest of psychic defences. This ability can be used once during a combat to reduce an enemy<ch.apos/>s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score by 15 points. However, use of this Kai-Ray will also reduce a Sun Prince<ch.apos/>s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score by 4  points. It cannot be used if a Sun Prince<ch.apos/>s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score is 10 or less and it cannot be used in conjunction with any other form of psychic attack.</em></p></dd>
          </dl>
         </blockquote>
        </data>
@@ -1395,7 +1344,7 @@ specialitems
           <dt><em>Grand Thane (9 Disciplines)</em></dt>
            <dd><p><em>Grand Thanes who possess mastery of this Discipline can pass freely through the Shadow Gates. These phenomena are special portals which enable one to access other dimensions and planes of existence outside of Magnamund. Kai Grand Thanes are able to detect the location of Shadow Gates and pass through them without suffering any physical ill effects. The range of their detection increases as a Kai Grand Master rises in rank.</em></p></dd>
           <dt><em>Grand Crown (10 Disciplines)</em></dt>
-           <dd><p><em>Grand Crowns who possess this Discipline are able to speak a Kai Power Word&emdash;a holy utterance which will cause physical and psychic damage to any single creature within a radius of thirty feet. The degree of damage so caused, and the resultant drain upon a Grand Crown&apos;s reserves of <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a>, are dependent upon individual circumstances. The power and range of this skill increases as a Grand Master rises in rank.</em></p></dd>
+           <dd><p><em>Grand Crowns who possess this Discipline are able to speak a Kai Power Word<ch.emdash/>a holy utterance which will cause physical and psychic damage to any single creature within a radius of thirty feet. The degree of damage so caused, and the resultant drain upon a Grand Crown<ch.apos/>s reserves of <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a>, are dependent upon individual circumstances. The power and range of this skill increases as a Grand Master rises in rank.</em></p></dd>
          </dl>
         </blockquote>
        </data>
@@ -1423,7 +1372,7 @@ specialitems
       <section class="mainmatter" id="magi">
        <meta><title>Magi-magic</title></meta>
        <data>
-        <p>Under the tutelage of Lord Rimoah, you have been able to master the rudimentary skills of battle magic, as taught to the Vakeros&emdash;the native warriors of Dessi. As you advance in rank, so will your knowledge and mastery of Old Kingdom magic increase.</p>
+        <p>Under the tutelage of Lord Rimoah, you have been able to master the rudimentary skills of battle magic, as taught to the Vakeros<ch.emdash/>the native warriors of Dessi. As you advance in rank, so will your knowledge and mastery of Old Kingdom magic increase.</p>
        <blockquote>
          <p><em>Improvements: (see <a idref="gmimprv">Improved Grand Master Disciplines</a> and <a idref="gmlevels">Levels of Grand Mastership</a>)</em></p>
          <dl class="paragraphed">
@@ -1431,24 +1380,24 @@ specialitems
            <dd>
             <p><em>Grand Masters who have reached the rank of Kai Grand Guardian are able to use the following battle-spells of the Elder Magi:</em></p>
             <ul>
-             <li><em>Splinter&emdash;This causes breakable items such as bottles, jugs, mirrors, windows, etc., to shatter to pieces. The range of this spell increases as a Grand Master rises in rank.</em></li>
-             <li><em>Flameshaft&emdash;This causes the tip of any arrow, or arrow-like missile, to burn fiercely with a magical flame which cannot readily be extinguished by normal means.</em></li>
+             <li><em>Splinter<ch.emdash/>This causes breakable items such as bottles, jugs, mirrors, windows, etc., to shatter to pieces. The range of this spell increases as a Grand Master rises in rank.</em></li>
+             <li><em>Flameshaft<ch.emdash/>This causes the tip of any arrow, or arrow-like missile, to burn fiercely with a magical flame which cannot readily be extinguished by normal means.</em></li>
             </ul>
            </dd>
           <dt><em>Sun Lord (7 Disciplines)</em></dt>
            <dd>
             <p><em>Grand Masters who have reached the rank of Sun Lord are able to use the following battle-spells of the Elder Magi:</em></p>
             <ul>
-             <li><em>Penetrate&emdash;This increases the penetrative energy of any arrow, or arrow-like missile, launched by a Sun Lord.</em></li>
-             <li><em>Energy Grasp&emdash;This spell enables a Sun Lord to discharge a powerful electrical force into anything he or she touches. It is similar in effect to the Brotherhood spell <quote>Lightning Hand</quote>, but differs in that it is easier to control and channel the resulting energy. It also requires the actual touching of an object or an enemy to effect the spell.</em></li>
+             <li><em>Penetrate<ch.emdash/>This increases the penetrative energy of any arrow, or arrow-like missile, launched by a Sun Lord.</em></li>
+             <li><em>Energy Grasp<ch.emdash/>This spell enables a Sun Lord to discharge a powerful electrical force into anything he or she touches. It is similar in effect to the Brotherhood spell <quote>Lightning Hand</quote>, but differs in that it is easier to control and channel the resulting energy. It also requires the actual touching of an object or an enemy to effect the spell.</em></li>
             </ul>
            </dd>
           <dt><em>Grand Thane (9 Disciplines)</em></dt>
            <dd>
             <p><em>Grand Masters who have reached the rank of Grand Thane are able to use the following Old Kingdom battle-spells:</em></p>
             <ul>
-             <li><em>Power Glyph&emdash;By inscribing this ancient glyph (a secret magical symbol) upon a door, an archway, or even upon the lid of a closed box, a Kai Grand Thane is able to protect items or portals from being opened. Any creature attempting to open a portal protected in such a way will release the power of the glyph and suffer its deadly effects.</em></li>
-             <li><em>Hold Enemy&emdash;Using this spell, a Kai Grand Thane is able to immobilize a single hostile creature anywhere within twenty feet of themselves. The duration of the spell is dependent upon the size and strength of the targetted creature. The range and duration of effect of this spell increases as a Grand Master rises in rank.</em></li>
+             <li><em>Power Glyph<ch.emdash/>By inscribing this ancient glyph (a secret magical symbol) upon a door, an archway, or even upon the lid of a closed box, a Kai Grand Thane is able to protect items or portals from being opened. Any creature attempting to open a portal protected in such a way will release the power of the glyph and suffer its deadly effects.</em></li>
+             <li><em>Hold Enemy<ch.emdash/>Using this spell, a Kai Grand Thane is able to immobilize a single hostile creature anywhere within twenty feet of themselves. The duration of the spell is dependent upon the size and strength of the targetted creature. The range and duration of effect of this spell increases as a Grand Master rises in rank.</em></li>
             </ul>
            </dd>
          </dl>
@@ -1467,24 +1416,24 @@ specialitems
            <dd>
             <p><em>Grand Masters who have reached the rank of Sun Knight are able to use the following Brotherhood spells:</em></p>
             <ul>
-             <li><em>Halt Missile&emdash;This causes any projected or hurled missile (i.e. arrows, axes, crossbow bolts, etc.) which may pose an immediate threat to the life of a Sun Knight, to cease its flight and remain stationary in mid-air. The effect of the spell lasts for 2&endash;3 seconds, allowing the Sun Knight sufficient time to move away from its line of flight. Initially only one missile can be affected by this spell, but the number lncreases as a Grand Master rises in rank.</em></li>
-             <li><em>Strength&emdash;By casting this spell, a Sun Knight is able to greatly increase his or her physical strength for a short duration. It can be used to lift or move heavy objects, or to effect a temporary increase in <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> scores whilst fighting an enemy in unarmed combat.</em></li>
+             <li><em>Halt Missile<ch.emdash/>This causes any projected or hurled missile (i.e. arrows, axes, crossbow bolts, etc.) which may pose an immediate threat to the life of a Sun Knight, to cease its flight and remain stationary in mid-air. The effect of the spell lasts for 2<ch.endash/>3 seconds, allowing the Sun Knight sufficient time to move away from its line of flight. Initially only one missile can be affected by this spell, but the number lncreases as a Grand Master rises in rank.</em></li>
+             <li><em>Strength<ch.emdash/>By casting this spell, a Sun Knight is able to greatly increase his or her physical strength for a short duration. It can be used to lift or move heavy objects, or to effect a temporary increase in <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> scores whilst fighting an enemy in unarmed combat.</em></li>
             </ul>
            </dd>
           <dt><em>Sun Thane (8 Disciplines)</em></dt>
            <dd>
             <p><em>Grand Masters who have reached the rank of Sun Thane we able to use the following Brotherhood spells:</em></p>
             <ul>
-             <li><em>Slow Fall&emdash;By casting this spell, Kai Sun Thanes are able to slow their rate of free-falling to three feet per second, thereby avoiding damage upon landing while the spell is in effect. The duration of the spell is limited at first, but it steadily increases as a Grand Master rises in rank.</em></li>
-             <li><em>Breathe Water&emdash;Using this spell, a Kai Sun Thane is able to breathe underwater for ten minutes. The duration of effect increases as a Grand Master rises in rank.</em></li>
+             <li><em>Slow Fall<ch.emdash/>By casting this spell, Kai Sun Thanes are able to slow their rate of free-falling to three feet per second, thereby avoiding damage upon landing while the spell is in effect. The duration of the spell is limited at first, but it steadily increases as a Grand Master rises in rank.</em></li>
+             <li><em>Breathe Water<ch.emdash/>Using this spell, a Kai Sun Thane is able to breathe underwater for ten minutes. The duration of effect increases as a Grand Master rises in rank.</em></li>
             </ul>
            </dd>
           <dt><em>Grand Crown (10 Disciplines)</em></dt>
            <dd>
             <p><em>Grand Masters who have reached the rank of Grand Crown are able to use the following Brotherhood spells:</em></p>
             <ul>
-             <li><em>Teleport&emdash;By casting this spell, Kai Grand Crowns can transport themselves physically to any place which they can see with their own eyes. The spell will carry the caster, his equipment and clothing to his chosen sighted destination. It cannot be used on any other living creature and it will not transport any other living creature along with the caster. Use of this spell will cost the caster between 1 and 5 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points every time it is used. This cost reduces as a Kai Grand Master increases in rank.</em></li>
-             <li><em>See Illusion&emdash;Using this spell, a Kai Grand Crown is able to detect an illusion and know immediately its true identity or purpose.</em></li>
+             <li><em>Teleport<ch.emdash/>By casting this spell, Kai Grand Crowns can transport themselves physically to any place which they can see with their own eyes. The spell will carry the caster, his equipment and clothing to his chosen sighted destination. It cannot be used on any other living creature and it will not transport any other living creature along with the caster. Use of this spell will cost the caster between 1 and 5 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points every time it is used. This cost reduces as a Kai Grand Master increases in rank.</em></li>
+             <li><em>See Illusion<ch.emdash/>Using this spell, a Kai Grand Crown is able to detect an illusion and know immediately its true identity or purpose.</em></li>
             </ul>
            </dd>
          </dl>
@@ -1492,7 +1441,7 @@ specialitems
        </data>
       </section>
 
-      <p>If you successfully complete the mission as set in this, the first of the Lone Wolf Grand Master series, you may add a further Grand Master Discipline of your choice to your <a idref="topics-actionchart">Action Chart</a> in <a href="&link.13tplor;">Book 14</a>.</p>
+      <p>If you successfully complete the mission as set in this, the first of the Lone Wolf Grand Master series, you may add a further Grand Master Discipline of your choice to your <a idref="topics-actionchart">Action Chart</a> in <bookref series="lw" book="14tcok">Book 14</bookref>.</p>
 
       <p>For every Grand Master Discipline you possess, in excess of the original four disciplines you begin with, you may add 1 point to your basic <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> score and 2 points to your basic <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points score. These bonus points, together with your extra Grand Master Discipline, your original four Grand Master Disciplines, and any Special Items that you have found and been able to keep during your adventures, may then be carried over and used in the next Grand Master adventure.</p>
      </data>
@@ -1596,15 +1545,15 @@ specialitems
      </meta>
 
      <data>
-      <p>There will be occasions during your adventure when you have to fight an enemy. The enemy&apos;s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points are given in the text. Lone Wolf&apos;s aim in the combat is to kill the enemy by reducing his <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points to zero while losing as few <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points as possible himself.</p>
-      <p>At the start of a combat, enter Lone Wolf&apos;s and the enemy&apos;s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points in the appropriate boxes on the Combat Record section of your <a idref="topics-actionchart">Action Chart</a>. The sequence for combat is as follows:</p>
+      <p>There will be occasions during your adventure when you have to fight an enemy. The enemy<ch.apos/>s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points are given in the text. Lone Wolf<ch.apos/>s aim in the combat is to kill the enemy by reducing his <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points to zero while losing as few <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points as possible himself.</p>
+      <p>At the start of a combat, enter Lone Wolf<ch.apos/>s and the enemy<ch.apos/>s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points in the appropriate boxes on the Combat Record section of your <a idref="topics-actionchart">Action Chart</a>. The sequence for combat is as follows:</p>
       <ol class="paragraphed"> 
        <li><p>Add any extra points gained through your Grand Master Disciplines and Special Items to your current <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> total.</p></li>
        <li>
         <p>Subtract the <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> of your enemy from this total. The result is your Combat Ratio. Enter it on the <a idref="topics-actionchart">Action Chart</a>.</p>
         <p>Example</p>
         <p>Lone Wolf (<a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> 28) is attacked by a pack of Doomwolves (<a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> 30). He is taken by surprise and is not given the opportunity of evading their attack. Lone Wolf has the Grand Master Discipline of Kai-surge to which the Doomwolves are not immune, so Lone Wolf adds 8 points to his <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a>, giving him a total <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> of 36.</p>
-        <p>He subtracts the Doomwolf pack&apos;s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> from his own, giving a Combat Ratio of +6. (36-30 = +6). +6 is noted on the <a idref="topics-actionchart">Action Chart</a> as the Combat Ratio.</p>
+        <p>He subtracts the Doomwolf pack<ch.apos/>s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> from his own, giving a Combat Ratio of +6. (36-30 = +6). +6 is noted on the <a idref="topics-actionchart">Action Chart</a> as the Combat Ratio.</p>
        </li>
        <li><p><a id="kai-stage3">When you have your Combat Ratio</a>, pick a number from the <a idref="topics-randomnumbertable">Random Number Table</a>.</p></li>
        <li>
@@ -1645,12 +1594,12 @@ specialitems
      </meta>
 
      <data>
-      <p>The following table is a guide to the rank and titles you can achieve at each stage of your journey along the road of Kai Grand Mastership. As you successfully complete each adventure in the Lone Wolf Grand Master series, you will gain an additional Grand Master Discipline and progress towards the pinnacle of Kai perfection&emdash;to become a Kai Supreme Master.</p>
+      <p>The following table is a guide to the rank and titles you can achieve at each stage of your journey along the road of Kai Grand Mastership. As you successfully complete each adventure in the Lone Wolf Grand Master series, you will gain an additional Grand Master Discipline and progress towards the pinnacle of Kai perfection<ch.emdash/>to become a Kai Supreme Master.</p>
       <ol>
        <li>Kai Grand Master Senior</li> 
        <li>Kai Grand Master Superior</li>
        <li>Kai Grand Sentinel</li>
-       <li>Kai Grand Defender&emdash;<em>You begin the Lone Wolf Grand Master adventures at this level of Mastery</em></li>
+       <li>Kai Grand Defender<ch.emdash/><em>You begin the Lone Wolf Grand Master adventures at this level of Mastery</em></li>
        <li>Kai Grand Guardian</li>
        <li>Sun Knight</li>
        <li>Sun Lord</li>
@@ -1679,7 +1628,7 @@ specialitems
         <p>If you are a Grand Master who has reached the rank of Kai Grand Guardian (5 Disciplines), you will now benefit from improvements to the following Grand Master Disciplines:</p>
         <dl class="paragraphed">
          <dt>Animal Mastery</dt>
-          <dd><p>Kai Grand Guardians with this discipline are able to  summon a limited number of forest animals to their location. The creatures so summoned will become loyal and willing allies, willing to do the Kai Grand Guardian&apos;s bidding. This ability can only be used in an outdoor setting.</p></dd>
+          <dd><p>Kai Grand Guardians with this discipline are able to  summon a limited number of forest animals to their location. The creatures so summoned will become loyal and willing allies, willing to do the Kai Grand Guardian<ch.apos/>s bidding. This ability can only be used in an outdoor setting.</p></dd>
          <dt>Assimilance</dt>
           <dd><p>Kai Grand Guardians who possess this skill are able to create a cloud of fog-like vapour within 15 yards of their location. This fog will obscure both normal and infra-vision. The duration of the fog increases as a Grand Master rises in rank.</p></dd>
          <dt>Grand Huntmastery</dt>
@@ -1692,8 +1641,8 @@ specialitems
           <dd>
            <p>Grand Masters who have reached the rank of Kai Grand Guardian are able to use the following battle-spells of the Elder Magi:</p>
            <ul>
-            <li>Splinter&emdash;This causes breakable items such as bottles, jugs, mirrors, windows, etc[.], to shatter to pieces. The range of this spell increases as a Grand Master rises in rank.</li>
-            <li>Flameshaft&emdash;This causes the tip of any arrow, or arrow-like missile, to burn fiercely with a magical flame which cannot readily be extinguished by normal means.</li>
+            <li>Splinter<ch.emdash/>This causes breakable items such as bottles, jugs, mirrors, windows, etc[.], to shatter to pieces. The range of this spell increases as a Grand Master rises in rank.</li>
+            <li>Flameshaft<ch.emdash/>This causes the tip of any arrow, or arrow-like missile, to burn fiercely with a magical flame which cannot readily be extinguished by normal means.</li>
            </ul>
           </dd>
         </dl>
@@ -1709,7 +1658,7 @@ specialitems
          <dt>Grand Weaponmastery</dt>
           <dd><p>Sun Knights with this discipline are able to wield <a idref="topics-twohandedweapons">two-handed weapons</a> (e.g. Broadsword, Quarterstaff, Spear, etc.) with full effect, using only one hand.</p></dd>
          <dt>Deliverance</dt>
-          <dd><p>Sun Knights who possess this skill are able to repair serious wounds sustained by creatures other than themselves. By the laying of hands upon the affected creature&apos;s body, a Sun Knight can cause an open wound (or other serious injury) to mend itself. The speed at which this healing takes place increases as a Grand Master rises in rank.</p></dd>
+          <dd><p>Sun Knights who possess this skill are able to repair serious wounds sustained by creatures other than themselves. By the laying of hands upon the affected creature<ch.apos/>s body, a Sun Knight can cause an open wound (or other serious injury) to mend itself. The speed at which this healing takes place increases as a Grand Master rises in rank.</p></dd>
          <dt>Grand Pathsmanship</dt>
           <dd><p>Kai Sun Knights with this skill are able to repel at will all normal-sized insects within a radius of three yards. The range and numbers of insects so affected increases considerably as a Grand Master rises in rank.</p></dd>
          <dt>Grand Nexus</dt>
@@ -1720,8 +1669,8 @@ specialitems
           <dd>
            <p>Grand Masters who have reached the rank of Sun Knight are able to use the following Brotherhood spells:</p>
            <ul>
-            <li>Halt Missile&emdash;This causes any projected or hurled missile (i.e. arrows, axes, crossbow bolts, etc.) which may  pose an immediate threat to the life of a Sun Knight, to cease its flight and remain stationary in mid-air. The effect of the spell lasts for 2&endash;3 seconds, allowing the Sun Knight sufficient time to move away from its line of flight. Initially only one missile can be affected by  this spell, but the number lncreases as a Grand Master rises in rank.</li>
-            <li>Strength&emdash;By casting this spell, a Sun Knight is able to greatly increase his or her physical strength for a short duration. It can be used to lift or move heavy objects, or to effect a temporary increase in <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> scores whilst fighting an enemy in unarmed combat.</li>
+            <li>Halt Missile<ch.emdash/>This causes any projected or hurled missile (i.e. arrows, axes, crossbow bolts, etc.) which may  pose an immediate threat to the life of a Sun Knight, to cease its flight and remain stationary in mid-air. The effect of the spell lasts for 2<ch.endash/>3 seconds, allowing the Sun Knight sufficient time to move away from its line of flight. Initially only one missile can be affected by  this spell, but the number lncreases as a Grand Master rises in rank.</li>
+            <li>Strength<ch.emdash/>By casting this spell, a Sun Knight is able to greatly increase his or her physical strength for a short duration. It can be used to lift or move heavy objects, or to effect a temporary increase in <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> scores whilst fighting an enemy in unarmed combat.</li>
            </ul>
           </dd>
         </dl>
@@ -1741,15 +1690,15 @@ specialitems
          <dt>Grand Huntmastery</dt>
           <dd><p>Kai Sun Lords with this skill are able to see, with acute accuracy, light in the infrared spectrum, ie. they can see complex patterns generated by heat in near or total darkness. They can also see light in the ultraviolet spectrum.</p></dd>
          <dt>Kai-surge</dt>
-          <dd><p>Sun Lords who possess mastery of this Discipline are able to launch a Kai-Blast&emdash;a pulse ofintense psychic energy which is capable of affecting both psychically active and inactive enemies. This form of psychic attack is very effective, more so than a usual Kai-surge, Psi-surge or Mindblast. It can cause an enemy to lose between 2 and 18 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points in one attack. However, use of a Kai-Blast will reduce a Sun Lord&apos;s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points total by 4. It cannot be used in conjunction with any other form of psychic attack.</p></dd>
+          <dd><p>Sun Lords who possess mastery of this Discipline are able to launch a Kai-Blast<ch.emdash/>a pulse ofintense psychic energy which is capable of affecting both psychically active and inactive enemies. This form of psychic attack is very effective, more so than a usual Kai-surge, Psi-surge or Mindblast. It can cause an enemy to lose between 2 and 18 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points in one attack. However, use of a Kai-Blast will reduce a Sun Lord<ch.apos/>s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points total by 4. It cannot be used in conjunction with any other form of psychic attack.</p></dd>
          <dt>Telegnosis</dt>
           <dd><p>Sun Lords who possess this Discipline are able to alter their body-weight in order to walk successfully upon different kinds of surface, eg: water, mud, lava and quicksand. Time duration and degree of surface difficulty increases as a Grand Master rises in rank.</p></dd>
          <dt>Magi-magic</dt>
           <dd>
            <p>Grand Masters who have reached the rank of Sun Lord are able to use the following battle-spells of the Elder Magi:</p>
            <ul>
-            <li>Penetrate&emdash;This increases the penetrative energy of any arrow, or arrow-like missile, launched by a Sun Lord.</li>
-            <li>Energy Grasp&emdash;This spell enables a Sun Lord to discharge a powerful electrical force into anything he or she touches. It is similar in effect to the Brotherhood spell <quote>Lightning Hand</quote>, but differs in that it is easier to control and channel the resulting energy. It also requires the actual touching of an object or an enemy to effect the spell.</li>
+            <li>Penetrate<ch.emdash/>This increases the penetrative energy of any arrow, or arrow-like missile, launched by a Sun Lord.</li>
+            <li>Energy Grasp<ch.emdash/>This spell enables a Sun Lord to discharge a powerful electrical force into anything he or she touches. It is similar in effect to the Brotherhood spell <quote>Lightning Hand</quote>, but differs in that it is easier to control and channel the resulting energy. It also requires the actual touching of an object or an enemy to effect the spell.</li>
            </ul>
           </dd>
         </dl>
@@ -1776,8 +1725,8 @@ specialitems
           <dd>
            <p>Grand Masters who have reached the rank of Sun Thane we able to use the following Brotherhood spells:</p>
            <ul>
-            <li>Slow Fall&emdash;By casting this spell, Kai Sun Thanes are able to slow their rate of free-falling to three feet per second, thereby avoiding damage upon landing while the spell is in effect. The duration of the spell is limited at first, but it steadily increases as a Grand Master rises in rank.</li>
-            <li>Breathe Water&emdash;Using this spell, a Kai Sun Thane is able to breathe underwater for ten minutes. The duration of effect increases as a Grand Master rises in rank.</li>
+            <li>Slow Fall<ch.emdash/>By casting this spell, Kai Sun Thanes are able to slow their rate of free-falling to three feet per second, thereby avoiding damage upon landing while the spell is in effect. The duration of the spell is limited at first, but it steadily increases as a Grand Master rises in rank.</li>
+            <li>Breathe Water<ch.emdash/>Using this spell, a Kai Sun Thane is able to breathe underwater for ten minutes. The duration of effect increases as a Grand Master rises in rank.</li>
            </ul>
           </dd>
         </dl>
@@ -1803,8 +1752,8 @@ specialitems
           <dd>
            <p>Grand Masters who have reached the rank of Grand Thane are able to use the following Old Kingdom battle-spells:</p>
            <ul>
-            <li>Power Glyph&emdash;By inscribing this ancient glyph (a secret magical symbol) upon a door, an archway, or even upon the lid of a closed box, a Kai Grand Thane is able to protect items or portals from being opened. Any creature attempting to open a portal protected in such a way will release the power of the glyph and suffer its deadly effects.</li>
-            <li>Hold Enemy&emdash;Using this spell, a Kai Grand Thane is able to immobilize a single hostile creature anywhere within twenty feet of themselves. The duration of the spell is dependent upon the size and strength of the targetted creature. The range and duration of effect of this spell increases as a Grand Master rises in rank.</li>
+            <li>Power Glyph<ch.emdash/>By inscribing this ancient glyph (a secret magical symbol) upon a door, an archway, or even upon the lid of a closed box, a Kai Grand Thane is able to protect items or portals from being opened. Any creature attempting to open a portal protected in such a way will release the power of the glyph and suffer its deadly effects.</li>
+            <li>Hold Enemy<ch.emdash/>Using this spell, a Kai Grand Thane is able to immobilize a single hostile creature anywhere within twenty feet of themselves. The duration of the spell is dependent upon the size and strength of the targetted creature. The range and duration of effect of this spell increases as a Grand Master rises in rank.</li>
            </ul>
           </dd>
         </dl>
@@ -1825,13 +1774,13 @@ specialitems
          <dt>Kai-screen</dt>
           <dd><p>Grand Crowns who possess mastery of this Discipline are able to mask the goodly aura which radiates naturally from their minds and bodies. Additionally, Grand Crowns can deliberately alter these auras to give a false impression of themselves to creatures who are sensitive to such psychic auras.</p></dd>
          <dt>Grand Nexus</dt>
-          <dd><p>Grand Crowns who possess this Discipline are able to speak a Kai Power Word&emdash;a holy utterance which will cause physical and psychic damage to any single creature within a radius of thirty feet. The degree of damage so caused, and the resultant drain upon a Grand Crown&apos;s reserves of <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a>, are dependent upon individual circumstances. The power and range of this skill increases as a Grand Master rises in rank.</p></dd>
+          <dd><p>Grand Crowns who possess this Discipline are able to speak a Kai Power Word<ch.emdash/>a holy utterance which will cause physical and psychic damage to any single creature within a radius of thirty feet. The degree of damage so caused, and the resultant drain upon a Grand Crown<ch.apos/>s reserves of <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a>, are dependent upon individual circumstances. The power and range of this skill increases as a Grand Master rises in rank.</p></dd>
          <dt>Kai-alchemy</dt>
           <dd>
            <p>Grand Masters who have reached the rank of Grand Crown are able to use the following Brotherhood spells:</p>
            <ul>
-            <li>Teleport&emdash;By casting this spell, Kai Grand Crowns can transport themselves physically to any place which they can see with their own eyes. The spell will carry the caster, his equipment and clothing to his chosen sighted destination. It cannot be used on any other living creature and it will not transport any other living creature along with the caster. Use of this spell will cost the caster between 1 and 5 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points every time it is used. This cost reduces as a Kai Grand Master increases in rank.</li>
-            <li>See Illusion&emdash;Using this spell, a Kai Grand Crown is able to detect an illusion and know immediately its true identity or purpose.</li>
+            <li>Teleport<ch.emdash/>By casting this spell, Kai Grand Crowns can transport themselves physically to any place which they can see with their own eyes. The spell will carry the caster, his equipment and clothing to his chosen sighted destination. It cannot be used on any other living creature and it will not transport any other living creature along with the caster. Use of this spell will cost the caster between 1 and 5 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points every time it is used. This cost reduces as a Kai Grand Master increases in rank.</li>
+            <li>See Illusion<ch.emdash/>Using this spell, a Kai Grand Crown is able to detect an illusion and know immediately its true identity or purpose.</li>
            </ul>
           </dd>
         </dl>
@@ -1846,11 +1795,11 @@ specialitems
          <dt>Animal Mastery</dt>
           <dd><p>Kai Sun Princes with this Discipline are able to alter their appearance, including clothing and equipment, to take on the guise of any animal that they may come into contact with. This physical change will only be witnessed by the animal in question.</p></dd>
          <dt>Deliverance</dt>
-          <dd><p>Sun Princes with this ability are able to cause the regeneration of lost body parts, ie, [i.e.] hands, feet, arms, legs, bones and internal organs.  This improved Discipline can be used to repair a Sun Prince&apos;s own body, or that of another person or creature. The time required to effect regeneration depends on the size and relative importance of the body part affected.</p></dd>
+          <dd><p>Sun Princes with this ability are able to cause the regeneration of lost body parts, ie, [i.e.] hands, feet, arms, legs, bones and internal organs.  This improved Discipline can be used to repair a Sun Prince<ch.apos/>s own body, or that of another person or creature. The time required to effect regeneration depends on the size and relative importance of the body part affected.</p></dd>
          <dt>Assimilance</dt>
           <dd><p>Kai Sun Princes who possess this Discipline are able to create an illusory double of themselves and project this image up to a range of thirty feet. The Sun Prince must remain in visual contact with his/her image in order to maintain the illusion. Physical, magical, and psychic attacks upon the illusory image will cause no injury. The range of this ability increases substantially when a Sun Prince attains the rank of Kai Supreme Master.</p></dd>
          <dt>Kai-surge</dt>
-          <dd><p>Sun Princes who possess mastery of this Discipline are able to focus their psychic power into a Kai-Ray: a laser-like beam of mental energy capable of penetrating the strongest of psychic defences. This ability can be used once during a combat to reduce an enemy&apos;s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score by 15 points. However, use of this Kai-Ray will also reduce a Sun Prince&apos;s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score by 4  points. It cannot be used if a Sun Prince&apos;s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score is 10 or less and it cannot be used in conjunction with any other form of psychic attack.</p></dd>
+          <dd><p>Sun Princes who possess mastery of this Discipline are able to focus their psychic power into a Kai-Ray: a laser-like beam of mental energy capable of penetrating the strongest of psychic defences. This ability can be used once during a combat to reduce an enemy<ch.apos/>s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score by 15 points. However, use of this Kai-Ray will also reduce a Sun Prince<ch.apos/>s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score by 4  points. It cannot be used if a Sun Prince<ch.apos/>s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score is 10 or less and it cannot be used in conjunction with any other form of psychic attack.</p></dd>
          <dt>Kai-screen</dt>
           <dd><p>Sun Princes who possess this Discipline are able to create a mental sanctuary in which to keep safe their minds <!-- JDOUGAN: [IMHO - keep their minds safe] -->from psychic assault. Creation of this sanctuary does not require thought or concentration; it occurs instantly whenever a Kai Sun Prince is subjected to psychic attack. The defensive strength of this sanctuary further increases when a Sun Prince attains the rank of Kai Supreme Master.</p></dd>
          <dt>Grand Huntmastery</dt>
@@ -1885,9 +1834,9 @@ specialitems
 
    <data>
     <p>To keep a record of your adventure, use the <a idref="topics-actionchart">Action Chart</a>.</p>
-    <p>Before you set off on your adventure, you must discover how well your Shianti masters have prepared you for your quest by determining your fighting prowess&emdash;<a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a>&emdash;your state of mind&emdash;<a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a>&emdash;and your physical stamina&emdash;<a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a>. To do this take a pencil and, with eyes closed, point with the blunt end of it on to the <a idref="topics-randomnumbertable">Random Number Table</a>. If you pick 0 it counts as zero.</p>
+    <p>Before you set off on your adventure, you must discover how well your Shianti masters have prepared you for your quest by determining your fighting prowess<ch.emdash/><a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a><ch.emdash/>your state of mind<ch.emdash/><a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a><ch.emdash/>and your physical stamina<ch.emdash/><a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a>. To do this take a pencil and, with eyes closed, point with the blunt end of it on to the <a idref="topics-randomnumbertable">Random Number Table</a>. If you pick 0 it counts as zero.</p>
     <p>The first number that you pick from the <a idref="topics-randomnumbertable">Random Number Table</a> in this way represents your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a>. Add 10 to the number you picked and write the total in the <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> section of your <a idref="topics-actionchart">Action Chart</a>. (e.g., if your pencil fell on the number 4 in the <a idref="topics-randomnumbertable">Random Number Table</a> you would write in a <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> of 14.) When you fight, your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> will be pitted against that of your enemy. A high score in this section is therefore very desirable.</p>
-    <p>The second number that you pick from the <a idref="topics-randomnumbertable">Random Number Table</a> represents your <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a>. Add 20 to this number and write the total in the <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> section of your <a idref="topics-actionchart">Action Chart</a> (e.g., if your pencil fell on the number 6 in the <a idref="topics-randomnumbertable">Random Number Table</a> you would have a <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> of 26). If you decide to use a spell or utilize the power of your <a idref="topics-wizardsstaff">Wizard&apos;s Staff</a>, then you will lose <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points. If at any time your <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> falls to zero, you may not use any of your spells or your <a idref="topics-wizardsstaff">Wizard&apos;s Staff</a>. Lost <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points can be regained during the course of the adventure, and it is possible for your <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points to rise above the total with which you start your adventure.</p>
+    <p>The second number that you pick from the <a idref="topics-randomnumbertable">Random Number Table</a> represents your <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a>. Add 20 to this number and write the total in the <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> section of your <a idref="topics-actionchart">Action Chart</a> (e.g., if your pencil fell on the number 6 in the <a idref="topics-randomnumbertable">Random Number Table</a> you would have a <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> of 26). If you decide to use a spell or utilize the power of your <a idref="topics-wizardsstaff">Wizard<ch.apos/>s Staff</a>, then you will lose <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points. If at any time your <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> falls to zero, you may not use any of your spells or your <a idref="topics-wizardsstaff">Wizard<ch.apos/>s Staff</a>. Lost <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points can be regained during the course of the adventure, and it is possible for your <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points to rise above the total with which you start your adventure.</p>
     <p>The third number that you pick from the <a idref="topics-randomnumbertable">Random Number Table</a> represents your powers of <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a>. Add 20 to this number and write the total in the <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> section of your <a idref="topics-actionchart">Action Chart</a> (e.g., if your pencil fell on the number 6 on the <a idref="topics-randomnumbertable">Random Number Table</a> you would have 26 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points). If you are wounded in combat, you will lose <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points. If at any time your <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points fall to zero, you are dead and the adventure is over. Lost <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points can be regained during the course of the adventure but can never rise above the number with which you start your adventure.</p>
 
     <section class="mainmatter-separate" id="powers">
@@ -1915,7 +1864,7 @@ specialitems
        <meta><title>Enchantment</title></meta>
 
        <data>
-        <p>The power of Enchantment enables a wizard to charm or beguile other creatures, and create illusions in the minds of others. He will be able to extract information from others, place thoughts and compulsions into another&apos;s mind or cause them to believe that imaginary events are actually taking place. Some magical or highly intelligent beings may be immune to the powers of Enchantment</p>
+        <p>The power of Enchantment enables a wizard to charm or beguile other creatures, and create illusions in the minds of others. He will be able to extract information from others, place thoughts and compulsions into another<ch.apos/>s mind or cause them to believe that imaginary events are actually taking place. Some magical or highly intelligent beings may be immune to the powers of Enchantment</p>
         <p>If you choose this power, write <quote>Enchantment</quote> on your <a idref="topics-actionchart">Action Chart</a>.</p>
        </data>
       </section>
@@ -1966,7 +1915,7 @@ specialitems
       </section>
 
       <section class="mainmatter" id="staff">
-       <meta><title>Wizard&apos;s Staff</title></meta>
+       <meta><title>Wizard<ch.apos/>s Staff</title></meta>
 
        <data>
         <p>Your Staff is your most valuable possession. It looks and feels like an ordinary quarterstaff, yet it is stronger than any known metal. This is your main combat weapon, for you are untrained in the use of any other form of armed combat. It contains a potent force that is unleashed at will by the power of your mind, and causes a beam of destructive power to hurtle from its tip. Every time you unleash this power you must deduct 1 <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> point.</p>
@@ -1986,7 +1935,7 @@ specialitems
      </meta>
 
      <data>
-      <p>You wear the grey robe and hooded cloak of a Shianti Wizard. Your only weapon is your <a idref="topics-wizardsstaff">Wizard&apos;s Staff</a> (note this on your <a idref="topics-actionchart">Action Chart</a> under <a idref="topics-weapons">Weapons</a>). You wear a <a idref="topics-backpack">Backpack</a> containing 4 Meals (note under Meals on your <a idref="topics-actionchart">Action Chart</a>), and you have been given a map of the Shadakine Empire (note under <a idref="topics-specialitems">Special Items</a> on your <a idref="topics-actionchart">Action Chart</a>) which you place inside your robe.</p>
+      <p>You wear the grey robe and hooded cloak of a Shianti Wizard. Your only weapon is your <a idref="topics-wizardsstaff">Wizard<ch.apos/>s Staff</a> (note this on your <a idref="topics-actionchart">Action Chart</a> under <a idref="topics-weapons">Weapons</a>). You wear a <a idref="topics-backpack">Backpack</a> containing 4 Meals (note under Meals on your <a idref="topics-actionchart">Action Chart</a>), and you have been given a map of the Shadakine Empire (note under <a idref="topics-specialitems">Special Items</a> on your <a idref="topics-actionchart">Action Chart</a>) which you place inside your robe.</p>
       <p>If you have chosen Alchemy as one of your Magical Powers, then you will have a leather pouch for herbs and potions hanging from your belt. The <a idref="topics-herbpouch">Herb Pouch</a> contains the following:</p>
 
       <ul>
@@ -2015,12 +1964,12 @@ specialitems
         <p>Now that you have your equipment, the following list shows you how it is carried. You do not need to make notes, but you should refer back to this list in the course of your adventure.</p>
 
         <ul>
-         <li><a idref="topics-wizardsstaff">Wizard&apos;s Staff</a>&emdash;Carried in the hand.</li>
-         <li><a idref="topics-backpack">Backpack</a>&emdash;slung over the shoulder.</li>
-         <li>Meals&emdash;carried in the <a idref="topics-backpack">Backpack</a>.</li>
-         <li>Jewelled Dagger&emdash;tucked into your belt.</li>
-         <li>Magic Talisman&emdash;worn on a chain around your neck</li>
-         <li>Vial of Laumspur&emdash;carried in the <a idref="topics-backpack">Backpack</a>.</li>
+         <li><a idref="topics-wizardsstaff">Wizard<ch.apos/>s Staff</a><ch.emdash/>Carried in the hand.</li>
+         <li><a idref="topics-backpack">Backpack</a><ch.emdash/>slung over the shoulder.</li>
+         <li>Meals<ch.emdash/>carried in the <a idref="topics-backpack">Backpack</a>.</li>
+         <li>Jewelled Dagger<ch.emdash/>tucked into your belt.</li>
+         <li>Magic Talisman<ch.emdash/>worn on a chain around your neck</li>
+         <li>Vial of Laumspur<ch.emdash/>carried in the <a idref="topics-backpack">Backpack</a>.</li>
         </ul>
        </data>
       </section>
@@ -2031,7 +1980,7 @@ specialitems
        <data>
         <dl>
          <dt><a idref="topics-weapons">Weapons</a></dt>
-          <dd>The maximum number of weapons that you may carry is <em>two</em>. Your <a idref="topics-wizardsstaff">Wizard&apos;s Staff</a> counts as one weapon.</dd>
+          <dd>The maximum number of weapons that you may carry is <em>two</em>. Your <a idref="topics-wizardsstaff">Wizard<ch.apos/>s Staff</a> counts as one weapon.</dd>
 
          <dt><a idref="topics-backpack">Backpack Items</a></dt>
           <dd>These must be stored in your <a idref="topics-backpack">Backpack</a>. Because space is limited, you may only keep a maximum of eight articles, including Meals, in your <a idref="topics-backpack">Backpack</a> at any one time.</dd>
@@ -2057,7 +2006,7 @@ specialitems
        <data>
         <dl>
          <dt><a idref="topics-weapons">Weapons</a></dt>
-          <dd>Your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> depends on your <a idref="topics-wizardsstaff">Wizard&apos;s Staff</a>. If you do not possess your Staff when you enter combat you must deduct 6 points from your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a>. If you enter a combat without a weapon, deduct 8 points from your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and fight with your bare hands. If you find a weapon during the adventure, you may pick it up and use it. (Remember that you can only carry <em>two</em> weapons at once.)</dd>
+          <dd>Your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> depends on your <a idref="topics-wizardsstaff">Wizard<ch.apos/>s Staff</a>. If you do not possess your Staff when you enter combat you must deduct 6 points from your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a>. If you enter a combat without a weapon, deduct 8 points from your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and fight with your bare hands. If you find a weapon during the adventure, you may pick it up and use it. (Remember that you can only carry <em>two</em> weapons at once.)</dd>
 
          <dt><a idref="topics-backpack">Backpack Items</a></dt>
           <dd>During your travels you will discover various useful items which you may wish to keep. (Remember that you can only carry a maximum of eight items in your <a idref="topics-backpack">Backpack</a> at any one time.) You may exchange or discard them at any point when you are not involved in combat.</dd>
@@ -2085,8 +2034,8 @@ specialitems
      </meta>
 
      <data>
-      <p>There will be occasions during your adventure when you have to fight an enemy. The enemy&apos;s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points are given in the text. Grey Star&apos;s aim during the combat is to kill the enemy by reducing his <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points to zero while at the same time losing as few <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points as possible himself.</p>
-      <p>At the start of a combat, enter Grey Star&apos;s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> and <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points and the enemy&apos;s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points in the appropriate boxes on the Combat Record section of your <a idref="topics-actionchart">Action Chart</a>.</p>
+      <p>There will be occasions during your adventure when you have to fight an enemy. The enemy<ch.apos/>s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> and <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points are given in the text. Grey Star<ch.apos/>s aim during the combat is to kill the enemy by reducing his <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points to zero while at the same time losing as few <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points as possible himself.</p>
+      <p>At the start of a combat, enter Grey Star<ch.apos/>s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> and <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points and the enemy<ch.apos/>s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points in the appropriate boxes on the Combat Record section of your <a idref="topics-actionchart">Action Chart</a>.</p>
       <p>The sequence for combat is as follows:</p>
       <ol class="paragraphed">
        <li>
@@ -2094,21 +2043,21 @@ specialitems
        <li>
         <p>Subtract the <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> of your enemy from this total. The result is your Combat Ratio. Enter it on the <a idref="topics-actionchart">Action Chart</a>.</p></li>
        <li>
-        <p><a id="wrld-stage3">If you are using your</a> <a idref="topics-wizardsstaff">Wizard&apos;s Staff</a>, decide how many <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points you wish to use. (Remember, you must expend at least 1 point.) Enter this number on your Combat Record in the box marked <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a>.</p>
+        <p><a id="wrld-stage3">If you are using your</a> <a idref="topics-wizardsstaff">Wizard<ch.apos/>s Staff</a>, decide how many <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points you wish to use. (Remember, you must expend at least 1 point.) Enter this number on your Combat Record in the box marked <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a>.</p>
         <p>Example</p>
-	<p>Grey Star (<a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> 15, <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> 23) is ambushed by a Deathgaunt (<a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> 20). He is not given the opportunity to evade combat, but he can use his <a idref="topics-wizardsstaff">Wizard&apos;s Staff</a> against the creature as it swoops down on him. He subtracts the Deathgaunt&apos;s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> from his own, giving a Combat Ratio of &minus;5. (15 &minus; 20 = &minus;5). &minus;5 is noted on the <a idref="topics-actionchart">Action Chart</a> as the Combat Ratio. Grey Star decides to use 2 <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points, which is noted on the <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> box of the Combat Record.</p></li>
+	<p>Grey Star (<a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> 15, <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> 23) is ambushed by a Deathgaunt (<a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> 20). He is not given the opportunity to evade combat, but he can use his <a idref="topics-wizardsstaff">Wizard<ch.apos/>s Staff</a> against the creature as it swoops down on him. He subtracts the Deathgaunt<ch.apos/>s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> from his own, giving a Combat Ratio of <ch.minus/>5. (15 <ch.minus/> 20 = <ch.minus/>5). <ch.minus/>5 is noted on the <a idref="topics-actionchart">Action Chart</a> as the Combat Ratio. Grey Star decides to use 2 <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points, which is noted on the <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> box of the Combat Record.</p></li>
 
        <li><p>When you have decided upon the number of <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points you wish to use, and have determined your Combat Ratio, pick a number from the <a idref="topics-randomnumbertable">Random Number Table</a>.</p></li>
        <li>
         <p>Turn to the <a idref="topics-combatresultstable">Combat Results Table</a> on the inside back cover of the book. Along the top of the chart are shown the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the random number that you have picked. (The random numbers appear on the side of the chart.) You now have the number of <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points lost by Grey Star. To calculate the number lost by the enemy, multiply this by the number of <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points that Grey Star elected to use. Now you have the final number of <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points lost by both Grey Star and his enemy in this round of combat. (E represents points lost by the enemy; GS represents points lost by Grey Star.)</p>
 	 <p>Example</p>
-	 <p>The Combat Ratio between Grey Star and the Deathgaunt has been established as &minus;5, and Grey Star&apos;s <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points used as 2. If the number taken from the <a idref="topics-randomnumbertable">Random Number Table</a> is a 6, then the result of the first round of combat is:</p>
+	 <p>The Combat Ratio between Grey Star and the Deathgaunt has been established as <ch.minus/>5, and Grey Star<ch.apos/>s <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points used as 2. If the number taken from the <a idref="topics-randomnumbertable">Random Number Table</a> is a 6, then the result of the first round of combat is:</p>
         <ul>
          <li>Grey Star loses 4 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points.</li>
          <li>Deathgaunt loses 5 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points, multiplied by 2 <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points, giving a total of 10 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points lost in all.</li>
         </ul>
        </li>
-       <li><p>On the <a idref="topics-actionchart">Action Chart</a>, mark the changes in <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points to the participants in the combat, and Grey Star&apos;s amended <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points total.</p></li>
+       <li><p>On the <a idref="topics-actionchart">Action Chart</a>, mark the changes in <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points to the participants in the combat, and Grey Star<ch.apos/>s amended <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> points total.</p></li>
        <li><p>Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.</p></li>
        <li><p>Repeat the sequence from <a idref="wrld-stage3">Stage 3</a>.</p></li>
       </ol>
@@ -2163,7 +2112,7 @@ specialitems
      <data>
       <dl class="paragraphed">
        <dt><a id="topics-actionchart">Action Chart</a></dt>
-        <dd><p>The <a idref="topics-actionchart">Action Chart</a> is a set of tables which contain all information about your character such as items carried, skills possessed, etc. The <a idref="topics-actionchart">Action Chart</a> can take many forms. You may use a specialized program like StatsKeeper to help you keep track of character statistics. You may use a spreadsheet document. You may print out the <a idref="topics-actionchart">Action Chart</a> that appears in the Internet Editions of the books and fill in the blanks. As you become familiar with the rules, you may want to create your own by hand on paper. The method you choose doesn&apos;t matter as long as you&apos;re comfortable with it.</p></dd>
+        <dd><p>The <a idref="topics-actionchart">Action Chart</a> is a set of tables which contain all information about your character such as items carried, skills possessed, etc. The <a idref="topics-actionchart">Action Chart</a> can take many forms. You may use a specialized program like StatsKeeper to help you keep track of character statistics. You may use a spreadsheet document. You may print out the <a idref="topics-actionchart">Action Chart</a> that appears in the Internet Editions of the books and fill in the blanks. As you become familiar with the rules, you may want to create your own by hand on paper. The method you choose doesn<ch.apos/>t matter as long as you<ch.apos/>re comfortable with it.</p></dd>
        <dt><a id="topics-adgana">Adgana</a></dt>
         <dd>
          <p>(<a idref="topics-backpack">Backpack Item</a>) The leaves of the Adgana plant are a potent narcotic popular among the warriors of Magnamund. When dried, crushed, and eaten, they provide a potent enhancement to <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> for the duration of a fight, but at a high potential cost.</p>
@@ -2171,13 +2120,13 @@ specialitems
          <p>Regardless of whether addiction is suffered on the first use or not, future doses of Adgana will provide a bonus of only +3 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a>. Addiction must still be checked for at the end of a combat, but now occurs on a pick of 0, 1, 2, or 3 from the <a idref="topics-randomnumbertable">Random Number Table</a>.</p>
         </dd>
        <dt><a id="topics-alether">Alether</a></dt>
-        <dd><p>(<a idref="topics-backpack">Backpack Item</a>) This plant is common throughout much of Magnamund. Its orange berries are renowned for their ability to improve combat prowess either when eaten whole or when the juice of the crushed berries is drunk. Alether potions or berries typically provide a bonus of +2 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> for the duration of a single fight, but the amount of the bonus is always specified when you find the item. It is uncertain whether or not Alether&apos;s effects should last for a single enemy or for all enemies in one numbered section.</p></dd>
+        <dd><p>(<a idref="topics-backpack">Backpack Item</a>) This plant is common throughout much of Magnamund. Its orange berries are renowned for their ability to improve combat prowess either when eaten whole or when the juice of the crushed berries is drunk. Alether potions or berries typically provide a bonus of +2 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> for the duration of a single fight, but the amount of the bonus is always specified when you find the item. It is uncertain whether or not Alether<ch.apos/>s effects should last for a single enemy or for all enemies in one numbered section.</p></dd>
        <dt><a id="topics-armour">Armour</a></dt>
-        <dd><p>There is an interesting blind spot in the rules regarding armour which increases your <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> (e.g. <a idref="topics-chainmailwaistcoat">Chainmail Waistcoats</a> and <a idref="topics-paddedleatherwaistcoat">Padded Leather Waistcoats</a>). For example, if you are wearing a piece of armour that gives you a 4 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point bonus and your current <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point score is less than or equal to 4, what happens if you lose or discard the armour? Your <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score has fallen to zero or below, so strictly speaking, you should be dead. This doesn&apos;t mesh well with reality, so use your best judgement.</p></dd>
+        <dd><p>There is an interesting blind spot in the rules regarding armour which increases your <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> (e.g. <a idref="topics-chainmailwaistcoat">Chainmail Waistcoats</a> and <a idref="topics-paddedleatherwaistcoat">Padded Leather Waistcoats</a>). For example, if you are wearing a piece of armour that gives you a 4 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point bonus and your current <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point score is less than or equal to 4, what happens if you lose or discard the armour? Your <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score has fallen to zero or below, so strictly speaking, you should be dead. This doesn<ch.apos/>t mesh well with reality, so use your best judgement.</p></dd>
        <dt><a id="topics-axe">Axe</a></dt>
         <dd><p>(<a idref="topics-weapons">Weapon</a> carried in the hand)</p></dd>
        <dt><a id="topics-arrow">Arrow</a></dt>
-        <dd><p>(<a idref="topics-specialitems">Special Item</a> carried in a <a idref="topics-quiver">Quiver</a>) This item is carried in a <a idref="topics-quiver">Quiver</a> and so doesn&apos;t take up any more space as a <a idref="topics-weapons">Weapon</a> or <a idref="topics-specialitems">Special Item</a> than the <a idref="topics-quiver">Quiver</a> required to carry it. You must possess an Arrow in order to use a <a idref="topics-bow">Bow</a>.</p></dd>
+        <dd><p>(<a idref="topics-specialitems">Special Item</a> carried in a <a idref="topics-quiver">Quiver</a>) This item is carried in a <a idref="topics-quiver">Quiver</a> and so doesn<ch.apos/>t take up any more space as a <a idref="topics-weapons">Weapon</a> or <a idref="topics-specialitems">Special Item</a> than the <a idref="topics-quiver">Quiver</a> required to carry it. You must possess an Arrow in order to use a <a idref="topics-bow">Bow</a>.</p></dd>
       </dl>
      </data>
     </section>
@@ -2192,11 +2141,11 @@ specialitems
      <data>
       <dl class="paragraphed">
        <dt><a id="topics-backpack">Backpack</a></dt>
-        <dd><p>Your Backpack is used to carry various items. The maximum number of items that can be carried in your Backpack in the Kai and Magnakai series is eight. If you lose your Backpack, you cannot keep any Backpack Items until you find a Backpack in which to keep them. If you have lost your Backpack in an adventure and haven&apos;t yet found one before beginning the next adventure, you will be given a new one when you choose your equipment.</p></dd>
+        <dd><p>Your Backpack is used to carry various items. The maximum number of items that can be carried in your Backpack in the Kai and Magnakai series is eight. If you lose your Backpack, you cannot keep any Backpack Items until you find a Backpack in which to keep them. If you have lost your Backpack in an adventure and haven<ch.apos/>t yet found one before beginning the next adventure, you will be given a new one when you choose your equipment.</p></dd>
        <dt><a id="topics-beltpouch">Belt Pouch</a></dt>
         <dd><p>Your Belt Pouch stores 50 <a idref="topics-goldcrown">Gold Crowns</a> or an equivalent amount of another <a idref="topics-currency">currency</a>.</p></dd>
        <dt><a id="topics-bow">Bow</a></dt>
-        <dd><p>(<a idref="topics-weapons">Weapon</a> carried in the hand) You must have at least one <a idref="topics-arrow">Arrow</a> (usually carried in a <a idref="topics-quiver">Quiver</a>) to use a Bow&emdash;more if the text requires it. You cannot use a Bow in combat, but will be told in the text when you have an opportunity to use it. If you enter combat armed only with a Bow, it is the same as if you were unarmed.</p></dd>
+        <dd><p>(<a idref="topics-weapons">Weapon</a> carried in the hand) You must have at least one <a idref="topics-arrow">Arrow</a> (usually carried in a <a idref="topics-quiver">Quiver</a>) to use a Bow<ch.emdash/>more if the text requires it. You cannot use a Bow in combat, but will be told in the text when you have an opportunity to use it. If you enter combat armed only with a Bow, it is the same as if you were unarmed.</p></dd>
        <dt><a id="topics-broadsword">Broadsword</a></dt>
         <dd><p>(<a idref="topics-weapons">Weapon</a> carried in the hand) This <a idref="topics-weapons">Weapon</a> requires the use of <a idref="topics-twohandedweapons">two hands</a> in combat.</p></dd>
       </dl>
@@ -2215,10 +2164,10 @@ specialitems
        <dt><a id="topics-chainmailwaistcoat">Chainmail Waistcoat</a></dt>
         <dd><p>(<a idref="topics-specialitems">Special Item</a> worn on the body) The Chainmail Waistcoat <a idref="topics-armour">armour</a> adds 4 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points to your total. It may be used in conjunction with a <a idref="topics-paddedleatherwaistcoat">Padded Leather Waistcoat</a> for a cumulative 6 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point bonus. [cite LWCN]</p></dd>
        <dt><a id="topics-combatratio">Combat Ratio</a></dt>
-        <dd><p>The Combat Ratio is not a true ratio in the mathematical sense. It is the difference between your character&apos;s <a idref="topics-combatskill"><typ class="attribute">COMBAT RATIO</typ></a> and that of his opponent&apos;s. For example, if your character&apos;s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> is 21 and his opponent&apos;s is 22, the Combat Ratio is -1 (21&nbsp;-&nbsp;20&nbsp;=&nbsp;-1). <a idref="topics-negativenumbers">Negative</a> Combat Ratios are valid.</p></dd>
+        <dd><p>The Combat Ratio is not a true ratio in the mathematical sense. It is the difference between your character<ch.apos/>s <a idref="topics-combatskill"><typ class="attribute">COMBAT RATIO</typ></a> and that of his opponent<ch.apos/>s. For example, if your character<ch.apos/>s <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> is 21 and his opponent<ch.apos/>s is 22, the Combat Ratio is <ch.minus/>1 (21<ch.thinspace/><ch.minus/><ch.thinspace/>20<ch.thinspace/>=<ch.thinspace/><ch.minus/>1). <a idref="topics-negativenumbers">Negative</a> Combat Ratios are valid.</p></dd>
        <dt><a id="topics-combatresultstable">Combat Results Table</a></dt>
         <dd>
-         <p>The Combat Results Table is used to determine your character&apos;s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ> points</a> loss and that of his opponent during a single round of combat. You cross-reference the <a idref="topics-combatratio">Combat Ratio</a> with the number chosen from the <a idref="topics-randomnumbertable">Random Number Table</a>. (see <a idref="appb">Appendix B: Example Combat Results Table</a>) For example, if the <a idref="topics-combatratio">Combat Ratio</a> is <a idref="topics-negativenumbers">-4</a> and the random number is 7, you would find the column that has <a idref="topics-negativenumbers">-4</a> at the top (note that most columns have two or more <a idref="topics-combatratio">Combat Ratios</a>) and the row that 7 on the side. Where that row and that column intersect, the opponents&apos; <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ> point</a> loss is found. (see the example)</p>
+         <p>The Combat Results Table is used to determine your character<ch.apos/>s <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ> points</a> loss and that of his opponent during a single round of combat. You cross-reference the <a idref="topics-combatratio">Combat Ratio</a> with the number chosen from the <a idref="topics-randomnumbertable">Random Number Table</a>. (see <a idref="appb">Appendix B: Example Combat Results Table</a>) For example, if the <a idref="topics-combatratio">Combat Ratio</a> is <a idref="topics-negativenumbers"><ch.minus/>4</a> and the random number is 7, you would find the column that has <a idref="topics-negativenumbers"><ch.minus/>4</a> at the top (note that most columns have two or more <a idref="topics-combatratio">Combat Ratios</a>) and the row that 7 on the side. Where that row and that column intersect, the opponents<ch.apos/> <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ> point</a> loss is found. (see the example)</p>
          <illustration class="inline">
           <meta>
            <creator>Jonathan Blake</creator>
@@ -2227,11 +2176,11 @@ specialitems
          </illustration>
         </dd>
        <dt><a id="topics-combatskill">Combat Skill</a></dt>
-        <dd><p>This is a measurement of your overall fighting prowess which can be effected by many things such as equipment carried, how surprised you are by an attack, your skills, etc. When in combat, your <typ class="attribute">COMBAT SKILL</typ> is compared to your enemy&apos;s&emdash;the higher your <typ class="attribute">COMBAT SKILL</typ> score the better.</p></dd>
+        <dd><p>This is a measurement of your overall fighting prowess which can be effected by many things such as equipment carried, how surprised you are by an attack, your skills, etc. When in combat, your <typ class="attribute">COMBAT SKILL</typ> is compared to your enemy<ch.apos/>s<ch.emdash/>the higher your <typ class="attribute">COMBAT SKILL</typ> score the better.</p></dd>
        <dt><a id="topics-cs">CS</a></dt>
         <dd><p>Abbreviation for <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a></p></dd>
        <dt><a id="topics-currency">Currency</a></dt>
-        <dd><p>There are various forms of currency in use throughout Magnamund. The most commonly used in Lone Wolf&apos;s adventures is the <a idref="topics-goldcrown">Gold Crown</a>. Other currencies include the <a idref="topics-lune">Lune</a> and the <a idref="topics-kika">Kika</a>. All forms of currency are stored in the <a idref="topics-beltpouch">Belt Pouch</a>.</p></dd>
+        <dd><p>There are various forms of currency in use throughout Magnamund. The most commonly used in Lone Wolf<ch.apos/>s adventures is the <a idref="topics-goldcrown">Gold Crown</a>. Other currencies include the <a idref="topics-lune">Lune</a> and the <a idref="topics-kika">Kika</a>. All forms of currency are stored in the <a idref="topics-beltpouch">Belt Pouch</a>.</p></dd>
       </dl>
      </data>
     </section>
@@ -2248,7 +2197,7 @@ specialitems
        <dt><a id="topics-dagger">Dagger</a></dt>
         <dd><p>(<a idref="topics-weapons">Weapon</a> carried in the hand)</p></dd>
        <dt><a id="topics-daggerofvashna">Dagger of Vashna</a></dt>
-        <dd><p>This cursed blade is a <a idref="topics-specialitems">Special Item</a> carried tucked into your belt. Although a potent <a idref="topics-weapons">Weapon</a> which may be useful on Lone Wolf&apos;s adventures, it doesn&apos;t carry a bonus to your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> or <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> outside of the Darklands.</p></dd>
+        <dd><p>This cursed blade is a <a idref="topics-specialitems">Special Item</a> carried tucked into your belt. Although a potent <a idref="topics-weapons">Weapon</a> which may be useful on Lone Wolf<ch.apos/>s adventures, it doesn<ch.apos/>t carry a bonus to your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> or <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> outside of the Darklands.</p></dd>
       </dl>
      </data>
     </section>
@@ -2311,7 +2260,7 @@ specialitems
          <p>Strict adherence to the rules would dictate that only <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> lost in combat can be restored using Healing and its improved derivatives: Curing and Deliverance. Common sense says that wounds similar to those sustained in combat can also be healed, but <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> lost due to hunger, fatigue, etc. cannot.</p>
         </dd>
        <dt><a id="topics-herbpouch">Herb Pouch</a></dt>
-        <dd><p>Carried by those skilled in the Wizard&apos;s power of Alchemy, it is used to carry the raw materials necessary to use this power. Contrary to what is stated in <cite>Grey Star the Wizard</cite>, the Herb Pouch can carry eight items. (see <a idref="lwcn1986summer">Lone Wolf Club Newsletter: Summer Special 1986</a>)</p></dd>
+        <dd><p>Carried by those skilled in the Wizard<ch.apos/>s power of Alchemy, it is used to carry the raw materials necessary to use this power. Contrary to what is stated in <cite>Grey Star the Wizard</cite>, the Herb Pouch can carry eight items. (see <a idref="lwcn1986summer">Lone Wolf Club Newsletter: Summer Special 1986</a>)</p></dd>
       </dl>
      </data>
     </section>
@@ -2351,7 +2300,7 @@ specialitems
      <data>
       <dl class="paragraphed">
        <dt><a id="topics-kika">Kika</a></dt>
-        <dd><p>The Kika is the form of <a idref="topics-currency">currency</a> used by the Darklords&apos; minions. This small iron coin is worth one-tenth of a <a idref="topics-goldcrown">Gold Crown</a> and ten of them take up as much space in your <a idref="topics-beltpouch">Belt Pouch</a> as a single <a idref="topics-goldcrown">Gold Crown</a>.</p></dd>
+        <dd><p>The Kika is the form of <a idref="topics-currency">currency</a> used by the Darklords<ch.apos/> minions. This small iron coin is worth one-tenth of a <a idref="topics-goldcrown">Gold Crown</a> and ten of them take up as much space in your <a idref="topics-beltpouch">Belt Pouch</a> as a single <a idref="topics-goldcrown">Gold Crown</a>.</p></dd>
       </dl>
      </data>
     </section>
@@ -2402,10 +2351,10 @@ specialitems
       <dl class="paragraphed">
        <dt><a id="topics-negativenumbers">Negative Numbers</a></dt>
         <dd>
-         <p>Negative numbers are used throughout the books. They are the numbers below zero. For example, if we have 1 and subtract 1 from it, we have 0. If we subtract 1 again, we have the next number below zero: -1 (we call this negative 1). The minus sign before the one tells us that it is a negative number. If we subtract 1 yet again, we have -2, and so on.</p>
-         <p>If we count from -5 to 5, it looks like this: -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5. If we subtract 5 from 3, we get -2. To see that this is true, start at 3 and count back 5 numbers.</p>
-         <p>To add a negative number to a normal (positive) number, we can think of it like subtraction. For example, if we add 3 and -2 we get 1. 3&nbsp;+&nbsp;-2 is the same as 3&nbsp;-&nbsp;2, which is 1.</p>
-         <p>As a practical example of how negative numbers are used, during combat the opponent&apos;s score is subtracted from Lone Wolf&apos;s to find the <a idref="topics-combatratio">Combat Ratio</a>. If, for example,  Lone Wolf has a <typ class="attribute">COMBAT SKILL</typ> of 16 and his opponent has one of 18, the <a idref="topics-combatratio">Combat Ratio</a> is -2 (16&nbsp;-&nbsp;18&nbsp;=&nbsp;-2).</p>
+         <p>Negative numbers are used throughout the books. They are the numbers below zero. For example, if we have 1 and subtract 1 from it, we have 0. If we subtract 1 again, we have the next number below zero: <ch.minus/>1 (we call this negative 1). The minus sign before the one tells us that it is a negative number. If we subtract 1 yet again, we have <ch.minus/>2, and so on.</p>
+         <p>If we count from <ch.minus/>5 to 5, it looks like this: <ch.minus/>5, <ch.minus/>4, <ch.minus/>3, <ch.minus/>2, <ch.minus/>1, 0, 1, 2, 3, 4, 5. If we subtract 5 from 3, we get <ch.minus/>2. To see that this is true, start at 3 and count back 5 numbers.</p>
+         <p>To add a negative number to a normal (positive) number, we can think of it like subtraction. For example, if we add 3 and <ch.minus/>2 we get 1. 3<ch.thinspace/>+<ch.thinspace/><ch.minus/>2 is the same as 3<ch.thinspace/><ch.minus/><ch.thinspace/>2, which is 1.</p>
+         <p>As a practical example of how negative numbers are used, during combat the opponent<ch.apos/>s score is subtracted from Lone Wolf<ch.apos/>s to find the <a idref="topics-combatratio">Combat Ratio</a>. If, for example,  Lone Wolf has a <typ class="attribute">COMBAT SKILL</typ> of 16 and his opponent has one of 18, the <a idref="topics-combatratio">Combat Ratio</a> is <ch.minus/>2 (16<ch.thinspace/><ch.minus/><ch.thinspace/>18<ch.thinspace/>=<ch.thinspace/><ch.minus/>2).</p>
         </dd>
        <dt><a id="topics-nobles">Nobles</a></dt>
       </dl>
@@ -2485,11 +2434,11 @@ specialitems
        <dt><a id="topics-silverbowofduadon">Silver Bow of Duadon</a></dt>
         <dd><p>(<a idref="topics-specialitems">Special Item</a>) This is a <a idref="topics-specialitems">Special Item</a> not a <a idref="topics-weapons">Weapon</a> (see ???). It adds +3 to every number you pick from the <a idref="topics-randomnumbertable">Random Number Table</a> when using this <a idref="topics-bow">Bow</a> to make a shot.</p></dd>
        <dt><a id="topics-sommerswerd">Sommerswerd</a></dt>
-        <dd><p>(<a idref="topics-specialitems">Special Item</a>) This legendary <a idref="topics-weapons">Weapon</a> forged by a god-like race and given to the Sommlending is a powerful bane against evil. It grants a +8 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> bonus when used in combat. Any Discipline bonus due to Weaponskill, Weaponmastery, or Grand Weaponmastery with <a idref="topics-sword">Swords</a>, <a idref="topics-shortsword">Short Swords</a>, or <a idref="topics-broadsword">Broadswords</a> is applicable when using the Sommerswerd. The Sommerswerd also absorbs hostile magic used against its bearer, and doubles all damage done to an undead opponent. It enhances the Disciplines of Sixth Sense, Divination, and Telegnosis. (see Sections 97 and 242 of <cite><a href="&link.02fotw;">Fire on the Water</a></cite>)</p></dd>
+        <dd><p>(<a idref="topics-specialitems">Special Item</a>) This legendary <a idref="topics-weapons">Weapon</a> forged by a god-like race and given to the Sommlending is a powerful bane against evil. It grants a +8 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> bonus when used in combat. Any Discipline bonus due to Weaponskill, Weaponmastery, or Grand Weaponmastery with <a idref="topics-sword">Swords</a>, <a idref="topics-shortsword">Short Swords</a>, or <a idref="topics-broadsword">Broadswords</a> is applicable when using the Sommerswerd. The Sommerswerd also absorbs hostile magic used against its bearer, and doubles all damage done to an undead opponent. It enhances the Disciplines of Sixth Sense, Divination, and Telegnosis (see Sections <bookref series="lw" book="02fotw" section="sect97">97</bookref> and <bookref series="lw" book="02fotw" section="sect242">242</bookref> of <cite><bookref series="lw" book="02fotw">Fire on the Water</bookref></cite>).</p></dd>
        <dt><a id="topics-spear">Spear</a></dt>
         <dd><p>(<a idref="topics-weapons">Weapon</a> carried in the hand) This <a idref="topics-weapons">Weapon</a> requires the use of <a idref="topics-twohandedweapons">two hands</a> in combat.</p></dd>
        <dt><a id="topics-specialitems">Special Items</a></dt>
-        <dd><p>Special Items are any items which are not <a idref="topics-backpack">Backpack Items</a>, <a idref="topics-weapons">Weapons</a> or <a idref="topics-currency">currency</a> (e.g. <a idref="topics-goldcrown">Gold Crowns</a>). In Books 1&endash;7 of the Lone Wolf series, there is no stated maximum on how many Special Items you may carry. From Book 8 onwards, the maximum number you may carry is twelve. You may, if you wish, follow this rule prior to Book 8.</p></dd>
+        <dd><p>Special Items are any items which are not <a idref="topics-backpack">Backpack Items</a>, <a idref="topics-weapons">Weapons</a> or <a idref="topics-currency">currency</a> (e.g. <a idref="topics-goldcrown">Gold Crowns</a>). In Books 1<ch.endash/>7 of the Lone Wolf series, there is no stated maximum on how many Special Items you may carry. From Book 8 onwards, the maximum number you may carry is twelve. You may, if you wish, follow this rule prior to Book 8.</p></dd>
        <dt><a id="topics-sword">Sword</a></dt>
         <dd><p>(<a idref="topics-weapons">Weapon</a> carried in the hand)</p></dd>
       </dl>
@@ -2504,13 +2453,13 @@ specialitems
      <data>
       <dl class="paragraphed">
        <dt><a id="topics-tarama">Tarama</a></dt>
-        <dd><p>(<a idref="topics-specialitems">Special Item</a>) The seeds of this plant are highly sought after by those trained in the magical arts. Swallowing a single seed prior to the working of a spell will allow it to be cast without loss of <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a>. These benefits do not apply to the use of <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> to charge a Wizard&apos;s Staff in combat although they do help when making long distance attacks.</p></dd>
+        <dd><p>(<a idref="topics-specialitems">Special Item</a>) The seeds of this plant are highly sought after by those trained in the magical arts. Swallowing a single seed prior to the working of a spell will allow it to be cast without loss of <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a>. These benefits do not apply to the use of <a idref="topics-willpower"><typ class="attribute">WILLPOWER</typ></a> to charge a Wizard<ch.apos/>s Staff in combat although they do help when making long distance attacks.</p></dd>
        <dt><a id="topics-tinderbox">Tinderbox</a></dt>
         <dd><p>(<a idref="topics-backpack">Backpack Item</a>) You must possess this item to light a <a idref="topics-torch">Torch</a>.</p></dd>
        <dt><a id="topics-torch">Torch</a></dt>
         <dd><p>(<a idref="topics-backpack">Backpack Item</a>) You must possess a <a idref="topics-tinderbox">Tinderbox</a> in order to light a Torch.</p></dd>
        <dt><a id="topics-twohandedweapons">Two-handed Weapons</a></dt>
-        <dd><p>An off-handed reference in <cite><a href="&link.10tdot;">The Dungeons of Torgar</a></cite>: Section 304 lists <a idref="topics-weapons">Weapons</a> which can be used in combat with one hand. This topic is dealt with more directly in the Grand Master series (e.g. <cite><a href="&link.13tplor;">The Plague Lords of Ruel</a></cite>: Section 295). Those not on the list <a idref="topics-broadsword">Broadsword</a>, <a idref="topics-quarterstaff">Quarterstaff</a> and <a idref="topics-spear">Spear</a> require the use of two hands during combat. Optionally, you may decide that this means that you cannot also use a <a idref="topics-shield">Shield</a> at the same time as these two-handed <a idref="topics-weapons">Weapons</a>.</p></dd>
+        <dd><p>An off-handed reference in <cite><bookref series="lw" book="10tdot">The Dungeons of Torgar</bookref></cite>: <bookref series="lw" book="10tdot" section="sect304">Section 304</bookref> lists <a idref="topics-weapons">Weapons</a> which can be used in combat with one hand. This topic is dealt with more directly in the Grand Master series (e.g. <cite><bookref series="lw" book="13tplor">The Plague Lords of Ruel</bookref></cite>: <bookref series="lw" book="13tplor" section="sect295">Section 295</bookref>). Those not on the list <a idref="topics-broadsword">Broadsword</a>, <a idref="topics-quarterstaff">Quarterstaff</a> and <a idref="topics-spear">Spear</a> require the use of two hands during combat. Optionally, you may decide that this means that you cannot also use a <a idref="topics-shield">Shield</a> at the same time as these two-handed <a idref="topics-weapons">Weapons</a>.</p></dd>
       </dl>
      </data>
     </section>
@@ -2551,9 +2500,9 @@ specialitems
        <dt><a id="topics-weapons">Weapons</a></dt>
         <dd><p>You carry Weapons in your hands, therefore you may only carry two. The Weapons in which the Kai Lords specialize are the <a idref="topics-dagger">Dagger</a>, <a idref="topics-spear">Spear</a>, <a idref="topics-mace">Mace</a>, <a idref="topics-shortsword">Short Sword</a>, <a idref="topics-warhammer">Warhammer</a>, <a idref="topics-sword">Sword</a>, <a idref="topics-axe">Axe</a>, <a idref="topics-quarterstaff">Quarterstaff</a>, <a idref="topics-broadsword">Broadsword</a> and <a idref="topics-bow">Bow</a>. (see <a idref="topics-weaponlikespecialitems">Weapon-like Special Items</a>)</p></dd>
        <dt><a id="topics-weaponlikespecialitems">Weapon-like Special Items</a></dt>
-        <dd><p>This is a class of <a idref="topics-specialitems">Special Items</a> that may be used as a <a idref="topics-weapons">Weapon</a>. They aren&apos;t counted toward your maximum of two <a idref="topics-weapons">Weapons</a> carried but rather count as a <a idref="topics-specialitems">Special Item</a>. A weapon-like <a idref="topics-specialitems">Special Item</a> is used as a <a idref="topics-weapons">Weapon</a> of its same type (e.g. the <a idref="topics-daggerofvashna">Dagger of Vashna</a> is used like a <a idref="topics-dagger">Dagger</a>).</p></dd>
+        <dd><p>This is a class of <a idref="topics-specialitems">Special Items</a> that may be used as a <a idref="topics-weapons">Weapon</a>. They aren<ch.apos/>t counted toward your maximum of two <a idref="topics-weapons">Weapons</a> carried but rather count as a <a idref="topics-specialitems">Special Item</a>. A weapon-like <a idref="topics-specialitems">Special Item</a> is used as a <a idref="topics-weapons">Weapon</a> of its same type (e.g. the <a idref="topics-daggerofvashna">Dagger of Vashna</a> is used like a <a idref="topics-dagger">Dagger</a>).</p></dd>
        <dt><a id="topics-willpower">Willpower</a></dt>
-       <dt><a id="topics-wizardsstaff">Wizard&apos;s Staff</a></dt>
+       <dt><a id="topics-wizardsstaff">Wizard<ch.apos/>s Staff</a></dt>
       </dl>
      </data>
     </section>
@@ -2636,14 +2585,14 @@ specialitems
    <meta><title>Appendix C: Example Combat</title></meta>
 
    <data>
-    <p>The following is an example of a simple combat to show how it works in general and to supplement the example given in the Rules for Combat section of the books. This example is taken from <a href="&link.01fftd;"><cite>Flight from the Dark</cite></a>: Section 229.</p>
-    <p>Lone Wolf has a base <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> score of 15. He has an <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score of 23. He has the Discipline of Mindblast which adds 2 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points to his base score (as long as his enemy isn&apos;t immune to Mindblast). He has mastered the Discipline of Weaponskill with the <a idref="topics-quarterstaff">Quarterstaff</a>. He is carrying an <a idref="topics-axe">Axe</a> and a <a idref="topics-mace">Mace</a>.</p>
-    <p>He is in combat with a Kraan who isn&apos;t immune to Mindblast, so he adds 2 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points to his score (15&nbsp;+&nbsp;2&nbsp;=&nbsp;17). He isn&apos;t carrying a <a idref="topics-quarterstaff">Quarterstaff</a> (the <a idref="topics-weapons">weapon</a> in which he has Weaponskill so he doesn&apos;t benefit his Weaponskill mastery. He must reduce his <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> by 1 due to dust mentioned in the book (17&nbsp;-&nbsp;1&nbsp;=&nbsp;16).</p>
-    <p>Lone Wolf&apos;s opponent&emdash;a Kraan&emdash;has a <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> of 16 so the <a idref="topics-combatratio">Combat Ratio</a> is 0 (16&nbsp;-&nbsp;16&nbsp;=&nbsp;0). The Kraan has an <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> of 25.</p>
-    <p>Combat begins by picking a random number which is traditionally done using the <a idref="topics-randomnumbertable">Random Number Table</a>, but there a other ways available. The first random number picked is 6. Looking that up on the <a idref="topics-combatresultstable">Combat Results Table</a> by finding the <a idref="topics-combatratio">Combat Ratio</a> (0) at the top and cross-referencing it with the random number (6) along the side. In this case, we find that Lone Wolf has lost 2 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points and the Kraan has lost 8. Now Lone Wolf has 21 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points (23&nbsp;-&nbsp;2&nbsp;=&nbsp;21) and the Kraan has 17 (25&nbsp;-&nbsp;8&nbsp;=&nbsp;17). Lone Wolf and his opponent continue with these new, reduced <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point scores.</p>
-    <p>Combat continues by picking another random number: 5. During this round, Lone Wolf loses another 2 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points while the Kraan loses 7. Lone Wolf now has an <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score of 19 (21&nbsp;-&nbsp;2&nbsp;=&nbsp;19) and the Kraan has 10 (17&nbsp;-&nbsp;7&nbsp;=&nbsp;10). The situation looks good for Lone Wolf.</p>
-    <p>The random number picked for the next round is 1&emdash;not a great round for Lone Wolf. He loses 4 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points while the Kraan loses only 3. Lone Wolf is left with 15 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points (19&nbsp;-&nbsp;4&nbsp;=&nbsp;15) and the Kraan has 7 (10&nbsp;-&nbsp;3&nbsp;=&nbsp;7).</p>
-    <p>Another random number is picked: 7. This time Lone Wolf loses 2 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points leaving him with 13 (15&nbsp;-&nbsp;2&nbsp;=&nbsp;13) and the Kraan loses 9 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points leaving him with -2 (7&nbsp;-&nbsp;9&nbsp;=&nbsp;-2). Since the Kraan has an <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score that is <a idref="topics-negativenumbers">less than or equal to 0</a>, it is dead and Lone Wolf wins the combat and can continue his quest. If Lone Wolf&apos;s score had been reduced to <a idref="topics-negativenumbers">0 or below</a>, his quest would now be over.</p>
+    <p>The following is an example of a simple combat to show how it works in general and to supplement the example given in the Rules for Combat section of the books. This example is taken from <cite><bookref series="lw" book="01fftd">Flight from the Dark</bookref></cite>: <bookref series="lw" book="01fftd" section="sect229">Section 229</bookref>.</p>
+    <p>Lone Wolf has a base <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> score of 15. He has an <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score of 23. He has the Discipline of Mindblast which adds 2 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points to his base score (as long as his enemy isn<ch.apos/>t immune to Mindblast). He has mastered the Discipline of Weaponskill with the <a idref="topics-quarterstaff">Quarterstaff</a>. He is carrying an <a idref="topics-axe">Axe</a> and a <a idref="topics-mace">Mace</a>.</p>
+    <p>He is in combat with a Kraan who isn<ch.apos/>t immune to Mindblast, so he adds 2 <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points to his score (15<ch.thinspace/>+<ch.thinspace/>2<ch.thinspace/>=<ch.thinspace/>17). He isn<ch.apos/>t carrying a <a idref="topics-quarterstaff">Quarterstaff</a> (the <a idref="topics-weapons">weapon</a> in which he has Weaponskill so he doesn<ch.apos/>t benefit his Weaponskill mastery. He must reduce his <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> by 1 due to dust mentioned in the book (17<ch.thinspace/><ch.minus/><ch.thinspace/>1<ch.thinspace/>=<ch.thinspace/>16).</p>
+    <p>Lone Wolf<ch.apos/>s opponent<ch.emdash/>a Kraan<ch.emdash/>has a <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> of 16 so the <a idref="topics-combatratio">Combat Ratio</a> is 0 (16<ch.thinspace/><ch.minus/><ch.thinspace/>16<ch.thinspace/>=<ch.thinspace/>0). The Kraan has an <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> of 25.</p>
+    <p>Combat begins by picking a random number which is traditionally done using the <a idref="topics-randomnumbertable">Random Number Table</a>, but there a other ways available. The first random number picked is 6. Looking that up on the <a idref="topics-combatresultstable">Combat Results Table</a> by finding the <a idref="topics-combatratio">Combat Ratio</a> (0) at the top and cross-referencing it with the random number (6) along the side. In this case, we find that Lone Wolf has lost 2 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points and the Kraan has lost 8. Now Lone Wolf has 21 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points (23<ch.thinspace/><ch.minus/><ch.thinspace/>2<ch.thinspace/>=<ch.thinspace/>21) and the Kraan has 17 (25<ch.thinspace/><ch.minus/><ch.thinspace/>8<ch.thinspace/>=<ch.thinspace/>17). Lone Wolf and his opponent continue with these new, reduced <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point scores.</p>
+    <p>Combat continues by picking another random number: 5. During this round, Lone Wolf loses another 2 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points while the Kraan loses 7. Lone Wolf now has an <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score of 19 (21<ch.thinspace/><ch.minus/><ch.thinspace/>2<ch.thinspace/>=<ch.thinspace/>19) and the Kraan has 10 (17<ch.thinspace/><ch.minus/><ch.thinspace/>7<ch.thinspace/>=<ch.thinspace/>10). The situation looks good for Lone Wolf.</p>
+    <p>The random number picked for the next round is 1<ch.emdash/>not a great round for Lone Wolf. He loses 4 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points while the Kraan loses only 3. Lone Wolf is left with 15 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points (19<ch.thinspace/><ch.minus/><ch.thinspace/>4<ch.thinspace/>=<ch.thinspace/>15) and the Kraan has 7 (10<ch.thinspace/><ch.minus/><ch.thinspace/>3<ch.thinspace/>=<ch.thinspace/>7).</p>
+    <p>Another random number is picked: 7. This time Lone Wolf loses 2 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points leaving him with 13 (15<ch.thinspace/><ch.minus/><ch.thinspace/>2<ch.thinspace/>=<ch.thinspace/>13) and the Kraan loses 9 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points leaving him with <ch.minus/>2 (7<ch.thinspace/><ch.minus/><ch.thinspace/>9<ch.thinspace/>=<ch.thinspace/><ch.minus/>2). Since the Kraan has an <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> score that is <a idref="topics-negativenumbers">less than or equal to 0</a>, it is dead and Lone Wolf wins the combat and can continue his quest. If Lone Wolf<ch.apos/>s score had been reduced to <a idref="topics-negativenumbers">0 or below</a>, his quest would now be over.</p>
    </data>
   </section>
 
@@ -2654,65 +2603,65 @@ specialitems
     <dl class="paragraphed">
      <dt><a id="lwcn1986summer">Summer Special 1986</a></dt>
       <dd>
-       <p>[Q:] On page 26 of Grey Star Book 2, it says you <quote>carry a maximum of eight items in your Herb Pouch</quote>&emdash;should it be six?</p>
+       <p>[Q:] On page 26 of Grey Star Book 2, it says you <quote>carry a maximum of eight items in your Herb Pouch</quote><ch.emdash/>should it be six?</p>
        <p>[A:] Actually, the rule which first appeared in Grey Star Book 1 regarding the herb Pouch was incorrect. It should be able to hold up to eight itmes hence the changed rule in later books.</p>
       </dd>
      <dt>Newsletter No. 6</dt>
       <dd>
-       <p>[Q:] In the sewers beneath Tekaro, I lost my weapon to the grasp of a certain killer organism&emdash;that weapon was the Sommerswerd!&ellips;</p>
-       <p>[A:] Strictly speaking, the Sommerswerd is a Special Item&emdash;not a weapon. When facing the organism (Ref. 4) you should erase a weapon from your Action Chart. If you do not possess a weapon, only then do you lose the Sommerswerd.</p>
+       <p>[Q:] In the sewers beneath Tekaro, I lost my weapon to the grasp of a certain killer organism<ch.emdash/>that weapon was the Sommerswerd!<ch.ellips/></p>
+       <p>[A:] Strictly speaking, the Sommerswerd is a Special Item<ch.emdash/>not a weapon. When facing the organism (Ref. 4) you should erase a weapon from your Action Chart. If you do not possess a weapon, only then do you lose the Sommerswerd.</p>
       </dd>
      <dt><a id="lwcn7">Newsletter No. 7</a></dt>
       <dd>
-       <p>[Q:] Is the <quote>Dagger of Vashna</quote> Taken from the Bandit Leader Barraka at the Maakengorge, usable as a weapon?&ellips;</p>
-       <p>[A:] Yes, if you possess this Special Item you may use it as an ordinary dagger in combat. Kai Masters may find it interesting to note for future use that the Dagger of Vashna could prove to be a valuable piece of equipment to take with them on the quest for the Lorestone of Tahou in Lone Wolf Book 9&emdash;<quote>The Cauldron of Fear</quote>&ellips;you have been warned!</p>
-       <p>[Q:] Can you keep Backpack Items in [safekeeping] at the Kai Monastery?&ellips;</p>
-       <p>[A:] Yes if you wish to leave any surviving Backpack tems in [safekeeping] at the end of an adventure, you can do so. When beginning the next quest, you are given a selection of new equipment which you may then supplement with any of the items you previously held. Many readers have written to point out that they now have a huge selection of Special Items discovered during the course of their adventures and that carrying all these goodies seems a little unrealistic. In response to theis valid point, a new rule comes into effect in Lone Wolf 8, limiting the number of Special Items you can carry. The new limit is 12 Special Items; all others you may have must be left in safe keeping. A tip to all Kai Masters&emdash;don&apos;t take you full quota of 12 items with you when youbegin the adventure; leave enough room for any you may find en route otherwise you will have to sacrifice some in favour of others. The recommended number to start with is eight. Also, purely for the sake of accuracy, the term <quote>safe keeping at the Kai Monastery</quote> in fact means leaving some items with the Elder Magi in Elzian, which features as Lone Wolf&apos;s base of operations during the Magnakai Quest.</p>
+       <p>[Q:] Is the <quote>Dagger of Vashna</quote> Taken from the Bandit Leader Barraka at the Maakengorge, usable as a weapon?<ch.ellips/></p>
+       <p>[A:] Yes, if you possess this Special Item you may use it as an ordinary dagger in combat. Kai Masters may find it interesting to note for future use that the Dagger of Vashna could prove to be a valuable piece of equipment to take with them on the quest for the Lorestone of Tahou in Lone Wolf Book 9<ch.emdash/><quote>The Cauldron of Fear</quote><ch.ellips/>you have been warned!</p>
+       <p>[Q:] Can you keep Backpack Items in [safekeeping] at the Kai Monastery?<ch.ellips/></p>
+       <p>[A:] Yes if you wish to leave any surviving Backpack tems in [safekeeping] at the end of an adventure, you can do so. When beginning the next quest, you are given a selection of new equipment which you may then supplement with any of the items you previously held. Many readers have written to point out that they now have a huge selection of Special Items discovered during the course of their adventures and that carrying all these goodies seems a little unrealistic. In response to theis valid point, a new rule comes into effect in Lone Wolf 8, limiting the number of Special Items you can carry. The new limit is 12 Special Items; all others you may have must be left in safe keeping. A tip to all Kai Masters<ch.emdash/>don<ch.apos/>t take you full quota of 12 items with you when youbegin the adventure; leave enough room for any you may find en route otherwise you will have to sacrifice some in favour of others. The recommended number to start with is eight. Also, purely for the sake of accuracy, the term <quote>safe keeping at the Kai Monastery</quote> in fact means leaving some items with the Elder Magi in Elzian, which features as Lone Wolf<ch.apos/>s base of operations during the Magnakai Quest.</p>
       </dd>
-     <dt><a id="lwcn1987newyears">1987 New Year&apos;s Special</a></dt>
+     <dt><a id="lwcn1987newyears">1987 New Year<ch.apos/>s Special</a></dt>
       <dd>
-       <p>[Q:]Is there a ranking system for Shianti Wizards, like there is for Kai Lords and Masters?&ellips;</p>
+       <p>[Q:]Is there a ranking system for Shianti Wizards, like there is for Kai Lords and Masters?<ch.ellips/></p>
        <p>[A:] No, unlike the ranking system that marks the rise of Kai Lords, the Shianti do not have set levels of advancement.</p>
-       <p>[Q:] On reaching the rank of Primate and having mastered Weaponmastery, would this enable you to be skilled in four weapons and increase the points added to your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> to +4 when entering combat with a wepon you have mastered?&ellips;</p>
+       <p>[Q:] On reaching the rank of Primate and having mastered Weaponmastery, would this enable you to be skilled in four weapons and increase the points added to your <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> to +4 when entering combat with a wepon you have mastered?<ch.ellips/></p>
        <p>[A:] For every adventure you complete in the Magnakai series, assuming you have the mastery of Weaponmastery, you gain proficiency in the use of one new weapon. The bonus to your [<a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a>] rating for use of this weapon is combat always remains at +3.</p>
-       <p>[Q:] Are you allowed to drop a weapon, or must you wait until the end of the book?&ellips;</p>
+       <p>[Q:] Are you allowed to drop a weapon, or must you wait until the end of the book?<ch.ellips/></p>
        <p>[A:] You can drop ([i.e.] discard) a weapon at any time during your adventure, you need not wait until the end of the book. If you find a weapon during the adventure (it will be marked in the text with a capital letter, like a Backpack Item) you may pick it up and use it. You can only carry two weapons at any time.</p>
       </dd>
      <dt><a id="lwcn8">Newsletter No. 8</a></dt>
       <dd>
-       <p>[Q:] If Lone Wolf has Weaponskill &amp; Weaponmastery with the same weapon, does this give him +3 or +5 extra <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points in battle? Also, if he has Healing as well as Curing, does this give him +2 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points back for every section through which he passes without combat?&ellips;</p>
+       <p>[Q:] If Lone Wolf has Weaponskill <ch.ampersand/> Weaponmastery with the same weapon, does this give him +3 or +5 extra <a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a> points in battle? Also, if he has Healing as well as Curing, does this give him +2 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points back for every section through which he passes without combat?<ch.ellips/></p>
        <p>[A:] The correct weapon bonus is +3, on higher than the basic Kai Discipline bonus for having Weaponskill. Kai Mastery of Curing gives the same +1 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point back (for every section though which you pass without combat) as does the basic Kai Discipline of Healing. The mastery advantage comes with the ability to cure disease, blindness and combat wounds, as well as being able to identify the properties of herbs, roots, and potions. Additional advantages are gained at higher rank as the Magnakai [Discipline] improves.</p>
       </dd>
      <dt><a id="lwcn1987summer">Summer Special 1987</a></dt>
       <dd>
-       <p>[Q:] In Lone Wolf Book 8, ref. no. 169, you <quote>lose a grip of your weapon</quote>. Can you retrieve it or must it be erased from you Action Chart?&ellips;</p>
+       <p>[Q:] In Lone Wolf Book 8, ref. no. 169, you <quote>lose a grip of your weapon</quote>. Can you retrieve it or must it be erased from you Action Chart?<ch.ellips/></p>
        <p>[A:] If you win the combat against the Vordak you are able to retrieve the weapon and keep it noted on your Action Chart.</p>
-       <p>[Q:] When you complete a Lone Wolf adventure, do you renew your <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points to their original total for the next adventure?&ellips;</p>
+       <p>[Q:] When you complete a Lone Wolf adventure, do you renew your <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points to their original total for the next adventure?<ch.ellips/></p>
        <p>[A:] All lost [<a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a>] points are regained at the end of an adventure. If you have completed any new Lore-circles by finishing an adventure successfully, the bonuses you gain to your [<a idref="topics-combatskill"><typ class="attribute">COMBAT SKILL</typ></a>] and [<a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a>] are added to this basic score prior to the next adventure.</p>
-       <p>[Q:] In the basic series (Books 1-5) I possessed the Kai Discipline of Healing and was able to restore 1 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point for every section I passed through in which I was not involved in combat. Now that I am a Kai Master with the Magnakai Discipline of Curing I can no longer benefit from my basic healing skills&ellips; or can I?&ellips;</p>
+       <p>[Q:] In the basic series (Books 1-5) I possessed the Kai Discipline of Healing and was able to restore 1 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> point for every section I passed through in which I was not involved in combat. Now that I am a Kai Master with the Magnakai Discipline of Curing I can no longer benefit from my basic healing skills<ch.ellips/> or can I?<ch.ellips/></p>
        <p>[A:] If you have completed all five of the Basic series books you can add +1 [<a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a>] as per the rules of Healing. This advantage will benefit all those Kai Masters who have completed the basic series books prior to tackling the Magnakai Series.</p>
-       <p>[Q:] When I was captured in Book 9, All my weapons were taken from me. Can I retrieve them at the end of the book?&ellips;</p>
+       <p>[Q:] When I was captured in Book 9, All my weapons were taken from me. Can I retrieve them at the end of the book?<ch.ellips/></p>
        <p>[A:] Yes. The South Gate Guard would definately allow the <quote>Saviour of Tahou</quote> to have his weapons back!</p>
-       <p>[Q:] In some books you can choose Fireseeds at the start. It says 3 Fireseeds&emdash;if you take all three does this mean you have taken 3 [separate] items from the 5 you are allowed to pick?&ellips;</p>
+       <p>[Q:] In some books you can choose Fireseeds at the start. It says 3 Fireseeds<ch.emdash/>if you take all three does this mean you have taken 3 [separate] items from the 5 you are allowed to pick?<ch.ellips/></p>
        <p>[A:] The Fireseeds are Special Items which count only as 1 item no matter how many of them you possess. However, when you use them be sure to note how many you have left. Also, for the purpose of determining your maximum number of Special Items (12), all Fireseeds count as 1 item.</p>
       </dd>
      <dt><a id="lwcn10">Newsletter No. 10</a></dt>
       <dd>
-       <p>[Q:] If, in a Magnakai adventure, we are instructed to eat a Meal (or lose 3 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points) and we do not have the Magnakai skill of Huntmastery, can we still use the basic skill of Hunting (assuming we&apos;re not in a desert or wilderness), [e.g.] Book 8; ref. 129?&ellips;</p>
-       <p>[A:] Basically, yes you can. All [Kai Masters] who have completed one or more of the Lone Wolf <quote>basic</quote> books (1&endash;5) can benefit from their experience in this way. This will give them a real advantage over those who have tried only one or more of the Magnakai series books (6&endash;12).</p>
+       <p>[Q:] If, in a Magnakai adventure, we are instructed to eat a Meal (or lose 3 <a idref="topics-endurance"><typ class="attribute">ENDURANCE</typ></a> points) and we do not have the Magnakai skill of Huntmastery, can we still use the basic skill of Hunting (assuming we<ch.apos/>re not in a desert or wilderness), [e.g.] Book 8; ref. 129?<ch.ellips/></p>
+       <p>[A:] Basically, yes you can. All [Kai Masters] who have completed one or more of the Lone Wolf <quote>basic</quote> books (1<ch.endash/>5) can benefit from their experience in this way. This will give them a real advantage over those who have tried only one or more of the Magnakai series books (6<ch.endash/>12).</p>
       </dd>
      <dt><a id="lwcn12">Newsletter No. 12</a></dt>
       <dd>
-       <p>[Q:] If you find a new Backpack in one of the adventures, can you use it to hold an additional 8 items as well as those you already have?&ellips;</p>
+       <p>[Q:] If you find a new Backpack in one of the adventures, can you use it to hold an additional 8 items as well as those you already have?<ch.ellips/></p>
        <p>[A:] Realistically, you can only wear one [Backpack] at a time, and carry a maximum of eight [Backpack] items ([Special Items] not included). Carrying two [Backpacks], and 16 [Backpack Items], would make close combat very difficult indeed, even for a Kai Master. (<em>Note: This aspect of the Lone Wolf rules influenced the progressive [encumbrance] rule of the Freeway Warrior series</em>)</p>
       </dd>
      <dt><a id="lwcn28">Newsletter No. 28</a></dt>
       <dd>
-       <p>[Q:] Can you clarify what happens to the +1EP bonus when you progress from Kai Master to Grand Master?&ellips;</p>
+       <p>[Q:] Can you clarify what happens to the +1EP bonus when you progress from Kai Master to Grand Master?<ch.ellips/></p>
        <p>[A:] The [+1EP] bonus gained when passing through combatless sections does still apply, but only if you have played and survived the Magnakai series books. Joe Dever intended this as a <quote>hidden loyalty bonus</quote> for readers who had played the earlier books, which is why it was ommitted from the Grand Master rules.</p>
-       <p>[Q:] If a person keeps the +4CS Weaponmastery ability from one series to the next, does that mean that when he gets Grand Weaponmastery he has +9CS with the weapons he has proficiency in?&ellips;</p>
-       <p>[A:] The +4CS Weaponmastery bonus is not added to Grand Weaponmastery&emdash;it simply rises by 1 to +5.</p>
-       <p>[Q:] Is the Dagger of Vashna taken from the bandit leader Barraka at the Maakengorge useable as a Weapon?&ellips;</p>
+       <p>[Q:] If a person keeps the +4CS Weaponmastery ability from one series to the next, does that mean that when he gets Grand Weaponmastery he has +9CS with the weapons he has proficiency in?<ch.ellips/></p>
+       <p>[A:] The +4CS Weaponmastery bonus is not added to Grand Weaponmastery<ch.emdash/>it simply rises by 1 to +5.</p>
+       <p>[Q:] Is the Dagger of Vashna taken from the bandit leader Barraka at the Maakengorge useable as a Weapon?<ch.ellips/></p>
        <p>[A:] Yes, if you possess this Special Item you may use it as an ordinary [Dagger] in combat. It could also prove especially usefull during the quest for the Lorestone of Tahou (Lone Wolf 9).</p>
       </dd>
     </dl>
@@ -2729,7 +2678,7 @@ specialitems
      <meta><title>0. Preamble</title></meta>
 
      <data>
-      <p>Joe Dever, author of the Lone Wolf game books, and Ian Page, author of the World of Lone Wolf books are providing certain of their works for free (gratis) download from the internet. Gary Chalk and Brian Williams are similarly offering the illustrations that they did for Joe Dever&apos;s books. This license is intended to protect the rights of the authors and the illustrators, the rights of his readers, and the quality of the distributions of the books.</p>
+      <p>Joe Dever, author of the Lone Wolf game books, and Ian Page, author of the World of Lone Wolf books are providing certain of their works for free (gratis) download from the internet. Gary Chalk and Brian Williams are similarly offering the illustrations that they did for Joe Dever<ch.apos/>s books. This license is intended to protect the rights of the authors and the illustrators, the rights of his readers, and the quality of the distributions of the books.</p>
       <p>Basically, by viewing or downloading the books or the illustrations, you agree to refrain from redistributing them in any format for any reason. This is intended to protect readers from getting poor quality, unofficial versions or from being asked for payment in exchange for the books by someone who is redistributing them unofficially.</p>
       <p>Anyone who wishes to simply view or download the Internet Editions for their own personal use need not worry about running afoul of the terms of this License. These activities are within acceptable behaviour as defined by this License.</p>
       <p>This section does not contain the legally binding terms of this license. The precise terms and conditions of this license follow.</p>
@@ -2799,7 +2748,7 @@ specialitems
          <li><cite>The Legacy of Vashna</cite>; Copyright 1991, 1993 Joe Dever.</li>
          <li><cite>The Deathlord of Ixia</cite>; Copyright 1992, 1994 Joe Dever.</li>
          <li><cite>Dawn of the Dragons</cite>; Copyright 1992 Joe Dever.</li>
-         <li><cite>Wolf&apos;s Bane</cite>; Copyright 1993, 1995 Joe Dever.</li>
+         <li><cite>Wolf<ch.apos/>s Bane</cite>; Copyright 1993, 1995 Joe Dever.</li>
          <li><cite>The Curse of Naar</cite>; Copyright 1993, 1996 Joe Dever.</li>
          <li><cite>The Magnamund Companion</cite>; Copyright 1986 Joe Dever.</li>
          <li><cite>Freeway Warrior: Highway Holocaust</cite>; Copyright 1988 Joe Dever.</li>
@@ -2844,10 +2793,10 @@ specialitems
          <li><cite>The Legacy of Vashna</cite>; Illustrations Copyright 1991, 1993 Brian Williams.</li>
          <li><cite>The Deathlord of Ixia</cite>; Illustrations Copyright 1992 Brian Williams.</li>
          <li><cite>Dawn of the Dragons</cite>; Illustrations Copyright 1992 Brian Williams.</li>
-         <li><cite>Wolf&apos;s Bane</cite>; Illustrations Copyright 1993 Brian Williams.</li>
+         <li><cite>Wolf<ch.apos/>s Bane</cite>; Illustrations Copyright 1993 Brian Williams.</li>
          <li><cite>The Curse of Naar</cite>; Illustrations Copyright 1993 Brian Williams.</li>
          <li><cite>The Buccaneers of Shadaki</cite>; Illustrations Copyright 1994 Brian Williams.</li>
-         <li><cite>Mydnight&apos;s Hero</cite>; Illustrations Copyright 1995 Brian Williams.</li>
+         <li><cite>Mydnight<ch.apos/>s Hero</cite>; Illustrations Copyright 1995 Brian Williams.</li>
          <li><cite>Rune War</cite>; Illustrations Copyright 1995 Brian Williams.</li>
          <li><cite>Trail of the Wolf</cite>; Illustrations Copyright 1997 Brian Williams.</li>
          <li><cite>The Fall of Blood Mountain</cite>; Illustrations Copyright 1997 Brian Williams.</li>
@@ -2966,7 +2915,7 @@ specialitems
        <meta><title>3.1</title></meta>
 
        <data>
-        <p>If any of the Authors or the Illustrators revokes your rights granted under this License, you agree to destroy all copies of the Authors&apos; or Illustrators&apos; work which is a part of the Internet Editions of which you have control within fourteen calendar days of receiving notification in any form.</p>
+        <p>If any of the Authors or the Illustrators revokes your rights granted under this License, you agree to destroy all copies of the Authors<ch.apos/> or Illustrators<ch.apos/> work which is a part of the Internet Editions of which you have control within fourteen calendar days of receiving notification in any form.</p>
        </data>
       </section>
 
