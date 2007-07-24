@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE gamebook SYSTEM "gamebook.dtd" [
- <!ENTITY % xhtml.characters SYSTEM "htmlchar.mod">
- <!ENTITY % latex.characters SYSTEM "ltexchar.mod">
- %xhtml.characters;
-
  <!ENTITY % general.links SYSTEM "genlink.mod">
  %general.links;
  <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
@@ -13,33 +9,30 @@
  %general.inclusions;
 ]>
 
-<gamebook xml:lang="en-UK" version="0.11">
-
-<!--
-
-$Id$
-$Log$
-Revision 1.1  2004/11/10 06:37:11  jonathan.blake
-Initial Freepository revision
-
-
--->
+<gamebook xml:lang="en-UK" version="0.12">
 
  <meta>
   <title>JC Alvarez's Illustrations</title>
   <creator class="short">JC Alvarez</creator>
   <creator class="medium">JC Alvarez</creator>
   <creator class="long">
-   <p>JC Alvarez created these illustrations in an early period of Project Aon's history before Gary Chalk had given his consent to use his illustrations. They were used in the Project Aon editions of <cite><a href="&link.01fftd;">Flight from the Dark</a></cite> and <cite><a href="&link.02fotw;">Fire on the Water</a></cite>, but their use was eventually discontinued. They are published here for your continued and enjoyment.</p>
+   <p>JC Alvarez created these illustrations in an early period of Project Aon's history before Gary Chalk had given his consent to use his illustrations. They were used in the Project Aon editions of <cite><bookref series="lw" book="01fftd">Flight from the Dark</bookref></cite> and <cite><bookref series="lw" book="02fotw">Fire on the Water</bookref></cite>, but their use was eventually discontinued. They are published here for your continued and enjoyment.</p>
   </creator>
   <publisher>Project Aon</publisher>
   <date class="publication"><year>2004</year><month>5</month><day>14</day></date>
   <description class="publication">
    <p>Published by <a href="&link.project.website;">Project Aon</a>.</p>
   </description>
-  <rights class="copyrights">Illustrations copyright &copy; 2000&endash;2002 JC Alvarez.<br />Web publication copyright &copy; 2004 Project Aon Team.</rights>
+  <rights class="copyrights">
+   <line>Illustrations copyright <ch.copy/> 2000<ch.endash/>2002 JC Alvarez.</line>
+   <line>Web publication copyright <ch.copy/> 2004 Project Aon Team.</line>
+  </rights>
   <rights class="license-notification">
-   <p>JC Alvarez copyright &copy; 2000&endash;2002 JC Alvarez.<br />Web publication copyright &copy; 2004 Project Aon Team.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+   <p>
+    <line>JC Alvarez copyright <ch.copy/> 2000<ch.endash/>2002 JC Alvarez.</line>
+    <line>Web publication copyright <ch.copy/> 2004 Project Aon Team.</line>
+    <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+   </p>
   </rights>
  </meta>
 

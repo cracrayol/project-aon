@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE gamebook SYSTEM "gamebook.dtd" [
- <!ENTITY % xhtml.characters SYSTEM "htmlchar.mod">
- <!ENTITY % latex.characters SYSTEM "ltexchar.mod">
- %xhtml.characters;
-
  <!ENTITY % general.links SYSTEM "genlink.mod">
  %general.links;
  <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
@@ -13,17 +9,7 @@
  %general.inclusions;
 ]>
 
-<gamebook xml:lang="en-UK" version="0.11">
-
-<!--
-
-$Id$
-$Log$
-Revision 1.1  2004/11/10 06:37:11  jonathan.blake
-Initial Freepository revision
-
-
--->
+<gamebook xml:lang="en-UK" version="0.12">
 
 <meta>
  <title>Michael Hahn's Maps</title>
@@ -37,9 +23,16 @@ Initial Freepository revision
  <description class="publication">
   <p>Published by <a href="&link.project.website;">Project Aon</a>.</p>
  </description>
- <rights class="copyrights">Maps copyright &copy; 2000&endash;2002 Michael Hahn.<br />Web publication copyright &copy; 2004 Project Aon Team.</rights>
+ <rights class="copyrights">
+  <line>Maps copyright <ch.copy/> 2000<ch.endash/>2002 Michael Hahn.</line>
+  <line>Web publication copyright <ch.copy/> 2004 Project Aon Team.</line>
+ </rights>
  <rights class="license-notification">
-  <p>Maps copyright &copy; 2000&endash;2002 Michael Hahn.<br />Web publication copyright &copy; 2004 Project Aon Team.<br />Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</p>
+  <p>
+   <line>Maps copyright <ch.copy/> 2000<ch.endash/>2002 Michael Hahn.</line>
+   <line>Web publication copyright <ch.copy/> 2004 Project Aon Team.</line>
+   <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+  </p>
  </rights>
 </meta>
 
@@ -147,5 +140,4 @@ Initial Freepository revision
 
  </data>
 </section>
-
 </gamebook>
