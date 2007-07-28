@@ -12,7 +12,35 @@
 <gamebook xml:lang="en-UK" version="0.12">
 
  <meta>
-  <title>[Insert Title]</title>
+  <title>The Curse of Naar</title>
+  <creator class="short">Joe Dever and Brian Williams</creator>
+  <creator class="medium">
+   <line>Joe Dever</line>
+   <line>Illustrated by Brian Williams</line>
+  </creator>
+  <creator class="long">
+   &inclusion.joe.dever.bio.lw;
+   &inclusion.brian.williams.bio.lw;
+  </creator>
+  <publisher>Project Aon</publisher>
+  <date class="publication"><year>200?</year><month>??</month><day>??</day></date>
+  <description class="blurb">
+   <p>[Insert Blurb]</p>
+  </description>
+  <description class="publication">
+   <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
+  </description>
+  <rights class="copyrights">
+   <line>Text copyright <ch.copy/> 1993 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1993 Brian Williams.</line>
+  </rights>
+  <rights class="license-notification">
+   <p>
+    <line>Text copyright <ch.copy/> Joe Dever.</line>
+    <line>Illustrations copyright <ch.copy/> Brian Williams.</line>
+    <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+   </p>
+  </rights>
  </meta>
 
  <section id="toc">
@@ -27,6 +55,99 @@
   </meta>
 
   <data>
+
+   <section class="frontmatter" id="dedicate">
+    <meta>
+     <title>Dedication</title>
+     <link class="prev" idref="title" />
+     <link class="next" idref="acknwldg" />
+    </meta>
+
+    <data>
+     <p class="dedication">For Piet Snyman</p>
+    </data>
+   </section>
+
+   <section class="frontmatter" id="acknwldg">
+    <meta>
+     <title>Acknowledgements</title>
+     <link class="prev" idref="dedicate" />
+     <link class="next" idref="tssf" />
+    </meta>
+
+    <data>
+
+     &inclusion.joe.dever.endowment;
+
+     <section class="frontmatter" id="credits">
+      <meta><title>Credits</title></meta>
+
+      <data>
+       <dl>
+        <dt>Transcription</dt>
+         <dd>???</dd>
+        <dt>Illustration Transcription</dt>
+         <dd>Jonathan Blake (???)</dd>
+        <dt>XML</dt>
+         <dd>
+          <line>Jonathan Blake</line>
+          <line>Ingo Kl<ch.ouml/>cker</line>
+          <line>Simon Osborne (???)</line>
+         </dd>
+        <dt>Action Charts</dt>
+         <dd>
+          <line>JC Alvarez</line>
+          <line>Jonathan Blake</line>
+         </dd>
+        <dt>Proofreading</dt>
+         <dd>
+          <line>???</line>
+         </dd>
+        <dt>Editing</dt>
+         <dd>
+          <line>Ingo Kl<ch.ouml/>cker</line>
+          <line>Simon Osborne</line>
+         </dd>
+        <dt>Coordination</dt>
+         <dd>Jonathan Blake</dd>
+        <dt>Special Thanks</dt>
+         <dd>???</dd>
+       </dl>
+      </data>
+     </section>
+
+    </data>
+   </section>
+
+   <section class="frontmatter" id="tssf">
+    <meta>
+     <title>The Story So Far<ch.ellips/></title>
+     <link class="prev" idref="acknwldg" />
+     <link class="next" idref="gamerulz" />
+    </meta>
+
+    <data>
+     <p>You are Grand Master Lone Wolf, the sole survivor of a massacre that wiped out the First Order of the Kai<ch.emdash/>the warrior elite of Sommerlund. It is the year MS 5081, thirty-one years since your brave kinsmen perished at the hands of the Darklords of Helgedad. These champions of evil, who were sent forth by Naar, the King of the Darkness, to destroy the fertile world of Magnamund have themselves since been destroyed. You vowed to avenge the murder of the Kai and you kept your pledge, for it was you who brought about their downfall when alone you infiltrated their foul domain<ch.emdash/>the Darklands<ch.emdash/>and destroyed the base of their power that was the infernal city of Helgedad. In the wake of their destruction, chaos befell the Darkland armies that had been poised to conquer all of Magnamund. Their disorder escalated into a mutinous civil war which allowed the free-state armies of Magnamund time in which to recover and launch a successful counter-offensive. Against the odds, a swift and total victory was secured over the feuding enemy armies.</p>
+
+     <p>For more than ten years now, peace has reigned in Sommerlund. Under your direction the once-ruined monastery of the Kai has been rebuilt and restored to its former glory, and the task of teaching a New Order of Kai warriors the skills and proud traditions of your ancestors has been re-established. The new generation of Kai recruits, all of whom were born during the era of war against the Darklords, possess strong latent Kai skills and all show exceptional promise. These skills will be nurtured and honed to perfection during their time at the monastery so that they may teach and inspire future generations, thereby ensuring the continued security of your homeland in future years.</p>
+
+     <p>Your attainment of the rank of Kai Grand Master brought with it great rewards. Some, such as the restoration of the Kai and the undying gratitude of your fellow Sommlending, could have been anticipated. Yet there have also been rewards which you could not possibly have foreseen. The discovery that within you lay the potential to develop Kai Disciplines beyond those of the Magnakai (which were once thought to be the ultimate that a Kai Master could aspire to) was truly a revelation. This discovery has inspired you to search for the wisdom and power that no Kai lord before you has ever possessed. In the name of your creator, the God Kai, and for the greater glory of Sommerlund and the Goddess Ishir, you have vowed to scale the very pinnacle of Kai perfection<ch.emdash/>to attain all of the Grand Master Disciplines and become the first Kai Supreme Master.</p>
+
+     <p>With diligence and determination you set about the restoration of the Kai Monastery and the training of the New Order recruits. Your efforts were swiftly rewarded for within the space of two short years the first raw recruits had graduated to become a cadre of gifted Kai Masters who, in turn, were able to commence the teaching of their skills to subsequent intakes of Kai novices. Readily the Kai Masters rose to their new-found responsibilities, leaving you free to devote more of your time to the pursuit and perfection of the Grand Master Disciplines. During this period you also received expert tutelage in the ways of magic from two of your most-trusted friends and advisors: Guildmaster Banedon, leader of the Brotherhood of the Crystal Star, and Lord Rimoah, speaker for the High Council of the Elder Magi.</p>
+
+     <p>In the deepest subterranean level of the monastery, one hundred feet below the Tower of the Sun, you ordered the excavation and construction of a special vault. In this magnificent chamber wrought of granite and gold you placed the Lorestones of Nyxator<ch.emdash/>seven gems of Kai power which you had recovered during an earlier quest for Kai knowledge. In this vault, bathed in the golden light of the radiant gems, you spent countless hours in pursuit of perfection. Sometimes alone, sometimes in the company of your two able advisors<ch.emdash/>Banedon and Rimoah<ch.emdash/>you worked hard to develop your innate Grand Master Disciplines, and grasp the fundamental secrets of Brotherhood and Old Kingdom magic. During this time you noticed many remarkable changes taking place within your body: you became physically and mentally stronger, your five primary senses sharpened far beyond all that you had experienced before, and, perhaps most remarkably, your body began to age at a much slower rate. Now, for every five years that elapse you age but one year.</p>
+
+     <p>In the years since your victory over the Darklords, peace has reigned victorious and the peoples of the Free Kingdoms have rejoiced in the knowledge that the evil which once threatened to destroy them has been banished from the face of Magnamund. Readily men have exchanged their swords for hoes and their shields for ploughs, and now the only marching they do is along the ruts of their freshly furrowed fields. Few are the watchful eyes that scan the distant horizon in fear of what may appear; although there are still some who maintain their vigilance, for the agents of the Dark God Naar come in many guises and there are those upon Magnamund who wait quietly in the shadows for the chance to do his evil bidding.</p>
+
+     <p>Already your new-found skills have been tested against Naar's agents and you have, on each occasion, acquitted yourself admirably. Yet your continuing victories have enraged the Dark God and inflamed his lust for vengeance. From the depths of his stronghold upon the Plane of Darkness he created and sent to Sommerlund an evil champion called 'Wolf's Bane' who was the very image of yourself. While you were engaged upon a quest overseas, this impostor terrorized your homeland and sought to destroy your reputation and the honour of the Kai. And he would have succeeded had it not been for your courage and determination. You returned home and pursued your enemy to an ancient necropolis in the city of Tyso. Here, in a deep subterranean crypt, you and your evil alter-ego were drawn through a Shadow Gate<ch.emdash/>an astral corridor which connects your home world of Magnamund to several other planes of existence. You both emerged upon the remote planet of Avaros where a deadly duel ensued. With the unexpected help of an enigmatic elemental called Alyss you vanquished your foe, but before you could find your way back to your home world, you and Alyss were both sucked through a second Shadow Gate which led to the Plane of Darkness<ch.emdash/>the fell domain of Naar himself.</p>
+
+     <p>In the throne hall of Naar a titanic struggle took place as you and Alyss fought desperately to escape from the Dark God and his court of powerful minions. During this battle you discovered that Naar had in his possession the fabled Moonstone of the Shianti<ch.emdash/>a wondrous artifact created many thousands of years ago by the godlike Shianti, whose presence upon Magnamund had heralded the dawn of humanity. This stone of power contains the combined might of all their magic and wisdom, the sum of all their knowledge. So significant was the creation of this stone that all time on Magnamund is measured from the date of its creation. It had long been held that the Moonstone's location was a secret known only to the remnants of the Shianti, who dwell upon the Isle of Lorn in remotest Southern Magnamund, yet the evidence of your eyes told you that this mystical artifact had somehow fallen into the hands of the Dark God.</p>
+
+     <p>Suddenly the significance of the Moonstone became crystal clear. Naar had been using its legendary powers to generate Shadow Gates within the world of Magnamund, at locations and times of his own choosing. Such power had enabled him to send his loathsome champions to your home world, while the goodly forces of Kai and Ishir had been held at bay, helpless to counter them. Only you and your Kai brethren have stood in the way of the onslaught of Naar's agents since the demise of the Darklords.</p>
+
+     <p>During the battle, thanks to Alyss's selfless courage, you were able to escape from Naar's throne hall by leaping into the Shadow Gate. As you entered its whirling maw, the last image that burned itself into your memory was that of Alyss slowly succumbing to the relentless attacks of Naar's minions. Successfully you had defeated Wolf's Bane and thwarted Naar's sinister plan to destroy the honour of the Kai, but as you returned through the Shadow Gate to the land of your birth, you knew that the fight against Evil was not yet won. You realized that if you were to prevent the Dark God from sending more of his dread creations into Magnamund, you would have to return to the Plane of Darkness and retrieve the fabled Moonstone. Only by doing so would Magnamund truly be safe from the ravages of Naar's armies of darkness.</p>
+    </data>
+   </section>
 
    <!-- Frontmatter -->
 
