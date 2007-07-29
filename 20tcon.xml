@@ -451,7 +451,6 @@
       </data>
      </section>
 
-     <!-- FIXME This section still contains the text copied from 18dotd.xml
      <section class="frontmatter-separate" id="cmbtrulz">
       <meta>
        <title>Rules for Combat</title>
@@ -460,46 +459,56 @@
       </meta>
 
       <data>
-       <p>There will be occasions during your adventure when you have to fight an enemy. The enemy<ch.apos/>s <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points are given in the text. Lone Wolf<ch.apos/>s aim in the combat is to kill the enemy by reducing his <typ class="attribute">ENDURANCE</typ> points to zero while losing as few <typ class="attribute">ENDURANCE</typ> points as possible himself.</p>
-       <p>At the start of a combat, enter Lone Wolf<ch.apos/>s and the enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> points in the appropriate boxes on the Combat Record section of your <a idref="action">Action Chart</a>. The sequence for combat is as follows:</p>
+       <p>There will be occasions during your adventure when you will have to fight an enemy. The enemy<ch.apos/>s <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points are given in the text. Lone Wolf<ch.apos/>s aim in the combat is to kill the enemy by reducing his <typ class="attribute">ENDURANCE</typ> points to zero while losing as few <typ class="attribute">ENDURANCE</typ> points as possible himself.</p>
+       <p>At the start of a combat, enter Lone Wolf<ch.apos/>s and the enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> points in the appropriate boxes on the Combat Record section of your <a idref="action">Action Chart</a>.</p>
+       <p>The sequence for combat is as follows:</p>
        <ol class="paragraphed">
-        <li><p>Add any extra points gained through your Grand Master Disciplines and Special Items to your current <typ class="attribute">COMBAT SKILL</typ> total.</p></li>
+        <li>
+         <p>Add any extra points gained through your Grand Master Disciplines and Special Items to your current <typ class="attribute">COMBAT SKILL</typ> total.</p>
+        </li>
         <li>
          <p>Subtract the <typ class="attribute">COMBAT SKILL</typ> of your enemy from this total. The result is your Combat Ratio. Enter it on the <a idref="action">Action Chart</a>.</p>
          <p>Example</p>
-         <p>Lone Wolf (<typ class="attribute">COMBAT SKILL</typ> 27) is attacked by a pack of Doomwolves (<typ class="attribute">COMBAT SKILL</typ> 30). He is taken by surprise and is not given the opportunity of evading their attack. Lone Wolf has the Grand Master Discipline of Kai-surge to which the Doomwolves are not immune, so Lone Wolf adds 8 points to his <typ class="attribute">COMBAT SKILL</typ>, giving him a total <typ class="attribute">COMBAT SKILL</typ> of 35.</p>
-         <p>He subtracts the Doomwolf pack<ch.apos/>s <typ class="attribute">COMBAT SKILL</typ> from his own, giving a Combat Ratio of +5. (35<ch.minus/>30 = +5). +5 is noted on the <a idref="action">Action Chart</a> as the Combat Ratio.</p>
+         <p>Lone Wolf (<typ class="attribute">COMBAT SKILL</typ> 32) is attacked by a pack of Doomwolves (<typ class="attribute">COMBAT SKILL</typ> 30). He is taken by surprise and is not given the opportunity of evading their attack. Lone Wolf has the Grand Master Discipline of Kai-surge to which the Doomwolves are not immune, so Lone Wolf adds 8 points to his <typ class="attribute">COMBAT SKILL</typ> giving him a total <typ class="attribute">COMBAT SKILL</typ> of 40.</p>
+         <p>He subtracts the Doomwolf pack<ch.apos/>s <typ class="attribute">COMBAT SKILL</typ> from his own, giving a Combat Ratio of +10 (40<ch.minus/>30 = +10). +10 is noted on the <a idref="action">Action Chart</a> as the Combat Ratio.</p>
         </li>
-        <li><p><a id="stage3">When you have your Combat Ratio</a>, pick a number from the <a idref="random">Random Number Table</a>.</p></li>
+        <li>
+         <p><a id="stage3">When you have your Combat Ratio</a>, pick a number from the <a idref="random">Random Number Table</a>.</p>
+        </li>
         <li>
          <p>Turn to the <a idref="crtable">Combat Results Table</a>. Along the top of the chart are shown the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the random number that you have picked (the random numbers appear on the side of the chart). You now have the number of <typ class="attribute">ENDURANCE</typ> points lost by both Lone Wolf and his enemy in this round of combat. (E represents points lost by the enemy; LW represents points lost by Lone Wolf.)</p>
          <p>Example</p>
-         <p>The Combat Ratio between Lone Wolf and the Doomwolf Pack has been established as +5. If the number picked from the <a idref="random">Random Number Table</a> is a 2, then the result of the first round of combat is:</p>
+         <p>The Combat Ratio between Lone Wolf and the Doomwolf Pack has been established as +10. If the number taken from the <a idref="random">Random Number Table</a> is a 2, then the result of the first round of combat:</p>
          <ul>
-          <li>Lone Wolf loses 3 <typ class="attribute">ENDURANCE</typ> points (plus an additional 1 point for using Kai-surge).</li>
-          <li>Doomwolf Pack loses 7 <typ class="attribute">ENDURANCE</typ> points.</li>
+          <li>Lone Wolf loses 3 <typ class="attribute">ENDURANCE</typ> points (plus an additional 1 point for using Kai-surge. This loss is in addition to the loss suffered as a result of combat)</li>
+          <li>Doomwolf Pack loses 9 <typ class="attribute">ENDURANCE</typ> points.</li>
          </ul>
         </li>
-        <li><p>On the <a idref="action">Action Chart</a>, mark the changes in <typ class="attribute">ENDURANCE</typ> points to the participants in the combat.</p></li>
-        <li><p>Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.</p></li>
-        <li><p>Repeat the sequence from <a idref="stage3">Stage 3.</a></p></li>
+        <li>
+         <p>On the <a idref="action">Action Chart</a>, mark the changes in <typ class="attribute">ENDURANCE</typ> points to the participants in the combat.</p>
+        </li>
+        <li>
+         <p>Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.</p>
+        </li>
+        <li>
+         <p>Repeat the sequence from <a idref="stage3">Stage 3</a>.</p>
+        </li>
        </ol>
 
        <p>This process of combat continues until <typ class="attribute">ENDURANCE</typ> points of either the enemy or Lone Wolf are reduced to zero or below, at which point that combatant is declared dead. If Lone Wolf is dead, the adventure is over. If the enemy is dead, Lone Wolf proceeds but with his <typ class="attribute">ENDURANCE</typ> points possibly reduced.</p>
+
        <p>A <a idref="crsumary">summary of Combat Rules</a> appears in the back of this book.</p>
 
        <section class="frontmatter" id="evasion">
         <meta><title>Evasion of Combat</title></meta>
 
         <data>
-         <p>During your adventure you may be given the chance to evade combat. If you have already engaged in a round of combat and decide to evade, calculate the combat for that round in the usual manner. All points lost by the enemy as a result of that round are ignored, and you make your escape. Only Lone Wolf may lose <typ class="attribute">ENDURANCE</typ> points during that round (but then that is the risk of running away!). You may evade only if the text of the particular section allows you to do so.</p>
+         <p>During your adventure you may be given the chance to evade combat. If you have already engaged in a round of combat and decide to evade, calculate the combat for that round in the usual manner. All points lost by the enemy as a result of that round are ignored, and you make your escape. Only Lone Wolf may lose <typ class="attribute">ENDURANCE</typ> points during that round (but then that is the risk of running away!). You may only evade if the text of the particular section allows you to do so.</p>
         </data>
        </section>
       </data>
      </section>
-     -->
 
-     <!-- FIXME This section still contains the text copied from 18dotd.xml
      <section class="frontmatter-separate" id="levels">
       <meta>
        <title>Levels of Kai Grand Mastership</title>
@@ -507,14 +516,13 @@
        <link class="next" idref="imprvdsc" />
       </meta>
       <data>
-
-       <p>The following table is a guide to the rank and titles you can achieve at each stage of your journey along the road of Kai Grand Mastership. As you successfully complete each adventure in the <cite>Lone Wolf</cite> Grand Master series, you will gain an additional Grand Master Discipline and progress towards the pinnacle of Kai perfection<ch.emdash/>to become a Kai Supreme Master.</p>
+       <p>The following table is a guide to the rank and titles you can achieve at each stage of your journey along the road of Kai Grand Mastership. As you complete successfully each adventure in the <cite>Lone Wolf</cite> Grand Master series, you will gain an additional Grand Master Discipline and progress towards the pinnacle of Kai perfection<ch.emdash/>to become a Kai Supreme Master.</p>
 
        <ol>
         <li>Kai Grand Master Senior</li>
         <li>Kai Grand Master Superior</li>
         <li>Kai Grand Sentinel</li>
-        <li>Kai Grand Defender<ch.emdash/><em>You begin the <cite>Lone Wolf</cite> Grand Master adventures at this level of Mastery</em></li>
+        <li>Kai Grand Defender<ch.emdash/><em>You begin the <cite>Lone Wolf</cite> Grand Master adventures at this level of mastery</em></li>
         <li>Kai Grand Guardian</li>
         <li>Sun Knight</li>
         <li>Sun Lord</li>
@@ -526,9 +534,8 @@
        </ol>
       </data>
      </section>
-     -->
 
-     <!-- FIXME This section still contains the text copied from 18dotd.xml
+     <!-- FIXME This section still contains the text copied from 18dotd.xml-->
      <section class="frontmatter-separate" id="imprvdsc">
       <meta>
        <title>Improved Grand Master Disciplines</title>
@@ -543,8 +550,9 @@
       </footnotes>
 
       <data>
-       <p>As you rise through the higher levels of Kai Grand Mastery, you will find that your Disciplines will steadily improve. For example, if you possess the Discipline of Grand Nexus when you reach the Grand Master rank of Grand Thane, you will be able to pass freely through Shadow Gates and explore the nether realms of Aon and the Daziarn Plane.</p>
+       <p>As you rise through the higher levels of Kai Grand Mastery you will find that your Disciplines will steadily improve. For example, if you possess the Discipline of Grand Nexus when you reach the Grand Master rank of Grand Thane, you will be able to pass freely through Shadow Gates and explore the nether realms of Aon and the Daziarn Plane.</p>
 
+       <!-- FIXME This section does not appear in the transscribed text. Copied from 18dotd.xml.
        <section class="frontmatter" id="guardian">
         <meta><title>Kai Grand Guardian</title></meta>
         <data>
@@ -571,7 +579,9 @@
          </dl>
         </data>
        </section>
+       -->
 
+       <!-- FIXME This section does not appear in the transscribed text. Copied from 18dotd.xml.
        <section class="frontmatter" id="sunkght">
         <meta><title>Sun Knight</title></meta>
 
@@ -599,7 +609,9 @@
          </dl>
         </data>
        </section>
+       -->
 
+       <!-- FIXME This section does not appear in the transscribed text. Copied from 18dotd.xml.
        <section class="frontmatter" id="sunlord">
         <meta><title>Sun Lord</title></meta>
 
@@ -627,7 +639,9 @@
          </dl>
         </data>
        </section>
+       -->
 
+       <!-- FIXME This section does not appear in the transscribed text. Copied from 18dotd.xml.
        <section class="frontmatter" id="sunthane">
         <meta><title>Sun Thane</title></meta>
 
@@ -655,7 +669,9 @@
          </dl>
         </data>
        </section>
+       -->
 
+       <!-- FIXME This section does not appear in the transscribed text. Copied from 18dotd.xml.
        <section class="frontmatter" id="grandthane">
         <meta><title>Grand Thane</title></meta>
 
@@ -683,15 +699,82 @@
          </dl>
         </data>
        </section>
+       -->
 
+       <!-- FIXME This section does not appear in the transscribed text. Copied from 19wb.xml.
+       <section class="frontmatter" id="grandcrown">
+        <meta><title>Grand Crown</title></meta>
+
+        <data>
+         <p>If you are a Grand Master who has reached the rank of Grand Crown, you will now benefit from improvements to the following Grand Master Disciplines: </p>
+         <dl class="paragraphed">
+          <dt>Grand Weaponmastery</dt>
+           <dd><p>Kai Grand Crowns with this discipline are consummate masters of unarmed combat. When fighting bare-handed, i.e. without any weapons, they may add 3 points to their <typ class="attribute">COMBAT SKILL</typ>.</p></dd>
+          <dt>Animal Mastery</dt>
+           <dd><p>Grand Crowns with this ability are able to plant in the mind of any animal the image of their most-feared predator or adversary. Under the influence of this illusion the animal will believe, with all of its senses, that it is being confronted by such a creature instead of a Kai Grand Crown.</p></dd>
+          <dt>Grand Pathsmanship</dt>
+           <dd><p>Grand Crowns with this skill are able to create a clear passageway through dense undergrowth, forest, or jungle. Once having passed through this passageway, the plant material will revert to its normal state. This skill can also be employed by a Kai Grand Crown against magical foliage, or to counter any plant material ranged against him by an enemy.</p></dd>
+          <dt>Kai-screen</dt>
+           <dd><p>Grand Crowns who possess mastery of this Discipline are able to mask the goodly aura which radiates naturally from their minds and bodies. Additionally, Grand Crowns can deliberately alter these auras to give a false impression of themselves to creatures who are sensitive to such psychic auras.</p></dd>
+          <dt>Grand Nexus</dt>
+           <dd><p>Grand Crowns who possess this Discipline are able to speak a Kai Power Word<ch.emdash/>a holy utterance which will cause physical and psychic damage to any single creature within a radius of thirty feet. The degree of damage so caused, and the resultant drain upon a Grand Crown<ch.apos/>s reserves of <typ class="attribute">ENDURANCE</typ>, are dependent upon individual circumstances. The power and range of this skill increases as a Grand Master rises in rank.</p></dd>
+          <dt>Kai-alchemy</dt>
+           <dd><p>Grand Masters who have reached the rank of Grand Crown are able to use the following Brotherhood spells:</p>
+           <ul>
+            <li>Teleport<ch.emdash/>By casting this spell, Kai Grand Crowns can transport themselves physically to any place which they can see with their own eyes. The spell will carry the caster, his equipment, and clothing to his chosen sighted destination. It cannot be used on any other living creature and it will not transport any other living creature along with the caster. Use of this spell will cost the caster between 1 and 5 <typ class="attribute">ENDURANCE</typ> points every time it is used. This cost reduces as a Kai Grand Master increases in rank.</li>
+            <li>See Illusion<ch.emdash/>Using this spell, a Kai Grand Crown is able to detect an illusion and know immediately its true identity or purpose.</li>
+           </ul>
+          </dd>
+         </dl>
+        </data>
+       </section>
+       -->
+
+       <section class="frontmatter" id="sunprince">
+        <meta><title>Sun Prince</title></meta>
+
+        <data>
+         <p>If you are a Grand Master who has reached the rank of Sun Prince (11 Disciplines), you will now benefit from improvements to the following Grand Master Disciplines:</p>
+         <dl class="paragraphed">
+          <dt>Animal Mastery</dt>
+           <dd><p>Kai Sun Princes with this Discipline are able to alter their appearance, including clothing and equipment, to take on the guise of any animal that they may come into contact with. This physical change will only be witnessed by the animal in question.</p></dd>
+          <dt>Deliverance</dt>
+           <dd><p>Sun Princes with this ability are able to cause the regeneration of lost body parts, i.e. hands, feet, arms, legs, eyes and internal organs. This improved Discipline can be used to repair a Sun Prince<ch.apos/>s own body, or that of another person or creature. The time required to effect regeneration depends on the size and relative importance of the body part affected.</p></dd>
+          <dt>Assimilance</dt>
+           <dd><p>Kai Sun Princes who possess this Discipline are able to create an illusory double of themselves and project this image up to a range of thirty feet. The Sun Prince must remain in visual contact with his/her image in order to maintain the illusion. Physical, magical, and psychic attacks upon the illusory image will cause no injury. The range of this ability increases substantially when a Sun Prince attains the rank of Kai Supreme Master.</p></dd>
+          <dt>Kai-surge</dt>
+           <dd><p>Sun Princes who possess mastery of this Discipline are able to focus their psychic power into a Kai-Ray: a laser-like beam of mental energy capable of penetrating the strongest of psychic defences. This ability can be used once during a combat to reduce an enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> score by 15 points. However, use of this Kai-Ray will also reduce a Sun Prince<ch.apos/>s <typ class="attribute">ENDURANCE</typ> score by 4 points. It cannot be used if a Sun Prince<ch.apos/>s <typ class="attribute">ENDURANCE</typ> score is 10 or less and it cannot be used in conjunction with any other form of psychic attack.</p></dd>
+          <dt>Kai-screen</dt>
+           <dd><p>Sun Princes who possess this Discipline are able to create a mental sanctuary in which to keep safe their minds from psychic assault. Creation of this sanctuary does not require thought or concentration; it occurs instantly whenever a Kai Sun Prince is subjected to psychic attack. The defensive strength of this sanctuary further increases when a Sun Prince attains the rank of Kai Supreme Master.</p></dd>
+          <dt>Grand Huntmastery</dt>
+           <dd><p>Grand Masters who have reached the rank of Sun Prince are able to control their direction and rate of movement when subjected to strong currents of air or water, or when venturing through non-material planes of existence, e.g. Shadow Gates.</p></dd>
+         </dl>
+        </data>
+       </section>
+
+       <!-- FIXME This paragraph does not appear in the transscribed text.
        <p>The nature of any additional improvements and how they affect your Grand Master Disciplines will be noted in the <ch.apos/>Improved Grand Master Disciplines<ch.apos/> section of future <cite>Lone Wolf</cite> books.</p>
+       -->
       </data>
      </section>
-     -->
     </data>
    </section>
 
-   <!-- Frontmatter -->
+   <section class="frontmatter" id="kaiwisdm">
+    <meta>
+     <title>Grand Master<ch.apos/>s Wisdom</title>
+     <link class="prev" idref="imprvdsc" />
+     <link class="next" idref="sect1" />
+    </meta>
+
+    <data>
+     <p>You are about to embark upon the ultimate quest against the Dark God Naar<ch.emdash/>the master of all Evil. Your search for the precious Moonstone will take you to the Plane of Darkness where you can expect no help at all from the monstrous creatures who inhabit this terrible realm. You should remain wary and on your guard at all times for this mission will be the most dangerous you have ever undertaken.</p>
+     <p>Some of the things that you will encounter during your quest will be of use to you, while others may be red herrings of no real value at all. If you discover items, be selective in what you choose to keep.</p>
+     <p>Pick your four Grand Master Disciplines with care for a wise choice will enable any player to complete the quest, no matter how weak their initial <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> scores may be. Successful completion of previous <cite>Lone Wolf</cite> adventures, although an advantage, is not essential for the completion of this Grand Master adventure.</p>
+     <p>May the light of Kai and Ishir be your guide as you strive to outwit and defeat the Dark God and his loathsome minions.</p>
+     <p>For Sommerlund and the Kai!</p>
+    </data>
+   </section>
 
 <!--
 
@@ -4164,15 +4247,17 @@ although an advantage, is not essential for the completion of this Grand Master 
 
        <p>(<a idref="equipmnt">Equipment</a>) Removed <quote>(see the inside front cover of this book)</quote>. Replaced <quote>safe-keeping</quote> with <quote>safekeeping</quote>, <quote>QUARTERSTAFF</quote> with <quote>Quarterstaff</quote>, <quote>BROADSWORD</quote> with <quote>Broadsword</quote>, <quote>BOW</quote> with <quote>Bow</quote>, <quote>QUIVER</quote> with <quote>Quiver</quote>, <quote>DAGGER</quote> with <quote>Dagger</quote>, <quote>SWORD</quote> with <quote>Sword</quote>, <quote>MEALS</quote> with <quote>Meals</quote>, <quote>ROPE</quote> with <quote>Rope</quote>, <quote>POTION OF LAUMSPUR</quote> with <quote>Potion of Laumspur</quote>, <quote>AXE</quote> with <quote>Axe</quote>, all occurrences of <quote>arrow</quote> with <quote>Arrow</quote>, all occurrences of <quote>arrows</quote> with <quote>Arrows</quote>, all occurrences of <quote>bow</quote> with <quote>Bow</quote>, all occurrences of <quote>quiver</quote> with <quote>Quiver</quote>, and <quote>(eg Gold Dagger</quote> with <quote>(e.g. Gold Dagger</quote> <!-- Errata copied from 17tdoi.xml: Replaced <quote>your Monastery</quote> with <quote>your monastery</quote>. Replaced <quote>Magador you</quote> with <quote>Magador, you</quote>, <quote>eg Gold</quote> with <quote>e.g. Gold</quote>, <quote>map of the area</quote> with <quote>map of the the Maakengorge and surrounding territories</quote>, and <quote>adds 3 points</quote> with <quote>adds 5 points</quote>. Added a section about Gold Crowns which reads <quote>The currency of Magador is the Gold Crown. These are always carried in the Belt Pouch. It will hold a maximum of fifty Crowns.</quote> Replaced <quote>combat, therefore</quote> with <quote>combat; therefore</quote>. Replaced each occurrence of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.--></p>
 
-       <p>(<a idref="cmbtrulz">Rules for Combat</a>) <!-- Errata copied from 17tdoi.xml: Removed <quote>on the inside back cover of this book</quote>. Replaced <quote>on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>, <quote>Lone Wolf (<typ class="attribute">COMBAT SKILL</typ> 32)</quote> with <quote>Lone Wolf (<typ class="attribute">COMBAT SKILL</typ> 27)</quote>, and <quote>adds 3 points</quote> with <quote>adds 8 points</quote>. Replaced <quote>points reduced</quote> with <quote>points possibly reduced</quote>. Replaced <quote>to zero</quote> with <quote>to zero or below</quote>. Replaced <quote>at which point the one with the zero score is declared dead.</quote> with <quote>at which point that combatant is declared dead.</quote>.--></p>
+       <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed <quote>on the inside back cover of this book</quote>. Replaced <quote>to zero</quote> with <quote>to zero or below</quote>, <quote>at which point the one with the zero score is declared dead.</quote> with <quote>at which point that combatant is declared dead.</quote>, and <quote>points reduced</quote> with <quote>points possibly reduced</quote>, and <quote>on the page after the Random Number Table</quote> with <quote>in the back of this book</quote>.</p>
 
-       <p>(<a idref="levels">Levels of Kai Grand Mastership</a>) <!-- Errata copied from 17tdoi.xml: Replaced each occurrence of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.--></p>
+       <p>(<a idref="levels">Levels of Kai Grand Mastership</a>) Replaced each occurrence of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
 
-       <p>(<a idref="imprvdsc">Improved Grand Master Disciplines</a>) <!-- Errata copied from 17tdoi.xml: Replaced both occurrences of <quote>Kai-Blast</quote> with <quote>Kai-blast</quote>. Replaced <quote>surface, eg:</quote> with <quote>surfaces, e.g.</quote>, <quote>Kai Surge</quote> with <quote>Kai-surge</quote>, all occurrences of <quote>arrow</quote> with <quote>Arrow</quote>, both occurrences of <quote>arrow, or arrow-like</quote> with <quote>Arrow or Arrow-like</quote>, <quote>lava and</quote> with <quote>lava, and</quote>, and <quote>body-weight</quote> with <quote>body weight</quote>. Added <quote>(7 Disciplines)</quote> after <quote>Sun Lord</quote>. Removed the quotation marks around <quote>Lightning Hand</quote>. Replaced <quote>Magi-Magic</quote> with <quote>Magi-magic</quote>. Replaced <quote>ie. lightning</quote> with <quote>i.e. lightning</quote>. Replaced <quote><ch.lsquot/>Improved Grand Master Disciplines<ch.rsquot/></quote> with <quote><cite>Improved Grand Master Disciplines</cite></quote>. Replaced <quote>Brotherhood spells</quote> with <quote>Brotherhood Spells</quote>. Replaced <quote>Brotherhood spell <ch.lsquot/>Lightning Hand<ch.rsquot/></quote> with <quote>Brotherhood Spell <spell>Lightning Hand</spell></quote>. Replaced <quote>Brotherhood spells</quote> with <quote>Brotherhood Spells</quote>. Replaced <quote>ie. they</quote> with <quote>i.e. they</quote>. Replaced each occurrence of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.--></p>
+       <p>(<a idref="imprvdsc">Improved Grand Master Disciplines</a>) Added <quote>(11 Disciplines)</quote> after <quote>Sun Prince</quote>. Replaced <quote>ie, hands</quote> with <quote>i.e. hands</quote> and <quote>eg, Shadow Gates</quote> with <quote>e.g. Shadow Gates</quote>. <!-- Errata copied from 17tdoi.xml: Replaced both occurrences of <quote>Kai-Blast</quote> with <quote>Kai-blast</quote>. Replaced <quote>surface, eg:</quote> with <quote>surfaces, e.g.</quote>, <quote>Kai Surge</quote> with <quote>Kai-surge</quote>, all occurrences of <quote>arrow</quote> with <quote>Arrow</quote>, both occurrences of <quote>arrow, or arrow-like</quote> with <quote>Arrow or Arrow-like</quote>, <quote>lava and</quote> with <quote>lava, and</quote>, and <quote>body-weight</quote> with <quote>body weight</quote>. Added <quote>(7 Disciplines)</quote> after <quote>Sun Lord</quote>. Removed the quotation marks around <quote>Lightning Hand</quote>. Replaced <quote>Magi-Magic</quote> with <quote>Magi-magic</quote>. Replaced <quote>ie. lightning</quote> with <quote>i.e. lightning</quote>. Replaced <quote><ch.lsquot/>Improved Grand Master Disciplines<ch.rsquot/></quote> with <quote><cite>Improved Grand Master Disciplines</cite></quote>. Replaced <quote>Brotherhood spells</quote> with <quote>Brotherhood Spells</quote>. Replaced <quote>Brotherhood spell <ch.lsquot/>Lightning Hand<ch.rsquot/></quote> with <quote>Brotherhood Spell <spell>Lightning Hand</spell></quote>. Replaced <quote>Brotherhood spells</quote> with <quote>Brotherhood Spells</quote>. Replaced <quote>ie. they</quote> with <quote>i.e. they</quote>. Replaced each occurrence of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.--></p>
 
        <!-- Copied from 17tdoi.xml:
        <p><cite>Lone Wolf Club Newsletter 24</cite> states: <quote>In Lone Wolf 16, the Improved Discipline of Kai-surge (at rank of Sun Lord) is not fully explained (a sentence is missing from the paragraph). A Kai Sun Lord using Kai Blast [sic] determines the damage inflicted on an enemy by picking two numbers from the <a idref="random">Random Number Table</a>. These numbers should be added together (a <ch.apos/>0<ch.apos/> = 1) and the resultant total equals the damage inflicted.</quote>. This missing information has been added to the text.</p>
        -->
+
+       <p>(<a idref="kaiwisdm">Grand Master<ch.apos/>s Wisdom</a>) Replaced each occurrence of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. <!-- Copied from 17tdoi.xml: Moved this section of the book to its normal position after <a idref="imprvdsc">Improved Grand Master Disciplines</a>. --></p>
 
       </data>
      </section>
