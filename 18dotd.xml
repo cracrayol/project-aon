@@ -853,9 +853,27 @@
       </ul>
       <p>If you wish to keep any of these items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Shortly before sunset, you emerge from the trees at a place where three trails meet. A wooden signpost propped against a boulder indicates three directions, and distances:</p>
-      <p>North<ch.endash/>Chod<ch.endash/>250 miles</p>
+       <table>
+        <tr>
+         <td>North<ch.emdash/></td>
+         <td>Chod</td>
+         <td>250 miles</td>
+        </tr>
+        <tr>
+         <td>West</td>
+         <td>Holona</td>
+         <td>50 miles</td>
+        </tr>
+        <tr>
+         <td>South</td>
+         <td>Tenzha</td>
+         <td>20 miles</td>
+        </tr>
+       </table>
+<!--      <p>North<ch.endash/>Chod<ch.endash/>250 miles</p>
       <p>West<ch.endash/>Holona<ch.endash/>50 miles</p>
       <p>South<ch.endash/>Tenzha<ch.endash/>20 miles</p>
+      Should the <ch.emdash/>es be removed as per the table?-->
       <p>You are anxious to leave hostile Eldenoran territory as soon as possible and, after checking your <a idref="map">map</a>, you set off to the south, towards the Slovian border town of Tenzha. During your ride, unless you possess Grand Huntmastery, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect343">To continue, <link-text>turn to 343</link-text>.</choice>
      </data>
@@ -1033,7 +1051,7 @@
 
      <data>
       <p>You abandon your horse at the derelict barn and creep down stealthily to the river<ch.apos/>s edge. After stowing your cloak and boots in your backpack, you wade out into the cold dark waters of the Storn and begin your swim to the opposite bank. The river current is strong and, before long, you find yourself being carried swiftly downstream.</p>
-      <choice idref="sect232">If your current <typ class="attribute">ENDURANCE</typ> points score is 10 or less <link-text>turn to 232</link-text>.</choice>
+      <choice idref="sect232">If your current <typ class="attribute">ENDURANCE</typ> points score is 10 or less, <link-text>turn to 232</link-text>.</choice>
       <choice idref="sect177">If it is 11 or more, <link-text>turn to 177</link-text>.</choice>
      </data>
     </section>
@@ -1057,7 +1075,7 @@
      <meta><title>32</title></meta>
 
      <data>
-      <p>The burning wolf-thing comes crashing down into the midst of its following pack members, scattering them in all directions. A collective howl arises from the darkness, a hellish shrieking that is filled with fear, anger and pain. The dramatic loss of their leader is more than the remaining beasts can bear, and, with a final howl of frustration, they flee from the bridge and scurry back to the safety of their pens in Castle Tranius.</p>
+      <p>The burning wolf-thing comes crashing down into the midst of its following pack members, scattering them in all directions. A collective howl arises from the darkness, a hellish shrieking that is filled with fear, anger, and pain. The dramatic loss of their leader is more than the remaining beasts can bear, and, with a final howl of frustration, they flee from the bridge and scurry back to the safety of their pens in Castle Tranius.</p>
       <choice idref="sect86"><link-text>Turn to 86</link-text>.</choice>
      </data>
     </section>
@@ -1068,7 +1086,7 @@
      <data>
       <p>The trooper fumbles for the haft of an axe which is tucked into his belt. Before he can free it, you stride forward and strike a blow with your fist that sends him crashing backwards through the open hut door. Moments later, there is a loud commotion and half a dozen angry Eldenorans come pouring out of the doorway with weapons drawn. You will have to fight them:</p>
       <combat><enemy>Eldenoran horse-scouts</enemy><enemy-attribute class="combatskill">34</enemy-attribute><enemy-attribute class="endurance">38</enemy-attribute></combat>
-      <choice idref="sect85">If you win and the combat lasts three rounds or less <link-text>turn to 85</link-text>.</choice>
+      <choice idref="sect85">If you win and the combat lasts three rounds or less, <link-text>turn to 85</link-text>.</choice>
       <choice idref="sect160">If you win and the combat lasts four rounds or more, <link-text>turn to 160</link-text>.</choice>
      </data>
     </section>
@@ -1097,14 +1115,14 @@
      <meta><title>36</title></meta>
 
      <data>
-      <p>You continue along the avenue until you reach the city<ch.apos/>s north wall. Here you stop to read a proclamation that had been nailed to the door of a coaching inn and stables. It states that a curfew is in force in Rhem, and anyone found on the streets an hour after nightfall will be arrested by the city watch.</p>
+      <p>You continue along the avenue until you reach the city<ch.apos/>s north wall. Here you stop to read a proclamation that has been nailed to the door of a coaching inn and stables. It states that a curfew is in force in Rhem, and anyone found on the streets an hour after nightfall will be arrested by the city watch.</p>
       <p>You are about to leave when you overhear the owner of the stables talking to one of his stable-hands. The boy is holding the reins of an aged horse that is severely lame in one leg, and the owner is telling him that he can no longer afford to stable the sick old mare.</p>
       <p><quote>She<ch.apos/>ll have to go,</quote> says the owner, shaking his head, <quote>she<ch.apos/>s worthless to me now she<ch.apos/>s not earning her keep.</quote></p>
       <p>Tears are streaming down the young boys face. Clearly he loves the old horse and is heartbroken at the prospect of her being destroyed. Boldly you approach the owner and propose a deal.</p>
 
       <p><quote>Sir, if I am able to cure this lame mare,</quote> you say, stroking the horse<ch.apos/>s velvety nose, <quote>then will you allow me to keep her?</quote></p>
-      <p><quote>Ha, ha, ha, so you think you can work miracles, do you?</quote> chuckles the owner, <quote>Very well then, stranger. If you can cure her<ch.emdash/>you can keep her.</quote></p>
-      <p>Gently you settle the mare and run your hands down her lame foreleg. Using your Magnakai Disciplines of curing and animal control, you slowly ease her worn-out joints and mend her cracked bones. Within minutes she is as agile as a new-born foal.</p>
+      <p><quote>Ha, ha, ha, so you think you can work miracles, do you?</quote> chuckles the owner. <quote>Very well then, stranger. If you can cure her<ch.emdash/>you can keep her.</quote></p>
+      <p>Gently you settle the mare and run your hands down her lame foreleg. Using your Magnakai Disciplines of Curing and Animal Control, you slowly ease her worn-out joints and mend her cracked bones. Within minutes she is as agile as a newborn foal.</p>
       <p><quote>Well I be a storgh<ch.apos/>s uncle!</quote> gasps the owner, amazed by the sudden transformation. <quote>So, stranger, you <em>can</em> work miracles after all! The horse is yours!</quote></p>
       <p>You climb upon the mare<ch.apos/>s back and wave farewell to the owner and the stable-boy, who is now crying tears of joy.</p>
       <p><quote>If ever you<ch.apos/>re looking for work,</quote> says the owner, as you turn the horse to leave, <quote>then there<ch.apos/>ll always be a job for you here!</quote></p>
@@ -1149,12 +1167,12 @@
      <meta><title>40</title></meta>
 
      <data>
-      <p>You leave the monastery under cover of darkness and set off towards the north-west, into the foothills the Durncrag mountains. Soon you pick up the trail that leads to Raven<ch.apos/>s Eerie and you follow it for a mile to where it crosses a mountain stream. Mist oozes from the peaty soil, breathing a damp film on the surrounding rocks.</p>
+      <p>You leave the monastery under cover of darkness and set off towards the northwest, into the foothills the Durncrag Mountains. Soon you pick up the trail that leads to Raven<ch.apos/>s Eerie and you follow it for a mile to where it crosses a mountain stream. Mist oozes from the peaty soil, breathing a damp film on the surrounding rocks.</p>
       <p>You continue beyond the mist-enshrouded stream until you reach a rocky spur of granite called Eagle<ch.apos/>s Claw. Here you detect a low humming sound and your pulse quickens; you sense you are getting closer to the Shadow Gate. This resonant hum steadily increases in volume the nearer you get to Raven<ch.apos/>s Eerie. Then, as you come to within a few hundred yards of the peak, you catch your first glimpse of the Shadow Gate. It is an awe-inspiring sight.</p>
-      <p>It appears like a black, semi-circular cavemouth that seems to hover motionless in the air. Crackling snakes of electrical energy surround its edges, and the air before it writhes and shimmers like a desert mirage. You reach to the pocket of your tunic and remove the Sun-crystal, weighing it carefully in your hand so that you will be ready to throw it accurately when the time comes.</p>
+      <p>It appears like a black, semicircular cave mouth that seems to hover motionless in the air. Crackling snakes of electrical energy surround its edges, and the air before it writhes and shimmers like a desert mirage. You reach to the pocket of your tunic and remove the Sun-crystal, weighing it carefully in your hand so that you will be ready to throw it accurately when the time comes.</p>
       <p>The electrical fire that borders the Shadow Gate suddenly flares and gives off hissing sparks which climb like fireworks into the night sky. Moments later, a trio of lavas emerge from its total darkness and soar into the air. Judging by their direction of flight, you determine that they are going to reinforce the enemy line which keeps King Ulnar<ch.apos/>s armies at bay.</p>
       <p>You are too far from the Shadow Gate to hurl the Sun-crystal and so, with caution, you begin to inch your way nearer to your goal.</p>
-      <choice idref="sect291">If you possess Grand Pathsmanship and Telegnosis <link-text>turn to 291</link-text>.</choice>
+      <choice idref="sect291">If you possess Grand Pathsmanship and Telegnosis, <link-text>turn to 291</link-text>.</choice>
       <choice idref="sect127">If you do not possess <em>both</em> of these skills, <link-text>turn to 127</link-text>.</choice>
      </data>
     </section>
@@ -1185,7 +1203,7 @@
      <meta><title>43</title></meta>
 
      <data>
-      <p>Beyond the bog, the land gently rises to barren plateau that is dotted with scrub and stunted pines. Here, beneath the twisted boughs of a dead tree, you make camp for the night and settle down to sleep. Before you rest, unless you possess Grand Huntmastery, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
+      <p>Beyond the bog, the land gently rises to a barren plateau that is dotted with scrub and stunted pines. Here, beneath the twisted boughs of a dead tree, you make camp for the night and settle down to sleep. Before you rest, unless you possess Grand Huntmastery, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect313">To continue, <link-text>turn to 313</link-text>.</choice>
      </data>
     </section>
@@ -1196,7 +1214,7 @@
      <data>
       <p>King Ulnar convenes an emergency council of the Sommlending barons in his Chamber of State. When all are assembled, Baron Caldar of Anskaven conducts a briefing, principally for your benefit, outlining the grave situation confronting Sommerlund and, most especially, the new order of the Kai. You are aware of much of what he says, having been briefed already by Gwynian the Sage in Varetta, but you learn that the Sommlending army has lost many brave men attempting to break the siege at the Kai Monastery and is too weakened, at present, to attack the enemy again.</p>
       <p><quote>Where is Guildmaster Banedon?</quote> you ask, when called upon by the King to speak to the council of war.</p>
-      <p><quote>He is at the Kai Monastery,</quote> answers Baron Medar of Tyso, <quote>He, in company with Lord Rimoah of Dessi and the ten most senior magicians of Toran<ch.apos/>s Brotherhood, went to the monastery during the early days of the siege. They travelled there aboard the Guildmaster<ch.apos/>s skyship and<ch.ellips/></quote> At this point, the Baron hesitates and looks to the King, as if seeking his permission to continue. The King continues on his behalf.</p>
+      <p><quote>He is at the Kai Monastery,</quote> answers Baron Medar of Tyso. <quote>He, in company with Lord Rimoah of Dessi and the ten most senior magicians of Toran<ch.apos/>s Brotherhood, went to the monastery during the early days of the siege. They travelled there aboard the Guildmaster<ch.apos/>s skyship and<ch.ellips/></quote> At this point, the Baron hesitates and looks to the King, as if seeking his permission to continue. The King continues on his behalf.</p>
       <p><quote>Grand Master,</quote> he says, his voice heavy, <quote>The Guildmaster<ch.apos/>s skyship was seen falling from the skies above the monastery. Border Rangers saw it crash in flames. We<ch.ellips/> we fear that all aboard were lost.</quote></p>
       <p>The King<ch.apos/>s words come as a terrible blow for Banedon and Rimoah are your closest friends. If it is true, and all of Sommerlund<ch.apos/>s finest magicians have been lost at a stroke, then the blow is doubly severe. The security of your homeland will have been greatly compromised by their deaths.</p>
       <choice idref="sect252">If you possess Telegnosis, <link-text>turn to 252</link-text>.</choice>
@@ -1250,7 +1268,7 @@
      <meta><title>49</title></meta>
 
      <data>
-      <p>The defenders on the Tower fight like lions. The battle is fierce and bloody throughout the monastery, but the struggle is soon won and the shaken remnants of the winged attackers are repelled with heavy losses. A great cheer goes up as the last of the battered lavas limps into the air and makes its escape towards the Durncrags.</p>
+      <p>The defenders on the tower fight like lions. The battle is fierce and bloody throughout the monastery, but the struggle is soon won and the shaken remnants of the winged attackers are repelled with heavy losses. A great cheer goes up as the last of the battered lavas limps into the air and makes its escape towards the Durncrags.</p>
       <p>You leave the Tower and tour the battlements, offering words of comfort to the wounded and praising those Kai who have shown exceptional bravery. You are returning to the Grand Hall when you see Banedon approaching from the other direction.</p>
       <p><quote>The time is ripe for you to begin your mission, Grand Master,</quote> he says. <quote>The enemy have lost a great number this night<ch.emdash/>it is unlikely they will return before the dawn.</quote></p>
       <p><quote>Yes, my friend,</quote> you reply, touching the pocket of your tunic which contains the Sun-crystal, <quote>you are right. The time has come<ch.emdash/>I will leave for Raven<ch.apos/>s Eerie at once.</quote></p>
@@ -1264,7 +1282,7 @@
      <data>
       <p>You draw your weapon and slay the first guard to come within arm<ch.apos/>s length of your horse. The others freeze in their tracks, stunned by the speed of your attack, but then the sergeant screams at them like a wild animal and they rush forward again. They are more scared of their sergeant<ch.apos/>s wrath, it seems, than they are of your battle skill. You must fight them.</p>
       <combat><enemy>Duadon guardsmen:</enemy><enemy-attribute class="combatskill">42</enemy-attribute><enemy-attribute class="endurance">42</enemy-attribute></combat>
-      <choice idref="sect335">You may evade this combat after loin rounds by <link-text>turning to 335</link-text>.</choice>
+      <choice idref="sect335">You may evade this combat after four rounds, by <link-text>turning to 335</link-text>.</choice>
       <choice idref="sect290">If you win he fight, <link-text>turn to 290</link-text>.</choice>
      </data>
     </section>
@@ -1276,7 +1294,7 @@
       <p>You rush into the forest and glance overhead to make doubly sure that you are not being tracked by the winged lavas. The darkening sky is clear of the enemy and confidently you press on through the trees, sure in your ability to remain undetected now that you are in your natural environment of the forest.</p>
       <p>Soon you reach the clearing and hurry to a boulder which bears the imprint of a human band. You place your right hand upon it and the imprint fits around it like a glove. Silently a hinged stone slab rises up from the around revealing a stair hat leads down into a brick-lined passageway. You enter and hurry along this familiar tunnel, covering a mile before you come to a door that opens automatically at your approach. Beyond lies the Vault of the Sun, your personal stronghold. It radiates a warmly golden light: they are the rays of the Lorestones of Nyxator. Once safely inside your underground lair, you pause to allow the radiant light of the Lorestones to wash over your tired and aching limbs and, within the space of a few heartbeats, the fatigue of your long journey home is melted away (restore all lost <typ class="attribute">ENDURANCE</typ> points).</p>
       <p>Revived and revitalized, you throw open the door to the vault and see a young Kai Master standing guard at the foot of the tower stairwell. He is Sabre Fox, one of your most gifted students.</p>
-      <p><quote>Gr.. Grand Master!</quote> he stammers, hardly daring to believe his eyes, <quote>you have returned. Praise the Gods!<ch.emdash/>Our prayers have been answered!</quote></p>
+      <p><quote>Gr<ch.ellips/> Grand Master!</quote> he stammers, hardly daring to believe his eyes. <quote>You have returned. Praise the Gods! Our prayers have been answered!</quote></p>
       <p>You smile at the young Kai Master who now has tears of joy in his steel-grey eyes.</p>
       <p><quote>Yes, Sabre Fox,</quote> you reply, <quote>I have returned. Now let us vanquish this foe and rid our land of their evil shadow.</quote></p>
       <choice idref="sect180"><link-text>Turn to 180</link-text>.</choice>
@@ -1351,7 +1369,7 @@
      <meta><title>58</title></meta>
 
      <data>
-      <p>Suddenly you are confronted by one of these beasts who attempts to strike you from the Tower with its horny tail. You leap to avoid its scything attack, draw your weapon in mid-air, and swing your first blow the moment your feet return to the flagstones.</p>
+      <p>Suddenly you are confronted by one of these beasts who attempts to strike you from the tower with its horny tail. You leap to avoid its scything attack, draw your weapon in mid-air, and swing your first blow the moment your feet return to the flagstones.</p>
       <combat><enemy>Lavas</enemy><enemy-attribute class="combatskill">49</enemy-attribute><enemy-attribute class="endurance">45</enemy-attribute></combat>
       <choice idref="sect49">If you win this combat, <link-text>turn to 49</link-text>.</choice>
      </data>
@@ -1361,7 +1379,7 @@
      <meta><title>59</title></meta>
 
      <data>
-      <p>You help the Baroness<ch.apos/>s entourage 10 set up camp beside the stream while Dorst, who considers himself something of a master cook, prepares the trout you caught earlier. To your surprise, the meal turns out to be excellent (restore 3 <typ class="attribute">ENDURANCE</typ> points.)</p>
+      <p>You help the Baroness<ch.apos/>s entourage 10 set up camp beside the stream while Dorst, who considers himself something of a master cook, prepares the trout you caught earlier. To your surprise, the meal turns out to be excellent (restore 3 <typ class="attribute">ENDURANCE</typ> points).</p>
       <p>During supper, you ask the Baroness what news she has heard of events in the east. She tells you that there is war between the principalities of the Stornlands, although this is such a common condition that it can hardly be considered news any more. Of distant Sommerlund she has heard nothing. After supper, she excuses herself and retires to her carriage. Dorst posts two men to guard her coach, then he invites you to play cards with himself and the remaining five men.</p>
       <choice idref="sect152">If you wish to accept his offer, <link-text>turn to 152</link-text>.</choice>
       <choice idref="sect330">If you choose to decline his offer, <link-text>turn to 330</link-text>.</choice>
@@ -1383,9 +1401,9 @@
      <meta><title>61</title></meta>
 
      <data>
-      <p><quote>In the name of the Gods!</quote> splutters Nathor, spilling liqueur down the front of his tunic, <quote>what was that?</quote></p>
+      <p><quote>In the name of the Gods!</quote> splutters Nathor, spilling liqueur down the front of his tunic. <quote>What was that?</quote></p>
       <p>A knot of fear tightens in the pit of your stomach. <quote>A Kraan,</quote> you reply, recognizing at once the fell cry of this unwelcome creature.</p>
-      <p>You hurry to a window and see the large, bat-like Kraan silhouetted against the moon. A man-sized rider clings precariously to the creature<ch.apos/>s reptilian back as it swoops and soars among the hills and gulleys.</p>
+      <p>You hurry to a window and see the large, bat-like Kraan silhouetted against the moon. A man-sized rider clings precariously to the creature<ch.apos/>s reptilian back as it swoops and soars among the hills and gullies.</p>
       <p><quote>You had best come away from the window, my Lord,</quote> replies an anxious Nathor, <quote>lest it detects your presence here,</quote></p>
       <p>You take heed of the Lord Constable<ch.apos/>s advice and retreat from the window. Furthermore, you use your Magnakai skill of Kai-screen to shield your mind in case the Kraan rider is able to employ psychic abilities to locate your presence.</p>
       <p><quote>It is not the first time it has come,</quote> says Rasbarin. <quote>Every night for the past ten days we<ch.apos/>ve heard it circling the hills. Sometimes there is more than one of its kind.</quote> He suggests that you bunk in the cellar of the monastery where you may be safer from detection, and you accept his offer gladly.</p>
@@ -1409,7 +1427,7 @@
      <meta><title>63</title></meta>
 
      <data>
-      <p>As the horsemen close in, unexpectedly you spur your steed straight at then in a bold counter-charge. The move takes the leading pair of riders by surprise and, before they fully recover their battle-senses, you speed between them and lash out with a single scything sweep. Both riders crash to the ground<ch.emdash/>minus their heads.</p>
+      <p>As the horsemen close in, unexpectedly you spur your steed straight at then in a bold countercharge. The move takes the leading pair of riders by surprise and, before they fully recover their battle-senses, you speed between them and lash out with a single scything sweep. Both riders crash to the ground<ch.emdash/>minus their heads.</p>
       <p>Shocked by your sheer audacity, the brigand leader shouts a recall to the others. They wheel around in a wide arc and form up in a line behind him, cursing you vehemently for the death of their comrades. Then, with a vengeful yell, the brigand chief leads his gang of saddle-bandits in a charge that, he hopes, will leave you trampled into the ground.</p>
       <p>As this wave of brigands come thundering down upon you, the leader urges at your head with his straight-bladed sword. It whistles by just inches from your scalp, but you do not allow him a second try. You twist in the saddle and strike like lightning, splitting his helmet and his skull with a single mighty blow. He falls before his men, yet they prove to be hardy rogues and they press home their attack regardless.</p>
       <combat><enemy>Eldenoran brigands</enemy><enemy-attribute class="combatskill">46</enemy-attribute><enemy-attribute class="endurance">41</enemy-attribute></combat>
@@ -1514,7 +1532,7 @@
       <p>Suddenly there is a low, concussive boom and a spiral of blue flame shoots the length of the hail, Fired from the tip of the figure<ch.apos/>s iron stave. You are its intended target and you dive to the floor to avoid being hit. The bolt ricochets off the stone wall close behind you and shatters one of the tall windows into a thousand glittering shards.</p>
       <p><quote>Take him!</quote> shouts Nathor, and his men rush forward, but a second blast from the stave puts an end to their brave advance. All three are cut down by an arc of blue fire that leaves their corpses heaped and smouldering in the middle of the hall.</p>
       <p>Nathor curses the sinister figure and it responds by uttering a chilling, inhuman laugh. Now you sense a new danger approaching<ch.emdash/>the being<ch.apos/>s sickly laughter is summoning its minions to the hall.</p>
-      <p><quote>Lord Nathor!</quote> you cry, <quote>We cannot prevail here. We must escape<ch.ellips/> follow me!</quote></p>
+      <p><quote>Lord Nathor!</quote> you cry. <quote>We cannot prevail here. We must escape<ch.ellips/> follow me!</quote></p>
       <p>And with these words, you race to the window and leap feet-first through its shattered pane.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect219">If the number you have picked is 0<ch.endash/>4, <link-text>turn to 219</link-text>.</choice>
@@ -1551,7 +1569,7 @@
       <p>In the twilight before dawn, you catch sight of the River Kinam less than a mile away to the west. You scan the surrounding landscape and note several small tracks (which lead to tiny farmsteads dotted around the vast plain) converging at a hamlet which nestles in a bend of this great river. During the past hour your horse has developed a slight limp, and a cursory look at his affected leg reveals that he has thrown a shoe. You know that unless you replace the missing shoe, and soon, he will be too lame to carry you further. Reluctantly, you decide to enter the hamlet and go in search of a blacksmith.</p>
       <p>A signpost at the entrance to the hamlet announces its name: Kalma. It is a quiet, sleepy sort of place that in many ways reminds you of Dage, the Sommlending village where you were born and where you spent your early years. Near the centre of this humble village you discover a smithy where, even at this early hour, you can hear the sound of a hammer beating iron. You tether your horse to a rail alongside a moth-eaten old donkey, and call out for the blacksmith.</p>
       <p><quote>In <ch.apos/>ere,</quote> comes the curt reply. On entering you discover a tail, broad-shouldered man clad in a leather apron, busily shaping a horseshoe on an anvil.</p>
-      <p><quote>My steed has shed a shoe,</quote> you say, <quote>can replace it?</quote></p>
+      <p><quote>My steed has shed a shoe,</quote> you say. <quote>Can replace it?</quote></p>
       <p><quote>Aye,</quote> he says, without bothering to look up from his work, <quote>but it<ch.apos/>ll cost you 20 Lune. In cash, and in advance, if you please.</quote></p>
       <choice idref="sect234">If you have sufficient cash to pay the blacksmith (20 Lune = 5 Gold Crowns}, <link-text>turn to 234</link-text>.</choice>
       <choice idref="sect259">If you do not, <link-text>turn to 259</link-text>.</choice>
@@ -1605,7 +1623,7 @@
      <meta><title>80</title></meta>
 
      <data>
-      <p>The herd of coppery-red dragons continue their relentless advance across the fiery plain. You count more than a hundred in total, and each one is as long and as broad as a galleon. The largest of their number, who is also the swiftest of foot, comes looming towards you, breathing blasts of blue flame. His scaly brethren halt in their tracks and watch expectantly, through hooded black eyes, as their leader stalks you like a cat preying upon a helpless doormouse.</p>
+      <p>The herd of coppery-red dragons continue their relentless advance across the fiery plain. You count more than a hundred in total, and each one is as long and as broad as a galleon. The largest of their number, who is also the swiftest of foot, comes looming towards you, breathing blasts of blue flame. His scaly brethren halt in their tracks and watch expectantly, through hooded black eyes, as their leader stalks you like a cat preying upon a helpless dormouse.</p>
       <p>High above, swooping in and out of the clouds, are scores of cackling lavas. You sense also another presence, a wispy dark shadow that exudes malevolence. You shudder when you realize that you are in the presence of a manifestation of Naar himself. He has come to witness your doom, to enjoy the sport of your final, futile battle, before he unleashes his dragons upon Sommerlund. The lavas<ch.apos/> attacks were but a preliminary phase of his master plan to destroy Sommerlund and the Kai.</p>
       <p>With terror in your heart you retreat across the moving sands in a desperate attempt to reach the Shadow Gate<ch.emdash/>your only hope of escape. The dragon continues to advance and it utters a thunderous roar as it bares its fangs in preparation for its attack.</p>
       <choice idref="sect196">If you have a Bow and wish to use it, <link-text>turn to 196</link-text>.</choice>
@@ -1617,7 +1635,7 @@
      <meta><title>81</title></meta>
 
      <data>
-      <p>As the riders approach, your initial suspicions are confirmed: these are unquestionably Eldenoran brigands. Their saddle-cloths bear their emblem and their steeds are laden with sacks and pouches that bulge with ill-gotten gains. You decide to remain hidden until they have passed by, but as they draw level with the copse, your horse suddenly shrieks and rises up on its hind legs, With shocked dismay you see that a harmless grasssnake has coiled itself around your horse<ch.apos/>s foreleg.</p>
+      <p>As the riders approach, your initial suspicions are confirmed: these are unquestionably Eldenoran brigands. Their saddle-cloths bear their emblem and their steeds are laden with sacks and pouches that bulge with ill-gotten gains. You decide to remain hidden until they have passed by, but as they draw level with the copse, your horse suddenly shrieks and rises up on its hind legs, With shocked dismay you see that a harmless grass snake has coiled itself around your horse<ch.apos/>s foreleg.</p>
       <p>The cry of your frightened horse betrays your hiding place. The Eldenorans wheel away from the road and come charging towards the copse, their swords drawn in eager anticipation of yet another easy kill.</p>
       <choice idref="sect293">If you wish to unsheathe a weapon and gel ready to defend yourself, <link-text>turn to 293</link-text>.</choice>
       <choice idref="sect241">If you choose to retreat deeper into the copse in an attempt to evade these brigands, <link-text>turn to 241</link-text>.</choice>
@@ -1628,7 +1646,7 @@
      <meta><title>82</title></meta>
 
      <data>
-      <p>Using the Old Kingdom battle-spell <spell>Hold Enemy</spell>, you command the Eldenoran to cease all movement. Instantly, the drunken thug freezes like a stone statue, enabling the young woman and her child to break free from his grasp. She runs towards you, cradling the sobbing child in her arms.</p>
+      <p>Using the Old Kingdom Battle-spell <spell>Hold Enemy</spell>, you command the Eldenoran to cease all movement. Instantly, the drunken thug freezes like a stone statue, enabling the young woman and her child to break free from his grasp. She runs towards you, cradling the sobbing child in her arms.</p>
       <p><quote>Thank you, thank you<ch.ellips/></quote> she cries as she falls to your feet. Gently you lift her, assuring her with kind words that her ordeal is over. She smiles, reassured, but her expression quickly changes when she spots something moving behind you.</p>
       <p><quote>There he is, that cur Holkar!</quote> she spits. <quote>He<ch.apos/>s the murdering leader of these bandits. All this chaos his doing.</quote></p>
       <p>You turn to look at the object of her hatred, and see a swarthy brigand dodging between the gravestones tat line the abbey grounds. He has a sack full of cot slung over his shoulder and he is hurrying towards his horse which stands close to the abbey<ch.apos/>s perimeter wall. Determined not to let him escape, you rush into the grounds of the abbey and give chase.</p>
@@ -1654,7 +1672,7 @@
       <p><quote>Grand Master, let me introduce you to Captain Cearmaine,</quote> says Elector Manatine, formally presenting the tough-looking officer to you. <quote>I have chosen him to see you safely to Holona. He will do all he can to help you through the battle zone so that you may press on with your urgent journey to Casiorn.</quote></p>
       <p>You recognize the captain<ch.apos/>s name and recall haying heard tales of his bravery during the Darklands War. His acts of heroism turned many battles to the favour of the Freeland Armies and earned him a respected reputation throughout Northern Magnamund. You could not have asked for a better man to escort you on the next, difficult stage of your vital journey.</p>
       <p>He offers you his hand in friendship and you are mildly shocked when your fingers close around a palm crafted from cold steel.</p>
-      <p><quote>A keepsake from the Battle of Vellino</quote>, he says, smiling at his metal hand. <quote>Sadly, the first was stole away by a Drakkar<ch.apos/>s axe.</quote></p>
+      <p><quote>A keepsake from the Battle of Vellino,</quote> he says, smiling at his metal hand. <quote>Sadly, the first was stole away by a Drakkar<ch.apos/>s axe.</quote></p>
       <choice idref="sect130"><link-text>Turn to 130</link-text>.</choice>
      </data>
     </section>
@@ -1676,9 +1694,27 @@
       </ul>
       <p>If you wish to keep any of these items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Shortly before sunset, you emerge from the trees at a place where three trails meet. A wooden signpost propped against a boulder indicates three directions, destinations, and distances:</p>
-      <p>North<ch.endash/>Chod<ch.endash/>250 miles</p>
+       <table>
+        <tr>
+         <td>North<ch.emdash/></td>
+         <td>Chod</td>
+         <td>250 miles</td>
+        </tr>
+        <tr>
+         <td>West</td>
+         <td>Holona</td>
+         <td>50 miles</td>
+        </tr>
+        <tr>
+         <td>South</td>
+         <td>Tenzha</td>
+         <td>20 miles</td>
+        </tr>
+       </table>
+<!--      <p>North<ch.endash/>Chod<ch.endash/>250 miles</p>
       <p>West<ch.endash/>Holona<ch.endash/>50 miles</p>
       <p>South<ch.endash/>Tenzha<ch.endash/>20 miles</p>
+      Should the <ch.emdash/>es be removed as per the table?-->
       <p>You are anxious to leave hostile Eldenoran territory as soon as possible and, after checking your <a idref="map">map</a>, you set off to the south, towards the Slovian border town of Tenzha.</p>
       <p>During your tide, unless you possess Grand Huntmastery, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect343">To continue, <link-text>turn to 343</link-text>.</choice>
@@ -1691,10 +1727,10 @@
      <data>
       <p>You ride to Scade, with all the speed your exhausted horse can muster, and return at once to the Lucky Bucket inn where the remaining members of the troop are billeted. The news of your encounter at Castle Tranius comes as a shock, both to the troopers and to the innkeeper who fears for the safety of the real Knight Tranius.</p>
       <p><quote>I haven<ch.apos/>t seen him in the town for near-on a week,</quote> he says, anxiously rubbing his many chins. <quote>We <ch.apos/>ere had no inkling that somethin<ch.apos/> bad was happenin<ch.apos/> up there at the castle. It<ch.apos/>s right put the shakes up me, I can tell you.</quote></p>
-      <p>In the warm comfort of the inn, you use your Kai healing skills to mend the Lord Constable<ch.apos/>s injuries. He is carefully testing his weight on his newly mended ankle when suddenly there is a commotion outside in the street. An angry mob of hard-faced men, many clutching torches, staves, and coils of rope, are marching down the cobbled avenue towards the inn.</p>
+      <p>In the warm comfort of the inn, you use your Kai Healing skills to mend the Lord Constable<ch.apos/>s injuries. He is carefully testing his weight on his newly mended ankle when suddenly there is a commotion outside in the street. An angry mob of hard-faced men, many clutching torches, staves, and coils of rope, are marching down the cobbled avenue towards the inn.</p>
       <p><quote>Hang the Talestrian thieves!</quote> they shout. <quote>String up the murdering swine!</quote></p>
       <p><quote>What<ch.apos/>s going on? Who are these men?</quote> says Nathor. The innkeeper<ch.apos/>s face turns white and he begins to tremble with fear.</p>
-      <p><quote>I<ch.ellips/> I don<ch.apos/>t rightly know,</quote> he stammers, <quote>I ain<ch.apos/>t never seen <ch.apos/>em before. They<ch.apos/>s not from these parts. We<ch.apos/>ve never had no quarrel with Talestria. You<ch.apos/>ve always been our friends.</quote></p>
+      <p><quote>I<ch.ellips/> I don<ch.apos/>t rightly know,</quote> he stammers. <quote>I ain<ch.apos/>t never seen <ch.apos/>em before. They<ch.apos/>s not from these parts. We<ch.apos/>ve never had no quarrel with Talestria. You<ch.apos/>ve always been our friends.</quote></p>
       <p>Suddenly a chunk of cobblestone smashes through a window and an angry cry arises from the mob:</p>
       <p><quote>Come out, you Talestrian dogs. Come out or we<ch.apos/>ll burn you out!</quote></p>
       <p>Nathor calls everyone to the rear of the inn where a passage leads directly to the stables.</p>
@@ -1711,7 +1747,7 @@
      <data>
       <p>You are part-way across the lord when alarm bells sound on both sides of the river.</p>
       <p><quote>Deserter at the ford!</quote> goes the cry from the Eldenoran fort. <quote>Enemy spy approaching!</quote> shout the Slovian guards.</p>
-      <p>Moments later, a hissing cloud of arrows and bolts descend on you from both sides and several missiles graze your back and thighs: lose 5 <typ class="attribute">ENDURANCE</typ> points. But the speed of your surprise crossing and your Kai camouflage skills enable you to reach the Slovian side intact, and you disappear swiftly into the darkness of the plains beyond.</p>
+      <p>Moments later, a hissing cloud of arrows and bolts descend on you from both sides and several missiles graze your back and thighs: lose 5 <typ class="attribute">ENDURANCE</typ> points. But the speed of your surprise crossing and your Kai Camouflage skills enable you to reach the Slovian side intact, and you disappear swiftly into the darkness of the plains beyond.</p>
       <choice idref="sect92"><link-text>Turn to 92</link-text>.</choice>
      </data>
     </section>
@@ -1743,7 +1779,7 @@
       <p>You enter Quill Street and ride along this narrow avenue, which is flanked by aromatic jala houses and perfumeries, until it turns abruptly right into a wider thoroughfare called Brass Street. Here you see the courtyard enhance to a grand building whose brick and marble fa<ch.ccedil/>ade is adorned with the words: HALLS OF LEARNING. Suddenly you feel inexplicably drawn towards this building; it is as if it possesses the solution to all your problems.</p>
       <p>You enter and ride along a gravelled path which leads to a building where a sign, hanging over its richly-carved oak door, simply says: LIBRARY. You feel compelled to stop here and, without quite knowing why, you dismount from your horse and tie his reins to a ring which is set into the wall. Then you push open the door and enter the library<ch.apos/>s cool interior.</p>
       <p>Countless thousands of books and parchments crowd the stone shelves of this magnificent library. Your eyes travel along them until they reach another door at the far end of the hall. There, standing framed in its archway, is an old man clad in plain brown robes. He looks at you and smiles knowingly.</p>
-      <p><quote>Welcome, Grand Master,</quote> he says, <quote>I have been expecting you.</quote></p>
+      <p><quote>Welcome, Grand Master,</quote> he says. <quote>I have been expecting you.</quote></p>
       <choice idref="sect348">If you have ever visited a hut on Raider<ch.apos/>s Road, the city of Tahou, or Lake Vorndarol (in previous <cite>Lone Wolf</cite> adventures), <link-text>turn to 348</link-text>.</choice>
       <choice idref="sect184">If you have never visited any of these places, <link-text>turn to 184</link-text>.</choice>
      </data>
@@ -1764,7 +1800,7 @@
      <data>
       <p>After the dangers of Eldenora, the plains of peaceful Slovia seem like a tranquil paradise. The grasslands are rich arid fertile, and an abundance of game keeps you well fed during the five days it takes you to ride north to the walled city of Tekaro. Here, at an inn close by the city<ch.apos/>s cathedral, where, years ago, you discovered one of the Lorestones of Nyxator during your quest for Kai knowledge, you spend a fortunate evening in the company of a band of Salonese mercenaries. Aided by your Kai skills, you fleece them of 30 Gold Crowns while playing cards, and with your gain you purchase a fresh horse (or your continuing journey home. (Your new horse and a night<ch.apos/>s lodging at the inn cost you 25 Cold Crowns; you may add the balance of 5 Cold Crowns to your <a idref="action">Action Chart</a>, maximum allowances permitting.)</p>
       <p>Early the following day you leave Tekaro and set out on the highway bound for Tido. You plan to reach Casiorn by means of the North Pass through the Slovarian Range, but during your second day on the road you are forced to revise your plans drastically. During a chance meeting at a wayside inn with a merchant who has journeyed from Casiorn, you learn that an avalanche has blocked the North Pass and travel by that route is now impossible. It will be several months before the pass is cleared and the mountain road rebuilt. You resolve instead to reach Casiorn by way of Varetta, the ancient city of crossed swords, and the following day you resume your ride north.</p>
-      <p>During your ride, you stop to assist a farmer whose cart has shed a wheel. In return for your help, he offers the services of his brother who operates a raft ferry across the river Quarl. Gladly the brother transports you and your horse across the river to Salony, where you enter the great forest by way of a timberland trail. After a full day<ch.apos/>s ride along this lonely track, you find yourself approaching the outskirts of a town called Ellio.</p>
+      <p>During your ride, you stop to assist a farmer whose cart has shed a wheel. In return for your help, he offers the services of his brother who operates a raft ferry across the River Quarl. Gladly the brother transports you and your horse across the river to Salony, where you enter the great forest by way of a timberland trail. After a full day<ch.apos/>s ride along this lonely track, you find yourself approaching the outskirts of a town called Ellio.</p>
       <p>During your long day<ch.apos/>s ride through the forest of Salony, unless you possess Grand Huntmastery, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect138"><link-text>Turn to 138</link-text>.</choice>
      </data>
@@ -1786,7 +1822,7 @@
 
      <data>
       <p>As the sun rises above the waters of the Holmgulf, it sheds its golden light upon the hopeful citizens of Holmgard who have gathered to cheer your departure. You ride out of the King<ch.apos/>s Citadel at the head of the Guard Cavalry regiment, with Captain D<ch.apos/>Val at your side. Bouquets of Sommlending roses are thrown before the hooves of your warhorse, and your ears ring to the jubilant cries of the crowd as you, and the brave horsemen at your back, ride with pride through the city streets that lead to Holmgard<ch.apos/>s north gate.</p>
-      <p>Once outside the city, you order your troop to couch their lances and form up in column, four abreast, in readiness for a swift ride north. At midday, you cross the River Unoram and meet with a patrol of Border Rangers who are guarding a junction. A track emerges from the Fryelund Forest and joins with the main road from the west at this point. Although it is unsigned, you recognize its rutted surface at once: it is the Alema trail, one of several forest tracks which lead to the Kai Monastery, thirty miles distant. Captain D<ch.apos/>Val tells you that the enemy line is weakest at a place several miles along this trail.</p>
+      <p>Once outside the city, you order your troop to couch their lances and form up in column, four abreast, in readiness for a swift ride north. At midday, you cross the River Unoram and meet with a patrol of Border Rangers who are guarding a junction. A track emerges from the Fryelund Forest and joins with the main road from the west at this point. Although it is unsigned, you recognize its rutted surface at once: it is the Alema Trail, one of several forest tracks which lead to the Kai Monastery, thirty miles distant. Captain D<ch.apos/>Val tells you that the enemy line is weakest at a place several miles along this trail.</p>
       <p>The Border Rangers come quickly to attention when they see you approaching. Their leader, a sergeant with a battle-wounded leg, warns you that the enemy were seen earlier flying over this area of the forest. You acknowledge his salute, then you give the order for the regiment to form up in column, two abreast, before leading them along the trail and into the Fryelund Forest.</p>
       <p>You have covered less than a mile of this woodland track when you find yourself descending a gentle slope towards a stream, a tributary of the Unoram. There once was a bridge which crossed the water-course at this point, but it has long since collapsed. Its ancient stones now form a ford which carries the trail over to the far side of the stream.</p>
       <choice idref="sect203">If you possess Grand Huntmastery, and have attained the Kai rank of Sun Lord or higher, <link-text>turn to 203</link-text>.</choice>
@@ -1798,7 +1834,7 @@
      <meta><title>95</title></meta>
 
      <data>
-      <p>You focus your Magnakai powers of psi-surge and launch a pulse of energy at the prisoner<ch.apos/>s mind in an attempt to weaken his resolve. Unexpectedly, you discover that his memory is protected by a magical shield and it takes a great effort for you to break through this defence (reduce your <typ class="attribute">ENDURANCE</typ> score by 4 points).</p>
+      <p>You focus your Magnakai powers of Psi-surge and launch a pulse of energy at the prisoner<ch.apos/>s mind in an attempt to weaken his resolve. Unexpectedly, you discover that his memory is protected by a magical shield and it takes a great effort for you to break through this defence (reduce your <typ class="attribute">ENDURANCE</typ> score by 4 points).</p>
       <p>Suddenly the man<ch.apos/>s mind shield crumbles. He shrieks with fear and his body is racked by uncontrollable tremors. You command the prisoner to reveal the identity of the person who sent him here to Garthen to murder you, and a mass of images begin to swirl and solidify in your mind<ch.apos/>s eye. They are the images of a past meeting in a far-off place which you recognize to be Duadon, the capital city of Eldenora. You see a shadowy figure, sheathed in ornate chainmail, handing a bulging pouch of gold to the prisoner in a dimly-lit alleyway. The figure speaks your name before melting away into the shadows.</p>
       <p><quote>Who is this person?</quote> you say, commanding the trembling prisoner to answer. He parts his bruised lips and tries to utter a name but no sound emerges. You sense that he is fighting to overcome the remnants of the shielding spell placed upon his mind. Moving closer, you try to make out the name be is struggling hard to whisper.</p>
       <choice idref="sect326"><link-text>Turn to 326</link-text>.</choice>
@@ -1821,7 +1857,7 @@
 
      <data>
       <p>You leave your horse at the derelict barn and make your way on foot towards the ferry post, arriving there just as the boat is docking at the jetty. Using your Kai camouflage skills, and aided by the frenzy of activity, you merge with the crowds of anxious travellers who are jostling to get aboard. An impatient trio of Eldenoran soldiers are collecting tickets from passengers before allowing them off the jetty. When it is your turn to board, you say that you have dropped your ticket and lost it.</p>
-      <p><quote>Pay again!</quote> shouts one of the soldiers. <quote>Yeah!</quote> sneers another, <quote>cough up another 2 Crowns, y<ch.apos/> scab, and be sharpish about it!</quote></p>
+      <p><quote>Pay again!</quote> shouts one of the soldiers. <quote>Yeah!</quote> sneers another. <quote>Cough up another 2 Crowns, y<ch.apos/> scab, and be sharpish about it!</quote></p>
       <p>Hurriedly you give the soldier 2 Gold Crowns (erase these from your <a idref="action">Action Chart</a>) and take your place aboard the crowded boat.</p>
       <choice idref="sect77"><link-text>Turn to 77</link-text>.</choice>
      </data>
@@ -1858,7 +1894,7 @@
       <p>You look down at the glowing crystal with fearful respect. Gwynian notes your concern and smiles.</p>
       <p><quote>You need not fear the crystal<ch.apos/>s power for it cannot cause harm in our world. Only if it is cast into another plane of existence will its powers be released. Grand Master, you must cast it into the Shadow Gate that Naar has created.</quote></p>
       <p><quote>So this is how I can save my brethren,</quote> you whisper, as you peer into the glittering head of the crystal.</p>
-      <p><quote>Just so,</quote> replies Gwynian, <quote>Just so.</quote></p>
+      <p><quote>Just so,</quote> replies Gwynian. <quote>Just so.</quote></p>
       <p><quote>Then I must away at once,</quote> you say, placing the Sun-crystal into the pocket of your tunic. <quote>Now that I have the weapon I need to save my people, I can stay not a moment longer, I must leave for Casiorn at once.</quote></p>
       <p><quote>Yes,</quote> says Gwynian, still smiling, <quote>I know of your plans, and I have made provision for you to travel to the City of Merchants more swiftly. Come, follow me, and all will be revealed.</quote></p>
       <p>Record the Sun-crystal on your <a idref="action">Action Chart</a> as a Special Item. You must discard another item in its favour if you already possess the maximum permissible.</p>
@@ -1875,7 +1911,7 @@
       <p>Suddenly there is a low, concussive boom and a spiral of blue flame shoots the length of the hall, fired from the tip of the figure<ch.apos/>s iron stave. It connects with the blade of your divine sword and rebounds, shattering one of the tall windows into a thousand glittering shards.</p>
       <p><quote>Take him!</quote> shouts Nathor, and his men rush forward, but a second blast from the stave puts an end to their brave advance. All three are cut down by an arc of blue fire that leaves their corpses heaped and smouldering in the middle of the hall.</p>
       <p>Nathor curses the sinister figure and it responds by uttering a chilling, inhuman laugh. Now you sense a new danger approaching<ch.emdash/>the being<ch.apos/>s sickly laughter is summoning its minions to the hall.</p>
-      <p><quote>Lord Nathor!</quote> you cry, <quote>we cannot prevail here. We must escape<ch.ellips/> Follow me!</quote></p>
+      <p><quote>Lord Nathor!</quote> you cry. <quote>We cannot prevail here. We must escape<ch.ellips/> Follow me!</quote></p>
       <p>And with these words, you race to the window and leap feet first through the shattered pane.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect219">If the number you have picked is 0<ch.endash/>4, <link-text>turn to 219</link-text>.</choice>
@@ -1910,7 +1946,7 @@
       <p><quote>Charlatan,</quote> mumbles one onlooker. <quote>Old fake,</quote> whispers another. The aged cleric hears these dissenting voices and he becomes flustered. Although he may be incompetent as a healer, you sense that he is a good man at heart and so you decide to save him from the disgruntled crowd, who look as if they are on the brink of throwing him In the river at any moment.</p>
       <p><quote>Hold, good brother!</quote> you say, moving swiftly through the crowd to the small stage on which he and the bandaged woman are standing. <quote>You should not be placing your hands upon this good woman<ch.apos/>s head. Surely the source of her pain stems from her aching heart!</quote></p>
       <p>And with this you take hold of the man<ch.apos/>s hands and place them on the woman<ch.apos/>s chest. Her first reaction is one of shock and she starts to pull away, but when you transmit your own healing powers through the cleric<ch.apos/>s hands and into her body, the pain in her head suddenly vanishes. A smile of pure joy lights up her face and hurriedly she strips off her bandages.</p>
-      <p><quote>Ishir be praised!</quote> she cried, <quote>I<ch.apos/>m cured. I<ch.apos/>m completely cured!</quote></p>
+      <p><quote>Ishir be praised!</quote> she cries. <quote>I<ch.apos/>m cured. I<ch.apos/>m completely cured!</quote></p>
       <choice idref="sect188"><link-text>Turn to 188</link-text>.</choice>
      </data>
     </section>
@@ -2003,9 +2039,27 @@
       </ul>
       <p>If you decide to keep any of these items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Shortly before sunset, you emerge from the trees at a place where three trails meet. A wooden signpost propped against a boulder indicates three directions, destinations, and distances:</p>
-      <p>North<ch.endash/>Chod<ch.endash/>250 miles</p>
+       <table>
+        <tr>
+         <td>North<ch.emdash/></td>
+         <td>Chod</td>
+         <td>250 miles</td>
+        </tr>
+        <tr>
+         <td>West</td>
+         <td>Holona</td>
+         <td>50 miles</td>
+        </tr>
+        <tr>
+         <td>South</td>
+         <td>Tenzha</td>
+         <td>20 miles</td>
+        </tr>
+       </table>
+<!--      <p>North<ch.endash/>Chod<ch.endash/>250 miles</p>
       <p>West<ch.endash/>Holona<ch.endash/>50 miles</p>
       <p>South<ch.endash/>Tenzha<ch.endash/>20 miles</p>
+      Should the <ch.emdash/>es be removed as per the table?-->
       <p>You are anxious to leave hostile Eldenoran territory as soon as possible and, after checking your <a idref="map">map</a>, you set off to the south, towards the Slovian border town of Tenzha.</p>
       <p>During your ride, unless you possess Grand Huntmastery, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect343">To continue, <link-text>turn to 343</link-text>.</choice>
@@ -2031,7 +2085,7 @@
       <p>To the west of the park you notice a fortified tower, by far the tallest in the city. You feel inexplicably drawn towards this tower; it is as if it possesses the solution to all your problems. You leave the park by its west sate and enter a wider thoroughfare called Brass Street. Here you see the courtyard entrance to a grand budding whose brick and marble fa<ch.ccedil/>ade is adorned with the words: HALLS OF LEARNING.</p>
       <p>You enter and ride along a gravelled path which leads to a building where a sign, hanging over its richly-carved oak door, simply says: LIBRARY. You feel compelled to stop here and, without quite knowing why, you dismount from your horse and tie his reins to a ring which is set into the wall. Then you push open the door and enter the library<ch.apos/>s cool interior.</p>
       <p>Countless thousands of books and parchments crowd the stone shelves of his magnificent library. Your eyes travel along them until they reach another door at the far end of the hall. There, standing framed in its archway, is an old man clad in plain brown robes. He looks at you and smiles knowingly.</p>
-      <p><quote>Welcome. Grand Master,</quote> he says, <quote>I have been expecting you.</quote></p>
+      <p><quote>Welcome. Grand Master,</quote> he says. <quote>I have been expecting you.</quote></p>
       <choice idref="sect348">If you have ever visited a hut on Raider<ch.apos/>s Road, the city of Tahou, or Lake Vorndarol (in previous <cite>Lone Wolf</cite> adventures), <link-text>turn to 348</link-text>.</choice>
       <choice idref="sect184">If you have never visited any of these places, <link-text>turn to 184</link-text>.</choice>
      </data>
@@ -2052,7 +2106,7 @@
      <data>
       <p>The lower ranks of the Kai are proud and excited to have you among them. Your presence inspires their courage and you feel confident that they will fight exceptionally well in the coming battle. Lord Rimoah is also by your side, quietly intoning the words of battle spells in preparation for the lavas<ch.apos/> attack.</p>
       <p><quote>Here they come!</quote> shouts Sabre Fox from the far end of the battlements,</p>
-      <p><quote>Take up your bows, my lords!</quote> you cry, as the first wave of winged beasts come sweeping down from out of the northern sky, <quote>and make every arrow count!</quote></p>
+      <p><quote>Take up your bows, my lords!</quote> you cry, as the first wave of winged beasts come sweeping down from out of the northern sky. <quote>And make every arrow count!</quote></p>
       <choice idref="sect192">If you possess a Bow, and wish to use it, <link-text>turn to 192</link-text>.</choice>
       <choice idref="sect78">If you do not, <link-text>turn to 78</link-text>.</choice>
      </data>
@@ -2062,7 +2116,7 @@
      <meta><title>115</title></meta>
 
      <data>
-      <p>The burning wolf-thing comes crashing down into the midst of its following pack members, setting fire to four of their number. A collective howl arises, a hellish shrieking filled with fear, anger and pain. For a few moments the pack is thrown into turmoil, but this panic does not last and, with renewed tenacity, they soon come sweeping across the bridge towards you.</p>
+      <p>The burning wolf-thing comes crashing down into the midst of its following pack members, setting fire to four of their number. A collective howl arises, a hellish shrieking filled with fear, anger, and pain. For a few moments the pack is thrown into turmoil, but this panic does not last and, with renewed tenacity, they soon come sweeping across the bridge towards you.</p>
       <choice idref="sect304"><link-text>Turn to 304</link-text>.</choice>
      </data>
     </section>
@@ -2113,7 +2167,7 @@
      <data>
       <p>The hall is lit by a hundred spluttering candies and the light of a log fire which blazes in the chamber<ch.apos/>s imposing stone hearth. Three tall arched windows, each glazed with stained glass panels, are set into the south wall, and an impressive collection of books and fine tapestries line the others. Clearly, Knight Tranius is a refined man whose tastes extend beyond hunting the occasional boar.</p>
       <p>After a few minutes, a concealed panel beside the fireplace slides open and a broad-shouldered man clad in a wolfskin coat and a silver helm steps into the hall.</p>
-      <p><quote>Hail Tranius!</quote> says Nathor, <quote>It<ch.apos/>s good to<ch.ellips/></quote></p>
+      <p><quote>Hail, Tranius!</quote> says Nathor. <quote>It<ch.apos/>s good to<ch.ellips/></quote></p>
       <p>The Lord Constable<ch.apos/>s words of greeting die in his throat and immediately you sense that something is very wrong. You hear a bolt slide shut outside the door to the hall, sealing it closed, and your Kai senses suddenly scream a warning of impending danger.</p>
       <p><quote>You<ch.apos/>re not Tranius,</quote> shouts Nathor at the shadowy figure at the far end of the hall. <quote>By the gods! Who are you?</quote></p>
       <choice idref="sect101">If you possess the Sommerswerd, <link-text>turn to 101</link-text>.</choice>
@@ -2125,12 +2179,12 @@
      <meta><title>121</title></meta>
 
      <data>
-      <p><quote>It is good to see you again, Grand Master,</quote> he says, forcing a smile, <quote>I was expecting you. I received word yesterday from Queen Evaine telling me of your urgent journey. Yet it is unfortunate that your visit should come at this time, I would have hoped to have given you the kind of welcome you truly deserve.</quote> The Elector then introduces you to his generals who acknowledge you with soldierly salutes.</p>
+      <p><quote>It is good to see you again, Grand Master,</quote> he says, forcing a smile. <quote>I was expecting you. I received word yesterday from Queen Evaine telling me of your urgent journey. Yet it is unfortunate that your visit should come at this time, I would have hoped to have given you the kind of welcome you truly deserve.</quote> The Elector then introduces you to his generals who acknowledge you with soldierly salutes.</p>
       <p><quote>As you can see, we are at war, Grand Master,</quote> he says, sweeping a hand over the maps which lie strewn across his state table. <quote>The new ruler of Eldenora, a low-born blackguard by the name of Lutha who dares to adorn himself with the title <quote>Prince of Duadon</quote>, is attempting to seize our northern territories. We are locked in battle with his army of cut-throats near Holona and, though it pains me to have to admit this, were hard-pressed to contain his advance. This war has come without warning and we were ill-prepared. We have few reserves, insufficient to support the Holona garrison and to counter the many small units of Eldenoran horsemen who are ravaging our plains. This is a dark and testing time for us, Grand Master, but e<ch.apos/>er so, I shall old you all I can.</quote></p>
       <p>You learn that the Elector has already elicited, on your behalf, the help of High-Mayor Cordas of Casiorn. Cordas is reputedly the richest man in all of Magnamund. Manatine tells you that Cordas has ordered the construction of a sky-vessel to transport you swiftly to Sommerlund.</p>
       <p><quote>This craft is presently being built in Casiorn, and the High-Mayor has sent word that you should go there as quickly as you can. His teams of skilled artisans are working on the craft day and night, and he is confident that it will be completed in fifteen days<ch.apos/> time.</quote></p>
       <p>In times of peace, you would expect the 850-mile ride to Casiorn to take little more than two weeks to complete. But peace, always a fragile state in the Stornlands, has been shattered by Prince Lutha<ch.apos/>s unprovoked attack on Holona, a town through which you had hoped to travel. Anxiously, you ask the Elector how the wax against Eldenora will affect your chances of reaching Casiorn swiftly.</p>
-      <p><quote>Sadly, I cannot predict the future, Grand Master,</quote> he replies, <quote>the war bodes ill for both our causes. However, I shall do what I am able to speed your journey onwards.</quote></p>
+      <p><quote>Sadly, I cannot predict the future, Grand Master,</quote> he replies. <quote>The war bodes ill for both our causes. However, I shall do what I am able to speed your journey onwards.</quote></p>
       <p>The Elector motions to one of his guardsmen who turns and leaves the War Room. He soon returns with another soldier who wears the uniform of a captain.</p>
       <choice idref="sect204">If you have ever visited the Palmyrion military post at Stonewatch, in a previous <cite>Lone Wolf</cite> adventure, <link-text>turn to 204</link-text>.</choice>
       <choice idref="sect84">If you have not, <link-text>turn to 84</link-text>.</choice>
@@ -2246,7 +2300,7 @@
 
      <data>
       <p>Queen Evaine commands the Lord Constable to take you to the citadel dungeons which are located several levels below the State Hall. Here, shackled o the dank stone wall of a rat-infested cell, is the man who was caught in a Garthen tavern plotting your murder. Limp and unconscious, he hangs by his wrists in chains, his emaciated body showing all too clearly the signs of recent tortures. A pot-bellied gaoler scoops a bucket of foul water from a trough by the cell door and revives the prisoner by pouring it unceremoniously over his head. Coughing and spluttering, the wretch stirs to consciousness. He raises his face and you sense that he recognizes immediately who you are; his eyes blaze with an undisguised hatred.</p>
-      <p><quote>He<ch.apos/>s a tough <ch.apos/>un,</quote> growls the gaoler, <quote>I<ch.apos/>ve used all o<ch.apos/> me skills on <ch.apos/>im but <ch.apos/>e won<ch.apos/>t say who <ch.apos/>is paymaster be.</quote></p>
+      <p><quote>He<ch.apos/>s a tough <ch.apos/>un,</quote> growls the gaoler. <quote>I<ch.apos/>ve used all o<ch.apos/> me skills on <ch.apos/>im but <ch.apos/>e won<ch.apos/>t say who <ch.apos/>is paymaster be.</quote></p>
       <p>The fat gaoler reaches for a pair of long-handled pincers which are protruding from a brazier of hot coals.</p>
       <p><quote>Perhaps you<ch.apos/>ll be wanting to interrogate <ch.apos/>im yourself, sire?</quote> he says, offering you the pincers. Wisps of smoke curl from their sharpened tips which are red and glowing.</p>
       <p><quote>Aye, gaoler, there are questions I<ch.apos/>d like this man to answer. But I<ch.apos/>ll not be needing those,</quote> you reply, declining the use of the cruel pincers.</p>
@@ -2303,7 +2357,7 @@
       <p>Despite not having made a telepathic contact with Guildmaster Banedon, you refuse to believe that he and Lord Rimoah are dead. You resolve instead to reach the Kai Monastery and destroy the Shadow Gate as soon as you are able and, strengthened by this resolution, you return to the council of war and announce your decision to the King. You show the council the Sun-crystal that Gwynian gave you, and you tell them how you intend to use it.</p>
       <p>Ulnar and the barons applaud your plan and your steadfast courage. The King places under your command his <ch.eacute/>lite Guard Cavalry regiment, so that you may be able to use them to break through the enemy<ch.apos/>s line at its weakest point and reach the Kai Monastery. Captain D<ch.apos/>Val, commander of the Guard Cavalry, knows where this weak point is and he will guide you to it.</p>
       <p>The King dissolves the council and, as the barons return to their armies in the field, he orders you to rest in his chambers for a few hours.</p>
-      <p><quote>Get some sleep, Grand Master,</quote> he says, patting you paternally on the shoulder, <quote>you will need it. You ride with the Guard at dawn.</quote></p>
+      <p><quote>Get some sleep, Grand Master,</quote> he says, patting you paternally on the shoulder. <quote>You will need it. You ride with the Guard at dawn.</quote></p>
       <choice idref="sect94"><link-text>Turn to 94</link-text>.</choice>
      </data>
     </section>
@@ -2346,7 +2400,7 @@
      <data>
       <p>The river hack runs parallel to the Kinam for nearly a mile before bearing east and entering a coppice of tall conifers. On the far side of this cultivated wood you come to a bridge across a wide, fast-flowing tributary of the Kinam. The parapet of the bridge is lined with imposing stone statues, each depicting a past lord of Scade manor.</p>
       <p>In the distance you can now see Castle Tranius. Its curtain wall and fortified barbican are illuminated by torches which were lit, as is the custom here, an hour before sunset. On arriving at the gatehouse, Lord Nathor and the rest of you are welcomed into the castle keep where your horses are attended to. A trio of Knight Tranius<ch.apos/>s guards come to escort you to his hall and, as you follow them to the castle<ch.apos/>s upper chambers, Nathor asks after Guetor the Boarmaster, the leader of Knight Tranius<ch.apos/>s hunt.</p>
-      <p><quote>He<ch.apos/>s no longer with us,</quote> answers one of the guards, tersely, <quote>he<ch.apos/>s gone away.</quote></p>
+      <p><quote>He<ch.apos/>s no longer with us,</quote> answers one of the guards, tersely. <quote>He<ch.apos/>s gone away.</quote></p>
       <p>Before Nathor ran enquire further as to the whereabouts of his old hunting instructor, you are ushered into the castle<ch.apos/>s main hall and asked to wait a few minutes for Knight Tranius to arrive.</p>
       <choice idref="sect120"><link-text>Turn to 120</link-text>.</choice>
      </data>
@@ -2426,7 +2480,7 @@
       <p>You recognize these creatures at once<ch.emdash/>they are Lavas, winged-horrors from the Plane of Darkness, the domain of the Dark God himself. The memory of your previous encounter with these creatures sends a shiver coursing down your spine.</p>
 
       <p>With a silent signal you bring the regiment to a halt. Captain D<ch.apos/>Val leans towards you Iron his saddle and whispers: <quote>Here is the enemy who have your Monastery surrounded, Grand Master, and this is the weakest point in their line.</quote></p>
-      <p><quote>I know this place,</quote> you reply quietly. <quote>the monastery lies over the next ridge of trees. If we are to break through here, we must be quick about it. These creatures can take to the skies<ch.emdash/>it would not take them long to summon reinforcements.</quote></p>
+      <p><quote>I know this place,</quote> you reply quietly. <quote>The monastery lies over the next ridge of trees. If we are to break through here, we must be quick about it. These creatures can take to the skies<ch.emdash/>it would not take them long to summon reinforcements.</quote></p>
       <p><quote>You are right, Grand Master. The risks are indeed great, but I and my men men are willing to take them to ensure your return in the monastery of the Kai. You must get through. You are the only one who can destroy the Shadow Gate and remove this curse from our land.</quote></p>
       <p><quote>Very well then, Captain,</quote> you reply, unsheathing your weapon. <quote>Pass the order to prepare to charge.</quote></p>
       <choice idref="sect200"><link-text>Turn to 200</link-text>.</choice>
@@ -2536,7 +2590,7 @@
       <p>Holona is in turmoil. The approach roads and outlying fields are littered with scores of broken wagons, dead horses, and the ruined impediments of war. Palmyrion soldiers sit dejectedly on the frost-hardened earth, their glazed eyes and bandaged limbs bearing grim testimony to the bitter fighting that is taking place just a few miles to the north. Battle-weary officers ride among these exhausted men, cursing and coaxing them in a half-hearted attempt to rally them to arms. Few heed their call.</p>
       <p>Inside the city walls the situation is tense. Every available dwelling is packed to overflowing with wounded soldiers, and the civilian populace, displaced from their homes by the army<ch.apos/>s needs, wander the streets and alleyways in a state of shocked confusion, greatly adding to the chaos.</p>
       <p>Captain Cearmaine orders his driver to the Canatarium, the largest of Holona<ch.apos/>s municipal halls, where General Foucharl, the Palmyrion commander, has established his headquarters. On entering this crowded building, a young lieutenant rushes up to Cearmaine and informs him that his son has been wounded in the battle now raging at the Reloni bridge.</p>
-      <p><quote>I must go to him, Grand Master,</quote> he says, his voice choked with emotion, <quote>I<ch.apos/>m told that he has not long to live.</quote></p>
+      <p><quote>I must go to him, Grand Master,</quote> he says, his voice choked with emotion. <quote>I<ch.apos/>m told that he has not long to live.</quote></p>
       <choice idref="sect289">If you wish to go with Captain Cearmaine to see his wounded son, <link-text>turn to 289</link-text>.</choice>
       <choice idref="sect307">If you choose not to accompany him, <link-text>turn to 307</link-text>.</choice>
      </data>
@@ -2548,10 +2602,10 @@
      <data>
       <p>From the top of the Tower of the Sun you survey the mountainous northern approaches with growing trepidation. Banedon is by your side, so too are Kai Masters Black Hawk and Wild Weasel and a score of Kai warmarns and savants. You sense the lower ranks of the Kai are proud and excited to be stationed here with their Grand Master. Your presence inspires their courage and you feel confident that they will fight exceptionally well in the coming battle.</p>
       <p>You look down at the shattered wreck of the <cite>Skyrider</cite> lying in the monastery grounds far below, and I reminds you of your sky journey from Casiorn to Holmgard. You tell Banedon about the <cite>Cloud-dancer</cite> and you promise him that, if your mission to destroy the Shadow Gate is successful, you will make a gift of it to him in recognition of the help he has given the Kai in your absence.</p>
-      <p><quote>Thank you, Grand Master,</quote> he says, <quote>yours is a most gracious gesture,</quote></p>
+      <p><quote>Thank you, Grand Master,</quote> he says. <quote>Yours is a most gracious gesture.</quote></p>
       <p>Then the first of the lavas horde are seen, their burnished wings glinting in the moonlight.</p>
       <p><quote>Here they come!</quote> shouts Black Hawk, from the far end of the tower.</p>
-      <p><quote>Take up your bows, my lords!</quote> you cry, as the first wave of these winged beasts comes sweeping down from out of the northern sky, <quote>and make every arrow count!</quote></p>
+      <p><quote>Take up your bows, my lords!</quote> you cry, as the first wave of these winged beasts comes sweeping down from out of the northern sky. <quote>And make every arrow count!</quote></p>
       <choice idref="sect178">If you possess a Bow, and wish to use it, <link-text>turn to 178</link-text>.</choice>
       <choice idref="sect4">If you do not, <link-text>turn to 4</link-text>.</choice>
      </data>
@@ -2661,7 +2715,7 @@
       <p>You ride along this narrow avenue, which is flanked by aromatic jala houses and perfumeries, until it turns abruptly right into a wider thoroughfare called Brass Street. A smile cracks your travel-grimy face when you see the courtyard entrance to a grand building. It has changed much since you were last here, but despite its new brick and marble fa<ch.ccedil/>ade you recognise Varetta<ch.apos/>s Halls of Learning.</p>
       <p>You ride along a gravelled path to a fountain where you stop to ask a brown-robed scholar if he mows where Gwynian can be found. Without speaking, he points to a nearby hall. A sign hanging over its richly-carved oak door says: LIBRARY. You thank the robed man and dismount from your horse, leaving him tied to a ring which is set into the wall. Then you push open the door and enter the library<ch.apos/>s cool interior.</p>
       <p>Countless thousands of books and parchments crowd the stone shelves of this magnificent library. Your eyes travel along them until they reach another door at the far end of the hall. There, standing Framed in the arch, is the man whose help you seek.</p>
-      <p><quote>Welcome, Grand Master,</quote> says Gwynian the Sage, <quote>I have been expecting you.</quote></p>
+      <p><quote>Welcome, Grand Master,</quote> says Gwynian the Sage. <quote>I have been expecting you.</quote></p>
       <choice idref="sect268"><link-text>Turn to 268</link-text>.</choice>
      </data>
     </section>
@@ -2734,9 +2788,27 @@
       </ul>
       <p>If you decide to keep any of these items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Shortly before sunset, you emerge from the trees at a place where three trails meet. A wooden signpost propped against a boulder indicates three directions, destinations, and distances:</p>
-      <p>North<ch.endash/>Chod<ch.endash/>250 miles</p>
+       <table>
+        <tr>
+         <td>North<ch.emdash/></td>
+         <td>Chod</td>
+         <td>250 miles</td>
+        </tr>
+        <tr>
+         <td>West</td>
+         <td>Holona</td>
+         <td>50 miles</td>
+        </tr>
+        <tr>
+         <td>South</td>
+         <td>Tenzha</td>
+         <td>20 miles</td>
+        </tr>
+       </table>
+<!--      <p>North<ch.endash/>Chod<ch.endash/>250 miles</p>
       <p>West<ch.endash/>Holona<ch.endash/>50 miles</p>
       <p>South<ch.endash/>Tenzha<ch.endash/>20 miles</p>
+      Should the <ch.emdash/>es be removed as per the table?-->
       <p>You are anxious to leave hostile Eldenoran territory as soon as possible and, after checking your <a idref="map">map</a>, you set off to the south, towards the Slovian border town of Tenzha.</p>
       <p>During your ride, unless you possess Grand Huntmastery, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect343">To continue, <link-text>turn to 343</link-text>.</choice>
@@ -2781,8 +2853,8 @@
      <meta><title>178</title></meta>
 
      <data>
-      <p>You draw an arrow and take careful aim at one of the leading lavas. As it dips its head and opens its jaw, you release your straining bowstring and send your shaft whistling towards its head. The fire-hardened tip penetrates its eye and, with a hideous shriek, it spins end over end before crashing into the parapet of the Tower.</p>
-      <p><quote>Fire at their eyes!</quote> you shout, and a cloud of Kai arrows are sent screaming through the sky to seek their elusive mark. More than half find their target, decimating the first wave of the lavas attack at a single stroke, yet those winged creatures who do survive this deadly volley are quickly among the defenders on the tower. Suddenly you are confronted by one of these beasts who attempts to bat you over the parapet with its horny tail. You leap to avoid its scything attack, draw your weapon in mid-air, and strike your first blow the moment your feet return to the Tower<ch.apos/>s flagstones.</p>
+      <p>You draw an arrow and take careful aim at one of the leading lavas. As it dips its head and opens its jaw, you release your straining bowstring and send your shaft whistling towards its head. The fire-hardened tip penetrates its eye and, with a hideous shriek, it spins end over end before crashing into the parapet of the tower.</p>
+      <p><quote>Fire at their eyes!</quote> you shout, and a cloud of Kai arrows are sent screaming through the sky to seek their elusive mark. More than half find their target, decimating the first wave of the lavas attack at a single stroke, yet those winged creatures who do survive this deadly volley are quickly among the defenders on the tower. Suddenly you are confronted by one of these beasts who attempts to bat you over the parapet with its horny tail. You leap to avoid its scything attack, draw your weapon in mid-air, and strike your first blow the moment your feet return to the tower<ch.apos/>s flagstones.</p>
       <combat><enemy>Lavas</enemy><enemy-attribute class="combatskill">48</enemy-attribute><enemy-attribute class="endurance">46</enemy-attribute></combat>
       <choice idref="sect49">If you win this combat, <link-text>turn to 49</link-text>.</choice>
      </data>
@@ -2804,7 +2876,8 @@
       <p>With Sabre Fox at your side, you climb the circular stairs to the Grand Hall of the Tower of the Sun. Excitedly the young Kai master announces your arrival to the battle-weary Kai who are gathered here, and, at first, they look at you in stunned disbelief. Then the truth of what they see sinks in and they give vent to a loud cheer that can be heard all throughout the monastery.</p>
       <p>The news of your return spreads like wildfire. Two of the first to welcome you back are your friend Guildmaster Banedon, and your trusted advisor Lord Rimoah.</p>
       <p><quote>Thank Ishir you are alive, Banedon,</quote> you say clasping his hand in friendship. <quote>In Holmgard they fear that you and Rimoah were killed aboard your skyship. It gladdens my heart to see this is not so.</quote></p>
-      <p><quote>And it warms me to see you safely home, Grand Master,</quote> he replies, <quote>though we<ch.apos/>ve been hard-pressed to keep your home safe in your absence,</quote> adds Lord Rimoah, with a wry smile.</p>
+      <p><quote>And it warms me to see you safely home, Grand Master,</quote> he replies.</p>
+      <p><quote>Though we<ch.apos/>ve been hard-pressed to keep your home safe in your absence,</quote> adds Lord Rimoah, with a wry smile.</p>
       <p><quote>You both have my deepest thanks,</quote> you reply. <quote>You took a great risk in corning to the aid of the Kai. I have seen what became of your skyship, Banedon. You were indeed fortunate to have survived.</quote></p>
       <p><quote>Aye,</quote> he replies, sadly. <quote>Yet, alas, three of my Brotherhood were not so blessed. They perished when the lavas dragged us from the skies.</quote></p>
       <p><quote>Take heart, Banedon, for their deaths will not be in vain. They shall be avenged.</quote> And with these prophetic words you take the Sun-crystal from your pocket and show it to your grieving friend. <quote>With this crystal I shall destroy the Shadow Gate and put an end to Naar<ch.apos/>s evil plan.</quote></p>
@@ -2853,7 +2926,7 @@
       <p>You nod in wary agreement and allow the old man to usher you through the archway into an adjoining chamber. Here you see strange floating bulbs of light that illuminate a stone table covered with charts and scrolls.</p>
       <p><quote>Very well, Gwynian, what news have you of Sommerlund?</quote> you ask, sceptically.</p>
       <p><quote>Grave news,</quote> replies the old man, with an ominous tone. He picks up a chart from the table and traces a finger across the intricate lines and calculations that embellish its ancient yellowed surface.</p>
-      <p><quote>The Dark God Naar has opened a Shadow Gate in the Durncrag mountains, a corridor between our world and his. By means of this corridor he has sent a host of winged creatures<ch.emdash/>the Lavas<ch.emdash/>to assail your monastery. It is his plan to destroy the young order of Kai warriors while you are not able to lead them. The Shadow Gate opened at the time of the last full moon and, since then, the Kai Monastery has been attacked many times. Naar<ch.apos/>s servants have your stronghold encircled and cut off from the armies of King Ulnar, who has repeatedly sought to break the siege. Your Kai have withstood the attacks well, Lone Wolf, but they are weakening. Only you can save them now.</quote></p>
+      <p><quote>The Dark God Naar has opened a Shadow Gate in the Durncrag Mountains, a corridor between our world and his. By means of this corridor he has sent a host of winged creatures<ch.emdash/>the Lavas<ch.emdash/>to assail your monastery. It is his plan to destroy the young order of Kai warriors while you are not able to lead them. The Shadow Gate opened at the time of the last full moon and, since then, the Kai Monastery has been attacked many times. Naar<ch.apos/>s servants have your stronghold encircled and cut off from the armies of King Ulnar, who has repeatedly sought to break the siege. Your Kai have withstood the attacks well, Lone Wolf, but they are weakening. Only you can save them now.</quote></p>
       <p><quote>But how?</quote> you ask, shaken by Gwynian<ch.apos/>s account of the events which have occurred during your absence from the monastery. <quote>If the armies of King Ulnar are powerless to break the siege, how can I hope to save my brethren?</quote></p>
       <p><quote>Do not despair, Lone Wolf,</quote> replies Gwynian, reassuringly. <quote>All is not yet lost. You can save your brave order by closing the gate through which Naar sends his Lavas minions.</quote></p>
       <p>You are about to ask how you could possibly achieve this, how you could close the Shadow Gate, but your urgent question is forestalled when Gwynian raises his hand.</p>
@@ -2967,7 +3040,7 @@
       <p>Before the angry thieves of Spur Lane can catch you, you cross the square and enter Quill Street. This narrow avenue is flanked by aromatic jala houses and perfumeries, until at length it turns abruptly right into a wider thoroughfare called Brass Street. Here you see the courtyard entrance to a grand building whose brick and marble fa<ch.ccedil/>ade is adorned with the words: HALLS OF LEARNING. Suddenly you feel inexplicably drawn towards this building; it is as if it possesses the solution to all your problems.</p>
       <p>You enter and ride along a gravelled path which leads to a building where a sign, hanging over its richly-carved oak door, simply says: LIBRARY. You feel compelled to stop here and, without quite knowing why, you dismount from your horse and tie his reins to a ring which is set into the wall. Then you push open the door and enter the library<ch.apos/>s cool interior.</p>
       <p>Countless thousands of books and parchments crowd the stone shelves of this magnificent library. Your eyes travel along them until they reach another door at the far end of the hall. There, standing framed in its archway, is an old man clad in plain brown robes. He looks at you and smiles knowingly.</p>
-      <p><quote>Welcome, Grand Master,</quote> he says, <quote>I have been expecting you.</quote></p>
+      <p><quote>Welcome, Grand Master,</quote> he says. <quote>I have been expecting you.</quote></p>
       <choice idref="sect348">If you have ever visited a hut on Raider<ch.apos/>s Road, the city of Tahou, or Lake Vorndarol (in previous <cite>Lone Wolf</cite> adventures), <link-text>turn to 348</link-text>.</choice>
       <choice idref="sect184">If you have never visited any of these places, <link-text>turn to 184</link-text>.</choice>
      </data>
@@ -3010,7 +3083,7 @@
      <meta><title>198</title></meta>
 
      <data>
-      <p><quote>In the name of the Gods!</quote> splutters Nathor, spilling liqueur down the front of his tunic, <quote>what was that?</quote></p>
+      <p><quote>In the name of the Gods!</quote> splutters Nathor, spilling liqueur down the front of his tunic. <quote>What was that?</quote></p>
       <p>You hurry to the window and see a large, bat-like shape silhouetted against the moon. A man-sized rider clings precariously to the creature<ch.apos/>s back as it swoops and soars among the hills and gulleys. A knot of fear tightens in the pit of your stomach.</p>
       <p><quote>A Kraan,</quote> you say, recognizing at once the outline of this unwelcome creature.</p>
       <p><quote>You had best come away from the window, my Lord,</quote> replies an anxious Nathor, <quote>lest it detects your presence here.</quote></p>
@@ -3097,7 +3170,7 @@
 
      <data>
       <p>At once you recognize the captain: it is Cearmaine, the brave hero of the Darklords War, who guided you to Stonewatch and the Forest of Ruel during your quest to thwart the Cener Druids, two years previously.</p>
-      <p><quote>Hail, Grand Master!</quote> he says, his battle-scarred face beaming with delight, <quote>I am pleased to have been chosen by the Elector to escort you north to Holona.</quote></p>
+      <p><quote>Hail, Grand Master!</quote> he says, his battle-scarred face beaming with delight. <quote>I am pleased to have been chosen by the Elector to escort you north to Holona.</quote></p>
       <p><quote>Well met, captain,</quote> you reply, shaking his steel hand. <quote>I could not have wished for a better travelling companion.</quote></p>
       <choice idref="sect130"><link-text>Turn to 130</link-text>.</choice>
      </data>
@@ -3218,7 +3291,7 @@
      <meta><title>215</title></meta>
 
      <data>
-      <p>Suddenly you hear Captain D<ch.apos/>Val<ch.apos/>s strident voice rising above the din of the battle: <quote>Ride on, Lone Wolf!</quote> he shouts, <quote>Ride to the monastery!</quote></p>
+      <p>Suddenly you hear Captain D<ch.apos/>Val<ch.apos/>s strident voice rising above the din of the battle: <quote>Ride on, Lone Wolf!</quote> he shouts. <quote>Ride to the monastery!</quote></p>
       <p>You glance over your shoulder and see the Captain and his men locked in combat with the winged creatures. More are swooping in from the east now, drawn by the cries of their brothers. The tide of the battle is turning against D<ch.apos/>Val<ch.apos/>s men and your heart goes out to them as they struggle bravely against increasing odds. Your instinct is to turn back, but you heed the Captains plea and urge your horse on towards the top of the ridge. The best way you can serve these courageous men now is to reach the Kai Monastery and destroy the Shadow Gate.</p>
       <choice idref="sect250"><link-text>Turn to 250</link-text></choice>
      </data>
@@ -3332,7 +3405,7 @@
 
      <data>
       <p>Your hurried blow rips a jagged hole in the wing of the beast, and, suddenly off-balanced by the wound it loses control and slams into the ground with a sickening crunch. You give a cry of elation, then you hear Captain D<ch.apos/>Val<ch.apos/>s strident voice rising above the din of the battle:</p>
-      <p><quote>Ride on, Lone Wolf!</quote> he shouts, <quote>Ride to the monastery!</quote></p>
+      <p><quote>Ride on, Lone Wolf!</quote> he shouts. <quote>Ride to the monastery!</quote></p>
       <p>You glance over your shoulder and see the Captain and his men locked in combat with the winged creatures. More are swooping in from the east now, drawn by the cries of their brothers. The tide of the battle is turning against D<ch.apos/>Val<ch.apos/>s men and your heart goes out to them as they struggle bravely against increasing odds. Your instinct is to turn back, but you heed the Captain<ch.apos/>s plea and urge your horse on towards the top of the ridge. The best way you can serve these courageous men now is to reach the Kai Monastery and destroy the Shadow Gate.</p>
       <choice idref="sect250"><link-text>Turn to 250</link-text>.</choice>
      </data>
@@ -3448,7 +3521,7 @@
 
      <data>
       <p>You ride across this busy square into an avenue that heads north, towards the heart of Varetta. Apothecaries and candle-makers<ch.apos/> shops flank this wide street until it opens upon an ornate park filled with rare and beautiful flowers. The sight and scent of these blooms are entrancing and, before you are aware of any change, you find yourself intoxicated by their powerful aroma.</p>
-      <p><quote>Awake, Grand Master,</quote> says an old man<ch.apos/>s voice in your ear. <quote>you have no time to dream.</quote></p>
+      <p><quote>Awake, Grand Master,</quote> says an old man<ch.apos/>s voice in your ear. <quote>You have no time to dream.</quote></p>
       <choice idref="sect20"><link-text>Turn to 20</link-text>.</choice>
      </data>
     </section>
@@ -3562,13 +3635,13 @@
       <p>In the warm comfort of the inn, you use your Kai healing skills to mend the Lord Constable<ch.apos/>s injuries. He is carefully testing his weight on his newly-mended ankle when suddenly there is a commotion outside in the street. An angry mob of hard-faced men, many clutching torches, staves, and coils of rope, are marching down the cobbled avenue towards the inn.</p>
       <p><quote>Hang the Talestrian thieves!</quote> they shout. <quote>String up the murdering swine!</quote></p>
       <p><quote>What<ch.apos/>s going on? Who are these men?</quote> asks Nathor. The innkeeper<ch.apos/>s face turns white and he begins to tremble with fear.</p>
-      <p><quote>I<ch.ellips/> I don<ch.apos/>t rightly know,</quote> he stammers, <quote>I ain<ch.apos/>t never seen <ch.apos/>em before. They<ch.apos/>s not from these parts. We<ch.apos/>ve never had no quarrel with Talestria. You<ch.apos/>ve always been our friends.</quote></p>
+      <p><quote>I<ch.ellips/> I don<ch.apos/>t rightly know,</quote> he stammers. <quote>I ain<ch.apos/>t never seen <ch.rsquot/>em before. They<ch.apos/>s not from these parts. We<ch.apos/>ve never had no quarrel with Talestria. You<ch.apos/>ve always been our friends.</quote></p>
       <p>Suddenly a chunk of cobblestone smashes through a window and an angry cry arises from the mob:</p>
       <p><quote>Come out, you Talestrian dogs. Come out or we<ch.apos/>ll burn you out!</quote></p>
       <p>Nathor calls everyone to the rear of the inn where a passage leads directly to the stables.</p>
       <p><quote>I fear this is some kind of crude ploy to murder you, Grand Master,</quote> he says. <quote>If you are to stand any chance of reaching your homeland, you must continue your journey at once. I and my men will do what we can to hold this mob at bay, but you must leave now and you must go alone.</quote></p>
       <p>Another window shatters and a burning brand is hurled into the inn.</p>
-      <p><quote>Very well,</quote> you reply, uneasily, <quote>I shall leave at once.</quote></p>
+      <p><quote>Very well,</quote> you reply, uneasily. <quote>I shall leave at once.</quote></p>
       <choice idref="sect161"><link-text>Turn to 161</link-text>.</choice>
      </data>
     </section>
@@ -3684,14 +3757,14 @@
 
      <data>
       <p>You return to the Grand Hall where Banedon and Rimoah tell you of the location of the Shadow Gate.</p>
-      <p><quote>Kai scouts sighted it in the foothills of the Durncrag mountains, less than five miles distant, at a place called Raven<ch.apos/>s Eerie,</quote> says Banedon.</p>
+      <p><quote>Kai scouts sighted it in the foothills of the Durncrag Mountains, less than five miles distant, at a place called Raven<ch.apos/>s Eerie,</quote> says Banedon.</p>
       <p><quote>I know this place,</quote> you say. <quote>My old tutor, Storm Hawk, and I camped there on a hunting trip when I was an acolyte, before the war with Darklord Zagarna. There is a track that leads there<ch.emdash/>I know it well</quote></p>
       <p>You are determined to destroy the Shadow Gate and you resolve to go to Raven<ch.apos/>s Eerie tonight, to carry out the mission. Also you are aware that tomorrow is a very special day. It is Fehmarn<ch.emdash/>the first day of Spring, a holy day in Sommerlund when traditionally all of the Kai gather at the Monastery to reaffirm their fealty to King Ulnar and the God Kai. It is also the anniversary of the First Order, the day upon which all of your warrior caste, save you, were massacred by Darklord Zagarna<ch.apos/>s hordes.</p>
       <p><quote>I will destroy the Shadow Gale tonight,</quote> you vow resolutely, <quote>and tomorrow we shall celebrate Fehmarn, secure in the knowledge that a lasting peace has returned to our land.</quote></p>
       <p>Moments later, a doleful bell sounds from atop the Durncrag tower: it is the alarm.</p>
-      <p><quote>Hurry, my lords!</quote> shouts a young Kai savant who comes rushing breathlessly into the Grand Hall, <quote>the enemy are attacking in force!</quote></p>
-      <p><quote>To your battle positions, my lords!</quote> you command, as you stride towards the door, <quote>the time has come for you to avenge your dead brothers. Fight well! Fight true! The spirit of the sun-god Kai is with us this night!</quote></p>
-      <p>A great cloud of winged lavas are speeding towards the Monastery from the north-west and they will arrive within a few minutes at most. As you watch the young Kai lords arm themselves and take up their positions around the Monastery, you consider where best to position yourself for the imminent battle.</p>
+      <p><quote>Hurry, my lords!</quote> shouts a young Kai savant who comes rushing breathlessly into the Grand Hall. <quote>The enemy are attacking in force!</quote></p>
+      <p><quote>To your battle positions, my lords!</quote> you command, as you stride towards the door. <quote>The time has come for you to avenge your dead brothers. Fight well! Fight true! The spirit of the sun-god Kai is with us this night!</quote></p>
+      <p>A great cloud of winged lavas are speeding towards the Monastery from the northwest and they will arrive within a few minutes at most. As you watch the young Kai lords arm themselves and take up their positions around the Monastery, you consider where best to position yourself for the imminent battle.</p>
       <choice idref="sect114">If you wish to join the acolytes who are lining the battlements of the North Watch, <link-text>turn to 114</link-text>.</choice>
       <choice idref="sect158">If you choose to fight from the top of the Tower of the Sun, the highest point in the Kai Monastery, <link-text>turn to 158</link-text>.</choice>
      </data>
@@ -3745,9 +3818,27 @@
       </ul>
       <p>If you decide to keep any of these items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Shortly before sunset, you emerge from the trees at a place where three trails meet. A wooden signpost propped against a boulder indicates three directions, destinations, and distances:</p>
-      <p>North<ch.endash/>Chod<ch.endash/>250 miles</p>
+       <table>
+        <tr>
+         <td>North<ch.emdash/></td>
+         <td>Chod</td>
+         <td>250 miles</td>
+        </tr>
+        <tr>
+         <td>West</td>
+         <td>Holona</td>
+         <td>50 miles</td>
+        </tr>
+        <tr>
+         <td>South</td>
+         <td>Tenzha</td>
+         <td>20 miles</td>
+        </tr>
+       </table>
+<!--      <p>North<ch.endash/>Chod<ch.endash/>250 miles</p>
       <p>West<ch.endash/>Holona<ch.endash/>50 miles</p>
       <p>South<ch.endash/>Tenzha<ch.endash/>20 miles</p>
+      Should the <ch.emdash/>es be removed as per the table?-->
       <p>You are anxious to leave hostile Eldenoran territory as soon as possible and, after checking your <a idref="map">map,</a>, you set off to the south, towards the Slovian border town of Tenzha.</p>
       <p>During your ride, unless you possess Grand Huntmastery, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect343">To continue, <link-text>turn to 343</link-text>.</choice>
@@ -3781,7 +3872,7 @@
      <data>
       <p>The shock of the creature<ch.apos/>s attack lifts you physically from your horse<ch.apos/>s back, and it is only your agility and determination which save you from crashing to the ground.</p>
       <p>You heave yourself back into the saddle and hold fast as the beast swoops away into the meadow. Then you hear Captain D<ch.apos/>Val<ch.apos/>s strident voice rising above the din of battle:</p>
-      <p><quote>Ride on, Lone Wolf!</quote> he shouts, <quote>Ride to the monastery!</quote></p>
+      <p><quote>Ride on, Lone Wolf!</quote> he shouts. <quote>Ride to the monastery!</quote></p>
       <p>You glance over your shoulder and see the Captain and his men locked in combat with the winged creatures. More are swooping in from the east now, drawn by the cries of their brothers. The tide of the battle is turning against D<ch.apos/>Val<ch.apos/>s men and your heart goes out to them as they struggle bravely against increasing odds. Your instinct is to turn back, but you heed the Captain<ch.apos/>s plea and urge your horse on towards the top of the ridge. You know that the best way you can serve these courageous men now is to reach the Kai Monastery and destroy the Shadow Gate.</p>
       <choice idref="sect250"><link-text>Turn to 250</link-text>.</choice>
      </data>
@@ -3832,7 +3923,7 @@
       <p>Gwynian ushers you through into an adjoining chamber where floating bulbs of light illuminate a stone table covered with charts and scrolls.</p>
       <p><quote>What news have you of Sommerlund?</quote> you ask anxiously.</p>
       <p><quote>Grave news,</quote> replies Gwynian, with an ominous tone. He picks up a chart from the table and traces a finger across the intricate lines and calculations that embellish its ancient yellowed surface.</p>
-      <p><quote>The Dark God Naar has opened a Shadow Gate in the Durncrag mountains, a corridor between our world and his. By means of this corridor he has sent a host of winged creatures<ch.emdash/>the Lavas<ch.emdash/>to assail your monastery. It is his plan to destroy the young order of Kai warriors while you are not able to lead them. The Shadow Gate opened at the time of the last full moon and, since then, the Kai Monastery has been attacked many times. Naar<ch.apos/>s servants have your stronghold encircled and cut oft from the armies of King Ulnar, who has repeatedly sought to break the siege. Your Kai have withstood the attacks well, Lone Wolf, but they are weakening. Only you can save them now.</quote></p>
+      <p><quote>The Dark God Naar has opened a Shadow Gate in the Durncrag Mountains, a corridor between our world and his. By means of this corridor he has sent a host of winged creatures<ch.emdash/>the Lavas<ch.emdash/>to assail your monastery. It is his plan to destroy the young order of Kai warriors while you are not able to lead them. The Shadow Gate opened at the time of the last full moon and, since then, the Kai Monastery has been attacked many times. Naar<ch.apos/>s servants have your stronghold encircled and cut oft from the armies of King Ulnar, who has repeatedly sought to break the siege. Your Kai have withstood the attacks well, Lone Wolf, but they are weakening. Only you can save them now.</quote></p>
       <p><quote>But how?</quote> you ask, shaken by Gwynian<ch.apos/>s account of the events which have occurred during your absence from the monastery. <quote>If the armies of King Ulnar are powerless to break the siege, how can I hope to save my brethren?</quote></p>
       <p><quote>Do not despair, Lone Wolf,</quote> replies Gwynian, reassuringly. <quote>All is not yet lost. You can save your brave order by closing the gate through which Naar sends his Lavas minions.</quote></p>
       <p>You are about to ask how you could possibly achieve this, how you could close the Shadow Gate, but your urgent question is forestalled when Gwynian raises his hand.</p>
@@ -4119,7 +4210,7 @@
 
      <data>
       <p>The smooth dark hair and noble countenance of the Lord Constable is oddly familiar, reminding you of someone whose name momentarily you cannot recall.</p>
-      <p><quote>Welcome, my Lord,</quote> he says, with a respectful salute, <quote>I an Nathor, Lord Constable of the Royal Citadel. My troop would be honoured to escort you to an audience with Queen Evaine.</quote></p>
+      <p><quote>Welcome, my Lord,</quote> he says, with a respectful salute. <quote>I an Nathor, Lord Constable of the Royal Citadel. My troop would be honoured to escort you to an audience with Queen Evaine.</quote></p>
       <p><quote>Pray tell me, Lord Constable,</quote> you reply, <quote>have we not met before?</quote></p>
       <p><quote>No, sire. I venture you must be thinking of my late brother<ch.emdash/>Adamas. He held the office of Lord Constable afore me. I understand that you and he once fought together in the war <ch.apos/>gainst the Darklords. He spoke most highly of your courage. Sadly, though, he is no longer with us. He died valiantly during the great siege of Torgar.</quote></p>
       <choice idref="sect238"><link-text>Turn to 238</link-text>.</choice>
@@ -4307,7 +4398,7 @@
       <p>To the west of the park you notice a fortified tower, by far the tallest in the city. You feel inexplicably drawn towards this tower; it is as if it possesses the solution to all your problems. You leave the park by its west gate and enter a wider thoroughfare called Brass Street. Here you see the courtyard entrance to a grand building whose brick and marble fa<ch.ccedil/>ade is adorned with the words: HALLS OF LEARNING.</p>
       <p>You enter and ride along a gravelled path which leads to a budding where a sign, hanging over its richly-carved oak door, simply says: LIBRARY. You feel compelled to stop here and, without quite knowing why, you dismount from your horse and tie his reins to a ring which is set into the wall. Then you push open the door and enter the library<ch.apos/>s cool interior.</p>
       <p>Countless thousands of books and parchments crowd the stone shelves of this magnificent library. Your eyes travel along them until they reach another door at the far end of the hall. There, standing framed in its archway, is an old man clad in plain brown robes. He looks at you and smiles knowingly.</p>
-      <p><quote>Welcome, Grand Master,</quote> he says, <quote>I have been expecting you.</quote></p>
+      <p><quote>Welcome, Grand Master,</quote> he says. <quote>I have been expecting you.</quote></p>
       <choice idref="sect348">If you have ever visited a hut on Raider<ch.apos/>s Road, the city of Tahou, or Lake Vorndarol (in previous <cite>Lone Wolf</cite> adventures), <link-text>turn to 348</link-text>.</choice>
       <choice idref="sect184">If you have never visited any of these places, <link-text>turn to 184</link-text>.</choice>
      </data>
@@ -4559,7 +4650,7 @@
      <meta><title>331</title></meta>
 
      <data>
-      <p><quote>Eeeargh!</quote> snorts the old man, impatiently, and begins to walk back to the door, <quote>Raggin<ch.apos/> time-waster!</quote></p>
+      <p><quote>Eeeargh!</quote> snorts the old man, impatiently, and begins to walk back to the door. <quote>Raggin<ch.apos/> time-waster!</quote></p>
       <p>Rather than being forced to make a long detour to avoid this bridge, you decide to try and barter with the gateman. Your proposal captures his interest and he demands to see what valuables you have. You show him your possessions and, after a few minutes thought, he agrees to let you pass in return for one of your Special Items (excluding the Sun-crystal).</p>
       <p>Wary of the delay, you agree to his terms. (Erase one Special Item of your choosing from your <a idref="action">Action Chart</a>.)</p>
       <choice idref="sect74">To continue, <link-text>turn to 74</link-text>.</choice>
@@ -4627,7 +4718,7 @@
       <p>You rush to the brigand<ch.apos/>s side and wrench he dagger from his chest. The wound is deep and you sense that it has penetrated his heart; he has only seconds to live. Calling upon your advanced healing skills, you cause he torn tissues of his heart wall to knit together sufficiently enough to stem the bleeding.</p>
       <p><quote>How do you know my name?</quote> you demand. <quote>Who sent you here? What is your purpose?</quote></p>
       <p>The brigand tries to smile through his pain and a trickle of crimson blood runs from the corner of his mouth.</p>
-      <p><quote>You<ch.ellips/> you are the reason I<ch.apos/>m here,</quote> he whispers, <quote>I came here looking to finish you. I am finished now<ch.ellips/> Lutha will not be pleased.</quote></p>
+      <p><quote>You<ch.ellips/> you are the reason I<ch.apos/>m here,</quote> he whispers. <quote>I came here looking to finish you. I am finished now<ch.ellips/> Lutha will not be pleased.</quote></p>
       <p>Then a fit of coughing reopens his punctured heart. With a final gurgling gasp, he expires in your arms. You get to your feet and look around at the devastation he and his men have brought to the sleepy village of Pinepeaks. Leaderless, the remaining brigands abandon their loot and flee to the wooded hills to rejoin their confederates, those who attempted to ambush the troop when first you entered this valley. Nathor<ch.apos/>s men have secured the village and they are helping the villagers to fight the fires which are burning in several of the cottages.</p>
       <choice idref="sect126"><link-text>Turn to 126</link-text>.</choice>
      </data>
@@ -4793,7 +4884,7 @@
       <p>As the last of the winged horrors comes crashing to the ground, slain by your deadly blows, you take off at a run towards the trees. You rush headlong into the forest and glance overhead to make doubly sure that you are not being tracked by more of the winged lavas. The darkening sky is clear of the enemy and confidently you press on through the trees, sure in your ability to remain undetected now that you are in your natural environment of the forest.</p>
       <p>Soon you reach the clearing and hurry to a boulder which bears the imprint of a human hand. You place your right hand upon it and the imprint fits around it like a glove. Silently a hinged stone slab rises up from the ground revealing a stair that leads down into a brick-lined passageway. You enter and hurry along this familiar tunnel, covering a mile before you come to a door that opens automatically at your approach. Beyond lies the Vault of the Sun, your personal stronghold. It radiates a warmly golden light: the rays of the Lorestones of Nyxator. Once safely inside your underground lair, you pause to allow the radiant light of the Lorestones to wash over your tired and aching limbs and, within the space of a few heartbeats, the fatigue of your long journey home is melted away (restore all lost <typ class="attribute">ENDURANCE</typ> points).</p>
       <p>Revived and revitalized, you throw open the door to the vault and see a young Kai Master standing guard at the foot of the tower stairwell. He is Sabre Fox, one of your most gifted students.</p>
-      <p><quote>Gr<ch.ellips/> Grand Master!</quote> he stammers, hardly daring to believe his eyes, <quote>you have returned. Praise the Gods!<ch.emdash/>Our prayers have been answered!</quote></p>
+      <p><quote>Gr<ch.ellips/> Grand Master!</quote> he stammers, hardly daring to believe his eyes. <quote>You have returned. Praise the Gods!<ch.emdash/>Our prayers have been answered!</quote></p>
       <p>You smile at the young Kai Master who now has tears of joy in his steel-grey eyes.</p>
       <p><quote>Yes, Sabre Fox,</quote> you reply, <quote>I have returned. Now let us vanquish this foe and rid our land of their evil shadows.</quote></p>
       <choice idref="sect180"><link-text>Turn to 180</link-text>.</choice>
@@ -4820,7 +4911,7 @@
       <p>And with that he ushers you through the archway into an adjoining chamber, where floating bulbs of light illuminate a stone table covered with charts and scrolls.</p>
       <p><quote>What news have you of Sommerlund?</quote> you ask, anxiously.</p>
       <p><quote>Grave news,</quote> replies Gwynian, with an ominous tone. He picks up a chart from the table and traces a finger across the intricate lines and calculations that embellish its ancient yellowed surface.</p>
-      <p><quote>The Dark God Naar has opened a Shadow Gate in the Durncrag mountains, a corridor between our world and his. By means of this corridor he has sent a host of winged creatures<ch.emdash/>the Lavas<ch.emdash/>to assail your monastery. It is his plan to destroy the young order of Kai warriors while you are not able to lead them. The Shadow Gate opened at the time of the last full moon and, since then, the Kai Monastery has been attacked many times. Naar<ch.apos/>s servants have your stronghold encircled and cut off from the armies of King Ulnar, who has repeatedly sought to break the siege. Your Kai have withstood the attacks well, Lone Wolf, but they are weakening. Only you can save them now.</quote></p>
+      <p><quote>The Dark God Naar has opened a Shadow Gate in the Durncrag Mountains, a corridor between our world and his. By means of this corridor he has sent a host of winged creatures<ch.emdash/>the Lavas<ch.emdash/>to assail your monastery. It is his plan to destroy the young order of Kai warriors while you are not able to lead them. The Shadow Gate opened at the time of the last full moon and, since then, the Kai Monastery has been attacked many times. Naar<ch.apos/>s servants have your stronghold encircled and cut off from the armies of King Ulnar, who has repeatedly sought to break the siege. Your Kai have withstood the attacks well, Lone Wolf, but they are weakening. Only you can save them now.</quote></p>
       <p><quote>But how?</quote> you ask, shaken by Gwynian<ch.apos/>s account of the events which have occurred during your absence from the monastery. <quote>If the armies of King Ulnar are powerless to break the siege, how can I hope to save my brethren?</quote></p>
       <p><quote>Do not despair, Lone Wolf,</quote> replies Gwynian, reassuringly. <quote>All is not yet lost. You can save your brave order by closing the gate through which Naar sends his Lavas minions.</quote></p>
       <p>You are about to ask how you could possibly achieve this, how you could close the Shadow Gate, but your urgent question is forestalled when Gwynian raises his hand.</p>
@@ -5418,68 +5509,116 @@
        <p>(<a idref="sect9">9</a>) Replaced <quote>Old Kingdom spell</quote> with <quote>Old Kingdom Spell</quote>.</p>
        <p>(<a idref="sect10">10</a>) Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>.</p>
        <p>(<a idref="sect13">13</a>) Replaced <quote>Magnakai healing</quote> with <quote>Magnakai Curing</quote>. Replaced <quote>to well-established</quote> with <quote>too well-established</quote>.</p>
-       <p>(<a idref="sect14">14</a>) Replaced <quote>5 arrows</quote> with <quote>5 Arrows</quote>.</p>
+       <p>(<a idref="sect14">14</a>) Replaced <quote>5 arrows</quote> with <quote>5 Arrows</quote>. Put the signposts into a table.</p>
        <p>(<a idref="sect15">15</a>) Replaced <quote>eh boys?</quote> with <quote>eh, boys?</quote>.</p>
        <p>(<a idref="sect20">20</a>) Replaced <quote>says, <ch.lsquot/>Come</quote> with <quote>says. <ch.lsquot/>Come</quote>.</p>
        <p>(<a idref="sect23">23</a>) Replaced <quote>Matho<ch.apos/> potion</quote> with <quote>Matho<ch.apos/>s Potion</quote>.</p>
        <p>(<a idref="sect24">24</a>) Replaced <quote>the Gate</quote> with <quote>the Shadow Gate</quote>.</p>
        <p>(<a idref="sect26">26</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect27">27</a>) Replaced both occurrences of <quote>dug-out</quote> with <quote>dugout</quote>.</p>
+       <p>(<a idref="sect30">30</a>) Replaced <quote>less turn</quote> with <quote>less, turn</quote>.</p>
        <p>(<a idref="sect31">31</a>) Replaced <quote>Cloud-dancer<ch.rdquot/><ch.thinspace/><ch.rsquot/><ch.thinspace/></quote> with <quote>Cloud-dancer<ch.rdquot/>,<ch.rsquot/><ch.thinspace/></quote>. Replaced <quote>he beams</quote> with <quote>He beams</quote>. Replaced <quote>Mayor. What</quote> with <quote>Mayor, what</quote>.</p>
+       <p>(<a idref="sect32">32</a>) Replaced <quote>anger and pain</quote> with <quote>anger, and pain</quote>.</p>
+       <p>(<a idref="sect33">33</a>) Replaced <quote>less turn</quote> with <quote>less, turn</quote>.</p>
+       <p>(<a idref="sect36">36</a>) Replaced <quote>had been</quote> with <quote>has been</quote>.Replaced <quote>owner, <ch.lsquot/>Very</quote> with <quote>owner. <ch.lsquot/>Very</quote>. Replaced <quote>curing and animal control</quote> with <quote>Curing and Animal Control</quote>. Replaced <quote>new-born</quote> with <quote>newborn</quote>.</p>
        <p>(<a idref="sect37">37</a>) Replaced <quote>Old Kingdom spell</quote> with <quote>Old Kingdom Spell</quote>.</p>
-       <p>(<a idref="sect40">40</a>) Replaced both occurrences of <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>.</p>
+       <p>(<a idref="sect40">40</a>) Replaced both occurrences of <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>north-west</quote> with <quote>northwest</quote>. Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>. Replaced <quote>semi-circular</quote> with <quote>semicircular</quote>. Replaced <quote>Telegnosis turn</quote> with <quote>Telegnosis, turn</quote>. Replaced <quote>cavemouth</quote> with <quote>cave mouth</quote>.</p>
+       <p>(<a idref="sect43">43</a>) Replaced <quote>to barren plateau</quote> with <quote>to a barren plateau</quote>.</p>
+       <p>(<a idref="sect44">44</a>) Replaced <quote>Tyso, <ch.lsquot/>He</quote> with <quote>Tyso. <ch.lsquot/>He</quote>. Replaced <quote>heavy, <ch.lsquot/>The</quote> with <quote>heavy. <ch.lsquot/>The</quote>.</p>
        <p>(<a idref="sect46">46</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>.</p>
-       <p>(<a idref="sect49">49</a>) Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>.</p>
+       <p>(<a idref="sect48">48</a>) Replaced <quote>resonant, <ch.lsquot/>Welcome</quote> with <quote>resonant. <ch.lsquot/>Welcome</quote>.</p>
+       <p>(<a idref="sect49">49</a>) Replaced <quote>says. The</quote> with <quote>says. <ch.lsquot/>The</quote>. Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>the Tower</quote> with <quote>the tower</quote>.</p>
+       <p>(<a idref="sect50">50</a>) Replaced <quote>rounds by</quote> with <quote>rounds, by</quote>.</p>
+       <p>(<a idref="sect51">51</a>) Replaced <quote>Gr..Grand</quote> with <quote>Grand<ch.ellips/> Grand</quote>. Replaced <quote>Gods<ch.emdash/>Our</quote> with <quote>Gods! Our</quote>.</p>
        <p>(<a idref="sect52">52</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>. Replaced <quote>(imposters)</quote> with <quote>(impostors)</quote>.</p>
        <p>(<a idref="sect54">54</a>) Replaced both occurrences of <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>. Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>the Gate</quote> with <quote>the Shadow Gate</quote>.</p>
        <p>(<a idref="sect56">56</a>) Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+       <p>(<a idref="sect58">58</a>) Replaced <quote>the Tower</quote> with <quote>the tower</quote>.</p>
+       <p>(<a idref="sect59">59</a>) Replaced <quote>points.)</quote> with <quote>points).</quote>.</p>
+       <p>(<a idref="sect60">60</a>) Replaced <quote>land.<ch.rdquot/><ch.thinspace/></quote> with <quote>land.<ch.rsquot/><ch.thinspace/></quote>.</p>
+       <p>(<a idref="sect61">61</a>) Replaced <quote>tunic, <ch.lsquot/>what</quote> with <quote>tunic. <ch.lsquot/>What</quote>. Replaced <quote>gulleys</quote> with <quote>gullies</quote>.</p>
+       <p>(<a idref="sect63">63</a>) Replaced <quote>counter-charge</quote> with <quote>countercharge</quote>.</p>
        <p>(<a idref="sect69">69</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect71">71</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>. Replaced <quote>ultra-violet</quote> with <quote>ultraviolet</quote>.</p>
+       <p>(<a idref="sect72">72</a>) Replaced <quote>cry, <ch.lsquot/>We</quote> with <quote>cry. <ch.lsquot/>We</quote>.</p>
        <p>(<a idref="sect73">73</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>.</p>
+       <p>(<a idref="sect75">75</a>) Replaced <quote>say, <ch.lsquot/>can</quote> with <quote>say. <ch.lsquot/>Can</quote>.</p>
        <p>(<a idref="sect79">79</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>.</p>
-       <p>(<a idref="sect85">85</a>) Replaced <quote>5 arrows</quote> with <quote>5 Arrows</quote>.</p>
-       <p>(<a idref="sect94">94</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
-       <p>(<a idref="sect90">90</a>) Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
-       <p>(<a idref="sect100">100</a>) Replaced all occurrences of <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>.</p>
+       <p>(<a idref="sect80">80</a>) Replaced <quote>doormouse</quote> with <quote>dormouse</quote>.</p>
+       <p>(<a idref="sect81">81</a>) Replaced <quote>grasssnake</quote> with <quote>grass snake</quote>.</p>
+       <p>(<a idref="sect82">82</a>) Replaced <quote>Old Kingdom battle-spell</quote> with <quote>Old Kingdom Battle-spell</quote>.</p>
+       <p>(<a idref="sect84">84</a>) Replaced <quote>Vellino<ch.rsquot/>,</quote> with <quote>Vellion,<ch.rsquot/><ch.thinspace/></quote>.</p>
+       <p>(<a idref="sect85">85</a>) Replaced <quote>5 arrows</quote> with <quote>5 Arrows</quote>. Put the signposts into a table.</p>
+       <p>(<a idref="sect86">86</a>) Replaced <quote>shout, <ch.lsquot/>String</quote> with <quote>shout. <ch.lsquot/>String</quote>. Replaced <quote>stammers, <ch.lsquot/>I</quote> with <quote>stammers. <ch.lsquot/>I</quote>. Replaced <quote>Kai healing</quote> with <quote>Kai Healing</quote>.</p>
+       <p>(<a idref="sect87">87</a>) Replaced <quote>Kai camouflage</quote> with <quote>Kai Camouflage</quote>.</p>
+       <p>(<a idref="sect90">90</a>) Replaced <quote>says, <ch.lsquot/>I</quote> with <quote>says. <ch.lsquot/>I</quote>. Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+       <p>(<a idref="sect92">92</a>) Replaced <quote>river Quarl</quote> with <quote>River Quarl</quote>.</p>
+       <p>(<a idref="sect94">94</a>) Replaced <quote>D<ch.rsquot/>Val</quote> with <quote>D<ch.apos/>Val</quote>. Replaced <quote>Alema trail</quote> with <quote>Alema Trail</quote>. Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
+       <p>(<a idref="sect95">95</a>) Replaced <quote>psi-surge</quote> with <quote>Psi-surge</quote>.</p>
+       <p>(<a idref="sect97">97</a>) Replaced <quote>another, <ch.lsquot/>cough</quote> with <quote>another. <ch.lsquot/>cough</quote>.</p>
+       <p>(<a idref="sect100">100</a>) Replaced all occurrences of <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>Gwynian, <ch.lsquot/>Just</quote> with <quote>Gwynian. <ch.lsquot/>Just</quote>.</p>
+       <p>(<a idref="sect101">101</a>) Replaced <quote>cry, <ch.lsquot/>we</quote> with <quote>cry. <ch.lsquot/>We</quote>.</p>
+       <p>(<a idref="sect104">104</a>) Replaced <quote>cried, <ch.lsquot/>I<ch.apos/>m</quote> with <quote>cries. <ch.lsquot/>I<ch.apos/>m</quote>.</p>
+       <p>(<a idref="sect105">105</a>) Replaced <quote>D<ch.lsquot/>Val</quote> with <quote>D<ch.apos/>Val</quote>.</p>
        <p>(<a idref="sect108">108</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>. Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>the Gate</quote> with <quote>the Shadow Gate</quote>.</p>
-       <p>(<a idref="sect110">110</a>) Replaced <quote>5 arrows</quote> with <quote>5 Arrows</quote>.</p>
-       <p>(<a idref="sect112">112</a>) Replaced <quote>facade</quote> with <quote>fa<ch.ccedil/>ade</quote>. Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
-       <p>(<a idref="sect121">121</a>) Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+       <p>(<a idref="sect110">110</a>) Replaced <quote>5 arrows</quote> with <quote>5 Arrows</quote>. Put the signposts into a table.</p>
+       <p>(<a idref="sect112">112</a>) Replaced <quote>facade</quote> with <quote>fa<ch.ccedil/>ade</quote>. Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Replaced <quote>says, <ch.lsquot/>I</quote> with <quote>says. <ch.lsquot/>I</quote>.</p>
+       <p>(<a idref="sect114">114</a>) Replaced <quote>sky, <ch.lsquot/>and</quote> with <quote>sky. <ch.lsquot/>And</quote>.</p>
+       <p>(<a idref="sect115">115</a>) Replaced <quote>anger and pain</quote> with <quote>anger, and pain</quote>.</p>
+       <p>(<a idref="sect120">120</a>) Replaced <quote>Nathor, <ch.lsquot/>it<ch.apos/>s</quote> with <quote>Nathor. <ch.lsquot/>It<ch.apos/>s</quote>.</p>
+       <p>(<a idref="sect121">121</a>) Replaced <quote>smile, <ch.lsquot/>I</quote> with <quote>smile. <ch.lsquot/>I</quote>. Replaced <quote>replies, <ch.lsquot/>the</quote> with <quote>replies. <ch.lsquot/>The</quote>. Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
        <p>(<a idref="sect129">129</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>.</p>
+       <p>(<a idref="sect132">132</a>) Replaced <quote>gaoler, <ch.lsquot/>I<ch.apos/>ve</quote> with <quote>gaoler. <ch.lsquot/>I<ch.apos/>ve</quote>.</p>
        <p>(<a idref="sect133">133</a>) Replaced <quote>dug-out</quote> with <quote>dugout</quote>.</p>
        <p>(<a idref="sect134">134</a>) Replaced both occurrences of <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>the Gate</quote> with <quote>the Shadow Gate</quote>.</p>
-       <p>(<a idref="sect136">136</a>) Replaced <quote>elite</quote> with <quote><ch.eacute/>lite</quote>. Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>.</p>
+       <p>(<a idref="sect136">136</a>) Replaced <quote>elite</quote> with <quote><ch.eacute/>lite</quote>. Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>shoulder, <ch.lsquot/>you</quote> with <quote>shoulder. <ch.lsquot/>You</quote>.</p>
        <p>(<a idref="sect137">137</a>) Replaced <quote>(imposters)</quote> with <quote>(impostors)</quote>.</p>
        <p>(<a idref="sect139">139</a>) Replaced both occurrences of <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>.</p>
+       <p>(<a idref="sect140">140</a>) Replaced <quote>tersely, <ch.lsquot/>he<ch.apos/>s</quote> with <quote>tersely. <ch.lsquot/>He<ch.apos/>s</quote>.</p>
        <p>(<a idref="sect141">141</a>) Replaced both occurrences of <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>the Gate</quote> with <quote>the Shadow Gate</quote>.</p>
        <p>(<a idref="sect145">145</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
+       <p>(<a idref="sect147">147</a>) Replaced <quote>quietly. <ch.lsquot/>the</quote> with <quote>quietly. <ch.lsquot/>The</quote>.</p>
+       <p>(<a idref="sect157">157</a>) Replaced <quote>emotion, <ch.lsquot/>I<ch.apos/>m</quote> with <quote>emotion. <ch.lsquot/>I<ch.apos/>m</quote>.</p>
+       <p>(<a idref="sect158">158</a>) Replaced <quote>says, <ch.lsquot/>yours</quote> with <quote>says. <ch.lsquot/>Yours</quote>. Replaced <quote>sky, <ch.lsquot/>and</quote> with <quote>sky. <ch.lsquot/>And</quote>.</p>
        <p>(<a idref="sect161">161</a>) Replaced <quote>infra-vision</quote> with <quote>infravision</quote>.</p>
        <p>(<a idref="sect164">164</a>) Replaced <quote>nadziranim</quote> with <quote>Nadziranim</quote>.</p>
+       <p>(<a idref="sect168">168</a>) Replaced <quote>Sage, <ch.lsquot/>I</quote> with <quote>Sage. <ch.lsquot/>I</quote>.</p>
        <p>(<a idref="sect172">172</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
-       <p>(<a idref="sect174">174</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>. Replaced <quote>5 arrows</quote> with <quote>5 Arrows</quote>.</p>
-       <p>(<a idref="sect180">180</a>) Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>.</p>
+       <p>(<a idref="sect174">174</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>. Replaced <quote>5 arrows</quote> with <quote>5 Arrows</quote>. Put the signposts into a table.</p>
+       <p>(<a idref="sect178">178</a>) Replaced <quote>the Tower</quote> with <quote>the tower</quote>. Replaced <quote>the Tower<ch.apos/>s</quote> with <quote>the tower<ch.apos/>s</quote>.</p>
+       <p>(<a idref="sect180">180</a>) Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>replies, <ch.lsquot/>though</quote> with <quote>replies. <ch.lsquot/>Though</quote>. Split Rimoah<ch.apos/>s comments into a separate paragraph for clarity.</p>
+       <p>(<a idref="sect184">184</a>) Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.</p>
        <p>(<a idref="sect185">185</a>) Replaced <quote>dug-out</quote> with <quote>dugout</quote>.</p>
        <p>(<a idref="sect187">187</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
-       <p>(<a idref="sect194">194</a>) Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+       <p>(<a idref="sect194">194</a>) Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Replaced <quote>says, <ch.lsquot/>I</quote> with <quote>says. <ch.lsquot/>I</quote>.</p>
        <p>(<a idref="sect196">196</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect197">197</a>) Replaced both occurrences of <quote>dug-out</quote> with <quote>dugout</quote>.</p>
+       <p>(<a idref="sect198">198</a>) Replaced <quote>tunic, <ch.lsquot/>what</quote> with <quote>tunic. <ch.lsquot/>What</quote>.</p>
        <p>(<a idref="sect203">203</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>. Replaced <quote>ultra-violet</quote> with <quote>ultraviolet</quote>.</p>
+       <p>(<a idref="sect204">204</a>) Replaced <quote>delight, <ch.lsquot/>I</quote> with <quote>delight. <ch.lsquot/>I</quote>.</p>
        <p>(<a idref="sect206">206</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect211">211</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
+       <p>(<a idref="sect215">215</a>) Replaced <quote>shouts, <ch.lsquot/>Ride</quote> with <quote>shouts. <ch.lsquot/>Ride</quote>.</p>
        <p>(<a idref="sect217">217</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect223">223</a>) Replaced <quote>hand hold</quote> with <quote>handhold</quote>.</p>
+       <p>(<a idref="sect226">226</a>) Replaced <quote>shouts, <ch.lsquot/>Ride</quote> with <quote>shouts. <ch.lsquot/>Ride</quote>.</p>
        <p>(<a idref="sect227">227</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>.</p>
        <p>(<a idref="sect228">228</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect230">230</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect232">232</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect233">233</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>. Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>the Gate</quote> with <quote>the Shadow Gate</quote>.</p>
+       <p>(<a idref="sect237">237</a>) Replaced <quote>ear, <ch.lsquot/>you</quote> with <quote>ear. <ch.lsquot/>You</quote>.</p>
        <p>(<a idref="sect240">240</a>) Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+       <p>(<a idref="sect246">246</a>) Replaced <quote>stammers, <ch.lsquot/>I</quote> with <quote>stammers. <ch.lsquot/>I</quote>. Replaced <quote>uneasily, <ch.lsquot/>I</quote> with <quote>uneasily. <ch.lsquot/>I</quote>.</p>
        <p>(<a idref="sect250">250</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect252">252</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
+       <p>(<a idref="sect256">256</a>) Replaced <quote>north-west</quote> with <quote>northwest</quote>. Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>. Replaced <quote>Hall, <ch.lsquot/>the</quote> with <quote>Hall. <ch.lsquot/>The</quote>. Replaced <quote>door, <ch.lsquot/>the</quote> with <quote>door. <ch.lsquot/>The</quote>.</p>
        <p>(<a idref="sect258">258</a>) Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>.</p>
-       <p>(<a idref="sect260">260</a>) Replaced <quote>5 arrows</quote> with <quote>5 Arrows</quote>.</p>
+       <p>(<a idref="sect260">260</a>) Replaced <quote>5 arrows</quote> with <quote>5 Arrows</quote>. Put the signposts into a table.</p>
        <p>(<a idref="sect262">262</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>.</p>
+       <p>(<a idref="sect263">263</a>) Replaced <quote>shouts, <ch.lsquot/>Ride</quote> with <quote>shouts. <ch.lsquot/>Ride</quote>.</p>
        <p>(<a idref="sect264">264</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
+       <p>(<a idref="sect268">268</a>) Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.</p>
        <p>(<a idref="sect269">269</a>) Replaced <quote>(imposters)</quote> with <quote>(impostors)</quote>.</p>
        <p>(<a idref="sect273">273</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>. Replaced <quote>(imposters)</quote> with <quote>(impostors)</quote>.</p>
        <p>(<a idref="sect274">274</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>. Replaced <quote>ultra-violet</quote> with <quote>ultraviolet</quote>.</p>
@@ -5487,15 +5626,19 @@
        <p>(<a idref="sect282">282</a>) Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>.</p>
        <p>(<a idref="sect288">288</a>) Replaced <quote>the Gate</quote> with <quote>the Shadow Gate</quote>.</p>
        <p>(<a idref="sect291">291</a>) Replaced both occurrences of <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>the Gate</quote> with <quote>the Shadow Gate</quote>.</p>
+       <p>(<a idref="sect292">292</a>) Replaced <quote>salute, <ch.lsquot/>I</quote> with <quote>salute. <ch.lsquot/>I</quote>.</p>
        <p>(<a idref="sect295">295</a>) Replaced <quote>despatch</quote> with <quote>dispatch</quote>.</p>
        <p>(<a idref="sect297">297</a>) Replaced <quote>Old Kingdom spell</quote> with <quote>Old Kingdom Spell</quote>.</p>
        <p>(<a idref="sect306">306</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>.</p>
-       <p>(<a idref="sect308">308</a>) Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
+       <p>(<a idref="sect308">308</a>) Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Replaced <quote>says, <ch.lsquot/>I</quote> with <quote>says. <ch.lsquot/>I</quote>.</p>
        <p>(<a idref="sect320">320</a>) Replaced <quote>infra-red</quote> with <quote>infrared</quote>. Replaced both occurrences of <quote>dug-out</quote> with <quote>dugout</quote>.</p>
        <p>(<a idref="sect322">322</a>) Replaced <quote>Old Kingdom spell</quote> with <quote>Old Kingdom Spell</quote>.</p>
-       <p>(<a idref="sect331">331</a>) Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>.</p>
+       <p>(<a idref="sect331">331</a>) Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>door, <ch.lsquot/>Raggin<ch.rsquot/><ch.thinspace/></quote> with <quote>door. <ch.lsquot/>Raggin<ch.rsquot/><ch.thinspace/></quote>.</p>
+       <p>(<a idref="sect337">337</a>) Replaced <quote>whispers, <ch.lsquot/>I</quote> with <quote>whispers. <ch.lsquot/>I</quote>.</p>
        <p>(<a idref="sect344">344</a>) Replaced <quote>the Gate</quote> with <quote>the Shadow Gate</quote>.</p>
        <p>(<a idref="sect345">345</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
+       <p>(<a idref="sect346">346</a>) Replaced <quote>eyes, <ch.lsquot/>you</quote> with <quote>eyes. <ch.lsquot/>You</quote>.</p>
+       <p>(<a idref="sect348">348</a>) Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.</p>
        <p>(<a idref="sect350">350</a>) Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>.</p>
       </data>
      </section>
