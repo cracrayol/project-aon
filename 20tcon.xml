@@ -792,6 +792,19 @@
 
       <data>
         <p>The swirling mist condenses and reshapes itself into a column of flickering light. It resembles a large candle flame, but one that radiates an icy coldness. Within this chill flame you see a pair of glowing eyes that mesmerize and hold you transfixed. Pulses of psychic energy bombard your mind, making you shudder and recoil as your innate mind defences scramble to shield your psyche: lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>The carpet of maggots squirm towards you</line>
+           <line>like a seething flood-tide of corruption.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill1.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill1.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <p>Sensing that its attack has weakened you, the spirit of Cadak ruthlessly seizes the advantage. It issues a psychic command and instantly the carpet of maggots wriggle and squirm towards you like a seething flood-tide of corruption.</p>
         <choice idref="sect92">If you possess Animal Mastery, <link-text>turn to 92</link-text>.</choice>
         <choice idref="sect69">If you do not possess this skill, <link-text>turn to 69</link-text>.</choice>
@@ -1091,7 +1104,7 @@
 
       <data>
         <p>As you look down at the ferocious jaws of the three giant arachnids below, you give thanks to your friend Guildmaster Banedon for having taught you this valuable spell. However, one limitation of this spell is that it can only levitate you vertically into the air; it cannot propel you horizontally. The effects of the spell soon wear off and you find yourself descending into the midst of the giant river-spiders. As your feet touch the muddy bank, you unsheathe your weapon and defend yourself against their immediate attack.</p>
-        <p>Avagnids: COMBAT SKILl 48 <typ class="attribute">ENDURANCE</typ> 40</p>
+        <combat><enemy>Avagnids</enemy><enemy-attribute class="combatskill">48</enemy-attribute><enemy-attribute class="endurance">40</enemy-attribute></combat>
         <p>These creatures are immune to all forms of psychic attack, except Kai-ray. If you possess Animal Mastery you may add 2 to your <typ class="attribute">COMBAT SKILL</typ> for the duration of this fight.</p>
         <choice idref="sect316">If you win the combat, <link-text>turn to 316</link-text>.</choice>
       </data>
@@ -1112,7 +1125,20 @@
 
       <data>
         <p>The leading creatures snarl like ravenous wolves as they launch themselves at the entrance to your hiding place. You meet their attack with a flurry of lightning-fast blows which shatters their skulls and sends them tumbling from their skeletal shoulders. Their twitching headless torsos crash to the ground, yet more of their hideous kind pour through the gap and within seconds they are all over you. Claws and talons rake your arms and sides as desperately you fight to free yourself from this nightmare legion.</p>
-        <p>Chaos-mutants: COMBAT SKILl 45 <typ class="attribute">ENDURANCE</typ> 37</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>Claws and talons rake your arms and sides,</line>
+           <line>as you fight desperately to free yourself.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill2.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill2.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
+        <combat><enemy>Chaos-mutants</enemy><enemy-attribute class="combatskill">45</enemy-attribute><enemy-attribute class="endurance">37</enemy-attribute></combat>
         <p>These undead beings are immune to all forms of psychic attack.</p>
         <choice idref="sect129">If you win this combat, <link-text>turn to 129</link-text>.</choice>
       </data>
@@ -1267,6 +1293,19 @@
 
       <data>
         <p>From beneath the coating of moss which sheathes these vines emerge hundreds of tiny hollow barbs, transforming them instantly into deadly foes capable of ripping you to shreds. They whip the air within inches of your face, forcing you to frantically dodge and dive to avoid being torn open. You draw your weapon and strike out, cleaving through the end of one of these deadly creepers which emits a high-pitched squeal as it recoils, trailing a spray of sticky green slime from its sundered tip. As if enraged by its companion<ch.apos/>s cry of pain, the remaining vines snake towards you with increased tenacity. You must fight them.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>The deadly vines whip the air,</line>
+           <line>inches from your face.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill3.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill3.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <combat><enemy>Haemodyls</enemy><enemy-attribute class="combatskill">49</enemy-attribute><enemy-attribute class="endurance">42</enemy-attribute></combat>
         <p>These vine-creatures are immune to all forms of psychic attack, except Kai-blast and Kai-ray. If you possess Animal Mastery, you may add 2 to your <typ class="attribute">COMBAT SKILL</typ> for the duration of this fight.</p>
         <choice idref="sect19">If you win the combat, <link-text>turn to 19</link-text>.</choice>
@@ -1485,6 +1524,19 @@
 
       <data>
         <p>Two great scaly legs, each tipped with razor-clawed talons, precede the huge bulk of Huan<ch.apos/>zhor as he lowers himself down upon his nest of flames. You take cover as best you can among the piles of treasure, but when his talons descend to within an arm<ch.apos/>s length of where you are cowering the Dragonlord suddenly detects your presence. He emits a deafening roar and bolts of flame shoot from his mouth to explode with shattering effect among the piles of precious artefacts that lie close to where you are sheltering. Hurriedly you roll away from your hiding place and unsheathe your weapon as you scramble to your feet. There is now no place for you to hide. Your quest and your survival now depend on the outcome of your imminent combat with the mighty Huan<ch.apos/>zhor.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>Bolts of flame shoot from Huan<ch.apos/>zhor<ch.apos/>s mouth</line>
+           <line>and explode close to your shelter.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill4.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill4.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <combat><enemy>Huan<ch.apos/>zhor the Dragonlord</enemy><enemy-attribute class="combatskill">56</enemy-attribute><enemy-attribute class="endurance">60</enemy-attribute></combat>
         <p>This being is immune to all forms of psychic attack, except Kai-blast and Kai-ray. If you possess a Blue Diamond, you may add 3 to your <typ class="attribute">COMBAT SKILL</typ> for the duration of this combat. If you possess Skarn-Ska, you may add 2 (in addition to all other combat bonuses applicable for this Special Item) to your <typ class="attribute">COMBAT SKILL</typ> for the duration of this combat.</p>
         <choice idref="sect344">Conduct this fight using normal combat procedures. However, as soon as your enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> score falls to 20 or less, do not continue. Instead, <link-text>turn immediately to 344</link-text>.</choice>
@@ -1595,6 +1647,19 @@
 
       <data>
         <p>As the beast leaps from the ramp you dive below it and thrust your weapon up into its chest. The power of your blow deflects the creature and sends it somersaulting into the wall. It howls in surprise and pain, but the failure of its attack does not make it suddenly forget its hunger. With lightning speed it recovers and leaps at your chest with its claws extended. You sidestep to avoid it but it succeeds in knocking you backwards as its heavy bulk glances your arm. Cursing its ferocity, you brace yourself for what must be a fight to the finish.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>The beast leaps at your chest</line>
+           <line>with outstretched claws<ch.ellips/></line>
+          </description>
+         </meta>
+         <instance class="html" src="ill5.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill5.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <combat><enemy>Ghazoul</enemy><enemy-attribute class="combatskill">50</enemy-attribute><enemy-attribute class="endurance">38</enemy-attribute></combat>
         <p>This creature is immune to all forms of psychic attack, except Kai-blast and Kai-ray.</p>
         <choice idref="sect36">If you win the combat, <link-text>turn to 36</link-text>.</choice>
@@ -1841,6 +1906,19 @@
 
       <data>
         <p>A feeling of dread makes your hands tremble the moment you catch a clear sight of the huge, ant-like creatures. You have encountered these insectoids once before, although in a location which could not be more different than the humid jungle settlement into which you are now descending. They are Dentaag<ch.emdash/>giant spindly-limbed insectoids who possess ghoulish heads implanted with evil composite eyes. They are an ancient breed, a cruel creation spawned by Naar for the armies of the Deathlord of Ixia. It was in the Deathlord<ch.apos/>s frigid chamber, atop the Spire of Xaagon, that you last faced these terrible creatures and you had hoped then that your first encounter with them would also be your last. Fate has decreed otherwise.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>The creatures leap out of the muddy water</line>
+           <line>and attack you from behind.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill6.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill6.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <p>Memories of your ordeal in Ixia suddenly come flooding back to haunt you. As you recall your previous encounter, you remember that these horrific beings possess strong psychic powers. Forewarned, you draw upon your mental Kai defences as your captors prepare to land with you inside the settlement.</p>
         <choice idref="sect242">If you possess Kai-screen, <link-text>turn to 242</link-text>.</choice>
         <choice idref="sect59">If you do not possess this Discipline, <link-text>turn to 59</link-text>.</choice>
@@ -1996,6 +2074,20 @@
       <data>
         <p>You take hold of your rope and make a lasso from one end. Then you cast this loop at a sapling growing on the bank, several yards from the water<ch.apos/>s edge. The rope hits its mark and you are able to pull yourself over dry land before cancelling the effects of your levitation spell.</p>
         <p>The moment your feet touch the ground, you retrieve your rope and run headlong across the clearing towards a distant perimeter of trees and dense undergrowth. At first the arachnids give chase, but they are not so agile on dry land and you are soon able to outdistance them. On entering the jungle perimeter, you force your way through thick foliage and discover the remnants of a trail which you follow for nearly a mile until you arrive at the edge of a second clearing. This expanse of level ground is devoid of foliage yet it is littered with strange fruits that resemble gigantic grey pineapples. Beyond these curious fruits you can see the ruins of a settlement partially overgrown with moss. Warily you leave the jungle, make your way around the fruits, and hurry across the clearing towards a statue which is crouching among the ruins. It is constructed of a smooth, lustrous black mineral and is fashioned in the likeness of some evil beast of prey. It reminds you of a hyena, but one with a massive lower jaw set with a pair of sabre-toothed fangs. Between its forelegs is a flight of rubble-strewn steps leading down to an open door. You detect waves of power emanating from somewhere beyond this darkened doorway, but you are unable to determine just how deep below the ground the source of this energy is located.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>Between the statue<ch.apos/>s forelegs</line>
+           <line>is a flight of rubble-strewn steps</line>
+           <line>leading down to an open door.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill7.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill7.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <choice idref="sect76">If you possess Telegnosis, and wish to use this skill to spirit-walk through the doorway to investigate what lies beyond, <link-text>turn to 76</link-text>.</choice>
         <choice idref="sect177">If you do not possess this skill, or choose not to use it, <link-text>turn to 177</link-text>.</choice>
       </data>
@@ -2165,6 +2257,19 @@
 
       <data>
         <p>You are shocked to the core when suddenly you recognize the faces that have appeared upon the surfaces of the three leading comets. The first is Lord Paido<ch.emdash/>the Vakeros warrior who accompanied you through the uncharted swamps of the Danarg and later sacrificed his life to protect yours in the infamous Darklord fortress of Torgar. The second is the face of Adamas<ch.emdash/>the Lord Constable of Garthen<ch.emdash/>who led the armies of Talestria and Palmyrion in the assault upon Torgar and perished during that fearsome siege. And the third is the bearded face of Seb Jarel<ch.emdash/>the brave Eruan partizan who guided you through the Hellswamp and, in so doing, forfeited his life.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>The faces of the three doomed souls plead</line>
+           <line>for their release with silent cries.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill8.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill8.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <p>Your Kai senses detect that the souls of these three brave men are trapped upon this domain. Their spirits were captured by evil at the moment of their deaths and Naar has since condemned them to an eternity in the service of Avarvae the Tormentress. You see them mouthing words; they are pleading for you to release them from their torment, and your heart is torn by their silent, plaintive cries.</p>
         <choice idref="sect163">If you possess Deliverance, and you have attained the Kai rank of Sun Thane, <link-text>turn to 163</link-text>.</choice>
         <choice idref="sect138">If you do not possess this skill, or if you have yet to attain this level of Kai Mastery, <link-text>turn to 138</link-text>.</choice>
@@ -2625,6 +2730,19 @@
 
       <data>
         <p>Wielding whips of living flame in each of his eight massive hands, the demonic spectre of Tzor lashes the host of doomed souls without let or mercy. Relentlessly he pursues them around the Plain of Despair, revelling in his sport, allowing them neither rest nor respite from this unending chase. Few avoid his watchful eyes and fewer still escape the searing kiss of his terrible whips of fire.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>The demonic spectre of Tzor wields whips</line>
+           <line>of living flame in each huge hand.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill9.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill9.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <p>As the towering shape of Tzor looms nearer, you detect a complex web of psychic probes emanating from his being. Clearly he utilizes his prodigious mental powers to monitor the souls of the damned who are trapped here forever upon the Plain of Despair. Then you realize that Tzor<ch.apos/>s powerful psychic abilities may also alert him to your presence at the edge of the crater. Tzor is fast approaching now; you must act quickly if you are to minimize the risk of being discovered.</p>
         <choice idref="sect297">If you possess Kai-screen, and have attained the Kai rank of Grand Crown, <link-text>turn to 297</link-text>.</choice>
         <choice idref="sect133">If you possess Kai-screen, but have yet to attain this level of Kai rank, <link-text>turn to 133</link-text>.</choice>
@@ -2717,6 +2835,19 @@
 
       <data>
         <p>You descend the spiral stairs to the base of the tower and make your way quickly through the narrow alleys of this subterranean settlement. Your Kai camouflage skills keep you hidden from the lavas and dragons that soar overhead, and you are able to reach the edge of the quarry unnoticed. Here you observe teams of reptillians chiselling freshly quarried stone into perfect cubes. Other teams load these heavy blocks into nets, fourteen to each, and then fix them by hooks and harness to the dragons who transport them across to the far side of the chasm.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>Teams of reptillians chisel the freshly</line>
+           <line>quarried stone into perfect cubes.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill10.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill10.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <p>Stealthily you make your approach to an area where full nets are awaiting transport. Using your Magnakai Discipline of Nexus, you open a sealed net and hide yourself inside among the blocks of stone before closing up the seal behind you. Minutes later you hear the beat of large wings and the frenzied chattering of the reptillian work crews as they struggle to affix the net to a dragon<ch.apos/>s harness. Then the wings beat faster and you feel yourself swinging free from the ground. Slowly the great dragon hauls its heavy cargo into the air. As it begins to level out, you peer down through a gap in the blocks to see the chasm looming nearer. Then you see a river of scarlet lava flowing along the base of this great divide, more than a mile deep. The dragon is approaching the far side when suddenly it dips its huge head and looks down at the cargo hanging below its belly. An icicle of fear stabs your heart when you see its ghoulish eye staring directly at the place where you are hiding.</p>
         <choice idref="sect149">If you possess Animal Mastery, and wish to use it, <link-text>turn to 149</link-text>.</choice>
         <choice idref="sect62">If you possess Kai-surge, and wish to use it, <link-text>turn to 62</link-text>.</choice>
@@ -2822,6 +2953,19 @@
 
       <data>
         <p>You draw your sword and sense at once that its mere physical presence within their throne hall is causing the K<ch.uuml/>nae a great deal of discomfort. You detect a surge of anxiety in the mental communication passing between them. The creature seated upon the left throne becomes agitated and begins to flail the foul air with its snaky limbs. Then it utters a sinister command to its partner and you hear the words echo in your mind: <thought>Slay him, Jantoor!</thought></p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>The sinister command echoes in your mind:</line>
+           <line><thought>Slay him, Jantoor!</thought></line>
+          </description>
+         </meta>
+         <instance class="html" src="ill11.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill11.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <p>The creature seated upon the right throne responds immediately. It raises its right limb and a gout of fire shoots from the palm of its leprous hand and comes speeding towards your chest.</p>
         <choice idref="sect130">If you wish to attempt to dodge this gout of fire, <link-text>turn to 130</link-text>.</choice>
         <choice idref="sect319">If instead you wish to try to deflect it with the blade of your sword, <link-text>turn to 319</link-text>.</choice>
@@ -2946,6 +3090,19 @@
 
       <data>
         <p>Before the dragon-gate stands an armoured colossus. Clad from horned helm to booted foot in glowing black plate armour, this mighty warrior stands a full arm<ch.apos/>s length taller than yourself and radiates an evil so intense that you feel your skin crawling with fear and revulsion. In his right hand he wields a broadsword carved with runes of power, and in his left a dagger that bleeds scarlet venom. He raises the sword and spears of blue lightning arc from the surrounding chasm wall to earth themselves upon the hilt of his unholy blade. You launch a psychic probe to test the mental defences of this god-like warrior and you are shocked when you fail to locate his Mindforce. You sense that this being is a living entity, and that he is the source of the power that has drawn you to this chasm, yet it is as if his mind has been erased. He has the psyche of an automaton<ch.emdash/>cold, brutal, and utterly unhuman. His mental state presents a formidable defence against your powerful psychic disciplines, rendering them near-useless. Yet where your psychic skills may fail, your agility and your mastery of conventional combat may prove especially effective against this hulking foe.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>The colossus has the psyche of an automaton:</line>
+           <line>cold, brutal, and utterly inhuman.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill12.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill12.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <choice idref="sect336">If you possess a Bow, and wish to use it, <link-text>turn to 336</link-text>.</choice>
         <choice idref="sect26">If you do not possess a Bow, or choose not to use it, <link-text>turn to 26</link-text>.</choice>
       </data>
@@ -3059,6 +3216,20 @@
 
       <data>
         <p>You raise Skarn-Ska and a crackling arc of electricity leaps from the tip of the blade to arc itself to the floor near Kekataag<ch.apos/>s feet. You sense that Naar is present in this chamber, but he will not materialize and show himself so long as your blade is unsheathed, for he fears that your magically-forged weapon could wound and weaken him. He is content to allow his mighty champion<ch.emdash/>Kekataag<ch.emdash/>the pleasure of slaying you on his behalf.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>A crackling arc of electricity leaps</line>
+           <line>from the tip of Skarn-Ska to</line>
+           <line>Kekataag<ch.apos/>s feet.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill13.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill13.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <p>Kekataag pounds the floor repeatedly with his armoured boot to demonstrate his eagerness to commence combat. In response, you give voice to your battle-cry<ch.emdash/><quote>For Sommerlund and the Kai!</quote> and launch yourself at your fell adversary in an attempt to land the first blow.</p>
         <combat><enemy>Kekataag the Avenger</enemy><enemy-attribute class="combatskill">60</enemy-attribute><enemy-attribute class="endurance">58</enemy-attribute></combat>
         <p>This enemy is an undead warrior. Your sword is especially effective against him and you may therefore add 3 to your <typ class="attribute">COMBAT SKILL</typ> for the duration of this combat.</p>
@@ -3137,6 +3308,19 @@
 
       <data>
         <p>From the depths of the void seven glowing shapes appear. At first they defy your direct gaze, as if these shadowy semblances can only be observed from a particular angle, but as steadily they draw closer so they solidify and their fearsome shape becomes plain to see. They appear as seven skeletal riders, each cloaked in a glowing robe and mounted upon a hellish, supernatural steed. They wield lances wreathed with white flames and their eyes are pinpoints of red fire.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>Seven skeletal riders appear,</line>
+           <line>mounted upon hellish steeds.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill14.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill14.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <choice idref="sect176">If you have ever visited Yanis<ch.emdash/>the Shining City<ch.emdash/>in a previous <cite>Lone Wolf</cite> adventure, <link-text>turn to 176</link-text>.</choice>
         <choice idref="sect47">If you have never visited this place, <link-text>turn to 47</link-text>.</choice>
       </data>
@@ -3406,6 +3590,19 @@
 
       <data>
         <p>In unison, the robed figures levitate several paces from the floor so that they are able to rest the pillow and phial upon the surface of the great marble table. Then silently they lower themselves back to the ground where they wait patiently for the Demoness to stir from her slumber. After several minutes she raises her head and you are shocked to see that her womanly face is hideously scarred and disfigured.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>You are shocked to see the Demoness<ch.apos/>s</line>
+           <line>hideously scarred and disfigured face.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill15.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill15.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <p><quote>Ah, my lieutenants,</quote> she says, yawning and stretching her arms wide, <quote>I see your work is complete. By Naar, I hunger for revenge upon Avarvae<ch.emdash/>I trust your elixir will make her pay for the torment she has wrought me.</quote></p>
         <p><quote>All is ready, supreme mistress,</quote> reply the robed ones, sycophantically. Clearly their answer pleases the Demoness. Her ruined face twists into the semblance of a smile as she picks up the phial and examines it closely. The glass bottle looks especially fragile and tiny as she holds it between her gigantic index finger and thumb.</p>
         <p><quote>Excellent!</quote> she murmurs. <quote>Soon she shall pay for what she did to me.</quote></p>
@@ -3739,6 +3936,19 @@
 
       <data>
         <p>From the depths of the void there speeds forth a colossal chariot, drawn by four supernatural lionesses and driven by an astral being who bears the semblance of a stunningly beautiful woman. Pale green beams of light issue from her eyes and wisps of silvery mist trail from her ebony tresses. She wields a whip that sparkles with magical fire and her magnificent carriage is escorted by one hundred shadowy outriders, each armed with a lance of cold flame.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>A colossal chariot speeds forth driven</line>
+           <line>by nine stunning astral beings.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill16.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill16.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <p>Your initial fears are compounded when your Kai senses detect that this being is Avarvae the Tormentress<ch.emdash/>the ruler of this vast domain. She brings her chariot to a halt and signals to her escorts, with a contemptuous flick of an elegant wrist, to rein in their steeds and wait for her return. Then she glides from her carriage upon a carpet of silvery mist and moves effortlessly towards you. As her gigantic face looms above, you see a sneer of disdain curl her cruel, voluptuous lips.</p>
         <choice idref="sect256">If you possess Shamath<ch.apos/>s Potion, <link-text>turn to 256</link-text>.</choice>
         <choice idref="sect146">If you do not possess this potion, <link-text>turn to 146</link-text>.</choice>
@@ -3823,6 +4033,19 @@
       <data>
         <p>From out of the dark earth surrounding your hiding place there arise monstrous shapes, alien beings long dead and buried yet cruelly denied an eternal rest. Muddy tatters of flesh hang from their pitted skeletal frames and from their skull-mouths writhe wormy tongues riddled with decay. Numb with shock, you watch as this ghoulish legion draws itself to the surface and comes shambling towards you, driven on by the hellish cries of the swooping fliers.</p>
         <p>Instinct and training trigger you to draw your weapon in readiness to meet this sickening corpse-horde, yet before they begin their attack, you are faced by a threat from another quarter. One of the flying creatures circling above is clutching in its claws a length of chain to which is attached a smoking bundle. Suddenly this creature dives out of the clouds and comes swooping down over the horde towards you. At the last minute it pulls up to avoid crashing into the stone slabs of the roof and, as it does so, it releases the chain. The bundle hits the soft ground once and then bounces through the narrow entrance of your hiding place.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>The ghoulish legion claws itself to the</line>
+           <line>surface, driven on by hellish cries.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill17.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill17.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <p>Instantly you are consumed by a cloud of acrid smoke that stings your eyes and threatens to close your throat. You sense at once that the smoke is a deadly poison, but fortunately your Magnakai Discipline of Nexus is sufficient to save you from a swift death.</p>
         <choice idref="sect337">If you possess Grand Nexus, <link-text>turn to 337</link-text>.</choice>
         <choice idref="sect229">If you do not possess this Grand Master Discipline, <link-text>turn to 229</link-text>.</choice>
@@ -3931,6 +4154,20 @@
       <data>
         <p>The net spills open as it touches the ground beside the yawning pit, enabling you quickly to disentangle yourself and unsheathe a weapon. Freed from the net but still trembling from the residual effects of psychic shock, you drop to one knee to steady yourself as you try to assess your situation. You look around for a way to escape from this alien settlement but all that you can see is an encircling wall of hideous humanoid mutants and ant-creatures. A tight wedge, comprising a dozen of these creatures, gibbers excitedly as it rushes forwards with frightening speed. You attempt to stand and meet their attack, but they hit you before you are fully upright and knock you headlong into the pit.</p>
         <p>Cursing your luck, you struggle to your feet amongst a deep carpet of bones and look up at the rim of the pit, some fifteen feet above. An unbroken line of ghastly faces are shrieking and staring back at you with unconcealed glee. Then suddenly the faces fall silent and a gap appears in their ranks to allow access to their hideous leader. You swallow hard to suppress the rising nausea you feel upon seeing this creature<ch.apos/>s grotesque features. Its body resembles a huge bloated bubble, endowed with a misshapen humanoid face<ch.emdash/>like that moulded by a child from wet clay. Its pustulant raw skin is studded with warts and tufts of rust-coloured hair. Chuckling maniacally, it drags itself around the edge of the pit by means of six claw-tipped tentacles and you note, with disgust, that it leaves a trail of steaming grey slime wherever it passes. Through its bulbous lower lip there hangs a chain to which is attached an amulet, seemingly crafted of iron. You magnify your vision and see that an inscription on this crude amulet bears the name <quote>Nza<ch.apos/>pok</quote>. Instantly you recall the text of the Tome of Darkness and realize that this creature must be Nza<ch.apos/>pok himself<ch.emdash/>the ruler of this territory within the Plane of Darkness.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>You realise that the hideous, semi-humanoid</line>
+           <line>before you is Nza<ch.apos/>pok himself<ch.emdash/>powerful</line>
+           <line>ruler of this territory.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill18.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill18.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <p>Nza<ch.apos/>pok opens his crooked mouth to reveal several rows of rotting jagged teeth. Then words of the Dark Tongue rumble from his gullet to send shivers down your spine. You suspect that he is commanding his followers to slay you and your worst fears are confirmed when you witness spears being passed overhead to the front ranks of his chaos-horde. The humanoids snatch them up in their twisted hands and raise them in readiness to hurl at you upon the word of command from their hellish leader.</p>
         <choice idref="sect43">If you possess Magi-magic, and wish to use it, <link-text>turn to 43</link-text>.</choice>
         <choice idref="sect184">If you possess Kai-alchemy, and wish to use it, <link-text>turn to 184</link-text>.</choice>
@@ -4065,6 +4302,19 @@
       <data>
         <p>As you are brought closer to the settlement, you see that the pale humanoids look chillingly similar to the horde of undead beings which attempted to slay you at the stone shelter. This slobbering, shambling crowd are a repulsive spectacle, yet they pale in comparison to the terrible sight of their companion ant creatures.</p>
         <p>An icy shiver runs through your body the moment you catch your first clear view of these huge insectoids. They possess long spindly limbs and shiny shell-like bodies, and each one has a ghoulish head implanted with composite eyes. As you descend into their midst they chitter excitedly and fix you with a cruel and hungry stare.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>The pale humanoids fix you with</line>
+           <line>cruel and hungry stares.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill19.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill19.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <p>The net comes to within ten feet of the ground and you brace yourself against the ropes in readiness to attempt an escape the moment it touches down. You reach for your weapon, but as your hand closes around the hilt you are hit by a sudden massive wave of psychic energy.</p>
         <choice idref="sect21">If you possess Kai-screen, <link-text>turn to 21</link-text>.</choice>
         <choice idref="sect118">If you do not possess this Discipline, <link-text>turn to 118</link-text>.</choice>
@@ -4253,6 +4503,19 @@
 
       <data>
         <p>You dig your heels into the soft ground and unsheathe your weapon in readiness to meet this angry swarm. The insects launch a swift attack, their swarm-cloud dispersing and reforming into a long line as they come diving towards your head. You strike out at the front of the line and cut down a score of their number, but you are forced to duck to avoid their whirling tail-blades as the remaining insects flash past on either side of your face.</p>
+
+        <illustration class="float">
+         <meta>
+          <creator>Brian Williams</creator>
+          <description>
+           <line>The swarm-cloud of insects form into</line>
+           <line>a long line, directed at your head.</line>
+          </description>
+         </meta>
+         <instance class="html" src="ill20.gif" width="386" height="xxx"></instance>
+         <instance class="pdf" src="ill20.pdf" width="386" height="xxx"></instance>
+        </illustration>
+
         <combat><enemy>Muntaag swarm</enemy><enemy-attribute class="combatskill">47</enemy-attribute><enemy-attribute class="endurance">40</enemy-attribute></combat>
         <p>These insects are especially susceptible to all forms of psychic attack; double all appropriate bonuses.</p>
         <choice idref="sect285">If you win this combat, <link-text>turn to 285</link-text>.</choice>
@@ -5165,7 +5428,9 @@
 
        <p>(<a idref="kaiwisdm">Grand Master<ch.apos/>s Wisdom</a>) Replaced each occurrence of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
 
+       <p>(<a idref="sect4">4</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect6">6</a>) Replaced <quote>cries, <ch.lsquot/>use</quote> with <quote>cries. <ch.lsquot/>Use</quote>.</p>
+
        <p>(<a idref="sect8">8</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect11">11</a>) Replaced <quote>Brotherhood spell<ch.emdash/>Net<ch.emdash/>and</quote> with <quote>Brotherhood Spell <spell>Net</spell> and</quote>.</p>
        <p>(<a idref="sect12">12</a>) Replaced <quote>force field</quote> with <quote>force-field</quote>.</p>
@@ -5176,11 +5441,13 @@
        <p>(<a idref="sect26">26</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect27">27</a>) Replaced <quote>artifacts</quote> with <quote>artefacts</quote>.</p>
        <p>(<a idref="sect28">28</a>) Replaced <quote>ribcage</quote> with <quote>rib cage</quote>. Replaced <quote>slayed</quote> with <quote>slain</quote>. Replaced <quote>semi-circular</quote> with <quote>semicircular</quote>. Replaced <quote>Cadak and</quote> with <quote>Cadak, and</quote>.</p>
+       <p>(<a idref="sect32">32</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect33">33</a>) Replaced <quote>Kai monastery</quote> with <quote>Kai Monastery</quote>.</p>
        <p>(<a idref="sect35">35</a>) Replaced <quote>the Skarn-Ska</quote> with <quote>Skarn-Ska</quote>.</p>
        <p>(<a idref="sect38">38</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>. Replaced <quote>Animal Mastery and</quote> with <quote>Animal Mastery, and</quote>.</p>
        <p>(<a idref="sect40">40</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>. Replaced both occurrences of <quote>force field</quote> with <quote>force-field</quote>.</p>
        <p>(<a idref="sect43">43</a>) Replaced <quote>Old Kingdom spell<ch.emdash/>Shield<ch.emdash/>as</quote> with <quote>Old Kingdom Spell <spell>Shield</spell> as</quote>. Replaced <quote>Grand Discipline</quote> with <quote>Grand Master Discipline</quote>.</p>
+       <p>(<a idref="sect46">46</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect49">49</a>) Replaced <quote>grand mastery skills</quote> with <quote>Grand Master skills</quote>. Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect52">52</a>) Replaced <quote>force field</quote> with <quote>force-field</quote>. Replaced <quote>abyss, <ch.lsquot/>Follow</quote> with <quote>abyss. <ch.lsquot/>Follow</quote>.</p>
        <p>(<a idref="sect53">53</a>) Deleted <quote> which you keep in your backpack</quote>. Replaced <quote>pictures or</quote> with <quote>pictures, or</quote>.</p>
@@ -5189,10 +5456,10 @@
        <p>(<a idref="sect60">60</a>) Replaced <quote>artifact</quote> with <quote>artefact</quote>.</p>
        <p>(<a idref="sect61">61</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect63">63</a>) Replaced <quote>rainswept</quote> with <quote>rain-swept</quote>.</p>
-       <p>(<a idref="sect64">64</a>) Replaced <quote>artifacts</quote> with <quote>artefacts</quote>.</p>
+       <p>(<a idref="sect64">64</a>) Replaced <quote>artifacts</quote> with <quote>artefacts</quote>. Replaced <quote>explode from</quote> with <quote>shoot from</quote> in the illustration<ch.apos/>s caption. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect72">72</a>) Replaced <quote>Grand Mastery skills</quote> with <quote>Grand Mastery</quote>.</p>
        <p>(<a idref="sect73">73</a>) Replaced <quote>Brotherhood spell<ch.emdash/>Teleport<ch.emdash/>and</quote> with <quote>Brotherhood Spell <spell>Teleport</spell> and</quote>.</p>
-       <p>(<a idref="sect74">74</a>) Replaced <quote>sommersaulting</quote> with <quote>somersaulting</quote>.</p>
+       <p>(<a idref="sect74">74</a>) Replaced <quote>sommersaulting</quote> with <quote>somersaulting</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect77">77</a>) Replaced <quote>artifact</quote> with <quote>artefact</quote>.</p>
        <p>(<a idref="sect78">78</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>. Replaced <quote>Telegnosis and</quote> with <quote>Telegnosis, and</quote>.</p>
        <p>(<a idref="sect79">79</a>) Replaced <quote>The spirit of</quote> with <quote>The spirits of</quote>. Replaced <quote>cener druids</quote> with <quote>Cener Druids</quote>. Replaced <quote>acolytes of Vashna</quote> with <quote>Acolytes of Vashna</quote>. Replaced <quote>Vashna, Nadziranim</quote> with <quote>Vashna, and Nadziranim</quote>.</p>
@@ -5201,19 +5468,19 @@
        <p>(<a idref="sect85">85</a>) Replaced <quote>dark, jungle</quote> with <quote>dark jungle</quote>.</p>
        <p>(<a idref="sect87">87</a>) Replaced <quote>counterspell</quote> with <quote><spell>Counterspell</spell></quote>.</p>
        <p>(<a idref="sect89">89</a>) Deleted <quote> which you keep in your backpack</quote>. Replaced <quote>pictures or</quote> with <quote>pictures, or</quote>.</p>
-       <p>(<a idref="sect97">97</a>) Replaced <quote>Kai Screen</quote> with <quote>Kai-screen</quote>.</p>
+       <p>(<a idref="sect97">97</a>) Replaced <quote>Kai Screen</quote> with <quote>Kai-screen</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect98">98</a>) Replaced <quote><ch.emdash/>Kai!<ch.emdash/></quote> with <quote><spell>Kai</spell>!</quote>.</p>
        <p>(<a idref="sect99">99</a>) Replaced <quote>take Avarvae</quote> with <quote>takes Avarvae</quote>.</p>
        <p>(<a idref="sect106">106</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect108">108</a>) Replaced <quote>force field</quote> with <quote>force-field</quote>. Replaced <quote>abyss, <ch.lsquot/>Follow</quote> with <quote>abyss. <ch.lsquot/>Follow</quote>.</p>
-       <p>(<a idref="sect111">111</a>) Replaced <quote>Telegnosis and</quote> with <quote>Telegnosis, and</quote>. Replaced <quote>out-distance</quote> with <quote>outdistance</quote>.</p>
+       <p>(<a idref="sect111">111</a>) Replaced <quote>Telegnosis and</quote> with <quote>Telegnosis, and</quote>. Replaced <quote>out-distance</quote> with <quote>outdistance</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect116">116</a>) Replaced <quote>ante-chamber</quote> with <quote>antechamber</quote>.</p>
        <p>(<a idref="sect118">118</a>) Replaced <quote>mind-force</quote> with <quote>Mindforce</quote>.</p>
        <p>(<a idref="sect120">120</a>) Replaced <quote>Telegnosis and</quote> with <quote>Telegnosis, and</quote>. Replaced <quote>out-distance</quote> with <quote>outdistance</quote>.</p>
        <p>(<a idref="sect122">122</a>) Replaced <quote>Kai-alchemy but</quote> with <quote>Kai-alchemy, but</quote>.</p>
        <p>(<a idref="sect123">123</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect125">125</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
-       <p>(<a idref="sect127">127</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
+       <p>(<a idref="sect127">127</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect134">134</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect135">135</a>) Replaced <quote>Brotherhood spell<ch.emdash/>Lightning Hand.</quote> with <quote>Brotherhood Spell <spell>Lightning Hand</spell>.</quote>.</p>
        <p>(<a idref="sect141">141</a>) Replaced <quote>Kai-alchemy but</quote> with <quote>Kai-alchemy, but</quote>.</p>
@@ -5225,26 +5492,28 @@
        <p>(<a idref="sect167">167</a>) Replaced <quote>Kai Blast attack</quote> with <quote>Kai-blast</quote>.</p>
        <p>(<a idref="sect168">168</a>) Replaced <quote>shock-wave</quote> with <quote>shock wave</quote>.</p>
        <p>(<a idref="sect169">169</a>) Replaced <quote>counterspell</quote> with <quote><spell>Counterspell</spell></quote>.</p>
-       <p>(<a idref="sect170">170</a>) Replaced <quote>Kai-screen but</quote> with <quote>Kai-screen, but</quote>.</p>
+       <p>(<a idref="sect170">170</a>) Replaced <quote>Kai-screen but</quote> with <quote>Kai-screen, but</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect171">171</a>) Replaced <quote>jet black</quote> with <quote>jet-black</quote>.</p>
+       <p>(<a idref="sect179">179</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect180">180</a>) Deleted <quote> which you keep in your backpack</quote>. Replaced <quote>pictures or</quote> with <quote>pictures, or</quote>.</p>
        <p>(<a idref="sect182">182</a>) Replaced <quote>Old Kingdom spell<ch.emdash/>Invisible Fist<ch.emdash/>and</quote> with <quote>Old Kingdom Spell <spell>Invisible Fist</spell> and</quote>.</p>
        <p>(<a idref="sect184">184</a>) Replaced <quote>Brotherhood spell<ch.emdash/>Invisible Shield<ch.emdash/>as</quote> with <quote>Brotherhood Spell <spell>Invisible Shield</spell> as</quote>. Replaced <quote>Grand Discipline</quote> with <quote>Grand Master Discipline</quote>.</p>
        <p>(<a idref="sect185">185</a>) Replaced <quote>artifacts</quote> with <quote>artefacts</quote>.</p>
        <p>(<a idref="sect187">187</a>) Replaced <quote>mind-force</quote> with <quote>Mindforce</quote>.</p>
-       <p>(<a idref="sect188">188</a>) Removed quote marks from thought-speech.</p>
+       <p>(<a idref="sect188">188</a>) Removed quote marks from thought-speech in both the main text and in the illustration<ch.apos/>s caption. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect189">189</a>) Replaced <quote>slayed</quote> with <quote>slain</quote>.</p>
        <p>(<a idref="sect192">192</a>) Replaced <quote>shock-wave</quote> with <quote>shock wave</quote>.</p>
-       <p>(<a idref="sect200">200</a>) Replaced <quote>mindforce</quote> with <quote>Mindforce</quote>. Replaced <quote>Bow and</quote> with <quote>Bow, and</quote>.</p>
+       <p>(<a idref="sect200">200</a>) Replaced <quote>mindforce</quote> with <quote>Mindforce</quote>. Replaced <quote>Bow and</quote> with <quote>Bow, and</quote>. Replaced <quote>brutal and</quote> with <quote>brutal, and</quote> in the text and in the illustration<ch.apos/>s caption. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect201">201</a>) Replaced <quote>ante-chamber</quote> with <quote>antechamber</quote>.</p>
        <p>(<a idref="sect202">202</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect207">207</a>) Replaced <quote>The spirit of</quote> with <quote>The spirits of</quote>. Replaced <quote>Cener druids</quote> with <quote>Cener Druids</quote>. Replaced <quote>acolytes of Vashna</quote> with <quote>Acolytes of Vashna</quote>. Replaced <quote>Vashna, Nadziranim</quote> with <quote>Vashna, and Nadziranim</quote>.</p>
        <p>(<a idref="sect208">208</a>) Replaced <quote>Brotherhood spell<ch.emdash/>Counterspell<ch.emdash/>upon</quote> with <quote>Brotherhood Spell <spell>Counterspell</spell> upon</quote>.</p>
        <p>(<a idref="sect209">209</a>) Replaced <quote>artifact</quote> with <quote>artefact</quote>.</p>
+       <p>(<a idref="sect211">211</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect215">215</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect216">216</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>. Replaced <quote>Telegnosis and</quote> with <quote>Telegnosis, and</quote>.</p>
        <p>(<a idref="sect217">217</a>) Replaced <quote>ceiling, then</quote> with <quote>ceiling. Then</quote>.</p>
-       <p>(<a idref="sect218">218</a>) Replaced <quote>pin-points</quote> with <quote>pinpoints</quote>.</p>
+       <p>(<a idref="sect218">218</a>) Replaced <quote>pin-points</quote> with <quote>pinpoints</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect219">219</a>) Replaced <quote>mind-force</quote> with <quote>Mindforce</quote>.</p>
        <p>(<a idref="sect220">220</a>) Replaced <quote>artifact</quote> with <quote>artefact</quote>.</p>
        <p>(<a idref="sect222">222</a>) Replaced <quote>Telegnosis and</quote> with <quote>Telegnosis, and</quote>. Replaced <quote>pin-point</quote> with <quote>pinpoint</quote>.</p>
@@ -5252,7 +5521,7 @@
        <p>(<a idref="sect225">225</a>) Replaced <quote>take Avarvae</quote> with <quote>takes Avarvae</quote>.</p>
        <p>(<a idref="sect227">227</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect228">228</a>) Replaced <quote>torsoes</quote> with <quote>torsos</quote>.</p>
-       <p>(<a idref="sect243">243</a>) Replaced <quote>Shamath, <ch.lsquot/>it</quote> with <quote>Shamath. <ch.lsquot/>It</quote>.</p>
+       <p>(<a idref="sect243">243</a>) Replaced <quote>Shamath, <ch.lsquot/>it</quote> with <quote>Shamath. <ch.lsquot/>It</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect245">245</a>) Replaced <quote>Brotherhood spell<ch.emdash/>Teleport<ch.emdash/>and</quote> with <quote>Brotherhood Spell <spell>Teleport</spell> and</quote> and <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>.</p>
        <p>(<a idref="sect246">246</a>) Replaced <quote>spell<ch.emdash/>Teleport<ch.emdash/>and</quote> with <quote>spell <spell>Teleport</spell> and</quote>. Replaced <quote>Telegnosis and</quote> with <quote>Telegnosis, and</quote>. Replaced <quote>out-distance</quote> with <quote>outdistance</quote>.</p>
        <p>(<a idref="sect247">247</a>) Replaced <quote>Kai blast</quote> with <quote>Kai-blast</quote>.</p>
@@ -5264,23 +5533,26 @@
        <p>(<a idref="sect261">261</a>) Replaced both occurrences of <quote>eg,</quote> with <quote>e.g.</quote>.</p>
        <p>(<a idref="sect262">262</a>) Replaced <quote>slayed</quote> with <quote>slain</quote>.</p>
        <p>(<a idref="sect266">266</a>) Replaced <quote>Kai-alchemy but</quote> with <quote>Kai-alchemy, but</quote>.</p>
-       <p>(<a idref="sect272">272</a>) Replaced <quote>the Shamath Potion</quote> with <quote>Shamath<ch.apos/>s Potion</quote>.</p>
+       <p>(<a idref="sect272">272</a>) Replaced <quote>the Shamath Potion</quote> with <quote>Shamath<ch.apos/>s Potion</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect273">273</a>) Removed quote marks from thought-speech.</p>
        <p>(<a idref="sect276">276</a>) Replaced <quote>Grand Mastery skills</quote> with <quote>Grand Mastery</quote>.</p>
        <p>(<a idref="sect279">279</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
-       <p>(<a idref="sect281">281</a>) Replaced <quote>Brotherhood spell<ch.emdash/>Vigour<ch.emdash/>and</quote> with <quote>Brotherhood Spell <spell>Vigour</spell> and</quote>.</p>
+       <p>(<a idref="sect281">281</a>) Replaced <quote>Brotherhood spell<ch.emdash/>Vigour<ch.emdash/>and</quote> with <quote>Brotherhood Spell <spell>Vigour</spell> and</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect283">283</a>) Replaced <quote>Brotherhood spell<ch.emdash/>Levitation<ch.emdash/>and</quote> with <quote>Brotherhood Spell <spell>Levitation</spell> and</quote>.</p>
+       <p>(<a idref="sect290">290</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect291">291</a>) Replaced <quote>Telegnosis and</quote> with <quote>Telegnosis, and</quote>.</p>
        <p>(<a idref="sect294">294</a>) Replaced <quote><ch.emdash/>Gloar!<ch.emdash/></quote> with <quote><spell>Gloar</spell>!</quote>.</p>
        <p>(<a idref="sect296">296</a>) Deleted <quote> which you keep in your Backpack</quote>. Replaced <quote>pictures or</quote> with <quote>pictures, or</quote>.</p>
        <p>(<a idref="sect297">297</a>) Replaced both occurrences of <quote>special items</quote> with <quote>Special Items</quote>.</p>
        <p>(<a idref="sect298">298</a>) Replaced <quote>Brotherhood spell<ch.emdash/>Teleport<ch.emdash/>as</quote> with <quote>Brotherhood Spell <spell>Teleport</spell> as</quote>.</p>
+       <p>(<a idref="sect301">301</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect302">302</a>) Replaced <quote>echos</quote> with <quote>echoes</quote>.</p>
        <p>(<a idref="sect306">306</a>) Removed quote marks from thought-speech.</p>
        <p>(<a idref="sect307">307</a>) Replaced <quote>artifacts</quote> with <quote>artefacts</quote>.</p>
        <p>(<a idref="sect311">311</a>) Replaced <quote>rib-cage</quote> with <quote>rib cage</quote>.</p>
        <p>(<a idref="sect313">313</a>) Replaced <quote>take Avarvae</quote> with <quote>takes Avarvae</quote>.</p>
        <p>(<a idref="sect316">316</a>) Replaced <quote>Telegnosis and</quote> with <quote>Telegnosis, and</quote>.</p>
+       <p>(<a idref="sect318">318</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect320">320</a>) Replaced <quote>ribcage</quote> with <quote>rib cage</quote>.</p>
        <p>(<a idref="sect321">321</a>) Replaced <quote>Bow and</quote> with <quote>Bow, and</quote>. Replaced <quote>your choose</quote> with <quote>you choose</quote>.</p>
        <p>(<a idref="sect326">326</a>) Replaced <quote>Brotherhood spell<ch.emdash/>Net<ch.emdash/>and</quote> with <quote>Brotherhood Spell <spell>Net</spell> and</quote>.</p>
@@ -5310,7 +5582,78 @@
 
    </section>
 
-   <!-- FIXME Backmatter - Table of Illustrations -->
+   <section class="backmatter" id="illstrat">
+   <meta><title>Table of Illustrations</title></meta>
+
+   <data>
+    <p>The following is a list of all Sections containing illustrations found in this book:</p>
+
+    <section class="backmatter" id="primill">
+     <meta><title>Primary Illustrations</title></meta>
+
+     <data>
+      <ul class="unbulleted">
+       <li>Illustration I (<a idref="sect4">Section 4</a>)</li>
+       <li>Illustration II (<a idref="sect32">Section 32</a>)</li>
+       <li>Illustration III (<a idref="sect46">Section 46</a>)</li>
+       <li>Illustration IV (<a idref="sect64">Section 64</a>)</li>
+       <li>Illustration V (<a idref="sect74">Section 74</a>)</li>
+       <li>Illustration VI (<a idref="sect97">Section 97</a>)</li>
+       <li>Illustration VII (<a idref="sect111">Section 111</a>)</li>
+       <li>Illustration VIII (<a idref="sect127">Section 127</a>)</li>
+       <li>Illustration IX (<a idref="sect170">Section 170</a>)</li>
+       <li>Illustration X (<a idref="sect179">Section 179</a>)</li>
+       <li>Illustration XI (<a idref="sect188">Section 188</a>)</li>
+       <li>Illustration XII (<a idref="sect200">Section 200</a>)</li>
+       <li>Illustration XIII (<a idref="sect211">Section 211</a>)</li>
+       <li>Illustration XIV (<a idref="sect218">Section 218</a>)</li>
+       <li>Illustration XV (<a idref="sect243">Section 243</a>)</li>
+       <li>Illustration XVI (<a idref="sect272">Section 272</a>)</li>
+       <li>Illustration XVII (<a idref="sect281">Section 281</a>)</li>
+       <li>Illustration XVIII (<a idref="sect290">Section 290</a>)</li>
+       <li>Illustration XIX (<a idref="sect301">Section 301</a>)</li>
+       <li>Illustration XX (<a idref="sect318">Section 318</a>)</li>
+       <li><a idref="map">The Known Planes of Existence</a></li>
+       <li><a idref="action">Action Chart</a></li>
+      </ul>
+     </data>
+    </section>
+
+    <section class="backmatter" id="secill">
+     <meta><title>Secondary Illustrations</title></meta>
+
+     <data>
+      <ul class="unbulleted">
+       <!--<li><a idref="equipmnt">Equipment</a></li>
+       <li><a idref="discplnz">Grand Master Disciplines</a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>
+       <li><a idref="sect">Section </a></li>  -->
+      </ul>
+     </data>
+    </section>
+
+    </data>
+   </section>
 
    &inclusion.project.aon.license;
 
