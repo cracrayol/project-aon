@@ -159,7 +159,7 @@
 
     <data>
      <p>You keep a record of your adventure on the <a idref="action">Action Chart</a>.</p>
-     <p>During your training as a Kai Master you have developed fighting prowess<ch.emdash/><typ class="attribute">COMBAT SKILL</typ> and physical stamina<ch.emdash/><typ class="attribute">ENDURANCE</typ>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it on to the <a idref="random">Random Number Table</a>. If you pick 0 it counts as zero.</p>
+     <p>During your training as a Kai Master you have developed fighting prowess<ch.emdash/><typ class="attribute">COMBAT SKILL</typ> and physical stamina<ch.emdash/><typ class="attribute">ENDURANCE</typ>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it <!--ERRTAG-RE-8921-->onto<!--/ERRTAG-RE-8921--> the <a idref="random">Random Number Table</a>. If you pick 0 it counts as zero.</p>
      <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 10 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a>. (i.e. if your pencil fell on the number 4 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> of 14.) When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore very desirable.</p>
      <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 20 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a>. (i.e. if your pencil fell on the number 6 on the <a idref="random">Random Number Table</a> you would have 26 <typ class="attribute">ENDURANCE</typ> points.)</p>
      <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero or below, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never rise above the number you started with.</p>
@@ -705,7 +705,7 @@
       <data>
        <p>A shrill cockcrow heralds the break of day. By the time you have dressed and gathered together your equipment, Cyrilus is waiting for you in the courtyard below.</p>
        <p><quote>A glorious day,</quote> he says cheerfully, pointing up at the cloudless sky with his slender oaken staff. <quote>We<ch.apos/>ll have no difficulty reaching the Halfway Inn by nightfall.</quote></p>
-       <p>You bid farewell to the innkeeper and his son and urge your horses out on to the narrow street that leads to the west gatehouse. By mid-morning you are riding across gentle hills crested with yellow-leaved trees. The hilltops are shrouded with mist, but occasional rays of sunshine break through to lighten the lush green fields below. Time passes swiftly as Cyrilus recounts the histories and legends of the area. You learn that the rich and fertile kingdoms bordering the River Storn have a wild and turbulent past, swept by wars, divided by empires, split by national rivalries and the ambitions of petty princes who prey upon one another and the rest of the populace. Lyris is embroiled in war with Magador, Delden with Salony and Salony with Slovia. Battles are fought, lives are lost and the land is pillaged with grim regularity<ch.emdash/>only the mercenaries and the crows seem to prosper from the continual conflicts.</p>
+       <p>You bid farewell to the innkeeper and his son and urge your horses out <!--ERRTAG-RE-50994-->onto<!--/ERRTAG-RE-50994--> the narrow street that leads to the west gatehouse. By mid-morning you are riding across gentle hills crested with yellow-leaved trees. The hilltops are shrouded with mist, but occasional rays of sunshine break through to lighten the lush green fields below. Time passes swiftly as Cyrilus recounts the histories and legends of the area. You learn that the rich and fertile kingdoms bordering the River Storn have a wild and turbulent past, swept by wars, divided by empires, split by national rivalries and the ambitions of petty princes who prey upon one another and the rest of the populace. Lyris is embroiled in war with Magador, Delden with Salony and Salony with Slovia. Battles are fought, lives are lost and the land is pillaged with grim regularity<ch.emdash/>only the mercenaries and the crows seem to prosper from the continual conflicts.</p>
 
        <illustration class="inline">
         <meta>
@@ -794,7 +794,7 @@
       </meta>
 
       <data>
-       <p>A jovial man, with long strands of hair hanging down from the point of his chin, lies in a hammock suspended at the end of the gangplank. One eye pops open as you walk on to the deck and, as quick as a flash, he jumps down and produces a fistful of tickets from his breast pocket.</p>
+       <p>A jovial man, with long strands of hair hanging down from the point of his chin, lies in a hammock suspended at the end of the gangplank. One eye pops open as you walk <!--ERRTAG-RE-57316-->onto<!--/ERRTAG-RE-57316--> the deck and, as quick as a flash, he jumps down and produces a fistful of tickets from his breast pocket.</p>
        <p><quote>Welcome aboard the <cite>Kazonara</cite>,</quote> he says excitedly, <quote>the best riverboat that ever sailed the Storn.</quote> You glance back at the board and note the prices: 10 Gold Crowns to Luyen, 15 to Rhem and 20 to Eula.</p>
        <p><quote>We leave at midnight, sir, so<ch.apos/>s you best be a<ch.apos/>boarding your horse in the hold without delay.</quote> Once you have decided which Ticket you wish to buy, pay the man and erase the Gold Crowns from your <a idref="action">Action Chart</a>. Mark the Ticket as a Special Item that you keep in your pocket.</p>
        <choice idref="sect82"><link-text>Turn to 82</link-text>.</choice>
@@ -831,7 +831,7 @@
       </meta>
 
       <data>
-       <p>The arrow thuds into its right leg causing it to shriek and lose its footing. Your quick thinking has bought you enough time to unsheathe a hand weapon and attack the monster.</p>
+       <p>The <!--ERRTAG-RE-59562-->Arrow<!--/ERRTAG-RE-59562--> thuds into its right leg causing it to shriek and lose its footing. Your quick thinking has bought you enough time to unsheathe a hand weapon and attack the monster.</p>
        <combat>
         <enemy>Yawshath</enemy>
         <enemy-attribute class="combatskill">22</enemy-attribute>
@@ -849,11 +849,17 @@
        <title>13</title>
       </meta>
 
+      <footnotes>
+       <footnote id="sect13-1-foot" idref="sect13-1">
+        <p>You can also turn to 182 if you have a Bow but wish to flee.</p>
+       </footnote>
+      </footnotes>
+
       <data>
        <p>Expertly you move through the undergrowth without making a sound until you come to the edge of a small, rocky clearing. A group of ten hooded men stand in a circle around an altar stone. Their leader, a tall thin man wearing a hideous mask of green glass, spins a golden rod around the head of a gigantic toad-like creature spread-eagled on the altar. Lightning writhes like a sparking serpent around the creature<ch.apos/>s body, and as the chanting rises in pitch, the beast<ch.apos/>s body floats upwards, hovering in mid-air a few feet above the altar.</p>
        <p>Suddenly, the leader shrieks with anger and turns in your direction. He has somehow detected your presence, and you feel his blazing fury. He points the golden rod towards you, and a charge of energy snakes through the air.</p>
-       <choice idref="sect56">If you have a bow and wish to use it, <link-text>turn to 56</link-text>.</choice>
-       <choice idref="sect182">If you do not have a bow and wish to flee, <link-text>turn to 182</link-text>.</choice>
+       <choice idref="sect56">If you have a <!--ERRTAG-RA-61451-->Bow<!--/ERRTAG-RA-61451--> and wish to use it, <link-text>turn to 56</link-text>.</choice>
+       <choice idref="sect182">If you do not have a <!--ERRTAG-RA-61451-->Bow<!--/ERRTAG-RA-61451--> and wish to flee,<footref id="sect13-1" idref="sect13-1-foot"/> <link-text>turn to 182</link-text>.</choice>
        <choice idref="sect295">If you wish to draw your weapon and prepare for combat, <link-text>turn to 295</link-text>.</choice>
       </data>
      </section>
@@ -956,7 +962,7 @@
       </meta>
 
       <data>
-       <p>Your ambush catches the enemy by surprise, making them panic and fly in all directions. At such close range your arrow pierces the chainmailed chest of the rider holding Cyrilus<ch.apos/> horse and kills him instantly. As he tumbles to the ground, you break cover, exploding through the bushes and scooping the reins from the dead man<ch.apos/>s horse. Angry shouts echo in your wake as you take off along the highway with the wizard and his horse by your side.</p>
+       <p>Your ambush catches the enemy by surprise, making them panic and fly in all directions. At such close range your <!--ERRTAG-RE-68473-->Arrow<!--/ERRTAG-RE-68473--> pierces the chainmailed chest of the rider holding Cyrilus<ch.apos/> horse and kills him instantly. As he tumbles to the ground, you break cover, exploding through the bushes and scooping the reins from the dead man<ch.apos/>s horse. Angry shouts echo in your wake as you take off along the highway with the wizard and his horse by your side.</p>
        <choice idref="sect188"><link-text>Turn to 188</link-text>.</choice>
       </data>
      </section>
@@ -993,7 +999,7 @@
       </meta>
 
       <data>
-       <p>Your arrow whistles past his shoulder and buries itself in another man<ch.apos/>s leg as he tries to jump from the ship<ch.apos/>s rail. If you have another weapon you must unsheathe it, for the pirate is still advancing.</p>
+       <p>Your <!--ERRTAG-RE-70977-->Arrow<!--/ERRTAG-RE-70977--> whistles past his shoulder and buries itself in another man<ch.apos/>s leg as he tries to jump from the ship<ch.apos/>s rail. If you have another weapon you must unsheathe it, for the pirate is still advancing.</p>
        <choice idref="sect92"><link-text>Turn to 92</link-text>.</choice>
       </data>
      </section>
@@ -1004,7 +1010,7 @@
       </meta>
 
       <data>
-       <p>The chapel has lain derelict for many years, exposed to the elements. Very little has survived. In one corner you discover a gaping hole that opens on to another room below. Its floor is covered with large, shiny black puddles, and the overpowering stench of mould and decay is carried upwards by a howling draught. A rat sits on the remains of a corpse, staring up at you in surprise, the dull green light of the chapel reflecting in its peppercorn eyes. As you become accustomed to the gloom, you realize that this room is, in fact, full of corpses: the unfortunate victims of the Yawshath. Then your gaze is drawn to a gleaming bronze warhammer that lies across the chest of a corpse. Everything below is covered in mould except for this weapon which still shines as if it were brand new.</p>
+       <p>The chapel has lain derelict for many years, exposed to the elements. Very little has survived. In one corner you discover a gaping hole that opens <!--ERRTAG-RE-71831-->onto<!--/ERRTAG-RE-71831--> another room below. Its floor is covered with large, shiny black puddles, and the overpowering stench of mould and decay is carried upwards by a howling draught. A rat sits on the remains of a corpse, staring up at you in surprise, the dull green light of the chapel reflecting in its peppercorn eyes. As you become accustomed to the gloom, you realize that this room is, in fact, full of corpses: the unfortunate victims of the Yawshath. Then your gaze is drawn to a gleaming bronze warhammer that lies across the chest of a corpse. Everything below is covered in mould except for this weapon which still shines as if it were brand new.</p>
        <choice idref="sect276">If you have the Magnakai Discipline of Nexus, <link-text>turn to 276</link-text>.</choice>
        <choice idref="sect101">If you have a rope, you can attempt to retrieve the warhammer by <link-text>turning to 101</link-text>.</choice>
        <choice idref="sect338">If you would rather ignore the weapon and return to Cyrilus, <link-text>turn to 338</link-text>.</choice>
@@ -1058,7 +1064,7 @@
         <enemy-attribute class="combatskill">30</enemy-attribute>
         <enemy-attribute class="target">50</enemy-attribute>
        </combat>
-       <p>The tournament final is played out using the normal rules for combat.<a id="sect26-1" idref="sect26-1-foot" class="footnote"/> The only difference is that you begin with 50 <typ class="attribute">ENDURANCE</typ> or <typ class="attribute">TARGET</typ> points. Any <typ class="attribute">ENDURANCE</typ> points that you may lose are deducted from these <typ class="attribute">TARGET</typ> points (your normal <typ class="attribute">ENDURANCE</typ> score remaining unchanged throughout the contest). The first one to lose all 50 of his <typ class="attribute">TARGET</typ> points loses the tournament. (You need not erase any arrows from your <a idref="action">Action Chart</a> during this tournament.)<a id="sect26-2" idref="sect26-2-foot" class="footnote"/></p>
+       <p>The tournament final is played out using the normal rules for combat.<a id="sect26-1" idref="sect26-1-foot" class="footnote"/> The only difference is that you begin with 50 <typ class="attribute">ENDURANCE</typ> or <typ class="attribute">TARGET</typ> points. Any <typ class="attribute">ENDURANCE</typ> points that you may lose are deducted from these <typ class="attribute">TARGET</typ> points (your normal <typ class="attribute">ENDURANCE</typ> score remaining unchanged throughout the contest). The first one to lose all 50 of his <typ class="attribute">TARGET</typ> points loses the tournament. (You need not erase any <!--ERRTAG-RE-76324-->Arrows<!--/ERRTAG-RE-76324--> from your <a idref="action">Action Chart</a> during this tournament.)<a id="sect26-2" idref="sect26-2-foot" class="footnote"/></p>
        <choice idref="sect183">If you are the first to lose all 50 <typ class="attribute">TARGET</typ> points, <link-text>turn to 183</link-text>.</choice>
        <choice idref="sect252">If Altan is the first to lose all 50 <typ class="attribute">TARGET</typ> points, <link-text>turn to 252</link-text>.</choice>
       </data>
@@ -1302,10 +1308,10 @@
       </meta>
 
       <data>
-       <p>It is Altan. Before you can explain what has happened, he shakes your hand and congratulates you on your prowess with a bow, for in spite of his defeat, he is eager to show that he bears no grudge. You thank him and go on to explain your sorry predicament.</p>
-       <p><quote>I think we can make a deal,</quote> he says, his eyes glancing at your silver bow.</p>
+       <p>It is Altan. Before you can explain what has happened, he shakes your hand and congratulates you on your <!--ERRTAG-RE-92339-->prowess with a Bow<!--/ERRTAG-RE-92339-->, for in spite of his defeat, he is eager to show that he bears no grudge. You thank him and go on to explain your sorry predicament.</p>
+       <p><quote>I think we can make a deal,</quote> he says, his eyes glancing at your <!--ERRTAG-RA-93045-->Silver Bow<!--/ERRTAG-RA-93045-->.</p>
        <choice idref="sect212">If you wish to exchange your newly won prize for Altan<ch.apos/>s horse, <link-text>turn to 212</link-text>.</choice>
-       <choice idref="sect148">If you do not wish to part with your silver bow, <link-text>turn to 148</link-text>.</choice>
+       <choice idref="sect148">If you do not wish to part with your <!--ERRTAG-RA-93045-->Silver Bow<!--/ERRTAG-RA-93045-->, <link-text>turn to 148</link-text>.</choice>
       </data>
      </section>
 
@@ -1345,7 +1351,7 @@
         <enemy-attribute class="combatskill">18</enemy-attribute>
         <enemy-attribute class="endurance">34</enemy-attribute>
        </combat>
-       <p>Due to the speed of their attack you cannot make use of a bow.</p>
+       <p>Due to the speed of their attack you cannot make use of a <!--ERRTAG-RE-94670-->Bow<!--/ERRTAG-RE-94670-->.</p>
        <choice idref="sect263">If you win the fight, <link-text>turn to 263</link-text>.</choice>
       </data>
      </section>
@@ -1460,7 +1466,7 @@
       </footnotes>
 
       <data>
-       <p>You draw an arrow, aim and fire a split second before the bolt of energy hits your chest. Your arrow pierces the leader<ch.apos/>s heart, killing him instantly, but the wound that you yourself suffer knocks you to the ground. Pick a number from the <a idref="random">Random Number Table</a>. The number you have picked equals the number of <typ class="attribute">ENDURANCE</typ> points that you have lost due to the chest wound.<a idref="sect56-1-foot" id="sect56-1" class="footnote"/></p>
+       <p>You draw an <!--ERRTAG-RA-100917-->Arrow<!--/ERRTAG-RA-100917-->, aim and fire a split second before the bolt of energy hits your chest. Your <!--ERRTAG-RA-100917-->Arrow<!--/ERRTAG-RA-100917--> pierces the leader<ch.apos/>s heart, killing him instantly, but the wound that you yourself suffer knocks you to the ground. Pick a number from the <a idref="random">Random Number Table</a>. The number you have picked equals the number of <typ class="attribute">ENDURANCE</typ> points that you have lost due to the chest wound.<a idref="sect56-1-foot" id="sect56-1" class="footnote"/></p>
        <p>If you are still alive, you scramble to your feet and run as fast as you can through the undergrowth towards your horse. The golden rod has been retrieved by one of the other men, and he is preparing to use it again.</p>
        <choice idref="sect182"><link-text>Turn to 182</link-text>.</choice>
       </data>
@@ -1719,7 +1725,7 @@
 
       <data>
        <p>You do not have to wait very long for the riders to appear. As soon as they think you have gone, they emerge in single file from the back of a derelict cottage and draw themselves into a circle in the middle of the village. Although they are out of earshot, you can tell by their frantic movements and gestures that they are having a heated argument. Suddenly, they break the circle and ride towards you. Cyrilus, still lying unconscious across his horse, is in tow behind the last rider.</p>
-       <choice idref="sect20">If you have a bow and want to ambush them as they ride past your hiding place, <link-text>turn to 20</link-text>.</choice>
+       <choice idref="sect20">If you have a <!--ERRTAG-RE-116977-->Bow<!--/ERRTAG-RE-116977--> and want to ambush them as they ride past your hiding place, <link-text>turn to 20</link-text>.</choice>
        <choice idref="sect203">If you wish to attack the last rider and try to recapture Cyrilus, <link-text>turn to 203</link-text>.</choice>
        <choice idref="sect227">If you wish to let them pass and then follow them, <link-text>turn to 227</link-text>.</choice>
       </data>
@@ -1731,7 +1737,7 @@
       </meta>
 
       <data>
-       <p>A deafening roar of rage and pain fills your ears. The monster staggers back, its face transformed into a bloody scarlet mask as the arrow pierces its eye. It shudders and sways before keeling over on to its back, writhing for a brief moment in the mud and debris of the chapel floor.</p>
+       <p>A deafening roar of rage and pain fills your ears. The monster staggers back, its face transformed into a bloody scarlet mask as the <!--ERRTAG-RE-117462-->Arrow<!--/ERRTAG-RE-117462--> pierces its eye. It shudders and sways before keeling over <!--ERRTAG-RE-117970-->onto<!--/ERRTAG-RE-117970--> its back, writhing for a brief moment in the mud and debris of the chapel floor.</p>
        <choice idref="sect112"><link-text>Turn to 112</link-text>.</choice>
       </data>
      </section>
@@ -1903,8 +1909,8 @@
 
       <data>
        <p>As you hear the click of the crossbow trigger, you throw yourself to the ground to avoid the deadly missile. The bolt grazes your scalp (lose 2 <typ class="attribute">ENDURANCE</typ> points), and embeds itself in the side of the log hut. A moment later you are back on your feet. The warrior discards his empty weapon and reins his horse about in order to follow the others across the bridge.</p>
-       <choice idref="sect178">If you have a bow, <link-text>turn to 178</link-text>.</choice>
-       <choice idref="sect39">If you do not have a bow, you must mount your horse and give chase, and <link-text>turn to 39</link-text>.</choice>
+       <choice idref="sect178">If <!--ERRTAG-RE-129198-->you have a Bow<!--/ERRTAG-RE-129198-->, <link-text>turn to 178</link-text>.</choice>
+       <choice idref="sect39">If you <!--ERRTAG-RE-129343-->do not have a Bow<!--/ERRTAG-RE-129343-->, you must mount your horse and give chase, and <link-text>turn to 39</link-text>.</choice>
       </data>
      </section>
 
@@ -2035,8 +2041,8 @@
       </meta>
 
       <data>
-       <p>The ghastly sound of the creature<ch.apos/>s hungry cry chills your blood. It is barely a few feet away when you let loose your arrow.</p>
-       <p>Pick a number from the <a idref="random">Random Number Table</a>. If you have the Magnakai Discipline of Weaponmastery with bow, add 3 to the number you have picked.</p>
+       <p>The ghastly sound of the creature<ch.apos/>s hungry cry chills your blood. It is barely a few feet away when you let loose your <!--ERRTAG-RE-136810-->Arrow<!--/ERRTAG-RE-136810-->.</p>
+       <p>Pick a number from the <a idref="random">Random Number Table</a>. If you have the Magnakai Discipline of Weaponmastery with <!--ERRTAG-RE-137323-->Bow<!--/ERRTAG-RE-137323-->, add 3 to the number you have picked.</p>
        <choice idref="sect155">If your total is now 0<ch.endash/>3, <link-text>turn to 155</link-text>.</choice>
        <choice idref="sect12">If it is 4<ch.endash/>12, <link-text>turn to 12</link-text>.</choice>
       </data>
@@ -2319,7 +2325,7 @@
       </meta>
 
       <data>
-       <p>The startled guard dives aside as you spur your horse straight for him. You find that the gatehouse arch opens on to a cobblestoned square, but the only exit is blocked by the wagon and merchant caravan. A dozen guards, dressed in the green and black tunics of the town watch, are checking their cargoes. As you burst from the shadows of the gatehouse arch, they see you and cry in unison: <quote>Tollbreaker! Tollbreaker!</quote></p>
+       <p>The startled guard dives aside as you spur your horse straight for him. You find that the gatehouse arch opens <!--ERRTAG-RE-154599-->onto<!--/ERRTAG-RE-154599--> a cobblestoned square, but the only exit is blocked by the wagon and merchant caravan. A dozen guards, dressed in the green and black tunics of the town watch, are checking their cargoes. As you burst from the shadows of the gatehouse arch, they see you and cry in unison: <quote>Tollbreaker! Tollbreaker!</quote></p>
        <choice idref="sect248">If you wish to rein in your horse and prepare to fight the town watch, <link-text>turn to 248</link-text>.</choice>
        <choice idref="sect72">If you wish to attempt to jump over the wagons and escape into the shadows of the winding street ahead, <link-text>turn to 72</link-text>.</choice>
       </data>
@@ -2680,7 +2686,7 @@
       </meta>
 
       <data>
-       <p>No sooner have the doors of the inn slammed shut than you find yourself face to face with the city watch patrol. Every night, as a matter of routine, they wait for the drunks and rejects from the Inn of the Crossed Swords to be thrown on to the street. The burly guards grab you by the shoulders and attempt to strip you of your belongings before bundling you into a waiting cart. Instinctively, you fight to break free, but the guards take this as a threat. They unsheathe their swords and attack. You cannot evade combat and must fight the city watch to the death.</p>
+       <p>No sooner have the doors of the inn slammed shut than you find yourself face to face with the city watch patrol. Every night, as a matter of routine, they wait for the drunks and rejects from the Inn of the Crossed Swords to be thrown <!--ERRTAG-RE-180365-->onto<!--/ERRTAG-RE-180365--> the street. The burly guards grab you by the shoulders and attempt to strip you of your belongings before bundling you into a waiting cart. Instinctively, you fight to break free, but the guards take this as a threat. They unsheathe their swords and attack. You cannot evade combat and must fight the city watch to the death.</p>
        <combat>
         <enemy>Varetta City Watch</enemy>
         <enemy-attribute class="combatskill">18</enemy-attribute>
@@ -2731,8 +2737,8 @@
       <data>
        <p>Cyrilus offers to stay and look after the horses while you take part in the contest. He says that archery holds no interest for him, but you suspect this is just an excuse to take an afternoon nap. You hand him the reins of your horse and hurry to join a line of men waiting to enter the tournament field.</p>
        <p>The event reminds you of a Sommlending village pageant and the jugglers, the dancers and the numerous sideshows all add to the festive spirit. Eventually, you reach the gate where a cheerful old lady is collecting the 2 Gold Crowns entrance fee. You hand over your Crowns (remember to mark these off on your <a idref="action">Action Chart</a>) and enter a large tent where the other competitors are stringing their bows.</p>
-       <choice idref="sect340">If you have a bow, <link-text>turn to 340</link-text>.</choice>
-       <choice idref="sect18">If you do not have a bow, <link-text>turn to 18</link-text>.</choice>
+       <choice idref="sect340">If <!--ERRTAG-RE-183874-->you have a Bow<!--/ERRTAG-RE-183874-->, <link-text>turn to 340</link-text>.</choice>
+       <choice idref="sect18">If you <!--ERRTAG-RE-184019-->do not have a Bow<!--/ERRTAG-RE-184019-->, <link-text>turn to 18</link-text>.</choice>
       </data>
      </section>
 
@@ -2905,8 +2911,8 @@
 
       <data>
        <p>The bolt screams through the air and hits you from the side, tearing a furrow of skin and muscle from your ribs before embedding itself in the side of the log hut. (You lose 5 <typ class="attribute">ENDURANCE</typ> points.) Stifling a cry of pain, you stagger towards your horse. The warrior has discarded his empty crossbow and is now spurring his mount across the bridge in pursuit of his companions.</p>
-       <choice idref="sect178">If you have a bow, <link-text>turn to 178</link-text>.</choice>
-       <choice idref="sect39">If you do not have a bow and have to mount your horse and give chase, <link-text>turn to 39</link-text>.</choice>
+       <choice idref="sect178">If <!--ERRTAG-RE-195482-->you have a Bow<!--/ERRTAG-RE-195482-->, <link-text>turn to 178</link-text>.</choice>
+       <choice idref="sect39">If you <!--ERRTAG-RE-195627-->do not have a Bow<!--/ERRTAG-RE-195627--> and have to mount your horse and give chase, <link-text>turn to 39</link-text>.</choice>
       </data>
      </section>
 
@@ -2931,7 +2937,7 @@
       </meta>
 
       <data>
-       <p>You release the arrow, but it narrowly misses its target and clatters harmlessly against the chapel wall. The creature is now upon you, and there is no time to draw another weapon.</p>
+       <p>You release the <!--ERRTAG-RE-196448-->Arrow<!--/ERRTAG-RE-196448-->, but it narrowly misses its target and clatters harmlessly against the chapel wall. The creature is now upon you, and there is no time to draw another weapon.</p>
        <combat>
         <enemy>Yawshath</enemy>
         <enemy-attribute class="combatskill">22</enemy-attribute>
@@ -3003,7 +3009,7 @@
 
       <data>
        <p><quote>You insult us, stranger,</quote> hisses the scar-faced man as he springs to his feet. Suddenly, the noisy hall becomes as silent as the grave: all eyes are on you. Some merchants to your left hurriedly move away as the two other warriors kick over their table and draw their swords.</p>
-       <p><quote>Strike!</quote> they shout and attack. You must fight all three as one enemy. You cannot evade combat or make use of a bow.</p>
+       <p><quote>Strike!</quote> they shout and attack. You must fight all three as one enemy. You cannot evade combat or make use of a <!--ERRTAG-RE-202015-->Bow<!--/ERRTAG-RE-202015-->.</p>
        <combat>
         <enemy>Varettian Mercenaries</enemy>
         <enemy-attribute class="combatskill">26</enemy-attribute>
@@ -3044,8 +3050,8 @@
 
       <data>
        <p>Instinctively, you dive and roll, drawing your weapon as you rise again to your feet. Your lightning-fast reactions have saved you from the clutches of a shambling, blunt-nosed monster that preys on unwary pilgrims to this spa. However, it is not deterred, and with a hideous snickering caw, its feral eyes glowing with hatred, it shuffles hungrily towards you.</p>
-       <choice idref="sect198">If you have a bow, <link-text>turn to 198</link-text>.</choice>
-       <choice idref="sect343">If you do not have a bow, <link-text>turn to 343</link-text>.</choice>
+       <choice idref="sect198">If you have a <!--ERRTAG-RA-204449-->Bow<!--/ERRTAG-RA-204449-->, <link-text>turn to 198</link-text>.</choice>
+       <choice idref="sect343">If you do not have a <!--ERRTAG-RA-204449-->Bow<!--/ERRTAG-RA-204449-->, <link-text>turn to 343</link-text>.</choice>
       </data>
      </section>
 
@@ -3088,7 +3094,7 @@
         <enemy-attribute class="combatskill">24</enemy-attribute>
         <enemy-attribute class="endurance">26</enemy-attribute>
        </combat>
-       <p>Due to the speed of this attack, you cannot make use of a bow. However, if you have the Magnakai Discipline of Animal Control, you may add 1 point to your <typ class="attribute">COMBAT SKILL</typ> for the duration of this fight.</p>
+       <p>Due to the speed of this attack, you cannot make use of a <!--ERRTAG-RE-206937-->Bow<!--/ERRTAG-RE-206937-->. However, if you have the Magnakai Discipline of Animal Control, you may add 1 point to your <typ class="attribute">COMBAT SKILL</typ> for the duration of this fight.</p>
        <choice idref="sect28">If you win the fight, <link-text>turn to 28</link-text>.</choice>
       </data>
      </section>
@@ -3175,7 +3181,7 @@
       </meta>
 
       <data>
-       <p>The riverboat is still rocking violently from the collision, throwing you off balance. You raise an arrow, take aim at the man<ch.apos/>s chest and try to anticipate the shift of the deck as you prepare to fire.</p>
+       <p>The riverboat is still rocking violently from the collision, throwing you off balance. You raise an <!--ERRTAG-RE-212420-->Arrow<!--/ERRTAG-RE-212420-->, take aim at the man<ch.apos/>s chest and try to anticipate the shift of the deck as you prepare to fire.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. If you have the Magnakai Discipline of Weaponmastery with Bow, add 3 to your score. If you have the Magnakai Discipline of Huntmastery, add 1 to your score.</p>
        <choice idref="sect23">If your total is now 5 or lower, <link-text>turn to 23</link-text>.</choice>
        <choice idref="sect265">If it is now 6 or higher, <link-text>turn to 265</link-text>.</choice>
@@ -3274,7 +3280,7 @@
       </meta>
 
       <data>
-       <p>The warrior gallops off, his cloak billowing from his shoulders like huge black wings as his horse speeds across the bridge. You draw an arrow to your lips and take careful aim<ch.emdash/>you will have no second chance.</p>
+       <p>The warrior gallops off, his cloak billowing from his shoulders like huge black wings as his horse speeds across the bridge. You draw an <!--ERRTAG-RE-219575-->Arrow<!--/ERRTAG-RE-219575--> to your lips and take careful aim<ch.emdash/>you will have no second chance.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. If you have the Magnakai Discipline of Weaponmastery with Bow, add 3 to the number you have picked.</p>
        <choice idref="sect296">If your total score is now 7 or below, <link-text>turn to 296</link-text>.</choice>
        <choice idref="sect303">If your total score is now 8 or above, <link-text>turn to 303</link-text>.</choice>
@@ -3508,7 +3514,7 @@
 
       <data>
        <p>It is only a matter of minutes before the riders appear. They ride in single file with the unconscious wizard in tow behind the last man<ch.apos/>s horse.</p>
-       <choice idref="sect20">If you have a bow and want to ambush them as they ride past your hiding place, <link-text>turn to 20</link-text>.</choice>
+       <choice idref="sect20">If you have a <!--ERRTAG-RE-234157-->Bow<!--/ERRTAG-RE-234157--> and want to ambush them as they ride past your hiding place, <link-text>turn to 20</link-text>.</choice>
        <choice idref="sect203">If you wish to attack the last rider and try to recapture Cyrilus, <link-text>turn to 203</link-text>.</choice>
        <choice idref="sect227">If you wish to let them pass and then follow them, <link-text>turn to 227</link-text>.</choice>
       </data>
@@ -3544,7 +3550,7 @@
       </meta>
 
       <data>
-       <p>Having removed a bunch of flowers from the ear of a startled merchant and a clucking hen from the petticoat of the merchant<ch.apos/>s wife, the flamboyantly dressed conjurer calls for silence from his cheering audience before announcing his next trick. Two children shuffle on to the stage, their bodies and faces completely hidden by long black gowns that are tied at their foreheads. Only their hair, blond and black is visible.</p>
+       <p>Having removed a bunch of flowers from the ear of a startled merchant and a clucking hen from the petticoat of the merchant<ch.apos/>s wife, the flamboyantly dressed conjurer calls for silence from his cheering audience before announcing his next trick. Two children shuffle <!--ERRTAG-RE-236717-->onto<!--/ERRTAG-RE-236717--> the stage, their bodies and faces completely hidden by long black gowns that are tied at their foreheads. Only their hair, blond and black is visible.</p>
        <p><quote>I<ch.apos/>m a boy,</quote> says the one with black hair.</p>
        <p><quote>I<ch.apos/>m a girl,</quote> says the one with blond hair, the voice identical to the first.</p>
        <p>The conjurer steps forward and says that they are a boy and a girl but at least one of them is lying. He asks which is which and invites the audience to bet on the answer.</p>
@@ -3578,7 +3584,7 @@
       </footnotes>
 
       <data>
-       <p>The sergeant orders his men to stand back<ch.emdash/>he is confident that he can defeat you unaided and is eager to show off his fighting prowess. A smile of expectant triumph curls his scarred lips as he raises his spear and shield. You may fight this combat with any weapon except a bow.</p>
+       <p>The sergeant orders his men to stand back<ch.emdash/>he is confident that he can defeat you unaided and is eager to show off his fighting prowess. A smile of expectant triumph curls his scarred lips as he raises his spear and shield. You may fight this combat with any weapon except a <!--ERRTAG-RE-238835-->Bow<!--/ERRTAG-RE-238835-->.</p>
        <combat>
         <enemy>Town Sergeant</enemy>
         <enemy-attribute class="combatskill">18</enemy-attribute>
@@ -3705,7 +3711,7 @@
       </meta>
 
       <data>
-       <p>Trembling with fear, you draw the bowstring and fire. The arrow glances off its armoured head and shatters against the crypt wall. There is no time for a second shot. You discard your bow and prepare for close combat as the creature moves in to strike.</p>
+       <p>Trembling with fear, you draw the bowstring and fire. The <!--ERRTAG-RE-245806-->Arrow<!--/ERRTAG-RE-245806--> glances off its armoured head and shatters against the crypt wall. There is no time for a second shot. You discard your <!--ERRTAG-RE-246817-->Bow<!--/ERRTAG-RE-246817--> and prepare for close combat as the creature moves in to strike.</p>
        <choice idref="sect344"><link-text>Turn to 344</link-text>.</choice>
       </data>
      </section>
@@ -3857,8 +3863,8 @@
        </illustration>
 
        <p>Bewildered and frightened, the little man fumbles an apology, but to no avail. The lordling kicks back his chair and towers over the wretch, his hand clasped around the hilt of his sword. The tavern crowd view the scene with relish, like spectators at a Vassagonian arena, for the lordling clearly intends to kill the old man.</p>
-       <choice idref="sect301">If you possess a bow, <link-text>turn to 301</link-text>.</choice>
-       <choice idref="sect78">If you do not possess a bow, <link-text>turn to 78</link-text>.</choice>
+       <choice idref="sect301">If you possess a <!--ERRTAG-RA-257024-->Bow<!--/ERRTAG-RA-257024-->, <link-text>turn to 301</link-text>.</choice>
+       <choice idref="sect78">If you do not possess a <!--ERRTAG-RA-257024-->Bow<!--/ERRTAG-RA-257024-->, <link-text>turn to 78</link-text>.</choice>
       </data>
      </section>
 
@@ -3922,7 +3928,7 @@
        <p><quote>River pirates!</quote> shouts the helmsman. <quote>Prepare to repel boarders.</quote></p>
        <p>Further along the deck, one of the captain<ch.apos/>s men is felled by a thrown knife. His comrades rush to his aid, but by now the river pirates are pouring over the side and he is trampled underfoot.</p>
        <p><quote>Battle order!</quote> bellows the captain and immediately his men respond, linking shields and holding their ground. A swarm of grim-faced pirates are boarding close by. One of their number, a lean man with only one ear and a split nose, smiles at you with anticipation, his lips drawn back from his teeth and his eyes wide with excitement. He is obviously relishing the thought of ending your life.</p>
-       <choice idref="sect170">If you have a bow and wish to use it, <link-text>turn to 170</link-text>.</choice>
+       <choice idref="sect170">If you have a <!--ERRTAG-RE-261761-->Bow<!--/ERRTAG-RE-261761--> and wish to use it, <link-text>turn to 170</link-text>.</choice>
        <choice idref="sect92">If you wish to prepare for combat by other means, <link-text>turn to 92</link-text>.</choice>
        <choice idref="sect286">If you wish to evade combat, <link-text>turn to 286</link-text>.</choice>
       </data>
@@ -3962,7 +3968,7 @@
 
       <data>
        <p>They have covered only a few hundred yards when the last rider turns to check on Cyrilus who is beginning to slip from his saddle. You pull off the highway to try to hide, but you are seen entering the trees and a shout rings out: <quote>He<ch.apos/>s there!</quote> The rumble of hooves warns you that the riders are returning.</p>
-       <choice idref="sect20">If you have a bow and wish to open fire as they rush past, <link-text>turn to 20</link-text>.</choice>
+       <choice idref="sect20">If you have a <!--ERRTAG-RE-264174-->Bow<!--/ERRTAG-RE-264174--> and wish to open fire as they rush past, <link-text>turn to 20</link-text>.</choice>
        <choice idref="sect203">If you would rather prepare to fight by other means, <link-text>turn to 203</link-text>.</choice>
       </data>
      </section>
@@ -4077,7 +4083,7 @@
       </meta>
 
       <data>
-       <p>From within the closed helmet of black steel, a voice calls out<ch.emdash/><quote>Die Northlander!</quote> The crossbow is hurled aside, and the warrior charges out of the Denka Gate, an axe held high in his hand. You cannot avoid him and must fight him to the death. Due to the speed of his attack you cannot use a bow.</p>
+       <p>From within the closed helmet of black steel, a voice calls out<ch.emdash/><quote>Die Northlander!</quote> The crossbow is hurled aside, and the warrior charges out of the Denka Gate, an axe held high in his hand. You cannot avoid him and must fight him to the death. Due to the speed of his attack you cannot use a <!--ERRTAG-RE-272528-->Bow<!--/ERRTAG-RE-272528-->.</p>
        <combat>
         <enemy>Armoured Assassin</enemy>
         <enemy-attribute class="combatskill">24</enemy-attribute>
@@ -4104,7 +4110,7 @@
       </meta>
 
       <data>
-       <p>The arrow whistles through the gloom and gouges a channel of skin and fur from the creature<ch.apos/>s skull. It shrieks in pain and paws at the wound. Although it is injured it is far from dead, and sharp claws extend from a bloodstained paw. They lash at your head and you duck only just in time to save yourself from decapitation. Hurriedly, you prepare for hand-to-hand combat before the monster strikes again.</p>
+       <p>The <!--ERRTAG-RE-272519-->Arrow<!--/ERRTAG-RE-272519--> whistles through the gloom and gouges a channel of skin and fur from the creature<ch.apos/>s skull. It shrieks in pain and paws at the wound. Although it is injured it is far from dead, and sharp claws extend from a bloodstained paw. They lash at your head and you duck only just in time to save yourself from decapitation. Hurriedly, you prepare for hand-to-hand combat before the monster strikes again.</p>
        <choice idref="sect343"><link-text>Turn to 343</link-text>.</choice>
       </data>
      </section>
@@ -4330,12 +4336,12 @@
 
       <footnotes>
        <footnote idref="sect252-1" id="sect252-1-foot">
-        <p>In all other instances where this bow is mentioned, it is referred to as the <quote>Silver Bow of Duadon</quote>, and treated as a weapon-like Special Item rather than a Weapon. The 3-point bonus to your Random Number picks when using this bow can be added to the 3-point bonus you may already have with Weaponmastery with Bow for a total of 6 points. As with the bonus for Weaponmastery with Bow, you may only add this bonus when determining the success of a bow shot.</p>
+        <p>In all other instances where this Bow is mentioned, it is referred to as the <quote>Silver Bow of Duadon</quote>, and treated as a weapon-like Special Item rather than a Weapon. The 3-point bonus to your Random Number picks when using this Bow can be added to the 3-point bonus you may already have with Weaponmastery with Bow for a total of 6 points. As with the bonus for Weaponmastery with Bow, you may only add this bonus when determining the success of a Bow shot.</p>
        </footnote>
       </footnotes>
 
       <data>
-       <p>A loud cheer shatters the silence as your arrow strikes home<ch.emdash/>you have won. The villagers are thrilled to have witnessed such an exciting tournament and crowd around you to offer their praise and congratulations. The little man in the braided jerkin presents you with your prize<ch.emdash/>a magnificent bow made from the wood of a silver oak tree. This weapon will add 3 points to your total whenever you are using a bow and are instructed to pick a number from the <a idref="random">Random Number Table</a>. Enter it in the <quote>Weapons</quote> section of your <a idref="action">Action Chart</a> as a Silver Oak Bow and make a note of its particular property.<a class="footnote" idref="sect252-1-foot" id="sect252-1"/></p>
+       <p>A loud cheer shatters the silence as your arrow strikes home<ch.emdash/>you have won. The villagers are thrilled to have witnessed such an exciting tournament and crowd around you to offer their praise and congratulations. The little man in the braided jerkin presents you with your prize<ch.emdash/>a magnificent <!--ERRTAG-RA-289522-->Bow<!--/ERRTAG-RA-289522--> made from the wood of a silver oak tree. This weapon will add 3 points to your total whenever you are using a <!--ERRTAG-RA-289522-->Bow<!--/ERRTAG-RA-289522--> and are instructed to pick a number from the <a idref="random">Random Number Table</a>. Enter it in the <quote>Weapons</quote> section of your <a idref="action">Action Chart</a> as a Silver Oak Bow and make a note of its particular property.<a class="footnote" idref="sect252-1-foot" id="sect252-1"/></p>
        <p>After making a short speech to thank the villagers for their generosity, you shoulder your prize and head back to Cyrilus with the good news.</p>
        <choice idref="sect33"><link-text>Turn to 33</link-text>.</choice>
       </data>
@@ -4410,7 +4416,7 @@
       </meta>
 
       <data>
-       <p>The bolt of energy burns through your chest like a red-hot poker. You recoil in pain but can no longer control your movements and are blasted high into the air, impaled upon the end of the crackling bolt. Suddenly, it vanishes, leaving you to plummet one hundred feet on to the hard, unyielding stone of the altar.</p>
+       <p>The bolt of energy burns through your chest like a red-hot poker. You recoil in pain but can no longer control your movements and are blasted high into the air, impaled upon the end of the crackling bolt. Suddenly, it vanishes, leaving you to plummet one hundred feet <!--ERRTAG-RE-294925-->onto<!--/ERRTAG-RE-294925--> the hard, unyielding stone of the altar.</p>
        <choice>Your life and your quest end here on the sacrificial altar of the Cener Druids.</choice>
       </data>
      </section>
@@ -4514,7 +4520,7 @@
       </meta>
 
       <data>
-       <p>The creature stops in mid-stride, as if paralysed by some invisible force. A gurgling croak escapes from its lips and, as it locates your arrow with its trembling paws, it collapses to its knees. Death is but seconds away. It shudders and sways and then keels over on to its back, writhing for one brief moment in the mud and debris of the chapel floor.</p>
+       <p>The creature stops in mid-stride, as if paralysed by some invisible force. A gurgling croak escapes from its lips and, as it locates your <!--ERRTAG-RE-299499-->Arrow<!--/ERRTAG-RE-299499--> with its trembling paws, it collapses to its knees. Death is but seconds away. It shudders and sways and then keels over <!--ERRTAG-RE-301286-->onto<!--/ERRTAG-RE-301286--> its back, writhing for one brief moment in the mud and debris of the chapel floor.</p>
        <choice idref="sect112"><link-text>Turn to 112</link-text>.</choice>
       </data>
      </section>
@@ -4525,7 +4531,7 @@
       </meta>
 
       <data>
-       <p>He screams and falls with the arrow embedded so deeply into his chest that only its feathered flights can be seen. His comrades freeze in their tracks, their eyes wide with fear. As you move forward they scatter and run.</p>
+       <p>He screams and falls with the <!--ERRTAG-RE-300020-->Arrow<!--/ERRTAG-RE-300020--> embedded so deeply into his chest that only its feathered flights can be seen. His comrades freeze in their tracks, their eyes wide with fear. As you move forward they scatter and run.</p>
        <choice idref="sect77"><link-text>Turn to 77</link-text>.</choice>
       </data>
      </section>
@@ -4708,8 +4714,8 @@
 
       <data>
        <p>You turn your head to see a shambling, blunt-nosed horror emerge from the shadows. It emits a hideous, snickering cry and lashes out with one of its four razor-sharp claws, sending you tumbling backwards across the muddy flagstones. You quickly regain your feet, but the surprise attack has opened a gaping wound in your arm. (You lose 3 <typ class="attribute">ENDURANCE</typ> points.) The creature<ch.apos/>s eyes glow with hatred as it shuffles hungrily towards you.</p>
-       <choice idref="sect198">If you have a bow, <link-text>turn to 198</link-text>.</choice>
-       <choice idref="sect343">If you do not have a bow, <link-text>turn to 343</link-text>.</choice>
+       <choice idref="sect198">If you have a <!--ERRTAG-RA-313023-->Bow<!--/ERRTAG-RA-313023-->, <link-text>turn to 198</link-text>.</choice>
+       <choice idref="sect343">If you do not have a <!--ERRTAG-RA-313023-->Bow<!--/ERRTAG-RA-313023-->, <link-text>turn to 343</link-text>.</choice>
       </data>
      </section>
 
@@ -4790,14 +4796,14 @@
       </meta>
 
       <data>
-       <p>Forewarned by your power, your senses are acutely aware of the deadly missile screaming towards your chest. Suddenly, everything seems to be happening in slow motion. You strike at the bolt as it cuts through the air, deflecting it with one blow. Your opponent hurls his crossbow to the ground, and from within the closed helmet of black steel a voice cries: <quote>Die Northlander!</quote></p>
+       <p>Forewarned by your power, your senses are acutely aware of the deadly missile screaming towards your chest. Suddenly, everything seems to be happening in slow motion. You strike at the bolt as it cuts through the air, deflecting it with one blow. Your opponent hurls his cross<!--ERRTAG-RA-319698-->Bow<!--/ERRTAG-RA-319698--> to the ground, and from within the closed helmet of black steel a voice cries: <quote>Die Northlander!</quote></p>
        <p>The warrior charges out of the Denka Gate with an axe held high in his mailed fist. You cannot avoid the attack and must fight him to the death.</p>
        <combat>
         <enemy>Armoured Assassin</enemy>
         <enemy-attribute class="combatskill">24</enemy-attribute>
         <enemy-attribute class="endurance">26</enemy-attribute>
        </combat>
-       <p>Due to the speed of the attack, you cannot use a bow. If you have the Magnakai Discipline of Animal Control, you may add 1 point to your <typ class="attribute">COMBAT SKILL</typ> for the duration of the combat.</p>
+       <p>Due to the speed of the attack, you cannot use a <!--ERRTAG-RA-319698-->Bow<!--/ERRTAG-RA-319698-->. If you have the Magnakai Discipline of Animal Control, you may add 1 point to your <typ class="attribute">COMBAT SKILL</typ> for the duration of the combat.</p>
        <choice idref="sect28">If you win the fight, <link-text>turn to 28</link-text>.</choice>
       </data>
      </section>
@@ -4886,7 +4892,7 @@
       </meta>
 
       <data>
-       <p>Galloping along the narrow thoroughfare through broken streets and dark alleyways, you soon outdistance any immediate threat to your safety. You halt at a small square to allow your horse to drink from a water-trough that stands beside a narrow stone arch. As she drinks her fill, you observe the to-ing and fro-ing of the townsfolk and hear the drunken songs and revelry from the wine shops bordering the square. A knot of brawling river-men tumble out of one doorway and set about each other with knives and bottles, egged on by their rowdy comrades who wager fistfuls of crowns on the outcome. The fight soon gets out of hand; as it spreads, you decide it is better to leave before you are drawn into it.</p>
+       <p>Galloping along the narrow thoroughfare through broken streets and dark alleyways, you soon outdistance any immediate threat to your safety. You halt at a small square to allow your horse to drink from a water-trough that stands beside a narrow stone arch. As she drinks her fill, you observe the to-ing and fro-ing of the townsfolk and hear the drunken songs and revelry from the wine shops bordering the square. <!--ERRTAG-RE-326809-->A knot of brawling river-men tumbles<!--/ERRTAG-RE-326809--> out of one <!--ERRTAG-RE-326901-->doorway, and they set about each other<!--/ERRTAG-RE-326901--> with knives and bottles, egged on by their rowdy comrades who wager fistfuls of crowns on the outcome. The fight soon gets out of hand; as it spreads, you decide it is better to leave before you are drawn into it.</p>
        <choice idref="sect332"><link-text>Turn to 332</link-text>.</choice>
       </data>
      </section>
@@ -4924,7 +4930,7 @@
       </meta>
 
       <data>
-       <p>Your feathered shaft cuts the air and sinks deep into the creature<ch.apos/>s shoulder. It shrieks in pain and snaps the arrow in two with one swipe of its gigantic paw. Although you have injured the beast, it is far from dead. Sharp claws stained with blood lash back at your head, and you duck only just in time to save yourself from decapitation. Hurriedly, you prepare for combat.</p>
+       <p>Your feathered shaft cuts the air and sinks deep into the creature<ch.apos/>s shoulder. It shrieks in pain and snaps the <!--ERRTAG-RE-327452-->Arrow<!--/ERRTAG-RE-327452--> in two with one swipe of its gigantic paw. Although you have injured the beast, it is far from dead. Sharp claws stained with blood lash back at your head, and you duck only just in time to save yourself from decapitation. Hurriedly, you prepare for combat.</p>
        <choice idref="sect343"><link-text>Turn to 343</link-text>.</choice>
       </data>
      </section>
@@ -4973,8 +4979,8 @@
       </meta>
 
       <data>
-       <p>The arrow is on target, but it does not penetrate the thick metal plates of armour that protect the warrior<ch.apos/>s back. You watch with dismay as it glances away and disappears over the parapet of the bridge.</p>
-       <p>Without further delay, you shoulder your bow and mount your horse in order to pursue the kidnappers before they vanish from sight.</p>
+       <p>The <!--ERRTAG-RE-330409-->Arrow<!--/ERRTAG-RE-330409--> is on target, but it does not penetrate the thick metal plates of armour that protect the warrior<ch.apos/>s back. You watch with dismay as it glances away and disappears over the parapet of the bridge.</p>
+       <p>Without further delay, you shoulder your <!--ERRTAG-RA-332122-->Bow<!--/ERRTAG-RA-332122--> and mount your horse in order to pursue the kidnappers before they vanish from sight.</p>
        <choice idref="sect39"><link-text>Turn to 39</link-text>.</choice>
       </data>
      </section>
@@ -5056,7 +5062,7 @@
       </meta>
 
       <data>
-       <p>With the speed and grace of movement that marks you as a Kai Master, you load, take aim and fire. Your arrow pierces the lordling<ch.apos/>s forearm as his sword descends, causing the blow to splinter stone, not skull. He utters a shrill cry and spins backwards, cradling his wounded arm as he falls.</p>
+       <p>With the speed and grace of movement that marks you as a Kai Master, you load, take aim and fire. Your <!--ERRTAG-RE-337127-->Arrow<!--/ERRTAG-RE-337127--> pierces the lordling<ch.apos/>s forearm as his sword descends, causing the blow to splinter stone, not skull. He utters a shrill cry and spins backwards, cradling his wounded arm as he falls.</p>
        <p><quote>Curse you, scum!</quote> he shrieks, <quote>I am Roark, highborn of Amory. I shall have your life for this<ch.emdash/>mark my words!</quote></p>
        <p>Trembling with pain and fury, he staggers to his feet and demands his sword and cloak from the innkeeper before stumbling into the night with a welter of threats and curses.</p>
        <choice idref="sect281"><link-text>Turn to 281</link-text>.</choice>
@@ -5081,7 +5087,7 @@
       </meta>
 
       <data>
-       <p>Your arrow strikes home with deadly accuracy, penetrating the rider<ch.apos/>s armour at the base of his skull. You see him throw both arms into the air, topple from the saddle and land with a crash of buckled metal in the middle of the bridge. There is no doubt in your mind that your enemy is dead; if the arrow did not kill him then such a fall in heavy armour most surely did.</p>
+       <p>Your <!--ERRTAG-RA-338860-->Arrow<!--/ERRTAG-RA-338860--> strikes home with deadly accuracy, penetrating the rider<ch.apos/>s armour at the base of his skull. You see him throw both arms into the air, topple from the saddle and land with a crash of buckled metal in the middle of the bridge. There is no doubt in your mind that your enemy is dead; if the <!--ERRTAG-RA-338860-->Arrow<!--/ERRTAG-RA-338860--> did not kill him then such a fall in heavy armour most surely did.</p>
        <choice idref="sect139">If you wish to search the body, <link-text>turn to 139</link-text>.</choice>
        <choice idref="sect39">If you wish to mount your horse and pursue the kidnappers, <link-text>turn to 39</link-text>.</choice>
       </data>
@@ -5423,7 +5429,7 @@
 
       <data>
        <p>As you reach the junction with the highway, you see the riders emerging in single file behind a derelict cottage. They draw themselves into a circle in the middle of the village, and although they are out of earshot, you can tell by their movements and frantic gestures that they are having a heated argument. Suddenly, the circle breaks and they ride towards you with Cyrilus, still unconscious, in tow behind the last rider. You urge your horse off along the track and take cover among the dense trees.</p>
-       <choice idref="sect20">If you have a bow and want to ambush them as they ride past your hiding place, <link-text>turn to 20</link-text>.</choice>
+       <choice idref="sect20">If you have a <!--ERRTAG-RE-362755-->Bow<!--/ERRTAG-RE-362755--> and want to ambush them as they ride past your hiding place, <link-text>turn to 20</link-text>.</choice>
        <choice idref="sect203">If you wish to attack the last rider and try to recapture Cyrilus, <link-text>turn to 203</link-text>.</choice>
        <choice idref="sect227">If you decide to let them pass and then follow them, <link-text>turn to 227</link-text>.</choice>
       </data>
@@ -5481,7 +5487,7 @@
 
       <data>
        <p>A huge, lumbering monster stalks towards you. It is over ten feet high with thick, twisted, hairy limbs and eight-fingered hands tipped by razor-sharp talons. Baleful, monstrous eyes protrude from yellow slits in its glistening head, and a long reptilian tail whips behind it. Its hideous and peculiar gibbering fills the moonlit crypt as it draws nearer and nearer.</p>
-       <choice idref="sect209">If you have a bow and wish to use it, <link-text>turn to 209</link-text>.</choice>
+       <choice idref="sect209">If you have a <!--ERRTAG-RE-367552-->Bow<!--/ERRTAG-RE-367552--> and wish to use it, <link-text>turn to 209</link-text>.</choice>
        <choice idref="sect344">If you wish to prepare for combat, <link-text>turn to 344</link-text>.</choice>
       </data>
      </section>
@@ -5564,7 +5570,7 @@
       </footnotes>
 
       <data>
-       <p>A small, flat-faced man dressed in a silver-braided jerkin enters the tent and calls for everyone<ch.apos/>s attention. Quickly, he explains the rules that govern the tournament and then ushers you on to the range. At the far end of the field is a line of targets, each with ten coloured rings marked 0<ch.endash/>9. Each archer is given 3 arrows with which he must get a minimum score of 8 in order to qualify for the next round of the tournament.</p>
+       <p>A small, flat-faced man dressed in a silver-braided jerkin enters the tent and calls for everyone<ch.apos/>s attention. Quickly, he explains the rules that govern the tournament and then ushers you <!--ERRTAG-RE-372719-->onto<!--/ERRTAG-RE-372719--> the range. At the far end of the field is a line of targets, each with ten coloured rings marked 0<ch.endash/>9. Each archer is given 3 arrows with which he must get a minimum score of 8 in order to qualify for the next round of the tournament.</p>
        <p>Pick three numbers from the <a idref="random">Random Number Table</a> and add them together. If you have the Magnakai Discipline of Weaponmastery with Bow, add 3 to your total.<a class="footnote" idref="sect340-1-foot" id="sect340-1"/></p>
        <choice idref="sect103">If your total score is now 7 or less, <link-text>turn to 103</link-text>.</choice>
        <choice idref="sect26">If your total score is now 8 or higher, <link-text>turn to 26</link-text>.</choice>
@@ -6269,7 +6275,7 @@
 
        <p>(<a idref="tssf">The Story So Far<ch.ellips/></a>) Replaced <quote>Majhan and, for</quote> with <quote>Majhan, and for</quote>, <quote>went but</quote> with <quote>went, but</quote>, <quote>alone and, in</quote> with <quote>alone, and in</quote>, <quote>Magnakai; but</quote> with <quote>Magnakai, but</quote>, <quote>Varetta for</quote> with <quote>Varetta, for</quote>, and <quote>indefinitely and</quote> with <quote>indefinitely, and</quote>. Replaced both occurrences of <quote>disciplines</quote> with <quote>Discipline</quote>.</p>
 
-       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced both occurrences of <quote>ie,</quote> with <quote>i.e.</quote>. Replaced each occurrence of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Placed <quote>or below</quote> after <quote>fall to zero</quote>.</p>
+       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced both occurrences of <quote>ie,</quote> with <quote>i.e.</quote>. Replaced each occurrence of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Placed <quote>or below</quote> after <quote>fall to zero</quote>.<!--ERRTAG-RE-8921-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-8921-ITEM--></p>
 
        <p>(<a idref="discplnz">Magnakai Disciplines</a>) Replaced <quote>scent, and</quote> with <quote>scent and</quote>, <quote>points, and</quote> with <quote>points and</quote>, and <quote>danger, or</quote> with <quote>danger or</quote>. Removed all extraneous spaces between a number and its sign (e.g. replaced <quote>+ 3</quote> with <quote>+3</quote>). Set the list of items in initial capital letters instead of all capitals. Replaced each occurrence of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Added <quote>(Psi-surge and Mindblast cannot be used simultaneously.)</quote> to the description of Psi-surge. Replaced <quote>knowledge mastery</quote> with <quote>knowledge that mastery</quote>. Replaced <quote>weapons list</quote> with <quote><a idref="action">Weapons List</a></quote>.</p>
 
@@ -6283,23 +6289,25 @@
 
        <p>(<a idref="sect1">1</a>) Replaced <quote>death cry</quote> with <quote>death-cry</quote>. Moved the Pathsmanship choice into the first position. Replaced <quote>Kai monastery</quote> with <quote>Kai Monastery</quote>. Replaced <quote>Fryelund forest</quote> with <quote>Fryelund Forest</quote>.</p>
        <p>(<a idref="sect3">3</a>) Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.</p>
-       <p>(<a idref="sect5">5</a>) Replaced <quote>mist but</quote> with <quote>mist, but</quote> and <quote>highway and</quote> with <quote>highway, and</quote>.</p>
+       <p>(<a idref="sect5">5</a>) Replaced <quote>mist but</quote> with <quote>mist, but</quote> and <quote>highway and</quote> with <quote>highway, and</quote>.<!--ERRTAG-RE-50994-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-50994-ITEM--></p>
        <p>(<a idref="sect6">6</a>) Replaced <quote>table, and</quote> with <quote>table and</quote> and <quote>pulled and</quote> with <quote>pulled, and</quote>.</p>
        <p>(<a idref="sect8">8</a>) Reworded the sentence <quote>(Mark this as a Special Item<ch.ellips/>)</quote> to match the wording from <a idref="sect16">section 16</a>.  The original wording is misleading. Replaced <quote>you but</quote> with <quote>you, but</quote>.</p>
-       <p>(<a idref="sect10">10</a>) Capitalized each occurrence of the item <quote>Ticket</quote>. Replaced <quote>river boat</quote> with <quote>riverboat</quote>.</p>
+       <p>(<a idref="sect10">10</a>) Capitalized each occurrence of the item <quote>Ticket</quote>. Replaced <quote>river boat</quote> with <quote>riverboat</quote>.<!--ERRTAG-RE-57316-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-57316-ITEM--></p>
        <p>(<a idref="sect11">11</a>) Replaced <quote>siege works</quote> with <quote>siege-works</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
-       <p>(<a idref="sect13">13</a>) Replaced <quote>body and, as</quote> with <quote>body, and as</quote>, <quote>presence and</quote> with <quote>presence, and</quote> and <quote>you and</quote> with <quote>you, and</quote>.</p>
+<p>(<a idref="sect12">12</a>)<!--ERRTAG-RE-59562-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-59562-ITEM--></p>
+       <p>(<a idref="sect13">13</a>) Replaced <quote>body and, as</quote> with <quote>body, and as</quote>, <quote>presence and</quote> with <quote>presence, and</quote> and <quote>you and</quote> with <quote>you, and</quote>.<!--ERRTAG-RA-61451-ITEM--> Replaced all occurrences of <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RA-61451-ITEM--></p>
        <p>(<a idref="sect13">13</a>) Replaced <quote>spreadeagled</quote> with <quote>spread-eagled</quote>.</p>
        <p>(<a idref="sect14">14</a>) Replaced <quote>invocation and</quote> with <quote>invocation, and</quote>, <quote>northlander</quote> with <quote>Northlander</quote>, and <quote>men but, as</quote> with <quote>men, but as</quote>.</p>
        <p>(<a idref="sect15">15</a>) Replaced <quote>manouevre</quote> with <quote>manoeuvre</quote>.</p>
        <p>(<a idref="sect18">18</a>) Replaced <quote>split or</quote> with <quote>split nor</quote>. Moved the Huntmastery choice into the first position.</p>
        <p>(<a idref="sect19">19</a>) Replaced <quote>provisions and, as</quote> with <quote>provisions, and as</quote>.</p>
-       <p>(<a idref="sect20">20</a>) Replaced <quote>Cyrilus<ch.apos/>s</quote> with <quote>Cyrilus<ch.apos/></quote>.</p>
+       <p>(<a idref="sect20">20</a>) Replaced <quote>Cyrilus<ch.apos/>s</quote> with <quote>Cyrilus<ch.apos/></quote>.<!--ERRTAG-RE-68473-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-68473-ITEM--></p>
        <p>(<a idref="sect21">21</a>) Replaced <quote>vanished: the</quote> with <quote>vanished; the</quote>.</p>
        <p>(<a idref="sect22">22</a>) Replaced <quote>pikeheads</quote> with <quote>pike heads</quote>. Moved the Divination choice into the first position.</p>
-       <p>(<a idref="sect24">24</a>) Replaced <quote>puddles and</quote> with <quote>puddles, and</quote>, <quote>large shiny</quote> with <quote>large, shiny</quote>, and <quote>rope you</quote> with <quote>rope, you</quote>. Moved the Nexus choice into the first position.</p>
+<p>(<a idref="sect23">23</a>)<!--ERRTAG-RE-70977-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-70977-ITEM--></p>
+       <p>(<a idref="sect24">24</a>) Replaced <quote>puddles and</quote> with <quote>puddles, and</quote>, <quote>large shiny</quote> with <quote>large, shiny</quote>, and <quote>rope you</quote> with <quote>rope, you</quote>. Moved the Nexus choice into the first position.<!--ERRTAG-RE-71831-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-71831-ITEM--></p>
        <p>(<a idref="sect25">25</a>) Replaced both occurrences of <quote>guildhouse</quote> with <quote>guild-house</quote>. Replaced <quote>hand bells</quote> with <quote>hand-bells</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
-       <p>(<a idref="sect26">26</a>) Replaced <quote>toa-wood</quote> with <quote>toa wood</quote>.</p>
+       <p>(<a idref="sect26">26</a>) Replaced <quote>toa-wood</quote> with <quote>toa wood</quote>.<!--ERRTAG-RE-76324-ITEM--> Replaced <quote>arrows</quote> with <quote>Arrows</quote>.<!--/ERRTAG-RE-76324-ITEM--></p>
        <p>(<a idref="sect27">27</a>) Replaced <quote>open and</quote> with <quote>open, and</quote>.</p>
        <p>(<a idref="sect28">28</a>) Replaced <quote>surrounded and</quote> with <quote>surrounded, and</quote>, <quote>shortlived</quote> with <quote>short-lived</quote>, and <quote>resistance and</quote> with <quote>resistance, and</quote>.</p>
        <p>(<a idref="sect29">29</a>) Replaced <quote>shock but</quote> with <quote>shock, but</quote>.</p>
@@ -6313,12 +6321,12 @@
        <p>(<a idref="sect41">41</a>) Replaced <quote>nature but</quote> with <quote>nature, but</quote>.</p>
        <p>(<a idref="sect43">43</a>) Replaced <quote>side and</quote> with <quote>side, and</quote>.</p>
        <p>(<a idref="sect44">44</a>) Replaced <quote>head first</quote> with <quote>head-first</quote>.</p>
-       <p>(<a idref="sect45">45</a>) Replaced <quote>bow for, in</quote> with <quote>bow, for in</quote>.</p>
+       <p>(<a idref="sect45">45</a>) Replaced <quote>bow for, in</quote> with <quote>bow, for in</quote>.<!--ERRTAG-RE-92339-ITEM--> Replaced <quote>prowess with a bow</quote> with <quote>prowess with a Bow</quote>.<!--/ERRTAG-RE-92339-ITEM--></p>
        <p>(<a idref="sect46">46</a>) Replaced <quote>heart and</quote> with <quote>heart, and</quote>.</p>
-       <p>(<a idref="sect47">47</a>) Replaced <quote>knuckleduster</quote> with <quote>knuckle-duster</quote> and <quote>knuckleduster and, judging</quote> with <quote>knuckleduster, and judging</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
+       <p>(<a idref="sect47">47</a>) Replaced <quote>knuckleduster</quote> with <quote>knuckle-duster</quote> and <quote>knuckleduster and, judging</quote> with <quote>knuckleduster, and judging</quote>. Added a period to the end of the illustration<ch.apos/>s caption.<!--ERRTAG-RE-94670-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-94670-ITEM--></p>
        <p>(<a idref="sect51">51</a>) Deleted a period in the middle of the second sentence.</p>
        <p>(<a idref="sect53">53</a>) In the first choice, replaced <quote>Unless you have already done so, if you wish to approach the merchant<ch.ellips/></quote> with <quote>If you wish to approach the merchant<ch.ellips/></quote>  It is actually impossible to have already approached the merchant at this point.</p>
-       <p>(<a idref="sect56">56</a>) Replaced <quote>men and</quote> with <quote>men, and</quote>.</p>
+       <p>(<a idref="sect56">56</a>) Replaced <quote>men and</quote> with <quote>men, and</quote>.<!--ERRTAG-RA-100917-ITEM--> Replaced all occurrences of <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RA-100917-ITEM--></p>
        <p>(<a idref="sect58">58</a>) Replaced <quote>guildhouse</quote> with <quote>guild-house</quote>.</p>
        <p>(<a idref="sect60">60</a>) Replaced <quote>old but</quote> with <quote>old, but</quote>.</p>
        <p>(<a idref="sect62">62</a>) Replaced <quote>truth for</quote> with <quote>truth, for</quote>.</p>
@@ -6326,12 +6334,15 @@
        <p>(<a idref="sect68">68</a>) Replaced <quote>forest of Eula</quote> with <quote>Forest of Eula</quote>.</p>
        <p>(<a idref="sect71">71</a>) Replaced <quote>man and</quote> with <quote>man, and</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect73">73</a>) Moved the Curing choice into the first position.</p>
+<p>(<a idref="sect74">74</a>)<!--ERRTAG-RE-116977-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-116977-ITEM--></p>
+<p>(<a idref="sect75">75</a>)<!--ERRTAG-RE-117462-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-117462-ITEM--><!--ERRTAG-RE-117970-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-117970-ITEM--></p>
        <p>(<a idref="sect76">76</a>) Replaced <quote>Items</quote> with <quote>items</quote>. Altered list of items to initial capital letters.</p>
        <p>(<a idref="sect77">77</a>) Replaced <quote>war horn</quote> with <quote>war-horn</quote> and <quote>battle frenzy</quote> with <quote>battle-frenzy</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect78">78</a>) Replaced <quote>back-handed</quote> with <quote>backhanded</quote>.</p>
        <p>(<a idref="sect81">81</a>) Replaced <quote>animal and</quote> with <quote>animal, and</quote>.</p>
        <p>(<a idref="sect82">82</a>) Replaced <quote>merchants, but</quote> with <quote>merchants but</quote> and <quote>horses; not</quote> with <quote>horses: not</quote>.</p>
        <p>(<a idref="sect84">84</a>) Replaced <quote>formula but</quote> with <quote>formula, but</quote>, <quote>heavy and</quote> with <quote>heavy, and</quote>, and <quote>awake but</quote> with <quote>awake, but</quote>.</p>
+<p>(<a idref="sect85">85</a>)<!--ERRTAG-RE-129198-ITEM--> Replaced <quote>you have a bow</quote> with <quote>you have a Bow</quote>.<!--/ERRTAG-RE-129198-ITEM--><!--ERRTAG-RE-129343-ITEM--> Replaced <quote>do not have a bow</quote> with <quote>do not have a Bow</quote>.<!--/ERRTAG-RE-129343-ITEM--></p>
        <p>(<a idref="sect86">86</a>) Replaced <quote>done and</quote> with <quote>done, and</quote> and <quote>devotion and</quote> with <quote>devotion, and</quote>.</p>
        <p>(<a idref="sect87">87</a>) Replaced <quote>battle skill</quote> with <quote>battle-skill</quote>.</p>
        <p>(<a idref="sect88">88</a>) Replaced <quote>threat, and</quote> with <quote>threat and</quote>.</p>
@@ -6339,6 +6350,7 @@
        <p>(<a idref="sect90">90</a>) Replaced <quote>huge lumbering</quote> with <quote>huge, lumbering</quote>, <quote>thick twisted</quote> with <quote>thick, twisted</quote>, <quote>head and</quote> with <quote>head, and</quote>, and <quote>vault and</quote> with <quote>vault, and</quote>.</p>
        <p>(<a idref="sect93">93</a>) Replaced <quote>slumber but</quote> with <quote>slumber, but</quote>.</p>
        <p>(<a idref="sect94">94</a>) Replaced <quote>annex but</quote> with <quote>annex, but</quote>.</p>
+<p>(<a idref="sect95">95</a>)<!--ERRTAG-RE-136810-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-136810-ITEM--><!--ERRTAG-RE-137323-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-137323-ITEM--></p>
        <p>(<a idref="sect96">96</a>) Replaced <quote>chainmail, strides</quote> with <quote>chainmail strides</quote>.</p>
        <p>(<a idref="sect98">98</a>) Replaced <quote>QUARTERSTAFFS</quote> with <quote>QUARTERSTAVES</quote>.</p>
        <p>(<a idref="sect99">99</a>) Replaced <quote>shock and</quote> with <quote>shock, and</quote>, <quote>pikeheads</quote> with <quote>pike heads</quote>, and <quote>breath but</quote> with <quote>breath, but</quote>.</p>
@@ -6350,6 +6362,7 @@
        <p>(<a idref="sect112">112</a>) Replaced <quote>dead and</quote> with <quote>dead, and</quote>.</p>
        <p>(<a idref="sect113">113</a>) Replaced <quote>lying and</quote> with <quote>lying, and</quote> and <quote>Chart, before</quote> with <quote>Chart before</quote>.</p>
        <p>(<a idref="sect114">114</a>) Replaced <quote>heart and, as</quote> with <quote>heart, and as</quote>.</p>
+<p>(<a idref="sect115">115</a>)<!--ERRTAG-RE-154599-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-154599-ITEM--></p>
        <p>(<a idref="sect116">116</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect118">118</a>) Replaced <quote>sunset you</quote> with <quote>sunset, you</quote>. Replaced <quote>forest of Eula</quote> with <quote>Forest of Eula</quote>.</p>
        <p>(<a idref="sect119">119</a>) Replaced <quote>Rhem and</quote> with <quote>Rhem, and</quote> and <quote>found but</quote> with <quote>found, but</quote>.</p>
@@ -6366,33 +6379,34 @@
        <p>(<a idref="sect134">134</a>) Replaced <quote>birdsong</quote> with <quote>bird song</quote>, <quote>Cyrilus, <ch.apos/>The</quote> with <quote>Cyrilus. <ch.apos/>The</quote>, <quote>semi-circle</quote> with <quote>semicircle</quote>, and <quote>month and</quote> with <quote>month, and</quote>.</p>
        <p>(<a idref="sect135">135</a>) Replaced <quote>pass she</quote> with <quote>pass, she</quote>.</p>
        <p>(<a idref="sect137">137</a>) Replaced <quote>toa-tree</quote> with <quote>toa-tree</quote>.</p>
-       <p>(<a idref="sect138">138</a>) Replaced <quote>Instictively</quote> with <quote>Instinctively</quote> and <quote>free but</quote> with <quote>free, but</quote>.</p>
+       <p>(<a idref="sect138">138</a>) Replaced <quote>Instictively</quote> with <quote>Instinctively</quote> and <quote>free but</quote> with <quote>free, but</quote>.<!--ERRTAG-RE-180365-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-180365-ITEM--></p>
        <p>(<a idref="sect139">139</a>) Replaced <quote>axe</quote> with <quote>Axe</quote>.</p>
-       <p>(<a idref="sect141">141</a>) Replaced <quote>Chart), and</quote> with <quote>Chart) and</quote>.</p>
+       <p>(<a idref="sect141">141</a>) Replaced <quote>Chart), and</quote> with <quote>Chart) and</quote>.<!--ERRTAG-RE-183874-ITEM--> Replaced <quote>you have a bow</quote> with <quote>you have a Bow</quote>.<!--/ERRTAG-RE-183874-ITEM--><!--ERRTAG-RE-184019-ITEM--> Replaced <quote>do not have a bow</quote> with <quote>do not have a Bow</quote>.<!--/ERRTAG-RE-184019-ITEM--></p>
        <p>(<a idref="sect144">144</a>) Replaced <quote>much-needed</quote> with <quote>much needed</quote>.</p>
        <p>(<a idref="sect146">146</a>) Replaced <quote>behind and</quote> with <quote>behind, and</quote>. Replaced <quote>north-west</quote> with <quote>northwest</quote>.</p>
        <p>(<a idref="sect147">147</a>) Replaced <quote>street and</quote> with <quote>street, and</quote> and <quote>you and</quote> with <quote>you, and</quote>.</p>
        <p>(<a idref="sect148">148</a>) Replaced <quote>Items, or</quote> with <quote>Items or</quote>.</p>
        <p>(<a idref="sect150">150</a>) Replaced <quote>head first</quote> with <quote>head-first</quote>.</p>
        <p>(<a idref="sect151">151</a>) Moved the choice regarding having been to the temple of Maaken into the first position. Added a period to the end of the illustration<ch.apos/>s caption.</p>
-       <p>(<a idref="sect155">155</a>) Replaced <quote>you and</quote> with <quote>you, and</quote>.</p>
+<p>(<a idref="sect153">153</a>)<!--ERRTAG-RE-195482-ITEM--> Replaced <quote>you have a bow</quote> with <quote>you have a Bow</quote>.<!--/ERRTAG-RE-195482-ITEM--><!--ERRTAG-RE-195627-ITEM--> Replaced <quote>do not have a bow</quote> with <quote>do not have a Bow</quote>.<!--/ERRTAG-RE-195627-ITEM--></p>
+       <p>(<a idref="sect155">155</a>) Replaced <quote>you and</quote> with <quote>you, and</quote>.<!--ERRTAG-RE-196448-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-196448-ITEM--></p>
        <p>(<a idref="sect156">156</a>) Replaced <quote>resistance</quote> with <quote>Resistance</quote>.</p>
        <p>(<a idref="sect158">158</a>) Replaced <quote>wall and</quote> with <quote>wall, and</quote>.</p>
-       <p>(<a idref="sect159">159</a>) Replaced <quote>Varetian</quote> with <quote>Varettian</quote>.</p>
+       <p>(<a idref="sect159">159</a>) Replaced <quote>Varetian</quote> with <quote>Varettian</quote>.<!--ERRTAG-RE-202015-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-202015-ITEM--></p>
        <p>(<a idref="sect160">160</a>) Replaced <quote>unprepared and</quote> with <quote>unprepared, and</quote>, <quote>face, somersaulting</quote> with <quote>face somersaulting</quote>, and <quote>again you</quote> with <quote>again, you</quote>.</p>
        <p>(<a idref="sect161">161</a>) Replaced <quote>crowd and</quote> with <quote>crowd, and</quote>. Replaced <quote>belt pouch</quote> with <quote>Belt Pouch</quote>.</p>
        <p>(<a idref="sect162">162</a>) Replaced <quote>deterred and</quote> with <quote>deterred, and</quote>.</p>
-       <p>(<a idref="sect164">164</a>) Replaced <quote>time and</quote> with <quote>time, and</quote> and <quote>northlander</quote> with <quote>Northlander</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
+       <p>(<a idref="sect164">164</a>) Replaced <quote>time and</quote> with <quote>time, and</quote> and <quote>northlander</quote> with <quote>Northlander</quote>. Added a period to the end of the illustration<ch.apos/>s caption.<!--ERRTAG-RE-206937-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-206937-ITEM--></p>
        <p>(<a idref="sect165">121</a>) Replaced <quote>guild of city criers</quote> with <quote>Guild of City Criers</quote>.</p>
        <p>(<a idref="sect166">166</a>) Replaced <quote>wagon but</quote> with <quote>wagon, but</quote> and <quote>bruised but</quote> with <quote>bruised, but</quote>.</p>
        <p>(<a idref="sect167">167</a>) Replaced <quote>you and</quote> with <quote>you, and</quote>.</p>
        <p>(<a idref="sect169">169</a>) Replaced <quote>unlocked but</quote> with <quote>unlocked, but</quote>.</p>
-       <p>(<a idref="sect170">170</a>) Replaced <quote>with a bow</quote> with <quote>with Bow</quote>.</p>
+       <p>(<a idref="sect170">170</a>) Replaced <quote>with a bow</quote> with <quote>with Bow</quote>.<!--ERRTAG-RE-212420-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-212420-ITEM--></p>
        <p>(<a idref="sect171">171</a>) Replaced <quote>strength and</quote> with <quote>strength, and</quote>.</p>
        <p>(<a idref="sect172">172</a>) Replaced <quote>innkeeper, and</quote> with <quote>innkeeper and</quote>.</p>
        <p>(<a idref="sect173">173</a>) Replaced <quote>wounds but</quote> with <quote>wounds, but</quote>.</p>
        <p>(<a idref="sect175">175</a>) Removed <quote> at the front of this book</quote>.</p>
-       <p>(<a idref="sect178">178</a>) Replaced <quote>with a bow</quote> with <quote>with Bow</quote>.</p>
+       <p>(<a idref="sect178">178</a>) Replaced <quote>with a bow</quote> with <quote>with Bow</quote>.<!--ERRTAG-RE-219575-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-219575-ITEM--></p>
        <p>(<a idref="sect179">179</a>) Replaced <quote>long cold</quote> with <quote>long, cold</quote>.</p>
        <p>(<a idref="sect184">184</a>) Replaced <quote>pirate and</quote> with <quote>pirate, and</quote>.</p>
        <p>(<a idref="sect186">186</a>) Replaced <quote>vibrate and</quote> with <quote>vibrate, and</quote>.</p>
@@ -6400,25 +6414,29 @@
        <p>(<a idref="sect188">188</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect191">191</a>) Replaced <quote>ride but</quote> with <quote>ride, but</quote>.</p>
        <p>(<a idref="sect195">195</a>) Replaced <quote>peril and</quote> with <quote>peril, and</quote> and <quote>end and</quote> with <quote>end, and</quote>.</p>
+<p>(<a idref="sect196">196</a>)<!--ERRTAG-RE-234157-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-234157-ITEM--></p>
        <p>(<a idref="sect197">197</a>) Replaced <quote>points), and</quote> with <quote>points) and</quote>.</p>
-       <p>(<a idref="sect199">199</a>) Deleted a period after <quote>He asks</quote> in the last sentence.</p>
+       <p>(<a idref="sect199">199</a>) Deleted a period after <quote>He asks</quote> in the last sentence.<!--ERRTAG-RE-236717-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-236717-ITEM--></p>
        <p>(<a idref="sect200">200</a>) Replaced <quote>open and, as</quote> with <quote>open, and as</quote>, <quote>chill stale</quote> with <quote>chill, stale</quote>, and <quote>key but</quote> with <quote>key, but</quote>.</p>
+<p>(<a idref="sect201">201</a>)<!--ERRTAG-RE-238835-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-238835-ITEM--></p>
        <p>(<a idref="sect202">202</a>) Replaced <quote>much-needed</quote> with <quote>much needed</quote>.</p>
        <p>(<a idref="sect204">204</a>) Replaced <quote>company and</quote> with <quote>company, and</quote>.</p>
        <p>(<a idref="sect206">206</a>) Replaced <quote>copse, and</quote> with <quote>copse and</quote>.</p>
        <p>(<a idref="sect208">208</a>) Replaced <quote>face but, forewarned</quote> with <quote>face, but forewarned</quote>.</p>
+<p>(<a idref="sect209">209</a>)<!--ERRTAG-RE-245806-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-245806-ITEM--><!--ERRTAG-RE-246817-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-246817-ITEM--></p>
        <p>(<a idref="sect211">211</a>) Replaced <quote>head and, likewise,</quote> with <quote>head, and likewise,</quote>, <quote>company and, as</quote> with <quote>company, and as</quote>, <quote>point and</quote> with <quote>point, and</quote>, and <quote>fighters and</quote> with <quote>fighters, and</quote>. Replaced <quote>Helm</quote> with <quote>Helin</quote>.</p>
        <p>(<a idref="sect212">212</a>) Replaced <quote>northlander</quote> with <quote>Northlander</quote>.</p>
        <p>(<a idref="sect214">214</a>) Replaced <quote>Baknar or Kalkoth</quote> with <quote>baknar or kalkoth</quote>.</p>
        <p>(<a idref="sect217">217</a>) Replaced <quote>stones but</quote> with <quote>stones, but</quote>.</p>
        <p>(<a idref="sect219">219</a>) Replaced <quote>arena for</quote> with <quote>arena, for</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect223">223</a>) Replaced <quote>Chart, before</quote> with <quote>Chart before</quote>.</p>
-       <p>(<a idref="sect224">224</a>) Replaced <quote>aid but</quote> with <quote>aid, but</quote>.</p>
+       <p>(<a idref="sect224">224</a>) Replaced <quote>aid but</quote> with <quote>aid, but</quote>.<!--ERRTAG-RE-261761-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-261761-ITEM--></p>
+<p>(<a idref="sect227">227</a>)<!--ERRTAG-RE-264174-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-264174-ITEM--></p>
        <p>(<a idref="sect229">229</a>) Replaced <quote>archers and</quote> with <quote>archers, and</quote>.</p>
        <p>(<a idref="sect230">230</a>) Replaced <quote>guardedness and</quote> with <quote>guardedness, and</quote>.</p>
        <p>(<a idref="sect232">232</a>) Replaced <quote>small piggish</quote> with <quote>small, piggish</quote> and <quote>Chart), and</quote> with <quote>Chart) and</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
-       <p>(<a idref="sect234">234</a>) Replaced <quote>aside and</quote> with <quote>aside, and</quote> and <quote>northlander</quote> with <quote>Northlander</quote>.</p>
-       <p>(<a idref="sect236">236</a>) Replaced <quote>dead and</quote> with <quote>dead, and</quote>.</p>
+       <p>(<a idref="sect234">234</a>) Replaced <quote>aside and</quote> with <quote>aside, and</quote> and <quote>northlander</quote> with <quote>Northlander</quote>.<!--ERRTAG-RE-272528-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-272528-ITEM--></p>
+       <p>(<a idref="sect236">236</a>) Replaced <quote>dead and</quote> with <quote>dead, and</quote>.<!--ERRTAG-RE-272519-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-272519-ITEM--></p>
        <p>(<a idref="sect243">243</a>) Replaced <quote>with a bow</quote> with <quote>with Bow</quote>.</p>
        <p>(<a idref="sect244">244</a>) Replaced <quote>horsemen but</quote> with <quote>horsemen, but</quote>.</p>
        <p>(<a idref="sect246">246</a>) Replaced <quote>place but</quote> with <quote>place, but</quote> and <quote>darkness and</quote> with <quote>darkness, and</quote>.</p>
@@ -6426,12 +6444,15 @@
        <p>(<a idref="sect249">249</a>) Replaced <quote>ceiling but</quote> with <quote>ceiling, but</quote>.</p>
        <p>(<a idref="sect250">250</a>) Replaced <quote>any, and</quote> with <quote>any and</quote>.</p>
        <p>(<a idref="sect251">251</a>) Replaced <quote>rest but</quote> with <quote>rest, but</quote>.</p>
+<p>(<a idref="sect252">252</a>)<!--ERRTAG-RA-289522-ITEM--> Replaced all occurrences of <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RA-289522-ITEM--></p>
        <p>(<a idref="sect255">255</a>) Replaced <quote>Psi-shield</quote> with <quote>Psi-screen</quote>.</p>
-       <p>(<a idref="sect257">257</a>) Replaced <quote>hard unyielding</quote> with <quote>hard, unyielding</quote>.</p>
+       <p>(<a idref="sect257">257</a>) Replaced <quote>hard unyielding</quote> with <quote>hard, unyielding</quote>.<!--ERRTAG-RE-294925-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-294925-ITEM--></p>
        <p>(<a idref="sect258">258</a>) Replaced <quote>drawbolt</quote> with <quote>bolt</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect261">261</a>) Replaced <quote>seconds but</quote> with <quote>seconds, but</quote>.</p>
        <p>(<a idref="sect262">262</a>) Moved the Divination choice into the first position. Replaced <quote>guildhouse</quote> with <quote>guild-house</quote>.</p>
        <p>(<a idref="sect263">263</a>) Replaced <quote>bodyguards and</quote> with <quote>bodyguards, and</quote>.</p>
+<p>(<a idref="sect264">264</a>)<!--ERRTAG-RE-299499-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-299499-ITEM--><!--ERRTAG-RE-301286-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-301286-ITEM--></p>
+<p>(<a idref="sect265">265</a>)<!--ERRTAG-RE-300020-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-300020-ITEM--></p>
        <p>(<a idref="sect267">267</a>) Replaced <quote>Varettian plain</quote> with <quote>Varettian Plain</quote>.</p>
        <p>(<a idref="sect268">268</a>) Replaced <quote>with a bow</quote> with <quote>with Bow</quote>.</p>
        <p>(<a idref="sect270">270</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
@@ -6443,22 +6464,24 @@
        <p>(<a idref="sect277">277</a>) Replaced <quote>lightning fast</quote> with <quote>lightning-fast</quote>.</p>
        <p>(<a idref="sect278">278</a>) Replaced <quote>feet but</quote> with <quote>feet, but</quote>.</p>
        <p>(<a idref="sect279">279</a>) Replaced <quote>doors and</quote> with <quote>doors, and</quote>, <quote>building and</quote> with <quote>building, and</quote>, and <quote>battle but, unlike</quote> with <quote>battle, but unlike</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
-       <p>(<a idref="sect283">283</a>) Replaced <quote>power your</quote> with <quote>power, your</quote>, <quote>ground and</quote> with <quote>ground, and</quote>, <quote>northlander</quote> with <quote>Northlander</quote>, and <quote>attack you</quote> with <quote>attack, you</quote>.</p>
+       <p>(<a idref="sect283">283</a>) Replaced <quote>power your</quote> with <quote>power, your</quote>, <quote>ground and</quote> with <quote>ground, and</quote>, <quote>northlander</quote> with <quote>Northlander</quote>, and <quote>attack you</quote> with <quote>attack, you</quote>.<!--ERRTAG-RA-319698-ITEM--> Replaced all occurrences of <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RA-319698-ITEM--></p>
        <p>(<a idref="sect284">284</a>) Replaced <quote>huge fat-bellied</quote> with <quote>huge, fat-bellied</quote> and <quote>men and</quote> with <quote>men, and</quote>.</p>
        <p>(<a idref="sect286">286</a>) Replaced <quote>cover and</quote> with <quote>cover, and</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
        <p>(<a idref="sect287">287</a>) Replaced <quote>here but</quote> with <quote>here, but</quote>.</p>
        <p>(<a idref="sect288">288</a>) Replaced <quote>esteem for</quote> with <quote>esteem, for</quote>.</p>
-       <p>(<a idref="sect289">289</a>) Replaced <quote>wineshops</quote> with <quote>wine shops</quote>. Replaced <quote>rivermen</quote> with <quote>river-men</quote>.</p>
+       <p>(<a idref="sect289">289</a>) Replaced <quote>wineshops</quote> with <quote>wine shops</quote>. Replaced <quote>rivermen</quote> with <quote>river-men</quote>.<!--ERRTAG-RE-326809-ITEM--> Replaced <quote>A knot of brawling river-men tumble</quote> with <quote>A knot of brawling river-men tumbles</quote>.<!--/ERRTAG-RE-326809-ITEM--><!--ERRTAG-RE-326901-ITEM--> Replaced <quote>doorway and set about each other</quote> with <quote>doorway, and they set about each other</quote>.<!--/ERRTAG-RE-326901-ITEM--></p>
        <p>(<a idref="sect290">290</a>) Replaced <quote>siegeworks</quote> with <quote>siege-works</quote>.</p>
-       <p>(<a idref="sect292">292</a>) Replaced <quote>head and</quote> with <quote>head, and</quote>.</p>
+       <p>(<a idref="sect292">292</a>) Replaced <quote>head and</quote> with <quote>head, and</quote>.<!--ERRTAG-RE-327452-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-327452-ITEM--></p>
        <p>(<a idref="sect293">293</a>) Replaced <quote>new-found</quote> with <quote>newfound</quote>.</p>
        <p>(<a idref="sect294">294</a>) Switched the section numbers given for the two choices to be consistent with the choices in <a idref="sect151">Section 151</a> and the text of <a idref="sect67">Sections 67</a> and <a idref="sect108">108</a>. Replaced <quote>men and</quote> with <quote>men, and</quote> and <quote>forever but</quote> with <quote>forever, but</quote>.</p>
        <p>(<a idref="sect295">295</a>) Replaced <quote>charge but</quote> with <quote>charge, but</quote>.</p>
-       <p>(<a idref="sect296">296</a>) Replaced <quote>target but</quote> with <quote>target, but</quote>.</p>
+       <p>(<a idref="sect296">296</a>) Replaced <quote>target but</quote> with <quote>target, but</quote>.<!--ERRTAG-RE-330409-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-330409-ITEM--><!--ERRTAG-RA-332122-ITEM--> Replaced all occurrences of <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RA-332122-ITEM--></p>
        <p>(<a idref="sect297">297</a>) Replaced <quote>plunder but</quote> with <quote>plunder, but</quote> and <quote>mercenaries but</quote> with <quote>mercenaries, but</quote>.</p>
        <p>(<a idref="sect299">299</a>) Replaced <quote>you but</quote> with <quote>you, but</quote>. Moved the Huntmastery choice into the first position.</p>
        <p>(<a idref="sect300">300</a>) Replaced <quote>city you</quote> with <quote>city, you</quote> and <quote>hall there</quote> with <quote>hall, there</quote>.</p>
+<p>(<a idref="sect301">301</a>)<!--ERRTAG-RE-337127-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-337127-ITEM--></p>
        <p>(<a idref="sect302">302</a>) Replaced <quote>Varetta, or</quote> with <quote>Varetta or</quote>.</p>
+<p>(<a idref="sect303">303</a>)<!--ERRTAG-RA-338860-ITEM--> Replaced all occurrences of <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RA-338860-ITEM--></p>
        <p>(<a idref="sect305">305</a>) Moved the Divination choice into the first position.</p>
        <p>(<a idref="sect304">304</a>) Replaced <quote>Chart), and</quote> with <quote>Chart) and</quote>.</p>
        <p>(<a idref="sect307">307</a>) Replaced <quote>today and</quote> with <quote>today, and</quote>.</p>
@@ -6476,13 +6499,13 @@
        <p>(<a idref="sect326">326</a>) Replaced <quote>fades and</quote> with <quote>fades, and</quote>.</p>
        <p>(<a idref="sect328">328</a>) Replaced <quote>Chart), and</quote> with <quote>Chart) and</quote>.</p>
        <p>(<a idref="sect329">329</a>) Replaced <quote>you and</quote> with <quote>you, and</quote> and <quote>wounded and</quote> with <quote>wounded, and</quote>.</p>
-       <p>(<a idref="sect330">330</a>) Replaced <quote>village and, although</quote> with <quote>village, and although</quote>.</p>
+       <p>(<a idref="sect330">330</a>) Replaced <quote>village and, although</quote> with <quote>village, and although</quote>.<!--ERRTAG-RE-362755-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-362755-ITEM--></p>
        <p>(<a idref="sect331">331</a>) Replaced <quote>way, and</quote> with <quote>way and</quote>, <quote>horizon you</quote> with <quote>horizon, you</quote>, and <quote>streets and</quote> with <quote>streets, and</quote>.</p>
        <p>(<a idref="sect332">332</a>) Replaced <quote>barge and</quote> with <quote>barge, and</quote>. Moved the choice regarding having no Gold Crowns into the first position. Moved the Pathsmanship/Divination choice into the second position and replaced <quote>If</quote> with <quote>Otherwise, if</quote> in that choice.</p>
-       <p>(<a idref="sect334">334</a>) Replaced <quote>huge lumbering</quote> with <quote>huge, lumbering</quote> and <quote>head and</quote> with <quote>head, and</quote>. Moved the bow choice into the first position.</p>
+       <p>(<a idref="sect334">334</a>) Replaced <quote>huge lumbering</quote> with <quote>huge, lumbering</quote> and <quote>head and</quote> with <quote>head, and</quote>. Moved the bow choice into the first position.<!--ERRTAG-RE-367552-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-367552-ITEM--></p>
        <p>(<a idref="sect338">338</a>) Replaced <quote>surrounded and</quote> with <quote>surrounded, and</quote>, <quote>shortlived</quote> with <quote>short-lived</quote>, and <quote>completely and, as</quote> with <quote>completely, and as</quote>.</p>
        <p>(<a idref="sect339">339</a>) Replaced <quote>If you possess a Kalte Firesphere, a Torch, or a Tinderbox</quote> with <quote>If you possess a Kalte Firesphere or a Torch and a Tinderbox</quote>. A Torch is unusable without a Tinderbox; this parallels wording in sections from future <cite>Lone Wolf</cite> books. Replaced <quote>Firesphere, a Torch, or a Tinderbox,</quote> with <quote>Firesphere or a Torch and a Tinderbox,</quote>. Replaced <quote>Items</quote> with <quote>items</quote>.</p>
-       <p>(<a idref="sect340">340</a>) Replaced <quote>jerkin, enters</quote> with <quote>jerkin enters</quote> and <quote>field are</quote> with <quote>field is</quote>. Replaced <quote>with a bow</quote> with <quote>with Bow</quote>.</p>
+       <p>(<a idref="sect340">340</a>) Replaced <quote>jerkin, enters</quote> with <quote>jerkin enters</quote> and <quote>field are</quote> with <quote>field is</quote>. Replaced <quote>with a bow</quote> with <quote>with Bow</quote>.<!--ERRTAG-RE-372719-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-372719-ITEM--></p>
        <p>(<a idref="sect341">341</a>) Replaced <quote>riverbank</quote> with <quote>river bank</quote>. Replaced <quote>Cener mountains</quote> with <quote>Cener Mountains</quote>.</p>
        <p>(<a idref="sect342">342</a>) Replaced <quote>matron, as</quote> with <quote>matron as</quote>, <quote>Alether plant</quote> with <quote>alether plant</quote>, <quote>Alether berries</quote> with <quote>Alether Berries</quote>, and <quote>another, and</quote> with <quote>another and</quote>.</p>
        <p>(<a idref="sect347">347</a>) Replaced <quote>Swords and, as</quote> with <quote>Swords, and as</quote>. Moved the Huntmastery choice into the first position.</p>
