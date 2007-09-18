@@ -127,7 +127,7 @@ The implementation of tables is incomplete and kludgy.
  {%% One-sided %%
   \fancyhead[C]{\iffloatpage{}{\bfseries{</xsl:text><xsl:value-of select="/gamebook/meta/title[1]" /><xsl:text>:} \normalfont{</xsl:text><xsl:value-of select="/gamebook/meta/creator[@class='short']" /><xsl:text>}}}
   \fancyhead[R]{\iffloatpage{}{\thepage}}}
-  \renewcommand{\headrulewidth}{\iffloatpage{0pt}{0.4pt}}}
+  \renewcommand{\headrulewidth}{\iffloatpage{0pt}{0.4pt}}
 
  \fancypagestyle{plain}{
   \fancyhf{}
@@ -542,7 +542,8 @@ The implementation of tables is incomplete and kludgy.
    {%% One-sided %%
     \fancyhead[R]{\iffloatpage{}{\large{\bfseries \aonmarks}}}
     \fancyhead[L]{\iffloatpage{}{\thepage}}%
-    }</xsl:text> <xsl:value-of select="$newparagraph" />
+    }
+   }</xsl:text> <xsl:value-of select="$newparagraph" />
  </xsl:if>
 
  <xsl:if test="not( self::node()[@id='numbered'] )">
