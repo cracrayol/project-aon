@@ -2047,7 +2047,7 @@
       <p><quote>Just so,</quote> replies Gwynian. <quote>Just so.</quote></p>
       <p><quote>Then I must away at once,</quote> you say, placing the Sun-crystal into the pocket of your tunic. <quote>Now that I have the weapon I need to save my people, I can stay not a moment longer; I must leave for Casiorn at once.</quote></p>
       <p><quote>Yes,</quote> says Gwynian, still smiling, <quote>I know of your plans, and I have made provision for you to travel to the City of Merchants more swiftly. Come, follow me, and all will be revealed.</quote></p>
-      <p>Record the Sun-crystal on your <a idref="action">Action Chart</a> as a Special Item. You must discard another item in its favour if you already possess the maximum permissible.</p>
+      <p>Record the Sun-crystal on your <a idref="action">Action Chart</a> as a Special Item. You must discard another item in its favour if you already possess the <!--ERRTAG-RE-187953-->maximum number permissible<!--/ERRTAG-RE-187953-->.</p>
       <choice idref="sect323"><link-text>Turn to 323</link-text>.</choice>
      </data>
     </section>
@@ -2139,7 +2139,7 @@
 
      <data>
       <p>Your horse crashes lifelessly to the ground and you are thrown forwards through the air. With cat-like grace, you land on your feet among the boulders and bracken which border this hill road, and regain your balance almost immediately. Seconds later, you see a yelling horde of leather-clad men, each brandishing a sword or a spear, come rushing from hiding places among the surrounding pines. As they close in upon you, you unsheathe your weapon and prepare to fight for your life.</p>
-      <combat><enemy>Eldenoran ambushers</enemy><enemy-attribute class="combatskill">38</enemy-attribute><enemy-attribute class="endurance">42</enemy-attribute></combat>
+      <combat><enemy>Eldenoran <!--ERRTAG-RE-197365-->Ambushers<!--/ERRTAG-RE-197365--></enemy><enemy-attribute class="combatskill">38</enemy-attribute><enemy-attribute class="endurance">42</enemy-attribute></combat>
       <choice idref="sect285">If you win this combat, <link-text>turn to 285</link-text>.</choice>
      </data>
     </section>
@@ -2236,9 +2236,9 @@
      <meta><title>111</title></meta>
 
      <data>
-      <p>You spend the night at the Royal Citadel as the guest of Queen Evaine, and enjoy a fine feast and the hospitality of her court. Then, shortly after dawn of the following day, you bid her majesty, and your companion<ch.emdash/>Lord Ardan<ch.emdash/>a fond farewell before beginning the next stage of your long journey home.</p>
+      <p>You spend the night at the Royal Citadel as the guest of Queen Evaine, and enjoy a fine feast and the hospitality of her court. Then, shortly after dawn of the following day, you bid <!--ERRTAG-RE-202481-->her Majesty<!--/ERRTAG-RE-202481-->, and your companion<ch.emdash/>Lord Ardan<ch.emdash/>a fond farewell before beginning the next stage of your long journey home.</p>
       <p>The Queen has given her Lord Constable a Royal Seal and placed him, along with a troop of ten court cavalrymen, at your disposal. Lord Nathor and his men are to act as your guides and bodyguards on the road to Vanamor, the capital city of neighbouring Palmyrion. This republic is closely allied to Talestria and lies along its eastern border. Palmyrion also has close ties with your homeland and you look forward to the chance of renewing your friendship with its leader, Elector Manatine.</p>
-      <p>Mounted on fine Talestrian steeds, your party leaves the walled city of Garthen by its East Gate and sets off towards the outlying village of Sharr. Here you cross the mighty River Phoen by way of a great stone bridge. On the far side of this bridge you notice a signpost which points to the east. It reads: VANAMOR 280 miles.</p>
+      <p>Mounted on fine Talestrian steeds, your party leaves the walled city of Garthen by its East Gate and sets off towards the outlying village of Sharr. Here you cross the mighty River Phoen by way of a great stone bridge. On the far side of this bridge you notice a signpost which points to the east. It <!--ERRTAG-RE-203498-->reads <quote>VANAMOR 280 miles</quote><!--/ERRTAG-RE-203498-->.</p>
       <choice idref="sect210"><link-text>Turn to 210</link-text>.</choice>
      </data>
     </section>
@@ -2260,8 +2260,14 @@
     <section class="numbered" id="sect113">
      <meta><title>113</title></meta>
 
+     <footnotes>
+      <footnote id="sect113-1-foot" idref="sect113-1">
+       <p>Remember to remove the Oede herb or Matho<ch.apos/>s Potion from your <a idref="action">Action Chart</a>.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>The swelling in your throat is choking your oesophagus, making it difficult for you to swallow: lose 6 <typ class="attribute">ENDURANCE</typ> points. Fighting back the pain, you force yourself to swallow hard and, within seconds, you feel the terrible plague symptoms begin to subside.</p>
+      <p>The swelling in your throat is choking your oesophagus, making it difficult for you to swallow: lose 6 <typ class="attribute">ENDURANCE</typ> points. Fighting back the pain, you force yourself to swallow hard and, within seconds, you feel the terrible plague symptoms begin to subside.<footref id="sect113-1" idref="sect113-1-foot"/></p>
       <choice idref="sect193"><link-text>Turn to 193</link-text>.</choice>
      </data>
     </section>
@@ -2272,7 +2278,7 @@
      <data>
       <p>The lower ranks of the Kai are proud and excited to have you among them. Your presence inspires their courage and you feel confident that they will fight exceptionally well in the coming battle. Lord Rimoah is also by your side, quietly intoning the words of battle-spells in preparation for the Lavas<ch.apos/> attack.</p>
       <p><quote>Here they come!</quote> shouts Sabre Fox from the far end of the battlements.</p>
-      <p><quote>Take up your bows, my lords!</quote> you cry, as the first wave of winged beasts come sweeping down from out of the northern sky. <quote>And make every arrow count!</quote></p>
+      <p><quote>Take up your bows, my lords!</quote> you cry, as the first <!--ERRTAG-RE-207175-->wave of winged beasts comes<!--/ERRTAG-RE-207175--> sweeping down from out of the northern sky. <quote>And make every arrow count!</quote></p>
       <choice idref="sect192">If you possess a Bow, and wish to use it, <link-text>turn to 192</link-text>.</choice>
       <choice idref="sect78">If you do not, <link-text>turn to 78</link-text>.</choice>
      </data>
@@ -2421,7 +2427,7 @@
      <meta><title>127</title></meta>
 
      <data>
-      <p>You get to your feet and resume your steady climb towards the gate, now less than a hundred yards distant, but you have taken only a few dozen steps when suddenly another flight of Lavas emerge from the Shadow Gate. You flatten yourself against the damp granite in a desperate attempt to avoid being seen, but in your hurry you lose your footing on the slippery rocks.</p>
+      <p>You get to your feet and resume your steady climb towards the gate, now less than a hundred yards distant, but you have taken only a few dozen steps when suddenly another <!--ERRTAG-RE-220937-->flight of Lavas emerges<!--/ERRTAG-RE-220937--> from the Shadow Gate. You flatten yourself against the damp granite in a desperate attempt to avoid being seen, but in your hurry you lose your footing on the slippery rocks.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>. For every level of Kai rank you have attained above that of Kai Grand Guardian, add 1 to the number you have picked.</p>
       <choice idref="sect272">If your total score is now 5 or less, <link-text>turn to 272</link-text>.</choice>
       <choice idref="sect29">If it is 6<ch.endash/>8, <link-text>turn to 29</link-text>.</choice>
@@ -2464,7 +2470,7 @@
 
      <data>
       <p>The severe heat and poisonous atmosphere is beginning to take its toll: lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
-      <p>You sense that your Magnakai skill of Nexus is shielding your body from the worse effects of this hellish environment, but you cannot rely on it to protect you indefinitely. Already your tunic is smouldering and the soles of your boots are giving off wisps of blue smoke. You must escape from here soon, before you succumb to the heat and the toxic atmosphere.</p>
+      <p>You sense that your Magnakai skill of Nexus is shielding your body from the <!--ERRTAG-RE-224841-->worst effects<!--/ERRTAG-RE-224841--> of this hellish environment, but you cannot rely on it to protect you indefinitely. Already your tunic is smouldering and the soles of your boots are giving off wisps of blue smoke. You must escape from here soon, before you succumb to the heat and the toxic atmosphere.</p>
       <p>However, for the moment there is a more pressing danger to be faced. The dragon-creatures that you saw earlier are now advancing rapidly towards the Shadow Gate.</p>
       <choice idref="sect80"><link-text>Turn to 80</link-text>.</choice>
      </data>
@@ -2475,11 +2481,10 @@
 
      <data>
       <p>Queen Evaine commands the Lord Constable to take you to the citadel dungeons which are located several levels below the State Hall. Here, shackled to the dank stone wall of a rat-infested cell, is the man who was caught in a Garthen tavern plotting your murder. Limp and unconscious, he hangs by his wrists in chains, his emaciated body showing all too clearly the signs of recent tortures. A pot-bellied gaoler scoops a bucket of foul water from a trough by the cell door and revives the prisoner by pouring it unceremoniously over his head. Coughing and spluttering, the wretch stirs to consciousness. He raises his face and you sense that he recognizes immediately who you are; his eyes blaze with an undisguised hatred.</p>
-      <p><quote>He<ch.apos/>s a tough <ch.apos/>un,</quote> growls the gaoler. <quote>I<ch.apos/>ve used all o<ch.apos/> me skills on <ch.apos/>im but <ch.apos/>e won<ch.apos/>t say who <ch.apos/>is paymaster be.</quote></p>
+      <p><quote>He<ch.apos/>s a <!--ERRTAG-RE-226322-->tough un<!--/ERRTAG-RE-226322-->,</quote> growls the gaoler. <quote>I<ch.apos/>ve used all o<ch.apos/> me skills on <ch.apos/>im but <ch.apos/>e won<ch.apos/>t say who <ch.apos/>is paymaster be.</quote></p>
       <p>The fat gaoler reaches for a pair of long-handled pincers which are protruding from a brazier of hot coals.</p>
       <p><quote>Perhaps you<ch.apos/>ll be wanting to interrogate <ch.apos/>im yourself, sire?</quote> he says, offering you the pincers. Wisps of smoke curl from their sharpened tips which are red and glowing.</p>
-      <p><quote>Aye, gaoler, there are questions I<ch.apos/>d like this man to answer. But I<ch.apos/>ll not be needing those,</quote> you reply, declining the use of the cruel pincers.</p>
-      <p><quote>I prefer to rely on my own methods of interrogation.</quote></p>
+      <p><quote>Aye, gaoler, there are questions I<ch.apos/>d like this man to answer. But I<ch.apos/>ll not be needing those,</quote> you reply, declining the use of the cruel pincers. <quote>I prefer to rely on my own methods of interrogation.</quote></p>
       <choice idref="sect79">If you possess Kai-alchemy, <link-text>turn to 79</link-text>.</choice>
       <choice idref="sect254">If you possess Kai-surge, <link-text>turn to 254</link-text>.</choice>
       <choice idref="sect95">If you possess neither of these Grand Master Disciplines, or choose not to use them, <link-text>turn instead to 95</link-text>.</choice>
@@ -2490,7 +2495,7 @@
      <meta><title>133</title></meta>
 
      <data>
-      <p>You wait until the line of Eldenoran soldiers have filed past the entrance to the dugout, then you slip outside and make your way swiftly along the trench. Suddenly there is a terrific boom, and a brilliant splash of blue-white fire illuminates the distant bridge. It is the opening bombardment in yet another futile assault across the river.</p>
+      <p>You wait until the <!--ERRTAG-RE-227678-->line of Eldenoran soldiers has<!--/ERRTAG-RE-227678--> filed past the entrance to the dugout, then you slip outside and make your way swiftly along the trench. Suddenly there is a terrific boom, and a brilliant splash of blue-white fire illuminates the distant bridge. It is the opening bombardment in yet another futile assault across the river.</p>
       <p>The trench ahead is empty; its owners have already gone forward to support the new attack. When you reach the end, you scramble over the muddy parapet and race head-down across a stretch of open ground towards a small wood.</p>
       <choice idref="sect220"><link-text>Turn to 220</link-text>.</choice>
      </data>
@@ -2555,7 +2560,7 @@
 
      <data>
       <p>You steel yourself for the impact, but you hit the flagstones with such numbing force that your preparation does little to lessen the injuries you receive to your legs and body (lose 12 <typ class="attribute">ENDURANCE</typ> points). Moments later, you are hit by Nathor who comes crashing down upon your prone form. Your body softens his fall, but even so, the impact leaves him with a broken left ankle and severe cuts to his face and hands. Despite his obvious pain he manages to smile when he realizes that you are both still alive, revealing gaps where he is now missing two of his front teeth.</p>
-      <p>Using your natural Kai curing skills, you repair your internal injuries sufficiently for you to be able to stand and assist your companion. Bravely Nathor stifles his urge to scream as you take hold of his shattered ankle. You summon your healing powers and transmit them through your hands to his injured foot (reduce your <typ class="attribute">ENDURANCE</typ> score by a further 4 points). You feel the warmth of your power start to reduce the swollen tissues and mend the broken bone, but before you can complete the cure, a yelling horde of bogus castle guardsmen come rushing from out of the gatehouse with their swords drawn. Cursing your luck, you unsheathe your weapon and crouch in readiness to meet their manic attack.</p>
+      <p>Using your natural Kai curing skills, you repair your internal injuries sufficiently for you to be able to stand and assist your companion. Bravely Nathor stifles his urge to scream as you take hold of his shattered ankle. You summon your healing powers and transmit them through your hands to his injured foot (reduce your <typ class="attribute">ENDURANCE</typ> score by a further 4 points). You feel the warmth of your power start to reduce the swollen tissues and mend the broken bone, but before you can complete the cure, a yelling <!--ERRTAG-RE-234381-->horde of bogus castle guardsmen comes<!--/ERRTAG-RE-234381--> rushing from out of the gatehouse with their swords drawn. Cursing your luck, you unsheathe your weapon and crouch in readiness to meet their manic attack.</p>
       <combat><enemy>Castle <!--ERRTAG-RE-232730-->Guardsmen<!--/ERRTAG-RE-232730--> (impostors)</enemy><enemy-attribute class="combatskill">48</enemy-attribute><enemy-attribute class="endurance">48</enemy-attribute></combat>
       <choice idref="sect93">If you win this fight, <link-text>turn to 93</link-text>.</choice>
      </data>
@@ -2565,7 +2570,7 @@
      <meta><title>138</title></meta>
 
      <data>
-      <p>The first spatterings of rain are dampening your shoulders as you approach the forest town<ch.apos/>s solitary inn. The smell and soft noises of horses waft from an adjoining stable, and the flickering orange light of an open fire can be seen shimmering through the bulls-eye glass of the inn<ch.apos/>s leaded windows. You halt outside the main door and stoop to read a weather-faded board that is fixed to the wall:</p>
+      <p>The first spatterings of rain are dampening your shoulders as you approach the forest town<ch.apos/>s solitary inn. The smell and soft noises of horses waft from an adjoining stable, and the flickering orange light of an open fire can be seen shimmering through the <!--ERRTAG-RE-235319-->bull's-eye<!--/ERRTAG-RE-235319--> glass of the inn<ch.apos/>s leaded windows. You halt outside the main door and stoop to read a weather-faded board that is fixed to the wall:</p>
       <signpost>The Towering Pine Inn</signpost>
       <signpost>Room <ch.ampersand/> Stabling<ch.emdash/>2 Gold Crowns per night</signpost>
       <choice idref="sect103">If you possess sufficient Gold Crowns to stay here for the night, <link-text>turn to 103</link-text>.</choice>
@@ -2688,7 +2693,7 @@
      <meta><title>147</title></meta>
 
      <data>
-      <p>You recognize these creatures at once<ch.emdash/>they are Lavas, winged horrors from the Plane of Darkness, the domain of the Dark God himself. The memory of your previous encounter with these creatures sends a shiver coursing down your spine.</p>
+      <p>You recognize these creatures at once<ch.emdash/>they are Lavas, winged horrors from the Plane of Darkness, the domain of the Dark God himself. The memory of your <!--ERRTAG-RE-244652-->previous experience<!--/ERRTAG-RE-244652--> with these creatures sends a shiver coursing down your spine.</p>
 
       <p>With a silent signal you bring the regiment to a halt. Captain D<ch.apos/>Val leans towards you from his saddle and whispers: <quote>Here is the enemy who have your monastery surrounded, Grand Master, and this is the weakest point in their line.</quote></p>
       <p><quote>I know this place,</quote> you reply quietly. <quote>The monastery lies over the next ridge of trees. If we are to break through here, we must be quick about it. These creatures can take to the skies<ch.emdash/>it would not take them long to summon reinforcements.</quote></p>
@@ -2702,7 +2707,7 @@
      <meta><title>148</title></meta>
 
      <data>
-      <p>You recoil from the insidious green cloud and fall back towards the cell door. Your mastery of Nexus protects you from this highly poisonous gas, but the gaoler and Lord Nathor are not so fortunate: both are vulnerable to its deadly effect. Choking and retching, they collapse to the floor, their fingers scrabbling at their swelling throats as they fight desperately for breath. You grab hold of their tunics, one in each hand, and drag their bodies out of the cell into the cleaner air of the corridor beyond. Here you use your Magnakai healing disciplines to ease the effects of the poison gas; your skill and the swiftness of your actions save them from a painful, suffocating death.</p>
+      <p>You recoil from the insidious green cloud and fall back towards the cell door. Your mastery of Nexus protects you from this highly poisonous gas, but the gaoler and Lord Nathor are not so fortunate: both are vulnerable to its deadly effect. Choking and retching, they collapse to the floor, their fingers scrabbling at their swelling throats as they fight desperately for breath. You grab hold of their tunics, one in each hand, and drag their bodies out of the cell into the cleaner air of the corridor beyond. Here you use your <!--ERRTAG-RE-246571-->Magnakai Discipline of Curing<!--/ERRTAG-RE-246571--> to ease the effects of the poison gas; your skill and the swiftness of your actions save them from a painful, suffocating death.</p>
       <p><quote>Wh<ch.ellips/> what happened?</quote> wheezes Nathor, as he slowly recovers from the deadly gas.</p>
       <p>You peer into the cell at the man now hanging limply in chains, then you turn to Nathor and say: <quote>Suicide. A suicide and an attempted murder. The prisoner has just killed himself with a poison pellet and it seems his last wish was to take all three of us with him.</quote></p>
       <choice idref="sect309"><link-text>Turn to 309</link-text>.</choice>
@@ -2713,7 +2718,7 @@
      <meta><title>149</title></meta>
 
      <data>
-      <p>Calling upon your Kai Mastery, you cause yourself to slip into a coma-like state which gives every outwardly appearance of death.</p>
+      <p>Calling upon your Kai Mastery, you cause yourself to slip into a coma-like state which gives every <!--ERRTAG-RE-247488-->outward appearance<!--/ERRTAG-RE-247488--> of death.</p>
       <p>High above, you hear Prince Lutha howling delightedly at the sight of your seemingly lifeless body. He calls for his guards and, a few moments later, you hear them entering the pit. They pronounce you dead, then there follows the tinny sound of metal scraping on metal before you feel yourself being lifted by the shoulders and feet and lowered into a slippery chute. A wave of panic makes you awake from your death-like trance with a start. This sudden and unexpected resurrection makes the guards scream and drop you. They scurry away, gibbering like idiots, and you are left to slide headlong down a chute which leads to a fast-flowing underground river. You hit the cold waters head-first and are carried swiftly away by the strong undercurrent.</p>
       <choice idref="sect150"><link-text>Turn to 150</link-text>.</choice>
      </data>
@@ -3163,7 +3168,7 @@
      <data>
       <p>Your slain horse crashes to the ground and you are thrown through the air. You land among the boulders and bracken which border the hill road, but your swift Kai reflexes prevent you from sustaining serious injury: lose 2 <typ class="attribute">ENDURANCE</typ> points.</p>
       <p>Bruised but unshaken, you spring to your feet in time to see a yelling horde of leather-clad men, each brandishing a sword or a spear, come rushing from hiding places among the surrounding trees. As they close in upon you, you draw your weapon and prepare to fight for your life.</p>
-      <combat><enemy>Eldenoran ambushers</enemy><enemy-attribute class="combatskill">38</enemy-attribute><enemy-attribute class="endurance">42</enemy-attribute></combat>
+      <combat><enemy>Eldenoran <!--ERRTAG-RE-287783-->Ambushers<!--/ERRTAG-RE-287783--></enemy><enemy-attribute class="combatskill">38</enemy-attribute><enemy-attribute class="endurance">42</enemy-attribute></combat>
       <choice idref="sect285">If you win the combat, <link-text>turn to 285</link-text>.</choice>
      </data>
     </section>
@@ -4416,7 +4421,7 @@
      <data>
       <p>Your slain steed crashes to the ground and you are catapulted head over heels through the air. You land heavily among boulders and bracken which border the hill road, hitting your forehead with a sickening crack: lose 4 <typ class="attribute">ENDURANCE</typ> points.</p>
       <p>Nauseous and dizzy from the impact, you struggle to stand up. You are barely back on your feet when suddenly a yelling horde of leather-clad men, each brandishing a sword or a spear, emerge from hiding places among the trees and come rushing at you from all sides. You must fight them.</p>
-      <combat><enemy>Eldenoran ambushers</enemy><enemy-attribute class="combatskill">38</enemy-attribute><enemy-attribute class="endurance">42</enemy-attribute></combat>
+      <combat><enemy>Eldenoran <!--ERRTAG-RE-409882-->Ambushers<!--/ERRTAG-RE-409882--></enemy><enemy-attribute class="combatskill">38</enemy-attribute><enemy-attribute class="endurance">42</enemy-attribute></combat>
       <p>Due to the effect of your fall, you must reduce your <typ class="attribute">COMBAT SKILL</typ> by 4 for the duration of this fight.</p>
       <choice idref="sect285">If you win the combat, <link-text>turn to 285</link-text>.</choice>
      </data>
@@ -5255,9 +5260,9 @@
      <meta><title>342</title></meta>
 
      <data>
-      <p>You leave the cell and return to the State Hall where Lord Constable Nathor reports what has happened to the Queen. Concerned for your safety, she suggests that you spend the night at the Royal Citadel as her guest. You accept her gracious invitation and enjoy a fine feast and the hospitality of her court. Then, shortly after dawn of the following day, you bid her majesty, and your companion<ch.emdash/>Lord Ardan<ch.emdash/>a fond farewell before beginning the next stage of your long journey home.</p>
+      <p>You leave the cell and return to the State Hall where Lord Constable Nathor reports what has happened to the Queen. Concerned for your safety, she suggests that you spend the night at the Royal Citadel as her guest. You accept her gracious invitation and enjoy a fine feast and the hospitality of her court. Then, shortly after dawn of the following day, you bid <!--ERRTAG-RE-484881-->her Majesty<!--/ERRTAG-RE-484881-->, and your companion<ch.emdash/>Lord Ardan<ch.emdash/>a fond farewell before beginning the next stage of your long journey home.</p>
       <p>Mindful of the dangers, the Queen gives her Lord Constable a Royal Seal and places him, along with a troop of ten court cavalrymen, at your disposal. Lord Nathor and his men are to act as your guides and bodyguards on the road to Vanamor, the capital city of neighbouring Palmyrion. This republic is closely allied to Talestria and lies along its eastern border. Palmyrion also has close ties with your homeland and you look forward to the chance of renewing your friendship with its leader, Elector Manatine.</p>
-      <p>Mounted on fine Talestrian steeds, your party leaves the walled city of Garthen by its East Gate and sets off towards the outlying village of Sharr. Here you cross the mighty River Phoen by way of a great stone bridge. On the far side of this bridge you notice a signpost which points to the east. It reads: VANAMOR 280 miles.</p>
+      <p>Mounted on fine Talestrian steeds, your party leaves the walled city of Garthen by its East Gate and sets off towards the outlying village of Sharr. Here you cross the mighty River Phoen by way of a great stone bridge. On the far side of this bridge you notice a signpost which points to the east. It <!--ERRTAG-RE-485965-->reads <quote>VANAMOR 280 miles</quote><!--/ERRTAG-RE-485965-->.</p>
       <choice idref="sect210"><link-text>Turn to 210</link-text>.</choice>
      </data>
     </section>
@@ -6017,30 +6022,34 @@
        <p>(<a idref="sect96">96</a>) Replaced <quote>lavas</quote> with <quote>Lavas</quote>.<!--ERRTAG-RE-181479-ITEM--> Replaced <quote>psychic ability<ch.emdash/>Mindblend<ch.emdash/>as</quote> with <quote>psychic <spell>Mindblend</spell> ability as</quote>.<!--/ERRTAG-RE-181479-ITEM--></p>
        <p>(<a idref="sect97">97</a>) Replaced <quote>another, <ch.lsquot/>cough</quote> with <quote>another. <ch.lsquot/>cough</quote>.</p>
 <p>(<a idref="sect99">99</a>)<!--ERRTAG-RE-184864-ITEM--> Replaced <quote>brings</quote> with <quote>bring</quote>.<!--/ERRTAG-RE-184864-ITEM--></p>
-       <p>(<a idref="sect100">100</a>) Replaced all occurrences of <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>Gwynian, <ch.lsquot/>Just</quote> with <quote>Gwynian. <ch.lsquot/>Just</quote>. Replaced <quote>longer, I</quote> with <quote>longer; I</quote>.</p>
+       <p>(<a idref="sect100">100</a>) Replaced all occurrences of <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>Gwynian, <ch.lsquot/>Just</quote> with <quote>Gwynian. <ch.lsquot/>Just</quote>. Replaced <quote>longer, I</quote> with <quote>longer; I</quote>.<!--ERRTAG-RE-187953-ITEM--> Replaced <quote>maximum permissible</quote> with <quote>maximum number permissible</quote>.<!--/ERRTAG-RE-187953-ITEM--></p>
        <p>(<a idref="sect101">101</a>) Replaced <quote>cry, <ch.lsquot/>we</quote> with <quote>cry. <ch.lsquot/>We</quote> and <quote>feet first</quote> with <quote>feet-first</quote>.</p>
        <p>(<a idref="sect102">102</a>) Replaced <quote>agonising</quote> with <quote>agonizing</quote>.<!--ERRTAG-RE-190102-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-190102-ITEM--></p>
        <p>(<a idref="sect104">104</a>) Replaced <quote>cried, <ch.lsquot/>I<ch.apos/>m</quote> with <quote>cries. <ch.lsquot/>I<ch.apos/>m</quote>. Replaced <quote>while away</quote> with <quote>wile away</quote>.</p>
        <p>(<a idref="sect105">105</a>) Replaced <quote>D<ch.lsquot/>Val</quote> with <quote>D<ch.apos/>Val</quote>. Changed incorrect link to <a idref="sect253">Section 253</a> to lead to <a idref="sect235">Section 235</a>.<!--ERRTAG-RE-192473-ITEM--> Replaced <quote>Captain</quote> with <quote>captain</quote>.<!--/ERRTAG-RE-192473-ITEM--></p>
+<p>(<a idref="sect107">107</a>)<!--ERRTAG-RE-197365-ITEM--> Replaced <quote>ambushers</quote> with <quote>Ambushers</quote>.<!--/ERRTAG-RE-197365-ITEM--></p>
        <p>(<a idref="sect108">108</a>) Replaced <quote>lavas</quote> with <quote>Lavas</quote>. Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>. Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>the Gate</quote> with <quote>the Shadow Gate</quote>.</p>
        <p>(<a idref="sect109">109</a>) Replaced <quote>1 Broadsword</quote> with <quote>Broadsword</quote>.</p>
        <p>(<a idref="sect110">110</a>) Replaced <quote>5 arrows</quote> with <quote>5 Arrows</quote>. Put the signposts into a table.</p>
+<p>(<a idref="sect111">111</a>)<!--ERRTAG-RE-202481-ITEM--> Replaced <quote>her majesty</quote> with <quote>her Majesty</quote>.<!--/ERRTAG-RE-202481-ITEM--><!--ERRTAG-RE-203498-ITEM--> Replaced <quote>reads: VANAMOR 280 miles</quote> with <quote>reads &lsquot;VANAMOR 280 miles&rsquot;</quote>.<!--/ERRTAG-RE-203498-ITEM--></p>
        <p>(<a idref="sect112">112</a>) Replaced <quote>facade</quote> with <quote>fa<ch.ccedil/>ade</quote>. Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Replaced <quote>says, <ch.lsquot/>I</quote> with <quote>says. <ch.lsquot/>I</quote>.<!--ERRTAG-RE-202455-ITEM--> Replaced <quote>says: LIBRARY</quote> with <quote>says &lsquot;LIBRARY&rsquot;</quote>.<!--/ERRTAG-RE-202455-ITEM--><!--ERRTAG-RE-204183-ITEM--> Replaced <quote>words: HALLS OF LEARNING</quote> with <quote>words &lsquot;HALLS OF LEARNING&rsquot;</quote>.<!--/ERRTAG-RE-204183-ITEM--></p>
-       <p>(<a idref="sect114">114</a>) Replaced <quote>battle spells</quote> with <quote>battle-spells</quote>. Replaced <quote>lavas<ch.apos/></quote> with <quote>Lavas<ch.apos/></quote>. Replaced <quote>sky, <ch.lsquot/>and</quote> with <quote>sky. <ch.lsquot/>And</quote>.</p>
+       <p>(<a idref="sect114">114</a>) Replaced <quote>battle spells</quote> with <quote>battle-spells</quote>. Replaced <quote>lavas<ch.apos/></quote> with <quote>Lavas<ch.apos/></quote>. Replaced <quote>sky, <ch.lsquot/>and</quote> with <quote>sky. <ch.lsquot/>And</quote>.<!--ERRTAG-RE-207175-ITEM--> Replaced <quote>wave of winged beasts come</quote> with <quote>wave of winged beasts comes</quote>.<!--/ERRTAG-RE-207175-ITEM--></p>
        <p>(<a idref="sect115">115</a>) Replaced <quote>anger and pain</quote> with <quote>anger, and pain</quote>.</p>
        <p>(<a idref="sect116">116</a>) Replaced <quote>treeline</quote> with <quote>tree-line</quote>.</p>
        <p>(<a idref="sect120">120</a>) Replaced <quote>Nathor, <ch.lsquot/>it<ch.apos/>s</quote> with <quote>Nathor. <ch.lsquot/>It<ch.apos/>s</quote>. Replaced <quote>Hail Tranius!</quote> with <quote>Hail, Tranius!</quote>. Replaced <quote>turn to 72</quote> with <quote>turn to 72.</quote>.</p>
        <p>(<a idref="sect121">121</a>) Replaced <quote>time, I</quote> with <quote>time; I</quote>. Replaced <quote>e<ch.apos/>er</quote> with <quote>e<ch.apos/>en</quote>. Replaced <quote>smile, <ch.lsquot/>I</quote> with <quote>smile. <ch.lsquot/>I</quote>. Replaced <quote>replies, <ch.lsquot/>the</quote> with <quote>replies. <ch.lsquot/>The</quote>. Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.</p>
        <p>(<a idref="sect122">122</a>) Replaced <quote>Kai alchemy</quote> with <quote>Kai-alchemy</quote>.</p>
        <p>(<a idref="sect125">125</a>) Replaced <quote>Discipline turn</quote> with <quote>Discipline, turn</quote>. Replaced <quote>treeline</quote> with <quote>tree-line</quote>.</p>
-       <p>(<a idref="sect127">127</a>) Replaced <quote>lavas</quote> with <quote>Lavas</quote>.</p>
+       <p>(<a idref="sect127">127</a>) Replaced <quote>lavas</quote> with <quote>Lavas</quote>.<!--ERRTAG-RE-220937-ITEM--> Replaced <quote>flight of Lavas emerge</quote> with <quote>flight of Lavas emerges</quote>.<!--/ERRTAG-RE-220937-ITEM--></p>
        <p>(<a idref="sect129">129</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>.</p>
-       <p>(<a idref="sect132">132</a>) Replaced <quote>gaoler, <ch.lsquot/>I<ch.apos/>ve</quote> with <quote>gaoler. <ch.lsquot/>I<ch.apos/>ve</quote>.</p>
-       <p>(<a idref="sect133">133</a>) Replaced <quote>dug-out</quote> with <quote>dugout</quote>.</p>
+<p>(<a idref="sect131">131</a>)<!--ERRTAG-RE-224841-ITEM--> Replaced <quote>worse effects</quote> with <quote>worst effects</quote>.<!--/ERRTAG-RE-224841-ITEM--></p>
+       <p>(<a idref="sect132">132</a>) Replaced <quote>gaoler, <ch.lsquot/>I<ch.apos/>ve</quote> with <quote>gaoler. <ch.lsquot/>I<ch.apos/>ve</quote>. Merged the paragraph that ends with <quote>the cruel pincers</quote> with the following paragraph.<!--ERRTAG-RE-226322-ITEM--> Replaced <quote>tough <ch.apos/>un</quote> with <quote>tough un</quote>.<!--/ERRTAG-RE-226322-ITEM--></p>
+       <p>(<a idref="sect133">133</a>) Replaced <quote>dug-out</quote> with <quote>dugout</quote>.<!--ERRTAG-RE-227678-ITEM--> Replaced <quote>line of Eldenoran soldiers have</quote> with <quote>line of Eldenoran soldiers has</quote>.<!--/ERRTAG-RE-227678-ITEM--></p>
        <p>(<a idref="sect134">134</a>) Replaced both occurrences of <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>the Gate</quote> with <quote>the Shadow Gate</quote>.</p>
        <p>(<a idref="sect135">135</a>) Replaced <quote>smile, <ch.lsquot/>they</quote> with <quote>smile. <ch.lsquot/>They</quote>.<!--ERRTAG-RE-226151-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>.<!--/ERRTAG-RE-226151-ITEM--></p>
        <p>(<a idref="sect136">136</a>) Replaced <quote>elite</quote> with <quote><ch.eacute/>lite</quote>. Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>shoulder, <ch.lsquot/>you</quote> with <quote>shoulder. <ch.lsquot/>You</quote>.</p>
-       <p>(<a idref="sect137">137</a>) Replaced <quote>(imposters)</quote> with <quote>(impostors)</quote>.<!--ERRTAG-RE-232730-ITEM--> Replaced <quote>guardsmen</quote> with <quote>Guardsmen</quote>.<!--/ERRTAG-RE-232730-ITEM--></p>
+       <p>(<a idref="sect137">137</a>) Replaced <quote>(imposters)</quote> with <quote>(impostors)</quote>.<!--ERRTAG-RE-232730-ITEM--> Replaced <quote>guardsmen</quote> with <quote>Guardsmen</quote>.<!--/ERRTAG-RE-232730-ITEM--><!--ERRTAG-RE-234381-ITEM--> Replaced <quote>horde of bogus castle guardsmen come</quote> with <quote>horde of bogus castle guardsmen comes</quote>.<!--/ERRTAG-RE-234381-ITEM--></p>
+<p>(<a idref="sect138">138</a>)<!--ERRTAG-RE-235319-ITEM--> Replaced <quote>bulls-eye</quote> with <quote>bull's-eye</quote>.<!--/ERRTAG-RE-235319-ITEM--></p>
        <p>(<a idref="sect139">139</a>) Replaced both occurrences of <quote>lavas</quote> with <quote>Lavas</quote> and both occurrences of <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>.</p>
        <p>(<a idref="sect140">140</a>) Replaced <quote>tersely, <ch.lsquot/>he<ch.apos/>s</quote> with <quote>tersely. <ch.lsquot/>He<ch.apos/>s</quote>. Replaced <quote>Scade manor</quote> with <quote>Scade Manor</quote>.</p>
        <p>(<a idref="sect141">141</a>) Replaced <quote>the Gate</quote> with <quote>the Shadow Gate</quote>. Replaced both occurrences of <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>lavas</quote> with <quote>Lavas</quote>.</p>
@@ -6048,7 +6057,9 @@
        <p>(<a idref="sect143">143</a>) Replaced <quote>Grand Master discipline</quote> with <quote>Grand Master Discipline</quote>.</p>
        <p>(<a idref="sect145">145</a>) Replaced <quote>lavas</quote> with <quote>Lavas</quote> and <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect146">146</a>) Replaced <quote>birdsong</quote> with <quote>bird song</quote>.</p>
-       <p>(<a idref="sect147">147</a>) Replaced <quote>winged-horrors</quote> with <quote>winged horrors</quote>. Replaced <quote>your Monastery</quote> with <quote>your monastery</quote>. Replaced <quote>monastery of the Kai</quote> with <quote>Monastery of the Kai</quote>. Replaced <quote>quietly. <ch.lsquot/>the</quote> with <quote>quietly. <ch.lsquot/>The</quote>. Replaced <quote>my men men</quote> with <quote>my men</quote>.<!--ERRTAG-RE-242381-ITEM--> Replaced <quote>Captain</quote> with <quote>captain</quote>.<!--/ERRTAG-RE-242381-ITEM--></p>
+       <p>(<a idref="sect147">147</a>) Replaced <quote>winged-horrors</quote> with <quote>winged horrors</quote>. Replaced <quote>your Monastery</quote> with <quote>your monastery</quote>. Replaced <quote>monastery of the Kai</quote> with <quote>Monastery of the Kai</quote>. Replaced <quote>quietly. <ch.lsquot/>the</quote> with <quote>quietly. <ch.lsquot/>The</quote>. Replaced <quote>my men men</quote> with <quote>my men</quote>.<!--ERRTAG-RE-242381-ITEM--> Replaced <quote>Captain</quote> with <quote>captain</quote>.<!--/ERRTAG-RE-242381-ITEM--><!--ERRTAG-RE-244652-ITEM--> Replaced <quote>previous encounter</quote> with <quote>previous experience</quote> because you may have encountered Lavas more than once in the past.<!--/ERRTAG-RE-244652-ITEM--></p>
+<p>(<a idref="sect148">148</a>)<!--ERRTAG-RE-246571-ITEM--> Replaced <quote>Magnakai healing disciplines</quote> with <quote>Magnakai Discipline of Curing</quote>.<!--/ERRTAG-RE-246571-ITEM--></p>
+<p>(<a idref="sect149">149</a>)<!--ERRTAG-RE-247488-ITEM--> Replaced <quote>outwardly appearance</quote> with <quote>outward appearance</quote>.<!--/ERRTAG-RE-247488-ITEM--></p>
        <p>(<a idref="sect150">150</a>) Replaced <quote>damp uncomfortable</quote> with <quote>damp, uncomfortable</quote>.</p>
        <p>(<a idref="sect151">151</a>) Replaced <quote>treeline</quote> with <quote>tree-line</quote>.</p>
        <p>(<a idref="sect154">154</a>) Replaced <quote>birdsong</quote> with <quote>bird song</quote>. Replaced <quote>Vaderish brethren</quote> with <quote>Vaderish Brethren</quote>.</p>
@@ -6073,6 +6084,7 @@
        <p>(<a idref="sect179">179</a>) Replaced <quote>animal control</quote> with <quote>Animal Control</quote>.</p>
        <p>(<a idref="sect180">180</a>) Replaced <quote>Kai master</quote> with <quote>Kai Master</quote>. Replaced <quote>layed</quote> with <quote>laid</quote>. Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>replies, <ch.lsquot/>though</quote> with <quote>replies. <ch.lsquot/>Though</quote>. Split Rimoah<ch.apos/>s comments into a separate paragraph for clarity. Replaced <quote>hopes;</quote> with <quote>hopes:</quote>. Replaced <quote>lavas</quote> with <quote>Lavas</quote> and <quote>lavas<ch.apos/></quote> with <quote>Lavas<ch.apos/></quote>.</p>
        <p>(<a idref="sect181">181</a>) Replaced <quote>naptha</quote> with <quote>naphtha</quote>.</p>
+<p>(<a idref="sect183">183</a>)<!--ERRTAG-RE-287783-ITEM--> Replaced <quote>ambushers</quote> with <quote>Ambushers</quote>.<!--/ERRTAG-RE-287783-ITEM--></p>
        <p>(<a idref="sect184">184</a>) Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.</p>
        <p>(<a idref="sect185">185</a>) Replaced <quote>dug-out</quote> with <quote>dugout</quote>.</p>
        <p>(<a idref="sect187">187</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>. Replaced <quote>face-down</quote> with <quote>face down</quote>.</p>
@@ -6145,6 +6157,7 @@
        <p>(<a idref="sect275">275</a>) Replaced <quote>camp fire</quote> with <quote>campfire</quote>. Replaced <quote>lay awake</quote> with <quote>lie awake</quote>.</p>
        <p>(<a idref="sect276">276</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>. Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>the Gate</quote> with <quote>the Shadow Gate</quote>. Replaced <quote>Kai alchemy</quote> with <quote>Kai-alchemy</quote>.</p>
        <p>(<a idref="sect277">277</a>) Replaced <quote>Pouch of tobacco</quote> with <quote>Pouch of Tobacco</quote>.</p>
+<p>(<a idref="sect278">278</a>)<!--ERRTAG-RE-409882-ITEM--> Replaced <quote>ambushers</quote> with <quote>Ambushers</quote>.<!--/ERRTAG-RE-409882-ITEM--></p>
        <p>(<a idref="sect279">279</a>) Replaced <quote>lording</quote> with <quote>lordling</quote>.</p>
        <p>(<a idref="sect280">280</a>) Replaced <quote>Alema trail</quote> with <quote>Alema Trail</quote>. Replaced <quote>treeline</quote> with <quote>tree-line</quote>. Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote>.</p>
        <p>(<a idref="sect282">282</a>) Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>lavas</quote> with <quote>Lavas</quote>.<!--ERRTAG-RE-411877-ITEM--> Replaced <quote>Raven<ch.apos/>s Eerie</quote> with <quote>Raven<ch.apos/>s Eyrie</quote>.<!--/ERRTAG-RE-411877-ITEM--></p>
@@ -6185,6 +6198,7 @@
        <p>(<a idref="sect339">339</a>) Replaced <quote>Weapons<ch.emdash/>we</quote> with <quote>Weapons we</quote>.</p>
        <p>(<a idref="sect340">340</a>) Replaced <quote>pouring</quote> with <quote>poring</quote>.</p>
        <p>(<a idref="sect341">341</a>) Replaced <quote>add 1</quote> with <quote>add 1.</quote>.<!--ERRTAG-RE-482237-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-482237-ITEM--><!--ERRTAG-RE-482524-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-482524-ITEM--></p>
+<p>(<a idref="sect342">342</a>)<!--ERRTAG-RE-484881-ITEM--> Replaced <quote>her majesty</quote> with <quote>her Majesty</quote>.<!--/ERRTAG-RE-484881-ITEM--><!--ERRTAG-RE-485965-ITEM--> Replaced <quote>reads: VANAMOR 280 miles</quote> with <quote>reads &lsquot;VANAMOR 280 miles&rsquot;</quote>.<!--/ERRTAG-RE-485965-ITEM--></p>
        <p>(<a idref="sect343">343</a>) Replaced <quote>add 1</quote> with <quote>add 1.</quote>.</p>
        <p>(<a idref="sect344">344</a>) Replaced <quote>lavas</quote> with <quote>Lavas</quote>. Replaced <quote>the Gate</quote> with <quote>the Shadow Gate</quote>.</p>
        <p>(<a idref="sect345">345</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
