@@ -864,34 +864,11 @@
       </ul>
       <p>If you wish to keep any of these items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Shortly before sunset, you emerge from the trees at a place where three trails meet. A wooden signpost propped against a boulder indicates three directions, and distances:</p>
-<!--      <signpost>
-       <line>North<ch.emdash/>Chod<ch.emdash/>250 miles</line>
-       <line>West<ch.emdash/>Holona<ch.emdash/>50 miles</line>
-       <line>South<ch.emdash/>Tenzha<ch.emdash/>20 miles</line>
-      </signpost>-->
       <signpost>
-       <table>
-        <tr>
-         <td>North<ch.emdash/></td>
-         <td>Chod</td>
-         <td>250 miles</td>
-        </tr>
-        <tr>
-         <td>West</td>
-         <td>Holona</td>
-         <td>50 miles</td>
-        </tr>
-        <tr>
-         <td>South</td>
-         <td>Tenzha</td>
-         <td>20 miles</td>
-        </tr>
-       </table>
-      </signpost>
-<!--      <p>North<ch.endash/>Chod<ch.endash/>250 miles</p>
-      <p>West<ch.endash/>Holona<ch.endash/>50 miles</p>
-      <p>South<ch.endash/>Tenzha<ch.endash/>20 miles</p>
-      Should the <ch.emdash/>es be removed as per the table?-->
+       <line>Chod: 250 miles North</line>
+       <line>Holona: 50 miles West</line>
+       <line>Tenzha: 20 miles South</line>
+      <signpost>
       <p>You are anxious to leave hostile Eldenoran territory as soon as possible and, after checking your <a idref="map">map</a>, you set off to the south, towards the Slovian border town of Tenzha. During your ride, unless you possess Grand Huntmastery, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect343">To continue, <link-text>turn to 343</link-text>.</choice>
      </data>
@@ -948,7 +925,7 @@
 
      <data>
       <p>Beyond the valley lies an expanse of coarse and thorny vegetation which is alive with wild game. You stop to catch yourself an evening meal and then make camp beneath an old twisted oak (restore 3 <typ class="attribute">ENDURANCE</typ> points). The night passes uneventfully and at first light you resume your ride east. Shortly before midday, you arrive at the ruins of an ancient church where a signpost, pointing to the east, says:</p>
-      <signpost>VANAMOR<ch.emdash/>42 miles</signpost>
+      <signpost><!--ERRTAG-RE-80830-->Vanamor<!--/ERRTAG-RE-80830--><ch.emdash/>42 miles</signpost>
       <p>You allow yourself a smile; with luck you could be inside the city walls by nightfall.</p>
       <p>Later in the day you see a dust cloud approaching along the road. You magnify your vision and see a dozen armed horsemen clad in ragged uniforms of green and black. A sense of unease pervades your mind; these are the colours most often worn by Eldenoran soldiers. Trusting to your Kai instincts, you steer your horse off the trail and take cover among the trees of a nearby copse.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
@@ -964,7 +941,7 @@
       <p>The unexpected sound of the voice jolts you to full consciousness. You look around for who it was who uttered these words and, to your surprise, you see an old man dressed in brown robes standing before you, stroking your horse<ch.apos/>s nose. Immediately you recognize the kindly face of Gwynian the Sage.</p>
       <p><quote>Fate calls us together once more, Lone Wolf,</quote> he says. <quote>Come, we have much to discuss.</quote></p>
       <p>And with that he takes hold of your horse<ch.apos/>s bridle and leads him across the park to a grand building. It has changed much since you were last here, but despite the new brick and marble fa<ch.ccedil/>ade you recognize Varetta<ch.apos/>s Halls of Learning.</p>
-      <p>You are taken along a gravelled path to a hall, where a sign hanging over its richly-carved oak door <!--ERRTAG-RE-83320-->says <quote>LIBRARY</quote><!--/ERRTAG-RE-83320-->. You dismount, and Gwynian ties the reins to a ring set into the wall. Then he pushes open the door and together you enter the library<ch.apos/>s cool interior. Countless thousands of books and parchments crowd the stone shelves of this magnificent library, marching past on either side as you walk towards another door at the far end of the hall.</p>
+      <p>You are taken along a gravelled path to a hall, where a sign hanging over its richly-carved oak door <!--ERRTAG-RE-83320-->says <quote>Library</quote><!--/ERRTAG-RE-83320-->. You dismount, and Gwynian ties the reins to a ring set into the wall. Then he pushes open the door and together you enter the library<ch.apos/>s cool interior. Countless thousands of books and parchments crowd the stone shelves of this magnificent library, marching past on either side as you walk towards another door at the far end of the hall.</p>
       <choice idref="sect268"><link-text>Turn to 268</link-text>.</choice>
      </data>
     </section>
@@ -1666,7 +1643,7 @@
 
      <data>
       <p>You leave behind the Denka Gate and follow a road that twists and climbs through densely wooded highland. Once you crest the last timbered hill, you begin a gradual descent towards the Taunor Valley<ch.emdash/>a fertile expanse of cropland and grassy plain. By dusk you can see the River Quarl ahead and, shortly before nightfall, you cross its fast-flowing waters at a bridge in the centre of Quarlen, a busy town on the caravan route to Casiorn.</p>
-      <p>Just beyond the bridge you see an impressive hostelry, with adjoining stables. A shield hangs above the courtyard gate displaying its name: THE BARREL BRIDGE TAVERN.</p>
+      <p>Just beyond the bridge you see an impressive hostelry, with adjoining stables. A shield hangs above the courtyard gate displaying its <!--ERRTAG-RE-148078-->name: <quote>The Barrel Bridge Tavern</quote><!--/ERRTAG-RE-148078-->.</p>
       <choice idref="sect211">If you wish to stop and enter this hostelry, <link-text>turn to 211</link-text>.</choice>
       <choice idref="sect31">If you choose to continue your ride to Casiorn, <link-text>turn to 31</link-text>.</choice>
      </data>
@@ -1827,31 +1804,10 @@
       <p>If you wish to keep any of these items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Shortly before sunset, you emerge from the trees at a place where three trails meet. A wooden signpost propped against a boulder indicates three directions, destinations, and distances:</p>
       <signpost>
-       <line>North<ch.emdash/>Chod<ch.emdash/>250 miles</line>
-       <line>West<ch.emdash/>Holona<ch.emdash/>50 miles</line>
-       <line>South<ch.emdash/>Tenzha<ch.emdash/>20 miles</line>
-      </signpost>
-<!--       <table>
-        <tr>
-         <td>North<ch.emdash/></td>
-         <td>Chod</td>
-         <td>250 miles</td>
-        </tr>
-        <tr>
-         <td>West</td>
-         <td>Holona</td>
-         <td>50 miles</td>
-        </tr>
-        <tr>
-         <td>South</td>
-         <td>Tenzha</td>
-         <td>20 miles</td>
-        </tr>
-       </table>-->
-<!--      <p>North<ch.endash/>Chod<ch.endash/>250 miles</p>
-      <p>West<ch.endash/>Holona<ch.endash/>50 miles</p>
-      <p>South<ch.endash/>Tenzha<ch.endash/>20 miles</p>
-      Should the <ch.emdash/>es be removed as per the table?-->
+       <line>Chod: 250 miles North</line>
+       <line>Holona: 50 miles West</line>
+       <line>Tenzha: 20 miles South</line>
+      <signpost>
       <p>You are anxious to leave hostile Eldenoran territory as soon as possible and, after checking your <a idref="map">map</a>, you set off to the south, towards the Slovian border town of Tenzha.</p>
       <p>During your ride, unless you possess Grand Huntmastery, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect343">To continue, <link-text>turn to 343</link-text>.</choice>
@@ -1913,8 +1869,8 @@
      <meta><title>90</title></meta>
 
      <data>
-      <p>You enter Quill Street and ride along this narrow avenue, which is flanked by aromatic jala houses and perfumeries, until it turns abruptly right into a wider thoroughfare called Brass Street. Here you see the courtyard entrance to a grand building whose brick and marble fa<ch.ccedil/>ade is adorned with the <!--ERRTAG-RA-171438-->words <quote>HALLS OF LEARNING</quote><!--/ERRTAG-RA-171438-->. Suddenly you feel inexplicably drawn towards this building; it is as if it possesses the solution to all your problems.</p>
-      <p>You enter and ride along a gravelled path which leads to a building where a sign, hanging over its richly-carved oak door, simply <!--ERRTAG-RE-169998-->says <quote>LIBRARY</quote><!--/ERRTAG-RE-169998-->. You feel compelled to stop here and, without quite knowing why, you dismount from your horse and tie his reins to a ring which is set into the wall. Then you push open the door and enter the library<ch.apos/>s cool interior.</p>
+      <p>You enter Quill Street and ride along this narrow avenue, which is flanked by aromatic jala houses and perfumeries, until it turns abruptly right into a wider thoroughfare called Brass Street. Here you see the courtyard entrance to a grand building whose brick and marble fa<ch.ccedil/>ade is adorned with the <!--ERRTAG-RA-171438-->words <quote>Halls of Learning</quote><!--/ERRTAG-RA-171438-->. Suddenly you feel inexplicably drawn towards this building; it is as if it possesses the solution to all your problems.</p>
+      <p>You enter and ride along a gravelled path which leads to a building where a sign, hanging over its richly-carved oak door, simply <!--ERRTAG-RE-169998-->says <quote>Library</quote><!--/ERRTAG-RE-169998-->. You feel compelled to stop here and, without quite knowing why, you dismount from your horse and tie his reins to a ring which is set into the wall. Then you push open the door and enter the library<ch.apos/>s cool interior.</p>
       <p>Countless thousands of books and parchments crowd the stone shelves of this magnificent library. Your eyes travel along them until they reach another door at the far end of the hall. There, standing framed in its archway, is an old man clad in plain brown robes. He looks at you and smiles knowingly.</p>
       <p><quote>Welcome, Grand Master,</quote> he says. <quote>I have been expecting you.</quote></p>
       <choice idref="sect348">If you have ever visited a hut on Raider<ch.apos/>s Road, the city of Tahou, or Lake Vorndarol (in previous <cite>Lone Wolf</cite> adventures), <link-text>turn to 348</link-text>.</choice>
@@ -2201,31 +2157,10 @@
       <p>If you decide to keep any of these items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Shortly before sunset, you emerge from the trees at a place where three trails meet. A wooden signpost propped against a boulder indicates three directions, destinations, and distances:</p>
       <signpost>
-       <line>North<ch.emdash/>Chod<ch.emdash/>250 miles</line>
-       <line>West<ch.emdash/>Holona<ch.emdash/>50 miles</line>
-       <line>South<ch.emdash/>Tenzha<ch.emdash/>20 miles</line>
-      </signpost>
-      <!--       <table>
-        <tr>
-         <td>North<ch.emdash/></td>
-         <td>Chod</td>
-         <td>250 miles</td>
-        </tr>
-        <tr>
-         <td>West</td>
-         <td>Holona</td>
-         <td>50 miles</td>
-        </tr>
-        <tr>
-         <td>South</td>
-         <td>Tenzha</td>
-         <td>20 miles</td>
-        </tr>
-       </table>-->
-<!--      <p>North<ch.endash/>Chod<ch.endash/>250 miles</p>
-      <p>West<ch.endash/>Holona<ch.endash/>50 miles</p>
-      <p>South<ch.endash/>Tenzha<ch.endash/>20 miles</p>
-      Should the <ch.emdash/>es be removed as per the table?-->
+       <line>Chod: 250 miles North</line>
+       <line>Holona: 50 miles West</line>
+       <line>Tenzha: 20 miles South</line>
+      <signpost>
       <p>You are anxious to leave hostile Eldenoran territory as soon as possible and, after checking your <a idref="map">map</a>, you set off to the south, towards the Slovian border town of Tenzha.</p>
       <p>During your ride, unless you possess Grand Huntmastery, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect343">To continue, <link-text>turn to 343</link-text>.</choice>
@@ -2238,7 +2173,7 @@
      <data>
       <p>You spend the night at the Royal Citadel as the guest of Queen Evaine, and enjoy a fine feast and the hospitality of her court. Then, shortly after dawn of the following day, you bid <!--ERRTAG-RE-202481-->her Majesty<!--/ERRTAG-RE-202481-->, and your companion<ch.emdash/>Lord Ardan<ch.emdash/>a fond farewell before beginning the next stage of your long journey home.</p>
       <p>The Queen has given her Lord Constable a Royal Seal and placed him, along with a troop of ten court cavalrymen, at your disposal. Lord Nathor and his men are to act as your guides and bodyguards on the road to Vanamor, the capital city of neighbouring Palmyrion. This republic is closely allied to Talestria and lies along its eastern border. Palmyrion also has close ties with your homeland and you look forward to the chance of renewing your friendship with its leader, Elector Manatine.</p>
-      <p>Mounted on fine Talestrian steeds, your party leaves the walled city of Garthen by its East Gate and sets off towards the outlying village of Sharr. Here you cross the mighty River Phoen by way of a great stone bridge. On the far side of this bridge you notice a signpost which points to the east. It <!--ERRTAG-RE-203498-->reads <quote>VANAMOR 280 miles</quote><!--/ERRTAG-RE-203498-->.</p>
+      <p>Mounted on fine Talestrian steeds, your party leaves the walled city of Garthen by its East Gate and sets off towards the outlying village of Sharr. Here you cross the mighty River Phoen by way of a great stone bridge. On the far side of this bridge you notice a signpost which points to the east. It <!--ERRTAG-RE-203498-->reads <quote>Vanamor 280 miles</quote><!--/ERRTAG-RE-203498-->.</p>
       <choice idref="sect210"><link-text>Turn to 210</link-text>.</choice>
      </data>
     </section>
@@ -2248,8 +2183,8 @@
 
      <data>
       <p>You ride across this busy square and enter Ladder Way, a thoroughfare which heads towards the very heart of Varetta. Apothecaries and candle-makers<ch.apos/> shops flank this wide street until it opens upon an ornate park that is filled with rare and beautiful flowers.</p>
-      <p>To the west of the park you notice a fortified tower, by far the tallest in the city. You feel inexplicably drawn towards this tower; it is as if it possesses the solution to all your problems. You leave the park by its west gate and enter a wider thoroughfare called Brass Street. Here you see the courtyard entrance to a grand building whose brick and marble fa<ch.ccedil/>ade is adorned with the <!--ERRTAG-RE-204183-->words <quote>HALLS OF LEARNING</quote><!--/ERRTAG-RE-204183-->.</p>
-      <p>You enter and ride along a gravelled path which leads to a building where a sign, hanging over its richly-carved oak door, simply <!--ERRTAG-RE-202455-->says <quote>LIBRARY</quote><!--/ERRTAG-RE-202455-->. You feel compelled to stop here and, without quite knowing why, you dismount from your horse and tie his reins to a ring which is set into the wall. Then you push open the door and enter the library<ch.apos/>s cool interior.</p>
+      <p>To the west of the park you notice a fortified tower, by far the tallest in the city. You feel inexplicably drawn towards this tower; it is as if it possesses the solution to all your problems. You leave the park by its west gate and enter a wider thoroughfare called Brass Street. Here you see the courtyard entrance to a grand building whose brick and marble fa<ch.ccedil/>ade is adorned with the <!--ERRTAG-RE-204183-->words <quote>Halls of Learning</quote><!--/ERRTAG-RE-204183-->.</p>
+      <p>You enter and ride along a gravelled path which leads to a building where a sign, hanging over its richly-carved oak door, simply <!--ERRTAG-RE-202455-->says <quote>Library</quote><!--/ERRTAG-RE-202455-->. You feel compelled to stop here and, without quite knowing why, you dismount from your horse and tie his reins to a ring which is set into the wall. Then you push open the door and enter the library<ch.apos/>s cool interior.</p>
       <p>Countless thousands of books and parchments crowd the stone shelves of this magnificent library. Your eyes travel along them until they reach another door at the far end of the hall. There, standing framed in its archway, is an old man clad in plain brown robes. He looks at you and smiles knowingly.</p>
       <p><quote>Welcome. Grand Master,</quote> he says. <quote>I have been expecting you.</quote></p>
       <choice idref="sect348">If you have ever visited a hut on Raider<ch.apos/>s Road, the city of Tahou, or Lake Vorndarol (in previous <cite>Lone Wolf</cite> adventures), <link-text>turn to 348</link-text>.</choice>
@@ -2571,8 +2506,10 @@
 
      <data>
       <p>The first spatterings of rain are dampening your shoulders as you approach the forest town<ch.apos/>s solitary inn. The smell and soft noises of horses waft from an adjoining stable, and the flickering orange light of an open fire can be seen shimmering through the <!--ERRTAG-RE-235319-->bull's-eye<!--/ERRTAG-RE-235319--> glass of the inn<ch.apos/>s leaded windows. You halt outside the main door and stoop to read a weather-faded board that is fixed to the wall:</p>
-      <signpost>The Towering Pine Inn</signpost>
-      <signpost>Room <ch.ampersand/> Stabling<ch.emdash/>2 Gold Crowns per night</signpost>
+      <signpost>
+       <line>The Towering Pine Inn</line>
+       <line>Room <ch.ampersand/> Stabling<ch.emdash/>2 Gold Crowns per night</line>
+      </signpost>
       <choice idref="sect103">If you possess sufficient Gold Crowns to stay here for the night, <link-text>turn to 103</link-text>.</choice>
       <choice idref="sect302">If you do not, <link-text>turn to 302</link-text>.</choice>
      </data>
@@ -2957,7 +2894,7 @@
      <data>
       <p>You ask a street trader the way to the Halls of Learning and he points impatiently to an avenue on the west side of the square. A rusty plate fixed to the corner building <!--ERRTAG-RE-269290-->says <quote>Quill Street</quote><!--/ERRTAG-RE-269290-->.</p>
       <p>You ride along this narrow avenue, which is flanked by aromatic jala houses and perfumeries, until it turns abruptly right into a wider thoroughfare called Brass Street. A smile cracks your travel-grimy face when you see the courtyard entrance to a grand building. It has changed much since you were last here, but despite its new brick and marble fa<ch.ccedil/>ade you recognize Varetta<ch.apos/>s Halls of Learning.</p>
-      <p>You ride along a gravelled path to a fountain where you stop to ask a brown-robed scholar if he knows where Gwynian can be found. Without speaking, he points to a nearby hall. A sign hanging over its richly-carved oak door <!--ERRTAG-RE-266411-->says <quote>LIBRARY</quote><!--/ERRTAG-RE-266411-->. You thank the robed man and dismount from your horse, leaving him tied to a ring which is set into the wall. Then you push open the door and enter the library<ch.apos/>s cool interior.</p>
+      <p>You ride along a gravelled path to a fountain where you stop to ask a brown-robed scholar if he knows where Gwynian can be found. Without speaking, he points to a nearby hall. A sign hanging over its richly-carved oak door <!--ERRTAG-RE-266411-->says <quote>Library</quote><!--/ERRTAG-RE-266411-->. You thank the robed man and dismount from your horse, leaving him tied to a ring which is set into the wall. Then you push open the door and enter the library<ch.apos/>s cool interior.</p>
       <p>Countless thousands of books and parchments crowd the stone shelves of this magnificent library. Your eyes travel along them until they reach another door at the far end of the hall. There, standing framed in the arch, is the man whose help you seek.</p>
       <p><quote>Welcome, Grand Master,</quote> says Gwynian the Sage. <quote>I have been expecting you.</quote></p>
       <choice idref="sect268"><link-text>Turn to 268</link-text>.</choice>
@@ -3046,31 +2983,10 @@
       <p>If you decide to keep any of these items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Shortly before sunset, you emerge from the trees at a place where three trails meet. A wooden signpost propped against a boulder indicates three directions, destinations, and distances:</p>
       <signpost>
-       <line>North<ch.emdash/>Chod<ch.emdash/>250 miles</line>
-       <line>West<ch.emdash/>Holona<ch.emdash/>50 miles</line>
-       <line>South<ch.emdash/>Tenzha<ch.emdash/>20 miles</line>
-      </signpost>
-<!--       <table>
-        <tr>
-         <td>North<ch.emdash/></td>
-         <td>Chod</td>
-         <td>250 miles</td>
-        </tr>
-        <tr>
-         <td>West</td>
-         <td>Holona</td>
-         <td>50 miles</td>
-        </tr>
-        <tr>
-         <td>South</td>
-         <td>Tenzha</td>
-         <td>20 miles</td>
-        </tr>
-       </table>-->
-<!--      <p>North<ch.endash/>Chod<ch.endash/>250 miles</p>
-      <p>West<ch.endash/>Holona<ch.endash/>50 miles</p>
-      <p>South<ch.endash/>Tenzha<ch.endash/>20 miles</p>
-      Should the <ch.emdash/>es be removed as per the table?-->
+       <line>Chod: 250 miles North</line>
+       <line>Holona: 50 miles West</line>
+       <line>Tenzha: 20 miles South</line>
+      <signpost>
       <p>You are anxious to leave hostile Eldenoran territory as soon as possible and, after checking your <a idref="map">map</a>, you set off to the south, towards the Slovian border town of Tenzha.</p>
       <p>During your ride, unless you possess Grand Huntmastery, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect343">To continue, <link-text>turn to 343</link-text>.</choice>
@@ -3318,8 +3234,8 @@
      <meta><title>194</title></meta>
 
      <data>
-      <p>Before the angry thieves of Spur Lane can catch you, you cross the square and enter Quill Street. This narrow avenue is flanked by aromatic jala houses and perfumeries, until at length it turns abruptly right into a wider thoroughfare called Brass Street. Here you see the courtyard entrance to a grand building whose brick and marble fa<ch.ccedil/>ade is adorned with the <!--ERRTAG-RE-301473-->words <quote>HALLS OF LEARNING</quote><!--/ERRTAG-RE-301473-->. Suddenly you feel inexplicably drawn towards this building; it is as if it possesses the solution to all your problems.</p>
-      <p>You enter and ride along a gravelled path which leads to a building where a sign, hanging over its richly-carved oak door, simply <!--ERRTAG-RE-299569-->says <quote>LIBRARY</quote><!--/ERRTAG-RE-299569-->. You feel compelled to stop here and, without quite knowing why, you dismount from your horse and tie his reins to a ring which is set into the wall. Then you push open the door and enter the library<ch.apos/>s cool interior.</p>
+      <p>Before the angry thieves of Spur Lane can catch you, you cross the square and enter Quill Street. This narrow avenue is flanked by aromatic jala houses and perfumeries, until at length it turns abruptly right into a wider thoroughfare called Brass Street. Here you see the courtyard entrance to a grand building whose brick and marble fa<ch.ccedil/>ade is adorned with the <!--ERRTAG-RE-301473-->words <quote>Halls of Learning</quote><!--/ERRTAG-RE-301473-->. Suddenly you feel inexplicably drawn towards this building; it is as if it possesses the solution to all your problems.</p>
+      <p>You enter and ride along a gravelled path which leads to a building where a sign, hanging over its richly-carved oak door, simply <!--ERRTAG-RE-299569-->says <quote>Library</quote><!--/ERRTAG-RE-299569-->. You feel compelled to stop here and, without quite knowing why, you dismount from your horse and tie his reins to a ring which is set into the wall. Then you push open the door and enter the library<ch.apos/>s cool interior.</p>
       <p>Countless thousands of books and parchments crowd the stone shelves of this magnificent library. Your eyes travel along them until they reach another door at the far end of the hall. There, standing framed in its archway, is an old man clad in plain brown robes. He looks at you and smiles knowingly.</p>
       <p><quote>Welcome, Grand Master,</quote> he says. <quote>I have been expecting you.</quote></p>
       <choice idref="sect348">If you have ever visited a hut on Raider<ch.apos/>s Road, the city of Tahou, or Lake Vorndarol (in previous <cite>Lone Wolf</cite> adventures), <link-text>turn to 348</link-text>.</choice>
@@ -3947,8 +3863,10 @@
 
      <data>
       <p>You ride out of Rhem by its east gate and head off along a wide road that is bordered by hovels and farmsteads. Shortly you come to a signpost where the road ends and a track begins. It marks the entrance to the Forest of Salony, and indicates the distances to two Salonese towns:</p>
-      <signpost>Ellio<ch.emdash/>50 miles</signpost>
-      <signpost>Amory<ch.emdash/>100 miles</signpost>
+      <signpost>
+       <line>Ellio<ch.emdash/>50 miles</line>
+       <line>Amory<ch.emdash/>100 miles</line>
+      </signpost>
       <p>You follow the track deep into the forest and spend your first night in Salony here, surrounded by the leafy comfort of this rich timberland. At dawn, you resume your ride and, by nightfall, you find yourself approaching the outskirts of the forest town of Ellio.</p>
 
        <illustration id="bw-small2" class="inline">
@@ -4179,31 +4097,10 @@
       <p>If you decide to keep any of these items, remember to adjust your <a idref="action">Action Chart</a> accordingly.</p>
       <p>Shortly before sunset, you emerge from the trees at a place where three trails meet. A wooden signpost propped against a boulder indicates three directions, destinations, and distances:</p>
       <signpost>
-       <line>North<ch.emdash/>Chod<ch.emdash/>250 miles</line>
-       <line>West<ch.emdash/>Holona<ch.emdash/>50 miles</line>
-       <line>South<ch.emdash/>Tenzha<ch.emdash/>20 miles</line>
-      </signpost>
-<!--       <table>
-        <tr>
-         <td>North<ch.emdash/></td>
-         <td>Chod</td>
-         <td>250 miles</td>
-        </tr>
-        <tr>
-         <td>West</td>
-         <td>Holona</td>
-         <td>50 miles</td>
-        </tr>
-        <tr>
-         <td>South</td>
-         <td>Tenzha</td>
-         <td>20 miles</td>
-        </tr>
-       </table>-->
-<!--      <p>North<ch.endash/>Chod<ch.endash/>250 miles</p>
-      <p>West<ch.endash/>Holona<ch.endash/>50 miles</p>
-      <p>South<ch.endash/>Tenzha<ch.endash/>20 miles</p>
-      Should the <ch.emdash/>es be removed as per the table?-->
+       <line>Chod: 250 miles North</line>
+       <line>Holona: 50 miles West</line>
+       <line>Tenzha: 20 miles South</line>
+      <signpost>
       <p>You are anxious to leave hostile Eldenoran territory as soon as possible and, after checking your <a idref="map">map</a>, you set off to the south, towards the Slovian border town of Tenzha.</p>
       <p>During your ride, unless you possess Grand Huntmastery, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
       <choice idref="sect343">To continue, <link-text>turn to 343</link-text>.</choice>
@@ -4806,8 +4703,8 @@
 
      <data>
       <p>You make your way across this busy square and enter Ladder Way, a thoroughfare which heads towards the very heart of Varetta. Apothecaries and candle-makers<ch.apos/> shops flank this wide street until it opens up on an ornate park filled with rare and beautiful flowers.</p>
-      <p>To the west of the park you notice a fortified tower, by far the tallest in the city. You feel inexplicably drawn towards this tower; it is as if it possesses the solution to all your problems. You leave the park by its west gate and enter a wider thoroughfare called Brass Street. Here you see the courtyard entrance to a grand building whose brick and marble fa<ch.ccedil/>ade is adorned with the <!--ERRTAG-RE-444142-->words <quote>HALLS OF LEARNING</quote><!--/ERRTAG-RE-444142-->.</p>
-      <p>You enter and ride along a gravelled path which leads to a building where a sign, hanging over its richly-carved oak door, simply <!--ERRTAG-RE-440953-->says <quote>LIBRARY</quote><!--/ERRTAG-RE-440953-->. You feel compelled to stop here and, without quite knowing why, you dismount from your horse and tie his reins to a ring which is set into the wall. Then you push open the door and enter the library<ch.apos/>s cool interior.</p>
+      <p>To the west of the park you notice a fortified tower, by far the tallest in the city. You feel inexplicably drawn towards this tower; it is as if it possesses the solution to all your problems. You leave the park by its west gate and enter a wider thoroughfare called Brass Street. Here you see the courtyard entrance to a grand building whose brick and marble fa<ch.ccedil/>ade is adorned with the <!--ERRTAG-RE-444142-->words <quote>Halls of Learning</quote><!--/ERRTAG-RE-444142-->.</p>
+      <p>You enter and ride along a gravelled path which leads to a building where a sign, hanging over its richly-carved oak door, simply <!--ERRTAG-RE-440953-->says <quote>Library</quote><!--/ERRTAG-RE-440953-->. You feel compelled to stop here and, without quite knowing why, you dismount from your horse and tie his reins to a ring which is set into the wall. Then you push open the door and enter the library<ch.apos/>s cool interior.</p>
       <p>Countless thousands of books and parchments crowd the stone shelves of this magnificent library. Your eyes travel along them until they reach another door at the far end of the hall. There, standing framed in its archway, is an old man clad in plain brown robes. He looks at you and smiles knowingly.</p>
       <p><quote>Welcome, Grand Master,</quote> he says. <quote>I have been expecting you.</quote></p>
       <choice idref="sect348">If you have ever visited a hut on Raider<ch.apos/>s Road, the city of Tahou, or Lake Vorndarol (in previous <cite>Lone Wolf</cite> adventures), <link-text>turn to 348</link-text>.</choice>
@@ -4998,7 +4895,7 @@
         <instance class="pdf" src="small2.pdf" width="386" height="138"/>
        </illustration>
 
-      <p>And with these words you bid Gwynian farewell and leave the Halls of Learning. You depart from Varetta through its great east gate and, once outside the city, you spur Wildwind to the gallop. You are astounded by his speed and untiring stamina: Gwynian was right<ch.emdash/>he is the fastest horse you have ever ridden. In little more than an hour you have covered sixty miles. It is only when you find yourself approaching a stone bridge, commanded by a huge gated archway, that you are forced to rein him to a halt. Above the archway you notice the words <quote>Denka Gate</quote> engraved into the stone. Below them, written in chalk, is the message: Toll<ch.emdash/>4 Gold Crowns.</p>
+      <p>And with these words you bid Gwynian farewell and leave the Halls of Learning. You depart from Varetta through its great east gate and, once outside the city, you spur Wildwind to the gallop. You are astounded by his speed and untiring stamina: Gwynian was right<ch.emdash/>he is the fastest horse you have ever ridden. In little more than an hour you have covered sixty miles. It is only when you find yourself approaching a stone bridge, commanded by a huge gated archway, that you are forced to rein him to a halt. Above the archway you notice the words <quote>Denka Gate</quote> engraved into the stone. Below them, written in chalk, is the <!--ERRTAG-RE-464254-->message <quote>Toll<ch.emdash/>4 Gold Crowns</quote><!--/ERRTAG-RE-464254-->.</p>
       <p>After a few minutes, an unshaven old man emerges from a door set into this grand gate. He holds out his hand and demands that you pay him the toll.</p>
       <choice idref="sect74">If you wish to pay the gateman his toll of 4 Gold Crowns, <link-text>turn to 74</link-text>.</choice>
       <choice idref="sect331">If you cannot pay, or if you do not wish to, <link-text>turn to 331</link-text>.</choice>
@@ -5292,7 +5189,7 @@
      <data>
       <p>You leave the cell and return to the State Hall where Lord Constable Nathor reports what has happened to the Queen. Concerned for your safety, she suggests that you spend the night at the Royal Citadel as her guest. You accept her gracious invitation and enjoy a fine feast and the hospitality of her court. Then, shortly after dawn of the following day, you bid <!--ERRTAG-RE-484881-->her Majesty<!--/ERRTAG-RE-484881-->, and your companion<ch.emdash/>Lord Ardan<ch.emdash/>a fond farewell before beginning the next stage of your long journey home.</p>
       <p>Mindful of the dangers, the Queen gives her Lord Constable a Royal Seal and places him, along with a troop of ten court cavalrymen, at your disposal. Lord Nathor and his men are to act as your guides and bodyguards on the road to Vanamor, the capital city of neighbouring Palmyrion. This republic is closely allied to Talestria and lies along its eastern border. Palmyrion also has close ties with your homeland and you look forward to the chance of renewing your friendship with its leader, Elector Manatine.</p>
-      <p>Mounted on fine Talestrian steeds, your party leaves the walled city of Garthen by its East Gate and sets off towards the outlying village of Sharr. Here you cross the mighty River Phoen by way of a great stone bridge. On the far side of this bridge you notice a signpost which points to the east. It <!--ERRTAG-RE-485965-->reads <quote>VANAMOR 280 miles</quote><!--/ERRTAG-RE-485965-->.</p>
+      <p>Mounted on fine Talestrian steeds, your party leaves the walled city of Garthen by its East Gate and sets off towards the outlying village of Sharr. Here you cross the mighty River Phoen by way of a great stone bridge. On the far side of this bridge you notice a signpost which points to the east. It <!--ERRTAG-RE-485965-->reads <quote>Vanamor 280 miles</quote><!--/ERRTAG-RE-485965-->.</p>
       <choice idref="sect210"><link-text>Turn to 210</link-text>.</choice>
      </data>
     </section>
@@ -5990,7 +5887,8 @@
        <p>(<a idref="sect14">14</a>) Replaced <quote>5 arrows</quote> with <quote>5 Arrows</quote>. Put the signposts into a table.</p>
        <p>(<a idref="sect15">15</a>) Replaced <quote>eh boys?</quote> with <quote>eh, boys?</quote>.</p>
 <p>(<a idref="sect17">17</a>)<!--ERRTAG-RE-79885-ITEM--> Replaced <quote>are rushing</quote> with <quote>is rushing</quote>.<!--/ERRTAG-RE-79885-ITEM--></p>
-       <p>(<a idref="sect20">20</a>) Replaced <quote>says, <ch.lsquot/>Come</quote> with <quote>says. <ch.lsquot/>Come</quote>.<!--ERRTAG-RE-83320-ITEM--> Replaced <quote>says: LIBRARY</quote> with <quote>says <ch.lsquot/>LIBRARY<ch.rsquot/></quote>.<!--/ERRTAG-RE-83320-ITEM--></p>
+<p>(<a idref="sect19">19</a>)<!--ERRTAG-RE-80830-ITEM--> Replaced <quote>VANAMOR</quote> with <quote>Vanamor</quote>.<!--/ERRTAG-RE-80830-ITEM--></p>
+       <p>(<a idref="sect20">20</a>) Replaced <quote>says, <ch.lsquot/>Come</quote> with <quote>says. <ch.lsquot/>Come</quote>.<!--ERRTAG-RE-83320-ITEM--> Replaced <quote>says: LIBRARY</quote> with <quote>says <ch.lsquot/>Library<ch.rsquot/></quote>.<!--/ERRTAG-RE-83320-ITEM--></p>
        <p>(<a idref="sect21">21</a>) Replaced <quote>ends here</quote> with <quote>end here</quote>.</p>
        <p>(<a idref="sect23">23</a>) Replaced <quote>Matho<ch.apos/> potion</quote> with <quote>Matho<ch.apos/>s Potion</quote>.</p>
        <p>(<a idref="sect24">24</a>) Replaced <quote>lavas</quote> with <quote>Lavas</quote> and <quote>the Gate</quote> with <quote>the Shadow Gate</quote>.</p>
@@ -6032,6 +5930,7 @@
        <p>(<a idref="sect71">71</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>. Replaced <quote>ultra-violet</quote> with <quote>ultraviolet</quote>.<!--ERRTAG-RE-142889-ITEM--> Replaced <quote>Captain</quote> with <quote>captain</quote>.<!--/ERRTAG-RE-142889-ITEM--></p>
        <p>(<a idref="sect72">72</a>) Replaced <quote>cry, <ch.lsquot/>We</quote> with <quote>cry. <ch.lsquot/>We</quote>. Replaced <quote>follow</quote> with <quote>Follow</quote>.</p>
        <p>(<a idref="sect73">73</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>.<!--ERRTAG-RA-147521-ITEM--> Replaced all occurrences of <quote>war-dogs</quote> with <quote>War-dogs</quote>.<!--/ERRTAG-RA-147521-ITEM--></p>
+<p>(<a idref="sect74">74</a>)<!--ERRTAG-RE-148078-ITEM--> Replaced <quote>name: THE BARREL BRIDGE TAVERN</quote> with <quote>name: <ch.lsquot/>The Barrel Bridge Tavern<ch.rsquot/></quote>.<!--/ERRTAG-RE-148078-ITEM--></p>
        <p>(<a idref="sect75">75</a>) Replaced <quote>say, <ch.lsquot/>can</quote> with <quote>say. <ch.lsquot/>Can</quote>.</p>
 <p>(<a idref="sect76">76</a>)<!--ERRTAG-RE-151624-ITEM--> Replaced <quote>discard</quote> with <quote>shoulder</quote>.<!--/ERRTAG-RE-151624-ITEM--><!--ERRTAG-RE-151678-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-151678-ITEM--><!--ERRTAG-RE-151366-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-151366-ITEM--></p>
        <p>(<a idref="sect78">78</a>) Replaced all occurrences of <quote>lavas</quote> with <quote>Lavas</quote>.</p>
@@ -6045,7 +5944,7 @@
 <p>(<a idref="sect87">87</a>)<!--ERRTAG-RE-168372-ITEM--> Replaced <quote>cloud of arrows and bolts descend</quote> with <quote>cloud of arrows and bolts descends</quote>.<!--/ERRTAG-RE-168372-ITEM--></p>
        <p>(<a idref="sect88">88</a>) Replaced <quote>lavas</quote> with <quote>Lavas</quote>.</p>
        <p>(<a idref="sect89">89</a>) Replaced <quote>dagger</quote> with <quote>Dagger</quote> since it can be taken.<!--ERRTAG-RE-170090-ITEM--> Replaced <quote>heap of bones mark</quote> with <quote>heap of bones marks</quote>.<!--/ERRTAG-RE-170090-ITEM--></p>
-       <p>(<a idref="sect90">90</a>) Replaced <quote>says, <ch.lsquot/>I</quote> with <quote>says. <ch.lsquot/>I</quote>. Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.<!--ERRTAG-RE-169998-ITEM--> Replaced <quote>says: LIBRARY</quote> with <quote>says <ch.lsquot/>LIBRARY<ch.rsquot/></quote>.<!--/ERRTAG-RE-169998-ITEM--><!--ERRTAG-RA-171438-ITEM--> Replaced all occurrences of <quote>words: HALLS OF LEARNING</quote> with <quote>words <ch.lsquot/>HALLS OF LEARNING<ch.rsquot/></quote>.<!--/ERRTAG-RA-171438-ITEM--></p>
+       <p>(<a idref="sect90">90</a>) Replaced <quote>says, <ch.lsquot/>I</quote> with <quote>says. <ch.lsquot/>I</quote>. Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series.<!--ERRTAG-RE-169998-ITEM--> Replaced <quote>says: LIBRARY</quote> with <quote>says <ch.lsquot/>Library<ch.rsquot/></quote>.<!--/ERRTAG-RE-169998-ITEM--><!--ERRTAG-RA-171438-ITEM--> Replaced all occurrences of <quote>words: HALLS OF LEARNING</quote> with <quote>words <ch.lsquot/>Halls of Learning<ch.rsquot/></quote>.<!--/ERRTAG-RA-171438-ITEM--></p>
        <p>(<a idref="sect92">92</a>) Replaced <quote>river Quarl</quote> with <quote>River Quarl</quote>.<!--ERRTAG-RE-175601-ITEM--> Replaced <quote>forest of Salony</quote> with <quote>Forest of Salony</quote>.<!--/ERRTAG-RE-175601-ITEM--></p>
        <p>(<a idref="sect94">94</a>) Replaced <quote>D<ch.rsquot/>Val</quote> with <quote>D<ch.apos/>Val</quote>. Replaced <quote>Alema trail</quote> with <quote>Alema Trail</quote>. Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
        <p>(<a idref="sect95">95</a>) Replaced <quote>psi-surge</quote> with <quote>Psi-surge</quote>.<!--ERRTAG-RE-180089-ITEM--> Replaced <quote>dimly-lit</quote> with <quote>dimly lit</quote>.<!--/ERRTAG-RE-180089-ITEM--></p>
@@ -6061,8 +5960,8 @@
        <p>(<a idref="sect108">108</a>) Replaced <quote>lavas</quote> with <quote>Lavas</quote>. Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>. Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>the Gate</quote> with <quote>the Shadow Gate</quote>.</p>
        <p>(<a idref="sect109">109</a>) Replaced <quote>1 Broadsword</quote> with <quote>Broadsword</quote>.</p>
        <p>(<a idref="sect110">110</a>) Replaced <quote>5 arrows</quote> with <quote>5 Arrows</quote>. Put the signposts into a table.</p>
-<p>(<a idref="sect111">111</a>)<!--ERRTAG-RE-202481-ITEM--> Replaced <quote>her majesty</quote> with <quote>her Majesty</quote>.<!--/ERRTAG-RE-202481-ITEM--><!--ERRTAG-RE-203498-ITEM--> Replaced <quote>reads: VANAMOR 280 miles</quote> with <quote>reads <ch.lsquot/>VANAMOR 280 miles<ch.rsquot/></quote>.<!--/ERRTAG-RE-203498-ITEM--></p>
-       <p>(<a idref="sect112">112</a>) Replaced <quote>facade</quote> with <quote>fa<ch.ccedil/>ade</quote>. Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Replaced <quote>says, <ch.lsquot/>I</quote> with <quote>says. <ch.lsquot/>I</quote>.<!--ERRTAG-RE-202455-ITEM--> Replaced <quote>says: LIBRARY</quote> with <quote>says <ch.lsquot/>LIBRARY<ch.rsquot/></quote>.<!--/ERRTAG-RE-202455-ITEM--><!--ERRTAG-RE-204183-ITEM--> Replaced <quote>words: HALLS OF LEARNING</quote> with <quote>words <ch.lsquot/>HALLS OF LEARNING<ch.rsquot/></quote>.<!--/ERRTAG-RE-204183-ITEM--></p>
+<p>(<a idref="sect111">111</a>)<!--ERRTAG-RE-202481-ITEM--> Replaced <quote>her majesty</quote> with <quote>her Majesty</quote>.<!--/ERRTAG-RE-202481-ITEM--><!--ERRTAG-RE-203498-ITEM--> Replaced <quote>reads: Vanamor 280 miles</quote> with <quote>reads <ch.lsquot/>VANAMOR 280 miles<ch.rsquot/></quote>.<!--/ERRTAG-RE-203498-ITEM--></p>
+       <p>(<a idref="sect112">112</a>) Replaced <quote>facade</quote> with <quote>fa<ch.ccedil/>ade</quote>. Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Replaced <quote>says, <ch.lsquot/>I</quote> with <quote>says. <ch.lsquot/>I</quote>.<!--ERRTAG-RE-202455-ITEM--> Replaced <quote>says: LIBRARY</quote> with <quote>says <ch.lsquot/>Library<ch.rsquot/></quote>.<!--/ERRTAG-RE-202455-ITEM--><!--ERRTAG-RE-204183-ITEM--> Replaced <quote>words: HALLS OF LEARNING</quote> with <quote>words <ch.lsquot/>Halls of Learning<ch.rsquot/></quote>.<!--/ERRTAG-RE-204183-ITEM--></p>
        <p>(<a idref="sect114">114</a>) Replaced <quote>battle spells</quote> with <quote>battle-spells</quote>. Replaced <quote>lavas<ch.apos/></quote> with <quote>Lavas<ch.apos/></quote>. Replaced <quote>sky, <ch.lsquot/>and</quote> with <quote>sky. <ch.lsquot/>And</quote>.<!--ERRTAG-RE-207175-ITEM--> Replaced <quote>wave of winged beasts come</quote> with <quote>wave of winged beasts comes</quote>.<!--/ERRTAG-RE-207175-ITEM--></p>
        <p>(<a idref="sect115">115</a>) Replaced <quote>anger and pain</quote> with <quote>anger, and pain</quote>.</p>
        <p>(<a idref="sect116">116</a>) Replaced <quote>treeline</quote> with <quote>tree-line</quote>.</p>
@@ -6103,7 +6002,7 @@
        <p>(<a idref="sect163">163</a>) Replaced <quote>mastery of Kai-alchemy</quote> with <quote>Kai-alchemy</quote>.</p>
        <p>(<a idref="sect164">164</a>) <!--ERRTAG-RE-266667-ITEM--> Replaced <quote>nadziranim magicians</quote> with <quote>Nadziran magicians</quote>.<!--/ERRTAG-RE-266667-ITEM--></p>
 <p>(<a idref="sect167">167</a>)<!--ERRTAG-RE-268685-ITEM--> Replaced <quote>thug</quote> with <quote>Thug</quote>.<!--/ERRTAG-RE-268685-ITEM--></p>
-       <p>(<a idref="sect168">168</a>) Replaced <quote>Sage, <ch.lsquot/>I</quote> with <quote>Sage. <ch.lsquot/>I</quote>. Replaced <quote>recognise</quote> with <quote>recognize</quote>.<!--ERRTAG-RE-266411-ITEM--> Replaced <quote>says: LIBRARY</quote> with <quote>says <ch.lsquot/>LIBRARY<ch.rsquot/></quote>.<!--/ERRTAG-RE-266411-ITEM--><!--ERRTAG-RE-269290-ITEM--> Replaced <quote>says: Quill Street</quote> with <quote>says <ch.lsquot/>Quill Street<ch.rsquot/></quote>.<!--/ERRTAG-RE-269290-ITEM--></p>
+       <p>(<a idref="sect168">168</a>) Replaced <quote>Sage, <ch.lsquot/>I</quote> with <quote>Sage. <ch.lsquot/>I</quote>. Replaced <quote>recognise</quote> with <quote>recognize</quote>.<!--ERRTAG-RE-266411-ITEM--> Replaced <quote>says: LIBRARY</quote> with <quote>says <ch.lsquot/>Library<ch.rsquot/></quote>.<!--/ERRTAG-RE-266411-ITEM--><!--ERRTAG-RE-269290-ITEM--> Replaced <quote>says: Quill Street</quote> with <quote>says <ch.lsquot/>Quill Street<ch.rsquot/></quote>.<!--/ERRTAG-RE-269290-ITEM--></p>
        <p>(<a idref="sect170">170</a>) Replaced <quote>Silversmith<ch.apos/>s Guild</quote> with <quote>Silversmiths<ch.apos/> Guild</quote>.</p>
        <p>(<a idref="sect172">172</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
 <p>(<a idref="sect173">173</a>)<!--ERRTAG-RE-272921-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-272921-ITEM--></p>
@@ -6125,7 +6024,7 @@
        <p>(<a idref="sect191">191</a>) Replaced <quote>Meal and</quote> with <quote>Meal or</quote>.</p>
        <p>(<a idref="sect192">192</a>) Replaced both occurrences of <quote>lavas</quote> with <quote>Lavas</quote>.<!--ERRTAG-RE-297915-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-297915-ITEM--></p>
 <p>(<a idref="sect193">193</a>)<!--ERRTAG-RE-297957-ITEM--> Replaced <quote>try and</quote> with <quote>try to</quote>.<!--/ERRTAG-RE-297957-ITEM--></p>
-       <p>(<a idref="sect194">194</a>) Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Replaced <quote>says, <ch.lsquot/>I</quote> with <quote>says. <ch.lsquot/>I</quote>.<!--ERRTAG-RE-299569-ITEM--> Replaced <quote>says: LIBRARY</quote> with <quote>says <ch.lsquot/>LIBRARY<ch.rsquot/></quote>.<!--/ERRTAG-RE-299569-ITEM--><!--ERRTAG-RE-301473-ITEM--> Replaced <quote>words: HALLS OF LEARNING</quote> with <quote>words <ch.lsquot/>HALLS OF LEARNING<ch.rsquot/></quote>.<!--/ERRTAG-RE-301473-ITEM--></p>
+       <p>(<a idref="sect194">194</a>) Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Replaced <quote>says, <ch.lsquot/>I</quote> with <quote>says. <ch.lsquot/>I</quote>.<!--ERRTAG-RE-299569-ITEM--> Replaced <quote>says: LIBRARY</quote> with <quote>says <ch.lsquot/>Library<ch.rsquot/></quote>.<!--/ERRTAG-RE-299569-ITEM--><!--ERRTAG-RE-301473-ITEM--> Replaced <quote>words: HALLS OF LEARNING</quote> with <quote>words <ch.lsquot/>Halls of Learning<ch.rsquot/></quote>.<!--/ERRTAG-RE-301473-ITEM--></p>
        <p>(<a idref="sect195">195</a>) Replaced <quote>5<ch.endash/><ch.minus/>8</quote> with <quote>5<ch.endash/>8</quote>.</p>
        <p>(<a idref="sect196">196</a>) Replaced <quote>lavas</quote> with <quote>Lavas</quote> and <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.<!--ERRTAG-RE-303286-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-303286-ITEM--><!--ERRTAG-RE-303497-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-303497-ITEM--><!--ERRTAG-RE-306701-ITEM--> Replaced <quote>Sun Lord, or higher</quote> with <quote>Sun Lord or higher</quote>.<!--/ERRTAG-RE-306701-ITEM--></p>
        <p>(<a idref="sect197">197</a>) Replaced both occurrences of <quote>dug-out</quote> with <quote>dugout</quote>.<!--ERRTAG-RE-303412-ITEM--> Replaced <quote>are marching</quote> with <quote>is marching</quote>.<!--/ERRTAG-RE-303412-ITEM--></p>
@@ -6216,7 +6115,7 @@
        <p>(<a idref="sect305">305</a>) Replaced <quote>face-down</quote> with <quote>face down</quote>.</p>
        <p>(<a idref="sect306">306</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>.</p>
        <p>(<a idref="sect307">307</a>) Deleted <quote>at the beginning of this book</quote>.<!--ERRTAG-RA-437890-ITEM--> Replaced all occurrences of <quote>Captain</quote> with <quote>captain</quote> when it doesn't proceed Cearmaine's name.<!--/ERRTAG-RA-437890-ITEM--></p>
-       <p>(<a idref="sect308">308</a>) Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Replaced <quote>says, <ch.lsquot/>I</quote> with <quote>says. <ch.lsquot/>I</quote>. Replaced <quote>candlemakers</quote> with <quote>candle-makers</quote>.<!--ERRTAG-RE-440953-ITEM--> Replaced <quote>says: LIBRARY</quote> with <quote>says <ch.lsquot/>LIBRARY<ch.rsquot/></quote>.<!--/ERRTAG-RE-440953-ITEM--><!--ERRTAG-RE-444142-ITEM--> Replaced <quote>words: HALLS OF LEARNING</quote> with <quote>words <ch.lsquot/>HALLS OF LEARNING<ch.rsquot/></quote>.<!--/ERRTAG-RE-444142-ITEM--></p>
+       <p>(<a idref="sect308">308</a>) Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Replaced <quote>says, <ch.lsquot/>I</quote> with <quote>says. <ch.lsquot/>I</quote>. Replaced <quote>candlemakers</quote> with <quote>candle-makers</quote>.<!--ERRTAG-RE-440953-ITEM--> Replaced <quote>says: LIBRARY</quote> with <quote>says <ch.lsquot/>Library<ch.rsquot/></quote>.<!--/ERRTAG-RE-440953-ITEM--><!--ERRTAG-RE-444142-ITEM--> Replaced <quote>words: HALLS OF LEARNING</quote> with <quote>words <ch.lsquot/>Halls of Learning<ch.rsquot/></quote>.<!--/ERRTAG-RE-444142-ITEM--></p>
        <p>(<a idref="sect310">310</a>)<!--ERRTAG-RE-443317-ITEM--> Replaced <quote>Captain</quote> with <quote>captain</quote>.<!--/ERRTAG-RE-443317-ITEM--></p>
 <p>(<a idref="sect311">311</a>)<!--ERRTAG-RE-449855-ITEM--> Replaced <quote>thug</quote> with <quote>Thug</quote>.<!--/ERRTAG-RE-449855-ITEM--></p>
        <p>(<a idref="sect312">312</a>) Replaced <quote>mindforce</quote> with <quote>Mindforce</quote>.<!--ERRTAG-RE-453345-ITEM--> Replaced <quote>If he was to do so</quote> with <quote>If he were to do so</quote>.<!--/ERRTAG-RE-453345-ITEM--></p>
@@ -6226,6 +6125,7 @@
        <p>(<a idref="sect318">318</a>) Replaced <quote>an startling</quote> with <quote>a startling</quote>.</p>
        <p>(<a idref="sect320">320</a>) Replaced <quote>infra-red</quote> with <quote>infrared</quote>. Replaced both occurrences of <quote>dug-out</quote> with <quote>dugout</quote>.<!--ERRTAG-RE-455530-ITEM--> Replaced <quote>are marching</quote> with <quote>is marching</quote>.<!--/ERRTAG-RE-455530-ITEM--></p>
        <p>(<a idref="sect322">322</a>) Replaced <quote>Old Kingdom spell</quote> with <quote>Old Kingdom Spell</quote>.</p>
+<p>(<a idref="sect323">323</a>)<!--ERRTAG-RE-464254-ITEM--> Replaced <quote>message: Toll<ch.emdash/>4 Gold Crowns</quote> with <quote>message <ch.lsquot/>Toll<ch.emdash/>4 Gold Crowns<ch.rsquot/></quote>.<!--/ERRTAG-RE-464254-ITEM--></p>
        <p>(<a idref="sect327">327</a>) Replaced <quote>riverbank</quote> with <quote>river bank</quote>.<!--ERRTAG-RE-468435-ITEM--> Replaced <quote>city walls</quote> with <quote>city's walls</quote>.<!--/ERRTAG-RE-468435-ITEM--></p>
        <p>(<a idref="sect328">328</a>) Replaced <quote>Fryelund forest</quote> with <quote>Fryelund Forest</quote>. Replaced <quote>add 1</quote> with <quote>add 1.</quote>. Replaced <quote>lavas</quote> with <quote>Lavas</quote>.<!--ERRTAG-RE-472553-ITEM--> Replaced <quote>a flight of winged Lavas come</quote> with <quote>a flight of winged Lavas comes</quote>.<!--/ERRTAG-RE-472553-ITEM--></p>
        <p>(<a idref="sect329">329</a>) Replaced <quote>rock face</quote> with <quote>rock-face</quote>.</p>
@@ -6239,7 +6139,7 @@
        <p>(<a idref="sect339">339</a>) Replaced <quote>Weapons<ch.emdash/>we</quote> with <quote>Weapons we</quote>. Corrected the order of the Mace prices: bought for one Gold Crown and sold for two.</p>
        <p>(<a idref="sect340">340</a>) Replaced <quote>pouring</quote> with <quote>poring</quote>.</p>
        <p>(<a idref="sect341">341</a>) Replaced <quote>add 1</quote> with <quote>add 1.</quote>.<!--ERRTAG-RE-482237-ITEM--> Replaced <quote>bow</quote> with <quote>Bow</quote>.<!--/ERRTAG-RE-482237-ITEM--><!--ERRTAG-RE-482524-ITEM--> Replaced <quote>arrow</quote> with <quote>Arrow</quote>.<!--/ERRTAG-RE-482524-ITEM--></p>
-<p>(<a idref="sect342">342</a>)<!--ERRTAG-RE-484881-ITEM--> Replaced <quote>her majesty</quote> with <quote>her Majesty</quote>.<!--/ERRTAG-RE-484881-ITEM--><!--ERRTAG-RE-485965-ITEM--> Replaced <quote>reads: VANAMOR 280 miles</quote> with <quote>reads <ch.lsquot/>VANAMOR 280 miles<ch.rsquot/></quote>.<!--/ERRTAG-RE-485965-ITEM--></p>
+<p>(<a idref="sect342">342</a>)<!--ERRTAG-RE-484881-ITEM--> Replaced <quote>her majesty</quote> with <quote>her Majesty</quote>.<!--/ERRTAG-RE-484881-ITEM--><!--ERRTAG-RE-485965-ITEM--> Replaced <quote>reads: VANAMOR 280 miles</quote> with <quote>reads <ch.lsquot/>Vanamor 280 miles<ch.rsquot/></quote>.<!--/ERRTAG-RE-485965-ITEM--></p>
        <p>(<a idref="sect343">343</a>) Replaced <quote>add 1</quote> with <quote>add 1.</quote>.</p>
        <p>(<a idref="sect344">344</a>) Replaced <quote>lavas</quote> with <quote>Lavas</quote>. Replaced <quote>the Gate</quote> with <quote>the Shadow Gate</quote>.</p>
        <p>(<a idref="sect345">345</a>) Replaced <quote>Kai mastery</quote> with <quote>Kai Mastery</quote>.</p>
