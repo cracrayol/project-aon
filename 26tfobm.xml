@@ -10,10 +10,38 @@
 ]>
 
 <gamebook xml:lang="en-UK" version="0.12">
-
  <meta>
   <title>The Fall of Blood Mountain</title>
- </meta>
+  <creator class="short">Joe Dever and Brian Williams</creator>
+  <creator class="medium">
+   <line>Joe Dever</line>
+   <line>Illustrated by Brian Williams</line>
+  </creator>
+  <creator class="long">
+   &inclusion.joe.dever.bio.lw;
+   &inclusion.brian.williams.bio.lw;
+  </creator>
+  <publisher>Project Aon</publisher>
+  <date class="publication"><year>2008</year><month>4</month><day>28</day></date>
+  <description class="blurb">
+   <p>For centuries the Shom<ch.apos/>zaa has lain incarcerated and forgotten in a granite prison located deep below the mountains of Bor. Now this terrifying beast has accidentally been set free, and its hunger for vengeance knows no bounds. With a horde of vile minions at its command, swiftly the Shom<ch.apos/>zaa enacts its sinister plan to destroy King Ryvin and the wondrous realm of the Drodarin dwarves.</p>
+   <p>In The Fall of Blood Mountain, you must journey to the fabulous subterranean kingdom of the dwarves and attempt to save your ancient allies from the wrath of the Shom<ch.apos/>zaa. Will you succeed in your mission or will you succumb to the terrible powers of this ancient champion of Evil?</p>
+  </description>
+  <description class="publication">
+   <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
+  </description>
+  <rights class="copyrights">
+   <line>Text copyright <ch.copy/> 1997 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1997 Brian Williams.</line>
+  </rights>
+  <rights class="license-notification">
+   <p>
+    <line>Text copyright <ch.copy/> Joe Dever.</line>
+    <line>Illustrations copyright <ch.copy/> Brian Williams.</line>
+    <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+   </p>
+  </rights>
+</meta>
 
  <section id="toc">
   <meta />
@@ -28,469 +56,841 @@
 
   <data>
 
-<!-- Frontmatter
+   <section class="frontmatter" id="dedicate">
+    <meta>
+     <title>Dedication</title>
+     <link class="prev" idref="title" />
+     <link class="next" idref="acknwldg" />
+    </meta>
 
+    <data>
+     <p class="dedication">For Martin Alltimes</p>
+    </data>
+   </section>
 
-BLURB
+   <section class="frontmatter" id="acknwldg">
+    <meta>
+     <title>Acknowledgements</title>
+     <link class="prev" idref="dedicate" />
+     <link class="next" idref="tssf" />
+    </meta>
 
-For centuries the Shom<ch.apos/>zaa has lain incarcerated and forgotten in a granite prison located deep below the mountains of Bor. Now this terrifying beast has accidentally been set free, and its hunger for vengeance knows no bounds. With a horde of vile minions at its command, swiftly the Shom<ch.apos/>zaa enacts its sinister plan to destroy King Ryvin and the wondrous realm of the Drodarin dwarves.
+    <data>
 
-In The Fall of Blood Mountain, you must journey to the fabulous subterranean kingdom of the dwarves and attempt to save your ancient allies from the wrath of the Shom<ch.apos/>zaa. Will you succeed in your mission or will you succumb to the terrible powers of this ancient champion of Evil?
+     &inclusion.joe.dever.endowment;
 
-DEDICATION
+     <section class="frontmatter" id="credits">
+      <meta><title>Credits</title></meta>
 
-For Martin Alltimes
+      <data>
+       <dl>
+        <dt>Transcription</dt>
+         <dd>Paul Haager</dd>
+        <dt>Illustration Transcription</dt>
+         <dd>Jonathan Blake</dd>
+        <dt>XML</dt>
+         <dd>
+	  <line>Jonathan Blake</line>
+	  <line>Simon Osborne</line>
+	 </dd>
+        <dt>Action Charts</dt>
+         <dd>
+	  <line>JC Alvarez</line>
+	  <line>Jonathan Blake</line>
+	 </dd>
+        <dt>Proofreading</dt>
+         <dd>
+          <line>Simon Osborne</line>
+         </dd>
+        <dt>Editing</dt>
+         <dd>
+<!--	  <line>Ingo Kl<ch.ouml/>cker</line>
+	  <line>LeRoy McSwain</line>
+	  <line>Jennifer Sigman</line>-->
+	  <line>Simon Osborne</line>
+	 </dd>
+        <dt>Coordination</dt>
+         <dd>Jonathan Blake</dd>
+       </dl>
+      </data>
+     </section>
 
-THE STORY SO FAR<ch.ellips/>
+    </data>
+   </section>
 
-You are a Grand Master of the New Order of the Kai<ch.emdash/>the warrior elite of Sommerlund.
+   <section class="frontmatter" id="tssf">
+    <meta>
+     <title>The Story So Far<ch.ellips/></title>
+     <link class="prev" idref="acknwldg" />
+     <link class="next" idref="gamerulz" />
+    </meta>
 
-It is early winter in the year MS5084, thirty-four years since the First Order of the Kai were massacred by the Darklords of Helgedad. These champions of evil, who were sent by the Dark God Naar to destroy your fertile world of Magnamund, have since been destroyed. Lone Wolf, the supreme leader of your illustrious fighting order, was the only survivor of the Darklord attack upon the Kai. As a young initiate he stood amidst the burning wreckage of the old Kai Monastery and vowed to avenge the slaughter of his comrades. Twenty-five years later he kept his pledge when alone he infiltrated the foul domain of the Darklords and destroyed the infernal city of Helgedad, the base of their evil power.
+    <data>
+     <p>You are a Grand Master of the New Order of the Kai<ch.emdash/>the warrior elite of Sommerlund.</p>
 
-With the destruction of Helgedad, chaos befell the Darklord armies who had, until then, been poised to conquer all Magnamund. Quickly their disorder escalated into a mutinous civil war which allowed the Freeland Alliance armies of Magnamund time enough to recover and launch a successful counter-offensive. Against all odds, a swift and total victory was secured over the feuding armies of evil. Following the demise of the Darklords, peace has reigned in your homeland of Sommerlund. Under the direction of Lone Wolf the ruined monastery of the Kai has been thoroughly rebuilt and restored to its former glory, and a New Order has been firmly established. You are one of this new generation of Kai recruits. You were born in Sommerlund in the year MS5063, during the time of the war against the Darklords. When you were seven years old you were sent by your father to the Kai Monastery. There, under the tutelage of Lone Wolf, you developed your martial skills and honed the special Kai abilities which lay dormant within you. Over the years that followed, your skills were nurtured and sharpened to perfection by long hours of study and rigorous training. Your exceptional talents have helped you to master all of the Kai and Magnakai Disciplines, and you have risen swiftly through the ranks of the New Order to become one of only five who now hold the high rank of Kai Grand Master. It is an achievement that has brought great honour upon you and your family.
+     <p>It is early winter in the year MS5084, thirty-four years since the First Order of the Kai were massacred by the Darklords of Helgedad. These champions of evil, who were sent by the Dark God Naar to destroy your fertile world of Magnamund, have since been destroyed. Lone Wolf, the supreme leader of your illustrious fighting order, was the only survivor of the Darklord attack upon the Kai. As a young initiate he stood amidst the burning wreckage of the old Kai Monastery and vowed to avenge the slaughter of his comrades. Twenty-five years later he kept his pledge when alone he infiltrated the foul domain of the Darklords and destroyed the infernal city of Helgedad, the base of their evil power.</p>
 
-In the year MS5077 your skill and courage were put to the test when an attack was launched upon the Kai Monastery during Lone Wolf<ch.apos/>s absence. By means of a Shadow Gate (an astral corridor between the physical world of Sommerlund and the many ethereal domains which lie beyond it), Naar sent forth a host of dragon-creatures to besiege the monastery and lay waste to all Sommerlund. He had chosen his time well, yet his evil plan was thwarted by the tenacious defence that you and your brethren maintained until the siege was raised by Lone Wolf and the King<ch.apos/>s army of Sommerlund.Â¹
+     <p>With the destruction of Helgedad, chaos befell the Darklord armies who had, until then, been poised to conquer all Magnamund. Quickly their disorder escalated into a mutinous civil war which allowed the Freeland Alliance armies of Magnamund time enough to recover and launch a successful counter-offensive. Against all odds, a swift and total victory was secured over the feuding armies of evil. Following the demise of the Darklords, peace has reigned in your homeland of Sommerlund. Under the direction of Lone Wolf the ruined monastery of the Kai has been thoroughly rebuilt and restored to its former glory, and a New Order has been firmly established. You are one of this new generation of Kai recruits. You were born in Sommerlund in the year MS5063, during the time of the war against the Darklords. When you were seven years old you were sent by your father to the Kai Monastery. There, under the tutelage of Lone Wolf, you developed your martial skills and honed the special Kai abilities which lay dormant within you. Over the years that followed, your skills were nurtured and sharpened to perfection by long hours of study and rigorous training. Your exceptional talents have helped you to master all of the Kai and Magnakai Disciplines, and you have risen swiftly through the ranks of the New Order to become one of only five who now hold the high rank of Kai Grand Master. It is an achievement that has brought great honour upon you and your family.</p>
 
-1<ch.emdash/>Lone Wolf 18: Dawn of the Dragons
+     <p>In the year MS5077 your skill and courage were put to the test when an attack was launched upon the Kai Monastery during Lone Wolf<ch.apos/>s absence. By means of a Shadow Gate (an astral corridor between the physical world of Sommerlund and the many ethereal domains which lie beyond it), Naar sent forth a host of dragon-creatures to besiege the monastery and lay waste to all Sommerlund. He had chosen his time well, yet his evil plan was thwarted by the tenacious defence that you and your brethren maintained until the siege was raised by Lone Wolf and the King<ch.apos/>s army of Sommerlund.¹</p>
 
-During the seven years that have elapsed since the defeat of his minions, Naar has sought vengeance upon the Kai. He commands many agents of evil upon Magnamund, and quietly they wait in the shadows for the day when they may serve their fell master. One such agent was Lord Vandyan of Eldenora. Guided by Naar, Vandyan sought and found three ancient runes of evil. Empowered by his discoveries, Vandyan summoned a vast army of reptilian warriors<ch.emdash/>the Vorka<ch.emdash/>which he used to conquer and occupy the lands of his peaceful neighbours. Emboldened by his martial successes, Vandyan overran much of central Magnamund, including the realm of Lyris<ch.emdash/>one of Sommerlund<ch.apos/>s oldest allies. In response to a plea for help from Lyris, Lone Wolf mounted a Kai crusade to raise the Vorka siege of Varetta, its capital city.
+     <p>1<ch.emdash/>Lone Wolf 18: Dawn of the Dragons</p>
 
-During this crusade, you undertook a vital mission behind enemy lines that turned the tide of the whole campaign. Alone, you infiltrated Vandyan<ch.apos/>s daunting fortress of Skull-Tor and destroyed the three runes, thereby extinguishing the source of the power by which the Vorka horde were permitted to exist. Vandyan<ch.apos/>s army dissolved on the battlefield and the Kai were able to raise the siege of Varetta.Â²
+     <p>During the seven years that have elapsed since the defeat of his minions, Naar has sought vengeance upon the Kai. He commands many agents of evil upon Magnamund, and quietly they wait in the shadows for the day when they may serve their fell master. One such agent was Lord Vandyan of Eldenora. Guided by Naar, Vandyan sought and found three ancient runes of evil. Empowered by his discoveries, Vandyan summoned a vast army of reptilian warriors<ch.emdash/>the Vorka<ch.emdash/>which he used to conquer and occupy the lands of his peaceful neighbours. Emboldened by his martial successes, Vandyan overran much of central Magnamund, including the realm of Lyris<ch.emdash/>one of Sommerlund<ch.apos/>s oldest allies. In response to a plea for help from Lyris, Lone Wolf mounted a Kai crusade to raise the Vorka siege of Varetta, its capital city.</p>
 
-2<ch.emdash/>Lone Wolf 24: Rune War
+     <p>During this crusade, you undertook a vital mission behind enemy lines that turned the tide of the whole campaign. Alone, you infiltrated Vandyan<ch.apos/>s daunting fortress of Skull-Tor and destroyed the three runes, thereby extinguishing the source of the power by which the Vorka horde were permitted to exist. Vandyan<ch.apos/>s army dissolved on the battlefield and the Kai were able to raise the siege of Varetta.²</p>
 
-During your mission in Skull-Tor, you discovered that the Vorka were not the only creatures that Vandyan had summoned by the power of the runes. A demonic entity called Zorkaan the Soultaker had also been brought to Magnamund from its lair upon the Plain of Darkness<ch.emdash/>the ethereal domain of Naar. Having fought and defeated this creature, you believed that it had perished forever when subsequently you smashed the runes. Sadly, this was not so. After celebrating the battlefield victory at Varetta, Lone Wolf ordered you to return in triumph to the Kai Monastery aboard the flying ship Cloud-dancer. He chose to ride with his New Order crusaders and they were expected to arrive home a week later.
-
-After five days, a Kai scout arrived unexpectedly at the monastery with shocking news to impart. Lone Wolf had disappeared. Those who witnessed the abduction said that he was engulfed by a whirling black shadow that fell upon him from out of a stormy sky. So swift was the attack that your fellow Grand Masters were unable to prevent him from being carried away. The scout<ch.apos/>s description of the whirling black shadow was identical to the form adopted by Zorkaan the Soultaker. The destruction of the rune used by Vandyan to summon Zorkaan had not brought about the creature<ch.apos/>s demise after all; it had trapped the creature upon Magnamund.
-
-You had achieved a great victory at Skull-Tor, but the shocking news of Lone Wolf<ch.apos/>s abduction cast a shadow over your triumph there. Hurriedly you summoned Guildmaster Banedon, the leader of Sommerlund<ch.apos/>s Guild of Magicians, to an emergency council at the Kai Monastery. He responded swiftly to your summons and arrived within hours aboard his flying craft Cloud-dancer. He was accompanied by Lord Rimoah of Dessi, an Elder Magi magician who is also Lone Wolf<ch.apos/>s oldest friend and advisor.
-
-Rimoah informed you that Zorkaan<ch.apos/>s arrival upon Magnamund had not gone unnoticed by the Elder Magi. From afar they had sensed the creature<ch.apos/>s presence and, through the use of their Old Kingdom magic, Rimoah and his fellow elders had charted its movements. Rimoah told you of an evil sorcerer called Xaol who was in hiding in Gazad Helkona, a former Darklord city-fortress located in the desolate wastes of northern Skaror. This vile necromancer was a known agent of Naar. During the days before Lone Wolf<ch.apos/>s abduction, Rimoah and the Elder Magi had detected streams of psychic communication coursing between Gazad Helkona and the Plain of Darkness.
-
-<quote>Naar was transmitting to Xaol the secrets of a Ritual of Binding by which the freed spirit of Zorkaan could be enslaved,</quote> said Rimoah. <quote>This ritual was enacted successfully in the stronghold of Gazad Helkona. Through Xaol, Naar has gained control over Zorkaan. He sent this creature to assassinate Lone Wolf, yet the attempt was unsuccessful. Zorkaan failed to kill Lone Wolf<ch.ellips/> but he was able to subdue and kidnap him.</quote>
-
-Rimoah informed you that your leader was being held prisoner in Gazad Helkona. By the use of his supreme Disciplines and the power of the Sommerswerd, his magical blade, Lone Wolf had survived death at the hand of Naar<ch.apos/>s foul creation. <quote>Your leader is brave and resourceful,</quote> he said, <quote>but I fear that Zorkaan<ch.apos/>s frequent attacks will weaken and eventually destroy him unless he is rescued quickly.</quote>
-
-Selflessly you volunteered to attempt the rescue. Rimoah and Banedon, impressed by your courage and your confidence, readily agreed to help you achieve your difficult mission and together you formulated a plan of action. Banedon transported you aboard Cloud-dancer to a remote valley south of Gazad Helkona, from where you approached the fortress on foot. Despite great adversity you were able to gain entry to Xaol<ch.apos/>s fortress and save your leader from the clutches of Naar<ch.apos/>s agent.Â³ During your daring mission, you fought and defeated both Xaol and Zorkaan before Banedon arrived to snatch both you and Lone Wolf from the clutches of Xaol<ch.apos/>s angry minions.
-
-3<ch.emdash/>Lone Wolf 25: Trail of the Wolf
-
-A year has elapsed since your triumph at Gazad Helkona. It has been a peaceful and rewarding time for you at the Kai Monastery, a period in which you have devoted yourself to the training of new recruits. Such has been the success of your tutelage that you have come to be greatly revered by your students and your peers. Yet, lately, you have felt a longing to venture abroad once more, to test your courage and your battle skills in the ineluctable war against Evil.
-
-Early one morning, you glimpsed a golden eagle leave its nest in the frost-covered timberland that stretches beyond the window of your private chamber. As you watched this majestic creature soar above the treeline, you were reminded of the daring aerial escape that you had made from Gazad Helkona aboard Banedon<ch.apos/>s skycraft. Then you felt a tingle of premonition at the nape of your neck when you noticed a distant speck in the clear azure sky. This speck grew larger until you were able to discern the distinctive outline of Cloud-dancer approaching from the north. Hurriedly you left your chamber and went to the Monastery training park where a small group of Kai lords had gathered in expectation. As the sleek skyship was made to hover overhead, a boarding cage was lowered to the frost-hardened ground and out stepped an unexpected visitor<ch.emdash/>Lord Rimoah of Dessi. You exchanged greetings and he requested an immediate audience with Lone Wolf. From his sombre expression you could tell that he had grave and urgent news to impart.
-
-You escorted Lord Rimoah personally to Lone Wolf<ch.apos/>s chambers, located beneath the Tower of the Sun, the monastery<ch.apos/>s commanding citadel. Before you could excuse yourself and leave the vault, Lone Wolf asked you to stay to listen to what the venerable magician had come to say. Lord Rimoah nodded his benign approval.
-
-<quote>Dwarf King Ryvin of Bor is in desperate need of our aid, my Lords,</quote> began Rimoah, earnestly. <quote>An ancient horror has been awoken in the depths of his subterranean kingdom, and now it threatens to destroy his realm. The Drodarin race may be doomed unless we are able to overcome this creature<ch.ellips/> and swiftly.</quote>
-
-Lord Rimoah informed you that recent excavations in the lowest levels of the vast underground kingdom of Bor had disturbed the Shom<ch.apos/>zaa. This powerful entity was entombed by the Elder Magi during their 1,000-year-war against Agarash the Damned<ch.emdash/>Naar<ch.apos/>s first champion of evil. Lone Wolf lowered his eyes and shook his head in disbelief upon hearing Rimoah<ch.apos/>s words.
-
-<quote>I understood that dwarf lore expressly forbade such deep mining, for fear that the Shom<ch.apos/>zaa and its minions might be released. How could such a thing have been allowed to occur?</quote> he said.
-
-<quote>Greed is to blame, my lord,</quote> replied Rimoah, sadly, <quote><ch.lellips/> the greed of King Ryvin<ch.apos/>s elder son, the Crown Prince Leomin. He alone was responsible for the excavations that opened the way to this ancient horror.</quote>
-
-Lord Rimoah informed you that only five days have elapsed since the Shom<ch.apos/>zaa was released, yet already the creature and its agarashi minions have taken control of the lower levels of the kingdom. <quote>Bitter fighting rages in the tunnels and chambers of Bor as King Ryvin<ch.apos/>s army struggles to contain the Shom<ch.apos/>zaa and its horde,</quote> he said. <quote>They are being sorely pressed, for the enemy have captured their armouries and equipped themselves for the fight. Ryvin has lost control of the tunnels leading to his throne chamber, where Leomin and his younger brother, Prince Torfan, are now trapped and besieged, along with the remnants of their personal guard.</quote>
-
-Lone Wolf was disturbed to hear that the throne chamber of Bor was under attack, for it houses the fabled Throne of Andarin. This grand seat contains a gem of power that was bestowed upon the Drodarin dwarves of Bor by the Goddess Ishir. Its divine radiance provides the dwarves with a unique energy that enables them to grow their crops deep underground, without the need for direct sunlight. If the Throne of Andarin is destroyed then the crops will surely fail and famine will beset Bor, with disastrous consequences.
-
-<quote>Repeated attempts to break the siege of the throne chamber have failed, and the morale of Ryvin<ch.apos/>s army is now dangerously low,</quote> said Rimoah. <quote>I<ch.apos/>ve heard tell that even the Dwarf Lords and the War Thanes, the elite of Ryvin<ch.apos/>s army, hold that Prince Leomin<ch.apos/>s greed has sealed their fate. If such talk is true, and the Shom<ch.apos/>zaa conquers Bor, then our hopes for a lasting peace in Magnamund will be ruined. The fall of Bor will give Naar a base of power at the very heart of Magnamund. There he will be able muster his agents, spawn his vile abominations, and attempt once more to conquer our world.</quote>
-
-<quote>But what can be done to save Bor before it is too late?</quote> asked Lone Wolf, anxiously.
-
-<quote>King Ryvin lacks the means to destroy this enemy,</quote> replied Rimoah, gravely. <quote>Nevertheless, the means exist. The Shom<ch.apos/>zaa is especially vulnerable to magic of the Old Kingdom. It is the magic that we used to entrap and entomb the creature milleniums ago.</quote>
-
-From a pocket of his flowing robes, Rimoah took out a spherical crystal and held it in the cupped palm of his hand. Its multi-faceted surface radiated beams of golden light which shimmered and sparkled with a supernatural brilliance.
-
-<quote>A Sun-Crystal,</quote> said Lone Wolf. <quote>Yes, my Lord,</quote> replied Rimoah, reverently. <quote>By the skilful use of the power contained within this sphere it is possible that we may defeat the Shom<ch.apos/>zaa and its minions, and thereby spare the kingdom of Bor from the tyrannical rule of Naar. We of the Elder Magi have crafted the means to defeat the Shom<ch.apos/>zaa, but in all Magnamund only the Kai have the ability and courage that is needed to take this goodly weapon and use it to its full effect.</quote>
-
-Lone Wolf approached Rimoah and took the Sun-Crystal from his outstretched palm. Then he turned to face you.
-
-<quote>We have been called upon to undertake a difficult and dangerous mission, Grand Master,</quote> he said. <quote>You have proven your bravery and skill beyond all doubt, and truly you have earned the right to refuse this quest with honour. Yet I sense that you hunger for the heat of battle and the challenge of the quest, and so I offer this mission to you. Will you venture to Bor and confront the bane that now threatens to destroy our Dwarven allies?</quote>
-
-<quote>Yes, my Lord, I will</quote> you replied, without a moment<ch.apos/>s hesitation. <quote>For the greater glory of Sommerlund and the Kai, I am proud to accept the quest.</quote>
-
-THE GAME RULES
-
-You keep a record of your adventure on the <a idref="action">Action Chart</a> that you will find in the front of this book. For ease of use, and for further adventuring, it is recommended that you photocopy these pages.
-
-During the years you have spent in training at the Kai Monastery, you have devoted yourself to further developing your fighting prowess (<typ class="attribute">COMBAT SKILL</typ>) and physical stamina (<typ class="attribute">ENDURANCE</typ>). Before you begin this New Order adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point the blunt end of it on to the <a idref="random">Random Number Table</a> on the last page of the book. If you pick a 0 it counts as zero.
-
-The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 25 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a> (ie, if your pencil fell on the number 7 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> of 32). When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore desirable.
-
-The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 30 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a> (ie, if your pencil fell on the number 8 on the Random lumber Table you would have 38 <typ class="attribute">ENDURANCE</typ> points).
-
-If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points cannot rise above the number you have when you start an adventure.
-
-If you have successfully completed previous adventures in the Lone Wolf New Order series (Books 21<ch.endash/>25), you can carry your current scores of <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points over to this adventure. You may also carry over any Special Items, Kai Weapon, normal weapons and Backpack Items you had in your possession at the end of your last adventure, and these should be entered on your new <a idref="action">Action Chart</a>.
-
-Playing Tip: You may use a 10-sided die instead of the <a idref="random">Random Number Table</a> if you find it more convenient.
-
-YOUR KAI NAME
-
-It has long been the tradition of your elite warrior caste to bestow a new name upon each young novice when they complete their first year<ch.apos/>s training at the Kai Monastery. Kai names are chosen by senior Kai Masters with the aim of reflecting the individual strengths and qualities of each novice.
-
-You may create your own Kai name for yourself, or you can generate a Kai name at random using the name tables below. To generate a Kai name, pick a number from the <a idref="random">Random Number Table</a> and consult Table A. The name which corresponds to the number you have picked is the first part, or prefix, of your Kai name. Now pick a second number from the <a idref="random">Random Number Table</a> and consult Table B. The name which corresponds to the number you have picked is the second part, or suffix, of your Kai name. Put the prefix and the suffix together and you have your own personal Kai name. You can record your personal Kai name on the book plate which appears on the inside front cover of this book.
-
-TABLE A
-(Kai name prefix)
-
-0) = Swift
-1) = Sun
-2) = True
-3) = Bold
-4) = Moon
-5) = Sword
-6) = Wise
-7) = Storm
-8) = Rune
-9) = Brave
-
-TABLE B
-(Kai name suffix)
-
-0) = Blade
-1) = Fire
-2) = Hawk
-3) = Heart
-4) = Friend
-5) = Star
-6) = Dancer
-7) = Helm
-8) = Strider
-9) = Shield
-
-KAI <ch.ampersand/> MAGNAKAI DISCIPLINES
-
-During your distinguished rise to the ranks of the New Order of Kai Grand Masters, you have become proficient in all of the basic Kai and Magnakai Disciplines. These Disciplines provide you with a formidable arsenal of natural abilities which will serve you well. A brief summary of your skills is given below:
-
-Weaponmastery
-
-You are proficient with all close combat and missile weapons. You are a master of unarmed combat and suffer no <typ class="attribute">COMBAT SKILL</typ> loss when fighting bare-handed.
-
-Animal Control
-
-You are able to communicate with most animals and have limited control over hostile creatures. You can use woodland animals as guides and you are able to block a non-sentient creature<ch.apos/>s sense of taste and smell.
-
-Curing
-
-You are able to restore <typ class="attribute">ENDURANCE</typ> points lost as a direct result of combat. You may restore 1 <typ class="attribute">ENDURANCE</typ> point for every numbered section of the book you pass through in which you are not involved in further combat. The maximum number of <typ class="attribute">ENDURANCE</typ> points that can be restored in this way is limited to 10 per adventure.
-
-You also possess the ability to heal the wounds of others, and you can neutralize the harmful effects of most poisons, venoms and toxins.
-
-Invisibility
-
-You can hide effectively in most environments, mask any sounds made during movement, and you can cause minor alterations of your own physical appearance. Also you are able to mask your own body heat and scent.
-
-Huntmastery
-
-You are an expert hunter of food in the wild. You possess great physical agility and a keen sense of vision (day and night). Your senses of hearing and smell are especially acute.
-
-Pathsmanship
-
-You are able to understand most languages, magical symbols and hieroglyphics. You are expert at reading footprints and tracks. You have an intuitive knowledge of the compass points and can detect the threat of an enemy ambush up to a distance of 500 yards. You possess an ability to cross terrain without leaving tracks. You can converse with sentient creatures and mask yourself from psychic spells of detection.
-
-Psi-surge
-
-You are able to attack enemies using the powers of your mind. Also you can set up disruptive vibrations in inanimate objects and cause confusion in the minds of unsophisticated enemies.
-
-Psi-screen
-
-You possess strong mental defences against hypnosis, supernatural illusions, charms, hostile telepathy, and evil spirits. You are able to divert and re-channel some hostile psychic energy to your own ends.
-
-Nexus
-
-You can move small items by projection of your mind power. You can withstand extremes of temperature and are able to extinguish fire by force of your will alone. You have a limited immunity to flames, toxic gases, and corrosive liquids.
-
-Divination
-
-Your famous Kai sixth sense can warn you of imminent danger. You can detect invisible or hidden enemies, and you are able to communicate telepathically. You can recognize magic-using and/or magical creatures, detect psychic residues, and you have a limited ability to leave your corporeal body (<quote>spirit-walk</quote>) for short periods.
-
-NEW ORDER KAI GRAND MASTER DISCIPLINES
-
-After years of martial training and study at the Kai Monastery, and by the rigorous practice of the teachings of your illustrious mentor<ch.emdash/>Kai Supreme Master Lone Wolf<ch.emdash/>you have achieved the noble rank of Kai Grand Master Senior.
-
-Following in the footsteps of Lone Wolf himself, you have vowed that one day you will become totally proficient in all 16 of the New Order Kai Grand Master Disciplines. By doing so successfully you will share with Lone Wolf the responsibility, the honour, and the future glory of leading the New Order Kai as a Supreme Master.
-
-If this is the first New Order adventure you have undertaken then your present rank is that of Kai Grand Master Senior. This means that you have mastered four of the New Order Grand Master Disciplines listed below. It is for you to decide which four Disciplines these are. As all of the New Order Grand Master Disciplines will be of use to you at some point during your mission, pick these four skills with care. The correct use of a New Order Grand Master Discipline at the right time could save your life. When you have chosen your four Disciplines, enter them in the Grand Master Disciplines section of your <a idref="action">Action Chart</a>.
-
-1. Grand Weaponmastery
-
-This Discipline enables a New Order Grand Master to become supremely efficient in the use of all weapons. When you enter combat armed with one of your Grand Master weapons, you may add 5 points to your <typ class="attribute">COMBAT SKILL</typ>. The rank of Kai Grand Master Senior, with which you begin the New Order series, means that you are skilled in the use of one of the weapons listed in the EQUIPMENT section. For every adventure that you complete successfully in the New Order series, you will gain proficiency with one additional weapon.
-
-2. Animal Mastery
-
-New Order Grand Masters have considerable control over hostile, non-sentient creatures. Also, they have the ability to converse with birds and fishes, and use them as guides.
-
-3. Deliverance (Advanced Curing)
-
-New Order Grand Masters are able to use their healing power to repair serious battle wounds. If, while in combat, their <typ class="attribute">COMBAT SKILL</typ> is reduced to 8 points or less, they can draw upon their mastery to restore 20 <typ class="attribute">ENDURANCE</typ> points. This emergency ability can only be used once every 20 days.
-
-4. Assimilance (Advanced Invisibility)
-
-New Order Grand Masters are able to effect striking changes to their physical appearance, and maintain these changes over a period of 1 to 3 days. They have also mastered advanced camouflage techniques which make them virtually undetectable in an open landscape.
-
-5. Grand Huntmastery
-
-New Order Grand Masters are able to see in total darkness and they possess great natural speed and agility. They also have a superb sense of touch and taste.
-
-6. Grand Pathsmanship
-
-New Order Grand Masters are able to resist entrapment by hostile plants. Also they have a super-awareness of ambush, or the threat of ambush, in woods and dense forests.
-
-7. Kai-surge
-
-When using their psychic ability to attack an enemy, New Order Grand Masters may add 8 points to their <typ class="attribute">COMBAT SKILL</typ>. For every round in which Kai-surge is used, they need only deduct 1 <typ class="attribute">ENDURANCE</typ> point. Grand Masters have the option of using a weaker form of psychic attack called Mindblast. When using this lesser attack, they may add 4 points to their <typ class="attribute">COMBAT SKILL</typ> without loss of <typ class="attribute">ENDURANCE</typ> points (Kai-surge and Mindblast cannot be used simultaneously). New Order Grand Masters cannot use Kai-surge if their <typ class="attribute">ENDURANCE</typ> score falls to 6 points or below.
-
-8. Kai-screen
-
-During psychic combat, New Order Grand Masters are able to construct mind-fortresses capable of protecting themselves and others. The strength and capacity of these fortresses increases as a New Order Grand Master advances in rank.
-
-9. Grand Nexus
-
-New Order Grand Masters are able to withstand contact with harmful elements, such as flames and acids, for upwards of an hour in duration. This ability increases as a New Order Grand Master advances in rank.
-
-10. Telegnosis (Advanced Divination)
-
-This Discipline enables a New Order Grand Master to spirit-walk for far greater lengths of time, and with far fewer ill effects. Duration of the spirit-walk, and the protection afforded to his inanimate body, increases as a New Order Grand Master advances in rank.
-
-11. Magi-Magic (Old Kingdom Magic)
-
-Under the tutelage of Lone Wolf, you have been able to master the rudimentary skills of Old Kingdom battle magic. These arcane skills include the use of basic magi-magic spells, such as Shield, Power Word, and Invisible Fist. As you advance in rank, so will your knowledge and mastery of Old Kingdom magic increase.
-
-12. Kai-alchemy {Brotherhood Magic)
-
-Under the tutelage of Lone Wolf and Guildmaster Banedon (the leader of Sommerlund<ch.apos/>s guild of magicians), you have mastered the elementary spells of the Brotherhood of the Crystal Star. These spells include Lightning Hand, Levitation, and Mind Charm. As you advance in rank, so will your knowledge and mastery of Brotherhood magic increase.
-
-13. Astrology
-
-The celestial bodies which occupy the skies above Magnamund have long been known to affect the lives of its inhabitants. Mastery of this Discipline enables a New Order Grand Master to predict and shape the future by studying the relative positions of the Sun, the Moon, and the myriad planets and stars. The number and accuracy of these predictions increases as a New Order Grand Master advances in rank.
-
-14. Herbmastery
-
-Mastery of this New Order Discipline enables a Grand Master to identify readily any substance derived from living or growing organic material. He is aware of any secret uses to which an organic material may be put, and he is skilled in effecting the release of a substance<ch.apos/>s medicinal and/or magical properties.
-
-15. Elementalism
-
-This Discipline enables a New Order Grand Master to manipulate the four basic elements: earth, air, fire, and water. By drawing upon individual (or combinations of) elements that are available, he is able to detach, affix, increase, concentrate, intensify, remove or accelerate this matter to fulfil a specific purpose, eg, create a wall, hurl a rock, spray sand, remove air, intensify fire. The versatility of this Discipline increases as a New Order Grand Master advances in rank.
-
-16. Bardsmanship
-
-Through mastery of this Discipline a Kai Grand Master of the New Order becomes a multi-talented performer, proficient in the use of any musical instrument. He is able to sing or chant, recite or compose tales of legend, mimic speech or dialect and stimulate a wide range of emotions among sentient creatures. The effect and power of his bardic abilities will steadily increase as he advances through the Grand Master ranks.
-
-If you successfully complete the mission as set in Book 26 of the Lone Wolf (New Order) series, you may add a further Grand Master Discipline of your choice to your <a idref="action">Action Chart</a> in Book 27. For every Grand Master Discipline you possess, in excess of the original four Disciplines you begin with, you may add 1 point to your basic <typ class="attribute">COMBAT SKILL</typ> score and 2 points to your basic <typ class="attribute">ENDURANCE</typ> points score. These bonus points, together with your extra Grand Master Discipline(s), your original four Grand Master Disciplines, your Kai Weapon and any other Special Items that you have found and been able to keep during your adventures, may then be carried over and used in the next New Order adventure, which is called:
-
-Vampirium
-
-EQUIPMENT
-
-Before you leave the Kai Monastery and begin your journey to Bor, you equip yourself with a map of Bor and its surrounding territories (see the inside front cover of this book) and a pouch of gold. To find out how much gold is in the pouch, pick a number from the <a idref="random">Random Number Table</a> and add 20 to the number you have picked. The total equals the number of Gold Crowns inside the pouch, and you should now enter this number in the <quote>Gold Crowns</quote> section of your <a idref="action">Action Chart</a>. If you have successfully completed previous New Order adventures (Books 21<ch.endash/>25), you may add this sum to the total sum of Crowns you already possess. Fifty is the maximum number of Gold Crowns you can carry in your pouch at any time. You may also select five items from the list below, only two of which may be Weapons.
-
-Broadsword (Weapons)
-
-Sword (Weapons)
-
-Quiver (Special Items) This contains six arrows; record them on your Weapons List.
-
-Flute (Backpack Item)
-
-Dagger (Weapons)
-
-Axe (Weapons)
-
-Bow (Weapons)
-
-2 Meals (Meals) Each Meal takes up one space in your Backpack.
-
-Rope (Backpack Item)
-
-Potion of Laumspur (Backpack Item) This potion restores 4 <typ class="attribute">ENDURANCE</typ> points to your total when swallowed after combat. There is enough for only one dose.
-
-List the five items that you have chosen on your <a idref="action">Action Chart</a>, under the appropriate headings, and make a note of any effect that they may have to your <typ class="attribute">ENDURANCE</typ> points and/or <typ class="attribute">COMBAT SKILL</typ>.
-
-KAI WEAPONS
-
-Upon reaching the ultimate rank of Kai Supreme Master, Lone Wolf received as a reward from the God Kai many new skills and abilities. One of these skills was Kai Weaponcraft. Using his new-found mastery, Lone Wolf forged ten weapons of magical power in the armoury furnaces of the Kai Monastery. These magical weapons are reserved for the elite of the New Order Kai who attain the rank of Grand Master.
-
-In recognition of your rank and achievement, you may choose your own Kai Weapon from the table below or, if you prefer, you can generate one at random. To generate a Kai Weapon, pick a number from the <a idref="random">Random Number Table</a> and consult the first column. The magical axe, sword, or broadsword which corresponds to the number you have picked will be your own personal Kai Weapon. Record this magical weapon and its unique properties in the Kai Weapon section of the Special Items List at the front of the book.
-
-Example
-
-Say you choose the number 1 from the <a idref="random">Random Number Table</a>, your Kai Weapon will be the axe <quote>Alema</quote>.
-
-When using this Kai Weapon in normal combat you may add +5 points to your <typ class="attribute">COMBAT SKILL</typ>. Each Kai Weapon has a unique property. When you use your Kai Weapon in combat against the type of enemy that matches its unique property, or use it at the optimum time or location, then you may add the higher bonus to your <typ class="attribute">COMBAT SKILL</typ>.
-
-Example
-
-If you were to use <quote>Alema</quote> in combat against an undead enemy, you could add the higher bonus of +7 to your <typ class="attribute">COMBAT SKILL</typ>. If you were to fight a living enemy using this weapon then the bonus to your <typ class="attribute">COMBAT SKILL</typ> would remain at +5.
-
-KAI WEAPON TABLE
-
-RN Weapon type Weapon Name <typ class="attribute">CS</typ> Unique Properties <typ class="attribute">CS</typ>
-0 Axe <quote>Spawnsmite</quote> +5 versus reptilian enemies +6
-1 Axe <quote>Alema</quote> +5 versus undead enemies +7
-2 Axe <quote>Magnara</quote> +5 versus rock or stone +8
-3 Sword <quote>Sunstrike</quote> +5 when used in daylight +6
-4 Sword <quote>Kaistar</quote> +5 when used at night +7
-5 Sword <quote>Valiance</quote> +5 when used versus magicians +8
-6 Sword <quote>Ulnarias</quote> +5 when used underwater +9
-7 Broadsword <quote>Raumas</quote> +5 versus winged enemies +6
-8 Broadsword <quote>Illuminatus</quote> +5 when used underground +7
-9 Broadsword <quote>Firefall</quote> +5 versus fire-emitting enemies +8
-
-RN = Random Number <typ class="attribute">CS</typ> = <typ class="attribute">COMBAT SKILL</typ>
-
-Equipment<ch.emdash/>How to use it
-
-Weapons
-
-The maximum number of weapons that you can carry is two. Weapons aid you in combat. If you have the Grand Master Discipline of Grand Weaponmastery and a correct weapon, it adds 5 points to your <typ class="attribute">COMBAT SKILL</typ>. If you find a weapon during your adventure, you may pick it up and use it.
-
-Bows and Arrows
-
-During your adventure there will be opportunities to use a bow and arrow. If you equip yourself with this weapon, and you possess at least one arrow, you may use it when the text of a particular section allows you to do so. The bow is a useful weapon, for it enables you to hit an enemy at a distance. However, a bow cannot be used in hand-to-hand combat, therefore it is best to equip yourself also with a close combat weapon, such as a sword or an axe.
-
-In order to use a bow you must possess a quiver and at least one arrow. Each time the bow is used, erase an arrow from your <a idref="action">Action Chart</a>. A bow cannot, of course, be used if you exhaust your supply of arrows, but the opportunity may arise during your mission for you to replenish your stock of arrows.
-
-If you have the Discipline of Grand Weaponmastery with a bow, you may add 3 points to any number you pick from the <a idref="random">Random Number Table</a>, when using the bow.
-
-Backpack Items
-
-These must be stored in your Backpack. Because space is limited, you may keep a maximum of ten articles, including Meals, in your Backpack at any one time. You may only carry one Backpack at a time. During your travels you will discover various useful items which you may decide to keep. You may exchange or discard them at any point when you are not involved in combat.
-
-Any item that may be of use, and which can be picked up on your adventure and entered on your <a idref="action">Action Chart</a>, is given either initial capitals (eg, Silver Mirror, Gold Key), or is clearly identified as a Backpack Item. Unless you are told that it is a Special Item, carry it in your Backpack.
-
-Special Items
-
-Special Items are not carried in the Backpack. When you discover a Special Item, you will be told how or where to carry it. The maximum number of Special Items that can be carried on any adventure is 12.
-
-Kai Weapon
-
-Your Kai Weapon is a Special Item and it can be carried and used in addition to two normal weapons. If you possess the Discipline of Grand Weaponmastery for a weapon type which is the same as your unique Kai Weapon, you may add the Grand Weaponmastery bonus of +5 to your <typ class="attribute">COMBAT SKILL</typ>. This is in addition to the bonus gained when you use your Kai Weapon in combat.
-
-Food
-
-Food is carried in your Backpack. Each Meal counts as one item. You will need to eat regularly during your adventure. If you do not have any food when you are instructed to eat a Meal, you will lose 3 <typ class="attribute">ENDURANCE</typ> points. However, if you have chosen Grand Huntmastery as one of your four Disciplines then you will not need to tick off a Meal when instructed to eat.
-
-Potion of Laumspur
-
-This is a healing potion that can restore 4 <typ class="attribute">ENDURANCE</typ> points to your total when swallowed after combat. There is enough for one dose only. If you discover any other potion during the adventure, you will be informed of its effect. All potions are Backpack Items.
-
-RULES FOR COMBAT
-
-There will be occasions during your adventure when you will have to fight an enemy. The enemy<ch.apos/>s <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points are given in the text. Your aim in the combat is to kill the enemy by reducing his <typ class="attribute">ENDURANCE</typ> points to zero while losing as few <typ class="attribute">ENDURANCE</typ> points as possible yourself.
-
-At the start of a combat, enter your own and the enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> points in the appropriate boxes on the Combat Record section of your <a idref="action">Action Chart</a>.
-
-The sequence for combat is as follows:
-
-1. Add any extra points gained through your Grand Master Disciplines and Special Items to your current <typ class="attribute">COMBAT SKILL</typ> total.
-
-2. Subtract the <typ class="attribute">COMBAT SKILL</typ> of your enemy from this total. The result is your Combat Ratio. Enter it on the <a idref="action">Action Chart</a>.
-
-Example
-
-You, Grand Master (<typ class="attribute">COMBAT SKILL</typ> 32), are attacked in a forest by a pack of Wild Dogs (<typ class="attribute">COMBAT SKILL</typ> 31). You are taken by surprise and are not given the opportunity of evading their attack. You possess the Grand Master Discipline of Kai-surge to which the Wild Dogs are not immune, so you add 8 points to your <typ class="attribute">COMBAT SKILL</typ>. You also possess the Kai Weapon <quote>Ulnarias</quote>, so you add an additional 5 points to your <typ class="attribute">COMBAT SKILL</typ>. This gives you a total <typ class="attribute">COMBAT SKILL</typ> of 45.
-
-You now subtract the Wild Dogs<ch.apos/> <typ class="attribute">COMBAT SKILL</typ> from your own, giving a Combat Ratio of +14 (45<ch.minus/>31=+14). +14 is noted on your <a idref="action">Action Chart</a> as the Combat Ratio.
-
-3. When you have your Combat Ratio, pick a number from the <a idref="random">Random Number Table</a>.
-
-4. Turn to the COMBAT RESULTS TABLE on the inside back cover of this book. Along the top of the chart are shown the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the random number that you have picked (the random numbers appear on the side of the chart). You now have the number of <typ class="attribute">ENDURANCE</typ> points lost by both yourself and your enemy in this round of combat. (E represents points lost by the enemy; GM represents points lost by yourself<ch.emdash/>Grand Master.)
-
-Example
-
-The Combat Ratio between you and the Wild Dogs has been established as +14. If the number picked from the <a idref="random">Random Number Table</a> is 1, then the result of the first round of combat is:
-
-You (GM) lose 3 <typ class="attribute">ENDURANCE</typ> points (plus an additional 1 point for using Kai-surge. This loss is in addition to the loss suffered as a result of combat).
-
-Wild Dogs lose 9 <typ class="attribute">ENDURANCE</typ> points.
-
-5. On the <a idref="action">Action Chart</a>, mark the changes in <typ class="attribute">ENDURANCE</typ> points to the participants in the combat.
-
-6. Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.
-
-7. Repeat the sequence from Stage 3.
-
-This process of combat continues until the <typ class="attribute">ENDURANCE</typ> points of either your enemy or yourself are reduced to zero, at which point the one with the zero score is declared dead. If you are declared dead, the adventure is over. If the enemy is dead, you can proceed but with your <typ class="attribute">ENDURANCE</typ> points reduced.
-
-A sumary of Combat Rules appears on the page after the <a idref="random">Random Number Table</a>.
-
-Evasion of combat
-
-During your adventure you may be given the chance to evade combat. If you have already engaged in a round of combat and decide to evade, calculate the combat for that round in the usual manner. All points lost by the enemy as a result of that round are ignored, and you make your escape. Only you may lose <typ class="attribute">ENDURANCE</typ> points during that round (such is the risk of turning tail and running away during combat!). You may only evade if the text of the particular section allows you to do so.
-
-LEVELS OF NEW ORDER KAI GRAND MASTERSHIP
-
-The following table is a guide to the rank and titles you can achieve at each stage of your journey along the road of Kai Grand Mastership. As you successfully complete each adventure in the New Order series, you will gain an additional Grand Master Discipline and progress towards the pinnacle of Kai perfection<ch.emdash/>to become a Kai Supreme Master.
-
-No. of Grand Master Disciplines acquired Grand Master Rank
-
-4) Kai Grand Master Senior (You begin the New Order adventures at this level of Kai Grand Mastery)
-5) Kai Grand Master Superior
-6) Kai Grand Sentinel
-7) Kai Grand Defender
-8) Kai Grand Guardian
-9) Sun Knight
-10) Sun Lord
-11) Sun Thane
-12) Grand Thane
-13) Grand Crown
-14) Sun Prince
-15) Kai Supreme Master
-
-IMPROVED GRAND MASTER DISCIPLINES
-
-As you rise through the higher levels of Kai Grand Mastery you will find that your Disciplines will steadily improve. If you are a New Order Kai who has attained the rank of Sun Knight, you will now benefit from improvements to the following Grand Master Disciplines:
-
-Grand Weaponmastery
-
-Sun Knights with this Discipline are able to wield two-handed weapons (eg, Broadsword, Quarterstaff, Spear, etc) with full effect, using only one hand.
-
-Grand Pathsmanship
-
-Kai Sun Knights with this skill are able to repel at will all normal-sized insects within a radius of 3 yards. The range and numbers of insects so affected increases considerably as a Grand Master rises in rank.
-
-Deliverance
-
-Sun Knights who possess this skill are able to repair serious wounds sustained by creatures other than themselves. By the laying of hands upon the affected creature<ch.apos/>s body, a Sun Knight can cause an open wound (or other serious injury) to mend itself. The speed at which this healing process takes place Increases as a Grand Master rises in rank.
-
-Telegnosis
-
-Sun Knights who possess this Discipline are able to communicate telepathically over great distances. Initially the range of this ability is approximately 100 miles, but this distance increases as a Grand Master rises in rank.
-
-Grand Nexus
-
-Sun Knights who possess mastery of this Discipline are able to feign death. By placing themselves into a state of suspended animation, outwardly they are able to achieve all semblance of being truly dead. However, whilst in this state, the only sense that a Sun Knight retains is the ability to hear.
-
-Astrology
-
-Sun Knights who have this Discipline are skilled in the art of chiromancy<ch.emdash/>the ability to tell fortunes from the skin creases and patterns found on the palms of hands.
-
-Bardsmanship
-
-Sun Knights who possess mastery of this Discipline are able to use their musical skills to launch sonic attacks against any individual within audible range. The effect of a sonic attack is dependent upon the target creature<ch.apos/>s sensitivity to sound (ie, a deaf creature would be unaffected by such an attack).
-
-Kai-alchemy
-
-Grand Masters who have reached the rank of Sun Knight are able to use the following Brotherhood spells:
-
-Halt Missile<ch.emdash/>This causes any projected or hurled missile (ie, arrows, axes, crossbow bolts, etc) which may pose an immediate threat to the life of a Sun Knight, to cease its flight and remain stationary in mid-air. The effect of the spell lasts for 2<ch.endash/>3 seconds, allowing the Sun Knight time in which to move away from the missile<ch.apos/>s line of flight. Initially only one missile can be affected by this spell, but the number increases as a Grand Master rises in rank.
-
-Strength<ch.emdash/>By casting this spell, a Sun Knight is able to greatly increase his or her physical strength for a short duration. It can be used to lift or move heavy objects, or to effect a temporary increase in <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> scores whilst fighting an enemy in unarmed combat.
-
-The nature of additional improvements and how they affect your existing Grand Master Disciplines will be noted in the <quote>Improved Grand Master Disciplines</quote> section of future Lone Wolf New Order books.
-
-NEW ORDER WISDOM
-
-You are about to embark upon a quest to help King Ryvin defeat sinister forces that threaten to destroy his ancient kingdom of Bor. You will encounter some powerful and cunning adversaries and your mission will be fraught with danger at every turn, so be on your guard at all times.
-
-During your mission, some of the material items that you find will be of use to you, but others may be red herrings of no real value at all. If you discover Items during your mission, be selective in what you choose to keep. Pick your initial four Grand Master Disciplines with care for a wise choice will enable anyone to complete the quest, no matter how weak their initial <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> scores may be. Completion of previous Lone Wolf adventures (Books 1<ch.endash/>25) may be advantageous, but it is not essential for the successful completion of this New Order adventure.
-
-Grand Master, may the light of the gods Kai and Ishir guide and protect you during your quest in the ancient kingdom of Bor.
-
-For Sommerlund and the Kai!
-
--->
+     <p>2<ch.emdash/>Lone Wolf 24: Rune War</p>
+
+     <p>During your mission in Skull-Tor, you discovered that the Vorka were not the only creatures that Vandyan had summoned by the power of the runes. A demonic entity called Zorkaan the Soultaker had also been brought to Magnamund from its lair upon the Plain of Darkness<ch.emdash/>the ethereal domain of Naar. Having fought and defeated this creature, you believed that it had perished forever when subsequently you smashed the runes. Sadly, this was not so. After celebrating the battlefield victory at Varetta, Lone Wolf ordered you to return in triumph to the Kai Monastery aboard the flying ship <cite>Cloud-dancer</cite>. He chose to ride with his New Order crusaders and they were expected to arrive home a week later.</p>
+
+     <p>After five days, a Kai scout arrived unexpectedly at the monastery with shocking news to impart. Lone Wolf had disappeared. Those who witnessed the abduction said that he was engulfed by a whirling black shadow that fell upon him from out of a stormy sky. So swift was the attack that your fellow Grand Masters were unable to prevent him from being carried away. The scout<ch.apos/>s description of the whirling black shadow was identical to the form adopted by Zorkaan the Soultaker. The destruction of the rune used by Vandyan to summon Zorkaan had not brought about the creature<ch.apos/>s demise after all; it had trapped the creature upon Magnamund.</p>
+
+     <p>You had achieved a great victory at Skull-Tor, but the shocking news of Lone Wolf<ch.apos/>s abduction cast a shadow over your triumph there. Hurriedly you summoned Guildmaster Banedon, the leader of Sommerlund<ch.apos/>s Guild of Magicians, to an emergency council at the Kai Monastery. He responded swiftly to your summons and arrived within hours aboard his flying craft <cite>Cloud-dancer</cite>. He was accompanied by Lord Rimoah of Dessi, an Elder Magi magician who is also Lone Wolf<ch.apos/>s oldest friend and advisor.</p>
+
+     <p>Rimoah informed you that Zorkaan<ch.apos/>s arrival upon Magnamund had not gone unnoticed by the Elder Magi. From afar they had sensed the creature<ch.apos/>s presence and, through the use of their Old Kingdom magic, Rimoah and his fellow elders had charted its movements. Rimoah told you of an evil sorcerer called Xaol who was in hiding in Gazad Helkona, a former Darklord city-fortress located in the desolate wastes of northern Skaror. This vile necromancer was a known agent of Naar. During the days before Lone Wolf<ch.apos/>s abduction, Rimoah and the Elder Magi had detected streams of psychic communication coursing between Gazad Helkona and the Plain of Darkness.</p>
+
+     <p><quote>Naar was transmitting to Xaol the secrets of a Ritual of Binding by which the freed spirit of Zorkaan could be enslaved,</quote> said Rimoah. <quote>This ritual was enacted successfully in the stronghold of Gazad Helkona. Through Xaol, Naar has gained control over Zorkaan. He sent this creature to assassinate Lone Wolf, yet the attempt was unsuccessful. Zorkaan failed to kill Lone Wolf<ch.ellips/> but he was able to subdue and kidnap him.</quote></p>
+
+     <p>Rimoah informed you that your leader was being held prisoner in Gazad Helkona. By the use of his supreme Disciplines and the power of the Sommerswerd, his magical blade, Lone Wolf had survived death at the hand of Naar<ch.apos/>s foul creation. <quote>Your leader is brave and resourceful,</quote> he said, <quote>but I fear that Zorkaan<ch.apos/>s frequent attacks will weaken and eventually destroy him unless he is rescued quickly.</quote></p>
+
+     <p>Selflessly you volunteered to attempt the rescue. Rimoah and Banedon, impressed by your courage and your confidence, readily agreed to help you achieve your difficult mission and together you formulated a plan of action. Banedon transported you aboard <cite>Cloud-dancer</cite> to a remote valley south of Gazad Helkona, from where you approached the fortress on foot. Despite great adversity you were able to gain entry to Xaol<ch.apos/>s fortress and save your leader from the clutches of Naar<ch.apos/>s agent.³ During your daring mission, you fought and defeated both Xaol and Zorkaan before Banedon arrived to snatch both you and Lone Wolf from the clutches of Xaol<ch.apos/>s angry minions.</p>
+
+     <p>3<ch.emdash/>Lone Wolf 25: Trail of the Wolf</p>
+
+     <p>A year has elapsed since your triumph at Gazad Helkona. It has been a peaceful and rewarding time for you at the Kai Monastery, a period in which you have devoted yourself to the training of new recruits. Such has been the success of your tutelage that you have come to be greatly revered by your students and your peers. Yet, lately, you have felt a longing to venture abroad once more, to test your courage and your battle skills in the ineluctable war against Evil.</p>
+
+     <p>Early one morning, you glimpsed a golden eagle leave its nest in the frost-covered timberland that stretches beyond the window of your private chamber. As you watched this majestic creature soar above the treeline, you were reminded of the daring aerial escape that you had made from Gazad Helkona aboard Banedon<ch.apos/>s skycraft. Then you felt a tingle of premonition at the nape of your neck when you noticed a distant speck in the clear azure sky. This speck grew larger until you were able to discern the distinctive outline of <cite>Cloud-dancer</cite> approaching from the north. Hurriedly you left your chamber and went to the Monastery training park where a small group of Kai lords had gathered in expectation. As the sleek skyship was made to hover overhead, a boarding cage was lowered to the frost-hardened ground and out stepped an unexpected visitor<ch.emdash/>Lord Rimoah of Dessi. You exchanged greetings and he requested an immediate audience with Lone Wolf. From his sombre expression you could tell that he had grave and urgent news to impart.</p>
+
+     <p>You escorted Lord Rimoah personally to Lone Wolf<ch.apos/>s chambers, located beneath the Tower of the Sun, the monastery<ch.apos/>s commanding citadel. Before you could excuse yourself and leave the vault, Lone Wolf asked you to stay to listen to what the venerable magician had come to say. Lord Rimoah nodded his benign approval.</p>
+
+     <p><quote>Dwarf King Ryvin of Bor is in desperate need of our aid, my Lords,</quote> began Rimoah, earnestly. <quote>An ancient horror has been awoken in the depths of his subterranean kingdom, and now it threatens to destroy his realm. The Drodarin race may be doomed unless we are able to overcome this creature<ch.ellips/> and swiftly.</quote></p>
+
+     <p>Lord Rimoah informed you that recent excavations in the lowest levels of the vast underground kingdom of Bor had disturbed the Shom<ch.apos/>zaa. This powerful entity was entombed by the Elder Magi during their 1,000-year-war against Agarash the Damned<ch.emdash/>Naar<ch.apos/>s first champion of evil. Lone Wolf lowered his eyes and shook his head in disbelief upon hearing Rimoah<ch.apos/>s words.</p>
+
+     <p><quote>I understood that dwarf lore expressly forbade such deep mining, for fear that the Shom<ch.apos/>zaa and its minions might be released. How could such a thing have been allowed to occur?</quote> he said.</p>
+
+     <p><quote>Greed is to blame, my lord,</quote> replied Rimoah, sadly, <quote><ch.lellips/> the greed of King Ryvin<ch.apos/>s elder son, the Crown Prince Leomin. He alone was responsible for the excavations that opened the way to this ancient horror.</quote></p>
+
+     <p>Lord Rimoah informed you that only five days have elapsed since the Shom<ch.apos/>zaa was released, yet already the creature and its agarashi minions have taken control of the lower levels of the kingdom. <quote>Bitter fighting rages in the tunnels and chambers of Bor as King Ryvin<ch.apos/>s army struggles to contain the Shom<ch.apos/>zaa and its horde,</quote> he said. <quote>They are being sorely pressed, for the enemy have captured their armouries and equipped themselves for the fight. Ryvin has lost control of the tunnels leading to his throne chamber, where Leomin and his younger brother, Prince Torfan, are now trapped and besieged, along with the remnants of their personal guard.</quote></p>
+
+     <p>Lone Wolf was disturbed to hear that the throne chamber of Bor was under attack, for it houses the fabled Throne of Andarin. This grand seat contains a gem of power that was bestowed upon the Drodarin dwarves of Bor by the Goddess Ishir. Its divine radiance provides the dwarves with a unique energy that enables them to grow their crops deep underground, without the need for direct sunlight. If the Throne of Andarin is destroyed then the crops will surely fail and famine will beset Bor, with disastrous consequences.</p>
+
+     <p><quote>Repeated attempts to break the siege of the throne chamber have failed, and the morale of Ryvin<ch.apos/>s army is now dangerously low,</quote> said Rimoah. <quote>I<ch.apos/>ve heard tell that even the Dwarf Lords and the War Thanes, the elite of Ryvin<ch.apos/>s army, hold that Prince Leomin<ch.apos/>s greed has sealed their fate. If such talk is true, and the Shom<ch.apos/>zaa conquers Bor, then our hopes for a lasting peace in Magnamund will be ruined. The fall of Bor will give Naar a base of power at the very heart of Magnamund. There he will be able muster his agents, spawn his vile abominations, and attempt once more to conquer our world.</quote></p>
+
+     <p><quote>But what can be done to save Bor before it is too late?</quote> asked Lone Wolf, anxiously.</p>
+
+     <p><quote>King Ryvin lacks the means to destroy this enemy,</quote> replied Rimoah, gravely. <quote>Nevertheless, the means exist. The Shom<ch.apos/>zaa is especially vulnerable to magic of the Old Kingdom. It is the magic that we used to entrap and entomb the creature milleniums ago.</quote></p>
+
+     <p>From a pocket of his flowing robes, Rimoah took out a spherical crystal and held it in the cupped palm of his hand. Its multi-faceted surface radiated beams of golden light which shimmered and sparkled with a supernatural brilliance.</p>
+
+     <p><quote>A Sun-Crystal,</quote> said Lone Wolf. <quote>Yes, my Lord,</quote> replied Rimoah, reverently. <quote>By the skilful use of the power contained within this sphere it is possible that we may defeat the Shom<ch.apos/>zaa and its minions, and thereby spare the kingdom of Bor from the tyrannical rule of Naar. We of the Elder Magi have crafted the means to defeat the Shom<ch.apos/>zaa, but in all Magnamund only the Kai have the ability and courage that is needed to take this goodly weapon and use it to its full effect.</quote></p>
+
+     <p>Lone Wolf approached Rimoah and took the Sun-Crystal from his outstretched palm. Then he turned to face you.</p>
+
+     <p><quote>We have been called upon to undertake a difficult and dangerous mission, Grand Master,</quote> he said. <quote>You have proven your bravery and skill beyond all doubt, and truly you have earned the right to refuse this quest with honour. Yet I sense that you hunger for the heat of battle and the challenge of the quest, and so I offer this mission to you. Will you venture to Bor and confront the bane that now threatens to destroy our Dwarven allies?</quote></p>
+
+     <p><quote>Yes, my Lord, I will</quote> you replied, without a moment<ch.apos/>s hesitation. <quote>For the greater glory of Sommerlund and the Kai, I am proud to accept the quest.</quote></p>
+    </data>
+   </section>
+
+   <section class="frontmatter" id="gamerulz">
+    <meta>
+     <title>The Game Rules</title>
+     <link class="prev" idref="tssf" />
+     <link class="next" idref="kainame" />
+    </meta>
+
+    <data>
+     <p>You keep a record of your adventure on the <a idref="action">Action Chart</a>.</p>
+     <p>During the years you have spent in training at the Kai Monastery, you have devoted yourself to further developing your fighting prowess (<typ class="attribute">COMBAT SKILL</typ>) and physical stamina (<typ class="attribute">ENDURANCE</typ>). Before you begin this New Order adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point the blunt end of it onto the <a idref="random">Random Number Table</a>. If you pick a 0 it counts as zero.</p>
+     <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 25 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a> (i.e., if your pencil fell on the number 7 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> of 32). When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore desirable.</p>
+     <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 30 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a> (i.e., if your pencil fell on the number 8 on the Random lumber Table you would have 38 <typ class="attribute">ENDURANCE</typ> points).</p>
+     <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero or below, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points cannot rise above the number you have when you start an adventure.</p>
+     <p>If you have successfully completed previous adventures in the <cite>Lone Wolf</cite> New Order series (Books 21<ch.endash/>25), you can carry your current scores of <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points over to this adventure. You may also carry over any Special Items, Kai Weapon, normal weapons, and Backpack Items you had in your possession at the end of your last adventure, and these should be entered on your new <a idref="action">Action Chart</a>.</p>
+     <p><strong>Playing Tip</strong>: You may use a 10-sided die instead of the <a idref="random">Random Number Table</a> if you find it more convenient.</p>
+
+     <section class="frontmatter-separate" id="kainame">
+      <meta>
+       <title>Your Kai Name</title>
+       <link class="prev" idref="gamerulz" />
+       <link class="next" idref="discplnz" />
+      </meta>
+
+      <data>
+       <p>It has long been the tradition of your elite warrior caste to bestow a new name upon each young novice when they complete their first year<ch.apos/>s training at the Kai Monastery. Kai names are chosen by senior Kai Masters with the aim of reflecting the individual strengths and qualities of each novice.</p>
+       <p>You may create your own Kai name for yourself, or you can generate a Kai name at random using the name tables below. To generate a Kai name, pick a number from the <a idref="random">Random Number Table</a> and consult Table A. The name which corresponds to the number you have picked is the first part, or prefix, of your Kai name. Now pick a second number from the <a idref="random">Random Number Table</a> and consult Table B. The name which corresponds to the number you have picked is the second part, or suffix, of your Kai name. Put the prefix and the suffix together and you have your own personal Kai name. You can record your personal Kai name on the book plate which appears on the inside front cover of this book.</p>
+
+          <table>
+           <td colspan="2">Table A</td>
+           <tr>
+            <th>(Kai name prefix)</th>
+	   </tr>
+	   <tr>
+	    <td>0 =</td>
+	    <td>Swift</td>
+	   </tr>
+	   <tr>
+	    <td>1 =</td>
+	    <td>Sun</td>
+	   </tr>
+	   <tr>
+	    <td>2 =</td>
+	    <td>True</td>
+	   </tr>
+	   <tr>
+	    <td>3 =</td>
+	    <td>Bold</td>
+	   </tr>
+	   <tr>
+	    <td>4 =</td>
+	    <td>Moon</td>
+	   </tr>
+	   <tr>
+	    <td>5 =</td>
+	    <td>Sword</td>
+	   </tr>
+	   <tr>
+	    <td>6 =</td>
+	    <td>Wise</td>
+	   </tr>
+	   <tr>
+	    <td>7 =</td>
+	    <td>Storm</td>
+	   </tr>
+	   <tr>
+	    <td>8 =</td>
+	    <td>Rune</td>
+	   </tr>
+	   <tr>
+	    <td>9 =</td>
+	    <td>Brave</td>
+	   </tr>
+	  </table>
+
+	  <table>
+           <td colspan="2">Table B</td>
+           <tr>
+            <th>(Kai name suffix)</th>
+	   </tr>
+	   <tr>
+	    <td>0 =</td>
+	    <td>Blade</td>
+	   </tr>
+	   <tr>
+	    <td>1 =</td>
+	    <td>Fire</td>
+	   </tr>
+	   <tr>
+	    <td>2 =</td>
+	    <td>Hawk</td>
+	   </tr>
+	   <tr>
+	    <td>3 =</td>
+	    <td>Heart</td>
+	   </tr>
+	   <tr>
+	    <td>4 =</td>
+	    <td>Friend</td>
+	   </tr>
+	   <tr>
+	    <td>5 =</td>
+	    <td>Star</td>
+	   </tr>
+	   <tr>
+	    <td>6 =</td>
+	    <td>Dancer</td>
+	   </tr>
+	   <tr>
+	    <td>7 =</td>
+	    <td>Helm</td>
+	   </tr>
+	   <tr>
+	    <td>8 =</td>
+	    <td>Strider</td>
+	   </tr>
+	   <tr>
+	    <td>9 =</td>
+	    <td>Shield</td>
+	   </tr>
+	  </table>
+	 </data>
+	</section>
+
+     <section class="frontmatter-separate" id="discplnz">
+      <meta>
+       <title>New Order Kai Grand Master Disciplines</title>
+       <link class="prev" idref="kainame" />
+       <link class="next" idref="equipmnt" />
+      </meta>
+
+      <data>
+       <section class="frontmatter" id="mksumary">
+        <meta>
+         <title>Kai and Magnakai Disciplines</title>
+        </meta>
+
+        <data>
+         <p>During your distinguished rise to the ranks of the New Order of Kai Grand Masters, you have become proficient in all of the basic Kai and Magnakai Disciplines. These Disciplines provide you with a formidable arsenal of natural abilities which will serve you well. A brief summary of your skills is given below:</p>
+
+         <dl>
+          <dt>Weaponmastery</dt>
+           <dd>You are proficient with all close combat and missile weapons. You are a master of unarmed combat and suffer no <typ class="attribute">COMBAT SKILL</typ> loss when fighting bare-handed.</dd>
+          <dt>Animal Control</dt>
+           <dd>You are able to communicate with most animals and have limited control over hostile creatures. You can use woodland animals as guides and you are able to block a non-sentient creature<ch.apos/>s sense of taste and smell.</dd>
+          <dt>Curing</dt>
+           <dd>You are able to restore <typ class="attribute">ENDURANCE</typ> points lost as a direct result of combat. You may restore 1 <typ class="attribute">ENDURANCE</typ> point for every numbered section of the book you pass through in which you are not involved in further combat. The maximum number of <typ class="attribute">ENDURANCE</typ> points that can be restored in this way is limited to 10 per adventure.</dd>
+           <dd>You also possess the ability to heal the wounds of others, and you can neutralize the harmful effects of most poisons, venoms and toxins.</dd>
+          <dt>Invisibility</dt>
+           <dd>You can hide effectively in most environments, mask any sounds made during movement, and you can cause minor alterations of your own physical appearance. Also you are able to mask your own body heat and scent.</dd>
+          <dt>Huntmastery</dt>
+           <dd>You are an expert hunter of food in the wild. You possess great physical agility and a keen sense of vision (day and night). Your senses of hearing and smell are especially acute.</dd>
+          <dt>Pathsmanship</dt>
+           <dd>You are able to understand most languages, magical symbols and hieroglyphics. You are expert at reading footprints and tracks. You have an intuitive knowledge of the compass points and can detect the threat of an enemy ambush up to a distance of 500 yards. You possess an ability to cross terrain without leaving tracks. You can converse with sentient creatures and mask yourself from psychic spells of detection.</dd>
+          <dt>Psi-surge</dt>
+           <dd>You are able to attack enemies using the powers of your mind. Also you can set up disruptive vibrations in inanimate objects and cause confusion in the minds of unsophisticated enemies.</dd>
+          <dt>Psi-screen</dt>
+           <dd>You possess strong mental defences against hypnosis, supernatural illusions, charms, hostile telepathy, and evil spirits. You are able to divert and re-channel some hostile psychic energy to your own ends.</dd>
+          <dt>Nexus</dt>
+           <dd>You can move small items by projection of your mind power. You can withstand extremes of temperature and are able to extinguish fire by force of your will alone. You have a limited immunity to flames, toxic gases, and corrosive liquids.</dd>
+          <dt>Divination</dt>
+           <dd>Your famous Kai sixth sense can warn you of imminent danger. You can detect invisible or hidden enemies, and you are able to communicate telepathically. You can recognize magic-using and/or magical creatures, detect psychic residues, and you have a limited ability to leave your corporeal body (<quote>spirit-walk</quote>) for short periods.</dd>
+         </dl>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="mksumary">
+        <meta>
+         <title>New Order Kai Grand Master Disciplines</title>
+        </meta>
+
+        <data>
+       	 <p>After years of martial training and study at the Kai Monastery, and by the rigorous practice of the teachings of your illustrious mentor<ch.emdash/>Kai Supreme Master Lone Wolf<ch.emdash/>you have achieved the noble rank of Kai Grand Master Senior.</p>
+
+       	 <p>Following in the footsteps of Lone Wolf himself, you have vowed that one day you will become totally proficient in all 16 of the New Order Kai Grand Master Disciplines. By doing so successfully you will share with Lone Wolf the responsibility, the honour, and the future glory of leading the New Order Kai as a Supreme Master.</p>
+
+       	 <p>If this is the first New Order adventure you have undertaken then your present rank is that of Kai Grand Master Senior. This means that you have mastered four of the New Order Grand Master Disciplines listed below. It is for you to decide which four Disciplines these are. As all of the New Order Grand Master Disciplines will be of use to you at some point during your mission, pick these four skills with care. The correct use of a New Order Grand Master Discipline at the right time could save your life. When you have chosen your four Disciplines, enter them in the Grand Master Disciplines section of your <a idref="action">Action Chart</a>.</p>
+
+       <section class="frontmatter" id="wpnmstry">
+        <meta><title>Grand Weaponmastery</title></meta>
+        <data>
+         <p>This Discipline enables a New Order Grand Master to become supremely efficient in the use of all weapons. When you enter combat armed with one of your Grand Master weapons, you may add 5 points to your <typ class="attribute">COMBAT SKILL</typ>. The rank of Kai Grand Master Senior, with which you begin the New Order series, means that you are skilled in the use of one of the weapons listed in the EQUIPMENT section. For every adventure that you complete successfully in the New Order series, you will gain proficiency with one additional weapon.</p>
+	</data>
+       </section>
+
+       <section class="frontmatter" id="anmlmstr">
+        <meta><title>Animal Mastery</title></meta>
+        <data>
+         <p>New Order Grand Masters have considerable control over hostile, non-sentient creatures. Also, they have the ability to converse with birds and fishes, and use them as guides.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="deliver">
+        <meta><title>Deliverance (Advanced Curing)</title></meta>
+        <data>
+         <p>New Order Grand Masters are able to use their healing power to repair serious battle wounds. If, while in combat, their <typ class="attribute">ENDURANCE</typ> is reduced to 8 points or less, they can draw upon their mastery to restore 20 <typ class="attribute">ENDURANCE</typ> points. This emergency ability can only be used once every 20 days.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="assimila">
+        <meta><title>Assimilance (Advanced Invisibility)</title></meta>
+        <data>
+         <p>New Order Grand Masters are able to effect striking changes to their physical appearance, and maintain these changes over a period of 1 to 3 days. They have also mastered advanced camouflage techniques which make them virtually undetectable in an open landscape.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="hntmstry">
+        <meta><title>Grand Huntmastery</title></meta>
+        <data>
+         <p>New Order Grand Masters are able to see in total darkness and they possess great natural speed and agility. They also have a superb sense of touch and taste.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="pthmnshp">
+        <meta><title>Grand Pathsmanship</title></meta>
+        <data>
+         <p>New Order Grand Masters are able to resist entrapment by hostile plants. Also they have a super-awareness of ambush, or the threat of ambush, in woods and dense forests.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="kaisurge">
+        <meta><title>Kai-surge</title></meta>
+        <data>
+         <p>When using their psychic ability to attack an enemy, New Order Grand Masters may add 8 points to their <typ class="attribute">COMBAT SKILL</typ>. For every round in which Kai-surge is used, they need only deduct 1 <typ class="attribute">ENDURANCE</typ> point. Grand Masters have the option of using a weaker form of psychic attack called Mindblast. When using this lesser attack, they may add 4 points to their <typ class="attribute">COMBAT SKILL</typ> without loss of <typ class="attribute">ENDURANCE</typ> points (Kai-surge and Mindblast cannot be used simultaneously). New Order Grand Masters cannot use Kai-surge if their <typ class="attribute">ENDURANCE</typ> score falls to 6 points or below.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="kaiscrn">
+        <meta><title>Kai-screen</title></meta>
+        <data>
+         <p>During psychic combat, New Order Grand Masters are able to construct mind-fortresses capable of protecting themselves and others. The strength and capacity of these fortresses increases as a New Order Grand Master advances in rank.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="nexus">
+        <meta><title>Grand Nexus</title></meta>
+        <data>
+         <p>New Order Grand Masters are able to withstand contact with harmful elements, such as flames and acids, for upwards of an hour in duration. This ability increases as a New Order Grand Master advances in rank.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="gnosis">
+        <meta><title>Telegnosis (Advanced Divination)</title></meta>
+        <data>
+         <p>This Discipline enables a New Order Grand Master to spirit-walk for far greater lengths of time, and with far fewer ill effects. Duration of the spirit-walk, and the protection afforded to his inanimate body, increases as a New Order Grand Master advances in rank.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="magi">
+        <meta><title>Magi-magic<em>(Old Kingdom Magic)</em></title></meta>
+        <data>
+         <p>Under the tutelage of Lone Wolf, you have been able to master the rudimentary skills of Old Kingdom battle magic. These arcane skills include the use of basic magi-magic spells, such as Shield, Power Word, and Invisible Fist. As you advance in rank, so will your knowledge and mastery of Old Kingdom magic increase.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="alchemy">
+        <meta><title>Kai-alchemy <em>(Brotherhood Magic)</em></title></meta>
+        <data>
+         <p>Under the tutelage of Lone Wolf and Guildmaster Banedon (the leader of Sommerlund<ch.apos/>s guild of magicians), you have mastered the elementary spells of the Brotherhood of the Crystal Star. These spells include Lightning Hand, Levitation, and Mind Charm. As you advance in rank, so will your knowledge and mastery of Brotherhood magic increase.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="astrolgy">
+        <meta><title>Astrology</title></meta>
+        <data>
+         <p>The celestial bodies which occupy the skies above Magnamund have long been known to affect the lives of its inhabitants. Mastery of this Discipline enables a New Order Grand Master to predict and shape the future by studying the relative positions of the Sun, the Moon, and the myriad planets and stars. The number and accuracy of these predictions increases as a New Order Grand Master advances in rank.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="herbmst">
+        <meta><title>Herbmastery</title></meta>
+        <data>
+         <p>Mastery of this New Order Discipline enables a Grand Master to identify readily any substance derived from living or growing organic material. He is aware of any secret uses to which an organic material may be put, and he is skilled in effecting the release of a substance<ch.apos/>s medicinal and/or magical properties.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="element">
+        <meta><title>Elementalism</title></meta>
+        <data>
+         <p>This Discipline enables a New Order Grand Master to manipulate the four basic elements: earth, air, fire, and water. By drawing upon individual (or combinations of) elements that are available, he is able to detach, affix, increase, concentrate, intensify, remove or accelerate this matter to fulfil a specific purpose, eg, create a wall, hurl a rock, spray sand, remove air, intensify fire. The versatility of this Discipline increases as a New Order Grand Master advances in rank.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="bardsman">
+        <meta><title>Bardsmanship</title></meta>
+        <data>
+         <p>Through mastery of this Discipline a Kai Grand Master of the New Order becomes a multi-talented performer, proficient in the use of any musical instrument. He is able to sing or chant, recite or compose tales of legend, mimic speech or dialect and stimulate a wide range of emotions among sentient creatures. The effect and power of his bardic abilities will steadily increase as he advances through the Grand Master ranks.</p>
+        </data>
+       </section>
+
+       <p>If you successfully complete the mission as set in Book 26 of the <cite>Lone Wolf</cite> (New Order) series, you may add a further Grand Master Discipline of your choice to your <a idref="action">Action Chart</a> in Book 27. For every Grand Master Discipline you possess, in excess of the original four Disciplines you begin with, you may add 1 point to your basic <typ class="attribute">COMBAT SKILL</typ> score and 2 points to your basic <typ class="attribute">ENDURANCE</typ> points score. These bonus points, together with your extra Grand Master Discipline(s), your original four Grand Master Disciplines, your Kai Weapon, and any other Special Items that you have found and been able to keep during your adventures, may then be carried over and used in the next New Order adventure, which is called: <bookref book="27v"><cite>Vampirium</cite>.</bookref></p>
+      </data>
+     </section>
+     </data>
+     </section>
+
+     <section class="frontmatter-separate" id="equipmnt">
+      <meta>
+       <title>Equipment</title>
+       <link class="prev" idref="discplnz"/>
+       <link class="next" idref="cmbtrulz"/>
+      </meta>
+
+      <data>
+       <p>Before you leave the Kai Monastery and begin your journey to Bor, you equip yourself with a <a idref="map">map of Bor and its surrounding territories</a> and a pouch of gold. To find out how much gold is in the pouch, pick a number from the <a idref="random">Random Number Table</a> and add 20 to the number you have picked. The total equals the number of Gold Crowns inside the pouch, and you should now enter this number in the <quote>Gold Crowns</quote> section of your <a idref="action">Action Chart</a>. If you have successfully completed previous New Order adventures (Books 21<ch.endash/>25), you may add this sum to the total sum of Crowns you already possess. Fifty is the maximum number of Gold Crowns you can carry in your pouch at any time. You may also select five items from the list below, only two of which may be Weapons.</p>
+       <ul class="paragraphed">
+        <li><p>Broadsword (Weapons)</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="broadswd.gif" width="386" height="xxx"/>
+          <instance class="pdf" src="broadswd.pdf" width="386" height="xxx"/>
+          </illustration>
+         </li>
+        <li><p>Sword (Weapons)</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="sword.gif" width="386" height="xxx"/>
+          <instance class="pdf" src="sword.pdf" width="386" height="xxx"/>
+          </illustration>
+         </li>
+        <li><p>Quiver (Special Items) This contains six Arrows; record them on your <a idref="action">Weapons List</a>.</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="quiver.gif" width="386" height="127"/>
+          <instance class="pdf" src="quiver.pdf" width="386" height="127"/>
+          </illustration>
+         </li>
+        <li><p>Flute (Backpack Item)</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="quiver.gif" width="386" height="xxx"/>
+          <instance class="pdf" src="quiver.pdf" width="386" height="xxx"/>
+          </illustration>
+         </li>
+	 <li><p>Dagger Weapons)</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="dagger.gif" width="386" height="xxx"/>
+          <instance class="pdf" src="dagger.pdf" width="386" height="xxx"/>
+         </illustration>
+        </li>
+        <li><p>Axe (Weapons)</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="axe.gif" width="386" height="xxx"/>
+          <instance class="pdf" src="axe.pdf" width="386" height="xxx"/>
+          </illustration>
+         </li>
+        <li><p>Bow (Weapons)</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="bow.gif" width="386" height="xxx"/>
+          <instance class="pdf" src="bow.pdf" width="386" height="xxx"/>
+          </illustration>
+         </li>
+        <li><p>2 Meals (Meals) Each Meal takes up one space in your Backpack.</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="meal.gif" width="386" height="xxx"/>
+          <instance class="pdf" src="meal.pdf" width="386" height="xxx"/>
+          </illustration>
+         </li>
+        <li><p>Rope (Backpack Item)</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="rope.gif" width="386" height="xxx"/>
+          <instance class="pdf" src="rope.pdf" width="386" height="xxx"/>
+          </illustration>
+         </li>
+       </ul>
+
+       <p>List the five items that you have chosen on your <a idref="action">Action Chart</a>, under the appropriate headings, and make a note of any effect that they may have on your <typ class="attribute">ENDURANCE</typ> points and/or <typ class="attribute">COMBAT SKILL</typ>.</p>
+
+       <section class="frontmatter" id="kaiweapn">
+        <meta>
+         <title>Kai Weapons</title>
+        </meta>
+
+        <data>
+         <p>Upon reaching the ultimate rank of Kai Supreme Master, Lone Wolf received as a reward from the God Kai many new skills and abilities. One of these skills was Kai Weaponcraft. Using his new-found mastery, Lone Wolf forged ten weapons of magical power in the armoury furnaces of the Kai Monastery. These magical weapons are reserved for the elite of the New Order Kai who attain the rank of Grand Master.</p>
+
+         <p>In recognition of your rank and achievement, you may choose your own Kai Weapon from the table below or, if you prefer, you can generate one at random. To generate a Kai Weapon, pick a number from the <a idref="random">Random Number Table</a> and consult the first column. The magical axe, sword, or broadsword which corresponds to the number you have picked will be your own personal Kai Weapon. Record this magical weapon and its unique properties in the Kai Weapon section of the Special Items List at the front of the book.</p>
+
+         <p><strong>Example</strong></p>
+         <p>Say you choose the number 1 from the <a idref="random">Random Number Table</a>, your Kai Weapon will be the axe <quote>Alema</quote>.</p>
+
+         <p>When using this Kai Weapon in normal combat you may add +5 points to your <typ class="attribute">COMBAT SKILL</typ>. Each Kai Weapon has a unique property. When you use your Kai Weapon in combat against the type of enemy that matches its unique property, or use it at the optimum time or location, then you may add the higher bonus to your <typ class="attribute">COMBAT SKILL</typ>.</p>
+
+         <p><strong>Example</strong></p>
+         <p>If you were to use <quote>Alema</quote> in combat against an undead enemy, you could add the higher bonus of +7 to your <typ class="attribute">COMBAT SKILL</typ>. If you were to fight a living enemy using this weapon then the bonus to your <typ class="attribute">COMBAT SKILL</typ> would remain at +5.</p>
+
+          <table>
+           <td colspan="6">Kai Weapon Table</td>
+           <tr>
+            <th>RN</th>
+            <th>Weapon type</th>
+            <th>Weapon Name</th>
+            <th><typ class="attribute">CS</typ></th>
+            <th>Unique Properties</th>
+            <th><typ class="attribute">CS</typ></th>
+           </tr>
+           <tr>
+            <td>0</td>
+            <td>Axe</td>
+            <td><quote>Spawnsmite</quote></td>
+            <td>+5</td>
+            <td>versus reptilian enemies</td>
+            <td>+6</td>
+           </tr>
+           <tr>
+            <td>1</td>
+            <td>Axe</td>
+            <td><quote>Alema</quote></td>
+            <td>+5</td>
+            <td>versus undead enemies</td>
+            <td>+7</td>
+           </tr>
+           <tr>
+            <td>2</td>
+            <td>Axe</td>
+            <td><quote>Magnara</quote></td>
+            <td>+5</td>
+            <td>versus rock or stone</td>
+            <td>+8</td>
+           </tr>
+           <tr>
+            <td>3</td>
+            <td>Sword</td>
+            <td><quote>Sunstrike</quote></td>
+            <td>+5</td>
+            <td>when used in daylight</td>
+            <td>+6</td>
+           </tr>
+           <tr>
+            <td>4</td>
+            <td>Sword</td>
+            <td><quote>Kaistar</quote></td>
+            <td>+5</td>
+            <td>when used at night</td>
+            <td>+7</td>
+           </tr>
+           <tr>
+            <td>5</td>
+            <td>Sword</td>
+            <td><quote>Valiance</quote></td>
+            <td>+5</td>
+            <td>when used versus magicians</td>
+            <td>+8</td>
+           </tr>
+           <tr>
+            <td>6</td>
+            <td>Sword</td>
+            <td><quote>Ulnarias</quote></td>
+            <td>+5</td>
+            <td>when used underwater</td>
+            <td>+9</td>
+           </tr>
+           <tr>
+            <td>7</td>
+            <td>Broadsword</td>
+            <td><quote>Raumas</quote></td>
+            <td>+5</td>
+            <td>versus winged enemies</td>
+            <td>+6</td>
+           </tr>
+           <tr>
+            <td>8</td>
+            <td>Broadsword</td>
+            <td><quote>Illuminatus</quote></td>
+            <td>+5</td>
+            <td>when used underground</td>
+            <td>+7</td>
+           </tr>
+           <tr>
+            <td>9</td>
+            <td>Broadsword</td>
+            <td><quote>Firefall</quote></td>
+            <td>+5</td>
+            <td>versus fire-emitting enemies</td>
+            <td>+8</td>
+           </tr>
+           <tr>
+	    <td colspan="3">RN = Random Number</td>
+           </tr>
+           <tr>
+            <td colspan="3"><typ class="attribute">CS</typ> = <typ class="attribute">COMBAT SKILL</typ></td>
+           </tr>
+          </table>
+	 </data>
+	</section>
+
+	<section class="frontmatter" id="howuse">
+        <meta>
+         <title>Equipment<ch.emdash/>How to use it</title>
+        </meta>
+
+        <data>
+         <dl class="paragraphed">
+          <dt>Weapons</dt>
+           <dd><p>The maximum number of weapons that you can carry is <em>two</em>. Weapons aid you in combat. If you have the Grand Master Discipline of Grand Weaponmastery and a correct weapon, it adds 5 points to your <typ class="attribute">COMBAT SKILL</typ>. If you find a weapon during your adventure, you may pick it up and use it.</p></dd>
+          <dt>Bows and Arrows</dt>
+           <dd>
+            <p>During your adventure there will be opportunities to use a Bow and Arrow. If you equip yourself with this weapon, and you possess at least one Arrow, you may use it when the text of a particular section allows you to do so. The Bow is a useful weapon, for it enables you to hit an enemy at a distance. However, a Bow cannot be used in hand-to-hand combat; therefore it is best to equip yourself also with a close combat weapon, such as a sword or axe.</p>
+            <p>In order to use a Bow you must possess a Quiver and at least one Arrow. Each time the Bow is used, erase an Arrow from your <a idref="action">Action Chart</a>. A Bow cannot, of course, be used if you exhaust your supply of Arrows, but the opportunity may arise during your adventure for you to replenish your stock of Arrows.</p>
+            <p>If you have the Discipline of Grand Weaponmastery with a Bow, you may add 3 points to any number you pick from the <a idref="random">Random Number Table</a>, when using the Bow.</p>
+           </dd>
+          <dt>Backpack Items</dt>
+           <dd>
+            <p>These must be stored in your Backpack. Because space is limited, you may keep a maximum of ten articles, including Meals, in your Backpack at any one time. You may only carry one Backpack at a time. During your travels you will discover various useful items which you may decide to keep. You may exchange or discard them at any point when you are not involved in combat.</p>
+            <p>Any item that may be of use, and which can be picked up on your adventure and entered on your <a idref="action">Action Chart</a>, is given either initial capitals (e.g., Silver Mirror, Gold Key), or is clearly identified as a Backpack Item. Unless you are told that it is a Special Item, carry it in your Backpack.</p>
+           </dd>
+          <dt>Special Items</dt>
+           <dd>
+            <p>Special Items are not carried in the Backpack. When you discover a Special Item, you will be told how or where to carry it. The maximum number of Special Items that can be carried on any adventure is 12.</p>
+           </dd>
+          <dt>Kai Weapon</dt>
+           <dd><p>Your Kai Weapon is a Special Item and it can be carried and used in addition to two normal weapons. If you possess the Discipline of Grand Weaponmastery for a weapon type which is the same as your unique Kai Weapon, you may add the Grand Weaponmastery bonus of +5 to your <typ class="attribute">COMBAT SKILL</typ>. This is in addition to the bonus gained when you use your Kai Weapon in combat.</p></dd>
+	  <dt>Food</dt>
+           <dd><p>Food is carried in your Backpack. Each Meal counts as one item. You will need to eat regularly during your adventure. If you do not have any food when you are instructed to eat a Meal, you will lose 3 <typ class="attribute">ENDURANCE</typ> points. However, if you have chosen Grand Huntmastery as one of your four Disciplines then you will not need to tick off a Meal when instructed to eat.</p></dd>
+          <dt>Potion of Laumspur</dt>
+           <dd><p>This is a healing potion that can restore 4 <typ class="attribute">ENDURANCE</typ> points to your total when swallowed after combat. There is enough for one dose only. If you discover any other potion during the adventure, you will be informed of its effect. All potions are Backpack Items.</p></dd>
+          <dt>Gold Crowns</dt>
+	   <dd>
+	    <p><!--Add explanation here. Is the currency of Bor the Ain?--></p>
+	   </dd>
+	  </dl>
+        </data>
+       </section>
+      </data>
+     </section>
+
+     <section class="frontmatter-separate" id="cmbtrulz">
+      <meta>
+       <title>Rules for Combat</title>
+       <link class="prev" idref="equipmnt" />
+       <link class="next" idref="levels" />
+      </meta>
+
+      <data>
+       <p>There will be occasions during your adventure when you will have to fight an enemy. The enemy<ch.apos/>s <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points are given in the text. Your aim in the combat is to kill the enemy by reducing his <typ class="attribute">ENDURANCE</typ> points to zero while losing as few <typ class="attribute">ENDURANCE</typ> points as possible yourself.</p>
+       <p>At the start of a combat, enter your own and the enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> points in the appropriate boxes on the Combat Record section of your <a idref="action">Action Chart</a>.</p>
+       <p>The sequence for combat is as follows:</p>
+       <ol class="paragraphed">
+        <li><p>Add any extra points gained through your Grand Master Disciplines and Special Items to your current <typ class="attribute">COMBAT SKILL</typ> total.</p></li>
+        <li>
+         <p>Subtract the <typ class="attribute">COMBAT SKILL</typ> of your enemy from this total. The result is your Combat Ratio. Enter it on the <a idref="action">Action Chart</a>.</p>
+         <p>Example</p>
+         <p>You, Grand Master (<typ class="attribute">COMBAT SKILL</typ> 32), are attacked in a forest by a pack of Wild Dogs (<typ class="attribute">COMBAT SKILL</typ> 31). You are taken by surprise and are not given the opportunity of evading their attack. You possess the Grand Master Discipline of Kai-surge to which the Wild Dogs are not immune, so you add 8 points to your <typ class="attribute">COMBAT SKILL</typ>. You also possess the Kai Weapon <quote>Ulnarias</quote>, so you add an additional 5 points to your <typ class="attribute">COMBAT SKILL</typ>. This gives you a total <typ class="attribute">COMBAT SKILL</typ> of 45.</p>
+         <p>You now subtract the Wild Dogs<ch.apos/> <typ class="attribute">COMBAT SKILL</typ> from your own, giving a Combat Ratio of +14 (45<ch.minus/>31=+14). +14 is noted on your <a idref="action">Action Chart</a> as the Combat Ratio.</p>
+        </li>
+        <li><p><a id="stage3">When you have your Combat Ratio</a>, pick a number from the <a idref="random">Random Number Table</a>.</p></li>
+        <li>
+         <p>Turn to the <a idref="crtable">Combat Results Table</a>. Along the top of the chart are shown the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the random number that you have picked (the random numbers appear on the side of the chart). You now have the number of <typ class="attribute">ENDURANCE</typ> points lost by both yourself and your enemy in this round of combat. (E represents points lost by the enemy; GM represents points lost by yourself<ch.emdash/>Grand Master.)</p>
+         <p>Example</p>
+         <p>The Combat Ratio between you and the Wild Dogs has been established as +14. If the number picked from the <a idref="random">Random Number Table</a> is 1, then the result of the first round of combat is:</p>
+         <ul>
+          <li>You (GM) lose 3 <typ class="attribute">ENDURANCE</typ> points (plus an additional 1 point for using Kai-surge. This loss is in addition to the loss suffered as a result of combat).</li>
+          <li>Wild Dogs lose 9 <typ class="attribute">ENDURANCE</typ> points.</li>
+         </ul>
+        </li>
+        <li><p>On the <a idref="action">Action Chart</a>, mark the changes in <typ class="attribute">ENDURANCE</typ> points to the participants in the combat.</p></li>
+        <li><p>Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.</p></li>
+        <li><p>Repeat the sequence from <a idref="stage3">Stage 3.</a></p></li>
+       </ol>
+
+       <p>This process of combat continues until the <typ class="attribute">ENDURANCE</typ> points of either your enemy or yourself are reduced to zero or below, at which point that combatant is declared dead. If you are declared dead, the adventure is over. If the enemy is dead, you can proceed but with your <typ class="attribute">ENDURANCE</typ> points possibly reduced.</p>
+       <p>A <a idref="crsumary">summary of Combat Rules</a> appears in the back of this book.</p>
+
+       <section class="frontmatter" id="evasion">
+        <meta><title>Evasion of Combat</title></meta>
+
+        <data>
+         <p>During your adventure you may be given the chance to evade combat. If you have already engaged in a round of combat and decide to evade, calculate the combat for that round in the usual manner. All points lost by the enemy as a result of that round are ignored, and you make your escape. Only you may lose <typ class="attribute">ENDURANCE</typ> points during that round (such is the risk of turning tail and running away during combat!). You may only evade if the text of the particular section allows you to do so.</p>
+        </data>
+       </section>
+      </data>
+     </section>
+
+     <section class="frontmatter-separate" id="levels">
+      <meta>
+       <title>Levels of New Order Kai Grand Mastership</title>
+       <link class="prev" idref="cmbtrulz" />
+       <link class="next" idref="imprvdsc" />
+      </meta>
+      <data>
+
+       <p>The following table is a guide to the rank and titles you can achieve at each stage of your journey along the road of Kai Grand Mastership. As you successfully complete each adventure in the New Order series, you will gain an additional Grand Master Discipline and progress towards the pinnacle of Kai perfection<ch.emdash/>to become a Kai Supreme Master.</p>
+
+       <ol>
+        <li>Kai Grand Master Senior<ch.emdash/><em>(You begin the New Order adventures at this level of Kai Grand Mastery)</em></li>
+<!--How do we start this numbered list at 4 instead of 1?-->
+	<li>Kai Grand Master Superior</li>
+        <li>Kai Grand Sentinel</li>
+        <li>Kai Grand Defender</li>
+        <li>Kai Grand Guardian</li>
+        <li>Sun Knight</li>
+        <li>Sun Lord</li>
+        <li>Sun Thane</li>
+        <li>Grand Thane</li>
+        <li>Grand Crown</li>
+        <li>Sun Prince</li>
+        <li>Kai Supreme Master</li>
+       </ol>
+      </data>
+     </section>
+
+
+     <section class="frontmatter-separate" id="imprvdsc">
+      <meta>
+       <title>Improved Grand Master Disciplines</title>
+       <link class="prev" idref="levels" />
+       <link class="next" idref="kaiwisdm" />
+      </meta>
+
+      <footnotes>
+       <footnote id="imprvdsc-1-foot" idref="imprvdsc-1">
+        <p>The <spell>Strength</spell> spell is, in practice, also used in armed combat contrary to what is indicated here.</p>
+       </footnote>
+      </footnotes>
+
+      <data>
+       <p><!--Add text from Book 21 here--></p>
+
+       <section class="frontmatter" id="sunknight">
+        <meta><title>Sun Knight</title></meta>
+
+        <data>
+         <p>As you rise through the higher levels of Kai Grand Mastery you will find that your Disciplines will steadily improve. If you are a New Order Kai who has attained the rank of Sun Knight, you will now benefit from improvements to the following Grand Master Disciplines:</p>
+         <dl class="paragraphed">
+          <dt>Grand Weaponmastery</dt>
+           <dd><p>Sun Knights with this Discipline are able to wield two-handed weapons (eg, Broadsword, Quarterstaff, Spear, etc) with full effect, using only one hand.</p></dd>
+          <dt>Grand Pathsmanship</dt>
+           <dd><p>Kai Sun Knights with this skill are able to repel at will all normal-sized insects within a radius of 3 yards. The range and numbers of insects so affected increases considerably as a Grand Master rises in rank.</p></dd>
+          <dt>Deliverance</dt>
+           <dd><p>Sun Knights who possess this skill are able to repair serious wounds sustained by creatures other than themselves. By the laying of hands upon the affected creature<ch.apos/>s body, a Sun Knight can cause an open wound (or other serious injury) to mend itself. The speed at which this healing process takes place Increases as a Grand Master rises in rank.</p></dd>
+          <dt>Telegnosis</dt>
+           <dd><p>Sun Knights who possess this Discipline are able to communicate telepathically over great distances. Initially the range of this ability is approximately 100 miles, but this distance increases as a Grand Master rises in rank.</p></dd>
+          <dt>Grand Nexus</dt>
+           <dd><p>Sun Knights who possess mastery of this Discipline are able to feign death. By placing themselves into a state of suspended animation, outwardly they are able to achieve all semblance of being truly dead. However, whilst in this state, the only sense that a Sun Knight retains is the ability to hear.</p></dd>
+          <dt>Astrology</dt>
+           <dd><p>Sun Knights who have this Discipline are skilled in the art of chiromancy<ch.emdash/>the ability to tell fortunes from the skin creases and patterns found on the palms of hands.</p></dd>
+          <dt>Bardsmanship</dt>
+           <dd><p>Sun Knights who possess mastery of this Discipline are able to use their musical skills to launch sonic attacks against any individual within audible range. The effect of a sonic attack is dependent upon the target creature<ch.apos/>s sensitivity to sound (ie, a deaf creature would be unaffected by such an attack).</p></dd>
+          <dt>Kai-alchemy</dt>
+           <dd>
+            <p>Grand Masters who have reached the rank of Sun Knight are able to use the following Brotherhood spells:</p>
+             <ul>
+              <li><spell>Halt Missile</spell><ch.emdash/>This causes any projected or hurled missile (ie, arrows, axes, crossbow bolts, etc) which may pose an immediate threat to the life of a Sun Knight, to cease its flight and remain stationary in mid-air. The effect of the spell lasts for 2<ch.endash/>3 seconds, allowing the Sun Knight time in which to move away from the missile<ch.apos/>s line of flight. Initially only one missile can be affected by this spell, but the number increases as a Grand Master rises in rank.</li>
+              <li><spell>Strength</spell><ch.emdash/>By casting this spell, a Sun Knight is able to greatly increase his or her physical strength for a short duration. It can be used to lift or move heavy objects, or to effect a temporary increase in <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> scores whilst fighting an enemy in unarmed combat.<footref id="imprvdsc-1" idref="imprvdsc-1-foot"/></li>
+           </ul>
+          </dd>
+         </dl>
+        </data>
+       </section>
+
+       <p>The nature of additional improvements and how they affect your existing Grand Master Disciplines will be noted in the <quote>Improved Grand Master Disciplines</quote> section of future Lone Wolf New Order books.</p>
+
+       </data>
+     </section>
+    </data>
+   </section>
+
+
+   <section class="frontmatter" id="kaiwisdm">
+    <meta>
+     <title>New Order Wisdom</title>
+     <link class="prev" idref="imprvdsc" />
+     <link class="next" idref="sect1" />
+    </meta>
+
+    <data>
+     <p>You are about to embark upon a quest to help King Ryvin defeat sinister forces that threaten to destroy his ancient kingdom of Bor. You will encounter some powerful and cunning adversaries and your mission will be fraught with danger at every turn, so be on your guard at all times.</p>
+
+     <p>During your mission, some of the material items that you find will be of use to you, but others may be red herrings of no real value at all. If you discover Items during your mission, be selective in what you choose to keep. Pick your initial four Grand Master Disciplines with care for a wise choice will enable anyone to complete the quest, no matter how weak their initial <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> scores may be. Completion of previous Lone Wolf adventures (Books 1<ch.endash/>25) may be advantageous, but it is not essential for the successful completion of this New Order adventure.</p>
+
+     <p>Grand Master, may the light of the gods Kai and Ishir guide and protect you during your quest in the ancient kingdom of Bor.</p>
+
+     <p>For Sommerlund and the Kai!</p>
+    </data>
+   </section>
 
    <section class="numbered" id="numbered">
     <meta><title>Numbered Sections</title></meta>
@@ -503,10 +903,19 @@ For Sommerlund and the Kai!
 
      <data>
        <p>Lone Wolf places the Sun-Crystal in the palm of your hand, and then he closes your fingers around is multi-faceted surface. At once you sense that the gentle warmth of this artifact belies a tremendous power that is locked within its core. (Record the Sun-Crystal on your <a idref="action">Action Chart</a> as a Special Item which you keep in the pocket of your tunic. You must discard another item in its favour if you already possess the maximum number of Special Items permissible.)</p>
+
+       <illustration class="inline">
+        <meta>
+         <creator>Brian Williams</creator>
+        </meta>
+        <instance class="html" src="small1.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="small1.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <p><quote>The Sun-Crystal will do you no harm, Grand Master. Only Shom<ch.apos/>zaa need have fear of its power,</quote> says Lord Rimoah, reassuringly.</p>
        <p><quote>How is this so?</quote> you ask.</p>
        <p><quote>The energy that permits the demon to exist in our world is drawn directly from the Plane of Darkness,</quote> explains Rimoah. <quote>There is an open channel between the creature and Naar<ch.apos/>s evil domain. It is a slender, ethereal link. This invisible conduit has kept the creature alive during its long entombment, yet soon it may prove to be its undoing, for it is this link to the Plane of Darkness that will trigger the Sun-Crystal<ch.apos/>s cleansing powers. The merest touch of the crystal upon Shom<ch.apos/>zaa<ch.apos/>s foul hide will be enough to consign it to oblivion.</quote></p>
-       <p>With your briefing now complete, Lone Wolf orders you to return to your chamber to make swift preparations for an immediate voyage to Bor. You collect your equipment and your Kai Weapon, say a hurried farewell to your fellow Grand Masters, and then race to the training park where Lord Rimoah is awaiting you in the boarding cage. Lone Wolf bids you good luck and godspeed as you step inside, and proudly you return his salute as the cage is winched up to the stern deck of Cloud-dancer. Rimoah gives the crew the command to depart and, as the great craft gets underway, you stand at the aft rail and watch as the frosted walls and towers of the Kai Monastery swiftly recede into the distance.</p>
+       <p>With your briefing now complete, Lone Wolf orders you to return to your chamber to make swift preparations for an immediate voyage to Bor. You collect your equipment and your Kai Weapon, say a hurried farewell to your fellow Grand Masters, and then race to the training park where Lord Rimoah is awaiting you in the boarding cage. Lone Wolf bids you good luck and godspeed as you step inside, and proudly you return his salute as the cage is winched up to the stern deck of <cite>Cloud-dancer</cite>. Rimoah gives the crew the command to depart and, as the great craft gets underway, you stand at the aft rail and watch as the frosted walls and towers of the Kai Monastery swiftly recede into the distance.</p>
        <p>Lord Rimoah invites you to accompany him to the captain<ch.apos/>s quarters where, to your surprise, you discover the cabin is empty; Banedon is not aboard. <quote>The Guildmaster is unable to travel with us,</quote> explains Rimoah, <quote>but he has placed his skyship and crew entirely at our disposal. We owe him a debt of gratitude, for time is against us and there can be no swifter way for us to reach our destination.</quote></p>
        <p>During the 14 hours that it takes to travel by skycraft to Bor, Lord Rimoah tells you much about the kingdom of the dwarves, their long history and their proud legends. You also learn that your destination is Boradon, the principal city of Bor, and you are intrigued to discover that in your native language this ancient Drodarin name has a somewhat evocative meaning: <quote>the mountain of blood</quote>.</p>
        <choice idref="sect240">To continue, <link-text>turn to 240</link-text>.</choice>
@@ -782,6 +1191,18 @@ For Sommerlund and the Kai!
 
      <data>
        <p>The huge arachnid makes a vile chittering sound as it moves towards you. As it gets ready to pounce, you see that its fangs are coated with a sticky black venom.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>The huge arachnid gets ready to pounce.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill1.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill1.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <combat><enemy>Giant Steamspider</enemy><enemy-attribute class="combatskill">48</enemy-attribute><enemy-attribute class="endurance">45</enemy-attribute></combat>
        <p>This creature is immune to Mindblast (but not Kai-surge).</p>
        <choice idref="sect112">If you win the combat, <link-text>turn to 112</link-text>.</choice>
@@ -867,6 +1288,18 @@ For Sommerlund and the Kai!
      <data>
        <p>As you descend, you hear a faint buzzing sound resonating from the rockface. Rapidly this sound becomes an angry drone when the basket draws level with a cavity in the wall. Suddenly, a swarm of large wasp-like insects pour out of this hole and encircle the basket. The lower stripy sections of their bodies begin to glow as they gather together in a cloud and hover menacingly above you.</p>
        <p><quote>Antah wasps!</quote> exclaims Leomin, fearfully. You reach for your Kai Weapon, but as your hand closes around the hilt, the insects fire their stingers.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>A swarm of angry Antah wasps encircles your basket.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill2.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill2.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <combat><enemy>Antah Wasps</enemy><enemy-attribute class="combatskill">40</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat>
        <p>These insects are immune to all psychic attacks.</p>
        <choice idref="sect174">If you win the combat, <link-text>turn to 174</link-text>.</choice>
@@ -1047,6 +1480,19 @@ For Sommerlund and the Kai!
 
      <data>
        <p>The rock creature stops in mid-stride and turns towards Prince Leomin. As his crushing feet tread a slow, deliberate path towards the prince<ch.apos/>s head, you unsheathe your Kai Weapon and rush forward in a desperate attempt to halt the creature.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>You unsheathe your Kai Weapon in a desperate</line>
+	  <line>attempt to halt the rock-creature.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill3.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill3.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <combat><enemy>Rock Golem</enemy><enemy-attribute class="combatskill">40</enemy-attribute><enemy-attribute class="endurance">70</enemy-attribute></combat>
        <p>This being is immune to all psychic attacks.</p>
        <choice idref="sect74">If you win the combat, <link-text>turn to 74</link-text>.</choice>
@@ -1100,7 +1546,7 @@ For Sommerlund and the Kai!
 
      <data>
        <p>As the last of their riders falls from the saddle, the Brozal steeds turn and flee for their lives. You sheathe your weapon and call upon your Magnakai Discipline of Animal Control to command one of these fleeing mounts to calm itself. Responding to your mental suggestion, it slows rapidly to a halt.</p>
-       <p>You summon the Brozal to approach you and it responds again with calm obedience. Deftly you climb onto the creature<ch.apos/>s scaly back and settle yourself in the saddle, then you turn it towards the east and urge it to enter the tall wheat. Carefully you skirt around the area of blazing crops before turning again, this time to the north.<ch.apos/></p>
+       <p>You summon the Brozal to approach you and it responds again with calm obedience. Deftly you climb onto the creature<ch.apos/>s scaly back and settle yourself in the saddle, then you turn it towards the east and urge it to enter the tall wheat. Carefully you skirt around the area of blazing crops before turning again, this time to the north.</p>
        <p>The Brozal lopes through the yellow stalks with a swift and easy gait, and you cover ground at a far swifter pace than would be possible on foot. But when you come unexpectedly to a muddy ditch, a boundary between the wheat and a neighbouring crop of barley, the Brozal misses its footing. It stumbles badly and you are thrown headlong from the saddle.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. If you possess Grand Huntmastery, add 1 to the number you have picked.</p>
        <choice idref="sect92">If your total score is now 4 or lower, <link-text>turn to 92</link-text>.</choice>
@@ -1306,6 +1752,18 @@ For Sommerlund and the Kai!
      <data>
        <p>As the rock golem crumbles to dust, you rush to Prince Leomin<ch.apos/>s side and try to revive him with your Kai curing skills. The healing warmth of your powers pass through your hands and into his body, and his eyelids flicker open as his consciousness stirs. (The healing of Leomin<ch.apos/>s wounds costs you 2 <typ class="attribute">ENDURANCE</typ> points.)</p>
        <p>When his senses return, firstly he retrieves his battle-axe from the floor, and then he turns to offer you his thanks. Suddenly his eyes widen and he gasps with shock: Shom<ch.apos/>zaa is approaching silently behind you. Leomin grabs you by the tunic and pulls you aside as he raises his battle-axe in readiness to hurl it at Shom<ch.apos/>zaa hideous form. But before he can release the axe, he is felled by a stream of clear fluid intended for you. It strikes his chest and boils as it eats through his crimson breastplate. With a heart-rending scream he collapses to the ground, mortally wounded.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>With a heart-rending scream Leomin collapses, mortally wounded.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill4.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill4.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <p>You wrench the Sun-Crystal from your pocket and turn to confront Shom<ch.apos/>zaa, your arm poised ready to throw your deadly device. But already the fell creature has retreated and taken cover among the stalagmites. You run to the stone ramp to scan the cavern, and your Kai sixth sense alerts you to his hiding place. His body is hidden, but the top of his ghastly head can be seen protruding above a stalagmite less than 30 feet from where you stand.</p>
        <choice idref="sect38">If you wish to throw the Sun-Crystal at Shom<ch.apos/>zaa<ch.apos/>s head, <link-text>turn to 38</link-text>.</choice>
        <choice idref="sect272">If you wish to attempt to get a clearer view of Shom<ch.apos/>zaa before you hurl the Sun-Crystal, <link-text>turn to 272</link-text>.</choice>
@@ -1316,7 +1774,7 @@ For Sommerlund and the Kai!
      <meta><title>75</title></meta>
 
      <data>
-       <p>As the icy bolt passes through the wall of hot air, it is transformed into a cloud of harmless water vapour. Your effective use of your Kai mastery to counter the creature<ch.apos/>s attack shocks the watching minions. Nervously they back away, defying the hysterical shrieking of their cadaverous commander who orders them to attack you en masse. Before they can rally themselves and carry out the order, you steal away into a section of the vast laboratory<ch.apos/> that is crowded with seige machinery and engines of war. Here you take cover behind a large shield on wheels, and observe the Shom<ch.apos/>zaa minions as they mill about in confusion.</p>
+       <p>As the icy bolt passes through the wall of hot air, it is transformed into a cloud of harmless water vapour. Your effective use of your Kai mastery to counter the creature<ch.apos/>s attack shocks the watching minions. Nervously they back away, defying the hysterical shrieking of their cadaverous commander who orders them to attack you en masse. Before they can rally themselves and carry out the order, you steal away into a section of the vast laboratory that is crowded with seige machinery and engines of war. Here you take cover behind a large shield on wheels, and observe the Shom<ch.apos/>zaa minions as they mill about in confusion.</p>
        <p>Suddenly their commander recaptures their attention by freezing two luckless minions to death with another icy blast. When he then commands the portcullis to be lowered to prevent your escape, a zealous minion rushes forward and begins hacking at its securing rope with a battle-axe. The rope snaps and you watch with horror as the portcullis comes crashing down to seal off the exit.</p>
        <choice idref="sect320"><link-text>Turn to 320</link-text>.</choice>
      </data>
@@ -1429,6 +1887,18 @@ For Sommerlund and the Kai!
      <data>
        <p>You pull the lever and a secret panel in the wall slides open to reveal a narrow passage beyond. As you are peering along this gloomy little tunnel, suddenly the door bursts open and slams against the wall.</p>
        <p>An icy trickle of fear runs down your spine when you turn to look upon the squat creature that is now framed in the doorway. It has a bloated, veined body, and waxy skin that is as pale as a frozen corpse. From its fanged mouth there flickers a forked tongue, and its scarlet eye-slits radiate an evil light that chills the marrow in your bones. It advances into the chamber with its arms outstretched, as if it is walking in its sleep, then it levels these arms at your chest and you see that the creature<ch.apos/>s fists are glowing like two balls of red-hot plasma.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>A squat, bloated, forked-tongued creature approaches.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill5.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill5.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <choice idref="sect273">If you wish to attack this creature, <link-text>turn to 273</link-text>.</choice>
        <choice idref="sect159">If you wish to evade the creature by entering the secret passage, <link-text>turn to 159</link-text>.</choice>
      </data>
@@ -1486,6 +1956,19 @@ For Sommerlund and the Kai!
      <data>
        <p>The blow throws you forward and you scrape your jaw on a stalagmite before splashing into the mire: lose 1 <typ class="attribute">ENDURANCE</typ> point.</p>
        <p>Your senses are screaming DANGER! as you struggle to your knees and wipe the slime from your bloodied mouth. Instinctively you reach for your Kai Weapon, but its blade is barely out of the scabbard when Shom<ch.apos/>zaa leaps upon you and rakes you with his terrible claws.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>Shom<ch.apos/>zaa leaps upon you and rakes you</line>
+	  <line>with his terrible claws.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill6.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill6.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <combat><enemy>Shom<ch.apos/>zaa</enemy><enemy-attribute class="combatskill">56</enemy-attribute><enemy-attribute class="endurance">50</enemy-attribute></combat>
        <p>This creature is immune to Mindblast (but not Kai-surge).</p>
        <choice idref="sect322">If you win the combat, <link-text>turn to 322</link-text>.</choice>
@@ -1689,6 +2172,19 @@ For Sommerlund and the Kai!
        <p><quote>Shom<ch.apos/>zaa abandoned his attempt to batter down this portal two days past,</quote> he says. <quote>But there may be some of his spawn-kind waiting in the corridor outside. Best be on our guard, Kai lord.</quote></p>
        <p>Leomin nods to the old warrior and he responds by touching the runestone to the door. There is a faint tinkling sound, then the portal slides open and you follow the prince as he steps through the opening into the darkened passageway beyond. The portal slides shut behind your back with hardly a sound. Instinctively you scan your new surroundings for signs of the enemy, and quickly discover that Leomin was right to be cautious. More than a dozen Shom<ch.apos/>zaa agarashi have been left here to guard the portal. Only by chance have you chosen a time to leave the chamber when these creatures are asleep.</p>
        <p>Leomin points to the end of the wide corridor, to a place where a circular shaft descends to a lower level. A large basket, suspended by a rope and pulley, hangs above this shaft. The prince beckons you to follow as he tip-toes around the sleeping creatures and approaches the basket. You are halfway along the corridor when suddenly one of the Shom<ch.apos/>zaa agarashi awakens and shrieks in alarm. You respond by racing towards the distant shaft, but within a matter of seconds, all of the sleeping creatures are on their feet and rushing from all sides to block your escape. You must fight them.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>Creatures attack you on all sides</line>
+	  <line>as you try to make your escape.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill7.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill7.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <combat><enemy>Shom<ch.apos/>zaa Agarashi</enemy><enemy-attribute class="combatskill">42</enemy-attribute><enemy-attribute class="endurance">44</enemy-attribute></combat>
        <p>You may add 5 to your <typ class="attribute">COMBAT SKILL</typ> for the duration of this combat, for Prince Leomin is fighting by your side.</p>
        <choice idref="sect258">If you win the combat, <link-text>turn to 258</link-text>.</choice>
@@ -1819,6 +2315,15 @@ For Sommerlund and the Kai!
 
      <data>
        <p>The Sun-Crystal arcs over the top of the stalagmite and glances Shom<ch.apos/>zaa<ch.apos/>s head. Instantly, there is a blinding flash that makes you cover your face with your hands. This searing light is followed almost immediately by a deafening implosion which sucks a whirlwind of air and loose rock into its spinning core. You throw yourself upon Prince Leomin and pin him to the ground as air and slime and debris are sucked from this cavern into the whirling vortex of the implosion.</p>
+
+       <illustration class="inline">
+        <meta>
+         <creator>Brian Williams</creator>
+        </meta>
+        <instance class="html" src="small1.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="small1.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
        <choice idref="sect114">If the number you have chosen is 0<ch.endash/>3, <link-text>turn to 114</link-text>.</choice>
        <choice idref="sect3">If it is 4<ch.endash/>6, <link-text>turn to 3</link-text>.</choice>
@@ -1879,6 +2384,19 @@ For Sommerlund and the Kai!
 
      <data>
        <p>As you run towards the archway, you unsheathe your weapon and give vent to your battle-cry: <quote>For Sommerlund and the Kai!</quote></p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>Giving vent to your battle-cry,</line>
+	  <line>you run towards the archway.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill8.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill8.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <combat><enemy>Shom<ch.apos/>zaa Agarashi (with spears)</enemy><enemy-attribute class="combatskill">45</enemy-attribute><enemy-attribute class="endurance">40</enemy-attribute></combat>
        <choice idref="sect82">If you win this combat in four rounds or less, <link-text>turn to 82</link-text>.</choice>
        <choice idref="sect236">If you win and the fight lasts five rounds or longer, <link-text>turn to 236</link-text>.</choice>
@@ -2093,6 +2611,18 @@ For Sommerlund and the Kai!
      <data>
        <p>You take aim at the guards and fire your bow twice in quick succession (erase 2 arrows from your Weapons List). Your first shot strikes in the head and kills its target instantly, but your second shaft fails to penetrate the minion<ch.apos/>s body armour. This creature is knocked down by the force of the arrow, yet it is able to emit a shrill cry of alarm that alerts the other Shom<ch.apos/>zaa minions to your presence in the smelting cavern.</p>
        <p>The dwarves seize their chance to escape from the cage. Before the creature can get to its feet, a hand reaches through the bars and the bolt is pulled. Then the door bursts open and out they pour with a blood-curdling yell. The surviving guard is trampled underfoot as the dwarves rush to the ore wagons and arm themselves with rocks and tools. The torturers abandon their grisly work and come running towards the prison cage with their weapons raised. Suddenly two of these minions appear beside your wagon. Hurriedly you drop your bow and reach for your Kai Weapon as they turn on you and launch a frenzied attack.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>The dwarves escape from their cage.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill9.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill9.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <combat><enemy>Shom<ch.apos/>zaa minions</enemy><enemy-attribute class="combatskill">33</enemy-attribute><enemy-attribute class="endurance">38</enemy-attribute></combat>
        <p>You are unable to inflict any <typ class="attribute">ENDURANCE</typ> loss on this enemy for the first two rounds of combat, due to the surprise and ferocity of their attack.</p>
        <choice idref="sect9">If you win the combat, <link-text>turn to 9</link-text>.</choice>
@@ -2195,6 +2725,19 @@ For Sommerlund and the Kai!
 
      <data>
        <p>You hit the ground and the icy bolt speeds over your head to splatter harmlessly against the tunnel wall. You tug your Kai Weapon from its scabbard. Then you leap to your feet in time to see the creature and its slavering horde come rushing along the tunnel towards you. With your battle-cry on your lips, you stride forward to meet their determined attack.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>The creature and its slavering horde</line>
+	  <line>come rushing towards you.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill10.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill10.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <combat><enemy>Shom<ch.apos/>zaa Agarashi <ch.ampersand/>Commander</enemy><enemy-attribute class="combatskill">50</enemy-attribute><enemy-attribute class="endurance">55</enemy-attribute></combat>
        <p>You cannot evade this combat<ch.emdash/>you must fight these creatures to the death.</p>
        <choice idref="sect324">If you win the fight, <link-text>turn to 324</link-text>.</choice>
@@ -2573,6 +3116,19 @@ For Sommerlund and the Kai!
      <data>
        <p>Upon entering the chamber, you see a huge throne of silver adorned with hundreds of precious gems. It rests upon a dais of marble and it dominates the centre of this circular hall. A halo of golden light surrounds the Throne of Andarin, and when these rays wash over your body, you feel cleansed and invigorated (restore 5 <typ class="attribute">ENDURANCE</typ> points).</p>
        <p>As you approach the fabled throne, you see many injured Drodarin warriors seated around its base. Some have suffered grievous battle wounds, yet the goodly light of the throne is healing their torn flesh and broken bones. Your grey-bearded escort ushers you to a corner of the chamber where two warriors are engaged in a heated debate. From the colour of their armour, and the royal crests of Bor emblazoned upon their surcoats, you deduce that they are King Ryvin<ch.apos/>s missing sons: Prince Leomin and Prince Torfan.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>You approach the fabled throne and see many</line>
+	  <line>warriors recovering around its base.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill11.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill11.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <p>The two princes cease their argument when they see you approach. Torfan comes bounding forward to greet you, offering his hand in friendship, yet his elder brother appears sullen and dejected. You introduce yourself to the princes and give an account of the events that have brought you to this meeting. When you show them the Sun-Crystal and tell of your mission to destroy Shom<ch.apos/>zaa, a glimmer of hope shines in Prince Leomin<ch.apos/>s red-rimmed eyes. You sense that he has been racked with remorse since the escape of Shom<ch.apos/>zaa and its vile minions. He longs for the chance to redeem his foolish actions, and readily he offers to help you destroy the creature and its hordes.</p>
        <choice idref="sect109"><link-text>Turn to 109</link-text>.</choice>
      </data>
@@ -2646,6 +3202,18 @@ For Sommerlund and the Kai!
 
      <data>
        <p>The open portal reveals a great stone staircase that descends to a magnificent marble hall. Vast columns brace the sculptured ceiling and tall silvery mirrors line the walls, creating the illusion that this cavernous chamber is even larger. Seated upon a chair in the centre of the echoing hall is King Ryvin, clad in his golden battle armour and wolfskin cape. Surrounding him are members of his royal family and other high-ranking Drodarin nobility. They are greatly distressed and several are weeping openly. A herald announces your arrival and the crowd parts as you approach the foot of Ryvin<ch.apos/>s chair.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>King Ryvin sits surrounded by family and nobles.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill12.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill12.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <p><quote>Praise Ishir!</quote> booms the dwarf king. <quote>We have prayed that you would return to aid us, Lord Rimoah. And I see you bring a Kai champion. We are doubly glad. You<ch.apos/>ve arrived not a moment too soon.</quote></p>
        <p>King Ryvin rises from his chair and motions to you and Rimoah to accompany him into an antechamber. In the privacy of this adjoining room, he tells of the nightmare that has engulfed his kingdom following the release of Shom<ch.apos/>zaa. The creature and its horde of mutant spawn have spread like a voracious plague throughout the chambers and tunnels of his vast subterranean realm. All contact with the Drodarin communities surrounding Boradon has been severed, the lower levels of the kingdom have been lost to the enemy, and more than half of his army are unaccounted for.</p>
        <p><quote>So many have been slain,</quote> he says, his deep voice cracking with emotion. <quote>Only the swift destruction of Shom<ch.apos/>zaa can save us now. But all is not yet lost. I draw strength from the certain knowledge that my sons<ch.emdash/>Leomin and Torfan<ch.emdash/>are still alive, and the Throne of Andarin is intact.</quote></p>
@@ -2699,7 +3267,7 @@ For Sommerlund and the Kai!
      <meta><title>202</title></meta>
 
      <data>
-       <p>You follow Lord Rimoah out onto the windswept deck and look down in awe at the mighty city of Boradon. Rooted directly in the granite escarpment of Andar, the highest mountain of the Great Bor Range, its fortifications and turrets are barely distinguishable from the rugged copper-red cliffs surrounding them. Night has fallen and the moonless sky is as black as jet, yet the crew of the Cloud-dancer have no difficulty in locating the approach to this ancient mountain metropolis. Torches burn in every turret and arrow slit, and blazing beacons illuminate a safe passage through the snow-capped peaks to the city<ch.apos/>s central square.</p>
+       <p>You follow Lord Rimoah out onto the windswept deck and look down in awe at the mighty city of Boradon. Rooted directly in the granite escarpment of Andar, the highest mountain of the Great Bor Range, its fortifications and turrets are barely distinguishable from the rugged copper-red cliffs surrounding them. Night has fallen and the moonless sky is as black as jet, yet the crew of the <cite>Cloud-dancer</cite> have no difficulty in locating the approach to this ancient mountain metropolis. Torches burn in every turret and arrow slit, and blazing beacons illuminate a safe passage through the snow-capped peaks to the city<ch.apos/>s central square.</p>
        <p>A unit of King Ryvin<ch.apos/>s elite War-Thanes have been stationed in the main square in anticipation of your arrival. Their captain, a robust-looking dwarf with a plaited beard and a shock of bright red hair, offers you both a hearty welcome when you step from the boarding cage. He says that King Ryvin is waiting and he bids you accompany him without delay. His torch-bearing warriors escort you along a winding path that ends at a stone bridge which arches across a deep, natural moat. Beyond the bridge is a great bronze portal set into the mountainside. A horn sounds as you approach and the huge door swings open to reveal a wondrous sight.</p>
        <choice idref="sect197"><link-text>Turn to 197</link-text>.</choice>
      </data>
@@ -2951,6 +3519,18 @@ For Sommerlund and the Kai!
 
      <data>
        <p>You dodge behind the parapet of the barricade and the icy bolt speeds over your head to splatter harmlessly against the wall of the throne chamber. You tug your Kai Weapon from its scabbard, then you leap to your feet in time to see the Shom<ch.apos/>zaa horde reach the barricade. The War-Thanes fight with ruthless efficiency, felling ten of the enemy for every Drodarin who falls. But the horde are gripped by a battle-frenzy that drives them like demons, and you are hard-pressed to keep them from breaking through the barricade.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>Frantically you attempt to stop the crazed horde.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill13.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill13.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <combat><enemy>Shom<ch.apos/>zaa Horde (in battle-frenzy)</enemy><enemy-attribute class="combatskill">47</enemy-attribute><enemy-attribute class="endurance">45</enemy-attribute></combat>
        <p>This enemy is immune to Mindblast (but not Kai-surge).</p>
        <choice idref="sect100">If you win this combat, <link-text>turn to 100</link-text>.</choice>
@@ -3179,6 +3759,19 @@ For Sommerlund and the Kai!
      <data>
        <p>Patiently you wait until the Shom<ch.apos/>zaa agarashi have disappeared from the passage, then you draw your Kai Weapon and steel yourself to enter the hole. Leomin keeps lookout as you duck your head and step through its jagged opening.</p>
        <p>As your eyes adjust to the gloom, you gasp with horror at what you see in the cavern before you. Hanging from the slime-stained ceiling are hundreds of large, grey cocoons. Through the wiry threads that form their fibrous shell cases, you can see the faces and features of Drodarin warriors. Your throat tightens when you realize that their corpses are being kept here to provide future food for Shom<ch.apos/>zaa and his horde.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>You gasp when you see hundreds of cocoons</line>
+	  <line>hanging from the slime-stained ceiling.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill14.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill14.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <choice idref="sect140">If you possess Grand Pathsmanship, <link-text>turn to 140</link-text>.</choice>
        <choice idref="sect14">If you do not, <link-text>turn to 14</link-text>.</choice>
      </data>
@@ -3327,6 +3920,19 @@ For Sommerlund and the Kai!
 
      <data>
        <p>Quickly you drop to the ground and roll away from the hole in the cavern wall. Using the momentum of your evasive move, you spring to your feet and look up at the ceiling. There you see a large creature. It resembles a huge black beetle, with mandibles and a shiny shell which covers a pair of membraneous hind wings. From a bony tube beneath this horror<ch.apos/>s gaping mouth comes a thin length of thread. It whips around your legs and yanks you back onto the ground. As you fall, another thread loops around your body. You gasp for air as this steely thread is pulled tighter.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>A huge black beetle drops a thin length</line>
+	  <line>of thread towards you.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill15.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill15.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
        <choice idref="sect80">If the number you have chosen is 0<ch.endash/>3, <link-text>turn to 80</link-text>.</choice>
        <choice idref="sect181">If it is 4 or higher, <link-text>turn to 181</link-text>.</choice>
@@ -3568,6 +4174,19 @@ For Sommerlund and the Kai!
        <p>Soon you arrive at a great bronze door. It is inlaid with ancient Drodarin runes and embellished with gold leaf. Gently you push against its cold surface and the portal swings open to reveal a gloomy chamber. You sense no threat here and so you enter and then push the door closed behind you.</p>
        <p>The walls of this chamber are lined with alcoves which are filled with ornate burial urns. Some have been smashed, and their powdery contents lie scattered upon the marble floor. You quickly determine that you have entered a Drodarin cinerarium<ch.emdash/>a place where the cremated remains of dwarven warriors are laid to rest. Such chambers are considered sacred by the Drodarin, and it saddens you to see that this one has been wantonly desecrated by Shom<ch.apos/>zaa minions.</p>
        <p>A large tomb dominates the centre of the chamber. Its lid is cracked and holed where the minions have attempted to force an entry. Drodarin script embellishes its dusty surfaces, and when you make a closer inspection, your pulse quickens. This is the tomb of Andarin<ch.emdash/>the first King of Bor. Through a small hole that punctures the tomb<ch.apos/>s lid, you can see part of the king<ch.apos/>s burial urn. It is lit by the supernatural glow of a golden warhammer that rests beside it. Your Kai senses detect that this is a powerful, magical weapon.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>Through a small hole you can see</line>
+	  <line>part of the king<ch.apos/>s burial urn.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill16.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill16.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <choice idref="sect118">If you wish to attempt to open the lid of this tomb, <link-text>turn to 118</link-text>.</choice>
        <choice idref="sect230">If you choose to leave the tomb of King Andarin undisturbed, <link-text>turn to 230</link-text>.</choice>
      </data>
@@ -3756,6 +4375,19 @@ For Sommerlund and the Kai!
      <data>
        <p>The stone ramp leads to a titanic, lantern-lit cavern, where acres of wheat and barley are ripening in fields of fertile soil. You are amazed that such rich arable land can exist so deep below the surface of Magnamund, where rain has never fallen and the sun has never shone. Truly the Goddess Ishir gave the Drodarin a wondrous gift when she bestowed upon them the Throne of Andarin, for its powers alone permit this miracle to exist.</p>
        <p>You leave the ramp and follow a rutted cart track. It borders upon a field of tall wheat, swaying gently in a cooling breeze. As you walk along, you magnify your vision and attempt to judge the distance to the far wall of the cavern. You have just concluded that it lies more than two miles ahead when suddenly you see something in the middle distance that makes you freeze in your tracks. A group of six large, two-footed creatures have emerged from the wheatfield. At first glance they remind you of the guanza, the racing lizards bred in the Southlands, but when you take a closer look you see that these grey-skinned mounts are not born of natural stock. Astride their scaly backs sit Shorn<ch.apos/>zaa minions armed with spears and lances. The leading rider sights you on the track and immediately the group comes speeding towards you with a loose, loping gait.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>Six mounted Shom<ch.apos/>zaa minions</line>
+	  <line>come speeding towards you.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill17.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill17.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
        <choice idref="sect136">If the number you have picked is 0<ch.endash/>3, <link-text>turn to 136</link-text>.</choice>
        <choice idref="sect225">If it is 4<ch.endash/>9, <link-text>turn to 225</link-text>.</choice>
@@ -3911,6 +4543,19 @@ For Sommerlund and the Kai!
 
      <data>
        <p>The Drodarin War-Thanes twirl their battle-helms upon the muzzles of their muskets and cheer loudly as you reach the barricade. They are in jubilant mood after six days of siege, for they believe that the retreat of their enemy from around the throne chamber signals the end of their long ordeal. Prince Torfan offers you his hand and helps lift you over the wall, then he asks after his brother Leomin. You answer with a shake of your bowed head.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>The Drodarin War-thanes cheer loudly</line>
+	  <line>as you reach the barricade.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill18.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill18.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <p>Torfan is saddened by the news of the loss of his brother, but as you accompany him into the throne chamber, he is greatly comforted to hear that you owe him your life.</p>
        <p><quote>Without your brother<ch.apos/>s brave sacrifice, Shom<ch.apos/>zaa would have slain us both,</quote> you tell him.</p>
        <p><quote>He has paid a grave price for his foolishness,</quote> says Torfan, wistfully, <quote>but he has died with honour. He will not be forgotten.</quote></p>
@@ -3989,6 +4634,15 @@ For Sommerlund and the Kai!
      <data>
        <p>Shom<ch.apos/>zaa clutches at the deep wounds you have inflicted, and he staggers and falls backwards into the slime. You have slain this formidable foe, yet you sense that his death is but a temporary state, for the link between his body and the Plane of Darkness remains intact. Even as you gaze upon his loathsome corpse you detect the flow of an evil, reviving power.</p>
        <p>You return to where Prince Leomin lies, and you call upon Ishir to guide your arm as you take the Sun-Crystal from your pocket and hurl it at Shom<ch.apos/>zaa<ch.apos/>s body. It strikes him and instantly there is a blinding flash. This searing light is followed by a deafening implosion which sucks a whirlwind of air and loose rock into its spinning core. You throw yourself upon Prince Leomin and pin him to the ground, as air and slime and debris are sucked from this cavern into the whirling vortex of the implosion.</p>
+
+       <illustration class="inline">
+        <meta>
+         <creator>Brian Williams</creator>
+        </meta>
+        <instance class="html" src="small1.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="small1.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
        <choice idref="sect114">If the number you have picked is 0<ch.endash/>3, <link-text>turn to 114</link-text>.</choice>
        <choice idref="sect3">If it is 4<ch.endash/>6, <link-text>turn to 3</link-text>.</choice>
@@ -4058,6 +4712,19 @@ For Sommerlund and the Kai!
 
      <data>
        <p>You raise your Kai Weapon and give voice to your proud battle-cry: <quote>For Sommerlund and the Kai!</quote> Your valiant shout inspires the surrounding War-Thanes, and they rally to your command as you mount a counter-attack to recapture the cannon. Boldly you lead the charge, sweeping aside any Shom<ch.apos/>zaa agarashi who are foolish or unfortunate enough to stand in your way. Upon reaching the cannon, you seize back Prince Leomin<ch.apos/>s flag and bear it aloft as you engage the fanatical horde.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>You lead a bold charge against</line>
+	  <line>the Shom<ch.apos/>zaa Agarashi horde.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill19.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill19.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <combat><enemy>Shom<ch.apos/>zaa Agarashi (assault group)</enemy><enemy-attribute class="combatskill">48</enemy-attribute><enemy-attribute class="endurance">42</enemy-attribute></combat>
        <p>This enemy is immune to all forms of psychic attack.</p>
        <choice idref="sect200">If you win the combat, <link-text>turn to 200</link-text>.</choice>
@@ -4079,11 +4746,11 @@ For Sommerlund and the Kai!
      <data>
        <p>Now that the creature is no longer a threat, you turn away from the scorching heat that is radiating from its ashes, and you begin to explore this mysterious treasure chamber.</p>
        <p>The walls of the vault are decorated with murals that glorify the Goddess Ishir. Great carved tables, heaped with dusty gems and ingots of precious metal, form a circle around a golden statue of the goddess which stands upon a crystal dais in the middle of the chamber. Resting against the dais are several ancient artifacts of special value. Three of these items in particular catch your eye:</p>
-       <p>Korlinium Chainmail Vest</p>
+       <p><b>Korlinium Chainmail Vest</b></p>
        <p>This Special Item can be worn beneath your tunic. It adds +2 to your <typ class="attribute">COMBAT SKILL</typ>.</p>
-       <p>Drodarin Bag of Holding</p>
+       <p><b>Drodarin Bag of Holding</b></p>
        <p>This Special Item can be used to store five additional Backpack Items. It is kept in your backpack where it occupies only one space.</p>
-       <p><quote>Sunderer</quote></p>
+       <p><b><quote>Sunderer</quote></b></p>
        <p>This Drodarin battle-axe is a Special Item. In combat against any enemy it will give you a bonus of +5 to your <typ class="attribute">COMBAT SKILL</typ>. You may use this magical axe as an alternative to your existing Kai Weapon.</p>
        <p>If you choose to take and keep any of the above Special Items, make the necessary adjustments to your <a idref="action">Action Chart</a>.</p>
        <choice idref="sect95">To continue, <link-text>turn to 95</link-text>.</choice>
@@ -4204,6 +4871,19 @@ For Sommerlund and the Kai!
      <data>
        <p>You speak the words of the Brotherhood spell<ch.emdash/>Strength<ch.emdash/>and as it begins to take effect, you feel an invigorating surge of power flowing through every muscle of your body. Electrified by this energy, you take hold of the tomb<ch.apos/>s lid and force it aside. There is a loud Crack! as the seal of grime is broken, then a flood of golden light washes over you when you swing the lid aside and tip it over onto the floor.</p>
        <p>With a growing sense of awe, you take hold of the golden warhammer and raise it aloft. You admire its finely-crafted lines and perfect balance, and you sense that it was forged by magical fires.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Brian Williams</creator>
+         <description>
+	  <line>Filled with awe, you take hold of the</line>
+	  <line>golden warhammer and hold it aloft.</line>
+	 </description>
+        </meta>
+        <instance class="html" src="ill20.gif" width="386" height="xxx"/>
+        <instance class="pdf" src="ill20.pdf" width="386" height="xxx"/>
+       </illustration>
+
        <p>If you wish to keep the Andarin Warhammer, record it on your <a idref="action">Action Chart</a> as a Special Item. In combat against any enemy it will give you a bonus of +5 to your <typ class="attribute">COMBAT SKILL</typ>. You may use this magical warhammer as an alternative to your Kai Weapon.</p>
        <choice idref="sect230">To continue, <link-text>turn to 230</link-text>.</choice>
      </data>
@@ -4297,7 +4977,7 @@ For Sommerlund and the Kai!
 
      <data>
        <p>A special escort is provided for you and Lord Rimoah. In the company of Prince Torfan, you are taken by carriage to the Grand Hall where a magnificent reception awaits you. Formally you are presented to King Ryvin and you receive his praise and heartfelt thanks for the victory you have secured for his beleaguered kingdom. You return to him the Andarin Bloodstone, and he awards to you the Cross of Boradon<ch.emdash/>the highest accolade for courage and gallantry in the Kingdom of Bor. During the informal celebrations that take place shortly afterwards, you are further awarded the freedom of Bor and the honorary rank and title of War-Thane<ch.emdash/>a rare privilege for one not born of Drodarin stock.</p>
-       <p>After a day of rest, you and Lord Rimoah make a triumphant return to Sommerlund aboard Cloud-Dancer. The news of your victory has travelled ahead of you and your arrival at the monastery is greeted by the appreciate cheers of your fellow kinsmen. For your triumph over Shom<ch.apos/>zaa, and the preservation of the Throne of Andarin, you receive special praise and admiration from Supreme Master Lone Wolf himself.</p>
+       <p>After a day of rest, you and Lord Rimoah make a triumphant return to Sommerlund aboard <cite>Cloud-dancer</cite>. The news of your victory has travelled ahead of you and your arrival at the monastery is greeted by the appreciate cheers of your fellow kinsmen. For your triumph over Shom<ch.apos/>zaa, and the preservation of the Throne of Andarin, you receive special praise and admiration from Supreme Master Lone Wolf himself.</p>
        <p>Congratulations, Grand Master. You have met this testing quest and you have triumphed. Your brave and courageous actions in Bor will long be remembered in the legends of the New Order Kai. Yet the fight against Evil has not yet ended. Soon your courage and Kai skills will be put to the test again, in a distant realm of Magnamund. The nature of the quest and the dangers that await you will be revealed in the next exciting Lone Wolf adventure entitled:</p>
        <p>Vampirium</p>
      </data>
@@ -4306,6 +4986,630 @@ For Sommerlund and the Kai!
    </section>
 
    <!-- Backmatter -->
+   <section class="backmatter" id="map">
+    <meta><title>The Kingdom of Bor and Surrounding Territories</title></meta>
+
+   <data>
+    <illustration>
+     <meta>
+      <creator>Brian Williams</creator>
+     </meta>
+     <instance src="map.jpg" width="1024" height="768" class="html"></instance>
+     <instance src="map.pdf" width="1024" height="768" class="pdf"></instance>
+    </illustration>
+   </data>
+  </section>
+
+  <section class="backmatter" id="action">
+   <meta><title>Action Chart</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acstats.gif" width="386" height="286" class="html" mime-type="image/gif"></instance>
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acdscplz.gif" width="385" height="259" class="html" mime-type="image/gif"></instance>
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acchklst.gif" width="385" height="128" class="html" mime-type="image/gif" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acitems.gif" width="386" height="161" class="html" mime-type="image/gif"></instance>
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acbckpck.gif" width="386" height="137" class="html" mime-type="image/gif"></instance>
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acspcl.gif" width="386" height="280" class="html" mime-type="image/gif"></instance>
+    </illustration>
+
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance class="text">
+      <p>
+       <line><typ class="attribute">COMBAT SKILL</typ>: <ch.blankline></ch.blankline></line>
+       <line><typ class="attribute">ENDURANCE</typ>: <ch.blankline></ch.blankline></line>
+      </p>
+      <p>Grand Master Disciplines:</p>
+       <ol>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+       </ol>
+      <p>Bonus Disciplines:</p>
+       <ol>
+        <li><ch.blankline></ch.blankline>: 5th Grand Master Discipline if you have completed 1 New Order Adventure successfully</li>
+        <li><ch.blankline></ch.blankline>: 6th Grand Master Discipline if you have completed 2 New Order Adventures successfully</li>
+        <li><ch.blankline></ch.blankline>: 7th Grand Master Discipline if you have completed 3 New Order Adventures successfully</li>
+        <li><ch.blankline></ch.blankline>: 8th Grand Master Discipline if you have completed 4 New Order Adventures successfully</li>
+        <li><ch.blankline></ch.blankline>: 9th Grand Master Discipline if you have completed 5 New Order Adventures successfully</li>
+       </ol>
+      <p>Weapons:</p>
+       <ol>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+       </ol>
+      <p>Belt Pouch: <ch.blankline></ch.blankline></p>
+      <p>Meals: <ch.blankline></ch.blankline></p>
+      <p>Backpack Items:</p>
+       <ol>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+       </ol>
+      <p>Special Items:</p>
+       <ol>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+        <li><ch.blankline></ch.blankline></li>
+       </ol>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
+  <section class="backmatter" id="crsumary">
+   <meta><title>Combat Rules Summary</title></meta>
+
+   <data>
+    <ol>
+     <li>Add your <typ class="attribute">COMBAT SKILL</typ> to any bonus points given to you by your Kai Weapon, Special Items, or Grand Master Disciplines.</li>
+     <li>Subtract the <typ class="attribute">COMBAT SKILL</typ> of your enemy from this total. This number = Combat Ratio.</li>
+     <li>Pick a number from the <a idref="random">Random Number Table</a>.</li>
+     <li>Turn to the <a idref="crtable">Combat Results Table</a>.</li>
+     <li>Find your Combat Ratio along the top of the chart and cross-reference to the random number you have picked. (E indicates loss of <typ class="attribute">ENDURANCE</typ> points to Enemy. GM indicates loss of <typ class="attribute">ENDURANCE</typ> points to yourself.)</li>
+     <li>Continue the combat from Stage 3 until one character is dead. This is when the <typ class="attribute">ENDURANCE</typ> points of either character falls to 0 or below.</li>
+    </ol>
+
+    <section class="backmatter" id="smevazn">
+     <meta><title>To Evade Combat</title></meta>
+
+     <data>
+
+      <ol>
+       <li>You may only do this when the text of the adventure offers you the opportunity.</li>
+       <li>You undertake one round of combat in the usual way. All points lost by the enemy are ignored; only you lose the <typ class="attribute">ENDURANCE</typ> points.</li>
+       <li>If the book offers the chance of taking evasive action in place of combat, it can be taken in the first or any subsequent round (unless specifically stated otherwise).</li>
+      </ol>
+
+     </data>
+    </section>
+
+   </data>
+  </section>
+
+  <section class="backmatter" id="crtable">
+   <meta><title>Combat Results Table</title></meta>
+
+   <data>
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="crtneg.gif" width="386" height="472" class="html" mime-type="image/gif"></instance>
+     <instance src="crtneg.tex" width="380" height="500" class="tex"></instance>
+    </illustration>
+
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="crtpos.gif" width="386" height="472" class="html" mime-type="image/gif"></instance>
+     <instance src="crtpos.tex" width="380" height="500" class="tex"></instance>
+    </illustration>
+
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance class="text">
+      <table summary="This table provides the endurance losses sustained by the hero and enemy as a result of combat.">
+       <caption>Combat Results with combined hero and enemy endurance losses</caption>
+
+       <colgroup span="1"></colgroup>
+       <colgroup span="13"></colgroup>
+
+       <tfoot>
+        <tr>
+         <td colspan="14">Combat results are given enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> loss first followed by the hero<ch.apos/>s <typ class="attribute">ENDURANCE</typ> loss. For example, "12/0" means that the enemy loses 12 <typ class="attribute">ENDURANCE</typ> points while the hero loses 0 <typ class="attribute">ENDURANCE</typ> points. A combat result of "k" means that the combatant is killed. For example, "0/k" means that the enemy loses 0 <typ class="attribute">ENDURANCE</typ> points while the hero is killed.</td>
+        </tr>
+       </tfoot>
+
+       <tbody>
+        <tr>
+         <th rowspan="2" scope="col">Random Number</th>
+         <th colspan="13" scope="colgroup">Combat Ratio</th>
+        </tr>
+
+        <tr>
+         <th scope="col" axis="combat_ratio">-11 or lower</th>
+         <th scope="col" axis="combat_ratio">-10/ -9</th>
+         <th scope="col" axis="combat_ratio">-8/ -7</th>
+         <th scope="col" axis="combat_ratio">-6/ -5</th>
+         <th scope="col" axis="combat_ratio">-4/ -3</th>
+         <th scope="col" axis="combat_ratio">-2/ -1</th>
+         <th scope="col" axis="combat_ratio">0</th>
+         <th scope="col" axis="combat_ratio">1/ 2</th>
+         <th scope="col" axis="combat_ratio">3/ 4</th>
+         <th scope="col" axis="combat_ratio">5/ 6</th>
+         <th scope="col" axis="combat_ratio">7/ 8</th>
+         <th scope="col" axis="combat_ratio">9/ 10</th>
+         <th scope="col" axis="combat_ratio">11 or higher</th>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">1</th>
+         <td>0/k</td>
+         <td>0/k</td>
+         <td>0/8</td>
+         <td>0/6</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/4</td>
+         <td>7/4</td>
+         <td>8/3</td>
+         <td>9/3</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">2</th>
+         <td>0/k</td>
+         <td>0/8</td>
+         <td>0/7</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/3</td>
+         <td>9/3</td>
+         <td>10/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">3</th>
+         <td>0/8</td>
+         <td>0/7</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/3</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">4</th>
+         <td>0/8</td>
+         <td>1/7</td>
+         <td>2/6</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+         <td>12/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">5</th>
+         <td>1/7</td>
+         <td>2/6</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+         <td>12/2</td>
+         <td>14/1</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">6</th>
+         <td>2/6</td>
+         <td>3/6</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/1</td>
+         <td>12/1</td>
+         <td>14/1</td>
+         <td>16/1</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">7</th>
+         <td>3/5</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/1</td>
+         <td>10/1</td>
+         <td>11/1</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">8</th>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/1</td>
+         <td>9/1</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">9</th>
+         <td>5/3</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/0</td>
+         <td>9/0</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">0</th>
+         <td>6/0</td>
+         <td>7/0</td>
+         <td>8/0</td>
+         <td>9/0</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+        </tr>
+       </tbody>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
+  <section class="backmatter" id="random">
+   <meta><title>Random Number Table</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.gif" width="332" height="432" class="html" mime-type="image/gif"></instance>
+     <instance src="random.tex" width="380" height="500" class="tex"></instance>
+     <instance class="text">
+      <table>
+       <tr>
+        <td>4</td>
+        <td>9</td>
+        <td>3</td>
+        <td>1</td>
+        <td>6</td>
+        <td>2</td>
+        <td>4</td>
+        <td>7</td>
+        <td>8</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>1</td>
+        <td>9</td>
+        <td>0</td>
+        <td>4</td>
+        <td>7</td>
+        <td>6</td>
+        <td>8</td>
+        <td>1</td>
+        <td>2</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>5</td>
+        <td>3</td>
+        <td>0</td>
+        <td>7</td>
+        <td>8</td>
+        <td>4</td>
+        <td>6</td>
+        <td>1</td>
+        <td>3</td>
+       </tr>
+       <tr>
+        <td>6</td>
+        <td>1</td>
+        <td>7</td>
+        <td>6</td>
+        <td>9</td>
+        <td>5</td>
+        <td>0</td>
+        <td>2</td>
+        <td>4</td>
+        <td>3</td>
+       </tr>
+       <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>9</td>
+        <td>4</td>
+        <td>7</td>
+        <td>6</td>
+        <td>0</td>
+        <td>3</td>
+        <td>5</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td>4</td>
+        <td>3</td>
+        <td>1</td>
+        <td>8</td>
+        <td>4</td>
+        <td>7</td>
+        <td>2</td>
+        <td>0</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>7</td>
+        <td>4</td>
+        <td>6</td>
+        <td>1</td>
+        <td>9</td>
+        <td>8</td>
+        <td>3</td>
+        <td>4</td>
+        <td>1</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td>0</td>
+        <td>1</td>
+        <td>7</td>
+        <td>8</td>
+        <td>6</td>
+        <td>9</td>
+        <td>0</td>
+        <td>3</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>8</td>
+        <td>4</td>
+        <td>5</td>
+        <td>2</td>
+        <td>4</td>
+        <td>9</td>
+        <td>6</td>
+        <td>1</td>
+        <td>7</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>7</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>4</td>
+        <td>1</td>
+        <td>5</td>
+        <td>6</td>
+        <td>0</td>
+       </tr>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
+   <section class="backmatter" id="errata">
+    <meta><title>Errata</title></meta>
+
+    <data>
+
+     <section class="backmatter" id="errintro">
+      <meta><title>Introduction</title></meta>
+      <data>
+       <p>We have taken our unique opportunity to correct errors and to enforce a standard of English usage. We list our changes here. If you see anything that needs correction, please <a href="&link.staff.contact;">contact</a> the Project Aon Staff.</p>
+      </data>
+     </section>
+
+     <section class="backmatter" id="errerr">
+      <meta><title>Errata</title></meta>
+
+      <data>
+       <p>(<a idref="gamerulz">The Game Rules</a>) Removed <quote>that you will find in the front of this book. For ease of use, and for further adventuring, it is recommended that you photocopy these pages</quote> and <quote>on the last page of this book</quote>. Replaced both occurrences of <quote>ie</quote> with <quote>i.e.</quote>. Replaced <quote>fall to zero</quote> with <quote>fall to zero or below</quote>. Replaced each occurrence of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Replaced <quote>fall to zero</quote> with <quote>fall to zero or below</quote>. Replaced <quote>on to</quote> with <quote>onto</quote>. Replaced <quote>weapons and</quote> with <quote>weapons, and</quote>.</p>
+
+       <p>(<a idref="discplnz">New Order Disciplines</a>) Replaced <quote>Weapon and</quote> with <quote>Weapon, and</quote>. Replaced <quote><typ class="attribute">COMBAT SKILL</typ> is reduced</quote> with <quote><typ class="attribute">ENDURANCE</typ> is reduced</quote>. Replaced <quote>Magi-Magic</quote> with <quote>Magi-magic</quote>.</p>
+
+       <p>(<a idref="equipmnt">Equipment</a>) Replaced each occurrence of <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Replaced <quote>eg,</quote> with <quote>e.g.</quote>. Replaced <quote>combat, therefore</quote> with <quote>combat; therefore</quote>. Replaced all occurrences of <quote>arrow</quote> with <quote>Arrow</quote>, all occurrences of <quote>bow</quote> with <quote>Bow</quote>, <quote>quiver</quote> with <quote>Quiver</quote>, and <quote>arrows</quote> with <quote>Arrows</quote>. Deleted <quote>(see the inside front cover of this book)</quote>. Added a paragraph about Gold Crowns to the section <quote>Equipment<ch.emdash/>How to use it</quote>. Replaced <quote>have to your</quote> with <quote>have on your</quote>.</p>
+
+       <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed <quote>on the inside back cover of this book</quote>. Replaced <quote>on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>. Replaced <quote>points reduced</quote> with <quote>points possibly reduced</quote>. Replaced <quote>to zero</quote> with <quote>to zero or below</quote>. Replaced <quote>at which point the one with the zero score is declared dead</quote> with <quote>at which point that combatant is declared dead</quote>. Replaced <quote>sumary</quote> with <quote>summary</quote>.</p>
+
+       <p>(<a idref="sect127">127</a>) Replaced <quote>battle cry</quote> with <quote>battle-cry</quote> in the illustration caption.</p>
+       <p>(<a idref="sect350">350</a>) Replaced <quote><cite>Cloud-Dancer</cite></quote> with <quote><cite>Cloud-dancer</cite></quote>.</p>
+
+       <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>Items or</quote> with <quote> Items, or</quote>, and <quote>falls to 0</quote> with <quote>falls to 0 or below</quote>, <quote>Pick number from</quote> with <quote>Pick a number from the</quote>, <quote>Turn to Combat</quote> with <quote>Turn to the Combat</quote>, <quote>to random number</quote> with <quote>to the random number</quote>, and <quote>when ENDURANCE</quote> with <quote>when the ENDURANCE</quote>.</p>
+      </data>
+     </section>
+    </data>
+   </section>
+
+   <section class="backmatter" id="footnotz">
+    <meta><title>Footnotes</title></meta>
+
+    <data/>
+
+   </section>
+
+   <section class="backmatter" id="illstrat">
+    <meta><title>Table of Illustrations</title></meta>
+
+    <data>
+     <p>The following is a list of all Sections containing illustrations found in this book:</p>
+
+     <section class="backmatter" id="primill">
+      <meta><title>Primary Illustrations</title></meta>
+
+      <data>
+       <ul class="unbulleted">
+        <li>Illustration I (<a idref="sect26">Section 26</a>)</li>
+        <li>Illustration II (<a idref="sect33">Section 33</a>)</li>
+        <li>Illustration III (<a idref="sect50">Section 50</a>)</li>
+        <li>Illustration IV (<a idref="sect74">Section 74</a>)</li>
+        <li>Illustration V (<a idref="sect86">Section 86</a>)</li>
+        <li>Illustration VI (<a idref="sect91">Section 91</a>)</li>
+        <li>Illustration VII (<a idref="sect109">Section 109</a>)</li>
+        <li>Illustration VIII (<a idref="sect127">Section 127</a>)</li>
+        <li>Illustration IX (<a idref="sect146">Section 146</a>)</li>
+        <li>Illustration X (<a idref="sect156">Section 156</a>)</li>
+        <li>Illustration XI (<a idref="sect190">Section 190</a>)</li>
+        <li>Illustration XII (<a idref="sect197">Section 197</a>)</li>
+        <li>Illustration XIII (<a idref="sect226">Section 226</a>)</li>
+        <li>Illustration XIV (<a idref="sect247">Section 247</a>)</li>
+        <li>Illustration XV (<a idref="sect261">Section 261</a>)</li>
+        <li>Illustration XVI (<a idref="sect283">Section 283</a>)</li>
+        <li>Illustration XVII (<a idref="sect300">Section 300</a>)</li>
+        <li>Illustration XVIII (<a idref="sect315">Section 315</a>)</li>
+        <li>Illustration XIX (<a idref="sect328">Section 333</a>)</li>
+        <li>Illustration XX (<a idref="sect341">Section 341</a>)</li>
+        <li><a idref="map">The Kingdom of Bor and Surrounding Territories</a></li>
+        <li><a idref="action">Action Chart</a></li>
+       </ul>
+      </data>
+     </section>
+
+     <section class="backmatter" id="secill">
+      <meta><title>Secondary Illustrations</title></meta>
+
+      <data>
+       <ul class="unbulleted">
+        <li><a idref="equipmnt">Equipment</a></li>
+        <li><a idref="discplnz">Grand Master Disciplines</a></li>
+        <li><a idref="sect1">Section 1</a></li>
+        <li><a idref="sect11">Section 11</a></li>
+        <li><a idref="sect35">Section 35</a></li>
+        <li><a idref="sect51">Section 51</a></li>
+        <li><a idref="sect131">Section 131</a></li>
+        <li><a idref="sect209">Section 209</a></li>
+        <li><a idref="sect217">Section 217</a></li>
+        <li><a idref="sect230">Section 230</a></li>
+        <li><a idref="sect283">Section 283</a></li>
+        <li><a idref="sect290">Section 290</a></li>
+        <li><a idref="sect318">Section 318</a></li>
+        <li><a idref="sect350">Section 350</a></li>
+       </ul>
+      </data>
+     </section>
+
+    </data>
+   </section>
+
+   &inclusion.project.aon.license;
 
   </data>
  </section>
