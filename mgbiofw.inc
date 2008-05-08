@@ -1,2 +1,1 @@
-<p><strong>Melvyn Grant</strong> is the illustrator of the first book in the Freeway Warrior series of gamebooks... TODO</p>
-<p>Melvyn maintains a <a href="&link.melvyn.grant.website;">website</a> showcasing his art.</p>
+<p><strong>Melvyn Grant</strong> was born in London, England, and expressed a talent for art from a very early age. He became the only student to attend The Brassey Institute School Of Fine Arts at the early age of twelve. Although his approach to painting is firmly rooted in traditional Fine Art, he finds much more excitement world in High-end Fantasy Illustration. Melvyn maintains a <a href="&link.melvyn.grant.website;">website</a> showcasing his art.
