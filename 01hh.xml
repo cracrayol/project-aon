@@ -1678,11 +1678,17 @@
     <section class="numbered" id="sect90">
      <meta><title>90</title></meta>
 
+     <footnotes>
+      <footnote id="sect90-1-foot" idref="sect90-1">
+       <p>If you have no Medi-kit units, ignore the passage that describes giving dressings to the Rad-vics.</p>
+      </footnote>
+     </footnotes>
+
      <data>
       <p>Slowly the two figures shamble to the edge of the highway and stare at you with vacant eyes. Your spirited dispatch of their dogs has not worried them in the <!--ERRTAG-RE-141322-->slightest; neither<!--/ERRTAG-RE-141322--> do they appear unduly concerned for their own safety. You stand your ground, challenging them to attack if they dare. They laugh. It is a pitiful, thin sound, which makes your flesh crawl. You return their empty stares, noting with disgust the ulcer-like sores that cover their pale, greyish skins, their almost complete lack of hair and their teeth, black with decay. Your disgust turns to pity, however, when suddenly you realize why they show no fear: they are both afflicted with terminal radiation sickness. Death is already their companion.</p>
       <p><quote>Where are you from?</quote> you call, anxious to discover if there is a hot spot<ch.emdash/>a zone of radioactivity<ch.emdash/>nearby.</p>
       <p><quote>Cisco,</quote> comes the reply.</p>
-      <p>You take some dressings from your Medi-kit and place them on the ground in front of you (erase one Medi-kit unit from your <a idref="action">Action Chart</a>), then you turn and walk back to your roadster. The dressings may be of little comfort to these two Rad-vics (the name your colony gives to victims of high-dosage radioactivity), but they may know others who will benefit from them.</p>
+      <p>You take some dressings from your Medi-kit and place them on the ground in front of you (erase one Medi-kit unit from your <a idref="action">Action Chart</a>), then you turn and walk back to your roadster. The dressings may be of little comfort to these two Rad-vics (the name your colony gives to victims of high-dosage radioactivity), but they may know others who will benefit from them.<footref id="sect90-1" idref="sect90-1-foot"/></p>
       <choice idref="sect327"><link-text>Turn to 327</link-text>.</choice>
      </data>
     </section>
@@ -2215,7 +2221,7 @@
 
       <p>Pick a number from the <a idref="random">Random Number Table</a> and add to it your current Shooting skill level. Now decide how many bursts of fire you intend to launch at the target (minimum: one burst; maximum: five bursts ). For every burst, add one point to your current score.</p>
       <choice idref="sect164">If your total score is now 11 or less, <link-text>turn to 164</link-text>.</choice>
-      <choice idref="sect58">If it is 12, <link-text>turn to 58</link-text>.</choice>
+      <choice idref="sect58"><!--ERRTAG-RE-192634-->If it is 12 or more<!--/ERRTAG-RE-192634-->, <link-text>turn to 58</link-text>.</choice>
      </data>
     </section>
 
@@ -3321,6 +3327,12 @@
     <section class="numbered" id="sect208">
      <meta><title>208</title></meta>
 
+     <footnotes>
+      <footnote id="sect208-1-foot" idref="sect208-1">
+       <p>Add the Shotgun to your <a idref="action">Action Chart</a>.</p>
+      </footnote>
+     </footnotes>
+
      <data>
       <p><quote>Here Cal, take this,</quote> says Uncle Jonas, offering you his sawn-off shotgun. <quote>When you git in close you won<ch.apos/>t need to be too fussy where you point this beauty.</quote></p>
 
@@ -3333,7 +3345,7 @@
        <instance class="pdf" src="small3.pdf" width="386" height="150"/>
       </illustration>
 
-      <p>You take the gun and check that both barrels are loaded. <quote>I<ch.apos/>ll go left,</quote> whispers Cutter.</p>
+      <p>You take the gun and check that both barrels are loaded.<footref id="sect208-1" idref="sect208-1-foot"/> <quote>I<ch.apos/>ll go left,</quote> whispers Cutter.</p>
       <p><quote>Whenever you<ch.apos/>re ready,</quote> you reply, tensing your body in preparation for the run.</p>
       <choice idref="sect177"><link-text>Turn to 177</link-text>.</choice>
      </data>
@@ -5611,7 +5623,7 @@
       <p>(<a idref="sect119">119</a>) Replaced <quote>Water Canteen, containing</quote> with <quote>Water Canteen containing</quote> and <quote>sulphonamides</quote> with <quote>sulfonamides</quote>.</p>
       <p>(<a idref="sect122">122</a>) Replaced <quote>gutteral</quote> with <quote>guttural</quote>.</p>
       <p>(<a idref="sect127">127</a>) Replaced <quote>on to</quote> with <quote>onto</quote>. Replaced <quote>axle and</quote> with <quote>axle, and</quote>.</p>
-      <p>(<a idref="sect131">131</a>) Replaced <quote>(minimum<ch.emdash/>one round; maximum<ch.emdash/>five rounds)</quote> with <quote>(minimum: one burst; maximum: five bursts)</quote></p>
+      <p>(<a idref="sect131">131</a>) Replaced <quote>(minimum<ch.emdash/>one round; maximum<ch.emdash/>five rounds)</quote> with <quote>(minimum: one burst; maximum: five bursts)</quote><!--ERRTAG-RE-192634-ITEM--> Replaced <quote>If it is 12</quote> with <quote>If it is 12 or more</quote>.<!--/ERRTAG-RE-192634-ITEM--></p>
       <p>(<a idref="sect132">132</a>) Replaced <quote>machine-gunner</quote> with <quote>machine gunner</quote>. Replaced <quote>aim and</quote> with <quote>aim, and</quote>.</p>
       <p>(<a idref="sect133">133</a>) Replaced <quote>feet first</quote> with <quote>feet-first</quote>.</p>
       <p>(<a idref="sect136">136</a>) Replaced <quote>north-west</quote> with <quote>northwest</quote>.<!--ERRTAG-RE-197220-ITEM--> Replaced <quote>screams of their chief dispels</quote> with <quote>screams of their chief dispel</quote>.<!--/ERRTAG-RE-197220-ITEM--></p>
