@@ -13,6 +13,8 @@
 
 <meta>
  <title>Flight from the Dark</title>
+ <creator class="author" sort-name="Dever, Joe">Joe Dever</creator>
+ <creator class="illustrator" sort-name="Chalk, Gary">Gary Chalk</creator>
  <creator class="short">Joe Dever and Gary Chalk</creator>
  <creator class="medium">
   <line>Joe Dever</line>
@@ -23,12 +25,10 @@
    &inclusion.gary.chalk.bio.lw;
  </creator>
  <publisher>Project Aon</publisher>
- <date class="publication"><year>2010</year><month>3</month><day>6</day></date>
+ <date class="publication"><year>2012</year><month>3</month><day>10</day></date>
  <description class="blurb">
  <p>You are Lone Wolf. In a devastating attack the Darklords have destroyed the monastery where you were learning the skills of the Kai Lords. You are the sole survivor.</p>
  <p>In <strong><cite>Flight from the Dark</cite></strong>, you swear revenge. But first you must reach Holmgard to warn the King of the gathering evil. Relentlessly the servants of darkness hunt you across your country and every turn of the page presents a new challenge. Choose your skills and your weapons carefully<ch.emdash/>for they can help you succeed in the most fantastic and terrifying journey of your life.</p>
-<!-- The US Blurb
- <p>You are the sole survivor of a devastating attack on the monastery where you were learning the skills of the Kai Lords. You swear vengeance on the Darklords for the massacre of the Kai warriors, and with a sudden flash of insight you know what you must do. You must set off on a perilous journey to the capital city to warn the King of the terrible threat that faces his people: For you are now the last of the Kai<ch.emdash/>you are now <strong>Lone Wolf</strong>.</p> -->
  </description>
  <description class="publication">
   <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
@@ -97,6 +97,7 @@
          <line>Jonathan Blake</line>
          <line>Paul Haskell</line>
          <line>Simon Osborne</line>
+         <line>Daniel Strong</line>
         </dd>
        <dt>XML</dt>
         <dd>
@@ -105,9 +106,9 @@
         </dd>
        <dt>Alternate Illustrations</dt>
         <dd>
-         <line>JC Alvarez (text illustrations and action charts)</line>
-         <line>Jonathan Blake (extramatter charts and tables)</line>
-         <line>Michael Hahn (map)</line>
+         <line>JC Alvarez (Text Illustrations and Action Charts)</line>
+         <line>Jonathan Blake (Extramatter Charts and Tables)</line>
+         <line>Michael Hahn (Map)</line>
         </dd>
        <dt>Proofreading</dt>
         <dd>
@@ -115,7 +116,7 @@
          <line>Christian Leonhard (Sections 106<ch.endash/>140 and 211<ch.endash/>245)</line>
          <line>Brad Phelps (Sections 176<ch.endash/>210)</line>
          <line>Michael Richey (Sections 1<ch.endash/>35 and 316<ch.endash/>350)</line>
-         <line>Tyson Torres (Sections 71<ch.endash/>105, 141<ch.endash/>175 and 246<ch.endash/>280)</line>
+         <line>Tyson Torres (Sections 71<ch.endash/>105, 141<ch.endash/>175, and 246<ch.endash/>280)</line>
         </dd>
        <dt>Editing</dt>
         <dd>
@@ -124,6 +125,7 @@
          <line>Mark Laird</line>
          <line>Simon Osborne</line>
          <line>Thomas Wolmer</line>
+         <line>Timothy Pederick</line>
         </dd>
        <dt>PDF Layout</dt>
         <dd>Ingo Kl<ch.ouml/>cker</dd>
@@ -131,7 +133,7 @@
         <dd>Jonathan Blake</dd>
        <dt>Special Thanks</dt>
         <dd>
-         <line>Pedro Almeida, Jan Charv<ch.aacute/>t, Christian Cognigni, Tony Lenzo, Dewi Morgan, Timothy Pederick, Laurence O<ch.apos/>Toole</line>
+         <line>Pedro Almeida, Jan Charv<ch.aacute/>t, Christian Cognigni, Tony Lenzo, Dewi Morgan, Laurence O<ch.apos/>Toole, Timothy Pederick</line>
         </dd>
       </dl>
      </data>
@@ -177,7 +179,7 @@
     <p>During your training as a Kai Lord you have developed fighting prowess<ch.emdash/><typ class="attribute">COMBAT SKILL</typ> and physical stamina<ch.emdash/><typ class="attribute">ENDURANCE</typ>. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it onto the <a idref="random">Random Number Table</a>. If you pick 0 it counts as zero.</p>
     <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 10 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a> (i.e. if your pencil fell on the number 4 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> of 14). When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore very desirable.</p>
     <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 20 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a> (i.e. if your pencil fell on the number 6 on the <a idref="random">Random Number Table</a> you would have 26 <typ class="attribute">ENDURANCE</typ> points).</p>
-    <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points <!--ERRTAG-RE-12598-->fall to zero or below<!--/ERRTAG-RE-12598-->, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never go above the number with which you start your adventure.</p>
+    <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero or below, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points can never go above the number with which you start your adventure.</p>
 
     <section class="frontmatter-separate" id="discplnz">
      <meta>
@@ -240,7 +242,7 @@
 
        <data>
         <p>Upon entering the Kai Monastery, each initiate is taught to master one type of weapon. If Weaponskill is to be one of your Kai Disciplines, pick a number in the usual way from the <a idref="random">Random Number Table</a>, and then find the corresponding weapon from the list below. This is the weapon in which you have skill. When you enter combat carrying this weapon, you add 2 points to your <typ class="attribute">COMBAT SKILL</typ>.</p>
-        <p>The fact that you are skilled with a weapon does not mean you set out on the adventure carrying that particular weapon. However, you will have opportunities to acquire weapons in the course of your adventures. If you pick the axe, you are lucky enough to be skilled in the one weapon Lone Wolf is carrying from the start of the adventure. (Explained fully in the <a idref="equipmnt">Equipment section</a>.)</p>
+        <p>The fact that you are skilled with a weapon does not mean you set out on the adventure carrying that particular weapon. However, you will have opportunities to acquire weapons in the course of your adventures. If you pick the axe, you are lucky enough to be skilled in the one weapon Lone Wolf is carrying from the start of the adventure. (This will be explained fully in the <a idref="equipmnt">Equipment section</a>.)</p>
         <illustration class="inline">
          <meta>
           <creator>Gary Chalk</creator>
@@ -303,7 +305,7 @@
        </data>
       </section>
 
-      <p>If you successfully complete the mission as set in Book 1 of Lone Wolf, you may add a further Kai Discipline of your choice to your <a idref="action">Action Chart</a> in <bookref series="lw" book="02fotw">Book 2</bookref>. This additional skill, together with your five other skills and any Special Items that you have picked up in Book 1, may then be used in the next adventure of the <cite>Lone Wolf</cite> series which is called <cite><bookref series="lw" book="02fotw">Fire on the Water</bookref></cite>.</p>
+      <p>If you successfully complete the mission as set in Book 1 of <cite>Lone Wolf</cite>, you may add a further Kai Discipline of your choice to your <a idref="action">Action Chart</a> in <bookref series="lw" book="02fotw">Book 2</bookref>. This additional skill, together with your five other skills and any Special Items that you have picked up in Book 1, may then be used in the next adventure of the <cite>Lone Wolf</cite> series which is called <cite><bookref series="lw" book="02fotw">Fire on the Water</bookref></cite>.</p>
      </data>
     </section>
 
@@ -313,12 +315,6 @@
       <link class="prev" idref="discplnz" />
       <link class="next" idref="cmbtrulz" />
      </meta>
-
-     <footnotes>
-      <footnote id="equipmnt-1-foot" idref="equipmnt-1">
-       <p>The new Mongoose Publishing editions of the gamebooks clarify that <quote>You may only use one Weapon at a time in combat.</quote></p>
-      </footnote>
-     </footnotes>
 
      <data>
       <p>You are dressed in the green tunic and cloak of a Kai initiate. You have little with you to arm yourself for survival.</p>
@@ -333,7 +329,7 @@
          </meta>
          <instance class="html" src="sword.png" width="386" height="120"  mime-type="image/png"/>
          <instance class="html-compatible" src="sword.gif" width="386" height="120"  mime-type="image/gif"/>
-         <instance class="pdf" src="sword.pdf" width="386" height="150" />
+         <instance class="pdf" src="sword.pdf" originalwidth="54mm" />
         </illustration>
        </li>
        <li>
@@ -344,7 +340,7 @@
          </meta>
          <instance class="html" src="helmet.png" width="386" height="150"  mime-type="image/png"/>
          <instance class="html-compatible" src="helmet.gif" width="386" height="150"  mime-type="image/gif"/>
-         <instance class="pdf" src="helmet.pdf" width="386" height="150" />
+         <instance class="pdf" src="helmet.pdf" originalwidth="18mm" />
         </illustration>
        </li>
        <li>
@@ -355,7 +351,7 @@
          </meta>
          <instance class="html" src="food.png" width="386" height="150"  mime-type="image/png"/>
          <instance class="html-compatible" src="food.gif" width="386" height="150"  mime-type="image/gif"/>
-         <instance class="pdf" src="food.pdf" width="386" height="150" />
+         <instance class="pdf" src="food.pdf" originalwidth="40mm" />
         </illustration>
        </li>
        <li>
@@ -366,7 +362,7 @@
          </meta>
          <instance class="html" src="mail.png" width="386" height="150"  mime-type="image/png"/>
          <instance class="html-compatible" src="mail.gif" width="386" height="150"  mime-type="image/gif"/>
-         <instance class="pdf" src="mail.pdf" width="386" height="150" />
+         <instance class="pdf" src="mail.pdf" originalwidth="24mm" />
         </illustration>
        </li>
        <li>
@@ -377,18 +373,18 @@
          </meta>
          <instance class="html" src="mace.png" width="386" height="150"  mime-type="image/png"/>
          <instance class="html-compatible" src="mace.gif" width="386" height="150"  mime-type="image/gif"/>
-         <instance class="pdf" src="mace.pdf" width="386" height="150" />
+         <instance class="pdf" src="mace.pdf" originalwidth="31mm" />
         </illustration>
        </li>
        <li>
-        <p>6 = Healing Potion (Backpack Item). This can restore 4 <typ class="attribute">ENDURANCE</typ> points to your total, when swallowed after combat You only have enough for one dose.</p>
+        <p>6 = Healing Potion (Backpack Item). This can restore 4 <typ class="attribute">ENDURANCE</typ> points to your total, when swallowed after combat. You only have enough for one dose.</p>
         <illustration class="inline">
          <meta>
           <creator>Gary Chalk</creator>
          </meta>
          <instance class="html" src="potion.png" width="386" height="150"  mime-type="image/png"/>
          <instance class="html-compatible" src="potion.gif" width="386" height="150"  mime-type="image/gif"/>
-         <instance class="pdf" src="potion.pdf" width="386" height="150" />
+         <instance class="pdf" src="potion.pdf" originalwidth="19mm" />
         </illustration>
        </li>
        <li><p>7 = Quarterstaff (Weapons)</p>
@@ -398,7 +394,7 @@
          </meta>
          <instance class="html" src="qstaff.png" width="386" height="79"  mime-type="image/png"/>
          <instance class="html-compatible" src="qstaff.gif" width="386" height="79"  mime-type="image/gif"/>
-         <instance class="pdf" src="qstaff.pdf" width="386" height="150" />
+         <instance class="pdf" src="qstaff.pdf" originalwidth="87mm" />
         </illustration>
        </li>
        <li><p>8 = Spear (Weapons)</p>
@@ -408,7 +404,7 @@
          </meta>
          <instance class="html" src="spear.png" width="386" height="87"  mime-type="image/png"/>
          <instance class="html-compatible" src="spear.gif" width="386" height="87"  mime-type="image/gif"/>
-         <instance class="pdf" src="spear.pdf" width="386" height="150" />
+         <instance class="pdf" src="spear.pdf" originalwidth="78mm" />
         </illustration>
        </li>
        <li>
@@ -419,7 +415,7 @@
          </meta>
          <instance class="html" src="pouch.png" width="386" height="150"  mime-type="image/png"/>
          <instance class="html-compatible" src="pouch.gif" width="386" height="150"  mime-type="image/gif"/>
-         <instance class="pdf" src="pouch.pdf" width="386" height="150" />
+         <instance class="pdf" src="pouch.pdf" originalwidth="28mm" />
         </illustration>
        </li>
        <li><p>0 = Broadsword (Weapons)</p>
@@ -429,7 +425,7 @@
          </meta>
          <instance class="html" src="bsword.png" width="386" height="102"  mime-type="image/png"/>
          <instance class="html-compatible" src="bsword.gif" width="386" height="102"  mime-type="image/gif"/>
-         <instance class="pdf" src="bsword.pdf" width="386" height="150" />
+         <instance class="pdf" src="bsword.pdf" originalwidth="66mm" />
         </illustration>
        </li>
       </ul>
@@ -481,7 +477,7 @@
        <data>
         <dl>
          <dt>Weapons</dt>
-          <dd>Weapons aid you in combat. If you have the Kai Discipline of Weaponskill and the correct weapon, it adds 2 points to your <typ class="attribute">COMBAT SKILL</typ>. If you enter a combat with no weapons, deduct 4 points from your <typ class="attribute">COMBAT SKILL</typ> and fight with your bare hands. If you find a weapon during the adventure, you may pick it up and use it. (Remember you can only carry two Weapons at once.)<footref id="equipmnt-1" idref="equipmnt-1-foot"/></dd>
+          <dd>Weapons aid you in combat. If you have the Kai Discipline of Weaponskill and the correct weapon, it adds 2 points to your <typ class="attribute">COMBAT SKILL</typ>. If you enter a combat with no weapons, deduct 4 points from your <typ class="attribute">COMBAT SKILL</typ> and fight with your bare hands. If you find a weapon during the adventure, you may pick it up and use it. (Remember you can only carry two Weapons at once.) You may only use one Weapon at a time in combat.</dd>
          <dt>Backpack Items</dt>
           <dd>During your travels you will discover various useful items which you may wish to keep. (Remember you can only carry eight items in your Backpack at once.) You may exchange or discard them at any point when you are not involved in combat.</dd>
          <dt>Special Items</dt>
@@ -565,7 +561,7 @@
        <li>Savant</li>
        <li>Master</li>
       </ol>
-      <p>Beyond the ten basic skills of the Kai Master await the secrets of the higher Kai Disciplines or <quote>Magnakai</quote>. By acquiring the wisdom of the Magnakai, a Kai Lord  can progress towards the ultimate achievement and become a Kai Grand Master.</p>
+      <p>Beyond the ten basic skills of the Kai Master await the secrets of the higher Kai Disciplines or <quote>Magnakai</quote>. By acquiring the wisdom of the Magnakai, a Kai Lord can progress towards the ultimate achievement and become a Kai Grand Master.</p>
      </data>
     </section>
    </data>
@@ -746,8 +742,8 @@
      <data>
       <p>The bodyguard looks at you with great suspicion and then slams the door shut. You can hear the sound of voices inside the caravan. Suddenly the door swings open and the face of a wealthy merchant appears.</p>
       <p>He demands 10 Gold Crowns as payment for the ride.</p>
-      <choice idref="sect262">If you have 10 Gold Crowns, and wish to pay him, <link-text>turn to 262</link-text>.</choice>
-      <choice idref="sect247">If you do not have enough Gold Crowns, or do not wish to pay him, <link-text>turn to 247</link-text>.</choice>
+      <choice idref="sect262">If you have 10 Gold Crowns and wish to pay him, <link-text>turn to 262</link-text>.</choice>
+      <choice idref="sect247">If you do not have enough Gold Crowns or do not wish to pay him, <link-text>turn to 247</link-text>.</choice>
      </data>
     </section>
 
@@ -799,7 +795,7 @@
      <data>
       <p>You manage to free a horse from the straps securing it to the caravan. It is frightened by the scent of the approaching Doomwolves, and the cries of their evil riders<ch.emdash/>the Giaks.</p>
       <p>Preparing your weapon, you spur your skittish horse towards the oncoming beasts. They are less than fifty yards away and they are lowering their lances at you as they get nearer and nearer.</p>
-      <choice idref="sect192">You are charging head-on towards each other.  <link-text>Turn to 192</link-text>.</choice>
+      <choice idref="sect192">You are charging head-on towards each other. <link-text>Turn to 192</link-text>.</choice>
      </data>
     </section>
 
@@ -909,7 +905,7 @@
        <instance class="pdf" src="ill2.pdf" width="386" height="714" />
       </illustration>
       <p>Anxious to leave this evil tomb, you examine the door for a latch. An ornate pin appears to lock the door, but there is also a keyhole in the lockplate.</p>
-      <choice idref="sect326">If you have a Golden Key, and wish to use it, <link-text>turn to 326</link-text>.</choice>
+      <choice idref="sect326">If you have a Golden Key and wish to use it, <link-text>turn to 326</link-text>.</choice>
       <choice idref="sect151">If you have the Kai Discipline of Mind Over Matter, <link-text>turn to 151</link-text>.</choice>
       <choice idref="sect337">If you wish to remove the pin, <link-text>turn to 337</link-text>.</choice>
      </data>
@@ -1332,7 +1328,7 @@
      <meta><title>57</title></meta>
 
      <data>
-      <p>The cabin has only one room. In it you see a wooden table and two benches, a large bed made of straw bales lashed together, several bottles of coloured liquids and an embroidered rug in the centre of the floor.</p>
+      <p>The cabin has only one room. In it you see a wooden table and two benches, a large bed made of straw bales lashed together, several bottles of coloured liquids, and an embroidered rug in the centre of the floor.</p>
       <illustration class="inline">
        <meta>
         <creator>Gary Chalk</creator>
@@ -1383,7 +1379,7 @@
      <meta><title>61</title></meta>
 
      <data>
-      <p>At last you can reach the wooden fieldworks surrounding the outer city. As you race towards a sentry post, you can hear the excited shouts of the guards cheering you on. Thank the gods that they recognize you, for you must appear a ragged and suspicious figure. Your cloak is torn and hangs in tatters, your face is scratched and blood-smeared and the dust of the Graveyard covers you from head to toe.</p>
+      <p>At last you can reach the wooden fieldworks surrounding the outer city. As you race towards a sentry post, you can hear the excited shouts of the guards cheering you on. Thank the gods that they recognize you, for you must appear a ragged and suspicious figure. Your cloak is torn and hangs in tatters, your face is scratched and blood-smeared, and the dust of the Graveyard covers you from head to toe.</p>
       <p>Splashing through a shallow stream, you stagger towards the gate. The full horror of the Graveyard encounter begins to catch up with you. The last thing you recall before exhaustion robs you of consciousness, is falling into the outstretched arms of two soldiers who have run from the fieldworks to help you.</p>
       <choice idref="sect268"><link-text>Turn to 268</link-text>.</choice>
      </data>
@@ -1395,7 +1391,7 @@
      <data>
       <p>The <quote>soldiers</quote> lie dead at your feet. They were bandits who were stealing from the refugees of Toran, and from the abandoned houses and farms in the area.</p>
       <p>Searching their bodies you find 28 Gold Crowns and two Backpacks containing enough food for 3 Meals. They had been armed with a crossbow and three Swords. The crossbow has been damaged in the fight, but the Swords are untouched and you may keep one if you wish.</p>
-      <p>You adjust your equipment, give a cautious glance towards the west and continue your run towards the outer defences of the capital.</p>
+      <p>You adjust your equipment, give a cautious glance towards the west, and continue your run towards the outer defences of the capital.</p>
       <choice idref="sect288"><link-text>Turn to 288</link-text>.</choice>
      </data>
     </section>
@@ -1532,7 +1528,7 @@
 
      <data>
       <p>Pulling your green cloak about you, you blend into the foliage and rocks. Peering carefully up at the track, you are shocked to see that they are not the King<ch.apos/>s men at all.</p>
-      <p>They are Drakkarim, some of the Darklords cruellest troops. They must have disguised themselves as soldiers of the King in order to get this far into the forest. Thanking your Kai training for saving your life, you silently slip away from the stream and push on into the forest.</p>
+      <p>They are Drakkarim, some of the Darklords<ch.apos/> cruellest troops. They must have disguised themselves as soldiers of the King in order to get this far into the forest. Thanking your Kai training for saving your life, you silently slip away from the stream and push on into the forest.</p>
       <choice idref="sect243"><link-text>Turn to 243</link-text>.</choice>
      </data>
     </section>
@@ -1560,7 +1556,7 @@
      <meta><title>75</title></meta>
 
      <data>
-      <p>Peering out carefully, you can see three green-clad men on horses racing along the bank. You recognize them as <!--ERRTAG-RE-93708-->Border Rangers<!--/ERRTAG-RE-93708-->, the regiment of the King<ch.apos/>s Army that police the western borders. One of them is wounded and is slumped over the neck of his horse.</p>
+      <p>Peering out carefully, you can see three green-clad men on horses racing along the bank. You recognize them as Border Rangers, the regiment of the King<ch.apos/>s Army that police the western borders. One of them is wounded and is slumped over the neck of his horse.</p>
       <p>Close behind follow a pack of twenty Doomwolves. Their Giak riders are firing arrows at the rangers which fall all around them. One ranger drops from his horse and rolls down the river bank, a black arrow deeply embedded in his right leg.</p>
       <choice idref="sect260">If you wish to help the ranger, <link-text>turn to 260</link-text>.</choice>
       <choice idref="sect163">If you wish to stay hidden and drift downstream, <link-text>turn to 163</link-text>.</choice>
@@ -1570,14 +1566,8 @@
     <section class="numbered" id="sect76">
      <meta><title>76</title></meta>
 
-     <footnotes>
-      <footnote id="sect76-1-foot" idref="sect76-1">
-       <p>Record this item as a Vordak Gem. Though the text says you originally keep it in your jacket pocket, this is a temporary place to keep it before stowing it in your Backpack. It is not a Special Item (cf. <a idref="sect304">Section 304</a>).</p>
-      </footnote>
-     </footnotes>
-
      <data>
-      <p>The Gem feels very hot and burns your hand. Lose 2 <typ class="attribute">ENDURANCE</typ> points. You quickly grab it with the edge of your cloak and slip it into the pocket of your jacket.<footref id="sect76-1" idref="sect76-1-foot"/> A Gem that size must be worth hundreds of Crowns! You smile at your good fortune, mount your horse and ride off along the south track.</p>
+      <p>The Gem feels very hot and burns your hand. Lose 2 <typ class="attribute">ENDURANCE</typ> points. You quickly grab it with the edge of your cloak and slip this Vordak Gem into your Backpack. A Gem that size must be worth hundreds of Crowns! You smile at your good fortune, mount your horse, and ride off along the south track.</p>
       <illustration class="inline">
        <meta>
         <creator>Gary Chalk</creator>
@@ -1670,7 +1660,7 @@
        <instance class="html-compatible" src="82.gif" width="288" height="288"  mime-type="image/gif"/>
        <instance class="pdf" src="82.pdf" width="288" height="288" />
       </illustration>
-      <p>You bid a sad farewell to the Prince, mount his white steed and head south along the forest path. The battle still rages behind you as the Prince<ch.apos/>s men fight off another assault on the bridge.</p>
+      <p>You bid a sad farewell to the Prince, mount his white steed, and head south along the forest path. The battle still rages behind you as the Prince<ch.apos/>s men fight off another assault on the bridge.</p>
       <choice idref="sect235"><link-text>Turn to 235</link-text>.</choice>
      </data>
     </section>
@@ -1737,7 +1727,7 @@
      <data>
       <p>You cautiously peer around the rock to see a soldier lying on his back. By his side is a Spear and shield. On the shield is the painting of a white pegasus<ch.emdash/>the Prince of Sommerlund<ch.apos/>s emblem. He is one of the Prince<ch.apos/>s soldiers, and he is only just conscious. His uniform is badly torn, and you can see that he has a deep wound in his left arm. As you move nearer, his eyes flicker open. <quote>Heal me, my Lord,</quote> he begs. <quote>I can barely feel my arm.</quote></p>
       <choice idref="sect216">If you possess and wish to use the Kai Discipline of Healing on this man, <link-text>turn to 216</link-text>.</choice>
-      <choice idref="sect31">If you do not possess the skill, or do not want to use it, then <link-text>turn to 31</link-text>.</choice>
+      <choice idref="sect31">If you do not possess the skill, or if you do not want to use it, then <link-text>turn to 31</link-text>.</choice>
      </data>
     </section>
 
@@ -1968,7 +1958,7 @@
        <instance class="pdf" src="small8.pdf" width="386" height="150" />
       </illustration>
       <choice idref="sect298">If you have the Kai Discipline of Animal Kinship, you may call to this bird by <link-text>turning to 298</link-text>.</choice>
-      <choice idref="sect335">If you do not possess this skill, or do not wish to use it, <link-text>turn to 335</link-text>.</choice>
+      <choice idref="sect335">If you do not possess this skill, or if you do not wish to use it, <link-text>turn to 335</link-text>.</choice>
      </data>
     </section>
 
@@ -2147,7 +2137,7 @@
 
      <data>
       <p>Behind you can hear the blood-crazy Giaks killing the caravan horses. You risk a quick glance over your shoulder and see a Kraan start to climb high into the air. Will it attack you or is it interested in something else? The dark shadow that is gradually getting larger all around you tells you that you are its intended victim. The Kraan is diving full speed at you!</p>
-      <choice idref="sect84">If you wait until it is about to strike, and then jump from the saddle, <link-text>turn to 84</link-text>.</choice>
+      <choice idref="sect84">If you wait until it is about to strike and then jump from the saddle, <link-text>turn to 84</link-text>.</choice>
       <choice idref="sect171">If you head as fast as you can for the trees, <link-text>turn to 171</link-text>.</choice>
       <choice idref="sect54">If you put your head down, pray to the heavens for good luck and gallop on regardless, <link-text>turn to 54</link-text>.</choice>
      </data>
@@ -2249,7 +2239,7 @@
      <meta><title>128</title></meta>
 
      <data>
-      <p>Carefully parting the dense foliage, you are horrified by the sight that meets you. In a small clearing ahead, three Giaks have tied a man to a wooden stake and are setting fire to a mass of brushwood bundled at his feet. You recognize his tunic as that of a <!--ERRTAG-RE-134226-->Border Ranger<!--/ERRTAG-RE-134226-->, one of the King<ch.apos/>s men who police the kingdom near the Durncrag Mountains of the west. He has been badly beaten and is nearly unconscious.</p>
+      <p>Carefully parting the dense foliage, you are horrified by the sight that meets you. In a small clearing ahead, three Giaks have tied a man to a wooden stake and are setting fire to a mass of brushwood bundled at his feet. You recognize his tunic as that of a Border Ranger, one of the King<ch.apos/>s men who police the kingdom near the Durncrag Mountains of the west. He has been badly beaten and is nearly unconscious.</p>
       <choice idref="sect297">If you have the Kai Discipline of Hunting, <link-text>turn to 297</link-text>.</choice>
       <choice idref="sect336">If you do not, you must attack the Giaks now in order to save the ranger<ch.apos/>s life. <link-text>Turn to 336</link-text>.</choice>
      </data>
@@ -2289,7 +2279,7 @@
      <data>
       <p>You have covered about a quarter of a mile when you hear shouting and a noise like thunderclaps ahead. Edging nearer, you soon make out a clearing that you recognize to be the site of the ruins of Raumas, an ancient forest temple.</p>
       <p>A war party of Giaks, some twenty-five to thirty strong, are attacking the ruins from all sides. Many more of the Giaks are dead or dying among the broken pillars of marble, but still they assault whatever is hidden inside. Suddenly, a bolt of blue lightning rips through the front rank of Giaks sending the armour-clad creatures tumbling in all directions. A Giak, taller than the others and dressed from head to foot in black chainmail, curses at his troops as he whips them forward with a barbed flail.</p>
-      <p>With weapon ready, you move to the edge of the clearing, under cover of the thick foliage, and try to catch a glimpse of the defenders. To your amazement, the ruins are being defended by a young man no older than yourself. You recognize his sky-blue robes, embroidered with stars. He is a young theurgist of the <!--ERRTAG-RE-137630-->Magicians<ch.apos/> Guild of Toran<!--/ERRTAG-RE-137630-->: an apprentice in magic.</p>
+      <p>With weapon ready, you move to the edge of the clearing, under cover of the thick foliage, and try to catch a glimpse of the defenders. To your amazement, the ruins are being defended by a young man no older than yourself. You recognize his sky-blue robes, embroidered with stars. He is a young theurgist of the Magicians<ch.apos/> Guild of Toran: an apprentice in magic.</p>
       <illustration class="float">
        <meta>
         <creator>JC Alvarez</creator>
@@ -2313,7 +2303,7 @@
       <choice idref="sect241">If you wish to shout a warning to the wizard, <link-text>turn to 241</link-text>.</choice>
       <choice idref="sect55">If you wish to run forward and attack the Giak when he jumps, <link-text>turn to 55</link-text>.</choice>
       <choice idref="sect302">If you wish to pick up a chunk of temple marble and throw it at the Giak<ch.apos/>s head, <link-text>turn to 302</link-text>.</choice>
-      <choice idref="sect101">Or if you would rather turn and leave the battle area, and run back into the woods, <link-text>turn to 101</link-text>.</choice>
+      <choice idref="sect101">Or if you would rather turn and leave the battle area and run back into the woods, <link-text>turn to 101</link-text>.</choice>
      </data>
     </section>
 
@@ -2382,14 +2372,8 @@
     <section class="numbered" id="sect137">
      <meta><title>137</title></meta>
 
-     <footnotes>
-      <footnote id="sect137-1-foot" idref="sect137-1">
-       <p>Count the 20 Gems as one Special Item.</p>
-      </footnote>
-     </footnotes>
-
      <data>
-      <p>As the last of the foul creatures die, so the greenish light starts to fade. You notice that in each of the broken skulls lies a Gem. You take these 20 Gems<footref id="sect137-1" idref="sect137-1-foot"/> before darkness engulfs the chamber. Remember to mark these on your <a idref="action">Action Chart</a>.</p>
+      <p>As the last of the foul creatures die, so the greenish light starts to fade. You notice that in each of the broken skulls lies a Gem. You take these 20 Tomb Guardian Gems before darkness engulfs the chamber. Remember to mark these on your <a idref="action">Action Chart</a> as a single Backpack Item.</p>
       <p>You quickly leave the dead Crypt spawn and press on.</p>
       <choice idref="sect23"><link-text>Turn to 23</link-text>.</choice>
      </data>
@@ -2480,7 +2464,7 @@
 
      <data>
       <p>You fight your way through the press of bodies along the main street towards the citadel in the distance. City folk are rushing to and fro in the grip of panic, as the cries of Kraan are heard circling high above.</p>
-      <p>In the crush, <!--ERRTAG-RE-149741-->one item is stolen<!--/ERRTAG-RE-149741--> from your Backpack. If you no longer have a Backpack or if you have no Backpack Items, you lose a Weapon. Remember to take this off your <a idref="action">Action Chart</a>.</p>
+      <p>In the crush, one item is stolen from your Backpack. If you no longer have a Backpack or if you have no Backpack Items, you lose a Weapon. Remember to take this off your <a idref="action">Action Chart</a>.</p>
       <p>A runaway horse and cart career past and knock you into a doorway. You are stunned and you lose 2 <typ class="attribute">ENDURANCE</typ> points. As you stagger to your feet, the door bursts open and a decrepit old man attacks you with a meat cleaver. He is quite insane and you must fight him or take evasive action.</p>
       <choice idref="sect63">If you choose to fight, <link-text>turn to 63</link-text>.</choice>
       <choice idref="sect217">If you wish to evade a fight, <link-text>turn to 217</link-text>.</choice>
@@ -2628,7 +2612,7 @@
      <data>
       <p>You are dizzy from your wound and you stumble through the trees like a blind man.</p>
       <p>Suddenly you fall forward as if the ground has been snatched from beneath your feet. You have fallen head-first into a hunting pit. As you look up, you can see four Drakkarim levelling their bows at you, evil sneers spreading simultaneously across their ugly faces.</p>
-      <p>As the world darkens, the last thing you feel are the black shafts of their arrows deep in your chest. You have failed in your mission.</p>
+      <p>As the world darkens, the last things you feel are the black shafts of their arrows deep in your chest. You have failed in your mission.</p>
      </data>
     </section>
 
@@ -2771,7 +2755,7 @@
      <meta><title>166</title></meta>
 
      <data>
-      <p>You are in the presence of a great evil. Your mind is being probed by a powerful and timeless being and you must shield yourself. The struggle has begun and your sanity is at stake. It is a long and <!--ERRTAG-RE-169126-->torturous<!--/ERRTAG-RE-169126--> ordeal, during which you experience many fantastic and terrible apparitions that tempt and appal you. After this you must lose 4 <typ class="attribute">ENDURANCE</typ> points and stagger towards the tunnel.</p>
+      <p>You are in the presence of a great evil. Your mind is being probed by a powerful and timeless being and you must shield yourself. The struggle has begun and your sanity is at stake. It is a long and torturous ordeal, during which you experience many fantastic and terrible apparitions that tempt and appal you. After this you must lose 4 <typ class="attribute">ENDURANCE</typ> points and stagger towards the tunnel.</p>
       <choice idref="sect104"><link-text>Turn to 104</link-text>.</choice>
      </data>
     </section>
@@ -2892,7 +2876,7 @@
      <meta><title>175</title></meta>
 
      <data>
-      <p>Waving your arms at the approaching cavalry, you recognize them to be <!--ERRTAG-RE-176294-->Border Rangers<!--/ERRTAG-RE-176294--> of the King<ch.apos/>s army, tough woodsmen who police the troubled western frontier of the kingdom. Your relief at seeing them soon fades when you realize that they are fleeing from a pack of Doomwolves with snarling Giak riders. Black arrows are dropping all around the rangers, as the vicious Doomwolves get nearer and nearer.</p>
+      <p>Waving your arms at the approaching cavalry, you recognize them to be Border Rangers of the King<ch.apos/>s army, tough woodsmen who police the troubled western frontier of the kingdom. Your relief at seeing them soon fades when you realize that they are fleeing from a pack of Doomwolves with snarling Giak riders. Black arrows are dropping all around the rangers, as the vicious Doomwolves get nearer and nearer.</p>
       <choice idref="sect182">If you possess the Kai Discipline of Camouflage, <link-text>turn to 182</link-text>.</choice>
       <choice idref="sect41">If you wish to take cover and hide, <link-text>turn to 41</link-text>.</choice>
       <choice idref="sect116">If you wish to make for the other bank, <link-text>turn to 116</link-text>.</choice>
@@ -2963,17 +2947,9 @@
     <section class="numbered" id="sect181">
      <meta><title>181</title></meta>
 
-     <footnotes>
-      <footnote id="sect181-1-foot" idref="sect181-1">
-       <p>If you have not arrived at this section from <a idref="sect205">Section 205</a>, you do not lose all of your equipment. Do <em>not</em> adjust your <a idref="action">Action Chart</a>.</p>
-       <p>If you have turned to this section from <a idref="sect22">Section 22</a>, you may ignore this statement. You have not lost any of your equipment. Do not adjust your <a idref="action">Action Chart</a>.</p>
-<!--       <p>If you have arrived at this section through <a idref="sect22">Section 22</a> where you surrender to bandits, you lose all of your equipment. According to the <cite>Summer Special 1985</cite> issue of the <cite>Lone Wolf Club Newsletter</cite>, <quote>the bandits took everything you had, including your Helmet and crowns.</quote></p>-->
-      </footnote>
-     </footnotes>
-
      <data>
       <p>Instinctively you duck, and dive to avoid the crossbow bolt. The bandit fires and you feel the sleeve of your jacket tear as the missile grazes past your left arm. You thank the gods for your good fortune and sprint on.</p>
-      <p>None of the other bandits have bows and they soon give up the chase. As you sprint off into the distance, you leave them all far behind. You have lost your Weapons and Equipment,<footref id="sect181-1" idref="sect181-1-foot"/> but not your life.</p>
+      <p>None of the other bandits have bows and they soon give up the chase. As you sprint off into the distance, you leave them all far behind.</p>
       <p>You stop just long enough to strap up your wounded arm and then continue along the road towards the outer defences of the capital.</p>
       <choice idref="sect288"><link-text>Turn to 288</link-text>.</choice>
      </data>
@@ -2983,7 +2959,7 @@
      <meta><title>182</title></meta>
 
      <data>
-      <p>Three rangers gallop past the river bank, closely followed by the Giaks on their snarling mounts<ch.emdash/>the  Doomwolves. But your Camouflage skill has saved you from being spotted. The pack of evil Giaks continue on their chase without even glancing at the river.</p>
+      <p>Three rangers gallop past the river bank, closely followed by the Giaks on their snarling mounts<ch.emdash/>the Doomwolves. But your Camouflage skill has saved you from being spotted. The pack of evil Giaks continue on their chase without even glancing at the river.</p>
       <choice idref="sect174"><link-text>Turn to 174</link-text>.</choice>
      </data>
     </section>
@@ -3112,7 +3088,7 @@
       <p>You see the razor-fanged mouth of a Doomwolf and hear the hideous cries of the Giaks. Two of them are coming straight for you. You are saved from certain death when your horse jumps at the approaching beasts, knocking them both to the ground. You lash out at the Giak and open a large wound in his head<ch.ellips/>and then suddenly, as if by a miracle, you<ch.apos/>re through and racing on down the highway, clear of the rest of the pack.</p>
       <p>But a shadow follows you. It is a Kraan and it has started to dive. Its target is you.</p>
       <choice idref="sect171">If you veer off the highway towards the cover of the trees, <link-text>turn to 171</link-text>.</choice>
-      <choice idref="sect120">If you press on regardless of the Kraan, and gallop flat out down the highway, <link-text>turn to 120</link-text>.</choice>
+      <choice idref="sect120">If you press on regardless of the Kraan and gallop flat out down the highway, <link-text>turn to 120</link-text>.</choice>
      </data>
     </section>
 
@@ -3250,15 +3226,8 @@
     <section class="numbered" id="sect205">
      <meta><title>205</title></meta>
 
-     <footnotes>
-      <footnote id="sect205-1-foot" idref="sect205-1">
-       <p>Make sure to erase all items and item containers from your <a idref="action">Action Chart</a> (i.e. Weapons, Backpack, Special Items, and Belt Pouch).</p>
-       <p>The author may not have realized that the Crystal Star Pendant and <a idref="map">Map of Sommerlund</a> might be among the items lost. You may decide to simply keep these items if you have them. If you do choose a strict interpretation of the text, however, then it<ch.apos/>s only fair that you shouldn<ch.apos/>t look at the <a idref="map">map</a> if you are without the <a idref="map">Map of Sommerlund</a> item.</p>
-      </footnote>
-     </footnotes>
-
      <data>
-      <p>Their leader picks up your discarded Equipment<footref id="sect205-1" idref="sect205-1-foot"/> and ushers you along the road ahead. An evil grin spreads across the face of the other two men, and you suddenly realize that they are not soldiers after all. You make a break for it and run away from there, sprinting towards the distant capital.</p>
+      <p>Their leader picks up your discarded Equipment and ushers you along the road ahead. (You must now erase all Weapons and Backpack Items from your <a idref="action">Action Chart</a>.) An evil grin spreads across the face of the other two men, and you suddenly realize that they are not soldiers after all. You make a break for it and run away from there, sprinting towards the distant capital.</p>
       <p>Behind you, the ominous <onomatopoeia>click</onomatopoeia> of a crossbow being primed sends a shiver down your spine.</p>
       <illustration class="inline">
        <meta>
@@ -3551,8 +3520,8 @@
 
      <data>
       <p>The path continues eastwards but soon disappears into thick undergrowth.</p>
-      <choice idref="sect140">If you continue east, cutting through the vegetation with your <!--ERRTAG-RE-224192-->weapon<!--/ERRTAG-RE-224192-->, <link-text>turn to 140</link-text>.</choice>
-      <choice idref="sect215">If you head south to where the bushes are less dense, and then press on through the forest, <link-text>turn to 215</link-text>.</choice>
+      <choice idref="sect140">If you continue east, cutting through the vegetation with your weapon, <link-text>turn to 140</link-text>.</choice>
+      <choice idref="sect215">If you head south to where the bushes are less dense and then press on through the forest, <link-text>turn to 215</link-text>.</choice>
      </data>
     </section>
 
@@ -3646,14 +3615,8 @@
     <section class="numbered" id="sect236">
      <meta><title>236</title></meta>
 
-     <footnotes>
-      <footnote id="sect236-1-foot" idref="sect236-1">
-       <p>Remember to erase the Vordak Gem from your <a idref="action">Action Chart</a>. If you had two Gems, you need erase only one. The <typ class="attribute">COMBAT SKILL</typ> loss is indeed permanent.</p>
-      </footnote>
-     </footnotes>
-
      <data>
-      <p>The Gem hovers above the mouth of the skeleton king, glowing a fierce red. Suddenly, an explosion of searing crimson flame lashes upwards from the sarcophagus, destroying the Gem completely.<footref id="sect236-1" idref="sect236-1-foot"/> You are thrown against the far wall and knocked unconscious.</p>
+      <p>The Gem hovers above the mouth of the skeleton king, glowing a fierce red. Suddenly, an explosion of searing crimson flame lashes upwards from the sarcophagus, destroying the Gem completely. You are thrown against the far wall and knocked unconscious.</p>
       <illustration class="inline">
        <meta>
         <creator>JC Alvarez</creator>
@@ -3670,7 +3633,7 @@
        <instance class="html-compatible" src="small23.gif" width="386" height="150"  mime-type="image/gif"/>
        <instance class="pdf" src="small23.pdf" width="386" height="150" />
       </illustration>
-      <p>When you awake, the chamber is completely empty. The skeleton king and the sarcophagus have vanished. You have lost 6 <typ class="attribute">ENDURANCE</typ> points, and your initial <typ class="attribute">COMBAT SKILL</typ> is reduced by 1 point for the rest of your life.</p>
+      <p>When you awake, the chamber is completely empty. The skeleton king and the sarcophagus have vanished. You have lost 6 <typ class="attribute">ENDURANCE</typ> points, and your initial <typ class="attribute">COMBAT SKILL</typ> is reduced by 1 point for the rest of your life. (Remember to erase the Vordak Gem from your <a idref="action">Action Chart</a>. If you had two Gems, you need erase only one.)</p>
       <p>You carefully get to your feet and stagger towards the tunnel.</p>
       <choice idref="sect104"><link-text>Turn to 104</link-text>.</choice>
      </data>
@@ -4154,7 +4117,7 @@
 
      <data>
       <p>You have followed this twisting track for about twenty minutes when you hear the beating of wings high above the trees. Looking up you see a large Kraan approaching from the north, its huge black wings casting a gigantic shadow on the trees below.</p>
-      <p>On its back are two creatures armed with long spears. They are Mountain Giaks<ch.emdash/>small ugly creatures full of hatred and malice. Many centuries ago, their ancestors were used by the Darklords to build the infernal city of Helgedad, which lies in the volcanic wastelands beyond the Durncrag mountain range. The construction of the city was long and <!--ERRTAG-RE-249381-->torturous<!--/ERRTAG-RE-249381-->, and only the strongest of the creatures survived the heat and poisonous atmosphere of Helgedad.</p>
+      <p>On its back are two creatures armed with long spears. They are Mountain Giaks<ch.emdash/>small ugly creatures full of hatred and malice. Many centuries ago, their ancestors were used by the Darklords to build the infernal city of Helgedad, which lies in the volcanic wastelands beyond the Durncrag mountain range. The construction of the city was long and torturous, and only the strongest of the creatures survived the heat and poisonous atmosphere of Helgedad.</p>
       <p>Quickly you dive for the shelter of a large fern tree as the Kraan passes overhead. With heart pounding, you pray that your quick reactions have saved you from being spotted.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
       <choice idref="sect345">If the number you have picked is 0<ch.endash/>4, <link-text>turn to 345</link-text>.</choice>
@@ -4166,7 +4129,7 @@
      <meta><title>276</title></meta>
 
      <data>
-      <p>Reaching for <!--ERRTAG-RE-261495-->your weapon<!--/ERRTAG-RE-261495--> you manage to hack your way through the tangle of wood and twisted branches to the clearer forest beyond. Your cloak is torn in several places and your right leg is badly bruised above the knee.</p>
+      <p>Reaching for your weapon you manage to hack your way through the tangle of wood and twisted branches to the clearer forest beyond. Your cloak is torn in several places and your right leg is badly bruised above the knee.</p>
       <illustration class="inline">
        <meta>
         <creator>JC Alvarez</creator>
@@ -4271,7 +4234,7 @@
         <creator>Gary Chalk</creator>
         <description>
          <line>Your passage through the Graveyard is not</line>
-         <line>easy, the ground is broken and</line>
+         <line>easy<ch.emdash/>the ground is broken and</line>
          <line>covered with thorny graveweed.</line>
         </description>
        </meta>
@@ -4363,7 +4326,7 @@
      <meta><title>291</title></meta>
 
      <data>
-      <p>The two Giaks lie at your feet, their bodies twisted and lifeless. A quick search reveals 6 Gold Crowns, 2 Spears and a Dagger.</p>
+      <p>The two Giaks lie at your feet, their bodies twisted and lifeless. A quick search reveals 6 Gold Crowns, 2 Spears, and a Dagger.</p>
       <p>You may keep the Gold and take either the Dagger or a Spear. Remember to mark this on your <a idref="action">Action Chart</a>.</p>
       <p>The Kraan flew off during your battle, and the track is now deserted. You adjust your Backpack and continue your mission.</p>
       <choice idref="sect272"><link-text>Turn to 272</link-text>.</choice>
@@ -4424,7 +4387,7 @@
      <meta><title>297</title></meta>
 
      <data>
-      <p>Using the skills taught to you by your masters in the art of Hunting, you inch your way through the foliage undetected. In less than a minute you are directly behind, and only a few feet from, the stake to which the ranger is tied. The wood is alight and great clouds of smoke are engulfing the poor victim. You take <!--ERRTAG-RA-278139-->your weapon<!--/ERRTAG-RA-278139--> and run forward, hidden by the smoke. One blow of <!--ERRTAG-RA-278139-->your weapon<!--/ERRTAG-RA-278139--> is all that is needed to sever his bonds, and you pull him free and back into the safety of the forest. As you press on into the forest, you hear the shrieks of the Giaks as they discover that their prisoner has literally disappeared in a cloud of smoke!</p>
+      <p>Using the skills taught to you by your masters in the art of Hunting, you inch your way through the foliage undetected. In less than a minute you are directly behind, and only a few feet from, the stake to which the ranger is tied. The wood is alight and great clouds of smoke are engulfing the poor victim. You take your weapon and run forward, hidden by the smoke. One blow of your weapon is all that is needed to sever his bonds, and you pull him free and back into the safety of the forest. As you press on into the forest, you hear the shrieks of the Giaks as they discover that their prisoner has literally disappeared in a cloud of smoke!</p>
       <illustration class="float">
        <meta>
         <creator>JC Alvarez</creator>
@@ -4506,15 +4469,9 @@
     <section class="numbered" id="sect304">
      <meta><title>304</title></meta>
 
-     <footnotes>
-      <footnote id="sect304-1-foot" idref="sect304-1">
-       <p>Record this Backpack Item as a Vordak Gem.</p>
-      </footnote>
-     </footnotes>
-
      <data>
       <p>The Gem feels incredibly hot and burns your hand. Lose 2 <typ class="attribute">ENDURANCE</typ> points.</p>
-      <p>You quickly pick it up with the edge of your Kai cloak and slip it into your Backpack.<footref id="sect304-1" idref="sect304-1-foot"/> A Gem that size must be worth hundreds of Crowns. But the Giaks are very close and their arrows whistle past your head as you turn and run for the safety of the forest.</p>
+      <p>You quickly pick it up with the edge of your Kai cloak and slip this Vordak Gem into your Backpack. A Gem that size must be worth hundreds of Crowns. But the Giaks are very close and their arrows whistle past your head as you turn and run for the safety of the forest.</p>
       <choice idref="sect2"><link-text>Turn to 2</link-text>.</choice>
      </data>
     </section>
@@ -4777,7 +4734,7 @@
       </illustration>
       <p>On the floor of the watchtower is a large oblong box.</p>
       <choice idref="sect290">If you wish to open this box, <link-text>turn to 290</link-text>.</choice>
-      <choice idref="sect140">If you would prefer to descend the ladder, and leave the tower, taking care to use only the good rungs, <link-text>turn to 140</link-text>.</choice>
+      <choice idref="sect140">If you would prefer to descend the ladder and leave the tower, taking care to use only the good rungs, <link-text>turn to 140</link-text>.</choice>
      </data>
     </section>
 
@@ -4895,7 +4852,7 @@
 
      <data>
       <p>You have cut your way through the thick undergrowth for nearly half an hour when you hear the beat of wings high above the trees. Looking up you can just make out the shape of a Kraan approaching from the north. It is one of the monsters that attacked the monastery and on its back are two grey-skinned creatures armed with long spears.</p>
-      <p>These are Mountain Giaks<ch.emdash/>evil servants of the Darklords, full of hatred and malice. Many centuries ago, their ancestors were used by the Darklords to build the infernal city of Helgedad, which lies in the volcanic wastelands beyond the Durncrag range of mountains. The construction of the city was long and <!--ERRTAG-RE-294191-->torturous<!--/ERRTAG-RE-294191--> and only the strongest of the Giaks survived the heat and poisonous atmosphere of Helgedad.</p>
+      <p>These are Mountain Giaks<ch.emdash/>evil servants of the Darklords, full of hatred and malice. Many centuries ago, their ancestors were used by the Darklords to build the infernal city of Helgedad, which lies in the volcanic wastelands beyond the Durncrag range of mountains. The construction of the city was long and torturous and only the strongest of the Giaks survived the heat and poisonous atmosphere of Helgedad.</p>
       <p>Hidden by the trees, you freeze, keeping absolutely still as the Kraan passes overhead and disappears towards the south. When you are sure that it has gone, you move off once again into the forest.</p>
       <choice idref="sect131"><link-text>Turn to 131</link-text>.</choice>
      </data>
@@ -4945,7 +4902,7 @@
      <meta><title>336</title></meta>
 
      <data>
-      <p>You rush into the clearing and take the Giaks completely by surprise. Without a moment<ch.apos/>s hesitation, you strike out at the one nearest to you. He is dead before his body hits the ground. The other Giaks <!--ERRTAG-RE-296725-->unsheathe<!--/ERRTAG-RE-296725--> their curved swords and attack you. You must fight them one at a time.</p>
+      <p>You rush into the clearing and take the Giaks completely by surprise. Without a moment<ch.apos/>s hesitation, you strike out at the one nearest to you. He is dead before his body hits the ground. The other Giaks unsheathe their curved swords and attack you. You must fight them one at a time.</p>
       <combat><enemy>Giak 1</enemy><enemy-attribute class="combatskill">14</enemy-attribute><enemy-attribute class="endurance">11</enemy-attribute></combat>
       <combat><enemy>Giak 2</enemy><enemy-attribute class="combatskill">13</enemy-attribute><enemy-attribute class="endurance">11</enemy-attribute></combat>
       <choice idref="sect117">If you win, you free the ranger and <link-text>turn to 117</link-text>.</choice>
@@ -5022,7 +4979,7 @@
      <meta><title>342</title></meta>
 
      <data>
-      <p>As your voice echoes through the trees, the stranger slowly turns to face you. Your heart pounds and your <!--ERRTAG-RE-301862-->blood<!--/ERRTAG-RE-301862--> freezes as you realize that the stranger is not human. It is a Vordak, a hideous lieutenant of the Darklords and one of the undead. A piercing scream fills your ears, and the creature raises a huge black mace above its head and charges at you. Frozen with horror, you can also feel the Vordak attacking you with the force of its mind.</p>
+      <p>As your voice echoes through the trees, the stranger slowly turns to face you. Your heart pounds and your blood freezes as you realize that the stranger is not human. It is a Vordak, a hideous lieutenant of the Darklords and one of the undead. A piercing scream fills your ears, and the creature raises a huge black mace above its head and charges at you. Frozen with horror, you can also feel the Vordak attacking you with the force of its mind.</p>
       <illustration class="float">
        <meta>
         <creator>JC Alvarez</creator>
@@ -5041,7 +4998,7 @@
      <meta><title>343</title></meta>
 
      <data>
-      <p>You are held by the mass of tangled branches and roots. Eventually you free your right hand, grab <!--ERRTAG-RE-317832-->your weapon<!--/ERRTAG-RE-317832--> and hack your way slowly through the foliage to the clearer forest beyond. Your cloak is torn in several places and your left arm is cut and badly bruised above the elbow.</p>
+      <p>You are held by the mass of tangled branches and roots. Eventually you free your right hand, grab your weapon, and hack your way slowly through the foliage to the clearer forest beyond. Your cloak is torn in several places and your left arm is cut and badly bruised above the elbow.</p>
       <choice idref="sect213">Lose 2 <typ class="attribute">ENDURANCE</typ> points and <link-text>turn to 213</link-text>.</choice>
      </data>
     </section>
@@ -5084,7 +5041,7 @@
      </footnotes>
 
      <data>
-      <p>The trees start to thin out, and just ahead you can make out the silhouette of an old log cabin beneath an oak tree. This hut seems to have been abandoned and there is little of apparent value left behind. Opening a small chest near the main door, you discover bunches of twigs that have been tied together with strong twine. One end of the bundle has been coated with pitch. They are Torches. Next to the chest is a Short Sword and a Tinderbox. You may take them and a Torch if you wish but make sure that you mark them on your <a idref="action">Action Chart</a>.<footref id="sect347-1" idref="sect347-1-foot"/></p>
+      <p>The trees start to thin out, and just ahead you can make out the silhouette of an old log cabin beneath an oak tree. This hut seems to have been abandoned and there is little of apparent value left behind. Opening a small chest near the main door, you discover bunches of twigs that have been tied together with strong twine. One end of each bundle has been coated with pitch. They are Torches. Next to the chest are a Short Sword and a Tinderbox. You may take them and a Torch if you wish but make sure that you mark them on your <a idref="action">Action Chart</a>.<footref id="sect347-1" idref="sect347-1-foot"/></p>
       <p>Closing the door of the cabin, you head off along an overgrown path towards the northeast.</p>
       <choice idref="sect103"><link-text>Turn to 103</link-text>.</choice>
      </data>
@@ -5111,13 +5068,13 @@
      <data>
       <p>He is a young blond-haired youth with deep brooding eyes. His face is lined with exhaustion and the grime of battle, and his long sky-blue robes bear evidence of living rough in the wilds. He shakes your hand and bows. <quote>My eternal thanks, Kai Lord. My powers are nearly drained. Had you not come to my aid, I fear I would have ended my days atop a Giak lance.</quote></p>
       <p>He is weak and unsteady on his feet. You take his arm and sit him down upon a fallen pillar where you listen intently to what he has to say.</p>
-      <p><quote>My name is Banedon. I am journeyman to the Brotherhood of the Crystal Star, which is the <!--ERRTAG-RE-306915-->Magicians<ch.apos/> Guild of Toran<!--/ERRTAG-RE-306915-->. My Guildmaster has sent me to your monastery with this urgent message.</quote> He removes a vellum envelope from inside his robes and hands it to you.</p>
+      <p><quote>My name is Banedon. I am journeyman to the Brotherhood of the Crystal Star, which is the Magicians<ch.apos/> Guild of Toran. My Guildmaster has sent me to your monastery with this urgent message.</quote> He removes a vellum envelope from inside his robes and hands it to you.</p>
       <p><quote>As you see, I have opened the letter and read its contents. When the war started, I was on the highway with two travelling companions. The Kraan attacked us and we lost each other in the forest during our escape.</quote></p>
       <p>The letter is a warning to the Kai Lords that the Darklords have mustered a vast army beyond the Durncrag Range. The Guildmaster urges the Kai to cancel the celebrations of Fehmarn and prepare for war.</p>
       <p><quote>I fear we were betrayed,</quote> says Banedon, his head bowed in sorrow.</p>
       <p><quote>One of my order, a brother called Vonotar, had explored the forbidden mysteries of the Black Art. Ten days ago he denounced the Brotherhood and killed one of our Elders. He has since disappeared. It is rumoured that he now aids the Darklords.</quote></p>
       <p>You tell Banedon what has happened at the monastery, and of your mission to warn the King. Silently, he removes a gold chain from around his neck and hands it to you. On the chain is a small Crystal Star Pendant. <quote>It is the symbol of my Brotherhood, and we are both truly brothers in this hour of darkness. It is a talisman of good fortune<ch.emdash/>may it protect you on your road ahead.</quote></p>
-      <p>You thank him, place the chain around your neck and slip the Crystal Star<footref id="sect349-1" idref="sect349-1-foot"/> inside your shirt. (Remember to mark this on your <a idref="action">Action Chart</a>.)</p>
+      <p>You thank him, place the chain around your neck, and slip the Crystal Star<footref id="sect349-1" idref="sect349-1-foot"/> inside your shirt. (Remember to mark this on your <a idref="action">Action Chart</a>.)</p>
       <p>Banedon bids you farewell. <quote>We must leave this place lest the Giaks return with more of their loathsome kind to put an end to us. I must return to my Guild. I bid you farewell, my brother. May the luck of the gods go with you.</quote></p>
       <choice idref="sect293"><link-text>Turn to 293</link-text>.</choice>
      </data>
@@ -5227,6 +5184,28 @@
      <instance src="acspcl.png" width="386" height="280" class="html" mime-type="image/png" />
      <instance src="acspcl.gif" width="386" height="280" class="html-compatible" mime-type="image/gif" />
     </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Gary Chalk</creator>
+     </meta>
+     <instance class="pdf" src="ac1.pdf" posx="-18" posy="-180" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Gary Chalk</creator>
+     </meta>
+     <instance class="pdf" src="ac2.pdf" posx="-20" posy="-180" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Gary Chalk</creator>
+     </meta>
+     <instance class="pdf" src="ac3.pdf" posx="-19" posy="-180" />
+    </illustration>
+
 <!--
     <illustration class="inline">
      <meta>
@@ -5309,7 +5288,7 @@
      <li>Pick a number from the <a idref="random">Random Number Table</a>.</li>
      <li>Turn to the <a idref="crtable">Combat Results Table</a>.</li>
      <li>Find your Combat Ratio on the top of the chart and cross-reference to the random number you have picked. (E indicates loss of <typ class="attribute">ENDURANCE</typ> points to Enemy. LW indicates loss of <typ class="attribute">ENDURANCE</typ> points to Lone Wolf.)</li>
-     <li>Continue the combat from Stage 3 until one character is dead. This is when the <typ class="attribute">ENDURANCE</typ> points of either character <!--ERRTAG-RE-316950-->fall to 0 or below<!--/ERRTAG-RE-316950-->.</li>
+     <li>Continue the combat from Stage 3 until one character is dead. This is when the <typ class="attribute">ENDURANCE</typ> points of either character fall to 0 or below.</li>
     </ol>
 
     <section class="backmatter" id="smevazn">
@@ -5711,13 +5690,13 @@
      <data>
       <p>(<a idref="title">Blurb</a>) Replaced <quote><cite>FLIGHT FROM THE DARK</cite></quote> with <quote><strong><cite>Flight from the Dark</cite></strong>,</quote>.</p>
 
-      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced all occurrences of <quote>ie</quote> with <quote>i.e.</quote> Removed <quote>that you will find in the front of this book. For further adventuring you can copy out the chart yourself or get it photocopied</quote>. Replaced <quote>on 4</quote> with <quote>on the number 4</quote>. Removed <quote> on the last page of this book</quote>.<!--ERRTAG-RE-12598-ITEM--> Replaced <quote>fall to zero</quote> with <quote>fall to zero or below</quote>.<!--/ERRTAG-RE-12598-ITEM--> Replaced <quote>on to</quote> with <quote>onto</quote>. Replaced each occurrence of <quote>Chart. (ie</quote> with <quote>Chart (i.e.</quote>. Replaced <quote>14.)</quote> with <quote>14).</quote>. Replaced <quote>points.)</quote> with <quote>points).</quote>.</p>
+      <p>(<a idref="gamerulz">The Game Rules</a>) Replaced all occurrences of <quote>ie</quote> with <quote>i.e.</quote> Removed <quote>that you will find in the front of this book. For further adventuring you can copy out the chart yourself or get it photocopied</quote>. Replaced <quote>on 4</quote> with <quote>on the number 4</quote>. Removed <quote> on the last page of this book</quote>. Replaced <quote>fall to zero</quote> with <quote>fall to zero or below</quote>. Replaced <quote>on to</quote> with <quote>onto</quote>. Replaced each occurrence of <quote>Chart. (ie</quote> with <quote>Chart (i.e.</quote>. Replaced <quote>14.)</quote> with <quote>14).</quote>. Replaced <quote>points.)</quote> with <quote>points).</quote>.</p>
 
-      <p>(<a idref="discplnz">Kai Disciplines</a>) Replaced <quote>Kai Discipline section</quote> with <quote>Kai Disciplines section</quote>, removed <quote> on the last page of the book</quote>, and capitalized all occurrences of <quote>discipline</quote>. Replaced <quote>fully in <a idref="equipmnt">Equipment section</a></quote> with <quote>fully in the <a idref="equipmnt">Equipment section</a></quote>. Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Replaced <quote>Kai monastery</quote> with <quote>Kai Monastery</quote>. Replaced <quote>will be of use</quote> with <quote>may be of use</quote>.</p>
+      <p>(<a idref="discplnz">Kai Disciplines</a>) Replaced <quote>Kai Discipline section</quote> with <quote>Kai Disciplines section</quote>, removed <quote> on the last page of the book</quote>, and capitalized all occurrences of <quote>discipline</quote>. Replaced <quote>fully in <a idref="equipmnt">Equipment section</a></quote> with <quote>fully in the <a idref="equipmnt">Equipment section</a></quote>. Replaced <quote>Lone Wolf</quote> with <quote><cite>Lone Wolf</cite></quote> when referring to the series. Replaced <quote>Kai monastery</quote> with <quote>Kai Monastery</quote>. Replaced <quote>will be of use</quote> with <quote>may be of use</quote>. Replaced <quote>Explained fully</quote> with <quote>This will be explained fully</quote>.</p>
 
       <p>(<a idref="equipmnt">Equipment</a>) Added periods to the sentences describing the Helmet and Chainmail Waistcoat.</p>
 
-      <p>(<a idref="equipmnt">Equipment: How to use your equipment</a>) Added a period to the second from last sentence in the Weapons subsection. Replaced <quote>food or</quote> with <quote>food, or</quote>. Replaced <quote>two weapons</quote> with <quote>two Weapons</quote>.</p>
+      <p>(<a idref="equipmnt">Equipment: How to use your equipment</a>) Added a period to the second from last sentence in the Weapons subsection. Replaced <quote>food or</quote> with <quote>food, or</quote>. Replaced <quote>two weapons</quote> with <quote>two Weapons</quote>. Added <quote>You may only use one Weapon at a time in combat.</quote> in harmony with the recent Mongoose Publishing edition.</p>
 
       <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed a superfluous period in the second paragraph of the first example. Removed <quote> on the inside back cover of the book</quote> and replaced <quote>on the page after the <a idref="random">Random Number Table</a></quote> with <quote>in the back of this book</quote>. Replaced <quote>reduced to zero</quote> with <quote>reduced to zero or below</quote>. Replaced <quote>points reduced</quote> with <quote>points possibly reduced</quote>. Replaced <quote>at which point the one with the zero score is declared dead.</quote> with <quote>at which point that combatant is declared dead.</quote>.</p>
 
@@ -5728,14 +5707,13 @@
       <p>(<a idref="sect1">1</a>) Replaced <quote>Sommerlund</quote> with <quote>Sommlending</quote> and made the last choice (about using Sixth Sense) the first.</p>
       <p>(<a idref="sect4">4</a>) Moved the last choice (about the Tracking Discipline) into the first position.</p>
       <p>(<a idref="sect7">7</a>) Added a period to the end of the illustration<ch.apos/>s caption. Replaced <quote>skipped and</quote> with <quote>skipped, and</quote>. Replaced <quote>If the number if</quote> with <quote>If the number is</quote>.</p>
-      <p>(<a idref="sect12">12</a>) Replaced <quote>Crowns and</quote> with <quote>Crowns, and</quote>. Replaced <quote>Crowns or</quote> with <quote>Crowns, or</quote>.</p>
       <p>(<a idref="sect17">17</a>) Changed the last choice that led to <a idref="sect331">Section 331</a> to lead to <a idref="sect316">Section 316</a> instead in order to parallel <a idref="sect89">Section 89</a>. It doesn<ch.apos/>t make sense to skip the section describing the tumble downhill.</p>
       <p>(<a idref="sect18">18</a>) Moved the choice about the Camouflage Discipline into the first position.</p>
       <p>(<a idref="sect19">19</a>) Moved the choice about the Tracking Discipline into the first position and replaced <quote>Gallowbrush</quote> with <quote>gallowbrush</quote>: you can<ch.apos/>t pick it up.</p>
-      <p>(<a idref="sect20">20</a>) Replaced <quote>Jala</quote> with <quote>jala</quote> and <quote>dagger</quote> with <quote>Dagger</quote>. The original versions of this book had this section lead to <a idref="sect272">Section 272</a>, which is incorrect. We are using the correct section, <a idref="sect273">273</a>, as used in more recent editions.</p>
+      <p>(<a idref="sect20">20</a>) Replaced <quote>Jala</quote> with <quote>jala</quote>. Replaced <quote>dagger</quote> with <quote>Dagger</quote>. The original versions of this book had this section lead to <a idref="sect272">Section 272</a>, which is incorrect. We are using the correct section, <a idref="sect273">273</a>, as used in more recent editions.</p>
       <p>(<a idref="sect21">21</a>) The text is unchanged but we have concatenated some of the paragraphs for the dice rolls for clarification. Replaced <quote>on to</quote> with <quote>onto</quote>.</p>
       <p>(<a idref="sect22">22</a>) Added a comma after <quote>0<ch.endash/>4</quote> in the first choice. Replaced <quote>click</quote> with <quote><onomatopoeia>click</onomatopoeia></quote>.</p>
-      <p>(<a idref="sect23">23</a>) Reordered the choices. The choice that was originally first (about removing the pin) is now last. The choice about the Golden Key was originally last and is now first. Also added <quote>and wish to use it</quote> after <quote>Golden Key</quote>. Added a period to the end of the illustration<ch.apos/>s caption. Replaced <quote>Key and</quote> with <quote>Key, and</quote>.</p>
+      <p>(<a idref="sect23">23</a>) Reordered the choices. The choice that was originally first (about removing the pin) is now last. The choice about the Golden Key was originally last and is now first. Also added <quote>and wish to use it</quote> after <quote>Golden Key</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect32">32</a>) Replaced <quote>unmistakeable</quote> with <quote>unmistakable</quote>.</p>
       <p>(<a idref="sect33">33</a>) Replaced <quote>fur and</quote> with <quote>fur, and</quote>.</p>
       <p>(<a idref="sect34">34</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
@@ -5745,54 +5723,64 @@
       <p>(<a idref="sect41">41</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect46">46</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
       <p>(<a idref="sect51">51</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
+      <p>(<a idref="sect57">57</a>) Replaced <quote>liquids and</quote> with <quote>liquids, and</quote>.</p>
       <p>(<a idref="sect58">58</a>) Made the choice that led to <a idref="sect286">Section 286</a> to lead to <a idref="sect251">Section 251</a> instead. Many readers have realized that there was an error here but assumed that the original numbers for the choices should simply be reversed, giving Lone Wolf a chance at survival for hiding and certain death for riding on. Actually, there is no certain death possibility here. Hiding is supposed to grant you certain survival. The proof of this correction is that there is no other path to <a idref="sect251">Section 251</a>, and it works perfectly.</p>
-      <p>(<a idref="sect62">62</a>) Replaced <quote>crossbow had</quote> with <quote>crossbow has</quote>.</p>
+      <p>(<a idref="sect61">61</a>) Replaced <quote>blood-smeared and</quote> with <quote>blood-smeared, and</quote>.</p>
+      <p>(<a idref="sect62">62</a>) Replaced <quote>crossbow had</quote> with <quote>crossbow has</quote>. Replaced <quote>west and</quote> with <quote>west, and</quote>.</p>
       <p>(<a idref="sect63">63</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect67">67</a>) Made the choice that led to <a idref="sect140">Section 140</a> to lead to <a idref="sect252">Section 252</a> instead. If you read <a idref="sect222">Section 222</a>, you<ch.apos/>ll notice that the choice leading to <a idref="sect252">Section 252</a> is the east track. Indeed, only <a idref="sect140">Section 140</a> may lead you to the bear of which Tracking is supposed to warn you in this section.</p>
       <p>(<a idref="sect69">69</a>) Replaced <quote>Gallowbrush</quote> with <quote>gallowbrush</quote>: you can<ch.apos/>t pick it up.</p>
       <p>(<a idref="sect70">70</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
       <p>(<a idref="sect71">71</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
-      <p>(<a idref="sect75">75</a>)<!--ERRTAG-RE-93708-ITEM--> Replaced <quote>border rangers</quote> with <quote>Border Rangers</quote>.<!--/ERRTAG-RE-93708-ITEM--></p>
+      <p>(<a idref="sect73">73</a>) Replaced <quote>the Darklords cruellest troops</quote> with <quote>the Darklords<ch.apos/> cruellest troops</quote>.</p>
+      <p>(<a idref="sect75">75</a>) Replaced <quote>border rangers</quote> with <quote>Border Rangers</quote>.</p>
+      <p>(<a idref="sect76">76</a>) Replaced <quote>slip it into the pocket of your jacket</quote> with <quote>slip this Vordak Gem into your Backpack</quote>. Replaced <quote>horse and</quote> with <quote>horse, and</quote>.</p>
+      <p>(<a idref="sect82">82</a>) Replaced <quote>steed and</quote> with <quote>steed, and</quote>.</p>
       <p>(<a idref="sect83">83</a>) Added another <quote>s</quote> after <quote>posses</quote> in the last choice and moved that choice into the first position.</p>
       <p>(<a idref="sect87">87</a>) Replaced <quote>Graveweed</quote> with <quote>graveweed</quote>. Replaced <quote>click</quote> with <quote><onomatopoeia>click</onomatopoeia></quote>.</p>
+      <p>(<a idref="sect88">88</a>) Replaced <quote>or do</quote> with <quote>or if you do</quote>.</p>
       <p>(<a idref="sect91">91</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
       <p>(<a idref="sect97">97</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
-      <p>(<a idref="sect105">105</a>) Replaced <quote>jet black</quote> with <quote>jet-black</quote> and <quote>skill,</quote> with <quote>skill, or do not wish to use it,</quote>.</p>
+      <p>(<a idref="sect105">105</a>) Replaced <quote>jet black</quote> with <quote>jet-black</quote>. Replaced <quote>skill,</quote> with <quote>skill, or if you do not wish to use it,</quote>.</p>
       <p>(<a idref="sect112">112</a>) Replaced <quote>cavemouth</quote> with <quote>cave mouth</quote>.</p>
       <p>(<a idref="sect119">119</a>) Replaced <quote>Gallowbrush</quote> with <quote>gallowbrush</quote>: you can<ch.apos/>t pick it up.</p>
-      <p>(<a idref="sect120">120</a>) Replaced <quote>strike, then</quote> with <quote>strike, and then</quote>.</p>
+      <p>(<a idref="sect120">120</a>) Replaced <quote>strike, then</quote> with <quote>strike and then</quote>.</p>
       <p>(<a idref="sect121">121</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect122">122</a>) Split the first sentence which was actually two independent clauses into two sentences to fix it.</p>
       <p>(<a idref="sect125">125</a>) Moved the last choice (about the Tracking Discipline) into the first position.</p>
-      <p>(<a idref="sect128">128</a>)<!--ERRTAG-RE-134226-ITEM--> Replaced <quote>border ranger</quote> with <quote>Border Ranger</quote>.<!--/ERRTAG-RE-134226-ITEM--> Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.</p>
-      <p>(<a idref="sect131">131</a>)<!--ERRTAG-RE-137630-ITEM--> Replaced <quote>Magicians Guild of Toran</quote> with <quote>Magicians<ch.apos/> Guild of Toran</quote>.<!--/ERRTAG-RE-137630-ITEM--></p>
+      <p>(<a idref="sect128">128</a>) Replaced <quote>border ranger</quote> with <quote>Border Ranger</quote>. Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.</p>
+      <p>(<a idref="sect131">131</a>) Replaced <quote>Magicians Guild of Toran</quote> with <quote>Magicians<ch.apos/> Guild of Toran</quote>. Replaced <quote>area, and</quote> with <quote>area and</quote>.</p>
       <p>(<a idref="sect132">132</a>) Replaced <quote>sumptuous Meal</quote> with <quote>sumptuous meal</quote>.</p>
+      <p>(<a idref="sect137">137</a>) Replaced <quote>20 Gems</quote> with <quote>20 Tomb Guardian Gems</quote> and <quote>mark these on your <a idref="action">Action Chart</a></quote> with <quote>mark these on your <a idref="action">Action Chart</a> as a single Backpack Item</quote> based on changes made to the Mongoose Publishing edition.</p>
       <p>(<a idref="sect142">142</a>) Replaced <quote>Durncrag range</quote> with <quote>Durncrag Range</quote>.</p>
-      <p>(<a idref="sect144">144</a>) Added <quote> or if you have no Backpack Items</quote> to the second paragraph.<!--ERRTAG-RE-149741-ITEM--> Replaced <quote>one Item is stolen</quote> with <quote>one item is stolen</quote>.<!--/ERRTAG-RE-149741-ITEM--> Added a period to the end of the illustration<ch.apos/>s caption.</p>
-      <p>(<a idref="sect151">151</a>) Added <quote>If you wish to remove the pin, turn to 337.</quote> This is the only other possible choice for what is a strangely one-sided option in the original text. More flavourful language might make more sense, such as <quote>If you still wish to remove the pin with your hands,</quote> but to best preserve the integrity of the text, we simply copied the choice from <a idref="sect23">Section 23</a>.</p>
+      <p>(<a idref="sect144">144</a>) Added <quote> or if you have no Backpack Items</quote> to the second paragraph. Replaced <quote>one Item is stolen</quote> with <quote>one item is stolen</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
+      <p>(<a idref="sect151">151</a>) Added <quote>If you wish to remove the pin, <!--link-text-->turn to 337<!--/link-text-->.</quote> This is the only other possible choice for what is a strangely one-sided option in the original text. More flavourful language might make more sense, such as <quote>If you still wish to remove the pin with your hands,</quote> but to best preserve the integrity of the text, we simply copied the choice from <a idref="sect23">Section 23</a>.</p>
       <p>(<a idref="sect152">152</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect153">153</a>) Replaced <quote>Durncrag range</quote> with <quote>Durncrag Range</quote>.</p>
-      <p>(<a idref="sect154">154</a>) Replaced <quote>head first</quote> with <quote>head-first</quote>.</p>
+      <p>(<a idref="sect154">154</a>) Replaced <quote>head first</quote> with <quote>head-first</quote>. Replaced <quote>last thing you feel are the black shafts</quote> with <quote>last things you feel are the black shafts</quote>.</p>
       <p>(<a idref="sect163">163</a>) Replaced <quote>nearly an half</quote> with <quote>nearly half</quote>.</p>
-      <p>(<a idref="sect166">166</a>)<!--ERRTAG-RE-169126-ITEM--> Replaced <quote>tortuous</quote> with <quote>torturous</quote>.<!--/ERRTAG-RE-169126-ITEM--></p>
+      <p>(<a idref="sect166">166</a>) Replaced <quote>tortuous</quote> with <quote>torturous</quote>.</p>
       <p>(<a idref="sect167">167</a>) Moved the last choice (about Sixth Sense) into the first position.</p>
       <p>(<a idref="sect170">170</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect172">172</a>) Moved the second choice (about the Camouflage Discipline) into the first position.</p>
-      <p>(<a idref="sect175">175</a>) Moved the last choice (about the Camouflage Discipline) into the first position.<!--ERRTAG-RE-176294-ITEM--> Replaced <quote>border rangers</quote> with <quote>Border Rangers</quote>.<!--/ERRTAG-RE-176294-ITEM--></p>
+      <p>(<a idref="sect175">175</a>) Moved the last choice (about the Camouflage Discipline) into the first position. Replaced <quote>border rangers</quote> with <quote>Border Rangers</quote>.</p>
+      <p>(<a idref="sect181">181</a>) Removed <quote>You have lost your Weapons and Equipment, but not your life.</quote> from the end of the second paragraph because it is possible to reach this section of the book without having lost your equipment.</p>
       <p>(<a idref="sect184">184</a>) Replaced <quote>Sword and</quote> with <quote>Sword, and</quote>.</p>
+      <p>(<a idref="sect192">192</a>) Replaced <quote>Kraan, and</quote> with <quote>Kraan and</quote>.</p>
       <p>(<a idref="sect197">197</a>) Deleted a superfluous space after the word <quote>wish</quote> at the very end of the second sentence.</p>
       <p>(<a idref="sect196">196</a>) Replaced <quote>click</quote> with <quote><onomatopoeia>click</onomatopoeia></quote>.</p>
       <p>(<a idref="sect200">200</a>) Reversed the order of the choices. Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect201">201</a>) Changed the choice that led to <a idref="sect215">Section 215</a> to lead to <a idref="sect15">Section 15</a> instead. The original choice appears to make sense, but does not work out in a map. The indication that the correct section is really <a idref="sect15">15</a> is the fact that it is not otherwise accessible (though <a idref="sect215">Section 215</a> is) and <a idref="sect15">15</a> leads back to <a idref="sect201">Section 201</a> when taking the opposite direction.</p>
-      <p>(<a idref="sect205">205</a>) Replaced <quote>click</quote> with <quote><onomatopoeia>click</onomatopoeia></quote>.</p>
+      <p>(<a idref="sect205">205</a>) Added <quote>(You must now erase all Weapons and Backpack Items from your <a idref="action">Action Chart</a>.)</quote> based on the Mongoose Publishing edition. Replaced <quote>click</quote> with <quote><onomatopoeia>click</onomatopoeia></quote>.</p>
       <p>(<a idref="sect211">211</a>) Moved the second choice (about Sixth Sense) into the first position.</p>
       <p>(<a idref="sect212">212</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect218">218</a>) Replaced <quote>war cries</quote> with <quote>war-cries</quote>.</p>
       <p>(<a idref="sect221">221</a>) Replaced <quote>rough hewn</quote> with <quote>rough-hewn</quote>.</p>
       <p>(<a idref="sect222">222</a>) Moved the last choice (about Tracking) into the first position.</p>
       <p>(<a idref="sect226">226</a>) Replaced <quote>head first</quote> with <quote>head-first</quote>.</p>
-      <p>(<a idref="sect228">228</a>)<!--ERRTAG-RE-224192-ITEM--> Replaced <quote>axe</quote> with <quote>weapon</quote> because another weapon is available in <a idref="sect305">Section 305</a>.<!--/ERRTAG-RE-224192-ITEM--></p>
+      <p>(<a idref="sect228">228</a>) Replaced <quote>axe</quote> with <quote>weapon</quote> because another weapon is available in <a idref="sect305">Section 305</a>. Replaced <quote>dense, and</quote> with <quote>dense and</quote>.</p>
       <p>(<a idref="sect235">235</a>) Moved the last choice (about Tracking) into the first position.</p>
+      <p>(<a idref="sect236">236</a>) Added <quote>(Remember to erase the Vordak Gem from your <a idref="action">Action Chart</a>. If you had two Gems, you need erase only one.)</quote>.</p>
       <p>(<a idref="sect246">246</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect252">252</a>) Replaced <quote>men and</quote> with <quote>men, and</quote>.</p>
       <p>(<a idref="sect254">254</a>) Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>.</p>
@@ -5800,29 +5788,31 @@
       <p>(<a idref="sect267">267</a>) Capitalized <quote>message</quote> in the second sentence of the second paragraph, since that is how retrievable items are supposed to be represented, and to be consistent with the first time the item is mentioned in this section. Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect268">268</a>) Replaced <quote>wary</quote> with <quote>weary</quote>. We hardly think Lone Wolf would be wary among the King<ch.apos/>s soldiers.</p>
       <p>(<a idref="sect272">272</a>) Replaced <quote>wood-smoke</quote> with <quote>wood smoke</quote>.</p>
-      <p>(<a idref="sect275">275</a>)<!--ERRTAG-RE-249381-ITEM--> Replaced <quote>tortuous</quote> with <quote>torturous</quote>.<!--/ERRTAG-RE-249381-ITEM--></p>
-      <p>(<a idref="sect276">276</a>)<!--ERRTAG-RE-261495-ITEM--> Replaced <quote>your Axe</quote> with <quote>your weapon</quote> because another weapon is available in <a idref="sect305">Section 305</a>.<!--/ERRTAG-RE-261495-ITEM--></p>
+      <p>(<a idref="sect275">275</a>) Replaced <quote>tortuous</quote> with <quote>torturous</quote>.</p>
+      <p>(<a idref="sect276">276</a>) Replaced <quote>your Axe</quote> with <quote>your weapon</quote> because another weapon is available in <a idref="sect305">Section 305</a>.</p>
       <p>(<a idref="sect277">277</a>) Replaced <quote><a idref="sect113">Turn 113</a></quote> to <quote><a idref="sect113">Turn to 113</a>.</quote></p>
-      <p>(<a idref="sect284">284</a>) Replaced both occurrences of <quote>Graveweed</quote> with <quote>graveweed</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
+      <p>(<a idref="sect284">284</a>) Replaced both occurrences of <quote>Graveweed</quote> with <quote>graveweed</quote>. Added a period to the end of the illustration<ch.apos/>s caption and separated it's clauses with a dash instead of a comma.</p>
+      <p>(<a idref="sect291">291</a>) Replaced <quote>Spears and</quote> with <quote>Spears, and</quote>.</p>
       <p>(<a idref="sect295">295</a>) Replaced <quote>to try and</quote> with <quote>to try to</quote>.</p>
-      <p>(<a idref="sect297">297</a>)<!--ERRTAG-RA-278139-ITEM--> Replaced all occurrences of <quote>your axe</quote> with <quote>your weapon</quote> because another weapon is available in <a idref="sect305">Section 305</a>.<!--/ERRTAG-RA-278139-ITEM--></p>
+      <p>(<a idref="sect297">297</a>) Replaced all occurrences of <quote>your axe</quote> with <quote>your weapon</quote> because another weapon is available in <a idref="sect305">Section 305</a>.</p>
+      <p>(<a idref="sect304">304</a>) Replaced <quote>slip it</quote> with <quote>slip this Vordak Gem</quote>.</p>
       <p>(<a idref="sect307">307</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect311">311</a>) Moved the last choice (about Camouflage) into the first position.</p>
       <p>(<a idref="sect315">315</a>) Replaced <quote>Items</quote> with <quote>items</quote>.</p>
-      <p>(<a idref="sect319">319</a>) Replaced <quote>death cry</quote> with <quote>death-cry</quote>, <quote>fnd</quote> with <quote>find</quote>, and <quote>half way</quote> with <quote>halfway</quote>.</p>
+      <p>(<a idref="sect319">319</a>) Replaced <quote>death cry</quote> with <quote>death-cry</quote>. Replaced <quote>fnd</quote> with <quote>find</quote>. Replaced <quote>half way</quote> with <quote>halfway</quote>.</p>
       <p>(<a idref="sect322">322</a>) Replaced <quote>jet black</quote> with <quote>jet-black</quote>.</p>
-      <p>(<a idref="sect323">323</a>) Replaced <quote>jet black</quote> with <quote>jet-black</quote>.</p>
+      <p>(<a idref="sect323">323</a>) Replaced <quote>jet black</quote> with <quote>jet-black</quote>. Replaced <quote>ladder, and</quote> with <quote>ladder and</quote>.</p>
       <p>(<a idref="sect326">326</a>) Replaced <quote>Graveweed</quote> with <quote>graveweed</quote>. Replaced <quote>click</quote> with <quote><onomatopoeia>click</onomatopoeia></quote>.</p>
-      <p>(<a idref="sect333">333</a>)<!--ERRTAG-RE-294191-ITEM--> Replaced <quote>tortuous</quote> with <quote>torturous</quote>.<!--/ERRTAG-RE-294191-ITEM--></p>
+      <p>(<a idref="sect333">333</a>) Replaced <quote>tortuous</quote> with <quote>torturous</quote>.</p>
       <p>(<a idref="sect334">334</a>) Moved the last choice (about Sixth Sense) into the first position, and move the first choice (that leads to <a idref="sect162">Section 162</a>) into the last position. Added a period to the end of the illustration<ch.apos/>s caption.</p>
-      <p>(<a idref="sect336">336</a>)<!--ERRTAG-RE-296725-ITEM--> Replaced <quote>unsheath</quote> with <quote>unsheathe</quote>.<!--/ERRTAG-RE-296725-ITEM--></p>
+      <p>(<a idref="sect336">336</a>) Replaced <quote>unsheath</quote> with <quote>unsheathe</quote>.</p>
       <p>(<a idref="sect341">341</a>) Moved the last choice (about Tracking) into the first position. Added a period to the end of the illustration<ch.apos/>s caption.</p>
-      <p>(<a idref="sect342">342</a>)<!--ERRTAG-RE-301862-ITEM--> Replaced <quote>bloods</quote> with <quote>blood</quote>.<!--/ERRTAG-RE-301862-ITEM--></p>
-      <p>(<a idref="sect343">343</a>)<!--ERRTAG-RE-317832-ITEM--> Replaced <quote>your Axe</quote> with <quote>your weapon</quote> because another weapon is available in <a idref="sect305">Section 305</a>.<!--/ERRTAG-RE-317832-ITEM--></p>
-      <p>(<a idref="sect349">349</a>) <quote>Vonatar,</quote> from the seventh paragraph, is spelled <quote>Vonotar</quote> in later Lone Wolf books.<!--ERRTAG-RE-306915-ITEM--> Replaced <quote>magician<ch.apos/>s guild of Toran</quote> with <quote>Magicians<ch.apos/> Guild of Toran</quote>.<!--/ERRTAG-RE-306915-ITEM--> Replaced <quote>Durncrag range</quote> with <quote>Durncrag Range</quote>.</p>
+      <p>(<a idref="sect342">342</a>) Replaced <quote>bloods</quote> with <quote>blood</quote>.</p>
+      <p>(<a idref="sect343">343</a>) Replaced <quote>your Axe and</quote> with <quote>your weapon, and</quote> because another weapon is available in <a idref="sect305">Section 305</a> (and to add a comma).</p>
+      <p>(<a idref="sect347">347</a>) Replaced <quote>is a Short Sword and</quote> with <quote>are a Short Sword and</quote>. Replaced <quote>One end of the bundle</quote> with <quote>One end of each bundle</quote>.</p>
+      <p>(<a idref="sect349">349</a>) <quote>Vonatar,</quote> from the seventh paragraph, is spelled <quote>Vonotar</quote> in later Lone Wolf books. Replaced <quote>magician<ch.apos/>s guild of Toran</quote> with <quote>Magicians<ch.apos/> Guild of Toran</quote>. Replaced <quote>Durncrag range</quote> with <quote>Durncrag Range</quote>. Replaced <quote>neck and</quote> with <quote>neck, and</quote>.</p>
       <p>(<a idref="sect350">350</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
-      <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>, and <quote>top of chart</quote> with <quote>top of the chart</quote>. <!--ERRTAG-RE-316950-ITEM--><quote>fall to 0</quote> with <quote>falls to 0 or below</quote>.<!--/ERRTAG-RE-316950-ITEM--> Replaced <quote>Pick number from</quote> with <quote>Pick a number from the</quote>. Replaced <quote>Turn to Combat</quote> with <quote>Turn to the Combat</quote>. Replaced <quote>to random number</quote> with <quote>to the random number</quote>. Replaced <quote>when <typ class="attribute">ENDURANCE</typ></quote> with <quote>when the <typ class="attribute">ENDURANCE</typ></quote>. Replaced <quote>ignored, only</quote> with <quote>ignored; only</quote>.</p>
-      <p>(<a idref="map">Map</a>) Replaced <quote>Kaltersee</quote> with <quote>Kaltesee</quote>.</p>
+      <p>(<a idref="crsumary">Combat Rules Summary</a>) Replaced <quote>cross reference</quote> with <quote>cross-reference</quote>. Replaced <quote>top of chart</quote> with <quote>top of the chart</quote>. <quote>fall to 0</quote> with <quote>falls to 0 or below</quote>. Replaced <quote>Pick number from</quote> with <quote>Pick a number from the</quote>. Replaced <quote>Turn to Combat</quote> with <quote>Turn to the Combat</quote>. Replaced <quote>to random number</quote> with <quote>to the random number</quote>. Replaced <quote>when <typ class="attribute">ENDURANCE</typ></quote> with <quote>when the <typ class="attribute">ENDURANCE</typ></quote>. Replaced <quote>ignored, only</quote> with <quote>ignored; only</quote>.</p>
      </data>
     </section>
    </data>
