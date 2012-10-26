@@ -1,0 +1,22 @@
+# Makefile for a Project Aon Book
+
+# Series (lw = LoneWolf, gs = GreyStar...)
+SERIES=lw
+# Sub-series (kai, magnakai, grandmaster, neworder, shianti (Grey Star))
+#SUBSERIES=kai
+#SUBSERIES=magnakai
+#SUBSERIES=grandmaster
+#SUBSERIES=neworder
+#SUBSERIES=shianti
+# Book name
+BASENAME=$(shell basename $(CURDIR))
+# Language of the file
+BLANG := en
+
+# For translated documents also add the following: 
+# *English* book name (needed to find the image files)
+#ORIGSERIES=lw
+#ORIGBASENAME=xxxxx
+
+# The rest is common for all books
+include ../Makefile.common

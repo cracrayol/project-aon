@@ -1,0 +1,106 @@
+--- 08tjoh-untweaked.tex	2012-01-15 20:01:14.000000000 +0100
++++ 08tjoh.tex	2012-01-15 20:01:14.000000000 +0100
+@@ -172,7 +172,9 @@
+ % \frontmatter
+ 
+ \addchap{About the Author and Illustrator}
++\begin{sloppypar}
+       {\bfseries Joe Dever}, the creator of the bestselling Lone Wolf adventure books and novels, has achieved world-wide recognition in three creative fields---as an award-winning author of international renown, as an acclaimed musician and composer, and as a games designer specialising in role-playing games.
++\end{sloppypar}
+ 
+ 
+    On graduating from college in 1974, Joe Dever became a professional musician, and for several years, he worked in the music industry in Europe and the United States.
+@@ -203,7 +205,10 @@
+   Gary was working at Games Workshop when Joe Dever asked him to illustrate some of his manuscript of {\itshape Flight from the Dark}. The two teamed up after that and, they continued to work together until the eighth book in the series, {\itshape The Jungle of Horrors}.
+ 
+ 
++\enlargethispage{\baselineskip}
++\begin{sloppypar}
+   Gary has also drawn the illustrations in {\itshape Redwall} and related books, {\itshape The Prince of Shadows} gamebook series, and several books which he also authored. Gary continues to enjoy war gaming and works as an illustrator and model maker.
++\end{sloppypar}
+ 
+ 
+  
+@@ -285,7 +290,9 @@
+ 
+ You keep a record of your adventure on the \hyperlink{action}{\emph{Action Chart}}.
+ 
++\begin{sloppypar}
+ During your training as a Kai Master you have developed fighting prowess---{\sc Combat Skill}---and physical stamina---{\sc Endurance}. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it onto the \hyperlink{random}{\emph{Random Number Table}}. If you pick 0 it counts as zero.
++\end{sloppypar}
+ 
+ The first number that you pick from the \hyperlink{random}{\emph{Random Number Table}} in this way represents your {\sc Combat Skill}. Add 10 to the number you picked and write the total in the {\sc Combat Skill} section of your \hyperlink{action}{\emph{Action Chart}} (i.e. if your pencil fell on the number 4 in the \hyperlink{random}{\emph{Random Number Table}} you would write in a {\sc Combat Skill} of 14). When you fight, your {\sc Combat Skill} will be pitted against that of your enemy. A high score in this section is therefore very desirable.
+ 
+@@ -403,14 +410,16 @@
+ 
+ The Elder Magi offer you a choice of equipment to aid you on your perilous mission. You can take five items from the list below, again adding to these, if necessary, any you may already possess. However, remember that you can carry a maximum of two Weapons and eight Backpack Items.
+ 
++\newpage
+ \begin{aonitemize}
+ \item Sword (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{-.7\baselineskip}
+ \begin{center}
+ \includegraphics[width=54mm,keepaspectratio]{sword.pdf} %
+ \end{center}
+ \vspace{.2\baselineskip}
++\vfill
+ 
+ \item Bow (Weapons)
+ 
+@@ -419,6 +428,7 @@
+ \includegraphics[width=85mm,keepaspectratio]{bow.pdf} %
+ \end{center}
+ \vspace{.2\baselineskip}
++\vfill
+ 
+ \item Quiver (Special Items) This contains six Arrows. Tick them off as they are used.
+ 
+@@ -427,6 +437,7 @@
+ \includegraphics[width=40mm,keepaspectratio]{quiver.pdf} %
+ \end{center}
+ \vspace{.2\baselineskip}
++\vfill
+ 
+ \item Rope (Backpack Items)
+ 
+@@ -435,6 +446,7 @@
+ \includegraphics[width=27mm,keepaspectratio]{rope.pdf} %
+ \end{center}
+ \vspace{.2\baselineskip}
++\vfill
+ 
+ \item Potion of Laumspur (Backpack Items) This potion restores 4 {\sc Endurance} points to your total when swallowed after combat. There is enough for only one dose.
+ 
+@@ -443,18 +455,19 @@
+ \includegraphics[width=5mm,keepaspectratio]{laumspur.pdf} %
+ \end{center}
+ \vspace{.2\baselineskip}
++\vfill
+ 
+ \item Lantern (Backpack Items)\footnote{The Lantern is designed to be self-lighting. You will not need a Tinderbox or any other means of creating a flame to light it.
+ }
+ 
+ \item Mace (Weapons)
+ 
+-\vspace{.2\baselineskip}
+ \begin{center}
+ \includegraphics[width=31mm,keepaspectratio]{mace.pdf} %
+ \end{center}
+-\vspace{.2\baselineskip}
++%\vspace{.2\baselineskip}
+ 
++\newpage
+ \item 3 Meals (Meals) Each Meal takes up one space in your Backpack.
+ 
+ \vspace{.2\baselineskip}
+@@ -589,7 +602,7 @@
+ \end{aonitemize}
+ 
+ 
+-\item On the \hyperlink{action}{\emph{Action Chart}}, mark the changes in {\sc Endurance} points to the participants in the combat.
++\item \begin{sloppypar}On the \hyperlink{action}{\emph{Action Chart}}, mark the changes in {\sc Endurance} points to the participants in the combat.\end{sloppypar}
+ 
+ \item Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.
+ 

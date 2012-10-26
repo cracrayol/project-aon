@@ -1,0 +1,1875 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE gamebook SYSTEM "gamebook.dtd" [
+ <!ENTITY % general.links SYSTEM "genlink.mod">
+ %general.links;
+ <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
+ %xhtml.links;
+
+ <!ENTITY % general.inclusions SYSTEM "geninc.mod">
+ %general.inclusions;
+]>
+
+<gamebook xml:lang="en-UK" version="0.12">
+
+ <meta>
+  <title>Dawn of the Darklords</title>
+  <creator class="short">Joe Dever and Gary Chalk</creator>
+  <creator class="medium">
+   <line>Joe Dever</line>
+   <line>Illustrated by Gary Chalk</line>
+  </creator>
+  <creator class="long">
+   &inclusion.joe.dever.bio.lw;
+   &inclusion.gary.chalk.bio.lw;
+  </creator>
+  <publisher>Project Aon</publisher>
+  <date class="publication"><year>2011</year><month>4</month><day>13</day></date>
+  <description class="blurb">
+   <p>This exciting mini-adventure first appeared in <cite>The Magnamund Companion</cite>. You are Banedon, a journeyman for the Brotherhood of the Crystal Star, Sommerlund<ch.apos/>s Guild of Magicians. You have been given an urgent mission<ch.emdash/>to travel from the city of Toran to the Kai Monastery and deliver a letter of grave importance. Your failure could spell doom for your guild, your country, and maybe even the entire world.</p>
+  </description>
+  <description class="publication">
+   <p>Internet Edition published by <a href="&link.project.website;">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
+  </description>
+  <rights class="copyrights">
+   <line>Text copyright <ch.copy/> 1986 Joe Dever.</line>
+   <line>Illustrations copyright <ch.copy/> 1986 Gary Chalk.</line>
+  </rights>
+  <rights class="license-notification">
+   <p>
+    <line>Text copyright <ch.copy/> 1986 Joe Dever.</line>
+    <line>Illustrations copyright <ch.copy/> 1986 Gary Chalk.</line>
+    <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+   </p>
+  </rights>
+ </meta>
+
+ <section id="toc">
+  <meta />
+  <data />
+ </section>
+
+ <section id="title">
+  <meta>
+   <title>Title Page</title>
+   <link class="next" idref="acknwldg" />
+  </meta>
+
+  <data>
+
+   <section class="frontmatter" id="acknwldg">
+    <meta>
+     <title>Acknowledgements</title>
+     <link class="prev" idref="title" />
+     <link class="next" idref="tssf" />
+    </meta>
+
+    <data>
+
+    &inclusion.joe.dever.endowment;
+
+     <section class="frontmatter" id="credits">
+      <meta><title>Credits</title></meta>
+
+      <data>
+       <dl>
+        <dt>Transcription</dt>
+         <dd>Vito Trifilo</dd>
+        <dt>Illustration Transcription</dt>
+         <dd>Simon Osborne</dd>
+        <dt>XML</dt>
+         <dd>
+          <line>Jonathan Blake</line>
+          <line>Simon Osborne</line>
+         </dd>
+        <dt>Action Charts</dt>
+         <dd>
+          <line>JC Alvarez</line>
+          <line>Jonathan Blake</line>
+         </dd>
+        <dt>Proofreading</dt>
+         <dd>Simon Osborne</dd>
+        <dt>Editing</dt>
+         <dd>
+          <line>David Davis</line>
+          <line>Ingo Kl<ch.ouml/>cker</line>
+          <line>Simon Osborne</line>
+          <line>Laurence O<ch.apos/>Toole</line>
+         </dd>
+        <dt>Coordination</dt>
+         <dd>Jonathan Blake</dd>
+       </dl>
+      </data>
+     </section>
+    </data>
+   </section>
+
+   <section class="frontmatter" id="tssf">
+    <meta>
+     <title>The Story So Far<ch.ellips/></title>
+     <link class="prev" idref="acknwldg" />
+     <link class="next" idref="gamerulz" />
+    </meta>
+
+    <data>
+      <illustration class="inline">
+       <meta>
+        <creator>Gary Chalk</creator>
+       </meta>
+       <instance class="html" src="small2.png" width="386" height="42"  mime-type="image/png"/>
+       <instance class="pdf" src="small2.pdf" width="386" height="42" />
+      </illustration>
+      <p>You are Banedon, a young Journeyman to the Magicians<ch.apos/> Guild of Toran in Sommerlund. In the last two weeks disturbing events have rocked the stability of your guild. A brother magician named Vonotar denounced the Guild and murdered one of the Elders. He disappeared after the crime and your Guildmaster fears that he has fled to Helgedad to aid the Darklords.</p>
+      <p>It is now dawn of the day before the feast of Fehmarn. You have been summoned to the Guildmaster<ch.apos/>s chamber and entrusted with an envelope that must be taken to the Monastery of the Kai. It contains an urgent message for the Kai Grand Master, and your mission is to deliver it by hand at all costs. The Guildmaster warns you to be on your guard at all times, for he fears that enemy agents are already at work within the land. <quote>Travel swiftly, my son,</quote> he says, as you turn to leave his chamber, <quote>and may the luck of the gods go with you.</quote></p>
+    </data>
+   </section>
+
+   <section class="frontmatter" id="gamerulz">
+    <meta>
+     <title>The Game Rules</title>
+     <link class="prev" idref="tssf" />
+     <link class="next" idref="powers" />
+    </meta>
+
+    <data>
+     <p>You keep a record of your adventure on the <a idref="action">Action Chart</a>.</p>
+     <p>Before you start you must determine your fighting prowess (<typ class="attribute">COMBAT SKILL</typ>) and physical stamina (<typ class="attribute">ENDURANCE</typ>). To do this take a pencil and, with your eyes closed, point with the blunt end of it onto the <a idref="random">Random Number Table</a> on the last page of this book. If you pick 0 it counts as zero.</p>
+     <p>The first number that you pick in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 10 to this number and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a>.</p>
+     <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 20 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a>.</p>
+     <p>If you are wounded in combat, or if you use certain spells, you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero or below, you are dead and the adventure is over.</p>
+
+     <section class="frontmatter-separate" id="powers">
+      <meta>
+       <title>Magical Powers</title>
+       <link class="prev" idref="gamerulz" />
+       <link class="next" idref="equipmnt" />
+      </meta>
+
+      <data>
+
+       <section class="frontmatter" id="mksumary">
+        <meta>
+         <title>Magical Powers</title>
+        </meta>
+
+        <data>
+
+        <p>You have mastered only <em>five</em> of the ten spells that the Magicians<ch.apos/> Guild call the <quote>Brotherhood Spells</quote>.</p>
+        <p>When you have chosen your five spells, enter them in the <quote>Brotherhood Spells</quote> section of your <a idref="action">Action Chart</a>.</p>
+
+         <section class="frontmatter" id="lightng">
+         <meta><title>Lightning Hand</title></meta>
+
+          <data>
+           <p>This spell enables you to cast a bolt of lightning, simply by pointing a finger and concentrating upon the spell. Every time this spell is used you must deduct 3 from your <typ class="attribute">ENDURANCE</typ> points total.</p>
+          </data>
+         </section>
+
+         <section class="frontmatter" id="mndcharm">
+         <meta><title>Mind Charm</title></meta>
+
+          <data>
+           <p>Casting this spell upon a person (or creature) will cause that person to regard you as a trusted friend. It will not allow you to control the person, but anything you do or say will be looked on as friendly.</p>
+          </data>
+         </section>
+
+         <section class="frontmatter" id="invsshld">
+         <meta><title>Invisible Shield</title></meta>
+
+          <data>
+           <p>When this spell is cast, an invisible barrier will form as protection from missiles and enemies. However, it will not protect you from magical attacks, and every time it is used you must deduct 2 <typ class="attribute">ENDURANCE</typ> points from your score.</p>
+          </data>
+         </section>
+
+         <section class="frontmatter" id="net">
+         <meta><title>Net</title></meta>
+
+          <data>
+           <p>This spell enables you to cast a web-like net of magical rope at a chosen target. It can be used to ensnare an enemy, or to enable you to climb high walls or obstacles with ease.</p>
+          </data>
+         </section>
+
+         <section class="frontmatter" id="vigour">
+         <meta><title>Vigour</title></meta>
+
+          <data>
+           <p>Casting this spell will increase your <typ class="attribute">COMBAT SKILL</typ> by 3 points for the duration of one combat, at the cost of 3 <typ class="attribute">ENDURANCE</typ> points. It cannot be used if your <typ class="attribute">ENDURANCE</typ> points total is below 10.</p>
+          </data>
+         </section>
+
+         <section class="frontmatter" id="countspl">
+         <meta><title>Counterspell</title></meta>
+
+          <data>
+           <p>This spell may be used to protect yourself, or another person or object of your choice, from a magical attack. Use of this spell costs 2 <typ class="attribute">ENDURANCE</typ> points.</p>
+          </data>
+         </section>
+
+         <section class="frontmatter" id="levitn">
+         <meta><title>Levitation</title></meta>
+
+          <data>
+           <p>This spell may be cast upon yourself, or upon another person or object, to cancel the effects of gravity, and thereby make the affected object rise into the air. The spell lasts no more than a few minutes and its usage costs 2 <typ class="attribute">ENDURANCE</typ> points.</p>
+          </data>
+         </section>
+
+         <section class="frontmatter" id="sensevil">
+         <meta><title>Sense Evil</title></meta>
+
+          <data>
+           <p>When this spell is cast it will enable you to detect the presence of evil in any creature or object close by. However, perils such as traps or naturally poisonous animals will not be detected through the use of this spell.</p>
+          </data>
+         </section>
+
+         <section class="frontmatter" id="mend">
+         <meta><title>Mend</title></meta>
+
+          <data>
+           <p>This spell can be used to repair damaged items or to restore lost <typ class="attribute">ENDURANCE</typ> points. In order for the spell to work, you must be standing in fresh running water, such as a river or stream, when the spell is cast. Using this spell upon yourself will restore 5 <typ class="attribute">ENDURANCE</typ> points.</p>
+          </data>
+         </section>
+
+         <section class="frontmatter" id="silence">
+         <meta><title>Silence</title></meta>
+
+          <data>
+           <p>Casting this spell will muffle the sound of any movement that you make.</p>
+          </data>
+         </section>
+        </data>
+       </section>
+       </data>
+       </section>
+
+     <section class="frontmatter-separate" id="equipmnt">
+      <meta>
+       <title>Equipment</title>
+       <link class="prev" idref="powers"/>
+       <link class="next" idref="cmbtrulz"/>
+      </meta>
+
+      <footnotes>
+       <footnote id="equipmnt-1-foot" idref="equipmnt-1">
+        <p>The new Mongoose Publishing editions of the gamebooks clarify that <quote>You may only use one Weapon at a time in combat.</quote></p>
+       </footnote>
+      </footnotes>
+
+      <data>
+      <p>You wear a Crystal Star Pendant (Special Item). Before leaving the Guildhall, you are given an Envelope that contains the Guildmaster<ch.apos/>s message to the Kai (Special Item), and a pouch of gold. To find out how much gold is in the pouch, pick a number from the <a idref="random">Random Number Table</a>. Now add 10 to this number. The total equals the number of Gold Crowns inside the pouch, and you may now enter this number in the Gold Crowns section of your <a idref="action">Action Chart</a>. The message is carried inside your robe, and you are given a backpack in which to carry any four of the following items:</p>
+
+      <ul class="paragraphed">
+       <li><p>Blanket (Backpack Item)</p></li>
+       <li><p>Healing potion (Backpack Item) This potion restores 2 <typ class="attribute">ENDURANCE</typ> points to your total when swallowed after combat. There is enough for one dose.</p></li>
+       <li><p>Rope (Backpack Item)</p></li>
+       <li><p>Torch (Backpack Item)</p>
+        <illustration class="inline">
+         <meta>
+          <creator>Gary Chalk</creator>
+         </meta>
+         <instance class="html" src="small1.png" width="386" height="69"/>
+         <instance class="pdf" src="small1.pdf" width="386" height="69"/>
+        </illustration>
+       </li>
+       <li><p>2 Meals (Backpack Items) Each Meal takes up one space in your Backpack.</p></li>
+       <li><p>Tinderbox (Backpack Item)</p></li>
+       <li><p>Bottle of Wine (Backpack Item)</p></li>
+      </ul>
+
+      <p>You also possess a Short Sword (Weapon) which you carry in a scabbard.</p>
+
+      <section class="frontmatter" id="howuse">
+       <meta>
+        <title>Using Your Equipment</title>
+       </meta>
+
+       <data>
+        <dl class="paragraphed">
+         <dt>Weapons</dt>
+          <dd><p>If you enter a combat with no Weapons, deduct 4 points from your <typ class="attribute">COMBAT SKILL</typ> and fight with your bare hands. If you find a Weapon during the adventure, you may pick it up and use it. The maximum number of Weapons that you may carry is two.<footref id="equipmnt-1" idref="equipmnt-1-foot"/></p></dd>
+         <dt>Backpack Items</dt>
+          <dd>
+           <p>You may discover various useful items which you may wish to keep. You may exchange or discard them at any point when you are not involved in combat. Your Backpack can carry a maximum of eight articles (including Meals).</p>
+          </dd>
+         <dt>Special Items</dt>
+          <dd>
+           <p>When you discover a Special Item, you will be told how to carry it.</p>
+          </dd>
+         <dt>Gold Crowns</dt>
+          <dd>
+           <p>These are carried in your pouch (maximum 50 Crowns).</p>
+          </dd>
+         <dt>Food</dt>
+          <dd><p>Each Meal counts as one backpack item. If you do not have any food when you are instructed to eat, you will lose 3 <typ class="attribute">ENDURANCE</typ> points.</p></dd>
+        </dl>
+       </data>
+      </section>
+      </data>
+      </section>
+
+    <section class="frontmatter-separate" id="cmbtrulz">
+     <meta>
+      <title>Rules for Combat</title>
+      <link class="prev" idref="equipmnt" />
+      <link class="next" idref="sect1" />
+     </meta>
+
+     <data>
+     <p>There will be occasions during your adventure when you have to fight an enemy. The enemy<ch.apos/>s <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points are given in the text. Your aim during the combat is to kill the enemy by reducing his <typ class="attribute">ENDURANCE</typ> points to zero while at the same time losing as few <typ class="attribute">ENDURANCE</typ> points as possible yourself.</p>
+     <p>At the start of a combat, enter your <typ class="attribute">ENDURANCE</typ> points and the enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> points in the appropriate boxes on the Combat Record section of the <a idref="action">Action Chart</a>.</p>
+     <p>The sequence for combat is as follows:</p>
+      <ol class="paragraphed"> 
+        <li><p>Add any extra points gained through the use of Special Items or spells to your current <typ class="attribute">COMBAT SKILL</typ> total.</p></li>
+        <li><p>Subtract the <typ class="attribute">COMBAT SKILL</typ> of your enemy from this total. The result is your Combat Ratio. Enter it on the <a idref="action">Action Chart</a>.</p></li>
+        <li><p>When you have your Combat Ratio, pick a number from the <a idref="random">Random Number Table</a>.</p></li>
+        <li><p>Turn to the <a idref="crtable">Combat Results Table</a>. Along the top of the chart are shown the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the random number you have picked (the random numbers appear on the side of the chart). You now have the number of <typ class="attribute">ENDURANCE</typ> points lost by both Banedon and his adversary in this round of combat.</p></li>
+        <li><p>On the <a idref="action">Action Chart</a>, mark the changes in <typ class="attribute">ENDURANCE</typ> points to both participants in the combat.</p></li>
+        <li><p>Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.</p></li>
+        <li><p>Repeat the sequence from Stage 3.</p></li>
+      </ol>
+
+      <p>This process of combat continues until the <typ class="attribute">ENDURANCE</typ> points of either the enemy or Banedon are reduced to zero or below, at which point that combatant is declared dead. If Banedon is dead, the adventure is over. If the enemy is dead, Banedon proceeds but with his <typ class="attribute">ENDURANCE</typ> points possibly reduced.</p>
+      <p>A <a idref="crsumary">summary of Combat Rules</a> appears in the back of this book.</p>
+
+      <section class="frontmatter" id="evasion">
+       <meta><title>Evasion of Combat</title></meta>
+
+       <data>
+        <p>During your adventure you may be given the chance to evade combat. If you have already engaged in a round of combat and decide to evade, calculate the combat for that round in the usual manner. All points lost by the enemy as a result of that round are ignored, and you make your escape. Only Banedon may lose <typ class="attribute">ENDURANCE</typ> points during that round (but then that is the risk of running away!). You may evade only if the text of the particular section allows you to do so.</p>
+       </data>
+      </section>
+     </data>
+    </section>
+    </data>
+    </section>
+
+   <section class="numbered" id="numbered">
+    <meta><title>Numbered Sections</title></meta>
+
+    <data>
+
+     <section class="numbered" id="sect1">
+      <meta><title>1</title></meta>
+      <data>
+
+       <illustration class="float">
+        <meta>
+         <creator>Gary Chalk</creator>
+         <description>It is now dawn on the day before the feast of Fehmarn.</description>
+        </meta>
+        <instance class="html" src="ill1.png" width="772" height="200"  mime-type="image/png"/>
+        <instance class="pdf" src="small1.pdf" width="772" height="200" />
+       </illustration>
+
+       <p>A sense of foreboding hangs over you as you mount your horse and head towards the city<ch.apos/>s south gate. There, a couple of tired night guards grumble wearily at your demand for the gate to be opened.</p>
+       <p><quote>What<ch.apos/>s the hurry?</quote> they growl. The door finally opens and you gallop through the arch.</p>
+       <p>Half a mile beyond a stone bridge you see a signpost. An arrow pointing to the south says, <quote>Meadowood ½ mile/Holmgard 80 miles</quote>, and the other arrow, pointing west says simply, <quote>Old Mine Road</quote>.</p>
+       <choice idref="sect7">If you wish to continue south along the highway, <link-text>turn to 7</link-text>.</choice>
+       <choice idref="sect55">If you decide to take the road heading west, <link-text>turn to 55</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect2">
+      <meta><title>2</title></meta>
+
+      <data>
+       <p>Shouting your power-word, you point at the snarling Giaks. The lightning bolt breaks into several smaller energy pulses that rip into the evil warriors, sending them tumbling in all directions. Seizing the opportunity, you turn and run deeper into the ruined temple.</p>
+       <choice idref="sect32"><link-text>Turn to 32</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect3">
+      <meta><title>3</title></meta>
+
+      <data>
+       <p>Reining your horse to a halt, you stare down at the two dead Rangers. Their chests are scorched as if they were both struck by lightning. A Sword and a Mace lie close by. You may take either of these weapons.</p>
+       <choice idref="sect31"><link-text>Turn to 31</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect4">
+      <meta><title>4</title></meta>
+
+      <data>
+       <p>The one-roomed hut is damp and deserted. You scan the moss-covered walls for a good hiding place and your attention is caught by a large stone fireplace. You waste no time in climbing up the flue. Minutes later you hear the Giaks enter the hut in search of you. You try to keep as still as possible but you are desperate to sneeze.</p>
+       <choice idref="sect74">If you have the spell <spell>Silence</spell> and wish to use it, <link-text>turn to 74</link-text>.</choice>
+       <choice idref="sect22">If you do not possess this spell, <link-text>turn to 22</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect5">
+      <meta><title>5</title></meta>
+
+      <data>
+       <p>A search of the cupboards uncovers 2 Gold Crowns, enough food for one Meal, and the old man<ch.apos/>s Silver Warhammer. If you wish to take this, mark it on your <a idref="action">Action Chart</a> as a Special Item which you carry tucked into your belt.</p>
+       <choice idref="sect15"><link-text>Turn to 15</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect6">
+      <meta><title>6</title></meta>
+
+      <data>
+       <p><quote>Quickly, take cover in the forest,</quote> you shout to Daron and Thelda. But their little pony is terrified by the black-winged Kraan. It panics and gallops off into the trees on the other side of the highway. You are forced to ride deeper into the forest to avoid the black arrows of their Giak riders.</p>
+       <choice idref="sect73"><link-text>Turn to 73</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect7">
+      <meta><title>7</title></meta>
+
+      <data>
+       <p>A few minutes later you see a line of wagons on the highway ahead. A group of merchants are arguing with a patrol of Border Rangers who stand guard at a barricade. The Rangers are refusing to allow anyone to pass through the village of Meadowood. <quote>No good you trying,</quote> calls a disgruntled coachman.</p>
+       <choice idref="sect48">If you wish to ask the Rangers to allow you through, <link-text>turn to 48</link-text>.</choice>
+       <choice idref="sect57">If you wish to stop and talk to the coachman, <link-text>turn to 57</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect8">
+      <meta><title>8</title></meta>
+
+      <data>
+       <p>You cast your spell and catch all three of them by surprise. They struggle to free themselves but to no avail. The Kraan, fearing its riders have fallen into the clutches of a hideous monster, flies away to avoid a similar fate. The path is now clear and you seize your chance of escape.</p>
+       <choice idref="sect47"><link-text>Turn to 47</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect9">
+      <meta><title>9</title></meta>
+
+      <data>
+       <p>Suddenly, a wave of pain makes you scream out. Two arrows have passed through your chest and back, smashing the air from your lungs. You fall from the saddle, crashing to the soft earth with a terrible jolt.</p>
+       <p>The last thing you hear are gasps of horror as the Rangers recognize your sky-blue robes.</p>
+       <p>Your life and your mission end here.</p>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect10">
+      <meta><title>10</title></meta>
+
+      <data>
+       <p>As night falls, you reach the tiny village of Oak Hill, less than twenty miles from the Monastery of the Kai. There is no tavern here, but the blacksmith is well known for his generous hospitality.</p>
+       <choice idref="sect66">If you wish to stop at the blacksmith<ch.apos/>s house, <link-text>turn to 66</link-text>.</choice>
+       <choice idref="sect79">If you choose to sleep out in the open, <link-text>turn to 79</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect11">
+      <meta><title>11</title></meta>
+
+      <data>
+       <p>For over an hour you move stealthily through the trees, straining for the sound of an approaching Giak patrol or nearby Kraan.</p>
+       <p>Gradually the trees begin to thin out and you can see the ruins of an ancient temple. You take refuge beneath a fallen pillar. As you catch your breath, you remove the Guildmaster<ch.apos/>s Envelope from your robe. Now that war has begun, it will be safer to commit its contents to memory rather than allow it to fall into enemy hands.</p>
+       <choice idref="sect42"><link-text>Turn to 42</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect12">
+      <meta><title>12</title></meta>
+
+      <data>
+       <p>As you rush into the fray, the familiar sound of Kraan wings return. Hovering above you are six of the fearsome creatures. The peasants panic and flee, leaving you to face the Kraan alone.</p>
+       <choice idref="sect37">If you wish to stand and fight, <link-text>turn to 37</link-text>.</choice>
+       <choice idref="sect59">If you wish to try to escape, <link-text>turn to 59</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect13">
+      <meta><title>13</title></meta>
+
+      <data>
+       <p>Hurriedly, you cast the spell, circling your palm behind your head to form the shield. An instant later, two arrows just miss your back. Your magic has saved your life, but it has not protected you from a third arrow that gouges your left leg. Lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
+       <p>Wincing with pain, you press on until you have left the archers far behind.</p>
+       <choice idref="sect15"><link-text>Turn to 15</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect14">
+      <meta><title>14</title></meta>
+
+      <data>
+       <p>You soon learn that your companions<ch.apos/> names are Daron and Thelda, and that their father owns a bakery at Searsby.</p>
+       <p>An hour has passed when you hear the beat of huge wings. A great cloud of black-winged creatures appears flying in a vast formation that darkens the sky. Your heart sinks. The Darklords, the ancient enemy of your people, are attacking. War has begun.</p>
+       <choice idref="sect49">If you wish to continue along the highway, <link-text>turn to 49</link-text>.</choice>
+       <choice idref="sect6">If you decide to seek the shelter of the forest, <link-text>turn to 6</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect15">
+      <meta><title>15</title></meta>
+
+      <data>
+       <p>The track continues for several miles down a steep wooded hillside to arrive at a little bridge spanning a deep, crystal-clear stream. A young woman dressed in padded leather armour stands there, warily watching you approach.</p>
+       <p><quote>Where are you bound for, young wizard?</quote> she asks.</p>
+       <choice idref="sect54">If you wish to tell her your destination, <link-text>turn to 54</link-text>.</choice>
+       <choice idref="sect76">If you demand that she allow you across the bridge, <link-text>turn to 76</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect16">
+      <meta><title>16</title></meta>
+
+      <data>
+       <p>The Giaks form a semicircle, holding you at bay with the points of their spears. Suddenly, a clutch of Kraan glides across the trees and drop their riders almost on top of you. Their leader screams <foreign xml:lang="x-giak"><quote>Darg!</quote></foreign> and, as one, the Giaks charge.</p>
+       <choice idref="sect37"><link-text>Turn to 37</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect17">
+      <meta><title>17</title></meta>
+
+      <data>
+       <p>As you whisper the spell-chant, a wave of fear numbs your senses.</p>
+       <p>You are in the presence of a great and malicious evil. The woman senses your fear and a smile spreads across her face.</p>
+       <choice idref="sect54"><link-text>Turn to 54</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect18">
+      <meta><title>18</title></meta>
+
+      <data>
+       <p>Your quick thinking saves you from the full impact of the lightning bolt. It passes close by your head, blistering the skin on your cheek and causing your hair to smoulder. The Helghast screams a terrible cry that claws at your mind (lose 3 <typ class="attribute">ENDURANCE</typ> points), but the pain quickly fades as you gallop away from the village.</p>
+       <choice idref="sect46"><link-text>Turn to 46</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect19">
+      <meta><title>19</title></meta>
+
+      <data>
+       <p>As you leave your hiding place, a cry echoes in your ears. <foreign xml:lang="x-giak"><quote>Orgadak<ch.emdash/>Dok taag!</quote></foreign> You thrust the Envelope back into your robes and clamber across the ruins. Giaks appear as if from nowhere; one has his arm drawn back ready to throw a spear.</p>
+       <choice idref="sect2">If you have the spell <spell>Lightning Hand</spell> and wish to use it, <link-text>turn to 2</link-text>.</choice>
+       <choice idref="sect51">If you wish to try to dodge the spear, <link-text>turn to 51</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect20">
+      <meta><title>20</title></meta>
+
+      <data>
+       <p>You whisper the spell under your breath. A shiver runs the length of your spine as you sense evil. It comes, not from the cabin, but from the wooded hills beyond. It is many miles away but you can feel it drawing closer.</p>
+       <choice idref="sect67">If you wish to hide in the cabin, <link-text>turn to 67</link-text>.</choice>
+       <choice idref="sect15">If you wish to turn away from the approaching evil and press on through the forest, <link-text>turn to 15</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect21">
+      <meta><title>21</title></meta>
+
+      <data>
+       <p>You arrive in time to witness a handful of peasants armed with pitchforks attacking two Giaks on Doomwolves. Although superior in numbers, they are no match for these ferocious fighters who have already killed many of their kinfolk.</p>
+       <choice idref="sect12">If you wish to aid the peasants, <link-text>turn to 12</link-text>.</choice>
+       <choice idref="sect47">If you choose to avoid the fight, you can run back along the track by <link-text>turning to 47</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect22">
+      <meta><title>22</title></meta>
+
+      <data>
+       <p>You cannot hold back the sneeze. Within seconds, three ugly Giak faces are squinting up the chimney at you, prodding your feet with their spears. You hurriedly climb the flue only to find a couple of Kraan hovering above. They drop their Giak riders on the roof, and a voice shrieks: <foreign xml:lang="x-giak"><quote>Dok ek!</quote></foreign></p>
+
+       <illustration class="inline">
+        <meta>
+         <creator>Gary Chalk</creator>
+        </meta>
+        <instance class="html" src="small3.png" width="386" height="125"  mime-type="image/png"/>
+        <instance class="pdf" src="small3.pdf" width="386" height="125" />
+       </illustration>
+
+      <choice idref="sect37"><link-text>Turn to 37</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect23">
+      <meta><title>23</title></meta>
+
+     <footnotes>
+      <footnote id="sect23-1-foot" idref="sect23-1">
+       <p>This section is currently unreachable and cannot be brought back into the game.</p>
+      </footnote>
+     </footnotes>
+
+      <data>
+       <p><footref id="sect23-1" idref="sect23-1-foot"/>The innkeeper<ch.apos/>s cheerful mood changes to a stony stare. <quote>Get out o<ch.apos/> here!</quote> he shouts angrily.</p>
+       <choice idref="sect75">If you have the spell <spell>Mind Charm</spell> and wish to use it, <link-text>turn to 75</link-text>.</choice>
+       <choice idref="sect7">If you wish to leave the tavern, <link-text>turn to 7</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect24">
+      <meta><title>24</title></meta>
+
+      <data>
+       <p>As the smiling Ranger walks nearer, your horse becomes nervous and skittish. It takes a great deal of effort to bring him under control. When you glance at the Ranger once more, your skin prickles with dread at the change that has come over him. The skin of his face is writhing. It is changing colour, growing darker and tighter on his skull. His eyes glow with a red fire and fangs sprout from his bottom lip. A wave of panic leaves you breathless as you realize he is a Helghast, a hellish agent of the Darklords. A blue flame ignites at the tip of his staff and a searing charge of energy leaps towards your chest.</p>
+
+       <illustration class="float">
+        <meta>
+         <creator>Gary Chalk</creator>
+        <description>He is a Helghast, a hellish servant of the Darklords.</description>
+        </meta>
+        <instance class="html" src="ill2.png" width="386" height="316"  mime-type="image/png"/>
+        <instance class="pdf" src="ill2.pdf" width="386" height="316" />
+       </illustration>
+
+       <choice idref="sect41">If you possess the spell <spell>Invisible Shield</spell> and wish to use it, <link-text>turn to 41</link-text>.</choice>
+       <choice idref="sect58">If you possess the spell <spell>Counterspell</spell> and wish to use it, <link-text>turn to 58</link-text>.</choice>
+       <choice idref="sect72">If you have neither of these spells, <link-text>turn to 72</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect25">
+      <meta><title>25</title></meta>
+
+      <data>
+       <p>You invoke the spell and, to the astonishment of the Giaks, leap over the edge. You are able to control your rate of descent, and gently you come to rest in a shallow ravine. You can hear the cries of Kraan and Giaks echoing through the forest. The trees are thicker to the south and you press on in that direction.</p>
+       <choice idref="sect45"><link-text>Turn to 45</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect26">
+      <meta><title>26</title></meta>
+
+      <data>
+       <p>Spreading the fingers of your right hand wide apart, you breathe the spell-runes. The net wraps around the old man, pinning him firmly to his chair. As you step forward to take away his Warhammer, the yellow bird swoops down and gouges your cheek before flying out of an open window. Lose 2 <typ class="attribute">ENDURANCE</typ> points.</p>
+       <p><quote>Leave me be,</quote> whimpers the old man. <quote>Take what little I have but spare my life.</quote></p>
+       <choice idref="sect39">If you wish to free him from the net, <link-text>turn to 39</link-text>.</choice>
+       <choice idref="sect5">If you decide to leave him tied up and search his cabin for useful items, <link-text>turn to 5</link-text>.</choice>
+       <choice idref="sect15">If you choose to leave the cabin and continue on your mission, <link-text>turn to 15</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect27">
+      <meta><title>27</title></meta>
+
+      <data>
+       <p>After waiting several minutes for a unit of Giaks to march away you whisper the spell and take to the air. Unfortunately, the effects wear off as you near the middle of the lake, and gradually you descend into the cold dark waters of Lake Pewas.</p>
+       <p>You are forced to discard all your equipment, except for your Crystal Star Pendant and Guildmaster<ch.apos/>s Envelope, for fear of drowning (erase all but these two Special Items from your <a idref="action">Action Chart</a>).</p>
+       <p>Eventually, you reach the far side and stumble ashore, cold and bedraggled. However, if you possess the spell <spell>Mend</spell>, you may restore 5 <typ class="attribute">ENDURANCE</typ> points to your current total, for you were able to cast the spell whilst swimming across the lake.</p>
+       <choice idref="sect11"><link-text>Turn to 11</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect28">
+      <meta><title>28</title></meta>
+
+      <data>
+       <p>The captain is insulted by your attempt at bribery. He knocks the coins from your hand and forces you away from the barricade at the point of his sword. Erase half the number of Gold Crowns that are noted on your <a idref="action">Action Chart</a>.</p>
+
+       <illustration class="inline">
+        <meta>
+         <creator>Gary Chalk</creator>
+        </meta>
+        <instance class="html" src="small4.png" width="386" height="234"  mime-type="image/png"/>
+        <instance class="pdf" src="small4.pdf" width="386" height="234" />
+       </illustration>
+
+       <p>There is little you can do except try to circle the village under cover of the forest.</p>
+       <choice idref="sect63"><link-text>Turn to 63</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect29">
+      <meta><title>29</title></meta>
+
+      <data>
+       <p>You bite your lip as an arrowhead gouges a deep furrow across your thigh (lose 4 <typ class="attribute">ENDURANCE</typ> points). The pain makes you swoon but you manage to press on until you have left the Rangers far behind.</p>
+       <choice idref="sect15"><link-text>Turn to 15</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect30">
+      <meta><title>30</title></meta>
+
+      <data>
+       <p>You sense no evil in these children and you have no cause to doubt their word. They smile with joy when you agree to join them on the ride south.</p>
+       <choice idref="sect14"><link-text>Turn to 14</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect31">
+      <meta><title>31</title></meta>
+
+      <data>
+       <p>From around a bend in the street ahead, a Ranger appears. He is carrying a long black staff. He smiles and waves at you to slow down.</p>
+       <choice idref="sect24">If you wish to slow down and see what he wants, <link-text>turn to 24</link-text>.</choice>
+       <choice idref="sect38">If you decide to ignore him and gallop on, <link-text>turn to 38</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect32">
+      <meta><title>32</title></meta>
+
+      <data>
+       <p>A Giak, taller than the others and dressed from head to foot in black chainmail, curses and whips his troops with a barbed flail to get them to pursue you.</p>
+       <p>Suddenly, a figure dressed in green leaps out of the undergrowth wielding an axe. Your heart skips a beat as he raises the weapon to strike, but he fells a Giak lurking behind your back<ch.emdash/>not you! The stranger has saved your life.</p>
+       <choice idref="sect40"><link-text>Turn to 40</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect33">
+      <meta><title>33</title></meta>
+
+      <data>
+       <p><quote>Welcome to my humble home, welcome,</quote> beams the wrinkle-faced old man.</p>
+       <p>As you close the door, a sudden shriek sets your nerves on edge. <quote>Now, now, Galir!</quote> says the old man, reproving a large yellow-feathered bird perched on a mirror above the mantelpiece. Irritably it flaps its wings and emits a curious warbling sound that the old man appears to understand. The man<ch.apos/>s expression becomes less friendly and his fingers tighten around the silver handle of an ornate Warhammer.</p>
+       <choice idref="sect26">If you have the spell <spell>Net</spell> and wish to use it, <link-text>turn to 26</link-text>.</choice>
+       <choice idref="sect44">If you wish to draw your sword and attack the old man, <link-text>turn to 44</link-text>.</choice>
+       <choice idref="sect15">If you wish to escape into the forest, <link-text>turn to 15</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect34">
+      <meta><title>34</title></meta>
+
+      <data>
+       <p>As the foul creature dies it tumbles from the bridge and is washed away by the fast-flowing stream. If you have the spell <spell>Mend</spell>, you can take this opportunity to restore 5 lost <typ class="attribute">ENDURANCE</typ> points by wading into the water and casting the spell. Before remounting your horse, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
+       <choice idref="sect10">Now <link-text>turn to 10</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect35">
+      <meta><title>35</title></meta>
+
+      <data>
+       <p>The Kraan heads west and soon lands in a clearing teeming with Giak soldiers. Roughly you are dragged from the saddle and thrown into a deep pit that holds three other humans, all Sommlending like yourself.</p>
+       <choice idref="sect78">If you have the spell <spell>Levitation</spell> and wish to use it, <link-text>turn to 78</link-text>.</choice>
+       <choice idref="sect65">If you do not possess this spell, <link-text>turn to 65</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect36">
+      <meta><title>36</title></meta>
+
+      <data>
+       <p>You wake at dawn, refreshed and eager to continue your mission. The blacksmith<ch.apos/>s nephew and niece join you for a hearty breakfast and then accompany you to the stable to collect your horse. They share a small black pony called Bobin.</p>
+       <choice idref="sect14"><link-text>Turn to 14</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect37">
+      <meta><title>37</title></meta>
+
+      <data>
+       <p>You put up a brave struggle but you are soon overwhelmed. They tie your hands and confiscate everything you possess, except for your Crystal Star Pendant, and the Guildmaster<ch.apos/>s Message, both of which they fail to discover.</p>
+       <p><foreign xml:lang="x-giak"><quote>Dok ziran,</quote></foreign> shouts a Giak officer pointing at you, <foreign xml:lang="x-giak"><quote>Dok kag eg oknar oka.</quote></foreign></p>
+       <p>Suddenly you are grabbed and thrown across the saddle of a Kraan. An ugly-faced Giak sits behind you, his knife held to your throat as the beast takes to the air.</p>
+       <choice idref="sect60">If you have the spell <spell>Lightning Hand</spell> and wish to use it, <link-text>turn to 60</link-text>.</choice>
+       <choice idref="sect35">If you do not have this spell, or if you do not wish to use it, <link-text>turn to 35</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect38">
+      <meta><title>38</title></meta>
+
+      <data>
+       <p>The Ranger raises his black staff and aims it at your chest. A wave of nausea knots your stomach as suddenly you witness a terrible change. The skin that covers the Ranger<ch.apos/>s face is writhing, growing darker and tighter on his skull. His eyes glow red and great curved fangs have pushed themselves through his lower jaw. You stifle a scream as you realize he is a Helghast, a powerful shape-changing agent of the Darklords. A blazing blue flame ignites at the tip of his staff and a bolt of energy leaps towards your chest.</p>
+       <choice idref="sect58">If you have the spell <spell>Counterspell</spell> and wish to use it, <link-text>turn to 58</link-text>.</choice>
+       <choice idref="sect52">If you do not have this spell you can try to dodge the energy bolt by <link-text>turning to 52</link-text>.</choice>
+       <choice idref="sect72">Or you can try to trample the Helghast beneath your horse<ch.apos/>s hooves. <link-text>Turn to 72</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect39">
+      <meta><title>39</title></meta>
+
+      <data>
+       <p><quote>Take it easy, old man. I mean you no harm,</quote> you say, as you cut the magical netting that binds him to his rocking chair. <quote>Your yellow bird seems to have misjudged me, for I have not come here to rob you.</quote> The old man listens with interest to your explanation and gives you some advice on how to reach the Monastery of the Kai.</p>
+       <p>You thank the old man and as you turn to leave he offers to exchange his Warhammer for any two items in your Backpack (excluding Meals). If you wish to make the exchange, erase two items of your choice and mark the Silver Warhammer as a Special Item which you carry tucked into your belt.</p>
+       <choice idref="sect15"><link-text>Turn to 15</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect40">
+      <meta><title>40</title></meta>
+
+      <data>
+       <p>On seeing the green-cloaked stranger emerge from the woods, the Giak officer orders his troops to run to the shelter of the forest. For the time being, the danger has passed.</p>
+       <p>Wiping the sweat from your brow, you turn to thank your unexpected rescuer and, as you do so, you recognize the clothes he wears: they are the green tunic and cloak of a Kai initiate.</p>
+       <choice idref="sect80"><link-text>Turn to 80</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect41">
+      <meta><title>41</title></meta>
+
+      <data>
+       <p>Drawing your hand across your face to invoke the spell, you form an invisible shield between yourself and the bolt of energy. Unfortunately, the bolt is magical, and it passes through the shield unhindered.</p>
+       <choice idref="sect72"><link-text>Turn to 72</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect42">
+      <meta><title>42</title></meta>
+
+      <data>
+       <p>The message is a warning that the Darklords have mustered a vast army beyond the Durncrag Range. The Guildmaster urges the Kai to cancel the feast of Fehmarn and prepare immediately for war. He fears that Sommerlund has been betrayed by a wizard of the brotherhood, called Vonotar.</p>
+       <p>Suddenly, you hear the crunch of iron-shod boots on stone, and before you can destroy the Guildmaster<ch.apos/>s message, a Giak booms: <foreign xml:lang="x-giak"><quote>Zazgog rek okaka.</quote></foreign></p>
+       <choice idref="sect62">If you wish to stay where you are, <link-text>turn to 62</link-text>.</choice>
+       <choice idref="sect19">If you wish to move deeper into the ruins, <link-text>turn to 19</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect43">
+      <meta><title>43</title></meta>
+
+      <data>
+       <p>The Border Rangers of Sommerlund are expert archers, and as you hear the hiss of their arrows speeding towards your back you pray that luck is on your side.</p>
+       <choice idref="sect13">If you possess the spell <spell>Invisible Shield</spell>, <link-text>turn to 13</link-text>.</choice>
+       <p>If you do not have this spell, pick a number from the <a idref="random">Random Number Table</a>.</p>
+       <choice idref="sect69">If the number you have chosen is 0<ch.endash/>2, <link-text>turn to 69</link-text>.</choice>
+       <choice idref="sect9">If the number is 3<ch.endash/>7, <link-text>turn to 9</link-text>.</choice>
+       <choice idref="sect29">If the number is 8<ch.endash/>9, <link-text>turn to 29</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect44">
+      <meta><title>44</title></meta>
+
+      <data>
+       <p>You strike at the old man<ch.apos/>s head, but he parries your blow with his Warhammer. To your horror, your Sword<ch.apos/>s blade disintegrates as soon as it touches the weapon<ch.apos/>s silver haft. Cackling with glee, the old man leaps into the attack, brandishing his enchanted Warhammer above his head.</p>
+       <combat><enemy>Old Tadeus</enemy><enemy-attribute class="combatskill">18</enemy-attribute><enemy-attribute class="endurance">18</enemy-attribute></combat>
+       <p>You must deduct 4 points from your <typ class="attribute">COMBAT SKILL</typ> for you are now unarmed. If you have the spell <spell>Vigour</spell>, you may cast it to increase your <typ class="attribute">COMBAT SKILL</typ>, but be sure to deduct 3 <typ class="attribute">ENDURANCE</typ> points accordingly.</p>
+       <choice idref="sect15">You may evade combat after three rounds by escaping to your horse. <link-text>Turn to 15</link-text>.</choice>
+       <choice idref="sect5">If you win the combat, <link-text>turn to 5</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect45">
+      <meta><title>45</title></meta>
+
+      <data>
+       <p>You come to the edge of a small lake where many Giaks and Drakkarim are being marshalled into units. You sense that the Kai Monastery lies on the other side of the lake, and you try to think of a way to get across the water unseen.</p>
+
+       <illustration class="float">
+        <meta>
+        <description>Many Giaks and Drakkarim are being marshalled into units.</description>
+         <creator>Gary Chalk</creator>
+        </meta>
+        <instance class="html" src="ill3.png" width="784" height="331"  mime-type="image/png"/>
+        <instance class="pdf" src="ill3.pdf" width="784" height="331" />
+       </illustration>
+
+       <choice idref="sect27">If you have the spell <spell>Levitation</spell> and you wish to use it, <link-text>turn to 27</link-text>.</choice>
+       <choice idref="sect53">If you want to swim across the lake, <link-text>turn to 53</link-text>.</choice>
+       <choice idref="sect68">If you decide to skirt around the lake, under cover of the forest, <link-text>turn to 68</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect46">
+      <meta><title>46</title></meta>
+
+      <data>
+       <p>You have ridden several miles before you dare rest. You stop by the banks of a stream and allow your horse to drink. If you have the spell <spell>Mend</spell>, you can take this opportunity to restore 5 lost <typ class="attribute">ENDURANCE</typ> points by standing in the stream and casting the spell. Before you remount and continue, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
+       <choice idref="sect10">Now <link-text>turn to 10</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect47">
+      <meta><title>47</title></meta>
+
+      <data>
+       <p>You climb through a tunnel of trees and emerge at the top of a rocky knoll. About three miles to the south you can see a huge cloud of Kraan circling a grey stone building. You watch with grim fascination as they tear at the walls with their talons. Suddenly, you are disturbed by the sound of rustling undergrowth, and you spin around in time to see a handful of Giaks charging towards you. You turn to run, but find yourself teetering on the brink of a steep drop.</p>
+       <choice idref="sect25">If you have the spell <spell>Levitation</spell>, <link-text>turn to 25</link-text>.</choice>
+       <choice idref="sect16">If you do not have this spell, or if you do not wish to use it, <link-text>turn to 16</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect48">
+      <meta><title>48</title></meta>
+
+      <data>
+       <p>The Rangers are not impressed by your request to be allowed through Meadowood. A Ranger captain tells you to return to Toran. They are searching for a spy who has murdered three of his men. Until he is caught, nobody can pass through Meadowood.</p>
+       <choice idref="sect77">If you have the spell <spell>Mind Charm</spell> and wish to use it, <link-text>turn to 77</link-text>.</choice>
+       <choice idref="sect28">If you do not have this spell, you can offer him some Gold Crowns by <link-text>turning to 28</link-text>.</choice>
+       <choice idref="sect63">Or you can try to circle Meadowood by riding through the forest. <link-text>Turn to 63</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect49">
+      <meta><title>49</title></meta>
+
+      <data>
+       <p>A dozen black-winged creatures appear overhead. They are Kraan, and on their backs are shrieking Giaks eager to fight. Suddenly, the Kraan swoop.</p>
+       <choice idref="sect56">If you have the spell <spell>Lightning Hand</spell> and wish to use it, <link-text>turn to 56</link-text>.</choice>
+       <choice idref="sect6">If you wish to evade the attack by entering the forest, <link-text>turn to 6</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect50">
+      <meta><title>50</title></meta>
+
+      <data>
+       <p>The foul-mouthed Giaks cackle with joy as they close in for combat. You must fight all three as one enemy.</p>
+       <combat><enemy>Giaks</enemy><enemy-attribute class="combatskill">16</enemy-attribute><enemy-attribute class="endurance">18</enemy-attribute></combat>
+       <choice idref="sect70">You can evade combat after three rounds by running into the forest. <link-text>Turn to 70</link-text>.</choice>
+       <choice idref="sect47">If you win the combat, you can escape along the south path by <link-text>turning to 47</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect51">
+      <meta><title>51</title></meta>
+
+      <data>
+       <p>You dive aside and the spear whistles past your arm, tearing the cuff of your robe but drawing no blood. Quickly, you scramble to your feet and run deeper into the ruins.</p>
+       <choice idref="sect32"><link-text>Turn to 32</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect52">
+      <meta><title>52</title></meta>
+
+      <data>
+       <p>You have barely seconds to act. Desperately you jerk your horse to the left to avoid the crackling blue pulse of flame.</p>
+       <p>Pick a number from the <a idref="random">Random Number Table</a>.</p>
+       <choice idref="sect18">If the number you have chosen is 0<ch.endash/>6, <link-text>turn to 18</link-text>.</choice>
+       <choice idref="sect72">If the number is 7<ch.endash/>9, <link-text>turn to 72</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect53">
+      <meta><title>53</title></meta>
+
+      <data>
+       <p>You leave all you carry (except for your Crystal Star Pendant and Guildmaster<ch.apos/>s Envelope) on this side of the lake, for fear of drowning.</p>
+       <p>After fifteen minutes you reach the far side and stumble ashore, cold and bedraggled. However, if you possess the spell <spell>Mend</spell>, you may restore 5 <typ class="attribute">ENDURANCE</typ> points to your current total, for you were able to cast the spell whilst swimming across the lake.</p>
+       <choice idref="sect11"><link-text>Turn to 11</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect54">
+      <meta><title>54</title></meta>
+
+      <data>
+       <p>She unsheathes a black sword and emits a hideous laugh. The skin on her face is starting to writhe and change colour, growing darker with each passing second. Her eyes glow with red fire and long fangs appear from her lower jaw as she creeps slowly towards you. Shock leaves you breathless as you realize that she is a Helghast, a powerful shape-changing servant of the Darklords. Before you can think of using one of your spells, the Helghast hauls you out of the saddle. You land heavily on the stony ground and fumble in desperation for a weapon as the creature<ch.apos/>s black sword whistles towards your head.</p>
+       <choice idref="sect64">If you have a Silver Warhammer, <link-text>turn to 64</link-text>.</choice>
+       <choice idref="sect61">If you do not possess this Special Item, <link-text>turn to 61</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect55">
+      <meta><title>55</title></meta>
+
+      <data>
+       <p>This road is little better than a rough forest track. Soon all trace of it disappears. You urge your horse through a mass of tangled undergrowth until you happen upon a moss-covered log cabin.</p>
+       <choice idref="sect20">If you have the spell <spell>Sense Evil</spell> and if you wish to use it, <link-text>turn to 20</link-text>.</choice>
+       <choice idref="sect67">If you wish to take a closer look at the cabin, <link-text>turn to 67</link-text>.</choice>
+       <choice idref="sect15">If you wish to press on and try to find traces of the old mine road, <link-text>turn to 15</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect56">
+      <meta><title>56</title></meta>
+
+      <data>
+       <p>You release a bolt of lightning at the first of a number of Kraan screaming towards you. The pulse of energy tears through its chest, flipping it backwards and scattering its Giak crew like rag dolls. Two Kraan collide with it in mid-air and come crashing down in a tangled heap.</p>
+
+       <illustration class="inline">
+        <meta>
+         <creator>Gary Chalk</creator>
+        </meta>
+        <instance class="html" src="small5.png" width="386" height="238"  mime-type="image/png"/>
+        <instance class="pdf" src="small5.pdf" width="386" height="238" />
+       </illustration>
+
+       <p>However, your magic has attracted more Kraan and quickly you realize you must take to the forest if you are to avoid being overwhelmed.</p>
+       <choice idref="sect6"><link-text>Turn to 6</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect57">
+      <meta><title>57</title></meta>
+
+      <data>
+       <p>You learn that the Rangers are searching for a Darklord spy. Last night he killed three Rangers, here in Meadowood. He escaped but is still somewhere in the area. The Rangers have sealed off the highway and are not letting anyone through until the spy is caught or killed.</p>
+       <choice idref="sect48">If you wish to approach the Rangers and ask them to allow you to pass, <link-text>turn to 48</link-text>.</choice>
+       <choice idref="sect55">If you decide to ride back to the junction at Old Mine Road and try to circle the village, <link-text>turn to 55</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect58">
+      <meta><title>58</title></meta>
+
+      <data>
+       <p>You shout the spell-words and feel a chill as some of your body warmth drains away to form the <spell>Counterspell</spell>. A flat sphere of translucent red mist suddenly appears in the path of the oncoming bolt and, as they collide, a splash of violet flame erupts in front of your eyes. A tremendous shock wave knocks you back in the saddle and your startled horse rears up, but somehow you manage to regain control. The Helghast emits a cry that rakes your mind (lose 2 <typ class="attribute">ENDURANCE</typ> points), but the pain quickly fades as you gallop away from Meadowood.</p>
+       <choice idref="sect46"><link-text>Turn to 46</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect59">
+      <meta><title>59</title></meta>
+
+      <data>
+       <p>You race back along the forest track, but a Kraan swoops down and drops three Giaks on the path ahead. They unsheathe curved swords and utter vile curses as they stalk nearer.</p>
+       <choice idref="sect8">If you have the spell <spell>Net</spell> and wish to use it, <link-text>turn to 8</link-text>.</choice>
+       <choice idref="sect50">If you wish to draw your weapon and fight these three Giak soldiers, <link-text>turn to 50</link-text>.</choice>
+       <choice idref="sect70">If you wish to escape into the forest, <link-text>turn to 70</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect60">
+      <meta><title>60</title></meta>
+
+      <data>
+       <p>Carefully, you point your finger at the grinning Giak rider and say the power-words. There is an intense flash of blue light and a scream as your bolt decapitates him. His body somersaults backwards off the Kraan which begins to climb, its load instantly halved. The spell has burned through your bonds and now you can pull yourself into a sitting position. With blows to its head and neck, you force the Kraan to land in the forest. As soon as its clawed feet touch the soil, you leap from the saddle and run for cover.</p>
+       <choice idref="sect11"><link-text>Turn to 11</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect61">
+      <meta><title>61</title></meta>
+
+      <data>
+       <p>The creature laughs manically as it raises the sword to strike again. Valiantly you try to fend off the attack, but you are greatly weakened through loss of blood. The last thing you hear as the black sword descends is the Helghast<ch.apos/>s mocking laugh of victory.</p>
+       <p>Your life and your mission end here.</p>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect62">
+      <meta><title>62</title></meta>
+
+      <data>
+       <p>You place the Envelope back into your robe and peek carefully over a broken marble slab. A squad of Giaks have entered the ruins and are systematically searching every square inch. Suddenly, a group appear to your left. They see you and raise the alarm: <foreign xml:lang="x-giak"><quote>Orgadak!</quote></foreign></p>
+       <choice idref="sect2">If you have the spell <spell>Lightning Hand</spell> and wish to use it, <link-text>turn to 2</link-text>.</choice>
+       <choice idref="sect32">If you wish to evade the Giaks, <link-text>turn to 32</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect63">
+      <meta><title>63</title></meta>
+
+      <data>
+       <p>The dense foliage makes it difficult to pass through the trees on horseback, so you keep to a narrow track. Suddenly, a patrol of Rangers rush out of the trees behind you. They have bows and are preparing to fire them at you.</p>
+       <choice idref="sect9">If you wish to call out to them to hold their fire, <link-text>turn to 9</link-text>.</choice>
+       <choice idref="sect43">If you decide to escape along the track as fast as your horse will carry you, <link-text>turn to 43</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect64">
+      <meta><title>64</title></meta>
+
+      <data>
+       <p>A crackle of blue flame bursts from your enemy<ch.apos/>s sword as it strikes the haft of your Silver Warhammer. The Helghast recoils from the blow, allowing you to stagger to your feet, but it soon recovers and attacks again. You cannot evade combat and must fight this creature to the death.</p>
+       <combat><enemy>Helghast</enemy><enemy-attribute class="combatskill">21</enemy-attribute><enemy-attribute class="endurance">28</enemy-attribute></combat>
+       <p>If you have the spell <spell>Vigour</spell>, you may cast it before combat begins.</p>
+       <choice idref="sect34">If you win the fight, <link-text>turn to 34</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect65">
+      <meta><title>65</title></meta>
+
+      <data>
+       <p>Three hours pass before a Drakkarim officer appears at the edge of the pit and stares down at you with contempt. He barks an order and a circle of Giak archers appear. The last thing you hear is the hiss of their deadly black arrows.</p>
+       <p>Your life and your mission end here.</p>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect66">
+      <meta><title>66</title></meta>
+
+      <data>
+       <p>You knock on the door of the blacksmithy. It opens and a small plump woman stands before you, hurriedly wiping her hands on her chequered apron. She smiles and calls for Tym, her husband, as she ushers you into the dark warmth of the smithy. Tym the blacksmith welcomes you with a firm handshake. <quote>My word, Petrea, we<ch.apos/>re honoured to have a journeyman with us tonight,</quote> he says to his wife.</p>
+       <p>You enjoy a delicious supper, during which the blacksmith asks a favour of you. His nephew and niece, who are staying at the blacksmithy, are due to return home to their village in the morning. They live in Searsby, which lies to the south, where the road to the Kai Monastery branches off from the main highway. All he asks is that you accompany them home. You can hardly refuse the blacksmith<ch.apos/>s request, especially after enjoying his food and hospitality.</p>
+       <choice idref="sect36"><link-text>Turn to 36</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect67">
+      <meta><title>67</title></meta>
+
+      <data>
+       <p>You dismount and tether your horse before climbing the rickety steps to the cabin door. Through a cracked window pane you can see an old man sitting in a rocking chair. He is smoking a clay pipe and reading a leather-bound book. As you approach the door, you tread on a twig that snaps with a loud crack.</p>
+       <p><quote>Who<ch.apos/>s there?</quote> calls the old man.</p>
+       <choice idref="sect33">If you wish to enter the cabin, <link-text>turn to 33</link-text>.</choice>
+       <choice idref="sect15">If you decide to press on through the forest, <link-text>turn to 15</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect68">
+      <meta><title>68</title></meta>
+
+      <data>
+       <p>Cautiously you move through the enemy-infested trees, but less than a hundred yards from the water<ch.apos/>s edge you are spotted by a Kraan patrol. You cannot evade them.</p>
+       <choice idref="sect37"><link-text>Turn to 37</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect69">
+      <meta><title>69</title></meta>
+
+      <data>
+       <p>You weave back and forth across the track, to present the archers with a harder target. Your tactics pay off, for although an arrow grazes your scalp (lose 1 <typ class="attribute">ENDURANCE</typ> point), it is just a flesh wound. Wiping a trickle of blood away, you press on and soon leave the archers cursing your escape.</p>
+       <choice idref="sect15"><link-text>Turn to 15</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect70">
+      <meta><title>70</title></meta>
+
+      <data>
+       <p>Crashing headlong through the bracken, you fight to stay on your feet as you make your escape. Everywhere you hear the cries of Kraan and Giaks echoing through the trees. After ten minutes, the trees start to thin out and you can just make out the shape of a stone hut nestling at the bottom of a shallow ravine.</p>
+       <choice idref="sect4">If you wish to hide in this hut, <link-text>turn to 4</link-text>.</choice>
+       <choice idref="sect45">If you wish to push on deeper into the forest, <link-text>turn to 45</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect71">
+      <meta><title>71</title></meta>
+
+      <data>
+       <p>You ask her once more to let you cross, this time using your spell <spell>Mind Charm</spell> to persuade her you are friendly. Unfortunately, your spell does not have the desired effect.</p>
+       <choice idref="sect54"><link-text>Turn to 54</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect72">
+      <meta><title>72</title></meta>
+
+      <data>
+       <p>The energy bolt smashes into your unprotected chest and hurls you out of the saddle. Your chest is ablaze and tongues of orange flame flicker before your eyes<ch.emdash/>but you feel no pain. Only numbness and the irresistible urge to sleep fill your body. As your eyes slowly close, you do not see the Helghast raise its black staff to finish you off.</p>
+       <p>Your life and your mission end here.</p>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect73">
+      <meta><title>73</title></meta>
+
+      <data>
+       <p>Your heart is pounding fit to burst as you urge your horse through the ever-thickening foliage. The forest soon becomes too dense to continue on horseback and you are forced to press on by foot. You force your way through the rich vegetation until you discover a track. To the north you can make out some huts; to the south the path disappears into wooded hills.</p>
+       <choice idref="sect21">If you wish to head north towards the huts, <link-text>turn to 21</link-text>.</choice>
+       <choice idref="sect47">If you wish to go south towards the hills, <link-text>turn to 47</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect74">
+      <meta><title>74</title></meta>
+
+      <data>
+       <p>You invoke the spell just in time, and your violent sneezing goes undetected by the Giak soldiers searching the hut below. You wait several minutes before leaving your hiding place and pushing on through the forest to the south.</p>
+       <choice idref="sect45"><link-text>Turn to 45</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect75">
+      <meta><title>75</title></meta>
+
+     <footnotes>
+      <footnote id="sect75-1-foot" idref="sect75-1">
+       <p>This section is currently unreachable and cannot be brought back into the game.</p>
+      </footnote>
+     </footnotes>
+
+     <data>
+       <p><footref id="sect75-1" idref="sect75-1-foot"/>Under the influence of your magic, a calm descends on the man and his anger is swiftly replaced by his usual jollity. <quote>I<ch.apos/>m sorry,</quote> he says. <quote>Please forgive my rudeness. I don<ch.apos/>t know what came over me.</quote></p>
+       <p>He ushers you to a table near the fireplace that is set for dinner, and calls to his son to prepare you a meal. The food is delicious: restore 2 <typ class="attribute">ENDURANCE</typ> points to your total before leaving the tavern and continuing on your way.</p>
+       <choice idref="sect7"><link-text>Turn to 7</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect76">
+      <meta><title>76</title></meta>
+
+      <data>
+       <p>She answers by grasping the hilt of a weapon sheathed at her side. Her expression is stern and unfriendly.</p>
+       <choice idref="sect71">If you have the spell <spell>Mind Charm</spell> and wish to use it, <link-text>turn to 71</link-text>.</choice>
+       <choice idref="sect17">If you have the spell <spell>Sense Evil</spell> and wish to use it, <link-text>turn to 17</link-text>.</choice>
+       <choice idref="sect54">If you decide to offer her some Gold Crowns to let you cross the bridge, <link-text>turn to 54</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect77">
+      <meta><title>77</title></meta>
+
+      <data>
+       <p>To the surprise of his men, the captain orders the barricade to be drawn aside. You are allowed to pass, but as you are riding towards the village, you hear the captain shouting: <quote>Stop that rider!</quote></p>
+       <p>Your spell has begun to wear off. Spurring your horse to a gallop, you race along the deserted main street of Meadowood. Two bloodstained bodies lie on the road ahead; they are Rangers and they appear to be dead.</p>
+       <choice idref="sect3">If you wish to stop and examine the bodies, <link-text>turn to 3</link-text>.</choice>
+       <choice idref="sect31">If you decide to ride on as fast as you can, <link-text>turn to 31</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect78">
+      <meta><title>78</title></meta>
+
+      <data>
+       <p>One of your fellow captives, a young hill farmer, unties the cords that bind your wrists. With your hands free once more, you whisper the spell <spell>Levitation</spell> and slowly rise to the edge of the pit. The others are amazed but they stay silent so as not to jeopardize your escape. Patiently you wait for the right moment before emerging from the pit and diving into the cover of the trees.</p>
+       <choice idref="sect11"><link-text>Turn to 11</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect79">
+      <meta><title>79</title></meta>
+
+      <data>
+       <p>You awake shortly after dawn to a chill morning and, unless you possess a Blanket, you must deduct 2 <typ class="attribute">ENDURANCE</typ> points. You are rising to your feet when suddenly you realize you are being watched. Two children, a boy and a girl, are sitting astride a little black pony, staring at you in disbelief.</p>
+       <p><quote>Have you been asleep here all night?</quote> asks the young girl. You nod.</p>
+       <p><quote>You should have called on our uncle,</quote> says the boy. <quote>He<ch.apos/>s the blacksmith of Oak Hill. He would have given you a bed for the night.</quote></p>
+       <p>The little girl leans forward and offers you some bread and cheese. Gratefully you accept her kind offer (restore 1 <typ class="attribute">ENDURANCE</typ> point).</p>
+       <p><quote>We<ch.apos/>re on our way to Searsby for the feast of Fehmarn,</quote> says her brother. <quote>Are you going that way?</quote></p>
+       <p>The village of Searsby lies to the south, where a road to the Kai Monastery branches off from the main highway.</p>
+       <choice idref="sect30">If you have the spell <spell>Sense Evil</spell> and wish to use it, <link-text>turn to 30</link-text>.</choice>
+       <choice idref="sect14">If you wish to accompany the children south, <link-text>turn to 14</link-text>.</choice>
+      </data>
+     </section>
+
+     <section class="numbered" id="sect80">
+      <meta><title>80</title></meta>
+
+      <data>
+       <p>You offer your hand in friendship and it is gratefully received. After introducing yourself, you hand over the Guildmaster<ch.apos/>s Envelope. The Kai Lord studies the message and a great sadness fills his eagle eyes.</p>
+       <p><quote>Alas, the wisdom of this warning has arrived too late to save my kin. The war has already begun and my brothers in arms were the first to fall to the evil host of Helgedad. They are dead, and I am all that remains of the Kai. Your mission is complete, Banedon, but mine has only just begun. I, Lone Wolf, must journey to Holmgard to warn the King. He will know what must be done to save our land.</quote></p>
+       <p>Instinctively, you remove your Crystal Star Pendant and hand it to the last Kai warrior. It is a talisman of good luck and you pray that it protects him on the perilous road ahead.</p>
+       <p>Your mission is complete!</p>
+
+       <illustration class="float">
+        <meta>
+        <description><ch.lsquot/>I, Lone Wolf, must journey to Holmgard to warn the King.<ch.rsquot/></description>
+         <creator>Gary Chalk</creator>
+        </meta>
+        <instance class="html" src="ill4.png" width="386" height="513"  mime-type="image/png"/>
+        <instance class="pdf" src="ill4.pdf" width="386" height="513" />
+       </illustration>
+
+      </data>
+     </section>
+    </data>
+   </section>
+
+  <section class="backmatter" id="map">
+   <meta><title>Map of the Lastlands</title></meta>
+
+   <data>
+    <illustration>
+     <meta>
+      <creator>Gary Chalk</creator>
+     </meta>
+     <instance src="map.png" width="1024" height="793" class="html" mime-type="image/png" />
+     <instance src="map.pdf" width="1024" height="793" class="pdf" />
+     <instance src="map.png" width="512" height="384" class="pml" />
+    </illustration>
+   </data>
+  </section>
+
+  <section class="backmatter" id="action">
+   <meta><title>Action Chart</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acstats.png" width="386" height="286" class="html" mime-type="image/png" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acspells.png" width="385" height="121" class="html" mime-type="image/png" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acitems.png" width="386" height="192" class="html" mime-type="image/png" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acbckpck.png" width="386" height="113" class="html" mime-type="image/png" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acspcl.png" width="386" height="280" class="html" mime-type="image/png" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="ac1.tex" width="400" height="500" class="tex" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="ac2.tex" width="400" height="500" class="tex" />
+    </illustration>
+
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance class="text">
+      <p>
+       <line><typ class="attribute">COMBAT SKILL</typ>: <ch.blankline/></line>
+       <line><typ class="attribute">ENDURANCE</typ>: <ch.blankline/></line>
+      </p>
+      <p>Brotherhood Spells:</p>
+       <ol>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+       </ol>
+      <p>Weapons:</p>
+       <ol>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+       </ol>
+      <p>Belt Pouch: <ch.blankline/></p>
+      <p>Meals: <ch.blankline/></p>
+      <p>Backpack Items:</p>
+       <ol>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+       </ol>
+      <p>Special Items:</p>
+       <ol>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+       </ol>
+     </instance>
+    </illustration>
+
+   </data>
+  </section>
+
+  <section class="backmatter" id="crsumary">
+   <meta><title>Combat Rules Summary</title></meta>
+
+   <data>
+
+    <ol>
+     <li>Add your <typ class="attribute">COMBAT SKILL</typ> to any extra points given to you by your Brotherhood Spells.</li>
+     <li>Subtract the <typ class="attribute">COMBAT SKILL</typ> of your enemy from this total. This number = Combat Ratio.</li>
+     <li>Pick number from <a idref="random">Random Number Table</a>.</li>
+     <li>Turn to <a idref="crtable">Combat Results Table</a>.</li>
+     <li>Find your Combat Ratio on the top of chart and cross-reference to random number you have picked. (A indicates loss of <typ class="attribute">ENDURANCE</typ> points to Enemy. B indicates loss of <typ class="attribute">ENDURANCE</typ> points to Banedon.)</li>
+     <li>Continue the combat from Stage 3 until one character is dead. This is when <typ class="attribute">ENDURANCE</typ> points of either character fall to 0 or below.</li>
+    </ol>
+
+    <section class="backmatter" id="smevazn">
+     <meta><title>To Evade Combat</title></meta>
+
+     <data>
+
+      <ol>
+       <li>You may only do this when the text of the adventure offers you the opportunity.</li>
+       <li>You undertake one round of combat in the usual way. All points lost by the enemy are ignored, only Banedon loses the <typ class="attribute">ENDURANCE</typ> points.</li>
+       <li>If the book offers the chance of taking evasive action in place of combat, it can be taken in the first round of combat or any subsequent round.</li>
+      </ol>
+     </data>
+    </section>
+   </data>
+  </section>
+
+  <section class="backmatter" id="crtable">
+   <meta><title>Combat Results Table</title></meta>
+
+   <data>
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="crtneg.png" width="386" height="472" class="html" mime-type="image/png" />
+     <instance src="crtneg.tex" width="380" height="500" class="tex" />
+    </illustration>
+
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="crtpos.png" width="386" height="472" class="html" mime-type="image/png" />
+     <instance src="crtpos.tex" width="380" height="500" class="tex" />
+    </illustration>
+
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance class="text">
+      <table summary="This table provides the endurance losses sustained by the hero and enemy as a result of combat.">
+       <caption>Combat Results with combined hero and enemy <typ class="attribute">ENDURANCE</typ> losses</caption>
+
+       <colgroup span="1" />
+       <colgroup span="13" />
+
+       <tfoot>
+        <tr>
+         <td colspan="14">Combat results are given enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> loss first followed by the hero<ch.apos/>s <typ class="attribute">ENDURANCE</typ> loss. For example, <quote>12/0</quote> means that the enemy loses 12 endurance points while the hero loses 0 <typ class="attribute">ENDURANCE</typ> points. A combat result of <quote>k</quote> means that the combatant is killed. For example, <quote>0/k</quote> means that the enemy loses 0 endurance points while the hero is killed.</td>
+        </tr>
+       </tfoot>
+
+       <tbody>
+        <tr>
+         <th rowspan="2" scope="col">Random Number</th>
+         <th colspan="13" scope="colgroup">Combat Ratio</th>
+        </tr>
+
+        <tr>
+         <th scope="col" axis="combat_ratio">-11 or lower</th>
+         <th scope="col" axis="combat_ratio">-10/ -9</th>
+         <th scope="col" axis="combat_ratio">-8/ -7</th>
+         <th scope="col" axis="combat_ratio">-6/ -5</th>
+         <th scope="col" axis="combat_ratio">-4/ -3</th>
+         <th scope="col" axis="combat_ratio">-2/ -1</th>
+         <th scope="col" axis="combat_ratio">0</th>
+         <th scope="col" axis="combat_ratio">1/ 2</th>
+         <th scope="col" axis="combat_ratio">3/ 4</th>
+         <th scope="col" axis="combat_ratio">5/ 6</th>
+         <th scope="col" axis="combat_ratio">7/ 8</th>
+         <th scope="col" axis="combat_ratio">9/ 10</th>
+         <th scope="col" axis="combat_ratio">11 or higher</th>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">1</th>
+         <td>0/k</td>
+         <td>0/k</td>
+         <td>0/8</td>
+         <td>0/6</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/4</td>
+         <td>7/4</td>
+         <td>8/3</td>
+         <td>9/3</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">2</th>
+         <td>0/k</td>
+         <td>0/8</td>
+         <td>0/7</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/3</td>
+         <td>9/3</td>
+         <td>10/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">3</th>
+         <td>0/8</td>
+         <td>0/7</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/3</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">4</th>
+         <td>0/8</td>
+         <td>1/7</td>
+         <td>2/6</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+         <td>12/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">5</th>
+         <td>1/7</td>
+         <td>2/6</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+         <td>12/2</td>
+         <td>14/1</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">6</th>
+         <td>2/6</td>
+         <td>3/6</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/1</td>
+         <td>12/1</td>
+         <td>14/1</td>
+         <td>16/1</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">7</th>
+         <td>3/5</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/1</td>
+         <td>10/1</td>
+         <td>11/1</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">8</th>
+         <td>4/4</td>
+         <td>8/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/1</td>
+         <td>9/1</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">9</th>
+         <td>5/3</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/0</td>
+         <td>9/0</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">0</th>
+         <td>6/0</td>
+         <td>7/0</td>
+         <td>8/0</td>
+         <td>9/0</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+        </tr>
+       </tbody>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
+  <section class="backmatter" id="random">
+   <meta><title>Random Number Table</title></meta>
+
+   <data>
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.png" width="332" height="432" class="html" mime-type="image/png" />
+     <instance src="random.tex" width="380" height="500" class="tex" />
+     <instance class="text">
+      <table>
+       <tr>
+        <td>1</td>
+        <td>5</td>
+        <td>7</td>
+        <td>3</td>
+        <td>6</td>
+        <td>9</td>
+        <td>0</td>
+        <td>1</td>
+        <td>7</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>3</td>
+        <td>9</td>
+        <td>2</td>
+        <td>8</td>
+        <td>1</td>
+        <td>7</td>
+        <td>4</td>
+        <td>9</td>
+        <td>7</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>6</td>
+        <td>1</td>
+        <td>0</td>
+        <td>7</td>
+        <td>3</td>
+        <td>0</td>
+        <td>5</td>
+        <td>4</td>
+        <td>6</td>
+        <td>7</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>2</td>
+        <td>8</td>
+        <td>9</td>
+        <td>2</td>
+        <td>9</td>
+        <td>6</td>
+        <td>0</td>
+        <td>2</td>
+        <td>4</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>9</td>
+        <td>6</td>
+        <td>4</td>
+        <td>8</td>
+        <td>2</td>
+        <td>8</td>
+        <td>5</td>
+        <td>6</td>
+        <td>3</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>3</td>
+        <td>1</td>
+        <td>3</td>
+        <td>9</td>
+        <td>7</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>8</td>
+        <td>2</td>
+        <td>5</td>
+        <td>1</td>
+        <td>3</td>
+        <td>6</td>
+        <td>4</td>
+        <td>3</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>7</td>
+        <td>0</td>
+        <td>4</td>
+        <td>8</td>
+        <td>6</td>
+        <td>4</td>
+        <td>5</td>
+        <td>1</td>
+        <td>4</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td>6</td>
+        <td>8</td>
+        <td>3</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1</td>
+        <td>7</td>
+        <td>2</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>3</td>
+        <td>7</td>
+        <td>0</td>
+        <td>9</td>
+        <td>6</td>
+        <td>2</td>
+        <td>4</td>
+        <td>8</td>
+        <td>1</td>
+       </tr>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
+   <section class="backmatter" id="errata">
+    <meta><title>Errata</title></meta>
+
+    <data>
+
+     <section class="backmatter" id="errintro">
+      <meta><title>Introduction</title></meta>
+      <data>
+       <p>We have taken our unique opportunity to correct errors and to enforce a standard of English usage. We list our changes here. If you see anything that needs correction, please <a href="&link.staff.contact;">contact</a> the Project Aon Staff.</p>
+      </data>
+     </section>
+
+     <section class="backmatter" id="errerr">
+      <meta><title>Errata</title></meta>
+      <data>
+
+      <p>(<a idref="map">Map of the Lastlands</a>) Added this image from <cite><bookref series="lw" book="01fftd">Flight from the Dark</bookref></cite>.</p>
+
+       <p>(<a idref="tssf">The Story So Far</a>) Replaced <quote>journeyman</quote> with <quote>Journeyman</quote>. Replaced both instances of <quote>Magicians Guild</quote> with <quote>Magicians<ch.apos/> Guild</quote>. Replaced <quote>luck of the Gods</quote> with <quote>luck of the gods</quote>.</p>
+
+       <p>(<a idref="gamerulz">The Game Rules</a>) Replaced <quote>To keep a record of your adventure, use the <a idref="action">Action Chart</a> on page 96</quote> with <quote>You keep a record of your adventure on the <a idref="action">Action Chart</a></quote>. Removed <quote>on the last page of this book</quote>. Replaced <quote>any of your spells</quote> with <quote>certain spells</quote>. Replaced <quote><a idref="action">Action Chart</a> below</quote> with <quote><a idref="action">Action Chart</a></quote>. Replaced <quote>to zero</quote> with <quote>to zero or below</quote>.</p>
+
+       <p>(<a idref="powers">Magical Powers</a>) Replaced <quote>the <ch.lsquot/>Spells<ch.rsquot/> section</quote> with <quote>the <ch.lsquot/>Brotherhood Spells<ch.rsquot/> section</quote>.</p>
+
+       <p>(<a idref="equipmnt">Equipment</a>) Replaced <quote>envelope</quote> with <quote>Envelope</quote>. Replaced <quote>restores 2 points</quote> with <quote>restores 2 <typ class="attribute">ENDURANCE</typ> points</quote>. Replaced <quote>short sword (weapon)</quote> with <quote>Short Sword (Weapon)</quote>. Replaced <quote>your 28</quote> with <quote>your <typ class="attribute">COMBAT SKILL</typ></quote>. Replaced <quote>BLANKET</quote> with <quote>Blanket</quote>. Replaced <quote>HEALING POTION</quote> with <quote>Healing Potion</quote>. Replaced <quote>ROPE</quote> with <quote>Rope</quote>. Replaced <quote>TORCH</quote> with <quote>Torch</quote>. Replaced <quote>2 MEALS</quote> with <quote>2 Meals</quote>. Replaced <quote>TINDERBOX</quote> with <quote>Tinderbox</quote>. Replaced <quote>BOTTLE OF WINE</quote> with <quote>Bottle of Wine</quote>. Replaced each occurrence of <quote>weapons</quote> with <quote>Weapons</quote>. Replaced <quote>weapon</quote> with <quote>Weapon</quote>.</p>
+
+       <p>(<a idref="cmbtrulz">Rules for Combat</a>) Removed <quote> on page 95</quote>. Replaced <quote>the one with the zero score</quote> with <quote>that combatant</quote>. Added <quote>A <a idref="crsumary">summary of Combat Rules</a> appears in the back of this book.</quote>. Replaced <quote>You may only evade if the text allows you to.</quote> with <quote>During your adventure you may be given the chance to evade combat. If you have already engaged in a round of combat and decide to evade, calculate the combat for that round in the usual manner. All points lost by the enemy as a result of that round are ignored, and you make your escape. Only Banedon may lose <typ class="attribute">ENDURANCE</typ> points during that round (but then that is the risk of running away!). You may evade only if the text of the particular section allows you to do so.</quote>. Removed <quote>on page 96</quote>. Replaced <quote>to zero</quote> with <quote>to zero or below</quote>. Replaced <quote><typ class="attribute">ENDURANCE</typ> points reduced</quote> with <quote><typ class="attribute">ENDURANCE</typ> points possibly reduced</quote>.</p>
+
+       <p>(<a idref="sect1">1</a>) Added the caption <quote>It is now dawn on the day before the feast of Fehmarn.</quote> to the illustration. This text is copied from <a idref="tssf">The Story So Far</a>.</p>
+       <p>(<a idref="sect4">4</a>) Replaced <quote>spell of Silence</quote> with <quote>spell <spell>Silence</spell> and wish to use it</quote>.</p>
+       <p>(<a idref="sect11">11</a>) Replaced <quote>envelope</quote> with <quote>Envelope</quote>.</p>
+       <p>(<a idref="sect16">16</a>) Replaced <quote>semi-circle</quote> with <quote>semicircle</quote>. Replaced <quote>a clutch of Kraan glide</quote> with <quote>a clutch of Kraan glides</quote>.</p>
+       <p>(<a idref="sect19">19</a>) Replaced <quote>envelope</quote> with <quote>Envelope</quote>. Replaced <quote>Ogadak</quote> with <quote>Orgadak</quote>. Replaced <quote>spell of Lightning Hand</quote> with <quote>spell <spell>Lightning Hand</spell></quote>.</p>
+       <p>(<a idref="sect23">23</a>) Replaced <quote>spell of Mind Charm, and</quote> with <quote>spell <spell>Mind Charm</spell> and</quote>.</p>
+       <p>(<a idref="sect24">24</a>) Replaced <quote>spell of Counter Spell, and</quote> with <quote>spell <spell>Counterspell</spell> and</quote>. Replaced <quote>spell of Invisible Shield, and</quote> with <quote>spell <spell>Invisible Shield</spell> and</quote>. Added the caption <quote>He is a Helghast, a hellish servant of the Darklords.</quote> to the illustration.</p>
+       <p>(<a idref="sect27">27</a>) Replaced <quote>spell of Mend</quote> with <quote>spell <spell>Mend</spell></quote>.</p>
+       <p>(<a idref="sect33">33</a>) Replaced <quote>spell of Net, and</quote> with <quote>spell <spell>Net</spell> and</quote>.</p>
+       <p>(<a idref="sect34">34</a>) Replaced <quote>restore lost <typ class="attribute">ENDURANCE</typ></quote> with <quote>restore 5 lost <typ class="attribute">ENDURANCE</typ></quote>. Replaced <quote>meal</quote> with <quote>Meal</quote>. Replaced <quote>spell of Mend</quote> with <quote>spell <spell>Mend</spell></quote>.</p>
+       <p>(<a idref="sect35">35</a>) Replaced <quote>spell of Levitation</quote> with <quote>spell <spell>Levitation</spell> and wish to use it</quote>.</p>
+       <p>(<a idref="sect37">37</a>) Replaced <quote>spell of Lightning Hand</quote> with <quote>spell <spell>Lightning Hand</spell> and wish to use it</quote>. Replaced <quote>or do</quote> with <quote>or if you do</quote>.</p>
+       <p>(<a idref="sect38">38</a>) Replaced <quote>spell of Counter Spell, and</quote> with <quote>spell <spell>Counterspell</spell> and</quote>.</p>
+       <p>(<a idref="sect41">41</a>) Removed superfluous line-break after <quote>magical,</quote>.</p>
+       <p>(<a idref="sect43">43</a>) Split the <a idref="random">Random Number Table</a> choices onto separate lines. Replaced <quote>spell of Invisible Shield</quote> with <quote>spell <spell>Invisible Shield</spell></quote>.</p>
+       <p>(<a idref="sect44">44</a>) Replaced <quote>sword blade</quote> with <quote>Sword<ch.apos/>s blade</quote>. Replaced <quote>Old Tadeus</quote> with <quote>Old Tadeus:</quote>. Split the option to evade combat onto its own line. Replaced <quote>spell of Vigour</quote> with <quote>spell <spell>Vigour</spell></quote>. Replaced <quote>rounds, by</quote> with <quote>rounds by</quote>.</p>
+       <p>(<a idref="sect45">45</a>) Replaced <quote>spell of Levitation, and</quote> with <quote>spell <spell>Levitation</spell> and</quote>. Added the caption <quote>Many Giaks and Drakkarim are being marshalled into units.</quote> to the illustration.</p>
+       <p>(<a idref="sect46">46</a>) Replaced <quote>restore lost <typ class="attribute">ENDURANCE</typ></quote> with <quote>restore 5 lost <typ class="attribute">ENDURANCE</typ></quote>. Replaced <quote>spell of Mend</quote> with <quote>spell <spell>Mend</spell></quote>.</p>
+       <p>(<a idref="sect47">47</a>) Replaced <quote>spell of Levitation</quote> with <quote>spell <spell>Levitation</spell></quote>. Replaced <quote>or do</quote> with <quote>or if you do</quote>.</p>
+       <p>(<a idref="sect48">48</a>) Replaced <quote>spell of Mind Charm, and</quote> with <quote>spell <spell>Mind Charm</spell> and</quote>. Replaced <quote>Crowns, by</quote> with <quote>Crowns by</quote>.</p>
+       <p>(<a idref="sect49">49</a>) Replaced <quote>spell of Lightning Hand, and</quote> with <quote>spell <spell>Lightning Hand</spell> and</quote>.</p>
+       <p>(<a idref="sect50">50</a>) Replaced <quote>Giaks</quote> with <quote>Giaks:</quote>.</p>
+       <p>(<a idref="sect52">52</a>) Split the links onto separate lines.</p>
+       <p>(<a idref="sect53">53</a>) Replaced <quote>spell of Mend</quote> with <quote>spell <spell>Mend</spell></quote>.</p>
+       <p>(<a idref="sect55">55</a>) Moved the last choice (about using <spell>Sense Evil</spell>) into the first position. Replaced <quote>spell of Sense Evil, and</quote> with <quote>spell <spell>Sense Evil</spell> and</quote>.</p>
+       <p>(<a idref="sect57">57</a>) Replaced <quote>Road, and</quote> with <quote>Road and</quote>.</p>
+       <p>(<a idref="sect58">58</a>) Replaced <quote>counter spell</quote> with <quote><spell>Counterspell</spell></quote>.</p>
+       <p>(<a idref="sect59">59</a>) Replaced <quote>spell of Net, and</quote> with <quote>spell <spell>Net</spell> and</quote>.</p>
+       <p>(<a idref="sect60">60</a>) Replaced <quote>power words</quote> with <quote>power-words</quote>.</p>
+       <p>(<a idref="sect62">62</a>) Replaced <quote>envelope</quote> with <quote>Envelope</quote>. Replaced <quote>Ogadak</quote> with <quote>Orgadak</quote>. Replaced <quote>spell of Lightning Hand, and</quote> with <quote>spell <spell>Lightning Hand</spell> and</quote>.</p>
+       <p>(<a idref="sect64">64</a>) Replaced <quote>Helghast</quote> with <quote>Helghast:</quote>. Replaced <quote>spell of Vigour</quote> with <quote>spell <spell>Vigour</spell></quote>.</p>
+       <p>(<a idref="sect71">71</a>) Replaced <quote>spell of Mind Charm</quote> with <quote>spell <spell>Mind Charm</spell></quote>.</p>
+       <p>(<a idref="sect75">75</a>) Replaced <quote>says, <ch.lsquot/>please</quote> with <quote>says. <ch.lsquot/>Please</quote>.</p>
+       <p>(<a idref="sect76">76</a>) Replaced <quote>spell of Mind Charm, and</quote> with <quote>spell <spell>Mind Charm</spell> and</quote>. Replaced <quote>spell of Sense Evil, and</quote> with <quote>spell <spell>Sense Evil</spell> and</quote>.</p>
+       <p>(<a idref="sect77">77</a>) Replaced each occurrence of <quote>the Captain</quote> with <quote>the captain</quote>.</p>
+       <p>(<a idref="sect78">78</a>) Replaced <quote>spell of Levitation</quote> with <quote>spell <spell>Levitation</spell></quote>.</p>
+       <p>(<a idref="sect79">79</a>) Replaced <quote>blanket</quote> with <quote>Blanket</quote>. Replaced <quote>boy, <ch.lsquot/>he<ch.apos/>s</quote> with <quote>boy. <ch.lsquot/>He<ch.apos/>s</quote> Moved the last choice (about using <spell>Sense Evil</spell>) into the first position. Replaced <quote>spell of Sense Evil, and</quote> with <quote>spell <spell>Sense Evil</spell> and</quote>.</p>
+       <p>(<a idref="sect80">80</a>) Added the caption <quote><ch.thinspace/><ch.lsquot/>I, Lone Wolf, must journey to Holmgard to warn the King.<ch.rsquot/><ch.thinspace/></quote> to the illustration.</p>
+       <p>(<a idref="crsumary">Combat Rules Summary</a>) Added this section.</p>
+      </data>
+     </section>
+    </data>
+   </section>
+
+   <section class="backmatter" id="footnotz">
+    <meta><title>Footnotes</title></meta>
+
+    <data/>
+
+   </section>
+
+   <section class="backmatter" id="illstrat">
+    <meta><title>Table of Illustrations</title></meta>
+
+    <data>
+     <p>The following is a list of all Sections containing illustrations found in this book:</p>
+
+     <section class="backmatter" id="primill">
+      <meta><title>Illustrations</title></meta>
+
+     <data>
+      <ul class="unbulleted">
+       <li><a idref="sect1">Section 1</a></li>
+       <li><a idref="sect24">Section 24</a></li>
+       <li><a idref="sect45">Section 45</a></li>
+       <li><a idref="sect80">Section 80</a></li>
+       <li><a idref="map">Map of the Lastlands</a></li>
+      </ul>
+     </data>
+    </section>
+
+
+    <section class="backmatter" id="secill">
+     <meta><title>Secondary Illustrations</title></meta>
+
+     <data>
+      <ul class="unbulleted">
+       <li><a idref="tssf">The Story So Far<ch.ellips/></a></li>
+       <li><a idref="equipmnt">Equipment</a></li>
+       <li><a idref="sect22">Section 22</a></li>
+       <li><a idref="sect28">Section 28</a></li>
+       <li><a idref="sect56">Section 56</a></li>
+      </ul>
+     </data>
+    </section>
+   </data>
+  </section>
+
+  &inclusion.project.aon.license;
+
+  </data>
+ </section>
+</gamebook>

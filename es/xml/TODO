@@ -1,0 +1,40 @@
+
+MAJOR:
+-----
+
+ - Fix illustration definitions for all the XML books 
+    -> pdf versions have to define width in mm, not in pixels
+
+    07 onwards, if this is not fixed the images in PDF are too large and 
+    show chopped in the files.
+
+ - Make a script to compare the XML structure (- text) with the original English books
+   to compare differences and ensure that they are the same
+
+MINOR
+-----
+
+ - Review use of <quote> sometimes there is no space after/before it
+
+ - Use of quotes in the dialog of characters is not consistent. It is used in some
+   books but not in others
+
+ - Review illustrations in books to add 
+    <instance class="html-compatible" 
+
+ - Convert all files to UTF-8 to avoid encoding issues when generating PDFs
+
+     If this is not fixed some accented characters (¡) do not show properly in
+     PDF output.
+
+     Note: Fixed temporarily by using \usepackage[latin1]{inputenc}
+     if we reconvert to UTF-8 we have to change that definition in l10n/i18n-pdf.xml
+
+DONE:
+----
+
+ - Add combat results table and random table inline
+
+   NOTE: Only for crtable. Random table has been updated but since it is different
+   per file it is not possible to include it
+   

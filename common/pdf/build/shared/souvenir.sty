@@ -1,0 +1,32 @@
+% -----------------------------------------------------------------
+% Filename: souvenir.sty ( ITC Souvenir )
+% Created by: tex bsv
+% Created using fontinst v1.335
+% Created for [4allTeX postscript font setup]
+% Created on [1996/05/15]
+% Use phbfonti.sty file (in 4allTeX package)
+% Based on PSNFSS 2.4.1 and 3.x by S. Rahtz
+% Put this file in a TEXINPUT directory.
+% -----------------------------------------------------------------
+% Can be processed by LaTeX209 and LaTeX2e
+\def\fileversion{3q}
+\def\filedate{94/10/22}
+\def\docdate{94/10/22}
+\ifx\ProvidesPackage\undefined
+\immediate\write\sixt@@n{File: souvenir.sty NFSS1 fontinst (PhB)}
+\ifx\selectfont\undefined
+\@latexerr{No NFSS1 detected...}\@eha\endinput\fi
+
+\ifx\declare@font\undefined\input{psnfss.sup}\fi
+\def\load@bsv{\postscript@fontdef{ITC Souvenir }{bsv}%
+  {bsvr}{bsvri}{bsvb}{bsvbi}{bsvrc}{bsvro}}
+\late@extra@def{bsv}{}{}
+\load@bsv
+\else
+\immediate\write\sixt@@n{File: souvenir.sty LaTeX2e fontinst (PhB)}
+\ProvidesPackage{souvenir}[\filedate\space\fileversion\space
+ LaTeX2e fontinst (PhB)]\fi
+
+\def\rmdefault{bsv}
+\def\switchfont{}
+\endinput

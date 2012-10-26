@@ -1,0 +1,470 @@
+--- 03tcok-untweaked.tex	2012-01-08 19:22:13.000000000 +0100
++++ 03tcok.tex	2012-01-08 19:22:13.000000000 +0100
+@@ -179,7 +179,9 @@
+ % \frontmatter
+ 
+ \addchap{About the Author and Illustrator}
++\begin{sloppypar}
+       {\bfseries Joe Dever}, the creator of the bestselling Lone Wolf adventure books and novels, has achieved world-wide recognition in three creative fields---as an award-winning author of international renown, as an acclaimed musician and composer, and as a games designer specialising in role-playing games.
++\end{sloppypar}
+ 
+ 
+    On graduating from college in 1974, Joe Dever became a professional musician, and for several years, he worked in the music industry in Europe and the United States.
+@@ -210,7 +212,10 @@
+   Gary was working at Games Workshop when Joe Dever asked him to illustrate some of his manuscript of {\itshape Flight from the Dark}. The two teamed up after that and, they continued to work together until the eighth book in the series, {\itshape The Jungle of Horrors}.
+ 
+ 
++\enlargethispage{\baselineskip}
++\begin{sloppypar}
+   Gary has also drawn the illustrations in {\itshape Redwall} and related books, {\itshape The Prince of Shadows} gamebook series, and several books which he also authored. Gary continues to enjoy war gaming and works as an illustrator and model maker.
++\end{sloppypar}
+ 
+ 
+   
+@@ -288,7 +293,9 @@
+ 
+ You keep a record of your adventure on the \hyperlink{action}{\emph{Action Chart}}.
+ 
++\begin{sloppypar}
+ During your training as a Kai Lord you have developed fighting prowess---{\sc Combat Skill} and physical stamina---{\sc Endurance}. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it onto the \hyperlink{random}{\emph{Random Number Table}}. If you pick 0 it counts as zero.
++\end{sloppypar}
+ 
+ The first number that you pick from the \hyperlink{random}{\emph{Random Number Table}} in this way represents your {\sc Combat Skill}. Add 10 to the number you picked and write the total in the {\sc Combat Skill} section of your \hyperlink{action}{\emph{Action Chart}} (i.e. if your pencil fell on 4 in the \hyperlink{random}{\emph{Random Number Table}} you would write in a {\sc Combat Skill} of 14). When you fight, your {\sc Combat Skill} will be pitted against that of your enemy. A high score in this section is therefore very desirable.
+ 
+@@ -403,12 +410,13 @@
+ \begin{aonitemize}
+ \item Sword (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{-.7\baselineskip}
+ \begin{center}
+ \includegraphics[width=54mm,keepaspectratio]{sword.pdf} %
+ \end{center}
+ \vspace{.2\baselineskip}
+ 
++\newpage
+ \item Short Sword (Weapons)
+ 
+ \vspace{.2\baselineskip}
+@@ -435,7 +443,6 @@
+ 
+ \item Mace (Weapons)
+ 
+-\vspace{.2\baselineskip}
+ \begin{center}
+ \includegraphics[width=31mm,keepaspectratio]{mace.pdf} %
+ \end{center}
+@@ -443,7 +450,7 @@
+ 
+ \item Warhammer (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{-.7\baselineskip}
+ \begin{center}
+ \includegraphics[width=32mm,keepaspectratio]{warhammr.pdf} %
+ \end{center}
+@@ -467,11 +474,11 @@
+ 
+ \item Quarterstaff (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{.3\baselineskip}
+ \begin{center}
+ \includegraphics[width=87mm,keepaspectratio]{qstaff.pdf} %
+ \end{center}
+-\vspace{.2\baselineskip}
++\vspace{.5\baselineskip}
+ 
+ \item Special Rations (Meals). This counts as one meal. (See `How to Use Your Equipment' before deciding.)
+ 
+@@ -483,11 +490,10 @@
+ 
+ \item Broadsword (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{-.5\baselineskip}
+ \begin{center}
+ \includegraphics[width=66mm,keepaspectratio]{bsword.pdf} %
+ \end{center}
+-\vspace{.2\baselineskip}
+ 
+ \end{aonitemize}
+ 
+@@ -593,7 +599,7 @@
+ \end{aonitemize}
+ 
+ 
+-\item On the \hyperlink{action}{\emph{Action Chart}}, mark the changes in {\sc Endurance} points to the participants in the combat.
++\item \begin{sloppypar}On the \hyperlink{action}{\emph{Action Chart}}, mark the changes in {\sc Endurance} points to the participants in the combat.\end{sloppypar}
+ 
+ \item Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.
+ 
+@@ -684,6 +690,7 @@
+ 
+ \nopagebreak\begin{aonchoice}If you wish to take the longer, but easier Hrod Basin and Storm Giant Pass route, \hyperlink{sect273}{\bfseries turn to 273}.\end{aonchoice}
+ 
++\vspace*{\fill}
+ 
+ \addsec[Section 2]{\hspace*{\fill}\hypertarget{sect2}{}2\hspace*{\fill}}
+ 
+@@ -865,7 +872,9 @@
+ 
+ \addsec[Section 17]{\hspace*{\fill}\hypertarget{sect17}{}17\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ You recognize that you are suffering the first effects of snow-blindness. Unless you act now, the more painful symptoms of this malady will soon appear.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to cover your eyes with a blindfold, and keep them covered at least until you make camp later today, \hyperlink{sect62}{\bfseries turn to 62}.\end{aonchoice}
+ 
+@@ -1029,7 +1038,9 @@
+ altar and advances towards you.
+ }
+ \end{figure}
++\begin{sloppypar}
+ The statue rises slowly from the altar and advances towards you. As it comes closer, you feel an intense chill radiating from its smooth, stony skin. However, its movements are stiff and uncertain---you could easily dodge its outstretched arms.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to attack this strange statue, \hyperlink{sect150}{\bfseries turn to 150}.\end{aonchoice}
+ 
+@@ -1274,7 +1285,9 @@
+ 
+ \addsec[Section 53]{\hspace*{\fill}\hypertarget{sect53}{}53\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ Unfortunately, you mistime your dive with disastrous consequences. Both of your legs are crushed by the closing door and you slowly bleed to death.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}Your life and your mission end here.\end{aonchoice}
+ 
+@@ -1705,12 +1718,12 @@
+ You hold your breath as you wipe handfuls of the slimy grease inside your jacket. But as the oil penetrates your skin, you feel a warm glow, as if you were near an open fire. The more grease that you apply, the warmer you become. You also notice that the terrible smell is gradually fading away.\footnote{You may wish to note the fact that you have applied this oil on your \hyperlink{action}{\emph{Action Chart}}. However, it does not take the space of any item and only affects you for the duration of this adventure.
+ }
+ 
+-`Once it's in your skin, you can't smell a thing,' says Irian, calling the others to take some Baknar oil. This oil is excellent insulation against the freezing temperatures of Kalte, and may well help you in the near future. As you return to your tent, only the Kanu-dogs seem to object to the smell. They whine and bury their noses in the snow as you walk past.
+-
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small9.pdf} %
+ \end{figure}
++`Once it's in your skin, you can't smell a thing,' says Irian, calling the others to take some Baknar oil. This oil is excellent insulation against the freezing temperatures of Kalte, and may well help you in the near future. As you return to your tent, only the Kanu-dogs seem to object to the smell. They whine and bury their noses in the snow as you walk past.
++
+ \nopagebreak\begin{aonchoice}\hyperlink{sect134}{\bfseries Turn to 134}.\end{aonchoice}
+ 
+ 
+@@ -1830,9 +1843,8 @@
+ \centering
+ \hypertarget{ill7}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill7.pdf}}%
+-\\{\itshape The three Baknar jump from the\\
+-ice wall and land with a\\
+-crash on the sledges.
++\\{\itshape The three Baknar jump from the ice wall\\
++and land with a crash on the sledges.
+ }
+ \end{figure}
+ The following day, a strong wind rises from the north. Hour upon hour, it blows relentlessly into your face. The Ljuk ice shelf becomes a mass of twisted slabs of ice, jutting upwards at every angle. Progress is slow and difficult. By midday, you are shivering with cold; your lips are cracked and bleeding and the icy blasts have covered you with a thin film of snow.
+@@ -1985,12 +1997,12 @@
+ 
+ The gale dies away during the night and dawn arrives calm and still. On the horizon to the far north, you can see Ikaya, the ice fortress. The huge crystal-towered stronghold is a wondrous sight, made all the more marvellous because it appears to hover upside down upon a large cloud. `Kalte mirage,' says Dyce. `There's no dust in the air here---the land is reflected in the clouds. That's Ikaya, but the real fortress is over the horizon. It cannot be more than forty miles away now.' Dyce grabs a spade and starts to dig out the Kanu-dogs that have been buried by snow. You wake the others and eat a meal before setting off once more.
+ 
+-It is midday when you reach the edge of a deep gorge. It is over forty feet wide, and there appears to be no way of crossing it. You are forced to travel along the gorge to the east. Eventually, after three miles, you discover a narrow ice bridge. However, the centre of the bridge is frighteningly thin and narrow: it looks incapable of supporting the weight of a loaded sledge.
+-
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small12.pdf} %
+ \end{figure}
++It is midday when you reach the edge of a deep gorge. It is over forty feet wide, and there appears to be no way of crossing it. You are forced to travel along the gorge to the east. Eventually, after three miles, you discover a narrow ice bridge. However, the centre of the bridge is frighteningly thin and narrow: it looks incapable of supporting the weight of a loaded sledge.
++
+ You can now see the real Ikaya upon the horizon.
+ 
+ \nopagebreak\begin{aonchoice}If you wish to risk taking the sledge across the ice bridge, \hyperlink{sect73}{\bfseries turn to 73}.\end{aonchoice}
+@@ -2083,9 +2095,8 @@
+ \centering
+ \hypertarget{ill8}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill8.pdf}}%
+-\\{\itshape Suddenly you see a large black\\
+-shape pass close to the\\
+-surface of the ice.
++\\{\itshape Suddenly you see a large black shape\\
++pass close to the surface of the ice.
+ }
+ \end{figure}
+ After two hours of carefully exploring the passage, you are aware that it has gradually descended over two hundred feet. You eventually reach a vast ice vault, the centre of which is filled with a lake. The frozen surface is very thin, and the water beneath it looks dark and deep. You kneel at the edge of the lake, peering into its mysterious depths. Suddenly you see a large black shape pass close to the surface. There is something alive beneath the ice---and it is enormous. Then behind you, you hear the growls of a Kalkoth. The noise is coming from the tunnel. There is only one other exit from this vault which is on the other side of the frozen lake.
+@@ -2221,7 +2232,7 @@
+ 
+ The door grinds open and you enter, ready for attack. You have killed two of the sleeping beasts before the Ice Barbarian and the remaining Doomwolf have time to react. But they both dive at you simultaneously, and you must fight them as one enemy. They are partially immune to Mindblast. If you possess this Discipline, add only 1 point to your {\sc Combat Skill} for the duration of this fight.
+ 
+-\begin{aoncombat}Ice Barbarian + Doomwolf: {\sc Combat~Skill}~30 ~~{\sc Endurance}~30\end{aoncombat}
++\begin{aoncombat}Ice Barbarian + Doomwolf:\\{\sc Combat~Skill}~30 ~~{\sc Endurance}~30\end{aoncombat}
+ 
+ \nopagebreak\begin{aonchoice}If you win the combat, \hyperlink{sect28}{\bfseries turn to 28}.\end{aonchoice}
+ 
+@@ -2300,9 +2311,8 @@
+ \centering
+ \hypertarget{ill9}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill9.pdf}}%
+-\\{\itshape At the foot of the stairs, still\\
+-upright and in armour, are the skeletal\\
+-remains of an ancient tomb keeper.
++\\{\itshape At the foot of the stairs, still upright and in armour,\\
++are the skeletal remains of an ancient tomb keeper.
+ }
+ \end{figure}
+ The passage is short and you quickly arrive at another stone chamber. Ahead you can see a flight of stone stairs leading to a darkened archway high above. At the foot of the stairs, still upright and in armour, are the skeletal remains of an ancient tomb keeper. A large black sword rests in the skeleton's bony fingers.
+@@ -2520,14 +2530,14 @@
+ 
+ The sledge is unpacked and the equipment is ferried across piece by piece. Everything is going according to plan until the sledge itself is brought over the gorge. Dyce is steering it, taking great pains to keep it in the centre of the narrow bridge, when suddenly the two lead Kanu-dogs slip and fall into the gorge. They hang helplessly in their harnesses, howling and kicking at the air. Dyce frantically pulls on the reins to try to prevent the others from falling as well, but his efforts are in vain. One by one, the other four dogs are pulled from the bridge by the increasing weight of those below.
+ 
+-`Jump, Dyce, jump!' screams Irian, as the last dog plummets into the void. Dyce leaps clear just as the sledge topples into the gorge, but he lands on the narrowest section of ice and loses his footing.
+-
+-`Help me, help me!' he cries, his fingers clawing at the slippery ice.
+-
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small16.pdf} %
+ \end{figure}
++`Jump, Dyce, jump!' screams Irian, as the last dog plummets into the void. Dyce leaps clear just as the sledge topples into the gorge, but he lands on the narrowest section of ice and loses his footing.
++
++`Help me, help me!' he cries, his fingers clawing at the slippery ice.
++
+ \nopagebreak\begin{aonchoice}If you wish to attempt to save Dyce, \hyperlink{sect19}{\bfseries turn to 19}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you feel there is no way you can save him, \hyperlink{sect257}{\bfseries turn to 257}.\end{aonchoice}
+@@ -2621,7 +2631,7 @@
+ 
+ The stopper in this Vial is jammed and you have to take great care not to break the slender glass neck. It gradually loosens and you sniff the orange liquid.
+ 
+-\nopagebreak\begin{aonchoice}If you have the Kai Discipline of either Sixth Sense or Weaponskill, \hyperlink{sect311}{\bfseries turn to 311}.\end{aonchoice}
++\nopagebreak\begin{aonchoice}\begin{sloppypar}If you have the Kai Discipline of either Sixth Sense or Weaponskill, \hyperlink{sect311}{\bfseries turn to 311}.\end{sloppypar}\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you do not possess either Discipline, you become suspicious of this potion and decide to discard it. \hyperlink{sect10}{\bfseries Return to 10} and decide your next course of action.\end{aonchoice}
+ 
+@@ -2642,9 +2652,8 @@
+ \centering
+ \hypertarget{ill11}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill11.pdf}}%
+-\\{\itshape From out of the dark slithers a huge\\
+-ghoulish green monster over\\
+-which Vonotar has control.
++\\{\itshape From out of the dark slithers a huge ghoulish\\
++green monster over which Vonotar has control.
+ }
+ \end{figure}
+ The Hall of the Brumalmarc is a vast chamber constructed of crystal blocks rising to a central plateau. On this stands the Brumalmarc throne, as old as Ikaya itself. There, Vonotar sits, surrounded by the tomes and eldritch trappings of a necromancer. He is rapt in study and does not see you enter the hall. He remains oblivious to your presence until Loi-Kymar sneezes.
+@@ -2945,14 +2954,15 @@
+ 
+ \addsec[Section 201]{\hspace*{\fill}\hypertarget{sect201}{}201\hspace*{\fill}}
+ 
+-The bowl creaks and splinters of stone fall from the ceiling as you swing across the black fissure, but you are lucky; the Rope holds and you land safely on the other side. With a flick of your wrist you retrieve the Rope and set off along the passage.
+-
+-You have gone only a few yards when you notice an arched stone door to your left, adorned with strange carvings. These carvings depict hundreds of skeletons entwined around smooth blocks of stone. To the side of the door you see that a lever in the wall is raised.
+-
++The bowl creaks and splinters of stone fall from the ceiling as you swing across the black fissure, but you are lucky;
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small19.pdf} %
+ \end{figure}
++the Rope holds and you land safely on the other side. With a flick of your wrist you retrieve the Rope and set off along the passage.
++
++You have gone only a few yards when you notice an arched stone door to your left, adorned with strange carvings. These carvings depict hundreds of skeletons entwined around smooth blocks of stone. To the side of the door you see that a lever in the wall is raised.
++
+ \nopagebreak\begin{aonchoice}If you wish to pull the lever and open the door, \hyperlink{sect110}{\bfseries turn to 110}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to continue along the passage, \hyperlink{sect63}{\bfseries turn to 63}.\end{aonchoice}
+@@ -3093,9 +3103,8 @@
+ \centering
+ \hypertarget{ill12}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill12.pdf}}%
+-\\{\itshape Each Ice Barbarian scout is\\
+-carrying a backpack containing a\\
+-child armed with a bone bow.
++\\{\itshape Each Ice Barbarian scout is carrying a backpack\\
++containing a child armed with a bone bow.
+ }
+ \end{figure}
+ You have covered less than a mile when the first of the Ice Barbarian scouts appear to the north on skis. At first, there are only two of the fearsome warriors, but they are soon joined by three others. They are large, muscular, and bedecked with furs. Some of them wear bone armour. Despite their size, they glide across the snow with an almost feline grace and speed. Each of them has a pole attached to his back from which a small flag flutters.
+@@ -3111,6 +3120,7 @@
+ 
+ \addsec[Section 217]{\hspace*{\fill}\hypertarget{sect217}{}217\hspace*{\fill}}
+ 
++\enlargethispage{\baselineskip}
+ The monolith suddenly explodes, sending hundreds of razor-sharp shards screaming through the air. You are pierced by the stone shrapnel and thrown to the far wall by the sheer force of the blast. You lose 10 {\sc Endurance} points.
+ 
+ \nopagebreak\begin{aonchoice}If you are still alive, \hyperlink{sect154}{\bfseries turn to 154}.\end{aonchoice}
+@@ -3145,14 +3155,14 @@
+ 
+ The corridor in which you now stand is far warmer than the icy cavern outside. For the first time in many days, you can lower the hood of your cloak and remove your mittens without risking frostbite.
+ 
++\begin{figure}[!ht] 
++\centering
++\includegraphics[width=\textwidth,keepaspectratio]{small20.pdf} %
++\end{figure}
+ You notice that the stone passage ascends to a landing where another passage branches off to the east. M'lare bowls hang at regular intervals along the arched ceiling, their unnatural light illuminating the carved walls.
+ 
+ As you approach the landing, you notice an archway leading into a small room beyond. A strange sight meets your eyes. Ragged furs, pottery shards, and the debris of hundreds of years seem to have been thrown into this chamber. A large lever protrudes from the wall beside the archway.
+ 
+-\begin{figure}[!ht]
+-\centering
+-\includegraphics[width=\textwidth,keepaspectratio]{small20.pdf} %
+-\end{figure}
+ \nopagebreak\begin{aonchoice}If you wish to enter the room and investigate the contents, \hyperlink{sect38}{\bfseries turn to 38}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to pull the lever, \hyperlink{sect163}{\bfseries turn to 163}.\end{aonchoice}
+@@ -3317,9 +3327,8 @@
+ \centering
+ \hypertarget{ill13}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill13.pdf}}%
+-\\{\itshape You arrive at a massive ice\\
+-hall full of crystal stalagmites\\
+-and stalactites.
++\\{\itshape You arrive at a massive ice hall full of\\
++crystal stalagmites and stalactites.
+ }
+ \end{figure}
+ After a short walk, you arrive at a massive ice hall full of crystal stalagmites and stalactites. The floor is covered with animal tracks and bones, yet the vast hall seems empty and still. You notice that the northern wall is a completely smooth surface of granite blocks stretching upwards to the icy ceiling, over one hundred feet above. You suddenly realize that you are staring at the foundation stones of Ikaya---you have reached the ice fortress.
+@@ -3416,12 +3425,12 @@
+ 
+ As the beast shrieks a ghastly death-cry, the horrible stench of its body fills your nostrils. Even the Kanu-dogs wrinkle their noses in disgust and shy away from the evil smell.
+ 
+-When Irian appears at your side with a skinning knife, you wince at the thought of skinning this dreadful creature. You watch with distaste as Irian cuts open the beast from throat to belly, and peels back the thick white fur. You cannot believe your eyes when he scoops out handfuls of thick oil from inside the skin and smears it all over his face and body. `Baknar oil,' he shouts enthusiastically. `Keeps you dry and warm. Better than fur for keeping out the Kalte ice.' He offers you a handful of the vile oil.
+-
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small22.pdf} %
+ \end{figure}
++When Irian appears at your side with a skinning knife, you wince at the thought of skinning this dreadful creature. You watch with distaste as Irian cuts open the beast from throat to belly, and peels back the thick white fur. You cannot believe your eyes when he scoops out handfuls of thick oil from inside the skin and smears it all over his face and body. `Baknar oil,' he shouts enthusiastically. `Keeps you dry and warm. Better than fur for keeping out the Kalte ice.' He offers you a handful of the vile oil.
++
+ \nopagebreak\begin{aonchoice}If you wish to accept his offer, \hyperlink{sect91}{\bfseries turn to 91}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If the thought of smelling like a vat of rancid cheese does not appeal to you, \hyperlink{sect172}{\bfseries turn to 172}.\end{aonchoice}
+@@ -3488,9 +3497,8 @@
+ \centering
+ \hypertarget{ill14}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill14.pdf}}%
+-\\{\itshape In an instant, the hunchback\\
+-wizard is engulfed in a tangle\\
+-of vines.
++\\{\itshape In an instant, the hunchback wizard\\
++is engulfed in a tangle of vines.
+ }
+ \end{figure}
+ `Your time has come,' shouts a voice, but it is Loi-Kymar and not Vonotar who now speaks. A knot of herbs flies through the air and hits Vonotar squarely in the chest. In an instant, the hunchback wizard is engulfed in a tangle of vines that ensnare him from head to toe. Loi-Kymar bridges the moat with more creepers and joins you on the platform.
+@@ -3642,9 +3650,8 @@
+ \centering
+ \hypertarget{ill15}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill15.pdf}}%
+-\\{\itshape This strange creature is a\\
+-Crystal Frostwyrm and you must fight\\
+-it to the death.
++\\{\itshape This strange creature is a Crystal Frostwyrm\\
++and you must fight it to the death.
+ }
+ \end{figure}
+ This strange creature is a Crystal Frostwyrm, a scavenging beast now living on the remains of the unfortunate creatures that have entered the cavern. Its hard skin is almost transparent, and its internal organs can be seen pulsating inside. A large mouth opens in the crystalline head to reveal row upon row of jagged crystal teeth. Your back is pressed to the stone door and there is no way to evade the monster. You must fight the creature to the death. It is immune to Mindblast.
+@@ -3798,7 +3805,9 @@
+ 
+ \addsec[Section 280]{\hspace*{\fill}\hypertarget{sect280}{}280\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ The Key is coated with a corrosive digestive acid that burns through your mittens and attacks your fingers. Lose 1 {\sc Endurance} point. You drop the Key and plunge your hand into the snow to ease the pain. If you still wish to keep the key, you can wipe it in the snow before placing it in your pocket, but remember to mark it on your \hyperlink{action}{\emph{Action Chart}} as a Special Item. You must now search for a way of opening the fortress door.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}\hyperlink{sect344}{\bfseries Turn to 344}.\end{aonchoice}
+ 
+@@ -4112,12 +4121,13 @@
+ 
+ \addsec[Section 307]{\hspace*{\fill}\hypertarget{sect307}{}307\hspace*{\fill}}
+ 
+-Preparing yourself for combat, you signal to the others to attack. The Ice Barbarians soon realize the danger and flee towards the west. To your dismay, you see that they are equipped with skis and can make a speedy escape. They have small poles attached to their fur-clad backs from which strange blue flags flutter. `Convoy scouts,' says Irian, shielding his eyes from the glare of the snow. `Their blue ``Banach''---their back flags---mean they're scouts from a sledge pack. They're probably on their way back from the trading post at Ljuk; their convoy can't be more than a few miles away---five at the most.'
+-
++Preparing yourself for combat, you signal to the others to attack. The Ice Barbarians soon realize the danger and flee towards the west. To your dismay, you see that they are equipped with skis and can make a speedy escape. They have small poles attached to their fur-clad backs from which strange blue flags flutter.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small27.pdf} %
+ \end{figure}
++`Convoy scouts,' says Irian, shielding his eyes from the glare of the snow. `Their blue ``Banach''---their back flags---mean they're scouts from a sledge pack. They're probably on their way back from the trading post at Ljuk; their convoy can't be more than a few miles away---five at the most.'
++
+ \nopagebreak\begin{aonchoice}If you wish to press on to Ikaya and try to outrun the Ice Barbarians before they return with reinforcements, \hyperlink{sect327}{\bfseries turn to 327}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to follow the scouts westwards and find out more about their convoy, \hyperlink{sect178}{\bfseries turn to 178}.\end{aonchoice}
+@@ -4155,7 +4165,9 @@
+ 
+ \addsec[Section 311]{\hspace*{\fill}\hypertarget{sect311}{}311\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ You recognize the Potion to be distilled Alether, a potion of strength. Your Kai masters used Alether to increase their {\sc Combat Skill} in battle, and there is enough concentrated Alether in this Vial to increase your {\sc Combat Skill} by 4 for the duration of one combat. For it to be effective you must swallow it immediately before you fight. If you wish to keep this Vial, mark it on your \hyperlink{action}{\emph{Action Chart}} as a Backpack Item.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}Now \hyperlink{sect10}{\bfseries return to 10} and choose your next course of action.\end{aonchoice}
+ 
+@@ -4235,14 +4247,15 @@
+ \centering
+ \hypertarget{ill18}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill18.pdf}}%
+-\\{\itshape The Ice Barbarians circle around you\\
+-but they dare not attack while you\\
+-hold one of their children as hostage.
++\\{\itshape The Ice Barbarians circle around you but they dare not\\
++attack while you hold one of their children as hostage.
+ }
+ \end{figure}
+ You manage to hang on to the struggling child, and remove a bone dagger from his boot to prevent him stabbing you in the back.
+ 
++\begin{sloppypar}
+ The Ice Barbarians have drawn themselves up into a circle around you, but they dare not attack while you are holding one of their children as a hostage. Holding the bone dagger to the child's throat, you slowly inch your way towards the sledge. You soon realize that you will never be able to outdistance them on a loaded sledge. You will have to think of something---and quickly.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to cut the equipment loose, free the Ice Barbarian child, and escape on the unloaded sledge, \hyperlink{sect190}{\bfseries turn to 190}.\end{aonchoice}
+ 
+@@ -4403,9 +4416,8 @@
+ \centering
+ \hypertarget{ill19}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill19.pdf}}%
+-\\{\itshape A hidden panel opens near the\\
+-right stave and inside is a\\
+-beautiful glowing crystal.
++\\{\itshape A hidden panel opens near the right stave\\
++and inside is a beautiful glowing crystal.
+ }
+ \end{figure}
+ A hidden panel opens near the right stave. Inside, you discover a beautiful Glowing Crystal. It is warm to the touch. If you wish to keep this Glowing Crystal, slip it into your pocket and mark it on your \hyperlink{action}{\emph{Action Chart}} as a Special Item.
+@@ -4458,12 +4470,13 @@
+ 
+ \addsec[Section 340]{\hspace*{\fill}\hypertarget{sect340}{}340\hspace*{\fill}}
+ 
+-You drag the bodies out of the kitchen and prop them behind the secret door. When you return, Loi-Kymar is busy examining the bottles of herbs that line the kitchen shelves. He pockets several jars and mixes the contents of two others in a small stone bowl. He offers you a handful of the dry leaves and urges you to eat them. `They will restore your strength, Lone Wolf.' You eat the sweet tasting herbs and feel a warm glow radiating throughout your body. Restore 6 {\sc Endurance} points to your current total.
+-
++You drag the bodies out of the kitchen and prop them behind the secret door. When you return, Loi-Kymar is busy examining the bottles of herbs that line the kitchen shelves. He pockets several jars and mixes the contents of two others in a small stone bowl.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small30.pdf} %
+ \end{figure}
++He offers you a handful of the dry leaves and urges you to eat them. `They will restore your strength, Lone Wolf.' You eat the sweet tasting herbs and feel a warm glow radiating throughout your body. Restore 6 {\sc Endurance} points to your current total.
++
+ \nopagebreak\begin{aonchoice}\hyperlink{sect301}{\bfseries Turn to 301}.\end{aonchoice}
+ 
+ 
+@@ -4558,14 +4571,15 @@
+ 
+ \hspace*{\fill} \mbox{\itshape \hyperlink{ill20}{Illustration~XX}}\hspace*{\fill}\\*[\parskip]
+ \begin{figure}[p]
+-\centering
+ \hypertarget{ill20}{}
+-\raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill20.pdf}}%
+-\\{\itshape Vonotar is led away to the deepest chamber\\
+-of the Guildhall wherein lies the Daziarn:\\
+-the door of an eternal prison from which\\
+-there can be no escape.
+-}
++\setlength{\unitlength}{1mm}
++\makebox[\textwidth]{\raisebox{0cm}[0.5\textheight][0.5\textheight]{%
++\begin{picture}(0,0)
++\put(4,0){\makebox(0,0){\rotatebox{270}{\includegraphics[width=\textheight,keepaspectratio]{ill20.pdf}}}}
++\put(-65,0){\makebox(0,0){\rotatebox{270}{\parbox{\textheight}{\centering \itshape Vonotar is led away to the deepest chamber of the Guildhall wherein lies the Daziarn:\\
++the door of an eternal prison from which there can be no escape.}}}}
++\end{picture}
++}}%
+ \end{figure}
+ As the colours fade, you become aware of a sudden drop in temperature. You now stand upon the Ljuk ice shelf at a point less than half a mile from where the {\itshape Cardonal} lies at anchor. Loi-Kymar and Vonotar are close by, both shivering in the chill morning air. Within minutes you are sighted by the ship's lookout and a longboat is dispatched. As a wriggling Vonotar is hoisted unceremoniously aboard the {\itshape Cardonal} and deposited in the brig the captain is the first to congratulate you on your skill and daring.
+ 

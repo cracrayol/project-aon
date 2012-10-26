@@ -1,0 +1,65 @@
+
+BUGS:
+----
+
+- In LaTeX some sections end up with their 'choices' sections being orphaned. 
+  The XSL style has been changed to add a \nopagebreak in choices but
+  it still happens some times.
+
+  Solution #1: (Thomas Wolmer)
+  > <all text paragraphs erxcept the last one>
+  > \begin{samepage}
+  > <last text paragraph>
+  > <all choices>
+  > \end{samepage}
+
+  Solution #2: (Ingo Kloecker)
+
+  Use \enlargethispage{\baselineskip} (or some multiple of \baselineskip) to
+  fit more on a page or \newpage (or something similar) to force a page break.
+
+  Whatever the solution that means changing the TeX files and changes have to
+  be preserved (see TODO item #1)
+
+
+TODO: 
+----
+
+ * Use the Souvenir font or another (good) alternative. 
+
+ * (if using non-Standard fonts) Embed fonts in documents, this is recommended
+  procedure in order to make sure it looks good in all PDF readers. Some PDF
+  readers might not have the exact font and replace it with a different one and
+  make it look ugly.
+
+  Note: This might violate the licensing use of the font, however
+
+- Use PNG files instead of generating PDF files as this is not required when
+  using pdflatex (as opposed of using latex + dvips)
+
+- [Spanish] Provide bearer scroll and action chart for the Grandmaster and New
+  Order series for Spanish under es/pdf/lw/$series/ 
+
+    Note: Already done for Kai
+
+DONE
+----
+
+- PDF file is currently missing:
+    - Action Chart
+    - Random Number Table
+
+- Make it possible to have external patches to the TeX files that get applied
+  before build
+  
+- Add meta-data when generating PDF files, this can be done either using
+    pdftk (pdftk in.pdf update_info in.info output out.pdf )  or (better yet)
+    using hyperxmp. See
+    http://www.ctan.org/tex-archive/macros/latex/contrib/hyperxmp/
+
+    To see the current metadata provided
+       pdftk <book_name>.pdf dump_data output -
+    or (simpler)
+        pdfinfo <book_name>.pdf
+
+- [Spanish] Update Makefiles to define 'series'

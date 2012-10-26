@@ -1,0 +1,52 @@
+
+ERRATA
+
+- PDF files do not work OK:
+     - missing definitions of image in PDF output (should be fixed when
+       fixing [1] below)
+
+
+TODO
+
+[0] Document in the spanish XML files the (english) revision they were based
+    on.  
+    Note: Needed for version tracking and to implement the changes
+    introduced in the english XML files o the Spanish
+
+[1]- Update XML with updates introduced in English version
+
+[2]- Review if all the gifs in 01hdlo, 02fsea, 03lcdk (/skins/standards) are
+  needed. 
+  NOTE: Probably only forward, title, toc and back are needed.
+
+[3]- Do scans of the maps for all books and put them under the proper images
+  NOTE: Images have been contributed for #1 - #5 based on the English
+  files and using Spanish scans (which were black and white)
+
+[4]- Change the XML files to use PNG instead of gif files. Use the
+    html-compatible definition used in the english XML files.  
+    Note:
+
+  * This is related to [1], if [1] is DONE this should be done too
+
+  * While this is not done the gbtoxhtml.pl will only publish PNG
+  files but the HTML files will reference to GIF files too. Run this to convert:
+
+for i in *.png; do name=`echo $i | sed -e 's/png/gif/'`; [ ! -e $name ] && convert $i $name; done
+
+[5]- Change accented entities (<ch.XXXX>) to UTF-8 characters
+
+     Note: 
+
+      * Needed for spell checker, book #5 and #6 have been converted
+      * If not properly encoded some characters will not be presented properly 
+        when generating PDFs
+
+[6]- LS#6: The weapons.gif needs to be remade, this book introduced the bow.
+
+DONE
+----
+- Remove RCS revision logs from XML files
+
+- PDF files: accented characteres do not show up properly (if using <ch.Xacute>) in
+       titles but show up properly if using ISO-8859-1 encoding

@@ -1,0 +1,657 @@
+--- 05sots-untweaked.tex	2012-01-13 21:14:59.000000000 +0100
++++ 05sots.tex	2012-01-13 21:29:02.000000000 +0100
+@@ -177,7 +177,9 @@
+ % \frontmatter
+ 
+ \addchap{About the Author and Illustrator}
++\begin{sloppypar}
+      {\bfseries Joe Dever}, the creator of the bestselling Lone Wolf adventure books and novels, has achieved world-wide recognition in three creative fields---as an award-winning author of international renown, as an acclaimed musician and composer, and as a games designer specialising in role-playing games.
++\end{sloppypar}
+ 
+ 
+    On graduating from college in 1974, Joe Dever became a professional musician, and for several years, he worked in the music industry in Europe and the United States.
+@@ -208,7 +210,10 @@
+   Gary was working at Games Workshop when Joe Dever asked him to illustrate some of his manuscript of {\itshape Flight from the Dark}. The two teamed up after that and, they continued to work together until the eighth book in the series, {\itshape The Jungle of Horrors}.
+ 
+ 
++\enlargethispage{\baselineskip}
++\begin{sloppypar}
+   Gary has also drawn the illustrations in {\itshape Redwall} and related books, {\itshape The Prince of Shadows} gamebook series, and several books which he also authored. Gary continues to enjoy war gaming and works as an illustrator and model maker.
++\end{sloppypar}
+ 
+ 
+  
+@@ -223,6 +228,7 @@
+ Matthew Reynolds (extramatter)
+ 
+ 
++\enlargethispage{\baselineskip}
+ \minisec{Illustration Transcription}
+ Jonathan Blake\\
+ Paul Haskell\\
+@@ -287,7 +293,9 @@
+ 
+ The king leads you to a window and points towards the harbour, barely visible through the falling snow. A Vassagonian galley lies anchored close to the harbour wall.
+ 
++\begin{sloppypar}
+ `Go to Vassagonia, Lone Wolf. Sign the treaty and return quickly. Even with the promise of peace, I fear the shadow of war will fall upon us before the year is out.'
++\end{sloppypar}
+ 
+ You wave farewell to Holmgard on this bleak midwinter's day, feeling sure you will return before the thaw. But as you watch the spires of Holmgard disappear in the falling snow, you have no inkling of the shadow that awaits you in Vassagonia.
+ 
+@@ -295,7 +303,9 @@
+ 
+ You keep a record of your adventure on the \hyperlink{action}{\emph{Action Chart}}.
+ 
++\begin{sloppypar}
+ During your training as a Kai Lord you have developed fighting prowess---{\sc Combat Skill} and physical stamina---{\sc Endurance}. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it onto the \hyperlink{random}{\emph{Random Number Table}}. If you pick 0 it counts as zero.
++\end{sloppypar}
+ 
+ The first number that you pick from the \hyperlink{random}{\emph{Random Number Table}} in this way represents your {\sc Combat Skill}. Add 10 to the number you picked and write the total in the {\sc Combat Skill} section of your \hyperlink{action}{\emph{Action Chart}} (i.e. if your pencil fell on 4 in the \hyperlink{random}{\emph{Random Number Table}} you would write in a {\sc Combat Skill} of 14). When you fight, your {\sc Combat Skill} will be pitted against that of your enemy. A high score in this section is therefore very desirable.
+ 
+@@ -303,6 +313,7 @@
+ 
+ If you are wounded in combat you will lose {\sc Endurance} points. If at any time your {\sc Endurance} points fall to zero or below, you are dead and the adventure is over. Lost {\sc Endurance} points can be regained during the course of the adventure, but your number of {\sc Endurance} points can never go above the number with which you start your adventure.
+ 
++\enlargethispage{-\baselineskip}
+ {\bfseries If you have successfully completed any of the previous adventures in the {\itshape Lone Wolf} series}, you will already have your {\sc Combat Skill}, {\sc Endurance} points and Kai Disciplines which you can now carry over with you to Book 5. You may also carry over any Weapons and Special Items that you held at the end of your last adventure, and these should be entered on your new \hyperlink{action}{\emph{Action Chart}}. (You are still limited to two Weapons and eight Backpack Items.)
+ 
+ You may choose one bonus \hyperlink{discplnz}{Kai Discipline} to add to your \hyperlink{action}{\emph{Action Chart}} for every {\itshape Lone Wolf} adventure you have successfully completed; now read the \hyperlink{equipmnt}{section on equipment} for Book 5 carefully.
+@@ -409,10 +420,11 @@
+ 
+ You may take your pick of the following items (in addition to those you already possess, but remember you may only carry two weapons). You may take up to four of the following:
+ 
++\newpage
+ \begin{aonitemize}
+ \item Dagger (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{-.1\baselineskip}
+ \begin{center}
+ \includegraphics[width=21mm,keepaspectratio]{dagger.pdf} %
+ \end{center}
+@@ -428,7 +440,7 @@
+ 
+ \item Sword (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{-.7\baselineskip}
+ \begin{center}
+ \includegraphics[width=54mm,keepaspectratio]{sword.pdf} %
+ \end{center}
+@@ -436,15 +448,15 @@
+ 
+ \item Spear (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{.1\baselineskip}
+ \begin{center}
+ \includegraphics[width=78mm,keepaspectratio]{spear.pdf} %
+ \end{center}
+-\vspace{.2\baselineskip}
++\vspace{.5\baselineskip}
+ 
+ \item 2 Special Rations (Meals). Each of these Special Rations counts as one Meal, and each takes up one space in your Backpack.
+ 
+-\vspace{.2\baselineskip}
++\vspace{-.1\baselineskip}
+ \begin{center}
+ \includegraphics[width=40mm,keepaspectratio]{food.pdf} %
+ \end{center}
+@@ -452,7 +464,6 @@
+ 
+ \item Mace (Weapons)
+ 
+-\vspace{.2\baselineskip}
+ \begin{center}
+ \includegraphics[width=31mm,keepaspectratio]{mace.pdf} %
+ \end{center}
+@@ -566,7 +577,7 @@
+ \end{aonitemize}
+ 
+ 
+-\item On the \hyperlink{action}{\emph{Action Chart}}, mark the changes in {\sc Endurance} points to the participants in the combat.
++\item \begin{sloppypar}On the \hyperlink{action}{\emph{Action Chart}}, mark the changes in {\sc Endurance} points to the participants in the combat.\end{sloppypar}
+ 
+ \item Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.
+ 
+@@ -642,19 +653,19 @@
+ 
+ You use your time aboard the ship to good purpose, learning the Vassagonian language from the ship's crew. They are only too eager to teach you, asking only in return tales of your adventures in the Lastlands---for many of the sailors, these are the most exciting stories they have ever heard. By the time you reach Barrakeesh, you have both mastered their language and won their respect.
+ 
+-\begin{figure}[!ht]
+-\centering
+-\includegraphics[width=\textwidth,keepaspectratio]{small1.pdf} %
+-\end{figure}
+ It is early afternoon when the ramparts of the desert capital are first sighted on the horizon. You push your way through the cheering crew, and join the envoy at the prow of the ship. Beaming with pride, he hands you a telescope and invites you to view the land of his birth. The sight is indeed breathtaking. You stare in fascination at the golden domes, minarets, and green-tiled roofs shimmering beneath the desert sun, and marvel at the splendour of the Grand Palace, which dominates this magnificent city. Then you notice that from every golden turret of the palace flutters a long, black pennant. You ask the envoy of the meaning of the black flags. Horror floods across his face as he snatches the telescope from your hands. `By the spirit of the Majhan! He is dead~\protect\textellipsis\ The Zakhan is dead!'
+ 
+ As the bad news spreads through the ship, you pray that the peace treaty will be signed and honoured by the Zakhan's successor. However, the envoy is less than hopeful.
+ 
++\begin{figure}[!ht]
++\centering
++\includegraphics[width=\textwidth,keepaspectratio]{small1.pdf} %
++\end{figure}
+ The harbour of Barrakeesh is deserted save for a handful of citizens clad in black, and the only sound that greets you is the toll of a funeral bell, echoing through the harbour on this day of mourning. Then a horse-drawn carriage enters the harbour square, escorted by the cavalry of the Palace Guard. It halts, and a dour man in turquoise robes steps out to meet you.
+ 
+ `A thousand greetings, Lone Wolf, I am Maouk, and I welcome you to our city on behalf of my master, his most sublime magnificence, Zakhan Kimah.'
+ 
+-The envoy gasps upon hearing the name of the new Zakhan. He turns to speak, his eyes wild with fear. `It is a trap, you must~\protect\textellipsis\ '
++The envoy gasps upon hearing the name of the new Zakhan. He turns to speak, his eyes wild with fear. `It is a trap, you must~\protect\textellipsis'
+ 
+ His warning is cut short by the blade of Maouk's dagger. Suddenly, scores of black-clad warriors emerge from the shadows; they are Sharnazim, élite Vassagonian bodyguards. They close in, surrounding you on every side. You must act quickly if you are to survive this deadly trap.
+ 
+@@ -961,22 +972,23 @@
+ Each of the three bottles bears a label, handwritten in green ink.
+ 
+ \begin{aonitemize}
+-\item Larnuma Oil (restores 2 {\sc Endurance} points per dose)---3 Gold Crowns
+-\item Laumspur (restores 4 {\sc Endurance} points per dose)---5 Gold Crowns
+-\item Rendalim's Elixir (restores 6 {\sc Endurance} points per dose)---7 Gold Crowns
++\item Larnuma Oil (restores 2 {\sc Endurance} points per dose)\\3 Gold Crowns
++\item Laumspur (restores 4 {\sc Endurance} points per dose)\\5 Gold Crowns
++\item Rendalim's Elixir (restores 6 {\sc Endurance} points per dose)\\7 Gold Crowns
+ \end{aonitemize}
+ 
+-You may purchase any of the above. (The prices are per dose. All the potions are Backpack Items.) The herb-mistress then escorts you to a side door. `I sense your despair, Northlander. I pray you find your cure.'
+-
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small5.pdf} %
+ \end{figure}
++You may purchase any of the above. (The prices are per dose. All the potions are Backpack Items.) The herb-mistress then escorts you to a side door. `I sense your despair, Northlander. I pray you find your cure.'
++
+ As you leave, she offers a word of advice. `The guards at the north gate of the Grand Palace can be bribed.' You thank her and enter the alley running along the side of her shop.
+ 
+ \nopagebreak\begin{aonchoice}\hyperlink{sect160}{\bfseries Turn to 160}.\end{aonchoice}
+ 
+ 
++\enlargethispage{\baselineskip}
+ \addsec[Section 28]{\hspace*{\fill}\hypertarget{sect28}{}28\hspace*{\fill}}
+ 
+ The plan works---your arrow cuts the air and finds its mark. The smash of glass echoes around the square, drawing everyone's attention to the merchant's shop.
+@@ -1278,7 +1290,9 @@
+ 
+ \addsec[Section 55]{\hspace*{\fill}\hypertarget{sect55}{}55\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ The temperature rises steadily until you are bathed in sweat. Ahead, you see a chamber filled with steam that rises from its bubbling floor. You are about to enter the chamber when you catch a glimpse of the danger awaiting you; the stone walkway ends abruptly, only a few yards into the chamber. Ten feet below, lying before you like the surface of a huge bubbling cauldron, is a {\itshape tar-sorkh}: a mud geyser.
++\end{sloppypar}
+ 
+ These geysers are common in Vassagonia. Much of the desert empire is unstable, but although it is subject to constant earth tremors, it rarely results in great destruction. The Vassagonians call these tremors: {\itshape `Tasa-Dophiem'}, which means `The Wrestling Gods'.
+ 
+@@ -1481,7 +1495,9 @@
+ 
+ Having washed off the worst of the dirt, you clamber out of the bath and enter a small antechamber; the room is hot and arid and your clothes are soon as dry as bone. Beyond the antechamber is another hall, this time crowded with people, some seated, others standing, and everyone busy in conversation. These are the free baths of Barrakeesh and the citizens of the capital are justly proud of them. They are the envy of the other desert cities where water is scarce and precious. The citizens treat the baths as a forum, a place for meeting and talking with friends. Much of the conversation you overhear is about the new Zakhan; few speak well of him.
+ 
++\begin{sloppypar}
+ You wrap yourself in the large Towel and make your way through the crowd towards the main entrance. If you wish to keep the Towel once you are outside, you must mark it on your \hyperlink{action}{\emph{Action Chart}} as 2 Backpack Items, due to its size.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}\hyperlink{sect54}{\bfseries Turn to 54}.\end{aonchoice}
+ 
+@@ -1606,7 +1622,9 @@
+ 
+ \addsec[Section 85]{\hspace*{\fill}\hypertarget{sect85}{}85\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ The guards pull open the door and rush into the cell, their weapons held in readiness to attack. They are brutish men with cruel, war-scarred faces. Their surprise at your sudden appearance soon turns to anger and they shove you back against the far wall.
++\end{sloppypar}
+ 
+ `Seems we have a trickster, Sefrou,' hisses the taller guard. `A northland illusionist who's lost his way,' croons the other. They snigger at their joke, their eyes full of malevolence and spite.
+ 
+@@ -1644,12 +1662,13 @@
+ Long may he reign!
+ \end{quote}
+ 
+-A scuffle breaks out at the end of the passage as a handful of Sharnazim try to push their way through the crowd. In the confusion a fruit stall is overturned, and its owner curses the clumsy soldiers at the top of his voice. Then there is a sudden silence---the luckless man has been beheaded for his insolence.
+-
++A scuffle breaks out at the end of the passage as a handful of Sharnazim try to push their way through the crowd. In the confusion a fruit stall is overturned,
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small9.pdf} %
+ \end{figure}
++and its owner curses the clumsy soldiers at the top of his voice. Then there is a sudden silence---the luckless man has been beheaded for his insolence.
++
+ You turn and run, splashing through the shallow drainage channel running the length of the foul passage.
+ 
+ \nopagebreak\begin{aonchoice}\hyperlink{sect113}{\bfseries Turn to 113}.\end{aonchoice}
+@@ -1788,6 +1807,7 @@
+ 
+ Every shelf of the small library is filled with books, every shelf, that is, save one where, on a purple silk cloth, lie a Copper Key and a Prism. If you wish to take either, or both, of these items, mark the Prism as a Backpack Item and the Copper Key as a Special Item (which you carry in your pocket) on your \hyperlink{action}{\emph{Action Chart}}.
+ 
++\enlargethispage{\baselineskip}
+ There is no exit from the library other than the marble door by which you entered. After satisfying yourself that nothing useful has been overlooked, you close the door and walk back along the corridor. When you reach the junction, you see a patrol of palace guards ascending the stairs. Without a moment's hesitation, you run towards the east door to avoid being seen.
+ 
+ \nopagebreak\begin{aonchoice}\hyperlink{sect57}{\bfseries Turn to 57}.\end{aonchoice}
+@@ -1987,7 +2007,9 @@
+ 
+ \addsec[Section 117]{\hspace*{\fill}\hypertarget{sect117}{}117\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ The twisting alley comes to an end in a small garden square flanked on three sides by tall, domed houses, all with first-floor balconies. Wrought-iron grilles reinforce every window and door.
++\end{sloppypar}
+ 
+ You are near the top of a heavy wooden trellis that hangs below a balcony, when Maouk's men burst into the square. Many are armed with heavy bronze crossbows.
+ 
+@@ -2054,9 +2076,8 @@
+ \centering
+ \hypertarget{ill7}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill7.pdf}}%
+-\\{\itshape The officer, a bull-necked warrior\\
+-with a flat nose, elbows the\\
+-others aside and attacks.
++\\{\itshape The officer, a bull-necked warrior with a flat nose,\\
++elbows the others aside and attacks.
+ }
+ \end{figure}
+ The noise grows louder. Suddenly the door latch rattles and a gruff voice growls out above the din: `Break it down!'
+@@ -2074,7 +2095,9 @@
+ 
+ \addsec[Section 124]{\hspace*{\fill}\hypertarget{sect124}{}124\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ You leap from the window ledge and crash feet-first into the guards, bowling them over with the surprise your attack. You fight with speed and skill, killing three soldiers before they can regain their balance. However, the noise of combat alerts the mess hall, and a dozen more of the Zakhan's soldiers join the battle. You are quickly overwhelmed by the sheer weight of numbers, and it is only their respect for your bravery and combat prowess that prevents them killing you on the spot.
++\end{sloppypar}
+ 
+ You are disarmed and frog-marched to a prison cell, where you are left to await the Zakhan.
+ 
+@@ -2276,7 +2299,9 @@
+ 
+ You throw yourself to one side, barely escaping the dart as it whistles past your chest.
+ 
++\begin{sloppypar}
+ `Seize him!' screams Maouk, kicking his soldiers onwards through the wreckage. `Don't let him get away this time!' You are now lying on the floor less than a couple of feet away from the trapdoor.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to roll over to the trapdoor and escape, \hyperlink{sect51}{\bfseries turn to 51}.\end{aonchoice}
+ 
+@@ -2303,9 +2328,8 @@
+ \centering
+ \hypertarget{ill9}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill9.pdf}}%
+-\\{\itshape The alley is transformed into a rush of shocked\\
+-and screaming people, all scrambling to avoid\\
+-the deluge of burning filth.
++\\{\itshape The alley is transformed into a rush of shocked and screaming\\
++people, all scrambling to avoid the deluge of burning filth.
+ }
+ \end{figure}
+ You set light to a tar-coated torch and hurl it down into the sewer-hole. There is a tremendous flash and roar; suddenly, all along the alley, plumes of flaming sewage explode skywards. The alley is transformed into a rush of shocked and screaming people, all scrambling to avoid the deluge of burning filth raining down on their heads. The torch has triggered a chain reaction in the {\itshape Baga-darooz}; the inflammable sewer gas has ignited---everywhere is panic and confusion.
+@@ -2332,6 +2356,7 @@
+ 
+ You spot a ripple in the water ahead. It moves nearer, the wake of a submerged sewer creature. Instinctively, you flatten yourself against the dye-stained wall as you feel the movement of water against your waist, and watch in fear and fascination as the ripple of water disappears into the tunnel. Suddenly, a fearful scream bursts out of the darkness; Maouk has lost one of his men. The terrible cries of the Sharnazim warrior chill your spine, but your instincts tell you to press on while you have the advantage. The channel soon reaches a junction where another tunnel heads off to the west.
+ 
++\enlargethispage{1.1\baselineskip}
+ \nopagebreak\begin{aonchoice}If you wish to enter the new tunnel, \hyperlink{sect108}{\bfseries turn to 108}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to continue northwards, \hyperlink{sect70}{\bfseries turn to 70}.\end{aonchoice}
+@@ -2370,12 +2395,12 @@
+ 
+ In spite of your injured arm, you successfully climb the nail-studded door and drop through the window into the silence of the trophy room. An eerie collection of stuffed heads lines the walls of this private chamber. Most are those of reptilian desert creatures, souvenirs of imperial hunting expeditions into the Dry Main. Among the snake-like trophies, and more gruesome, are human heads! They are ghoulish battle honours, the heads of enemy commanders slain in battle during the countless wars waged by Vassagonia.
+ 
+-You hurry out of the {\itshape Vizu-diar} and into a long marble corridor, where the walls are inlaid with veins of gold and pearls. It leads to a large hall where palace guards and brightly robed courtiers are walking to and fro, but a colonnade of statues provides all the cover you need to reach a distant staircase unseen. Stealthily, you sprint up the staircase to arrive at a junction where passages head off to the east and west. At the end of each is a door with a symbol engraved into the wall above. The symbol above the east door depicts a mortar and pestle; the symbol above the west door, an open book.
+-
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small6.pdf} %
+ \end{figure}
++You hurry out of the {\itshape Vizu-diar} and into a long marble corridor, where the walls are inlaid with veins of gold and pearls. It leads to a large hall where palace guards and brightly robed courtiers are walking to and fro, but a colonnade of statues provides all the cover you need to reach a distant staircase unseen. Stealthily, you sprint up the staircase to arrive at a junction where passages head off to the east and west. At the end of each is a door with a symbol engraved into the wall above. The symbol above the east door depicts a mortar and pestle; the symbol above the west door, an open book.
++
+ \nopagebreak\begin{aonchoice}If you wish to investigate the east door, \hyperlink{sect57}{\bfseries turn to 57}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to investigate the west door, \hyperlink{sect100}{\bfseries turn to 100}.\end{aonchoice}
+@@ -2439,9 +2464,9 @@
+ 
+ \begin{aonitemize}
+ \item Potion of Alether (increases {\sc Combat Skill} by 2 for the duration of 1 combat)---4 Gold Crowns
+-\item Potion of Gallowbrush (induces sleep for 1--2 hours per dose)---2 Gold Crowns
+-\item Potion of Laumspur (restores 4 {\sc Endurance} points per dose)---5 Gold Crowns
+-\item Vial of Larnuma Oil (restores 2 {\sc Endurance} points per dose)---3 Gold Crowns
++\item Potion of Gallowbrush (induces sleep for 1--2 hours per dose)\\2 Gold Crowns
++\item Potion of Laumspur (restores 4 {\sc Endurance} points per dose)\\5 Gold Crowns
++\item Vial of Larnuma Oil (restores 2 {\sc Endurance} points per dose)\\3 Gold Crowns
+ \item Tincture of Graveweed (causes sickness and loss of 2 {\sc Endurance} points per dose)---1 Gold Crown
+ \item Tincture of Calacena (causes terrifying hallucinations for 1--2 hours per dose)---2 Gold Crowns
+ \end{aonitemize}
+@@ -2823,7 +2848,9 @@
+ 
+ \addsec[Section 188]{\hspace*{\fill}\hypertarget{sect188}{}188\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ The tavern is crowded with people who are seated at a long, stone counter decorated with fragments of coloured marble. Large earthenware jars, full of spicy foods, are set into the counter, and serving girls are busy attending to the hungry customers.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}If you are wearing a Black Sash, \hyperlink{sect172}{\bfseries turn to 172}.\end{aonchoice}
+ 
+@@ -2841,6 +2868,7 @@
+ 
+ \addsec[Section 190]{\hspace*{\fill}\hypertarget{sect190}{}190\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ \hspace*{\fill} \mbox{\itshape \hyperlink{ill12}{Illustration~XII}}\hspace*{\fill}\\*[\parskip]
+ \begin{figure}[p]
+ \centering
+@@ -2851,10 +2879,11 @@
+ }
+ \end{figure}
+ You have barely taken a dozen steps before you are seen. The giant armourer raises a massive hammer and strides forward, a bloodthirsty snarl escaping from between his clenched teeth. You prepare to defend yourself, but you are momentarily stunned when you see that the hammer is part of his right arm: it is, in fact, an enormous steel fist.
++\end{sloppypar}
+ 
+ The armourer bellows a war-cry and you react just in time. The hammer tears a chunk of stone from the wall, less than an inch above your scalp.
+ 
+-\begin{aoncombat}Hammerfist The Armourer: {\sc Combat~Skill}~18 ~~{\sc Endurance}~30\end{aoncombat}
++\begin{aoncombat}Hammerfist The Armourer:\\{\sc Combat~Skill}~18 ~~{\sc Endurance}~30\end{aoncombat}
+ 
+ Deduct 2 points from your {\sc Combat Skill} for the duration of this combat due to the terrible heat of the forge room.
+ 
+@@ -3052,12 +3081,12 @@
+ 
+ She kneels at an empty fireplace and prises a loose brick from the chimney; a leather-bound book drops from its hiding place into her hand. She gives it to Banedon who studies the yellowed pages, his face lined in thought. You notice that the book is full of cryptic symbols, numbers, and pictograms.
+ 
+-`They are drawn by the night stars,' says Banedon, tracing his finger along the astronomical drawings. `They hold the secret, I know, but without my star charts we cannot hope to find the tomb. We must return to the {\itshape Skyrider} at first light. There I shall be able to make some sense of this book.'
+-
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small6.pdf} %
+ \end{figure}
++`They are drawn by the night stars,' says Banedon, tracing his finger along the astronomical drawings. `They hold the secret, I know, but without my star charts we cannot hope to find the tomb. We must return to the {\itshape Skyrider} at first light. There I shall be able to make some sense of this book.'
++
+ \nopagebreak\begin{aonchoice}\hyperlink{sect331}{\bfseries Turn to 331}.\end{aonchoice}
+ 
+ 
+@@ -3162,7 +3191,9 @@
+ \end{figure}
+ You soon enter a public square where a throng of men have gathered at the ruins of a fountain. They are listening to the frenzied speech of a man dressed in red from head to toe; each man in the crowd is wearing a strip of the same coloured cloth, which covers the lower half of his face.
+ 
++\begin{sloppypar}
+ `They're {\itshape Adu-kaw}---``the veiled ones'',' says Banedon nervously. `It sounds as if they're declaring a blood feud on their old enemies, the men of Tefa.'
++\end{sloppypar}
+ 
+ You follow Banedon to the shelter of a toa tree, where you will be less conspicuous. The speaker is denouncing the Tefarim for imposing a heavy tax for safe passage through their town and for use of the highway to Kara Kala. His ranting begins to stir the crowd to fever pitch.
+ 
+@@ -3182,11 +3213,15 @@
+ 
+ \addsec[Section 218]{\hspace*{\fill}\hypertarget{sect218}{}218\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ The dwarves continue their meal, pausing only to light large hooded pipes. Through the bluish hue of the pipe smoke that clouds the low cabin roof, you notice that they are casting nervous glances at you, as if you might explode at any moment.
++\end{sloppypar}
+ 
+ After five minutes have passed, Nolrim raises his tankard and proclaims a toast: `To Lone Wolf---a man among dwarves!'
+ 
++\begin{sloppypar}
+ The dwarves guffaw at Nolrim's wry toast and raise their tankards in a salute to your courage and fortitude. The Bor-brew has loosened their tongues, and they are eager to tell you of their past exploits.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}\hyperlink{sect291}{\bfseries Turn to 291}.\end{aonchoice}
+ 
+@@ -3351,7 +3386,9 @@
+ 
+ \addsec[Section 234]{\hspace*{\fill}\hypertarget{sect234}{}234\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ In a complete daze you tumble and spin, totally unaware of whether you are falling head- or feet-first. The warm wind tears at your face, forcing your eyelids and mouth open. You can barely breathe. You scream with terror until you hit the upper branches of a toa tree; in the next instant you hit water. You rapidly surface again, and instinctively begin to pump your legs.
++\end{sloppypar}
+ 
+ You have no idea in which direction you are swimming, but in three strokes you find yourself at the side of this deep, sculptured pool of clear water. Still shaking from the shock of impact, you crawl your way out onto a mossy bank. Miraculously, you have escaped injury, but your ordeal is far from over. The Drakkarim and the palace guards watched you fall and at this very moment are racing down from the tower and the bridge to the palace gardens.
+ 
+@@ -3388,7 +3425,9 @@
+ 
+ The jala tastes as good as it smells and, after your dusty trek through the hills, is a welcome relief to your parched throat. Restore 1 {\sc Endurance} point.
+ 
++\begin{sloppypar}
+ `Do you know where we may be able to find a man called Tipasa the Wanderer?' asks Banedon, successfully hiding his Northland accent with his expert mastery of the Ikareshi dialect.
++\end{sloppypar}
+ 
+ `I'm sorry, friend, but I have never heard of this man,' replies one of the men.
+ 
+@@ -3443,12 +3482,13 @@
+ 
+ \addsec[Section 241]{\hspace*{\fill}\hypertarget{sect241}{}241\hspace*{\fill}}
+ 
+-Once outside the cave, you and Banedon waste no time in pressing on towards Ikaresh. As you near the outskirts of the town, you pass a small, round hut where a goat is eating from a manger near the door. A man appears in the darkened doorway and bids you welcome; he touches his forehead in a salute of friendship and invites you to enter his humble home.
+-
++Once outside the cave, you and Banedon waste no time in pressing on towards Ikaresh. As you near the outskirts of the town, you pass a small, round hut
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small8.pdf} %
+ \end{figure}
++where a goat is eating from a manger near the door. A man appears in the darkened doorway and bids you welcome; he touches his forehead in a salute of friendship and invites you to enter his humble home.
++
+ \nopagebreak\begin{aonchoice}If you have the Kai Discipline of Sixth Sense, \hyperlink{sect365}{\bfseries turn to 365}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to accept his invitation, \hyperlink{sect225}{\bfseries turn to 225}.\end{aonchoice}
+@@ -3596,9 +3636,8 @@
+ \centering
+ \hypertarget{ill15}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill15.pdf}}%
+-\\{\itshape A green whorl of vapour is forming\\
+-slowly into the shape of a glistening,\\
+-serpent-like monster.
++\\{\itshape A green whorl of vapour is forming slowly into the\\
++shape of a glistening, serpent-like monster.
+ }
+ \end{figure}
+ Suddenly, the pain subsides, but a new horror is taking shape before your eyes. Out of the darkness, a green whorl of vapour is forming slowly into the shape of a glistening, serpent-like monster. A grey mist issues forth from the Darklord's mouth, floating towards the core of this horror, infusing it with the power of death. The serpent writhes and convulses as the grey mist fills its body, changing it from a dream-like illusion into a living nightmare. Two pinpoints of crimson glow from its eyes, as it slithers towards you.
+@@ -3682,7 +3721,9 @@
+ 
+ \addsec[Section 262]{\hspace*{\fill}\hypertarget{sect262}{}262\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ You have been detected; the Vordak shrieks a hideous high-pitched scream and points a bony finger towards your hiding place. Drakkarim crash through the undergrowth, cleaving a path with their black swords.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to draw your weapon and prepare for combat, \hyperlink{sect212}{\bfseries turn to 212}.\end{aonchoice}
+ 
+@@ -3703,9 +3744,8 @@
+ \centering
+ \hypertarget{ill16}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill16.pdf}}%
+-\\{\itshape The Vordak lands behind you, astride the Itikar's\\
+-back, its skeletal fingers sunk deep into your\\
+-mount's feathered flesh.
++\\{\itshape The Vordak lands behind you, astride the Itikar's back, its skeletal\\
++fingers sunk deep into your mount's feathered flesh.
+ }
+ \end{figure}
+ A terrible shriek rings out above the rush of the wind, filling your head with pain. You are being attacked by a powerful Mindblast. Unless you possess the Kai Discipline of Mindshield, deduct 2 {\sc Endurance} points from your current total.
+@@ -3737,7 +3777,9 @@
+ 
+ \addsec[Section 267]{\hspace*{\fill}\hypertarget{sect267}{}267\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ The Drakkarim falter, blinded by the flash. Nolrim seizes the opportunity and urges his brethren forward against the invaders, leading the attack with his mighty battle-axe. Its razor edge whines and strikes sparks against the enemies' black armour, cutting through their unsteady ranks like a scythe through blighted corn.
++\end{sloppypar}
+ 
+ You climb back onto the platform and see a Drakkar about to strike Banedon. The wizard seems unconcerned about the screaming warrior who threatens to decapitate him with a black broadsword. Banedon points his finger at the Drakkar, who is poised to strike.
+ 
+@@ -3795,12 +3837,15 @@
+ 
+ The Akataz leaps through the air at your face. You fall backwards, kicking with both feet, but you are winded as the war-dog jolts the air from your lungs. It slashes your shoulder (lose 1 {\sc Endurance} point), before cartwheeling over the edge of the stairs, its howl cut short as it smashes into the marble floor of the lower palace.
+ 
++\begin{sloppypar}
+ You spring to your feet and draw your weapon, for the Drakkarim are running towards you. A terrible roar of hate and rage fills the hall: `Kill him!' The Drakkarim unsheathe their black swords, eager to obey their master's command. They attack you simultaneously.
++\end{sloppypar}
+ 
+ \begin{aoncombat}Drakkarim: {\sc Combat~Skill}~18 ~~{\sc Endurance}~35\end{aoncombat}
+ 
+ You can evade the combat at any time by running into the adjoining passage.
+ 
++\enlargethispage{\baselineskip}
+ \nopagebreak\begin{aonchoice}If you wish to evade combat, \hyperlink{sect238}{\bfseries turn to 238}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you win the combat, \hyperlink{sect345}{\bfseries turn to 345}.\end{aonchoice}
+@@ -3869,12 +3914,13 @@
+ 
+ A narrow corridor faces you, which is lit by the orange light of the setting sun filtering down from small open windows set high above in the patterned walls. The air is filled with the sound of running feet, for the Grand Palace is now on full alert. The palace guards and the evil Drakkarim are bent on finding and killing you, for their own lives will be forfeit if they fail.
+ 
+-You reach a door that opens onto an outside balcony. A stair descends to a bridge that connects a needle-like tower of white marble to the main palace. The stair itself continues past the bridge, disappearing down towards the palace gardens far below. You see no soldiers, either on the bridge or in the gardens.
+-
++You reach a door that opens onto an outside balcony. A stair descends to a bridge that connects a needle-like tower of white marble to the main palace.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small1.pdf} %
+ \end{figure}
++The stair itself continues past the bridge, disappearing down towards the palace gardens far below. You see no soldiers, either on the bridge or in the gardens.
++
+ \nopagebreak\begin{aonchoice}If you wish to descend to the bridge and enter the marble tower, \hyperlink{sect396}{\bfseries turn to 396}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to continue past the bridge, descending the stairs to the palace gardens, \hyperlink{sect215}{\bfseries turn to 215}.\end{aonchoice}
+@@ -3964,6 +4010,7 @@
+ 
+ A Drakkar stands on guard, his cruel eyes glinting behind his twisted iron death-mask. Occasionally, he diverts his attention from the watch to take a drink from a water flask.
+ 
++\enlargethispage{\baselineskip}
+ \nopagebreak\begin{aonchoice}If you have the Kai Discipline of Mind Over Matter, \hyperlink{sect214}{\bfseries turn to 214}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you do not have this skill, \hyperlink{sect239}{\bfseries turn to 239}.\end{aonchoice}
+@@ -3992,7 +4039,9 @@
+ 
+ \addsec[Section 289]{\hspace*{\fill}\hypertarget{sect289}{}289\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ The throne begins to revolve. A terrible howling fills your ears, changing almost instantaneously to the growling of a harsh guttural language, the like of which you have never heard before. Words and sounds that the mouths of men could never be shaped to speak roll through the chamber like thunder. It is the dark tongue, spoken by Haakon, Lord of Aarnak, Darklord of Helgedad.
++\end{sloppypar}
+ 
+ He rises from the throne, the ghastly voice still echoing from his unnatural mouth. A spiked fist opens to reveal a glowing stone; blue flame smoulders around its surface, and you can feel the currents of power that radiate from its core. Suddenly, his words change and you hear a tongue you know so well---Sommlending.
+ 
+@@ -4129,13 +4178,18 @@
+ 
+ \addsec[Section 302]{\hspace*{\fill}\hypertarget{sect302}{}302\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ Banedon takes over the helm as his extraordinary ship, the {\itshape Skyrider}, as the dwarves call it, speeds through the gathering darkness towards the Dahir Pass. Visibility diminishes with each passing minute until, finally, you can see no further than the outriggers. You feel uneasy; if the {\itshape Skyrider} veers but a fraction off course, you will be smashed to pieces against the mountainside.
++\end{sloppypar}
+ 
+ `Do not worry, Lone Wolf,' says Nolrim, the dwarf with the velvet satchel. `The captain will see us through.'
+ 
+ Banedon stands with his hand resting lightly on the glowing crystal, relaxed as if in a trance. His eyes are closed and a crackle of energy, like fine white lightning, traces an intricate pattern over his forehead and temples.
+ 
++\enlargethispage{\baselineskip}
++\begin{sloppypar}
+ The dwarf leads you to the cabin at the rear of the craft where the crew are excitedly recounting their victory over the Kraan-riders. They are seated about a table cluttered with plates of steaming food and jugs of foaming ale. The rich smell of spiced meat and Bor-brew fills your nostrils, reminding you of how ravenously hungry you are.
++\end{sloppypar}
+ 
+ You make short work of the meat and marrow placed before you. Restore 3 {\sc Endurance} points. However, you are unsure about accepting a jug of ale; Bor-brew is so strong that in many cities of Magnamund it has been banned for fear of the havoc it can cause.
+ 
+@@ -4178,8 +4232,7 @@
+ \centering
+ \hypertarget{ill18}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill18.pdf}}%
+-\\{\itshape \textquoteleft Pirate roll!\textquoteright  he shouts\\
+-to the fighting dwarves.
++\\{\itshape \textquoteleft Pirate roll!\textquoteright  he shouts to the fighting dwarves.
+ }
+ \end{figure}
+ `Hold tight, Lone Wolf,' shouts Banedon, as he regains control of the glowing crystal helm. You obey and grasp the parapet rail, bracing your feet against a deck cleat for safety, for you have guessed what manoeuvre the young wizard is about to perform.
+@@ -4300,7 +4353,9 @@
+ 
+ \addsec[Section 316]{\hspace*{\fill}\hypertarget{sect316}{}316\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ You stagger to your feet to see the {\itshape Skyrider} being engulfed by Drakkarim; they leap from their shrieking Kraan and crash onto the decks and outriggers, their black swords already drawn from their scabbards. The dwarves are caught by surprise; their weapons have been unloaded and stored below deck. Even so, they are quick to rally and fight with skill and fury. Above the din you hear Nolrim's joyous battle-cry, `Blood for blood!'
++\end{sloppypar}
+ 
+ An unexpected blow catches you squarely on the back, knocking you from the platform to the deck below. You have risen to one knee when your assailant attacks again. You cannot evade him.
+ 
+@@ -4333,7 +4388,9 @@
+ 
+ The Onyx Medallion is beginning to glow and vibrate in your pocket. This Special Item, torn from the armour of a renegade Vassagonian captain during the battle of Ruanon, enables you to communicate with the Itikar. You reassure it that you mean no harm. Itikar are by nature wild and malicious creatures, but the power of the Onyx Medallion tames this natural instinct, subduing them to the wearer's command.
+ 
++\begin{sloppypar}
+ As you settle in the wide saddle, you catch sight of the Drakkarim streaming across the gangplank. Quickly, you lean forward, unhook the Itikar's anchor rope from the saddle ring and grab the thick leather reins.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}\hyperlink{sect343}{\bfseries Turn to 343}.\end{aonchoice}
+ 
+@@ -4559,12 +4616,12 @@
+ 
+ Without the breeze of the speeding {\itshape Skyrider} to cool you, the heat of the mountains is almost unbearable. You trudge across the loose reddish sand, your faces covered to keep the dust from choking your throats. All that seems to grow in this desolate waste is the wire-hard grass that tears at your boots and leggings.
+ 
+-As you reach the outskirts of Ikaresh, you pass a small round hut where a goat is eating from a manger by the door. A man appears at the darkened doorway and bids you welcome; he touches his forehead in a salute of friendship and invites you both to enter his humble home.
+-
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small8.pdf} %
+ \end{figure}
++As you reach the outskirts of Ikaresh, you pass a small round hut where a goat is eating from a manger by the door. A man appears at the darkened doorway and bids you welcome; he touches his forehead in a salute of friendship and invites you both to enter his humble home.
++
+ \nopagebreak\begin{aonchoice}If you have the Kai Discipline of Sixth Sense, \hyperlink{sect365}{\bfseries turn to 365}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to accept his invitation, \hyperlink{sect225}{\bfseries turn to 225}.\end{aonchoice}
+@@ -4632,9 +4689,8 @@
+ \centering
+ \hypertarget{ill20}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill20.pdf}}%
+-\\{\itshape You catch a glimpse of the Drakkar, his\\
+-death-mask slashed in two, pitched\\
+-from the landing platform.
++\\{\itshape You catch a glimpse of the Drakkar, his death-mask\\
++slashed in two, pitched from the landing platform.
+ }
+ \end{figure}
+ You are jerked backwards in the saddle as the Itikar leaves its perch. It shrieks and caws, its wings beating as loud as thunder. A handful of Drakkarim are scattered as if they were rag dolls as the great black bird emerges from the pen and takes to the sky. You catch a glimpse of a Drakkar, his death-mask slashed in two by the bird's razor-sharp talons, as he pitches from the landing platform and tumbles to his death in the palace gardens far below.
+@@ -4741,7 +4797,9 @@
+ 
+ \addsec[Section 352]{\hspace*{\fill}\hypertarget{sect352}{}352\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ Beyond the portal lies a vaulted corridor leading to a grand stairway. You narrowly avoid confrontation with a dozen Drakkarim, saved by your lightning reactions. As the enemy rush from an archway on the second floor landing, you dive behind a statue of the recently deceased Zakhan Moudalla. They are so intent on their chase that they fail to notice your hiding place and hurry down the stairs, grunting in their heavy armour as they run. Silently, you give thanks that Zakhan Moudalla was a very stout man and that his statue casts a very large shadow in which to hide.
++\end{sloppypar}
+ 
+ At the top of the stairway you discover a hatch, which gives access to the roof. You climb through it and follow a path of sun-bleached tiles that wind in and out of the domes and turrets, eventually leading to a bell-tower.
+ 
+@@ -5021,9 +5079,8 @@
+ \centering
+ \hypertarget{ill22}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill22.pdf}}%
+-\\{\itshape The other guard has drawn a steel mace and\\
+-runs at you with hatred blazing\\
+-in his dark eyes.
++\\{\itshape The other guard has drawn a steel mace and runs\\
++at you with hatred blazing in his dark eyes.
+ }
+ \end{figure}
+ Beads of sweat break out on the faces of the guards as they frantically race to load their crossbows. Your bold move has unnerved them, and their fear makes them clumsy.
+@@ -5074,9 +5131,8 @@
+ \centering
+ \hypertarget{ill23}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill23.pdf}}%
+-\\{\itshape Perched upon the huge rocky columns are\\
+-Kraan, their Drakkarim riders scouring the\\
+-valley with telescopes.
++\\{\itshape Perched upon the huge rocky columns are Kraan, their\\
++Drakkarim riders scouring the valley with telescopes.
+ }
+ \end{figure}
+ Shortly after dawn the following day, you wake with a splitting headache. With bleary eyes you peer around you at the snoring dwarves who occupy the tiny bunks of the cramped cabin. The low hum of the ship only increases the pain that throbs like a demon inside your head, causing you to wince and grit your teeth at the slightest movement of your stiff and aching limbs. You lose 2 {\sc Endurance} points due to this monstrous hangover!
+@@ -5155,7 +5211,9 @@
+ 
+ \addsec[Section 387]{\hspace*{\fill}\hypertarget{sect387}{}387\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ Your heart sinks; there are no other stairs down from the platform---you are trapped. Before you can think of a plan, the Drakkarim burst from the arch and attack.
++\end{sloppypar}
+ 
+ \begin{aoncombat}Drakkarim: {\sc Combat~Skill}~17 ~~{\sc Endurance}~35\end{aoncombat}
+ 
+@@ -5168,7 +5226,9 @@
+ 
+ \addsec[Section 388]{\hspace*{\fill}\hypertarget{sect388}{}388\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ You follow the avenue as it twists and turns through the Armourers' Quarter of Ikaresh. A street vendor is selling a selection of swords and daggers that catch your eye; they are beautifully crafted, well-balanced and very sharp. A wooden sign displays his prices:
++\end{sloppypar}
+ 
+ \begin{aonitemize}
+ \item Swords---5 Gold Crowns each
+@@ -5327,7 +5387,9 @@
+ 
+ `This night of triumph,' says Banedon, jubilantly, `will herald a new dawn of hope for Sommerlund. The Kai are reborn.'
+ 
++\begin{sloppypar}
+ The quest is now over. You have found the {\itshape Book of the Magnakai} and freed Magnamund from the shadow of Darklord Haakon. But for you, Kai Master Lone Wolf, the story has only just begun.
++\end{sloppypar}
+ 
+ Your destiny lies along the path of the Grand Masters. To learn their secrets and attempt the first exciting quest of the Magnakai, begin your journey with Book 6 of the {\itshape Lone Wolf} series entitled:
+ 

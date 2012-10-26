@@ -1,0 +1,131 @@
+#
+# Root directory
+AONROOTREL := ../../../
+AONROOTDIR = $(realpath $(AONROOTREL))
+# Base directory we will install into
+INSTALLDIR := $(AONROOTDIR)/../PUBLISH/$(BLANG)/
+# Relative location of the XML files
+RELXMLDIR := $(AONROOTDIR)/$(BLANG)/xml/
+# Relative location of the scripts
+RELSCRIPT := $(AONROOTDIR)/common/scripts
+# Relative location of the xsl files
+RELXSLDIR := $(AONROOTDIR)/common/xsl
+EPUBSCRIPT := $(RELSCRIPT)/gbtoepub.pl
+
+EPUB=$(BASENAME).epub
+MOBI=$(BASENAME).mobi
+PDB=$(BASENAME).pdb
+LRF=$(BASENAME).lrf
+FB2=$(BASENAME).fb2
+EBOOKS=$(EPUB) $(MOBI) $(PDB) $(LRF) $(FB2)
+# To build only epub books:
+# EBOOKS=$(EPUB)
+
+# Formats we are compiling to
+FORMATS=$(subst $(BASENAME).,,$(EBOOKS))
+
+all: $(EBOOKS)
+
+formats:
+	@echo $(FORMATS)
+
+XMLFILE=$(patsubst %.epub,$(RELXMLDIR)/%.xml,$(BOOK))
+
+# XSL files the ePubs depend on. If these are modified the
+# ePub file needs to be regenerated
+XSLFILES=$(RELXSLDIR)/epub-opf-metadata.xsl $(RELXSLDIR)/epub-xhtml.xsl  \
+	$(RELXSLDIR)/epub-ncx.xsl $(RELXSLDIR)/epub-opf-spine.xsl
+
+# Generate the ePub file from the XML file
+epub: $(EPUB)
+$(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB): $(XMLFILE) $(EPUBSCRIPT) $(XSLFILES)
+	cd $(AONROOTDIR) && perl $(EPUBSCRIPT) --language=$(BLANG) --font-files=$(AONROOTDIR)/fontfiles/ $(BASENAME) 
+
+$(EPUB): $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB)
+	cp -p $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB) .
+# Regenerate to include the covers properly within the Ebook
+	ebook-convert $(EPUB) regen_$(EPUB)
+	mv regen_$(EPUB) $(EPUB)
+	-rm -f cover.jpg $(BASENAME).opf  
+
+
+# Convert to other formats. For a full list of format that we can convert to using 
+# Calibre see http://manual.calibre-ebook.com/cli/ebook-convert.html
+
+# Generate the mobi file from the ePub (Mobipocket format)
+mobi: $(MOBI)
+%.mobi: %.epub
+	 ebook-convert $< $@
+
+# Generate the pdb file from the ePub (eReader / Palm Media format)
+%.pdb: %.epub
+	 ebook-convert $< $@
+
+# Generate the lrf file from the ePub (Broadband eBooks (BBeB) format)
+%.lrf: %.epub
+	 ebook-convert $< $@
+
+# Generate the lit file from the ePub (Microsoft LIT format for Microsoft Reader)
+%.lit: %.epub
+	 ebook-convert $< $@
+
+# Generate the pdf file from the ePub 
+%.pdf: %.epub
+	 ebook-convert $< $@
+
+# Generate the snb file from the ePub 
+%.snb: %.epub
+	 ebook-convert $< $@
+
+# Generate the pml file from the ePub 
+%.pml: %.epub
+	 ebook-convert $< $@
+
+# Generate the fb2 file from the ePub  (Fictionbook format used by BeBook, PocketBook, Cybook, Papyre and others)
+%.fb2: %.epub
+	 ebook-convert $< $@
+
+
+# Alternative build for the ePub format using open source tools instead
+# of our script:
+#
+#DOCBOOK_XSL=/usr/share/xml/docbook/stylesheet/docbook-xsl/epub/docbook.xsl
+#$(BOOK): $(XMLFILE) $(DOCBOOK_XSL)
+#	if [ -x  /usr/bin/dbtoepub ] ; then  \
+#		dbtoepub -o $(BOOK) $(XMLFILE) >$(BOOK).log 2>&1; \
+#	else \
+#		xsltproc $(DOCBOOK_XSL) $< >$(BOOK).log 2>&1; \
+#		echo "application/epub+zip" > mimetype ; \
+#		zip -0Xq  $@ mimetype; \
+#		zip -Xr9D $@ META-INF/* OEBPS/* ; \
+#	fi
+# TODO:
+# Embed font in dbtoepub using -f
+
+epub-check: $(EPUB)
+	java -jar epubcheck.jar $<
+
+
+# Final installation step of generate ebooks
+install: $(INSTALLDIR) $(EBOOKS)
+	@for format in $(FORMATS); do \
+		PUBLISHDIR="$(INSTALLDIR)/$$format/$(SERIES)" ; \
+		file=$(BASENAME).$$format ; \
+		[ ! -e "$$PUBLISHDIR" ] && \
+			mkdir -p "$$PUBLISHDIR" ; \
+		echo "Copying $$file to $$PUBLISHDIR" ; \
+		cp -p $$file $$PUBLISHDIR && \
+		chmod 664 $$PUBLISHDIR/$$file ;  \
+	done
+publish: install
+
+$(INSTALLDIR):
+	mkdir -p $@
+
+clean: 
+	-rm -f $(EBOOKS) $(EPUB).log regen_$(EPUB) cover.jpg $(BASENAME).opf 
+
+distclean: clean
+	-rm -rf $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/
+
+.PHONY: all install publish clean distclean epub mobi

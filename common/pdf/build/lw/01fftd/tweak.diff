@@ -1,0 +1,150 @@
+--- 01fftd-untweaked.tex	2010-07-21 23:08:54.000000000 +0200
++++ 01fftd.tex	2010-07-21 23:08:54.000000000 +0200
+@@ -163,7 +163,9 @@
+ % \frontmatter
+ 
+ \addchap{About the Author and Illustrator}
++\begin{sloppypar}
+       {\bfseries Joe Dever}, the creator of the bestselling Lone Wolf adventure books and novels, has achieved world-wide recognition in three creative fields---as an award-winning author of international renown, as an acclaimed musician and composer, and as a games designer specialising in role-playing games.
++\end{sloppypar}
+ 
+ 
+    On graduating from college in 1974, Joe Dever became a professional musician, and for several years, he worked in the music industry in Europe and the United States.
+@@ -194,7 +196,10 @@
+   Gary was working at Games Workshop when Joe Dever asked him to illustrate some of his manuscript of {\itshape Flight from the Dark}. The two teamed up after that and, they continued to work together until the eighth book in the series, {\itshape The Jungle of Horrors}.
+ 
+ 
++\enlargethispage{\baselineskip}
++\begin{sloppypar}
+   Gary has also drawn the illustrations in {\itshape Redwall} and related books, {\itshape The Prince of Shadows} gamebook series, and several books which he also authored. Gary continues to enjoy war gaming and works as an illustrator and model maker.
++\end{sloppypar}
+ 
+ 
+  
+@@ -253,7 +258,9 @@
+ 
+ You keep a record of your adventure on the \hyperlink{action}{\emph{Action Chart}}.
+ 
++\begin{sloppypar}
+ During your training as a Kai Lord you have developed fighting prowess---{\sc Combat Skill} and physical stamina---{\sc Endurance}. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it onto the \hyperlink{random}{\emph{Random Number Table}}. If you pick 0 it counts as zero.
++\end{sloppypar}
+ 
+ The first number that you pick from the \hyperlink{random}{\emph{Random Number Table}} in this way represents your {\sc Combat Skill}. Add 10 to the number you picked and write the total in the {\sc Combat Skill} section of your \hyperlink{action}{\emph{Action Chart}} (i.e. if your pencil fell on the number 4 in the \hyperlink{random}{\emph{Random Number Table}} you would write in a {\sc Combat Skill} of 14). When you fight, your {\sc Combat Skill} will be pitted against that of your enemy. A high score in this section is therefore very desirable.
+ 
+@@ -372,14 +379,16 @@
+ 
+ All you possess is an Axe (note under Weapons on your \hyperlink{action}{\emph{Action Chart}}) and a Backpack containing 1 Meal (note under Meals on your \hyperlink{action}{\emph{Action Chart}}). Hanging from your waist is a leather pouch containing Gold Crowns. To find out how many, pick a number from the \hyperlink{random}{\emph{Random Number Table}}. This number equals the number of Gold Crowns you possess at the start of the adventure. (Note the number in the Belt Pouch section of the \hyperlink{action}{\emph{Action Chart}}.)
+ 
++\begin{sloppypar}
+ You discover amongst the smoking ruins of the monastery, a \hyperlink{map}{Map of Sommerlund} (note under Special Items on the \hyperlink{action}{\emph{Action Chart}}) showing the capital city of Holmgard and the land of Durenor, far to the east. You place the \hyperlink{map}{Map} inside your tunic for safety.
++\end{sloppypar}
+ 
+ You also find one of the following:
+ 
+ \begin{aonitemize}
+ \item 1 = Sword (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{-.7\baselineskip}
+ \begin{center}
+ \includegraphics[width=54mm,keepaspectratio]{sword.pdf} %
+ \end{center}
+@@ -387,11 +396,10 @@
+ 
+ \item 2 = Helmet (Special Items). This adds 2 {\sc Endurance} points to your total.
+ 
+-\vspace{.2\baselineskip}
++\vspace{-.5\baselineskip}
+ \begin{center}
+ \includegraphics[width=18mm,keepaspectratio]{helmet.pdf} %
+ \end{center}
+-\vspace{.2\baselineskip}
+ 
+ \item 3 = Two Meals (Meals)
+ 
+@@ -411,7 +419,6 @@
+ 
+ \item 5 = Mace (Weapons)
+ 
+-\vspace{.2\baselineskip}
+ \begin{center}
+ \includegraphics[width=31mm,keepaspectratio]{mace.pdf} %
+ \end{center}
+@@ -427,19 +434,19 @@
+ 
+ \item 7 = Quarterstaff (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{.3\baselineskip}
+ \begin{center}
+ \includegraphics[width=87mm,keepaspectratio]{qstaff.pdf} %
+ \end{center}
+-\vspace{.2\baselineskip}
++\vspace{.5\baselineskip}
+ 
+ \item 8 = Spear (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{.1\baselineskip}
+ \begin{center}
+ \includegraphics[width=78mm,keepaspectratio]{spear.pdf} %
+ \end{center}
+-\vspace{.2\baselineskip}
++\vspace{.5\baselineskip}
+ 
+ \item 9 = 12 Gold Crowns (Belt Pouch)
+ 
+@@ -451,11 +458,10 @@
+ 
+ \item 0 = Broadsword (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{-.5\baselineskip}
+ \begin{center}
+ \includegraphics[width=66mm,keepaspectratio]{bsword.pdf} %
+ \end{center}
+-\vspace{.2\baselineskip}
+ 
+ \end{aonitemize}
+ 
+@@ -559,7 +565,9 @@
+ \end{aonitemize}
+ 
+ 
+-\item On the \hyperlink{action}{\emph{Action Chart}}, mark the changes in {\sc Endurance} points to the participants in the combat.
++\item \begin{sloppypar}
++On the \hyperlink{action}{\emph{Action Chart}}, mark the changes in {\sc Endurance} points to the participants in the combat.
++\end{sloppypar}
+ 
+ 
+ \item Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.
+@@ -1781,7 +1789,9 @@
+ 
+ \addsec*{\hspace*{\fill}\hypertarget{sect103}{}103\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ The overgrown path leads to a junction where another track branches off towards the east.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to take this path, \hyperlink{sect13}{\bfseries turn to 13}.\end{aonchoice}
+ 
+@@ -3454,7 +3464,9 @@
+ 
+ \addsec*{\hspace*{\fill}\hypertarget{sect260}{}260\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ Swimming towards the bank, you can see the ranger spread-eagled at the water's edge. You reach him but only to find that he has broken his neck in the fall and is dead.
++\end{sloppypar}
+ 
+ Suddenly, two Giaks jump on you from above and you must fight them. You are unarmed and must fight the Giaks with your bare hands. Deduct 4 points from your {\sc Combat Skill} and fight them one at a time.
+ 
+@@ -3840,7 +3852,9 @@
+ 
+ \addsec*{\hspace*{\fill}\hypertarget{sect298}{}298\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ The head of the bird slowly turns and it curses you. An instant later, it flies off above the trees and has soon disappeared. Shocked by what you have heard you are now sure that the fledgling was a scout of the Darklords and is now probably on its way to inform them of your whereabouts.
++\end{sloppypar}
+ 
+ \begin{figure}[!ht]
+ \centering

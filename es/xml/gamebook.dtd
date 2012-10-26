@@ -1,0 +1,2064 @@
+<!-- ============================================================= -->
+<!--             Gamebook Document Type Definition v0.13           -->
+<!-- ============================================================= -->
+<!--
+
+This DTD was designed around XML 1.0.
+
+This gamebook DTD is aimed primarily at the books under development by 
+Project Aon (http://www.projectaon.org/). Future versions may be of 
+more general utility.
+
+Change Log:
+
+24 May 2011 (version 0.13.2)
+ * added the "relationship" attribute to the "creator" and "contributor"
+   elements
+
+23 May 2011 (version 0.13.1)
+ * added the "sort-name" attribute to the "creator" and "contributor"
+   elements
+
+5 November 2010 (version 0.13.0)
+ * changed the "is" attribute on the "when" element to "value"
+
+25 October 2010 (version 0.12.7)
+ * Made the "signpost" element mixed content
+
+13 September 2010 (version 0.12.6)
+ * Added the "poetry" element
+
+30 July 2010 (version 0.12.5)
+ * Added the "originalwidth", "posx", and "posy" attributes to the
+   "instance" element
+
+28 July 2010 (version 0.12.4)
+ * Added the "choose", "when", and "otherwise" elements
+
+1 April 2009 (version 0.12.3)
+ * Added the "start" attribute to ordered lists.
+ * Added the "value" attribute to list items.
+
+19 December 2006 (version 0.12.2)
+ * Added the "line" element to the inline elements list.
+
+19 December 2006 (version 0.12.1)
+ * Upgraded the table model to included "caption", "colgroup", "thead",
+   "tfoot", and "tbdoy" elements and the cell scoping attributes
+   "rowspan", "colspan", "axis", and "scope".
+ * Deprecated the "br" element in favor of the "line" element.
+
+25 March 2006 (version 0.12.0)
+ * Added "illref", "illustrations" and "illgroup". Still backwards
+   compatible.
+
+26 December 2005 (version 0.11.4)
+ * Added link.attributes and the optional "series" attribute to
+   "bookref", and fleshed out the "bookref" and "footref"
+   descriptions.
+
+5 December 2005 (version 0.11.3)
+ * Corrected ATTLISTs of character elements
+ * Added "ch.apos", "ch.frac116", and "ch.plus" elements
+
+9 April 2005 (version 0.11.2)
+ * Added the following inline elements: "bookref", "footref".
+ * Added the character elements to replace the use of character
+   entities (except in attributes). These allow a processor (e.g.
+   a XSL transformation) to decide how characters should be
+   represented, not this DTD.
+
+18 April 2003 (version 0.11.1)
+ * Added the following inline elements: "onomatopoeia", "spell",
+   "item".
+
+27 January 2003 (version 0.11.0)
+ * Moved the optional "footnotes" element between the "meta" and 
+   "data" elements.
+
+10 January 2003 (version 0.10.4)
+ * Removed the "inline.content" entity from the declaration of the
+   contents of the "blockquote" element. This will break some existing
+   documents.
+
+7 January 2003 (version 0.10.3)
+ * Made the "src", "width", and "height" attributes of the "instance"
+   element IMPLIED.
+
+4 January 2003 (version 0.10.2)
+ * Moved the specialized character entity definitions into module
+   files.
+x
+5 October 2002 (version 0.10.1)
+ * Added the "lellips" and "minus" entities and changed the definition
+   of the "emdash" entity.
+
+5 September 2002 (version 0.10.0)
+ * Added the "quote" element.
+
+31 August 2002 (version 0.9.1)
+ * Added the "xml:lang" attribute to the "core.attributes" entity.
+   Although this could be used for most elements, it is primarily
+   aimed at the "foreign" element.
+
+6 July 2002 (version 0.9)
+ * Replaced the "caption" element and the "illustrator" attribute with
+   the use of the "meta" element.
+ * Renamed the "illustration-instance" element to simply "instance".
+ * Removed the "character-attribute" element.
+ * Added the "typ" element for typographical markup.
+ * Removed the "shortname" attribute.
+
+1 June 2002 (version 0.8.3)
+ * Removed the "marker" attribute from the "footnote" element.
+
+29 April 2002 (vesion 0.8.2)
+ * Changed the content of the "enemy" element from "#PCDATA" to 
+   "%inline.content;".
+
+4 April 2002 (version 0.8.1)
+ * Added the "thinspace" entity
+
+3 April 2002 (version 0.8.0)
+ * Added the "thought" element.
+ * Added the "foreign" element.
+
+15 March 2002 (version 0.7.0)
+ * Changed the name of the "illustration-set" element to "illustration"
+   and changed the name of the "illustration" element to
+   "illustration-instance".
+ * Made many minor changes to bring the DTD up to current practice.
+
+11 May 2001 (version 0.6.0)
+ * Removed the "publication-date" element.
+
+5 May 2001 (version 0.5.0)
+ * Added facilities for transformation to LaTeX - mainly appropriate 
+   character escapes.
+ * Added the "marker" attribute to the "footnote" element.
+
+1 May 2001 (version 0.4.0)
+
+ * Added the "link" element to the set of allowable "meta" elements.
+   Although not a Dublin Core meta-data element, it's functionality
+   adds a lot to the document.
+
+30 April 2001 (version 0.3.0)
+
+ * Changed the basic orgranization of the sections by allowing them to
+   have their own meta section instead of a "section-title" element.
+ * Changed the name of the "section-data" element to simply "data".
+
+17 April 2001 (version 0.2.0)
+
+ * Changed some of the block and inline elements in order to make them 
+   more useful.
+
+14 April 2001 (version 0.1.0)
+
+ * First revision
+                                                                   -->
+<!-- ============================================================= -->
+
+<!-- ============================================================= -->
+<!--                      Table of Contents                        -->
+<!-- ============================================================= -->
+
+<!--
+
+  I. Entities
+     A. General Entities
+     B. Character Entities
+ II. Hierarchical Elements
+III. Block Elements
+ IV. Inline Elements
+  V. Character Elements
+
+ VI. Appendices
+     A. Valid Document Example
+
+-->
+
+<!-- ============================================================= -->
+<!--                           Entities                            -->
+<!-- ============================================================= -->
+
+<!-- ::::::::::::::::::::: General Entities :::::::::::::::::::::: -->
+
+<!ENTITY % character.content "ch.apos | ch.nbsp | ch.iexcl | ch.cent | ch.pound | ch.curren | ch.yen | ch.brvbar | ch.sect | ch.uml | ch.copy | ch.ordf | ch.laquo | ch.not | ch.shy | ch.reg | ch.macr | ch.deg | ch.plusmn | ch.sup2 | ch.sup3 | ch.acute | ch.micro | ch.para | ch.middot | ch.cedil | ch.sup1 | ch.ordm | ch.raquo | ch.frac14 | ch.frac12 | ch.frac34 | ch.iquest | ch.Agrave | ch.Aacute | ch.Acirc | ch.Atilde | ch.Auml | ch.Aring | ch.AElig | ch.Ccedil | ch.Egrave | ch.Eacute | ch.Ecirc | ch.Euml | ch.Igrave | ch.Iacute | ch.Icirc | ch.Iuml | ch.ETH | ch.Ntilde | ch.Ograve | ch.Oacute | ch.Ocirc | ch.Otilde | ch.Ouml | ch.times | ch.Oslash | ch.Ugrave | ch.Uacute | ch.Ucirc | ch.Uuml | ch.Yacute | ch.THORN | ch.szlig | ch.agrave | ch.aacute | ch.acirc | ch.atilde | ch.auml | ch.aring | ch.aelig | ch.ccedil | ch.egrave | ch.eacute | ch.ecirc | ch.euml | ch.igrave | ch.iacute | ch.icirc | ch.iuml | ch.eth | ch.ntilde | ch.ograve | ch.oacute | ch.ocirc | ch.otilde | ch.ouml | ch.divide | ch.oslash | ch.ugrave | ch.uacute | ch.ucirc | ch.uuml | ch.yacute | ch.thorn | ch.yuml | ch.ampersand | ch.lsquot | ch.rsquot | ch.ldquot | ch.rdquot | ch.minus | ch.endash | ch.emdash | ch.ellips | ch.lellips | ch.blankline | ch.percent | ch.thinspace | ch.frac116 | ch.plus">
+
+<!ENTITY % inline.content "#PCDATA | a | bookref | footref | em | strong | thought | foreign | quote | cite | code | line | br | typ | onomatopoeia | spell | item | %character.content;">
+
+<!ENTITY % block.content "p | ul | ol | dl | table | blockquote | illustration | combat | choice | hr | illref | poetry">
+
+<!ENTITY % mixed.content "choose | signpost">
+
+<!ENTITY % core.attributes "
+         class CDATA #IMPLIED
+         xml:lang CDATA #IMPLIED
+">
+
+<!ENTITY % link.attributes "
+         idref IDREF #IMPLIED
+         id    ID    #IMPLIED
+">
+
+<!ENTITY % cell.align.attributes "
+         align  ( left | center | right | justify | char ) #IMPLIED
+         char   CDATA                                      #IMPLIED
+         valign ( top | middle | bottom | baseline )       #IMPLIED
+">
+
+<!ENTITY % cell.scope.attributes "
+         rowspan CDATA                               #IMPLIED
+         colspan CDATA                               #IMPLIED
+         axis    CDATA                               #IMPLIED
+         scope   ( row | col | rowgroup | colgroup ) #IMPLIED
+">
+
+<!-- :::::::::::::::::::: Character Entities ::::::::::::::::::::: -->
+
+<!ENTITY lt     "&#38;#60;"><!-- left angle bracket -->
+<!ENTITY gt     "&#62;">    <!-- right angle bracket -->
+<!ENTITY amp    "&#38;#38;"><!-- ampersand -->
+<!ENTITY apos   "&#39;">    <!-- apostrophe = single quotation mark -->
+<!ENTITY quot   "&#34;">    <!-- double quotation mark -->
+
+<!--
+
+It is the responsibility of the document to define relevant character 
+entities in its internal subset. See also Character Elements below.
+
+-->
+
+<!-- ============================================================= -->
+<!--                     Hierarchical Elements                     -->
+<!-- ============================================================= -->
+
+
+<!ELEMENT gamebook ( meta, section+ )>
+<!ATTLIST gamebook
+          version  CDATA #REQUIRED
+          xml:lang CDATA #IMPLIED
+>
+<!--
+
+The "version" attribute represents the revision number of the gamebook 
+DTD. This allows gamebook processors to make decisions about the 
+suitability of the data.
+
+The "xml:lang" attribute specifies the primary language of the 
+document. The data should conform to the IETF RFC1766.
+
+ http://www.ietf.org/rfc/rfc1766.txt
+
+Examples:
+
+ <gamebook version="0.12" xml:lang="en-UK">
+  <meta . . .> . . . </meta>
+  <section . . .> . . . </section>
+  . . .
+ </gamebook>
+
+ <gamebook version="0.12" > . . . </gamebook>
+
+-->
+
+<!-- :::::::::::::::::::::::: meta Element ::::::::::::::::::::::: -->
+<!--
+
+The children of the meta element are designed to directly translate to
+the Dublin Core Element Set v1.1. For a description of each Dublin
+Core element, visit the following URL:
+
+ (http://dublincore.org/documents/1999/07/02/dces/)
+
+Although many Dublin Core elements will probably never have any real 
+relevance to gamebooks, all are included for completeness's sake.
+
+[editor: add dc: namespace to isolate dublin core elements
+  http://dublincore.org/documents/2001/10/26/dcmi-namespace/ ]
+
+Note: The "link" element doesn't correspond directly to any Dublin
+Core element. It has been added here for required functionality.
+-->
+
+<!ELEMENT meta ( title | creator | subject | description | publisher | contributor | date | type | format | identifier | source | language | relation | coverage | rights | link)*>
+<!--
+
+The "meta" element represents underlying information about the 
+document. It should contain any number of the Dublin Core 1.1 
+elements.
+
+Example:
+
+ <meta>
+  <title . . .> . . . </title>
+  <creator . . .> . . . </creator>
+  . . .
+ </meta>
+
+-->
+
+<!ELEMENT title ( %inline.content; | %mixed.content; )*>
+<!ATTLIST title
+          %core.attributes;
+>
+
+<!ELEMENT creator ( %inline.content; | %block.content; | %mixed.content; )*>
+<!ATTLIST creator
+          %core.attributes;
+          relationship CDATA #IMPLIED
+          sort-name    CDATA #IMPLIED
+>
+<!--
+
+The "relationship" optional attribute defines the relationship of the creator
+denoted by this element to the document. While the list of possible values is
+not constrained by the DTD, the normative list is defined by the MARC Code List
+for Relators <http://www.loc.gov/marc/relators/>.
+
+The "sort-name" optional attribute contains the a name to be used for sorting.
+
+Example:
+
+ <creator relationship="aut" sort-name="Dever, Joe">Joe Dever</creator>
+
+-->
+
+<!ELEMENT subject ( %inline.content; | %block.content; | %mixed.content; )*>
+<!ATTLIST subject
+          %core.attributes;
+>
+
+<!ELEMENT description ( %inline.content; | %block.content; | %mixed.content; )*>
+<!ATTLIST description
+          %core.attributes;
+>
+
+<!ELEMENT publisher ( %inline.content; | %block.content; | %mixed.content; )*>
+<!ATTLIST publisher
+          %core.attributes;
+>
+
+<!ELEMENT contributor ( %inline.content; | %block.content; | %mixed.content; )*>
+<!ATTLIST contributor
+          %core.attributes;
+          relationship CDATA #IMPLIED
+          sort-name    CDATA #IMPLIED
+>
+<!--
+
+The "relationship" optional attribute defines the relationship of the creator
+denoted by this element to the document. While the list of possible values is
+not constrained by the DTD, the normative list is defined by the MARC Code List
+for Relators <http://www.loc.gov/marc/relators/>.
+
+The "sort-name" optional attribute contains the a name to be used for sorting.
+
+Example:
+
+ <contributor sort-name="Smith, Reader">Reader Smith</contributor>
+
+-->
+
+<!ELEMENT date ( year, month, day )>
+<!ATTLIST date
+          %core.attributes;
+>
+<!--
+
+The "date" element has been extended beyond the specification made in 
+the Dublin Core. It should contain "year", "month" and "day" elements.
+
+Example:
+
+ <date>
+  <year . . .> . . . </year>
+  <month . . .> . . . </month>
+  <day . . .> . . . </day>
+ </date>
+
+-->
+
+<!ELEMENT year ( #PCDATA )>
+<!--
+
+The year should be specified in full digit numeric format.
+
+Example:
+
+ <year>2001</year>
+
+-->
+
+<!ELEMENT month ( #PCDATA )>
+<!--
+
+The month should be specified in numeric format with January as "1", 
+February as "2", etc.
+
+Example:
+
+ <month>4</month>
+
+-->
+
+<!ELEMENT day ( #PCDATA )>
+<!--
+
+The "day" element specifies the day of the month in numeric format.
+
+Example:
+
+ <day>14</day>
+
+-->
+
+<!ELEMENT type ( %inline.content; | %mixed.content; )*>
+<!ATTLIST type
+          %core.attributes;
+>
+
+<!ELEMENT format ( %inline.content; | %mixed.content; )*>
+<!ATTLIST format
+          %core.attributes;
+>
+
+<!ELEMENT identifier ( %inline.content; | %mixed.content; )*>
+<!ATTLIST identifier
+          %core.attributes;
+>
+
+<!ELEMENT source ( %inline.content; | %mixed.content; )*>
+<!ATTLIST source
+          %core.attributes;
+>
+
+<!ELEMENT language ( %inline.content; | %mixed.content; )*>
+<!ATTLIST language
+          %core.attributes;
+>
+
+<!ELEMENT relation ( %inline.content; | %mixed.content; )*>
+<!ATTLIST relation
+          %core.attributes;
+>
+
+<!ELEMENT coverage ( %inline.content; | %block.content; | %mixed.content; )*>
+<!ATTLIST coverage
+          %core.attributes;
+>
+
+<!ELEMENT rights ( %inline.content; | %block.content; | %mixed.content; )*>
+<!ATTLIST rights
+          %core.attributes;
+>
+
+<!ELEMENT link EMPTY>
+<!ATTLIST link
+          %core.attributes;
+          %link.attributes;
+          idrefs IDREFS #IMPLIED>
+<!--
+
+The "link" element has been added to the Dublin Core elements to 
+represent relationships to other parts of the document. The "idrefs" 
+attribute has been added to allow relationships that are held with 
+more than one part of the document.
+
+Examples:
+
+ <link class="next" idref="dedicate" />
+
+ <link class="friends" idrefs="dedicate cmbtrulz" />
+
+-->
+
+<!-- ::::::::::::::::::::: section Element ::::::::::::::::::::::: -->
+
+<!ELEMENT section ( meta, footnotes?, illustrations?, data )>
+<!ATTLIST section
+          %core.attributes;
+          %link.attributes;
+>
+<!--
+
+The "section" element represents one hierarchical level of data. 
+Section elements can be nested (inside the "data" element) in 
+order to create more complex data representations.
+
+A "section" element can used as a linking element. The most useful way 
+to utilize this is to make it a named anchor and thus the target of a 
+"choice" element.
+
+Examples:
+
+ <section>
+  <meta><title . . .> . . . </title></meta>
+  <data . . .> . . . </data>
+  <footnotes . . .> . . . </footnotes>
+ </section>
+
+ <section id="title">
+  <meta><title . . .> . . . </title></meta>
+  <data . . .>
+   . . .
+   <section id="dedication">
+    <meta><title . . .> . . . </title></meta>
+    <data . . .> . . . </data>
+   </section>
+   . . .
+  </data>
+ </section>
+
+-->
+
+<!ELEMENT data ( %block.content; | %mixed.content; | section )*>
+<!ATTLIST data
+          %core.attributes;
+>
+<!--
+
+The "data" element contains the main data contained within 
+a section. Note that a nested section structure can be created by 
+including a "section" element within the content of the "data" 
+element.
+
+Examples:
+
+ <data>
+  <p . . .> . . . </p>
+  <combat . . .> . . . </combat>
+  . . .
+ </data>
+
+ <data>
+  <section . . .> . . . </section>
+ </data>
+
+-->
+
+<!ELEMENT illustrations ( illustration | illgroup )*>
+<!ATTLIST illustrations
+          %core.attributes;
+>
+<!--
+
+The "illustrations" element represents a collection of illustrations.
+The illustrations, or illustration groups, should be listed in the
+order they appear in the book.
+
+Example:
+
+ <illustrations>
+  <illustration . . . />
+  <illgroup . . .>. . .</illgroup>
+  . . .
+ </illustrations>
+
+-->
+
+<!ELEMENT illgroup ( illustration )*>
+<!ATTLIST illgroup
+          %core.attributes;
+          %link.attributes;
+>
+
+<!--
+
+The "illgroup" element represents a group of illustrations contained
+within one section. It is used when individual links to the each
+illustration from the illustrations index are not wanted.
+
+Example:
+
+ <illgroup idref=". . .">
+  <illustration . . . />
+  <illustration . . . />
+  . . . 
+ </illgroup>
+
+ <illgroup idref=". . ." class="hidden">
+  <illustration . . . />
+  <illustration . . . />
+  . . . 
+ </illgroup>
+
+-->
+
+<!ELEMENT footnotes ( footnote )*>
+<!ATTLIST footnotes
+          %core.attributes;
+>
+<!--
+
+The "footnotes" element represents the collection of extra-textual 
+information contained within "footnote" elements.
+
+Example:
+
+ <footnotes>
+  <footnote . . .> . . . </footnote>
+  <footnote . . .> . . . </footnote>
+  . . .
+ </footnotes> 
+
+-->
+
+<!ELEMENT footnote ( %block.content; | %mixed.content; )*>
+<!ATTLIST footnote
+          %core.attributes;
+          %link.attributes;
+>
+<!--
+
+The "footnote" element contains extra-textual information. It can be 
+used as a linking element and can thus be used to refer back to a 
+named anchor within the document.
+
+Example:
+
+ <data . . .>
+  <p . . .>This paragraph requires an appropriate footnote
+   <a id="reference" idref="footnote-reference" . . ./>.
+  </p>
+  . . .
+ </data>
+ <footnotes . . .>
+  <footnote id="footnote-reference" idref="reference">
+   <p . . .>This is the appropriate footnote.</p>
+  </footnote>
+  . . .
+ </footnotes>
+
+-->
+
+<!-- ============================================================= -->
+<!--                        Block Elements                         -->
+<!-- ============================================================= -->
+
+<!-- :::::::::::::::::::::::::: Lists :::::::::::::::::::::::::::: -->
+
+<!ELEMENT ul ( li )*>
+<!ATTLIST ul
+          %core.attributes;
+>
+<!--
+
+The "ul" represents an unordered list.
+
+Example:
+
+ <ul>
+  <li . . .> . . . </li>
+  <li . . .> . . . </li>
+  . . .
+ </ul>
+
+-->
+
+<!ELEMENT ol ( li )*>
+<!ATTLIST ol
+          %core.attributes;
+          start CDATA #IMPLIED
+>
+<!--
+
+The "ol" element represents an ordered list.
+
+Example:
+
+ <ol>
+  <li . . .> . . . First Item . . . </li>
+  <li . . .> . . . Second Item . . . </li>
+  . . .
+ </ol>
+
+The "start" attribute can be used to start a list from a number 
+greater than 1.
+
+Example:
+
+ <ol start="4"> . . . </ol>
+
+-->
+
+<!ELEMENT li ( %inline.content; | %block.content; | %mixed.content; )*>
+<!ATTLIST li
+          %core.attributes;
+          value CDATA #IMPLIED
+>
+<!--
+
+The "li" element is a generic list item used within both ordered and 
+unordered lists (i.e. "ol" and "ul" elements).
+
+Examples:
+
+ <ul . . .>
+  . . .
+  <li>list item</li>
+  <li>another list item</li>
+  . . .
+ </ul>
+
+ <ol . . .>
+  <li>first list item</li>
+  <li>second list item</li>
+  . . .
+ </ol>
+
+The "value" attribute can be used to restart numbering in ordered lists. It has no meaning when used in unordered lists.
+
+ <ol>
+  <li>this item is numbered 1</li>
+  <li>this item is numbered 2</li>
+  <li value="10">this item is numbered 10</li>
+  <li>this item is numbered 11</li>
+ </ol>
+
+-->
+
+<!ELEMENT dl ( dt, dd? )*>
+<!ATTLIST dl
+          %core.attributes;
+>
+<!--
+
+The "dl" element represents a list of terms and their definitions.
+
+Example:
+
+ <dl>
+  <dt . . .> . . . First Term . . . </dt>
+   <dd . . .> . . . First Term's Definition . . . </dd>
+   . . .
+  <dt . . .> . . . Second Term . . . </dt>
+   <dd . . .> . . . Second Term's Definition . . . </dd>
+  <dt . . .> . . . Third Term with No Definition . . . </dt>
+ </dl>
+
+-->
+
+<!ELEMENT dt ( %inline.content; | %mixed.content; )*>
+<!ATTLIST dt
+          %core.attributes;
+>
+<!--
+
+The "dt" element represents a definition term within a definition 
+list. It should be immediately followed by its definitions contained 
+within "dd" elements.
+
+Example:
+
+ <dl . . .>
+  . . .
+  <dt>Definition Term</dt>
+   <dd . . .> . . . Definition . . . </dd>
+  . . .
+ </dl>
+
+-->
+
+<!ELEMENT dd ( %inline.content; | %block.content; | %mixed.content; )*>
+<!ATTLIST dd
+          %core.attributes;
+>
+<!--
+
+The "dd" element contains a definition.
+
+Example:
+
+ <dt . . .> . . . Term to be defined . . . </dt>
+  <dd>Definition of the term.</dd>
+
+-->
+
+<!-- :::::::::::::::::::::::::: Tables ::::::::::::::::::::::::::: -->
+
+<!ELEMENT table ( caption?, colgroup*, thead?, tfoot?, ( tr+ | tbody+ ))>
+<!ATTLIST table
+          summary CDATA #IMPLIED
+          %core.attributes;
+>
+<!--
+
+The "table" element represents tabular data. It's data is organized 
+within rows.
+
+Example:
+
+ <table>
+  <tr . . .> . . . </tr>
+  <tr . . .> . . . </tr>
+  . . .
+ </table>
+
+-->
+
+<!ELEMENT caption ( %inline.content; | %mixed.content; )*>
+<!ATTLIST caption
+          %core.attributes;
+>
+<!--
+
+The "caption" element contains a brief description of the data
+contained in the table and the structure of the table.
+
+Example:
+
+ <table>
+  <caption>Random Number Table</caption>
+  . . .
+ </table>
+
+-->
+
+<!ELEMENT colgroup EMPTY>
+<!ATTLIST colgroup
+          span CDATA #REQUIRED
+>
+<!--
+
+The "colgroup" element explicitly groups several columns of tabular data
+together. The "span" attribute specifies the number of columns to be
+grouped. This is primarily useful for non-visual user agents.
+
+Example:
+
+ <table>
+  . . .
+  <colgroup span="1"/>
+  <colgroup span="13"/>
+  . . .
+ </table>
+
+-->
+
+<!ELEMENT thead ( tr+ )>
+<!ATTLIST thead
+          %core.attributes;
+>
+<!--
+
+The "thead" element contains rows of data designated as the table
+header. It creates a rowgroup for the purposes of the "scope"
+attribute in the "th" and "td" elements.
+
+Example:
+
+ <table>
+  . . .
+  <thead>
+   <tr . . .> . . . </tr>
+   . . .
+  </thead>
+  . . .
+ </table>
+
+-->
+
+<!ELEMENT tfoot ( tr+ )>
+<!ATTLIST tfoot
+          %core.attributes;
+>
+<!--
+
+The "tfoot" element contains rows of data designated as the table
+footer. It creates a rowgroup for the purposes of the "scope"
+attribute in the "th" and "td" elements.
+
+Example:
+
+ <table>
+  . . .
+  <tfoot>
+   <tr . . .> . . . </tr>
+   . . .
+  </tfoot>
+  . . .
+ </table>
+
+-->
+
+<!ELEMENT tbody ( tr+ )>
+<!ATTLIST tbody
+          %core.attributes;
+>
+<!--
+
+The "tbody" element contains rows of data designated as the part
+of the main table data. More than one "tbody" element is allowed per
+"table" element. It creates a rowgroup for the purposes of the "scope"
+attribute in the "th" and "td" elements.
+
+Example:
+
+ <table>
+  . . .
+  <tfoot>
+   <tr . . .> . . . </tr>
+   . . .
+  </tfoot>
+  . . .
+ </table>
+
+-->
+
+<!ELEMENT tr ( th | td )*>
+<!ATTLIST tr
+          %core.attributes;
+>
+<!--
+
+The "tr" element contains a collection of "th" and "td" elements that 
+represent one row of a "table".
+
+Example:
+
+ <table . . .>
+  . . .
+  <tr>
+   <th . . .> . . . </th>
+   <td . . .> . . . </td>
+   . . .
+  </tr>
+  . . .
+ </table>
+
+-->
+
+<!ELEMENT th ( %inline.content; | %mixed.content; )*>
+<!ATTLIST th
+          %core.attributes;
+          %cell.align.attributes;
+          %cell.scope.attributes;
+>
+<!--
+
+The "th" contains a table header used to label a particular row or 
+column of tabular data.
+
+The "scope" attribute specifies to what extent the data of this header
+applies. The "axis" attribute is a comma-separated list of categories
+to which the element belongs.
+
+Example:
+
+ <tr . . .>
+  . . .
+  <th>Row Label</th>
+  <td . . .> . . . </td>
+  <td . . .> . . . </td>
+  . . .
+ </tr>
+
+-->
+
+<!ELEMENT td ( %inline.content; | %mixed.content; )*>
+<!ATTLIST td
+          %core.attributes;
+          %cell.align.attributes;
+          %cell.scope.attributes;
+>
+<!--
+
+The "td" element contains one cell of tabular data.
+
+The "scope" attribute may be used in conjunction with a "td" element to
+specify that though its data isn't considered header data, it functions
+as a label for the data. For example, a character's name is a label for a row
+of the character's statistics, but it is not a header.
+
+Example:
+
+ <tr . . .>
+  . . .
+  <td>Cell data</td>
+  . . .
+ </tr>
+
+-->
+
+<!-- :::::::::::::::::::::: Miscellaneous :::::::::::::::::::::::: -->
+
+<!ELEMENT p ( %inline.content; | %mixed.content; )*>
+<!ATTLIST p
+          %core.attributes;
+>
+<!--
+
+The "p" element contains a paragraph.
+
+Example:
+
+ <p>This is a (short) paragraph.</p>
+
+-->
+
+<!ELEMENT blockquote ( %block.content; | %mixed.content; )*>
+<!ATTLIST blockquote
+          %core.attributes;
+>
+<!--
+
+The "blockquote" element contains a lengthy quotation which isn't 
+contained within a paragraph.
+
+Example:
+
+ <blockquote>
+  <p>There was once a Kai monk from Sommerlund . . .</p>
+ </blockquote>
+
+-->
+
+<!ELEMENT poetry ( line+ )*>
+<!ATTLIST poetry
+          %core.attributes;
+>
+<!--
+
+The "poetry" element contains a poem that is organized into a
+sequence of lines contained in "line" elements.
+
+Example:
+
+ <poetry>
+  <line>When the full moon shines o<ch.apos/>er the temple deep,</line>
+  <line>A sacrifice will stir from sleep</line>
+  <line>The legions of a long forgotten lord.</line>
+  <line>When a fair royal maid on the altar dies,</line>
+  <line>The dead of Maakengorge shall rise</line>
+  <line>To claim their long-awaited reward.</line>
+ </poetry>
+
+-->
+
+<!ELEMENT combat ( enemy, enemy-attribute+ )>
+<!ATTLIST combat
+          %core.attributes;
+>
+<!--
+
+The "combat" element contains one combat represented by the enemy's 
+name and attributes.
+
+Example:
+
+ <combat>
+  <enemy . . .> . . . </enemy>
+  <enemy-attribute . . .> . . . </enemy-attribute>
+  <enemy-attribute . . .> . . . </enemy-attribute>
+  . . .
+ </combat>
+
+-->
+
+<!ELEMENT enemy ( %inline.content; | %mixed.content; )*>
+<!ATTLIST enemy
+          %core.attributes;
+>
+<!--
+
+The "enemy" element contains an enemy's name.
+
+Example:
+
+ <combat . . .>
+  . . .
+  <enemy>12-foot Giak</enemy>
+  . . .
+ </combat>
+
+-->
+
+<!ELEMENT enemy-attribute ( #PCDATA )*>
+<!ATTLIST enemy-attribute
+          %core.attributes;
+>
+<!--
+
+The "enemy-attribute" element contains one particular attribute which 
+describes an enemy.
+
+Example:
+
+ <combat . . .>
+  . . .
+  <enemy-attribute>30</enemy-attribute>
+  . . .
+ </combat>
+
+-->
+
+<!ELEMENT choice ( %inline.content; | %mixed.content; | link-text )*>
+<!ATTLIST choice
+          %core.attributes;
+          %link.attributes;
+>
+<!--
+
+The "choice" element contains the text describing a choice presented 
+within a section. It's a linking element and therefore can link to 
+the place to which the choice leads.
+
+The choice element can contain "link-text" elements which suggest text 
+that should be used by the user agent to represent the hyperlink.
+
+Example:
+
+ <section id="section12" . . .> . . . </section>
+ . . .
+ <choice idref="section12">If you would like to fight the 12-foot Giak, 
+  <link-text . . .> . . . turn to 12. . . . </link-text>
+ </choice>
+
+-->
+
+<!ELEMENT link-text ( %inline.content; | %mixed.content; )*>
+<!ATTLIST link-text
+          %core.attributes;
+>
+<!--
+
+The "link-text" element contains text which is suggested for use by 
+hypertext user interfaces to represent one end of a hyperlink.
+
+Example:
+
+ <choice . . .>
+  . . .
+  <link-text>the unfortunately ubiquitous "Click Here!"</link-text>
+  . . .
+ </choice>
+
+-->
+
+<!ELEMENT illustration ( meta?, instance+ )>
+<!ATTLIST illustration
+          %core.attributes;
+          %link.attributes;
+>
+
+<!--
+
+The "illustration" element contains a set of alternate 
+representations of a particular illustration.
+
+Example:
+
+ <illustration>
+  <meta> . . . </meta>
+  <instance . . .> . . . </instance>
+  <instance . . .> . . . </instance>
+  . . .
+ </illustration>
+
+-->
+
+<!ELEMENT instance ( %inline.content; | %block.content; | %mixed.content; )*>
+<!ATTLIST instance
+          %core.attributes;
+          src         CDATA #IMPLIED
+          width       CDATA #IMPLIED
+          height      CDATA #IMPLIED
+          mime-type   CDATA #IMPLIED
+          originalwidth CDATA #IMPLIED
+          posx        CDATA #IMPLIED
+          posy        CDATA #IMPLIED
+>
+<!--
+
+The "instance" element describes one instance of an illustration.
+
+The "src" attribute is a URL for the data file for the illustration.
+
+The "width" and "height" attributes contain the dimensions of the 
+illustration.
+
+The "mime-type" attribute can contain an appropriate label for the 
+format of the illustration file (e.g. "image/png" or "image/jpeg").
+
+The "originalwidth" attribute contains the width of the illustration
+as it appears in the printed books. It is given including a unit
+(e.g. "54mm").
+
+The "posx" and "posx" attributes are hints for the positioning of the
+illustration when the PDF is generated.
+
+The "instance" element can contain block or inline content that
+is intended to replace graphical illustrations.
+
+Example:
+
+ <illustration . . .>
+  . . .
+  <instance src="17.gif" width="386" height="532" type="image/gif" />
+  <instance src="" width="" height="" type="text" >
+   [content here]
+  </instance>
+  <instance class="pdf" src="sword.pdf" originalwidth="54mm" />
+  . . .
+ </illustration>
+
+-->
+
+<!ELEMENT illref EMPTY>
+<!ATTLIST illref
+          %core.attributes;
+          %link.attributes;
+>
+
+<!--
+
+The "illref" element is used to mark the location of an illustration.
+The actual illustration is declared elsewhere.
+
+Since the placement of a particular illustration may depend on the
+output format, one "illref" is required for each format.
+
+Example:
+
+  <illref idref="ill2" class="html"/>
+  <illref idref="ill2" class="pdf"/>
+
+-->
+
+<!ELEMENT signpost ( %inline.content; | %block.content; | %mixed.content; )*>
+<!ATTLIST signpost
+          %core.attributes;
+>
+<!--
+
+The "signpost" element contains the text of a sign or message that
+should be presented offset from surrounding text.
+
+Example:
+
+ <signpost>RENDALIM'S LABORATORY</signpost>
+
+-->
+
+<!ELEMENT hr EMPTY>
+<!ATTLIST hr
+          %core.attributes;
+>
+<!--
+
+The "hr" element designates a horizontal rule. Since this is a 
+presentational tag, it should be used sparingly in cases where new
+logical divisions of the text begin which aren't given a unique 
+title.
+
+Example:
+
+ <hr />
+
+--> 
+
+<!ELEMENT choose ( when+, otherwise? )>
+<!ATTLIST choose
+          %core.attributes;
+          test CDATA #REQUIRED
+>
+<!ELEMENT when ( %inline.content; | %block.content; | %mixed.content; )*>
+<!ATTLIST when
+          %core.attributes;
+          value CDATA #IMPLIED
+>
+<!ELEMENT otherwise ( %inline.content; | %block.content; | %mixed.content; )*>
+<!ATTLIST otherwise
+          %core.attributes;
+>
+<!--
+
+The "choose", "when", and "otherwise" elements work together to provide a
+simple way to include content based on conditions. The value to be tested
+is specified in the "choose" element with the "test" attribute. Only the first
+"when" element whose "value" attribute matches the value of the test is included. If none pass, the "otherwise" element is included.
+
+Example:
+
+ <choose test="linkable">
+  . . .
+  <when value="true">included if linkable is true</when>
+  <when value="false">included if linkable is false</when>
+  <when value="3">included if linkable is 3</when>
+  <otherwise>included if linkable is none of the above</otherwise>
+ </ul>
+
+-->
+
+<!-- ============================================================= -->
+<!--                       Inline Elements                         -->
+<!-- ============================================================= -->
+
+<!ELEMENT a ( %inline.content; | %mixed.content; )*>
+<!ATTLIST a
+          %core.attributes;
+          %link.attributes;
+          href CDATA #IMPLIED
+>
+<!--
+
+The "a" element is used to contain inline content that should be a 
+hypertext anchor. The "a" element should not contain another linking
+element (e.g. "a", "bookref", "footref").
+
+The "href" attribute is added to allow a reference outside of the 
+document itself.
+
+Example:
+
+ <p . . .>
+  . . .
+  <a idref="section12" id="foo">Section 12</a>
+  . . .
+ </p>
+
+-->
+
+<!ELEMENT bookref ( %inline.content; | %mixed.content; )*>
+<!ATTLIST bookref
+          %core.attributes;
+          %link.attributes;
+          series  CDATA #IMPLIED
+          book    CDATA #REQUIRED
+          section CDATA #IMPLIED
+>
+<!--
+
+The "bookref" element is used to contain inline content that should be a 
+hypertext anchor to another book.
+
+The "series" attribute is a tag that denotes the series of the book that
+the link points to. The attribute may be left out if the book is part of
+the same series as the one containing the link.
+
+The "book" attribute is a tag that denotes the book that the link points
+to. This is not necessarily a URL.
+
+The "section" attribute is a tag indicating which section to link to.
+This is not necessarily a URL. The attribute may be left out if no
+particular section is referred to.
+
+Example:
+
+ <p . . .>
+  . . .
+  <bookref series="lw" book="11tpot" section="sect33">
+   The Prisoners of Time: Section 33
+  </bookref>
+  . . .
+ </p>
+
+ <p . . .>
+  . . .
+  <bookref book="04wotw">Book 4</bookref>
+  . . .
+ </p>
+
+-->
+
+<!ELEMENT footref ( %inline.content; | %mixed.content; )*>
+<!ATTLIST footref
+          %core.attributes;
+          %link.attributes;
+>
+<!--
+
+The "footref" element is used to indicate the position of a reference
+to a "footnote" element. It should normally not contain any text.
+
+Example:
+
+ <p . . .>
+  . . .
+  You lose 3EP.<footref id="footref1" idref="footnote1"/>
+  . . .
+ </p>
+
+-->
+
+<!ELEMENT em ( %inline.content; | %mixed.content; )*>
+<!ATTLIST em
+          %core.attributes;
+>
+<!--
+
+The "em" element contains text that should be emphasized. Although not 
+part of the DTD and therefore not guaranteed or required to be so, the 
+text should be typeset with an italic font.
+
+ <p . . .>
+  . . .
+  <em>You are being attacked!</em>
+  . . .
+ </p>
+
+-->
+
+<!ELEMENT strong ( %inline.content; | %mixed.content; )*>
+<!ATTLIST strong
+          %core.attributes;
+>
+<!--
+
+The "strong" element contains text that should be emphasized. Although 
+not part of the DTD and therefore not guaranteed or required to be so, 
+the text should be typeset with a bold font weight.
+
+ <p . . .>
+  . . .
+  <strong>If</strong> you have the Talisman of Supreme Obscurity,
+  . . .
+ </p>
+
+-->
+
+<!ELEMENT thought ( %inline.content; | %mixed.content; )*>
+<!ATTLIST thought
+          %core.attributes;
+>
+<!--
+
+The "thought" element contains text that is the character's thoughts or is 
+an overheard thought. Although not part of the DTD and therefore not 
+guaranteed or required to be so, the text should be typeset with an italic
+font face.
+
+ <p . . .>
+  . . .
+  Lone Wolf heard the words <thought>Die Northlander!</strong> echo in
+  his mind,
+  . . .
+ </p>
+
+-->
+
+<!ELEMENT foreign ( %inline.content; | %mixed.content; )*>
+<!ATTLIST foreign
+          %core.attributes;
+>
+<!--
+
+The "foreign" element contains a phrase in a non-native language.
+Although not part of the DTD and therefore not guaranteed or required 
+to be so, the text should be typeset with an italic font face.
+
+ <p . . .>
+  . . .
+  The Giak horde attacked <foreign>en masse</foreign>.
+  . . .
+ </p>
+
+-->
+
+<!ELEMENT quote ( %inline.content; | %mixed.content; )*>
+<!ATTLIST quote
+          %core.attributes;
+>
+<!--
+
+The "quote" element contains an inline quotation.
+
+Example:
+
+ <p . . .>The Giak yelped <quote . . .>Oww!</quote></p>
+
+-->
+
+<!ELEMENT cite ( %inline.content; | %mixed.content; )*>
+<!ATTLIST cite
+          %core.attributes;
+>
+<!--
+
+The "cite" element contains the title of a sited resource.
+
+Example:
+
+ <p . . .>
+  . . .
+  <cite>Flight from the Dark</cite>
+  . . .
+ </p>
+
+-->
+
+<!ELEMENT code ( %inline.content; | %mixed.content; )*>
+<!ATTLIST code
+          %core.attributes;
+>
+<!--
+
+The "code" element contains data that should be interpreted as literal 
+input to a computer (e.g. email addresses and URIs).
+
+Example:
+
+ <code>http://www.projectaon.org/</code>
+
+-->
+
+<!ELEMENT line ( %inline.content; | %mixed.content; )*>
+<!ATTLIST line
+          %core.attributes;
+>
+<!--
+
+The "line" element contains one logical line of data in, for example,
+a poem. Its use should be confined to documents such as poems that
+require a particular line structure.
+
+Example:
+
+ <line>When the full moon rises o'er the temple deep,</line>
+ <line>A sacrifice will stir from sleep</line>
+ <line>The legions of a long forgotten lord.</line>
+
+-->
+
+<!ELEMENT br EMPTY>
+<!ATTLIST br
+          %core.attributes;
+>
+<!--
+
+The "br" indicates a required line break. Its use is deprecated in favor
+of the "line" element.
+
+Example:
+
+ <blockquote . . .>
+  . . .
+  There once was a Kai monk from Sommerlund<br />
+  Who always wore a pink cummerbund<br />
+  . . .
+ </blockquote>
+
+-->
+
+<!ELEMENT typ ( #PCDATA )>
+<!ATTLIST typ
+          %core.attributes;
+>
+<!--
+
+The "typ" element is used to denote purely typographical markup. For
+example, bold font face, italics, and smaller font are purely of
+typographical concern. Take care to not use this in place of logical
+markup such as the "em" element when it is more appropriate.
+
+Example:
+
+The <typ class="bold">Project Aon</a> volunteers.
+
+-->
+
+<!ELEMENT onomatopoeia ( #PCDATA )>
+<!ATTLIST onomatopoeia
+          %core.attributes;
+>
+<!--
+
+The "onomatopoeia" element is used to denote words that imitate a
+sound (e.g., "whoosh", "bang").
+
+Example:
+
+The <onomatopoeia>clang</onomatopoeia> of the bell is deafening.
+
+-->
+
+<!ELEMENT spell ( #PCDATA )>
+<!ATTLIST spell
+          %core.attributes;
+>
+<!--
+
+The "spell" element contains the name of a magic spell.
+
+Example:
+
+Having had no success with his female peers, the acolyte learned the
+forbidden <spell>Attract Opposite Gender</spell> spell.
+
+-->
+
+<!ELEMENT item ( #PCDATA )>
+<!ATTLIST item
+          %core.attributes;
+>
+<!--
+
+The "item" element contains the name of an item that the reader can
+pick up or interact with.
+
+Example:
+
+Her <item>Sword</a> lay just out of reach.
+
+-->
+
+<!-- ============================================================= -->
+<!--                      Character Elements                       -->
+<!-- ============================================================= -->
+<!--
+
+The character elments provide a hook to specify a character without
+specifying the exact representation in target formats. The exact 
+representation used is the responsibility of the processor (e.g XSLT
+stylesheet.
+
+Portions Copyright International Organization for Standardization 1986 
+Permission to copy in any form is granted for use with conforming SGML 
+systems and applications as defined in ISO 8879, provided this notice 
+is included in all copies.
+
+-->
+
+<!-- no-break space = non-breaking space, U+00A0 ISOnum -->
+<!ELEMENT ch.apos EMPTY><!ATTLIST ch.apos %core.attributes;>
+
+<!-- no-break space = non-breaking space, U+00A0 ISOnum -->
+<!ELEMENT ch.nbsp EMPTY><!ATTLIST ch.nbsp %core.attributes;>
+
+<!-- inverted exclamation mark, U+00A1 ISOnum -->
+<!ELEMENT ch.iexcl EMPTY><!ATTLIST ch.iexcl %core.attributes;>
+
+<!-- cent sign, U+00A2 ISOnum -->
+<!ELEMENT ch.cent EMPTY><!ATTLIST ch.cent %core.attributes;>
+
+<!-- pound sign, U+00A3 ISOnum -->
+<!ELEMENT ch.pound EMPTY><!ATTLIST ch.pound %core.attributes;>
+
+<!-- currency sign, U+00A4 ISOnum -->
+<!ELEMENT ch.curren EMPTY><!ATTLIST ch.curren %core.attributes;>
+
+<!-- yen sign = yuan sign, U+00A5 ISOnum -->
+<!ELEMENT ch.yen EMPTY><!ATTLIST ch.yen %core.attributes;>
+
+<!-- broken bar = broken vertical bar, U+00A6 ISOnum -->
+<!ELEMENT ch.brvbar EMPTY><!ATTLIST ch.brvbar %core.attributes;>
+
+<!-- section sign, U+00A7 ISOnum -->
+<!ELEMENT ch.sect EMPTY><!ATTLIST ch.sect %core.attributes;>
+
+<!-- diaeresis = spacing diaeresis, U+00A8 ISOdia -->
+<!ELEMENT ch.uml EMPTY><!ATTLIST ch.uml %core.attributes;>
+
+<!-- copyright sign, U+00A9 ISOnum -->
+<!ELEMENT ch.copy EMPTY><!ATTLIST ch.copy %core.attributes;>
+
+<!-- feminine ordinal indicator, U+00AA ISOnum -->
+<!ELEMENT ch.ordf EMPTY><!ATTLIST ch.ordf %core.attributes;>
+
+<!-- left-pointing double angle quotation mark = left pointing guillemet, U+00AB ISOnum -->
+<!ELEMENT ch.laquo EMPTY><!ATTLIST ch.laquo %core.attributes;>
+
+<!-- not sign, U+00AC ISOnum -->
+<!ELEMENT ch.not EMPTY><!ATTLIST ch.not %core.attributes;>
+
+<!-- soft hyphen = discretionary hyphen, U+00AD ISOnum -->
+<!ELEMENT ch.shy EMPTY><!ATTLIST ch.shy %core.attributes;>
+
+<!-- registered sign = registered trade mark sign, U+00AE ISOnum -->
+<!ELEMENT ch.reg EMPTY><!ATTLIST ch.reg %core.attributes;>
+
+<!-- macron = spacing macron = overline = APL overbar, U+00AF ISOdia -->
+<!ELEMENT ch.macr EMPTY><!ATTLIST ch.macr %core.attributes;>
+
+<!-- degree sign, U+00B0 ISOnum -->
+<!ELEMENT ch.deg EMPTY><!ATTLIST ch.deg %core.attributes;>
+
+<!-- plus-minus sign = plus-or-minus sign, U+00B1 ISOnum -->
+<!ELEMENT ch.plusmn EMPTY><!ATTLIST ch.plusmn %core.attributes;>
+
+<!-- superscript two = superscript digit two = squared, U+00B2 ISOnum -->
+<!ELEMENT ch.sup2 EMPTY><!ATTLIST ch.sup2 %core.attributes;>
+
+<!-- superscript three = superscript digit three = cubed, U+00B3 ISOnum -->
+<!ELEMENT ch.sup3 EMPTY><!ATTLIST ch.sup3 %core.attributes;>
+
+<!-- acute accent = spacing acute, U+00B4 ISOdia -->
+<!ELEMENT ch.acute EMPTY><!ATTLIST ch.acute %core.attributes;>
+
+<!-- micro sign, U+00B5 ISOnum -->
+<!ELEMENT ch.micro EMPTY><!ATTLIST ch.micro %core.attributes;>
+
+<!-- pilcrow sign  = paragraph sign, U+00B6 ISOnum -->
+<!ELEMENT ch.para EMPTY><!ATTLIST ch.para %core.attributes;>
+
+<!-- middle dot = Georgian comma = Greek middle dot, U+00B7 ISOnum -->
+<!ELEMENT ch.middot EMPTY><!ATTLIST ch.middot %core.attributes;>
+
+<!-- cedilla = spacing cedilla, U+00B8 ISOdia -->
+<!ELEMENT ch.cedil EMPTY><!ATTLIST ch.cedil %core.attributes;>
+
+<!-- superscript one = superscript digit one, U+00B9 ISOnum -->
+<!ELEMENT ch.sup1 EMPTY><!ATTLIST ch.sup1 %core.attributes;>
+
+<!-- masculine ordinal indicator, U+00BA ISOnum -->
+<!ELEMENT ch.ordm EMPTY><!ATTLIST ch.ordm %core.attributes;>
+
+<!-- right-pointing double angle quotation mark = right pointing guillemet, U+00BB ISOnum -->
+<!ELEMENT ch.raquo EMPTY><!ATTLIST ch.raquo %core.attributes;>
+
+<!-- vulgar fraction one quarter = fraction one quarter, U+00BC ISOnum -->
+<!ELEMENT ch.frac14 EMPTY><!ATTLIST ch.frac14 %core.attributes;>
+
+<!-- vulgar fraction one half = fraction one half, U+00BD ISOnum -->
+<!ELEMENT ch.frac12 EMPTY><!ATTLIST ch.frac12 %core.attributes;>
+
+<!-- vulgar fraction three quarters = fraction three quarters, U+00BE ISOnum -->
+<!ELEMENT ch.frac34 EMPTY><!ATTLIST ch.frac34 %core.attributes;>
+
+<!-- inverted question mark = turned question mark, U+00BF ISOnum -->
+<!ELEMENT ch.iquest EMPTY><!ATTLIST ch.iquest %core.attributes;>
+
+<!-- latin capital letter A with grave = latin capital letter A grave, U+00C0 ISOlat1 -->
+<!ELEMENT ch.Agrave EMPTY><!ATTLIST ch.Agrave %core.attributes;>
+
+<!-- latin capital letter A with acute, U+00C1 ISOlat1 -->
+<!ELEMENT ch.Aacute EMPTY><!ATTLIST ch.Aacute %core.attributes;>
+
+<!-- latin capital letter A with circumflex, U+00C2 ISOlat1 -->
+<!ELEMENT ch.Acirc EMPTY><!ATTLIST ch.Acirc %core.attributes;>
+
+<!-- latin capital letter A with tilde, U+00C3 ISOlat1 -->
+<!ELEMENT ch.Atilde EMPTY><!ATTLIST ch.Atilde %core.attributes;>
+
+<!-- latin capital letter A with diaeresis, U+00C4 ISOlat1 -->
+<!ELEMENT ch.Auml EMPTY><!ATTLIST ch.Auml %core.attributes;>
+
+<!-- latin capital letter A with ring above = latin capital letter A ring, U+00C5 ISOlat1 -->
+<!ELEMENT ch.Aring EMPTY><!ATTLIST ch.Aring %core.attributes;>
+
+<!-- latin capital letter AE = latin capital ligature AE, U+00C6 ISOlat1 -->
+<!ELEMENT ch.AElig EMPTY><!ATTLIST ch.AElig %core.attributes;>
+
+<!-- latin capital letter C with cedilla, U+00C7 ISOlat1 -->
+<!ELEMENT ch.Ccedil EMPTY><!ATTLIST ch.Ccedil %core.attributes;>
+
+<!-- latin capital letter E with grave, U+00C8 ISOlat1 -->
+<!ELEMENT ch.Egrave EMPTY><!ATTLIST ch.Egrave %core.attributes;>
+
+<!-- latin capital letter E with acute, U+00C9 ISOlat1 -->
+<!ELEMENT ch.Eacute EMPTY><!ATTLIST ch.Eacute %core.attributes;>
+
+<!-- latin capital letter E with circumflex, U+00CA ISOlat1 -->
+<!ELEMENT ch.Ecirc EMPTY><!ATTLIST ch.Ecirc %core.attributes;>
+
+<!-- latin capital letter E with diaeresis, U+00CB ISOlat1 -->
+<!ELEMENT ch.Euml EMPTY><!ATTLIST ch.Euml %core.attributes;>
+
+<!-- latin capital letter I with grave, U+00CC ISOlat1 -->
+<!ELEMENT ch.Igrave EMPTY><!ATTLIST ch.Igrave %core.attributes;>
+
+<!-- latin capital letter I with acute, U+00CD ISOlat1 -->
+<!ELEMENT ch.Iacute EMPTY><!ATTLIST ch.Iacute %core.attributes;>
+
+<!-- latin capital letter I with circumflex, U+00CE ISOlat1 -->
+<!ELEMENT ch.Icirc EMPTY><!ATTLIST ch.Icirc %core.attributes;>
+
+<!-- latin capital letter I with diaeresis, U+00CF ISOlat1 -->
+<!ELEMENT ch.Iuml EMPTY><!ATTLIST ch.Iuml %core.attributes;>
+
+<!-- latin capital letter ETH, U+00D0 ISOlat1 -->
+<!ELEMENT ch.ETH EMPTY><!ATTLIST ch.ETH %core.attributes;>
+
+<!-- latin capital letter N with tilde, U+00D1 ISOlat1 -->
+<!ELEMENT ch.Ntilde EMPTY><!ATTLIST ch.Ntilde %core.attributes;>
+
+<!-- latin capital letter O with grave, U+00D2 ISOlat1 -->
+<!ELEMENT ch.Ograve EMPTY><!ATTLIST ch.Ograve %core.attributes;>
+
+<!-- latin capital letter O with acute, U+00D3 ISOlat1 -->
+<!ELEMENT ch.Oacute EMPTY><!ATTLIST ch.Oacute %core.attributes;>
+
+<!-- latin capital letter O with circumflex, U+00D4 ISOlat1 -->
+<!ELEMENT ch.Ocirc EMPTY><!ATTLIST ch.Ocirc %core.attributes;>
+
+<!-- latin capital letter O with tilde, U+00D5 ISOlat1 -->
+<!ELEMENT ch.Otilde EMPTY><!ATTLIST ch.Otilde %core.attributes;>
+
+<!-- latin capital letter O with diaeresis, U+00D6 ISOlat1 -->
+<!ELEMENT ch.Ouml EMPTY><!ATTLIST ch.Ouml %core.attributes;>
+
+<!-- multiplication sign, U+00D7 ISOnum -->
+<!ELEMENT ch.times EMPTY><!ATTLIST ch.times %core.attributes;>
+
+<!-- latin capital letter O with stroke = latin capital letter O slash, U+00D8 ISOlat1 -->
+<!ELEMENT ch.Oslash EMPTY><!ATTLIST ch.Oslash %core.attributes;>
+
+<!-- latin capital letter U with grave, U+00D9 ISOlat1 -->
+<!ELEMENT ch.Ugrave EMPTY><!ATTLIST ch.Ugrave %core.attributes;>
+
+<!-- latin capital letter U with acute, U+00DA ISOlat1 -->
+<!ELEMENT ch.Uacute EMPTY><!ATTLIST ch.Uacute %core.attributes;>
+
+<!-- latin capital letter U with circumflex, U+00DB ISOlat1 -->
+<!ELEMENT ch.Ucirc EMPTY><!ATTLIST ch.Ucirc %core.attributes;>
+
+<!-- latin capital letter U with diaeresis, U+00DC ISOlat1 -->
+<!ELEMENT ch.Uuml EMPTY><!ATTLIST ch.Uuml %core.attributes;>
+
+<!-- latin capital letter Y with acute, U+00DD ISOlat1 -->
+<!ELEMENT ch.Yacute EMPTY><!ATTLIST ch.Yacute %core.attributes;>
+
+<!-- latin capital letter THORN, U+00DE ISOlat1 -->
+<!ELEMENT ch.THORN EMPTY><!ATTLIST ch.THORN %core.attributes;>
+
+<!-- latin small letter sharp s = ess-zed, U+00DF ISOlat1 -->
+<!ELEMENT ch.szlig EMPTY><!ATTLIST ch.szlig %core.attributes;>
+
+<!-- latin small letter a with grave = latin small letter a grave, U+00E0 ISOlat1 -->
+<!ELEMENT ch.agrave EMPTY><!ATTLIST ch.agrave %core.attributes;>
+
+<!-- latin small letter a with acute, U+00E1 ISOlat1 -->
+<!ELEMENT ch.aacute EMPTY><!ATTLIST ch.aacute %core.attributes;>
+
+<!-- latin small letter a with circumflex, U+00E2 ISOlat1 -->
+<!ELEMENT ch.acirc EMPTY><!ATTLIST ch.acirc %core.attributes;>
+
+<!-- latin small letter a with tilde, U+00E3 ISOlat1 -->
+<!ELEMENT ch.atilde EMPTY><!ATTLIST ch.atilde %core.attributes;>
+
+<!-- latin small letter a with diaeresis, U+00E4 ISOlat1 -->
+<!ELEMENT ch.auml EMPTY><!ATTLIST ch.auml %core.attributes;>
+
+<!-- latin small letter a with ring above = latin small letter a ring, U+00E5 ISOlat1 -->
+<!ELEMENT ch.aring EMPTY><!ATTLIST ch.aring %core.attributes;>
+
+<!-- latin small letter ae = latin small ligature ae, U+00E6 ISOlat1 -->
+<!ELEMENT ch.aelig EMPTY><!ATTLIST ch.aelig %core.attributes;>
+
+<!-- latin small letter c with cedilla, U+00E7 ISOlat1 -->
+<!ELEMENT ch.ccedil EMPTY><!ATTLIST ch.ccedil %core.attributes;>
+
+<!-- latin small letter e with grave, U+00E8 ISOlat1 -->
+<!ELEMENT ch.egrave EMPTY><!ATTLIST ch.egrave %core.attributes;>
+
+<!-- latin small letter e with acute, U+00E9 ISOlat1 -->
+<!ELEMENT ch.eacute EMPTY><!ATTLIST ch.eacute %core.attributes;>
+
+<!-- latin small letter e with circumflex, U+00EA ISOlat1 -->
+<!ELEMENT ch.ecirc EMPTY><!ATTLIST ch.ecirc %core.attributes;>
+
+<!-- latin small letter e with diaeresis, U+00EB ISOlat1 -->
+<!ELEMENT ch.euml EMPTY><!ATTLIST ch.euml %core.attributes;>
+
+<!-- latin small letter i with grave, U+00EC ISOlat1 -->
+<!ELEMENT ch.igrave EMPTY><!ATTLIST ch.igrave %core.attributes;>
+
+<!-- latin small letter i with acute, U+00ED ISOlat1 -->
+<!ELEMENT ch.iacute EMPTY><!ATTLIST ch.iacute %core.attributes;>
+
+<!-- latin small letter i with circumflex, U+00EE ISOlat1 -->
+<!ELEMENT ch.icirc EMPTY><!ATTLIST ch.icirc %core.attributes;>
+
+<!-- latin small letter i with diaeresis, U+00EF ISOlat1 -->
+<!ELEMENT ch.iuml EMPTY><!ATTLIST ch.iuml %core.attributes;>
+
+<!-- latin small letter eth, U+00F0 ISOlat1 -->
+<!ELEMENT ch.eth EMPTY><!ATTLIST ch.eth %core.attributes;>
+
+<!-- latin small letter n with tilde, U+00F1 ISOlat1 -->
+<!ELEMENT ch.ntilde EMPTY><!ATTLIST ch.ntilde %core.attributes;>
+
+<!-- latin small letter o with grave, U+00F2 ISOlat1 -->
+<!ELEMENT ch.ograve EMPTY><!ATTLIST ch.ograve %core.attributes;>
+
+<!-- latin small letter o with acute, U+00F3 ISOlat1 -->
+<!ELEMENT ch.oacute EMPTY><!ATTLIST ch.oacute %core.attributes;>
+
+<!-- latin small letter o with circumflex, U+00F4 ISOlat1 -->
+<!ELEMENT ch.ocirc EMPTY><!ATTLIST ch.ocirc %core.attributes;>
+
+<!-- latin small letter o with tilde, U+00F5 ISOlat1 -->
+<!ELEMENT ch.otilde EMPTY><!ATTLIST ch.otilde %core.attributes;>
+
+<!-- latin small letter o with diaeresis, U+00F6 ISOlat1 -->
+<!ELEMENT ch.ouml EMPTY><!ATTLIST ch.ouml %core.attributes;>
+
+<!-- division sign, U+00F7 ISOnum -->
+<!ELEMENT ch.divide EMPTY><!ATTLIST ch.divide %core.attributes;>
+
+<!-- latin small letter o with stroke, = latin small letter o slash, U+00F8 ISOlat1 -->
+<!ELEMENT ch.oslash EMPTY><!ATTLIST ch.oslash %core.attributes;>
+
+<!-- latin small letter u with grave, U+00F9 ISOlat1 -->
+<!ELEMENT ch.ugrave EMPTY><!ATTLIST ch.ugrave %core.attributes;>
+
+<!-- latin small letter u with acute, U+00FA ISOlat1 -->
+<!ELEMENT ch.uacute EMPTY><!ATTLIST ch.uacute %core.attributes;>
+
+<!-- latin small letter u with circumflex, U+00FB ISOlat1 -->
+<!ELEMENT ch.ucirc EMPTY><!ATTLIST ch.ucirc %core.attributes;>
+
+<!-- latin small letter u with diaeresis, U+00FC ISOlat1 -->
+<!ELEMENT ch.uuml EMPTY><!ATTLIST ch.uuml %core.attributes;>
+
+<!-- latin small letter y with acute, U+00FD ISOlat1 -->
+<!ELEMENT ch.yacute EMPTY><!ATTLIST ch.yacute %core.attributes;>
+
+<!-- latin small letter thorn, U+00FE ISOlat1 -->
+<!ELEMENT ch.thorn EMPTY><!ATTLIST ch.thorn %core.attributes;>
+
+<!-- latin small letter y with diaeresis, U+00FF ISOlat1 -->
+<!ELEMENT ch.yuml EMPTY><!ATTLIST ch.yuml %core.attributes;>
+
+
+<!-- ::::::::::::::::::::: Special Characters :::::::::::::::::::: -->
+
+<!-- ampersand -->
+<!ELEMENT ch.ampersand EMPTY><!ATTLIST ch.ampersand %core.attributes;>
+
+<!-- opening left quotation mark -->
+<!ELEMENT ch.lsquot EMPTY><!ATTLIST ch.lsquot %core.attributes;>
+
+<!-- closing right quotation mark -->
+<!ELEMENT ch.rsquot EMPTY><!ATTLIST ch.rsquot %core.attributes;>
+
+<!-- opening left double quotation mark -->
+<!ELEMENT ch.ldquot EMPTY><!ATTLIST ch.ldquot %core.attributes;>
+
+<!-- closing right double quotation mark -->
+<!ELEMENT ch.rdquot EMPTY><!ATTLIST ch.rdquot %core.attributes;>
+
+<!-- mathematical minus -->
+<!ELEMENT ch.minus EMPTY><!ATTLIST ch.minus %core.attributes;>
+
+<!-- endash -->
+<!ELEMENT ch.endash EMPTY><!ATTLIST ch.endash %core.attributes;>
+
+<!-- emdash -->
+<!ELEMENT ch.emdash EMPTY><!ATTLIST ch.emdash %core.attributes;>
+
+<!-- ellipsis -->
+<!ELEMENT ch.ellips EMPTY><!ATTLIST ch.ellips %core.attributes;>
+
+<!-- left ellipsis, used at the beginning of edited material -->
+<!ELEMENT ch.lellips EMPTY><!ATTLIST ch.lellips %core.attributes;>
+
+<!-- blank line to be filled in -->
+<!ELEMENT ch.blankline EMPTY><!ATTLIST ch.blankline %core.attributes;>
+
+<!-- percent sign -->
+<!ELEMENT ch.percent EMPTY><!ATTLIST ch.percent %core.attributes;>
+
+<!-- small horizontal space for use between adjacent quotation marks - added mainly for LaTeX's sake -->
+<!ELEMENT ch.thinspace EMPTY><!ATTLIST ch.thinspace %core.attributes;>
+
+<!-- vulgar fraction one sixteenth = fraction on sixteenth -->
+<!ELEMENT ch.frac116 EMPTY><!ATTLIST ch.frac116 %core.attributes;>
+
+<!-- mathematical plus -->
+<!ELEMENT ch.plus EMPTY><!ATTLIST ch.plus %core.attributes;>
+
+<!-- ============================================================= -->
+<!--                          Appendices                           -->
+<!-- ============================================================= -->
+
+<!-- :::::::::::::: Valid Gamebook Document Example :::::::::::::: -->
+<!--
+This document is not intended to document current practice in Project
+Aon. It is merely here to demonstrate the concepts of the Gamebook 
+DTD. For current practice, please refer to published XML files.
+-->
+
+<!--
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE gamebook SYSTEM "gamebook.dtd">
+
+<gamebook version="0.12" xml:lang="en-UK">
+
+<meta>
+ <title>Flight from the Dark</title>
+ <creator>Joe Dever and Gary Chalk</creator>
+ <publisher>Project Aon</publisher>
+ <date><year>2001</year><month>10</month><day>24</day></date>
+ <rights>Copyright <ch.copy/> 1984 Joe Dever and Gary Chalk.</rights>
+</meta>
+
+<section id="section1">
+ <meta><title>1</title></meta>
+ <data>
+  <p>You must make haste for you sense it is not safe to linger by the smoking remains of the ruined monastery. The black-winged beasts could return at any moment. You must set out for the Sommerlund capital of Holmgard and tell the King the terrible news of the massacre: that the whole <ch.eacute/>lite of Kai warriors, save yourself, have been slaughtered. Without the Kai Lords to lead her armies, Sommerlund will be at the mercy of their ancient enemy, the Darklords.</p>
+  <p>Fighting back tears, you bid farewell to your dead kinsmen. Silently, you promise that their deaths will be avenged. You turn away from the ruins and carefully descend the steep track.</p>
+  <p>At the foot of the hill, the path splits into two directions, both leading into a large wood.</p>
+
+  <choice idref="section85">If you wish to take the right path into the wood, <link-text>turn to 85</link-text>.</choice>
+  <choice idref="section275">If you wish to follow the left track, <link-text>turn to 275</link-text>.</choice>
+  <choice idref="section141">If you wish to use your Kai Discipline of Sixth Sense, <link-text>turn to 141</link-text>.</choice>
+ </data>
+ <footnotes>
+  <footnote><p>Later books use <quote>Sommlending</quote> as the possessive adjective for Sommerlund, contrary to the use of the word <quote>Sommerlund</quote> in the third sentence. This is probably not a typo, but a reflection of Joe Dever<ch.apos/>s later expansion of the vocabulary of Magnamund.</p></footnote>
+ </footnotes>
+</section>
+
+<section id="section17">
+ <meta><title>17</title></meta>
+ <data>
+  <p>You raise your weapon to strike at the beast as its razor-fanged mouth snaps shut just inches from your head. Buffeted by the beating of its wings you find it difficult to stand.</p>
+
+  <illustration>
+   <instance src="1.gif" width="386" height="532" mime-type="image/gif" />
+  </illustration>
+
+  <p>Deduct 1 point from your <typ class="attribute">COMBAT SKILL</typ> and fight the Kraan.</p>
+
+  <combat>
+   <enemy>Kraan:</enemy>
+   <enemy-attribute>16</enemy-attribute>
+   <enemy-attribute>24</enemy-attribute>
+  </combat>
+
+  <p>If you kill the creature, you quickly descend the far side of the hill to avoid the Giaks.</p>
+  <p>Pick a number from the Random Number Table.</p>
+
+  <choice idref="section53">If you pick 0, <link-text>turn to 53</link-text>.</choice>
+  <choice idref="section274">If you pick 1<ch.endash/>2, <link-text>turn to 274</link-text>.</choice>
+  <choice idref="section316">If you pick 3<ch.endash/>9, <link-text>turn to 316</link-text>.</choice>
+ </data>
+</section>
+
+<section id="section53">
+ <meta><title>53</title></meta>
+ <data />
+</section>
+
+<section id="section85">
+ <meta><title>85</title></meta>
+ <data />
+</section>
+
+<section id="section141">
+ <meta><title>141</title></meta>
+ <data />
+</section>
+
+<section id="section274">
+ <meta><title>274</title></meta>
+ <data />
+</section>
+
+<section id="section275">
+ <meta><title>275</title></meta>
+ <data />
+</section>
+
+<section id="section316">
+ <meta><title>316</title></meta>
+ <data />
+</section>
+
+</gamebook>
+
+-->

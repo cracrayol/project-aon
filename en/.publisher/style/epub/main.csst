@@ -1,0 +1,68 @@
+@font-face {
+ font-family: "Souvenir Light";
+ font-weight: normal;
+ font-style: normal;
+ src: url("SouvenirStd-Light.otf") format("opentype");
+}
+
+@font-face {
+ font-family: "Souvenir Light";
+ font-weight: normal;
+ font-style: italic;
+ src: url("SouvenirStd-LightItalic.otf") format("opentype");
+}
+
+@font-face {
+ font-family: "Souvenir Light";
+ font-weight: bold;
+ font-style: normal;
+ src: url("SouvenirStd-Demi.otf") format("opentype");
+}
+
+@font-face {
+ font-family: "Souvenir Light";
+ font-weight: bold;
+ font-style: italic;
+ src: url("SouvenirStd-DemiItalic.otf") format("opentype");
+}
+
+#page-header { 
+ display: oeb-page-head
+}
+
+html, body {
+ font-family: "Souvenir Light", serif;
+}
+
+ul.unbulleted { 
+ list-style-type: none
+}
+
+.illustration, div.signpost, .maintext table, #footnotes table {
+ margin-bottom: 2ex
+}
+
+.dedication {
+ font-weight: bold;
+}
+
+dt, cite, .dedication, .thought, .onomatopoeia, .spell {
+ font-style: italic;
+}
+
+.dedication, .illustration, div.signpost {
+ text-align: center
+}
+
+#footnotes, span.signpost, .smallcaps {
+ font-size: 0.8em
+}
+
+.dedication {
+ margin-top: 15ex;
+ margin-bottom: 15ex;
+}
+
+.choice, .combat {
+ margin-left: 1em;
+}

@@ -1,0 +1,140 @@
+
+The build of PDF files has been tested in a Linux environment with the
+following tools:
+
+    - Tex
+        More specifically: texlive        2012.2012061
+
+        Including the following packages (in Debian GNU/Linux or Ubuntu):
+
+        texlive-extra-utils, texlive-font-utils, texlive-fonts-extra,
+        texlive-fonts-recommended, texlive-lang-spanish,
+        texlive-pictures, texlive-pstricks, texlive-latex-base, 
+        texlive-latex-extra, texlive-latex-recommended
+
+    - XeTex packages. 
+        Specifically: texlive-xetex  2012.2012061
+
+    - lcdf-typetools  (version 2.92-2)
+
+    [ Note: some other required software might be needed, the above
+      list is not complete ]
+
+XeTeX is used instead of pdflatex (or even latex)  since it is easier to
+generate PDF files with the Souvenir font (see below)
+
+Testing your setup
+-----------------
+
+The directory 'setup_test' includes a tex file and Makefile to ensure that your
+system is properly setup to build the PDF files and embed the fonts properly.
+
+If you want to test your setup, just get into the directory and run 'make' or
+'make test'
+
+
+Setting up Souvenir fonts
+------------------------
+
+In order to build the PDF with the Souvenir font you need to install the
+corresponding otf (OpenTypeFont) in your system. The easiest way is to simply
+copy them to your user.
+
+Just create the ~/.fonts/ directory and copy all of the OTF files there.
+
+If you do not have these fonts please contact the Project Aon developers. The
+font is not included in the SVN repository as its redistributing is limited.
+Project Aon has purchased a license for this font that is only provided to
+developers that do the PDF builds.
+
+Your directory should contain at least these fonts:
+
+jfs@silicio:xsl$ ls -ltr ~/.fonts
+total 144
+-rwxr-xr-x 1 jfs jfs 33492 sep 24 00:39 SouvenirStd-Demi.otf
+-rwxr-xr-x 1 jfs jfs 35088 sep 24 00:39 SouvenirStd-DemiItalic.otf
+-rwxr-xr-x 1 jfs jfs 35892 sep 24 00:39 SouvenirStd-LightItalic.otf
+-rwxr-xr-x 1 jfs jfs 33752 sep 24 00:39 SouvenirStd-Light.otf
+
+For reference, the following listing shows the output of running the 'otinfo'
+tool in the fonts above:
+
+ for i in ~/.fonts/*otf; do echo `basename $i`; otfinfo -i $i; echo; echo ; done 
+
+
+---------------------------------------------------------------------------------------
+
+
+SouvenirStd-DemiItalic.otf
+Family:              ITC Souvenir Std Light
+Subfamily:           Bold Italic
+Full name:           ITC Souvenir Std Demi Italic
+PostScript name:     SouvenirStd-DemiItalic
+Preferred family:    ITC Souvenir Std
+Preferred subfamily: Demi Italic
+Mac font menu name:  ITC Souvenir Std DemiItalic
+Version:             Version 2.051;PS 002.000;hotconv 1.0.57;makeotf.lib2.0.21895
+Unique ID:           2.051;ADBE;SouvenirStd-DemiItalic
+Designer:            Ed Benguiat
+Manufacturer:        Adobe Systems Incorporated
+Vendor URL:          http://www.adobe.com/type
+Trademark:           ITC Souvenir is a trademark of International Typeface Corporation registered in the U.S. Patent and Trademark Office and may be registered in certain other jurisdictions.
+Copyright:           © 1985, 1987, 1994, 2001, 2002 Adobe Systems Incorporated. All rights reserved.
+License URL:         http://www.adobe.com/type/legal.html
+Vendor ID:           ADBE
+
+
+SouvenirStd-Demi.otf
+Family:              ITC Souvenir Std Light
+Subfamily:           Bold
+Full name:           ITC Souvenir Std Demi
+PostScript name:     SouvenirStd-Demi
+Preferred family:    ITC Souvenir Std
+Preferred subfamily: Demi
+Version:             Version 2.051;PS 002.000;hotconv 1.0.57;makeotf.lib2.0.21895
+Unique ID:           2.051;ADBE;SouvenirStd-Demi
+Designer:            Ed Benguiat
+Manufacturer:        Adobe Systems Incorporated
+Vendor URL:          http://www.adobe.com/type
+Trademark:           ITC Souvenir is a trademark of International Typeface Corporation registered in the U.S. Patent and Trademark Office and may be registered in certain other jurisdictions.
+Copyright:           © 1985, 1987, 1994, 2001, 2002 Adobe Systems Incorporated. All rights reserved.
+License URL:         http://www.adobe.com/type/legal.html
+Vendor ID:           ADBE
+
+
+SouvenirStd-LightItalic.otf
+Family:              ITC Souvenir Std Light
+Subfamily:           Italic
+Full name:           ITC Souvenir Std Light Italic
+PostScript name:     SouvenirStd-LightItalic
+Preferred family:    ITC Souvenir Std
+Preferred subfamily: Light Italic
+Version:             Version 2.051;PS 002.000;hotconv 1.0.57;makeotf.lib2.0.21895
+Unique ID:           2.051;ADBE;SouvenirStd-LightItalic
+Designer:            Ed Benguiat
+Manufacturer:        Adobe Systems Incorporated
+Vendor URL:          http://www.adobe.com/type
+Trademark:           ITC Souvenir is a trademark of International Typeface Corporation registered in the U.S. Patent and Trademark Office and may be registered in certain other jurisdictions.
+Copyright:           © 1985, 1987, 1994, 2001, 2002 Adobe Systems Incorporated. All rights reserved.
+License URL:         http://www.adobe.com/type/legal.html
+Vendor ID:           ADBE
+
+
+SouvenirStd-Light.otf
+Family:              ITC Souvenir Std Light
+Subfamily:           Regular
+Full name:           ITC Souvenir Std Light
+PostScript name:     SouvenirStd-Light
+Preferred family:    ITC Souvenir Std
+Preferred subfamily: Light
+Version:             Version 2.051;PS 002.000;hotconv 1.0.57;makeotf.lib2.0.21895
+Unique ID:           2.051;ADBE;SouvenirStd-Light
+Designer:            Ed Benguiat
+Manufacturer:        Adobe Systems Incorporated
+Vendor URL:          http://www.adobe.com/type
+Trademark:           ITC Souvenir is a trademark of International Typeface Corporation registered in the U.S. Patent and Trademark Office and may be registered in certain other jurisdictions.
+Copyright:           © 1985, 1987, 1994, 2001, 2002 Adobe Systems Incorporated. All rights reserved.
+License URL:         http://www.adobe.com/type/legal.html
+Vendor ID:           ADBE
+
+

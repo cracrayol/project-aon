@@ -1,0 +1,14 @@
+How to vectorize illustrations with Inkscape
+
+- Open bitmap image with Inkscape; select embed
+- Select all (Ctrl+A)
+- Path->Trace Bitmap (Shift+Alt+B)
+- Select Brightness cutoff; deselect Smooth; press OK (ignore the preview; it doesn't work)
+- Object->Lower to Bottom (End) to move the vectorized image behind the bitmap image
+- Click the bitmap image to select it
+- Press Delete to delete the bitmap image leaving only the vectorized image
+- Right-click on vectorized image; select Enter group
+- Click on background; delete the (white) background; now the background of the SVG is transparent
+- Select all (Ctrl+A)
+- Path->Simplify (Ctrl+L) (with Simplification threshold 0.0005; see Preferences/Misc)
+- Save as PDF (without Export area is drawing/page) and Compressed Inkscape SVG

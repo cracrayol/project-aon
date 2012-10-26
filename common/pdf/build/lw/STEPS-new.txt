@@ -1,0 +1,69 @@
+
+Steps to create a new PDF book
+
+1- Create the directory for the book: mkdir 0XXXX
+2- Copy the general Makefile: Makefile.basic into this directory
+     cp Makefile.basic 0XXXX/Makefile
+
+3- Edit the book series
+4- Edit the language (if other than english)
+
+
+5- Enter that directory
+6- Run 'make install'
+7- Your PDF files will be in the 'FINAL' subdirectory that has been created
+   just for you
+8- Run 'make distclean' to clean all the files used for the build
+
+Due to a bug in the XSL location you also have to do this:
+
+- Go to the 'en/xml/' (or '/es/xml') directory (from the SVN root).
+  Symlink/Copy the latex.xsl file with the one at 'common/xsl' like this: 
+  (  cd en/xml && ln -s ../../common/xsl/latex.xsl . )
+
+
+Enjoy!
+
+Mon, 22 Sep 2008 01:55:36 +0200
+Javier Fernandez-Sanguino <javier.fernandez-sanguino@projectaon.org>
+
+-----------------------------------------------------------------
+
+The Makefile script should take care of the following automatically:
+
+Generate the TeX file for the book using gbtolatex.pl
+   Example: 
+     ../../../scripts/gbtolatex.pl 0XXXX  - English files
+     ../../../scripts/gbtolatex.pl 0XXXX es - Spanish files
+
+Link to the *tex files at ../../shared/*tex:
+    for i in ../../shared/*sty ; do ln $i . ; done
+
+    English:
+
+    for i in ../../shared/*tex ; do ln $i . ; done
+
+    Spanish:
+
+    for i in ../../shared/es/*tex ; do ln $i . ; done
+
+    [ This makes all shared TeX files available:
+      ac1.tex  ac2.tex  crtneg.tex  crtpos.tex  random.tex  souvenir.sty
+      souverbt.sty ] 
+
+Link all common images:
+ for i in ../../../../../en/gif/lw/0XXX/ill/*{pdf,gif}; do ln $i . ; done
+
+Note: for translations you first have to link to the images in the 
+translated directory and *then* link to the files to the original (English)
+book. So it's:
+ for i in ../../../../../es/gif/ls/0XXX/ill/*/*{pdf,gif}; do ln $i . ; done
+ for i in ../../../../../en/gif/lw/0XXX/ill/*{pdf,gif}; do ln $i . ; done
+ [ The second one will probably output errors of common images that will
+   not be overwritten, discard those ] 
+
+Convert the images into PDF so that they can be included in the TeX file:
+
+   sh ../../convert-images.sh
+
+

@@ -1,0 +1,235 @@
+\begin{picture}(380,500)
+ \thicklines
+ %\put(0,0){\framebox(380,500){} }
+
+ \put(20,0){%
+  \makebox(355,15){%
+   \mbox{\footnotesize E = Enemy {\scriptsize EP} loss}%
+   \hspace{\fill}%
+   \mbox{\footnotesize LW = Lone Wolf {\scriptsize EP} loss}%
+   \hspace{\fill}%
+   \mbox{\footnotesize K = Automatic Kill}%
+  }%
+ }
+
+ %% There's 7pt extra added to the total box 
+ %% width and height by the thick lines and colorbox?
+
+ %% random number boxes %%
+ \multiput(20,55)(0,80){5}{\frame{\colorbox{lightgray}{\makebox(13,33){}}}}
+ \multiput(20,95)(0,80){5}{\frame{\colorbox{white}{\makebox(13,33){}}}}
+
+ \multiput(355,55)(0,80){5}{\frame{\colorbox{lightgray}{\makebox(13,33){}}}}
+ \multiput(355,95)(0,80){5}{\frame{\colorbox{white}{\makebox(13,33){}}}}
+
+ %% results boxes %%
+ \multiput(40,55)(0,80){5}{%
+  \multiput(0,0)(90,0){4}{%
+   \multiput(0,0)(0,20){2}{\frame{\colorbox{white}{\makebox(38,13){}}}}%
+  }%
+  \multiput(45,0)(90,0){3}{%
+   \multiput(0,0)(0,20){2}{\frame{\colorbox{lightgray}{\makebox(38,13){}}}}%
+  }%
+ }
+ \multiput(40,95)(0,80){5}{%
+  \multiput(0,0)(90,0){4}{%
+   \multiput(0,0)(0,20){2}{\frame{\colorbox{lightgray}{\makebox(38,13){}}}}%
+  }%
+  \multiput(45,0)(90,0){3}{%
+   \multiput(0,0)(0,20){2}{\frame{\colorbox{white}{\makebox(38,13){}}}}%
+  }%
+ }
+
+ %% combat ratio boxes %%
+ \multiput(40,455)(90,0){4}{\frame{\colorbox{white}{\makebox(38,23){}}}}%
+ \multiput(85,455)(90,0){3}{\frame{\colorbox{lightgray}{\makebox(38,23){}}}}%
+ \multiput(40,25)(90,0){4}{\frame{\colorbox{lightgray}{\makebox(38,23){}}}}%
+ \multiput(85,25)(90,0){3}{\frame{\colorbox{white}{\makebox(38,23){}}}}%
+
+ %% Random Numbers %%
+ \multiput(30,75)(335,0){2}{\makebox(0,0){\bfseries 0}}
+ \multiput(30,115)(335,0){2}{\makebox(0,0){\bfseries 9}}
+ \multiput(30,155)(335,0){2}{\makebox(0,0){\bfseries 8}}
+ \multiput(30,195)(335,0){2}{\makebox(0,0){\bfseries 7}}
+ \multiput(30,235)(335,0){2}{\makebox(0,0){\bfseries 6}}
+ \multiput(30,275)(335,0){2}{\makebox(0,0){\bfseries 5}}
+ \multiput(30,315)(335,0){2}{\makebox(0,0){\bfseries 4}}
+ \multiput(30,355)(335,0){2}{\makebox(0,0){\bfseries 3}}
+ \multiput(30,395)(335,0){2}{\makebox(0,0){\bfseries 2}}
+ \multiput(30,435)(335,0){2}{\makebox(0,0){\bfseries 1}}
+
+ %% E & LW %%
+ \multiput(45,60)(0,40){10}{%
+  \multiput(0,0)(45,0){7}{\footnotesize LW}%
+ }
+ \multiput(45,80)(0,40){10}{%
+  \multiput(0,0)(45,0){7}{\footnotesize E}%
+ }
+
+ %% combat ratios %%
+ \multiput(62,40)(0,430){2}{\makebox(0,0){\footnotesize \bfseries 0}}
+ \multiput(107,40)(0,430){2}{\makebox(0,0){\footnotesize \bfseries 1/2}}
+ \multiput(152,40)(0,430){2}{\makebox(0,0){\footnotesize \bfseries 3/4}}
+ \multiput(197,40)(0,430){2}{\makebox(0,0){\footnotesize \bfseries 5/6}}
+ \multiput(242,40)(0,430){2}{\makebox(0,0){\footnotesize \bfseries 7/8}}
+ \multiput(287,40)(0,430){2}{\makebox(0,0){\footnotesize \bfseries 9/10}}
+ \multiput(332,45)(0,430){2}{\makebox(0,0){\footnotesize {\bfseries 11} or}}
+ \multiput(332,35)(0,430){2}{\makebox(0,0){\footnotesize greater}}
+
+ %% losses %%
+ %% rand = 0 %%
+ \put(80,60){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(80,80){\makebox(0,0)[br]{\footnotesize 12}}
+ \put(125,60){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(125,80){\makebox(0,0)[br]{\footnotesize 14}}
+ \put(170,60){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(170,80){\makebox(0,0)[br]{\footnotesize 16}}
+ \put(215,60){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(215,80){\makebox(0,0)[br]{\footnotesize 18}}
+ \put(260,60){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(260,80){\makebox(0,0)[br]{\footnotesize K}}
+ \put(305,60){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(305,80){\makebox(0,0)[br]{\footnotesize K}}
+ \put(350,60){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(350,80){\makebox(0,0)[br]{\footnotesize K}}
+ %% rand = 9  %%
+ \put(80,100){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(80,120){\makebox(0,0)[br]{\footnotesize 11}}
+ \put(125,100){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(125,120){\makebox(0,0)[br]{\footnotesize 12}}
+ \put(170,100){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(170,120){\makebox(0,0)[br]{\footnotesize 14}}
+ \put(215,100){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(215,120){\makebox(0,0)[br]{\footnotesize 16}}
+ \put(260,100){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(260,120){\makebox(0,0)[br]{\footnotesize 18}}
+ \put(305,100){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(305,120){\makebox(0,0)[br]{\footnotesize K}}
+ \put(350,100){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(350,120){\makebox(0,0)[br]{\footnotesize K}}
+ %% rand = 8 %%
+ \put(80,140){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(80,160){\makebox(0,0)[br]{\footnotesize 10}}
+ \put(125,140){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(125,160){\makebox(0,0)[br]{\footnotesize 11}}
+ \put(170,140){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(170,160){\makebox(0,0)[br]{\footnotesize 12}}
+ \put(215,140){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(215,160){\makebox(0,0)[br]{\footnotesize 14}}
+ \put(260,140){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(260,160){\makebox(0,0)[br]{\footnotesize 16}}
+ \put(305,140){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(305,160){\makebox(0,0)[br]{\footnotesize 18}}
+ \put(350,140){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(350,160){\makebox(0,0)[br]{\footnotesize K}}
+ %% rand = 7  %%
+ \put(80,180){\makebox(0,0)[br]{\footnotesize 1}}
+ \put(80,200){\makebox(0,0)[br]{\footnotesize 9}}
+ \put(125,180){\makebox(0,0)[br]{\footnotesize 1}}
+ \put(125,200){\makebox(0,0)[br]{\footnotesize 10}}
+ \put(170,180){\makebox(0,0)[br]{\footnotesize 1}}
+ \put(170,200){\makebox(0,0)[br]{\footnotesize 11}}
+ \put(215,180){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(215,200){\makebox(0,0)[br]{\footnotesize 12}}
+ \put(260,180){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(260,200){\makebox(0,0)[br]{\footnotesize 14}}
+ \put(305,180){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(305,200){\makebox(0,0)[br]{\footnotesize 16}}
+ \put(350,180){\makebox(0,0)[br]{\footnotesize 0}}
+ \put(350,200){\makebox(0,0)[br]{\footnotesize 18}}
+ %% rand = 6 %%
+ \put(80,220){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(80,240){\makebox(0,0)[br]{\footnotesize 8}}
+ \put(125,220){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(125,240){\makebox(0,0)[br]{\footnotesize 9}}
+ \put(170,220){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(170,240){\makebox(0,0)[br]{\footnotesize 10}}
+ \put(215,220){\makebox(0,0)[br]{\footnotesize 1}}
+ \put(215,240){\makebox(0,0)[br]{\footnotesize 11}}
+ \put(260,220){\makebox(0,0)[br]{\footnotesize 1}}
+ \put(260,240){\makebox(0,0)[br]{\footnotesize 12}}
+ \put(305,220){\makebox(0,0)[br]{\footnotesize 1}}
+ \put(305,240){\makebox(0,0)[br]{\footnotesize 14}}
+ \put(350,220){\makebox(0,0)[br]{\footnotesize 1}}
+ \put(350,240){\makebox(0,0)[br]{\footnotesize 16}}
+ %% rand = 5 %%
+ \put(80,260){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(80,280){\makebox(0,0)[br]{\footnotesize 7}}
+ \put(125,260){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(125,280){\makebox(0,0)[br]{\footnotesize 8}}
+ \put(170,260){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(170,280){\makebox(0,0)[br]{\footnotesize 9}}
+ \put(215,260){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(215,280){\makebox(0,0)[br]{\footnotesize 10}}
+ \put(260,260){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(260,280){\makebox(0,0)[br]{\footnotesize 11}}
+ \put(305,260){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(305,280){\makebox(0,0)[br]{\footnotesize 12}}
+ \put(350,260){\makebox(0,0)[br]{\footnotesize 1}}
+ \put(350,280){\makebox(0,0)[br]{\footnotesize 14}}
+ %% rand = 4 %%
+ \put(80,300){\makebox(0,0)[br]{\footnotesize 3}}
+ \put(80,320){\makebox(0,0)[br]{\footnotesize 6}}
+ \put(125,300){\makebox(0,0)[br]{\footnotesize 3}}
+ \put(125,320){\makebox(0,0)[br]{\footnotesize 7}}
+ \put(170,300){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(170,320){\makebox(0,0)[br]{\footnotesize 8}}
+ \put(215,300){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(215,320){\makebox(0,0)[br]{\footnotesize 9}}
+ \put(260,300){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(260,320){\makebox(0,0)[br]{\footnotesize 10}}
+ \put(305,300){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(305,320){\makebox(0,0)[br]{\footnotesize 11}}
+ \put(350,300){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(350,320){\makebox(0,0)[br]{\footnotesize 12}}
+ %% rand = 3 %%
+ \put(80,340){\makebox(0,0)[br]{\footnotesize 4}}
+ \put(80,360){\makebox(0,0)[br]{\footnotesize 5}}
+ \put(125,340){\makebox(0,0)[br]{\footnotesize 3}}
+ \put(125,360){\makebox(0,0)[br]{\footnotesize 6}}
+ \put(170,340){\makebox(0,0)[br]{\footnotesize 3}}
+ \put(170,360){\makebox(0,0)[br]{\footnotesize 7}}
+ \put(215,340){\makebox(0,0)[br]{\footnotesize 3}}
+ \put(215,360){\makebox(0,0)[br]{\footnotesize 8}}
+ \put(260,340){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(260,360){\makebox(0,0)[br]{\footnotesize 9}}
+ \put(305,340){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(305,360){\makebox(0,0)[br]{\footnotesize 10}}
+ \put(350,340){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(350,360){\makebox(0,0)[br]{\footnotesize 11}}
+ %% rand = 2 %%
+ \put(80,380){\makebox(0,0)[br]{\footnotesize 4}}
+ \put(80,400){\makebox(0,0)[br]{\footnotesize 4}}
+ \put(125,380){\makebox(0,0)[br]{\footnotesize 4}}
+ \put(125,400){\makebox(0,0)[br]{\footnotesize 5}}
+ \put(170,380){\makebox(0,0)[br]{\footnotesize 3}}
+ \put(170,400){\makebox(0,0)[br]{\footnotesize 6}}
+ \put(215,380){\makebox(0,0)[br]{\footnotesize 3}}
+ \put(215,400){\makebox(0,0)[br]{\footnotesize 7}}
+ \put(260,380){\makebox(0,0)[br]{\footnotesize 3}}
+ \put(260,400){\makebox(0,0)[br]{\footnotesize 8}}
+ \put(305,380){\makebox(0,0)[br]{\footnotesize 3}}
+ \put(305,400){\makebox(0,0)[br]{\footnotesize 9}}
+ \put(350,380){\makebox(0,0)[br]{\footnotesize 2}}
+ \put(350,400){\makebox(0,0)[br]{\footnotesize 10}}
+ %% rand = 1 %%
+ \put(80,420){\makebox(0,0)[br]{\footnotesize 5}}
+ \put(80,440){\makebox(0,0)[br]{\footnotesize 3}}
+ \put(125,420){\makebox(0,0)[br]{\footnotesize 5}}
+ \put(125,440){\makebox(0,0)[br]{\footnotesize 4}}
+ \put(170,420){\makebox(0,0)[br]{\footnotesize 4}}
+ \put(170,440){\makebox(0,0)[br]{\footnotesize 5}}
+ \put(215,420){\makebox(0,0)[br]{\footnotesize 4}}
+ \put(215,440){\makebox(0,0)[br]{\footnotesize 6}}
+ \put(260,420){\makebox(0,0)[br]{\footnotesize 4}}
+ \put(260,440){\makebox(0,0)[br]{\footnotesize 7}}
+ \put(305,420){\makebox(0,0)[br]{\footnotesize 3}}
+ \put(305,440){\makebox(0,0)[br]{\footnotesize 8}}
+ \put(350,420){\makebox(0,0)[br]{\footnotesize 3}}
+ \put(350,440){\makebox(0,0)[br]{\footnotesize 9}}
+
+ %% labels %%
+ \put(10,255){\makebox(0,0){\rotatebox{270}{\bfseries \large Random Number}}}
+ \put(197,490){\makebox(0,0)[b]{\bfseries \large Positive Combat Ratio}}
+
+\end{picture}

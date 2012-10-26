@@ -1,0 +1,443 @@
+--- 02fotw-untweaked.tex	2012-01-06 22:12:08.000000000 +0100
++++ 02fotw.tex	2012-01-06 22:12:08.000000000 +0100
+@@ -175,7 +175,9 @@
+ % \frontmatter
+ 
+ \addchap{About the Author and Illustrator}
++\begin{sloppypar}
+       {\bfseries Joe Dever}, the creator of the bestselling Lone Wolf adventure books and novels, has achieved world-wide recognition in three creative fields---as an award-winning author of international renown, as an acclaimed musician and composer, and as a games designer specialising in role-playing games.
++\end{sloppypar}
+ 
+ 
+    On graduating from college in 1974, Joe Dever became a professional musician, and for several years, he worked in the music industry in Europe and the United States.
+@@ -206,7 +208,10 @@
+   Gary was working at Games Workshop when Joe Dever asked him to illustrate some of his manuscript of {\itshape Flight from the Dark}. The two teamed up after that and, they continued to work together until the eighth book in the series, {\itshape The Jungle of Horrors}.
+ 
+ 
++\enlargethispage{\baselineskip}
++\begin{sloppypar}
+   Gary has also drawn the illustrations in {\itshape Redwall} and related books, {\itshape The Prince of Shadows} gamebook series, and several books which he also authored. Gary continues to enjoy war gaming and works as an illustrator and model maker.
++\end{sloppypar}
+ 
+ 
+  
+@@ -280,7 +285,9 @@
+ 
+ You keep a record of your adventure on the \hyperlink{action}{\emph{Action Chart}}.
+ 
++\begin{sloppypar}
+ During your training as a Kai Lord you have developed fighting prowess---{\sc Combat Skill} and physical stamina---{\sc Endurance}. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it onto the \hyperlink{random}{\emph{Random Number Table}}. If you pick 0 it counts as zero.
++\end{sloppypar}
+ 
+ The first number that you pick from the \hyperlink{random}{\emph{Random Number Table}} in this way represents your {\sc Combat Skill}. Add 10 to the number you picked and write the total in the {\sc Combat Skill} section of your \hyperlink{action}{\emph{Action Chart}} (i.e. if your pencil fell on 4 in the \hyperlink{random}{\emph{Random Number Table}} you would write in a {\sc Combat Skill} of 14). When you fight, your {\sc Combat Skill} will be pitted against that of your enemy. A high score in this section is therefore very desirable.
+ 
+@@ -395,7 +402,7 @@
+ \begin{aonitemize}
+ \item Sword (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{-.7\baselineskip}
+ \begin{center}
+ \includegraphics[width=54mm,keepaspectratio]{sword.pdf} %
+ \end{center}
+@@ -407,7 +414,6 @@
+ \begin{center}
+ \includegraphics[width=40mm,keepaspectratio]{ssword.pdf} %
+ \end{center}
+-\vspace{.2\baselineskip}
+ 
+ \item Two Meals (Meals)
+ 
+@@ -416,22 +422,24 @@
+ \includegraphics[width=40mm,keepaspectratio]{food.pdf} %
+ \end{center}
+ \vspace{.2\baselineskip}
++\vfill
+ 
+-\item Chainmail Waistcoat (Special Items). This adds 4 {\sc Endurance} points to your total.
++\item \begin{sloppypar}Chainmail Waistcoat (Special Items). This adds 4 {\sc Endurance} points to your total.\end{sloppypar}
+ 
+ \vspace{.2\baselineskip}
+ \begin{center}
+ \includegraphics[width=24mm,keepaspectratio]{mail.pdf} %
+ \end{center}
+ \vspace{.2\baselineskip}
++\vfill
+ 
+ \item Mace (Weapons)
+ 
+-\vspace{.2\baselineskip}
+ \begin{center}
+ \includegraphics[width=31mm,keepaspectratio]{mace.pdf} %
+ \end{center}
+ \vspace{.2\baselineskip}
++\vfill
+ 
+ \item Healing Potion (Backpack Item). This can restore 4 {\sc Endurance} points to your total, when swallowed after combat. There is only enough for one dose.
+ 
+@@ -440,22 +448,24 @@
+ \includegraphics[width=19mm,keepaspectratio]{potion.pdf} %
+ \end{center}
+ \vspace{.2\baselineskip}
++\vfill
+ 
+ \item Quarterstaff (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{.3\baselineskip}
+ \begin{center}
+ \includegraphics[width=87mm,keepaspectratio]{qstaff.pdf} %
+ \end{center}
+-\vspace{.2\baselineskip}
++\vspace{.5\baselineskip}
++\vfill
+ 
+ \item Spear (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{.1\baselineskip}
+ \begin{center}
+ \includegraphics[width=78mm,keepaspectratio]{spear.pdf} %
+ \end{center}
+-\vspace{.2\baselineskip}
++\newpage
+ 
+ \item Shield (Special Items) This adds 2 points to your {\sc Combat Skill} when used in combat.
+ 
+@@ -467,11 +477,10 @@
+ 
+ \item Broadsword (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{-.5\baselineskip}
+ \begin{center}
+ \includegraphics[width=66mm,keepaspectratio]{bsword.pdf} %
+ \end{center}
+-\vspace{.2\baselineskip}
+ 
+ \end{aonitemize}
+ 
+@@ -582,7 +591,7 @@
+ \end{aonitemize}
+ 
+ 
+-\item On the \hyperlink{action}{\emph{Action Chart}}, mark the changes in {\sc Endurance} points to the participants in the combat.
++\item \begin{sloppypar}On the \hyperlink{action}{\emph{Action Chart}}, mark the changes in {\sc Endurance} points to the participants in the combat.\end{sloppypar}
+ 
+ \item Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.
+ 
+@@ -659,14 +668,14 @@
+ 
+ `This is the quay, my lord. There is your ship, the {\itshape Green Sceptre}.' As he speaks the driver points across the quay to a sleek trade caravel anchored near to the harbour wall.
+ 
+-`The first mate's name is Ronan. You will find him waiting for you across the square at the Good Cheer Inn.' Then the driver bids you farewell and quickly disappears into the teeming crowds.
+-
+-You reach the inn to find the front doors locked and the window shutters barred. You are trying to decide what to do next when a hand grabs your arm and you are pulled into the darkness.
+-
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small1.pdf} %
+ \end{figure}
++`The first mate's name is Ronan. You will find him waiting for you across the square at the Good Cheer Inn.' Then the driver bids you farewell and quickly disappears into the teeming crowds.
++
++You reach the inn to find the front doors locked and the window shutters barred. You are trying to decide what to do next when a hand grabs your arm and you are pulled into the darkness.
++
+ \nopagebreak\begin{aonchoice}If you wish to draw your weapon and attack your unknown assailant, \hyperlink{sect273}{\bfseries turn to 273}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to try to pull free of his grasp, \hyperlink{sect160}{\bfseries turn to 160}.\end{aonchoice}
+@@ -799,7 +808,9 @@
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small3.pdf} %
+ \end{figure}
++\begin{sloppypar}
+ After somewhat reluctantly agreeing to a wager of 10 Gold Crowns, you begin the game.
++\end{sloppypar}
+ 
+ Pick a number from the \hyperlink{random}{\emph{Random Number Table}}. If you have the Kai Discipline of Sixth Sense, you may add 2 to this number.
+ 
+@@ -1021,13 +1032,13 @@
+ 
+ Born of a Sommlending father and a Durenese mother, he has become something of a legend in this city. In the last decade, he has led an alliance of the nations to victory against the invading Ice Barbarians of Kalte. Wise in peace, fierce in war, you could not have wished for better company on your quest for the Sommerswerd.
+ 
+-Rhygar orders that a sumptuous meal be served. It is by far the best food you have tasted since the war began. During the feast, you recall the events that have brought you to Port Bax, and reflect on the daunting challenge that still lies before you. After the meal, Rhygar sends for his physician who attends to your wounds. His potions restore 6 {\sc Endurance} points. Then he advises you to sleep, for you are to leave with the Lord-lieutenant for Hammerdal in the morning.\footnote{If you do not have a Backpack, you may choose to assume here that you are outfitted with one by Rhygar.
+-}
+-
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small5.pdf} %
+ \end{figure}
++Rhygar orders that a sumptuous meal be served. It is by far the best food you have tasted since the war began. During the feast, you recall the events that have brought you to Port Bax, and reflect on the daunting challenge that still lies before you. After the meal, Rhygar sends for his physician who attends to your wounds. His potions restore 6 {\sc Endurance} points. Then he advises you to sleep, for you are to leave with the Lord-lieutenant for Hammerdal in the morning.\footnote{If you do not have a Backpack, you may choose to assume here that you are outfitted with one by Rhygar.
++}
++
+ Early next day, you are taken to an enclosed garden at the rear of the consulate where Rhygar and three of his best soldiers await you on horseback. They are to be your bodyguard and guides on the 230 mile ride to Hammerdal. The streets of Port Bax are just beginning to come to life as you ride through the town. Passing under the moss-covered city gate, you now feel confident that your mission will succeed.
+ 
+ Pick a number from the \hyperlink{random}{\emph{Random Number Table}}.
+@@ -1153,12 +1164,13 @@
+ 
+ \addsec[Section 41]{\hspace*{\fill}\hypertarget{sect41}{}41\hspace*{\fill}}
+ 
+-You are in luck, for the boat has seen your distress signal and is heading towards you. It is a small fishing boat from the port of Ragadorn. The fishermen are a rough-looking bunch, but they wrap you in a warm blanket and offer you some food. The captain suggests that you sleep, as it will be two or three hours before they arrive back in Ragadorn.
+-
++You are in luck, for the boat has seen your distress signal and is heading towards you. It is a small fishing boat from the port of Ragadorn.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small6.pdf} %
+ \end{figure}
++The fishermen are a rough-looking bunch, but they wrap you in a warm blanket and offer you some food. The captain suggests that you sleep, as it will be two or three hours before they arrive back in Ragadorn.
++
+ \nopagebreak\begin{aonchoice}If you wish to take his advice, restore 1 {\sc Endurance} point and \hyperlink{sect194}{\bfseries turn to 194}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you prefer to stay awake and keep watch for any other survivors of the storm, \hyperlink{sect251}{\bfseries turn to 251}.\end{aonchoice}
+@@ -1357,12 +1369,13 @@
+ 
+ \addsec[Section 62]{\hspace*{\fill}\hypertarget{sect62}{}62\hspace*{\fill}}
+ 
+-You enter a large room full of ledgers and files. A man wearing the uniform of a Durenese naval officer is seated opposite at a large desk. He peers at you inquisitively from behind a huge book and says, `You must have pressing business in the naval quadrant to apply for a red pass at this late hour. I shall need to see your access papers and proof of your commanding officer's authorization.'
+-
++You enter a large room full of ledgers and files. A man wearing the uniform of a Durenese naval officer is seated opposite at a large desk.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small8.pdf} %
+ \end{figure}
++He peers at you inquisitively from behind a huge book and says, `You must have pressing business in the naval quadrant to apply for a red pass at this late hour. I shall need to see your access papers and proof of your commanding officer's authorization.'
++
+ \nopagebreak\begin{aonchoice}If you do not have the documents he requires, or do not wish to show them to him, you will have to risk showing him the Seal of Hammerdal if you possess it. \hyperlink{sect263}{\bfseries Turn to 263}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you have collected the necessary documents on your quest, \hyperlink{sect126}{\bfseries turn to 126}.\end{aonchoice}
+@@ -1468,7 +1481,9 @@
+ 
+ \addsec[Section 72]{\hspace*{\fill}\hypertarget{sect72}{}72\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ The innkeeper takes your Gold Crown and places a foaming tankard of ale on the bar. The ale is strong and fortifying. Restore 1 {\sc Endurance} point to your current total.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to talk to the innkeeper, \hyperlink{sect226}{\bfseries turn to 226}.\end{aonchoice}
+ 
+@@ -1566,7 +1581,9 @@
+ Sommerswerd is revealed to you.
+ }
+ \end{figure}
++\begin{sloppypar}
+ The power coursing through your body so overwhelms your senses that you become oblivious to your surroundings. You instinctively raise the blade above your head where a shaft of sunlight suddenly catches upon its very tip and floods the chamber with a blinding white glow. At that moment the true power of the Sommerswerd is revealed to you.
++\end{sloppypar}
+ 
+ This weapon was forged long before the Sommlending, the Durenese, or the Darklords dwelt in the Lastlands. Its makers were of a race that men would now call gods. To release the power that it contains, only a Kai Lord may wield it. Should it be used in combat by anyone who is not a Kai Lord, its power will fade and be lost forever.
+ 
+@@ -1759,12 +1776,13 @@
+ 
+ \addsec[Section 95]{\hspace*{\fill}\hypertarget{sect95}{}95\hspace*{\fill}}
+ 
+-You spur your horse through the tangle of trees until you enter a small clearing. Six Szalls are jumping excitedly around the writhing body of a man on the ground. A strangely carved spear is stuck in his chest, and lying dead beside him is the body of a Knight of the White Mountain. The creatures are shrieking at each other and appear to be unconcerned with the man's obvious agony.
+-
++You spur your horse through the tangle of trees until you enter a small clearing. Six Szalls are jumping excitedly around the writhing body of a man on the ground.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small11.pdf} %
+ \end{figure}
++A strangely carved spear is stuck in his chest, and lying dead beside him is the body of a Knight of the White Mountain. The creatures are shrieking at each other and appear to be unconcerned with the man's obvious agony.
++
+ \nopagebreak\begin{aonchoice}If you have the Kai Discipline of Healing, a healing potion or some Laumspur, and you want to try to save the man's life, \hyperlink{sect239}{\bfseries turn to 239}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to attack the Szalls, \hyperlink{sect28}{\bfseries turn to 28}.\end{aonchoice}
+@@ -2039,9 +2057,8 @@
+ \centering
+ \hypertarget{ill7}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill7.pdf}}%
+-\\{\itshape The strange creature is wearing a splendid\\
+-jacket of patched leather and carrying\\
+-what appears to be a spear.
++\\{\itshape The strange creature is wearing a splendid jacket of patched\\
++leather and carrying what appears to be a spear.
+ }
+ \end{figure}
+ You bid Rhygar farewell and enter Tarnalin. Over a hundred feet in height and width, the tunnel runs to the capital on the far side of the Hammerdal Range, and is lit by torches for its entire length. The highway through the mountain is usually alive with the traffic of merchants to and from Port Bax, yet now the entrance and interior are deserted except for an overturned fruit wagon. As you walk deeper into Tarnalin, a doubt nags at you. Have the Helghast arrived here first?
+@@ -2134,7 +2151,9 @@
+ 
+ `These documents are forgeries. No doubt you are a spy, or worse perhaps? No matter, you'll soon find out how we deal with criminals in Port Bax. Take him away.'
+ 
++\begin{sloppypar}
+ Before you can explain, you are seized by both arms and marched away to the city gaol. All your equipment is confiscated, including all Special Items and Weapons, and you are thrown into a cell full of evil-looking villains. You notice that several of these ruffians bear the strange tattoo of a serpent on their left wrists: the sign of Vonotar the Traitor. By the time the guards have examined your possessions and realized your true identity, you have been strangled to death by the wizard's evil agents.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}Your life and your quest come to a tragic end here in Port Bax.\end{aonchoice}
+ 
+@@ -2577,7 +2596,7 @@
+ 
+ He bellows his battle-cry and lunges at your head.
+ 
+-\begin{aoncombat}Knight of the White Mountain: {\sc Combat~Skill}~20 ~~{\sc Endurance}~27\end{aoncombat}
++\begin{aoncombat}Knight of the White Mountain:\\{\sc Combat~Skill}~20 ~~{\sc Endurance}~27\end{aoncombat}
+ 
+ \nopagebreak\begin{aonchoice}You may evade combat at any time by running into the trees and \hyperlink{sect244}{\bfseries turning to 244}.\end{aonchoice}
+ 
+@@ -2822,16 +2841,16 @@
+ \item Spear---5 Gold Crowns
+ \item Mace---4 Gold Crowns
+ \item Fur Blanket---3 Gold Crowns
+-\item Backpack---1 Gold Crown\footnote{According to {\itshape Lone Wolf Club Newsletter #12}: `Realistically, you can only wear one Backpack at a time, and carry a maximum of eight Backpack Items (Special Items not included).'
++\item Backpack---1 Gold Crown\footnote{According to {\itshape Lone Wolf Club Newsletter 12}: `Realistically, you can only wear one Backpack at a time, and carry a maximum of eight Backpack Items (Special Items not included).'
+ }
+ \end{aonitemize}
+ 
+-You may enter and purchase any of the above items. Remember to mark them on your \hyperlink{action}{\emph{Action Chart}}. When you have completed your purchases, you continue your way along Sage Street, towards the Ragadorn Bridge. This bridge is the only connection between the east and west sides of the port and you push your way through the crowds of people and carts. You find yourself in a rubbish-strewn thoroughfare known as East Trade Lane.
+-
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small19.pdf} %
+ \end{figure}
++You may enter and purchase any of the above items. Remember to mark them on your \hyperlink{action}{\emph{Action Chart}}. When you have completed your purchases, you continue your way along Sage Street, towards the Ragadorn Bridge. This bridge is the only connection between the east and west sides of the port and you push your way through the crowds of people and carts. You find yourself in a rubbish-strewn thoroughfare known as East Trade Lane.
++
+ \nopagebreak\begin{aonchoice}\hyperlink{sect186}{\bfseries Turn to 186}.\end{aonchoice}
+ 
+ 
+@@ -3056,12 +3075,14 @@
+ 
+ \hspace*{\fill} \mbox{\itshape \hyperlink{ill12}{Illustration~XII}}\hspace*{\fill}\\*[\parskip]
+ \begin{figure}[p]
+-\centering
+ \hypertarget{ill12}{}
+-\raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill12.pdf}}%
+-\\{\itshape The others are all seated at a large table\\
+-waiting your appearance.
+-}
++\setlength{\unitlength}{1mm}
++\makebox[\textwidth]{\raisebox{0cm}[0.5\textheight][0.5\textheight]{%
++\begin{picture}(0,0)
++\put(0,0){\makebox(0,0){\rotatebox{90}{\includegraphics[width=\textheight,keepaspectratio]{ill12.pdf}}}}
++\put(67,0){\makebox(0,0){\rotatebox{90}{\itshape The others are all seated at a large table waiting your appearance.}}}
++\end{picture}
++}}%
+ \end{figure}
+ By the time you reach the bar, the others are all seated at a large table awaiting your appearance. Drawing closer to the table, you realize you have found your would-be assassin. You will have to attack without giving any warning to your enemy, so study your fellow travellers carefully and then make your decision.
+ 
+@@ -3162,7 +3183,9 @@
+ 
+ Then the captain turns to you. `We're about eight hours from Ragadorn, my lord. My orders are to see you safely to Port Bax and pass you into the care of the Sommlending consul, Lord-lieutenant Rhygar. But time is not our ally and I fear the repairs may take a week or more to complete. When we drop anchor, you will have to find your own route to Durenor---by sea with us or alone by the coast road.'
+ 
++\begin{sloppypar}
+ As you return to your cabin, the King's words haunt your thoughts: `Forty days, Lone Wolf. We only have strength to stand against them for forty days.' You do not have long to complete your dangerous mission.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}\hyperlink{sect197}{\bfseries Turn to 197}.\end{aonchoice}
+ 
+@@ -3302,7 +3325,9 @@
+ 
+ `Ship Ahoy! Ship off the port bow!'
+ 
++\begin{sloppypar}
+ Grabbing his sword and telescope, the captain disappears through the door and up the ladder to the deck above.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to follow him, \hyperlink{sect175}{\bfseries turn to 175}.\end{aonchoice}
+ 
+@@ -3376,7 +3401,9 @@
+ 
+ They are larnuma trees and their fruit is very nutritious as well as being sweet and juicy. After your Meal you feel much stronger. You pick enough fruit for 2 Meals and store it in your Backpack.
+ 
++\begin{sloppypar}
+ Looking behind the trees, you see a wide coast road that stretches into the distance to the east and west. There are no signposts.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to head east, \hyperlink{sect27}{\bfseries turn to 27}.\end{aonchoice}
+ 
+@@ -3512,8 +3539,10 @@
+ 
+ The entrance hall opens out into a huge room where many gambling games are in progress. One that catches your eye is called `Cartwheel'. At one end of a long table, an attractive young woman spins a black dish divided into ten sections marked 0--9. As the dish spins, she drops a small silver ball into it which eventually comes to rest in one of the numbered sections. Several merchants are seated around the table and they are betting heavily on the fall of the silver ball.
+ 
++\begin{sloppypar}
+ To play `Cartwheel', you must first decide the number you would like to bet on and just how many Gold Crowns you would like to stake. Make a note of these numbers and then pick a number from the \hyperlink{random}{\emph{Random Number Table}}. If you pick exactly the same number, you win 8 Gold Crowns for every 1 Gold Crown that you gamble. If the number you pick is immediately before or after the correct choice,\footnote{In the game of `Cartwheel', the number 0 is adjacent to the number 9. For example, if you bet on 9, and the silver ball falls on 0, you win 5 Gold Crowns for every 1 that you staked.
+ } you win 5 Gold Crowns for every 1 Gold Crown that you stake. There is a limit to how much you can win on this table: 40 Gold Crowns.
++\end{sloppypar}
+ 
+ You may play as many rounds of `Cartwheel' as you wish until either you lose all your Gold Crowns, or you decide to pick up your winnings (maximum of 40 Gold Crowns).
+ 
+@@ -3730,12 +3759,15 @@
+ 
+ \addsec[Section 257]{\hspace*{\fill}\hypertarget{sect257}{}257\hspace*{\fill}}
+ 
+-This rubbish-strewn cobbled street runs between rows of ramshackle, rot-infested houses and shops. The few inhabitants of Ragadorn that you see appear a cheerless lot, their faces haggard and drawn. They shuffle through the gloom, hunched against the pouring rain, their eyes fixed on the cobblestones at their feet. Then you reach a junction where Axe Lane bends towards the north and another street heads off towards the east.
+-
++\begin{sloppypar}
++This rubbish-strewn cobbled street runs between rows of ramshackle, rot-infested houses and shops. The few inhabitants of Ragadorn that you see appear a cheerless lot, their faces haggard and drawn.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small25.pdf} %
+ \end{figure}
++They shuffle through the gloom, hunched against the pouring rain, their eyes fixed on the cobblestones at their feet. Then you reach a junction where Axe Lane bends towards the north and another street heads off towards the east.
++\end{sloppypar}
++
+ \nopagebreak\begin{aonchoice}If you wish to continue north and enter Black Knight Street, \hyperlink{sect335}{\bfseries turn to 335}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to head east, enter Sage Street by \hyperlink{sect181}{\bfseries turning to 181}.\end{aonchoice}
+@@ -3856,7 +3888,9 @@
+ \item Quarterstaves 3 Gold Crowns each
+ \end{aonitemize}
+ 
++\begin{sloppypar}
+ You may purchase any of the above weapons if you have enough money to do so. The weaponsmith will also buy any Weapons that you may already have for 1 Gold Crown less than the price shown on his wooden board. Mark any necessary changes on your \hyperlink{action}{\emph{Action Chart}} before bidding him goodnight and returning to the street.
++\end{sloppypar}
+ 
+ At the end of Oxyoke Way, on your right you find a large stable and coach station. It is now very dark and you must find somewhere to spend the night. Climbing a ladder at the side of the building, you spend a comfortable night hidden in the hay-loft.
+ 
+@@ -3891,7 +3925,7 @@
+ 
+ \begin{aoncombat}Harbour Thugs: {\sc Combat~Skill}~16 ~~{\sc Endurance}~25\end{aoncombat}
+ 
+-\nopagebreak\begin{aonchoice}You may evade after two rounds of combat by running through a side door. \hyperlink{sect125}{\bfseries Turn to 125}.\end{aonchoice}
++\nopagebreak\begin{aonchoice}\begin{sloppypar}You may evade after two rounds of combat by running through a side door. \hyperlink{sect125}{\bfseries Turn to 125}.\end{sloppypar}\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you win this combat, \hyperlink{sect333}{\bfseries turn to 333}.\end{aonchoice}
+ 
+@@ -4282,7 +4316,9 @@
+ 
+ \addsec[Section 302]{\hspace*{\fill}\hypertarget{sect302}{}302\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ Stepping over the body, you set about a quick search of these living quarters. You find:
++\end{sloppypar}
+ 
+ \begin{aonitemize}
+ \item Mace
+@@ -4334,7 +4370,9 @@
+ 
+ The soldier stabs at your chest with his spear, but you quickly sidestep and it merely grazes your arm. The guard is determined to fight but you do not want to have to kill him in combat, so you decide to try to knock him unconscious.
+ 
++\begin{sloppypar}
+ Fight the following combat as normal, but double all {\sc Endurance} points lost by the enemy. When his score reaches zero or below, you will have succeeded in knocking him out. All {\sc Endurance} points that you lose still count as wounds and are deducted from your current {\sc Endurance} points total.
++\end{sloppypar}
+ 
+ \begin{aoncombat}Border Guard: {\sc Combat~Skill}~16 ~~{\sc Endurance}~24\end{aoncombat}
+ 
+@@ -4565,9 +4603,8 @@
+ \centering
+ \hypertarget{ill19}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill19.pdf}}%
+-\\{\itshape The black-clad shape of a Drakkarim warrior\\
+-is advancing towards you, a large\\
+-broadsword raised.
++\\{\itshape The black-clad shape of a Drakkarim warrior is\\
++advancing towards you, a large broadsword raised.
+ }
+ \end{figure}
+ The captain orders the crew to hoist all the sails to attempt to outrun the vessel, but the pirate ship is fast and is trying to cross the bows of the {\itshape Green Sceptre}. A collision seems imminent.
+@@ -4827,12 +4864,14 @@
+ 
+ \hspace*{\fill} \mbox{\itshape \hyperlink{ill20}{Illustration~XX}}\hspace*{\fill}\\*[\parskip]
+ \begin{figure}[p]
+-\centering
+ \hypertarget{ill20}{}
+-\raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill20.pdf}}%
+-\\{\itshape There is a mighty roar as the power of the sun-sword\\
+-is unleashed in a searing white beam.
+-}
++\setlength{\unitlength}{1mm}
++\makebox[\textwidth]{\raisebox{0cm}[0.5\textheight][0.5\textheight]{%
++\begin{picture}(0,0)
++\put(0,0){\makebox(0,0){\rotatebox{90}{\includegraphics[width=\textheight,keepaspectratio]{ill20.pdf}}}}
++\put(67,0){\makebox(0,0){\rotatebox{90}{\itshape There is a mighty roar as the power of the sun-sword is unleashed in a searing white beam.}}}
++\end{picture}
++}}%
+ \end{figure}
+ Holmgard has suffered much since your departure. Many of the shops and houses you remember passing on your way to the quay, are little more now than heaps of ashes. The Darklords' army with their evil engines of war surround the walls, and the flaming arcs of fireballs shooting through the air continually light the night sky as they rain down on the streets below. The people fight the fire as best they can, but they are hungry and exhausted and close to surrender. At first, as it enters the harbour, the fleet is mistaken for the enemy and cries of despair can be heard all along the quay. But as the first of the soldiers set foot in the city and unfurl the royal arms of Durenor, the news of your return spreads quickly. The cries of despair have changed to a chorus of cheers: `The Kai Lord has returned.'
+ 

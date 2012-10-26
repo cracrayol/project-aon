@@ -1,0 +1,121 @@
+@import url( more.css );
+
+html, body {
+ background-color: %%background-color%%;
+ color: %%text-color%%;
+ font-family: Souvenir, Georgia, "Times New Roman", Times, serif;
+}
+
+#title {
+ position: absolute;
+ top: 0px;
+ left: 0px;
+ width: 550px;
+ height: 100px;
+ padding: 0px;
+ border: 0px none;
+ margin: 0px;
+}
+
+#body {
+ position: absolute;
+ top: 95px;
+ left: 100px;
+ width: 450px;
+ padding: 0px;
+ border: 0px none;
+ margin: 0px;
+}
+
+#footnotes {
+ font-size: 0.8em;
+}
+
+hr { margin-left: 0px; }
+
+p, ol, ul, dl, blockquote { text-align: justify }
+
+ul.unbulleted { list-style-type: none }
+
+b { font-weight: bold }
+
+h1, h2, h3, h4, h5, h6 {
+ margin-top: 0px;
+ border: 0px none;
+ padding: 0px;
+ clear: left;
+ text-align: left;
+}
+
+:link:focus, :visited:focus {
+}
+
+:link, :visited {
+ background-color: transparent;
+ color: %%link-color%%;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+:link:hover, :visited:hover {
+ background-color: %%hover-link-background-color%%;
+ color: %%link-color%%;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+.navigation :link:hover, .navigation :visited:hover {
+ background-color: transparent;
+ color: %%link-color%%;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+:link:active, :visited:active {
+ background-color: transparent;
+ color: %%link-color%%;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+dt {
+ font-weight: bold;
+}
+
+.navigation, .signpost, .illustraion, .caption, .center {
+ text-align: center;
+}
+
+.signpost {
+ padding-top: 0.5em;
+ padding-bottom: 0.5em;
+ line-height: 1.5em;
+}
+
+.author {
+ text-align: center;
+ font-weight: bold;
+}
+
+.dedication {
+ text-align: center;
+ font-style: italic;
+ font-weight: bold;
+ margin-top: 15ex;
+ margin-bottom: 15ex;
+}
+
+.copyright {
+ text-align: center;
+ font-style: italic;
+}
+
+.choice, .combat {
+ text-align: left;
+ margin-left: 15px;
+ width: 435px;
+}
+
+.smallcaps {
+ font-size: 0.8em;
+}

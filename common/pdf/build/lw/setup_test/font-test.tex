@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{ifthen}
+\usepackage{xltxtra}
+\setmainfont[Ligatures=TeX]{ITC Souvenir Std Light}
+\makeatletter
+\newcommand{\showfont}{encoding: \f@encoding{},
+  family: \f@family{},
+  series: \f@series{},
+  shape: \f@shape{},
+  size: \f@size{}
+}
+\newcommand{\iffont}[3]{\ifthenelse{\equal{\f@family}{#1}}{#2}{#3}}
+\makeatother
+\begin{document}
+We are using this font: \showfont
+
+This is normal text.
+
+\em{This is emphasised text}
+
+\bf{This is bold text}
+
+We switch to Helvetica now:
+
+\renewcommand{\familydefault}{\sfdefault} \normalfont
+
+We are using this font: \showfont
+
+This is normal text.
+
+\em{This is emphasised text}
+
+\bf{This is bold text}
+
+
+
+\end{document}
+

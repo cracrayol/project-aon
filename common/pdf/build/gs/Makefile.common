@@ -1,0 +1,205 @@
+
+# Root directory
+AONROOTREL := ../../../../..
+AONROOTDIR = $(realpath $(AONROOTREL))
+INSTALLDIR := ../FINAL/
+# Relative location of the XML files
+RELXMLDIR := $(AONROOTDIR)/$(LANG)/xml/
+XMLFILE=$(patsubst %.tex,$(RELXMLDIR)/%.xml,$(SOURCE))
+# Relative location of the scripts
+RELSCRIPT := $(AONROOTDIR)/common/scripts
+# Convert Script
+XML2LATEX = $(RELSCRIPT)/gbtolatex.pl
+# LaTeX stylesheet
+LATEXXSL = $(AONROOTDIR)/common/xsl/latex.xsl
+#LATEXXSL = $(AONROOTDIR)/common/xsl/latex-komascript.xsl
+
+all: $(BASENAME).pdf 
+
+SOURCE=$(BASENAME).tex
+ifeq "$(LANG)" "en"
+EXTRAFILES=souvenir.sty
+else
+EXTRAFILES=ac1.tex crtneg.tex ac2.tex crtpos.tex random.tex ac3.tex \
+	souvenir.sty souverbt.sty
+endif
+
+
+# Generate the LaTeX file from the XML file
+$(SOURCE): $(XMLFILE) $(XML2LATEX) $(LATEXXSL) tweak.diff
+	AONPATH="$(AONROOTDIR)" perl $(XML2LATEX) $(BASENAME) $(LANG) $@
+	@if ! test -s $(SOURCE) ; then \
+		echo "ERROR: Empty file $(SOURCE), check for errors above."  >&2 ; \
+		rm -f $(SOURCE) ; \
+		exit 1 ; \
+	fi
+	@cp $(SOURCE) $(BASENAME)-untweaked.tex
+	@if test -f tweak.diff; then \
+		patch $(SOURCE) <tweak.diff ; \
+	fi
+
+# Extra TeX files needed for the PDFs
+ifeq "$(LANG)" "en"
+# This is for english content:
+ac1.tex:
+	ln -s ../../shared/$@
+ac2.tex:
+	ln -s ../../shared/$@
+ac3.tex:
+	ln -s ../../shared/$@
+crtneg.tex:
+	ln -s ../../shared/$@
+crtpos.tex:
+	ln -s ../../shared/$@
+else
+# This is for other translated content:
+ac1.tex:
+	ln -s ../../shared/$(LANG)/$@
+ac2.tex:
+	ln -s ../../shared/$(LANG)/$@
+ac3.tex:
+	ln -s ../../shared/$(LANG)/$@
+crtneg.tex:
+	ln -s ../../shared/$(LANG)/$@
+crtpos.tex:
+	ln -s ../../shared/$(LANG)/$@
+endif
+# Shared across all languages
+random.tex:
+	ln -s ../../shared/$@
+souvenir.sty:
+	ln -s ../../shared/$@
+souverbt.sty:
+	ln -s ../../shared/$@
+# Create empty tweak.diff if it does not exist
+tweak.diff:
+	@touch tweak.diff
+
+# Symlink the images needed for the PDF; unused images and HTML-specific images are ignored
+link-images:
+	@[ -n "$(SERIES)" ] || { echo "Error: SERIES variable not defined. Hint: Review the Makefile"; exit 1; }
+	@[ -n "$(SUBSERIES)" ] || { echo "Error: SUBSERIES variable not defined. Hint: Review the Makefile"; exit 1; }
+	@[ -n "$(BASENAME)" ] || { echo "Error: BASENAME variable not defined. Hint: Review the Makefile"; exit 1; }
+	@echo "Linking images for the book to working directory"
+ifeq "$(LANG)" "en"
+	@for images in jpeg png ; do \
+		[ ! -d "$(AONROOTREL)/en/$$images/$(SERIES)/$(BASENAME)/" ] || find $(AONROOTREL)/en/$$images/$(SERIES)/$(BASENAME)/ \( -name "*.jpg" -o -name "*.png" \) | \
+		while read file ; do \
+			[ -e "`basename $$file`" ] || \
+			case "`basename $$file`" in \
+				back*|bckgrnd*|brdr*|forward*|left*|right*|title*|toc*) ;; \
+				ac*|crt*|random*) ;; \
+				*) ln -s $$file . ;; \
+			esac ; \
+		done ; \
+	done
+	@[ ! -d "$(AONROOTREL)/en/pdf/$(SERIES)/$(SUBSERIES)" ] || find $(AONROOTREL)/en/pdf/$(SERIES)/$(SUBSERIES)/ -name "*.pdf" | \
+	while read file ; do \
+		[ -e "`basename $$file`" ] || ln -s $$file . ; \
+	done
+else
+	@[ -n "$(ORIGSERIES)" ] || { echo "Error: ORIGSERIES variable not defined. Hint: Review the Makefile"; exit 1; }
+	@[ -n "$(ORIGBASENAME)" ] || { echo "Error: ORIGBASENAME variable not defined. Hint: Review the Makefile"; exit 1; }
+	@for images in jpeg png ; do \
+		[ ! -d "$(AONROOTREL)/$(LANG)/$$images/$(SERIES)/$(BASENAME)/" ] || find $(AONROOTREL)/$(LANG)/$$images/$(SERIES)/$(BASENAME)/ \( -name "*.jpg" -o -name "*.png" \) | \
+		while read file ; do \
+			[ -e "`basename $$file`" ] || ln -s $$file . ; \
+		done ; \
+		[ ! -d "$(AONROOTREL)/en/$$images/$(ORIGSERIES)/$(ORIGBASENAME)/" ] || find $(AONROOTREL)/en/$$images/$(ORIGSERIES)/$(ORIGBASENAME)/ \( -name "*.jpg" -o -name "*.png" \) | \
+		while read file ; do \
+			rootname=`basename $$file | sed -e 's/\..*//'`; \
+			[ -e "$$rootname.jpg" ] || [ -e "$$rootname.png" ] || ln -s $$file . ; \
+		done ; \
+	done
+	@[ ! -d "$(AONROOTREL)/$(LANG)/pdf/$(SERIES)/$(SUBSERIES)" ] || find $(AONROOTREL)/$(LANG)/pdf/$(SERIES)/$(SUBSERIES)/ -name "*.pdf" | \
+	while read file ; do \
+		[ -e "`basename $$file`" ] || ln -s $$file . ; \
+	done
+	@[ ! -d "$(AONROOTREL)/en/pdf/$(ORIGSERIES)/$(SUBSERIES)" ] || find $(AONROOTREL)/en/pdf/$(ORIGSERIES)/$(SUBSERIES)/ -name "*.pdf" | \
+	while read file ; do \
+		[ -e "`basename $$file`" ] || ln -s $$file . ; \
+	done
+endif
+	touch $@
+
+# Convert them using the appropiate script
+convert-images: link-images
+	@echo "Converting images to PDF format"
+	@sh ../../convert-images.sh
+	touch $@
+	
+# Final install dir
+install: $(INSTALLDIR) all
+	@echo "Copying $(BASENAME).pdf to $(INSTALLDIR)"
+	@cp $(BASENAME).pdf $(INSTALLDIR)
+
+$(INSTALLDIR):
+	mkdir $@
+
+
+dvi: $(BASENAME).dvi 
+%.dvi: %.tex $(EXTRAFILES)
+	latex $<
+	latex -interaction batch $<
+	# Regenerate Contents
+	latex $<
+
+%.ps: %.dvi
+	dvips -Ppdf $<
+
+#%.pdf: %.ps
+#        ps2pdf $< $@
+
+pdf: $(BASENAME).pdf 
+%.pdf: %.tex $(EXTRAFILES) convert-images
+#	# Remove old PDF bookmarks file (.out file)
+	-rm -f $(BASENAME).out
+#	# Use pdflatex for generation:
+	-pdflatex -interaction batchmode $<
+#	# Remove everything except for chapter entries from the toc file
+	@[ -e "$(BASENAME).toc" ] || { echo "ERROR: Generated file does not include table of contents file, please review $(BASENAME).log" ; false ; }
+	@grep '{chapter}' $(BASENAME).toc >temp.toc && mv -f temp.toc $(BASENAME).toc
+#	# Run pdflatex a second time to get correct page numbers in the toc
+	-pdflatex -interaction batchmode $<
+#	# Remove everything except for chapter entries from the toc file
+	@grep '{chapter}' $(BASENAME).toc >temp.toc && mv -f temp.toc $(BASENAME).toc 
+#	# Tweak the PDF bookmarks file
+	@[ -e "$(BASENAME).out" ] || { echo "ERROR: Required file $(BASENAME).out does not exist, please review $(BASENAME).log" ; false ; }
+	@sed 's/\\ellipsis@one =,//' $(BASENAME).out >temp.out && \
+		echo '\let\WriteBookmarks\relax' >>temp.out && \
+		mv -f temp.out $(BASENAME).out
+#	# Run pdflatex a third time to get correct PDF bookmarks
+	-pdflatex -interaction batchmode $<
+#   # Check if the PDF file exists
+	@[ -e "$(BASENAME).pdf" ] || { echo "ERROR: Did not generate $(BASENAME).pdf , please review $(BASENAME).log" ; false ; }
+
+clean: clean-images
+	-rm -f $(BASENAME).pdf $(BASENAME).ps 
+	-rm -f *.aux *.toc *.log *.lof *.dvi *.ps *.bbl *.blg *.lot *.out
+
+distclean: clean
+	-rm -f $(BASENAME).tex $(BASENAME)-untweaked.tex 
+# Clean symlinks
+	-rm -f ac1.tex  ac2.tex ac3.tex crtneg.tex  crtpos.tex  random.tex souvenir.sty souverbt.sty    
+	@for gif in *.gif ; do [ -e $$gif ] && [ -L $$gif ] && rm -f $$gif ; done  || true
+# Remove tweak file if empty
+	@test -z tweak.diff || rm -f tweak.diff
+
+# Clean all images
+clean-images:
+	-rm -f *.png *.jpeg *.jpg *.pdf
+	-rm -f convert-images link-images
+
+# Update tweak.diff with the current difference between untweaked and tweaked tex file
+update-tweakfile:
+	@if [ -e $(BASENAME)-untweaked.tex -a -e $(BASENAME).tex ] ; then \
+		if ! diff -q $(BASENAME)-untweaked.tex $(BASENAME).tex; then \
+			diff -u $(BASENAME)-untweaked.tex $(BASENAME).tex >tweak.diff || echo Updated tweak.diff; \
+		else  \
+			echo "Tweak file not updated, no changes";  \
+		fi; \
+	else \
+		echo "Tweak file not updated, missing files";  \
+	fi
+		
+

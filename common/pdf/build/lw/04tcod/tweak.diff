@@ -1,0 +1,734 @@
+--- 04tcod-untweaked.tex	2012-01-08 19:29:21.000000000 +0100
++++ 04tcod.tex	2012-01-08 19:29:21.000000000 +0100
+@@ -176,7 +176,9 @@
+ % \frontmatter
+ 
+ \addchap{About the Author and Illustrator}
++\begin{sloppypar}
+      {\bfseries Joe Dever}, the creator of the bestselling Lone Wolf adventure books and novels, has achieved world-wide recognition in three creative fields---as an award-winning author of international renown, as an acclaimed musician and composer, and as a games designer specialising in role-playing games.
++\end{sloppypar}
+ 
+ 
+    On graduating from college in 1974, Joe Dever became a professional musician, and for several years, he worked in the music industry in Europe and the United States.
+@@ -207,7 +209,10 @@
+   Gary was working at Games Workshop when Joe Dever asked him to illustrate some of his manuscript of {\itshape Flight from the Dark}. The two teamed up after that and, they continued to work together until the eighth book in the series, {\itshape The Jungle of Horrors}.
+ 
+ 
++\enlargethispage{\baselineskip}
++\begin{sloppypar}
+   Gary has also drawn the illustrations in {\itshape Redwall} and related books, {\itshape The Prince of Shadows} gamebook series, and several books which he also authored. Gary continues to enjoy war gaming and works as an illustrator and model maker.
++\end{sloppypar}
+ 
+ 
+  
+@@ -277,7 +282,9 @@
+ 
+ You keep a record of your adventure on the \hyperlink{action}{\emph{Action Chart}}.
+ 
++\begin{sloppypar}
+ During your training as a Kai Lord you have developed fighting prowess---{\sc Combat Skill} and physical stamina---{\sc Endurance}. Before you set off on your adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point with the blunt end of it onto the \hyperlink{random}{\emph{Random Number Table}}. If you pick 0 it counts as zero.
++\end{sloppypar}
+ 
+ The first number that you pick from the \hyperlink{random}{\emph{Random Number Table}} in this way represents your {\sc Combat Skill}. Add 10 to the number you picked and write the total in the {\sc Combat Skill} section of your \hyperlink{action}{\emph{Action Chart}} (i.e. if your pencil fell on the number 4 in the \hyperlink{random}{\emph{Random Number Table}} you would write in a {\sc Combat Skill} of 14). When you fight, your {\sc Combat Skill} will be pitted against that of your enemy. A high score in this section is therefore very desirable.
+ 
+@@ -392,11 +399,11 @@
+ \begin{aonitemize}
+ \item Warhammer (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{-.7\baselineskip}
+ \begin{center}
+ \includegraphics[width=32mm,keepaspectratio]{warhammr.pdf} %
+ \end{center}
+-\vspace{.2\baselineskip}
++\newpage
+ 
+ \item Dagger (Weapons)
+ 
+@@ -405,6 +412,7 @@
+ \includegraphics[width=21mm,keepaspectratio]{dagger.pdf} %
+ \end{center}
+ \vspace{.2\baselineskip}
++\vfill
+ 
+ \item 2 Potions of Laumspur (Backpack Items). Each of these potions restores 4 {\sc Endurance} points to your total when swallowed after combat. Each potion contains enough for one dose.
+ 
+@@ -413,22 +421,25 @@
+ \includegraphics[width=19mm,keepaspectratio]{potion.pdf} %
+ \end{center}
+ \vspace{.2\baselineskip}
++\vfill
+ 
+ \item Sword (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{-.7\baselineskip}
+ \begin{center}
+ \includegraphics[width=54mm,keepaspectratio]{sword.pdf} %
+ \end{center}
+ \vspace{.2\baselineskip}
++\vfill
+ 
+ \item Spear (Weapons)
+ 
+-\vspace{.2\baselineskip}
++\vspace{.1\baselineskip}
+ \begin{center}
+ \includegraphics[width=78mm,keepaspectratio]{spear.pdf} %
+ \end{center}
+-\vspace{.2\baselineskip}
++\vspace{.5\baselineskip}
++\vfill
+ 
+ \item 5 Special Rations (Meals). Each of these Special Rations counts as one Meal, and each takes up one space in your Backpack.
+ 
+@@ -437,16 +448,16 @@
+ \includegraphics[width=40mm,keepaspectratio]{food.pdf} %
+ \end{center}
+ \vspace{.2\baselineskip}
++\vfill
+ 
+ \item Mace (Weapons)
+ 
+-\vspace{.2\baselineskip}
+ \begin{center}
+ \includegraphics[width=31mm,keepaspectratio]{mace.pdf} %
+ \end{center}
+-\vspace{.2\baselineskip}
++\newpage
+ 
+-\item Chainmail Waistcoat (Special Items). This adds 4 {\sc Endurance} points to your total.
++\item \begin{sloppypar}Chainmail Waistcoat (Special Items). This adds 4 {\sc Endurance} points to your total.\end{sloppypar}
+ 
+ \vspace{.2\baselineskip}
+ \begin{center}
+@@ -558,7 +569,7 @@
+ \end{aonitemize}
+ 
+ 
+-\item On the \hyperlink{action}{\emph{Action Chart}}, mark the changes in {\sc Endurance} points to the participants in the combat.
++\item \begin{sloppypar}On the \hyperlink{action}{\emph{Action Chart}}, mark the changes in {\sc Endurance} points to the participants in the combat.\end{sloppypar}
+ 
+ \item Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.
+ 
+@@ -690,7 +701,9 @@
+ 
+ You recognize the fungi to be Calacena. The spores of these pink mushrooms are much sought after by illusionists and magicians, although it is said that they can cause terrible hallucinations and even madness. As you step gingerly along the corridor, you take great care not to tread or brush against the spore-laden fungi.
+ 
++\begin{sloppypar}
+ The tunnel continues uninterrupted for several miles before eventually reaching a long, deserted gallery.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}\hyperlink{sect40}{\bfseries Turn to 40}.\end{aonchoice}
+ 
+@@ -719,12 +732,12 @@
+ 
+ Your enemy falls from the saddle, and his body is dragged away by his horse, a twisted foot ensnared in the stirrup. All around you the din of battle rages. You realize that these armour-clad horsemen are no ordinary bandit clan; they fight with a discipline and skill unheard of among the lowly outlaws of the Wildlands.
+ 
+-A horse passes close by, the dead body of a ranger still upright in the saddle. You snatch the reins and retrieve a war-horn from the dead man's neck. If you are to avoid total disaster, you know that you must quickly sound the retreat.
+-
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small2.pdf} %
+ \end{figure}
++A horse passes close by, the dead body of a ranger still upright in the saddle. You snatch the reins and retrieve a war-horn from the dead man's neck. If you are to avoid total disaster, you know that you must quickly sound the retreat.
++
+ You wheel your steed towards the south and spur the blood-spattered animal to the gallop. The remnants of your company are close at your heels, the victory cries of your foe resounding in their ears.
+ 
+ \nopagebreak\begin{aonchoice}\hyperlink{sect154}{\bfseries Turn to 154}.\end{aonchoice}
+@@ -752,12 +765,12 @@
+ 
+ The warrior staggers back and tumbles over the ramparts into the raging battle below. His feathered mount ascends and flies away, its hideous caw piercing the storm-black sky.
+ 
+-Lying upon the gore-stained floor is a beautiful Onyx Medallion, which was torn from the warrior's armour as he fell. If you wish to keep the Onyx Medallion, place it in your pocket and mark it on your \hyperlink{action}{\emph{Action Chart}} as a Special Item.
+-
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small3.pdf} %
+ \end{figure}
++Lying upon the gore-stained floor is a beautiful Onyx Medallion, which was torn from the warrior's armour as he fell. If you wish to keep the Onyx Medallion, place it in your pocket and mark it on your \hyperlink{action}{\emph{Action Chart}} as a Special Item.
++
+ \nopagebreak\begin{aonchoice}Leave the watchtower by \hyperlink{sect59}{\bfseries turning to 59}.\end{aonchoice}
+ 
+ 
+@@ -864,12 +877,13 @@
+ 
+ \addsec[Section 20]{\hspace*{\fill}\hypertarget{sect20}{}20\hspace*{\fill}}
+ 
+-An arrow hisses overhead; a scream of agony fills the air. The bow slips from the archer's fingers as he sinks to his knees, the arrow lodged deep between his startled eyes. The clack of fangs and the soft swift pad of stealthy feet tell you that the Warhounds are closing in. You look up to see a man running towards you from the barricade. He has a shield in one hand and a longbow in the other; it is Guard Captain D'Val. He reaches you, breathless from his run, and draws an arrow from his quiver. D'Val aims and fires, drawing another arrow from his quiver as soon as the first is loosed. The Warhounds tumble and crash to the ground around you, felled by D'Val's deadly shafts. Eight lie dead before his quiver is empty.
+-
++An arrow hisses overhead; a scream of agony fills the air. The bow slips from the archer's fingers as he sinks to his knees, the arrow lodged deep between his startled eyes.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small4.pdf} %
+ \end{figure}
++The clack of fangs and the soft swift pad of stealthy feet tell you that the Warhounds are closing in. You look up to see a man running towards you from the barricade. He has a shield in one hand and a longbow in the other; it is Guard Captain D'Val. He reaches you, breathless from his run, and draws an arrow from his quiver. D'Val aims and fires, drawing another arrow from his quiver as soon as the first is loosed. The Warhounds tumble and crash to the ground around you, felled by D'Val's deadly shafts. Eight lie dead before his quiver is empty.
++
+ The captain grabs you by the arm and, swinging you over his shoulder in one swift motion, carries you back towards the barricade. Others run forward to help you, but the bandit archers are now in range and your men are forced back by a hail of arrows. The red shafts of the enemy whistle past on all sides. You reach the barricade, a wagon is pulled aside, and you are carried in through the gap. Captain D'Val is close to exhaustion; he staggers, and his men rush to catch him before he drops to the ground.
+ 
+ \nopagebreak\begin{aonchoice}\hyperlink{sect341}{\bfseries Turn to 341}.\end{aonchoice}
+@@ -983,12 +997,13 @@
+ 
+ \addsec[Section 31]{\hspace*{\fill}\hypertarget{sect31}{}31\hspace*{\fill}}
+ 
+-The water is swift, dark, and very cold. You tumble helplessly downstream as the irresistible current carries you towards a new and unforeseen danger: white water! The hiss of the rushing water fills your ears. You gulp a lungful of air and brace yourself, for it is now too late to avoid the torrential rapids that lie ahead.
+-
++The water is swift, dark, and very cold. You tumble helplessly downstream as the irresistible current carries you towards a new and unforeseen danger: white water!
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small5.pdf} %
+ \end{figure}
++The hiss of the rushing water fills your ears. You gulp a lungful of air and brace yourself, for it is now too late to avoid the torrential rapids that lie ahead.
++
+ Pick a number from the \hyperlink{random}{\emph{Random Number Table}}.
+ 
+ \nopagebreak\begin{aonchoice}If the number you have picked is 0--4, \hyperlink{sect272}{\bfseries turn to 272}.\end{aonchoice}
+@@ -1002,7 +1017,9 @@
+ 
+ The only sign of the rowing boat and your men that remains on the surface of this dark and dreadful river is a splintered oar floating nearby. You hook your arm over this and drift with the current towards the far bank. A check of your Backpack and pockets reveals that nothing was lost during your struggle in the water, but this discovery comes as cold comfort now that your brave company is no more.
+ 
++\begin{sloppypar}
+ Steeling yourself against the unknown dangers that may lie ahead, you resolve to reach Ruanon and uncover the veil of mystery that surrounds it. But first you allow yourself one last look at the black river before you enter the west tunnel.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}\hyperlink{sect309}{\bfseries Turn to 309}.\end{aonchoice}
+ 
+@@ -1044,7 +1061,7 @@
+ 
+ The Warhounds lope towards you at an unnerving speed. You can see their great red-lipped jaws clearly and hear the clacking of their fangs. You fight to control your breathing, to concentrate all your warrior skills, for you must dispatch the Warhounds quickly and with precision if you are to avoid being torn to pieces. Two dogs, faster than their brothers, break free of the pack and close upon you. They leap simultaneously, their slavering jaws spread wide for attack. You dive forward and roll, striking at their bellies from beneath as they pass above. Both howl with rage and pain and tumble lifeless to the ground. You are back on your feet as the next Warhound attacks.
+ 
+-\begin{aoncombat}Vassagonian Warhound: {\sc Combat~Skill}~17 ~~{\sc Endurance}~25\end{aoncombat}
++\begin{aoncombat}Vassagonian Warhound:\\{\sc Combat~Skill}~17 ~~{\sc Endurance}~25\end{aoncombat}
+ 
+ \nopagebreak\begin{aonchoice}If you win this combat in 3 rounds or less, \hyperlink{sect155}{\bfseries turn to 155}.\end{aonchoice}
+ 
+@@ -1137,12 +1154,13 @@
+ 
+ \addsec[Section 44]{\hspace*{\fill}\hypertarget{sect44}{}44\hspace*{\fill}}
+ 
+-As the rangers encircle the ruins, the strangers make a dash for the highway. Your men give chase and swiftly dispatch them with their swords. One of the robed men shatters a small flask as he falls to the ground. A search of the bodies reveals 12 Gold Crowns and enough food for two Meals. If you wish to keep any of these items, remember to mark them on your \hyperlink{action}{\emph{Action Chart}}. You notice that both of the men wear amulets on chains around their necks. They are wooden and shaped in the likeness of fish.
+-
++As the rangers encircle the ruins, the strangers make a dash for the highway. Your men give chase and swiftly dispatch them with their swords. One of the robed men shatters a small flask as he falls to the ground. A search of the bodies reveals 12 Gold Crowns and enough food for two Meals.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small6.pdf} %
+ \end{figure}
++If you wish to keep any of these items, remember to mark them on your \hyperlink{action}{\emph{Action Chart}}. You notice that both of the men wear amulets on chains around their necks. They are wooden and shaped in the likeness of fish.
++
+ \nopagebreak\begin{aonchoice}If you have the Kai Discipline of Healing, \hyperlink{sect149}{\bfseries turn to 149}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you do not possess this skill, \hyperlink{sect188}{\bfseries turn to 188}.\end{aonchoice}
+@@ -1331,7 +1349,9 @@
+ 
+ \addsec[Section 61]{\hspace*{\fill}\hypertarget{sect61}{}61\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ Your lightning reactions have saved you from the river. You sidestep in time to avoid the sinuous tentacle and lash out. The blow opens a wide gash and an arc of green blood sprays across the battered rowing boat. Only two of your men remain. One stabs at the tentacle around his foot, and the other lies unconscious at your feet, his arm badly broken at the elbow.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to hack at the tentacle that is coiled around the ranger's foot, \hyperlink{sect304}{\bfseries turn to 304}.\end{aonchoice}
+ 
+@@ -1445,7 +1465,7 @@
+ 
+ \nopagebreak\begin{aonchoice}If you possess an Onyx Medallion, \hyperlink{sect305}{\bfseries turn to 305}.\end{aonchoice}
+ 
+-\nopagebreak\begin{aonchoice}If you have the Kai Discipline of Camouflage and have reached the Kai Rank of Guardian or higher, \hyperlink{sect49}{\bfseries turn to 49}.\end{aonchoice}
++\nopagebreak\begin{aonchoice}\begin{sloppypar}If you have the Kai Discipline of Camouflage and have reached the Kai Rank of Guardian or higher, \hyperlink{sect49}{\bfseries turn to 49}.\end{sloppypar}\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you do not have this Special Item or this Discipline and Kai Rank, dive into the tall crops and hide by \hyperlink{sect159}{\bfseries turning to 159}.\end{aonchoice}
+ 
+@@ -1556,12 +1576,13 @@
+ 
+ \addsec[Section 80]{\hspace*{\fill}\hypertarget{sect80}{}80\hspace*{\fill}}
+ 
+-Although the fire has totally destroyed any markings there may have been, there still remains enough of the charred shell for you to recognize its military origin. It is a Sommlending cavalry wagon, one of three that accompanied Captain D'Val and his troop. It was loaded with food and equipment when it left Holmgard one month ago, but all that remains of its cargo now are heaps of ash. Once you have satisfied yourself that nothing has been overlooked that may give a clue to Captain D'Val's fate, you remount your horse and lead your men southwards along the highway.
+-
++Although the fire has totally destroyed any markings there may have been, there still remains enough of the charred shell for you to recognize its military origin. It is a Sommlending cavalry wagon, one of three that accompanied Captain D'Val and his troop. It was loaded with food and equipment
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small9.pdf} %
+ \end{figure}
++when it left Holmgard one month ago, but all that remains of its cargo now are heaps of ash. Once you have satisfied yourself that nothing has been overlooked that may give a clue to Captain D'Val's fate, you remount your horse and lead your men southwards along the highway.
++
+ \nopagebreak\begin{aonchoice}\hyperlink{sect175}{\bfseries Turn to 175}.\end{aonchoice}
+ 
+ 
+@@ -1701,12 +1722,13 @@
+ 
+ \addsec[Section 93]{\hspace*{\fill}\hypertarget{sect93}{}93\hspace*{\fill}}
+ 
+-Four swarthy-faced bandits are seated at a round table, a plan of the mines spread before them. Surprise barely has time to register upon their faces before you launch your deadly attack; three are dispatched even before they have drawn their weapons. The fourth rolls away from his dead companions and unsheathes his sword. The fire of revenge burns bitterly in his eyes as he lunges towards you.
+-
++Four swarthy-faced bandits are seated at a round table, a plan of the mines spread before them. Surprise barely has time to register upon their faces before you launch your deadly attack;
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small10.pdf} %
+ \end{figure}
++three are dispatched even before they have drawn their weapons. The fourth rolls away from his dead companions and unsheathes his sword. The fire of revenge burns bitterly in his eyes as he lunges towards you.
++
+ \begin{aoncombat}Bandit Warrior: {\sc Combat~Skill}~15 ~~{\sc Endurance}~26\end{aoncombat}
+ 
+ \nopagebreak\begin{aonchoice}If you win the combat, \hyperlink{sect2}{\bfseries turn to 2}.\end{aonchoice}
+@@ -1795,12 +1817,13 @@
+ 
+ \addsec[Section 102]{\hspace*{\fill}\hypertarget{sect102}{}102\hspace*{\fill}}
+ 
+-Your men draw their swords and advance on the strangers. The hooded men immediately raise their hands and emerge from beneath the stone canopy. One of the men drops a small earthenware flask full of clear fluid and it shatters on the hard marble floor. A search of their clothing reveals 12 Gold Crowns and enough food for 2 Meals. Make the necessary adjustments to your \hyperlink{action}{\emph{Action Chart}}. Around their necks they wear wooden amulets carved in the likeness of small fish.
+-
++Your men draw their swords and advance on the strangers. The hooded men immediately raise their hands and emerge from beneath the stone canopy. One of the men drops a small earthenware flask full of clear fluid
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small6.pdf} %
+ \end{figure}
++and it shatters on the hard marble floor. A search of their clothing reveals 12 Gold Crowns and enough food for 2 Meals. Make the necessary adjustments to your \hyperlink{action}{\emph{Action Chart}}. Around their necks they wear wooden amulets carved in the likeness of small fish.
++
+ \nopagebreak\begin{aonchoice}If you possess the Kai Discipline of Healing, \hyperlink{sect19}{\bfseries turn to 19}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you do not have this skill, \hyperlink{sect339}{\bfseries turn to 339}.\end{aonchoice}
+@@ -1846,12 +1869,13 @@
+ 
+ The bandit horseman pursues you, his lance speeding closer and closer behind you. You are running flat out, and it is too late to dodge the Sommlending soldier who now stands in your way, his bow drawn ready to fire.
+ 
+-`Dive!' he screams at you, and instinctively you obey his bold command. Almost simultaneously, he releases the bowstring. The bandit is barely feet away when the steel-tipped arrow penetrates his visor and erupts from the rear of his helmet like a skewer through an apple. The charging horse crashes to the ground throwing its dead rider at your side. You open your mouth to shout your thanks, but before you can speak the soldier turns and hurries away to the barricade.
+-
+-\begin{figure}[!ht]
+-\centering
++`Dive!' he screams at you, and instinctively you obey his bold command. Almost simultaneously, he releases the bowstring. The bandit is barely feet away
++\begin{figure}[!ht] 
++\centering 
+ \includegraphics[width=\textwidth,keepaspectratio]{small11.pdf} %
+ \end{figure}
++when the steel-tipped arrow penetrates his visor and erupts from the rear of his helmet like a skewer through an apple. The charging horse crashes to the ground throwing its dead rider at your side. You open your mouth to shout your thanks, but before you can speak the soldier turns and hurries away to the barricade.
++
+ \nopagebreak\begin{aonchoice}If you wish to follow him, \hyperlink{sect59}{\bfseries turn to 59}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to continue towards the watchtower, \hyperlink{sect310}{\bfseries turn to 310}.\end{aonchoice}
+@@ -1933,12 +1957,13 @@
+ 
+ \addsec[Section 114]{\hspace*{\fill}\hypertarget{sect114}{}114\hspace*{\fill}}
+ 
+-You order your men to prepare for combat and signal to one of the tavern-keeper's sons to open the doors. No sooner has he slid back the great iron bolt than the doors burst inwards. A dozen rain-drenched bandits charge into the tavern, their shields linked before them rim to rim. Your men press forward to halt their advance, hacking and stabbing whenever a head or arm presents a target, but they are forced to turn back when more bandits flood into the tavern.
+-
++You order your men to prepare for combat and signal to one of the tavern-keeper's sons to open the doors. No sooner has he slid back the great iron bolt than the doors burst inwards. A dozen rain-drenched bandits charge into the tavern, their shields linked before them rim to rim.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small12.pdf} %
+ \end{figure}
++Your men press forward to halt their advance, hacking and stabbing whenever a head or arm presents a target, but they are forced to turn back when more bandits flood into the tavern.
++
+ A tall warrior in bright scarlet armour suddenly breaks clear of the shield-wall and runs at you. His sword is raised to stab.
+ 
+ \begin{aoncombat}Bandit Warrior: {\sc Combat~Skill}~16 ~~{\sc Endurance}~25\end{aoncombat}
+@@ -2154,12 +2179,13 @@
+ 
+ \addsec[Section 132]{\hspace*{\fill}\hypertarget{sect132}{}132\hspace*{\fill}}
+ 
+-Your men tether their horses and follow you into the tavern. An old woman stands behind the bar, her face taut and lined as if in pain. She wears men's clothes---a shirt and chequered trousers. The tavern is empty, but the tables are covered with ale mugs, many half full of beer.
+-
++Your men tether their horses and follow you into the tavern. An old woman stands behind the bar, her face taut and lined as if in pain.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small13.pdf} %
+ \end{figure}
++She wears men's clothes---a shirt and chequered trousers. The tavern is empty, but the tables are covered with ale mugs, many half full of beer.
++
+ \nopagebreak\begin{aonchoice}If you feel uneasy about the tavern and wish to leave town, \hyperlink{sect67}{\bfseries turn to 67}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to question the old woman, \hyperlink{sect287}{\bfseries turn to 287}.\end{aonchoice}
+@@ -2563,6 +2589,8 @@
+ 
+ \addsec[Section 168]{\hspace*{\fill}\hypertarget{sect168}{}168\hspace*{\fill}}
+ 
++\enlargethispage{\baselineskip}
++\begin{sloppypar}
+ \hspace*{\fill} \mbox{\itshape \hyperlink{ill10}{Illustration~X}}\hspace*{\fill}\\*[\parskip]
+ \begin{figure}[p]
+ \centering
+@@ -2718,12 +2746,13 @@
+ 
+ \addsec[Section 183]{\hspace*{\fill}\hypertarget{sect183}{}183\hspace*{\fill}}
+ 
+-You manage to reach a tangle of briars growing near the crypt door, and from here you can observe the Vassagonian guards undetected. More soldiers appear on horseback, riding into Maaken from the north. They dismount and approach the door.
+-
++You manage to reach a tangle of briars growing near the crypt door, and from here you can observe the Vassagonian guards undetected.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small17.pdf} %
+ \end{figure}
++More soldiers appear on horseback, riding into Maaken from the north. They dismount and approach the door.
++
+ `Password!' shout the crypt guards.
+ 
+ `Lohn,' reply the soldiers. The door opens and they are allowed to enter.
+@@ -2741,12 +2770,13 @@
+ 
+ \addsec[Section 184]{\hspace*{\fill}\hypertarget{sect184}{}184\hspace*{\fill}}
+ 
+-You are barely ten yards from the enemy when they fire. Miraculously you are not hit, but you must now fight alone, as three of your men lie dead and the other can no longer fight---a bolt has shattered his wrist. As you attack, the fierce warriors discard their empty crossbows and draw their swords, and you find yourself being pushed back to the bridge by six angry swordsmen.
+-
++You are barely ten yards from the enemy when they fire. Miraculously you are not hit, but you must now fight alone, as three of your men lie dead
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small8.pdf} %
+ \end{figure}
++and the other can no longer fight---a bolt has shattered his wrist. As you attack, the fierce warriors discard their empty crossbows and draw their swords, and you find yourself being pushed back to the bridge by six angry swordsmen.
++
+ \nopagebreak\begin{aonchoice}If you wish to fight them, \hyperlink{sect202}{\bfseries turn to 202}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to dive over the parapet of the bridge to avoid them, \hyperlink{sect342}{\bfseries turn to 342}.\end{aonchoice}
+@@ -2832,7 +2862,7 @@
+ \end{figure}
+ The snarling Warhounds bound towards the barricade, their gaping eyes glowing crimson in the light of battle. Leaping from the bodies of the dead and dying, they launch themselves at the Sommlending defenders. All around you, soldiers are being torn from the line, bowled over by the leaping Warhounds. You back away as a howling dog crashes through the wall of sacks and barrels, but before it has risen, you move swiftly forward and dispatch it with one blow to the head. Another Warhound claws your back and pitches you forward into the collapsed barricade, but before you can free yourself, yet two more dogs have sunk their fangs into your leg.
+ 
+-\begin{aoncombat}Vassagonian Warhounds: {\sc Combat~Skill}~17 ~~{\sc Endurance}~30\end{aoncombat}
++\begin{aoncombat}Vassagonian Warhounds:\\{\sc Combat~Skill}~17 ~~{\sc Endurance}~30\end{aoncombat}
+ 
+ \nopagebreak\begin{aonchoice}If you are still alive after two rounds of combat or if you have won in the first two rounds, \hyperlink{sect311}{\bfseries turn to 311}.\end{aonchoice}
+ 
+@@ -2854,18 +2884,19 @@
+ 
+ You hear the thud of a heavy drawbar sliding back, and a burly man dressed in a leather jerkin appears at the tavern door. `Welcome to my humble inn, my lord. Pardon my suspicion, but this is a very dangerous area; one mistake can cost us our lives.'
+ 
++You signal to your men to stable their horses, and you follow the innkeeper into his tavern. The bar looks more like an armoury than a drinking hall. Quivers of arrows stand beside each of the iron-studded window shutters, and racks of spears line the far wall. The place is deserted except for three young men who all bear a strong resemblance to the tavern-keeper. One of them has his head swathed in bandages.
++
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small18.pdf} %
+ \end{figure}
+-You signal to your men to stable their horses, and you follow the innkeeper into his tavern. The bar looks more like an armoury than a drinking hall. Quivers of arrows stand beside each of the iron-studded window shutters, and racks of spears line the far wall. The place is deserted except for three young men who all bear a strong resemblance to the tavern-keeper. One of them has his head swathed in bandages.
+-
+ You ask the tavern-keeper how much he will charge for your men to billet here tonight and are quite surprised to hear his reply. `Nothing,' he says, moving tables aside so that your rangers can sleep upon the tavern floor. `Your presence here tonight will be worth more than gold to us. We've been attacked by bandits every night since the last full moon.'
+ 
+ As the last of your men return from the stables, the doors are closed and barred. It has started to rain and your men seem greatly relieved to be inside where it is warm and dry.
+ 
+ \nopagebreak\begin{aonchoice}If you wish to question the tavern-keeper about the nature of the bandit raids, \hyperlink{sect239}{\bfseries turn to 239}.\end{aonchoice}
+ 
++\enlargethispage{\baselineskip}
+ \nopagebreak\begin{aonchoice}If you wish to question him about any news that he may have heard about Ruanon in the last month, then \hyperlink{sect266}{\bfseries turn to 266}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you do not wish to question the man further, you can prepare for a night's sleep and \hyperlink{sect324}{\bfseries turn to 324}.\end{aonchoice}
+@@ -2895,7 +2926,9 @@
+ 
+ \addsec[Section 198]{\hspace*{\fill}\hypertarget{sect198}{}198\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ The guards are not fooled by your bravado---they draw their weapons and attack. You must fight them as one enemy.
++\end{sloppypar}
+ 
+ \begin{aoncombat}Crypt Guards: {\sc Combat~Skill}~18 ~~{\sc Endurance}~30\end{aoncombat}
+ 
+@@ -2915,12 +2948,13 @@
+ 
+ The trees are alive with bandit patrols, but your quick wits and Kai skills prevent you from being seen by them. Eventually you reach the edge of the copse. You find yourself staring out across an expanse of open plain towards Ruanon. The sight that lies before you is very disquieting.
+ 
+-Much of the mining town has been burnt to the ground. The blackened ruins of what were once shops, cottages, and taverns are now little more than smouldering mounds of charcoal. You are beginning to fear the worst, that Ruanon has been totally destroyed, when a gentle breeze clears the haze of wood smoke hanging like a grey curtain over the ruins. Inside the perimeter of ruined buildings, a barricade has been thrown up around a tower of stone. Above the tower, a tattered flag still flies bringing renewed hope; it is the sun-flag of Sommerlund edged with a band of white braid---the cavalry standard of the King's Guard Regiment.
+-
++Much of the mining town has been burnt to the ground. The blackened ruins of what were once shops, cottages, and taverns are now little more than smouldering mounds of charcoal. You are beginning to fear the worst, that Ruanon has been totally destroyed, when a gentle breeze clears the haze of wood smoke hanging like a grey curtain over the ruins. Inside the perimeter of ruined buildings, a barricade has been thrown up around a tower of stone.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small19.pdf} %
+ \end{figure}
++Above the tower, a tattered flag still flies bringing renewed hope; it is the sun-flag of Sommerlund edged with a band of white braid---the cavalry standard of the King's Guard Regiment.
++
+ The sudden crack of a twig makes you freeze. You glance behind to see three bandits creeping through the trees towards you. The wide steel tips of their spears glint. They seem to be coated with a clear, sticky fluid.
+ 
+ \nopagebreak\begin{aonchoice}If you possess the Kai Discipline of Hunting or if you have ever visited Gorn Cove, \hyperlink{sect45}{\bfseries turn to 45}.\end{aonchoice}
+@@ -3055,7 +3089,9 @@
+ 
+ \addsec[Section 211]{\hspace*{\fill}\hypertarget{sect211}{}211\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ Your tactics have worked. The bandits ignore your small group of horsemen and pursue the others towards the west. Once they reach the wooded foothills of the Durncrag Mountains, your rangers will have no difficulty evading the enemy among the densely packed firs.
++\end{sloppypar}
+ 
+ When the bandits have disappeared from view, you call a halt and allow your men to rest. In spite of the number of men you have lost, they are still eager to continue the mission.
+ 
+@@ -3108,12 +3144,12 @@
+ 
+ Barraka carries the stench of death and decay about him. He strides into the temple, his boots of Gourgaz hide covering both legs and feet, and slams shut the huge stone door with frightening ease. He stands in silence before pushing open the huge black doors engraved with the menacing skulls. Suddenly a gale force wind sweeps through the temple and your ears are filled by a terrible scream. Beyond the open doors, a pier of stone juts into the abyss of Maakengorge: you are staring into the Chasm of Doom.
+ 
+-Barraka turns away from the windswept pier and walks slowly towards the altar. From a hidden scabbard he removes a twisted black dagger and holds its stiletto blade to the light. An evil blue flame runs up and down the black steel spike, flickering in the ice-cold winds of Maakengorge. The sacrifice is about to begin.
+-
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small20.pdf} %
+ \end{figure}
++Barraka turns away from the windswept pier and walks slowly towards the altar. From a hidden scabbard he removes a twisted black dagger and holds its stiletto blade to the light. An evil blue flame runs up and down the black steel spike, flickering in the ice-cold winds of Maakengorge. The sacrifice is about to begin.
++
+ \nopagebreak\begin{aonchoice}If you wish to draw your weapon and attack Barraka, \hyperlink{sect296}{\bfseries turn to 296}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to distract his attention from the altar without attacking him, \hyperlink{sect119}{\bfseries turn to 119}.\end{aonchoice}
+@@ -3123,7 +3159,7 @@
+ 
+ There is little that can be done to help the injured ranger. Tentacles now engulf the rowing boat from all sides and threaten to drag you all to a watery grave.
+ 
+-\nopagebreak\begin{aonchoice}If you wish to help the other ranger who is now being dragged from the boat by his foot, \hyperlink{sect304}{\bfseries turn to 304}.\end{aonchoice}
++\nopagebreak\begin{aonchoice}\begin{sloppypar}If you wish to help the other ranger who is now being dragged from the boat by his foot, \hyperlink{sect304}{\bfseries turn to 304}.\end{sloppypar}\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to grab the oars and row for the other side of the river, \hyperlink{sect189}{\bfseries turn to 189}.\end{aonchoice}
+ 
+@@ -3304,12 +3340,13 @@
+ 
+ \addsec[Section 232]{\hspace*{\fill}\hypertarget{sect232}{}232\hspace*{\fill}}
+ 
+-You follow the river back towards the Ruanon bridge, taking care to stay hidden from the bandit horsemen who now stand guard on the bridge itself. A few hundred yards beyond, you find a narrow track leading to a ramshackle boathouse. If it contains a boat, you should be able to cross the river quite easily.
+-
++You follow the river back towards the Ruanon bridge, taking care to stay hidden from the bandit horsemen who now stand guard on the bridge itself.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small21.pdf} %
+ \end{figure}
++A few hundred yards beyond, you find a narrow track leading to a ramshackle boathouse. If it contains a boat, you should be able to cross the river quite easily.
++
+ \nopagebreak\begin{aonchoice}If you wish to investigate the boathouse, \hyperlink{sect68}{\bfseries turn to 68}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to continue downstream and look for some other way to cross the river, \hyperlink{sect130}{\bfseries turn to 130}.\end{aonchoice}
+@@ -3520,12 +3557,13 @@
+ 
+ \addsec[Section 252]{\hspace*{\fill}\hypertarget{sect252}{}252\hspace*{\fill}}
+ 
+-You lead your men in single file into the forest, but in less than a minute, the trees have become far too dense for you to be able to continue on horseback. You are forced to dismount and hide your horses before continuing on foot. Then, by a great stroke of luck, you find a narrow track leading to a ramshackle boathouse at the edge of the River Xane. If it contains a boat, you should be able to cross the river with ease.
+-
++You lead your men in single file into the forest, but in less than a minute, the trees have become far too dense for you to be able to continue on horseback. You are forced to dismount and hide your horses before continuing on foot.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small21.pdf} %
+ \end{figure}
++Then, by a great stroke of luck, you find a narrow track leading to a ramshackle boathouse at the edge of the River Xane. If it contains a boat, you should be able to cross the river with ease.
++
+ \nopagebreak\begin{aonchoice}If you wish to investigate the boathouse, \hyperlink{sect68}{\bfseries turn to 68}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to continue downstream and look for some other way of crossing the river, \hyperlink{sect130}{\bfseries turn to 130}.\end{aonchoice}
+@@ -3571,12 +3609,13 @@
+ 
+ \addsec[Section 257]{\hspace*{\fill}\hypertarget{sect257}{}257\hspace*{\fill}}
+ 
+-The door is unlocked and opens into a small room with a straw-covered floor. A large iron-belted chest rests at the foot of an unmade bed, beyond which lies another door.
+-
++The door is unlocked and opens into a small room with a straw-covered floor.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small22.pdf} %
+ \end{figure}
++A large iron-belted chest rests at the foot of an unmade bed, beyond which lies another door.
++
+ \nopagebreak\begin{aonchoice}If you wish to examine the chest, \hyperlink{sect302}{\bfseries turn to 302}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to ignore it and investigate the door, \hyperlink{sect131}{\bfseries turn to 131}.\end{aonchoice}
+@@ -3615,7 +3654,7 @@
+ 
+ The Warhounds spread out and stream towards the barricade, their eyes aflame with evil intent. A group of five snarling dogs tear through the wall of sacks and casks and engulf the soldiers around you. Lashing out, you dispatch two of the loathsome dogs with one swipe, but in the heat of battle you fail to notice the Warhounds that are diving towards your back. They pitch you forward into the collapsed barricade; before you can free yourself, they have sunk their fangs into your legs.
+ 
+-\begin{aoncombat}Vassagonian Warhounds: {\sc Combat~Skill}~18 ~~{\sc Endurance}~30\end{aoncombat}
++\begin{aoncombat}Vassagonian Warhounds:\\{\sc Combat~Skill}~18 ~~{\sc Endurance}~30\end{aoncombat}
+ 
+ \nopagebreak\begin{aonchoice}If you are still alive after 3 rounds of combat or if you have won in the first three rounds, \hyperlink{sect311}{\bfseries turn to 311}.\end{aonchoice}
+ 
+@@ -3806,14 +3845,16 @@
+ 
+ You kick the dead Warhound away and steel yourself for another onslaught. Three more of the snarling beasts are ready to pounce, and you must fight them as one enemy.
+ 
+-\begin{aoncombat}Vassagonian Warhounds: {\sc Combat~Skill}~22 ~~{\sc Endurance}~35\end{aoncombat}
++\begin{aoncombat}Vassagonian Warhounds:\\{\sc Combat~Skill}~22 ~~{\sc Endurance}~35\end{aoncombat}
+ 
+ \nopagebreak\begin{aonchoice}If you win the combat, \hyperlink{sect155}{\bfseries turn to 155}.\end{aonchoice}
+ 
+ 
+ \addsec[Section 278]{\hspace*{\fill}\hypertarget{sect278}{}278\hspace*{\fill}}
+ 
++\begin{sloppypar}
+ Your lightning reactions have saved you from certain death. The deadly disc whistles past, embedding itself deep in a wheel. Rolling clear of the wagon, you sprint along a narrow alleyway leading to a knot of densely packed firs. You reach the trees, but as you dive for cover, you hear the shouts of bandits close behind.
++\end{sloppypar}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to press on through the trees towards the south, \hyperlink{sect123}{\bfseries turn to 123}.\end{aonchoice}
+ 
+@@ -3839,7 +3880,9 @@
+ 
+ `Save who? Who must he save?' questions Captain D'Val, as he tries to calm the distressed Baron.
+ 
++\begin{sloppypar}
+ `My daughter, Madelon. Barraka has found the Dagger of Vashna. He plans to sacrifice my daughter upon the altar of Maaken to release the undead of Maakengorge.'
++\end{sloppypar}
+ 
+ The Baron explains that during the Age of the Black Moon, King Ulnar of Sommerlund killed the mightiest of all the Darklords, Vashna, with the Sommerswerd, the sword of the sun. His body and the bodies of all his soldiers were hurled into the bottomless abyss of Maakengorge. `He plans to lead the dead to victory first to conquer Sommerlund and then all of the Lastlands,' he says in despair.
+ 
+@@ -3889,12 +3932,12 @@
+ 
+ You grasp the Flask, take careful aim, and hurl it straight and true. Barraka stares open-mouthed as the container shatters against the black steel dagger. There is an explosion of searing white flame. The heat scorches your face, and you are thrown to the floor. You lose 3 {\sc Endurance} points.
+ 
+-You stare in horror as Barraka, his arm torn from his body by the blast, staggers backwards across the temple. He has been blinded by the fire, and he claws at his sightless eyes with his remaining hand. You watch in silence as he stumbles through the black skull doors and plummets into Maakengorge, swallowed up by the Chasm of Doom.
+-
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small24.pdf} %
+ \end{figure}
++You stare in horror as Barraka, his arm torn from his body by the blast, staggers backwards across the temple. He has been blinded by the fire, and he claws at his sightless eyes with his remaining hand. You watch in silence as he stumbles through the black skull doors and plummets into Maakengorge, swallowed up by the Chasm of Doom.
++
+ \nopagebreak\begin{aonchoice}\hyperlink{sect350}{\bfseries Turn to 350}.\end{aonchoice}
+ 
+ 
+@@ -3973,12 +4016,13 @@
+ 
+ \addsec[Section 290]{\hspace*{\fill}\hypertarget{sect290}{}290\hspace*{\fill}}
+ 
+-The ruins are overgrown with weeds and roots, but you can make out the shape of the inner sanctum of the temple quite distinctly. The huge marble canopy is still intact and will serve as an excellent shelter from the storm. As you tie your horse to a withered shrub, you glance up to see two men hiding beneath the canopy, dressed in long black robes. You order them to come out and identify themselves, but they neither move nor answer your call.
+-
++The ruins are overgrown with weeds and roots, but you can make out the shape of the inner sanctum
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small25.pdf} %
+ \end{figure}
++of the temple quite distinctly. The huge marble canopy is still intact and will serve as an excellent shelter from the storm. As you tie your horse to a withered shrub, you glance up to see two men hiding beneath the canopy, dressed in long black robes. You order them to come out and identify themselves, but they neither move nor answer your call.
++
+ \nopagebreak\begin{aonchoice}If you wish to signal your men to attack the robed strangers, \hyperlink{sect44}{\bfseries turn to 44}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you wish to try to capture them alive, \hyperlink{sect102}{\bfseries turn to 102}.\end{aonchoice}
+@@ -4060,14 +4104,15 @@
+ 
+ \addsec[Section 299]{\hspace*{\fill}\hypertarget{sect299}{}299\hspace*{\fill}}
+ 
+-Quickly you pull you men into line, shoulder to shoulder across the entrance to the mine. Their shields form a wall of wood and steel to deflect the arrows now falling from the sky. As they flood out from the trees, the bandit warriors discard their bows in favour of long, curved swords. Many of them stumble and fall, but their leader beats them forward with the flat of his battle-axe. He is an ugly brute dressed in a heavy brass hauberk. As the first of the enemy smash into the shield-wall, he screams a deafening war-cry. A numbing thunder of blows rains down as the bandits hew and slice into your line. The fight is bitter but the wall holds firm, as your men bravely defend themselves.
+-
+-The first wave of bandits stagger back clutching their wounds, a dozen left dead at your feet. None of your men have fallen. However, you barely have time to wipe your blood-spattered brow before their leader bounds towards you, his battle-axe sweeping the air. He batters his way through the shield-wall and attacks you. You cannot evade him and must fight him to the death.
+-
+-\begin{figure}[!ht]
++Quickly you pull you men into line, shoulder to shoulder across the entrance to the mine. Their shields form a wall of wood and steel to deflect the arrows now falling from the sky. As they flood out from the trees, the bandit warriors discard their bows in favour of long, curved swords.
++\begin{figure}[!ht] 
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small26.pdf} %
+ \end{figure}
++Many of them stumble and fall, but their leader beats them forward with the flat of his battle-axe. He is an ugly brute dressed in a heavy brass hauberk. As the first of the enemy smash into the shield-wall, he screams a deafening war-cry. A numbing thunder of blows rains down as the bandits hew and slice into your line. The fight is bitter but the wall holds firm, as your men bravely defend themselves.
++
++The first wave of bandits stagger back clutching their wounds, a dozen left dead at your feet. None of your men have fallen. However, you barely have time to wipe your blood-spattered brow before their leader bounds towards you, his battle-axe sweeping the air. He batters his way through the shield-wall and attacks you. You cannot evade him and must fight him to the death.
++
+ \begin{aoncombat}Bandit Leader: {\sc Combat~Skill}~19 ~~{\sc Endurance}~29\end{aoncombat}
+ 
+ \nopagebreak\begin{aonchoice}If you win the fight, \hyperlink{sect121}{\bfseries turn to 121}.\end{aonchoice}
+@@ -4075,12 +4120,13 @@
+ 
+ \addsec[Section 300]{\hspace*{\fill}\hypertarget{sect300}{}300\hspace*{\fill}}
+ 
+-A scream of pain and terror fills the air. The sniper crashes to the ground as the jaws of a Warhound clamp tightly around his neck. Other hounds are drawn by his ghastly screams, and he is soon ripped to pieces. You look up to see a man running towards you from the barricade. He has a shield in one hand and a longbow in the other; it is Captain D'Val.
+-
++A scream of pain and terror fills the air. The sniper crashes to the ground as the jaws of a Warhound clamp tightly around his neck.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small4.pdf} %
+ \end{figure}
++Other hounds are drawn by his ghastly screams, and he is soon ripped to pieces. You look up to see a man running towards you from the barricade. He has a shield in one hand and a longbow in the other; it is Captain D'Val.
++
+ He reaches you, breathless from his run, and draws an arrow from his quiver. The Warhounds, tired of their victim, are in search of fresh sport and are turning their attentions on you. D'Val aims and fires, drawing another arrow as soon as his bow is empty. Warhounds tumble and crash to the ground around you, felled by D'Val's deadly shafts. The captain grabs you by the arm and swings you over his shoulder in one swift movement, before carrying you back to the barricade. Others run forward to help him, but the bandit archers are now in range and the men are forced back by a hail of arrows. The red shafts whistle past on all sides. Finally you reach the barricade; a wagon is pulled aside and you are carried through the open gap. Captain D'Val is close to exhaustion; he staggers and his men rush to catch him before he drops you to the ground.
+ 
+ \nopagebreak\begin{aonchoice}\hyperlink{sect341}{\bfseries Turn to 341}.\end{aonchoice}
+@@ -4226,12 +4272,13 @@
+ 
+ \addsec[Section 314]{\hspace*{\fill}\hypertarget{sect314}{}314\hspace*{\fill}}
+ 
+-The forest is patrolled by bandits, but they take little interest in their guard duties, and you find it easy to avoid them in the dark. Then, by chance, you come across a small log cabin hidden deep in the woods. A candle flickers at the window, and the door is ajar.
+-
++The forest is patrolled by bandits, but they take little interest in their guard duties,
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small27.pdf} %
+ \end{figure}
++and you find it easy to avoid them in the dark. Then, by chance, you come across a small log cabin hidden deep in the woods. A candle flickers at the window, and the door is ajar.
++
+ \nopagebreak\begin{aonchoice}If you wish to enter the hut, \hyperlink{sect53}{\bfseries turn to 53}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you do not wish to enter the hut, continue your mission by \hyperlink{sect258}{\bfseries turning to 258}.\end{aonchoice}
+@@ -4274,8 +4321,7 @@
+ \hypertarget{ill19}{}
+ \raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill19.pdf}}%
+ \\{\itshape \textquoteleft He has lost everything~\protect\textellipsis\ \\
+-his castle, his land, his town,\\
+-and his family...\textquoteright 
++his castle, his land, his town, and his family...\textquoteright 
+ }
+ \end{figure}
+ Oren Vanalund is the fifteenth baron of Ruanon, a noble warrior of royal lineage, and fifth in succession to the throne of Sommerlund. This once proud and chivalrous warlord now lies upon the cold stone floor of the chamber, red-eyed and whimpering like a frightened dog. `He has lost everything,' says D'Val quietly. `Barraka has destroyed his castle, his land, his town, and his family. His sons are dead, and his only daughter has been taken captive by Barraka himself. I fear the ordeal has turned his mind.'
+@@ -4343,12 +4389,13 @@
+ 
+ \addsec[Section 323]{\hspace*{\fill}\hypertarget{sect323}{}323\hspace*{\fill}}
+ 
+-You release the arrow, and it whistles through the air and buries itself deeply into the mail-clad shoulder of the Bandit Leader. You hear his scream of pain ring out above the din of battle, but even though he is badly wounded he still attempts to rally his men. You stoop to take another arrow, but, to your horror, the dead soldier's quiver is empty. Looking up you see two dismounted Vassagonian horsemen clambering across the barricade towards you. You throw down your bow and run to a large water cask defended by a stout Sommlending sergeant. The ground around the cask is carpeted with enemy dead.
+-
++You release the arrow, and it whistles through the air and buries itself deeply into the mail-clad shoulder of the Bandit Leader. You hear his scream of pain ring out above the din of battle, but even though he is badly wounded he still attempts to rally his men. You stoop to take another arrow, but, to your horror, the dead soldier's quiver is empty.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small16.pdf} %
+ \end{figure}
++Looking up you see two dismounted Vassagonian horsemen clambering across the barricade towards you. You throw down your bow and run to a large water cask defended by a stout Sommlending sergeant. The ground around the cask is carpeted with enemy dead.
++
+ `Shoot the leader!' you command, pointing towards the enemy officer. The sergeant aims and fires his bow with one swift and fluid movement. The arrow arcs through the battle-smoke and pierces the officer's shiny breastplate. Slowly his cruel eyes flicker and close as he slips from the saddle, the shaft lodged deep in his heart.
+ 
+ \nopagebreak\begin{aonchoice}\hyperlink{sect148}{\bfseries Turn to 148}.\end{aonchoice}
+@@ -4395,12 +4442,13 @@
+ 
+ \addsec[Section 328]{\hspace*{\fill}\hypertarget{sect328}{}328\hspace*{\fill}}
+ 
+-As you reach the top of the ridge, a gruesome sight meets you. The bodies of men and horses lie scattered across the shallow valley beyond, their bones picked clean by the scavenging crows. You hear the gasps of horror as your men recognize the armour and tattered white uniforms of these skeletons, for they were once your countrymen, Sommlending Guards of the King's cavalry. They must have died in battle, for the corpses of bandit warriors lie entwined among them. Forty brave soldiers, nearly half of the squadron that left Holmgard one month ago, now lie before you, and it is with heavy heart that your men set about the grisly task of burial. As you ride away from this valley of death, you are comforted only by the knowledge that Captain D'Val was not among those you buried.
+-
++As you reach the top of the ridge, a gruesome sight meets you. The bodies of men and horses lie scattered across the shallow valley beyond, their bones picked clean by the scavenging crows. You hear the gasps of horror as your men recognize the armour and tattered white uniforms of these skeletons, for they were once your countrymen, Sommlending Guards of the King's cavalry.
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small28.pdf} %
+ \end{figure}
++They must have died in battle, for the corpses of bandit warriors lie entwined among them. Forty brave soldiers, nearly half of the squadron that left Holmgard one month ago, now lie before you, and it is with heavy heart that your men set about the grisly task of burial. As you ride away from this valley of death, you are comforted only by the knowledge that Captain D'Val was not among those you buried.
++
+ \nopagebreak\begin{aonchoice}\hyperlink{sect120}{\bfseries Turn to 120}.\end{aonchoice}
+ 
+ 
+@@ -4444,7 +4492,7 @@
+ 
+ The horseman is charging at you very quickly. You will only be able to fight for one round of combat before the momentum of his attack carries him past you.
+ 
+-\begin{aoncombat}Vassagonian Horseman: {\sc Combat~Skill}~20 ~~{\sc Endurance}~28\end{aoncombat}
++\begin{aoncombat}Vassagonian Horseman:\\{\sc Combat~Skill}~20 ~~{\sc Endurance}~28\end{aoncombat}
+ 
+ \nopagebreak\begin{aonchoice}If you lose more {\sc Endurance} points than your enemy in this one round of combat, \hyperlink{sect209}{\bfseries turn to 209}.\end{aonchoice}
+ 
+@@ -4462,12 +4510,13 @@
+ 
+ \addsec[Section 335]{\hspace*{\fill}\hypertarget{sect335}{}335\hspace*{\fill}}
+ 
+-The tunnel soon emerges into a large chamber divided by a deep mine shaft. A dark-skinned warrior in tatty leather armour stands guard at the entrance to the wooden bridge spanning the shaft. He is whittling a block of wood and grumbling to himself about how unfair it is that he is given the most boring duties. On the far side of the chamber a tunnel disappears into the west wall. You know that if you are to reach the tunnel, you must get past the guard and across the bridge.
+-
++The tunnel soon emerges into a large chamber divided by a deep mine shaft. A dark-skinned warrior in tatty leather armour stands guard at the entrance to the wooden bridge spanning the shaft. He is whittling a block of wood
+ \begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth,keepaspectratio]{small29.pdf} %
+ \end{figure}
++and grumbling to himself about how unfair it is that he is given the most boring duties. On the far side of the chamber a tunnel disappears into the west wall. You know that if you are to reach the tunnel, you must get past the guard and across the bridge.
++
+ \nopagebreak\begin{aonchoice}If you possess the Kai Discipline of Camouflage, \hyperlink{sect35}{\bfseries turn to 35}.\end{aonchoice}
+ 
+ \nopagebreak\begin{aonchoice}If you have the Kai Discipline of Mind Over Matter, \hyperlink{sect317}{\bfseries turn to 317}.\end{aonchoice}
+@@ -4563,6 +4612,7 @@
+ 
+ You search the stalls to discover that only eleven horses remain; the others have been stolen by the bandits. After careful thought, you decide to call for ten volunteers to continue the mission with you, and order the remaining rangers to return to Sommerlund on foot at first light to report what has happened. As they head off to the north at dawn, you wait until they have vanished from sight before you turn and ride in the opposite direction.
+ 
++\enlargethispage{.1\baselineskip}
+ Pick a number from the \hyperlink{random}{\emph{Random Number Table}}.
+ 
+ \nopagebreak\begin{aonchoice}If the number you have picked is 0--6, \hyperlink{sect51}{\bfseries turn to 51}.\end{aonchoice}
+@@ -4606,13 +4656,14 @@
+ 
+ \hspace*{\fill} \mbox{\itshape \hyperlink{ill21}{Illustration~XXI}}\hspace*{\fill}\\*[\parskip]
+ \begin{figure}[p]
+-\centering
+ \hypertarget{ill21}{}
+-\raisebox{0cm}[\textheight]{\includegraphics[width=\textwidth,height=\figureheight,keepaspectratio]{ill21.pdf}}%
+-\\{\itshape Barraka's men flee from King Ulnar\\
+-and the army of\\
+-Sommerlund
+-}
++\setlength{\unitlength}{1mm}
++\makebox[\textwidth]{\raisebox{0cm}[0.5\textheight][0.5\textheight]{%
++\begin{picture}(0,0)
++\put(0,0){\makebox(0,0){\rotatebox{90}{\includegraphics[width=\textheight,keepaspectratio]{ill21.pdf}}}}
++\put(67,0){\makebox(0,0){\rotatebox{90}{\itshape Barraka's men flee from King Ulnar and the army of Sommerlund.}}}
++\end{picture}
++}}%
+ \end{figure}
+ As Barraka dies, the wind suddenly rises in pitch and intensity, filling the temple with a mournful cry of despair. You feel the chill, malevolent spirit of Darklord Vashna engulfing you in an icy embrace, but you sense that he is powerless to harm you. The sacrifice has been foiled; he is doomed to lament for a victory that might have been.
+ 
