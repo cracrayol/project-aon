@@ -5,6 +5,6 @@
 
 du -h `find . -path "*xhtml-less-simple*$1"`
 find . -name "$1.*" \
-    | grep -v "\.svn\|\.xml" \
+    | grep -v "\.svn\|\.xml\|\.dot\|\.log" \
     | xargs ls -lh \
     | awk '{print $5 "\t" $9}'
