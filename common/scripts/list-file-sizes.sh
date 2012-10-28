@@ -51,3 +51,5 @@ list_file_size pdb_size \
     `find . -name "$1.pdb"`
 list_file_size lrf_size \
     `find . -name "$1.pdb"`
+list_file_size svg_size \
+    `find . -name "$1.svgz"`
