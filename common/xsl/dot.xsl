@@ -123,7 +123,7 @@ TODO:
     <xsl:value-of select="$newline"/>
    </xsl:if>
    <xsl:if test="@idrefs">
-    <xsl:for-each select="tokenize(normalize-space(@idrefs))"/>
+    <xsl:for-each select="tokenize(normalize-space(@idrefs), '\s')"/>
      <xsl:value-of select="$indent"/>
      <xsl:value-of select="$section"/>
      <xsl:text> -&gt; </xsl:text>
