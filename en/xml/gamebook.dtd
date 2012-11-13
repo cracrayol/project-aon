@@ -11,6 +11,9 @@ more general utility.
 
 Change Log:
 
+13 November 2012 (version 0.13.3)
+ * added the "puzzle" and "deadend" elements
+
 24 May 2011 (version 0.13.2)
  * added the "relationship" attribute to the "creator" and "contributor"
    elements
@@ -189,7 +192,7 @@ III. Block Elements
 
 <!ENTITY % inline.content "#PCDATA | a | bookref | footref | em | strong | thought | foreign | quote | cite | code | line | br | typ | onomatopoeia | spell | item | %character.content;">
 
-<!ENTITY % block.content "p | ul | ol | dl | table | blockquote | illustration | combat | choice | hr | illref | poetry">
+<!ENTITY % block.content "p | ul | ol | dl | table | blockquote | illustration | combat | choice | puzzle | deadend | hr | illref | poetry">
 
 <!ENTITY % mixed.content "choose | signpost">
 
@@ -490,7 +493,7 @@ order to create more complex data representations.
 
 A "section" element can used as a linking element. The most useful way 
 to utilize this is to make it a named anchor and thus the target of a 
-"choice" element.
+"choice" or "puzzle" element.
 
 Examples:
 
@@ -1135,6 +1138,55 @@ Example:
   <link-text>the unfortunately ubiquitous "Click Here!"</link-text>
   . . .
  </choice>
+
+-->
+
+<!ELEMENT puzzle ( %inline.content; | %mixed.content; )*>
+<!ATTLIST puzzle
+          %core.attributes;
+          %link.attributes;
+          idrefs IDREFS #IMPLIED
+>
+<!--
+
+The "puzzle" element contains the text describing the action of
+proceeding to the section that is the answer for a puzzle or riddle
+presented elsewhere within the section. It's a linking element and
+therefore can link to the place to which the correct answer to the
+puzzle leads. In the case that the puzzle has multiple solutions, use a
+space separated list of IDs in the "idrefs" attribute. This link
+information should not generally be presented to the reader.
+
+Examples:
+
+ <section id="section12" . . .> . . . </section>
+ . . .
+ <puzzle idref="section12">If you know the answer to her riddle, turn to
+ the entry of that number.</puzzle>
+
+
+ <section id="section23" . . .> . . . </section>
+ . . .
+ <section id="section350" . . .> . . . </section>
+ . . .
+ <puzzle idrefs="section23 section350">If you know only one of the two
+ correct numbers that you need to open the lock, turn to the entry of
+ that number.</puzzle>
+
+-->
+
+<!ELEMENT deadend ( %inline.content; | %mixed.content; )*>
+<!ATTLIST deadend
+          %core.attributes;
+>
+<!--
+
+The "deadend" element contains the text describing the fact that an
+adventure has come to an end (e.g. the character has died).
+
+Example:
+
+ <deadend>Tragically, your life ends here.</deadend>
 
 -->
 
