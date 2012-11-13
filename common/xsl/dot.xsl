@@ -12,7 +12,7 @@ TODO:
 
 -->
 
-<xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:transform version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
  <xsl:output method="text" encoding="UTF-8"/>
 
@@ -110,6 +110,27 @@ TODO:
     <xsl:value-of select="format-number( substring( @idref, 5 ), '000' )"/>
     <xsl:text>;</xsl:text>
     <xsl:value-of select="$newline"/>
+   </xsl:if>
+  </xsl:for-each>
+
+  <xsl:for-each select=".//puzzle">
+   <xsl:if test="@idref">
+    <xsl:value-of select="$indent"/>
+    <xsl:value-of select="$section"/>
+    <xsl:text> -&gt; </xsl:text>
+    <xsl:value-of select="format-number( substring( @idref, 5 ), '000' )"/>
+    <xsl:text>;</xsl:text>
+    <xsl:value-of select="$newline"/>
+   </xsl:if>
+   <xsl:if test="@idrefs">
+    <xsl:for-each select="tokenize(normalize-space(@idrefs))"/>
+     <xsl:value-of select="$indent"/>
+     <xsl:value-of select="$section"/>
+     <xsl:text> -&gt; </xsl:text>
+     <xsl:value-of select="format-number( substring( ., 5 ), '000' )"/>
+     <xsl:text>;</xsl:text>
+     <xsl:value-of select="$newline"/>
+    </xsl:for-each>
    </xsl:if>
   </xsl:for-each>
  </xsl:template>

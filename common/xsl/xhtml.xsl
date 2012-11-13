@@ -25,7 +25,7 @@ Todo:
             doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" />
 
 <xsl:strip-space elements="section data ol ul dl li dd footnotes footnote" />
-<xsl:preserve-space elements="p choice" />
+<xsl:preserve-space elements="p choice puzzle deadend" />
 
 <!-- ====================== parameters ========================== -->
 
@@ -569,6 +569,18 @@ Todo:
   </xsl:for-each>
  </p>
  <xsl:value-of select="$newline" />
+</xsl:template>
+
+<xsl:template match="puzzle">
+ <p class="puzzle">
+  <xsl:apply-templates /><xsl:value-of select="$newline" />
+ </p>
+</xsl:template>
+
+<xsl:template match="deadend">
+ <p class="deadend">
+  <xsl:apply-templates /><xsl:value-of select="$newline" />
+ </p>
 </xsl:template>
 
 <xsl:template match="data/signpost">
