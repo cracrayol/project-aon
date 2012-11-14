@@ -526,13 +526,13 @@ Todo:
 
  <xsl:template match="puzzle">
   <p class="puzzle">
-   <xsl:apply-templates /><xsl:value-of select="$newline" />
+   <xsl:apply-templates />
   </p>
  </xsl:template>
  
  <xsl:template match="deadend">
   <p class="deadend">
-   <xsl:apply-templates /><xsl:value-of select="$newline" />
+   <xsl:apply-templates />
   </p>
  </xsl:template>
 
@@ -540,7 +540,6 @@ Todo:
   <div class="signpost">
    <xsl:apply-templates />
   </div>
-
  </xsl:template>
 
  <xsl:template match="signpost">

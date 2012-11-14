@@ -846,14 +846,16 @@ Todo:
 
 <xsl:template match="puzzle">
  <p class="puzzle">
-  <xsl:apply-templates /><xsl:value-of select="$newline" />
+  <xsl:apply-templates />
  </p>
+ <xsl:value-of select="$newline" />
 </xsl:template>
 
 <xsl:template match="deadend">
  <p class="deadend">
-  <xsl:apply-templates /><xsl:value-of select="$newline" />
+  <xsl:apply-templates />
  </p>
+ <xsl:value-of select="$newline" />
 </xsl:template>
 
 <xsl:template match="data/signpost">
