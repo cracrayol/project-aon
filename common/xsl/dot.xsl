@@ -122,7 +122,7 @@ TODO:
     <xsl:value-of select="$section"/>
     <xsl:text> -&gt; </xsl:text>
     <xsl:value-of select="format-number( substring( @idref, 5 ), '000' )"/>
-    <xsl:text>;</xsl:text>
+    <xsl:text> [label="puzzle",style=dashed];</xsl:text>
     <xsl:value-of select="$newline"/>
    </xsl:if>
    <xsl:if test="@idrefs">
@@ -131,7 +131,7 @@ TODO:
      <xsl:value-of select="$section"/>
      <xsl:text> -&gt; </xsl:text>
      <xsl:value-of select="format-number( substring( ., 5 ), '000' )"/>
-     <xsl:text>;</xsl:text>
+     <xsl:text> [label="puzzle",style=dashed];</xsl:text>
      <xsl:value-of select="$newline"/>
     </xsl:for-each>
    </xsl:if>
