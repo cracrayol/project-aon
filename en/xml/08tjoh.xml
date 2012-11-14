@@ -941,7 +941,7 @@
 
      <data>
       <p>Painfully slowly you inch your way across the bog, covering less than a mile in three hours. As the sun sets, you find yourselves in the middle of a thickening fog and decide to halt for the night and continue at dawn. Unfortunately, the Danarg quicksands shift and settle like the ebb and flow of the tide, and during the night, you are drawn into its depths to remain forever a prisoner of the bog.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -1310,7 +1310,7 @@
 
      <data>
       <p>You plummet through the mist and crash head-first into the rocks and boulders that lie just beneath the surface of the pool, 100 feet below. Death is instantaneous.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -1385,7 +1385,7 @@
 
      <data>
       <p>A breathtaking agony engulfs you as three sharpened spearheads penetrate your rib cage. You turn to Paido, your hands outstretched, your eyes wide with pain. He lunges forward in a desperate bid to catch you as you fall but he too is struck down by thrusting spears. Amid the sounds of chaos and confusion, you slip unwillingly into the waiting arms of death.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -1530,7 +1530,7 @@
 
      <data>
       <p>Suddenly you are hit in the back and propelled into the yawning chasm. Paido, who was following closely on your heels, has rammed into you and sent you tumbling over the edge. As you plummet to your doom, you hear his scream of anguish, echoing in the void.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -1606,7 +1606,7 @@
      <data>
       <p>The chilling sound of the Helghast<ch.apos/>s laughter rings in your ears as you launch yourself against this fell creature. It offers no resistance to your attack and you smite a crushing blow, tearing it from shoulder to stomach. But the Helghast does not cease laughing and no blood pours from its wound, for it cannot be harmed by sharpened steel or hardened wood<ch.emdash/>its bane is magic.</p>
       <p>The last sound you hear is the roar of fire as a searing burst of flame penetrates your chest.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -2050,7 +2050,7 @@
 
      <data>
       <p><quote>Good, good!</quote> he exclaims gleefully, twisting his droopy moustache as he paces the muddy road. <quote>Answer me this riddle. If a brick counterbalances three quarters of a pound plus three quarters of a brick, how many pounds does the whole brick weigh?</quote></p>
-      <choice>If you can answer the old man<ch.apos/>s riddle,<footref id="sect112-1" idref="sect112-1-foot"/> write down the solution and then <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> with the same number as your answer.</choice>
+      <puzzle idref="sect3">If you can answer the old man<ch.apos/>s riddle,<footref id="sect112-1" idref="sect112-1-foot"/> write down the solution and then <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> with the same number as your answer.</puzzle>
       <choice idref="sect269">If you cannot answer the riddle, <link-text>turn to 269</link-text>.</choice>
      </data>
     </section>
@@ -2149,7 +2149,7 @@
       <p>Paido<ch.apos/>s coma deepens. Shortly after midnight, his heart and brain cease to function and he slips painlessly into death. Grief fills your senses and you mourn the loss of your brave companion, but your grief soon turns to anger as you remember the foul trickery that ended his life and so nearly put an end to yours.</p>
       <p>A rage grows within you. You take Paido<ch.apos/>s sword and vow to avenge his death by washing it in the blood of his murderers. Heedless of caution and the warning cry of your senses, you throw open the cellar door and go in search of vengeance.</p>
       <p>You have taken only a few paces along the corridor when a terrific explosion lifts you off your feet. The monks followed your trail to the cellar and prepared a surprise for you. You have tripped a wire and activated an explosive charge set into the floor. When the monks come to inspect their handiwork, they will discover your remains lying in the rubble.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -2219,7 +2219,7 @@
       <p>The bargee brings a round of Chai-cheer to your table and you drink to the health of Queen Evaine of Talestria. The mood soon becomes much friendlier and you learn that the soldier, whose name is Trost, is on his way back to his post at the Tharro garrison after enjoying a week<ch.apos/>s leave with his family in Phoena.</p>
       <p>As you drink your ale, the sound of applause rises above the hubbub of conversation. An elderly man, tall and distinguished-looking, walks slowly to the centre of the floor and bows to his audience. His pale face and silver-grey hair are a stark contrast to his richly embroidered robes of crimson and gold. He smiles warmly and introduces himself as Count Conundrum, the prince of puzzles. For your amusement, he will pose some brain-twisting conundrums. So confident is he that none will be able to answer his riddles correctly that he is offering 20 Lune to anyone who can prove him wrong. A hush descends as the passengers await his first puzzle.</p>
       <p><quote>If one-and-a-half geese lay one-and-a-half eggs in one-and-a-half days, how many eggs will three geese lay in eight days?</quote></p>
-      <choice>If you can answer the Count<ch.apos/>s riddle, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> with the same number as your answer.<footref id="sect126-1" idref="sect126-1-foot"/></choice>
+      <puzzle idref="sect16">If you can answer the Count<ch.apos/>s riddle, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> with the same number as your answer.<footref id="sect126-1" idref="sect126-1-foot"/></puzzle>
       <choice idref="sect141">If you cannot answer the riddle, <link-text>turn to 141</link-text>.</choice>
      </data>
     </section>
@@ -2309,7 +2309,7 @@
 
      <data>
       <p>The sword strikes you squarely between the shoulder blades, sending you tumbling from the saddle. You fall awkwardly, driving the blade deeper into your back. For countless seconds you lie staring at the sky, unable to move, feeling nothing. Before the anaesthesia of shock wears off you are surrounded by enemies who show no mercy.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -2411,7 +2411,7 @@
      <data>
       <p><quote>Very well,</quote> says Count Conundrum. <quote>Just to make our journey to Tharro a little more interesting, if there is anyone here who can answer my next puzzle correctly they will receive from me forty Lune.</quote> A chorus of delighted whisperings emanates from the crowd.</p>
       <p><quote>In winter,</quote> he begins, <quote>the ice-lilies of Lake Adon double in area every twenty-four hours. It takes sixty days from the time the first ice-lily appears until the lake is completely covered with them. On what day is the lake half covered with lilies?</quote></p>
-      <choice>If you can answer the ice-lily riddle, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> with the same number as your answer.<footref id="sect141-1" idref="sect141-1-foot"/></choice>
+      <puzzle idref="sect59">If you can answer the ice-lily riddle, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> with the same number as your answer.<footref id="sect141-1" idref="sect141-1-foot"/></puzzle>
       <choice idref="sect338">If you cannot answer the riddle, <link-text>turn to 338</link-text>.</choice>
      </data>
     </section>
@@ -2564,7 +2564,7 @@
 
      <data>
       <p>A blinding pain rips through your chest, making you scream out. The room spins before your eyes as you gasp for air, and the pain drags you to the floor. Suddenly you feel no more<ch.emdash/>the pain has gone and with it the last beat of your punctured heart.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -2607,7 +2607,7 @@
 
      <data>
       <p>As you fight, the Vordak succeeds in driving its black steel sword through the side of the ship<ch.apos/>s pressure tank. A blast of liquid gas hisses from the hole, freezing the Vordak in its petrifying spray. From above comes a stream of blue fire that ignites the escaping gas. There is a flash, and in a fraction of a second, the Levitron is transformed into a colossal ball of flame.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -2683,7 +2683,7 @@
      <data>
       <p>The dwarf stops hammering. <quote>Is that you, Filcher?</quote> he asks, squinting along the tunnel. When he realizes you are not Filcher, he curses and hurls his mattock at your head. You duck aside, but the pick-like weapon spins past and catches Paido full in the chest. He screams and falls, dying, at your feet. Desperately you try to save him, but the wound is fatal. Anger wells up inside, and you turn to confront his killer, only to find yourself staring into the muzzle of a Bor musket. The dwarf pulls the trigger, and you are decapitated by the blast.</p>
       <p>It may be some consolation to learn that your killer did not escape unpunished. The shock wave of the blast brought down the tunnel ceiling and buried him alive.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -3092,7 +3092,7 @@
 
      <data>
       <p>There is a terrific <onomatopoeia>bang</onomatopoeia> as another cube explodes. It is followed, almost instantaneously, by a massive explosion that transforms the Levitron into a colossal ball of flame, as the liquid gas stored inside the pressure tank ignites.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -3353,7 +3353,7 @@
 
      <data>
       <p>The pain gradually subsides, but a fearful numbness spreads through your body, paralysing your limbs and leaving you totally at the mercy of your enemy. He utters a cruel laugh and turns to leave the chamber. Swiftly you sink into a coma induced by the poison in your blood: it is a sleep from which you will never awaken.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -3362,7 +3362,7 @@
 
      <data>
       <p>A powerful nerve toxin is injected into your throat, paralysing you from the neck down. Your vocal chords are frozen and you are incapable of shouting for Paido<ch.apos/>s help. A blind horror fills your senses as, helplessly, you watch the creature gorge on your blood, its shell-like body pulsating and swelling.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -3517,7 +3517,7 @@
 
      <data>
       <p>The deadly korovax has multiplied in your bloodstream unchecked. Suddenly your thigh muscles contract, causing you to stagger and fall. Paido rushes to your side, lifting you out of the choking airless mist that covers the forest floor. You are shaking from head to toe as opposing muscles pull against each other uncontrollably. Cramp grips your chest like an iron vice, preventing you from breathing and, in the course of three short minutes, you slip into unconsciousness, and from there into a sleep from which there is no awakening.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -3797,7 +3797,7 @@
 
      <data>
       <p>You have leapt out of the frying pan and into the fire! The pool of water is an illusion. Its surface is a gossamer-thin membrane, and it hides the egg-like Korkuna which has burrowed beneath it. As you touch the surface, the edges of the membrane roll inwards and smother your hand, holding you fast in a steel grip. A snaky tendril lashes out from a hole in the shell and wraps itself around your throat, its sharp tip piercing your neck. You are paralysed; you cannot move. Horror fills your senses as you watch helplessly as the creature gorges on your blood, its shell pulsating and swelling.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -4034,7 +4034,7 @@
 
      <data>
       <p>Nausea and giddiness are beginning to impair your senses. Desperately you muster all your reserves of strength to combat the poison, but you are greatly fatigued after your fight with the Helghast. Gradually the pain subsides to be replaced by a fearful numbness that paralyses your limbs. Swiftly you sink into a coma induced by the poison in your blood. It is a sleep from which you will never awaken.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -4183,7 +4183,7 @@
       <p>Paido<ch.apos/>s condition deteriorates rapidly. His coma deepens until finally his heart and brain simply cease to function and he dies. Sadness fills your senses, and in the lonely confines of the passage, you mourn the loss of your brave companion. But grief soon turns to anger as you remember the base trickery which ended his life, and so nearly put an end to yours.</p>
       <p>A rage grows within you, fuelled by a need for revenge. You take Paido<ch.apos/>s sword and vow to avenge his death by washing it in the blood of his murderers. Heedless of caution and the warning cry of your senses, you pull a lever which activates the secret pedestal lift and return to the hall above in search of vengeance.</p>
       <p>As you reach the recess beneath the pulpit, you are transfixed by a blinding flash. A searing pain rips through your chest and a deafening <onomatopoeia>bang</onomatopoeia> rings in your ears. Three monks, armed with Bor muskets, have lain in wait in case you reappeared. It seems that their wait was not in vain.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -4527,7 +4527,7 @@
      <data>
       <p>You sense that something is seriously wrong. The wound is deep but you have survived worse than this. Suddenly you realize the dreadful truth, as you recall an element of your early Kai training. Your arm has become infected with korovax, a virulent disease that thrives in the soil of northern Talestria. Its effect is swift and fatal.</p>
       <p>Your muscles start to contract uncontrollably and coordinated movement becomes increasingly difficult. Fear holds you in its icy grip as your chest muscles tighten, squeezing the air from your lungs. You fight for breath but within minutes you have slipped beyond unconsciousness into the timeless embrace of death.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -4716,7 +4716,7 @@
       <p><quote>And finally, for my last puzzle, I offer this beautiful treasure,</quote> he says, as he draws a small silver box inlaid with pearls from the pocket of his robes. <quote>This priceless artefact was stolen from the treasure hoard of Valborg the Enchanter,</quote> he exclaims.</p>
       <p>On hearing this wondrous revelation the tap-room comes alive with excited chatter. You are inclined to disbelieve the tale of the box<ch.apos/>s origin but, nevertheless, it is a beautiful object and is undoubtedly worth at least 100 Lune, perhaps more.</p>
       <p>Silence descends on the hold as all await the Count<ch.apos/>s final puzzle. <quote>When I was last in the market of Garthen,</quote> the Count begins, <quote>I asked an egg trader how many eggs he had sold that day. He replied: <quote>My first customer said that he would buy half my eggs and half an egg more. My second and third customers said exactly the same thing. When I had filled all three orders I was completely sold out of eggs and yet I hadn<ch.apos/>t broken a single egg all day.</quote> How many eggs had the egg trader sold in all?</quote></p>
-      <choice>If you can answer the egg riddle, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry number</a></when><otherwise>turn to the entry number</otherwise></choose> that is the same number as the answer.<footref id="sect338-1" idref="sect338-1-foot"/></choice>
+      <puzzle idref="sect7">If you can answer the egg riddle, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry number</a></when><otherwise>turn to the entry number</otherwise></choose> that is the same number as the answer.<footref id="sect338-1" idref="sect338-1-foot"/></puzzle>
       <choice idref="sect133">If you cannot answer the riddle, <link-text>turn to 133</link-text>.</choice>
      </data>
     </section>

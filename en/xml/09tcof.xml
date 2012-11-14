@@ -763,7 +763,7 @@
 
      <data>
       <p>The shock of the fall and the numbing chill of the icy black water conspire to sap your strength. You flail and flounder in the deep until you are gripped by cramp and can no longer resist your doom. Unconsciousness smothers your pain as you sink slowly to the bottom of the lake, weighed down by your equipment and the freezing water that now fills your lungs.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -972,7 +972,7 @@
 
      <data>
       <p>The Zakhan<ch.apos/>s mocking laughter is the last thing you hear as the fiery bolt of scarlet flame tears through your chest.</p>
-      <p>Tragically, you are slain here in Tahou, your life taken by the evil Zakhan of Vassagonia.</p>
+      <deadend>Tragically, you are slain here in Tahou, your life taken by the evil Zakhan of Vassagonia.</deadend>
      </data>
     </section>
 
@@ -1239,7 +1239,7 @@
 
      <data>
       <p>Bravely you fight the mounted soldiers, but for every one you kill two more emerge from the gatehouse to take his place. Eventually you are overwhelmed by the sheer weight of their numbers, and as you weaken you are knocked down and trampled to death beneath their horses<ch.apos/> hooves.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -1603,7 +1603,7 @@
 
      <data>
       <p>Your decision to discard half your equipment proves to be a fatal error of judgement. The amount of weight you have jettisoned is not enough to help you rise to the surface before cramp afflicts your aching limbs. Unable to resist your doom, you sink slowly to the bottom of the lake, weighed down by your Backpack and the water that now fills your lungs.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -2094,7 +2094,7 @@
 
      <data>
       <p>The last thing you see is the huge stone ball as it falls on you.</p>
-      <p>Tragically, you lose your life here at the siege of Tahou.</p>
+      <deadend>Tragically, you lose your life here at the siege of Tahou.</deadend>
      </data>
     </section>
 
@@ -2132,7 +2132,7 @@
      <data>
       <p>It is the father<ch.apos/>s turn to ask a riddle, but firstly you must decide on your stake. You can choose to gamble either one Special Item or three Backpack Items. If you should fail to answer the riddle correctly you will forfeit the item (or items) you have staked. If you answer the riddle correctly you will win the chance to pick any two items from the father<ch.apos/>s hoard of valuables. On your <a idref="action">Action Chart</a> mark the item or items that you wish to stake.</p>
       <p>A hush descends as you wait for the riddle patiently. The father, whose name is Khmar, draws his dagger from its scabbard and lays it on the table. Then he rests his hand on the shoulder of his eldest son and says, <quote>This dagger is now half as old as my son Loen was when the dagger was new. Loen is now fifteen years old. How old is the dagger?</quote></p>
-      <choice>If you think you can answer the riddle, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry number</a></when><otherwise>turn to the entry number</otherwise></choose> that is the same as the answer.<footref id="sect115-1" idref="sect115-1-foot"/></choice>
+      <puzzle idref="sect5">If you think you can answer the riddle, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry number</a></when><otherwise>turn to the entry number</otherwise></choose> that is the same as the answer.<footref id="sect115-1" idref="sect115-1-foot"/></puzzle>
       <choice idref="sect204">If you cannot answer the riddle, <link-text>turn to 204</link-text>.</choice>
      </data>
     </section>
@@ -2266,7 +2266,7 @@
 
      <data>
       <p>The deadly arrows pierce your heart and stomach. Pain engulfs you like a raging fire, but a chilling numbness soon follows, washing over you like a wave of soothing balm. You fight to stay on your feet but darkness encroaches on all sides: it is the cold embrace of death.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -2626,7 +2626,7 @@
      <data>
       <p>A deafening roar fills the stairwell as a bolt of raw energy hurtles from the rod. You stare aghast as it speeds towards your chest and explodes with a splash of colour that is the last you will ever see.</p>
       <p>In the council chamber of the Elder Magi in Elzian, the golden torch flickers and dies. The members of the High Council hang their heads in sorrow for they know that your life and their hopes have ended here in Zaaryx.</p>
-      <p>Your quest is over.</p>
+      <deadend>Your quest is over.</deadend>
      </data>
     </section>
 
@@ -3179,7 +3179,7 @@
 
      <data>
       <p>You throw out your hands to claw at the rope ladder but your fingers are numb with cold. You cannot close your grip, and with a scream of anguish, you slip and fall backwards into the black abyss. Your scream grows until you impact into a cold, wet avenue of Zaaryx, 200 feet below.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -3286,7 +3286,7 @@
      <data>
       <p>Neither you nor the plains farmers are able to answer Khmar<ch.apos/>s riddle correctly, and you all forfeit your stakes (remember to delete what you wagered from your <a idref="action">Action Chart</a>). But Khmar is a very sporting fellow. He offers you the chance to win back what you have just lost by answering his next riddle correctly.</p>
       <p><quote>This is Juno, my youngest boy,</quote> he says, patting the head of his second son. <quote>I am four times as old as him now. Twenty years from now, I will be only twice as old as him. How old am I, and how old is my son today?</quote></p>
-      <choice>If you think you have both the answers to this riddle, add the two ages together and <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry number</a></when><otherwise>turn to the entry number</otherwise></choose> that is the same as the total.<footref id="sect204-1" idref="sect204-1-foot"/></choice>
+      <puzzle idref="sect50">If you think you have both the answers to this riddle, add the two ages together and <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry number</a></when><otherwise>turn to the entry number</otherwise></choose> that is the same as the total.<footref id="sect204-1" idref="sect204-1-foot"/></puzzle>
       <choice idref="sect302">If you cannot answer the riddle, <link-text>turn to 302</link-text>.</choice>
      </data>
     </section>
@@ -3363,7 +3363,7 @@
 
      <data>
       <p>A cloud of arrows engulfs you and pain explodes throughout your body. You are mortally wounded, pierced by a dozen shafts, and although you fight to hang on to life, it is a fight you cannot win.</p>
-      <choice>Your life and your quest end here.</choice>
+      <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -3714,8 +3714,8 @@
      <data>
       <p>You follow the corridor to a curved flight of alabaster stairs and descend them to a massive chamber. The floor is constructed of steely-blue metal flecked with silver, and a hundred darkened archways line the walls. Directly ahead stand two gigantic doors of sheeted platinum, engraved with patterns breathtaking in their intricacy. The chamber is deserted, but as you cross the floor and approach the doors, you are acutely aware that any one of the arches could be hiding a legion of reptilians.</p>
       <p>In the centre of the door there is a lock that consists of four hexagonal buttons, arranged in the shape of a pyramid, with one button at the top and three buttons in a line below it. Every time you touch a button, a glowing number appears on its surface. Your basic Kai sense informs you that this is a combination lock; if you press each button several times until the correct numbers show on all four buttons the lock will release and the doors will open.</p>
-      <choice>If you know the correct number to press for the top button, and the correct three-figure number for the bottom three buttons, add both numbers together and <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that has the same number as the total.</choice>
-      <choice>If you know only one of the two correct numbers that you need to open the lock, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> of that number.<footref id="sect241-1" idref="sect241-1-foot"/></choice>
+      <puzzle idref="sect326">If you know the correct number to press for the top button, and the correct three-figure number for the bottom three buttons, add both numbers together and <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that has the same number as the total.</puzzle>
+      <puzzle idrefs="sect6 sect320">If you know only one of the two correct numbers that you need to open the lock, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> of that number.<footref id="sect241-1" idref="sect241-1-foot"/></puzzle>
       <choice idref="sect207">If you do not know the correct numbers to press for either the top button or the bottom three buttons, <link-text>turn to 207</link-text>.</choice>
      </data>
     </section>
@@ -4881,7 +4881,7 @@
 
      <data>
       <p>The wagon descends a steep hill that runs parallel to a section of the city wall under bombardment from enemy catapults. As you near the bottom of the hill, a huge stone ball drops from the sky and slams into the wagon, killing two horses, the captain, and you.</p>
-      <p>Tragically, your life ends here.</p>
+      <deadend>Tragically, your life ends here.</deadend>
      </data>
     </section>
 

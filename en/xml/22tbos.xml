@@ -1115,7 +1115,7 @@
        <p><thought>You have proved your physical courage, foolish follower of Kai. But now you must put your mental strength to the test if you wish to find the Isle of Lorn.</thought></p>
        <p>The eerie voice laughs and you steel yourself to meet its mental challenge.</p>
        <p><thought>How great in number are the Warriors of Nhang?</thought></p>
-       <p>If you think you know the answer to this challenge, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn now to the section</a></when><otherwise>turn now to the section</otherwise></choose> which is the same as your answer.<footref id="sect2-1" idref="sect2-1-foot"/></p>
+       <puzzle idref="sect80">If you think you know the answer to this challenge, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn now to the section</a></when><otherwise>turn now to the section</otherwise></choose> which is the same as your answer.<footref id="sect2-1" idref="sect2-1-foot"/></puzzle>
        <choice idref="sect303">If you do not know the answer to this challenge, <link-text>turn to 303</link-text>.</choice>
      </data>
     </section>
@@ -1208,7 +1208,7 @@
 
      <data>
        <p>You land a metre short of the grassy edge and fall headlong into the deep dark pit. The base of this trap does not contain sharpened stakes or any other such deadly contrivances, yet it proves to be just as fatal when you are knocked unconscious upon hitting its rocky base. Tragically, you never regain consciousness; the villagers close in and finish you off with their bows.</p>
-       <p>Your life and your quest end here.</p>
+       <deadend>Your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -1443,7 +1443,7 @@
 
      <data>
        <p>Defiantly you face the onrushing villagers with your Kai Weapon raised in your hand. They continue to fire their bows as they close upon you and several arrows strike you simultaneously in the chest. You are consumed by a sudden wave of darkness that obliterates your senses and, although you struggle to overcome come it, this proves to be one battle that you cannot win.</p>
-       <p>Tragically, your life and your quest end here.</p>
+       <deadend>Tragically, your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -1660,7 +1660,7 @@
 
      <data>
        <p>Before you reach the top of the pit wall, the villagers close in and finish you off with arrows.</p>
-       <p>Sadly, your life and your quest end here.</p>
+       <deadend>Sadly, your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -2457,7 +2457,7 @@
        <p><thought>You have proved your physical courage, foolish follower of Kai. But now you must put your mental strength to the test if you wish to find the Isle of Lorn.</thought></p>
        <p>The eerie voice laughs and you steel yourself to meet its mental challenge.</p>
        <p><thought>How many heads are fixed upon the harbour gate of Suhn?</thought></p>
-       <p>If you think you know the answer to this challenge, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn now to the section</a></when><otherwise>turn now to the section</otherwise></choose> which is the same as your answer.<footref id="sect107-1" idref="sect107-1-foot"/></p>
+       <puzzle idref="sect120">If you think you know the answer to this challenge, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn now to the section</a></when><otherwise>turn now to the section</otherwise></choose> which is the same as your answer.<footref id="sect107-1" idref="sect107-1-foot"/></puzzle>
        <choice idref="sect158">If you do not know the answer to this challenge, <link-text>turn to 158</link-text>.</choice>
      </data>
     </section>
@@ -3135,7 +3135,7 @@
 
      <data>
        <p>The globes dance around your boat and their chilling laughter echoes through the mist. Suddenly the Moonstone and the satchel disappear, and an icy coldness invades your heart when you sense that you have now fallen into the thrall of these supernatural beings. Tragically, you are doomed to spend the rest of eternity a prisoner of this timeless void.</p>
-       <p>Your life and your quest end here in the Sea of Mists.</p>
+       <deadend>Your life and your quest end here in the Sea of Mists.</deadend>
      </data>
     </section>
 
@@ -3172,7 +3172,7 @@
 
      <data>
        <p>You see the deck of the trading ship come rushing towards you, and then, in the very next instant, your vision is obliterated by a vivid white flash and you are plunged into a dark and fathomless void. You have been struck in the head by an arrow and your death is mercifully swift.</p>
-       <p>Tragically, your life and your quest end here beneath the harbour bridge of Ghol-Tabras.</p>
+       <deadend>Tragically, your life and your quest end here beneath the harbour bridge of Ghol-Tabras.</deadend>
      </data>
     </section>
 
@@ -4121,7 +4121,7 @@
         <instance class="pdf" src="small12.pdf" width="386" height="87"/>
        </illustration>
 
-       <p>Your life and your quest end here in the jungle of Shadaki.</p>
+       <deadend>Your life and your quest end here in the jungle of Shadaki.</deadend>
      </data>
     </section>
 
@@ -4953,7 +4953,7 @@
 
      <data>
        <p>The globes dance around your boat and their chilling laughter echoes through the mist. Suddenly the Moonstone and the satchel disappear and an icy coldness invades your heart when you sense that you have now fallen into the thrall of these supernatural beings. Tragically, you are doomed to spend the rest of eternity a prisoner of this timeless void.</p>
-       <p>Your life and your quest end here in the Sea of Mists.</p>
+       <deadend>Your life and your quest end here in the Sea of Mists.</deadend>
      </data>
     </section>
 
@@ -5113,7 +5113,7 @@
      <data>
        <p>The officer is outraged by your offer. He summons his guards and he has you dragged away to the cells. All of your equipment is confiscated, including your satchel.</p>
        <p>Fearing for your life and the safety of the Moonstone, later in the day you escape from your cell and go in search of your missing equipment. Your make it as far as the Hall of Correction<ch.apos/>s inner keep before the alarm is sounded and you are entrapped there. You offer to surrender but the officer refuses to listen. He orders his guards to encircle the battlements and then, without mercy, he orders them to open fire at you with their crossbows.</p>
-       <p>Tragically, your life and your quest end here in the Hall of Correction.</p>
+       <deadend>Tragically, your life and your quest end here in the Hall of Correction.</deadend>
      </data>
     </section>
 
@@ -5165,7 +5165,7 @@
 
      <data>
        <p>You are nearing the top of the ladder when you lose your grip and fall backwards into the hold. You struggle to stand but you are suddenly struck by a second deluge of water and debris that knocks you unconscious. Sadly, you never regain consciousness. Minutes later the <cite>Vargas</cite> sinks beneath the waves and she takes you down to the seabed, fifty fathoms below.</p>
-       <p>Tragically, your life and your quest end here at the bottom of the Sea of Dreams.</p>
+       <deadend>Tragically, your life and your quest end here at the bottom of the Sea of Dreams.</deadend>
      </data>
     </section>
 

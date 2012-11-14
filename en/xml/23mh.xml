@@ -1608,7 +1608,7 @@
        <p>The Baron holds up the Stone Dagger that was found in your Backpack. <quote>You have a persuasive tongue,</quote> he says, <quote>but here I hold proof that you are assassins. This evil blade is the instrument with which you intended to slay me. See, it is already stained with the blood of those you have slain before. No goodly men would carry such a weapon for their own defence.</quote></p>
        <p>Desperately you try to explain how the Stone Dagger came into your possession, how you discovered it in the hut in the Dammerdon Mountains. Unfortunately your hurried explanation does little to help. Baron Lodamos has already made up his mind that you are assassins in the pay of Baron Sadanzo, sent here to murder him, and he will not be convinced otherwise.</p>
        <p>The Baron turns to the sergeant of his bodyguard and orders him to have his men prepare their weapons. A cold shiver runs down your spine when you see that these men-at-arms are equipped with crossbows that are cocked and loaded, ready to fire. The sergeant gives the order. The guards raise their bows and take aim. Prince Karvas begs the Baron to reconsider but it is now too late. Lodamos hurls the Stone Dagger to the floor, smashing it to pieces, and then he spins on his heel and strides out of the cell without looking back. With a grunt, his sergeant gives the order to fire and his men release their volley of deadly missiles. Death is mercifully swift.</p>
-       <p>Tragically, your life and your mission end here in the dungeons of the Varedo Citadel.</p>
+       <deadend>Tragically, your life and your mission end here in the dungeons of the Varedo Citadel.</deadend>
      </data>
     </section>
 
@@ -2660,7 +2660,7 @@
        <p>The instant the cell door crashes shut, you use your Magnakai Discipline of Nexus to loosen the cords that bind your wrists, and then you untie the Prince. The air in this dark prison is dank and stifling, and what little ventilation that there is seems to come from the narrow crack that runs around the iron cell door. You vow to Karvas that this foul dungeon will not hold him for long, and you set about examining its walls and floor in the hope of finding a way to escape.</p>
        <p>You soon discover that you have been locked in the securest cell of the citadel, deep below the ground. Beyond its slimy walls there lies nothing but solid earth. Only the cell door offers a glimmer of hope, yet it has no handle, hinges, or keyhole visible on the inside. It is not secured by key but by a tumbler lock, similar to the lock of a safe, and it can be opened by means of a dial on the outside of the door. Placing your ear to its surface, you use your Magnakai Discipline of Nexus to will the lock tumblers to move. After a few moments you hear them begin to click over.</p>
        <p>You discover that there are three tumblers. To open the door, each one has to be turned to the correct position in sequence. Using your Sixth Sense, you determine that the first number in the sequence is equal to the number of horses you took from the Tehda Stables. The second is equivalent to the number of Lune one can normally expect to receive in exchange for 1 Gold Crown. The third in the sequence is equivalent to the number of towns and cities there are, at present, in the Doomlands of Naaros.</p>
-       <p>When you think you know the three-digit answer, note down the figures in order and <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of the book</a></when><otherwise>turn to the section of the book</otherwise></choose> which is the same as your answer.<footref id="sect113-1" idref="sect113-1-foot"/></p>
+       <puzzle idref="sect240">When you think you know the three-digit answer, note down the figures in order and <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of the book</a></when><otherwise>turn to the section of the book</otherwise></choose> which is the same as your answer.<footref id="sect113-1" idref="sect113-1-foot"/></puzzle>
        <choice idref="sect203">If you are unable to determine the correct solution, <link-text>turn instead to 203</link-text>.</choice>
      </data>
     </section>
@@ -3126,7 +3126,7 @@
 
      <data>
        <p>The rock knocks you unconscious and you fall from your saddle to crash head-first into the ground. Moments later, your horse and your limp body are washed away by millions of gallons of roaring water that flood down from surrounding slopes.</p>
-       <p>Tragically, your life and your mission end here in the Dammerdon Mountains.</p>
+       <deadend>Tragically, your life and your mission end here in the Dammerdon Mountains.</deadend>
      </data>
     </section>
 
@@ -3344,7 +3344,7 @@
        <p>Prince Karvas rails against his shackles and shouts out in protest, but the gem flares in Sadanzo<ch.apos/>s hand and instantly Karvas ceases to speak or move. Your Sixth Sense tells you that your psychic Kai defences are preventing you from succumbing to the power of this evil gem, a power that has rendered Karvas incapable of speech or movement.</p>
        <p><quote>Well, my loyal knights,</quote> says Sadanzo, addressing his gloating henchmen, <quote>did you not hear the Marshal? The punishment for their crime is death.</quote> The Baron looks at you and Karvas and a malicious smile spreads slowly across his taut, cadaverous face. <quote>By the power invested in me as King of Siyen, I sentence you both to death. Sentence to be carried out<ch.ellips/>at once!</quote></p>
        <p>And with these fateful words ringing in their ears, the robber knights unsheathe their swords and move forward to carry out the Baron<ch.apos/>s order of execution. Mercifully, death is swift for you both.</p>
-       <p>Tragically, your life and your quest end here in the cells of the Royal Cavalry Barracks of Siyen.</p>
+       <deadend>Tragically, your life and your quest end here in the cells of the Royal Cavalry Barracks of Siyen.</deadend>
      </data>
     </section>
 
@@ -3571,7 +3571,7 @@
        <p>Beyond the draperies you find a circular chamber with a polished wooden floor. The dark oak surface is inlaid with lighter woods which form intricate pentagrams and other mystical patterns. The walls are lined with shelves which store a vast number of books, scrolls, and parchments. Your Kai senses warn you that these are works of great evil; it is a library of sorcerous manuals and tomes of worship dedicated to Naar. Prince Karvas is repulsed by the sight of this evil repository. It confirms the suspicion he has held for many years, that Baron Sadanzo is a secret disciple of the Dark God.</p>
        <p>You scan the walls and your Kai senses reel in the face of the evil that festers here. Your instincts tell you to destroy these vile works, to put them to the torch, yet to do so could jeopardise your chances of making a successful escape from the citadel. Rather than take that risk you decide to leave this evil library at once, but as you are retreating towards the archway you notice a square plate of steel sandwiched among the books on a middle shelf. A closer look reveals it to be the door of a wall safe. There is a dial at its centre, similar to the cylinder lock which secured the door to your prison cell. Your Sixth Sense reveals that only two digits are required to open this safe.</p>
        <p>The first number in the sequence is equal to the number of bonus points added to <typ class="attribute">COMBAT SKILL</typ> when the Kai Weapon <quote>Alema</quote> is used against undead enemies. The second is equivalent to half of the <cite>Starstrider</cite><ch.apos/>s full complement of crewmen (not including Acraban).</p>
-       <p>When you think you know the two-digit answer, note down the figures in order and <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of the book</a></when><otherwise>turn to the section of the book</otherwise></choose> which is the same as your answer.<footref id="sect178-1" idref="sect178-1-foot"/></p>
+       <puzzle idref="sect75">When you think you know the two-digit answer, note down the figures in order and <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of the book</a></when><otherwise>turn to the section of the book</otherwise></choose> which is the same as your answer.<footref id="sect178-1" idref="sect178-1-foot"/></puzzle>
        <choice idref="sect258">If you are unable to determine the correct solution, <link-text>turn instead to 258</link-text>.</choice>
      </data>
     </section>
@@ -4134,7 +4134,7 @@
 
      <data>
        <p>You are within a few feet of the Prince when suddenly your fingers lose their purchase on the crumbly rock-face and you fall headlong towards the river. As you plummet, you collide with Prince Karvas and together you tumble into the raging waters, never to be seen again.</p>
-       <p>Tragically, your life and your mission come to a watery end here, in the subterranean river beneath the ancient ruins of Castle Dascallo.</p>
+       <deadend>Tragically, your life and your mission come to a watery end here, in the subterranean river beneath the ancient ruins of Castle Dascallo.</deadend>
      </data>
     </section>
 
@@ -5128,7 +5128,7 @@
        <p>The instant the cell door crashes shut, you use your Magnakai Discipline of Nexus to loosen the cords that bind your wrists and then you untie the Prince. The air in this dark prison cell is dank and stifling. What little ventilation there is comes from the narrow crack that runs around the iron cell door. Your advanced Weaponmastery tells you that your Kai Weapon is close by, and when you close your eyes and concentrate, you detect it lying in an empty cell located directly opposite the door of the one you now occupy.</p>
        <p>You vow to Karvas that this foul dungeon will not hold him for long, and you set about examining its walls and floor in the hope of finding a way to escape. However, you quickly discover that you have been locked in the securest cell of the citadel, deep below the ground. Beyond its slimy walls there lies nothing but solid earth. Only the cell door offers a glimmer of hope, yet it has no handle, hinges, or keyhole visible on the inside. It is not secured by a key but by a tumbler lock, similar to the lock of a safe, and it is opened by means of a dial on the outside of the door. Placing your ear to its surface, you use your Magnakai Discipline of Nexus to will the lock tumblers to move. After a few moments you hear them begin to click over.</p>
        <p>You discover the lock has three tumblers. To open the door, each tumbler has to be turned to the correct position in a sequence. Using your Sixth Sense, you determine that the first number in the sequence is equal to the number of horses you took from the Tehda Stables. The second is equivalent to the number of seeing stones that Lord Zinair gave to Wizard Acraban. The third in the sequence is equivalent to the number of additional Grand Master Disciplines acquired upon reaching the rank of Kai Grand Master Superior.</p>
-       <p>When you think you know the three-digit answer, note down the figures in order and <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of the book</a></when><otherwise>turn to the section of the book</otherwise></choose> which is the same as your answer.<footref id="sect306-1" idref="sect306-1-foot"/></p>
+       <puzzle idref="sect211">When you think you know the three-digit answer, note down the figures in order and <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of the book</a></when><otherwise>turn to the section of the book</otherwise></choose> which is the same as your answer.<footref id="sect306-1" idref="sect306-1-foot"/></puzzle>
        <choice idref="sect275">If you are unable to determine the correct solution, <link-text>turn instead to 275</link-text>.</choice>
      </data>
     </section>
@@ -5276,7 +5276,7 @@
 
      <data>
        <p>You are less than 10 yards from the blazing trunk when suddenly your horse refuses to jump. He dips his head and veers away, sending you somersaulting from the saddle to crash head-first against the burning trunk. The force of the impact snaps your neck and, in a terrifying instant, you are swallowed up by total darkness.</p>
-       <p>Tragically, your life and your mission end here.</p>
+       <deadend>Tragically, your life and your mission end here.</deadend>
      </data>
     </section>
 
@@ -5558,7 +5558,7 @@
 
      <data>
        <p>You are stunned by the shock of impact upon hitting the water and unable to avoid Prince Karvas and his horse when they come crashing down on you from above. The collision knocks you unconscious and your arms become entangled with your horse<ch.apos/>s reins. As he is drawn under by the strong current, you are dragged with him to your doom at the bottom of this deep river. Death is mercifully swift.</p>
-       <p>Tragically, your life and your mission end here in the murky depths of the River Ioma.</p>
+       <deadend>Tragically, your life and your mission end here in the murky depths of the River Ioma.</deadend>
      </data>
     </section>
 
@@ -5619,7 +5619,7 @@
 
      <data>
        <p>Desperately you attempt to dodge the tip of your enemy<ch.apos/>s lance, but your reflexes have been dulled by the shock of your fall and you react too slowly to avoid being hit. The razor-sharp tip penetrates your chest and punctures your heart, bringing a death that is mercifully swift and painless.</p>
-       <p>Tragically, your life and your mission end here on the Bakhasa Trail.</p>
+       <deadend>Tragically, your life and your mission end here on the Bakhasa Trail.</deadend>
      </data>
     </section>
 

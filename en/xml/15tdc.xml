@@ -1953,7 +1953,7 @@
 
      <data>
       <p>The sudden jolt knocks you backwards off your horse and, as you hit the ground, you strike your head and lose consciousness. Sadly, you never reawaken. A few moments after your fall, you are mobbed by angry Drakkarim soldiers who slay you out of hand.</p>
-      <p>Tragically, your life and your quest end here in Shugkona.</p>
+      <deadend>Tragically, your life and your quest end here in Shugkona.</deadend>
      </data>
     </section>
 
@@ -2046,7 +2046,7 @@
 
      <data>
       <p>You step closer to the door and carefully examine the combination lock. You are confident that, with your skill and experience, you will soon have it open without too much difficulty.</p>
-      <p>Study the following sequence of numbers. When you think you have worked out what the missing number is <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> which is identical to your answer.<footref id="sect89-1" idref="sect89-1-foot"/></p>
+      <puzzle idref="sect40">Study the following sequence of numbers. When you think you have worked out what the missing number is <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> which is identical to your answer.<footref id="sect89-1" idref="sect89-1-foot"/></puzzle>
 
       <illustration class="inline">
        <meta>
@@ -2582,7 +2582,7 @@
 
      <data>
       <p>You run to the edge of the fissure and make your leap, but, as you take off, you slip on a loose stone and fall head-first into the yawning void.</p>
-      <p>Tragically, your life and your quest end here in the Palace Tower of Darke.</p>
+      <deadend>Tragically, your life and your quest end here in the Palace Tower of Darke.</deadend>
      </data>
     </section>
 
@@ -3274,7 +3274,7 @@
 
      <data>
       <p>For a terrible moment your body is racked with pain. It fills your mind with a scarlet fog and your vision swims in and out of focus. The reins slip from your hands and you fall from the horse to crash heavily upon the snow-covered road. You strike your head and lose consciousness; you never awaken. The guards close in and put a swift end to both you and your companion, Captain Prarg.</p>
-      <p>Tragically, your quest ends here at Shugkona.</p>
+      <deadend>Tragically, your quest ends here at Shugkona.</deadend>
      </data>
     </section>
 
@@ -3603,7 +3603,7 @@
 
      <data>
       <p>You have almost overcome this treacherous section of the chasm wall when a sudden slip ends in disaster. You are stretching to reach an outcrop of rock with your left hand when the powdery wall gives way beneath the toe of your left boot. You try to recover but it is too late. You slip sideways and topple head-first into the chasm where you land amongst the boulders and debris embedded into the river bank. Death is instantaneous.</p>
-      <p>Tragically, your life and your quest end here in the deepest reaches of the Temple of Antah.</p>
+      <deadend>Tragically, your life and your quest end here in the deepest reaches of the Temple of Antah.</deadend>
      </data>
     </section>
 
@@ -3762,7 +3762,7 @@
       </illustration>
 
       <p>A host of writhing dragons are intertwined above a dial edged with ancient numerals. Each dragon has a number engraved upon its forehead, similar to those numbers which encircle the dial. Your senses inform you that the dragon numbers form a puzzle, and by solving this puzzle you will discover the <quote>key</quote> to this door. Then, by turning the dial to this <quote>key</quote> number, the lock will disengage and the door will open.</p>
-      <choice>Study this puzzle. When you think you have found the answer, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry in this book</a></when><otherwise>turn to the entry in this book</otherwise></choose> which is the same as your answer.<footref id="sect221-1" idref="sect221-1-foot"/></choice>
+      <puzzle idref="sect5">Study this puzzle. When you think you have found the answer, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry in this book</a></when><otherwise>turn to the entry in this book</otherwise></choose> which is the same as your answer.<footref id="sect221-1" idref="sect221-1-foot"/></puzzle>
       <choice idref="sect70">If you discover that your answer is wrong, or if you cannot solve the puzzle, <link-text>turn instead to 70</link-text>.</choice>
      </data>
     </section>
@@ -4590,7 +4590,7 @@
 
      <data>
       <p>An agonizing pain lances through your body and the warm taste of blood fills your mouth. Then the terrible pain gives way to a terrifying numbness. For a moment the surrounding forest swims in and out of focus; then darkness engulfs you and you slip into a sleep from which you will never awaken.</p>
-      <p>Tragically, your life and your mission end here.</p>
+      <deadend>Tragically, your life and your mission end here.</deadend>
      </data>
     </section>
 
@@ -5158,7 +5158,7 @@
 
      <data>
       <p>One of the bolts hits you in the back with such force that you are lifted off your feet. There is a fiery flash of pain, and then a terrifying numbness engulfs your body. As you crash face first into the swirling foam, you realize to your horror that you cannot move any of your limbs. The bolt has severed your spine and, in the long minutes which follow, slowly you drown in the tide.</p>
-      <p>Tragically, your life and your quest end here on Battle Isle.</p>
+      <deadend>Tragically, your life and your quest end here on Battle Isle.</deadend>
      </data>
     </section>
 

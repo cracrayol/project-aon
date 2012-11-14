@@ -1179,7 +1179,7 @@
       <p>A cell awaits you beyond the door. It seems to be no more than what you expected to find and, as the heavy door is slammed shut, you begin immediately to search for a means of escape before the Vazhag guards return.</p>
       <p>Unfortunately, despite its plain appearance, this cell is far more than you expected it to be. It is an extermination chamber, one of several located throughout Mogaruith. It is designed for the speedy destruction of those who would dare to challenge the Cenerese.</p>
       <p>Suddenly a powerful electrical current is fed into the metal floor and you are transfixed as the deadly voltage courses through your body. You fight with all your strength to survive this terrible onslaught but the current is irresistible and, eventually, your body can take no more.</p>
-      <p>Sadly, your life and your quest end here in Mogaruith.</p>
+      <deadend>Sadly, your life and your quest end here in Mogaruith.</deadend>
      </data>
     </section>
 
@@ -1322,7 +1322,7 @@
      <data>
       <p>You scream in pain as an arrow skewers your left wrist. The agony of the wound and the shock of the arrow<ch.apos/>s impact cause you to lose your grip and, in a terrifying instant, you fall from the chain and plummet headlong towards the floor of the hall below. Death is mercifully swift.</p>
       <p>Your incredible bravery has brought about the destruction of the plague virus, and the druids who knew the secrets of its cultivation. This destruction has saved millions from a terrible death, and the selfless courage you displayed in bringing this about will never be forgotten by the free peoples of Magnamund. Sadly, though, death is the price you have paid for your victory.</p>
-      <p>Your life and your quest end here in the plague hall of Mogaruith.</p>
+      <deadend>Your life and your quest end here in the plague hall of Mogaruith.</deadend>
      </data>
     </section>
 
@@ -1362,7 +1362,7 @@
 
      <data>
       <p>The sensation of falling accelerates until you are consumed completely by this spinning vortex. You have been drawn through a portal which leads to a terrible place, a realm where the power of Good holds no sway. You have been ensnared by the soul of Naar himself, the King of the Darkness, and as his prisoner you will remain, doomed to wander his dark domain for all eternity.</p>
-      <p>Tragically, your quest ends here.</p>
+      <deadend>Tragically, your quest ends here.</deadend>
      </data>
     </section>
 
@@ -1411,7 +1411,7 @@
         <line>What remains will open me.<ch.rsquot/></line>
        </p>
       </blockquote>
-      <p>Your Kai senses tell you that by solving the riddle, and then speaking the answer aloud, you will cause the lid of the box to open.</p>
+      <puzzle idrefs="sect26 sect146">Your Kai senses tell you that by solving the riddle, and then speaking the answer aloud, you will cause the lid of the box to open.</puzzle>
       <p>When you think you have solved this riddle, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry number</a></when><otherwise>turn to the entry number</otherwise></choose> which is the same as your answer.<footref id="sect48-1" idref="sect48-1-foot"/></p>
       <choice idref="sect311">If you cannot answer the riddle, or if your answer does not lead to the page number which opens the box, <link-text>turn instead to 311</link-text>.</choice>
      </data>
@@ -2067,7 +2067,7 @@
      <data>
       <p>Your Arrow clips the druid<ch.apos/>s arm but it fails to stop him from making his hasty escape along the forest track. Cursing your ill luck, you run across the clearing and give chase.</p>
       <p>You have been on his trail for less than a mile when you sense danger ahead. The druid has managed to reach another patrolling pack of Vazhag, much larger than his own escort, this one led by six of the druid<ch.apos/>s brethren. He informs them of your presence and, using their corrupted form of herbcraft, they cause the undergrowth to close in upon you and hold you prisoner. Marshalling all your skills, you manage to cut your way free of its grip, but not before the druids have mustered reinforcements from Mogaruith.</p>
-      <p>They attack you mercilessly with the full might of their evil craft. Courageously, you defy them, but their combined power is far greater than even a Grand Master can withstand. With the name of your gods and your country on your lips, you finally meet your doom here in the Forest of Ruel.</p>
+      <deadend>They attack you mercilessly with the full might of their evil craft. Courageously, you defy them, but their combined power is far greater than even a Grand Master can withstand. With the name of your gods and your country on your lips, you finally meet your doom here in the Forest of Ruel.</deadend>
      </data>
     </section>
 
@@ -2533,7 +2533,7 @@
      <data>
       <p>Desperately you try to swim against the current to avoid the fall of shattered rocks and fire but, despite your valiant efforts, you cannot escape being crushed by the deluge. Death is mercifully swift.</p>
       <p>The incredible bravery you have displayed during your quest has brought about the destruction of the plague virus, and the druids who knew the secrets of its cultivation. This destruction has saved millions from a terrible death, and the selfless courage you have shown in bringing this about will never be forgotten by the free peoples of Magnamund. Sadly, though, death is the price you have paid for your victory.</p>
-      <p>Tragically, your life and your quest end here beneath the Ghardoz Bridge.</p>
+      <deadend>Tragically, your life and your quest end here beneath the Ghardoz Bridge.</deadend>
      </data>
     </section>
 
@@ -2866,7 +2866,7 @@
        </illustration>
       <p>Below these numbers, in ancient Cenerese script, is carved the message:</p>
       <p><quote>Declare ye the true number to pass this way</quote></p>
-      <p>Study the grid of numbers. When you think you know the answer to the riddle, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that bears the same number as your answer.<footref id="sect158-1" idref="sect158-1-foot"/></p>
+      <puzzle idref="sect15">Study the grid of numbers. When you think you know the answer to the riddle, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that bears the same number as your answer.<footref id="sect158-1" idref="sect158-1-foot"/></puzzle>
       <choice idref="sect132">If you cannot solve this puzzle, <link-text>turn to 132</link-text>.</choice>
      </data>
     </section>
@@ -2968,7 +2968,7 @@
      <data>
       <p>With gleeful malevolence the creature Exterminus takes hold of you in a bear-hug and proceeds to crush the air from your lungs. Then, with a demonic squeal of delight, it buries its needle-sharp fangs into the side of your neck and a flash of brilliant white light explodes in your head.</p>
       <p>Consciousness deserts you. The sensation of falling overcomes your senses until you are consumed completely by a spinning vortex of darkness. The creature has taken your life, but more than this, it has sentenced you to a terrible punishment. You have been consigned to a realm where the power of Good holds no sway. You have been ensnared by the soul of Naar himself, the King of the Darkness, and as his prisoner you will remain, doomed to wander his dark domain for all eternity.</p>
-      <p>Tragically, your quest ends here.</p>
+      <deadend>Tragically, your quest ends here.</deadend>
      </data>
     </section>
 
@@ -3796,7 +3796,7 @@
       <blockquote>
        <p><quote>Declare ye the true number to pass this way</quote></p>
       </blockquote>
-      <p>Study the grid of numbers. When you think you know the answer to the riddle, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> which bears the same number as your answer.<footref id="sect227-1" idref="sect227-1-foot"/></p>
+      <puzzle idref="sect15">Study the grid of numbers. When you think you know the answer to the riddle, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> which bears the same number as your answer.<footref id="sect227-1" idref="sect227-1-foot"/></puzzle>
       <choice idref="sect132">If you cannot solve this puzzle, <link-text>turn to 132</link-text>.</choice>
      </data>
     </section>
@@ -3857,7 +3857,7 @@
      <data>
       <p>Your Arrow misses its mark and arcs harmlessly into the trees, allowing the druid to effect a hasty escape along the forest track. Cursing your luck, you run across the clearing and give chase.</p>
       <p>You have been on his trail for less than a mile when you sense danger ahead. The druid has managed to reach another patrolling pack of Vazhag, much larger than his own escort, this one led by six of the druid<ch.apos/>s brethren. He informs them of your presence and, using their corrupted form of herbcraft, they cause the undergrowth to close in upon you and hold you prisoner. Marshalling all your skills, you manage to cut your way free of its grip, but not before the druids have mustered reinforcements from Mogaruith.</p>
-      <p>They attack you mercilessly with the full might of their evil craft. Courageously, you defy them, but their combined power is far greater than even a Grand Master can withstand. With the names of your gods and your country on your lips, you finally meet your doom here in the Forest of Ruel.</p>
+      <deadend>They attack you mercilessly with the full might of their evil craft. Courageously, you defy them, but their combined power is far greater than even a Grand Master can withstand. With the names of your gods and your country on your lips, you finally meet your doom here in the Forest of Ruel.</deadend>
      </data>
     </section>
 
@@ -4665,7 +4665,7 @@
      <data>
       <p>There is a blinding flash followed by a terrible pain which fills your head. Then the pain subsides and you feel as if you are falling forwards into a dark, bottomless pit. The end of the heavy chain has lashed out and struck your skull, fracturing it badly. As you are plunged into unconsciousness, you lose your footing and fall to your doom in the hall below.</p>
       <p>Your brave action causes the cauldron to tip its contents into the hall, thereby destroying the plague virus and the druids who know the secrets of its cultivation. This destruction has saved millions from a terrible death, and your courage in bringing this about will never be forgotten by the free peoples of Magnamund. Sadly, though, death is the price you must pay for your victory.</p>
-      <p>Your life and your quest end here in the plague hall of Mogaruith.</p>
+      <deadend>Your life and your quest end here in the plague hall of Mogaruith.</deadend>
      </data>
     </section>
 
@@ -5012,7 +5012,7 @@
      <data>
       <p>As you roll, your Backpack hits the falling edge of the portcullis and jams. In the next moment you are crushed to death by twenty-five tons of oak and iron. Death is mercifully swift.</p>
       <p>The incredible bravery you have displayed during your quest has brought about the destruction of the plague virus, and the druids who knew the secrets of its cultivation. This destruction has saved millions from a terrible death, and the selfless courage you have shown in bringing this about will never be forgotten by the free peoples of Magnamund. Sadly, though, death is the price you have paid for your victory.</p>
-      <p>Your life and your quest end here at the entrance to Mogaruith.</p>
+      <deadend>Your life and your quest end here at the entrance to Mogaruith.</deadend>
      </data>
     </section>
 

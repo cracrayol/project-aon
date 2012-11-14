@@ -1014,7 +1014,7 @@
 
       <data>
        <p>The Liganim watch you return to Banedon; then they turn and flee through the archway. Less than a minute later they return with a troop of armoured Drakkarim and Giak soldiers. Like a horde of screaming fanatics, they come rushing down the staircase and spread out to surround you and your companion. You draw your weapon and fight bravely, dispatching more than fifty of the enemy, but they receive a constant stream of reinforcements and, when finally your strength fails you, you are overwhelmed by these merciless denizens of Kaag.</p>
-       <p>Tragically, your life and your quest end here.</p>
+       <deadend>Tragically, your life and your quest end here.</deadend>
       </data>
      </section>
 
@@ -1024,7 +1024,7 @@
       <data>
        <p>Your desperate attempts to reach the saddle are dashed when the Kraan rears up in the air and rakes you with its claws. You lose your grip and fall screaming to the concourse below.</p>
        <p>You hit the ground and instantly lose consciousness. Tragically, although you survive the fall, you never reawaken. Your body is discovered by a Giak patrol who kill you out of hand, thinking you to be an enemy spy in disguise.</p>
-       <p>Your life and your quest end here before the citadel of Kaag.</p>
+       <deadend>Your life and your quest end here before the citadel of Kaag.</deadend>
       </data>
      </section>
 
@@ -1678,7 +1678,7 @@
       <data>
        <p>An arrow gouges your heel and a sharp pain runs up the back of your leg, making you stumble. You struggle to stay on your feet but the weight of your unconscious friend throws you off-balance and together you crash down on the steps in a heap. The Drakkarim howl with delight and, as you pull yourself free, they fire a final volley of arrows.</p>
        <p>There is a flash of light and a blinding pain fills your head, but this is soon replaced by a total blackness. You feel yourself falling forwards into an infinite void, as if you had just stepped over the edge of a towering cliff. Reluctantly you surrender to the sensation for it is the last you will ever feel.</p>
-       <p>Sadly, your life and your quest end here.</p>
+       <deadend>Sadly, your life and your quest end here.</deadend>
       </data>
      </section>
 
@@ -2362,7 +2362,7 @@
       <data>
        <p>You step warily into the glimmering column of light and immediately feel yourself begin to rise. Bands of darkness flick past with growing rapidity, each one marking a passing level of this mountainous citadel. Then you feel yourself slowing to a halt. The column fades and you find yourself standing on a metal dais in the centre of a domed chamber. Ahead you see a great door, forged of Kagonite, and beside it there is a narrow staircase leading downwards.</p>
        <p>As you approach the door, you notice the lock which secures it. It is inlaid with a series of numbers and, at once, you recognize that they are component parts of a combination lock. One number in the sequence is missing. By tapping the correct number upon the blank square, you will cause the lock to disengage.</p>
-       <p>Study the following sequence of numbers carefully. When you think you know what the missing number is, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is identical to your answer.<footref id="sect127-1" idref="sect127-1-foot"/></p>
+       <puzzle idref="sect3">Study the following sequence of numbers carefully. When you think you know what the missing number is, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is identical to your answer.<footref id="sect127-1" idref="sect127-1-foot"/></puzzle>
 
        <illustration class="inline">
           <meta>
@@ -2500,7 +2500,7 @@
       <data>
        <p>The guard finally loses his patience. He draws his dagger and, with a lunge, he tries to slash open your satchel, causing you to pull away and draw your own weapon. The guard recognizes that it is not one that a Drakkar would wield, and instantly he shouts out in alarm: <quote>Intruder!</quote></p>
        <p>The two silver-plated warriors raise their spears and a blaze of sorcerous energy erupts simultaneously from their tips. Crimson fire lances towards your body to pierce your chest and abdomen, the impact knocking you headlong to the floor in agony. Biting back the pain, you stagger to your feet and retrieve your weapon in time to fight off the merciless guards. But the alarm has been raised and, within minutes, the thoroughfare is flooded with Drakkarim and Giak soldiers. You fight bravely and dispatch more than fifty of the enemy, but eventually your strength fails and you are overwhelmed and beaten by the denizens of Kaag.</p>
-       <p>Tragically, your life and your quest end here.</p>
+       <deadend>Tragically, your life and your quest end here.</deadend>
       </data>
      </section>
 
@@ -2692,7 +2692,7 @@
 
       <data>
        <p>Coolly you face the advancing line of Death Knights. There is nowhere to run, and there are too many of the enemy to hope to avoid all of their deadly bolts. Upon their leader<ch.apos/>s command, the Death Knights take aim and fire, sending a dozen iron-tipped shafts whistling towards your chest. You dive aside, but even though your reflexes are lightning-fast, two of the missiles penetrate your heart, killing you instantly.</p>
-       <p>Tragically, your life and your quest end here in the dread city-fortress of Kaag.</p>
+       <deadend>Tragically, your life and your quest end here in the dread city-fortress of Kaag.</deadend>
       </data>
      </section>
 
@@ -2776,7 +2776,7 @@
 
       <data>
        <p>You have been working on the lock for nearly twenty minutes when suddenly you hear the <onomatopoeia>clang</onomatopoeia> of an alarm bell. Seconds later a troop of armoured Drakkarim and Giak soldiers comes rushing into the chamber and spreads out in an attempt to surround you and Banedon. You draw your weapon and fight bravely, dispatching more than fifty of the enemy, but they receive a constant stream of reinforcements and, when finally your strength fails you, you are overwhelmed by the merciless denizens of Kaag.</p>
-       <p>Tragically, your life and your quest end here.</p>
+       <deadend>Tragically, your life and your quest end here.</deadend>
       </data>
      </section>
 
@@ -3012,7 +3012,7 @@
 
       <data>
        <p>Beyond the archway, a passage leads to a pair of stout steel-sheathed doors. The lock that secures them is inlaid with a series of numbers and you immediately recognize that they are part of a combination lock. One number in the sequence is missing. By tapping the correct number upon the blank square, you will cause the lock to disengage.</p>
-       <p>Study the following sequence of numbers carefully. When you think you know what the missing number is, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is identical to your answer.<footref id="sect181-1" idref="sect181-1-foot"/></p>
+       <puzzle idref="sect20">Study the following sequence of numbers carefully. When you think you know what the missing number is, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is identical to your answer.<footref id="sect181-1" idref="sect181-1-foot"/></puzzle>
 
        <illustration class="inline">
         <meta>
@@ -3107,7 +3107,7 @@
 
       <data>
        <p>Your attempt to free yourself from your dusty entrapment goes awry. Your foot slips and your effort merely accelerates your descent. Within two minutes the fine grit closes over your head. You survive beneath the dust for ten minutes more before surrendering to your doom.</p>
-       <p>Tragically, your life and your quest end here in the citadel of Kaag.</p>
+       <deadend>Tragically, your life and your quest end here in the citadel of Kaag.</deadend>
       </data>
      </section>
 
@@ -3441,7 +3441,7 @@
 
       <data>
        <p>Once more your weapon hits the crystal and glances off without effect. You are moving forwards to retrieve it when suddenly the hall echoes to the <onomatopoeia>clang</onomatopoeia> of an alarm bell. Seconds later a troop of armoured Drakkarim and Giak soldiers comes streaming through the entrance and moves to surround you and your captive friend. You fight bravely and dispatch more than fifty of the enemy, but eventually your strength fails and you are overwhelmed by the denizens of Kaag.</p>
-       <p>Tragically, your life and your quest end here in the courtroom of Zagarna.</p>
+       <deadend>Tragically, your life and your quest end here in the courtroom of Zagarna.</deadend>
       </data>
      </section>
 
@@ -3505,7 +3505,7 @@
        <p>You sense that Banedon is disturbed by the sight of these tables and, when you ask him what is wrong, he tells you that this chamber is where the Nadziranim subjected him to hours of brutal interrogation in a futile attempt to extract the magical secrets of the Brotherhood.</p>
        <p><thought>Despite all their fiendish tortures,</thought> he says, his mind-voice weak yet full of pride, <thought>they learned nothing.</thought></p>
        <p>You search for a way out of this vault and soon discover a steel door which is secured by a curious combination lock. It comprises three raised blocks, each block divided into four equal squares. In each square, bar one, there is a number. You ask Banedon if he knows how the lock operates and he recalls once seeing a Nadziran tapping the empty square several times in order to make the door open.</p>
-       <p>Consider the following grids of numbers. When you think you know what the missing number is, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that bears the same number as your answer.<footref id="sect220-1" idref="sect220-1-foot"/></p>
+       <puzzle idref="sect8">Consider the following grids of numbers. When you think you know what the missing number is, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that bears the same number as your answer.<footref id="sect220-1" idref="sect220-1-foot"/></puzzle>
 
        <illustration class="inline">
         <meta>
@@ -4020,7 +4020,7 @@
       <data>
        <p>You are within a few feet of the roof when a part of the surface cement crumbles beneath your fingers. You try to reach up and find new purchase but it is too late; you are already falling backwards to the street below.</p>
        <p>On landing you strike your head and lose consciousness. Tragically you never reawaken. Your body is discovered by a Giak patrol who kill you out of hand, thinking you to be an enemy Drakkarim spy in disguise.</p>
-       <p>Your life and your quest end here in Kaag.</p>
+       <deadend>Your life and your quest end here in Kaag.</deadend>
       </data>
      </section>
 
@@ -4261,7 +4261,7 @@
 
       <data>
        <p>An arrow strikes your friend in the side and silently he falls to his knees, his hands still clinging to you for support. You stoop to lift him, but suddenly there is a flash of light and a blinding pain fills your head. The pain soon passes, but it is replaced by a blackness which fills your vision. You feel yourself falling forwards into an infinite void, as if you had, in the middle of a moonless night, just stepped over the edge of a towering cliff. Reluctantly you surrender to the sensation for it is the last sensation you will ever feel.</p>
-       <p>Sadly, your life and your quest end here.</p>
+       <deadend>Sadly, your life and your quest end here.</deadend>
       </data>
      </section>
 
@@ -4439,7 +4439,7 @@
 
       <data>
        <p>In desperation you throw up your hands to shield your face as the spiked log comes hurtling down the stairs. It hits you, impaling your chest upon two of its deadly sharpened staves, and rolls you down the stairs to the street below. You suffer terrible wounds and, mercifully, death is instantaneous.</p>
-       <p>Tragically, your life and your quest end here in Kaag.</p>
+       <deadend>Tragically, your life and your quest end here in Kaag.</deadend>
       </data>
      </section>
 
@@ -4722,7 +4722,8 @@
       <meta><title>311</title></meta>
 
       <data>
-       <p>The fell creature pins you to the ground and its steely hands tighten like two vices around your throat. Blackness invades the edges of your vision and, although you twist and buck to break free, you feel your strength ebbing away fast. Soon you are too weak to struggle any longer and, reluctantly, you slip away into a sleep from which you will never awaken. Sadly, your life and your quest end here.</p>
+       <p>The fell creature pins you to the ground and its steely hands tighten like two vices around your throat. Blackness invades the edges of your vision and, although you twist and buck to break free, you feel your strength ebbing away fast. Soon you are too weak to struggle any longer and, reluctantly, you slip away into a sleep from which you will never awaken.</p>
+       <deadend>Sadly, your life and your quest end here.</deadend>
       </data>
      </section>
 
@@ -4822,7 +4823,7 @@
       <data>
        <p>With trepidation you step into the glimmering column of light and immediately you feel yourself begin to rise. Bands of darkness flick past with growing rapidity, each one a passing floor level of this mountainous citadel. Then you feel yourself slowing to a halt. The column fades and you find yourself standing on a metal dais in the centre of a domed chamber. Ahead you see a great door, forged of Kagonite, and beside it there is a narrow staircase leading down.</p>
        <p>As you approach the door, you notice the lock that secures it. It is inlaid with a series of numbers and, at once, you recognize that they are component parts of a combination lock. One number in the sequence is missing. By tapping the correct number upon the blank square, you will cause the lock to disengage.</p>
-       <p>Study the following sequence of numbers carefully. When you think you know what the missing number is, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is identical to your answer.<footref id="sect319-1" idref="sect319-1-foot"/></p>
+       <puzzle idref="sect3">Study the following sequence of numbers carefully. When you think you know what the missing number is, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is identical to your answer.<footref id="sect319-1" idref="sect319-1-foot"/></puzzle>
 
        <illustration class="inline">
         <meta>
@@ -5104,7 +5105,7 @@
       <data>
        <p>You pull on the reins, hoping to steer the Zlanbeast higher in time to clear the whistling cloud of bolts, but the beast lacks the speed and strength to perform such an exacting manoeuvre.</p>
        <p>Suddenly a starburst of pain erupts in your head and the taste of blood fills your mouth. You have been hit in the skull by one of the iron-tipped missiles and death is instantaneous.</p>
-       <p>Tragically, your life and your quest end here on the very threshold of victory.</p>
+       <deadend>Tragically, your life and your quest end here on the very threshold of victory.</deadend>
       </data>
      </section>
 
@@ -5967,6 +5968,7 @@
        <p>(<a idref="sect308">308</a>) Deleted <quote> which you keep in your Backpack</quote> to avoid confusion.</p>
        <p>(<a idref="sect309">309</a>) Replaced <quote>impregnable, then</quote> with <quote>impregnable; then</quote>.</p>
        <p>(<a idref="sect310">310</a>) Replaced <quote>avoid him</quote> with <quote>avoid it</quote>.</p>
+       <p>(<a idref="sect311">311</a>) Split the final sentence into its own paragraph for consistency.</p>
        <p>(<a idref="sect314">314</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>.</p>
        <p>(<a idref="sect315">315</a>) Replaced <quote><!--link-text-->turn to 215<!--/link-text--></quote> with <quote><!--link-text-->turn to 215<!--/link-text-->.</quote>. Replaced <quote>stool and</quote> with <quote>stool, and</quote>.</p>
        <p>(<a idref="sect318">318</a>) Replaced <quote>discipline</quote> with <quote>Discipline</quote>. Replaced <quote>egorgh</quote> with <quote>Egorgh</quote>. Replaced <quote>their haunches, then</quote> with <quote>their haunches; then</quote>.</p>

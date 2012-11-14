@@ -1135,7 +1135,7 @@
       <p>You place your fingers lightly upon the squares and feel the tell-tale vibrations that are the key to deciphering the secret code. After only seconds you are able to determine that the first code is equal to the number of islands south of the Kirlundin island of Hemd.</p>
       <p>The second code is equal to the number of villages that lie on the highway between the cities of Toran and Anskaven.</p>
       <p>In order to discover the exact numbers that will open the portal, consult the <a idref="map">map</a>.</p>
-      <p>When you think you know the two-digit solution, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is the same number as your answer.<footref id="sect18-1" idref="sect18-1-foot"/></p>
+      <puzzle idref="sect23">When you think you know the two-digit solution, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is the same number as your answer.<footref id="sect18-1" idref="sect18-1-foot"/></puzzle>
       <choice idref="sect242">If you cannot decipher the codes, <link-text>turn instead to 242</link-text>.</choice>
      </data>
     </section>
@@ -2050,7 +2050,7 @@
 
      <data>
       <p>Despite your valiant efforts, you are unable to revive your mount and it dies of its wounds before reaching the ground. Unfortunately, you become entangled in its trailing wings and are unable to save yourself before the giant dragonfly smashes into the rim of the moat surrounding the tower. Death is mercifully swift.</p>
-      <p>Sadly, your life and your duel end here.</p>
+      <deadend>Sadly, your life and your duel end here.</deadend>
      </data>
     </section>
 
@@ -2090,7 +2090,7 @@
 
      <data>
       <p>You try to evade the crackling light that speeds towards you from the muzzle of the warrior<ch.apos/>s spear, but the wounds and fatigue you have sustained conspire to dull your reactions. You are hit in the side by this white-hot beam and hurled high into the air. Suddenly an explosion of white light obliterates your senses and, in a horrifying instant, the light that is your life is snuffed out.</p>
-      <p>Tragically, your life and your duel with Wolf<ch.apos/>s Bane end here.</p>
+      <deadend>Tragically, your life and your duel with Wolf<ch.apos/>s Bane end here.</deadend>
      </data>
     </section>
 
@@ -2894,7 +2894,7 @@
 
      <data>
       <p>Despite your desperate action, you continue to sink further into this dry bog until the soil closes in over your head. You draw upon your Magnakai Discipline of Nexus to ease the pain in your aching lungs, but this simply prolongs your life for a further fifteen minutes before the lack of air and the crushing weight of the morass combine to overwhelm you.</p>
-      <p>Tragically, your life and your duel end here.</p>
+      <deadend>Tragically, your life and your duel end here.</deadend>
      </data>
     </section>
 
@@ -3127,7 +3127,7 @@
 
      <data>
       <p>You pick up the ticking bomb and examine it carefully. Below the illuminated panel, which is counting down the seconds, you see four small windows which display a sequence of numbers. Beneath these windows are tiny buttons which, when pressed, change the numbers that are displayed. The third window in the sequence is blank and, when you concentrate upon it, your Kai senses reveal to you that by keying in the missing number in the sequence you will prevent the bomb from exploding.</p>
-      <p>Study the following sequence of numbers carefully. When you think you know the solution, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is the same as your answer.<footref id="sect177-1" idref="sect177-1-foot"/></p>
+      <puzzle idref="sect130">Study the following sequence of numbers carefully. When you think you know the solution, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is the same as your answer.<footref id="sect177-1" idref="sect177-1-foot"/></puzzle>
 
       <illustration class="inline">
        <meta>
@@ -3529,7 +3529,7 @@
       <p>The rasping growl of the metal wolf is steadily getting louder. The sinister sound makes your palms slick with cold sweat as you feverishly examine the door and the locking mechanism set into the wall nearby.</p>
       <p>The gemstone squares are sensitive devices which secure this door. By tapping upon each of them a correct number of times you will cause the lock to disengage and the door will open. You place your fingers lightly upon the squares and feel the tell-tale vibrations that are the key to deciphering their secret code. Aided by your Kai skills, you are able to determine that the first code is equal to the number of <em>named</em> Kirlundin Islands north of Egen. The second code is equal to the number of villages to the east of Ragadorn.</p>
       <p>In order to discover the exact numbers that will open the door, consult the <a idref="map">map</a>.</p>
-      <p>When you think you know the two-digit solution, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is the same number as your answer.<footref id="sect210-1" idref="sect210-1-foot"/></p>
+      <puzzle idref="sect10">When you think you know the two-digit solution, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is the same number as your answer.<footref id="sect210-1" idref="sect210-1-foot"/></puzzle>
       <choice idref="sect134">If you cannot decipher the codes, <link-text>turn instead to 134</link-text>.</choice>
      </data>
     </section>
@@ -3671,7 +3671,7 @@
 
      <data>
       <p>The shock of impact sends you tumbling helplessly into the gorge. You fall several hundred feet before you finally stop spinning, yet before you can unscramble your senses, you are struck from behind by the predatory dragonfly. White hot pain shoots through your body as you are impaled upon the tip of the creature<ch.apos/>s proboscis. You struggle to get free but your strength quickly deserts you. Mercifully, you are spared further agonies when you slip into unconsciousness<ch.emdash/>the prelude to a sleep from which you never awaken.</p>
-      <p>Sadly, your life and your quest end here.</p>
+      <deadend>Sadly, your life and your quest end here.</deadend>
      </data>
     </section>
 
@@ -3680,7 +3680,7 @@
 
      <data>
       <p>You have leapt and scrambled your way to the base of the skull-rock, when suddenly a starburst of pain explodes in your head and the taste of blood fills your mouth. You fall face-first to the ground, breaking your nose on impact, but you are numb to the pain; a falling boulder has already snapped your neck in two.</p>
-      <p>Tragically, your life and your duel come to an end here.</p>
+      <deadend>Tragically, your life and your duel come to an end here.</deadend>
      </data>
     </section>
 
@@ -3947,7 +3947,7 @@
      <data>
       <p>This lock looks similar to that which operates the door to the temple of Avaros, yet there is one important difference. The mechanism of this lock is genuinely protected by a powerful spell, shielded also by magic to prevent its detection. Your unsuccessful attempt to open the portal triggers this spell and causes a massive bolt of electrical energy to be discharged through your fingers, along your outstretched arm, and deep into your body.</p>
       <p>A blinding flash of light obliterates your vision and an agonizing pain explodes in your chest. The pain quickly fades, but it is replaced by a terrifying numbness. You feel weightless, as if you are falling through deep space. Briefly you try to resist this sensation but it is no use. You are falling into a sleep from which you will never awaken.</p>
-      <p>Sadly, your life and your duel against Wolf<ch.apos/>s Bane end here.</p>
+      <deadend>Sadly, your life and your duel against Wolf<ch.apos/>s Bane end here.</deadend>
      </data>
     </section>
 
@@ -4047,7 +4047,7 @@
       <p>When you reach the portal, you discover that it comprises a seamless sheet of lead-lined iron, many inches thick. You detect a lingering aura of magic around its threshold which makes you wary that a trap may have been set. Yet when you summon your psychic skills to probe deeper, you sense otherwise. You detect that Wolf<ch.apos/>s Bane has deliberately cast an illusion of magic around this portal, no doubt in the hope that it will delay or deter you long enough for the storm to do its work. Confident that the door is not lethal, you examine it more closely. Set flush into the glassy surface of its surrounding arch, you discover an inscription above two squares of dull crimson gemstone. Your Sixth Sense reveals that tapping upon each square a correct number of times will cause the door to open. Cautiously you place your fingers lightly upon the squares and feel the gentle vibration of the door<ch.apos/>s locking mechanism. By concentrating on these vibrations you hope to be able to decipher its locking codes.</p>
       <p>After several minutes you determine that the first code is equal to the <typ class="attribute">ENDURANCE</typ> points score below which a Grand Master cannot use the Discipline of Kai-surge.</p>
       <p>The second code is equal to the number of villages that lie on the highway between the cities of Holmgard and Ragadorn.</p>
-      <p>In order to determine the numbers that will open the door to the temple, consult the <a idref="map">map</a> and <a idref="gamerulz">games rules</a>. When you think you know the two-digit solution, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is the same number as your answer.<footref id="sect251-1" idref="sect251-1-foot"/></p>
+      <puzzle idref="sect64">In order to determine the numbers that will open the door to the temple, consult the <a idref="map">map</a> and <a idref="gamerulz">games rules</a>. When you think you know the two-digit solution, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is the same number as your answer.<footref id="sect251-1" idref="sect251-1-foot"/></puzzle>
       <choice idref="sect283">If you cannot decipher the codes, <link-text>turn instead to 283</link-text>.</choice>
      </data>
     </section>
@@ -4078,7 +4078,7 @@
        </instance>
       </illustration>
 
-      <p>When you think you know what the correct solution is, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is the same as your answer.<footref id="sect252-1" idref="sect252-1-foot"/></p>
+      <puzzle idref="sect60">When you think you know what the correct solution is, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is the same as your answer.<footref id="sect252-1" idref="sect252-1-foot"/></puzzle>
       <choice idref="sect303">If you guess incorrectly, or if you cannot answer this puzzle, <link-text>turn instead to 303</link-text>.</choice>
      </data>
     </section>
@@ -4280,7 +4280,7 @@
 
      <data>
       <p>With mounting dread, you watch as the seconds tick away. When the illuminated display reaches zero, there is a sun-like burst of light which totally obliterates your senses; it is the last light that you ever see. The bomb detonates and explodes with terrific force, destroying the dragonfly pens and several of the upper storeys of the tower.</p>
-      <p>Sadly, your struggle against Wolf<ch.apos/>s Bane has ended in defeat, leaving the way clear for Naar<ch.apos/>s forces to invade and conquer Magnamund. Your life and your duel end here.</p>
+      <deadend>Sadly, your struggle against Wolf<ch.apos/>s Bane has ended in defeat, leaving the way clear for Naar<ch.apos/>s forces to invade and conquer Magnamund. Your life and your duel end here.</deadend>
      </data>
     </section>
 
@@ -4682,7 +4682,7 @@
      <data>
       <p>You sprint towards the speeding wagon and hurl yourself towards its open cargo bay. But, disastrously, you misjudge your leap and crash headlong into the side of the hover-wagon, knocking yourself unconscious.</p>
       <p>The concussion you have sustained does not kill you, but it contributes indirectly to your death. Your body is seen lying in the avenue by Wolf<ch.apos/>s Bane, from one of the tower<ch.apos/>s many watching posts, and he immediately dispatches a troop of Manoyds to capture and slay you. Sadly, they are brutally efficient servants and they obey his commands to the letter.</p>
-      <p>Tragically, your life and your duel end here.</p>
+      <deadend>Tragically, your life and your duel end here.</deadend>
      </data>
     </section>
 
@@ -4706,7 +4706,7 @@
 
      <data>
       <p>Within thirty seconds of both panels closing, all of the air is sucked out of this tiny metal cell. Your Magnakai Discipline of Nexus sustains you for a further ten minutes, during which precious little time you try everything possible to extricate yourself from this deadly vacuum. Unfortunately, your valiant efforts are to no avail. You are unable to penetrate the strange metal skin of this cell. Slowly, reluctantly, you succumb to the lack of oxygen until you drift off into a sleep from which you never awaken.</p>
-      <p>Sadly, your life and your duel end here.</p>
+      <deadend>Sadly, your life and your duel end here.</deadend>
      </data>
     </section>
 
@@ -4933,7 +4933,7 @@
       <p>You place your fingers lightly upon the squares and feel the tell-tale vibrations that are the key to deciphering the secret code. After only seconds you are able to determine that the first code is equal to the number of islands south of the Kirlundin island of Hemd.</p>
       <p>The second code is equal to the number of villages that lie on the highway between the cities of Toran and Anskaven.</p>
       <p>In order to discover the exact numbers that will open the portal, consult the <a idref="map">map</a>.</p>
-      <p>When you think you know the two-digit solution, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is the same number as your answer.<footref id="sect320-1" idref="sect320-1-foot"/></p>
+      <puzzle idref="sect23">When you think you know the two-digit solution, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the entry</a></when><otherwise>turn to the entry</otherwise></choose> that is the same number as your answer.<footref id="sect320-1" idref="sect320-1-foot"/></puzzle>
       <choice idref="sect213">If you cannot decipher the codes, <link-text>turn instead to 213</link-text>.</choice>
      </data>
     </section>

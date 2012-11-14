@@ -1302,7 +1302,7 @@
        <p>Using your infravision, you scan your surroundings and discover that you have entered a hall that is flanked on either side by a row of human skeletons. They stand at attention with their spines pressed against the stone wall, and clasped in their bony hands are rusty polearms of differing type and origin. At the far end of this hall, you can see a pair of stout wooden doors reinforced with strips of polished steel. Cautiously you advance under the sightless gaze of the flanking skeletons, and upon reaching the doors you discover that they are secured by a combination lock. A single dial with a brass pointer is mounted upon a circular plate that is numbered 0 to 200 around its bevelled edge. You place the palm of your hand against the door, and a tingle of excitement runs down your spine when you sense that Lone Wolf is being held captive on the other side of these doors.</p>
        <p>With the help of your Kai Sixth Sense, you determine that the number which will open the combination lock is the same as the solution to the following puzzle.</p>
        <p>If A=1, B=2, C=3 (and so on through the alphabet until you reach Z=26), what is the total numerical value of the fortress of GAZAD HELKONA?</p>
-       <p>When you think that you have calculated the total, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of this book</a></when><otherwise>turn to the section of this book</otherwise></choose> that is the same as your answer.<footref id="sect11-1" idref="sect11-1-foot"/></p>
+       <puzzle idref="sect105">When you think that you have calculated the total, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of this book</a></when><otherwise>turn to the section of this book</otherwise></choose> that is the same as your answer.<footref id="sect11-1" idref="sect11-1-foot"/></puzzle>
        <choice idref="sect183">If you calculate incorrectly, or if you are unable to answer this puzzle, <link-text>turn instead to 183</link-text>.</choice>
      </data>
     </section>
@@ -1672,7 +1672,7 @@
        <p>Your speedy use of your Magnakai skill convinces the malevolent young dog that you are a fearsome enemy. Its nerve breaks, and its menacing growl transforms into a pathetic whimper as it takes off along the street at a run.</p>
        <p>As it disappears from view, you climb the stairs to the first floor where you discover a wooden door banded with criss-crossing strips of enamelled iron. At its centre there is a polished black handle and a dial which is ringed with numbers. You examine the dial closely and determine that it controls a combination lock. By turning the dial to its correct numerical setting, you will cause the lock to disengage and the door will open.</p>
        <p>Using your Kai Sixth Sense, you discover that the correct setting is the same as the distance in miles that you travelled aboard the <cite>Cloud-dancer</cite>, from the Kai Monastery to the Shezar Hills, divided by the 50 miles that you travelled on foot from the Shezar Hills to Gazad Helkona.</p>
-       <p>If you think you know the solution to this question, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of this book</a></when><otherwise>turn to the section of this book</otherwise></choose> that is the same as your answer.<footref id="sect39-1" idref="sect39-1-foot"/></p>
+       <puzzle idref="sect20">If you think you know the solution to this question, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of this book</a></when><otherwise>turn to the section of this book</otherwise></choose> that is the same as your answer.<footref id="sect39-1" idref="sect39-1-foot"/></puzzle>
        <choice idref="sect195">If you cannot answer the question, or if your answer turns out to be incorrect, <link-text>turn instead to 195</link-text>.</choice>
      </data>
     </section>
@@ -1920,7 +1920,7 @@
 
      <data>
        <p>Valiantly you hack and slice at the sticky web but, before you are able to cut yourself free, the spider seizes you in its forelegs and stabs at you with its fanged maw. When it clamps its great mouth down upon your shoulder, it injects a powerful venom which paralyses your entire body. Numbed by the poison, you are mercifully spared the agony of being eaten alive by this gigantic arachnid.</p>
-       <p>Tragically, your life and your quest end prematurely in the petrified forest of Helkona.</p>
+       <deadend>Tragically, your life and your quest end prematurely in the petrified forest of Helkona.</deadend>
      </data>
     </section>
 
@@ -3833,7 +3833,7 @@
      <data>
        <p>Your search of this vile-smelling hall is rewarded when you discover a concealed door located in the far wall. What at first glance appears to be a coat peg is really the dial of a crude combination lock. You wipe away the grime that encrusts its numbers and examine it closely. By turning the dial to its correct numerical setting, you will cause the lock to disengage and the secret door will open.</p>
        <p>Using your Kai Sixth Sense, you discover that the correct setting is the same as the solution to the following mathematical equation: 24 divided by 8, multiplied by 7, less 9.</p>
-       <p>When you have calculated the solution, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of this book</a></when><otherwise>turn to the section of this book</otherwise></choose> that is the same as your answer.<footref id="sect219-1" idref="sect219-1-foot"/></p>
+       <puzzle idref="sect12">When you have calculated the solution, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of this book</a></when><otherwise>turn to the section of this book</otherwise></choose> that is the same as your answer.<footref id="sect219-1" idref="sect219-1-foot"/></puzzle>
        <choice idref="sect261">If you cannot solve the equation, or if your answer turns out to be incorrect, <link-text>turn instead to 261</link-text>.</choice>
      </data>
     </section>
@@ -3930,7 +3930,7 @@
         <instance class="pdf" src="small4.pdf" width="386" height="150"/>
        </illustration>
 
-       <p>Tragically, your life and your mission end here, upon the platform of the observatory tower of Gazad Helkona.</p>
+       <deadend>Tragically, your life and your mission end here, upon the platform of the observatory tower of Gazad Helkona.</deadend>
      </data>
     </section>
 
@@ -4183,7 +4183,7 @@
 
      <data>
        <p>You are within a few feet of the parapet when you inadvertently dislodge a loose block of stone. Frantically you scramble to find a new handhold, but the falling block hits your legs and you are sent tumbling backwards to the ground. You land upon a mound of rocks at the edge of the fissure, and suffer a crushing blow to the back of your head that renders you unconscious. Mercifully, you are spared further pain when you roll off the mound and plummet into the fiery fissure.</p>
-       <p>Tragically, your mission ends here beneath the walls of Gazad Helkona.</p>
+       <deadend>Tragically, your mission ends here beneath the walls of Gazad Helkona.</deadend>
      </data>
     </section>
 
@@ -4277,7 +4277,7 @@
      <data>
        <p>You reach the stairs undetected and run up the steps to the first floor. Here you discover a wooden door banded with criss-crossing strips of enamelled iron. At its centre there is a polished black handle and a dial which is ringed with numbers. You examine the dial closely and determine that it controls a combination lock. By turning the dial to its correct numerical setting, you will cause the lock to disengage and the door will open.</p>
        <p>Using your Kai Sixth Sense, you discover that the correct setting is the same as the distance in miles that you travelled aboard the <cite>Cloud-dancer</cite>, from the Kai Monastery to the Shezar Hills, divided by the 50 miles that you travelled on foot from the Shezar Hills to Gazad Helkona.</p>
-       <p>If you think you know the solution to this question, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of this book</a></when><otherwise>turn to the section of this book</otherwise></choose> that is the same as your answer.<footref id="sect256-1" idref="sect256-1-foot"/></p>
+       <puzzle idref="sect20">If you think you know the solution to this question, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of this book</a></when><otherwise>turn to the section of this book</otherwise></choose> that is the same as your answer.<footref id="sect256-1" idref="sect256-1-foot"/></puzzle>
        <choice idref="sect195">If you cannot answer the question, or if your answer turns out to be incorrect, <link-text>turn instead to 195</link-text>.</choice>
      </data>
     </section>
@@ -4434,7 +4434,7 @@
 
      <data>
        <p>As you move to avoid the speeding missile, a massive force slams into your chest, and a sudden explosion of light obliterates your senses. The bolt from the Urgaroh<ch.apos/>s staff rips through your body, killing you instantly.</p>
-       <p>Tragically, your life and your mission end here, upon the platform of the observatory tower of Gazad Helkona.</p>
+       <deadend>Tragically, your life and your mission end here, upon the platform of the observatory tower of Gazad Helkona.</deadend>
      </data>
     </section>
 
@@ -4702,7 +4702,7 @@
        <p>Your killing blow silences the Akataz and sends it tumbling backwards into the dark alcove from which it first emerged. With weapon poised, you step forward and peer into this shadowy niche to see the warhound lying limply upon a mound of flea-infested sacking. Using your weapon to avoid having to touch these mouldering rags, you bury the dog beneath them before you turn and hurry towards the stairs.</p>
        <p>At the top of the stairs you discover a wooden door, banded with criss-crossing strips of enamelled iron. At its centre there is a polished black handle and a dial which is ringed with numbers. You examine the dial closely and determine that it controls a combination lock. By turning the dial to its correct numerical setting, you will cause the lock to disengage and the door will open.</p>
        <p>Using your Kai Sixth Sense, you discover that the correct setting is the same as the distance in miles that you travelled aboard the <cite>Cloud-dancer</cite>, from the Kai Monastery to the Shezar Hills, divided by the 50 miles that you travelled on foot from the Shezar Hills to Gazad Helkona.</p>
-       <p>If you think you know the solution to this question, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of this book</a></when><otherwise>turn to the section of this book</otherwise></choose> that is the same as your answer.<footref id="sect293-1" idref="sect293-1-foot"/></p>
+       <puzzle idref="sect20">If you think you know the solution to this question, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of this book</a></when><otherwise>turn to the section of this book</otherwise></choose> that is the same as your answer.<footref id="sect293-1" idref="sect293-1-foot"/></puzzle>
        <choice idref="sect195">If you cannot answer the question, or if your answer turns out to be incorrect, <link-text>turn instead to 195</link-text>.</choice>
      </data>
     </section>
@@ -4743,7 +4743,7 @@
 
      <data>
        <p>You sprint across the narrow bridge and leap over the gap, but your jump is poorly timed and you lack sufficient power to reach the far side. You land short and hit the lowered drawbridge, striking your forehead hard against its iron surface before tumbling backwards to the avenue below. You shatter your left leg on impact and suffer a second blow to your head that renders you unconscious. Mercifully, you are spared further pain when you are run over and crushed beneath the wheels of a Hammerland supply wagon.</p>
-       <p>Tragically, your mission ends here.</p>
+       <deadend>Tragically, your mission ends here.</deadend>
      </data>
     </section>
 
@@ -4794,7 +4794,7 @@
        <p>At the far end of this torchlit chamber, you can see a pair of stout wooden doors reinforced with strips of polished steel. Cautiously you advance along the hall under the sightless gaze of the flanking skeletons, and upon reaching the doors you discover that they are secured by a combination lock. A single dial with a brass pointer is mounted upon a circular plate that is numbered 0 to 200 around its bevelled edge. You place the palm of your hand against the door, and a tingle of excitement runs down your spine when you sense that Lone Wolf is being held captive on the other side of these doors.</p>
        <p>With the help of your Kai Sixth Sense, you determine that the number which will open the combination lock is the same as the solution to the following puzzle.</p>
        <p>If A=1, B=2, C=3 (and so on through the alphabet until you reach Z=26), what is the total numerical value of the fortress of GAZAD HELKONA?</p>
-       <p>When you think that you have calculated the total, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of this book</a></when><otherwise>turn to the section of this book</otherwise></choose> that is the same as your answer.<footref id="sect300-1" idref="sect300-1-foot"/></p>
+       <puzzle idref="sect105">When you think that you have calculated the total, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of this book</a></when><otherwise>turn to the section of this book</otherwise></choose> that is the same as your answer.<footref id="sect300-1" idref="sect300-1-foot"/></puzzle>
        <choice idref="sect183">If you calculate incorrectly, or if you are unable to answer this puzzle, <link-text>turn instead to 183</link-text>.</choice>
      </data>
     </section>
@@ -5080,7 +5080,7 @@
         <instance class="pdf" src="small4.pdf" width="386" height="150"/>
        </illustration>
 
-       <p>Tragically, your life and your mission end here, upon the platform of the observatory tower of Gazad Helkona.</p>
+       <deadend>Tragically, your life and your mission end here, upon the platform of the observatory tower of Gazad Helkona.</deadend>
      </data>
     </section>
 
@@ -5260,7 +5260,7 @@
 
      <data>
        <p>You are within a few feet of the breached wall when suddenly the rim of the fissure collapses beneath your feet, and you are sent tumbling into the fiery heart of the abyss.</p>
-       <p>Tragically, your mission ends here in the fractured earth of Gazad Helkona.</p>
+       <deadend>Tragically, your mission ends here in the fractured earth of Gazad Helkona.</deadend>
      </data>
     </section>
 
@@ -5391,7 +5391,7 @@
        <p>You call upon your advanced Kai skill to order the malevolent dog to go away. Its growling quickly transforms into a pathetic whimper, and then its nerve breaks and it takes off along the street at a run.</p>
        <p>As it disappears from view, you climb the stairs to the first floor where you discover a wooden door banded with criss-crossing strips of enamelled iron. At its centre there is a polished black handle and a dial which is ringed with numbers. You examine the dial closely and determine that it controls a combination lock. By turning the dial to its correct numerical setting, you will cause the lock to disengage and the door will open.</p>
        <p>Using your Kai Sixth Sense, you discover that the correct setting is the same as the distance in miles that you travelled aboard the <cite>Cloud-dancer</cite>, from the Kai Monastery to the Shezar Hills, divided by the 50 miles that you travelled on foot from the Shezar Hills to Gazad Helkona.</p>
-       <p>If you think you know the solution to this question, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of this book</a></when><otherwise>turn to the section of this book</otherwise></choose> that is the same as your answer.<footref id="sect348-1" idref="sect348-1-foot"/></p>
+       <puzzle idref="sect20">If you think you know the solution to this question, <choose test="has-numbered-section-list"><when value="true"><a idref="numbered">turn to the section of this book</a></when><otherwise>turn to the section of this book</otherwise></choose> that is the same as your answer.<footref id="sect348-1" idref="sect348-1-foot"/></puzzle>
        <choice idref="sect195">If you cannot answer the question, or if your answer turns out to be incorrect, <link-text>turn instead to 195</link-text>.</choice>
      </data>
     </section>

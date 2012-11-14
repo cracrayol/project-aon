@@ -639,7 +639,7 @@
 
      <data>
       <p>You are halfway round the tower when a section of the sandstone ledge suddenly gives way beneath your feet. Desperately you claw at the masonry, but the stone is old and disintegrates in your hands. You topple backwards and fall to your doom in the palace gardens below.</p>
-      <choice>Your escape and your life end here.</choice>
+      <deadend>Your escape and your life end here.</deadend>
      </data>
     </section>
 
@@ -786,7 +786,7 @@
      <data>
       <p>The cell door does not open again until the sun has dipped below the peaks of the Dahir Mountains. You prepare yourself to meet the Zakhan, to demand your immediate release and safe passage back to Sommerlund, but it is not only the Zakhan who awaits you in the Grand Hall. He has a guest who has travelled many miles for this special meeting. His name is Haakon. He is a Darklord of Helgedad.</p>
       <p>Unarmed and helpless, you are forced to kneel before the Darklord. With wicked relish, Haakon squeezes the life from your body with his own hands.</p>
-      <choice>Your life and all hopes for your country end here.</choice>
+      <deadend>Your life and all hopes for your country end here.</deadend>
      </data>
     </section>
 
@@ -1312,7 +1312,7 @@
 
      <data>
       <p>You follow a straight passage of pale, rose-coloured stone, which soon ends at an empty vestibule. In its north wall is set a great wooden door, covered with engraved bronze plaques and studded with bronze nails. There is a curious lock set into the middle of this door, encircled by a beautiful carving of a long-tailed scorpion. A closer look at the lock reveals a series of Vassagonian numerals, numbered 1 to 200, engraved in the lock. You recognize the design: it is a Cloeasian combination lock.</p>
-      <p>If you know the correct number that will open the bronze door, <choose test="has-numbered-section-list"><when value="true"><a idref="part1">turn to that section number</a></when><otherwise>turn to that section number</otherwise></choose>.<footref id="sect58-1" idref="sect58-1-foot" /></p>
+      <puzzle idref="sect67">If you know the correct number that will open the bronze door, <choose test="has-numbered-section-list"><when value="true"><a idref="part1">turn to that section number</a></when><otherwise>turn to that section number</otherwise></choose>.<footref id="sect58-1" idref="sect58-1-foot" /></puzzle>
       <choice idref="sect156">If you do not know the number that will open the door, <link-text>turn to 156</link-text>.</choice>
      </data>
     </section>
@@ -1535,7 +1535,7 @@
 
      <data>
       <p>Your numb arm makes the climb impossible. Valiantly you struggle to escape up the chimney, but when a spur of rock breaks away in your hand, you cannot prevent yourself from tumbling backwards into the bubbling mud.</p>
-      <p>Your life comes to a swift end as you are boiled to death in the <foreign xml:lang="x-vassagonian">tar-sorkh</foreign> of Barrakeesh.</p>
+      <deadend>Your life comes to a swift end as you are boiled to death in the <foreign xml:lang="x-vassagonian">tar-sorkh</foreign> of Barrakeesh.</deadend>
      </data>
     </section>
 
@@ -3412,7 +3412,7 @@
 
      <data>
       <p>There is another searing blast, which hits the base of the huge pillar behind which you have taken refuge; it severs the stone in an instant. Your body is torn to pieces as the pillar explodes into a million fragments<ch.emdash/>the little of you that remains is buried beneath tons of falling sand and stone.</p>
-      <choice>Your life and the hopes of Sommerlund end here.</choice>
+      <deadend>Your life and the hopes of Sommerlund end here.</deadend>
      </data>
     </section>
 
@@ -3431,7 +3431,7 @@
 
      <data>
       <p>You try to sidestep as the lethal blade hurtles towards you, but in the darkness you cannot be sure of the direction of its flight. You are hit in the chest, the blow smashing the air from your lungs. Lights flash before your eyes, and an explosion rings in your ears. You fall to your knees, and a sensation of numbness spreads through your chest. Through a haze of swirling mist, you see the Drakkar flung backwards, his breastplate torn open by dwarf shot. Banedon appears; his face is ashen grey. His lips move, but you cannot hear what he is saying. Images of Sommerlund swim in your mind and then slowly fade as oblivion engulfs you.</p>
-      <choice>Your life and the last hope of Sommerlund end here.</choice>
+      <deadend>Your life and the last hope of Sommerlund end here.</deadend>
      </data>
     </section>
 
@@ -3749,7 +3749,7 @@
 
      <data>
       <p>The creature<ch.apos/>s curved beak gores your back, impaling you upon its razor-sharp tip. You are lifted into the air and dashed against the wall with one flick of the great bird<ch.apos/>s powerful neck. Mercifully, death is instantaneous as your skull is shattered against the hard, unyielding marble.</p>
-      <choice>Your life and the hopes of Sommerlund end here.</choice>
+      <deadend>Your life and the hopes of Sommerlund end here.</deadend>
      </data>
     </section>
 
@@ -3768,7 +3768,7 @@
 
      <data>
       <p>Two bolts whistle through the air and slam into your back. As the pain tears through your body, you faint and fall onto the poison-tipped spikes. As your life<ch.apos/>s blood drains away, the last sound you hear is the hideous gloating laughter of Darklord Haakon rising above the ghoulish howl of his evil Drakkarim warriors.</p>
-      <choice>Your life and the hopes of Sommerlund end here.</choice>
+      <deadend>Your life and the hopes of Sommerlund end here.</deadend>
      </data>
     </section>
 
@@ -3787,7 +3787,7 @@
 
      <data>
       <p>You tumble earthwards, blurred colours flashing before your eyes. The Kraan-riders, the skyship, and the distant horizon all melt into a kaleidoscope of shapes, the last images you see before smashing into the hard and barren salt-plain of Lake Inrahim.</p>
-      <choice>Your life and the hopes of Sommerlund end here.</choice>
+      <deadend>Your life and the hopes of Sommerlund end here.</deadend>
      </data>
     </section>
 
@@ -4164,7 +4164,7 @@
      <data>
       <p>For a moment, your sense of bearing is completely lost as you tumble and spin into the void, unaware of what is happening to your body. You try to cry out, but your cries are lost on the wind as it rushes past. You hit the upper branches of a toa tree. You are stunned by the crash, and your body becomes numb.</p>
       <p>By the time your broken body is found by the Drakkarim, you have bled to death.</p>
-      <choice>Your life and the hopes of Sommerlund end here.</choice>
+      <deadend>Your life and the hopes of Sommerlund end here.</deadend>
      </data>
     </section>
 
@@ -4285,7 +4285,7 @@
      <data>
       <p>The Vordak collapses at your feet, but before you can escape, you are surrounded by Drakkarim. A silence fills the arboretum; all is deathly quiet. You prepare to cut your way out, but more of the evil warriors appear. You shiver with a chill of fear<ch.emdash/>the Drakkarim reinforcements are armed with heavy bronze crossbows.</p>
       <p>As you shout your battle-cry <quote>For Sommerlund!</quote> you are hit by a volley of poison-tipped bolts, which hurl you backwards to the soft earth. The last sound you hear as your life<ch.apos/>s blood drains away into the soil is the hideous gloating laughter of Darklord Haakon, rising above the ghoulish howl of his Drakkarim.</p>
-      <choice>Your life and the hopes of Sommerlund end here.</choice>
+      <deadend>Your life and the hopes of Sommerlund end here.</deadend>
      </data>
     </section>
 
@@ -4630,7 +4630,7 @@
       <p>As you peer at the pages of Tipasa<ch.apos/>s diary, suddenly you realize that they are written in code. What Banedon had assumed to be positions of stars is a code to three numbers that give the precise location of the Tomb.</p>
       <p>Consult the <a idref="map">map</a> to help you discover the location of the Tomb of the Majhan.</p>
       <p>The first of the three numbers is equal to the number of oases on the trail between Ikaresh and Bir Rabalou. The second number is equal to the number of cities in Vassagonia. The third number is equal to the number of islands off the coast of Cape Kabar.</p>
-      <p>When you have broken the code, write the numbers in order and <choose test="has-numbered-section-list"><when value="true"><a idref="part2">turn to the entry number</a></when><otherwise>turn to the entry number</otherwise></choose> that they indicate.<footref id="sect331-1" idref="sect331-1-foot" /></p>
+      <puzzle idref="sect331">When you have broken the code, write the numbers in order and <choose test="has-numbered-section-list"><when value="true"><a idref="part2">turn to the entry number</a></when><otherwise>turn to the entry number</otherwise></choose> that they indicate.<footref id="sect331-1" idref="sect331-1-foot" /></puzzle>
      </data>
     </section>
 
@@ -5049,7 +5049,7 @@
       <p>Nervously, you wait for the chance to leap up and open the door, but the crossbow bolts ricocheting from the wall and parapet are increasing in number. Suddenly, the sound of running footsteps sends a cold shiver down your spine; the Drakkarim are storming the stairs<ch.emdash/>it is now or never!</p>
       <p>You spring to your feet and run to the door, grasping the iron bolt between trembling fingers. As you fight to open it, a pain tears through your back: you have been hit. Another bolt strikes home, sinking deep into your shoulder and throwing you flat against the door.</p>
       <p>As darkness falls before your eyes, you are unaware of the Drakkarim leaping towards you, their black swords raised for the death-blow. Their blades bite deep but you feel nothing: you are already dead.</p>
-      <choice>Your life and the hopes of Sommerlund end here.</choice>
+      <deadend>Your life and the hopes of Sommerlund end here.</deadend>
      </data>
     </section>
 
@@ -5346,7 +5346,7 @@
      <data>
       <p>You leap at the staggering form of Darklord Haakon, your weapon poised to strike a killing blow. However, as your arm sweeps down, a spiked fist lashes out; blood spurts from your wrist, your fingers go numb and your weapon falls from your hand. Haakon strikes again, catching you in the chest with a blow that pitches you backwards across the chamber.</p>
       <p>You struggle to stand but the battle is over: Haakon has retrieved the glowing stone. The last thing you see before you are consumed by searing blue flame is the evil and triumphant grimace of the Darklord.</p>
-      <choice>Your life and hopes of Sommerlund end here.</choice>
+      <deadend>Your life and hopes of Sommerlund end here.</deadend>
      </data>
     </section>
 
