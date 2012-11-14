@@ -12,7 +12,10 @@ TODO:
 
 -->
 
-<xsl:transform version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:transform version="1.0" 
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:str="http://exslt.org/strings"
+  extension-element-prefixes="str">
 
  <xsl:output method="text" encoding="UTF-8"/>
 
@@ -123,7 +126,7 @@ TODO:
     <xsl:value-of select="$newline"/>
    </xsl:if>
    <xsl:if test="@idrefs">
-    <xsl:for-each select="tokenize(normalize-space(@idrefs), '\s')"/>
+    <xsl:for-each select="str:tokenize(@idrefs)">
      <xsl:value-of select="$indent"/>
      <xsl:value-of select="$section"/>
      <xsl:text> -&gt; </xsl:text>
