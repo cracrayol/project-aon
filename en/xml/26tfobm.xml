@@ -1514,9 +1514,15 @@
     <section class="numbered" id="sect25">
      <meta><title>25</title></meta>
 
+      <footnotes>
+       <footnote id="sect25-1-foot" idref="sect25-1">
+        <p>As the wording here is rather ambiguous, it is up to you to decide whether to delete the Bow from your <a idref="action">Action Chart</a> in this instance.</p>
+       </footnote>
+      </footnotes>
+
      <data>
        <p>Your blazing Arrow speeds towards the kegs, but the skeletal creature sees it approaching and it reacts swiftly to your deadly threat. It raises its clawed hand and launches an icy blast that freezes the Arrow in mid-air. Then the creature emits a loud, hellish shriek, and you feel a fiery pain welling up inside your skull as a powerful stream of destructive psychic energy batters your mind.</p>
-       <p>Rapidly the pressure builds in your head until your skull feels fit to burst. Your vision is clouded by a scarlet haze, and you are unable to stifle a cry of pain as you drop your Bow and collapse to your knees: lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
+       <p>Rapidly the pressure builds in your head until your skull feels fit to burst. Your vision is clouded by a scarlet haze, and you are unable to stifle a cry of pain as you drop your Bow and collapse to your knees: lose 3 <typ class="attribute">ENDURANCE</typ> points.<footref id="sect25-1" idref="sect25-1-foot"/></p>
        <p>Desperately you struggle to erect a defensive wall around the core of your mind, using your power of Psi-screen. Slowly, as your mental defences lock together, the pain eases and your vision clears. Through the receding red mist you see a group of Shom<ch.apos/>zaa Agarashi stalking towards you with their swords drawn. You force yourself to stand, and you unsheathe your Kai Weapon just in time to meet their determined attack.</p>
        <combat><enemy>Shom<ch.apos/>zaa Agarashi</enemy><enemy-attribute class="combatskill">40</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat>
        <choice idref="sect65">If you win this combat in three rounds or less, <link-text>turn to 65</link-text>.</choice>
@@ -2999,7 +3005,7 @@
 
      <data>
        <p>You take aim at the guards and fire your Bow twice in quick succession (erase 2 Arrows from your <a idref="action">Action Chart</a>). Your first shot strikes in the head and kills its target instantly, but your second shaft fails to penetrate the minion<ch.apos/>s body armour. This creature is knocked down by the force of the Arrow, yet it is able to emit a shrill cry of alarm that alerts the other Shom<ch.apos/>zaa minions to your presence in the smelting cavern.</p>
-       <p>The dwarves seize their chance to escape from the cage. Before the creature can get to its feet, a hand reaches through the bars and the bolt is pulled. Then the door bursts open and out they pour with a blood-curdling yell. The surviving guard is trampled underfoot as the dwarves rush to the ore wagons and arm themselves with rocks and tools. The torturers abandon their grisly work and come running towards the prison cage with their weapons raised. Suddenly two of these minions appear beside your wagon. Hurriedly you drop your Bow and reach for your Kai Weapon as they turn on you and launch a frenzied attack.</p>
+       <p>The dwarves seize their chance to escape from the cage. Before the creature can get to its feet, a hand reaches through the bars and the bolt is pulled. Then the door bursts open and out they pour with a blood-curdling yell. The surviving guard is trampled underfoot as the dwarves rush to the ore wagons and arm themselves with rocks and tools. The torturers abandon their grisly work and come running towards the prison cage with their weapons raised. Suddenly two of these minions appear beside your wagon. Hurriedly you shoulder your Bow and reach for your Kai Weapon as they turn on you and launch a frenzied attack.</p>
 
        <illustration class="float">
         <meta>
@@ -3102,7 +3108,7 @@
 
      <data>
        <p>You use your improved Discipline to summon a fog to rise up from the cleared ground between you and the charging lancers. As the dense vapours begin to obscure you from their sight, you turn and run back towards the tall crops in an attempt to evade their attack.</p>
-       <p>Pick a number from the <a idref="random">Random Number Table</a>. If you possess Assimilance, add 2 to the number you have picked.</p>
+       <p>Pick a number from the <a idref="random">Random Number Table</a>. As you possess Assimilance, add 2 to the number you have picked.</p>
        <choice idref="sect47">If your total score is now 3 or lower, <link-text>turn to 47</link-text>.</choice>
        <choice idref="sect162">If it is 4 or higher, <link-text>turn to 162</link-text>.</choice>
      </data>
@@ -6115,10 +6121,11 @@
        <p>(<a idref="sect143">143</a>) Replaced <quote>War-Thanes</quote> with <quote>War-thanes</quote>.</p>
        <p>(<a idref="sect144">144</a>) Replaced <quote>approriate</quote> with <quote>appropriate</quote>. Replaced <quote>weapon</quote> with <quote>Weapon</quote>.</p>
        <p>(<a idref="sect145">145</a>) Replaced <quote>your backpack</quote> with <quote>your Backpack</quote>.</p>
-       <p>(<a idref="sect146">146</a>) Replaced <quote>bow</quote> with <quote>Bow</quote>. Replaced <quote>arrows</quote> with <quote>Arrows</quote>. Replaced <quote>arrow</quote> with <quote>Arrow</quote>. Replaced <quote><a idref="action">Weapons List</a></quote> with <quote><a idref="action">Action Chart</a></quote>.</p>
+       <p>(<a idref="sect146">146</a>) Replaced <quote>drop your bow</quote> with <quote>shoulder your Bow</quote>. Replaced <quote>arrows</quote> with <quote>Arrows</quote>. Replaced <quote>arrow</quote> with <quote>Arrow</quote>. Replaced <quote><a idref="action">Weapons List</a></quote> with <quote><a idref="action">Action Chart</a></quote>.</p>
        <p>(<a idref="sect152">152</a>) Replaced <quote>jug</quote> with <quote>Jug of Vinegar</quote>. Replaced <quote>and and</quote> with <quote>and</quote>. Replaced <quote>current, then</quote> with <quote>current; then</quote>.</p>
        <p>(<a idref="sect153">153</a>) Replaced <quote>Kai Grand Guardian</quote> with <quote>Kai Grand Guardian or higher</quote>. Replaced <quote>Assimilance, and</quote> with <quote>Assimilance and</quote>. Replaced <quote>Assimilance, but</quote> with <quote>Assimilance but</quote>.</p>
        <p>(<a idref="sect154">154</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>. Replaced <quote>Sun-Crystal</quote> with <quote>Sun-crystal</quote>. Replaced <quote>Bow, or</quote> with <quote>Bow, nor</quote>. Replaced <quote>Leomin; it</quote> with <quote>Leomin: it</quote>. Replaced <quote>Kai-alchemy, and</quote> with <quote>Kai-alchemy and</quote>. Replaced <quote>Magi-magic, and</quote> with <quote>Magi-magic and</quote>.</p>
+       <p>(<a idref="sect155">155</a>) Replaced <quote>If you possess Assimilance</quote> with <quote>As you possess Assimilance</quote> since you must possess Assimilance to reach this section.</p>
        <p>(<a idref="sect157">157</a>) Replaced <quote>strong psychic, and some magical, abilities</quote> with <quote>strong psychic and some magical abilities</quote>.</p>
        <p>(<a idref="sect158">158</a>) Replaced <quote>odd (1,3,5,7,9)</quote> with <quote>odd (i.e. 1, 3, 5, 7, or 9)</quote>. Replaced <quote>even (2,4,6,8,0)</quote> with <quote>even (i.e. 2, 4, 6, 8, or 0)</quote>.</p>
        <p>(<a idref="sect159">159</a>) Replaced <quote>halfway though</quote> with <quote>halfway through</quote>.</p>
