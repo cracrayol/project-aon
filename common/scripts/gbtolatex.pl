@@ -39,6 +39,18 @@ $EXTRAPARMS=$ENV{'XMLPARMS'} if defined($ENV{'XMLPARMS'});
 
 unless( $ARGV[ 0 ] ) { die "Usage:\n\t${PROGRAM_NAME} book-code [LANGUAGE] [OUTPUTFILE]\n"; }
 
+# Check that all the binaries are were want them
+
+my @BINARIES;
+push @BINARIES, ($XMLPROC, $JAVA);
+
+foreach (@BINARIES) {
+    if ( ! -e $_ ) {
+            die "$PROGRAM_NAME: Cannot find binary '".$_."'. Please install it.\n";
+    }
+}
+
+
 print "Reminder:\n\tDid you uncomment the LaTeX special character\n\tdeclarations in the book's XML file?\n";
 
 my $bookCode = $ARGV[ 0 ];
