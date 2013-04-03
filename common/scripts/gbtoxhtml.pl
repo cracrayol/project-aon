@@ -24,6 +24,17 @@ my $XALAN_JAR  = '/usr/share/java/xalan2.jar';
 my $RM         = '/bin/rm';
 my $CHMOD      = '/bin/chmod';
 
+# Check that all the binaries are were want them
+
+my @BINARIES;
+push @BINARIES, ($RXP, $CP, $MV, $TAR, $ZIP, $BZIP2, $JAVA, $XALAN_JAR, $RM, $CHMOD);
+
+foreach (@BINARIES) {
+    if ( ! -e $_ ) {
+        die "$PROGRAM_NAME: Cannot find binary '".$_."'. Please install it.\n";
+    }
+}
+
 ###
 
 my $bookCode     = '';

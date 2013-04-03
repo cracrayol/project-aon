@@ -16,6 +16,19 @@ my $JAVA       = '/usr/bin/java';
 my $XALAN_JAR  = '/usr/share/java/xalan2.jar';
 my $DOT        = '/usr/local/bin/dot';
 
+
+# Check that all the binaries are were want them
+
+my @BINARIES;
+push @BINARIES, ($RXP, $JAVA, $XALAN_JAR, $DOT);
+
+foreach (@BINARIES) {
+    if ( ! -e $_ ) {
+            die "$PROGRAM_NAME: Cannot find binary '".$_."'. Please install it.\n";
+    }
+}
+
+
 ###
 
 my $bookCode     = '';

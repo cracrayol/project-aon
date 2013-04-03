@@ -18,7 +18,7 @@ unless( -e $RXP && -x $RXP ) {
     # try somewhere else
     $RXP = '/usr/local/bin/rxp';
 }
-my $ZIP        = '/usr/bin/zip -q';
+my $ZIP        = '/usr/bin/zip';
 my $JAVA       = '/usr/bin/java';
 # latest binary download names the relevant jar "xalan.jar"
 # older installations may have "xalan2.jar"
@@ -26,6 +26,17 @@ my $XALAN_JAR  = '/usr/share/java/xalan.jar';
 unless( -e $XALAN_JAR ) { 
     # try somewhere else
     $XALAN_JAR = '/usr/share/java/xalan2.jar';
+}
+
+# Check that all the binaries are were want them
+
+my @BINARIES;
+push @BINARIES, ($RXP, $ZIP, $JAVA, $XALAN_JAR);
+
+foreach (@BINARIES) {
+    if ( ! -e $_ ) {
+            die "$PROGRAM_NAME: Cannot find binary '".$_."'. Please install it.\n";
+    }
 }
 
 ###
@@ -122,7 +133,7 @@ if( $bookXML =~ m{^([-\w\@./]+)$} ) {
     my $bookPath = "$outPath${FILENAME_SEPARATOR}${bookCode}";
 
     print qx{$JAVA -classpath "$XALAN_JAR" org.apache.xalan.xslt.Process -IN "${bookXML}" -XSL "${xhtmlXSL}" -OUT "${bookPath}.htm" -PARAM use-illustrators "$rulesHash{'use-illustrators'}"};
-    print qx{$ZIP $bookPath.zip $bookPath.htm};
+    print qx{$ZIP -q $bookPath.zip $bookPath.htm};
 }
 
 print "Success\n" if $verbose;

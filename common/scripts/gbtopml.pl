@@ -14,6 +14,19 @@ my $PATH_PREFIX  = "$ENV{'HOME'}/aon/data";
 my $XML_PATH = "$PATH_PREFIX/xml";
 my $PML_PATH = "$PATH_PREFIX/pml";
 
+my $JAVA       = '/usr/bin/java';
+
+# Check that all the binaries are were want them
+
+my @BINARIES;
+push @BINARIES, ($JAVA);
+
+foreach (@BINARIES) {
+    if ( ! -e $_ ) {
+        die "$PROGRAM_NAME: Cannot find binary '".$_."'. Please install it.\n";
+    }
+}
+
 ##
 
 unless( $ARGV[ 0 ] ) { die "Usage:\n\t${PROGRAM_NAME} book-code\n"; }
@@ -87,4 +100,4 @@ elsif( $bookCode eq "12tmod" ) {
 }
 else{ die "Error:\n\tUknown book code.\n"; }
 
-print qx{java org.apache.xalan.xslt.Process -IN $XML_PATH/$XML_SOURCE -XSL $XML_PATH/pml.xsl -OUT $PML_PATH/$BOOK_PATH/$bookCode.txt -PARAM use-illustrators \"$USE_ILLUSTRATORS\"};
+print qx{$JAVA org.apache.xalan.xslt.Process -IN $XML_PATH/$XML_SOURCE -XSL $XML_PATH/pml.xsl -OUT $PML_PATH/$BOOK_PATH/$bookCode.txt -PARAM use-illustrators \"$USE_ILLUSTRATORS\"};

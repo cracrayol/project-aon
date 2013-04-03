@@ -21,6 +21,17 @@ my $ZIP        = '/usr/bin/zip';
 my $JAVA       = '/usr/bin/java';
 my $XALAN_JAR  = '/usr/share/java/xalan2.jar';
 
+# Check that all the binaries are were want them
+
+my @BINARIES;
+push @BINARIES, ($RXP, $CP, $MV, $ZIP, $JAVA, $XALAN_JAR, $RM);
+
+foreach (@BINARIES) {
+    if ( ! -e $_ ) {
+            die "$PROGRAM_NAME: Cannot find binary '".$_."'. Please install it.\n";
+    }
+}
+
 ###
 
 my $bookCode     = '';
