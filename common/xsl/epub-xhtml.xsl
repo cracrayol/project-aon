@@ -72,7 +72,7 @@ Todo:
  <!-- :::::::::::: third-level front matter sections ::::::::::::: -->
 
  <xsl:template match="/gamebook/section/data/section/data/section[@class='frontmatter']">
-  <h3><a><xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute><xsl:apply-templates select="meta/title[1]" /></a></h3>
+  <h3><xsl:apply-templates select="meta/title[1]" /></h3>
 
   <xsl:apply-templates />
  </xsl:template>
@@ -87,7 +87,7 @@ Todo:
  <!-- :::::::::::: fourth-level front matter sections :::::::::::: -->
 
  <xsl:template match="/gamebook/section/data/section/data/section/data/section[@class='frontmatter']">
-  <h4><a><xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute><xsl:apply-templates select="meta/title[1]" /></a></h4>
+  <h4><xsl:apply-templates select="meta/title[1]" /></h4>
 
   <xsl:apply-templates />
  </xsl:template>
@@ -95,7 +95,7 @@ Todo:
  <!-- ::::::::::::: fifth-level front matter sections :::::::::::: -->
 
  <xsl:template match="/gamebook/section/data/section/data/section/data/section/data/section[@class='frontmatter']">
-  <h5><a><xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute><xsl:apply-templates select="meta/title[1]" /></a></h5>
+  <h5><xsl:apply-templates select="meta/title[1]" /></h5>
 
   <xsl:apply-templates />
  </xsl:template>
@@ -112,7 +112,7 @@ Todo:
  <!-- :::::::::::: third-level main matter sections ::::::::::::: -->
 
  <xsl:template match="/gamebook/section/data/section/data/section[@class='mainmatter']">
-  <h3><a><xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute><xsl:apply-templates select="meta/title[1]" /></a></h3>
+  <h3><xsl:apply-templates select="meta/title[1]" /></h3>
 
   <xsl:apply-templates />
  </xsl:template>
@@ -127,7 +127,7 @@ Todo:
  <!-- :::::::::::: fourth-level main matter sections :::::::::::: -->
 
  <xsl:template match="/gamebook/section/data/section/data/section/data/section[@class='mainmatter']">
-  <h4><a><xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute><xsl:apply-templates select="meta/title[1]" /></a></h4>
+  <h4><xsl:apply-templates select="meta/title[1]" /></h4>
 
   <xsl:apply-templates />
  </xsl:template>
@@ -135,7 +135,7 @@ Todo:
  <!-- ::::::::::::: fifth-level main matter sections :::::::::::: -->
 
  <xsl:template match="/gamebook/section/data/section/data/section/data/section/data/section[@class='mainmatter']">
-  <h5><a><xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute><xsl:apply-templates select="meta/title[1]" /></a></h5>
+  <h5><xsl:apply-templates select="meta/title[1]" /></h5>
 
   <xsl:apply-templates />
  </xsl:template>
@@ -154,7 +154,7 @@ Todo:
  <!-- glossary sections should be enclosed in a second level glossary section -->
 
  <xsl:template match="/gamebook/section/data/section/data/section[@class='glossary']">
-  <h3><a><xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute><xsl:apply-templates select="meta/title[1]" /></a></h3>
+  <h3><xsl:apply-templates select="meta/title[1]" /></h3>
 
   <xsl:apply-templates />
  </xsl:template>
@@ -197,7 +197,7 @@ Todo:
  <!-- ::::::::::::: third-level back matter sections ::::::::::::: -->
 
  <xsl:template match="/gamebook/section/data/section/data/section[@class='backmatter']">
-  <h3><a><xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute><xsl:apply-templates select="meta/title[1]" /></a></h3>
+  <h3><xsl:apply-templates select="meta/title[1]" /></h3>
 
   <xsl:apply-templates />
  </xsl:template>
@@ -205,7 +205,7 @@ Todo:
  <!-- ::::::::::::: fourth-level back matter sections ::::::::::::: -->
 
  <xsl:template match="/gamebook/section/data/section/data/section/data/section[@class='backmatter']">
-  <h4><a><xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute><xsl:apply-templates select="meta/title[1]" /></a></h4>
+  <h4><xsl:apply-templates select="meta/title[1]" /></h4>
 
   <xsl:apply-templates />
  </xsl:template>
@@ -701,7 +701,6 @@ Todo:
    <xsl:when test="@href">
     <a>
      <xsl:attribute name="href"><xsl:value-of select="@href" /></xsl:attribute>
-     <xsl:if test="@id"><xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute></xsl:if>
      <xsl:apply-templates />
     </a>
    </xsl:when>
@@ -728,16 +727,16 @@ Todo:
          <xsl:value-of select="$my-idref" /><xsl:value-of select="$xhtml-ext"/>
         </xsl:when>
         <xsl:when test="/gamebook/section/data/section/data/section[@class='frontmatter-separate' and descendant::*[@id=$my-idref]]">
-         <xsl:value-of select="/gamebook/section/data/section/data/section[@class='frontmatter-separate' and descendant::*[@id=$my-idref]]/@id" /><xsl:value-of select="$xhtml-ext"/><xsl:text>#</xsl:text><xsl:value-of select="$my-idref" />
+         <xsl:value-of select="/gamebook/section/data/section/data/section[@class='frontmatter-separate' and descendant::*[@id=$my-idref]]/@id" /><xsl:value-of select="$xhtml-ext"/>
         </xsl:when>
         <xsl:when test="/gamebook/section/data/section/data/section[@class='mainmatter-separate' and descendant::*[@id=$my-idref]]">
-         <xsl:value-of select="/gamebook/section/data/section/data/section[@class='mainmatter-separate' and descendant::*[@id=$my-idref]]/@id" /><xsl:value-of select="$xhtml-ext"/><xsl:text>#</xsl:text><xsl:value-of select="$my-idref" />
+         <xsl:value-of select="/gamebook/section/data/section/data/section[@class='mainmatter-separate' and descendant::*[@id=$my-idref]]/@id" /><xsl:value-of select="$xhtml-ext"/>
         </xsl:when>
         <xsl:when test="/gamebook/section/data/section/data/section[@class='glossary-separate' and descendant::*[@id=$my-idref]]">
-         <xsl:value-of select="/gamebook/section/data/section/data/section[@class='glossary-separate' and descendant::*[@id=$my-idref]]/@id" /><xsl:value-of select="$xhtml-ext"/><xsl:text>#</xsl:text><xsl:value-of select="$my-idref" />
+         <xsl:value-of select="/gamebook/section/data/section/data/section[@class='glossary-separate' and descendant::*[@id=$my-idref]]/@id" /><xsl:value-of select="$xhtml-ext"/>
         </xsl:when>
         <xsl:when test="/gamebook/section/data/section[descendant::*[@id=$my-idref]]">
-         <xsl:value-of select="/gamebook/section/data/section[descendant::*[@id=$my-idref]]/@id" /><xsl:value-of select="$xhtml-ext"/><xsl:text>#</xsl:text><xsl:value-of select="$my-idref" />
+         <xsl:value-of select="/gamebook/section/data/section[descendant::*[@id=$my-idref]]/@id" /><xsl:value-of select="$xhtml-ext"/>
         </xsl:when>
         <xsl:otherwise>
          <xsl:text>[error: a template]</xsl:text>
@@ -746,7 +745,6 @@ Todo:
        </xsl:choose>
       </xsl:attribute>
      </xsl:if>
-     <xsl:if test="@id"><xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute></xsl:if>
      <xsl:apply-templates />
     </a>
    </xsl:otherwise>
@@ -758,11 +756,7 @@ Todo:
   <!-- <xsl:message><xsl:text>WARNING: Obsolete &lt;a idref='...' class='footnote' /&gt; usage</xsl:text></xsl:message> -->
   <xsl:apply-templates />
   <sup>
-   <a>
-    <xsl:attribute name="href"><xsl:text>#</xsl:text><xsl:value-of select="@idref" /></xsl:attribute>
-    <xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute>
-    <xsl:number count="a[@class='footnote']" from="/" level="any" format="1" />
-   </a>
+   <xsl:number count="a[@class='footnote']" from="/" level="any" format="1" />
   </sup>
  </xsl:template>
 
@@ -781,44 +775,40 @@ Todo:
  <!-- TODO: references to external books will not work in Ebooks -->
  <!--       should they be skipped or modified to point to the online book? -->
  <xsl:template match="bookref">
-  <a>
-   <xsl:attribute name="href">
-    <xsl:variable name="my-section">
-     <xsl:choose>
-      <xsl:when test="@section">
-       <xsl:value-of select="@section" />
-      </xsl:when>
-      <xsl:otherwise>
-       <xsl:text>title</xsl:text>
-      </xsl:otherwise>
-     </xsl:choose>
-    </xsl:variable>
-    <xsl:variable name="my-series">
+ <!-- <a> -->
+ <!--  <xsl:attribute name="href"> -->
+ <!--   <xsl:variable name="my-section"> -->
+ <!--    <xsl:choose> -->
+ <!--     <xsl:when test="@section"> -->
+ <!--      <xsl:value-of select="@section" /> -->
+ <!--     </xsl:when> -->
+ <!--     <xsl:otherwise> -->
+ <!--      <xsl:text>title</xsl:text> -->
+ <!--     </xsl:otherwise> -->
+ <!--    </xsl:choose> -->
+ <!--   </xsl:variable> -->
+ <!--   <xsl:variable name="my-series"> -->
      <!-- If series is specified, go one directory back and then to series. Otherwise, add nothing. -->
-     <xsl:choose>
-      <xsl:when test="@series">
-       <xsl:text>/../</xsl:text><xsl:value-of select="@series" />
-      </xsl:when>
-      <xsl:otherwise>
-       <xsl:text></xsl:text>
-      </xsl:otherwise>
-     </xsl:choose>
-    </xsl:variable>
-    <xsl:text>..</xsl:text><xsl:value-of select="$my-series" /><xsl:text>/</xsl:text><xsl:value-of select="@book" /><xsl:text>/</xsl:text><xsl:value-of select="$my-section" /><xsl:value-of select="$xhtml-ext"/>
-   </xsl:attribute>
-   <xsl:if test="@id"><xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute></xsl:if>
+ <!--    <xsl:choose> -->
+ <!--     <xsl:when test="@series"> -->
+ <!--      <xsl:text>/../</xsl:text><xsl:value-of select="@series" /> -->
+ <!--     </xsl:when> -->
+ <!--     <xsl:otherwise> -->
+ <!--      <xsl:text></xsl:text> -->
+ <!--     </xsl:otherwise> -->
+ <!--    </xsl:choose> -->
+ <!--   </xsl:variable> -->
+ <!--   <xsl:text>..</xsl:text><xsl:value-of select="$my-series" /><xsl:text>/</xsl:text><xsl:value-of select="@book" /><xsl:text>/</xsl:text><xsl:value-of select="$my-section" /><xsl:value-of select="$xhtml-ext"/> -->
+ <!--  </xsl:attribute> -->
+ <!--  <xsl:if test="@id"><xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute></xsl:if> -->
    <xsl:apply-templates />
-  </a>
+ <!-- </a> -->
  </xsl:template>
 
  <xsl:template match="footref">
   <xsl:apply-templates />
   <sup>
-   <a>
-    <xsl:attribute name="href"><xsl:text>#</xsl:text><xsl:value-of select="@idref" /></xsl:attribute>
-    <xsl:attribute name="name"><xsl:value-of select="@id" /></xsl:attribute>
-    <xsl:number count="footref" from="/" level="any" format="1" />
-   </a>
+   <xsl:number count="footref" from="/" level="any" format="1" />
   </sup>
  </xsl:template>
 
@@ -1341,7 +1331,7 @@ title of each section be a simple number.
           <p>
            <xsl:for-each select="data/section">
             <xsl:if test="position( ) mod 10 = 1">
-             <b><a><xsl:attribute name="name"><xsl:value-of select="position( ) + $base-section-number" /></xsl:attribute>
+             <b>
               <xsl:value-of select="position( ) + $base-section-number" />
               <xsl:if test="not( position( ) = last( ) )">
                <xsl:text>-</xsl:text>
@@ -1354,7 +1344,7 @@ title of each section be a simple number.
                 </xsl:otherwise>
                </xsl:choose>
               </xsl:if>
-             </a><xsl:text>: </xsl:text></b>
+             <xsl:text>: </xsl:text></b>
             </xsl:if>
             <a>
              <xsl:attribute name="href"><xsl:value-of select="@id" /><xsl:value-of select="$xhtml-ext"/></xsl:attribute>
@@ -1407,7 +1397,7 @@ title of each section be a simple number.
              <p>
               <xsl:text>[</xsl:text>
               <a>
-               <xsl:attribute name="href"><xsl:value-of select="$footnote-section" /><xsl:value-of select="$xhtml-ext"/><xsl:text>#</xsl:text><xsl:value-of select="$footnote-idref" /></xsl:attribute>
+               <xsl:attribute name="href"><xsl:value-of select="$footnote-section" /><xsl:value-of select="$xhtml-ext"/></xsl:attribute>
                <xsl:value-of select="$footnote-marker" />
               </a>
               <xsl:text>] </xsl:text>
@@ -1558,7 +1548,7 @@ title of each section be a simple number.
      <xsl:for-each select="*[1]">
       <p>
        <xsl:text>[</xsl:text>
-        <a href="#{$footnote-idref}" name="{$footnote-id}"><xsl:value-of select="$footnote-marker" /></a>
+        <xsl:value-of select="$footnote-marker" />
        <xsl:text>] </xsl:text>
        <xsl:apply-templates select="child::* | child::text()" />
       </p>
