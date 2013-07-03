@@ -317,10 +317,27 @@ Todo:
 
  <xsl:template match="ol">
   <ol>
-   <xsl:if test="@start"><xsl:attribute name="start"><xsl:value-of select="@start" /></xsl:attribute></xsl:if>
+   <xsl:if test="@start">
+    <xsl:call-template name="ol-start-for-loop">
+     <xsl:with-param name="count" select="@start"/>
+    </xsl:call-template>
+   </xsl:if>
 
    <xsl:apply-templates />
   </ol>
+ </xsl:template>
+
+ <xsl:template name="ol-start-for-loop">
+  <xsl:param name="i" select="0"/>
+  <xsl:param name="count"/>
+
+  <xsl:if test="number($i) &lt; number($count)">
+   <li style="visibility:hidden;height:0">&nbsp;</li>
+   <xsl:call-template name="ol-start-for-loop">
+    <xsl:with-param name="i" select="number($i) + 1"/>
+    <xsl:with-param name="count" select="$count"/>
+   </xsl:call-template>
+  </xsl:if>
  </xsl:template>
 
  <xsl:template match="ul">
