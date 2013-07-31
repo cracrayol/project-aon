@@ -25,7 +25,6 @@
 <xsl:param name="language"><xsl:text>en</xsl:text></xsl:param>
 <xsl:param name="book_series"><xsl:text>Lone Wolf</xsl:text></xsl:param>
 <xsl:param name="book_series_index" />
-<xsl:param name="addcover" />
  
 <!-- ======================= variables ========================== -->
 
@@ -56,25 +55,16 @@
     </head>
     <body>
 
-       <xsl:choose>
-               <xsl:when test="$addcover='yes'">
-                    <div>
-                    <img src="cover.jpg" alt="cover" style="height: 100%"/>
-                    </div>
-                </xsl:when>
-                <xsl:otherwise>
 
-                <div>
-                    <h1><xsl:value-of select="$book_series" /><xsl:choose><xsl:when test="$book_series_index"> - <xsl:value-of select="$book_series_index"/></xsl:when></xsl:choose> - <xsl:apply-templates select="title[1]" /></h1>
-               </div>
-               <div>
-                    <p><xsl:apply-templates select="creator[@class='author']"/></p>
-               </div>
-               <div>
-                    <p><xsl:apply-templates select="creator[@class='illustrator']"/></p>
-              </div>
-            </xsl:otherwise>
-        </xsl:choose>
+        <div>
+            <h1><xsl:value-of select="$book_series" /><xsl:choose><xsl:when test="$book_series_index"> - <xsl:value-of select="$book_series_index"/></xsl:when></xsl:choose> - <xsl:apply-templates select="title[1]" /></h1>
+       </div>
+       <div>
+            <p><xsl:apply-templates select="creator[@class='author']"/></p>
+       </div>
+       <div>
+            <p><xsl:apply-templates select="creator[@class='illustrator']"/></p>
+      </div>
 
         <div>
             <p><xsl:apply-templates select="rights[@class='copyrights']"/></p>

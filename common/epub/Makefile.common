@@ -11,6 +11,7 @@ RELSCRIPT := $(AONROOTDIR)/common/scripts
 # Relative location of the xsl files
 RELXSLDIR := $(AONROOTDIR)/common/xsl
 EPUBSCRIPT := $(RELSCRIPT)/gbtoepub.pl
+COVERIMAGE := $(AONROOTDIR)/$(BLANG)/jpeg/$(SERIES)/$(BASENAME)/skins/ebook/cover.jpg
 
 EPUB=$(BASENAME).epub
 MOBI=$(BASENAME).mobi
@@ -43,8 +44,8 @@ $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB): $(XMLFILE) $(EPUBSCRI
 
 $(EPUB): $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB)
 	cp -p $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB) .
-# Regenerate to include the covers properly within the Ebook
-	ebook-convert $(EPUB) regen_$(EPUB)
+# Regenerate to include the covers properly within the Ebook and fix the EPUB
+	ebook-convert $(EPUB) regen_$(EPUB) --cover $(COVERIMAGE)
 	mv regen_$(EPUB) $(EPUB)
 	-rm -f cover.jpg $(BASENAME).opf  
 

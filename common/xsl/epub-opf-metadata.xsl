@@ -34,8 +34,6 @@
 -->
 <xsl:param name="book_series"><xsl:text>Lone Wolf</xsl:text></xsl:param>
 <xsl:param name="book_series_index" />
-<xsl:param name="addcover" />
-
  
 <!-- ======================= variables ========================== -->
 
@@ -101,19 +99,6 @@
   </xsl:when>
   </xsl:choose>
  </metadata>
-
-  <guide>
-  <xsl:choose>
-    <xsl:when test="$addcover='yes'">
-     <reference href="cover.jpg" type="cover" title="Cover"/>
-    </xsl:when>
-    <xsl:otherwise>
-     <reference href="coverpage.html" type="cover" title="Cover"/>
-    </xsl:otherwise>
-  </xsl:choose>
-  </guide>
-
-
 </xsl:template>
 <!--
 <xsl:template match="title">

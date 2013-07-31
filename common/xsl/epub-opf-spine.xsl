@@ -11,7 +11,6 @@
  <!-- ====================== parameters ========================== -->
 
  <xsl:param name="toc-id"><xsl:text>toc.ncx</xsl:text></xsl:param>
- <xsl:param name="addcover" />
   
  <!-- ======================== Templates ========================= -->
 
@@ -35,7 +34,6 @@
  <xsl:template match="/gamebook/section[@id='title']">
   <itemref idref="title" media-type="application/xhtml+xml"/>
   <itemref idref="toc"   media-type="application/xhtml+xml"/>
-  <itemref idref="coverpage" media-type="application/xhtml+xml"/>
 
   <xsl:apply-templates select="data/section"/>
  </xsl:template>
