@@ -1067,21 +1067,6 @@ is included in all copies.
 
     <body> 
      <div id="body"> 
-      <div id="page-header">
-       <cite>
-        <xsl:apply-templates select="/gamebook/meta/title[1]"/>
-       </cite>
-       <xsl:choose>
-        <xsl:when test="$language='es'">
-         <xsl:text> por </xsl:text>
-        </xsl:when>
-        <xsl:otherwise>
-         <xsl:text> by </xsl:text>
-        </xsl:otherwise>
-       </xsl:choose>
-       <xsl:apply-templates select="/gamebook/meta/creator[@class='short']" />
-      </div>
-
       <xsl:choose>
 
  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ top-level ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
