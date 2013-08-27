@@ -5,7 +5,8 @@ use strict;
 use File::Spec;
 use Image::Size;
 
-my $USAGE = "typical usage:\timage-size.pl *.png <input.xml >output.xml\n";
+my $PROG_NAME = 'fix-image-sizes.pl';
+my $USAGE = "typical usage:\t${PROG_NAME} *.png <input.xml >output.xml\n";
 die $USAGE if $#ARGV < 0;
 
 my %image_widths = ( );
