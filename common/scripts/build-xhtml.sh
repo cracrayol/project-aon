@@ -54,7 +54,7 @@ generate_files() {
                 set -e 
                 cd $CURDIR
             else 
-                echo "WARN: Do not find metadata for $xml in $METADATA"
+                echo "WARN: Cannot find metadata for $xml in $METADATA"
             fi
         else
             echo "ERROR: Cannot generate xhtml file for $xml (not readable)"
