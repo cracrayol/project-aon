@@ -11,8 +11,16 @@ MAJOR:
  - Make a script to compare the XML structure (- text) with the original English books
    to compare differences and ensure that they are the same
 
+- Synchronise content / layout with changes introduced in original English books. 
+
+   Note: How can we simplify tracking editing changes in the English XML files?
+   Maybe with po4a tools? (and manage the translation using gettext PO files?)
+
 MINOR
 -----
+
+ - Spell check review of *all* books. 
+     September 2013: Spell-checked #1, #2, #3, #13 and #14
 
  - Review use of <quote> sometimes there is no space after/before it
 
@@ -29,6 +37,9 @@ MINOR
 
      Note: Fixed temporarily by using \usepackage[latin1]{inputenc}
      if we reconvert to UTF-8 we have to change that definition in l10n/i18n-pdf.xml
+
+     Note2: If we use UTF-8 we have to change the script to be able to spell-check
+     the docs properly. Ispell does not seem to support UTF-8 properly
 
 DONE:
 ----
