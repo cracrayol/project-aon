@@ -1478,7 +1478,7 @@
      <meta><title>18</title></meta>
 
      <data>
-       <p>As the carriage draws level with your horse, you leap from the saddle and scramble onto the roof. You are drawing your Kai Weapon from its sheath when one of the remaining monsters lashes out at you with its razor-sharp talons. You shield your face with your free arm, but its cruel claws slash your unarmoured limb: lose 4 <typ class="attribute">ENDURANCE</typ> points. You must now fight them.</p>
+       <p>As the carriage draws level with your horse, you leap from the saddle and scramble onto the roof. You are drawing your Kai Weapon from its sheath when one of the monsters lashes out at you with its razor-sharp talons. You shield your face with your free arm, but its cruel claws slash your unarmoured limb: lose 4 <typ class="attribute">ENDURANCE</typ> points. You must now fight them.</p>
 
       <illustration class="float">
        <meta>
@@ -1543,7 +1543,7 @@
      <meta><title>22</title></meta>
 
      <data>
-       <p>Hurriedly, you recite the words of the Brotherhood Spell <spell>Halt Missile</spell>, and sweep your hand before your face with a circular motion. Kronar<ch.apos/>s arrow strikes the invisible shield created by your spell, and shatters harmlessly into a hundred pieces. Chan flattens himself to the neck of his horse to avoid the other arrow, and its barbed tip grazes his shoulder.</p>
+       <p>Hurriedly, you recite the words of the Brotherhood Spell <spell>Invisible Shield</spell>, and sweep your hand before your face with a circular motion. Kronar<ch.apos/>s arrow strikes the invisible shield created by your spell, and shatters harmlessly into a hundred pieces. Chan flattens himself to the neck of his horse to avoid the other arrow, and its barbed tip grazes his shoulder.</p>
        <choice idref="sect112"><link-text>Turn to 112</link-text>.</choice>
      </data>
     </section>
@@ -2366,9 +2366,9 @@
      <data>
        <p><quote>Captain Chan, let the prisoner go<ch.ellips/></quote> you whisper, <quote>and be ready to signal to the caravan.</quote></p>
        <p>Reluctantly, Chan obeys your command. He unwinds the trailing rope from his saddle and Xango digs his heels into his horse<ch.apos/>s flanks, making the animal lurch away at the gallop. As soon as his brother is out of the field of fire, Kronar utters a coarse laugh. Then, simultaneously, he and his companion let loose their straining bowstrings.</p>
-       <choice idref="sect22">If you possess Kai-alchemy and have attained the rank of Sun Knight, <link-text>turn to 22</link-text>.</choice>
+       <choice idref="sect22">If you possess Kai-alchemy and wish to use it, <link-text>turn to 22</link-text>.</choice>
        <choice idref="sect215">If you possess Magi-magic and wish to use it, <link-text>turn to 215</link-text>.</choice>
-       <choice idref="sect170">If you do not possess either of these skills, or if you have yet to attain the required level of Kai Mastery, <link-text>turn instead to 170</link-text>.</choice>
+       <choice idref="sect170">If you do not possess either of these skills, <link-text>turn instead to 170</link-text>.</choice>
      </data>
     </section>
 
@@ -3843,7 +3843,7 @@
      <meta><title>215</title></meta>
 
      <data>
-       <p>Quickly, you speak the words of the Old Kingdom Spell <spell>Invisible Shield</spell>, and move your open hand before your face with a circular motion. Kronar<ch.apos/>s arrow strikes the shimmering barrier created by your spell and is deflected harmlessly away. Captain Chan flattens himself to the neck of his horse to avoid the other arrow. His swift reflexes save his life, and he escapes the missile<ch.apos/>s barbed tip with nothing more than a grazed shoulder.</p>
+       <p>Quickly, you speak the words of the Old Kingdom Spell <spell>Shield</spell>, and move your open hand before your face with a circular motion. Kronar<ch.apos/>s arrow strikes the shimmering barrier created by your spell and is deflected harmlessly away. Captain Chan flattens himself to the neck of his horse to avoid the other arrow. His swift reflexes save his life, and he escapes the missile<ch.apos/>s barbed tip with nothing more than a grazed shoulder.</p>
        <choice idref="sect112"><link-text>Turn to 112</link-text>.</choice>
      </data>
     </section>
@@ -5468,9 +5468,9 @@
        <p>(<a idref="sect14">14</a>) Replaced <quote>sixth sense</quote> with <quote>Sixth Sense</quote>. Replaced <quote>you look at each of the people in turn who have gathered</quote> with <quote>you look in turn at each person who is gathered</quote>.</p>
        <p>(<a idref="sect16">16</a>) Replaced <quote>They lead</quote> with <quote>It leads</quote> respecting the robbers<ch.apos/> trail.</p>
        <p>(<a idref="sect17">17</a>) Replaced <quote>Magnakai Disciplines of Nexus and Healing</quote> with <quote>Magnakai Disciplines of Nexus and Curing</quote>.</p>
-       <p>(<a idref="sect18">18</a>) Replaced <quote>on to</quote> with <quote>onto</quote>. Replaced <quote>one of the two remaining</quote> with <quote>one of the remaining</quote> as there are still three of them.</p>
+       <p>(<a idref="sect18">18</a>) Replaced <quote>on to</quote> with <quote>onto</quote>. Replaced <quote>one of the two remaining monsters</quote> with <quote>one of the monsters</quote> as there are still three of them.</p>
        <p>(<a idref="sect19">19</a>) Replaced <quote>densely packed</quote> with <quote>densely-packed</quote>.</p>
-       <p>(<a idref="sect22">22</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>.</p>
+       <p>(<a id="err22" idref="sect22">22</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>. Replaced <quote><spell>Halt Missile</spell></quote> with <quote><spell>Invisible Shield</spell></quote> as the spell described in the section is <spell>Invisible Shield</spell>.</p>
        <p>(<a idref="sect24">24</a>) Replaced <quote>steam cannon</quote> with <quote>steam-cannon</quote>. Replaced <quote>the enemy have a</quote> with <quote>the enemy has a</quote>.</p>
        <p>(<a idref="sect25">25</a>) Replaced <quote>Kai-alchemy, and</quote> with <quote>Kai-alchemy and</quote>. Replaced <quote>Kai-surge, and</quote> with <quote>Kai-surge and</quote>.</p>
        <p>(<a idref="sect26">26</a>) Replaced <quote>arrow</quote> with <quote>Arrow</quote>.</p>
@@ -5515,7 +5515,7 @@
        <p>(<a idref="sect87">87</a>) Replaced <quote>A healing fungi</quote> with <quote>A healing fungus</quote>.</p>
        <p>(<a idref="sect88">88</a>) Replaced <quote>mid-summer</quote> with <quote>midsummer</quote>.</p>
        <p>(<a idref="sect90">90</a>) Replaced <quote>Shavane, <ch.lsquot/>he<ch.apos/>ll</quote> with <quote>Shavane. <ch.lsquot/>He<ch.apos/>ll</quote>.</p>
-       <p>(<a idref="sect92">92</a>) Replaced <quote>Kai rank of</quote> with <quote>rank of</quote>. Replaced <quote>Kai-alchemy, and</quote> with <quote>Kai-alchemy and</quote>. Replaced <quote>Magi-magic, and</quote> with <quote>Magi-magic and</quote>.</p>
+       <p>(<a idref="sect92">92</a>) Replaced <quote>Kai rank of</quote> with <quote>rank of</quote>. Replaced <quote>Kai-alchemy, and have attained the rank of Sun Knight,</quote> with <quote>Kai-alchemy and wish to use it</quote> (cf. <a idref="err22">erratum for Section 22</a>). Deleted <quote>or if you have yet to attain the required level of Kai Mastery,</quote> in view of the previous change, as an Improved Discipline is no longer required here. Replaced <quote>Magi-magic, and</quote> with <quote>Magi-magic and</quote>.</p>
        <p>(<a idref="sect94">94</a>) Replaced <quote>gases and</quote> with <quote>gases, and</quote>.</p>
        <p>(<a idref="sect95">95</a>) Replaced <quote><onomatopoeia>Crack</onomatopoeia>!; the</quote> with <quote><onomatopoeia>Crack</onomatopoeia>! The</quote>. Replaced <quote>ribcage</quote> with <quote>rib cage</quote>. Replaced <quote>Knight, or</quote> with <quote>Knight or</quote>. Replaced <quote>Kai-alchemy, and</quote> with <quote>Kai-alchemy and</quote>.</p>
        <p>(<a idref="sect96">96</a>) Replaced <quote>throght</quote> with <quote>throughout</quote>. Replaced <quote>distant corridor</quote> with <quote>distant corridors</quote>.</p>
@@ -5612,7 +5612,7 @@
        <p>(<a idref="sect212">212</a>) Replaced <quote>power word</quote> with <quote>power-word</quote>.</p>
        <p>(<a idref="sect213">213</a>) Replaced <quote>Kirusami</quote> with <quote><foreign xml:lang="x-chaian">Kirusami</foreign></quote>. Replaced <quote>to <ch.minus/>1</quote> with <quote>by 1</quote>. Replaced <quote>point).</quote> with <quote>point.)</quote>.</p>
        <p>(<a idref="sect214">214</a>) Replaced <quote>platform, then</quote> with <quote>platform; then</quote>. Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>. Replaced <quote>flagtower</quote> with <quote>flag-tower</quote>.</p>
-       <p>(<a idref="sect215">215</a>) Replaced <quote>Old Kingdom spell</quote> with <quote>Old Kingdom Spell</quote>. Replaced <quote>reflex saves</quote> with <quote>reflexes save</quote>.</p>
+       <p>(<a idref="sect215">215</a>) Replaced <quote>Old Kingdom spell</quote> with <quote>Old Kingdom Spell</quote>. Replaced <quote>reflex saves</quote> with <quote>reflexes save</quote>. Replaced <quote><spell>Invisible Shield</spell></quote> with <quote><spell>Shield</spell></quote> as <spell>Invisible Shield</spell> is a Brotherhood Spell, not an Old Kingdom Spell as here stated.</p>
        <p>(<a idref="sect217">217</a>) Replaced <quote>out of Rakholi</quote> with <quote>out from Rakholi</quote>.</p>
        <p>(<a idref="sect218">218</a>) Replaced each occurrence of <quote>ie,</quote> with <quote>i.e.</quote>. Replaced <quote>7 or 9</quote> with <quote>7, or 9</quote>. Replaced <quote>0, 2, 4, 6 or 8</quote> with <quote>2, 4, 6, 8, or 0</quote>. Replaced <quote>survived your wounds</quote> with <quote>survived your wounding</quote>.</p>
        <p>(<a idref="sect219">219</a>) Replaced <quote>on to</quote> with <quote>onto</quote>.</p>
