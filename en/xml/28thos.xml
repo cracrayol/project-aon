@@ -2092,11 +2092,11 @@
     <section class="numbered" id="sect71">
      <meta><title>71</title></meta>
 
-     <footnotes>
+      <footnotes>
        <footnote id="sect71-1-foot" idref="sect71-1">
         <p>If your Kai Weapon is <quote>Illuminatus</quote>, you may decide that you should add an extra 2 points to the Tomb Robbers<ch.apos/> <typ class="attribute">COMBAT SKILL</typ> as it is being used underground.</p>
        </footnote>
-     </footnotes>
+      </footnotes>
 
      <data>
        <p>You steel yourself for the attack, and then you kick open the door and launch yourself screaming into the chamber beyond. Your sudden appearance catches the robbers completely by surprise, but to your dismay, you soon discover that one of your adversaries is armed with your Kai Weapon which he delights in using against you.</p>
@@ -3338,6 +3338,7 @@
      <data>
        <p>You draw your Kai Weapon and, as you raise it in readiness to strike the first blow, a heavy silver orb comes hurtling through the crypt door and cracks your forearm. Numbed by the unexpected force of its impact, you drop your Kai Weapon and cradle your aching limb to your chest. Seconds later, a group of swarthy-faced tomb robbers come running up the crypt steps and barge you aside. You grapple with one of them and wrest a dagger from his hand, but in the blink of an eye he draws another from his boot and attempts to stab you through the heart.</p>
        <combat><enemy>Tomb Robber</enemy><enemy-attribute class="combatskill">30</enemy-attribute><enemy-attribute class="endurance">35</enemy-attribute></combat>
+       <p>You must fight this combat without your Kai Weapon.</p>
        <choice idref="sect139">If you win this combat, <link-text>turn to 139</link-text>.</choice>
      </data>
     </section>
@@ -3535,7 +3536,7 @@
 
      <data>
        <p>Vannar delves among the pile of rags that litter the floor and produces a gleaming arrow, crafted of pure korlinium. Even in the poor light of this cell, the missile shimmers and gleams, radiating all of the colours of the rainbow. Its halo of light reveals its sorcerous origins.</p>
-       <p><quote>This was crafted by the Elder Magi millennia ago. It harbours the power to slay the vampire Lord Sejanoz. This is the reason why he would send his agents to pursue me, if he knew where I was.</quote></p>
+       <p><quote>This was crafted by the Elder Magi millennia ago. It harbours the power to slay the vampire, Lord Sejanoz. This is the reason why he would send his agents to pursue me, if he knew where I was.</quote></p>
 
       <illustration class="float">
        <meta>
@@ -3695,7 +3696,7 @@
       </illustration>
 
        <combat><enemy>Brumalghasts</enemy><enemy-attribute class="combatskill">57</enemy-attribute><enemy-attribute class="endurance">50</enemy-attribute></combat>
-       <p>If you possess Elementalism or Grand Nexus, you may increase your <typ class="attribute">COMBAT SKILL</typ> by 3 for the duration of this fight.</p>
+       <p>If you possess the Kai Weapon <quote>Valiance</quote>, you will benefit from its unique properties. If you possess Elementalism or Grand Nexus, you may increase your <typ class="attribute">COMBAT SKILL</typ> by 3 for the duration of this fight.</p>
        <choice idref="sect105">If you win the combat, <link-text>turn to 105</link-text>.</choice>
      </data>
     </section>
@@ -3956,6 +3957,7 @@
      <data>
        <p>You draw your Kai Weapon but, as you raise it in readiness to defend yourself, a heavy silver orb comes hurtling through the air and strikes your forearm. Numbed by the unexpected force of its impact, you drop your Kai Weapon and cradle your aching limb to your chest. Seconds later, one of the tomb robbers comes leaping over the gravestone and drags you to the ground. You grapple with him and wrest a dagger from his hand, but in the blink of an eye he draws another from his boot and attempts to stab you through the heart.</p>
        <combat><enemy>Tomb Robber</enemy><enemy-attribute class="combatskill">30</enemy-attribute><enemy-attribute class="endurance">35</enemy-attribute></combat>
+       <p>You must fight this combat without your Kai Weapon.</p>
        <choice idref="sect139">If you win this combat, <link-text>turn to 139</link-text>.</choice>
      </data>
     </section>
@@ -4571,7 +4573,7 @@
 
      <data>
        <p>The troopers work like demons to free you from the crushing weight of the carriage. Thanks to their speedy action you are released and pulled free within seconds of it tipping over, yet still the damage you sustain to your chest is considerable.</p>
-       <p>Pick a number from the <a idref="random">Random Number Table</a> and add 2 (0 = 10). If you possess Deliverance, you may deduct 2 from your total. The resultant score equals the number of <typ class="attribute">ENDURANCE</typ> points you lose due to the crushing of your rib cage.</p>
+       <p>Pick a number from the <a idref="random">Random Number Table</a> (0 = 10) and add 2 if you do not possess Deliverance. The resultant score equals the number of <typ class="attribute">ENDURANCE</typ> points you lose due to the crushing of your rib cage.</p>
        <choice idref="sect151">Make the necessary adjustments to your <a idref="action">Action Chart</a> before continuing your adventure by <link-text>turning to 151</link-text>.</choice>
      </data>
     </section>
@@ -5533,7 +5535,7 @@
        <p>(<a idref="sect87">87</a>) Replaced <quote>A healing fungi</quote> with <quote>A healing fungus</quote>.</p>
        <p>(<a idref="sect88">88</a>) Replaced <quote>mid-summer</quote> with <quote>midsummer</quote>.</p>
        <p>(<a idref="sect90">90</a>) Replaced <quote>Shavane, <ch.lsquot/>he<ch.apos/>ll</quote> with <quote>Shavane. <ch.lsquot/>He<ch.apos/>ll</quote>.</p>
-       <p>(<a idref="sect92">92</a>) Replaced <quote>Kai rank of</quote> with <quote>rank of</quote>. Replaced <quote>Kai-alchemy, and have attained the rank of Sun Knight,</quote> with <quote>Kai-alchemy and wish to use it</quote> (cf. <a idref="err22">erratum for Section 22</a>). Deleted <quote>or if you have yet to attain the required level of Kai Mastery,</quote> in view of the previous change, as an Improved Discipline is no longer required here. Replaced <quote>Magi-magic, and</quote> with <quote>Magi-magic and</quote>.</p>
+       <p>(<a idref="sect92">92</a>) Replaced <quote>Kai-alchemy, and have attained the Kai rank of Sun Knight,</quote> with <quote>Kai-alchemy and wish to use it</quote> (cf. <a idref="err22">erratum for Section 22</a>). Deleted <quote>or if you have yet to attain the required level of Kai Mastery,</quote> in view of the previous change, as an Improved Discipline is no longer required here. Replaced <quote>Magi-magic, and</quote> with <quote>Magi-magic and</quote>.</p>
        <p>(<a idref="sect94">94</a>) Replaced <quote>gases and</quote> with <quote>gases, and</quote>.</p>
        <p>(<a idref="sect95">95</a>) Replaced <quote><onomatopoeia>Crack</onomatopoeia>!; the</quote> with <quote><onomatopoeia>Crack</onomatopoeia>! The</quote>. Replaced <quote>ribcage</quote> with <quote>rib cage</quote>. Replaced <quote>Knight, or</quote> with <quote>Knight or</quote>. Replaced <quote>Kai-alchemy, and</quote> with <quote>Kai-alchemy and</quote>.</p>
        <p>(<a idref="sect96">96</a>) Replaced <quote>throght</quote> with <quote>throughout</quote>. Replaced <quote>distant corridor</quote> with <quote>distant corridors</quote>.</p>
@@ -5598,7 +5600,7 @@
        <p>(<a idref="sect168">168</a>) Replaced <quote>none of these skills or rank, or the Backpack Item</quote> with <quote>neither of these skills, nor the Backpack Item, or have yet to attain the required level of Kai Mastery</quote>. Replaced <quote>Kai-alchemy, and</quote> with <quote>Kai-alchemy and</quote>. Replaced <quote>Nexus, and</quote> with <quote>Nexus and</quote>.</p>
        <p>(<a idref="sect170">170</a>) Swapped the destination of the links, so that now a score of 6 or lower now leads to <a idref="sect55">Section 55</a> which has the larger <typ class="attribute">ENDURANCE</typ> penalty, whereas a score of 7 or more now leads to <a idref="sect285">Section 285</a>.</p>
        <p>(<a idref="sect171">171</a>) Replaced <quote>imperial family</quote> with <quote>Imperial Family</quote>.</p>
-       <p>(<a idref="sect172">172</a>) Replaced <quote>weapon</quote> with <quote>Kai Weapon</quote>.</p>
+       <p>(<a idref="sect172">172</a>) Replaced <quote>weapon</quote> with <quote>Kai Weapon</quote>. Added <quote>You must fight this combat without your Kai Weapon.</quote> (cf. <a idref="sect139">Section 139</a>).</p>
        <p>(<a idref="sect173">173</a>) Replaced <quote>Mitzu, <ch.lsquot/>please</quote> with <quote>Mitzu. <ch.lsquot/>Please</quote>. Replaced <quote>with your Bow</quote> with <quote>with a Bow</quote> since you may not necessarily be carrying a Bow.</p>
        <p>(<a idref="sect174">174</a>) Replaced <quote>bow</quote> with <quote>Bow</quote>. Replaced <quote>arrow</quote> with <quote>Arrow</quote>. Replaced <quote>add +1 to</quote> with <quote>add 1 to</quote>. Replaced <quote>rib-cage</quote> with <quote>rib cage</quote>. Replaced <quote>combat skill</quote> with <quote><typ class="attribute">COMBAT SKILL</typ></quote>.</p>
        <p>(<a idref="sect175">175</a>) Replaced <quote>power word</quote> with <quote>power-word</quote>.</p>
@@ -5611,7 +5613,7 @@
        <p>(<a idref="sect185">185</a>) Replaced each occurrence of <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>. Replaced <quote>half ie,</quote> with <quote>half, i.e.</quote>.</p>
        <p>(<a idref="sect186">186</a>) Replaced <quote>pain, then</quote> with <quote>pain; then</quote>. Replaced both occurrences of <quote>arrow</quote> with <quote>Arrow</quote>. Replaced <quote>Old Kingdom spell</quote> with <quote>Old Kingdom Spell</quote>.</p>
        <p>(<a idref="sect187">187</a>) Replaced <quote>horse, then</quote> with <quote>horse, and then</quote>. Replaced <quote>Ang<ch.apos/>sei</quote> with <quote><foreign xml:lang="x-chaian">ang<ch.apos/>sei</foreign></quote>. Replaced <quote>20 Imperial Cavalry</quote> with <quote>twenty Imperial Cavalry</quote>. Replaced <quote>Kirusami</quote> with <quote><foreign xml:lang="x-chaian">kirusami</foreign></quote>. Replaced <quote>Papers of State</quote> with <quote>papers of state</quote>.</p>
-       <p>(<a idref="sect189">189</a>) Replaced <quote>therain-bow</quote> with <quote>the rainbow</quote>. Replaced <quote>milleniums</quote> with <quote>millennia</quote>.</p>
+       <p>(<a idref="sect189">189</a>) Replaced <quote>therain-bow</quote> with <quote>the rainbow</quote>. Replaced <quote>milleniums</quote> with <quote>millennia</quote>. Replaced <quote>vampire Lord Sejanoz</quote> with <quote>vampire, Lord Sejanoz</quote>.</p>
        <p>(<a idref="sect190">190</a>) Replaced <quote>special item</quote> with <quote>Special Item</quote>. Replaced each occurrence of <quote>the die</quote> with <quote>the dice</quote>.</p>
        <p>(<a idref="sect192">192</a>) Replaced <quote>apporpriate</quote> with <quote>appropriate</quote>. Replaced <quote>Gold crowns</quote> with <quote>Gold Crowns</quote>.</p>
        <p>(<a idref="sect193">193</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>.</p>
@@ -5619,6 +5621,7 @@
        <p>(<a idref="sect196">196</a>) Replaced <quote>Klorva</quote> with <quote>a Potion of Klorva</quote>.</p>
        <p>(<a idref="sect197">197</a>) Replaced <quote>crescendo, then</quote> with <quote>crescendo, and then</quote>. Replaced <quote>steam cannon</quote> with <quote>steam-cannon</quote>.</p>
        <p>(<a idref="sect198">198</a>) Replaced <quote>scouting party have</quote> with <quote>scouting party has</quote>. Replaced <quote>Kai-alchemy, and</quote> with <quote>Kai-alchemy and</quote>. Replaced <quote>Kai-surge, and</quote> with <quote>Kai-surge and</quote>.</p>
+       <p>(<a idref="sect200">200</a>) Added <quote>If you possess the Kai Weapon <quote>Valiance</quote>, you will benefit from its unique properties.</quote> as Brumalghasts are magical creatures (cf. <a idref="sect235">Section 235</a>).</p>
        <p>(<a idref="sect201">201</a>) Replaced <quote>agonising</quote> with <quote>agonizing</quote>. Replaced <quote>you Kai</quote> with <quote>your Kai</quote>.</p>
        <p>(<a idref="sect203">203</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>.</p>
        <p>(<a idref="sect204">204</a>) Replaced <quote>reach Javai Forest</quote> with <quote>reach the Javai Forest</quote>, as elsewhere in this section and this book. Replaced <quote>freshly brewed</quote> with <quote>freshly-brewed</quote>. Replaced <quote>His gang have</quote> with <quote>His gang has</quote>. Replaced <quote>the Captain</quote> with <quote>the captain</quote>. Replaced <quote>his Captain<ch.apos/>s</quote> with <quote>his captain<ch.apos/>s</quote>.</p>
@@ -5639,7 +5642,7 @@
        <p>(<a idref="sect220">220</a>) Replaced <quote>Brotherhood spell</quote> with <quote>Brotherhood Spell</quote>. Replaced <quote>you look at each of the people who are gathered here</quote> with <quote>you look at each of the persons gathered here</quote>.</p>
        <p>(<a idref="sect222">222</a>) Replaced <quote>Between these</quote> with <quote>From between their</quote>. Replaced <quote>metres</quote> with <quote>yards</quote>.</p>
        <p>(<a idref="sect224">224</a>) Replaced <quote>add +1 to</quote> with <quote>add 1 to</quote>.</p>
-       <p>(<a idref="sect225">225</a>) Replaced <quote>weapon</quote> with <quote>Kai Weapon</quote>.</p>
+       <p>(<a idref="sect225">225</a>) Replaced <quote>weapon</quote> with <quote>Kai Weapon</quote>. Added <quote>You must fight this combat without your Kai Weapon.</quote> (cf. <a idref="sect139">Section 139</a>).</p>
        <p>(<a idref="sect226">226</a>) Split the final sentence into its own paragraph for consistency.</p>
        <p>(<a idref="sect228">228</a>) Replaced <quote>Kai-alchemy, and</quote> with <quote>Kai-alchemy and</quote>.</p>
        <p>(<a idref="sect229">229</a>) Replaced <quote>dwarves and</quote> with <quote>dwarves, and</quote>. Replaced <quote>The Captain</quote> with <quote>The captain</quote>. Replaced <quote>Astrology, and</quote> with <quote>Astrology and</quote>. Replaced <quote>Kai-alchemy, and</quote> with <quote>Kai-alchemy and</quote>.</p>
@@ -5666,11 +5669,11 @@
        <p>(<a idref="sect262">262</a>) Replaced <quote>Magnakai Disciplines of Nexus and Healing</quote> with <quote>Magnakai Disciplines of Nexus and Curing</quote>.</p>
        <p>(<a idref="sect265">265</a>) Replaced <quote>as a Special Item which you store in your backpack</quote> with <quote>as a Special Item</quote>.</p>
        <p>(<a idref="sect266">266</a>) Replaced each occurrence of <quote>flagtower</quote> with <quote>flag-tower</quote>.</p>
-       <p>(<a idref="sect267">267</a>) Replaced <quote>my Lord</quote> with <quote>my lord</quote>.</p>
+       <p>(<a idref="sect267">267</a>) Replaced <quote>my Lord</quote> with <quote>my lord</quote>. Replaced <quote>tyrant Lord of Bhanar</quote> with <quote>tyrant lord of Bhanar</quote>.</p>
        <p>(<a idref="sect270">270</a>) Replaced <quote>sixth sense</quote> with <quote>Sixth Sense</quote>. Replaced each occurrence of <quote>metres</quote> with <quote>yards</quote>. Replaced <quote>well-founded</quote> with <quote>well founded</quote>. Replaced <quote>the Captain</quote> with <quote>the captain</quote>. Replaced <quote>The Captain</quote> with <quote>The captain</quote>.</p>
        <p>(<a idref="sect271">271</a>) Replaced <quote>life and your mission ends</quote> with <quote>life and your mission end</quote>. Split the final sentence into its own paragraph for consistency.</p>
        <p>(<a idref="sect272">272</a>) Replaced <quote>gutteral</quote> with <quote>guttural</quote>. Replaced <quote>Kai-alchemy, and</quote> with <quote>Kai-alchemy and</quote>. Replaced <quote>Magi-magic, and</quote> with <quote>Magi-magic and</quote>. Replaced <quote>Bow, and</quote> with <quote>Bow and</quote>.</p>
-       <p>(<a idref="sect275">275</a>) Replaced <quote>ribcage</quote> with <quote>rib cage</quote>.</p>
+       <p>(<a idref="sect275">275</a>) Replaced <quote>ribcage</quote> with <quote>rib cage</quote>. Replaced <quote><a idref="random">Random Number Table</a> and add 2 (0 = 10). If you possess Deliverance, you may deduct 2 from your total</quote> with <quote><a idref="random">Random Number Table</a> (0 = 10) and add 2 if you do not possess Deliverance</quote>.</p>
        <p>(<a idref="sect276">276</a>) Replaced <quote>bow</quote> with <quote>Bow</quote>. Replaced each occurrence of <quote>arrow</quote> with <quote>Arrow</quote>. Replaced <quote>flagtower</quote> with <quote>flag-tower</quote>. Replaced <quote>Kai-alchemy, and</quote> with <quote>Kai-alchemy and</quote>. Replaced <quote>Magi-magic, and</quote> with <quote>Magi-magic and</quote>.</p>
        <p>(<a idref="sect277">277</a>) Replaced <quote>hesitates, then</quote> with <quote>hesitates, and then</quote>. Replaced <quote>counter threat</quote> with <quote>counter-threat</quote>. Swapped the destination of the links, so that now a score of 5 or lower now leads to <a idref="sect201">Section 201</a> which has the larger <typ class="attribute">ENDURANCE</typ> penalty, whereas a score of 6 or more now leads to <a idref="sect29">Section 29</a>.</p>
        <p>(<a idref="sect278">278</a>) Replaced <quote> your surprise you</quote> with <quote>your surprise, you</quote>. Replaced <quote>steam cannon</quote> with <quote>steam-cannon</quote>. Replaced <quote>metres</quote> with <quote>yards</quote>. Replaced <quote>steam cannon</quote> with <quote>steam-cannon</quote> and <quote>50 metres</quote> with <quote>50 yards</quote> in the illustration<ch.apos/>s caption.</p>
