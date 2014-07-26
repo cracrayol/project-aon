@@ -126,6 +126,7 @@
          <line>LeRoy McSwain</line>
          <line>Simon Osborne</line>
          <line>Timothy Pederick</line>
+         <line>Johan Ronn</line>
          <line>Thomas Wolmer</line>
         </dd>
        <dt>Coordination</dt>
@@ -1732,18 +1733,12 @@
     <section class="numbered" id="sect91">
      <meta><title>91</title></meta>
 
-     <footnotes>
-      <footnote id="sect91-2-foot" idref="sect91-2">
-       <p>It is probably best to consider each Meal as one item of the merchant<ch.apos/>s cargo.</p>
-      </footnote>
-     </footnotes>
-
      <data>
       <p>The boy is thrown out of the trading post by two black-clad guards. The merchant thanks you and offers you the choice of any two items of his cargo. (Remember that you must take the Backpack in order to carry any of the Backpack Items.)</p>
       <ul>
        <li>Quarterstaff</li>
        <li>Blanket</li>
-       <li>Enough food for 2 Meals<footref id="sect91-2" idref="sect91-2-foot"/></li>
+       <li>Enough food for 2 Meals (each Meal counts as one item of the merchant<ch.apos/>s cargo)</li>
        <li>Backpack</li>
        <li>Dagger</li>
        <li>30 Feet of Rope</li>
@@ -2055,7 +2050,7 @@
 
      <footnotes>
       <footnote id="sect116-1-foot" idref="sect116-1">
-       <p>Neither Discipline literally gives you the ability to see through clay. Rather, Sixth Sense intuitively clues you into the marble<ch.apos/>s location and Mind Over Matter allows you to see the marble in your mind<ch.apos/>s eye in the process of moving it telekinetically.</p>
+       <p>Neither Discipline literally gives you the ability to see through clay.</p>
       </footnote>
      </footnotes>
 
@@ -2421,15 +2416,9 @@
     <section class="numbered" id="sect145">
      <meta><title>145</title></meta>
 
-     <footnotes>
-      <footnote id="sect145-1-foot" idref="sect145-1">
-       <p>Due to the loss of <typ class="attribute">ENDURANCE</typ> <em>after</em> consuming the Laumspur, it is probably intended that you may not restore 3 <typ class="attribute">ENDURANCE</typ> points from eating the Laumspur as you normally would.</p>
-      </footnote>
-     </footnotes>
-
      <data>
       <p>You are becoming weaker and weaker. After what seems an eternity of painful struggle you find the Laumspur and force yourself to swallow the dry leaves. Within seconds you are violently sick, after which you drift off into a restless sleep.</p>
-      <p>It is nearly an hour before you awake and you still feel dreadfully ill. Deduct 5 <typ class="attribute">ENDURANCE</typ> points.<footref id="sect145-1" idref="sect145-1-foot"/></p>
+      <p>It is nearly an hour before you awake and you still feel dreadfully ill. Deduct 5 <typ class="attribute">ENDURANCE</typ> points. (As the dry leaves merely helped purge the poison from your stomach, you do not regain any <typ class="attribute">ENDURANCE</typ> points through consuming the Laumspur in this instance.)</p>
       <p>As you slowly regain your strength, the shock of what has happened soon turns to anger. You grab your equipment and stagger out of the room, intent on confronting your would-be assassin.</p>
       <choice idref="sect200"><link-text>Turn to 200</link-text>.</choice>
      </data>
@@ -3065,7 +3054,7 @@
 
      <footnotes>
       <footnote id="sect194-1-foot" idref="sect194-1">
-       <p>In the Collector<ch.apos/>s Edition, you lose only your Weapons and the Seal of Hammerdal here. You may choose to follow these instructions instead.</p>
+       <p>In the Collector<ch.apos/>s Edition, you do not lose any of your Special Items except for the Seal of Hammerdal. You may choose to follow these instructions instead.</p>
       </footnote>
      </footnotes>
 
@@ -3610,19 +3599,10 @@
     <section class="numbered" id="sect238">
      <meta><title>238</title></meta>
 
-     <footnotes>
-      <footnote id="sect238-1-foot" idref="sect238-1">
-       <p>The restriction on Weapons inside the gaming-house is merely flavourful text and has no effect on your <a idref="action">Action Chart</a>.</p>
-      </footnote>
-      <footnote id="sect238-2-foot" idref="sect238-2">
-       <p>In the game of <quote>Cartwheel</quote>, the number 0 is adjacent to the number 9. For example, if you bet on 9, and the silver ball falls on 0, you win 5 Gold Crowns for every 1 that you staked.</p>
-      </footnote>
-     </footnotes>
-
      <data>
       <p>Opposite the coach station is a narrow street leading to a gaming-house with a sign outside.</p>
       <signpost>No Weapons Allowed Inside</signpost>
-      <p>You are excited by the chance of being able to win some gold and you quickly enter. Any Weapons you may have must be left with a guard at the door. You can recover your Weapons when you decide to leave.<footref id="sect238-1" idref="sect238-1-foot"/> You are given a silver token worth 1 Gold Crown, that can only be used in this gaming-house. (You only receive the free silver token once, regardless of how many times you may enter the gaming-house.)</p>
+      <p>You are excited by the chance of being able to win some gold and you quickly enter. Any Weapons you may have must be left with a guard at the door. You can recover your Weapons when you decide to leave (do not erase them from your <a href="action">Action Chart</a>). You are given a silver token worth 1 Gold Crown, that can only be used in this gaming-house. (You only receive the free silver token once, regardless of how many times you may enter the gaming-house.)</p>
       <p>The entrance hall opens out into a huge room where many gambling games are in progress. One that catches your eye is called <quote>Cartwheel</quote>. At one end of a long table, an attractive young woman spins a black dish divided into ten sections marked 0<ch.endash/>9. As the dish spins, she drops a small silver ball into it which eventually comes to rest in one of the numbered sections. Several merchants are seated around the table and they are betting heavily on the fall of the silver ball.</p>
       <illustration class="float">
        <meta>
@@ -3633,7 +3613,7 @@
        <instance class="html-compatible" src="ill14.gif" width="386" height="679"  mime-type="image/gif"/>
        <instance class="pdf" src="ill14.pdf" width="386" height="679" />
       </illustration>
-      <p>To play <quote>Cartwheel</quote>, you must first decide the number you would like to bet on and just how many Gold Crowns you would like to stake. Make a note of these numbers and then pick a number from the <a idref="random">Random Number Table</a>. If you pick exactly the same number, you win 8 Gold Crowns for every 1 Gold Crown that you gamble. If the number you pick is immediately before or after the correct choice,<footref id="sect238-2" idref="sect238-2-foot"/> you win 5 Gold Crowns for every 1 Gold Crown that you stake. There is a limit to how much you can win on this table: 40 Gold Crowns.</p>
+      <p>To play <quote>Cartwheel</quote>, you must first decide the number you would like to bet on and just how many Gold Crowns you would like to stake. Make a note of these numbers and then pick a number from the <a idref="random">Random Number Table</a>. If you pick exactly the same number, you win 8 Gold Crowns for every 1 Gold Crown that you gamble. If the number you pick is immediately before or after the correct choice, you win 5 Gold Crowns for every 1 Gold Crown that you stake. (Note that 0 sits between 9 and 1 in Cartwheel.) There is a limit to how much you can win on this table: 40 Gold Crowns.</p>
       <p>You may play as many rounds of <quote>Cartwheel</quote> as you wish until either you lose all your Gold Crowns, or you decide to pick up your winnings (maximum of 40 Gold Crowns).</p>
       <choice idref="sect169">If you have lost all your Gold Crowns, <link-text>turn to 169</link-text>.</choice>
       <choice idref="sect186">If you have winnings to collect, or if you wish to withdraw with what money you have left, leave the building and <link-text>turn to 186</link-text>.</choice>
@@ -4300,8 +4280,14 @@
     <section class="numbered" id="sect290">
      <meta><title>290</title></meta>
 
+     <footnotes>
+      <footnote id="sect290-1-foot" idref="sect290-1">
+       <p>You must eat another Meal in place of this poisoned food or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>The food smells delicious, but you notice that there are two or three drops of clear liquid on the side of the plate and another on the tray. At first you suspect that it is only water, until you touch the fluid and notice that it is sticky. You recognize it as sap from the gnadurn tree, a deadly poison used by assassins because of its lack of flavour or scent. The shock of your discovery soon turns to anger and you race out of the room, intent on discovering the identity of your enemy.</p>
+      <p>The food smells delicious, but you notice that there are two or three drops of clear liquid on the side of the plate and another on the tray. At first you suspect that it is only water, until you touch the fluid and notice that it is sticky. You recognize it as sap from the gnadurn tree, a deadly poison used by assassins because of its lack of flavour or scent. The shock of your discovery soon turns to anger and you race out of the room, intent on discovering the identity of your enemy.<footref id="sect290-1" idref="sect290-1-foot"/></p>
       <choice idref="sect200"><link-text>Turn to 200</link-text>.</choice>
      </data>
     </section>
@@ -4600,12 +4586,6 @@
     <section class="numbered" id="sect314">
      <meta><title>314</title></meta>
 
-     <footnotes>
-      <footnote id="sect314-1-foot" idref="sect314-1">
-       <p>Remember to deduct 3 <typ class="attribute">ENDURANCE</typ> points if you turn to <a idref="sect178">Section 178</a>. Depending on how strictly you interpret the text, you may also need to deduct 3 points if you turn to <a idref="sect290">Section 290</a> (remember that Hunting cannot be used in the Wildlands to find Meals).</p>
-      </footnote>
-     </footnotes>
-
      <data>
       <p>The innkeeper is a thin old man with only one eye. He hands you a key and points to a balcony opposite. <quote>Number two, the red door,</quote> he says.</p>
       <p>The other travellers each pay their one Crown, collect a key, and make their way across the crowded tavern floor towards the stairs.</p>
@@ -4621,10 +4601,10 @@
        <instance class="html-compatible" src="ill18.gif" width="386" height="649"  mime-type="image/gif"/>
        <instance class="pdf" src="ill18.pdf" width="386" height="649" />
       </illustration>
-      <p><quote>With the compliments of one of your friends,</quote> he says, and leaves before you can ask which one. The food smells most appetizing. You have not eaten today and now you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</p>
+      <p><quote>With the compliments of one of your friends,</quote> he says, and leaves before you can ask which one. You have not eaten today and the food smells most appetizing.</p>
       <choice idref="sect290">If you have the Kai Discipline of Hunting, <link-text>turn to 290</link-text>.</choice>
       <choice idref="sect36">If you wish to eat the hot food put before you, <link-text>turn to 36</link-text>.</choice>
-      <choice idref="sect178">If you do not want to eat this food, <link-text>turn to 178</link-text>.<footref id="sect314-1" idref="sect314-1-foot"/></choice>
+      <choice idref="sect178">If you do not want to eat this food, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points and <link-text>turn to 178</link-text>.</choice>
      </data>
     </section>
 
@@ -5677,7 +5657,7 @@
       <p>(<a idref="sect84">84</a>) Replaced <quote>leatherbound</quote> with <quote>leather-bound</quote>.</p>
       <p>(<a id="err86" idref="sect86">86</a>) Replaced <quote>Westbank Wharf</quote> with <quote>Eastbank Wharf</quote> since the geography clearly indicates that you are on the east bank of the River Dorn at this stage, since walking <em>west</em> from <a idref="sect86">Section 86</a> to <a idref="sect194">Section 194</a> leads to the jetty (cf. <a idref="err37">erratum for Section 37</a> regarding <quote>East Bank Walk</quote>).</p>
       <p>(<a idref="sect88">88</a>) Moved the Camouflage choice into the first position.</p>
-      <p>(<a idref="sect91">91</a>) Replaced <quote>cargo:</quote> with <quote>cargo. (Remember that you must take the Backpack in order to carry any of the Backpack Items.)</quote>. Replaced <quote>two Items</quote> with <quote>two items</quote>. Replaced <quote>above Items</quote> with <quote>above items</quote>. Replaced <quote>Food</quote> with <quote>food</quote>.</p>
+      <p>(<a idref="sect91">91</a>) Replaced <quote>cargo:</quote> with <quote>cargo. (Remember that you must take the Backpack in order to carry any of the Backpack Items.)</quote>. Replaced <quote>two Items</quote> with <quote>two items</quote>. Replaced <quote>above Items</quote> with <quote>above items</quote>. Replaced <quote>Food</quote> with <quote>food</quote>. Added <quote>(each Meal counts as one item of the merchant<ch.apos/>s cargo)</quote>.</p>
       <p>(<a idref="sect95">95</a>) Moved the choice to heal the wounded man into the first position. Replaced <quote>potion or some Laumspur, and</quote> with <quote>potion, or some Laumspur and</quote>.</p>
       <p>(<a idref="sect98">98</a>) Replaced <quote>Durenor forest</quote> with <quote>Durenor Forest</quote>.</p>
       <p>(<a idref="sect100">100</a>) Replaced <quote>on to</quote> with <quote>onto</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
@@ -5699,6 +5679,7 @@
       <p>(<a idref="sect141">141</a>) Replaced <quote>on to</quote> with <quote>onto</quote>.</p>
       <p>(<a idref="sect142">142</a>) Added <quote>(Mark the White Pass on your <a idref="action">Action Chart</a> as a Special Item.)</quote>.</p>
       <p>(<a idref="sect144">144</a>) Added a period to the end of the illustration<ch.apos/>s caption. Replaced <quote>nervously, then</quote> with <quote>nervously, and then</quote>.</p>
+      <p>(<a idref="sect145">145</a>) Added <quote>(As the dry leaves merely helped purge the poison from your stomach, you do not regain any <typ class="attribute">ENDURANCE</typ> points through consuming the Laumspur in this instance.)</quote> in harmony with the Collector<ch.apos/>s Edition.</p>
       <p>(<a idref="sect146">146</a>) Replaced <quote>on to</quote> with <quote>onto</quote>.</p>
       <p>(<a idref="sect148">148</a>) Replaced <quote>East Bank Walk</quote> with <quote>West Bank Walk</quote> since you are west of the River Dorn at this stage, though not on its banks; nor does the street go to the river bank, as <a idref="sect323">Section 323</a> strongly implies that it ends and becomes Lookout Street (cf. <a idref="err86">erratum for Section 86</a> regarding <quote>Westbank Wharf</quote>).</p>
       <p>(<a idref="sect150">150</a>) Replaced <quote>marshbird</quote> with <quote>marsh-bird</quote>. Replaced <quote>Durenor forest</quote> with <quote>Durenor Forest</quote>. Added <quote>(You are leaving the Wildlands and heading into the Durenor Forest and may once again use Hunting to hunt for food.)</quote>.</p>
@@ -5738,7 +5719,7 @@
       <p>(<a idref="sect232">232</a>) Moved the Sixth Sense choice into the first position.</p>
       <p>(<a idref="sect234">234</a>) Replaced <quote>on to</quote> with <quote>onto</quote>.</p>
       <p>(<a idref="sect237">237</a>) Replaced <quote>on to</quote> with <quote>onto</quote>.</p>
-      <p>(<a idref="sect238">238</a>) Added a period to the end of the illustration<ch.apos/>s caption. Replaced <quote>Crowns or</quote> with <quote>Crowns, or</quote>. Added  <quote>(You only receive the free silver token once, regardless of how many times you may enter the gaming-house.)</quote> to the end of the second paragraph.</p>
+      <p>(<a idref="sect238">238</a>) Added a period to the end of the illustration<ch.apos/>s caption. Replaced <quote>Crowns or</quote> with <quote>Crowns, or</quote>. Added  <quote>(You only receive the free silver token once, regardless of how many times you may enter the gaming-house.)</quote> to the end of the second paragraph. Added <quote>(do not erase them from your <a href="action">Action Chart</a>)</quote> in harmony with the Collector<ch.apos/>s Edition. Added <quote>(Note that 0 sits between 9 and 1 in Cartwheel.)</quote> in harmony with the Collector<ch.apos/>s Edition.</p>
       <p>(<a idref="sect241">241</a>) <quote>he</quote> has now been capitalized.</p>
       <p>(<a idref="sect242">242</a>) Replaced <quote>(eg</quote> with <quote>(e.g.</quote>. Replaced <quote>they are determined to destroy you before you reach Durenor</quote> with <quote>the Darklords are bent on thwarting your quest</quote>, copied from <a idref="sect79">Section 79</a>.</p>
       <p>(<a idref="sect243">243</a>) Replaced <quote>Kai lord</quote> with <quote>Kai Lord</quote>. Replaced <quote>sails and</quote> with <quote>sails, and</quote>.</p>
@@ -5783,7 +5764,7 @@
       <p>(<a idref="sect308">308</a>) Replaced <quote>Each dice</quote> with <quote>Each die</quote>.</p>
       <p>(<a idref="sect312">312</a>) Replaced <quote>rainswept</quote> with <quote>rain-swept</quote>. Replaced <quote>on to</quote> with <quote>onto</quote>.</p>
       <p>(<a idref="sect313">313</a>) Added <quote>(Erase the Magic Spear from your <a idref="action">Action Chart</a>.)</quote>.</p>
-      <p>(<a idref="sect314">314</a>) Replaced <quote>at work when</quote> with <quote>at work and</quote> as this is a direct quote of Captain Kelman<ch.apos/>s words in <a idref="sect300">Section 300</a>. Moved the Hunting choice into the first position. Replaced <quote>tomorrow.<ch.rsquot/> says</quote> with <quote>tomorrow,<ch.rsquot/> says</quote>. Added a period to the end of the illustration<ch.apos/>s caption. Replaced <quote>key and make</quote> with <quote>key, and make</quote>.</p>
+      <p>(<a idref="sect314">314</a>) Replaced <quote>at work when</quote> with <quote>at work and</quote> as this is a direct quote of Captain Kelman<ch.apos/>s words in <a idref="sect300">Section 300</a>. Moved the Hunting choice into the first position. Replaced <quote>tomorrow.<ch.rsquot/> says</quote> with <quote>tomorrow,<ch.rsquot/> says</quote>. Added a period to the end of the illustration<ch.apos/>s caption. Replaced <quote>key and make</quote> with <quote>key, and make</quote>. Replaced <quote>If you do not want to eat this food,</quote> with <quote>If you do not want to eat this food, you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points and</quote> in harmony with the Collector<ch.apos/>s Edition. Replaced <quote>The food smells most appetizing. You have not eaten today and now you must eat a Meal or lose 3 <typ class="attribute">ENDURANCE</typ> points.</quote> with <quote>You have not eaten today and the food smells most appetizing.</quote> in harmony with the Collector<ch.apos/>s Edition.</p>
       <p>(<a idref="sect315">315</a>) Moved the Mind Over Matter choice into the first position. Replaced <quote>maps and</quote> with <quote>maps, and</quote>.</p>
       <p>(<a idref="sect321">321</a>) Replaced <quote>Kai lord</quote> with <quote>Kai Lord</quote>.</p>
       <p>(<a idref="sect323">323</a>) Replaced <quote>to start to</quote> with <quote>and start to</quote>.</p>
