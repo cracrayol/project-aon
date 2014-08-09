@@ -125,6 +125,7 @@
          <line>Mike Feldman</line>
          <line>Ingo Kl<ch.ouml/>cker</line>
          <line>Mark Laird</line>
+         <line>Johan Ronn</line>
          <line>Simon Osborne</line>
          <line>Matthew Reynolds</line>
          <line>Thomas Wolmer</line>
@@ -864,15 +865,9 @@
     <section class="numbered" id="sect22">
      <meta><title>22</title></meta>
 
-     <footnotes>
-      <footnote id="sect22-1-foot" idref="sect22-1">
-       <p>If you are using a Kalte Firesphere instead of a Torch, you will still lose an item as you fumble for the Firesphere in your pocket.</p>
-      </footnote>
-     </footnotes>
-
      <data>
-      <p>You fumble in your Backpack to remove a Torch,<footref id="sect22-1" idref="sect22-1-foot"/> and in doing so, you drop one other item from your Backpack into the crevasse. (If you were only carrying a Torch, you have lost a Weapon instead.)</p>
-      <p>You eventually manage to light the new Torch and make your way safely across to the other side of the bridge.</p>
+      <p>You fumble for your light, and in doing so, you drop one other item from your Backpack into the crevasse. (If you were not carrying any Backpack Items other than a Torch that you are now using, you have lost a Weapon instead.)</p>
+      <p>You eventually manage to make your way safely across to the other side of the bridge.</p>
       <choice idref="sect157">Continue along this tunnel and <link-text>turn to 157</link-text>.</choice>
 
      </data>
@@ -951,14 +946,8 @@
     <section class="numbered" id="sect29">
      <meta><title>29</title></meta>
 
-     <footnotes>
-      <footnote id="sect29-1-foot" idref="sect29-1">
-       <p>You need not erase any Torches from your <a idref="action">Action Chart</a> in this case.</p>
-      </footnote>
-     </footnotes>
-
      <data>
-      <p>The Torch burns fiercely for just a few seconds before it sputters and dies. You try to relight it but it is hopeless<ch.emdash/>it simply will not burn.<footref id="sect29-1" idref="sect29-1-foot"/> If you possess other Torches in your Backpack, you will also discover that for some mysterious reason, they will no longer light.</p>
+      <p>The Torch burns fiercely for just a few seconds before it sputters and dies. You try to relight it but it is hopeless<ch.emdash/>it simply will not burn. If you possess other Torches in your Backpack, you will also discover that for some mysterious reason, they will no longer light. (You need not erase any Torches from your <a idref="action">Action Chart</a> in this instance.)</p>
       <choice idref="sect168">If you possess a Firesphere, <link-text>turn to 168</link-text>.</choice>
       <choice idref="sect246">If you wish to continue in the dark, <link-text>turn to 246</link-text>.</choice>
       <choice idref="sect183">If you wish to leave the vault and attempt an entry via the guarded crypt door, <link-text>turn to 183</link-text>.</choice>
@@ -2073,15 +2062,9 @@
     <section class="numbered" id="sect117">
      <meta><title>117</title></meta>
 
-     <footnotes>
-      <footnote id="sect117-1-foot" idref="sect117-1">
-       <p>Remember that you may not use another Torch unless you have a Tinderbox as well. Also, you may use a Kalte Firesphere in place of a Torch and Tinderbox if you have one.</p>
-      </footnote>
-     </footnotes>
-
      <data>
       <p>You soon reach a section of tunnel that is under repair. Part of the floor has subsided, and a gaping hole is spanned by a rickety wooden bridge. You are tired and fail to notice that your torch has almost burnt out. You are at the centre of the bridge when the torch flickers and dies; you are plunged into darkness.</p>
-      <choice idref="sect22">If you have another Torch<footref id="sect117-1" idref="sect117-1-foot"/> in your Backpack, <link-text>turn to 22</link-text>.</choice>
+      <choice idref="sect22">If in your Backpack you have another Torch <em>and</em> a Tinderbox, or a Kalte Firesphere, <link-text>turn to 22</link-text>.</choice>
       <p>If you have no other Torch, you must try to inch your way across the bridge in total darkness. Pick a number from the <a idref="random">Random Number Table</a>. If you have the Kai Discipline of Sixth Sense or Tracking, add 3 to the number you have picked.</p>
       <choice idref="sect99">If your total is now 0<ch.endash/>6, <link-text>turn to 99</link-text>.</choice>
       <choice idref="sect256">If it is 7<ch.endash/>12, <link-text>turn to 256</link-text>.</choice>
@@ -4030,15 +4013,9 @@
     <section class="numbered" id="sect272">
      <meta><title>272</title></meta>
 
-     <footnotes>
-      <footnote id="sect272-1-foot" idref="sect272-1">
-       <p>You may choose which Weapon to discard if you have two.</p>
-      </footnote>
-     </footnotes>
-
      <data>
       <p>You smash feet-first into a large river boulder. Recoiling from the impact, you cough uncontrollably in your desperate fight for air as the water fills your ears and nose. Down and down, around and around you go, your eyes stinging and the pain in your legs grinding agonizingly upwards through your body. A glancing blow to your shoulder rips the sleeve from your jacket and numbs your arm; your weapon falls from your hand. You are somersaulted into a steep V-shaped channel and buffeted on all sides as you tumble towards a pool far below. You feel the sheer weight and volume of water behind you will plunge you to your doom, and as you plummet into the swirling dark water, all consciousness rapidly gives way to a blind and silent numbness.</p>
-      <p>When you open your eyes it is dusk. You have been washed up on the river bank near to a twisting forest track. The silhouette of the Maaken Range rises steeply to the east, and you realize that you must have drifted many miles downstream. You have survived a terrible ordeal; one that would have killed any lesser mortal. You have lost 5 <typ class="attribute">ENDURANCE</typ> points due to leg and head wounds and one Weapon.<footref id="sect272-1" idref="sect272-1-foot"/> All of your Special Items, Backpack Items, and Gold Crowns are still intact.</p>
+      <p>When you open your eyes it is dusk. You have been washed up on the river bank near to a twisting forest track. The silhouette of the Maaken Range rises steeply to the east, and you realize that you must have drifted many miles downstream. You have survived a terrible ordeal; one that would have killed any lesser mortal. You have lost 5 <typ class="attribute">ENDURANCE</typ> points due to leg and head wounds and one Weapon. (If you possess two Weapons, you may choose which one you have lost.) All of your Special Items, Backpack Items, and Gold Crowns are still intact.</p>
       <choice idref="sect79">Make all the necessary adjustments to your <a idref="action">Action Chart</a> before <link-text>turning to 79</link-text>.</choice>
      </data>
     </section>
@@ -5611,11 +5588,11 @@
       <p>(<a idref="sect19">19</a>) Replaced <quote>under way</quote> with <quote>underway</quote>.</p>
       <p>(<a idref="sect20">20</a>) Replaced <quote>You reach the barricade and a wagon is pulled aside and you are carried in through the gap</quote> with <quote>You reach the barricade, a wagon is pulled aside, and you are carried in through the gap</quote>. Replaced <quote>Captain</quote> with <quote>captain</quote>.</p>
       <p>(<a idref="sect21">21</a>) Moved the Tracking choice into the first position.</p>
-      <p>(<a idref="sect22">22</a>) Replaced <quote>other Item</quote> with <quote>other item</quote>.</p>
+      <p>(<a idref="sect22">22</a>) Replaced <quote>other Item</quote> with <quote>other item</quote>. Replaced <quote>You fumble in your Backpack to remove a Torch</quote> with <quote>You fumble for your light</quote>. Replaced <quote>(If you were only carrying a Torch, you have lost a Weapon instead.)</quote> with <quote>(If you were not carrying any Backpack Items other than a Torch that you are now using, you have lost a Weapon instead.)</quote>. Replaced <quote>You eventually manage to light the new Torch and make</quote> with <quote>You eventually manage to make</quote>.</p>
       <p>(<a idref="sect25">25</a>) Replaced <quote>Durncrag mountains</quote> with <quote>Durncrag Mountains</quote>. Added <quote>(You have entered the Wildlands south of the Pass of Moytura and cannot use the Kai Discipline of Hunting to hunt for food in this desolate area.)</quote>.</p>
       <p>(<a idref="sect26">26</a>) Replaced <quote>feet away, and</quote> with <quote>feet away and</quote>. Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect27">27</a>) Added a period to the end of the first paragraph.</p>
-      <p>(<a idref="sect29">29</a>) Replaced <quote>splutters and dies</quote> with <quote>sputters and dies</quote>.</p>
+      <p>(<a idref="sect29">29</a>) Replaced <quote>splutters and dies</quote> with <quote>sputters and dies</quote>. Added <quote>(You need not erase any Torches from your <a idref="action">Action Chart</a> in this instance.)</quote>.</p>
       <p>(<a idref="sect31">31</a>) Replaced <quote>dark and</quote> with <quote>dark, and</quote>.</p>
       <p>(<a idref="sect32">32</a>) Replaced <quote>river, is</quote> with <quote>river is</quote>. Replaced <quote>now your brave company</quote> with <quote>now that your brave company</quote>. Replaced <quote>the east tunnel</quote> with <quote>the west tunnel</quote> to agree with <a idref="sect101">Section 101</a>.</p>
       <p>(<a idref="sect33">33</a>) Replaced <quote>ahead, and</quote> with <quote>ahead and</quote>.</p>
@@ -5671,7 +5648,7 @@
       <p>(<a idref="sect113">113</a>) Replaced <quote>bandits, and</quote> with <quote>bandits and</quote>.</p>
       <p>(<a idref="sect114">114</a>) Replaced <quote>shield wall</quote> with <quote>shield-wall</quote>.</p>
       <p>(<a idref="sect116">116</a>) Replaced <quote>bed, and</quote> with <quote>bed and</quote>. Replaced <quote>Captain; his</quote> with <quote>captain. His</quote>. Replaced <quote>mission and</quote> with <quote>mission, and</quote>. Replaced <quote>them but</quote> with <quote>them, but</quote>. Replaced <quote>Maaken mines</quote> with <quote>Maaken Mines</quote>.</p>
-      <p>(<a idref="sect117">117</a>) Replaced <quote>subsided and</quote> with <quote>subsided, and</quote>. Replaced two occurrences of <quote>Torch</quote> with <quote>torch</quote> as the lit torch does not count towards your Backpack Items limit.</p>
+      <p>(<a idref="sect117">117</a>) Replaced <quote>subsided and</quote> with <quote>subsided, and</quote>. Replaced two occurrences of <quote>Torch</quote> with <quote>torch</quote> as the lit torch does not count towards your Backpack Items limit. Replaced <quote>If you have another Torch in your Backpack</quote> with <quote>If in your Backpack you have another Torch <em>and</em> a Tinderbox, or a Kalte Firesphere</quote>.</p>
       <p>(<a idref="sect118">118</a>) Replaced <quote>locked. But</quote> with <quote>locked, but</quote>.</p>
       <p>(<a idref="sect120">120</a>) Added <quote>(You have left the Wildlands and may once again use the Kai Discipline of Hunting to hunt for your food.)</quote>.</p>
       <p>(<a idref="sect121">121</a>) Replaced <quote>stolid but</quote> with <quote>stolid, but</quote>.</p>
@@ -5766,7 +5743,7 @@
       <p>(<a idref="sect267">267</a>) Replaced <quote>coup de grace</quote> with <quote>coup de gr<ch.acirc/>ce</quote>.</p>
       <p>(<a idref="sect269">269</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>. Added <quote>(If you possess the Kai Discipline of Hunting, you are unable to use it within the Maaken Mines to hunt for food.)</quote> in harmony with the Collector<ch.apos/>s Edition.</p>
       <p>(<a idref="sect270">270</a>) Replaced <quote>approach and</quote> with <quote>approach, and</quote>. Replaced <quote>a Torch</quote> with <quote>a Torch and a Tinderbox</quote>. Replaced <quote>darkness, and</quote> with <quote>darkness and</quote>.</p>
-      <p>(<a idref="sect272">272</a>) Replaced <quote>sommersaulted</quote> with <quote>somersaulted</quote>. Replaced <quote>wounds, and</quote> with <quote>wounds and</quote>. Replaced <quote>Maaken range</quote> with <quote>Maaken Range</quote>. Replaced <quote>Items and</quote> with <quote>Items, and</quote>. Replaced <quote>feet first</quote> with <quote>feet-first</quote>.</p>
+      <p>(<a idref="sect272">272</a>) Replaced <quote>sommersaulted</quote> with <quote>somersaulted</quote>. Replaced <quote>wounds, and</quote> with <quote>wounds and</quote>. Replaced <quote>Maaken range</quote> with <quote>Maaken Range</quote>. Replaced <quote>Items and</quote> with <quote>Items, and</quote>. Replaced <quote>feet first</quote> with <quote>feet-first</quote>. Added <quote>(If you possess two Weapons, you may choose which one you have lost.)</quote> in harmony with the Collector<ch.apos/>s Edition.</p>
       <p>(<a idref="sect273">273</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
       <p>(<a idref="sect275">275</a>) Replaced <quote>ground and</quote> with <quote>ground, and</quote>. Replaced <quote>you and</quote> with <quote>you, and</quote>.</p>
       <p>(<a idref="sect276">276</a>) Replaced <quote>Stoneworm and</quote> with <quote>Stoneworm, and</quote>.</p>
