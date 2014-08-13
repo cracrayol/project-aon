@@ -134,6 +134,7 @@
          <line>Simon Osborne</line>
          <line>Timothy Pederick</line>
          <line>Matthew Reynolds</line>
+         <line>Johan Ronn</line>
          <line>Jonathan Stark</line>
          <line>Thomas Wolmer</line>
         </dd>
@@ -1264,14 +1265,8 @@
     <section class="numbered" id="sect56">
      <meta><title>56</title></meta>
 
-     <footnotes>
-      <footnote id="sect56-1-foot" idref="sect56-1">
-       <p>You may record the Jakan on your <a idref="action">Action Chart</a> as a Weapon. Although you may not use it in this adventure, it may be of use to you in the future.</p>
-      </footnote>
-     </footnotes>
-
      <data>
-      <p>A search of the baskets crowding the little boat uncovers a beautifully hand-tooled leather case. You flick open the brass catch and discover that the case contains a Jakan<ch.emdash/>a hunting bow used by the coastal fishermen of Vassagonia.<footref id="sect56-1" idref="sect56-1-foot" /> You are elated by your find but disappointed to discover that the case contains only one arrow.</p>
+      <p>A search of the baskets crowding the little boat uncovers a beautifully hand-tooled leather case. You flick open the brass catch and discover that the case contains a Jakan<ch.emdash/>a hunting bow used by the coastal fishermen of Vassagonia. (You may record the Jakan Bow as a Weapon on your <a idref="action">Action Chart</a>. You must possess an Arrow in order to use this Weapon.) You are elated by your find but disappointed to discover that the case contains only one Arrow.</p>
 
 <!--      <illustration class="inline">
        <meta>
@@ -1306,14 +1301,15 @@
 
      <footnotes>
       <footnote id="sect58-1-foot" idref="sect58-1">
-       <p>The section corresponding to the correct answer will have a footnote confirming that it is indeed correct. If you choose the wrong section, then turn to <a idref="sect98">Section 98</a>. You do not get a second guess.</p>
+       <p>The section corresponding to the correct answer will have a footnote confirming that it is indeed correct.</p>
       </footnote>
      </footnotes>
 
      <data>
       <p>You follow a straight passage of pale, rose-coloured stone, which soon ends at an empty vestibule. In its north wall is set a great wooden door, covered with engraved bronze plaques and studded with bronze nails. There is a curious lock set into the middle of this door, encircled by a beautiful carving of a long-tailed scorpion. A closer look at the lock reveals a series of Vassagonian numerals, numbered 1 to 200, engraved in the lock. You recognize the design: it is a Cloeasian combination lock.</p>
       <puzzle idref="sect67">If you know the correct number that will open the bronze door, <choose test="has-numbered-section-list"><when value="true"><a idref="part1">turn to that section number</a></when><otherwise>turn to that section number</otherwise></choose>.<footref id="sect58-1" idref="sect58-1-foot" /></puzzle>
-      <choice idref="sect156">If you do not know the number that will open the door, <link-text>turn to 156</link-text>.</choice>
+      <choice idref="sect98">If you choose the wrong combination, you do not get a second guess. <link-text>Turn immediately to 98</link-text>.</choice>
+      <choice idref="sect156">If you do not know the number and do not attempt to open the door, <link-text>turn to 156</link-text>.</choice>
      </data>
     </section>
 
@@ -2244,12 +2240,6 @@
     <section class="numbered" id="sect135">
      <meta><title>135</title></meta>
 
-     <footnotes>
-      <footnote id="sect135-1-foot" idref="sect135-1">
-       <p>Restore half of any <typ class="attribute">ENDURANCE</typ> points that you lose (fractions rounded down) during this combat if you win (note what happens if you lose).</p>
-      </footnote>
-     </footnotes>
-
      <data>
       <p>The air of the new tunnel is hot and humid, and as you press on, the putrid gas makes you increasingly nauseous. You are forced to stop<ch.emdash/>the vapour is burning your throat and causing painful stomach cramps. Suddenly a noise makes you forget your discomfort; you turn to see that one of Maouk<ch.apos/>s men has caught up with you. He looms out of the darkness, his face covered by a pad of herbs.</p>
       <combat><enemy>Sharnazim Warrior</enemy><enemy-attribute class="combatskill">17</enemy-attribute><enemy-attribute class="endurance">22</enemy-attribute></combat>
@@ -2266,7 +2256,7 @@
       </illustration>
 
       <choice idref="sect161">If you lose this combat, <link-text>turn to 161</link-text>.</choice>
-      <choice idref="sect130">If you win the combat, <link-text>turn to 130</link-text>.<footref id="sect135-1" idref="sect135-1-foot" /></choice>
+      <choice idref="sect130">If you win this combat, restore half of any <typ class="attribute">ENDURANCE</typ> points you lost (rounding fractions down) and <link-text>turn to 130</link-text>.</choice>
      </data>
     </section>
 
@@ -6086,8 +6076,9 @@
       <p>(<a idref="sect51">51</a>) Replaced <quote>pain but</quote> with <quote>pain, but</quote>. Replaced each occurrence of <quote>Baga-darooz</quote> with <quote><foreign xml:lang="x-vassagonian">Baga-darooz</foreign></quote>.</p>
       <p>(<a idref="sect52">52</a>) Replaced both occurrences of <quote>Jailer<ch.apos/> Keys</quote> with <quote>Gaoler<ch.apos/>s Keys</quote>.</p>
       <p>(<a idref="sect54">54</a>) Added a period to the end of the illustration<ch.apos/>s caption. Replaced <quote>traitors and</quote> with <quote>traitors, and</quote>.</p>
-      <p>(<a idref="sect56">56</a>) Replaced <quote>shot and</quote> with <quote>shot, and</quote>.</p>
+      <p>(<a idref="sect56">56</a>) Replaced <quote>shot and</quote> with <quote>shot, and</quote>. Added <quote>(You may record the Jakan Bow as a Weapon on your <a idref="action">Action Chart</a>. You must possess an Arrow in order to use this Weapon.)</quote>. Replaced <quote>one arrow</quote> with <quote>one Arrow</quote>.</p>
       <p>(<a idref="sect57">57</a>) Replaced <quote>unlocked and</quote> with <quote>unlocked, and</quote>.</p>
+      <p>(<a idref="sect58">58</a>) Added <quote>If you choose the wrong combination, you do not get a second guess. <!--link-text-->Turn immediately to 98<!--/link-text-->.</quote>. Replaced <quote>number that will open the door</quote> with <quote>number and do not attempt to open the door</quote>.</p>
       <p>(<a idref="sect61">61</a>) Replaced <quote>open and</quote> with <quote>open, and</quote>.</p>
       <p>(<a idref="sect63">63</a>) Replaced <quote>total, for</quote> with <quote>total for</quote>. Replaced <quote>discover the healing</quote> with <quote>discover a healing</quote>.</p>
       <p>(<a idref="sect64">64</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
@@ -6142,7 +6133,7 @@
       <p>(<a idref="sect131">131</a>) Replaced <quote>may, or</quote> with <quote>may or</quote>.</p>
       <p>(<a idref="sect132">132</a>) Replaced <quote>corridor, and</quote> with <quote>corridor and</quote>. Replaced <quote>distance and</quote> with <quote>distance, and</quote>. Replaced <quote>clang</quote> with <quote><onomatopoeia>clang</onomatopoeia></quote>.</p>
       <p>(<a idref="sect133">133</a>) Replaced <quote>turn round</quote> with <quote>turn around</quote>.</p>
-      <p>(<a idref="sect135">135</a>) Added a period to the end of the illustration<ch.apos/>s caption.</p>
+      <p>(<a idref="sect135">135</a>) Added a period to the end of the illustration<ch.apos/>s caption. Replaced <quote>If you win the combat, <!--link-text-->turn</quote> with <quote>If you win this combat, restore half of any <typ class="attribute">ENDURANCE</typ> points you lost (rounding fractions down) and <!--link-text-->turn</quote>.</p>
       <p>(<a idref="sect137">137</a>) Replaced <quote>strange luxuriant purple</quote> with <quote>strange, luxuriant, purple</quote>. Moved the Tracking/Sixth Sense choice into the first position. Replaced <quote>grass, and</quote> with <quote>grass and</quote>.</p>
       <p>(<a idref="sect138">138</a>) Replaced <quote>door and</quote> with <quote>door, and</quote>.</p>
       <p>(<a idref="sect139">139</a>) Replaced <quote>skin, that</quote> with <quote>skin that</quote>.</p>
