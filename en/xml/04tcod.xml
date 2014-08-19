@@ -224,7 +224,7 @@
        <meta><title>Healing</title></meta>
        <data>
         <p>This Discipline can be used to restore <typ class="attribute">ENDURANCE</typ> points lost in combat. If you possess this skill, you may restore 1 <typ class="attribute">ENDURANCE</typ> point to your total for every numbered section of the book you pass through in which you are not involved in combat. (This is only to be used after your <typ class="attribute">ENDURANCE</typ> has fallen below its original level.) Remember that your <typ class="attribute">ENDURANCE</typ> cannot rise above its original level.</p>
-        <p>If you choose this skill, write <quote>Healing: +1 <typ class="attribute">ENDURANCE</typ> point for each section without combat</quote> on your <a idref="action">Action Chart</a>.</p>
+        <p>If you choose this skill, write <quote>Healing: <ch.plus/>1 <typ class="attribute">ENDURANCE</typ> point for each section without combat</quote> on your <a idref="action">Action Chart</a>.</p>
        </data>
       </section>
 
@@ -255,7 +255,7 @@
          </instance>
         </illustration>
         <p>The fact that you are skilled with a weapon does not mean that you set out on this adventure carrying it, but you will have opportunities to acquire weapons in the course of your adventure. You cannot carry more than 2 weapons.</p>
-        <p>If you choose this skill, write <quote>Weaponskill in <ch.blankline/> +2 <typ class="attribute">COMBAT SKILL</typ> points if this weapon carried</quote> on your <a idref="action">Action Chart</a>.</p>
+        <p>If you choose this skill, write <quote>Weaponskill in <ch.blankline/> <ch.plus/>2 <typ class="attribute">COMBAT SKILL</typ> points if this weapon carried</quote> on your <a idref="action">Action Chart</a>.</p>
        </data>
       </section>
 
@@ -272,7 +272,7 @@
        <data>
 
         <p>This enables a Kai Lord to attack an enemy using the force of his mind. It can be used at the same time as normal combat weapons and adds two extra points to your <typ class="attribute">COMBAT SKILL</typ>. Not all the creatures encountered on this adventure will be harmed by Mindblast. You will be told if a creature is immune.</p>
-        <p>If you choose this skill, write <quote>Mindblast: +2 <typ class="attribute">COMBAT SKILL</typ> points</quote> on your <a idref="action">Action Chart</a>.</p>
+        <p>If you choose this skill, write <quote>Mindblast: <ch.plus/>2 <typ class="attribute">COMBAT SKILL</typ> points</quote> on your <a idref="action">Action Chart</a>.</p>
        </data>
       </section>
 
@@ -1994,7 +1994,7 @@
 
       <p>Pick a number from the <a idref="random">Random Number Table</a>. If your current <typ class="attribute">ENDURANCE</typ> points total is less than 10, deduct 3 from the number that you have picked.</p>
       <p>If your current <typ class="attribute">ENDURANCE</typ> points total is more than 20, add 3 to the number you have picked.</p>
-      <choice idref="sect42">If your total score is now -3<ch.endash/>4, <link-text>turn to 42</link-text>.</choice>
+      <choice idref="sect42">If your total score is now <ch.minus/>3<ch.endash/>4, <link-text>turn to 42</link-text>.</choice>
       <choice idref="sect303">If it is 5<ch.endash/>12, <link-text>turn to 303</link-text>.</choice>
      </data>
     </section>
@@ -4912,7 +4912,7 @@
        <instance class="pdf" src="ill20.pdf" width="386" height="681" />
       </illustration>
       <p>Pick a number from the <a idref="random">Random Number Table</a>. If your current <typ class="attribute">ENDURANCE</typ> point total is 20 or more, add 3 to the number that you have picked. If your current <typ class="attribute">ENDURANCE</typ> point total is 12 or less, deduct 2 from the number you have picked.</p>
-      <choice idref="sect194">If your total is now -2<ch.endash/>6, <link-text>turn to 194</link-text>.</choice>
+      <choice idref="sect194">If your total is now <ch.minus/>2<ch.endash/>6, <link-text>turn to 194</link-text>.</choice>
       <choice idref="sect61">If it is 7<ch.endash/>12, <link-text>turn to 61</link-text>.</choice>
      </data>
     </section>

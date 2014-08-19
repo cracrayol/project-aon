@@ -240,7 +240,7 @@
        <data>
         <p>This Discipline can be used to restore <typ class="attribute">ENDURANCE</typ> points lost in combat. If you possess this skill you may restore 1 <typ class="attribute">ENDURANCE</typ> point to your total for every numbered section of the book you pass through in which you are not involved in combat. (This is only to be used after your <typ class="attribute">ENDURANCE</typ> has fallen below its original level.) Remember that your <typ class="attribute">ENDURANCE</typ> cannot rise above its original level.</p>
 
-        <p>If you choose this skill write <quote>Healing: +1 <typ class="attribute">ENDURANCE</typ> point for each section without combat</quote> on your <a idref="action">Action Chart</a>.</p>
+        <p>If you choose this skill write <quote>Healing: <ch.plus/>1 <typ class="attribute">ENDURANCE</typ> point for each section without combat</quote> on your <a idref="action">Action Chart</a>.</p>
        </data>
       </section>
 
@@ -272,7 +272,7 @@
          </instance>
         </illustration>
         <p>The fact that you are skilled with a weapon does not mean you set out on the adventure carrying that particular weapon. However, you will have opportunities to acquire weapons in the course of your adventures. You cannot carry more than 2 weapons.</p>
-        <p>If you choose this skill, write <quote>Weaponskill in <ch.blankline/> +2 <typ class="attribute">COMBAT SKILL</typ> points if this weapon carried</quote> on your <a idref="action">Action Chart</a>.</p>
+        <p>If you choose this skill, write <quote>Weaponskill in <ch.blankline/> <ch.plus/>2 <typ class="attribute">COMBAT SKILL</typ> points if this weapon carried</quote> on your <a idref="action">Action Chart</a>.</p>
        </data>
       </section>
 
@@ -290,7 +290,7 @@
 
        <data>
         <p>This enables a Kai Lord to attack an enemy using the force of his mind. It can be used at the same time as normal combat weapons and adds two extra points to your <typ class="attribute">COMBAT SKILL</typ>. Not all the creatures encountered on this adventure will be harmed by Mindblast. You will be told if a creature is immune.</p>
-        <p>If you choose this skill, write <quote>Mindblast: +2 <typ class="attribute">COMBAT SKILL</typ> points</quote> on your <a idref="action">Action Chart</a>.</p>
+        <p>If you choose this skill, write <quote>Mindblast: <ch.plus/>2 <typ class="attribute">COMBAT SKILL</typ> points</quote> on your <a idref="action">Action Chart</a>.</p>
        </data>
       </section>
 
@@ -492,7 +492,7 @@
        <li>
         <p>Turn to the <a idref="crtable">Combat Results Table</a>. Along the top of the chart are shown the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the random number that you have picked (the random numbers appear on the side of the chart). You now have the number of <typ class="attribute">ENDURANCE</typ> points lost by both Lone Wolf and his enemy in this round of combat. (E represents points lost by the enemy; LW represents points lost by Lone Wolf.)</p>
         <p>Example</p>
-        <p>The Combat Ratio between Lone Wolf and Winged Devil has been established as -3. If the number taken from the <a idref="random">Random Number Table</a> is a 6, then the result of the first round of combat is:</p>
+        <p>The Combat Ratio between Lone Wolf and Winged Devil has been established as <ch.minus/>3. If the number taken from the <a idref="random">Random Number Table</a> is a 6, then the result of the first round of combat is:</p>
         <ul>
          <li>Lone Wolf loses 3 <typ class="attribute">ENDURANCE</typ> points</li>
          <li>Winged Devil loses 6 <typ class="attribute">ENDURANCE</typ> points</li>
@@ -699,7 +699,7 @@
      <data>
       <p>To reach the north door without being seen, you must work your way carefully around the chamber, dodging from one pillar to the next.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>. If you possess the Kai Discipline of Camouflage or Hunting, deduct 2 from the number you have picked.</p>
-      <choice idref="sect167">If your total is now -2<ch.endash/>2, <link-text>turn to 167</link-text>.</choice>
+      <choice idref="sect167">If your total is now <ch.minus/>2<ch.endash/>2, <link-text>turn to 167</link-text>.</choice>
       <choice idref="sect190">If your total is now 3<ch.endash/>9, <link-text>turn to 190</link-text>.</choice>
      </data>
     </section>
@@ -754,7 +754,7 @@
 
      <data>
       <p>The tunnel is dark and shadowy. Much of it is in a poor state of repair, and many cracks and fissures scar the walls. You must search for one large enough in which to hide. Pick a number from the <a idref="random">Random Number Table</a>. If you have reached the Kai rank of Guardian or higher, deduct 1 from the number you have picked.</p>
-      <choice idref="sect151">If your total is now -1<ch.endash/>7, <link-text>turn to 151</link-text>.</choice>
+      <choice idref="sect151">If your total is now <ch.minus/>1<ch.endash/>7, <link-text>turn to 151</link-text>.</choice>
       <choice idref="sect175">If your total is now 8<ch.endash/>9, <link-text>turn to 175</link-text>.</choice>
      </data>
     </section>
@@ -857,7 +857,7 @@
      <data>
       <p>The climb would be easy if it were not for the scalding steam. It stings your face and hands, making the skin puffed and sore. Lose 1 <typ class="attribute">ENDURANCE</typ> point.</p>
       <p>Pick a number from the <a idref="random">Random Number Table</a>. If you have lost the use of one arm, deduct 3 points from the number you have picked. If you possess the Kai Discipline of Hunting, add 2 points to your total.</p>
-      <choice idref="sect77">If your total is now -3<ch.endash/>-1, <link-text>turn to 77</link-text>.</choice>
+      <choice idref="sect77">If your total is now <ch.minus/>3<ch.endash/><ch.minus/>1, <link-text>turn to 77</link-text>.</choice>
       <choice idref="sect192">If your total is now 0<ch.endash/>6, <link-text>turn to 192</link-text>.</choice>
       <choice idref="sect114">If your total is now 7<ch.endash/>11, <link-text>turn to 114</link-text>.</choice>
      </data>

@@ -228,7 +228,7 @@
         <data>
         <p>This Discipline can be used to restore <typ class="attribute">ENDURANCE</typ> points lost in combat. If you possess this skill you may restore 1 <typ class="attribute">ENDURANCE</typ> point to your total for every numbered section of the book you pass through in which you are not involved in combat. (This is only to be used after your <typ class="attribute">ENDURANCE</typ> has fallen below its original level.) Remember that your <typ class="attribute">ENDURANCE</typ> cannot rise above its original level.</p>
 
-        <p>If you choose this skill write <quote>Healing: +1 <typ class="attribute">ENDURANCE</typ> point for each section without combat</quote> on your <a idref="action">Action Chart</a>.</p>
+        <p>If you choose this skill write <quote>Healing: <ch.plus/>1 <typ class="attribute">ENDURANCE</typ> point for each section without combat</quote> on your <a idref="action">Action Chart</a>.</p>
         </data>
        </section>
 
@@ -260,7 +260,7 @@
           </instance>
          </illustration>
          <p>The fact that you are skilled with a weapon does not mean you set out on the adventure carrying that particular weapon. However, you will have opportunities to acquire weapons in the course of your adventures. You cannot carry more than 2 weapons.</p>
-         <p>If you choose this skill, write <quote>Weaponskill in <ch.blankline/> +2 <typ class="attribute">COMBAT SKILL</typ> points if this weapon carried</quote> on your <a idref="action">Action Chart</a>.</p>
+         <p>If you choose this skill, write <quote>Weaponskill in <ch.blankline/> <ch.plus/>2 <typ class="attribute">COMBAT SKILL</typ> points if this weapon carried</quote> on your <a idref="action">Action Chart</a>.</p>
         </data>
        </section>
 
@@ -278,7 +278,7 @@
 
         <data>
          <p>This enables a Kai Lord to attack an enemy using the force of his mind. It can be used at the same time as normal combat weapons and adds two extra points to your <typ class="attribute">COMBAT SKILL</typ>. Not all the creatures encountered on this adventure will be harmed by Mindblast. You will be told if a creature is immune.</p>
-         <p>If you choose this skill, write <quote>Mindblast: +2 <typ class="attribute">COMBAT SKILL</typ> points</quote> on your <a idref="action">Action Chart</a>.</p>
+         <p>If you choose this skill, write <quote>Mindblast: <ch.plus/>2 <typ class="attribute">COMBAT SKILL</typ> points</quote> on your <a idref="action">Action Chart</a>.</p>
         </data>
        </section>
 
@@ -522,7 +522,7 @@
         <li>
          <p>Turn to the <a idref="crtable">Combat Results Table</a>. Along the top of the chart are shown the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the random number that you have picked (the random numbers appear on the side of the chart). You now have the number of <typ class="attribute">ENDURANCE</typ> points lost by both Lone Wolf and his enemy in this round of combat. (E represents points lost by the enemy; LW represents points lost by Lone Wolf.)</p>
          <p>Example</p>
-         <p>The Combat Ratio between Lone Wolf and Winged Devil has been established as -3. If the number taken from the <a idref="random">Random Number Table</a> is a 6, then the result of the first round of combat is:</p>
+         <p>The Combat Ratio between Lone Wolf and Winged Devil has been established as <ch.minus/>3. If the number taken from the <a idref="random">Random Number Table</a> is a 6, then the result of the first round of combat is:</p>
          <ul>
           <li>Lone Wolf loses 3 <typ class="attribute">ENDURANCE</typ> points</li>
           <li>Winged Devil loses 6 <typ class="attribute">ENDURANCE</typ> points</li>
@@ -2265,7 +2265,7 @@
 
       <data>
        <p>The door grinds open and you enter, ready for attack. You have killed two of the sleeping beasts before the Ice Barbarian and the remaining Doomwolf have time to react. But they both dive at you simultaneously, and you must fight them as one enemy. They are partially immune to Mindblast. If you possess this Discipline, add only 1 point to your <typ class="attribute">COMBAT SKILL</typ> for the duration of this fight.</p>
-       <combat><enemy>Ice Barbarian + Doomwolf</enemy><enemy-attribute class="combatskill">30</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat>
+       <combat><enemy>Ice Barbarian <ch.plus/> Doomwolf</enemy><enemy-attribute class="combatskill">30</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat>
        <choice idref="sect28">If you win the combat, <link-text>turn to 28</link-text>.</choice>
       </data>
      </section>
@@ -2493,7 +2493,7 @@
        <p>The dawn mists are quickly cleared by the icy mountain wind. Tired, shocked, and frozen to the bone, you claw your way up the cruel rock-face until you finally reach the safety of a wide ridge. You are very hungry and must eat a Meal here before you continue or lose 3 <typ class="attribute">ENDURANCE</typ> points. Remember to subtract the Meal from your <a idref="action">Action Chart</a>.</p>
        <p>The ridge joins another which you struggle across, only to find yourself at the top of a terrifying descent. To reach the narrow mountain pass one thousand feet below, you must go down a steep and perilous ice staircase.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. If your current <typ class="attribute">ENDURANCE</typ> point total is less than 10, deduct 2 from the number that you have picked. If your current <typ class="attribute">ENDURANCE</typ> point total is greater than 20, add 1 to the number that you have picked.</p>
-       <choice idref="sect248">If your total is now -2<ch.endash/>2, <link-text>turn to 248</link-text>.</choice>
+       <choice idref="sect248">If your total is now <ch.minus/>2<ch.endash/>2, <link-text>turn to 248</link-text>.</choice>
        <choice idref="sect191">If your total is now 3<ch.endash/>10, <link-text>turn to 191</link-text>.</choice>
       </data>
      </section>
@@ -3151,7 +3151,7 @@
       <data>
        <p>The cyclone is tearing at your clothes and bombarding you with chunks of ice and rock. You grit your teeth and try to run but the cold saps your strength, and you are forced to claw your way along the wall to avoid being sucked into the swirling vortex.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. If your current <typ class="attribute">ENDURANCE</typ> point total is less than 10, deduct 3 from the number you have picked.</p>
-       <choice idref="sect95">If your number is now -3<ch.endash/>3, <link-text>turn to 95</link-text>.</choice>
+       <choice idref="sect95">If your number is now <ch.minus/>3<ch.endash/>3, <link-text>turn to 95</link-text>.</choice>
        <choice idref="sect196">If your number is now 4<ch.endash/>9, <link-text>turn to 196</link-text>.</choice>
       </data>
      </section>
@@ -4004,7 +4004,7 @@
        <p>After a few hundred yards, you find yourself in a huge cavern that spreads out in all directions as far as the eye can see. You have entered the caverns of Kalte and are now looking at an uncharted world that few Sommlending have ever seen. This massive underground labyrinth was constructed by the Ancients many ages before the Sommlending set foot in Magnamund. Its wide avenues, temples, and arenas once echoed to the sounds of a race of creatures for whom the ice was a natural home. M<ch.apos/>lare bowls still hang from the ceiling bathing the caverns in their eternal light.</p>
        <p>You trek steadily northwards for nearly six hours, until you arrive at the bank of a fast-flowing melt-water river. On the opposite bank, you see a tunnel leading off into the distance. You can find no apparent way of crossing the deep water, except by using the ice-floes bobbing up and down on the surface. By jumping from one floe to the next, you could get to the opposite bank, but it will not be easy. You will have to jump at least three of the icy slabs to reach the other side.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. If you have the Kai Discipline of Hunting, you may add 2 to the number you have picked. If your current <typ class="attribute">ENDURANCE</typ> points total is less than 8, deduct 2 from the number you have picked.</p>
-       <choice idref="sect94">If your total score is now <ch.minus/>2<ch.endash/>+3, <link-text>turn to 94</link-text>.</choice>
+       <choice idref="sect94">If your total score is now <ch.minus/>2<ch.endash/><ch.plus/>3, <link-text>turn to 94</link-text>.</choice>
        <choice idref="sect176">If your total score is now 4<ch.endash/>11, <link-text>turn to 176</link-text>.</choice>
       </data>
      </section>
@@ -5493,7 +5493,7 @@
        <p>(<a idref="sect207">207</a>) Replaced <quote>on to</quote> with <quote>onto</quote>.</p>
        <p>(<a idref="sect209">209</a>) Replaced <quote>rockface</quote> with <quote>rock-face</quote>.</p>
        <p>(<a idref="sect210">210</a>) Added <quote>the</quote> before <quote>Kai Discipline</quote> in the first link.</p>
-       <p>(<a idref="sect211">211</a>) Replaced <quote>-3 to 3</quote> with <quote>-3<ch.endash/>3</quote>.</p>
+       <p>(<a idref="sect211">211</a>) Replaced <quote><ch.minus/>3 to 3</quote> with <quote><ch.minus/>3<ch.endash/>3</quote>.</p>
        <p>(<a idref="sect212">212</a>) Replaced <quote>Meal</quote> with <quote>meal</quote> since this is not referring to a Meal noted on the <a idref="action">Action Chart</a>.</p>
        <p>(<a idref="sect216">216</a>) Added a period to the end of the illustration<ch.apos/>s caption. Replaced <quote>to try and</quote> with <quote>to try to</quote>. Replaced <quote>muscular and</quote> with <quote>muscular, and</quote>.</p>
        <p>(<a idref="sect220">220</a>) Replaced <quote>on to</quote> with <quote>onto</quote>.</p>

@@ -228,7 +228,7 @@
        <data>
         <p>This Discipline can be used to restore <typ class="attribute">ENDURANCE</typ> points lost in combat. If you possess this skill you may restore 1 <typ class="attribute">ENDURANCE</typ> point to your total for every numbered section of the book you pass through in which you are not involved in combat. (This is only to be used after your <typ class="attribute">ENDURANCE</typ> has fallen below its original level.) Remember that your <typ class="attribute">ENDURANCE</typ> cannot rise above its original level.</p>
 
-        <p>If you choose this skill write <quote>Healing: +1 <typ class="attribute">ENDURANCE</typ> point for each section without combat</quote> on your <a idref="action">Action Chart</a>.</p>
+        <p>If you choose this skill write <quote>Healing: <ch.plus/>1 <typ class="attribute">ENDURANCE</typ> point for each section without combat</quote> on your <a idref="action">Action Chart</a>.</p>
        </data>
       </section>
 
@@ -260,7 +260,7 @@
          </instance>
         </illustration>
         <p>The fact that you are skilled with a weapon does not mean you set out on the adventure carrying that particular weapon. However, you will have opportunities to acquire weapons in the course of your adventures. You cannot carry more than 2 weapons.</p>
-        <p>If you choose this skill, write <quote>Weaponskill in <ch.blankline/> +2 <typ class="attribute">COMBAT SKILL</typ> points if this weapon carried</quote> on your <a idref="action">Action Chart</a>.</p>
+        <p>If you choose this skill, write <quote>Weaponskill in <ch.blankline/> <ch.plus/>2 <typ class="attribute">COMBAT SKILL</typ> points if this weapon carried</quote> on your <a idref="action">Action Chart</a>.</p>
        </data>
       </section>
 
@@ -278,7 +278,7 @@
 
        <data>
         <p>This enables a Kai Lord to attack an enemy using the force of his mind. It can be used at the same time as normal combat weapons and adds two extra points to your <typ class="attribute">COMBAT SKILL</typ>. Not all the creatures encountered on this adventure will be harmed by Mindblast. You will be told if a creature is immune.</p>
-        <p>If you choose this skill, write <quote>Mindblast: +2 <typ class="attribute">COMBAT SKILL</typ> points</quote> on your <a idref="action">Action Chart</a>.</p>
+        <p>If you choose this skill, write <quote>Mindblast: <ch.plus/>2 <typ class="attribute">COMBAT SKILL</typ> points</quote> on your <a idref="action">Action Chart</a>.</p>
        </data>
       </section>
 
@@ -683,7 +683,7 @@
 
      <data>
       <p>Dorier jumps away from the table and draws his sword. In an instant, his brother Ganon is by his side. You must fight them both as one enemy.</p>
-      <combat><enemy>Dorier + Ganon</enemy><enemy-attribute class="combatskill">28</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat>
+      <combat><enemy>Dorier <ch.plus/> Ganon</enemy><enemy-attribute class="combatskill">28</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat>
       <p>Due to the surprise of your attack, add 2 points to your <typ class="attribute">COMBAT SKILL</typ> for the first round of this combat only. Because of their combined strength of will, a skill developed during their training as knights, they are immune to Mindblast.</p>
       <choice idref="sect33">If you win this fight, <link-text>turn to 33</link-text>.</choice>
      </data>
@@ -1570,7 +1570,7 @@
 
      <footnotes>
       <footnote id="sect79-1-foot" idref="sect79-1">
-       <p>The Sommerswerd is a weapon-like Special Item. The +10 <typ class="attribute">COMBAT SKILL</typ> bonus referred to for Weaponskill is a combination of the +8 <typ class="attribute">COMBAT SKILL</typ> that the Sommerswerd grants naturally and +2 for Weaponskill with Short Sword, Sword, or Broadsword (as each of them grant proficiency with the Sommerswerd). It is not an additional bonus. When used in combat, treat it like a one-handed sword, regardless of Weaponskill bonus. The text or footnotes will always remind you to double your enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> point loss if it is undead.</p>
+       <p>The Sommerswerd is a weapon-like Special Item. The <ch.plus/>10 <typ class="attribute">COMBAT SKILL</typ> bonus referred to for Weaponskill is a combination of the <ch.plus/>8 <typ class="attribute">COMBAT SKILL</typ> that the Sommerswerd grants naturally and <ch.plus/>2 for Weaponskill with Short Sword, Sword, or Broadsword (as each of them grant proficiency with the Sommerswerd). It is not an additional bonus. When used in combat, treat it like a one-handed sword, regardless of Weaponskill bonus. The text or footnotes will always remind you to double your enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> point loss if it is undead.</p>
       </footnote>
      </footnotes>
 
@@ -3666,7 +3666,7 @@
 
      <footnotes>
       <footnote id="sect242-1-foot" idref="sect242-1">
-       <p>The Sommerswerd is a weapon-like Special Item. The +10 <typ class="attribute">COMBAT SKILL</typ> bonus referred to for Weaponskill is a combination of the +8 <typ class="attribute">COMBAT SKILL</typ> that the Sommerswerd grants naturally and +2 for Weaponskill with Short Sword, Sword, or Broadsword (as each of them grant proficiency with the Sommerswerd). It is not an additional bonus. When used in combat, treat it like a one-handed sword, regardless of Weaponskill bonus. The text or footnotes will always remind you to double your enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> point loss if it is undead.</p>
+       <p>The Sommerswerd is a weapon-like Special Item. The <ch.plus/>10 <typ class="attribute">COMBAT SKILL</typ> bonus referred to for Weaponskill is a combination of the <ch.plus/>8 <typ class="attribute">COMBAT SKILL</typ> that the Sommerswerd grants naturally and <ch.plus/>2 for Weaponskill with Short Sword, Sword, or Broadsword (as each of them grant proficiency with the Sommerswerd). It is not an additional bonus. When used in combat, treat it like a one-handed sword, regardless of Weaponskill bonus. The text or footnotes will always remind you to double your enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> point loss if it is undead.</p>
       </footnote>
      </footnotes>
 
@@ -4037,7 +4037,7 @@
 
      <data>
       <p>Ganon rolls away from his chair and draws his sword. An instant later his brother Dorier is by his side. You must fight them both as one enemy.</p>
-      <combat><enemy>Ganon + Dorier</enemy><enemy-attribute class="combatskill">28</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat>
+      <combat><enemy>Ganon <ch.plus/> Dorier</enemy><enemy-attribute class="combatskill">28</enemy-attribute><enemy-attribute class="endurance">30</enemy-attribute></combat>
       <p>Due to the surprise of your attack, add 2 points to your <typ class="attribute">COMBAT SKILL</typ> for the first round of combat only. Because of their exceptional strength of will, they are immune to Mindblast.</p>
       <choice idref="sect33">If you win this combat, <link-text>turn to 33</link-text>.</choice>
      </data>

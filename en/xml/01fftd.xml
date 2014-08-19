@@ -233,7 +233,7 @@
 
        <data>
         <p>This Discipline can be used to restore <typ class="attribute">ENDURANCE</typ> points lost in combat. If you possess this skill you may restore 1 <typ class="attribute">ENDURANCE</typ> point to your total for every numbered section of the book you pass through in which you are not involved in combat. (This is only to be used after your <typ class="attribute">ENDURANCE</typ> has fallen below its original level.) Remember that your <typ class="attribute">ENDURANCE</typ> cannot rise above its original level.</p>
-        <p>If you choose this skill write <quote>Healing: +1 <typ class="attribute">ENDURANCE</typ> point for each section without combat</quote> on your <a idref="action">Action Chart</a>.</p>
+        <p>If you choose this skill write <quote>Healing: <ch.plus/>1 <typ class="attribute">ENDURANCE</typ> point for each section without combat</quote> on your <a idref="action">Action Chart</a>.</p>
        </data>
       </section>
 
@@ -265,7 +265,7 @@
           </ul>
          </instance>
         </illustration>
-        <p>You cannot carry more than 2 weapons. If you choose this skill, write <quote>Weaponskill in <ch.blankline/> +2 <typ class="attribute">COMBAT SKILL</typ> points if this weapon carried</quote> on your <a idref="action">Action Chart</a>.</p>
+        <p>You cannot carry more than 2 weapons. If you choose this skill, write <quote>Weaponskill in <ch.blankline/> <ch.plus/>2 <typ class="attribute">COMBAT SKILL</typ> points if this weapon carried</quote> on your <a idref="action">Action Chart</a>.</p>
        </data>
       </section>
 
@@ -283,7 +283,7 @@
 
        <data>
         <p>This enables a Kai Lord to attack an enemy using the force of his mind. It can be used at the same time as normal combat weapons and adds two extra points to your <typ class="attribute">COMBAT SKILL</typ>. Not all the creatures encountered on this adventure will be harmed by Mindblast. You will be told if a creature is immune.</p>
-        <p>If you choose this skill, write <quote>Mindblast: +2 <typ class="attribute">COMBAT SKILL</typ> points</quote> on your <a idref="action">Action Chart</a>.</p>
+        <p>If you choose this skill, write <quote>Mindblast: <ch.plus/>2 <typ class="attribute">COMBAT SKILL</typ> points</quote> on your <a idref="action">Action Chart</a>.</p>
        </data>
       </section>
 
@@ -517,7 +517,7 @@
        <li>
         <p>Turn to the <a idref="crtable">Combat Results Table</a>. Along the top of the chart are shown the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the random number that you have picked (the random numbers appear on the side of the chart). You now have the number of <typ class="attribute">ENDURANCE</typ> points lost by both Lone Wolf and his enemy in this round of combat. (E represents points lost by the enemy; LW represents points lost by Lone Wolf.)</p>
         <p>Example</p>
-        <p>The Combat Ratio between Lone Wolf and Winged Devil has been established as -3. If the number taken from the <a idref="random">Random Number Table</a> is a 6, then the result of the first round of combat is:</p>
+        <p>The Combat Ratio between Lone Wolf and Winged Devil has been established as <ch.minus/>3. If the number taken from the <a idref="random">Random Number Table</a> is a 6, then the result of the first round of combat is:</p>
         <ul>
          <li>Lone Wolf loses 3 <typ class="attribute">ENDURANCE</typ> points</li>
          <li>Winged Devil loses 6 <typ class="attribute">ENDURANCE</typ> points</li>
@@ -1503,7 +1503,7 @@
 
      <data>
       <p>You turn to face a sneering Giak and the razor-fanged jaws of its mount. You must fight them as one enemy.</p>
-      <combat><enemy>Giak + Doomwolf</enemy><enemy-attribute class="combatskill">15</enemy-attribute><enemy-attribute class="endurance">24</enemy-attribute></combat>
+      <combat><enemy>Giak <ch.plus/> Doomwolf</enemy><enemy-attribute class="combatskill">15</enemy-attribute><enemy-attribute class="endurance">24</enemy-attribute></combat>
       <choice idref="sect265">If you win, <link-text>turn to 265</link-text>.</choice>
      </data>
     </section>
@@ -4896,7 +4896,7 @@
 
      <data>
       <p>You gallop forward to meet the oncoming Doomwolf and rider, your Weapon raised to strike. The Giak sees you and unsheathes his scimitar. You must fight both Giak and Doomwolf as one enemy.</p>
-      <combat><enemy>Giak + Doomwolf</enemy><enemy-attribute class="combatskill">14</enemy-attribute><enemy-attribute class="endurance">24</enemy-attribute></combat>
+      <combat><enemy>Giak <ch.plus/> Doomwolf</enemy><enemy-attribute class="combatskill">14</enemy-attribute><enemy-attribute class="endurance">24</enemy-attribute></combat>
       <choice idref="sect193">If you win the fight, <link-text>turn to 193</link-text>.</choice>
      </data>
     </section>

@@ -211,7 +211,7 @@
           </instance>
          </illustration>
          <p>The fact that you are skilled with three Weapons does not mean that you begin the adventure carrying any of them. However, you will have opportunities to acquire Weapons during your adventure. For every <cite>Lone Wolf</cite> book that you complete in the Magnakai series, you may add an additional Weapon to your <a idref="action">Weaponmastery Checklist</a>.</p>
-         <p>If you choose this skill, write <quote>Weaponmastery: +3 <typ class="attribute">COMBAT SKILL</typ> points</quote> on your <a idref="action">Action Chart</a>, and tick your chosen weapons on the <a idref="action">Weapons List</a>. You cannot carry more than two Weapons.</p>
+         <p>If you choose this skill, write <quote>Weaponmastery: <ch.plus/>3 <typ class="attribute">COMBAT SKILL</typ> points</quote> on your <a idref="action">Action Chart</a>, and tick your chosen weapons on the <a idref="action">Weapons List</a>. You cannot carry more than two Weapons.</p>
         </data>
        </section>
 
@@ -233,7 +233,7 @@
 
         <data>
          <p>The possessor of this skill can restore 1 lost <typ class="attribute">ENDURANCE</typ> point to his total for every numbered section of the book through which he passes, provided he is not involved in combat. (This can only be done after his <typ class="attribute">ENDURANCE</typ> has fallen below its original level.) This Magnakai Discipline also enables a Kai Master to cure disease, blindness, and any combat wounds sustained by others, as well as himself. Using the knowledge that mastery of this skill provides will also allow a Kai Master to identify the properties of any herbs, roots, and potions that may be encountered during the adventure.</p>
-         <p>If you choose this skill, write <quote>Curing: +1 <typ class="attribute">ENDURANCE</typ> point for each section without combat</quote> on your <a idref="action">Action Chart</a>.</p>
+         <p>If you choose this skill, write <quote>Curing: <ch.plus/>1 <typ class="attribute">ENDURANCE</typ> point for each section without combat</quote> on your <a idref="action">Action Chart</a>.</p>
         </data>
        </section>
 
@@ -278,7 +278,7 @@
         <data>
          <p>This psychic skill enables a Kai Master to attack an enemy using the force of his mind. It can be used as well as normal combat weapons and adds 4 extra points to your <typ class="attribute">COMBAT SKILL</typ>.</p>
          <p>It is a powerful Discipline, but it is also a costly one. For every round of combat in which you use Psi-surge, you must deduct 2 <typ class="attribute">ENDURANCE</typ> points. A weaker form of Psi-surge called <cite>Mindblast</cite> can be used against an enemy without losing any <typ class="attribute">ENDURANCE</typ> points, but it will add only 2 extra points to your <typ class="attribute">COMBAT SKILL</typ>. (Psi-surge and Mindblast cannot be used simultaneously.) Psi-surge cannot be used if your <typ class="attribute">ENDURANCE</typ> falls to 6 points or below, and not all of the creatures encountered on your adventure will be affected by it; you will be told if a creature is immune.</p>
-         <p>If you choose this skill, write <quote>Psi-surge: +4 <typ class="attribute">COMBAT SKILL</typ> points but <ch.minus/>2 <typ class="attribute">ENDURANCE</typ> points per round</quote> and <quote>Mindblast: +2 <typ class="attribute">COMBAT SKILL</typ> points</quote> on your <a idref="action">Action Chart</a>.</p>
+         <p>If you choose this skill, write <quote>Psi-surge: <ch.plus/>4 <typ class="attribute">COMBAT SKILL</typ> points but <ch.minus/>2 <typ class="attribute">ENDURANCE</typ> points per round</quote> and <quote>Mindblast: <ch.plus/>2 <typ class="attribute">COMBAT SKILL</typ> points</quote> on your <a idref="action">Action Chart</a>.</p>
         </data>
        </section>
 
@@ -634,13 +634,13 @@
         <data>
          <dl>
           <dt>Circle of Fire</dt>
-           <dd>+1 <typ class="attribute">CS</typ> +2 <typ class="attribute">EP</typ></dd>
+           <dd><ch.plus/>1 <typ class="attribute">CS</typ> <ch.plus/>2 <typ class="attribute">EP</typ></dd>
           <dt>Circle of Light</dt>
-           <dd>0 <typ class="attribute">CS</typ> +3 <typ class="attribute">EP</typ></dd>
+           <dd>0 <typ class="attribute">CS</typ> <ch.plus/>3 <typ class="attribute">EP</typ></dd>
           <dt>Circle of Solaris</dt>
-           <dd>+1 <typ class="attribute">CS</typ> +3 <typ class="attribute">EP</typ></dd>
+           <dd><ch.plus/>1 <typ class="attribute">CS</typ> <ch.plus/>3 <typ class="attribute">EP</typ></dd>
           <dt>Circle of the Spirit</dt>
-           <dd>+3 <typ class="attribute">CS</typ> +3 <typ class="attribute">EP</typ></dd>
+           <dd><ch.plus/>3 <typ class="attribute">CS</typ> <ch.plus/>3 <typ class="attribute">EP</typ></dd>
          </dl>
          <p>All bonus points that you acquire by completing a Lore-circle are additions to your basic <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> scores.</p>
         </data>
@@ -4827,7 +4827,7 @@
         <enemy-attribute class="combatskill">22</enemy-attribute>
         <enemy-attribute class="endurance">10</enemy-attribute>
        </combat>
-       <p>The creature is immune to Mindblast (but not Psi-surge). If the number of <typ class="attribute">ENDURANCE</typ> points you lose in the first round of combat is greater than the number lost by your enemy, then the creature<ch.apos/>s attack has caused lasting injury to your eyesight, and any subsequent <typ class="attribute">ENDURANCE</typ> points that you may lose during the combat are permanent (they reduce your basic <typ class="attribute">ENDURANCE</typ> score and cannot be restored through the use of healing, potions, etc).<footref id="sect268-1" idref="sect268-1-foot"/></p>
+       <p>The creature is immune to Mindblast (but not Psi-surge). If the number of <typ class="attribute">ENDURANCE</typ> points you lose in the first round of combat is greater than the number lost by your enemy, then the creature<ch.apos/>s attack has caused lasting injury to your eyesight, and any subsequent <typ class="attribute">ENDURANCE</typ> points that you may lose during the combat are permanent (they reduce your basic <typ class="attribute">ENDURANCE</typ> score and cannot be restored through the use of healing, potions, etc.).<footref id="sect268-1" idref="sect268-1-foot"/></p>
        <choice idref="sect14">If you win the combat, <link-text>turn to 14</link-text>.</choice>
       </data>
      </section>
@@ -6752,7 +6752,7 @@
        <p>(<a idref="sect229">229</a>) Replaced <quote>gods</quote> with <quote>Gods</quote>. Replaced <quote>handshake, then</quote> with <quote>handshake, and then</quote>. Replaced <quote>Kaltesee</quote> with <quote>Kaltersee</quote>.</p>
        <p>(<a id="err230" idref="sect230">230</a>) Addressing the issue of what <typ class="attribute">COMBAT SKILL</typ> bonus the Dagger of Vashna or Helshezag should confer for this fight is rather problematic. On the one hand, use of the Dagger of Vashna in combat against Darklord Kraagensk<ch.ucirc/>l adds <quote>7 points to your <typ class="attribute">COMBAT SKILL</typ> for the duration of the fight, owing to the power of the Dagger of Vashna when used against a Darklord of Helgedad</quote> (cf. <a idref="sect171">Section 171</a>). Similarly, Helshezag will also add <quote>7 points [to your <typ class="attribute">COMBAT SKILL</typ>] when used against a Darklord of Helgedad</quote> (cf. <a idref="sect240">Section 240</a>).</p>
        <p>However, things are complicated by the battle with Darklord Gnaag in a few sections where the text clearly states: <quote>The power of the weapon you wield is greatly intensified when used within the walls of Helgedad. Owing to its increased power, add 12 to your <typ class="attribute">COMBAT SKILL</typ> for the duration of the fight</quote> (cf. <a idref="sect88">Section 88</a>).</p>
-       <p>It seems that the author intended to keep the +12 <typ class="attribute">COMBAT SKILL</typ> bonus a surprise for the final, climactic battle, but this leads to inconsistency with the battle against Darklord Taktaal presented here. We suggest that you use the +12 <typ class="attribute">COMBAT SKILL</typ> bonus against Darklord Taktaal due to the power of the weapon you are wielding.</p>
+       <p>It seems that the author intended to keep the <ch.plus/>12 <typ class="attribute">COMBAT SKILL</typ> bonus a surprise for the final, climactic battle, but this leads to inconsistency with the battle against Darklord Taktaal presented here. We suggest that you use the <ch.plus/>12 <typ class="attribute">COMBAT SKILL</typ> bonus against Darklord Taktaal due to the power of the weapon you are wielding.</p>
        <p>(<a idref="sect231">231</a>) Replaced <quote>three Drakkar</quote> with <quote>three Drakkarim</quote>.</p>
        <p>(<a idref="sect232">232</a>) Replaced <quote>death cry</quote> with <quote>death-cry</quote>. Replaced <quote><ch.thinspace/><foreign xml:lang="x-giak"><ch.lsquot/>Shez dot got!<ch.rsquot/></foreign><ch.thinspace/></quote> with <quote><ch.thinspace/><foreign xml:lang="x-giak"><ch.lsquot/>Shez dok tot!<ch.rsquot/></foreign><ch.thinspace/></quote> as the original does not seem to make any sense.</p>
        <p>(<a idref="sect233">233</a>) Replaced <quote>Mentora or more</quote> with <quote>Mentora or higher</quote>. Replaced <quote>Curing, and</quote> with <quote>Curing and</quote>. Replaced <quote>skill, or</quote> with <quote>skill or</quote>. Replaced <quote>Kai training</quote> with <quote>Magnakai training</quote>.</p>
@@ -6778,6 +6778,7 @@
        <p>(<a idref="sect262">262</a>) Replaced <quote>main mast</quote> with <quote>mainmast</quote>.</p>
        <p>(<a idref="sect263">263</a>) Replaced <quote>semi-circular</quote> with <quote>semicircular</quote>. Replaced <quote>shadows, then</quote> with <quote>shadows, and then</quote>.</p>
        <p>(<a idref="sect264">264</a>) Added a period to the end of the illustration<ch.apos/>s caption. Replaced <quote>bow</quote> with <quote>Bow</quote>.</p>
+       <p>(<a idref="sect268">268</a>) Replaced <quote>etc</quote> with <quote>etc.</quote>.</p>
        <p>(<a idref="sect269">269</a>) Replaced <quote>head, then</quote> with <quote>head, and then</quote>.</p>
        <p>(<a idref="sect273">273</a>) Replaced <quote>Pathmanship</quote> with <quote>Pathsmanship</quote>.</p>
        <p>(<a idref="sect275">275</a>) Replaced <quote>difficulty, then</quote> with <quote>difficulty, and then</quote>.</p>
