@@ -2284,7 +2284,7 @@
      <data>
       <p>Kate succeeds in giving enough covering fire to keep the clansmen pinned down, while you retrieve the spare tyre, jack, and wheel brace from the trunk of the car. But in doing so she empties her gun, and she has no spare ammunition with which to reload.</p>
       <choice idref="sect78">If you possess at least six rounds of 9mm ammunition and wish to give them to Kate so that she can reload her pistol, <link-text>turn to 78</link-text>.</choice>
-      <choice idref="sect229">If you possess less than six rounds of 9mm ammunition and wish to give them to Kate, <link-text>turn to 229</link-text>.</choice>
+      <choice idref="sect229">If you possess less than six rounds of 9mm ammunition and wish to give all of them to Kate, <link-text>turn to 229</link-text>.</choice>
       <choice idref="sect301">If you possess no 9mm rounds whatsoever, or if you do not wish to give any that you have to Kate, <link-text>turn to 301</link-text>.</choice>
      </data>
     </section>
@@ -2578,7 +2578,7 @@
 
      <data>
       <p>When you emerge from the caverns you are astounded to see that the Angelinos have been completely overwhelmed by this colony of cave dwellers. The few clansmen to have survived the ambush have been trussed up like turkeys and are being guarded by a circle of spear-wielding women. The rest of the colony is so busy stripping and searching the bodies of those they have killed that they fail to notice you and Kate, as you leave the entrance quietly and make your way back to the roadster. You admire their bravery but there is something about these people, something about their appearance and their silence, that unsettles you.</p>
-      <p>You inspect the damage to the truck. Your fears are confirmed: you no longer have sufficient fuel to reach Kent. You siphon the tanks of the clansmen<ch.apos/>s bikes, and save what you can from the bottom of the two perforated fuel canisters, but you estimate that in total you have only enough to take you 120 miles.</p>
+      <p>You inspect the damage to the trunk. Your fears are confirmed: you no longer have sufficient fuel to reach Kent. You siphon the tanks of the clansmen<ch.apos/>s bikes, and save what you can from the bottom of the two perforated fuel canisters, but you estimate that in total you have only enough to take you 120 miles.</p>
       <p>As you are leaving, you notice that the cave people are preparing a funeral pyre for those who were killed in the fighting. It strikes you as a very sensible and civilized way to dispose of the dead, and makes you think that perhaps your suspicions about these people were groundless after all. Your illusions about the cave people are soon shattered, however, when Kate points out that they are not burning the dead at all: they are cooking them.</p>
       <choice idref="sect56"><link-text>Turn to 56</link-text>.</choice>
      </data>
@@ -3369,8 +3369,14 @@
     <section class="numbered" id="sect233">
      <meta><title>233</title></meta>
 
+     <footnotes>
+      <footnote id="sect233-1-foot" idref="sect233-1">
+       <p>It is possible that you may not be carrying a missile weapon at this point. This is a game-design issue that cannot be easily rectified.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>As your hand reaches out to push open one of the doors you hear a faint sound, like a human cough, coming from the kitchen beyond. Instantly you freeze in your tracks and reach automatically for a missile weapon. As you ease off the safety catch, you contemplate your next move.</p>
+      <p>As your hand reaches out to push open one of the doors you hear a faint sound, like a human cough, coming from the kitchen beyond. Instantly you freeze in your tracks and reach automatically for a missile weapon. As you ease off the safety catch, you contemplate your next move.<footref id="sect233-1" idref="sect233-1-foot"/></p>
       <choice idref="sect35">If you decide to kick open the door and rush into the kitchen, <link-text>turn to 35</link-text>.</choice>
       <choice idref="sect113">If you decide instead to shout, <quote>Come outta there with your hands up!</quote>, <link-text>turn to 113</link-text>.</choice>
      </data>
@@ -4416,7 +4422,7 @@
      <meta><title>318</title></meta>
 
      <data>
-      <p>Your gunfire misses the clansman by a wide mark, causing him to throw back his head and laugh. (Remember to deduct the relevant number of rounds from your Ammo Pouch.) Then he veers off the highway and takes to the open ground. You discard your weapon, but you are as determined as ever not to let the clansman escape, so you pull the steering wheel hard over to the left and pursue him as he guns his bike cross-country towards Freeway 87.</p>
+      <p>Your gunfire misses the clansman by a wide mark, causing him to throw back his head and laugh. (Remember to deduct the relevant number of rounds from your Ammo Pouch.) Then he veers off the highway and takes to the open ground. You set your weapon aside, but you are as determined as ever not to let the clansman escape, so you pull the steering wheel hard over to the left and pursue him as he guns his bike cross-country towards Freeway 87.</p>
       <p>An empty concrete drainage ditch runs parallel to the freeway, wide enough to deter the biker from attempting to ride straight across. At the last minute he veers away and you chase him along its edge for nearly half a mile before finally he plucks up enough courage to try to get across. Ahead, a derelict pump house looms, straddling the ditch, its angular roof offering itself as a ramp that could be used to launch a jump onto the freeway. The clansman takes one last look at you over his shoulder and then, with a scream of fearful exhilaration, he winds back the throttle and points his bike at the pump house roof.</p>
       <choice idref="sect192">If you wish to attempt to follow the clansman across the ditch, <link-text>turn to 192</link-text>.</choice>
       <choice idref="sect51">If you decide to steer your roadster away from the pump house, <link-text>turn to 51</link-text>.</choice>
@@ -4746,7 +4752,7 @@
       <p>Under cover of the noise and commotion of the race, you approach the observation block. An enclosed corridor leads to a flight of iron stairs where two burly clansmen<ch.emdash/>one an Angelino, the other a Detroit Lion<ch.emdash/>stand on guard with machine pistols at the ready. At the top of the stairs is the door to the block itself. The noise of the crowd and the roar of the motorcycles have helped you so far, but the race is now into its fourteenth lap, and you know that if you are to succeed in freeing Kate you must get past these guards and storm the observation block before the race ends.</p>
       <choice idref="sect9">If you possess an <typ class="item">HE Grenade</typ> and wish to use it, <link-text>turn to 9</link-text>.</choice>
       <choice idref="sect89">If you possess a <typ class="item">Signal Flare</typ> and wish to use it, <link-text>turn to 89</link-text>.</choice>
-      <choice idref="sect163">If you possess a <typ class="item">Siren</typ> and wish to use it, <link-text>turn to 163</link-text>.</choice>
+      <choice idref="sect163">If you possess a <typ class="item">Siren</typ> and a missile weapon and wish to use them, <link-text>turn to 163</link-text>.</choice>
       <choice idref="sect225">If you possess none of these items, or if you do not wish to use them, <link-text>turn to 225</link-text>.</choice>
      </data>
     </section>
@@ -5465,7 +5471,7 @@
       <p>(<a idref="sect139">139</a>) Replaced <quote>half-way</quote> with <quote>halfway</quote>.</p>
       <p>(<a idref="sect142">142</a>) Replaced <quote>hesitates, then</quote> with <quote>hesitates, and then</quote>. Added <quote>(Remember to deduct six rounds of 9mm ammunition from your Ammo Pouch.)</quote>. Replaced <quote>or choose</quote> with <quote>or if you choose</quote>.</p>
       <p>(<a idref="sect143">143</a>) Replaced <quote>blood-stained</quote> with <quote>bloodstained</quote>. Replaced <quote>half-way</quote> with <quote>halfway</quote>.</p>
-      <p>(<a idref="sect144">144</a>) Replaced <quote>jack and</quote> with <quote>jack, and</quote>. Replaced each occurrence of <quote>ammunition, and</quote> with <quote>ammunition and</quote>. Replaced <quote>or do</quote> with <quote>or if you do</quote>.</p>
+      <p>(<a idref="sect144">144</a>) Replaced <quote>jack and</quote> with <quote>jack, and</quote>. Replaced each occurrence of <quote>ammunition, and</quote> with <quote>ammunition and</quote>. Replaced <quote>or do</quote> with <quote>or if you do</quote>. Replaced <quote>give them</quote> with <quote>give all of them</quote>.</p>
       <p>(<a idref="sect146">146</a>) Replaced <quote>breath, then</quote> with <quote>breath, and then</quote>. Replaced <quote>Dagger [2]</quote> with <quote>Dagger (2)</quote>.</p>
       <p>(<a idref="sect148">148</a>) Replaced <quote>weapon, and</quote> with <quote>weapon and</quote>.</p>
       <p>(<a idref="sect150">150</a>) Replaced <quote>camp fire</quote> with <quote>campfire</quote>.</p>
@@ -5477,7 +5483,7 @@
       <p>(<a idref="sect162">162</a>) Replaced <quote>on to</quote> with <quote>onto</quote>. Replaced <quote>weapon, and</quote> with <quote>weapon and</quote>. Replaced <quote>or do</quote> with <quote>or if you do</quote>.</p>
       <p>(<a idref="sect163">163</a>) Added <quote>(Remember to deduct the relevant number of rounds from your Ammo Pouch.)</quote>.</p>
       <p>(<a idref="sect167">167</a>) Replaced <quote>the road you would</quote> with <quote>the road, you would</quote>.</p>
-      <p>(<a idref="sect168">168</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>. Replaced <quote>colony are</quote> with <quote>colony is</quote>.</p>
+      <p>(<a idref="sect168">168</a>) Replaced <quote>syphon</quote> with <quote>siphon</quote>. Replaced <quote>colony are</quote> with <quote>colony is</quote>. Replaced <quote>the truck</quote> with <quote>the trunk</quote>.</p>
       <p>(<a idref="sect169">169</a>) Replaced <quote>frustration, <ch.lsquot/>I</quote> with <quote>frustration. <ch.lsquot/>I</quote>.</p>
       <p>(<a idref="sect172">172</a>) Replaced <quote>north-west</quote> with <quote>northwest</quote>.</p>
       <p>(<a idref="sect175">175</a>) Replaced <quote>camp fire</quote> with <quote>campfire</quote>. Replaced <quote>or do</quote> with <quote>or if you do</quote>.</p>
@@ -5560,7 +5566,7 @@
       <p>(<a idref="sect315">315</a>) Replaced section references. The original text directed the reader to sections <a idref="sect161">161</a> and <a idref="sect207">207</a>; however, those references are the result of being apprehended by a single clansman in section <a idref="sect115">115</a>.</p>
       <p>(<a idref="sect316">316</a>) Replaced <quote>deep breath and</quote> with <quote>deep breath, and</quote>.</p>
       <p>(<a idref="sect317">317</a>) Replaced <quote>half-way</quote> with <quote>halfway</quote>. Replaced <quote>on to</quote> with <quote>onto</quote>.</p>
-      <p>(<a idref="sect318">318</a>) Replaced <quote>on to</quote> with <quote>onto</quote>. Added <quote>(Remember to deduct the relevant number of rounds from your Ammo Pouch.)</quote>.</p>
+      <p>(<a idref="sect318">318</a>) Replaced <quote>discard your weapon</quote> with <quote>set your weapon aside</quote> to avoid ambiguity. Replaced <quote>on to</quote> with <quote>onto</quote>. Added <quote>(Remember to deduct the relevant number of rounds from your Ammo Pouch.)</quote>.</p>
       <p>(<a idref="sect319">319</a>) Replaced <quote>or choose</quote> with <quote>or if you choose</quote>. Replaced <quote>hesitates, then</quote> with <quote>hesitates, and then</quote>. Replaced <quote>breach</quote> with <quote>breech</quote>. Added <quote>(Remember to deduct a round of 12-gauge ammunition from your Ammo Pouch.)</quote>.</p>
       <p>(<a idref="sect320">320</a>) Replaced <quote>sulphonamide</quote> with <quote>sulfonamide</quote>. Replaced <quote>the 1 point</quote> with <quote>the 3 points</quote> (cf. <a idref="medikit">the Medi-kit section</a> of the rules).</p>
       <p>(<a idref="sect321">321</a>) Replaced <quote><ch.thinspace/><ch.lsquot/>the Day<ch.rsquot/><ch.thinspace/></quote> with <quote><ch.thinspace/><ch.lsquot/>The Day<ch.rsquot/><ch.thinspace/></quote>.</p>
@@ -5578,7 +5584,7 @@
       <p>(<a idref="sect343">343</a>) Replaced <quote>click</quote> with <quote><onomatopoeia>click</onomatopoeia></quote>. Replaced each occurrence of <quote>weapon, and</quote> with <quote>weapon and</quote>.</p>
       <p>(<a idref="sect344">344</a>) Replaced <quote>woodsmoke</quote> with <quote>wood smoke</quote>.</p>
       <p>(<a idref="sect345">345</a>) Replaced <quote>this weapon</quote> with <quote>this Backpack Item</quote>.</p>
-      <p>(<a idref="sect346">346</a>) Replaced <quote>H.E. Grenade, and</quote> with <quote><typ class="item">HE Grenade</typ> and</quote>. Replaced <quote>checkered</quote> with <quote>chequered</quote>. Replaced <quote>these items</quote> with <quote>these items, or if you do not wish to use them</quote>. Replaced <quote><typ class="item">Signal Flare</typ>, and</quote> with <quote><typ class="item">Signal Flare</typ> and</quote>. Replaced <quote><typ class="item">Siren</typ>, and</quote> with <quote><typ class="item">Siren</typ> and</quote>.</p>
+      <p>(<a idref="sect346">346</a>) Replaced <quote>H.E. Grenade, and</quote> with <quote><typ class="item">HE Grenade</typ> and</quote>. Replaced <quote>checkered</quote> with <quote>chequered</quote>. Replaced <quote>these items</quote> with <quote>these items, or if you do not wish to use them</quote>. Replaced <quote><typ class="item">Signal Flare</typ>, and</quote> with <quote><typ class="item">Signal Flare</typ> and</quote>. Replaced <quote><typ class="item">Siren</typ>, and wish to use it</quote> with <quote><typ class="item">Siren</typ> and a missile weapon and wish to use them</quote> because the subsequent section assumes you are carrying a missile weapon.</p>
       <p>(<a idref="sect347">347</a>) Replaced <quote>blood-stained</quote> with <quote>bloodstained</quote>.</p>
       <p>(<a idref="sect348">348</a>) Replaced <quote>sulphonamides</quote> with <quote>sulfonamides</quote>. Replaced <quote>Knife [2]</quote> with <quote>Knife (2)</quote>. Replaced <quote>Meat Cleaver [3]</quote> with <quote>Meat Cleaver (3)</quote>. Replaced <quote>Bread Knife [2]</quote> with <quote>Bread Knife (2)</quote>. Added <quote>(Remember to deduct the relevant number of rounds from your Ammo Pouch.)</quote>.</p>
       <p>(<a idref="sect350">350</a>) Replaced <quote>THE OMEGA ZONE</quote> with <quote><cite><bookref series="fw" book="03toz">The Omega Zone</bookref></cite></quote>. Replaced <quote>Mad Dog Michigan, and an</quote> with <quote>Mad Dog Michigan and an</quote>.</p>
