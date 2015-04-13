@@ -70,6 +70,13 @@ my %sectionDocLookup = (
   'howcarry' => 'equipmnt',
   'howmuch'  => 'equipmnt',
   'howuse'   => 'equipmnt',
+  'backpack' => 'equipmnt',
+  'ammpouch' => 'equipmnt',
+  'medikit'  => 'equipmnt',
+  'canteen'  => 'equipmnt',
+  'weapons'  => 'weapons',
+  'close'    => 'weapons',
+  'missile'  => 'weapons',
   'cmbtrulz' => 'cmbtrulz',
   'evasion'  => 'cmbtrulz',
   'lorecrcl' => 'lorecrcl',
@@ -170,7 +177,7 @@ while( $#ARGV > -1 && $ARGV[ 0 ] =~ /^-/ ) {
 }
 
 my $lineNumber = 1;
-my $currentSection = "_unknown";
+my $currentSection = '';
 
 while( my $line = <> ) {
   my @section = ( $line =~ /<section[^>]+id="([^"]*)"/g );
@@ -182,6 +189,7 @@ while( my $line = <> ) {
     else {
       $currentSection = $sectionDocLookup{$section[ 0 ]};
     }
+    $currentSection = '_unknown' unless defined $currentSection;
   }
 
   if( $skipLines >= $lineNumber ) {
