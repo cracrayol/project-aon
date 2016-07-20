@@ -214,7 +214,7 @@ clean: clean-images
 	-rm -f *.aux *.toc *.log *.lof *.dvi *.ps *.bbl *.blg *.lot *.out
 
 distclean: clean
-	-rm -f $(BASENAME).tex $(BASENAME)-untweaked.tex $(BASENAME).tex.orig $(BASENAME).tex.lat1
+	-rm -f $(BASENAME).tex $(BASENAME)-untweaked.tex $(BASENAME).tex.orig $(BASENAME).tex.lat1 $(BASENAME).tex.rej
 # Clean symlinks
 	-rm -f ac1.tex  ac2.tex ac3.tex crtneg.tex  crtpos.tex  random.tex souvenir.sty souverbt.sty    
 	@for gif in *.gif ; do [ -e $$gif ] && [ -L $$gif ] && rm -f $$gif ; done  || true
