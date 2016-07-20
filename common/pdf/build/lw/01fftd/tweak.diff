@@ -1,17 +1,17 @@
---- 01fftd-untweaked.tex	2010-07-21 23:08:54.000000000 +0200
-+++ 01fftd.tex	2010-07-21 23:08:54.000000000 +0200
-@@ -163,7 +163,9 @@
+--- 01fftd-untweaked.tex	2016-07-20 19:24:57.228587268 +0200
++++ 01fftd.tex	2016-07-20 19:25:29.232773205 +0200
+@@ -208,7 +208,9 @@
  % \frontmatter
  
  \addchap{About the Author and Illustrator}
 +\begin{sloppypar}
-       {\bfseries Joe Dever}, the creator of the bestselling Lone Wolf adventure books and novels, has achieved world-wide recognition in three creative fields---as an award-winning author of international renown, as an acclaimed musician and composer, and as a games designer specialising in role-playing games.
+        {\bfseries Joe Dever}, the creator of the bestselling Lone Wolf adventure books and novels, has achieved world-wide recognition in three creative fields---as an award-winning author of international renown, as an acclaimed musician and composer, and as a games designer specialising in role-playing games.
 +\end{sloppypar}
  
  
     On graduating from college in 1974, Joe Dever became a professional musician, and for several years, he worked in the music industry in Europe and the United States.
-@@ -194,7 +196,10 @@
-   Gary was working at Games Workshop when Joe Dever asked him to illustrate some of his manuscript of {\itshape Flight from the Dark}. The two teamed up after that and, they continued to work together until the eighth book in the series, {\itshape The Jungle of Horrors}.
+@@ -239,7 +241,10 @@
+   Gary was working at Games Workshop when Joe Dever asked him to illustrate some of his manuscript of {\itshape Flight from the Dark}. The two teamed up after that and they continued to work together until the eighth book in the series, {\itshape The Jungle of Horrors}.
  
  
 +\enlargethispage{\baselineskip}
@@ -20,8 +20,8 @@
 +\end{sloppypar}
  
  
-  
-@@ -253,7 +258,9 @@
+   
+@@ -319,7 +324,9 @@
  
  You keep a record of your adventure on the \hyperlink{action}{\emph{Action Chart}}.
  
@@ -31,7 +31,7 @@
  
  The first number that you pick from the \hyperlink{random}{\emph{Random Number Table}} in this way represents your {\sc Combat Skill}. Add 10 to the number you picked and write the total in the {\sc Combat Skill} section of your \hyperlink{action}{\emph{Action Chart}} (i.e. if your pencil fell on the number 4 in the \hyperlink{random}{\emph{Random Number Table}} you would write in a {\sc Combat Skill} of 14). When you fight, your {\sc Combat Skill} will be pitted against that of your enemy. A high score in this section is therefore very desirable.
  
-@@ -372,14 +379,16 @@
+@@ -427,14 +434,16 @@
  
  All you possess is an Axe (note under Weapons on your \hyperlink{action}{\emph{Action Chart}}) and a Backpack containing 1 Meal (note under Meals on your \hyperlink{action}{\emph{Action Chart}}). Hanging from your waist is a leather pouch containing Gold Crowns. To find out how many, pick a number from the \hyperlink{random}{\emph{Random Number Table}}. This number equals the number of Gold Crowns you possess at the start of the adventure. (Note the number in the Belt Pouch section of the \hyperlink{action}{\emph{Action Chart}}.)
  
@@ -49,7 +49,7 @@
  \begin{center}
  \includegraphics[width=54mm,keepaspectratio]{sword.pdf} %
  \end{center}
-@@ -387,11 +396,10 @@
+@@ -442,11 +451,10 @@
  
  \item 2 = Helmet (Special Items). This adds 2 {\sc Endurance} points to your total.
  
@@ -62,7 +62,7 @@
  
  \item 3 = Two Meals (Meals)
  
-@@ -411,7 +419,6 @@
+@@ -466,7 +474,6 @@
  
  \item 5 = Mace (Weapons)
  
@@ -70,7 +70,7 @@
  \begin{center}
  \includegraphics[width=31mm,keepaspectratio]{mace.pdf} %
  \end{center}
-@@ -427,19 +434,19 @@
+@@ -482,19 +489,19 @@
  
  \item 7 = Quarterstaff (Weapons)
  
@@ -94,7 +94,7 @@
  
  \item 9 = 12 Gold Crowns (Belt Pouch)
  
-@@ -451,11 +458,10 @@
+@@ -506,11 +513,10 @@
  
  \item 0 = Broadsword (Weapons)
  
@@ -107,7 +107,7 @@
  
  \end{aonitemize}
  
-@@ -559,7 +565,9 @@
+@@ -608,7 +614,9 @@
  \end{aonitemize}
  
  
@@ -116,11 +116,11 @@
 +On the \hyperlink{action}{\emph{Action Chart}}, mark the changes in {\sc Endurance} points to the participants in the combat.
 +\end{sloppypar}
  
- 
  \item Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.
-@@ -1781,7 +1789,9 @@
  
- \addsec*{\hspace*{\fill}\hypertarget{sect103}{}103\hspace*{\fill}}
+@@ -1798,7 +1806,9 @@
+ 
+ \addsec[Section 103]{\hspace*{\fill}\hypertarget{sect103}{}103\hspace*{\fill}}
  
 +\begin{sloppypar}
  The overgrown path leads to a junction where another track branches off towards the east.
@@ -128,9 +128,9 @@
  
  \nopagebreak\begin{aonchoice}If you wish to take this path, \hyperlink{sect13}{\bfseries turn to 13}.\end{aonchoice}
  
-@@ -3454,7 +3464,9 @@
- 
- \addsec*{\hspace*{\fill}\hypertarget{sect260}{}260\hspace*{\fill}}
+@@ -3424,7 +3434,9 @@
+ Your life and your mission end here.
+ \addsec[Section 260]{\hspace*{\fill}\hypertarget{sect260}{}260\hspace*{\fill}}
  
 +\begin{sloppypar}
  Swimming towards the bank, you can see the ranger spread-eagled at the water's edge. You reach him but only to find that he has broken his neck in the fall and is dead.
@@ -138,9 +138,9 @@
  
  Suddenly, two Giaks jump on you from above and you must fight them. You are unarmed and must fight the Giaks with your bare hands. Deduct 4 points from your {\sc Combat Skill} and fight them one at a time.
  
-@@ -3840,7 +3852,9 @@
+@@ -3798,7 +3810,9 @@
  
- \addsec*{\hspace*{\fill}\hypertarget{sect298}{}298\hspace*{\fill}}
+ \addsec[Section 298]{\hspace*{\fill}\hypertarget{sect298}{}298\hspace*{\fill}}
  
 +\begin{sloppypar}
  The head of the bird slowly turns and it curses you. An instant later, it flies off above the trees and has soon disappeared. Shocked by what you have heard you are now sure that the fledgling was a scout of the Darklords and is now probably on its way to inform them of your whereabouts.
