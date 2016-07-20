@@ -1913,8 +1913,8 @@ is included in all copies.
 <xsl:template match="ch.minus">$-$</xsl:template><!-- mathematical minus -->
 <xsl:template match="ch.endash">--</xsl:template><!-- endash -->
 <xsl:template match="ch.emdash">---</xsl:template><!-- emdash -->
-<xsl:template match="ch.ellips">~\protect\textellipsis\ </xsl:template><!-- ellipsis -->
-<xsl:template match="ch.lellips">\textellipsis\ </xsl:template><!-- left ellipsis, used at the beginning of edited material -->
+<xsl:template match="ch.ellips">...</xsl:template><!-- ellipsis -->
+<xsl:template match="ch.lellips">...</xsl:template><!-- left ellipsis, used at the beginning of edited material -->
 <xsl:template match="ch.blankline">\_\_\_\_\_\_\_</xsl:template><!-- blank line to be filled in -->
 <xsl:template match="ch.percent"><xsl:text>\%</xsl:text></xsl:template><!-- percent sign -->
 <xsl:template match="ch.thinspace"><xsl:text>\ </xsl:text></xsl:template><!-- small horizontal space for use between adjacent quotation marks - added mainly for LaTeX's sake -->
