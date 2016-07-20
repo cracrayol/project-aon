@@ -30,7 +30,7 @@ my $USE_ILLUSTRATORS  = "";
 #
 # my $XMLPROC = "xalan";
 # my $XMLPROC = "/usr/local/bin/xmlto";
-my $XMLPROC = "xsltproc";
+my $XMLPROC = "/usr/bin/xsltproc";
 # my $JAVA = "/cygdrive/c/WINDOWS/java.exe";
 my $JAVA = "/usr/bin/java"; 
 my $EXTRAPARMS =""; 
