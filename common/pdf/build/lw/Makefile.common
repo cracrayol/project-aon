@@ -20,9 +20,10 @@ ORIGSERIES ?= $(SERIES)
 ILLUSTRATOR ?= williams
 
 # Control debug
+DEBUG ?= 0
 AT_0 := @
 AT_1 := 
-AT = $(AT_$(VERBOSE))
+AT = $(AT_$(DEBUG))
 
 all: $(BASENAME).pdf 
 
