@@ -69,8 +69,9 @@ if ( ! -d "$DATADIR" ) {
 # Data dir, where XSL files reside
 # Note: This has to be set to the XML file location and not the XSL location
 # because of the .inc and the .mod files
-#my $XSLDIR = $ENV{'AONPATH'}."/common/xsl";
-my $XSLDIR = $DATADIR;
+# We link the file later on to use it
+
+my $XSLDIR = $ENV{'AONPATH'}."/common/xsl";
 if ( ! -d "$XSLDIR" ) {
 	print STDERR "Cannot find XSL directory: $XSLDIR !\n";
 	exit 1;
@@ -375,9 +376,19 @@ else{ die "Error:\n\tUknown book code.\n"; }
 if ( ! -r $DATADIR."/".$XML_SOURCE ) {
     die "Could not find source file $XML_SOURCE in $DATADIR!";
 }
-if ( ! -r $XSLDIR."/latex.xsl" ) {
-    die "Could not find LaTeX stylesheet (latex.xsl) in $DATADIR!";
+if ( ! -e $DATADIR."/latex.xsl" ) {
+    if ( ! -r $XSLDIR."/latex.xsl" ) {
+        die "Could not find LaTeX stylesheet (latex.xsl) in $XSLDIR!";
+    }
+    # Link, if it does not exist the XSL file to the DATADIR
+    if ( ! link $XSLDIR."/latex.xsl", $DATADIR."/latex.xsl" ) {
+     die "Could not link the LaTeX stylesheet (latex.xsl) from $XSLDIR to $DATADIR!";
+    }
 }
+if ( ! -e $DATADIR."/latex.xsl" ) {
+        die "Could not find LaTeX stylesheet (latex.xsl) in $DATADIR!";
+}
+$XSLDIR = $DATADIR;
 
 
 # Create the output directory if it does not exist already
@@ -403,11 +414,11 @@ my $command="";
 # For Xmlto, which uses xsltproc:
 # (Does not work)
 # `$XMLPROC -v -o $BOOK_PATH -x ${XSLDIR}/latex.xsl dvi ${DATADIR}/${XML_SOURCE}`;
-if ( $XMLPROC eq "xalan" ) {
+if ( $XMLPROC =~ /xalan/ ) {
     # Apache's Xalan:
     $command="$XMLPROC -in  ${DATADIR}/${XML_SOURCE} -xsl ${XSLDIR}/latex.xsl -out $OUTPUTFILE -param title-color \"\'$TITLE_COLOR\'\" -param use-illustrators \"\'$USE_ILLUSTRATORS\'\" -param language \"\'$language\'\" $EXTRAPARMS";
 }
-elsif ( $XMLPROC eq "xsltproc" ) {
+elsif ( $XMLPROC =~ /xsltproc/ ) {
     # xsltproc:
     $command="$XMLPROC --output $OUTPUTFILE --param title-color \"\'$TITLE_COLOR\'\" --param use-illustrators \"\'$USE_ILLUSTRATORS\'\" --param language \"\'$language\'\" $EXTRAPARMS ${XSLDIR}/latex.xsl ${DATADIR}/${XML_SOURCE}";
 }
