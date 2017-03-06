@@ -2331,7 +2331,7 @@
       <p>Te encuentras en el centro de la rampa cuando uno de los guardianes se vuelve y te ve. Parpadea y se frota los enrojecidos ojos con incredulidad. Aprovechas el factor sorpresa y te abalanzas sobre él, confiando alcanzarlo antes de que se dé cuenta de lo que ocurre. En cuanto empieza a gritar lo golpeas y cae rodando rampa abajo. El otro guardián desenvaina y se pone en pie, tambaleándose. Evidentemente, está muy borracho, y tu ataque lo saca de quicio: se te echa encima con la misma furia de un perro rabioso.</p>
       <combat><enemy>Guardián Borracho</enemy><enemy-attribute class="combatskill">13</enemy-attribute><enemy-attribute class="endurance">29</enemy-attribute></combat> 
       <choice idref="sect81">Puedes rehuir el combate en cualquier momento internándote por el túnel que hay en este nivel. <link-text>Pasa al 81</link-text>.</choice>
-      <choice idref="sect152">Si vences, <link-text>pasa al 52</link-text>.</choice>
+      <choice idref="sect152">Si vences, <link-text>pasa al 152</link-text>.</choice>
      </data>
     </section>
 
@@ -3630,15 +3630,17 @@
     <section class="numbered" id="sect241">
      <meta><title>241</title></meta>
 
+<!--
      <footnotes>
       <footnote id="sect241-1-foot" idref="sect241-1">
        <p>La <a idref="sect309">Sección 309</a> asume que todos tus hombres están desaparecidos o muertos. Esto representa un serio fallo en el fluir de la historia, ya que aún vas acompañado de algunos de tus hombres. Puedes pasar a la <a idref="sect8">Sección 8</a> en lugar de la 309, la cual es una corrección con un defecto geográfico, aunque continúa la historia con tu grupo actual.</p>
 	</footnote>
      </footnotes>
+-->
 
      <data>
       <p>El techo de la caverna es tan bajo que os veis obligados a echaros en el fondo del bote. Durante una hora, más o menos, la embarcación discurre a merced de la corriente por un laberinto de túneles; de repente, toca una orilla llena de guijarros y se detiene. Te encuentras en una zona de la mina mucho más elevada que cualquiera que hayas visitado con anterioridad. El río prosigue su curso en dirección sur, pero hacia el este alcanzas a ver otra orilla que da a un túnel de tierra firme.</p>
-      <choice idref="sect309">Si decides remar hasta la otra orilla, abandonar el bote y continuar a pie, <link-text>pasa al 309</link-text>. <a id="sect241-1" idref="sect241-1-foot" class="footnote"/></choice>
+      <choice idref="sect309">Si decides remar hasta la otra orilla, abandonar el bote y continuar a pie, <link-text>pasa al 343</link-text>.<!-- <a id="sect241-1" idref="sect241-1-foot" class="footnote"/>--></choice>
       <choice idref="sect115">Si prefieres seguir río adelante, <link-text>pasa al 115</link-text>.</choice>
      </data>
     </section>
