@@ -593,7 +593,7 @@ ge/gif"/>
      <meta><title>2</title></meta>
 
      <data>
-      <p>Jadeante por el esfuerzo del combate retrocedes cuando el elix al fin se desploma y muere. Poco a poco sus transparentes ojos verdes se empañan y se vuelven opacos como duro y frío Jade. Del cuello de la criatura salpicado de sangre cuelga una Cadena y una Llave de oro. En seguida descubres que la Llave abre la puerta de acero de una cámara acorazada que hay en la pared del fondo de la farmacia.</p>
+      <p>Jadeante por el esfuerzo del combate retrocedes cuando el elix al fin se desploma y muere. Poco a poco sus transparentes ojos verdes se empañan y se vuelven opacos como duro y frío Jade. Del cuello de la criatura salpicado de sangre cuelga una Llave de oro en una cadena. En seguida descubres que la Llave abre la puerta de acero de una cámara acorazada que hay en la pared del fondo de la farmacia.</p>
       <p>En el estante más alto de la cámara encuentras una cajita que contiene lo que buscas: la hierba oede. Al cabo de unos segundos de apretar contra tu hombro herido las bellas hojas doradas, un estremecimiento te recorre todo el brazo. El entumecimiento pronto desaparece y el brazo y el hombro se ven libres de los horribles microbios de la gangrena.</p>
       <p>En la cajita queda hierba suficiente para una segunda aplicación. La hierba contiene una sustancia eficaz contra numerosas enfermedades mortales. También puede ser utilizada para restablecer 10 puntos de <typ class="attribute">RESISTENCIA</typ> tragándola después de un combate. Si quieres quedarte con la hierba, anótala en tu <a idref="action">Carta de Acción</a> como objeto de la mochila. También puedes restablecer los puntos de <typ class="attribute">DESTREZA EN EL COMBATE</typ> que has perdido temporalmente a causa de la gangrena.</p>
       <p>Al encerrar el cadáver del elix en la cámara acorazada, examinas ésta por dentro. Descubres que tiene en realidad dos puertas, una por la que has entrado y otra más pequeña en la pared opuesta. La Llave de oro abre esa segunda puerta, que conduce a una estrecha escalerilla, débilmente iluminada por antorchas sujetas a las paredes mediante brazos de hierro.</p>
@@ -1308,13 +1308,14 @@ ge/gif"/>
 
      <footnotes>
       <footnote id="sect58-1-foot" idref="sect58-1">
-       <p>La sección correspondiente a la respuesta correcta tendrá una nota al pie confirmándolo. Si escoges una sección errónea, entonces pasa a la <a idref="sect156">sección 156</a> como se indica arriba.  No dispones de una segunda oportunidad.</p>
+       <p>La sección correspondiente a la respuesta correcta tendrá una nota al pie confirmando que lo es.</p>
       </footnote>
      </footnotes>
 
      <data>
       <p>Sigues un pasillo recto, de piedra de color rosa pálido, que pronto termina en un vestíbulo vacío. En la pared norte hay una gran puerta de madera recubierta de planchas de bronce con grabados y remachada con clavos también de bronce. En medio de esa puerta ves una extraña cerradura rodeada por una hermosa talla que representa a un escorpión de larga cola. Una mirada más detenida te revela una serie de cifras grabadas en la cerradura en caracteres vassagonianos: son los números del 1 al 200. Reconoces el diseño: se trata de una cerradura de Cloeasia con combinación de seguridad.</p>
-      <p>Si conoces el número exacto que abre la puerta de bronce, pasa a la referencia que lleva ese número.<a id="sect58-1" idref="sect58-1-foot" class="footnote" /></p>
+      <p>Si conoces el número exacto que abre la puerta de bronce, <choose test="has-numbered-section-list"><when value="true"><a idref="part1">pasa a la referencia que lleva ese número</a></when><otherwise>pasa a la referencia que lleva ese número</otherwise></choose>.<a id="sect58-1" idref="sect58-1-foot" class="footnote" /></p>
+      <choice idref="sect98">Si escogiste la combinación incorrecdta, no tienes una segunda oportunidad. <link-text>Pasa inmediatamente al 98</link-text>.</choice>
       <choice idref="sect156">Si no conoces el número que abre la puerta, <link-text>pasa al 156</link-text>.</choice>
      </data>
     </section>
@@ -1864,8 +1865,8 @@ ge/gif"/>
        <li>1 Poción de Alether (aumenta 2 puntos la <typ class="attribute">DESTREZA EN EL COMBATE</typ> durante una sola pelea).</li>
       </ul>
       <p>También puedes quedarte con la Cerbatana y el Dardo Somnífero restante. Si decides apoderarte de estos objetos, anótalos en tu <a idref="action">Hoja de Acción</a> como objetos de la Mochila.</p>
-      <p>En la ropa del guardia que tenía la Cerbatana hallas un pequeño pergamino en el que están inscritos la fecha del día y el número 67. Una sonrisa se dibuja en tus labios al comprender que este es el número que abre la Puerta de Bronce. Contienes la respiración y haces girar el disco.</p>
-      <p>You hold your breath and twist the dial!</p>
+      <p>En la ropa del guardia que tenía la Cerbatana hallas un pequeño pergamino en el que están inscritos la fecha del día y el número 67. Una sonrisa se dibuja en tus labios al comprender que este es el número que abre la Puerta de Bronce.</p>
+      <p>¡Contienes la respiración y haces girar el disco!</p>
       <choice idref="sect67"><link-text>Pasa al 67</link-text>.</choice>
      </data>
     </section>
