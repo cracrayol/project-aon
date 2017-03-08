@@ -174,6 +174,10 @@ while( $#ARGV > -1 && $ARGV[ 0 ] =~ /^-/ ) {
     shift @ARGV;
     $language = shift @ARGV;
   }
+  elsif( $ARGV[ 0 ] eq '-h' ) {
+    usage();
+    exit 0;
+  }
 }
 
 my $lineNumber = 1;
@@ -342,4 +346,17 @@ sub printError {
 
   ++$errorCount;
   if( $maxErrorCount > 0 && $errorCount > $maxErrorCount ) { die "Maximum number of errors ($maxErrorCount) exceeded. Quitting.\n"; }
+}
+
+sub usage {
+    print "Gamebook lintian checker - reads from standard input a gamebook XML file and prints out possible errors\n\n";
+    print "Usage: gblint.pl [-e <NUMBER>] [-s <NUMBER>] [-i <TEXT>] [--use-corr] [--skip-ASCII-check] [--language CODE]\n";
+    print "Options:\n";
+    print "\t-e <NUMBER>\tStops when NUMBER errors have been reached (by default it does not stop)\n";
+    print "\t-s <NUMBER>\tSkips NUMBER of lines before analysing\n";
+    print "\t-i <TEXT>\tAdds TEXT to error messages (default: '??')\n";
+    print "\t--use-corr\tPrints correction in report (default: disabled)\n";
+    print "\t--skip-ASCII-check\tDoes not check for non-ASCCI characters (default: enabled)\n";
+    print "\t--language CODE\tDefines the language of the gamebook file (default: 'en'\n";
+    print "\t-h\tPrint this help and exit\n";
 }
