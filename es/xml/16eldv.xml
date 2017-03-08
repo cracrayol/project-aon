@@ -1,3 +1,894 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE gamebook SYSTEM "gamebook.dtd" [
+ <!ENTITY % general.links SYSTEM "genlink.mod">
+ %general.links;
+ <!ENTITY % xhtml.links   SYSTEM "htmllink.mod">
+ %xhtml.links;
+
+ <!ENTITY % general.inclusions SYSTEM "geninc.mod">
+ %general.inclusions;
+]>
+
+<gamebook xml:lang="es-ES" version="0.12">
+
+ <meta>
+  <title>El Legado de Vashna</title>
+  <creator class="author" sort-name="Dever, Joe">Joe Dever</creator>
+  <creator class="illustrator" sort-name="Williams, Brian">Brian Williams</creator>
+  <creator class="short">Joe Dever y Brian Williams</creator>
+  <creator class="medium">
+   <line>Joe Dever</line>
+   <line>Ilustrado por Brian Williams</line>
+  </creator>
+  <creator class="long">
+   &inclusion.joe.dever.bio.lw;
+   &inclusion.brian.williams.bio.lw;
+  </creator>
+  <publisher>Proyecto Aon Español</publisher>
+  <!-- TODO: Update date of publication when it is published at the website -->
+  <date class="publication"><year>2017</year><month>04</month><day>01</day></date>
+  <description class="blurb">
+   <p>Eres Lobo Solitario, Gran Maestro del Kai de Sommerlund. El espíritu de Vashna, el más grande de todos los Señores de la Oscuridad, está atrapado en las profundidades insondables de la Garganta de Maaken. Durante siglos, los siervos de la oscuridad han intentado invocarlo para que cumpla su voluntad, pero siempre han fallado<h.ellips/>¡hasta ahora!
+   </p>
+   <p>En <strong><cite>El Legado de Vashna</cite><strong>, debes localizar y derrotar a los secuaces de los Señores de la Oscuridad antes de que puedan completar la resurrección de su señor<ch.emdash/> el Señor del Mal más poderoso que el mundo haya conocido. ¿Tendrás éxito en tu misión? ¿O perecereis tú y tu frágil mundo ante la ira de Vashna?</p>
+  </description>
+  <description class="publication">
+  <p>Edición de Internet publicada por <a href="&link.project.website;">Proyecto Aon Español</a>. Esta edición trata de reflejar fielmente el texto completo de la versión original. Allí donde se han hecho mínimas correcciones, viene notificado en las <a idref="errata">Erratas</a>.</p>
+  </description>
+  <rights class="copyrights">
+   <line>Copyright del texto <ch.copy/> 1991 Joe Dever.</line>
+   <line>Copyright de las ilustraciones <ch.copy/> 1991 Brian Williams.</line>
+  </rights>
+  <rights class="license-notification">
+   <p>
+    <line>Copyright del texto <ch.copy/> 1991 Joe Dever.</line>
+    <line>Copyright de las ilustraciones <ch.copy/> 1991 Brian Williams.</line>
+    <line>La distribución de esta Edición de Internet está restringida bajo los términos de la <a idref="license">Licencia del Proyecto Aon</a>.</line>
+   </p>
+  </rights>
+ </meta>
+
+ <section id="toc">
+  <meta><title>Índice</title></meta>
+  <data />
+ </section>
+
+ <section id="title">
+  <meta>
+   <title>Título</title>
+   <link class="next" idref="dedicate" />
+  </meta>
+
+  <data>
+
+   <section class="frontmatter" id="dedicate">
+    <meta>
+     <title>Dedicatoria</title>
+     <link class="prev" idref="title" />
+     <link class="next" idref="acknwldg" />
+    </meta>
+
+    <data>
+
+     <p class="dedication">Para Margaret Foden</p>
+
+    </data>
+   </section>
+
+   <section class="frontmatter" id="acknwldg">
+    <meta>
+     <title>Agradecimientos</title>
+     <link class="prev" idref="dedicate" />
+     <link class="next" idref="tssf" />
+    </meta>
+
+    <data>
+
+     &inclusion.joe.dever.endowment;
+
+     <section class="frontmatter" id="credits">
+      <meta><title>Créditos</title></meta>
+
+      <data>
+       <dl>
+        <dt>Traducción y transcripción</dt>
+         <dd>
+          <line>José Antonio Rojo (2016)</line>
+         </dd>
+        <dt>Edición de ilustraciones</dt>
+         <dd>Jonathan Blake</dd>
+        <dt>Carta de Acción</dt>
+         <dd>
+          <line>JC Alvarez</line>
+          <line>Jonathan Blake</line>
+         </dd>
+        <!-- TODO: Somebody from the Spanish team should review -->
+        <dt>Lecturas de corrección</dt>
+         <dd>
+          <line>José Antonio Rojo</line>
+         </dd>
+        <dt>Edición</dt>
+         <dd>
+         <line>Raúl Moreno</line>
+         <line>Javier Fernández-Sanguino</line>
+         </dd>
+       <dt>Edición en PDF</dt>
+         <dd>Javier Fernández-Sanguino</dd>
+        <dt>Coordinación general</dt>
+         <dd>Raúl Moreno</dd>
+        <dt>Agradecimientos especiales</dt>
+         <dd>Jan Charv<ch.aacute/>t, David Davis, Laurence Leach, David Olsen, Timothy Pederick, Christopher Turner, Jeremy Welker</dd>
+       </dl>
+      </data>
+     </section>
+
+    </data>
+   </section>
+
+   <section class="frontmatter" id="tssf">
+    <meta>
+     <title>La historia hasta ahora<ch.ellips/></title>
+     <link class="prev" idref="acknwldg" />
+     <link class="next" idref="gamerulz" />
+    </meta>
+
+<!-- Common introduction text for this series -->
+
+    <data>
+     <p>Tu eres el Gran Maestro Lobo Solitario, el último de los Señores del Kai de Sommerlund y el único superviviente de una masacre que acabó con la Primera Orden de tu <ch.eacute/>pequeña casta guerrera.</p>
+     <p>Corre el año 5077 de la Era de la Piedra de Luna y han pasado veintisiete años desde que tus bravos compatriotas perecieron a manos de los Señores de la Oscuridad de Helgedad. Estos campeones del mal, enviados por Naar, Rey de la Oscuridad, para acabar con el próspero mundo de Magnamund, han sido derrotados. Juraste vengar el asesinato de los Kai y cumpliste tu promesa, pues fuiste tú quien provocaste su caída al infiltrarte en solitario en su impío dominio, los Darklands, y destruíste a su líder, el Archiseñor Gnaag, junto con el núcleo de su nocivo poder, la infernal ciudad de Helgedad.</p>
+     <p>A raíz de su destrucción, el caos se cernió sobre los ejércitos de los Señores de la Oscuridad quienes, hasta entonces, habían sido preparados para conquistar todo el Norte de Magnamund. Algunas facciones que formaron parte de este gran ejército, destacando la barbarie Drakkarim, comenzaron a luchar con los otros por el control. Este desorden rápidamente degeneró en una guerra civil, que concedió a los ejércitos de las Tierras Libres de Magnamund tiempo para recuperarse y lanzar un contraataque. Hábilmente sus comandantes aprovecharon el caos y consiguieron una rápida y total victoria sobre un enemigo muy superior en número.</p>
+     <p>Durante siete años hasta ahora ha reinado la paz en Sommerlund. Bajo tu dirección, el derruido Monasterio del Kai ha sido completamente reconstruido y restaurado a su antigua gloria, y la tarea de enseñar a una Segunda Orden de guerreros del Kai, las habilidades y la orgullosa tradición de sus antepasados también está en marcha. La nueva generación de reclutas del Kai, la mayoría de estos nacidos durante la era de la guerra contra los Señores Oscuros, posee habilidades latentes del Kai y todos parecen promesas excepcionales. Estas habilidades se nutrirán y afinarán a la perfección durante su tiempo en el monasterio para que puedan enseñar e inspirar a las generaciones futuras, garantizando la seguridad continua de su patria, en los años venideros.</p>
+     <p>Alcanzar el rango de Gran Maestro del Kai trajo consigo grandes recompensas. Algunas, como la restauración del Kai y el eterno agradecimiento de tus compañeros Sommlending, podrían haberse anticipado. Sin embargo, también ha habido recompensas que posiblemente no podías haber previsto. El descubrimiento de que en tu interior se encuentra el potencial para desarrollar disciplinas del Kai más allá de las del Magnakai, que, hasta ahora, se pensaba que era el máximo a lo que podría aspirar un Maestro del Kai, fue realmente una revelación. Tu descubrimiento te ha inspirado para emprender un nuevo y antes desconocido camino en busca de la sabiduría y el poder que ningún Maestro del Kai antes que tu haya poseído nunca. En el nombre de tu creador, el Dios del Kai, y para la mayor gloria de Sommerlund y la Diosa Ishir, te has propuesto alcanzar la cima más alta de perfección del Kai<ch.emdash/>para conseguir todas las Grandes Disciplinas Maestras y convertirte en el primer Maestro Supremo del Kai.</p>
+     <p>Con diligencia y determinación dispusiste la restauración del Monasterio del Kai y organizaste el entrenamiento de los reclutas de la Segunda Orden. Tus esfuerzos pronto fueron recompensado y, dentro de un lapso de dos años, los primeros reclutas novatos se habían graduado para convertirse en un grupo de talentosos Maestros del Kai quienes, a su vez, pudieron empezar a enseñar sus habilidades a los siguientes admitidos como novicios del Kai. Pronto los Maestros del Kai aumentaron sus nuevas responsabilidades, dejándote libre para dedicar mas tiempo a la búsqueda y perfección de las Grandes Disciplinas Maestras. </p>
+     <p>Durante este período también recibiste un experta tutela en los caminos de la magia por parte de dos de tus verdaderos amigos y consejeros: El Maestro de Gremio Banedon, líder de la Hermandad de la Estrella de Cristal, y Lord Rimoah, portavoz del Alto Consejo de los Ancianos Magos.</p>
+     <p>En el nivel subterráneo más profundo del monasterio, un centenar de pies bajo la Torre del Sol, ordenaste la excavación y construcción de una bóveda especial. En esta magnífica cámara forjada de granito y oro, depositaste las siete Piedras de la Sabiduría de Nyxator, las gemas de poder del Kai que habías recuperado durante tu búsqueda del Magnakai. Fue aquí, bañado por la luz dorada de estas radiantes gemas, donde pasabas incontables horas en busca de la perfección. Algunas veces solo, otras en compañía de tus dos hábiles consejeros<ch.emdash/>Banedon y Rimoah<ch.emdash/>trabajaste duro para desarrollar tus Grandes Disciplinas Maestras innatas, y captar los secretos fundamentales de la Mano-Izquierda y el Antiguo Reino Mágico. Durante este tiempo adviertes muchos cambios notables que tienen lugar dentro de tu cuerpo: te haces más fuerte física y mentalmente, tus cinco sentidos primarios se agudizan más allá de todo lo que habías experimentado antes, y, lo más destacable, tu cuerpo empieza a envejecer a un ritmo muchísimo mas lento. Ahora, por cada cinco años que transcurren tan solo envejeces un año.</p>
+     <p>En este momento muchos cambios estaban ocurriendo más allá de las fronteras de Sommerlund. En las regiones del nordeste de Magador y en la Garganta de Maaken, los Ancianos Magos de Dessi y los Druidas de Bautar estaban trabajando juntos en un esfuerzo por restaurar la baldía y polvorienta tierra volcánica a su anterior estado de fertilidad. Fue el primer intento hacia la recuperación de todas las Tierras Oscuras. Sin embargo, su progreso fue dolorosamente lento y ambas partes se resignaron al hecho que sus esfuerzos por deshacer el daño causado por los Señores Oscuros no iba a llevar años sino siglos para completarse.</p>
+     <p>Tras la destrucción de los Señores Oscuros de Helgedad, los Giaks, los más prolíficos en número de todas las tropas Gnaag, huyeron hacia el interior de las Tierras Oscuras y buscaron refugio en las gigantescas ciudades-fortaleza de Nadgazad, Aarnak, Gournen, y Kaag. Dentro de cada uno de estos feudos infernales estallaron intensos combates a causa de los Xaghash (Señores Oscuros menores) y los Nadziranim (practicantes malignos de la magia de la Mano-Derecha quienes una vez ayudaron a los propios Señores Oscuros maestros) que luchaban por el control. Es extensamente conocido que con el tiempo los Ancianos Magos y los Druidas alcanzarán los muros de estas fortalezas trayendo a los ocupantes su esperada extinción.</p>
+     <p>Por otra parte, a lo largo del norte de Magnamund, reina la paz de los vencedores y las gentes de los Reinos Libres se regocijan sabiendo que la edad de los Señores Oscuros finalmente ha llegado a su fin. De buena gana, los hombres han cambiado sus espadas por azadones y sus escudos por arados, y ahora las únicas marchas que realizan es a lo largo de los surcos de sus campos recién arados. Pocos son los ojos vigilantes que observan el distante horizonte con el temor de lo que pueda aparecer, aunque hay todavía algunos que mantienen su vigilancia, por los agentes de Naar que vienen disfrazados y esperan pacientemente en las sombras la oportunidad de hacer un pacto maligno.</p>
+
+
+<!-- TODO: Introduction text from Jose Antonio Rojo, note it is not the same translation as in 14lcdk.xml:
+
+Eres el Gran Maestro Lobo Solitario, el último de los Señores del Kai de
+Sommerlund y el único superviviente de la masacre que exterminó a la Primera Orden
+de tu casta de guerreros de élite.
+Corre el año 5077 de la Era de la Piedra de Luna y han pasado veintisiete años desde
+que tus bravos compatriotas perecieron a manos de los Señores de la Oscuridad de
+Helgedad. Estos campeones del mal, enviados por Naar, Rey de la Oscuridad, para
+acabar con el próspero mundo de Magnamund, han sido derrotados. Juraste vengar el
+asesinato de los Kai y cumpliste tu promesa, pues fuiste tú quien provocaste su caída al
+infiltrarte en solitario en su impío dominio, los Darklands, y destruíste a su líder, el
+Archiseñor Gnaag, junto con el núcleo de su nocivo poder, la infernal ciudad de
+Helgedad.
+Tras su destrucción, el caos se apoderó de los ejércitos de los Señores de la
+Oscuridad que, hasta ese momento, estaban en disposición de conquistar por completo
+Magnamund. Algunas facciones de este vasto ejército, sobre todo los bárbaros
+Drakkarim, comenzaron a luchar contra los otros para hacerse con el poder, y el
+desorden pronto desembocó en una guerra civil a gran escala que aprovecharon los
+ejércitos de las Tierras Libres del Norte de Magnamund para recuperarse y lanzar una
+contraofensiva. Astutamente, sus caudillos sacaron provecho del caos reinante y
+aseguraron una pronta y completa victoria contra un enemigo que les superaba
+ampliamente en número.
+Durante siete años la paz ha reinado en Sommerlund. Bajo tu guía, el Monasterio del
+Kai, que una vez fue sólo ruinas, ha sido completamente reconstruido y restaurado a su
+antigua gloria, y la tarea de enseñar a una Segunda Orden de Guerreros del Kai las
+habilidades y orgullosas tradiciones de tus ancestros también está muy avanzada. Esta
+nueva generación de novicios, todos nacidos en la época de la guerra contra los Señores
+de la Oscuridad, posee latentes habilidades del Kai y son una gran promesa. Sus
+capacidades serán nutridas y perfeccionadas durante su paso por el Monasterio, de
+manera que puedan inspirar a las futuras generaciones y asegurar la protección de tu
+país en los años venideros.
+Conseguir llegar al rango de Gran Maestro del Kai trajo consigo grandes
+recompensas. Aunque algunas eran imaginables, como la restauración de la Orden del
+Kai y la eterna gratitud de tus compatriotas sommerlundeses, hubo otras que fueron
+totalmente inesperadas. El descubrimiento de que en tu interior existía el potencial para
+desarrollar las Disciplinas del Kai más allá del Magnakai, que hasta ahora se creía era lo
+máximo a lo que un Maestro del Kai podía aspirar, fue una verdadera revelación. Tu
+descubrimiento te ha inspirado para emprender un camino hasta ahora desconocido en
+busca de una sabiduría y un poder al que ningún otro Señor del Kai jamás ha logrado
+jamás alcanzar. En el nombre de tu creador, el Dios Kai, y para mayor gloria de
+Sommerlund y la Diosa Ishir, has prometido llegar a la cúspide del Kai: dominar todas
+las Disciplinas de los Grandes Maestros y convertirte en el primer Maestro Supremo del
+Kai. 
+
+Con diligencia y determinación completaste la restauración del Monasterio y 
+entrenaste a la Segunda Orden de novicios. Tus esfuerzos pronto se vieron
+recompensados y, en el breve espacio de dos años, los primeros novicios se graduaron,
+convirtiéndose en un grupo de aventajados Maestros del Kai que, a su vez, comenzaron
+a enseñar sus habilidades a posteriores novicios. Pronto, los Maestros del Kai estuvieron
+a la altura de sus nuevas responsabilidades, dejándote más tiempo libre para dedicarlo a
+la búsqueda y perfeccionamiento de las Disciplinas de los Grandes Maestros. Durante
+este tiempo también has sido iniciado en los caminos de la magia por dos de tus amigos
+y consejeros de mayor confianza: el Maestro de Gremio Banedon, líder de la
+Hermandad de la Estrella de Cristal y Lord Rimoah, portavoz del Alto Consejo de los
+Ancianos Magos.
+En el nivel subterráneo más profundo del Monasterio, a treinta metros por debajo de
+la Torre del Sol, ordenaste que se construyera un recinto especial. En esta magnífica
+cámara, hecha de granito y oro, colocaste las siete Piedras de la Ciencia de Nyxator, las
+gemas con el poder del Kai que recuperaste durante tu búsqueda del Magnakai. Es aquí,
+bañado por la luz dorada de las radiantes gemas, donde has pasado innumerables horas
+en busca de la perfección. Algunas veces solo, otras acompañado de tus dos notables
+consejeros, Banedon y Rimoah, has trabajado duro para desarrollar tus innatas
+Disciplinas de Gran Maestro y comprender los secretos de la magia de la Mano
+Izquierda y del Antiguo Reino. Durante este periodo también percibiste significativos
+cambios que se producían en tu cuerpo: te volviste física y psíquicamente más fuerte,
+tus cinco sentidos se agudizaron más allá de lo que habías experimentado hasta el
+momento y, quizás lo más destacable, tu cuerpo comenzó a envejecer a un ritmo mucho
+más lento de lo normal. Ahora, por cada cinco años que transcurren, tú envejeces sólo
+uno.
+Al mismo tiempo, muchos cambios comenzaron a ocurrir más allá de las fronteras de
+Sommerlund. En las regiones situadas al noreste de Magador y de la Garganta de
+Maaken, los Ancianos Magos de Dessi y los Herbalistas de Bautar trabajaron codo con
+codo para devolver a los polvorientos yermos volcánicos su antigua fertilidad, como
+primer paso para recuperar todos los Darklands. Sin embargo, éste fue un proceso
+dolorosamente lento y ambas partes tuvieron que resignarse a que sus esfuerzos por
+deshacer el daño causado por los Señores Oscuros tardarían no años, sino siglos en
+completarse.
+Tras la caída de los Señores de la Oscuridad de Helgedad, los Giaks, las tropas más
+numerosas de las huestes de Gnaag, huyeron al interior de los Darklands y buscaron
+refugio en las gigantescas ciudades— fortaleza de Nadgazad, Aarnak, Gournen y Kaag.
+En cada uno de estos malignos baluartes estallaron virulentas luchas de poder por el
+control de los mismos entre los Xhaghash restantes (los Señores de la Oscuridad
+menores) y los Nadziranim (los diabólicos practicantes de la magia de la Mano Derecha
+y antiguos servidores de cada uno de los Señores de la Oscuridad). Se cree que para
+cuando los Ancianos Magos y los Herbalistas lleguen a los muros de estas fortalezas no
+encontrarán resistencia: sus ocupantes hará mucho que se habrán encargado de su propia
+extinción.
+En todo el Norte de Magnamund reina la paz y las gentes de los Reinos Libres se
+regocijan con la certeza de que la Era de los Señores de la Oscuridad ha llegado a su fin.
+Los hombres han cambiado sus espadas por azadas y los escudos por arados y, ahora,
+marchan únicamente por los surcos de los fértiles campos. Pocos ojos otean el horizonte
+temiendo lo que pueda aparecer. Sin embargo, todavía hay quien mantiene la vigilancia,
+pues los agentes de Naar adoptan muchas formas y aguardan en las sombras, y hay
+quienes aguardan en Magnamund esperando una oportunidad de llevar a cabo sus
+maléficas acciones.
+-->
+
+<!-- New introduction text in this book -->
+    <p>Ya has probado tus recién adquiridas habilidades contra los agentes de Naar y, en cada ocasión, te has conducido de forma admirable. Pero tus continuas victorias contra sus esbirros han enfurecido al Dios Oscuro, y rara vez su sed de venganza ha sido mayor que ahora. Recientemente, Lord Rimoah te ha aconsejado que permanezcas más vigilante que de costumbre, pues teme que Naar se esté preparando para atacar Sommerlund de nuevo. Los Ancianos Magos han recibido avisos del Presidente Kadharian de Magador de que algo extraño está ocurriendo en el norte de su país, en los territorios montañosos que bordean la Garganta de Maaken. Tormentas anormales y un clima no acorde con la estación han azotado esta región remota, y desde hace varias semanas, los cielos nocturnos sobre el Lago Vorndarol han sido iluminados por luces misteriosas e inexplicables.</p>
+
+    <p>Lord Rimoah teme que Naar esté planeando revivir a Vashna, el mas grande de todos
+    los Señores de la Oscuridad, cuyo espíritu está atrapado en las profundidades
+    insondables de la Garganta de Maaken. Ha permanecido allí, en un inquieto entierro,
+    desde el día en que el Señor de la Oscuridad fue derrotado en batalla por el Rey Ulnar I
+    de Sommerlund. El cuerpo de Vashna, junto con los de sus repugnantes tropas, fue
+    arrojado al abismo, con la esperanza de que nunca fuera visto de nuevo. La leyenda dice
+    que aunque el cuerpo del Señor de la Oscuridad fue destruido, su espíritu aún vive. Se
+    dice que aguarda el día en que vuelva a levantarse, a la cabeza de un enorme ejército de
+    guerreros muertos vivientes, y lleve su venganza sobre Sommerlund y la casa de Ulnar.</p>
+
+    <p><quote>Si es la intención de Naar resucitar a Vashna y a su ejército de las profundidades
+    de la Garganta de Maaken,</quote> dice un inquieto Lord Rimoah, mientras discutís la
+    situación en la segura privacidad de tu cámara bajo el Monasterio Kai, <quote>entonces no
+    habrá lugar sobre la faz de Magnamund donde estar a salvo. Siempre ha sido la
+    desgracia de Sommerlund que la victoria de Ulnar sobre Vashna no fuera total. Siempre
+    he temido que el legado de la Garganta de Maaken despertaría un día y nos combatiría... y me
+    temo, a menos que actuemos con rapidez, que ese día está a punto de llegar.</quote></p>
+
+    <p>Durante horas, tú y tu erudito consejero deliberáis sobre qué hacer para evitar tamaña
+    catástrofe. Decidís que, antes de nada, la naturaleza exacta de la amenaza debe ser
+    determinada si queréis combatirla con eficacia. Confías en que tus Disciplinas de Gran
+    Maestro te permitirán resolver con rapidez este misterio, por lo que te ofreces voluntario
+    para viajar al norte de Magador e investigar los extraños sucesos de primera mano.
+    Después de todo, podría existir una explicación perfectamente inocente para ellos.</p>
+
+    <p><quote>Esperemos que así sea, Gran Maestro,</quote> dice Lord Rimoah, gravemente, <quote>pero,
+    de todas formas, no olvides a lo que podrías enfrentarte allí. Rezaré a Kai y a Ishir para
+    que te guarden y te guíen en el viaje que te espera, Lobo Solitario, y te traigan a casa,
+    rápida, segura y victoriosamente.</quote></p>
+
+
+    </data>
+   </section>
+
+   <section class="frontmatter" id="gamerulz">
+    <meta>
+     <title>Las Reglas del Juego</title>
+     <link class="prev" idref="tssf" />
+     <link class="next" idref="discplnz" />
+    </meta>
+
+    <footnotes>
+     <footnote id="gamerulz-1-foot" idref="gamerulz-1">
+     <p>Los bonificadores mencionados no afectan a tus puntuaciones permanentes. Si has completado con éxito aventuras anteriores, las Disciplinas que has aprendido todavía pueden beneficiarte. Lee las Reglas de Gran Maestro en <a href="&link.rh;">El Manual del Lector</a> para encontrar los detalles.</p>
+     </footnote>
+     <footnote id="gamerulz-2-foot" idref="gamerulz-2">
+      <p>Si has completado con éxito la anterior aventura de <cite>Lobo Solitario Gran Maestro</cite>, recuerda escoger una Disciplina de Gran Maestro adicional y añadir +1 a tu puntuación básica de <typ class="attribute">DESTREZA EN EL COMBATE</typ> y +2 a tu puntuación básica de <typ class="attribute">RESISTENCIA</typ> (cf. <a idref="discplnz">Disciplinas de Gran Maestro</a>).</p>
+     </footnote>
+    </footnotes>
+
+    <data>
+
+     <p>Anotarás los resultados de tu aventura en la <a idref="action">Carta de Acción</a>.</p>
+     <p>Durante más de seis años, desde la desaparición de los Señores Oscuros de Helgedad, te has dedicado a desarrollar aún más tu destreza en la lucha<ch.emdash/><typ class="attribute">DESTREZA EN EL COMBATE</typ><ch.emdash/>y tu resistencia física<ch.emdash/><typ class="attribute">RESISTENCIA</typ>. Antes de comenzar esta aventura de Gran Maestro necesitas calibrar el grado de efectividad de tu entrenamiento. Para hacerlo, elige usando un lápiz, con los ojos cerrados, un número de la <a idref="random">Tabla de la Suerte</a>. Si eliges un 0 cuenta como cero.</p>
+     <p>El primer número que obtengas en la <a idref="random">tabla de la Suerte</a> de esta manera representa tu <typ class="attribute">DESTREZA EN EL COMBATE</typ>. Suma 25 al número que has elegido y escribe el resultado en la sección de <typ class="attribute">DESTREZA EN EL COMBATE</typ> de tu <a idref="action">Carta de Acción</a> (por ejemplo, si el lápiz cae en el número 6 de la <a idref="random">Tabla de la Suerte</a> escribirías una <typ class="attribute">DESTREZA EN EL COMBATE</typ> de 31). Cuando luches, tu <typ class="attribute">DESTREZA EN EL COMBATE</typ> se enfrentará a la de tu enemigo. Una alta puntuación es, por tanto, muy deseable.</p>
+     <p>El segundo número que elegirás en la <a idref="random">Tabla de la Suerte</a> representa tu capacidad de <typ class="attribute">RESISTENCIA</typ>. Suma 30 al número que obtengas y escribe el total en la sección <typ class="attribute">RESISTENCIA</typ> de tu <a idref="action">Carta de Acción</a> (por ejemplo, si el lápiz cae en el número 7 de la <a idref="random">Tabla de la Suerte</a> tendrías 37 puntos de <typ class="attribute">RESISTENCIA</typ>).</p>
+     <p>Si eres herido en el combate, pierdes puntos de <typ class="attribute">RESISTENCIA</typ>. Si en algún momento tus puntos de <typ class="attribute">RESISTENCIA</typ> descienden hasta cero, habrás muerto y la aventura habrá terminado. Los puntos de <typ class="attribute">RESISTENCIA</typ> perdidos pueden ser recuperados en el transcurso de la aventura, pero la suma de dichos puntos nunca puede exceder del número total con el que comenzaste.</p>
+     <p>Si has terminado con éxito alguna de las anteriores aventuras de la serie de <cite>Lobo Solitario</cite> (Libros 1<ch.endash/>13),  puedes iniciar esta aventura con tus puntuaciones actuales de <typ class="attribute">DESTREZA EN EL COMBATE</typ> y <typ class="attribute">RESISTENCIA</typ> en el libro 14. Estas puntuaciones pueden incluir los bonificadores de Maestría en el Manejo de Armas, Medicina, y Acometida Psíquica obtenidos al completar las aventuras del <cite>Kai de Lobo Solitario</cite> (libros 1<ch.endash/>5) o del <cite>Magnakai</cite> (libros 6<ch.endash/>12).<footref id="gamerulz-1" idref="gamerulz-1-foot"/> Sólo si has completado esas aventuras anteriores podrás beneficiarte de los bonificadores en el transcurso de la serie <cite>Lobo Solitario Gran Maestro</cite>.<footref id="gamerulz-2" idref="gamerulz-2-foot"/> También puedes utilizar las armas y los objetos especiales que tenías al final de tu última aventura, que debes anotar en tu nueva <a idref="action">Carta de Acción</a> de Gran Maestro. (El número de armas que puedes llevar sigue estando limitado a 2 pero el número de Objetos de Mochila aumenta hasta 10).</p>
+     <p>Sin embargo, sólo puedes llevar los siguientes Objetos Especiales de la serie del <cite>Kai de Lobo Solitario</cite> (libros 1<ch.endash/>5) y <cite>Magnakai</cite> (libros 6<ch.endash/>12) en la serie <cite>Lobo Solitario Gran Maestro</cite> (de libro 13 en adelante):</p>
+     <ul>
+		 <li>Colgante Estrella de Cristal</li>
+		 <li>Sommerswerd</li>
+		 <li>Yelmo de Plata</li>
+		 <li>Daga de Vashna</li>
+		 <li>Brazaletes de Plata</li>
+		 <li>Maza Enjoyada</li>
+		 <li>Arco de Plata de Duadon</li>
+		 <li>Helshezag</li>
+		 <li>Cota de Malla de Kagonita</li>
+		 <li>Vaina de Korlinium</li>
+     </ul>
+
+     <section class="frontmatter-separate" id="discplnz">
+      <meta>
+       <title>Disciplinas de Gran Maestro</title>
+       <link class="prev" idref="gamerulz" />
+       <link class="next" idref="equipmnt" />
+      </meta>
+
+      <footnotes>
+      <footnote id="discplnz-1-foot" idref="discplnz-1">
+       <p>Los bonificadores en Maestría en el Manejo de Armas son reemplazados por los de Gran Maestría en el Manejo de Armas, no son acumulativos (cf. <a href="http://www.projectaon.org/en/ReadersHandbook/NewsletterExcerpts#lwcn28">Lone Wolf Club Newsletter 28</a>).</p>
+       <p>Si has completado aventuras anteriores, posees la Disciplina Magnakai de Maestría en el Manejo del Arco, y has alcanzado el rango de <bookref book="12tmod" section="imprvdsc">Mentor</bookref>, parece que ya deberías poder sumar 5 a los números elegidos en la <a idref="random">Tabla de la Suerte</a> (por ejemplo, la bonificación básica de Maestría en el Manejo del Arco de 3 sumado al bonificador de Mentor de 2 para todas las armas de proyectil). Probablemente, el autor pretendía que el bonificador de Maestría en el Manejo de Armas con el rango de Mentor fuera un <quote>bonificador oculto de lealtad</quote> (cf. <a href="http://www.projectaon.org/en/ReadersHandbook/NewsletterExcerpts#lwcn28">Lone Wolf Club Newsletter 28</a>). A la vista de esto, el bonificador de +2 del rango de Mentor <em>no</em> es, por lo tanto, acumulativo con la Gran maestría en el Manejo de Armas del Arco.</p>
+      </footnote> 
+     </footnotes>
+
+      <data>
+
+       <section class="frontmatter" id="mksumary">
+        <meta>
+         <title>Disciplinas Kai y Magnakai</title>
+        </meta>
+
+        <data>
+        <p>Durante tu distinguido ascenso al rango de Gran Maestro del Kai te has vuelto experto en todas las disciplinas básicas del Kai y del Magnakai. Estas Disciplinas te han proporcionado un formidable arsenal de habilidades naturales que te han ayudado mucho en la lucha contra los agentes y campeones de Naar, rey de la Oscuridad. A continuación tienes un breve resumen de tus habilidades.</p>
+
+        <dl>
+         <dt>Maestría en el Manejo de armas</dt>
+          <dd>Dominio con todo tipo de armas cuerpo a cuerpo y de proyectil. Maestro en el combate sin armas; no sufres pérdida de <typ class="attribute">DESTREZA EN EL COMBATE</typ> cuando luchas desarmado.</dd>
+         <dt>Control Animal</dt>
+          <dd>Te permite comunicarte con la mayoría de animales; control limitado sobre criaturas hostiles. Puedes usar animales del bosque como guías y  bloquear los sentidos del gusto y del olfato de criaturas no inteligentes.</dd>
+         <dt>Medicina</dt>
+          <dd>Te permite restaurar constantemente puntos perdidos de <typ class="attribute">RESISTENCIA</typ> (tuyos y de otros) como resultado de heridas en el combate. Neutralización de tóxicos, venenos, y toxinas. Curación de heridas graves.</dd>
+         <dt>Invisibilidad</dt>
+          <dd>Puedes ocultar el calor y el olor de tu cuerpo; esconderte eficazmente; enmascarar el sonido que haces al moverte; modificar levemente tu apariencia física.</dd>
+         <dt>Arte de Cazar</dt>
+          <dd>Puedes cazar eficazmente en el medio silvestre; agilidad aumentada; visión, oído y olfato intensificados, y visión nocturna.</dd>
+         <dt>Sentido de la Orientación</dt>
+          <dd>Puedes leer lenguas, descifrar símbolos, seguir huellas y rastros. Conocimiento intuitivo de los puntos cardinales; detección de emboscadas enemigas a una distancia de hasta 450 metros; habilidad para cruzar el terreno sin dejar huellas; hablar con criaturas inteligentes; ocultarte de hechizos psíquicos de detección.</dd>
+         <dt>Acometida Psíquica</dt>
+          <dd>Puedes atacar a los enemigos usando los poderes de la mente; provocar vibraciones disruptivas en los objetos; confundir a los enemigos.</dd>
+         <dt>Pantalla Psíquica</dt>
+          <dd>Proporciona defensa contra la hipnosis, ilusiones sobrenaturales, encantamientos, telepatía hostil, y espíritus malignos. Habilidad para desviar y canalizar energía psíquica hostil.</dd>
+         <dt>Concentración</dt>
+          <dd>Puedes mover pequeños objetos con el poder de la mente; soportar condiciones extremas de temperatura; apagar fuego con tu fuerza de voluntad; inmunidad limitada a las llamas, gases tóxicos y líquidos corrosivos.</dd>
+         <dt>Adivinación</dt>
+          <dd>Tienes la capacidad de presentir un peligro inminente; detectar enemigos invisibles u ocultos; comunicarte telepáticamente; identificar usuarios de magia y/o criaturas mágicas; detectar residuos psíquicos; abandonar el cuerpo y realizar viajes astrales.</dd>
+        </dl>
+       </data>
+      </section>
+
+      <p>Ahora, a través de la búsqueda de las nuevas habilidades y del perfeccionamiento de tus tus destrezas Kai innatas, has establecido un camino de descubrimiento que ningún otro Gran Maestro Kai ha intentado con éxito. Tu determinación de convertirte en el primer Maestro Supremo del Kai, adquiriendo la maestría total en las doce Disciplinas de Gran Maestro, es un reto asombroso. Te adentrarás en lo desconocido, haciendo retroceder las fronteras de la limitación humana en la búsqueda de la grandeza y por la causa del Bien. Que las bendiciones de los Dioses Kai e Ishir sean contigo ahora que comienzas tu valiente y noble búsqueda.</p>
+      <p>En los años que siguieron a la desaparición de los Señores Oscuros alcanzaste el rango de Gran Defensor del Kai, lo que significa que has dominado <em>cuatro</em> de las disciplinas de Gran Maestro que se enumeran a continuación. De ti depende la elección de estas cuatro Disciplinas. Todas las Disciplinas de Gran Maestro pueden ser de utilidad en algún punto de tu aventura, así que elígelas con cuidado. La correcta aplicación de una Disciplina de Gran Maestro en el momento adecuado puede salvarte la vida.</p>
+      <p>Cuando hayas escogido tus cuatro Disciplinas, anótalas en los recuadros correspondientes de tu <a idref="action">Carta de Acción</a>.</p>
+
+      <section class="frontmatter" id="wpnmstry">
+       <meta><title>Gran Maestría en el Manejo de Armas</title></meta>
+       <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="wpnmast.png" width="386" height="54"  mime-type="image/png"/>
+          <instance class="html-compatible" src="wpnmast.gif" width="386" height="54"  mime-type="image/gif"/>
+          <instance class="pdf" src="wpnmast.pdf" width="386" height="54" />
+         </illustration>
+
+        <p>Esta Disciplina permite al Gran Maestro volverse sumamente eficiente en el uso de todas las armas. Cuando entres en combate armado con una de las armas afectadas por esta Disciplina, suma 5 a tu <typ class="attribute">DESTREZA EN EL COMBATE</typ>. El rango de Gran defensor del Kai, con el que empiezas la serie de <cite>Lobo Solitario: Gran Maestro</cite>, significa que eres extraordinariamente diestro en el uso de <em>dos</em> de las armas listadas a continuación. Por cada libro que completes de la serie <cite>Lobo Solitario: Gran Maestro</cite> (libros 13<ch.endash/>20), ganarás la maestría en un arma adicional. Por ejemplo, si completas <cite>Los Señores de la Plaga de Ruel</cite> y tienes la Disciplina de Gran Maestría en el Manejo de Armas al principio del siguiente libro de <cite>Lobo Solitario: Gran Maestro</cite>, podrás elegir un Arma adicional en la que ganar la maestría.</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="weapons.png" width="386" height="310"  mime-type="image/png"/>
+          <instance class="html-compatible" src="weapons.gif" width="386" height="310"/>
+          <instance class="pdf" src="weapons.pdf" width="386" height="310"/>
+          <instance class="text" src="none" width="none" height="none" >
+           <ul class="unbulleted">
+            <li>Lanza</li>
+            <li>Daga</li>
+            <li>Maza</li>
+            <li>Espada Corta</li>
+            <li>Martillo de Guerra</li>
+            <li>Arco</li>
+            <li>Estaca</li>
+            <li>Espadón</li>
+            <li>Hacha</li>
+            <li>Espada</li>
+           </ul>
+
+          </instance>
+         </illustration>
+         <p>Si posees la Disciplina de Gran Maestría con Arco, puedes sumar 5 a cualquier número que elijas de la <a idref="random">Tabla de la Suerte</a>, cuando uses un Arco.<footref id="discplnz-1" idref="discplnz-1-foot"/></p>
+       </data>
+      </section>
+
+      <section class="frontmatter" id="anmlmstr">
+       <meta><title>Maestría Animal</title></meta>
+       <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="anmlmast.png" width="386" height="53"  mime-type="image/png"/>
+          <instance class="html-compatible" src="anmlmast.gif" width="386" height="53"  mime-type="image/gif"/>
+          <instance class="pdf" src="anmlmast.pdf" width="386" height="53" />
+         </illustration>
+
+        <p>Los Grandes Maestros ejercen un considerable control sobre criaturas hostiles no inteligentes. También tienen la habilidad de hablar con pájaros y peces, y de usarlos como guías.</p>
+       </data>
+      </section>
+
+      <section class="frontmatter" id="deliver">
+       <meta><title>Sanación (Medicina Avanzada)</title></meta>
+       <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="delvrance.png" width="386" height="53"  mime-type="image/png"/>
+          <instance class="html-compatible" src="delvrance.gif" width="386" height="53"  mime-type="image/gif"/>
+          <instance class="pdf" src="delvrance.pdf" width="386" height="53" />
+         </illustration>
+
+        <p>Los Grandes Maestros son capaces de usar sus poderes sanadores para curar graves heridas de batalla. Si, durante un combate, su <typ class="attribute">RESISTENCIA</typ> se reduce a 8 puntos o menos, pueden recurrir a esta maestría para restaurar 20 puntos de <typ class="attribute">RESISTENCIA</typ>. Esta habilidad sólo puede usarse una vez cada 20 días.</p>
+       </data>
+      </section>
+
+      <section class="frontmatter" id="assimila">
+       <meta><title>Mimetismo (Invisibilidad Avanzada)</title></meta>
+       <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="assmlnce.png" width="386" height="53"  mime-type="image/png"/>
+          <instance class="html-compatible" src="assmlnce.gif" width="386" height="53"  mime-type="image/gif"/>
+          <instance class="pdf" src="assmlnce.pdf" width="386" height="53" />
+         </illustration>
+
+        <p>Los Grandes Maestros son capaces de efectuar cambios sorprendentes en su apariencia física, y mantener esos cambios durante algunos días. También han dominado técnicas de camuflaje avanzadas que los hacen virtualmente indetectables en campo abierto.</p>
+       </data>
+      </section>
+
+      <section class="frontmatter" id="hntmstry">
+       <meta><title>Maestría en Caza</title></meta>
+       <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="huntmstr.png" width="386" height="54"  mime-type="image/png"/>
+          <instance class="html-compatible" src="huntmstr.gif" width="386" height="54"  mime-type="image/gif"/>
+          <instance class="pdf" src="huntmstr.pdf" width="386" height="54" />
+         </illustration>
+
+        <p>Los Grandes maestros son capaces de ver en total oscuridad y han aumentado en gran medida sus sentidos del tacto y del gusto. Si has elegido la Disciplina de Maestría en Caza como una de tus habilidades, no tendrás que tomar una Comida cuando el texto lo indique.</p>
+       </data>
+      </section>
+
+      <section class="frontmatter" id="pthmnshp">
+       <meta><title>Intuición</title></meta>
+       <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="pathsmn.png" width="386" height="53"  mime-type="image/png"/>
+          <instance class="html-compatible" src="pathsmn.gif" width="386" height="53"  mime-type="image/gif"/>
+          <instance class="pdf" src="pathsmn.pdf" width="386" height="53" />
+         </illustration>
+
+        <p>Los Grandes Maestros pueden evitar ser atrapados por plantas hostiles y son capaces de detectar emboscadas, o la amenaza de emboscada, en selvas y bosques densos.</p>
+       </data>
+      </section>
+
+      <section class="frontmatter" id="kaisurge">
+       <meta><title>Embestida Psíquica</title></meta>
+       <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="ksurge.png" width="386" height="53"  mime-type="image/png"/>
+          <instance class="html-compatible" src="ksurge.gif" width="386" height="53"  mime-type="image/gif"/>
+          <instance class="pdf" src="ksurge.pdf" width="386" height="53" />
+         </illustration>
+
+        <p>Cuando usan sus habilidades psíquicas para atacar a un enemigo, los Grandes Maestros pueden sumar 8 puntos a su <typ class="attribute">DESTREZA EN EL COMBATE</typ>. Por cada asalto en que la embestida psíquica es usada, Los Grandes Maestros solo deben reducir 1 punto de <typ class="attribute">RESISTENCIA</typ>. Cuando usan un ataque psíquico más débil<ch.emdash/>Ataque Psíquico<ch.emdash/>pueden sumar 4 puntos sin pérdida de puntos de <typ class="attribute">RESISTENCIA</typ>. (Embestida Psíquica, Acometida Psíquica y Ataque Psíquico no pueden usarse simultáneamente.)</p>
+        <p>Los Grandes Maestros no pueden usar Embestida Psíquica si su <typ class="attribute">RESISTENCIA</typ> cae a 6 puntos o menos.</p>
+       </data>
+      </section>
+
+      <section class="frontmatter" id="kaiscrn">
+       <meta><title>Muro psíquico</title></meta>
+       <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="kscreen.png" width="386" height="53"  mime-type="image/png"/>
+          <instance class="html-compatible" src="kscreen.gif" width="386" height="53"  mime-type="image/gif"/>
+          <instance class="pdf" src="kscreen.pdf" width="386" height="53" />
+         </illustration>
+
+        <p>En combate psíquico, los Grandes Maestros son capaces de construir fortalezas mentales que pueden protegerlos a ellos o a otros. La fuerza y la capacidad de estas fortalezas se incrementa a medida que los Grandes Maestros aumentan de rango.</p>
+       </data>
+      </section>
+
+      <section class="frontmatter" id="nexus">
+       <meta><title>Psicoquinesia</title></meta>
+       <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="nexus.png" width="386" height="54"  mime-type="image/png"/>
+          <instance class="html-compatible" src="nexus.gif" width="386" height="54"  mime-type="image/gif"/>
+          <instance class="pdf" src="nexus.pdf" width="386" height="54" />
+         </illustration>
+
+        <p>Los Grandes Maestros son capaces de resistir en contacto con elementos peligrosos, tales como llamas y ácidos, durante más de una hora. Esta habilidad mejora conforme el Gran Maestro aumenta su rango.</p>
+       </data>
+      </section>
+
+      <section class="frontmatter" id="gnosis">
+       <meta><title>Conocimiento Supremo (Adivinación Avanzada)</title></meta>
+       <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="telegnss.png" width="386" height="54"  mime-type="image/png"/>
+          <instance class="html-compatible" src="telegnss.gif" width="386" height="54"  mime-type="image/gif"/>
+          <instance class="pdf" src="telegnss.pdf" width="386" height="54" />
+         </illustration>
+
+        <p>Esta Disciplina permite al Gran Maestro realizar viajes astrales durante periodos de tiempo mucho mayores, y con menores efectos perjudiciales. La duración y la protección de su cuerpo inanimado se incrementan a medida que el Gran Maestro aumenta su rango.</p>
+       </data>
+      </section>
+
+      <section class="frontmatter" id="magi">
+       <meta><title>Magia-Magi</title></meta>
+       <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="magimagc.png" width="386" height="54"  mime-type="image/png"/>
+          <instance class="html-compatible" src="magimagc.gif" width="386" height="54"  mime-type="image/gif"/>
+          <instance class="pdf" src="magimagc.pdf" width="386" height="54" />
+         </illustration>
+
+        <p>Bajo la tutela de Lord Rimoah, has sido capaz de dominar las habilidades rudimentarias de la magia de batalla, tal como se les enseña a los Vakeros<ch.emdash/>los guerreros nativos de Dessi. Estas habilidades incluyen el uso básico de Hechizos del Antiguo Reino como <spell>Escudo</spell>, <spell>Palabra de Poder</spell>, y <spell>Puño invisible</spell>. A medida que incrementes tu rango, también lo hará tu conocimiento y maestría en la magia del Antiguo Reino.</p>
+       </data>
+      </section>
+
+      <section class="frontmatter" id="alchemy">
+       <meta><title>Alquimia del Kai</title></meta>
+       <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="alchemy.png" width="386" height="54"  mime-type="image/png"/>
+          <instance class="html-compatible" src="alchemy.gif" width="386" height="54"  mime-type="image/gif"/>
+          <instance class="pdf" src="alchemy.pdf" width="386" height="54" />
+         </illustration>
+
+        <p>Bajo la tutela del Maestre Banedon, has dominado los hechizos elementales de la magia de la Mano Izquierda, tal como la practica la Hermandad de la Estrella de Cristal. Estos hechizos incluyen <spell>Mano Relampagueante</spell>, <spell>Levitación</spell>, y <spell>Encanto Mental</spell>. Cuando aumentes tu rango, también lo hará tu conocimiento y dominio de la magia de la Mano Izquierda, permitiéndote crear nuevas armas y artefactos del Kai.</p>
+       </data>
+      </section>
+
+       <p>Si completas con éxito la misión que se te plantea en el libro 16 de la serie <cite>Lobo Solitario: Gran Maestro</cite> podrás añadir otra Disciplina de Gran Maestro de tu elección en tu <a idref="action">Carta de Acción</a> en el <bookref series="ls" book="17lsdi">libro 17</bookref></p>
+
+      <p>Por cada Disciplina de Gran Maestro que poseas, por encima de las cuatro disciplinas con las que empiezas, podrás sumar 1 punto a tu <typ class="attribute">DESTREZA EN EL COMBATE</typ> inicial y 2 puntos a tu <typ class="attribute">RESISTENCIA</typ> inicial. Estos puntos de bonificación, junto con tus Disciplinas de Gran Maestro adicionales, tus cuatro Disciplinas de Gran Maestro iniciales, y cualquier Objeto Especial que hayas encontrado y puedas conservar durante tu aventura, podrán ser conservados y usados en la siguiente aventura de <cite>Lobo Solitario: Gran Maestro</cite>, llamada <bookref series="ls" book="15lcdd"><cite>La Cruzada de Darke</cite></bookref>.</p>
+      </data>
+     </section>
+
+     <section class="frontmatter-separate" id="equipmnt">
+      <meta>
+       <title>Equipo</title>
+       <link class="prev" idref="discplnz"/>
+       <link class="next" idref="cmbtrulz"/>
+      </meta>
+
+      <data>
+       <p>Antes de comenzar tu largo viaje a Magador, te llevas un <a idref="map">mapa de la Garganta de Maaken y los territorios de alrededor</a>, y una bolsa con oro. Para averiguar cuántas Coronas de Oro llevas en la bolsa, elige al azar un número de la <a idref="random">Tabla de la Suerte</a> y suma 20 al número que hayas obtenido. El resultado te indica la cantidad de Coronas de Oro que contiene la bolsa, y debes anotarlo en la sección <quote>Coronas de Oro</quote> de tu <a idref="action">Carta de Acción</a>.</p>
+       <p>Si has completado con éxito alguna de las aventuras anteriores de <cite>Lobo Solitario</cite> (libros 1<ch.endash/>13), puedes añadir esta cantidad al total de Coronas de Oro que ya posees. Sólo puedes llevar 50 Coronas de Oro como máximo, pero el resto puedes dejarlas guardadas en monasterio del Kai.</p>
+      <p>Puedes escoger cuatro de los siguientes objetos, además de los que ya tengas de aventuras anteriores (recuerda que el límite de Armas es de dos, pero que ahora puedes llevar un máximo de diez Objetos de la Mochila).</p>
+       <ul class="paragraphed">
+       <li><p>Espada (Armas)</p>
+        <illustration class="inline">
+         <meta>
+          <creator>Brian Williams</creator>
+         </meta>
+         <instance class="html" src="sword.png" width="386" height="69"  mime-type="image/png"/>
+         <instance class="html-compatible" src="sword.gif" width="386" height="69"  mime-type="image/gif"/>
+         <instance class="pdf" src="sword.pdf" width="386" height="69"/>
+        </illustration>
+       </li>
+       <li><p>Arco (Armas)</p>
+        <illustration class="inline">
+         <meta>
+          <creator>Brian Williams</creator>
+         </meta>
+         <instance class="html" src="bow.png" width="386" height="64"  mime-type="image/png"/>
+         <instance class="html-compatible" src="bow.gif" width="386" height="64"  mime-type="image/gif"/>
+         <instance class="pdf" src="bow.pdf" width="386" height="64"/>
+        </illustration>
+       </li>
+       <li>
+        <p>Carcaj (Objeto Especial) Contiene seis Flechas: anótalas en tu <a idref="action">Carta de Acción</a>.</p>
+        <illustration class="inline">
+         <meta>
+          <creator>Brian Williams</creator>
+         </meta>
+         <instance class="html" src="quiver.png" width="386" height="127"  mime-type="image/png"/>
+         <instance class="html-compatible" src="quiver.gif" width="386" height="127"  mime-type="image/gif"/>
+         <instance class="pdf" src="quiver.pdf" width="386" height="127" />
+        </illustration>
+       </li>
+       <li><p>Hacha (Armas)</p>
+        <illustration class="inline">
+         <meta>
+          <creator>Brian Williams</creator>
+         </meta>
+         <instance class="html" src="axe.png" width="386" height="112"  mime-type="image/png"/>
+         <instance class="html-compatible" src="axe.gif" width="386" height="112"  mime-type="image/gif"/>
+         <instance class="pdf" src="axe.pdf" width="386" height="112"/>
+        </illustration>
+       </li>
+       <li>
+        <p>2 Raciones (Comidas) Cada una de ellas ocupa el espacio de un objeto de la Mochila.</p>
+        <illustration class="inline">
+         <meta>
+          <creator>Brian Williams</creator>
+         </meta>
+          <instance class="html" src="food.png" width="386" height="150"  mime-type="image/png"/>
+          <instance class="html-compatible" src="food.gif" width="386" height="150"  mime-type="image/gif"/>
+          <instance class="pdf" src="food.pdf" width="386" height="150" />
+        </illustration>
+       </li>
+       <li>
+        <p>Cuerda (Objetos de la Mochila)</p>
+        <illustration class="inline">
+         <meta>
+          <creator>Brian Williams</creator>
+         </meta>
+         <instance class="html" src="rope.png" width="386" height="109"  mime-type="image/png"/>
+         <instance class="html-compatible" src="rope.gif" width="386" height="109"  mime-type="image/gif"/>
+         <instance class="pdf" src="rope.pdf" width="386" height="109" />
+        </illustration>
+       </li>
+       <li>
+        <p>Poción de Laumspur (Objetos de la Mochila) Esta poción te hace recuperar 4 puntos de <typ class="attribute">RESISTENCIA</typ> si la bebes después de un combate. Sólo hay cantidad suficiente para una dosis.</p>
+        <illustration class="inline">
+         <meta>
+          <creator>Brian Williams</creator>
+         </meta>
+         <instance class="html" src="potion.png" width="386" height="167"  mime-type="image/png"/>
+         <instance class="html-compatible" src="potion.gif" width="386" height="167"  mime-type="image/gif"/>
+         <instance class="pdf" src="potion.pdf" width="386" height="167" />
+        </illustration>
+       </li>
+       <li>
+          <p>Estaca (Weapons)</p>
+          <illustration class="inline">
+           <meta>
+            <creator>Brian Williams</creator>
+           </meta>
+           <instance class="html" src="qurtstff.png" width="386" height="45"  mime-type="image/png"/>
+           <instance class="html-compatible" src="qurtstff.gif" width="386" height="45"  mime-type="image/gif"/>
+           <instance class="pdf" src="qurtstff.pdf" width="386" height="45" />
+        </illustration>
+       </li>
+       <li>
+        <p>Daga (Armas)</p>
+        <illustration class="inline">
+         <meta>
+          <creator>Brian Williams</creator>
+         </meta>
+         <instance class="html" src="dagger.png" width="386" height="150"  mime-type="image/png"/>
+         <instance class="html-compatible" src="dagger.gif" width="386" height="150"  mime-type="image/gif"/>
+         <instance class="pdf" src="dagger.pdf" width="386" height="150" />
+        </illustration>
+       </li>
+      </ul>
+
+      <p>Apunta los cuatro objetos elegidos en tu <a idref="action">Carta de Acción</a>, cada uno en la casilla correspondiente, y anota también los efectos que cada uno de ellos puede tener sobre tus puntos de <typ class="attribute">RESISTENCIA</typ> o tu <typ class="attribute">DESTREZA EN EL COMBATE</typ>.</p>
+
+      <section class="frontmatter" id="howuse">
+       <meta>
+        <title>Cómo utilizar tu equipo</title>
+       </meta>
+
+       <data>
+        <dl class="paragraphed">
+         <dt>Armas</dt>
+          <dd><p>El número máximo de Armas que puedes llevar es de dos. Las armas te ayudan en el combate. Si tienes la Disciplina del Kai de Dominio en el Manejo de Armas y el arma adecuada, sumarás 5 puntos a tu <typ class="attribute">DESTREZA EN EL COMBATE</typ>. Si durante tu aventura encuentras un Arma, puedes apoderarte de ella y usarla. Sólo puedes usar un Arma al mismo tiempo en combate.</p></dd>
+         <dt>Arcos y Flechas</dt>
+          <dd>
+           <p>A lo largo de la aventura tendrás ocasión de utilizar Arco y Flechas. Si estás equipado con esta arma, y tienes al menos una Flecha, podrás usarlo cuando el texto de una determinada sección te lo indique. El Arco es un arma muy útil, pues con ella puedes herir a distancia a un enemigo. Sin embargo, no puede usarse en los combates cuerpo a cuerpo; por eso es muy aconsejable que te proveas también de un arma adecuada para ese tipo de combates, como por ejemplo una Espada o un Hacha.</p>
+           <p>Para poder utilizar un Arco debes tener un Carcaj y al menos una Flecha. Cada vez que uses el Arco, borra una Flecha de tu <a idref="action">Carta de Acción</a>. Un Arco no puede usarse, obviamente, si has agotado todas tus Flechas, pero durante tu aventura pueden surgir oportunidades para que repongas tus Flechas.</p>
+          </dd>
+         <dt>Objetos de la Mochila</dt>
+          <dd><p>Deben ser almacenados en tu Mochila. Debido a que el espacio es limitado sólo puedes guardar un máximo de diez artículos, incluídas las Comidas, simultáneamente en tu Mochila. Durante tu viaje descubrirás diversos objetos útiles que puedes querer conservar. Puedes cambiarlos o desecharlos en cualquier momento en que no estés en combate.</p></dd>
+         <dt>Objetos Especiales</dt>
+          <dd>
+           <p>Los Objetos Especiales no se llevan en la Mochila. Cuando encuentres un Objeto Especial, se te dirá cómo o dónde tienes que llevarlo. El número máximo de Objetos Especiales que puedes llevar en una aventura es doce.</p>
+          </dd>
+         <dt>Coronas de Oro</dt>
+         <dd>
+           <p>La moneda de Magador es la Corona de Oro. Se llevan siempre en la bolsa, que no puede contener más de 50 Coronas.</p>
+         </dd>
+         <dt>Comida</dt>
+          <dd><p>La Comida se lleva en la Mochila. Cada Comida cuenta como un objeto. necesitarás comer regularmente durante tu aventura. Si no tienes comida cuando se te indique comer, perderás 3 puntos de <typ class="attribute">RESISTENCIA</typ>. Si has elegido Maestría en Caza como una de tus habilidades, no tendrás que borrar una Comida cuando se te indique comer.</p></dd>
+         <dt>Poción de Laumspur</dt>
+          <dd><p>Se trata de un poción curativa que puede devolverte 4 puntos de <typ class="attribute">RESISTENCIA</typ> cuando la tomes después de un combate. Sólo hay suficiente para una dosis. Si encuentras cualquier otra poción durante la aventura, se te indicará cuál es su efecto. Todas las pociones son Objetos de la Mochila.</p></dd>
+        </dl>
+       </data>
+      </section>
+     </data>
+    </section>
+
+    <section class="frontmatter-separate" id="cmbtrulz">
+     <meta>
+      <title>Reglas para los Combates</title>
+      <link class="prev" idref="equipmnt" />
+      <link class="next" idref="levels" />
+     </meta>
+
+     <data>
+      <p>Habrá ocasiones durante tu aventura en que tendrás que luchar con algún enemigo. La <typ class="attribute">DESTREZA EN EL COMBATE</typ> y los puntos de <typ class="attribute">RESISTENCIA</typ> del enemigo vienen indicados en el texto. El objetivo de Lobo Solitario en el combate es matar al enemigo reduciendo sus puntos de <typ class="attribute">RESISTENCIA</typ> a cero mientras él mismo pierde el menor número de puntos de <typ class="attribute">RESISTENCIA</typ> posible.</p>
+      <p>Al comienzo del combate, anota los puntos de RESISTENCIA de Lobo Solitario y de su enemigo en las casillas correspondientes al Registro de Combate en la <a idref="action">Carta de Acción</a>. La secuencia de un combate es la siguiente:</p>
+      <ol class="paragraphed">
+       <li><p>Suma los puntos que hayas ganado gracias a tus Disciplinas de Gran Maestro y a los Objetos Especiales a tu <typ class="attribute">DESTREZA EN EL COMBATE</typ> actual.</p></li>
+       <li>
+        <p>Resta la <typ class="attribute">DESTREZA EN EL COMBATE</typ> de tu enemigo a la suma de tus puntos. El resultado es tu Índice de Combate. Anótalo en la <a idref="action">Carta de Acción</a>.</p>
+        <p>Ejemplo</p>
+        <p>Lobo Solitario (<typ class="attribute">DESTREZA EN EL COMBATE</typ> 27) es atacado por una manada de Lobos Fatídicos (<typ class="attribute">DESTREZA EN EL COMBATE</typ> 30). Ha sido tomado por sorpresa y no tiene la posibilidad de evadir su ataque. Lobo Solitario tiene la Disciplina de Gran Maestro de Embestida Psíquica a la que los Lobos Fatídicos no son inmunes, así que Lobo Solitario suma 8 puntos a su <typ class="attribute">DESTREZA EN EL COMBATE</typ>, otorgándole un total de 35 puntos de <typ class="attribute">DESTREZA EN EL COMBATE</typ>.</p>
+        <p>Resta la<ch.apos/>s <typ class="attribute">DESTREZA EN EL COMBATE</typ> de los Lobos Fatídicos a la suya, obteniendo un Índice de Combate de +5. (35-30 = +5). +5 se anota en la <a idref="action">Carta de Acción</a> como Índice de Combate.</p>
+       </li>
+       <li><p><a id="stage3">Cuando tengas tu Índice de Combate</a>, elige un número de la <a idref="random">Tabla de la Suerte</a>.</p></li>
+       <li>
+        <p>Consulta la <a idref="crtable">Tabla de Resultados de los Combates</a>. A lo largo de la parte superior del gráfico se muestran los números de Índice de Combate. Encuentra el número que corresponde a tu Índice de Combate y crúzalo con el número aleatorio que has ha escogido (el número aleatorio aparece en el lado de la tabla). Has obtenido el número de puntos de <typ class="attribute">RESISTENCIA</typ> perdidos por Lobo Solitario y su enemigo en este asalto del combate. (E representa los puntos perdidos por el enemigo; LS representa los puntos perdidos por Lobo Solitario.)</p>
+        <p>Ejemplo</p>
+        <p>El Índice de Combate entre Lobo Solitario y la Manada de Lobos Fatídicos ha quedado fijada en +5. Si le número elegido de la <a idref="random">Tabla de la Suerte</a> es un 2, entonces el resultado del primer asalto del combate es:</p>
+        <ul>
+         <li>Lobo Solitario pierde 3 puntos de <typ class="attribute">RESISTENCIA</typ> (más un puntos adicional por usar Embestida Psíquica).</li>
+         <li>Manada de Lobos Fatídicos pierde 7 puntos de <typ class="attribute">RESISTENCIA</typ>.</li>
+        </ul>
+       </li>
+
+       <li><p>Anota en la <a idref="action">Carta de Acción</a> los cambios en los puntos de <typ class="attribute">RESISTENCIA</typ> de los participantes en el combate.</p></li>
+
+       <li><p>A no ser que se te den otras instrucciones o que tengas la opción de eludir el combate, ahora comienza el próximo asalto.</p></li>
+
+       <li><p>Repite la secuencia desde el <a idref="stage3">Apartado 3</a>.</p></li>
+      </ol>
+
+      <p>Este proceso de combates continúa hasta que los puntos de <typ class="attribute">RESISTENCIA</typ> del enemigo o de Lobo Solitario queden reducidos a cero puntos o por debajo, y en este punto ese combatiente es declarado muerto. Si el muerto es Lobo Solitario, la aventura habrá terminado. Si el muerto es el enemigo, Lobo Solitario continúa la aventura, pero con sus puntos de <typ class="attribute">RESISTENCIA</typ> disminuidos.</p>
+      <p>A <a idref="crsumary">Un sumario de las Reglas de Combate</a> se encuentra al final de este libro.</p>
+
+      <section class="frontmatter" id="evasion">
+       <meta><title>Eludir el combate</title></meta>
+
+       <data>
+        <p>Durante la aventura se te dará a veces la oportunidad de eludir el combate. Si ya has comenzado un asalto y decides rehuirlo, calcula el resultado de la forma habitual. Todos los puntos perdidos por el enemigo en este asalto se ignoran, y tú escapas. Sólo Lobo Solitario puede perder puntos de <typ class="attribute">RESISTENCIA</typ> durante este asalto (¡éste es el riesgo de huir!). Sólo podrás huir si te lo permite el texto de la sección correspondiente.</p>
+       </data>
+      </section>
+     </data>
+    </section>
+
+    <section class="frontmatter-separate" id="levels">
+     <meta>
+      <title>Niveles de Gran Maestría del Kai</title>
+      <link class="prev" idref="cmbtrulz" />
+      <link class="next" idref="imprvdsc" />
+     </meta>
+     <data>
+
+      <p>La siguiente tabla es una guía de los rangos y títulos que puedes conseguir en cada etapa de tu viaje a lo largo del camino de la Gran Maestría del Kai. Al completar con éxito cada aventura de la serie <cite>Lobo Solitario: Gran Maestro</cite>, obtendrás una Disciplina de Gran Maestro adicional y avanzarás hacia la cumbre de la perfección Kai para convertirte en Maestro Supremo del Kai.</p>
+
+      <ol>
+       <li>Gran Maestro Senior del Kai</li>
+       <li>Gran Maestro Superior del Kai</li>
+       <li>Gran Centinela del Kai</li>
+       <li>Gran Defensor del Kai<ch.emdash/><em>Comienzas las aventuras de <cite>Lobo Solitario: Gran Maestro</cite> con este nivel de Maestría</em></li>
+       <li>Gran Guardián del Kai</li>
+       <li>Caballero del Sol</li>
+       <li>Señor del Sol</li>
+       <li>Thane Solar</li>
+       <li>Gran Thane</li>
+       <li>Gran Corona</li>
+       <li>Príncipe del Sol</li>
+       <li>Maestro Supremo del Kai</li>
+      </ol>
+     </data>
+    </section>
+
+     <section class="frontmatter-separate" id="imprvdsc">
+      <meta>
+       <title>Disciplinas de Gran Maestro Mejoradas</title>
+       <link class="prev" idref="levels" />
+       <link class="next" idref="kaiwisdm" />
+      </meta>
+
+      <data>
+      <p>A medida que asciendas a niveles superiores de la Gran Maestría del Kai, descubrirás que tus Disciplinas mejoran constantemente. Por ejemplo, si posees la Disciplina de Psicoquinesia cuando alcances el rango de Gran Thane, serás capaz de atravesar libremente a través de Puertas de la Sombra y de explorar los reinos inferiores de Aon y del Plano Daziarn.</p>
+       <section class="frontmatter" id="guardian">
+        <meta><title>Gran Guardián del Kai</title></meta>
+        <data>
+         <p>Si eres un Gran Maestro que ha alcanzado el rango de Gran Guardián del Kai (5 Disciplinas), te podrás beneficiar de mejoras en las siguientes Disciplinas de Gran Maestro:</p>
+         <dl class="paragraphed">
+          <dt>Maestría Animal</dt>
+           <dd><p>Los Grandes Guardianes del Kai con esta Disciplina son capaces de convocar a su lado a un número limitado de animales del bosque. Las criaturas convocadas serán aliados leales y complacientes, dispuestos a hacer la voluntad del Gran Guardián del Kai. Esta capacidad sólo se puede utilizar en un entorno al aire libre.</p></dd>
+          <dt>Mimetismo</dt>
+           <dd><p>Los Grandes Guardianes del Kai que poseen esta Disciplina son capaces de crear un banco de niebla como el vapor en un radio de 15 metros a su alrededor. Esta niebla obstaculizará tanto la visión normal como infrarroja. La duración de la niebla aumenta a medida que el Gran Maestro aumenta de rango.</p></dd>
+          <dt>Maestría en Caza</dt>
+           <dd><p>Los Grandes Guardianes del Kai con esta habilidad disfrutan de movilidad mejorada cuando viajan a través de todo tipo de terrenos, tanto a pie como a caballo. Este aumento de la habilidad es muy útil cuando se trata de dejar atrás a un enemigo en plena persecución.</p></dd>
+          <dt>Embestida Psíquica</dt>
+           <dd><p>Los Grandes Guardianes del Kai que poseen la maestría en esta Disciplina son capaces de atacar hasta a tres enemigos en combate psíquico simultáneamente.</p></dd>
+          <dt>Muro Psíquico</dt>
+           <dd><p>Los Grandes Guardianes del Kai que poseen esta Disciplina son capaces de emplear una defensa psíquica denominada Mimetismo Mental. Esta capacidad de camuflaje les permite proteger y ocultar sus mentes para que no puedan ser detectados por una sonda psíquica hostil.</p></dd>
+          <dt>Magia-Magi</dt>
+           <dd>
+            <p>Los Grandes Maestros que han alcanzado el rango de Gran Guardián del Kai son capaces de usar los siguientes hechizos de batalla de los Ancianos Magos:</p>
+            <ul>
+             <li><spell>Astilla</spell><ch.emdash/>Hace que ciertos objetos frágiles tales como botellas, jarras, espejos, ventanas, etc., se rompan en pedazos. El alcance de este hechizo aumenta a medida que un Gran Maestro incrementa su rango.</li>
+             <li><spell>Punta flamígera</spell><ch.emdash/>Hace que la punta de una flecha, u otro proyectil similar a una flecha, arda ferozmente con una llama mágica que no puede ser extinguida fácilmente por los medios normales.</li>
+            </ul>
+           </dd>
+         </dl>
+        </data>
+       </section>
+       <p>La naturaleza de estas mejoras adicionales y cómo afectan a tus Disciplinas de Gran Maestro se indicarán en la sección de Disciplinas de Gran Maestro Mejoradas de los próximos libros de <cite>Lobo Solitario</cite>.</p>
+      </data>
+     </section>
+
+    </data>
+   </section>
+
+   <section class="frontmatter" id="kaiwisdm">
+    <meta>
+     <title>La Sabiduría del Gran Maestro</title>
+     <link class="prev" idref="imprvdsc" />
+     <link class="next" idref="sect1" />
+    </meta>
+
+    <data>
+     <p>El norte de Magador, cuyas fronteras bordean el Precipicio de Maakern, es una región especialmente salvaje y traicionera. Ten cuidado y mantente en guardia en todo momento, pues poca ayuda puedes esperar de los forajidos y las criaturas salvajes que medran en este lugar.</p>
+     <p>Algunos de los objetos que encontrarás durante tu misión te serán de utilidad en este y en futuros libros de “Lobo Solitario”, mientras que otros podrían ser sólo pistas falsas y carecer de auténtico valor. SI descubres varios objetos, escoge con cuidado los que decidas conservar.<p>
+    <p>Elige con cuidado tus Disciplinas de Gran Maestro, pues una sabia elección permitirá a cualquier jugador completar la misión, por reducidas que sean sus puntuaciones iniciales de <typ class="attribute">DESTREZA EN EL COMBATE</typ> y <typ class="attribute">RESISTENCIA</typ>. Haber completado con éxito aventuras anteriores de <cite>Lobo Solitario</cite>, aunque supone una ventaja, no es esencial para para triunfar en esta aventura de Gran Maestro.</p>
+     <p>Que la luz que Kai e Ishir sea tu guía mientras te aventuras en lo desconocido.</p>
+     <p>¡Por Sommerlund y por el Kai!</p>
+    </data>
+   </section>
+
+
    <section class="numbered" id="numbered">
     <meta><title>Secciones Numeradas</title></meta>
 
@@ -15,7 +906,7 @@
       <data>
        <p>Pasas las horas anteriores a tu partida del Monasterio del Kai en compañía de tu inteligente consejero, Lord Rimoah. Habiendo hablado largamente de la misión, ahora os ocupáis de los aspectos prácticos de tu largo viaje a Magador. Te da un Pergamino que contiene una invitación escrita del Presidente Kadharian para asistir a su Senado a <quote>discutir sobre el comercio entre Sommerlund y Magador</quote>.<a id="sect1-1" idref="sect1-1-foot" class="footnote" /> Te dará una coartada en caso de que necesites justificar tu viaje. Además, en aras de la discreción, decides que será mejor sustituir tu formal túnica Kai por unos ropajes menos llamativos, así que escoges las ropas sencillas de un artesano<ch.emdash/>pantalones de lana, túnica de cuero y una capa. Así vestido, y ayudado por tu innata habilidad kai de Invisibilidad, te sientes confiado en que serás capaz de viajar por la ruta a Helgor, la capital de Magador, sin atraer una atención excesiva sobre ti ni sobre tu propósito.</p>
        <p>A caballo, el viaje a Helgor podría llevar cinco semanas. Tu primera idea fue escribir a tu amigo, el Maestro Banedon, pidiéndole que te permitiera usar su barco volador mágico, el <cite>Jinete de los Cielos</cite>. Sin embargo, en esta ocasión tendrás que renunciar a la veloz comodidad de su maravilloso velero, pues Banedon está usándolo en una misión en la lejana tierra de Bhanar, al sur de Magnamund, y no se espera su retorno antes de que el año termine.</p>
-       <p>Tu segunda elección también ha resultado ser inviable. Habiéndote resignado a un largo viaje a caballo, inmediatamente mandaste orden a los establos del monasterio para que tu caballo, Storm, fuera ensillado y preparado. Este hermoso semental slovariano fué un regalo del Elector Manatine de Palmyrion, en gratitud por tu crucial aportación en la victoria sobre los malvados Druidas Cener de Ruel. Su fuerza, inteligencia, y espíritu indomable te han recordado tanto a tu antiguo tutor del Kai<ch.emdash/>Storm Hawk<ch.emdash/>que escogiste llamar así a tu caballo en su memoria. Pero, como Rimoah rápidamente señaló, un caballo tan magnífico seguramente atraería sospechas, especialmente si fuera montado por alguien que pareciera ser un humilde artesano. Y así, aunque de mala gana, hiciste que los establos te prepararan otro caballo, una montura fuerte pero mucho menos espléndida llamada Bracer.</p>
+       <p>Tu segunda elección también ha resultado ser inviable. Habiéndote resignado a un largo viaje a caballo, inmediatamente mandaste orden a los establos del monasterio para que tu caballo, Tormenta, fuera ensillado y preparado. Este hermoso semental slovariano fué un regalo del Elector Manatine de Palmyrion, en gratitud por tu crucial aportación en la victoria sobre los malvados Druidas Cener de Ruel. Su fuerza, inteligencia, y espíritu indomable te han recordado tanto a tu antiguo tutor del Kai<ch.emdash/>Halcón de la Tormenta<ch.emdash/>que escogiste llamar así a tu caballo en su memoria. Pero, como Rimoah rápidamente señaló, un caballo tan magnífico seguramente atraería sospechas, especialmente si fuera montado por alguien que pareciera ser un humilde artesano. Y así, aunque de mala gana, hiciste que los establos te prepararan otro caballo, una montura fuerte pero mucho menos espléndida llamada Bracer.</p>
        <choice idref="sect105"><link-text>Pasa al 105</link-text>.</choice>
       </data>
      </section>
@@ -559,7 +1450,7 @@
        <p>El sondeo del Anciano atraviesa tu escudo mental y de repente se da cuenta de que eres un intruso. Coge tu túnica y la abre, revelando tus pantalones y tu túnica de cuero. Reconociéndolas como originarias de Sommerlund, grita de la sorpresa mientras conjetura sobre tu auténtica identidad.</p>
        <p><quote>¡Cogedle!</quote> ruge, y una veintena de acólitos se vuelven y corren a obedecer la orden. Desenvainas tu arma y luchas contra ellos con una habilidad y un valor extraordinarios, pero finalmente eres superado por su número. Para cuando logran desarmarte y sostenerte contra el suelo rocoso, más de treinta de ellos yacen muertos o gravemente heridos en un estrecho círculo a tu alrededor.</p>
        <p>Miras desafiante al anillo de rostros siniestros iluminados por antorchas que se ciernen sobre ti. Entonces la cara del Anciano entra en tu campo de visión y se burla con desdén. Coloca la punta de una varita brillante en tu frente, y de repente hay una explosión de luz blanca. Por desgracia para ti, es la última sensación que jamás experimentarás.</p>
-       <p>Tu vida y tu misión terminan aquí, en el camino al Precipicio de Maaken.</p>
+       <p>Tu vida y tu misión terminan aquí, en el camino a la Garganta de Maaken.</p>
       </data>
      </section>
 
@@ -578,8 +1469,8 @@
       <meta><title>45</title></meta>
 
       <data>
-       <p>Gwynian abre su sobre y extrae un pergamino amarilleado por el tiempo que extiende sobre la mesa de piedra lisa: es un mapa del norte de Magador. Señala el Lago Vorndarol y te dice que el centro de las extrañas tormentas que han barrido esta región se calcula que esté a unas pocas millas de la orilla este del lago, cerca del Precipicio de Maaken. La aldea de Vorn, o lo que queda de ella, está localizada en la orilla sur, cerca de un afluente del Río Storn. Te aconseja que permanezcas en guardia en todo momento y, para ayudarte en tu misión, te da un amuleto de su propiedad.</p>
-       <p><quote>Lleva esto, Gran Maestro,</quote> dice mientras coloca el cordón del disco de platino alrededor de tu cuello. <quote>Te mantendrá a salvo de algunos de los peligros que te aguardan en el Precipicio de Maaken.</quote></p>
+       <p>Gwynian abre su sobre y extrae un pergamino amarilleado por el tiempo que extiende sobre la mesa de piedra lisa: es un mapa del norte de Magador. Señala el Lago Vorndarol y te dice que el centro de las extrañas tormentas que han barrido esta región se calcula que esté a unas pocas millas de la orilla este del lago, cerca de la Garganta de Maaken. La aldea de Vorn, o lo que queda de ella, está localizada en la orilla sur, cerca de un afluente del Río Storn. Te aconseja que permanezcas en guardia en todo momento y, para ayudarte en tu misión, te da un amuleto de su propiedad.</p>
+       <p><quote>Lleva esto, Gran Maestro,</quote> dice mientras coloca el cordón del disco de platino alrededor de tu cuello. <quote>Te mantendrá a salvo de algunos de los peligros que te aguardan en la Garganta de Maaken.</quote></p>
        <p>(Apunta este Amuleto de Platino, que llevarás colgado del cuello, como un Objeto Especial en tu <a idref="action">Carta de Acción</a>. No necesitas descartar otro objeto a cambio si ya estás llevando el máximo de objetos permitidos.)</p>
        <choice idref="sect297"><link-text>Pasa al 297</link-text>.</choice>
       </data>
@@ -632,7 +1523,7 @@
       <meta><title>49</title></meta>
 
       <data>
-       <p>Al mirar mas atentamente descubres que uno de los lados del amuleto está cubierto con un grabado detallado que simboliza una siniestra escena. Retrata el resurgir de una monstruosa criatura de las profundidades de un gran barranco, rodeada por todas partes por una horda de guerreros esqueléticos. Al momento reconoces la representación del Señor Oscuro Vashna y sus esbirros, surgiendo de las profundidades del Precipicio de Maaken.</p>
+       <p>Al mirar mas atentamente descubres que uno de los lados del amuleto está cubierto con un grabado detallado que simboliza una siniestra escena. Retrata el resurgir de una monstruosa criatura de las profundidades de un gran barranco, rodeada por todas partes por una horda de guerreros esqueléticos. Al momento reconoces la representación del Señor Oscuro Vashna y sus esbirros, surgiendo de las profundidades de la Garganta de Maaken.</p>
        <choice idref="sect238"><link-text>Pasa al 238</link-text>.</choice>
       </data>
      </section>
@@ -1220,7 +2111,7 @@
 
       <data>
        <p>Arrojas el disco incandescente lejos, pero rebota en una roca y cae directamente en la zona inferior. Hay un espantoso momento de silencio; entonces toda el área se ilumina con un cegador destello de llamas amarillentas. De repente todo parece ocurrir a cámara lenta. Ves acólitos cayendo de espaldas, gritando, con lenguas de fuego brotando de sus túnicas, y fragmentos de mármol de la parte inferior volando hacia el cielo como meteoritos ardientes. Entonces, el calor y la fuerza de la explosión estalla en tu cara y pecho, mandándote rodando hacia un negro e insensible olvido.</p>
-       <p>Trágicamente, tu vida y tu misión terminan aquí, en el camino al Precipicio de Maaken.</p>
+       <p>Trágicamente, tu vida y tu misión terminan aquí, en el camino a la Garganta de Maaken.</p>
       </data>
      </section>
 
@@ -1276,7 +2167,7 @@
 
       <data>
        <p>Sigues al Presidente dentro de la cámara, con tus pisadas resonando mientras caminas sobre el mosaico de mármol. En el otro extremo de la habitación un enjuto perro-lobo está dormitando frente a una reja de hierro tras la que crepita el fuego en los leños. Las llamas iluminan la cámara con un resplandor cálido, invocando sombras temblorosas sobre los estantes repletos de gruesos rollos de pergamino y papiro. En el centro de la sala hay una gran mesa cubierta de arena. Esta arena ha sido modelada para representar la topografía de Magador, sus pueblos, ciudades, montañas, colinas y ríos. La atención al detalle es muy impresionante.</p>
-       <p><quote>En algún lugar, aquí, me temo que un gran mal está actuando,</quote> dice Kadharian, señalando una sección de la mesa que representa el territorio norte del Lago Vorndarol, un área incómodamente cerca del profundo surco que representa el Precipicio de Maaken.</p>
+       <p><quote>En algún lugar, aquí, me temo que un gran mal está actuando,</quote> dice Kadharian, señalando una sección de la mesa que representa el territorio norte del Lago Vorndarol, un área incómodamente cerca del profundo surco que representa la Garganta de Maaken.</p>
        <p><quote>Hace tres lunas, la aldea costera de Vorn fue destruida por una tormenta antinatural, la primera de muchas que han continuado azotando la región. Despaché una tropa de mis guardias a investigar, pero nunca regresaron. Desde entonces, una segunda tropa también ha desaparecido sin dejar rastro.</quote></p>
        <p><quote>Pero, ¿qué os hace pensar que hay en marcha un plan para resucitar a Vashna?</quote> respondes, intentando no sonar demasiado escéptico. <quote>Con todo respeto, Presidente, ésta es una región notoria por estar infestada de renegados y bandidos. Esa podría ser una explicación más sencilla para la destrucción de Vorn y la desaparición de vuestras tropas.</quote></p>
        <p><quote>Sí, así es,</quote> replica Kadharian. <quote>Al principio, yo también llegué a la misma conclusión. Pero entonces cayó en mi poder algo que me hizo pensar lo contrario.</quote></p>
@@ -1400,7 +2291,7 @@
 
       <footnotes>
        <footnote id="sect110-1-foot" idref="sect110-1">
-        <p>Ésta es la respuesta correcta a la segunda secuencia de números de la rejilla del pedestal de cristal de la <a idref="sect235">Section 235</a>.</p>
+        <p>Ésta es la respuesta correcta a la segunda secuencia de números de la rejilla del pedestal de cristal de la <a idref="sect235">Sección 235</a>.</p>
        </footnote>
       </footnotes>
 
@@ -2038,7 +2929,7 @@
        <p>La sonda del Anciano atraviesa tus defensas y de repente se da cuenta de que eres un intruso. Coge tu túnica y la abre, revelando tus pantalones y tu túnica de cuero. Reconociéndolas como originarias de Sommerlund, grita de la sorpresa mientras conjetura sobre tu auténtica identidad.</p>
        <p><quote>¡Agarradle</quote> brama otro Anciano, y una veintena de acólitos se adelantan para obeceder la orden. Preparas tu arma y luchas contra ellos con una habilidad y un valor sorprendentes, pero finalmente eres superado por su número. Para cuando logran desarmarte y sostenerte contra el suelo rocoso, más de treinta de ellos yacen muertos o gravemente heridos en un estrecho círculo a tu alrededor.</p>
        <p>Miras desafiante al anillo de rostros siniestros iluminados por antorchas que se ciernen sobre ti. Entonces, la cara del Anciano entra en tu campo de visión y se burla con desdén. Coloca la punta de una varita brillante en tu frente, y de repente hay una explosión de luz blanca. Por desgracia para ti, es la última sensación que jamás experimentarás.</p>
-       <p>Tu vida y tu misión terminan aquí, en el camino al Precipicio de Maaken.</p>
+       <p>Tu vida y tu misión terminan aquí, en el camino a la Garganta de Maaken.</p>
       </data>
      </section>
 
@@ -2288,7 +3179,7 @@
 
        <p>Al entrar, un halcón desciende volando del techo y se posa en el brazo de Fyrad. Saca una tira de carne seca de su bolsillo y el halcón lo coge antes de volver a su percha a consumirlo a su placer.</p>
        <p><quote>Un pájaro lindo, eso eres,</quote> dice, cariñosamente. <quote>Me ha conducido a algunas presas valiosas a lo largo de los años.</quote></p>
-       <p>Mientras coméis carne de conejo y bayas silvestres, le preguntas a Fyrad lo que sabe de los Acólitos de Vashna y del Precipicio de Maaken. Dice que ha visto su campamento en la orilla este del lago pero, como el infame barranco, sólo desde lejos. Su principal motivo de preocupación han sido las tormentas y los bandidos Vakovarianos. Si no tuviera una familia hambrienta y deudas que pagar en Karkaste, hubiera recogido todo y se hubiera ido hace un mes.</p>
+       <p>Mientras coméis carne de conejo y bayas silvestres, le preguntas a Fyrad lo que sabe de los Acólitos de Vashna y de la Garganta de Maaken. Dice que ha visto su campamento en la orilla este del lago pero, como el infame barranco, sólo desde lejos. Su principal motivo de preocupación han sido las tormentas y los bandidos Vakovarianos. Si no tuviera una familia hambrienta y deudas que pagar en Karkaste, hubiera recogido todo y se hubiera ido hace un mes.</p>
        <p>Después de una comida deliciosa, atiendes a tu caballo antes de prepararte para pasar la noche. Te ofreces para compartir la guardia, pero Fyrad dice que no será necesario.</p>
        <p><quote>El mejor vigilante que pudieras desear,</quote> dice, señalando a su halcón mascota. <quote>Nos avisará con tiempo de sobra si algún problema viene a nuestra puerta por la noche.</quote></p>
        <choice idref="sect66"><link-text>Pasa al 66</link-text>.</choice>
@@ -2322,7 +3213,7 @@
        <p>Gwynian te guía a la cabaña abandonada y te ofrece asiento cerca de una antigua mesa tallada en piedra. Entonces se sienta con cuidado frente a ti y te mira profundamente a los ojos.</p>
        <p><quote>Lord Rimoah me envió aviso a Varetta diciendo que estabas de camino hacia aquí,</quote> dice, sacando un sobre de pergamino de entre los pliegues de su túnica. <quote>Yo, y mis compañeros sabios, hemos estado observando los cielos en esta región durante muchos meses, y estamos seguros de que un acontecimiento de gran y terrible importancia está a punto de suceder. Las estrellas y las tormentas auguran que un poder malvado está a punto de aparecer en Magnamund.</quote></p>
        <p><quote>¿Podría ser el renacimiento de Vashna?</quote> preguntas, dando voz a tus temores.</p>
-       <p><quote>Sí, creemos que es Vashna. A menos que puedas evitarlo, Lobo Solitario, el Señor Oscuro y su ejército surgirán del Precipicio de Maaken.</quote></p>
+       <p><quote>Sí, creemos que es Vashna. A menos que puedas evitarlo, Lobo Solitario, el Señor Oscuro y su ejército surgirán de la Garganta de Maaken.</quote></p>
        <choice idref="sect234">Si posees un Amuleto Negro, <link-text>pasa al 234</link-text>.</choice>
        <choice idref="sect45">Si no tienes este Objeto Especial, <link-text>pasa al 45</link-text>.</choice>
       </data>
@@ -2891,7 +3782,7 @@
       <meta><title>224</title></meta>
 
       <data>
-       <p>Aumentas tu visión y la enfocas sobre la figura que domina el pedestal de cristal. La sorpresa recorre tu columna cuando reconoces la cara y el pelo platino del Archidruida Cadak, soberano de Mogaruith, el usurpador señor de Kaag. Se ha fortalecido desde vuestro fatídico último encuentro, y ahora parece que está dispuesto a cumplir la sed de venganza del Dios Oscuro Naar liberando a Vashna y a sus hordas de las profundidades del Precipicio de Maaken.</p>
+       <p>Aumentas tu visión y la enfocas sobre la figura que domina el pedestal de cristal. La sorpresa recorre tu columna cuando reconoces la cara y el pelo platino del Archidruida Cadak, soberano de Mogaruith, el usurpador señor de Kaag. Se ha fortalecido desde vuestro fatídico último encuentro, y ahora parece que está dispuesto a cumplir la sed de venganza del Dios Oscuro Naar liberando a Vashna y a sus hordas de las profundidades de la Garganta de Maaken.</p>
        <p>Tomas tu lugar entre la multitud que se arrodilla ante el pedestal, y oyes la voz de Cadak resonar sobre la rugiente tormenta.</p>
        <p><quote>Invocamos del Vórtice de los Planos a la Liberadora de Vashna, Poderoso Señor de la Oscuridad, Príncipe de las Legiones de los Muertos Sin Descanso. Ven a nosotros. Ven a nosotros ahora y cumple nuestro destino. Nosotros, los dignos, ahora probaremos nuestra fe en el poder inmortal de Vashna.</quote></p>
        <p>Con estas palabras, los acólitos lanzan un escalofriante grito de afirmación y se levantan. Según su rango siguen a los Ancianos en una única fila hacia un arco brillante metálico, más pequeño, que se alza a un lado del pedestal de cristal, casi oscurecido por el resplandor del arco mayor. Uno a uno atraviesan este arco, bajo la vigilante mirada de Cadak, y entonces regresan a su sitio, donde se arrodillan y rezan.</p>
@@ -3311,7 +4202,7 @@
 
       <data>
        <p>Durante tres kilómetros caminas estoicamente a través de las colinas hacia un profundo resplandor magenta que baña el horizonte. Cuando rodeas un montículo de rocas con forma de un acusador dedo esquelético, te encuentras con un espectáculo que te deja mirando con la boca abierta de asombro y horror.</p>
-       <p>Una extensión de tierra muerta, llena de rocas rotas y destrozadas, desciende hasta el borde de un inmenso abismo que se extiende más de un kilómetro de un lado a otro. Es el Precipicio de Maaken. Hordas de Vortexi aullantes cabalgan una violenta tormenta eléctrica que ruge en las nubes sobre este vasto abismo, y la tierra se sacude en respuesta a los truenos retumbantes. Cerca del borde de la sima se alza un arco imponente, tallado en piedra, que reluce con un brillo sobrenatural tan fuerte que no puedes mirarlo directamente. Mirando mas atentamente ves delante del arco un pedestal de varios niveles, muy elaborado, completamente construido de cristal. A su alrededor se arrodillan cientos de acólitos que cantan devotamente. Sus tristes voces se unen al horrible ruido.</p>
+       <p>Una extensión de tierra muerta, llena de rocas rotas y destrozadas, desciende hasta el borde de un inmenso abismo que se extiende más de un kilómetro de un lado a otro. Es la Garganta de Maaken. Hordas de Vortexi aullantes cabalgan una violenta tormenta eléctrica que ruge en las nubes sobre este vasto abismo, y la tierra se sacude en respuesta a los truenos retumbantes. Cerca del borde de la sima se alza un arco imponente, tallado en piedra, que reluce con un brillo sobrenatural tan fuerte que no puedes mirarlo directamente. Mirando mas atentamente ves delante del arco un pedestal de varios niveles, muy elaborado, completamente construido de cristal. A su alrededor se arrodillan cientos de acólitos que cantan devotamente. Sus tristes voces se unen al horrible ruido.</p>
 
        <illustration class="float">
         <meta>
@@ -3466,7 +4357,7 @@
       <meta><title>262</title></meta>
 
       <data>
-       <p>Un examen mas detenido del amuleto revela una abundancia de detallados grabados simboliza una siniestra escena. Retrata el resurgir del Señor Oscuro Vashna y sus esbirros de las profundidades del Precipicio de Maaken. Tu habilidad Kai te revela que este amuleto una vez poseyó una poderosa carga que hubiera podido matar a cualquiera que lo tocase. Esa carga se ha agotado, pero aún puedes sentir el aura tenue y persistente del ser malvado que fabricó este artefacto.</p>
+       <p>Un examen mas detenido del amuleto revela una abundancia de detallados grabados simboliza una siniestra escena. Retrata el resurgir del Señor Oscuro Vashna y sus esbirros de las profundidades de la Garganta de Maaken. Tu habilidad Kai te revela que este amuleto una vez poseyó una poderosa carga que hubiera podido matar a cualquiera que lo tocase. Esa carga se ha agotado, pero aún puedes sentir el aura tenue y persistente del ser malvado que fabricó este artefacto.</p>
        <choice idref="sect238"><link-text>Pasa al 238</link-text>.</choice>
       </data>
      </section>
@@ -3884,7 +4775,7 @@
       <meta><title>296</title></meta>
 
       <data>
-       <p>La noche transcurre sin incidentes, pero te despiertas al amanecer con una vista espectacular. El cielo del este está repleto de meteoritos de ardiente luz amarilla que parten del interior de un banco de nubes tormentosas de color magenta. El aire crepita con energía eléctrica y los destellos de los relámpagos pueden verse por todo el lejano horizonte. Encuentras la vista desconcertante, especialmente cuando calculas que su centro de actividad está directamente sobre el Precipicio de Maaken.</p>
+       <p>La noche transcurre sin incidentes, pero te despiertas al amanecer con una vista espectacular. El cielo del este está repleto de meteoritos de ardiente luz amarilla que parten del interior de un banco de nubes tormentosas de color magenta. El aire crepita con energía eléctrica y los destellos de los relámpagos pueden verse por todo el lejano horizonte. Encuentras la vista desconcertante, especialmente cuando calculas que su centro de actividad está directamente sobre la Garganta de Maaken.</p>
        <p>Después de un desayuno frugal, continúas por el camino de la costa en una ruta que te acerca cada vez más a la tormenta.</p>
        <p>Escoge un número de la <a idref="random">Tabla de la Suerte</a>.</p>
        <choice idref="sect32">Si el número que has escogido es 0<ch.endash/>4, <link-text>pasa al 32</link-text>.</choice>
@@ -4206,7 +5097,7 @@
 
       <data>
        <p>De repente una nota penetrante se alza sobre el fragor de la batalla: es un cuerno de guerra, y está llamando a retirada a la lancha de los acólitos. Ves a los Acólitos de Vashna que están luchando en las ruinas abandonar repentinamente sus combates y volver corriendo al muelle en respuesta a esta orden. Su misión ha sido completada. Han rescatado a sus tres hermanos y ha llegado el tiempo de partir.</p>
-       <p>Mientras les ves fluyendo por el cuerpo del muelle, un plan audaz brota en tu mente, un plan que podría permitirte rápidamente descubrir la verdad sobre lo que está ocurriendo en el Precipicio de Maaken. Si pudieras ponerte una de las túnicas de los acólitos que has matado, podrías infiltrarte entre las filas de los acólitos que están huyendo hacia la lancha.</p>
+       <p>Mientras les ves fluyendo por el cuerpo del muelle, un plan audaz brota en tu mente, un plan que podría permitirte rápidamente descubrir la verdad sobre lo que está ocurriendo en la Garganta de Maaken. Si pudieras ponerte una de las túnicas de los acólitos que has matado, podrías infiltrarte entre las filas de los acólitos que están huyendo hacia la lancha.</p>
        <choice idref="sect76">Si deseas ponerte una túnica roja e intentar embarcar en la lancha de los acólitos, <link-text>pasa al 76</link-text>.</choice>
        <choice idref="sect275">Si decides que es un plan demasiado peligroso, puedes observar la retirada de los acólitos desde la seguridad de las ruinas <link-text>pasando al 275</link-text>.</choice>
       </data>
@@ -4228,7 +5119,7 @@
       <data>
        <p>Ante ti se extiende una gigantesca caverna. Sus paredes de antigua obsidiana se alzan hacia un techo abovedado del que cuelga un círculo de estalactitas<ch.emdash/>doce enormes lanzas luminiscentes de piedra verde lima. Bañado en su resplandor pulsátil hay un pedestal de cristal de varios niveles, idéntico al que estaba el Archidruida Cadak frente al gran arco brillante, junto al Precipicio de Maaken. A la derecha del pedestal ves un túnel oscuro. La entrada parece una negra sombra semicircular en la pared de la cueva.</p>
        <p>De pie sobre el nivel más alto del pedestal hay una criatura que te fascina y repele a la vez. Tiene el aspecto de una mujer humana, pero con más de siete metros de altura. Es sorprendentemente hermosa pero a la vez sientes que es completamente malvada. Su piel tiene una mortal palidez cadavérica, y está vestida con un vestido negro, que fluye y emite finas hebras de humo. Figuras con capas rodean el nivel inferior del pedestal, obedeciendo las órdenes de su señora y atendiendo a cada uno de sus caprichos. Si no lo hacen o la desagradan, ella los aplasta como simples insectos entre sus elegantes y mortales manos.</p>
-       <p>Miras con silenciosa fascinación cómo esta criatura demoniaca hace sus preparativos, como si fuera a emprender un largo viaje. Entonces, en un instante de súbita comprensión, adivinas su propósito. Está preparándose para entrar en el túnel, un túnel que la transportará al arco junto al borde del Precipicio de Maaken. ¡Ella es la Liberadora de Vashna de quien habló Cadak, aquella que liberará el espíritu de Lord Vashna del <!--ERRTAG-RE-424963-->Abismo Maldito<!--/ERRTAG-RE-424963-->!</p>
+       <p>Miras con silenciosa fascinación cómo esta criatura demoniaca hace sus preparativos, como si fuera a emprender un largo viaje. Entonces, en un instante de súbita comprensión, adivinas su propósito. Está preparándose para entrar en el túnel, un túnel que la transportará al arco junto al borde de la Garganta de Maaken. ¡Ella es la Liberadora de Vashna de quien habló Cadak, aquella que liberará el espíritu de Lord Vashna del <!--ERRTAG-RE-424963-->Abismo Maldito<!--/ERRTAG-RE-424963-->!</p>
 
        <illustration class="float">
         <meta>
@@ -4419,7 +5310,7 @@
        <p>Respondes con precaución por si está intentando engañarte, y dices simplemente que eres un cazador.</p>
        <p><quote>¿Un cazador, eh?</quote> dice, sonriendo. <quote>Venga, vamos. No eres un cazador, al menos no como los que yo conozco. Y yo debería saberlo, ya que yo mismo soy un cazador.</quote></p>
        <p>Usas tus sentidos Kai para evaluar el propósito del hombre y te das cuenta de que dice la verdad. Es realmente un cazador, y no pretende hacerte daño.</p>
-       <p><quote>Muy bien,</quote> dices, <quote>Admito que no soy un cazador, al menos no del tipo que piensas. He venido aquí para averiguar qué está ocurriendo en el Precipicio de Maaken. Quiero saber por qué Vorn fue destruido y qué está causando las tormentas. Pero, ¿cuál es tu propósito, maestro cazador? ¿Qué te trae aquí para que merezca la pena para estar luchando contra estas malditas tormentas?</quote></p>
+       <p><quote>Muy bien,</quote> dices, <quote>Admito que no soy un cazador, al menos no del tipo que piensas. He venido aquí para averiguar qué está ocurriendo en la Garganta de Maaken. Quiero saber por qué Vorn fue destruido y qué está causando las tormentas. Pero, ¿cuál es tu propósito, maestro cazador? ¿Qué te trae aquí para que merezca la pena para estar luchando contra estas malditas tormentas?</quote></p>
        <p>El cazador te cuenta que ha viajado desde Karkaste, en la tierra de Lyris, para cazar Corvayl Negros. La piel de esta bestia vale una pequeña fortuna en los mercados de Casiorn y en las Stornlands. Dice que las tormentas y los bandidos Vakovarianos le han puesto las cosas difíciles; ha estado aquí más de un mes  y sólo tiene dos pieles como resultado de su trabajo.</p>
        <p>El cazador, cuyo nombre es Fyrad, te invita a unirte a él en su campamento de las colinas. Pronto anochecerá y los vientos helados se están volviendo aún más fríos, así que aceptas agradecido su oferta de comida y un refugio caliente.</p>
        <choice idref="sect175"><link-text>Pasa al 175</link-text>.</choice>
@@ -4549,3 +5440,666 @@
 
     </data>
    </section>
+
+
+   <section class="backmatter" id="map">
+    <meta><title>Sommerlund y los Darklands</title></meta>
+
+   <data>
+    <illustration>
+     <meta>
+      <creator>Brian Williams</creator>
+     </meta>
+      <instance src="map.png" width="1024" height="768" class="html" mime-type="image/png"/>
+<!--      <instance src="map.jpg" width="1024" height="768" class="html-compatible" mime-type="image/jpeg"/>-->
+      <instance src="map.pdf" width="1024" height="768" class="pdf" />
+    </illustration>
+   </data>
+  </section>
+
+  <section class="backmatter" id="action">
+   <meta><title>Carta de Acción</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acstats.png" width="386" height="286" class="html" mime-type="image/png" />
+     <instance src="acstats.gif" width="386" height="286" class="html-compatible" mime-type="image/gif" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acdscplz.png" width="386" height="156" class="html" mime-type="image/png" />
+     <instance src="acdscplz.gif" width="386" height="156" class="html-compatible" mime-type="image/gif" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acchklst.png" width="386" height="128" class="html" mime-type="image/png" />
+     <instance src="acchklst.gif" width="386" height="128" class="html-compatible" mime-type="image/gif" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acitems.png" width="386" height="192" class="html" mime-type="image/png" />
+     <instance src="acitems.gif" width="386" height="192" class="html-compatible" mime-type="image/gif" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acbckpck.png" width="386" height="113" class="html" mime-type="image/png" />
+     <instance src="acbckpck.gif" width="386" height="113" class="html-compatible" mime-type="image/gif" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>JC Alvarez / Jonathan Blake</creator>
+     </meta>
+     <instance src="acspcl.png" width="386" height="280" class="html" mime-type="image/png" />
+     <instance src="acspcl.gif" width="386" height="280" class="html-compatible" mime-type="image/gif" />
+    </illustration>
+
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance class="text">
+      <p>
+       <line><typ class="attribute">DESTREZA EN EL COMBATE</typ>: <ch.blankline/></line>
+       <line><typ class="attribute">RESISTENCIA</typ>: <ch.blankline/></line>
+      </p>
+      <p>Disciplinas de Gran Maestro:</p>
+       <ol>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+       </ol>
+      <p>Disciplinas adicionales:</p>
+       <ol>
+        <li><ch.blankline/>: 5ª Disciplina si has completado con éxito una de las aventuras de Lobo Solitario: Gran Maestro</li>
+       </ol>
+      <p>Armas:</p>
+       <ol>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+       </ol>
+      <p>Coronas de Oro: <ch.blankline/></p>
+      <p>Comidas: <ch.blankline/></p>
+      <p>Objetos de Mochila:</p>
+       <ol>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+       </ol>
+      <p>Objetos Especiales:</p>
+       <ol>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+        <li><ch.blankline/></li>
+       </ol>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
+   <section class="backmatter" id="crsumary">
+    <meta><title>Resumen de Reglas para los Combates</title></meta>
+
+   <data>
+    <ol>
+     <li>Suma a tu <typ class="attribute">DESTREZA EN EL COMBATE</typ> todos los puntos extra que te proporcionen tus Disciplinas de Gran Maestro.</li>
+     <li>Resta de esa cantidad la <typ class="attribute">DESTREZA EN EL COMBATE</typ> de tu enemigo. El número resultante es tu puntuación en el combate.</li>
+     <li>Elige al azar un número en la <a idref="random">Tabla de la Suerte</a>.</li>
+     <li>Consulta la <a idref="crtable">Tabla de resultados de los combates</a>.</li>
+     <li>Busca en la hilera superior de recuadros tu puntuación en el combate y la casilla en que se cruce su vertical con la horizontal del número que hayas obtenido al azar y que figura en las columnas de los extremos de la izquierda y de la derecha. (E indica los puntos de <typ class="attribute">RESISTENCIA</typ> perdidos por el enemigo; LS, los puntos de <typ class="attribute">RESISTENCIA</typ> perdidos por Lobo Solitario).</li>
+     <li>Continúa el combate desde el apartado 3 hasta que uno de los contrincantes muera. Esto sucede cuando los puntos de <typ class="attribute">RESISTENCIA</typ> de dicho contrincante quedan reducidos a cero.</li>
+    </ol>
+
+    <section class="backmatter" id="smevazn">
+     <meta><title>Eludir el Combate</title></meta>
+
+     <data>
+
+      <ol>
+       <li>Sólo puedes hacerlo cuando el texto de la aventura te ofrece esta oportunidad.</li>
+       <li>Inicias el asalto de la forma habitual. Los puntos perdidos por el enemigo no se toman en cuenta y sólo Lobo Solitario pierde puntos de <typ class="attribute">RESISTENCIA</typ>.</li>
+       <li>Si el libro te brinda la oportunidad de evadirte en vez de combatir, puedes aprovecharla en el primer asalto o en cualquiera de los siguientes.</li>
+      </ol>
+
+     </data>
+    </section>
+
+   </data>
+  </section>
+
+  <section class="backmatter" id="crtable">
+   <meta><title>Tabla de Resultados de los Combates</title></meta>
+
+   <data>
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="crtneg.png" width="386" height="472" class="html" mime-type="image/png" />
+     <instance src="crtneg.gif" width="386" height="472" class="html-compatible" mime-type="image/gif" />
+     <instance src="crtneg.tex" width="380" height="500" class="tex" />
+    </illustration>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="crtpos.png" width="386" height="472" class="html" mime-type="image/png" />
+     <instance src="crtpos.gif" width="386" height="472" class="html-compatible" mime-type="image/gif" />
+     <instance src="crtpos.tex" width="380" height="500" class="tex" />
+    </illustration>
+
+    <illustration>
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance class="text">
+      <table summary="Esta tabla indica los puntos de resistencia perdidos por el héroe y el enemigo como resultado de un combate.">
+       <caption>Resultados del combate con la combinación de puntos de <typ class="attribute">RESISTENCIA</typ> perdidos por el héroe y el enemigo</caption>
+
+       <colgroup span="1"></colgroup>
+       <colgroup span="13"></colgroup>
+
+       <tfoot>
+        <tr>
+         <td colspan="14">Los resultados del combate vienen expresados por los puntos de <typ class="attribute">RESISTENCIA</typ> perdidos por el enemigo, seguidos de los puntos de <typ class="attribute">RESISTENCIA</typ> perdidos por el héroe. Por ejemplo, <quote>12/0</quote> quiere decir que el enemigo pierde 12 puntos de <typ class="attribute">RESISTENCIA</typ> mientras que el héroe pierde 0 puntos. Un resultado de <quote>M</quote> quiere decir que el combatiente ha muerto. Por ejemplo, <quote>0/M</quote> quiere decir que el enemigo pierde 0 puntos de <typ class="attribute">RESISTENCIA</typ> mientras que el héroe muere.</td>
+        </tr>
+       </tfoot>
+
+       <tbody>
+        <tr>
+         <th rowspan="2" scope="col">Número de la Tabla de la Suerte</th>
+         <th colspan="13" scope="colgroup">Puntuación en el combate</th>
+        </tr>
+
+        <tr>
+         <th scope="col" axis="combat_ratio"><ch.minus/>11 o menos</th>
+         <th scope="col" axis="combat_ratio"><ch.minus/>10/ <ch.minus/>9</th>
+         <th scope="col" axis="combat_ratio"><ch.minus/>8/ <ch.minus/>7</th>
+         <th scope="col" axis="combat_ratio"><ch.minus/>6/ <ch.minus/>5</th>
+         <th scope="col" axis="combat_ratio"><ch.minus/>4/ <ch.minus/>3</th>
+         <th scope="col" axis="combat_ratio"><ch.minus/>2/ <ch.minus/>1</th>
+         <th scope="col" axis="combat_ratio">0</th>
+         <th scope="col" axis="combat_ratio">1/ 2</th>
+         <th scope="col" axis="combat_ratio">3/ 4</th>
+         <th scope="col" axis="combat_ratio">5/ 6</th>
+         <th scope="col" axis="combat_ratio">7/ 8</th>
+         <th scope="col" axis="combat_ratio">9/ 10</th>
+         <th scope="col" axis="combat_ratio">11 o más</th>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">1</th>
+         <td>0/k</td>
+         <td>0/k</td>
+         <td>0/8</td>
+         <td>0/6</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/4</td>
+         <td>7/4</td>
+         <td>8/3</td>
+         <td>9/3</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">2</th>
+         <td>0/k</td>
+         <td>0/8</td>
+         <td>0/7</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/3</td>
+         <td>9/3</td>
+         <td>10/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">3</th>
+         <td>0/8</td>
+         <td>0/7</td>
+         <td>1/6</td>
+         <td>2/5</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/3</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">4</th>
+         <td>0/8</td>
+         <td>1/7</td>
+         <td>2/6</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/3</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+         <td>12/2</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">5</th>
+         <td>1/7</td>
+         <td>2/6</td>
+         <td>3/5</td>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/2</td>
+         <td>12/2</td>
+         <td>14/1</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">6</th>
+         <td>2/6</td>
+         <td>3/6</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/2</td>
+         <td>10/2</td>
+         <td>11/1</td>
+         <td>12/1</td>
+         <td>14/1</td>
+         <td>16/1</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">7</th>
+         <td>3/5</td>
+         <td>4/5</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/2</td>
+         <td>9/1</td>
+         <td>10/1</td>
+         <td>11/1</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">8</th>
+         <td>4/4</td>
+         <td>5/4</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/1</td>
+         <td>9/1</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">9</th>
+         <td>5/3</td>
+         <td>6/3</td>
+         <td>7/2</td>
+         <td>8/0</td>
+         <td>9/0</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+        </tr>
+        <tr>
+         <th scope="row" axis="random_number">0</th>
+         <td>6/0</td>
+         <td>7/0</td>
+         <td>8/0</td>
+         <td>9/0</td>
+         <td>10/0</td>
+         <td>11/0</td>
+         <td>12/0</td>
+         <td>14/0</td>
+         <td>16/0</td>
+         <td>18/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+         <td>k/0</td>
+        </tr>
+       </tbody>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
+  <section class="backmatter" id="random">
+   <meta><title>Tabla de la Suerte</title></meta>
+
+   <data>
+
+    <illustration class="inline">
+     <meta>
+      <creator>Jonathan Blake</creator>
+     </meta>
+     <instance src="random.png" width="332" height="432" class="html" mime-type="image/png" />
+     <instance src="random.gif" width="332" height="432" class="html-compatible" mime-type="image/gif" />
+     <instance class="text">
+      <table>
+       <tr>
+        <td>8</td>
+        <td>7</td>
+        <td>6</td>
+        <td>1</td>
+        <td>3</td>
+        <td>1</td>
+        <td>6</td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>8</td>
+        <td>6</td>
+        <td>5</td>
+        <td>0</td>
+        <td>5</td>
+        <td>8</td>
+        <td>7</td>
+        <td>4</td>
+        <td>1</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>5</td>
+        <td>1</td>
+        <td>2</td>
+        <td>5</td>
+        <td>7</td>
+        <td>4</td>
+        <td>3</td>
+        <td>1</td>
+        <td>8</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>2</td>
+        <td>4</td>
+        <td>7</td>
+        <td>6</td>
+        <td>5</td>
+        <td>8</td>
+        <td>6</td>
+        <td>0</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>0</td>
+        <td>1</td>
+        <td>9</td>
+        <td>5</td>
+        <td>4</td>
+        <td>9</td>
+        <td>0</td>
+        <td>3</td>
+        <td>1</td>
+        <td>4</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td>8</td>
+        <td>1</td>
+        <td>4</td>
+        <td>3</td>
+        <td>6</td>
+        <td>7</td>
+        <td>2</td>
+        <td>8</td>
+        <td>5</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td>8</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>0</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>0</td>
+       </tr>
+       <tr>
+        <td>6</td>
+        <td>2</td>
+        <td>0</td>
+        <td>3</td>
+        <td>4</td>
+        <td>1</td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>9</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td>4</td>
+        <td>8</td>
+        <td>7</td>
+        <td>6</td>
+        <td>5</td>
+        <td>2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>6</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td>2</td>
+        <td>5</td>
+        <td>2</td>
+        <td>9</td>
+        <td>0</td>
+        <td>5</td>
+        <td>4</td>
+        <td>8</td>
+        <td>7</td>
+       </tr>
+      </table>
+     </instance>
+    </illustration>
+   </data>
+  </section>
+
+  <section class="backmatter" id="errata">
+   <meta><title>Erratas</title></meta>
+
+   <data>
+
+    <section class="backmatter" id="errintro">
+     <meta><title>Introducción</title></meta>
+
+      <data>
+      <p>Las publicaciones que se han hecho de la colección tienen ciertos errores. Podemos encontrar errores de traducción, en las secciones de destino de las opciones, etc. En la edición en línea están corregidos la mayoría de ellos, y se enumeran a continuación. Si aun así adviertes algo que necesite ser corregido, por favor <a href="&link.staff.contact;">contacta</a> con el equipo del Proyecto Aon Español.</p>
+      </data>
+     </section>
+
+     <section class="backmatter" id="errerr">
+      <meta>
+       <title>Listado de Erratas</title>
+      </meta>
+
+      <data>
+      <p>A lo largo de todo el libro se han cambiado a mayúsculas iniciales algunos términos para que estéticamente sea más agradable a la lectura. Estos cambios se refieren a ciertos títulos (Señores de la Oscuridad, Señores del Kai, Lord,...), objetos (Coronas de Oro, Laumspur,...) y monstruos (Helghast, Szall, Drakar,...).</p>
+      </data>
+     </section>
+
+    <section class="backmatter" id="erruse">
+     <meta><title>Nota en uso estandarizado</title></meta>
+
+     <data>
+      <p>Un buen número de los voluntarios del Proyecto Aon han informa de inconsistencias sobre el uso de palabras como Drakkar a lo largo de la serie. Después de una investigación exhaustiva del uso en los libros de Drakkar/Drakkarim, Nadziran/Nadziranim, y Ligan/Liganim, hemos decidido estandarizar el uso de las palabras de la forma listada a continuación, al ser el uso mayoritario:</p>
+       <ul>
+        <li>sustantivo (s.): Drakkar</li>
+        <li>sustantivo (pl.): Drakkarim</li>
+        <li>adjetivo: Drakkarim</li>
+       </ul>
+       <ul>
+       <li>sustantivo (s.): Nadziran</li>
+       <li>sustantivo (pl.): Nadziranim</li>
+       <li>adjetivo: Nadziranim</li>
+      </ul>
+      <ul>
+      <li>sustantivo (s.): Ligan</li>
+      <li>sustantivo (pl.): Liganim</li>
+      <li>adjetivo: Liganim</li>
+     </ul>
+     <p>Todas las demás palabras que terminan en -im o bien ya se utilizan conforme a estas reglas (i.e. gazim, kuzim, lajakim, rekenarim, Sharnazim, y Tefarim) o no se pueden asociar de forma concluyente a los idiomas de las Darkland (p.ej. Ghagrim).</p>
+     </data>
+    </section>
+
+    </data>
+   </section>
+
+   <section class="backmatter" id="footnotz">
+    <meta><title>Notas a pie de página</title></meta>
+
+    <data/>
+
+   </section>
+
+   <section class="backmatter" id="illstrat">
+    <meta><title>Tabla de Ilustraciones</title></meta>
+
+    <data>
+     <p>La siguiente lista muestra todas las secciones que contienen ilustraciones en este libro:</p>
+
+     <section class="backmatter" id="primill">
+      <meta><title>Ilustraciones Principales</title></meta>
+
+      <data>
+       <ul class="unbulleted">
+       <li>Ilustración I (<a idref="sect11">Sección 11</a>)</li>
+       <li>Ilustración II (<a idref="sect21">Sección 21</a>)</li>
+       <li>Ilustración III (<a idref="sect48">Sección 48</a>)</li>
+       <li>Ilustración IV (<a idref="sect60">Sección 60</a>)</li>
+       <li>Ilustración V (<a idref="sect84">Sección 84</a>)</li>
+       <li>Ilustración VI (<a idref="sect97">Sección 97</a>)</li>
+       <li>Ilustración VII (<a idref="sect128">Sección 128</a>)</li>
+       <li>Ilustración VIII (<a idref="sect152">Sección 152</a>)</li>
+       <li>Ilustración IX (<a idref="sect163">Sección 163</a>)</li>
+       <li>Ilustración X (<a idref="sect175">Sección 175</a>)</li>
+       <li>Ilustración XI (<a idref="sect202">Sección 202</a>)</li>
+       <li>Ilustración XII (<a idref="sect215">Sección 215</a>)</li>
+       <li>Ilustración XIII (<a idref="sect226">Sección 226</a>)</li>
+       <li>Ilustración XIV (<a idref="sect241">Sección 241</a>)</li>
+       <li>Ilustración XV (<a idref="sect250">Sección 250</a>)</li>
+       <li>Ilustración XVI (<a idref="sect261">Sección 261</a>)</li>
+       <li>Ilustración XVII (<a idref="sect285">Sección 285</a>)</li>
+       <li>Ilustración XVIII (<a idref="sect319">Sección 319</a>)</li>
+       <li>Ilustración XIX (<a idref="sect327">Sección 327</a>)</li>
+       <li>Ilustración XX (<a idref="sect345">Sección 345</a>)</li>
+       <li><a idref="map">La Garganta de Maaken y los territorios circundantes</a></li>
+       <li><a idref="action">Action Chart</a></li>
+       </ul>
+      </data>
+     </section>
+
+     <section class="backmatter" id="secill">
+      <meta><title>Ilustraciones Secundarias</title></meta>
+
+      <data>
+       <ul class="unbulleted">
+        <li><a idref="equipmnt">Equipo</a></li>
+        <li><a idref="discplnz">Disciplinas de Gran Maestro</a></li>
+       <li><a idref="sect6">Sección 6</a></li>
+       <li><a idref="sect8">Sección 8</a></li>
+       <li><a idref="sect12">Sección 12</a></li>
+       <li><a idref="sect53">Sección 53</a></li>
+       <li><a idref="sect62">Sección 62</a></li>
+       <li><a idref="sect63">Sección 63</a></li>
+       <li><a idref="sect87">Sección 87</a></li>
+       <li><a idref="sect94">Sección 94</a></li>
+       <li><a idref="sect105">Sección 105</a></li>
+       <li><a idref="sect110">Sección 110</a></li>
+       <li><a idref="sect133">Sección 133</a></li>
+       <li><a idref="sect137">Sección 137</a></li>
+       <li><a idref="sect157">Sección 157</a></li>
+       <li><a idref="sect162">Sección 162</a></li>
+       <li><a idref="sect164">Sección 164</a></li>
+       <li><a idref="sect188">Sección 188</a></li>
+       <li><a idref="sect194">Sección 194</a></li>
+       <li><a idref="sect218">Sección 218</a></li>
+       <li><a idref="sect220">Sección 220</a></li>
+       <li><a idref="sect235">Sección 235</a></li>
+       <li><a idref="sect247">Sección 247</a></li>
+       <li><a idref="sect279">Sección 279</a></li>
+       <li><a idref="sect332">Sección 332</a></li>
+       <li><a idref="sect339">Sección 339</a></li>
+       </ul>
+      </data>
+     </section>
+
+    </data>
+   </section>
+
+   &inclusion.project.aon.license;
+
+  </data>
+ </section>
+</gamebook>
