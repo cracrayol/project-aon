@@ -40,7 +40,7 @@ XSLFILES=$(RELXSLDIR)/epub-opf-metadata.xsl $(RELXSLDIR)/epub-xhtml.xsl  \
 # Generate the ePub file from the XML file
 epub: $(EPUB)
 $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB): $(XMLFILE) $(EPUBSCRIPT) $(XSLFILES)
-	cd $(AONROOTDIR) && perl $(EPUBSCRIPT) --language=$(BLANG) --font-files=$(AONROOTDIR)/fontfiles/ $(BASENAME) 
+	cd $(AONROOTDIR) && perl $(EPUBSCRIPT) --language=$(BLANG) --font-files=$(AONROOTDIR)/common/fonts/ $(BASENAME) 
 
 $(EPUB): $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB)
 	cp -p $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB) .

@@ -17,7 +17,8 @@ my $TAR        = qx{which tar};
 my $ZIP        = qx{which zip};
 my $BZIP2      = qx{which bzip2};
 my $JAVA       = qx{which java};
-my $XALAN_JAR  = '/usr/share/java/xalan2.jar';
+#my $XALAN_JAR  = '/usr/share/java/xalan2.jar';
+my $XALAN_JAR  = '/usr/share/ant/lib/xalan.jar';
 my $RM         = qx{which rm};
 my $CHMOD      = qx{which chmod};
 
@@ -64,7 +65,7 @@ my $ncxXSL       = 'common/xsl/epub-ncx.xsl';
 my $epubXSL      = 'common/xsl/epub-xhtml.xsl';
 my $metadataXSL  = 'common/xsl/epub-opf-metadata.xsl';
 my $spineXSL     = 'common/xsl/epub-opf-spine.xsl';
-my $fontFiles    = "$ENV{'HOME'}${FILENAME_SEPARATOR}souvenir";
+my $fontFiles    = "common/fonts";
 my $language     = 'en';
 
 my $verbose = 0;
@@ -233,7 +234,7 @@ foreach my $cssTemplate (split( /:/, $rulesHash{'csst'} )) {
 unless( -e $fontFiles && -d $fontFiles ) {
     die "$PROGRAM_NAME: font files directory does not exist or is not a directory \"$fontFiles\": $!\n";
 }
-print qx{$CP $fontFiles${FILENAME_SEPARATOR}*.otf $outPath{'oebps'}};
+print qx{$CP $fontFiles${FILENAME_SEPARATOR}*tf $outPath{'oebps'}};
 
 ### write NCX file
 
