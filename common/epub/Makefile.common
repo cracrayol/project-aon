@@ -17,8 +17,8 @@ COVERIMAGE := $(AONROOTDIR)/$(BLANG)/jpeg/$(SERIES)/$(BASENAME)/skins/ebook/cove
 # Location of the font files, this is adjustable here in order to make it possible to run
 # the build scripts as not all developers might have the Souvernir fonts.
 
-# Option 1 (to be used for Lone wolf series) - Souvenir font 
-# ---------------------------------------------------------
+# Option 1 (to be used for the Lone wolf and Grey star series) - Souvenir font 
+# ---------------------------------------------------------------------------
 # Use this when buidling Lone Wolf books, using Souvenir fonts and make sure
 # the font is available in the directory you configure here.  Note that the
 # fontfiles are *not* available in Project Aon's SVN repository as they are not
@@ -27,7 +27,12 @@ COVERIMAGE := $(AONROOTDIR)/$(BLANG)/jpeg/$(SERIES)/$(BASENAME)/skins/ebook/cove
 # If using this configure, please make sure the following fonts are available in this directory:
 # SouvenirStd-DemiItalic.otf  SouvenirStd-Demi.otf  SouvenirStd-LightItalic.otf  SouvenirStd-Light.otf
 
-# FONTDIR := $(AONROOTDIR)/../fontfiles/
+ifeq ($(SERIES), lw)
+FONTDIR := $(AONROOTDIR)/../fontfiles/
+endif
+ifeq ($(SERIES), gs)
+FONTDIR := $(AONROOTDIR)/../fontfiles/
+endif
 
 # Option 2 (to be used for Freway Warrior series builds) - Carlito font 
 # ---------------------------------------------------------------------
@@ -36,9 +41,27 @@ COVERIMAGE := $(AONROOTDIR)/$(BLANG)/jpeg/$(SERIES)/$(BASENAME)/skins/ebook/cove
 # repository which (at the time of this writting) are the Carlito font, which
 # is distributed with an Open Font license.
 
+ifeq ($(SERIES), fw)
 FONTDIR := $(AONROOTDIR)/common/fonts/
-
+endif
 # --------------------------------- END FONT SELECTION -----------------------------------------------------------
+
+ifndef FONTDIR
+$(info FONTDIR is not defined,  defauling to AONROOTDIR/common/fonts/)
+FONTDIR := $(AONROOTDIR)/common/fonts/
+endif
+
+# Sanity checks before going further
+ifndef SERIES
+$(error WARNING: Book series is not defined, please define variable 'SERIES')
+endif
+ifndef BLANG
+$(error WARNING: Book language is not defined, please define variable 'BLANG')
+endif
+ifndef BASENAME
+$(error WARNING: Book basic name is not defined, please define variable 'BASENAME')
+endif
+
 
 EPUB=$(BASENAME).epub
 MOBI=$(BASENAME).mobi
