@@ -27,7 +27,7 @@ all-english: $(ENGLISH_DIRS)
 all-spanish: $(SPANISH_DIRS)
 
 install: $(DIRS-install)
-clean: $(DIRS-clean)
+clean: $(DIRS-clean) test-clean
 distclean: $(DIRS-distclean)
 
 $(DIRS-install):
@@ -41,3 +41,9 @@ $(DIRS-distclean):
 
 $(DIRS):
 	$(MAKE) -C $@
+
+test:
+	$(MAKE) -C setup_test 
+
+test-clean:
+	$(MAKE) -C setup_test clean
