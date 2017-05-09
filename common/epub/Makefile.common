@@ -40,6 +40,11 @@ XSLFILES=$(RELXSLDIR)/epub-opf-metadata.xsl $(RELXSLDIR)/epub-xhtml.xsl  \
 # Generate the ePub file from the XML file
 epub: $(EPUB)
 $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB): $(XMLFILE) $(EPUBSCRIPT) $(XSLFILES)
+# Use this when using Souvenir fonts (cannot be distributed in Project Aon's SVN repository)
+# make sure the font is available in the fontfiles directory *one level before* the SVN repo
+#	cd $(AONROOTDIR) && perl $(EPUBSCRIPT) --language=$(BLANG) --font-files=$(AONROOTDIR)/../fontfiles/ $(BASENAME) 
+# Use this when using the fonts provided in the Carlito font (distributed with an Open Font license)
+# which is available in the Project Aon's SVN repository
 	cd $(AONROOTDIR) && perl $(EPUBSCRIPT) --language=$(BLANG) --font-files=$(AONROOTDIR)/common/fonts/ $(BASENAME) 
 
 $(EPUB): $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB)
