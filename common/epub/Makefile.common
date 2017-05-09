@@ -13,6 +13,31 @@ RELXSLDIR := $(AONROOTDIR)/common/xsl
 EPUBSCRIPT := $(RELSCRIPT)/gbtoepub.pl
 COVERIMAGE := $(AONROOTDIR)/$(BLANG)/jpeg/$(SERIES)/$(BASENAME)/skins/ebook/cover.jpg
 
+# -------------------------------- BEGIN FONT SELECTION -----------------------------------------------------------
+# Location of the font files, this is adjustable here in order to make it possible to run
+# the build scripts as not all developers might have the Souvernir fonts.
+
+# Option 1 (to be used for official builds) - Souvenir font 
+# ---------------------------------------------------------
+# Use this when using Souvenir fonts and make sure the font is available in the directory you configure here. 
+# Note that the fontfiles are *not* available in Project Aon's SVN repository as they are not under
+# a free license
+#
+# If using this configure, please make sure the following fonts are available in this directory:
+# SouvenirStd-DemiItalic.otf  SouvenirStd-Demi.otf  SouvenirStd-LightItalic.otf  SouvenirStd-Light.otf
+
+# FONTDIR := $(AONROOTDIR)/../fontfiles/
+
+# Option 2 (to be used for test builds) - Carlito font 
+# ---------------------------------------------------------
+# Use this when running test builds and you do not have the Souvenir font available.
+# This will build the documents using the fonts available in the SVN repository which
+# (at the time of this writting) are the Carlito font, which is distributed with an Open Font license.
+
+FONTDIR := $(AONROOTDIR)/common/fonts/
+
+# --------------------------------- END FONT SELECTION -----------------------------------------------------------
+
 EPUB=$(BASENAME).epub
 MOBI=$(BASENAME).mobi
 PDB=$(BASENAME).pdb
@@ -40,12 +65,7 @@ XSLFILES=$(RELXSLDIR)/epub-opf-metadata.xsl $(RELXSLDIR)/epub-xhtml.xsl  \
 # Generate the ePub file from the XML file
 epub: $(EPUB)
 $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB): $(XMLFILE) $(EPUBSCRIPT) $(XSLFILES)
-# Use this when using Souvenir fonts (cannot be distributed in Project Aon's SVN repository)
-# make sure the font is available in the fontfiles directory *one level before* the SVN repo
-#	cd $(AONROOTDIR) && perl $(EPUBSCRIPT) --language=$(BLANG) --font-files=$(AONROOTDIR)/../fontfiles/ $(BASENAME) 
-# Use this when using the fonts provided in the Carlito font (distributed with an Open Font license)
-# which is available in the Project Aon's SVN repository
-	cd $(AONROOTDIR) && perl $(EPUBSCRIPT) --language=$(BLANG) --font-files=$(AONROOTDIR)/common/fonts/ $(BASENAME) 
+	cd $(AONROOTDIR) && perl $(EPUBSCRIPT) --language=$(BLANG) --font-files=$(FONTDIR) $(BASENAME) 
 
 $(EPUB): $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB)
 	cp -p $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB) .
