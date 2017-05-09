@@ -92,7 +92,9 @@ epub: $(EPUB)
 $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB): $(XMLFILE) $(EPUBSCRIPT) $(XSLFILES)
 	cd $(AONROOTDIR) && perl $(EPUBSCRIPT) --language=$(BLANG) --font-files=$(FONTDIR) $(BASENAME) 
 
-$(EPUB): $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB)
+$(EPUB): $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB) ebook-convert
+	@[ ! -x  `which dbtoepub` ] || { echo "ERROR: Cannot find 'dbtoepub', please install this package" >&2; exit 1;  }
+	dbtoepub -o $(BOOK) $(XMLFILE) >$(BOOK).log 2>&1; \
 	cp -p $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB) .
 # Regenerate to include the covers properly within the Ebook and fix the EPUB
 	ebook-convert $(EPUB) regen_$(EPUB) --cover $(COVERIMAGE)
@@ -103,37 +105,40 @@ $(EPUB): $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB)
 # Convert to other formats. For a full list of format that we can convert to using 
 # Calibre see http://manual.calibre-ebook.com/cli/ebook-convert.html
 
+ebook-convert:
+	@[ ! -x  `which ebook-convert` ] || { echo "ERROR: Cannot find 'ebook-convert', please install Calibre" >&2; exit 1;  }
+
 # Generate the mobi file from the ePub (Mobipocket format)
 mobi: $(MOBI)
-%.mobi: %.epub
+%.mobi: %.epub ebook-convert
 	 ebook-convert $< $@
 
 # Generate the pdb file from the ePub (eReader / Palm Media format)
-%.pdb: %.epub
+%.pdb: %.epub ebook-convert
 	 ebook-convert $< $@
 
 # Generate the lrf file from the ePub (Broadband eBooks (BBeB) format)
-%.lrf: %.epub
+%.lrf: %.epub ebook-convert
 	 ebook-convert $< $@
 
 # Generate the lit file from the ePub (Microsoft LIT format for Microsoft Reader)
-%.lit: %.epub
+%.lit: %.epub ebook-convert
 	 ebook-convert $< $@
 
 # Generate the pdf file from the ePub 
-%.pdf: %.epub
+%.pdf: %.epub ebook-convert
 	 ebook-convert $< $@
 
 # Generate the snb file from the ePub 
-%.snb: %.epub
+%.snb: %.epub ebook-convert
 	 ebook-convert $< $@
 
 # Generate the pml file from the ePub 
-%.pml: %.epub
+%.pml: %.epub ebook-convert
 	 ebook-convert $< $@
 
 # Generate the fb2 file from the ePub  (Fictionbook format used by BeBook, PocketBook, Cybook, Papyre and others)
-%.fb2: %.epub
+%.fb2: %.epub ebook-convert
 	 ebook-convert $< $@
 
 
@@ -179,4 +184,4 @@ clean:
 distclean: clean
 	-rm -rf $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/
 
-.PHONY: all install publish clean distclean epub mobi
+.PHONY: all install publish clean distclean epub mobi ebook-convert
