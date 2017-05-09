@@ -10,10 +10,10 @@ ENGLISH_DIRS := 01fftd 02fotw 03tcok 04tcod 05sots 06tkot 07cd 08tjoh \
 
 # LS #1 to #12  (Spanish)
 SPANISH_DIRS := 01hdlo 02fsea 03lcdk 04eam 05eddls 06lpdlc 07meec \
-	08ljdlh 09ecdm 10lmdt 11pdt 12lsdlo
+	08ljdlh 09ecdm 10lmdt 11pdt 12lsdlo 13lsdlpdr
 #
 # Unpublished (spanish) books:
-# <NONE>
+# 14lcdk 16eldv
 
 DIRS = $(ENGLISH_DIRS) $(SPANISH_DIRS)
 
