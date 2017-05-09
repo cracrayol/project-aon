@@ -14,12 +14,12 @@ AONDIR="../../"
 LOGDIR="$CURDIR/logs/"
 [ ! -e "$LOGDIR" ] && mkdir $LOGDIR
 LANGS="en es"
-FONTDIR=fontfiles/
+FONTDIR="../fontfiles/"
 
 if [ ! -e "${AONDIR}${FONTDIR}" ] ; then
     echo "The font directory (${AONDIR}${FONTDIR}) does not exist."
     echo "Please create it and copy the Souvenir font to it "
-    echo "(or adjust the script to use an alternative directory)"
+    echo "(or adjust this script to use an alternative directory)"
     exit 1
 fi
 
