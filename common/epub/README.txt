@@ -3,32 +3,53 @@ README file for epub directory
 ------------------------------
 
   This directory holds the scripts and programs used to build e-books of the
-  Project Aon released books based on the existing XML files.
+  books released by Project Aon. The build is automatic and based on the
+  existing XML files.
 
   It currently holds:
 
-  - build-epubs.sh: A shell script that runs a build of all the books.
+  - build-epubs.sh: A shell script that runs a build of all of the books.
     The result of the build is a number of e-books in epub format
     which will be available once the script finishes in the English
-    directory for ePubs (from this directory available at ../../en/epub/)
+    directory for ePubs (this directory is available at ../../en/epub/)
 
   - Makefile: a makefile file to build the ebooks (in all available
     formats) in the existing subdirectories. It will build the ePub files
     required and copy them to the appropiate subdirectory.
+
+  If you want to add a book that is not currently available in this structure
+  you just have to:
+
+   - Create a sub-directory with the book code
+   - Copy into this sub-directory the Makefile.basic file, rename it
+     'Makefile' and adjust its contents (book name, series) as required
+
+  Once the structure is created you can either do a full build by running
+  'make' in the main directory or do a build of a book by running 'make' in
+  its subdirectory.
+
+  You can also generate the formats only for one language: 'make all-english'
+  will run the generation of only the english books (Lone Wolf series, Grey
+  Star series and Freeway Warriors)
      
 
 NOTES
 ----
  
-  - Conversion is done using Calibre's command-line interface. All ebooks are
-    converted from the 'standard' the ePub format into other common formats
-    (such as .mobi or .pdb)
+  - Conversion is done first using the Project's gbtoepub.pl script
+    (which uses XALAN to transform the XML file using an XLST) and then
+    several other programs to generate the final output which includes
+    dbtoepub and Calibre's command-line interface. 
+    
+    Once the ePub basic file is generated, all other e-books are converted
+    from the 'standard' the ePub format into other common formats (such as
+    .mobi or .pdb) using Calibre's 'ebook-convert' tool
 
     (see http://manual.calibre-ebook.com/cli/cli-index.html)
 
     For formats see http://en.wikipedia.org/wiki/Comparison_of_e-book_formats
     
-    If you run 'make' (without arguments) the Makefiles will automatically
+    If you run 'make' (without arguments) the Makefile structure will automatically
     build the following formats:
 
     - .epub: ePub format - appropiate for most electronic Readers
@@ -37,8 +58,8 @@ NOTES
             Palm)
     - .lrf: Broadband eBooks (BBeB) format - appropiate for Sony ereaders
 
-    Other formats can also be built but are not built by default nor removed
-    if generated.
+    Other formats can also be built, but they are not built by default nor
+    will be removed if generated.
 
 
 WHAT WORKS
