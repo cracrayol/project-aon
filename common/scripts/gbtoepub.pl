@@ -17,8 +17,10 @@ my $TAR        = qx{which tar};
 my $ZIP        = qx{which zip};
 my $BZIP2      = qx{which bzip2};
 my $JAVA       = qx{which java};
-#my $XALAN_JAR  = '/usr/share/java/xalan2.jar';
-my $XALAN_JAR  = '/usr/share/ant/lib/xalan.jar';
+# Note: In Debian/Ubuntu the Xalan processor is provided in the package libxalan2-java
+my $XALAN_JAR  = '/usr/share/java/xalan2.jar';
+# Old version of Xalan processor (Xalan 1)
+#my $XALAN_JAR  = '/usr/share/ant/lib/xalan.jar';
 my $RM         = qx{which rm};
 my $CHMOD      = qx{which chmod};
 
