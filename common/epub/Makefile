@@ -2,10 +2,11 @@
 # Dirs to build
 # LW #1 to #28 (English)
 # GS #1 to #4
+# FW #1
 ENGLISH_DIRS := 01fftd 02fotw 03tcok 04tcod 05sots 06tkot 07cd 08tjoh \
 	09tcof 10tdot 11tpot 12tmod 13tplor 14tcok 15tdc 16tlov 17tdoi \
 	18dotd 19wb 20tcon 21votm 22tbos 23mh 24rw  25totw 26tfobm \
-    27v 28thos 01gstw  02tfc  03btng  04wotw 
+	27v 28thos 01gstw  02tfc  03btng  04wotw 01hh
 
 # LS #1 to #12  (Spanish)
 SPANISH_DIRS := 01hdlo 02fsea 03lcdk 04eam 05eddls 06lpdlc 07meec \
