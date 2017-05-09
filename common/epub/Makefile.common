@@ -17,22 +17,24 @@ COVERIMAGE := $(AONROOTDIR)/$(BLANG)/jpeg/$(SERIES)/$(BASENAME)/skins/ebook/cove
 # Location of the font files, this is adjustable here in order to make it possible to run
 # the build scripts as not all developers might have the Souvernir fonts.
 
-# Option 1 (to be used for official builds) - Souvenir font 
+# Option 1 (to be used for Lone wolf series) - Souvenir font 
 # ---------------------------------------------------------
-# Use this when using Souvenir fonts and make sure the font is available in the directory you configure here. 
-# Note that the fontfiles are *not* available in Project Aon's SVN repository as they are not under
-# a free license
+# Use this when buidling Lone Wolf books, using Souvenir fonts and make sure
+# the font is available in the directory you configure here.  Note that the
+# fontfiles are *not* available in Project Aon's SVN repository as they are not
+# under a free license. For more information see /common/fonts/README.txt
 #
 # If using this configure, please make sure the following fonts are available in this directory:
 # SouvenirStd-DemiItalic.otf  SouvenirStd-Demi.otf  SouvenirStd-LightItalic.otf  SouvenirStd-Light.otf
 
 # FONTDIR := $(AONROOTDIR)/../fontfiles/
 
-# Option 2 (to be used for test builds) - Carlito font 
-# ---------------------------------------------------------
-# Use this when running test builds and you do not have the Souvenir font available.
-# This will build the documents using the fonts available in the SVN repository which
-# (at the time of this writting) are the Carlito font, which is distributed with an Open Font license.
+# Option 2 (to be used for Freway Warrior series builds) - Carlito font 
+# ---------------------------------------------------------------------
+# Use this when running builds of the Freeway Warrior series using the Carlito
+# fonts.  This will build the documents using the fonts available in the SVN
+# repository which (at the time of this writting) are the Carlito font, which
+# is distributed with an Open Font license.
 
 FONTDIR := $(AONROOTDIR)/common/fonts/
 
