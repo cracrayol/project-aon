@@ -91,10 +91,11 @@ XSLFILES=$(RELXSLDIR)/epub-opf-metadata.xsl $(RELXSLDIR)/epub-xhtml.xsl  \
 epub: $(EPUB)
 $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB): $(XMLFILE) $(EPUBSCRIPT) $(XSLFILES)
 	cd $(AONROOTDIR) && perl $(EPUBSCRIPT) --language=$(BLANG) --font-files=$(FONTDIR) $(BASENAME) 
+# Alternate generation mechanism
+#	@[ -x  `which dbtoepub` ] || { echo "ERROR: Cannot find 'dbtoepub', please install this package" >&2; exit 1;  }
+#	dbtoepub -o $(BOOK) $(XMLFILE) >$(BOOK).log 2>&1; \
 
 $(EPUB): $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB) ebook-convert
-	@[ -x  `which dbtoepub` ] || { echo "ERROR: Cannot find 'dbtoepub', please install this package" >&2; exit 1;  }
-	dbtoepub -o $(BOOK) $(XMLFILE) >$(BOOK).log 2>&1; \
 	cp -p $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB) .
 # Regenerate to include the covers properly within the Ebook and fix the EPUB
 	ebook-convert $(EPUB) regen_$(EPUB) --cover $(COVERIMAGE)
