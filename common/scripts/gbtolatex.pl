@@ -232,6 +232,13 @@ elsif( $bookCode eq "13tplor" ) {
     $TITLE_COLOR       = "0.6,0.0,0.0"; 
     $USE_ILLUSTRATORS  = ":Brian Williams:JC Alvarez & Jonathan Blake:Jonathan Blake:";
 }
+elsif( $bookCode eq "13lsdlpdr" ) {
+    $XML_SOURCE        = "13lsdlpdr.xml";
+    $BOOK_PATH         .= "/lw/13lsdlpdr";
+    # TODO - review
+    $TITLE_COLOR       = "0.6,0.0,0.0"; 
+    $USE_ILLUSTRATORS  = ":Brian Williams:JC Alvarez & Jonathan Blake:Jonathan Blake:";
+}
 elsif( $bookCode eq "14tcok" ) {
     $XML_SOURCE        = "14tcok.xml";
     $BOOK_PATH         .= "/lw/14tcok";
