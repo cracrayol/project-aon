@@ -9,13 +9,15 @@ ENGLISH_DIRS := 01fftd 02fotw 03tcok 04tcod 05sots 06tkot 07cd 08tjoh \
 
 # LS #1 to #13 (Spanish)
 SPANISH_DIRS := 01hdlo 02fsea 03lcdk 04eam 05eddls 06lpdlc 07meec \
-		08ljdlh 09ecdm 10lmdt 11pdt 12lsdlo 13tplor
+		08ljdlh 09ecdm 10lmdt 11pdt 12lsdlo 13lsdlpdr
 # Unpublished (spanish) books
 #  14lcdk 16eldv
 
 DIRS = $(ENGLISH_DIRS) $(SPANISH_DIRS)
 
 DIRS-install := $(addsuffix -install,$(DIRS))
+DIRS-install-en := $(addsuffix -install,$(ENGLISH_DIRS))
+DIRS-install-es := $(addsuffix -install,$(SPANISH_DIRS))
 DIRS-clean := $(addsuffix -clean,$(DIRS))
 DIRS-distclean := $(addsuffix -distclean,$(DIRS))
 
@@ -27,6 +29,9 @@ all-english: $(ENGLISH_DIRS)
 all-spanish: $(SPANISH_DIRS)
 
 install: $(DIRS-install)
+install-english: $(DIRS-install-en)
+install-spanish: $(DIRS-install-es)
+
 clean: $(DIRS-clean) test-clean
 distclean: $(DIRS-distclean)
 
