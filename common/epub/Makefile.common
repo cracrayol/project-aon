@@ -108,7 +108,7 @@ $(EPUB): $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB)
 	@if [ -e $(ALTCOVERIMAGE) ] && [ ! -e $(COVERIMAGE) ]  ; then \
 		ebook-convert $(EPUB) regen_$(EPUB) --cover $(ALTCOVERIMAGE) ; \
 	fi
-	@if [ ! -e $(COVERIMAGE) ]  ; then \
+	@if [ -e $(COVERIMAGE) ]  ; then \
 		ebook-convert $(EPUB) regen_$(EPUB) --cover $(COVERIMAGE) ; \
 	fi
 	@if [ ! -e $(ALTCOVERIMAGE) ] && [ ! -e $(COVERIMAGE) ]  ; then \
