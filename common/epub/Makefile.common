@@ -11,7 +11,9 @@ RELSCRIPT := $(AONROOTDIR)/common/scripts
 # Relative location of the xsl files
 RELXSLDIR := $(AONROOTDIR)/common/xsl
 EPUBSCRIPT := $(RELSCRIPT)/gbtoepub.pl
+COVERSCRIPT := $(RELSCRIPT)/create-epub-cover.pl
 COVERIMAGE := $(AONROOTDIR)/$(BLANG)/jpeg/$(SERIES)/$(BASENAME)/skins/ebook/cover.jpg
+ALTCOVERIMAGE := $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/OEBPS/cover.jpg 
 
 # -------------------------------- BEGIN FONT SELECTION -----------------------------------------------------------
 # Location of the font files, this is adjustable here in order to make it possible to run
@@ -94,12 +96,25 @@ XSLFILES=$(RELXSLDIR)/epub-opf-metadata.xsl $(RELXSLDIR)/epub-xhtml.xsl  \
 epub: $(EPUB)
 $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB): $(XMLFILE) $(EPUBSCRIPT) $(XSLFILES)
 	cd $(AONROOTDIR) && perl $(EPUBSCRIPT) --language=$(BLANG) --font-files=$(FONTDIR) $(BASENAME) 
+# Create cover page if not existing
+	@if [ ! -e $(COVERIMAGE) ] ; then \
+		cd $(AONROOTDIR) && perl  $(COVERSCRIPT) --language=$(BLANG) --font-files=$(FONTDIR) $(BASENAME) ; \
+	fi
 
-$(EPUB): $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB) 
+$(EPUB): $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB)  
 	@[ -x  `which ebook-convert` ] || { echo "ERROR: Cannot find 'ebook-convert', please install Calibre" >&2; exit 1;  }
 	cp -p $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB) .
 # Regenerate to include the covers properly within the Ebook and fix the EPUB
-	ebook-convert $(EPUB) regen_$(EPUB) --cover $(COVERIMAGE)
+	@if [ -e $(ALTCOVERIMAGE) ] && [ ! -e $(COVERIMAGE) ]  ; then \
+		ebook-convert $(EPUB) regen_$(EPUB) --cover $(ALTCOVERIMAGE) ; \
+	fi
+	@if [ ! -e $(COVERIMAGE) ]  ; then \
+		ebook-convert $(EPUB) regen_$(EPUB) --cover $(COVERIMAGE) ; \
+	fi
+	@if [ ! -e $(ALTCOVERIMAGE) ] && [ ! -e $(COVERIMAGE) ]  ; then \
+		ebook-convert $(EPUB) regen_$(EPUB) ; \
+	fi
+		
 	mv regen_$(EPUB) $(EPUB)
 	-rm -f cover.jpg $(BASENAME).opf  
 
