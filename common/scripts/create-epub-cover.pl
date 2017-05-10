@@ -1,0 +1,331 @@
+#!/usr/bin/perl
+#
+# Generate covers for books to use as cover in ePUBs
+# 
+# This program is copyright 2012, 2017 by Javier Fernandez-Sanguino <jfs@computer.org>
+#
+#    This program is free software; you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation; either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program; if not, write to the Free Software
+#    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+#
+# For more information please see
+#  http://www.gnu.org/licenses/licenses.html#GPL
+
+
+use strict;
+use warnings;
+
+use File::Path qw(mkpath);
+
+my $PROGRAM_NAME    = 'gbtoepub';
+my $USAGE           = "$PROGRAM_NAME [options] book-code\n\t--meta=[metadata file]\n\t--xml=[book XML]\n\t--language=[language area of input data (output determined by meta file)]\n\t--font-files=[font-files]\n\t--no-validate\n\t--verbose\n";
+
+my $FILENAME_SEPARATOR = '/';
+
+my $CONVERT    = qx{which convert};
+my $CP         = qx{which cp};
+my $MV         = qx{which mv};
+my $RM         = qx{which rm};
+my $CHMOD      = qx{which chmod};
+
+chomp $CONVERT;
+chomp $CP;
+chomp $MV;
+chomp $RM;
+chomp $CHMOD;
+
+# Check that all the binaries are were want them
+
+my @BINARIES;
+push @BINARIES, ($CONVERT, $CP, $MV, $RM, $CHMOD);
+
+foreach (@BINARIES) {
+    if ( ! -e $_ ) {
+        die "$PROGRAM_NAME: Cannot find binary '".$_."'. Please install it.\n";
+    }
+}
+
+###
+
+my $OEBPS_DIR      = 'OEBPS';
+my $META_INF_DIR   = 'META-INF';
+
+
+###
+
+my $bookCode     = '';
+my $metaFile     = '';
+my $bookXML      = '';
+my $fontFiles    = "common/fonts";
+my $language     = 'en';
+
+my $verbose = 0;
+my $noValidate = 0;
+
+### read command line options
+
+while( $#ARGV > -1 ) {
+    my $cmdLineItem = shift @ARGV;
+    if( $cmdLineItem =~ /^--meta=(.+)$/ ) {
+        $metaFile = $1;
+    }
+    elsif( $cmdLineItem =~ /^--xml=(.+)$/ ) {
+        $bookXML = $1;
+    }
+    elsif( $cmdLineItem =~ /^--language=(.+)$/ ) {
+        $language = $1;
+    }
+    elsif( $cmdLineItem =~ /^--verbose/ ) {
+        $verbose = 1;
+    }
+    elsif( $cmdLineItem =~ /^--font-files=(.+)$/ ) {
+        $fontFiles = $1;
+    }
+    else { 
+        $bookCode = $cmdLineItem;
+    }
+}
+
+if( $bookCode eq '' ) { 
+    die "$PROGRAM_NAME: Unspecified book code\n$USAGE";
+}
+if( $metaFile eq '' ) { $metaFile = "$language/.publisher/rules/epub"; }
+if( $bookXML eq '' ) { $bookXML = "$language/xml/$bookCode.xml"; }
+
+
+### read in metadata file
+
+unless( -e $metaFile && -f $metaFile && -r $metaFile ) {
+    die qq{$PROGRAM_NAME: Improper metadata file "$metaFile"\n};
+}
+
+open( META, '<', $metaFile ) or 
+    die qq{$PROGRAM_NAME: Unable to open metadata file "$metaFile": $!\n};
+
+my $meta = '';
+while( my $line = <META> ) {
+    $meta .= $line if $line !~ /^[[:space:]]*#/;
+}
+close META;
+
+### interpret rules from metadata
+my $rulesString = '';
+if( $meta =~ /^[[:space:]]*$bookCode[[:space:]]*{([^}]*)}/sm ) {
+    $rulesString = $1;
+}
+else {
+    die "$PROGRAM_NAME: Book code ($bookCode) not found in metadata file or invalid file syntax\n";
+}
+
+my @rules = split( /[[:space:]\n]*;[[:space:]\n]*/, $rulesString );
+my %rulesHash;
+foreach my $rule (@rules) {
+    if( $rule =~ /[[:space:]]*([^:]+)[[:space:]]*:[[:space:]]*(.+)$/s ) {
+	$rulesHash{ $1 } = $2;
+    }
+    else {
+	die "$PROGRAM_NAME: Unrecognized rule syntax:\n$rule\n";
+    }
+}
+
+unless( defined $rulesHash{'book-series'} ) {
+    die "$PROGRAM_NAME: no book series set\n";
+}
+
+my $SERIES = get_series($rulesHash{'book-series'}) ;
+my $SERIES_NUMBER = get_series_number($bookCode);
+
+
+### create output directories
+
+my %outPath;
+$outPath{'top'} = $rulesHash{'language'} . $FILENAME_SEPARATOR .
+                     'epub' . $FILENAME_SEPARATOR .
+                     $rulesHash{'book-series'} . $FILENAME_SEPARATOR .
+                     $bookCode;
+
+$outPath{'meta-inf'} = $outPath{'top'} . $FILENAME_SEPARATOR . $META_INF_DIR;
+$outPath{'oebps'} = $outPath{'top'} . $FILENAME_SEPARATOR . $OEBPS_DIR;
+
+foreach my $directory (keys(%outPath)) {
+    unless( -e $outPath{$directory} && -d $outPath{$directory} ) {
+        mkpath $outPath{$directory}
+            or die "$PROGRAM_NAME: Unknown error creating output directory " .
+                   "\"$outPath{$directory}\"\n";
+    }
+}
+
+### create content files
+
+
+## write coverpage 
+
+# Generate the cover image. This can be done in two ways:
+# 1.- A file is available under the directory of JPEG files for the book
+# 2.- A file is generated using imagemagick
+
+# Cover filename
+my $coverImage = $outPath{'oebps'} . $FILENAME_SEPARATOR . "cover.jpg"; 
+# Cover filename generated by Project Aon
+my $pa_coverImage = $rulesHash{'language'} . $FILENAME_SEPARATOR . "jpeg" . $FILENAME_SEPARATOR .$rulesHash{'book-series'}. $FILENAME_SEPARATOR .$bookCode . $FILENAME_SEPARATOR . "cover.jpg";
+
+if ( -e  "$pa_coverImage") {
+    # Copy the file here
+    print STDERR "DEBUG: Using cover from $pa_coverImage\n" if $verbose;
+    system "cp $pa_coverImage $coverImage";
+} else {
+
+# Use Imagemagick to generate the cover page
+
+    print STDERR "DEBUG: Will generate cover with ImageMagick\n" if $verbose;
+    my $TITLE = quote_shell(find_title($bookXML));
+    my $AUTHOR = quote_shell(find_author($bookXML));
+    my $ILLUSTRATOR = quote_shell(find_illustrator($bookXML));
+    my $convert_cmd = "";
+
+    if ( -e "$fontFiles/SouvenirStd-Demi.otf" && -e "$fontFiles/SouvenirStd-Light.otf" ) { 
+        $convert_cmd="$CONVERT -size 600x800 -background white  -font $fontFiles/SouvenirStd-Demi.otf -pointsize 32 -fill '#006633' -gravity north caption:\"\" -annotate +0+218 \"$TITLE\"  -font $fontFiles/SouvenirStd-Light.otf -pointsize 22 -fill black -annotate +0+304 '$AUTHOR' -annotate +0+333 '$ILLUSTRATOR' $coverImage"
+    } else {
+        print STDERR "WARN: Fontfiles not found, using standard font\n";
+        $convert_cmd="$CONVERT -size 600x800 -background white -pointsize 32 -fill '#006633' -gravity north caption:\"\" -annotate +0+218 \"$TITLE\"  -pointsize 22 -fill black -annotate +0+304 '$AUTHOR' -annotate +0+333 '$ILLUSTRATOR' $coverImage";
+    }
+
+    print STDERR "DEBUG: Will run '$convert_cmd'\n" if $verbose;
+    system $convert_cmd;
+}
+
+
+exit 0;
+
+################################################################################
+# Subroutines
+################################################################################
+
+
+# Determine series long name by the series acronym
+sub get_series {
+    my ($series) = @_;
+    my $series_name = "";
+    if ($series eq "lw" ) {
+        $series_name = "Lone Wolf";
+    } elsif ($series eq "ls" ) {
+        $series_name = "Lobo Solitario";
+    } elsif ($series eq "gs" ) {
+        $series_name = "Grey Star the Wizard";
+    } elsif ($series eq "fw" ) {
+        $series_name = "Freeway Warrior";
+    } else {
+        print STDERR "WARN: Undefined series. Short name given: '$series'\n";
+        $series_name = "[undefined]";
+    }
+    return $series_name;
+}
+
+# Determine the series number based on book code
+sub get_series_number {
+    my ($bookCode) = @_;
+    my $series_number = "";
+    if ( $bookCode =~ /^(\d\d)/ ) {
+        $series_number = $1;
+    } else {
+        print STDERR "WARN: Undefined series number. Book code is '$bookCode'.\n";
+        $series_number = "xx";
+    }
+    return $series_number;
+}
+
+# Determine the book title by reading the book meta information
+sub find_title {
+    my ($book) = @_;
+    my $title = ""; my $line = "";
+    open (BOOK, "head -100 $book | ") || die ("Could not read $book: $!");
+    while ($title eq "" && ( $line = <BOOK> ) ) {
+        chomp $line;
+        if ( $line =~ /<title>(.*?)<\/title>/ ) {
+            $title = $1;
+        }
+    }
+    close BOOK;
+
+    if ( $title eq "" ) {
+        print STDERR "WARN: Cannot find title for book '$book'\n";
+        $title = "[Undefined]";
+    }
+
+    return convert_entities($title);
+}
+
+# Determine the book author by reading the book meta information
+sub find_author {
+    my ($book) = @_;
+    my $author = ""; 
+    my $line = "";
+    open (BOOK, "head -100 $book |") || die ("Could not read $book: $!");
+
+    my $find_line = 0;
+    while ($author eq "" && ( $line = <BOOK> ) ) {
+        chomp $line;
+        if ( $find_line == 1 && $line =~ /<line>(.*?)<\/line>/ ) {
+            $author = $1;
+        }
+        $find_line = 1 if ( $line =~ /<creator class="medium">/ );
+        $find_line = 0 if ( $line =~ /<\/creator>/ );
+        if ( $line =~ /<creator class="author">(.*?)<\/title>/ ) {
+            $author = $1;
+        }
+    }
+    close BOOK;
+
+    if ( $author eq "" ) {
+        print STDERR "WARN: Cannot find author for book '$book'\n";
+        $author = "[Undefined]";
+    }
+
+
+    return $author;
+}
+
+# Determine the book illustrator by reading the book meta information
+sub find_illustrator {
+    my ($book) = @_;
+    my $illustrator = "";
+    my $line = "";
+    open (BOOK, "head -100 $book | ") || die ("Could not read $book: $!");
+
+    my $find_line = 0;
+    while ($illustrator eq "" && ( $line = <BOOK> ) ) {
+        chomp $line;
+        if ( $find_line == 1 && $line =~ /<line>Illustrated by (.*?)<\/line>/ ) {
+            $illustrator = $1;
+        }
+        $find_line = 1 if ( $line =~ /<creator class="medium">/ );
+        $find_line = 0 if ( $line =~ /<\/creator>/ );
+        if ( $line =~ /<creator class="illustrator">(.*?)<\/title>/ ) {
+            $illustrator = $1;
+        }
+    }
+    close BOOK;
+
+    if ( $illustrator eq "" ) {
+        print STDERR "WARN: Cannot find illustrator for book '$book'\n";
+        $illustrator = "[Undefined]";
+    }
+    if ( $language eq "en" ) {
+        $illustrator = "Illustrated by ".$illustrator;
+    } elsif ( $language eq "es" ) {
+        $illustrator = "Illustrado por ".$illustrator;
+    }
+
+    return $illustrator;
+}
+
