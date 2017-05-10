@@ -30,6 +30,9 @@ COVERIMAGE := $(AONROOTDIR)/$(BLANG)/jpeg/$(SERIES)/$(BASENAME)/skins/ebook/cove
 ifeq ($(SERIES), lw)
 FONTDIR := $(AONROOTDIR)/../fontfiles/
 endif
+ifeq ($(SERIES), ls)
+FONTDIR := $(AONROOTDIR)/../fontfiles/
+endif
 ifeq ($(SERIES), gs)
 FONTDIR := $(AONROOTDIR)/../fontfiles/
 endif
