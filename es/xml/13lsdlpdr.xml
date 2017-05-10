@@ -105,7 +105,7 @@
             <line>Raúl Moreno</line>
             <line>Javier Fernández-Sanguino</line>
         </dd>
-        <dt>Edición en PDF</dt>
+        <dt>Edición en PDF, ePUB y otros formatos de libros elecrónicos</dt>
           <dd>Javier Fernández-Sanguino</dd>
        <dt>Coordinación general</dt>
         <dd>Raúl Moreno</dd>
@@ -667,7 +667,7 @@ book available - 13, 14 and 16. They should be harmonised -->
            <p>Siempre se llevan en la Bolsa. Sólo caben cincuenta Coronas. La moneda de curso legal en Palmyrion es la Luna, pero las Coronas de Oro se aceptan de buena gana al cambio de 4 Lunas por cada Corona de Oro.</p>
           </dd>
          <dt>Comida</dt>
-          <dd><p>La Comida se lleva en la Mochila. Cada Comida cuenta como un objeto. necesitarás comer regularmente durante tu aventura. Si no tienes comida cuando se te indique comer, perderás 3 puntos de <typ class="attribute">RESISTENCIA</typ>. Si has elegido Maestría en Caza como una de tus habilidades, no tendrás que borrar una Comida cuando se te indique comer.</p></dd>
+          <dd><p>La Comida se lleva en la Mochila. Cada Comida cuenta como un objeto. Necesitarás comer regularmente durante tu aventura. Si no tienes comida cuando se te indique comer, perderás 3 puntos de <typ class="attribute">RESISTENCIA</typ>. Si has elegido Maestría en Caza como una de tus habilidades, no tendrás que borrar una Comida cuando se te indique comer.</p></dd>
          <dt>Poción de Laumspur</dt>
           <dd><p>Se trata de un poción curativa que puede devolverte 4 puntos de <typ class="attribute">RESISTENCIA</typ> cuando la tomes después de un combate. Sólo hay suficiente para una dosis. Si encuentras cualquier otra poción durante la aventura, se te indicará cuál es su efecto. Todas las pociones son Objetos de la Mochila.</p></dd>
         </dl>
@@ -690,14 +690,14 @@ book available - 13, 14 and 16. They should be harmonised -->
        <li><p>Suma los puntos que hayas ganado gracias a tus Disciplinas de Gran Maestro y a los Objetos Especiales a tu <typ class="attribute">DESTREZA EN EL COMBATE</typ> actual.</p></li>
        <li>
         <p>Resta la <typ class="attribute">DESTREZA EN EL COMBATE</typ> de tu enemigo a la suma de tus puntos. El resultado es tu Índice de Combate. Anótalo en la <a idref="action">Carta de Acción</a>.</p>
-        <p>Ejemplo</p>
+        <p>Ejemplo:</p>
         <p>Lobo Solitario (<typ class="attribute">DESTREZA EN EL COMBATE</typ> 27) es atacado por una manada de Lobos Fatídicos (<typ class="attribute">DESTREZA EN EL COMBATE</typ> 30). Ha sido tomado por sorpresa y no tiene la posibilidad de evadir su ataque. Lobo Solitario tiene la Disciplina de Gran Maestro de Embestida Psíquica a la que los Lobos Fatídicos no son inmunes, así que Lobo Solitario suma 8 puntos a su <typ class="attribute">DESTREZA EN EL COMBATE</typ>, otorgándole un total de 35 puntos de <typ class="attribute">DESTREZA EN EL COMBATE</typ>.</p>
-        <p>Resta la <typ class="attribute">DESTREZA EN EL COMBATE</typ> de los Lobos Fatídicos a la suya, obteniendo un Índice de Combate de +5. (35-30 = +5). +5 se anota en la <a idref="action">Carta de Acción</a> como ïíndice de Combate.</p>
+        <p>Resta la <typ class="attribute">DESTREZA EN EL COMBATE</typ> de los Lobos Fatídicos a la suya, obteniendo un Índice de Combate de +5. (35<ch.emdash/>30 = +5). +5 se anota en la <a idref="action">Carta de Acción</a> como ïíndice de Combate.</p>
        </li>
        <li><p><a id="stage3">Cuando tengas tu Índice de Combate</a>, elige un número de la <a idref="random">Tabla de la Suerte</a>.</p></li>
        <li>
         <p>Consulta la <a idref="crtable">Tabla de Resultados de los Combates</a>. A lo largo de la parte superior del gráfico se muestran los números de Índice de Combate. Encuentra el número que corresponde a tu Índice de Combate y crúzalo con el número aleatorio que has ha escogido (el número aleatorio aparece en el lado de la tabla). Has obtenido el número de puntos de <typ class="attribute">RESISTENCIA</typ> perdidos por Lobo Solitario y su enemigo en este asalto del combate. (E representa los puntos perdidos por el enemigo; LS representa los puntos perdidos por Lobo Solitario.)</p>
-        <p>Ejemplo</p>
+        <p>Ejemplo:</p>
         <p>El Índice de Combate entre Lobo Solitario y la Manada de Lobos Fatídicos ha quedado fijada en +5. Si le número elegido de la <a idref="random">Tabla de la Suerte</a> es un 2, entonces el resultado del primer asalto del combate es:</p>
         <ul>
          <li>Lobo Solitario pierde 3 puntos de <typ class="attribute">RESISTENCIA</typ> (más un puntos adicional por usar Embestida Psíquica).</li>
@@ -789,15 +789,15 @@ book available - 13, 14 and 16. They should be harmonised -->
 
    <data>
 
-	<section class="numbered" id="sect1">
+    <section class="numbered" id="sect1">
      <meta><title>1</title></meta>
 
      <data>
-      <p><quote>Gran Maestro,<ch.ellips/>la búsqueda debe comenzar sin demora pues el tiempo no está de nuestro lado,</quote> dice Lord Rimoah mientras camina, nerviosamente, sobre el suelo embaldosado de tu cámara del monasterio. Te muestras de acuerdo y llamas a tu prudente amigo para que te aconseje sobre la tarea que has asumido. No te sorprende que ya se haya preparado, pues confiaba en que aceptarías esta peligrosa misión. Ha arreglado tu viaje a las Tierras Libres de Palmyrion, donde un guía te espera para escoltarte hasta Ruel. El guía puede garantizarte paso seguro hasta la frontera del reino oscuro, pero no más allá. </p>
+      <p><quote>Gran Maestro,<ch.ellips/>la búsqueda debe comenzar sin demora pues el tiempo no está de nuestro lado,</quote> dice Lord Rimoah mientras camina, nerviosamente, sobre el suelo embaldosado de tu cámara del monasterio. Te muestras de acuerdo y llamas a tu prudente amigo para que te aconseje sobre la tarea que has asumido. No te sorprende que ya se haya preparado, pues confiaba en que aceptarías esta peligrosa misión. Ha arreglado tu viaje a las Tierras Libres de Palmyrion, donde un guía te espera para escoltarte hasta Ruel. El guía puede garantizarte paso seguro hasta la frontera del reino oscuro, pero no más allá.</p>
       <p>Rimoah te dice que poco se sabe sobre Ruel, salvo que el antinatural bosque que rodea y protege a la fortaleza Cenerese alberga criaturas de pesadilla. Algunas de éstas llegan a ser indescriptibles. Los pobres desdichados que sobrevivieron a la última invasión de Ruel, hablan de encuentros con gusanos gigantes que escupían ácido, que surgían por sorpresa del suelo y se tragaban regimientos enteros de sus camaradas. También hablaron de batallas que libraron contra violentas manadas de criaturas enfermizas, parecidas a ratas, a las que llamaron <quote>Vazhag</quote>. Los Cenerese criaron a estas alimañas en madrigueras subterráneas, debajo de Mogaruith, y después las soltaron en el bosque para que patrullaran y recolectasen comida. Comida con la que se alimentaría a criaturas más viles, que no se aventuraban más allá de los muros de la fortaleza.</p>
       <p><quote> Me gustaría poder decirte más, Lobo Solitario, pero muy poco se sabe sobre Ruel. Es un lugar oscuro y siniestro. Sin embargo, hay otra cosa. Algo que puedo darte y que te ayudará en tu misión.</quote>dice Rimoah, mientras extiende su mano. En su palma hay un vial con un líquido verde: la vacuna que, al menos, te protegerá de la plaga que amenaza con destruir todo lo que te es preciado. Recoges el vial, lo descorchas, y rápidamente tragas su amargo contenido.
       Inesperadamente, tu estómago se rebela, y unas violentas náuseas hacen que tengas que taparte la boca con la mano. Poco después, las náuseas desaparecen y puedes hablar.</p>
-      <p><quote>¿Durante cuánto tiempo estaré protegido?</quote> preguntas, sintiéndote algo indispuesto</p>
+      <p><quote>¿Durante cuánto tiempo estaré protegido?</quote> preguntas, sintiéndote algo indispuesto.</p>
       <p>Rimoah sonríe. <quote>Oh, Creo que estarás a salvo durante bastante tiempo, Lobo solitario. Me temo que olvidé decirte que el vial contenía una vacuna concentrada. ¡Más que suficiente para proteger a cien hombres!</quote></p>
       <p>Unas horas después estás listo para comenzar tu viaje al sur, hacia Palmyrion. Habiendo encomendado la custodia del monasterio a uno de tus Maestros Kai, Lord Rimoah y tú partís por un túnel secreto. Uno de los muchos que has hecho construir para poder entrar y salir del monasterio sin ser observado. Emergéis en un claro del Bosque de Fryelund, donde el Maestre Banedon espera para recibiros a bordo del Skyrider, su barco volador. Antes de subir a bordo y tomar el mando, te despides de Lord Rimoah, que aguardará tu regreso en el monasterio.</p>
       <choice idref="sect260"><link-text>Pasa al 260</link-text>.</choice>
@@ -849,7 +849,7 @@ book available - 13, 14 and 16. They should be harmonised -->
 
      <data>
       <p>El guerrero se aprieta las heridas y exhala su último aliento al tiempo que se derrumba, sin vida, sobre el suelo. Estás delante de su cuerpo inerte, y usas la punta de tu arma para abrir el visor de su yelmo de acero. Revelas los brutales rasgos de un Drakkar, uno de los que sobrevivieron a la caída de los Señores Oscuros y fue lo suficientemente afortunado como para encontrar refugio aquí, en Mogaruith. Por desgracia para él, nunca sospechó que se cruzaría en tu camino.</p>
-      <p>Escondes los cuerpos del Drakkar y su sabueso lo mejor que puedes antes de cerrar el portal y continuar explorando Mogaruith</p>
+      <p>Escondes los cuerpos del Drakkar y su sabueso lo mejor que puedes antes de cerrar el portal y continuar explorando Mogaruith.</p>
       <choice idref="sect205"><link-text>Pasa al 205</link-text>.</choice>
      </data>
     </section>
@@ -881,7 +881,7 @@ book available - 13, 14 and 16. They should be harmonised -->
      <meta><title>8</title></meta>
 
      <data>
-      <p>Rápidamente te agachas y te escondes tras la escalera, y permaneces oculto gracias a las sombras y a tus habilidades Kai de camuflaje. Instantes después los Vazhag aparecen, pero no lo hacen solos. Al frente va un Tzarg encadenado, un ser parecido a una rana. El Tzarg, que resopla y olfatea como un sabueso, presiona su cara contra los escalones intentando detectar tu olor. </p>
+      <p>Rápidamente te agachas y te escondes tras la escalera, y permaneces oculto gracias a las sombras y a tus habilidades Kai de camuflaje. Instantes después los Vazhag aparecen, pero no lo hacen solos. Al frente va un Tzarg encadenado, un ser parecido a una rana. El Tzarg, que resopla y olfatea como un sabueso, presiona su cara contra los escalones intentando detectar tu olor.</p>
       <choice idref="sect154">Si posees la Gran Maestría de Asimilación, <link-text>pasa al 154</link-text>.</choice>
       <choice idref="sect207">Si posees la disciplina Maestría Animal, y deseas usarla, <link-text>pasa al 207</link-text>.</choice>
       <choice idref="sect36">Si no posees ninguna de estas disciplinas de Gran Maestro, <link-text>pasa al 36</link-text>.</choice>
@@ -955,9 +955,9 @@ book available - 13, 14 and 16. They should be harmonised -->
      <meta><title>13</title></meta>
 
      <data>
-      <p>Uno de los aterradores monstruos cae sin vida por tu golpe, y enseguida te apartas de su cadáver y te abres paso entre la masa aullante de ghouls. El espectáculo que ofrece el Giganita caído, y lo imprevisto de tu acción, ha tomado a las criaturas por sorpresa. Antes de que puedan reaccionar ya has recorrido unos cuantos metros dentro del frondoso túnel. </p>
+      <p>Uno de los aterradores monstruos cae sin vida por tu golpe, y enseguida te apartas de su cadáver y te abres paso entre la masa aullante de ghouls. El espectáculo que ofrece el Giganita caído, y lo imprevisto de tu acción, ha tomado a las criaturas por sorpresa. Antes de que puedan reaccionar ya has recorrido unos cuantos metros dentro del frondoso túnel.</p>
       <p>Miras sobre tu hombro, y ves que la desgarbada horda tropieza consigo misma y cae al intentar perseguirte. Esta visión te eleva el ánimo, pero dura poco tiempo. Por encima de ellos aparece un Giganita con la boca llena de burbujeante flema. Con un giro de su poderoso cuello te lanza una bola enorme de flema que describe una parábola hacia donde tú estás.</p>
-      <p>Instintivamente te tiras al suelo y el asqueroso proyectil yerra el blanco, y acaba golpeando el tronco de un árbol. Se oye un sonido crepitante y, con un crujido, el árbol cuya base está corroída por la saliva ácida, cae al suelo. Grandes gotas de saliva salpican tu túnica, que inmediatamente empieza a quemarse. </p>
+      <p>Instintivamente te tiras al suelo y el asqueroso proyectil yerra el blanco, y acaba golpeando el tronco de un árbol. Se oye un sonido crepitante y, con un crujido, el árbol cuya base está corroída por la saliva ácida, cae al suelo. Grandes gotas de saliva salpican tu túnica, que inmediatamente empieza a quemarse.</p>
       <choice idref="sect88">Si posees la disciplina Psicoquinesia, <link-text>pasa al 88</link-text>.</choice>
       <choice idref="sect343">Si no la tienes, <link-text>pasa al 343</link-text>.</choice>
      </data>
@@ -1009,7 +1009,7 @@ book available - 13, 14 and 16. They should be harmonised -->
      <meta><title>17</title></meta>
 
      <data>
-      <p><quote>Sólo hay una persona que podría resistir el fuego de esta vara <ch.ellips/>Señor del Kai,</quote> escupe, todavía apuntándote con su bastón llameante</p>
+      <p><quote>Sólo hay una persona que podría resistir el fuego de esta vara<ch.ellips/>Señor del Kai,</quote> escupe, todavía apuntándote con su bastón llameante.</p>
       <p><quote>Y me alegra que la fortuna te haya traído hasta aquí, Lobo Solitario. Tu destino está sellado. ¡Date la vuelta y enfréntate a tu némesis!</quote></p>
       <choice idref="sect125"><link-text>Pasa al 125</link-text>.</choice>
      </data>
@@ -1021,8 +1021,8 @@ book available - 13, 14 and 16. They should be harmonised -->
      <data>
       <p>Tan pronto como tu mortal golpe parte el cuerpo de la criatura, las dos mitades explotan, esparciendo fragmentos momificados por toda la cámara. La fuerza te echa hacia atrás, y mientras caes, consigues vislumbrar una tenue y fantasmagórica sombra que sube hacia el techo. Se detiene un instante en mitad del aire, y entonces se filtra por el sólido techo como el humo a través de un velo.</p>
       <p>Antes de dejar la cámara te detienes para registrar el cofre de piedra. Dentro encuentras algunos harapos podridos y una Llave de Cobre (si deseas quedarte con esta Llave, anótalo en tu <a idref="action">Carta de Acción</a> como un objeto de Mochila).</p>
-      <p>Maldiciendo tu mala suerte abandonas la cámara y te diriges hacia la puerta del laboratorio. Al otro lado de ésta descubres una serie de estrechos pasadizos que llevan a una antecámara. Esta sala abovedada está decorada con tapices que describen leyendas Cenerese. Innobles e infames acciones que fueron perpetradas durante la Era de los Antiguos Reinos, cuando, durante aproximadamente mil años, los Cenerese tiranizaron el Norte de Magnamund</p>
-      <p>Una solitaria y pesada puerta de roble en el muro opuesto ofrece la única salida de la antecámara. Al acercarte, te das cuenta de que está entreabierta. De repente oyes un lúgubre cántico que surge de detrás de esta puerta. La curiosidad te empuja a mirar a través de la estrecha abertura y, en cuanto lo haces, un escalofrío recorre tu espalda cuando ves lo que hay tras el umbral</p>
+      <p>Maldiciendo tu mala suerte abandonas la cámara y te diriges hacia la puerta del laboratorio. Al otro lado de ésta descubres una serie de estrechos pasadizos que llevan a una antecámara. Esta sala abovedada está decorada con tapices que describen leyendas Cenerese. Innobles e infames acciones que fueron perpetradas durante la Era de los Antiguos Reinos, cuando, durante aproximadamente mil años, los Cenerese tiranizaron el Norte de Magnamund.</p>
+      <p>Una solitaria y pesada puerta de roble en el muro opuesto ofrece la única salida de la antecámara. Al acercarte, te das cuenta de que está entreabierta. De repente oyes un lúgubre cántico que surge de detrás de esta puerta. La curiosidad te empuja a mirar a través de la estrecha abertura y, en cuanto lo haces, un escalofrío recorre tu espalda cuando ves lo que hay tras el umbral.</p>
       <choice idref="sect200"><link-text>Pasa al 200</link-text>.</choice>
      </data>
     </section>
@@ -1032,7 +1032,7 @@ book available - 13, 14 and 16. They should be harmonised -->
 
      <data>
       <p>Miras hacia abajo y ves cómo una enredadera se enrolla alrededor de tu pierna. Recurres a tus poderes para repeler a la planta, pero tus órdenes parecen no tener efecto. Entonces comprendes horrorizado que esto no es una enredadera: es el miembro de un animal de la ciénaga.</p>
-      <p>Atacas y cortas el zarcillo, pero inmediatamente aparece otro, y después otro más. Veloces como serpientes te atrapan las piernas y tiran de ti hacia la ciénaga. Luchas desesperadamente mientras eres arrastrado cada vez más profundamente en el apestoso lodo. Golpeas varias veces bajo la superficie esperando herir mortalmente a tu atacante. Notas que la punta de tu arma rasga algo y, momentáneamente, la presa de la criatura se debilita, pero sólo para volver con más fuerza y tenacidad</p>
+      <p>Atacas y cortas el zarcillo, pero inmediatamente aparece otro, y después otro más. Veloces como serpientes te atrapan las piernas y tiran de ti hacia la ciénaga. Luchas desesperadamente mientras eres arrastrado cada vez más profundamente en el apestoso lodo. Golpeas varias veces bajo la superficie esperando herir mortalmente a tu atacante. Notas que la punta de tu arma rasga algo y, momentáneamente, la presa de la criatura se debilita, pero sólo para volver con más fuerza y tenacidad.</p>
       <p>Entonces sientes un dolor lacerante en tus muslos cuando hileras de afilados pinchos surgen de los zarcillos de la criatura y perforan tu piel. Lanzas un grito agónico, y éste es respondido por el sonido de una risa maliciosa y burbujeante que surge de debajo de la superficie de la turbia piscina.</p>
       <choice idref="sect339">Si posees Maestría Animal, <link-text>pasa al 339</link-text>.</choice>
       <choice idref="sect47">Si no tienes esta Disciplina, <link-text>pasa al 47</link-text>.</choice>
@@ -1144,7 +1144,7 @@ book available - 13, 14 and 16. They should be harmonised -->
 
      <data>
       <p>Sintiéndote inquieto por tu encuentro con los mortales cangrejos escupidores de ácido del túnel, desenvainas tu arma y desciendes por las escaleras con renovada cautela. Sesenta escalones después llegas a una pequeña caverna donde tres túneles convergen, desde el norte, el sur, y el oeste.</p>
-      <p>Hay muchas huellas en el polvoriento suelo y tus habilidades de caza Magnakai te permiten leerlas con facilidad. Están restringidas a los túneles oeste y sur y, considerando su tamaño y profundidad, fueron hechas por grandes criaturas con apariencia de rata, pero que caminan erguidas como los humanos. Por lo que te han dicho sobre los habitantes de Ruel, estás seguro de que estas huellas las hicieron los Vazhag, los guerreros alimaña criados por los Cenerese. .</p>
+      <p>Hay muchas huellas en el polvoriento suelo y tus habilidades de caza Magnakai te permiten leerlas con facilidad. Están restringidas a los túneles oeste y sur y, considerando su tamaño y profundidad, fueron hechas por grandes criaturas con apariencia de rata, pero que caminan erguidas como los humanos. Por lo que te han dicho sobre los habitantes de Ruel, estás seguro de que estas huellas las hicieron los Vazhag, los guerreros alimaña criados por los Cenerese.</p>
       <p>Entre las huellas encuentras otras que distan mucho de ser de rata. Estás a punto de examinarlas más de cerca cuando repentinamente oyes sonidos de movimiento que llegan del túnel oeste; un grupo de criaturas se está aproximando. Inmediatamente dejas de rastrear y miras alrededor buscando algún lugar donde esconderte.</p>
       <choice idref="sect35">Si deseas parapetarte en el túnel del norte, <link-text>pasa al 35</link-text>.</choice>
       <choice idref="sect201">Si quieres hacerlo en el túnel del sur, <link-text>pasa al 201</link-text>.</choice>
@@ -1596,7 +1596,7 @@ book available - 13, 14 and 16. They should be harmonised -->
       </ul>
       <p>Si decides quedarte con algún objeto, recuerda anotarlo en tu <a idref="action">Carta de Acción</a>.</p>
       <p>Tus sentidos Magnakai te dicen que la vara dorada ya no posee ninguna aura mágica; sus poderes destructivos se desvanecieron en el momento en que su portador expiró. Te inclinas para arrancarla de la mano del druida muerto, pero tan pronto tus dedos tocan su superficie metálica se desintegra en un fino y maloliente polvo.</p>
-      <p>Con el crepúsculo a sólo una hora, abandonas el claro por la brecha y te apresuras por el camino embarrado</p>
+      <p>Con el crepúsculo a sólo una hora, abandonas el claro por la brecha y te apresuras por el camino embarrado.</p>
       <choice idref="sect10"><link-text>Pasa al 10</link-text>.</choice>
      </data>
     </section>
@@ -1628,7 +1628,7 @@ book available - 13, 14 and 16. They should be harmonised -->
 
      <data>
       <p>Esperas en la esquina, confiando que tus agudos sentidos te indiquen cuándo atacar. Cuando juzgas que las pisadas y el áspero aliento de los Vazhags están casi a tu altura, saltas y te enfrentas a ellos, golpeando al primero de los hombres-rata con tu arma. La caja torácica de la bestia se hunde bajo el golpe, y sus cuatro compañeros se quedan helados de la impresión cuando el cuerpo se desploma, muerto, ante sus pies. Antes de que se recuperen, te abres paso entre sus filas y escapas por el corredor.</p>
-      <p>El túnel continúa hacia el este durante varios kilómetros y, con la excepción de algún centinela Vazhag, está virtualmente desierto. Finalmente llegas a la entrada de otra sala, menor que la caverna de lava pero igual de concurrida. La luz diurna se proyecta en esta sala a través de un gran arco guardado por Vazhag con armadura, y por parejas de perros de guerra con piel rugosa que están sujetos por correas. Más allá del arco puedes ver un camino que se pierde en un cerro distante</p>
+      <p>El túnel continúa hacia el este durante varios kilómetros y, con la excepción de algún centinela Vazhag, está virtualmente desierto. Finalmente llegas a la entrada de otra sala, menor que la caverna de lava pero igual de concurrida. La luz diurna se proyecta en esta sala a través de un gran arco guardado por Vazhag con armadura, y por parejas de perros de guerra con piel rugosa que están sujetos por correas. Más allá del arco puedes ver un camino que se pierde en un cerro distante.</p>
       <p>Tu súbita aparición impulsa a los guardias a entrar en acción. Les gritan órdenes a sus brutales perros y sueltan sus correas. Con un temible rugido, los perros de guerra saltan hacia delante y se lanzan a por tu cuello.</p>
       <choice idref="sect209">Si tienes la Disciplina Maestría Animal, <link-text>pasa al 209</link-text>.</choice>
       <choice idref="sect100">De lo contrario, <link-text>pasa al 100</link-text>.</choice>
@@ -2658,7 +2658,7 @@ book available - 13, 14 and 16. They should be harmonised -->
      <meta><title>143</title></meta>
 
      <data>
-      <p>Recurres a toda tu fuerza para resistirte al terrible poder que está absorbiéndote hacia su corazón. desesperadamente suplicas a los Dioses Kai e Ishir que te ayuden, y como respuesta a tus plegarias el vórtice giratorio comienza a desvanecerse.</p>
+      <p>Recurres a toda tu fuerza para resistirte al terrible poder que está absorbiéndote hacia su corazón. Desesperadamente suplicas a los Dioses Kai e Ishir que te ayuden, y como respuesta a tus plegarias el vórtice giratorio comienza a desvanecerse.</p>
       <p>Entonces, abruptamente, el embudo se evapora y te quedas sobre tus manos y rodillas, sin aliento y temblando, mirando el frío suelo de roca de la sala del trono de Cadak. Lentamente te pones en pie; y entonces un tenue sonido te avisa de que algo o alguien se mueve en la antecámara.</p>
       <choice idref="sect222"><link-text>Pasa al 222</link-text>.</choice>
      </data>
@@ -2750,7 +2750,7 @@ book available - 13, 14 and 16. They should be harmonised -->
      <meta><title>150</title></meta>
 
      <data>
-      <p>Más allá de la puerta se encuentra una sala que hiede a descomposición. Sus muros están adornados con unas horripilantes pinturas que representan escenas terribles de matanzas humanas. Una en particular te llama la atención y, aunque tratas de ignorarla, encuentras que no puedes apartar la mirada. Muestra un foso en el que hay humanos indefensos, retorciéndose y gritando angustiosamente mientras son lentamente consumidos por jaurías de perros de la plaga. esta escena te impresiona profundamente ya que los humanos condenados que en ella aparecen poseen claros rasgos Sommerlundeses.</p>
+      <p>Más allá de la puerta se encuentra una sala que hiede a descomposición. Sus muros están adornados con unas horripilantes pinturas que representan escenas terribles de matanzas humanas. Una en particular te llama la atención y, aunque tratas de ignorarla, encuentras que no puedes apartar la mirada. Muestra un foso en el que hay humanos indefensos, retorciéndose y gritando angustiosamente mientras son lentamente consumidos por jaurías de perros de la plaga. Esta escena te impresiona profundamente ya que los humanos condenados que en ella aparecen poseen claros rasgos Sommerlundeses.</p>
       <p>Con dificultad apartas la mirada y te obligas a mirar a otro lugar de esta sala hostil. Ves columnas que se alzan hasta el techo, cubiertas por enredaderas y hongos que proyectan una malsana y pálida luz. Más adelante ves otra puerta, idéntica a aquélla por la que entraste, y ante ella hay un escritorio sobre un pedestal de piedra verde. Una criatura está sentada al escritorio, doblado sobre las páginas abiertas de un libro en el que está escribiendo con una pluma. Cuando te acercas, deja de garabatear y coloca la pluma en un bote de tinta con forma de cráneo humano. La criatura alza su cabeza calva y te mira fijamente, sin parpadear, con su único ojo.</p>
 
       <illustration class="float">
@@ -2882,19 +2882,19 @@ book available - 13, 14 and 16. They should be harmonised -->
         <instance class="text">
         <table>
          <tr>
-	  <th colspan="3" scope="colgroup">Rejilla de números</th>
-	 </tr>
-	 <tr>
+           <th colspan="3" scope="colgroup">Rejilla de números</th>
+         </tr>
+         <tr>
           <td>4</td>
           <td>9</td>
           <td>2</td>
          </tr>
-	 <tr>
+         <tr>
           <td>3</td>
           <td>5</td>
           <td>7</td>
          </tr>
-	 <tr>
+         <tr>
           <td>8</td>
           <td>1</td>
           <td>6</td>
@@ -3433,7 +3433,7 @@ book available - 13, 14 and 16. They should be harmonised -->
        <instance class="pdf" src="ill12.pdf" width="386" height="642" />
       </illustration>
 
-      <p>Miras la congregación con repugnancia. Principalmente son Cenerese, pero otros se encuentran entre ellos, viejos adversarios cuya procedencia reconoces enseguida. Acólitos de Vashna, Drakkarim, forajidos Vassagonianos, Hammerlandeses, e incluso algunos Giaks. Sin duda, restos de los ejércitos de los Darklands, que encontraron refugio aquí después de la muerte de sus señores</p>
+      <p>Miras la congregación con repugnancia. Principalmente son Cenerese, pero otros se encuentran entre ellos, viejos adversarios cuya procedencia reconoces enseguida. Acólitos de Vashna, Drakkarim, forajidos Vassagonianos, Hammerlandeses, e incluso algunos Giaks. Sin duda, restos de los ejércitos de los Darklands, que encontraron refugio aquí después de la muerte de sus señores.</p>
       <p>Un ruido en el pasillo anterior te avisa de que alguien se aproxima a la antecámara. Para eludirlo, te deslizas dentro de la sala de oraciones y te escondes en las sombras proyectadas por una columna que sustenta el techo. Momentos después, tres druidas entran en la sala y cierran la puerta antes de ocupar sus lugares entre los fieles.</p>
       <choice idref="sect265"><link-text>Pasa al 265</link-text>.</choice>
      </data>
@@ -3451,10 +3451,7 @@ book available - 13, 14 and 16. They should be harmonised -->
      </data>
     </section>
 
-    <!-- Puedes ver al pobre diablo convulsionando, enredado en sus
-ataduras justo antes de quedar súbitamente quieto-->
-
-	<section class="numbered" id="sect202">
+    <section class="numbered" id="sect202">
      <meta><title>202</title></meta>
 
      <data>
@@ -3843,19 +3840,19 @@ ataduras justo antes de quedar súbitamente quieto-->
         <instance class="text">
         <table>
          <tr>
-	  <th colspan="3" scope="colgroup">Rejilla de Números</th>
-	 </tr>
-	 <tr>
+          <th colspan="3" scope="colgroup">Rejilla de Números</th>
+         </tr>
+         <tr>
           <td>4</td>
           <td>9</td>
           <td>2</td>
          </tr>
-	 <tr>
+         <tr>
           <td>3</td>
           <td>5</td>
           <td>7</td>
          </tr>
-	 <tr>
+         <tr>
           <td>8</td>
           <td>1</td>
           <td>6</td>
@@ -5497,7 +5494,7 @@ ataduras justo antes de quedar súbitamente quieto. Una de las siluetas vestidas 
      <meta><title>346</title></meta>
 
      <data>
-      <p>Tu ascenso a la brecha pasa inadvertido a los guardias Vazhag y emerges en la ladera de una montaña, en un lugar oculto bajo un saliente, rodeado por matorrales y rocas erosionadas por el viento. La luz de la mañana ilumina las colinas circundantes, y más allá ves una gran extensión de bosque, un mar de enfermizos árboles de color gris verdoso que irradian una inconfundible aura de maldad. La posición del Sol y tu habilidad de Sentido de la Orientación te indican que estás mirando, desde las estribaciones orientales de las Montañas de Skardos, el Bosque de Ruel. .</p>
+      <p>Tu ascenso a la brecha pasa inadvertido a los guardias Vazhag y emerges en la ladera de una montaña, en un lugar oculto bajo un saliente, rodeado por matorrales y rocas erosionadas por el viento. La luz de la mañana ilumina las colinas circundantes, y más allá ves una gran extensión de bosque, un mar de enfermizos árboles de color gris verdoso que irradian una inconfundible aura de maldad. La posición del Sol y tu habilidad de Sentido de la Orientación te indican que estás mirando, desde las estribaciones orientales de las Montañas de Skardos, el Bosque de Ruel.</p>
       <p>El terreno parece desierto, el único rasgo inusual es un ancho camino de tierra que se dirige hacia el este a través de las colinas, hasta una brecha en el sombrío bosque. Consultas tu <a idref="map">mapa</a>  y llegas a la conclusión de que debe de ser el Camino de Skardos, la ruta secreta usada por los Ceners, que lleva directamente hasta su fortaleza de Mogaruith. Decides seguir el camino, pero primero (a no ser que poseas la Disciplina de Maestría en Caza) debes tomar una Comida o perder 3 puntos de <typ class="attribute">RESISTENCIA</typ>.</p>
       <choice idref="sect230">Para continuar, <link-text>pasa al 230</link-text>.</choice>
      </data>
@@ -6112,7 +6109,7 @@ ataduras justo antes de quedar súbitamente quieto. Una de las siluetas vestidas 
       </meta>
 
       <data>
-      <p>A lo largo de todo el libro se han cambiado a mayúsculas iniciales algunos términos para que estéticamente sea más agradable a la lectura. Estos cambios se refieren a ciertos títulos (Señores de la Oscuridad, Señores del Kai, Lord,...), objetos (Coronas de Oro, Laumspur,...) y monstruos (Helghast, Szall, Drakar,...).</p>
+      <p>A lo largo de todo el libro se han cambiado a mayúsculas iniciales algunos términos para que estéticamente sea más agradable a la lectura. Estos cambios se refieren a ciertos títulos (Señores de la Oscuridad, Señores del Kai, Lord<ch.ellips/>), objetos (Coronas de Oro, Laumspur<ch.ellips/>) y monstruos (Helghast, Szall, Drakar<ch.ellips/>).</p>
       </data>
      </section>
     </data>
