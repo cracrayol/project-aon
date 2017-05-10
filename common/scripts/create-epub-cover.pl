@@ -308,6 +308,9 @@ sub find_illustrator {
         if ( $find_line == 1 && $line =~ /<line>Illustrated by (.*?)<\/line>/ ) {
             $illustrator = $1;
         }
+        if ( $find_line == 1 && $line =~ /<line>Ilustrado por (.*?)<\/line>/ ) {
+            $illustrator = $1;
+        }
         $find_line = 1 if ( $line =~ /<creator class="medium">/ );
         $find_line = 0 if ( $line =~ /<\/creator>/ );
         if ( $line =~ /<creator class="illustrator">(.*?)<\/title>/ ) {
@@ -318,7 +321,11 @@ sub find_illustrator {
 
     if ( $illustrator eq "" ) {
         print STDERR "WARN: Cannot find illustrator for book '$book'\n";
-        $illustrator = "[Undefined]";
+        if ( $language eq "en" ) {
+            $illustrator = "[Unknown]";
+        } elsif ( $language eq "es" ) {
+            $illustrator = "[Desconocido]";
+        }
     }
     if ( $language eq "en" ) {
         $illustrator = "Illustrated by ".$illustrator;
@@ -329,3 +336,43 @@ sub find_illustrator {
     return $illustrator;
 }
 
+sub convert_entities {
+# Convert character entities to their correspondent values
+    my ($text) = @_;
+
+    $text =~ s/\<ch.apos\/\>/'/g; 
+    $text =~ s/\<ch.nbsp\/\>/ /g;
+    $text =~ s/\<ch.plusmn\/\>/+-/g;
+    $text =~ s/\<ch.aacute\/\>/á/g;
+    $text =~ s/\<ch.eacute\/\>/é/g;
+    $text =~ s/\<ch.iacute\/\>/í/g;
+    $text =~ s/\<ch.oacute\/\>/ó/g;
+    $text =~ s/\<ch.uacute\/\>/ú/g;
+    $text =~ s/\<ch.ntilde\/\>/ñ/g;
+    $text =~ s/\<ch.Aacute\/\>/Á/g;
+    $text =~ s/\<ch.Eacute\/\>/É/g;
+    $text =~ s/\<ch.Iacute\/\>/Í/g;
+    $text =~ s/\<ch.Oacute\/\>/Ó/g;
+    $text =~ s/\<ch.Uacute\/\>/Ú/g;
+    $text =~ s/\<ch.auml\/\>/ä/g;
+    $text =~ s/\<ch.euml\/\>/ë/g;
+    $text =~ s/\<ch.iuml\/\>/ï/g;
+    $text =~ s/\<ch.ouml\/\>/ö/g;
+    $text =~ s/\<ch.uuml\/\>/ü/g;
+    $text =~ s/\<ch.Ntilde\/\>/Ñ/g;
+    $text =~ s/\<ch.acute\/\>/´/g;
+    $text =~ s/\<ch.iexcl\/\>/¡/g;
+    $text =~ s/\<ch.iquest\/\>/¿/g;
+    $text =~ s/\<ch.laquo\/\>/«/g;
+    $text =~ s/\<ch.raquo\/\>/»/g;
+    $text =~ s/\<ch.ampersand\/\>/&/g;
+
+    return $text;
+}
+
+# Quote metacaracters for shell use
+sub quote_shell {
+    my ($text) = @_;
+    $text =~ s/'/\\'/g; 
+    return $text;
+}
