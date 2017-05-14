@@ -94,7 +94,7 @@ XSLFILES=$(RELXSLDIR)/epub-opf-metadata.xsl $(RELXSLDIR)/epub-xhtml.xsl  \
 
 # Generate the ePub file from the XML file
 epub: $(EPUB)
-$(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB): $(XMLFILE) $(EPUBSCRIPT) $(XSLFILES)
+$(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB): $(XMLFILE) $(XSLFILES)
 	cd $(AONROOTDIR) && perl $(EPUBSCRIPT) --language=$(BLANG) --font-files=$(FONTDIR) $(BASENAME) 
 # Create cover page if not existing
 	@if [ ! -e $(COVERIMAGE) ] ; then \
