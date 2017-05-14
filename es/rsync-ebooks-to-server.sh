@@ -40,7 +40,7 @@ for lang in $LANGS; do
         fi
         echo
         set +e
-        rsync ${OPTS} ${EXTRAOPTS} ${COMPLETE_SOURCE_DIR} ${DESTHOST}:${COMPLETE_DESTDIR}
+        rsync ${OPTS} ${EXTRAOPTS} ${COMPLETE_SOURCE_DIR} ${DESTHOST}:${COMPLETE_DEST_DIR}
         set -e
     done
 done
