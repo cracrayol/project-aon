@@ -32,7 +32,7 @@ for lang in $LANGS; do
         COMPLETE_SOURCE_DIR="${ROOTSOURCEDIR}/${SOURCEDIR}"
         COMPLETE_DEST_DIR="${ROOTDESTDIR}/${DESTDIR}"
         echo "ORIGIN: ${COMPLETE_SOURCE_DIR}"
-        echo "DESTINATION: ${DESTHOST}:${COMPLETE_DESTDIR}"
+        echo "DESTINATION: ${DESTHOST}:${COMPLETE_DEST_DIR}"
         if [ ! -e "${COMPLETE_SOURCE_DIR}" ] || [ ! -d "${COMPLETE_SOURCE_DIR}" ] ; then
             echo "ERROR: Directory ${COMPLETE_SOURCE_DIR} does not exist or is not a directory. Aborting." >&2
             echo "HINT: Did you run 'make publish' in the epub directory?" >&2
