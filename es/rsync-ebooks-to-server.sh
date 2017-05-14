@@ -24,13 +24,12 @@ for lang in $LANGS; do
     [ "$lang" = "en" ] && DIR=lw
     [ "$lang" = "es" ] && DIR=ls
     for type in $FORMATS; do
-        echo "Copying format ${type} in language ${lang}"
-        echo "Syncing files of type $f in language ${lang}"
+        echo "Syncing files of type ${type} in language ${lang}"
 
         SOURCEDIR="${lang}/${type}"
-        DESTDIR=$SOURCEDIR
-        COMPLETE_SOURCE_DIR="${ROOTSOURCEDIR}/${SOURCEDIR}"
-        COMPLETE_DEST_DIR="${ROOTDESTDIR}/${DESTDIR}"
+        DESTDIR="${lang}/${type}"
+        COMPLETE_SOURCE_DIR="${ROOTSOURCEDIR}/${SOURCEDIR}/"
+        COMPLETE_DEST_DIR="${ROOTDESTDIR}/${DESTDIR}/"
         echo "ORIGIN: ${COMPLETE_SOURCE_DIR}"
         echo "DESTINATION: ${DESTHOST}:${COMPLETE_DEST_DIR}"
         if [ ! -e "${COMPLETE_SOURCE_DIR}" ] || [ ! -d "${COMPLETE_SOURCE_DIR}" ] ; then
