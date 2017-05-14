@@ -5,7 +5,7 @@ SERIES=ls
 # Book name
 BASENAME=$(shell basename $(CURDIR))
 # Language of the file
-BLANG := en
+BLANG := es
 
 # *English* book name (needed to find the image files)
 ORIGSERIES=lw
