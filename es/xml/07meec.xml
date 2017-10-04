@@ -11,32 +11,6 @@
 
 <gamebook xml:lang="es-ES" version="0.11">
 
-<!--
-$Id: 07cd.xml,v 1.4 2003/01/27 22:11:39 jblake Exp jblake $
-
-$Log: 07cd.xml,v $
-Revision 1.4  2003/01/27 22:11:39  jblake
-Checkin prior to global footnote change
-
-Revision 1.3  2003/01/04 17:15:05  jblake
-Published
-
-Revision 1.2  2002/12/04 20:34:24  jblake
-XMl cleanup. Still needs errata list.
-
-Revision 1.1  2002/12/03 20:47:34  twolmer
-
-WOLM continously: fix XML transformation errors, note errata
-WOLM action 1: replaces apostrophes with <quote>s and &apos;s
-WOLM action 2: inserted footnotes
-WOLM action 3: fixed character attributes, replaced various dashes with character entities, removed shortname
-WOLM action 4: inserted large illustrations
-WOLM action 5: inserted most of the extramatter
-WOLM action 6: validate and correct the faults
-WOLM what still missing: errata in the backmatter, the secondary illustrations, the list of secondary illustrations
-
--->
-
  <meta>
   <title>Muerte en el Castillo</title>
   <creator class="short">Joe Dever y Gary Chalk</creator>
@@ -122,7 +96,10 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
            <p>Simon Osborne</p>
          </dd>
         <dt>Edición XML</dt>
-         <dd>Raúl Moreno</dd>
+         <dd>
+            <p>Raúl Moreno</p>
+            <p>Javier Fernández-Sanguino</p>
+         </dd>
         <dt>Ilustraciones alternativas</dt>
          <dd>
            <p>JC Alvarez (Carta de Acción)</p>
@@ -506,13 +483,12 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
           </dd>
          <dt>Objetos especiales</dt>
           <dd>
-           <p>Cada objeto especial tiene una finalidad o un efecto determinados. Unas veces esto se te dirá cuando descubras el objeto, otras te será revelado más adelante conforme avanza la aventura. Si has concluido con éxito anteriores libros de la serie de Lobo Solitario, ya posees algunos Objetos Especiales.</p>
-           <p><strong>El número máximo de Objetos Especiales que un Maestro del Kai puede llevar durante una aventura es 12. Podrás dejar el resto en un lugar seguro del monasterio del Kai.</strong></p>
+           <p>Los objetos especiales no se llevan en la mochila. Cada objeto especial tiene una finalidad o un efecto determinados. Unas veces esto se te dirá cuando descubras el objeto, otras te será revelado más adelante conforme avanza la aventura. Si has concluido con éxito anteriores libros de la serie de <cite>Lobo Solitario</cite>, ya posees algunos Objetos Especiales.</p>
           </dd>
           <dt>Coronas de Oro</dt>
            <dd>
-		    <p>La moneda de curso legal en Dessi es la Corona, una pequeña moneda de oro. Cada vez que mates a un enemigo y registres su cadáver puedes apropiarte las Coronas de Oro que tenga y guardarlas en tu bolsa. (Recuerda que en la bolsa sólo puedes llevar un máximo de 50 Coronas de Oro).</p>
-		   </dd>
+            <p>La moneda de curso legal en Dessi es la Corona, una pequeña moneda de oro. Cada vez que mates a un enemigo y registres su cadáver puedes apropiarte las Coronas de Oro que tenga y guardarlas en tu bolsa. (Recuerda que en la bolsa sólo puedes llevar un máximo de 50 Coronas de Oro).</p>
+           </dd>
          <dt>Comida</dt>
           <dd>
            <p>Necesitarás comer regularmente durante tu aventura. Si no tienes comida cuando se te ordene comer perderás 3 puntos de <typ class="attribute">RESISTENCIA</typ>. Si has elegido la Disciplina del Magnakai Arte de Cazar como una de tus destrezas, no tienes necesidad de tachar una comida cuando se te dé la orden de comer.</p>
@@ -972,7 +948,7 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
      <data>
       <p>El pasadizo conduce a un enorme complejo de celdas que albergan a los esclavos de Kazan-Oud, un grupo miserable de seres de piel oscura, ojos afligidos y espaldas encorvadas por años de duro trabajo. Los prisioneros oprimen sus tristes caras contra las diminutas ventanas enrejadas de sus celdas, llevados de la curiosidad de ver al guerrero blanco que camina erguido entre ellas.</p>
       <p>Silban a tu paso hasta que en todo el complejo retumban sus silbidos de desprecio. Al final del bloque hay una celda que parece una jaula, negando a su prisionero el mínimo grado de intimidad concedido a los demás. A través de los barrotes ves a un hombre de piel oscura que duerme sobre el suelo cubierto de paja. Su pelo rubio y su túnica roja y dorada están manchados de sangre y mugre. La llave de esa celda cuelga de una clavija en la pared inmediata.</p>
-      <choice idref="sect113">Si quieres tomar esa Llave y liberar al prisionero, <link-text>pasa al 113</link-text>.</choice>
+      <choice idref="sect113">Si quieres tomar esa llave y liberar al prisionero, <link-text>pasa al 113</link-text>.</choice>
       <choice idref="sect142">Si prefieres dejarle y seguir adelante, <link-text>pasa al 142</link-text>.</choice>
      </data>
     </section>
@@ -2157,7 +2133,7 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
      <meta><title>120</title></meta>
 
      <data>
-      <p>El lobo se abalanza sobre tu pecho, desga-rrándote la túnica con sus garras y arrojándote al suelo con su monstruoso peso (pierdes 4 puntos de <typ class="attribute">RESISTENCIA</typ>). Sus colmillos relucen y su saliva fétida te salpica el rostro cuando tratas desesperadamente de librarte de sus mortíferas mandíbulas.</p>
+      <p>El lobo se abalanza sobre tu pecho, desgarrándote la túnica con sus garras y arrojándote al suelo con su monstruoso peso (pierdes 4 puntos de <typ class="attribute">RESISTENCIA</typ>). Sus colmillos relucen y su saliva fétida te salpica el rostro cuando tratas desesperadamente de librarte de sus mortíferas mandíbulas.</p>
       <p>De repente suena un terrible alarido. El lobo se aparta asustado, con los ojos fijos en unos crepitantes chorros de fuego. En ese momento, una forma humana hace su aparición, gritando salvajemente y tambaleándose. El lobo aúlla y se aleja a todo correr, mientras la llameante figura avanza hacia ti, dando con los brazos violentos golpes a diestro y siniestro.</p>
       <choice idref="sect72">Si posees la Disciplina del Magnakai de la Concentración, <link-text>pasa al 72</link-text>.</choice>
       <choice idref="sect126">Si quieres defenderte, <link-text>pasa al 126</link-text>.</choice>
@@ -2178,7 +2154,7 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
      <meta><title>122</title></meta>
 
      <data>
-      <p>Te ves obligado a abrirte camino a brazo partido a través de la horda de criaturas que se amontonan en los escalones que conducen al malecón Del mismo suelo surgen arrastrándose criaturas: por doquier ves manos enlodadas y ennegrecidas que asoman por las grietas de la superficie del paredón rocoso tratando de escapar de Kazan-Oud.</p>
+      <p>Te ves obligado a abrirte camino a brazo partido a través de la horda de criaturas que se amontonan en los escalones que conducen al malecón. Del mismo suelo surgen arrastrándose criaturas: por doquier ves manos enlodadas y ennegrecidas que asoman por las grietas de la superficie del paredón rocoso tratando de escapar de Kazan-Oud.</p>
       <p>Cerca de la base de los escalones, un grupo de repugnantes esclavos tiran de ti hacia abajo. Pagan caro su error, pero antes han logrado arrancarte la mochila de los hombros (tacha en tu <a idref="action">Carta de Acción</a> la mochila y todo lo que contiene).</p>
       <p>Cuando llegas al malecón, estás cubierto de arriba abajo de la sangre de tus enemigos. Tienes un aspecto tan aterrador que nadie te ofrece resistencia y las criaturas se arrojan al lago antes que enfrentarse al temible guerrero de erguidas espaldas y piel blanca que ha matado a sus congéneres. Debajo de los escalones del malecón descubres un arco, tapiado por un lado y con una puerta de piedra cubierta de algas en el otro. Dentro encuentras una pequeña barca de mimbre y un remo.</p>
       <p>Echas la barca al agua, te montas en ella y remas frenéticamente hacia el lejano resplandor del escudo de energía. Has superado los horrores de Kazan-Oud y el grito ensordecedor de la agonizante fortaleza resuena en tus oídos.</p>
@@ -2524,7 +2500,7 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
       <p>Los huevos están calientes y a través de las cáscaras sientes ligeros movimientos en su interior. Los apartas con cuidado y entre los desechos de la nidada descubres varios objetos de interés:</p>
       <ul>
        <li>MAZA (Armas).</li>
-       <li>CHALECO DE MALLA (Objetos especiales). Al llevarlo puesto, suma 2 puntos a tu <typ class="attribute">RESISTENCIA</typ>.</li>
+       <li>COTA DE CUERO (Objetos especiales). Al llevarlo puesto, suma 2 puntos a tu <typ class="attribute">RESISTENCIA</typ>.</li>
        <li>ESPADA (Armas).</li>
        <li>CASCO (Objetos especiales). Al  llevarlo puesto, suma 2 puntos a tu <typ class="attribute">RESISTENCIA</typ>.</li>
        <li>MANTA (Objetos de la mochila).</li>
@@ -2962,7 +2938,7 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
      <meta><title>182</title></meta>
 
      <data>
-      <p>No encuentras dificultad en enlazar la em-puñadura de la Espada con tu cuerda y tirar del arma hacia ti. El arma es muy corriente y tiene una pesada hoja de pobre calidad, indigna de tu vaina. Pero en ese extraño y hostil laberinto, la tosca Espada te ayuda a recuperar la esperanza de sobrevivir.</p>
+      <p>No encuentras dificultad en enlazar la empuñadura de la Espada con tu cuerda y tirar del arma hacia ti. El arma es muy corriente y tiene una pesada hoja de pobre calidad, indigna de tu vaina. Pero en ese extraño y hostil laberinto, la tosca Espada te ayuda a recuperar la esperanza de sobrevivir.</p>
       <choice idref="sect298">Si quieres abandonar la cámara por el túnel de la izquierda, <link-text>pasa al 298</link-text>.</choice>
       <choice idref="sect322">Si prefieres salir por el túnel de la derecha, <link-text>pasa al 322</link-text>.</choice>
      </data>
@@ -3004,7 +2980,7 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
 
      <data>
       <p>Cuando le asestas el golpe definitivo, tu enemigo lanza un grito de agonía y se materializa al caer a tus pies. A primera vista parece un ser humano, pero al examinarlo más de cerca descubres que no lo es. Sus ojos, ahora vidriosos y sin vida, se asemejan a los de un gato; sus dedos son cortos y terminan en garras y su mandíbula inferior sobresale varios centímetros de la superior. Su piel tiene numerosas cicatrices, pero no causadas por heridas en combate, sino por operaciones quirúrgicas.</p>
-      <p>No hay ni restos del látigo con el que te ha atacado, pero encuentras una lanza sujeta al hombro del cadáver por una cuerda y un Silbato de plata (apúntalo entre los objetos especiales en tu <a idref="action">Carta de Acción</a>) atado al cuello por una cadena. Instintivamente te llevas el silbato a los labios y soplas, pero no emite ningún sonido. Al volverte hacia el foso, divisas una sólida plancha de metal azul que lo atraviesa de un extremo a otro.</p>
+      <p>No hay ni restos del látigo con el que te ha atacado, pero encuentras una Lanza sujeta al hombro del cadáver por una cuerda y un Silbato de plata (apúntalo entre los objetos especiales en tu <a idref="action">Carta de Acción</a>) atado al cuello por una cadena. Instintivamente te llevas el silbato a los labios y soplas, pero no emite ningún sonido. Al volverte hacia el foso, divisas una sólida plancha de metal azul que lo atraviesa de un extremo a otro.</p>
       <choice idref="sect6">Si quieres cruzarla, <link-text>pasa al 6</link-text>.</choice>
       <choice idref="sect64">Si prefieres deshacer lo andado por el corredor, <link-text>pasa al 64</link-text>.</choice>
      </data>
@@ -3015,7 +2991,7 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
 
      <data>
       <p>El túnel desciende hasta una vasta caverna. Espirales de humo amarillo se elevan a ambos lados de una estrecha pasarela de piedra que conduce a su centro. Allí empalma con otra pasarela que discurre de este a oeste. Avanzas por la pasarela con precaución. El hedor del humo sulfúreo y la vista del oscuro y profundo vacio que tienes a derecha e izquierda te revuelven el estómago.</p>
-      <p>AI llegar a la confluencia de las dos pasarelas oyes el eco de pisadas de alguien que corre. El sonido se hace más fuerte y. de repente, surge de la oscuridad un hombre cubierto con armadura de cuero. Sus botas claveteadas levantan chispas del suelo de piedra cuando el hombre resbala al detenerse. El sudor le baña el enjuto y curtido rostro y en sus ojos se refleja el miedo. Inquieto, vuelve la mirada atrás, antes de desenvainar su espada y dirigirse hacia ti.</p>
+      <p>Al llegar a la confluencia de las dos pasarelas oyes el eco de pisadas de alguien que corre. El sonido se hace más fuerte y. de repente, surge de la oscuridad un hombre cubierto con armadura de cuero. Sus botas claveteadas levantan chispas del suelo de piedra cuando el hombre resbala al detenerse. El sudor le baña el enjuto y curtido rostro y en sus ojos se refleja el miedo. Inquieto, vuelve la mirada atrás, antes de desenvainar su espada y dirigirse hacia ti.</p>
       <choice idref="sect205">Si posees la Disciplina del Magnakai de la Adivinación, <link-text>pasa al 205</link-text>.</choice>
       <choice idref="sect79">Si tienes un Arco y quieres disparar contra el guerrero, <link-text>pasa al 79</link-text>.</choice>
       <choice idref="sect95">Si prefieres sacar tu arma y prepararte para defenderte, <link-text>pasa al 95</link-text>.</choice>
@@ -3463,7 +3439,7 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
         <line><ch.lsquot/>Si profanas la Espada</line>
         <line>y rompes el hechizo,</line>
         <line>el terror te seguirá</line>
-        <line>por lodo el pasadizo.<ch.rsquot/></line>
+        <line>por todo el pasadizo.<ch.rsquot/></line>
        </p>
       </blockquote>
 
@@ -3704,7 +3680,7 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
      <meta><title>245</title></meta>
 
      <data>
-      <p>El lobo se abalanza sobre tu pecho, derri-bándote con su peso monstruoso. Ves brillar sus colmillos y su saliva corrosiva te salpica el rostro. Luchas desesperadamente con todas tus fuerzas para sobrevivir.</p>
+      <p>El lobo se abalanza sobre tu pecho, derribándote con su peso monstruoso. Ves brillar sus colmillos y su saliva corrosiva te salpica el rostro. Luchas desesperadamente con todas tus fuerzas para sobrevivir.</p>
       <p>La criatura es inmune al Ataque psíquico (pero no a la Acometida Psíquica).</p>
       <combat><enemy>Lobo de la muerte</enemy><enemy-attribute class="combatskill">22</enemy-attribute><enemy-attribute class="endurance">40</enemy-attribute></combat>
       <choice idref="sect259">Si vences en la pelea, <link-text>pasa al 259</link-text>.</choice>
@@ -3918,7 +3894,7 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
       <p>-Llevadle al laberinto -ordena el lord de pelo blanco.</p>
 	  <p>Su risa de burla cruel resuena en tus oídos mientras eres sacado, a rastras y encadenado, de la sala.</p>
       <p>Tacha en tu <a idref="action">Carta de Acción</a> todas las armas y los objetos especiales que puedan servir de armas, pero anótalos en una hoja de papel aparte por si los recuperas en un momento posterior de tu aventura.</p>
-      <choice idref="sect286">Now <link-text>pasa al 286</link-text>.</choice>
+      <choice idref="sect286">Ahora <link-text>pasa al 286</link-text>.</choice>
      </data>
     </section>
 
@@ -4003,7 +3979,7 @@ WOLM what still missing: errata in the backmatter, the secondary illustrations, 
 
      <data>
       <p>La monstruosa criatura lanza un alarido ensordecedor cuando le asestas el golpe final. Al desplomarse en el suelo, su enorme cuerpo desplaza un montón de arena. Sujeta a una pesada cadena negra que le rodea el diafragma hay una Llave de Oro. Si quieres apoderarte de esa Llave, anótala en tu <a idref="action">Carta de Acción</a> como un objeto especial que llevarás en el bolsillo.</p>
-      <p>La victoria te levanta el ánimo, pero por poco tiempo, pues en seguida oyes el ruido inconfundible de las ralas, que vuelven al ataque.</p>
+      <p>La victoria te levanta el ánimo, pero por poco tiempo, pues en seguida oyes el ruido inconfundible de las ratas, que vuelven al ataque.</p>
       <choice idref="sect173"><link-text>Pasa al 173</link-text>.</choice>
      </data>
     </section>
