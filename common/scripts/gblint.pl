@@ -235,7 +235,7 @@ while( my $line = <> ) {
 
   # ellipsis
   if( $line =~ /(\.\s*\.(\s*\.)?)/ ) { &printError( "ne", $currentSection, $lineNumber, "possible malformed ellipsis", "$1", "<ch.ellips/> or <ch.lellips/>" ); }
-  if( $line =~ m{([[:space:]]<ch\.ellips/>)} || $line =~ m{(<ch\.ellips/>[[:space:]])} ) { &printError( "ne", $currentSection, $lineNumber, "<ch.ellips/> with extraneous surrounding space", "$1", "<ch.ellips/>" ); }
+  if( $line =~ m{([[:space:]]<ch\.ellips/>)}) { &printError( "ne", $currentSection, $lineNumber, "<ch.ellips/> with extraneous surrounding space", "$1", "<ch.ellips/>" ); }
   if( $line =~ m{([^>])(<ch\.lellips/>)} ) { &printError( "ne", $currentSection, $lineNumber, "possible <ch.lellips/> used in place of <ch.ellips/>", "$1$2", "$1<ch.ellips/>" ); }
   if( $line =~ m{(><ch\.ellips/>)} ) { &printError( "ne", $currentSection, $lineNumber, "possible <ch.ellips/> used in place of <ch.lellips/>", "$1", "><ch.lellips/>" ); }
 
