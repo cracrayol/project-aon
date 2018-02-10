@@ -307,6 +307,7 @@ while( my $line = <> ) {
         $1 ne "COMBAT" &&
         $1 ne "WILLPOWER" &&
         $1 ne "HAVOC" &&
+        $1 ne "TARGET" &&
         $1 ne "CLOSE") ||
        ($language eq 'es' &&
         $1 ne 'DESTREZA' &&
