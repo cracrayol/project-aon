@@ -299,7 +299,7 @@ while( my $line = <> ) {
   }
 
   ##### Others
-  if( $line =~ m{<!--(?!/?ERRTAG)} ) { &printError( "ne", $currentSection, $lineNumber, "XML comment found (check for editor comments)" ); }
+  if( $line =~ m{<!--(?!/?(link-text|ERRTAG))} ) { &printError( "ne", $currentSection, $lineNumber, "XML comment found (check for editor comments)" ); }
   if( $line =~ /([[:upper:]]{5,})/ &&
       $` !~ /<signpost>$/ &&
       (($language eq 'en' && 
