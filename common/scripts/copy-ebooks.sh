@@ -21,14 +21,13 @@ if [ "$AONDIR" -ef "$CURR_DIR" ]; then
 fi
 
 BASE_DIR="$AONDIR/common/epub"
-book_db="$AONDIR/common/sqlite/bookcodes.db"
 
 for book in $@
 do
-    row=($(sqlite3 -separator ' ' $book_db "select lang, series from bookcodes where book = '$book';"))
+    row=( $($AONDIR/common/scripts/list-book-info.sh $book) )
 
-    lang=${row[0]}
-    series=${row[1]}
+    lang=${row[1]}
+    series=${row[2]}
 
     source_dir="$BASE_DIR/$book"
 

@@ -20,14 +20,12 @@ if [ "$AONDIR" -ef "$CURR_DIR" ]; then
     exit 1
 fi
 
-book_db="$AONDIR/common/sqlite/bookcodes.db"
-
 for book in $@
 do
-    row=($(sqlite3 -separator ' ' $book_db "select lang, series from bookcodes where book = '$book';"))
+    row=( $($AONDIR/common/scripts/list-book-info.sh $book) )
 
-    lang=${row[0]}
-    series=${row[1]}
+    lang=${row[1]}
+    series=${row[2]}
 
     source_dir="$AONDIR/$lang/svg/$series"
     output_dir="$CURR_DIR/$lang/svg/$series"
