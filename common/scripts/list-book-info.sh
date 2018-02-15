@@ -4,7 +4,7 @@
 # outputs data for all books.
 # 
 # Examples:
-#     list-book-info.sh lw gs
+#     list-book-info.sh 01fftd 02tfc
 #
 #     list-book-info.sh
 
