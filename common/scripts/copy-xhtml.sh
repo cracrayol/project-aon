@@ -15,6 +15,11 @@ if [ ! -d "$AONDIR" ]; then
 fi
 CURR_DIR=`pwd`
 
+if [ "$AONDIR" -ef "$CURR_DIR" ]; then
+    >&2 echo "Current directory is the same as AONDIR: giving up"
+    exit
+fi
+
 book_db="$AONDIR/common/sqlite/bookcodes.db"
 
 for book in $@
