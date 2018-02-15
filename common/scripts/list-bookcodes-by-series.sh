@@ -14,7 +14,7 @@ book_db="$AONDIR/common/sqlite/bookcodes.db"
 
 for series in $@
 do
-    if [[ ! $series =~ ^[a-z][a-z]$ ]]; then
+    if [[ ! $series =~ ^[a-z]+$ ]]; then
         >&2 echo "invalid series"
         exit 1
     fi
