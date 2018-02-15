@@ -11,13 +11,13 @@
 
 if [ ! -d "$AONDIR" ]; then
     >&2 echo "Please set the AONDIR environment variable"
-    exit
+    exit 1
 fi
 CURR_DIR=`pwd`
 
 if [ "$AONDIR" -ef "$CURR_DIR" ]; then
     >&2 echo "Current directory is the same as AONDIR: giving up"
-    exit
+    exit 1
 fi
 
 book_db="$AONDIR/common/sqlite/bookcodes.db"

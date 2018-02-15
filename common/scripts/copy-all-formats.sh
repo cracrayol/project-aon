@@ -11,7 +11,7 @@
 
 if [ ! -d "$AONDIR" ]; then
     >&2 echo "Please set the AONDIR environment variable"
-    exit
+    exit 1
 fi
 BASE_DIR="$AONDIR/common/scripts"
 
