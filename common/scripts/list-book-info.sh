@@ -38,7 +38,12 @@ do
     fi
 
     sqlite3 -column -noheader "$book_db" <<EOF
-      select book, lang, series
+      select
+            book
+            , lang
+            , series
+            , subseries
+            , xml_file
       from bookcodes 
       where book = '$book'
       order by book
