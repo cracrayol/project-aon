@@ -9,4 +9,4 @@ fi
 
 book_db="$AONDIR/common/sqlite/bookcodes.db"
 
-sqlite3 -column -noheader "$book_db" "select book from bookcodes order by book"
+sqlite3 -noheader "$book_db" "select book from bookcodes order by book"

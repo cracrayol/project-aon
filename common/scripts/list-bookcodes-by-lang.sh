@@ -19,7 +19,7 @@ do
         exit 1
     fi
 
-    sqlite3 -column -noheader "$book_db" <<EOF
+    sqlite3 -noheader "$book_db" <<EOF
       select book 
       from bookcodes 
       where lang = '$lang'
