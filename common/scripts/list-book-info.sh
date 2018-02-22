@@ -17,7 +17,12 @@ book_db="$AONDIR/common/sqlite/bookcodes.db"
 
 if [ -z "$1" ]; then
     sqlite3 -column -noheader "$book_db" <<EOF
-        select book, lang, series
+        select 
+            book
+            , lang
+            , series
+            , subseries
+            , xml_file
         from bookcodes
         order by book
 EOF
