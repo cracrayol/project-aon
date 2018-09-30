@@ -304,8 +304,6 @@
         </data>
        </section>
 
-      <p><strong>Si concluyes con éxito la misión que se te asigna en el Libro 11 de la serie de Magnakai de <cite>Lobo Solitario</cite></strong>, puedes añadir otra Disciplina del Magnakai que elijas a tu <a idref="action">Carta de Acción</a> del Libro 12. Así emplearás en la próxima aventura, titulada <bookref series="ls" book="12lsdlo"><cite>Los Señores de la Oscuridad</cite></bookref>, esta destreza adicional junto con tus demás Disciplinas del Magnakai y los Objetos Especiales que hayas encontrado y logrado conservar en tus aventuras.</p>
-
      </data>
     </section>
 
@@ -324,7 +322,7 @@
 
       <data>
        <p>Antes de abandonar el puerto de Toran y empezar tu funesta misión, Banedon te da un <a idref="map">mapa</a> de los Darklands y una bolsa con Coronas de Oro. Para averiguar cuántas hay, escoge un número de la <a idref="random">Tabla de la Suerte</a>. Añade 10 al número que hayas elegido y apunta esa cifra en la sección  de <quote>Coronas de Oro</quote> de tu <a idref="action">Carta de Acción</a>.</p>
-       <p>Banedon también te permite escoger el equipo que te ayudará para sobrevivir en el hostil corazón del Imperio enemigo. Para el viaje por las frías aguas del Kaltesee te proveen de una ropa especial de cuero, gruesas botas y una capa con capucha confeccionada con la piel impermeable de un Kalkoth. Puedes escoger 6 objetos de la lista siguiente, añadiéndolso a los que ya poseas. Sin embargo recuerda que sólo puedes llevar como máximo dos Armas y ocho Objetos de la Mochila.</p>
+       <p>Banedon también te permite escoger el equipo que te ayudará para sobrevivir en el hostil corazón del Imperio enemigo. Para el viaje por las frías aguas del Kaltesee te proveen de una ropa especial de cuero, gruesas botas y una capa con capucha confeccionada con la piel impermeable de un Kalkoth. Puedes escoger 6 objetos de la lista siguiente, añadiéndolos a los que ya poseas. Sin embargo recuerda que sólo puedes llevar como máximo dos Armas y ocho Objetos de la Mochila.</p>
        <ul class="paragraphed">
        <li><p>ESPADA (Armas)</p>
          <illustration class="inline">
@@ -646,7 +644,7 @@
      </meta>
 
      <data>
-      <p>Conforme asciendas a niveles superiores de adiestramiento, comprobarás que tus destrezas mejoran progresivamente. Si eres un Maestro del Kai que has alcanzado el rango de Primado (cuatro Disciplinas), Tutor (cinco Disciplinas), Principal (seis Disciplinas), Mentor (siete Disciplinas) o Vástago (ocho Disciplinas), te beneficiarás del perfeccionamiento de las siguientes Disciplinas del Magnakai:</p>
+      <p>Conforme asciendas a niveles superiores de adiestramiento, comprobarás que tus destrezas mejoran progresivamente. Si eres un Maestro del Kai que has alcanzado el rango de Primado (cuatro Disciplinas), Tutor (cinco Disciplinas), Principal (seis Disciplinas), Mentor (siete Disciplinas), Vástago (ocho Disciplinas) o Archimastro (nueve Disciplinas), te beneficiarás del perfeccionamiento de las siguientes Disciplinas del Magnakai:</p>
 
       <section class="frontmatter" id="primate">
        <meta><title>Primado</title></meta>
@@ -1327,14 +1325,20 @@ class="attribute">RESISTENCIA</typ>.</p>
        <title>35</title>
       </meta>
 
+     <footnotes>
+       <footnote id="sect35-1-foot" idref="sect35-1">
+        <p>Después de mucha deliberación hemos alterado aquí los puntos de <typ class="attribute">RESISTENCIA</typ> del Xargath de 10 a 100, en línea con la <a idref="sect192">sección 192</a>. La masiva diferencia de la <typ class="attribute">DESTREZA EN EL COMBATE</typ> del Xargath aquí puede atribuirse al hecho que estás sentado en su cabeza que está atrapada en la cubierta, en lugar de estar de pie en la cubiera en frente de él. Sin embargo, el valor original de <typ class="attribute">RESISTENCIA</typ> parecen demasiado pequeños, hasta el punto que el combate es una conclusión fácil incluso para un personaje con tan sólo 3 Disciplinas del Magnakai y los valores más bajos sin modificar de <typ class="attribute">DESTREZA EN EL COMBATE</typ> y <typ class="attribute">RESISTENCIA</typ>. Además, la opción que se presenta aquí para evadir el combate parece indicar que la batalla debería ser al menos moderadamente díficil.</footnote>
+      </footnotes>
+
+
       <data>
        <p>Te balanceas y saltas desde las jarcias sobre el Xargath, montándote a horcajadas en el cuello del animal, pero nota tu presencia y se retuerce y corcovea como un semental salvaje para derribarte. Con inexorable determinación te aferras a su escamosa piel y apuñalas repetidamente su lomo y sus orejas con la esperanza de incapacitarlo antes de que se libere. Desesperadamente trata de desmontarte usando sus enormes garras para rascarse el cuello en un furioso intento de desengancharte.</p>
        <combat>
         <enemy>Xargath</enemy>
         <enemy-attribute class="combatskill">10</enemy-attribute>
-        <enemy-attribute class="endurance">10</enemy-attribute>
+        <enemy-attribute class="endurance">100</enemy-attribute>
        </combat>
-       <p>Esta criatura es inmune al Ataque Psíquico (pero no a la Acometida Psíquica).</p>
+       <p>Esta criatura es inmune al Ataque Psíquico (pero no a la Acometida Psíquica).<footref id="sect35-1" idref="sect35-1-foot"/></p>
        <choice idref="sect277">Puedes eludir el combate en cualquier momento trepando por el palo mayor y escondiéndote en la cofa: <link-text>pasa al 277</link-text>.</choice>
        <choice idref="sect66">Si ganas el combate, <link-text>pasa al 66</link-text>.</choice>
       </data>
@@ -1946,7 +1950,10 @@ class="attribute">DESTREZA EN EL COMBATE</typ> durante toda la pelea.</p>
 
       <footnotes>
        <footnote id="sect75-1-foot" idref="sect75-1">
-        <p>El Boletín n.º 12 del Club de Lobo Solitario hace la siguiente aclaración: «Aunque has desenvainado y usado la Sommerswerd dentro de las Tierras Oscuras, fuiste capaz de emplearla para destruir a Kraagenskûl antes de que pudiera usar el comunicador para informar a Gnaag de tu presencia. El puerto de Argazad se encuentra en la periferia de las Tierras Oscuras, con lo cual, debido a su remota ubicación, al desenvainar la Espada del Sol no alertaste directamente a Gnaag en Helgedad. El combate contra Kraagenskûl se desarrolló conforme a la advertencia de Rimoah (<a idref="sect282">Sección 282</a>); la Sommerswerd lo alertó de tu presencia y reveló tu verdadera identidad».</p>
+        <p>El <cite>Boletín n.º 12 del Club de Lobo Solitario</cite> hace la siguiente aclaración: «Aunque has desenvainado y usado la Sommerswerd dentro de las Tierras Oscuras, fuiste capaz de emplearla para destruir a Kraagenskûl antes de que pudiera usar el comunicador para informar a Gnaag de tu presencia. El puerto de Argazad se encuentra en la periferia de las Tierras Oscuras, con lo cual, debido a su remota ubicación, al desenvainar la Espada del Sol no alertaste directamente a Gnaag en Helgedad. El combate contra Kraagenskûl se desarrolló conforme a la advertencia de Rimoah (<a idref="sect282">Sección 282</a>); la Sommerswerd lo alertó de tu presencia y reveló tu verdadera identidad».</p>
+       </footnote>
+       <footnote id="sect75-2-foot" idref="sect75-2">
+        <p>A no ser que lleves la Daga de Vashna y elijas utilizarla, no podrás hacer daño al Señor de la Oscuridad Kraagensk<ch.ucirc/>l durante las tres primeras rondas hasta que recuperes la Sommerswerd. Si deseas utilizar la Daga de Vashna aquí, recuerda que <quote>puedes añadir 7 puntos a tu <typ class="attribute">DESTREZA EN EL COMBATE</typ> durante la duración de la pelea, gracias al poder de la Daga de Vashna cuando se utiliza contra un Señor de la Oscuridad de Helgedad</quote> (cf. <a idref="sect171">Section 171</a>).</p>
        </footnote>
       </footnotes>
 
@@ -1957,7 +1964,7 @@ class="attribute">DESTREZA EN EL COMBATE</typ> durante toda la pelea.</p>
         <enemy-attribute class="combatskill">30</enemy-attribute>
         <enemy-attribute class="endurance">29</enemy-attribute>
        </combat>
-       <p>Este ser es inmune al Ataque Psíquico (pero no a la Acometida Psíquica). Si sobrevives a los primeros tres asaltos, puedes recuperar la Sommerswerd.</p>
+       <p>Este ser es inmune al Ataque Psíquico (pero no a la Acometida Psíquica). Si sobrevives a los primeros tres asaltos, puedes recuperar la Sommerswerd.<footref id="sect75-2" idref="sect75-2-foot"/></p>
        <choice idref="sect240">Si ganas el combate, <link-text>pasa al 240</link-text>.<footref id="sect75-1" idref="sect75-1-foot"/></choice>
       </data>
      </section>
@@ -3817,10 +3824,8 @@ idref="action">Carta de Acción</a>.</p>
 
       <data>
        <p>El saquito de hierbas que has descubierto en el cinturón del oficial Drakkar despierta tu curiosidad.</p>
-       <choice idref="sect145">Si posees la Disciplina del Magnakai de Medicina y has alcanzado el rango de Principal u otro superior,
-<link-text>pasa al 145</link-text>.</choice>
-       <choice idref="sect201">Si no posees esa habilidad o aún no has llegado a ese nivel de adiestramiento del Magnakai, <link-text>pasa al
-201</link-text>.</choice>
+       <choice idref="sect145">Si posees la Disciplina del Magnakai de Medicina <em>o</em> has alcanzado el rango de Principal u otro superior, <link-text>pasa al 145</link-text>.</choice>
+       <choice idref="sect201">Si no posees esa habilidad <em>y</em> aún no has llegado a ese nivel de adiestramiento del Magnakai, <link-text>pasa al 201</link-text>.</choice>
       </data>
      </section>
 
@@ -4326,8 +4331,14 @@ idref="action">Carta de Acción</a>.</p>
        <title>220</title>
       </meta>
 
+      <footnotes>
+       <footnote id="sect220-1-foot" idref="sect220-1">
+        <p>Esta sección es inalcanzable. Para llegar hasta aquí tienes que ser un Archimaestro con Concentración, lo que significa que tienes todas menos una de las Disciplinas. Sin embargo, la única ruta para llegar aquí es la <a idref="sect150">sección 150</a> a la <a idref="sect80">sección 80</a> a la  <a idref="sect249">sección 249</a> a la <a idref="sect67">sección 67</a> a la <a idref="sect121">sección 121</a> a la sección 220. La <a idref="sect249">sección 249</a> sólo es alcanzable si  <em>no</em> tienes la Disciplina Arte de Cazar al nivel Archimaestro, y la <a idref="sect67">sección 67</a> sólo es alcanzable si  <em>no</em> tienes Sentido de Orientación al nivel Tutor. Por lo que para llegar aquí has de ser un Archimaestro que no tiene ni Arte de Cazar ni Sentido de Orientació. No puede arreglarse este error por parte del autor fácilmente.</p>
+       </footnote>
+      </footnotes>
+
       <data>
-       <p>A pesar de no contar con la protección del amuleto, tu sumamente desarrollada habilidad del Magnakai te defiende de las ardientes temperaturas y la atmósfera envenenada de Helgedad. Sin embargo, sufres durante unos momentos, mientras tu cuerpo se adapta al nuevo ambiente: pierdes 2 puntos de <typ class="attribute">RESISTENCIA</typ>.</p>
+       <p>A pesar de no contar con la protección del amuleto, tu sumamente desarrollada habilidad del Magnakai te defiende de las ardientes temperaturas y la atmósfera envenenada de Helgedad. Sin embargo, sufres durante unos momentos, mientras tu cuerpo se adapta al nuevo ambiente: pierdes 2 puntos de <typ class="attribute">RESISTENCIA</typ>.<footref id="sect220-1" idref="sect220-1-foot"/></p>
        <choice idref="sect280"><link-text>Pasa al 280</link-text>.</choice>
       </data>
      </section>
@@ -4497,6 +4508,13 @@ idref="action">Carta de Acción</a>.</p>
        <title>230</title>
       </meta>
 
+      <footnotes>
+       <footnote id="sect230-1-foot" idref="sect230-1">
+        <p>Recuerda añadir 7 a tu <typ class="attribute">DESTREZA EN EL COMBATE</typ> mientras dure este combate debido al poder que tu arma tiene contra un Señor de la Oscuridad de Helgedad. La información que se muestra en una sección posterior puede tener un efecto en cómo debería conducirse esta pelea, consulta la <a idref="err230">fé de erratas para esta sección</a> para más detalles. Ten en cuenta que esto revelará cierta información antes de lo que el autor pretendiera que la obtuvieras, por lo que muchos lectores, especialmente los que lean este libro por primera vez, pueden preferir no leerla.</p>
+       </footnote>
+      </footnotes>
+
+
       <data>
        <p>Empuñando un arma de los Señores de la Oscuridad, lanzas a Taktaal un doloroso golpe que lo hiere profundamente. Chillando con un lamento sobrenatural de dolor, se retira del Transfusor y desengancha una maza, tallada de un sólido pedazo de cristal negro, de una cadena que lleva alrededor de su cuello putrefacto. Cuando alza la maza, te adelantas para golpearlo de nuevo.</p>
        <combat>
@@ -4504,7 +4522,7 @@ idref="action">Carta de Acción</a>.</p>
         <enemy-attribute class="combatskill">36</enemy-attribute>
         <enemy-attribute class="endurance">40</enemy-attribute>
        </combat>
-       <p>Este ser sobrenatural es inmune al Ataque Psíquico (pero no a la Acometida Psíquica).</p>
+       <p>Este ser sobrenatural es inmune al Ataque Psíquico (pero no a la Acometida Psíquica).<footref id="sect230-1" idref="sect230-1-foot"/></p>
        <choice idref="sect78">Si ganas el combate, <link-text>pasa al 78</link-text>.</choice>
       </data>
      </section>
@@ -6516,6 +6534,12 @@ de su base de Argazad, y la orilla y los acantilados están salpicados de atalaya
 
       <data>
       <p>A lo largo de todo el libro se han cambiado a mayúsculas iniciales algunos términos para que estéticamente sea más agradable a la lectura. Estos cambios se refieren a ciertos títulos (Señores de la Oscuridad, Señores del Kai, Lord,<ch.ellips/>) objetos (Coronas de Oro, Laumspur,<ch.ellips/>) y monstruos (Helghast, Szall, Drakar,<ch.ellips/>).</p>
+
+
+      <p>(<a id="err230" idref="sect230">230</a>) Manejar el problema de qué bonificación de la <typ class="attribute">DESTREZA EN EL COMBATE</typ> debería dar la Daga de Vashna o Helshezag en esta pelea es algo problemático. Por un lado, el uso de la Daga de Vashan en combate contra el Señor de la Oscuridad Kraagensk<ch.ucirc/>l añade  <quote>7 puntos a tu <typ class="attribute">DESTREZA EN EL COMBATE</typ> mientras dure la pelea, debido al poder de la Daga de Vashan cuando se utiliza para luchar contra un Señor de la Oscuridad de Helgedad</quote> (cf. <a idref="sect171">sección 171</a>). De forma similar, Helshezag también añade <quote>7 puntos a tu <typ class="attribute">DESTREZA EN EL COMBATE</typ> cuando se utiliza contra un Señor de la Oscuridad de Helgedad</quote> (cf. <a idref="sect240">sección 240</a>).</p>
+       <p>Sin embargo, las cosas se complican con la lucha contra el Señor de la Oscuridad Gnaag dentro de unas secciones, donde el texto claramente indica: <quote>Dentro de los muros de Helgedad, el poder del arma que empuñas se intensifica enormemente. Debido a su aumentado poder, añade 12 puntos a tu <typ class="attribute">DESTREZA EN EL COMBATE</typ> mientras dure la pelea</quote> (cf. <a idref="sect88">sección 88</a>).</p>
+       <p>Parece que el autor pretendía hacer que la bonificación de <ch.plus/>12 <typ class="attribute">DESTREZA EN EL COMBATE</typ> fuera una sorpresa para el clímax de la batalla final, pero esto lleva a una inconsistencia en la batalla contra el Señor de la Oscuridad Taktaal como se presenta aquí. Sugerimos utilizar la bonificación de <ch.plus/>12 <typ class="attribute">DESTREZA EN EL COMBATE</typ> contra el Señor de la Oscuridad Taktaal debido al poder del arma que estás empuñando.</p>
+
       </data>
      </section>
     </data>
