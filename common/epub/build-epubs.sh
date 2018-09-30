@@ -2,18 +2,18 @@
 #
 # Build all the ePub files for Project Aon in a single run
 #
-# (c) 2011 Javier Fernandez-Sanguino <jfs@computer.org>
+# (c) 2011, 2018 Javier Fernandez-Sanguino <jfs@computer.org>
 #
-# This script is provided with the same license as that one
-# used in the Aon Project
+# This script is provided with the same license as the one
+# used in the Project Aon.
 
 set -e
 
 CURDIR=`pwd`
-AONDIR="../../"
+[ -z "$AONDIR" ] && AONDIR="../../"
+[ -z "$LANGS" ]  && LANGS="en es"
 LOGDIR="$CURDIR/logs/"
 [ ! -e "$LOGDIR" ] && mkdir $LOGDIR
-LANGS="en es"
 FONTDIR="../fontfiles/"
 
 if [ ! -e "${AONDIR}${FONTDIR}" ] ; then
