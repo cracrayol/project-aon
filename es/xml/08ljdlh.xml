@@ -849,31 +849,6 @@
     <section class="numbered" id="sect13">
      <meta><title>13</title></meta>
 
-     <footnotes>
-      <footnote id="sect13-1-foot" idref="sect13-1">
-        <p>Observa que en este combate debes ir a la <a idref="sect158">Sección 158</a> inmediatamente después de un cierto número de asaltos, aunque el combate aún no haya finalizado.</p>
-        <p>El texto original dice: <quote>Si vences en la lucha en 4 asaltos o menos</quote> Esto significa que el combate no puede durar 5 asaltos (o más).</p>
-        <p>Esta sección es muy problemática para un jugador que comience sus aventuras en este libro. Puede ser virtualmente imposible matar a los Vordaks a tiempo si la <typ class="attribute">DESTREZA EN EL COMBATE</typ> es demasiado baja. Interpretando estrictamente el texto, el combate debe durar cuatro asaltos o menos. Para calcular la probabilidad de éxito, hemos considerado el número de combinaciones de cuatro dígitos con números de la <a idref="random">Tabla de la Suerte</a> que permitan matar a los Vordaks, divididas entre 10.000 (el número total de posibilidades con números de cuatro dígitos). Por ejemplo, un 0.03<ch.percent/> la probabilidad de éxito para una <typ class="attribute">DESTREZA EN EL COMBATE</typ> inicial de 14, refleja que sólo 3 combinaciones de números aleatorios (concretamente, 0-0-0-0, 0-0-0-9, y 0-0-9-0) de entre 10.000 posibles permiten derrotar a los Vordaks a tiempo. Los puntos de <typ class="attribute">RESISTENCIA</typ> no tienen relevancia en este caso puesto que ninguna combinación que destruya a ambas criaturas a tiempo conlleva que Lobo Solitario pierda 20 o más puntos de <typ class="attribute">RESISTENCIA</typ>. Todas las probabilidades calculadas suponen que Lobo Solitario ha elegido las Disciplinas más ventajosas para aumentar su <typ class="attribute">DESTREZA EN EL COMBATE</typ> en esta batalla: Maestría en el Manejo de las Armas y el arma apropiada, Acometida Psíquica, y Pantalla Psíquica, así como que ha guardado la poción de Alether encontrada en la aventura, dando un total de 9 puntos por encima de su puntuación inicial de <typ class="attribute">DESTREZA EN EL COMBATE</typ>.</p>
-       <table>
-        <tr>
-         <th><typ class="attribute">DESTREZA EN EL COMBATE</typ> inicial</th>
-         <th>Probabilidades de Supervivencia</th>
-        </tr>
-        <tr><td align="center">10</td><td align="right">0.00<ch.percent/></td></tr>
-        <tr><td align="center">11</td><td align="right">0.00<ch.percent/></td></tr>
-        <tr><td align="center">12</td><td align="right">0.00<ch.percent/></td></tr>
-        <tr><td align="center">13</td><td align="right">0.00<ch.percent/></td></tr>
-        <tr><td align="center">14</td><td align="right">0.03<ch.percent/></td></tr>
-        <tr><td align="center">15</td><td align="right">0.12<ch.percent/></td></tr>
-        <tr><td align="center">16</td><td align="right">0.72<ch.percent/></td></tr>
-        <tr><td align="center">17</td><td align="right">1.62<ch.percent/></td></tr>
-        <tr><td align="center">18</td><td align="right">4.59<ch.percent/></td></tr>
-        <tr><td align="center">19</td><td align="right">14.08<ch.percent/></td></tr>
-       </table>
-       <p>Un jugador que tenga una <typ class="attribute">DESTREZA EN EL COMBATE</typ> comprendida entre 10 y 13 no puede sobrevivir a esta batalla y por tanto completar la aventura. Aquellos jugadores con una <typ class="attribute">DESTREZA EN EL COMBATE</typ> inicial algo mayor tienen una ligera probabilidad de completarla.</p>
-      </footnote>
-     </footnotes>
-
      <data>
       <p>El chorro de fuego atraviesa la barandilla y penetra en el casco de la nave retorciendo y fundiendo su aleación metálica. Otros dos Kraans planean encima de la proa. Sus jinetes saltan a la cubierta y comienzan a arremeter contra la estructura del Levitrón.</p>
 	  <p>-¡Detenlos! -grita Paido sacando su espada-. ¡Detenlos o estamos perdidos!</p>
@@ -881,8 +856,8 @@
       <combat><enemy>Vordak 1</enemy><enemy-attribute class="combatskill">22</enemy-attribute><enemy-attribute class="endurance">28</enemy-attribute></combat>
       <combat><enemy>Vordak 2</enemy><enemy-attribute class="combatskill">21</enemy-attribute><enemy-attribute class="endurance">26</enemy-attribute></combat>
       <p>Debes combatir contra estas criaturas una tras otra. Son inmunes al Ataque Psíquico (pero no a la Acometida Psíquica). Si no posees la Disciplina del Magnakai de la Pantalla Psíquica, tienes que restar 2 puntos de tu <typ class="attribute">DESTREZA EN EL COMBATE</typ> durante toda la pelea.</p>
-      <choice idref="sect79">Si vences en la lucha en cuatro asaltos o en menos, <link-text>pasa al 79</link-text>.</choice>
-      <choice idref="sect158">Si el combate dura cinco asaltos o más,<a id="sect13-1" idref="sect13-1-foot" class="footnote" /> <link-text>pasa al 158</link-text>.</choice>
+      <choice idref="sect79">Si vences en la lucha en seis asaltos o en menos, <link-text>pasa al 79</link-text>.</choice>
+      <choice idref="sect158">Si el combate dura siete asaltos o más, no continúes el combate y <link-text>pasa inmediatamente al 158</link-text>.</choice>
      </data>
     </section>
 
@@ -944,10 +919,10 @@
 
      <data>
       <p>Metes la mano debajo de la túnica para sacar el Pase, pero el guardia de la puerta interpreta equivocadamente tu acción. Creyendo que quieres empuñar un arma de mano, da la alarma.</p>
-	  <p>-¡Son cómplices! -grita-. ¡Detenedlos!</p>
+      <p>-¡Son cómplices! -grita-. ¡Detenedlos!</p>
       <p>El pelotón de soldados da media vuelta y corre hacia vosotros dejando solo al prisionero, que aprovecha inmediatamente la oportunidad para escapar.</p>
-	  <p>-¡Cuidado, Lobo Solitario! -te avisa Paido cuando el guardia arremete contra ti con la lanza.</p>
-	  <p>Te echas a un lado, pero la punta de la lanza te hiere en la cadera (pierdes 2 puntos de <typ class="attribute">RESISTENCIA</typ>.</p>
+      <p>-¡Cuidado, Lobo Solitario! -te avisa Paido cuando el guardia arremete contra ti con la lanza.</p>
+      <p>Te echas a un lado, pero la punta de la lanza te hiere en la cadera (pierdes 2 puntos de <typ class="attribute">RESISTENCIA</typ>).</p>
       <p>Los soldados no parecen dispuestos a atender a razones. Vuestra única esperanza es huir de ellos antes de que os rodeen y os maten a lanzadas.</p>
       <p>Elige al azar un número de la <a idref="random">Tabla de la Suerte</a>. Si posees la Disciplina del Magnakai del Control Animal o Arte de Cazar, suma 3 al número que obtengas. Si has alcanzado el rango de Primado, suma 2.</p>
       <choice idref="sect57">Si el total está entre 0 y 3, <link-text>pasa al 57</link-text>.</choice>
@@ -1103,16 +1078,10 @@
     <section class="numbered" id="sect30">
      <meta><title>30</title></meta>
 
-     <footnotes>
-      <footnote id="sect30-1-foot" idref="sect30-1">
-      <p>Parece bastante raro tener que reducir puntos de <typ class="attribute">DESTREZA EN EL COMBATE</typ> al comienzo de cada asalto si no tienes la Disciplina de Pantalla Psíquica. Esta pérdida sería acumulativa, por lo que en el primer asalto pelearías con 2 puntos menos de <typ class="attribute">DESTREZA EN EL COMBATE</typ>, en el segundo con 4 puntos menos, en el tercero con 6 menos, etc. y duraría sólo durante este combate: no sería permanente, ya que Joe Dever siempre aclara cuándo pierdes puntos de <typ class="attribute">DESTREZA EN EL COMBATE</typ> permanentemente. Es posible que esta penalización sea un error, y que en realidad pierdas 2 puntos de <typ class="attribute">RESISTENCIA</typ> antes que de <typ class="attribute">DESTREZA EN EL COMBATE</typ> al principio de cada asalto de combate.</p>
-      </footnote>
-     </footnotes>
-
      <data>
       <p>Una llama dorada brota a lo largo de la hoja de la Espada del Sol cuando la alzas por encima de tu cabeza. El Helghast lanza un grito y retrocede aterrado. Reconoce el poder que manejas, un poder que es la perdición de los Señores de la Oscuridad a quienes sirve, un poder que puede causar su total destrucción.</p>
       <combat><enemy>Helghast de Gnaag</enemy><enemy-attribute class="combatskill">34</enemy-attribute><enemy-attribute class="endurance">48</enemy-attribute></combat>
-      <p>La criatura es inmune al Ataque Psíquico (pero no a la Acometida Psíquica). Si no posees la Disciplina del Magnakai de la Pantalla Psíquica, debes restar 2 puntos de tu <typ class="attribute">DESTREZA EN EL COMBATE</typ><a id="sect30-1" idref="sect30-1-foot" class="footnote" /> durante toda la pelea. (Recuerda multiplicar por dos los puntos de <typ class="attribute">RESISTENCIA</typ> que pierda tu enemigo, a causa del poder de la Espada del Sol.)</p>
+      <p>Esta criatura es inmune al Ataque Psíquico (pero no a la Acometida Psíquica). Si no posees la Disciplina del Magnakai de la Pantalla Psíquica, debes restar 2 puntos de tu <typ class="attribute">RESISTENCIA</typ> al comienzo de cada asalto durante toda la pelea con esta criatura. Si has completado el Círculo de la Ciencia del Espíritu, puedes sumar 2 puntos a tu <typ class="attribute">DESTREZA EN EL COMBATE</typ> mientras dure esta pelea. (Recuerda multiplicar por dos los puntos de <typ class="attribute">RESISTENCIA</typ> que pierda tu enemigo, a causa del poder de la Espada del Sol.)</p>
       <choice idref="sect268">Si vences en la lucha, <link-text>pasa al 268</link-text>.</choice>
      </data>
     </section>
@@ -1680,14 +1649,8 @@
     <section class="numbered" id="sect76">
      <meta><title>76</title></meta>
 
-     <footnotes>
-      <footnote id="sect76-1-foot" idref="sect76-1">
-       <p>La <a idref="sect221">Sección 221</a> te proporciona más información sobre estos monjes. Es bastante probable que se trate de un error del autor el que no obtengas esta información en lugar de conseguirla utilizando Adivinación. De ti depende <a idref="sect221">pasar al 221</a> antes de tomar una decisión en esta sección.</p>
-      </footnote>
-     </footnotes>
-
      <data>
-      <p>Los monjes se comunican telepáticamente. Aunque no entiendes el lenguaje que emplean en su comunicación mental, percibes que están inquietos e incómodos por vuestra presencia.<a id="sect76-1" idref="sect76-1-foot" class="footnote" /></p>
+      <p>Los monjes se comunican telepáticamente. Aunque no entiendes el lenguaje que emplean en su comunicación mental, percibes que están inquietos e incómodos por vuestra presencia. Los monjes de Talestria son tristemente famosos por su glotonería. Sus comidas de treinta platos y sus banquetes de una semana de duración son bien conocidos en todo Magnamund. Sin embargo, a pesar de sus holgadas túnicas, no puede por menos de llamarte la atención lo delgados que parecen estar esos monjes.</p>
       <choice idref="sect275">Si queréis deteneros a rendir un último homenaje al difunto, <link-text>pasa al 275</link-text>.</choice>
       <choice idref="sect55">Si decidís continuar vuestro camino sin pararos en la abadía, <link-text>pasa al 55</link-text>.</choice>
      </data>
@@ -1936,7 +1899,7 @@
 
      <data>
       <p>Subes los escalones del púlpito lo más rápidamente que puedes y depositas a Paido en la plataforma detrás del frente en el que está tallada la espada. Por casualidad, la túnica de Paido se engancha con una palanca oculta y, cuando su cuerpo cae pesadamente sobre ella, la palanca se mueve hacia un lado. De repente el suelo del púlpito tiembla y comienza a descender hasta llegar a un pasadizo secreto que hay debajo de la capilla.</p>
-      <p>Cuidadosamente sacas a Paido de la plataforma y le colocas sentado, apoyándole la espalda contra la pared del pasadizo. La plata  forma sube lentamente hacia el púlpito. En el silencio de ese pasadizo secreto oyes la respiración jadeante y poco profunda de tu compañero, que sigue inconsciente. Le levantas un párpado y observas que tiene el iris muy dilatado. Tu habilidad básica del Kai de curación te indica que Paido ha entrado en coma.</p>
+      <p>Cuidadosamente sacas a Paido de la plataforma y le colocas sentado, apoyándole la espalda contra la pared del pasadizo. La plataforma sube lentamente hacia el púlpito. En el silencio de ese pasadizo secreto oyes la respiración jadeante y poco profunda de tu compañero, que sigue inconsciente. Le levantas un párpado y observas que tiene el iris muy dilatado. Tu habilidad básica del Kai de curación te indica que Paido ha entrado en coma.</p>
       <choice idref="sect19">Si posees la Disciplina del Magnakai de la Medicina, <link-text>pasa al 19</link-text>.</choice>
       <choice idref="sect317">Si no posees esta habilidad, <link-text>pasa al 317</link-text>.</choice>
      </data>
@@ -2461,9 +2424,8 @@ class="footnote" /></choice>
      <data>
       <p>El sol se está poniendo cuando divisas por primera vez Tharro en el horizonte. Murallas de color terroso, altas y fortificadas, rodean las casas que se asientan en lo alto de una amplia elevación cubierta de hierba, conocida como colina de la Fortaleza. Soldados con uniforme escarlata y gris patrullan delante de las murallas y montan guardia ante las enormes puertas de madera que dan acceso al sector sur de la ciudad.</p>
       <p>Cabalgáis por el polvoriento camino que se dirige en línea recta hacia un puente de piedra. Éste cruza un canal artificial que circunvala la colina. Pasado el puente, subís por una rampa hasta la puerta. Aquí un soldado de mandíbula cuadrada protegido por una cota de malla de plata os pregunta el motivo que os lleva a Tharro, antes de dejaros entrar en la ciudad.</p>
-      <choice idref="sect68">Si queréis mostrarle tu Salvoconducto,
-<link-text>pasa al 68</link-text>.</choice>
-      <choice idref="sect92">Si no quieres mostrarle el Salvoconducto o ya no lo tienes, <link-text>pasa al 92</link-text>.</choice>
+      <choice idref="sect68">Si queréis mostrarle tu Pase, <link-text>pasa al 68</link-text>.</choice>
+      <choice idref="sect92">Si no quieres mostrarle el Pase o ya no lo tienes, <link-text>pasa al 92</link-text>.</choice>
      </data>
     </section>
 
@@ -2812,8 +2774,7 @@ class="combatskill">28</enemy-attribute><enemy-attribute
 class="endurance">45</enemy-attribute></combat>
       <p>El nigromante es inmune al Ataque Psíquico y a la Acometida Psíquica. Puedes dividir por dos los puntos de 
       <typ class="attribute">RESISTENCIA</typ> que pierdas durante la pelea, pues Paido lucha a tu lado y recibe la mitad de los golpes de Kezoor.</p>
-      <choice idref="sect46">Si vences en el combate, <link-text>pasa al
-46</link-text>.</choice>
+      <choice idref="sect46">Si vences en el combate, <link-text>pasa al 46</link-text>.</choice>
      </data>
     </section>
 
@@ -2860,7 +2821,7 @@ class="endurance">28</enemy-attribute></combat>
       <p>Paido se coloca de un salto a tu lado y con las manos traza en el aire una extraña figura.</p>
       <p>-¡Anun-kadrusa! -exclama.</p>
       <p>Y de las palmas de sus manos abiertas brota una oleada de resplandeciente calor. La porra explota y el enano retrocede, tambaleándose del susto cuando astillas incandescentes le prenden fuego al pelo.</p>
-      <p>¡Que me quemo! -chilla.</p>
+      <p>-¡Que me quemo! -chilla.</p>
       <p>A cuatro patas, como un jabalí aterrado, escapa por la puerta lateral.</p>
       <p>-¡Hechiceros! -gritan los clientes de la taberna, sobresaltados, y se lanzan de estampida hacia la puerta principal, volcando bancos y mesas en un desesperado afán de huir. En la siguiente confusión el posadero desaparece.</p>
       <choice idref="sect341">Si posees la Disciplina del Magnakai de Adivinación, <link-text>pasa al 341</link-text>.</choice>
@@ -3460,7 +3421,7 @@ class="attribute">RESISTENCIA</typ> que pierdas durante el combate, pues Paido p
    <data>
       <p>Un ejército de enormes arañas negras cubre el suelo, impulsando sus bulbosos cuerpos con peludas y angulosas patas. En súbita acometida avanzan hacia Paido, brillándoles los ojos y abriendo de par en par las mandíbulas.</p>
       <choice idref="sect246">Si tienes un arco y quieres usarlo, <link-text>pasa al 246</link-text>.</choice>
-      <choice idref="sect291">Si no lo tienes o no quieres usarlo, <link-text>pasa al 291.</link-text>.</choice>
+      <choice idref="sect291">Si no lo tienes o no quieres usarlo, <link-text>pasa al 291</link-text>.</choice>
    </data>
 </section>
 
@@ -3549,8 +3510,8 @@ class="attribute">RESISTENCIA</typ> que pierdas durante el combate, pues Paido p
 
    <data>
       <p>Los bordes de la poza se enrollan hacia dentro y rodean el extremo de tu arma, dejando al descubierto en el fondo de la concavidad a una criatura en forma de huevo. Por un agujero de su cáscara sale un tentáculo que intenta agarrarte la muñeca.</p>
-      <choice idref="sect235">Si tu arma es de filo (por ejemplo, una espada, una daga, un hacha, un espadín o un espadón), <link-text>pasa al 235</link-text>.</choice>
-      <choice idref="sect187">Si no es de filo (por ejemplo, una maza, un martillo de guerra, una estaca o un arco), <link-text>pasa al 187</link-text>.</choice>
+      <choice idref="sect235">Si tu arma es de filo (por ejemplo, una Espada, una Daga, una Lanza, un Hacha, un Espadín o un Espadón), <link-text>pasa al 235</link-text>.</choice>
+      <choice idref="sect187">Si tu arma no es de filo (por ejemplo, una Maza, un Martillo de guerra, una Estaca o un Arco), <link-text>pasa al 187</link-text>.</choice>
    </data>
 </section>
 
@@ -3879,7 +3840,7 @@ class="attribute">RESISTENCIA</typ> que pierdas durante el combate, pues Paido p
    <meta><title>242</title></meta>
 
    <data>
-      <p>El comerciante advierte en seguida la fascinación que te produce el Anillo de Cristal Gris. Te propone cambiártelo por algún Objeto Especial que tenga para él el mismo interés. Aceptaría a cambio del Anillo una Piedra Imán, una Maza con rubíes o un Casaco de plata. Si posees alguno de estos Objetos Especiales y quieres cambiarlo por el Anillo, haz el ajuste correspondiente en tu <a idref="action">Carta de Acción</a>.</p>
+      <p>El comerciante advierte en seguida la fascinación que te produce el Anillo de Cristal Gris. Te propone cambiártelo por algún Objeto Especial que tenga para él el mismo interés. Aceptaría a cambio del Anillo una Piedra Imán, una Maza enjoyada o un Yelmo de Plata. Si posees alguno de estos Objetos Especiales y quieres cambiarlo por el Anillo, haz el ajuste correspondiente en tu <a idref="action">Carta de Acción</a>.</p>
       <choice idref="sect204">Para abandonar la tienda y seguir adelante, <link-text>pasa al 204</link-text>.</choice>
    </data>
 </section>
@@ -4107,8 +4068,8 @@ class="attribute">RESISTENCIA</typ> que pierdas durante el combate, pues Paido p
 
    <data>
       <p>Colocas a Paido, apoyándole la espalda contra la pared del sótano, y le levantas un párpado. Tiene el iris muy dilatado. Además, su respiración es poco profunda y los latidos de su corazón son débiles e irregulares. Tu habilidad básica del Kai de curación te indica que Paido ha entrado en coma.</p>
-      <choice idref="sect349">Si tienes poción de Laumspur, <link-text>pasa al 349</link-text>.</choice>
-      <choice idref="sect121">Si no tienes esta hierba curativa, <link-text>pasa al 121</link-text>.</choice>
+      <choice idref="sect349">Si tienes poción de Laumspur, elixir de Rendalim o hierbas de Oede <link-text>pasa al 349</link-text>.</choice>
+      <choice idref="sect121">Si no tienes ninguna de estas pociones curativas, <link-text>pasa al 121</link-text>.</choice>
    </data>
 </section>
 
@@ -4359,7 +4320,7 @@ class="attribute">RESISTENCIA</typ> que pierdas durante el combate, pues Paido p
       <p>-¿Con qué autoridad pretendes cobrar un peaje en el camino real? -pregunta Paido irritado por la detención.</p>
       <p>-Con la autoridad de la Reina -responde el viejo indignado, señalando con un dedo ganchudo un cartel que cuelga de la pared de su cabaña.</p>
       <p>En el cartel aparece casi borrado el sello de la Reina Evaine y un letrero que apenas se lee.</p>
-      <p>-Nos dirigimos a Tharro por un asunto de la propia Reina -dices, mostrando el Salvoconducto que te dio Lord Adamas-. Échate a un lado y déjanos pasar.</p>
+      <p>-Nos dirigimos a Tharro por un asunto de la propia Reina -dices, mostrando el Pase que te dio Lord Adamas-. Échate a un lado y déjanos pasar.</p>
       <p>El viejo te quita el Pase de las manos y lo examina, aunque es obvio que está tan corto de vista que no puede leerlo.</p>
       <p>-¡Bah! -gruñe devolviéndote el Pase-. Es una falsificación. No me engañáis con ese trozo de pergamino sin valor.</p>
       <p>-Y a nosotros no va a detenernos un viejo loco cuya inteligencia está tan oxidada como su armadura -replica Paido enfadado.</p>
@@ -4553,7 +4514,7 @@ class="attribute">RESISTENCIA</typ> que pierdas durante el combate, pues Paido p
       <p>La maleza acaba bruscamente al borde de un barranco. Te tambaleas al respirar el aire helador que sopla desde las profundidades de ese abismo.</p>
       <p>Elige al azar un número de la <a idref="random">Tabla de la Suerte</a>. Si posees la Disciplina del Magnakai del Arte de Cazar y has alcanzado el rango de Primado, suma 3 al número que obtengas.</p>
       <choice idref="sect69">Si el total está entre 0 y 4, <link-text>pasa al 69</link-text>.</choice>
-      <choice idref="sect140">Si está entre 5 y 9, <link-text>pasa al 140</link-text>.</choice>
+      <choice idref="sect140">Si está entre 5 y 12, <link-text>pasa al 140</link-text>.</choice>
    </data>
 </section>
 
@@ -4666,7 +4627,7 @@ class="attribute">RESISTENCIA</typ> que pierdas durante el combate, pues Paido p
 
      <data>
       <p>Primero entran a través del arco un par de Perros de caza. Avanzan corriendo por el pasillo central, con las fauces abiertas y los ojos brillantes por la excitación de la búsqueda. Al verte, aceleran su velocidad y se disponen a atacarte.</p>
-      <choice idref="sect164">Si tienes un Arco y quieres usarlo, <link-text>pasa al 164</link-text>.</choice>
+      <choice idref="sect164">Si tienes un Arco y <em>dos Flechas</em> y quieres usarlos, <link-text>pasa al 164</link-text>.</choice>
       <p>Si no tienes un Arco, debes prepararte para combatir, pues los perros se abalanzan ya sobre ti.</p>
 
       <combat>
@@ -5501,6 +5462,7 @@ class="attribute">RESISTENCIA</typ> que pierdas durante el combate, pues Paido p
 	  
       <p>(<a idref="sect1">1</a>) Eliminado <quote> que figura en las primeras páginas de este libro</quote>.</p>
       <p>(<a idref="sect2">2</a>) Movida la opción sobre Pantalla Psíquica a la primera posición.</p>
+      <p>(<a idref="sect13">13</a>) Sustituido <quote>258</quote> por <quote>158</quote>. Sustituido <quote>Si vences el combate en cuatro asaltos</quote> por <quote>Si vences el combate en seis asaltos</quote>. Sustituido <quote>Si el combate dura más de cinco asaltos, <!--link-text-->pasa al 158<!--/link-text-->.</quote> por <quote>Si el combate dura siete asaltos o más, no continúes el combate y <!--link-text-->pasa inmediatamente al 158<!--/link-text-->.</quote> en línea con la Edición del Coleccionista.</p>
       <p>(<a idref="sect22">22</a>) Movida la opción sobre Sentido de Orientación a la primera posición.</p>
       <p>(<a idref="sect27">27</a>) Movida la opción sobre Adivinación a la primera posición.</p>
       <p>(<a idref="sect28">28</a>) Intercambiadas las secciones a las que se te dirige para hacerlas corresponder con las bonificaciones de Objetos Especiales y Disciplinas.</p>
@@ -5521,7 +5483,7 @@ class="attribute">RESISTENCIA</typ> que pierdas durante el combate, pues Paido p
       <p>(<a idref="sect130">130</a>) Reemplazado <quote>os le habéis</quote> por <quote>os lo habéis</quote>.</p>
       <p>(<a idref="sect131">131</a>) Reemplazado <quote>ese arma</quote> por <quote>esa arma</quote>.</p>
       <p>(<a idref="sect133">133</a>) Reemplazado <quote>aún así</quote> por <quote>aun así</quote>.</p>
-      <p>(<a idref="sect135">135</a>) Reemplazado <quote>Sol</quote> por <quote>sol</quote> y <quote>Salvaconducto</quote> por <quote>Salvoconducto</quote>.</p>
+      <p>(<a idref="sect135">135</a>) Reemplazado <quote>Sol</quote> por <quote>sol</quote> y <quote>Salvaconducto</quote> por <quote>Pase</quote>.</p>
       <p>(<a idref="sect138">138</a>) Movida la opción sobre Sentido de Orientación a la primera posición. Reemplazado <quote>Elziam</quote> por <quote>Elzian</quote>, <quote>antiguo o inmenso</quote> por <quote>antiguo e inmenso</quote> y <quote>turo</quote> por <quote>Tutor</quote>.</p>
       <p>(<a idref="sect140">140</a>) Reemplazado <quote>tambaléndote</quote> por <quote>tambaleándote</quote> y <quote>habrías</quote> por <quote>habríais</quote>.</p>
       <p>(<a idref="sect141">141</a>) Reemplazado <quote>hata que cubre po</quote> por <quote>hasta que cubre por</quote>.</p>
@@ -5543,6 +5505,7 @@ class="attribute">RESISTENCIA</typ> que pierdas durante el combate, pues Paido p
       <p>(<a idref="sect199">199</a>) Reemplazado <quote>pierdes</quote> por <quote>pierdas</quote>.</p>
       <p>(<a idref="sect204">204</a>) Movida la opción del mapa a la primera posición y la opción sobre Sentido de Orientación a la segunda posición.</p>
       <p>(<a idref="sect216">216</a>) Movida la opción sobre Adivinación a la primera posición.</p>
+      <p>(<a idref="sect135">135</a>) Reemplazado <quote>Salvaconducto</quote> por <quote>Pase</quote>.</p>
       <p>(<a idref="sect289">289</a>) Eliminada la última opción por ser esencialmente la misma que aparece en la <a idref="sect39">Sección 39</a> y, por tanto, redundante.</p>
       <p>(<a idref="sect296">296</a>) Reemplazado <quote>5 y 9</quote> por <quote>5 y 12</quote>.</p>
       <p>(<a idref="sect300">300</a>) Movida la opción sobre Concentración a la primera posición.</p>
@@ -5561,31 +5524,10 @@ class="attribute">RESISTENCIA</typ> que pierdas durante el combate, pues Paido p
 
    <data>
     <p>(<a idref="sect1">Sección 1</a>) En muchas secciones de este libro se supone que conservas el Pase. Se recomienda que lo conserves durante toda la aventura.</p>
-    <p>(<a idref="sect13">Sección 13</a>) Observa que en este combate debes ir a la <a idref="sect158">Sección 158</a> inmediatamente después de un cierto número de asaltos, aunque el combate aún no haya finalizado.</p>
-       <p>El texto original dice: <quote>Si vences en la lucha en 4 asaltos o menos</quote> Esto significa que el combate no puede durar 5 asaltos (o más).</p>
-       <p>Esta sección es muy problemática para un jugador que comience sus aventuras en este libro. Puede ser virtualmente imposible matar a los Vordaks a tiempo si la <typ class="attribute">DESTREZA EN EL COMBATE</typ> es demasiado baja. Interpretando estrictamente el texto, el combate debe durar cuatro asaltos o menos. Para calcular la probabilidad de éxito, hemos considerado el número de combinaciones de cuatro dígitos con números de la <a idref="random">Tabla de la Suerte</a> que permitan matar a los Vordaks, divididas entre 10.000 (el número total de posibilidades con números de cuatro dígitos). Por ejemplo, un 0.03<ch.percent/> la probabilidad de éxito para una <typ class="attribute">DESTREZA EN EL COMBATE</typ> inicial de 14, refleja que sólo 3 combinaciones de números aleatorios (concretamente, 0-0-0-0, 0-0-0-9, y 0-0-9-0) de entre 10.000 posibles permiten derrotar a los Vordaks a tiempo. Los puntos de <typ class="attribute">RESISTENCIA</typ> no tienen relevancia en este caso puesto que ninguna combinación que destruya a ambas criaturas a tiempo conlleva que Lobo Solitario pierda 20 o más puntos de <typ class="attribute">RESISTENCIA</typ>. Todas las probabilidades calculadas suponen que Lobo Solitario ha elegido las Disciplinas más ventajosas para aumentar su <typ class="attribute">DESTREZA EN EL COMBATE</typ> en esta batalla: Maestría en el Manejo de las Armas y el arma apropiada, Acometida Psíquica, y Pantalla Psíquica, así como que ha guardado la poción de Alether encontrada en la aventura, dando un total de 9 puntos por encima de su puntuación inicial de <typ class="attribute">DESTREZA EN EL COMBATE</typ>.</p>
-       <table>
-        <tr>
-         <th><typ class="attribute">DESTREZA EN EL COMBATE</typ> inicial</th>
-         <th>Probabilidades de Supervivencia</th>
-        </tr>
-        <tr><td align="center">10</td><td align="right">0.00<ch.percent/></td></tr>
-        <tr><td align="center">11</td><td align="right">0.00<ch.percent/></td></tr>
-        <tr><td align="center">12</td><td align="right">0.00<ch.percent/></td></tr>
-        <tr><td align="center">13</td><td align="right">0.00<ch.percent/></td></tr>
-        <tr><td align="center">14</td><td align="right">0.03<ch.percent/></td></tr>
-        <tr><td align="center">15</td><td align="right">0.12<ch.percent/></td></tr>
-        <tr><td align="center">16</td><td align="right">0.72<ch.percent/></td></tr>
-        <tr><td align="center">17</td><td align="right">1.62<ch.percent/></td></tr>
-        <tr><td align="center">18</td><td align="right">4.59<ch.percent/></td></tr>
-        <tr><td align="center">19</td><td align="right">14.08<ch.percent/></td></tr>
-       </table>
-       <p>Un jugador que tenga una <typ class="attribute">DESTREZA EN EL COMBATE</typ> comprendida entre 10 y 13 no puede sobrevivir a esta batalla y por tanto completar la aventura. Aquellos jugadores con una <typ class="attribute">DESTREZA EN EL COMBATE</typ> inicial algo mayor tienen una ligera probabilidad de completarla.</p>
     <p>(<a idref="sect28">Sección 28</a>) El texto original no permitía añadir ninguna bonificación al número obtenido al azar. Hemos cambiado las opciones para permitir esto. Si prefieres jugar bonificaciones, <a idref="sect125">pasa al 125</a> si obtienes un número entre 0 y 4, o <a idref="sect38">pasa al 38</a> en caso contrario.</p>
     <p>(<a idref="sect30">Sección 30</a>) Parece bastante raro tener que reducir puntos de <typ class="attribute">DESTREZA EN EL COMBATE</typ> al comienzo de cada asalto si no tienes la Disciplina de Pantalla Psíquica. Esta pérdida sería acumulativa, por lo que en el primer asalto pelearías con 2 puntos menos de <typ class="attribute">DESTREZA EN EL COMBATE</typ>, en el segundo con 4 puntos menos, en el tercero con 6 menos, etc. y duraría sólo durante este combate: no sería permanente, ya que Joe Dever siempre aclara cuándo pierdes puntos de <typ class="attribute">DESTREZA EN EL COMBATE</typ> permanentemente. Es posible que esta penalización sea un error, y que en realidad pierdas 2 puntos de <typ class="attribute">RESISTENCIA</typ> antes que de <typ class="attribute">DESTREZA EN EL COMBATE</typ> al principio de cada asalto de combate.</p>
     <p>(<a idref="sect42">Sección 42</a>) Si has sido infectado con el bacilo de korovax, puedes curarte con Tintura de Oxidín.</p>
     <p>(<a idref="sect47">Sección 47</a>) Parece bastante raro tener que reducir puntos de <typ class="attribute">DESTREZA EN EL COMBATE</typ> al comienzo de cada asalto si no tienes la Disciplina de Pantalla Psíquica. Esta pérdida sería acumulativa, por lo que en el primer asalto pelearías con 2 puntos menos de <typ class="attribute">DESTREZA EN EL COMBATE</typ>, en el segundo con 4 puntos menos, en el tercero con 6 menos, etc. y duraría sólo durante este combate: no sería permanente, ya que Joe Dever siempre aclara cuándo pierdes puntos de <typ class="attribute">DESTREZA EN EL COMBATE</typ> permanentemente. Es posible que esta penalización sea un error, y que en realidad pierdas 2 puntos de <typ class="attribute">RESISTENCIA</typ> antes que de <typ class="attribute">DESTREZA EN EL COMBATE</typ> al principio de cada asalto de combate.</p>
-    <p>(<a idref="sect76">Sección 76</a>) La <a idref="sect221">Sección 221</a> te proporciona más información sobre estos monjes. Es bastante probable que se trate de un error del autor el que no obtengas esta información en lugar de conseguirla utilizando Adivinación. De ti depende <a idref="sect221">pasar al 221</a> antes de tomar una decisión en esta sección.</p>
     <p>(<a idref="sect86">Sección 86</a>) No parece razonable perder 0 puntos de <typ class="attribute">RESISTENCIA</typ> después de ser golpeado por una espada. Puedes interpretar que un <quote>0</quote> indica una pérdida de 10 puntos de <typ class="attribute">RESISTENCIA</typ>. En otras aventuras un <quote>0</quote> se suele interpretar de la misma manera.</p>
     <p>(<a idref="sect112">Sección 112</a>) Si deseas adivinar la solución al acertijo, puedes ir a la lista de <a idref="numbered">Secciones Numeradas</a> y escoger tu respuesta. Si tu primera elección es incorrecta, pasa a la <a idref="sect269">Sección 269</a>. La sección correcta tendrá una nota a pie de página confirmando que has respondido correctamente.</p>
     <p>(<a idref="sect126">Sección 126</a>) Si deseas adivinar la solución al acertijo, puedes ir a la lista de <a idref="numbered">Secciones Numeradas</a> y escoger tu respuesta. Si tu primera elección es incorrecta, pasa a la <a idref="sect141">Sección 141</a>. La sección correcta tendrá una nota a pie de página confirmando que has respondido correctamente.</p>
