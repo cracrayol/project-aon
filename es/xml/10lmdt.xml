@@ -871,9 +871,15 @@
     <section class="numbered" id="sect11">
      <meta><title>11</title></meta>
 
+     <footnotes>
+      <footnote id="sect11-1-foot" idref="sect11-1">
+       <p>Si se toman como precendente los comentarios originalmente publicados en <cite><a href="http://www.projectaon.org/en/ReadersHandbook/NewsletterExcerpts#lwcn6">Lone Wolf Club Newsletter No.6</a></cite>, parece razonable asumir que sólo pierdes un arma que sea un Objeto Especial aquí si no llevas contigo al menos un Arma que no sea mágica.</p>
+      </footnote>
+     </footnotes>
+
      <data>
       <p>Vencidos y ensangrentados, los krorn supervivientes retroceden entre chillidos mientras te adelantas hacia ellos sobre los cadáveres de sus hermanos. El barón Shinzar grita airado y alza su hacha. Se abre camino entre sus maltrechas huestes y se planta ante ti, bramando como un poseso: <quote>¡Ay de ti, maldito eruano!</quote></p>
-      <p>Te acomete con su hacha, dirigida a tu cabeza. Paras el golpe con tu arma, pero ésta queda destruida entre una lluvia de chispas (bórrala de tu <a idref="action">Carta de Acción</a>): El hacha del barón fue forjada por artes de brujería. Cuando la alza de nuevo, te dispones a esquivar su caricia mortal.</p>
+      <p>Te acomete con su hacha, dirigida a tu cabeza. Paras el golpe con tu arma, pero ésta queda destruida entre una lluvia de chispas (bórrala de tu <a idref="action">Carta de Acción</a>): El hacha del barón fue forjada por artes de brujería.<footref id="sect11-1" idref="sect11-1-foot"/>  Cuando la alza de nuevo, te dispones a esquivar su caricia mortal.</p>
       <p>Elige un número de la <a idref="random">Tabla de la Suerte</a>. Si posees la Disciplina del Magnakai del Arte de Cazar, suma 2 al número que hayas escogido.</p>
       <choice idref="sect310">Si tu total se halla ahora comprendido entre 0 y 3, <link-text>pasa al 310</link-text>.</choice>
       <choice idref="sect229">Si es 4 o más, <link-text>pasa al 229</link-text>.</choice>
@@ -1333,7 +1339,7 @@
 
      <data>
       <p><quote>¡Excelente!</quote> dice el rey Sarnac. <quote> Me gustaría tener unos cuantos como tú en mi propio ejército.</quote></p>
-      <p>Te invita a que te acerques y te muestra lo que se sabe de las posiciones enemigas, empleando el plano del Príncipe Graygor. Una vez que quedas informado, manda a buscar algunas ropas negras, para que las vistas en  .., vez de tu uniforme gris de rastreador, y un poco de corcho quemado con que ennegrecer tu cara y tus manos. Te acompañan luego hasta el límite del campamento, cerca del polvoriento camino por donde vino el ejército desde Luomi. Los guardias te dicen que el santo y seña es <quote>espadón</quote>. Cuando vuelvas, habrás de emplear esta palabra o de otro modo los centinelas podrían confundirte con un enemigo.</p>
+      <p>Te invita a que te acerques y te muestra lo que se sabe de las posiciones enemigas, empleando el plano del Príncipe Graygor. Una vez que quedas informado, manda a buscar algunas ropas negras, para que las vistas en  vez de tu uniforme gris de rastreador, y un poco de corcho quemado con que ennegrecer tu cara y tus manos. Te acompañan luego hasta el límite del campamento, cerca del polvoriento camino por donde vino el ejército desde Luomi. Los guardias te dicen que el santo y seña es <quote>espadón</quote>. Cuando vuelvas, habrás de emplear esta palabra o de otro modo los centinelas podrían confundirte con un enemigo.</p>
       <choice idref="sect94"><link-text>Pasa al 94</link-text>.</choice>
      </data>
     </section>
@@ -1504,7 +1510,7 @@
      <data>
       <p><quote>Así que eres Lobo Solitario</quote> dice, inclinándose  respetuosamente. <quote>Me honro en conocerte, aunque hubiera preferido que fuese en mejores circunstancias. Creo que sé por qué has venido a Torgar. ¿Acaso no es para recobrar las gemas doradas que trajo hasta aquí Gnaag, señor de la Oscuridad?</quote></p>
       <p><quote>Sí,</quote> replicas, <quote>Son las Piedras de la Ciencia de mis antepasados y he jurado recuperarlas. Debo cumplir mi promesa, porque es vital para la seguridad de nuestros dos países impedir que Gnaag las destruya.</quote></p>
-      <p>Lentamente se extiende una sonrisa por el rostro de Paido. <quote>Te ayudaré, Lobo Solitario,</quote> afirma, recobrando su orgullo de guerrero ante la perspectiva de vengar su cruel encarcelamiento <quote>Sé en dónde guardan esas Piedras de la Ciencia y te conduciré hasta allí.</quote></p>
+      <p>Lentamente se extiende una sonrisa por el rostro de Paido. <quote>Te ayudaré, Lobo Solitario,</quote> afirma, recobrando su orgullo de guerrero ante la perspectiva de vengar su cruel encarcelamiento. <quote>Sé en dónde guardan esas Piedras de la Ciencia y te conduciré hasta allí.</quote></p>
       <choice idref="sect88"><link-text>Pasa al 88</link-text>.</choice>
      </data>
     </section>
@@ -2442,8 +2448,15 @@ class="attribute">RESISTENCIA</typ>.</p>
     <section class="numbered" id="sect142">
      <meta><title>142</title></meta>
 
+     <footnotes>
+      <footnote id="sect142-1-foot" idref="sect142-1">
+       <p>Tomando como precedente los comentarios originalmente publicados en <cite><a href="http://www.projectaon.org/en/ReadersHandbook/NewsletterExcerpts#lwcn6">Lone Wolf Club Newsletter No.6</a></cite>, deberías perder la Daga de Vashan aquí sólo si no llevas contigo una Daga ordinaria que no sea mágica.</p>
+       <p>Alternativamente, dada la importancia de la Daga de Vashna, también es razonable ignorar la instrucción de destruir la Daga de Vashna si ésta es la única daga que llevas contigo.</p>
+      </footnote>
+     </footnotes>
+
      <data>
-      <p>Necesitas varios minutos para abrir la cerradura usando tu Daga. Además haces saltar la punta de la hoja y echas a perder el Arma. Bórrala de tu <a idref="action">Carta de Acción</a>.</p>
+      <p>Necesitas varios minutos para abrir la cerradura usando tu Daga. Además haces saltar la punta de la hoja y echas a perder el Arma. Bórrala de tu <a idref="action">Carta de Acción</a>.<footref id="sect142-1" idref="sect142-1-foot"/></p>
       <p>Tras la puerta hay un corredor flanqueado de antorchas. A mitad de camino ves otra puerta en la pared de la izquierda, una sólida plancha de hierro en la que sólo se abre un ventanuco enrejado. Te acercas en silencio y atisbas por la rejilla.</p>
       <choice idref="sect260">Si en una aventura anterior de Lobo Solitario visitaste el Danarg, <link-text>pasa al 260</link-text>.</choice>
       <choice idref="sect114">En caso contrario, <link-text>pasa al
@@ -2920,13 +2933,11 @@ idref="action">Carta de Acción</a>; no necesitarás desechar otro Objeto Especial
      <data>
       <p>Su cuerpo rueda peldaños abajo y se detiene contorsionado al pie de la escalera. Te repugna tocarle, pero es posible que posea algunos objetos útiles. Rechinando los dientes, le vuelves boca arriba, vacías sus bolsillos y descubres los siguientes objetos:</p>
       <ul>
-       <li>Llave Negra (Objeto de la Mochila)</li>
-       <li>200 <a id="sect177-1" idref="sect177-1-foot"
-class="footnote">Kikas</a> (20 Coronas de Oro)</li>
+       <li>Llave Negra (Objeto Especial)</li>
+       <li>200 <a id="sect177-1" idref="sect177-1-foot" class="footnote">Kikas</a> (20 Coronas de Oro)</li>
        <li>Daga</li>
       </ul>
-      <p>Puedes tomar los objetos que desees, pero recuerda hacer las oportunas modificaciones en tu <a
-idref="action">Carta de Acción</a>.</p>
+      <p>Puedes tomar los objetos que desees, pero recuerda hacer las oportunas modificaciones en tu <a idref="action">Carta de Acción</a>.</p>
       <choice idref="sect285">Para continuar tu exploración, <link-text>pasa al 285</link-text>.</choice>
      </data>
     </section>
@@ -4378,12 +4389,9 @@ Si posees las Disciplinas del Magnakai de Control Animal y de Arte de Cazar, sum
      <data>
       <p>Más allá de la escalera se extiende un parapeto circular que domina un enorme y cavernoso cráter. Rebosa de millares de esclavos que con picos y palas trabajan en las sulfurosas entrañas de Torgar. Sus cuerpos están sucios y cubiertos de sudor a pesar del frío viento que aúlla en las profundidades como un lobo hambriento. Los guardianes Drakkarim los apremian a un mayor esfuerzo y al restallido de sus látigos responden los angustiosos gritos de dolor de los esclavos.</p>
       <p>Enfurecido ante lo que ves, abandonas el parapeto y penetras en un pasillo escasamente iluminado que desciende hasta una puerta de negro acero. Cuando intentas accionar la manija, compruebas que está cerrada con llave.</p>
-      <choice idref="sect80">Si posees una Llave Negra, <link-text>pasa al
-80</link-text>.</choice>
-      <choice idref="sect219">Si tienes una Llave Maestra, <link-text>pasa al
-219</link-text>.</choice>
-      <choice idref="sect130">Si no posees ninguno de estos Objetos Especiales,
-<link-text>pasa al 130</link-text>.</choice>
+      <choice idref="sect80">Si posees una Llave Negra, <link-text>pasa al 80</link-text>.</choice>
+      <choice idref="sect219">Si tienes una Llave de Hueso, <link-text>pasa al 219</link-text>.</choice>
+      <choice idref="sect130">Si no posees ninguno de estos Objetos Especiales, <link-text>pasa al 130</link-text>.</choice>
      </data>
     </section>
 
