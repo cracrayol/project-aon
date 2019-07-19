@@ -31,7 +31,7 @@ print << "(End of XML Header)";
  %general.inclusions;
 ]>
 
-<gamebook xml:lang="en-UK" version="0.12">
+<gamebook xml:lang="en-UK" version="0.13">
 
  <meta>
   <title>[Insert Title]</title>
