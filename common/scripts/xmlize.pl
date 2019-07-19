@@ -137,45 +137,53 @@ sub xmlize {
     $inline =~ s/(Action\sCharts?)/<a idref=\"action\">$1<\/a>/gi;
 
     if( $inline =~ /^\*/ ) {
+        # unordered lists
         $inline =~ s/^\*\s*/       <ul>\n        <li>/;
         $inline =~ s/\s*\*\s*/<\/li>\n        <li>/g;
         $inline .= "</li>\n       </ul>";
     }
     elsif( $inline =~ /^\d+\)\s/ ) {
+        # ordered lists
         $inline =~ s/^\d+\)\s+/       <ol>\n        <li>/;
         $inline =~ s/\s*\d+\)\s+/<\/li>\n        <li>/g;
         $inline .= "</li>\n       </ol>";
     }
     elsif( $inline =~ /^\<\!\-\-\spre\s\-\-\>/ ) {
+        # pre-formatted text
         $inline =~ s/^\<\!\-\-\spre\s\-\-\>//;
-        warn( "Warning: preformatted text in \"$infile\"\n" );
+        warn( "Warning: pre-formatted text in \"$infile\"\n" );
     }
     elsif( $inline =~ /^.+:\s+CLOSE\sCOMBAT\sSKILL/ ) {
+        # Freeway Warrior combat
         $inline =~ s/^(.+):\s+CLOSE\sCOMBAT\sSKILL\s+([0-9]+)\s+ENDURANCE\s+([0-9]+)/       <combat><enemy>$1<\/enemy><enemy-attribute class=\"closecombatskill\">$2<\/enemy-attribute><enemy-attribute class=\"endurance\">$3<\/enemy-attribute><\/combat>/g;
     }
     elsif( $inline =~ /^.+:\s+COMBAT\sSKILL/ ) {
+        # combat
         $inline =~ s/^(.+):\s+COMBAT\sSKILL\s+([0-9]+)\s+ENDURANCE\s+([0-9]+)/       <combat><enemy>$1<\/enemy><enemy-attribute class=\"combatskill\">$2<\/enemy-attribute><enemy-attribute class=\"endurance\">$3<\/enemy-attribute><\/combat>/;
     }
     elsif( $inline =~ /^(.*)\b(return|turn|go)([a-zA-Z\s]+?to )(\d{1,3})/i ) {
+        # links
         $inline =~ s/^(.*)\b(return|turn|go)([a-zA-Z\s]+?to )(\d{1,3})(.*)/       <choice idref=\"sect$4\">$1<link-text>$2$3$4<\/link-text>$5<\/choice>/i;
         $inline =~ s/\s+<\/choice>/<\/choice>/;
     }
     elsif( $inline =~ /^\[/ ) {
+        # signposts
         $inline =~ s/\[(.*)\]/$1/;
         $inline = "       <signpost>$inline</signpost>";
         $inline =~ s/\s+<\/signpost>/<\/signpost>/;
     }
     elsif( $inline =~ /^<!--(.*)-->/ ) {
+        # comments
         warn( "Warning: unknown comment \"$1\" in \"$infile\"\n" );
     }
     elsif( $inline eq "" ) {
+        # do nothing
     }
     else {
         $inline = "       <p>$inline</p>";
-        $inline =~ s/\s+<\/p>/<\/p>/;
     }
 
-# Interferes with selecting a combat paragraph if done earlier
+    # Interferes with selecting a combat paragraph if done earlier
     $inline =~ s/(COMBAT\sSKILL|CLOSE\sCOMBAT\sSKILL|ENDURANCE|WILLPOWER|\bCS\b|\bEP\b)([^<])/<typ class="attribute">$1<\/typ>$2/g;
 
     return $inline;
