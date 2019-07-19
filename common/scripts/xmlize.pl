@@ -83,17 +83,17 @@ for( my $sectionNumber = $minSectionNumber; $sectionNumber <= $numberOfSections;
 
     foreach my $oldline (@oldlines) {
         $oldline =~ s/\r|\n/ /g;
-	$oldline =~ s/^\s*(\S*)\s*$/$1/;
-	$oldline =~ s/\s\s/ /;
-	if( $oldline ne "" ) {
-	    $newline .= (" " . $oldline);
-	}
-	else {
-            $newline = &xmlize( $newline, $infile );
-            $newline .= "\n" if( $newline ne "" );
-	    push( @newlines, $newline );
-            $newline = "";
-	}
+        $oldline =~ s/^\s*(\S*)\s*$/$1/;
+        $oldline =~ s/\s{2,}/ /;
+        if( $oldline ne "" ) {
+            $newline .= (" " . $oldline);
+        }
+        else {
+                $newline = &xmlize($newline, $infile);
+                $newline .= "\n" if($newline ne "");
+                push( @newlines, $newline );
+                $newline = "";
+        }
     }
 
     print "\n\n    <section class=\"numbered\" id=\"sect$sectionNumber\">\n     <meta><title>$sectionNumber</title></meta>\n\n     <data>\n";
