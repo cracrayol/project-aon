@@ -1,77 +1,13 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
 #
 # xmlize.pl
 #
 ######################################################################
 
-#use strict;
+use strict;
+use warnings;
 
-$FILE_EXTENSION = 'txt';
-
-#### Subroutines
-
-sub xmlize {
-    my( $inline, $infile ) = @_;
-
-    $inline =~ s/[[:space:]]*(\.\.\.|\.\s\.\s\.)[[:space:]]*/<ch.ellips\/>/g;
-    $inline =~ tr/\t/ /;
-    $inline =~ s/\s{2,}/ /g;
-    $inline =~ s/\s+$//;
-    $inline =~ s/\&\s/<ch.ampersand\/>/g;
-    $inline =~ tr/\"\`\222\221/\'/;
-    $inline =~ s/(Random\sNumber\sTable)/<a idref=\"random\">$1<\/a>/gi;
-    $inline =~ s/(Action\sCharts?)/<a idref=\"action\">$1<\/a>/gi;
-    # \222 and \221 are some form of funky right and
-    # left quotes not present in ascii (of course) 
-    $inline =~ tr/\227/-/;
-    # \227 is an em or en dash
-
-    $inline =~ s/^\s*(.*)\s*$/$1/;
-
-    if( $inline =~ /^\*/ ) {
-        $inline =~ s/^\*\s*/       <ul>\n        <li>/;
-        $inline =~ s/\s*\*\s*/<\/li>\n        <li>/g;
-        $inline .= "</li>\n       </ul>";
-    }
-    elsif( $inline =~ /^\d+\)\s/ ) {
-        $inline =~ s/^\d+\)\s+/       <ol>\n        <li>/;
-        $inline =~ s/\s*\d+\)\s+/<\/li>\n        <li>/g;
-        $inline .= "</li>\n       </ol>";
-    }
-    elsif( $inline =~ /^\<\!\-\-\spre\s\-\-\>/ ) {
-        $inline =~ s/^\<\!\-\-\spre\s\-\-\>//;
-        warn( "Warning: preformatted text in \"$infile\"\n" );
-    }
-    elsif( $inline =~ /^.+:\s+CLOSE\sCOMBAT\sSKILL/ ) {
-        $inline =~ s/^(.+):\s+CLOSE\sCOMBAT\sSKILL\s+([0-9]+)\s+ENDURANCE\s+([0-9]+)/       <combat><enemy>$1<\/enemy><enemy-attribute class=\"closecombatskill\">$2<\/enemy-attribute><enemy-attribute class=\"endurance\">$3<\/enemy-attribute><\/combat>/g;
-    }
-    elsif( $inline =~ /^.+:\s+COMBAT\sSKILL/ ) {
-        $inline =~ s/^(.+):\s+COMBAT\sSKILL\s+([0-9]+)\s+ENDURANCE\s+([0-9]+)/       <combat><enemy>$1<\/enemy><enemy-attribute class=\"combatskill\">$2<\/enemy-attribute><enemy-attribute class=\"endurance\">$3<\/enemy-attribute><\/combat>/;
-    }
-    elsif( $inline =~ /^(.*)\b(return|turn|go)([a-zA-Z\s]+?to )(\d{1,3})/i ) {
-        $inline =~ s/^(.*)\b(return|turn|go)([a-zA-Z\s]+?to )(\d{1,3})(.*)/       <choice idref=\"sect$4\">$1<link-text>$2$3$4<\/link-text>$5<\/choice>/i;
-        $inline =~ s/\s+<\/choice>/<\/choice>/;
-    }
-    elsif( $inline =~ /^\[/ ) {
-        $inline =~ s/\[(.*)\]/$1/;
-        $inline = "       <signpost>$inline</signpost>";
-        $inline =~ s/\s+<\/signpost>/<\/signpost>/;
-    }
-    elsif( $inline eq "" ) {
-    }
-    elsif( $inline =~ /^<!--(.*)-->/ ) {
-        warn( "Warning: unknown comment \"$1\" in \"$infile\"\n" );
-    }
-    else {
-        $inline = "       <p>$inline</p>";
-        $inline =~ s/\s+<\/p>/<\/p>/;
-    }
-
-# Interferes with selecting a combat paragraph if done earlier
-    $inline =~ s/(COMBAT\sSKILL|CLOSE\sCOMBAT\sSKILL|ENDURANCE|WILLPOWER|\bCS\b|\bEP\b)([^<])/<typ class="attribute">$1<\/typ>$2/g;
-
-    return $inline;
-}
+my $FILE_EXTENSION = 'txt';
 
 #### Main Routine
 
@@ -176,3 +112,68 @@ print << "(End of XML footer)";
  </section>
 </gamebook>
 (End of XML footer)
+
+#### Subroutines
+
+sub xmlize {
+    my( $inline, $infile ) = @_;
+
+    $inline =~ s/[[:space:]]*(\.\.\.|\.\s\.\s\.)[[:space:]]*/<ch.ellips\/>/g;
+    $inline =~ tr/\t/ /;
+    $inline =~ s/\s{2,}/ /g;
+    $inline =~ s/\s+$//;
+    $inline =~ s/\&\s/<ch.ampersand\/>/g;
+    $inline =~ tr/\"\`\222\221/\'/;
+    $inline =~ s/(Random\sNumber\sTable)/<a idref=\"random\">$1<\/a>/gi;
+    $inline =~ s/(Action\sCharts?)/<a idref=\"action\">$1<\/a>/gi;
+    # \222 and \221 are some form of funky right and
+    # left quotes not present in ascii (of course) 
+    $inline =~ tr/\227/-/;
+    # \227 is an em or en dash
+
+    $inline =~ s/^\s*(.*)\s*$/$1/;
+
+    if( $inline =~ /^\*/ ) {
+        $inline =~ s/^\*\s*/       <ul>\n        <li>/;
+        $inline =~ s/\s*\*\s*/<\/li>\n        <li>/g;
+        $inline .= "</li>\n       </ul>";
+    }
+    elsif( $inline =~ /^\d+\)\s/ ) {
+        $inline =~ s/^\d+\)\s+/       <ol>\n        <li>/;
+        $inline =~ s/\s*\d+\)\s+/<\/li>\n        <li>/g;
+        $inline .= "</li>\n       </ol>";
+    }
+    elsif( $inline =~ /^\<\!\-\-\spre\s\-\-\>/ ) {
+        $inline =~ s/^\<\!\-\-\spre\s\-\-\>//;
+        warn( "Warning: preformatted text in \"$infile\"\n" );
+    }
+    elsif( $inline =~ /^.+:\s+CLOSE\sCOMBAT\sSKILL/ ) {
+        $inline =~ s/^(.+):\s+CLOSE\sCOMBAT\sSKILL\s+([0-9]+)\s+ENDURANCE\s+([0-9]+)/       <combat><enemy>$1<\/enemy><enemy-attribute class=\"closecombatskill\">$2<\/enemy-attribute><enemy-attribute class=\"endurance\">$3<\/enemy-attribute><\/combat>/g;
+    }
+    elsif( $inline =~ /^.+:\s+COMBAT\sSKILL/ ) {
+        $inline =~ s/^(.+):\s+COMBAT\sSKILL\s+([0-9]+)\s+ENDURANCE\s+([0-9]+)/       <combat><enemy>$1<\/enemy><enemy-attribute class=\"combatskill\">$2<\/enemy-attribute><enemy-attribute class=\"endurance\">$3<\/enemy-attribute><\/combat>/;
+    }
+    elsif( $inline =~ /^(.*)\b(return|turn|go)([a-zA-Z\s]+?to )(\d{1,3})/i ) {
+        $inline =~ s/^(.*)\b(return|turn|go)([a-zA-Z\s]+?to )(\d{1,3})(.*)/       <choice idref=\"sect$4\">$1<link-text>$2$3$4<\/link-text>$5<\/choice>/i;
+        $inline =~ s/\s+<\/choice>/<\/choice>/;
+    }
+    elsif( $inline =~ /^\[/ ) {
+        $inline =~ s/\[(.*)\]/$1/;
+        $inline = "       <signpost>$inline</signpost>";
+        $inline =~ s/\s+<\/signpost>/<\/signpost>/;
+    }
+    elsif( $inline eq "" ) {
+    }
+    elsif( $inline =~ /^<!--(.*)-->/ ) {
+        warn( "Warning: unknown comment \"$1\" in \"$infile\"\n" );
+    }
+    else {
+        $inline = "       <p>$inline</p>";
+        $inline =~ s/\s+<\/p>/<\/p>/;
+    }
+
+# Interferes with selecting a combat paragraph if done earlier
+    $inline =~ s/(COMBAT\sSKILL|CLOSE\sCOMBAT\sSKILL|ENDURANCE|WILLPOWER|\bCS\b|\bEP\b)([^<])/<typ class="attribute">$1<\/typ>$2/g;
+
+    return $inline;
+}
