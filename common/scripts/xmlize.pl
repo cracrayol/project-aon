@@ -10,6 +10,7 @@ use utf8;
 use open ':encoding(UTF-8)';
 
 my $FILE_EXTENSION = 'txt';
+my $BASE_INDENT = '     ';
 
 #### Main Routine
 
@@ -98,9 +99,9 @@ for( my $sectionNumber = $minSectionNumber; $sectionNumber <= $numberOfSections;
         }
     }
 
-    print "\n\n    <section class=\"numbered\" id=\"sect$sectionNumber\">\n     <meta><title>$sectionNumber</title></meta>\n\n     <data>\n";
+    print "\n\n$BASE_INDENT<section class=\"numbered\" id=\"sect$sectionNumber\">\n$BASE_INDENT <meta><title>$sectionNumber</title></meta>\n\n$BASE_INDENT <data>\n";
     print @newlines;
-    print "     </data>\n    </section>";
+    print "$BASE_INDENT </data>\n$BASE_INDENT</section>";
 }
 
 print << "(End of XML footer)";
@@ -138,15 +139,15 @@ sub xmlize {
 
     if( $inline =~ /^\*/ ) {
         # unordered lists
-        $inline =~ s/^\*\s*/       <ul>\n        <li>/;
-        $inline =~ s/\s*\*\s*/<\/li>\n        <li>/g;
-        $inline .= "</li>\n       </ul>";
+        $inline =~ s/^\*\s*/$BASE_INDENT  <ul>\n$BASE_INDENT   <li>/;
+        $inline =~ s/\s*\*\s*/<\/li>\n$BASE_INDENT   <li>/g;
+        $inline .= "</li>\n$BASE_INDENT  </ul>";
     }
     elsif( $inline =~ /^\d+\)\s/ ) {
         # ordered lists
-        $inline =~ s/^\d+\)\s+/       <ol>\n        <li>/;
-        $inline =~ s/\s*\d+\)\s+/<\/li>\n        <li>/g;
-        $inline .= "</li>\n       </ol>";
+        $inline =~ s/^\d+\)\s+/$BASE_INDENT  <ol>\n$BASE_INDENT   <li>/;
+        $inline =~ s/\s*\d+\)\s+/<\/li>\n$BASE_INDENT   <li>/g;
+        $inline .= "</li>\n$BASE_INDENT  </ol>";
     }
     elsif( $inline =~ /^\<\!\-\-\spre\s\-\-\>/ ) {
         # pre-formatted text
@@ -155,21 +156,21 @@ sub xmlize {
     }
     elsif( $inline =~ /^.+:\s+CLOSE\sCOMBAT\sSKILL/ ) {
         # Freeway Warrior combat
-        $inline =~ s/^(.+):\s+CLOSE\sCOMBAT\sSKILL\s+([0-9]+)\s+ENDURANCE\s+([0-9]+)/       <combat><enemy>$1<\/enemy><enemy-attribute class=\"closecombatskill\">$2<\/enemy-attribute><enemy-attribute class=\"endurance\">$3<\/enemy-attribute><\/combat>/g;
+        $inline =~ s/^(.+):\s+CLOSE\sCOMBAT\sSKILL\s+([0-9]+)\s+ENDURANCE\s+([0-9]+)/$BASE_INDENT  <combat><enemy>$1<\/enemy><enemy-attribute class=\"closecombatskill\">$2<\/enemy-attribute><enemy-attribute class=\"endurance\">$3<\/enemy-attribute><\/combat>/g;
     }
     elsif( $inline =~ /^.+:\s+COMBAT\sSKILL/ ) {
         # combat
-        $inline =~ s/^(.+):\s+COMBAT\sSKILL\s+([0-9]+)\s+ENDURANCE\s+([0-9]+)/       <combat><enemy>$1<\/enemy><enemy-attribute class=\"combatskill\">$2<\/enemy-attribute><enemy-attribute class=\"endurance\">$3<\/enemy-attribute><\/combat>/;
+        $inline =~ s/^(.+):\s+COMBAT\sSKILL\s+([0-9]+)\s+ENDURANCE\s+([0-9]+)/$BASE_INDENT  <combat><enemy>$1<\/enemy><enemy-attribute class=\"combatskill\">$2<\/enemy-attribute><enemy-attribute class=\"endurance\">$3<\/enemy-attribute><\/combat>/;
     }
     elsif( $inline =~ /^(.*)\b(return|turn|go)([a-zA-Z\s]+?to )(\d{1,3})/i ) {
         # links
-        $inline =~ s/^(.*)\b(return|turn|go)([a-zA-Z\s]+?to )(\d{1,3})(.*)/       <choice idref=\"sect$4\">$1<link-text>$2$3$4<\/link-text>$5<\/choice>/i;
+        $inline =~ s/^(.*)\b(return|turn|go)([a-zA-Z\s]+?to )(\d{1,3})(.*)/$BASE_INDENT  <choice idref=\"sect$4\">$1<link-text>$2$3$4<\/link-text>$5<\/choice>/i;
         $inline =~ s/\s+<\/choice>/<\/choice>/;
     }
     elsif( $inline =~ /^\[/ ) {
         # signposts
         $inline =~ s/\[(.*)\]/$1/;
-        $inline = "       <signpost>$inline</signpost>";
+        $inline = "$BASE_INDENT  <signpost>$inline</signpost>";
         $inline =~ s/\s+<\/signpost>/<\/signpost>/;
     }
     elsif( $inline =~ /^<!--(.*)-->/ ) {
@@ -180,7 +181,7 @@ sub xmlize {
         # do nothing
     }
     else {
-        $inline = "       <p>$inline</p>";
+        $inline = "$BASE_INDENT  <p>$inline</p>";
     }
 
     # Interferes with selecting a combat paragraph if done earlier
