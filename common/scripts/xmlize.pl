@@ -6,6 +6,8 @@
 
 use strict;
 use warnings;
+use utf8;
+use open ':encoding(UTF-8)';
 
 my $FILE_EXTENSION = 'txt';
 
@@ -118,20 +120,21 @@ print << "(End of XML footer)";
 sub xmlize {
     my( $inline, $infile ) = @_;
 
-    $inline =~ s/[[:space:]]*(\.\.\.|\.\s\.\s\.)[[:space:]]*/<ch.ellips\/>/g;
     $inline =~ tr/\t/ /;
-    $inline =~ s/\s{2,}/ /g;
-    $inline =~ s/\s+$//;
-    $inline =~ s/\&\s/<ch.ampersand\/>/g;
-    $inline =~ tr/\"\`\222\221/\'/;
+    $inline =~ s/[[:space:]]{2,}/ /g;
+    $inline =~ s/[[:space:]]+$//;
+    $inline =~ s/^[[:space:]]+//;
+    $inline =~ s/[[:space:]]*(\.\.\.|\.\s\.\s\.)[[:space:]]*/<ch.ellips\/>/g;
+
+    $inline =~ s/\&(?=[[:space:]])/<ch.ampersand\/>/g;
+    $inline =~ tr/\"\`/\'/;
+    $inline =~ s/[\N{U+2018}\N{U+201C}]/<quote>/g;
+    $inline =~ s/[\N{U+2019}\N{U+201D}]/<\/quote>/g;
+    $inline =~ s/[\N{U+2014}]/<ch.endash\/>/g;
+    $inline =~ s/[\N{U+2014}]/<ch.emdash\/>/g;
+
     $inline =~ s/(Random\sNumber\sTable)/<a idref=\"random\">$1<\/a>/gi;
     $inline =~ s/(Action\sCharts?)/<a idref=\"action\">$1<\/a>/gi;
-    # \222 and \221 are some form of funky right and
-    # left quotes not present in ascii (of course) 
-    $inline =~ tr/\227/-/;
-    # \227 is an em or en dash
-
-    $inline =~ s/^\s*(.*)\s*$/$1/;
 
     if( $inline =~ /^\*/ ) {
         $inline =~ s/^\*\s*/       <ul>\n        <li>/;
@@ -162,10 +165,10 @@ sub xmlize {
         $inline = "       <signpost>$inline</signpost>";
         $inline =~ s/\s+<\/signpost>/<\/signpost>/;
     }
-    elsif( $inline eq "" ) {
-    }
     elsif( $inline =~ /^<!--(.*)-->/ ) {
         warn( "Warning: unknown comment \"$1\" in \"$infile\"\n" );
+    }
+    elsif( $inline eq "" ) {
     }
     else {
         $inline = "       <p>$inline</p>";
