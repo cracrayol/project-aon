@@ -1,4 +1,4 @@
-#!/bin/env perl
+#!/usr/bin/env perl
 
 use strict;
 use autodie;
@@ -13,7 +13,7 @@ my $line = "";
 my $section = "";
 my $filename = "";
 
-while ($line = <STDIN>) {
+while ($line = <>) {
     chomp ($line);
     print STDERR "DEBUG: Reading '$line'\n" if $debug;
     if ($line =~ /^(\d+)$/) {
