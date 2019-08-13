@@ -1,4 +1,15 @@
 #!/usr/bin/env perl
+#
+# Split single text file with numbered sections into multiple files,
+# one per section.
+#
+# Simple Bash script to add title to the resulting files:
+#
+# for i in `seq 1 350`; do
+#     sed -i '1s/^/The Storms of Chai\n/' $i.txt;
+# done
+# 
+# See https://www.projectaon.org/en/Sanctum/Howto-proofread
 
 use strict;
 use autodie;
@@ -21,7 +32,8 @@ while ($line = <>) {
         $filename = "$section.txt";
         print STDERR "DEBUG: Starting section $section\n" if $debug;
         close $fh if $fh->opened();
-        open ($fh, ">>$filename") or die "Couldn't open file $filename, $!"
+        open ($fh, ">>$filename") or die "Couldn't open file $filename, $!";
+        print $fh "Section $section\n";
     } 
 
     # Print to the file if we have a filehandle except for the 
