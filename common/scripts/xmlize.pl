@@ -8,6 +8,7 @@ use strict;
 use warnings;
 use utf8;
 use open ':encoding(UTF-8)';
+use open ':std', ':encoding(UTF-8)';
 
 my $FILE_EXTENSION = 'txt';
 my $BASE_INDENT = '     ';
@@ -120,6 +121,10 @@ print << "(End of XML footer)";
 
 sub xmlize {
     my( $inline, $infile ) = @_;
+
+    if(!defined $inline || $inline eq "") {
+        return "";
+    }
 
     $inline =~ tr/\t/ /;
     $inline =~ s/[[:space:]]{2,}/ /g;
