@@ -135,6 +135,7 @@ sub xmlize {
     $inline =~ s/\&(?=[[:space:]])/<ch.ampersand\/>/g;
     $inline =~ tr/\"\`/\'/;
     $inline =~ s/[\N{U+2018}\N{U+201C}]/<quote>/g;
+    $inline =~ s|[\N{U+2019}\N{U+201D}]([[:alpha:]])|<ch.apos/>$1|g;
     $inline =~ s/[\N{U+2019}\N{U+201D}]/<\/quote>/g;
     $inline =~ s/[\N{U+2014}]/<ch.endash\/>/g;
     $inline =~ s/[\N{U+2014}]/<ch.emdash\/>/g;
