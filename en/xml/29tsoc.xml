@@ -12,7 +12,37 @@
 <gamebook xml:lang="en-UK" version="0.13">
 
  <meta>
-  <title>[Insert Title]</title>
+  <title>The Storms of Chai</title>
+  <creator class="author" sort-name="Dever, Joe">Joe Dever</creator>
+  <creator class="short">Joe Dever</creator>
+  <creator class="medium">
+   <line>Joe Dever</line>
+  </creator>
+  <creator class="long">
+   &inclusion.joe.dever.bio.lw;
+  </creator>
+  <publisher>Project Aon</publisher>
+  <date class="publication"><year>XXXX</year><month>X</month><day>X</day></date>
+  <description class="blurb">
+   <p>A visit to the fabulous court of Xo-lin is disrupted when news of an invasion arrives at the venerable emperor<ch.apos/>s palace in Pensei. The evil Autarch Sejanoz of Bhanar has launched a sudden and devastating attack upon Xo-lin<ch.apos/>s ancient realm. With the tyrant<ch.apos/>s armies swarming across his borders, the aged Xo-lin is forced to flee his Imperial Palace and seek sanctuary in the distant city of Tazhan.</p>
+   <p>In <strong><cite>The Hunger of Sejanoz</cite></strong>, your mission is to escort the aged emperor and his entourage safely across the Great Lissan Plain to Tazhan. Will you succeed in your perilous task<ch.ellips/>or will you and your charges fall victim to the merciless forces of the Autarch?</p>
+  </description>
+  <description class="publication">
+   <p>Internet Edition published by <a href="http://www.projectaon.org/">Project Aon</a>. This edition is intended to reflect the complete text of the original version. Where we have made minor corrections, they will be noted in the <a idref="errata">Errata</a>.</p>
+  </description>
+  <rights class="copyrights">
+   <line>Text copyright <ch.copy/> 2016 Joe Dever.</line>
+   <line>Map copyright <ch.copy/> 2016 Francesco Mattioli.</line>
+   <line>Interior art copyright <ch.copy/> 2015 Giuseppe Camuncoli.</line>
+  </rights>
+  <rights class="license-notification">
+   <p>
+    <line>Text copyright <ch.copy/> 2016 Joe Dever.</line>
+    <line>Map copyright <ch.copy/> 2016 Francesco Mattioli.</line>
+    <line>Interior art copyright <ch.copy/> 2015 Giuseppe Camuncoli.</line>
+    <line>Distribution of this Internet Edition is restricted under the terms of the <a idref="license">Project Aon License</a>.</line>
+   </p>
+  </rights>
  </meta>
 
  <section id="toc">
@@ -23,12 +53,1139 @@
  <section id="title">
   <meta>
    <title>Title Page</title>
-   <!--<link class="next" idref="dedicate" />-->
+   <link class="next" idref="dedicate" />
   </meta>
 
   <data>
 
-   <!-- Frontmatter -->
+   <section class="frontmatter" id="dedicate">
+    <meta>
+     <title>Dedication</title>
+     <link class="prev" idref="title" />
+     <link class="next" idref="acknwldg" />
+    </meta>
+
+    <data>
+     <p class="dedication">
+      <line>For Rob Gould</line>
+      <line><quote>Cometh the hour, cometh the man.</quote></line>
+     </p>
+    </data>
+   </section>
+
+   <section class="frontmatter" id="acknwldg">
+    <meta>
+     <title>Acknowledgements</title>
+     <link class="prev" idref="dedicate" />
+     <link class="next" idref="timeline" />
+    </meta>
+
+    <data>
+
+     &inclusion.joe.dever.endowment;
+
+     <section class="frontmatter" id="credits">
+      <meta><title>Credits</title></meta>
+
+      <data>
+       <dl>
+        <dt>XML</dt>
+         <dd>
+          <line>Jonathan Blake</line>
+         </dd>
+        <dt>Action Charts</dt>
+         <dd>
+          <line>JC Alvarez</line>
+          <line>Jonathan Blake</line>
+         </dd>
+        <dt>Proofreading</dt>
+         <dd>
+          <line><!-- TODO: XXXXX --></line>
+         </dd>
+        <dt>Coordination</dt>
+         <dd>Jonathan Blake</dd>
+       </dl>
+      </data>
+     </section>
+
+    </data>
+   </section>
+
+   <section class="frontmatter" id="timeline">
+    <meta>
+     <title>Timeline of Notable Events in Magnamund</title>
+     <link class="prev" idref="acknwldg" />
+     <link class="next" idref="tssf" />
+    </meta>
+
+    <data>
+     <!--TODO-->
+    </data>
+   </section>
+
+   <section class="frontmatter" id="tssf">
+    <meta>
+     <title>The Story So Far<ch.ellips/></title>
+     <link class="prev" idref="timeline" />
+     <link class="next" idref="gamerulz" />
+    </meta>
+
+    <data>
+     <!--TODO-->
+    </data>
+   </section>
+
+   <section class="frontmatter" id="gamerulz">
+    <meta>
+     <title>The Game Rules</title>
+     <link class="prev" idref="tssf" />
+     <link class="next" idref="kainame" />
+    </meta>
+
+    <footnotes>
+     <footnote id="gamerulz-1-foot" idref="gamerulz-1">
+      <p>If you have completed any previous <cite>Lone Wolf New Order</cite> adventures, remember to choose an additional Grand Master Discipline and add <ch.plus/>1 to your basic <typ class="attribute">COMBAT SKILL</typ> and <ch.plus/>2 to your basic <typ class="attribute">ENDURANCE</typ> for each adventure you successfully completed (cf. <a idref="discplnz">Grand Master Disciplines</a>).</p>
+     </footnote>
+    </footnotes>
+
+    <data>
+     <p>You keep a record of your adventure on the <a idref="action">Action Chart</a>.</p>
+     <p>During the years you have spent in training at the Kai Monastery, you have devoted yourself to further developing your fighting prowess (<typ class="attribute">COMBAT SKILL</typ>) and physical stamina (<typ class="attribute">ENDURANCE</typ>). Before you begin this <cite>New Order</cite> adventure you need to measure how effective your training has been. To do this take a pencil and, with your eyes closed, point the blunt end of it onto the <a idref="random">Random Number Table</a>. If you pick a 0 it counts as zero.</p>
+     <p>The first number that you pick from the <a idref="random">Random Number Table</a> in this way represents your <typ class="attribute">COMBAT SKILL</typ>. Add 25 to the number you picked and write the total in the <typ class="attribute">COMBAT SKILL</typ> section of your <a idref="action">Action Chart</a> (i.e. if your pencil fell on the number 7 in the <a idref="random">Random Number Table</a> you would write in a <typ class="attribute">COMBAT SKILL</typ> of 32). When you fight, your <typ class="attribute">COMBAT SKILL</typ> will be pitted against that of your enemy. A high score in this section is therefore desirable.</p>
+     <p>The second number that you pick from the <a idref="random">Random Number Table</a> represents your powers of <typ class="attribute">ENDURANCE</typ>. Add 30 to this number and write the total in the <typ class="attribute">ENDURANCE</typ> section of your <a idref="action">Action Chart</a> (i.e. if your pencil fell on the number 8 on the <a idref="random">Random Number Table</a> you would have 38 <typ class="attribute">ENDURANCE</typ> points).</p>
+     <p>If you are wounded in combat you will lose <typ class="attribute">ENDURANCE</typ> points. If at any time your <typ class="attribute">ENDURANCE</typ> points fall to zero or below, you are dead and the adventure is over. Lost <typ class="attribute">ENDURANCE</typ> points can be regained during the course of the adventure, but your number of <typ class="attribute">ENDURANCE</typ> points cannot rise above the number you have when you start an adventure.</p>
+     <p>If you have successfully completed previous adventures in the <cite>Lone Wolf New Order</cite> series (Books 21<ch.endash/>27), you can carry your current scores of <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points over to this adventure.<footref id="gamerulz-1" idref="gamerulz-1-foot"/> You may also carry over any Special Items, Kai Weapon, normal Weapons, and Backpack Items you had in your possession at the end of your last adventure, and these should be entered on your new <a idref="action">Action Chart</a>.</p>
+     <p><strong>Playing Tip:</strong> You may use a 10-sided die instead of the <a idref="random">Random Number Table</a> if you find it more convenient.</p>
+
+     <section class="frontmatter-separate" id="kainame">
+      <meta>
+       <title>Your Kai Name</title>
+       <link class="prev" idref="gamerulz" />
+       <link class="next" idref="discplnz" />
+      </meta>
+
+      <data>
+       <p>It has long been the tradition of your <ch.eacute/>lite warrior caste to bestow a new name upon each young novice when they complete their first year<ch.apos/>s training at the Kai Monastery. Kai names are chosen by senior Kai Masters with the aim of reflecting the individual strengths and qualities of each novice.</p>
+       <p>You may create your own Kai name for yourself, or you can generate a Kai name at random using the name tables below. To generate a Kai name, pick a number from the <a idref="random">Random Number Table</a> and consult Table A. The name which corresponds to the number you have picked is the first part, or prefix, of your Kai name. Now pick a second number from the <a idref="random">Random Number Table</a> and consult Table B. The name which corresponds to the number you have picked is the second part, or suffix, of your Kai name. Put the prefix and the suffix together and you have your own personal Kai name.</p>
+
+
+        <table>
+         <tr>
+          <th colspan="2" scope="colgroup">Table A</th>
+          <th colspan="1" scope="colgroup"></th>
+          <th colspan="2" scope="colgroup">Table B</th>
+         </tr>
+         <tr>
+          <th colspan="2" scope="colgroup">(Kai name prefix)</th>
+          <th colspan="1" scope="colgroup"></th>
+          <th colspan="2" scope="colgroup">(Kai name suffix)</th>
+         </tr>
+         <tr>
+          <td>0 = </td>
+          <td>Swift</td>
+          <td></td>
+          <td>0 = </td>
+          <td>Blade</td>
+         </tr>
+         <tr>
+          <td>1 = </td>
+          <td>Sun</td>
+          <td></td>
+          <td>1 = </td>
+          <td>Fire</td>
+         </tr>
+         <tr>
+          <td>2 = </td>
+          <td>True</td>
+          <td></td>
+          <td>2 = </td>
+          <td>Hawk</td>
+         </tr>
+         <tr>
+          <td>3 = </td>
+          <td>Bold</td>
+          <td></td>
+          <td>3 = </td>
+          <td>Heart</td>
+         </tr>
+         <tr>
+          <td>4 = </td>
+          <td>Moon</td>
+          <td></td>
+          <td>4 = </td>
+          <td>Friend</td>
+         </tr>
+         <tr>
+          <td>5 = </td>
+          <td>Sword</td>
+          <td></td>
+          <td>5 = </td>
+          <td>Star</td>
+         </tr>
+         <tr>
+          <td>6 = </td>
+          <td>Wise</td>
+          <td></td>
+          <td>6 = </td>
+          <td>Dancer</td>
+         </tr>
+         <tr>
+          <td>7 = </td>
+          <td>Storm</td>
+          <td></td>
+          <td>7 = </td>
+          <td>Helm</td>
+         </tr>
+         <tr>
+          <td>8 = </td>
+          <td>Rune</td>
+          <td></td>
+          <td>8 = </td>
+          <td>Strider</td>
+         </tr>
+         <tr>
+          <td>9 = </td>
+          <td>Brave</td>
+          <td></td>
+          <td>9 = </td>
+          <td>Shield</td>
+         </tr>
+        </table>
+       </data>
+      </section>
+
+     <section class="frontmatter-separate" id="discplnz">
+      <meta>
+       <title>New Order Kai Grand Master Disciplines</title>
+       <link class="prev" idref="kainame" />
+       <link class="next" idref="equipmnt" />
+      </meta>
+
+      <footnotes>
+       <footnote id="discplnz-1-foot" idref="discplnz-1">
+        <p>Details about the Kai Weapon appear in the next section of the game rules.</p>
+       </footnote>
+      </footnotes>
+
+      <data>
+       <section class="frontmatter" id="mksumary">
+        <meta>
+         <title>Kai and Magnakai Disciplines</title>
+        </meta>
+
+        <data>
+         <p>During your distinguished rise to the ranks of the New Order of Kai Grand Masters, you have become proficient in all of the basic Kai and Magnakai Disciplines. These Disciplines provide you with a formidable arsenal of natural abilities which will serve you well. A brief summary of your skills is given below:</p>
+
+         <dl class="paragraphed">
+          <dt>Weaponmastery</dt>
+           <dd><p>You are proficient with all close combat and missile weapons. You are a master of unarmed combat and suffer no <typ class="attribute">COMBAT SKILL</typ> loss when fighting bare-handed.</p></dd>
+          <dt>Animal Control</dt>
+           <dd><p>You are able to communicate with most animals and have limited control over hostile creatures. You can use woodland animals as guides and you are able to block a non-sentient creature<ch.apos/>s sense of taste and smell.</p></dd>
+          <dt>Curing</dt>
+           <dd>
+            <p>You are able to restore <typ class="attribute">ENDURANCE</typ> points lost as a direct result of combat. You may restore 1 <typ class="attribute">ENDURANCE</typ> point for every numbered section of the book you pass through in which you are not involved in further combat. The maximum number of <typ class="attribute">ENDURANCE</typ> points that can be restored in this way is limited to 10 per adventure.</p>
+            <p>You also possess the ability to heal the wounds of others, and you can neutralize the harmful effects of most poisons, venoms, and toxins.</p>
+           </dd>
+          <dt>Invisibility</dt>
+           <dd><p>You can hide effectively in most environments, mask any sounds made during movement, and you can cause minor alterations of your own physical appearance. Also you are able to mask your own body heat and scent.</p></dd>
+          <dt>Huntmastery</dt>
+           <dd><p>You are an expert hunter of food in the wild. You possess great physical agility and a keen sense of vision (day and night). Your senses of hearing and smell are especially acute.</p></dd>
+          <dt>Pathsmanship</dt>
+           <dd><p>You are able to understand most languages, magical symbols, and hieroglyphics. You are expert at reading footprints and tracks. You have an intuitive knowledge of the compass points and can detect the threat of an enemy ambush up to a distance of 500 yards. You possess an ability to cross terrain without leaving tracks. You can converse with sentient creatures and mask yourself from psychic spells of detection.</p></dd>
+          <dt>Psi-surge</dt>
+           <dd><p>You are able to attack enemies using the powers of your mind. Also you can set up disruptive vibrations in inanimate objects and cause confusion in the minds of unsophisticated enemies.</p></dd>
+          <dt>Psi-screen</dt>
+           <dd><p>You possess strong mental defences against hypnosis, supernatural illusions, charms, hostile telepathy, and evil spirits. You are able to divert and re-channel some hostile psychic energy to your own ends.</p></dd>
+          <dt>Nexus</dt>
+           <dd><p>You can move small items by projection of your mind power. You can withstand extremes of temperature and are able to extinguish fire by force of your will alone. You have a limited immunity to flames, toxic gases, and corrosive liquids.</p></dd>
+          <dt>Divination</dt>
+           <dd><p>Your famous Kai Sixth Sense can warn you of imminent danger. You can detect invisible or hidden enemies, and you are able to communicate telepathically. You can recognize magic-using and/or magical creatures, detect psychic residues, and you have a limited ability to leave your corporeal body (<quote>spirit-walk</quote>) for short periods.</p></dd>
+         </dl>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="nodispln">
+        <meta>
+         <title>New Order Kai Grand Master Disciplines</title>
+        </meta>
+
+        <data>
+         <p>After years of martial training and study at the Kai Monastery, and by the rigorous practice of the teachings of your illustrious mentor<ch.emdash/>Kai Supreme Master Lone Wolf<ch.emdash/>you have achieved the noble rank of Kai Grand Master Senior.</p>
+
+         <p>Following in the footsteps of Lone Wolf himself, you have vowed that one day you will become totally proficient in all 16 of the New Order Kai Grand Master Disciplines. By doing so successfully you will share with Lone Wolf the responsibility, the honour, and the future glory of leading the New Order Kai as a Supreme Master.</p>
+
+         <p>If this is the first <cite>New Order</cite> adventure you have undertaken, then your present rank is that of Kai Grand Master Senior. This means that you have mastered <em>five</em> of the New Order Grand Master Disciplines listed below. It is for you to decide which five Disciplines these are. As all of the New Order Grand Master Disciplines may be of use to you at some point during your mission, pick these five skills with care. The correct use of a New Order Grand Master Discipline at the right time could save your life. When you have chosen your five Disciplines, enter them in the Grand Master Disciplines section of your <a idref="action">Action Chart</a>.</p>
+
+       <section class="frontmatter" id="wpnmstry">
+        <meta><title>Grand Weaponmastery</title></meta>
+        <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="wpnmast.png" width="386" height="54"  mime-type="image/png"/>
+          <instance class="html-compatible" src="wpnmast.gif" width="386" height="54"  mime-type="image/gif"/>
+          <instance class="pdf" src="wpnmast.pdf" width="386" height="54" />
+         </illustration>
+
+         <p>This Discipline enables a New Order Grand Master to become supremely efficient in the use of all weapons. When you enter combat armed with one of your Grand Master weapons, you may add 5 points to your <typ class="attribute">COMBAT SKILL</typ>. The rank of Kai Grand Master Senior, with which you begin the <cite>New Order</cite> series, means that you are skilled in the use of <em>one</em> of the weapons listed below.</p> 
+         
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="weapons.png" width="386" height="310" mime-type="image/png"/>
+          <instance class="html-compatible" src="weapons.gif" width="386" height="310" mime-type="image/gif"/>
+          <instance class="pdf" src="weapons.pdf" width="386" height="310" />
+         </illustration>
+
+         <p>For every adventure that you complete successfully in the <cite>New Order</cite> series while possessing the Discipline of Grand Weaponmastery, you will gain proficiency with one additional weapon.</p>
+         <p>If you have the Discipline of Grand Weaponmastery with Bow, you may add 5 points to any number you pick from the <a idref="random">Random Number Table</a>, when using the Bow.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="anmlmstr">
+        <meta><title>Animal Mastery</title></meta>
+        <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="anmlmast.png" width="386" height="53"  mime-type="image/png"/>
+          <instance class="html-compatible" src="anmlmast.gif" width="386" height="53"  mime-type="image/gif"/>
+          <instance class="pdf" src="anmlmast.pdf" width="386" height="53" />
+         </illustration>
+
+         <p>New Order Grand Masters have considerable control over hostile, non-sentient creatures. Also, they have the ability to converse with birds and fishes, and use them as guides.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="deliver">
+        <meta><title>Deliverance <em>(Advanced Curing)</em></title></meta>
+        <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="delvrance.png" width="386" height="53"  mime-type="image/png"/>
+          <instance class="html-compatible" src="delvrance.gif" width="386" height="53"  mime-type="image/gif"/>
+          <instance class="pdf" src="delvrance.pdf" width="386" height="53" />
+         </illustration>
+
+         <p>New Order Grand Masters are able to use their healing power to repair serious battle-wounds. If, while in combat, their <typ class="attribute">ENDURANCE</typ> is reduced to 8 points or less, they can draw upon their mastery to restore 20 <typ class="attribute">ENDURANCE</typ> points. This emergency ability can only be used once every 20 days.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="assimila">
+        <meta><title>Assimilance <em>(Advanced Invisibility)</em></title></meta>
+        <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="assmlnce.png" width="386" height="53"  mime-type="image/png"/>
+          <instance class="html-compatible" src="assmlnce.gif" width="386" height="53"  mime-type="image/gif"/>
+          <instance class="pdf" src="assmlnce.pdf" width="386" height="53" />
+         </illustration>
+
+         <p>New Order Grand Masters are able to effect striking changes to their physical appearance, and maintain these changes over a period of 1 to 3 days. They have also mastered advanced camouflage techniques which make them virtually undetectable in an open landscape.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="hntmstry">
+        <meta><title>Grand Huntmastery</title></meta>
+        <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="huntmstr.png" width="386" height="54"  mime-type="image/png"/>
+          <instance class="html-compatible" src="huntmstr.gif" width="386" height="54"  mime-type="image/gif"/>
+          <instance class="pdf" src="huntmstr.pdf" width="386" height="54" />
+         </illustration>
+
+         <p>New Order Grand Masters are able to see in total darkness and they possess great natural speed and agility. They also have a superb sense of touch and taste. If you have chosen the Discipline of Grand Huntmastery as one of your skills, you will not need to tick off a Meal when instructed to eat.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="pthmnshp">
+        <meta><title>Grand Pathsmanship</title></meta>
+        <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="pathsmn.png" width="386" height="53"  mime-type="image/png"/>
+          <instance class="html-compatible" src="pathsmn.gif" width="386" height="53"  mime-type="image/gif"/>
+          <instance class="pdf" src="pathsmn.pdf" width="386" height="53" />
+         </illustration>
+
+         <p>New Order Grand Masters are able to resist entrapment by hostile plants. Also they have a super-awareness of ambush, or the threat of ambush, in woods and dense forests.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="kaisurge">
+        <meta><title>Kai-surge</title></meta>
+        <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="ksurge.png" width="386" height="53"  mime-type="image/png"/>
+          <instance class="html-compatible" src="ksurge.gif" width="386" height="53"  mime-type="image/gif"/>
+          <instance class="pdf" src="ksurge.pdf" width="386" height="53" />
+         </illustration>
+
+         <p>When using their psychic ability to attack an enemy, New Order Grand Masters may add 8 points to their <typ class="attribute">COMBAT SKILL</typ>. For every round in which Kai-surge is used, they need only deduct 1 <typ class="attribute">ENDURANCE</typ> point. Grand Masters have the option of using a weaker form of psychic attack called Mindblast. When using this lesser attack, they may add 4 points to their <typ class="attribute">COMBAT SKILL</typ> without loss of <typ class="attribute">ENDURANCE</typ> points (Kai-surge and Mindblast cannot be used simultaneously). New Order Grand Masters cannot use Kai-surge if their <typ class="attribute">ENDURANCE</typ> score falls to 6 points or below.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="kaiscrn">
+        <meta><title>Kai-screen</title></meta>
+        <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="kscreen.png" width="386" height="53"  mime-type="image/png"/>
+          <instance class="html-compatible" src="kscreen.gif" width="386" height="53"  mime-type="image/gif"/>
+          <instance class="pdf" src="kscreen.pdf" width="386" height="53" />
+         </illustration>
+
+         <p>During psychic combat, New Order Grand Masters are able to construct mind-fortresses capable of protecting themselves and others. The strength and capacity of these fortresses increase as a New Order Grand Master advances in rank.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="nexus">
+        <meta><title>Grand Nexus</title></meta>
+        <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="nexus.png" width="386" height="54"  mime-type="image/png"/>
+          <instance class="html-compatible" src="nexus.gif" width="386" height="54"  mime-type="image/gif"/>
+          <instance class="pdf" src="nexus.pdf" width="386" height="54" />
+         </illustration>
+
+         <p>New Order Grand Masters are able to withstand contact with harmful elements, such as flames and acids, for upwards of an hour in duration. This ability increases as a New Order Grand Master advances in rank.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="gnosis">
+        <meta><title>Telegnosis <em>(Advanced Divination)</em></title></meta>
+        <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="telegnss.png" width="386" height="54"  mime-type="image/png"/>
+          <instance class="html-compatible" src="telegnss.gif" width="386" height="54"  mime-type="image/gif"/>
+          <instance class="pdf" src="telegnss.pdf" width="386" height="54" />
+         </illustration>
+
+         <p>This Discipline enables a New Order Grand Master to spirit-walk for far greater lengths of time, and with far fewer ill effects. Duration of the spirit-walk and the protection afforded to his inanimate body increase as a New Order Grand Master advances in rank.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="magi">
+        <meta><title>Magi-magic <em>(Old Kingdom Magic)</em></title></meta>
+        <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="magimagc.png" width="386" height="54"  mime-type="image/png"/>
+          <instance class="html-compatible" src="magimagc.gif" width="386" height="54"  mime-type="image/gif"/>
+          <instance class="pdf" src="magimagc.pdf" width="386" height="54" />
+         </illustration>
+
+         <p>Under the tutelage of Lone Wolf, you have been able to master the rudimentary skills of Old Kingdom battle-magic. These arcane skills include the use of basic Old Kingdom Spells, such as <spell>Shield</spell>, <spell>Power Word</spell>, and <spell>Invisible Fist</spell>. As you advance in rank, so will your knowledge and mastery of Old Kingdom magic increase.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="alchemy">
+        <meta><title>Kai-alchemy <em>(Brotherhood Magic)</em></title></meta>
+        <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="alchemy.png" width="386" height="54"  mime-type="image/png"/>
+          <instance class="html-compatible" src="alchemy.gif" width="386" height="54"  mime-type="image/gif"/>
+          <instance class="pdf" src="alchemy.pdf" width="386" height="54" />
+         </illustration>
+
+         <p>Under the tutelage of Lone Wolf and Guildmaster Banedon (the leader of Sommerlund<ch.apos/>s Guild of Magicians), you have mastered the elementary spells of the Brotherhood of the Crystal Star. These spells include <spell>Lightning Hand</spell>, <spell>Levitation</spell>, and <spell>Mind Charm</spell>. As you advance in rank, so will your knowledge and mastery of Brotherhood magic increase.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="astrolgy">
+        <meta><title>Astrology</title></meta>
+        <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="astrolgy.png" width="386" height="54"  mime-type="image/png"/>
+          <instance class="html-compatible" src="astrolgy.gif" width="386" height="54"  mime-type="image/gif"/>
+          <instance class="pdf" src="astrolgy.pdf" width="386" height="54" />
+         </illustration>
+
+         <p>The celestial bodies which occupy the skies above Magnamund have long been known to affect the lives of its inhabitants. Mastery of this Discipline enables a New Order Grand Master to predict and shape the future by studying the relative positions of the Sun, the Moon, and the myriad planets and stars. The number and accuracy of these predictions increase as a New Order Grand Master advances in rank.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="herbmst">
+        <meta><title>Herbmastery</title></meta>
+        <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="herblism.png" width="386" height="53"  mime-type="image/png"/>
+          <instance class="html-compatible" src="herblism.gif" width="386" height="53"  mime-type="image/gif"/>
+          <instance class="pdf" src="herblism.pdf" width="386" height="53" />
+         </illustration>
+
+         <p>Mastery of this New Order Discipline enables a Grand Master to identify readily any substance derived from living or growing organic material. He is aware of any secret uses to which an organic material may be put, and he is skilled in effecting the release of a substance<ch.apos/>s medicinal and/or magical properties.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="element">
+        <meta><title>Elementalism</title></meta>
+        <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="elmntlsm.png" width="386" height="54"  mime-type="image/png"/>
+          <instance class="html-compatible" src="elmntlsm.gif" width="386" height="54"  mime-type="image/gif"/>
+          <instance class="pdf" src="elmntlsm.pdf" width="386" height="54" />
+         </illustration>
+
+         <p>This Discipline enables a New Order Grand Master to manipulate the four basic elements: Earth, Air, Fire, and Water. By drawing upon individual elements that are available, or combinations thereof, he is able to detach, affix, increase, concentrate, intensify, remove, or accelerate this matter to fulfil a specific purpose, e.g. create a wall, hurl a rock, spray sand, remove air, intensify fire. The versatility of this Discipline increases as a New Order Grand Master advances in rank.</p>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="bardsman">
+        <meta><title>Bardsmanship</title></meta>
+        <data>
+
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="bard.png" width="386" height="54"  mime-type="image/png"/>
+          <instance class="html-compatible" src="bard.gif" width="386" height="54"  mime-type="image/gif"/>
+          <instance class="pdf" src="bard.pdf" width="386" height="54" />
+         </illustration>
+
+         <p>Through mastery of this Discipline a Kai Grand Master of the New Order becomes a multi-talented performer, proficient in the use of any musical instrument. He is able to sing or chant, recite or compose tales of legend, mimic speech or dialect, and stimulate a wide range of emotions among sentient creatures. The effect and power of his bardic abilities will steadily increase as he advances through the Grand Master ranks.</p>
+        </data>
+       </section>
+
+       <p>If you successfully complete the mission as set in Book 28 of the <cite>Lone Wolf New Order</cite> series, you may add a further Grand Master Discipline of your choice to your <a idref="action">Action Chart</a> in the next. For every Grand Master Discipline you possess, in excess of the original five Disciplines you begin with, you may add 1 point to your basic <typ class="attribute">COMBAT SKILL</typ> score and 2 points to your basic <typ class="attribute">ENDURANCE</typ> points score. These bonus points, together with your extra Grand Master Discipline(s), your original five Grand Master Disciplines, your Kai Weapon,<footref id="discplnz-1" idref="discplnz-1-foot"/> and any other Special Items and Backpack Items that you have found and been able to keep during your adventures, may then be carried over and used in the next <cite>New Order</cite> adventure, which is called:</p>
+
+       <p><!--<bookref series="lw" book="29tsoc">--><cite>The Storms of Chai</cite><!--</bookref>--></p>
+      </data>
+     </section>
+    </data>
+   </section>
+
+     <section class="frontmatter-separate" id="equipmnt">
+      <meta>
+       <title>Equipment</title>
+       <link class="prev" idref="discplnz"/>
+       <link class="next" idref="cmbtrulz"/>
+      </meta>
+
+      <footnotes>
+       <footnote id="equipmnt-1-foot" idref="equipmnt-1">
+        <p>During the adventure, the story will assume that you possess a Bow when you may not. If it is important to you to avoid this story continuity problem, you should ensure that you obtain a Bow.</p>
+       </footnote>
+
+       <footnote id="equipmnt-2-foot" idref="equipmnt-2">
+        <p>If you have completed any of the previous <cite>Lone Wolf New Order</cite> adventures (Books 21<ch.plus/>), you already possess a Kai Weapon.</p>
+       </footnote>
+      </footnotes>
+
+      <data>
+       <p>Before you leave the Kai Monastery to accompany the Khea-khan of Chai, you equip yourself with a <a idref="map">map of the Great Lissan Plain and its surrounding territories</a> and a pouch of gold. To find out how much gold is in the pouch, pick a number from the <a idref="random">Random Number Table</a> and add 20 to the number you have picked. The total equals the number of Gold Crowns inside the pouch, and you should now enter this number in the <quote>Gold Crowns</quote> section of your <a idref="action">Action Chart</a>.</p>
+       <p>If you have successfully completed previous <cite>New Order</cite> adventures (Books 21<ch.endash/>27), you may add this sum to the number of Crowns you already possess. Fifty is the maximum number of Gold Crowns you can carry in your pouch at any time. You may also select five items from the list below, only two of which may be Weapons.<footref id="equipmnt-1" idref="equipmnt-1-foot"/></p>
+       <ul class="paragraphed">
+        <li><p>Broadsword (Weapons)</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="bsword.png" width="386" height="69"  mime-type="image/png"/>
+          <instance class="html-compatible" src="bsword.gif" width="386" height="69"  mime-type="image/gif"/>
+          <instance class="pdf" src="bsword.pdf" width="386" height="69"/>
+         </illustration>
+        </li>
+        <li><p>Sword (Weapons)</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="sword.png" width="386" height="69"  mime-type="image/png"/>
+          <instance class="html-compatible" src="sword.gif" width="386" height="69"  mime-type="image/gif"/>
+          <instance class="pdf" src="sword.pdf" width="386" height="69"/>
+         </illustration>
+        </li>
+        <li><p>Quiver (Special Items) This contains six Arrows; record them on your <a idref="action">Action Chart</a>.</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="quiver.png" width="386" height="127"  mime-type="image/png"/>
+          <instance class="html-compatible" src="quiver.gif" width="386" height="127"  mime-type="image/gif"/>
+          <instance class="pdf" src="quiver.pdf" width="386" height="127"/>
+         </illustration>
+        </li>
+        <li><p>Flute (Backpack Item)</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="flute.png" width="386" height="68"  mime-type="image/png"/>
+          <instance class="html-compatible" src="flute.gif" width="386" height="68"  mime-type="image/gif"/>
+          <instance class="pdf" src="flute.pdf" width="386" height="68"/>
+         </illustration>
+        </li>
+        <li><p>Dagger (Weapons)</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="dagger.png" width="386" height="150"  mime-type="image/png"/>
+          <instance class="html-compatible" src="dagger.gif" width="386" height="150"  mime-type="image/gif"/>
+          <instance class="pdf" src="dagger.pdf" width="386" height="150"/>
+         </illustration>
+        </li>
+        <li><p>Axe (Weapons)</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="axe.png" width="386" height="112"  mime-type="image/png"/>
+          <instance class="html-compatible" src="axe.gif" width="386" height="112"  mime-type="image/gif"/>
+          <instance class="pdf" src="axe.pdf" width="386" height="112"/>
+         </illustration>
+        </li>
+        <li><p>Bow (Weapons)</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="bow.png" width="386" height="64"  mime-type="image/png"/>
+          <instance class="html-compatible" src="bow.gif" width="386" height="64"  mime-type="image/gif"/>
+          <instance class="pdf" src="bow.pdf" width="386" height="64"/>
+         </illustration>
+        </li>
+        <li><p>2 Meals (Meals) Each Meal takes up one space in your Backpack.</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="food.png" width="386" height="150"  mime-type="image/png"/>
+          <instance class="html-compatible" src="food.gif" width="386" height="150"  mime-type="image/gif"/>
+          <instance class="pdf" src="food.pdf" width="386" height="150"/>
+         </illustration>
+        </li>
+        <li><p>Rope (Backpack Item)</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="rope.png" width="386" height="109"  mime-type="image/png"/>
+          <instance class="html-compatible" src="rope.gif" width="386" height="109"  mime-type="image/gif"/>
+          <instance class="pdf" src="rope.pdf" width="386" height="109"/>
+         </illustration>
+        </li>
+        <li><p>Potion of Laumspur (Backpack Item) This potion restores 4 <typ class="attribute">ENDURANCE</typ> points to your total when swallowed after combat. There is enough for only one dose.</p>
+         <illustration class="inline">
+          <meta>
+           <creator>Brian Williams</creator>
+          </meta>
+          <instance class="html" src="potion.png" width="386" height="167"  mime-type="image/png"/>
+          <instance class="html-compatible" src="potion.gif" width="386" height="167"  mime-type="image/gif"/>
+          <instance class="pdf" src="potion.pdf" width="386" height="167"/>
+         </illustration>
+        </li>
+       </ul>
+
+       <p>List the five items that you have chosen on your <a idref="action">Action Chart</a>, under the appropriate headings, and make a note of any effect that they may have on your <typ class="attribute">ENDURANCE</typ> points and/or <typ class="attribute">COMBAT SKILL</typ>.</p>
+
+       <section class="frontmatter" id="kaiweapn">
+        <meta>
+         <title>Kai Weapons</title>
+        </meta>
+
+        <data>
+         <p>Upon reaching the ultimate rank of Kai Supreme Master, Lone Wolf received as a reward from the God Kai many new skills and abilities. One of these skills was Kai Weaponcraft. Using his newfound mastery, Lone Wolf forged ten weapons of magical power in the armoury furnaces of the Kai Monastery. These magical weapons are reserved for the <ch.eacute/>lite of the New Order Kai who attain the rank of Grand Master.</p>
+
+         <p>In recognition of your rank and achievement, you may choose your own Kai Weapon from the table below or, if you prefer, you can generate one at random. To generate a Kai Weapon, pick a number from the <a idref="random">Random Number Table</a> and consult the first column. The magical Axe, Sword, or Broadsword which corresponds to the number you have picked will be your own personal Kai Weapon. Record this magical weapon and its unique properties in the Kai Weapon section of the <a idref="action">Special Items List</a>.<footref id="equipmnt-2" idref="equipmnt-2-foot"/></p>
+
+         <p><strong>Example</strong></p>
+         <p>Say you choose the number 1 from the <a idref="random">Random Number Table</a>, your Kai Weapon will be the Axe <quote>Alema</quote>.</p>
+
+         <p>When using this Kai Weapon in normal combat you may add <ch.plus/>5 points to your <typ class="attribute">COMBAT SKILL</typ>. Each Kai Weapon has a unique property. When you use your Kai Weapon in combat against the type of enemy that matches its unique property, or use it at the optimum time or location, then you may add the higher bonus to your <typ class="attribute">COMBAT SKILL</typ> (these bonuses are not cumulative).</p>
+
+         <p><strong>Example</strong></p>
+         <p>If you were to use <quote>Alema</quote> in combat against an undead enemy, you could add the higher bonus of <ch.plus/>7 to your <typ class="attribute">COMBAT SKILL</typ>. If you were to fight a living enemy using this weapon then the bonus to your <typ class="attribute">COMBAT SKILL</typ> would remain at <ch.plus/>5.</p>
+
+          <table>
+           <tr>
+            <th colspan="6" scope="colgroup">Kai Weapon Table</th>
+           </tr>
+           <tr>
+            <th>RN</th>
+            <th>Weapon Type</th>
+            <th>Weapon Name</th>
+            <th><typ class="attribute">CS</typ></th>
+            <th>Unique Properties</th>
+            <th><typ class="attribute">CS</typ></th>
+           </tr>
+           <tr>
+            <td>0</td>
+            <td>Axe</td>
+            <td><quote>Spawnsmite</quote></td>
+            <td><ch.plus/>5</td>
+            <td>versus reptilian enemies</td>
+            <td><ch.plus/>6</td>
+           </tr>
+           <tr>
+            <td>1</td>
+            <td>Axe</td>
+            <td><quote>Alema</quote></td>
+            <td><ch.plus/>5</td>
+            <td>versus undead enemies</td>
+            <td><ch.plus/>7</td>
+           </tr>
+           <tr>
+            <td>2</td>
+            <td>Axe</td>
+            <td><quote>Magnara</quote></td>
+            <td><ch.plus/>5</td>
+            <td>versus rock or stone</td>
+            <td><ch.plus/>8</td>
+           </tr>
+           <tr>
+            <td>3</td>
+            <td>Sword</td>
+            <td><quote>Sunstrike</quote></td>
+            <td><ch.plus/>5</td>
+            <td>when used in daylight</td>
+            <td><ch.plus/>6</td>
+           </tr>
+           <tr>
+            <td>4</td>
+            <td>Sword</td>
+            <td><quote>Kaistar</quote></td>
+            <td><ch.plus/>5</td>
+            <td>when used at night</td>
+            <td><ch.plus/>7</td>
+           </tr>
+           <tr>
+            <td>5</td>
+            <td>Sword</td>
+            <td><quote>Valiance</quote></td>
+            <td><ch.plus/>5</td>
+            <td>when used against magicians or creatures born of magic</td>
+            <td><ch.plus/>8</td>
+           </tr>
+           <tr>
+            <td>6</td>
+            <td>Sword</td>
+            <td><quote>Ulnarias</quote></td>
+            <td><ch.plus/>5</td>
+            <td>when used underwater</td>
+            <td><ch.plus/>9</td>
+           </tr>
+           <tr>
+            <td>7</td>
+            <td>Broadsword</td>
+            <td><quote>Raumas</quote></td>
+            <td><ch.plus/>5</td>
+            <td>versus winged enemies</td>
+            <td><ch.plus/>6</td>
+           </tr>
+           <tr>
+            <td>8</td>
+            <td>Broadsword</td>
+            <td><quote>Illuminatus</quote></td>
+            <td><ch.plus/>5</td>
+            <td>when used underground</td>
+            <td><ch.plus/>7</td>
+           </tr>
+           <tr>
+            <td>9</td>
+            <td>Broadsword</td>
+            <td><quote>Firefall</quote></td>
+            <td><ch.plus/>5</td>
+            <td>versus fire-emitting enemies</td>
+            <td><ch.plus/>8</td>
+           </tr>
+           <tr>
+            <td colspan="3">RN = Random Number</td>
+            <td colspan="3"><typ class="attribute">CS</typ> = <typ class="attribute">COMBAT SKILL</typ></td>
+           </tr>
+          </table>
+         </data>
+        </section>
+
+        <section class="frontmatter" id="howuse">
+        <meta>
+         <title>Equipment<ch.emdash/>How to use it</title>
+        </meta>
+
+        <data>
+         <dl class="paragraphed">
+          <dt>Weapons</dt>
+           <dd><p>The maximum number of Weapons that you can carry is <em>two</em>. Weapons aid you in combat. If you have the Grand Master Discipline of Grand Weaponmastery and a correct Weapon, it adds 5 points to your <typ class="attribute">COMBAT SKILL</typ>. If you find a Weapon during your adventure, you may pick it up and use it. You may only use one Weapon at a time in combat.</p></dd>
+          <dt>Bows and Arrows</dt>
+           <dd>
+            <p>During your adventure there will be opportunities to use a Bow and Arrow. If you equip yourself with this Weapon, and you possess at least one Arrow, you may use it when the text of a particular section allows you to do so. The Bow is a useful Weapon, for it enables you to hit an enemy at a distance. However, a Bow cannot be used in hand-to-hand combat; therefore it is best to equip yourself also with a close combat Weapon, such as a Sword or an Axe.</p>
+            <p>In order to use a Bow you must possess a Quiver and at least one Arrow. Each time the Bow is used, erase an Arrow from your <a idref="action">Action Chart</a>. A Bow cannot, of course, be used if you exhaust your supply of Arrows, but the opportunity may arise during your adventure for you to replenish your stock of Arrows.</p>
+           </dd>
+          <dt>Backpack Items</dt>
+           <dd>
+            <p>These must be stored in your Backpack. Because space is limited, you may keep a maximum of ten articles, including Meals, in your Backpack at any one time. You may only carry one Backpack at a time. During your travels you will discover various useful items which you may decide to keep. You may exchange or discard them at any point when you are not involved in combat.</p>
+            <p>Any item that may be of use, and which can be picked up on your adventure and entered on your <a idref="action">Action Chart</a>, is given either initial capitals (e.g. Silver Mirror, Gold Key), or is clearly identified as a Backpack Item. Unless you are told that it is a Special Item, carry it in your Backpack.</p>
+           </dd>
+          <dt>Special Items</dt>
+           <dd>
+            <p>Special Items are not carried in the Backpack. When you discover a Special Item, you will be told how or where to carry it. The maximum number of Special Items that can be carried on any adventure is 12.</p>
+           </dd>
+          <dt>Kai Weapon</dt>
+           <dd><p>Your Kai Weapon is a Special Item and it can be carried and used in addition to two normal Weapons. If you possess the Discipline of Grand Weaponmastery for a weapon type which is the same as your unique Kai Weapon, you may add the Grand Weaponmastery bonus of <ch.plus/>5 to your <typ class="attribute">COMBAT SKILL</typ>. This is in addition to the bonus gained when you use your Kai Weapon in combat.</p></dd>
+          <dt>Food</dt>
+           <dd><p>Food is carried in your Backpack. Each Meal counts as one item. You will need to eat regularly during your adventure. If you do not have any food when you are instructed to eat a Meal, you will lose 3 <typ class="attribute">ENDURANCE</typ> points. However, if you have chosen Grand Huntmastery as one of your five Disciplines, then you will not need to tick off a Meal when instructed to eat.</p></dd>
+          <dt>Potion of Laumspur</dt>
+           <dd><p>This is a healing potion that can restore 4 <typ class="attribute">ENDURANCE</typ> points to your total when swallowed after combat. It cannot be used to increase <typ class="attribute">ENDURANCE</typ> points immediately prior to a combat. There is enough for one dose only. If you discover any other potion during the adventure, you will be informed of its effect. All potions are Backpack Items.</p></dd>
+          <dt>Gold Crowns</dt>
+           <dd>
+            <p>The currency of Chai is the Ren, though Gold Crowns are readily accepted. These coins are always carried in the Belt Pouch. It will hold a maximum of fifty Crowns (or 500 Ren).</p>
+           </dd>
+          </dl>
+        </data>
+       </section>
+      </data>
+     </section>
+
+     <section class="frontmatter-separate" id="cmbtrulz">
+      <meta>
+       <title>Rules for Combat</title>
+       <link class="prev" idref="equipmnt" />
+       <link class="next" idref="levels" />
+      </meta>
+
+      <data>
+       <p>There will be occasions during your adventure when you will have to fight an enemy. The enemy<ch.apos/>s <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> points are given in the text. Your aim in the combat is to kill the enemy by reducing his <typ class="attribute">ENDURANCE</typ> points to zero while losing as few <typ class="attribute">ENDURANCE</typ> points as possible yourself.</p>
+       <p>At the start of a combat, enter your own and the enemy<ch.apos/>s <typ class="attribute">ENDURANCE</typ> points in the appropriate boxes on the Combat Record section of your <a idref="action">Action Chart</a>.</p>
+       <p>The sequence for combat is as follows:</p>
+       <ol class="paragraphed">
+        <li><p>Add any extra points gained through your Grand Master Disciplines and Special Items to your current <typ class="attribute">COMBAT SKILL</typ> total.</p></li>
+        <li>
+         <p>Subtract the <typ class="attribute">COMBAT SKILL</typ> of your enemy from this total. The result is your Combat Ratio. Enter it on the <a idref="action">Action Chart</a>.</p>
+         <p>Example</p>
+         <p>You, Grand Master (<typ class="attribute">COMBAT SKILL</typ> 32), are attacked in a forest by a pack of Wild Dogs (<typ class="attribute">COMBAT SKILL</typ> 31). You are taken by surprise and are not given the opportunity of evading their attack. You possess the Grand Master Discipline of Kai-surge to which the Wild Dogs are not immune, so you add 8 points to your <typ class="attribute">COMBAT SKILL</typ>. You also possess the Kai Weapon <quote>Ulnarias</quote>, so you add an additional 5 points to your <typ class="attribute">COMBAT SKILL</typ>. This gives you a total <typ class="attribute">COMBAT SKILL</typ> of 45.</p>
+         <p>You now subtract the Wild Dogs<ch.apos/> <typ class="attribute">COMBAT SKILL</typ> from your own, giving a Combat Ratio of <ch.plus/>14 (45<ch.minus/>31=<ch.plus/>14). <ch.plus/>14 is noted on your <a idref="action">Action Chart</a> as the Combat Ratio.</p>
+        </li>
+        <li><p><a id="stage3">When you have your Combat Ratio</a>, pick a number from the <a idref="random">Random Number Table</a>.</p></li>
+        <li>
+         <p>Turn to the <a idref="crtable">Combat Results Table</a>. Along the top of the chart are shown the Combat Ratio numbers. Find the number that is the same as your Combat Ratio and cross-reference it with the random number that you have picked (the random numbers appear on the side of the chart). You now have the number of <typ class="attribute">ENDURANCE</typ> points lost by both yourself and your enemy in this round of combat. (E represents points lost by the enemy; GM represents points lost by yourself<ch.emdash/>Grand Master.)</p>
+         <p>Example</p>
+         <p>The Combat Ratio between you and the Wild Dogs has been established as <ch.plus/>14. If the number picked from the <a idref="random">Random Number Table</a> is 1, then the result of the first round of combat is:</p>
+         <ul>
+          <li>You (GM) lose 3 <typ class="attribute">ENDURANCE</typ> points (plus an additional 1 point for using Kai-surge. This loss is in addition to the loss suffered as a result of combat).</li>
+          <li>Wild Dogs lose 9 <typ class="attribute">ENDURANCE</typ> points.</li>
+         </ul>
+        </li>
+        <li><p>On the <a idref="action">Action Chart</a>, mark the changes in <typ class="attribute">ENDURANCE</typ> points to the participants in the combat.</p></li>
+        <li><p>Unless otherwise instructed, or unless you have an option to evade, the next round of combat now starts.</p></li>
+        <li><p>Repeat the sequence from <a idref="stage3">Stage 3</a>.</p></li>
+       </ol>
+
+       <p>This process of combat continues until the <typ class="attribute">ENDURANCE</typ> points of either your enemy or yourself are reduced to zero or below, at which point that combatant is declared dead. If you are declared dead, the adventure is over. If the enemy is dead, you can proceed but with your <typ class="attribute">ENDURANCE</typ> points possibly reduced.</p>
+       <p>A <a idref="crsumary">summary of Combat Rules</a> appears in the back of this book.</p>
+
+       <section class="frontmatter" id="evasion">
+        <meta><title>Evasion of Combat</title></meta>
+
+        <data>
+         <p>During your adventure you may be given the chance to evade combat. If you have already engaged in a round of combat and decide to evade, calculate the combat for that round in the usual manner. All points lost by the enemy as a result of that round are ignored, and you make your escape. Only <strong>you</strong> may lose <typ class="attribute">ENDURANCE</typ> points during that round (such is the risk of turning tail and running away during combat!). You may only evade if the text of the particular section allows you to do so.</p>
+        </data>
+       </section>
+      </data>
+     </section>
+
+     <section class="frontmatter-separate" id="levels">
+      <meta>
+       <title>Levels of New Order Kai Grand Mastership</title>
+       <link class="prev" idref="cmbtrulz" />
+       <link class="next" idref="imprvdsc" />
+      </meta>
+
+      <data>
+
+       <p>The following table is a guide to the ranks and titles you can achieve at each stage of your journey along the road of Kai Grand Mastership. As you successfully complete each adventure in the <cite>New Order</cite> series, you will gain an additional Grand Master Discipline and progress towards the pinnacle of Kai perfection<ch.emdash/>to become a Kai Supreme Master.</p>
+
+       <ol start="4">
+        <li>Kai Grand Master Senior<ch.emdash/><em>You begin the <cite>New Order</cite> adventures at this level of Kai Grand Mastery</em></li>
+        <li>Kai Grand Master Superior</li>
+        <li>Kai Grand Sentinel</li>
+        <li>Kai Grand Defender</li>
+        <li>Kai Grand Guardian</li>
+        <li>Sun Knight</li>
+        <li>Sun Lord</li>
+        <li>Sun Thane</li>
+        <li>Grand Thane</li>
+        <li>Grand Crown</li>
+        <li>Sun Prince</li>
+        <li>Kai Supreme Master</li>
+       </ol>
+      </data>
+     </section>
+
+
+     <section class="frontmatter-separate" id="imprvdsc">
+      <meta>
+       <title>Improved Grand Master Disciplines</title>
+       <link class="prev" idref="levels" />
+       <link class="next" idref="kaiwisdm" />
+      </meta>
+
+      <data>
+       <p>As you rise through the higher levels of Grand Mastery you will find that your Disciplines will steadily improve.</p>
+
+       <section class="frontmatter" id="superior">
+        <meta><title>Kai Grand Master Superior</title></meta>
+        <data>
+         <p>If you are a New Order Kai who has attained the rank of Kai Grand Master Superior, you will now benefit from improvements to the following Grand Master Disciplines:</p>
+         <dl class="paragraphed">
+          <dt>Animal Mastery</dt>
+           <dd><p>Kai Grand Master Superiors who possess this Discipline are able to deter predatory animals in the wild by exuding a scent which is repellent to them. In order for this improved Discipline to work effectively, a Kai Grand Master Superior must be aware of the species of predatory animal he/she wishes to deter. The scent can only be detected by the targeted animal.</p></dd>
+          <dt>Assimilance</dt>
+           <dd><p>Kai Grand Master Superiors who possess this skill are able to create a noise and project it up to 15 yards away from their location. The noise is akin to the rumbling sound of thunder and it can be used to distract or divert an enemy<ch.apos/>s attention. This improved Discipline requires a degree of preparation and therefore it cannot be used during combat.</p></dd>
+          <dt>Astrology</dt>
+           <dd><p>Kai Grand Master Superiors who possess this Discipline are skilled in the use of all mechanical devices designed to measure and/or observe the cosmology of Magnamund. Such devices include sextants, astrolabes, and orreries.</p></dd>
+          <dt>Herbmastery</dt>
+           <dd><p>Kai Grand Master Superiors who have this Discipline are able to purify water, thereby making contaminated or briny water suitable for consumption. Roughly two pints of water per day can be purified using this skill alone. This daily total steadily increases as a Grand Master advances in rank.</p></dd>
+          <dt>Elementalism</dt>
+           <dd><p>Kai Grand Master Superiors who possess this skill are able to condense pure water out of the surrounding air. This water can be made to fall as a fine spray or as a sudden deluge. It can also be made to fill any suitable container or receptacle. Using this skill, Grand Master Superiors can create the equivalent of one large bucketful of fresh water.</p></dd>
+          <dt>Bardsmanship</dt>
+           <dd><p>Kai Grand Master Superiors who possess this Discipline are able to utilize their musical skills to pacify an excited or hostile animal.</p></dd>
+         </dl>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="sentinel">
+        <meta><title>Kai Grand Sentinel</title></meta>
+
+        <data>
+         <p>If you are a New Order Kai who has attained the rank of Kai Grand Sentinel, you will now benefit from improvements to the following Grand Master Disciplines:</p>
+         <dl class="paragraphed">
+          <dt>Grand Weaponmastery</dt>
+           <dd><p>Kai Grand Sentinels who possess this Discipline are, when physically parted from their Kai Weapon, able to detect its location. This power of detection will pass through solid objects, with the notable exception of lead. Accuracy and range of detection steadily increase as a Grand Master rises in rank.</p></dd>
+          <dt>Grand Pathsmanship</dt>
+           <dd><p>Kai Grand Sentinels who possess this skill are able to predict the weather accurately for the forthcoming 3 hours. The range of this ability is an area 10 square miles around the Kai Grand Sentinel. Duration and range steadily increase as a Kai Grand Master rises in rank.</p></dd>
+          <dt>Astrology</dt>
+           <dd><p>Kai Grand Sentinels who possess this Discipline are able to detect psychic residues left on an object by its owner. The more valuable the object is to its owner, the stronger will be the lingering psychic attachment. The majority of everyday or shared objects do not retain such residues.</p></dd>
+          <dt>Herbmastery</dt>
+           <dd><p>Through their knowledge and use of common plants, Kai Grand Sentinels who have this Discipline are able to make contaminated or rotten food fit for human consumption.</p></dd>
+          <dt>Elementalism</dt>
+           <dd><p>Kai Grand Sentinels who possess this skill are able to charge particles of air electrically around any man-sized or smaller object. The particles will automatically discharge and cause damage should the affected object be touched or opened. Kai Grand Sentinels are able to handle a charged object without discharging it.</p></dd>
+          <dt>Bardsmanship</dt>
+           <dd><p>Kai Grand Sentinels who possess this Discipline are able to use their singing or playing to counter a hostile sonic attack. The effective use and range of this sonic defence steadily increase as a Grand Master rises in rank.</p></dd>
+         </dl>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="defender">
+        <meta><title>Kai Grand Defender</title></meta>
+
+        <data>
+         <p>If you are a New Order Kai who has attained the rank of Kai Grand Defender, you will now benefit from improvements to the following Grand Master Disciplines:</p>
+         <dl class="paragraphed">
+          <dt>Deliverance</dt>
+           <dd><p>Kai Grand Defenders who possess this Discipline have the ability to repair the effects of natural decay in materials such as wood, stone, cloth, metal, etc. By touching the decaying object, a Kai Grand Defender is able to reverse damage caused by rot, rust, or mould.</p></dd>
+          <dt>Telegnosis</dt>
+           <dd><p>By use of this Discipline, a Kai Grand Defender is able to locate a known or familiar material object. Initially the range of this ability is limited to a 15-foot radius, however this distance steadily increases as a Kai Grand Master advances in rank.</p></dd>
+          <dt>Astrology</dt>
+           <dd><p>Kai Grand Defenders who possess this Discipline are skilled in the use of all common astrological devices used to predict future events. Such devices include cards, dice, and crystal spheres.</p></dd>
+          <dt>Herbmastery</dt>
+           <dd><p>Kai Grand Defenders who possess this Discipline are able to neutralize any poisonous toxins that may be present in organic materials such as plants, berries, and fruits. Through the use of this skill, the transformation of toxins can sometimes result in an increase in <typ class="attribute">ENDURANCE</typ> and/or <typ class="attribute">COMBAT SKILL</typ> when the previously poisonous matter is swallowed.</p></dd>
+          <dt>Elementalism</dt>
+           <dd><p>By using this Discipline, Kai Grand Defenders are able to summon up a dense, misty vapour to obscure themselves from both normal vision and infravision (night sight). This mist will occur within 5 feet of the Kai Grand Defender and will last for three to five minutes. Range and duration increase as a Grand Master rises in rank.</p></dd>
+          <dt>Bardsmanship</dt>
+           <dd><p>Kai Grand Defenders who possess this Discipline are able to use their musical skills to pacify (and/or implant a suggestion into the mind of) an intelligent creature within audible range. This improved Discipline is similar in effect to the Brotherhood Spell <spell>Mind Charm</spell> (Kai-alchemy).</p></dd>
+         </dl>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="guardian">
+        <meta><title>Kai Grand Guardian</title></meta>
+
+        <data>
+         <p>If you are a New Order Kai who has attained the rank of Kai Grand Guardian, you will now benefit from improvements to the following Grand Master Disciplines:</p>
+         <dl class="paragraphed">
+          <dt>Assimilance</dt>
+           <dd><p>Kai Grand Guardians who possess this skill are able to summon a cloud of fog-like vapour within 15 yards of their location. This fog will obscure both normal vision and infravision. The duration of the fog increases as a Grand Master rises in rank.</p></dd>
+          <dt>Herbmastery</dt>
+           <dd><p>Kai Grand Guardians who possess this Discipline are able to use their advanced knowledge of Herbmastery to produce explosive compounds from simple organic materials.</p></dd>
+          <dt>Elementalism</dt>
+           <dd><p>Through the use of this Discipline, Kai Grand Guardians are able to protect themselves from the effects of storm-force winds by creating a sphere of calm air around their bodies. Initially this protective bubble lasts for one minute, but duration steadily increases as a Grand Master ascends in Kai rank.</p></dd>
+          <dt>Grand Huntmastery</dt>
+           <dd><p>Kai Grand Guardians with this skill enjoy increased mobility when travelling across all types of terrain, whether on foot or on horseback. This improved ability can be very useful when used to outdistance a pursuing enemy.</p></dd>
+          <dt>Kai-surge</dt>
+           <dd><p>Kai Grand Guardians who possess mastery of this Discipline are able to attack up to three enemies in psychic combat simultaneously.</p></dd>
+          <dt>Kai-screen</dt>
+           <dd><p>Kai Grand Guardians who possess this Discipline are able to exercise a defensive psychic skill known as <spell>Mindblend</spell>. This cloaking ability enables a Kai Grand Guardian to protect their mind and also prevent it from being detected by a hostile psychic probe.</p></dd>
+          <dt>Magi-magic</dt>
+           <dd>
+            <p>Grand Masters who have reached the rank of Kai Grand Guardian are able to use the following battle-spells of the Elder Magi:</p>
+            <ul>
+             <li><spell>Splinter</spell><ch.emdash/>This causes breakable items such as bottles, jugs, mirrors, windows, etc., to shatter to pieces. The range of this spell increases as a Grand Master rises in rank.</li>
+             <li><spell>Flameshaft</spell><ch.emdash/>This causes the tip of any Arrow, or Arrow-like missile, to burn fiercely with a magical flame which cannot readily be extinguished by normal means.</li>
+            </ul>
+           </dd>
+         </dl>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="sunknight">
+        <meta><title>Sun Knight</title></meta>
+
+        <data>
+         <p>If you are a New Order Kai who has attained the rank of Sun Knight, you will now benefit from improvements to the following Grand Master Disciplines:</p>
+         <dl class="paragraphed">
+          <dt>Grand Weaponmastery</dt>
+           <dd><p>Sun Knights with this Discipline are able to wield two-handed weapons (i.e. Broadsword, Quarterstaff, and Spear) with full effect using only one hand.</p></dd>
+          <dt>Grand Pathsmanship</dt>
+           <dd><p>Kai Sun Knights with this skill are able to repel at will all normal-sized insects within a radius of three yards. The range and number of insects so affected increase considerably as a Grand Master rises in rank.</p></dd>
+          <dt>Deliverance</dt>
+           <dd><p>Sun Knights who possess this skill are able to repair serious wounds sustained by creatures other than themselves. By the laying of hands upon the affected creature<ch.apos/>s body, a Sun Knight can cause an open wound (or other serious injury) to mend itself. The speed at which this healing process takes place increases as a Grand Master rises in rank.</p></dd>
+          <dt>Telegnosis</dt>
+           <dd><p>Sun Knights who possess this Discipline are able to communicate telepathically over great distances. Initially the range of this ability is approximately 100 miles, but this distance increases as a Grand Master rises in rank.</p></dd>
+          <dt>Grand Nexus</dt>
+           <dd><p>Sun Knights who possess Mastery of this Discipline are able to feign death. By placing themselves into a state of suspended animation, outwardly they are able to achieve all semblance of being truly dead. However, whilst in this state, the only sense that a Sun Knight retains is the ability to hear.</p></dd>
+          <dt>Astrology</dt>
+           <dd><p>Sun Knights who have this Discipline are skilled in the art of chiromancy<ch.emdash/>the ability to tell fortunes from the skin creases and patterns found on the palms of hands.</p></dd>
+          <dt>Bardsmanship</dt>
+           <dd><p>Sun Knights who possess mastery of this Discipline are able to use their musical skills to launch sonic attacks against any individual within audible range. The effect of a sonic attack is dependent upon the target creature<ch.apos/>s sensitivity to sound (i.e. a deaf creature would be unaffected by such an attack).</p></dd>
+          <dt>Kai-alchemy</dt>
+           <dd>
+            <p>Grand Masters who have reached the rank of Sun Knight are able to use the following Brotherhood Spells:</p>
+             <ul>
+              <li><spell>Halt Missile</spell><ch.emdash/>This causes any projected or hurled missile (e.g. arrows, axes, crossbow bolts) which may pose an immediate threat to the life of a Sun Knight, to cease its flight and remain stationary in mid-air. The effect of the spell lasts for 2<ch.endash/>3 seconds, allowing the Sun Knight time in which to move away from the missile<ch.apos/>s line of flight. Initially only one missile can be affected by this spell, but the number increases as a Grand Master rises in rank.</li>
+              <li><spell>Strength</spell><ch.emdash/>By casting this spell, a Sun Knight is able to greatly increase his or her physical strength for a short duration. It can be used to lift or move heavy objects, or to effect a temporary increase in <typ class="attribute">COMBAT SKILL</typ> and <typ class="attribute">ENDURANCE</typ> scores whilst fighting an enemy.</li>
+           </ul>
+          </dd>
+         </dl>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="sunlord">
+        <meta><title>Sun Lord</title></meta>
+
+        <data>
+         <p>If you are a New Order Kai who has attained the rank of Sun Lord, you will now benefit from improvements to the following Grand Master Disciplines:</p>
+         <dl class="paragraphed">
+          <dt>Grand Weaponmastery</dt>
+           <dd><p>Sun Lords with this Discipline are able to cause the metal edge of any non-magical weapon to ignite and burn fiercely. When a Weapon thus affected is used in combat, it inflicts an additional 1 <typ class="attribute">ENDURANCE</typ> point loss upon an enemy in every successful round of combat. This ability cannot be used with a wholly wooden Weapon such as a Quarterstaff.</p></dd>
+          <dt>Herbmastery</dt>
+           <dd><p>Sun Lords who possess this Discipline are able to cause living plants, e.g. grasses, bushes, flowers, weeds, rushes, to entwine themselves around the limbs of hostile creatures, thereby hampering their free movement. Sun Lords are able to target only one creature in this way. An additional creature can be affected for every level a Grand Master rises above the rank of Sun Lord.</p></dd>
+          <dt>Assimilance</dt>
+           <dd><p>Sun Lords who possess this skill are able to cause the outline of their bodies to become blurred and indistinct. By so doing, they can greatly increase their chances of avoiding magical and/or non-magical missiles directed at them.</p></dd>
+          <dt>Grand Huntmastery</dt>
+           <dd><p>Kai Sun Lords with this skill are able to see, with acute accuracy, light in the infrared spectrum, i.e. they can see the complex patterns generated by heat in near or total darkness. They can also see light in the ultraviolet spectrum.</p></dd>
+          <dt>Kai-surge</dt>
+           <dd><p>Sun Lords who possess mastery of this Discipline are able to launch a Kai-blast<ch.emdash/>a pulse of intense psychic energy which is capable of affecting both psychically active and inactive enemies. This form of psychic attack is very effective, more so than a usual Kai-surge, Psi-surge, or Mindblast. It can cause an enemy to lose between 2 and 18 <typ class="attribute">ENDURANCE</typ> points in one attack. A Kai Sun Lord using Kai-blast determines the damage inflicted on an enemy by picking two numbers from the <a idref="random">Random Number Table</a>. These numbers should be added together (a <quote>0</quote> = 1) and the resultant total equals the damage inflicted. However, use of a Kai-blast will reduce a Sun Lord<ch.apos/>s <typ class="attribute">ENDURANCE</typ> points total by 4. It cannot be used in conjunction with any other form of psychic attack.</p></dd>
+          <dt>Telegnosis</dt>
+           <dd><p>Sun Lords who possess this Discipline are able to alter their body weight in order to walk successfully upon different kinds of surface, e.g. water, mud, lava, and quicksand. Time duration<ch.emdash/>and degree of surface difficulty<ch.emdash/>increases as a Grand Master rises in rank.</p></dd>
+          <dt>Magi-magic</dt>
+           <dd>
+            <p>Grand Masters who have reached the rank of Sun Lord are able to use the following battle-spells of the Elder Magi:</p>
+             <ul>
+              <li><spell>Penetrate</spell><ch.emdash/>This increases the penetrative energy of any Arrow, or Arrow-like missile, launched by a Sun Lord.</li>
+              <li><spell>Energy Grasp</spell><ch.emdash/>This spell enables a Sun Lord to discharge a powerful electrical force into anything he or she touches. It is similar in effect to the Brotherhood Spell <spell>Lightning Hand</spell>. It differs in that it is easier to control and channel the resulting energy. It also requires the actual touching of an object or enemy to effect the spell.</li>
+           </ul>
+          </dd>
+          <dt>Bardsmanship</dt>
+           <dd><p>Kai Sun Lords with this skill are able to direct their musical abilities to disrupt the structure of inanimate breakable objects, e.g. glass, ceramics, urns, flasks, causing them to explode violently. Any person or creature in close proximity to the destroyed object risks injury from flying fragments.</p></dd>
+         </dl>
+        </data>
+       </section>
+
+       <section class="frontmatter" id="sunthane">
+        <meta><title>Sun Thane</title></meta>
+
+        <data>
+         <p>If you are a New Order Kai who has attained the rank of Sun Thane, you will now benefit from improvements to the following Grand Master Disciplines:</p>
+         <dl class="paragraphed">
+          <dt>Astrology</dt>
+           <dd><p>Sun Thanes who possess this Discipline are expert in the art of hypnotism. By the use of a hypnotic stare, they are able to cause susceptible creatures (up to three individuals at any one time) willingly to carry out their orders. The number of creatures so affected<ch.emdash/>and the duration of the effect<ch.emdash/>increases steadily as a Sun Thane advances in Kai rank.</p></dd>
+          <dt>Animal Mastery</dt>
+           <dd><p>Sun Thanes with this Discipline are able to command an animal to fall asleep at will. Some hostile animals may be able to resist this command; however most will be affected by it in some way. The duration of effect and the number of animals which can be affected at one time will increase as a Grand Master rises in rank.</p></dd>
+          <dt>Grand Huntmastery</dt>
+           <dd><p>Kai Sun Thanes with this skill are able to protect themselves from the effects of being struck by natural electrical discharges, i.e. lightning.</p></dd>
+          <dt>Deliverance</dt>
+           <dd><p>Sun Thanes who possess this skill are able to conduct a Kai Exorcism. This ritual will banish any evil supernatural force that has taken possession of any goodly creature or object.</p></dd>
+          <dt>Elementalism</dt>
+           <dd><p>Sun Thanes who possess this Discipline are able to accelerate greatly the oxidation (rusting) of ferrous metals simply by touch alone. The longer the metallic item is touched by a Sun Thane, the more damaging will be the effect.</p></dd>
+          <dt>Grand Pathsmanship</dt>
+           <dd><p>Sun Thanes who possess mastery of this Discipline are able to alter the temperature of water by touch. By using this skill they are able to transform water into ice and vice versa. The volume of water affected and the duration of effect both increase as a Grand Master rises in rank.</p></dd>
+          <dt>Kai-screen</dt>
+           <dd><p>Sun Thanes who possess this Discipline are able to erect a special psychic defence called <spell>Mindfort</spell>. A <spell>Mindfort</spell> defence greatly reduces the effects of any psychic shock that would normally paralyse or weaken a lesser mortal.</p></dd>
+          <dt>Kai-alchemy</dt>
+           <dd>
+            <p>Grand Masters who have reached the rank of Sun Thane are able to use the following Brotherhood Spells:</p>
+             <ul>
+              <li><spell>Slow Fall</spell><ch.emdash/>By casting this spell, Kai Sun Thanes are able to slow their rate of free-falling to three feet per second, thereby avoiding damage upon landing while the spell is in effect. The duration of the spell is limited at first, but it steadily increases as a Grand Master rises in rank.</li>
+              <li><spell>Breathe Water</spell><ch.emdash/>Using this spell, a Kai Sun Thane is able to breathe underwater for ten minutes. The duration of effect increases as a Grand Master rises in rank.</li>
+           </ul>
+          </dd>
+         </dl>
+        </data>
+       </section>
+
+       <!--TODO-->
+       <p>The nature of additional improvements and how they affect your existing Grand Disciplines will be noted in the Improved Grand Master Disciplines section of future <cite>Lone Wolf New Order</cite> books.</p>
+
+       </data>
+     </section>
+    </data>
+   </section>
+
+   <section class="frontmatter" id="kaiwisdm">
+    <meta>
+     <title>New Order Wisdom</title>
+     <link class="prev" idref="imprvdsc" />
+     <link class="next" idref="sect1" />
+    </meta>
+
+    <data>
+     <!--TODO-->
+    </data>
+   </section>
 
    <section class="numbered" id="numbered">
     <meta><title>Numbered Sections</title></meta>
@@ -4337,6 +5494,11 @@
    </section>
 
    <!-- Backmatter -->
+   <section class="backmatter" id="map">
+    <meta><title><!--TODO--></title></meta>
+    <data/>
+   </section>
+
    <section class="backmatter" id="action">
     <meta><title>Action Chart</title></meta>
 
@@ -4464,6 +5626,36 @@
         </ol>
       </instance>
      </illustration>
+    </data>
+   </section>
+
+   <section class="backmatter" id="crsumary">
+    <meta><title>Combat Rules Summary</title></meta>
+ 
+    <data>
+     <ol>
+      <li>Add your <typ class="attribute">COMBAT SKILL</typ> to any bonus points given to you by your Kai Weapon, Special Items, or Grand Master Disciplines.</li>
+      <li>Subtract the <typ class="attribute">COMBAT SKILL</typ> of your enemy from this total. This number = Combat Ratio.</li>
+      <li>Pick a number from the <a idref="random">Random Number Table</a>.</li>
+      <li>Turn to the <a idref="crtable">Combat Results Table</a>.</li>
+      <li>Find your Combat Ratio along the top of the chart and cross-reference to the random number you have picked. (E indicates loss of <typ class="attribute">ENDURANCE</typ> points to Enemy. GM indicates loss of <typ class="attribute">ENDURANCE</typ> points to yourself.)</li>
+      <li>Continue the combat from Stage 3 until one character is dead. This is when the <typ class="attribute">ENDURANCE</typ> points of either character falls to 0 or below.</li>
+     </ol>
+ 
+     <section class="backmatter" id="smevazn">
+      <meta><title>To Evade Combat</title></meta>
+ 
+      <data>
+ 
+       <ol>
+        <li>You may only do this when the text of the adventure offers you the opportunity.</li>
+        <li>You undertake one round of combat in the usual way. All points lost by the enemy are ignored; only you lose the <typ class="attribute">ENDURANCE</typ> points.</li>
+        <li>If the book offers the chance of taking evasive action in place of combat, it can be taken in the first or any subsequent round (unless specifically stated otherwise).</li>
+       </ol>
+ 
+      </data>
+     </section>
+ 
     </data>
    </section>
 
