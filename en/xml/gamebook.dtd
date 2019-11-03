@@ -188,7 +188,7 @@ III. Block Elements
 
 <!-- ::::::::::::::::::::: General Entities :::::::::::::::::::::: -->
 
-<!ENTITY % character.content "ch.apos | ch.nbsp | ch.iexcl | ch.cent | ch.pound | ch.curren | ch.yen | ch.brvbar | ch.sect | ch.uml | ch.copy | ch.ordf | ch.laquo | ch.not | ch.shy | ch.reg | ch.macr | ch.deg | ch.plusmn | ch.sup2 | ch.sup3 | ch.acute | ch.micro | ch.para | ch.middot | ch.cedil | ch.sup1 | ch.ordm | ch.raquo | ch.frac14 | ch.frac12 | ch.frac34 | ch.iquest | ch.Agrave | ch.Aacute | ch.Acirc | ch.Atilde | ch.Auml | ch.Aring | ch.AElig | ch.Ccedil | ch.Egrave | ch.Eacute | ch.Ecirc | ch.Euml | ch.Igrave | ch.Iacute | ch.Icirc | ch.Iuml | ch.ETH | ch.Ntilde | ch.Ograve | ch.Oacute | ch.Ocirc | ch.Otilde | ch.Ouml | ch.times | ch.Oslash | ch.Ugrave | ch.Uacute | ch.Ucirc | ch.Uuml | ch.Yacute | ch.THORN | ch.szlig | ch.agrave | ch.aacute | ch.acirc | ch.atilde | ch.auml | ch.aring | ch.aelig | ch.ccedil | ch.egrave | ch.eacute | ch.ecirc | ch.euml | ch.igrave | ch.iacute | ch.icirc | ch.iuml | ch.eth | ch.ntilde | ch.ograve | ch.oacute | ch.ocirc | ch.otilde | ch.ouml | ch.divide | ch.oslash | ch.ugrave | ch.uacute | ch.ucirc | ch.uuml | ch.yacute | ch.thorn | ch.yuml | ch.ampersand | ch.lsquot | ch.rsquot | ch.ldquot | ch.rdquot | ch.minus | ch.endash | ch.emdash | ch.ellips | ch.lellips | ch.blankline | ch.percent | ch.thinspace | ch.frac116 | ch.plus">
+<!ENTITY % character.content "ch.apos | ch.nbsp | ch.iexcl | ch.cent | ch.pound | ch.curren | ch.yen | ch.brvbar | ch.sect | ch.uml | ch.copy | ch.ordf | ch.laquo | ch.not | ch.shy | ch.reg | ch.macr | ch.deg | ch.plusmn | ch.sup2 | ch.sup3 | ch.acute | ch.micro | ch.para | ch.middot | ch.cedil | ch.sup1 | ch.ordm | ch.raquo | ch.frac14 | ch.frac12 | ch.frac34 | ch.frac13 | ch.frac23 | ch.frac15 | ch.frac25 | ch.frac35 | ch.frac45 | ch.frac16 | ch.frac56 | ch.frac17 | ch.frac18 | ch.frac38 | ch.frac58 | ch.frac78 | ch.frac19 | ch.frac110 | ch.iquest | ch.Agrave | ch.Aacute | ch.Acirc | ch.Atilde | ch.Auml | ch.Aring | ch.AElig | ch.Ccedil | ch.Egrave | ch.Eacute | ch.Ecirc | ch.Euml | ch.Igrave | ch.Iacute | ch.Icirc | ch.Iuml | ch.ETH | ch.Ntilde | ch.Ograve | ch.Oacute | ch.Ocirc | ch.Otilde | ch.Ouml | ch.times | ch.Oslash | ch.Ugrave | ch.Uacute | ch.Ucirc | ch.Uuml | ch.Yacute | ch.THORN | ch.szlig | ch.agrave | ch.aacute | ch.acirc | ch.atilde | ch.auml | ch.aring | ch.aelig | ch.ccedil | ch.egrave | ch.eacute | ch.ecirc | ch.euml | ch.igrave | ch.iacute | ch.icirc | ch.iuml | ch.eth | ch.ntilde | ch.ograve | ch.oacute | ch.ocirc | ch.otilde | ch.ouml | ch.divide | ch.oslash | ch.ugrave | ch.uacute | ch.ucirc | ch.uuml | ch.yacute | ch.thorn | ch.yuml | ch.ampersand | ch.lsquot | ch.rsquot | ch.ldquot | ch.rdquot | ch.minus | ch.endash | ch.emdash | ch.ellips | ch.lellips | ch.blankline | ch.percent | ch.thinspace | ch.frac116 | ch.plus">
 
 <!ENTITY % inline.content "#PCDATA | a | bookref | footref | em | strong | thought | foreign | quote | cite | code | line | br | typ | onomatopoeia | spell | item | %character.content;">
 
@@ -1769,6 +1769,51 @@ is included in all copies.
 
 <!-- vulgar fraction three quarters = fraction three quarters, U+00BE ISOnum -->
 <!ELEMENT ch.frac34 EMPTY><!ATTLIST ch.frac34 %core.attributes;>
+
+<!-- vulgar fraction 1/3, U+2153 ISOnum -->
+<!ELEMENT ch.frac13 EMPTY><!ATTLIST ch.frac13 %core.attributes;>
+
+<!-- vulgar fraction 2/3, U+2154 ISOnum -->
+<!ELEMENT ch.frac23 EMPTY><!ATTLIST ch.frac23 %core.attributes;>
+
+<!-- vulgar fraction 1/5, U+2155 ISOnum -->
+<!ELEMENT ch.frac15 EMPTY><!ATTLIST ch.frac15 %core.attributes;>
+
+<!-- vulgar fraction 2/5, U+2156 ISOnum -->
+<!ELEMENT ch.frac25 EMPTY><!ATTLIST ch.frac25 %core.attributes;>
+
+<!-- vulgar fraction 3/5, U+2157 ISOnum -->
+<!ELEMENT ch.frac35 EMPTY><!ATTLIST ch.frac35 %core.attributes;>
+
+<!-- vulgar fraction 4/5, U+2158 ISOnum -->
+<!ELEMENT ch.frac45 EMPTY><!ATTLIST ch.frac45 %core.attributes;>
+
+<!-- vulgar fraction 1/6, U+2159 ISOnum -->
+<!ELEMENT ch.frac16 EMPTY><!ATTLIST ch.frac16 %core.attributes;>
+
+<!-- vulgar fraction 5/6, U+215A ISOnum -->
+<!ELEMENT ch.frac56 EMPTY><!ATTLIST ch.frac56 %core.attributes;>
+
+<!-- vulgar fraction 1/7, U+2150 ISOnum -->
+<!ELEMENT ch.frac17 EMPTY><!ATTLIST ch.frac17 %core.attributes;>
+
+<!-- vulgar fraction 1/8, U+215B ISOnum -->
+<!ELEMENT ch.frac18 EMPTY><!ATTLIST ch.frac18 %core.attributes;>
+
+<!-- vulgar fraction 3/8, U+215C ISOnum -->
+<!ELEMENT ch.frac38 EMPTY><!ATTLIST ch.frac38 %core.attributes;>
+
+<!-- vulgar fraction 5/8, U+215D ISOnum -->
+<!ELEMENT ch.frac58 EMPTY><!ATTLIST ch.frac58 %core.attributes;>
+
+<!-- vulgar fraction 7/8, U+215E ISOnum -->
+<!ELEMENT ch.frac78 EMPTY><!ATTLIST ch.frac78 %core.attributes;>
+
+<!-- vulgar fraction 1/9, U+2151 ISOnum -->
+<!ELEMENT ch.frac19 EMPTY><!ATTLIST ch.frac19 %core.attributes;>
+
+<!-- vulgar fraction 1/10, U+2152 ISO num -->
+<!ELEMENT ch.frac110 EMPTY><!ATTLIST ch.frac110 %core.attributes;>
 
 <!-- inverted question mark = turned question mark, U+00BF ISOnum -->
 <!ELEMENT ch.iquest EMPTY><!ATTLIST ch.iquest %core.attributes;>

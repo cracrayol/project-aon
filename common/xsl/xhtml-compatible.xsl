@@ -942,6 +942,21 @@ is included in all copies.
 <xsl:template match="ch.frac14"><xsl:text>&#188;</xsl:text></xsl:template><!-- vulgar fraction one quarter = fraction one quarter, U+00BC ISOnum -->
 <xsl:template match="ch.frac12"><xsl:text>&#189;</xsl:text></xsl:template><!-- vulgar fraction one half = fraction one half, U+00BD ISOnum -->
 <xsl:template match="ch.frac34"><xsl:text>&#190;</xsl:text></xsl:template><!-- vulgar fraction three quarters = fraction three quarters, U+00BE ISOnum -->
+<xsl:template match="ch.frac13"><xsl:text>&#x2153;</xsl:text></xsl:template><!-- vulgar fraction 1/3, U+2153 ISOnum -->
+<xsl:template match="ch.frac23"><xsl:text>&#x2154;</xsl:text></xsl:template><!-- vulgar fraction 2/3, U+2154 ISOnum -->
+<xsl:template match="ch.frac15"><xsl:text>&#x2155;</xsl:text></xsl:template><!-- vulgar fraction 1/5, U+2155 ISOnum -->
+<xsl:template match="ch.frac25"><xsl:text>&#x2156;</xsl:text></xsl:template><!-- vulgar fraction 2/5, U+2156 ISOnum -->
+<xsl:template match="ch.frac35"><xsl:text>&#x2157;</xsl:text></xsl:template><!-- vulgar fraction 3/5, U+2157 ISOnum -->
+<xsl:template match="ch.frac45"><xsl:text>&#x2158;</xsl:text></xsl:template><!-- vulgar fraction 4/5, U+2158 ISOnum -->
+<xsl:template match="ch.frac16"><xsl:text>&#x2159;</xsl:text></xsl:template><!-- vulgar fraction 1/6, U+2159 ISOnum -->
+<xsl:template match="ch.frac56"><xsl:text>&#x215A;</xsl:text></xsl:template><!-- vulgar fraction 5/6, U+215A ISOnum -->
+<xsl:template match="ch.frac17"><xsl:text>&#x2150;</xsl:text></xsl:template><!-- vulgar fraction 1/7, U+2150 ISOnum -->
+<xsl:template match="ch.frac18"><xsl:text>&#x215B;</xsl:text></xsl:template><!-- vulgar fraction 1/8, U+215B ISOnum -->
+<xsl:template match="ch.frac38"><xsl:text>&#x215C;</xsl:text></xsl:template><!-- vulgar fraction 3/8, U+215C ISOnum -->
+<xsl:template match="ch.frac58"><xsl:text>&#x215D;</xsl:text></xsl:template><!-- vulgar fraction 5/8, U+215D ISOnum -->
+<xsl:template match="ch.frac78"><xsl:text>&#x215E;</xsl:text></xsl:template><!-- vulgar fraction 7/8, U+215E ISOnum -->
+<xsl:template match="ch.frac19"><xsl:text>&#x2151;</xsl:text></xsl:template><!-- vulgar fraction 1/9, U+2151 ISOnum -->
+<xsl:template match="ch.frac110"><xsl:text>&#x2152;</xsl:text></xsl:template><!-- vulgar fraction 1/10, U+2152 ISO num -->
 <xsl:template match="ch.iquest"><xsl:text>&#191;</xsl:text></xsl:template><!-- inverted question mark = turned question mark, U+00BF ISOnum -->
 <xsl:template match="ch.Agrave"><xsl:text>&#192;</xsl:text></xsl:template><!-- latin capital letter A with grave = latin capital letter A grave, U+00C0 ISOlat1 -->
 <xsl:template match="ch.Aacute"><xsl:text>&#193;</xsl:text></xsl:template><!-- latin capital letter A with acute, U+00C1 ISOlat1 -->
