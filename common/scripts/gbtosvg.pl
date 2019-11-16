@@ -1,8 +1,9 @@
-#!/usr/bin/env perl -w
+#!/usr/bin/env perl
 #
 # gbtosvg.pl
 
 use strict;
+use warnings;
 
 delete @ENV{qw(PATH IFS CDPATH ENV BASH_ENV)}; # clean house for taint mode
 
