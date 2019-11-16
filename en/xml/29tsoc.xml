@@ -1663,7 +1663,7 @@
 
       <data>
        <p>The Doomwolf gnaws at your right foot and desperately you kick free from its fang-filled jaws. It yelps with frustration and launches itself at your back as your terrified horse starts to pull ahead. Its sharp claws, now fully extended, rip through your oilskin cape and slice through the side of your backpack. You lose two Backpack Items (the second and third items recorded on your list). Steadily, your horse pulls away from this howling creature, leaving it trailing in your wake.</p>
-       <p>Turn 181</p>
+       <choice idref="sect181"><link-text>Turn 181</link-text>.</choice>
       </data>
      </section>
 
@@ -1750,7 +1750,7 @@
        <p>There is no chance the gruff driver will allow you to board his wagon unless you pay him and so you step away and release your mental hold over the horse team. He whips the reins once more and this time the horse team respond and the wagon sets off along the highway without you.</p>
        <p>Frequent bolts of lightning illuminate the muddy highway as you trudge along the rutted highway to Dwala<ch.apos/>s south gate. Upon arriving at the gate, a guard steps from his sentry post and demands you pay the night toll. Passage in and out of the city is free during the hours of daylight, but after dark a toll of 20 Ren (2 Gold Crowns) is imposed on all non-residents seeking to enter, and 10 Ren (1 Gold Crown) on those wishing to leave.</p>
        <choice idref="sect156">If you choose to pay the night toll, <link-text>turn to 156</link-text>.</choice>
-       <p>If you do not, or if you do not have sufficient Gold Crowns to do so, turn 94</p>
+       <choice idref="sect94">If you do not, or if you do not have sufficient Gold Crowns to do so, <link-text>turn 94</link-text>.</choice>
       </data>
      </section>
 
@@ -1891,7 +1891,7 @@
       <data>
        <p>When combat commenced, Zashnor sent a telepathic command to its Imperial Zlanbeast to assist it in the fight. The creature took off from the pier and commenced a flight over the raging estuary in a wide circle in order to best position itself to launch an attack on you from the rear. At the start of the seventh round, it comes swooping low along the deck behind you. It stabs at you with its sharp horny beak before the momentum of its attack carries it past and it soars away into the clouds.</p>
        <p>In the seventh round, Zashnor<ch.apos/>s <typ class="attribute">COMBAT SKILL</typ> increases to 59. Its <typ class="attribute">ENDURANCE</typ> points total increases by 5 points. The <typ class="attribute">COMBAT SKILL</typ> increase lasts only for the seventh round and represents a temporary bonus that the Nadziran receives from the Imperial Zlanbeast<ch.apos/>s attack. If you survive the seventh round, the Imperial Zlanbeast will no longer be a part of the combat in any further rounds.</p>
-       <choice idref="sect54">At the start of the eighth round, you may deduct Zashnor<ch.apos/>s <typ class="attribute">COMBAT SKILL</typ> bonus. This will <link-text>return its <typ class="attribute">COMBAT SKILL</typ> to 54</link-text>. The increase of 5 points it gained to its <typ class="attribute">ENDURANCE</typ> in the seventh round remains.</choice>
+       <p>At the start of the eighth round, you may deduct Zashnor<ch.apos/>s <typ class="attribute">COMBAT SKILL</typ> bonus. This will return its <typ class="attribute">COMBAT SKILL</typ> to 54. The increase of 5 points it gained to its <typ class="attribute">ENDURANCE</typ> in the seventh round remains.</p>
        <choice idref="sect276">If you win the combat, <link-text>turn to 276</link-text>.</choice>
       </data>
      </section>
@@ -3630,7 +3630,7 @@
       <data>
        <p>Frequent bolts of lightning illuminate the muddy highway as you trudge the final mile to Dwala<ch.apos/>s south gate. Upon arriving at the gate, a guard steps from his sentry post and demands you pay the night entry toll. Passage in and out of the city is free during the hours of daylight, but after dark a toll of 20 Ren (2 Gold Crowns) is imposed on all non-residents wishing to enter, and 10 Ren (1 Gold Crown) on all those wanting to leave.</p>
        <choice idref="sect156">If you choose to pay the entry toll, deduct 2 Gold Crowns from Belt Pouch and then <link-text>turn to 156</link-text>.</choice>
-       <p>If you do not, or if you do not have sufficient Gold Crowns to do so, turn 94</p>
+       <choice idref="sect94">If you do not, or if you do not have sufficient Gold Crowns to do so, <link-text>turn 94</link-text>.</choice>
       </data>
      </section>
 
@@ -3939,7 +3939,7 @@
        <p>Frequent bolts of lightning illuminate the muddy highway as you travel the short distance to Dwala<ch.apos/>s south gate. The driver pulls his team to a halt a hundred yards short of the gate and you climb down onto the rutted highway. The instant you are off the wagon, he whips the reins and urges his horses forward.</p>
        <p>As you walk towards the gate in the pouring rain, you observe a guard step out of his sentry post and talk briefly with the driver before allowing his wagon to enter. When you reach the gate shortly after the wagon has passed through, the guard steps forward and demands that you pay the night entry toll. Passage in and out of the city is free during the hours of daylight, but after dark a toll of 20 Ren (2 Gold Crowns) is imposed on all non-residents wishing to enter, and 10 Ren (1 Gold Crown) on all those wanting to leave.</p>
        <choice idref="sect156">If you choose to pay the entry toll, <link-text>turn to 156</link-text>.</choice>
-       <p>If you do not, or if you do not have sufficient Gold Crowns to do so, turn 94</p>
+       <choice idref="sect94">If you do not, or if you do not have sufficient Gold Crowns to do so, <link-text>turn 94</link-text>.</choice>
       </data>
      </section>
 
@@ -4807,7 +4807,7 @@
        <p>Instinctively, you throw yourself forwards and dive onto the wet cobblestones of the alley to avoid being hit by the speeding black arrow.</p>
        <p>Pick a number from the <a idref="random">Random Number Table</a>. If you possess the Grand Master Discipline of Grand Huntmastery, add 3 to the number you have picked. If your current <typ class="attribute">ENDURANCE</typ> score is 20 or less, deduct 1 from the number you have picked.</p>
        <choice idref="sect206">If your total is now 4 or lower, <link-text>turn to 206</link-text>.</choice>
-       <p>If your total is now 5 or higher, 129</p>
+       <choice idref="sect129">If your total is now 5 or higher, <link-text>129</link-text>.</choice>
       </data>
      </section>
 
@@ -5044,7 +5044,7 @@
        <p>Lord Honos excuses himself and leaves the chamber to fetch his Speaking Stone. While you wait for him to return, Zautro and Song Tao offer to help you to recover from the rigours of your perilous journey to Dwala.</p>
        <choice idref="sect186">If you wish to accept Zautro<ch.apos/>s offer to use his herbcraft skills to restore to you lost <typ class="attribute">ENDURANCE</typ> points, <link-text>turn to 186</link-text>.</choice>
        <choice idref="sect288">If you choose to accept Priestess Song Tao<ch.apos/>s offer to invoke Goddess Ishir<ch.apos/>s blessing upon you, <link-text>turn to 288</link-text>.</choice>
-       <p>If you decide to decline their kind offers and rest in an armchair until Lord Honos returns to the chamber, turn 338</p>
+       <choice idref="sect338">If you decide to decline their kind offers and rest in an armchair until Lord Honos returns to the chamber, <link-text>turn 338</link-text>.</choice>
       </data>
      </section>
 
@@ -5121,7 +5121,7 @@
 
       <data>
        <p>The Doomwolf gnaws at your right foot and desperately you kick free from its fang-filled jaws. It yelps with frustration and launches itself at your back as your terrified horse starts to pull ahead. Its sharp claws, now fully extended, rip through your oilskin cape and slice through the side of your backpack. You lose two Backpack Items (the first and the last items recorded on your list). Steadily, your horse pulls away from this howling creature, leaving it trailing in your wake.</p>
-       <p>Turn 264</p>
+       <choice idref="sect264"><link-text>Turn 264</link-text>.</choice>
       </data>
      </section>
 
@@ -5493,7 +5493,7 @@
        <p>You wave farewell to the old man, then you set out across the marshy grassland and soon reach the highway beyond. This road connects Dwala with the coastal port of Czantai to the south. Its surface is deeply rutted, a consequence of the heavy wagons that travel this trade road every day. Frequent bolts of lightning illuminate the muddy highway as you trudge the final mile to Dwala<ch.apos/>s south gate.</p>
        <p>Upon arriving at the gate, a guard steps from his sentry post and demands you pay the night toll. Passage in and out of the city is free during the hours of daylight, but after dark a toll of 20 Ren (2 Gold Crowns) is imposed on all non-residents seeking to enter, and 10 Ren (1 Gold Crown) on those wishing to leave.</p>
        <choice idref="sect156">If you choose to pay the night toll, <link-text>turn to 156</link-text>.</choice>
-       <p>If you do not, or if you do not have sufficient Gold Crowns to do so, turn 94</p>
+       <choice idref="sect94">If you do not, or if you do not have sufficient Gold Crowns to do so, <link-text>turn 94</link-text>.</choice>
       </data>
      </section>
 
