@@ -1,0 +1,274 @@
+/*******************************************************************************
+ global styles 
+*******************************************************************************/
+
+a {
+  background-color: transparent;
+  color: %%text-color%%;
+}
+
+:link, :visited {
+  background-color: transparent;
+  color: %%link-color%%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+:link:hover, :visited:hover {
+  background-color: %%hover-link-background-color%%;
+  color: %%link-color%%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+:link:active, :visited:active {
+  background-color: transparent;
+  color: %%link-color%%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body {
+  background: %%background-color%%;
+  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+  color: %%text-color%%;
+}
+
+.container { 
+  max-width: 900px;
+  padding: 0;
+}
+
+#main-header {
+  margin: 0;
+}
+
+#main-header h1 {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding-left: 10px;
+  line-height: 40px;
+  font-size: 30px;
+}
+
+#main-header h2 {
+  border-left: solid thin %%text-color%%;
+  border-right: solid thin %%text-color%%;
+  margin: 0;
+  padding-left: 10px;
+  background-color: %%link-color%%;
+  color: white;
+  line-height: 28px;
+  font-size: 24px;
+}
+
+#logo, #project-aon-logo {
+  display: none;
+}
+
+article {
+  margin: 0;
+  padding-top: 2ex;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 2ex;
+  background: white;
+  text-align: justify;
+  font-family: Constantia, "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 15pt;
+}
+
+article h3 {
+  margin-top: 0;
+  padding-top: 0.5ex;
+  text-align: center;
+}
+
+figure {
+  max-width: 386px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2ex;
+  margin-bottom: 2ex;
+}
+
+figcaption {
+  max-width: 480px;
+  margin-top: 1ex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2ex;
+  font-size: smaller;
+  font-style: italic;
+}
+
+article table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2ex;
+}
+
+ul.unbulleted { 
+  list-style-type: none;
+}
+
+.navigation, div.signpost, .illustraion, .caption, .center {
+  text-align: center;
+}
+
+div.signpost {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  line-height: 1.5em;
+}
+
+span.signpost, .smallcaps {
+  font-size: smaller;
+}
+
+.author {
+  text-align: center;
+  font-weight: bold;
+}
+
+.dedication {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 15ex;
+  margin-bottom: 15ex;
+}
+
+.combat {
+  margin-left: 1em;
+}
+
+ul figure {
+  margin-left: -2.5em;
+}
+
+#footnotes {
+  margin-top: 4ex;
+  border-top: solid thin #ccc;
+  padding-top: 1ex;
+  font-size: smaller;
+  font-style: italic;
+}
+
+#footnotes h4 {
+  display: none;
+}
+
+footer { 
+  font-size: smaller; 
+}
+
+footer .btn {
+  background-color: black;
+  color: white;
+}
+
+.navbar-dever {
+  margin-bottom: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: black; 
+}
+
+.navbar-dever li > :link , .navbar-dever li > :visited {
+  color: white;
+}
+
+.navbar-dever li > :link:hover , .navbar-dever li > :visited:hover {
+  background-color: #333;
+  color: white;
+}
+
+.navbar-dever .navbar-toggle {
+  border: solid 1px #999;
+}
+
+.navbar-dever .icon-bar { 
+  background-color: white;
+}
+
+#license {
+  margin-top: 1ex;
+  color: #666;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller; 
+}
+
+#license p {
+  margin-bottom: 0.25ex;
+}
+
+/******************************************************************************/
+@media only screen and (min-width: 479px) {
+}
+
+/******************************************************************************/
+@media only screen and (min-width: 768px) {
+  body { 
+    padding-bottom: 2ex; 
+  }
+
+  .container { 
+    padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #main-header {
+    position: relative;
+  }
+
+  #logo {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 100px;
+    width: 93px;
+  }
+
+  #project-aon-logo {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    width: 93px;
+    height: 93px;
+  }
+
+  #main-header h1 {
+    height: 80px;
+    line-height: 110px;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  #main-header h2 {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  article {
+    border-left: solid thin #ccc;
+    border-right: solid thin #ccc;
+  }
+
+  article h3 {
+    padding-top: 1ex;
+  }
+
+  #license {
+    font-size: inherit;
+  }
+}
