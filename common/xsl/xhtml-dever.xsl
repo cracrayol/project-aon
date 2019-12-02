@@ -373,11 +373,14 @@ Todo:
             <xsl:apply-templates select="."/>
           </xsl:for-each>
         </xsl:if>
+      </xsl:when><xsl:when test="self::text() and normalize-space(.)=''">
+        <!-- strip whitespace here -->
       </xsl:when>
       <xsl:otherwise>
         <xsl:text>[error: paragraphed list template]</xsl:text>
         <xsl:message>
           <xsl:text>error: paragraphed list template</xsl:text>
+          <xsl:value-of select="normalize-space(.)"/>
         </xsl:message>
       </xsl:otherwise>
     </xsl:choose>
@@ -428,7 +431,7 @@ Todo:
     </li>
   </xsl:template>
   <xsl:template match="table">
-    <table>
+    <table class="table table-condensed">
       <xsl:if test="@summary">
         <xsl:attribute name="summary">
           <xsl:value-of select="@summary"/>
@@ -1584,6 +1587,7 @@ Todo:
       </xsl:fallback>
       <html xml:lang="en-UK" lang="en-UK">
         <head>
+          <!-- <meta charset...> generated automatically by HTML5 output -->
           <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
           <meta name="viewport" content="width=device-width, initial-scale=1"/>
           <title>
@@ -1631,7 +1635,7 @@ Todo:
               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ top-level ~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
               <xsl:when test="$document-type='top-level'">
                 <div class="frontmatter">
-                  <div class="maintext">
+                  <div class="maintext table-responsive">
                     <xsl:apply-templates select="/gamebook/meta/description[@class='blurb']"/>
                     <xsl:apply-templates select="/gamebook/meta/creator[@class='long']"/>
                     <hr/>
@@ -1783,7 +1787,7 @@ Todo:
               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~ toc ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
               <xsl:when test="$document-type='toc'">
                 <div class="frontmatter">
-                  <div class="maintext">
+                  <div class="maintext table-responsive">
                     <h2>
                       <xsl:choose>
                         <xsl:when test="$language='es'">
@@ -1844,7 +1848,7 @@ Todo:
               <!-- ~~~~~~~~~~~~~~~~ second-level-frontmatter ~~~~~~~~~~~~~~~~~~~ -->
               <xsl:when test="$document-type='second-level-frontmatter'">
                 <div class="frontmatter">
-                  <div class="maintext">
+                  <div class="maintext table-responsive">
                     <h2>
                       <xsl:apply-templates select="meta/title"/>
                     </h2>
@@ -1856,7 +1860,7 @@ Todo:
               <!-- ~~~~~~~~~~~~~ third-level-frontmatter-separate ~~~~~~~~~~~~~~ -->
               <xsl:when test="$document-type='third-level-frontmatter-separate'">
                 <div class="frontmatter">
-                  <div class="maintext">
+                  <div class="maintext table-responsive">
                     <h3>
                       <xsl:apply-templates select="meta/title"/>
                     </h3>
@@ -1868,7 +1872,7 @@ Todo:
               <!-- ~~~~~~~~~~~~~~~~ second-level-mainmatter ~~~~~~~~~~~~~~~~~~~ -->
               <xsl:when test="$document-type='second-level-mainmatter'">
                 <div class="mainmatter">
-                  <div class="maintext">
+                  <div class="maintext table-responsive">
                     <h2>
                       <xsl:apply-templates select="meta/title"/>
                     </h2>
@@ -1880,7 +1884,7 @@ Todo:
               <!-- ~~~~~~~~~~~~~ third-level-mainmatter-separate ~~~~~~~~~~~~~~ -->
               <xsl:when test="$document-type='third-level-mainmatter-separate'">
                 <div class="mainmatter">
-                  <div class="maintext">
+                  <div class="maintext table-responsive">
                     <h3>
                       <xsl:apply-templates select="meta/title"/>
                     </h3>
@@ -1892,7 +1896,7 @@ Todo:
               <!-- ~~~~~~~~~~~~~~~~ second-level-glossary ~~~~~~~~~~~~~~~~~~~ -->
               <xsl:when test="$document-type='second-level-glossary'">
                 <div class="mainmatter">
-                  <div class="maintext">
+                  <div class="maintext table-responsive">
                     <h2>
                       <xsl:apply-templates select="meta/title"/>
                     </h2>
@@ -1909,7 +1913,7 @@ Todo:
               <!-- ~~~~~~~~~~~~~ third-level-glossary-separate ~~~~~~~~~~~~~~ -->
               <xsl:when test="$document-type='third-level-glossary-separate'">
                 <div class="glossary">
-                  <div class="maintext">
+                  <div class="maintext table-responsive">
                     <h3>
                       <xsl:apply-templates select="meta/title"/>
                     </h3>
@@ -1932,7 +1936,7 @@ Todo:
               -->
               <xsl:when test="$document-type='second-level-numbered'">
                 <div class="numbered">
-                  <div class="maintext">
+                  <div class="maintext table-responsive">
                     <h2>
                       <xsl:apply-templates select="meta/title"/>
                     </h2>
@@ -1985,7 +1989,7 @@ Todo:
               <!-- ~~~~~~~~~~~~~~~~~~ third-level-numbered ~~~~~~~~~~~~~~~~~~~~~ -->
               <xsl:when test="$document-type='third-level-numbered'">
                 <div class="numbered">
-                  <div class="maintext">
+                  <div class="maintext table-responsive">
                     <h3>
                       <xsl:apply-templates select="meta/title"/>
                     </h3>
@@ -1997,7 +2001,7 @@ Todo:
               <!-- ~~~~~~~~~~~~~~~~~ footnotes ~~~~~~~~~~~~~~~~~~~ -->
               <xsl:when test="$document-type='footnotz'">
                 <div class="backmatter">
-                  <div class="maintext">
+                  <div class="maintext table-responsive">
                     <!-- No particular reason to code title here -->
                     <h2>
                       <xsl:apply-templates select="meta/title"/>
@@ -2047,7 +2051,7 @@ Todo:
               <!-- ~~~~~~~~~~~~~~~~~ second-level-backmatter ~~~~~~~~~~~~~~~~~~~ -->
               <xsl:when test="$document-type='second-level-backmatter'">
                 <div class="frontmatter">
-                  <div class="maintext">
+                  <div class="maintext table-responsive">
                     <h2>
                       <xsl:apply-templates select="meta/title"/>
                     </h2>
@@ -2059,7 +2063,7 @@ Todo:
               <!-- ~~~~~~~~~~~~~~~~~~~~~~~ map-adjusted ~~~~~~~~~~~~~~~~~~~~~~~~ -->
               <xsl:when test="$document-type='map-adjusted'">
                 <div class="frontmatter">
-                  <div class="maintext">
+                  <div class="maintext table-responsive">
                     <h2>
                       <xsl:apply-templates select="meta/title"/>
                     </h2>
@@ -2086,8 +2090,39 @@ Todo:
                           <xsl:variable name="illustration-height-adjusted">
                             <xsl:number value="$illustration-height * $illustration-width-adjusted div $illustration-width"/>
                           </xsl:variable>
-                          <div class="illustration">
-                            <div align="center">
+                          <xsl:call-template name="illustration-framed">
+                            <xsl:with-param name="illustration-width">
+                              <xsl:value-of select="$illustration-width-adjusted"/>
+                            </xsl:with-param>
+                            <xsl:with-param name="illustration-height">
+                              <xsl:value-of select="$illustration-height-adjusted"/>
+                            </xsl:with-param>
+                            <xsl:with-param name="illustration-src">
+                              <xsl:value-of select="$illustration-src"/>
+                            </xsl:with-param>
+                            <xsl:with-param name="illustration-href">maplarge.htm</xsl:with-param>
+                            <xsl:with-param name="illustration-alt-text">
+                              <xsl:text>[</xsl:text>
+                              <xsl:value-of select="$map-illustration-alt-text"/>
+                              <xsl:text>]</xsl:text>
+                            </xsl:with-param>
+                          </xsl:call-template>
+                          <xsl:if test="instance[@class='text']">
+                            <xsl:apply-templates select="instance[@class='text']/*"/>
+                          </xsl:if>
+                        </xsl:when>
+                        <xsl:when test="self::illref and @class='html'">
+                          <xsl:for-each select="id( @idref )">
+                            <xsl:if test="contains( $use-illustrators, concat( ':', meta/creator, ':' ) )">
+                              <xsl:variable name="illustration-width" select="instance[@class='html']/@width"/>
+                              <xsl:variable name="illustration-height" select="instance[@class='html']/@height"/>
+                              <xsl:variable name="illustration-src" select="instance[@class='html']/@src"/>
+                              <xsl:variable name="illustration-width-adjusted">
+                                <xsl:number value="386"/>
+                              </xsl:variable>
+                              <xsl:variable name="illustration-height-adjusted">
+                                <xsl:number value="$illustration-height * $illustration-width-adjusted div $illustration-width"/>
+                              </xsl:variable>
                               <xsl:call-template name="illustration-framed">
                                 <xsl:with-param name="illustration-width">
                                   <xsl:value-of select="$illustration-width-adjusted"/>
@@ -2105,45 +2140,6 @@ Todo:
                                   <xsl:text>]</xsl:text>
                                 </xsl:with-param>
                               </xsl:call-template>
-                            </div>
-                          </div>
-                          <xsl:if test="instance[@class='text']">
-                            <xsl:apply-templates select="instance[@class='text']/*"/>
-                          </xsl:if>
-                        </xsl:when>
-                        <xsl:when test="self::illref and @class='html'">
-                          <xsl:for-each select="id( @idref )">
-                            <xsl:if test="contains( $use-illustrators, concat( ':', meta/creator, ':' ) )">
-                              <xsl:variable name="illustration-width" select="instance[@class='html']/@width"/>
-                              <xsl:variable name="illustration-height" select="instance[@class='html']/@height"/>
-                              <xsl:variable name="illustration-src" select="instance[@class='html']/@src"/>
-                              <xsl:variable name="illustration-width-adjusted">
-                                <xsl:number value="386"/>
-                              </xsl:variable>
-                              <xsl:variable name="illustration-height-adjusted">
-                                <xsl:number value="$illustration-height * $illustration-width-adjusted div $illustration-width"/>
-                              </xsl:variable>
-                              <div class="illustration">
-                                <div align="center">
-                                  <xsl:call-template name="illustration-framed">
-                                    <xsl:with-param name="illustration-width">
-                                      <xsl:value-of select="$illustration-width-adjusted"/>
-                                    </xsl:with-param>
-                                    <xsl:with-param name="illustration-height">
-                                      <xsl:value-of select="$illustration-height-adjusted"/>
-                                    </xsl:with-param>
-                                    <xsl:with-param name="illustration-src">
-                                      <xsl:value-of select="$illustration-src"/>
-                                    </xsl:with-param>
-                                    <xsl:with-param name="illustration-href">maplarge.htm</xsl:with-param>
-                                    <xsl:with-param name="illustration-alt-text">
-                                      <xsl:text>[</xsl:text>
-                                      <xsl:value-of select="$map-illustration-alt-text"/>
-                                      <xsl:text>]</xsl:text>
-                                    </xsl:with-param>
-                                  </xsl:call-template>
-                                </div>
-                              </div>
                               <xsl:if test="instance[@class='text']">
                                 <xsl:apply-templates select="instance[@class='text']/*"/>
                               </xsl:if>
@@ -2162,7 +2158,7 @@ Todo:
               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~ map ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
               <xsl:when test="$document-type='map'">
                 <div class="frontmatter">
-                  <div class="maintext">
+                  <div class="maintext table-responsive">
                     <h2>
                       <xsl:apply-templates select="meta/title"/>
                     </h2>
@@ -2183,8 +2179,30 @@ Todo:
                           <xsl:variable name="illustration-width" select="instance[@class='html']/@width"/>
                           <xsl:variable name="illustration-height" select="instance[@class='html']/@height"/>
                           <xsl:variable name="illustration-src" select="instance[@class='html']/@src"/>
-                          <div class="illustration">
-                            <div align="center">
+                          <xsl:call-template name="illustration-framed">
+                            <xsl:with-param name="illustration-width">
+                              <xsl:value-of select="$illustration-width"/>
+                            </xsl:with-param>
+                            <xsl:with-param name="illustration-height">
+                              <xsl:value-of select="$illustration-height"/>
+                            </xsl:with-param>
+                            <xsl:with-param name="illustration-src">
+                              <xsl:value-of select="$illustration-src"/>
+                            </xsl:with-param>
+                            <xsl:with-param name="illustration-href">map.htm</xsl:with-param>
+                            <xsl:with-param name="illustration-alt-text">
+                              <xsl:text>[</xsl:text>
+                              <xsl:value-of select="$map-illustration-alt-text"/>
+                              <xsl:text>]</xsl:text>
+                            </xsl:with-param>
+                          </xsl:call-template>
+                        </xsl:when>
+                        <xsl:when test="self::illref and @class='html'">
+                          <xsl:for-each select="id( @idref )">
+                            <xsl:if test="contains( $use-illustrators, concat( ':', meta/creator, ':' ) )">
+                              <xsl:variable name="illustration-width" select="instance[@class='html']/@width"/>
+                              <xsl:variable name="illustration-height" select="instance[@class='html']/@height"/>
+                              <xsl:variable name="illustration-src" select="instance[@class='html']/@src"/>
                               <xsl:call-template name="illustration-framed">
                                 <xsl:with-param name="illustration-width">
                                   <xsl:value-of select="$illustration-width"/>
@@ -2202,36 +2220,6 @@ Todo:
                                   <xsl:text>]</xsl:text>
                                 </xsl:with-param>
                               </xsl:call-template>
-                            </div>
-                          </div>
-                        </xsl:when>
-                        <xsl:when test="self::illref and @class='html'">
-                          <xsl:for-each select="id( @idref )">
-                            <xsl:if test="contains( $use-illustrators, concat( ':', meta/creator, ':' ) )">
-                              <xsl:variable name="illustration-width" select="instance[@class='html']/@width"/>
-                              <xsl:variable name="illustration-height" select="instance[@class='html']/@height"/>
-                              <xsl:variable name="illustration-src" select="instance[@class='html']/@src"/>
-                              <div class="illustration">
-                                <div align="center">
-                                  <xsl:call-template name="illustration-framed">
-                                    <xsl:with-param name="illustration-width">
-                                      <xsl:value-of select="$illustration-width"/>
-                                    </xsl:with-param>
-                                    <xsl:with-param name="illustration-height">
-                                      <xsl:value-of select="$illustration-height"/>
-                                    </xsl:with-param>
-                                    <xsl:with-param name="illustration-src">
-                                      <xsl:value-of select="$illustration-src"/>
-                                    </xsl:with-param>
-                                    <xsl:with-param name="illustration-href">map.htm</xsl:with-param>
-                                    <xsl:with-param name="illustration-alt-text">
-                                      <xsl:text>[</xsl:text>
-                                      <xsl:value-of select="$map-illustration-alt-text"/>
-                                      <xsl:text>]</xsl:text>
-                                    </xsl:with-param>
-                                  </xsl:call-template>
-                                </div>
-                              </div>
                             </xsl:if>
                           </xsl:for-each>
                         </xsl:when>
@@ -2308,8 +2296,7 @@ Todo:
         </div>
        </nav>
        <div id="license">
-         <p><xsl:apply-templates select="/gamebook/meta/rights[@class='copyrights']"/></p>
-         <p>Distributed under the <a href="license.htm">Project Aon License</a>.</p>
+         <xsl:apply-templates select="/gamebook/meta/rights[@class='license-notification']"/>
        </div>
       </footer>
     </div>
@@ -2355,10 +2342,10 @@ Todo:
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
-    <p class="navigation">
+    <p id="page-navigation">
       <xsl:choose>
         <xsl:when test="meta/link[@class='prev']">
-          &lt;
+          <xsl:text>&lt; </xsl:text>
           <a>
             <xsl:attribute name="href">
               <xsl:apply-templates select="meta/link[@class='prev']/@idref"/>
@@ -2366,7 +2353,7 @@ Todo:
             </xsl:attribute>
             <xsl:value-of select="id( meta/link[@class='prev']/@idref )/meta/title"/>
           </a>
-          &middot;
+          <xsl:text> &middot; </xsl:text>
         </xsl:when>
         <xsl:otherwise></xsl:otherwise>
       </xsl:choose>
@@ -2393,7 +2380,7 @@ Todo:
               </xsl:otherwise>
             </xsl:choose>
           </a>
-          &gt;
+          <xsl:text> &gt;</xsl:text>
         </xsl:when>
         <xsl:otherwise></xsl:otherwise>
       </xsl:choose>
@@ -2401,7 +2388,7 @@ Todo:
   </xsl:template>
   <xsl:template name="alpha-bar">
     <xsl:param name="alpha-bar-id-prefix"/>
-    <p class="navigation">[<a href="{$alpha-bar-id-prefix}a.htm">A</a>&nbsp;<a href="{$alpha-bar-id-prefix}b.htm">B</a>&nbsp;<a href="{$alpha-bar-id-prefix}c.htm">C</a>&nbsp;<a href="{$alpha-bar-id-prefix}d.htm">D</a>&nbsp;<a href="{$alpha-bar-id-prefix}e.htm">E</a>&nbsp;<a href="{$alpha-bar-id-prefix}f.htm">F</a>&nbsp;<a href="{$alpha-bar-id-prefix}g.htm">G</a>&nbsp;<a href="{$alpha-bar-id-prefix}h.htm">H</a>&nbsp;<a href="{$alpha-bar-id-prefix}i.htm">I</a>&nbsp;<a href="{$alpha-bar-id-prefix}j.htm">J</a>&nbsp;<a href="{$alpha-bar-id-prefix}k.htm">K</a>&nbsp;<a href="{$alpha-bar-id-prefix}l.htm">L</a>&nbsp;<a href="{$alpha-bar-id-prefix}m.htm">M</a>&nbsp;<a href="{$alpha-bar-id-prefix}n.htm">N</a>&nbsp;<a href="{$alpha-bar-id-prefix}o.htm">O</a>&nbsp;<a href="{$alpha-bar-id-prefix}p.htm">P</a>&nbsp;<a href="{$alpha-bar-id-prefix}q.htm">Q</a>&nbsp;<a href="{$alpha-bar-id-prefix}r.htm">R</a>&nbsp;<a href="{$alpha-bar-id-prefix}s.htm">S</a>&nbsp;<a href="{$alpha-bar-id-prefix}t.htm">T</a>&nbsp;<a href="{$alpha-bar-id-prefix}u.htm">U</a>&nbsp;<a href="{$alpha-bar-id-prefix}v.htm">V</a>&nbsp;<a href="{$alpha-bar-id-prefix}w.htm">W</a>&nbsp;<a href="{$alpha-bar-id-prefix}x.htm">X</a>&nbsp;<a href="{$alpha-bar-id-prefix}y.htm">Y</a>&nbsp;<a href="{$alpha-bar-id-prefix}z.htm">Z</a>]</p>
+    <p id="page-navigation">[<a href="{$alpha-bar-id-prefix}a.htm">A</a>&nbsp;<a href="{$alpha-bar-id-prefix}b.htm">B</a>&nbsp;<a href="{$alpha-bar-id-prefix}c.htm">C</a>&nbsp;<a href="{$alpha-bar-id-prefix}d.htm">D</a>&nbsp;<a href="{$alpha-bar-id-prefix}e.htm">E</a>&nbsp;<a href="{$alpha-bar-id-prefix}f.htm">F</a>&nbsp;<a href="{$alpha-bar-id-prefix}g.htm">G</a>&nbsp;<a href="{$alpha-bar-id-prefix}h.htm">H</a>&nbsp;<a href="{$alpha-bar-id-prefix}i.htm">I</a>&nbsp;<a href="{$alpha-bar-id-prefix}j.htm">J</a>&nbsp;<a href="{$alpha-bar-id-prefix}k.htm">K</a>&nbsp;<a href="{$alpha-bar-id-prefix}l.htm">L</a>&nbsp;<a href="{$alpha-bar-id-prefix}m.htm">M</a>&nbsp;<a href="{$alpha-bar-id-prefix}n.htm">N</a>&nbsp;<a href="{$alpha-bar-id-prefix}o.htm">O</a>&nbsp;<a href="{$alpha-bar-id-prefix}p.htm">P</a>&nbsp;<a href="{$alpha-bar-id-prefix}q.htm">Q</a>&nbsp;<a href="{$alpha-bar-id-prefix}r.htm">R</a>&nbsp;<a href="{$alpha-bar-id-prefix}s.htm">S</a>&nbsp;<a href="{$alpha-bar-id-prefix}t.htm">T</a>&nbsp;<a href="{$alpha-bar-id-prefix}u.htm">U</a>&nbsp;<a href="{$alpha-bar-id-prefix}v.htm">V</a>&nbsp;<a href="{$alpha-bar-id-prefix}w.htm">W</a>&nbsp;<a href="{$alpha-bar-id-prefix}x.htm">X</a>&nbsp;<a href="{$alpha-bar-id-prefix}y.htm">Y</a>&nbsp;<a href="{$alpha-bar-id-prefix}z.htm">Z</a>]</p>
   </xsl:template>
   <xsl:template name="illustration-framed">
     <xsl:param name="illustration-alt-text">

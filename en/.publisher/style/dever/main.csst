@@ -2,36 +2,13 @@
  global styles 
 *******************************************************************************/
 
-a {
-  background-color: transparent;
-  color: %%text-color%%;
-}
-
-:link, :visited {
-  background-color: transparent;
-  color: %%link-color%%;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-:link:hover, :visited:hover {
-  background-color: %%hover-link-background-color%%;
-  color: %%link-color%%;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-:link:active, :visited:active {
-  background-color: transparent;
-  color: %%link-color%%;
-  text-decoration: none;
-  font-weight: bold;
+html {
+  font-size: 16pt;
+  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif;
 }
 
 body {
   background: %%background-color%%;
-  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif;
-  font-size: 16pt;
   color: %%text-color%%;
 }
 
@@ -70,36 +47,60 @@ body {
 
 article {
   margin: 0;
-  padding-top: 2ex;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-bottom: 2ex;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.5rem;
   background: white;
   text-align: justify;
   font-family: Constantia, "Palatino Linotype", Palatino, Georgia, serif;
-  font-size: 15pt;
+  font-size: 1rem;
+}
+
+article > div:last-child {
+  margin-bottom: -1rem;
+}
+
+article h3, article h4, article h5, article h6 {
+  margin-top: 0;
+  padding-top: 0.5rem;
+  font-weight: bold;
 }
 
 article h3 {
-  margin-top: 0;
-  padding-top: 0.5ex;
   text-align: center;
+  font-size: 1.5rem;
+}
+
+article h4 {
+  font-size: 1.25rem;
+}
+
+article h5 {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+article h6 {
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: italic;
 }
 
 figure {
   max-width: 386px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2ex;
-  margin-bottom: 2ex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 figcaption {
   max-width: 480px;
-  margin-top: 1ex;
+  margin-top: 0.5rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2ex;
+  margin-bottom: 1rem;
   font-size: smaller;
   font-style: italic;
 }
@@ -107,67 +108,93 @@ figcaption {
 article table {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2ex;
+  margin-bottom: 1rem;
+}
+
+a {
+  background-color: transparent;
+  color: %%text-color%%;
+}
+
+:link, :visited {
+  background-color: transparent;
+  color: %%link-color%%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+:link:hover, :visited:hover {
+  background-color: %%hover-link-background-color%%;
+  color: %%link-color%%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+:link:active, :visited:active {
+  background-color: transparent;
+  color: %%link-color%%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+article p {
+  margin-bottom: 1.25rem;
 }
 
 ul.unbulleted { 
   list-style-type: none;
 }
 
-.navigation, div.signpost, .illustraion, .caption, .center {
+#page-navigation, div.signpost {
   text-align: center;
 }
 
 div.signpost {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  line-height: 1.5em;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.5rem;
 }
 
 span.signpost, .smallcaps {
   font-size: smaller;
 }
 
-.author {
-  text-align: center;
-  font-weight: bold;
+.smallcaps {
+  font-variant: small-caps;
 }
 
 .dedication {
   text-align: center;
   font-style: italic;
   font-weight: bold;
-  margin-top: 15ex;
-  margin-bottom: 15ex;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
-.combat {
-  margin-left: 1em;
+.choice, .puzzle, .deadend, .combat {
+  text-align: left;
+  margin-left: 1rem;
+}
+
+dd {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 ul figure {
-  margin-left: -2.5em;
+  margin-left: -2.5rem;
 }
 
 #footnotes {
-  margin-top: 4ex;
+  margin-top: 2rem;
   border-top: solid thin #ccc;
-  padding-top: 1ex;
+  padding-top: 0.5rem;
   font-size: smaller;
   font-style: italic;
 }
 
 #footnotes h4 {
   display: none;
-}
-
-footer { 
-  font-size: smaller; 
-}
-
-footer .btn {
-  background-color: black;
-  color: white;
 }
 
 .navbar-dever {
@@ -179,6 +206,7 @@ footer .btn {
 }
 
 .navbar-dever li > :link , .navbar-dever li > :visited {
+  background-color: black;
   color: white;
 }
 
@@ -196,15 +224,13 @@ footer .btn {
 }
 
 #license {
-  margin-top: 1ex;
+  margin-top: 0.5rem;
   color: #666;
-  text-align: center;
   font-style: italic;
-  font-size: smaller; 
 }
 
 #license p {
-  margin-bottom: 0.25ex;
+  margin-bottom: 0.25rem;
 }
 
 /******************************************************************************/
@@ -214,7 +240,7 @@ footer .btn {
 /******************************************************************************/
 @media only screen and (min-width: 768px) {
   body { 
-    padding-bottom: 2ex; 
+    padding-bottom: 1rem; 
   }
 
   .container { 
@@ -264,11 +290,7 @@ footer .btn {
     border-right: solid thin #ccc;
   }
 
-  article h3 {
-    padding-top: 1ex;
-  }
-
-  #license {
-    font-size: inherit;
+  article h3, article h4, article h5, article h6 {
+    padding-top: 0.5rem;
   }
 }
