@@ -2,7 +2,7 @@
     <meta><title>Project Aon License</title></meta>
 
     <data>
-     <p>21 August 2009</p>
+     <p>2 December 2019</p>
 
      <section class="backmatter" id="lic-pre">
       <meta><title>0. Preamble</title></meta>
@@ -90,6 +90,7 @@
           <li><cite>The Fall of Blood Mountain</cite>;<br/><ch.copy/> 1997 Joe Dever.</li>
           <li><cite>Vampirium</cite>;<br/><ch.copy/> 1998 Joe Dever.</li>
           <li><cite>The Hunger of Sejanoz</cite>;<br/><ch.copy/> 1998 Joe Dever.</li>
+          <li><cite>The Storms of Chai</cite>;<br/><ch.copy/> 2016 Joe Dever.</li>
           <li><cite>The Magnamund Companion</cite>;<br/><ch.copy/> 1986 Joe Dever.</li>
           <li><cite>Freeway Warrior 1: Highway Holocaust</cite>;<br/><ch.copy/> 1988 Joe Dever.</li>
           <li><cite>Freeway Warrior 2: Slaughter Mountain Run</cite>;<br/><ch.copy/> 1988 Joe Dever.</li>
@@ -218,6 +219,7 @@
           <li><cite>The Fall of Blood Mountain</cite>;<br/>Illustrations <ch.copy/> 1997 Brian Williams.</li>
           <li><cite>Vampirium</cite>;<br/>Illustrations <ch.copy/> 1998 Brian Williams.</li>
           <li><cite>The Hunger of Sejanoz</cite>;<br/>Illustrations <ch.copy/> 1998 Brian Williams.</li>
+          <li><cite>The Storms of Chai</cite>;<br/>Illustrations <ch.copy/> 1998 Brian Williams.</li>
           <li><cite>The Skull of Agarash</cite>;<br />Some illustrations <ch.copy/> 1994 Brian Williams.</li>
           <li><cite>Freeway Warrior: Slaughter Mountain Run</cite>;<br/>Illustrations <ch.copy/> 1988 Brian Williams.</li>
           <li><cite>Freeway Warrior: The Omega Zone</cite>;<br/>Illustrations <ch.copy/> 1989 Brian Williams.</li>
