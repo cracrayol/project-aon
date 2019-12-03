@@ -1,1 +1,3 @@
    <p><strong>Brian Williams</strong> was first noticed by Joe Dever for his work in <cite>White Dwarf</cite> magazine (circa issue 50) and the <cite>Real Life Gamebooks</cite> series by Jon Sutherland and Simon Farrell. Brian Williams was Joe<ch.apos/>s first choice of illustrators to replace Gary Chalk on the <cite>Lone Wolf</cite> series. Brian also illustrated three of the four books in Joe Dever<ch.apos/>s <cite>Freeway Warrior</cite> series.</p>
+   <p>When he learned that Joe Dever had started Project Aon, he readily and enthusiastically added his illustrations to the millennial gift.</p>
+   <p>In October 2010, Brian Williams passed from this world unexpectedly at his home.</p>
