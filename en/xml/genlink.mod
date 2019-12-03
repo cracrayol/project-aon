@@ -7,12 +7,12 @@ These entities define URLs of general utility.
 
 -->
 
-<!ENTITY link.project.website      "http://www.projectaon.org/">
-<!ENTITY link.staff.contact        "http://www.projectaon.org/en/Main/Contact">
-<!ENTITY link.license              "http://www.projectaon.org/en/Main/License">
-<!ENTITY link.the.affair.website   "http://www.theaffair.co.uk/">
-<!ENTITY link.paul.bonner.website  "http://www.paulbonnerart.com/">
-<!ENTITY link.melvyn.grant.website "http://www.melgrant.com/">
+<!ENTITY link.project.website      "https://www.projectaon.org/">
+<!ENTITY link.staff.contact        "https://www.projectaon.org/en/Main/Contact">
+<!ENTITY link.license              "https://www.projectaon.org/en/Main/License">
+<!ENTITY link.the.affair.website   "https://www.theaffair.co.uk/">
+<!ENTITY link.paul.bonner.website  "https://www.paulbonnerart.com/">
+<!ENTITY link.melvyn.grant.website "https://www.melgrant.com/">
 
-<!ENTITY link.rh  "http://www.projectaon.org/en/ReadersHandbook/Home">
-<!ENTITY link.tmc "http://www.projectaon.org/en/Main/TheMagnamundCompanion">
+<!ENTITY link.rh  "https://www.projectaon.org/en/ReadersHandbook/Home">
+<!ENTITY link.tmc "https://www.projectaon.org/en/Main/TheMagnamundCompanion">

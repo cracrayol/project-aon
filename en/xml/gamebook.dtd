@@ -6,7 +6,7 @@
 This DTD was designed around XML 1.0.
 
 This gamebook DTD is aimed primarily at the books under development by 
-Project Aon (http://www.projectaon.org/). Future versions may be of 
+Project Aon (https://www.projectaon.org/). Future versions may be of 
 more general utility.
 
 Change Log:
@@ -253,7 +253,7 @@ suitability of the data.
 The "xml:lang" attribute specifies the primary language of the 
 document. The data should conform to the IETF RFC1766.
 
- http://www.ietf.org/rfc/rfc1766.txt
+ https://www.ietf.org/rfc/rfc1766.txt
 
 Examples:
 
@@ -274,13 +274,13 @@ The children of the meta element are designed to directly translate to
 the Dublin Core Element Set v1.1. For a description of each Dublin
 Core element, visit the following URL:
 
- (http://dublincore.org/documents/1999/07/02/dces/)
+ (https://dublincore.org/documents/1999/07/02/dces/)
 
 Although many Dublin Core elements will probably never have any real 
 relevance to gamebooks, all are included for completeness's sake.
 
 [editor: add dc: namespace to isolate dublin core elements
-  http://dublincore.org/documents/2001/10/26/dcmi-namespace/ ]
+  https://dublincore.org/documents/2001/10/26/dcmi-namespace/ ]
 
 Note: The "link" element doesn't correspond directly to any Dublin
 Core element. It has been added here for required functionality.
@@ -319,7 +319,7 @@ Example:
 The "relationship" optional attribute defines the relationship of the creator
 denoted by this element to the document. While the list of possible values is
 not constrained by the DTD, the normative list is defined by the MARC Code List
-for Relators <http://www.loc.gov/marc/relators/>.
+for Relators <https://www.loc.gov/marc/relators/>.
 
 The "sort-name" optional attribute contains the a name to be used for sorting.
 
@@ -355,7 +355,7 @@ Example:
 The "relationship" optional attribute defines the relationship of the creator
 denoted by this element to the document. While the list of possible values is
 not constrained by the DTD, the normative list is defined by the MARC Code List
-for Relators <http://www.loc.gov/marc/relators/>.
+for Relators <https://www.loc.gov/marc/relators/>.
 
 The "sort-name" optional attribute contains the a name to be used for sorting.
 
@@ -1553,7 +1553,7 @@ input to a computer (e.g. email addresses and URIs).
 
 Example:
 
- <code>http://www.projectaon.org/</code>
+ <code>https://www.projectaon.org/</code>
 
 -->
 
