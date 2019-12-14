@@ -187,6 +187,43 @@ ul figure {
   margin-left: -2.5rem;
 }
 
+.maintext .random-number-table td {
+  border: solid 1px black;
+  text-align: center;
+  line-height: 2.5em;
+  font-size: larger;
+  font-weight: bold;
+}
+
+  .maintext .random-number-table tr:nth-child(2n) td:nth-child(2n)
+, .maintext .random-number-table tr:nth-child(2n+1) td:nth-child(2n+1)
+, .maintext .combat-results-table tr:nth-child(2n) td
+, .maintext .action-chart tr:nth-child(2n) {
+  background-color: #ccc;
+}
+
+.maintext .combat-results-table th, .maintext .combat-results-table td, 
+.maintext .action-chart th, .maintext .action-chart td {
+  border: solid 1px black;
+}
+
+.maintext .combat-results-table tbody th, .maintext .combat-results-table tbody td {
+  white-space: nowrap;
+}
+
+.maintext caption {
+  caption-side: bottom;
+  text-align: center;
+  font-style: italic;
+}
+
+.maintext td.kai-rank {
+  width: 33%;
+  text-align: right;
+  font-size: smaller;
+  font-style: italic;
+}
+
 #footnotes {
   margin-top: 2rem;
   border-top: solid thin #ccc;

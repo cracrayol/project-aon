@@ -436,6 +436,11 @@ Todo:
         <xsl:attribute name="summary">
           <xsl:value-of select="@summary"/>
         </xsl:attribute>
+      </xsl:if><xsl:if test="@class">
+        <xsl:attribute name="class">
+          <xsl:value-of select="@class"/>
+          <xsl:text> table table-condensed</xsl:text>
+        </xsl:attribute>
       </xsl:if>
       <xsl:apply-templates/>
     </table>
@@ -509,6 +514,11 @@ Todo:
           <xsl:value-of select="@scope"/>
         </xsl:attribute>
       </xsl:if>
+      <xsl:if test="@class">
+        <xsl:attribute name="class">
+          <xsl:value-of select="@class"/>
+        </xsl:attribute>
+      </xsl:if>
       <xsl:apply-templates/>
     </th>
   </xsl:template>
@@ -547,6 +557,16 @@ Todo:
       <xsl:if test="@scope">
         <xsl:attribute name="scope">
           <xsl:value-of select="@scope"/>
+        </xsl:attribute>
+      </xsl:if>
+      <xsl:if test="@scope">
+        <xsl:attribute name="scope">
+          <xsl:value-of select="@scope"/>
+        </xsl:attribute>
+      </xsl:if>
+      <xsl:if test="@class">
+        <xsl:attribute name="class">
+          <xsl:value-of select="@class"/>
         </xsl:attribute>
       </xsl:if>
       <xsl:apply-templates/>
@@ -1573,6 +1593,14 @@ Todo:
     <xsl:text>+</xsl:text>
   </xsl:template>
   <!-- mathematical plus -->
+  <xsl:template match="ch.lte">
+    <xsl:text>&#x2264;</xsl:text>
+  </xsl:template>
+  <!-- less-than or equal to -->
+  <xsl:template match="ch.gte">
+    <xsl:text>&#x2265;</xsl:text>
+  </xsl:template>
+  <!-- greater-than or equal to -->
 
   <!-- ==================== named templates ======================= -->
   <xsl:template name="xhtml-wrapper">
