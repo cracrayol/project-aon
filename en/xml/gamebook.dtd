@@ -11,6 +11,10 @@ more general utility.
 
 Change Log:
 
+14 December 2019 (version 0.14)
+ * added more fractional character elements
+ * added "lte" and "gte" character elements
+
 13 November 2012 (version 0.13.3)
  * added the "puzzle" and "deadend" elements
 
@@ -188,7 +192,7 @@ III. Block Elements
 
 <!-- ::::::::::::::::::::: General Entities :::::::::::::::::::::: -->
 
-<!ENTITY % character.content "ch.apos | ch.nbsp | ch.iexcl | ch.cent | ch.pound | ch.curren | ch.yen | ch.brvbar | ch.sect | ch.uml | ch.copy | ch.ordf | ch.laquo | ch.not | ch.shy | ch.reg | ch.macr | ch.deg | ch.plusmn | ch.sup2 | ch.sup3 | ch.acute | ch.micro | ch.para | ch.middot | ch.cedil | ch.sup1 | ch.ordm | ch.raquo | ch.frac14 | ch.frac12 | ch.frac34 | ch.frac13 | ch.frac23 | ch.frac15 | ch.frac25 | ch.frac35 | ch.frac45 | ch.frac16 | ch.frac56 | ch.frac17 | ch.frac18 | ch.frac38 | ch.frac58 | ch.frac78 | ch.frac19 | ch.frac110 | ch.iquest | ch.Agrave | ch.Aacute | ch.Acirc | ch.Atilde | ch.Auml | ch.Aring | ch.AElig | ch.Ccedil | ch.Egrave | ch.Eacute | ch.Ecirc | ch.Euml | ch.Igrave | ch.Iacute | ch.Icirc | ch.Iuml | ch.ETH | ch.Ntilde | ch.Ograve | ch.Oacute | ch.Ocirc | ch.Otilde | ch.Ouml | ch.times | ch.Oslash | ch.Ugrave | ch.Uacute | ch.Ucirc | ch.Uuml | ch.Yacute | ch.THORN | ch.szlig | ch.agrave | ch.aacute | ch.acirc | ch.atilde | ch.auml | ch.aring | ch.aelig | ch.ccedil | ch.egrave | ch.eacute | ch.ecirc | ch.euml | ch.igrave | ch.iacute | ch.icirc | ch.iuml | ch.eth | ch.ntilde | ch.ograve | ch.oacute | ch.ocirc | ch.otilde | ch.ouml | ch.divide | ch.oslash | ch.ugrave | ch.uacute | ch.ucirc | ch.uuml | ch.yacute | ch.thorn | ch.yuml | ch.ampersand | ch.lsquot | ch.rsquot | ch.ldquot | ch.rdquot | ch.minus | ch.endash | ch.emdash | ch.ellips | ch.lellips | ch.blankline | ch.percent | ch.thinspace | ch.frac116 | ch.plus">
+<!ENTITY % character.content "ch.apos | ch.nbsp | ch.iexcl | ch.cent | ch.pound | ch.curren | ch.yen | ch.brvbar | ch.sect | ch.uml | ch.copy | ch.ordf | ch.laquo | ch.not | ch.shy | ch.reg | ch.macr | ch.deg | ch.plusmn | ch.sup2 | ch.sup3 | ch.acute | ch.micro | ch.para | ch.middot | ch.cedil | ch.sup1 | ch.ordm | ch.raquo | ch.frac14 | ch.frac12 | ch.frac34 | ch.frac13 | ch.frac23 | ch.frac15 | ch.frac25 | ch.frac35 | ch.frac45 | ch.frac16 | ch.frac56 | ch.frac17 | ch.frac18 | ch.frac38 | ch.frac58 | ch.frac78 | ch.frac19 | ch.frac110 | ch.iquest | ch.Agrave | ch.Aacute | ch.Acirc | ch.Atilde | ch.Auml | ch.Aring | ch.AElig | ch.Ccedil | ch.Egrave | ch.Eacute | ch.Ecirc | ch.Euml | ch.Igrave | ch.Iacute | ch.Icirc | ch.Iuml | ch.ETH | ch.Ntilde | ch.Ograve | ch.Oacute | ch.Ocirc | ch.Otilde | ch.Ouml | ch.times | ch.Oslash | ch.Ugrave | ch.Uacute | ch.Ucirc | ch.Uuml | ch.Yacute | ch.THORN | ch.szlig | ch.agrave | ch.aacute | ch.acirc | ch.atilde | ch.auml | ch.aring | ch.aelig | ch.ccedil | ch.egrave | ch.eacute | ch.ecirc | ch.euml | ch.igrave | ch.iacute | ch.icirc | ch.iuml | ch.eth | ch.ntilde | ch.ograve | ch.oacute | ch.ocirc | ch.otilde | ch.ouml | ch.divide | ch.oslash | ch.ugrave | ch.uacute | ch.ucirc | ch.uuml | ch.yacute | ch.thorn | ch.yuml | ch.ampersand | ch.lsquot | ch.rsquot | ch.ldquot | ch.rdquot | ch.minus | ch.endash | ch.emdash | ch.ellips | ch.lellips | ch.blankline | ch.percent | ch.thinspace | ch.frac116 | ch.plus | ch.lte | ch.gte">
 
 <!ENTITY % inline.content "#PCDATA | a | bookref | footref | em | strong | thought | foreign | quote | cite | code | line | br | typ | onomatopoeia | spell | item | %character.content;">
 
@@ -2057,6 +2061,12 @@ is included in all copies.
 
 <!-- mathematical plus -->
 <!ELEMENT ch.plus EMPTY><!ATTLIST ch.plus %core.attributes;>
+
+<!-- less-than or equal to -->
+<!ELEMENT ch.lte EMPTY><!ATTLIST ch.lte %core.attributes;>
+
+<!-- greater-than or equal to -->
+<!ELEMENT ch.gte EMPTY><!ATTLIST ch.gte %core.attributes;>
 
 <!-- ============================================================= -->
 <!--                          Appendices                           -->
