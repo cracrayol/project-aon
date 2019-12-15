@@ -283,7 +283,7 @@ while( my $line = <> ) {
   if( $line =~ /[^>](CLOSE\sCOMBAT\sSKILL)/ || $line =~ /(CLOSE\s+COMBAT\s+SKILL)[^<]/ ) {
     &printError( "ne", $currentSection, $lineNumber, "possible missing markup", "$1", "<typ class=\"attribute\">$1</typ>" );
   }
-  if( $line =~ /[^>](ENDURANCE)/ || $line =~ /(ENDURANCE)[^<]/ ) {
+  if( $line =~ /[^>](ENDURANCE)/ || $line =~ /(ENDURANCE)(?! Points)[^<]/ ) {
     &printError( "ne", $currentSection, $lineNumber, "possible missing markup", "ENDURANCE", "<typ class=\"attribute\">ENDURANCE</typ>" );
   }
   if( $line =~ /[^>](WILLPOWER)/ || $line =~ /(WILLPOWER)[^<]/ ) {
