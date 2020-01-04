@@ -53,7 +53,7 @@ while( $#ARGV > -1 ) {
 
 if( $bookCode eq '' ) { die "Unspecified book code\n$USAGE"; }
 if( $bookXML eq '' ) { $bookXML = "$language/xml/$bookCode.xml"; }
-if( $metaFile eq '' ) { $metaFile = "$language/.publisher/rules/standard"; }
+if( $metaFile eq '' ) { $metaFile = "$language/.publisher/rules/dever"; }
 
 if( -e $metaFile && -f $metaFile && -r $metaFile ) {
     open( META, '<', $metaFile ) or die qq{Unable to open metadata file ($metaFile): $!\n};
