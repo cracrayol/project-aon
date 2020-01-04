@@ -40,7 +40,7 @@ foreach (@BINARIES) {
 my $bookCode     = '';
 my $metaFile     = '';
 my $bookXML      = '';
-my $xhtmlXSL     = 'common/xsl/xhtml.xsl';
+my $xhtmlXSL     = 'common/xsl/xhtml-dever.xsl';
 my $language     = 'en';
 
 my $verbose = 0;
@@ -68,7 +68,7 @@ while( $#ARGV > -1 ) {
 }
 
 if( $bookCode eq '' ) { die "Unspecified book code\n$USAGE"; }
-if( $metaFile eq '' ) { $metaFile = "$language/.publisher/rules/standard"; }
+if( $metaFile eq '' ) { $metaFile = "$language/.publisher/rules/dever"; }
 if( $bookXML eq '' ) { $bookXML = "$language/xml/$bookCode.xml"; }
 if( $xhtmlXSL eq '' ) { die "Unspecified XSL transformation file\n$USAGE"; }
 

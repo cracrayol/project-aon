@@ -65,7 +65,7 @@ while( $#ARGV > -1 ) {
 }
 
 if( $bookCode eq '' ) { die "Unspecified book code\n$USAGE"; }
-if( $metaFile eq '' ) { $metaFile = "$language/.publisher/rules/simple"; }
+if( $metaFile eq '' ) { $metaFile = "$language/.publisher/rules/dever"; }
 if( $bookXML eq '' ) { $bookXML = "$language/xml/$bookCode.xml"; }
 if( $xhtmlXSL eq '' ) { die "Unspecified XSL transformation file\n$USAGE"; }
 
