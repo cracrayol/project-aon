@@ -101,7 +101,7 @@ $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB): $(XMLFILE) $(XSLFILES
 		cd $(AONROOTDIR) && perl  $(COVERSCRIPT) --language=$(BLANG) --font-files=$(FONTDIR) $(BASENAME) ; \
 	fi
 
-$(EPUB): $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB)  
+$(EPUB): $(FONTDIR) $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB)  
 	@[ -x  `which ebook-convert` ] || { echo "ERROR: Cannot find 'ebook-convert', please install Calibre" >&2; exit 1;  }
 	cp -p $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB) .
 # Regenerate to include the covers properly within the Ebook and fix the EPUB
@@ -118,6 +118,8 @@ $(EPUB): $(AONROOTDIR)/$(BLANG)/epub/$(SERIES)/$(BASENAME)/$(EPUB)
 	mv regen_$(EPUB) $(EPUB)
 	-rm -f cover.jpg $(BASENAME).opf  
 
+$(FONTDIR):
+	@test ! -d $(TARGET_DIR) || { echo "ERROR: Cannot find $(FONTDIR) to load the fonts, please review the Makefile definition of FONTDIR" >&2; exit 1; }
 
 # Convert to other formats. For a full list of format that we can convert to using 
 # Calibre see http://manual.calibre-ebook.com/cli/ebook-convert.html
