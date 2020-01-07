@@ -61,6 +61,10 @@ NOTES
     Other formats can also be built, but they are not built by default nor
     will be removed if generated.
 
+    - To generate the ePub format ebooks, the Souvenir font needs to be
+      available. Its location is defined in the Makefile.common. This font
+      cannot be distributed by the Project, for more information see 
+      /common/fonts/README.txt
 
 WHAT WORKS
 ---------
