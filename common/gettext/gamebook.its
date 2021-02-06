@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<its:rules xmlns:its="http://www.w3.org/2005/11/its" version="1.0">
+  <its:translateRule selector="/data" translate="yes"/>
+  <its:translateRule selector="//data/p" translate="yes"/>
+
+  <!-- If 'p' has an attribute 'translatable' with the value 'no', then
+       the content is not translatable.  -->
+  <its:translateRule selector="//data/p[@translatable = 'no']"
+    translate="no"/>
+</its:rules>
+
