@@ -2315,11 +2315,8 @@ Todo:
         </button>
         <div class="collapse navbar-collapse" id="page-actions-navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="toc.htm" title="Table of Contents">Contents</a></li>
-            <li><a href="action.htm" title="Action Chart">Action</a></li>
+            <li><a href="toc.htm" title="Table of Contents">Table of Contents</a></li>
             <li><a href="map.htm" title="Map">Map</a></li>
-            <li><a href="random.htm" title="Random Number Table">RNT</a></li>
-            <li><a href="crtable.htm" title="Combar Results Table">CRT</a></li>
           </ul>
         </div>
        </nav>
